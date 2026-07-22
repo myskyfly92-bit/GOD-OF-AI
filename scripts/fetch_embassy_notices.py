@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 
 import requests
 
-API_URL = "https://apis.data.go.kr/1262000/CountrySafetyService3/getCountrySafetyList3"
+API_URL = "https://apis.data.go.kr/1262000/CountrySafetyService6/getCountrySafetyList6"
 COUNTRY_NM = "IQ"  # 이라크의 ISO 3166-1 국가코드 (한글 "이라크" 대신 사용 시 인코딩 오류 회피)
 MAX_ITEMS = 8
 OUTPUT_PATH = "embassy-notices.json"
