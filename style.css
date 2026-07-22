@@ -96,15 +96,20 @@ code {
 }
 
 .brand-mark {
-  font-family: var(--font-mono);
-  font-weight: 800;
-  font-size: 13px;
-  letter-spacing: 0.14em;
-  color: var(--bg);
-  background: var(--amber);
-  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 8px 14px;
   border-radius: 6px;
-  line-height: 1;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.08);
+}
+
+.brand-logo {
+  display: block;
+  height: 26px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
 }
 
 .brand-text h1 {
