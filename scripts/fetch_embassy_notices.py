@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 import requests
 
 API_URL = "https://apis.data.go.kr/1262000/CountrySafetyService3/getCountrySafetyList3"
-COUNTRY_NM = "이라크"
+COUNTRY_NM = "IQ"  # 이라크의 ISO 3166-1 국가코드 (한글 "이라크" 대신 사용 시 인코딩 오류 회피)
 MAX_ITEMS = 8
 OUTPUT_PATH = "embassy-notices.json"
 
@@ -84,12 +84,12 @@ def main():
             "title": field(item, "title", "제목"),
             "body": field(item, "content", "내용", "안전공지내용"),
             "date": field(item, "wrt_dt", "등록일", "regDt"),
-            "country": field(item, "country_nm", "국가명", default=COUNTRY_NM),
+            "country": field(item, "country_nm", "국가명", default="이라크"),
         })
 
     output = {
         "_readme": "이 파일은 GitHub Actions가 외교부 공공데이터 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
-        "country": COUNTRY_NM,
+        "country": "이라크",
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "items": notices,
     }
