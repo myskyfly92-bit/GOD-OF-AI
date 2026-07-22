@@ -12,7 +12,9 @@
     MOFA_API_KEY=발급받은키 python scripts/fetch_embassy_notices.py
 """
 
+import html
 import json
+import re
 import os
 import sys
 from datetime import datetime, timezone
@@ -20,8 +22,9 @@ from datetime import datetime, timezone
 import requests
 
 API_URL = "https://apis.data.go.kr/1262000/CountrySafetyService6/getCountrySafetyList6"
-COUNTRY_NM = "IQ"  # 이라크의 ISO 3166-1 국가코드 (한글 "이라크" 대신 사용 시 인코딩 오류 회피)
+COUNTRY_NM = "이라크"  # v6 API는 한글 국가명 기준으로 필터링됨
 MAX_ITEMS = 8
+FETCH_ROWS = 100  # 국가 필터가 완벽하지 않을 수 있어 넉넉히 가져온 뒤 이라크만 추려냅니다.
 OUTPUT_PATH = "embassy-notices.json"
 
 
@@ -37,7 +40,7 @@ def fetch():
     params = {
         "country_nm": COUNTRY_NM,
         "type": "json",
-        "numOfRows": MAX_ITEMS,
+        "numOfRows": FETCH_ROWS,
         "pageNo": 1,
     }
     resp = requests.get(url, params=params, timeout=20)
@@ -71,9 +74,25 @@ def field(item, *keys, default=""):
     return default
 
 
+def clean_body(raw):
+    """txt_origin_cn 필드는 이중 HTML 인코딩된 서식 텍스트라 태그/엔티티를 제거해 읽기 좋게 만듭니다."""
+    if not raw:
+        return ""
+    text = html.unescape(html.unescape(str(raw)))  # 이중 인코딩 해제
+    text = re.sub(r"<[^<]+?>", " ", text)  # 태그 제거
+    text = re.sub(r"\s+", " ", text).strip()
+    return text[:600]  # 너무 길면 화면에서 잘라 보여줌
+
+
+def is_iraq(item):
+    """country_nm 필터가 항상 정확히 걸러주지 않는 경우를 대비해 한 번 더 확인합니다."""
+    return field(item, "country_nm") in ("이라크",) or field(item, "country_iso_alp2") == "IQ"
+
+
 def main():
     raw = fetch()
     items = extract_items(raw)
+    items = [it for it in items if is_iraq(it)] or items  # 이라크 항목만 우선, 없으면 전체라도 표시
 
     if not items:
         print("[경고] 응답에서 안전공지 항목을 찾지 못했습니다. 원본 응답을 디버그 파일로 저장합니다.", file=sys.stderr)
@@ -84,9 +103,9 @@ def main():
     for item in items[:MAX_ITEMS]:
         notices.append({
             "title": field(item, "title", "제목"),
-            "body": field(item, "content", "내용", "안전공지내용"),
+            "body": clean_body(field(item, "txt_origin_cn", "content", "내용")),
             "date": field(item, "wrt_dt", "등록일", "regDt"),
-            "country": field(item, "country_nm", "국가명", default="이라크"),
+            "country": field(item, "country_nm", default="이라크"),
         })
 
     output = {
