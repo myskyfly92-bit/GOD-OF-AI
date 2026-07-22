@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 
 import requests
 
-API_URL = "http://apis.data.go.kr/1262000/CountrySafetyService3/getCountrySafetyList3"
+API_URL = "https://apis.data.go.kr/1262000/CountrySafetyService3/getCountrySafetyList3"
 COUNTRY_NM = "이라크"
 MAX_ITEMS = 8
 OUTPUT_PATH = "embassy-notices.json"
@@ -39,6 +39,9 @@ def fetch():
         "pageNo": 1,
     }
     resp = requests.get(API_URL, params=params, timeout=20)
+    if resp.status_code != 200:
+        print(f"[오류] API 응답 코드: {resp.status_code}", file=sys.stderr)
+        print(f"[오류] API 응답 본문: {resp.text[:2000]}", file=sys.stderr)
     resp.raise_for_status()
     return resp.json()
 
