@@ -106,9 +106,9 @@ code {
 
 .brand-logo {
   display: block;
-  height: 26px;
+  height: 38px;
   width: auto;
-  max-width: 160px;
+  max-width: 220px;
   object-fit: contain;
 }
 
