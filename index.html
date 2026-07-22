@@ -16,9 +16,9 @@
 
 <header class="topbar">
   <div class="topbar-brand">
-   <div class="brand-mark">
-  <img class="brand-logo" src="assets/hanwha-logo.jpg" alt="Hanwha Corporation">
-</div>
+    <div class="brand-mark">
+      <img class="brand-logo" src="assets/hanwha-logo.jpg" alt="Hanwha Corporation">
+    </div>
     <div class="brand-text">
       <h1>비스마야 안전보건환경 통제실</h1>
       <p>Bismayah New City Project · SHE Control Room</p>
@@ -33,6 +33,12 @@
   </div>
 </header>
 
+<nav class="tab-bar">
+  <button class="tab-btn active" data-view="view-dashboard">종합현황</button>
+  <button class="tab-btn" data-view="view-embassy">대사관 안전공지</button>
+</nav>
+
+<div id="view-dashboard" class="view active">
 <main class="grid">
 
   <!-- HERO: 무재해 연속일수 -->
@@ -71,6 +77,15 @@
       <div class="heat-scale-seg seg-warn">경고</div>
       <div class="heat-scale-seg seg-danger">위험</div>
     </div>
+  </section>
+
+  <!-- 착공 후 경과일수 -->
+  <section class="panel construction-panel" aria-label="착공 후 경과일수">
+    <div class="panel-label">PROJECT TIMELINE · 착공 후 경과일수</div>
+    <div class="construction-counter">
+      <span id="constructionDays">0</span><span class="hero-unit">일째</span>
+    </div>
+    <p class="hero-sub" id="constructionStartText">착공일 데이터 불러오는 중…</p>
   </section>
 
   <!-- 날씨/환경 -->
@@ -131,6 +146,19 @@
   </section>
 
 </main>
+</div>
+
+<div id="view-embassy" class="view">
+<main class="grid">
+  <section class="panel embassy-panel" aria-label="대사관 안전공지" style="grid-column: 1 / -1;">
+    <div class="panel-label">EMBASSY NOTICE · 주이라크 대한민국대사관 안전공지</div>
+    <ul class="embassy-list" id="embassyList">
+      <li class="embassy-row skeleton">안전공지 불러오는 중…</li>
+    </ul>
+    <p class="source-note" id="embassyMeta">외교부 공공데이터 API 연동 · 매일 자동 갱신</p>
+  </section>
+</main>
+</div>
 
 <footer class="footer">
   <span>© 한화 건설부문 · Bismayah New City Project</span>
