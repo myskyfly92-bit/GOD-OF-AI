@@ -1,0 +1,532 @@
+/* ==========================================================
+   Bismayah SHE Control Room — Design tokens
+   Palette: near-black control-room base + safety-amber accent
+   Type: Noto Sans KR (본문/한글) + JetBrains Mono (데이터/숫자)
+   ========================================================== */
+:root {
+  --bg: #0a0e13;
+  --bg-grid: #0d1219;
+  --panel: #121924;
+  --panel-2: #0f151e;
+  --border: #202a38;
+  --border-soft: #1a2330;
+  --text: #eaf0f6;
+  --text-muted: #8996a6;
+  --text-dim: #5b6675;
+  --amber: #f2a93b;
+  --amber-dim: #7a5b24;
+  --cyan: #35d0c0;
+  --danger: #e5484d;
+  --warn: #e0b23a;
+  --ok: #35d0c0;
+  --font-body: 'Noto Sans KR', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  min-height: 100vh;
+}
+
+body {
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(53, 208, 192, 0.06), transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
+    linear-gradient(var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+  background-size: auto, auto, 42px 42px, 42px 42px;
+  background-position: 0 0, 0 0, -1px -1px, -1px -1px;
+}
+
+.scanlines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.012) 0px,
+    rgba(255, 255, 255, 0.012) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  mix-blend-mode: overlay;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+a { color: inherit; }
+code {
+  font-family: var(--font-mono);
+  background: rgba(255,255,255,0.06);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* ---------- Top bar ---------- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border-soft);
+  background: linear-gradient(180deg, rgba(18,25,36,0.9), rgba(18,25,36,0.4));
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(10px);
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-mark {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  color: var(--bg);
+  background: var(--amber);
+  padding: 7px 10px;
+  border-radius: 6px;
+  line-height: 1;
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.brand-text p {
+  margin: 3px 0 0;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.topbar-status {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.live-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--cyan);
+  border: 1px solid rgba(53, 208, 192, 0.35);
+  background: rgba(53, 208, 192, 0.08);
+  padding: 6px 12px;
+  border-radius: 999px;
+  letter-spacing: 0.03em;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 0 0 rgba(53, 208, 192, 0.6);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(53, 208, 192, 0.55); }
+  70%  { box-shadow: 0 0 0 7px rgba(53, 208, 192, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(53, 208, 192, 0); }
+}
+
+.clock-block { text-align: right; }
+
+.clock {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--text);
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ---------- Grid layout ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+  padding: 28px 32px 40px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+@media (max-width: 980px) {
+  .grid { grid-template-columns: 1fr; padding: 20px 16px 32px; }
+  .topbar { padding: 16px 18px; }
+}
+
+.panel {
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.panel-label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+}
+
+/* ---------- Hero: 무재해 카운터 ---------- */
+.hero-panel {
+  grid-column: 1;
+  border-color: rgba(242, 169, 59, 0.28);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(242, 169, 59, 0.10), transparent 55%),
+    linear-gradient(180deg, var(--panel), var(--panel-2));
+}
+
+.hero-counter {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: clamp(64px, 9vw, 108px);
+  line-height: 1;
+  color: var(--amber);
+  text-shadow: 0 0 34px rgba(242, 169, 59, 0.35);
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.hero-unit {
+  font-size: 24px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.hero-sub {
+  margin: 14px 0 0;
+  color: var(--text-muted);
+  font-size: 13.5px;
+}
+
+.hero-substats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-soft);
+}
+
+.substat { display: flex; flex-direction: column; gap: 4px; }
+
+.substat-value {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.substat-label {
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+/* ---------- 폭염/작업환경 상태 ---------- */
+.heat-panel { grid-column: 2; grid-row: 1; }
+
+.heat-status {
+  border-radius: 8px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+  margin-bottom: 16px;
+}
+
+.heat-status-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.heat-status-desc {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.heat-status.status-ok      { border-color: rgba(53,208,192,0.4); }
+.heat-status.status-ok .heat-status-title { color: var(--ok); }
+.heat-status.status-caution { border-color: rgba(224,178,58,0.45); }
+.heat-status.status-caution .heat-status-title { color: var(--warn); }
+.heat-status.status-warn    { border-color: rgba(242,169,59,0.55); }
+.heat-status.status-warn .heat-status-title { color: var(--amber); }
+.heat-status.status-danger  { border-color: rgba(229,72,77,0.55); background: rgba(229,72,77,0.07); }
+.heat-status.status-danger .heat-status-title { color: var(--danger); }
+
+.heat-scale {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+
+.heat-scale-seg {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  padding: 6px 0;
+  border-radius: 5px;
+  color: var(--text-dim);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border-soft);
+  transition: transform 0.2s ease;
+}
+
+.heat-scale-seg.active {
+  color: var(--bg);
+  font-weight: 700;
+  transform: translateY(-2px);
+}
+
+.seg-ok.active      { background: var(--ok); border-color: var(--ok); }
+.seg-caution.active { background: var(--warn); border-color: var(--warn); }
+.seg-warn.active    { background: var(--amber); border-color: var(--amber); }
+.seg-danger.active  { background: var(--danger); border-color: var(--danger); }
+
+/* ---------- 날씨 ---------- */
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 12px;
+}
+
+.weather-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.weather-value {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--cyan);
+}
+
+.weather-key {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.source-note {
+  margin: 18px 0 0;
+  font-size: 10.5px;
+  color: var(--text-dim);
+}
+
+/* ---------- 안전 지표 리스트 ---------- */
+.metric-list { list-style: none; margin: 0; padding: 0; }
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border-soft);
+  font-size: 13.5px;
+}
+
+.metric-row:last-child { border-bottom: none; }
+
+.metric-row .metric-value {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* ---------- 공지사항 ---------- */
+.notice-list, .contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notice-row {
+  padding: 12px 14px;
+  border: 1px solid var(--border-soft);
+  border-left: 3px solid var(--cyan);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.02);
+}
+
+.notice-row.level-긴급 { border-left-color: var(--danger); }
+.notice-row.level-주의 { border-left-color: var(--warn); }
+.notice-row.level-안내 { border-left-color: var(--cyan); }
+
+.notice-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.notice-title { font-size: 13.5px; font-weight: 600; }
+
+.notice-date {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.notice-body { font-size: 12.5px; color: var(--text-muted); line-height: 1.5; }
+
+.notice-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 6px;
+  letter-spacing: 0.03em;
+  background: rgba(255,255,255,0.06);
+  color: var(--text-muted);
+}
+
+.level-긴급 .notice-tag { background: rgba(229,72,77,0.15); color: var(--danger); }
+.level-주의 .notice-tag { background: rgba(224,178,58,0.15); color: var(--warn); }
+
+/* ---------- 이라크 MOH 뉴스 ---------- */
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.news-row {
+  padding: 12px 14px;
+  border: 1px solid var(--border-soft);
+  border-left: 3px solid var(--amber);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.02);
+}
+
+.news-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.news-source {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.news-link {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.news-link:hover { text-decoration: underline; }
+
+/* ---------- 비상연락망 ---------- */
+.contact-warning {
+  font-size: 11.5px;
+  color: var(--danger);
+  background: rgba(229, 72, 77, 0.08);
+  border: 1px solid rgba(229, 72, 77, 0.3);
+  padding: 9px 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.02);
+}
+
+.contact-role { font-size: 12.5px; color: var(--text-muted); display: block; }
+.contact-name { font-size: 13.5px; font-weight: 600; }
+
+.contact-phone {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--amber);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 18px 32px 30px;
+  max-width: 1360px;
+  margin: 0 auto;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--text-dim);
+  border-top: 1px solid var(--border-soft);
+}
+
+/* ---------- Skeleton / loading ---------- */
+.skeleton { color: var(--text-dim); font-size: 12.5px; font-style: italic; }
+
+/* ---------- Focus visibility ---------- */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
