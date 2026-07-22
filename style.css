@@ -180,6 +180,68 @@ code {
   margin-top: 2px;
 }
 
+/* ---------- 탭 바 ---------- */
+.tab-bar {
+  display: flex;
+  gap: 8px;
+  padding: 14px 32px 0;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.tab-btn {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--border-soft);
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.tab-btn:hover {
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.tab-btn.active {
+  color: var(--bg);
+  background: var(--cyan);
+  border-color: var(--cyan);
+  font-weight: 700;
+}
+
+.view { display: none; }
+.view.active { display: block; }
+
+/* ---------- 대사관 안전공지 ---------- */
+.embassy-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.embassy-row {
+  padding: 14px 16px;
+  border: 1px solid var(--border-soft);
+  border-left: 3px solid var(--danger);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.02);
+}
+
+.embassy-row .notice-top,
+.embassy-row .notice-title,
+.embassy-row .notice-date,
+.embassy-row .notice-body {
+  /* 공지사항 카드와 동일한 텍스트 스타일 재사용 */
+}
+
 /* ---------- Grid layout ---------- */
 .grid {
   display: grid;
@@ -244,6 +306,19 @@ code {
   margin: 14px 0 0;
   color: var(--text-muted);
   font-size: 13.5px;
+}
+
+.construction-counter {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: clamp(48px, 7vw, 84px);
+  line-height: 1;
+  color: var(--cyan);
+  text-shadow: 0 0 34px rgba(53, 208, 192, 0.35);
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 4px;
 }
 
 .hero-substats {
