@@ -53,6 +53,17 @@ function renderIncidentCounter(site) {
   document.getElementById("monthlyInspections").textContent = site.monthlyInspections ?? "–";
   document.getElementById("trainingRate").textContent = site.trainingRate ?? "–";
   document.getElementById("incidentCount").textContent = site.incidentCount ?? "–";
+  renderConstructionCounter(site);
+}
+
+function renderConstructionCounter(site) {
+  if (!site || !site.constructionStartDate) return;
+  const start = new Date(site.constructionStartDate + "T00:00:00");
+  const now = new Date();
+  const days = Math.max(0, Math.floor((now - start) / 86400000));
+  animateCount(document.getElementById("constructionDays"), days);
+  document.getElementById("constructionStartText").textContent =
+    `착공일: ${site.constructionStartDate} · 오늘까지 누적 공사일수`;
 }
 
 function animateCount(el, target) {
@@ -220,3 +231,54 @@ function updateHeatStatus(temp, feelsLike) {
 loadSiteData();
 loadWeather();
 setInterval(loadWeather, 10 * 60 * 1000); // 10분마다 갱신
+
+
+/* ---------------- 탭 전환 ---------------- */
+document.querySelectorAll(".tab-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById(btn.dataset.view).classList.add("active");
+  });
+});
+
+/* ---------------- 대사관 안전공지 ---------------- */
+async function loadEmbassyNotices() {
+  const list = document.getElementById("embassyList");
+  try {
+    const res = await fetch("embassy-notices.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("embassy-notices.json 로드 실패");
+    const data = await res.json();
+    renderEmbassyNotices(data.items, data.generatedAt);
+  } catch (err) {
+    console.error(err);
+    list.innerHTML = `<li class="embassy-row skeleton">아직 embassy-notices.json이 없거나 불러올 수 없습니다. GitHub Actions가 최초 1회 실행된 후 표시됩니다.</li>`;
+  }
+}
+
+function renderEmbassyNotices(items, generatedAt) {
+  const list = document.getElementById("embassyList");
+  if (!items || !items.length) {
+    list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 안전공지가 없습니다.</li>`;
+    return;
+  }
+  list.innerHTML = items.map(n => `
+    <li class="embassy-row">
+      <div class="notice-top">
+        <span class="notice-title">${escapeHtml(n.title)}</span>
+        <span class="notice-date">${escapeHtml(n.date || "")}</span>
+      </div>
+      <div class="notice-body">${escapeHtml(n.body || "")}</div>
+    </li>
+  `).join("");
+
+  if (generatedAt) {
+    const dt = new Date(generatedAt);
+    document.getElementById("embassyMeta").textContent =
+      "외교부 공공데이터 API 연동 · 마지막 수집: " +
+      new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(dt);
+  }
+}
+
+loadEmbassyNotices();
