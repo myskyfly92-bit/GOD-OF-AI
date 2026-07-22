@@ -1,21 +1,34 @@
 {
   "_readme": "이 파일을 수정하면 웹페이지 내용이 자동으로 갱신됩니다. lastIncidentDate를 최근 사고 없는 시작일로 맞추면 무재해 일수가 자동 계산됩니다. 연락처는 반드시 실제 값으로 교체하세요.",
-
   "site": {
     "lastIncidentDate": "2026-01-15",
     "monthlyInspections": 128,
     "trainingRate": "96%",
-    "incidentCount": 3
+    "incidentCount": 3,
+    "constructionStartDate": "2012-05-30"
   },
-
   "metrics": [
-    { "label": "일일 안전 점검 실시율", "value": "100%" },
-    { "label": "이번 주 아차사고(Near Miss) 신고", "value": "5건" },
-    { "label": "개인보호구(PPE) 착용 준수율", "value": "98%" },
-    { "label": "옥외작업 인원 (오늘 최대)", "value": "약 1,200명" },
-    { "label": "최근 안전 교육", "value": "2026-07-18 · 혹서기 대응" }
+    {
+      "label": "일일 안전 점검 실시율",
+      "value": "100%"
+    },
+    {
+      "label": "이번 주 아차사고(Near Miss) 신고",
+      "value": "5건"
+    },
+    {
+      "label": "개인보호구(PPE) 착용 준수율",
+      "value": "98%"
+    },
+    {
+      "label": "옥외작업 인원 (오늘 최대)",
+      "value": "약 1,200명"
+    },
+    {
+      "label": "최근 안전 교육",
+      "value": "2026-07-18 · 혹서기 대응"
+    }
   ],
-
   "notices": [
     {
       "level": "긴급",
@@ -36,13 +49,36 @@
       "body": "전 구역 대상 대피 훈련을 7월 마지막 주 목요일 오전에 실시할 예정입니다."
     }
   ],
-
   "emergencyContacts": [
-    { "role": "통제실 (24시간 상황실)", "name": "SHE Control Room", "phone": "000-0000-0000" },
-    { "role": "현장 안전관리자", "name": "담당자 성명", "phone": "000-0000-0000" },
-    { "role": "현장 의무실 / 클리닉", "name": "Site Clinic", "phone": "000-0000-0000" },
-    { "role": "인근 병원 (응급)", "name": "지정 협력병원", "phone": "000-0000-0000" },
-    { "role": "소방 대응팀", "name": "Fire Response Team", "phone": "000-0000-0000" },
-    { "role": "본사 비상연락 (서울)", "name": "한화 건설부문", "phone": "000-0000-0000" }
+    {
+      "role": "통제실 (24시간 상황실)",
+      "name": "SHE Control Room",
+      "phone": "000-0000-0000"
+    },
+    {
+      "role": "현장 안전관리자",
+      "name": "담당자 성명",
+      "phone": "000-0000-0000"
+    },
+    {
+      "role": "현장 의무실 / 클리닉",
+      "name": "Site Clinic",
+      "phone": "000-0000-0000"
+    },
+    {
+      "role": "인근 병원 (응급)",
+      "name": "지정 협력병원",
+      "phone": "000-0000-0000"
+    },
+    {
+      "role": "소방 대응팀",
+      "name": "Fire Response Team",
+      "phone": "000-0000-0000"
+    },
+    {
+      "role": "본사 비상연락 (서울)",
+      "name": "한화 건설부문",
+      "phone": "000-0000-0000"
+    }
   ]
 }
