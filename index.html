@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한화 건설부문 비스마야 안전보건환경 통제실</title>
+<meta name="description" content="이라크 비스마야 신도시 현장 안전·보건·환경(SHE) 상황 모니터링 통제실">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar-brand">
+    <div class="brand-mark">HANWHA</div>
+    <div class="brand-text">
+      <h1>비스마야 안전보건환경 통제실</h1>
+      <p>Bismayah New City Project · SHE Control Room</p>
+    </div>
+  </div>
+  <div class="topbar-status">
+    <div class="live-pill"><span class="dot"></span>실시간 연동</div>
+    <div class="clock-block">
+      <div id="clock" class="clock">--:--:--</div>
+      <div id="date" class="date">----년 --월 --일</div>
+    </div>
+  </div>
+</header>
+
+<main class="grid">
+
+  <!-- HERO: 무재해 연속일수 -->
+  <section class="panel hero-panel" aria-label="무재해 연속일수">
+    <div class="panel-label">SAFETY COUNTER · 무재해 연속</div>
+    <div class="hero-counter">
+      <span id="incidentFreeDays">0</span><span class="hero-unit">일</span>
+    </div>
+    <p class="hero-sub" id="lastIncidentText">기준일 데이터 불러오는 중…</p>
+    <div class="hero-substats">
+      <div class="substat">
+        <span class="substat-value" id="monthlyInspections">–</span>
+        <span class="substat-label">이달 안전점검(건)</span>
+      </div>
+      <div class="substat">
+        <span class="substat-value" id="trainingRate">–</span>
+        <span class="substat-label">안전교육 이수율</span>
+      </div>
+      <div class="substat">
+        <span class="substat-value" id="incidentCount">–</span>
+        <span class="substat-label">누적 사고(건)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 작업환경 상태 밴드 (폭염 지수) -->
+  <section class="panel heat-panel" aria-label="옥외작업 환경 상태">
+    <div class="panel-label">WORK-ENVIRONMENT STATUS · 옥외작업 기준</div>
+    <div id="heatStatus" class="heat-status heat-loading">
+      <div class="heat-status-title">환경 데이터 확인 중…</div>
+      <div class="heat-status-desc">현재 기온 기준 작업 권고사항을 계산하고 있습니다.</div>
+    </div>
+    <div class="heat-scale" id="heatScale">
+      <div class="heat-scale-seg seg-ok">정상</div>
+      <div class="heat-scale-seg seg-caution">주의</div>
+      <div class="heat-scale-seg seg-warn">경고</div>
+      <div class="heat-scale-seg seg-danger">위험</div>
+    </div>
+  </section>
+
+  <!-- 날씨/환경 -->
+  <section class="panel" aria-label="현재 날씨 및 대기환경">
+    <div class="panel-label">ENVIRONMENT · 현장 날씨·대기환경</div>
+    <div class="weather-grid" id="weatherGrid">
+      <div class="weather-item">
+        <span class="weather-value" id="wTemp">–</span>
+        <span class="weather-key">기온 (°C)</span>
+      </div>
+      <div class="weather-item">
+        <span class="weather-value" id="wFeels">–</span>
+        <span class="weather-key">체감온도 (°C)</span>
+      </div>
+      <div class="weather-item">
+        <span class="weather-value" id="wHumidity">–</span>
+        <span class="weather-key">습도 (%)</span>
+      </div>
+      <div class="weather-item">
+        <span class="weather-value" id="wWind">–</span>
+        <span class="weather-key">풍속 (m/s)</span>
+      </div>
+      <div class="weather-item">
+        <span class="weather-value" id="wPm10">–</span>
+        <span class="weather-key">미세먼지 PM10 (㎍/㎥)</span>
+      </div>
+      <div class="weather-item">
+        <span class="weather-value" id="wPm25">–</span>
+        <span class="weather-key">초미세먼지 PM2.5 (㎍/㎥)</span>
+      </div>
+    </div>
+    <p class="source-note">Open-Meteo 실시간 기상·대기질 API 연동 · 비스마야(33.19°N, 44.62°E) 기준</p>
+  </section>
+
+  <!-- 안전 지표 -->
+  <section class="panel" aria-label="안전 지표">
+    <div class="panel-label">SAFETY METRICS · 안전 지표</div>
+    <ul class="metric-list" id="metricList">
+      <li class="metric-row skeleton">데이터 불러오는 중…</li>
+    </ul>
+  </section>
+
+  <!-- 공지사항 -->
+  <section class="panel notices-panel" aria-label="공지사항 및 알림">
+    <div class="panel-label">NOTICES · 공지사항 / 알림</div>
+    <ul class="notice-list" id="noticeList">
+      <li class="notice-row skeleton">공지사항 불러오는 중…</li>
+    </ul>
+  </section>
+
+  <!-- 비상연락망 -->
+  <section class="panel contacts-panel" aria-label="비상연락망">
+    <div class="panel-label">EMERGENCY · 비상연락망</div>
+    <div class="contact-warning">※ 아래 연락처는 예시 값이 포함되어 있을 수 있습니다. 배포 전 <code>data.json</code>에서 반드시 실제 연락처로 교체하세요.</div>
+    <ul class="contact-list" id="contactList">
+      <li class="contact-row skeleton">연락망 불러오는 중…</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© 한화 건설부문 · Bismayah New City Project</span>
+  <span id="lastUpdated">마지막 갱신: –</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
