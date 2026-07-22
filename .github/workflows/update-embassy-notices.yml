@@ -1,0 +1,35 @@
+name: Update Embassy Safety Notices
+
+on:
+  schedule:
+    - cron: "30 3 * * *"   # 매일 UTC 03:30 = 바그다드 06:30
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-embassy-notices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: 안전공지 수집 실행
+        env:
+          MOFA_API_KEY: ${{ secrets.MOFA_API_KEY }}
+        run: python scripts/fetch_embassy_notices.py
+
+      - name: 변경사항 자동 커밋
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: 대사관 안전공지 자동 업데이트"
+          file_pattern: embassy-notices.json
