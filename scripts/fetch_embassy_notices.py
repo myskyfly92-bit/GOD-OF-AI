@@ -31,14 +31,16 @@ def fetch():
         print("[오류] 환경변수 MOFA_API_KEY가 설정되지 않았습니다.", file=sys.stderr)
         sys.exit(1)
 
+    # requests가 인증키를 다시 URL 인코딩하면서 깨뜨리는 문제를 피하기 위해
+    # serviceKey는 URL에 직접 넣고, 나머지 파라미터만 requests에 맡깁니다.
+    url = f"{API_URL}?serviceKey={service_key}"
     params = {
-        "serviceKey": service_key,
         "country_nm": COUNTRY_NM,
         "type": "json",
         "numOfRows": MAX_ITEMS,
         "pageNo": 1,
     }
-    resp = requests.get(API_URL, params=params, timeout=20)
+    resp = requests.get(url, params=params, timeout=20)
     if resp.status_code != 200:
         print(f"[오류] API 응답 코드: {resp.status_code}", file=sys.stderr)
         print(f"[오류] API 응답 본문: {resp.text[:2000]}", file=sys.stderr)
