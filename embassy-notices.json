@@ -1,0 +1,13 @@
+{
+  "_readme": "이 파일은 GitHub Actions(update-embassy-notices.yml)가 자동으로 갱신합니다. 최초 실행 전까지는 이 예시 데이터가 표시됩니다.",
+  "country": "이라크",
+  "generatedAt": null,
+  "items": [
+    {
+      "title": "예시: 대사관 안전공지가 아직 수집되지 않았습니다",
+      "body": "Actions 탭에서 'Update Embassy Safety Notices'를 수동 실행하면 실제 공지로 자동 교체됩니다. (MOFA_API_KEY 시크릿 등록이 먼저 필요합니다)",
+      "date": "",
+      "country": "이라크"
+    }
+  ]
+}
