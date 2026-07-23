@@ -35,6 +35,7 @@ async function loadSiteData() {
     renderMetrics(data.metrics);
     renderNotices(data.notices);
     renderContacts(data.emergencyContacts);
+    renderOrgChart(data.orgChart);
   } catch (err) {
     console.error(err);
     document.getElementById("lastIncidentText").textContent =
@@ -240,6 +241,10 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
     document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
     btn.classList.add("active");
     document.getElementById(btn.dataset.view).classList.add("active");
+
+    // 탭에 맞춰 배경 사진도 전환
+    const bgClass = "bg-" + btn.dataset.view.replace("view-", "");
+    document.body.className = bgClass;
   });
 });
 
@@ -300,3 +305,41 @@ function renderEmbassyNotices(items, generatedAt) {
 }
 
 loadEmbassyNotices();
+
+function renderOrgChart(org) {
+  const container = document.getElementById("orgChartContainer");
+  if (!container) return;
+  if (!org || !org.root) {
+    container.innerHTML = `<p class="skeleton">등록된 조직도가 없습니다.</p>`;
+    return;
+  }
+
+  const teamsHtml = (org.teams || []).map(team => `
+    <div class="org-team">
+      <div class="org-box org-lead">
+        <span class="org-title">${escapeHtml(team.title)}</span>
+        <span class="org-name">${escapeHtml(team.name || "")}</span>
+      </div>
+      <div class="org-members">
+        ${(team.members || []).map(m => `
+          <div class="org-box org-member">
+            <span class="org-title">${escapeHtml(m.title)}</span>
+            <span class="org-name">${escapeHtml(m.name || "")}</span>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  `).join("");
+
+  container.innerHTML = `
+    <div class="org-root-row">
+      <div class="org-box org-root">
+        <span class="org-title">${escapeHtml(org.root.title)}</span>
+        <span class="org-name">${escapeHtml(org.root.name || "")}</span>
+      </div>
+    </div>
+    <div class="org-teams-row">
+      ${teamsHtml}
+    </div>
+  `;
+}
