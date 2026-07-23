@@ -1,5 +1,5 @@
 /* ==========================================================
-   Bismayah SHE Control Room — script.js
+   Bismayah HSE Control Room — script.js
    - 실시간 시계 (바그다드 표준시 UTC+3)
    - Open-Meteo 날씨/대기질 API 연동 (무료, API 키 불필요)
    - data.json 기반 안전지표/공지/비상연락망 렌더링
