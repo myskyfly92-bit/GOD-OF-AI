@@ -40,29 +40,29 @@ body {
     radial-gradient(circle at 15% 0%, rgba(53, 208, 192, 0.06), transparent 45%),
     radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
     linear-gradient(var(--bg-grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
-  background-size: auto, auto, 42px 42px, 42px 42px;
-  background-position: 0 0, 0 0, -1px -1px, -1px -1px;
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(10,14,19,0.90), rgba(10,14,19,0.96)),
+    url('assets/bg-dashboard.jpg');
+  background-size: auto, auto, 42px 42px, 42px 42px, cover, cover;
+  background-position: 0 0, 0 0, -1px -1px, -1px -1px, center center, center center;
+  background-repeat: no-repeat, no-repeat, repeat, repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, scroll, scroll, fixed, fixed;
 }
 
 /* ---------- 탭별 배경 사진 ---------- */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
+body.bg-embassy {
   background-image:
+    radial-gradient(circle at 15% 0%, rgba(53, 208, 192, 0.06), transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
+    linear-gradient(var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px),
     linear-gradient(180deg, rgba(10,14,19,0.90), rgba(10,14,19,0.96)),
-    var(--bg-photo);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: opacity 0.5s ease;
+    url('assets/bg-embassy.jpg');
+  background-size: auto, auto, 42px 42px, 42px 42px, cover, cover;
+  background-position: 0 0, 0 0, -1px -1px, -1px -1px, center center, center center;
+  background-repeat: no-repeat, no-repeat, repeat, repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, scroll, scroll, fixed, fixed;
 }
-
-body.bg-dashboard::before { --bg-photo: url('assets/bg-dashboard.jpg'); }
-body.bg-embassy::before   { --bg-photo: url('assets/bg-embassy.jpg'); }
-body.bg-orgchart::before  { --bg-photo: url('assets/bg-dashboard.jpg'); }
 
 .scanlines {
   position: fixed;
