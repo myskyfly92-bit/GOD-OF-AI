@@ -41,7 +41,7 @@ body {
     radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
     linear-gradient(var(--bg-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(10,14,19,0.90), rgba(10,14,19,0.96)),
+    linear-gradient(180deg, rgba(10,14,19,0.55), rgba(10,14,19,0.72)),
     url('assets/bg-dashboard.jpg');
   background-size: auto, auto, 42px 42px, 42px 42px, cover, cover;
   background-position: 0 0, 0 0, -1px -1px, -1px -1px, center center, center center;
@@ -56,7 +56,7 @@ body.bg-embassy {
     radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
     linear-gradient(var(--bg-grid) 1px, transparent 1px),
     linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px),
-    linear-gradient(180deg, rgba(10,14,19,0.90), rgba(10,14,19,0.96)),
+    linear-gradient(180deg, rgba(10,14,19,0.55), rgba(10,14,19,0.72)),
     url('assets/bg-embassy.jpg');
   background-size: auto, auto, 42px 42px, 42px 42px, cover, cover;
   background-position: 0 0, 0 0, -1px -1px, -1px -1px, center center, center center;
