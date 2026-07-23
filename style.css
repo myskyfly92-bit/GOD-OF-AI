@@ -235,12 +235,45 @@ code {
   background: rgba(255,255,255,0.02);
 }
 
-.embassy-row .notice-top,
-.embassy-row .notice-title,
-.embassy-row .notice-date,
 .embassy-row .notice-body {
-  /* 공지사항 카드와 동일한 텍스트 스타일 재사용 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 6px;
 }
+
+.embassy-row.expanded .notice-body {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.embassy-toggle {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--cyan);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.embassy-toggle:hover { text-decoration: underline; }
+
+.embassy-empty {
+  color: var(--text-dim);
+  font-style: italic;
+  -webkit-line-clamp: unset;
+}
+
+.embassy-link {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.embassy-link:hover { text-decoration: underline; }
 
 /* ---------- Grid layout ---------- */
 .grid {
