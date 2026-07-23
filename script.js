@@ -263,15 +263,33 @@ function renderEmbassyNotices(items, generatedAt) {
     list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 안전공지가 없습니다.</li>`;
     return;
   }
-  list.innerHTML = items.map(n => `
+  const EMBASSY_LIST_URL = "https://www.mofa.go.kr/iq-ko/brd/m_11320/list.do";
+
+  list.innerHTML = items.map(n => {
+    const hasBody = n.body && n.body.trim().length > 0;
+    return `
     <li class="embassy-row">
       <div class="notice-top">
         <span class="notice-title">${escapeHtml(n.title)}</span>
         <span class="notice-date">${escapeHtml(n.date || "")}</span>
       </div>
-      <div class="notice-body">${escapeHtml(n.body || "")}</div>
-    </li>
-  `).join("");
+      ${hasBody ? `
+        <div class="notice-body">${escapeHtml(n.body)}</div>
+        <button type="button" class="embassy-toggle">자세히 보기 ▾</button>
+      ` : `
+        <div class="notice-body embassy-empty">이 공지는 본문 요약이 제공되지 않습니다.</div>
+        <a class="embassy-link" href="${EMBASSY_LIST_URL}" target="_blank" rel="noopener noreferrer">대사관 홈페이지에서 원문 확인 ↗</a>
+      `}
+    </li>`;
+  }).join("");
+
+  document.querySelectorAll(".embassy-toggle").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const row = btn.closest(".embassy-row");
+      const expanded = row.classList.toggle("expanded");
+      btn.textContent = expanded ? "접기 ▴" : "자세히 보기 ▾";
+    });
+  });
 
   if (generatedAt) {
     const dt = new Date(generatedAt);
