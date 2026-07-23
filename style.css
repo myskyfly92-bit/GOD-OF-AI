@@ -45,6 +45,25 @@ body {
   background-position: 0 0, 0 0, -1px -1px, -1px -1px;
 }
 
+/* ---------- 탭별 배경 사진 ---------- */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(180deg, rgba(10,14,19,0.90), rgba(10,14,19,0.96)),
+    var(--bg-photo);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s ease;
+}
+
+body.bg-dashboard::before { --bg-photo: url('assets/bg-dashboard.jpg'); }
+body.bg-embassy::before   { --bg-photo: url('assets/bg-embassy.jpg'); }
+body.bg-orgchart::before  { --bg-photo: url('assets/bg-dashboard.jpg'); }
+
 .scanlines {
   position: fixed;
   inset: 0;
@@ -642,4 +661,101 @@ code {
 a:focus-visible, button:focus-visible {
   outline: 2px solid var(--cyan);
   outline-offset: 2px;
+}
+
+/* ---------- 조직도 ---------- */
+.orgchart {
+  padding-top: 8px;
+}
+
+.org-root-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.org-teams-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  position: relative;
+}
+
+.org-teams-row::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: var(--border);
+}
+
+.org-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.org-team::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+}
+
+.org-box {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.org-title {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+}
+
+.org-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.org-root {
+  border: 1px solid rgba(242, 169, 59, 0.5);
+  background: rgba(242, 169, 59, 0.08);
+  max-width: 220px;
+}
+
+.org-root .org-name { color: var(--amber); }
+
+.org-lead {
+  border: 1px solid rgba(53, 208, 192, 0.4);
+  background: rgba(53, 208, 192, 0.06);
+}
+
+.org-lead .org-name { color: var(--cyan); }
+
+.org-members {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.org-member {
+  border: 1px solid var(--border-soft);
+  background: rgba(255,255,255,0.02);
 }
