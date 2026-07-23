@@ -39,14 +39,12 @@ body {
   background-image:
     radial-gradient(circle at 15% 0%, rgba(53, 208, 192, 0.06), transparent 45%),
     radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
-    linear-gradient(var(--bg-grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px),
     linear-gradient(180deg, rgba(10,14,19,0.55), rgba(10,14,19,0.72)),
     url('assets/bg-dashboard.jpg');
-  background-size: auto, auto, 42px 42px, 42px 42px, cover, cover;
-  background-position: 0 0, 0 0, -1px -1px, -1px -1px, center center, center center;
-  background-repeat: no-repeat, no-repeat, repeat, repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, scroll, scroll, fixed, fixed;
+  background-size: auto, auto, cover, cover;
+  background-position: 0 0, 0 0, center center, center center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, fixed, fixed;
 }
 
 /* ---------- 탭별 배경 사진 ---------- */
@@ -54,14 +52,12 @@ body.bg-embassy {
   background-image:
     radial-gradient(circle at 15% 0%, rgba(53, 208, 192, 0.06), transparent 45%),
     radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
-    linear-gradient(var(--bg-grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px),
     linear-gradient(180deg, rgba(10,14,19,0.55), rgba(10,14,19,0.72)),
     url('assets/bg-embassy.jpg');
-  background-size: auto, auto, 42px 42px, 42px 42px, cover, cover;
-  background-position: 0 0, 0 0, -1px -1px, -1px -1px, center center, center center;
-  background-repeat: no-repeat, no-repeat, repeat, repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, scroll, scroll, fixed, fixed;
+  background-size: auto, auto, cover, cover;
+  background-position: 0 0, 0 0, center center, center center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, fixed, fixed;
 }
 
 .scanlines {
@@ -212,13 +208,14 @@ code {
   font-family: var(--font-mono);
   font-size: 12.5px;
   letter-spacing: 0.03em;
-  color: var(--text-muted);
-  background: transparent;
+  color: var(--text);
+  background: rgba(10, 14, 19, 0.65);
   border: 1px solid var(--border-soft);
   padding: 8px 16px;
   border-radius: 999px;
   cursor: pointer;
   transition: all 0.15s ease;
+  backdrop-filter: blur(4px);
 }
 
 .tab-btn:hover {
