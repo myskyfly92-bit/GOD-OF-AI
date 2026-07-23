@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-dashboard">
 
 <div class="scanlines" aria-hidden="true"></div>
 
@@ -36,6 +36,7 @@
 <nav class="tab-bar">
   <button class="tab-btn active" data-view="view-dashboard">종합현황</button>
   <button class="tab-btn" data-view="view-embassy">대사관 안전공지</button>
+  <button class="tab-btn" data-view="view-orgchart">조직도</button>
 </nav>
 
 <div id="view-dashboard" class="view active">
@@ -156,6 +157,17 @@
       <li class="embassy-row skeleton">안전공지 불러오는 중…</li>
     </ul>
     <p class="source-note" id="embassyMeta">외교부 공공데이터 API 연동 · 매일 자동 갱신</p>
+  </section>
+</main>
+</div>
+
+<div id="view-orgchart" class="view">
+<main class="grid">
+  <section class="panel orgchart-panel" aria-label="안전환경 조직도" style="grid-column: 1 / -1;">
+    <div class="panel-label">ORGANIZATION · 안전환경 조직도</div>
+    <div id="orgChartContainer" class="orgchart">
+      <p class="skeleton">조직도 불러오는 중…</p>
+    </div>
   </section>
 </main>
 </div>
