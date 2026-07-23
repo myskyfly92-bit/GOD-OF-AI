@@ -81,7 +81,7 @@ def clean_body(raw):
     text = html.unescape(html.unescape(str(raw)))  # 이중 인코딩 해제
     text = re.sub(r"<[^<]+?>", " ", text)  # 태그 제거
     text = re.sub(r"\s+", " ", text).strip()
-    return text[:600]  # 너무 길면 화면에서 잘라 보여줌
+    return text[:3000]  # 클릭하면 펼쳐볼 수 있으므로 넉넉하게 보존
 
 
 def is_iraq(item):
