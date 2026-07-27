@@ -397,3 +397,43 @@ function renderHeatIllness(data) {
 }
 
 loadHeatIllness();
+
+/* ---------------- 전국 건설업 중대재해 (오늘) ---------------- */
+async function loadDailyDisaster() {
+  try {
+    const res = await fetch("daily-disaster.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("daily-disaster.json 로드 실패");
+    const data = await res.json();
+    renderDailyDisaster(data);
+  } catch (err) {
+    console.error(err);
+    document.getElementById("disasterMeta").textContent = "데이터를 불러올 수 없습니다.";
+  }
+}
+
+function renderDailyDisaster(data) {
+  const meta = document.getElementById("disasterMeta");
+  const list = document.getElementById("disasterList");
+  const count = data.totalCount ?? 0;
+
+  meta.textContent = data.date
+    ? `${data.date} 기준 전국 건설현장 중대재해 보고 ${count}건`
+    : "데이터가 아직 없습니다.";
+
+  if (!data.incidents || !data.incidents.length) {
+    list.innerHTML = `<li class="notice-row skeleton">오늘 보고된 중대재해가 없습니다.</li>`;
+    return;
+  }
+
+  list.innerHTML = data.incidents.map(it => `
+    <li class="notice-row level-긴급">
+      <div class="notice-top">
+        <span class="notice-title"><span class="notice-tag">${escapeHtml(it.type || "재해")}</span>${escapeHtml(it.location || "")} · ${escapeHtml(it.jobProcess || "")}</span>
+      </div>
+      <div class="notice-body">${escapeHtml(it.detail || "")}</div>
+      ${it.prevention ? `<div class="notice-body embassy-empty">예방대책: ${escapeHtml(it.prevention)}</div>` : ""}
+    </li>
+  `).join("");
+}
+
+loadDailyDisaster();
