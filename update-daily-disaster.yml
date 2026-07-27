@@ -1,0 +1,35 @@
+name: Update Daily Construction Disaster Stats
+
+on:
+  schedule:
+    - cron: "30 12 * * *"   # 매일 UTC 12:30 = 한국시간 21:30 (당일 신고 마감 이후)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-daily-disaster:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: 전국 건설업 중대재해 수집 실행
+        env:
+          MOFA_API_KEY: ${{ secrets.MOFA_API_KEY }}
+        run: python scripts/fetch_daily_disaster.py
+
+      - name: 변경사항 자동 커밋
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: 전국 건설업 중대재해 현황 자동 업데이트"
+          file_pattern: daily-disaster.json
