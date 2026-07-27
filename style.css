@@ -756,3 +756,13 @@ a:focus-visible, button:focus-visible {
   border: 1px solid var(--border-soft);
   background: rgba(255,255,255,0.02);
 }
+
+/* ---------- 부서별 사고 현황 ---------- */
+.metric-value.metric-alert {
+  color: var(--danger);
+}
+
+.metric-detail {
+  color: var(--text-dim);
+  font-size: 11.5px;
+}

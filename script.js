@@ -36,6 +36,7 @@ async function loadSiteData() {
     renderNotices(data.notices);
     renderContacts(data.emergencyContacts);
     renderOrgChart(data.orgChart);
+    renderIncidentByDept(data.site ? data.site.incidentByDept : null);
   } catch (err) {
     console.error(err);
     document.getElementById("lastIncidentText").textContent =
@@ -342,4 +343,19 @@ function renderOrgChart(org) {
       ${teamsHtml}
     </div>
   `;
+}
+
+function renderIncidentByDept(list) {
+  const el = document.getElementById("incidentDeptList");
+  if (!el) return;
+  if (!list || !list.length) {
+    el.innerHTML = `<li class="metric-row skeleton">등록된 부서별 사고 데이터가 없습니다.</li>`;
+    return;
+  }
+  el.innerHTML = list.map(d => `
+    <li class="metric-row">
+      <span>${escapeHtml(d.dept)}${d.detail ? `<span class="metric-detail"> · ${escapeHtml(d.detail)}</span>` : ""}</span>
+      <span class="metric-value${Number(d.count) > 0 ? " metric-alert" : ""}">${escapeHtml(String(d.count))}건</span>
+    </li>
+  `).join("");
 }
