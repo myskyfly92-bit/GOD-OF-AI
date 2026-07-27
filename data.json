@@ -1,11 +1,35 @@
 {
   "_readme": "이 파일을 수정하면 웹페이지 내용이 자동으로 갱신됩니다. lastIncidentDate를 최근 사고 없는 시작일로 맞추면 무재해 일수가 자동 계산됩니다. 연락처는 반드시 실제 값으로 교체하세요.",
   "site": {
-    "lastIncidentDate": "2026-01-15",
+    "lastIncidentDate": "2026-07-25",
     "monthlyInspections": 128,
     "trainingRate": "96%",
-    "incidentCount": 3,
-    "constructionStartDate": "2012-05-30"
+    "incidentCount": 2,
+    "constructionStartDate": "2012-05-30",
+    "incidentByDept": [
+      {
+        "dept": "사업관리팀",
+        "count": 0
+      },
+      {
+        "dept": "공사팀",
+        "count": 1,
+        "detail": "발목 접질림 (7/25)"
+      },
+      {
+        "dept": "관리재경팀",
+        "count": 1,
+        "detail": "발목 접질림 (7/25)"
+      },
+      {
+        "dept": "경호경비팀",
+        "count": 0
+      },
+      {
+        "dept": "이라크지사",
+        "count": 0
+      }
+    ]
   },
   "metrics": [
     {
@@ -80,5 +104,59 @@
       "name": "한화 건설부문",
       "phone": "000-0000-0000"
     }
-  ]
+  ],
+  "orgChart": {
+    "root": {
+      "title": "현장소장",
+      "name": "홍길동"
+    },
+    "teams": [
+      {
+        "title": "안전환경팀장",
+        "name": "성명",
+        "members": [
+          {
+            "title": "안전관리자",
+            "name": "성명"
+          },
+          {
+            "title": "환경관리자",
+            "name": "성명"
+          },
+          {
+            "title": "보건관리자",
+            "name": "성명"
+          }
+        ]
+      },
+      {
+        "title": "공무팀장",
+        "name": "성명",
+        "members": [
+          {
+            "title": "품질관리자",
+            "name": "성명"
+          },
+          {
+            "title": "공정관리자",
+            "name": "성명"
+          }
+        ]
+      },
+      {
+        "title": "관리팀장",
+        "name": "성명",
+        "members": [
+          {
+            "title": "총무담당",
+            "name": "성명"
+          },
+          {
+            "title": "노무담당",
+            "name": "성명"
+          }
+        ]
+      }
+    ]
+  }
 }
