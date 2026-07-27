@@ -151,10 +151,19 @@
     </ul>
   </section>
 
-  <!-- 전국 건설업 중대재해 (오늘) -->
+  <!-- 전국 건설업 중대재해 (연간 누적) -->
   <section class="panel disaster-panel" aria-label="전국 건설업 중대재해 현황">
     <div class="panel-label">NATIONWIDE DISASTER · 전국 건설업 중대재해 (한국산업안전보건공단)</div>
-    <p class="hero-sub" id="disasterMeta">데이터 불러오는 중…</p>
+    <div class="heat-illness-summary">
+      <div class="heat-illness-total">
+        <span id="disasterTotal">–</span><span class="hero-unit">건</span>
+      </div>
+      <p class="hero-sub" id="disasterMeta">데이터 불러오는 중…</p>
+    </div>
+    <ul class="metric-list" id="disasterTypeList">
+      <li class="metric-row skeleton">유형별 데이터 불러오는 중…</li>
+    </ul>
+    <div class="panel-label" style="margin-top:18px;">RECENT · 최근 사고</div>
     <ul class="notice-list" id="disasterList">
       <li class="notice-row skeleton">데이터 불러오는 중…</li>
     </ul>

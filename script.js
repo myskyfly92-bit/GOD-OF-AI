@@ -412,23 +412,38 @@ async function loadDailyDisaster() {
 }
 
 function renderDailyDisaster(data) {
+  const totalEl = document.getElementById("disasterTotal");
   const meta = document.getElementById("disasterMeta");
+  const typeList = document.getElementById("disasterTypeList");
   const list = document.getElementById("disasterList");
   const count = data.totalCount ?? 0;
 
-  meta.textContent = data.date
-    ? `${data.date} 기준 전국 건설현장 중대재해 보고 ${count}건`
+  totalEl.textContent = count.toLocaleString("ko-KR");
+  meta.textContent = data.year
+    ? `${data.year}년 누적 (${data.daysChecked ?? "–"}일 조회 기준)`
     : "데이터가 아직 없습니다.";
 
-  if (!data.incidents || !data.incidents.length) {
-    list.innerHTML = `<li class="notice-row skeleton">오늘 보고된 중대재해가 없습니다.</li>`;
+  if (data.byType && data.byType.length) {
+    typeList.innerHTML = data.byType.map(t => `
+      <li class="metric-row">
+        <span>${escapeHtml(t.type)}</span>
+        <span class="metric-value">${escapeHtml(String(t.count))}건</span>
+      </li>
+    `).join("");
+  } else {
+    typeList.innerHTML = `<li class="metric-row skeleton">유형별 데이터가 없습니다.</li>`;
+  }
+
+  if (!data.recentIncidents || !data.recentIncidents.length) {
+    list.innerHTML = `<li class="notice-row skeleton">올해 보고된 중대재해가 없습니다.</li>`;
     return;
   }
 
-  list.innerHTML = data.incidents.map(it => `
+  list.innerHTML = data.recentIncidents.map(it => `
     <li class="notice-row level-긴급">
       <div class="notice-top">
         <span class="notice-title"><span class="notice-tag">${escapeHtml(it.type || "재해")}</span>${escapeHtml(it.location || "")} · ${escapeHtml(it.jobProcess || "")}</span>
+        <span class="notice-date">${escapeHtml(it.date || "")}</span>
       </div>
       <div class="notice-body">${escapeHtml(it.detail || "")}</div>
       ${it.prevention ? `<div class="notice-body embassy-empty">예방대책: ${escapeHtml(it.prevention)}</div>` : ""}
