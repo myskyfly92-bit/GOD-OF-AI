@@ -1,9 +1,9 @@
 {
-  "_readme": "이 파일은 GitHub Actions(update-daily-disaster.yml)가 자동으로 갱신합니다.",
-  "year": "",
-  "daysChecked": 0,
+  "_readme": "이 파일은 GitHub Actions가 한국산업안전보건공단 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
+  "year": "2026",
+  "daysChecked": 208,
   "totalCount": 0,
   "byType": [],
   "recentIncidents": [],
-  "generatedAt": null
+  "generatedAt": "2026-07-27T08:09:31.942060+00:00"
 }
