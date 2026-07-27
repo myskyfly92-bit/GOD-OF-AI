@@ -1,8 +1,8 @@
 {
-  "_readme": "이 파일은 GitHub Actions(update-heat-illness.yml)가 자동으로 갱신합니다. 최초 실행 전까지는 이 예시 데이터가 표시됩니다.",
+  "_readme": "이 파일은 GitHub Actions가 질병관리청 온열질환 감시 데이터 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
   "year": "2026",
   "totalCount": 0,
   "latestDate": "",
   "byRegion": [],
-  "generatedAt": null
+  "generatedAt": "2026-07-27T07:18:32.755585+00:00"
 }
