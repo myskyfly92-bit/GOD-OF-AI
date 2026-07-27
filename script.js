@@ -359,3 +359,41 @@ function renderIncidentByDept(list) {
     </li>
   `).join("");
 }
+
+/* ---------------- 국내 온열질환 현황 ---------------- */
+async function loadHeatIllness() {
+  try {
+    const res = await fetch("domestic-heat-illness.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("domestic-heat-illness.json 로드 실패");
+    const data = await res.json();
+    renderHeatIllness(data);
+  } catch (err) {
+    console.error(err);
+    document.getElementById("heatIllnessMeta").textContent = "데이터를 불러올 수 없습니다.";
+  }
+}
+
+function renderHeatIllness(data) {
+  document.getElementById("heatIllnessTotal").textContent =
+    (data.totalCount ?? 0).toLocaleString("ko-KR");
+
+  const metaParts = [];
+  if (data.year) metaParts.push(`${data.year}년 누적`);
+  if (data.latestDate) metaParts.push(`최근 발생일 ${data.latestDate}`);
+  document.getElementById("heatIllnessMeta").textContent =
+    metaParts.length ? metaParts.join(" · ") : "집계된 데이터가 없습니다.";
+
+  const list = document.getElementById("heatIllnessRegionList");
+  if (!data.byRegion || !data.byRegion.length) {
+    list.innerHTML = `<li class="metric-row skeleton">지역별 데이터가 없습니다.</li>`;
+    return;
+  }
+  list.innerHTML = data.byRegion.map(r => `
+    <li class="metric-row">
+      <span>${escapeHtml(r.region)}</span>
+      <span class="metric-value">${escapeHtml(String(r.count))}건</span>
+    </li>
+  `).join("");
+}
+
+loadHeatIllness();
