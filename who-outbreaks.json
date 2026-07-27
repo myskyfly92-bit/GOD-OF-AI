@@ -1,6 +1,77 @@
 {
-  "_readme": "이 파일은 GitHub Actions(update-who-outbreaks.yml)가 자동으로 갱신합니다.",
+  "_readme": "이 파일은 GitHub Actions가 WHO 공식 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
   "source": "World Health Organization - Disease Outbreak News",
-  "items": [],
-  "generatedAt": null
+  "items": [
+    {
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+      "date": "2026-07-17T16:51:09Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo remains active, with sustained transmission driving increases in reported cases and deaths. As of 15 July 2026, a cumulative total of 2124 confirmed cases, including 828 deaths, have been reported from the Democratic Republic of the Congo. On 13 July 2026, German authorities informed WHO of a laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a humanitarian worker from the United States of A",
+      "link": "https://www.who.int/2026-DON613",
+      "donId": "2026-DON613"
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+      "date": "2026-07-03T15:31:57Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with sustained transmission and increasing numbers of reported cases. As of 1 July, a cumulative of 1460 confirmed cases, including 452 deaths, have been reported from the Democratic Republic of the Congo. As of 2 July, Uganda has reported 20 confirmed cases including two deaths, as well as one probable case who has died. In addition, on 24 June 2026, French authorities notified WHO o",
+      "link": "https://www.who.int/2026-DON612",
+      "donId": "2026-DON612"
+    },
+    {
+      "title": "Hantavirus outbreak linked to cruise ship travel, Multi-locations",
+      "date": "2026-07-02T18:27:48Z",
+      "summary": "This is the fifth Disease Outbreak News posting on the Andes hantavirus (ANDV) outbreak linked to the cruise ship M/V Hondius. The outbreak identification followed the notification to the World Health Organization (WHO) on 2 May 2026 of severe acute respiratory illness cases onboard. Since the previous Disease Outbreak News was published on 28 May 2026, one of the probable cases from Tristan da Cunha, an Overseas Territory of the United Kingdom of Great Britain and Northern Ireland (hereafter re",
+      "link": "https://www.who.int/2026-DON611",
+      "donId": "2026-DON611"
+    },
+    {
+      "title": "Nipah virus disease - India",
+      "date": "2026-06-25T15:43:28Z",
+      "summary": "On 11 June 2026, the Kerala State Health Department confirmed one laboratory confirmed case of Nipah virus (NiV) infection in Kozhikode district, Kerala State, India. \r\nThe case is an adult male who developed symptoms on 30 May 2026 and was hospitalized on 10 June 2026. He presented with neurological manifestations and at the time of reporting is on ventilatory support in an intensive care unit (ICU).\r\nAs of 18 June 2026, a total of 104 contacts had been identified and were under monitoring, inc",
+      "link": "https://www.who.int/2026-DON609",
+      "donId": "2026-DON609"
+    },
+    {
+      "title": "Yellow fever - Global",
+      "date": "2026-06-24T15:23:22Z",
+      "summary": "Yellow fever is a viral disease found in areas of Africa and the Americas, spread by infected mosquitoes. Following an increase of cases in the Americas in 2025, transmission activity remained into 2026. From 1 January to 26 May 2026, six countries reported a total of 79 human infections along with multiple epizootics, indicating active sylvatic circulation. In Africa, sustained activity continued across parts of the region, affecting 13 high-risk countries (as per classification in the Eliminat",
+      "link": "https://www.who.int/2026-DON610",
+      "donId": "2026-DON610"
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+      "date": "2026-06-19T12:51:03Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with sustained transmission and increasing numbers of reported cases. As of 17 June, a cumulative of 896 confirmed cases, including 232 deaths, have been reported from the Democratic Republic of the Congo. As of 18 June, Uganda has reported 19 confirmed cases including two deaths, as well as one probable case who has died. \r\nIn Uganda, the outbreak remains epidemiologically linked to ",
+      "link": "https://www.who.int/2026-DON608",
+      "donId": "2026-DON608"
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+      "date": "2026-06-13T08:15:15Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with increasing case numbers and geographic spread. As of 10 June, a cumulative of 676 confirmed cases, including 136 deaths, have been reported from the Democratic Republic of the Congo. As of 11 June, Uganda has reported 19 confirmed cases including two deaths, as well as one probable case who has died. \r\nIn Uganda, the outbreak remains epidemiologically linked to transmission origi",
+      "link": "https://www.who.int/2026-DON607",
+      "donId": "2026-DON607"
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+      "date": "2026-06-08T13:12:23Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with increasing case numbers, geographic spread, and cross-border transmission to Uganda. As of 6 June, a total of 515 confirmed cases, with 91 deaths among these confirmed cases, have been reported from the Democratic Republic of the Congo; Uganda has reported 19 confirmed cases including two deaths, as well as one probable case who has died. \r\nIn Uganda, the outbreak remains epidemi",
+      "link": "https://www.who.int/2026-DON606",
+      "donId": "2026-DON606"
+    },
+    {
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+      "date": "2026-05-29T15:43:01Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo and Uganda continues to evolve rapidly, with increasing case numbers, geographic spread, and ongoing cross-border transmission. As of 27 May, a total of 906 suspected cases and 223 deaths among suspected cases have been reported in the Democratic Republic of the Congo. As of 29 May, a total of 134 confirmed cases, including nine in Uganda, with 18 deaths among the confirmed cases, have been reported across both c",
+      "link": "https://www.who.int/2026-DON605",
+      "donId": "2026-DON605"
+    },
+    {
+      "title": "Hantavirus outbreak linked to cruise ship travel, Multi-locations",
+      "date": "2026-05-28T14:43:00Z",
+      "summary": "This is the fourth Disease Outbreak News report on the Andes hantavirus outbreak linked to cruise ship travel, following the notification to the World Health Organization (WHO) on 2 May 2026 of severe respiratory illness cases aboard M/V Hondius, a cruise ship. Since the last DON was published on 13 May, three additional confirmed cases were reported, from Canada, the Netherlands, and Spain. The previously reported inconclusive case from the United States of America was subsequently determined t",
+      "link": "https://www.who.int/2026-DON604",
+      "donId": "2026-DON604"
+    }
+  ],
+  "generatedAt": "2026-07-27T08:19:01.204791+00:00"
 }
