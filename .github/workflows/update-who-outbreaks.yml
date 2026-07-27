@@ -1,0 +1,48 @@
+name: Update WHO Disease Outbreak News
+
+on:
+  schedule:
+    - cron: "0 5 * * *"   # 매일 UTC 05:00 = 바그다드 08:00
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-who-outbreaks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: WHO 감염병 발생 정보 수집 실행
+        run: python scripts/fetch_who_outbreaks.py
+
+      - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add who-outbreaks.json
+          if git diff --cached --quiet; then
+            echo "변경사항 없음, 커밋 생략"
+            exit 0
+          fi
+          git commit -m "chore: WHO 감염병 발생 정보 자동 업데이트"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "푸시 성공"
+              exit 0
+            fi
+            echo "충돌 발생, ${i}번째 재시도 전 5초 대기..."
+            sleep 5
+          done
+          echo "5회 재시도 후에도 푸시 실패"
+          exit 1
