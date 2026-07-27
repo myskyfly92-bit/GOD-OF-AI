@@ -766,3 +766,21 @@ a:focus-visible, button:focus-visible {
   color: var(--text-dim);
   font-size: 11.5px;
 }
+
+/* ---------- 국내 온열질환 현황 ---------- */
+.heat-illness-summary {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.heat-illness-total {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1;
+  color: var(--danger);
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}

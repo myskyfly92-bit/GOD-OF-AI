@@ -1,0 +1,35 @@
+name: Update Domestic Heat Illness Stats
+
+on:
+  schedule:
+    - cron: "0 4 * * *"   # 매일 UTC 04:00 = 바그다드 07:00
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-heat-illness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: 온열질환 데이터 수집 실행
+        env:
+          MOFA_API_KEY: ${{ secrets.MOFA_API_KEY }}
+        run: python scripts/fetch_domestic_heat_illness.py
+
+      - name: 변경사항 자동 커밋
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: 국내 온열질환 통계 자동 업데이트"
+          file_pattern: domestic-heat-illness.json
