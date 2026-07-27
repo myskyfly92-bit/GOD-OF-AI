@@ -378,10 +378,16 @@ function renderHeatIllness(data) {
     (data.totalCount ?? 0).toLocaleString("ko-KR");
 
   const metaParts = [];
-  if (data.year) metaParts.push(`${data.year}년 누적`);
+  if (data.year) metaParts.push(`${data.year}년 시즌 누적`);
   if (data.latestDate) metaParts.push(`최근 발생일 ${data.latestDate}`);
   document.getElementById("heatIllnessMeta").textContent =
     metaParts.length ? metaParts.join(" · ") : "집계된 데이터가 없습니다.";
+
+  const noteEl = document.getElementById("heatIllnessNote");
+  if (noteEl) {
+    noteEl.textContent = data.note || "";
+    noteEl.style.display = data.note ? "block" : "none";
+  }
 
   const list = document.getElementById("heatIllnessRegionList");
   if (!data.byRegion || !data.byRegion.length) {
@@ -452,3 +458,44 @@ function renderDailyDisaster(data) {
 }
 
 loadDailyDisaster();
+
+/* ---------------- WHO 전세계 감염병 발생 정보 ---------------- */
+async function loadWhoOutbreaks() {
+  const list = document.getElementById("whoOutbreakList");
+  try {
+    const res = await fetch("who-outbreaks.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("who-outbreaks.json 로드 실패");
+    const data = await res.json();
+    renderWhoOutbreaks(data.items, data.generatedAt);
+  } catch (err) {
+    console.error(err);
+    list.innerHTML = `<li class="embassy-row skeleton">아직 who-outbreaks.json이 없거나 불러올 수 없습니다. GitHub Actions가 최초 1회 실행된 후 표시됩니다.</li>`;
+  }
+}
+
+function renderWhoOutbreaks(items, generatedAt) {
+  const list = document.getElementById("whoOutbreakList");
+  if (!items || !items.length) {
+    list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 정보가 없습니다.</li>`;
+    return;
+  }
+  list.innerHTML = items.map(n => `
+    <li class="embassy-row">
+      <div class="notice-top">
+        <span class="notice-title">${escapeHtml(n.title)}</span>
+        <span class="notice-date">${escapeHtml((n.date || "").slice(0, 10))}</span>
+      </div>
+      <div class="notice-body">${escapeHtml(n.summary || "")}</div>
+      ${n.link ? `<a class="embassy-link" href="${n.link}" target="_blank" rel="noopener noreferrer">WHO 원문 보기 ↗</a>` : ""}
+    </li>
+  `).join("");
+
+  if (generatedAt) {
+    const dt = new Date(generatedAt);
+    document.getElementById("whoOutbreakMeta").textContent =
+      "World Health Organization 공식 API 연동 · 마지막 수집: " +
+      new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(dt);
+  }
+}
+
+loadWhoOutbreaks();
