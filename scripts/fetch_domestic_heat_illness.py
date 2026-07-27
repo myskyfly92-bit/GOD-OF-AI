@@ -53,6 +53,12 @@ def main():
         sys.exit(1)
 
     items = fetch_all(service_key)
+    print(f"[진단] API에서 가져온 전체 원본 건수: {len(items)}건", file=sys.stderr)
+    if items:
+        print(f"[진단] 첫 번째 항목 샘플: {items[0]}", file=sys.stderr)
+        years_seen = sorted(set(str(it.get("발생일자", ""))[:4] for it in items))
+        print(f"[진단] 데이터에 존재하는 연도 목록: {years_seen}", file=sys.stderr)
+
     this_year = str(datetime.now().year)
     season_items = [it for it in items if str(it.get("발생일자", "")).startswith(this_year)]
 
