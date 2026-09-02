@@ -1,24 +1,55 @@
 {
-  "_readme": "이 파일에 안전작업절차서 목록을 등록하면 사이트에 자동으로 표시됩니다. 실제 파일은 'procedures' 폴더 안에 넣고, 아래 'file' 값에 정확한 파일명을 적어주세요 (폴더 경로 procedures/ 는 그대로 두고 파일명만 바꾸면 됩니다). 카테고리와 문서는 원하는 만큼 추가할 수 있습니다.",
+  "_readme": "이 파일에 안전작업절차서 목록을 등록하면 사이트에 자동으로 표시됩니다. 실제 파일은 'procedures' 폴더 안에 넣고, 'file' 값에 정확한 파일명을 적어주세요. 카테고리와 문서는 원하는 만큼 추가할 수 있습니다.",
   "categories": [
     {
-      "name": "토목공사",
+      "name": "공통사항",
       "documents": [
-        { "title": "굴착공사 안전작업절차서", "file": "procedures/예시_굴착공사_안전작업절차서.docx" },
-        { "title": "흙막이 가시설 안전작업절차서", "file": "procedures/예시_흙막이_가시설_안전작업절차서.docx" }
+        { "title": "HOUSING-00. 안전작업절차서_공통사항(신규)", "file": "procedures/HOUSING-00. 안전작업절차서_공통사항(신규)-수정완료.doc" }
       ]
     },
     {
-      "name": "건축공사",
+      "name": "토목/기초공사",
       "documents": [
-        { "title": "거푸집 동바리 설치 안전작업절차서", "file": "procedures/예시_거푸집_동바리_안전작업절차서.docx" },
-        { "title": "철근 조립 안전작업절차서", "file": "procedures/예시_철근_조립_안전작업절차서.docx" }
+        { "title": "HOUSING-07. 파일항타", "file": "procedures/HOUSING-07.파일항타-수정 완료.doc" }
       ]
     },
     {
-      "name": "고소작업",
+      "name": "골조공사",
       "documents": [
-        { "title": "비계 설치·해체 안전작업절차서", "file": "procedures/예시_비계_설치해체_안전작업절차서.docx" }
+        { "title": "HOUSING-08. Precast Concrete 조립", "file": "procedures/HOUSING-08.Precast Concrete 조립-수정완료.doc" },
+        { "title": "HOUSING-09. Reinforced Concrete 공사", "file": "procedures/HOUSING-09.Reinforced Concrete 공사-수정 완료.doc" },
+        { "title": "HOUSING-15. 철골 구조물 설치 Power Infra", "file": "procedures/HOUSING-15.철골 구조물 설치  Power Infra-수정완료.doc" }
+      ]
+    },
+    {
+      "name": "방수공사",
+      "documents": [
+        { "title": "HOUSING-04. 옥상방수", "file": "procedures/HOUSING-04.옥상방수-수정완료.doc" },
+        { "title": "HOUSING-05. 저수조방수", "file": "procedures/HOUSING-05.저수조방수- 수정완료.doc" }
+      ]
+    },
+    {
+      "name": "마감공사",
+      "documents": [
+        { "title": "HOUSING-01. 외부 도장공사", "file": "procedures/HOUSING-01.외부 도장공사-수정 완료.doc" },
+        { "title": "HOUSING-02. 계단, 발코니 난간시공", "file": "procedures/HOUSING-02.계단,발코니 난간시공-수정완료.doc" },
+        { "title": "HOUSING-03. 창호제작", "file": "procedures/HOUSING-03.창호제작-수정완료.doc" },
+        { "title": "HOUSING-06. AAC공사", "file": "procedures/HOUSING-06.AAC공사 -수정완료.docx" }
+      ]
+    },
+    {
+      "name": "양중/장비공사",
+      "documents": [
+        { "title": "HOUSING-10. Tower Crane 설치해체", "file": "procedures/HOUSING-10.Tower Crane 설치해체-수정완료.doc" },
+        { "title": "HOUSING-11. HOIST 설치해체", "file": "procedures/HOUSING-11.HOIST 설치해체-수정완료.doc" },
+        { "title": "HOUSING-13. EV 운반 및 양중", "file": "procedures/HOUSING-13.EV 운반 및 양중-수정완료.doc" },
+        { "title": "HOUSING-14. EV 설치", "file": "procedures/HOUSING-14.EV 설치-수정완료.doc" }
+      ]
+    },
+    {
+      "name": "전기공사",
+      "documents": [
+        { "title": "HOUSING-12. 전선입선 및 기구설치", "file": "procedures/HOUSING-12.전선입선 및 기구설치-수정완료.doc" }
       ]
     }
   ]
