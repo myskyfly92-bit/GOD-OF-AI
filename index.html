@@ -37,6 +37,7 @@
   <button class="tab-btn active" data-view="view-dashboard">종합현황</button>
   <button class="tab-btn" data-view="view-embassy">대사관 안전공지</button>
   <button class="tab-btn" data-view="view-orgchart">조직도</button>
+  <button class="tab-btn" data-view="view-procedures">안전작업절차서</button>
 </nav>
 
 <div id="view-dashboard" class="view active">
@@ -217,6 +218,17 @@
     <div class="panel-label">ORGANIZATION · 안전환경 조직도</div>
     <div id="orgChartContainer" class="orgchart">
       <p class="skeleton">조직도 불러오는 중…</p>
+    </div>
+  </section>
+</main>
+</div>
+
+<div id="view-procedures" class="view">
+<main class="grid">
+  <section class="panel procedure-panel" aria-label="안전작업절차서" style="grid-column: 1 / -1;">
+    <div class="panel-label">SAFE WORK PROCEDURES · 공종별 안전작업절차서</div>
+    <div id="procedureContainer">
+      <p class="skeleton">목록 불러오는 중…</p>
     </div>
   </section>
 </main>

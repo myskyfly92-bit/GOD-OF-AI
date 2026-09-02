@@ -499,3 +499,54 @@ function renderWhoOutbreaks(items, generatedAt) {
 }
 
 loadWhoOutbreaks();
+
+/* ==========================================================
+   안전작업절차서 (procedures.json 기반)
+   -- 기존 script.js 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   ========================================================== */
+
+function procEscapeHtml(str) {
+  if (str === undefined || str === null) return "";
+  return String(str)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+async function loadProcedures() {
+  const container = document.getElementById("procedureContainer");
+  if (!container) return;
+  try {
+    const res = await fetch("procedures.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("procedures.json 로드 실패");
+    const data = await res.json();
+    renderProcedures(data.categories);
+  } catch (err) {
+    console.error(err);
+    container.innerHTML = `<p class="skeleton">procedures.json을 불러올 수 없습니다.</p>`;
+  }
+}
+
+function renderProcedures(categories) {
+  const container = document.getElementById("procedureContainer");
+  if (!categories || !categories.length) {
+    container.innerHTML = `<p class="skeleton">등록된 절차서가 없습니다.</p>`;
+    return;
+  }
+
+  container.innerHTML = categories.map(cat => `
+    <div class="proc-category">
+      <div class="proc-category-title">${procEscapeHtml(cat.name)}</div>
+      <ul class="proc-doc-list">
+        ${(cat.documents || []).map(doc => `
+          <li class="proc-doc-row">
+            <a href="${procEscapeHtml(doc.file)}" target="_blank" rel="noopener noreferrer">
+              📄 ${procEscapeHtml(doc.title)}
+            </a>
+          </li>
+        `).join("")}
+      </ul>
+    </div>
+  `).join("");
+}
+
+loadProcedures();
+

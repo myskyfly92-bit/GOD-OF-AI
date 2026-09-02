@@ -784,3 +784,50 @@ a:focus-visible, button:focus-visible {
   align-items: baseline;
   gap: 10px;
 }
+
+/* ==========================================================
+   안전작업절차서 스타일
+   -- 기존 style.css 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   ========================================================== */
+
+.proc-category {
+  margin-bottom: 24px;
+}
+
+.proc-category-title {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--amber);
+  letter-spacing: 0.04em;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.proc-doc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 8px;
+}
+
+.proc-doc-row a {
+  display: block;
+  padding: 10px 14px;
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.02);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.15s ease;
+}
+
+.proc-doc-row a:hover {
+  border-color: var(--cyan);
+  background: rgba(53, 208, 192, 0.06);
+  color: var(--cyan);
+}
