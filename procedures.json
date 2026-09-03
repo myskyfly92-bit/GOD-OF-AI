@@ -1,106 +1,24 @@
 {
-  "_readme": "이 파일에 안전작업절차서 목록을 등록하면 사이트에 자동으로 표시됩니다. 실제 파일은 'procedures' 폴더 안에 넣고, 'file' 값에 정확한 파일명을 적어주세요.",
+  "_readme": "이 파일에 안전작업절차서 목록을 등록하면 사이트에 자동으로 표시됩니다. 실제 파일은 'procedures' 폴더 안에 넣고, 아래 'file' 값에 정확한 파일명을 적어주세요 (폴더 경로 procedures/ 는 그대로 두고 파일명만 바꾸면 됩니다). 카테고리와 문서는 원하는 만큼 추가할 수 있습니다.",
   "categories": [
     {
-      "name": "일반 안전작업절차서 (토목/포장/공통)",
+      "name": "토목공사",
       "documents": [
-        { "title": "00. 안전작업절차서_공통사항(신규)", "file": "procedures/00. 안전작업절차서_공통사항(신규)-수정완료.doc" },
-        { "title": "01. 토공-터파기", "file": "procedures/01. 안전작업절차서-토공-터파기-수정완료.doc" },
-        { "title": "02. 토공-흙쌓기", "file": "procedures/02. 안전작업절차서-토공-흙쌓기-수정완료.doc" },
-        { "title": "03. 토공-부지정지", "file": "procedures/03. 안전작업절차서-토공-부지정지-수정완료.doc" },
-        { "title": "04. 포장공-도로", "file": "procedures/04. 안전작업절차서-포장공-도로-수정완료.doc" },
-        { "title": "05. 포장공-보도블럭", "file": "procedures/05. 안전작업절차서-포장공-보도블럭-수정완료.doc" },
-        { "title": "06. 포장공-L형측구", "file": "procedures/06. 안전작업절차서-포장공-L형측구-수정완료.doc" },
-        { "title": "07. 차선도색", "file": "procedures/07. 안전작업절차서_차선도색-수정완료.doc" },
-        { "title": "08. 표지판", "file": "procedures/08. 안전작업절차서_표지판-수정완료.doc" },
-        { "title": "09. 관로공", "file": "procedures/09. 안전작업절차서_관로공-수정완료.doc" },
-        { "title": "10. SI변전소 소형구조물(신규)", "file": "procedures/10. 안전작업절차서-SI변전소 소형구조물(신규)-수정완료.doc" },
-        { "title": "11. SI FENCE", "file": "procedures/11. 안전작업절차서-SI FENCE-수정완료.doc" },
-        { "title": "12. 지하구조물(수리구조물)", "file": "procedures/12. 안전작업절차서_지하구조물(수리구조물) -수정완료.doc" },
-        { "title": "13. 운반 및 설치", "file": "procedures/13. 안전작업절차서(운반 및 설치) -수정완료.doc" },
-        { "title": "14. 기계-절단 및 용접", "file": "procedures/14. 안전작업절차서(기계-절단 및 용접) -수정완료.doc" },
-        { "title": "15. 전기", "file": "procedures/15. 안전작업절차서 전기 - 수정완료.docx" },
-        { "title": "16. 시설물", "file": "procedures/16. 안전작업절차서(시설물) -수정완료.doc" },
-        { "title": "17. 식재", "file": "procedures/17. 안전작업절차서(식재) -수정완료.doc" },
-        { "title": "18. 콘크리트 통합시험", "file": "procedures/18. 안전작업절차서 _콘크리트-통합시험.doc" },
-        { "title": "19. 아스팔트 통합시험", "file": "procedures/19. 안전작업절차서 _아스팔트-통합시험.doc" },
-        { "title": "20. 현장시험 통합시험", "file": "procedures/20. 안전작업절차서 _현장시험-통합시험.doc" },
-        { "title": "21. 골재시험 통합시험", "file": "procedures/21. 안전작업절차서 _골재시험-통합시험.doc" }
+        { "title": "굴착공사 안전작업절차서", "file": "procedures/예시_굴착공사_안전작업절차서.docx" },
+        { "title": "흙막이 가시설 안전작업절차서", "file": "procedures/예시_흙막이_가시설_안전작업절차서.docx" }
       ]
     },
     {
-      "name": "HOUSING (건축)",
+      "name": "건축공사",
       "documents": [
-        { "title": "HOUSING-00. 공통사항(신규)", "file": "procedures/HOUSING-00. 안전작업절차서_공통사항(신규)-수정완료.doc" },
-        { "title": "HOUSING-01. 외부 도장공사", "file": "procedures/HOUSING-01.외부 도장공사-수정 완료.doc" },
-        { "title": "HOUSING-02. 계단,발코니 난간시공", "file": "procedures/HOUSING-02.계단,발코니 난간시공-수정완료.doc" },
-        { "title": "HOUSING-03. 창호제작", "file": "procedures/HOUSING-03.창호제작-수정완료.doc" },
-        { "title": "HOUSING-04. 옥상방수", "file": "procedures/HOUSING-04.옥상방수-수정완료.doc" },
-        { "title": "HOUSING-05. 저수조방수", "file": "procedures/HOUSING-05.저수조방수- 수정완료.doc" },
-        { "title": "HOUSING-06. AAC공사", "file": "procedures/HOUSING-06.AAC공사 -수정완료.docx" },
-        { "title": "HOUSING-07. 파일항타", "file": "procedures/HOUSING-07.파일항타-수정 완료.doc" },
-        { "title": "HOUSING-08. Precast Concrete 조립", "file": "procedures/HOUSING-08.Precast Concrete 조립-수정완료.doc" },
-        { "title": "HOUSING-09. Reinforced Concrete 공사", "file": "procedures/HOUSING-09.Reinforced Concrete 공사-수정 완료.doc" },
-        { "title": "HOUSING-10. Tower Crane 설치해체", "file": "procedures/HOUSING-10.Tower Crane 설치해체-수정완료.doc" },
-        { "title": "HOUSING-11. HOIST 설치해체", "file": "procedures/HOUSING-11.HOIST 설치해체-수정완료.doc" },
-        { "title": "HOUSING-12. 전선입선 및 기구설치", "file": "procedures/HOUSING-12.전선입선 및 기구설치-수정완료.doc" },
-        { "title": "HOUSING-13. EV 운반 및 양중", "file": "procedures/HOUSING-13.EV 운반 및 양중-수정완료.doc" },
-        { "title": "HOUSING-14. EV 설치", "file": "procedures/HOUSING-14.EV 설치-수정완료.doc" },
-        { "title": "HOUSING-15. 철골 구조물 설치 Power Infra", "file": "procedures/HOUSING-15.철골 구조물 설치  Power Infra-수정완료.doc" },
-        { "title": "HOUSING-16. 변압기설치 Power Infra", "file": "procedures/HOUSING-16.변압기설치 Power Infra.doc" },
-        { "title": "HOUSING-17. Power GIS 설치 Power Infra", "file": "procedures/HOUSING-17.Power GIS 설치 Power Infra-수정완료.doc" },
-        { "title": "HOUSING-18. 고압접속 Power Infra", "file": "procedures/HOUSING-18.고압접속 Power Infra-수정완료.doc" },
-        { "title": "HOUSING-19. 가선작업 Power Infra", "file": "procedures/HOUSING-19.가선작업 Power Infra-수정완료.doc" },
-        { "title": "HOUSING-20. 지하 PIT 배관", "file": "procedures/HOUSING-20.지하 PIT 배관-수정완료.doc" },
-        { "title": "HOUSING-21. 기계실 장비설치공사", "file": "procedures/HOUSING-21.기계실 장비설치공사-수정완료.doc" },
-        { "title": "HOUSING-22. WORK SHOP 작업", "file": "procedures/HOUSING-22. WORK SHOP 작업-수정완료.doc" },
-        { "title": "HOUSING-23. 철근가공장", "file": "procedures/HOUSING-23. 철근가공장-수정완료.doc" },
-        { "title": "HOUSING-24. SB_한우리_석공사", "file": "procedures/HOUSING-24.SB_한우리_석공사-수정완료.doc" },
-        { "title": "HOUSING-25. SB-충전공영_AW공사", "file": "procedures/HOUSING-25.SB-충전공영_AW공사-수정완료.doc" },
-        { "title": "HOUSING-26. SB-충전공영_TYC철골공사", "file": "procedures/HOUSING-26.SB_충전공영_TYC철골공사-수정완료.doc" },
-        { "title": "HOUSING-27. SB-충전공영_금속공사", "file": "procedures/HOUSING-27.SB-충전공영_금속공사-수정완료.doc" },
-        { "title": "HOUSING-28. Reinforced Concrete 거푸집 조립 및 해체", "file": "procedures/HOUSING-28.Reinforced Concrete거푸집 조립 및 해체-수정완료.doc" }
+        { "title": "거푸집 동바리 설치 안전작업절차서", "file": "procedures/예시_거푸집_동바리_안전작업절차서.docx" },
+        { "title": "철근 조립 안전작업절차서", "file": "procedures/예시_철근_조립_안전작업절차서.docx" }
       ]
     },
     {
-      "name": "Management (건설기계/운영지원)",
+      "name": "고소작업",
       "documents": [
-        { "title": "Management-01. 건설기계_장비운송", "file": "procedures/Management-01.건설기계_장비운송.doc" },
-        { "title": "Management-02. 건설기계_용접판금", "file": "procedures/Management-02.건설기계_용접판금.docx.doc.docx" },
-        { "title": "Management-03. 건설기계_하체 정비", "file": "procedures/Management-03.건설기계_하체 정비.doc" },
-        { "title": "Management-04. 건설기계_유류하역", "file": "procedures/Management-04.건설기계_유류하역.doc" },
-        { "title": "Management-05. 건설기계_Crusher Plant", "file": "procedures/Management-05. 건설기계_Crusher Plant.doc" },
-        { "title": "Management-06. 운영지원_LPG 화기작업", "file": "procedures/Management-06.운영지원_ LPG 화기작업.doc" },
-        { "title": "Management-07. 운영지원_기계설비전기(제정)", "file": "procedures/Management-07. 운영지원_기계설비전기(제정).doc" },
-        { "title": "Management-08. 운영지원_하수처리장(제정)", "file": "procedures/Management-08.운영지원_하수처리장(제정).doc" },
-        { "title": "Management-09. 운영지원_정수처리장(제정)", "file": "procedures/Management-09.운영지원_정수처리장(제정).doc" },
-        { "title": "Management-10. 운영지원_생수공장(제정)", "file": "procedures/Management-10.운영지원_생수공장(제정).doc" },
-        { "title": "Management-11. 관리_Ware House(제정)", "file": "procedures/Management-11. 관리_Ware House(제정).doc" },
-        { "title": "Management-12. IRAQI 기후에 따른 작업 관리", "file": "procedures/Management-12.IRAQI 기후에 따른 작업 관리.doc" }
-      ]
-    },
-    {
-      "name": "PLANT",
-      "documents": [
-        { "title": "PLANT-00. 공통사항", "file": "procedures/PLANT-00. 공통사항.doc" },
-        { "title": "PLANT-01. Sandwich Wall Plant", "file": "procedures/PLANT-01. Sandwich Wall Plant(개정Ver.01) 完了.doc" },
-        { "title": "PLANT-02. Battery Wall Plant", "file": "procedures/PLANT-02. Battery Wall Plant(개정Ver.02) 完了.docx" },
-        { "title": "PLANT-03. Hollow Core Plant", "file": "procedures/PLANT-03. Hollow Core Plant(개정Ver.02) 完了.doc" },
-        { "title": "PLANT-04. 콘크리트 생산", "file": "procedures/PLANT-04. 콘크리트 생산(개정Ver.01) 完了.doc" },
-        { "title": "PLANT-05. Stock Yard", "file": "procedures/PLANT-05. Stock Yard(개정Ver.02) 完了.doc" },
-        { "title": "PLANT-06. Steel Shop", "file": "procedures/PLANT-06. Steel Shop(개정Ver.01) 完了.doc" },
-        { "title": "PLANT-07. Wire Mash Plant", "file": "procedures/PLANT-07. Wire Mash Plant(개정Ver.02) 完了.docx" },
-        { "title": "PLANT-08. Insulation Plant", "file": "procedures/PLANT-08. Insulation Plant(개정Ver.01) 完了.doc" },
-        { "title": "PLANT-10. AAC Plant", "file": "procedures/PLANT-10. AAC Plant-1차개정(2017.08.27)_수정 完了.doc" },
-        { "title": "PLANT-11. Mortar Plant", "file": "procedures/PLANT-11. Mortar Plant -1차개정(2017.09.27)_수정 完了.doc" },
-        { "title": "PLANT-12. PHC Pile Plant", "file": "procedures/PLANT-12. PHC Pile Plant -1차개정(2017.08.27) 完了.doc" },
-        { "title": "PLANT-13. Polyvinyl Chloride (PVC Plant)", "file": "procedures/PLANT-13. Polyvinyl Chloride (PVC Plant)-1차개정(2017.08.27)完了.doc" },
-        { "title": "PLANT-14. Asphalt Plant", "file": "procedures/PLANT-14. Asphalt Plant -1차개정(2017.08.27)-18 完了.doc" },
-        { "title": "PLANT-15. Block Factory", "file": "procedures/PLANT-15. Block Factory -1차개정(2017.08.27)-19 完了.doc" },
-        { "title": "PLANT-16. Batcher Plant", "file": "procedures/PLANT-16. Batcher Plant_1차개정(2017.08.27)-17 完了.doc" },
-        { "title": "PLANT-17. 기계설비 보수", "file": "procedures/PLANT-17. 기계설비 보수 完了.doc" },
-        { "title": "PLANT-18. 전기설비 보수", "file": "procedures/PLANT-18. 전기설비 보수 完了.doc" },
-        { "title": "PLANT-19. 기타시설유지 보수", "file": "procedures/PLANT-19. 기타시설유지 보수 完了.doc" }
+        { "title": "비계 설치·해체 안전작업절차서", "file": "procedures/예시_비계_설치해체_안전작업절차서.docx" }
       ]
     }
   ]
