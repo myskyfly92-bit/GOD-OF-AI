@@ -1,0 +1,29 @@
+{
+  "_readme": "이 파일에 사고사례 목록을 등록하면 사이트에 자동으로 표시됩니다. 실제 파일은 'accident-cases' 폴더 안에 넣고, 'file' 값에 정확한 파일명을 적어주세요.",
+  "categories": [
+    {
+      "name": "당사 사고사례 (사고조사 및 재발방지대책)",
+      "documents": [
+        { "title": "사고조사 및 재발방지대책 (25-01호)", "file": "accident-cases/사고조사 및 재발방지대책(25-01호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-02호)", "file": "accident-cases/사고조사 및 재발방지대책(25-02호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-03호)", "file": "accident-cases/사고조사 및 재발방지대책(25-03호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-04호)", "file": "accident-cases/사고조사 및 재발방지대책(25-04호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-05호)", "file": "accident-cases/사고조사 및 재발방지대책(25-05호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-06호)", "file": "accident-cases/사고조사 및 재발방지대책(25-06호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-07호)", "file": "accident-cases/사고조사 및 재발방지대책(25-07호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-08호)", "file": "accident-cases/사고조사 및 재발방지대책(25-08호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-09호)", "file": "accident-cases/사고조사 및 재발방지대책(25-09호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-10호)", "file": "accident-cases/사고조사 및 재발방지대책(25-10호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-11호)", "file": "accident-cases/사고조사 및 재발방지대책(25-11호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-12호)", "file": "accident-cases/사고조사 및 재발방지대책(25-12호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-13호)", "file": "accident-cases/사고조사 및 재발방지대책(25-13호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (25-14호)", "file": "accident-cases/사고조사 및 재발방지대책(25-14호).pdf" },
+        { "title": "사고조사 및 재발방지대책 (26-01호)", "file": "accident-cases/사고조사 및 재발방지대책(26-01호).pdf" }
+      ]
+    },
+    {
+      "name": "타사 사고사례",
+      "documents": []
+    }
+  ]
+}

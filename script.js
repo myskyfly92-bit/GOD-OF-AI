@@ -550,3 +550,54 @@ function renderProcedures(categories) {
 
 loadProcedures();
 
+/* ==========================================================
+   사고사례 (accident-cases.json 기반)
+   -- 기존 script.js 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   ========================================================== */
+
+function accEscapeHtml(str) {
+  if (str === undefined || str === null) return "";
+  return String(str)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+async function loadAccidentCases() {
+  const container = document.getElementById("accidentContainer");
+  if (!container) return;
+  try {
+    const res = await fetch("accident-cases.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("accident-cases.json 로드 실패");
+    const data = await res.json();
+    renderAccidentCases(data.categories);
+  } catch (err) {
+    console.error(err);
+    container.innerHTML = `<p class="skeleton">accident-cases.json을 불러올 수 없습니다.</p>`;
+  }
+}
+
+function renderAccidentCases(categories) {
+  const container = document.getElementById("accidentContainer");
+  if (!categories || !categories.length) {
+    container.innerHTML = `<p class="skeleton">등록된 사고사례가 없습니다.</p>`;
+    return;
+  }
+
+  container.innerHTML = categories.map(cat => `
+    <div class="proc-category">
+      <div class="proc-category-title">${accEscapeHtml(cat.name)}</div>
+      <ul class="proc-doc-list">
+        ${(cat.documents || []).map(doc => `
+          <li class="proc-doc-row">
+            <a href="${accEscapeHtml(doc.file)}" target="_blank" rel="noopener noreferrer">
+              📄 ${accEscapeHtml(doc.title)}
+            </a>
+          </li>
+        `).join("")}
+      </ul>
+    </div>
+  `).join("");
+}
+
+loadAccidentCases();
+
+
