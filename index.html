@@ -39,6 +39,8 @@
   <button class="tab-btn" data-view="view-orgchart">조직도</button>
   <button class="tab-btn" data-view="view-procedures">안전작업절차서</button>
   <button class="tab-btn" data-view="view-accidents">사고사례</button>
+  <button class="tab-btn" data-view="view-supplies">안전물품 재고</button>
+  <button class="tab-btn" data-view="view-workzone">작업구역</button>
 </nav>
 
 <div id="view-dashboard" class="view active">
@@ -242,6 +244,35 @@
     <div id="accidentContainer">
       <p class="skeleton">목록 불러오는 중…</p>
     </div>
+  </section>
+</main>
+</div>
+
+<div id="view-supplies" class="view">
+<main class="grid">
+  <section class="panel supplies-panel" aria-label="안전물품 재고현황" style="grid-column: 1 / -1;">
+    <div class="panel-label">SAFETY SUPPLIES · 안전물품 재고현황</div>
+    <p class="source-note" id="suppliesMeta">데이터 불러오는 중…</p>
+    <div id="suppliesContainer">
+      <p class="skeleton">목록 불러오는 중…</p>
+    </div>
+  </section>
+</main>
+</div>
+
+<div id="view-workzone" class="view">
+<main class="grid">
+  <section class="panel workzone-panel" aria-label="작업구역 현황" style="grid-column: 1 / -1;">
+    <div class="panel-label">WORK ZONES · 작업구역 현황</div>
+    <div class="workzone-legend">
+      <span class="wz-legend-item"><span class="wz-dot wz-status-진행중"></span>진행중</span>
+      <span class="wz-legend-item"><span class="wz-dot wz-status-완료"></span>완료</span>
+      <span class="wz-legend-item"><span class="wz-dot wz-status-계획중"></span>계획중</span>
+    </div>
+    <div id="workzoneMapWrap" class="workzone-map-wrap">
+      <p class="skeleton">지도/구역 데이터 불러오는 중…</p>
+    </div>
+    <p class="source-note">위성사진 위에 표시된 점을 클릭하면 구역 상세정보가 나옵니다. 지도와 구역 정보는 work-zones.json에서 수정할 수 있습니다.</p>
   </section>
 </main>
 </div>

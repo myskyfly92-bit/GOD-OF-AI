@@ -600,4 +600,78 @@ function renderAccidentCases(categories) {
 
 loadAccidentCases();
 
+/* ==========================================================
+   작업구역 (work-zones.json 기반)
+   -- 기존 script.js 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   ========================================================== */
+
+function wzEscapeHtml(str) {
+  if (str === undefined || str === null) return "";
+  return String(str)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+async function loadWorkZones() {
+  const wrap = document.getElementById("workzoneMapWrap");
+  if (!wrap) return;
+  try {
+    const res = await fetch("work-zones.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("work-zones.json 로드 실패");
+    const data = await res.json();
+    renderWorkZones(data);
+  } catch (err) {
+    console.error(err);
+    wrap.innerHTML = `<p class="skeleton">work-zones.json을 불러올 수 없습니다.</p>`;
+  }
+}
+
+function renderWorkZones(data) {
+  const wrap = document.getElementById("workzoneMapWrap");
+  const bg = data.backgroundImage || "";
+  const zones = data.zones || [];
+
+  wrap.innerHTML = `
+    <div class="workzone-map" id="workzoneMap">
+      <img src="${wzEscapeHtml(bg)}" alt="현장 위성사진" class="workzone-bg"
+           onerror="this.style.display='none'; document.getElementById('workzoneMapFallback').style.display='flex';">
+      <div id="workzoneMapFallback" class="workzone-fallback" style="display:none;">
+        배경 사진(${wzEscapeHtml(bg)})을 아직 찾을 수 없습니다. assets 폴더에 사진을 넣어주세요.
+      </div>
+    </div>
+  `;
+
+  const mapEl = document.getElementById("workzoneMap");
+
+  zones.forEach((z, idx) => {
+    const marker = document.createElement("div");
+    marker.className = `wz-marker wz-status-${wzEscapeHtml(z.status || "진행중")}`;
+    marker.style.left = z.x + "%";
+    marker.style.top = z.y + "%";
+    marker.title = z.name;
+
+    const popup = document.createElement("div");
+    popup.className = "wz-popup";
+    popup.innerHTML = `
+      <div class="wz-popup-title">${wzEscapeHtml(z.name)}</div>
+      <div class="wz-popup-status wz-status-text-${wzEscapeHtml(z.status || "")}">${wzEscapeHtml(z.status || "")}</div>
+      <div class="wz-popup-desc">${wzEscapeHtml(z.description || "")}</div>
+    `;
+    marker.appendChild(popup);
+
+    marker.addEventListener("click", (e) => {
+      e.stopPropagation();
+      document.querySelectorAll(".wz-marker.active").forEach(m => { if (m !== marker) m.classList.remove("active"); });
+      marker.classList.toggle("active");
+    });
+
+    mapEl.appendChild(marker);
+  });
+
+  document.addEventListener("click", () => {
+    document.querySelectorAll(".wz-marker.active").forEach(m => m.classList.remove("active"));
+  });
+}
+
+loadWorkZones();
+
 

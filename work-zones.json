@@ -1,0 +1,8 @@
+{
+  "_readme": "backgroundImage에 위성사진 경로를 지정하세요 (예: assets/site-map.jpg). zones의 x/y는 사진 기준 퍼센트(%) 좌표입니다. coordinate-picker.html 도구로 좌표를 뽑아서 채워넣으면 됩니다.",
+  "backgroundImage": "assets/site-map.jpg",
+  "zones": [
+    { "name": "예시: HOUSING 구역", "status": "진행중", "description": "주거동 골조 공사 진행 중", "x": 30, "y": 40 },
+    { "name": "예시: PLANT 구역", "status": "완료", "description": "생산 플랜트 시공 완료", "x": 65, "y": 60 }
+  ]
+}
