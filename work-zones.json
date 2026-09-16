@@ -1,12 +1,10 @@
 {
-  "_readme": "backgroundImage: 위성사진 경로. zones 각 항목의 x/y는 사진 기준 퍼센트(%) 좌표(coordinate-picker.html로 추출). category는 '캠프' / 'Site 북부' / 'Site 남부' 중 하나. schedule은 요일별 작업내용 배열입니다 (day는 월/화/수/목/금/토/일).",
-  "backgroundImage": "assets/site-map.png",
+  "_readme": "구역마다 image(사진 경로)와 요일별 schedule을 등록하면 됩니다. 좌표(x/y)는 더 이상 필요 없습니다. category는 '캠프' / 'Site 북부' / 'Site 남부' 중 하나.",
   "zones": [
     {
       "name": "BNCP Camp",
       "category": "캠프",
-      "x": 61.44,
-      "y": 95.12,
+      "image": "assets/site-map.png",
       "schedule": [
         { "day": "월", "work": "예시: 캠프 시설 점검" },
         { "day": "화", "work": "예시: 자재 반입" },
@@ -15,6 +13,34 @@
         { "day": "금", "work": "" },
         { "day": "토", "work": "" },
         { "day": "일", "work": "휴무" }
+      ]
+    },
+    {
+      "name": "Site 북부",
+      "category": "Site 북부",
+      "image": "assets/site-north.png",
+      "schedule": [
+        { "day": "월", "work": "" },
+        { "day": "화", "work": "" },
+        { "day": "수", "work": "" },
+        { "day": "목", "work": "" },
+        { "day": "금", "work": "" },
+        { "day": "토", "work": "" },
+        { "day": "일", "work": "" }
+      ]
+    },
+    {
+      "name": "Site 남부",
+      "category": "Site 남부",
+      "image": "assets/site-south.png",
+      "schedule": [
+        { "day": "월", "work": "" },
+        { "day": "화", "work": "" },
+        { "day": "수", "work": "" },
+        { "day": "목", "work": "" },
+        { "day": "금", "work": "" },
+        { "day": "토", "work": "" },
+        { "day": "일", "work": "" }
       ]
     }
   ]
