@@ -790,4 +790,122 @@ function wzShowSchedule(zone) {
   `;
 }
 
+/* ==========================================================
+   작업구역 — 최종 버전: 점(마커) 없이, 구역별 사진 + 요일별 일정
+   -- 기존 script.js 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   (renderWorkZones 함수를 다시 한 번 덮어씁니다: 이 버전이 최종 적용됩니다)
+   ========================================================== */
+
+const WZ_DAY_ORDER_V2 = ["월", "화", "수", "목", "금", "토", "일"];
+const WZ_CATEGORY_CLASS_V2 = {
+  "캠프": "wz-cat-camp",
+  "Site 북부": "wz-cat-north",
+  "Site 남부": "wz-cat-south"
+};
+
+let wzZonesV2 = [];
+let wzActiveIdx = 0;
+
+function renderWorkZones(data) {
+  const wrap = document.getElementById("workzoneMapWrap");
+  wzZonesV2 = data.zones || [];
+
+  // 범례 숨김 (구역 탭 자체가 구분 역할을 하므로 불필요)
+  const legendEl = document.querySelector(".workzone-legend");
+  if (legendEl) legendEl.style.display = "none";
+
+  if (!wzZonesV2.length) {
+    wrap.innerHTML = `<p class="skeleton">등록된 구역이 없습니다.</p>`;
+    return;
+  }
+
+  const tabsHtml = wzZonesV2.map((z, i) => `
+    <button type="button" class="wz-tab-btn ${i === 0 ? "active" : ""}" data-idx="${i}">
+      <span class="wz-tab-dot ${WZ_CATEGORY_CLASS_V2[z.category] || ""}"></span>
+      ${wzEscapeHtml(z.name)}
+    </button>
+  `).join("");
+
+  wrap.innerHTML = `
+    <div class="wz-zone-tabs">${tabsHtml}</div>
+    <div class="wz-layout">
+      <div class="wz-map-col">
+        <div class="wz-viewport" id="wzViewport">
+          <div class="wz-zoombox" id="wzZoombox">
+            <img src="" alt="구역 사진" class="workzone-bg" id="wzBgImg"
+                 onerror="this.style.display='none'; document.getElementById('workzoneMapFallback').style.display='flex';">
+            <div id="workzoneMapFallback" class="workzone-fallback" style="display:none;"></div>
+          </div>
+        </div>
+        <div class="wz-zoom-controls">
+          <button type="button" id="wzZoomOut" class="wz-zoom-btn">−</button>
+          <button type="button" id="wzZoomReset" class="wz-zoom-btn">초기화</button>
+          <button type="button" id="wzZoomIn" class="wz-zoom-btn">+</button>
+          <span class="wz-zoom-hint">마우스 휠로 확대/축소 · 드래그로 이동</span>
+        </div>
+      </div>
+      <div class="wz-schedule-col" id="wzScheduleCol"></div>
+    </div>
+  `;
+
+  document.querySelectorAll(".wz-tab-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      wzActiveIdx = parseInt(btn.dataset.idx, 10);
+      document.querySelectorAll(".wz-tab-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      wzShowZone(wzActiveIdx);
+    });
+  });
+
+  wzShowZone(0);
+}
+
+function wzShowZone(idx) {
+  const zone = wzZonesV2[idx];
+  if (!zone) return;
+
+  const img = document.getElementById("wzBgImg");
+  const fallback = document.getElementById("workzoneMapFallback");
+  if (img) {
+    img.style.display = "block";
+    img.src = zone.image || "";
+    fallback.textContent = `사진(${zone.image || ""})을 아직 찾을 수 없습니다. assets 폴더에 사진을 넣어주세요.`;
+    fallback.style.display = "none";
+  }
+
+  wzSetupZoomPan();
+  wzShowSchedule(zone);
+}
+
+function wzShowSchedule(zone) {
+  const col = document.getElementById("wzScheduleCol");
+  if (!col) return;
+
+  const scheduleMap = {};
+  (zone.schedule || []).forEach(s => { scheduleMap[s.day] = s.work; });
+
+  const rows = WZ_DAY_ORDER_V2.map(day => {
+    const work = scheduleMap[day] || "";
+    return `
+      <div class="wz-day-row ${work ? "" : "wz-day-empty"}">
+        <span class="wz-day-label">${wzEscapeHtml(day)}</span>
+        <span class="wz-day-work">${work ? wzEscapeHtml(work) : "—"}</span>
+      </div>
+    `;
+  }).join("");
+
+  const catClass = WZ_CATEGORY_CLASS_V2[zone.category] || "";
+
+  col.innerHTML = `
+    <div class="wz-schedule-header">
+      <span class="wz-schedule-cat-badge ${catClass}">${wzEscapeHtml(zone.category || "")}</span>
+      <span class="wz-schedule-title">${wzEscapeHtml(zone.name)}</span>
+    </div>
+    <div class="wz-day-list">
+      ${rows}
+    </div>
+  `;
+}
+
+
 
