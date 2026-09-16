@@ -1,6 +1,6 @@
 {
-  "_readme": "backgroundImage에 위성사진 경로를 지정하세요 (예: assets/site-map.jpg). zones의 x/y는 사진 기준 퍼센트(%) 좌표입니다. coordinate-picker.html 도구로 좌표를 뽑아서 채워넣으면 됩니다.",
-  "backgroundImage": "assets/site-map.jpg",
+  "_readme": "backgroundImage에 위성사진 경로를 지정하세요 (예: assets/site-map.png). zones의 x/y는 사진 기준 퍼센트(%) 좌표입니다. coordinate-picker.html 도구로 좌표를 뽑아서 채워넣으면 됩니다.",
+  "backgroundImage": "assets/site-map.png",
   "zones": [
     { "name": "BNCP Camp", "status": "계획중", "description": "", "x": 61.44, "y": 95.12 }
   ]
