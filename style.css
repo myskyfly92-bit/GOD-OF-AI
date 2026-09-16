@@ -957,3 +957,110 @@ a:focus-visible, button:focus-visible {
   color: var(--text-muted);
   line-height: 1.4;
 }
+
+/* ==========================================================
+   작업구역 — 좌:지도 / 우:요일별 일정 레이아웃 스타일
+   -- 기존 style.css 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   ========================================================== */
+
+.wz-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .wz-layout { grid-template-columns: 1fr; }
+}
+
+.wz-map-col { display: flex; flex-direction: column; }
+
+/* 카테고리 색상 (진행중/완료/계획중 대신 캠프/북부/남부) */
+.wz-cat-camp  { background: var(--amber); color: var(--amber); }
+.wz-cat-north { background: var(--cyan); color: var(--cyan); }
+.wz-cat-south { background: #8b7ff5; color: #8b7ff5; }
+
+.wz-marker.wz-cat-camp  { background: var(--amber); }
+.wz-marker.wz-cat-north { background: var(--cyan); }
+.wz-marker.wz-cat-south { background: #8b7ff5; }
+
+.wz-marker.active {
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.25), 0 0 0 8px currentColor;
+}
+
+/* 오른쪽 일정 패널 */
+.wz-schedule-col {
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  padding: 16px;
+  background: rgba(255,255,255,0.02);
+  min-height: min(65vh, 600px);
+}
+
+.wz-schedule-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.wz-schedule-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.wz-schedule-cat-badge {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.1) !important;
+}
+
+.wz-schedule-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.wz-day-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wz-day-row {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
+  padding: 9px 10px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border-soft);
+}
+
+.wz-day-row.wz-day-empty {
+  opacity: 0.45;
+}
+
+.wz-day-label {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--amber);
+  text-align: center;
+}
+
+.wz-day-work {
+  font-size: 13px;
+  color: var(--text);
+}
+

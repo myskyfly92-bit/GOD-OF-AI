@@ -1,7 +1,21 @@
 {
-  "_readme": "backgroundImage에 위성사진 경로를 지정하세요 (예: assets/site-map.png). zones의 x/y는 사진 기준 퍼센트(%) 좌표입니다. coordinate-picker.html 도구로 좌표를 뽑아서 채워넣으면 됩니다.",
+  "_readme": "backgroundImage: 위성사진 경로. zones 각 항목의 x/y는 사진 기준 퍼센트(%) 좌표(coordinate-picker.html로 추출). category는 '캠프' / 'Site 북부' / 'Site 남부' 중 하나. schedule은 요일별 작업내용 배열입니다 (day는 월/화/수/목/금/토/일).",
   "backgroundImage": "assets/site-map.png",
   "zones": [
-    { "name": "BNCP Camp", "status": "계획중", "description": "", "x": 61.44, "y": 95.12 }
+    {
+      "name": "BNCP Camp",
+      "category": "캠프",
+      "x": 61.44,
+      "y": 95.12,
+      "schedule": [
+        { "day": "월", "work": "예시: 캠프 시설 점검" },
+        { "day": "화", "work": "예시: 자재 반입" },
+        { "day": "수", "work": "" },
+        { "day": "목", "work": "예시: 안전교육" },
+        { "day": "금", "work": "" },
+        { "day": "토", "work": "" },
+        { "day": "일", "work": "휴무" }
+      ]
+    }
   ]
 }

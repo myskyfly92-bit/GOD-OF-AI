@@ -674,4 +674,120 @@ function renderWorkZones(data) {
 
 loadWorkZones();
 
+/* ==========================================================
+   작업구역 — 캠프/Site 북부/Site 남부 구분 + 요일별 작업일정 레이아웃
+   -- 기존 script.js 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   (renderWorkZones 함수를 다시 한 번 덮어씁니다: 이 버전이 최종 적용됩니다)
+   ========================================================== */
+
+const WZ_DAY_ORDER = ["월", "화", "수", "목", "금", "토", "일"];
+const WZ_CATEGORY_CLASS = {
+  "캠프": "wz-cat-camp",
+  "Site 북부": "wz-cat-north",
+  "Site 남부": "wz-cat-south"
+};
+
+let wzCurrentZones = [];
+
+function renderWorkZones(data) {
+  const wrap = document.getElementById("workzoneMapWrap");
+  const bg = data.backgroundImage || "";
+  wzCurrentZones = data.zones || [];
+
+  // 범례를 카테고리 기준으로 다시 그림
+  const legendEl = document.querySelector(".workzone-legend");
+  if (legendEl) {
+    legendEl.innerHTML = `
+      <span class="wz-legend-item"><span class="wz-dot wz-cat-camp"></span>캠프</span>
+      <span class="wz-legend-item"><span class="wz-dot wz-cat-north"></span>Site 북부</span>
+      <span class="wz-legend-item"><span class="wz-dot wz-cat-south"></span>Site 남부</span>
+    `;
+  }
+
+  wrap.innerHTML = `
+    <div class="wz-layout">
+      <div class="wz-map-col">
+        <div class="wz-viewport" id="wzViewport">
+          <div class="wz-zoombox" id="wzZoombox">
+            <img src="${wzEscapeHtml(bg)}" alt="현장 위성사진" class="workzone-bg" id="wzBgImg"
+                 onerror="this.style.display='none'; document.getElementById('workzoneMapFallback').style.display='flex';">
+            <div id="workzoneMapFallback" class="workzone-fallback" style="display:none;">
+              배경 사진(${wzEscapeHtml(bg)})을 아직 찾을 수 없습니다. assets 폴더에 사진을 넣어주세요.
+            </div>
+          </div>
+        </div>
+        <div class="wz-zoom-controls">
+          <button type="button" id="wzZoomOut" class="wz-zoom-btn">−</button>
+          <button type="button" id="wzZoomReset" class="wz-zoom-btn">초기화</button>
+          <button type="button" id="wzZoomIn" class="wz-zoom-btn">+</button>
+          <span class="wz-zoom-hint">마우스 휠로 확대/축소 · 드래그로 이동 · 점을 클릭하면 오른쪽에 일정이 표시됩니다</span>
+        </div>
+      </div>
+      <div class="wz-schedule-col" id="wzScheduleCol">
+        <div class="wz-schedule-placeholder">왼쪽 지도에서 구역을 클릭하면<br>요일별 작업일정이 여기에 표시됩니다.</div>
+      </div>
+    </div>
+  `;
+
+  const zoombox = document.getElementById("wzZoombox");
+
+  wzCurrentZones.forEach((z, idx) => {
+    const marker = document.createElement("div");
+    const catClass = WZ_CATEGORY_CLASS[z.category] || "wz-cat-camp";
+    marker.className = `wz-marker ${catClass}`;
+    marker.style.left = z.x + "%";
+    marker.style.top = z.y + "%";
+    marker.title = z.name;
+    marker.dataset.idx = idx;
+
+    marker.addEventListener("click", (e) => {
+      e.stopPropagation();
+      document.querySelectorAll(".wz-marker.active").forEach(m => m.classList.remove("active"));
+      marker.classList.add("active");
+      wzShowSchedule(z);
+    });
+
+    zoombox.appendChild(marker);
+  });
+
+  wzSetupZoomPan();
+
+  // 구역이 하나뿐이면 자동으로 열어서 보여줌
+  if (wzCurrentZones.length === 1) {
+    const onlyMarker = zoombox.querySelector(".wz-marker");
+    if (onlyMarker) { onlyMarker.classList.add("active"); }
+    wzShowSchedule(wzCurrentZones[0]);
+  }
+}
+
+function wzShowSchedule(zone) {
+  const col = document.getElementById("wzScheduleCol");
+  if (!col) return;
+
+  const scheduleMap = {};
+  (zone.schedule || []).forEach(s => { scheduleMap[s.day] = s.work; });
+
+  const rows = WZ_DAY_ORDER.map(day => {
+    const work = scheduleMap[day] || "";
+    return `
+      <div class="wz-day-row ${work ? "" : "wz-day-empty"}">
+        <span class="wz-day-label">${wzEscapeHtml(day)}</span>
+        <span class="wz-day-work">${work ? wzEscapeHtml(work) : "—"}</span>
+      </div>
+    `;
+  }).join("");
+
+  const catClass = WZ_CATEGORY_CLASS[zone.category] || "wz-cat-camp";
+
+  col.innerHTML = `
+    <div class="wz-schedule-header">
+      <span class="wz-schedule-cat-badge ${catClass}">${wzEscapeHtml(zone.category || "")}</span>
+      <span class="wz-schedule-title">${wzEscapeHtml(zone.name)}</span>
+    </div>
+    <div class="wz-day-list">
+      ${rows}
+    </div>
+  `;
+}
+
 
