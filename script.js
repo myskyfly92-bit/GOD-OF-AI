@@ -404,7 +404,7 @@ function renderHeatIllness(data) {
 
 loadHeatIllness();
 
-/* ---------------- 전국 건설업 중대재해 (오늘) ---------------- */
+/* ---------------- 전국 건설업 중대재해 (연간 누적) ---------------- */
 async function loadDailyDisaster() {
   try {
     const res = await fetch("daily-disaster.json", { cache: "no-store" });
@@ -500,11 +500,7 @@ function renderWhoOutbreaks(items, generatedAt) {
 
 loadWhoOutbreaks();
 
-/* ==========================================================
-   안전작업절차서 (procedures.json 기반)
-   -- 기존 script.js 맨 아래에 이 내용을 그대로 붙여넣으세요 --
-   ========================================================== */
-
+/* ---------------- 안전작업절차서 (procedures.json 기반) ---------------- */
 function procEscapeHtml(str) {
   if (str === undefined || str === null) return "";
   return String(str)
@@ -550,11 +546,7 @@ function renderProcedures(categories) {
 
 loadProcedures();
 
-/* ==========================================================
-   사고사례 (accident-cases.json 기반)
-   -- 기존 script.js 맨 아래에 이 내용을 그대로 붙여넣으세요 --
-   ========================================================== */
-
+/* ---------------- 사고사례 (accident-cases.json 기반) ---------------- */
 function accEscapeHtml(str) {
   if (str === undefined || str === null) return "";
   return String(str)
@@ -601,8 +593,8 @@ function renderAccidentCases(categories) {
 loadAccidentCases();
 
 /* ==========================================================
-   작업구역 (work-zones.json 기반)
-   -- 기존 script.js 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   작업구역 (work-zones.json 기반) — 최종본
+   점(마커) 없이, 구역 탭으로 전환하며 사진 + 요일별 일정을 보여줍니다.
    ========================================================== */
 
 function wzEscapeHtml(str) {
@@ -621,64 +613,9 @@ async function loadWorkZones() {
     renderWorkZones(data);
   } catch (err) {
     console.error(err);
-    wrap.innerHTML = `<p class="skeleton">work-zones.json을 불러올 수 없습니다.</p>`;
+    wrap.innerHTML = `<p class="skeleton">work-zones.json을 불러올 수 없습니다. (${err.message})</p>`;
   }
 }
-
-function renderWorkZones(data) {
-  const wrap = document.getElementById("workzoneMapWrap");
-  const bg = data.backgroundImage || "";
-  const zones = data.zones || [];
-
-  wrap.innerHTML = `
-    <div class="workzone-map" id="workzoneMap">
-      <img src="${wzEscapeHtml(bg)}" alt="현장 위성사진" class="workzone-bg"
-           onerror="this.style.display='none'; document.getElementById('workzoneMapFallback').style.display='flex';">
-      <div id="workzoneMapFallback" class="workzone-fallback" style="display:none;">
-        배경 사진(${wzEscapeHtml(bg)})을 아직 찾을 수 없습니다. assets 폴더에 사진을 넣어주세요.
-      </div>
-    </div>
-  `;
-
-  const mapEl = document.getElementById("workzoneMap");
-
-  zones.forEach((z, idx) => {
-    const marker = document.createElement("div");
-    marker.className = `wz-marker wz-status-${wzEscapeHtml(z.status || "진행중")}`;
-    marker.style.left = z.x + "%";
-    marker.style.top = z.y + "%";
-    marker.title = z.name;
-
-    const popup = document.createElement("div");
-    popup.className = "wz-popup";
-    popup.innerHTML = `
-      <div class="wz-popup-title">${wzEscapeHtml(z.name)}</div>
-      <div class="wz-popup-status wz-status-text-${wzEscapeHtml(z.status || "")}">${wzEscapeHtml(z.status || "")}</div>
-      <div class="wz-popup-desc">${wzEscapeHtml(z.description || "")}</div>
-    `;
-    marker.appendChild(popup);
-
-    marker.addEventListener("click", (e) => {
-      e.stopPropagation();
-      document.querySelectorAll(".wz-marker.active").forEach(m => { if (m !== marker) m.classList.remove("active"); });
-      marker.classList.toggle("active");
-    });
-
-    mapEl.appendChild(marker);
-  });
-
-  document.addEventListener("click", () => {
-    document.querySelectorAll(".wz-marker.active").forEach(m => m.classList.remove("active"));
-  });
-}
-
-loadWorkZones();
-
-/* ==========================================================
-   작업구역 — 캠프/Site 북부/Site 남부 구분 + 요일별 작업일정 레이아웃
-   -- 기존 script.js 맨 아래에 이 내용을 그대로 붙여넣으세요 --
-   (renderWorkZones 함수를 다시 한 번 덮어씁니다: 이 버전이 최종 적용됩니다)
-   ========================================================== */
 
 const WZ_DAY_ORDER = ["월", "화", "수", "목", "금", "토", "일"];
 const WZ_CATEGORY_CLASS = {
@@ -687,141 +624,26 @@ const WZ_CATEGORY_CLASS = {
   "Site 남부": "wz-cat-south"
 };
 
-let wzCurrentZones = [];
-
-function renderWorkZones(data) {
-  const wrap = document.getElementById("workzoneMapWrap");
-  const bg = data.backgroundImage || "";
-  wzCurrentZones = data.zones || [];
-
-  // 범례를 카테고리 기준으로 다시 그림
-  const legendEl = document.querySelector(".workzone-legend");
-  if (legendEl) {
-    legendEl.innerHTML = `
-      <span class="wz-legend-item"><span class="wz-dot wz-cat-camp"></span>캠프</span>
-      <span class="wz-legend-item"><span class="wz-dot wz-cat-north"></span>Site 북부</span>
-      <span class="wz-legend-item"><span class="wz-dot wz-cat-south"></span>Site 남부</span>
-    `;
-  }
-
-  wrap.innerHTML = `
-    <div class="wz-layout">
-      <div class="wz-map-col">
-        <div class="wz-viewport" id="wzViewport">
-          <div class="wz-zoombox" id="wzZoombox">
-            <img src="${wzEscapeHtml(bg)}" alt="현장 위성사진" class="workzone-bg" id="wzBgImg"
-                 onerror="this.style.display='none'; document.getElementById('workzoneMapFallback').style.display='flex';">
-            <div id="workzoneMapFallback" class="workzone-fallback" style="display:none;">
-              배경 사진(${wzEscapeHtml(bg)})을 아직 찾을 수 없습니다. assets 폴더에 사진을 넣어주세요.
-            </div>
-          </div>
-        </div>
-        <div class="wz-zoom-controls">
-          <button type="button" id="wzZoomOut" class="wz-zoom-btn">−</button>
-          <button type="button" id="wzZoomReset" class="wz-zoom-btn">초기화</button>
-          <button type="button" id="wzZoomIn" class="wz-zoom-btn">+</button>
-          <span class="wz-zoom-hint">마우스 휠로 확대/축소 · 드래그로 이동 · 점을 클릭하면 오른쪽에 일정이 표시됩니다</span>
-        </div>
-      </div>
-      <div class="wz-schedule-col" id="wzScheduleCol">
-        <div class="wz-schedule-placeholder">왼쪽 지도에서 구역을 클릭하면<br>요일별 작업일정이 여기에 표시됩니다.</div>
-      </div>
-    </div>
-  `;
-
-  const zoombox = document.getElementById("wzZoombox");
-
-  wzCurrentZones.forEach((z, idx) => {
-    const marker = document.createElement("div");
-    const catClass = WZ_CATEGORY_CLASS[z.category] || "wz-cat-camp";
-    marker.className = `wz-marker ${catClass}`;
-    marker.style.left = z.x + "%";
-    marker.style.top = z.y + "%";
-    marker.title = z.name;
-    marker.dataset.idx = idx;
-
-    marker.addEventListener("click", (e) => {
-      e.stopPropagation();
-      document.querySelectorAll(".wz-marker.active").forEach(m => m.classList.remove("active"));
-      marker.classList.add("active");
-      wzShowSchedule(z);
-    });
-
-    zoombox.appendChild(marker);
-  });
-
-  wzSetupZoomPan();
-
-  // 구역이 하나뿐이면 자동으로 열어서 보여줌
-  if (wzCurrentZones.length === 1) {
-    const onlyMarker = zoombox.querySelector(".wz-marker");
-    if (onlyMarker) { onlyMarker.classList.add("active"); }
-    wzShowSchedule(wzCurrentZones[0]);
-  }
-}
-
-function wzShowSchedule(zone) {
-  const col = document.getElementById("wzScheduleCol");
-  if (!col) return;
-
-  const scheduleMap = {};
-  (zone.schedule || []).forEach(s => { scheduleMap[s.day] = s.work; });
-
-  const rows = WZ_DAY_ORDER.map(day => {
-    const work = scheduleMap[day] || "";
-    return `
-      <div class="wz-day-row ${work ? "" : "wz-day-empty"}">
-        <span class="wz-day-label">${wzEscapeHtml(day)}</span>
-        <span class="wz-day-work">${work ? wzEscapeHtml(work) : "—"}</span>
-      </div>
-    `;
-  }).join("");
-
-  const catClass = WZ_CATEGORY_CLASS[zone.category] || "wz-cat-camp";
-
-  col.innerHTML = `
-    <div class="wz-schedule-header">
-      <span class="wz-schedule-cat-badge ${catClass}">${wzEscapeHtml(zone.category || "")}</span>
-      <span class="wz-schedule-title">${wzEscapeHtml(zone.name)}</span>
-    </div>
-    <div class="wz-day-list">
-      ${rows}
-    </div>
-  `;
-}
-
-/* ==========================================================
-   작업구역 — 최종 버전: 점(마커) 없이, 구역별 사진 + 요일별 일정
-   -- 기존 script.js 맨 아래에 이 내용을 그대로 붙여넣으세요 --
-   (renderWorkZones 함수를 다시 한 번 덮어씁니다: 이 버전이 최종 적용됩니다)
-   ========================================================== */
-
-const WZ_DAY_ORDER_V2 = ["월", "화", "수", "목", "금", "토", "일"];
-const WZ_CATEGORY_CLASS_V2 = {
-  "캠프": "wz-cat-camp",
-  "Site 북부": "wz-cat-north",
-  "Site 남부": "wz-cat-south"
-};
-
-let wzZonesV2 = [];
+let wzZones = [];
 let wzActiveIdx = 0;
+let wzScale = 1, wzTx = 0, wzTy = 0;
 
 function renderWorkZones(data) {
   const wrap = document.getElementById("workzoneMapWrap");
-  wzZonesV2 = data.zones || [];
+  wzZones = data.zones || [];
 
   // 범례 숨김 (구역 탭 자체가 구분 역할을 하므로 불필요)
   const legendEl = document.querySelector(".workzone-legend");
   if (legendEl) legendEl.style.display = "none";
 
-  if (!wzZonesV2.length) {
+  if (!wzZones.length) {
     wrap.innerHTML = `<p class="skeleton">등록된 구역이 없습니다.</p>`;
     return;
   }
 
-  const tabsHtml = wzZonesV2.map((z, i) => `
+  const tabsHtml = wzZones.map((z, i) => `
     <button type="button" class="wz-tab-btn ${i === 0 ? "active" : ""}" data-idx="${i}">
-      <span class="wz-tab-dot ${WZ_CATEGORY_CLASS_V2[z.category] || ""}"></span>
+      <span class="wz-tab-dot ${WZ_CATEGORY_CLASS[z.category] || ""}"></span>
       ${wzEscapeHtml(z.name)}
     </button>
   `).join("");
@@ -861,7 +683,7 @@ function renderWorkZones(data) {
 }
 
 function wzShowZone(idx) {
-  const zone = wzZonesV2[idx];
+  const zone = wzZones[idx];
   if (!zone) return;
 
   const img = document.getElementById("wzBgImg");
@@ -884,7 +706,7 @@ function wzShowSchedule(zone) {
   const scheduleMap = {};
   (zone.schedule || []).forEach(s => { scheduleMap[s.day] = s.work; });
 
-  const rows = WZ_DAY_ORDER_V2.map(day => {
+  const rows = WZ_DAY_ORDER.map(day => {
     const work = scheduleMap[day] || "";
     return `
       <div class="wz-day-row ${work ? "" : "wz-day-empty"}">
@@ -894,7 +716,7 @@ function wzShowSchedule(zone) {
     `;
   }).join("");
 
-  const catClass = WZ_CATEGORY_CLASS_V2[zone.category] || "";
+  const catClass = WZ_CATEGORY_CLASS[zone.category] || "";
 
   col.innerHTML = `
     <div class="wz-schedule-header">
@@ -907,5 +729,124 @@ function wzShowSchedule(zone) {
   `;
 }
 
+/* ---------------- 지도 확대/축소/이동 ---------------- */
+function wzApplyTransform() {
+  const box = document.getElementById("wzZoombox");
+  if (!box) return;
+  box.style.transform = `translate(${wzTx}px, ${wzTy}px) scale(${wzScale})`;
+}
 
+function wzClamp(val, min, max) {
+  return Math.min(max, Math.max(min, val));
+}
 
+function wzSetupZoomPan() {
+  const viewport = document.getElementById("wzViewport");
+  const zoombox = document.getElementById("wzZoombox");
+  if (!viewport || !zoombox) return;
+
+  wzScale = 1; wzTx = 0; wzTy = 0;
+  wzApplyTransform();
+
+  const MIN_SCALE = 1, MAX_SCALE = 5;
+
+  function zoomAt(clientX, clientY, factor) {
+    const rect = viewport.getBoundingClientRect();
+    const mx = clientX - rect.left;
+    const my = clientY - rect.top;
+    const contentX = (mx - wzTx) / wzScale;
+    const contentY = (my - wzTy) / wzScale;
+    const newScale = wzClamp(wzScale * factor, MIN_SCALE, MAX_SCALE);
+    wzTx = mx - contentX * newScale;
+    wzTy = my - contentY * newScale;
+    wzScale = newScale;
+    if (wzScale === MIN_SCALE) { wzTx = 0; wzTy = 0; }
+    wzApplyTransform();
+  }
+
+  // 이전 리스너가 중복 등록되지 않도록 새 요소로 교체
+  const newViewport = viewport.cloneNode(false);
+  while (viewport.firstChild) newViewport.appendChild(viewport.firstChild);
+  viewport.parentNode.replaceChild(newViewport, viewport);
+
+  const vp = newViewport;
+  const zb = document.getElementById("wzZoombox");
+
+  vp.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+    zoomAt(e.clientX, e.clientY, factor);
+  }, { passive: false });
+
+  document.getElementById("wzZoomIn")?.addEventListener("click", () => {
+    const rect = vp.getBoundingClientRect();
+    zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, 1.3);
+  });
+  document.getElementById("wzZoomOut")?.addEventListener("click", () => {
+    const rect = vp.getBoundingClientRect();
+    zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, 1 / 1.3);
+  });
+  document.getElementById("wzZoomReset")?.addEventListener("click", () => {
+    wzScale = 1; wzTx = 0; wzTy = 0;
+    wzApplyTransform();
+  });
+
+  // 드래그로 이동 (마우스)
+  let dragging = false, startX = 0, startY = 0, startTx = 0, startTy = 0;
+  zb.addEventListener("mousedown", (e) => {
+    if (wzScale <= 1) return;
+    dragging = true;
+    startX = e.clientX; startY = e.clientY;
+    startTx = wzTx; startTy = wzTy;
+    zb.classList.add("wz-dragging");
+  });
+  window.addEventListener("mousemove", (e) => {
+    if (!dragging) return;
+    wzTx = startTx + (e.clientX - startX);
+    wzTy = startTy + (e.clientY - startY);
+    wzApplyTransform();
+  });
+  window.addEventListener("mouseup", () => {
+    dragging = false;
+    zb.classList.remove("wz-dragging");
+  });
+
+  // 터치 지원 (모바일)
+  let touchStartDist = null, touchStartScale = 1;
+  vp.addEventListener("touchstart", (e) => {
+    if (e.touches.length === 2) {
+      touchStartDist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY
+      );
+      touchStartScale = wzScale;
+    } else if (e.touches.length === 1 && wzScale > 1) {
+      dragging = true;
+      startX = e.touches[0].clientX; startY = e.touches[0].clientY;
+      startTx = wzTx; startTy = wzTy;
+    }
+  }, { passive: true });
+
+  vp.addEventListener("touchmove", (e) => {
+    if (e.touches.length === 2 && touchStartDist) {
+      const dist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY
+      );
+      const factor = dist / touchStartDist;
+      wzScale = wzClamp(touchStartScale * factor, MIN_SCALE, MAX_SCALE);
+      wzApplyTransform();
+    } else if (e.touches.length === 1 && dragging) {
+      wzTx = startTx + (e.touches[0].clientX - startX);
+      wzTy = startTy + (e.touches[0].clientY - startY);
+      wzApplyTransform();
+    }
+  }, { passive: true });
+
+  vp.addEventListener("touchend", () => {
+    dragging = false;
+    touchStartDist = null;
+  });
+}
+
+loadWorkZones();
