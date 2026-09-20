@@ -21,6 +21,12 @@ function updateClock() {
   });
   document.getElementById("clock").textContent = timeFmt.format(now) + " (바그다드)";
   document.getElementById("date").textContent = dateFmt.format(now);
+
+  const kstFmt = new Intl.DateTimeFormat("ko-KR", {
+    timeZone: "Asia/Seoul", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false
+  });
+  const kstEl = document.getElementById("clockKst");
+  if (kstEl) kstEl.textContent = kstFmt.format(now) + " (한국)";
 }
 updateClock();
 setInterval(updateClock, 1000);
