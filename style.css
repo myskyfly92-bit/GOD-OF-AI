@@ -1207,4 +1207,53 @@ body {
   margin-top: 2px;
 }
 
+/* ==========================================================
+   시계 라벨(바그다드/한국) 스타일
+   -- 기존 style.css 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   ========================================================== */
+
+.clock-label {
+  opacity: 0.75;
+}
+
+/* ==========================================================
+   구글 번역 위젯 스타일 조정
+   -- 기존 style.css 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   ========================================================== */
+
+.translate-widget {
+  display: flex;
+  align-items: center;
+}
+
+/* 번역 실행 시 구글이 상단에 붙이는 배너를 숨기고, 밀려나는 여백도 원상복구 */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+
+/* 위젯 자체를 다크 테마 톤에 맞게 최소한으로 다듬기 */
+#google_translate_element .goog-te-gadget {
+  font-family: var(--font-mono) !important;
+  font-size: 11px !important;
+  color: var(--text-muted) !important;
+}
+
+#google_translate_element .goog-te-gadget-simple {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid var(--border-soft) !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+}
+
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span {
+  color: var(--text) !important;
+}
+
+@media (max-width: 980px) {
+  .translate-widget { display: none; }
+}
+
 
