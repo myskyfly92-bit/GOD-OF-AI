@@ -56,27 +56,24 @@ googleBannerObserver.observe(document.documentElement, {
 setInterval(killGoogleTranslateBanner, 400);
 killGoogleTranslateBanner();
 
-/* ---------------- 자체 제작 언어 전환 버튼 ----------------
-   구글 번역 위젯이 내부적으로 만드는 <select class="goog-te-combo"> 를
-   직접 조작해서 번역을 실행한다. 이 select는 구글 스크립트가 비동기로
-   로드된 뒤에 생성되므로, 아직 없으면 잠깐 기다렸다가 재시도한다. */
-function setGoogleTranslateLanguage(lang) {
-  const combo = document.querySelector("select.goog-te-combo");
-  if (!combo) {
-    setTimeout(() => setGoogleTranslateLanguage(lang), 300);
-    return;
-  }
-  combo.value = lang;
-  combo.dispatchEvent(new Event("change"));
+/* ---------------- 번역 위젯을 nav 탭 버튼과 같은 높이로 맞추기 ----------------
+   .tab-bar(종합현황/대사관 안전공지... 메뉴 줄) 버튼들의 세로 중앙에
+   위젯의 세로 중심이 오도록 top 값을 실측해서 맞춘다. */
+function alignTranslateWidget() {
+  const tabBar = document.querySelector(".tab-bar");
+  const widget = document.querySelector(".translate-widget-floating");
+  if (!tabBar || !widget) return;
+  const rect = tabBar.getBoundingClientRect();
+  const centerY = rect.top + rect.height / 2; // 탭 버튼 줄의 세로 중앙
+  const widgetHeight = widget.offsetHeight || 28;
+  widget.style.top = `${Math.round(centerY - widgetHeight / 2)}px`;
 }
-
-document.querySelectorAll(".lang-btn").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".lang-btn").forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-    setGoogleTranslateLanguage(btn.dataset.lang);
-  });
-});
+window.addEventListener("load", alignTranslateWidget);
+window.addEventListener("resize", alignTranslateWidget);
+// 구글 위젯 자체가 비동기로 로드되며 크기가 뒤늦게 잡히는 경우가 있어
+// 로드 직후 한 번 더 재계산
+setTimeout(alignTranslateWidget, 800);
+setTimeout(alignTranslateWidget, 2000);
 
 /* ---------------- 시계 ---------------- */
 function updateClock() {
