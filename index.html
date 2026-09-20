@@ -34,16 +34,15 @@
       <img class="flag-icon" src="https://flagcdn.com/32x24/iq.png" srcset="https://flagcdn.com/64x48/iq.png 2x" alt="이라크 국기" title="이라크">
       <img class="flag-icon" src="https://flagcdn.com/32x24/kr.png" srcset="https://flagcdn.com/64x48/kr.png 2x" alt="대한민국 국기" title="대한민국">
     </div>
+    <div id="google_translate_element" class="translate-widget"></div>
   </div>
 </header>
 
 <nav class="tab-bar">
   <button class="tab-btn active" data-view="view-dashboard">종합현황</button>
   <button class="tab-btn" data-view="view-embassy">대사관 안전공지</button>
-  <button class="tab-btn" data-view="view-orgchart">조직도</button>
   <button class="tab-btn" data-view="view-procedures">안전작업절차서</button>
   <button class="tab-btn" data-view="view-accidents">사고사례</button>
-  <button class="tab-btn" data-view="view-supplies">안전물품 재고</button>
   <button class="tab-btn" data-view="view-workzone">작업구역</button>
 </nav>
 
@@ -248,17 +247,6 @@
 </main>
 </div>
 
-<div id="view-orgchart" class="view">
-<main class="grid">
-  <section class="panel orgchart-panel" aria-label="안전환경 조직도" style="grid-column: 1 / -1;">
-    <div class="panel-label">ORGANIZATION · 안전환경 조직도</div>
-    <div id="orgChartContainer" class="orgchart">
-      <p class="skeleton">조직도 불러오는 중…</p>
-    </div>
-  </section>
-</main>
-</div>
-
 <div id="view-procedures" class="view">
 <main class="grid">
   <section class="panel procedure-panel" aria-label="안전작업절차서" style="grid-column: 1 / -1;">
@@ -275,18 +263,6 @@
   <section class="panel procedure-panel" aria-label="사고사례" style="grid-column: 1 / -1;">
     <div class="panel-label">ACCIDENT CASES · 당사/타사 사고사례</div>
     <div id="accidentContainer">
-      <p class="skeleton">목록 불러오는 중…</p>
-    </div>
-  </section>
-</main>
-</div>
-
-<div id="view-supplies" class="view">
-<main class="grid">
-  <section class="panel supplies-panel" aria-label="안전물품 재고현황" style="grid-column: 1 / -1;">
-    <div class="panel-label">SAFETY SUPPLIES · 안전물품 재고현황</div>
-    <p class="source-note" id="suppliesMeta">데이터 불러오는 중…</p>
-    <div id="suppliesContainer">
       <p class="skeleton">목록 불러오는 중…</p>
     </div>
   </section>
@@ -316,5 +292,17 @@
 </footer>
 
 <script src="script.js"></script>
+
+<!-- 구글 웹사이트 번역 위젯 -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: 'ko', includedLanguages: 'en,ko,ar', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false },
+    'google_translate_element'
+  );
+}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
