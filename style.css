@@ -225,11 +225,12 @@ code {
 }
 
 .flag-icon {
-  width: 26px;
+  width: 28px;
   height: auto;
-  border-radius: 3px;
-  border: 1px solid rgba(255,255,255,0.15);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  display: block;
+  border-radius: 0;
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
 
 @media (max-width: 980px) {
@@ -1021,9 +1022,11 @@ a:focus-visible, button:focus-visible {
 
 .translate-widget-floating {
   position: fixed;
-  top: 140px;
   right: 20px;
   z-index: 200;
+  /* top 값은 script.js에서 nav 바(.tab-bar) 바로 아래 경계선에 맞춰
+     자동으로 계산해 넣는다 (레이아웃이 바뀌어도 항상 정확히 정렬됨) */
+  top: 140px;
 }
 
 @media (max-width: 980px) {
@@ -1051,7 +1054,7 @@ html body {
 #google_translate_element .goog-te-gadget {
   font-family: var(--font-mono) !important;
   font-size: 11px !important;
-  color: var(--text-muted) !important;
+  color: #ffffff !important;
 }
 
 #google_translate_element .goog-te-gadget-simple {
@@ -1062,8 +1065,14 @@ html body {
   backdrop-filter: blur(4px);
 }
 
-#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span {
-  color: var(--text) !important;
+/* 아이콘(이미지)을 제외한 모든 글자(언어명, 드롭다운 화살표 등)를
+   흰색으로 통일 — 구글이 span/font 태그를 어떻게 감싸도 안전하게 적용 */
+#google_translate_element .goog-te-gadget-simple,
+#google_translate_element .goog-te-gadget-simple span,
+#google_translate_element .goog-te-gadget-simple font,
+#google_translate_element .goog-te-gadget-simple a,
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value {
+  color: #ffffff !important;
 }
 /* ==========================================================
    안전작업절차서 탭 배경사진

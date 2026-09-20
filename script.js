@@ -56,6 +56,24 @@ googleBannerObserver.observe(document.documentElement, {
 setInterval(killGoogleTranslateBanner, 400);
 killGoogleTranslateBanner();
 
+/* ---------------- 번역 위젯을 nav 바 아래 경계선에 정확히 맞추기 ----------------
+   .tab-bar(종합현황/대사관 안전공지... 메뉴 줄) 바로 아래 경계선에
+   위젯의 세로 중심이 오도록 top 값을 실측해서 맞춘다. */
+function alignTranslateWidget() {
+  const tabBar = document.querySelector(".tab-bar");
+  const widget = document.querySelector(".translate-widget-floating");
+  if (!tabBar || !widget) return;
+  const lineY = tabBar.getBoundingClientRect().bottom; // nav 바로 아래 경계선의 화면상 y좌표
+  const widgetHeight = widget.offsetHeight || 28;
+  widget.style.top = `${Math.round(lineY - widgetHeight / 2)}px`;
+}
+window.addEventListener("load", alignTranslateWidget);
+window.addEventListener("resize", alignTranslateWidget);
+// 구글 위젯 자체가 비동기로 로드되며 크기가 뒤늦게 잡히는 경우가 있어
+// 로드 직후 한 번 더 재계산
+setTimeout(alignTranslateWidget, 800);
+setTimeout(alignTranslateWidget, 2000);
+
 /* ---------------- 시계 ---------------- */
 function updateClock() {
   const now = new Date();
