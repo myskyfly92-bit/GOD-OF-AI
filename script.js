@@ -17,12 +17,29 @@ const TIMEZONE = "Asia/Baghdad";
    (인라인 style + important 는 외부 stylesheet의 !important보다도 우선순위가 높음)
    그래서 배너가 생길 때마다 즉시 다시 강제로 숨기는 감시 로직을 둔다. */
 function killGoogleTranslateBanner() {
-  document.querySelectorAll("iframe.goog-te-banner-frame, .goog-te-banner-frame")
-    .forEach((el) => {
+  // 클래스명만으로는 구글이 마크업을 바꿀 때 못 잡을 수 있으므로,
+  // "화면 맨 위에 딱 붙어 있고 가로폭이 화면 대부분을 차지하는 얇은 막대"라는
+  // 배너의 생김새(좌표) 자체로도 판별한다. 이렇게 하면 클래스명이 바뀌어도
+  // 안전하게 잡히고, 언어 선택 드롭다운(작고 위젯 옆에 뜨는 iframe)은
+  // 건드리지 않는다.
+  document.querySelectorAll("iframe").forEach((el) => {
+    const cls = el.className && el.className.baseVal !== undefined
+      ? el.className.baseVal : (el.className || "");
+    let looksLikeBanner = cls.includes("banner"); // goog-te-banner-frame 등
+    if (!looksLikeBanner) {
+      const rect = el.getBoundingClientRect();
+      looksLikeBanner =
+        rect.top <= 5 &&
+        rect.width >= window.innerWidth * 0.7 &&
+        rect.height > 0 && rect.height < 60;
+    }
+    if (looksLikeBanner) {
       el.style.setProperty("display", "none", "important");
       el.style.setProperty("visibility", "hidden", "important");
       el.style.setProperty("height", "0px", "important");
-    });
+      el.style.setProperty("border", "0", "important");
+    }
+  });
   // 구글이 배너를 위해 밀어낸 body 위치도 매번 원상 복구
   if (document.body.style.top !== "0px") {
     document.body.style.setProperty("top", "0px", "important");
