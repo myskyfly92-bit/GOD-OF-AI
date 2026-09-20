@@ -10,6 +10,35 @@ const BISMAYAH_LAT = 33.193;
 const BISMAYAH_LON = 44.618;
 const TIMEZONE = "Asia/Baghdad";
 
+/* ---------------- 구글 번역 배너 강제 제거 ----------------
+   구글 번역 스크립트는 언어를 바꿀 때마다 상단 배너(goog-te-banner-frame)의
+   인라인 스타일을 자바스크립트로 다시 덮어써서, CSS의 display:none !important
+   조차 무시하고 배너를 다시 노출시키는 경우가 있다.
+   (인라인 style + important 는 외부 stylesheet의 !important보다도 우선순위가 높음)
+   그래서 배너가 생길 때마다 즉시 다시 강제로 숨기는 감시 로직을 둔다. */
+function killGoogleTranslateBanner() {
+  document.querySelectorAll("iframe.goog-te-banner-frame, .goog-te-banner-frame")
+    .forEach((el) => {
+      el.style.setProperty("display", "none", "important");
+      el.style.setProperty("visibility", "hidden", "important");
+      el.style.setProperty("height", "0px", "important");
+    });
+  // 구글이 배너를 위해 밀어낸 body 위치도 매번 원상 복구
+  if (document.body.style.top !== "0px") {
+    document.body.style.setProperty("top", "0px", "important");
+  }
+  document.body.style.setProperty("position", "static", "important");
+}
+
+// 배너는 DOM에 새로 삽입/변경될 때 나타나므로 MutationObserver로 실시간 감시
+const googleBannerObserver = new MutationObserver(killGoogleTranslateBanner);
+googleBannerObserver.observe(document.documentElement, {
+  childList: true, subtree: true, attributes: true, attributeFilter: ["style", "class"]
+});
+// 혹시 옵저버가 못 잡는 타이밍이 있을 수 있어 짧은 주기로도 한 번씩 더 확인
+setInterval(killGoogleTranslateBanner, 400);
+killGoogleTranslateBanner();
+
 /* ---------------- 시계 ---------------- */
 function updateClock() {
   const now = new Date();
