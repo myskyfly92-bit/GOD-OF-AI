@@ -1133,4 +1133,26 @@ a:focus-visible, button:focus-visible {
   font-weight: 700;
   color: var(--cyan);
 }
+/* ==========================================================
+   국기 아이콘 스타일
+   -- 기존 style.css 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   ========================================================== */
+
+.flag-group {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.flag-icon {
+  width: 26px;
+  height: auto;
+  border-radius: 3px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 980px) {
+  .flag-group { display: none; }
+}
 
