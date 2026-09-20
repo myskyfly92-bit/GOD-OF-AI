@@ -226,8 +226,9 @@ function updateWindDirection(deg) {
     if (label) label.textContent = "–";
     return;
   }
-  // 화살표는 '바람이 불어오는 방향'을 가리키도록 표시 (기상학적 관례: deg는 바람이 불어오는 방향)
-  if (arrow) arrow.style.transform = `rotate(${deg}deg)`;
+  // 화살표는 구글 날씨처럼 '바람이 불어가는 방향'을 가리키도록 표시
+  // (Open-Meteo의 deg 값은 '불어오는 방향' 기준이라 180도 반전해서 사용합니다.)
+  if (arrow) arrow.style.transform = `rotate(${deg + 180}deg)`;
   const idx = Math.round(deg / 22.5) % 16;
   if (label) label.textContent = `${WIND_COMPASS[idx]} (${Math.round(deg)}°)`;
 }
