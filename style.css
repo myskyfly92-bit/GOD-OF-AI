@@ -1021,7 +1021,7 @@ a:focus-visible, button:focus-visible {
 
 .translate-widget-floating {
   position: fixed;
-  top: 150px;
+  top: 110px;
   right: 20px;
   z-index: 200;
 }
