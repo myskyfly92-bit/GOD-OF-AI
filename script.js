@@ -56,16 +56,17 @@ googleBannerObserver.observe(document.documentElement, {
 setInterval(killGoogleTranslateBanner, 400);
 killGoogleTranslateBanner();
 
-/* ---------------- 번역 위젯을 nav 바 아래 경계선에 정확히 맞추기 ----------------
-   .tab-bar(종합현황/대사관 안전공지... 메뉴 줄) 바로 아래 경계선에
+/* ---------------- 번역 위젯을 nav 탭 버튼과 같은 높이로 맞추기 ----------------
+   .tab-bar(종합현황/대사관 안전공지... 메뉴 줄) 버튼들의 세로 중앙에
    위젯의 세로 중심이 오도록 top 값을 실측해서 맞춘다. */
 function alignTranslateWidget() {
   const tabBar = document.querySelector(".tab-bar");
   const widget = document.querySelector(".translate-widget-floating");
   if (!tabBar || !widget) return;
-  const lineY = tabBar.getBoundingClientRect().bottom; // nav 바로 아래 경계선의 화면상 y좌표
+  const rect = tabBar.getBoundingClientRect();
+  const centerY = rect.top + rect.height / 2; // 탭 버튼 줄의 세로 중앙
   const widgetHeight = widget.offsetHeight || 28;
-  widget.style.top = `${Math.round(lineY - widgetHeight / 2)}px`;
+  widget.style.top = `${Math.round(centerY - widgetHeight / 2)}px`;
 }
 window.addEventListener("load", alignTranslateWidget);
 window.addEventListener("resize", alignTranslateWidget);
