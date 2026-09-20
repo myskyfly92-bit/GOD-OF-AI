@@ -1263,7 +1263,7 @@ body {
 
 .translate-widget-floating {
   position: fixed;
-  top: 16px;
+  top: 78px;
   right: 20px;
   z-index: 200;
 }
