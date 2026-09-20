@@ -176,7 +176,7 @@ function escapeHtml(str) {
 /* ---------------- 날씨 & 대기질 (Open-Meteo) ---------------- */
 async function loadWeather() {
   try {
-    const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m&timezone=${encodeURIComponent(TIMEZONE)}`;
+    const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m,wind_direction_10m&timezone=${encodeURIComponent(TIMEZONE)}`;
     const airUrl = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=pm10,pm2_5&timezone=${encodeURIComponent(TIMEZONE)}`;
 
     const [weatherRes, airRes] = await Promise.all([fetch(weatherUrl), fetch(airUrl)]);
@@ -190,6 +190,7 @@ async function loadWeather() {
     document.getElementById("wFeels").textContent = c.apparent_temperature?.toFixed(1) ?? "–";
     document.getElementById("wHumidity").textContent = c.relative_humidity_2m ?? "–";
     document.getElementById("wWind").textContent = c.wind_speed_10m?.toFixed(1) ?? "–";
+    updateWindDirection(c.wind_direction_10m);
     document.getElementById("wPm10").textContent = a.pm10?.toFixed(0) ?? "–";
     document.getElementById("wPm25").textContent = a.pm2_5?.toFixed(0) ?? "–";
 
@@ -212,6 +213,24 @@ const HEAT_THRESHOLDS = [
   { max: 46, key: "warn",    label: "경고 · 옥외작업 단축", desc: "정오~오후 옥외작업 시간을 단축하고 순환 근무를 적용하세요.", seg: "seg-warn" },
   { max: Infinity, key: "danger", label: "위험 · 옥외작업 중지 권고", desc: "고온 노출 위험이 매우 높습니다. 옥외작업 중지를 권고합니다.", seg: "seg-danger" }
 ];
+
+const WIND_COMPASS = [
+  "N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE",
+  "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"
+];
+
+function updateWindDirection(deg) {
+  const arrow = document.getElementById("windArrow");
+  const label = document.getElementById("wWindDir");
+  if (deg === undefined || deg === null || isNaN(deg)) {
+    if (label) label.textContent = "–";
+    return;
+  }
+  // 화살표는 '바람이 불어오는 방향'을 가리키도록 표시 (기상학적 관례: deg는 바람이 불어오는 방향)
+  if (arrow) arrow.style.transform = `rotate(${deg}deg)`;
+  const idx = Math.round(deg / 22.5) % 16;
+  if (label) label.textContent = `${WIND_COMPASS[idx]} (${Math.round(deg)}°)`;
+}
 
 function updateHeatStatus(temp, feelsLike) {
   const ref = feelsLike ?? temp;
