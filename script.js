@@ -57,43 +57,49 @@ setInterval(killGoogleTranslateBanner, 400);
 killGoogleTranslateBanner();
 
 /* ---------------- 자체 제작 언어 전환 버튼 ----------------
-   구글 번역 위젯이 내부적으로 만드는 <select class="goog-te-combo"> 를
-   직접 조작해서 번역을 실행한다. 이 select는 구글 스크립트(element.js)가
-   비동기로 로드된 "이후"에야 생성되므로, 페이지 로드 직후에는 아직 없을 수
-   있다. 그래서 최대 20초(200ms x 100회)까지 계속 찾아보고, 찾으면 그때
-   실행한다 — 버튼을 클릭한 시점에 구글 스크립트가 아직 로딩 중이어도
-   기다렸다가 확실히 반영되도록 하기 위함. */
-function findGoogleTranslateSelect(onFound, attemptsLeft) {
-  if (attemptsLeft === undefined) attemptsLeft = 100;
-  const select = document.querySelector("#google_translate_element select.goog-te-combo")
-    || document.querySelector("select.goog-te-combo");
-  if (select) { onFound(select); return; }
-  if (attemptsLeft <= 0) {
-    console.warn("[langSwitcher] 구글 번역 select를 찾지 못했습니다. 구글 스크립트 로드에 실패했을 수 있습니다.");
-    return;
-  }
-  setTimeout(() => findGoogleTranslateSelect(onFound, attemptsLeft - 1), 200);
+   구글 번역 위젯의 <select>를 흉내 내서 change 이벤트를 발생시키는 방식은
+   구글 스크립트 버전에 따라 씹히는 경우가 있어 신뢰할 수 없었다.
+   대신 구글 번역이 실제로 사용하는 "googtrans" 쿠키를 직접 심고
+   새로고침하는 방식을 쓴다 — 이건 위젯을 직접 클릭했을 때와 동일한
+   효과를 내는, 훨씬 확실한 방법이다. (버튼 클릭 시 페이지가 한 번
+   새로고침되며 그 언어로 반영된다) */
+function setCookie(name, value, path) {
+  document.cookie = `${name}=${value}; path=${path || "/"}`;
+}
+function clearCookie(name) {
+  const expired = "Thu, 01 Jan 1970 00:00:00 UTC";
+  document.cookie = `${name}=; expires=${expired}; path=/;`;
+  document.cookie = `${name}=; expires=${expired}; path=/; domain=${location.hostname};`;
 }
 
 function setGoogleTranslateLanguage(lang) {
-  findGoogleTranslateSelect((select) => {
-    select.value = lang;
-    // 구글 위젯이 확실히 감지하도록 change 이벤트를 버블링까지 포함해서 전달
-    select.dispatchEvent(new Event("change", { bubbles: true }));
+  if (lang === "ko") {
+    // 원문(한국어)으로 되돌리기: 번역 쿠키를 지우고 새로고침
+    clearCookie("googtrans");
+  } else {
+    // 구글이 실제로 쓰는 쿠키 형식: /{원문언어}/{번역할언어}
+    clearCookie("googtrans");
+    setCookie("googtrans", `/ko/${lang}`);
+  }
+  location.reload();
+}
+
+// 페이지가 새로고침된 뒤에도 방금 선택했던 언어에 맞는 버튼이
+// active 상태로 표시되도록, 현재 googtrans 쿠키를 읽어 초기 상태를 맞춘다.
+function syncActiveLangButtonFromCookie() {
+  const match = document.cookie.match(/googtrans=\/[^/]*\/([a-zA-Z-]+)/);
+  const current = match ? match[1] : "ko";
+  document.querySelectorAll(".lang-btn").forEach((b) => {
+    b.classList.toggle("active", b.dataset.lang === current);
   });
 }
+syncActiveLangButtonFromCookie();
 
 document.querySelectorAll(".lang-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
-    document.querySelectorAll(".lang-btn").forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
     setGoogleTranslateLanguage(btn.dataset.lang);
   });
 });
-
-// 페이지 로드 시 미리 select를 찾아둬서, 실제 클릭 시점에는
-// 지연 없이 바로 반영되도록 워밍업
-findGoogleTranslateSelect(() => {});
 
 /* ---------------- 시계 ---------------- */
 function updateClock() {
