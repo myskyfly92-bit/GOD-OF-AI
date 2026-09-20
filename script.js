@@ -56,24 +56,44 @@ googleBannerObserver.observe(document.documentElement, {
 setInterval(killGoogleTranslateBanner, 400);
 killGoogleTranslateBanner();
 
-/* ---------------- 번역 위젯을 nav 탭 버튼과 같은 높이로 맞추기 ----------------
-   .tab-bar(종합현황/대사관 안전공지... 메뉴 줄) 버튼들의 세로 중앙에
-   위젯의 세로 중심이 오도록 top 값을 실측해서 맞춘다. */
-function alignTranslateWidget() {
-  const tabBar = document.querySelector(".tab-bar");
-  const widget = document.querySelector(".translate-widget-floating");
-  if (!tabBar || !widget) return;
-  const rect = tabBar.getBoundingClientRect();
-  const centerY = rect.top + rect.height / 2; // 탭 버튼 줄의 세로 중앙
-  const widgetHeight = widget.offsetHeight || 28;
-  widget.style.top = `${Math.round(centerY - widgetHeight / 2)}px`;
+/* ---------------- 자체 제작 언어 전환 버튼 ----------------
+   구글 번역 위젯이 내부적으로 만드는 <select class="goog-te-combo"> 를
+   직접 조작해서 번역을 실행한다. 이 select는 구글 스크립트(element.js)가
+   비동기로 로드된 "이후"에야 생성되므로, 페이지 로드 직후에는 아직 없을 수
+   있다. 그래서 최대 20초(200ms x 100회)까지 계속 찾아보고, 찾으면 그때
+   실행한다 — 버튼을 클릭한 시점에 구글 스크립트가 아직 로딩 중이어도
+   기다렸다가 확실히 반영되도록 하기 위함. */
+function findGoogleTranslateSelect(onFound, attemptsLeft) {
+  if (attemptsLeft === undefined) attemptsLeft = 100;
+  const select = document.querySelector("#google_translate_element select.goog-te-combo")
+    || document.querySelector("select.goog-te-combo");
+  if (select) { onFound(select); return; }
+  if (attemptsLeft <= 0) {
+    console.warn("[langSwitcher] 구글 번역 select를 찾지 못했습니다. 구글 스크립트 로드에 실패했을 수 있습니다.");
+    return;
+  }
+  setTimeout(() => findGoogleTranslateSelect(onFound, attemptsLeft - 1), 200);
 }
-window.addEventListener("load", alignTranslateWidget);
-window.addEventListener("resize", alignTranslateWidget);
-// 구글 위젯 자체가 비동기로 로드되며 크기가 뒤늦게 잡히는 경우가 있어
-// 로드 직후 한 번 더 재계산
-setTimeout(alignTranslateWidget, 800);
-setTimeout(alignTranslateWidget, 2000);
+
+function setGoogleTranslateLanguage(lang) {
+  findGoogleTranslateSelect((select) => {
+    select.value = lang;
+    // 구글 위젯이 확실히 감지하도록 change 이벤트를 버블링까지 포함해서 전달
+    select.dispatchEvent(new Event("change", { bubbles: true }));
+  });
+}
+
+document.querySelectorAll(".lang-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".lang-btn").forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    setGoogleTranslateLanguage(btn.dataset.lang);
+  });
+});
+
+// 페이지 로드 시 미리 select를 찾아둬서, 실제 클릭 시점에는
+// 지연 없이 바로 반영되도록 워밍업
+findGoogleTranslateSelect(() => {});
 
 /* ---------------- 시계 ---------------- */
 function updateClock() {
