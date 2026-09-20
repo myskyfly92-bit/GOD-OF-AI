@@ -27,9 +27,9 @@
   <div class="topbar-status">
     <div class="live-pill"><span class="dot"></span>실시간 연동</div>
     <div class="clock-block notranslate" translate="no">
-      <div class="clock"><span id="clock">--:--:--</span> <span class="clock-label">(바그다드)</span></div>
+      <div class="clock"><span id="clock">--:--:--</span> <span class="clock-label clock-label-baghdad" aria-hidden="true"></span></div>
       <div id="date" class="date">----년 --월 --일</div>
-      <div class="clock-secondary"><span id="clockKst">--:--:--</span> <span class="clock-label">(한국)</span></div>
+      <div class="clock-secondary"><span id="clockKst">--:--:--</span> <span class="clock-label clock-label-korea" aria-hidden="true"></span></div>
     </div>
     <div class="flag-group">
       <img class="flag-icon" src="https://flagcdn.com/32x24/iq.png" srcset="https://flagcdn.com/64x48/iq.png 2x" alt="이라크 국기" title="이라크">
@@ -299,7 +299,7 @@
 <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
-    { pageLanguage: 'ko', includedLanguages: 'en,ko,ar', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false },
+    { pageLanguage: 'ko', includedLanguages: 'en,ar', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false },
     'google_translate_element'
   );
 }

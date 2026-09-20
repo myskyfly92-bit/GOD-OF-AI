@@ -192,6 +192,18 @@ code {
   opacity: 0.75;
 }
 
+/* 구글 번역 위젯이 DOM 텍스트 노드를 재스캔하면서 라벨을 중복 삽입하는
+   버그를 원천 차단하기 위해, 라벨 문구는 실제 텍스트 노드가 아니라
+   CSS 생성 콘텐츠(content)로 렌더링합니다. 번역 스크립트는 이 텍스트를
+   아예 인식/조작할 수 없습니다. */
+.clock-label-baghdad::before {
+  content: " (바그다드)";
+}
+
+.clock-label-korea::before {
+  content: " (한국)";
+}
+
 .clock-secondary {
   font-family: var(--font-mono);
   font-size: 12px;
