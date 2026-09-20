@@ -1108,3 +1108,29 @@ a:focus-visible, button:focus-visible {
   display: inline-block;
 }
 
+/* ==========================================================
+   풍향 화살표 스타일
+   -- 기존 style.css 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   ========================================================== */
+
+.weather-item-wind .weather-value {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.wind-arrow {
+  width: 20px;
+  height: 20px;
+  color: var(--cyan);
+  transition: transform 0.4s ease;
+  flex-shrink: 0;
+}
+
+.wind-compass-value {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--cyan);
+}
+
