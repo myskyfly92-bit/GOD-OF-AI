@@ -19,14 +19,14 @@ function updateClock() {
   const dateFmt = new Intl.DateTimeFormat("ko-KR", {
     timeZone: TIMEZONE, year: "numeric", month: "long", day: "numeric", weekday: "long"
   });
-  document.getElementById("clock").textContent = timeFmt.format(now) + " (바그다드)";
+  document.getElementById("clock").textContent = timeFmt.format(now);
   document.getElementById("date").textContent = dateFmt.format(now);
 
   const kstFmt = new Intl.DateTimeFormat("ko-KR", {
     timeZone: "Asia/Seoul", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false
   });
   const kstEl = document.getElementById("clockKst");
-  if (kstEl) kstEl.textContent = kstFmt.format(now) + " (한국)";
+  if (kstEl) kstEl.textContent = kstFmt.format(now);
 }
 updateClock();
 setInterval(updateClock, 1000);
