@@ -177,7 +177,7 @@ function escapeHtml(str) {
 async function loadWeather() {
   try {
     const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m,wind_direction_10m&timezone=${encodeURIComponent(TIMEZONE)}`;
-    const airUrl = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=pm10,pm2_5&timezone=${encodeURIComponent(TIMEZONE)}`;
+    const airUrl = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=pm10,pm2_5,ozone,uv_index&timezone=${encodeURIComponent(TIMEZONE)}`;
 
     const [weatherRes, airRes] = await Promise.all([fetch(weatherUrl), fetch(airUrl)]);
     const weather = await weatherRes.json();
@@ -193,6 +193,8 @@ async function loadWeather() {
     updateWindDirection(c.wind_direction_10m);
     document.getElementById("wPm10").textContent = a.pm10?.toFixed(0) ?? "–";
     document.getElementById("wPm25").textContent = a.pm2_5?.toFixed(0) ?? "–";
+    document.getElementById("wOzone").textContent = a.ozone?.toFixed(0) ?? "–";
+    updateUvIndex(a.uv_index);
 
     updateHeatStatus(c.temperature_2m, c.apparent_temperature);
     document.getElementById("lastUpdated").textContent =
@@ -231,6 +233,22 @@ function updateWindDirection(deg) {
   if (arrow) arrow.style.transform = `rotate(${deg + 180}deg)`;
   const idx = Math.round(deg / 22.5) % 16;
   if (label) label.textContent = `${WIND_COMPASS[idx]} (${Math.round(deg)}°)`;
+}
+
+function updateUvIndex(uv) {
+  const el = document.getElementById("wUv");
+  if (!el) return;
+  if (uv === undefined || uv === null || isNaN(uv)) {
+    el.textContent = "–";
+    return;
+  }
+  let label;
+  if (uv < 3) label = "낮음";
+  else if (uv < 6) label = "보통";
+  else if (uv < 8) label = "높음";
+  else if (uv < 11) label = "매우높음";
+  else label = "위험";
+  el.textContent = `${uv.toFixed(1)} (${label})`;
 }
 
 function updateHeatStatus(temp, feelsLike) {
