@@ -176,7 +176,7 @@ function escapeHtml(str) {
 /* ---------------- 날씨 & 대기질 (Open-Meteo) ---------------- */
 async function loadWeather() {
   try {
-    const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m,wind_direction_10m&timezone=${encodeURIComponent(TIMEZONE)}`;
+    const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m,wind_direction_10m&hourly=precipitation_probability&daily=sunrise,sunset&timezone=${encodeURIComponent(TIMEZONE)}`;
     const airUrl = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=pm10,pm2_5,ozone,uv_index&timezone=${encodeURIComponent(TIMEZONE)}`;
 
     const [weatherRes, airRes] = await Promise.all([fetch(weatherUrl), fetch(airUrl)]);
@@ -197,6 +197,8 @@ async function loadWeather() {
     updateUvIndex(a.uv_index);
 
     updateHeatStatus(c.temperature_2m, c.apparent_temperature);
+    updateSunTimes(weather.daily);
+    updateRainChance(weather.hourly);
     document.getElementById("lastUpdated").textContent =
       "마지막 갱신: " + new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date());
   } catch (err) {
@@ -249,6 +251,38 @@ function updateUvIndex(uv) {
   else if (uv < 11) label = "매우높음";
   else label = "위험";
   el.textContent = `${uv.toFixed(1)} (${label})`;
+}
+
+function updateSunTimes(daily) {
+  const riseEl = document.getElementById("wSunrise");
+  const setEl = document.getElementById("wSunset");
+  if (!riseEl || !setEl) return;
+  if (!daily || !daily.sunrise || !daily.sunrise[0]) {
+    riseEl.textContent = "–";
+    setEl.textContent = "–";
+    return;
+  }
+  const fmt = new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit", hour12: false });
+  riseEl.textContent = fmt.format(new Date(daily.sunrise[0]));
+  setEl.textContent = fmt.format(new Date(daily.sunset[0]));
+}
+
+function updateRainChance(hourly) {
+  const el = document.getElementById("wRainChance");
+  if (!el) return;
+  if (!hourly || !hourly.time || !hourly.precipitation_probability) {
+    el.textContent = "–";
+    return;
+  }
+  // 현재 시각과 가장 가까운(이전) 시간대의 예보를 찾습니다.
+  const now = new Date();
+  let idx = 0;
+  for (let i = 0; i < hourly.time.length; i++) {
+    if (new Date(hourly.time[i]) <= now) idx = i;
+    else break;
+  }
+  const prob = hourly.precipitation_probability[idx];
+  el.textContent = (prob === undefined || prob === null) ? "–" : `${prob}%`;
 }
 
 function updateHeatStatus(temp, feelsLike) {
