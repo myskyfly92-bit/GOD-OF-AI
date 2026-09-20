@@ -1051,3 +1051,20 @@ html body {
 #google_translate_element .goog-te-gadget-simple .goog-te-menu-value span {
   color: var(--text) !important;
 }
+/* ==========================================================
+   안전작업절차서 탭 배경사진
+   -- 기존 style.css 맨 아래에 이 내용을 그대로 붙여넣으세요 --
+   ========================================================== */
+
+body.bg-procedures {
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(53, 208, 192, 0.06), transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
+    linear-gradient(180deg, rgba(10,14,19,0.55), rgba(10,14,19,0.72)),
+    url('assets/bg-procedures.jpg');
+  background-size: auto, auto, cover, cover;
+  background-position: 0 0, 0 0, center center, center center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, fixed, fixed;
+}
+
