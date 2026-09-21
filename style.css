@@ -127,6 +127,14 @@ code {
   object-fit: contain;
 }
 
+.brand-mascot {
+  display: block;
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  /* 배경이 투명한 캐릭터 이미지라 로고처럼 흰 박스는 씌우지 않음 */
+}
+
 .brand-text h1 {
   margin: 0;
   font-size: 19px;
@@ -235,6 +243,7 @@ code {
 
 @media (max-width: 980px) {
   .flag-group { display: none; }
+  .brand-mascot { display: none; }
 }
 
 /* ---------- 탭 바 ---------- */
