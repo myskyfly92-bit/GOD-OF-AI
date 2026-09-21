@@ -107,11 +107,9 @@ if (familySiteSelect) {
   familySiteSelect.addEventListener("change", () => {
     const url = familySiteSelect.value;
     if (url) {
-      const win = window.open(url, "_blank", "noopener");
-      // 브라우저 팝업 차단 등으로 새 탭이 안 열리면 현재 탭에서 바로 이동
-      if (!win) {
-        window.location.href = url;
-      }
+      // 항상 새 탭으로만 열기 — 현재 통제실 화면은 그대로 유지되도록
+      // (팝업이 차단되더라도 현재 탭을 대체하지 않음)
+      window.open(url, "_blank", "noopener");
     }
     familySiteSelect.selectedIndex = 0; // 선택 후 다시 "패밀리사이트 ▾" 표시로 복귀
   });
