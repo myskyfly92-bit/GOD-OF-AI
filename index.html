@@ -60,6 +60,26 @@
       <option value="https://odd-butterfly-b936.chogak1449.workers.dev/">BNCP AI Assistant</option>
     </select>
   </div>
+
+  <div class="holiday-widget">
+    <div class="holiday-panel" id="holidayPanel">
+      <div class="holiday-panel-header">
+        <button type="button" class="holiday-nav-btn" id="holidayPrevBtn" aria-label="이전 달">‹</button>
+        <span id="holidayMonthLabel">-</span>
+        <button type="button" class="holiday-nav-btn" id="holidayNextBtn" aria-label="다음 달">›</button>
+      </div>
+      <div class="holiday-weekdays">
+        <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+      </div>
+      <div class="holiday-grid" id="holidayGrid"></div>
+      <div class="holiday-legend">
+        <span class="holiday-legend-item"><span class="holiday-dot holiday-dot-kr"></span>한국 공휴일</span>
+        <span class="holiday-legend-item"><span class="holiday-dot holiday-dot-iq"></span>이라크 공휴일</span>
+      </div>
+      <ul class="holiday-list" id="holidayList"></ul>
+      <p class="holiday-note">※ 이라크의 이슬람력 기반 공휴일(이드 알피트르, 이드 알아드하 등)은 실제 초승달 관측에 따라 ±1일 조정될 수 있습니다.</p>
+    </div>
+  </div>
 </nav>
 
 <div id="view-dashboard" class="view active">
