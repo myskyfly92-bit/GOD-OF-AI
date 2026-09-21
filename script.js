@@ -115,7 +115,175 @@ if (familySiteSelect) {
   });
 }
 
-/* ---------------- 시계 ---------------- */
+/* ---------------- 공휴일 달력 위젯 (이라크 · 한국) ----------------
+   출처: 대한민국 - 공식 공휴일에 관한 법률/law.go.kr 기준 공표 일정(2026),
+         이라크 - 이라크 정부 발표 및 각국 공휴일 데이터 서비스 종합(2026).
+   이슬람력 기반 공휴일(이드 알피트르, 이드 알아드하, 이슬람 신년, 아슈라,
+   마울리드 등)은 실제 초승달 관측에 따라 발표 시점에 ±1일 조정될 수 있음. */
+const KR_HOLIDAYS_2026 = {
+  "2026-01-01": "신정",
+  "2026-02-16": "설날 연휴",
+  "2026-02-17": "설날",
+  "2026-02-18": "설날 연휴",
+  "2026-03-01": "삼일절",
+  "2026-03-02": "삼일절 대체공휴일",
+  "2026-05-01": "근로자의 날",
+  "2026-05-05": "어린이날",
+  "2026-05-24": "부처님오신날",
+  "2026-05-25": "부처님오신날 대체공휴일",
+  "2026-06-06": "현충일",
+  "2026-07-17": "제헌절",
+  "2026-08-15": "광복절",
+  "2026-08-17": "광복절 대체공휴일",
+  "2026-09-24": "추석 연휴",
+  "2026-09-25": "추석",
+  "2026-09-26": "추석 연휴",
+  "2026-10-03": "개천절",
+  "2026-10-05": "개천절 대체공휴일",
+  "2026-10-09": "한글날",
+  "2026-12-25": "크리스마스",
+};
+
+const IQ_HOLIDAYS_2026 = {
+  "2026-01-01": "New Year's Day",
+  "2026-01-06": "Army Day",
+  "2026-03-18": "Eid al-Fitr holiday",
+  "2026-03-19": "Eid al-Fitr holiday",
+  "2026-03-20": "Eid al-Fitr",
+  "2026-03-21": "Nowruz",
+  "2026-03-22": "Eid al-Fitr holiday",
+  "2026-03-23": "Eid al-Fitr holiday",
+  "2026-05-01": "Labour Day",
+  "2026-05-26": "Eid al-Adha holiday",
+  "2026-05-27": "Eid al-Adha",
+  "2026-05-28": "Eid al-Adha holiday",
+  "2026-05-29": "Eid al-Adha holiday",
+  "2026-06-04": "Eid al-Ghadeer",
+  "2026-06-16": "Islamic New Year",
+  "2026-06-25": "Ashura",
+  "2026-07-14": "Republic Day",
+  "2026-08-25": "The Prophet's Birthday",
+  "2026-10-03": "Iraqi National Day",
+  "2026-12-10": "Victory Day",
+  "2026-12-25": "Christmas Day",
+};
+
+(function initHolidayWidget() {
+  const panel = document.getElementById("holidayPanel");
+  const monthLabel = document.getElementById("holidayMonthLabel");
+  const grid = document.getElementById("holidayGrid");
+  const list = document.getElementById("holidayList");
+  const prevBtn = document.getElementById("holidayPrevBtn");
+  const nextBtn = document.getElementById("holidayNextBtn");
+  if (!panel || !grid) return;
+
+  const nowBaghdad = new Date(); // 표시 기준은 오늘 날짜(로컬)
+  let viewYear = nowBaghdad.getFullYear();
+  let viewMonth = nowBaghdad.getMonth(); // 0-11
+
+  function pad2(n) { return String(n).padStart(2, "0"); }
+  function dateKey(y, m, d) { return `${y}-${pad2(m + 1)}-${pad2(d)}`; }
+
+  function renderCalendar() {
+    monthLabel.textContent = `${viewYear}년 ${viewMonth + 1}월`;
+    grid.innerHTML = "";
+
+    const firstDay = new Date(viewYear, viewMonth, 1).getDay(); // 0=일요일
+    const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+    const todayKey = dateKey(nowBaghdad.getFullYear(), nowBaghdad.getMonth(), nowBaghdad.getDate());
+
+    for (let i = 0; i < firstDay; i++) {
+      const empty = document.createElement("div");
+      empty.className = "holiday-cell is-empty";
+      grid.appendChild(empty);
+    }
+
+    const monthEntries = [];
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const key = dateKey(viewYear, viewMonth, d);
+      const krName = KR_HOLIDAYS_2026[key];
+      const iqName = IQ_HOLIDAYS_2026[key];
+
+      const cell = document.createElement("div");
+      cell.className = "holiday-cell";
+      if (key === todayKey) cell.classList.add("is-today");
+      if (krName || iqName) cell.classList.add("has-holiday");
+
+      const num = document.createElement("span");
+      num.textContent = String(d);
+      cell.appendChild(num);
+
+      if (krName || iqName) {
+        const dots = document.createElement("span");
+        dots.className = "holiday-dots";
+        if (krName) {
+          const dot = document.createElement("span");
+          dot.className = "holiday-dot holiday-dot-kr";
+          dots.appendChild(dot);
+        }
+        if (iqName) {
+          const dot = document.createElement("span");
+          dot.className = "holiday-dot holiday-dot-iq";
+          dots.appendChild(dot);
+        }
+        cell.appendChild(dots);
+        const titleParts = [];
+        if (krName) titleParts.push(`🇰🇷 ${krName}`);
+        if (iqName) titleParts.push(`🇮🇶 ${iqName}`);
+        cell.title = titleParts.join(" · ");
+        monthEntries.push({ d, krName, iqName });
+      }
+
+      grid.appendChild(cell);
+    }
+
+    list.innerHTML = "";
+    if (monthEntries.length === 0) {
+      const li = document.createElement("li");
+      li.className = "holiday-list-empty";
+      li.textContent = "이번 달은 공휴일이 없습니다.";
+      list.appendChild(li);
+    } else {
+      monthEntries.forEach(({ d, krName, iqName }) => {
+        const li = document.createElement("li");
+        const dateSpan = document.createElement("span");
+        dateSpan.className = "holiday-list-date";
+        dateSpan.textContent = `${pad2(viewMonth + 1)}/${pad2(d)}`;
+        li.appendChild(dateSpan);
+        const nameSpan = document.createElement("span");
+        const names = [];
+        if (krName) names.push(`🇰🇷 ${krName}`);
+        if (iqName) names.push(`🇮🇶 ${iqName}`);
+        nameSpan.textContent = names.join("  ·  ");
+        li.appendChild(nameSpan);
+        list.appendChild(li);
+      });
+    }
+  }
+
+  function openPanel() {
+    renderCalendar();
+  }
+
+  prevBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    viewMonth -= 1;
+    if (viewMonth < 0) { viewMonth = 11; viewYear -= 1; }
+    renderCalendar();
+  });
+  nextBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    viewMonth += 1;
+    if (viewMonth > 11) { viewMonth = 0; viewYear += 1; }
+    renderCalendar();
+  });
+
+  // 항상 표시: 페이지 로드 시 바로 렌더링
+  openPanel();
+})();
+
+
 function updateClock() {
   const now = new Date();
   const timeFmt = new Intl.DateTimeFormat("ko-KR", {
