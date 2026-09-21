@@ -121,9 +121,9 @@ code {
 
 .brand-logo {
   display: block;
-  height: 38px;
+  height: 60px;
   width: auto;
-  max-width: 220px;
+  max-width: 260px;
   object-fit: contain;
 }
 
