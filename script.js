@@ -101,6 +101,22 @@ document.querySelectorAll(".lang-btn").forEach((btn) => {
   });
 });
 
+/* ---------------- 패밀리사이트 드롭다운 ---------------- */
+const familySiteSelect = document.getElementById("familySiteSelect");
+if (familySiteSelect) {
+  familySiteSelect.addEventListener("change", () => {
+    const url = familySiteSelect.value;
+    if (url) {
+      const win = window.open(url, "_blank", "noopener");
+      // 브라우저 팝업 차단 등으로 새 탭이 안 열리면 현재 탭에서 바로 이동
+      if (!win) {
+        window.location.href = url;
+      }
+    }
+    familySiteSelect.selectedIndex = 0; // 선택 후 다시 "패밀리사이트 ▾" 표시로 복귀
+  });
+}
+
 /* ---------------- 시계 ---------------- */
 function updateClock() {
   const now = new Date();
