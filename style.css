@@ -748,6 +748,7 @@ code {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   gap: 8px;
   padding: 18px 32px 30px;
@@ -757,6 +758,29 @@ code {
   font-size: 10.5px;
   color: var(--text-dim);
   border-top: 1px solid var(--border-soft);
+}
+
+/* ---------- 패밀리사이트 드롭다운 ---------- */
+.family-site select {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--text-muted);
+  background: rgba(10, 14, 19, 0.65);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.family-site select:hover {
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.family-site select option {
+  background: var(--bg);
+  color: var(--text);
 }
 
 /* ---------- Skeleton / loading ---------- */
