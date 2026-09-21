@@ -129,7 +129,7 @@ code {
 
 .brand-mascot {
   display: block;
-  height: 64px;
+  height: 88px;
   width: auto;
   object-fit: contain;
   /* 배경이 투명한 캐릭터 이미지라 로고처럼 흰 박스는 씌우지 않음 */
