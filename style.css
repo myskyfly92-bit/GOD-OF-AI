@@ -810,7 +810,10 @@ code {
 .holiday-panel {
   position: fixed;
   top: 132px;
-  right: 20px;
+  /* 콘텐츠 영역(최대 1360px, 가운데 정렬)의 오른쪽 끝에 맞춰 정렬.
+     화면이 매우 넓어져도 뷰포트 진짜 끝이 아니라 콘텐츠 끝 기준으로 붙는다.
+     화면이 좁을 땐 최소 20px 여백은 항상 확보. */
+  right: max(20px, calc((100vw - 1360px) / 2 + 20px));
   width: 360px;
   max-width: calc(100vw - 24px);
   background: linear-gradient(180deg, var(--panel), var(--panel-2));
@@ -1329,7 +1332,7 @@ body.bg-procedures {
 /* ---------- 환율 위젯 (화면 우측 하단 고정) ---------- */
 .fx-widget {
   position: fixed;
-  right: 20px;
+  right: max(20px, calc((100vw - 1360px) / 2 + 20px));
   bottom: 20px;
   z-index: 150;
   width: 190px;
