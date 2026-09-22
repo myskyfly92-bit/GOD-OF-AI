@@ -585,6 +585,39 @@ loadSiteData();
 loadWeather();
 setInterval(loadWeather, 10 * 60 * 1000); // 10분마다 갱신
 
+/* ---------------- 환율 (USD 기준 IQD · KRW) ---------------- */
+async function loadExchangeRates() {
+  const elUsdIqd = document.getElementById("fxUsdIqd");
+  const elUsdKrw = document.getElementById("fxUsdKrw");
+  const elKrwIqd = document.getElementById("fxKrwIqd");
+  const elUpdated = document.getElementById("fxUpdated");
+  if (!elUsdIqd) return;
+
+  try {
+    const res = await fetch("https://api.exchangerate.fun/latest?base=USD");
+    if (!res.ok) throw new Error("환율 API 응답 오류");
+    const data = await res.json();
+    const iqd = data.rates && data.rates.IQD;
+    const krw = data.rates && data.rates.KRW;
+    if (!iqd || !krw) throw new Error("IQD/KRW 환율 데이터 없음");
+
+    elUsdIqd.textContent = iqd.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
+    elUsdKrw.textContent = krw.toLocaleString("ko-KR", { maximumFractionDigits: 1 });
+    // 1,000원이 이라크 디나르로 얼마인지 환산 (USD를 매개로 교차 계산)
+    const krwToIqdPer1000 = (iqd / krw) * 1000;
+    elKrwIqd.textContent = krwToIqdPer1000.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
+
+    const now = new Date();
+    elUpdated.textContent =
+      "갱신: " + new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(now) + " (바그다드)";
+  } catch (err) {
+    console.error(err);
+    elUpdated.textContent = "환율 정보를 불러올 수 없습니다";
+  }
+}
+loadExchangeRates();
+setInterval(loadExchangeRates, 10 * 60 * 1000); // 10분마다 갱신
+
 
 /* ---------------- 탭 전환 ---------------- */
 document.querySelectorAll(".tab-btn").forEach(btn => {
@@ -850,6 +883,47 @@ function renderWhoOutbreaks(items, generatedAt) {
 }
 
 loadWhoOutbreaks();
+
+/* ---------------- 국내 뉴스 (의학 · 질병 · 사고) ---------------- */
+async function loadDomesticNews() {
+  const list = document.getElementById("domesticNewsList");
+  try {
+    const res = await fetch("domestic-news.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("domestic-news.json 로드 실패");
+    const data = await res.json();
+    renderDomesticNews(data.items, data.generatedAt);
+  } catch (err) {
+    console.error(err);
+    list.innerHTML = `<li class="embassy-row skeleton">아직 domestic-news.json이 없거나 불러올 수 없습니다. GitHub Actions가 최초 1회 실행된 후 표시됩니다.</li>`;
+  }
+}
+
+function renderDomesticNews(items, generatedAt) {
+  const list = document.getElementById("domesticNewsList");
+  if (!items || !items.length) {
+    list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 뉴스가 없습니다.</li>`;
+    return;
+  }
+  list.innerHTML = items.map(n => `
+    <li class="embassy-row">
+      <div class="notice-top">
+        <span class="notice-title">${escapeHtml(n.title)}</span>
+        <span class="notice-date">${escapeHtml((n.date || "").slice(0, 10))}</span>
+      </div>
+      <div class="notice-body">${escapeHtml(n.summary || n.source || "")}</div>
+      ${n.link ? `<a class="embassy-link" href="${n.link}" target="_blank" rel="noopener noreferrer">기사 원문 보기 ↗</a>` : ""}
+    </li>
+  `).join("");
+
+  if (generatedAt) {
+    const dt = new Date(generatedAt);
+    document.getElementById("domesticNewsMeta").textContent =
+      "Google 뉴스 검색 연동 · 마지막 수집: " +
+      new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(dt);
+  }
+}
+
+loadDomesticNews();
 
 /* ---------------- 안전작업절차서 (procedures.json 기반) ---------------- */
 function procEscapeHtml(str) {

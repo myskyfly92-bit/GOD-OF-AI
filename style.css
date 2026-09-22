@@ -808,16 +808,16 @@ code {
 }
 
 .holiday-panel {
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
-  width: 300px;
+  position: fixed;
+  top: 132px;
+  right: 20px;
+  width: 360px;
   max-width: calc(100vw - 24px);
   background: linear-gradient(180deg, var(--panel), var(--panel-2));
   border: 1px solid var(--border-soft);
   border-radius: 10px;
   box-shadow: 0 12px 32px rgba(0,0,0,0.5);
-  padding: 14px;
+  padding: 16px;
   z-index: 210;
   font-family: var(--font-mono);
 }
@@ -826,7 +826,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 10px;
@@ -850,7 +850,7 @@ code {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   text-align: center;
-  font-size: 10.5px;
+  font-size: 11.5px;
   color: var(--text-dim);
   margin-bottom: 4px;
 }
@@ -867,7 +867,7 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-size: 12.5px;
   color: var(--text-muted);
   border-radius: 5px;
   position: relative;
@@ -947,7 +947,7 @@ code {
 }
 
 @media (max-width: 640px) {
-  .holiday-panel { right: -60px; }
+  .holiday-panel { right: 12px; top: 200px; width: calc(100vw - 24px); }
 }
 
 /* ---------- Skeleton / loading ---------- */
@@ -1325,3 +1325,61 @@ body.bg-procedures {
   background-attachment: scroll, scroll, fixed, fixed;
 }
 
+
+/* ---------- 환율 위젯 (화면 우측 하단 고정) ---------- */
+.fx-widget {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 150;
+  width: 190px;
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+  padding: 12px 14px;
+  font-family: var(--font-mono);
+  backdrop-filter: blur(6px);
+}
+
+.fx-widget-title {
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.fx-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  padding: 4px 0;
+  border-top: 1px solid var(--border-soft);
+}
+
+.fx-row:first-of-type { border-top: none; }
+
+.fx-label {
+  font-size: 10.5px;
+  color: var(--text-muted);
+}
+
+.fx-value {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--cyan);
+  white-space: nowrap;
+}
+
+.fx-updated {
+  margin-top: 8px;
+  font-size: 9px;
+  color: var(--text-dim);
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .fx-widget { display: none; }
+}
