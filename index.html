@@ -16,9 +16,10 @@
 
 <div class="fx-widget" id="fxWidget" aria-label="환율 정보">
   <div class="fx-widget-title">환율 (USD 기준)</div>
-  <div class="fx-row"><span class="fx-label">USD → IQD</span><span class="fx-value" id="fxUsdIqd">–</span></div>
+  <div class="fx-row"><span class="fx-label">USD → IQD (시장환율)</span><span class="fx-value fx-value-market" id="fxUsdIqd">–</span></div>
+  <div class="fx-row fx-row-sub"><span class="fx-label">USD → IQD (공식고시)</span><span class="fx-value fx-value-official" id="fxUsdIqdOfficial">–</span></div>
   <div class="fx-row"><span class="fx-label">USD → KRW</span><span class="fx-value" id="fxUsdKrw">–</span></div>
-  <div class="fx-row"><span class="fx-label">1,000 KRW → IQD</span><span class="fx-value" id="fxKrwIqd">–</span></div>
+  <div class="fx-row"><span class="fx-label">1,000 KRW → IQD (시장)</span><span class="fx-value fx-value-market" id="fxKrwIqd">–</span></div>
   <div class="fx-updated" id="fxUpdated">불러오는 중…</div>
 </div>
 
@@ -296,6 +297,15 @@
       <li class="embassy-row skeleton">뉴스 불러오는 중…</li>
     </ul>
     <p class="source-note" id="domesticNewsMeta">Google 뉴스 검색 연동 · 매일 자동 갱신</p>
+  </section>
+
+  <!-- 질병관리청 · 보건복지부 소식 -->
+  <section class="panel embassy-panel" aria-label="질병관리청 · 보건복지부 소식" style="grid-column: 1 / -1;">
+    <div class="panel-label">HEALTH AUTHORITY · 질병관리청 · 보건복지부 소식</div>
+    <ul class="embassy-list" id="healthAuthorityNewsList">
+      <li class="embassy-row skeleton">소식 불러오는 중…</li>
+    </ul>
+    <p class="source-note" id="healthAuthorityNewsMeta">질병관리청·보건복지부 공식 도메인 검색 연동 · 매일 자동 갱신</p>
   </section>
 </main>
 </div>

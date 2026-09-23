@@ -588,32 +588,77 @@ setInterval(loadWeather, 10 * 60 * 1000); // 10분마다 갱신
 /* ---------------- 환율 (USD 기준 IQD · KRW) ---------------- */
 async function loadExchangeRates() {
   const elUsdIqd = document.getElementById("fxUsdIqd");
+  const elUsdIqdOfficial = document.getElementById("fxUsdIqdOfficial");
   const elUsdKrw = document.getElementById("fxUsdKrw");
   const elKrwIqd = document.getElementById("fxKrwIqd");
   const elUpdated = document.getElementById("fxUpdated");
   if (!elUsdIqd) return;
 
+  // KRW는 일반적인 실시간(중간시장) 환율 API로 충분히 정확하다.
+  // IQD는 공식 고시환율과 실제 시장(암시장) 환율의 차이가 커서,
+  // 시장환율은 market-fx.json(별도 GitHub Actions가 usdiqd.com에서 수집)에서 가져오고,
+  // 실패 시에만 공식 환율 API 값으로 대체한다.
+  let krw = null;
+  let officialIqd = null;
   try {
     const res = await fetch("https://api.exchangerate.fun/latest?base=USD");
     if (!res.ok) throw new Error("환율 API 응답 오류");
     const data = await res.json();
-    const iqd = data.rates && data.rates.IQD;
-    const krw = data.rates && data.rates.KRW;
-    if (!iqd || !krw) throw new Error("IQD/KRW 환율 데이터 없음");
-
-    elUsdIqd.textContent = iqd.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
-    elUsdKrw.textContent = krw.toLocaleString("ko-KR", { maximumFractionDigits: 1 });
-    // 1,000원이 이라크 디나르로 얼마인지 환산 (USD를 매개로 교차 계산)
-    const krwToIqdPer1000 = (iqd / krw) * 1000;
-    elKrwIqd.textContent = krwToIqdPer1000.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
-
-    const now = new Date();
-    elUpdated.textContent =
-      "갱신: " + new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(now) + " (바그다드)";
+    krw = data.rates && data.rates.KRW;
+    officialIqd = data.rates && data.rates.IQD;
   } catch (err) {
     console.error(err);
-    elUpdated.textContent = "환율 정보를 불러올 수 없습니다";
   }
+
+  let marketIqd = null;
+  let marketFxGeneratedAt = null;
+  try {
+    const res = await fetch("market-fx.json", { cache: "no-store" });
+    if (res.ok) {
+      const data = await res.json();
+      marketIqd = data.usdIqdParallel || null;
+      if (data.usdIqdOfficial) officialIqd = data.usdIqdOfficial; // 같은 출처 값이 있으면 그쪽을 우선
+      marketFxGeneratedAt = data.generatedAt;
+    }
+  } catch (err) {
+    console.error(err);
+  }
+
+  if (!krw) {
+    elUpdated.textContent = "환율 정보를 불러올 수 없습니다";
+    return;
+  }
+
+  const iqdForDisplay = marketIqd || officialIqd; // 시장환율 우선, 없으면 공식환율로 대체
+  if (iqdForDisplay) {
+    elUsdIqd.textContent = iqdForDisplay.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
+  }
+  if (!marketIqd) {
+    // market-fx.json이 아직 없거나 실패한 경우: 시장환율 칸에도 공식환율임을 알림
+    elUsdIqd.parentElement.querySelector(".fx-label").textContent = "USD → IQD (공식고시*)";
+  }
+  if (elUsdIqdOfficial) {
+    if (officialIqd) {
+      elUsdIqdOfficial.textContent = officialIqd.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
+      elUsdIqdOfficial.parentElement.style.display = marketIqd ? "" : "none"; // 시장환율이 이미 공식값이면 중복 표시 안 함
+    } else {
+      elUsdIqdOfficial.parentElement.style.display = "none";
+    }
+  }
+
+  elUsdKrw.textContent = krw.toLocaleString("ko-KR", { maximumFractionDigits: 1 });
+
+  if (iqdForDisplay) {
+    // 1,000원이 이라크 디나르로 얼마인지 환산 (시장환율 기준, USD를 매개로 교차 계산)
+    const krwToIqdPer1000 = (iqdForDisplay / krw) * 1000;
+    elKrwIqd.textContent = krwToIqdPer1000.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
+  }
+
+  const now = new Date();
+  const stamp = new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(now);
+  elUpdated.textContent = marketIqd
+    ? `갱신: ${stamp} (바그다드) · 시장환율은 usdiqd.com 기준`
+    : `갱신: ${stamp} (바그다드) · *시장환율 수집 전이라 공식환율로 표시 중`;
 }
 loadExchangeRates();
 setInterval(loadExchangeRates, 10 * 60 * 1000); // 10분마다 갱신
