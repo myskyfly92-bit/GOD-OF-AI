@@ -526,8 +526,8 @@ async function loadWeather() {
     document.getElementById("wHumidity").textContent = c.relative_humidity_2m ?? "–";
     document.getElementById("wWind").textContent = c.wind_speed_10m?.toFixed(1) ?? "–";
     updateWindDirection(c.wind_direction_10m);
-    document.getElementById("wPm10").textContent = a.pm10?.toFixed(0) ?? "–";
-    document.getElementById("wPm25").textContent = a.pm2_5?.toFixed(0) ?? "–";
+    updateAirQualityGrade("wPm10", a.pm10, PM10_GRADES);
+    updateAirQualityGrade("wPm25", a.pm2_5, PM25_GRADES);
     document.getElementById("wOzone").textContent = a.ozone?.toFixed(0) ?? "–";
     updateUvIndex(a.uv_index);
 
@@ -577,6 +577,33 @@ function updateWindDirection(deg) {
   if (arrow) arrow.style.transform = `rotate(${deg + 180}deg)`;
   const idx = Math.round(deg / 22.5) % 16;
   if (label) label.textContent = `${WIND_COMPASS[idx]} (${Math.round(deg)}°) · ${WIND_COMPASS_KO[idx]}`;
+}
+
+/* 국내 환경부 대기환경기준 등급 (24시간 평균 기준, ㎍/㎥) */
+const PM10_GRADES = [
+  { max: 30, label: "좋음", color: "var(--cyan)" },
+  { max: 80, label: "보통", color: "var(--green)" },
+  { max: 150, label: "나쁨", color: "var(--warn)" },
+  { max: Infinity, label: "매우나쁨", color: "var(--danger)" },
+];
+const PM25_GRADES = [
+  { max: 15, label: "좋음", color: "var(--cyan)" },
+  { max: 35, label: "보통", color: "var(--green)" },
+  { max: 75, label: "나쁨", color: "var(--warn)" },
+  { max: Infinity, label: "매우나쁨", color: "var(--danger)" },
+];
+
+function updateAirQualityGrade(elementId, value, grades) {
+  const el = document.getElementById(elementId);
+  if (!el) return;
+  if (value === undefined || value === null || isNaN(value)) {
+    el.textContent = "–";
+    el.style.color = "";
+    return;
+  }
+  const grade = grades.find((g) => value <= g.max) || grades[grades.length - 1];
+  el.textContent = `${value.toFixed(0)} (${grade.label})`;
+  el.style.color = grade.color;
 }
 
 function updateUvIndex(uv) {
