@@ -304,6 +304,7 @@ function storeDailyForecastForCalendar(daily) {
 
   function openPanel() {
     renderCalendar();
+    if (typeof alignSideWidgets === "function") alignSideWidgets();
   }
 
   prevBtn.addEventListener("click", (e) => {
@@ -311,19 +312,24 @@ function storeDailyForecastForCalendar(daily) {
     viewMonth -= 1;
     if (viewMonth < 0) { viewMonth = 11; viewYear -= 1; }
     renderCalendar();
+    if (typeof alignSideWidgets === "function") alignSideWidgets();
   });
   nextBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     viewMonth += 1;
     if (viewMonth > 11) { viewMonth = 0; viewYear += 1; }
     renderCalendar();
+    if (typeof alignSideWidgets === "function") alignSideWidgets();
   });
 
   // 항상 표시: 페이지 로드 시 바로 렌더링
   openPanel();
 
   // 날씨 데이터가 나중에 도착했을 때(비동기) 달력을 다시 그릴 수 있도록 외부에 노출
-  refreshHolidayCalendarWeather = renderCalendar;
+  refreshHolidayCalendarWeather = () => {
+    renderCalendar();
+    if (typeof alignSideWidgets === "function") alignSideWidgets();
+  };
 })();
 
 
@@ -756,6 +762,16 @@ function alignSideWidgets() {
       el.style.display = "none";
     }
   });
+
+  // 환율 위젯은 "화면 하단에서 20px" 고정이 아니라, 달력 패널 바로 아래에
+  // 오도록 실제 달력 높이를 측정해서 위치를 계산한다.
+  // (달력에 표시되는 공휴일 개수·아이콘 등에 따라 높이가 달마다 달라지므로
+  // 매번 다시 측정해야 겹치지 않는다)
+  if (fitsOnScreen && holidayPanel && fxWidget && holidayPanel.style.display !== "none") {
+    const holidayBottom = holidayPanel.getBoundingClientRect().bottom;
+    fxWidget.style.bottom = "auto";
+    fxWidget.style.top = `${Math.round(holidayBottom + gap)}px`;
+  }
 }
 
 window.addEventListener("load", alignSideWidgets);
