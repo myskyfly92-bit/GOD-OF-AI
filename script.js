@@ -642,9 +642,11 @@ function alignSideWidgets() {
   const gridRight = gridRect.right;
   const gap = 20;
 
-  // 달력은 카드 첫 줄과 위쪽 높이를 맞춘다
-  if (holidayPanel) {
-    holidayPanel.style.top = `${Math.round(gridRect.top)}px`;
+  // 달력은 grid 컨테이너 자체가 아니라, 실제 카드(첫 패널)의 위쪽 끝과 높이를 맞춘다
+  // (grid에는 위쪽 padding이 있어서 컨테이너 기준으로 맞추면 그만큼 더 위에 위치하게 됨)
+  const firstPanel = gridEl.querySelector(".panel");
+  if (holidayPanel && firstPanel) {
+    holidayPanel.style.top = `${Math.round(firstPanel.getBoundingClientRect().top)}px`;
   }
 
   [holidayPanel, fxWidget].forEach((el) => {
