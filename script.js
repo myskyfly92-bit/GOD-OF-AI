@@ -526,8 +526,8 @@ async function loadWeather() {
     document.getElementById("wHumidity").textContent = c.relative_humidity_2m ?? "–";
     document.getElementById("wWind").textContent = c.wind_speed_10m?.toFixed(1) ?? "–";
     updateWindDirection(c.wind_direction_10m);
-    updateAirQualityGrade("wPm10", a.pm10, PM10_GRADES);
-    updateAirQualityGrade("wPm25", a.pm2_5, PM25_GRADES);
+    document.getElementById("wPm10").textContent = a.pm10?.toFixed(0) ?? "–";
+    document.getElementById("wPm25").textContent = a.pm2_5?.toFixed(0) ?? "–";
     document.getElementById("wOzone").textContent = a.ozone?.toFixed(0) ?? "–";
     updateUvIndex(a.uv_index);
 
@@ -559,12 +559,6 @@ const WIND_COMPASS = [
   "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"
 ];
 
-// 어르신들도 바로 이해하실 수 있도록 한글 풍향 이름도 같이 표기
-const WIND_COMPASS_KO = [
-  "북풍", "북북동풍", "북동풍", "동북동풍", "동풍", "동남동풍", "남동풍", "남남동풍",
-  "남풍", "남남서풍", "남서풍", "서남서풍", "서풍", "서북서풍", "북서풍", "북북서풍"
-];
-
 function updateWindDirection(deg) {
   const arrow = document.getElementById("windArrow");
   const label = document.getElementById("wWindDir");
@@ -576,34 +570,7 @@ function updateWindDirection(deg) {
   // (Open-Meteo의 deg 값은 '불어오는 방향' 기준이라 180도 반전해서 사용합니다.)
   if (arrow) arrow.style.transform = `rotate(${deg + 180}deg)`;
   const idx = Math.round(deg / 22.5) % 16;
-  if (label) label.textContent = `${WIND_COMPASS[idx]} (${Math.round(deg)}°) · ${WIND_COMPASS_KO[idx]}`;
-}
-
-/* 국내 환경부 대기환경기준 등급 (24시간 평균 기준, ㎍/㎥) */
-const PM10_GRADES = [
-  { max: 30, label: "좋음", color: "var(--cyan)" },
-  { max: 80, label: "보통", color: "var(--green)" },
-  { max: 150, label: "나쁨", color: "var(--warn)" },
-  { max: Infinity, label: "매우나쁨", color: "var(--danger)" },
-];
-const PM25_GRADES = [
-  { max: 15, label: "좋음", color: "var(--cyan)" },
-  { max: 35, label: "보통", color: "var(--green)" },
-  { max: 75, label: "나쁨", color: "var(--warn)" },
-  { max: Infinity, label: "매우나쁨", color: "var(--danger)" },
-];
-
-function updateAirQualityGrade(elementId, value, grades) {
-  const el = document.getElementById(elementId);
-  if (!el) return;
-  if (value === undefined || value === null || isNaN(value)) {
-    el.textContent = "–";
-    el.style.color = "";
-    return;
-  }
-  const grade = grades.find((g) => value <= g.max) || grades[grades.length - 1];
-  el.textContent = `${value.toFixed(0)} (${grade.label})`;
-  el.style.color = grade.color;
+  if (label) label.textContent = `${WIND_COMPASS[idx]} (${Math.round(deg)}°)`;
 }
 
 function updateUvIndex(uv) {
@@ -784,12 +751,10 @@ function alignSideWidgets() {
     holidayPanel.style.top = `${Math.round(firstPanel.getBoundingClientRect().top + scrollY)}px`;
   }
 
-  // 좌우 여백이 완전히 같아지도록 달력 폭을 계산: (뷰포트 폭) - (카드 오른쪽 끝 + 간격) - (왼쪽 여백)
-  // 예전엔 460px 상한을 둬서 화면이 넓을 때 오른쪽 여백이 왼쪽보다 남아버리는 문제가 있었음 —
-  // 좌우 여백을 정확히 맞추는 게 우선이므로 상한은 넉넉하게 풀어둔다.
+  // 좌우 여백이 같아지도록 달력 폭을 계산: (뷰포트 폭) - (카드 오른쪽 끝 + 간격) - (왼쪽 여백)
   const left = gridRight + gap;
   const minWidth = 220;
-  const maxWidth = 900; // 지나치게 넓어지는 것만 막는 넉넉한 상한
+  const maxWidth = 460; // 너무 밑도 끝도 없이 넓어지지 않도록 상한
   let calendarWidth = window.innerWidth - left - gridLeft;
   calendarWidth = Math.max(minWidth, Math.min(maxWidth, calendarWidth));
 
