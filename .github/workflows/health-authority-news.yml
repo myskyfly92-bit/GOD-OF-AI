@@ -1,0 +1,37 @@
+name: Update health authority news (질병관리청·보건복지부)
+
+on:
+  schedule:
+    # 매일 UTC 21:10 (한국시간 오전 6시 10분)에 실행
+    - cron: "10 21 * * *"
+  workflow_dispatch: {} # 저장소의 Actions 탭에서 수동 실행도 가능
+
+permissions:
+  contents: write
+
+jobs:
+  update-health-authority-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 소식 가져오기
+        run: node scripts/fetch-health-authority-news.js
+
+      - name: 변경사항 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- health-authority-news.json; then
+            echo "변경사항 없음"
+          else
+            git add health-authority-news.json
+            git commit -m "chore: 질병관리청·보건복지부 소식 자동 갱신"
+            git push
+          fi
