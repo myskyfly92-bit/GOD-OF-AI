@@ -168,6 +168,35 @@ const IQ_HOLIDAYS_2026 = {
   "2026-12-25": "Christmas Day",
 };
 
+/* ---------------- 달력용 일별 날씨 아이콘 (Open-Meteo weathercode) ---------------- */
+let CALENDAR_DAILY_FORECAST = {}; // { "YYYY-MM-DD": { code, tmax, tmin } }
+let refreshHolidayCalendarWeather = null; // 아래 IIFE 안에서 실제 렌더 함수로 채워짐
+
+function weatherCodeToIcon(code) {
+  if (code === 0) return "☀️";
+  if (code === 1 || code === 2) return "⛅";
+  if (code === 3) return "☁️";
+  if (code === 45 || code === 48) return "🌫️";
+  if ([51, 53, 55, 56, 57, 80, 81, 82].includes(code)) return "🌦️";
+  if ([61, 63, 65, 66, 67].includes(code)) return "🌧️";
+  if ([71, 73, 75, 77, 85, 86].includes(code)) return "❄️";
+  if ([95, 96, 99].includes(code)) return "⛈️";
+  return "";
+}
+
+function storeDailyForecastForCalendar(daily) {
+  if (!daily || !daily.time) return;
+  CALENDAR_DAILY_FORECAST = {};
+  daily.time.forEach((dateStr, i) => {
+    CALENDAR_DAILY_FORECAST[dateStr] = {
+      code: daily.weathercode ? daily.weathercode[i] : null,
+      tmax: daily.temperature_2m_max ? daily.temperature_2m_max[i] : null,
+      tmin: daily.temperature_2m_min ? daily.temperature_2m_min[i] : null,
+    };
+  });
+  if (typeof refreshHolidayCalendarWeather === "function") refreshHolidayCalendarWeather();
+}
+
 (function initHolidayWidget() {
   const panel = document.getElementById("holidayPanel");
   const monthLabel = document.getElementById("holidayMonthLabel");
@@ -213,6 +242,17 @@ const IQ_HOLIDAYS_2026 = {
       const num = document.createElement("span");
       num.textContent = String(d);
       cell.appendChild(num);
+
+      const fc = CALENDAR_DAILY_FORECAST[key];
+      if (fc && fc.code !== null && fc.code !== undefined) {
+        const icon = document.createElement("span");
+        icon.className = "holiday-weather-icon";
+        icon.textContent = weatherCodeToIcon(fc.code);
+        if (fc.tmax !== null && fc.tmax !== undefined) {
+          icon.title = `최고 ${Math.round(fc.tmax)}° / 최저 ${Math.round(fc.tmin)}°`;
+        }
+        cell.appendChild(icon);
+      }
 
       if (krName || iqName) {
         const dots = document.createElement("span");
@@ -281,6 +321,9 @@ const IQ_HOLIDAYS_2026 = {
 
   // 항상 표시: 페이지 로드 시 바로 렌더링
   openPanel();
+
+  // 날씨 데이터가 나중에 도착했을 때(비동기) 달력을 다시 그릴 수 있도록 외부에 노출
+  refreshHolidayCalendarWeather = renderCalendar;
 })();
 
 
@@ -455,7 +498,7 @@ function escapeHtml(str) {
 /* ---------------- 날씨 & 대기질 (Open-Meteo) ---------------- */
 async function loadWeather() {
   try {
-    const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m,wind_direction_10m&hourly=precipitation_probability&daily=sunrise,sunset&timezone=${encodeURIComponent(TIMEZONE)}`;
+    const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m,wind_direction_10m&hourly=precipitation_probability&daily=sunrise,sunset,weathercode,temperature_2m_max,temperature_2m_min&forecast_days=16&timezone=${encodeURIComponent(TIMEZONE)}`;
     const airUrl = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=pm10,pm2_5,ozone,uv_index&timezone=${encodeURIComponent(TIMEZONE)}`;
 
     const [weatherRes, airRes] = await Promise.all([fetch(weatherUrl), fetch(airUrl)]);
@@ -478,6 +521,7 @@ async function loadWeather() {
     updateHeatStatus(c.temperature_2m, c.apparent_temperature);
     updateSunTimes(weather.daily);
     updateRainChance(weather.hourly);
+    storeDailyForecastForCalendar(weather.daily);
     document.getElementById("lastUpdated").textContent =
       "마지막 갱신: " + new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date());
   } catch (err) {
@@ -590,35 +634,35 @@ async function loadExchangeRates() {
   const elUsdIqd = document.getElementById("fxUsdIqd");
   const elUsdIqdOfficial = document.getElementById("fxUsdIqdOfficial");
   const elUsdKrw = document.getElementById("fxUsdKrw");
-  const elKrwIqd = document.getElementById("fxKrwIqd");
+  const elKrwJpy = document.getElementById("fxKrwJpy");
+  const elKrwCny = document.getElementById("fxKrwCny");
   const elUpdated = document.getElementById("fxUpdated");
   if (!elUsdIqd) return;
 
-  // KRW는 일반적인 실시간(중간시장) 환율 API로 충분히 정확하다.
+  // KRW/JPY/CNY는 일반적인 실시간(중간시장) 환율 API로 충분히 정확하다.
   // IQD는 공식 고시환율과 실제 시장(암시장) 환율의 차이가 커서,
   // 시장환율은 market-fx.json(별도 GitHub Actions가 usdiqd.com에서 수집)에서 가져오고,
   // 실패 시에만 공식 환율 API 값으로 대체한다.
-  let krw = null;
-  let officialIqd = null;
+  let krw = null, jpy = null, cny = null, officialIqd = null;
   try {
     const res = await fetch("https://api.exchangerate.fun/latest?base=USD");
     if (!res.ok) throw new Error("환율 API 응답 오류");
     const data = await res.json();
     krw = data.rates && data.rates.KRW;
+    jpy = data.rates && data.rates.JPY;
+    cny = data.rates && data.rates.CNY;
     officialIqd = data.rates && data.rates.IQD;
   } catch (err) {
     console.error(err);
   }
 
   let marketIqd = null;
-  let marketFxGeneratedAt = null;
   try {
     const res = await fetch("market-fx.json", { cache: "no-store" });
     if (res.ok) {
       const data = await res.json();
       marketIqd = data.usdIqdParallel || null;
       if (data.usdIqdOfficial) officialIqd = data.usdIqdOfficial; // 같은 출처 값이 있으면 그쪽을 우선
-      marketFxGeneratedAt = data.generatedAt;
     }
   } catch (err) {
     console.error(err);
@@ -629,36 +673,32 @@ async function loadExchangeRates() {
     return;
   }
 
-  const iqdForDisplay = marketIqd || officialIqd; // 시장환율 우선, 없으면 공식환율로 대체
-  if (iqdForDisplay) {
-    elUsdIqd.textContent = iqdForDisplay.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
+  if (officialIqd) {
+    elUsdIqdOfficial.textContent = officialIqd.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
   }
-  if (!marketIqd) {
-    // market-fx.json이 아직 없거나 실패한 경우: 시장환율 칸에도 공식환율임을 알림
-    elUsdIqd.parentElement.querySelector(".fx-label").textContent = "USD → IQD (공식고시*)";
-  }
-  if (elUsdIqdOfficial) {
-    if (officialIqd) {
-      elUsdIqdOfficial.textContent = officialIqd.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
-      elUsdIqdOfficial.parentElement.style.display = marketIqd ? "" : "none"; // 시장환율이 이미 공식값이면 중복 표시 안 함
-    } else {
-      elUsdIqdOfficial.parentElement.style.display = "none";
-    }
+  if (marketIqd) {
+    elUsdIqd.textContent = marketIqd.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
+  } else {
+    elUsdIqd.textContent = "수집 전";
   }
 
   elUsdKrw.textContent = krw.toLocaleString("ko-KR", { maximumFractionDigits: 1 });
 
-  if (iqdForDisplay) {
-    // 1,000원이 이라크 디나르로 얼마인지 환산 (시장환율 기준, USD를 매개로 교차 계산)
-    const krwToIqdPer1000 = (iqdForDisplay / krw) * 1000;
-    elKrwIqd.textContent = krwToIqdPer1000.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
+  // 1,000원 기준으로 환산해야 숫자가 너무 작아지지 않아 보기 편하다
+  if (jpy) {
+    const krwToJpyPer1000 = (jpy / krw) * 1000;
+    elKrwJpy.textContent = krwToJpyPer1000.toLocaleString("ko-KR", { maximumFractionDigits: 1 }) + " 엔";
+  }
+  if (cny) {
+    const krwToCnyPer1000 = (cny / krw) * 1000;
+    elKrwCny.textContent = krwToCnyPer1000.toLocaleString("ko-KR", { maximumFractionDigits: 1 }) + " 위안";
   }
 
   const now = new Date();
   const stamp = new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(now);
   elUpdated.textContent = marketIqd
     ? `갱신: ${stamp} (바그다드) · 시장환율은 usdiqd.com 기준`
-    : `갱신: ${stamp} (바그다드) · *시장환율 수집 전이라 공식환율로 표시 중`;
+    : `갱신: ${stamp} (바그다드) · 시장환율 수집 전`;
 }
 loadExchangeRates();
 setInterval(loadExchangeRates, 10 * 60 * 1000); // 10분마다 갱신
