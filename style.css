@@ -851,7 +851,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 10px;
@@ -875,8 +875,9 @@ code {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   text-align: center;
-  font-size: 9.5px;
-  color: var(--text-dim);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-muted);
   margin-bottom: 4px;
 }
 
@@ -892,11 +893,17 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--text-muted);
   border-radius: 5px;
   position: relative;
   gap: 1px;
+}
+
+.holiday-weather-icon {
+  font-size: 12px;
+  line-height: 1;
 }
 
 .holiday-cell.is-empty { visibility: hidden; }
@@ -946,7 +953,7 @@ code {
 }
 
 .holiday-list li {
-  font-size: 11px;
+  font-size: 13.5px;
   color: var(--text-muted);
   display: flex;
   gap: 6px;
@@ -1354,25 +1361,25 @@ body.bg-procedures {
 /* ---------- 환율 위젯 (화면 우측 하단 고정) ---------- */
 .fx-widget {
   position: fixed;
-  /* left 값은 script.js에서 .grid 우측 끝 좌표를 실측해 정확히 계산해 넣는다 */
+  /* left/width 값은 script.js에서 .grid 우측 끝 좌표를 실측해 정확히 계산해 넣는다 */
   bottom: 20px;
   z-index: 150;
-  width: 170px;
+  width: 230px;
   background: linear-gradient(180deg, var(--panel), var(--panel-2));
   border: 1px solid var(--border-soft);
   border-radius: 10px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.45);
-  padding: 12px 14px;
+  padding: 14px 16px;
   font-family: var(--font-mono);
   backdrop-filter: blur(6px);
 }
 
 .fx-widget-title {
-  font-size: 10.5px;
+  font-size: 12px;
   letter-spacing: 0.04em;
   color: var(--text-dim);
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .fx-row {
@@ -1380,27 +1387,19 @@ body.bg-procedures {
   justify-content: space-between;
   align-items: baseline;
   gap: 8px;
-  padding: 4px 0;
+  padding: 6px 0;
   border-top: 1px solid var(--border-soft);
 }
 
 .fx-row:first-of-type { border-top: none; }
 
-/* 공식 고시환율(참고용) 줄은 살짝 작고 흐리게 처리해 시장환율과 구분 */
-.fx-row-sub {
-  padding-top: 0;
-  padding-bottom: 6px;
-  border-top: none;
-}
-.fx-row-sub .fx-label { font-size: 9.5px; opacity: 0.75; }
-
 .fx-label {
-  font-size: 10.5px;
+  font-size: 13px;
   color: var(--text-muted);
 }
 
 .fx-value {
-  font-size: 12.5px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--cyan);
   white-space: nowrap;
@@ -1408,11 +1407,11 @@ body.bg-procedures {
 
 /* 실제 시장환율(암시장) 값은 주황색으로 강조, 공식 고시환율은 흐린 참고용 톤 */
 .fx-value-market { color: var(--amber); }
-.fx-value-official { font-size: 11px; font-weight: 600; color: var(--text-dim); }
+.fx-value-official { color: var(--text-dim); }
 
 .fx-updated {
-  margin-top: 8px;
-  font-size: 9px;
+  margin-top: 10px;
+  font-size: 10.5px;
   color: var(--text-dim);
   text-align: right;
 }
