@@ -640,6 +640,7 @@ function alignSideWidgets() {
 
   const gridRect = gridEl.getBoundingClientRect();
   const gridRight = gridRect.right;
+  const gridLeft = gridRect.left; // 콘텐츠 왼쪽 여백 폭 (이 값과 오른쪽 여백을 같게 맞춘다)
   const gap = 20;
 
   // 달력은 grid 컨테이너 자체가 아니라, 실제 카드(첫 패널)의 위쪽 끝과 높이를 맞춘다
@@ -649,14 +650,21 @@ function alignSideWidgets() {
     holidayPanel.style.top = `${Math.round(firstPanel.getBoundingClientRect().top)}px`;
   }
 
+  // 좌우 여백이 같아지도록 달력 폭을 계산: (뷰포트 폭) - (카드 오른쪽 끝 + 간격) - (왼쪽 여백)
+  const left = gridRight + gap;
+  const minWidth = 220;
+  const maxWidth = 460; // 너무 밑도 끝도 없이 넓어지지 않도록 상한
+  let calendarWidth = window.innerWidth - left - gridLeft;
+  calendarWidth = Math.max(minWidth, Math.min(maxWidth, calendarWidth));
+
+  const fitsOnScreen = left + calendarWidth <= window.innerWidth - 8;
+
   [holidayPanel, fxWidget].forEach((el) => {
     if (!el) return;
-    const width = el.offsetWidth || 300;
-    const left = gridRight + gap;
-    const fitsOnScreen = left + width <= window.innerWidth - 8;
 
     if (fitsOnScreen) {
       el.style.left = `${Math.round(left)}px`;
+      el.style.width = `${Math.round(calendarWidth)}px`;
       el.style.display = "";
     } else {
       // 여백이 위젯 하나 들어갈 만큼도 없으면 겹치지 않도록 숨긴다
