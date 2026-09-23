@@ -618,6 +618,52 @@ async function loadExchangeRates() {
 loadExchangeRates();
 setInterval(loadExchangeRates, 10 * 60 * 1000); // 10분마다 갱신
 
+/* ---------------- 우측 여백 위젯(공휴일 달력 · 환율) 정렬 ----------------
+   .grid(대시보드 카드 영역)의 실제 오른쪽 끝 좌표를 측정해서, 그 옆
+   여백에 정확히 붙인다. 화면 폭에 따른 계산식으로 추측하지 않고
+   실측하기 때문에 카드 위에 겹치는 일이 없다.
+   여백이 위젯 하나 들어갈 만큼도 없는 좁은 화면에서는 위젯을 숨긴다
+   (768px 미만은 CSS 미디어쿼리가 별도로 처리). */
+function alignSideWidgets() {
+  const gridEl = document.querySelector(".grid");
+  const holidayPanel = document.getElementById("holidayPanel");
+  const fxWidget = document.getElementById("fxWidget");
+  if (!gridEl) return;
+
+  if (window.innerWidth <= 768) {
+    // 좁은 화면: JS로 강제 설정한 left 값을 지워서 CSS 미디어쿼리가 그대로 적용되게 둔다
+    if (holidayPanel) holidayPanel.style.left = "";
+    if (fxWidget) fxWidget.style.left = "";
+    if (fxWidget) fxWidget.style.display = "";
+    return;
+  }
+
+  const gridRight = gridEl.getBoundingClientRect().right;
+  const gap = 20;
+
+  [holidayPanel, fxWidget].forEach((el) => {
+    if (!el) return;
+    const width = el.offsetWidth || 300;
+    const left = gridRight + gap;
+    const fitsOnScreen = left + width <= window.innerWidth - 8;
+
+    if (fitsOnScreen) {
+      el.style.left = `${Math.round(left)}px`;
+      el.style.display = "";
+    } else {
+      // 여백이 위젯 하나 들어갈 만큼도 없으면 겹치지 않도록 숨긴다
+      el.style.display = "none";
+    }
+  });
+}
+
+window.addEventListener("load", alignSideWidgets);
+window.addEventListener("resize", alignSideWidgets);
+// 구글 위젯/번역 등으로 레이아웃이 뒤늦게 흔들리는 경우를 대비해 재계산
+setTimeout(alignSideWidgets, 600);
+setTimeout(alignSideWidgets, 1500);
+alignSideWidgets();
+
 
 /* ---------------- 탭 전환 ---------------- */
 document.querySelectorAll(".tab-btn").forEach(btn => {
@@ -924,6 +970,47 @@ function renderDomesticNews(items, generatedAt) {
 }
 
 loadDomesticNews();
+
+/* ---------------- 질병관리청 · 보건복지부 소식 ---------------- */
+async function loadHealthAuthorityNews() {
+  const list = document.getElementById("healthAuthorityNewsList");
+  try {
+    const res = await fetch("health-authority-news.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("health-authority-news.json 로드 실패");
+    const data = await res.json();
+    renderHealthAuthorityNews(data.items, data.generatedAt);
+  } catch (err) {
+    console.error(err);
+    list.innerHTML = `<li class="embassy-row skeleton">아직 health-authority-news.json이 없거나 불러올 수 없습니다. GitHub Actions가 최초 1회 실행된 후 표시됩니다.</li>`;
+  }
+}
+
+function renderHealthAuthorityNews(items, generatedAt) {
+  const list = document.getElementById("healthAuthorityNewsList");
+  if (!items || !items.length) {
+    list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 소식이 없습니다.</li>`;
+    return;
+  }
+  list.innerHTML = items.map(n => `
+    <li class="embassy-row">
+      <div class="notice-top">
+        <span class="notice-title">${n.agency ? `[${escapeHtml(n.agency)}] ` : ""}${escapeHtml(n.title)}</span>
+        <span class="notice-date">${escapeHtml((n.date || "").slice(0, 10))}</span>
+      </div>
+      ${n.source ? `<div class="notice-body">${escapeHtml(n.source)}</div>` : ""}
+      ${n.link ? `<a class="embassy-link" href="${n.link}" target="_blank" rel="noopener noreferrer">원문 보기 ↗</a>` : ""}
+    </li>
+  `).join("");
+
+  if (generatedAt) {
+    const dt = new Date(generatedAt);
+    document.getElementById("healthAuthorityNewsMeta").textContent =
+      "질병관리청·보건복지부 공식 도메인 검색 연동 · 마지막 수집: " +
+      new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(dt);
+  }
+}
+
+loadHealthAuthorityNews();
 
 /* ---------------- 안전작업절차서 (procedures.json 기반) ---------------- */
 function procEscapeHtml(str) {
