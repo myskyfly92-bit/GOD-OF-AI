@@ -559,6 +559,12 @@ const WIND_COMPASS = [
   "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"
 ];
 
+// 어르신들도 바로 이해하실 수 있도록 한글 풍향 이름도 같이 표기
+const WIND_COMPASS_KO = [
+  "북풍", "북북동풍", "북동풍", "동북동풍", "동풍", "동남동풍", "남동풍", "남남동풍",
+  "남풍", "남남서풍", "남서풍", "서남서풍", "서풍", "서북서풍", "북서풍", "북북서풍"
+];
+
 function updateWindDirection(deg) {
   const arrow = document.getElementById("windArrow");
   const label = document.getElementById("wWindDir");
@@ -570,7 +576,7 @@ function updateWindDirection(deg) {
   // (Open-Meteo의 deg 값은 '불어오는 방향' 기준이라 180도 반전해서 사용합니다.)
   if (arrow) arrow.style.transform = `rotate(${deg + 180}deg)`;
   const idx = Math.round(deg / 22.5) % 16;
-  if (label) label.textContent = `${WIND_COMPASS[idx]} (${Math.round(deg)}°)`;
+  if (label) label.textContent = `${WIND_COMPASS[idx]} (${Math.round(deg)}°) · ${WIND_COMPASS_KO[idx]}`;
 }
 
 function updateUvIndex(uv) {
