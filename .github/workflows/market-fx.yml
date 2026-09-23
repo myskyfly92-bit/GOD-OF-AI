@@ -1,0 +1,37 @@
+name: Update Iraq market FX rate (시장환율)
+
+on:
+  schedule:
+    # 하루 4번 (UTC 03,09,15,21시 = 바그다드 06,12,18,00시경) 실행
+    - cron: "0 3,9,15,21 * * *"
+  workflow_dispatch: {} # 저장소의 Actions 탭에서 수동 실행도 가능
+
+permissions:
+  contents: write
+
+jobs:
+  update-market-fx:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 시장환율 가져오기
+        run: node scripts/fetch-market-fx.js
+
+      - name: 변경사항 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- market-fx.json; then
+            echo "변경사항 없음"
+          else
+            git add market-fx.json
+            git commit -m "chore: 이라크 시장환율 자동 갱신"
+            git push
+          fi

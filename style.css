@@ -1386,6 +1386,14 @@ body.bg-procedures {
 
 .fx-row:first-of-type { border-top: none; }
 
+/* 공식 고시환율(참고용) 줄은 살짝 작고 흐리게 처리해 시장환율과 구분 */
+.fx-row-sub {
+  padding-top: 0;
+  padding-bottom: 6px;
+  border-top: none;
+}
+.fx-row-sub .fx-label { font-size: 9.5px; opacity: 0.75; }
+
 .fx-label {
   font-size: 10.5px;
   color: var(--text-muted);
@@ -1397,6 +1405,10 @@ body.bg-procedures {
   color: var(--cyan);
   white-space: nowrap;
 }
+
+/* 실제 시장환율(암시장) 값은 주황색으로 강조, 공식 고시환율은 흐린 참고용 톤 */
+.fx-value-market { color: var(--amber); }
+.fx-value-official { font-size: 11px; font-weight: 600; color: var(--text-dim); }
 
 .fx-updated {
   margin-top: 8px;
