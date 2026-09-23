@@ -1,373 +1,242 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>한화 건설부문 비스마야 안전보건환경 통제실</title>
-<meta name="description" content="이라크 비스마야 신도시 현장 안전·보건·환경(HSE) 상황 모니터링 통제실">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENVIRONMENT - 현장 날씨·대기환경 모니터링</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Pretendard & JetBrains Mono Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .font-mono-num {
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: -0.04em;
+    }
+    .label-text {
+      color: #94A3B8; /* slate-400 */
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 6px;
+    }
+    .metric-val {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    @media (max-width: 640px) {
+      .metric-val {
+        font-size: 30px;
+      }
+      .label-text {
+        font-size: 11px;
+      }
+    }
+  </style>
 </head>
-<body class="bg-dashboard">
+<body class="bg-[#090D14] min-h-screen flex items-center justify-center p-4 selection:bg-purple-900 selection:text-white">
 
-<div class="scanlines" aria-hidden="true"></div>
-
-<div class="fx-widget" id="fxWidget" aria-label="환율 정보">
-  <div class="fx-widget-title">환율</div>
-  <div class="fx-row"><span class="fx-label">USD → IQD 공식고시</span><span class="fx-value fx-value-official" id="fxUsdIqdOfficial">–</span></div>
-  <div class="fx-row"><span class="fx-label">USD → IQD 시장</span><span class="fx-value fx-value-market" id="fxUsdIqd">–</span></div>
-  <div class="fx-row"><span class="fx-label">USD → KRW</span><span class="fx-value" id="fxUsdKrw">–</span></div>
-  <div class="fx-row"><span class="fx-label">1,000원 → 엔화</span><span class="fx-value" id="fxKrwJpy">–</span></div>
-  <div class="fx-row"><span class="fx-label">1,000원 → 위안화</span><span class="fx-value" id="fxKrwCny">–</span></div>
-  <div class="fx-updated" id="fxUpdated">불러오는 중…</div>
-</div>
-
-<header class="topbar">
-  <div class="topbar-brand">
-    <div class="brand-mark">
-      <img class="brand-logo" src="assets/hanwha-logo.jpg" alt="Hanwha Corporation">
-    </div>
-    <img class="brand-mascot" src="assets/mascot.png" alt="한화 안전 마스코트">
-    <div class="brand-text">
-      <h1>비스마야 안전보건환경 통제실</h1>
-      <p>Bismayah New City Project · HSE Control Room</p>
-    </div>
-  </div>
-  <div class="topbar-status">
-    <div class="live-pill"><span class="dot"></span>실시간 연동</div>
-    <div class="clock-block notranslate" translate="no">
-      <div class="clock"><span id="clock">--:--:--</span> <span class="clock-label clock-label-baghdad" aria-hidden="true"></span></div>
-      <div id="date" class="date">----년 --월 --일</div>
-      <div class="clock-secondary"><span id="clockKst">--:--:--</span> <span class="clock-label clock-label-korea" aria-hidden="true"></span></div>
-    </div>
-    <div class="flag-group">
-      <img class="flag-icon" src="https://flagcdn.com/32x24/iq.png" srcset="https://flagcdn.com/64x48/iq.png 2x" alt="이라크 국기" title="이라크">
-      <img class="flag-icon" src="https://flagcdn.com/32x24/kr.png" srcset="https://flagcdn.com/64x48/kr.png 2x" alt="대한민국 국기" title="대한민국">
-    </div>
-  </div>
-</header>
-
-<div id="google_translate_element" class="translate-widget-floating"></div>
-
-<nav class="tab-bar">
-  <button class="tab-btn active" data-view="view-dashboard">종합현황</button>
-  <button class="tab-btn" data-view="view-embassy">대사관 안전공지</button>
-  <button class="tab-btn" data-view="view-procedures">안전작업절차서</button>
-  <button class="tab-btn" data-view="view-accidents">사고사례</button>
-  <button class="tab-btn" data-view="view-workzone">작업구역</button>
-
-  <div class="lang-switcher" id="langSwitcher" aria-label="언어 선택">
-    <button type="button" class="lang-btn active" data-lang="ko">한국어</button>
-    <button type="button" class="lang-btn" data-lang="en">ENG</button>
-    <button type="button" class="lang-btn" data-lang="ar">العربية</button>
-  </div>
-
-  <div class="family-site">
-    <select id="familySiteSelect" aria-label="패밀리사이트 바로가기">
-      <option value="" selected disabled>패밀리사이트 ▾</option>
-      <option value="https://odd-butterfly-b936.chogak1449.workers.dev/">BNCP AI Assistant</option>
-    </select>
-  </div>
-
-  <div class="holiday-widget">
-    <div class="holiday-panel" id="holidayPanel">
-      <div class="holiday-panel-header">
-        <button type="button" class="holiday-nav-btn" id="holidayPrevBtn" aria-label="이전 달">‹</button>
-        <span id="holidayMonthLabel">-</span>
-        <button type="button" class="holiday-nav-btn" id="holidayNextBtn" aria-label="다음 달">›</button>
+  <!-- Main Container -->
+  <div class="relative w-full max-w-[620px] bg-[#101722] rounded-3xl p-7 sm:p-9 border border-[#1E293B] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7)]">
+    
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-8 pb-1">
+      <div class="flex items-center gap-2 font-mono-num text-[12px] sm:text-[13px] tracking-wider text-slate-400 font-semibold">
+        <span class="text-slate-300">ENVIRONMENT</span>
+        <span class="text-slate-600">·</span>
+        <span class="text-slate-400">현장 날씨·대기환경</span>
       </div>
-      <div class="holiday-weekdays">
-        <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
-      </div>
-      <div class="holiday-grid" id="holidayGrid"></div>
-      <div class="holiday-legend">
-        <span class="holiday-legend-item"><span class="holiday-dot holiday-dot-kr"></span>한국 공휴일</span>
-        <span class="holiday-legend-item"><span class="holiday-dot holiday-dot-iq"></span>이라크 공휴일</span>
-      </div>
-      <ul class="holiday-list" id="holidayList"></ul>
-      <p class="holiday-note">※ 이라크의 이슬람력 기반 공휴일(이드 알피트르, 이드 알아드하 등)은 실제 초승달 관측에 따라 ±1일 조정될 수 있습니다.</p>
-    </div>
-  </div>
-</nav>
-
-<div id="view-dashboard" class="view active">
-<main class="grid">
-
-  <!-- HERO: 무재해 연속일수 -->
-  <section class="panel hero-panel" aria-label="무재해 연속일수">
-    <div class="panel-label">SAFETY COUNTER · 무재해 연속</div>
-    <div class="hero-counter">
-      <span id="incidentFreeDays">0</span><span class="hero-unit">일</span>
-    </div>
-    <p class="hero-sub" id="lastIncidentText">기준일 데이터 불러오는 중…</p>
-    <div class="hero-substats">
-      <div class="substat">
-        <span class="substat-value" id="monthlyInspections">–</span>
-        <span class="substat-label">이달 안전점검(건)</span>
-      </div>
-      <div class="substat">
-        <span class="substat-value" id="trainingRate">–</span>
-        <span class="substat-label">안전교육 이수율</span>
-      </div>
-      <div class="substat">
-        <span class="substat-value" id="incidentCount">–</span>
-        <span class="substat-label">누적 사고(건)</span>
+      <div id="status-badge" class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/25 text-emerald-400 text-[11px] font-medium transition-all">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span id="status-text">실시간 연동</span>
       </div>
     </div>
-  </section>
 
-  <!-- 작업환경 상태 밴드 (폭염 지수) -->
-  <section class="panel heat-panel" aria-label="옥외작업 환경 상태">
-    <div class="panel-label">WORK-ENVIRONMENT STATUS · 옥외작업 기준</div>
-    <div id="heatStatus" class="heat-status heat-loading">
-      <div class="heat-status-title">환경 데이터 확인 중…</div>
-      <div class="heat-status-desc">현재 기온 기준 작업 권고사항을 계산하고 있습니다.</div>
-    </div>
-    <div class="heat-scale" id="heatScale">
-      <div class="heat-scale-seg seg-ok">정상</div>
-      <div class="heat-scale-seg seg-caution">주의</div>
-      <div class="heat-scale-seg seg-warn">경고</div>
-      <div class="heat-scale-seg seg-danger">위험</div>
-    </div>
-  </section>
+    <!-- 3x4 Metrics Grid -->
+    <div class="grid grid-cols-3 gap-y-8 gap-x-4 sm:gap-x-6">
 
-  <!-- 착공 후 경과일수 -->
-  <section class="panel construction-panel" aria-label="착공 후 경과일수">
-    <div class="panel-label">PROJECT TIMELINE · 착공 후 경과일수</div>
-    <div class="construction-counter">
-      <span id="constructionDays">0</span><span class="hero-unit">일째</span>
-    </div>
-    <p class="hero-sub" id="constructionStartText">착공일 데이터 불러오는 중…</p>
-  </section>
+      <!-- Row 1: 기온 / 체감온도 / 습도 -->
+      <div class="flex flex-col">
+        <div id="val-temp" class="metric-val text-[#FB7185]">40.0</div>
+        <div class="label-text">기온 (℃)</div>
+      </div>
 
-  <!-- 날씨/환경 -->
-  <section class="panel" aria-label="현재 날씨 및 대기환경">
-    <div class="panel-label">ENVIRONMENT · 현장 날씨·대기환경</div>
-    <div class="weather-grid" id="weatherGrid">
-      <div class="weather-item">
-        <span class="weather-value" id="wTemp">–</span>
-        <span class="weather-key">기온 (°C)</span>
+      <div class="flex flex-col">
+        <div id="val-apparent" class="metric-val text-[#FB7185]">40.1</div>
+        <div class="label-text">체감온도 (℃)</div>
       </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wFeels">–</span>
-        <span class="weather-key">체감온도 (°C)</span>
+
+      <div class="flex flex-col">
+        <div id="val-humidity" class="metric-val text-[#38BDF8]">16</div>
+        <div class="label-text">습도 (%)</div>
       </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wHumidity">–</span>
-        <span class="weather-key">습도 (%)</span>
+
+      <!-- Row 2: 풍속 / 풍향 / 미세먼지 -->
+      <div class="flex flex-col">
+        <div id="val-windspeed" class="metric-val text-[#2DD4BF]">8.8</div>
+        <div class="label-text">풍속 (m/s)</div>
       </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wWind">–</span>
-        <span class="weather-key">풍속 (m/s)</span>
-      </div>
-      <div class="weather-item weather-item-wind">
-        <span class="weather-value wind-compass-value">
-          <svg id="windArrow" class="wind-arrow" viewBox="0 0 24 24" style="transform: rotate(0deg);">
-            <path d="M12 2 L18 14 L12 10.5 L6 14 Z" fill="currentColor"/>
+
+      <div class="flex flex-col">
+        <div class="flex items-center gap-1.5 text-[28px] sm:text-[32px] font-bold leading-none tracking-tight text-[#34D399]">
+          <svg id="val-windarrow" class="w-5 h-5 fill-current transform inline-block transition-transform duration-500" style="transform: rotate(279deg);" viewBox="0 0 24 24">
+            <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/>
           </svg>
-          <span id="wWindDir">–</span>
-        </span>
-        <span class="weather-key">풍향</span>
+          <span id="val-winddir">W (279°)</span>
+        </div>
+        <div class="label-text">풍향</div>
       </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wPm10">–</span>
-        <span class="weather-key">미세먼지 PM10 (㎍/㎥)</span>
+
+      <div class="flex flex-col">
+        <div id="val-pm10" class="metric-val text-[#FBBF24]">71</div>
+        <div class="label-text">미세먼지 PM10 (µg/㎥)</div>
       </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wPm25">–</span>
-        <span class="weather-key">초미세먼지 PM2.5 (㎍/㎥)</span>
+
+      <!-- Row 3: 초미세먼지 / 자외선 지수 (차분한 보라색) / 오존 -->
+      <div class="flex flex-col">
+        <div id="val-pm25" class="metric-val text-[#FB923C]">30</div>
+        <div class="label-text">초미세먼지 PM2.5 (µg/㎥)</div>
       </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wUv">–</span>
-        <span class="weather-key">자외선 지수 (UV)</span>
+
+      <!-- 자외선 지수: 차분한 바이올렛(#A78BFA) 및 소프트 라벤더 라벨(#C4B5FD) -->
+      <div class="flex flex-col">
+        <div class="flex items-baseline gap-1.5 leading-none">
+          <span id="val-uv" class="metric-val text-[#A78BFA]">6.2</span>
+          <span id="val-uv-label" class="text-base sm:text-lg font-semibold text-[#C4B5FD]">(높음)</span>
+        </div>
+        <div class="label-text">자외선 지수 (UV)</div>
       </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wOzone">–</span>
-        <span class="weather-key">오존 O₃ (㎍/㎥)</span>
+
+      <div class="flex flex-col">
+        <div id="val-o3" class="metric-val text-[#2DD4BF]">111</div>
+        <div class="label-text">오존 O₃ (µg/㎥)</div>
       </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wSunrise">–</span>
-        <span class="weather-key">일출</span>
+
+      <!-- Row 4: 일출 / 일몰 / 강수확률 -->
+      <div class="flex flex-col">
+        <div id="val-sunrise" class="metric-val text-[#FDE68A]">05:50</div>
+        <div class="label-text">일출</div>
       </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wSunset">–</span>
-        <span class="weather-key">일몰</span>
+
+      <div class="flex flex-col">
+        <div id="val-sunset" class="metric-val text-[#FDE68A]">17:57</div>
+        <div class="label-text">일몰</div>
       </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wRainChance">–</span>
-        <span class="weather-key">강수확률 (%)</span>
+
+      <div class="flex flex-col">
+        <div id="val-pop" class="metric-val text-[#38BDF8]">0%</div>
+        <div class="label-text">강수확률 (%)</div>
       </div>
+
     </div>
-    <p class="source-note">Open-Meteo 실시간 기상·대기질 API 연동 · 비스마야(33.19°N, 44.62°E) 기준</p>
-  </section>
 
-  <!-- 안전 지표 -->
-  <section class="panel" aria-label="안전 지표">
-    <div class="panel-label">SAFETY METRICS · 안전 지표</div>
-    <ul class="metric-list" id="metricList">
-      <li class="metric-row skeleton">데이터 불러오는 중…</li>
-    </ul>
-  </section>
-
-  <!-- 부서별 사고 현황 -->
-  <section class="panel incident-dept-panel" aria-label="부서별 사고 현황">
-    <div class="panel-label">INCIDENTS BY DEPT · 부서별 사고 현황</div>
-    <ul class="metric-list" id="incidentDeptList">
-      <li class="metric-row skeleton">데이터 불러오는 중…</li>
-    </ul>
-  </section>
-
-  <!-- 국내 온열질환 현황 -->
-  <section class="panel heat-illness-panel" aria-label="국내 온열질환 현황">
-    <div class="panel-label">DOMESTIC HEAT ILLNESS · 국내 온열질환 현황 (질병관리청)</div>
-    <div class="heat-illness-summary">
-      <div class="heat-illness-total">
-        <span id="heatIllnessTotal">–</span><span class="hero-unit">건</span>
-      </div>
-      <p class="hero-sub" id="heatIllnessMeta">데이터 불러오는 중…</p>
+    <!-- Footer -->
+    <div class="mt-9 pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[11px] sm:text-[12px] text-slate-500 font-normal">
+      <span>Open-Meteo 실시간 기상·대기질 API 연동 · 비스마야(33.19°N, 44.62°E) 기준</span>
+      <span id="val-updated-time" class="text-slate-500 font-mono-num">동기화 완료</span>
     </div>
-    <ul class="metric-list" id="heatIllnessRegionList">
-      <li class="metric-row skeleton">지역별 데이터 불러오는 중…</li>
-    </ul>
-    <p class="source-note" id="heatIllnessNote" style="display:none;"></p>
-  </section>
 
-  <!-- 전국 건설업 중대재해 (연간 누적) -->
-  <section class="panel disaster-panel" aria-label="전국 건설업 중대재해 현황">
-    <div class="panel-label">NATIONWIDE DISASTER · 전국 건설업 중대재해 (한국산업안전보건공단)</div>
-    <div class="heat-illness-summary">
-      <div class="heat-illness-total">
-        <span id="disasterTotal">–</span><span class="hero-unit">건</span>
-      </div>
-      <p class="hero-sub" id="disasterMeta">데이터 불러오는 중…</p>
-    </div>
-    <ul class="metric-list" id="disasterTypeList">
-      <li class="metric-row skeleton">유형별 데이터 불러오는 중…</li>
-    </ul>
-    <div class="panel-label" style="margin-top:18px;">RECENT · 최근 사고</div>
-    <ul class="notice-list" id="disasterList">
-      <li class="notice-row skeleton">데이터 불러오는 중…</li>
-    </ul>
-  </section>
+  </div>
 
-  <!-- 공지사항 -->
-  <section class="panel notices-panel" aria-label="공지사항 및 알림">
-    <div class="panel-label">NOTICES · 공지사항 / 알림</div>
-    <ul class="notice-list" id="noticeList">
-      <li class="notice-row skeleton">공지사항 불러오는 중…</li>
-    </ul>
-  </section>
+  <!-- Open-Meteo Realtime Fetching Script -->
+  <script>
+    const LAT = 33.19;
+    const LON = 44.62;
+    const TIMEZONE = "Asia/Baghdad";
 
-  <!-- 비상연락망 -->
-  <section class="panel contacts-panel" aria-label="비상연락망">
-    <div class="panel-label">EMERGENCY · 비상연락망</div>
-    <div class="contact-warning">※ 아래 연락처는 예시 값이 포함되어 있을 수 있습니다. 배포 전 <code>data.json</code>에서 반드시 실제 연락처로 교체하세요.</div>
-    <ul class="contact-list" id="contactList">
-      <li class="contact-row skeleton">연락망 불러오는 중…</li>
-    </ul>
-  </section>
+    function getWindDirection(deg) {
+      const dirs = ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW'];
+      const index = Math.round(deg / 22.5) % 16;
+      return dirs[index];
+    }
 
-</main>
-</div>
+    function getUVLevel(uv) {
+      if (uv >= 11) return '(위험)';
+      if (uv >= 8)  return '(매우높음)';
+      if (uv >= 6)  return '(높음)';
+      if (uv >= 3)  return '(보통)';
+      return '(낮음)';
+    }
 
-<div id="view-embassy" class="view">
-<main class="grid">
-  <section class="panel embassy-panel" aria-label="대사관 안전공지" style="grid-column: 1 / -1;">
-    <div class="panel-label">EMBASSY NOTICE · 주이라크 대한민국대사관 안전공지</div>
-    <ul class="embassy-list" id="embassyList">
-      <li class="embassy-row skeleton">안전공지 불러오는 중…</li>
-    </ul>
-    <p class="source-note" id="embassyMeta">외교부 공공데이터 API 연동 · 매일 자동 갱신</p>
-  </section>
+    async function fetchEnvironmentData() {
+      try {
+        const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation_probability,wind_speed_10m,wind_direction_10m,uv_index&daily=sunrise,sunset&timezone=${encodeURIComponent(TIMEZONE)}`;
+        const airUrl = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${LAT}&longitude=${LON}&current=pm10,pm2_5,ozone&timezone=${encodeURIComponent(TIMEZONE)}`;
 
-  <!-- WHO 전세계 감염병 발생 정보 -->
-  <section class="panel embassy-panel" aria-label="WHO 전세계 감염병 발생 정보" style="grid-column: 1 / -1;">
-    <div class="panel-label">WHO OUTBREAK NEWS · 전세계 감염병 발생 정보</div>
-    <ul class="embassy-list" id="whoOutbreakList">
-      <li class="embassy-row skeleton">데이터 불러오는 중…</li>
-    </ul>
-    <p class="source-note" id="whoOutbreakMeta">World Health Organization 공식 API 연동 · 매일 자동 갱신</p>
-  </section>
+        const [weatherRes, airRes] = await Promise.all([
+          fetch(weatherUrl),
+          fetch(airUrl)
+        ]);
 
-  <!-- 국내 뉴스: 의학 / 질병 / 사고 -->
-  <section class="panel embassy-panel" aria-label="국내 뉴스 (의학·질병·사고)" style="grid-column: 1 / -1;">
-    <div class="panel-label">DOMESTIC NEWS · 국내 뉴스 (의학 · 질병 · 사고)</div>
-    <ul class="embassy-list" id="domesticNewsList">
-      <li class="embassy-row skeleton">뉴스 불러오는 중…</li>
-    </ul>
-    <p class="source-note" id="domesticNewsMeta">Google 뉴스 검색 연동 · 매일 자동 갱신</p>
-  </section>
+        if (!weatherRes.ok || !airRes.ok) throw new Error("API 요청 실패");
 
-  <!-- 질병관리청 · 보건복지부 소식 -->
-  <section class="panel embassy-panel" aria-label="질병관리청 · 보건복지부 소식" style="grid-column: 1 / -1;">
-    <div class="panel-label">HEALTH AUTHORITY · 질병관리청 · 보건복지부 소식</div>
-    <ul class="embassy-list" id="healthAuthorityNewsList">
-      <li class="embassy-row skeleton">소식 불러오는 중…</li>
-    </ul>
-    <p class="source-note" id="healthAuthorityNewsMeta">질병관리청·보건복지부 공식 도메인 검색 연동 · 매일 자동 갱신</p>
-  </section>
-</main>
-</div>
+        const weatherData = await weatherRes.json();
+        const airData = await airRes.json();
 
-<div id="view-procedures" class="view">
-<main class="grid">
-  <section class="panel procedure-panel" aria-label="안전작업절차서" style="grid-column: 1 / -1;">
-    <div class="panel-label">SAFE WORK PROCEDURES · 공종별 안전작업절차서</div>
-    <div id="procedureContainer">
-      <p class="skeleton">목록 불러오는 중…</p>
-    </div>
-  </section>
-</main>
-</div>
+        // 1. Weather Current
+        const cur = weatherData.current;
+        if (cur) {
+          if (cur.temperature_2m !== undefined) document.getElementById('val-temp').innerText = Number(cur.temperature_2m).toFixed(1);
+          if (cur.apparent_temperature !== undefined) document.getElementById('val-apparent').innerText = Number(cur.apparent_temperature).toFixed(1);
+          if (cur.relative_humidity_2m !== undefined) document.getElementById('val-humidity').innerText = Math.round(cur.relative_humidity_2m);
+          if (cur.wind_speed_10m !== undefined) {
+            // km/h to m/s
+            const ms = (cur.wind_speed_10m / 3.6).toFixed(1);
+            document.getElementById('val-windspeed').innerText = ms;
+          }
+          if (cur.wind_direction_10m !== undefined) {
+            const deg = Math.round(cur.wind_direction_10m);
+            const dir = getWindDirection(deg);
+            document.getElementById('val-winddir').innerText = `${dir} (${deg}°)`;
+            document.getElementById('val-windarrow').style.transform = `rotate(${deg}deg)`;
+          }
+          if (cur.precipitation_probability !== undefined) {
+            document.getElementById('val-pop').innerText = `${Math.round(cur.precipitation_probability)}%`;
+          }
+          if (cur.uv_index !== undefined) {
+            const uv = Number(cur.uv_index).toFixed(1);
+            document.getElementById('val-uv').innerText = uv;
+            document.getElementById('val-uv-label').innerText = getUVLevel(Number(uv));
+          }
+        }
 
-<div id="view-accidents" class="view">
-<main class="grid">
-  <section class="panel procedure-panel" aria-label="사고사례" style="grid-column: 1 / -1;">
-    <div class="panel-label">ACCIDENT CASES · 당사/타사 사고사례</div>
-    <div id="accidentContainer">
-      <p class="skeleton">목록 불러오는 중…</p>
-    </div>
-  </section>
-</main>
-</div>
+        // 2. Air Quality Current
+        const air = airData.current;
+        if (air) {
+          if (air.pm10 !== undefined) document.getElementById('val-pm10').innerText = Math.round(air.pm10);
+          if (air.pm2_5 !== undefined) document.getElementById('val-pm25').innerText = Math.round(air.pm2_5);
+          if (air.ozone !== undefined) document.getElementById('val-o3').innerText = Math.round(air.ozone);
+        }
 
-<div id="view-workzone" class="view">
-<main class="grid">
-  <section class="panel workzone-panel" aria-label="작업구역 현황" style="grid-column: 1 / -1;">
-    <div class="panel-label">WORK ZONES · 작업구역 현황</div>
-    <div class="workzone-legend">
-      <span class="wz-legend-item"><span class="wz-dot wz-status-진행중"></span>진행중</span>
-      <span class="wz-legend-item"><span class="wz-dot wz-status-완료"></span>완료</span>
-      <span class="wz-legend-item"><span class="wz-dot wz-status-계획중"></span>계획중</span>
-    </div>
-    <div id="workzoneMapWrap" class="workzone-map-wrap">
-      <p class="skeleton">지도/구역 데이터 불러오는 중…</p>
-    </div>
-    <p class="source-note">위성사진 위에 표시된 점을 클릭하면 구역 상세정보가 나옵니다. 지도와 구역 정보는 work-zones.json에서 수정할 수 있습니다.</p>
-  </section>
-</main>
-</div>
+        // 3. Daily Sunrise / Sunset
+        if (weatherData.daily && weatherData.daily.sunrise && weatherData.daily.sunset) {
+          const sunrise = weatherData.daily.sunrise[0]?.split('T')[1]?.substring(0, 5);
+          const sunset = weatherData.daily.sunset[0]?.split('T')[1]?.substring(0, 5);
+          if (sunrise) document.getElementById('val-sunrise').innerText = sunrise;
+          if (sunset) document.getElementById('val-sunset').innerText = sunset;
+        }
 
-<footer class="footer">
-  <span>© 한화 건설부문 · Bismayah New City Project</span>
+        const now = new Date();
+        const timeStr = now.toTimeString().substring(0, 5);
+        document.getElementById('val-updated-time').innerText = `최근 갱신: ${timeStr}`;
+        document.getElementById('status-text').innerText = '정상 연동';
+      } catch (err) {
+        console.warn("실시간 연동 대기 (기본값 표시):", err);
+        document.getElementById('status-text').innerText = '기준 데이터';
+      }
+    }
 
-  <span id="lastUpdated">마지막 갱신: –</span>
-</footer>
-
-<script src="script.js"></script>
-
-<!-- 구글 웹사이트 번역 위젯 -->
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: 'ko', includedLanguages: 'en,ko,ar', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false },
-    'google_translate_element'
-  );
-}
-</script>
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+    // 초기 실행 및 10분 주기 자동 동기화
+    fetchEnvironmentData();
+    setInterval(fetchEnvironmentData, 600000);
+  </script>
 </body>
 </html>
