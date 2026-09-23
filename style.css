@@ -242,8 +242,6 @@ code {
   height: auto;
   display: block;
   border-radius: 0;
-  border: 2px solid #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.55);
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 }
@@ -621,6 +619,12 @@ code {
   font-weight: 700;
   color: var(--cyan);
   line-height: 1.3;
+  /* 이 요소는 화살표 아이콘 + 풍향 텍스트를 가로로 나란히 담는 컨테이너이므로
+     column으로 바꾸면 화살표까지 같이 세로로 밀려버린다.
+     세로 2줄 배치는 안쪽 텍스트(#wWindDir)에만 적용한다. */
+}
+
+#wWindDir {
   display: flex;
   flex-direction: column;
 }
