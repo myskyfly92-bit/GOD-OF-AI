@@ -252,6 +252,13 @@ function storeDailyForecastForCalendar(daily) {
           icon.title = `최고 ${Math.round(fc.tmax)}° / 최저 ${Math.round(fc.tmin)}°`;
         }
         cell.appendChild(icon);
+
+        if (fc.tmax !== null && fc.tmax !== undefined && fc.tmin !== null && fc.tmin !== undefined) {
+          const temp = document.createElement("span");
+          temp.className = "holiday-temp";
+          temp.innerHTML = `<span class="holiday-temp-max">${Math.round(fc.tmax)}°</span>/<span class="holiday-temp-min">${Math.round(fc.tmin)}°</span>`;
+          cell.appendChild(temp);
+        }
       }
 
       if (krName || iqName) {

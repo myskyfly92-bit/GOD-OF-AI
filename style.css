@@ -890,7 +890,7 @@ code {
 
 .holiday-cell {
   aspect-ratio: auto;
-  min-height: 58px;
+  min-height: 70px;
   padding: 4px 0;
   display: flex;
   flex-direction: column;
@@ -908,6 +908,16 @@ code {
   font-size: 12px;
   line-height: 1;
 }
+
+.holiday-temp {
+  font-size: 9px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.holiday-temp-max { color: var(--amber); }
+.holiday-temp-min { color: var(--blue); }
 
 .holiday-cell.is-empty { visibility: hidden; }
 .holiday-cell.is-today { background: rgba(53, 208, 192, 0.18); color: var(--cyan); font-weight: 700; }
