@@ -638,8 +638,14 @@ function alignSideWidgets() {
     return;
   }
 
-  const gridRight = gridEl.getBoundingClientRect().right;
+  const gridRect = gridEl.getBoundingClientRect();
+  const gridRight = gridRect.right;
   const gap = 20;
+
+  // 달력은 카드 첫 줄과 위쪽 높이를 맞춘다
+  if (holidayPanel) {
+    holidayPanel.style.top = `${Math.round(gridRect.top)}px`;
+  }
 
   [holidayPanel, fxWidget].forEach((el) => {
     if (!el) return;
