@@ -150,7 +150,7 @@ code {
 .brand-text p {
   margin: 3px 0 0;
   font-family: var(--font-mono);
-  font-size: 11.5px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -226,7 +226,7 @@ code {
 
 .date {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 13px;
   color: var(--text-muted);
   margin-top: 2px;
 }
@@ -362,7 +362,7 @@ code {
 
 .embassy-toggle {
   font-family: var(--font-mono);
-  font-size: 11.5px;
+  font-size: 13px;
   color: var(--cyan);
   background: transparent;
   border: none;
@@ -380,7 +380,7 @@ code {
 
 .embassy-link {
   font-family: var(--font-mono);
-  font-size: 11.5px;
+  font-size: 13px;
   color: var(--cyan);
   text-decoration: none;
 }
@@ -415,7 +415,7 @@ code {
 
 .panel-label {
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 13px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-dim);
@@ -487,7 +487,7 @@ code {
 }
 
 .substat-label {
-  font-size: 11.5px;
+  font-size: 13px;
   color: var(--text-muted);
 }
 
@@ -532,7 +532,7 @@ code {
 .heat-scale-seg {
   text-align: center;
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 12px;
   letter-spacing: 0.04em;
   padding: 6px 0;
   border-radius: 5px;
@@ -618,7 +618,7 @@ code {
 
 .source-note {
   margin: 18px 0 0;
-  font-size: 10.5px;
+  font-size: 13px;
   color: var(--text-dim);
 }
 
@@ -648,7 +648,7 @@ code {
 
 .metric-detail {
   color: var(--text-dim);
-  font-size: 11.5px;
+  font-size: 13px;
 }
 
 /* ---------- 공지사항 ---------- */
@@ -685,7 +685,7 @@ code {
 
 .notice-date {
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 13px;
   color: var(--text-dim);
   white-space: nowrap;
 }
@@ -695,7 +695,7 @@ code {
 .notice-tag {
   display: inline-block;
   font-family: var(--font-mono);
-  font-size: 9.5px;
+  font-size: 11px;
   padding: 2px 6px;
   border-radius: 4px;
   margin-right: 6px;
@@ -734,7 +734,7 @@ code {
 
 .news-source {
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 13px;
   color: var(--text-dim);
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -742,7 +742,7 @@ code {
 
 .news-link {
   font-family: var(--font-mono);
-  font-size: 11.5px;
+  font-size: 13px;
   color: var(--cyan);
   text-decoration: none;
 }
@@ -751,7 +751,7 @@ code {
 
 /* ---------- 비상연락망 ---------- */
 .contact-warning {
-  font-size: 11.5px;
+  font-size: 13px;
   color: var(--danger);
   background: rgba(229, 72, 77, 0.08);
   border: 1px solid rgba(229, 72, 77, 0.3);
@@ -794,7 +794,7 @@ code {
      완전 중앙정렬 대신 왼쪽으로 살짝 치우쳐 정렬한다 */
   margin: 0 auto 0 max(20px, calc((100vw - 1360px) / 2 - 200px));
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 12.5px;
   color: var(--text-dim);
   border-top: 1px solid var(--border-soft);
 }
@@ -826,7 +826,7 @@ code {
 
 /* footer 안에서는 다른 텍스트들과 톤을 맞춰 살짝 더 작게 */
 .footer .family-site select {
-  font-size: 10.5px;
+  font-size: 12.5px;
   font-weight: 400;
   border-radius: 6px;
   padding: 5px 10px;
@@ -915,7 +915,7 @@ code {
 }
 
 .holiday-temp {
-  font-size: 9px;
+  font-size: 10.5px;
   line-height: 1;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -991,7 +991,7 @@ code {
 
 .holiday-note {
   margin: 10px 0 0;
-  font-size: 9.5px;
+  font-size: 13px;
   line-height: 1.5;
   color: var(--text-dim);
 }
@@ -1136,7 +1136,7 @@ a:focus-visible, button:focus-visible {
 
 .wz-schedule-cat-badge {
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 700;
   padding: 3px 10px;
   border-radius: 999px;
@@ -1288,7 +1288,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .wz-zoom-hint {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--text-dim);
   margin-left: 6px;
 }
@@ -1428,7 +1428,7 @@ body.bg-procedures {
 
 .fx-updated {
   margin-top: 10px;
-  font-size: 10.5px;
+  font-size: 13px;
   color: var(--text-dim);
   text-align: right;
 }
