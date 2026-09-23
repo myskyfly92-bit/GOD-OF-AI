@@ -757,10 +757,12 @@ function alignSideWidgets() {
     holidayPanel.style.top = `${Math.round(firstPanel.getBoundingClientRect().top + scrollY)}px`;
   }
 
-  // 좌우 여백이 같아지도록 달력 폭을 계산: (뷰포트 폭) - (카드 오른쪽 끝 + 간격) - (왼쪽 여백)
+  // 좌우 여백이 완전히 같아지도록 달력 폭을 계산: (뷰포트 폭) - (카드 오른쪽 끝 + 간격) - (왼쪽 여백)
+  // 예전엔 460px 상한을 둬서 화면이 넓을 때 오른쪽 여백이 왼쪽보다 남아버리는 문제가 있었음 —
+  // 좌우 여백을 정확히 맞추는 게 우선이므로 상한은 넉넉하게 풀어둔다.
   const left = gridRight + gap;
   const minWidth = 220;
-  const maxWidth = 460; // 너무 밑도 끝도 없이 넓어지지 않도록 상한
+  const maxWidth = 900; // 지나치게 넓어지는 것만 막는 넉넉한 상한
   let calendarWidth = window.innerWidth - left - gridLeft;
   calendarWidth = Math.max(minWidth, Math.min(maxWidth, calendarWidth));
 
