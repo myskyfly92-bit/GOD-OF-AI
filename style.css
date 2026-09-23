@@ -828,9 +828,10 @@ code {
 }
 
 /* ---------- 공휴일 달력 위젯 ---------- */
-.holiday-widget {
-  position: relative;
-}
+/* .holiday-widget 래퍼에는 position을 주지 않는다 — 위치 기준이 이
+   래퍼가 아니라 문서(페이지) 전체여야 script.js가 계산한 절대좌표가
+   정확히 맞는다. (예전에 남아있던 position:relative 때문에 .holiday-panel의
+   절대좌표가 이 작은 래퍼 기준으로 재계산되면서 화면 밖으로 밀려나던 버그가 있었음) */
 
 .holiday-panel {
   position: absolute; /* 페이지 스크롤과 함께 움직이도록(고정 X) */
