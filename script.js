@@ -733,12 +733,15 @@ function alignSideWidgets() {
   const gridRight = gridRect.right;
   const gridLeft = gridRect.left; // 콘텐츠 왼쪽 여백 폭 (이 값과 오른쪽 여백을 같게 맞춘다)
   const gap = 20;
+  const scrollX = window.scrollX || window.pageXOffset || 0;
+  const scrollY = window.scrollY || window.pageYOffset || 0;
 
   // 달력은 grid 컨테이너 자체가 아니라, 실제 카드(첫 패널)의 위쪽 끝과 높이를 맞춘다
   // (grid에는 위쪽 padding이 있어서 컨테이너 기준으로 맞추면 그만큼 더 위에 위치하게 됨)
+  // position:absolute라 문서 좌표(스크롤 오프셋 포함)로 넣어야 페이지와 같이 스크롤된다.
   const firstPanel = gridEl.querySelector(".panel");
   if (holidayPanel && firstPanel) {
-    holidayPanel.style.top = `${Math.round(firstPanel.getBoundingClientRect().top)}px`;
+    holidayPanel.style.top = `${Math.round(firstPanel.getBoundingClientRect().top + scrollY)}px`;
   }
 
   // 좌우 여백이 같아지도록 달력 폭을 계산: (뷰포트 폭) - (카드 오른쪽 끝 + 간격) - (왼쪽 여백)
@@ -754,7 +757,7 @@ function alignSideWidgets() {
     if (!el) return;
 
     if (fitsOnScreen) {
-      el.style.left = `${Math.round(left)}px`;
+      el.style.left = `${Math.round(left + scrollX)}px`;
       el.style.width = `${Math.round(calendarWidth)}px`;
       el.style.display = "";
     } else {
@@ -768,7 +771,7 @@ function alignSideWidgets() {
   // (달력에 표시되는 공휴일 개수·아이콘 등에 따라 높이가 달마다 달라지므로
   // 매번 다시 측정해야 겹치지 않는다)
   if (fitsOnScreen && holidayPanel && fxWidget && holidayPanel.style.display !== "none") {
-    const holidayBottom = holidayPanel.getBoundingClientRect().bottom;
+    const holidayBottom = holidayPanel.getBoundingClientRect().bottom + scrollY;
     fxWidget.style.bottom = "auto";
     fxWidget.style.top = `${Math.round(holidayBottom + gap)}px`;
   }
