@@ -254,7 +254,9 @@ code {
   gap: 8px;
   padding: 14px 32px 0;
   max-width: 1360px;
-  margin: 0 auto;
+  /* 오른쪽에 달력/환율 위젯이 들어갈 여백을 항상 확보하기 위해
+     완전 중앙정렬 대신 왼쪽으로 살짝 치우쳐 정렬한다 */
+  margin: 0 auto 0 max(20px, calc((100vw - 1360px) / 2 - 200px));
 }
 
 /* ---------- 자체 제작 언어 전환 버튼 (탭 바 오른쪽 끝) ---------- */
@@ -385,7 +387,9 @@ code {
   gap: 20px;
   padding: 28px 32px 40px;
   max-width: 1360px;
-  margin: 0 auto;
+  /* 오른쪽에 달력/환율 위젯이 들어갈 여백을 항상 확보하기 위해
+     완전 중앙정렬 대신 왼쪽으로 살짝 치우쳐 정렬한다 */
+  margin: 0 auto 0 max(20px, calc((100vw - 1360px) / 2 - 200px));
 }
 
 @media (max-width: 980px) {
@@ -762,7 +766,9 @@ code {
   gap: 8px;
   padding: 18px 32px 30px;
   max-width: 1360px;
-  margin: 0 auto;
+  /* 오른쪽에 달력/환율 위젯이 들어갈 여백을 항상 확보하기 위해
+     완전 중앙정렬 대신 왼쪽으로 살짝 치우쳐 정렬한다 */
+  margin: 0 auto 0 max(20px, calc((100vw - 1360px) / 2 - 200px));
   font-family: var(--font-mono);
   font-size: 10.5px;
   color: var(--text-dim);
