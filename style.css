@@ -833,7 +833,7 @@ code {
 }
 
 .holiday-panel {
-  position: fixed;
+  position: absolute; /* 페이지 스크롤과 함께 움직이도록(고정 X) */
   top: 132px;
   /* left 값은 script.js에서 .grid 우측 끝 좌표를 실측해 정확히 계산해 넣는다 */
   width: 220px;
@@ -919,8 +919,8 @@ code {
 }
 
 .holiday-dot {
-  width: 5px;
-  height: 5px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   display: inline-block;
 }
@@ -932,7 +932,7 @@ code {
   display: flex;
   gap: 14px;
   margin-top: 10px;
-  font-size: 10.5px;
+  font-size: 13px;
   color: var(--text-muted);
 }
 
@@ -1362,9 +1362,8 @@ body.bg-procedures {
 
 /* ---------- 환율 위젯 (화면 우측 하단 고정) ---------- */
 .fx-widget {
-  position: fixed;
-  /* left/width 값은 script.js에서 .grid 우측 끝 좌표를 실측해 정확히 계산해 넣는다 */
-  bottom: 20px;
+  position: absolute; /* 페이지 스크롤과 함께 움직이도록(고정 X) */
+  /* left/width/top 값은 script.js에서 계산해 넣는다 */
   z-index: 150;
   width: 230px;
   background: linear-gradient(180deg, var(--panel), var(--panel-2));
