@@ -526,8 +526,8 @@ async function loadWeather() {
     document.getElementById("wHumidity").textContent = c.relative_humidity_2m ?? "–";
     document.getElementById("wWind").textContent = c.wind_speed_10m?.toFixed(1) ?? "–";
     updateWindDirection(c.wind_direction_10m);
-    document.getElementById("wPm10").textContent = a.pm10?.toFixed(0) ?? "–";
-    document.getElementById("wPm25").textContent = a.pm2_5?.toFixed(0) ?? "–";
+    updateAirQualityGrade("wPm10", a.pm10, PM10_GRADES);
+    updateAirQualityGrade("wPm25", a.pm2_5, PM25_GRADES);
     document.getElementById("wOzone").textContent = a.ozone?.toFixed(0) ?? "–";
     updateUvIndex(a.uv_index);
 
@@ -559,6 +559,12 @@ const WIND_COMPASS = [
   "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"
 ];
 
+// 어르신들도 바로 이해하실 수 있도록 한글 풍향 이름도 같이 표기
+const WIND_COMPASS_KO = [
+  "북풍", "북북동풍", "북동풍", "동북동풍", "동풍", "동남동풍", "남동풍", "남남동풍",
+  "남풍", "남남서풍", "남서풍", "서남서풍", "서풍", "서북서풍", "북서풍", "북북서풍"
+];
+
 function updateWindDirection(deg) {
   const arrow = document.getElementById("windArrow");
   const label = document.getElementById("wWindDir");
@@ -570,7 +576,38 @@ function updateWindDirection(deg) {
   // (Open-Meteo의 deg 값은 '불어오는 방향' 기준이라 180도 반전해서 사용합니다.)
   if (arrow) arrow.style.transform = `rotate(${deg + 180}deg)`;
   const idx = Math.round(deg / 22.5) % 16;
-  if (label) label.textContent = `${WIND_COMPASS[idx]} (${Math.round(deg)}°)`;
+  if (label) {
+    label.innerHTML =
+      `<span class="wind-compass-deg">${WIND_COMPASS[idx]} (${Math.round(deg)}°)</span>` +
+      `<span class="wind-compass-ko">${WIND_COMPASS_KO[idx]}</span>`;
+  }
+}
+
+/* 국내 환경부 대기환경기준 등급 (24시간 평균 기준, ㎍/㎥) */
+const PM10_GRADES = [
+  { max: 30, label: "좋음", color: "var(--cyan)" },
+  { max: 80, label: "보통", color: "var(--green)" },
+  { max: 150, label: "나쁨", color: "var(--warn)" },
+  { max: Infinity, label: "매우나쁨", color: "var(--danger)" },
+];
+const PM25_GRADES = [
+  { max: 15, label: "좋음", color: "var(--cyan)" },
+  { max: 35, label: "보통", color: "var(--green)" },
+  { max: 75, label: "나쁨", color: "var(--warn)" },
+  { max: Infinity, label: "매우나쁨", color: "var(--danger)" },
+];
+
+function updateAirQualityGrade(elementId, value, grades) {
+  const el = document.getElementById(elementId);
+  if (!el) return;
+  if (value === undefined || value === null || isNaN(value)) {
+    el.textContent = "–";
+    el.style.color = "";
+    return;
+  }
+  const grade = grades.find((g) => value <= g.max) || grades[grades.length - 1];
+  el.textContent = `${value.toFixed(0)} (${grade.label})`;
+  el.style.color = grade.color;
 }
 
 function updateUvIndex(uv) {
@@ -733,12 +770,28 @@ function alignSideWidgets() {
     if (holidayPanel) holidayPanel.style.left = "";
     if (fxWidget) fxWidget.style.left = "";
     if (fxWidget) fxWidget.style.display = "";
+    const rightGroupMobile = document.getElementById("tabbarRightGroup");
+    if (rightGroupMobile) {
+      rightGroupMobile.style.position = "static";
+      rightGroupMobile.style.left = "";
+      rightGroupMobile.style.top = "";
+      rightGroupMobile.style.marginLeft = "auto";
+    }
     return;
   }
 
-  const gridRect = gridEl.getBoundingClientRect();
-  const gridRight = gridRect.right;
-  const gridLeft = gridRect.left; // 콘텐츠 왼쪽 여백 폭 (이 값과 오른쪽 여백을 같게 맞춘다)
+  // .grid 컨테이너 자체의 경계가 아니라, 실제 카드(패널)들의 경계를 기준으로 잡는다.
+  // (.grid에는 좌우 padding(32px)이 있어서 컨테이너 기준으로 재면 카드 테두리보다
+  //  32px 더 바깥쪽이 기준점이 되어 버려, 카드-카드 간격보다 카드-달력 간격이
+  //  더 벌어져 보이는 버그가 있었다)
+  const panels = gridEl.querySelectorAll(".panel");
+  let gridRight = gridEl.getBoundingClientRect().right;
+  let gridLeft = gridEl.getBoundingClientRect().left;
+  if (panels.length) {
+    const rects = Array.from(panels).map((p) => p.getBoundingClientRect());
+    gridRight = Math.max(...rects.map((r) => r.right));
+    gridLeft = Math.min(...rects.map((r) => r.left));
+  }
   const gap = 20;
   const scrollX = window.scrollX || window.pageXOffset || 0;
   const scrollY = window.scrollY || window.pageYOffset || 0;
@@ -751,10 +804,12 @@ function alignSideWidgets() {
     holidayPanel.style.top = `${Math.round(firstPanel.getBoundingClientRect().top + scrollY)}px`;
   }
 
-  // 좌우 여백이 같아지도록 달력 폭을 계산: (뷰포트 폭) - (카드 오른쪽 끝 + 간격) - (왼쪽 여백)
+  // 좌우 여백이 완전히 같아지도록 달력 폭을 계산: (뷰포트 폭) - (카드 오른쪽 끝 + 간격) - (왼쪽 여백)
+  // 예전엔 460px 상한을 둬서 화면이 넓을 때 오른쪽 여백이 왼쪽보다 남아버리는 문제가 있었음 —
+  // 좌우 여백을 정확히 맞추는 게 우선이므로 상한은 넉넉하게 풀어둔다.
   const left = gridRight + gap;
   const minWidth = 220;
-  const maxWidth = 460; // 너무 밑도 끝도 없이 넓어지지 않도록 상한
+  const maxWidth = 900; // 지나치게 넓어지는 것만 막는 넉넉한 상한
   let calendarWidth = window.innerWidth - left - gridLeft;
   calendarWidth = Math.max(minWidth, Math.min(maxWidth, calendarWidth));
 
@@ -781,6 +836,29 @@ function alignSideWidgets() {
     const holidayBottom = holidayPanel.getBoundingClientRect().bottom + scrollY;
     fxWidget.style.bottom = "auto";
     fxWidget.style.top = `${Math.round(holidayBottom + gap)}px`;
+  }
+
+  // 언어 선택 + 패밀리사이트 그룹: 탭 바 자체의 오른쪽 끝이 아니라
+  // 달력의 오른쪽 끝에 맞춰서 정렬한다 (달력이 탭 바보다 더 오른쪽까지 있으므로).
+  const rightGroup = document.getElementById("tabbarRightGroup");
+  const tabBarEl = document.querySelector(".tab-bar");
+  if (rightGroup && tabBarEl) {
+    if (fitsOnScreen) {
+      const calendarRight = left + calendarWidth; // 달력의 실제 오른쪽 끝(뷰포트 기준)
+      const groupWidth = rightGroup.offsetWidth || 0;
+      const tabBarRect = tabBarEl.getBoundingClientRect();
+      const tabBarCenterY = tabBarRect.top + tabBarRect.height / 2;
+      const groupHeight = rightGroup.offsetHeight || 0;
+      rightGroup.style.left = `${Math.round(calendarRight - groupWidth + scrollX)}px`;
+      rightGroup.style.top = `${Math.round(tabBarCenterY - groupHeight / 2 + scrollY)}px`;
+      rightGroup.style.display = "";
+    } else {
+      // 달력 자체가 안 뜨는 좁은 화면에서는 탭 바 안의 원래 자리로 되돌린다
+      rightGroup.style.left = "";
+      rightGroup.style.top = "";
+      rightGroup.style.position = "static";
+      rightGroup.style.marginLeft = "auto";
+    }
   }
 }
 

@@ -267,11 +267,18 @@ code {
 }
 
 /* ---------- 자체 제작 언어 전환 버튼 (탭 바 오른쪽 끝) ---------- */
+.tabbar-right-group {
+  position: absolute; /* JS가 달력 오른쪽 끝에 맞춰 left/top을 계산해 넣는다 */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 60;
+}
+
 .lang-switcher {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-left: auto;
 }
 
 .lang-btn {
@@ -1011,6 +1018,7 @@ code {
 
 @media (max-width: 640px) {
   .holiday-panel { left: 12px; right: 12px; top: 200px; width: auto; }
+  .tabbar-right-group { position: static !important; margin-left: auto; }
 }
 
 /* ---------- Skeleton / loading ---------- */
