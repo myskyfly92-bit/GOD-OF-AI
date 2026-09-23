@@ -528,7 +528,7 @@ async function loadWeather() {
     updateWindDirection(c.wind_direction_10m);
     updateAirQualityGrade("wPm10", a.pm10, PM10_GRADES);
     updateAirQualityGrade("wPm25", a.pm2_5, PM25_GRADES);
-    document.getElementById("wOzone").textContent = a.ozone?.toFixed(0) ?? "–";
+    updateAirQualityGrade("wOzone", a.ozone, OZONE_GRADES);
     updateUvIndex(a.uv_index);
 
     updateHeatStatus(c.temperature_2m, c.apparent_temperature);
@@ -594,6 +594,15 @@ const PM25_GRADES = [
   { max: 15, label: "좋음", color: "var(--cyan)" },
   { max: 35, label: "보통", color: "var(--green)" },
   { max: 75, label: "나쁨", color: "var(--warn)" },
+  { max: Infinity, label: "매우나쁨", color: "var(--danger)" },
+];
+/* 오존(O3)은 환경부 기준이 ppm(0.030/0.090/0.150)으로 정의돼 있는데,
+   오픈메테오는 µg/㎥로 값을 주기 때문에 표준 변환식(µg/㎥ = ppb × 48/24.45)으로
+   환산한 값을 기준으로 사용한다. */
+const OZONE_GRADES = [
+  { max: 59, label: "좋음", color: "var(--cyan)" },
+  { max: 177, label: "보통", color: "var(--green)" },
+  { max: 295, label: "나쁨", color: "var(--warn)" },
   { max: Infinity, label: "매우나쁨", color: "var(--danger)" },
 ];
 
