@@ -57,7 +57,9 @@ async function findLatestArticleUrl() {
 // 구글 뉴스 RSS의 <link>는 실제 기사 주소가 아니라
 // "https://news.google.com/rss/articles/..." 형태의 리다이렉트 중간 페이지다.
 // 이 페이지의 HTML 안에는(자바스크립트를 실행하지 않아도) 실제 기사 주소가
-// og:url 메타태그나 data 속성 형태로 박혀 있는 경우가 많아, 그걸 정규식으로 찾는다.
+// og:url 메타태그나 data 속성, 또는 그냥 평문 링크 형태로 박혀 있는 경우가 많다.
+// 단, og:url 등이 구글 자기 자신(news.google.com)을 가리키는 경우가 있어서
+// "ajnet.me" 또는 "aljazeera.net" 도메인을 포함한 URL만 인정하도록 엄격히 제한한다.
 async function resolveRealArticleUrl(googleNewsUrl) {
   const res = await fetch(googleNewsUrl, {
     headers: { "User-Agent": "Mozilla/5.0 (compatible; BismayahHSEBot/1.0)" },
@@ -65,21 +67,17 @@ async function resolveRealArticleUrl(googleNewsUrl) {
   if (!res.ok) throw new Error(`구글 뉴스 리다이렉트 페이지 요청 실패: ${res.status}`);
   const html = await res.text();
 
-  const candidates = [
-    html.match(/<meta[^>]+property="og:url"[^>]+content="([^"]+)"/i),
-    html.match(/data-n-au="([^"]+)"/i),
-    html.match(/"url"\s*:\s*"(https?:\\?\/\\?\/(?:www\.)?(?:ajnet\.me|aljazeera\.net)[^"]*)"/i),
-    html.match(/href="(https?:\/\/(?:www\.)?ajnet\.me[^"]*)"/i),
-    html.match(/(https?:\/\/(?:www\.)?ajnet\.me\/[^\s"'<>]+)/i),
-    html.match(/(https?:\/\/(?:www\.)?aljazeera\.net\/[^\s"'<>]+)/i),
-  ].filter(Boolean);
+  // \/ 이스케이프(JSON 안에 있는 경우)까지 포함해서 ajnet.me / aljazeera.net URL을 전부 찾는다
+  const domainPattern = /https?:\\?\/\\?\/(?:www\.)?(?:ajnet\.me|aljazeera\.net)[^\s"'<>\\]*/gi;
+  const matches = html.match(domainPattern) || [];
 
-  if (!candidates.length) {
+  if (!matches.length) {
     throw new Error(
-      `구글 뉴스 리다이렉트 페이지에서 실제 기사 주소를 찾지 못했습니다. (중간 페이지: ${googleNewsUrl})`
+      `구글 뉴스 리다이렉트 페이지에서 실제 기사 주소(ajnet.me/aljazeera.net)를 찾지 못했습니다. (중간 페이지: ${googleNewsUrl})`
     );
   }
-  return decodeEntities(candidates[0][1]).replace(/\\\//g, "/");
+
+  return decodeEntities(matches[0]).replace(/\\\//g, "/");
 }
 
 async function main() {
