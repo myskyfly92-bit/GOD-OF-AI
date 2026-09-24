@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Puppeteer(헤드리스 크롬) 설치
+        run: npm install puppeteer@22
+
       - name: 시장환율 가져오기
         run: node scripts/fetch-market-fx.js
 
