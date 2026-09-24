@@ -54,8 +54,37 @@ async function findLatestArticleUrl() {
   return link;
 }
 
+// 구글 뉴스 RSS의 <link>는 실제 기사 주소가 아니라
+// "https://news.google.com/rss/articles/..." 형태의 리다이렉트 중간 페이지다.
+// 이 페이지의 HTML 안에는(자바스크립트를 실행하지 않아도) 실제 기사 주소가
+// og:url 메타태그나 data 속성 형태로 박혀 있는 경우가 많아, 그걸 정규식으로 찾는다.
+async function resolveRealArticleUrl(googleNewsUrl) {
+  const res = await fetch(googleNewsUrl, {
+    headers: { "User-Agent": "Mozilla/5.0 (compatible; BismayahHSEBot/1.0)" },
+  });
+  if (!res.ok) throw new Error(`구글 뉴스 리다이렉트 페이지 요청 실패: ${res.status}`);
+  const html = await res.text();
+
+  const candidates = [
+    html.match(/<meta[^>]+property="og:url"[^>]+content="([^"]+)"/i),
+    html.match(/data-n-au="([^"]+)"/i),
+    html.match(/"url"\s*:\s*"(https?:\\?\/\\?\/(?:www\.)?(?:ajnet\.me|aljazeera\.net)[^"]*)"/i),
+    html.match(/href="(https?:\/\/(?:www\.)?ajnet\.me[^"]*)"/i),
+    html.match(/(https?:\/\/(?:www\.)?ajnet\.me\/[^\s"'<>]+)/i),
+    html.match(/(https?:\/\/(?:www\.)?aljazeera\.net\/[^\s"'<>]+)/i),
+  ].filter(Boolean);
+
+  if (!candidates.length) {
+    throw new Error(
+      `구글 뉴스 리다이렉트 페이지에서 실제 기사 주소를 찾지 못했습니다. (중간 페이지: ${googleNewsUrl})`
+    );
+  }
+  return decodeEntities(candidates[0][1]).replace(/\\\//g, "/");
+}
+
 async function main() {
-  const articleUrl = await findLatestArticleUrl();
+  const googleNewsUrl = await findLatestArticleUrl();
+  const articleUrl = await resolveRealArticleUrl(googleNewsUrl);
 
   const articleRes = await fetch(articleUrl, {
     headers: { "User-Agent": "Mozilla/5.0 (compatible; BismayahHSEBot/1.0)" },
