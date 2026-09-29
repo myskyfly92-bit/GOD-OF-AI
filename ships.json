@@ -1,7 +1,7 @@
 {
-  "_readme": "이 파일은 GitHub Actions(update-ships.yml)가 자동으로 갱신합니다.",
+  "_readme": "이 파일은 GitHub Actions가 aisstream.io 웹소켓 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
   "region": "Persian Gulf",
   "count": 0,
   "ships": [],
-  "generatedAt": null
+  "generatedAt": "2026-09-29T15:02:07.748018+00:00"
 }
