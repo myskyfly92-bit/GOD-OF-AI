@@ -22,10 +22,10 @@ from datetime import datetime, timezone
 
 import websockets
 
-# 페르시안만(걸프만) 대략적인 범위
-BOUNDING_BOX = [[[24.0, 48.0], [30.5, 56.5]]]
+# 중동 전역 (걸프만·홍해·수에즈 운하·지중해 동부 포함, 항공기와 같은 범위)
+BOUNDING_BOX = [[[12.0, 30.0], [42.0, 63.0]]]
 
-LISTEN_SECONDS = 45  # 이 시간 동안 메시지를 수집합니다.
+LISTEN_SECONDS = 60  # 이 시간 동안 메시지를 수집합니다.
 OUTPUT_PATH = "ships.json"
 WS_URL = "wss://stream.aisstream.io/v0/stream"
 
@@ -106,7 +106,7 @@ def main():
 
     output = {
         "_readme": "이 파일은 GitHub Actions가 aisstream.io 웹소켓 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
-        "region": "Persian Gulf",
+        "region": "Middle East",
         "count": len(ships_list),
         "ships": ships_list,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
@@ -115,7 +115,7 @@ def main():
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"걸프만 선박 {len(ships_list)}척 위치 수집 완료 → {OUTPUT_PATH}")
+    print(f"중동 선박 {len(ships_list)}척 위치 수집 완료 → {OUTPUT_PATH}")
 
 
 if __name__ == "__main__":
