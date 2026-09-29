@@ -769,10 +769,15 @@ setInterval(loadExchangeRates, 10 * 60 * 1000); // 10분마다 갱신
    여백이 위젯 하나 들어갈 만큼도 없는 좁은 화면에서는 위젯을 숨긴다
    (768px 미만은 CSS 미디어쿼리가 별도로 처리). */
 function alignSideWidgets() {
-  const gridEl = document.querySelector(".grid");
+  // 지금 보고 있는 탭의 카드 영역을 기준으로 잡는다.
+  // (예전엔 항상 첫 번째 .grid(종합현황)를 기준으로 잡아서, 다른 탭에서 화면을
+  //  확대·축소하면 숨겨진 종합현황 탭의 좌표(0)를 읽어 달력이 왼쪽으로 튀던 버그가 있었음)
+  const gridEl = document.querySelector(".view.active .grid") || document.querySelector(".grid");
   const holidayPanel = document.getElementById("holidayPanel");
   const fxWidget = document.getElementById("fxWidget");
   if (!gridEl) return;
+  // 탭 전환 직후처럼 아직 화면에 그려지지 않은 상태면 계산하지 않는다
+  if (gridEl.getBoundingClientRect().width === 0) return;
 
   if (window.innerWidth <= 768) {
     // 좁은 화면: JS로 강제 설정한 left 값을 지워서 CSS 미디어쿼리가 그대로 적용되게 둔다
@@ -890,6 +895,11 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
     // 탭에 맞춰 배경 사진도 전환
     const bgClass = "bg-" + btn.dataset.view.replace("view-", "");
     document.body.className = bgClass;
+
+    // 탭마다 카드 영역 크기가 달라서 달력·환율 위치를 다시 맞춘다
+    if (typeof alignSideWidgets === "function") {
+      requestAnimationFrame(alignSideWidgets);
+    }
   });
 });
 
