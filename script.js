@@ -1589,7 +1589,7 @@ let planesMarkerLayer = null;
 
 function initShipsMap() {
   if (!shipsMapInstance) {
-    shipsMapInstance = L.map("shipsMap").setView([27.0, 51.5], 6);
+    shipsMapInstance = L.map("shipsMap").setView([27.0, 46.5], 5);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "&copy; OpenStreetMap contributors",
       maxZoom: 12,
