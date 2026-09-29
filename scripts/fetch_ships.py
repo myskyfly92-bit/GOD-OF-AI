@@ -57,6 +57,11 @@ async def collect_ships(api_key):
                 except json.JSONDecodeError:
                     continue
 
+                # aisstream이 오류(API 키 오류 등)를 보내면 로그에 남기고 종료
+                if isinstance(data, dict) and data.get("error"):
+                    print(f"[오류] aisstream 응답: {data.get('error')}", file=sys.stderr)
+                    break
+
                 msg_type = data.get("MessageType")
                 meta = data.get("MetaData", {})
                 mmsi = meta.get("MMSI")

@@ -1,5 +1,5 @@
 """
-OpenSky Network REST API(OAuth2 client credentials 인증)로 이라크·걸프만 일대의
+OpenSky Network REST API(OAuth2 client credentials 인증)로 중동 전역의
 실시간 항공기 위치를 가져와 planes.json 파일로 저장합니다.
 
 사전 준비:
@@ -23,8 +23,8 @@ import requests
 TOKEN_URL = "https://auth.opensky-network.org/auth/realms/opensky-network/protocol/openid-connect/token"
 STATES_URL = "https://opensky-network.org/api/states/all"
 
-# 이라크 + 걸프만 일대를 넉넉히 덮는 범위
-BBOX = {"lamin": 24.0, "lomin": 38.0, "lamax": 37.5, "lomax": 56.5}
+# 중동 전역 (튀르키예 남부·레바논·사우디·이란·예멘·오만 포함)
+BBOX = {"lamin": 12.0, "lomin": 30.0, "lamax": 42.0, "lomax": 63.0}
 
 OUTPUT_PATH = "planes.json"
 
@@ -100,7 +100,7 @@ def main():
 
     output = {
         "_readme": "이 파일은 GitHub Actions가 OpenSky Network API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
-        "region": "Iraq & Persian Gulf",
+        "region": "Middle East",
         "count": len(planes),
         "planes": planes,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
