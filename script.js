@@ -1643,8 +1643,8 @@ function renderPlanes(data) {
     const speed = (p.speed !== undefined && p.speed !== null) ? `${(p.speed * 3.6).toFixed(0)} km/h` : "–";
     marker.bindPopup(`
       <b>${escapeHtml(p.callsign || p.icao24)}</b><br>
-      국가: ${escapeHtml(p.originCountry || "–")}<br>
-      고도: ${escapeHtml(alt)} · 속도: ${escapeHtml(speed)}
+      ${p.type ? `기종: ${escapeHtml(p.type)}<br>` : ""}${p.originCountry ? `국가: ${escapeHtml(p.originCountry)}<br>` : ""}
+      고도: ${escapeHtml(alt)} · 속도: ${escapeHtml(speed)}${p.source ? `<br><span style="opacity:.6">출처: ${escapeHtml(p.source)}</span>` : ""}
     `);
   });
 
