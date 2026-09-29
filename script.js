@@ -745,12 +745,13 @@ async function loadExchangeRates() {
 
   // 1,000원 기준으로 환산해야 숫자가 너무 작아지지 않아 보기 편하다
   if (jpy) {
-    const krwToJpyPer1000 = (jpy / krw) * 1000;
-    elKrwJpy.textContent = krwToJpyPer1000.toLocaleString("ko-KR", { maximumFractionDigits: 1 }) + " 엔";
+    // 네이버 환율처럼 그 나라 돈 기준으로 원화 환산 (엔화는 100엔 단위가 관례)
+    const krwPer100Jpy = (krw / jpy) * 100;
+    elKrwJpy.textContent = krwPer100Jpy.toLocaleString("ko-KR", { maximumFractionDigits: 2 }) + " 원";
   }
   if (cny) {
-    const krwToCnyPer1000 = (cny / krw) * 1000;
-    elKrwCny.textContent = krwToCnyPer1000.toLocaleString("ko-KR", { maximumFractionDigits: 1 }) + " 위안";
+    const krwPer1Cny = krw / cny;
+    elKrwCny.textContent = krwPer1Cny.toLocaleString("ko-KR", { maximumFractionDigits: 2 }) + " 원";
   }
 
   const now = new Date();
