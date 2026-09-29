@@ -1528,3 +1528,71 @@ body.bg-procedures {
   width: 100%;
   border: 0;
 }
+
+/* ==========================================================
+   이라크 화재 현황
+   ========================================================== */
+.fire-map {
+  width: 100%;
+  height: min(70vh, 640px);
+  border-radius: 10px;
+  border: 1px solid var(--border-soft);
+  margin: 12px 0;
+  background: #0f1720 !important; /* 바다·지도 바깥 색 (Leaflet 기본 회색 배경 덮어쓰기) */
+  position: relative;
+  z-index: 0;
+}
+.fire-alert {
+  margin: 4px 0 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--border-soft);
+  color: var(--text-muted);
+}
+.fire-alert-ok {
+  color: #35d0c0;
+  border-color: rgba(53, 208, 192, 0.4);
+  background: rgba(53, 208, 192, 0.08);
+}
+.fire-alert-warn {
+  color: #ff6b6b;
+  border-color: rgba(255, 77, 79, 0.5);
+  background: rgba(255, 77, 79, 0.12);
+}
+.fire-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.fire-legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.fire-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+.fire-dot-new { background: #ff4d4f; }
+.fire-dot-old { background: #f2a93b; }
+.fire-dot-flare { background: #8a94a3; opacity: 0.6; }
+.fire-site-star { color: #35d0c0; font-size: 14px; line-height: 1; }
+
+/* 지도 위 한글 라벨 (가운데 정렬) */
+.map-label-wrap { background: transparent; border: none; }
+.map-label-wrap > span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  pointer-events: none;
+  font-family: var(--font-body);
+  text-shadow: 0 0 3px #0b1016, 0 0 6px #0b1016;
+}
+.gov-label { color: #d7dee8; font-size: 12px; font-weight: 600; letter-spacing: 0.02em; }
+.country-label { color: #7d8896; font-size: 13px; font-weight: 700; letter-spacing: 0.15em; }
+.water-label { color: #5fa9d6; font-size: 11px; font-style: italic; }
+.site-star { color: #35d0c0; font-size: 20px; line-height: 1; }
+.map-label-wrap > span.site-label {
+  transform: translate(12px, -2px);
+  color: #35d0c0;
+  font-size: 11px;
+  font-weight: 700;
+}
