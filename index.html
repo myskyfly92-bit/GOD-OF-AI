@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20260929b">
+<link rel="stylesheet" href="style.css?v=20260929c">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -359,14 +359,29 @@
 <div id="view-ships" class="view">
 <main class="grid">
   <section class="panel ships-panel" aria-label="선박·항공기 실시간 추적" style="grid-column: 1 / -1;">
-    <div class="panel-label">AIR &amp; SEA MONITORING · 해상·항공 현황 (중동·걸프만)</div>
+    <div class="panel-label">AIR MONITORING · 항공기 현황 (중동)</div>
     <div class="ships-legend">
-      <span class="ships-legend-item"><span class="ships-dot" style="background:#35d0c0;"></span>선박</span>
       <span class="ships-legend-item"><span class="ships-dot" style="background:#f2a93b;"></span>항공기</span>
     </div>
     <p class="source-note" id="shipsMeta">데이터 불러오는 중…</p>
     <div id="shipsMap" class="ships-map"></div>
-    <p class="source-note">aisstream.io(선박) · OpenSky Network(항공기) API 연동 · 15분마다 자동 갱신 · 지도를 클릭/드래그해서 이동, 휠로 확대·축소 가능</p>
+    <p class="source-note">OpenSky Network API 연동 · 15분마다 자동 갱신 · 지도를 클릭/드래그해서 이동, 휠로 확대·축소 가능</p>
+  </section>
+
+  <section class="panel ships-panel" aria-label="선박 실시간 위치" style="grid-column: 1 / -1;">
+    <div class="panel-label">SEA MONITORING · 선박 현황 (걸프만)</div>
+    <div id="vesselFinderBox" class="vessel-map-box">
+      <script type="text/javascript">
+        var width = "100%";
+        var height = "560";
+        var latitude = "26.80";
+        var longitude = "52.00";
+        var zoom = "6";
+        var names = false;
+      </script>
+      <script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
+    </div>
+    <p class="source-note">VesselFinder 실시간 지도 · 지도를 드래그해서 홍해·지중해 등 다른 해역도 볼 수 있습니다 · 선박을 클릭하면 상세 정보</p>
   </section>
 </main>
 </div>
@@ -377,7 +392,7 @@
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20260929b"></script>
+<script src="script.js?v=20260929c"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">
