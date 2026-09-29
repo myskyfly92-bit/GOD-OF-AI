@@ -1,8 +1,10 @@
-name: Update Plane Positions (Iraq & Gulf)
+name: Update Plane Positions (Middle East)
 
 on:
   schedule:
-    - cron: "*/15 * * * *"   # 15분마다 실행
+    # 정각·15분 단위는 GitHub 서버가 가장 붐비는 시간이라 예약 실행이 자주 밀리거나 빠진다.
+    # 그래서 일부러 붐비지 않는 분(7·22·37·52분)에 맞춰 15분 간격으로 실행한다.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch: {}
 
 permissions:
