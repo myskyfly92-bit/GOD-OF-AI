@@ -1489,6 +1489,9 @@ body.bg-procedures {
   border-radius: 10px;
   border: 1px solid var(--border-soft);
   margin: 12px 0;
+  /* 지도(Leaflet) 내부 레이어가 달력·환율 위젯 위로 올라오지 않게 가둔다 */
+  position: relative;
+  z-index: 0;
 }
 .plane-icon-wrap {
   background: transparent;
