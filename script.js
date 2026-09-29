@@ -1608,8 +1608,9 @@ function initShipsMap() {
     planesMarkerLayer = L.layerGroup().addTo(shipsMapInstance);
   }
   setTimeout(() => shipsMapInstance.invalidateSize(), 100);
-  loadShips();
+  // 선박은 아래 VesselFinder 지도에서 보여 주므로 여기서는 항공기만 불러온다
   loadPlanes();
+  refreshVesselFinderOnce();
 }
 
 async function loadPlanes() {
@@ -1649,9 +1650,11 @@ function renderPlanes(data) {
 
   // 상단 안내문에 항공기 수도 같이 표기
   const meta = document.getElementById("shipsMeta");
-  if (meta && data.count !== undefined) {
-    meta.dataset.planeCount = data.count;
-    shipsUpdateCombinedMeta();
+  if (meta) {
+    const genText = data.generatedAt
+      ? " · 마지막 수집: " + new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(data.generatedAt)) + " (바그다드)"
+      : "";
+    meta.textContent = `항공기 ${planes.length}대 표시 중${genText}`;
   }
 }
 
@@ -1719,3 +1722,17 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
     }
   });
 });
+
+
+/* 선박 지도(VesselFinder)는 숨겨진 탭 안에서 처음 만들어지면 크기를 0으로
+   잡는 경우가 있어서, 탭을 처음 열 때 한 번만 새로 불러와 크기를 맞춘다 */
+let vesselFinderRefreshed = false;
+function refreshVesselFinderOnce() {
+  if (vesselFinderRefreshed) return;
+  const frame = document.querySelector("#vesselFinderBox iframe");
+  if (!frame) return;
+  vesselFinderRefreshed = true;
+  const src = frame.src;
+  frame.src = "about:blank";
+  setTimeout(() => { frame.src = src; }, 50);
+}
