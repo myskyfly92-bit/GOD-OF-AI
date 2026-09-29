@@ -1,0 +1,30 @@
+{
+  "_readme": "해외 현장 지도 데이터. projects 중 auto: true 인 항목은 GitHub Actions가 DART 공시로 매일 자동 갱신하므로 손대지 마세요(다음 실행 때 덮어써짐). 직접 넣는 현장은 auto 없이 추가하면 그대로 유지됩니다. 자동 수집 현장의 위치·이름을 고치고 싶으면 overrides에 공시 접수번호(rceptNo)를 키로 적으세요. 예: \"overrides\": {\"20260220000001\": {\"lat\": 25.9, \"lon\": 49.6, \"city\": \"자푸라\"}}. logo는 assets 폴더 이미지 경로(없으면 약칭 배지). status는 공사중/수주/준공.",
+  "updatedAt": "2026-09-29",
+  "companies": [
+    {
+      "id": "hanwha",
+      "name": "한화 건설부문",
+      "short": "한화",
+      "color": "#f37321",
+      "logo": "assets/hanwha-logo.jpg"
+    }
+  ],
+  "projects": [
+    {
+      "company": "hanwha",
+      "name": "비스마야 신도시 (Bismayah New City)",
+      "country": "이라크",
+      "city": "바그다드 동남쪽 10km",
+      "lat": 33.193,
+      "lon": 44.618,
+      "type": "주택·인프라",
+      "status": "공사중",
+      "amount": "",
+      "period": "",
+      "note": "우리 현장",
+      "link": ""
+    }
+  ],
+  "overrides": {}
+}
