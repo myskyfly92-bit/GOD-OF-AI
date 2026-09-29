@@ -1,7 +1,978 @@
 {
-  "_readme": "이 파일은 GitHub Actions(update-planes.yml)가 자동으로 갱신합니다.",
+  "_readme": "이 파일은 GitHub Actions가 OpenSky Network API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
   "region": "Iraq & Persian Gulf",
-  "count": 0,
-  "planes": [],
-  "generatedAt": null
+  "count": 97,
+  "planes": [
+    {
+      "icao24": "80161c",
+      "callsign": "AXB902",
+      "originCountry": "India",
+      "lat": 24.6399,
+      "lon": 54.4292,
+      "altitude": 2065.02,
+      "speed": 134.74,
+      "heading": 35.21
+    },
+    {
+      "icao24": "801665",
+      "callsign": "AIC162",
+      "originCountry": "India",
+      "lat": 26.6878,
+      "lon": 51.367,
+      "altitude": 12496.8,
+      "speed": 275.49,
+      "heading": 109.75
+    },
+    {
+      "icao24": "728677",
+      "callsign": "IAW1302",
+      "originCountry": "Iraq",
+      "lat": 33.7092,
+      "lon": 38.4567,
+      "altitude": 9448.8,
+      "speed": 262.05,
+      "heading": 116.97
+    },
+    {
+      "icao24": "728679",
+      "callsign": "IAW446",
+      "originCountry": "Iraq",
+      "lat": 26.9319,
+      "lon": 49.686,
+      "altitude": 10972.8,
+      "speed": 210.02,
+      "heading": 288.12
+    },
+    {
+      "icao24": "896190",
+      "callsign": "UAE25K",
+      "originCountry": "United Arab Emirates",
+      "lat": 26.6903,
+      "lon": 51.3589,
+      "altitude": 11887.2,
+      "speed": 282.66,
+      "heading": 109.79
+    },
+    {
+      "icao24": "896179",
+      "callsign": "UAE2VL",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.698,
+      "lon": 54.5044,
+      "altitude": 4511.04,
+      "speed": 205.26,
+      "heading": 104.66
+    },
+    {
+      "icao24": "50016b",
+      "callsign": "T7KBI",
+      "originCountry": "San Marino",
+      "lat": 25.7821,
+      "lon": 52.8528,
+      "altitude": 9753.6,
+      "speed": 222.52,
+      "heading": 297.69
+    },
+    {
+      "icao24": "8961eb",
+      "callsign": "ETD556",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.4133,
+      "lon": 52.3965,
+      "altitude": 10660.38,
+      "speed": 260.9,
+      "heading": 116.21
+    },
+    {
+      "icao24": "8961ea",
+      "callsign": "ETD4SR",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.3235,
+      "lon": 54.8173,
+      "altitude": 1028.7,
+      "speed": 123.4,
+      "heading": 76.25
+    },
+    {
+      "icao24": "801910",
+      "callsign": "IGO081",
+      "originCountry": "India",
+      "lat": 25.1114,
+      "lon": 55.9975,
+      "altitude": 10370.82,
+      "speed": 213.83,
+      "heading": 277.6
+    },
+    {
+      "icao24": "89627b",
+      "callsign": "ETD237",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.2152,
+      "lon": 54.8583,
+      "altitude": 1706.88,
+      "speed": 115.46,
+      "heading": 356.42
+    },
+    {
+      "icao24": "89625b",
+      "callsign": "ETD9TK",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.8174,
+      "lon": 53.5898,
+      "altitude": 5722.62,
+      "speed": 192.52,
+      "heading": 119.1
+    },
+    {
+      "icao24": "8962ea",
+      "callsign": "GWC3",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.8929,
+      "lon": 53.0623,
+      "altitude": 8534.4,
+      "speed": 233.96,
+      "heading": 294.14
+    },
+    {
+      "icao24": "896406",
+      "callsign": "ETD81C",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.0138,
+      "lon": 53.2443,
+      "altitude": 6911.34,
+      "speed": 204.2,
+      "heading": 124.53
+    },
+    {
+      "icao24": "89636e",
+      "callsign": "89636e",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.0742,
+      "lon": 47.7222,
+      "altitude": 9060.18,
+      "speed": 264.68,
+      "heading": 104.98
+    },
+    {
+      "icao24": "896382",
+      "callsign": "ABY818",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.3728,
+      "lon": 55.0946,
+      "altitude": 2697.48,
+      "speed": 175.12,
+      "heading": 261.89
+    },
+    {
+      "icao24": "896356",
+      "callsign": "ETD949",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.5604,
+      "lon": 54.4778,
+      "altitude": 1363.98,
+      "speed": 128.41,
+      "heading": 306.36
+    },
+    {
+      "icao24": "896354",
+      "callsign": "ETD9XU",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.5288,
+      "lon": 54.7297,
+      "altitude": 1882.14,
+      "speed": 127.33,
+      "heading": 130.58
+    },
+    {
+      "icao24": "896364",
+      "callsign": "ABY155",
+      "originCountry": "United Arab Emirates",
+      "lat": 26.9194,
+      "lon": 49.4352,
+      "altitude": 10660.38,
+      "speed": 252.81,
+      "heading": 75.14
+    },
+    {
+      "icao24": "8963e4",
+      "callsign": "UAE8UW",
+      "originCountry": "United Arab Emirates",
+      "lat": 26.5758,
+      "lon": 51.7151,
+      "altitude": 12496.8,
+      "speed": 273.53,
+      "heading": 107.17
+    },
+    {
+      "icao24": "8963b1",
+      "callsign": "FDB4YF",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.9189,
+      "lon": 53.563,
+      "altitude": 8488.68,
+      "speed": 228.21,
+      "heading": 104.22
+    },
+    {
+      "icao24": "89652b",
+      "callsign": "EFC54M",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.5985,
+      "lon": 55.6948,
+      "altitude": 815.34,
+      "speed": 52.47,
+      "heading": 90
+    },
+    {
+      "icao24": "896519",
+      "callsign": "EFC23L",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.4184,
+      "lon": 55.8713,
+      "altitude": 807.72,
+      "speed": 71.79,
+      "heading": 115.46
+    },
+    {
+      "icao24": "a98abc",
+      "callsign": "UNIDENT",
+      "originCountry": "United States",
+      "lat": 25.7232,
+      "lon": 51.1409,
+      "altitude": 4259.58,
+      "speed": 40.72,
+      "heading": 3.62
+    },
+    {
+      "icao24": "896497",
+      "callsign": "ABY196",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.2973,
+      "lon": 55.5762,
+      "altitude": 342.9,
+      "speed": 76.07,
+      "heading": 302.29
+    },
+    {
+      "icao24": "896496",
+      "callsign": "ABY322",
+      "originCountry": "United Arab Emirates",
+      "lat": 27.0491,
+      "lon": 49.9017,
+      "altitude": 11277.6,
+      "speed": 251.98,
+      "heading": 93.28
+    },
+    {
+      "icao24": "89644b",
+      "callsign": "UAE238",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.7371,
+      "lon": 54.3406,
+      "altitude": 5379.72,
+      "speed": 207.51,
+      "heading": 104.79
+    },
+    {
+      "icao24": "896463",
+      "callsign": "ETD11K",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.5183,
+      "lon": 54.237,
+      "altitude": 3360.42,
+      "speed": 156.43,
+      "heading": 110.4
+    },
+    {
+      "icao24": "896429",
+      "callsign": "ETD96B",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.7172,
+      "lon": 53.7851,
+      "altitude": 4975.86,
+      "speed": 208.82,
+      "heading": 118.71
+    },
+    {
+      "icao24": "89642a",
+      "callsign": "ETD51M",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.9235,
+      "lon": 53.3867,
+      "altitude": 4975.86,
+      "speed": 189.79,
+      "heading": 124.51
+    },
+    {
+      "icao24": "8964f2",
+      "callsign": "EFC51N",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.7457,
+      "lon": 55.2539,
+      "altitude": 502.92,
+      "speed": 69.88,
+      "heading": 83.66
+    },
+    {
+      "icao24": "896623",
+      "callsign": "UAE44",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.1937,
+      "lon": 55.471,
+      "altitude": 518.16,
+      "speed": 83.82,
+      "heading": 301.45
+    },
+    {
+      "icao24": "896622",
+      "callsign": "896622",
+      "originCountry": "United Arab Emirates",
+      "lat": 31.5899,
+      "lon": 39.573,
+      "altitude": 13106.4,
+      "speed": 224.53,
+      "heading": 313.42
+    },
+    {
+      "icao24": "89661e",
+      "callsign": "UAE4AJ",
+      "originCountry": "United Arab Emirates",
+      "lat": 27.2069,
+      "lon": 49.0242,
+      "altitude": 12192,
+      "speed": 223.85,
+      "heading": 299.16
+    },
+    {
+      "icao24": "896608",
+      "callsign": "FDB5YM",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.1451,
+      "lon": 55.5655,
+      "altitude": 960.12,
+      "speed": 88.49,
+      "heading": 270.33
+    },
+    {
+      "icao24": "896605",
+      "callsign": "FDB308",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.9053,
+      "lon": 56.3162,
+      "altitude": 5036.82,
+      "speed": 174.16,
+      "heading": 280.38
+    },
+    {
+      "icao24": "896603",
+      "callsign": "FDB822",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.8188,
+      "lon": 54.2112,
+      "altitude": 6865.62,
+      "speed": 211.22,
+      "heading": 111.88
+    },
+    {
+      "icao24": "896555",
+      "callsign": "FDB2WF",
+      "originCountry": "United Arab Emirates",
+      "lat": 26.3307,
+      "lon": 51.6317,
+      "altitude": 10972.8,
+      "speed": 207.75,
+      "heading": 296.31
+    },
+    {
+      "icao24": "8964a3",
+      "callsign": "UAE5WR",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.231,
+      "lon": 55.4037,
+      "altitude": 121.92,
+      "speed": 78.53,
+      "heading": 301.61
+    },
+    {
+      "icao24": "8965f6",
+      "callsign": "ABY299",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.3015,
+      "lon": 55.5689,
+      "altitude": 297.18,
+      "speed": 73.07,
+      "heading": 302.35
+    },
+    {
+      "icao24": "8965fa",
+      "callsign": "ADY017",
+      "originCountry": "United Arab Emirates",
+      "lat": 26.4537,
+      "lon": 51.2878,
+      "altitude": 3642.36,
+      "speed": 188.82,
+      "heading": 286.46
+    },
+    {
+      "icao24": "896743",
+      "callsign": "ABY971",
+      "originCountry": "United Arab Emirates",
+      "lat": 32.2672,
+      "lon": 38.4025,
+      "altitude": 11285.22,
+      "speed": 236.74,
+      "heading": 153.55
+    },
+    {
+      "icao24": "896727",
+      "callsign": "ABY168",
+      "originCountry": "United Arab Emirates",
+      "lat": 26.7424,
+      "lon": 50.7885,
+      "altitude": 6408.42,
+      "speed": 214.59,
+      "heading": 82.98
+    },
+    {
+      "icao24": "89405b",
+      "callsign": "GFA109",
+      "originCountry": "Bahrain",
+      "lat": 26.2993,
+      "lon": 50.4053,
+      "altitude": 1874.52,
+      "speed": 145.08,
+      "heading": 270.41
+    },
+    {
+      "icao24": "89669c",
+      "callsign": "EFC38J",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.3885,
+      "lon": 55.6388,
+      "altitude": 1562.1,
+      "speed": 73.45,
+      "heading": 11.31
+    },
+    {
+      "icao24": "89667e",
+      "callsign": "UAE840",
+      "originCountry": "United Arab Emirates",
+      "lat": 26.6627,
+      "lon": 50.926,
+      "altitude": 4732.02,
+      "speed": 205.17,
+      "heading": 52.64
+    },
+    {
+      "icao24": "89668b",
+      "callsign": "ABY192",
+      "originCountry": "United Arab Emirates",
+      "lat": 27.2536,
+      "lon": 49.1204,
+      "altitude": 11277.6,
+      "speed": 265.8,
+      "heading": 105.03
+    },
+    {
+      "icao24": "896665",
+      "callsign": "FDB2DK",
+      "originCountry": "United Arab Emirates",
+      "lat": 26.7523,
+      "lon": 51.5413,
+      "altitude": 11277.6,
+      "speed": 266.28,
+      "heading": 102.16
+    },
+    {
+      "icao24": "89666d",
+      "callsign": "FDB540",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.2318,
+      "lon": 55.4023,
+      "altitude": 114.3,
+      "speed": 78.26,
+      "heading": 301.29
+    },
+    {
+      "icao24": "896677",
+      "callsign": "ETD75C",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.3569,
+      "lon": 54.7585,
+      "altitude": 647.7,
+      "speed": 96.42,
+      "heading": 307.85
+    },
+    {
+      "icao24": "8965bb",
+      "callsign": "DU101",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.8086,
+      "lon": 55.3107,
+      "altitude": 510.54,
+      "speed": 68.07,
+      "heading": 42.86
+    },
+    {
+      "icao24": "8965d4",
+      "callsign": "FDB867",
+      "originCountry": "United Arab Emirates",
+      "lat": 26.2893,
+      "lon": 51.7247,
+      "altitude": 5760.72,
+      "speed": 191.42,
+      "heading": 296.5
+    },
+    {
+      "icao24": "8965cd",
+      "callsign": "FDB3PM",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.2892,
+      "lon": 55.3047,
+      "altitude": 556.26,
+      "speed": 106.87,
+      "heading": 293.85
+    },
+    {
+      "icao24": "748028",
+      "callsign": "MEA418",
+      "originCountry": "Lebanon",
+      "lat": 24.3304,
+      "lon": 54.6478,
+      "altitude": 2453.64,
+      "speed": 141.5,
+      "heading": 127.91
+    },
+    {
+      "icao24": "8965b5",
+      "callsign": "FDB3HP",
+      "originCountry": "United Arab Emirates",
+      "lat": 27.1334,
+      "lon": 48.7548,
+      "altitude": 11277.6,
+      "speed": 265.94,
+      "heading": 106.75
+    },
+    {
+      "icao24": "8965b9",
+      "callsign": "UAE9941",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.1841,
+      "lon": 54.4324,
+      "altitude": 6637.02,
+      "speed": 233.95,
+      "heading": 241.07
+    },
+    {
+      "icao24": "8965b6",
+      "callsign": "FDB991",
+      "originCountry": "United Arab Emirates",
+      "lat": 27.3607,
+      "lon": 48.7151,
+      "altitude": 9753.6,
+      "speed": 219.46,
+      "heading": 299.03
+    },
+    {
+      "icao24": "8965c4",
+      "callsign": "FDB1715",
+      "originCountry": "United Arab Emirates",
+      "lat": 27.3486,
+      "lon": 48.7393,
+      "altitude": 9753.6,
+      "speed": 219.46,
+      "heading": 299.03
+    },
+    {
+      "icao24": "89409a",
+      "callsign": "GFA526",
+      "originCountry": "Bahrain",
+      "lat": 25.5303,
+      "lon": 51.8517,
+      "altitude": 2880.36,
+      "speed": 149.54,
+      "heading": 220.82
+    },
+    {
+      "icao24": "894094",
+      "callsign": "GFA963",
+      "originCountry": "Bahrain",
+      "lat": 30.8551,
+      "lon": 38.5645,
+      "altitude": 11026.14,
+      "speed": 259.4,
+      "heading": 109.94
+    },
+    {
+      "icao24": "894095",
+      "callsign": "GFA044",
+      "originCountry": "Bahrain",
+      "lat": 32.689,
+      "lon": 38.1032,
+      "altitude": 10660.38,
+      "speed": 234.6,
+      "heading": 151.3
+    },
+    {
+      "icao24": "89408e",
+      "callsign": "GFA002",
+      "originCountry": "Bahrain",
+      "lat": 26.572,
+      "lon": 50.0236,
+      "altitude": 5151.12,
+      "speed": 203.19,
+      "heading": 108.76
+    },
+    {
+      "icao24": "70620f",
+      "callsign": "JZR131",
+      "originCountry": "Kuwait",
+      "lat": 26.8465,
+      "lon": 50.8412,
+      "altitude": 11277.6,
+      "speed": 263.25,
+      "heading": 146.56
+    },
+    {
+      "icao24": "06a3b1",
+      "callsign": "A7GQD",
+      "originCountry": "Qatar",
+      "lat": 25.5311,
+      "lon": 51.8833,
+      "altitude": 502.92,
+      "speed": 66.59,
+      "heading": 11.14
+    },
+    {
+      "icao24": "06a2f4",
+      "callsign": "QTR21Y",
+      "originCountry": "Qatar",
+      "lat": 25.3449,
+      "lon": 51.7217,
+      "altitude": 2766.06,
+      "speed": 149.31,
+      "heading": 209.74
+    },
+    {
+      "icao24": "06a2fa",
+      "callsign": "QTR79Q",
+      "originCountry": "Qatar",
+      "lat": 32.069,
+      "lon": 39.0057,
+      "altitude": 12192,
+      "speed": 237.2,
+      "heading": 333.32
+    },
+    {
+      "icao24": "06a2af",
+      "callsign": "QTR120",
+      "originCountry": "Qatar",
+      "lat": 25.3223,
+      "lon": 51.5759,
+      "altitude": 99.06,
+      "speed": 83.78,
+      "heading": 158
+    },
+    {
+      "icao24": "06a2c5",
+      "callsign": "QTR56L",
+      "originCountry": "Qatar",
+      "lat": 26.7166,
+      "lon": 49.544,
+      "altitude": 10058.4,
+      "speed": 274.44,
+      "heading": 108.47
+    },
+    {
+      "icao24": "4ba88f",
+      "callsign": "THY6278",
+      "originCountry": "Turkey",
+      "lat": 32.7143,
+      "lon": 38.1389,
+      "altitude": 11277.6,
+      "speed": 242.49,
+      "heading": 153.27
+    },
+    {
+      "icao24": "4b9e02",
+      "callsign": "KNE299",
+      "originCountry": "Turkey",
+      "lat": 33.1221,
+      "lon": 38.3775,
+      "altitude": 10370.82,
+      "speed": 229.84,
+      "heading": 332.98
+    },
+    {
+      "icao24": "801428",
+      "callsign": "IGO1235",
+      "originCountry": "India",
+      "lat": 25.0889,
+      "lon": 56.1337,
+      "altitude": 9761.22,
+      "speed": 213.96,
+      "heading": 287.35
+    },
+    {
+      "icao24": "801462",
+      "callsign": "IGO097",
+      "originCountry": "India",
+      "lat": 26.3832,
+      "lon": 51.5099,
+      "altitude": 5478.78,
+      "speed": 196.95,
+      "heading": 290.33
+    },
+    {
+      "icao24": "778569",
+      "callsign": "SYR390",
+      "originCountry": "Syrian Arab Republic",
+      "lat": 33.9704,
+      "lon": 38.4062,
+      "altitude": 9738.36,
+      "speed": 228.18,
+      "heading": 336.9
+    },
+    {
+      "icao24": "778567",
+      "callsign": "SYR501",
+      "originCountry": "Syrian Arab Republic",
+      "lat": 25.3061,
+      "lon": 55.5608,
+      "altitude": 251.46,
+      "speed": 76.78,
+      "heading": 302.41
+    },
+    {
+      "icao24": "06a1c0",
+      "callsign": "QTR1168",
+      "originCountry": "Qatar",
+      "lat": 24.7223,
+      "lon": 48.2586,
+      "altitude": 6751.32,
+      "speed": 213.91,
+      "heading": 315.78
+    },
+    {
+      "icao24": "06a1d3",
+      "callsign": "QQE224",
+      "originCountry": "Qatar",
+      "lat": 24.9441,
+      "lon": 54.9327,
+      "altitude": 4991.1,
+      "speed": 203.65,
+      "heading": 176.23
+    },
+    {
+      "icao24": "710d89",
+      "callsign": "FAD259",
+      "originCountry": "Saudi Arabia",
+      "lat": 30.4657,
+      "lon": 38.3992,
+      "altitude": 7757.16,
+      "speed": 217.54,
+      "heading": 314.62
+    },
+    {
+      "icao24": "06a120",
+      "callsign": "QTR73V",
+      "originCountry": "Qatar",
+      "lat": 25.1843,
+      "lon": 51.7571,
+      "altitude": 1737.36,
+      "speed": 124,
+      "heading": 158.33
+    },
+    {
+      "icao24": "06a121",
+      "callsign": "QTR756",
+      "originCountry": "Qatar",
+      "lat": 29.3161,
+      "lon": 38.9386,
+      "altitude": 11887.2,
+      "speed": 277.06,
+      "heading": 101.89
+    },
+    {
+      "icao24": "06a140",
+      "callsign": "QTR8596",
+      "originCountry": "Qatar",
+      "lat": 25.2206,
+      "lon": 51.6422,
+      "altitude": 510.54,
+      "speed": 110.92,
+      "heading": 158.79
+    },
+    {
+      "icao24": "06a0a6",
+      "callsign": "QTR651",
+      "originCountry": "Qatar",
+      "lat": 25.2894,
+      "lon": 53.5349,
+      "altitude": 8183.88,
+      "speed": 220.32,
+      "heading": 279.81
+    },
+    {
+      "icao24": "06a0c1",
+      "callsign": "QTR8Q",
+      "originCountry": "Qatar",
+      "lat": 25.4073,
+      "lon": 51.5597,
+      "altitude": 342.9,
+      "speed": 93.24,
+      "heading": 157.96
+    },
+    {
+      "icao24": "06a0ff",
+      "callsign": "QTR7K",
+      "originCountry": "Qatar",
+      "lat": 31.6955,
+      "lon": 39.4017,
+      "altitude": 12192,
+      "speed": 219.05,
+      "heading": 297.41
+    },
+    {
+      "icao24": "aaef10",
+      "callsign": "N803XA",
+      "originCountry": "United States",
+      "lat": 24.7176,
+      "lon": 50.707,
+      "altitude": 4869.18,
+      "speed": 214,
+      "heading": 338.86
+    },
+    {
+      "icao24": "42476c",
+      "callsign": "VPCZB",
+      "originCountry": "United Kingdom",
+      "lat": 24.783,
+      "lon": 55.0277,
+      "altitude": 1874.52,
+      "speed": 142.81,
+      "heading": 217.24
+    },
+    {
+      "icao24": "70c10a",
+      "callsign": "OMS228",
+      "originCountry": "Oman",
+      "lat": 25.8934,
+      "lon": 54.0411,
+      "altitude": 11277.6,
+      "speed": 268.04,
+      "heading": 116.07
+    },
+    {
+      "icao24": "4002c5",
+      "callsign": "VPCMV",
+      "originCountry": "United Kingdom",
+      "lat": 31.9393,
+      "lon": 39.129,
+      "altitude": 13106.4,
+      "speed": 227.55,
+      "heading": 319.03
+    },
+    {
+      "icao24": "706075",
+      "callsign": "KAC620",
+      "originCountry": "Kuwait",
+      "lat": 26.6917,
+      "lon": 50.4936,
+      "altitude": 8534.4,
+      "speed": 215.67,
+      "heading": 322.36
+    },
+    {
+      "icao24": "70612e",
+      "callsign": "JZR178",
+      "originCountry": "Kuwait",
+      "lat": 32.231,
+      "lon": 38.4239,
+      "altitude": 10172.7,
+      "speed": 241.57,
+      "heading": 153.43
+    },
+    {
+      "icao24": "8966fc",
+      "callsign": "UAE102",
+      "originCountry": "United Arab Emirates",
+      "lat": 25.436,
+      "lon": 55.2295,
+      "altitude": 2712.72,
+      "speed": 164.9,
+      "heading": 132.85
+    },
+    {
+      "icao24": "8966e2",
+      "callsign": "A6FNG",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.5979,
+      "lon": 55.7381,
+      "altitude": 807.72,
+      "speed": 47.67,
+      "heading": 29.05
+    },
+    {
+      "icao24": "8966a8",
+      "callsign": "ETD60K",
+      "originCountry": "United Arab Emirates",
+      "lat": 24.4361,
+      "lon": 54.6792,
+      "altitude": 137.16,
+      "speed": 75.94,
+      "heading": 307.57
+    },
+    {
+      "icao24": "717ceb",
+      "callsign": "KNE378",
+      "originCountry": "Saudi Arabia",
+      "lat": 32.8643,
+      "lon": 38.0497,
+      "altitude": 9707.88,
+      "speed": 240.19,
+      "heading": 153.27
+    },
+    {
+      "icao24": "710000",
+      "callsign": "RXI243",
+      "originCountry": "Saudi Arabia",
+      "lat": 25.2313,
+      "lon": 55.4034,
+      "altitude": 106.68,
+      "speed": 78.26,
+      "heading": 301.29
+    },
+    {
+      "icao24": "710070",
+      "callsign": "SVA550",
+      "originCountry": "Saudi Arabia",
+      "lat": 24.8643,
+      "lon": 55.9152,
+      "altitude": 2758.44,
+      "speed": 151.87,
+      "heading": 327.87
+    },
+    {
+      "icao24": "010160",
+      "callsign": "MSR930",
+      "originCountry": "Egypt",
+      "lat": 26.7452,
+      "lon": 49.2638,
+      "altitude": 11277.6,
+      "speed": 259.88,
+      "heading": 114.69
+    },
+    {
+      "icao24": "7114d7",
+      "callsign": "KNE206",
+      "originCountry": "Saudi Arabia",
+      "lat": 24.0645,
+      "lon": 49.3377,
+      "altitude": 9601.2,
+      "speed": 227.47,
+      "heading": 287.37
+    }
+  ],
+  "generatedAt": "2026-09-29T15:01:36.148767+00:00"
 }
