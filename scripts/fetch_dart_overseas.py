@@ -292,6 +292,63 @@ def same_project(manual, auto):
     return bool(common)
 
 
+# 도시 목록에 없는 대형 플랜트·항만 현장 이름 (대략 위치)
+SITE_EXTRAS = {
+    "이라크": [("알포", ["알포", "AL FAW", "FAW", "파우"], 29.98, 48.47), ("비스마야", ["비스마야", "BISMAYAH"], 33.193, 44.618)],
+    "사우디아라비아": [("자푸라", ["자푸라", "JAFURAH"], 25.5, 49.5), ("마르잔", ["마르잔", "MARJAN"], 28.4, 49.6),
+                   ("쥬베일", ["쥬베일", "주베일", "JUBAIL"], 27.01, 49.66), ("라스타누라", ["라스타누라", "RAS TANURA"], 26.64, 50.16),
+                   ("네옴", ["네옴", "NEOM"], 28.0, 35.2)
+                   , ("루마", ["루마", "RUMAH"], 25.58, 47.16), ("나이리야", ["나이리야", "NAIRYAH", "NUAYRIYAH"], 27.47, 48.48)],
+    "카타르": [("라스라판", ["라스라판", "RAS LAFFAN"], 25.91, 51.55), ("메사이드", ["메사이드", "MESAIEED"], 24.99, 51.55)],
+    "오만": [("두큼", ["두큼", "DUQM"], 19.66, 57.70), ("미스파", ["미스파", "MISFAH"], 23.5, 58.2)],
+    "러시아": [("우스트루가", ["우스트루가", "우스트-루가", "UST-LUGA", "UST LUGA"], 59.66, 28.40)],
+    "체코": [("두코바니", ["두코바니", "DUKOVANY"], 49.09, 16.15)],
+    "바레인": [("시트라", ["시트라", "SITRA", "BAPCO"], 26.15, 50.62)],
+    "아랍에미리트": [("루와이스", ["루와이스", "RUWAIS"], 24.11, 52.73)],
+    "나이지리아": [("보니섬", ["보니섬", "보니", "BONNY"], 4.43, 7.17), ("바옐사", ["BAYELSA", "바옐사"], 4.92, 6.26)],
+    "모잠비크": [("팔마", ["팔마", "PALMA", "아풍기", "AFUNGI"], -10.77, 40.47)],
+    "말레이시아": [("펭게랑", ["펭게랑", "PENGERANG"], 1.37, 104.12), ("사라왁", ["사라왁", "SARAWAK"], 2.5, 113.0)],
+    "멕시코": [("도스보카스", ["도스보카스", "DOS BOCAS"], 18.43, -93.18)],
+    "리비아": [("미스라타", ["미스라타", "MISURATA", "MISRATA"], 32.38, 15.09)],
+    "대만": [("타오위안", ["타오위안", "TAOYUAN"], 25.08, 121.23), ("가오슝", ["가오슝", "KAOHSIUNG"], 22.63, 120.30)],
+}
+_CITIES = None
+
+
+def load_cities():
+    global _CITIES
+    if _CITIES is None:
+        try:
+            with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "cities.json"), encoding="utf-8") as f:
+                _CITIES = json.load(f)["cities"]
+        except (FileNotFoundError, json.JSONDecodeError):
+            _CITIES = {}
+    return _CITIES
+
+
+def locate(country, text):
+    """공시의 지역·공사명 글자에서 그 나라의 도시(또는 알려진 현장)를 찾아 (이름, 위도, 경도)를 돌려준다"""
+    n = norm(text)
+    if not n:
+        return None
+    best = None  # (매칭 길이, 인구, 이름, lat, lon)
+    for ko, names, lat, lon in SITE_EXTRAS.get(country, []):
+        for nm in names:
+            if norm(nm) in n:
+                cand = (len(norm(nm)) + 100, 0, ko, lat, lon)  # 현장 이름은 도시보다 우선
+                best = max(best, cand) if best else cand
+    for c in load_cities().get(country, []):
+        for nm in c["names"]:
+            k = norm(nm)
+            is_ko = bool(re.match(r"[가-힣]", nm))
+            if (is_ko and len(k) < 2) or (not is_ko and len(k) < 4) or norm(country) == k:
+                continue
+            if k in n:
+                cand = (len(k), c["pop"], c["ko"], c["lat"], c["lon"])
+                best = max(best, cand) if best else cand
+    return best[2:] if best else None
+
+
 def is_domestic(text):
     return any(w in (text or "") for w in DOMESTIC_WORDS)
 
@@ -412,11 +469,15 @@ def main():
                 period = f"{start.isoformat() if start else '?'} ~ {end.isoformat() if end else '?'}"
             key_name = f"{cid}|{norm(name)[:40]}"
             lat, lon = centers[country]
+            city = ""
+            spot = locate(country, f"{region} {name}")
+            if spot:
+                city, lat, lon = spot
             auto_projects[key_name] = {
                 "company": cid,
                 "name": name,
                 "country": country,
-                "city": "",
+                "city": city,
                 "lat": lat,
                 "lon": lon,
                 "type": info.get("kind") or "공사수주",
