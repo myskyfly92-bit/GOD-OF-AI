@@ -1736,3 +1736,197 @@ function refreshVesselFinderOnce() {
   frame.src = "about:blank";
   setTimeout(() => { frame.src = src; }, 50);
 }
+
+
+/* ==========================================================
+   이라크 화재 현황 (NASA FIRMS 위성 감지 · fires.json)
+   배경 지도는 한글 지명을 쓰기 위해 타일 대신 iraq-map.json
+   (Natural Earth 주 경계·주변국·강)을 직접 그린다.
+   ========================================================== */
+
+let fireMapInstance = null;
+let fireLayer = null;
+
+function fireFmtTime(iso) {
+  if (!iso) return "–";
+  return new Intl.DateTimeFormat("ko-KR", {
+    timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit",
+  }).format(new Date(iso));
+}
+
+function fireLabelIcon(text, cls) {
+  return L.divIcon({
+    className: "map-label-wrap",
+    html: `<span class="${cls}">${escapeHtml(text)}</span>`,
+    iconSize: [0, 0],
+  });
+}
+
+async function initFireMap() {
+  if (fireMapInstance) {
+    setTimeout(() => fireMapInstance.invalidateSize(), 100);
+    loadFires();
+    return;
+  }
+
+  fireMapInstance = L.map("fireMap", {
+    zoomSnap: 0.25,
+    minZoom: 5,
+    maxZoom: 11,
+    attributionControl: true,
+  });
+  fireMapInstance.attributionControl.setPrefix(false);
+  fireMapInstance.attributionControl.addAttribution("지도: Natural Earth · 화재: NASA FIRMS");
+  fireMapInstance.fitBounds([[29.0, 38.8], [37.4, 48.6]]);
+  fireMapInstance.setMaxBounds([[25.0, 33.0], [42.0, 55.0]]);
+
+  // 라벨은 화재 점보다 위, 경계선은 화재 점보다 아래에 오도록 레이어 순서를 나눈다
+  fireMapInstance.createPane("firePane").style.zIndex = 450;
+  fireMapInstance.createPane("labelPane").style.zIndex = 500;
+  fireMapInstance.getPane("labelPane").style.pointerEvents = "none";
+
+  try {
+    const res = await fetch("iraq-map.json", { cache: "force-cache" });
+    if (!res.ok) throw new Error("iraq-map.json 로드 실패");
+    const geo = await res.json();
+
+    L.geoJSON({ type: "FeatureCollection", features: geo.countries || [] }, {
+      style: { stroke: false, fillColor: "#1b232d", fillOpacity: 1 },
+      interactive: false,
+    }).addTo(fireMapInstance);
+
+    L.geoJSON({ type: "FeatureCollection", features: geo.borders || [] }, {
+      style: { color: "#4a5563", weight: 1 },
+      interactive: false,
+    }).addTo(fireMapInstance);
+
+    L.geoJSON({ type: "FeatureCollection", features: geo.governorates || [] }, {
+      style: { color: "#6b7a8c", weight: 1.2, fillColor: "#26313d", fillOpacity: 1 },
+      interactive: false,
+    }).addTo(fireMapInstance);
+
+    L.geoJSON({ type: "FeatureCollection", features: geo.lakes || [] }, {
+      style: { color: "#2c5d7c", weight: 1, fillColor: "#1d4a66", fillOpacity: 1 },
+      interactive: false,
+    }).addTo(fireMapInstance);
+
+    L.geoJSON({ type: "FeatureCollection", features: geo.rivers || [] }, {
+      style: { color: "#3a8fc4", weight: 1.6, opacity: 0.85 },
+      interactive: false,
+    }).addTo(fireMapInstance);
+
+    (geo.governorates || []).forEach((f) => {
+      const p = f.properties;
+      L.marker([p.labelLat, p.labelLon], { icon: fireLabelIcon(p.ko, "gov-label"), pane: "labelPane", interactive: false })
+        .addTo(fireMapInstance);
+    });
+    (geo.countries || []).forEach((f) => {
+      const p = f.properties;
+      L.marker([p.labelLat, p.labelLon], { icon: fireLabelIcon(p.ko, "country-label"), pane: "labelPane", interactive: false })
+        .addTo(fireMapInstance);
+    });
+    [
+      { t: "티그리스강", lat: 34.75, lon: 43.35 },
+      { t: "유프라테스강", lat: 34.55, lon: 41.75 },
+      { t: "페르시아만", lat: 29.2, lon: 49.4 },
+    ].forEach((w) => {
+      L.marker([w.lat, w.lon], { icon: fireLabelIcon(w.t, "water-label"), pane: "labelPane", interactive: false })
+        .addTo(fireMapInstance);
+    });
+  } catch (err) {
+    console.error(err);
+  }
+
+  // 비스마야 현장 + 반경 50km
+  L.circle([BISMAYAH_LAT, BISMAYAH_LON], {
+    radius: 50000, color: "#35d0c0", weight: 1.5, dashArray: "6 6", fill: true, fillOpacity: 0.05, interactive: false,
+  }).addTo(fireMapInstance);
+  L.marker([BISMAYAH_LAT, BISMAYAH_LON], {
+    icon: L.divIcon({ className: "map-label-wrap", html: '<span class="site-star">★</span>', iconSize: [0, 0] }),
+    pane: "labelPane",
+    interactive: false,
+  }).addTo(fireMapInstance);
+  L.marker([BISMAYAH_LAT, BISMAYAH_LON], {
+    icon: fireLabelIcon("비스마야 현장", "site-label"), pane: "labelPane", interactive: false,
+  }).addTo(fireMapInstance);
+
+  fireLayer = L.layerGroup().addTo(fireMapInstance);
+  setTimeout(() => fireMapInstance.invalidateSize(), 100);
+  loadFires();
+}
+
+async function loadFires() {
+  const meta = document.getElementById("fireMeta");
+  const alertBox = document.getElementById("fireAlert");
+  try {
+    const res = await fetch("fires.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("fires.json 로드 실패");
+    const data = await res.json();
+    renderFires(data);
+  } catch (err) {
+    console.error(err);
+    if (meta) meta.textContent = "화재 데이터를 불러올 수 없습니다.";
+    if (alertBox) { alertBox.className = "fire-alert"; alertBox.textContent = "화재 데이터를 불러올 수 없습니다."; }
+  }
+}
+
+function renderFires(data) {
+  const meta = document.getElementById("fireMeta");
+  const alertBox = document.getElementById("fireAlert");
+
+  if (!data.generatedAt) {
+    if (meta) meta.textContent = "아직 수집된 데이터가 없습니다. (FIRMS_MAP_KEY 등록 후 Actions에서 첫 수집이 필요합니다)";
+    if (alertBox) { alertBox.className = "fire-alert"; alertBox.textContent = "화재 데이터 수집 대기 중"; }
+    return;
+  }
+
+  if (fireLayer) {
+    fireLayer.clearLayers();
+    const fires = (data.fires || []).slice().sort((a, b) => (a.persistent === b.persistent ? 0 : a.persistent ? -1 : 1));
+    fires.forEach((f) => {
+      const recent = f.hoursAgo <= 24;
+      let color, opacity, radius;
+      if (f.persistent) {
+        color = "#8a94a3"; opacity = 0.45; radius = 3;
+      } else {
+        color = recent ? "#ff4d4f" : "#f2a93b";
+        opacity = recent ? 0.9 : 0.7;
+        radius = Math.max(4, Math.min(12, 3 + Math.sqrt(f.frp || 0)));
+      }
+      const m = L.circleMarker([f.lat, f.lon], {
+        pane: "firePane", radius, color, weight: 1, fillColor: color, fillOpacity: opacity, opacity: Math.min(1, opacity + 0.1),
+      }).addTo(fireLayer);
+      const kind = f.persistent ? "상시 열원 (가스 플레어 추정)" : recent ? "신규 화재 (24시간 이내)" : "신규 화재 (24~48시간)";
+      m.bindPopup(`
+        <b>${escapeHtml(kind)}</b><br>
+        감지: ${escapeHtml(fireFmtTime(f.time))} (바그다드) · 약 ${escapeHtml(String(Math.round(f.hoursAgo)))}시간 전<br>
+        강도(FRP): ${escapeHtml(String(f.frp))} MW<br>
+        현장까지: ${escapeHtml(String(f.distanceKm))} km<br>
+        <span style="opacity:.6">${escapeHtml(f.sensor)} 위성 감지 · 신뢰도 ${escapeHtml(String(f.confidence || "–"))}</span>
+      `);
+    });
+  }
+
+  if (meta) {
+    meta.textContent = `최근 48시간 신규 화재 ${data.newCount ?? 0}건 · 상시 열원 ${data.persistentCount ?? 0}건 · 마지막 수집: ${fireFmtTime(data.generatedAt)} (바그다드)`;
+  }
+
+  if (alertBox) {
+    const near = data.nearby || { count: 0, closest: [], radiusKm: 50 };
+    if (near.count > 0) {
+      const c = near.closest[0];
+      alertBox.className = "fire-alert fire-alert-warn";
+      alertBox.textContent = `⚠ 현장 반경 ${near.radiusKm}km 안에서 최근 24시간 신규 화재 ${near.count}건 감지 · 가장 가까운 지점 약 ${c.distanceKm}km (${fireFmtTime(c.time)})`;
+    } else {
+      alertBox.className = "fire-alert fire-alert-ok";
+      alertBox.textContent = `현장 반경 ${near.radiusKm}km 안에서 최근 24시간 신규 화재 감지 없음`;
+    }
+  }
+}
+
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (btn.dataset.view === "view-fires") initFireMap();
+  });
+});
+setInterval(() => { if (fireMapInstance) loadFires(); }, 30 * 60 * 1000); // 열어 둔 화면도 30분마다 새로고침

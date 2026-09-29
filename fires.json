@@ -1,0 +1,9 @@
+{
+ "_readme": "이 파일은 GitHub Actions가 NASA FIRMS 위성 화재 데이터로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
+ "count": 0,
+ "newCount": 0,
+ "persistentCount": 0,
+ "nearby": {"radiusKm": 50, "count": 0, "closest": []},
+ "fires": [],
+ "generatedAt": null
+}
