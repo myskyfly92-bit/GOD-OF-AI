@@ -1931,3 +1931,188 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   });
 });
 setInterval(() => { if (fireMapInstance) loadFires(); }, 30 * 60 * 1000); // 열어 둔 화면도 30분마다 새로고침
+
+
+/* ==========================================================
+   해외 현장 지도 (overseas-projects.json)
+   회사 로고는 담당자가 assets 폴더에 넣은 이미지를 쓰고,
+   없으면 회사 약칭을 색 배지로 보여 준다.
+   ========================================================== */
+
+let globalMapInstance = null;
+let globalMarkers = [];      // { marker, project, company }
+let globalCompanies = {};
+let globalActiveCompany = "all";
+
+const GLOBAL_STATUS_COLOR = { "공사중": "#35d0c0", "수주": "#f2a93b", "준공": "#8a94a3" };
+
+function globalBadgeHtml(company, size) {
+  const s = size || 34;
+  if (company.logo) {
+    // 로고는 가로로 긴 경우가 많아서 둥근 사각형 배지에 넣는다
+    return `<span class="gbadge gbadge-logo" style="width:${Math.round(s * 1.9)}px;height:${s}px;border-color:${escapeHtml(company.color || "#35d0c0")}">
+      <img src="${escapeHtml(company.logo)}" alt="${escapeHtml(company.name)}"></span>`;
+  }
+  const label = company.short || (company.name || "?").slice(0, 2);
+  return `<span class="gbadge gbadge-text" style="width:${s}px;height:${s}px;background:${escapeHtml(company.color || "#35d0c0")};font-size:${label.length > 2 ? 10 : 12}px">${escapeHtml(label)}</span>`;
+}
+
+async function initGlobalMap() {
+  if (globalMapInstance) {
+    setTimeout(() => globalMapInstance.invalidateSize(), 100);
+    return;
+  }
+  globalMapInstance = L.map("globalMap", { zoomSnap: 0.5, minZoom: 1.5, maxZoom: 9, worldCopyJump: true });
+  globalMapInstance.attributionControl.setPrefix(false);
+  globalMapInstance.attributionControl.addAttribution("지도: Natural Earth");
+  globalMapInstance.setView([25, 40], 2);
+  globalMapInstance.createPane("labelPane").style.zIndex = 450;
+  globalMapInstance.getPane("labelPane").style.pointerEvents = "none";
+
+  let data;
+  try {
+    const res = await fetch("overseas-projects.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("overseas-projects.json 로드 실패");
+    data = await res.json();
+  } catch (err) {
+    console.error(err);
+    document.getElementById("globalMeta").textContent = "현장 데이터를 불러올 수 없습니다.";
+    return;
+  }
+
+  globalCompanies = {};
+  (data.companies || []).forEach((c) => { globalCompanies[c.id] = c; });
+  const projects = (data.projects || []).filter((p) => globalCompanies[p.company] && typeof p.lat === "number" && typeof p.lon === "number");
+  const activeCountries = new Set(projects.map((p) => p.country));
+
+  // 배경 세계 지도 (현장이 있는 나라는 색을 입힌다)
+  try {
+    const res = await fetch("world-map.json", { cache: "force-cache" });
+    const world = await res.json();
+    L.geoJSON(world, {
+      style: (f) => activeCountries.has(f.properties.ko)
+        ? { color: "#4f6b7a", weight: 0.8, fillColor: "#1f4a55", fillOpacity: 1 }
+        : { color: "#3a4452", weight: 0.6, fillColor: "#1b232d", fillOpacity: 1 },
+      interactive: false,
+    }).addTo(globalMapInstance);
+    world.features.forEach((f) => {
+      if (!activeCountries.has(f.properties.ko)) return;
+      L.marker([f.properties.labelLat, f.properties.labelLon], {
+        icon: L.divIcon({ className: "map-label-wrap", html: `<span class="gcountry-label">${escapeHtml(f.properties.ko)}</span>`, iconSize: [0, 0] }),
+        pane: "labelPane", interactive: false,
+      }).addTo(globalMapInstance);
+    });
+  } catch (err) {
+    console.error(err);
+  }
+
+  // 같은 자리에 겹치는 현장은 조금씩 비켜서 놓는다
+  const seen = {};
+  globalMarkers = projects.map((p) => {
+    const c = globalCompanies[p.company];
+    const key = `${p.lat.toFixed(1)},${p.lon.toFixed(1)}`;
+    const n = seen[key] = (seen[key] || 0) + 1;
+    // 같은 나라 중앙에 여러 현장이 몰리면 해바라기 씨앗 모양(나선)으로 퍼뜨린다
+    let dLat = 0, dLon = 0;
+    if (n > 1) {
+      const angle = (n - 1) * 2.39996; // 황금각(라디안)
+      const r = 1.4 * Math.sqrt(n - 1);
+      dLat = r * Math.sin(angle) * 0.7;
+      dLon = r * Math.cos(angle);
+    }
+    const marker = L.marker([p.lat + dLat, p.lon + dLon], {
+      icon: L.divIcon({
+        className: "gmarker-wrap",
+        html: `<div class="gmarker" style="--st:${GLOBAL_STATUS_COLOR[p.status] || "#35d0c0"}">${globalBadgeHtml(c, 34)}</div>`,
+        iconSize: [0, 0],
+      }),
+      riseOnHover: true,
+    }).addTo(globalMapInstance);
+    marker.bindTooltip(`<b>${escapeHtml(c.name)}</b><br>${escapeHtml(p.name)}`, { direction: "top", offset: [0, -20], className: "gtooltip" });
+    marker.bindPopup(`
+      <div class="gpopup">
+        <div class="gpopup-head">${globalBadgeHtml(c, 40)}<div><b>${escapeHtml(c.name)}</b><br><span>${escapeHtml(p.name)}</span></div></div>
+        국가: ${escapeHtml(p.country || "–")}${p.city ? " · " + escapeHtml(p.city) : ""}<br>
+        공종: ${escapeHtml(p.type || "–")} · 상태: <b style="color:${GLOBAL_STATUS_COLOR[p.status] || "inherit"}">${escapeHtml(p.status || "–")}</b><br>
+        ${p.amount ? `금액: ${escapeHtml(p.amount)}<br>` : ""}${p.period ? `기간: ${escapeHtml(p.period)}<br>` : ""}${p.note ? `<span style="opacity:.65">${escapeHtml(p.note)}</span><br>` : ""}
+        ${p.link ? `<a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${p.auto ? "DART 공시 원문 보기 ↗" : "관련 자료 보기 ↗"}</a>` : ""}
+      </div>`);
+    return { marker, project: p, company: c };
+  });
+
+  renderGlobalFilter(projects);
+  renderGlobalList();
+  const countries = new Set(projects.map((p) => p.country)).size;
+  const companyCount = new Set(projects.map((p) => p.company)).size;
+  document.getElementById("globalMeta").textContent =
+    `${companyCount}개사 · ${countries}개국 · 현장 ${projects.length}곳${data.updatedAt ? " · 자료 기준일 " + data.updatedAt : ""}${data.autoSource ? " · 자동 수집: " + data.autoSource : ""}`;
+  setTimeout(() => globalMapInstance.invalidateSize(), 100);
+}
+
+function renderGlobalFilter(projects) {
+  const box = document.getElementById("globalFilter");
+  const counts = {};
+  projects.forEach((p) => { counts[p.company] = (counts[p.company] || 0) + 1; });
+  const chips = [`<button type="button" class="gchip active" data-company="all">전체 <span>${projects.length}</span></button>`];
+  Object.keys(counts).forEach((id) => {
+    const c = globalCompanies[id];
+    chips.push(`<button type="button" class="gchip" data-company="${escapeHtml(id)}">${globalBadgeHtml(c, 18)}${escapeHtml(c.name)} <span>${counts[id]}</span></button>`);
+  });
+  box.innerHTML = chips.join("");
+  box.querySelectorAll(".gchip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      globalActiveCompany = btn.dataset.company;
+      box.querySelectorAll(".gchip").forEach((b) => b.classList.toggle("active", b === btn));
+      applyGlobalFilter();
+    });
+  });
+}
+
+function applyGlobalFilter() {
+  const visible = [];
+  globalMarkers.forEach((m) => {
+    const show = globalActiveCompany === "all" || m.project.company === globalActiveCompany;
+    if (show) { m.marker.addTo(globalMapInstance); visible.push(m.marker.getLatLng()); }
+    else m.marker.remove();
+  });
+  if (globalActiveCompany !== "all" && visible.length) {
+    globalMapInstance.fitBounds(L.latLngBounds(visible).pad(0.5), { maxZoom: 5 });
+  } else if (globalActiveCompany === "all") {
+    globalMapInstance.setView([25, 40], 2);
+  }
+  renderGlobalList();
+}
+
+function renderGlobalList() {
+  const tbody = document.getElementById("globalList");
+  const rows = globalMarkers.filter((m) => globalActiveCompany === "all" || m.project.company === globalActiveCompany);
+  if (!rows.length) {
+    tbody.innerHTML = `<tr><td colspan="6" class="global-empty">등록된 현장이 없습니다</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = rows.map((m, i) => {
+    const p = m.project;
+    return `<tr data-idx="${globalMarkers.indexOf(m)}">
+      <td><span class="glist-company">${globalBadgeHtml(m.company, 22)}${escapeHtml(m.company.name)}</span></td>
+      <td>${escapeHtml(p.name)}</td>
+      <td>${escapeHtml(p.country || "–")}</td>
+      <td>${escapeHtml(p.type || "–")}</td>
+      <td><span class="gstatus" style="color:${GLOBAL_STATUS_COLOR[p.status] || "inherit"}">${escapeHtml(p.status || "–")}</span></td>
+      <td>${escapeHtml(p.amount || "–")}</td>
+    </tr>`;
+  }).join("");
+  tbody.querySelectorAll("tr[data-idx]").forEach((tr) => {
+    tr.addEventListener("click", () => {
+      const m = globalMarkers[Number(tr.dataset.idx)];
+      globalMapInstance.flyTo(m.marker.getLatLng(), 5, { duration: 0.8 });
+      setTimeout(() => m.marker.openPopup(), 850);
+      document.getElementById("globalMap").scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  });
+}
+
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (btn.dataset.view === "view-global") initGlobalMap();
+  });
+});

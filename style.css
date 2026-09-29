@@ -1596,3 +1596,69 @@ body.bg-procedures {
   font-size: 11px;
   font-weight: 700;
 }
+
+/* ==========================================================
+   해외 현장 지도
+   ========================================================== */
+.global-map {
+  width: 100%;
+  height: min(68vh, 620px);
+  border-radius: 10px;
+  border: 1px solid var(--border-soft);
+  margin: 12px 0;
+  background: #0f1720 !important;
+  position: relative;
+  z-index: 0;
+}
+.global-filter { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.gchip {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-body); font-size: 12.5px; color: var(--text-muted);
+  background: rgba(10, 14, 19, 0.6); border: 1px solid var(--border-soft);
+  border-radius: 999px; padding: 4px 12px 4px 6px; cursor: pointer;
+}
+.gchip span:last-child { color: var(--text-dim); font-size: 11px; }
+.gchip.active { color: var(--text); border-color: #35d0c0; background: rgba(53, 208, 192, 0.12); }
+.gchip:first-child { padding-left: 12px; }
+
+.gbadge {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  border-radius: 50%; background: #fff; border: 2px solid #35d0c0; overflow: hidden;
+  box-sizing: border-box;
+}
+.gbadge img { width: 100%; height: 100%; object-fit: contain; }
+.gbadge-logo { border-radius: 7px; padding: 2px 4px; }
+.gbadge-text { color: #fff; font-weight: 800; border-color: rgba(255,255,255,0.85); letter-spacing: -0.02em; white-space: nowrap; }
+
+.gmarker-wrap { background: transparent; border: none; }
+.gmarker {
+  position: absolute; transform: translate(-50%, -100%);
+  padding-bottom: 8px; cursor: pointer; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.6));
+}
+.gmarker::after {
+  content: ""; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+  border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 9px solid var(--st);
+}
+.gmarker .gbadge { outline: 2px solid var(--st); outline-offset: 1px; }
+
+.gcountry-label {
+  color: #7fb7c4; font-size: 11px; font-weight: 700; letter-spacing: 0.05em;
+}
+.gtooltip { font-size: 12px; }
+.gpopup { font-size: 12.5px; line-height: 1.6; min-width: 220px; }
+.gpopup-head { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.gpopup-head span { opacity: 0.8; }
+.gpopup a { color: #35d0c0; }
+
+.global-list-wrap { overflow-x: auto; }
+.global-list { width: 100%; border-collapse: collapse; font-size: 13px; }
+.global-list th {
+  text-align: left; font-weight: 600; color: var(--text-dim); font-size: 12px;
+  padding: 8px 10px; border-bottom: 1px solid var(--border-soft); white-space: nowrap;
+}
+.global-list td { padding: 8px 10px; border-bottom: 1px solid var(--border-soft); color: var(--text); }
+.global-list tbody tr { cursor: pointer; }
+.global-list tbody tr:hover { background: rgba(53, 208, 192, 0.06); }
+.glist-company { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.gstatus { font-weight: 700; }
+.global-empty { text-align: center; color: var(--text-dim); }
