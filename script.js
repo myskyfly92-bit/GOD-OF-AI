@@ -10,7 +10,336 @@ const BISMAYAH_LAT = 33.193;
 const BISMAYAH_LON = 44.618;
 const TIMEZONE = "Asia/Baghdad";
 
-/* ---------------- 시계 ---------------- */
+/* ---------------- 구글 번역 배너 강제 제거 ----------------
+   구글 번역 스크립트는 언어를 바꿀 때마다 상단 배너(goog-te-banner-frame)의
+   인라인 스타일을 자바스크립트로 다시 덮어써서, CSS의 display:none !important
+   조차 무시하고 배너를 다시 노출시키는 경우가 있다.
+   (인라인 style + important 는 외부 stylesheet의 !important보다도 우선순위가 높음)
+   그래서 배너가 생길 때마다 즉시 다시 강제로 숨기는 감시 로직을 둔다. */
+function killGoogleTranslateBanner() {
+  // 클래스명만으로는 구글이 마크업을 바꿀 때 못 잡을 수 있으므로,
+  // "화면 맨 위에 딱 붙어 있고 가로폭이 화면 대부분을 차지하는 얇은 막대"라는
+  // 배너의 생김새(좌표) 자체로도 판별한다. 이렇게 하면 클래스명이 바뀌어도
+  // 안전하게 잡히고, 언어 선택 드롭다운(작고 위젯 옆에 뜨는 iframe)은
+  // 건드리지 않는다.
+  document.querySelectorAll("iframe").forEach((el) => {
+    const cls = el.className && el.className.baseVal !== undefined
+      ? el.className.baseVal : (el.className || "");
+    let looksLikeBanner = cls.includes("banner"); // goog-te-banner-frame 등
+    if (!looksLikeBanner) {
+      const rect = el.getBoundingClientRect();
+      looksLikeBanner =
+        rect.top <= 5 &&
+        rect.width >= window.innerWidth * 0.7 &&
+        rect.height > 0 && rect.height < 60;
+    }
+    if (looksLikeBanner) {
+      el.style.setProperty("display", "none", "important");
+      el.style.setProperty("visibility", "hidden", "important");
+      el.style.setProperty("height", "0px", "important");
+      el.style.setProperty("border", "0", "important");
+    }
+  });
+  // 구글이 배너를 위해 밀어낸 body 위치도 매번 원상 복구
+  if (document.body.style.top !== "0px") {
+    document.body.style.setProperty("top", "0px", "important");
+  }
+  document.body.style.setProperty("position", "static", "important");
+}
+
+// 배너는 DOM에 새로 삽입/변경될 때 나타나므로 MutationObserver로 실시간 감시
+const googleBannerObserver = new MutationObserver(killGoogleTranslateBanner);
+googleBannerObserver.observe(document.documentElement, {
+  childList: true, subtree: true, attributes: true, attributeFilter: ["style", "class"]
+});
+// 혹시 옵저버가 못 잡는 타이밍이 있을 수 있어 짧은 주기로도 한 번씩 더 확인
+setInterval(killGoogleTranslateBanner, 400);
+killGoogleTranslateBanner();
+
+/* ---------------- 자체 제작 언어 전환 버튼 ----------------
+   구글 번역 위젯의 <select>를 흉내 내서 change 이벤트를 발생시키는 방식은
+   구글 스크립트 버전에 따라 씹히는 경우가 있어 신뢰할 수 없었다.
+   대신 구글 번역이 실제로 사용하는 "googtrans" 쿠키를 직접 심고
+   새로고침하는 방식을 쓴다 — 이건 위젯을 직접 클릭했을 때와 동일한
+   효과를 내는, 훨씬 확실한 방법이다. (버튼 클릭 시 페이지가 한 번
+   새로고침되며 그 언어로 반영된다) */
+function setCookie(name, value, path) {
+  document.cookie = `${name}=${value}; path=${path || "/"}`;
+}
+function clearCookie(name) {
+  const expired = "Thu, 01 Jan 1970 00:00:00 UTC";
+  document.cookie = `${name}=; expires=${expired}; path=/;`;
+  document.cookie = `${name}=; expires=${expired}; path=/; domain=${location.hostname};`;
+}
+
+function setGoogleTranslateLanguage(lang) {
+  if (lang === "ko") {
+    // 원문(한국어)으로 되돌리기: 번역 쿠키를 지우고 새로고침
+    clearCookie("googtrans");
+  } else {
+    // 구글이 실제로 쓰는 쿠키 형식: /{원문언어}/{번역할언어}
+    clearCookie("googtrans");
+    setCookie("googtrans", `/ko/${lang}`);
+  }
+  location.reload();
+}
+
+// 페이지가 새로고침된 뒤에도 방금 선택했던 언어에 맞는 버튼이
+// active 상태로 표시되도록, 현재 googtrans 쿠키를 읽어 초기 상태를 맞춘다.
+function syncActiveLangButtonFromCookie() {
+  const match = document.cookie.match(/googtrans=\/[^/]*\/([a-zA-Z-]+)/);
+  const current = match ? match[1] : "ko";
+  document.querySelectorAll(".lang-btn").forEach((b) => {
+    b.classList.toggle("active", b.dataset.lang === current);
+  });
+}
+syncActiveLangButtonFromCookie();
+
+document.querySelectorAll(".lang-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    setGoogleTranslateLanguage(btn.dataset.lang);
+  });
+});
+
+/* ---------------- 패밀리사이트 드롭다운 ---------------- */
+const familySiteSelect = document.getElementById("familySiteSelect");
+if (familySiteSelect) {
+  familySiteSelect.addEventListener("change", () => {
+    const url = familySiteSelect.value;
+    if (url) {
+      // 항상 새 탭으로만 열기 — 현재 통제실 화면은 그대로 유지되도록
+      // (팝업이 차단되더라도 현재 탭을 대체하지 않음)
+      window.open(url, "_blank", "noopener");
+    }
+    familySiteSelect.selectedIndex = 0; // 선택 후 다시 "패밀리사이트 ▾" 표시로 복귀
+  });
+}
+
+/* ---------------- 공휴일 달력 위젯 (이라크 · 한국) ----------------
+   출처: 대한민국 - 공식 공휴일에 관한 법률/law.go.kr 기준 공표 일정(2026),
+         이라크 - 이라크 정부 발표 및 각국 공휴일 데이터 서비스 종합(2026).
+   이슬람력 기반 공휴일(이드 알피트르, 이드 알아드하, 이슬람 신년, 아슈라,
+   마울리드 등)은 실제 초승달 관측에 따라 발표 시점에 ±1일 조정될 수 있음. */
+const KR_HOLIDAYS_2026 = {
+  "2026-01-01": "신정",
+  "2026-02-16": "설날 연휴",
+  "2026-02-17": "설날",
+  "2026-02-18": "설날 연휴",
+  "2026-03-01": "삼일절",
+  "2026-03-02": "삼일절 대체공휴일",
+  "2026-05-01": "근로자의 날",
+  "2026-05-05": "어린이날",
+  "2026-05-24": "부처님오신날",
+  "2026-05-25": "부처님오신날 대체공휴일",
+  "2026-06-06": "현충일",
+  "2026-07-17": "제헌절",
+  "2026-08-15": "광복절",
+  "2026-08-17": "광복절 대체공휴일",
+  "2026-09-24": "추석 연휴",
+  "2026-09-25": "추석",
+  "2026-09-26": "추석 연휴",
+  "2026-10-03": "개천절",
+  "2026-10-05": "개천절 대체공휴일",
+  "2026-10-09": "한글날",
+  "2026-12-25": "크리스마스",
+};
+
+const IQ_HOLIDAYS_2026 = {
+  "2026-01-01": "New Year's Day",
+  "2026-01-06": "Army Day",
+  "2026-03-18": "Eid al-Fitr holiday",
+  "2026-03-19": "Eid al-Fitr holiday",
+  "2026-03-20": "Eid al-Fitr",
+  "2026-03-21": "Nowruz",
+  "2026-03-22": "Eid al-Fitr holiday",
+  "2026-03-23": "Eid al-Fitr holiday",
+  "2026-05-01": "Labour Day",
+  "2026-05-26": "Eid al-Adha holiday",
+  "2026-05-27": "Eid al-Adha",
+  "2026-05-28": "Eid al-Adha holiday",
+  "2026-05-29": "Eid al-Adha holiday",
+  "2026-06-04": "Eid al-Ghadeer",
+  "2026-06-16": "Islamic New Year",
+  "2026-06-25": "Ashura",
+  "2026-07-14": "Republic Day",
+  "2026-08-25": "The Prophet's Birthday",
+  "2026-10-03": "Iraqi National Day",
+  "2026-12-10": "Victory Day",
+  "2026-12-25": "Christmas Day",
+};
+
+/* ---------------- 달력용 일별 날씨 아이콘 (Open-Meteo weathercode) ---------------- */
+let CALENDAR_DAILY_FORECAST = {}; // { "YYYY-MM-DD": { code, tmax, tmin } }
+let refreshHolidayCalendarWeather = null; // 아래 IIFE 안에서 실제 렌더 함수로 채워짐
+
+function weatherCodeToIcon(code) {
+  if (code === 0) return "☀️";
+  if (code === 1 || code === 2) return "⛅";
+  if (code === 3) return "☁️";
+  if (code === 45 || code === 48) return "🌫️";
+  if ([51, 53, 55, 56, 57, 80, 81, 82].includes(code)) return "🌦️";
+  if ([61, 63, 65, 66, 67].includes(code)) return "🌧️";
+  if ([71, 73, 75, 77, 85, 86].includes(code)) return "❄️";
+  if ([95, 96, 99].includes(code)) return "⛈️";
+  return "";
+}
+
+function storeDailyForecastForCalendar(daily) {
+  if (!daily || !daily.time) return;
+  CALENDAR_DAILY_FORECAST = {};
+  daily.time.forEach((dateStr, i) => {
+    CALENDAR_DAILY_FORECAST[dateStr] = {
+      code: daily.weathercode ? daily.weathercode[i] : null,
+      tmax: daily.temperature_2m_max ? daily.temperature_2m_max[i] : null,
+      tmin: daily.temperature_2m_min ? daily.temperature_2m_min[i] : null,
+    };
+  });
+  if (typeof refreshHolidayCalendarWeather === "function") refreshHolidayCalendarWeather();
+}
+
+(function initHolidayWidget() {
+  const panel = document.getElementById("holidayPanel");
+  const monthLabel = document.getElementById("holidayMonthLabel");
+  const grid = document.getElementById("holidayGrid");
+  const list = document.getElementById("holidayList");
+  const prevBtn = document.getElementById("holidayPrevBtn");
+  const nextBtn = document.getElementById("holidayNextBtn");
+  if (!panel || !grid) return;
+
+  const nowBaghdad = new Date(); // 표시 기준은 오늘 날짜(로컬)
+  let viewYear = nowBaghdad.getFullYear();
+  let viewMonth = nowBaghdad.getMonth(); // 0-11
+
+  function pad2(n) { return String(n).padStart(2, "0"); }
+  function dateKey(y, m, d) { return `${y}-${pad2(m + 1)}-${pad2(d)}`; }
+
+  function renderCalendar() {
+    monthLabel.textContent = `${viewYear}년 ${viewMonth + 1}월`;
+    grid.innerHTML = "";
+
+    const firstDay = new Date(viewYear, viewMonth, 1).getDay(); // 0=일요일
+    const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+    const todayKey = dateKey(nowBaghdad.getFullYear(), nowBaghdad.getMonth(), nowBaghdad.getDate());
+
+    for (let i = 0; i < firstDay; i++) {
+      const empty = document.createElement("div");
+      empty.className = "holiday-cell is-empty";
+      grid.appendChild(empty);
+    }
+
+    const monthEntries = [];
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const key = dateKey(viewYear, viewMonth, d);
+      const krName = KR_HOLIDAYS_2026[key];
+      const iqName = IQ_HOLIDAYS_2026[key];
+
+      const cell = document.createElement("div");
+      cell.className = "holiday-cell";
+      if (key === todayKey) cell.classList.add("is-today");
+      if (krName || iqName) cell.classList.add("has-holiday");
+
+      const num = document.createElement("span");
+      num.textContent = String(d);
+      cell.appendChild(num);
+
+      const fc = CALENDAR_DAILY_FORECAST[key];
+      if (fc && fc.code !== null && fc.code !== undefined) {
+        const icon = document.createElement("span");
+        icon.className = "holiday-weather-icon";
+        icon.textContent = weatherCodeToIcon(fc.code);
+        if (fc.tmax !== null && fc.tmax !== undefined) {
+          icon.title = `최고 ${Math.round(fc.tmax)}° / 최저 ${Math.round(fc.tmin)}°`;
+        }
+        cell.appendChild(icon);
+
+        if (fc.tmax !== null && fc.tmax !== undefined && fc.tmin !== null && fc.tmin !== undefined) {
+          const temp = document.createElement("span");
+          temp.className = "holiday-temp";
+          temp.innerHTML = `<span class="holiday-temp-max">${Math.round(fc.tmax)}°</span>/<span class="holiday-temp-min">${Math.round(fc.tmin)}°</span>`;
+          cell.appendChild(temp);
+        }
+      }
+
+      if (krName || iqName) {
+        const dots = document.createElement("span");
+        dots.className = "holiday-dots";
+        if (krName) {
+          const dot = document.createElement("span");
+          dot.className = "holiday-dot holiday-dot-kr";
+          dots.appendChild(dot);
+        }
+        if (iqName) {
+          const dot = document.createElement("span");
+          dot.className = "holiday-dot holiday-dot-iq";
+          dots.appendChild(dot);
+        }
+        cell.appendChild(dots);
+        const titleParts = [];
+        if (krName) titleParts.push(`🇰🇷 ${krName}`);
+        if (iqName) titleParts.push(`🇮🇶 ${iqName}`);
+        cell.title = titleParts.join(" · ");
+        monthEntries.push({ d, krName, iqName });
+      }
+
+      grid.appendChild(cell);
+    }
+
+    list.innerHTML = "";
+    if (monthEntries.length === 0) {
+      const li = document.createElement("li");
+      li.className = "holiday-list-empty";
+      li.textContent = "이번 달은 공휴일이 없습니다.";
+      list.appendChild(li);
+    } else {
+      monthEntries.forEach(({ d, krName, iqName }) => {
+        const li = document.createElement("li");
+        const dateSpan = document.createElement("span");
+        dateSpan.className = "holiday-list-date";
+        dateSpan.textContent = `${pad2(viewMonth + 1)}/${pad2(d)}`;
+        li.appendChild(dateSpan);
+        const nameSpan = document.createElement("span");
+        const names = [];
+        if (krName) names.push(`🇰🇷 ${krName}`);
+        if (iqName) names.push(`🇮🇶 ${iqName}`);
+        nameSpan.textContent = names.join("  ·  ");
+        li.appendChild(nameSpan);
+        list.appendChild(li);
+      });
+    }
+  }
+
+  function openPanel() {
+    renderCalendar();
+    if (typeof alignSideWidgets === "function") alignSideWidgets();
+  }
+
+  prevBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    viewMonth -= 1;
+    if (viewMonth < 0) { viewMonth = 11; viewYear -= 1; }
+    renderCalendar();
+    if (typeof alignSideWidgets === "function") alignSideWidgets();
+  });
+  nextBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    viewMonth += 1;
+    if (viewMonth > 11) { viewMonth = 0; viewYear += 1; }
+    renderCalendar();
+    if (typeof alignSideWidgets === "function") alignSideWidgets();
+  });
+
+  // 항상 표시: 페이지 로드 시 바로 렌더링
+  openPanel();
+
+  // 날씨 데이터가 나중에 도착했을 때(비동기) 달력을 다시 그릴 수 있도록 외부에 노출
+  refreshHolidayCalendarWeather = () => {
+    renderCalendar();
+    if (typeof alignSideWidgets === "function") alignSideWidgets();
+  };
+})();
+
+
 function updateClock() {
   const now = new Date();
   const timeFmt = new Intl.DateTimeFormat("ko-KR", {
@@ -182,7 +511,7 @@ function escapeHtml(str) {
 /* ---------------- 날씨 & 대기질 (Open-Meteo) ---------------- */
 async function loadWeather() {
   try {
-    const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m,wind_direction_10m&hourly=precipitation_probability&daily=sunrise,sunset&timezone=${encodeURIComponent(TIMEZONE)}`;
+    const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m,wind_direction_10m&hourly=precipitation_probability&daily=sunrise,sunset,weathercode,temperature_2m_max,temperature_2m_min&forecast_days=16&timezone=${encodeURIComponent(TIMEZONE)}`;
     const airUrl = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=pm10,pm2_5,ozone,uv_index&timezone=${encodeURIComponent(TIMEZONE)}`;
 
     const [weatherRes, airRes] = await Promise.all([fetch(weatherUrl), fetch(airUrl)]);
@@ -197,14 +526,15 @@ async function loadWeather() {
     document.getElementById("wHumidity").textContent = c.relative_humidity_2m ?? "–";
     document.getElementById("wWind").textContent = c.wind_speed_10m?.toFixed(1) ?? "–";
     updateWindDirection(c.wind_direction_10m);
-    document.getElementById("wPm10").textContent = a.pm10?.toFixed(0) ?? "–";
-    document.getElementById("wPm25").textContent = a.pm2_5?.toFixed(0) ?? "–";
-    document.getElementById("wOzone").textContent = a.ozone?.toFixed(0) ?? "–";
+    updateAirQualityGrade("wPm10", a.pm10, PM10_GRADES);
+    updateAirQualityGrade("wPm25", a.pm2_5, PM25_GRADES);
+    updateAirQualityGrade("wOzone", a.ozone, OZONE_GRADES);
     updateUvIndex(a.uv_index);
 
     updateHeatStatus(c.temperature_2m, c.apparent_temperature);
     updateSunTimes(weather.daily);
     updateRainChance(weather.hourly);
+    storeDailyForecastForCalendar(weather.daily);
     document.getElementById("lastUpdated").textContent =
       "마지막 갱신: " + new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date());
   } catch (err) {
@@ -229,6 +559,12 @@ const WIND_COMPASS = [
   "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"
 ];
 
+// 어르신들도 바로 이해하실 수 있도록 한글 풍향 이름도 같이 표기
+const WIND_COMPASS_KO = [
+  "북풍", "북북동풍", "북동풍", "동북동풍", "동풍", "동남동풍", "남동풍", "남남동풍",
+  "남풍", "남남서풍", "남서풍", "서남서풍", "서풍", "서북서풍", "북서풍", "북북서풍"
+];
+
 function updateWindDirection(deg) {
   const arrow = document.getElementById("windArrow");
   const label = document.getElementById("wWindDir");
@@ -240,7 +576,47 @@ function updateWindDirection(deg) {
   // (Open-Meteo의 deg 값은 '불어오는 방향' 기준이라 180도 반전해서 사용합니다.)
   if (arrow) arrow.style.transform = `rotate(${deg + 180}deg)`;
   const idx = Math.round(deg / 22.5) % 16;
-  if (label) label.textContent = `${WIND_COMPASS[idx]} (${Math.round(deg)}°)`;
+  if (label) {
+    label.innerHTML =
+      `<span class="wind-compass-deg">${WIND_COMPASS[idx]} (${Math.round(deg)}°)</span>` +
+      `<span class="wind-compass-ko">${WIND_COMPASS_KO[idx]}</span>`;
+  }
+}
+
+/* 국내 환경부 대기환경기준 등급 (24시간 평균 기준, ㎍/㎥) */
+const PM10_GRADES = [
+  { max: 30, label: "좋음", color: "var(--cyan)" },
+  { max: 80, label: "보통", color: "var(--green)" },
+  { max: 150, label: "나쁨", color: "var(--warn)" },
+  { max: Infinity, label: "매우나쁨", color: "var(--danger)" },
+];
+const PM25_GRADES = [
+  { max: 15, label: "좋음", color: "var(--cyan)" },
+  { max: 35, label: "보통", color: "var(--green)" },
+  { max: 75, label: "나쁨", color: "var(--warn)" },
+  { max: Infinity, label: "매우나쁨", color: "var(--danger)" },
+];
+/* 오존(O3)은 환경부 기준이 ppm(0.030/0.090/0.150)으로 정의돼 있는데,
+   오픈메테오는 µg/㎥로 값을 주기 때문에 표준 변환식(µg/㎥ = ppb × 48/24.45)으로
+   환산한 값을 기준으로 사용한다. */
+const OZONE_GRADES = [
+  { max: 59, label: "좋음", color: "var(--cyan)" },
+  { max: 177, label: "보통", color: "var(--green)" },
+  { max: 295, label: "나쁨", color: "var(--warn)" },
+  { max: Infinity, label: "매우나쁨", color: "var(--danger)" },
+];
+
+function updateAirQualityGrade(elementId, value, grades) {
+  const el = document.getElementById(elementId);
+  if (!el) return;
+  if (value === undefined || value === null || isNaN(value)) {
+    el.textContent = "–";
+    el.style.color = "";
+    return;
+  }
+  const grade = grades.find((g) => value <= g.max) || grades[grades.length - 1];
+  el.textContent = `${value.toFixed(0)} (${grade.label})`;
+  el.style.color = grade.color;
 }
 
 function updateUvIndex(uv) {
@@ -311,6 +687,196 @@ function updateHeatStatus(temp, feelsLike) {
 loadSiteData();
 loadWeather();
 setInterval(loadWeather, 10 * 60 * 1000); // 10분마다 갱신
+
+/* ---------------- 환율 (USD 기준 IQD · KRW) ---------------- */
+async function loadExchangeRates() {
+  const elUsdIqd = document.getElementById("fxUsdIqd");
+  const elUsdIqdOfficial = document.getElementById("fxUsdIqdOfficial");
+  const elUsdKrw = document.getElementById("fxUsdKrw");
+  const elKrwJpy = document.getElementById("fxKrwJpy");
+  const elKrwCny = document.getElementById("fxKrwCny");
+  const elUpdated = document.getElementById("fxUpdated");
+  if (!elUsdIqd) return;
+
+  // KRW/JPY/CNY는 일반적인 실시간(중간시장) 환율 API로 충분히 정확하다.
+  // IQD는 공식 고시환율과 실제 시장(암시장) 환율의 차이가 커서,
+  // 시장환율은 market-fx.json(별도 GitHub Actions가 usdiqd.com에서 수집)에서 가져오고,
+  // 실패 시에만 공식 환율 API 값으로 대체한다.
+  let krw = null, jpy = null, cny = null, officialIqd = null;
+  try {
+    const res = await fetch("https://api.exchangerate.fun/latest?base=USD");
+    if (!res.ok) throw new Error("환율 API 응답 오류");
+    const data = await res.json();
+    krw = data.rates && data.rates.KRW;
+    jpy = data.rates && data.rates.JPY;
+    cny = data.rates && data.rates.CNY;
+    officialIqd = data.rates && data.rates.IQD;
+  } catch (err) {
+    console.error(err);
+  }
+
+  let marketIqd = null;
+  try {
+    const res = await fetch("market-fx.json", { cache: "no-store" });
+    if (res.ok) {
+      const data = await res.json();
+      marketIqd = data.usdIqdParallel || null;
+      if (data.usdIqdOfficial) officialIqd = data.usdIqdOfficial; // 같은 출처 값이 있으면 그쪽을 우선
+    }
+  } catch (err) {
+    console.error(err);
+  }
+
+  if (!krw) {
+    elUpdated.textContent = "환율 정보를 불러올 수 없습니다";
+    return;
+  }
+
+  if (officialIqd) {
+    elUsdIqdOfficial.textContent = officialIqd.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
+  }
+  if (marketIqd) {
+    elUsdIqd.textContent = marketIqd.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
+  } else {
+    elUsdIqd.textContent = "수집 전";
+  }
+
+  elUsdKrw.textContent = krw.toLocaleString("ko-KR", { maximumFractionDigits: 1 });
+
+  // 1,000원 기준으로 환산해야 숫자가 너무 작아지지 않아 보기 편하다
+  if (jpy) {
+    const krwToJpyPer1000 = (jpy / krw) * 1000;
+    elKrwJpy.textContent = krwToJpyPer1000.toLocaleString("ko-KR", { maximumFractionDigits: 1 }) + " 엔";
+  }
+  if (cny) {
+    const krwToCnyPer1000 = (cny / krw) * 1000;
+    elKrwCny.textContent = krwToCnyPer1000.toLocaleString("ko-KR", { maximumFractionDigits: 1 }) + " 위안";
+  }
+
+  const now = new Date();
+  const stamp = new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(now);
+  elUpdated.textContent = marketIqd
+    ? `갱신: ${stamp} (바그다드) · 시장환율은 usdiqd.com 기준`
+    : `갱신: ${stamp} (바그다드) · 시장환율 수집 전`;
+}
+loadExchangeRates();
+setInterval(loadExchangeRates, 10 * 60 * 1000); // 10분마다 갱신
+
+/* ---------------- 우측 여백 위젯(공휴일 달력 · 환율) 정렬 ----------------
+   .grid(대시보드 카드 영역)의 실제 오른쪽 끝 좌표를 측정해서, 그 옆
+   여백에 정확히 붙인다. 화면 폭에 따른 계산식으로 추측하지 않고
+   실측하기 때문에 카드 위에 겹치는 일이 없다.
+   여백이 위젯 하나 들어갈 만큼도 없는 좁은 화면에서는 위젯을 숨긴다
+   (768px 미만은 CSS 미디어쿼리가 별도로 처리). */
+function alignSideWidgets() {
+  const gridEl = document.querySelector(".grid");
+  const holidayPanel = document.getElementById("holidayPanel");
+  const fxWidget = document.getElementById("fxWidget");
+  if (!gridEl) return;
+
+  if (window.innerWidth <= 768) {
+    // 좁은 화면: JS로 강제 설정한 left 값을 지워서 CSS 미디어쿼리가 그대로 적용되게 둔다
+    if (holidayPanel) holidayPanel.style.left = "";
+    if (fxWidget) fxWidget.style.left = "";
+    if (fxWidget) fxWidget.style.display = "";
+    const rightGroupMobile = document.getElementById("tabbarRightGroup");
+    if (rightGroupMobile) {
+      rightGroupMobile.style.position = "static";
+      rightGroupMobile.style.left = "";
+      rightGroupMobile.style.top = "";
+      rightGroupMobile.style.marginLeft = "auto";
+    }
+    return;
+  }
+
+  // .grid 컨테이너 자체의 경계가 아니라, 실제 카드(패널)들의 경계를 기준으로 잡는다.
+  // (.grid에는 좌우 padding(32px)이 있어서 컨테이너 기준으로 재면 카드 테두리보다
+  //  32px 더 바깥쪽이 기준점이 되어 버려, 카드-카드 간격보다 카드-달력 간격이
+  //  더 벌어져 보이는 버그가 있었다)
+  const panels = gridEl.querySelectorAll(".panel");
+  let gridRight = gridEl.getBoundingClientRect().right;
+  let gridLeft = gridEl.getBoundingClientRect().left;
+  if (panels.length) {
+    const rects = Array.from(panels).map((p) => p.getBoundingClientRect());
+    gridRight = Math.max(...rects.map((r) => r.right));
+    gridLeft = Math.min(...rects.map((r) => r.left));
+  }
+  const gap = 20;
+  const scrollX = window.scrollX || window.pageXOffset || 0;
+  const scrollY = window.scrollY || window.pageYOffset || 0;
+
+  // 달력은 grid 컨테이너 자체가 아니라, 실제 카드(첫 패널)의 위쪽 끝과 높이를 맞춘다
+  // (grid에는 위쪽 padding이 있어서 컨테이너 기준으로 맞추면 그만큼 더 위에 위치하게 됨)
+  // position:absolute라 문서 좌표(스크롤 오프셋 포함)로 넣어야 페이지와 같이 스크롤된다.
+  const firstPanel = gridEl.querySelector(".panel");
+  if (holidayPanel && firstPanel) {
+    holidayPanel.style.top = `${Math.round(firstPanel.getBoundingClientRect().top + scrollY)}px`;
+  }
+
+  // 좌우 여백이 완전히 같아지도록 달력 폭을 계산: (뷰포트 폭) - (카드 오른쪽 끝 + 간격) - (왼쪽 여백)
+  // 예전엔 460px 상한을 둬서 화면이 넓을 때 오른쪽 여백이 왼쪽보다 남아버리는 문제가 있었음 —
+  // 좌우 여백을 정확히 맞추는 게 우선이므로 상한은 넉넉하게 풀어둔다.
+  const left = gridRight + gap;
+  const minWidth = 220;
+  const maxWidth = 900; // 지나치게 넓어지는 것만 막는 넉넉한 상한
+  let calendarWidth = window.innerWidth - left - gridLeft;
+  calendarWidth = Math.max(minWidth, Math.min(maxWidth, calendarWidth));
+
+  const fitsOnScreen = left + calendarWidth <= window.innerWidth - 8;
+
+  [holidayPanel, fxWidget].forEach((el) => {
+    if (!el) return;
+
+    if (fitsOnScreen) {
+      el.style.left = `${Math.round(left + scrollX)}px`;
+      el.style.width = `${Math.round(calendarWidth)}px`;
+      el.style.display = "";
+    } else {
+      // 여백이 위젯 하나 들어갈 만큼도 없으면 겹치지 않도록 숨긴다
+      el.style.display = "none";
+    }
+  });
+
+  // 환율 위젯은 "화면 하단에서 20px" 고정이 아니라, 달력 패널 바로 아래에
+  // 오도록 실제 달력 높이를 측정해서 위치를 계산한다.
+  // (달력에 표시되는 공휴일 개수·아이콘 등에 따라 높이가 달마다 달라지므로
+  // 매번 다시 측정해야 겹치지 않는다)
+  if (fitsOnScreen && holidayPanel && fxWidget && holidayPanel.style.display !== "none") {
+    const holidayBottom = holidayPanel.getBoundingClientRect().bottom + scrollY;
+    fxWidget.style.bottom = "auto";
+    fxWidget.style.top = `${Math.round(holidayBottom + gap)}px`;
+  }
+
+  // 언어 선택 + 패밀리사이트 그룹: 탭 바 자체의 오른쪽 끝이 아니라
+  // 달력의 오른쪽 끝에 맞춰서 정렬한다 (달력이 탭 바보다 더 오른쪽까지 있으므로).
+  const rightGroup = document.getElementById("tabbarRightGroup");
+  const tabBarEl = document.querySelector(".tab-bar");
+  if (rightGroup && tabBarEl) {
+    if (fitsOnScreen) {
+      const calendarRight = left + calendarWidth; // 달력의 실제 오른쪽 끝(뷰포트 기준)
+      const groupWidth = rightGroup.offsetWidth || 0;
+      const tabBarRect = tabBarEl.getBoundingClientRect();
+      const tabBarCenterY = tabBarRect.top + tabBarRect.height / 2;
+      const groupHeight = rightGroup.offsetHeight || 0;
+      rightGroup.style.left = `${Math.round(calendarRight - groupWidth + scrollX)}px`;
+      rightGroup.style.top = `${Math.round(tabBarCenterY - groupHeight / 2 + scrollY)}px`;
+      rightGroup.style.display = "";
+    } else {
+      // 달력 자체가 안 뜨는 좁은 화면에서는 탭 바 안의 원래 자리로 되돌린다
+      rightGroup.style.left = "";
+      rightGroup.style.top = "";
+      rightGroup.style.position = "static";
+      rightGroup.style.marginLeft = "auto";
+    }
+  }
+}
+
+window.addEventListener("load", alignSideWidgets);
+window.addEventListener("resize", alignSideWidgets);
+// 구글 위젯/번역 등으로 레이아웃이 뒤늦게 흔들리는 경우를 대비해 재계산
+setTimeout(alignSideWidgets, 600);
+setTimeout(alignSideWidgets, 1500);
+alignSideWidgets();
 
 
 /* ---------------- 탭 전환 ---------------- */
@@ -577,6 +1143,88 @@ function renderWhoOutbreaks(items, generatedAt) {
 }
 
 loadWhoOutbreaks();
+
+/* ---------------- 국내 뉴스 (의학 · 질병 · 사고) ---------------- */
+async function loadDomesticNews() {
+  const list = document.getElementById("domesticNewsList");
+  try {
+    const res = await fetch("domestic-news.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("domestic-news.json 로드 실패");
+    const data = await res.json();
+    renderDomesticNews(data.items, data.generatedAt);
+  } catch (err) {
+    console.error(err);
+    list.innerHTML = `<li class="embassy-row skeleton">아직 domestic-news.json이 없거나 불러올 수 없습니다. GitHub Actions가 최초 1회 실행된 후 표시됩니다.</li>`;
+  }
+}
+
+function renderDomesticNews(items, generatedAt) {
+  const list = document.getElementById("domesticNewsList");
+  if (!items || !items.length) {
+    list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 뉴스가 없습니다.</li>`;
+    return;
+  }
+  list.innerHTML = items.map(n => `
+    <li class="embassy-row">
+      <div class="notice-top">
+        <span class="notice-title">${escapeHtml(n.title)}</span>
+        <span class="notice-date">${escapeHtml((n.date || "").slice(0, 10))}</span>
+      </div>
+      <div class="notice-body">${escapeHtml(n.summary || n.source || "")}</div>
+      ${n.link ? `<a class="embassy-link" href="${n.link}" target="_blank" rel="noopener noreferrer">기사 원문 보기 ↗</a>` : ""}
+    </li>
+  `).join("");
+
+  if (generatedAt) {
+    const dt = new Date(generatedAt);
+    document.getElementById("domesticNewsMeta").textContent =
+      "Google 뉴스 검색 연동 · 마지막 수집: " +
+      new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(dt);
+  }
+}
+
+loadDomesticNews();
+
+/* ---------------- 질병관리청 · 보건복지부 소식 ---------------- */
+async function loadHealthAuthorityNews() {
+  const list = document.getElementById("healthAuthorityNewsList");
+  try {
+    const res = await fetch("health-authority-news.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("health-authority-news.json 로드 실패");
+    const data = await res.json();
+    renderHealthAuthorityNews(data.items, data.generatedAt);
+  } catch (err) {
+    console.error(err);
+    list.innerHTML = `<li class="embassy-row skeleton">아직 health-authority-news.json이 없거나 불러올 수 없습니다. GitHub Actions가 최초 1회 실행된 후 표시됩니다.</li>`;
+  }
+}
+
+function renderHealthAuthorityNews(items, generatedAt) {
+  const list = document.getElementById("healthAuthorityNewsList");
+  if (!items || !items.length) {
+    list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 소식이 없습니다.</li>`;
+    return;
+  }
+  list.innerHTML = items.map(n => `
+    <li class="embassy-row">
+      <div class="notice-top">
+        <span class="notice-title">${n.agency ? `[${escapeHtml(n.agency)}] ` : ""}${escapeHtml(n.title)}</span>
+        <span class="notice-date">${escapeHtml((n.date || "").slice(0, 10))}</span>
+      </div>
+      ${n.source ? `<div class="notice-body">${escapeHtml(n.source)}</div>` : ""}
+      ${n.link ? `<a class="embassy-link" href="${n.link}" target="_blank" rel="noopener noreferrer">원문 보기 ↗</a>` : ""}
+    </li>
+  `).join("");
+
+  if (generatedAt) {
+    const dt = new Date(generatedAt);
+    document.getElementById("healthAuthorityNewsMeta").textContent =
+      "질병관리청·보건복지부 공식 도메인 검색 연동 · 마지막 수집: " +
+      new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(dt);
+  }
+}
+
+loadHealthAuthorityNews();
 
 /* ---------------- 안전작업절차서 (procedures.json 기반) ---------------- */
 function procEscapeHtml(str) {
@@ -929,115 +1577,6 @@ function wzSetupZoomPan() {
 
 loadWorkZones();
 
-/* ==========================================================
-   접속 시 동영상 팝업 (video-popup.json 기반)
-   ========================================================== */
-
-async function loadVideoPopup() {
-  try {
-    const res = await fetch("video-popup.json", { cache: "no-store" });
-    if (!res.ok) return;
-    const cfg = await res.json();
-    if (!cfg.enabled) return;
-
-    if (cfg.frequency === "daily") {
-      const today = new Date().toISOString().slice(0, 10);
-      if (localStorage.getItem("videoPopupLastShown") === today) return;
-    }
-
-    showVideoPopup(cfg);
-  } catch (err) {
-    console.error("동영상 팝업 로드 실패:", err);
-  }
-}
-
-function showVideoPopup(cfg) {
-  const overlay = document.getElementById("videoPopupOverlay");
-  const body = document.getElementById("videoPopupBody");
-  const titleEl = document.getElementById("videoPopupTitle");
-  if (!overlay || !body) return;
-
-  titleEl.textContent = cfg.title || "동영상";
-
-  if (cfg.type === "youtube" && cfg.youtubeId) {
-    body.innerHTML = `
-      <iframe
-        src="https://www.youtube.com/embed/${encodeURIComponent(cfg.youtubeId)}?autoplay=1&rel=0"
-        allow="autoplay; encrypted-media" allowfullscreen
-        style="width:100%; aspect-ratio:16/9; border:0;">
-      </iframe>`;
-  } else if (cfg.type === "mp4" && cfg.src) {
-    body.innerHTML = `
-      <video src="${cfg.src}" controls autoplay style="width:100%; display:block;">
-        브라우저가 동영상 재생을 지원하지 않습니다.
-      </video>`;
-  } else {
-    return; // 설정이 불완전하면 팝업을 띄우지 않음
-  }
-
-  overlay.style.display = "flex";
-
-  if (cfg.frequency === "daily") {
-    const today = new Date().toISOString().slice(0, 10);
-    localStorage.setItem("videoPopupLastShown", today);
-  }
-
-  const closeBtn = document.getElementById("videoPopupClose");
-  const close = () => {
-    overlay.style.display = "none";
-    body.innerHTML = ""; // 동영상/오디오 정지
-  };
-  closeBtn.onclick = close;
-  overlay.addEventListener("click", (e) => {
-    if (e.target === overlay) close();
-  });
-}
-
-loadVideoPopup();
-
-/* ---------------- 중동정세 뉴스 ---------------- */
-async function loadMiddleEastNews() {
-  const list = document.getElementById("meNewsList");
-  try {
-    const res = await fetch("middle-east-news.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("middle-east-news.json 로드 실패");
-    const data = await res.json();
-    renderMiddleEastNews(data.items, data.generatedAt);
-  } catch (err) {
-    console.error(err);
-    list.innerHTML = `<li class="embassy-row skeleton">아직 middle-east-news.json이 없거나 불러올 수 없습니다. GitHub Actions가 최초 1회 실행된 후 표시됩니다.</li>`;
-  }
-}
-
-function renderMiddleEastNews(items, generatedAt) {
-  const list = document.getElementById("meNewsList");
-  if (!items || !items.length) {
-    list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 뉴스가 없습니다.</li>`;
-    return;
-  }
-  list.innerHTML = items.map(n => `
-    <li class="embassy-row">
-      <div class="notice-top">
-        <span class="notice-title">${escapeHtml(n.title)}</span>
-        <span class="notice-date">${escapeHtml((n.published || "").slice(0, 16))}</span>
-      </div>
-      <div class="notice-body">${escapeHtml(n.summary || "")}</div>
-      <div class="news-footer">
-        <span class="news-source">${escapeHtml(n.source || "")}</span>
-        <a class="news-link" href="${n.link}" target="_blank" rel="noopener noreferrer">원문 보기 ↗</a>
-      </div>
-    </li>
-  `).join("");
-
-  if (generatedAt) {
-    const dt = new Date(generatedAt);
-    document.getElementById("meNewsMeta").textContent =
-      "Google 뉴스 기반 자동 수집 · 마지막 수집: " +
-      new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(dt);
-  }
-}
-
-loadMiddleEastNews();
 
 /* ==========================================================
    선박 추적 (ships.json 기반, Leaflet 지도)
@@ -1102,11 +1641,11 @@ function renderPlanes(data) {
   const meta = document.getElementById("shipsMeta");
   if (meta && data.count !== undefined) {
     meta.dataset.planeCount = data.count;
-    wzUpdateCombinedMeta();
+    shipsUpdateCombinedMeta();
   }
 }
 
-function wzUpdateCombinedMeta() {
+function shipsUpdateCombinedMeta() {
   const meta = document.getElementById("shipsMeta");
   if (!meta) return;
   const shipCount = meta.dataset.shipCount || "–";
@@ -1155,7 +1694,7 @@ function renderShips(data) {
 
   if (meta) {
     meta.dataset.shipCount = ships.length;
-    wzUpdateCombinedMeta();
+    shipsUpdateCombinedMeta();
     const genText = data.generatedAt
       ? " · 마지막 수집: " + new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(data.generatedAt))
       : "";
