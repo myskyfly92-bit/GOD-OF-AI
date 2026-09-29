@@ -12,6 +12,7 @@ permissions:
 jobs:
   update-overseas:
     runs-on: ubuntu-latest
+    timeout-minutes: 25   # 무슨 일이 있어도 25분 넘게 돌지 않게
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v4
@@ -27,6 +28,7 @@ jobs:
       - name: DART 해외 수주 공시 수집
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          PYTHONUNBUFFERED: "1"   # 진행 상황이 로그에 바로바로 보이게
         run: python scripts/fetch_dart_overseas.py
 
       - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)

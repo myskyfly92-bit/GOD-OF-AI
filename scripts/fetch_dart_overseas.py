@@ -29,6 +29,10 @@ PROJECTS_PATH = "overseas-projects.json"
 CACHE_PATH = "dart-contracts-cache.json"
 WORLD_PATH = "world-map.json"
 LOOKBACK_MONTHS = 24
+# 한 번 실행에서 새로 읽을 공시 원문 수와 시간 제한.
+# 처음 2년치를 한꺼번에 읽으면 오래 걸리므로 나눠서 읽고, 읽은 것은 캐시에 저장해 다음 실행 때 이어서 읽는다.
+MAX_NEW_DOCS_PER_RUN = 150
+TIME_BUDGET_SEC = 12 * 60
 HEADERS = {"User-Agent": "Mozilla/5.0 (BNCP-HSE-Dashboard; GitHub Actions)"}
 
 # 수집 대상 상장 건설사: (공시상 회사명 후보들, 지도에 쓸 회사 id, 표시 이름, 약칭, 색)
@@ -74,6 +78,8 @@ COUNTRY_ALIASES = {
     "TAIWAN": "대만", "타이완": "대만", "HONGKONG": "홍콩", "터키": "튀르키예", "TURKEY": "튀르키예", "CHINA": "중국",
     "JAPAN": "일본", "SWEDEN": "스웨덴", "ROMANIA": "루마니아", "NEWZEALAND": "뉴질랜드",
 }
+SHIP_PATTERN = re.compile(r"\d+\s*척|운반선|유조선|컨테이너선|벌크선|원유운반|VLCC|VLGC|LNGC|셔틀탱커|선박", re.I)
+
 DOMESTIC_WORDS = ["대한민국", "국내", "한국", "서울", "경기", "인천", "부산", "대구", "광주", "대전", "울산", "세종",
                   "강원", "충청", "충북", "충남", "전라", "전북", "전남", "경상", "경북", "경남", "제주"]
 
@@ -123,6 +129,9 @@ def cells_after(rows, label_words, numeric=False):
     for row in rows:
         for i, c in enumerate(row):
             n = norm(c)
+            # 긴 설명 문장(기타 참고사항 등)은 항목 이름 칸이 아니므로 건너뛴다
+            if len(n) > 30:
+                continue
             if all(k in n for k in keys):
                 for v in row[i + 1:]:
                     v = v.strip()
@@ -156,14 +165,15 @@ def parse_contract(html):
 # ---------------------------------------------------------------- OpenDART 호출
 def dart_get(path, key, **params):
     params["crtfc_key"] = key
-    for attempt in range(3):
+    for attempt in range(2):
         try:
-            r = requests.get(f"{API}/{path}", params=params, headers=HEADERS, timeout=60)
+            r = requests.get(f"{API}/{path}", params=params, headers=HEADERS, timeout=25)
             if r.status_code == 200:
                 return r
+            print(f"[경고] {path} 응답 코드 {r.status_code}", file=sys.stderr)
         except requests.RequestException as exc:
             print(f"[경고] {path} 요청 오류: {exc}", file=sys.stderr)
-        time.sleep(2 + attempt * 3)
+        time.sleep(2)
     raise RuntimeError(f"{path} 요청 실패")
 
 
@@ -223,14 +233,14 @@ def fetch_document_html(key, rcept_no):
     except (zipfile.BadZipFile, RuntimeError):
         pass
     # 2) 안 되면 DART 뷰어 페이지
-    main = requests.get("https://dart.fss.or.kr/dsaf001/main.do", params={"rcpNo": rcept_no}, headers=HEADERS, timeout=60)
+    main = requests.get("https://dart.fss.or.kr/dsaf001/main.do", params={"rcpNo": rcept_no}, headers=HEADERS, timeout=25)
     m = re.search(r"viewDoc\('(\d+)',\s*'(\d+)'", main.text) or re.search(r'"dcmNo"\s*[:=]\s*"?(\d+)', main.text)
     if not m:
         raise RuntimeError("원문 문서 번호를 찾지 못함")
     dcm = m.group(2) if m.lastindex and m.lastindex >= 2 else m.group(1)
     v = requests.get("https://dart.fss.or.kr/report/viewer.do",
                      params={"rcpNo": rcept_no, "dcmNo": dcm, "eleId": 0, "offset": 0, "length": 0, "dtd": "HTML"},
-                     headers=HEADERS, timeout=60)
+                     headers=HEADERS, timeout=25)
     v.encoding = v.apparent_encoding or "utf-8"
     return v.text
 
@@ -260,15 +270,43 @@ def detect_country(text, centers):
     return None
 
 
+GENERIC_WORDS = {"신도시", "사업", "관련", "프로젝트", "공사", "건설", "PROJECT", "NEW", "CITY", "THE", "AND",
+                 "PHASE", "PACKAGE", "PKG", "PLANT", "주택", "개발", "단지"}
+
+
+def name_tokens(name):
+    toks = set()
+    for t in re.findall(r"[가-힣]{2,}|[A-Za-z]{3,}", name or ""):
+        t = t.upper()
+        if t not in GENERIC_WORDS and len(t) >= 3 or (re.match(r"[가-힣]", t) and len(t) >= 3):
+            toks.add(t)
+    return toks - GENERIC_WORDS
+
+
+def same_project(manual, auto):
+    """같은 회사·같은 나라이고, 흔한 단어를 뺀 고유 이름(예: 비스마야)이 겹치면 같은 공사로 본다"""
+    if manual.get("company") != auto.get("company") or manual.get("country") != auto.get("country"):
+        return False
+    common = name_tokens(manual.get("name")) & name_tokens(auto.get("name"))
+    common -= {auto.get("country", "").upper()}
+    return bool(common)
+
+
 def is_domestic(text):
     return any(w in (text or "") for w in DOMESTIC_WORDS)
 
 
 def fmt_amount(raw):
-    digits = re.sub(r"[^\d]", "", raw or "")
-    if not digits:
+    # 금액 칸에 "558,625,200,000 6.46"(매출액 대비 %)이나 설명 문장이 같이 들어오는 경우가 있어서,
+    # 칸 안의 숫자들 중 1억 원 이상인 가장 큰 숫자(원화 계약금액)를 고른다. 숫자를 이어 붙이지 않는다.
+    nums = []
+    for m in re.finditer(r"\d{1,3}(?:,\d{3})+|\d{9,}", raw or ""):
+        v = int(m.group(0).replace(",", ""))
+        if 1e8 <= v < 1e15:
+            nums.append(v)
+    if not nums:
         return ""
-    won = int(digits)
+    won = max(nums)
     eok = won / 1e8
     if eok >= 10000:
         jo = int(eok // 10000)
@@ -316,6 +354,8 @@ def main():
 
     auto_projects, company_defs = {}, {}
     total_filings = overseas = domestic = unknown = failed = 0
+    new_docs = postponed = 0
+    started = time.time()
 
     for names, cid, cname, short, color in TARGETS:
         corp_code = next((listed[n] for n in names if n in listed), None)
@@ -333,13 +373,20 @@ def main():
         for it in sorted(filings, key=lambda x: x["rcept_no"]):
             rno = it["rcept_no"]
             if rno not in cache:
+                if new_docs >= MAX_NEW_DOCS_PER_RUN or time.time() - started > TIME_BUDGET_SEC:
+                    postponed += 1
+                    continue
+                new_docs += 1
+                t0 = time.time()
                 try:
                     cache[rno] = parse_contract(fetch_document_html(key, rno))
-                    time.sleep(0.4)
+                    time.sleep(0.3)
                 except Exception as exc:
                     failed += 1
                     print(f"[경고] {cname} {rno} 원문 읽기 실패: {exc}", file=sys.stderr)
                     continue
+                if new_docs % 10 == 0:
+                    print(f"  … 새 공시 원문 {new_docs}건 읽음 (최근 1건 {time.time() - t0:.1f}초, 누적 {time.time() - started:.0f}초)")
             info = cache[rno]
             name = (info.get("name") or "").strip()
             region = info.get("region") or ""
@@ -347,6 +394,9 @@ def main():
                 failed += 1
                 continue
             if cid in CONSTRUCTION_ONLY and not any(w in name + (info.get("kind") or "") for w in CONSTRUCTION_WORDS):
+                continue
+            # 선박 건조 계약(유조선 3척 등)은 국내 조선소에서 짓고 '지역'이 선주 국적이라 해외 현장이 아니다
+            if SHIP_PATTERN.search(name):
                 continue
             country = detect_country(region, centers) or detect_country(name, centers)
             if not country or country == "대한민국":
@@ -391,8 +441,29 @@ def main():
         if o:
             p.update({k: v for k, v in o.items() if k in ("lat", "lon", "city", "name", "status", "note")})
 
+    # 이번에 원문을 다 못 읽었으면(나눠 읽는 중) 기존 자동 현장 중 이번 결과에 없는 것도 남겨 둔다
+    if postponed:
+        have = {p["rceptNo"] for p in auto_projects.values()}
+        for p in data.get("projects", []):
+            if p.get("auto") and p.get("rceptNo") not in have:
+                auto_projects[f"keep|{p.get('rceptNo')}"] = p
+
     # 손으로 넣은 현장은 그대로, 자동 수집분만 교체
     manual = [p for p in data.get("projects", []) if not p.get("auto")]
+
+    # 손으로 넣은 현장과 같은 공사가 공시로도 잡히면(예: 비스마야) 두 번 표시되지 않게 하나로 합친다.
+    # 위치·이름은 손으로 넣은 것을 쓰고, 금액·기간·공시 링크만 공시에서 가져온다.
+    for mp in manual:
+        for k, ap in list(auto_projects.items()):
+            if same_project(mp, ap):
+                for field in ("amount", "period", "link", "rceptNo", "filedAt"):
+                    if ap.get(field):
+                        mp[field] = ap[field]
+                if not mp.get("type"):
+                    mp["type"] = ap.get("type", "")
+                mp["dartName"] = ap["name"]
+                del auto_projects[k]
+                print(f"[안내] 직접 넣은 현장 '{mp['name']}'과 공시 '{ap['name']}'을 하나로 합침")
     projects = manual + sorted(auto_projects.values(), key=lambda p: p.get("filedAt", ""), reverse=True)
 
     companies = data.get("companies", [])
@@ -413,6 +484,9 @@ def main():
         json.dump(cache, f, ensure_ascii=False, indent=0)
 
     print(f"합계: 계약 공시 {total_filings}건 중 해외 {overseas}건 · 국내 {domestic}건 · 나라 불명 {unknown}건 · 읽기 실패 {failed}건")
+    print(f"이번 실행: 새 원문 {new_docs}건 읽음 · 소요 {time.time() - started:.0f}초")
+    if postponed:
+        print(f"[안내] 시간·건수 제한으로 {postponed}건은 다음 실행 때 이어서 읽습니다. (Run workflow를 몇 번 더 누르면 빨리 채워집니다)")
     print(f"지도 현장: 수동 {len(manual)}곳 + 자동 {len(auto_projects)}곳")
 
 
