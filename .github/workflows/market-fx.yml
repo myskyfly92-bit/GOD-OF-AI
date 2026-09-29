@@ -2,8 +2,8 @@ name: Update Iraq market FX rate (시장환율)
 
 on:
   schedule:
-    # 하루 4번 (UTC 03,09,15,21시 = 바그다드 06,12,18,00시경) 실행
-    - cron: "0 3,9,15,21 * * *"
+    # 하루 4번 (바그다드 약 06·12·18·24시). 붐비는 정각을 피해 12분에 실행
+    - cron: "12 3,9,15,21 * * *"
   workflow_dispatch: {} # 저장소의 Actions 탭에서 수동 실행도 가능
 
 permissions:
@@ -22,19 +22,29 @@ jobs:
           node-version: "20"
 
       - name: Puppeteer(헤드리스 크롬) 설치
-        run: npm install puppeteer@22
+        run: npm install --no-save puppeteer@22
 
       - name: 시장환율 가져오기
         run: node scripts/fetch-market-fx.js
 
-      - name: 변경사항 커밋 & 푸시
+      - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- market-fx.json; then
-            echo "변경사항 없음"
-          else
-            git add market-fx.json
-            git commit -m "chore: 이라크 시장환율 자동 갱신"
-            git push
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # 처음 만들어진 파일(아직 Git에 없는 파일)도 잡히도록 먼저 add 한 뒤 비교한다
+          git add market-fx.json
+          if git diff --cached --quiet; then
+            echo "변경사항 없음, 커밋 생략"
+            exit 0
           fi
+          git commit -m "chore: 이라크 시장환율 자동 갱신"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "푸시 성공"
+              exit 0
+            fi
+            echo "충돌 발생, ${i}번째 재시도 전 5초 대기..."
+            sleep 5
+          done
+          echo "5회 재시도 후에도 푸시 실패"
+          exit 1
