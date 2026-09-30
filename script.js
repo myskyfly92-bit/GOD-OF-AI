@@ -2236,30 +2236,49 @@ function saRestart() {
   if (!saPaused) saTimer = setInterval(() => saShow(saSlideIdx + 1), 7000);
 }
 
-function saRenderSide(d) {
-  const types = (d.byType || []).filter((t) => t && t.deaths != null);
-  const inds = (d.byIndustry || []).filter((x) => x && x.total != null);
-  const total = inds.reduce((a, x) => a + Number(x.total || 0), 0);
-  // 카드 순서: 전체 → 발생유형별
+function saRowHtml(label, value, cls) {
+  // "27명" → 숫자는 크게, 단위는 작게
+  const m = String(value).match(/^([-+]?[\d,.]+)\s*(.*)$/);
+  const v = m ? `${escapeHtml(m[1])}<small>${escapeHtml(m[2])}</small>` : escapeHtml(value);
+  return `<div class="sa-side-row"><span>${escapeHtml(label).replace(/\s*(사망자수|증감률)$/, "<br>$1")}</span><b class="${cls || ""}">${v}</b></div>`;
+}
+
+function saRenderSide(d, moel) {
   const cards = [];
-  if (total) cards.push({ sub: "전체 사고사망자", deaths: total, yoy: d.totalYoy });
-  types.forEach((t) => cards.push({ sub: `발생유형(${t.type})`, deaths: t.deaths, yoy: t.yoy }));
+  if (moel && Array.isArray(moel.cards) && moel.cards.length) {
+    // 고용노동부 사이트에서 자동 수집한 카드
+    moel.cards.forEach((c) => cards.push({
+      sub: c.subtitle || c.title,
+      rows: (c.items || []).map((it) => ({
+        label: it.label, value: it.value,
+        cls: /증감/.test(it.label) && it.number != null ? (it.number > 0 ? "sa-up" : it.number < 0 ? "sa-down" : "") : "",
+      })),
+    }));
+  } else {
+    const inds = (d.byIndustry || []).filter((x) => x && x.total != null);
+    const total = inds.reduce((a, x) => a + Number(x.total || 0), 0);
+    const yoyRow = (y) => ({ label: "전년동기대비 증감률", value: y == null ? "–" : `${y > 0 ? "+" : ""}${Number(y).toFixed(1)}%`, cls: y > 0 ? "sa-up" : y < 0 ? "sa-down" : "" });
+    if (total) cards.push({ sub: "전체 사고사망자", rows: [{ label: `${d.period || ""} 사망자수`, value: `${total}명` }, yoyRow(d.totalYoy)] });
+    (d.byType || []).filter((t) => t && t.deaths != null).forEach((t) =>
+      cards.push({ sub: `발생유형(${t.type})`, rows: [{ label: `${d.period || ""} 사망자수`, value: `${t.deaths}명` }, yoyRow(t.yoy)] }));
+  }
   if (!cards.length) return;
+
+  document.getElementById("saSideSrc").textContent = moel && moel.cards && moel.cards.length
+    ? `고용노동부 사이트 자동 연동 · ${fireFmtTime(moel.fetchedAt)} 확인`
+    : "직접 입력한 수치";
+
   const show = (i) => {
     saSideIdx = (i + cards.length) % cards.length;
     const c = cards[saSideIdx];
     document.getElementById("saSideSub").textContent = c.sub;
-    document.getElementById("saSideLabel").innerHTML = `${escapeHtml(d.period || "")}<br>사망자수`;
-    document.getElementById("saSideDeaths").innerHTML = `${c.deaths}<small>명</small>`;
-    const y = document.getElementById("saSideYoy");
-    if (c.yoy === null || c.yoy === undefined) { y.textContent = "–"; y.className = ""; }
-    else { y.innerHTML = `${c.yoy > 0 ? "+" : ""}${Number(c.yoy).toFixed(1)}<small>%</small>`; y.className = c.yoy > 0 ? "sa-up" : c.yoy < 0 ? "sa-down" : ""; }
-    const card = document.querySelector(".sa-side-card");
+    const card = document.getElementById("saSideCard");
+    card.innerHTML = c.rows.map((r, k) => (k ? '<div class="sa-side-sep"></div>' : "") + saRowHtml(r.label, r.value, r.cls)).join("");
     card.classList.remove("sa-flash"); void card.offsetWidth; card.classList.add("sa-flash");
   };
+  const restartSide = () => { clearInterval(saSideTimer); if (cards.length > 1) saSideTimer = setInterval(() => show(saSideIdx + 1), 5000); };
   document.getElementById("saSidePrev").onclick = () => { show(saSideIdx - 1); restartSide(); };
   document.getElementById("saSideNext").onclick = () => { show(saSideIdx + 1); restartSide(); };
-  const restartSide = () => { clearInterval(saSideTimer); if (cards.length > 1) saSideTimer = setInterval(() => show(saSideIdx + 1), 5000); };
   show(0);
   restartSide();
 }
@@ -2277,6 +2296,28 @@ async function initSeriousAccidents() {
     return;
   }
   saLoaded = true;
+
+  // 고용노동부 사이트 자동 수집분(있으면): 발생유형별 수치는 이것을 우선 사용
+  let moel = null;
+  try {
+    const r = await fetch("moel-serious.json", { cache: "no-store" });
+    if (r.ok) moel = await r.json();
+  } catch (e) { /* 아직 수집 전 */ }
+  if (moel && Array.isArray(moel.cards)) {
+    const types = moel.cards.filter((c) => c.accidentType).map((c) => {
+      const deaths = (c.items || []).find((it) => /사망/.test(it.label));
+      const yoy = (c.items || []).find((it) => /증감/.test(it.label));
+      return { type: c.accidentType, deaths: deaths ? deaths.number : null, yoy: yoy ? yoy.number : null };
+    }).filter((t) => t.deaths != null);
+    if (types.length) d.byType = types;
+
+    // 고용노동부가 더 새 배너(통계)를 올렸으면 안내
+    const notice = document.getElementById("saNotice");
+    if (moel.latestBannerDate && d.bannerDate && moel.latestBannerDate > d.bannerDate) {
+      notice.hidden = false;
+      notice.innerHTML = `📢 고용노동부 중대재해 통계가 새로 발표됐습니다 (배너 ${escapeHtml(moel.latestBannerDate)} 수정) · 아래 막대그래프는 이전 발표(${escapeHtml(d.bannerDate)}) 기준입니다 · <a href="${escapeHtml(moel.source)}" target="_blank" rel="noopener">원문 보기 ↗</a>`;
+    }
+  }
   document.getElementById("saPeriod").textContent = d.period ? `· ${d.period}` : "";
   document.getElementById("saSource").textContent =
     `출처: ${d.source || "고용노동부"} (재해조사 대상 사망사고 기준) · 자료 반영일 ${d.updatedAt || "–"} · 분기별 발표 수치를 옮겨 적은 참고 자료입니다`;
@@ -2301,7 +2342,7 @@ async function initSeriousAccidents() {
   stage.addEventListener("mouseenter", () => clearInterval(saTimer));
   stage.addEventListener("mouseleave", saRestart);
   saRestart();
-  saRenderSide(d);
+  saRenderSide(d, moel);
 }
 
 document.querySelectorAll(".tab-btn").forEach((btn) => {

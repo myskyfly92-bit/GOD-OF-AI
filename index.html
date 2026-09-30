@@ -346,6 +346,7 @@
 <main class="grid">
   <section class="panel sa-panel" aria-label="전국 중대재해 현황" style="grid-column: 1 / -1;">
     <div class="panel-label">SERIOUS ACCIDENTS · 전국 중대재해 현황 <span id="saPeriod" class="sa-period"></span></div>
+    <div id="saNotice" class="sa-notice" hidden></div>
     <div class="sa-wrap">
       <div class="sa-stage" id="saStage" aria-roledescription="carousel">
         <div class="sa-slides" id="saSlides"></div>
@@ -362,11 +363,8 @@
           <div><div class="sa-side-title">중대재해 현황</div><div class="sa-side-sub" id="saSideSub">–</div></div>
           <button type="button" class="sa-side-arrow" id="saSideNext" aria-label="다음 유형">›</button>
         </div>
-        <div class="sa-side-card">
-          <div class="sa-side-row"><span id="saSideLabel">사망자수</span><b id="saSideDeaths">–</b></div>
-          <div class="sa-side-sep"></div>
-          <div class="sa-side-row"><span>전년동기대비<br>증감률</span><b id="saSideYoy">–</b></div>
-        </div>
+        <div class="sa-side-card" id="saSideCard"></div>
+        <div class="sa-side-src" id="saSideSrc"></div>
       </aside>
     </div>
     <p class="source-note" id="saSource">–</p>

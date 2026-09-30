@@ -1,0 +1,52 @@
+name: Update MOEL Serious Accident Stats (중대재해 알림e)
+
+on:
+  schedule:
+    # 매일 한국시간 09:41 (고용노동부 사이트는 주로 낮에 갱신)
+    - cron: "41 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-moel-serious:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: 중대재해 알림e 통계 수집
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python scripts/fetch_moel_serious.py
+
+      - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add moel-serious.json
+          if git diff --cached --quiet; then
+            echo "변경사항 없음, 커밋 생략"
+            exit 0
+          fi
+          git commit -m "chore: 고용노동부 중대재해 통계 자동 업데이트"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "푸시 성공"
+              exit 0
+            fi
+            echo "충돌 발생, ${i}번째 재시도 전 5초 대기..."
+            sleep 5
+          done
+          echo "5회 재시도 후에도 푸시 실패"
+          exit 1

@@ -1780,3 +1780,10 @@ body.bg-procedures {
 .sa-side-row b { font-family: var(--font-mono); font-size: 38px; }
 .sa-side-card small { color: #cfe3ff; }
 .sa-side-sep { border-top: 1px dashed rgba(255, 255, 255, 0.35); margin: 16px 0; }
+
+.sa-notice {
+  margin: 10px 0 0; padding: 10px 14px; border-radius: 8px; font-size: 13px;
+  color: var(--gold); background: rgba(255, 209, 102, 0.1); border: 1px solid rgba(255, 209, 102, 0.4);
+}
+.sa-notice a { color: var(--gold); }
+.sa-side-src { font-size: 11px; opacity: 0.6; text-align: center; }
