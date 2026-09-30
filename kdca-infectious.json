@@ -1,0 +1,289 @@
+{
+ "_readme": "질병관리청 전수신고 감염병 발생현황 API로 GitHub Actions가 자동 생성합니다. 직접 수정하지 마세요. 출처: 질병관리청 (공공누리 제4유형)",
+ "source": "질병관리청 전수신고 감염병 발생현황 (공공데이터포털)",
+ "currentWeek": {
+  "year": 2026,
+  "week": 40,
+  "label": "2026년 40주",
+  "start": "2026-09-27",
+  "end": "2026-10-03"
+ },
+ "baseWeek": {
+  "year": 2026,
+  "week": 38,
+  "label": "2026년 38주",
+  "start": "2026-09-13",
+  "end": "2026-09-19"
+ },
+ "prevWeek": {
+  "year": 2026,
+  "week": 37,
+  "label": "2026년 37주",
+  "start": "2026-09-06",
+  "end": "2026-09-12"
+ },
+ "provisionalWeek": {
+  "year": 2026,
+  "week": 39,
+  "label": "2026년 39주",
+  "start": "2026-09-20",
+  "end": "2026-09-26"
+ },
+ "trendWeeks": [
+  "2026년 27주",
+  "2026년 28주",
+  "2026년 29주",
+  "2026년 30주",
+  "2026년 31주",
+  "2026년 32주",
+  "2026년 33주",
+  "2026년 34주",
+  "2026년 35주",
+  "2026년 36주",
+  "2026년 37주",
+  "2026년 38주"
+ ],
+ "grades": {
+  "제1급": {
+   "diseases": 18,
+   "base": 0,
+   "prev": 0,
+   "provisional": 0,
+   "outnatn": 0,
+   "trend": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "제2급": {
+   "diseases": 21,
+   "base": 1889,
+   "prev": 1914,
+   "provisional": 1389,
+   "outnatn": 2,
+   "trend": [
+    2358,
+    2277,
+    2064,
+    2349,
+    2085,
+    2064,
+    1916,
+    1844,
+    2166,
+    1909,
+    1914,
+    1889
+   ]
+  },
+  "제3급": {
+   "diseases": 28,
+   "base": 203,
+   "prev": 225,
+   "provisional": 110,
+   "outnatn": 10,
+   "trend": [
+    242,
+    211,
+    148,
+    227,
+    200,
+    206,
+    213,
+    167,
+    209,
+    203,
+    225,
+    203
+   ]
+  }
+ },
+ "top": [
+  {
+   "name": "카바페넴내성장내세균목(CRE) 감염증",
+   "grade": "제2급",
+   "base": 1287,
+   "prev": 1288,
+   "provisional": 847,
+   "dmstc": 1287,
+   "outnatn": 0
+  },
+  {
+   "name": "수두",
+   "grade": "제2급",
+   "base": 346,
+   "prev": 339,
+   "provisional": 353,
+   "dmstc": 346,
+   "outnatn": 0
+  },
+  {
+   "name": "성홍열",
+   "grade": "제2급",
+   "base": 114,
+   "prev": 113,
+   "provisional": 98,
+   "dmstc": 114,
+   "outnatn": 0
+  },
+  {
+   "name": "C형간염",
+   "grade": "제3급",
+   "base": 107,
+   "prev": 115,
+   "provisional": 52,
+   "dmstc": 106,
+   "outnatn": 1
+  },
+  {
+   "name": "유행성이하선염",
+   "grade": "제2급",
+   "base": 91,
+   "prev": 115,
+   "provisional": 49,
+   "dmstc": 91,
+   "outnatn": 0
+  },
+  {
+   "name": "매독",
+   "grade": "제3급",
+   "base": 34,
+   "prev": 45,
+   "provisional": 20,
+   "dmstc": 30,
+   "outnatn": 4
+  },
+  {
+   "name": "레지오넬라증",
+   "grade": "제3급",
+   "base": 28,
+   "prev": 17,
+   "provisional": 7,
+   "dmstc": 28,
+   "outnatn": 0
+  },
+  {
+   "name": "A형간염",
+   "grade": "제2급",
+   "base": 26,
+   "prev": 29,
+   "provisional": 28,
+   "dmstc": 25,
+   "outnatn": 1
+  },
+  {
+   "name": "백일해",
+   "grade": "제2급",
+   "base": 9,
+   "prev": 1,
+   "provisional": 4,
+   "dmstc": 9,
+   "outnatn": 0
+  },
+  {
+   "name": "E형간염",
+   "grade": "제2급",
+   "base": 8,
+   "prev": 11,
+   "provisional": 5,
+   "dmstc": 7,
+   "outnatn": 1
+  },
+  {
+   "name": "말라리아",
+   "grade": "제3급",
+   "base": 7,
+   "prev": 10,
+   "provisional": 3,
+   "dmstc": 6,
+   "outnatn": 1
+  },
+  {
+   "name": "중증열성혈소판감소증후군(SFTS)",
+   "grade": "제3급",
+   "base": 6,
+   "prev": 5,
+   "provisional": 6,
+   "dmstc": 6,
+   "outnatn": 0
+  },
+  {
+   "name": "폐렴구균 감염증",
+   "grade": "제2급",
+   "base": 5,
+   "prev": 4,
+   "provisional": 3,
+   "dmstc": 5,
+   "outnatn": 0
+  },
+  {
+   "name": "비브리오패혈증",
+   "grade": "제3급",
+   "base": 5,
+   "prev": 4,
+   "provisional": 4,
+   "dmstc": 5,
+   "outnatn": 0
+  },
+  {
+   "name": "뎅기열",
+   "grade": "제3급",
+   "base": 4,
+   "prev": 10,
+   "provisional": 1,
+   "dmstc": 0,
+   "outnatn": 4
+  }
+ ],
+ "grade1Recent": [],
+ "importedRecent4": [
+  {
+   "name": "뎅기열",
+   "grade": "제3급",
+   "count": 16
+  },
+  {
+   "name": "매독",
+   "grade": "제3급",
+   "count": 12
+  },
+  {
+   "name": "수두",
+   "grade": "제2급",
+   "count": 2
+  },
+  {
+   "name": "A형간염",
+   "grade": "제2급",
+   "count": 2
+  },
+  {
+   "name": "말라리아",
+   "grade": "제3급",
+   "count": 2
+  },
+  {
+   "name": "E형간염",
+   "grade": "제2급",
+   "count": 1
+  },
+  {
+   "name": "C형간염",
+   "grade": "제3급",
+   "count": 1
+  }
+ ],
+ "totalBase": 2092,
+ "totalPrev": 2139,
+ "generatedAt": "2026-09-30T20:30:12.194268+00:00"
+}
