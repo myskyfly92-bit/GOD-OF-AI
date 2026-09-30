@@ -2860,51 +2860,51 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
 
 /* ==========================================================
    배너 마스코트: 배너 위를 걸어 다니고, 가끔 폴짝 뛰고, 누르면 한마디
-   (그림 파일은 그대로 쓰고 움직임만 CSS·JS로 준다)
+   (그림 파일은 그대로 쓰고 움직임만 준다)
+   - 걸음: 속도에 맞춰 한 걸음마다 한 번씩 통통 튀고, 걸음마다 좌우로 살짝 기운다
+   - 출발·정지 때 천천히 빨라지고 느려진다 / 돌아설 때 멈칫한 뒤 몸을 돌린다
+   - 그림자가 발 밑에서 같이 움직인다
    ========================================================== */
 (function mascotRunner() {
   const bar = document.querySelector(".topbar");
   const home = document.querySelector(".brand-mascot");
   if (!bar || !home) return;
-  // 움직임 줄이기를 켠 사용자·작은 화면에서는 원래처럼 가만히
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
   const runner = document.createElement("div");
   runner.className = "mascot-runner";
-  runner.innerHTML = `<div class="mascot-body"><img src="${home.getAttribute("src")}" alt="" draggable="false"></div>
-    <div class="mascot-bubble" hidden></div><div class="mascot-shadow"></div>`;
+  runner.innerHTML = `<div class="mascot-shadow"></div>
+    <div class="mascot-body"><div class="mascot-step"><img src="${home.getAttribute("src")}" alt="" draggable="false"></div></div>
+    <div class="mascot-bubble" hidden></div>`;
   bar.appendChild(runner);
-  home.classList.add("mascot-home"); // 제자리는 자리만 차지하고 숨김
+  home.classList.add("mascot-home");
   const body = runner.querySelector(".mascot-body");
+  const step = runner.querySelector(".mascot-step");
+  const img = runner.querySelector("img");
+  const shadow = runner.querySelector(".mascot-shadow");
   const bubble = runner.querySelector(".mascot-bubble");
 
   const LINES = ["안전제일!", "보호구 착용 확인!", "오늘도 무재해!", "안전벨트 체결!", "물 자주 마셔요!", "작업 전 TBM!", "위험하면 멈추기!"];
-  let x = 0, dir = 1, state = "idle", until = 0, minX = 0, maxX = 0, last = 0, hover = false;
-  const SPEED = 38; // px/초
+  const MAX_SPEED = 30;      // px/초 (천천히 걷기)
+  const STEPS_PER_PX = 0.05; // 이동 거리당 걸음 수 → 빨리 걸으면 걸음도 빨라진다
+  let x = 0, dir = 1, facing = 1, speed = 0, target = 0, phase = 0, breath = 0;
+  let minX = 0, maxX = 0, last = 0, hover = false, busyUntil = 0, mode = "idle";
 
   function bounds() {
     const b = bar.getBoundingClientRect();
     const h = home.getBoundingClientRect();
     const status = bar.querySelector(".topbar-status");
-    const text = bar.querySelector(".brand-text");
     minX = h.left - b.left;
-    // 오른쪽 끝: 시계·국기 영역 앞까지 (제목 글자 위도 지나가게 둔다)
     const right = status ? status.getBoundingClientRect().left - b.left : b.width;
     maxX = Math.max(minX, right - runner.offsetWidth - 16);
-    if (text && maxX - minX < 80) maxX = minX; // 공간이 없으면 제자리
     x = Math.min(Math.max(x || minX, minX), maxX);
     runner.style.top = (h.top - b.top) + "px";
-  }
-
-  function setState(s, ms) {
-    state = s;
-    until = performance.now() + ms;
-    runner.dataset.state = s;
   }
 
   function say(text) {
     bubble.textContent = text;
     bubble.hidden = false;
+    bubble.classList.toggle("left", facing < 0 && x > minX + 120);
     clearTimeout(say.t);
     say.t = setTimeout(() => { bubble.hidden = true; }, 2600);
   }
@@ -2915,50 +2915,72 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     body.classList.add(big ? "jump-big" : "jump");
   }
 
-  function pickNext() {
+  function turn(newDir) {
+    if (newDir === facing) return;
+    dir = newDir;
+    target = 0;
+    mode = "turn";
+    busyUntil = performance.now() + 700;
+    setTimeout(() => { facing = newDir; img.style.setProperty("--flip", facing); }, 250);
+  }
+
+  function decide(now) {
+    if (maxX <= minX) { mode = "idle"; target = 0; busyUntil = now + 4000; return; }
     const r = Math.random();
-    if (maxX <= minX) return setState("idle", 4000);
-    if (r < 0.55) {
-      // 걷기: 끝에 닿으면 방향을 바꾼다
-      if (x <= minX + 2) dir = 1;
-      else if (x >= maxX - 2) dir = -1;
-      else if (Math.random() < 0.35) dir *= -1;
-      setState("walk", 2500 + Math.random() * 4500);
+    if (r < 0.6) {
+      let d = facing;
+      if (x <= minX + 4) d = 1; else if (x >= maxX - 4) d = -1; else if (Math.random() < 0.3) d = -facing;
+      if (d !== facing) { turn(d); return; }
+      mode = "walk"; dir = d; target = MAX_SPEED * (0.75 + Math.random() * 0.35);
+      busyUntil = now + 3000 + Math.random() * 5000;
     } else if (r < 0.75) {
-      setState("idle", 1500 + Math.random() * 2500);
-      jump(false);
+      mode = "idle"; target = 0; busyUntil = now + 1800;
+      setTimeout(() => jump(false), 350); // 멈춘 뒤 폴짝
     } else if (r < 0.85) {
-      setState("idle", 2500);
+      mode = "idle"; target = 0; busyUntil = now + 3000;
       say(LINES[Math.floor(Math.random() * LINES.length)]);
     } else {
-      setState("idle", 2000 + Math.random() * 3000);
+      mode = "idle"; target = 0; busyUntil = now + 2000 + Math.random() * 3000;
     }
   }
 
   function tick(t) {
     const dt = last ? Math.min(0.05, (t - last) / 1000) : 0;
     last = t;
-    if (!hover) {
-      if (t > until) pickNext();
-      if (state === "walk") {
-        x += dir * SPEED * dt;
-        if (x <= minX) { x = minX; dir = 1; setState("idle", 1200); }
-        if (x >= maxX) { x = maxX; dir = -1; setState("idle", 1200); }
-      }
-    }
-    runner.style.transform = `translateX(${x}px)`;
-    body.style.setProperty("--flip", dir < 0 ? -1 : 1);
+    if (!hover && t > busyUntil) decide(t);
+    if (hover) target = 0;
+
+    // 부드럽게 빨라지고 느려지기
+    speed += (target - speed) * Math.min(1, dt * 3);
+    if (speed < 0.3 && target === 0) speed = 0;
+    x += dir * speed * dt;
+    if (x <= minX) { x = minX; if (mode === "walk") { busyUntil = 0; } }
+    if (x >= maxX) { x = maxX; if (mode === "walk") { busyUntil = 0; } }
+
+    // 걸음: 한 걸음(π)마다 한 번 튀고, 걸음마다 좌우로 번갈아 기울기
+    const walkAmt = Math.min(1, speed / MAX_SPEED);
+    phase += speed * dt * STEPS_PER_PX * Math.PI;
+    const bob = Math.abs(Math.sin(phase)) * 5 * walkAmt;
+    const tilt = Math.sin(phase) * 3 * walkAmt;
+    // 쉴 때: 천천히 숨쉬기
+    breath += dt * 2.2;
+    const squash = 1 - (1 - walkAmt) * 0.015 * (1 + Math.sin(breath));
+
+    runner.style.transform = `translateX(${x.toFixed(1)}px)`;
+    step.style.transform = `translateY(${(-bob).toFixed(2)}px) rotate(${(tilt * facing).toFixed(2)}deg) scaleY(${squash.toFixed(4)})`;
+    shadow.style.transform = `scaleX(${(1 - bob / 18).toFixed(3)})`;
+    shadow.style.opacity = (0.35 - bob / 40).toFixed(3);
     requestAnimationFrame(tick);
   }
 
-  runner.addEventListener("mouseenter", () => { hover = true; runner.dataset.state = "idle"; });
-  runner.addEventListener("mouseleave", () => { hover = false; setState("idle", 600); });
+  runner.addEventListener("mouseenter", () => { hover = true; });
+  runner.addEventListener("mouseleave", () => { hover = false; busyUntil = performance.now() + 800; });
   runner.addEventListener("click", () => {
     jump(true);
     say(LINES[Math.floor(Math.random() * LINES.length)]);
   });
 
-  const start = () => { bounds(); setState("idle", 1500); requestAnimationFrame(tick); };
+  const start = () => { bounds(); busyUntil = performance.now() + 1500; requestAnimationFrame(tick); };
   if (home.complete) start(); else home.addEventListener("load", start, { once: true });
   window.addEventListener("resize", bounds);
 })();
