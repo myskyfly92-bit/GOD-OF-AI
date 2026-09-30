@@ -1981,54 +1981,50 @@ body.bg-procedures {
   position: absolute; left: 0; top: 0; height: 100px; width: 76px; z-index: 5;
   cursor: pointer; will-change: transform; user-select: none;
 }
-.mascot-body {
-  height: 100%; display: flex; justify-content: center; transform-origin: 50% 100%;
-}
+.mascot-body, .mascot-step { height: 100%; display: flex; justify-content: center; transform-origin: 50% 100%; }
+.mascot-step { will-change: transform; }
 .mascot-body img {
-  height: 100%; width: auto; transform: scaleX(var(--flip, 1)); transition: transform 0.25s ease;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.35)); pointer-events: none;
+  height: 100%; width: auto; pointer-events: none;
+  transform: scaleX(var(--flip, 1));
+  transition: transform 0.35s cubic-bezier(.5, 0, .3, 1.4); /* 돌아설 때 살짝 튕기며 */
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.3));
 }
-/* 걸을 때: 통통 튀며 살짝 좌우로 기울기 */
-.mascot-runner[data-state="walk"] .mascot-body { animation: mascotWalk 0.5s ease-in-out infinite; }
-@keyframes mascotWalk {
-  0%, 100% { transform: translateY(0) rotate(-3deg); }
-  50% { transform: translateY(-7px) rotate(3deg); }
-}
-/* 쉴 때: 숨쉬듯 아주 살짝 */
-.mascot-runner[data-state="idle"] .mascot-body { animation: mascotIdle 2.4s ease-in-out infinite; }
-@keyframes mascotIdle {
-  0%, 100% { transform: scaleY(1); }
-  50% { transform: scaleY(0.97); }
-}
-.mascot-body.jump { animation: mascotJump 0.6s cubic-bezier(.3, .7, .4, 1) !important; }
-.mascot-body.jump-big { animation: mascotJumpBig 0.9s cubic-bezier(.3, .7, .4, 1) !important; }
+/* 점프: 웅크렸다가(준비) 뛰어올라 착지 */
+.mascot-body.jump { animation: mascotJump 0.7s ease-out; }
+.mascot-body.jump-big { animation: mascotJumpBig 1s ease-out; }
 @keyframes mascotJump {
-  0% { transform: translateY(0) scale(1.05, 0.9); }
-  40% { transform: translateY(-22px) scale(0.96, 1.05); }
-  80% { transform: translateY(0) scale(1.06, 0.92); }
-  100% { transform: translateY(0) scale(1); }
+  0% { transform: none; }
+  18% { transform: scale(1.06, 0.9); }
+  45% { transform: translateY(-20px) scale(0.97, 1.04); animation-timing-function: ease-in; }
+  75% { transform: translateY(0) scale(1.07, 0.91); }
+  88% { transform: scale(0.98, 1.02); }
+  100% { transform: none; }
 }
 @keyframes mascotJumpBig {
-  0% { transform: translateY(0) scale(1.08, 0.88); }
-  35% { transform: translateY(-34px) rotate(-8deg); }
-  55% { transform: translateY(-38px) rotate(8deg); }
-  85% { transform: translateY(0) scale(1.08, 0.9); }
-  100% { transform: translateY(0) scale(1); }
+  0% { transform: none; }
+  15% { transform: scale(1.08, 0.86); }
+  42% { transform: translateY(-34px) rotate(-6deg) scale(0.96, 1.05); }
+  55% { transform: translateY(-36px) rotate(5deg); animation-timing-function: ease-in; }
+  78% { transform: translateY(0) scale(1.08, 0.88); }
+  90% { transform: scale(0.98, 1.02); }
+  100% { transform: none; }
 }
 .mascot-shadow {
-  position: absolute; left: 50%; bottom: -3px; width: 44px; height: 8px; margin-left: -22px; border-radius: 50%;
-  background: rgba(0, 0, 0, 0.35); filter: blur(2px); z-index: -1;
+  position: absolute; left: 50%; bottom: -2px; width: 46px; height: 8px; margin-left: -23px; border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5); filter: blur(3px); opacity: 0.35;
 }
 .mascot-bubble {
-  position: absolute; left: 60%; top: -6px; white-space: nowrap; pointer-events: none;
+  position: absolute; left: 62%; top: -8px; white-space: nowrap; pointer-events: none;
   background: #fff; color: #1a1a1a; font-size: 12px; font-weight: 800; padding: 5px 10px; border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35); animation: bubblePop 0.3s ease;
 }
 .mascot-bubble::after {
   content: ""; position: absolute; left: 10px; bottom: -6px; border: 6px solid transparent; border-top-color: #fff; border-bottom: 0;
 }
+.mascot-bubble.left { left: auto; right: 62%; }
+.mascot-bubble.left::after { left: auto; right: 10px; }
 .mascot-bubble[hidden] { display: none; }
-@keyframes bubblePop { from { transform: scale(0.6); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes bubblePop { from { transform: translateY(4px) scale(0.7); opacity: 0; } to { transform: none; opacity: 1; } }
 @media (max-width: 980px) { .mascot-runner { display: none; } }
 /* 제목 글자는 마스코트보다 앞에 두어, 지나가도 글자가 가려지지 않게 */
 .topbar .brand-text, .topbar .topbar-status { position: relative; z-index: 6; }
