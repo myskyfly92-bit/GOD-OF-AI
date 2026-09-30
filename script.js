@@ -1129,27 +1129,53 @@ async function loadWhoOutbreaks() {
   }
 }
 
+let appsScriptUrlPromise = null;
+function getAppsScriptUrl() {
+  if (!appsScriptUrlPromise) {
+    appsScriptUrlPromise = fetch("work-zones.json", { cache: "no-store" })
+      .then((r) => r.json()).then((c) => (c.appsScriptUrl || "").trim()).catch(() => "");
+  }
+  return appsScriptUrlPromise;
+}
+
 function renderWhoOutbreaks(items, generatedAt) {
   const list = document.getElementById("whoOutbreakList");
   if (!items || !items.length) {
     list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 정보가 없습니다.</li>`;
     return;
   }
-  list.innerHTML = items.map(n => `
+  const draw = (ko) => {
+    list.innerHTML = items.map(n => {
+      const k = ko && n.link ? ko[n.link] : null;
+      const title = k && k.titleKo ? k.titleKo : n.title;
+      const summary = k && k.summaryKo ? k.summaryKo : (n.summary || "");
+      return `
     <li class="embassy-row">
       <div class="notice-top">
-        <span class="notice-title">${escapeHtml(n.title)}</span>
+        <span class="notice-title">${escapeHtml(title)}</span>
         <span class="notice-date">${escapeHtml((n.date || "").slice(0, 10))}</span>
       </div>
-      <div class="notice-body">${escapeHtml(n.summary || "")}</div>
-      ${n.link ? `<a class="embassy-link" href="${n.link}" target="_blank" rel="noopener noreferrer">WHO 원문 보기 ↗</a>` : ""}
-    </li>
-  `).join("");
+      <div class="notice-body">${escapeHtml(summary)}</div>
+      ${k && k.titleKo ? `<details class="inews-orig"><summary>원문 보기</summary><p><b>${escapeHtml(n.title)}</b></p><p>${escapeHtml(n.summary || "")}</p>
+        ${n.link ? `<a href="${n.link}" target="_blank" rel="noopener noreferrer">WHO 원문 페이지 ↗</a>` : ""}</details>`
+        : (n.link ? `<a class="embassy-link" href="${n.link}" target="_blank" rel="noopener noreferrer">WHO 원문 보기 ↗</a>` : "")}
+    </li>`;
+    }).join("");
+  };
+  draw(null); // 먼저 영어 원문으로 그리고
+  // Apps Script가 번역해 둔 한국어가 있으면 바꿔 그린다
+  getAppsScriptUrl().then(async (url) => {
+    if (!url) return;
+    try {
+      const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + "action=who&t=" + Date.now())).json();
+      if (r.ok && r.map && Object.keys(r.map).length) draw(r.map);
+    } catch (e) { console.warn("WHO 번역 불러오기 실패", e); }
+  });
 
   if (generatedAt) {
     const dt = new Date(generatedAt);
     document.getElementById("whoOutbreakMeta").textContent =
-      "World Health Organization 공식 API 연동 · 마지막 수집: " +
+      "World Health Organization 공식 API 연동 · 한국어는 구글 번역 · 마지막 수집: " +
       new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(dt);
   }
 }
@@ -3342,7 +3368,7 @@ function renderIraqNews(data) {
       <article class="inews-item">
         ${n.image ? `<img class="inews-img" src="${escapeHtml(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
         <div class="inews-main">
-          <div class="inews-meta-row"><span class="inews-date">${escapeHtml(fmt(n.date))}</span><span class="inews-src">${escapeHtml(n.source || "")}</span><span class="inews-lang">${ar ? "아랍어 → 한국어" : "영어 → 한국어"}</span></div>
+          <div class="inews-meta-row"><span class="inews-date">${escapeHtml(fmt(n.date))}</span><span class="inews-src">${escapeHtml(n.source || "")}</span></div>
           <h3 class="inews-title">${escapeHtml(n.titleKo || n.title)}</h3>
           ${body.length ? `<div class="inews-body${body.join("").length > 260 ? " clamp" : ""}">${body.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}</div>
             ${body.join("").length > 260 ? `<button type="button" class="inews-more">더 보기 ▾</button>` : ""}` : ""}
