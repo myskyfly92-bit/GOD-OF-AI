@@ -1786,13 +1786,13 @@ function wzStartPick(pick) {
   box.querySelector(".wz-pick-cancel").onclick = () => wzStartPick(null);
 }
 
-function wzPasscode(reset) {
-  if (reset) { try { localStorage.removeItem("wzPass"); } catch (e) {} }
+// 저장 암호: 평소엔 묻지 않고, 시트 쪽에 암호가 걸려 있을 때만 한 번 물어본다
+function wzPasscode(ask) {
   let pw = "";
   try { pw = localStorage.getItem("wzPass") || ""; } catch (e) {}
-  if (!pw) {
+  if (ask) {
     pw = prompt("작업일정 저장 암호를 입력하세요 (담당자에게 문의)") || "";
-    if (pw) { try { localStorage.setItem("wzPass", pw); } catch (e) {} }
+    try { pw ? localStorage.setItem("wzPass", pw) : localStorage.removeItem("wzPass"); } catch (e) {}
   }
   return pw;
 }
@@ -1808,11 +1808,16 @@ async function wzCallScript(action, payload) {
 
 async function wzSaveAndRefresh(action, payload) {
   payload.passcode = wzPasscode(false);
-  if (!payload.passcode) return false;
   try {
-    await wzCallScript(action, payload);
+    try {
+      await wzCallScript(action, payload);
+    } catch (err) {
+      if (!/암호/.test(err.message)) throw err;
+      payload.passcode = wzPasscode(true); // 암호가 걸려 있으면 그때만 물어보고 한 번 더 시도
+      if (!payload.passcode) return false;
+      await wzCallScript(action, payload);
+    }
   } catch (err) {
-    if (/암호/.test(err.message)) wzPasscode(true);
     alert("저장하지 못했습니다: " + err.message);
     return false;
   }
