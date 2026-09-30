@@ -3396,7 +3396,7 @@ function renderIraqNews(data) {
 
 document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
-    if (btn.dataset.view === "view-iraq-moh" || btn.dataset.view === "view-iraq-moen") loadIraqNews(false);
+    if (["view-iraq-moh", "view-iraq-moen", "view-iraq-cd"].includes(btn.dataset.view)) loadIraqNews(false);
   });
 });
 
