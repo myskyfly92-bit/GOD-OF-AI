@@ -1,6 +1,7 @@
 {
-  "_readme": "구역마다 image(사진 경로)와 요일별 schedule을 등록하면 됩니다. 좌표(x/y)는 더 이상 필요 없습니다. category는 '캠프' / 'Site 북부' / 'Site 남부' 중 하나. 작업일정은 구글 시트로 관리합니다: sheetCsvUrl에 시트의 '웹에 게시(CSV)' 주소를 넣으면 요일별 한 줄 일정(schedule) 대신 시트 내용이 표시됩니다. 비워 두면 예전처럼 schedule을 씁니다.",
+  "_readme": "구역마다 image(사진 경로)를 등록합니다. category는 '캠프' / 'Site 북부' / 'Site 남부' 중 하나. 작업일정은 구글 시트로 관리합니다. sheetCsvUrl: 시트 '작업일정' 탭의 웹에 게시(CSV) 주소. appsScriptUrl: 시트에 설치한 Apps Script 웹 앱 주소(넣으면 사이트에서 지도를 클릭해 작업 추가·위치 찍기가 되고, 시트 변경이 즉시 반영됩니다). 둘 다 비우면 예전처럼 요일별 한 줄 일정(schedule)을 씁니다.",
   "sheetCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxS6i05fJoVrMfnnsKqvq4rlr9ZnNW7V3sXYT_j7XEPkLYlGkHK6JJFy0yGkdjHQ/pub?gid=783609153&single=true&output=csv",
+  "appsScriptUrl": "https://script.google.com/macros/s/AKfycbznUcb6xLgP8n6TSpUA796JXaUka9Jc2QXhXeFMh4CKXRDDECyXJ7_g0-R7pMT2Zsw2/exec",
   "zones": [
     {
       "name": "BNCP Camp",

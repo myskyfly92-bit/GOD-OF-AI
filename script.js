@@ -1416,24 +1416,87 @@ function wzWeekDates(offset) {
   return WZ_DAY_ORDER.map((_, i) => wzAddDays(monday, i));
 }
 
-async function wzLoadSheet(data) {
-  const url = (data.sheetCsvUrl || "").trim();
-  if (!url) { wzItems = null; return; }
+// 구역별 작업 위치 목록: work-zones.json 의 places + '위치목록' 시트(placesCsvUrl)
+let wzPlaces = {};
+let wzSelDate = null; // 지도에 표시할 날짜 (null = 오늘)
+
+async function wzLoadPlaces(data) {
+  wzPlaces = {};
+  (data.zones || []).forEach((z) => {
+    wzPlaces[z.name] = (z.places || []).map((p) => ({ name: p.name, x: Number(p.x), y: Number(p.y) }));
+  });
+  const url = (data.placesCsvUrl || "").trim();
+  if (!url) return;
   try {
-    const sep = url.includes("?") ? "&" : "?";
-    const res = await fetch(url + sep + "t=" + Date.now(), { cache: "no-store" });
+    const res = await fetch(url + (url.includes("?") ? "&" : "?") + "t=" + Date.now(), { cache: "no-store" });
     if (!res.ok) throw new Error("응답 " + res.status);
     const rows = wzParseCsv(await res.text());
+    const head = (rows[0] || []).map((h) => h.replace(/\s|\(.*?\)/g, "").toUpperCase());
+    const ci = (...n) => head.findIndex((h) => n.some((x) => h.startsWith(x)));
+    const cz = ci("구역"), cn = ci("위치이름", "위치", "이름"), cx = ci("X"), cy = ci("Y");
+    rows.slice(1).forEach((r) => {
+      const zone = (r[cz] || "").trim(), name = (r[cn] || "").trim();
+      const x = parseFloat(r[cx]), y = parseFloat(r[cy]);
+      if (!zone || !name || !isFinite(x) || !isFinite(y)) return;
+      const z = (data.zones || []).find((zz) => zz.name === zone || zz.category === zone);
+      const key = z ? z.name : zone;
+      (wzPlaces[key] = wzPlaces[key] || []).push({ name, x, y });
+    });
+  } catch (err) {
+    console.error("위치목록 시트 불러오기 실패:", err);
+  }
+}
+
+// 작업의 세부위치 글자 안에 등록된 위치 이름이 들어 있으면 그 좌표 (가장 긴 이름 우선)
+function wzFindPlace(zone, it) {
+  const list = wzPlaces[zone.name] || [];
+  const text = ((it.loc || "") + " " + (it.work || "")).replace(/\s+/g, "");
+  let best = null;
+  list.forEach((p) => {
+    const n = p.name.replace(/\s+/g, "");
+    if (n && text.includes(n) && (!best || n.length > best.name.replace(/\s+/g, "").length)) best = p;
+  });
+  return best;
+}
+
+let wzConfig = {};
+
+async function wzFetchRows(data) {
+  const script = (data.appsScriptUrl || "").trim();
+  if (script) {
+    try {
+      const res = await fetch(script + (script.includes("?") ? "&" : "?") + "t=" + Date.now());
+      const j = await res.json();
+      if (!j.ok) throw new Error(j.error || "Apps Script 오류");
+      return j.rows;
+    } catch (err) {
+      console.error("Apps Script 읽기 실패, 웹 게시 CSV로 대신 읽습니다:", err);
+    }
+  }
+  const url = (data.sheetCsvUrl || "").trim();
+  if (!url) return null;
+  const res = await fetch(url + (url.includes("?") ? "&" : "?") + "t=" + Date.now(), { cache: "no-store" });
+  if (!res.ok) throw new Error("응답 " + res.status);
+  return wzParseCsv(await res.text());
+}
+
+async function wzLoadSheet(data) {
+  wzConfig = data;
+  await wzLoadPlaces(data);
+  if (!(data.sheetCsvUrl || "").trim() && !(data.appsScriptUrl || "").trim()) { wzItems = null; return; }
+  try {
+    const rows = await wzFetchRows(data);
+    if (!rows) { wzItems = null; return; }
     if (!rows.length) { wzItems = []; return; }
     const head = rows[0].map((h) => h.replace(/\s|\(.*?\)/g, ""));
     const col = (...names) => head.findIndex((h) => names.some((n) => h.startsWith(n)));
     const c = {
       date: col("날짜", "일자"), day: col("요일"), zone: col("구역"), team: col("팀"), part: col("파트"),
       work: col("작업내용", "작업"), loc: col("세부위치", "위치"), risk: col("위험작업", "위험"),
-      person: col("담당"), note: col("비고"),
+      person: col("담당"), note: col("비고"), xy: col("좌표"),
     };
     const get = (r, i) => (i >= 0 && r[i] ? r[i].trim() : "");
-    wzItems = rows.slice(1).map((r) => {
+    wzItems = rows.slice(1).map((r, idx) => {
       const part = get(r, c.part);
       let team = get(r, c.team);
       if (!team) team = Object.keys(WZ_TEAMS).find((t) => WZ_TEAMS[t].parts.includes(part)) || "";
@@ -1442,8 +1505,10 @@ async function wzLoadSheet(data) {
       if (date) day = WZ_DAY_ORDER[(new Date(date + "T00:00:00Z").getUTCDay() + 6) % 7];
       const riskText = get(r, c.risk);
       const risks = riskText ? riskText.split(/[,/·\s]+/).map((x) => x.trim()).filter(Boolean) : [];
+      const xyM = get(r, c.xy).match(/([\d.]+)\s*[,\s]\s*([\d.]+)/);
+      const xy = xyM ? { x: parseFloat(xyM[1]), y: parseFloat(xyM[2]) } : null;
       return { date, day, zone: get(r, c.zone), team, part, work: get(r, c.work), loc: get(r, c.loc), risks,
-               person: get(r, c.person), note: get(r, c.note) };
+               person: get(r, c.person), note: get(r, c.note), xy, row: idx + 2 };
     }).filter((it) => it.work && (it.date || WZ_DAY_ORDER.includes(it.day)));
     wzSheetError = "";
   } catch (err) {
@@ -1508,14 +1573,19 @@ function renderWorkZones(data) {
             <img src="" alt="구역 사진" class="workzone-bg" id="wzBgImg"
                  onerror="this.style.display='none'; document.getElementById('workzoneMapFallback').style.display='flex';">
             <div id="workzoneMapFallback" class="workzone-fallback" style="display:none;"></div>
+            <div class="wz-pins" id="wzPins"></div>
           </div>
+          <div class="wz-map-day" id="wzMapDay"></div>
+          <div class="wz-pick-box" id="wzPickBox" hidden></div>
         </div>
         <div class="wz-zoom-controls">
           <button type="button" id="wzZoomOut" class="wz-zoom-btn">−</button>
           <button type="button" id="wzZoomReset" class="wz-zoom-btn">초기화</button>
           <button type="button" id="wzZoomIn" class="wz-zoom-btn">+</button>
           <span class="wz-zoom-hint">마우스 휠로 확대/축소 · 드래그로 이동</span>
+          <button type="button" id="wzPickToggle" class="wz-pick-toggle" title="지도를 클릭해 그 자리에 작업을 추가합니다" hidden>➕ 지도에 작업 추가</button>
         </div>
+        <div class="wz-unplaced" id="wzUnplaced"></div>
       </div>
       <div class="wz-schedule-col" id="wzScheduleCol"></div>
     </div>
@@ -1530,6 +1600,7 @@ function renderWorkZones(data) {
     });
   });
 
+  wzSetupPickMode();
   wzShowZone(0);
 }
 
@@ -1575,6 +1646,7 @@ function wzShowSchedule(zone) {
     col.innerHTML = header + `<div class="wz-day-list">${rows}</div>` +
       `<p class="wz-sheet-note">${wzSheetError ? "⚠ 작업일정 시트를 불러오지 못했습니다 (" + wzEscapeHtml(wzSheetError) + ")" : "작업일정 구글 시트 연결 전입니다"}</p>`;
     document.getElementById("wzFilterBar").innerHTML = "";
+    wzRenderPins(zone, [], "");
     return;
   }
 
@@ -1628,7 +1700,189 @@ function wzShowSchedule(zone) {
         <span>${fmt(dates[0])} ~ ${fmt(dates[6])}${wzWeekOffset === 0 ? " (이번 주)" : ""}</span>
         <button type="button" data-w="1" aria-label="다음 주">›</button>
       </span></div>`) + `<div class="wz-day-list">${rows}</div>`;
-  col.querySelectorAll(".wz-week-nav button").forEach((b) => b.onclick = () => { wzWeekOffset += Number(b.dataset.w); wzShowSchedule(zone); });
+  col.querySelectorAll(".wz-week-nav button").forEach((b) => b.onclick = () => { wzWeekOffset += Number(b.dataset.w); wzSelDate = null; wzShowSchedule(zone); });
+
+  // 지도에 표시할 날짜: 고른 날짜 → 오늘(이번 주면) → 그 주 월요일
+  const sel = dates.includes(wzSelDate) ? wzSelDate : (dates.includes(today) ? today : dates[0]);
+  col.querySelectorAll(".wz-day-v2").forEach((row, i) => {
+    row.classList.toggle("wz-selected", dates[i] === sel);
+    row.onclick = () => { wzSelDate = dates[i]; wzShowSchedule(zone); };
+  });
+  const selDay = WZ_DAY_ORDER[dates.indexOf(sel)];
+  const dayItems = weekItems.filter((it) => (it.date ? it.date === sel : it.day === selDay)).filter(wzPassFilter);
+  wzRenderPins(zone, dayItems, `${selDay} ${fmt(sel)}${sel === today ? " (오늘)" : ""}`);
+}
+
+function wzRenderPins(zone, items, dayLabel) {
+  const layer = document.getElementById("wzPins");
+  const label = document.getElementById("wzMapDay");
+  const unplacedBox = document.getElementById("wzUnplaced");
+  if (!layer) return;
+  const groups = new Map(); // 같은 위치의 작업은 핀 하나로
+  const unplaced = [];
+  items.forEach((it) => {
+    const p = it.xy ? { name: it.loc || "작업 위치", x: it.xy.x, y: it.xy.y } : wzFindPlace(zone, it);
+    if (!p) { unplaced.push(it); return; }
+    const key = it.xy ? `${Math.round(p.x)},${Math.round(p.y)}` : p.name; // 거의 같은 자리는 핀 하나로
+    if (!groups.has(key)) groups.set(key, { place: p, items: [] });
+    groups.get(key).items.push(it);
+  });
+
+  layer.innerHTML = [...groups.values()].map((g) => {
+    const first = g.items[0];
+    const color = WZ_PART_COLORS[first.part] || "#8996a6";
+    const risky = g.items.some((it) => it.risks.length);
+    const list = g.items.map((it) => `
+      <div class="wz-pin-row"><b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)}
+        ${it.risks.length ? `<span class="wz-pin-risk">⚠ ${it.risks.map(wzEscapeHtml).join(", ")}</span>` : ""}</div>`).join("");
+    // 사진 위쪽 핀은 설명 카드를 아래로 펼쳐서 잘리지 않게
+    return `<div class="wz-pin ${risky ? "wz-pin-risky" : ""} ${g.place.y < 40 ? "wz-pin-below" : ""}" style="left:${g.place.x}%;top:${g.place.y}%;--c:${color}">
+      <div class="wz-pin-inner">
+        <div class="wz-pin-card"><div class="wz-pin-title">📍 ${wzEscapeHtml(g.place.name)}</div>${list}</div>
+        <span class="wz-pin-tag">${wzEscapeHtml(first.part)}${g.items.length > 1 ? ` +${g.items.length - 1}` : ""}</span>
+        <span class="wz-pin-dot"></span>
+      </div>
+    </div>`;
+  }).join("");
+  // 핀을 눌러도 지도가 끌리지 않게
+  layer.querySelectorAll(".wz-pin").forEach((el) => {
+    el.addEventListener("mousedown", (e) => e.stopPropagation());
+    el.addEventListener("click", (e) => { e.stopPropagation(); el.classList.toggle("open"); });
+  });
+
+  if (label) {
+    label.innerHTML = `${wzEscapeHtml(dayLabel)} 작업 위치 <b>${groups.size}</b>곳` +
+      (items.length ? "" : " · 작업 없음");
+  }
+  if (unplacedBox) {
+    const canEdit = !!(wzConfig.appsScriptUrl || "").trim();
+    unplacedBox.innerHTML = unplaced.length
+      ? `<span class="wz-unplaced-title">지도에 위치가 없는 작업 ${unplaced.length}건</span> ` +
+        unplaced.map((it, i) => canEdit
+          ? `<button type="button" class="wz-unplaced-item wz-unplaced-btn" data-i="${i}">📍 ${wzEscapeHtml(it.part)} · ${wzEscapeHtml(it.work)}</button>`
+          : `<span class="wz-unplaced-item">${wzEscapeHtml(it.part)} · ${wzEscapeHtml(it.work)}</span>`).join("") +
+        `<span class="wz-unplaced-hint">${canEdit ? "작업을 누른 뒤 지도에서 위치를 클릭하면 바로 저장됩니다" : "시트의 '좌표' 칸이 비어 있는 작업입니다"}</span>`
+      : "";
+    unplacedBox.querySelectorAll(".wz-unplaced-btn").forEach((b) => b.onclick = () => wzStartPick({ mode: "setxy", item: unplaced[Number(b.dataset.i)] }));
+  }
+}
+
+/* 지도 클릭으로 작업 추가 / 위치 찍기 (구글 시트 Apps Script 로 바로 저장) */
+let wzPick = null; // { mode: 'add' } | { mode: 'setxy', item }
+
+function wzStartPick(pick) {
+  wzPick = pick;
+  const zb = document.getElementById("wzZoombox");
+  const btn = document.getElementById("wzPickToggle");
+  const box = document.getElementById("wzPickBox");
+  if (zb) zb.classList.toggle("wz-picking", !!pick);
+  if (btn) btn.classList.toggle("active", pick && pick.mode === "add");
+  if (!box) return;
+  if (!pick) { box.hidden = true; return; }
+  box.hidden = false;
+  box.innerHTML = pick.mode === "add"
+    ? `<div><b>지도에서 작업 위치를 클릭하세요</b></div><button type="button" class="wz-pick-cancel">취소</button>`
+    : `<div><b>'${wzEscapeHtml(pick.item.work)}'</b> 위치를 지도에서 클릭하세요</div><button type="button" class="wz-pick-cancel">취소</button>`;
+  box.querySelector(".wz-pick-cancel").onclick = () => wzStartPick(null);
+}
+
+function wzPasscode(reset) {
+  if (reset) { try { localStorage.removeItem("wzPass"); } catch (e) {} }
+  let pw = "";
+  try { pw = localStorage.getItem("wzPass") || ""; } catch (e) {}
+  if (!pw) {
+    pw = prompt("작업일정 저장 암호를 입력하세요 (담당자에게 문의)") || "";
+    if (pw) { try { localStorage.setItem("wzPass", pw); } catch (e) {} }
+  }
+  return pw;
+}
+
+async function wzCallScript(action, payload) {
+  const url = wzConfig.appsScriptUrl.trim();
+  const q = `action=${action}&payload=${encodeURIComponent(JSON.stringify(payload))}&t=${Date.now()}`;
+  const res = await fetch(url + (url.includes("?") ? "&" : "?") + q);
+  const j = await res.json();
+  if (!j.ok) throw new Error(j.error || "저장 실패");
+  return j;
+}
+
+async function wzSaveAndRefresh(action, payload) {
+  payload.passcode = wzPasscode(false);
+  if (!payload.passcode) return false;
+  try {
+    await wzCallScript(action, payload);
+  } catch (err) {
+    if (/암호/.test(err.message)) wzPasscode(true);
+    alert("저장하지 못했습니다: " + err.message);
+    return false;
+  }
+  await wzLoadSheet(wzConfig);
+  wzShowSchedule(wzZones[wzActiveIdx]);
+  return true;
+}
+
+function wzShowAddForm(x, y) {
+  const box = document.getElementById("wzPickBox");
+  const zone = wzZones[wzActiveIdx];
+  const today = wzBaghdadToday();
+  const defDate = wzSelDate || today;
+  const partOpts = Object.entries(WZ_TEAMS).map(([t, v]) =>
+    `<optgroup label="${wzEscapeHtml(t)}">${v.parts.map((p) => `<option value="${wzEscapeHtml(p)}">${wzEscapeHtml(p)}</option>`).join("")}</optgroup>`).join("");
+  box.hidden = false;
+  box.innerHTML = `
+    <div><b>${wzEscapeHtml(zone.name)}</b>에 작업 추가 <small>(X ${x}, Y ${y})</small></div>
+    <input type="date" id="wzfDate" value="${defDate}">
+    <select id="wzfPart">${partOpts}</select>
+    <input type="text" id="wzfWork" placeholder="작업내용 (필수)">
+    <input type="text" id="wzfLoc" placeholder="세부위치 (예: 식당동 옥상)">
+    <div class="wz-risk-checks">${WZ_RISK_WORDS.map((r) => `<label><input type="checkbox" value="${r}">${r}</label>`).join("")}</div>
+    <input type="text" id="wzfPerson" placeholder="담당자 (선택)">
+    <div class="wz-pick-actions"><button type="button" id="wzfSave">저장</button><button type="button" class="wz-pick-cancel">취소</button></div>`;
+  box.querySelector(".wz-pick-cancel").onclick = () => wzStartPick(null);
+  document.getElementById("wzfWork").focus();
+  document.getElementById("wzfSave").onclick = async () => {
+    const work = document.getElementById("wzfWork").value.trim();
+    if (!work) { document.getElementById("wzfWork").focus(); return; }
+    const part = document.getElementById("wzfPart").value;
+    const team = Object.keys(WZ_TEAMS).find((t) => WZ_TEAMS[t].parts.includes(part)) || "";
+    const btn = document.getElementById("wzfSave");
+    btn.disabled = true; btn.textContent = "저장 중…";
+    const ok = await wzSaveAndRefresh("add", {
+      date: document.getElementById("wzfDate").value, zone: zone.name, team, part, work,
+      loc: document.getElementById("wzfLoc").value.trim(),
+      risks: [...box.querySelectorAll(".wz-risk-checks input:checked")].map((c) => c.value),
+      person: document.getElementById("wzfPerson").value.trim(), x, y,
+    });
+    if (ok) wzStartPick(null); else { btn.disabled = false; btn.textContent = "저장"; }
+  };
+}
+
+function wzSetupPickMode() {
+  const btn = document.getElementById("wzPickToggle");
+  const zb = document.getElementById("wzZoombox");
+  if (!btn || !zb) return;
+  const canEdit = !!(wzConfig.appsScriptUrl || "").trim();
+  btn.hidden = !canEdit;
+  btn.onclick = () => wzStartPick(wzPick && wzPick.mode === "add" ? null : { mode: "add" });
+  let downX = 0, downY = 0;
+  zb.addEventListener("mousedown", (e) => { downX = e.clientX; downY = e.clientY; });
+  zb.addEventListener("click", async (e) => {
+    if (!wzPick || Math.hypot(e.clientX - downX, e.clientY - downY) > 4) return; // 끌기는 무시
+    const r = zb.getBoundingClientRect();
+    const x = Math.round(((e.clientX - r.left) / r.width) * 1000) / 10;
+    const y = Math.round(((e.clientY - r.top) / r.height) * 1000) / 10;
+    if (wzPick.mode === "add") {
+      wzPick = { mode: "adding" };
+      wzShowAddForm(x, y);
+    } else if (wzPick.mode === "setxy") {
+      const it = wzPick.item;
+      const box = document.getElementById("wzPickBox");
+      box.innerHTML = `<div>'${wzEscapeHtml(it.work)}' 위치 저장 중…</div>`;
+      const ok = await wzSaveAndRefresh("setxy", { row: it.row, work: it.work, x, y });
+      wzStartPick(null);
+      if (!ok) box.hidden = true;
+    }
+  });
 }
 
 /* ---------------- 지도 확대/축소/이동 ---------------- */
@@ -1636,6 +1890,7 @@ function wzApplyTransform() {
   const box = document.getElementById("wzZoombox");
   if (!box) return;
   box.style.transform = `translate(${wzTx}px, ${wzTy}px) scale(${wzScale})`;
+  box.style.setProperty("--inv", String(1 / wzScale));
 }
 
 function wzClamp(val, min, max) {
