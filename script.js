@@ -3344,8 +3344,8 @@ function renderIraqNews(data) {
         <div class="inews-main">
           <div class="inews-meta-row"><span class="inews-date">${escapeHtml(fmt(n.date))}</span><span class="inews-src">${escapeHtml(n.source || "")}</span><span class="inews-lang">${ar ? "아랍어 → 한국어" : "영어 → 한국어"}</span></div>
           <h3 class="inews-title">${escapeHtml(n.titleKo || n.title)}</h3>
-          ${body.length ? `<div class="inews-body${body.join("").length > 260 ? " clamp" : ""}" id="inb${i}">${body.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}</div>
-            ${body.join("").length > 260 ? `<button type="button" class="inews-more" data-t="inb${i}">더 보기 ▾</button>` : ""}` : ""}
+          ${body.length ? `<div class="inews-body${body.join("").length > 260 ? " clamp" : ""}">${body.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}</div>
+            ${body.join("").length > 260 ? `<button type="button" class="inews-more">더 보기 ▾</button>` : ""}` : ""}
           <details class="inews-orig"><summary>원문 보기</summary>
             <p ${ar ? 'dir="rtl" lang="ar"' : ""}><b>${escapeHtml(n.title)}</b></p>
             ${n.body ? `<p ${ar ? 'dir="rtl" lang="ar"' : ""}>${escapeHtml(n.body)}</p>` : ""}
@@ -3354,8 +3354,9 @@ function renderIraqNews(data) {
         </div>
       </article>`;
     }).join("");
+    // 보건부·환경부 목록이 같은 번호를 쓰면 엉뚱한 기사가 펼쳐지므로, 버튼 바로 앞의 본문을 펼친다
     list.querySelectorAll(".inews-more").forEach((b) => b.onclick = () => {
-      const el = document.getElementById(b.dataset.t);
+      const el = b.previousElementSibling;
       const open = el.classList.toggle("clamp");
       b.textContent = open ? "더 보기 ▾" : "접기 ▴";
     });
