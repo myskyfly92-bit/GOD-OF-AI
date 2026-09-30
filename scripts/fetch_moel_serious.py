@@ -15,7 +15,16 @@ from html.parser import HTMLParser
 
 import requests
 
-URL = "https://labor.moel.go.kr/sasttc/main.do"
+# 첫 화면 주소 후보. 앞에서부터 차례로 시도하고, 통계 카드가 들어 있는 첫 페이지를 쓴다.
+# (브라우저 주소창의 정확한 주소를 알면 맨 앞에 넣으면 된다)
+CANDIDATE_URLS = [
+    "https://labor.moel.go.kr/sasttc/main.do",
+    "https://labor.moel.go.kr/sasttc/",
+    "https://labor.moel.go.kr/sasttc/index.do",
+    "https://labor.moel.go.kr/sasttc/main/main.do",
+    "https://labor.moel.go.kr/",
+]
+URL = CANDIDATE_URLS[0]
 OUTPUT_PATH = "moel-serious.json"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
@@ -101,19 +110,36 @@ def banner_date(alt):
     return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
 
 
-def main():
+def fetch_page():
+    """후보 주소를 차례로 열어 통계 카드가 있는 페이지를 찾는다 (쿠키를 유지하며 사이트 첫 화면부터 방문)"""
+    global URL
+    sess = requests.Session()
+    sess.headers.update(HEADERS)
     try:
-        resp = requests.get(URL, headers=HEADERS, timeout=40)
-    except requests.RequestException as exc:
-        print(f"[오류] 중대재해 알림e 접속 실패: {exc}", file=sys.stderr)
-        sys.exit(1)
-    if resp.status_code != 200:
-        print(f"[오류] 응답 코드 {resp.status_code}: {resp.text[:300]}", file=sys.stderr)
-        sys.exit(1)
-    resp.encoding = resp.apparent_encoding or "utf-8"
+        sess.get("https://labor.moel.go.kr/sasttc/", timeout=40)  # 세션 쿠키 받기
+    except requests.RequestException:
+        pass
+    for url in CANDIDATE_URLS:
+        try:
+            resp = sess.get(url, timeout=40, headers={"Referer": "https://labor.moel.go.kr/sasttc/"})
+        except requests.RequestException as exc:
+            print(f"[시도] {url} → 접속 실패: {exc}")
+            continue
+        resp.encoding = resp.apparent_encoding or "utf-8"
+        p = MoelParser()
+        p.feed(resp.text)
+        print(f"[시도] {url} → 응답 {resp.status_code}, 최종 주소 {resp.url}, 통계 카드 {len(p.cards)}개")
+        if resp.status_code == 200 and p.cards:
+            URL = resp.url
+            return p, resp
+    return None, None
 
-    p = MoelParser()
-    p.feed(resp.text)
+
+def main():
+    p, resp = fetch_page()
+    if p is None:
+        print("[오류] 어느 주소에서도 통계 카드를 찾지 못했습니다. 브라우저 주소창의 정확한 주소를 CANDIDATE_URLS 맨 앞에 넣어 주세요.", file=sys.stderr)
+        sys.exit(1)
 
     # 같은 카드가 두 번 잡히면 하나만
     seen, cards = set(), []
