@@ -2028,3 +2028,29 @@ body.bg-procedures {
 @media (max-width: 980px) { .mascot-runner { display: none; } }
 /* 제목 글자는 마스코트보다 앞에 두어, 지나가도 글자가 가려지지 않게 */
 .topbar .brand-text, .topbar .topbar-status { position: relative; z-index: 6; }
+
+/* ---------- 항공기: 실시간/요약 지도 전환 ---------- */
+.air-switch { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 6px 0 8px; }
+.air-tab {
+  font-family: var(--font-body); font-size: 13px; cursor: pointer; color: var(--text-muted);
+  background: rgba(10, 14, 19, 0.6); border: 1px solid var(--border); border-radius: 999px; padding: 6px 14px;
+}
+.air-tab.active { color: #0a0e13; background: var(--cyan); border-color: var(--cyan); font-weight: 700; }
+.air-open { margin-left: auto; font-size: 12px; color: var(--cyan); text-decoration: none; }
+.air-open:hover { text-decoration: underline; }
+.air-note { font-size: 12px; color: var(--gold); background: rgba(255, 209, 102, 0.08); border: 1px solid rgba(255, 209, 102, 0.3); border-radius: 8px; padding: 7px 12px; margin: 0 0 10px; }
+.air-live iframe {
+  display: block; width: 100%; height: min(70vh, 640px); border: 1px solid var(--border-soft); border-radius: 10px; background: #0f1720;
+}
+.air-live[hidden], #airSummaryBox[hidden] { display: none; }
+.airport-dot { display: inline-block; width: 12px; height: 12px; border-radius: 3px; background: #4fb4ff; }
+.airport-wrap { background: transparent; border: none; }
+.airport-pin {
+  position: absolute; transform: translate(-50%, -50%); width: 20px; height: 20px; border-radius: 5px;
+  background: #4fb4ff; color: #0a0e13; font-size: 12px; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+.airport-label {
+  position: absolute; transform: translate(12px, -50%); font-family: var(--font-mono); font-size: 11px; font-weight: 700;
+  color: #0b3a5c; background: rgba(255, 255, 255, 0.85); border-radius: 3px; padding: 0 3px; white-space: nowrap;
+}
