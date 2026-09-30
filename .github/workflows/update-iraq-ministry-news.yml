@@ -1,15 +1,15 @@
-name: Update health authority news (질병관리청·보건복지부)
+name: Update Iraq ministry news (이라크 보건부·환경부)
 
 on:
   schedule:
-    - cron: "13 21 * * *"
+    - cron: "27 3,15 * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 jobs:
-  update-health-authority-news:
+  update-iraq-ministry-news:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -21,20 +21,20 @@ jobs:
         with:
           node-version: "20"
 
-      - name: 소식 가져오기
-        run: node scripts/fetch-health-authority-news.js
+      - name: 이라크 보건부·환경부 소식 가져오기
+        run: node scripts/fetch-iraq-ministry-news.js
 
       - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # 처음 만들어진 파일도 잡히도록 먼저 add 한 뒤 비교한다
-          git add health-authority-news.json
+          git add iraq-ministry-news.json
           if git diff --cached --quiet; then
             echo "변경사항 없음, 커밋 생략"
             exit 0
           fi
-          git commit -m "chore: 질병관리청·보건복지부 소식 자동 갱신"
+          git commit -m "chore: 이라크 보건부·환경부 소식 자동 갱신"
           for i in 1 2 3 4 5; do
             if git pull --rebase origin main && git push origin main; then
               echo "푸시 성공"
