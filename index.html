@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20260929g">
+<link rel="stylesheet" href="style.css?v=20260930a">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -59,6 +59,7 @@
   <button class="tab-btn" data-view="view-embassy">대사관 안전공지</button>
   <button class="tab-btn" data-view="view-procedures">안전작업절차서</button>
   <button class="tab-btn" data-view="view-accidents">사고사례</button>
+  <button class="tab-btn" data-view="view-sa">중대재해 현황</button>
   <button class="tab-btn" data-view="view-workzone">작업구역</button>
   <button class="tab-btn" data-view="view-ships">해상·항공 현황</button>
   <button class="tab-btn" data-view="view-fires">화재 현황</button>
@@ -341,6 +342,38 @@
 </main>
 </div>
 
+<div id="view-sa" class="view">
+<main class="grid">
+  <section class="panel sa-panel" aria-label="전국 중대재해 현황" style="grid-column: 1 / -1;">
+    <div class="panel-label">SERIOUS ACCIDENTS · 전국 중대재해 현황 <span id="saPeriod" class="sa-period"></span></div>
+    <div class="sa-wrap">
+      <div class="sa-stage" id="saStage" aria-roledescription="carousel">
+        <div class="sa-slides" id="saSlides"></div>
+        <div class="sa-controls">
+          <button type="button" class="sa-btn" id="saPrev" aria-label="이전">‹</button>
+          <div class="sa-dots" id="saDots"></div>
+          <button type="button" class="sa-btn" id="saPause" aria-label="일시정지">❚❚</button>
+          <button type="button" class="sa-btn" id="saNext" aria-label="다음">›</button>
+        </div>
+      </div>
+      <aside class="sa-side" id="saSide" aria-live="polite">
+        <div class="sa-side-head">
+          <button type="button" class="sa-side-arrow" id="saSidePrev" aria-label="이전 유형">‹</button>
+          <div><div class="sa-side-title">중대재해 현황</div><div class="sa-side-sub" id="saSideSub">–</div></div>
+          <button type="button" class="sa-side-arrow" id="saSideNext" aria-label="다음 유형">›</button>
+        </div>
+        <div class="sa-side-card">
+          <div class="sa-side-row"><span id="saSideLabel">사망자수</span><b id="saSideDeaths">–</b></div>
+          <div class="sa-side-sep"></div>
+          <div class="sa-side-row"><span>전년동기대비<br>증감률</span><b id="saSideYoy">–</b></div>
+        </div>
+      </aside>
+    </div>
+    <p class="source-note" id="saSource">–</p>
+  </section>
+</main>
+</div>
+
 <div id="view-workzone" class="view">
 <main class="grid">
   <section class="panel workzone-panel" aria-label="작업구역 현황" style="grid-column: 1 / -1;">
@@ -419,7 +452,7 @@
         <tbody id="globalList"></tbody>
       </table>
     </div>
-    <p class="source-note">현장 정보는 DART 전자공시(단일판매·공급계약체결)에서 매일 자동 수집 · 공시에는 보통 나라까지만 나와 핀은 나라 중앙 부근에 표시됩니다 · 수주 통계 참고: 해외건설통합정보서비스(OCIS) · 지도 배경: Natural Earth</p>
+    <p class="source-note">현장 정보는 DART 전자공시(단일판매·공급계약체결)에서 매일 자동 수집 · 공시에는 보통 나라까지만 나와 핀은 나라 중앙 부근에 표시됩니다 · 회사 로고는 각 회사의 상표로, 현장 위치 안내 목적으로만 표시합니다 · 수주 통계 참고: 해외건설통합정보서비스(OCIS) · 지도 배경: Natural Earth</p>
   </section>
 </main>
 </div>
@@ -430,7 +463,7 @@
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20260929g"></script>
+<script src="script.js?v=20260930a"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

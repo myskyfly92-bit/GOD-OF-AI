@@ -1982,6 +1982,18 @@ async function initGlobalMap() {
 
   globalCompanies = {};
   (data.companies || []).forEach((c) => { globalCompanies[c.id] = c; });
+
+  // 로고를 따로 지정하지 않은 회사는 assets/logos/회사id.png(.jpg/.svg) 파일이 있으면 자동으로 쓴다
+  // 예: 현대건설 → assets/logos/hdec.png, 삼성물산 → assets/logos/samsungcnt.png
+  await Promise.all(Object.values(globalCompanies).map(async (c) => {
+    if (c.logo) return;
+    for (const ext of ["png", "jpg", "svg"]) {
+      try {
+        const r = await fetch(`assets/logos/${c.id}.${ext}`, { method: "HEAD", cache: "no-store" });
+        if (r.ok) { c.logo = `assets/logos/${c.id}.${ext}`; return; }
+      } catch (e) { /* 파일 없음 */ }
+    }
+  }));
   const projects = (data.projects || []).filter((p) => globalCompanies[p.company] && typeof p.lat === "number" && typeof p.lon === "number");
   const activeCountries = new Set(projects.map((p) => p.country));
 
@@ -2114,5 +2126,186 @@ function renderGlobalList() {
 document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     if (btn.dataset.view === "view-global") initGlobalMap();
+  });
+});
+
+
+/* ==========================================================
+   전국 중대재해 현황 (serious-accidents.json)
+   왼쪽: 자동으로 넘어가는 통계 슬라이드 / 오른쪽: 발생유형별 카드
+   ========================================================== */
+
+const SA_COLORS = { construction: "#f2a93b", manufacturing: "#4fb4ff", etc: "#5fd68f" };
+let saSlideIdx = 0, saTimer = null, saPaused = false, saSideIdx = 0, saSideTimer = null, saLoaded = false;
+
+function saYoyHtml(v) {
+  if (v === null || v === undefined || v === "") return "";
+  const n = Number(v);
+  const cls = n > 0 ? "sa-up" : n < 0 ? "sa-down" : "";
+  return `<span class="sa-yoy ${cls}">${n > 0 ? "▲" : n < 0 ? "▼" : "–"} ${Math.abs(n).toFixed(1)}%</span>`;
+}
+
+function saBars(groups, color, total) {
+  const max = Math.max(1, ...groups.map((g) => g[1]));
+  return `<div class="sa-bars">
+    <div class="sa-bar-row sa-bar-total"><span class="sa-bar-label">총계</span>
+      <span class="sa-bar-track"><span class="sa-bar" style="width:100%;background:var(--danger)"></span></span><b>${total}</b></div>
+    ${groups.map((g) => `
+      <div class="sa-bar-row"><span class="sa-bar-label">${escapeHtml(g[0])}</span>
+        <span class="sa-bar-track"><span class="sa-bar" style="width:${(g[1] / Math.max(total, max)) * 100}%;background:${color}"></span></span><b>${g[1]}</b></div>`).join("")}
+  </div>`;
+}
+
+function buildSaSlides(d) {
+  const inds = (d.byIndustry || []).filter((x) => x && x.total != null);
+  const total = inds.reduce((a, x) => a + Number(x.total || 0), 0);
+  const slides = [];
+
+  if (inds.length) {
+    slides.push({
+      title: "업종별 사고사망자",
+      html: `<div class="sa-s1">
+        <div class="sa-big"><span>${escapeHtml(d.period || "")} 사고사망자</span><b>${total}<small>명</small></b>${saYoyHtml(d.totalYoy)}</div>
+        <div class="sa-ind-tiles">${inds.map((x) => `
+          <div class="sa-ind" style="--c:${SA_COLORS[x.key] || "#35d0c0"}">
+            <div class="sa-ind-name">${escapeHtml(x.name)}</div>
+            <div class="sa-ind-num">${x.total}<small>명</small></div>
+            <div class="sa-ind-share"><span style="width:${total ? (x.total / total) * 100 : 0}%"></span></div>
+            <div class="sa-ind-foot">전체의 ${total ? ((x.total / total) * 100).toFixed(1) : 0}% ${saYoyHtml(x.yoy)}</div>
+          </div>`).join("")}</div>
+      </div>`,
+    });
+
+    slides.push({
+      title: "업종·규모별",
+      html: `<div class="sa-s2">${inds.map((x) => `
+        <div class="sa-chart">
+          <div class="sa-chart-title" style="--c:${SA_COLORS[x.key] || "#35d0c0"}"><b>${escapeHtml(x.name)}</b>(${escapeHtml(x.basis || "")})</div>
+          ${saBars(x.groups || [], SA_COLORS[x.key] || "#35d0c0", x.total)}
+        </div>`).join("")}</div>`,
+    });
+  }
+
+  // 건설업 집중 분석: 공사금액 50억 미만 소규모 현장 비중
+  const con = inds.find((x) => x.key === "construction");
+  if (con && con.groups && con.groups.length) {
+    const small = con.groups.filter((g) => /1억 미만|1~5억|5~20억|20~50억/.test(g[0])).reduce((a, g) => a + g[1], 0);
+    const pct = con.total ? (small / con.total) * 100 : 0;
+    slides.push({
+      title: "건설업 집중",
+      html: `<div class="sa-s3">
+        <div class="sa-donut" style="--p:${pct.toFixed(1)}">
+          <div><b>${pct.toFixed(1)}%</b><span>공사금액 50억 미만</span></div>
+        </div>
+        <div class="sa-s3-text">
+          <div class="sa-s3-kicker">건설업 사고사망자 ${con.total}명 중</div>
+          <div class="sa-s3-head"><b>${small}명</b>이 공사금액 <b>50억 원 미만</b> 소규모 현장에서 발생</div>
+          <ul>${con.groups.map((g) => `<li><span>${escapeHtml(g[0])}</span><b>${g[1]}명</b></li>`).join("")}</ul>
+        </div>
+      </div>`,
+    });
+  }
+
+  const types = (d.byType || []).filter((t) => t && t.deaths != null);
+  if (types.length >= 2) {
+    const sorted = types.slice().sort((a, b) => b.deaths - a.deaths);
+    const tmax = sorted[0].deaths || 1;
+    slides.push({
+      title: "발생유형별",
+      html: `<div class="sa-s4"><div class="sa-s4-title">발생유형별 사고사망자</div>
+        ${sorted.map((t, i) => `
+          <div class="sa-type-row"><span class="sa-rank">${i + 1}</span><span class="sa-type-name">${escapeHtml(t.type)}</span>
+            <span class="sa-bar-track"><span class="sa-bar" style="width:${(t.deaths / tmax) * 100}%;background:${i === 0 ? "var(--danger)" : "var(--amber)"}"></span></span>
+            <b>${t.deaths}명</b>${saYoyHtml(t.yoy)}</div>`).join("")}
+      </div>`,
+    });
+  }
+  return slides;
+}
+
+function saShow(i) {
+  const slides = document.querySelectorAll("#saSlides .sa-slide");
+  if (!slides.length) return;
+  saSlideIdx = (i + slides.length) % slides.length;
+  slides.forEach((s, k) => s.classList.toggle("active", k === saSlideIdx));
+  document.querySelectorAll("#saDots .sa-dot").forEach((b, k) => b.classList.toggle("active", k === saSlideIdx));
+}
+
+function saRestart() {
+  clearInterval(saTimer);
+  if (!saPaused) saTimer = setInterval(() => saShow(saSlideIdx + 1), 7000);
+}
+
+function saRenderSide(d) {
+  const types = (d.byType || []).filter((t) => t && t.deaths != null);
+  const inds = (d.byIndustry || []).filter((x) => x && x.total != null);
+  const total = inds.reduce((a, x) => a + Number(x.total || 0), 0);
+  // 카드 순서: 전체 → 발생유형별
+  const cards = [];
+  if (total) cards.push({ sub: "전체 사고사망자", deaths: total, yoy: d.totalYoy });
+  types.forEach((t) => cards.push({ sub: `발생유형(${t.type})`, deaths: t.deaths, yoy: t.yoy }));
+  if (!cards.length) return;
+  const show = (i) => {
+    saSideIdx = (i + cards.length) % cards.length;
+    const c = cards[saSideIdx];
+    document.getElementById("saSideSub").textContent = c.sub;
+    document.getElementById("saSideLabel").innerHTML = `${escapeHtml(d.period || "")}<br>사망자수`;
+    document.getElementById("saSideDeaths").innerHTML = `${c.deaths}<small>명</small>`;
+    const y = document.getElementById("saSideYoy");
+    if (c.yoy === null || c.yoy === undefined) { y.textContent = "–"; y.className = ""; }
+    else { y.innerHTML = `${c.yoy > 0 ? "+" : ""}${Number(c.yoy).toFixed(1)}<small>%</small>`; y.className = c.yoy > 0 ? "sa-up" : c.yoy < 0 ? "sa-down" : ""; }
+    const card = document.querySelector(".sa-side-card");
+    card.classList.remove("sa-flash"); void card.offsetWidth; card.classList.add("sa-flash");
+  };
+  document.getElementById("saSidePrev").onclick = () => { show(saSideIdx - 1); restartSide(); };
+  document.getElementById("saSideNext").onclick = () => { show(saSideIdx + 1); restartSide(); };
+  const restartSide = () => { clearInterval(saSideTimer); if (cards.length > 1) saSideTimer = setInterval(() => show(saSideIdx + 1), 5000); };
+  show(0);
+  restartSide();
+}
+
+async function initSeriousAccidents() {
+  if (saLoaded) return;
+  let d;
+  try {
+    const res = await fetch("serious-accidents.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("serious-accidents.json 로드 실패");
+    d = await res.json();
+  } catch (err) {
+    console.error(err);
+    document.getElementById("saSource").textContent = "중대재해 통계를 불러올 수 없습니다.";
+    return;
+  }
+  saLoaded = true;
+  document.getElementById("saPeriod").textContent = d.period ? `· ${d.period}` : "";
+  document.getElementById("saSource").textContent =
+    `출처: ${d.source || "고용노동부"} (재해조사 대상 사망사고 기준) · 자료 반영일 ${d.updatedAt || "–"} · 분기별 발표 수치를 옮겨 적은 참고 자료입니다`;
+
+  const slides = buildSaSlides(d);
+  document.getElementById("saSlides").innerHTML = slides.map((s, i) =>
+    `<div class="sa-slide${i === 0 ? " active" : ""}" role="group" aria-label="${i + 1} / ${slides.length}">
+      <div class="sa-slide-tag"><span>${i + 1}</span>${escapeHtml(s.title)}</div>${s.html}</div>`).join("");
+  document.getElementById("saDots").innerHTML = slides.map((s, i) =>
+    `<button type="button" class="sa-dot${i === 0 ? " active" : ""}" data-i="${i}" title="${escapeHtml(s.title)}">${i + 1}</button>`).join("");
+  document.querySelectorAll("#saDots .sa-dot").forEach((b) => b.addEventListener("click", () => { saShow(Number(b.dataset.i)); saRestart(); }));
+  document.getElementById("saPrev").onclick = () => { saShow(saSlideIdx - 1); saRestart(); };
+  document.getElementById("saNext").onclick = () => { saShow(saSlideIdx + 1); saRestart(); };
+  const pauseBtn = document.getElementById("saPause");
+  pauseBtn.onclick = () => {
+    saPaused = !saPaused;
+    pauseBtn.textContent = saPaused ? "▶" : "❚❚";
+    pauseBtn.setAttribute("aria-label", saPaused ? "재생" : "일시정지");
+    saRestart();
+  };
+  const stage = document.getElementById("saStage");
+  stage.addEventListener("mouseenter", () => clearInterval(saTimer));
+  stage.addEventListener("mouseleave", saRestart);
+  saRestart();
+  saRenderSide(d);
+}
+
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (btn.dataset.view === "view-sa") initSeriousAccidents();
   });
 });
