@@ -1347,11 +1347,124 @@ async function loadWorkZones() {
     const res = await fetch("work-zones.json", { cache: "no-store" });
     if (!res.ok) throw new Error("work-zones.json 로드 실패");
     const data = await res.json();
+    await wzLoadSheet(data);
     renderWorkZones(data);
   } catch (err) {
     console.error(err);
     wrap.innerHTML = `<p class="skeleton">work-zones.json을 불러올 수 없습니다. (${err.message})</p>`;
   }
+}
+
+/* ---------------- 구글 시트(작업일정) 연동 ---------------- */
+// 팀·파트 구성과 색. 시트의 '팀'이 비어 있어도 '파트'로 팀을 알아낸다.
+const WZ_TEAMS = {
+  "공사팀": { color: "#f2a93b", parts: ["플랜트", "건축", "토목", "조경", "기계", "전기", "수처리시설"] },
+  "관리재경팀": { color: "#35d0c0", parts: ["유지보수"] },
+};
+const WZ_PART_COLORS = {
+  "플랜트": "#ff7e79", "건축": "#f2a93b", "토목": "#c9a26b", "조경": "#5fd68f", "기계": "#4fb4ff",
+  "전기": "#ffd166", "수처리시설": "#7fc8f8", "유지보수": "#35d0c0",
+};
+const WZ_RISK_WORDS = ["고소", "중량물", "화기", "밀폐", "굴착", "전기", "해체", "크레인", "야간"];
+
+let wzItems = null;        // 시트에서 읽은 작업 목록 (null = 시트 미연결)
+let wzSheetError = "";
+let wzTeam = "all", wzPart = null, wzWeekOffset = 0;
+
+function wzParseCsv(text) {
+  const rows = []; let row = [], cell = "", q = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (q) {
+      if (ch === '"' && text[i + 1] === '"') { cell += '"'; i++; }
+      else if (ch === '"') q = false;
+      else cell += ch;
+    } else if (ch === '"') q = true;
+    else if (ch === ",") { row.push(cell); cell = ""; }
+    else if (ch === "\n" || ch === "\r") {
+      if (ch === "\r" && text[i + 1] === "\n") i++;
+      row.push(cell); rows.push(row); row = []; cell = "";
+    } else cell += ch;
+  }
+  if (cell !== "" || row.length) { row.push(cell); rows.push(row); }
+  return rows.filter((r) => r.some((c) => c.trim() !== ""));
+}
+
+function wzParseDate(v) {
+  v = (v || "").trim();
+  let m = v.match(/^(\d{4})\s*[-./년]\s*(\d{1,2})\s*[-./월]\s*(\d{1,2})/);
+  if (m) return `${m[1]}-${m[2].padStart(2, "0")}-${m[3].padStart(2, "0")}`;
+  m = v.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/); // 미국식 월/일/연도
+  if (m) return `${m[3]}-${m[1].padStart(2, "0")}-${m[2].padStart(2, "0")}`;
+  return null;
+}
+
+function wzBaghdadToday() {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: TIMEZONE, year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+}
+
+function wzAddDays(iso, n) {
+  const d = new Date(iso + "T00:00:00Z");
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+
+function wzWeekDates(offset) {
+  const today = wzBaghdadToday();
+  const dow = (new Date(today + "T00:00:00Z").getUTCDay() + 6) % 7; // 월=0
+  const monday = wzAddDays(today, -dow + offset * 7);
+  return WZ_DAY_ORDER.map((_, i) => wzAddDays(monday, i));
+}
+
+async function wzLoadSheet(data) {
+  const url = (data.sheetCsvUrl || "").trim();
+  if (!url) { wzItems = null; return; }
+  try {
+    const sep = url.includes("?") ? "&" : "?";
+    const res = await fetch(url + sep + "t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) throw new Error("응답 " + res.status);
+    const rows = wzParseCsv(await res.text());
+    if (!rows.length) { wzItems = []; return; }
+    const head = rows[0].map((h) => h.replace(/\s|\(.*?\)/g, ""));
+    const col = (...names) => head.findIndex((h) => names.some((n) => h.startsWith(n)));
+    const c = {
+      date: col("날짜", "일자"), day: col("요일"), zone: col("구역"), team: col("팀"), part: col("파트"),
+      work: col("작업내용", "작업"), loc: col("세부위치", "위치"), risk: col("위험작업", "위험"),
+      person: col("담당"), note: col("비고"),
+    };
+    const get = (r, i) => (i >= 0 && r[i] ? r[i].trim() : "");
+    wzItems = rows.slice(1).map((r) => {
+      const part = get(r, c.part);
+      let team = get(r, c.team);
+      if (!team) team = Object.keys(WZ_TEAMS).find((t) => WZ_TEAMS[t].parts.includes(part)) || "";
+      const date = wzParseDate(get(r, c.date));
+      let day = get(r, c.day).replace("요일", "");
+      if (date) day = WZ_DAY_ORDER[(new Date(date + "T00:00:00Z").getUTCDay() + 6) % 7];
+      const riskText = get(r, c.risk);
+      const risks = riskText ? riskText.split(/[,/·\s]+/).map((x) => x.trim()).filter(Boolean) : [];
+      return { date, day, zone: get(r, c.zone), team, part, work: get(r, c.work), loc: get(r, c.loc), risks,
+               person: get(r, c.person), note: get(r, c.note) };
+    }).filter((it) => it.work && (it.date || WZ_DAY_ORDER.includes(it.day)));
+    wzSheetError = "";
+  } catch (err) {
+    console.error("작업일정 시트 불러오기 실패:", err);
+    wzItems = null;
+    wzSheetError = err.message;
+  }
+}
+
+// 현재 구역·주간에 해당하는 작업 (날짜 없이 요일만 적힌 작업은 매주 반복)
+function wzItemsFor(zone, dates) {
+  if (!wzItems) return [];
+  const zoneNames = [zone.name, zone.category].filter(Boolean);
+  return wzItems.filter((it) => (!it.zone || zoneNames.includes(it.zone) || it.zone === "전체")
+    && (it.date ? dates.includes(it.date) : true));
+}
+
+function wzPassFilter(it) {
+  if (wzTeam !== "all" && it.team !== wzTeam) return false;
+  if (wzPart && it.part !== wzPart) return false;
+  return true;
 }
 
 const WZ_DAY_ORDER = ["월", "화", "수", "목", "금", "토", "일"];
@@ -1387,6 +1500,7 @@ function renderWorkZones(data) {
 
   wrap.innerHTML = `
     <div class="wz-zone-tabs">${tabsHtml}</div>
+    <div class="wz-filter-bar" id="wzFilterBar"></div>
     <div class="wz-layout">
       <div class="wz-map-col">
         <div class="wz-viewport" id="wzViewport">
@@ -1439,31 +1553,82 @@ function wzShowZone(idx) {
 function wzShowSchedule(zone) {
   const col = document.getElementById("wzScheduleCol");
   if (!col) return;
-
-  const scheduleMap = {};
-  (zone.schedule || []).forEach(s => { scheduleMap[s.day] = s.work; });
-
-  const rows = WZ_DAY_ORDER.map(day => {
-    const work = scheduleMap[day] || "";
-    return `
-      <div class="wz-day-row ${work ? "" : "wz-day-empty"}">
-        <span class="wz-day-label">${wzEscapeHtml(day)}</span>
-        <span class="wz-day-work">${work ? wzEscapeHtml(work) : "—"}</span>
-      </div>
-    `;
-  }).join("");
-
   const catClass = WZ_CATEGORY_CLASS[zone.category] || "";
-
-  col.innerHTML = `
+  const header = `
     <div class="wz-schedule-header">
       <span class="wz-schedule-cat-badge ${catClass}">${wzEscapeHtml(zone.category || "")}</span>
       <span class="wz-schedule-title">${wzEscapeHtml(zone.name)}</span>
-    </div>
-    <div class="wz-day-list">
-      ${rows}
-    </div>
-  `;
+    </div>`;
+
+  // 시트가 연결되지 않았으면 예전처럼 work-zones.json 의 요일별 한 줄 일정
+  if (!wzItems) {
+    const scheduleMap = {};
+    (zone.schedule || []).forEach(s => { scheduleMap[s.day] = s.work; });
+    const rows = WZ_DAY_ORDER.map(day => {
+      const work = scheduleMap[day] || "";
+      return `
+      <div class="wz-day-row ${work ? "" : "wz-day-empty"}">
+        <span class="wz-day-label">${wzEscapeHtml(day)}</span>
+        <span class="wz-day-work">${work ? wzEscapeHtml(work) : "—"}</span>
+      </div>`;
+    }).join("");
+    col.innerHTML = header + `<div class="wz-day-list">${rows}</div>` +
+      `<p class="wz-sheet-note">${wzSheetError ? "⚠ 작업일정 시트를 불러오지 못했습니다 (" + wzEscapeHtml(wzSheetError) + ")" : "작업일정 구글 시트 연결 전입니다"}</p>`;
+    document.getElementById("wzFilterBar").innerHTML = "";
+    return;
+  }
+
+  const dates = wzWeekDates(wzWeekOffset);
+  const today = wzBaghdadToday();
+  const weekItems = wzItemsFor(zone, dates);
+
+  // 필터 칩 (팀 → 파트, 건수 표시)
+  const bar = document.getElementById("wzFilterBar");
+  const cnt = (f) => weekItems.filter(f).length;
+  const teamChips = [["all", "전체", "#8996a6"], ...Object.entries(WZ_TEAMS).map(([t, v]) => [t, t, v.color])]
+    .map(([key, label, color]) => `<button type="button" class="wz-chip ${wzTeam === key ? "active" : ""}" data-team="${wzEscapeHtml(key)}" style="--c:${color}">
+      ${wzEscapeHtml(label)} <span>${key === "all" ? weekItems.length : cnt((it) => it.team === key)}</span></button>`).join("");
+  const partList = wzTeam === "all" ? Object.values(WZ_TEAMS).flatMap((v) => v.parts) : (WZ_TEAMS[wzTeam] || { parts: [] }).parts;
+  const partChips = partList.map((p) => `<button type="button" class="wz-chip wz-chip-part ${wzPart === p ? "active" : ""}" data-part="${wzEscapeHtml(p)}" style="--c:${WZ_PART_COLORS[p] || "#8996a6"}">
+      <i></i>${wzEscapeHtml(p)} <span>${cnt((it) => it.part === p)}</span></button>`).join("");
+  const todayItems = weekItems.filter((it) => (it.date ? it.date === today : it.day === WZ_DAY_ORDER[(new Date(today + "T00:00:00Z").getUTCDay() + 6) % 7]));
+  const todayRisk = todayItems.filter((it) => it.risks.length).length;
+  const inWeek = dates.includes(today);
+  bar.innerHTML = `
+    <div class="wz-summary">${inWeek ? `오늘 작업 <b>${todayItems.length}</b>건 · ${Object.keys(WZ_TEAMS).map((t) => `${t} ${todayItems.filter((it) => it.team === t).length}`).join(" · ")}
+      ${todayRisk ? `· <span class="wz-risk-sum">⚠ 위험작업 ${todayRisk}건</span>` : ""}` : "다른 주를 보고 있습니다"}</div>
+    <div class="wz-chips">${teamChips}</div>
+    <div class="wz-chips">${partChips}</div>`;
+  bar.querySelectorAll("[data-team]").forEach((b) => b.onclick = () => { wzTeam = b.dataset.team; wzPart = null; wzShowSchedule(zone); });
+  bar.querySelectorAll("[data-part]").forEach((b) => b.onclick = () => { wzPart = wzPart === b.dataset.part ? null : b.dataset.part; wzShowSchedule(zone); });
+
+  const fmt = (iso) => `${Number(iso.slice(5, 7))}/${Number(iso.slice(8, 10))}`;
+  const rows = WZ_DAY_ORDER.map((day, i) => {
+    const iso = dates[i];
+    const list = weekItems.filter((it) => (it.date ? it.date === iso : it.day === day)).filter(wzPassFilter);
+    const items = list.map((it) => `
+      <div class="wz-item" style="--c:${WZ_PART_COLORS[it.part] || "#8996a6"}">
+        <span class="wz-part-badge">${wzEscapeHtml(it.part || it.team || "–")}</span>
+        <div class="wz-item-body">
+          <div class="wz-item-work">${wzEscapeHtml(it.work)}${it.date ? "" : ' <span class="wz-repeat">매주</span>'}</div>
+          ${(it.loc || it.person || it.note) ? `<div class="wz-item-meta">${[it.loc && "📍 " + wzEscapeHtml(it.loc), it.person && "👷 " + wzEscapeHtml(it.person), it.note && wzEscapeHtml(it.note)].filter(Boolean).join(" · ")}</div>` : ""}
+          ${it.risks.length ? `<div class="wz-risks">${it.risks.map((r) => `<span class="wz-risk">⚠ ${wzEscapeHtml(r)}</span>`).join("")}</div>` : ""}
+        </div>
+      </div>`).join("");
+    return `
+      <div class="wz-day-row wz-day-v2 ${list.length ? "" : "wz-day-empty"} ${iso === today ? "wz-today" : ""}">
+        <span class="wz-day-label">${wzEscapeHtml(day)}<small>${fmt(iso)}</small></span>
+        <div class="wz-day-items">${items || '<span class="wz-day-work">—</span>'}</div>
+      </div>`;
+  }).join("");
+
+  col.innerHTML = header.replace("</div>", `
+      <span class="wz-week-nav">
+        <button type="button" data-w="-1" aria-label="이전 주">‹</button>
+        <span>${fmt(dates[0])} ~ ${fmt(dates[6])}${wzWeekOffset === 0 ? " (이번 주)" : ""}</span>
+        <button type="button" data-w="1" aria-label="다음 주">›</button>
+      </span></div>`) + `<div class="wz-day-list">${rows}</div>`;
+  col.querySelectorAll(".wz-week-nav button").forEach((b) => b.onclick = () => { wzWeekOffset += Number(b.dataset.w); wzShowSchedule(zone); });
 }
 
 /* ---------------- 지도 확대/축소/이동 ---------------- */

@@ -1,18 +1,40 @@
 {
-  "_readme": "구역마다 image(사진 경로)와 요일별 schedule을 등록하면 됩니다. 좌표(x/y)는 더 이상 필요 없습니다. category는 '캠프' / 'Site 북부' / 'Site 남부' 중 하나.",
+  "_readme": "구역마다 image(사진 경로)와 요일별 schedule을 등록하면 됩니다. 좌표(x/y)는 더 이상 필요 없습니다. category는 '캠프' / 'Site 북부' / 'Site 남부' 중 하나. 작업일정은 구글 시트로 관리합니다: sheetCsvUrl에 시트의 '웹에 게시(CSV)' 주소를 넣으면 요일별 한 줄 일정(schedule) 대신 시트 내용이 표시됩니다. 비워 두면 예전처럼 schedule을 씁니다.",
+  "sheetCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTxS6i05fJoVrMfnnsKqvq4rlr9ZnNW7V3sXYT_j7XEPkLYlGkHK6JJFy0yGkdjHQ/pub?gid=783609153&single=true&output=csv",
   "zones": [
     {
       "name": "BNCP Camp",
       "category": "캠프",
       "image": "assets/site-map.png",
       "schedule": [
-        { "day": "월", "work": "예시: 캠프 시설 점검" },
-        { "day": "화", "work": "예시: 자재 반입" },
-        { "day": "수", "work": "" },
-        { "day": "목", "work": "예시: 안전교육" },
-        { "day": "금", "work": "" },
-        { "day": "토", "work": "" },
-        { "day": "일", "work": "휴무" }
+        {
+          "day": "월",
+          "work": "예시: 캠프 시설 점검"
+        },
+        {
+          "day": "화",
+          "work": "예시: 자재 반입"
+        },
+        {
+          "day": "수",
+          "work": ""
+        },
+        {
+          "day": "목",
+          "work": "예시: 안전교육"
+        },
+        {
+          "day": "금",
+          "work": ""
+        },
+        {
+          "day": "토",
+          "work": ""
+        },
+        {
+          "day": "일",
+          "work": "휴무"
+        }
       ]
     },
     {
@@ -20,13 +42,34 @@
       "category": "Site 북부",
       "image": "assets/site-north.png",
       "schedule": [
-        { "day": "월", "work": "" },
-        { "day": "화", "work": "" },
-        { "day": "수", "work": "" },
-        { "day": "목", "work": "" },
-        { "day": "금", "work": "" },
-        { "day": "토", "work": "" },
-        { "day": "일", "work": "" }
+        {
+          "day": "월",
+          "work": ""
+        },
+        {
+          "day": "화",
+          "work": ""
+        },
+        {
+          "day": "수",
+          "work": ""
+        },
+        {
+          "day": "목",
+          "work": ""
+        },
+        {
+          "day": "금",
+          "work": ""
+        },
+        {
+          "day": "토",
+          "work": ""
+        },
+        {
+          "day": "일",
+          "work": ""
+        }
       ]
     },
     {
@@ -34,13 +77,34 @@
       "category": "Site 남부",
       "image": "assets/site-south.png",
       "schedule": [
-        { "day": "월", "work": "" },
-        { "day": "화", "work": "" },
-        { "day": "수", "work": "" },
-        { "day": "목", "work": "" },
-        { "day": "금", "work": "" },
-        { "day": "토", "work": "" },
-        { "day": "일", "work": "" }
+        {
+          "day": "월",
+          "work": ""
+        },
+        {
+          "day": "화",
+          "work": ""
+        },
+        {
+          "day": "수",
+          "work": ""
+        },
+        {
+          "day": "목",
+          "work": ""
+        },
+        {
+          "day": "금",
+          "work": ""
+        },
+        {
+          "day": "토",
+          "work": ""
+        },
+        {
+          "day": "일",
+          "work": ""
+        }
       ]
     }
   ]
