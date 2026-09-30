@@ -3399,3 +3399,82 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     if (btn.dataset.view === "view-iraq-moh" || btn.dataset.view === "view-iraq-moen") loadIraqNews(false);
   });
 });
+
+
+/* ==========================================================
+   보건 > 국내 감염병 현황 (kdca-infectious.json · 질병관리청 전수신고)
+   ========================================================== */
+const KDCA_GRADE_COLOR = { "제1급": "#e5484d", "제2급": "#f2a93b", "제3급": "#4fb4ff" };
+let kdcaLoaded = false;
+
+function kdcaDelta(now, before) {
+  const d = now - before;
+  if (!before && !now) return '<span class="kdca-flat">–</span>';
+  if (d === 0) return '<span class="kdca-flat">0</span>';
+  const pct = before ? ` (${d > 0 ? "+" : ""}${Math.round((d / before) * 100)}%)` : "";
+  return `<span class="${d > 0 ? "kdca-up" : "kdca-down"}">${d > 0 ? "▲" : "▼"} ${Math.abs(d).toLocaleString()}${pct}</span>`;
+}
+
+async function loadKdca() {
+  if (kdcaLoaded) return;
+  let d;
+  try {
+    const res = await fetch("kdca-infectious.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("없음");
+    d = await res.json();
+  } catch (e) {
+    document.getElementById("kdcaGrades").innerHTML =
+      '<p class="skeleton">아직 통계가 없습니다. GitHub Actions에서 "Update KDCA infectious disease stats"를 한 번 실행하면 표시됩니다.</p>';
+    return;
+  }
+  kdcaLoaded = true;
+  const bw = d.baseWeek, md = (s) => s.slice(5).replace("-", "/");
+  document.getElementById("kdcaWeek").textContent = `· ${bw.label} (${md(bw.start)}~${md(bw.end)}) 기준`;
+
+  // 1급 감염병 경보
+  const alert = document.getElementById("kdcaAlert");
+  if (d.grade1Recent && d.grade1Recent.length) {
+    alert.className = "kdca-alert on";
+    alert.innerHTML = `⚠ 최근 4주 제1급 감염병 신고: ` + d.grade1Recent.map((g) =>
+      `<b>${escapeHtml(g.name)}</b> ${g.total}건 <small>(${g.weeks.map((w) => escapeHtml(w.week.replace(/^\d+년 /, ""))).join(", ")})</small>`).join(" · ");
+  } else {
+    alert.className = "kdca-alert ok";
+    alert.textContent = "최근 4주간 제1급 감염병(에볼라, 페스트, 탄저 등) 신고 없음";
+  }
+
+  // 급별 카드 + 추이 막대
+  document.getElementById("kdcaGrades").innerHTML = ["제1급", "제2급", "제3급"].map((g) => {
+    const v = d.grades[g] || { base: 0, prev: 0, provisional: 0, trend: [], diseases: 0, outnatn: 0 };
+    const max = Math.max(1, ...v.trend);
+    const c = KDCA_GRADE_COLOR[g];
+    return `<div class="kdca-card" style="--c:${c}">
+      <div class="kdca-card-head"><b>${g} 감염병</b><span>${v.diseases}종</span></div>
+      <div class="kdca-num">${v.base.toLocaleString()}<small>건</small></div>
+      <div class="kdca-delta">전주 대비 ${kdcaDelta(v.base, v.prev)}</div>
+      <div class="kdca-bars" title="최근 ${v.trend.length}주 추이">${v.trend.map((t, i) =>
+        `<i style="height:${Math.max(4, (t / max) * 100)}%" title="${escapeHtml(d.trendWeeks[i] || "")}: ${t}건"></i>`).join("")}</div>
+      <div class="kdca-foot">해외유입 ${v.outnatn}건 · 잠정(${escapeHtml(d.provisionalWeek.label.replace(/^\d+년 /, ""))}) ${v.provisional.toLocaleString()}건</div>
+    </div>`;
+  }).join("");
+
+  // 상위 감염병 표
+  document.getElementById("kdcaTop").innerHTML = `
+    <thead><tr><th>#</th><th>감염병</th><th>급</th><th>${escapeHtml(bw.label.replace(/^\d+년 /, ""))}</th><th>전주 대비</th><th>해외유입</th></tr></thead>
+    <tbody>${(d.top || []).slice(0, 10).map((t, i) => `<tr>
+      <td>${i + 1}</td><td>${escapeHtml(t.name)}</td>
+      <td><span class="kdca-grade" style="--c:${KDCA_GRADE_COLOR[t.grade] || "#8996a6"}">${escapeHtml(t.grade.replace("제", ""))}</span></td>
+      <td class="num">${t.base.toLocaleString()}</td><td class="num">${kdcaDelta(t.base, t.prev)}</td>
+      <td class="num">${t.outnatn ? t.outnatn : "–"}</td></tr>`).join("") || '<tr><td colspan="6">신고 없음</td></tr>'}</tbody>`;
+
+  document.getElementById("kdcaImported").innerHTML = (d.importedRecent4 || []).length
+    ? d.importedRecent4.map((m) => `<li><span class="kdca-grade" style="--c:${KDCA_GRADE_COLOR[m.grade] || "#8996a6"}">${escapeHtml(m.grade.replace("제", ""))}</span>${escapeHtml(m.name)}<b>${m.count}건</b></li>`).join("")
+    : "<li>최근 4주 해외유입 신고 없음</li>";
+
+  document.getElementById("kdcaMeta").textContent =
+    `출처: 질병관리청 전수신고 감염병 발생현황 (공공누리 제4유형) · 신고가 늦게 쌓이므로 진행 중인 주의 2주 전(${bw.label})을 기준으로 봅니다 · 마지막 수집: ` +
+    new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(d.generatedAt));
+}
+
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", () => { if (btn.dataset.view === "view-health-kdca") loadKdca(); });
+});
