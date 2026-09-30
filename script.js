@@ -3301,43 +3301,74 @@ setInterval(() => {
 }, 10 * 60 * 1000);
 
 
-/* ---------------- 이라크 보건부·환경부 소식 (iraq-ministry-news.json) ---------------- */
-async function loadIraqMinistryNews() {
-  const targets = [["health", "iraqMohList", "iraqMohMeta"], ["environment", "iraqMoenList", "iraqMoenMeta"]];
-  let data = null;
+/* ---------------- 이라크 보건부·환경부 소식 (구글 Apps Script가 모아 번역한 기사) ---------------- */
+let inewsCache = null, inewsAt = 0;
+
+async function loadIraqNews(force) {
+  const lists = document.querySelectorAll(".inews-list");
+  if (!lists.length) return;
+  if (!force && inewsCache && Date.now() - inewsAt < 10 * 60 * 1000) return renderIraqNews(inewsCache);
+  let data = null, err = "";
   try {
-    const res = await fetch("iraq-ministry-news.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("iraq-ministry-news.json 로드 실패");
+    const cfg = await (await fetch("work-zones.json", { cache: "no-store" })).json();
+    const url = (cfg.appsScriptUrl || "").trim();
+    if (!url) throw new Error("Apps Script 주소(appsScriptUrl)가 없습니다");
+    const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=news&t=" + Date.now());
     data = await res.json();
-  } catch (err) {
-    console.error(err);
+    if (!data.ok) throw new Error(data.error || "불러오기 실패");
+  } catch (e) {
+    err = e.message;
   }
-  targets.forEach(([key, listId, metaId]) => {
-    const list = document.getElementById(listId);
-    if (!list) return;
-    if (!data) {
-      list.innerHTML = `<li class="embassy-row skeleton">아직 소식이 없습니다. GitHub Actions에서 'Update Iraq ministry news'가 한 번 실행된 뒤 표시됩니다.</li>`;
+  if (!data) {
+    lists.forEach((l) => { l.innerHTML = `<p class="skeleton">기사를 불러오지 못했습니다 (${escapeHtml(err)})</p>`; });
+    return;
+  }
+  inewsCache = data; inewsAt = Date.now();
+  renderIraqNews(data);
+}
+
+function renderIraqNews(data) {
+  const fmt = (d) => (d || "").slice(0, 16).replace("T", " ");
+  document.querySelectorAll(".inews-list").forEach((list) => {
+    const items = (data.items || []).filter((n) => n.topic === list.dataset.topic);
+    if (!items.length) {
+      list.innerHTML = `<p class="skeleton">아직 모은 기사가 없습니다. Apps Script에서 setupNewsTrigger를 한 번 실행하면 6시간마다 모입니다.</p>`;
       return;
     }
-    const items = data[key] || [];
-    list.innerHTML = items.length ? items.map((n) => {
-      const ar = n.lang === "ar";
+    list.innerHTML = items.map((n, i) => {
+      const ar = /arab/i.test(n.lang || "");
+      const body = (n.bodyKo || "").split(/\n+/).filter(Boolean);
       return `
-      <li class="embassy-row">
-        <div class="notice-top">
-          <span class="notice-title">${n.titleKo ? escapeHtml(n.titleKo) : `<span ${ar ? 'dir="rtl" lang="ar"' : ""}>${escapeHtml(n.title)}</span>`}</span>
-          <span class="notice-date">${escapeHtml((n.date || "").slice(0, 10))}</span>
+      <article class="inews-item">
+        ${n.image ? `<img class="inews-img" src="${escapeHtml(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+        <div class="inews-main">
+          <div class="inews-meta-row"><span class="inews-date">${escapeHtml(fmt(n.date))}</span><span class="inews-src">${escapeHtml(n.source || "")}</span><span class="inews-lang">${ar ? "아랍어 → 한국어" : "영어 → 한국어"}</span></div>
+          <h3 class="inews-title">${escapeHtml(n.titleKo || n.title)}</h3>
+          ${body.length ? `<div class="inews-body${body.join("").length > 260 ? " clamp" : ""}" id="inb${i}">${body.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}</div>
+            ${body.join("").length > 260 ? `<button type="button" class="inews-more" data-t="inb${i}">더 보기 ▾</button>` : ""}` : ""}
+          <details class="inews-orig"><summary>원문 보기</summary>
+            <p ${ar ? 'dir="rtl" lang="ar"' : ""}><b>${escapeHtml(n.title)}</b></p>
+            ${n.body ? `<p ${ar ? 'dir="rtl" lang="ar"' : ""}>${escapeHtml(n.body)}</p>` : ""}
+            ${n.link ? `<a href="${escapeHtml(n.link)}" target="_blank" rel="noopener noreferrer">원문 기사 페이지 ↗</a>` : ""}
+          </details>
         </div>
-        ${n.titleKo ? `<div class="notice-body iraq-news-orig" ${ar ? 'dir="rtl" lang="ar"' : ""}>${escapeHtml(n.title)}</div>` : ""}
-        <div class="notice-body"><span class="iraq-news-lang">${ar ? "아랍어" : "영어"}</span>${n.source ? " " + escapeHtml(n.source) : ""}${n.titleKo ? ' <span class="iraq-news-mt">· 자동 번역</span>' : ""}</div>
-        ${n.link ? `<a class="embassy-link" href="${n.link}" target="_blank" rel="noopener noreferrer">원문 보기 ↗</a>` : ""}
-      </li>`;
-    }).join("") : `<li class="embassy-row skeleton">최근 수집된 소식이 없습니다.</li>`;
-    if (data.generatedAt) {
-      document.getElementById(metaId).textContent =
-        "구글 뉴스(아랍어·영어) 검색 연동 · 제목 한국어 자동 번역(MyMemory, 부정확할 수 있음) · 마지막 수집: " +
-        new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(data.generatedAt));
+      </article>`;
+    }).join("");
+    list.querySelectorAll(".inews-more").forEach((b) => b.onclick = () => {
+      const el = document.getElementById(b.dataset.t);
+      const open = el.classList.toggle("clamp");
+      b.textContent = open ? "더 보기 ▾" : "접기 ▴";
+    });
+    const meta = list.parentElement.querySelector(".inews-meta");
+    if (meta && data.updatedAt) {
+      meta.textContent = "이라크 언론 기사(GDELT 검색)를 모아 구글 번역으로 한국어로 옮긴 참고 자료입니다 · 번역은 기계 번역이라 어색할 수 있습니다 · 마지막 수집: " +
+        new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(data.updatedAt));
     }
   });
 }
-loadIraqMinistryNews();
+
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (btn.dataset.view === "view-iraq-moh" || btn.dataset.view === "view-iraq-moen") loadIraqNews(false);
+  });
+});
