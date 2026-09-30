@@ -1493,7 +1493,7 @@ async function wzLoadSheet(data) {
     const c = {
       date: col("날짜", "일자"), day: col("요일"), zone: col("구역"), team: col("팀"), part: col("파트"),
       work: col("작업내용", "작업"), loc: col("세부위치", "위치"), risk: col("위험작업", "위험"),
-      person: col("담당"), note: col("비고"), xy: col("좌표"),
+      person: col("담당"), note: col("비고"), xy: col("좌표"), crew: col("작업인원", "인원"),
     };
     const get = (r, i) => (i >= 0 && r[i] ? r[i].trim() : "");
     wzItems = rows.slice(1).map((r, idx) => {
@@ -1508,7 +1508,8 @@ async function wzLoadSheet(data) {
       const xyM = get(r, c.xy).match(/([\d.]+)\s*[,\s]\s*([\d.]+)/);
       const xy = xyM ? { x: parseFloat(xyM[1]), y: parseFloat(xyM[2]) } : null;
       return { date, day, zone: get(r, c.zone), team, part, work: get(r, c.work), loc: get(r, c.loc), risks,
-               person: get(r, c.person), note: get(r, c.note), xy, row: idx + 2 };
+               person: get(r, c.person), note: get(r, c.note), xy, row: idx + 2,
+               crew: parseInt(get(r, c.crew).replace(/[^\d]/g, ""), 10) || 0 };
     }).filter((it) => it.work && (it.date || WZ_DAY_ORDER.includes(it.day)));
     wzSheetError = "";
   } catch (err) {
@@ -1531,7 +1532,7 @@ function renderTodayWork() {
   document.getElementById("twGo").onclick = () => document.querySelector('.tab-btn[data-view="view-workzone"]')?.click();
 
   if (!wzItems) {
-    totalEl.textContent = "–"; riskEl.textContent = "–";
+    totalEl.textContent = "–"; riskEl.textContent = "–"; document.getElementById("twCrew").textContent = "–";
     rowsEl.innerHTML = `<p class="tw-empty">${wzSheetError ? "작업일정을 불러오지 못했습니다" : "작업일정 시트 연결 전입니다"}</p>`;
     return;
   }
@@ -1539,6 +1540,10 @@ function renderTodayWork() {
   const risky = items.filter((it) => it.risks.length);
   totalEl.textContent = items.length;
   riskEl.textContent = risky.length;
+  const crewAll = items.reduce((a, it) => a + it.crew, 0);
+  const crewRisk = risky.reduce((a, it) => a + it.crew, 0);
+  document.getElementById("twCrew").textContent = crewAll;
+  document.getElementById("twRiskCrew").textContent = crewRisk ? `위험작업 투입 ${crewRisk}명` : "";
   document.getElementById("twRiskBox").classList.toggle("on", risky.length > 0);
 
   const count = (arr, key) => arr.reduce((m, it) => { const k = key(it); if (k) m[k] = (m[k] || 0) + 1; return m; }, {});
@@ -1552,8 +1557,9 @@ function renderTodayWork() {
   rowsEl.innerHTML = items.length ? `
     <div class="tw-row"><span class="tw-key">팀별</span><div>${chips(byTeam, (t) => (WZ_TEAMS[t] || {}).color || "#8996a6")}</div></div>
     <div class="tw-row"><span class="tw-key">구역별</span><div>${chips(byZone)}</div></div>
+    ${crewAll ? `<div class="tw-row"><span class="tw-key">인원(명)</span><div>${chips(Object.fromEntries(Object.keys(WZ_TEAMS).map((t) => [t, items.filter((it) => it.team === t).reduce((a, it) => a + it.crew, 0)]).filter(([, n]) => n)), (t) => (WZ_TEAMS[t] || {}).color || "#8996a6")}</div></div>` : ""}
     ${risky.length ? `<div class="tw-row"><span class="tw-key">위험작업</span><div>${chips(byRisk, () => "#e5484d")}</div></div>
-    <div class="tw-risk-list">${risky.slice(0, 4).map((it) => `<div>⚠ <b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)} <span>${wzEscapeHtml(it.zone || "")}${it.loc ? " · " + wzEscapeHtml(it.loc) : ""}</span></div>`).join("")}
+    <div class="tw-risk-list">${risky.slice(0, 4).map((it) => `<div>⚠ <b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)} <span>${wzEscapeHtml(it.zone || "")}${it.loc ? " · " + wzEscapeHtml(it.loc) : ""}${it.crew ? " · 👥 " + it.crew + "명" : ""}</span></div>`).join("")}
       ${risky.length > 4 ? `<div class="tw-more">외 ${risky.length - 4}건</div>` : ""}</div>` : ""}`
     : `<p class="tw-empty">오늘 등록된 작업이 없습니다</p>`;
 }
@@ -1710,7 +1716,7 @@ function wzShowSchedule(zone) {
   const todayRisk = todayItems.filter((it) => it.risks.length).length;
   const inWeek = dates.includes(today);
   bar.innerHTML = `
-    <div class="wz-summary">${inWeek ? `오늘 작업 <b>${todayItems.length}</b>건 · ${Object.keys(WZ_TEAMS).map((t) => `${t} ${todayItems.filter((it) => it.team === t).length}`).join(" · ")}
+    <div class="wz-summary">${inWeek ? `오늘 작업 <b>${todayItems.length}</b>건 · 인원 <b>${todayItems.reduce((a, it) => a + it.crew, 0)}</b>명 · ${Object.keys(WZ_TEAMS).map((t) => `${t} ${todayItems.filter((it) => it.team === t).length}`).join(" · ")}
       ${todayRisk ? `· <span class="wz-risk-sum">⚠ 위험작업 ${todayRisk}건</span>` : ""}` : "다른 주를 보고 있습니다"}</div>
     <div class="wz-chips">${teamChips}</div>
     <div class="wz-chips">${partChips}</div>`;
@@ -1726,7 +1732,7 @@ function wzShowSchedule(zone) {
         <span class="wz-part-badge">${wzEscapeHtml(it.part || it.team || "–")}</span>
         <div class="wz-item-body">
           <div class="wz-item-work">${wzEscapeHtml(it.work)}${it.date ? "" : ' <span class="wz-repeat">매주</span>'}</div>
-          ${(it.loc || it.person || it.note) ? `<div class="wz-item-meta">${[it.loc && "📍 " + wzEscapeHtml(it.loc), it.person && "👷 " + wzEscapeHtml(it.person), it.note && wzEscapeHtml(it.note)].filter(Boolean).join(" · ")}</div>` : ""}
+          ${(it.loc || it.person || it.note || it.crew) ? `<div class="wz-item-meta">${[it.loc && "📍 " + wzEscapeHtml(it.loc), it.crew && "👥 " + it.crew + "명", it.person && "👷 " + wzEscapeHtml(it.person), it.note && wzEscapeHtml(it.note)].filter(Boolean).join(" · ")}</div>` : ""}
           ${it.risks.length ? `<div class="wz-risks">${it.risks.map((r) => `<span class="wz-risk">⚠ ${wzEscapeHtml(r)}</span>`).join("")}</div>` : ""}
         </div>
       </div>`).join("");
@@ -1776,7 +1782,7 @@ function wzRenderPins(zone, items, dayLabel) {
     const color = WZ_PART_COLORS[first.part] || "#8996a6";
     const risky = g.items.some((it) => it.risks.length);
     const list = g.items.map((it) => `
-      <div class="wz-pin-row"><b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)}
+      <div class="wz-pin-row"><b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)}${it.crew ? ` <span class="wz-pin-crew">👥 ${it.crew}명</span>` : ""}
         ${it.risks.length ? `<span class="wz-pin-risk">⚠ ${it.risks.map(wzEscapeHtml).join(", ")}</span>` : ""}</div>`).join("");
     // 사진 위쪽 핀은 설명 카드를 아래로 펼쳐서 잘리지 않게
     return `<div class="wz-pin ${risky ? "wz-pin-risky" : ""} ${g.place.y < 40 ? "wz-pin-below" : ""}" style="left:${g.place.x}%;top:${g.place.y}%;--c:${color}">
@@ -1884,7 +1890,10 @@ function wzShowAddForm(x, y) {
     <input type="text" id="wzfWork" placeholder="작업내용 (필수)">
     <input type="text" id="wzfLoc" placeholder="세부위치 (예: 식당동 옥상)">
     <div class="wz-risk-checks">${WZ_RISK_WORDS.map((r) => `<label><input type="checkbox" value="${r}">${r}</label>`).join("")}</div>
-    <input type="text" id="wzfPerson" placeholder="담당자 (선택)">
+    <div class="wz-form-pair">
+      <input type="number" id="wzfCrew" min="0" step="1" inputmode="numeric" placeholder="작업인원 (명)">
+      <input type="text" id="wzfPerson" placeholder="담당자 (선택)">
+    </div>
     <div class="wz-pick-actions"><button type="button" id="wzfSave">저장</button><button type="button" class="wz-pick-cancel">취소</button></div>`;
   box.querySelector(".wz-pick-cancel").onclick = () => wzStartPick(null);
   document.getElementById("wzfWork").focus();
@@ -1899,7 +1908,8 @@ function wzShowAddForm(x, y) {
       date: document.getElementById("wzfDate").value, zone: zone.name, team, part, work,
       loc: document.getElementById("wzfLoc").value.trim(),
       risks: [...box.querySelectorAll(".wz-risk-checks input:checked")].map((c) => c.value),
-      person: document.getElementById("wzfPerson").value.trim(), x, y,
+      person: document.getElementById("wzfPerson").value.trim(),
+      crew: parseInt(document.getElementById("wzfCrew").value, 10) || "", x, y,
     });
     if (ok) wzStartPick(null); else { btn.disabled = false; btn.textContent = "저장"; }
   };

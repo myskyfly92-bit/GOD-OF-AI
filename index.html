@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20260930k">
+<link rel="stylesheet" href="style.css?v=20260930m">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -106,11 +106,23 @@
 
   <!-- HERO: 무재해 연속일수 -->
   <section class="panel hero-panel" aria-label="무재해 연속일수">
-    <div class="panel-label">SAFETY COUNTER · 무재해 연속</div>
-    <div class="hero-counter">
-      <span id="incidentFreeDays">0</span><span class="hero-unit">일</span>
+    <div class="panel-label">SAFETY COUNTER · 무재해 연속 · 착공 후 경과일수</div>
+    <div class="hero-duo">
+      <div class="hero-duo-item">
+        <div class="hero-duo-title">무재해 연속</div>
+        <div class="hero-counter">
+          <span id="incidentFreeDays">0</span><span class="hero-unit">일</span>
+        </div>
+        <p class="hero-sub" id="lastIncidentText">기준일 데이터 불러오는 중…</p>
+      </div>
+      <div class="hero-duo-item hero-duo-right">
+        <div class="hero-duo-title">착공 후 경과일수</div>
+        <div class="construction-counter">
+          <span id="constructionDays">0</span><span class="hero-unit">일째</span>
+        </div>
+        <p class="hero-sub" id="constructionStartText">착공일 데이터 불러오는 중…</p>
+      </div>
     </div>
-    <p class="hero-sub" id="lastIncidentText">기준일 데이터 불러오는 중…</p>
     <div class="hero-substats">
       <div class="substat">
         <span class="substat-value" id="monthlyInspections">–</span>
@@ -142,21 +154,13 @@
     </div>
   </section>
 
-  <!-- 착공 후 경과일수 -->
-  <section class="panel construction-panel" aria-label="착공 후 경과일수">
-    <div class="panel-label">PROJECT TIMELINE · 착공 후 경과일수</div>
-    <div class="construction-counter">
-      <span id="constructionDays">0</span><span class="hero-unit">일째</span>
-    </div>
-    <p class="hero-sub" id="constructionStartText">착공일 데이터 불러오는 중…</p>
-  </section>
-
   <!-- 오늘 작업 현황 (작업구역 탭의 구글 시트 작업일정 요약) -->
   <section class="panel today-work-panel" aria-label="오늘 작업 현황">
     <div class="panel-label">TODAY'S WORK · 오늘 작업 현황 <span id="twDate" class="tw-date"></span></div>
     <div class="tw-main">
       <div class="tw-big"><span id="twTotal">–</span><small>건</small><em>오늘 작업</em></div>
-      <div class="tw-big tw-risk" id="twRiskBox"><span id="twRisk">–</span><small>건</small><em>⚠ 위험작업</em></div>
+      <div class="tw-big"><span id="twCrew">–</span><small>명</small><em>투입 인원</em></div>
+      <div class="tw-big tw-risk" id="twRiskBox"><span id="twRisk">–</span><small>건</small><em>⚠ 위험작업 <i id="twRiskCrew"></i></em></div>
     </div>
     <div class="tw-rows" id="twRows"></div>
     <button type="button" class="tw-link" id="twGo">작업구역 탭에서 보기 →</button>
@@ -487,7 +491,7 @@
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20260930k"></script>
+<script src="script.js?v=20260930m"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">
