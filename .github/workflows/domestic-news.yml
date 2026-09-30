@@ -2,9 +2,8 @@ name: Update domestic news (의학·질병·사고)
 
 on:
   schedule:
-    # 매일 UTC 21:00 (한국시간 오전 6시)에 실행
-    - cron: "0 21 * * *"
-  workflow_dispatch: {} # 저장소의 Actions 탭에서 수동 실행도 가능
+    - cron: "4 21 * * *"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -12,6 +11,7 @@ permissions:
 jobs:
   update-domestic-news:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v4
@@ -24,14 +24,24 @@ jobs:
       - name: 뉴스 가져오기
         run: node scripts/fetch-domestic-news.js
 
-      - name: 변경사항 커밋 & 푸시
+      - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- domestic-news.json; then
-            echo "변경사항 없음"
-          else
-            git add domestic-news.json
-            git commit -m "chore: 국내 뉴스(의학·질병·사고) 자동 갱신"
-            git push
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # 처음 만들어진 파일도 잡히도록 먼저 add 한 뒤 비교한다
+          git add domestic-news.json
+          if git diff --cached --quiet; then
+            echo "변경사항 없음, 커밋 생략"
+            exit 0
           fi
+          git commit -m "chore: 국내 뉴스(의학·질병·사고) 자동 갱신"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "푸시 성공"
+              exit 0
+            fi
+            echo "충돌 발생, ${i}번째 재시도 전 5초 대기..."
+            sleep 5
+          done
+          echo "5회 재시도 후에도 푸시 실패"
+          exit 1

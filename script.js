@@ -3299,3 +3299,45 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
 setInterval(() => {
   if (document.getElementById("view-env-weather")?.classList.contains("active")) { hsewxLoaded = 0; loadHsewx(); }
 }, 10 * 60 * 1000);
+
+
+/* ---------------- 이라크 보건부·환경부 소식 (iraq-ministry-news.json) ---------------- */
+async function loadIraqMinistryNews() {
+  const targets = [["health", "iraqMohList", "iraqMohMeta"], ["environment", "iraqMoenList", "iraqMoenMeta"]];
+  let data = null;
+  try {
+    const res = await fetch("iraq-ministry-news.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("iraq-ministry-news.json 로드 실패");
+    data = await res.json();
+  } catch (err) {
+    console.error(err);
+  }
+  targets.forEach(([key, listId, metaId]) => {
+    const list = document.getElementById(listId);
+    if (!list) return;
+    if (!data) {
+      list.innerHTML = `<li class="embassy-row skeleton">아직 소식이 없습니다. GitHub Actions에서 'Update Iraq ministry news'가 한 번 실행된 뒤 표시됩니다.</li>`;
+      return;
+    }
+    const items = data[key] || [];
+    list.innerHTML = items.length ? items.map((n) => {
+      const ar = n.lang === "ar";
+      return `
+      <li class="embassy-row">
+        <div class="notice-top">
+          <span class="notice-title">${n.titleKo ? escapeHtml(n.titleKo) : `<span ${ar ? 'dir="rtl" lang="ar"' : ""}>${escapeHtml(n.title)}</span>`}</span>
+          <span class="notice-date">${escapeHtml((n.date || "").slice(0, 10))}</span>
+        </div>
+        ${n.titleKo ? `<div class="notice-body iraq-news-orig" ${ar ? 'dir="rtl" lang="ar"' : ""}>${escapeHtml(n.title)}</div>` : ""}
+        <div class="notice-body"><span class="iraq-news-lang">${ar ? "아랍어" : "영어"}</span>${n.source ? " " + escapeHtml(n.source) : ""}${n.titleKo ? ' <span class="iraq-news-mt">· 자동 번역</span>' : ""}</div>
+        ${n.link ? `<a class="embassy-link" href="${n.link}" target="_blank" rel="noopener noreferrer">원문 보기 ↗</a>` : ""}
+      </li>`;
+    }).join("") : `<li class="embassy-row skeleton">최근 수집된 소식이 없습니다.</li>`;
+    if (data.generatedAt) {
+      document.getElementById(metaId).textContent =
+        "구글 뉴스(아랍어·영어) 검색 연동 · 제목 한국어 자동 번역(MyMemory, 부정확할 수 있음) · 마지막 수집: " +
+        new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(data.generatedAt));
+    }
+  });
+}
+loadIraqMinistryNews();
