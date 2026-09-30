@@ -2086,7 +2086,13 @@ body.bg-procedures {
 .sub-bar[hidden] { display: none; }
 .sub-row { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 12px; border-left: 3px solid var(--cyan); background: rgba(10, 14, 19, 0.45); border-radius: 0 10px 10px 0; }
 .sub-row[hidden] { display: none; }
-.sub-row .tab-btn { font-size: 12px; padding: 6px 14px; }
+/* 소분류 글씨: 대분류와 같은 한글 글꼴(Noto Sans KR)로, 조금 가볍게 */
+.sub-row .tab-btn {
+  font-family: var(--font-body); font-size: 13px; font-weight: 600; letter-spacing: 0;
+  padding: 7px 16px; color: var(--text-muted);
+}
+.sub-row .tab-btn:hover { color: var(--text); }
+.sub-row .tab-btn.active { color: var(--bg); font-weight: 700; }
 
 /* 빌려 온 카드는 새 화면에서 한 줄을 다 쓰게 */
 .view-borrow .grid > .panel { grid-column: 1 / -1 !important; grid-row: auto !important; }
