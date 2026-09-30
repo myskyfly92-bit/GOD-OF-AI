@@ -2063,10 +2063,42 @@ body.bg-procedures {
 .hero-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: end; }
 .hero-duo-title { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; letter-spacing: 0.02em; }
 .hero-duo-right { padding-left: 24px; border-left: 1px solid var(--border-soft); }
-.hero-duo .hero-counter { font-size: clamp(56px, 6.5vw, 96px); }
-.hero-duo .construction-counter { font-size: clamp(44px, 5vw, 72px); margin-top: 0; }
-.hero-duo .hero-unit { font-size: 20px; }
+.hero-duo .hero-counter { font-size: clamp(52px, 5.2vw, 96px); }
+.hero-duo .construction-counter { font-size: clamp(38px, 3.9vw, 72px); margin-top: 0; }
+.hero-duo .hero-unit { font-size: 18px; white-space: nowrap; }
 @media (max-width: 700px) {
   .hero-duo { grid-template-columns: 1fr; }
   .hero-duo-right { padding-left: 0; border-left: 0; border-top: 1px solid var(--border-soft); padding-top: 16px; }
+}
+
+/* ---------- 대분류 / 소분류 탭 ---------- */
+.group-bar { display: flex; flex-wrap: wrap; gap: 8px; }
+.group-btn {
+  font-family: var(--font-body); font-size: 14px; font-weight: 700; color: var(--text);
+  background: rgba(10, 14, 19, 0.7); border: 1px solid var(--border); border-radius: 999px;
+  padding: 9px 20px; cursor: pointer; transition: all 0.15s ease; backdrop-filter: blur(4px);
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.group-btn i { font-style: normal; font-size: 15px; }
+.group-btn:hover { border-color: var(--cyan); }
+.group-btn.active { color: var(--bg); background: var(--cyan); border-color: var(--cyan); }
+.sub-bar { flex-basis: 100%; display: flex; }
+.sub-bar[hidden] { display: none; }
+.sub-row { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 12px; border-left: 3px solid var(--cyan); background: rgba(10, 14, 19, 0.45); border-radius: 0 10px 10px 0; }
+.sub-row[hidden] { display: none; }
+.sub-row .tab-btn { font-size: 12px; padding: 6px 14px; }
+
+/* 빌려 온 카드는 새 화면에서 한 줄을 다 쓰게 */
+.view-borrow .grid > .panel { grid-column: 1 / -1 !important; grid-row: auto !important; }
+
+/* ---------- 노트북 화면에서도 오른쪽 달력·환율이 보이도록 ----------
+   카드 영역 폭을 '화면 폭 - 달력 자리(약 360px)'로 제한해서 항상 달력이 들어갈 자리를 남긴다 */
+@media (min-width: 981px) {
+  .grid, .tab-bar { max-width: min(1360px, calc(100vw - 380px)); }
+}
+@media (min-width: 981px) and (max-width: 1250px) {
+  /* 좁은 노트북: 카드를 한 줄로 쌓아 글자가 너무 좁아지지 않게 */
+  .grid { grid-template-columns: 1fr; }
+  .heat-panel { grid-column: auto; grid-row: auto; }
+  .hero-panel { grid-column: auto; }
 }

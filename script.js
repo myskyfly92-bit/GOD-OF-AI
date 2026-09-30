@@ -861,7 +861,8 @@ function alignSideWidgets() {
     if (fitsOnScreen) {
       const calendarRight = left + calendarWidth; // 달력의 실제 오른쪽 끝(뷰포트 기준)
       const groupWidth = rightGroup.offsetWidth || 0;
-      const tabBarRect = tabBarEl.getBoundingClientRect();
+      // 소분류 줄이 열려 있어도 언어 버튼은 대분류 줄(첫 줄) 높이에 맞춘다
+      const tabBarRect = (tabBarEl.querySelector(".group-bar") || tabBarEl).getBoundingClientRect();
       const tabBarCenterY = tabBarRect.top + tabBarRect.height / 2;
       const groupHeight = rightGroup.offsetHeight || 0;
       rightGroup.style.left = `${Math.round(calendarRight - groupWidth + scrollX)}px`;
@@ -3088,4 +3089,70 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   const start = () => { bounds(); busyUntil = performance.now() + 1500; requestAnimationFrame(tick); };
   if (home.complete) start(); else home.addEventListener("load", start, { once: true });
   window.addEventListener("resize", bounds);
+})();
+
+
+/* ==========================================================
+   대분류(종합현황·안전·보건·환경·기타) → 소분류 탭
+   - 소분류 버튼은 예전 탭 버튼(.tab-btn)을 그대로 써서 기존 기능이 모두 그대로 동작한다
+   - 보건·환경 화면 일부는 종합현황의 카드를 잠깐 빌려 와서 보여 주고,
+     종합현황으로 돌아가면 제자리로 돌려놓는다 (같은 카드를 두 벌 만들지 않기 위해)
+   ========================================================== */
+(function navGroups() {
+  const groupBtns = document.querySelectorAll(".group-btn");
+  const subBar = document.getElementById("subBar");
+  if (!groupBtns.length || !subBar) return;
+  const lastView = {}; // 대분류마다 마지막으로 본 소분류
+
+  function showGroup(g) {
+    groupBtns.forEach((b) => b.classList.toggle("active", b.dataset.group === g));
+    subBar.querySelectorAll(".sub-row").forEach((r) => { r.hidden = r.dataset.group !== g || g === "home"; });
+    subBar.hidden = g === "home";
+  }
+
+  // 빌려 온 카드 관리
+  const borrowed = []; // { el, marker }
+  function restoreAll() {
+    borrowed.forEach(({ el, marker }) => {
+      if (el.previousSibling !== marker) marker.parentNode.insertBefore(el, marker.nextSibling);
+    });
+  }
+  function borrowInto(view) {
+    const grid = view.querySelector(".grid");
+    (view.dataset.borrow || "").split(",").map((x) => x.trim()).filter(Boolean).forEach((sel) => {
+      let rec = borrowed.find((r) => r.sel === sel);
+      if (!rec) {
+        const el = document.querySelector(`#view-dashboard ${sel}`);
+        if (!el) return;
+        const marker = document.createComment(" 원래 자리: " + sel);
+        el.parentNode.insertBefore(marker, el);
+        rec = { sel, el, marker };
+        borrowed.push(rec);
+      }
+      grid.appendChild(rec.el);
+    });
+  }
+
+  document.querySelectorAll(".tab-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const row = btn.closest(".sub-row");
+      const g = row ? row.dataset.group : "home";
+      lastView[g] = btn.dataset.view;
+      showGroup(g);
+      const view = document.getElementById(btn.dataset.view);
+      restoreAll();
+      if (view && view.classList.contains("view-borrow")) borrowInto(view);
+      // 빌려 온 카드 안의 그래프·지도가 크기를 다시 잡도록
+      window.dispatchEvent(new Event("resize"));
+    });
+  });
+
+  groupBtns.forEach((gb) => gb.addEventListener("click", () => {
+    const g = gb.dataset.group;
+    const row = subBar.querySelector(`.sub-row[data-group="${g}"]`);
+    const target = (lastView[g] && row.querySelector(`.tab-btn[data-view="${lastView[g]}"]`)) || row.querySelector(".tab-btn");
+    if (target) target.click();
+  }));
+
+  showGroup("home");
 })();
