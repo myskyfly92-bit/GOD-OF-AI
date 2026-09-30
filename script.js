@@ -2186,6 +2186,56 @@ function buildSaSlides(d) {
     });
   }
 
+  // 3. 업종·재해유형별
+  const withTypes = inds.filter((x) => Array.isArray(x.types) && x.types.length);
+  if (withTypes.length) {
+    slides.push({
+      title: "업종·재해유형별",
+      html: `<div class="sa-s5">${withTypes.map((x) => `
+        <div class="sa-tcard" style="--c:${SA_COLORS[x.key] || "#35d0c0"}">
+          <div class="sa-tcard-head"><span>${escapeHtml(x.name)}</span><b>${x.total}<small>명</small></b></div>
+          <div class="sa-tgrid">${x.types.map((t, i) => `
+            <div class="sa-titem${i === 0 ? " top" : ""}"><span>${escapeHtml(t[0])}</span><b>${t[1]}<small>명</small></b></div>`).join("")}
+          </div>
+        </div>`).join("")}</div>`,
+    });
+
+    // 4. 전 업종 재해유형 순위 (업종별 재해유형을 합산)
+    const sum = {};
+    withTypes.forEach((x) => x.types.forEach(([name, n]) => { sum[name] = (sum[name] || 0) + n; }));
+    const yoyOf = {};
+    (d.byType || []).forEach((t) => { yoyOf[t.type] = t.yoy; });
+    const ranked = Object.entries(sum).sort((a, b) => (a[0] === "기타") - (b[0] === "기타") || b[1] - a[1]);
+    const tmax = Math.max(...ranked.map((r) => r[1]), 1);
+    const tsum = ranked.reduce((a, r) => a + r[1], 0);
+    slides.push({
+      title: "재해유형 순위",
+      html: `<div class="sa-s4"><div class="sa-s4-title">전 업종 재해유형별 사고사망자 (합계 ${tsum}명)</div>
+        ${ranked.map(([name, n], i) => `
+          <div class="sa-type-row"><span class="sa-rank">${name === "기타" ? "–" : i + 1}</span><span class="sa-type-name">${escapeHtml(name)}</span>
+            <span class="sa-bar-track"><span class="sa-bar" style="width:${(n / tmax) * 100}%;background:${i === 0 ? "var(--danger)" : name === "기타" ? "var(--text-dim)" : "var(--amber)"}"></span></span>
+            <b>${n}명</b><span class="sa-type-pct">${((n / tsum) * 100).toFixed(1)}%${saYoyHtml(yoyOf[name])}</span></div>`).join("")}
+      </div>`,
+    });
+  }
+
+  // 5. 사망사고 최다 발생 유형 (연령·직종·요일·시간)
+  const tops = (d.topFactors || []).filter((f) => f && f.deaths != null);
+  if (tops.length) {
+    const colors = ["#e8743b", "#4f8ef7", "#e8743b", "#4f8ef7"];
+    slides.push({
+      title: "사망사고 최다 발생 유형",
+      html: `<div class="sa-s6">${tops.map((f, i) => `
+        <div class="sa-fdonut">
+          <div class="sa-fring" style="--p:${Number(f.pct) || 0};--c:${colors[i % colors.length]}">
+            <span class="sa-fcount" style="color:${colors[i % colors.length]}">${f.deaths}명</span>
+            <div><b>${escapeHtml(f.label)}</b><small>(${Number(f.pct).toFixed(1)}%)</small></div>
+          </div>
+          <div class="sa-faxis">${escapeHtml(f.axis)}</div>
+        </div>`).join("")}</div>`,
+    });
+  }
+
   // 건설업 집중 분석: 공사금액 50억 미만 소규모 현장 비중
   const con = inds.find((x) => x.key === "construction");
   if (con && con.groups && con.groups.length) {
@@ -2206,20 +2256,6 @@ function buildSaSlides(d) {
     });
   }
 
-  const types = (d.byType || []).filter((t) => t && t.deaths != null);
-  if (types.length >= 2) {
-    const sorted = types.slice().sort((a, b) => b.deaths - a.deaths);
-    const tmax = sorted[0].deaths || 1;
-    slides.push({
-      title: "발생유형별",
-      html: `<div class="sa-s4"><div class="sa-s4-title">발생유형별 사고사망자</div>
-        ${sorted.map((t, i) => `
-          <div class="sa-type-row"><span class="sa-rank">${i + 1}</span><span class="sa-type-name">${escapeHtml(t.type)}</span>
-            <span class="sa-bar-track"><span class="sa-bar" style="width:${(t.deaths / tmax) * 100}%;background:${i === 0 ? "var(--danger)" : "var(--amber)"}"></span></span>
-            <b>${t.deaths}명</b>${saYoyHtml(t.yoy)}</div>`).join("")}
-      </div>`,
-    });
-  }
   return slides;
 }
 
@@ -2261,6 +2297,8 @@ function saRenderSide(d, moel) {
     if (total) cards.push({ sub: "전체 사고사망자", rows: [{ label: `${d.period || ""} 사망자수`, value: `${total}명` }, yoyRow(d.totalYoy)] });
     (d.byType || []).filter((t) => t && t.deaths != null).forEach((t) =>
       cards.push({ sub: `발생유형(${t.type})`, rows: [{ label: `${d.period || ""} 사망자수`, value: `${t.deaths}명` }, yoyRow(t.yoy)] }));
+    (d.bySize || []).filter((t) => t && t.deaths != null).forEach((t) =>
+      cards.push({ sub: t.name, rows: [{ label: `${d.period || ""} 사망자수`, value: `${t.deaths}명` }, yoyRow(t.yoy)] }));
   }
   if (!cards.length) return;
 
