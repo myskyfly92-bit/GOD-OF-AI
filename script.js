@@ -1,5 +1,5 @@
 /* ==========================================================
-   Bismayah HSE Control Room — script.js
+   Bismayah HSE Situation Room — script.js
    - 실시간 시계 (바그다드 표준시 UTC+3)
    - Open-Meteo 날씨/대기질 API 연동 (무료, API 키 불필요)
    - data.json 기반 안전지표/공지/비상연락망 렌더링
@@ -107,7 +107,7 @@ if (familySiteSelect) {
   familySiteSelect.addEventListener("change", () => {
     const url = familySiteSelect.value;
     if (url) {
-      // 항상 새 탭으로만 열기 — 현재 통제실 화면은 그대로 유지되도록
+      // 항상 새 탭으로만 열기 — 현재 상황실 화면은 그대로 유지되도록
       // (팝업이 차단되더라도 현재 탭을 대체하지 않음)
       window.open(url, "_blank", "noopener");
     }
@@ -1558,7 +1558,7 @@ function renderTodayWork() {
     : `<p class="tw-empty">오늘 등록된 작업이 없습니다</p>`;
 }
 
-// 통제실 화면을 켜 두어도 10분마다 작업일정을 다시 읽는다
+// 상황실 화면을 켜 두어도 10분마다 작업일정을 다시 읽는다
 setInterval(() => { if (typeof wzConfig === "object" && (wzConfig.appsScriptUrl || wzConfig.sheetCsvUrl)) wzLoadSheet(wzConfig).then(() => { if (wzZones[wzActiveIdx] && document.getElementById("wzScheduleCol")) wzShowSchedule(wzZones[wzActiveIdx]); }); }, 10 * 60 * 1000);
 
 // 현재 구역·주간에 해당하는 작업 (날짜 없이 요일만 적힌 작업은 매주 반복)
@@ -2462,7 +2462,9 @@ async function initGlobalMap() {
       } catch (e) { /* 파일 없음 */ }
     }
   }));
-  const projects = (data.projects || []).filter((p) => globalCompanies[p.company] && typeof p.lat === "number" && typeof p.lon === "number");
+  // 준공된 현장은 빼고, 수주·공사중 현장만 보여 준다
+  const projects = (data.projects || []).filter((p) => globalCompanies[p.company] && typeof p.lat === "number" && typeof p.lon === "number"
+    && p.status !== "준공");
   const activeCountries = new Set(projects.map((p) => p.country));
 
   // 배경 세계 지도 (현장이 있는 나라는 색을 입힌다)
