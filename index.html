@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20260930n">
+<link rel="stylesheet" href="style.css?v=20260930p">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -369,7 +369,15 @@
 </div>
 
 <div id="view-env-weather" class="view view-borrow" data-borrow="section[aria-label='현재 날씨 및 대기환경']">
-<main class="grid"></main>
+<main class="grid">
+  <!-- HSE 기상 지표: 비스마야 vs 서울 -->
+  <section class="panel hsewx-panel" aria-label="HSE 기상 지표 비교" style="grid-column: 1 / -1;">
+    <div class="panel-label">HSE WEATHER INDEX · 작업 안전 기상 지표 <span class="hsewx-vs">비스마야 vs 서울</span></div>
+    <div class="hsewx-cards" id="hsewxCards"><p class="skeleton">기상 지표 불러오는 중…</p></div>
+    <div class="hsewx-table-wrap"><table class="hsewx-table" id="hsewxTable"></table></div>
+    <p class="source-note" id="hsewxMeta">Open-Meteo 날씨·대기질 API</p>
+  </section>
+</main>
 </div>
 
 <div id="view-procedures" class="view">
@@ -528,7 +536,7 @@
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20260930n"></script>
+<script src="script.js?v=20260930p"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

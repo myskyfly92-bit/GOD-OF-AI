@@ -3156,3 +3156,146 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
 
   showGroup("home");
 })();
+
+
+/* ==========================================================
+   환경 > 날씨·대기환경 : 작업 안전 기상 지표 (비스마야 vs 서울)
+   ① 돌풍(순간풍속)과 크레인 작업 기준  ② 모래먼지·시정
+   ③ 미국 대기질 지수(US AQI)  ④ WBGT 추정(더위 스트레스)
+   ========================================================== */
+const HSEWX_SITES = [
+  { key: "bnc", name: "비스마야", lat: BISMAYAH_LAT, lon: BISMAYAH_LON },
+  { key: "sel", name: "서울", lat: 37.5665, lon: 126.978 },
+];
+let hsewxLoaded = 0;
+
+// 등급표: [상한, 이름, 색]
+const HSEWX_BANDS = {
+  gust: [[10, "정상", "#35d0c0"], [20, "설치·해체 중지", "#f2a93b"], [Infinity, "운전 중지", "#e5484d"]],
+  dust: [[30, "좋음", "#35d0c0"], [80, "보통", "#8bd35f"], [150, "나쁨", "#f2a93b"], [Infinity, "매우 나쁨", "#e5484d"]],
+  vis: [[1, "매우 나쁨", "#e5484d"], [5, "나쁨", "#f2a93b"], [10, "보통", "#8bd35f"], [Infinity, "좋음", "#35d0c0"]],
+  aqi: [[50, "좋음", "#35d0c0"], [100, "보통", "#8bd35f"], [150, "민감군 나쁨", "#f2a93b"], [200, "나쁨", "#ff7e79"], [300, "매우 나쁨", "#e5484d"], [Infinity, "위험", "#b11f4a"]],
+  wbgt: [[21, "거의 안전", "#35d0c0"], [25, "주의", "#8bd35f"], [28, "경계", "#ffd166"], [31, "엄중 경계", "#f2a93b"], [Infinity, "위험", "#e5484d"]],
+};
+function hsewxBand(kind, v) {
+  if (v == null || !isFinite(v)) return { name: "–", color: "#5b6675" };
+  const b = HSEWX_BANDS[kind].find(([max]) => v < max) || HSEWX_BANDS[kind][HSEWX_BANDS[kind].length - 1];
+  return { name: b[1], color: b[2] };
+}
+
+// WBGT 간이 추정식 (호주 기상청 방식, 기온·습도로 계산하는 그늘 기준 값)
+function hsewxWbgt(t, rh) {
+  if (t == null || rh == null) return null;
+  const e = (rh / 100) * 6.105 * Math.exp((17.27 * t) / (237.7 + t));
+  return 0.567 * t + 0.393 * e + 3.94;
+}
+
+async function hsewxFetch(site) {
+  const q = `latitude=${site.lat}&longitude=${site.lon}&timezone=auto`;
+  const [wx, aq] = await Promise.all([
+    fetch(`https://api.open-meteo.com/v1/forecast?${q}&wind_speed_unit=ms&current=temperature_2m,relative_humidity_2m,apparent_temperature,dew_point_2m,wind_speed_10m,wind_gusts_10m,visibility,shortwave_radiation,cloud_cover,pressure_msl&hourly=wind_gusts_10m&forecast_hours=24`).then((r) => r.json()),
+    fetch(`https://air-quality-api.open-meteo.com/v1/air-quality?${q}&current=us_aqi,pm10,pm2_5,dust,aerosol_optical_depth,carbon_monoxide,nitrogen_dioxide`).then((r) => r.json()),
+  ]);
+  const c = wx.current || {}, a = aq.current || {};
+  const gustNext = (wx.hourly && wx.hourly.wind_gusts_10m || []).filter((x) => x != null);
+  return {
+    time: c.time, tz: wx.timezone_abbreviation || "",
+    temp: c.temperature_2m, rh: c.relative_humidity_2m, feel: c.apparent_temperature, dew: c.dew_point_2m,
+    wind: c.wind_speed_10m, gust: c.wind_gusts_10m, gustMax24: gustNext.length ? Math.max(...gustNext) : null,
+    vis: c.visibility != null ? c.visibility / 1000 : null, rad: c.shortwave_radiation, cloud: c.cloud_cover, pres: c.pressure_msl,
+    aqi: a.us_aqi, pm10: a.pm10, pm25: a.pm2_5, dust: a.dust, aod: a.aerosol_optical_depth, co: a.carbon_monoxide, no2: a.nitrogen_dioxide,
+    wbgt: hsewxWbgt(c.temperature_2m, c.relative_humidity_2m),
+  };
+}
+
+function hsewxFmt(v, d = 0) { return v == null || !isFinite(v) ? "–" : Number(v).toFixed(d); }
+
+function hsewxCard(title, unit, kind, key, d, data, extra) {
+  const rows = HSEWX_SITES.map((s) => {
+    const v = data[s.key] ? data[s.key][key] : null;
+    const b = hsewxBand(kind, v);
+    return `<div class="hsewx-row">
+      <span class="hsewx-site">${s.name}</span>
+      <b style="color:${b.color}">${hsewxFmt(v, d)}<small>${unit}</small></b>
+      <span class="hsewx-badge" style="--c:${b.color}">${b.name}</span>
+    </div>`;
+  }).join("");
+  return `<div class="hsewx-card"><div class="hsewx-card-title">${title}</div>${rows}${extra || ""}</div>`;
+}
+
+async function loadHsewx() {
+  if (Date.now() - hsewxLoaded < 10 * 60 * 1000) return; // 10분 안에는 다시 부르지 않는다
+  const cards = document.getElementById("hsewxCards");
+  if (!cards) return;
+  const results = await Promise.allSettled(HSEWX_SITES.map(hsewxFetch));
+  const data = {};
+  results.forEach((r, i) => { if (r.status === "fulfilled") data[HSEWX_SITES[i].key] = r.value; });
+  if (!Object.keys(data).length) {
+    cards.innerHTML = '<p class="skeleton">기상 지표를 불러올 수 없습니다. 잠시 후 다시 시도해 주세요.</p>';
+    return;
+  }
+  hsewxLoaded = Date.now();
+  const b = data.bnc || {};
+
+  // ① 돌풍 카드: 비스마야 크레인 작업 판단 문구
+  const g = b.gust, gmax = b.gustMax24;
+  const crane = g == null ? "" : g > 20
+    ? "⛔ 지금 순간풍속 20m/s 초과: 타워크레인 운전 작업 중지"
+    : g > 10 ? "⚠ 지금 순간풍속 10m/s 초과: 타워크레인 설치·수리·점검·해체 작업 중지"
+    : "✅ 크레인 작업 가능 (순간풍속 10m/s 이하)";
+  const gustExtra = `<p class="hsewx-note">${crane}${gmax != null ? `<br>비스마야 24시간 내 최대 순간풍속 예보 <b>${hsewxFmt(gmax, 1)} m/s</b>${gmax > 10 ? " · 작업 계획 시 주의" : ""}` : ""}</p>`;
+
+  // ② 모래먼지 + 시정
+  const visRows = HSEWX_SITES.map((s) => {
+    const v = data[s.key] ? data[s.key].vis : null; const bd = hsewxBand("vis", v);
+    return `<span>${s.name} 시정 <b style="color:${bd.color}">${hsewxFmt(v, 1)} km</b></span>`;
+  }).join(" · ");
+  const dustAlert = (b.dust != null && b.dust > 150) || (b.vis != null && b.vis < 1)
+    ? "🌪 모래폭풍 수준: 옥외작업 중지 검토, 방진마스크 착용, 장비·차량 운행 주의"
+    : (b.dust != null && b.dust > 80) || (b.vis != null && b.vis < 5)
+      ? "😷 먼지 많음: 방진마스크 착용, 시야 확보 주의" : "";
+  const dustExtra = `<p class="hsewx-note">${visRows}${dustAlert ? `<br><b class="hsewx-alert">${dustAlert}</b>` : ""}</p>`;
+
+  // ④ WBGT
+  const wb = b.wbgt;
+  const wbAdvice = wb == null ? "" : wb >= 31 ? "위험: 옥외 중작업 중지 검토, 매시간 충분한 휴식"
+    : wb >= 28 ? "엄중 경계: 작업·휴식 시간 조정, 물·그늘·휴식 철저"
+    : wb >= 25 ? "경계: 규칙적인 물 섭취와 휴식" : wb >= 21 ? "주의: 수분 보충" : "거의 안전";
+  const wbExtra = `<p class="hsewx-note">비스마야: ${wbAdvice}<br><span class="hsewx-dim">기온·습도로 계산한 그늘 기준 추정치이며, 햇볕 아래에서는 보통 2~3℃ 더 높습니다</span></p>`;
+
+  cards.innerHTML =
+    hsewxCard("💨 순간풍속(돌풍)", " m/s", "gust", "gust", 1, data, gustExtra) +
+    hsewxCard("🌪 모래먼지", " ㎍/㎥", "dust", "dust", 0, data, dustExtra) +
+    hsewxCard("🌫 대기질 지수 (US AQI)", "", "aqi", "aqi", 0, data,
+      `<p class="hsewx-note hsewx-dim">미세먼지·오존·가스 농도를 합친 종합 점수 (0~50 좋음 · 51~100 보통 · 101 이상 나쁨)</p>`) +
+    hsewxCard("🌡 WBGT 추정 (더위 스트레스)", " ℃", "wbgt", "wbgt", 1, data, wbExtra);
+
+  // 세부 비교표
+  const rows = [
+    ["기온", "temp", "℃", 1], ["체감온도", "feel", "℃", 1], ["습도", "rh", "%", 0], ["이슬점", "dew", "℃", 1],
+    ["평균 풍속", "wind", "m/s", 1], ["순간풍속", "gust", "m/s", 1], ["시정", "vis", "km", 1],
+    ["일사량", "rad", "W/㎡", 0], ["구름양", "cloud", "%", 0], ["기압", "pres", "hPa", 0],
+    ["미세먼지 PM10", "pm10", "㎍/㎥", 0], ["초미세먼지 PM2.5", "pm25", "㎍/㎥", 0], ["모래먼지", "dust", "㎍/㎥", 0],
+    ["연무(에어로졸 광학두께)", "aod", "", 2], ["일산화탄소", "co", "㎍/㎥", 0], ["이산화질소", "no2", "㎍/㎥", 0],
+  ];
+  document.getElementById("hsewxTable").innerHTML = `
+    <thead><tr><th>항목</th>${HSEWX_SITES.map((s) => `<th>${s.name}</th>`).join("")}<th>차이 (비스마야 − 서울)</th></tr></thead>
+    <tbody>${rows.map(([label, key, unit, d]) => {
+      const a = data.bnc ? data.bnc[key] : null, c = data.sel ? data.sel[key] : null;
+      const diff = a != null && c != null ? a - c : null;
+      return `<tr><td>${label}${unit ? ` <small>(${unit})</small>` : ""}</td><td>${hsewxFmt(a, d)}</td><td>${hsewxFmt(c, d)}</td>
+        <td class="${diff > 0 ? "hsewx-up" : diff < 0 ? "hsewx-down" : ""}">${diff == null ? "–" : (diff > 0 ? "+" : "") + diff.toFixed(d)}</td></tr>`;
+    }).join("")}</tbody>`;
+
+  const t = (k) => data[k] && data[k].time ? `${data[k].time.slice(11, 16)}` : "–";
+  document.getElementById("hsewxMeta").textContent =
+    `Open-Meteo 날씨·대기질 API · 기준 시각: 비스마야 ${t("bnc")} (현지), 서울 ${t("sel")} (현지) · 10분마다 갱신 · ` +
+    `크레인 기준: 산업안전보건기준에 관한 규칙(순간풍속 10m/s·20m/s) · WBGT 구간: 일본 환경성 지침 · 먼지 구간: 한국 PM10 예보 기준 준용`;
+}
+
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", () => { if (btn.dataset.view === "view-env-weather") loadHsewx(); });
+});
+setInterval(() => {
+  if (document.getElementById("view-env-weather")?.classList.contains("active")) { hsewxLoaded = 0; loadHsewx(); }
+}, 10 * 60 * 1000);
