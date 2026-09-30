@@ -2856,3 +2856,109 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     if (btn.dataset.view === "view-sa") initSeriousAccidents();
   });
 });
+
+
+/* ==========================================================
+   배너 마스코트: 배너 위를 걸어 다니고, 가끔 폴짝 뛰고, 누르면 한마디
+   (그림 파일은 그대로 쓰고 움직임만 CSS·JS로 준다)
+   ========================================================== */
+(function mascotRunner() {
+  const bar = document.querySelector(".topbar");
+  const home = document.querySelector(".brand-mascot");
+  if (!bar || !home) return;
+  // 움직임 줄이기를 켠 사용자·작은 화면에서는 원래처럼 가만히
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const runner = document.createElement("div");
+  runner.className = "mascot-runner";
+  runner.innerHTML = `<div class="mascot-body"><img src="${home.getAttribute("src")}" alt="" draggable="false"></div>
+    <div class="mascot-bubble" hidden></div><div class="mascot-shadow"></div>`;
+  bar.appendChild(runner);
+  home.classList.add("mascot-home"); // 제자리는 자리만 차지하고 숨김
+  const body = runner.querySelector(".mascot-body");
+  const bubble = runner.querySelector(".mascot-bubble");
+
+  const LINES = ["안전제일!", "보호구 착용 확인!", "오늘도 무재해!", "안전벨트 체결!", "물 자주 마셔요!", "작업 전 TBM!", "위험하면 멈추기!"];
+  let x = 0, dir = 1, state = "idle", until = 0, minX = 0, maxX = 0, last = 0, hover = false;
+  const SPEED = 38; // px/초
+
+  function bounds() {
+    const b = bar.getBoundingClientRect();
+    const h = home.getBoundingClientRect();
+    const status = bar.querySelector(".topbar-status");
+    const text = bar.querySelector(".brand-text");
+    minX = h.left - b.left;
+    // 오른쪽 끝: 시계·국기 영역 앞까지 (제목 글자 위도 지나가게 둔다)
+    const right = status ? status.getBoundingClientRect().left - b.left : b.width;
+    maxX = Math.max(minX, right - runner.offsetWidth - 16);
+    if (text && maxX - minX < 80) maxX = minX; // 공간이 없으면 제자리
+    x = Math.min(Math.max(x || minX, minX), maxX);
+    runner.style.top = (h.top - b.top) + "px";
+  }
+
+  function setState(s, ms) {
+    state = s;
+    until = performance.now() + ms;
+    runner.dataset.state = s;
+  }
+
+  function say(text) {
+    bubble.textContent = text;
+    bubble.hidden = false;
+    clearTimeout(say.t);
+    say.t = setTimeout(() => { bubble.hidden = true; }, 2600);
+  }
+
+  function jump(big) {
+    body.classList.remove("jump", "jump-big");
+    void body.offsetWidth;
+    body.classList.add(big ? "jump-big" : "jump");
+  }
+
+  function pickNext() {
+    const r = Math.random();
+    if (maxX <= minX) return setState("idle", 4000);
+    if (r < 0.55) {
+      // 걷기: 끝에 닿으면 방향을 바꾼다
+      if (x <= minX + 2) dir = 1;
+      else if (x >= maxX - 2) dir = -1;
+      else if (Math.random() < 0.35) dir *= -1;
+      setState("walk", 2500 + Math.random() * 4500);
+    } else if (r < 0.75) {
+      setState("idle", 1500 + Math.random() * 2500);
+      jump(false);
+    } else if (r < 0.85) {
+      setState("idle", 2500);
+      say(LINES[Math.floor(Math.random() * LINES.length)]);
+    } else {
+      setState("idle", 2000 + Math.random() * 3000);
+    }
+  }
+
+  function tick(t) {
+    const dt = last ? Math.min(0.05, (t - last) / 1000) : 0;
+    last = t;
+    if (!hover) {
+      if (t > until) pickNext();
+      if (state === "walk") {
+        x += dir * SPEED * dt;
+        if (x <= minX) { x = minX; dir = 1; setState("idle", 1200); }
+        if (x >= maxX) { x = maxX; dir = -1; setState("idle", 1200); }
+      }
+    }
+    runner.style.transform = `translateX(${x}px)`;
+    body.style.setProperty("--flip", dir < 0 ? -1 : 1);
+    requestAnimationFrame(tick);
+  }
+
+  runner.addEventListener("mouseenter", () => { hover = true; runner.dataset.state = "idle"; });
+  runner.addEventListener("mouseleave", () => { hover = false; setState("idle", 600); });
+  runner.addEventListener("click", () => {
+    jump(true);
+    say(LINES[Math.floor(Math.random() * LINES.length)]);
+  });
+
+  const start = () => { bounds(); setState("idle", 1500); requestAnimationFrame(tick); };
+  if (home.complete) start(); else home.addEventListener("load", start, { once: true });
+  window.addEventListener("resize", bounds);
+})();
