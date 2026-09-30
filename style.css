@@ -2145,3 +2145,39 @@ body.bg-procedures {
 .inews-orig p { margin: 6px 0; line-height: 1.7; }
 .inews-orig a { color: var(--cyan); }
 @media (max-width: 700px) { .inews-item { grid-template-columns: 1fr; } .inews-img { width: 100%; height: 160px; } }
+
+/* ---------- 보건 > 국내 감염병 현황 ---------- */
+.kdca-week { color: var(--cyan); margin-left: 6px; }
+.kdca-alert { margin: 10px 0 12px; padding: 10px 14px; border-radius: 8px; font-size: 13.5px; border: 1px solid var(--border-soft); }
+.kdca-alert.ok { color: var(--cyan); background: rgba(53, 208, 192, 0.08); border-color: rgba(53, 208, 192, 0.35); }
+.kdca-alert.on { color: #ff8a8d; background: rgba(229, 72, 77, 0.12); border-color: rgba(229, 72, 77, 0.5); font-weight: 600; }
+.kdca-alert.on b { color: #fff; }
+.kdca-alert small { opacity: 0.75; font-weight: 400; }
+.kdca-grades { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+@media (max-width: 900px) { .kdca-grades { grid-template-columns: 1fr; } }
+.kdca-card { border: 1px solid var(--border-soft); border-top: 3px solid var(--c); border-radius: 10px; padding: 12px 14px; background: rgba(255, 255, 255, 0.02); }
+.kdca-card-head { display: flex; justify-content: space-between; align-items: baseline; }
+.kdca-card-head b { color: var(--c); font-size: 15px; }
+.kdca-card-head span { font-size: 11.5px; color: var(--text-dim); }
+.kdca-num { font-family: var(--font-mono); font-size: 36px; font-weight: 700; margin: 4px 0 2px; }
+.kdca-num small { font-size: 14px; color: var(--text-muted); margin-left: 3px; }
+.kdca-delta { font-size: 12.5px; color: var(--text-muted); }
+.kdca-bars { display: flex; align-items: flex-end; gap: 3px; height: 44px; margin: 10px 0 6px; }
+.kdca-bars i { flex: 1; background: var(--c); opacity: 0.55; border-radius: 2px 2px 0 0; }
+.kdca-bars i:last-child { opacity: 1; }
+.kdca-foot { font-size: 11.5px; color: var(--text-dim); }
+.kdca-up { color: #ff8a8d; }
+.kdca-down { color: var(--cyan); }
+.kdca-flat { color: var(--text-dim); }
+.kdca-cols { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; margin-top: 16px; }
+@media (max-width: 900px) { .kdca-cols { grid-template-columns: 1fr; } }
+.kdca-sub { font-size: 13px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+.kdca-table-wrap { overflow-x: auto; }
+.kdca-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.kdca-table th { text-align: left; font-size: 12px; color: var(--text-dim); font-weight: 600; padding: 6px 8px; border-bottom: 1px solid var(--border-soft); }
+.kdca-table td { padding: 6px 8px; border-bottom: 1px solid var(--border-soft); }
+.kdca-table td.num, .kdca-table th:nth-child(n+4) { text-align: right; font-family: var(--font-mono); }
+.kdca-grade { display: inline-block; font-size: 11px; font-weight: 700; color: var(--c); border: 1px solid var(--c); border-radius: 4px; padding: 0 5px; margin-right: 6px; }
+.kdca-imported { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+.kdca-imported li { display: flex; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); }
+.kdca-imported li b { margin-left: auto; font-family: var(--font-mono); color: var(--text); }
