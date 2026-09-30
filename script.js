@@ -2077,20 +2077,111 @@ function initShipsMap() {
     planesMarkerLayer = L.layerGroup().addTo(shipsMapInstance);
   }
   setTimeout(() => shipsMapInstance.invalidateSize(), 100);
+  airSetupOnce();
   // 선박은 아래 VesselFinder 지도에서 보여 주므로 여기서는 항공기만 불러온다
   loadPlanes();
   refreshVesselFinderOnce();
 }
 
-async function loadPlanes() {
-  try {
-    const res = await fetch("planes.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("planes.json 로드 실패");
-    const data = await res.json();
-    renderPlanes(data);
-  } catch (err) {
-    console.error(err);
+/* ---------- 항공기: 실시간 지도(iframe) / 요약 지도 전환 ---------- */
+const AIR_LIVE_URL = "https://adsb.lol/?lat=32.0&lon=45.0&zoom=6&hideSidebar&hideButtons";
+const AIR_LIVE_OPEN = "https://adsb.lol/?lat=32.0&lon=45.0&zoom=6";
+const IRAQ_AIRPORTS = [
+  { name: "바그다드 국제공항", code: "BGW", lat: 33.262, lon: 44.235 },
+  { name: "바스라 국제공항", code: "BSR", lat: 30.549, lon: 47.662 },
+  { name: "에르빌 국제공항", code: "EBL", lat: 36.238, lon: 43.963 },
+  { name: "술라이마니야 국제공항", code: "ISU", lat: 35.562, lon: 45.317 },
+  { name: "나자프 국제공항", code: "NJF", lat: 31.990, lon: 44.404 },
+];
+let airSetupDone = false, airView = "live", airLiveTimer = null;
+
+function airSetupOnce() {
+  if (airSetupDone) return;
+  airSetupDone = true;
+  document.getElementById("airLiveOpen").href = AIR_LIVE_OPEN;
+  try { airView = localStorage.getItem("airView") || "live"; } catch (e) {}
+  document.querySelectorAll(".air-tab").forEach((b) => b.onclick = () => airShow(b.dataset.air));
+  // 공항 표시
+  const apLayer = L.layerGroup().addTo(shipsMapInstance);
+  IRAQ_AIRPORTS.forEach((a) => {
+    L.marker([a.lat, a.lon], {
+      icon: L.divIcon({ className: "airport-wrap", html: `<span class="airport-pin">✈</span><span class="airport-label">${escapeHtml(a.code)}</span>`, iconSize: [0, 0] }),
+      zIndexOffset: -100,
+    }).bindPopup(`<b>${escapeHtml(a.name)}</b> (${escapeHtml(a.code)})`).addTo(apLayer);
+  });
+  airShow(airView);
+}
+
+function airShow(v) {
+  airView = v;
+  try { localStorage.setItem("airView", v); } catch (e) {}
+  document.querySelectorAll(".air-tab").forEach((b) => b.classList.toggle("active", b.dataset.air === v));
+  document.getElementById("airLiveBox").hidden = v !== "live";
+  document.getElementById("airSummaryBox").hidden = v !== "summary";
+  if (v === "live") {
+    const f = document.getElementById("airLiveFrame");
+    if (!f.src) f.src = AIR_LIVE_URL; // 처음 볼 때만 불러온다
+  } else {
+    setTimeout(() => shipsMapInstance && shipsMapInstance.invalidateSize(), 50);
+    loadPlanes();
   }
+}
+
+/* ---------- 요약 지도: 브라우저에서 adsb.lol 실시간 조회 → 실패하면 planes.json ---------- */
+const AIR_LIVE_POINTS = [ // 반경 250해리(약 460km) 원 여러 개로 중동을 덮는다
+  [33.3, 44.4], [30.0, 47.7], [36.3, 40.0], [26.0, 50.5], [25.0, 45.0], [32.0, 36.5], [24.5, 55.0], [35.5, 51.5],
+];
+
+async function fetchLivePlanes() {
+  const results = await Promise.allSettled(AIR_LIVE_POINTS.map(([lat, lon]) =>
+    fetch(`https://api.adsb.lol/v2/lat/${lat}/lon/${lon}/dist/250`, { cache: "no-store" }).then((r) => {
+      if (!r.ok) throw new Error("응답 " + r.status);
+      return r.json();
+    })));
+  const ok = results.filter((r) => r.status === "fulfilled");
+  if (!ok.length) throw new Error("adsb.lol 실시간 조회 실패");
+  const map = new Map();
+  ok.forEach((r) => (r.value.ac || []).forEach((a) => {
+    if (a.lat == null || a.lon == null || a.alt_baro === "ground") return;
+    if ((a.seen_pos || 0) > 60) return;
+    const id = (a.hex || "").replace("~", "").toLowerCase();
+    if (!id || map.has(id)) return;
+    map.set(id, {
+      icao24: id,
+      callsign: (a.flight || "").trim() || a.r || id,
+      type: a.t || "",
+      lat: a.lat, lon: a.lon,
+      altitude: typeof a.alt_baro === "number" ? a.alt_baro * 0.3048 : null,
+      speed: typeof a.gs === "number" ? a.gs * 0.514444 : null,
+      heading: a.track != null ? a.track : a.true_heading,
+      source: "adsb.lol 실시간",
+    });
+  }));
+  return { planes: [...map.values()], generatedAt: new Date().toISOString(), live: true };
+}
+
+async function loadPlanes() {
+  let data = null;
+  try {
+    data = await fetchLivePlanes();
+  } catch (err) {
+    console.warn(err.message, "→ 저장된 planes.json 사용");
+    try {
+      const res = await fetch("planes.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("planes.json 로드 실패");
+      data = await res.json();
+    } catch (e) {
+      console.error(e);
+    }
+  }
+  if (data) renderPlanes(data);
+  // 요약 지도를 보고 있는 동안만 1분마다 새로고침
+  clearTimeout(airLiveTimer);
+  airLiveTimer = setTimeout(function check() {
+    const onTab = document.getElementById("view-ships")?.classList.contains("active");
+    if (onTab && airView === "summary" && document.visibilityState === "visible") loadPlanes();
+    else airLiveTimer = setTimeout(check, 60 * 1000); // 안 보고 있으면 불러오지 않고 1분 뒤 다시 확인
+  }, 60 * 1000);
 }
 
 function renderPlanes(data) {
@@ -2123,7 +2214,9 @@ function renderPlanes(data) {
     const genText = data.generatedAt
       ? " · 마지막 수집: " + new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(data.generatedAt)) + " (바그다드)"
       : "";
-    meta.textContent = `항공기 ${planes.length}대 표시 중${genText}`;
+    meta.textContent = data.live
+      ? `항공기 ${planes.length}대 · 실시간 (adsb.lol) · ${new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit", second: "2-digit" }).format(new Date())} (바그다드) 기준, 1분마다 갱신`
+      : `항공기 ${planes.length}대 표시 중${genText} · 실시간 연결이 안 돼 저장된 데이터를 표시합니다`;
   }
 }
 

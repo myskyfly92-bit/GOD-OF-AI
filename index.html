@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20260930j">
+<link rel="stylesheet" href="style.css?v=20260930k">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -404,12 +404,27 @@
 <main class="grid">
   <section class="panel ships-panel" aria-label="선박·항공기 실시간 추적" style="grid-column: 1 / -1;">
     <div class="panel-label">AIR MONITORING · 항공기 현황 (중동)</div>
-    <div class="ships-legend">
-      <span class="ships-legend-item"><span class="ships-dot" style="background:#f2a93b;"></span>항공기</span>
+    <div class="air-switch" role="tablist">
+      <button type="button" class="air-tab" data-air="live" role="tab">🛰 실시간 항공 지도</button>
+      <button type="button" class="air-tab" data-air="summary" role="tab">🗺 요약 지도 (공항·항공기)</button>
+      <a class="air-open" id="airLiveOpen" target="_blank" rel="noopener">새 창으로 크게 보기 ↗</a>
     </div>
-    <p class="source-note" id="shipsMeta">데이터 불러오는 중…</p>
-    <div id="shipsMap" class="ships-map"></div>
-    <p class="source-note">OpenSky Network · adsb.lol · adsb.fi 공개 데이터 통합 · 15분마다 자동 갱신 · 지도를 클릭/드래그해서 이동, 휠로 확대·축소 가능</p>
+    <p class="air-note">ⓘ 이라크 영공은 열려 있지만 유럽 등 여러 나라가 자국 항공사에 운항 자제를 권고하고 있어, 이라크를 통과하는 항공편이 주변국보다 적습니다.</p>
+
+    <div id="airLiveBox" class="air-live" hidden>
+      <iframe id="airLiveFrame" title="실시간 항공 지도" loading="lazy" referrerpolicy="no-referrer"></iframe>
+      <p class="source-note">adsb.lol 실시간 지도 (전 세계 자원봉사 수신기 데이터, 약 1초마다 갱신) · 비행기를 누르면 편명·고도·속도가 나옵니다 · 지도가 보이지 않으면 '요약 지도'를 이용하세요</p>
+    </div>
+
+    <div id="airSummaryBox">
+      <div class="ships-legend">
+        <span class="ships-legend-item"><span class="ships-dot" style="background:#f2a93b;"></span>항공기</span>
+        <span class="ships-legend-item"><span class="airport-dot"></span>이라크 주요 공항</span>
+      </div>
+      <p class="source-note" id="shipsMeta">데이터 불러오는 중…</p>
+      <div id="shipsMap" class="ships-map"></div>
+      <p class="source-note" id="airSummaryNote">adsb.lol에서 1분마다 실시간으로 불러옵니다 (연결이 안 되면 OpenSky·adsb.lol·adsb.fi 통합 저장 데이터로 표시) · 지도를 드래그해서 이동, 휠로 확대·축소</p>
+    </div>
   </section>
 
   <section class="panel ships-panel" aria-label="선박 실시간 위치" style="grid-column: 1 / -1;">
@@ -472,7 +487,7 @@
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20260930j"></script>
+<script src="script.js?v=20260930k"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">
