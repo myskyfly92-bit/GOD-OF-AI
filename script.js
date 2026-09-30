@@ -1516,7 +1516,50 @@ async function wzLoadSheet(data) {
     wzItems = null;
     wzSheetError = err.message;
   }
+  renderTodayWork();
 }
+
+/* ---------------- 종합현황: 오늘 작업 현황 ---------------- */
+function renderTodayWork() {
+  const totalEl = document.getElementById("twTotal");
+  if (!totalEl) return;
+  const riskEl = document.getElementById("twRisk");
+  const rowsEl = document.getElementById("twRows");
+  const today = wzBaghdadToday();
+  const dow = WZ_DAY_ORDER[(new Date(today + "T00:00:00Z").getUTCDay() + 6) % 7];
+  document.getElementById("twDate").textContent = `· ${Number(today.slice(5, 7))}/${Number(today.slice(8, 10))} (${dow})`;
+  document.getElementById("twGo").onclick = () => document.querySelector('.tab-btn[data-view="view-workzone"]')?.click();
+
+  if (!wzItems) {
+    totalEl.textContent = "–"; riskEl.textContent = "–";
+    rowsEl.innerHTML = `<p class="tw-empty">${wzSheetError ? "작업일정을 불러오지 못했습니다" : "작업일정 시트 연결 전입니다"}</p>`;
+    return;
+  }
+  const items = wzItems.filter((it) => (it.date ? it.date === today : it.day === dow));
+  const risky = items.filter((it) => it.risks.length);
+  totalEl.textContent = items.length;
+  riskEl.textContent = risky.length;
+  document.getElementById("twRiskBox").classList.toggle("on", risky.length > 0);
+
+  const count = (arr, key) => arr.reduce((m, it) => { const k = key(it); if (k) m[k] = (m[k] || 0) + 1; return m; }, {});
+  const chips = (obj, color) => Object.entries(obj).sort((a, b) => b[1] - a[1])
+    .map(([k, n]) => `<span class="tw-chip" style="--c:${color ? color(k) : "#8996a6"}">${wzEscapeHtml(k)} <b>${n}</b></span>`).join("");
+  const byTeam = count(items, (it) => it.team);
+  const byZone = count(items, (it) => it.zone || "전체");
+  const byRisk = {};
+  risky.forEach((it) => it.risks.forEach((r) => { byRisk[r] = (byRisk[r] || 0) + 1; }));
+
+  rowsEl.innerHTML = items.length ? `
+    <div class="tw-row"><span class="tw-key">팀별</span><div>${chips(byTeam, (t) => (WZ_TEAMS[t] || {}).color || "#8996a6")}</div></div>
+    <div class="tw-row"><span class="tw-key">구역별</span><div>${chips(byZone)}</div></div>
+    ${risky.length ? `<div class="tw-row"><span class="tw-key">위험작업</span><div>${chips(byRisk, () => "#e5484d")}</div></div>
+    <div class="tw-risk-list">${risky.slice(0, 4).map((it) => `<div>⚠ <b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)} <span>${wzEscapeHtml(it.zone || "")}${it.loc ? " · " + wzEscapeHtml(it.loc) : ""}</span></div>`).join("")}
+      ${risky.length > 4 ? `<div class="tw-more">외 ${risky.length - 4}건</div>` : ""}</div>` : ""}`
+    : `<p class="tw-empty">오늘 등록된 작업이 없습니다</p>`;
+}
+
+// 통제실 화면을 켜 두어도 10분마다 작업일정을 다시 읽는다
+setInterval(() => { if (typeof wzConfig === "object" && (wzConfig.appsScriptUrl || wzConfig.sheetCsvUrl)) wzLoadSheet(wzConfig).then(() => { if (wzZones[wzActiveIdx] && document.getElementById("wzScheduleCol")) wzShowSchedule(wzZones[wzActiveIdx]); }); }, 10 * 60 * 1000);
 
 // 현재 구역·주간에 해당하는 작업 (날짜 없이 요일만 적힌 작업은 매주 반복)
 function wzItemsFor(zone, dates) {
