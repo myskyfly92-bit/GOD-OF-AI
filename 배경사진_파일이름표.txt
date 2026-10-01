@@ -1,0 +1,20 @@
+탭	파일 이름 (assets 폴더에 넣기)
+종합현황	bg-dashboard.jpg
+안전 > 국내 중대재해 현황	bg-sa.jpg
+안전 > 사고사례	bg-accidents.jpg
+안전 > 안전작업절차서	bg-procedures.jpg
+안전 > 작업구역	bg-workzone.jpg
+안전 > 대사관 안전공지	bg-embassy.jpg
+보건 > 국내 감염병 현황	bg-health-kdca.jpg
+보건 > 이라크 보건부 소식	bg-iraq-moh.jpg
+보건 > WHO 소식	bg-health-infect.jpg
+보건 > 온열질환	bg-health-heat.jpg
+환경 > 날씨·대기환경	bg-env-weather.jpg
+환경 > 이라크 환경부 소식	bg-iraq-moen.jpg
+소방 > 화재 현황	bg-fires.jpg
+소방 > 이라크 민방위(소방) 소식	bg-iraq-cd.jpg
+기타 정보 > 해상·항공 현황	bg-ships.jpg
+기타 정보 > 해외 현장	bg-global.jpg
+
+※ 사진은 가로 1920px 이상 JPG 권장. 없는 탭은 종합현황 사진이 대신 보입니다.
+※ 이미 있는 bg-dashboard.jpg, bg-embassy.jpg, bg-procedures.jpg 는 그대로 쓰입니다.
