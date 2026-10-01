@@ -2181,3 +2181,19 @@ body.bg-procedures {
 .kdca-imported { list-style: none; margin: 0; padding: 0; font-size: 13px; }
 .kdca-imported li { display: flex; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); }
 .kdca-imported li b { margin-left: auto; font-family: var(--font-mono); color: var(--text); }
+
+/* ---------- 소방 > 이라크 민방위총국 소개 ---------- */
+.cd-lead { font-size: 13.5px; line-height: 1.7; color: var(--text-muted); margin: 6px 0 14px; }
+.cd-lead b { color: var(--text); }
+.cd-lead .cd-tel { color: var(--danger); font-family: var(--font-mono); font-size: 15px; }
+.cd-cols { display: grid; grid-template-columns: 3fr 2fr; gap: 18px; }
+@media (max-width: 900px) { .cd-cols { grid-template-columns: 1fr; } }
+.cd-sub { font-size: 13px; font-weight: 700; margin-bottom: 8px; }
+.cd-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.cd-table th { text-align: left; font-size: 11.5px; color: var(--text-dim); font-weight: 600; padding: 6px 8px; border-bottom: 1px solid var(--border-soft); }
+.cd-table td { padding: 7px 8px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); vertical-align: top; line-height: 1.55; }
+.cd-table td b { color: var(--text); display: block; }
+.cd-table td small { color: var(--text-dim); font-size: 11px; }
+.cd-table td:first-child { width: 34%; }
+.cd-ranks td:first-child { width: 48%; font-size: 14px; color: var(--text); }
+.cd-grp td { color: var(--amber) !important; font-weight: 700; font-size: 12px !important; background: rgba(242, 169, 59, 0.06); }
