@@ -41,29 +41,20 @@ html, body {
 }
 
 body {
+  /* 탭마다 --tab-bg 사진을 맨 위에 깔고, 그 사진 파일이 아직 없으면 종합현황 사진이 대신 보인다 */
   background-image:
     radial-gradient(circle at 15% 0%, rgba(53, 208, 192, 0.06), transparent 45%),
     radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
     linear-gradient(180deg, rgba(10,14,19,0.55), rgba(10,14,19,0.72)),
+    var(--tab-bg, none),
     url('assets/bg-dashboard.jpg');
-  background-size: auto, auto, cover, cover;
-  background-position: 0 0, 0 0, center center, center center;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, fixed, fixed;
+  background-size: auto, auto, cover, cover, cover;
+  background-position: 0 0, 0 0, center center, center center, center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll, scroll, fixed, fixed, fixed;
 }
 
 /* ---------- 탭별 배경 사진 ---------- */
-body.bg-embassy {
-  background-image:
-    radial-gradient(circle at 15% 0%, rgba(53, 208, 192, 0.06), transparent 45%),
-    radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
-    linear-gradient(180deg, rgba(10,14,19,0.55), rgba(10,14,19,0.72)),
-    url('assets/bg-embassy.jpg');
-  background-size: auto, auto, cover, cover;
-  background-position: 0 0, 0 0, center center, center center;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, fixed, fixed;
-}
 
 .scanlines {
   position: fixed;
@@ -1388,17 +1379,6 @@ html body {
    -- 기존 style.css 맨 아래에 이 내용을 그대로 붙여넣으세요 --
    ========================================================== */
 
-body.bg-procedures {
-  background-image:
-    radial-gradient(circle at 15% 0%, rgba(53, 208, 192, 0.06), transparent 45%),
-    radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
-    linear-gradient(180deg, rgba(10,14,19,0.55), rgba(10,14,19,0.72)),
-    url('assets/bg-procedures.jpg');
-  background-size: auto, auto, cover, cover;
-  background-position: 0 0, 0 0, center center, center center;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, fixed, fixed;
-}
 
 
 /* ---------- 환율 위젯 (화면 우측 하단 고정) ---------- */
@@ -2197,3 +2177,25 @@ body.bg-procedures {
 .cd-table td:first-child { width: 34%; }
 .cd-ranks td:first-child { width: 48%; font-size: 14px; color: var(--text); }
 .cd-grp td { color: var(--amber) !important; font-weight: 700; font-size: 12px !important; background: rgba(242, 169, 59, 0.06); }
+
+/* ==========================================================
+   소분류 탭별 배경 사진
+   assets 폴더에 아래 이름으로 사진을 넣으면 그 탭에서 자동으로 보입니다.
+   사진이 없으면 종합현황 사진(bg-dashboard.jpg)이 대신 나옵니다.
+   ========================================================== */
+body.bg-dashboard { --tab-bg: url('assets/bg-dashboard.jpg'); }       /* 종합현황 */
+body.bg-sa { --tab-bg: url('assets/bg-sa.jpg'); }              /* 안전 > 국내 중대재해 현황 */
+body.bg-accidents { --tab-bg: url('assets/bg-accidents.jpg'); }       /* 안전 > 사고사례 */
+body.bg-procedures { --tab-bg: url('assets/bg-procedures.jpg'); }      /* 안전 > 안전작업절차서 */
+body.bg-workzone { --tab-bg: url('assets/bg-workzone.jpg'); }        /* 안전 > 작업구역 */
+body.bg-embassy { --tab-bg: url('assets/bg-embassy.jpg'); }         /* 안전 > 대사관 안전공지 */
+body.bg-health-kdca { --tab-bg: url('assets/bg-health-kdca.jpg'); }     /* 보건 > 국내 감염병 현황 */
+body.bg-iraq-moh { --tab-bg: url('assets/bg-iraq-moh.jpg'); }        /* 보건 > 이라크 보건부 소식 */
+body.bg-health-infect { --tab-bg: url('assets/bg-health-infect.jpg'); }   /* 보건 > WHO 소식 */
+body.bg-health-heat { --tab-bg: url('assets/bg-health-heat.jpg'); }     /* 보건 > 온열질환 */
+body.bg-env-weather { --tab-bg: url('assets/bg-env-weather.jpg'); }     /* 환경 > 날씨·대기환경 */
+body.bg-iraq-moen { --tab-bg: url('assets/bg-iraq-moen.jpg'); }       /* 환경 > 이라크 환경부 소식 */
+body.bg-fires { --tab-bg: url('assets/bg-fires.jpg'); }           /* 소방 > 화재 현황 */
+body.bg-iraq-cd { --tab-bg: url('assets/bg-iraq-cd.jpg'); }         /* 소방 > 이라크 민방위(소방) 소식 */
+body.bg-ships { --tab-bg: url('assets/bg-ships.jpg'); }           /* 기타 정보 > 해상·항공 현황 */
+body.bg-global { --tab-bg: url('assets/bg-global.jpg'); }          /* 기타 정보 > 해외 현장 */
