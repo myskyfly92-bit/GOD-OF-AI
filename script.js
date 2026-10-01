@@ -3478,3 +3478,57 @@ async function loadKdca() {
 document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => { if (btn.dataset.view === "view-health-kdca") loadKdca(); });
 });
+
+
+/* ==========================================================
+   배경 사진 살리기
+   ① 탭을 누르면 배경이 잠깐 보인 뒤 카드들이 차례로 떠오른다
+   ② '배경 보기' 버튼: 누르면 카드가 사라지고 사진만 보인다 (다시 누르거나 Esc로 복귀)
+   ③ 상황실 화면을 3분 동안 아무도 만지지 않으면 카드가 서서히 사라져 사진이 보이고,
+      마우스를 움직이면 다시 나타난다
+   ========================================================== */
+(function backgroundShowcase() {
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const IDLE_MS = 3 * 60 * 1000;
+
+  // ① 카드 차례로 나타나기
+  function playEnter(view) {
+    if (!view || reduce) return;
+    view.querySelectorAll(".grid > .panel").forEach((p, i) => p.style.setProperty("--i", i));
+    view.classList.remove("view-enter");
+    void view.offsetWidth; // 애니메이션 다시 시작
+    view.classList.add("view-enter");
+  }
+  document.querySelectorAll(".tab-btn").forEach((btn) => {
+    btn.addEventListener("click", () => playEnter(document.getElementById(btn.dataset.view)));
+  });
+  playEnter(document.querySelector(".view.active")); // 처음 열 때도
+
+  // ② 배경 보기 버튼
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "bg-peek-btn";
+  btn.textContent = "배경 보기";
+  btn.title = "카드를 잠시 숨기고 배경 사진을 봅니다 (Esc로 복귀)";
+  document.body.appendChild(btn);
+  let manual = false;
+  function setReveal(on, byUser) {
+    manual = on && byUser;
+    document.body.classList.toggle("bg-reveal", on);
+    btn.textContent = on ? "정보 다시 보기" : "배경 보기";
+    if (!on) playEnter(document.querySelector(".view.active"));
+  }
+  btn.addEventListener("click", (e) => { e.stopPropagation(); setReveal(!document.body.classList.contains("bg-reveal"), true); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && document.body.classList.contains("bg-reveal")) setReveal(false); });
+
+  // ③ 오래 안 만지면 자동으로 배경 보이기
+  let idleTimer = null;
+  function wake() {
+    if (document.body.classList.contains("bg-reveal") && !manual) setReveal(false);
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(() => { if (!document.body.classList.contains("bg-reveal")) setReveal(true, false); }, IDLE_MS);
+  }
+  ["mousemove", "mousedown", "keydown", "touchstart", "wheel"].forEach((ev) =>
+    document.addEventListener(ev, wake, { passive: true }));
+  wake();
+})();

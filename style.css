@@ -2200,3 +2200,44 @@ body.bg-fires { --tab-bg: url('assets/bg-fires.jpg'); --tab-bg-webp: url('assets
 body.bg-iraq-cd { --tab-bg: url('assets/bg-iraq-cd.jpg'); --tab-bg-webp: url('assets/bg-iraq-cd.webp'); }         /* 소방 > 이라크 민방위(소방) 소식 */
 body.bg-ships { --tab-bg: url('assets/bg-ships.jpg'); --tab-bg-webp: url('assets/bg-ships.webp'); }           /* 기타 정보 > 해상·항공 현황 */
 body.bg-global { --tab-bg: url('assets/bg-global.jpg'); --tab-bg-webp: url('assets/bg-global.webp'); }          /* 기타 정보 > 해외 현장 */
+
+/* ---------- 배경 사진 살리기: 카드 등장 효과 · 배경 보기 ---------- */
+.view.view-enter .grid > .panel {
+  animation: panelIn 0.6s cubic-bezier(.2, .7, .2, 1) both;
+  animation-delay: calc(0.25s + var(--i, 0) * 0.07s); /* 배경이 잠깐 보인 뒤 카드가 하나씩 */
+}
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+/* 배경 보기: 카드·달력·환율을 서서히 숨기고 사진을 보여 준다 (배너와 탭은 남김) */
+main.grid, .holiday-panel, .fx-widget, .footer, .sub-bar {
+  transition: opacity 1.2s ease, filter 1.2s ease;
+}
+body.bg-reveal main.grid, body.bg-reveal .holiday-panel, body.bg-reveal .fx-widget, body.bg-reveal .footer {
+  opacity: 0; pointer-events: none;
+}
+body.bg-reveal .sub-bar { opacity: 0.4; }
+/* 배경을 볼 때는 사진 위 어두운 막을 걷어 더 선명하게 */
+body.bg-reveal {
+  background-image:
+    linear-gradient(180deg, rgba(10,14,19,0.15), rgba(10,14,19,0.25)),
+    linear-gradient(180deg, transparent, transparent),
+    linear-gradient(180deg, transparent, transparent),
+    var(--tab-bg-webp, none),
+    var(--tab-bg, none),
+    url('assets/bg-dashboard.jpg');
+}
+.bg-peek-btn {
+  position: fixed; right: 18px; bottom: 18px; z-index: 400;
+  font-family: var(--font-body); font-size: 12.5px; font-weight: 600; cursor: pointer;
+  color: var(--text); background: rgba(10, 14, 19, 0.7); border: 1px solid var(--border);
+  border-radius: 999px; padding: 8px 16px; backdrop-filter: blur(6px);
+  opacity: 0.6; transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+.bg-peek-btn:hover { opacity: 1; border-color: var(--cyan); }
+body.bg-reveal .bg-peek-btn { opacity: 1; border-color: var(--cyan); color: var(--cyan); }
+@media (prefers-reduced-motion: reduce) {
+  .view.view-enter .grid > .panel { animation: none; }
+  main.grid, .holiday-panel, .fx-widget, .footer, .sub-bar { transition: none; }
+}
