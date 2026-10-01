@@ -1,6 +1,54 @@
 {
-  "generatedAt": "2026-09-30T19:09:02.487Z",
+  "generatedAt": "2026-10-01T10:17:49.710Z",
   "health": [
+    {
+      "title": "فايروس إيبولا يخرج عن السيطرة في الكونغو ‌",
+      "source": "PUKmedia یەکێتیی نیشتمانیی کوردستان",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1aQmNfTVBiMlZoS2ZsR3NCaV9KYS1BZnh1OTN5eEtXM1VNWWgtNWU5bTk1QjNzbllpRzlWYnEyMExmS0FGcDY2VlRLU0lkNTBBRERlQw?oc=5",
+      "date": "2026-10-01T08:37:00.000Z",
+      "lang": "ar",
+      "titleKo": "에볼라 바이러스가 콩고에서 통제 불능 상태로 급증하고 있습니다."
+    },
+    {
+      "title": "وزير الصحة اعلن إعادة تفعيل عمليات زرع الأعضاء على نفقة الوزارة | AlMada - أخبار لبنان والعالم",
+      "source": "t.co",
+      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE5HRHcwa3lEdElLdlotWW55YlpvN3lxRUNuSGwzUE1YbHVya0RWQ1YzUm9FR0dtUnNvUk53?oc=5",
+      "date": "2026-09-30T19:11:18.000Z",
+      "lang": "ar",
+      "titleKo": "보건복지부 장관은 장관의 비용으로 장기 이식의 재가동을 발표했습니다 | AlMada - News Lebanon and the world"
+    },
+    {
+      "title": "بعد جدل نقص التطعيمات.. وزارة الصحة تكشف الحقيقة وجدول الجرعات حتى 18 شهرًا",
+      "source": "الرئيس نيوز",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1SU2V3V0k2SkpIUDVxc09DRFdBRVJENGVkamN1b0N1NjRrejlOSTJzUFc0VWtCVVE1RzJRRjY2TXJ3bmdrc2hUaWpR?oc=5",
+      "date": "2026-09-30T15:51:39.000Z",
+      "lang": "ar",
+      "titleKo": "백신 접종 부족 논란 이후, 보건복지부는 18개월까지의 접종 일정과 진실을 밝힌다."
+    },
+    {
+      "title": "مستشفى جابر يجري أول عملية من نوعها في الكويت لتصريف العصارة الصفراوية بالمنظار دون جراحة",
+      "source": "alwatan.kuwait.tt",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA5ZXA0U3dPV1ZCLU5SZFotRGluclYxZ0ZQanZwVDlGdlpxNTFmN2k2SFRJN3A0elhIWHUzVDk0Vm1MTktiVzM0QlFCWHlGd2djb05EcDhDWWd1YXdOdmdOeTdPd2lIdw?oc=5",
+      "date": "2026-09-30T15:42:00.000Z",
+      "lang": "ar",
+      "titleKo": "자베르 병원은 수술 없이 복강경으로 담즙을 배출하기 위해 쿠웨이트에서 최초의 수술을 수행합니다."
+    },
+    {
+      "title": "بعد وفاة فتاة ورصد حالة جديدة بالدفتيريا.. مندوب الصحة باليوسفية يكشف لكشـ24 المستجدات",
+      "source": "inews.ma",
+      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBGS001TTRXNnMzVkZheWZ5cGYzd3BZbU84VnZOZTYtLWZEcGxvVWt1ZmVzOC1JYXFMNTBaVU90UWgyek0?oc=5",
+      "date": "2026-09-30T13:57:24.000Z",
+      "lang": "ar",
+      "titleKo": "한 소녀가 사망하고 새로운 디프테리아 사례를 모니터링한 후, 유수피아의 보건 대표가 최신 상황을 알려드립니다."
+    },
+    {
+      "title": "غزة.. شهداء باستهداف سيارة وشقة سكنية، والحصيلة تقترب من 74 ألفًا",
+      "source": "شفقنا العراق",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5pTnB1dEJrWlBxTTRoNjc2RnRTMzVwdWNkNXpaTzlub25sb0cxbjg5RktTYmpJLWtzZE9WeHJXUjExUXJFVm41SlFqSUE?oc=5",
+      "date": "2026-09-30T12:50:50.000Z",
+      "lang": "ar",
+      "titleKo": "가자.. 순교자들은 자동차와 주거용 아파트를 목표로 삼았고, 통행료는 74,000에 가깝습니다."
+    },
     {
       "title": "«أسماء لا تنتهي».. عرض فني في لندن يوثق ضحايا فلسطينيين منذ 1948",
       "source": "Copts United",
@@ -10,12 +58,12 @@
       "titleKo": "«끝없는 이름».. 1948년부터 팔레스타인 희생자를 기록한 런던의 예술 공연"
     },
     {
-      "title": "تأجيل محاكمة 10 أطباء وممرضين في قضية «العمى الجماعي» لجلسة 10 أكتوبر",
-      "source": "صدى البلد",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBJMkNfWExicUJQazhzTWtKMWt4Y1htYzAzaWZybDJFdW5HM25UeDNuNUhLZkxXMU9ua0NYb2h1X3F4bWVISXJF?oc=5",
-      "date": "2026-09-30T11:06:00.000Z",
+      "title": "6 شهداء في غارتين إسرائيليتين على مدينة غزة",
+      "source": "العربي الجديد",
+      "link": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxPRVFXUXZJaXpHY3FTaG5sQm5wUU0xa05ZS3VxZHdjNmRzUWFPU1k4Z0dhM2cyMm1iM0dKakxkMk9XWnFWY21HUXZoN1puYmotYkFROFNQNzFqdVcxWFQyT18zT2xmc3d1TnhJc19fVjhqU0tZV2ZOeXlqMDZBdXFxZlBnRFcyLV9EY3IyQV96bV9xdnpGd0ZvWHI4aW0yMklXNFhCWHNvSk1NY2VfWW9uSjF0WWZrMGR6ZFVKOWNSRGQ4dWc4QXNrWGpmMXdsX1pOeHFJajRxUGZzQmVIZHdzcU5vNTlIbnJYS2s5ckFkNzQyazl0LW5nWmx2Wm5FTHpFMzVUZXZ0ZXZ0ZE5FMDVzQ1RvQ1dBMFFiMTdEOGUybHh4UE1jTHgyYjhjbWlyLVF1N3hRV2xfdFdGcjBJcjlZOWQtNkRkR2w0dVo0RlNLbEl2d3pJdFlQeDFRTmVQQk5uS2dfNEVJd0VjLVIzNnfSAfMCQVVfeXFMT3p3RXNoMG44aWV2bWREbGpGNE5CalllU0lIU0JJSGlndGJWaUNaMGhIRGsyVkFPR2lyYlpwNFlHU3RvZWFXWlNaT3Y1eC15VGVxNHBRYmNPeXZWbkxHZEluSDNZNkJZbE5Hal9fRU1vRF93ZHQ5eW1VMUdtNHdmUEJBYUxxYURxd25DdmswQnctNk05RlczdG14X2FhMkdsNlFTYVg1a1VNZl9PQTM2WWdUdzFZYW9IUFk4SzlISnFLUlhON0VQbVptdzFoSkVxNXNuTmNPdkRRRWJSY01JRmJIM1FJS3dsSDNLZmNLMXdOeFZBbUtTLTV4VnpkRmc2elZiVjJfYmJIMGxsWWhSOGpfS2lKWlFiOHg5MjZaZGJ2bGJ0T3hJUWd0V1hLVFBTUVFLdTJWdkltNEYtSEFIU3hjX29oWGZnTDRISExHQ1l4bjM2MjNSOGtaUWN0VWg1Z3dDQ0lRalA1MHpsRFBXYXZVUGs?oc=5",
+      "date": "2026-09-30T10:41:40.000Z",
       "lang": "ar",
-      "titleKo": "10 월 10 일 세션 \"집단 실명\" 의 경우 의사 및 간호사 10 명에 대한 재판 연기"
+      "titleKo": "가자지구에서 두 번의 이스라엘 습격으로 순교한 6명의 순교자"
     },
     {
       "title": "السفير أحمد برواري يزور مركز ابحاث شركة ZTE للإتصالات وتكنولوجيا المعلومات – سفارة جمهورية العراق في بكين",
@@ -26,82 +74,42 @@
       "titleKo": "아흐메드 바르와리 대사, 베이징 주재 이라크 대사관 ZTE 리서치 센터 방문"
     },
     {
-      "title": "ظفرقندي: استُوردت المواد الأولية للأدوية إلى البلاد بكميات كافية",
-      "source": "خبرگزاری مهر",
-      "link": "https://news.google.com/rss/articles/CBMiiARBVV95cUxNZUpUWVZQVE1vUE8wQzZMVzItMjY3bXZvQ0VxNWZ0c282bDd6U0ttVmNSRTc5VU03NDl2d3N0aTl4a1BzbUZnZE1lZXZKbUd5emd6MVJwYk9IaVRUUVhQOFVjS3lvNmdSNXk4MFUxems2bWlKMGJ4UEwzSXpLYUk3Rm4xenZiVUE4YVc1dTdLbmxEeHMzdXZ4R1F2aVRWaFBnWGcwakVvSG84TDFlY3VhSXQyR01ONmgwS21wemVHanhWU2h4OUFhdWZnc1JnRmpzYTFDSzE5QjFsdC1UcGNNXzkxaDl1Uzk1ODZPTlRpSXU5WGllcl8xU3lUR2tqLUVEdUE0NEpJbm9EM0FwWldKNzVrVDViN0dudFJncmM4UmRaN21qWUJGLU1WdVYwZWFQTFVMbTNsSHpBOTBzRDU3MkFYay00dlQ2R1ZGcm4wSm9pU1hhR0hScktOUHB3dkhnZXNMTHFoNDdoUlN6SE5DOGhyTkJHLTcxa0hkXzUwMlBTOUlTMmtCTDh3bzIxWTBWYWlwaTdOeENaanl6dFg2emthZlh6NG5ONmdpUDBLWnJFU2pfMExNVThuNHg4a2drZFRZaVhPMzR3SGJSVmNMWF8ybVFiNXVSWHA1MWFUN0pLeFlKNUNsLUZnZnFkWVFlbDJTaGZFaWllak92MGZBSm5SSGg1Nkd6?oc=5",
-      "date": "2026-09-30T07:04:00.000Z",
+      "title": "مجزرة في تل الهوا.. شهداء وجرحى في قصف استهدف مركبة",
+      "source": "شبكة قدس الإخبارية",
+      "link": "https://news.google.com/rss/articles/CBMiogNBVV95cUxNOGpPeFU3SUdhVHdHUS1KYlowWnViT1hqeEI2MjhCdmV0eTNRdklvaXNKSko5LUFvOG5SUFBIWnhMdmpFNzMyVk1rUWdEbTFrRmpzeG5VZFJYYm11Ry1zSFQwek5iUkFtT0ZVYzE4ajc3NVRGZVRFaHhqZk1uVlU4SWpSa0JhU1ZrWG5GWEc5X1Y4cko2dlNTVHBKSkZWc3lpVmVaZjVmMGFUWEhDNkRPeDc4RmJfd0puT0c4SGoycmE3Mk1TUHlISG1ZRmQ1MTcxU1NfNGdPaThqSGMtUDB2aEdzS1JMbzdlLTdfZ2thNnA5d3I5SGhZYVNSWDNwVzNCVzF5Q1pCN2M2Yk1pOTAzS3ZqQThaVDYtY0NmZk5LZkhtaGpwOWE3MlQ4d3R0SjFxY2YzLXFwdUxncmVYSEx3ZDByemJIN19UTmREcTlvZDlxOUx5Z1NNbTkyWGZIb3hFQUVMdnJTc1I4YWEtVzY4S1RzZ1YtYlVrejZJenJjNDVYTU4wWkdUTDhTMWR4c2xQQ1dxM2xiVThrUVpEZ2V1N0d3?oc=5",
+      "date": "2026-09-30T09:57:00.000Z",
       "lang": "ar",
-      "titleKo": "자파르칸디: 의약품 원료는 충분한 양으로 국내에 수입되었다."
+      "titleKo": "탈 알-하와 대학살.. 차량을 겨냥한 포격으로 순교자와 부상자 발생"
     },
     {
-      "title": "انسحاب الجيش الأمريكي من العراق يطوي صفحة عشرين عاماً · دايلي بيروت",
-      "source": "dailybeirut.com",
-      "link": "https://news.google.com/rss/articles/CBMi_gNBVV95cUxPblFOWk9CaS1NSHVGYTVneVpIZmpQNzdwaE9MSEZjZFY0NnA5YjlKRHhDSzRuNzNYbWFxVXhsZXRqUXhjWFc0T2pZU1pxY3hwRUdoMFVZRktkbGZVZGQ1amJzeG1lcFZiVjJTMGZuRVFMN0djR3dHY3R1MS03SXBmZVYtQUx0blBuNmtFVi1ta2U5NEI4NDVKRzVhZG5UYWNtQ0FpV0J6bWNEYVpKeGRZUk93MUw1RjQ0ZmNueVVEckpLcUtKMDNMS2JJMzloQTAzUE16OGx3UndFM2I4b3RJZmRUVU9uVW05TU9tMndVWjRRX1R3SFBtdHAzaXRtX3pGOHFaYWtZZHdmSXRjcFpqbi0zcFI0ekNscTBxblAzQWN1cDc1OGtnUi1qb0NjWWJUZHJMU2hHekhDQzl1clgxOFpIUzVXUlFHXzlSRlM2THVBd3BlVG1nbExJbUg2LVhrOGNESFJVR2kwZTdMVmpxdmJYaVJ4eVJnY3JELTlzMG9nN1hKdjZ5d183S1lKUDl0dmkwYmZERDBBOExNYnFnVUt0eERvTFpNYi0xaHhoNm9MNGZoNTFnZW5ucjhKZnA2UE95Rm9VSk1XOXgzank0Mkd5SWctNERBazhxVTJZcjM3T2FtS040U0lpbFp4WTY5clFZNjVkRjRUZU94bXc?oc=5",
-      "date": "2026-09-30T05:14:01.000Z",
+      "title": "العهد أون لاين / وزارة الصحة ولاية الخرطوم تتفقد مراكز الخرطوم والجبل",
+      "source": "nabdapp.com",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NUTFQOTNlQ251WmdXUEJjR0pnUmRfdVZyc2VfYmhHdXhDa0IwTjVkSzJsdEZreEEzbHBucFBrWVJTMXk0Q09rNFZ6NFU4cGs?oc=5",
+      "date": "2026-09-30T07:45:35.000Z",
       "lang": "ar",
-      "titleKo": "미군 이라크 철수, 20년 전 모습 · 매일 베이루트"
+      "titleKo": "Al-Ahd Online/Khartoum 주 보건부, Khartoum 및 Jabal 센터 점검"
     },
     {
-      "title": "وزارة الصحة: استدعاء طوعي لمنتج فلورالين – خليط حبوب للطهي بسبب سموم طبيعية",
-      "source": "آخر خبر",
-      "link": "https://news.google.com/rss/articles/CBMizwRBVV95cUxPMmQ0UG52MVlWM3E0LWk5UmhMcGZLYjBiSERqdUVJeEhrdEZaaWJEbzRnU0dPeWtNb3VreDdNTDZrRzd3bTl1RmZSdUhNY1I5anZLRUwyRC12NjVDTE9RdTFHNWVCSndLR0VlOWFyNjVPekdPdnIwUzN4ejlNOVBITXBUSGZvTDVaRDA4RFNSc3NzQVktdUJveEF1dVExWHZXdDhES1cwZkF1WVlaU2JJQU01eXBIanl5aGYxN1FKLWhUdVB0OGZodjVWYWc4enpubXJUYXBCbEhRVFN4bVoydWx6ZHlCck56YVdReFEtWmRQMW1vWHI3VUVEb1R4bTNiLWU5U1djb3IyOTllc19CX2t4bW9LR0dNVHBVUGF0OUNRdFFWT0lUeW1JN1AzQzMxaWYtaUhMUnFqMnpvbmVOYjB6dmlsSjc2U294T1BrMW1jZllWcGEtc1hFWDMtUG1TRHRwUXQxMkR0RDRXbkd5dHkxbU5zQ1BuMml6LXVGa0hZamRqakdQak56QjJYUjloQU9ub1BxWEFFNGhDYmNWTE9TSHlaNFZ6WFFMWUc4X2VJaGJPcENNRjJmZzd4elF4RGJnczZ2aURZSXRRWjZuTTB1U0lxaV8ybk1NN0dBYjN1Y0R4Ri1HVWplOHRiVkZ4WmtyUWdPU1R1NE90MU4tOUZlRXhtN2pQUnRnTkRsV2JxU0YzNDAwajNQUjhZNFZrTEFtSUNLSVhOMWpkMDlhUXlUZF9pX1BTb0tfRlk5QXhZLXRFR1IzSW9xSUZnZ1k?oc=5",
-      "date": "2026-09-30T04:17:00.000Z",
+      "title": "فحص الاستطاعة للحج يبدأ الخميس.. دعوة للمشمولين بمراجعة المراكز الطبية",
+      "source": "شفقنا العراق",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9DdkNGZlUyZ3I3NGJPODFSSkdWR0Jkc1I1UnlZekdwcW14LVBfeUlkSDR5OWxQRE5pZGVPLV9pUjZybUVUY0JOOWE4S3U?oc=5",
+      "date": "2026-09-30T06:23:21.000Z",
       "lang": "ar",
-      "titleKo": "보건부: 플로랄린 제품 자발적 리콜 – 천연 독소로 인한 조리용 시리얼 혼합물"
-    },
-    {
-      "title": "عمان تتأهل لنصف نهائي خليجي 27.. والعراق تودع رفقة الكويت",
-      "source": "شبكة تواصل الإخبارية",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1zVkxURjBpWnJ4dk8yQlVJakNlUnZ0RVRGUkhxRlFJWVpPcFJBUmNhM3NxZzEtZW9wT3pSZVl0dDYxbDJ5V1hmc0VwcVRrOFVMWU5j?oc=5",
-      "date": "2026-09-29T19:40:18.000Z",
-      "lang": "ar",
-      "titleKo": "오만은 걸프 준결승에 진출 27.. 이라크는 쿠웨이트에 기탁"
-    },
-    {
-      "title": "وكيل وزارة الصحة بالشرقية يترأس اجتماع لجنة مكافحة العدوى بالمديرية الربع سنوي",
-      "source": "شبكة تواصل الإخبارية",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5uUF93MVhWbXh0dDFZSFdrZHpsWkg2ZTdfbUdKc3pqOExINzU3OE1qWU10RFh0bFloQUVBWFNBc21vdTFDRk5hSWhlejNXZTRkblZN?oc=5",
-      "date": "2026-09-29T19:34:31.000Z",
-      "lang": "ar",
-      "titleKo": "샤르키아 보건부 차관이 분기별로 이사국 감염관리위원회 회의의 의장을 맡고 있다."
-    },
-    {
-      "title": "اليوميات - حرائق العراق",
-      "source": "alaraby.com",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNeGFYY2h5YzExd3FNQ285ZlNzeVpnTDVwWk1rNEJFbEJGbFZidUk2WWFpdXdaUXkta0VOdDJfSXR2SlYzOVozRkE1Rnk2Y1JXUGdlUThKb2tMR1gwelR2QXc5Z3V6WDVtVlJTb3E0M3VnOWYzcjNJRFlkakQ2VFVGMnYzMGVzdWNYY1h0aldqanJ1Z29BcDVVcWJqcFA1OFdLc21tTk9ielBJZDE2dUo1cmJGOTdUdFRKckp6NU90UFhiOWRCTTJQTFFlXzVYQmhuQ0sydVEyUzdSa0g3MWUzYVAwMWZhS1E5aXpaWDB1RWtnRHhPb1dLMzdIUXA?oc=5",
-      "date": "2026-09-29T19:11:25.000Z",
-      "lang": "ar",
-      "titleKo": "일기 - 이라크 산불"
-    },
-    {
-      "title": "“الحج والعمرة” تبدأ فحص المشمولين بموسم 1448.. مراجعة المراكز اعتباراً من الخميس#",
-      "source": "عراق اوبزيرفر",
-      "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxOYU1UZ0l0MmlzMTE1WUM0TnNvN2tScHhuekswb1lBNG5TaVAyUG96Y0pMZlZJNk5wYjRCc200VnR5ZW5qdU0xLXNRZXcxalRYVXN6dmJJa2tFUkVPT2x1dFVMbmhZS3BaNWlrMjBTUDN2VFk0V24tOWxQWlhpbzFLTzA1cEdNaDNQeGtOd3d4V0xIR2FiT21Sbzk1X1J2eVJLcldJNmRwY0xxbG9WVjlqTlFrRS03WFBjZVJIVS1TSXRDb28zTGZGT3luLVVma2tjd1lLZDZnUjdnSWdLY0t0UHBmQUdpQmw4QWlDOXVMMmtHWmZTUnVhYnNTZXJhV2VTQ1l2eC1Hc1Q2TkVGdWZYc3lXanNkUHlJZGQtVUhaR1FqRUJoa0k3Tld1VzlRQ2FpcVR1czR5MTlaX1hCOGc?oc=5",
-      "date": "2026-09-29T18:45:09.000Z",
-      "lang": "ar",
-      "titleKo": "\"하지와 움라\" 는 1448 시즌이 적용되는 사람들에 대한 검사를 시작합니다.. 목요일 현재 센터를 확인하십시오 #"
-    },
-    {
-      "title": "تعطيل الدوام الرسمي – سفارة جمهورية العراق في بكين",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE13eEg2Qjc2YnMzb182ZjBVWlBuMVV6MllmdHpIb0tQb0tUR2c4MHVkT3d6Ri11ODVDNUI3MWdLZ1ZhekhQY3hFWERHOA?oc=5",
-      "date": "2026-09-29T18:17:39.000Z",
-      "lang": "ar",
-      "titleKo": "공식 근무 시간 중단 – 베이징 이라크 공화국 대사관"
-    },
-    {
-      "title": "دعوة الى الحجاج العراقيين لمراجعة مراكز فحص الاستطاعة",
-      "source": "RojNews.News",
-      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1wT1YyQmRQSjlvbzQtNDVXUEh3VzI4SXFZbGFyQTFUWDhIbEpWOWpWMzltTFQ4QUpONVUtRHREaUZ4UGowc0xKNA?oc=5",
-      "date": "2026-09-29T17:50:47.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 순례자 초청 수용력 검사 센터 방문"
+      "titleKo": "하지 용량 테스트는 목요일에 시작됩니다. 의료 센터에서 보장하는 사람들을 위한 초대"
     }
   ],
   "environment": [
     {
+      "title": "التلوث البيئي: ضربة في قلب المركب الحضاري العراقي",
+      "source": "جريدة المدى",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9LWmZXdktLcTlBX1QzdWxHc1c1OVF1RDRrWUxVbElJaEIzdkNsVG9LX3MzWXowZHNsSlNTWnpDaDVJeEVlZ2c?oc=5",
+      "date": "2026-09-30T21:06:12.000Z",
+      "lang": "ar",
+      "titleKo": "환경 오염: 이라크 문명 단지의 중심부에 타격"
+    },
+    {
       "title": "الجامعة العربية تعقد المنتدى العربى للبيئة.. تعرف على شعاره وأهم موضوعاته",
-      "source": "youm7.com",
+      "source": "اليوم السابع",
       "link": "https://news.google.com/rss/articles/CBMijgRBVV95cUxNcm9ZN3BQSXg3OHE0ejlpM3JVd2JodXdnSWphdWZWd2tEazZRWmhDbGVqUnRzaFZtaEUyTzRBcWdXUTdpQzRCTnMxVG1HX095ZzZtX05WSjV5TnByeTVsNi02OFRINDZISk1YRGNQWUNrdEdqSmdFU0ZsNW9oeFd5Y3dYamdIVGE0Y2lzdUFTUFRRY25RWXpwbGd5aG9ZZXY0a3pQYU8ydVlsN1hPWi1QQWdZdlRDVERSQ3VmaGRiZUppc0ljQUVaZXduYWM0d3VrR1RMUl8waTNDTXg3aVZucHFoaHEtYkRNWHFiekxQWnRMVUFQdl80c1NUQzU0UDN1c2dtOVAxM3ByaVlQWTNvSTRhSWMxNUJuVUlKN2d0SDRkVTJiMmJfTkt4Z1BzRzYwUm9FTGM0YlNOY1VvZWI2Z3JkSEVES1d4Z29YMHJsTHR3TXdhTFdnZzkxdWhHc0MxeXVSbWlqTmRCVFlDVmpDeHpiVnY2XzlnaGpTcGpQZ1VvaFJVX3hVR2dhMk8wU19hQlBERzA3M01Xd25tZERJb3NrcjFzM3EzQW12NjVfcE1uVW05dFJncHJ3MFpyaVVPb1VqZUdsUzBoY2pPeW5sY2hFQWc3UlNCUklhUDBoajJpT2l2eFdlaG5oS0lxT3BaNkd2MVpqcm9mcTNnbHctOVZ0WUtnLWJWcDdpcVVn0gGIBEFVX3lxTE1ZZVpQSWtpdGJ6TjhmSDZGNVhCSldrX0gwb0Z3VGRtNmxBc3RhandNT1VtdHFLdmtEODdIbzNTdHpjWklITmNWRE5FQndTUThUdGJvVUNfNkNTZ0N1Y0VlZWhTUFV5ak43d082d21iUEM1WHpYSHNZYzU2QVc4MzlHUWNIY2gxempvRms0emNUdTJ3TnR3WU5fUk5lUGM1MVcxR01hRXItLU1MNUNZQThlSnp5Z0NXYkRMY0lwZExKN0YxNmVXWDNOMGh5V0lqOHVMa3ZZQWtjMkFRcHZvazBHZ1kxX0FlRkl6Q2kxU0cwY055WTNrS2FITGsycVh1UzkzZHI5bElmaC0xZExpLTVMVHVmcHNsSEZ5MVlDSXpCNmNGeTlSaG90RUowSXJvNC1GSzZ5Q3hWOG0wUEZKZk5HZGZFUG1MSDVtYUZGQTlqcks5aTV3anFWV2Jsdm1Td1lGbDdnVENmXzRDT2FLSFVxMU1McEN5VEJiT24zb1ZkZXQ1eWxGbmRQS2VLTjJHVE9iWkdqc1dkM3U0T2FRMFJ1bHozR2s5eFdVczFGVTVITVlLV3NKZWhrNWhiVWlEVThhLXpxTjFnWFd0OU1RZUNySlk0bGtablZiZnZra08xYmFXUloydVBDcUFvMjhPVjVXNS05VG1iUkZ1NlhvVVJWbm5xZHZWakk?oc=5",
       "date": "2026-09-30T10:52:00.000Z",
       "lang": "ar",
@@ -117,7 +125,7 @@
     },
     {
       "title": "الألغام تهدد 2.7 مليار متر مربع في العراق.. والبيئة تكشف حجم المساحات المطهرة#",
-      "source": "عراق اوبزيرفر",
+      "source": "observeriraq.net",
       "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxNN1JpTno4Zmx4R2FpVGEzeHNwS0pGakgzUzVNU1B4SFhLV3o5eHBzMTFDQTBRNmNiMUUxR0k1YTVGSi1Oa1FWc3NmS29nWnl3eW11RGU4NjF2QkxLZW1KYlBRTnZ4dUlCSGJjLS1BeVpXc0FCZ0hUeVB3TndPQTNDVFFmWHd3U3ltS0p6aGRFcXZFOURYMkVaTHJHNlBzQXZhb2xSdDFVZDh2WEMxTE1XYTNLcmVCUHI3NXpjZlpONkNzYndzbmo1TUxQeHVWakQzcTBrS1E0VUhUWVlCY05PeXJHVzJRYW9BRTdKTEtBamw2QUFSYW1lMFBPbVZTRTE2UkQ2akd1WTFxX1ZUdGVKWTNlMFg0RU5reE1BVFN0RGU3QjV4UllIcDZiMnJvaDU3bEpPQml6X1lYN0lneDVMcHRqWHI?oc=5",
       "date": "2026-09-29T10:29:47.000Z",
       "lang": "ar",
@@ -141,7 +149,7 @@
     },
     {
       "title": "اليونيسف تدعو إلى تحرك عاجل لحماية أنهار العراق وصحة أطفاله",
-      "source": "Unicef",
+      "source": "UNICEF",
       "link": "https://news.google.com/rss/articles/CBMi3ARBVV95cUxNYzh0RlNEbkF3SC00YmtjNFRPTlZkVUltTmRSNUJDVm1pdnpQWE54MHgyYm1oRGtOZ2VrUk45cUIzNzgxbDFvaVVqUERoT2N1dngxNXowejhmcW1DRFN4RzBvN1hSVVo5amlKQWJ0eEVsS3Rtb09sSXB0aTNHNDNUb2xwXzRFOFhPVHRUXzgtSFZDT1ZWdEMxMzd6T25na21zR0VLTnJGTC1CXy0yOEkzNWlMMTJaV19lWDRUd0lnUUhFWk0xUHdKZHNoTFVOMy1nbTFoUU1fSFdiUHc1NGRQLWxnWThJMkpFZ2lOZmxlSGJ6SjFVa044OUZyOEhLbUMtZEphdUl5VThPM0ZxU3l2SUNkSUxTWnhRUHVTX3JYYTFHSmhUV1ZwMXRlSnNMN182RElqNGZJNl9iaTJtanh2UHU4US1feHl5X1RCb3hoeVkyNWZwWUl4Q19Ic3h6NHpJNVVvUTdta0phREhCdUNiNzJBaTVuUXgzR0lTVkxWRzlMRGdtY0h1dldDTmhpNnFPSGF4YUk1TzltcEM2ODFFdzhfNnczNWpkZnMxUXNEVUk4NWFmWXI3YjRjR1djNW1NV05vc1JUb2IwbUJlcVF0OTZHV1ltWmgxeXJhcUkwd0NjNXRjRy1kUlVSVGpiZ2RzRWRYUVJha3hHcktfTmk5NkFJaE9MSmpscW9GNzdvc3lCM0dDcUlQT1dFa253NndrZVN0d1JkcDdqTmNubm03ZTZ4azF1eVpGaEh3OUhxTXQ5UEhORnhHTU5HNmJpVVhMVHpObXFfUHlnb3c4?oc=5",
       "date": "2026-09-28T13:37:04.000Z",
       "lang": "ar",
@@ -165,7 +173,7 @@
     },
     {
       "title": "وزير التعليم العالي يرأس اجتماع اللجنة المعنية بتطهير عموم العراق من المخلفات الإشعاعية",
-      "source": "mohesr.gov.iq",
+      "source": "وزارة التعليم العالي والبحث العلمي",
       "link": "https://news.google.com/rss/articles/CBMivwVBVV95cUxPTDF5UmhlNi1MUzZiOExkQVZESm9kUjJIVGYwLVkwOU0tVFN0Um4xZjY0d0x4TlhDZW93ZlV5WmRjQk5sbkFQTHBZb0lNRWhacmttNHRRNjBDU1dCdy0yYmFuTy05RWF3V1pobjJybVFnUTd6N21MMVpCV09wQUptRU52RWI0azU0ZzF3UjlGTEoxTTF1UFEzZ1FjaHRwNU1uVVkxUVp0RTJVQURvcGxVazdqWkE0VTVSdVoxWDZEZjhkeW1Eb1o4dXAyeHRITF9sb3E3M2lUenJJLVlZTzJfOXNJNVhqaFlYUW1xZU9uUU85YTVJMjM0RFdZRGp1YkV5ME9BdDMzN2NDSFVpZWpkYlhLdm9ZekRDTjFfVVJQQkx1N3J5SFZDUU5VdjRFa1ZTT0NMa1AyN2pGSnRiSFo1MUZ6c1dsdHpHdndBTkdZT0hzZUI4NVh5Vmdfa0huUGpNd0hheVdiWmJXSnF2dmdaRGxZSnM3Tk02LW1kN01YVFA4aU1SM3BwcUJ6MGZmUTNlY0pTd3B4S3loZU00d1o3MnE2eXB3NDNUUk5rMW9adWFxcTF2SkNNZWlrNUdDb09jV0ZnWXRYa1RkTk85a0R2cHhlY3UwX0l2RGY0QzNKYjFhR0ctWkRTRUxOMGIyQXRDWmlkUzJ1eXhZVDdVR2xOVGpQaU9NYjJrNmFNSkdXTS0wLTFVQlJMU20tMF9HVlNSMVhwZ25FTXlJTnZiYldaQTR1Q1pScFNpNkNyaXM0N0dpTGdrS0poUjdOTE5uZGFaTXdXOTZSbmhuWkgzOXc1YldvN0dhNlR2VlB1cFl0dzBoeXdJODhnR0hRZnZOUVNic25xWmR5VFJVMDhmTmZoM1VCMXZwb0p1ak45dXBIRExfQW5LQzM5R1Nldnd5NnVGcWJEZ0RHa0xfYzhZbFk4?oc=5",
       "date": "2026-09-27T18:53:14.000Z",
       "lang": "ar",
@@ -173,8 +181,8 @@
     },
     {
       "title": "العراق: تلوّث دجلة يدفع إلى إعلان حالة الطوارئ البيئية",
-      "source": "alaraby.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMiwgNBVV95cUxOWk4xNGZPZWlJOWIyU1hDYmotMEY0QmZVSjV6TTZDNnk0YXdEQ0d4U2lkVDZPUllMLUFWWkpOR0pWZFRkdzFoS3lXWF9RQ1BwTUJFVkprVEFkWnNxXzhycG92VE5ybVhHRktyaDFpRlRsNWFTWkVNWFdqVGpuN2wwXzF0NkRXcjJ4bkJvUG1GMlRrNFd5V2dmNEJEZExqaFBMNzg5ZGxGLVJhRC0xd1A1NzdYQTNMWGxwWWpxXzdjT1JpbHNjd21ycnlVMjJaeGNFQTlNRHVtNDBtQ1Q2WFlKUGVHOENlTU9BbEtiUjMtTTlsc2FKczc4RkZ2dVJGWXBnLUNQRjE4ZnJvZ3BBZU1fUWIzODhVYk95WGZHV3Vqcmp0X3ZPeG1DTDlhWEY3QWFRNGdZcDJobVp1Q01vbkhMRDVwcjhVS2l0MDg4WER2RllGMHhPeVI5OXZZeFFJV2FGbHRSWnl2LUdmYnlWX243QU9kRmZZa1VTVGQ5azZDN3dkSjRZYVhkd20zUkpXRXRWaUtlVmZVOVFCeXpuTU53eWxyNmJoMjd3VTNzYmlBakRQOXBzaVpoWGhRUTZEU3R1V3fSAcIDQVVfeXFMTlpOMTRmT2VpSTliMlNYQ2JqLTBGNEJmVUo1ek02QzZ5NGF3RENHeFNpZFQ2T1JZTC1BVlpKTkdKVmRUZHcxaEt5V1hfUUNQcE1CRVZKa1RBZFpzcV84cnBvdlROcm1YR0ZLcmgxaUZUbDVhU1pFTVhXalRqbjdsMF8xdDZEV3IyeG5Cb1BtRjJUazRXeVdnZjRCRGRMamhQTDc4OWRsRi1SYUQtMXdQNTc3WEEzTFhscFlqcV83Y09SaWxzY3dtcnJ5VTIyWnhjRUE5TUR1bTQwbUNUNlhZSlBlRzhDZU1PQWxLYlIzLU05bHNhSnM3OEZGdnVSRllwZy1DUEYxOGZyb2dwQWVNX1FiMzg4VWJPeVhmR1d1anJqdF92T3htQ0w5YVhGN0FhUTRnWXAyaG1adUNNb25ITEQ1cHI4VUtpdDA4OFhEdkZZRjB4T3lSOTl2WXhRSVdhRmx0Ulp5di1HZmJ5Vl9uN0FPZEZmWWtVU1RkOWs2Qzd3ZEo0WWFYZHdtM1JKV0V0VmlLZVZmVTlRQnl6bk1Od3lscjZiaDI3d1Uzc2JpQWpEUDlwc2laaFhoUVE2RFN0dVd3?oc=5",
+      "source": "العربي الجديد",
+      "link": "https://news.google.com/rss/articles/CBMivANBVV95cUxPenB3c1RSY2hVcW9jclFKcnFMWnNNcExMcUpVTUF3MHM0dHY2el9oZ1FBNm5NcDlKTkZLczVHWW5QMFdpMWgxZ0lrVDkxSDBQV1BCd2djVF8tXzA4cS1sZUpNZW5wbHpTYzVkQjJTT2ROMU1Ha2d2LUp3ZHVNdGNkaldzVVc0U3BjbHUxLXYxa3RMMFlWSnZuQXd4WEtNNkk5UWhCeGpXTWlwQzg5ekJRMHljSWpHYWcwNVhVVm1nX1lEZ3lDQWlmZFVEVENzekFGelNmX3NBRE5BdGE5U2ZuNnFmTnRWNmZIRFc4OGt4c0pIR2VUVHBTelNVcHpDSTJ5Tll0ZlM3VHl2c0tIY0x4RzhIalV2ZlhTWWJxN0lDUXVrNjlxZHpCUnlrSV9kNUJORlJRUnd5TGN5ZVM2SGtNTUtmb09URHVILU5sdU5GRmRuOWE4azYxd0tRZU1mU0RZTHozR2NCXzh5UVExVmRyMHNKaFFjLWVNeGNyUmplZW10TGJ1U0VNWExEa2E2T2tsZ0lwMkpWS1lqY0lvalEzTnlYVEFyX1JHSkVDS09zeFBPVUZpZG5nUDE3V3PSAcIDQVVfeXFMTlpOMTRmT2VpSTliMlNYQ2JqLTBGNEJmVUo1ek02QzZ5NGF3RENHeFNpZFQ2T1JZTC1BVlpKTkdKVmRUZHcxaEt5V1hfUUNQcE1CRVZKa1RBZFpzcV84cnBvdlROcm1YR0ZLcmgxaUZUbDVhU1pFTVhXalRqbjdsMF8xdDZEV3IyeG5Cb1BtRjJUazRXeVdnZjRCRGRMamhQTDc4OWRsRi1SYUQtMXdQNTc3WEEzTFhscFlqcV83Y09SaWxzY3dtcnJ5VTIyWnhjRUE5TUR1bTQwbUNUNlhZSlBlRzhDZU1PQWxLYlIzLU05bHNhSnM3OEZGdnVSRllwZy1DUEYxOGZyb2dwQWVNX1FiMzg4VWJPeVhmR1d1anJqdF92T3htQ0w5YVhGN0FhUTRnWXAyaG1adUNNb25ITEQ1cHI4VUtpdDA4OFhEdkZZRjB4T3lSOTl2WXhRSVdhRmx0Ulp5di1HZmJ5Vl9uN0FPZEZmWWtVU1RkOWs2Qzd3ZEo0WWFYZHdtM1JKV0V0VmlLZVZmVTlRQnl6bk1Od3lscjZiaDI3d1Uzc2JpQWpEUDlwc2laaFhoUVE2RFN0dVd3?oc=5",
       "date": "2026-09-27T11:00:10.000Z",
       "lang": "ar",
       "titleKo": "이라크: 티그리스 오염으로 환경 비상사태 선포"
@@ -186,14 +194,6 @@
       "date": "2026-09-27T10:25:00.000Z",
       "lang": "ar",
       "titleKo": "환경부 장관: 티그리스와 유프라테스는 매립지가 아닙니다.. 이라크인들의 깨끗한 물에 대한 권리는 예의의 대상이 아닙니다 - video-agencyia.iq"
-    },
-    {
-      "title": "حماية الأنهار تدخل مرحلة الحسم.. البيئة تشدد على وقف التلوث والاستنزاف",
-      "source": "شفقنا العراق",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE8yYlFmUktNb0lsOXAwUE9CbW5KY3lBd1BKb251SjJreWVIbG1hVVc5eXp6MDV6TWNzMUNhOFF0a19lQWxvR0tYQXkzcU8?oc=5",
-      "date": "2026-09-27T09:45:50.000Z",
-      "lang": "ar",
-      "titleKo": "강 보호는 결정적인 단계로 접어 듭니다.. 환경은 오염과 고갈의 중단을 강조합니다."
     }
   ]
 }
