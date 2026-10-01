@@ -10788,5 +10788,65 @@
 "start": "2026-09-29",
 "end": "2030-02-28",
 "contractDate": "2026-09-29"
+},
+"20260930800771": {
+"kind": "공사수주",
+"name": "",
+"amount": "380,838,972,851",
+"counterparty": "",
+"region": "중동",
+"start": "",
+"end": "",
+"contractDate": "2026-06-30"
+},
+"20260930800867": {
+"kind": "용역제공",
+"name": "",
+"amount": "",
+"counterparty": "",
+"region": "중동",
+"start": "",
+"end": "",
+"contractDate": "2026-06-30"
+},
+"20261001800034": {
+"kind": "공사수주",
+"name": "Engineering, Procurement and Construction (EPC) of O Mon III Combined Cycle Power Plant Construction Project",
+"amount": "837,970,880,392",
+"counterparty": "VIETNAM NATIONAL INDUSTRY - ENERGY GROUP (PVN)",
+"region": "Vietnam, Can Tho",
+"start": "2026-10-06",
+"end": "2030-10-06",
+"contractDate": "2026-09-30"
+},
+"20260930800368": {
+"kind": "공사수주",
+"name": "시흥 거모지구 B-5BL 공동주택 신축공사",
+"amount": "82,234,350,000",
+"counterparty": "시흥거모피에프브이 주식회사",
+"region": "경기도 시흥시 거모동 시흥거모 공공주택지구 B-5BL",
+"start": "2026-10-16",
+"end": "2029-08-15",
+"contractDate": "2026-09-30"
+},
+"20260930800378": {
+"kind": "공사수주",
+"name": "이천~문경 철도건설사업 제6공구 건설공사",
+"amount": "61,315,991,440",
+"counterparty": "국가철도공단",
+"region": "충북 충주시",
+"start": "2017-06-01",
+"end": "2026-09-30",
+"contractDate": "2020-12-24"
+},
+"20260930800251": {
+"kind": "공사수주",
+"name": "보령신복합 1호기 건설공사",
+"amount": "251,603,814,048",
+"counterparty": "한국중부발전㈜",
+"region": "충남 보령시 오천면 일원 고정국가산업단지 내",
+"start": "2023-09-18",
+"end": "2027-03-31",
+"contractDate": "2023-09-18"
 }
 }
