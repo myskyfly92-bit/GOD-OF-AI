@@ -2322,19 +2322,18 @@ body::before {
 .hse-intro-inner { text-align: center; }
 .hse-intro-logo {
   width: min(280px, 50vw); border-radius: 10px; background: #fff; padding: 10px 18px;
-  opacity: 0; transform: scale(0.92); animation: introIn 0.7s 0.1s ease forwards;
+  opacity: 0; transform: scale(0.92);
 }
 .hse-intro-title {
   margin-top: 26px; font-size: clamp(22px, 3vw, 36px); font-weight: 800; letter-spacing: 0.02em; color: #fff;
-  opacity: 0; transform: translateY(10px); animation: introIn 0.7s 0.5s ease forwards;
+  opacity: 0; transform: translateY(10px);
 }
 .hse-intro-sub {
   margin-top: 10px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.3em; color: var(--cyan);
-  opacity: 0; animation: introIn 0.7s 0.8s ease forwards;
+  opacity: 0;
 }
 .hse-intro-line {
   margin: 22px auto 0; height: 2px; width: 0; background: linear-gradient(90deg, transparent, var(--cyan), transparent);
-  animation: introLine 1.2s 0.9s ease forwards;
 }
 @keyframes introIn { to { opacity: 1; transform: none; } }
 @keyframes introLine { to { width: min(420px, 70vw); } }
@@ -2361,3 +2360,59 @@ body.kiosk-on .bg-peek-btn, body.kiosk-on .wx-chip { opacity: 0.35; }
   .hse-intro { display: none; }
   .kiosk-caption.in { animation: none; }
 }
+
+/* ---------- 인트로: 로고는 show-logo 가 붙은 뒤 등장 ---------- */
+.hse-intro-inner { position: relative; z-index: 3; }
+.hse-intro.show-logo .hse-intro-logo { animation: introIn 0.7s 0.1s ease forwards; }
+.hse-intro.show-logo .hse-intro-title { animation: introIn 0.7s 0.5s ease forwards; }
+.hse-intro.show-logo .hse-intro-sub { animation: introIn 0.7s 0.8s ease forwards; }
+.hse-intro.show-logo .hse-intro-line { animation: introLine 1.2s 0.9s ease forwards; }
+
+/* ---------- 인트로 사진 슬라이드 ---------- */
+.hse-intro-slides { position: absolute; inset: 0; overflow: hidden; z-index: 1; transition: opacity 0.6s ease; }
+.hse-intro-slides.fade { opacity: 0.12; filter: blur(3px); }
+.hse-intro-slide {
+  position: absolute; inset: -4%; background-size: cover; background-position: center;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  animation: slideWipe 0.55s cubic-bezier(.7, 0, .2, 1) forwards, slideZoomL 1.6s ease-out forwards;
+}
+.hse-intro-slide::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,8,12,0.65), rgba(5,8,12,0.1) 60%), linear-gradient(180deg, rgba(5,8,12,0.1), rgba(5,8,12,0.55)); }
+.hse-intro-capbox { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+.hse-intro-slide.dir-r { animation-name: slideWipeR, slideZoomR; }
+.hse-intro-slide.dir-u { animation-name: slideWipeU, slideZoomU; }
+.hse-intro-slide.dir-d { animation-name: slideWipeD, slideZoomD; }
+@keyframes slideWipe  { to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+@keyframes slideWipeR { from { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); } to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+@keyframes slideWipeU { from { clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); } to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+@keyframes slideWipeD { from { clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); } to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+@keyframes slideZoomL { from { transform: scale(1.25) translateX(3%); } to { transform: scale(1.04) translateX(-1%); } }
+@keyframes slideZoomR { from { transform: scale(1.25) translateX(-3%); } to { transform: scale(1.04) translateX(1%); } }
+@keyframes slideZoomU { from { transform: scale(1.25) translateY(3%) rotate(-1deg); } to { transform: scale(1.04) rotate(0); } }
+@keyframes slideZoomD { from { transform: scale(1.25) translateY(-3%) rotate(1deg); } to { transform: scale(1.04) rotate(0); } }
+.hse-intro-cap {
+  position: absolute; left: 7%; bottom: 14%; z-index: 2; color: #fff;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.hse-intro-cap b {
+  font-family: var(--font-mono); font-weight: 800; font-size: clamp(42px, 8vw, 120px); letter-spacing: 0.06em; line-height: 1;
+  text-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+  opacity: 0; transform: translateX(-40px); animation: capIn 0.6s 0.2s cubic-bezier(.2, .8, .2, 1) forwards;
+}
+.hse-intro-cap span {
+  font-size: clamp(16px, 2vw, 26px); font-weight: 700; color: var(--cyan); letter-spacing: 0.3em;
+  opacity: 0; animation: capIn 0.6s 0.45s ease forwards;
+}
+@keyframes capIn { to { opacity: 1; transform: none; } }
+.hse-intro-flash { position: absolute; inset: 0; z-index: 2; background: #fff; opacity: 0; pointer-events: none; }
+.hse-intro-flash.on { animation: introFlash 0.35s ease-out; }
+@keyframes introFlash { 0% { opacity: 0.55; } 100% { opacity: 0; } }
+
+/* ---------- 탭별 관련 뉴스 ---------- */
+.topic-news-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+@media (max-width: 900px) { .topic-news-list { grid-template-columns: 1fr; } }
+.topic-news-list li { border-bottom: 1px solid var(--border-soft); }
+.topic-news-list li.skeleton { grid-column: 1 / -1; border: 0; }
+.topic-news-list a { display: flex; flex-direction: column; gap: 3px; padding: 10px 2px; text-decoration: none; color: inherit; }
+.topic-news-list a:hover .tn-title { color: var(--cyan); }
+.tn-title { font-size: 13.5px; color: var(--text); line-height: 1.5; word-break: keep-all; }
+.tn-meta { font-size: 11.5px; color: var(--text-dim); }
