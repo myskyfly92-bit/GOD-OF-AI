@@ -1,39 +1,25 @@
 {
-  "generatedAt": "2026-10-01T00:32:30.500Z",
+  "generatedAt": "2026-10-02T00:45:22.981Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
-      "title": "- 보건복지부 대표홈페이지",
-      "source": "",
+      "title": "동네에서 치료뿐 아니라 포괄적 건강관리까지 ‘지역사회 일차의료 혁신 시범사업’ 시작",
+      "source": "보건복지부 대표홈페이지",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRXByTlQ3YndjMzBqeU9xTFFZVl85ZTNhdVcwZklpNmlSSFg1QUxEa2w5VWZIS256R1hMbndYSkdFMWNVdGNmWFptNkZrSzByUi1UdXhGYUpYV1Q0Qm5iWDNpSGdZNE50YkRPZGxwRnZkOWphZG9wU2ZWZzRZNklNZjhQd1pTNmpCZW1j?oc=5",
-      "date": "2026-09-29T15:06:44.000Z"
-    },
-    {
-      "title": "- 보건복지부 대표홈페이지",
-      "source": "",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaUM2MllHeExjRWFQcmVtY0w5cHI4U1Y5cy14Wlo5c0lmdjUxNHUyYmxBaXlwS1ZBLUVsUEVybEV5ejJELUVxb1JhcFRWb05USDlSNjhkcXpvZnRXemNQTWJsMkpTbDNFUElGMFRMbGxGQWZqNkdvelNpMGE5T194Ulc0VUxxU2FkTkN3?oc=5",
-      "date": "2026-09-28T15:09:52.000Z"
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMXlKUFVxV1JOb0N3MTZ0a2JhaGtIaTNhcEF2Q0VzWDBzVk82TWFJNDhYZFg3dmxLTG9QMHRhWTVxaXZXbjlKcWNGaHI0UWFQZHdtb3hKTF9VRHB2WlU1endhTjBCUExHUHRwN3pDeHFQcG5qeExxV0luMXBfNC02MzQ1Q1lTNGs0NDVKMVFRSXZqMGJyWGRwaUJVRQ?oc=5",
+      "date": "2026-09-28T03:05:00.000Z"
     },
     {
       "title": "건강교육 자료실",
-      "source": "health.kdca.go.kr",
-      "agency": "질병관리청",
+      "source": "국가건강정보포털",
+      "agency": "",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdENxSGlHaDAyanhlTEUyQ2hhTzBWZmRMVjJsbUNPVFNKQ1V5WC1QR01IcXFZYlc4YUhNdkdKMHl0aUdFVTN4SUNPWnU5MmE3NTJEUkV3NGJCMndUaGZJUXBrejZyaGhyZ2haaEo2d2djR2NlYU1YcURDWjZkcTUxUGRnaHN5Z09ESWFXb3pYRVVva1pRUjBXR2NuUVhEMktEeU1PNndRdnFRUm1IMjlhNGY0elpfRlBBSXVzOXV3?oc=5",
       "date": "2026-09-28T14:16:39.000Z"
     },
     {
-      "title": "건강교육 자료실",
-      "source": "health.kdca.go.kr",
-      "agency": "질병관리청",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMFg1Mnhqdk5Ia2lLZ2ZUUHlPWmNRRlkwUTEycmgtOEVwTnkzQWN4QTVIZExxZmQzTnFPOFllR1Z0TGFxbkUySm40ZFlNMlVyQzU1Nnd2X1prZVdCNFFXQXdoaUJmaHp0c3Fyc1duS1hzS1VRSGlkQVNxdzJVekNjdkNfamQwVjV3Ulh3NWdieGM2NHdmZXBqcEpHMXJZWVZ4clhiempnWEVVQ2tYUXVUcTl1RE9YOTYwVy1N?oc=5",
-      "date": "2026-09-24T17:40:50.000Z"
-    },
-    {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
-      "source": "dportal.kdca.go.kr",
-      "agency": "질병관리청",
+      "source": "질병관리청 감염병포털",
+      "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
       "date": "2024-06-10T03:38:59.000Z"
     },
@@ -42,47 +28,61 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-09-30T09:06:28.000Z"
+      "date": "2026-10-01T09:09:21.000Z"
     },
     {
       "title": "레지오넬라증",
-      "source": "kdca.go.kr",
-      "agency": "질병관리청",
+      "source": "질병관리청",
+      "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52SW9Ma2pUR1JIZ1AxZHJEQnhtaFh1N1A0b3VVWTByTHVyVG9qQWJ1VmtMOElGdzM4MnRNdkVBd2dUa1F6OU82Mk44UGppVFlKb0UwUGRn?oc=5",
       "date": "2025-12-16T16:14:22.000Z"
     },
     {
       "title": "국민건강영양조사",
-      "source": "kdca.go.kr",
-      "agency": "질병관리청",
+      "source": "질병관리청",
+      "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1rbkg5WnFkUTF6Vy1KNGdYMmRhOHV2aE81VXpleWZUYnVGTWJYdmhpal9uQVVuNEh0aE9mTTF2T0c4OEw1NGVsOGZQYWFabU8tbWZNSktn?oc=5",
       "date": "2025-12-16T16:28:40.000Z"
     },
     {
       "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
-      "source": "dportal.kdca.go.kr",
-      "agency": "질병관리청",
+      "source": "질병관리청 감염병포털",
+      "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
       "date": "2024-06-10T02:47:27.000Z"
     },
     {
       "title": "이달의 건강정보",
-      "source": "health.kdca.go.kr",
-      "agency": "질병관리청",
+      "source": "국가건강정보포털",
+      "agency": "",
       "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPU2E0T1E0dXRxOU9pSmxNT2RkdGotek1EZklEb1RNWE1ZSE82ZzR1bEk2SE1hbDN0YWhGeDR2WDVmZF85Y0pOV21wZW1sUGpfb1N5SWhYdjdvak5QLTBBVFR1THBLOTV6UlJwMERod0FJVVlVaFc0MXZieTg3ZXJmM0VLZEtFWUlqQkpnZlZmX3FfSlcwQkVqNFJ4SGlEYXZ1YTQ5cTJPRXpROHBXWEIyWGt6Ny1BTGxMZTk1YmdhTi1mS1dTNUtzR3NGUVBMODVPNEd6UHV1MmhZN0VnVC14RThKU3hJWkRROGc?oc=5",
       "date": "2026-09-30T04:16:52.000Z"
     },
     {
+      "title": "문서뷰어",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSmJNeVJQSjJJNjVqNWEzc1k3Q1Z3RE1ES3FJVUtER1F5MEVyaWQyY0drUGdlSERCM25HX0UzZ1J0Y0tpYVJtU0lZM2lmSG5jcHFGWmdLRmw5QnVtV0ZkUHBtR3dHT00yT3pnSTV6cUhsc3BPd3NPS1R5MHo0TC0weGxzYUluMERqWVhqQVozZFM?oc=5",
+      "date": "2026-10-01T10:26:31.000Z"
+    },
+    {
+      "title": "건강교육 자료실",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZ0Y0OFB1TW9SckNfXzlQU1d2bVd4dVI4QWJzM1dOeUxldUY1MXR4cU1UYnZBZHk5UVVCMXVTT3M4VDdPc3F5NV9JQnl1dThZVHN0eUxRTG84RlZfbmVWM0RRZFlMckRPTElFckNLTUxJV3pEcmtsVjNsaFFORWg0NXBqTkM1OE1Wemx3dS1tTklTRlNJUlRJdEIyZktwZGlhbkhnSFhLZjZuenp6bmF4SzlYU0pPYzRzbHIyTVd3?oc=5",
+      "date": "2026-09-30T16:22:21.000Z"
+    },
+    {
       "title": "감염병한눈에보기",
-      "source": "kdca.go.kr",
-      "agency": "질병관리청",
+      "source": "질병관리청",
+      "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA0S19IM3BzSi1IQUpmU2h0QlFlRXdleTNrYUQ4dTV1VjJpdFpMNVBvbDIwTzZFemRMalRxNXJqcWVnUlk0LVlLY3B1T0dXNlZMV1BzMjBR?oc=5",
       "date": "2025-12-16T15:49:55.000Z"
     },
     {
       "title": "수인성·식품매개 감염병",
-      "source": "kdca.go.kr",
-      "agency": "질병관리청",
+      "source": "질병관리청",
+      "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZQl9OTjlxM2NaZDY4dXZ1LU51dUNFTGZsYWstcjJpNG5GajVQa2N6OWozdk9RdHpSZi1USGVEUTRqX2J6YWRuUU40c3dvdmVndUZJVTln?oc=5",
       "date": "2025-12-16T14:07:01.000Z"
     }
