@@ -1,0 +1,47 @@
+name: Update topic news (중대재해·감염병 관련 뉴스)
+
+on:
+  schedule:
+    # 하루 4번 (한국시간 약 06·12·18·24시)
+    - cron: "37 21,3,9,15 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-topic-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 관련 뉴스 가져오기
+        run: node scripts/fetch-topic-news.js
+
+      - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add topic-news.json
+          if git diff --cached --quiet; then
+            echo "변경사항 없음, 커밋 생략"
+            exit 0
+          fi
+          git commit -m "chore: 중대재해·감염병 관련 뉴스 자동 갱신"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "푸시 성공"
+              exit 0
+            fi
+            echo "충돌 발생, ${i}번째 재시도 전 5초 대기..."
+            sleep 5
+          done
+          echo "5회 재시도 후에도 푸시 실패"
+          exit 1

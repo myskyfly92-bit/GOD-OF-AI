@@ -3774,6 +3774,31 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   }
 
   /* ---------- 4) 첫 화면 인트로 ---------- */
+  /* 인트로 사진 슬라이드: assets/intro-1.jpg ~ intro-6.jpg (또는 .webp) 를 넣으면 로고 앞에 순서대로 나온다.
+     자막은 아래 목록 순서대로 붙는다 (사진 수보다 적으면 남는 사진은 자막 없이). */
+  const INTRO_CAPTIONS = [
+    { big: "SAFETY", small: "안전" },
+    { big: "HEALTH", small: "보건" },
+    { big: "ENVIRONMENT", small: "환경" },
+    { big: "FIRE", small: "소방" },
+    { big: "BISMAYAH", small: "비스마야 신도시" },
+    { big: "ZERO ACCIDENT", small: "무재해" },
+  ];
+  const SLIDE_MS = 1300;
+
+  function loadIntroImages() {
+    // 사진을 미리 받아서 '디코딩'까지 끝내 둔다 (슬라이드 도중 버벅이지 않게)
+    const tryLoad = (src) => new Promise((res) => {
+      const im = new Image();
+      im.onload = () => (im.decode ? im.decode().catch(() => {}) : Promise.resolve()).then(() => res(src));
+      im.onerror = () => res(null);
+      im.src = src;
+    });
+    return Promise.all([1, 2, 3, 4, 5, 6].map(async (n) =>
+      (await tryLoad(`assets/intro-${n}.jpg`)) || (await tryLoad(`assets/intro-${n}.webp`))))
+      .then((list) => list.filter(Boolean));
+  }
+
   function intro() {
     let seen = false;
     try { seen = sessionStorage.getItem("hseIntroSeen") === "1"; } catch (e) {}
@@ -3781,14 +3806,19 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     try { sessionStorage.setItem("hseIntroSeen", "1"); } catch (e) {}
     const el = document.createElement("div");
     el.className = "hse-intro";
-    el.innerHTML = `<div class="hse-intro-inner">
+    el.innerHTML = `<div class="hse-intro-slides"></div><div class="hse-intro-capbox"></div><div class="hse-intro-flash"></div>
+    <div class="hse-intro-inner">
       <img class="hse-intro-logo" src="assets/hanwha-logo.jpg" alt="Hanwha">
       <div class="hse-intro-title">비스마야 안전보건환경 상황실</div>
       <div class="hse-intro-sub">BISMAYAH NEW CITY PROJECT · HSE SITUATION ROOM</div>
       <div class="hse-intro-line"></div>
     </div>`;
     document.body.appendChild(el);
+    let finished = false, timers = [];
     const done = () => {
+      if (finished) return;
+      finished = true;
+      timers.forEach(clearTimeout);
       el.classList.add("out");
       setTimeout(() => el.remove(), 900);
       // 숫자를 0부터 다시 올린다 (인트로에 가려 처음 올라가는 걸 못 봤으므로)
@@ -3800,7 +3830,43 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       if (window.hsePlayEnter) window.hsePlayEnter();
     };
     el.addEventListener("click", done, { once: true });
-    setTimeout(done, 2300);
+    const showLogo = () => { el.classList.add("show-logo"); timers.push(setTimeout(done, 2300)); };
+
+    // 페이지 첫 로딩(지도·데이터 준비)이 끝난 뒤 시작해야 화면 전환이 매끄럽다
+    const pageReady = new Promise((res) => {
+      if (document.readyState === "complete") res(); else window.addEventListener("load", res, { once: true });
+      setTimeout(res, 2500); // 너무 오래 걸리면 그냥 시작
+    });
+    Promise.all([loadIntroImages(), pageReady]).then(([imgs]) => new Promise((r) => setTimeout(() => r(imgs), 150))).then((imgs) => {
+      if (finished) return;
+      if (!imgs.length) return showLogo();
+      const box = el.querySelector(".hse-intro-slides");
+      const flash = el.querySelector(".hse-intro-flash");
+      const dirs = ["dir-l", "dir-r", "dir-u", "dir-d"]; // 슬라이드마다 다른 방향으로 확대·이동
+      // 슬라이드를 하나씩 이어서 보여 준다. 다음 장은 '이번 장 화면 전환이 실제로 시작된 때'부터 시간을 잰다
+      // (컴퓨터가 바쁠 때 전환이 늦게 시작돼도 장면이 겹치거나 건너뛰지 않게)
+      const capbox = el.querySelector(".hse-intro-capbox");
+      const showSlide = (i) => {
+        if (finished) return;
+        if (i >= imgs.length) {
+          box.classList.add("fade"); capbox.innerHTML = ""; showLogo();
+          return;
+        }
+        const cap = INTRO_CAPTIONS[i];
+        const sl = document.createElement("div");
+        sl.className = `hse-intro-slide ${dirs[i % dirs.length]}`;
+        sl.style.backgroundImage = `url('${imgs[i]}')`;
+        box.appendChild(sl);
+        capbox.innerHTML = cap ? `<div class="hse-intro-cap"><b>${cap.big}</b><span>${cap.small}</span></div>` : "";
+        flash.classList.remove("on"); void flash.offsetWidth; flash.classList.add("on");
+        while (box.children.length > 2) box.removeChild(box.firstChild);
+        let scheduled = false;
+        const next = () => { if (scheduled) return; scheduled = true; timers.push(setTimeout(() => showSlide(i + 1), SLIDE_MS)); };
+        sl.addEventListener("animationstart", next, { once: true });
+        timers.push(setTimeout(next, 800)); // 만일을 위해
+      };
+      showSlide(0);
+    });
   }
 
   /* ---------- 2) 상황실 순환 모드 ---------- */
@@ -3879,3 +3945,43 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   document.querySelectorAll(".tab-btn").forEach((b) => b.addEventListener("click", () => setTimeout(update, 50)));
   update();
 })();
+
+
+/* ---------------- 탭별 관련 뉴스 (topic-news.json) ---------------- */
+let topicNewsData = null;
+async function loadTopicNews(key) {
+  const list = document.querySelector(`.topic-news-list[data-topic="${key}"]`);
+  if (!list) return;
+  if (!topicNewsData) {
+    try {
+      const r = await fetch("topic-news.json", { cache: "no-store" });
+      if (!r.ok) throw new Error();
+      topicNewsData = await r.json();
+    } catch (e) {
+      list.innerHTML = '<li class="skeleton">아직 뉴스가 없습니다. GitHub Actions에서 "Update topic news"를 한 번 실행하면 표시됩니다.</li>';
+      return;
+    }
+  }
+  const items = (topicNewsData[key] && topicNewsData[key].items) || [];
+  const ago = (iso) => {
+    if (!iso) return "";
+    const m = Math.round((Date.now() - new Date(iso)) / 60000);
+    return m < 60 ? `${Math.max(1, m)}분 전` : m < 1440 ? `${Math.round(m / 60)}시간 전` : `${Math.round(m / 1440)}일 전`;
+  };
+  list.innerHTML = items.length ? items.map((n) => `
+    <li><a href="${escapeHtml(n.link)}" target="_blank" rel="noopener noreferrer">
+      <span class="tn-title">${escapeHtml(n.title)}</span>
+      <span class="tn-meta">${escapeHtml(n.source || "")}${n.source ? " · " : ""}${escapeHtml(ago(n.date))}</span>
+    </a></li>`).join("") : '<li class="skeleton">최근 관련 뉴스가 없습니다.</li>';
+  const meta = list.parentElement.querySelector(".topic-news-meta");
+  if (meta && topicNewsData.generatedAt) {
+    meta.textContent = "구글 뉴스 검색 연동 · 기사를 누르면 언론사 원문으로 이동 · 마지막 수집: " +
+      new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(topicNewsData.generatedAt));
+  }
+}
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (btn.dataset.view === "view-sa") loadTopicNews("sa");
+    if (btn.dataset.view === "view-health-kdca") loadTopicNews("infect");
+  });
+});
