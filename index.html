@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261002g">
+<link rel="stylesheet" href="style.css?v=20261002h">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -84,6 +84,8 @@
     </div>
     <div class="sub-row" data-group="env" hidden>
       <button class="tab-btn" data-view="view-env-weather">날씨·대기환경</button>
+      <button class="tab-btn" data-view="view-env-dust">모래폭풍 예보</button>
+      <button class="tab-btn" data-view="view-env-quake">중동 지진 현황</button>
       <button class="tab-btn" data-view="view-iraq-moen">이라크 환경부 소식</button>
     </div>
     <div class="sub-row" data-group="fire" hidden>
@@ -93,6 +95,7 @@
     <div class="sub-row" data-group="etc" hidden>
       <button class="tab-btn" data-view="view-ships">해상·항공 현황</button>
       <button class="tab-btn" data-view="view-global">해외 현장</button>
+      <button class="tab-btn" data-view="view-travel">주변국 여행경보</button>
     </div>
   </div>
 
@@ -485,6 +488,59 @@
 </main>
 </div>
 
+<div id="view-env-dust" class="view">
+<main class="grid">
+  <section class="panel dust-panel" aria-label="모래폭풍 5일 예보" style="grid-column: 1 / -1;">
+    <div class="panel-label">SANDSTORM FORECAST · 비스마야 모래폭풍 5일 예보</div>
+    <div id="dustAlert" class="dust-alert">예보 불러오는 중…</div>
+    <div class="dust-days" id="dustDays"></div>
+    <div class="dust-chart-wrap"><svg id="dustChart" class="dust-chart" viewBox="0 0 1000 300" preserveAspectRatio="none"></svg></div>
+    <div class="dust-legend">
+      <span><i style="background:#c9964f"></i>모래먼지 (㎍/㎥)</span>
+      <span><i style="background:#4fb4ff"></i>순간풍속 (m/s, 오른쪽 눈금)</span>
+      <span><i class="dash"></i>80 나쁨 · 150 매우 나쁨 · 300 모래폭풍</span>
+    </div>
+    <p class="source-note" id="dustMeta">Open-Meteo 대기질·날씨 예보 (시간별)</p>
+  </section>
+</main>
+</div>
+
+<div id="view-env-quake" class="view">
+<main class="grid">
+  <section class="panel quake-panel" aria-label="중동 지진 현황" style="grid-column: 1 / -1;">
+    <div class="panel-label">EARTHQUAKES · 중동 지진 현황 (최근 30일 · 규모 2.5 이상)</div>
+    <div id="quakeSummary" class="quake-summary">지진 정보 불러오는 중…</div>
+    <div id="quakeMap" class="quake-map"></div>
+    <div class="quake-legend">
+      <span><i style="background:#e5484d"></i>24시간 이내</span>
+      <span><i style="background:#f2a93b"></i>7일 이내</span>
+      <span><i style="background:#8a94a3"></i>30일 이내</span>
+      <span>원 크기 = 규모 · <b class="site-star">★</b> 비스마야 현장</span>
+    </div>
+    <div class="quake-table-wrap"><table class="quake-table" id="quakeTable"></table></div>
+    <p class="source-note" id="quakeMeta">미국지질조사국(USGS) 실시간 지진 정보 · 10분마다 갱신</p>
+  </section>
+</main>
+</div>
+
+<div id="view-travel" class="view">
+<main class="grid">
+  <section class="panel travel-panel" aria-label="주변국 여행경보" style="grid-column: 1 / -1;">
+    <div class="panel-label">TRAVEL ADVISORY · 외교부 여행경보 (중동·주변국)</div>
+    <div class="travel-legend">
+      <span><i style="background:#4fb4ff"></i>1단계 여행유의</span>
+      <span><i style="background:#ffd166"></i>2단계 여행자제</span>
+      <span><i style="background:#f2a93b"></i>3단계 출국권고</span>
+      <span><i style="background:#e5484d"></i>4단계 여행금지</span>
+      <span><i style="background:#2a3442"></i>경보 없음</span>
+    </div>
+    <div id="travelMap" class="travel-map"></div>
+    <div class="travel-list" id="travelList"><p class="skeleton">여행경보 불러오는 중…</p></div>
+    <p class="source-note" id="travelMeta">출처: 외교부 해외안전여행(0404.go.kr) 국가·지역별 여행경보 · 매일 갱신</p>
+  </section>
+</main>
+</div>
+
 <div id="view-procedures" class="view">
 <main class="grid">
   <section class="panel procedure-panel" aria-label="안전작업절차서" style="grid-column: 1 / -1;">
@@ -647,7 +703,7 @@
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261002g"></script>
+<script src="script.js?v=20261002h"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">
