@@ -4368,7 +4368,7 @@ async function loadTravel() {
   }
   setTimeout(() => travelMap.invalidateSize(), 100);
   const list = document.getElementById("travelList");
-  if (!alarm) {
+  if (!alarm || !Object.keys(alarm.countries || {}).length) {
     list.innerHTML = '<p class="skeleton">아직 여행경보 자료가 없습니다. 외교부 여행경보 API 활용신청 후 GitHub Actions에서 "Update travel alarm"을 실행하면 표시됩니다.</p>';
     return;
   }
