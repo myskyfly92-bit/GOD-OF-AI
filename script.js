@@ -3796,7 +3796,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   /* 위성사진 타임랩스: 착공 후 매년 한 장씩 비스마야를 찍은 위성사진(Esri Wayback 보관본)을 인트로 맨 앞에 보여 준다.
      2014년부터 보관본이 있어 그 해부터 올해까지 나온다. 끄려면 false 로. */
   const INTRO_SATELLITE = true;
-  const SAT_CENTER = [33.192, 44.622], SAT_ZOOM = 15, SAT_COLS = 6, SAT_ROWS = 4;
+  const SAT_CENTER = [33.192, 44.622], SAT_ZOOM = 15, SAT_COLS = 4, SAT_ROWS = 3;
   const CONSTRUCTION_YEAR = 2012;
 
   function satTileXY(lat, lon, z) {
@@ -3804,20 +3804,57 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     return [Math.floor(((lon + 180) / 360) * n), Math.floor(((1 - Math.log(Math.tan(rad) + 1 / Math.cos(rad)) / Math.PI) / 2) * n)];
   }
 
-  async function loadSatelliteYears() {
+  // 받은 위성사진은 여기 쌓인다 (시간 안에 다 못 받아도 받은 만큼은 보여 주기 위해)
+  const satDone = [];
+  // 직접 넣은 연도별 위성사진: assets/sat-2012.jpg … sat-2026.jpg (.webp 도 가능)
+  // 구글 어스 프로의 '과거 이미지'로 캡처한 사진 등을 넣으면 그 해는 이 사진을 우선 쓴다 (2012·2013년도 가능)
+  async function loadManualSatYears() {
+    const thisYear = new Date().getFullYear();
+    const load = (src) => new Promise((res) => { const im = new Image(); im.onload = () => res(im); im.onerror = () => res(null); im.src = src; });
+    const out = {};
+    await Promise.all(Array.from({ length: thisYear - CONSTRUCTION_YEAR + 1 }, (_, k) => CONSTRUCTION_YEAR + k).map(async (y) => {
+      const im = (await load(`assets/sat-${y}.jpg`)) || (await load(`assets/sat-${y}.webp`));
+      if (!im) return;
+      const cv = document.createElement("canvas");
+      cv.width = im.naturalWidth; cv.height = im.naturalHeight;
+      cv.getContext("2d").drawImage(im, 0, 0);
+      out[y] = { year: y, canvas: cv, manual: true };
+    }));
+    return out;
+  }
+
+  // 위성 타일이 이전 해와 똑같은지(그 사이 새 위성사진이 없었는지) 확인용 지문
+  async function tileFingerprint(url) {
+    try {
+      const buf = new Uint8Array(await (await fetch(url)).arrayBuffer());
+      let h = 2166136261;
+      for (let i = 0; i < buf.length; i += 7) { h ^= buf[i]; h = Math.imul(h, 16777619); }
+      return `${buf.length}:${h >>> 0}`;
+    } catch (e) { return null; } // 확인이 안 되면 그냥 보여 준다
+  }
+
+  async function loadSatelliteYears(onProgress) {
     if (!INTRO_SATELLITE) return [];
+    const manual = await loadManualSatYears();
+    if (Object.keys(manual).length) console.info("[인트로] 직접 넣은 위성사진 연도:", Object.keys(manual).join(", "));
+    Object.values(manual).forEach((f) => satDone.push(f)); // 시간이 모자라도 직접 넣은 사진은 꼭 나오게
     let cfg;
     try {
       cfg = await (await fetch("https://s3-us-west-2.amazonaws.com/config.maptiles.arcgis.com/waybackconfig.json")).json();
-    } catch (e) { console.warn("위성 보관본 목록을 못 받음", e); return []; }
+      console.info("[인트로] 위성 보관본 목록 받음:", Object.keys(cfg).length, "개");
+    } catch (e) {
+      console.warn("[인트로] 위성 보관본 목록을 못 받음 (네트워크/보안 차단 가능)", e);
+      return Object.values(manual).sort((a, b) => a.year - b.year);
+    }
     // 해마다 7월 1일에 가장 가까운 보관본 하나씩
     const rel = Object.entries(cfg).map(([num, v]) => {
       const m = String(v.itemTitle || "").match(/(\d{4})-(\d{2})-(\d{2})/);
       return m ? { num, date: new Date(`${m[1]}-${m[2]}-${m[3]}`), year: +m[1], url: v.itemURL } : null;
     }).filter(Boolean);
     const thisYear = new Date().getFullYear();
-    const picks = [];
+    let picks = [];
     for (let y = CONSTRUCTION_YEAR; y <= thisYear; y++) {
+      if (manual[y]) continue; // 직접 넣은 사진이 있는 해는 건너뜀
       const c = rel.filter((r) => r.year === y);
       if (!c.length) continue;
       const target = new Date(`${y}-07-01`).getTime();
@@ -3825,7 +3862,17 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     }
     const [cx, cy] = satTileXY(SAT_CENTER[0], SAT_CENTER[1], SAT_ZOOM);
     const x0 = cx - Math.floor(SAT_COLS / 2), y0 = cy - Math.floor(SAT_ROWS / 2);
+    // 보관본이 해마다 있어도 현장 위성사진은 몇 년에 한 번만 바뀌는 경우가 많다.
+    // 가운데 타일의 지문을 비교해서, 앞 해와 똑같은 사진인 해는 뺀다 (같은 장면 반복 방지)
+    const fps = await Promise.all(picks.map((p) => tileFingerprint(p.url.replace("{level}", SAT_ZOOM).replace("{row}", cy).replace("{col}", cx))));
+    let lastFp = null;
+    picks = picks.filter((p, i) => {
+      if (fps[i] && fps[i] === lastFp) { console.info(`[인트로] ${p.year}년은 앞 해와 같은 위성사진이라 건너뜀`); return false; }
+      if (fps[i]) lastFp = fps[i];
+      return true;
+    });
     const loadImg = (src) => new Promise((res) => { const im = new Image(); im.onload = () => res(im); im.onerror = () => res(null); im.src = src; });
+    console.info("[인트로] 사용할 연도:", picks.map((p) => p.year).join(", "));
     const frames = await Promise.all(picks.map(async (p) => {
       const tiles = [];
       for (let r = 0; r < SAT_ROWS; r++) for (let c = 0; c < SAT_COLS; c++) {
@@ -3838,10 +3885,14 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       cv.width = SAT_COLS * 256; cv.height = SAT_ROWS * 256;
       const g = cv.getContext("2d");
       got.forEach((t) => g.drawImage(t.im, t.c * 256, t.r * 256));
-      return { year: p.year, canvas: cv };
+      const fr = { year: p.year, canvas: cv };
+      satDone.push(fr);
+      if (onProgress) onProgress(satDone.length, picks.length);
+      return fr;
     }));
-    // 같은 사진이 연달아 나오는 해(보관본이 안 바뀐 해)는 그대로 두되, 실패한 해는 뺀다
-    return frames.filter(Boolean);
+    const all = frames.filter(Boolean).concat(Object.values(manual)).sort((a, b) => a.year - b.year);
+    console.info("[인트로] 위성사진 준비 완료:", all.map((f) => f.year + (f.manual ? "(직접)" : "")).join(", "));
+    return all;
   }
 
   function loadIntroImages() {
@@ -3895,8 +3946,20 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       if (document.readyState === "complete") res(); else window.addEventListener("load", res, { once: true });
       setTimeout(res, 2500); // 너무 오래 걸리면 그냥 시작
     });
-    // 위성사진은 받는 데 시간이 걸릴 수 있어 최대 7초까지만 기다린다
-    const satReady = Promise.race([loadSatelliteYears(), new Promise((r) => setTimeout(() => r([]), 7000))]);
+    // 위성사진은 받는 데 시간이 걸릴 수 있어 최대 12초까지 기다리고, 그때까지 받은 해만 보여 준다
+    const status = document.createElement("div");
+    status.className = "sat-status";
+    status.textContent = INTRO_SATELLITE ? "위성사진 불러오는 중…" : "";
+    el.appendChild(status);
+    const satReady = Promise.race([
+      loadSatelliteYears((n, total) => { status.textContent = `위성사진 불러오는 중… ${n} / ${total}`; }),
+      new Promise((r) => setTimeout(() => r(null), 12000)),
+    ]).then((res) => {
+      status.remove();
+      const list = (res || satDone).filter(Boolean).sort((a, b) => a.year - b.year);
+      if (!res) console.warn("[인트로] 12초 안에 다 못 받아서 받은 것만 사용:", list.length, "장");
+      return list.length >= 2 ? list : [];
+    });
     Promise.all([loadIntroImages(), satReady, pageReady]).then(([imgs, sats]) => new Promise((r) => setTimeout(() => r([imgs, sats]), 150))).then(([imgs, sats]) => {
       if (finished) return;
       const goPhotos = () => runPhotoSlides(imgs);
@@ -3924,7 +3987,9 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
         const yrs = s.year - CONSTRUCTION_YEAR;
         capbox.innerHTML = `<div class="hse-intro-cap sat"><b>${s.year}</b><span>${yrs <= 0 ? "착공" : `착공 ${yrs}년차`}</span></div>`;
         i++;
-        timers.push(setTimeout(step, i === sats.length ? 1500 : 900));
+        // 장 수가 많으면 한 장을 짧게 (전체가 8초 안팎이 되도록, 한 장 0.45~0.9초)
+        const per = Math.max(450, Math.min(900, Math.round(8000 / sats.length)));
+        timers.push(setTimeout(step, i === sats.length ? 1500 : per));
       };
       step();
     }
@@ -4222,20 +4287,32 @@ async function loadQuakes() {
   setTimeout(() => quakeMap.invalidateSize(), 100);
   if (Date.now() - quakeLoadedAt < 10 * 60 * 1000) return;
   const start = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
-  let data;
+  const box = "minlatitude=12&maxlatitude=42&minlongitude=30&maxlongitude=63&minmagnitude=2.5";
+  let feats = null, src = "";
   try {
-    data = await (await fetch(`https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=${start}&minlatitude=12&maxlatitude=42&minlongitude=30&maxlongitude=63&minmagnitude=2.5&orderby=time&limit=300`)).json();
+    const d = await (await fetch(`https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=${start}&${box}&orderby=time&limit=300`)).json();
+    feats = d.features || []; src = "미국지질조사국(USGS)";
   } catch (e) {
-    document.getElementById("quakeSummary").textContent = "지진 정보를 불러오지 못했습니다.";
+    console.warn("[지진] USGS 실패 → EMSC로 다시 시도", e);
+    try {
+      const d = await (await fetch(`https://www.seismicportal.eu/fdsnws/event/1/query?format=json&starttime=${start}&${box}&orderby=time&limit=300`)).json();
+      feats = d.features || []; src = "유럽지중해지진센터(EMSC)";
+    } catch (e2) { console.warn("[지진] EMSC도 실패", e2); }
+  }
+  if (!feats) {
+    document.getElementById("quakeSummary").textContent = "지진 정보를 불러오지 못했습니다. (USGS·EMSC 모두 접속 실패)";
     return;
   }
   quakeLoadedAt = Date.now();
   const now = Date.now();
-  const qs = (data.features || []).map((f) => ({
-    mag: f.properties.mag, place: f.properties.place || "", time: f.properties.time, url: f.properties.url,
-    lon: f.geometry.coordinates[0], lat: f.geometry.coordinates[1], depth: f.geometry.coordinates[2],
-    dist: kmBetween(BISMAYAH_LAT, BISMAYAH_LON, f.geometry.coordinates[1], f.geometry.coordinates[0]),
-  }));
+  const qs = feats.map((f) => {
+    const p = f.properties || {}, c = f.geometry.coordinates;
+    return {
+      mag: Number(p.mag), place: p.place || p.flynn_region || "", time: typeof p.time === "number" ? p.time : Date.parse(p.time),
+      lon: c[0], lat: c[1], depth: Math.abs(c[2] != null ? c[2] : p.depth || 0),
+      dist: kmBetween(BISMAYAH_LAT, BISMAYAH_LON, c[1], c[0]),
+    };
+  }).filter((q) => isFinite(q.mag) && isFinite(q.time));
   quakeLayer.clearLayers();
   const fmt = (t) => new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(t));
   qs.slice().reverse().forEach((q) => {
@@ -4255,7 +4332,7 @@ async function loadQuakes() {
     <tbody>${qs.slice(0, 15).map((q) => `<tr class="${q.mag >= 5 ? "big" : ""}">
       <td>${fmt(q.time)}</td><td class="mag">${q.mag.toFixed(1)}</td><td>${escapeHtml(q.place)}</td>
       <td>${Math.round(q.depth)}km</td><td>${Math.round(q.dist).toLocaleString()}km</td></tr>`).join("") || '<tr><td colspan="5">최근 지진 없음</td></tr>'}</tbody>`;
-  document.getElementById("quakeMeta").textContent = "미국지질조사국(USGS) 실시간 지진 정보 · 위치는 영문 원문 · 10분마다 갱신 · 점선 원 = 현장 반경 300km";
+  document.getElementById("quakeMeta").textContent = `${src} 실시간 지진 정보 · 위치는 영문 원문 · 10분마다 갱신 · 점선 원 = 현장 반경 300km`;
 }
 
 /* ==========================================================
