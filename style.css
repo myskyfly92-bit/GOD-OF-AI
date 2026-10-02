@@ -63,8 +63,9 @@ body::before {
     var(--tab-bg, none),
     url('assets/bg-dashboard.jpg');
   background-size: auto, auto, cover, cover, cover, cover;
-  /* --tab-bg-pos: 사진의 어느 부분을 기준으로 보여 줄지 (탭마다 바꿀 수 있음, 기본은 가운데) */
-  background-position: 0 0, 0 0, center center, var(--tab-bg-pos, center center), var(--tab-bg-pos, center center), center center;
+  /* 모든 사진은 위쪽 끝이 배너 바로 아래에 오도록 맞춘다 (사진이 길면 아래쪽이 잘림)
+     --tab-bg-pos: 탭마다 기준을 바꾸고 싶을 때만 지정 (예: center 30%) */
+  background-position: 0 0, 0 0, center center, var(--tab-bg-pos, center top), var(--tab-bg-pos, center top), center top;
   background-repeat: no-repeat;
   transition: top 0.2s ease;
 }
@@ -2256,6 +2257,5 @@ body.bg-reveal .bg-peek-btn { opacity: 1; border-color: var(--cyan); color: var(
   main.grid, .holiday-panel, .fx-widget, .footer, .sub-bar { transition: none; }
 }
 
-/* 탭별 사진 기준 위치 (사진 위쪽이 잘리면 'center top', 아래쪽이 잘리면 'center bottom')
-   숫자로도 가능: center 20% = 위에서 20% 지점을 기준으로 */
-body.bg-env-weather { --tab-bg-pos: center top; }   /* 경찰관 모자가 잘리지 않게 위쪽 기준 */
+/* 탭별 사진 기준 위치 (기본은 모든 탭 '위쪽 기준'. 특정 사진만 바꾸고 싶을 때 아래처럼 추가)
+   예) body.bg-fires { --tab-bg-pos: center 30%; }  → 위에서 30% 지점을 기준으로 */
