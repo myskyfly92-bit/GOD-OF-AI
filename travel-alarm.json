@@ -6,6 +6,2862 @@
   "3": "출국권고",
   "4": "여행금지"
  },
- "countries": {},
- "generatedAt": "2026-10-02T16:42:41.610226+00:00"
+ "countries": {
+  "GH": {
+   "iso2": "GH",
+   "name": "가나",
+   "nameEn": "Ghana",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "GA": {
+   "iso2": "GA",
+   "name": "가봉",
+   "nameEn": "Gabon",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "GY": {
+   "iso2": "GY",
+   "name": "가이아나",
+   "nameEn": "Guyana",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "GM": {
+   "iso2": "GM",
+   "name": "감비아",
+   "nameEn": "Gambia",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "GT": {
+   "iso2": "GT",
+   "name": "과테말라",
+   "nameEn": "Guatemala",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "GR": {
+   "iso2": "GR",
+   "name": "그리스",
+   "nameEn": "Greece",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "GN": {
+   "iso2": "GN",
+   "name": "기니",
+   "nameEn": "Guinea",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "GW": {
+   "iso2": "GW",
+   "name": "기니비사우",
+   "nameEn": "Guinea-Bissau",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "NA": {
+   "iso2": "NA",
+   "name": "나미비아",
+   "nameEn": "Namibia",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "NR": {
+   "iso2": "NR",
+   "name": "나우루",
+   "nameEn": "Nauru",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "NG": {
+   "iso2": "NG",
+   "name": "나이지리아",
+   "nameEn": "Nigeria",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "2단계를 제외한 전지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "주(에보니,에키티,에누구,라고스,오군,온도,오순,오요,베누에)"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "SS": {
+   "iso2": "SS",
+   "name": "남수단",
+   "nameEn": "South Sudan",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "ZA": {
+   "iso2": "ZA",
+   "name": "남아프리카공화국",
+   "nameEn": "South Africa",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "NE": {
+   "iso2": "NE",
+   "name": "니제르",
+   "nameEn": "Niger",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "수도 니아메 제외 전 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "니아메"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "NI": {
+   "iso2": "NI",
+   "name": "니카라과",
+   "nameEn": "Nicaragua",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "DK": {
+   "iso2": "DK",
+   "name": "덴마크",
+   "nameEn": "Denmark",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "DO": {
+   "iso2": "DO",
+   "name": "도미니카공화국",
+   "nameEn": "Dominican Republic",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "TL": {
+   "iso2": "TL",
+   "name": "동티모르",
+   "nameEn": "Timor-Leste",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "LA": {
+   "iso2": "LA",
+   "name": "라오스",
+   "nameEn": "Laos",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "골든트라이앵글 경제특구"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "4단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "LR": {
+   "iso2": "LR",
+   "name": "라이베리아",
+   "nameEn": "Liberia",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "RU": {
+   "iso2": "RU",
+   "name": "러시아",
+   "nameEn": "Russia",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "우크라이나 접경지역(쿠르스크주 전체 및 로스토프&middot;벨고로드&middot;보로네시&middot;브랸스크 지역 내 우크라이나 국경에서 30km 구간)"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "북카프카즈 지역(체첸/다게스탄/세베로오세티아/카바르디노발카르/잉귀시/까라차예보체르케스카야/아디게이) 및 우크라이나 접경지역(4단계 제외 로스토프, 벨고로드, 보로네시, 브랸스크 주 및 오룔 주 일부(샤블리키노, 드미트롭스크, 사스코보, 크로믜, 트로스나 5개 지역))"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "LB": {
+   "iso2": "LB",
+   "name": "레바논",
+   "nameEn": "Lebanon",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "남부 이스라엘 접경 지역(블루라인으로부터 5km 포함), 남부주, 나바티예주, 다히예의 일부 지역(베이루트 공항 및 M51 도로 제외),바알벡헤르멜주,베카주(서베카구,라샤야구)"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "4단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "LS": {
+   "iso2": "LS",
+   "name": "레소토",
+   "nameEn": "Lesotho",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "RO": {
+   "iso2": "RO",
+   "name": "루마니아",
+   "nameEn": "Romania",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "우크라이나 접경 20KM지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "RW": {
+   "iso2": "RW",
+   "name": "르완다",
+   "nameEn": "Rwanda",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "루바부 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "LY": {
+   "iso2": "LY",
+   "name": "리비아",
+   "nameEn": "Libya",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": false
+  },
+  "LT": {
+   "iso2": "LT",
+   "name": "리투아니아",
+   "nameEn": "Lithuania",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "LI": {
+   "iso2": "LI",
+   "name": "리히텐슈타인",
+   "nameEn": "Liechtenstein",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "MG": {
+   "iso2": "MG",
+   "name": "마다가스카르",
+   "nameEn": "Madagascar",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "MH": {
+   "iso2": "MH",
+   "name": "마셜제도",
+   "nameEn": "Marshall Islands",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "FM": {
+   "iso2": "FM",
+   "name": "마이크로네시아연방",
+   "nameEn": "Federated States of Micronesia",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "MW": {
+   "iso2": "MW",
+   "name": "말라위",
+   "nameEn": "Malawi",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "MY": {
+   "iso2": "MY",
+   "name": "말레이시아",
+   "nameEn": "Malaysia",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "사바주 동부도서 지역 및 동부해안"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "사바주 동부 해안"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "ML": {
+   "iso2": "ML",
+   "name": "말리",
+   "nameEn": "Mali",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": false
+  },
+  "MX": {
+   "iso2": "MX",
+   "name": "멕시코",
+   "nameEn": "Mexico",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "치아파스주, 시날로아주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "MA": {
+   "iso2": "MA",
+   "name": "모로코",
+   "nameEn": "Morocco",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "서사하라 내 모래방어벽 동쪽"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "서사하라 내 모래방어벽 서쪽"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "서사하라 이외 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "MR": {
+   "iso2": "MR",
+   "name": "모리타니아",
+   "nameEn": "Mauritania",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "2단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "누악쇼트, 누아디브, 인시리, 트라르자 및 아다르(우아단까지 일부지역)"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "MZ": {
+   "iso2": "MZ",
+   "name": "모잠비크",
+   "nameEn": "Mozambique",
+   "level": 3,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 및 특별여행주의보 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "카보델가도 주"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "MV": {
+   "iso2": "MV",
+   "name": "몰디브",
+   "nameEn": "Maldives",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "MT": {
+   "iso2": "MT",
+   "name": "몰타",
+   "nameEn": "Malta",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "MN": {
+   "iso2": "MN",
+   "name": "몽골",
+   "nameEn": "Mongolia",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "MM": {
+   "iso2": "MM",
+   "name": "미얀마",
+   "nameEn": "Myanmar",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "샨주 북부 및 동부, 까야주, 라카인주, 미야와디 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "4단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "US": {
+   "iso2": "US",
+   "name": "미합중국",
+   "nameEn": "United States of America",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "하와이 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "VU": {
+   "iso2": "VU",
+   "name": "바누아투",
+   "nameEn": "Vanuatu",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "BH": {
+   "iso2": "BH",
+   "name": "바레인",
+   "nameEn": "Bahrain",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "BD": {
+   "iso2": "BD",
+   "name": "방글라데시",
+   "nameEn": "Bangladesh",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "동남부 치타공 힐 트랙스 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "BJ": {
+   "iso2": "BJ",
+   "name": "베냉",
+   "nameEn": "Benin",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "북부 부르키나파소 접경지역(Pendjari 국립공원 및 W 국립공원)"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "VE": {
+   "iso2": "VE",
+   "name": "베네수엘라볼리바르",
+   "nameEn": "Venezuela",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "VN": {
+   "iso2": "VN",
+   "name": "베트남",
+   "nameEn": "Vietnam",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "BE": {
+   "iso2": "BE",
+   "name": "벨기에",
+   "nameEn": "Belgium",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "BY": {
+   "iso2": "BY",
+   "name": "벨라루스",
+   "nameEn": "Belarus",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "벨라루스 브레스트 고멜 지역 내 우크라이나 국경에서 30km"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "4단계, 특별여행주의보 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "BZ": {
+   "iso2": "BZ",
+   "name": "벨리즈",
+   "nameEn": "Belize",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "BA": {
+   "iso2": "BA",
+   "name": "보스니아헤르체고비나",
+   "nameEn": "Bosnia-Herzegovina",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "BW": {
+   "iso2": "BW",
+   "name": "보츠와나",
+   "nameEn": "Botswana",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "BO": {
+   "iso2": "BO",
+   "name": "볼리비아",
+   "nameEn": "Bolivia",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "라파스 주"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "BI": {
+   "iso2": "BI",
+   "name": "부룬디",
+   "nameEn": "Burundi",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "2단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "부줌부라시"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "BF": {
+   "iso2": "BF",
+   "name": "부르키나파소",
+   "nameEn": "Burkina Faso",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "BT": {
+   "iso2": "BT",
+   "name": "부탄",
+   "nameEn": "Bhutan",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "BR": {
+   "iso2": "BR",
+   "name": "브라질",
+   "nameEn": "Brazil",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "SA": {
+   "iso2": "SA",
+   "name": "사우디아라비아",
+   "nameEn": "Saudi Arabia",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "사우디-예멘 국경 인근 180km 지역(지잔 주, 아브하(Abha), 카미스 무샤이트(Khamis Mushait)시 포함),샤이바 유전,프린스술탄 공군기지,라스 타누라,얀부, 주베일"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "CY": {
+   "iso2": "CY",
+   "name": "사이프러스",
+   "nameEn": "Cyprus",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "파마구스타 내 바로샤 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "1, 3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "남부 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "SM": {
+   "iso2": "SM",
+   "name": "산마리노",
+   "nameEn": "San Marino",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "ST": {
+   "iso2": "ST",
+   "name": "상투메프린시페",
+   "nameEn": "Sâo Tomé & Principe",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "SN": {
+   "iso2": "SN",
+   "name": "세네갈",
+   "nameEn": "Senegal",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "특별여행주의보를 제외한 전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "SO": {
+   "iso2": "SO",
+   "name": "소말리아",
+   "nameEn": "Somalia",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": false
+  },
+  "SB": {
+   "iso2": "SB",
+   "name": "솔로몬제도",
+   "nameEn": "Solomon Islands",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "SD": {
+   "iso2": "SD",
+   "name": "수단",
+   "nameEn": "Sudan",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": false
+  },
+  "SR": {
+   "iso2": "SR",
+   "name": "수리남",
+   "nameEn": "Suriname",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "LK": {
+   "iso2": "LK",
+   "name": "스리랑카",
+   "nameEn": "Sri Lanka",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "CH": {
+   "iso2": "CH",
+   "name": "스위스",
+   "nameEn": "Swiss",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "ES": {
+   "iso2": "ES",
+   "name": "스페인",
+   "nameEn": "Spain",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "SI": {
+   "iso2": "SI",
+   "name": "슬로베니아",
+   "nameEn": "Slovenia",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "SY": {
+   "iso2": "SY",
+   "name": "시리아",
+   "nameEn": "Syria",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "3단계를 제외한 전 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "골란고원 일부(레바논 접경 및 UNDOF 분리선 4km 이내 지역 제외)"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "SL": {
+   "iso2": "SL",
+   "name": "시에라리온",
+   "nameEn": "Sierra Leone",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "AE": {
+   "iso2": "AE",
+   "name": "아랍에미리트",
+   "nameEn": "United Arab Emirates : UAE",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "AM": {
+   "iso2": "AM",
+   "name": "아르메니아",
+   "nameEn": "Armenia",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "아제르바이잔 접경 5km 구간"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "아라라트주, 게가쿠니크주, 바요츠조르주, 슈니크주, 타부시주"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "2, 4단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "AR": {
+   "iso2": "AR",
+   "name": "아르헨티나",
+   "nameEn": "Argentina",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "IS": {
+   "iso2": "IS",
+   "name": "아이슬란드",
+   "nameEn": "Iceland",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "HT": {
+   "iso2": "HT",
+   "name": "아이티",
+   "nameEn": "Haiti",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": false
+  },
+  "AZ": {
+   "iso2": "AZ",
+   "name": "아제르바이잔",
+   "nameEn": "Azerbaijan",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "아르메니아 접경 5km 구간"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "아르메니아와 인접한 아제르바이잔 서남부 지역(아그담(Aghdam), 피줄리(Fizuli), 자브라일(Jabrayil), 장길란(Zanglian), 구바들리(Guabadly), 라친(Lachin), 켈바자르(Kelbajar)), 나흐치반 아르메니아 접경지역"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "3, 4단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "AF": {
+   "iso2": "AF",
+   "name": "아프가니스탄",
+   "nameEn": "Afghanistan",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": false
+  },
+  "AL": {
+   "iso2": "AL",
+   "name": "알바니아",
+   "nameEn": "Albania",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "DZ": {
+   "iso2": "DZ",
+   "name": "알제리",
+   "nameEn": "Algeria",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "국경지역(튀니지(테베사, 엘웨드 동부, 오아글라 동부), 리비아(일리지 동부), 니제르ㆍ말리ㆍ모리타니(타만라셋 남부, 아드라르 남서부, 틴두프 남서부))"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "카빌리 지역 6개주 산악지역(부메르데스, 부아라, 티지 우주, 베자이아, 보르즈부아레리즈, 지젤) 포함 3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "알제주"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "AO": {
+   "iso2": "AO",
+   "name": "앙골라",
+   "nameEn": "Angola",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "ER": {
+   "iso2": "ER",
+   "name": "에리트레아",
+   "nameEn": "Eritrea",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "에티오피아 수단 지부티 국경 25Km 이내"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "SZ": {
+   "iso2": "SZ",
+   "name": "에스와티니",
+   "nameEn": "Eswatini",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "EC": {
+   "iso2": "EC",
+   "name": "에콰도르",
+   "nameEn": "Ecuador",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "과야스 주, 아수아이 주, 로스리오스 주, 산타엘레나 주, 엘오로 주, 마니비 주, 에스메랄다 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "출국권고를 제외한 전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "ET": {
+   "iso2": "ET",
+   "name": "에티오피아",
+   "nameEn": "Ethiopia",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "암하라 주, 티그라이 주, 소말리 주, 베니샹굴-구무즈 주, 감벨라 주, 오로미아 주 일부(East Welega, West Welega, Kelam Welega, Guji, Borena 지역), 수단 및 에리트리아 국경 10km 접경지역, 아파르주에서 티그라이주 10km 접경지역, △케냐 및 남수단 국경 10km 접경 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "아디스아바바 시, 디레다와 시, 하라르 주, SNNPR 주, SWEPR 주, 시다마 주, 오로미아 주 일부(3단계 지역 제외), 아파르 주(3단계 지역 제외)"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "GB": {
+   "iso2": "GB",
+   "name": "영국",
+   "nameEn": "United Kingdom",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "YE": {
+   "iso2": "YE",
+   "name": "예멘",
+   "nameEn": "Yemen",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": false
+  },
+  "OM": {
+   "iso2": "OM",
+   "name": "오만",
+   "nameEn": "Oman",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "AT": {
+   "iso2": "AT",
+   "name": "오스트리아",
+   "nameEn": "Austria",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "HN": {
+   "iso2": "HN",
+   "name": "온두라스",
+   "nameEn": "Honduras",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "JO": {
+   "iso2": "JO",
+   "name": "요르단",
+   "nameEn": "Jordan",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "자르카 시 동편 경계선의 동부 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "UA": {
+   "iso2": "UA",
+   "name": "우크라이나",
+   "nameEn": "Ukraine",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": false
+  },
+  "IQ": {
+   "iso2": "IQ",
+   "name": "이라크",
+   "nameEn": "Iraq",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": false
+  },
+  "IR": {
+   "iso2": "IR",
+   "name": "이란",
+   "nameEn": "Iran",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": false
+  },
+  "IL": {
+   "iso2": "IL",
+   "name": "이스라엘",
+   "nameEn": "Israel",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "이스라엘 북부 레바논 접경지역(국경으로부터 4km), 가자지구"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "4단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "EG": {
+   "iso2": "EG",
+   "name": "이집트",
+   "nameEn": "Egypt",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "중•북부 시나이 반도(1,2단계 지역 제외), 리비아 국경으로부터 30km까지"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "서부사막, 시나이반도 남부 일부지역(성캐더린•타바)"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "다합•샴엘셰이크지역, 카이로 등 나일강 유역 도시지역, 마르트루~지중해 유역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "IT": {
+   "iso2": "IT",
+   "name": "이탈리아",
+   "nameEn": "Italia",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "IN": {
+   "iso2": "IN",
+   "name": "인도",
+   "nameEn": "India",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "카슈미르, 카르길 시"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "ID": {
+   "iso2": "ID",
+   "name": "인도네시아",
+   "nameEn": "Indonesia",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "서파루아, 파푸아, 말루쿠, 아체"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "2단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": true
+  },
+  "JP": {
+   "iso2": "JP",
+   "name": "일본",
+   "nameEn": "Japan",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "후쿠시마 원전 반경 30km 이내 및 일본 정부 지정 피난지시구역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "JM": {
+   "iso2": "JM",
+   "name": "자메이카",
+   "nameEn": "Jamaica",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "킹스턴, 세인트앤드류, 세인트캐서린"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "ZM": {
+   "iso2": "ZM",
+   "name": "잠비아",
+   "nameEn": "Zambia",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "GQ": {
+   "iso2": "GQ",
+   "name": "적도기니",
+   "nameEn": "Equatorial Guinea",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "GE": {
+   "iso2": "GE",
+   "name": "조지아",
+   "nameEn": "Georgia",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "남 오세티아, 압하지아"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "CN": {
+   "iso2": "CN",
+   "name": "중국",
+   "nameEn": "China",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "특별여행주의보 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "CF": {
+   "iso2": "CF",
+   "name": "중앙아프리카",
+   "nameEn": "Central African Republic",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "DJ": {
+   "iso2": "DJ",
+   "name": "지부티",
+   "nameEn": "Djibouti",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "에리트레아&bull;에티오피아&bull;소말리아 국경 10km 이내 접경지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "ZW": {
+   "iso2": "ZW",
+   "name": "짐바브웨",
+   "nameEn": "Zimbabwe",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "TD": {
+   "iso2": "TD",
+   "name": "차드",
+   "nameEn": "Chad",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "CL": {
+   "iso2": "CL",
+   "name": "칠레",
+   "nameEn": "Chile",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "발파라이소주(이스터섬 제외), 산티아고 수도주, 비오비오주"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "2단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": true
+  },
+  "CM": {
+   "iso2": "CM",
+   "name": "카메룬",
+   "nameEn": "Cameroon",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "노르드 주, 아다모와 주, 북서부 주, 남서부 주, 최북부 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "QA": {
+   "iso2": "QA",
+   "name": "카타르",
+   "nameEn": "Qatar",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "KH": {
+   "iso2": "KH",
+   "name": "캄보디아",
+   "nameEn": "Cambodia",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "캄보디아-태국 국경 50km 이내,시하누크빌 시 ,캄폿 주 보코산 지역, 바벳 시, 포이펫 시,"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "시하누크빌 주"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "2․3 단계 발령 지역 외 전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "KE": {
+   "iso2": "KE",
+   "name": "케냐",
+   "nameEn": "Kenya",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "만데라주, 와지르주, 가리사주, 라무주 전체, 타나강주 및 킬리피주 일부지역, 나이로비 북부 이스트레이 지역, 에티오피아 및 남수단 접경 25km 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "KM": {
+   "iso2": "KM",
+   "name": "코모로",
+   "nameEn": "Comoros",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "XK": {
+   "iso2": "XK",
+   "name": "코소보",
+   "nameEn": "Kosovo",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "미트로비차 북부(Zubin Potok, Zve&ccedil;an, Leposaviq)"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "CR": {
+   "iso2": "CR",
+   "name": "코스타리카",
+   "nameEn": "Costa Rica",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "CI": {
+   "iso2": "CI",
+   "name": "코트디부아르",
+   "nameEn": "Côte D'Ivoire",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "라이베리아ㆍ기니와 국경을 접한 서부 지역(뎅겔레 주, 몽타뉴 주, 바핑 주), 초로고(Tchologo), 붕카니(Bounkani) 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "CO": {
+   "iso2": "CO",
+   "name": "콜롬비아",
+   "nameEn": "Colombia",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "베네수엘라 국경지역 20km/ 나리뇨 주(뚜마코)/ 바예델카우카 주(깔리 시 제외)/ 아라우카 주, 카우카 주/(*는 일부: 안티오키아 주*, 초코 주*/ 카케타 주*)  / 노르떼 데 산딴데르(Norte de Santander) 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "CG": {
+   "iso2": "CG",
+   "name": "콩고",
+   "nameEn": "Congo",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "CD": {
+   "iso2": "CD",
+   "name": "콩고민주공화국",
+   "nameEn": "Democratic Republic of Congo",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "북키부주, 남키부주,이투리주"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "중앙아프리카공화국과의 국경 50km 이내 지역/ 바우엘레주, 오트우엘레주, 마니에마주, 카사이주, 카사이상트랄주, 카사이오리앙탈주,탕가니카주,오트로마미주"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "KW": {
+   "iso2": "KW",
+   "name": "쿠웨이트",
+   "nameEn": "Kuwait",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "전체",
+     "remark": "전지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": false
+  },
+  "KI": {
+   "iso2": "KI",
+   "name": "키리바시",
+   "nameEn": "Kiribati",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "TJ": {
+   "iso2": "TJ",
+   "name": "타지키스탄",
+   "nameEn": "Tajikistan",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "아프가니스탄 접경지역"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "TZ": {
+   "iso2": "TZ",
+   "name": "탄자니아",
+   "nameEn": "Tanzania",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "음트와라(Mtwara) 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "TH": {
+   "iso2": "TH",
+   "name": "태국",
+   "nameEn": "Thailand",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "송클라 주 남부 말레이시아 접경지역, 파타니 주, 나라티왓 주, 얄라 주, 태국-캄보디아 국경 50km 이내"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "딱 주"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "2.3단계 및 특별여행주의보 발령 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "TG": {
+   "iso2": "TG",
+   "name": "토고",
+   "nameEn": "Togo",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "TM": {
+   "iso2": "TM",
+   "name": "투르크메니스탄",
+   "nameEn": "Turkmenistan",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "TN": {
+   "iso2": "TN",
+   "name": "튀니지",
+   "nameEn": "Tunisia",
+   "level": 3,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "튀니스와 수도권 지역/비제르트 주/나불 주/수스 주/모나스티르 주 마흐디아 주/스팍스 주/제르바 주"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "알제리 접경지역(까세린주 샴비산 일대 포함), 리비아 접경지역 및 크사르 길랜 이남 사막지역 전역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "1, 3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "TR": {
+   "iso2": "TR",
+   "name": "튀르키예공화국",
+   "nameEn": "Republic of Turkiye",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "빙괼, 바트만, 시이르트, 시르나크, 하카리, 시리아의 국경 10km 이내 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "가지안테프,샨르우르파,툰젤리,엘라지즈,디야르바키르,마르딘,반,비틀리스"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "2,3단계 및 특별여행주의보 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "TT": {
+   "iso2": "TT",
+   "name": "트리니다드토바고",
+   "nameEn": "Trinidad & Tobago",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "PA": {
+   "iso2": "PA",
+   "name": "파나마",
+   "nameEn": "Panama",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "콜롬비아 국경지역 40Km 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "PY": {
+   "iso2": "PY",
+   "name": "파라과이",
+   "nameEn": "Paraguay",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": false
+  },
+  "PK": {
+   "iso2": "PK",
+   "name": "파키스탄",
+   "nameEn": "Pakistan",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "발루치스탄"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "2단계(여행자제), 4단계(여행금지) 지역을 제외한 전 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "이슬라마바드, 페이살라바드, 라왈핀디, 라호르, 훈자, 길깃, 스카르두"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "PG": {
+   "iso2": "PG",
+   "name": "파푸아뉴기니",
+   "nameEn": "Papua New Guinea : PNG",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "서던 하일랜즈 주, 헬라 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "PS": {
+   "iso2": "PS",
+   "name": "팔레스타인",
+   "nameEn": "Palestine",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "이스라엘 북부 레바논 접경지역(국경으로부터 4km), 가자지구"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "4단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "PE": {
+   "iso2": "PE",
+   "name": "페루",
+   "nameEn": "Peru",
+   "level": 3,
+   "regions": [
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "아야쿠초 주 : 라 마르, 우안타 지역/ 우앙카벨리카 주 : 츄르캄파, 타야카하 지역/ 쿠스코 주 : 라 콘벤시온 지역/ 후닌 주 : 사티포, 우안카요, 콘셉시온 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "출국권고",
+   "partial": true
+  },
+  "PL": {
+   "iso2": "PL",
+   "name": "폴란드",
+   "nameEn": "Poland",
+   "level": 2,
+   "regions": [
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "우크라이나 접경 30KM지역"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "2단계 지정 지역을 제외한 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행자제",
+   "partial": true
+  },
+  "FR": {
+   "iso2": "FR",
+   "name": "프랑스",
+   "nameEn": "France",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "FJ": {
+   "iso2": "FJ",
+   "name": "피지",
+   "nameEn": "Fiji",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  },
+  "PH": {
+   "iso2": "PH",
+   "name": "필리핀",
+   "nameEn": "Philippines",
+   "level": 4,
+   "regions": [
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "민다나오의 잠보앙가, 술루‧바실란 타위타위 군도"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "팔라완섬 2단계 지역(아볼란, 나라, 케손) 이남, 민다나오섬 일부(2단계 및 4단계 지역 제외)"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "1, 3, 4단계 지역을 제외한 지역 , 시아르가오주 및 다바오 카가얀데오로시, 라귄딩안 공항 및 N9 도로 일부"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "수빅시, 보라카이섬, 보홀섬, 세부막탄섬(라푸라푸시)"
+    }
+   ],
+   "written": "",
+   "levelName": "여행금지",
+   "partial": true
+  },
+  "HK": {
+   "iso2": "HK",
+   "name": "홍콩",
+   "nameEn": "Hongkong",
+   "level": 1,
+   "regions": [
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "전체",
+     "remark": "전 지역"
+    }
+   ],
+   "written": "",
+   "levelName": "여행유의",
+   "partial": false
+  }
+ },
+ "generatedAt": "2026-10-02T17:20:37.682869+00:00"
 }
