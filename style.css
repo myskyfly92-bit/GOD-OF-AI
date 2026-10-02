@@ -63,7 +63,8 @@ body::before {
     var(--tab-bg, none),
     url('assets/bg-dashboard.jpg');
   background-size: auto, auto, cover, cover, cover, cover;
-  background-position: 0 0, 0 0, center center, center center, center center, center center;
+  /* --tab-bg-pos: 사진의 어느 부분을 기준으로 보여 줄지 (탭마다 바꿀 수 있음, 기본은 가운데) */
+  background-position: 0 0, 0 0, center center, var(--tab-bg-pos, center center), var(--tab-bg-pos, center center), center center;
   background-repeat: no-repeat;
   transition: top 0.2s ease;
 }
@@ -2254,3 +2255,7 @@ body.bg-reveal .bg-peek-btn { opacity: 1; border-color: var(--cyan); color: var(
   .view.view-enter .grid > .panel { animation: none; }
   main.grid, .holiday-panel, .fx-widget, .footer, .sub-bar { transition: none; }
 }
+
+/* 탭별 사진 기준 위치 (사진 위쪽이 잘리면 'center top', 아래쪽이 잘리면 'center bottom')
+   숫자로도 가능: center 20% = 위에서 20% 지점을 기준으로 */
+body.bg-env-weather { --tab-bg-pos: center top; }   /* 경찰관 모자가 잘리지 않게 위쪽 기준 */
