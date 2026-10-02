@@ -3766,6 +3766,13 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const r = wx.raw || {};
     if (r.gust > 10) reasons.push(`순간풍속 ${r.gust.toFixed(1)}m/s (크레인 작업 제한)`);
     if (r.dust > 150) reasons.push("모래폭풍 수준 먼지");
+    // 최근 48시간 현장 반경 300km 안 규모 5.0 이상 지진
+    try {
+      const since = new Date(Date.now() - 2 * 86400000).toISOString();
+      const lat = typeof BISMAYAH_LAT !== "undefined" ? BISMAYAH_LAT : 33.193, lon = typeof BISMAYAH_LON !== "undefined" ? BISMAYAH_LON : 44.618;
+      const eq = await fetchJson(`https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=${since}&latitude=${lat}&longitude=${lon}&maxradiuskm=300&minmagnitude=5`);
+      if (eq && eq.features && eq.features.length) reasons.push(`현장 300km 내 규모 ${Math.max(...eq.features.map((f) => f.properties.mag)).toFixed(1)} 지진`);
+    } catch (e) { /* 무시 */ }
     if (forced.has("alert") && !reasons.length) reasons.push("경보 미리 보기");
     const on = reasons.length > 0;
     glow.hidden = !on; glowChip.hidden = !on;
@@ -3785,6 +3792,57 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     { big: "ZERO ACCIDENT", small: "무재해" },
   ];
   const SLIDE_MS = 1300;
+
+  /* 위성사진 타임랩스: 착공 후 매년 한 장씩 비스마야를 찍은 위성사진(Esri Wayback 보관본)을 인트로 맨 앞에 보여 준다.
+     2014년부터 보관본이 있어 그 해부터 올해까지 나온다. 끄려면 false 로. */
+  const INTRO_SATELLITE = true;
+  const SAT_CENTER = [33.192, 44.622], SAT_ZOOM = 15, SAT_COLS = 6, SAT_ROWS = 4;
+  const CONSTRUCTION_YEAR = 2012;
+
+  function satTileXY(lat, lon, z) {
+    const n = 2 ** z, rad = (lat * Math.PI) / 180;
+    return [Math.floor(((lon + 180) / 360) * n), Math.floor(((1 - Math.log(Math.tan(rad) + 1 / Math.cos(rad)) / Math.PI) / 2) * n)];
+  }
+
+  async function loadSatelliteYears() {
+    if (!INTRO_SATELLITE) return [];
+    let cfg;
+    try {
+      cfg = await (await fetch("https://s3-us-west-2.amazonaws.com/config.maptiles.arcgis.com/waybackconfig.json")).json();
+    } catch (e) { console.warn("위성 보관본 목록을 못 받음", e); return []; }
+    // 해마다 7월 1일에 가장 가까운 보관본 하나씩
+    const rel = Object.entries(cfg).map(([num, v]) => {
+      const m = String(v.itemTitle || "").match(/(\d{4})-(\d{2})-(\d{2})/);
+      return m ? { num, date: new Date(`${m[1]}-${m[2]}-${m[3]}`), year: +m[1], url: v.itemURL } : null;
+    }).filter(Boolean);
+    const thisYear = new Date().getFullYear();
+    const picks = [];
+    for (let y = CONSTRUCTION_YEAR; y <= thisYear; y++) {
+      const c = rel.filter((r) => r.year === y);
+      if (!c.length) continue;
+      const target = new Date(`${y}-07-01`).getTime();
+      picks.push(c.sort((a, b) => Math.abs(a.date - target) - Math.abs(b.date - target))[0]);
+    }
+    const [cx, cy] = satTileXY(SAT_CENTER[0], SAT_CENTER[1], SAT_ZOOM);
+    const x0 = cx - Math.floor(SAT_COLS / 2), y0 = cy - Math.floor(SAT_ROWS / 2);
+    const loadImg = (src) => new Promise((res) => { const im = new Image(); im.onload = () => res(im); im.onerror = () => res(null); im.src = src; });
+    const frames = await Promise.all(picks.map(async (p) => {
+      const tiles = [];
+      for (let r = 0; r < SAT_ROWS; r++) for (let c = 0; c < SAT_COLS; c++) {
+        const url = p.url.replace("{level}", SAT_ZOOM).replace("{row}", y0 + r).replace("{col}", x0 + c);
+        tiles.push(loadImg(url).then((im) => ({ im, r, c })));
+      }
+      const got = await Promise.all(tiles);
+      if (got.some((t) => !t.im)) return null;
+      const cv = document.createElement("canvas");
+      cv.width = SAT_COLS * 256; cv.height = SAT_ROWS * 256;
+      const g = cv.getContext("2d");
+      got.forEach((t) => g.drawImage(t.im, t.c * 256, t.r * 256));
+      return { year: p.year, canvas: cv };
+    }));
+    // 같은 사진이 연달아 나오는 해(보관본이 안 바뀐 해)는 그대로 두되, 실패한 해는 뺀다
+    return frames.filter(Boolean);
+  }
 
   function loadIntroImages() {
     // 사진을 미리 받아서 '디코딩'까지 끝내 둔다 (슬라이드 도중 버벅이지 않게)
@@ -3837,9 +3895,47 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       if (document.readyState === "complete") res(); else window.addEventListener("load", res, { once: true });
       setTimeout(res, 2500); // 너무 오래 걸리면 그냥 시작
     });
-    Promise.all([loadIntroImages(), pageReady]).then(([imgs]) => new Promise((r) => setTimeout(() => r(imgs), 150))).then((imgs) => {
+    // 위성사진은 받는 데 시간이 걸릴 수 있어 최대 7초까지만 기다린다
+    const satReady = Promise.race([loadSatelliteYears(), new Promise((r) => setTimeout(() => r([]), 7000))]);
+    Promise.all([loadIntroImages(), satReady, pageReady]).then(([imgs, sats]) => new Promise((r) => setTimeout(() => r([imgs, sats]), 150))).then(([imgs, sats]) => {
       if (finished) return;
-      if (!imgs.length) return showLogo();
+      const goPhotos = () => runPhotoSlides(imgs);
+      if (sats && sats.length) runSatellite(sats, goPhotos); else goPhotos();
+    });
+
+    // 위성사진 타임랩스: 해마다 0.9초씩, 연도를 크게
+    function runSatellite(sats, next) {
+      const box = el.querySelector(".hse-intro-slides");
+      const capbox = el.querySelector(".hse-intro-capbox");
+      const credit = document.createElement("div");
+      credit.className = "sat-credit";
+      credit.textContent = "위성사진: Esri World Imagery Wayback (Maxar 등) · 비스마야 신도시";
+      el.appendChild(credit);
+      let i = 0;
+      const step = () => {
+        if (finished) return;
+        if (i >= sats.length) { credit.remove(); next(); return; }
+        const s = sats[i];
+        const wrap = document.createElement("div");
+        wrap.className = "sat-frame";
+        wrap.appendChild(s.canvas);
+        box.appendChild(wrap);
+        while (box.children.length > 2) box.removeChild(box.firstChild);
+        const yrs = s.year - CONSTRUCTION_YEAR;
+        capbox.innerHTML = `<div class="hse-intro-cap sat"><b>${s.year}</b><span>${yrs <= 0 ? "착공" : `착공 ${yrs}년차`}</span></div>`;
+        i++;
+        timers.push(setTimeout(step, i === sats.length ? 1500 : 900));
+      };
+      step();
+    }
+
+    function runPhotoSlides(imgs) {
+      if (finished) return;
+      if (!imgs.length) {
+        el.querySelector(".hse-intro-slides").classList.add("fade");
+        el.querySelector(".hse-intro-capbox").innerHTML = "";
+        return showLogo();
+      }
       const box = el.querySelector(".hse-intro-slides");
       const flash = el.querySelector(".hse-intro-flash");
       const dirs = ["dir-l", "dir-r", "dir-u", "dir-d"]; // 슬라이드마다 다른 방향으로 확대·이동
@@ -3866,7 +3962,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
         timers.push(setTimeout(next, 800)); // 만일을 위해
       };
       showSlide(0);
-    });
+    }
   }
 
   /* ---------- 2) 상황실 순환 모드 ---------- */
@@ -3983,5 +4079,238 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     if (btn.dataset.view === "view-sa") loadTopicNews("sa");
     if (btn.dataset.view === "view-health-kdca") loadTopicNews("infect");
+  });
+});
+
+
+/* ==========================================================
+   환경 > 모래폭풍 예보 (Open-Meteo 시간별 5일 예보)
+   ========================================================== */
+let dustLoadedAt = 0;
+const DUST_BANDS = [[80, "보통"], [150, "나쁨"], [300, "매우 나쁨"], [Infinity, "모래폭풍"]];
+function dustLevel(v) {
+  if (v == null) return { name: "–", cls: "" };
+  if (v < 80) return { name: "보통 이하", cls: "ok" };
+  if (v < 150) return { name: "나쁨", cls: "warn" };
+  if (v < 300) return { name: "매우 나쁨", cls: "bad" };
+  return { name: "모래폭풍", cls: "storm" };
+}
+
+async function loadDustForecast() {
+  if (Date.now() - dustLoadedAt < 30 * 60 * 1000) return;
+  const q = `latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&timezone=${encodeURIComponent(TIMEZONE)}`;
+  let aq, wx;
+  try {
+    [aq, wx] = await Promise.all([
+      fetch(`https://air-quality-api.open-meteo.com/v1/air-quality?${q}&hourly=dust,pm10&forecast_days=5`).then((r) => r.json()),
+      fetch(`https://api.open-meteo.com/v1/forecast?${q}&wind_speed_unit=ms&hourly=wind_gusts_10m,visibility&forecast_days=5`).then((r) => r.json()),
+    ]);
+  } catch (e) {
+    document.getElementById("dustAlert").textContent = "예보를 불러오지 못했습니다.";
+    return;
+  }
+  dustLoadedAt = Date.now();
+  const times = (aq.hourly && aq.hourly.time) || [];
+  const dust = (aq.hourly && aq.hourly.dust) || [];
+  const gustMap = {};
+  ((wx.hourly && wx.hourly.time) || []).forEach((t, i) => { gustMap[t] = wx.hourly.wind_gusts_10m[i]; });
+  const pts = times.map((t, i) => ({ t, d: dust[i], g: gustMap[t] })).filter((p) => p.d != null);
+  if (!pts.length) { document.getElementById("dustAlert").textContent = "예보 자료가 없습니다."; return; }
+
+  // 날짜별 요약
+  const byDay = {};
+  pts.forEach((p) => {
+    const day = p.t.slice(0, 10);
+    const o = byDay[day] || (byDay[day] = { max: 0, at: "", gust: 0 });
+    if (p.d > o.max) { o.max = p.d; o.at = p.t.slice(11, 13); }
+    if ((p.g || 0) > o.gust) o.gust = p.g;
+  });
+  const wd = ["일", "월", "화", "수", "목", "금", "토"];
+  document.getElementById("dustDays").innerHTML = Object.entries(byDay).map(([day, o]) => {
+    const lv = dustLevel(o.max);
+    const d = new Date(day + "T00:00:00");
+    return `<div class="dust-day ${lv.cls}">
+      <div class="dd-date">${d.getMonth() + 1}/${d.getDate()} (${wd[d.getDay()]})</div>
+      <div class="dd-val">${Math.round(o.max)}<small>㎍/㎥</small></div>
+      <div class="dd-lv">${lv.name}</div>
+      <div class="dd-sub">최고 ${o.at}시경 · 순간풍속 최대 ${o.gust.toFixed(1)}m/s</div>
+    </div>`;
+  }).join("");
+
+  // 다음 모래폭풍(매우 나쁨 이상) 구간 찾기
+  const nowKey = new Intl.DateTimeFormat("sv-SE", { timeZone: TIMEZONE, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date()).replace(" ", "T");
+  const future = pts.filter((p) => p.t >= nowKey.slice(0, 13));
+  let alertTxt = "", alertCls = "ok";
+  const startIdx = future.findIndex((p) => p.d >= 150);
+  if (startIdx >= 0) {
+    let endIdx = startIdx;
+    while (endIdx + 1 < future.length && future[endIdx + 1].d >= 150) endIdx++;
+    const s = future[startIdx], e = future[endIdx];
+    const peak = Math.max(...future.slice(startIdx, endIdx + 1).map((p) => p.d));
+    const f = (t) => { const d = new Date(t); return `${d.getMonth() + 1}/${d.getDate()}(${wd[d.getDay()]}) ${t.slice(11, 13)}시`; };
+    alertCls = peak >= 300 ? "storm" : "bad";
+    alertTxt = `${peak >= 300 ? "🌪 모래폭풍" : "😷 먼지 매우 나쁨"} 예상: ${f(s.t)} ~ ${f(e.t)} · 최고 ${Math.round(peak)}㎍/㎥ · 옥외작업 계획 조정, 방진마스크 준비`;
+  } else {
+    alertTxt = "앞으로 5일 동안 '매우 나쁨'(150㎍/㎥) 이상의 모래먼지는 예보되지 않았습니다";
+  }
+  const al = document.getElementById("dustAlert");
+  al.className = `dust-alert ${alertCls}`;
+  al.textContent = alertTxt;
+
+  drawDustChart(pts, nowKey);
+  document.getElementById("dustMeta").textContent =
+    `Open-Meteo 대기질(CAMS)·날씨 예보 · 비스마야 현장 좌표 기준 시간별 예보 · 예보는 실제와 다를 수 있습니다 · 30분마다 갱신`;
+}
+
+function drawDustChart(pts, nowKey) {
+  const svg = document.getElementById("dustChart");
+  const W = 1000, H = 300, L = 46, R = 46, T = 14, B = 34;
+  const maxD = Math.max(320, ...pts.map((p) => p.d)) * 1.05;
+  const maxG = Math.max(15, ...pts.map((p) => p.g || 0)) * 1.1;
+  const x = (i) => L + (i / (pts.length - 1)) * (W - L - R);
+  const yD = (v) => T + (1 - v / maxD) * (H - T - B);
+  const yG = (v) => T + (1 - v / maxG) * (H - T - B);
+  let g = "";
+  // 기준선
+  [[80, "#8bd35f"], [150, "#f2a93b"], [300, "#e5484d"]].forEach(([v, c]) => {
+    g += `<line x1="${L}" x2="${W - R}" y1="${yD(v)}" y2="${yD(v)}" stroke="${c}" stroke-dasharray="6 6" stroke-width="1" opacity="0.7"/>
+      <text x="${L - 6}" y="${yD(v) + 4}" text-anchor="end" class="ax">${v}</text>`;
+  });
+  // 날짜 구분선
+  pts.forEach((p, i) => {
+    if (p.t.endsWith("T00:00") && i > 0) {
+      const d = new Date(p.t);
+      g += `<line x1="${x(i)}" x2="${x(i)}" y1="${T}" y2="${H - B}" stroke="rgba(255,255,255,0.08)"/>
+        <text x="${x(i) + 4}" y="${H - B + 18}" class="ax">${d.getMonth() + 1}/${d.getDate()}</text>`;
+    }
+  });
+  // 먼지 면적
+  const line = pts.map((p, i) => `${x(i).toFixed(1)},${yD(p.d).toFixed(1)}`).join(" ");
+  g += `<defs><linearGradient id="dustGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9964f" stop-opacity="0.75"/><stop offset="1" stop-color="#c9964f" stop-opacity="0.05"/></linearGradient></defs>
+    <polygon points="${x(0)},${H - B} ${line} ${x(pts.length - 1)},${H - B}" fill="url(#dustGrad)"/>
+    <polyline points="${line}" fill="none" stroke="#e0b070" stroke-width="2"/>`;
+  // 순간풍속 선
+  const gl = pts.map((p, i) => (p.g == null ? null : `${x(i).toFixed(1)},${yG(p.g).toFixed(1)}`)).filter(Boolean).join(" ");
+  g += `<polyline points="${gl}" fill="none" stroke="#4fb4ff" stroke-width="1.5" opacity="0.85"/>`;
+  [0, 5, 10, 15, 20].filter((v) => v <= maxG).forEach((v) => { g += `<text x="${W - R + 6}" y="${yG(v) + 4}" class="ax">${v}</text>`; });
+  // 지금 시각
+  const ni = pts.findIndex((p) => p.t >= nowKey.slice(0, 13));
+  if (ni >= 0) g += `<line x1="${x(ni)}" x2="${x(ni)}" y1="${T}" y2="${H - B}" stroke="#35d0c0" stroke-width="1.5"/><text x="${x(ni) + 4}" y="${T + 10}" class="ax now">지금</text>`;
+  svg.innerHTML = g;
+}
+
+/* ==========================================================
+   환경 > 중동 지진 현황 (USGS)
+   ========================================================== */
+let quakeMap = null, quakeLayer = null, quakeLoadedAt = 0;
+function kmBetween(a, b, c, d) {
+  const R = 6371, rad = Math.PI / 180;
+  const x = Math.sin(((c - a) * rad) / 2) ** 2 + Math.cos(a * rad) * Math.cos(c * rad) * Math.sin(((d - b) * rad) / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(x));
+}
+async function loadQuakes() {
+  if (!quakeMap) {
+    quakeMap = L.map("quakeMap", { zoomSnap: 0.5 }).setView([31, 47], 4.5);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "&copy; OpenStreetMap contributors", maxZoom: 10,
+    }).addTo(quakeMap);
+    L.marker([BISMAYAH_LAT, BISMAYAH_LON], { icon: L.divIcon({ className: "map-label-wrap", html: '<span class="site-star">★</span>', iconSize: [0, 0] }) })
+      .bindPopup("비스마야 현장").addTo(quakeMap);
+    L.circle([BISMAYAH_LAT, BISMAYAH_LON], { radius: 300000, color: "#35d0c0", weight: 1, dashArray: "6 6", fill: false }).addTo(quakeMap);
+    quakeLayer = L.layerGroup().addTo(quakeMap);
+  }
+  setTimeout(() => quakeMap.invalidateSize(), 100);
+  if (Date.now() - quakeLoadedAt < 10 * 60 * 1000) return;
+  const start = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+  let data;
+  try {
+    data = await (await fetch(`https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=${start}&minlatitude=12&maxlatitude=42&minlongitude=30&maxlongitude=63&minmagnitude=2.5&orderby=time&limit=300`)).json();
+  } catch (e) {
+    document.getElementById("quakeSummary").textContent = "지진 정보를 불러오지 못했습니다.";
+    return;
+  }
+  quakeLoadedAt = Date.now();
+  const now = Date.now();
+  const qs = (data.features || []).map((f) => ({
+    mag: f.properties.mag, place: f.properties.place || "", time: f.properties.time, url: f.properties.url,
+    lon: f.geometry.coordinates[0], lat: f.geometry.coordinates[1], depth: f.geometry.coordinates[2],
+    dist: kmBetween(BISMAYAH_LAT, BISMAYAH_LON, f.geometry.coordinates[1], f.geometry.coordinates[0]),
+  }));
+  quakeLayer.clearLayers();
+  const fmt = (t) => new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(t));
+  qs.slice().reverse().forEach((q) => {
+    const age = now - q.time;
+    const color = age < 86400000 ? "#e5484d" : age < 7 * 86400000 ? "#f2a93b" : "#8a94a3";
+    L.circleMarker([q.lat, q.lon], {
+      radius: Math.max(3, (q.mag - 2) * 4), color, weight: 1, fillColor: color, fillOpacity: age < 86400000 ? 0.7 : 0.4,
+    }).bindPopup(`<b>규모 ${q.mag.toFixed(1)}</b><br>${escapeHtml(q.place)}<br>${fmt(q.time)} (바그다드) · 깊이 ${Math.round(q.depth)}km<br>현장에서 ${Math.round(q.dist)}km`).addTo(quakeLayer);
+  });
+  const near = qs.filter((q) => q.dist <= 300);
+  const big = qs.reduce((m, q) => (!m || q.mag > m.mag ? q : m), null);
+  const day = qs.filter((q) => now - q.time < 86400000).length;
+  document.getElementById("quakeSummary").innerHTML = `최근 30일 <b>${qs.length}</b>회 · 24시간 <b>${day}</b>회 · 현장 반경 300km <b>${near.length}</b>회` +
+    (big ? ` · 최대 <b>규모 ${big.mag.toFixed(1)}</b> (${escapeHtml(big.place)}, ${fmt(big.time)})` : "");
+  document.getElementById("quakeTable").innerHTML = `
+    <thead><tr><th>발생 시각 (바그다드)</th><th>규모</th><th>위치</th><th>깊이</th><th>현장까지</th></tr></thead>
+    <tbody>${qs.slice(0, 15).map((q) => `<tr class="${q.mag >= 5 ? "big" : ""}">
+      <td>${fmt(q.time)}</td><td class="mag">${q.mag.toFixed(1)}</td><td>${escapeHtml(q.place)}</td>
+      <td>${Math.round(q.depth)}km</td><td>${Math.round(q.dist).toLocaleString()}km</td></tr>`).join("") || '<tr><td colspan="5">최근 지진 없음</td></tr>'}</tbody>`;
+  document.getElementById("quakeMeta").textContent = "미국지질조사국(USGS) 실시간 지진 정보 · 위치는 영문 원문 · 10분마다 갱신 · 점선 원 = 현장 반경 300km";
+}
+
+/* ==========================================================
+   기타 정보 > 주변국 여행경보 (travel-alarm.json)
+   ========================================================== */
+let travelMap = null;
+const TRAVEL_COLORS = { 0: "#2a3442", 1: "#4fb4ff", 2: "#ffd166", 3: "#f2a93b", 4: "#e5484d" };
+const TRAVEL_FOCUS = ["IQ", "IR", "SY", "JO", "SA", "KW", "TR", "LB", "IL", "PS", "EG", "AE", "QA", "BH", "OM", "YE", "AF", "PK", "AZ", "AM", "GE", "CY", "LY", "SD", "IN", "BD"];
+async function loadTravel() {
+  if (travelMap) { setTimeout(() => travelMap.invalidateSize(), 100); return; }
+  let alarm = null, world = null;
+  try {
+    [alarm, world] = await Promise.all([
+      fetch("travel-alarm.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)),
+      fetch("world-map.json", { cache: "force-cache" }).then((r) => r.json()),
+    ]);
+  } catch (e) { /* 아래에서 처리 */ }
+  travelMap = L.map("travelMap", { zoomSnap: 0.5, minZoom: 3, maxZoom: 7, attributionControl: true }).setView([29, 47], 4);
+  travelMap.attributionControl.setPrefix(false);
+  travelMap.attributionControl.addAttribution("지도: Natural Earth · 여행경보: 외교부");
+  const C = (alarm && alarm.countries) || {};
+  if (world) {
+    L.geoJSON(world, {
+      style: (f) => {
+        const c = C[f.properties.iso2];
+        return { color: "#0f1720", weight: 0.8, fillColor: TRAVEL_COLORS[c ? c.level : 0], fillOpacity: c && c.level ? 0.75 : 0.9 };
+      },
+      onEachFeature: (f, layer) => {
+        const c = C[f.properties.iso2];
+        layer.bindTooltip(`<b>${escapeHtml(f.properties.ko)}</b> · ${c && c.level ? `${c.level}단계 ${escapeHtml(c.levelName)}${c.partial ? " (일부 지역)" : ""}` : "경보 없음"}`, { sticky: true });
+      },
+    }).addTo(travelMap);
+  }
+  setTimeout(() => travelMap.invalidateSize(), 100);
+  const list = document.getElementById("travelList");
+  if (!alarm) {
+    list.innerHTML = '<p class="skeleton">아직 여행경보 자료가 없습니다. 외교부 여행경보 API 활용신청 후 GitHub Actions에서 "Update travel alarm"을 실행하면 표시됩니다.</p>';
+    return;
+  }
+  const rows = TRAVEL_FOCUS.map((k) => C[k]).filter(Boolean).sort((a, b) => b.level - a.level);
+  list.innerHTML = rows.map((c) => `
+    <div class="travel-row" style="--c:${TRAVEL_COLORS[c.level]}">
+      <span class="tr-lv">${c.level ? c.level + "단계" : "–"}</span>
+      <span class="tr-name">${escapeHtml(c.name)}</span>
+      <span class="tr-state">${escapeHtml(c.levelName || "경보 없음")}${c.partial ? " · 지역별 상이" : ""}</span>
+      ${c.regions.length ? `<details><summary>지역별</summary>${c.regions.map((r) => `<p><b>${r.level}단계</b> ${escapeHtml(r.region || "")} ${escapeHtml(r.remark || "")}</p>`).join("")}</details>` : ""}
+    </div>`).join("");
+  document.getElementById("travelMeta").textContent = "출처: 외교부 해외안전여행(0404.go.kr) 국가·지역별 여행경보 · 한 나라에 지역별 단계가 다르면 가장 높은 단계로 칠함 · 마지막 수집: " +
+    new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(alarm.generatedAt));
+}
+
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (btn.dataset.view === "view-env-dust") loadDustForecast();
+    if (btn.dataset.view === "view-env-quake") loadQuakes();
+    if (btn.dataset.view === "view-travel") loadTravel();
   });
 });
