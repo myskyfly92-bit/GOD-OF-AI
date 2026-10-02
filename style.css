@@ -41,7 +41,20 @@ html, body {
 }
 
 body {
-  /* 탭마다 --tab-bg 사진을 맨 위에 깔고, 그 사진 파일이 아직 없으면 종합현황 사진이 대신 보인다 */
+  /* 배경 사진은 body::before(아래)에 그린다. body 자체는 투명해야 사진이 보인다 */
+  background: transparent;
+}
+
+/* 배경 사진: 배너(topbar) 바로 아래부터 화면 끝까지 고정
+   --hdr 은 script.js 가 배너 높이를 재서 넣어 준다.
+   탭마다 --tab-bg 사진을 맨 위에 깔고, 그 사진 파일이 아직 없으면 종합현황 사진이 대신 보인다 */
+body::before {
+  content: "";
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  top: var(--hdr, 0px);
+  z-index: -1;
+  pointer-events: none;
   background-image:
     radial-gradient(circle at 15% 0%, rgba(53, 208, 192, 0.06), transparent 45%),
     radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
@@ -52,7 +65,7 @@ body {
   background-size: auto, auto, cover, cover, cover, cover;
   background-position: 0 0, 0 0, center center, center center, center center, center center;
   background-repeat: no-repeat;
-  background-attachment: scroll, scroll, fixed, fixed, fixed, fixed;
+  transition: top 0.2s ease;
 }
 
 /* ---------- 탭별 배경 사진 ---------- */
@@ -2219,7 +2232,7 @@ body.bg-reveal main.grid, body.bg-reveal .holiday-panel, body.bg-reveal .fx-widg
 }
 body.bg-reveal .sub-bar { opacity: 0.4; }
 /* 배경을 볼 때는 사진 위 어두운 막을 걷어 더 선명하게 */
-body.bg-reveal {
+body.bg-reveal::before {
   background-image:
     linear-gradient(180deg, rgba(10,14,19,0.15), rgba(10,14,19,0.25)),
     linear-gradient(180deg, transparent, transparent),

@@ -814,9 +814,12 @@ function alignSideWidgets() {
   // 달력은 grid 컨테이너 자체가 아니라, 실제 카드(첫 패널)의 위쪽 끝과 높이를 맞춘다
   // (grid에는 위쪽 padding이 있어서 컨테이너 기준으로 맞추면 그만큼 더 위에 위치하게 됨)
   // position:absolute라 문서 좌표(스크롤 오프셋 포함)로 넣어야 페이지와 같이 스크롤된다.
+  // 카드가 나타나는 효과(아래에서 위로 떠오름) 도중에 재면 그만큼 아래로 어긋나므로,
+  // 움직이는 카드 대신 grid 위쪽 끝 + grid 위쪽 여백으로 첫 줄 카드의 '최종' 위치를 계산한다.
   const firstPanel = gridEl.querySelector(".panel");
   if (holidayPanel && firstPanel) {
-    holidayPanel.style.top = `${Math.round(firstPanel.getBoundingClientRect().top + scrollY)}px`;
+    const padTop = parseFloat(getComputedStyle(gridEl).paddingTop) || 0;
+    holidayPanel.style.top = `${Math.round(gridEl.getBoundingClientRect().top + padTop + scrollY)}px`;
   }
 
   // 좌우 여백이 완전히 같아지도록 달력 폭을 계산: (뷰포트 폭) - (카드 오른쪽 끝 + 간격) - (왼쪽 여백)
@@ -3531,4 +3534,14 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   ["mousemove", "mousedown", "keydown", "touchstart", "wheel"].forEach((ev) =>
     document.addEventListener(ev, wake, { passive: true }));
   wake();
+})();
+
+/* 배경 사진이 배너 바로 아래에서 시작하도록 배너 높이를 CSS(--hdr)에 알려 준다 */
+(function syncHeaderHeight() {
+  const bar = document.querySelector(".topbar");
+  if (!bar) return;
+  const set = () => document.documentElement.style.setProperty("--hdr", bar.getBoundingClientRect().height + "px");
+  set();
+  window.addEventListener("resize", set);
+  if (window.ResizeObserver) new ResizeObserver(set).observe(bar);
 })();
