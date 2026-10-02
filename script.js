@@ -3522,14 +3522,21 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     if (!on) playEnter(document.querySelector(".view.active"));
   }
   btn.addEventListener("click", (e) => { e.stopPropagation(); setReveal(!document.body.classList.contains("bg-reveal"), true); });
+  window.hseSetReveal = setReveal;
+  window.hsePlayEnter = () => playEnter(document.querySelector(".view.active"));
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && document.body.classList.contains("bg-reveal")) setReveal(false); });
 
   // ③ 오래 안 만지면 자동으로 배경 보이기
   let idleTimer = null;
   function wake() {
-    if (document.body.classList.contains("bg-reveal") && !manual) setReveal(false);
+    if (window.hseKiosk && window.hseKiosk.running) { window.hseKiosk.stop(); }
+    else if (document.body.classList.contains("bg-reveal") && !manual) setReveal(false);
     clearTimeout(idleTimer);
-    idleTimer = setTimeout(() => { if (!document.body.classList.contains("bg-reveal")) setReveal(true, false); }, IDLE_MS);
+    idleTimer = setTimeout(() => {
+      if (document.body.classList.contains("bg-reveal")) return;
+      // 상황실 순환 모드가 있으면 그걸로, 없으면 배경만 보여 주기
+      if (window.hseKiosk) window.hseKiosk.start(); else setReveal(true, false);
+    }, IDLE_MS);
   }
   ["mousemove", "mousedown", "keydown", "touchstart", "wheel"].forEach((ev) =>
     document.addEventListener(ev, wake, { passive: true }));
@@ -3544,4 +3551,331 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   set();
   window.addEventListener("resize", set);
   if (window.ResizeObserver) new ResizeObserver(set).observe(bar);
+})();
+
+
+/* ==========================================================
+   배경 특수효과 (발표·상황실 모니터용)
+   1) 실제 날씨 효과: 비스마야 현재 날씨에 따라 모래바람·빗줄기·아지랑이·밤하늘
+   2) 상황실 순환 모드: 3분 동안 아무도 안 만지면 탭 사진이 바뀌며 핵심 숫자를 크게 보여 줌
+   3) 사진 전환: 탭을 바꾸면 사진이 스르르 겹치며 넘어가고, 평소엔 아주 천천히 확대(켄 번즈)
+   4) 첫 화면 인트로: 로고·상황실 이름이 잠깐 나타났다 사라지고 숫자가 올라감
+   5) 경보 테두리: 중요한 경보가 있을 때만 화면 가장자리가 붉게 숨 쉬듯 빛남
+   - 미리 보기: 주소 끝에 ?fx=dust 또는 ?fx=rain,night,heat,alert 를 붙이면 날씨와 상관없이 효과를 볼 수 있음
+   - 컴퓨터에서 '움직임 줄이기'를 켠 사용자에게는 움직이는 효과를 끔
+   ========================================================== */
+(function hseEffects() {
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const params = new URLSearchParams(location.search);
+  const forced = new Set((params.get("fx") || "").split(",").map((x) => x.trim()).filter(Boolean));
+  const fetchJson = (u) => fetch(u, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+
+  /* ---------- 3) 사진 전환(크로스페이드) ---------- */
+  const fadeLayer = document.createElement("div");
+  fadeLayer.className = "bg-fade-layer";
+  document.body.appendChild(fadeLayer);
+  function crossfadeSnapshot() {
+    if (reduce) return;
+    const cs = getComputedStyle(document.body, "::before");
+    fadeLayer.style.transition = "none";
+    fadeLayer.style.backgroundImage = cs.backgroundImage;
+    fadeLayer.style.backgroundSize = cs.backgroundSize;
+    fadeLayer.style.backgroundPosition = cs.backgroundPosition;
+    fadeLayer.style.transform = cs.transform === "none" ? "" : cs.transform;
+    fadeLayer.style.opacity = "1";
+    void fadeLayer.offsetWidth;
+    requestAnimationFrame(() => {
+      fadeLayer.style.transition = "opacity 1s ease";
+      fadeLayer.style.opacity = "0";
+    });
+  }
+  // 탭 버튼이 배경을 바꾸기 '전에' 지금 사진을 찍어 둔다 (캡처 단계에서 먼저 실행)
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest && e.target.closest(".tab-btn");
+    if (b && !b.classList.contains("active")) crossfadeSnapshot();
+  }, true);
+
+  /* ---------- 1) 실제 날씨 효과 ---------- */
+  const canvas = document.createElement("canvas");
+  canvas.className = "wx-canvas";
+  document.body.appendChild(canvas);
+  const ctx = canvas.getContext("2d");
+  const chip = document.createElement("div");
+  chip.className = "wx-chip";
+  chip.hidden = true;
+  document.body.appendChild(chip);
+
+  const wx = { dust: 0, rain: 0, heat: 0, night: false, windTo: 90, windSpeed: 3, raw: null };
+  let parts = [], stars = [], W = 0, H = 0, dpr = 1;
+
+  function resize() {
+    dpr = Math.min(1.5, window.devicePixelRatio || 1);
+    const r = canvas.getBoundingClientRect();
+    W = r.width; H = r.height;
+    canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    stars = Array.from({ length: 90 }, () => ({ x: Math.random() * W, y: Math.random() * H * 0.45, r: Math.random() * 1.2 + 0.3, p: Math.random() * 6 }));
+    spawn();
+  }
+
+  function spawn() {
+    const n = Math.round(wx.dust * 260) + Math.round(wx.rain * 180);
+    parts = Array.from({ length: n }, (_, i) => newPart(i < Math.round(wx.dust * 260) ? "dust" : "rain", true));
+  }
+  function newPart(kind, anywhere) {
+    const p = { kind, x: Math.random() * W, y: anywhere ? Math.random() * H : -20 };
+    if (kind === "dust") {
+      p.r = Math.random() * 1.8 + 0.6; p.a = Math.random() * 0.45 + 0.15;
+      p.v = 0.6 + Math.random() * 0.8; p.wob = Math.random() * 6;
+      p.streak = Math.random() < 0.18;
+    } else {
+      p.len = 14 + Math.random() * 12; p.v = 0.8 + Math.random() * 0.5;
+    }
+    return p;
+  }
+
+  function wind() {
+    const rad = (wx.windTo * Math.PI) / 180; // 바람이 '불어 가는' 방향
+    const speed = 25 + wx.windSpeed * 14;
+    return { vx: Math.sin(rad) * speed, vy: -Math.cos(rad) * speed * 0.25 }; // 옆에서 보는 화면이라 세로 움직임은 약하게
+  }
+
+  let last = 0, running = false;
+  function frame(t) {
+    if (!running) return;
+    const dt = Math.min(0.05, (t - last) / 1000 || 0); last = t;
+    ctx.clearRect(0, 0, W, H);
+
+    if (wx.night) {
+      ctx.fillStyle = "rgba(4, 10, 30, 0.38)"; ctx.fillRect(0, 0, W, H);
+      stars.forEach((s) => {
+        const a = 0.35 + 0.35 * Math.sin(t / 900 + s.p);
+        ctx.fillStyle = `rgba(255,255,255,${a.toFixed(3)})`;
+        ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2); ctx.fill();
+      });
+    }
+    if (wx.heat > 0) {
+      ctx.fillStyle = `rgba(255, 140, 40, ${(0.05 * wx.heat).toFixed(3)})`; ctx.fillRect(0, 0, W, H);
+      // 아지랑이: 아래에서 위로 천천히 올라가는 일렁이는 띠
+      for (let k = 0; k < 7; k++) {
+        const baseY = H - ((t / 40 + k * (H / 7)) % (H * 0.9));
+        ctx.beginPath();
+        for (let x = 0; x <= W; x += 24) {
+          const y = baseY + Math.sin(x / 70 + t / 500 + k) * 6;
+          x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.strokeStyle = `rgba(255, 220, 170, ${(0.05 * wx.heat).toFixed(3)})`;
+        ctx.lineWidth = 10; ctx.stroke();
+      }
+    }
+    if (wx.dust > 0) {
+      ctx.fillStyle = `rgba(196, 150, 80, ${(0.16 * wx.dust).toFixed(3)})`; ctx.fillRect(0, 0, W, H);
+    }
+
+    const w = wind();
+    parts.forEach((p, i) => {
+      if (p.kind === "dust") {
+        p.x += w.vx * p.v * dt; p.y += (w.vy * p.v + Math.sin(t / 700 + p.wob) * 6) * dt;
+        if (p.streak) {
+          ctx.strokeStyle = `rgba(222, 190, 135, ${(p.a * 0.5).toFixed(3)})`; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(p.x - w.vx * 0.35, p.y - w.vy * 0.35); ctx.stroke();
+        } else {
+          ctx.fillStyle = `rgba(222, 190, 135, ${p.a.toFixed(3)})`;
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+        }
+      } else {
+        const vx = w.vx * 0.6, vy = 700 * p.v;
+        p.x += vx * dt; p.y += vy * dt;
+        ctx.strokeStyle = "rgba(190, 210, 235, 0.35)"; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(p.x - vx * 0.03, p.y - p.len); ctx.stroke();
+      }
+      if (p.x < -40 || p.x > W + 40 || p.y > H + 30 || p.y < -60) {
+        const np = newPart(p.kind, false);
+        if (p.kind === "dust") { np.x = w.vx >= 0 ? -20 : W + 20; np.y = Math.random() * H; }
+        else { np.x = Math.random() * (W + 200) - 100; }
+        parts[i] = np;
+      }
+    });
+    requestAnimationFrame(frame);
+  }
+  function start() {
+    const active = wx.dust > 0 || wx.rain > 0 || wx.heat > 0 || wx.night;
+    canvas.style.display = active ? "" : "none";
+    if (!active || reduce) { running = false; if (!active) ctx.clearRect(0, 0, W, H); return; }
+    if (!running) { running = true; last = 0; requestAnimationFrame(frame); }
+  }
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) running = false; else start();
+  });
+  window.addEventListener("resize", () => { resize(); });
+
+  const DIRS = ["북", "북동", "동", "남동", "남", "남서", "서", "북서"];
+  async function loadWeather() {
+    const lat = typeof BISMAYAH_LAT !== "undefined" ? BISMAYAH_LAT : 33.193;
+    const lon = typeof BISMAYAH_LON !== "undefined" ? BISMAYAH_LON : 44.618;
+    const [w, a] = await Promise.all([
+      fetchJson(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&wind_speed_unit=ms&current=temperature_2m,is_day,precipitation,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m`),
+      fetchJson(`https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${lat}&longitude=${lon}&current=dust,pm10`),
+    ]);
+    const c = (w && w.current) || {}, q = (a && a.current) || {};
+    wx.raw = { temp: c.temperature_2m, gust: c.wind_gusts_10m, dust: q.dust, pm10: q.pm10, wind: c.wind_speed_10m, dir: c.wind_direction_10m };
+    const code = c.weather_code || 0;
+    const rainy = (c.precipitation || 0) > 0.05 || (code >= 51 && code <= 67) || (code >= 80 && code <= 82) || code >= 95;
+    wx.dust = Math.max(0, Math.min(1, ((q.dust || 0) - 40) / 200, ((q.pm10 || 0) - 120) / 300));
+    wx.rain = rainy ? 1 : 0;
+    wx.heat = c.temperature_2m >= 40 ? Math.min(1, (c.temperature_2m - 38) / 8) : 0;
+    wx.night = c.is_day === 0;
+    wx.windTo = ((c.wind_direction_10m || 270) + 180) % 360;
+    wx.windSpeed = c.wind_speed_10m || 3;
+    applyForced();
+    resize(); start(); updateChip(); checkAlerts();
+  }
+  function applyForced() {
+    if (forced.has("dust")) wx.dust = Math.max(wx.dust, 0.85);
+    if (forced.has("rain")) wx.rain = 1;
+    if (forced.has("heat")) wx.heat = 1;
+    if (forced.has("night")) wx.night = true;
+  }
+  function updateChip() {
+    const r = wx.raw || {};
+    const tags = [];
+    if (wx.dust > 0) tags.push("모래바람");
+    if (wx.rain) tags.push("비");
+    if (wx.heat > 0) tags.push("폭염 아지랑이");
+    if (wx.night) tags.push("밤");
+    if (!tags.length) { chip.hidden = true; return; }
+    const dir = r.dir != null ? DIRS[Math.round(r.dir / 45) % 8] + "풍 " : "";
+    chip.hidden = false;
+    chip.innerHTML = `<i></i>현장 실시간 효과 · ${tags.join(" · ")}${r.temp != null ? ` · ${Math.round(r.temp)}℃` : ""}${r.wind != null ? ` · ${dir}${r.wind.toFixed(1)}m/s` : ""}${forced.size ? " <b>(미리 보기)</b>" : ""}`;
+  }
+
+  /* ---------- 5) 경보 테두리 ---------- */
+  const glow = document.createElement("div");
+  glow.className = "alert-glow";
+  glow.hidden = true;
+  const glowChip = document.createElement("div");
+  glowChip.className = "alert-chip";
+  glowChip.hidden = true;
+  document.body.appendChild(glow);
+  document.body.appendChild(glowChip);
+  async function checkAlerts() {
+    const reasons = [];
+    const [kd, fi] = await Promise.all([fetchJson("kdca-infectious.json"), fetchJson("fires.json")]);
+    if (kd && kd.grade1Recent && kd.grade1Recent.length) reasons.push(`제1급 감염병 신고: ${kd.grade1Recent.map((g) => g.name).join(", ")}`);
+    if (fi && fi.nearby && fi.nearby.count > 0) reasons.push(`현장 ${fi.nearby.radiusKm}km 내 신규 화재 ${fi.nearby.count}건`);
+    const r = wx.raw || {};
+    if (r.gust > 10) reasons.push(`순간풍속 ${r.gust.toFixed(1)}m/s (크레인 작업 제한)`);
+    if (r.dust > 150) reasons.push("모래폭풍 수준 먼지");
+    if (forced.has("alert") && !reasons.length) reasons.push("경보 미리 보기");
+    const on = reasons.length > 0;
+    glow.hidden = !on; glowChip.hidden = !on;
+    glow.classList.toggle("still", reduce);
+    if (on) glowChip.innerHTML = `<b>경보</b> ${reasons.map((x) => `<span>${x}</span>`).join("")}`;
+  }
+
+  /* ---------- 4) 첫 화면 인트로 ---------- */
+  function intro() {
+    let seen = false;
+    try { seen = sessionStorage.getItem("hseIntroSeen") === "1"; } catch (e) {}
+    if ((seen && params.get("intro") !== "1") || reduce) return;
+    try { sessionStorage.setItem("hseIntroSeen", "1"); } catch (e) {}
+    const el = document.createElement("div");
+    el.className = "hse-intro";
+    el.innerHTML = `<div class="hse-intro-inner">
+      <img class="hse-intro-logo" src="assets/hanwha-logo.jpg" alt="Hanwha">
+      <div class="hse-intro-title">비스마야 안전보건환경 상황실</div>
+      <div class="hse-intro-sub">BISMAYAH NEW CITY PROJECT · HSE SITUATION ROOM</div>
+      <div class="hse-intro-line"></div>
+    </div>`;
+    document.body.appendChild(el);
+    const done = () => {
+      el.classList.add("out");
+      setTimeout(() => el.remove(), 900);
+      // 숫자를 0부터 다시 올린다 (인트로에 가려 처음 올라가는 걸 못 봤으므로)
+      ["incidentFreeDays", "constructionDays"].forEach((id) => {
+        const n = document.getElementById(id);
+        const target = n ? parseInt(String(n.textContent).replace(/[^\d]/g, ""), 10) : 0;
+        if (n && target > 0 && typeof animateCount === "function") animateCount(n, target);
+      });
+      if (window.hsePlayEnter) window.hsePlayEnter();
+    };
+    el.addEventListener("click", done, { once: true });
+    setTimeout(done, 2300);
+  }
+
+  /* ---------- 2) 상황실 순환 모드 ---------- */
+  const caption = document.createElement("div");
+  caption.className = "kiosk-caption";
+  caption.hidden = true;
+  document.body.appendChild(caption);
+  const $t = (id) => { const el = document.getElementById(id); return el ? el.textContent.trim() : "–"; };
+  let kdcaCache = null, saCache = null, fireCache = null;
+  const SLIDES = [
+    { cls: "bg-dashboard", label: "종합현황", text: () => `무재해 <b>${$t("incidentFreeDays")}</b>일 · 착공 <b>${$t("constructionDays")}</b>일째` },
+    { cls: "bg-workzone", label: "오늘 작업", text: () => `작업 <b>${$t("twTotal")}</b>건 · 투입 <b>${$t("twCrew")}</b>명 · 위험작업 <b>${$t("twRisk")}</b>건` },
+    { cls: "bg-env-weather", label: "현장 날씨", text: () => { const r = wx.raw || {}; return r.temp != null ? `현재 <b>${Math.round(r.temp)}℃</b> · 바람 <b>${(r.wind || 0).toFixed(1)}</b>m/s · 순간 <b>${(r.gust || 0).toFixed(1)}</b>m/s${r.dust != null ? ` · 모래먼지 <b>${Math.round(r.dust)}</b>㎍/㎥` : ""}` : "현장 날씨 확인 중"; } },
+    { cls: "bg-sa", label: "국내 중대재해", text: () => saCache ? `${saCache.period} 사고사망자 <b>${(saCache.byIndustry || []).reduce((a, x) => a + (x.total || 0), 0)}</b>명` : "국내 중대재해 현황" },
+    { cls: "bg-health-kdca", label: "국내 감염병", text: () => kdcaCache ? `${kdcaCache.baseWeek.label} 법정감염병 <b>${kdcaCache.totalBase.toLocaleString()}</b>건 · 제1급 <b>${kdcaCache.grades["제1급"].base}</b>건` : "국내 감염병 현황" },
+    { cls: "bg-fires", label: "화재 현황", text: () => fireCache && fireCache.nearby ? `현장 ${fireCache.nearby.radiusKm}km 내 최근 24시간 신규 화재 <b>${fireCache.nearby.count}</b>건` : "이라크 화재 현황" },
+    { cls: "bg-ships", label: "해상·항공", text: () => "중동 상공 항공기 · 걸프만 선박 실시간 모니터링" },
+  ];
+  const kiosk = {
+    running: false, idx: 0, timer: null, prevClass: "",
+    async start() {
+      if (this.running) return;
+      this.running = true;
+      this.prevClass = document.body.className;
+      [kdcaCache, saCache, fireCache] = await Promise.all([fetchJson("kdca-infectious.json"), fetchJson("serious-accidents.json"), fetchJson("fires.json")]);
+      if (!this.running) return;
+      if (window.hseSetReveal) window.hseSetReveal(true, false);
+      caption.hidden = false;
+      this.idx = 0; this.show();
+      this.timer = setInterval(() => { this.idx = (this.idx + 1) % SLIDES.length; this.show(); }, 12000);
+    },
+    show() {
+      const s = SLIDES[this.idx];
+      crossfadeSnapshot();
+      document.body.className = `${s.cls} bg-reveal kiosk-on`;
+      caption.classList.remove("in"); void caption.offsetWidth;
+      caption.innerHTML = `<div class="kiosk-label">${s.label}</div><div class="kiosk-text">${s.text()}</div>
+        <div class="kiosk-dots">${SLIDES.map((_, i) => `<i class="${i === this.idx ? "on" : ""}"></i>`).join("")}</div>`;
+      caption.classList.add("in");
+    },
+    stop() {
+      if (!this.running) return;
+      this.running = false;
+      clearInterval(this.timer);
+      caption.hidden = true;
+      crossfadeSnapshot();
+      document.body.className = this.prevClass.replace(/\s*(bg-reveal|kiosk-on)\b/g, "");
+      if (window.hseSetReveal) window.hseSetReveal(false, false);
+    },
+  };
+  window.hseKiosk = kiosk;
+  window.hseFx = { set: (k) => { forced.add(k); applyForced(); resize(); start(); updateChip(); checkAlerts(); }, kiosk };
+  if (params.get("kiosk") === "1") setTimeout(() => kiosk.start(), 1500);
+
+  // 시작
+  resize();
+  intro();
+  loadWeather();
+  setInterval(loadWeather, 10 * 60 * 1000);
+})();
+
+/* 스크롤을 내리면 배경 사진도 따라 내려가 아래쪽이 보이도록 (맨 위 0% → 맨 아래 100%) */
+(function scrollBackground() {
+  const root = document.documentElement;
+  let ticking = false;
+  function update() {
+    ticking = false;
+    const max = root.scrollHeight - window.innerHeight;
+    const y = max > 0 ? Math.min(100, Math.max(0, (window.scrollY / max) * 100)) : 0;
+    root.style.setProperty("--bg-y", y.toFixed(2) + "%");
+  }
+  const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  // 탭을 바꾸면 페이지 길이가 달라지므로 다시 계산
+  document.querySelectorAll(".tab-btn").forEach((b) => b.addEventListener("click", () => setTimeout(update, 50)));
+  update();
 })();
