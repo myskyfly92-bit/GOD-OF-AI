@@ -3036,6 +3036,12 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     runner.style.top = (h.top - b.top) + "px";
   }
 
+  // 날씨에 따라 다른 대사를 쓰게 (window.hseMascotLines 가 있으면 70% 확률로 그쪽에서 고름)
+  const pickLine = () => {
+    const w = window.hseMascotLines;
+    const pool = w && w.length && Math.random() < 0.7 ? w : LINES;
+    return pool[Math.floor(Math.random() * pool.length)];
+  };
   function say(text) {
     bubble.textContent = text;
     bubble.hidden = false;
@@ -3073,7 +3079,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       setTimeout(() => jump(false), 350); // 멈춘 뒤 폴짝
     } else if (r < 0.85) {
       mode = "idle"; target = 0; busyUntil = now + 3000;
-      say(LINES[Math.floor(Math.random() * LINES.length)]);
+      say(pickLine());
     } else {
       mode = "idle"; target = 0; busyUntil = now + 2000 + Math.random() * 3000;
     }
@@ -3108,11 +3114,12 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     requestAnimationFrame(tick);
   }
 
+  window.hseMascotSay = (t) => say(t);
   runner.addEventListener("mouseenter", () => { hover = true; });
   runner.addEventListener("mouseleave", () => { hover = false; busyUntil = performance.now() + 800; });
   runner.addEventListener("click", () => {
     jump(true);
-    say(LINES[Math.floor(Math.random() * LINES.length)]);
+    say(pickLine());
   });
 
   const start = () => { bounds(); busyUntil = performance.now() + 1500; requestAnimationFrame(tick); };
@@ -3714,11 +3721,13 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const lat = typeof BISMAYAH_LAT !== "undefined" ? BISMAYAH_LAT : 33.193;
     const lon = typeof BISMAYAH_LON !== "undefined" ? BISMAYAH_LON : 44.618;
     const [w, a] = await Promise.all([
-      fetchJson(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&wind_speed_unit=ms&current=temperature_2m,is_day,precipitation,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m`),
+      fetchJson(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&wind_speed_unit=ms&current=temperature_2m,apparent_temperature,is_day,precipitation,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m`),
       fetchJson(`https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${lat}&longitude=${lon}&current=dust,pm10`),
     ]);
     const c = (w && w.current) || {}, q = (a && a.current) || {};
-    wx.raw = { temp: c.temperature_2m, gust: c.wind_gusts_10m, dust: q.dust, pm10: q.pm10, wind: c.wind_speed_10m, dir: c.wind_direction_10m };
+    wx.raw = { temp: c.temperature_2m, feel: c.apparent_temperature, isDay: c.is_day, gust: c.wind_gusts_10m, dust: q.dust, pm10: q.pm10, wind: c.wind_speed_10m, dir: c.wind_direction_10m };
+    window.hseWx = wx.raw;
+    window.dispatchEvent(new CustomEvent("hse-weather", { detail: wx.raw }));
     const code = c.weather_code || 0;
     const rainy = (c.precipitation || 0) > 0.05 || (code >= 51 && code <= 67) || (code >= 80 && code <= 82) || code >= 95;
     wx.dust = Math.max(0, Math.min(1, ((q.dust || 0) - 40) / 200, ((q.pm10 || 0) - 120) / 300));
@@ -3960,10 +3969,17 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       if (!res) console.warn("[인트로] 12초 안에 다 못 받아서 받은 것만 사용:", list.length, "장");
       return list.length >= 2 ? list : [];
     });
-    Promise.all([loadIntroImages(), satReady, pageReady]).then(([imgs, sats]) => new Promise((r) => setTimeout(() => r([imgs, sats]), 150))).then(([imgs, sats]) => {
+    // 3D 지구본 준비 (지도 그리기 도구 + 세계 지도). 5초 안에 안 되면 지구본은 건너뜀
+    // (지구본 코드는 파일 뒤쪽에 있어서, 이 줄이 실행된 '다음 순간'에 찾아야 한다)
+    const globeReady = Promise.race([
+      Promise.resolve().then(() => (window.hseLoadGlobe ? window.hseLoadGlobe() : null)),
+      new Promise((r) => setTimeout(() => r(null), 5000)),
+    ]);
+    Promise.all([loadIntroImages(), satReady, pageReady, globeReady]).then(([imgs, sats, , globe]) => new Promise((r) => setTimeout(() => r([imgs, sats, globe]), 150))).then(([imgs, sats, globe]) => {
       if (finished) return;
       const goPhotos = () => runPhotoSlides(imgs);
-      if (sats && sats.length) runSatellite(sats, goPhotos); else goPhotos();
+      const goSat = () => { if (sats && sats.length) runSatellite(sats, goPhotos); else goPhotos(); };
+      if (globe && window.hseRunGlobe) window.hseRunGlobe(el, globe, goSat, () => finished); else goSat();
     });
 
     // 위성사진 타임랩스: 해마다 0.9초씩, 연도를 크게
@@ -3972,7 +3988,9 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       const capbox = el.querySelector(".hse-intro-capbox");
       const credit = document.createElement("div");
       credit.className = "sat-credit";
-      credit.textContent = "위성사진: Esri World Imagery Wayback (Maxar 등) · 비스마야 신도시";
+      credit.textContent = sats.some((f) => f.manual)
+        ? "위성사진: Google Earth (Airbus·Maxar 등) · 비스마야 신도시"
+        : "위성사진: Esri World Imagery Wayback (Maxar 등) · 비스마야 신도시";
       el.appendChild(credit);
       let i = 0;
       const step = () => {
@@ -4392,3 +4410,361 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     if (btn.dataset.view === "view-travel") loadTravel();
   });
 });
+
+
+/* ==========================================================
+   보여 주기용 효과 묶음
+   A) 인트로 3D 지구본: 서울 → 비스마야 비행선 + 현장으로 확대
+   B) 날씨에 반응하는 마스코트 (폭염 땀, 모래먼지 마스크, 강풍)
+   C) 공항 전광판식 숫자판 (무재해·착공 일수)
+   D) 무재해 기념일 축하 (폭죽·꽃가루)
+   E) 실시간 하늘색 배너 (해·달이 배너를 가로지름)
+   미리 보기: ?mascot=heat|dust|wind|night  ?celebrate=1  ?sky=dawn|day|dusk|night
+   ========================================================== */
+(function hseWow() {
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const params = new URLSearchParams(location.search);
+  const SITE = [44.618, 33.193];   // [경도, 위도] 비스마야
+  const SEOUL = [126.978, 37.566];
+
+  /* ---------------- A) 인트로 3D 지구본 ---------------- */
+  function loadScript(src) {
+    return new Promise((res, rej) => {
+      const s = document.createElement("script");
+      s.src = src; s.onload = res; s.onerror = rej;
+      document.head.appendChild(s);
+    });
+  }
+  window.hseLoadGlobe = async function () {
+    try {
+      if (!(window.d3 && window.d3.geoOrthographic)) {
+        await loadScript("https://cdn.jsdelivr.net/npm/d3-array@3/dist/d3-array.min.js");
+        await loadScript("https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js");
+      }
+      const world = await (await fetch("world-map.json?v=iso2", { cache: "no-cache" })).json();
+      return { d3: window.d3, world };
+    } catch (e) {
+      console.warn("[인트로] 지구본 준비 실패, 건너뜀", e);
+      return null;
+    }
+  };
+
+  window.hseRunGlobe = function (el, globe, next, isFinished) {
+    const { d3, world } = globe;
+    const box = el.querySelector(".hse-intro-slides");
+    const capbox = el.querySelector(".hse-intro-capbox");
+    const cv = document.createElement("canvas");
+    cv.className = "globe-canvas";
+    box.appendChild(cv);
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    const W = window.innerWidth, H = window.innerHeight;
+    cv.width = W * dpr; cv.height = H * dpr;
+    const ctx = cv.getContext("2d");
+    ctx.scale(dpr, dpr);
+    const R0 = Math.min(W, H) * 0.4;
+    const proj = d3.geoOrthographic().translate([W / 2, H / 2]).scale(R0).clipAngle(90).precision(0.6);
+    const path = d3.geoPath(proj, ctx);
+    const grat = d3.geoGraticule10();
+    const iraq = world.features.find((f) => f.properties.iso === "IRQ");
+    const korea = world.features.find((f) => f.properties.iso === "KOR");
+    const interp = d3.geoInterpolate(SEOUL, SITE);
+    const distKm = Math.round(d3.geoDistance(SEOUL, SITE) * 6371);
+    const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+
+    const T1 = 2600, T2 = 1900; // 1단계: 서울→비스마야 비행 / 2단계: 현장으로 확대
+    let start = 0, handed = false;
+    capbox.innerHTML = `<div class="hse-intro-cap globe"><b id="globeKm">0 km</b><span>SEOUL → BISMAYAH · 서울에서 비스마야까지</span></div>`;
+    const kmEl = capbox.querySelector("#globeKm");
+
+    function label(lonlat, text, color) {
+      if (d3.geoDistance(lonlat, proj.invert([W / 2, H / 2])) > Math.PI / 2 - 0.05) return;
+      const [x, y] = proj(lonlat);
+      ctx.fillStyle = color;
+      ctx.beginPath(); ctx.arc(x, y, 5, 0, Math.PI * 2); ctx.fill();
+      ctx.font = "700 14px 'JetBrains Mono', monospace";
+      ctx.fillStyle = "#fff";
+      ctx.fillText(text, x + 10, y - 8);
+    }
+
+    function frame(now) {
+      if (isFinished()) return;
+      if (!start) start = now;
+      const t = now - start;
+      let center, k = 1, arcT = 1;
+      if (t < T1) {
+        const e = ease(Math.min(1, t / T1));
+        arcT = e;
+        center = interp(Math.min(1, e * 1.05)); // 비행기 머리를 따라 지구가 돈다
+      } else {
+        center = SITE;
+        const e = ease(Math.min(1, (t - T1) / T2));
+        k = Math.pow(22, e); // 현장으로 22배 확대 (더 키우면 지도가 각져 보임)
+      }
+      proj.rotate([-center[0], -center[1]]).scale(R0 * k);
+
+      ctx.clearRect(0, 0, W, H);
+      // 바다 + 대기 빛
+      const R = proj.scale();
+      const g = ctx.createRadialGradient(W / 2 - R * 0.3, H / 2 - R * 0.3, R * 0.1, W / 2, H / 2, R);
+      g.addColorStop(0, "#0e2238"); g.addColorStop(1, "#040c16");
+      ctx.save();
+      ctx.shadowColor = "rgba(53,208,192,0.55)"; ctx.shadowBlur = 40;
+      ctx.beginPath(); path({ type: "Sphere" }); ctx.fillStyle = g; ctx.fill();
+      ctx.restore();
+      ctx.beginPath(); path(grat); ctx.strokeStyle = "rgba(255,255,255,0.06)"; ctx.lineWidth = 0.6; ctx.stroke();
+      ctx.beginPath(); path(world); ctx.fillStyle = "#3a5068"; ctx.fill();
+      ctx.strokeStyle = "rgba(53,208,192,0.35)"; ctx.lineWidth = 0.5; ctx.stroke();
+      if (korea) { ctx.beginPath(); path(korea); ctx.fillStyle = "rgba(53,208,192,0.55)"; ctx.fill(); }
+      if (iraq) { ctx.beginPath(); path(iraq); ctx.fillStyle = "rgba(242,169,59,0.55)"; ctx.fill(); }
+
+      // 비행선
+      const n = 80, pts = [];
+      for (let i = 0; i <= n * arcT; i++) pts.push(interp(i / n));
+      if (pts.length > 1) {
+        ctx.save();
+        ctx.beginPath(); path({ type: "LineString", coordinates: pts });
+        ctx.strokeStyle = "#ffd166"; ctx.lineWidth = 2.5; ctx.shadowColor = "#ffd166"; ctx.shadowBlur = 12; ctx.stroke();
+        ctx.restore();
+        const head = pts[pts.length - 1];
+        if (d3.geoDistance(head, center) < Math.PI / 2) {
+          const [hx, hy] = proj(head);
+          ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.arc(hx, hy, 4, 0, Math.PI * 2); ctx.fill();
+        }
+      }
+      label(SEOUL, "SEOUL", "#35d0c0");
+      if (arcT > 0.95) {
+        const pulse = 6 + 4 * Math.sin(now / 150);
+        if (d3.geoDistance(SITE, center) < Math.PI / 2) {
+          const [sx, sy] = proj(SITE);
+          ctx.strokeStyle = "rgba(242,169,59,0.9)"; ctx.lineWidth = 2;
+          ctx.beginPath(); ctx.arc(sx, sy, pulse + 6, 0, Math.PI * 2); ctx.stroke();
+        }
+        label(SITE, "BISMAYAH", "#f2a93b");
+      }
+      kmEl.textContent = `${Math.round(distKm * arcT).toLocaleString()} km`;
+
+      // 확대 막바지에 위성사진으로 넘겨 준다 (지구본은 서서히 사라짐)
+      if (!handed && t > T1 + T2 * 0.6) {
+        handed = true;
+        cv.classList.add("fade");
+        setTimeout(() => cv.remove(), 900);
+        next();
+        return;
+      }
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  };
+
+  /* ---------------- B) 날씨에 반응하는 마스코트 ---------------- */
+  function setupMascotMood() {
+    const runner = document.querySelector(".mascot-runner");
+    const step = runner && runner.querySelector(".mascot-step");
+    if (!step) return false;
+    if (!step.querySelector(".mx-mask")) {
+      step.insertAdjacentHTML("beforeend",
+        '<div class="mx-mask"></div><div class="mx-sweat"><i></i><i></i></div><div class="mx-wind"><i></i><i></i><i></i></div>');
+    }
+    let lastMood = "";
+    function apply(w) {
+      const forced = params.get("mascot");
+      const heat = forced === "heat" || (w && ((w.feel != null && w.feel >= 40) || (w.temp != null && w.temp >= 40)));
+      const dust = forced === "dust" || (w && ((w.dust != null && w.dust > 150) || (w.pm10 != null && w.pm10 > 250)));
+      const wind = forced === "wind" || (w && w.gust != null && w.gust > 10);
+      const night = forced === "night" || (w && w.isDay === 0);
+      runner.classList.toggle("mood-heat", !!heat);
+      runner.classList.toggle("mood-dust", !!dust);
+      runner.classList.toggle("mood-wind", !!wind);
+      const feel = w && w.feel != null ? Math.round(w.feel) : null;
+      const gust = w && w.gust != null ? w.gust.toFixed(1) : null;
+      const lines = [];
+      if (dust) lines.push("모래먼지 많아요! 마스크 착용!", "시야 확보 주의!", "장비 운전 천천히!");
+      if (heat) lines.push(feel ? `체감 ${feel}℃! 물 꼭 드세요` : "폭염! 물 꼭 드세요", "그늘에서 쉬어 가요!", "무리하지 않기!");
+      if (wind) lines.push(gust ? `순간풍속 ${gust}m/s! 턱끈 꽉!` : "강풍! 턱끈 꽉!", "고소작업 주의!", "자재 날림 주의!");
+      if (night) lines.push("야간작업 조명 확인!", "피곤하면 쉬어 가요!");
+      window.hseMascotLines = lines;
+      const mood = [heat && "heat", dust && "dust", wind && "wind"].filter(Boolean).join(",");
+      if (mood && mood !== lastMood && window.hseMascotSay) window.hseMascotSay(lines[0]); // 상태가 바뀌면 바로 한마디
+      lastMood = mood;
+    }
+    window.addEventListener("hse-weather", (e) => apply(e.detail));
+    apply(window.hseWx || null);
+    return true;
+  }
+  // 마스코트는 페이지가 뜬 뒤에 만들어지므로 잠시 기다렸다 연결
+  (function waitMascot(n) { if (!setupMascotMood() && n < 40) setTimeout(() => waitMascot(n + 1), 250); })(0);
+
+  /* ---------------- C) 공항 전광판식 숫자판 ---------------- */
+  const FLAP_IDS = new Set(["incidentFreeDays", "constructionDays"]);
+  function flapTo(el, target, onDone) {
+    const text = Number(target).toLocaleString("ko-KR");
+    el.dataset.value = target;
+    el.setAttribute("aria-label", text);
+    el.classList.add("flapboard");
+    el.innerHTML = [...text].map((ch) => (/\d/.test(ch) ? `<span class="flap">0</span>` : `<span class="flap-sep">${ch}</span>`)).join("");
+    const tiles = [...el.querySelectorAll(".flap")];
+    const digits = [...text].filter((c) => /\d/.test(c));
+    const t0 = performance.now();
+    const settleAt = tiles.map((_, i) => 500 + i * 140);
+    const done = new Array(tiles.length).fill(false);
+    const timer = setInterval(() => {
+      const t = performance.now() - t0;
+      tiles.forEach((tile, i) => {
+        if (done[i]) return;
+        const v = t >= settleAt[i] ? digits[i] : String(Math.floor(Math.random() * 10));
+        if (tile.textContent !== v) {
+          tile.textContent = v;
+          tile.classList.remove("flip"); void tile.offsetWidth; tile.classList.add("flip");
+        }
+        if (t >= settleAt[i]) done[i] = true;
+      });
+      if (done.every(Boolean)) { clearInterval(timer); if (onDone) onDone(target); }
+    }, 70);
+  }
+  if (!reduce && typeof animateCount === "function") {
+    const original = animateCount;
+    // eslint-disable-next-line no-global-assign
+    animateCount = function (el, target) {
+      if (el && FLAP_IDS.has(el.id)) return flapTo(el, target, el.id === "incidentFreeDays" ? checkMilestone : null);
+      return original(el, target);
+    };
+  }
+  // 바그다드 자정이 지나면 두 숫자를 하루씩 올린다 (전광판이 넘어가는 장면)
+  const dayKey = () => new Intl.DateTimeFormat("en-CA", { timeZone: TIMEZONE }).format(new Date());
+  let today = dayKey();
+  setInterval(() => {
+    const k = dayKey();
+    if (k === today) return;
+    today = k;
+    FLAP_IDS.forEach((id) => {
+      const el = document.getElementById(id);
+      const v = el && parseInt(el.dataset.value || String(el.textContent).replace(/[^\d]/g, ""), 10);
+      if (v > 0) flapTo(el, v + 1, id === "incidentFreeDays" ? checkMilestone : null);
+    });
+  }, 60 * 1000);
+
+  /* ---------------- D) 무재해 기념일 축하 ---------------- */
+  let celebrated = false;
+  function isMilestone(d) { return d > 0 && (d % 100 === 0 || d % 365 === 0 || d === 30 || d === 50); }
+  function checkMilestone(days) {
+    if (celebrated) return;
+    const forced = params.get("celebrate") === "1";
+    if (!forced && !isMilestone(days)) return;
+    celebrated = true;
+    // 인트로가 끝난 뒤에 터뜨린다
+    (function wait() {
+      if (document.querySelector(".hse-intro")) return setTimeout(wait, 400);
+      celebrate(days);
+    })();
+  }
+  function celebrate(days) {
+    const yearsTxt = days % 365 === 0 ? ` (${days / 365}년)` : "";
+    const banner = document.createElement("div");
+    banner.className = "celebrate-banner";
+    banner.innerHTML = `<b>무재해 ${days.toLocaleString()}일 달성${yearsTxt}</b><span>함께 지켜 주신 모든 분께 감사드립니다</span><button type="button" aria-label="닫기">×</button>`;
+    document.body.appendChild(banner);
+    banner.querySelector("button").onclick = () => banner.remove();
+    if (reduce) return;
+    const cv = document.createElement("canvas");
+    cv.className = "confetti-canvas";
+    document.body.appendChild(cv);
+    const ctx = cv.getContext("2d");
+    const W = (cv.width = window.innerWidth), H = (cv.height = window.innerHeight);
+    const colors = ["#35d0c0", "#f2a93b", "#ffd166", "#ff7e79", "#4fb4ff", "#ffffff"];
+    const parts = [];
+    const burst = (x, y, n) => {
+      for (let i = 0; i < n; i++) {
+        const a = Math.random() * Math.PI * 2, sp = 4 + Math.random() * 9;
+        parts.push({ x, y, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp - 4, r: 3 + Math.random() * 4, c: colors[i % colors.length], rot: Math.random() * 6, life: 1 });
+      }
+    };
+    // 폭죽 몇 발 + 위에서 꽃가루
+    [[0.2, 0.35], [0.8, 0.3], [0.5, 0.22], [0.35, 0.45], [0.65, 0.42]].forEach(([fx, fy], i) => setTimeout(() => burst(W * fx, H * fy, 70), i * 450));
+    for (let i = 0; i < 160; i++) parts.push({ x: Math.random() * W, y: -Math.random() * H, vx: (Math.random() - 0.5) * 1.5, vy: 1.5 + Math.random() * 2.5, r: 3 + Math.random() * 4, c: colors[i % colors.length], rot: Math.random() * 6, life: 1, flake: true });
+    const t0 = performance.now();
+    (function tick(now) {
+      const t = now - t0;
+      ctx.clearRect(0, 0, W, H);
+      parts.forEach((p) => {
+        p.x += p.vx; p.y += p.vy; p.rot += 0.1;
+        if (!p.flake) { p.vy += 0.18; p.vx *= 0.985; p.life -= 0.008; } else { p.x += Math.sin(now / 300 + p.r) * 0.6; }
+        ctx.save(); ctx.globalAlpha = Math.max(0, p.life) * (t > 6000 ? Math.max(0, 1 - (t - 6000) / 1500) : 1);
+        ctx.translate(p.x, p.y); ctx.rotate(p.rot); ctx.fillStyle = p.c;
+        ctx.fillRect(-p.r, -p.r / 2, p.r * 2, p.r); ctx.restore();
+      });
+      if (t < 7500) requestAnimationFrame(tick); else cv.remove();
+    })(t0);
+  }
+  if (params.get("celebrate") === "1") {
+    // 미리 보기: 숫자가 늦게 오더라도 축하가 나오게
+    setTimeout(() => { const el = document.getElementById("incidentFreeDays"); checkMilestone(parseInt((el && el.dataset.value) || (el && el.textContent.replace(/[^\d]/g, "")) || "100", 10) || 100); }, 3000);
+  }
+
+  /* ---------------- E) 실시간 하늘색 배너 ---------------- */
+  const bar = document.querySelector(".topbar");
+  if (bar) {
+    const sky = document.createElement("div");
+    sky.className = "sky-layer";
+    sky.innerHTML = '<div class="sky-body"></div>';
+    bar.prepend(sky);
+    const body = sky.querySelector(".sky-body");
+    const rad = Math.PI / 180;
+    // 간단한 태양 위치 계산 (NOAA 근사식)
+    function sunInfo(date, lat, lon) {
+      const start = Date.UTC(date.getUTCFullYear(), 0, 0);
+      const doy = (date - start) / 86400000;
+      const g = (2 * Math.PI / 365) * (doy - 1);
+      const eqt = 229.18 * (0.000075 + 0.001868 * Math.cos(g) - 0.032077 * Math.sin(g) - 0.014615 * Math.cos(2 * g) - 0.040849 * Math.sin(2 * g));
+      const decl = 0.006918 - 0.399912 * Math.cos(g) + 0.070257 * Math.sin(g) - 0.006758 * Math.cos(2 * g) + 0.000907 * Math.sin(2 * g) - 0.002697 * Math.cos(3 * g) + 0.00148 * Math.sin(3 * g);
+      const utcMin = date.getUTCHours() * 60 + date.getUTCMinutes() + date.getUTCSeconds() / 60;
+      const ha = ((utcMin + eqt + 4 * lon) / 4 - 180) * rad;
+      const alt = Math.asin(Math.sin(lat * rad) * Math.sin(decl) + Math.cos(lat * rad) * Math.cos(decl) * Math.cos(ha)) / rad;
+      const h0 = Math.acos(Math.min(1, Math.max(-1, Math.cos(90.833 * rad) / (Math.cos(lat * rad) * Math.cos(decl)) - Math.tan(lat * rad) * Math.tan(decl)))) / rad;
+      const noon = 720 - 4 * lon - eqt; // UTC 분
+      return { alt, rise: noon - 4 * h0, set: noon + 4 * h0, utcMin };
+    }
+    const mix = (a, b, t) => a.map((v, i) => Math.round(v + (b[i] - v) * t));
+    const hex = (c) => `rgb(${c.join(",")})`;
+    const STOPS = [ // [고도, 위쪽색, 아래쪽색]
+      [-18, [6, 10, 26], [12, 20, 46]],
+      [-8, [22, 24, 64], [70, 42, 92]],
+      [-2, [52, 40, 96], [196, 96, 64]],
+      [4, [40, 70, 120], [232, 150, 80]],
+      [15, [28, 88, 148], [120, 170, 210]],
+      [40, [22, 96, 160], [80, 160, 220]],
+    ];
+    function colorsAt(alt) {
+      if (alt <= STOPS[0][0]) return [STOPS[0][1], STOPS[0][2]];
+      for (let i = 1; i < STOPS.length; i++) {
+        if (alt <= STOPS[i][0]) {
+          const t = (alt - STOPS[i - 1][0]) / (STOPS[i][0] - STOPS[i - 1][0]);
+          return [mix(STOPS[i - 1][1], STOPS[i][1], t), mix(STOPS[i - 1][2], STOPS[i][2], t)];
+        }
+      }
+      const last = STOPS[STOPS.length - 1];
+      return [last[1], last[2]];
+    }
+    function update() {
+      const forced = params.get("sky");
+      let info = sunInfo(new Date(), SITE[1], SITE[0]);
+      if (forced) info = { ...info, alt: { dawn: -3, day: 45, dusk: 2, night: -25 }[forced] ?? info.alt,
+        utcMin: forced === "night" ? info.set + 180 : forced === "dawn" ? info.rise + 5 : forced === "dusk" ? info.set - 20 : (info.rise + info.set) / 2 };
+      const [top, bottom] = colorsAt(info.alt);
+      sky.style.background = `linear-gradient(180deg, ${hex(top)}, ${hex(bottom)})`;
+      // 해: 해 뜰 때 왼쪽 → 질 때 오른쪽 / 달: 밤 동안 같은 방향으로
+      const day = info.utcMin >= info.rise && info.utcMin <= info.set;
+      let p;
+      if (day) p = (info.utcMin - info.rise) / (info.set - info.rise);
+      else {
+        const nightLen = 1440 - (info.set - info.rise);
+        const since = (info.utcMin - info.set + 1440) % 1440;
+        p = since / nightLen;
+      }
+      body.className = `sky-body ${day ? "sun" : "moon"}`;
+      body.style.left = `${4 + p * 92}%`;
+      body.style.top = `${70 - Math.sin(Math.PI * p) * 55}%`;
+    }
+    update();
+    setInterval(update, 60 * 1000);
+  }
+})();
