@@ -2216,6 +2216,9 @@ body.bg-fires { --tab-bg: url('assets/bg-fires.jpg'); --tab-bg-webp: url('assets
 body.bg-iraq-cd { --tab-bg: url('assets/bg-iraq-cd.jpg'); --tab-bg-webp: url('assets/bg-iraq-cd.webp'); }         /* 소방 > 이라크 민방위(소방) 소식 */
 body.bg-ships { --tab-bg: url('assets/bg-ships.jpg'); --tab-bg-webp: url('assets/bg-ships.webp'); }           /* 기타 정보 > 해상·항공 현황 */
 body.bg-global { --tab-bg: url('assets/bg-global.jpg'); --tab-bg-webp: url('assets/bg-global.webp'); }          /* 기타 정보 > 해외 현장 */
+body.bg-env-dust { --tab-bg: url('assets/bg-env-dust.jpg'); --tab-bg-webp: url('assets/bg-env-dust.webp'); }        /* 환경 > 모래폭풍 예보 */
+body.bg-env-quake { --tab-bg: url('assets/bg-env-quake.jpg'); --tab-bg-webp: url('assets/bg-env-quake.webp'); }       /* 환경 > 중동 지진 현황 */
+body.bg-travel { --tab-bg: url('assets/bg-travel.jpg'); --tab-bg-webp: url('assets/bg-travel.webp'); }          /* 기타 정보 > 주변국 여행경보 */
 
 /* ---------- 배경 사진 살리기: 카드 등장 효과 · 배경 보기 ---------- */
 .view.view-enter .grid > .panel {
