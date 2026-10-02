@@ -4347,7 +4347,8 @@ async function loadTravel() {
   try {
     [alarm, world] = await Promise.all([
       fetch("travel-alarm.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)),
-      fetch("world-map.json", { cache: "force-cache" }).then((r) => r.json()),
+      // 브라우저에 남아 있는 예전 지도 파일(나라 코드 없는 판)을 쓰지 않도록 항상 새로 확인
+      fetch("world-map.json?v=iso2", { cache: "no-cache" }).then((r) => r.json()),
     ]);
   } catch (e) { /* 아래에서 처리 */ }
   travelMap = L.map("travelMap", { zoomSnap: 0.5, minZoom: 3, maxZoom: 7, attributionControl: true }).setView([29, 47], 4);
