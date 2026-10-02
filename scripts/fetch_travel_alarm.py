@@ -30,14 +30,29 @@ def service_key():
 
 
 def rows_of(j):
-    """응답 모양이 두 가지라 둘 다 처리: {data:[...]} 또는 {response:{body:{items:{item:[...]}}}}"""
+    """응답 모양이 여러 가지라 모두 처리:
+       {data:[...]} / {response:{body:{items:{item:[...]}}}} / {response:{body:{items:[...]}}} / {items:[...]}"""
     if isinstance(j.get("data"), list):
         return j["data"], int(j.get("totalCount") or len(j["data"]))
+    if isinstance(j.get("items"), list):
+        return j["items"], int(j.get("totalCount") or len(j["items"]))
     body = (j.get("response") or {}).get("body") or {}
-    items = (body.get("items") or {}).get("item") or []
+    items = body.get("items") or []
+    if isinstance(items, dict):
+        items = items.get("item") or []
     if isinstance(items, dict):
         items = [items]
     return items, int(body.get("totalCount") or len(items))
+
+
+def pick(row, *names):
+    """필드 이름이 대소문자·밑줄 표기만 다를 수 있어 느슨하게 찾는다"""
+    norm = {str(k).lower().replace("_", ""): v for k, v in row.items()}
+    for n in names:
+        v = norm.get(n.lower().replace("_", ""))
+        if v not in (None, ""):
+            return v
+    return ""
 
 
 def level_of(v):
@@ -67,24 +82,34 @@ def main():
             break
         page += 1
 
+    if rows:
+        print("첫 행 필드:", list(rows[0].keys()))
+        print("첫 행 예시:", json.dumps(rows[0], ensure_ascii=False)[:500])
+    else:
+        print("[경고] 받은 행이 없습니다. 응답 앞부분:", json.dumps(j, ensure_ascii=False)[:500])
+
     countries = {}
     for it in rows:
-        iso2 = str(it.get("country_iso_alp2") or "").upper().strip()
+        iso2 = str(pick(it, "country_iso_alp2", "iso_alp2", "countryIsoAlp2", "iso2")).upper().strip()
         if not iso2:
             continue
-        lvl = level_of(it.get("alarm_lvl"))
+        lvl = level_of(pick(it, "alarm_lvl", "alarmLvl", "alarm_level", "current_travel_alarm"))
         c = countries.setdefault(iso2, {
-            "iso2": iso2, "name": it.get("country_nm") or "", "nameEn": it.get("country_eng_nm") or "",
-            "level": 0, "regions": [], "written": it.get("written_dt") or "",
+            "iso2": iso2, "name": pick(it, "country_nm", "countryName") or "", "nameEn": pick(it, "country_eng_nm") or "",
+            "level": 0, "regions": [], "written": pick(it, "written_dt", "wrt_dt") or "",
         })
         c["level"] = max(c["level"], lvl)
-        region = str(it.get("region_ty") or "").strip()
-        remark = str(it.get("remark") or "").strip()
+        region = str(pick(it, "region_ty", "regionTy", "region") or "").strip()
+        remark = str(pick(it, "remark", "rmk") or "").strip()
         if lvl and (region or remark):
             c["regions"].append({"level": lvl, "levelName": LEVEL_NAME.get(lvl, ""), "region": region, "remark": remark[:300]})
     for c in countries.values():
         c["levelName"] = LEVEL_NAME.get(c["level"], "")
         c["partial"] = len({r["level"] for r in c["regions"]}) > 1  # 지역마다 단계가 다르면 '일부 지역'
+
+    if not countries:
+        print("[오류] 나라별 여행경보를 하나도 읽지 못했습니다. 위의 '첫 행 필드'를 확인해 주세요.", file=sys.stderr)
+        sys.exit(1)   # 빈 파일로 덮어쓰지 않는다
 
     out = {
         "_readme": "외교부 국가·지역별 여행경보 API로 GitHub Actions가 자동 생성합니다. 직접 수정하지 마세요. 출처: 외교부 해외안전여행(0404.go.kr)",
