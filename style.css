@@ -65,7 +65,8 @@ body::before {
   background-size: auto, auto, cover, cover, cover, cover;
   /* 모든 사진은 위쪽 끝이 배너 바로 아래에 오도록 맞춘다 (사진이 길면 아래쪽이 잘림)
      --tab-bg-pos: 탭마다 기준을 바꾸고 싶을 때만 지정 (예: center 30%) */
-  background-position: 0 0, 0 0, center center, var(--tab-bg-pos, center top), var(--tab-bg-pos, center top), center top;
+  /* --bg-y: 스크롤에 따라 0%(맨 위) → 100%(맨 아래)로 바뀌어, 페이지를 내리면 사진 아래쪽이 드러난다 (script.js) */
+  background-position: 0 0, 0 0, center center, var(--tab-bg-pos, center var(--bg-y, 0%)), var(--tab-bg-pos, center var(--bg-y, 0%)), center var(--bg-y, 0%);
   background-repeat: no-repeat;
   transition: top 0.2s ease;
 }
@@ -2259,3 +2260,104 @@ body.bg-reveal .bg-peek-btn { opacity: 1; border-color: var(--cyan); color: var(
 
 /* 탭별 사진 기준 위치 (기본은 모든 탭 '위쪽 기준'. 특정 사진만 바꾸고 싶을 때 아래처럼 추가)
    예) body.bg-fires { --tab-bg-pos: center 30%; }  → 위에서 30% 지점을 기준으로 */
+
+/* ==========================================================
+   배경 특수효과
+   ========================================================== */
+/* 3) 켄 번즈: 사진이 아주 천천히 확대되며 살짝 흐른다 (위쪽 끝은 배너 아래에 고정) */
+body::before {
+  transform-origin: 50% 0;
+  animation: kenBurns 70s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes kenBurns {
+  from { transform: scale(1) translateX(0); }
+  to { transform: scale(1.09) translateX(-1.6%); }
+}
+/* 사진 전환용 겹침 층 + 날씨 효과 캔버스: 사진 위, 카드 아래 */
+.bg-fade-layer, .wx-canvas {
+  position: fixed; left: 0; right: 0; bottom: 0; top: var(--hdr, 0px);
+  z-index: -1; pointer-events: none;
+}
+.bg-fade-layer { opacity: 0; background-repeat: no-repeat; transform-origin: 50% 0; }
+.wx-canvas { width: 100%; height: calc(100vh - var(--hdr, 0px)); }
+
+/* 1) 날씨 효과 안내 칩 */
+.wx-chip {
+  position: fixed; left: 18px; bottom: 18px; z-index: 400;
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--text-muted); background: rgba(10, 14, 19, 0.7);
+  border: 1px solid var(--border); border-radius: 999px; padding: 7px 14px; backdrop-filter: blur(6px);
+}
+.wx-chip i { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 8px var(--gold); animation: wxDot 2s ease-in-out infinite; }
+.wx-chip b { color: var(--gold); font-weight: 600; }
+.wx-chip[hidden] { display: none; }
+@keyframes wxDot { 50% { opacity: 0.35; } }
+
+/* 5) 경보 테두리 */
+.alert-glow {
+  position: fixed; inset: 0; z-index: 350; pointer-events: none;
+  box-shadow: inset 0 0 0 2px rgba(229, 72, 77, 0.55), inset 0 0 80px rgba(229, 72, 77, 0.45);
+  animation: alertBreath 3.2s ease-in-out infinite;
+}
+.alert-glow.still { animation: none; opacity: 0.7; }
+.alert-glow[hidden], .alert-chip[hidden] { display: none; }
+@keyframes alertBreath { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+.alert-chip {
+  position: fixed; left: 50%; transform: translateX(-50%); bottom: 18px; z-index: 360; /* 탭 버튼을 가리지 않게 화면 아래 가운데 */
+  display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; max-width: 80vw;
+  font-size: 12.5px; color: #ffd6d7; background: rgba(60, 10, 14, 0.85);
+  border: 1px solid rgba(229, 72, 77, 0.7); border-radius: 999px; padding: 6px 16px; backdrop-filter: blur(6px);
+}
+.alert-chip b { color: #fff; background: var(--danger); border-radius: 999px; padding: 0 8px; }
+.alert-chip span + span::before { content: "· "; opacity: 0.6; }
+
+/* 4) 첫 화면 인트로 */
+.hse-intro {
+  position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(circle at 50% 40%, #13202e, #070a0e 70%); cursor: pointer;
+  transition: opacity 0.8s ease, visibility 0.8s;
+}
+.hse-intro.out { opacity: 0; visibility: hidden; }
+.hse-intro-inner { text-align: center; }
+.hse-intro-logo {
+  width: min(280px, 50vw); border-radius: 10px; background: #fff; padding: 10px 18px;
+  opacity: 0; transform: scale(0.92); animation: introIn 0.7s 0.1s ease forwards;
+}
+.hse-intro-title {
+  margin-top: 26px; font-size: clamp(22px, 3vw, 36px); font-weight: 800; letter-spacing: 0.02em; color: #fff;
+  opacity: 0; transform: translateY(10px); animation: introIn 0.7s 0.5s ease forwards;
+}
+.hse-intro-sub {
+  margin-top: 10px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.3em; color: var(--cyan);
+  opacity: 0; animation: introIn 0.7s 0.8s ease forwards;
+}
+.hse-intro-line {
+  margin: 22px auto 0; height: 2px; width: 0; background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+  animation: introLine 1.2s 0.9s ease forwards;
+}
+@keyframes introIn { to { opacity: 1; transform: none; } }
+@keyframes introLine { to { width: min(420px, 70vw); } }
+
+/* 2) 상황실 순환 모드 자막 */
+.kiosk-caption {
+  position: fixed; left: 50%; bottom: 8vh; transform: translateX(-50%); z-index: 380; text-align: center;
+  padding: 18px 34px 14px; border-radius: 18px; background: rgba(8, 12, 18, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.12); backdrop-filter: blur(10px); max-width: 90vw;
+}
+.kiosk-caption[hidden] { display: none; }
+.kiosk-caption.in { animation: kioskIn 0.9s ease both; }
+@keyframes kioskIn { from { opacity: 0; transform: translate(-50%, 14px); } to { opacity: 1; transform: translate(-50%, 0); } }
+.kiosk-label { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.3em; color: var(--cyan); margin-bottom: 6px; }
+.kiosk-text { font-size: clamp(22px, 2.8vw, 40px); font-weight: 700; color: #fff; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6); }
+.kiosk-text b { color: var(--gold); font-family: var(--font-mono); }
+.kiosk-dots { display: flex; justify-content: center; gap: 6px; margin-top: 12px; }
+.kiosk-dots i { width: 6px; height: 6px; border-radius: 50%; background: rgba(255, 255, 255, 0.3); }
+.kiosk-dots i.on { background: var(--cyan); width: 18px; border-radius: 3px; }
+body.kiosk-on .bg-peek-btn, body.kiosk-on .wx-chip { opacity: 0.35; }
+
+@media (prefers-reduced-motion: reduce) {
+  body::before { animation: none; }
+  .hse-intro { display: none; }
+  .kiosk-caption.in { animation: none; }
+}
