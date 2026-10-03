@@ -908,59 +908,70 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
   });
 });
 
-/* ---------------- 대사관 안전공지 ---------------- */
+/* ---------------- 중동·주변국 대사관 안전공지 ----------------
+   embassy-notices.json: 나라별(이라크·이란·시리아·요르단·사우디 등 16개국) 최근 공지를 날짜순으로 합친 것.
+   위쪽 나라 버튼으로 걸러 볼 수 있다. */
+let embData = null, embCountry = "ALL";
 async function loadEmbassyNotices() {
   const list = document.getElementById("embassyList");
   try {
     const res = await fetch("embassy-notices.json", { cache: "no-store" });
     if (!res.ok) throw new Error("embassy-notices.json 로드 실패");
-    const data = await res.json();
-    renderEmbassyNotices(data.items, data.generatedAt);
+    embData = await res.json();
+    renderEmbassyNotices();
   } catch (err) {
     console.error(err);
     list.innerHTML = `<li class="embassy-row skeleton">아직 embassy-notices.json이 없거나 불러올 수 없습니다. GitHub Actions가 최초 1회 실행된 후 표시됩니다.</li>`;
   }
 }
 
-function renderEmbassyNotices(items, generatedAt) {
+function renderEmbassyNotices() {
   const list = document.getElementById("embassyList");
-  if (!items || !items.length) {
+  const items = (embData && embData.items) || [];
+  // 나라 버튼 (공지가 있는 나라만, 많은 순)
+  const counts = {};
+  items.forEach((n) => { const k = n.iso2 || "IQ"; counts[k] = counts[k] || { name: n.country || "이라크", n: 0 }; counts[k].n++; });
+  const flag = (iso) => `<img src="https://flagcdn.com/w40/${iso.toLowerCase()}.png" alt="" loading="lazy">`;
+  document.getElementById("embFilter").innerHTML =
+    `<button type="button" data-c="ALL" class="${embCountry === "ALL" ? "active" : ""}">전체 <b>${items.length}</b></button>` +
+    Object.entries(counts).sort((a, b) => b[1].n - a[1].n).map(([iso, c]) =>
+      `<button type="button" data-c="${iso}" class="${embCountry === iso ? "active" : ""}">${flag(iso)}${escapeHtml(c.name)} <b>${c.n}</b></button>`).join("");
+  document.querySelectorAll("#embFilter button").forEach((b) => b.onclick = () => { embCountry = b.dataset.c; renderEmbassyNotices(); });
+
+  const shown = embCountry === "ALL" ? items : items.filter((n) => (n.iso2 || "IQ") === embCountry);
+  if (!shown.length) {
     list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 안전공지가 없습니다.</li>`;
-    return;
-  }
-  const EMBASSY_LIST_URL = "https://www.mofa.go.kr/iq-ko/brd/m_11320/list.do";
-
-  list.innerHTML = items.map(n => {
-    const hasBody = n.body && n.body.trim().length > 0;
-    return `
-    <li class="embassy-row">
-      <div class="notice-top">
-        <span class="notice-title">${escapeHtml(n.title)}</span>
-        <span class="notice-date">${escapeHtml(n.date || "")}</span>
-      </div>
-      ${hasBody ? `
-        <div class="notice-body">${escapeHtml(n.body)}</div>
-        <button type="button" class="embassy-toggle">자세히 보기 ▾</button>
-      ` : `
-        <div class="notice-body embassy-empty">이 공지는 본문 요약이 제공되지 않습니다.</div>
-        <a class="embassy-link" href="${EMBASSY_LIST_URL}" target="_blank" rel="noopener noreferrer">대사관 홈페이지에서 원문 확인 ↗</a>
-      `}
-    </li>`;
-  }).join("");
-
-  document.querySelectorAll(".embassy-toggle").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const row = btn.closest(".embassy-row");
-      const expanded = row.classList.toggle("expanded");
-      btn.textContent = expanded ? "접기 ▴" : "자세히 보기 ▾";
+  } else {
+    list.innerHTML = shown.map((n) => {
+      const hasBody = n.body && n.body.trim().length > 0;
+      const iso = n.iso2 || "IQ";
+      return `
+      <li class="embassy-row">
+        <div class="notice-top">
+          <span class="notice-title"><span class="emb-country">${flag(iso)}${escapeHtml(n.country || "")}</span>${escapeHtml(n.title)}</span>
+          <span class="notice-date">${escapeHtml(n.date || "")}</span>
+        </div>
+        ${hasBody ? `
+          <div class="notice-body">${escapeHtml(n.body)}</div>
+          <button type="button" class="embassy-toggle">자세히 보기 ▾</button>
+        ` : `
+          <div class="notice-body embassy-empty">이 공지는 본문 요약이 제공되지 않습니다.</div>
+          <a class="embassy-link" href="https://www.0404.go.kr/" target="_blank" rel="noopener noreferrer">해외안전여행 홈페이지에서 원문 확인 ↗</a>
+        `}
+      </li>`;
+    }).join("");
+    list.querySelectorAll(".embassy-toggle").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const row = btn.closest(".embassy-row");
+        const expanded = row.classList.toggle("expanded");
+        btn.textContent = expanded ? "접기 ▴" : "자세히 보기 ▾";
+      });
     });
-  });
-
-  if (generatedAt) {
-    const dt = new Date(generatedAt);
+  }
+  if (embData && embData.generatedAt) {
     document.getElementById("embassyMeta").textContent =
-      "외교부 공공데이터 API 연동 · 마지막 수집: " +
-      new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(dt);
+      `외교부 공공데이터 API 연동 · 중동·주변국 ${(embData.countries || []).length || 1}개국 · 마지막 수집: ` +
+      new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(embData.generatedAt));
   }
 }
 
@@ -4812,7 +4823,8 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
 // 구글 번역은 나중에 그려지는 내용(클리닉 기록 등)을 놓치는 경우가 있어서, 이런 부분은 직접 영어로 그린다.
 const UI_LANG = (document.cookie.match(/googtrans=\/[^/]*\/([a-zA-Z-]+)/) || [])[1] || "ko";
 const UI_EN = UI_LANG !== "ko";
-const L = (ko, en) => (UI_EN ? en : ko);
+// 주의: 이름을 L 로 하면 지도 도구(Leaflet)의 L 을 가려서 모든 지도가 멈춘다
+const TT = (ko, en) => (UI_EN ? en : ko);
 const CLINIC_EN = {
   "질병": "Illness", "부상(업무 중)": "Injury (on duty)", "부상(업무 외)": "Injury (off duty)", "온열질환": "Heat illness",
   "건강상담": "Consultation", "기타": "Other", "투약": "Medication", "경과 관찰": "Observation", "처치": "Treatment",
@@ -4846,7 +4858,7 @@ async function loadClinic(force) {
   if (!force && Date.now() - clinicLoadedAt < 5 * 60 * 1000) return;
   document.getElementById("clinicInfo").innerHTML =
     (() => { const I = UI_EN ? CLINIC_INFO_EN : CLINIC_INFO;
-      return `<span><b>${L("운영", "Hours")}</b> ${escapeHtml(I.hours)}</span><span><b>${L("위치", "Location")}</b> ${escapeHtml(I.place)}</span><span><b>${L("연락", "Contact")}</b> ${escapeHtml(I.contact)}</span>`; })();
+      return `<span><b>${TT("운영", "Hours")}</b> ${escapeHtml(I.hours)}</span><span><b>${TT("위치", "Location")}</b> ${escapeHtml(I.place)}</span><span><b>${TT("연락", "Contact")}</b> ${escapeHtml(I.contact)}</span>`; })();
   const cards = document.getElementById("clinicCards");
   let rows;
   try {
@@ -4856,7 +4868,7 @@ async function loadClinic(force) {
     if (!r.ok) throw new Error(r.error || "불러오기 실패");
     rows = r.rows || [];
   } catch (e) {
-    cards.innerHTML = `<p class="skeleton">${L("진료 현황을 불러오지 못했습니다", "Could not load clinic data")} (${escapeHtml(e.message)})</p>`;
+    cards.innerHTML = `<p class="skeleton">${TT("진료 현황을 불러오지 못했습니다", "Could not load clinic data")} (${escapeHtml(e.message)})</p>`;
     return;
   }
   clinicLoadedAt = Date.now();
@@ -4871,15 +4883,15 @@ async function loadClinic(force) {
   const diff = week.length - prevWeek.length;
 
   cards.innerHTML = `
-    <div class="clinic-card"><span>${L("오늘 진료", "Visits today")}</span><b>${todayRows.length}</b><small>${L("건", "")}</small></div>
-    <div class="clinic-card"><span>${L("최근 7일", "Last 7 days")}</span><b>${week.length}</b><small>${L("건", "")}</small>
-      <em class="${diff > 0 ? "up" : diff < 0 ? "down" : ""}">${L("전주 대비", "vs prev. week")} ${diff > 0 ? "▲" : diff < 0 ? "▼" : ""} ${Math.abs(diff)}</em></div>
-    <div class="clinic-card ${injury ? "warn" : ""}"><span>${L("부상 (7일)", "Injuries (7d)")}</span><b>${injury}</b><small>${L("건", "")}</small></div>
-    <div class="clinic-card ${heat ? "heat" : ""}"><span>${L("온열질환 (7일)", "Heat illness (7d)")}</span><b>${heat}</b><small>${L("건", "")}</small></div>
-    <div class="clinic-card ${referred ? "danger" : ""}"><span>${L("외부 병원 후송 (7일)", "Hospital transfers (7d)")}</span><b>${referred}</b><small>${L("건", "")}</small></div>`;
+    <div class="clinic-card"><span>${TT("오늘 진료", "Visits today")}</span><b>${todayRows.length}</b><small>${TT("건", "")}</small></div>
+    <div class="clinic-card"><span>${TT("최근 7일", "Last 7 days")}</span><b>${week.length}</b><small>${TT("건", "")}</small>
+      <em class="${diff > 0 ? "up" : diff < 0 ? "down" : ""}">${TT("전주 대비", "vs prev. week")} ${diff > 0 ? "▲" : diff < 0 ? "▼" : ""} ${Math.abs(diff)}</em></div>
+    <div class="clinic-card ${injury ? "warn" : ""}"><span>${TT("부상 (7일)", "Injuries (7d)")}</span><b>${injury}</b><small>${TT("건", "")}</small></div>
+    <div class="clinic-card ${heat ? "heat" : ""}"><span>${TT("온열질환 (7일)", "Heat illness (7d)")}</span><b>${heat}</b><small>${TT("건", "")}</small></div>
+    <div class="clinic-card ${referred ? "danger" : ""}"><span>${TT("외부 병원 후송 (7일)", "Hospital transfers (7d)")}</span><b>${referred}</b><small>${TT("건", "")}</small></div>`;
 
   // 주별 추이 (구분별로 쌓기)
-  const weeks = [3, 2, 1, 0].map((w) => ({ label: w === 0 ? L("이번 주", "This week") : L(`${w}주 전`, `${w}w ago`), rows: inRange(w * 7, w * 7 + 6) }));
+  const weeks = [3, 2, 1, 0].map((w) => ({ label: w === 0 ? TT("이번 주", "This week") : TT(`${w}주 전`, `${w}w ago`), rows: inRange(w * 7, w * 7 + 6) }));
   const max = Math.max(1, ...weeks.map((w) => w.rows.length));
   document.getElementById("clinicTrend").innerHTML = weeks.map((w) => {
     const byCat = {};
@@ -4894,33 +4906,33 @@ async function loadClinic(force) {
   month.forEach((x) => String(x.symptom || "").split(/[,·/]/).map((t) => t.trim()).filter(Boolean).forEach((t) => { sym[t] = (sym[t] || 0) + 1; }));
   const top = Object.entries(sym).sort((a, b) => b[1] - a[1]).slice(0, 6);
   document.getElementById("clinicTop").innerHTML = top.length
-    ? top.map(([t, n], i) => `<li><span>${i + 1}</span>${escapeHtml(clinicTr(t))}<b>${n}${L("건", "")}</b></li>`).join("")
-    : `<li>${L("최근 30일 기록 없음", "No records in the last 30 days")}</li>`;
+    ? top.map(([t, n], i) => `<li><span>${i + 1}</span>${escapeHtml(clinicTr(t))}<b>${n}${TT("건", "")}</b></li>`).join("")
+    : `<li>${TT("최근 30일 기록 없음", "No records in the last 30 days")}</li>`;
 
   // 최근 기록 (가려진 이름·사번)
   const recent = rows.slice().sort((a, b) => (b.date + (b.time || "")).localeCompare(a.date + (a.time || ""))).slice(0, 25);
   document.getElementById("clinicTable").innerHTML = `
-    <thead><tr><th>${L("날짜", "Date")}</th><th>${L("시간", "Time")}</th><th>${L("이름", "Name")}</th><th>${L("사번", "ID")}</th><th>${L("소속", "Company")}</th><th>${L("구분", "Type")}</th><th>${L("증상", "Symptoms")}</th><th>${L("조치", "Action")}</th><th></th></tr></thead>
+    <thead><tr><th>${TT("날짜", "Date")}</th><th>${TT("시간", "Time")}</th><th>${TT("이름", "Name")}</th><th>${TT("사번", "ID")}</th><th>${TT("소속", "Company")}</th><th>${TT("구분", "Type")}</th><th>${TT("증상", "Symptoms")}</th><th>${TT("조치", "Action")}</th><th></th></tr></thead>
     <tbody>${recent.map((x) => `<tr>
       <td>${escapeHtml(x.date.slice(5).replace("-", "/"))}</td><td>${escapeHtml(x.time || "")}</td>
       <td>${escapeHtml(x.name || "")}</td><td class="mono">${escapeHtml(x.id || "")}</td><td>${escapeHtml(clinicTr(x.dept))}</td>
       <td><span class="clinic-cat" style="--c:${CLINIC_CAT_COLOR[x.cat] || "#8996a6"}">${escapeHtml(clinicTr(x.cat))}</span></td>
       <td>${escapeHtml(clinicTr(x.symptom))}</td><td class="${/후송/.test(x.action || "") ? "ref" : ""}">${escapeHtml(clinicTr(x.action))}</td>
       <td><button type="button" class="clinic-del" data-row="${x.row}" data-date="${escapeHtml(x.date)}" title="이 기록 삭제">×</button></td></tr>`).join("") ||
-      `<tr><td colspan="9">${L("아직 진료 기록이 없습니다. '+ 진료 기록 추가'로 입력해 주세요.", "No clinic records yet. Use '+ Add record' to enter one.")}</td></tr>`}</tbody>`;
+      `<tr><td colspan="9">${TT("아직 진료 기록이 없습니다. '+ 진료 기록 추가'로 입력해 주세요.", "No clinic records yet. Use '+ Add record' to enter one.")}</td></tr>`}</tbody>`;
   // 입력 도우미: 지금까지 쓴 소속·증상을 자동완성 목록으로
   const uniq = (arr) => [...new Set(arr.filter(Boolean))].slice(0, 30);
   document.getElementById("clinicDeptList").innerHTML = uniq(rows.map((x) => x.dept)).map((v) => `<option value="${escapeHtml(v)}">`).join("");
   document.getElementById("clinicSymList").innerHTML = uniq(["두통", "근육통", "요통", "소화불량", "감기", "발열", "찰과상", "열상", "열사병 의심", "탈수", "눈 이물질", ...Object.keys(sym)])
     .map((v) => `<option value="${escapeHtml(v)}">`).join("");
   document.querySelectorAll(".clinic-del").forEach((b) => b.onclick = async () => {
-    if (!confirm(L("이 진료 기록을 삭제할까요? (시트에서도 지워집니다)", "Delete this record? (It will also be removed from the sheet)"))) return;
+    if (!confirm(TT("이 진료 기록을 삭제할까요? (시트에서도 지워집니다)", "Delete this record? (It will also be removed from the sheet)"))) return;
     b.disabled = true;
     try { await clinicCall("clinicDel", { row: Number(b.dataset.row), date: b.dataset.date }); await loadClinic(true); }
-    catch (e) { alert(L("삭제하지 못했습니다: ", "Could not delete: ") + e.message); b.disabled = false; }
+    catch (e) { alert(TT("삭제하지 못했습니다: ", "Could not delete: ") + e.message); b.disabled = false; }
   });
   document.getElementById("clinicMeta").textContent =
-    L(`구글 시트 '클리닉' 탭에서 불러옵니다 (최근 60일) · 이름과 사번은 일부를 가려서 표시합니다 · 불러온 시각 `, `From the 'Clinic' Google Sheet (last 60 days) · Names and IDs are partially masked · Updated `) + `${new Intl.DateTimeFormat(UI_EN ? "en-GB" : "ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date())}`;
+    TT(`구글 시트 '클리닉' 탭에서 불러옵니다 (최근 60일) · 이름과 사번은 일부를 가려서 표시합니다 · 불러온 시각 `, `From the 'Clinic' Google Sheet (last 60 days) · Names and IDs are partially masked · Updated `) + `${new Intl.DateTimeFormat(UI_EN ? "en-GB" : "ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date())}`;
 }
 document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => { if (btn.dataset.view === "view-health-clinic") loadClinic(false); });
@@ -4963,14 +4975,14 @@ async function clinicCall(action, payload) {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(form).entries());
     const save = form.querySelector('button[type="submit"]');
-    save.disabled = true; msg.textContent = L("저장 중…", "Saving…"); msg.className = "";
+    save.disabled = true; msg.textContent = TT("저장 중…", "Saving…"); msg.className = "";
     try {
       await clinicCall("clinicAdd", data);
-      msg.textContent = L(`저장했습니다 (${data.name.slice(0, 1)}*)`, `Saved (${data.name.slice(0, 1)}*)`); msg.className = "ok";
+      msg.textContent = TT(`저장했습니다 (${data.name.slice(0, 1)}*)`, `Saved (${data.name.slice(0, 1)}*)`); msg.className = "ok";
       reset(); form.name.focus();          // 이어서 다음 사람 입력
       await loadClinic(true);
     } catch (err) {
-      msg.textContent = L("저장하지 못했습니다: ", "Could not save: ") + err.message; msg.className = "err";
+      msg.textContent = TT("저장하지 못했습니다: ", "Could not save: ") + err.message; msg.className = "err";
     } finally { save.disabled = false; }
   };
 })();

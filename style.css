@@ -2211,7 +2211,7 @@ body.bg-sa { --tab-bg: url('assets/bg-sa.jpg'); --tab-bg-webp: url('assets/bg-sa
 body.bg-accidents { --tab-bg: url('assets/bg-accidents.jpg'); --tab-bg-webp: url('assets/bg-accidents.webp'); }       /* 안전 > 사고사례 */
 body.bg-procedures { --tab-bg: url('assets/bg-procedures.jpg'); --tab-bg-webp: url('assets/bg-procedures.webp'); }      /* 안전 > 안전작업절차서 */
 body.bg-workzone { --tab-bg: url('assets/bg-workzone.jpg'); --tab-bg-webp: url('assets/bg-workzone.webp'); }        /* 안전 > 작업구역 */
-body.bg-embassy { --tab-bg: url('assets/bg-embassy.jpg'); --tab-bg-webp: url('assets/bg-embassy.webp'); }         /* 안전 > 대사관 안전공지 */
+body.bg-embassy { --tab-bg: url('assets/bg-embassy.jpg'); --tab-bg-webp: url('assets/bg-embassy.webp'); }         /* 기타 정보 > 중동 대사관 안전공지 */
 body.bg-health-clinic { --tab-bg: url('assets/bg-health-clinic.jpg'); --tab-bg-webp: url('assets/bg-health-clinic.webp'); } /* 보건 > 현장 클리닉 현황 */
 body.bg-health-kdca { --tab-bg: url('assets/bg-health-kdca.jpg'); --tab-bg-webp: url('assets/bg-health-kdca.webp'); }     /* 보건 > 국내 감염병 현황 */
 body.bg-iraq-moh { --tab-bg: url('assets/bg-iraq-moh.jpg'); --tab-bg-webp: url('assets/bg-iraq-moh.webp'); }        /* 보건 > 이라크 보건부 소식 */
@@ -2618,3 +2618,12 @@ html:not(.page-ready) main.grid { opacity: 0; }
 @media (max-width: 900px) { .clinic-form { grid-template-columns: 1fr 1fr; } }
 .clinic-del { border: none; background: transparent; color: var(--text-dim); cursor: pointer; font-size: 15px; line-height: 1; padding: 0 4px; }
 .clinic-del:hover { color: #ff8a8d; }
+
+/* ---------- 중동 대사관 안전공지: 나라 버튼 ---------- */
+.emb-filter { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 12px; }
+.emb-filter button { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-body); font-size: 12.5px; font-weight: 600; cursor: pointer; color: var(--text-muted); background: rgba(10,14,19,0.6); border: 1px solid var(--border); border-radius: 999px; padding: 5px 12px; }
+.emb-filter button img, .emb-country img { width: 18px; height: 12px; object-fit: cover; border-radius: 2px; }
+.emb-filter button b { font-family: var(--font-mono); color: var(--text-dim); }
+.emb-filter button.active { color: #0a0e13; background: var(--cyan); border-color: var(--cyan); }
+.emb-filter button.active b { color: #0a0e13; }
+.emb-country { display: inline-flex; align-items: center; gap: 5px; margin-right: 8px; padding: 1px 8px; font-size: 11.5px; font-weight: 700; color: var(--cyan); border: 1px solid rgba(53,208,192,0.45); border-radius: 999px; vertical-align: 1px; }
