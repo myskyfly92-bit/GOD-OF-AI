@@ -2656,3 +2656,13 @@ html:not(.page-ready) main.grid { opacity: 0; }
 /* 두 자리씩 묶어 보이게: 시·분·초 사이 여백을 넓히고, 콜론은 깜빡이지 않게 */
 .fc-sep { display: inline-block; width: 0.38em; text-align: center; font-family: var(--font-mono); font-weight: 800; color: var(--cyan); margin: 0 1px; }
 @media (max-width: 1200px) { .flapclock { font-size: 24px; } }
+
+/* 대사관 바로가기 카드 */
+.emb-sub { font-size: 13px; font-weight: 700; margin: 10px 0 8px; color: var(--text); }
+.emb-sub small { font-weight: 400; color: var(--text-dim); margin-left: 8px; font-size: 11.5px; }
+.emb-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 8px; }
+.emb-link { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 8px; text-decoration: none; color: var(--text); font-size: 13px; font-weight: 600; background: rgba(255,255,255,0.03); border: 1px solid var(--border-soft); transition: border-color .15s, background .15s; }
+.emb-link:hover { border-color: var(--cyan); background: rgba(53,208,192,0.08); }
+.emb-link img { width: 22px; height: 15px; object-fit: cover; border-radius: 2px; flex: none; }
+.emb-link i { margin-left: auto; font-style: normal; color: var(--text-dim); }
+.emb-link-0404 { grid-column: 1 / -1; justify-content: center; color: var(--cyan); }

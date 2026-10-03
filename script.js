@@ -941,6 +941,23 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
    embassy-notices.json: 나라별(이라크·이란·시리아·요르단·사우디 등 16개국) 최근 공지를 날짜순으로 합친 것.
    위쪽 나라 버튼으로 걸러 볼 수 있다. */
 let embData = null, embCountry = "ALL", embKind = "ALL";
+// 대사관 바로가기 (외교부 재외공관 홈페이지). 시리아는 주레바논대사관이 겸임
+const EMBASSY_LINKS = [
+  ["IQ", "이라크", "iq-ko"], ["IR", "이란", "ir-ko"], ["JO", "요르단", "jo-ko"], ["SA", "사우디아라비아", "sa-ko"],
+  ["KW", "쿠웨이트", "kw-ko"], ["TR", "튀르키예", "tr-ko"], ["LB", "레바논 (시리아 겸임)", "lb-ko"], ["IL", "이스라엘", "il-ko"],
+  ["PS", "팔레스타인 (대표사무소)", "ps-ko"], ["EG", "이집트", "eg-ko"], ["AE", "아랍에미리트", "ae-ko"], ["QA", "카타르", "qa-ko"],
+  ["BH", "바레인", "bh-ko"], ["OM", "오만", "om-ko"], ["YE", "예멘", "ye-ko"],
+];
+(function renderEmbassyLinks() {
+  const box = document.getElementById("embLinks");
+  if (!box) return;
+  box.innerHTML = EMBASSY_LINKS.map(([iso, name, path]) => `
+    <a class="emb-link" href="https://overseas.mofa.go.kr/${path}/index.do" target="_blank" rel="noopener noreferrer">
+      <img src="https://flagcdn.com/w40/${iso.toLowerCase()}.png" alt="" loading="lazy">
+      <span>${escapeHtml(name)}</span><i>↗</i>
+    </a>`).join("") +
+    `<a class="emb-link emb-link-0404" href="https://www.0404.go.kr/" target="_blank" rel="noopener noreferrer"><span>외교부 해외안전여행 (전체 안전공지)</span><i>↗</i></a>`;
+})();
 async function loadEmbassyNotices() {
   const list = document.getElementById("embassyList");
   try {
@@ -976,7 +993,7 @@ function renderEmbassyNotices() {
 
   const shown = items.filter((n) => (embCountry === "ALL" || (n.iso2 || "IQ") === embCountry) && (embKind === "ALL" || (n.kind || "안전공지") === embKind));
   if (!shown.length) {
-    list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 공지가 없습니다.</li>`;
+    list.innerHTML = `<li class="embassy-row skeleton">외교부 공지 API가 현재 자료를 제공하지 않고 있습니다. 위의 대사관 바로가기와 아래 관련 뉴스를 확인해 주세요. (API에 자료가 다시 들어오면 여기에 자동으로 표시됩니다)</li>`;
   } else {
     list.innerHTML = shown.map((n) => {
       const hasBody = n.body && n.body.trim().length > 0;
@@ -4209,6 +4226,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     if (btn.dataset.view === "view-sa") loadTopicNews("sa");
     if (btn.dataset.view === "view-health-kdca") loadTopicNews("infect");
+    if (btn.dataset.view === "view-embassy") loadTopicNews("embassy");
   });
 });
 
