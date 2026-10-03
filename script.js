@@ -4874,16 +4874,77 @@ async function loadClinic(force) {
   // 최근 기록 (가려진 이름·사번)
   const recent = rows.slice().sort((a, b) => (b.date + (b.time || "")).localeCompare(a.date + (a.time || ""))).slice(0, 25);
   document.getElementById("clinicTable").innerHTML = `
-    <thead><tr><th>날짜</th><th>시간</th><th>이름</th><th>사번</th><th>소속</th><th>구분</th><th>증상</th><th>조치</th></tr></thead>
+    <thead><tr><th>날짜</th><th>시간</th><th>이름</th><th>사번</th><th>소속</th><th>구분</th><th>증상</th><th>조치</th><th></th></tr></thead>
     <tbody>${recent.map((x) => `<tr>
       <td>${escapeHtml(x.date.slice(5).replace("-", "/"))}</td><td>${escapeHtml(x.time || "")}</td>
       <td>${escapeHtml(x.name || "")}</td><td class="mono">${escapeHtml(x.id || "")}</td><td>${escapeHtml(x.dept || "")}</td>
       <td><span class="clinic-cat" style="--c:${CLINIC_CAT_COLOR[x.cat] || "#8996a6"}">${escapeHtml(x.cat || "")}</span></td>
-      <td>${escapeHtml(x.symptom || "")}</td><td class="${/후송/.test(x.action || "") ? "ref" : ""}">${escapeHtml(x.action || "")}</td></tr>`).join("") ||
-      '<tr><td colspan="8">아직 진료 기록이 없습니다. 구글 시트 \'클리닉\' 탭에 입력해 주세요.</td></tr>'}</tbody>`;
+      <td>${escapeHtml(x.symptom || "")}</td><td class="${/후송/.test(x.action || "") ? "ref" : ""}">${escapeHtml(x.action || "")}</td>
+      <td><button type="button" class="clinic-del" data-row="${x.row}" data-date="${escapeHtml(x.date)}" title="이 기록 삭제">×</button></td></tr>`).join("") ||
+      '<tr><td colspan="9">아직 진료 기록이 없습니다. 구글 시트 \'클리닉\' 탭에 입력해 주세요.</td></tr>'}</tbody>`;
+  // 입력 도우미: 지금까지 쓴 소속·증상을 자동완성 목록으로
+  const uniq = (arr) => [...new Set(arr.filter(Boolean))].slice(0, 30);
+  document.getElementById("clinicDeptList").innerHTML = uniq(rows.map((x) => x.dept)).map((v) => `<option value="${escapeHtml(v)}">`).join("");
+  document.getElementById("clinicSymList").innerHTML = uniq(["두통", "근육통", "요통", "소화불량", "감기", "발열", "찰과상", "열상", "열사병 의심", "탈수", "눈 이물질", ...Object.keys(sym)])
+    .map((v) => `<option value="${escapeHtml(v)}">`).join("");
+  document.querySelectorAll(".clinic-del").forEach((b) => b.onclick = async () => {
+    if (!confirm("이 진료 기록을 삭제할까요? (시트에서도 지워집니다)")) return;
+    b.disabled = true;
+    try { await clinicCall("clinicDel", { row: Number(b.dataset.row), date: b.dataset.date }); await loadClinic(true); }
+    catch (e) { alert("삭제하지 못했습니다: " + e.message); b.disabled = false; }
+  });
   document.getElementById("clinicMeta").textContent =
     `구글 시트 '클리닉' 탭에서 불러옵니다 (최근 60일) · 이름과 사번은 일부를 가려서 표시합니다 · 불러온 시각 ${new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date())}`;
 }
 document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => { if (btn.dataset.view === "view-health-clinic") loadClinic(false); });
 });
+
+/* 클리닉: 사이트에서 바로 진료 기록 넣기 */
+async function clinicCall(action, payload) {
+  const url = await getAppsScriptUrl();
+  if (!url) throw new Error("Apps Script 주소가 없습니다");
+  let pw = "";
+  try { pw = localStorage.getItem("wzPass") || ""; } catch (e) {}
+  const go = async (p) => {
+    const q = `action=${action}&payload=${encodeURIComponent(JSON.stringify({ ...payload, passcode: p }))}&t=${Date.now()}`;
+    const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + q)).json();
+    if (!r.ok) throw new Error(r.error || "실패");
+    return r;
+  };
+  try { return await go(pw); }
+  catch (e) {
+    if (!/암호/.test(e.message)) throw e;
+    const p = prompt("저장 암호를 입력하세요") || "";
+    try { localStorage.setItem("wzPass", p); } catch (er) {}
+    return go(p);
+  }
+}
+(function clinicForm() {
+  const form = document.getElementById("clinicForm");
+  const btn = document.getElementById("clinicAddBtn");
+  if (!form || !btn) return;
+  const msg = document.getElementById("clinicFormMsg");
+  const reset = () => {
+    const now = new Date();
+    form.reset();
+    form.date.value = new Intl.DateTimeFormat("en-CA", { timeZone: TIMEZONE }).format(now);
+    form.time.value = new Intl.DateTimeFormat("en-GB", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(now);
+  };
+  btn.onclick = () => { form.hidden = !form.hidden; if (!form.hidden) { reset(); form.name.focus(); } msg.textContent = ""; };
+  document.getElementById("clinicCancel").onclick = () => { form.hidden = true; };
+  form.onsubmit = async (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form).entries());
+    const save = form.querySelector('button[type="submit"]');
+    save.disabled = true; msg.textContent = "저장 중…"; msg.className = "";
+    try {
+      await clinicCall("clinicAdd", data);
+      msg.textContent = `저장했습니다 (${data.name.slice(0, 1)}*)`; msg.className = "ok";
+      reset(); form.name.focus();          // 이어서 다음 사람 입력
+      await loadClinic(true);
+    } catch (err) {
+      msg.textContent = "저장하지 못했습니다: " + err.message; msg.className = "err";
+    } finally { save.disabled = false; }
+  };
+})();

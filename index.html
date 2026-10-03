@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261003b">
+<link rel="stylesheet" href="style.css?v=20261003c">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -361,7 +361,24 @@
         <ul class="clinic-top" id="clinicTop"></ul>
       </div>
       <div>
-        <div class="clinic-sub">최근 진료 기록</div>
+        <div class="clinic-sub clinic-sub-row">최근 진료 기록 <button type="button" class="clinic-add-btn" id="clinicAddBtn">+ 진료 기록 추가</button></div>
+        <form class="clinic-form" id="clinicForm" hidden autocomplete="off">
+          <label>날짜<input type="date" name="date" required></label>
+          <label>시간<input type="time" name="time"></label>
+          <label>이름<input type="text" name="name" required placeholder="예: 김민수"></label>
+          <label>사번<input type="text" name="id" placeholder="예: 1234567"></label>
+          <label>소속<input type="text" name="dept" list="clinicDeptList" placeholder="예: 한화, 협력사"></label>
+          <label>구분<select name="cat" required>
+            <option>질병</option><option>부상(업무 중)</option><option>부상(업무 외)</option><option>온열질환</option><option>건강상담</option><option>기타</option>
+          </select></label>
+          <label class="wide">증상<input type="text" name="symptom" list="clinicSymList" placeholder="예: 두통, 근육통 (여러 개는 쉼표로)"></label>
+          <label>조치<select name="action">
+            <option>투약</option><option>경과 관찰</option><option>처치</option><option>휴식 후 복귀</option><option>외부 병원 후송</option><option>기타</option>
+          </select></label>
+          <label class="wide">비고 (사이트에 표시 안 됨)<input type="text" name="note" placeholder="담당자 메모"></label>
+          <div class="clinic-form-actions"><button type="submit">저장</button><button type="button" id="clinicCancel">닫기</button><span id="clinicFormMsg"></span></div>
+          <datalist id="clinicDeptList"></datalist><datalist id="clinicSymList"></datalist>
+        </form>
         <div class="clinic-table-wrap"><table class="clinic-table" id="clinicTable"></table></div>
       </div>
     </div>
@@ -727,7 +744,7 @@
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261003b"></script>
+<script src="script.js?v=20261003c"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">
