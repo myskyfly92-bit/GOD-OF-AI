@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-10-03T09:17:34.098Z",
+  "generatedAt": "2026-10-03T18:43:44.844Z",
   "health": [
+    {
+      "title": "وزارة الصحة: غارات العدو السعودي قرب مستشفى السبعين تلحق أضرارًا بالمستشفى وتسبب إصابات",
+      "source": "المسيرة نت",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9JZV8wdm82M1FNejF4TTJNSlpmdXU2R2d4U2N6UkVWQmxoSzB5dkZzQXU4S2ZZZ1l1bUZuRFd5OXE3MkZpSVZrSg?oc=5",
+      "date": "2026-10-03T14:38:49.000Z",
+      "lang": "ar",
+      "titleKo": "보건부: 알사빈 병원 근처에서 사우디 적의 습격으로 병원이 손상되고 부상을 입음"
+    },
+    {
+      "title": "وزارة الصحة: اضرار بمستشفى السبعين للأمومة جراء العدوان السعودي على العاصمة صنعاء",
+      "source": "saba.ye",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA1VF9qTlpBc0ExaFVGMWt0Q1Q0V25OZWxPYTFUOTVnVHZTUEpRdWxna2lES3JEbUp6OFZCQ2tRZWM2bTRDUXBlTWRGTHg5TzQ?oc=5",
+      "date": "2026-10-03T12:17:11.000Z",
+      "lang": "ar",
+      "titleKo": "보건부: 사우디아라비아의 수도 사나에 대한 침략으로 인한 알사빈 성모병원 피해"
+    },
+    {
+      "title": "صالونات التجميل غير المرخصة في العراق تهدد حياة المواطنين بتشوهات ومضاعفات خطيرة",
+      "source": "شفقنا العراق",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1QQ2Rxa1U3ZWh1UEpjb2pxV0xqdU5QUVJ6YVU1ZDRLRWRERFgtNFNWSHlic1pZLUkzSjJ0aGRrMGVHVEVham1YS0NDRmo?oc=5",
+      "date": "2026-10-03T11:44:58.000Z",
+      "lang": "ar",
+      "titleKo": "이라크의 무면허 미용실은 심각한 기형과 합병증으로 시민들의 생명을 위협하고 있습니다."
+    },
+    {
+      "title": "الصحة العالمية: تأخير متواصل في إدخال المساعدات الطبية إلى غزة#",
+      "source": "عراق اوبزيرفر",
+      "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQV25xRFhSY2V6UFRZZTNxV3NxNWdjenZBajBzWDV1a2wzTXhYejlxY0F5RG1yTmNtMGZXRUZhSkpfaGdwVVh3SE9SdkpSNG13RFJKbTVOdnl3ZnZnY1E1djJMT19pMVRneWFJZFJLRW8tV2lmZElHWEdSOTMzUUY3djJGZ2lRWUd1YXdBQzBEbXRpajQ1S0FjdG1oZDF6MmhYcTl3NFJYNWExQURBTTVYcDdqQWxJaFlSRzZBcnpoUHk5WEg1UDg0TjFGMUdxeHRnWXQ4dGpRcmlWVHVMVW1iOHBReHgzTzNZdWdDcjI3NXJWUFpoOXpPbFZwaUNlU2JzSEdJUF9JNjAwR0o5RTN5ZmthM2RsTVZUekFzeVNVb1ZvRWU5Z09FV1N4Qno5MmZzTG9XWjVTLUJIWVZRTjBVWXZPcmlvVlk?oc=5",
+      "date": "2026-10-03T10:09:16.000Z",
+      "lang": "ar",
+      "titleKo": "세계보건기구 (WHO): 가자지구에 대한 의료 지원의 지속적인 지연 #"
+    },
     {
       "title": "استشهاد خمسة فلسطينيين بقصف إسرائيلي لمبنى سكني في غزة",
       "source": "شفقنا العراق",
@@ -27,11 +59,19 @@
     },
     {
       "title": "أخبار وتقارير - وزارة الصحة: 80% من المرافق الصحية في سواحل تعز خارج الخدمة",
-      "source": "آخر خبر",
+      "source": "a5r5br.net",
       "link": "https://news.google.com/rss/articles/CBMisgRBVV95cUxQeUxPendJcmtreS1neHhSV3lJc1lYUzdGSHlDTTJ4VEo1aERuZG5rakN3UUp3clhNamMtSlJGOG12OXdfUGdLS3VKQ3puOVJkSGdxclhoZG1YRF84ZEJTLWxmYS11bGJ4WUFndXRJa2dkVFVidVRXYS1YTEswQmNPV3VHRDc4VGVPRThMSi1DUDhXWHVKLW1ZX0lrTlNMWDBfaUNHY3NocjZUT19QTUxzNVRreURsZ2wybXJyaWtYbUo5TExsOFRCVW9kX1E0WTAtYWFua3liSGFrRGVURmItY2NUXzNmTHRBVnk0NHBQeVR5aFZmdjFHZUJyb3pxUDBMRUhtVTFUNFdDUGpVcEhZcWExQnJMSF9xejdWS1hzNEZzTGJxRmNYNnNMLWVMQXRFUUJndm5aWnJCZHlxYXd0UzF3QkpRTExVa2VuN1IxbkZBaW1saFp1dEN5TDdvczZiRmFhZEMyRDVnT0xRaTF2Sm4zbTJkaXQ2VWUtVlhtcXlEUkp1RzhFWEFFaEE2V2hnN3RFSlc2YlhhM0RnNUxaWHVoYW10bEZBaENQY0dRWTZvWUhLS251dEhRVklnTHJ2dFlHSHpqcWhpLUU2WjFQX2lyXzdXYjhmblJodDRHNnhiSERneG1hSnRYUDR1N2tHcVJSZndleVNZdUZjMUhadWxWcGhVNENocTE3cUxVRm1qMHJnQWpFdlQ3c3pMZmpXaFFiWW9Vb3g2blZxUF9HcWxn?oc=5",
       "date": "2026-10-02T22:03:00.000Z",
       "lang": "ar",
       "titleKo": "뉴스 및 보도 - 보건복지부: 타이즈 연안 보건 시설의 80% 가 서비스 중단"
+    },
+    {
+      "title": "IMG_20220513_203514_587 – الصفحة 6 – سفارة جمهورية العراق في وارشو",
+      "source": "mofa.gov.iq",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0tZzZPQUhEOGZ6SHVLTDhNT1NkbUNQQ3l4Vlc3alZKQUVqSmlNdl9WdzVudXNmeUotN3ZUaWxOcUZSSU5yUmplOWhZYVFXV29haEJzQ0cxY28xUWRZaUx2Tk1nVVFVMGNUM2tzMzZYdw?oc=5",
+      "date": "2026-10-02T21:13:09.000Z",
+      "lang": "ar",
+      "titleKo": "Img_20220513_203514_587 – 페이지 6 – 바르샤바 이라크 공화국 대사관"
     },
     {
       "title": "وزير الصحة يوجه المديرين العامين بترؤس فرق تفتيشية في المؤسسات الصحية الخاصة",
@@ -42,71 +82,23 @@
       "titleKo": "보건부 장관은 이사장에게 민간 보건 기관의 검사 팀을 이끌도록 지시합니다."
     },
     {
-      "title": "«معكم منى الشاذلي» يستعرض وثائق تكشف خطة وزارة الصحة للاستعداد لحرب أكتوبر",
-      "source": "gate.ahram.org.eg",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0xdVFkczA3NXJPX2dBZWh1a1pCeE1uc2xFTzg3UVpmUkowNEdpNzBCX2hTRnhEekprbEIxNVdSRHlGeFJpbGFPUUczVUp3Q0lRQkUxbmd3?oc=5",
-      "date": "2026-10-02T13:58:00.000Z",
+      "title": "بران برس / وزارة الصحة تعلن توقف 80% من المرافق الصحية في تعز محذرة من توقف الخدمات",
+      "source": "nabdapp.com",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBWSjYyT05wMzJ5ZFRBMVpqM0x0Z3hDQnRWRVBfOXlObExtX3FKZk9MVzJ1Q3RXbVB3WFBiVEFZald5Mk83NHhFSlJxME1BZ2s?oc=5",
+      "date": "2026-10-02T20:27:59.000Z",
       "lang": "ar",
-      "titleKo": "10월 전쟁을 준비하기 위한 보건부의 계획을 밝히는 문서를 검토하는 «Mona Al-Shazly» 입니다."
+      "titleKo": "Bran Press/Ministry of Health, Taiz 내 보건 시설 80% 중단 발표, 서비스 중단 경고"
     },
     {
-      "title": "إقالة حسين عبد الواحد من تدريب الميناء العراقي",
-      "source": "صحيفة الخليج",
-      "link": "https://news.google.com/rss/articles/CBMiigRBVV95cUxNelJvUi01bEtHdnI2R19KVUU1cHV4bDFULUh2dHNnc0tBc1N2V19SVGk2dGFfY2NjZmZ2Zi1yY0JsM1hZMnJtakNQUm1FdTI4dVBYcjNudElGNU0zbHFKSHlmVy1RSGE0R3NZYUVKRlV6YWRhbGRsal9rekJWMWg5OVU0R3pFZk9CTGNCSXBwbl9BcjNPLXVqV0tmNVc3X1pWOFBhN05sRE5heGFaZmVmeUJMNklSckNUS0MtX3lJc2l1c0d2NmFLSmItbV9oWTRDQVdVSkhQUUhpSG5vNDB3dEJQN0xuUnRiLTE3X2ZiTDZhTDZUR29MSUpYRlRWcExsNk1qeDJjT0ZvbGZOWi15MkRmRnZBa1N0bWxBRHJRaWt4SlJxUzFHVnNCZzZqaV9xNURQYklZaS16ekZfNnZ4dU04b2xOVEdLU25iVVFzUGpkbTYtR0RaYjU5Y3ZhOWlTZEFaNWpKY1ZXSFFZajlVZDUwUTF1M0xMVU1VdV95bHFBS0F0a08xT3JUYXVlc3lCS1FraERwYk9STjZGbEl6YmJxdEhtSUFyamc1M1B1elBKQnZiWFIzZTZ3NzVYNUI0T3h6UVIxTGdoVmNMVWhhaGNwdE1raDdFQUt5eEhlQVBOWkdLVUEyUE5FeHBMUmlnMVMwRFJwVDk0UlQ4WGNlcGItODhtUEVKZWc?oc=5",
-      "date": "2026-10-02T10:48:16.000Z",
+      "title": "وزارة الصحة تحذر من تداعيات توقف الخدمات الصحية في مناطق بتعز",
+      "source": "بلقيس نت",
+      "link": "https://news.google.com/rss/articles/CBMi5gNBVV95cUxNdzhsTk42Yzc4cXVvRXVyZ0xGSFRUVGN2WjE0Ui1xUzdwSi1rek9rbnlNanB0bGJKLWhYa1dKMHoteGJ6RzE2Q2xYNmxTd0trMTBOazhJaURVVlNZU0gwREU3aV9JbUc1TzljOVVFdTNUSEMxSFNpcUlUZE82dVM3QVJ5LWVEc2J0Tno0T1lITzJxbHFQTDJUUFdieWQyX1pkNWFpUV92R2pLeVU5TV83WGg0WjBqdHZHemctWWxQemxHRVdiOWlXbW5tR0ExQ1AzMGpDUmhOcy05a2IwTnBmeXlhYUpDWkpNVTgxZ2tzTVgzbE9WbWoxaGktdEpEb1R0UHlvS2tlLUJOWEtPc1ZBXzM2ZC10a2NnM1o2QlU0eEJiYVhqU0RDQ0p0Uzk0bHhEMGhWSDJvRkJWM0Q5dkFoQ2VOeTBXNjRwSUVYc1V5Z085T0tWeGw5STExRmVwUXVDOVFWaU1SZG40Rk1JT1NLNW9rTGtTakM2NWlFZUttYTlVNVBJRWpPUG0xRlpGSjRENnpHZTBpWU9JWlkyRG1ZY1kzZ041QnRZcXpmOWEyOVJmT01tVld2S2xaMkRwMFg0ZjVqZDZKamE3U1U5VTI3X1VXbnB6VTFvV3EyRmV5UjdWS2hHU3c?oc=5",
+      "date": "2026-10-02T17:37:36.000Z",
       "lang": "ar",
-      "titleKo": "이라크 항구 훈련에서 물러난 후세인 압둘 제거"
-    },
-    {
-      "title": "هيئة الغذاء والدواء.. العراق يمهد لأول جهة موحدة لرقابة الأغذية والأدوية",
-      "source": "شفقنا العراق",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10X3dtNmViYm5Lck9fem93MkozV3FOLVA1VHhrNlJ6cXZfX0pqMWo1N2JFck5QbWZqeFlORnZnYllQa3J5bWVRQ29DeEY?oc=5",
-      "date": "2026-10-02T10:32:15.000Z",
-      "lang": "ar",
-      "titleKo": "식품의약품안전처.. 이라크는 식품의약품안전처를 위한 최초의 통합 기관의 길을 열었습니다."
-    },
-    {
-      "title": "صحة الكرخ: مستشفيات جديدة تدخل الخدمة قريباً لتعزيز الخدمات الطبية",
-      "source": "ina.iq",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9uQUZac2dlUjdZVEZ3TFZNUV9XU0U0MzE2UlNKMnpSbW9zd3RBUkRZTUVTbVc0QTNXYjkwMUNmWHJqNm1PZFZxY3Y1M0k?oc=5",
-      "date": "2026-10-02T09:31:54.000Z",
-      "lang": "ar",
-      "titleKo": "Karkh Health: 새로운 병원이 의료 서비스 향상을 위해 곧 서비스에 돌입합니다."
-    },
-    {
-      "title": "وزارة الصحة توضح المقترح الخاص بالحوافز الخاصة للعائلات التي لديها ابنتان.",
-      "source": "Vietnam.vn",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZ3FVd1llN2hXUnpLN2VFMnlDWEtCVGx3OUQyZWZzekV3OXMzU0xNUWxwT0ZjNHBnZEo4WGZxNW1CM01HSkZMa1BjRzJPQ25HazZhTllrNWJLZTJUczdna2NERkhVbmFGRWFIRXJKSUVTS2xtTkcwY0MwTEFYeEhkZjdMSnlWdkxvaVBPUV9WTDVwYVk0YWtXTVhR?oc=5",
-      "date": "2026-10-02T05:48:19.000Z",
-      "lang": "ar",
-      "titleKo": "보건복지부는 두 딸을 둔 가족을 위한 특별 인센티브 제안을 명확히 하고 있습니다."
-    },
-    {
-      "title": "بيان صادر عن وزارة الصحة والسكان: وزير الصحة يشهد افتتاح النسخة الأولى من المؤتمر الدولي الإفريقي لسرطان الثدي «BEST OF ST GALLEN» شهد الدكتور خالد عبدالغفار وزير الصحة والسكان فعاليات افتتاح النسخة الأولى من المؤتمر الدولي الإفريقي لسرطان الثدي «BES",
-      "source": "facebook.com",
-      "link": "https://news.google.com/rss/articles/CBMinAVBVV95cUxOcy05MFdGTDZjRmhzeG9LSmpCUXkxdVdzRGczeXk1RjRJMDdIMDBkcGs3aEZmTE9RdFhOOWZ1THc0ZjNyVkJ0TXNURndGUVVMRVIyQ0NrRjRVdnJTVnJIYXhhdDVVZFZ0WlQ0TzN5ZVhFUzdmMldKVnk4RUw0d0Nja2ZNZHg4Qlc0SV96SEFfQ0h3WFhXX1JBUUNwZng4VzdtU3pOMWpfRm45aEFybXFyV1BDZ3ZqVzFsRU9LSVVOcjd3dE4xZ3V3YmxlbENfb0pfdV9JNDU1MlEyazQwRi13OWpBejJGZ0JROTJJZW80NUp2VVNyVXZLN1g5U2xmMHN4Q1B0VmZlbl9DOU5OamdIVkNETnZESmJLc0tkVnJ2VTRsZlc5N29LYlFRQVlCR1JEVWhFLWVYYWhxMHNYbzZvTkx3Rk9rRGVpQTVxM1hnTURIMnlTRFNJaUdJczg0TE5XdnlxNmlRNlpJQXV5TGtDN01UcmNFVWRvZEFrZjJfczd2Y3ZrS2hSeDZySEt1WjBSLXhtbHhLRG14bjlMZ2dHNU81UWRuZHJHN1RnWWNERW1fWlg3d1FwRXJZSHNVTFpkazJEYXFCZXJJN0NBdWNvb3RFZEhxYTYyZklvV1RuS3htcVV1aDBlSTBtNzJiZlBGMGJIbTd6eEt4UHBwZzk2WWQ1TWFqUmIwSXJRLTNNcEVSVG9uRzdNbTc4NXdZMUFDaVM5ZTFKVnQ2NXdIdlduZ2FNbXVmT2NqOFJ4TEh6ODJzaGdYVjVkR1o0MEctXzAwVWF0LTQ5UjhFcWVaT2lUaVh5aWwxcWNTX0lvMFVmY2txUnVQRUJJeTIzV19yOW1vLXUxbDBqdE5aeWhjN2RoSXZyN0t6MWF1WnRDLQ?oc=5",
-      "date": "2026-10-01T15:48:52.000Z",
-      "lang": "ar",
-      "titleKo": "보건복지부가 발표한 성명서: 보건복지부 장관은 아프리카 국제 유방암 컨퍼런스 «BEST OF ST GALLEN» 제1회 개막식에 참석했습니다. 보건복지부 장관인 칼레드 압델 가파르 박사는 아프리카 국제 유방암 컨퍼런스 «BES"
-    },
-    {
-      "title": "الصحة في غزة: 74040 شهيدًا و175168 مصابًا منذ 7 أكتوبر 2023",
-      "source": "elnabaa.net",
-      "link": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxPSGdMOVExVU44NDRON1VtblJhVzl4bHd6S1hwTEp5QlU1TV9jeXFMaTYwcXZpem1FdTFydmlOZkVBUHJCZ3V6SmlCY1RuS3k0cTJWcjB3YkNHbXFEM0NuSXlNaVR6T19adGxUVEVXNm5PNW1pVzVWVy1CN04yUXdWR01sdzZVd3gwQkxtLXczaWNtazE5dkhXYmlCSURLNjVTTGZLVl9VMVpJRU1CYnpkSmx0NXdJbVVQZmVTak9Tc2E2N2tva0NVVFFOX2k2S0xUNVN1bVdPSGhHM29QU3lvbS1hT2pYUDZiMVVyRjFTQjFObW1pVHd1b3NJem16ZjFXUXBsOFZrZmZVSUpkTi05WUZEWFJaRlF0WkUzRlh3WERnME85Y0dscTRDbHluN1JVbEUxRVh3akJfakQ4V1BOWnl1OFVmZmFsLXU2cy1hdHNPRGxUTzZ3dlFuTng?oc=5",
-      "date": "2026-10-01T14:24:00.000Z",
-      "lang": "ar",
-      "titleKo": "가자지구 보건: 2023년 10월 7일 이후 74,040명의 순교자와 175,168명의 부상자 발생"
+      "titleKo": "보건부는 타이즈 지역의 보건 서비스 중단이 미치는 영향에 대해 경고합니다."
     }
   ],
   "environment": [
-    {
-      "title": "سمو الأمير يهنئ الرئيس العراقي",
-      "source": "جريدة الشرق",
-      "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOQXlrQWo2eGRqdlcxRm9jbWhfTXo5Zm9tZXFDRERPdE5OS0hRQjRObEw4RDQzb3l1dlRmaXRpUm4xMFItLTZPcmJHQ2FKa2E5ZndKRm9oZHlQbEktM0Q5S3R1ZTZnaU5QSWFXZmJ2YWhIbnE5QVpGQ3NiTThZMjBQanhoaWNIYU5rYlZhZ0VIcklmcFBEQTVRcUlOTFgwLXJ1R05HUE9NaWJkNkk4VFV6RFhEcHptV1dvY0tyMkJ6SmM1aTBJTFR3R0xuYml1WUJ2cm00aTY0amZqZllpaGd3ZlB0aEVqNjA3emZJRW5uQU9CN25yNEhEdlViZlkyTU5tb0ZEeVpZWTI3VXQyZjUwT1BLQXZRbjItY1BwWW1Wd3ZKdm5SOVgzdjRn?oc=5",
-      "date": "2026-10-03T06:35:38.000Z",
-      "lang": "ar",
-      "titleKo": "아미르 전하, 이라크 대통령을 축하합니다"
-    },
     {
       "title": "مستشار الزيدي يوضح بشأن \"حالة الطوارئ البيئية\": مصادر التلوّث متعددة",
       "source": "الترا العراق",
@@ -132,6 +124,14 @@
       "titleKo": "환경 오염: 이라크 문명 단지의 중심부에 타격"
     },
     {
+      "title": "المملكة تستعرض تجربتها في استدامة المراعي خلال منتدى البيئة بالقاهرة",
+      "source": "alyaum",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9wVlVrRWRHTmhkM0IzZVJjR2F4b0VJeGdnNGZ5ems0SmxITTVmcTV3VDI4YVJIdGRxMUtnT0h0RW9hcG5qSERNclhMNmNvS1hvUURr0gFTQVVfeXFMT3BWVWtFZEdOaGQzQjNlUmNHYXhvRUl4Z2c0Znl6azRKbEhNNWZxNXdUMjhhUkh0ZHExS2dPSHRFb2FwbmpIRE1yWEw2Y29LWG9RRGs?oc=5",
+      "date": "2026-09-30T15:25:00.000Z",
+      "lang": "ar",
+      "titleKo": "킹덤은 카이로에서 열린 환경 포럼에서 랜젤랜드 지속 가능성에 대한 경험을 선보입니다"
+    },
+    {
       "title": "الجامعة العربية تعقد المنتدى العربى للبيئة.. تعرف على شعاره وأهم موضوعاته",
       "source": "اليوم السابع",
       "link": "https://news.google.com/rss/articles/CBMijgRBVV95cUxNcm9ZN3BQSXg3OHE0ejlpM3JVd2JodXdnSWphdWZWd2tEazZRWmhDbGVqUnRzaFZtaEUyTzRBcWdXUTdpQzRCTnMxVG1HX095ZzZtX05WSjV5TnByeTVsNi02OFRINDZISk1YRGNQWUNrdEdqSmdFU0ZsNW9oeFd5Y3dYamdIVGE0Y2lzdUFTUFRRY25RWXpwbGd5aG9ZZXY0a3pQYU8ydVlsN1hPWi1QQWdZdlRDVERSQ3VmaGRiZUppc0ljQUVaZXduYWM0d3VrR1RMUl8waTNDTXg3aVZucHFoaHEtYkRNWHFiekxQWnRMVUFQdl80c1NUQzU0UDN1c2dtOVAxM3ByaVlQWTNvSTRhSWMxNUJuVUlKN2d0SDRkVTJiMmJfTkt4Z1BzRzYwUm9FTGM0YlNOY1VvZWI2Z3JkSEVES1d4Z29YMHJsTHR3TXdhTFdnZzkxdWhHc0MxeXVSbWlqTmRCVFlDVmpDeHpiVnY2XzlnaGpTcGpQZ1VvaFJVX3hVR2dhMk8wU19hQlBERzA3M01Xd25tZERJb3NrcjFzM3EzQW12NjVfcE1uVW05dFJncHJ3MFpyaVVPb1VqZUdsUzBoY2pPeW5sY2hFQWc3UlNCUklhUDBoajJpT2l2eFdlaG5oS0lxT3BaNkd2MVpqcm9mcTNnbHctOVZ0WUtnLWJWcDdpcVVn0gGIBEFVX3lxTE1ZZVpQSWtpdGJ6TjhmSDZGNVhCSldrX0gwb0Z3VGRtNmxBc3RhandNT1VtdHFLdmtEODdIbzNTdHpjWklITmNWRE5FQndTUThUdGJvVUNfNkNTZ0N1Y0VlZWhTUFV5ak43d082d21iUEM1WHpYSHNZYzU2QVc4MzlHUWNIY2gxempvRms0emNUdTJ3TnR3WU5fUk5lUGM1MVcxR01hRXItLU1MNUNZQThlSnp5Z0NXYkRMY0lwZExKN0YxNmVXWDNOMGh5V0lqOHVMa3ZZQWtjMkFRcHZvazBHZ1kxX0FlRkl6Q2kxU0cwY055WTNrS2FITGsycVh1UzkzZHI5bElmaC0xZExpLTVMVHVmcHNsSEZ5MVlDSXpCNmNGeTlSaG90RUowSXJvNC1GSzZ5Q3hWOG0wUEZKZk5HZGZFUG1MSDVtYUZGQTlqcks5aTV3anFWV2Jsdm1Td1lGbDdnVENmXzRDT2FLSFVxMU1McEN5VEJiT24zb1ZkZXQ1eWxGbmRQS2VLTjJHVE9iWkdqc1dkM3U0T2FRMFJ1bHozR2s5eFdVczFGVTVITVlLV3NKZWhrNWhiVWlEVThhLXpxTjFnWFd0OU1RZUNySlk0bGtablZiZnZra08xYmFXUloydVBDcUFvMjhPVjVXNS05VG1iUkZ1NlhvVVJWbm5xZHZWakk?oc=5",
@@ -150,8 +150,8 @@
     {
       "title": "العراق.. تطهير 297 مليون م² من الألغام والمخلفات الحربية",
       "source": "AlRabiaa TV",
-      "link": "https://news.google.com/rss/articles/CBMivgNBVV95cUxOaHFsbW0xRkF2NTl3NTlGaUlRSFRoWi1sYTRBYWdXNzBDNmpVMTlIMF83Yk9pUmJ6VFpLYnVubFF5ZzhpcHpWZHBJbnR6WVBkMks5eHFRR3R0c0RhNnljaEtlMlVHQnJoUlZRdG1rVC04Nm9rV0FZUVFMZnpCWXhiMDZEQTFZRHBsMGRBRjYyRUVZLVFrM1pETHE4dGVJTkszTVdFLWN5OXc5V09tSFZ0VDJ2OFd5SlBjb0ZaRmNTclBYT1ZyOThpN1lmV3QxbVUycnZJQmVvdnVVbDNNQWM4SzJZUWFsSjVMSGNSLXdtQWNieU52RGZraWRBYi1lVHNHZDk5TEFCd01vUXBfMmZEd3h0NDlTT0p3ZVpsV2EzMFJBc1FCTmtHaHRWTTNfZ29VWnQ3UVVob2JrOU9iRG56bmFmOUh1akF0MGRYZUszX2NlRVVJcWpGaGthS1dacUR2YlI0bDJESV9hQ0pPS1g1bXNzUHRGNS1yaFBTM00xM0ZSbHdNRWhaSklqRktFQnNTb2hWUVBYaC1lczc0RzVITXQ2U2hRcHpHM25FUzRWc09fM2p6VWhqZVVUQzVBZw?oc=5",
-      "date": "2026-09-29T10:33:40.000Z",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9CUlV3Tk1SMTY4Y1lSLXhSemNtWjZ3QXZ2c3dBQnNxMWlranIwNGNaVmRvMXFUSjVYWG5oUXBCRWtPVnV1cVZQbVlzcmZtc1k4cFdz?oc=5",
+      "date": "2026-09-29T12:33:29.000Z",
       "lang": "ar",
       "titleKo": "이라크.. 2억9천7백만m ² 의 광산과 전쟁 잔해 청산"
     },
@@ -165,7 +165,7 @@
     },
     {
       "title": "اليونيسف تدعو إلى تحرك عاجل لحماية أنهار العراق وصحة أطفاله",
-      "source": "UNICEF",
+      "source": "Unicef",
       "link": "https://news.google.com/rss/articles/CBMi3ARBVV95cUxNYzh0RlNEbkF3SC00YmtjNFRPTlZkVUltTmRSNUJDVm1pdnpQWE54MHgyYm1oRGtOZ2VrUk45cUIzNzgxbDFvaVVqUERoT2N1dngxNXowejhmcW1DRFN4RzBvN1hSVVo5amlKQWJ0eEVsS3Rtb09sSXB0aTNHNDNUb2xwXzRFOFhPVHRUXzgtSFZDT1ZWdEMxMzd6T25na21zR0VLTnJGTC1CXy0yOEkzNWlMMTJaV19lWDRUd0lnUUhFWk0xUHdKZHNoTFVOMy1nbTFoUU1fSFdiUHc1NGRQLWxnWThJMkpFZ2lOZmxlSGJ6SjFVa044OUZyOEhLbUMtZEphdUl5VThPM0ZxU3l2SUNkSUxTWnhRUHVTX3JYYTFHSmhUV1ZwMXRlSnNMN182RElqNGZJNl9iaTJtanh2UHU4US1feHl5X1RCb3hoeVkyNWZwWUl4Q19Ic3h6NHpJNVVvUTdta0phREhCdUNiNzJBaTVuUXgzR0lTVkxWRzlMRGdtY0h1dldDTmhpNnFPSGF4YUk1TzltcEM2ODFFdzhfNnczNWpkZnMxUXNEVUk4NWFmWXI3YjRjR1djNW1NV05vc1JUb2IwbUJlcVF0OTZHV1ltWmgxeXJhcUkwd0NjNXRjRy1kUlVSVGpiZ2RzRWRYUVJha3hHcktfTmk5NkFJaE9MSmpscW9GNzdvc3lCM0dDcUlQT1dFa253NndrZVN0d1JkcDdqTmNubm03ZTZ4azF1eVpGaEh3OUhxTXQ5UEhORnhHTU5HNmJpVVhMVHpObXFfUHlnb3c4?oc=5",
       "date": "2026-09-28T13:37:04.000Z",
       "lang": "ar",
