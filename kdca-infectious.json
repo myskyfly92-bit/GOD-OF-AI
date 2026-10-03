@@ -67,9 +67,9 @@
   },
   "제2급": {
    "diseases": 21,
-   "base": 1897,
-   "prev": 1914,
-   "provisional": 1388,
+   "base": 1899,
+   "prev": 1913,
+   "provisional": 1398,
    "outnatn": 2,
    "trend": [
     2358,
@@ -82,15 +82,15 @@
     1842,
     2166,
     1910,
-    1914,
-    1897
+    1913,
+    1899
    ]
   },
   "제3급": {
    "diseases": 28,
    "base": 206,
-   "prev": 227,
-   "provisional": 117,
+   "prev": 228,
+   "provisional": 120,
    "outnatn": 11,
    "trend": [
     242,
@@ -101,9 +101,9 @@
     206,
     213,
     167,
-    209,
+    210,
     203,
-    227,
+    228,
     206
    ]
   }
@@ -112,10 +112,10 @@
   {
    "name": "카바페넴내성장내세균목(CRE) 감염증",
    "grade": "제2급",
-   "base": 1294,
+   "base": 1293,
    "prev": 1286,
    "provisional": 849,
-   "dmstc": 1294,
+   "dmstc": 1293,
    "outnatn": 0
   },
   {
@@ -123,17 +123,17 @@
    "grade": "제2급",
    "base": 347,
    "prev": 339,
-   "provisional": 350,
+   "provisional": 355,
    "dmstc": 347,
    "outnatn": 0
   },
   {
    "name": "성홍열",
    "grade": "제2급",
-   "base": 115,
-   "prev": 113,
-   "provisional": 100,
-   "dmstc": 115,
+   "base": 116,
+   "prev": 112,
+   "provisional": 106,
+   "dmstc": 116,
    "outnatn": 0
   },
   {
@@ -148,10 +148,10 @@
   {
    "name": "유행성이하선염",
    "grade": "제2급",
-   "base": 91,
+   "base": 92,
    "prev": 115,
    "provisional": 48,
-   "dmstc": 91,
+   "dmstc": 92,
    "outnatn": 0
   },
   {
@@ -159,7 +159,7 @@
    "grade": "제3급",
    "base": 34,
    "prev": 45,
-   "provisional": 21,
+   "provisional": 22,
    "dmstc": 30,
    "outnatn": 4
   },
@@ -167,7 +167,7 @@
    "name": "레지오넬라증",
    "grade": "제3급",
    "base": 28,
-   "prev": 19,
+   "prev": 20,
    "provisional": 7,
    "dmstc": 28,
    "outnatn": 0
@@ -175,10 +175,10 @@
   {
    "name": "A형간염",
    "grade": "제2급",
-   "base": 25,
+   "base": 26,
    "prev": 29,
    "provisional": 27,
-   "dmstc": 24,
+   "dmstc": 25,
    "outnatn": 1
   },
   {
@@ -195,7 +195,7 @@
    "grade": "제2급",
    "base": 8,
    "prev": 11,
-   "provisional": 5,
+   "provisional": 4,
    "dmstc": 7,
    "outnatn": 1
   },
@@ -213,7 +213,7 @@
    "grade": "제3급",
    "base": 6,
    "prev": 5,
-   "provisional": 7,
+   "provisional": 9,
    "dmstc": 6,
    "outnatn": 0
   },
@@ -283,7 +283,7 @@
    "count": 1
   }
  ],
- "totalBase": 2103,
+ "totalBase": 2105,
  "totalPrev": 2141,
- "generatedAt": "2026-10-02T01:50:33.578363+00:00"
+ "generatedAt": "2026-10-03T01:30:00.158965+00:00"
 }
