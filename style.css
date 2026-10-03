@@ -2631,31 +2631,28 @@ html:not(.page-ready) main.grid { opacity: 0; }
 .emb-kind { display: inline-block; margin-right: 8px; padding: 0 7px; font-size: 11px; font-weight: 700; border-radius: 4px; color: var(--text-muted); border: 1px solid var(--border); vertical-align: 1px; }
 .emb-kind.safe { color: #ff8a8d; border-color: rgba(229, 72, 77, 0.5); }
 
-/* ---------- 배너: 공항 전광판식 시계 ---------- */
-.flapclock { display: inline-flex; align-items: center; gap: 3px; vertical-align: middle; perspective: 300px; }
+/* ---------- 배너: 공항 전광판식 시계 (크고 또렷하게) ---------- */
+.clock { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+.clock .clock-label { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; color: var(--text-muted); opacity: 1; order: -1; }
+.flapclock { display: inline-flex; align-items: center; gap: 4px; font-size: 30px; perspective: 400px; }
 .fc {
-  position: relative; display: inline-block; width: 0.82em; height: 1.28em; line-height: 1.28em;
-  text-align: center; font-family: var(--font-mono); font-weight: 700; color: #f4f7fb;
-  border-radius: 0.14em; box-shadow: 0 0.06em 0.18em rgba(0,0,0,0.55);
+  position: relative; display: inline-block; width: 0.74em; height: 1.22em; line-height: 1.22em;
+  text-align: center; font-family: var(--font-mono); font-weight: 800; color: #ffffff; letter-spacing: 0;
+  border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.55), inset 0 0 0 1px rgba(255,255,255,0.06);
 }
 .fc-top, .fc-bot, .fc-flip { position: absolute; left: 0; right: 0; height: 50%; overflow: hidden; backface-visibility: hidden; }
-.fc-top, .fc-flip-top { top: 0; border-radius: 0.14em 0.14em 0 0; background: linear-gradient(180deg, #273445, #1b2532); line-height: 1.28em; }
-.fc-bot, .fc-flip-bot { bottom: 0; border-radius: 0 0 0.14em 0.14em; background: linear-gradient(180deg, #151d28, #1b2532); line-height: 0; }
-.fc-bot::before, .fc-flip-bot::before { content: none; }
-/* 아래 반쪽은 글자의 아래 절반만 보이게 */
-.fc-bot, .fc-flip-bot { display: flex; align-items: flex-start; justify-content: center; }
-.fc-bot { padding-top: 0; }
-.fc .fc-bot, .fc .fc-flip-bot { line-height: 0; }
-.fc .fc-bot, .fc .fc-flip-bot { font-size: inherit; }
-.fc .fc-bot { line-height: 0em; }
-.fc::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(0,0,0,0.7); z-index: 3; }
+.fc-top, .fc-flip-top { top: 0; border-radius: 6px 6px 0 0; background: #222e3c; line-height: 1.22em; }
+.fc-bot, .fc-flip-bot { bottom: 0; border-radius: 0 0 6px 6px; background: #1a2430; display: flex; align-items: flex-start; justify-content: center; line-height: 0; }
+.fc::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(0,0,0,0.75); z-index: 3; }
 .fc-flip { z-index: 2; display: none; }
 .fc-flip-top { transform-origin: 50% 100%; }
 .fc-flip-bot { transform-origin: 50% 0; transform: rotateX(90deg); }
 .fc.flipping .fc-flip { display: block; }
-.fc.flipping .fc-flip-top { animation: fcTop 0.3s ease-in forwards; }
-.fc.flipping .fc-flip-bot { animation: fcBot 0.3s 0.3s ease-out forwards; display: flex; }
-@keyframes fcTop { 0% { transform: rotateX(0); filter: brightness(1); } 100% { transform: rotateX(-90deg); filter: brightness(0.6); } }
-@keyframes fcBot { 0% { transform: rotateX(90deg); filter: brightness(1.4); } 100% { transform: rotateX(0); filter: brightness(1); } }
-.fc-sep { display: inline-block; width: 0.32em; text-align: center; font-family: var(--font-mono); font-weight: 700; color: var(--cyan); animation: sepBlink 1s steps(1) infinite; }
-@keyframes sepBlink { 50% { opacity: 0.35; } }
+.fc.flipping .fc-flip-bot { display: flex; }
+.fc.flipping .fc-flip-top { animation: fcTop 0.25s ease-in forwards; }
+.fc.flipping .fc-flip-bot { animation: fcBot 0.25s 0.25s ease-out forwards; }
+@keyframes fcTop { from { transform: rotateX(0); } to { transform: rotateX(-90deg); filter: brightness(0.6); } }
+@keyframes fcBot { from { transform: rotateX(90deg); filter: brightness(1.3); } to { transform: rotateX(0); } }
+/* 두 자리씩 묶어 보이게: 시·분·초 사이 여백을 넓히고, 콜론은 깜빡이지 않게 */
+.fc-sep { display: inline-block; width: 0.38em; text-align: center; font-family: var(--font-mono); font-weight: 800; color: var(--cyan); margin: 0 1px; }
+@media (max-width: 1200px) { .flapclock { font-size: 24px; } }
