@@ -4808,11 +4808,36 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
    보건 > 현장 클리닉 현황 (구글 시트 '클리닉' 탭 → Apps Script action=clinic)
    - 이름·사번은 Apps Script에서 이미 가려서 보내 준다
    ========================================================== */
-// 클리닉 안내: 운영 시간·연락처는 여기서 고치면 됩니다
+// 화면 언어: 오른쪽 위 ENG·아랍어 버튼을 누르면 구글 번역 쿠키가 생긴다.
+// 구글 번역은 나중에 그려지는 내용(클리닉 기록 등)을 놓치는 경우가 있어서, 이런 부분은 직접 영어로 그린다.
+const UI_LANG = (document.cookie.match(/googtrans=\/[^/]*\/([a-zA-Z-]+)/) || [])[1] || "ko";
+const UI_EN = UI_LANG !== "ko";
+const L = (ko, en) => (UI_EN ? en : ko);
+const CLINIC_EN = {
+  "질병": "Illness", "부상(업무 중)": "Injury (on duty)", "부상(업무 외)": "Injury (off duty)", "온열질환": "Heat illness",
+  "건강상담": "Consultation", "기타": "Other", "투약": "Medication", "경과 관찰": "Observation", "처치": "Treatment",
+  "휴식 후 복귀": "Rest & return", "외부 병원 후송": "Hospital transfer",
+  "두통": "Headache", "근육통": "Muscle pain", "요통": "Back pain", "소화불량": "Indigestion", "감기": "Cold", "발열": "Fever",
+  "찰과상": "Abrasion", "열상": "Laceration", "열사병 의심": "Suspected heatstroke", "탈수": "Dehydration",
+  "눈 이물질": "Foreign body in eye", "복통": "Stomachache", "설사": "Diarrhea", "어지러움": "Dizziness", "기침": "Cough",
+  "한화": "Hanwha", "협력사": "Subcontractor",
+};
+// 값 번역: 사전에 있으면 영어로, 쉼표로 나뉜 증상은 하나씩, 없으면 원문 그대로
+const clinicTr = (v) => {
+  if (!UI_EN || !v) return v || "";
+  return String(v).split(/\s*,\s*/).map((t) => CLINIC_EN[t] || t.replace(/^협력사/, "Subcontractor ").replace(/^한화/, "Hanwha")).join(", ");
+};
+
+// 클리닉 안내: 운영 시간·연락처는 여기서 고치면 됩니다 (영어 화면용 문구도 함께)
 const CLINIC_INFO = {
   hours: "매일 08:00 ~ 17:00 (점심 12:00 ~ 13:00)",
   place: "BNCP 캠프 클리닉",
   contact: "내선 0000 · 응급 시 현장 비상연락망",
+};
+const CLINIC_INFO_EN = {
+  hours: "Daily 08:00 – 17:00 (lunch 12:00 – 13:00)",
+  place: "BNCP Camp Clinic",
+  contact: "Ext. 0000 · Emergency: site emergency contacts",
 };
 const CLINIC_CAT_COLOR = { "질병": "#4fb4ff", "부상(업무 중)": "#e5484d", "부상(업무 외)": "#ff7e79", "온열질환": "#f2a93b", "건강상담": "#35d0c0", "기타": "#8996a6" };
 let clinicLoadedAt = 0;
@@ -4820,7 +4845,8 @@ let clinicLoadedAt = 0;
 async function loadClinic(force) {
   if (!force && Date.now() - clinicLoadedAt < 5 * 60 * 1000) return;
   document.getElementById("clinicInfo").innerHTML =
-    `<span><b>운영</b> ${escapeHtml(CLINIC_INFO.hours)}</span><span><b>위치</b> ${escapeHtml(CLINIC_INFO.place)}</span><span><b>연락</b> ${escapeHtml(CLINIC_INFO.contact)}</span>`;
+    (() => { const I = UI_EN ? CLINIC_INFO_EN : CLINIC_INFO;
+      return `<span><b>${L("운영", "Hours")}</b> ${escapeHtml(I.hours)}</span><span><b>${L("위치", "Location")}</b> ${escapeHtml(I.place)}</span><span><b>${L("연락", "Contact")}</b> ${escapeHtml(I.contact)}</span>`; })();
   const cards = document.getElementById("clinicCards");
   let rows;
   try {
@@ -4830,7 +4856,7 @@ async function loadClinic(force) {
     if (!r.ok) throw new Error(r.error || "불러오기 실패");
     rows = r.rows || [];
   } catch (e) {
-    cards.innerHTML = `<p class="skeleton">진료 현황을 불러오지 못했습니다 (${escapeHtml(e.message)})</p>`;
+    cards.innerHTML = `<p class="skeleton">${L("진료 현황을 불러오지 못했습니다", "Could not load clinic data")} (${escapeHtml(e.message)})</p>`;
     return;
   }
   clinicLoadedAt = Date.now();
@@ -4845,56 +4871,56 @@ async function loadClinic(force) {
   const diff = week.length - prevWeek.length;
 
   cards.innerHTML = `
-    <div class="clinic-card"><span>오늘 진료</span><b>${todayRows.length}</b><small>건</small></div>
-    <div class="clinic-card"><span>최근 7일</span><b>${week.length}</b><small>건</small>
-      <em class="${diff > 0 ? "up" : diff < 0 ? "down" : ""}">전주 대비 ${diff > 0 ? "▲" : diff < 0 ? "▼" : ""} ${Math.abs(diff)}</em></div>
-    <div class="clinic-card ${injury ? "warn" : ""}"><span>부상 (7일)</span><b>${injury}</b><small>건</small></div>
-    <div class="clinic-card ${heat ? "heat" : ""}"><span>온열질환 (7일)</span><b>${heat}</b><small>건</small></div>
-    <div class="clinic-card ${referred ? "danger" : ""}"><span>외부 병원 후송 (7일)</span><b>${referred}</b><small>건</small></div>`;
+    <div class="clinic-card"><span>${L("오늘 진료", "Visits today")}</span><b>${todayRows.length}</b><small>${L("건", "")}</small></div>
+    <div class="clinic-card"><span>${L("최근 7일", "Last 7 days")}</span><b>${week.length}</b><small>${L("건", "")}</small>
+      <em class="${diff > 0 ? "up" : diff < 0 ? "down" : ""}">${L("전주 대비", "vs prev. week")} ${diff > 0 ? "▲" : diff < 0 ? "▼" : ""} ${Math.abs(diff)}</em></div>
+    <div class="clinic-card ${injury ? "warn" : ""}"><span>${L("부상 (7일)", "Injuries (7d)")}</span><b>${injury}</b><small>${L("건", "")}</small></div>
+    <div class="clinic-card ${heat ? "heat" : ""}"><span>${L("온열질환 (7일)", "Heat illness (7d)")}</span><b>${heat}</b><small>${L("건", "")}</small></div>
+    <div class="clinic-card ${referred ? "danger" : ""}"><span>${L("외부 병원 후송 (7일)", "Hospital transfers (7d)")}</span><b>${referred}</b><small>${L("건", "")}</small></div>`;
 
   // 주별 추이 (구분별로 쌓기)
-  const weeks = [3, 2, 1, 0].map((w) => ({ label: w === 0 ? "이번 주" : `${w}주 전`, rows: inRange(w * 7, w * 7 + 6) }));
+  const weeks = [3, 2, 1, 0].map((w) => ({ label: w === 0 ? L("이번 주", "This week") : L(`${w}주 전`, `${w}w ago`), rows: inRange(w * 7, w * 7 + 6) }));
   const max = Math.max(1, ...weeks.map((w) => w.rows.length));
   document.getElementById("clinicTrend").innerHTML = weeks.map((w) => {
     const byCat = {};
     w.rows.forEach((x) => { byCat[x.cat || "기타"] = (byCat[x.cat || "기타"] || 0) + 1; });
     return `<div class="ct-col"><div class="ct-bar" style="height:${(w.rows.length / max) * 100}%">${Object.entries(byCat).map(([c, n]) =>
-      `<i style="flex:${n};background:${CLINIC_CAT_COLOR[c] || "#8996a6"}" title="${escapeHtml(c)} ${n}건"></i>`).join("")}</div>
+      `<i style="flex:${n};background:${CLINIC_CAT_COLOR[c] || "#8996a6"}" title="${escapeHtml(clinicTr(c))} ${n}"></i>`).join("")}</div>
       <b>${w.rows.length}</b><span>${w.label}</span></div>`;
-  }).join("") + `<div class="ct-legend">${Object.entries(CLINIC_CAT_COLOR).map(([c, col]) => `<span><i style="background:${col}"></i>${c}</span>`).join("")}</div>`;
+  }).join("") + `<div class="ct-legend">${Object.entries(CLINIC_CAT_COLOR).map(([c, col]) => `<span><i style="background:${col}"></i>${escapeHtml(clinicTr(c))}</span>`).join("")}</div>`;
 
   // 많이 본 증상
   const sym = {};
   month.forEach((x) => String(x.symptom || "").split(/[,·/]/).map((t) => t.trim()).filter(Boolean).forEach((t) => { sym[t] = (sym[t] || 0) + 1; }));
   const top = Object.entries(sym).sort((a, b) => b[1] - a[1]).slice(0, 6);
   document.getElementById("clinicTop").innerHTML = top.length
-    ? top.map(([t, n], i) => `<li><span>${i + 1}</span>${escapeHtml(t)}<b>${n}건</b></li>`).join("")
-    : "<li>최근 30일 기록 없음</li>";
+    ? top.map(([t, n], i) => `<li><span>${i + 1}</span>${escapeHtml(clinicTr(t))}<b>${n}${L("건", "")}</b></li>`).join("")
+    : `<li>${L("최근 30일 기록 없음", "No records in the last 30 days")}</li>`;
 
   // 최근 기록 (가려진 이름·사번)
   const recent = rows.slice().sort((a, b) => (b.date + (b.time || "")).localeCompare(a.date + (a.time || ""))).slice(0, 25);
   document.getElementById("clinicTable").innerHTML = `
-    <thead><tr><th>날짜</th><th>시간</th><th>이름</th><th>사번</th><th>소속</th><th>구분</th><th>증상</th><th>조치</th><th></th></tr></thead>
+    <thead><tr><th>${L("날짜", "Date")}</th><th>${L("시간", "Time")}</th><th>${L("이름", "Name")}</th><th>${L("사번", "ID")}</th><th>${L("소속", "Company")}</th><th>${L("구분", "Type")}</th><th>${L("증상", "Symptoms")}</th><th>${L("조치", "Action")}</th><th></th></tr></thead>
     <tbody>${recent.map((x) => `<tr>
       <td>${escapeHtml(x.date.slice(5).replace("-", "/"))}</td><td>${escapeHtml(x.time || "")}</td>
-      <td>${escapeHtml(x.name || "")}</td><td class="mono">${escapeHtml(x.id || "")}</td><td>${escapeHtml(x.dept || "")}</td>
-      <td><span class="clinic-cat" style="--c:${CLINIC_CAT_COLOR[x.cat] || "#8996a6"}">${escapeHtml(x.cat || "")}</span></td>
-      <td>${escapeHtml(x.symptom || "")}</td><td class="${/후송/.test(x.action || "") ? "ref" : ""}">${escapeHtml(x.action || "")}</td>
+      <td>${escapeHtml(x.name || "")}</td><td class="mono">${escapeHtml(x.id || "")}</td><td>${escapeHtml(clinicTr(x.dept))}</td>
+      <td><span class="clinic-cat" style="--c:${CLINIC_CAT_COLOR[x.cat] || "#8996a6"}">${escapeHtml(clinicTr(x.cat))}</span></td>
+      <td>${escapeHtml(clinicTr(x.symptom))}</td><td class="${/후송/.test(x.action || "") ? "ref" : ""}">${escapeHtml(clinicTr(x.action))}</td>
       <td><button type="button" class="clinic-del" data-row="${x.row}" data-date="${escapeHtml(x.date)}" title="이 기록 삭제">×</button></td></tr>`).join("") ||
-      '<tr><td colspan="9">아직 진료 기록이 없습니다. 구글 시트 \'클리닉\' 탭에 입력해 주세요.</td></tr>'}</tbody>`;
+      `<tr><td colspan="9">${L("아직 진료 기록이 없습니다. '+ 진료 기록 추가'로 입력해 주세요.", "No clinic records yet. Use '+ Add record' to enter one.")}</td></tr>`}</tbody>`;
   // 입력 도우미: 지금까지 쓴 소속·증상을 자동완성 목록으로
   const uniq = (arr) => [...new Set(arr.filter(Boolean))].slice(0, 30);
   document.getElementById("clinicDeptList").innerHTML = uniq(rows.map((x) => x.dept)).map((v) => `<option value="${escapeHtml(v)}">`).join("");
   document.getElementById("clinicSymList").innerHTML = uniq(["두통", "근육통", "요통", "소화불량", "감기", "발열", "찰과상", "열상", "열사병 의심", "탈수", "눈 이물질", ...Object.keys(sym)])
     .map((v) => `<option value="${escapeHtml(v)}">`).join("");
   document.querySelectorAll(".clinic-del").forEach((b) => b.onclick = async () => {
-    if (!confirm("이 진료 기록을 삭제할까요? (시트에서도 지워집니다)")) return;
+    if (!confirm(L("이 진료 기록을 삭제할까요? (시트에서도 지워집니다)", "Delete this record? (It will also be removed from the sheet)"))) return;
     b.disabled = true;
     try { await clinicCall("clinicDel", { row: Number(b.dataset.row), date: b.dataset.date }); await loadClinic(true); }
-    catch (e) { alert("삭제하지 못했습니다: " + e.message); b.disabled = false; }
+    catch (e) { alert(L("삭제하지 못했습니다: ", "Could not delete: ") + e.message); b.disabled = false; }
   });
   document.getElementById("clinicMeta").textContent =
-    `구글 시트 '클리닉' 탭에서 불러옵니다 (최근 60일) · 이름과 사번은 일부를 가려서 표시합니다 · 불러온 시각 ${new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date())}`;
+    L(`구글 시트 '클리닉' 탭에서 불러옵니다 (최근 60일) · 이름과 사번은 일부를 가려서 표시합니다 · 불러온 시각 `, `From the 'Clinic' Google Sheet (last 60 days) · Names and IDs are partially masked · Updated `) + `${new Intl.DateTimeFormat(UI_EN ? "en-GB" : "ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date())}`;
 }
 document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => { if (btn.dataset.view === "view-health-clinic") loadClinic(false); });
@@ -4937,14 +4963,44 @@ async function clinicCall(action, payload) {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(form).entries());
     const save = form.querySelector('button[type="submit"]');
-    save.disabled = true; msg.textContent = "저장 중…"; msg.className = "";
+    save.disabled = true; msg.textContent = L("저장 중…", "Saving…"); msg.className = "";
     try {
       await clinicCall("clinicAdd", data);
-      msg.textContent = `저장했습니다 (${data.name.slice(0, 1)}*)`; msg.className = "ok";
+      msg.textContent = L(`저장했습니다 (${data.name.slice(0, 1)}*)`, `Saved (${data.name.slice(0, 1)}*)`); msg.className = "ok";
       reset(); form.name.focus();          // 이어서 다음 사람 입력
       await loadClinic(true);
     } catch (err) {
-      msg.textContent = "저장하지 못했습니다: " + err.message; msg.className = "err";
+      msg.textContent = L("저장하지 못했습니다: ", "Could not save: ") + err.message; msg.className = "err";
     } finally { save.disabled = false; }
   };
+})();
+
+/* 클리닉 화면의 고정 글자를 영어 화면에서 영어로 (입력칸 안내 글자는 구글 번역이 못 바꿈) */
+(function clinicStaticEnglish() {
+  if (!UI_EN) return;
+  const panel = document.querySelector(".clinic-panel");
+  if (!panel) return;
+  panel.classList.add("notranslate"); // 직접 영어로 그리므로 구글 번역이 다시 손대지 않게
+  const set = (sel, txt) => { const el = panel.querySelector(sel); if (el) el.textContent = txt; };
+  set(".panel-label", "SITE CLINIC · Clinic visits");
+  const subs = panel.querySelectorAll(".clinic-sub");
+  if (subs[0]) subs[0].textContent = "Visits by week (last 4 weeks)";
+  if (subs[1]) subs[1].textContent = "Top symptoms (last 30 days)";
+  if (subs[2]) subs[2].firstChild.nodeValue = "Recent records ";
+  set("#clinicAddBtn", "+ Add record");
+  const form = panel.querySelector("#clinicForm");
+  const labels = { date: "Date", time: "Time", name: "Name", id: "Employee ID", dept: "Company", cat: "Type", symptom: "Symptoms", action: "Action", note: "Note (not shown on site)" };
+  const ph = { name: "e.g. Mohammed Ali", id: "e.g. 1234567", dept: "e.g. Hanwha, Subcontractor", symptom: "e.g. Headache, Muscle pain (comma-separated)", note: "Internal memo" };
+  Object.entries(labels).forEach(([k, v]) => {
+    const input = form.elements[k];
+    if (!input) return;
+    const lab = input.closest("label");
+    if (lab && lab.firstChild && lab.firstChild.nodeType === 3) lab.firstChild.nodeValue = v;
+    if (ph[k]) input.placeholder = ph[k];
+  });
+  // 고르기 목록: 시트에는 한국어 값으로 저장되도록 value 는 그대로, 보이는 글자만 영어로
+  form.querySelectorAll("select option").forEach((o) => { o.value = o.value || o.textContent; o.textContent = CLINIC_EN[o.value] || o.value; });
+  const btns = form.querySelectorAll(".clinic-form-actions button");
+  if (btns[0]) btns[0].textContent = "Save";
+  if (btns[1]) btns[1].textContent = "Close";
 })();
