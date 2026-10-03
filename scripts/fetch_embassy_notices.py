@@ -60,6 +60,7 @@ def get(url, key, params):
     """serviceKey 는 이미 인코딩된 값을 URL에 직접 붙인다. 응답은 XML이든 JSON이든 (items, total, err) 로."""
     r = requests.get(f"{url}?serviceKey={key}", params=params, timeout=30)
     text = r.text.strip()
+    get.last = text  # 문제 확인용: 마지막 응답 원문
     if text.startswith("<"):
         try:
             root = ET.fromstring(text.encode("utf-8"))
@@ -146,6 +147,14 @@ def collect_notices(keys):
         if e:
             print(f"  {name}: 실패 ({e})")
             continue
+        if not items and iso2 == "IQ":
+            # 이라크가 0건이면 응답 원문 앞부분을 로그에 남긴다 (형식 확인용)
+            print("  [확인용] 이라크 응답 원문:", re.sub(r"\s+", " ", getattr(get, "last", ""))[:600])
+            # 조건 없이 전체 목록도 한 번 받아 본다
+            allit, alltot, ae = get(NOTICE_LIST, key, {"numOfRows": 20, "pageNo": 1})
+            print(f"  [확인용] 조건 없이 받기: {len(allit)}건 (전체 {alltot}) {ae or ''}")
+            if allit:
+                print("  [확인용] 예시:", json.dumps(allit[:2], ensure_ascii=False)[:600])
         items.sort(key=lambda it: date_key(field(it, "wrtDt")), reverse=True)
         found[iso2] = (name, items[:PER_COUNTRY])
         print(f"  {name}: {len(items)}건 (전체 {total})" + (f" · 필드 {list(items[0].keys())}" if items and iso2 == "IQ" else ""))
