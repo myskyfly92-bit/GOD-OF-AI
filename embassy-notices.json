@@ -1,6 +1,88 @@
 {
   "_readme": "이 파일은 GitHub Actions가 외교부 공공데이터 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
-  "country": "이라크",
-  "generatedAt": "2026-10-03T09:21:55.312587+00:00",
+  "country": "중동·주변국",
+  "countries": [
+    {
+      "iso2": "IQ",
+      "name": "이라크",
+      "count": 0
+    },
+    {
+      "iso2": "IR",
+      "name": "이란",
+      "count": 0
+    },
+    {
+      "iso2": "SY",
+      "name": "시리아",
+      "count": 0
+    },
+    {
+      "iso2": "JO",
+      "name": "요르단",
+      "count": 0
+    },
+    {
+      "iso2": "SA",
+      "name": "사우디아라비아",
+      "count": 0
+    },
+    {
+      "iso2": "KW",
+      "name": "쿠웨이트",
+      "count": 0
+    },
+    {
+      "iso2": "TR",
+      "name": "튀르키예",
+      "count": 0
+    },
+    {
+      "iso2": "LB",
+      "name": "레바논",
+      "count": 0
+    },
+    {
+      "iso2": "IL",
+      "name": "이스라엘",
+      "count": 0
+    },
+    {
+      "iso2": "PS",
+      "name": "팔레스타인",
+      "count": 0
+    },
+    {
+      "iso2": "EG",
+      "name": "이집트",
+      "count": 0
+    },
+    {
+      "iso2": "AE",
+      "name": "아랍에미리트",
+      "count": 0
+    },
+    {
+      "iso2": "QA",
+      "name": "카타르",
+      "count": 0
+    },
+    {
+      "iso2": "BH",
+      "name": "바레인",
+      "count": 0
+    },
+    {
+      "iso2": "OM",
+      "name": "오만",
+      "count": 0
+    },
+    {
+      "iso2": "YE",
+      "name": "예멘",
+      "count": 0
+    }
+  ],
+  "generatedAt": "2026-10-03T10:04:19.954894+00:00",
   "items": []
 }
