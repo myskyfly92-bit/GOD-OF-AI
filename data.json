@@ -1,7 +1,7 @@
 {
   "_readme": "이 파일을 수정하면 웹페이지 내용이 자동으로 갱신됩니다. lastIncidentDate를 최근 사고 없는 시작일로 맞추면 무재해 일수가 자동 계산됩니다. 연락처는 반드시 실제 값으로 교체하세요.",
   "site": {
-    "lastIncidentDate": "2026-07-25",
+    "lastIncidentDate": "2026-08-01",
     "monthlyInspections": 128,
     "trainingRate": "96%",
     "incidentCount": 2,
