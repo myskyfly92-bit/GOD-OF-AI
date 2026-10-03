@@ -911,7 +911,7 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
 /* ---------------- 중동·주변국 대사관 안전공지 ----------------
    embassy-notices.json: 나라별(이라크·이란·시리아·요르단·사우디 등 16개국) 최근 공지를 날짜순으로 합친 것.
    위쪽 나라 버튼으로 걸러 볼 수 있다. */
-let embData = null, embCountry = "ALL";
+let embData = null, embCountry = "ALL", embKind = "ALL";
 async function loadEmbassyNotices() {
   const list = document.getElementById("embassyList");
   try {
@@ -936,11 +936,18 @@ function renderEmbassyNotices() {
     `<button type="button" data-c="ALL" class="${embCountry === "ALL" ? "active" : ""}">전체 <b>${items.length}</b></button>` +
     Object.entries(counts).sort((a, b) => b[1].n - a[1].n).map(([iso, c]) =>
       `<button type="button" data-c="${iso}" class="${embCountry === iso ? "active" : ""}">${flag(iso)}${escapeHtml(c.name)} <b>${c.n}</b></button>`).join("");
-  document.querySelectorAll("#embFilter button").forEach((b) => b.onclick = () => { embCountry = b.dataset.c; renderEmbassyNotices(); });
+  // 종류 버튼 (안전공지 / 공지사항)
+  const kinds = [...new Set(items.map((n) => n.kind || "안전공지"))];
+  if (kinds.length > 1) {
+    document.getElementById("embFilter").insertAdjacentHTML("beforeend", `<span class="emb-sep"></span>` +
+      ["ALL", ...kinds].map((k) => `<button type="button" data-k="${k}" class="${embKind === k ? "active" : ""}">${k === "ALL" ? "모든 종류" : escapeHtml(k)}</button>`).join(""));
+  }
+  document.querySelectorAll("#embFilter button[data-c]").forEach((b) => b.onclick = () => { embCountry = b.dataset.c; renderEmbassyNotices(); });
+  document.querySelectorAll("#embFilter button[data-k]").forEach((b) => b.onclick = () => { embKind = b.dataset.k; renderEmbassyNotices(); });
 
-  const shown = embCountry === "ALL" ? items : items.filter((n) => (n.iso2 || "IQ") === embCountry);
+  const shown = items.filter((n) => (embCountry === "ALL" || (n.iso2 || "IQ") === embCountry) && (embKind === "ALL" || (n.kind || "안전공지") === embKind));
   if (!shown.length) {
-    list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 안전공지가 없습니다.</li>`;
+    list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 공지가 없습니다.</li>`;
   } else {
     list.innerHTML = shown.map((n) => {
       const hasBody = n.body && n.body.trim().length > 0;
@@ -948,7 +955,7 @@ function renderEmbassyNotices() {
       return `
       <li class="embassy-row">
         <div class="notice-top">
-          <span class="notice-title"><span class="emb-country">${flag(iso)}${escapeHtml(n.country || "")}</span>${escapeHtml(n.title)}</span>
+          <span class="notice-title"><span class="emb-country">${flag(iso)}${escapeHtml(n.country || "")}</span><span class="emb-kind ${(n.kind || "안전공지") === "안전공지" ? "safe" : ""}">${escapeHtml(n.kind || "안전공지")}</span>${escapeHtml(n.title)}</span>
           <span class="notice-date">${escapeHtml(n.date || "")}</span>
         </div>
         ${hasBody ? `

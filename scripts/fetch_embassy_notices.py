@@ -1,141 +1,263 @@
 """
-외교부 공공데이터포털 API("외교부_국가·지역별 안전공지")를 통해
-중동·주변국 대사관의 최신 안전공지를 모아 embassy-notices.json 파일로 저장합니다.
-(나라별로 따로 조회한 뒤 날짜순으로 합칩니다)
+중동·주변국 대한민국 대사관의 공지를 모아 embassy-notices.json 으로 저장합니다.
+(기타 정보 > 중동 각국 대사관 공지)
 
-사전 준비:
-1. https://www.data.go.kr 에서 "외교부_국가·지역별 안전공지" 검색 → 활용신청 (무료, 자동승인)
-2. 발급받은 서비스키(인증키)를 저장소 Settings > Secrets and variables > Actions 에
-   이름 MOFA_API_KEY 로 등록
+외교부 공공데이터 API 두 가지를 나라별로 조회해 합칩니다.
+  1) 외교부_국가·지역별 안전공지   (CountrySafetyService6)  → 종류: 안전공지
+  2) 외교부_국가별 공지사항        (NoticeService2)         → 종류: 공지사항
+     ※ 2)는 공공데이터포털에서 따로 '활용신청'이 필요합니다. 신청 전에는 1)만 모입니다.
 
-로컬 실행:
-    pip install requests
-    MOFA_API_KEY=발급받은키 python scripts/fetch_embassy_notices.py
+인증키: GitHub Secrets 의 MOFA_API_KEY (대사관 공지용 공공데이터포털 키)
 """
 
 import html
 import json
-import re
+import xml.etree.ElementTree as ET
 import os
+import re
 import sys
+import time
 from datetime import datetime, timezone
+from urllib.parse import quote
 
 import requests
 
-API_URL = "https://apis.data.go.kr/1262000/CountrySafetyService6/getCountrySafetyList6"
-# 중동·주변국 (v6 API는 한글 국가명 기준으로 필터링됨)
+OUTPUT_PATH = "embassy-notices.json"
+PER_COUNTRY = 10   # 나라·종류별 최근 공지 수
+MAX_ITEMS = 200
+
 COUNTRIES = [
     ("IQ", "이라크"), ("IR", "이란"), ("SY", "시리아"), ("JO", "요르단"), ("SA", "사우디아라비아"),
     ("KW", "쿠웨이트"), ("TR", "튀르키예"), ("LB", "레바논"), ("IL", "이스라엘"), ("PS", "팔레스타인"),
     ("EG", "이집트"), ("AE", "아랍에미리트"), ("QA", "카타르"), ("BH", "바레인"), ("OM", "오만"), ("YE", "예멘"),
 ]
-COUNTRY_NM = "이라크"
-PER_COUNTRY = 8   # 나라별 최근 공지 수
-MAX_ITEMS = 120   # 전체 최대
-FETCH_ROWS = 100  # 국가 필터가 완벽하지 않을 수 있어 넉넉히 가져온 뒤 해당 나라만 추려냅니다.
-OUTPUT_PATH = "embassy-notices.json"
+SOURCES = [
+    ("안전공지", "https://apis.data.go.kr/1262000/CountrySafetyService6/getCountrySafetyList6"),
+    # 외교부_국가별 공지사항 목록조회 (End Point: .../CountryNoticeService, XML 응답)
+    # 세부 기능 이름이 문서마다 달라 아래 후보를 차례로 시도한다
+    ("공지사항", [
+        "https://apis.data.go.kr/1262000/CountryNoticeService/getCountryNoticeList",
+        "https://apis.data.go.kr/1262000/CountryNoticeService/getCountryNoticeList2",
+        "https://apis.data.go.kr/1262000/CountryNoticeService/getNoticeList",
+    ]),
+]
 
 
-def fetch(country_nm=COUNTRY_NM):
-    service_key = os.environ.get("MOFA_API_KEY")
-    if not service_key:
-        print("[오류] 환경변수 MOFA_API_KEY가 설정되지 않았습니다.", file=sys.stderr)
+# 공공데이터포털 계정이 여러 개일 수 있어서, 등록된 키를 모두 모아 두고 API마다 되는 키를 찾아 쓴다
+KEY_NAMES = ["MOFA_API_KEY", "NOTICE_API_KEY", "TRAVEL_API_KEY", "KDCA_API_KEY"]
+
+
+def service_keys():
+    keys = []
+    for n in KEY_NAMES:
+        k = (os.environ.get(n) or "").strip()
+        if k:
+            k = k if "%" in k else quote(k, safe="")
+            if k not in [x for _, x in keys]:
+                keys.append((n, k))
+    if not keys:
+        print("[오류] 공공데이터포털 인증키가 하나도 없습니다 (MOFA_API_KEY 등).", file=sys.stderr)
         sys.exit(1)
-
-    # requests가 인증키를 다시 URL 인코딩하면서 깨뜨리는 문제를 피하기 위해
-    # serviceKey는 URL에 직접 넣고, 나머지 파라미터만 requests에 맡깁니다.
-    url = f"{API_URL}?serviceKey={service_key}"
-    params = {
-        "country_nm": country_nm,
-        "type": "json",
-        "numOfRows": FETCH_ROWS,
-        "pageNo": 1,
-    }
-    resp = requests.get(url, params=params, timeout=20)
-    if resp.status_code != 200:
-        print(f"[오류] API 응답 코드: {resp.status_code}", file=sys.stderr)
-        print(f"[오류] API 응답 본문: {resp.text[:2000]}", file=sys.stderr)
-    resp.raise_for_status()
-    return resp.json()
+    return keys
 
 
-def extract_items(data):
-    """공공데이터포털의 흔한 응답 구조(response > body > items > item)를 순서대로 탐색합니다."""
+def call(url, key, params):
+    """serviceKey 는 URL에 직접 붙이고(이중 인코딩 방지), 나머지는 requests 에 맡긴다"""
+    r = requests.get(f"{url}?serviceKey={key}", params=params, timeout=30)
+    text = r.text.strip()
+    if text.startswith("<"):
+        return xml_to_json(text, r.status_code)
     try:
-        body = data.get("response", {}).get("body", {})
-        items = body.get("items")
-        if isinstance(items, dict):
-            items = items.get("item", [])
-        if items is None:
-            items = []
-        if isinstance(items, dict):
-            items = [items]
-        return items
-    except AttributeError:
-        return []
+        j = r.json()
+    except ValueError:
+        return None, f"JSON 아님: {text[:200]}"
+    err = (j.get("OpenAPI_ServiceResponse") or {}).get("cmmMsgHeader")
+    if err:
+        return None, f"{err.get('errMsg')} ({err.get('returnAuthMsg')})"
+    return j, None
 
 
-def field(item, *keys, default=""):
+def xml_to_json(text, status):
+    """XML 응답을 JSON과 같은 모양으로 바꾼다 (<item> 마다 하위 태그 이름: 값)"""
+    try:
+        root = ET.fromstring(text.encode("utf-8"))
+    except ET.ParseError:
+        return None, f"HTTP {status} 읽을 수 없는 응답: {text[:200]}"
+    if root.tag == "OpenAPI_ServiceResponse":
+        msg = root.findtext(".//errMsg") or ""
+        auth = root.findtext(".//returnAuthMsg") or ""
+        return None, f"{msg} ({auth})"
+    code = root.findtext(".//header/resultCode") or root.findtext(".//resultCode")
+    if code and code not in ("00", "0", "INFO-000"):
+        return None, f"resultCode {code}: {root.findtext('.//resultMsg')}"
+    items = [{c.tag: (c.text or "").strip() for c in it} for it in root.iter("item")]
+    total = root.findtext(".//totalCount")
+    return {"response": {"body": {"items": items, "totalCount": total}}}, None
+
+
+def rows_of(j):
+    if isinstance(j.get("data"), list):
+        return j["data"]
+    body = (j.get("response") or {}).get("body") or {}
+    items = body.get("items") or []
+    if isinstance(items, dict):
+        items = items.get("item") or []
+    if isinstance(items, dict):
+        items = [items]
+    return items
+
+
+def field(item, *keys):
+    norm = {str(k).lower().replace("_", ""): v for k, v in item.items()}
     for k in keys:
-        if k in item and item[k]:
-            return item[k]
-    return default
+        v = norm.get(k.lower().replace("_", ""))
+        if v not in (None, ""):
+            return v
+    return ""
 
 
 def clean_body(raw):
-    """txt_origin_cn 필드는 이중 HTML 인코딩된 서식 텍스트라 태그/엔티티를 제거해 읽기 좋게 만듭니다."""
     if not raw:
         return ""
-    text = html.unescape(html.unescape(str(raw)))  # 이중 인코딩 해제
-    text = re.sub(r"<[^<]+?>", " ", text)  # 태그 제거
-    text = re.sub(r"\s+", " ", text).strip()
-    return text[:3000]  # 클릭하면 펼쳐볼 수 있으므로 넉넉하게 보존
+    text = html.unescape(html.unescape(str(raw)))
+    text = re.sub(r"<[^<]+?>", " ", text)
+    return re.sub(r"\s+", " ", text).strip()[:3000]
 
 
 def date_key(d):
-    """'2026-10-01', '2026.10.01', '20261001' 등 여러 형식을 정렬할 수 있게 숫자만 남긴다"""
     return re.sub(r"[^0-9]", "", str(d or ""))[:14]
 
 
-def main():
-    notices, counts = [], []
-    for iso2, name in COUNTRIES:
-        try:
-            raw = fetch(name)
-        except Exception as e:
-            print(f"[경고] {name} 조회 실패: {e}", file=sys.stderr)
+def fetch_country(url, key, iso2, name):
+    """나라 이름으로 걸러 달라고 요청 (API마다 이름이 달라 몇 가지를 차례로 시도)"""
+    tries = [
+        {"cond[country_nm::EQ]": name},
+        {"cond[country_iso_alp2::EQ]": iso2},
+        {"isoCode1": iso2},
+        {"country_nm": name},
+    ]
+    last_err = None
+    for extra in tries:
+        params = {"returnType": "JSON", "type": "json", "numOfRows": 50, "pageNo": 1, **extra}
+        j, err = call(url, key, params)
+        if err:
+            last_err = err
+            if "NOT_REGISTERED" in err or "등록되지 않은" in err:
+                return None, err   # 신청 안 된 API면 더 시도할 필요 없음
             continue
-        items = extract_items(raw)
-        mine = [it for it in items if field(it, "country_nm") == name or field(it, "country_iso_alp2") == iso2]
-        mine.sort(key=lambda it: date_key(field(it, "wrt_dt", "등록일", "regDt")), reverse=True)
-        for item in mine[:PER_COUNTRY]:
-            notices.append({
-                "title": field(item, "title", "제목"),
-                "body": clean_body(field(item, "txt_origin_cn", "content", "내용")),
-                "date": field(item, "wrt_dt", "등록일", "regDt"),
-                "country": name,
-                "iso2": iso2,
-            })
-        counts.append({"iso2": iso2, "name": name, "count": min(len(mine), PER_COUNTRY)})
-        print(f"{name}: {len(mine)}건 (저장 {min(len(mine), PER_COUNTRY)}건)")
+        items = rows_of(j)
+        mine = [it for it in items
+                if str(field(it, "country_nm", "countryName", "countryNm")) == name
+                or str(field(it, "country_iso_alp2", "isoCode", "isoCode1", "countryIsoAlp2")).upper() == iso2]
+        if mine:
+            return mine, None
+        last_err = f"0건 (조건 {list(extra)[0]}, 받은 행 {len(items)})"
+    return [], last_err
 
-    if not counts:
-        print("[오류] 어느 나라도 조회하지 못했습니다. 기존 파일을 유지합니다.", file=sys.stderr)
+
+def pick_key(urls, keys):
+    """이 API를 신청해 둔 계정의 키와, 실제로 동작하는 주소를 찾는다"""
+    urls = urls if isinstance(urls, list) else [urls]
+    last = None
+    for name, k in keys:
+        for url in urls:
+            j, err = call(url, k, {"returnType": "JSON", "type": "json", "numOfRows": 1, "pageNo": 1})
+            if not err:
+                return name, k, url, None
+            last = f"{name} · {url.rsplit('/', 1)[-1]}: {err}"
+            if "NOT_REGISTERED" in str(err) or "등록되지 않은" in str(err):
+                break  # 이 키로는 이 API 자체가 안 됨 → 다음 키
+    return None, None, None, last
+
+
+COUNTRY_KEYS = ("country_nm", "countryName", "country_name", "countryNm", "country_iso_alp2", "isoCode", "isoCode1", "iso_code", "countryIsoAlp2")
+
+
+def group_all(url, key):
+    """조건 없이 한꺼번에 받아서 나라별로 나눈다. 나라 정보가 없으면 None"""
+    j, err = call(url, key, {"returnType": "JSON", "type": "json", "numOfRows": 500, "pageNo": 1})
+    if err:
+        return None, err
+    items = rows_of(j)
+    if items:
+        print("  받은 항목 예시 필드:", list(items[0].keys()))
+    if not items or not any(field(it, *COUNTRY_KEYS) for it in items):
+        return None, f"나라 정보 없는 응답 ({len(items)}행)"
+    by = {}
+    for it in items:
+        cn = str(field(it, "country_nm", "countryName", "country_name", "countryNm"))
+        iso = str(field(it, "country_iso_alp2", "isoCode", "isoCode1", "iso_code", "countryIsoAlp2")).upper()
+        for iso2, name in COUNTRIES:
+            if cn == name or iso == iso2:
+                by.setdefault(iso2, []).append(it)
+    return by, None
+
+
+def main():
+    keys = service_keys()
+    notices, counts, source_ok = [], {}, {}
+    for kind, url in SOURCES:
+        ok_any = False
+        key_name, key, url, err = pick_key(url, keys)
+        if not key:
+            print(f"[{kind}] 사용할 수 없음 ({err})")
+            print(f"        → 공공데이터포털에서 이 API를 활용신청하고, 그 계정의 키를 GitHub Secrets에 등록하면 '{kind}'도 모입니다.")
+            source_ok[kind] = False
+            continue
+        print(f"[{kind}] {key_name} 키 사용 · {url.rsplit('/', 1)[-1]}")
+        grouped, gerr = group_all(url, key)
+        if grouped is None:
+            print(f"  (한꺼번에 받기 불가: {gerr}) → 나라별로 따로 요청")
+        for iso2, name in COUNTRIES:
+            if grouped is not None:
+                items, err = grouped.get(iso2, []), None
+            else:
+                items, err = fetch_country(url, key, iso2, name)
+            if items is None:
+                print(f"[{kind}] 사용할 수 없음: {err}")
+                if "NOT_REGISTERED" in str(err):
+                    print(f"        → 공공데이터포털에서 이 API를 활용신청하면 '{kind}'도 함께 모입니다.")
+                break
+            ok_any = True
+            items.sort(key=lambda it: date_key(field(it, "wrt_dt", "wrtDt", "regDt", "reg_dt", "등록일", "writeDate")), reverse=True)
+            for it in items[:PER_COUNTRY]:
+                notices.append({
+                    "kind": kind,
+                    "title": field(it, "title", "제목", "ttl"),
+                    "body": clean_body(field(it, "txt_origin_cn", "txtOriginCn", "content", "contents", "내용")),
+                    "date": field(it, "wrt_dt", "wrtDt", "regDt", "reg_dt", "등록일", "writeDate"),
+                    "country": name, "iso2": iso2,
+                    "file": field(it, "file_download_url", "fileDownloadUrl", "file_url", "fileUrl", "file_path", "filePath"),
+                })
+            counts[iso2] = counts.get(iso2, 0) + min(len(items), PER_COUNTRY)
+            print(f"[{kind}] {name}: {len(items)}건" + (f" ({err})" if err and not items else ""))
+            time.sleep(0.2)
+        source_ok[kind] = ok_any
+
+    if not any(source_ok.values()):
+        print("[오류] 어떤 공지 API도 사용할 수 없었습니다. 기존 파일을 유지합니다.", file=sys.stderr)
         sys.exit(1)
 
-    notices.sort(key=lambda n: date_key(n["date"]), reverse=True)
+    # 같은 공지가 두 API에 다 있으면 하나만
+    seen, uniq = set(), []
+    for n in sorted(notices, key=lambda n: date_key(n["date"]), reverse=True):
+        k = (n["iso2"], re.sub(r"\s+", "", n["title"])[:40])
+        if k in seen:
+            continue
+        seen.add(k)
+        uniq.append(n)
+
     output = {
         "_readme": "이 파일은 GitHub Actions가 외교부 공공데이터 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
         "country": "중동·주변국",
-        "countries": counts,
+        "sources": source_ok,
+        "countries": [{"iso2": i, "name": n, "count": counts.get(i, 0)} for i, n in COUNTRIES],
         "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "items": notices[:MAX_ITEMS],
+        "items": uniq[:MAX_ITEMS],
     }
-
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
-
-    print(f"{len(output['items'])}건의 안전공지를 저장했습니다 ({len(counts)}개국) → {OUTPUT_PATH}")
+    print(f"{len(output['items'])}건 저장 (안전공지 {'O' if source_ok.get('안전공지') else 'X'}, 공지사항 {'O' if source_ok.get('공지사항') else 'X'}) → {OUTPUT_PATH}")
 
 
 if __name__ == "__main__":
