@@ -2083,7 +2083,13 @@ html body {
 .sub-bar[hidden] { display: none; }
 .sub-row { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 12px; border-left: 3px solid var(--cyan); background: rgba(10, 14, 19, 0.45); border-radius: 0 10px 10px 0; }
 .sub-row[hidden] { display: none; }
-.sub-row .tab-btn { font-size: 12px; padding: 6px 14px; }
+/* 소분류 글씨: 대분류와 같은 한글 글꼴(Noto Sans KR), 또렷하게 */
+.sub-row .tab-btn {
+  font-family: var(--font-body); font-size: 14px; font-weight: 700; letter-spacing: 0;
+  padding: 8px 18px; color: #d3dbe6;
+}
+.sub-row .tab-btn:hover { color: #fff; border-color: var(--cyan); }
+.sub-row .tab-btn.active { color: var(--bg); font-weight: 800; }
 
 /* 빌려 온 카드는 새 화면에서 한 줄을 다 쓰게 */
 .view-borrow .grid > .panel { grid-column: 1 / -1 !important; grid-row: auto !important; }
@@ -2538,7 +2544,20 @@ body.kiosk-on .bg-peek-btn, body.kiosk-on .wx-chip { opacity: 0.35; }
 .topbar .sky-layer { position: absolute; inset: 0; z-index: -1; opacity: 0.6; overflow: hidden; pointer-events: none; transition: background 2s ease; }
 .topbar .sky-layer::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,14,19,0.1), rgba(10,14,19,0.55)); }
 .sky-body { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; transition: left 60s linear, top 60s linear; }
-.sky-body.sun { background: radial-gradient(circle, #fff6c8 0 35%, #ffd166 60%, rgba(255,209,102,0) 72%); box-shadow: 0 0 30px 10px rgba(255,209,102,0.45); }
+/* 해: 진한 주황빛 원 + 천천히 도는 햇살 (보름달과 헷갈리지 않게) */
+.sky-body.sun {
+  width: 30px; height: 30px; margin: -15px 0 0 -15px;
+  background: radial-gradient(circle at 40% 38%, #fffbe0 0 22%, #ffd23f 45%, #ffa51f 72%, #ff8a00 100%);
+  box-shadow: 0 0 16px 5px rgba(255, 186, 60, 0.65), 0 0 46px 18px rgba(255, 150, 30, 0.28);
+}
+.sky-body.sun::before {
+  content: ""; position: absolute; inset: -16px; border-radius: 50%;
+  background: repeating-conic-gradient(rgba(255, 210, 80, 0.95) 0deg 7deg, transparent 7deg 30deg);
+  -webkit-mask: radial-gradient(circle, transparent 0 50%, #000 52% 72%, transparent 76%);
+          mask: radial-gradient(circle, transparent 0 50%, #000 52% 72%, transparent 76%);
+  animation: sunSpin 40s linear infinite;
+}
+@keyframes sunSpin { to { transform: rotate(360deg); } }
 .sky-body.moon { width: 20px; height: 20px; margin: -10px 0 0 -10px; background: transparent; box-shadow: inset -6px 3px 0 0 #f2f0e6; filter: drop-shadow(0 0 6px rgba(242,240,230,0.6)); }
 @media (prefers-reduced-motion: reduce) { .flap.flip, .mx-sweat i, .mx-wind i { animation: none; } }
 
