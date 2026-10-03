@@ -2206,6 +2206,7 @@ body.bg-accidents { --tab-bg: url('assets/bg-accidents.jpg'); --tab-bg-webp: url
 body.bg-procedures { --tab-bg: url('assets/bg-procedures.jpg'); --tab-bg-webp: url('assets/bg-procedures.webp'); }      /* 안전 > 안전작업절차서 */
 body.bg-workzone { --tab-bg: url('assets/bg-workzone.jpg'); --tab-bg-webp: url('assets/bg-workzone.webp'); }        /* 안전 > 작업구역 */
 body.bg-embassy { --tab-bg: url('assets/bg-embassy.jpg'); --tab-bg-webp: url('assets/bg-embassy.webp'); }         /* 안전 > 대사관 안전공지 */
+body.bg-health-clinic { --tab-bg: url('assets/bg-health-clinic.jpg'); --tab-bg-webp: url('assets/bg-health-clinic.webp'); } /* 보건 > 현장 클리닉 현황 */
 body.bg-health-kdca { --tab-bg: url('assets/bg-health-kdca.jpg'); --tab-bg-webp: url('assets/bg-health-kdca.webp'); }     /* 보건 > 국내 감염병 현황 */
 body.bg-iraq-moh { --tab-bg: url('assets/bg-iraq-moh.jpg'); --tab-bg-webp: url('assets/bg-iraq-moh.webp'); }        /* 보건 > 이라크 보건부 소식 */
 body.bg-health-infect { --tab-bg: url('assets/bg-health-infect.jpg'); --tab-bg-webp: url('assets/bg-health-infect.webp'); }   /* 보건 > WHO 소식 */
@@ -2540,3 +2541,44 @@ body.kiosk-on .bg-peek-btn, body.kiosk-on .wx-chip { opacity: 0.35; }
 .sky-body.sun { background: radial-gradient(circle, #fff6c8 0 35%, #ffd166 60%, rgba(255,209,102,0) 72%); box-shadow: 0 0 30px 10px rgba(255,209,102,0.45); }
 .sky-body.moon { width: 20px; height: 20px; margin: -10px 0 0 -10px; background: transparent; box-shadow: inset -6px 3px 0 0 #f2f0e6; filter: drop-shadow(0 0 6px rgba(242,240,230,0.6)); }
 @media (prefers-reduced-motion: reduce) { .flap.flip, .mx-sweat i, .mx-wind i { animation: none; } }
+
+/* ---------- 첫 화면 깜빡임 막기 ---------- */
+html:not(.side-ready) .holiday-panel,
+html:not(.side-ready) .fx-widget,
+html:not(.side-ready) #tabbarRightGroup { opacity: 0; visibility: hidden; }
+html:not(.page-ready) main.grid { opacity: 0; }
+
+/* ---------- 보건 > 현장 클리닉 현황 ---------- */
+.clinic-info { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 8px 0 12px; padding: 9px 14px; border-radius: 8px; font-size: 13px; color: var(--text-muted); background: rgba(53, 208, 192, 0.07); border: 1px solid rgba(53, 208, 192, 0.3); }
+.clinic-info b { color: var(--cyan); margin-right: 6px; }
+.clinic-cards { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+@media (max-width: 1100px) { .clinic-cards { grid-template-columns: repeat(3, 1fr); } }
+.clinic-card { --c: #35d0c0; border: 1px solid var(--border-soft); border-top: 3px solid var(--c); border-radius: 10px; padding: 10px 14px; background: rgba(255, 255, 255, 0.02); display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px; }
+.clinic-card span { flex-basis: 100%; font-size: 12.5px; color: var(--text-muted); }
+.clinic-card b { font-family: var(--font-mono); font-size: 32px; color: var(--text); }
+.clinic-card small { color: var(--text-dim); }
+.clinic-card em { flex-basis: 100%; font-style: normal; font-size: 11.5px; color: var(--text-dim); }
+.clinic-card em.up { color: #ff8a8d; } .clinic-card em.down { color: var(--cyan); }
+.clinic-card.warn { --c: #ff7e79; } .clinic-card.heat { --c: #f2a93b; } .clinic-card.danger { --c: #e5484d; background: rgba(229, 72, 77, 0.08); }
+.clinic-cols { display: grid; grid-template-columns: 1fr 2fr; gap: 18px; margin-top: 16px; }
+@media (max-width: 1000px) { .clinic-cols { grid-template-columns: 1fr; } }
+.clinic-sub { font-size: 13px; font-weight: 700; margin-bottom: 8px; }
+.clinic-trend { display: flex; align-items: flex-end; gap: 14px; padding: 6px 4px 0; flex-wrap: wrap; }
+.ct-legend { margin-top: 8px; }
+.ct-col { flex: 1; height: 130px; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 3px; }
+.ct-bar { width: 70%; min-height: 2px; display: flex; flex-direction: column-reverse; border-radius: 4px 4px 0 0; overflow: hidden; }
+.ct-bar i { display: block; }
+.ct-col b { font-family: var(--font-mono); font-size: 13px; } .ct-col span { font-size: 11px; color: var(--text-dim); }
+.ct-legend { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 11px; color: var(--text-dim); }
+.ct-legend i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 4px; }
+.clinic-top { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+.clinic-top li { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); }
+.clinic-top li span { width: 20px; height: 20px; border-radius: 50%; background: rgba(255,255,255,0.06); display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-family: var(--font-mono); }
+.clinic-top li b { margin-left: auto; font-family: var(--font-mono); color: var(--text); }
+.clinic-table-wrap { overflow-x: auto; max-height: 420px; overflow-y: auto; }
+.clinic-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.clinic-table th { position: sticky; top: 0; background: var(--panel); text-align: left; font-size: 11.5px; color: var(--text-dim); font-weight: 600; padding: 6px 8px; border-bottom: 1px solid var(--border-soft); white-space: nowrap; }
+.clinic-table td { padding: 6px 8px; border-bottom: 1px solid var(--border-soft); color: var(--text-muted); white-space: nowrap; }
+.clinic-table td.mono { font-family: var(--font-mono); }
+.clinic-table td.ref { color: #ff8a8d; font-weight: 700; }
+.clinic-cat { color: var(--c); border: 1px solid var(--c); border-radius: 4px; padding: 0 6px; font-size: 11.5px; font-weight: 700; }

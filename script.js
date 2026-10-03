@@ -4768,3 +4768,122 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     setInterval(update, 60 * 1000);
   }
 })();
+
+
+/* ==========================================================
+   첫 화면 깜빡임 막기
+   - 달력·환율·언어 버튼은 위치 계산이 끝나기 전엔 숨겨 두었다가, 제자리에 놓인 뒤 서서히 보인다
+   - 카드 영역도 글꼴과 기본 자료(무재해 일수 등)가 준비된 뒤 한 번에 나타난다 (최대 1.5초)
+   ========================================================== */
+(function antiFlicker() {
+  const root = document.documentElement;
+  const fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+  const pageLoaded = new Promise((r) => (document.readyState === "complete" ? r() : window.addEventListener("load", r, { once: true })));
+  const dataReady = new Promise((r) => {
+    const t0 = Date.now();
+    (function check() {
+      const el = document.getElementById("incidentFreeDays");
+      const v = el && (el.dataset.value || el.textContent.replace(/[^\d]/g, ""));
+      if ((v && v !== "0") || Date.now() - t0 > 1500) return r();
+      setTimeout(check, 50);
+    })();
+  });
+  // 옆 위젯: 글꼴이 정해진 뒤 위치를 한 번 더 잡고 보여 준다 (최대 1.2초)
+  Promise.race([fontsReady, new Promise((r) => setTimeout(r, 1200))]).then(() => {
+    requestAnimationFrame(() => {
+      if (typeof alignSideWidgets === "function") alignSideWidgets();
+      requestAnimationFrame(() => root.classList.add("side-ready"));
+    });
+  });
+  // 카드 영역
+  Promise.race([Promise.all([fontsReady, dataReady]), new Promise((r) => setTimeout(r, 1500))]).then(() => {
+    root.classList.add("page-ready");
+    if (window.hsePlayEnter) window.hsePlayEnter();
+  });
+  pageLoaded.then(() => { if (typeof alignSideWidgets === "function") alignSideWidgets(); });
+})();
+
+
+/* ==========================================================
+   보건 > 현장 클리닉 현황 (구글 시트 '클리닉' 탭 → Apps Script action=clinic)
+   - 이름·사번은 Apps Script에서 이미 가려서 보내 준다
+   ========================================================== */
+// 클리닉 안내: 운영 시간·연락처는 여기서 고치면 됩니다
+const CLINIC_INFO = {
+  hours: "매일 08:00 ~ 17:00 (점심 12:00 ~ 13:00)",
+  place: "BNCP 캠프 클리닉",
+  contact: "내선 0000 · 응급 시 현장 비상연락망",
+};
+const CLINIC_CAT_COLOR = { "질병": "#4fb4ff", "부상(업무 중)": "#e5484d", "부상(업무 외)": "#ff7e79", "온열질환": "#f2a93b", "건강상담": "#35d0c0", "기타": "#8996a6" };
+let clinicLoadedAt = 0;
+
+async function loadClinic(force) {
+  if (!force && Date.now() - clinicLoadedAt < 5 * 60 * 1000) return;
+  document.getElementById("clinicInfo").innerHTML =
+    `<span><b>운영</b> ${escapeHtml(CLINIC_INFO.hours)}</span><span><b>위치</b> ${escapeHtml(CLINIC_INFO.place)}</span><span><b>연락</b> ${escapeHtml(CLINIC_INFO.contact)}</span>`;
+  const cards = document.getElementById("clinicCards");
+  let rows;
+  try {
+    const url = await getAppsScriptUrl();
+    if (!url) throw new Error("Apps Script 주소가 없습니다");
+    const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + "action=clinic&t=" + Date.now())).json();
+    if (!r.ok) throw new Error(r.error || "불러오기 실패");
+    rows = r.rows || [];
+  } catch (e) {
+    cards.innerHTML = `<p class="skeleton">진료 현황을 불러오지 못했습니다 (${escapeHtml(e.message)})</p>`;
+    return;
+  }
+  clinicLoadedAt = Date.now();
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: TIMEZONE }).format(new Date());
+  const dayMs = 86400000, tD = new Date(today + "T00:00:00Z");
+  const daysAgo = (d) => Math.round((tD - new Date(d + "T00:00:00Z")) / dayMs);
+  const inRange = (a, b) => rows.filter((x) => { const n = daysAgo(x.date); return n >= a && n <= b; });
+  const todayRows = inRange(0, 0), week = inRange(0, 6), prevWeek = inRange(7, 13), month = inRange(0, 29);
+  const referred = week.filter((x) => /후송/.test(x.action || "")).length;
+  const heat = week.filter((x) => /온열/.test(x.cat || "")).length;
+  const injury = week.filter((x) => /부상/.test(x.cat || "")).length;
+  const diff = week.length - prevWeek.length;
+
+  cards.innerHTML = `
+    <div class="clinic-card"><span>오늘 진료</span><b>${todayRows.length}</b><small>건</small></div>
+    <div class="clinic-card"><span>최근 7일</span><b>${week.length}</b><small>건</small>
+      <em class="${diff > 0 ? "up" : diff < 0 ? "down" : ""}">전주 대비 ${diff > 0 ? "▲" : diff < 0 ? "▼" : ""} ${Math.abs(diff)}</em></div>
+    <div class="clinic-card ${injury ? "warn" : ""}"><span>부상 (7일)</span><b>${injury}</b><small>건</small></div>
+    <div class="clinic-card ${heat ? "heat" : ""}"><span>온열질환 (7일)</span><b>${heat}</b><small>건</small></div>
+    <div class="clinic-card ${referred ? "danger" : ""}"><span>외부 병원 후송 (7일)</span><b>${referred}</b><small>건</small></div>`;
+
+  // 주별 추이 (구분별로 쌓기)
+  const weeks = [3, 2, 1, 0].map((w) => ({ label: w === 0 ? "이번 주" : `${w}주 전`, rows: inRange(w * 7, w * 7 + 6) }));
+  const max = Math.max(1, ...weeks.map((w) => w.rows.length));
+  document.getElementById("clinicTrend").innerHTML = weeks.map((w) => {
+    const byCat = {};
+    w.rows.forEach((x) => { byCat[x.cat || "기타"] = (byCat[x.cat || "기타"] || 0) + 1; });
+    return `<div class="ct-col"><div class="ct-bar" style="height:${(w.rows.length / max) * 100}%">${Object.entries(byCat).map(([c, n]) =>
+      `<i style="flex:${n};background:${CLINIC_CAT_COLOR[c] || "#8996a6"}" title="${escapeHtml(c)} ${n}건"></i>`).join("")}</div>
+      <b>${w.rows.length}</b><span>${w.label}</span></div>`;
+  }).join("") + `<div class="ct-legend">${Object.entries(CLINIC_CAT_COLOR).map(([c, col]) => `<span><i style="background:${col}"></i>${c}</span>`).join("")}</div>`;
+
+  // 많이 본 증상
+  const sym = {};
+  month.forEach((x) => String(x.symptom || "").split(/[,·/]/).map((t) => t.trim()).filter(Boolean).forEach((t) => { sym[t] = (sym[t] || 0) + 1; }));
+  const top = Object.entries(sym).sort((a, b) => b[1] - a[1]).slice(0, 6);
+  document.getElementById("clinicTop").innerHTML = top.length
+    ? top.map(([t, n], i) => `<li><span>${i + 1}</span>${escapeHtml(t)}<b>${n}건</b></li>`).join("")
+    : "<li>최근 30일 기록 없음</li>";
+
+  // 최근 기록 (가려진 이름·사번)
+  const recent = rows.slice().sort((a, b) => (b.date + (b.time || "")).localeCompare(a.date + (a.time || ""))).slice(0, 25);
+  document.getElementById("clinicTable").innerHTML = `
+    <thead><tr><th>날짜</th><th>시간</th><th>이름</th><th>사번</th><th>소속</th><th>구분</th><th>증상</th><th>조치</th></tr></thead>
+    <tbody>${recent.map((x) => `<tr>
+      <td>${escapeHtml(x.date.slice(5).replace("-", "/"))}</td><td>${escapeHtml(x.time || "")}</td>
+      <td>${escapeHtml(x.name || "")}</td><td class="mono">${escapeHtml(x.id || "")}</td><td>${escapeHtml(x.dept || "")}</td>
+      <td><span class="clinic-cat" style="--c:${CLINIC_CAT_COLOR[x.cat] || "#8996a6"}">${escapeHtml(x.cat || "")}</span></td>
+      <td>${escapeHtml(x.symptom || "")}</td><td class="${/후송/.test(x.action || "") ? "ref" : ""}">${escapeHtml(x.action || "")}</td></tr>`).join("") ||
+      '<tr><td colspan="8">아직 진료 기록이 없습니다. 구글 시트 \'클리닉\' 탭에 입력해 주세요.</td></tr>'}</tbody>`;
+  document.getElementById("clinicMeta").textContent =
+    `구글 시트 '클리닉' 탭에서 불러옵니다 (최근 60일) · 이름과 사번은 일부를 가려서 표시합니다 · 불러온 시각 ${new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date())}`;
+}
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", () => { if (btn.dataset.view === "view-health-clinic") loadClinic(false); });
+});
