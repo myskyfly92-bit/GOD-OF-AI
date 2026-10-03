@@ -2,8 +2,8 @@
   "_readme": "이 파일은 GitHub Actions가 외교부 공공데이터 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
   "country": "중동·주변국",
   "sources": {
-    "안전공지": false,
-    "공지사항": true
+    "공지사항": true,
+    "안전공지": false
   },
   "countries": [
     {
@@ -87,6 +87,6 @@
       "count": 0
     }
   ],
-  "generatedAt": "2026-10-03T16:49:00.186019+00:00",
+  "generatedAt": "2026-10-03T16:55:27.740253+00:00",
   "items": []
 }
