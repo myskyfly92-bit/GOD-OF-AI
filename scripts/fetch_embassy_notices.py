@@ -165,6 +165,7 @@ def pick_key(urls, keys):
             if not err:
                 return name, k, url, None
             last = f"{name} · {url.rsplit('/', 1)[-1]}: {err}"
+            print(f"  시도 실패 → {last}")
             if "NOT_REGISTERED" in str(err) or "등록되지 않은" in str(err):
                 break  # 이 키로는 이 API 자체가 안 됨 → 다음 키
     return None, None, None, last
@@ -173,12 +174,35 @@ def pick_key(urls, keys):
 COUNTRY_KEYS = ("country_nm", "countryName", "country_name", "countryNm", "country_iso_alp2", "isoCode", "isoCode1", "iso_code", "countryIsoAlp2")
 
 
+def total_of(j):
+    body = (j.get("response") or {}).get("body") or {}
+    t = j.get("totalCount") or body.get("totalCount")
+    try:
+        return int(str(t).replace(",", ""))
+    except (TypeError, ValueError):
+        return None
+
+
 def group_all(url, key):
-    """조건 없이 한꺼번에 받아서 나라별로 나눈다. 나라 정보가 없으면 None"""
-    j, err = call(url, key, {"returnType": "JSON", "type": "json", "numOfRows": 500, "pageNo": 1})
-    if err:
-        return None, err
-    items = rows_of(j)
+    """조건 없이 전체를 쪽(page)마다 끝까지 받아서 나라별로 나눈다. 나라 정보가 없으면 None
+    (첫 쪽만 받으면 오래된 공지나 가나다순 앞쪽 나라만 들어올 수 있어서 끝까지 받는다)"""
+    items, page, total = [], 1, None
+    while page <= 30:
+        j, err = call(url, key, {"returnType": "JSON", "type": "json", "numOfRows": 1000, "pageNo": page})
+        if err:
+            if page == 1:
+                return None, err
+            break
+        got = rows_of(j)
+        total = total_of(j) if total is None else total
+        items.extend(got)
+        if not got or (total and len(items) >= total) or len(got) < 1000:
+            break
+        page += 1
+    print(f"  전체 {len(items)}행 받음" + (f" (총 {total})" if total else ""))
+    if items:
+        names = sorted({str(field(it, "country_nm", "countryName", "country_name", "countryNm")) for it in items})
+        print(f"  나라 이름 예시: {names[:12]} … (총 {len(names)}개국)")
     if items:
         print("  받은 항목 예시 필드:", list(items[0].keys()))
     if not items or not any(field(it, *COUNTRY_KEYS) for it in items):
