@@ -340,6 +340,35 @@ function storeDailyForecastForCalendar(daily) {
 })();
 
 
+/* 공항 전광판식 시계: 숫자가 바뀌는 칸만 위쪽 반이 접히며 넘어간다 */
+const FLAP_CLOCK_REDUCE = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function flapClock(el, text) {
+  if (!el) return;
+  if (FLAP_CLOCK_REDUCE) { el.textContent = text; return; }
+  if (!el.classList.contains("flapclock")) {
+    el.classList.add("flapclock");
+    el.innerHTML = [...text].map((ch) => (/\d/.test(ch)
+      ? `<span class="fc" data-v="${ch}"><span class="fc-top">${ch}</span><span class="fc-bot">${ch}</span><span class="fc-flip fc-flip-top">${ch}</span><span class="fc-flip fc-flip-bot">${ch}</span></span>`
+      : `<span class="fc-sep">${ch}</span>`)).join("");
+    return;
+  }
+  const cards = el.querySelectorAll(".fc");
+  const digits = [...text].filter((c) => /\d/.test(c));
+  cards.forEach((card, i) => {
+    const nv = digits[i], ov = card.dataset.v;
+    if (nv === undefined || nv === ov) return;
+    card.dataset.v = nv;
+    const top = card.querySelector(".fc-top"), bot = card.querySelector(".fc-bot");
+    const ft = card.querySelector(".fc-flip-top"), fb = card.querySelector(".fc-flip-bot");
+    // 뒤쪽 위 반쪽은 새 숫자, 앞에서 접히는 위 반쪽은 옛 숫자 → 접힌 뒤 아래 반쪽이 새 숫자로 펼쳐짐
+    top.textContent = nv; ft.textContent = ov; fb.textContent = nv; bot.textContent = ov;
+    card.classList.remove("flipping"); void card.offsetWidth; card.classList.add("flipping");
+    clearTimeout(card._t);
+    card._t = setTimeout(() => { bot.textContent = nv; card.classList.remove("flipping"); }, 600);
+  });
+  el.setAttribute("aria-label", text);
+}
+
 function updateClock() {
   const now = new Date();
   const timeFmt = new Intl.DateTimeFormat("ko-KR", {
@@ -348,7 +377,7 @@ function updateClock() {
   const dateFmt = new Intl.DateTimeFormat("ko-KR", {
     timeZone: TIMEZONE, year: "numeric", month: "long", day: "numeric", weekday: "long"
   });
-  document.getElementById("clock").textContent = timeFmt.format(now);
+  flapClock(document.getElementById("clock"), timeFmt.format(now));
   document.getElementById("date").textContent = dateFmt.format(now);
 
   const kstFmt = new Intl.DateTimeFormat("ko-KR", {
