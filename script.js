@@ -1830,6 +1830,7 @@ function wzShowSchedule(zone) {
   bar.querySelectorAll("[data-part]").forEach((b) => b.onclick = () => { wzPart = wzPart === b.dataset.part ? null : b.dataset.part; wzShowSchedule(zone); });
 
   const fmt = (iso) => `${Number(iso.slice(5, 7))}/${Number(iso.slice(8, 10))}`;
+  const canEdit = !!((wzConfig && wzConfig.appsScriptUrl) || "").trim();
   const rows = WZ_DAY_ORDER.map((day, i) => {
     const iso = dates[i];
     const list = weekItems.filter((it) => (it.date ? it.date === iso : it.day === day)).filter(wzPassFilter);
@@ -1841,6 +1842,7 @@ function wzShowSchedule(zone) {
           ${(it.loc || it.person || it.note || it.crew) ? `<div class="wz-item-meta">${[it.loc && "📍 " + wzEscapeHtml(it.loc), it.crew && "👥 " + it.crew + "명", it.person && "👷 " + wzEscapeHtml(it.person), it.note && wzEscapeHtml(it.note)].filter(Boolean).join(" · ")}</div>` : ""}
           ${it.risks.length ? `<div class="wz-risks">${it.risks.map((r) => `<span class="wz-risk">⚠ ${wzEscapeHtml(r)}</span>`).join("")}</div>` : ""}
         </div>
+        ${canEdit ? `<span class="wz-item-tools"><button type="button" class="wz-edit" data-row="${it.row}" title="수정">수정</button><button type="button" class="wz-del" data-row="${it.row}" title="삭제">삭제</button></span>` : ""}
       </div>`).join("");
     return `
       <div class="wz-day-row wz-day-v2 ${list.length ? "" : "wz-day-empty"} ${iso === today ? "wz-today" : ""}">
@@ -1856,6 +1858,22 @@ function wzShowSchedule(zone) {
         <button type="button" data-w="1" aria-label="다음 주">›</button>
       </span></div>`) + `<div class="wz-day-list">${rows}</div>`;
   col.querySelectorAll(".wz-week-nav button").forEach((b) => b.onclick = () => { wzWeekOffset += Number(b.dataset.w); wzSelDate = null; wzShowSchedule(zone); });
+
+  // 수정·삭제 버튼 (누를 때 그 줄 선택(날짜 바꾸기)이 같이 일어나지 않게 막는다)
+  const byRow = (r) => (wzItems || []).find((it) => it.row === Number(r));
+  col.querySelectorAll(".wz-edit").forEach((b) => b.onclick = (e) => {
+    e.stopPropagation();
+    const it = byRow(b.dataset.row);
+    if (it) { wzShowAddForm(null, null, it); document.getElementById("wzPickBox")?.scrollIntoView({ behavior: "smooth", block: "center" }); }
+  });
+  col.querySelectorAll(".wz-del").forEach((b) => b.onclick = async (e) => {
+    e.stopPropagation();
+    const it = byRow(b.dataset.row);
+    if (!it) return;
+    if (!confirm(`'${it.work}' 작업을 지울까요?\n(구글 시트에서도 지워집니다)`)) return;
+    b.disabled = true; b.textContent = "…";
+    await wzSaveAndRefresh("del", { row: it.row, work: it.work });
+  });
 
   // 지도에 표시할 날짜: 고른 날짜 → 오늘(이번 주면) → 그 주 월요일
   const sel = dates.includes(wzSelDate) ? wzSelDate : (dates.includes(today) ? today : dates[0]);
@@ -1981,16 +1999,18 @@ async function wzSaveAndRefresh(action, payload) {
   return true;
 }
 
-function wzShowAddForm(x, y) {
+function wzShowAddForm(x, y, editItem) {
   const box = document.getElementById("wzPickBox");
   const zone = wzZones[wzActiveIdx];
   const today = wzBaghdadToday();
-  const defDate = wzSelDate || today;
+  const ed = editItem || null;
+  const defDate = ed ? (ed.date || "") : (wzSelDate || today);
+  if (ed) wzPick = { mode: "editing" };
   const partOpts = Object.entries(WZ_TEAMS).map(([t, v]) =>
     `<optgroup label="${wzEscapeHtml(t)}">${v.parts.map((p) => `<option value="${wzEscapeHtml(p)}">${wzEscapeHtml(p)}</option>`).join("")}</optgroup>`).join("");
   box.hidden = false;
   box.innerHTML = `
-    <div><b>${wzEscapeHtml(zone.name)}</b>에 작업 추가 <small>(X ${x}, Y ${y})</small></div>
+    <div>${ed ? `<b>작업 수정</b> <small>${ed.date ? "" : "(매주 반복 작업 · 날짜를 넣으면 그날 작업으로 바뀝니다)"}</small>` : `<b>${wzEscapeHtml(zone.name)}</b>에 작업 추가 <small>(X ${x}, Y ${y})</small>`}</div>
     <input type="date" id="wzfDate" value="${defDate}">
     <select id="wzfPart">${partOpts}</select>
     <input type="text" id="wzfWork" placeholder="작업내용 (필수)">
@@ -2000,8 +2020,18 @@ function wzShowAddForm(x, y) {
       <input type="number" id="wzfCrew" min="0" step="1" inputmode="numeric" placeholder="작업인원 (명)">
       <input type="text" id="wzfPerson" placeholder="담당자 (선택)">
     </div>
-    <div class="wz-pick-actions"><button type="button" id="wzfSave">저장</button><button type="button" class="wz-pick-cancel">취소</button></div>`;
+    <div class="wz-pick-actions"><button type="button" id="wzfSave">저장</button>${ed ? '<button type="button" id="wzfMove">위치 다시 찍기</button>' : ""}<button type="button" class="wz-pick-cancel">취소</button></div>`;
   box.querySelector(".wz-pick-cancel").onclick = () => wzStartPick(null);
+  if (ed) {
+    // 원래 값 채우기
+    document.getElementById("wzfPart").value = ed.part || "";
+    document.getElementById("wzfWork").value = ed.work || "";
+    document.getElementById("wzfLoc").value = ed.loc || "";
+    document.getElementById("wzfCrew").value = ed.crew || "";
+    document.getElementById("wzfPerson").value = ed.person || "";
+    box.querySelectorAll(".wz-risk-checks input").forEach((c) => { c.checked = ed.risks.includes(c.value); });
+    document.getElementById("wzfMove").onclick = () => wzStartPick({ mode: "setxy", item: ed });
+  }
   document.getElementById("wzfWork").focus();
   document.getElementById("wzfSave").onclick = async () => {
     const work = document.getElementById("wzfWork").value.trim();
@@ -2010,7 +2040,8 @@ function wzShowAddForm(x, y) {
     const team = Object.keys(WZ_TEAMS).find((t) => WZ_TEAMS[t].parts.includes(part)) || "";
     const btn = document.getElementById("wzfSave");
     btn.disabled = true; btn.textContent = "저장 중…";
-    const ok = await wzSaveAndRefresh("add", {
+    const ok = await wzSaveAndRefresh(ed ? "edit" : "add", {
+      ...(ed ? { row: ed.row, origWork: ed.work } : {}),
       date: document.getElementById("wzfDate").value, zone: zone.name, team, part, work,
       loc: document.getElementById("wzfLoc").value.trim(),
       risks: [...box.querySelectorAll(".wz-risk-checks input:checked")].map((c) => c.value),
@@ -4908,14 +4939,14 @@ const clinicTr = (v) => {
 
 // 클리닉 안내: 운영 시간·연락처는 여기서 고치면 됩니다 (영어 화면용 문구도 함께)
 const CLINIC_INFO = {
-  hours: "매일 08:00 ~ 17:00 (점심 12:00 ~ 13:00)",
+  hours: "매일 00:00 ~ 00:00 (24시간)",
   place: "BNCP 캠프 클리닉",
-  contact: "내선 0000 · 응급 시 현장 비상연락망",
+  contact: "0780-926-2446",
 };
 const CLINIC_INFO_EN = {
-  hours: "Daily 08:00 – 17:00 (lunch 12:00 – 13:00)",
+  hours: "Daily 00:00 – 00:00 (24 hours)",
   place: "BNCP Camp Clinic",
-  contact: "Ext. 0000 · Emergency: site emergency contacts",
+  contact: "0780-926-2446",
 };
 const CLINIC_CAT_COLOR = { "질병": "#4fb4ff", "부상(업무 중)": "#e5484d", "부상(업무 외)": "#ff7e79", "온열질환": "#f2a93b", "건강상담": "#35d0c0", "기타": "#8996a6" };
 let clinicLoadedAt = 0;

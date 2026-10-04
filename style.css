@@ -2710,3 +2710,11 @@ html:not(.page-ready) main.grid { opacity: 0; }
 #view-dashboard .incident-dept-panel,
 #view-dashboard .heat-illness-panel,
 #view-dashboard .disaster-panel { display: none; }
+
+/* 작업구역: 작업마다 수정·삭제 버튼 */
+.wz-item { position: relative; }
+.wz-item-tools { margin-left: auto; display: flex; gap: 4px; align-self: flex-start; opacity: 0.55; transition: opacity .15s; }
+.wz-item:hover .wz-item-tools { opacity: 1; }
+.wz-item-tools button { font-family: var(--font-body); font-size: 11px; font-weight: 600; cursor: pointer; padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border); background: rgba(10,14,19,0.6); color: var(--text-muted); }
+.wz-item-tools .wz-edit:hover { border-color: var(--cyan); color: var(--cyan); }
+.wz-item-tools .wz-del:hover { border-color: #e5484d; color: #ff8a8d; }
