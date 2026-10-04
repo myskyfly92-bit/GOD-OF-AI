@@ -2666,3 +2666,11 @@ html:not(.page-ready) main.grid { opacity: 0; }
 .emb-link img { width: 22px; height: 15px; object-fit: cover; border-radius: 2px; flex: none; }
 .emb-link i { margin-left: auto; font-style: normal; color: var(--text-dim); }
 .emb-link-0404 { grid-column: 1 / -1; justify-content: center; color: var(--cyan); }
+
+/* 클리닉 입력: 날짜·시간 빠른 버튼 */
+.cf-row { display: flex; gap: 6px; align-items: stretch; }
+.cf-row input { flex: 1; min-width: 0; }
+.clinic-form input[name="time"] { font-family: var(--font-mono); font-size: 15px; letter-spacing: 0.05em; }
+.clinic-form input.bad { border-color: #e5484d; box-shadow: 0 0 0 1px #e5484d; }
+.cf-chip { flex: none; font-family: var(--font-body); font-size: 12px; font-weight: 700; cursor: pointer; color: var(--cyan); background: rgba(53,208,192,0.08); border: 1px solid rgba(53,208,192,0.45); border-radius: 6px; padding: 0 10px; }
+.cf-chip:hover { background: rgba(53,208,192,0.2); }

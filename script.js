@@ -5025,12 +5025,48 @@ async function clinicCall(action, payload) {
     const now = new Date();
     form.reset();
     form.date.value = new Intl.DateTimeFormat("en-CA", { timeZone: TIMEZONE }).format(now);
-    form.time.value = new Intl.DateTimeFormat("en-GB", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(now);
+    form.time.value = new Intl.DateTimeFormat("en-GB", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit", hour12: false }).format(now);
   };
   btn.onclick = () => { form.hidden = !form.hidden; if (!form.hidden) { reset(); form.name.focus(); } msg.textContent = ""; };
+  // 시간 입력 쉽게: 숫자만 쳐도 되고(0930, 930, 14), 자동으로 '09:30' 꼴로 맞춘다. 24시간 기준
+  const t = form.elements.time;
+  const fmtTime = (raw) => {
+    const d = String(raw).replace(/[^0-9]/g, "").slice(0, 4);
+    if (!d) return "";
+    let h, m;
+    if (d.length <= 2) { h = +d; m = 0; }
+    else if (d.length === 3) { h = +d[0]; m = +d.slice(1); }
+    else { h = +d.slice(0, 2); m = +d.slice(2); }
+    if (h > 23 || m > 59) return null;
+    return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
+  };
+  t.addEventListener("input", () => {
+    // 치는 동안: 숫자 4개가 되면 가운데 ':' 를 넣어 보여 준다
+    const d = t.value.replace(/[^0-9]/g, "").slice(0, 4);
+    t.value = d.length > 2 ? d.slice(0, d.length - 2) + ":" + d.slice(-2) : d;
+    t.classList.remove("bad");
+  });
+  t.addEventListener("blur", () => {
+    if (!t.value) return;
+    const v = fmtTime(t.value);
+    if (v === null) t.classList.add("bad"); else t.value = v;
+  });
+  const nowTime = () => new Intl.DateTimeFormat("en-GB", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date());
+  form.querySelectorAll(".cf-chip").forEach((c) => c.addEventListener("click", () => {
+    if (c.hasAttribute("data-now")) { t.value = nowTime(); t.classList.remove("bad"); return; }
+    const day = new Date(Date.now() + Number(c.dataset.day) * 86400000);
+    form.date.value = new Intl.DateTimeFormat("en-CA", { timeZone: TIMEZONE }).format(day);
+  }));
   document.getElementById("clinicCancel").onclick = () => { form.hidden = true; };
   form.onsubmit = async (e) => {
     e.preventDefault();
+    if (form.time.value) {
+      const v = (function (raw) { const d = String(raw).replace(/[^0-9]/g, "").slice(0, 4); if (!d) return ""; let h, m;
+        if (d.length <= 2) { h = +d; m = 0; } else if (d.length === 3) { h = +d[0]; m = +d.slice(1); } else { h = +d.slice(0, 2); m = +d.slice(2); }
+        return h > 23 || m > 59 ? null : `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`; })(form.time.value);
+      if (v === null) { msg.textContent = TT("시간을 확인해 주세요 (예: 0930, 14:20)", "Check the time (e.g. 0930, 14:20)"); msg.className = "err"; form.time.focus(); return; }
+      form.time.value = v;
+    }
     const data = Object.fromEntries(new FormData(form).entries());
     const save = form.querySelector('button[type="submit"]');
     save.disabled = true; msg.textContent = TT("저장 중…", "Saving…"); msg.className = "";
@@ -5070,6 +5106,8 @@ async function clinicCall(action, payload) {
   });
   // 고르기 목록: 시트에는 한국어 값으로 저장되도록 value 는 그대로, 보이는 글자만 영어로
   form.querySelectorAll("select option").forEach((o) => { o.value = o.value || o.textContent; o.textContent = CLINIC_EN[o.value] || o.value; });
+  form.querySelectorAll(".cf-chip").forEach((c) => { c.textContent = c.hasAttribute("data-now") ? "Now" : c.dataset.day === "0" ? "Today" : "Yesterday"; });
+  if (form.elements.time) form.elements.time.placeholder = "e.g. 0930 → 09:30";
   const btns = form.querySelectorAll(".clinic-form-actions button");
   if (btns[0]) btns[0].textContent = "Save";
   if (btns[1]) btns[1].textContent = "Close";
