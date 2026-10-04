@@ -2854,6 +2854,3 @@ html:not(.page-ready) main.grid { opacity: 0; }
   text-decoration: none;
 }
 .kosha-file:hover { background: rgba(242, 169, 59, 0.2); }
-.kosha-news { color: var(--text-dim); }
-.kosha-news a { color: var(--text-muted); }
-.kosha-news a:hover { color: var(--cyan); }
