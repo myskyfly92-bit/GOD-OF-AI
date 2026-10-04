@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261004f">
+<link rel="stylesheet" href="style.css?v=20261004g">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -369,6 +369,8 @@
         <div class="clinic-trend" id="clinicTrend"></div>
         <div class="clinic-sub" style="margin-top:14px">계통별 진료 (최근 30일 · 중복 포함)</div>
         <ul class="clinic-top" id="clinicTop"></ul>
+        <div class="clinic-sub" style="margin-top:14px">부상 분석 (최근 30일)</div>
+        <div class="clinic-inj-stats" id="clinicInjStats"></div>
       </div>
       <div>
         <div class="clinic-sub clinic-sub-row">최근 진료 기록 <button type="button" class="clinic-add-btn" id="clinicAddBtn">+ 진료 기록 추가</button></div>
@@ -381,6 +383,11 @@
           <label>구분<select name="cat" required>
             <option>질병</option><option>부상(업무 중)</option><option>부상(업무 외)</option><option>온열질환</option><option>건강상담</option><option>기타</option>
           </select></label>
+          <div class="cf-inj" id="clinicInj" hidden>
+            <span class="cf-cats-label">상해 종류 <small>여러 개 선택 가능</small></span>
+            <div class="cf-cat-btns"><button type="button" class="cf-cat cf-injt" data-v="찰과상">찰과상</button><button type="button" class="cf-cat cf-injt" data-v="열상·베임">열상·베임</button><button type="button" class="cf-cat cf-injt" data-v="찔림">찔림</button><button type="button" class="cf-cat cf-injt" data-v="타박상">타박상</button><button type="button" class="cf-cat cf-injt" data-v="염좌·좌상">염좌·좌상</button><button type="button" class="cf-cat cf-injt" data-v="골절·탈구">골절·탈구</button><button type="button" class="cf-cat cf-injt" data-v="화상">화상</button><button type="button" class="cf-cat cf-injt" data-v="눈 손상">눈 손상</button><button type="button" class="cf-cat cf-injt" data-v="압궤·끼임 손상">압궤·끼임 손상</button><button type="button" class="cf-cat cf-injt" data-v="절단">절단</button><button type="button" class="cf-cat cf-injt" data-v="기타">기타</button></div>
+            <label class="cf-cause">발생 형태 (무슨 사고였나)<select name="injCause"><option value="">선택 안 함</option><option>떨어짐</option><option>넘어짐</option><option>부딪힘</option><option>물체에 맞음</option><option>끼임</option><option>깔림·뒤집힘</option><option>절단·베임·찔림</option><option>무너짐</option><option>감전</option><option>화재·폭발</option><option>이상온도 접촉</option><option>화학물질 접촉</option><option>무리한 동작</option><option>교통사고</option><option>기타</option></select></label>
+          </div>
           <div class="cf-cats wide2"><span class="cf-cats-label">증상 분류 <small>여러 개 선택 가능 · 안 고르면 증상 보고 자동 분류</small></span>
             <div class="cf-cat-btns" id="clinicSymCats"><button type="button" class="cf-cat" data-v="호흡기계">호흡기계</button><button type="button" class="cf-cat" data-v="근골격계">근골격계</button><button type="button" class="cf-cat" data-v="소화기계">소화기계</button><button type="button" class="cf-cat" data-v="신경계">신경계</button><button type="button" class="cf-cat" data-v="심혈관계">심혈관계</button><button type="button" class="cf-cat" data-v="내분비계">내분비계</button><button type="button" class="cf-cat" data-v="비뇨기계">비뇨기계</button><button type="button" class="cf-cat" data-v="기타">기타</button></div>
           </div>
@@ -757,7 +764,7 @@
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261004f"></script>
+<script src="script.js?v=20261004g"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

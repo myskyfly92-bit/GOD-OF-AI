@@ -4942,6 +4942,9 @@ function symCatsOf(x) {
   return hit.length ? hit : ["기타"];
 }
 const symCatOf = (x) => symCatsOf(x)[0];
+// 부상 분류 (산업재해 통계 기준): 상해 종류(여러 개) · 발생 형태(하나)
+const INJ_TYPES = [["찰과상","Abrasion"],["열상·베임","Laceration/cut"],["찔림","Puncture"],["타박상","Contusion"],["염좌·좌상","Sprain/strain"],["골절·탈구","Fracture/dislocation"],["화상","Burn"],["눈 손상","Eye injury"],["압궤·끼임 손상","Crush injury"],["절단","Amputation"],["기타","Other"]];
+const INJ_CAUSES = [["떨어짐","Fall from height"],["넘어짐","Slip/trip"],["부딪힘","Collision"],["물체에 맞음","Struck by object"],["끼임","Caught in/between"],["깔림·뒤집힘","Crushed/overturned"],["절단·베임·찔림","Cut/stab"],["무너짐","Collapse"],["감전","Electric shock"],["화재·폭발","Fire/explosion"],["이상온도 접촉","Hot/cold contact"],["화학물질 접촉","Chemical contact"],["무리한 동작","Overexertion"],["교통사고","Vehicle accident"],["기타","Other"]];
 const symCatInfo = (name) => SYMCATS.find((c) => c[0] === name) || SYMCATS[SYMCATS.length - 1];
 
 async function loadClinic(force) {
@@ -5015,6 +5018,27 @@ async function loadClinic(force) {
       }).join("")
     : `<li>${TT("최근 30일 기록 없음", "No records in the last 30 days")}</li>`;
 
+  // 부상 분석 (최근 30일): 상해 종류·발생 형태별 건수
+  (function injuryStats() {
+    const box = document.getElementById("clinicInjStats");
+    if (!box) return;
+    const inj = month.filter((x) => /부상/.test(x.cat || ""));
+    if (!inj.length) { box.innerHTML = `<p class="cis-empty">${TT("최근 30일 부상 기록이 없습니다", "No injuries in the last 30 days")}</p>`; return; }
+    const count = (getter) => { const m = {}; inj.forEach((x) => getter(x).forEach((v) => { m[v] = (m[v] || 0) + 1; })); return Object.entries(m).sort((a, b) => b[1] - a[1]); };
+    const types = count((x) => String(x.injType || "").split(/\s*,\s*/).filter(Boolean));
+    const causes = count((x) => (x.injCause ? [x.injCause] : []));
+    const onDuty = inj.filter((x) => /업무 중/.test(x.cat || "")).length;
+    const tr = (list, v) => { const f = list.find((r) => r[0] === v); return UI_EN && f ? f[1] : v; };
+    const bars = (rows, list, color) => rows.length ? rows.slice(0, 6).map(([v, n]) => `
+      <li class="sc-row"><span class="sc-name"><i style="background:${color}"></i>${escapeHtml(tr(list, v))}</span>
+      <span class="sc-n">${n}${TT("건", "")}</span>
+      <span class="sc-bar"><b style="width:${(n / rows[0][1]) * 100}%;background:${color}"></b></span></li>`).join("")
+      : `<li class="cis-none">${TT("입력된 내용 없음", "Not entered")}</li>`;
+    box.innerHTML = `<p class="cis-sum">${TT("부상", "Injuries")} <b>${inj.length}</b>${TT("건", "")} · ${TT("업무 중", "on duty")} <b>${onDuty}</b> · ${TT("업무 외", "off duty")} <b>${inj.length - onDuty}</b></p>
+      <div class="cis-cols"><div><div class="cis-h">${TT("상해 종류", "Injury type")}</div><ul class="clinic-top">${bars(types, INJ_TYPES, "#ff7e79")}</ul></div>
+      <div><div class="cis-h">${TT("발생 형태", "Accident type")}</div><ul class="clinic-top">${bars(causes, INJ_CAUSES, "#f2a93b")}</ul></div></div>`;
+  })();
+
   // 최근 기록 (가려진 이름·사번)
   const recent = rows.slice().sort((a, b) => (b.date + (b.time || "")).localeCompare(a.date + (a.time || ""))).slice(0, 25);
   document.getElementById("clinicTable").innerHTML = `
@@ -5023,7 +5047,10 @@ async function loadClinic(force) {
       <td>${escapeHtml(x.date.slice(5).replace("-", "/"))}</td><td>${escapeHtml(x.time || "")}</td>
       <td>${escapeHtml(x.name || "")}</td><td class="mono">${escapeHtml(x.id || "")}</td><td>${escapeHtml(clinicTr(x.dept))}</td>
       <td><span class="clinic-cat" style="--c:${CLINIC_CAT_COLOR[x.cat] || "#8996a6"}">${escapeHtml(clinicTr(x.cat))}</span></td>
-      <td>${symCatsOf(x).map((c) => `<span class="sc-tag" style="--c:${symCatInfo(c)[2]}">${escapeHtml(UI_EN ? symCatInfo(c)[1] : c)}</span>`).join("")} ${escapeHtml(clinicTr(x.symptom))}</td><td class="${/후송/.test(x.action || "") ? "ref" : ""}">${escapeHtml(clinicTr(x.action))}</td>
+      <td>${/부상/.test(x.cat || "") && (x.injType || x.injCause)
+        ? String(x.injType || "").split(/\s*,\s*/).filter(Boolean).map((v) => `<span class="sc-tag" style="--c:#ff7e79">${escapeHtml(UI_EN ? ((INJ_TYPES.find((r) => r[0] === v) || [])[1] || v) : v)}</span>`).join("")
+          + (x.injCause ? `<span class="sc-tag" style="--c:#f2a93b">${escapeHtml(UI_EN ? ((INJ_CAUSES.find((r) => r[0] === x.injCause) || [])[1] || x.injCause) : x.injCause)}</span>` : "")
+        : ""}${symCatsOf(x).map((c) => `<span class="sc-tag" style="--c:${symCatInfo(c)[2]}">${escapeHtml(UI_EN ? symCatInfo(c)[1] : c)}</span>`).join("")} ${escapeHtml(clinicTr(x.symptom))}</td><td class="${/후송/.test(x.action || "") ? "ref" : ""}">${escapeHtml(clinicTr(x.action))}</td>
       <td><button type="button" class="clinic-del" data-row="${x.row}" data-date="${escapeHtml(x.date)}" title="이 기록 삭제">×</button></td></tr>`).join("") ||
       `<tr><td colspan="9">${TT("아직 진료 기록이 없습니다. '+ 진료 기록 추가'로 입력해 주세요.", "No clinic records yet. Use '+ Add record' to enter one.")}</td></tr>`}</tbody>`;
   // 입력 도우미: 지금까지 쓴 소속·증상을 자동완성 목록으로
@@ -5073,11 +5100,15 @@ async function clinicCall(action, payload) {
     const now = new Date();
     form.reset();
     form.querySelectorAll(".cf-cat.on").forEach((b) => b.classList.remove("on"));
+    const ib = document.getElementById("clinicInj"); if (ib) ib.hidden = true;
     form.date.value = new Intl.DateTimeFormat("en-CA", { timeZone: TIMEZONE }).format(now);
     form.time.value = new Intl.DateTimeFormat("en-GB", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit", hour12: false }).format(now);
   };
   btn.onclick = () => { form.hidden = !form.hidden; if (!form.hidden) { reset(); form.name.focus(); } msg.textContent = ""; };
   form.querySelectorAll(".cf-cat").forEach((b) => b.addEventListener("click", () => b.classList.toggle("on")));
+  const injBox = document.getElementById("clinicInj");
+  const syncInj = () => { if (injBox) injBox.hidden = !/부상/.test(form.cat.value); };
+  form.cat.addEventListener("change", syncInj);
   // 시간 입력 쉽게: 숫자만 쳐도 되고(0930, 930, 14), 자동으로 '09:30' 꼴로 맞춘다. 24시간 기준
   const t = form.elements.time;
   const fmtTime = (raw) => {
@@ -5118,8 +5149,11 @@ async function clinicCall(action, payload) {
       form.time.value = v;
     }
     const data = Object.fromEntries(new FormData(form).entries());
-    const picked = [...form.querySelectorAll(".cf-cat.on")].map((b) => b.dataset.v);
+    const picked = [...form.querySelectorAll(".cf-cat.on:not(.cf-injt)")].map((b) => b.dataset.v);
     data.symCat = (picked.length ? picked : symCatsOf({ symptom: data.symptom })).join(", ");
+    if (/부상/.test(data.cat || "")) {
+      data.injType = [...form.querySelectorAll(".cf-injt.on")].map((b) => b.dataset.v).join(", ");
+    } else { data.injType = ""; data.injCause = ""; }
     const save = form.querySelector('button[type="submit"]');
     save.disabled = true; msg.textContent = TT("저장 중…", "Saving…"); msg.className = "";
     try {
@@ -5144,12 +5178,17 @@ async function clinicCall(action, payload) {
   const subs = panel.querySelectorAll(".clinic-sub");
   if (subs[0]) subs[0].textContent = "Visits by week (last 4 weeks)";
   if (subs[1]) subs[1].textContent = "By body system (last 30 days, multiple counted)";
+  if (subs[2] && subs[2].textContent.includes("부상")) subs[2].textContent = "Injury analysis (last 30 days)";
   if (subs[2]) subs[2].firstChild.nodeValue = "Recent records ";
   set("#clinicAddBtn", "+ Add record");
   const form = panel.querySelector("#clinicForm");
   const labels = { date: "Date", time: "Time", name: "Name", id: "Employee ID", dept: "Company", cat: "Type", symptom: "Symptoms (detail)", action: "Action", note: "Note (not shown on site)" };
   SYMCATS.forEach(([ko, en]) => { CLINIC_EN[ko] = en; });
-  form.querySelectorAll(".cf-cat").forEach((b) => { b.textContent = CLINIC_EN[b.dataset.v] || b.dataset.v; });
+  INJ_TYPES.forEach(([k, e]) => form.querySelectorAll(`.cf-injt[data-v="${k}"]`).forEach((b) => { b.textContent = e; }));
+  form.querySelectorAll(".cf-cat:not(.cf-injt)").forEach((b) => { b.textContent = CLINIC_EN[b.dataset.v] || b.dataset.v; });
+  form.querySelectorAll('select[name="injCause"] option').forEach((o) => { if (o.value) { const f = INJ_CAUSES.find((r) => r[0] === o.value); if (f) o.textContent = f[1]; } else o.textContent = "Not selected"; });
+  const injLab = form.querySelector("#clinicInj .cf-cats-label"); if (injLab) injLab.innerHTML = "Injury type <small>multiple allowed</small>";
+  const causeLab = form.querySelector(".cf-cause"); if (causeLab && causeLab.firstChild.nodeType === 3) causeLab.firstChild.nodeValue = "Accident type";
   const catLabel = form.querySelector(".cf-cats-label");
   if (catLabel) catLabel.innerHTML = "Symptom group <small>multiple allowed · auto if none selected</small>";
   const ph = { name: "e.g. Mohammed Ali", id: "e.g. 1234567", dept: "e.g. Hanwha, Subcontractor", symptom: "e.g. Headache, Muscle pain (comma-separated)", note: "Internal memo" };
