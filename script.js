@@ -1426,7 +1426,10 @@ function renderKoshaCases() {
   if (!accKosha || !(accKosha.items || []).length) {
     return `<p class="skeleton">국내 건설업 재해사례를 준비 중입니다. (자동 수집이 처음 실행되면 표시됩니다)</p>`;
   }
-  const items = accKosha.items;
+  // 사고 발생일 기준 최신 → 과거 (발생일이 본문에 없는 사례는 맨 뒤)
+  const items = [...accKosha.items].sort((a, b) =>
+    String(b.sortKey || "0").localeCompare(String(a.sortKey || "0")) ||
+    String(b.boardno || "").localeCompare(String(a.boardno || "")));
   const counts = {};
   items.forEach(it => { counts[it.type] = (counts[it.type] || 0) + 1; });
   const types = Object.keys(counts).sort((x, y) => counts[y] - counts[x]);
@@ -1454,9 +1457,10 @@ function renderKoshaCases() {
             <summary>
               <span class="kosha-type kosha-type--${accEscapeHtml(it.type)}">${accEscapeHtml(it.type)}</span>
               <span class="kosha-title">${accEscapeHtml(it.title)}</span>
-              <span class="kosha-date">${accEscapeHtml((it.registeredAt || "").slice(0, 10))} 등록</span>
+              <span class="kosha-date">${accEscapeHtml(koshaDateLabel(it.accidentDate))}</span>
             </summary>
             <p class="kosha-body">${accEscapeHtml(it.contents)}</p>
+            ${koshaLinks(it)}
           </details>
         </li>
       `).join("")}
@@ -1464,8 +1468,53 @@ function renderKoshaCases() {
     ${filtered.length > accKoshaShown
       ? `<button type="button" class="kosha-more" data-kosha-more>더 보기 (${filtered.length - accKoshaShown}건 남음)</button>`
       : ""}
-    <p class="kosha-note">출처: 한국산업안전보건공단 <a href="${accEscapeHtml(accKosha.sourceUrl || "https://portal.kosha.or.kr")}" target="_blank" rel="noopener noreferrer">산업안전포털</a> 국내재해사례 · 공공데이터포털 오픈API · 매일 자동 갱신 · 날짜는 게시판 등록일이며, 사고 발생일은 본문을 참고하세요</p>
+    <p class="kosha-note">출처: 한국산업안전보건공단 <a href="${accEscapeHtml(accKosha.sourceUrl || "https://portal.kosha.or.kr")}" target="_blank" rel="noopener noreferrer">산업안전포털</a> 국내재해사례 · 공공데이터포털 오픈API · 매일 자동 갱신 · 날짜는 사고 발생일(일자가 가려진 사례는 연·월만 표시) · 상세 자료는 공단이 사례별로 첨부한 원문이며, 뉴스 검색은 익명 처리된 사례라 다른 사고가 함께 나올 수 있습니다</p>
   `;
+}
+
+// "2025-11-20" → "2025.11.20", "2025-11" → "2025.11", 없으면 "발생일 미상"
+function koshaDateLabel(d) {
+  if (!d) return "발생일 미상";
+  return d.replace(/-/g, ".");
+}
+
+// 사고 발생 시점 전후로 기간을 좁혀 뉴스 검색 링크를 만든다
+function koshaNewsRange(d) {
+  if (!d) return null;
+  const [y, m, day] = d.split("-").map(Number);
+  const start = new Date(Date.UTC(y, m - 1, day || 1));
+  const end = day ? new Date(Date.UTC(y, m - 1, day + 14))      // 발생일 ~ 2주 뒤
+                  : new Date(Date.UTC(y, m, 14));                 // 그달 1일 ~ 다음 달 14일
+  const fmt = (dt, sep) => [dt.getUTCFullYear(), String(dt.getUTCMonth() + 1).padStart(2, "0"),
+    String(dt.getUTCDate()).padStart(2, "0")].join(sep);
+  return { naverFrom: fmt(start, "."), naverTo: fmt(end, "."), gFrom: fmt(start, "-"), gTo: fmt(end, "-") };
+}
+
+function koshaLinks(it) {
+  const q = it.newsQuery || it.title;
+  if (!q) return "";
+  const r = koshaNewsRange(it.accidentDate);
+  const naver = "https://search.naver.com/search.naver?where=news&sort=0&query=" + encodeURIComponent(q) +
+    (r ? `&pd=3&ds=${r.naverFrom}&de=${r.naverTo}` : "");
+  const google = "https://news.google.com/search?hl=ko&gl=KR&ceid=KR:ko&q=" +
+    encodeURIComponent(r ? `${q} after:${r.gFrom} before:${r.gTo}` : q);
+  // 공단이 사례에 붙인 상세 자료(사고 경위·원인·대책 PDF)를 먼저, 뉴스 검색은 보조로
+  const files = Array.isArray(it.files) ? it.files : [];
+  const fileBtns = files.map((f) => {
+    const ext = (String(f.name).match(/\.([a-z0-9]+)$/i) || [])[1];
+    const label = files.length > 1 ? f.name.replace(/\.[a-z0-9]+$/i, "") : "상세 자료";
+    return `<a class="kosha-file" href="${accEscapeHtml(f.url)}" target="_blank" rel="noopener noreferrer"
+      title="${accEscapeHtml(f.name)}">📄 ${accEscapeHtml(label)}${ext ? ` (${accEscapeHtml(ext.toUpperCase())})` : ""} ↗</a>`;
+  }).join("");
+  return `
+    <div class="kosha-links">
+      ${fileBtns}
+      <span class="kosha-news">
+        관련 뉴스 검색:
+        <a href="${accEscapeHtml(naver)}" target="_blank" rel="noopener noreferrer" title="검색어: ${accEscapeHtml(q)}">네이버</a> ·
+        <a href="${accEscapeHtml(google)}" target="_blank" rel="noopener noreferrer" title="검색어: ${accEscapeHtml(q)}">구글</a>
+      </span>
+    </div>`;
 }
 
 document.addEventListener("click", (e) => {

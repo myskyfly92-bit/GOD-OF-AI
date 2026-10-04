@@ -2832,3 +2832,28 @@ html:not(.page-ready) main.grid { opacity: 0; }
   .kosha-case summary { flex-wrap: wrap; gap: 6px 8px; }
   .kosha-title { flex-basis: 100%; order: 3; }
 }
+.kosha-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  padding: 0 14px 14px;
+  font-size: 12px;
+}
+.kosha-file {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 14px;
+  border: 1px solid var(--amber);
+  border-radius: 6px;
+  background: rgba(242, 169, 59, 0.10);
+  color: var(--amber);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.kosha-file:hover { background: rgba(242, 169, 59, 0.2); }
+.kosha-news { color: var(--text-dim); }
+.kosha-news a { color: var(--text-muted); }
+.kosha-news a:hover { color: var(--cyan); }
