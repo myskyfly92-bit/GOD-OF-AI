@@ -340,6 +340,14 @@ function storeDailyForecastForCalendar(daily) {
 })();
 
 
+/* 탭(소분류) → 그 탭이 속한 대분류의 배경 이름 */
+const BG_OF_GROUP = { home: "bg-dashboard", safety: "bg-safety", health: "bg-health", env: "bg-env", fire: "bg-fire", etc: "bg-etc" };
+function bgClassOfView(viewId) {
+  const b = document.querySelector(`.sub-row .tab-btn[data-view="${viewId}"]`);
+  const g = b && b.closest(".sub-row") ? b.closest(".sub-row").dataset.group : "home";
+  return BG_OF_GROUP[g] || "bg-dashboard";
+}
+
 /* 공항 전광판식 시계: 숫자가 바뀌는 칸만 위쪽 반이 접히며 넘어간다 */
 const FLAP_CLOCK_REDUCE = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 function flapClock(el, text) {
@@ -927,8 +935,8 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
     document.getElementById(btn.dataset.view).classList.add("active");
 
     // 탭에 맞춰 배경 사진도 전환
-    const bgClass = "bg-" + btn.dataset.view.replace("view-", "");
-    document.body.className = bgClass;
+    // 배경 사진은 대분류(종합현황·안전·보건·환경·소방·기타 정보)마다 하나. 소분류는 대분류 사진을 따른다
+    document.body.className = bgClassOfView(btn.dataset.view);
 
     // 탭마다 카드 영역 크기가 달라서 달력·환율 위치를 다시 맞춘다
     if (typeof alignSideWidgets === "function") {
@@ -4125,12 +4133,12 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   let kdcaCache = null, saCache = null, fireCache = null;
   const SLIDES = [
     { cls: "bg-dashboard", label: "종합현황", text: () => `무재해 <b>${$t("incidentFreeDays")}</b>일 · 착공 <b>${$t("constructionDays")}</b>일째` },
-    { cls: "bg-workzone", label: "오늘 작업", text: () => `작업 <b>${$t("twTotal")}</b>건 · 투입 <b>${$t("twCrew")}</b>명 · 위험작업 <b>${$t("twRisk")}</b>건` },
-    { cls: "bg-env-weather", label: "현장 날씨", text: () => { const r = wx.raw || {}; return r.temp != null ? `현재 <b>${Math.round(r.temp)}℃</b> · 바람 <b>${(r.wind || 0).toFixed(1)}</b>m/s · 순간 <b>${(r.gust || 0).toFixed(1)}</b>m/s${r.dust != null ? ` · 모래먼지 <b>${Math.round(r.dust)}</b>㎍/㎥` : ""}` : "현장 날씨 확인 중"; } },
-    { cls: "bg-sa", label: "국내 중대재해", text: () => saCache ? `${saCache.period} 사고사망자 <b>${(saCache.byIndustry || []).reduce((a, x) => a + (x.total || 0), 0)}</b>명` : "국내 중대재해 현황" },
-    { cls: "bg-health-kdca", label: "국내 감염병", text: () => kdcaCache ? `${kdcaCache.baseWeek.label} 법정감염병 <b>${kdcaCache.totalBase.toLocaleString()}</b>건 · 제1급 <b>${kdcaCache.grades["제1급"].base}</b>건` : "국내 감염병 현황" },
-    { cls: "bg-fires", label: "화재 현황", text: () => fireCache && fireCache.nearby ? `현장 ${fireCache.nearby.radiusKm}km 내 최근 24시간 신규 화재 <b>${fireCache.nearby.count}</b>건` : "이라크 화재 현황" },
-    { cls: "bg-ships", label: "해상·항공", text: () => "중동 상공 항공기 · 걸프만 선박 실시간 모니터링" },
+    { cls: "bg-safety", label: "오늘 작업", text: () => `작업 <b>${$t("twTotal")}</b>건 · 투입 <b>${$t("twCrew")}</b>명 · 위험작업 <b>${$t("twRisk")}</b>건` },
+    { cls: "bg-env", label: "현장 날씨", text: () => { const r = wx.raw || {}; return r.temp != null ? `현재 <b>${Math.round(r.temp)}℃</b> · 바람 <b>${(r.wind || 0).toFixed(1)}</b>m/s · 순간 <b>${(r.gust || 0).toFixed(1)}</b>m/s${r.dust != null ? ` · 모래먼지 <b>${Math.round(r.dust)}</b>㎍/㎥` : ""}` : "현장 날씨 확인 중"; } },
+    { cls: "bg-safety", label: "국내 중대재해", text: () => saCache ? `${saCache.period} 사고사망자 <b>${(saCache.byIndustry || []).reduce((a, x) => a + (x.total || 0), 0)}</b>명` : "국내 중대재해 현황" },
+    { cls: "bg-health", label: "국내 감염병", text: () => kdcaCache ? `${kdcaCache.baseWeek.label} 법정감염병 <b>${kdcaCache.totalBase.toLocaleString()}</b>건 · 제1급 <b>${kdcaCache.grades["제1급"].base}</b>건` : "국내 감염병 현황" },
+    { cls: "bg-fire", label: "화재 현황", text: () => fireCache && fireCache.nearby ? `현장 ${fireCache.nearby.radiusKm}km 내 최근 24시간 신규 화재 <b>${fireCache.nearby.count}</b>건` : "이라크 화재 현황" },
+    { cls: "bg-etc", label: "해상·항공", text: () => "중동 상공 항공기 · 걸프만 선박 실시간 모니터링" },
   ];
   const kiosk = {
     running: false, idx: 0, timer: null, prevClass: "",

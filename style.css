@@ -2202,30 +2202,16 @@ html body {
 .cd-grp td { color: var(--amber) !important; font-weight: 700; font-size: 12px !important; background: rgba(242, 169, 59, 0.06); }
 
 /* ==========================================================
-   소분류 탭별 배경 사진
-   assets 폴더에 아래 이름으로 사진을 넣으면 그 탭에서 자동으로 보입니다. (.jpg 또는 .webp 둘 다 됩니다)
-   사진이 없으면 종합현황 사진(bg-dashboard.jpg)이 대신 나옵니다.
+   대분류별 배경 사진 (소분류 탭은 자기 대분류의 사진을 따른다)
+   assets 폴더에 아래 이름으로 넣으면 됩니다 (.jpg 또는 .webp)
+   사진이 없으면 종합현황 사진(bg-dashboard)이 대신 나옵니다.
    ========================================================== */
-body.bg-dashboard { --tab-bg: url('assets/bg-dashboard.jpg'); --tab-bg-webp: url('assets/bg-dashboard.webp'); }       /* 종합현황 */
-body.bg-sa { --tab-bg: url('assets/bg-sa.jpg'); --tab-bg-webp: url('assets/bg-sa.webp'); }              /* 안전 > 국내 중대재해 현황 */
-body.bg-accidents { --tab-bg: url('assets/bg-accidents.jpg'); --tab-bg-webp: url('assets/bg-accidents.webp'); }       /* 안전 > 사고사례 */
-body.bg-procedures { --tab-bg: url('assets/bg-procedures.jpg'); --tab-bg-webp: url('assets/bg-procedures.webp'); }      /* 안전 > 안전작업절차서 */
-body.bg-workzone { --tab-bg: url('assets/bg-workzone.jpg'); --tab-bg-webp: url('assets/bg-workzone.webp'); }        /* 안전 > 작업구역 */
-body.bg-embassy { --tab-bg: url('assets/bg-embassy.jpg'); --tab-bg-webp: url('assets/bg-embassy.webp'); }         /* 기타 정보 > 중동 각국 대사관 공지 */
-body.bg-health-clinic { --tab-bg: url('assets/bg-health-clinic.jpg'); --tab-bg-webp: url('assets/bg-health-clinic.webp'); } /* 보건 > 현장 클리닉 현황 */
-body.bg-health-kdca { --tab-bg: url('assets/bg-health-kdca.jpg'); --tab-bg-webp: url('assets/bg-health-kdca.webp'); }     /* 보건 > 국내 감염병 현황 */
-body.bg-iraq-moh { --tab-bg: url('assets/bg-iraq-moh.jpg'); --tab-bg-webp: url('assets/bg-iraq-moh.webp'); }        /* 보건 > 이라크 보건부 소식 */
-body.bg-health-infect { --tab-bg: url('assets/bg-health-infect.jpg'); --tab-bg-webp: url('assets/bg-health-infect.webp'); }   /* 보건 > WHO 소식 */
-body.bg-health-heat { --tab-bg: url('assets/bg-health-heat.jpg'); --tab-bg-webp: url('assets/bg-health-heat.webp'); }     /* 보건 > 온열질환 */
-body.bg-env-weather { --tab-bg: url('assets/bg-env-weather.jpg'); --tab-bg-webp: url('assets/bg-env-weather.webp'); }     /* 환경 > 날씨·대기환경 */
-body.bg-iraq-moen { --tab-bg: url('assets/bg-iraq-moen.jpg'); --tab-bg-webp: url('assets/bg-iraq-moen.webp'); }       /* 환경 > 이라크 환경부 소식 */
-body.bg-fires { --tab-bg: url('assets/bg-fires.jpg'); --tab-bg-webp: url('assets/bg-fires.webp'); }           /* 소방 > 화재 현황 */
-body.bg-iraq-cd { --tab-bg: url('assets/bg-iraq-cd.jpg'); --tab-bg-webp: url('assets/bg-iraq-cd.webp'); }         /* 소방 > 이라크 민방위(소방) 소식 */
-body.bg-ships { --tab-bg: url('assets/bg-ships.jpg'); --tab-bg-webp: url('assets/bg-ships.webp'); }           /* 기타 정보 > 해상·항공 현황 */
-body.bg-global { --tab-bg: url('assets/bg-global.jpg'); --tab-bg-webp: url('assets/bg-global.webp'); }          /* 기타 정보 > 해외 현장 */
-body.bg-env-dust { --tab-bg: url('assets/bg-env-dust.jpg'); --tab-bg-webp: url('assets/bg-env-dust.webp'); }        /* 환경 > 모래폭풍 예보 */
-body.bg-env-quake { --tab-bg: url('assets/bg-env-quake.jpg'); --tab-bg-webp: url('assets/bg-env-quake.webp'); }       /* 환경 > 중동 지진 현황 */
-body.bg-travel { --tab-bg: url('assets/bg-travel.jpg'); --tab-bg-webp: url('assets/bg-travel.webp'); }          /* 기타 정보 > 주변국 여행경보 */
+body.bg-dashboard { --tab-bg: url('assets/bg-dashboard.jpg'); --tab-bg-webp: url('assets/bg-dashboard.webp'); }  /* 종합현황 */
+body.bg-safety    { --tab-bg: url('assets/bg-safety.jpg');    --tab-bg-webp: url('assets/bg-safety.webp'); }     /* 안전 */
+body.bg-health    { --tab-bg: url('assets/bg-health.jpg');    --tab-bg-webp: url('assets/bg-health.webp'); }     /* 보건 */
+body.bg-env       { --tab-bg: url('assets/bg-env.jpg');       --tab-bg-webp: url('assets/bg-env.webp'); }        /* 환경 */
+body.bg-fire      { --tab-bg: url('assets/bg-fire.jpg');      --tab-bg-webp: url('assets/bg-fire.webp'); }       /* 소방 */
+body.bg-etc       { --tab-bg: url('assets/bg-etc.jpg');       --tab-bg-webp: url('assets/bg-etc.webp'); }        /* 기타 정보 */
 
 /* ---------- 배경 사진 살리기: 카드 등장 효과 · 배경 보기 ---------- */
 .view.view-enter .grid > .panel {
