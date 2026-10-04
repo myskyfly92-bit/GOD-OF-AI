@@ -3,34 +3,33 @@
  "source": "질병관리청 전수신고 감염병 발생현황 (공공데이터포털)",
  "currentWeek": {
   "year": 2026,
-  "week": 40,
-  "label": "2026년 40주",
-  "start": "2026-09-27",
-  "end": "2026-10-03"
+  "week": 41,
+  "label": "2026년 41주",
+  "start": "2026-10-04",
+  "end": "2026-10-10"
  },
  "baseWeek": {
-  "year": 2026,
-  "week": 38,
-  "label": "2026년 38주",
-  "start": "2026-09-13",
-  "end": "2026-09-19"
- },
- "prevWeek": {
-  "year": 2026,
-  "week": 37,
-  "label": "2026년 37주",
-  "start": "2026-09-06",
-  "end": "2026-09-12"
- },
- "provisionalWeek": {
   "year": 2026,
   "week": 39,
   "label": "2026년 39주",
   "start": "2026-09-20",
   "end": "2026-09-26"
  },
+ "prevWeek": {
+  "year": 2026,
+  "week": 38,
+  "label": "2026년 38주",
+  "start": "2026-09-13",
+  "end": "2026-09-19"
+ },
+ "provisionalWeek": {
+  "year": 2026,
+  "week": 40,
+  "label": "2026년 40주",
+  "start": "2026-09-27",
+  "end": "2026-10-03"
+ },
  "trendWeeks": [
-  "2026년 27주",
   "2026년 28주",
   "2026년 29주",
   "2026년 30주",
@@ -41,7 +40,8 @@
   "2026년 35주",
   "2026년 36주",
   "2026년 37주",
-  "2026년 38주"
+  "2026년 38주",
+  "2026년 39주"
  ],
  "grades": {
   "제1급": {
@@ -67,12 +67,11 @@
   },
   "제2급": {
    "diseases": 21,
-   "base": 1899,
-   "prev": 1913,
-   "provisional": 1398,
-   "outnatn": 2,
+   "base": 1398,
+   "prev": 1899,
+   "provisional": 1342,
+   "outnatn": 1,
    "trend": [
-    2358,
     2277,
     2064,
     2349,
@@ -83,17 +82,17 @@
     2166,
     1910,
     1913,
-    1899
+    1899,
+    1398
    ]
   },
   "제3급": {
    "diseases": 28,
-   "base": 206,
-   "prev": 228,
-   "provisional": 120,
-   "outnatn": 11,
+   "base": 120,
+   "prev": 206,
+   "provisional": 112,
+   "outnatn": 3,
    "trend": [
-    242,
     211,
     148,
     227,
@@ -104,7 +103,8 @@
     210,
     203,
     228,
-    206
+    206,
+    120
    ]
   }
  },
@@ -112,150 +112,150 @@
   {
    "name": "카바페넴내성장내세균목(CRE) 감염증",
    "grade": "제2급",
-   "base": 1293,
-   "prev": 1286,
-   "provisional": 849,
-   "dmstc": 1293,
+   "base": 849,
+   "prev": 1293,
+   "provisional": 960,
+   "dmstc": 849,
    "outnatn": 0
   },
   {
    "name": "수두",
    "grade": "제2급",
-   "base": 347,
-   "prev": 339,
-   "provisional": 355,
-   "dmstc": 347,
-   "outnatn": 0
+   "base": 355,
+   "prev": 347,
+   "provisional": 230,
+   "dmstc": 354,
+   "outnatn": 1
   },
   {
    "name": "성홍열",
    "grade": "제2급",
-   "base": 116,
-   "prev": 112,
-   "provisional": 106,
-   "dmstc": 116,
+   "base": 106,
+   "prev": 116,
+   "provisional": 75,
+   "dmstc": 106,
    "outnatn": 0
   },
   {
    "name": "C형간염",
    "grade": "제3급",
-   "base": 108,
-   "prev": 115,
-   "provisional": 57,
-   "dmstc": 107,
-   "outnatn": 1
+   "base": 57,
+   "prev": 108,
+   "provisional": 58,
+   "dmstc": 57,
+   "outnatn": 0
   },
   {
    "name": "유행성이하선염",
    "grade": "제2급",
-   "base": 92,
-   "prev": 115,
-   "provisional": 48,
-   "dmstc": 92,
-   "outnatn": 0
-  },
-  {
-   "name": "매독",
-   "grade": "제3급",
-   "base": 34,
-   "prev": 45,
-   "provisional": 22,
-   "dmstc": 30,
-   "outnatn": 4
-  },
-  {
-   "name": "레지오넬라증",
-   "grade": "제3급",
-   "base": 28,
-   "prev": 20,
-   "provisional": 7,
-   "dmstc": 28,
+   "base": 48,
+   "prev": 92,
+   "provisional": 49,
+   "dmstc": 48,
    "outnatn": 0
   },
   {
    "name": "A형간염",
    "grade": "제2급",
-   "base": 26,
-   "prev": 29,
-   "provisional": 27,
-   "dmstc": 25,
-   "outnatn": 1
-  },
-  {
-   "name": "백일해",
-   "grade": "제2급",
-   "base": 9,
-   "prev": 1,
-   "provisional": 4,
-   "dmstc": 9,
+   "base": 27,
+   "prev": 26,
+   "provisional": 16,
+   "dmstc": 27,
    "outnatn": 0
   },
   {
-   "name": "E형간염",
-   "grade": "제2급",
-   "base": 8,
-   "prev": 11,
-   "provisional": 4,
-   "dmstc": 7,
-   "outnatn": 1
-  },
-  {
-   "name": "말라리아",
+   "name": "매독",
    "grade": "제3급",
-   "base": 8,
-   "prev": 10,
-   "provisional": 3,
-   "dmstc": 6,
+   "base": 22,
+   "prev": 34,
+   "provisional": 23,
+   "dmstc": 20,
    "outnatn": 2
   },
   {
    "name": "중증열성혈소판감소증후군(SFTS)",
    "grade": "제3급",
-   "base": 6,
-   "prev": 5,
-   "provisional": 9,
-   "dmstc": 6,
+   "base": 9,
+   "prev": 6,
+   "provisional": 3,
+   "dmstc": 9,
    "outnatn": 0
   },
   {
-   "name": "폐렴구균 감염증",
+   "name": "레지오넬라증",
+   "grade": "제3급",
+   "base": 7,
+   "prev": 28,
+   "provisional": 11,
+   "dmstc": 7,
+   "outnatn": 0
+  },
+  {
+   "name": "쯔쯔가무시증",
+   "grade": "제3급",
+   "base": 7,
+   "prev": 3,
+   "provisional": 1,
+   "dmstc": 7,
+   "outnatn": 0
+  },
+  {
+   "name": "백일해",
    "grade": "제2급",
-   "base": 5,
-   "prev": 4,
-   "provisional": 3,
-   "dmstc": 5,
+   "base": 4,
+   "prev": 9,
+   "provisional": 6,
+   "dmstc": 4,
+   "outnatn": 0
+  },
+  {
+   "name": "E형간염",
+   "grade": "제2급",
+   "base": 4,
+   "prev": 8,
+   "provisional": 1,
+   "dmstc": 4,
    "outnatn": 0
   },
   {
    "name": "비브리오패혈증",
    "grade": "제3급",
-   "base": 5,
-   "prev": 4,
-   "provisional": 4,
-   "dmstc": 5,
+   "base": 4,
+   "prev": 5,
+   "provisional": 2,
+   "dmstc": 4,
    "outnatn": 0
   },
   {
-   "name": "뎅기열",
+   "name": "신증후군출혈열",
    "grade": "제3급",
    "base": 4,
-   "prev": 10,
-   "provisional": 1,
-   "dmstc": 0,
-   "outnatn": 4
+   "prev": 2,
+   "provisional": 2,
+   "dmstc": 4,
+   "outnatn": 0
+  },
+  {
+   "name": "폐렴구균 감염증",
+   "grade": "제2급",
+   "base": 3,
+   "prev": 5,
+   "provisional": 3,
+   "dmstc": 3,
+   "outnatn": 0
   }
  ],
  "grade1Recent": [],
  "importedRecent4": [
   {
-   "name": "뎅기열",
-   "grade": "제3급",
-   "count": 16
-  },
-  {
    "name": "매독",
    "grade": "제3급",
-   "count": 12
+   "count": 8
+  },
+  {
+   "name": "뎅기열",
+   "grade": "제3급",
+   "count": 6
   },
   {
    "name": "말라리아",
@@ -265,12 +265,12 @@
   {
    "name": "수두",
    "grade": "제2급",
-   "count": 2
+   "count": 1
   },
   {
    "name": "A형간염",
    "grade": "제2급",
-   "count": 2
+   "count": 1
   },
   {
    "name": "E형간염",
@@ -283,7 +283,7 @@
    "count": 1
   }
  ],
- "totalBase": 2105,
- "totalPrev": 2141,
- "generatedAt": "2026-10-03T01:30:00.158965+00:00"
+ "totalBase": 1518,
+ "totalPrev": 2105,
+ "generatedAt": "2026-10-04T02:01:27.509008+00:00"
 }

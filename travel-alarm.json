@@ -715,16 +715,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 및 특별여행주의보 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "카보델가도 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 및 특별여행주의보 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -960,16 +960,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "벨라루스 브레스트 고멜 지역 내 우크라이나 국경에서 30km"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "4단계, 특별여행주의보 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "벨라루스 브레스트 고멜 지역 내 우크라이나 국경에서 30km"
     }
    ],
    "written": "",
@@ -2484,12 +2484,6 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "송클라 주 남부 말레이시아 접경지역, 파타니 주, 나라티왓 주, 얄라 주, 태국-캄보디아 국경 50km 이내"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -2500,6 +2494,12 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "2.3단계 및 특별여행주의보 발령 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "송클라 주 남부 말레이시아 접경지역, 파타니 주, 나라티왓 주, 얄라 주, 태국-캄보디아 국경 50km 이내"
     }
    ],
    "written": "",
@@ -2547,12 +2547,6 @@
    "level": 3,
    "regions": [
     {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "튀니스와 수도권 지역/비제르트 주/나불 주/수스 주/모나스티르 주 마흐디아 주/스팍스 주/제르바 주"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -2563,6 +2557,12 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "1, 3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "튀니스와 수도권 지역/비제르트 주/나불 주/수스 주/모나스티르 주 마흐디아 주/스팍스 주/제르바 주"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-10-03T07:08:43.025967+00:00"
+ "generatedAt": "2026-10-04T07:28:13.539870+00:00"
 }

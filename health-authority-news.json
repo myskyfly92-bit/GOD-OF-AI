@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-03T00:28:04.769Z",
+  "generatedAt": "2026-10-03T23:46:00.998Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
-      "title": "보도자료(전체)",
-      "source": "질병관리청",
+      "title": "여행자 이용서비스 - Q-CODE",
+      "source": "",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
-      "date": "2025-12-16T15:46:00.000Z"
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uTXVCZUNFYWJnVVc3Tk82YnlmSE1RS1VGTXVjVTJudEdVMkJKUWJscERUaGRmSHo0QWF5MU85WFRmNjVicU1vT1dmOW1wUThWcWMtdzNUdmpjem5JdUhDRFJtODJLWGItalk2Yw?oc=5",
+      "date": "2026-09-30T14:50:37.000Z"
     },
     {
       "title": "지침",
@@ -17,11 +17,11 @@
       "date": "2025-12-16T12:27:05.000Z"
     },
     {
-      "title": "여행자 이용서비스 - Q-CODE",
+      "title": "- 질병관리청",
       "source": "",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uTXVCZUNFYWJnVVc3Tk82YnlmSE1RS1VGTXVjVTJudEdVMkJKUWJscERUaGRmSHo0QWF5MU85WFRmNjVicU1vT1dmOW1wUThWcWMtdzNUdmpjem5JdUhDRFJtODJLWGItalk2Yw?oc=5",
-      "date": "2026-09-30T14:50:37.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
+      "date": "2026-10-02T09:13:12.000Z"
     },
     {
       "title": "채용공고",
@@ -43,13 +43,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
       "date": "2024-06-10T03:38:59.000Z"
-    },
-    {
-      "title": "- 질병관리청",
-      "source": "",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-02T09:13:12.000Z"
     },
     {
       "title": "보도자료 - [9.30.수.석간] 「2025년 국민건강영양조사」 결과 발표",
@@ -85,6 +78,13 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
       "date": "2024-06-10T02:47:27.000Z"
+    },
+    {
+      "title": "홍보물",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoZDI5VGFnRWd1b0hoSFhVX0VIV1VKaXhjSzRxb2dfT3J0ZlNOeVdWUlV3YlhPVTUwM3Y5UmxDc3EzelBlaXp4akQzYmNsLVhqVzJrOFNn?oc=5",
+      "date": "2026-02-10T10:33:00.000Z"
     }
   ]
 }
