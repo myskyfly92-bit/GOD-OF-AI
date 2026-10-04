@@ -2674,3 +2674,29 @@ html:not(.page-ready) main.grid { opacity: 0; }
 .clinic-form input.bad { border-color: #e5484d; box-shadow: 0 0 0 1px #e5484d; }
 .cf-chip { flex: none; font-family: var(--font-body); font-size: 12px; font-weight: 700; cursor: pointer; color: var(--cyan); background: rgba(53,208,192,0.08); border: 1px solid rgba(53,208,192,0.45); border-radius: 6px; padding: 0 10px; }
 .cf-chip:hover { background: rgba(53,208,192,0.2); }
+
+/* 클리닉: 증상 분류별 막대 (이름·건수 한 줄, 아래에 막대와 세부 증상) */
+.clinic-top li.sc-row { display: grid; grid-template-columns: 1fr auto; gap: 4px 8px; align-items: center; padding: 8px 0; }
+.clinic-top li.sc-row span { width: auto; height: auto; border-radius: 0; background: none; display: block; font-family: var(--font-body); font-size: 12.5px; }
+.clinic-top li.sc-row .sc-name { display: flex; justify-content: flex-start; align-items: center; gap: 6px; color: var(--text); font-weight: 600; min-width: 0; grid-row: 1; grid-column: 1; }
+.sc-name i { width: 9px; height: 9px; border-radius: 2px; flex: none; }
+.clinic-top li.sc-row .sc-n { grid-row: 1; grid-column: 2; text-align: right; font-family: var(--font-mono); color: var(--text); white-space: nowrap; }
+.sc-n small { color: var(--text-dim); font-size: 10.5px; margin-left: 2px; }
+.clinic-top li.sc-row .sc-bar { grid-column: 1 / -1; height: 7px; background: rgba(255,255,255,0.06); border-radius: 4px; overflow: hidden; }
+.clinic-top li.sc-row .sc-bar b { display: block; height: 100%; border-radius: 4px; margin: 0; font-family: inherit; }
+.clinic-top li.sc-row .sc-sub { grid-column: 1 / -1; font-size: 11px; color: var(--text-dim); }
+.sc-tag { display: inline-block; font-size: 10.5px; font-weight: 700; color: var(--c); border: 1px solid var(--c); border-radius: 4px; padding: 0 5px; margin-right: 4px; opacity: 0.9; }
+
+/* 클리닉 입력: 증상 분류 여러 개 고르기 */
+.cf-cats { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; }
+.cf-cats-label { font-size: 11.5px; color: var(--text-dim); }
+.cf-cats-label small { margin-left: 6px; color: var(--text-dim); opacity: 0.8; }
+.cf-cat-btns { display: flex; flex-wrap: wrap; gap: 6px; }
+.cf-cat { font-family: var(--font-body); font-size: 12.5px; font-weight: 600; cursor: pointer; color: var(--text-muted); background: var(--panel-2); border: 1px solid var(--border); border-radius: 999px; padding: 5px 14px; }
+.cf-cat:hover { border-color: var(--cyan); color: var(--text); }
+.cf-cat.on { background: var(--cyan); border-color: var(--cyan); color: #0a0e13; }
+.cf-cat.on::before { content: "✓ "; }
+/* 클리닉: 왼쪽 통계 칸이 표에 밀려 좁아지지 않게 */
+.clinic-cols { grid-template-columns: minmax(280px, 1fr) minmax(0, 2fr); }
+.clinic-cols > div { min-width: 0; }
+@media (max-width: 1000px) { .clinic-cols { grid-template-columns: 1fr; } }

@@ -4911,6 +4911,30 @@ const CLINIC_INFO_EN = {
 };
 const CLINIC_CAT_COLOR = { "질병": "#4fb4ff", "부상(업무 중)": "#e5484d", "부상(업무 외)": "#ff7e79", "온열질환": "#f2a93b", "건강상담": "#35d0c0", "기타": "#8996a6" };
 let clinicLoadedAt = 0;
+// 증상 분류 (신체 계통 8가지). 한 사람이 여러 계통일 수 있어(예: 고혈압+당뇨) 여러 개를 쉼표로 저장한다
+const SYMCATS = [
+  ["호흡기계", "Respiratory", "#4fb4ff", /감기|기침|가래|콧물|코막힘|인후|목\s*아|편도|호흡|천식|폐렴|독감|인플루엔자|비염|cold|cough|flu|sore throat/i],
+  ["근골격계", "Musculoskeletal", "#c792ea", /근육|요통|허리|어깨|무릎|관절|염좌|삠|담\s*결|근골|통풍|back pain|muscle|joint|sprain/i],
+  ["소화기계", "Digestive", "#a3d977", /복통|배\s*아|설사|변비|소화|구토|구역|메스꺼|속쓰림|위염|장염|복부|식중독|역류|diarrh|vomit|stomach|nausea/i],
+  ["신경계", "Neurological", "#ffcf5c", /두통|머리\s*아|편두통|어지러|현기증|실신|저림|마비|headache|dizz|faint/i],
+  ["심혈관계", "Cardiovascular", "#ff6b6b", /고혈압|혈압|흉통|가슴|두근|부정맥|심장|협심|chest|blood pressure|hypertens|palpit/i],
+  ["내분비계", "Endocrine", "#f2a93b", /당뇨|혈당|인슐린|갑상선|고지혈|콜레스테롤|diabet|glucose|thyroid/i],
+  ["비뇨기계", "Urinary", "#5ad1e0", /소변|배뇨|빈뇨|혈뇨|요로|방광|신장|결석|전립선|urin|kidney|bladder/i],
+  ["기타", "Other", "#8996a6", /./],
+];
+// 예전에 쓰던 분류 이름 → 지금 이름
+const SYMCAT_OLD = { "호흡기": "호흡기계", "소화기": "소화기계", "신경계(두통·어지럼)": "신경계", "심혈관(흉통·혈압)": "심혈관계" };
+// 기록 하나의 분류 목록 (저장된 값이 있으면 그것, 없으면 증상 글자로 자동 판단 — 여러 개 나올 수 있음)
+function symCatsOf(x) {
+  const saved = String(x.symCat || "").split(/\s*,\s*/).map((v) => SYMCAT_OLD[v] || v)
+    .filter((v) => SYMCATS.some((c) => c[0] === v));
+  if (saved.length) return [...new Set(saved)];
+  const t = String(x.symptom || "");
+  const hit = SYMCATS.slice(0, -1).filter((c) => c[3].test(t)).map((c) => c[0]);
+  return hit.length ? hit : ["기타"];
+}
+const symCatOf = (x) => symCatsOf(x)[0];
+const symCatInfo = (name) => SYMCATS.find((c) => c[0] === name) || SYMCATS[SYMCATS.length - 1];
 
 async function loadClinic(force) {
   if (!force && Date.now() - clinicLoadedAt < 5 * 60 * 1000) return;
@@ -4959,12 +4983,28 @@ async function loadClinic(force) {
       <b>${w.rows.length}</b><span>${w.label}</span></div>`;
   }).join("") + `<div class="ct-legend">${Object.entries(CLINIC_CAT_COLOR).map(([c, col]) => `<span><i style="background:${col}"></i>${escapeHtml(clinicTr(c))}</span>`).join("")}</div>`;
 
-  // 많이 본 증상
-  const sym = {};
-  month.forEach((x) => String(x.symptom || "").split(/[,·/]/).map((t) => t.trim()).filter(Boolean).forEach((t) => { sym[t] = (sym[t] || 0) + 1; }));
-  const top = Object.entries(sym).sort((a, b) => b[1] - a[1]).slice(0, 6);
-  document.getElementById("clinicTop").innerHTML = top.length
-    ? top.map(([t, n], i) => `<li><span>${i + 1}</span>${escapeHtml(clinicTr(t))}<b>${n}${TT("건", "")}</b></li>`).join("")
+  // 증상 분류별 (최근 30일): 막대 + 각 분류에서 많이 나온 세부 증상
+  const byCat = {}, sym = {};
+  month.forEach((x) => {
+    const parts = String(x.symptom || "").split(/[,·/]/).map((t) => t.trim()).filter(Boolean);
+    symCatsOf(x).forEach((c) => {
+      (byCat[c] = byCat[c] || { n: 0, sub: {} }).n++;
+      parts.forEach((t) => { byCat[c].sub[t] = (byCat[c].sub[t] || 0) + 1; });
+    });
+    parts.forEach((t) => { sym[t] = (sym[t] || 0) + 1; });
+  });
+  const catRows = Object.entries(byCat).sort((a, b) => b[1].n - a[1].n);
+  const catMax = Math.max(1, ...catRows.map(([, v]) => v.n));
+  document.getElementById("clinicTop").innerHTML = catRows.length
+    ? catRows.map(([c, v]) => {
+        const info = symCatInfo(c);
+        const subs = Object.entries(v.sub).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([t]) => escapeHtml(clinicTr(t))).join(", ");
+        const pct = Math.round((v.n / month.length) * 100);
+        return `<li class="sc-row"><span class="sc-name"><i style="background:${info[2]}"></i>${escapeHtml(UI_EN ? info[1] : info[0])}</span>
+          <span class="sc-bar"><b style="width:${(v.n / catMax) * 100}%;background:${info[2]}"></b></span>
+          <span class="sc-n">${v.n}${TT("건", "")} <small>${pct}%</small></span>
+          ${subs ? `<span class="sc-sub">${subs}</span>` : ""}</li>`;
+      }).join("")
     : `<li>${TT("최근 30일 기록 없음", "No records in the last 30 days")}</li>`;
 
   // 최근 기록 (가려진 이름·사번)
@@ -4975,7 +5015,7 @@ async function loadClinic(force) {
       <td>${escapeHtml(x.date.slice(5).replace("-", "/"))}</td><td>${escapeHtml(x.time || "")}</td>
       <td>${escapeHtml(x.name || "")}</td><td class="mono">${escapeHtml(x.id || "")}</td><td>${escapeHtml(clinicTr(x.dept))}</td>
       <td><span class="clinic-cat" style="--c:${CLINIC_CAT_COLOR[x.cat] || "#8996a6"}">${escapeHtml(clinicTr(x.cat))}</span></td>
-      <td>${escapeHtml(clinicTr(x.symptom))}</td><td class="${/후송/.test(x.action || "") ? "ref" : ""}">${escapeHtml(clinicTr(x.action))}</td>
+      <td>${symCatsOf(x).map((c) => `<span class="sc-tag" style="--c:${symCatInfo(c)[2]}">${escapeHtml(UI_EN ? symCatInfo(c)[1] : c)}</span>`).join("")} ${escapeHtml(clinicTr(x.symptom))}</td><td class="${/후송/.test(x.action || "") ? "ref" : ""}">${escapeHtml(clinicTr(x.action))}</td>
       <td><button type="button" class="clinic-del" data-row="${x.row}" data-date="${escapeHtml(x.date)}" title="이 기록 삭제">×</button></td></tr>`).join("") ||
       `<tr><td colspan="9">${TT("아직 진료 기록이 없습니다. '+ 진료 기록 추가'로 입력해 주세요.", "No clinic records yet. Use '+ Add record' to enter one.")}</td></tr>`}</tbody>`;
   // 입력 도우미: 지금까지 쓴 소속·증상을 자동완성 목록으로
@@ -5024,10 +5064,12 @@ async function clinicCall(action, payload) {
   const reset = () => {
     const now = new Date();
     form.reset();
+    form.querySelectorAll(".cf-cat.on").forEach((b) => b.classList.remove("on"));
     form.date.value = new Intl.DateTimeFormat("en-CA", { timeZone: TIMEZONE }).format(now);
     form.time.value = new Intl.DateTimeFormat("en-GB", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit", hour12: false }).format(now);
   };
   btn.onclick = () => { form.hidden = !form.hidden; if (!form.hidden) { reset(); form.name.focus(); } msg.textContent = ""; };
+  form.querySelectorAll(".cf-cat").forEach((b) => b.addEventListener("click", () => b.classList.toggle("on")));
   // 시간 입력 쉽게: 숫자만 쳐도 되고(0930, 930, 14), 자동으로 '09:30' 꼴로 맞춘다. 24시간 기준
   const t = form.elements.time;
   const fmtTime = (raw) => {
@@ -5068,6 +5110,8 @@ async function clinicCall(action, payload) {
       form.time.value = v;
     }
     const data = Object.fromEntries(new FormData(form).entries());
+    const picked = [...form.querySelectorAll(".cf-cat.on")].map((b) => b.dataset.v);
+    data.symCat = (picked.length ? picked : symCatsOf({ symptom: data.symptom })).join(", ");
     const save = form.querySelector('button[type="submit"]');
     save.disabled = true; msg.textContent = TT("저장 중…", "Saving…"); msg.className = "";
     try {
@@ -5091,11 +5135,15 @@ async function clinicCall(action, payload) {
   set(".panel-label", "SITE CLINIC · Clinic visits");
   const subs = panel.querySelectorAll(".clinic-sub");
   if (subs[0]) subs[0].textContent = "Visits by week (last 4 weeks)";
-  if (subs[1]) subs[1].textContent = "Top symptoms (last 30 days)";
+  if (subs[1]) subs[1].textContent = "By body system (last 30 days, multiple counted)";
   if (subs[2]) subs[2].firstChild.nodeValue = "Recent records ";
   set("#clinicAddBtn", "+ Add record");
   const form = panel.querySelector("#clinicForm");
-  const labels = { date: "Date", time: "Time", name: "Name", id: "Employee ID", dept: "Company", cat: "Type", symptom: "Symptoms", action: "Action", note: "Note (not shown on site)" };
+  const labels = { date: "Date", time: "Time", name: "Name", id: "Employee ID", dept: "Company", cat: "Type", symptom: "Symptoms (detail)", action: "Action", note: "Note (not shown on site)" };
+  SYMCATS.forEach(([ko, en]) => { CLINIC_EN[ko] = en; });
+  form.querySelectorAll(".cf-cat").forEach((b) => { b.textContent = CLINIC_EN[b.dataset.v] || b.dataset.v; });
+  const catLabel = form.querySelector(".cf-cats-label");
+  if (catLabel) catLabel.innerHTML = "Symptom group <small>multiple allowed · auto if none selected</small>";
   const ph = { name: "e.g. Mohammed Ali", id: "e.g. 1234567", dept: "e.g. Hanwha, Subcontractor", symptom: "e.g. Headache, Muscle pain (comma-separated)", note: "Internal memo" };
   Object.entries(labels).forEach(([k, v]) => {
     const input = form.elements[k];
@@ -5105,7 +5153,7 @@ async function clinicCall(action, payload) {
     if (ph[k]) input.placeholder = ph[k];
   });
   // 고르기 목록: 시트에는 한국어 값으로 저장되도록 value 는 그대로, 보이는 글자만 영어로
-  form.querySelectorAll("select option").forEach((o) => { o.value = o.value || o.textContent; o.textContent = CLINIC_EN[o.value] || o.value; });
+  form.querySelectorAll("select option").forEach((o) => { o.value = o.hasAttribute("value") ? o.value : o.textContent; o.textContent = CLINIC_EN[o.value] ?? o.value; });
   form.querySelectorAll(".cf-chip").forEach((c) => { c.textContent = c.hasAttribute("data-now") ? "Now" : c.dataset.day === "0" ? "Today" : "Yesterday"; });
   if (form.elements.time) form.elements.time.placeholder = "e.g. 0930 → 09:30";
   const btns = form.querySelectorAll(".clinic-form-actions button");
