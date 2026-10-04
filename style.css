@@ -2704,3 +2704,9 @@ html:not(.page-ready) main.grid { opacity: 0; }
 .clinic-form > * { min-width: 0; }
 .cf-row .cf-chip { padding: 0 8px; }
 @media (max-width: 1300px) { .clinic-form { grid-template-columns: repeat(2, minmax(0, 1fr)); } .clinic-form label.wide { grid-column: 1 / -1; } }
+/* 종합현황에서 잠시 빼 둔 카드 (지우지 않고 숨김: 다시 보이게 하려면 아래 4줄을 지우면 됨)
+   ※ 국내 온열질환 카드는 '보건 > 온열질환' 탭에서는 그대로 보인다 */
+#view-dashboard section[aria-label="안전 지표"],
+#view-dashboard .incident-dept-panel,
+#view-dashboard .heat-illness-panel,
+#view-dashboard .disaster-panel { display: none; }
