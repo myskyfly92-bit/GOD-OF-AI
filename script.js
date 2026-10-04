@@ -1389,49 +1389,95 @@ function renderProcedures(categories) {
 
 loadProcedures();
 
-/* ---------------- 사고사례 (accident-cases.json 기반) ---------------- */
+/* ---------------- 사고사례: 국내 건설업 재해사례 (kosha-cases.json 기반) ----------------
+   한국산업안전보건공단 국내재해사례 게시판에서 건설업만 골라
+   GitHub Actions(update-kosha-cases.yml)가 매일 kosha-cases.json으로 저장한다. */
 function accEscapeHtml(str) {
   if (str === undefined || str === null) return "";
   return String(str)
-    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
+
+let accKosha = null;
+let accKoshaType = "전체";
+let accKoshaShown = 15;
+const ACC_KOSHA_STEP = 15;
 
 async function loadAccidentCases() {
   const container = document.getElementById("accidentContainer");
   if (!container) return;
   try {
-    const res = await fetch("accident-cases.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("accident-cases.json 로드 실패");
-    const data = await res.json();
-    renderAccidentCases(data.categories);
+    const res = await fetch("kosha-cases.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("kosha-cases.json 로드 실패");
+    accKosha = await res.json();
   } catch (err) {
     console.error(err);
-    container.innerHTML = `<p class="skeleton">accident-cases.json을 불러올 수 없습니다.</p>`;
+    accKosha = null;
   }
+  container.innerHTML = renderKoshaCases();
 }
 
-function renderAccidentCases(categories) {
-  const container = document.getElementById("accidentContainer");
-  if (!categories || !categories.length) {
-    container.innerHTML = `<p class="skeleton">등록된 사고사례가 없습니다.</p>`;
+function renderKoshaCases() {
+  if (!accKosha || !(accKosha.items || []).length) {
+    return `<p class="skeleton">국내 건설업 재해사례를 준비 중입니다. (자동 수집이 처음 실행되면 표시됩니다)</p>`;
+  }
+  const items = accKosha.items;
+  const counts = {};
+  items.forEach(it => { counts[it.type] = (counts[it.type] || 0) + 1; });
+  const types = Object.keys(counts).sort((x, y) => counts[y] - counts[x]);
+  const filtered = accKoshaType === "전체" ? items : items.filter(it => it.type === accKoshaType);
+  const shown = filtered.slice(0, accKoshaShown);
+  const updated = accKosha.generatedAt
+    ? new Date(accKosha.generatedAt).toLocaleDateString("ko-KR") : "";
+
+  const chip = (label, n) => `
+    <button type="button" class="kosha-chip${accKoshaType === label ? " is-active" : ""}"
+      data-kosha-type="${accEscapeHtml(label)}">${accEscapeHtml(label)} <span>${n}</span></button>`;
+
+  return `
+    <p class="kosha-source">
+      한국산업안전보건공단 산업안전포털 국내재해사례 중 <b>건설업</b> 최신 ${items.length}건${updated ? ` · ${updated} 갱신` : ""}
+    </p>
+    <div class="kosha-chips">
+      ${chip("전체", items.length)}
+      ${types.map(t => chip(t, counts[t])).join("")}
+    </div>
+    <ul class="kosha-list">
+      ${shown.map(it => `
+        <li>
+          <details class="kosha-case">
+            <summary>
+              <span class="kosha-type kosha-type--${accEscapeHtml(it.type)}">${accEscapeHtml(it.type)}</span>
+              <span class="kosha-title">${accEscapeHtml(it.title)}</span>
+              <span class="kosha-date">${accEscapeHtml((it.registeredAt || "").slice(0, 10))} 등록</span>
+            </summary>
+            <p class="kosha-body">${accEscapeHtml(it.contents)}</p>
+          </details>
+        </li>
+      `).join("")}
+    </ul>
+    ${filtered.length > accKoshaShown
+      ? `<button type="button" class="kosha-more" data-kosha-more>더 보기 (${filtered.length - accKoshaShown}건 남음)</button>`
+      : ""}
+    <p class="kosha-note">출처: 한국산업안전보건공단 <a href="${accEscapeHtml(accKosha.sourceUrl || "https://portal.kosha.or.kr")}" target="_blank" rel="noopener noreferrer">산업안전포털</a> 국내재해사례 · 공공데이터포털 오픈API · 매일 자동 갱신 · 날짜는 게시판 등록일이며, 사고 발생일은 본문을 참고하세요</p>
+  `;
+}
+
+document.addEventListener("click", (e) => {
+  const box = document.getElementById("accidentContainer");
+  if (!box || !box.contains(e.target)) return;
+  const chip = e.target.closest("[data-kosha-type]");
+  if (chip) {
+    accKoshaType = chip.dataset.koshaType;
+    accKoshaShown = ACC_KOSHA_STEP;
+    box.innerHTML = renderKoshaCases();
     return;
   }
-
-  container.innerHTML = categories.map(cat => `
-    <div class="proc-category">
-      <div class="proc-category-title">${accEscapeHtml(cat.name)}</div>
-      <ul class="proc-doc-list">
-        ${(cat.documents || []).map(doc => `
-          <li class="proc-doc-row">
-            <a href="${accEscapeHtml(doc.file)}" target="_blank" rel="noopener noreferrer">
-              📄 ${accEscapeHtml(doc.title)}
-            </a>
-          </li>
-        `).join("")}
-      </ul>
-    </div>
-  `).join("");
-}
+  if (e.target.closest("[data-kosha-more]")) {
+    accKoshaShown += ACC_KOSHA_STEP;
+    box.innerHTML = renderKoshaCases();
+  }
+});
 
 loadAccidentCases();
 
