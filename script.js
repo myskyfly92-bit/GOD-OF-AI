@@ -974,6 +974,10 @@ async function loadEmbassyNotices() {
 function renderEmbassyNotices() {
   const list = document.getElementById("embassyList");
   const items = (embData && embData.items) || [];
+  // 외교부 API에 자료가 없으면 이 칸 전체를 숨긴다 (자료가 다시 들어오면 자동으로 나타남)
+  const apiBox = document.getElementById("embApiBox");
+  if (apiBox) apiBox.hidden = !items.length;
+  if (!items.length) return;
   // 나라 버튼 (공지가 있는 나라만, 많은 순)
   const counts = {};
   items.forEach((n) => { const k = n.iso2 || "IQ"; counts[k] = counts[k] || { name: n.country || "이라크", n: 0 }; counts[k].n++; });
