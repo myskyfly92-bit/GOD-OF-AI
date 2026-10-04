@@ -26,6 +26,7 @@ jobs:
 
       - name: 국내재해사례(건설업) 수집 실행
         env:
+          KOSHA_API_KEY: ${{ secrets.KOSHA_API_KEY }}
           MOFA_API_KEY: ${{ secrets.MOFA_API_KEY }}
         run: python scripts/fetch_kosha_cases.py
 

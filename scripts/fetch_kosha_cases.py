@@ -7,12 +7,14 @@
 무시하고 전체 목록을 돌려줍니다. 그래서 최신순으로 여러 페이지를 받은 뒤
 여기서 직접 '건설업'만 골라냅니다.
 
-- 인증키: 다른 공공데이터포털 API와 같은 MOFA_API_KEY 시크릿을 재사용합니다.
+- 인증키: 이 API를 활용신청한 계정의 키를 KOSHA_API_KEY 시크릿으로 등록합니다.
+  (공공데이터포털은 API마다 활용신청한 계정의 키만 통과시키고, 다른 계정 키는 403으로 막습니다.
+   KOSHA_API_KEY가 없으면 MOFA_API_KEY로 시도합니다.)
 - callApiId: 1060 (설명서의 필수 고정값)
 
 로컬 실행:
     pip install requests
-    MOFA_API_KEY=발급받은키 python scripts/fetch_kosha_cases.py
+    KOSHA_API_KEY=발급받은키 python scripts/fetch_kosha_cases.py
 """
 
 import json
@@ -80,10 +82,18 @@ def fetch_page(key, page):
         params = {"callApiId": "1060", "pageNo": page, "numOfRows": ROWS_PER_PAGE}
         try:
             resp = requests.get(url, params=params, timeout=30)
-            resp.raise_for_status()
-            data = resp.json()
-        except Exception as e:  # 연결 실패·JSON 아님 → 다음 주소로
+        except Exception as e:  # 연결 실패 → 다음 주소로
             last_err = e
+            continue
+        if resp.status_code != 200:
+            last_err = f"HTTP {resp.status_code} ({base.split(':')[0]}) 응답: {resp.text[:200]!r}"
+            print(f"[경고] {last_err}", file=sys.stderr)
+            continue
+        try:
+            data = resp.json()
+        except ValueError:
+            last_err = f"JSON이 아닌 응답: {resp.text[:200]!r}"
+            print(f"[경고] {last_err}", file=sys.stderr)
             continue
         header = data.get("header", {})
         if header.get("resultCode") != "00":
@@ -97,9 +107,9 @@ def fetch_page(key, page):
 
 
 def main():
-    key = (os.environ.get("MOFA_API_KEY") or "").strip()
+    key = (os.environ.get("KOSHA_API_KEY") or os.environ.get("MOFA_API_KEY") or "").strip()
     if not key:
-        print("[오류] 공공데이터포털 인증키(MOFA_API_KEY)가 없습니다.", file=sys.stderr)
+        print("[오류] 공공데이터포털 인증키(KOSHA_API_KEY)가 없습니다.", file=sys.stderr)
         sys.exit(1)
 
     scanned, board_total, picked, seen = 0, 0, [], set()

@@ -839,8 +839,13 @@ function alignSideWidgets() {
   const panels = gridEl.querySelectorAll(".panel");
   let gridRight = gridEl.getBoundingClientRect().right;
   let gridLeft = gridEl.getBoundingClientRect().left;
-  if (panels.length) {
-    const rects = Array.from(panels).map((p) => p.getBoundingClientRect());
+  // 화면에 안 보이는 카드(display:none → 좌표 0)는 빼고 잰다.
+  // (종합현황에서 숨겨 둔 온열질환·중대재해 카드의 0 좌표가 섞이면 왼쪽 여백이 0으로 잡혀
+  //  달력이 들어갈 자리가 없다고 판단해 달력·환율 위젯을 숨기던 버그)
+  const rects = Array.from(panels)
+    .map((p) => p.getBoundingClientRect())
+    .filter((r) => r.width > 0 && r.height > 0);
+  if (rects.length) {
     gridRight = Math.max(...rects.map((r) => r.right));
     gridLeft = Math.min(...rects.map((r) => r.left));
   }
