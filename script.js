@@ -4541,6 +4541,49 @@ async function loadQuakes() {
 let travelMap = null;
 const TRAVEL_COLORS = { 0: "#2a3442", 1: "#4fb4ff", 2: "#ffd166", 3: "#f2a93b", 4: "#e5484d" };
 const TRAVEL_FOCUS = ["IQ", "IR", "SY", "JO", "SA", "KW", "TR", "LB", "IL", "PS", "EG", "AE", "QA", "BH", "OM", "YE", "AF", "PK", "AZ", "AM", "GE", "CY", "LY", "SD", "IN", "BD"];
+// 한 나라 안에서 '나라 대부분'에 걸린 단계(base)와 '가장 높은 단계'(top)를 나눈다.
+// 예) 일본: 후쿠시마 원전 30km만 3단계 → base 0(경보 없음), top 3 → 지도에 빗금으로 표시
+function travelShape(c) {
+  if (!c || !c.level) return { base: 0, top: 0, partial: false };
+  const regs = (c.regions || []).filter((r) => r.level);
+  const whole = regs.find((r) => r.region === "전체" && /^전\s?지역$/.test(String(r.remark || "").trim()));
+  if (whole && whole.level === c.level) return { base: c.level, top: c.level, partial: false };
+  // '…을 제외한 지역', '…이외 지역', '…외 전 지역'처럼 나머지 땅 전체를 가리키는 줄
+  const rest = regs.filter((r) => r.region === "전체" || /제외한|제외\s*전|이외|외\s?전\s?지역|발령 지역 외/.test(String(r.remark || "")));
+  let base;
+  if (rest.length) base = Math.min(...rest.map((r) => r.level));
+  else if (new Set(regs.map((r) => r.level)).size > 1) base = Math.min(...regs.map((r) => r.level));
+  else base = 0; // 일부 지역에만 경보가 있고 나머지는 경보 없음
+  return { base, top: c.level, partial: c.level > base };
+}
+
+function travelStateText(c) {
+  if (!c || !c.level) return "경보 없음";
+  const sh = travelShape(c);
+  if (!sh.partial) return `${c.level}단계 ${c.levelName}`;
+  const LV = { 1: "여행유의", 2: "여행자제", 3: "출국권고", 4: "여행금지" };
+  return `일부 지역 ${sh.top}단계 ${LV[sh.top] || c.levelName} · 그 외 ${sh.base ? `${sh.base}단계 ${LV[sh.base]}` : "경보 없음"}`;
+}
+
+// 빗금 무늬: 바탕 = 나라 대부분의 단계, 빗금 = 일부 지역의 높은 단계
+function travelAddPatterns(map) {
+  const svg = map.getPanes().overlayPane.querySelector("svg");
+  if (!svg || svg.querySelector("#trp-defs")) return;
+  const ns = "http://www.w3.org/2000/svg";
+  const defs = document.createElementNS(ns, "defs");
+  defs.id = "trp-defs";
+  for (let b = 0; b <= 3; b++) for (let t = b + 1; t <= 4; t++) {
+    const pat = document.createElementNS(ns, "pattern");
+    pat.setAttribute("id", `trp-${b}-${t}`);
+    pat.setAttribute("patternUnits", "userSpaceOnUse");
+    pat.setAttribute("width", "7"); pat.setAttribute("height", "7");
+    pat.setAttribute("patternTransform", "rotate(45)");
+    pat.innerHTML = `<rect width="7" height="7" fill="${TRAVEL_COLORS[b]}"/><rect width="3" height="7" fill="${TRAVEL_COLORS[t]}"/>`;
+    defs.appendChild(pat);
+  }
+  svg.insertBefore(defs, svg.firstChild);
+}
+
 async function loadTravel() {
   if (travelMap) { setTimeout(() => travelMap.invalidateSize(), 100); return; }
   let alarm = null, world = null;
@@ -4559,13 +4602,21 @@ async function loadTravel() {
     L.geoJSON(world, {
       style: (f) => {
         const c = C[f.properties.iso2];
-        return { color: "#0f1720", weight: 0.8, fillColor: TRAVEL_COLORS[c ? c.level : 0], fillOpacity: c && c.level ? 0.75 : 0.9 };
+        const sh = travelShape(c);
+        const fill = sh.partial ? `url(#trp-${sh.base}-${sh.top})` : TRAVEL_COLORS[sh.top];
+        return { color: "#0f1720", weight: 0.8, fillColor: fill, fillOpacity: sh.top ? (sh.partial ? 0.85 : 0.75) : 0.9 };
       },
-      onEachFeature: (f, layer) => {
+      onEachFeature: (f, lyr) => {
         const c = C[f.properties.iso2];
-        layer.bindTooltip(`<b>${escapeHtml(f.properties.ko)}</b> · ${c && c.level ? `${c.level}단계 ${escapeHtml(c.levelName)}${c.partial ? " (일부 지역)" : ""}` : "경보 없음"}`, { sticky: true });
+        const sh = travelShape(c);
+        const where = sh.partial
+          ? (c.regions || []).filter((r) => r.level === sh.top).map((r) => r.remark).filter(Boolean).join(" / ")
+          : "";
+        lyr.bindTooltip(`<b>${escapeHtml(f.properties.ko)}</b> · ${escapeHtml(travelStateText(c))}` +
+          (where ? `<br><span style="opacity:.75">${sh.top}단계 지역: ${escapeHtml(where.slice(0, 120))}${where.length > 120 ? "…" : ""}</span>` : ""), { sticky: true });
       },
     }).addTo(travelMap);
+    travelAddPatterns(travelMap);   // 지도 SVG가 생긴 뒤에 빗금 무늬 정의를 넣는다
   }
   setTimeout(() => travelMap.invalidateSize(), 100);
   const list = document.getElementById("travelList");
@@ -4578,10 +4629,10 @@ async function loadTravel() {
     <div class="travel-row" style="--c:${TRAVEL_COLORS[c.level]}">
       <span class="tr-lv">${c.level ? c.level + "단계" : "–"}</span>
       <span class="tr-name">${escapeHtml(c.name)}</span>
-      <span class="tr-state">${escapeHtml(c.levelName || "경보 없음")}${c.partial ? " · 지역별 상이" : ""}</span>
+      <span class="tr-state">${escapeHtml(travelStateText(c))}</span>
       ${c.regions.length ? `<details><summary>지역별</summary>${c.regions.map((r) => `<p><b>${r.level}단계</b> ${escapeHtml(r.region || "")} ${escapeHtml(r.remark || "")}</p>`).join("")}</details>` : ""}
     </div>`).join("");
-  document.getElementById("travelMeta").textContent = "출처: 외교부 해외안전여행(0404.go.kr) 국가·지역별 여행경보 · 한 나라에 지역별 단계가 다르면 가장 높은 단계로 칠함 · 마지막 수집: " +
+  document.getElementById("travelMeta").textContent = "출처: 외교부 해외안전여행(0404.go.kr) 국가·지역별 여행경보 · 나라 대부분에 걸린 단계로 칠하고, 일부 지역에만 더 높은 단계가 있으면 그 색을 빗금으로 표시 · 마지막 수집: " +
     new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(alarm.generatedAt));
 }
 
