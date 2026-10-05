@@ -968,8 +968,7 @@ const EMBASSY_LINKS = [
     <a class="emb-link" href="https://overseas.mofa.go.kr/${path}/index.do" target="_blank" rel="noopener noreferrer">
       <img src="https://flagcdn.com/w40/${iso.toLowerCase()}.png" alt="" loading="lazy">
       <span>${escapeHtml(name)}</span><i>↗</i>
-    </a>`).join("") +
-    `<a class="emb-link emb-link-0404" href="https://www.0404.go.kr/" target="_blank" rel="noopener noreferrer"><span>외교부 해외안전여행 (전체 안전공지)</span><i>↗</i></a>`;
+    </a>`).join("");
 })();
 async function loadEmbassyNotices() {
   const list = document.getElementById("embassyList");

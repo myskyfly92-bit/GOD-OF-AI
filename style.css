@@ -2854,3 +2854,4 @@ html:not(.page-ready) main.grid { opacity: 0; }
   text-decoration: none;
 }
 .kosha-file:hover { background: rgba(242, 169, 59, 0.2); }
+.emb-links-top { margin: 4px 0 14px; }
