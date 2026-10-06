@@ -184,7 +184,8 @@ def waqi_station(token, lat, lon):
 
 
 def waqi_bounds(token, lat, lon):
-    """가장 가까운 측정소가 꺼져 있을 때: 주변(약 40km) 측정소들 중 값이 있는 곳을 찾는다"""
+    """도시 주변(약 40km) 측정소를 모두 받아, 고장 난 센서 값을 걸러 낸 뒤 '가운데 값(중앙값)'을 쓴다.
+    (예: 바그다드 6곳 중 2곳만 2,000~3,000처럼 터무니없는 값을 내도 결과가 끌려가지 않게)"""
     dl, dn = 0.36, 0.36 / max(0.2, math.cos(math.radians(lat)))
     try:
         r = requests.get("https://api.waqi.info/v2/map/bounds",
@@ -194,7 +195,7 @@ def waqi_bounds(token, lat, lon):
         return None
     if j.get("status") != "ok":
         return None
-    best = None
+    good = []
     for st in j.get("data") or []:
         try:
             aqi = int(str(st.get("aqi")).strip())
@@ -206,9 +207,23 @@ def waqi_bounds(token, lat, lon):
             age_h = (time.time() - datetime.fromisoformat(t).timestamp()) / 3600
         except ValueError:
             age_h = 99
-        if dist <= WAQI_MAX_KM and age_h <= WAQI_MAX_AGE_H and (best is None or dist < best["km"]):
-            best = {"aqi": aqi, "station": str((st.get("station") or {}).get("name") or "")[:80], "km": round(dist, 1), "time": t}
-    return best
+        if dist <= WAQI_MAX_KM and age_h <= WAQI_MAX_AGE_H and aqi >= 0:
+            good.append({"aqi": aqi, "station": str((st.get("station") or {}).get("name") or "")[:80], "km": round(dist, 1), "time": t})
+    if not good:
+        return None
+    vals = sorted(g["aqi"] for g in good)
+    med = vals[len(vals) // 2] if len(vals) % 2 else (vals[len(vals) // 2 - 1] + vals[len(vals) // 2]) / 2
+    # 이상값: 미국 AQI 최고치(500) 초과, 또는 다른 측정소들의 가운데 값보다 터무니없이 높은 값
+    keep = [g for g in good if g["aqi"] <= 500 and (len(good) < 3 or g["aqi"] <= max(med * 2.5, med + 150))]
+    dropped = len(good) - len(keep)
+    if not keep:
+        return {"drop_all": True, "dropped": dropped}
+    kv = sorted(g["aqi"] for g in keep)
+    m = kv[len(kv) // 2] if len(kv) % 2 else round((kv[len(kv) // 2 - 1] + kv[len(kv) // 2]) / 2)
+    near = min(keep, key=lambda g: g["km"])
+    return {"aqi": int(m), "station": near["station"] if len(keep) == 1 else f"측정소 {len(keep)}곳 중앙값 (가까운 곳: {near['station']})",
+            "km": near["km"], "time": max(g["time"] for g in keep), "stations": len(keep), "dropped": dropped,
+            "range": [kv[0], kv[-1]]}
 
 
 def main():
@@ -249,15 +264,23 @@ def main():
     else:
         reasons = {}
         for r in rows:
-            st, why = waqi_station(token, r["lat"], r["lon"])
-            if not st and not str(why).startswith("WAQI 오류: Invalid"):
-                st2 = waqi_bounds(token, r["lat"], r["lon"])
-                if st2:
-                    st = st2
-                else:
-                    r["why"] = why   # 실측을 못 쓴 이유 (확인용)
+            # ① 주변 측정소 여러 곳 → 고장값 거르고 중앙값  ② 없으면 가장 가까운 측정소 1곳
+            st, why = None, ""
+            b = waqi_bounds(token, r["lat"], r["lon"])
+            if b and not b.get("drop_all"):
+                st = b
+            else:
+                st, why = waqi_station(token, r["lat"], r["lon"])
+                if st and st["aqi"] > 500:
+                    st, why = None, f"측정값 {st['aqi']} → 센서 이상으로 보고 제외"
+                if b and b.get("drop_all") and not st:
+                    why = f"주변 측정소 {b['dropped']}곳 모두 이상값 → 제외"
+            if not st:
+                r["why"] = why
             if st:
                 r.update(aqi=st["aqi"], src="실측", station=st["station"], stationKm=st["km"], measuredAt=st["time"])
+                if st.get("stations"):
+                    r.update(stations=st["stations"], dropped=st["dropped"], range=st["range"])
                 measured += 1
             else:
                 reasons[why.split(" (")[0]] = reasons.get(why.split(" (")[0], 0) + 1

@@ -4713,7 +4713,7 @@ function renderAqiRank() {
       <span class="aqi-rank">${r.rank}</span>
       <span class="aqi-name">${flag(r.iso2)}<b>${escapeHtml(aqiMode === "country" ? r.country : r.city)}</b>${aqiMode === "city" ? `<em>${escapeHtml(r.country)}</em>` : `<em>${r.cities}개 도시 평균 · 최악 ${escapeHtml(r.worstCity)} ${r.worstAqi}</em>`}</span>
       <span class="aqi-bar"><i style="width:${Math.min(100, (r.aqi / max) * 100)}%"></i></span>
-      <span class="aqi-val">${r.aqi}${aqiMode === "city" ? `<small class="aqi-src ${r.src === "실측" ? "is-m" : ""}" title="${escapeHtml(r.src === "실측" ? `측정소: ${r.station || ""} (${r.stationKm}km)` : `위성·대기 모델 값${r.why ? " (실측 못 쓴 이유: " + r.why + ")" : ""}`)}">${escapeHtml(r.src || "모델")}</small>` : `<small class="aqi-src ${r.measured ? "is-m" : ""}">실측 ${r.measured || 0}/${r.cities}</small>`}</span>
+      <span class="aqi-val">${r.aqi}${aqiMode === "city" ? `<small class="aqi-src ${r.src === "실측" ? "is-m" : ""}" title="${escapeHtml(r.src === "실측" ? `측정소: ${r.station || ""} (${r.stationKm}km)${r.range ? ` · 범위 ${r.range[0]}~${r.range[1]}` : ""}${r.dropped ? ` · 고장 의심 ${r.dropped}곳 제외` : ""}` : `위성·대기 모델 값${r.why ? " (실측 못 쓴 이유: " + r.why + ")" : ""}`)}">${escapeHtml(r.src || "모델")}</small>` : `<small class="aqi-src ${r.measured ? "is-m" : ""}">실측 ${r.measured || 0}/${r.cities}</small>`}</span>
       <span class="aqi-grade">${escapeHtml(r.grade || "")}</span>
       <span class="aqi-pm">PM2.5 ${r.pm25_24h != null ? r.pm25_24h : "-"}<small>㎍/㎥ (24시간)</small></span>
     </li>`).join("") +
