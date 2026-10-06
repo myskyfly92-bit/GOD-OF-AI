@@ -33,7 +33,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261006i">
+<link rel="stylesheet" href="style.css?v=20261006k">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -109,6 +109,7 @@ html.intro-pending::after {
     <div class="sub-row" data-group="env" hidden>
       <button class="tab-btn" data-view="view-env-weather">날씨·대기환경</button>
       <button class="tab-btn" data-view="view-env-dust">모래폭풍 예보</button>
+      <button class="tab-btn" data-view="view-env-aqi">세계 대기질 순위</button>
       <button class="tab-btn" data-view="view-env-quake">중동 지진 현황</button>
       <button class="tab-btn" data-view="view-iraq-moen">이라크 환경부 소식</button>
     </div>
@@ -597,6 +598,36 @@ html.intro-pending::after {
 </main>
 </div>
 
+<div id="view-env-aqi" class="view">
+<main class="grid">
+  <section class="panel aqi-panel" aria-label="세계 대기질 순위" style="grid-column: 1 / -1;">
+    <div class="panel-label">WORLD AIR QUALITY · 세계 대기질 순위 (나라·도시)</div>
+    <div class="aqi-summary" id="aqiSummary">순위 불러오는 중…</div>
+    <div class="aqi-controls">
+      <div class="aqi-seg" id="aqiMode">
+        <button type="button" data-m="country" class="active">나라 순위</button>
+        <button type="button" data-m="city">도시 순위</button>
+      </div>
+      <div class="aqi-seg" id="aqiRegion">
+        <button type="button" data-r="ALL" class="active">전 세계</button>
+        <button type="button" data-r="ME">중동만</button>
+      </div>
+    </div>
+    <ol class="aqi-list" id="aqiList"></ol>
+    <div class="aqi-legend">
+      <span><i style="background:#3ecf8e"></i>0–50 좋음</span>
+      <span><i style="background:#e8d33f"></i>51–100 보통</span>
+      <span><i style="background:#f2a93b"></i>101–150 민감군 나쁨</span>
+      <span><i style="background:#e5484d"></i>151–200 나쁨</span>
+      <span><i style="background:#a35ad8"></i>201–300 매우 나쁨</span>
+      <span><i style="background:#8a2b3a"></i>301+ 위험</span>
+    </div>
+    <p class="source-note" id="aqiMeta">WAQI 실측 + Open-Meteo 모델 · 미국 EPA 기준 AQI · 3시간마다 갱신</p>
+    <p class="source-note">※ <b>실측</b> = 도시에서 40km 안 측정소의 최근 6시간 내 값 (출처: <a href="https://aqicn.org/" target="_blank" rel="noopener noreferrer">World Air Quality Index Project ↗</a>) · <b>모델</b> = 측정소가 없는 곳을 위성·대기 모델 값으로 채운 것 · 나라 순위는 그 나라 주요 도시 값의 평균이라 AQI.in·IQAir 순위와 다를 수 있습니다. 실측 순위 보기: <a href="https://www.aqi.in/" target="_blank" rel="noopener noreferrer">AQI.in ↗</a> · <a href="https://www.iqair.com/world-air-quality-ranking" target="_blank" rel="noopener noreferrer">IQAir ↗</a></p>
+  </section>
+</main>
+</div>
+
 <div id="view-env-quake" class="view">
 <main class="grid">
   <section class="panel quake-panel" aria-label="중동 지진 현황" style="grid-column: 1 / -1;">
@@ -796,7 +827,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261006i"></script>
+<script src="script.js?v=20261006k"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

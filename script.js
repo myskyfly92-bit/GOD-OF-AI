@@ -4665,9 +4665,82 @@ async function loadTravel() {
     new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(alarm.generatedAt));
 }
 
+
+/* ---------------- 환경 > 세계 대기질 순위 (aqi-rank.json, GitHub Actions가 3시간마다 갱신) ---------------- */
+let aqiData = null, aqiMode = "country", aqiRegion = "ALL", aqiShown = 30;
+const AQI_ME = ["IQ", "IR", "SA", "KW", "AE", "QA", "BH", "OM", "YE", "JO", "SY", "LB", "IL", "PS", "TR", "EG"];
+function aqiColor(v) {
+  if (v == null) return "#8a94a3";
+  return v <= 50 ? "#3ecf8e" : v <= 100 ? "#e8d33f" : v <= 150 ? "#f2a93b" : v <= 200 ? "#e5484d" : v <= 300 ? "#a35ad8" : "#8a2b3a";
+}
+async function loadAqiRank() {
+  if (aqiData) return renderAqiRank();
+  const sum = document.getElementById("aqiSummary");
+  try {
+    const res = await fetch("aqi-rank.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("aqi-rank.json 로드 실패");
+    aqiData = await res.json();
+    renderAqiRank();
+  } catch (err) {
+    console.error(err);
+    if (sum) sum.textContent = "아직 aqi-rank.json이 없습니다. GitHub Actions(Update World AQI Ranking)가 처음 한 번 실행된 뒤 표시됩니다.";
+  }
+}
+function renderAqiRank() {
+  const d = aqiData; if (!d) return;
+  const countries = d.countries || [], cities = d.cities || [];
+  const iq = countries.find((c) => c.iso2 === "IQ");
+  const bag = cities.find((c) => c.city === "바그다드");
+  const site = d.site;
+  const card = (title, big, sub, v) => `
+    <div class="aqi-card" style="--c:${aqiColor(v)}">
+      <span class="aqi-card-t">${title}</span>
+      <b>${big}</b>
+      <span class="aqi-card-s">${sub}</span>
+    </div>`;
+  document.getElementById("aqiSummary").innerHTML =
+    (iq ? card("이라크 나라 순위", `${iq.rank}<small>위 / ${countries.length}개국</small>`, `평균 AQI ${iq.aqi} · ${iq.grade}`, iq.aqi) : "") +
+    (bag ? card("바그다드 도시 순위", `${bag.rank}<small>위 / ${cities.length}개 도시</small>`, `AQI ${bag.aqi} · ${bag.grade}`, bag.aqi) : "") +
+    (site && site.aqi != null ? card("비스마야 현장", `${site.aqi}<small> AQI · ${escapeHtml(site.src || "모델")}</small>`, `${site.grade} · 도시들과 비교하면 ${site.rankAmongCities}위 수준`, site.aqi) : "") +
+    (countries[0] ? card("지금 가장 나쁜 나라", `${escapeHtml(countries[0].country)}`, `평균 AQI ${countries[0].aqi} · ${countries[0].grade}`, countries[0].aqi) : "");
+
+  const rows = (aqiMode === "country" ? countries : cities).filter((r) => aqiRegion === "ALL" || AQI_ME.includes(r.iso2));
+  const max = Math.max(200, ...rows.map((r) => r.aqi || 0));
+  const flag = (iso) => `<img src="https://flagcdn.com/w40/${iso.toLowerCase()}.png" alt="" loading="lazy">`;
+  const list = document.getElementById("aqiList");
+  list.innerHTML = rows.slice(0, aqiShown).map((r) => `
+    <li class="aqi-row${r.iso2 === "IQ" ? " is-iq" : ""}" style="--c:${aqiColor(r.aqi)}">
+      <span class="aqi-rank">${r.rank}</span>
+      <span class="aqi-name">${flag(r.iso2)}<b>${escapeHtml(aqiMode === "country" ? r.country : r.city)}</b>${aqiMode === "city" ? `<em>${escapeHtml(r.country)}</em>` : `<em>${r.cities}개 도시 평균 · 최악 ${escapeHtml(r.worstCity)} ${r.worstAqi}</em>`}</span>
+      <span class="aqi-bar"><i style="width:${Math.min(100, (r.aqi / max) * 100)}%"></i></span>
+      <span class="aqi-val">${r.aqi}${aqiMode === "city" ? `<small class="aqi-src ${r.src === "실측" ? "is-m" : ""}" title="${escapeHtml(r.src === "실측" ? `측정소: ${r.station || ""} (${r.stationKm}km)` : "가까운 측정소가 없어 위성·대기 모델 값")}">${escapeHtml(r.src || "모델")}</small>` : `<small class="aqi-src ${r.measured ? "is-m" : ""}">실측 ${r.measured || 0}/${r.cities}</small>`}</span>
+      <span class="aqi-grade">${escapeHtml(r.grade || "")}</span>
+      <span class="aqi-pm">PM2.5 ${r.pm25_24h != null ? r.pm25_24h : "-"}<small>㎍/㎥ (24시간)</small></span>
+    </li>`).join("") +
+    (rows.length > aqiShown ? `<li><button type="button" class="emb-more aqi-more">더 보기 (${rows.length - aqiShown}곳)</button></li>` : "");
+  const more = list.querySelector(".aqi-more");
+  if (more) more.onclick = () => { aqiShown += 30; renderAqiRank(); };
+  if (d.generatedAt) {
+    document.getElementById("aqiMeta").textContent =
+      `WAQI(aqicn.org) 측정소 실측 ${d.measuredCount || 0}곳 + Open-Meteo(CAMS 모델) 보충 · 미국 EPA 기준 AQI · 3시간마다 갱신 · 마지막 수집: ` +
+      new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(d.generatedAt));
+  }
+}
+document.querySelectorAll("#aqiMode button").forEach((b) => b.addEventListener("click", () => {
+  aqiMode = b.dataset.m; aqiShown = 30;
+  document.querySelectorAll("#aqiMode button").forEach((x) => x.classList.toggle("active", x === b));
+  renderAqiRank();
+}));
+document.querySelectorAll("#aqiRegion button").forEach((b) => b.addEventListener("click", () => {
+  aqiRegion = b.dataset.r; aqiShown = 30;
+  document.querySelectorAll("#aqiRegion button").forEach((x) => x.classList.toggle("active", x === b));
+  renderAqiRank();
+}));
+
 document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     if (btn.dataset.view === "view-env-dust") loadDustForecast();
+    if (btn.dataset.view === "view-env-aqi") loadAqiRank();
     if (btn.dataset.view === "view-env-quake") loadQuakes();
     if (btn.dataset.view === "view-travel") loadTravel();
   });
