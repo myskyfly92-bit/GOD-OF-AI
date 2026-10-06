@@ -5401,7 +5401,7 @@ async function clinicCall(action, payload) {
       const li = ln.match(/^[-*•]\s+(.+)$/) || ln.match(/^\d+[.)]\s+(.+)$/);
       if (li) { if (!inList) { html += "<ul>"; inList = true; } html += `<li>${inline(li[1])}</li>`; continue; }
       if (inList) { html += "</ul>"; inList = false; }
-      if (h) html += `<h5>${inline(h[1])}</h5>`;
+      if (h) html += /AI 검색 보충|참고:/.test(h[1]) ? `<h5 class="ai-h-ref">${inline(h[1])}</h5>` : `<h5>${inline(h[1])}</h5>`;
       else if (ln) html += `<p>${inline(ln)}</p>`;
     }
     if (inList) html += "</ul>";
@@ -5509,13 +5509,23 @@ async function clinicCall(action, payload) {
   async function send() {
     const q = ta.value.trim();
     if (busy || (!q && !pendingImage)) return;
-    busy = true;
     const img = pendingImage;
     bubble("user", (img ? `<img class="ai-thumb" src="${img.url}" alt="첨부 사진">` : "") + (q ? `<p>${esc(q)}</p>` : ""));
     ta.value = ""; ta.style.height = "auto";
     pendingImage = null; preview.hidden = true;
-    const wait = bubble("bot ai-wait", `<p><span class="ai-dots"><i></i><i></i><i></i></span> ${img ? "사진을 살펴보고 관련 조문을 찾는 중…" : "관련 조문을 찾는 중…"}</p>`);
-    try {
+    ask(q, img, null);
+  }
+
+  // 질문을 보내고 답을 그린다. 붐빌 때는 조금 기다렸다가 자동으로 한 번 더 시도하고,
+  // 그래도 조문만 받았으면 "AI 답변 다시 받기" 버튼을 붙인다.
+  async function ask(q, img, target) {
+    if (busy) return;
+    busy = true;
+    const waitHtml = (t) => `<p><span class="ai-dots"><i></i><i></i><i></i></span> ${t}</p>`;
+    const wait = target || bubble("bot ai-wait", "");
+    wait.className = "ai-msg ai-bot ai-wait";
+    wait.innerHTML = waitHtml(img ? "사진을 살펴보고 관련 조문을 찾는 중…" : "관련 조문을 찾는 중…");
+    const call = async () => {
       const url = await getUrl();
       let pass = "";
       try { pass = localStorage.getItem("wzPass") || ""; } catch (e) {}
@@ -5531,19 +5541,37 @@ async function clinicCall(action, payload) {
         throw new Error("Apps Script가 오류 화면을 보냈습니다" + (msg ? ` (${msg.trim()})` : "") +
           ". Apps Script에서 '배포 관리 → 새 버전 배포'를 했는지 확인해 주세요.");
       }
+      return j;
+    };
+    try {
+      let j = await call();
+      // 붐빔: 8초 쉬고 자동으로 한 번 더
+      if ((j.ok && j.degraded) || (!j.ok && /붐빕니다/.test(j.error || ""))) {
+        wait.innerHTML = waitHtml("AI 서버가 붐벼서 잠시 후 다시 시도하는 중…");
+        await new Promise((r) => setTimeout(r, 8000));
+        const j2 = await call();
+        if (j2.ok || !j.ok) j = j2;
+      }
       if (!j.ok) throw new Error(j.error || "답을 받지 못했습니다");
       const src = (j.sources || []);
       const cited = src.slice(0, Math.max(j.citedCount || 0, 0));
       const others = src.slice(cited.length);
       const chip = (s) => `<a class="ai-src ${s.kr ? "kr" : "iq"}" href="${esc(s.link)}" target="_blank" rel="noopener noreferrer" title="${esc(s.name)}${s.t ? " · " + esc(s.t) : ""}"><i>${s.kr ? "한국" : "이라크"}</i>${esc(s.law.replace(/^이라크\s*/, ""))} ${esc(s.no)}</a>`;
-      wait.className = "ai-msg ai-bot";
+      wait.className = "ai-msg ai-bot" + (j.degraded ? " ai-degraded" : "");
       wait.innerHTML = md(j.answer) +
         (cited.length ? `<div class="ai-srcs"><span>근거 조문</span>${cited.map(chip).join("")}</div>` : "") +
-        (others.length ? `<details class="ai-more"><summary>함께 찾은 조문 ${others.length}개</summary><div class="ai-srcs">${others.map(chip).join("")}</div></details>` : "");
-      history.push({ role: "user", text: q || "(사진 점검)" }, { role: "bot", text: j.answer });
+        ((j.web || []).length ? `<div class="ai-srcs ai-web"><span>웹 출처</span>${j.web.map((w) => `<a class="ai-src web" href="${esc(w.uri)}" target="_blank" rel="noopener noreferrer"><i>웹</i>${esc(String(w.title).slice(0, 40))}</a>`).join("")}</div>` : "") +
+        (others.length ? `<details class="ai-more"><summary>${j.degraded ? "찾은 조문 전체" : "함께 찾은 조문"} ${others.length}개</summary><div class="ai-srcs">${others.map(chip).join("")}</div></details>` : "") +
+        (j.degraded ? `<button type="button" class="ai-retry">AI 답변 다시 받기</button>` : "");
+      if (j.degraded) {
+        wait.querySelector(".ai-retry").onclick = () => ask(q, img, wait);
+      } else {
+        history.push({ role: "user", text: q || "(사진 점검)" }, { role: "bot", text: j.answer });
+      }
     } catch (err) {
       wait.className = "ai-msg ai-bot ai-err";
-      wait.innerHTML = `<p>답을 받지 못했어요. ${esc(err.message || err)}</p>`;
+      wait.innerHTML = `<p>답을 받지 못했어요. ${esc(err.message || err)}</p><button type="button" class="ai-retry">다시 시도</button>`;
+      wait.querySelector(".ai-retry").onclick = () => ask(q, img, wait);
     } finally {
       busy = false;
       log.scrollTop = log.scrollHeight;
