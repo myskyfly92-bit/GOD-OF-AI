@@ -47,7 +47,8 @@ body {
 
 /* 배경 사진: 배너(topbar) 바로 아래부터 화면 끝까지 고정
    --hdr 은 script.js 가 배너 높이를 재서 넣어 준다.
-   탭마다 --tab-bg 사진을 맨 위에 깔고, 그 사진 파일이 아직 없으면 종합현황 사진이 대신 보인다 */
+   탭마다 --tab-bg 사진을 깔고, 없으면 종합현황 사진이 대신 보인다.
+   사진은 용량이 큰 원본 대신 assets/bg-*-opt.webp(2400px, 200~400KB)를 쓴다 (탭 전환이 늦게 바뀌지 않게) */
 body::before {
   content: "";
   position: fixed;
@@ -59,15 +60,13 @@ body::before {
     radial-gradient(circle at 15% 0%, rgba(53, 208, 192, 0.06), transparent 45%),
     radial-gradient(circle at 85% 10%, rgba(242, 169, 59, 0.06), transparent 40%),
     linear-gradient(180deg, rgba(10,14,19,0.55), rgba(10,14,19,0.72)),
-    var(--tab-bg-webp, none),
     var(--tab-bg, none),
-    var(--tab-bg-up, none),
-    url('assets/bg-dashboard.jpg');
-  background-size: auto, auto, cover, cover, cover, cover, cover;
+    url('assets/bg-dashboard-opt.webp');
+  background-size: auto, auto, cover, cover, cover;
   /* 모든 사진은 위쪽 끝이 배너 바로 아래에 오도록 맞춘다 (사진이 길면 아래쪽이 잘림)
      --tab-bg-pos: 탭마다 기준을 바꾸고 싶을 때만 지정 (예: center 30%) */
   /* --bg-y: 스크롤에 따라 0%(맨 위) → 100%(맨 아래)로 바뀌어, 페이지를 내리면 사진 아래쪽이 드러난다 (script.js) */
-  background-position: 0 0, 0 0, center center, var(--tab-bg-pos, center var(--bg-y, 0%)), var(--tab-bg-pos, center var(--bg-y, 0%)), var(--tab-bg-pos, center var(--bg-y, 0%)), center var(--bg-y, 0%);
+  background-position: 0 0, 0 0, center center, var(--tab-bg-pos, center var(--bg-y, 0%)), center var(--bg-y, 0%);
   background-repeat: no-repeat;
   transition: top 0.2s ease;
 }
@@ -2207,12 +2206,12 @@ html body {
    assets 폴더에 아래 이름으로 넣으면 됩니다 (.jpg · .JPG · .webp 모두 됨)
    사진이 없으면 종합현황 사진(bg-dashboard)이 대신 나옵니다.
    ========================================================== */
-body.bg-dashboard  { --tab-bg: url('assets/bg-dashboard.jpg'); --tab-bg-webp: url('assets/bg-dashboard.webp'); --tab-bg-up: url('assets/bg-dashboard.JPG'); }  /* 종합현황 */
-body.bg-safety     { --tab-bg: url('assets/bg-safety.jpg'); --tab-bg-webp: url('assets/bg-safety.webp'); --tab-bg-up: url('assets/bg-safety.JPG'); }     /* 안전 */
-body.bg-health     { --tab-bg: url('assets/bg-health.jpg'); --tab-bg-webp: url('assets/bg-health.webp'); --tab-bg-up: url('assets/bg-health.JPG'); }     /* 보건 */
-body.bg-env        { --tab-bg: url('assets/bg-env.jpg'); --tab-bg-webp: url('assets/bg-env.webp'); --tab-bg-up: url('assets/bg-env.JPG'); }        /* 환경 */
-body.bg-fire       { --tab-bg: url('assets/bg-fire.jpg'); --tab-bg-webp: url('assets/bg-fire.webp'); --tab-bg-up: url('assets/bg-fire.JPG'); }       /* 소방 */
-body.bg-etc        { --tab-bg: url('assets/bg-etc.jpg'); --tab-bg-webp: url('assets/bg-etc.webp'); --tab-bg-up: url('assets/bg-etc.JPG'); }        /* 기타 정보 */
+body.bg-dashboard  { --tab-bg: url('assets/bg-dashboard-opt.webp'); }  /* 종합현황 (원본 사진을 2400px WebP로 줄인 것) */
+body.bg-safety     { --tab-bg: url('assets/bg-safety-opt.webp'); }  /* 안전 (원본 사진을 2400px WebP로 줄인 것) */
+body.bg-health     { --tab-bg: url('assets/bg-health-opt.webp'); }  /* 보건 (원본 사진을 2400px WebP로 줄인 것) */
+body.bg-env        { --tab-bg: url('assets/bg-env-opt.webp'); }  /* 환경 (원본 사진을 2400px WebP로 줄인 것) */
+body.bg-fire       { --tab-bg: url('assets/bg-fire-opt.webp'); }  /* 소방 (원본 사진을 2400px WebP로 줄인 것) */
+body.bg-etc        { --tab-bg: url('assets/bg-etc-opt.webp'); }  /* 기타 정보 (원본 사진을 2400px WebP로 줄인 것) */
 
 /* ---------- 배경 사진 살리기: 카드 등장 효과 · 배경 보기 ---------- */
 .view.view-enter .grid > .panel {
@@ -2237,10 +2236,8 @@ body.bg-reveal::before {
     linear-gradient(180deg, rgba(10,14,19,0.15), rgba(10,14,19,0.25)),
     linear-gradient(180deg, transparent, transparent),
     linear-gradient(180deg, transparent, transparent),
-    var(--tab-bg-webp, none),
     var(--tab-bg, none),
-    var(--tab-bg-up, none),
-    url('assets/bg-dashboard.jpg');
+    url('assets/bg-dashboard-opt.webp');
 }
 .bg-peek-btn {
   position: fixed; right: 18px; bottom: 18px; z-index: 400;
@@ -2873,7 +2870,7 @@ html:not(.page-ready) main.grid { opacity: 0; }
 .emb-more:hover { border-color: var(--cyan); color: var(--cyan); }
 
 /* ---------- AI 법령 도우미 ---------- */
-.ai-assist { position: fixed; right: 20px; bottom: 20px; z-index: 1200; font-family: var(--font-body); }
+.ai-assist { position: fixed; right: 18px; bottom: 64px; z-index: 1200; font-family: var(--font-body); }  /* '배경 보기' 버튼(오른쪽 맨 아래) 위에 */
 .ai-fab {
   display: flex; align-items: center; gap: 8px; cursor: pointer;
   padding: 6px 16px 6px 6px; border-radius: 999px; border: 1px solid rgba(53, 208, 192, 0.55);
@@ -2967,7 +2964,7 @@ html:not(.page-ready) main.grid { opacity: 0; }
 }
 .ai-foot { margin: 0; padding: 0 14px 10px; font-size: 10.5px; line-height: 1.5; color: var(--text-dim); }
 @media (max-width: 600px) {
-  .ai-assist { right: 12px; bottom: 12px; }
+  .ai-assist { right: 12px; bottom: 60px; }
   .ai-assist.is-open { left: 0; right: 0; bottom: 0; }
   .ai-panel { width: 100vw; height: 85vh; border-radius: 14px 14px 0 0; }
   .ai-fab span { display: none; }

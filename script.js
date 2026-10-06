@@ -4108,9 +4108,11 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   }
 
   function intro() {
+    // index.html 머리말이 첫 화면을 가려 둔 표시(intro-pending)를 인트로가 뜨는 순간(또는 안 뜨면 바로) 지운다
+    const unhide = () => document.documentElement.classList.remove("intro-pending");
     let seen = false;
     try { seen = sessionStorage.getItem("hseIntroSeen") === "1"; } catch (e) {}
-    if ((seen && params.get("intro") !== "1") || reduce) return;
+    if ((seen && params.get("intro") !== "1") || reduce) { unhide(); return; }
     try { sessionStorage.setItem("hseIntroSeen", "1"); } catch (e) {}
     const el = document.createElement("div");
     el.className = "hse-intro";
@@ -4122,6 +4124,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       <div class="hse-intro-line"></div>
     </div>`;
     document.body.appendChild(el);
+    unhide();
     let finished = false, timers = [];
     const done = () => {
       if (finished) return;
@@ -5587,4 +5590,24 @@ async function clinicCall(action, payload) {
       log.scrollTop = log.scrollHeight;
     }
   }
+})();
+
+
+/* ==========================================================
+   탭 배경 사진 미리 받기
+   첫 화면이 다 뜬 뒤 다른 탭 사진도 미리 받아 '디코딩'까지 해 둔다.
+   그래야 탭을 눌렀을 때 사진이 한참 뒤에 바뀌지 않고 바로 부드럽게 넘어간다.
+   ========================================================== */
+(function preloadTabBackgrounds() {
+  const names = ["dashboard", "safety", "health", "env", "fire", "etc"];
+  const keep = [];   // 받은 사진을 잡아 두어 브라우저가 버리지 않게
+  const run = () => names.forEach((n, i) => setTimeout(() => {
+    const im = new Image();
+    im.decoding = "async";
+    im.src = `assets/bg-${n}-opt.webp`;
+    if (im.decode) im.decode().catch(() => {});
+    keep.push(im);
+  }, i * 300));
+  const start = () => (window.requestIdleCallback ? requestIdleCallback(run, { timeout: 3000 }) : setTimeout(run, 800));
+  if (document.readyState === "complete") start(); else window.addEventListener("load", start, { once: true });
 })();
