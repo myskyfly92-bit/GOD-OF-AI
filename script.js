@@ -5624,6 +5624,11 @@ async function clinicCall(action, payload) {
     const wait = target || bubble("bot ai-wait", "");
     wait.className = "ai-msg ai-bot ai-wait";
     wait.innerHTML = waitHtml(img ? "사진을 살펴보고 관련 조문을 찾는 중…" : "관련 조문을 찾는 중…");
+    // 기다리는 동안 지금 무슨 단계인지 바꿔 보여 준다 (Apps Script는 답을 한 번에만 보낼 수 있어서)
+    const steps = img
+      ? [[6000, "위험요소에 맞는 한국·이라크 조문을 고르는 중…"], [14000, "AI가 답변을 정리하는 중…"], [28000, "거의 다 됐어요. 조금만 기다려 주세요…"]]
+      : [[2500, "한국·이라크 조문을 AI가 읽는 중…"], [7000, "AI가 답변을 정리하는 중…"], [18000, "조문에 없는 내용을 검색해 보충하는 중일 수 있어요…"]];
+    const stepTimers = steps.map(([ms, t]) => setTimeout(() => { if (wait.classList.contains("ai-wait")) wait.innerHTML = waitHtml(t); }, ms));
     const call = async () => {
       const url = await getUrl();
       let pass = "";
@@ -5656,6 +5661,7 @@ async function clinicCall(action, payload) {
       let j = await call();
       // 붐빔: 8초 쉬고 자동으로 한 번 더
       if ((j.ok && j.degraded) || (!j.ok && /붐빕니다/.test(j.error || ""))) {
+        stepTimers.forEach(clearTimeout);
         wait.innerHTML = waitHtml("AI 서버가 붐벼서 잠시 후 다시 시도하는 중…");
         await new Promise((r) => setTimeout(r, 8000));
         const j2 = await call();
@@ -5682,6 +5688,7 @@ async function clinicCall(action, payload) {
       wait.innerHTML = `<p>답을 받지 못했어요. ${esc(err.message || err)}</p><button type="button" class="ai-retry">다시 시도</button>`;
       wait.querySelector(".ai-retry").onclick = () => ask(q, img, wait);
     } finally {
+      stepTimers.forEach(clearTimeout);
       busy = false;
       log.scrollTop = log.scrollHeight;
     }
