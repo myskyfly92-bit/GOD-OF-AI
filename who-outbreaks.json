@@ -1,8 +1,126 @@
 {
   "_readme": "이 파일은 GitHub Actions가 WHO 공식 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
-  "source": "World Health Organization - Disease Outbreak News",
+  "source": "World Health Organization - Disease Outbreak News + Newsroom",
+  "counts": {
+    "감염병 발생": 10,
+    "WHO 소식": 15
+  },
+  "errors": {},
   "items": [
     {
+      "kind": "WHO 소식",
+      "title": "WHO reinforces oral disease surveillance with an updated NCD STEPS module",
+      "date": "2026-10-06T06:18:35Z",
+      "summary": "",
+      "link": "https://www.who.int/06-10-2026-who-reinforces-oral-disease-surveillance-with-an-updated-ncd-steps-module",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Technical advisory group to advise on WHO’s maternal and perinatal health guideline portfolio",
+      "date": "2026-10-05T22:00:00Z",
+      "summary": "",
+      "link": "https://www.who.int/05-10-2026-technical-advisory-group-to-advise-on-who-s-maternal-and-perinatal-health-guideline-portfolio",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "New analysis shows high levels of violence against adolescent girls",
+      "date": "2026-10-05T22:00:00Z",
+      "summary": "",
+      "link": "https://www.who.int/05-10-2026-new-analysis-shows-high-levels-of-violence-against-adolescent-girls",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "New WHO estimates show changing global health landscape",
+      "date": "2026-10-02T08:09:03Z",
+      "summary": "",
+      "link": "https://www.who.int/02-10-2026-new-who-estimates-show-changing-global-health-landscape",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO and the Netherlands strengthen partnership on global health security and emergency response",
+      "date": "2026-10-01T13:29:36Z",
+      "summary": "",
+      "link": "https://www.who.int/01-10-2026-who-and-the-netherlands-strengthen-partnership-on-global-health-security-and-emergency-response",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "UN Decade of Healthy Ageing midpoint report finds progress, calls for greater investment",
+      "date": "2026-10-01T06:56:53Z",
+      "summary": "",
+      "link": "https://www.who.int/01-10-2026-un-decade-of-healthy-ageing-midpoint-report-finds-progress--calls-for-greater-investment",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Kazakhstan Summer School strengthens national clinical research capacity",
+      "date": "2026-09-30T14:00:00Z",
+      "summary": "",
+      "link": "https://www.who.int/30-09-2026-kazakhstan-summer-school-strengthens-national-clinical-research-capacity",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "The WHO Academy expands multilingual learning to advance equitable access",
+      "date": "2026-09-30T12:33:46Z",
+      "summary": "",
+      "link": "https://www.who.int/30-09-2026-the-who-academy-expands-multilingual-learning-to-advance-equitable-access",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Fifteen years of tobacco tax reform show countries can make harmful products less affordable",
+      "date": "2026-09-30T08:50:34Z",
+      "summary": "",
+      "link": "https://www.who.int/30-09-2026-fifteen-years-of-tobacco-tax-reform-show-countries-can-make-harmful-products-less-affordable",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO releases new guidance to prevent heat-related illness at mass gatherings",
+      "date": "2026-09-30T08:12:23Z",
+      "summary": "",
+      "link": "https://www.who.int/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO advances tools to govern life sciences and dual-use research",
+      "date": "2026-09-29T17:25:39Z",
+      "summary": "",
+      "link": "https://www.who.int/29-09-2026-who-advances-tools-to-govern-life-sciences-and-dual-use-research",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO and partners discuss governance of traditional medicine knowledge in the AI era at WIPO-IGC",
+      "date": "2026-09-29T12:00:00Z",
+      "summary": "",
+      "link": "https://www.who.int/29-09-2026-who-and-partners-discuss-governance-of-traditional-medicine-knowledge-in-the-ai-era-at-wipo-igc",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO reports latest global trends in cholera, meningitis and plague",
+      "date": "2026-09-29T09:50:55Z",
+      "summary": "",
+      "link": "https://www.who.int/29-09-2026-who-reports-latest-global-trends-in-cholera--meningitis-and-plague",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "World leaders renew commitment to protect the world from future pandemics",
+      "date": "2026-09-25T15:44:58Z",
+      "summary": "",
+      "link": "https://www.who.int/25-09-2026-world-leaders-renew-commitment-to-protect-the-world-from-future-pandemics",
+      "newsType": "News release"
+    },
+    {
+      "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-09-25T15:30:18Z",
       "summary": "Since the last Disease Outbreak News was published on 11 September 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded further, with two additional health zones affected. These include Bulu health zone in a new province, Sud Ubangi, located on the north-west part of the country and Dungu health zone in Haut-Uélé province, bordering South Sudan. This brings the total number of affected health zones to 63 across seven provinces out of 26 provinces of the countr",
@@ -10,20 +128,31 @@
       "donId": "2026-DON618"
     },
     {
+      "kind": "WHO 소식",
+      "title": "Recommendations announced for influenza vaccine composition for the 2027 southern hemisphere influenza season",
+      "date": "2026-09-25T11:38:17Z",
+      "summary": "",
+      "link": "https://www.who.int/25-09-2026-recommendations-announced-for-influenza-vaccine-composition-for-the-2027-southern-hemisphere-influenza-season",
+      "newsType": "News release"
+    },
+    {
+      "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-09-10T08:52:02Z",
-      "summary": "Since the last Disease Outbreak News was published on 28 August 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded to one additional health zone, Kayna, in North Kivu. This increase brings the total number of affected health zones to 61 across six out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, and Tshopo.\r\nAs of 7 September 2026, the Democratic Republic of the Congo has reported 6757 confirmed cases, including 3267 de",
+      "summary": "Since the last Disease Outbreak News was published on 28 August 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded to one additional health zone, Kayna, in North Kivu. This increase brings the total number of affected health zones to 61 across six out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, and Tshopo. As of 7 September 2026, the Democratic Republic of the Congo has reported 6757 confirmed cases, including 3267 dea",
       "link": "https://www.who.int/2026-DON617",
       "donId": "2026-DON617"
     },
     {
+      "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-08-28T15:31:07Z",
-      "summary": "Since the last Disease Outbreak News was published on 14 August 2026, the outbreak has spread from 54 to 60 health zones. The number of affected provinces stands at six out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, and Tshopo. Six additional health zones reported cases since the last update - Ganga and Viadana health zones in Bas-Uélé province, Biena, Manguredjipa, and Mutwanga in North Kivu, and Tshopo health zone in Tshopo province.  \r\n\r\nAs of 26 Augus",
+      "summary": "Since the last Disease Outbreak News was published on 14 August 2026, the outbreak has spread from 54 to 60 health zones. The number of affected provinces stands at six out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, and Tshopo. Six additional health zones reported cases since the last update - Ganga and Viadana health zones in Bas-Uélé province, Biena, Manguredjipa, and Mutwanga in North Kivu, and Tshopo health zone in Tshopo province. As of 26 August 202",
       "link": "https://www.who.int/2026-DON616",
       "donId": "2026-DON616"
     },
     {
+      "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-08-14T15:54:20Z",
       "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is in a phase of intense transmission. It is the largest Ebola outbreak ever reported in the country and expanding faster than any previous Ebola outbreak. The epidemic is increasingly characterized by sustained transmission within interconnected geographic clusters. Initially confined to the Mongbwalu health zone in Ituri Province, the outbreak has now expanded to 54 health zones across six provinces (Ituri, Nor",
@@ -31,13 +160,15 @@
       "donId": "2026-DON615"
     },
     {
+      "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-08-01T10:46:53Z",
-      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is intensifying, with sustained transmission and continued increases in reported cases and deaths. Initially confined to the Mongbwalu health zone in Ituri Province, over the last two months, the outbreak has expanded to five provinces (Ituri, North Kivu, South Kivu, Haut-Uélé and Tshopo), now affecting 49 health zones. \r\nThe outbreak is now the largest Ebola outbreak ever reported in the Democratic Republic of t",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is intensifying, with sustained transmission and continued increases in reported cases and deaths. Initially confined to the Mongbwalu health zone in Ituri Province, over the last two months, the outbreak has expanded to five provinces (Ituri, North Kivu, South Kivu, Haut-Uélé and Tshopo), now affecting 49 health zones. The outbreak is now the largest Ebola outbreak ever reported in the Democratic Republic of the",
       "link": "https://www.who.int/2026-DON614",
       "donId": "2026-DON614"
     },
     {
+      "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
       "date": "2026-07-17T16:51:09Z",
       "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo remains active, with sustained transmission driving increases in reported cases and deaths. As of 15 July 2026, a cumulative total of 2124 confirmed cases, including 828 deaths, have been reported from the Democratic Republic of the Congo. On 13 July 2026, German authorities informed WHO of a laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a humanitarian worker from the United States of A",
@@ -45,6 +176,7 @@
       "donId": "2026-DON613"
     },
     {
+      "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
       "date": "2026-07-03T15:31:57Z",
       "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with sustained transmission and increasing numbers of reported cases. As of 1 July, a cumulative of 1460 confirmed cases, including 452 deaths, have been reported from the Democratic Republic of the Congo. As of 2 July, Uganda has reported 20 confirmed cases including two deaths, as well as one probable case who has died. In addition, on 24 June 2026, French authorities notified WHO o",
@@ -52,6 +184,7 @@
       "donId": "2026-DON612"
     },
     {
+      "kind": "감염병 발생",
       "title": "Hantavirus outbreak linked to cruise ship travel, Multi-locations",
       "date": "2026-07-02T18:27:48Z",
       "summary": "This is the fifth Disease Outbreak News posting on the Andes hantavirus (ANDV) outbreak linked to the cruise ship M/V Hondius. The outbreak identification followed the notification to the World Health Organization (WHO) on 2 May 2026 of severe acute respiratory illness cases onboard. Since the previous Disease Outbreak News was published on 28 May 2026, one of the probable cases from Tristan da Cunha, an Overseas Territory of the United Kingdom of Great Britain and Northern Ireland (hereafter re",
@@ -59,13 +192,15 @@
       "donId": "2026-DON611"
     },
     {
+      "kind": "감염병 발생",
       "title": "Nipah virus disease - India",
       "date": "2026-06-25T15:43:28Z",
-      "summary": "On 11 June 2026, the Kerala State Health Department confirmed one laboratory confirmed case of Nipah virus (NiV) infection in Kozhikode district, Kerala State, India. \r\nThe case is an adult male who developed symptoms on 30 May 2026 and was hospitalized on 10 June 2026. He presented with neurological manifestations and at the time of reporting is on ventilatory support in an intensive care unit (ICU).\r\nAs of 18 June 2026, a total of 104 contacts had been identified and were under monitoring, inc",
+      "summary": "On 11 June 2026, the Kerala State Health Department confirmed one laboratory confirmed case of Nipah virus (NiV) infection in Kozhikode district, Kerala State, India. The case is an adult male who developed symptoms on 30 May 2026 and was hospitalized on 10 June 2026. He presented with neurological manifestations and at the time of reporting is on ventilatory support in an intensive care unit (ICU). As of 18 June 2026, a total of 104 contacts had been identified and were under monitoring, includ",
       "link": "https://www.who.int/2026-DON609",
       "donId": "2026-DON609"
     },
     {
+      "kind": "감염병 발생",
       "title": "Yellow fever - Global",
       "date": "2026-06-24T15:23:22Z",
       "summary": "Yellow fever is a viral disease found in areas of Africa and the Americas, spread by infected mosquitoes. Following an increase of cases in the Americas in 2025, transmission activity remained into 2026. From 1 January to 26 May 2026, six countries reported a total of 79 human infections along with multiple epizootics, indicating active sylvatic circulation. In Africa, sustained activity continued across parts of the region, affecting 13 high-risk countries (as per classification in the Eliminat",
@@ -73,5 +208,5 @@
       "donId": "2026-DON610"
     }
   ],
-  "generatedAt": "2026-10-06T11:55:14.475206+00:00"
+  "generatedAt": "2026-10-06T18:30:25.222304+00:00"
 }
