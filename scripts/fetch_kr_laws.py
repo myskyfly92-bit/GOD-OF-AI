@@ -23,7 +23,6 @@ from datetime import datetime, timezone
 
 import requests
 
-BASE = "https://www.law.go.kr/DRF"
 OUTPUT_PATH = "kr-laws.json"
 LAWS = [
     ("산업안전보건법", "산안법"),
@@ -36,18 +35,28 @@ LAWS = [
 MAX_TEXT = 3500   # 조문 하나에 담을 최대 글자 수 (별표처럼 아주 긴 조문은 앞부분만)
 
 
+# 법령정보센터가 해외(GitHub 서버)에서 가끔 응답하지 않는다 → 짧게 기다리고, https 가 안 되면 http 로도 시도
+BASES = ["https://www.law.go.kr/DRF", "http://www.law.go.kr/DRF"]
+DOWN = {"n": 0}   # 연속 접속 실패 수 (계속 안 되면 일찍 포기해서 기존 파일 유지)
+
+
 def get_json(path, params):
-    for attempt in range(3):
-        try:
-            r = requests.get(f"{BASE}/{path}", params=params, timeout=60,
-                             headers={"User-Agent": "Mozilla/5.0 (BismayahHSE law fetcher)"})
-            text = r.text.strip()
-            if r.status_code == 200 and text.startswith("{"):
-                return r.json()
-            print(f"  [경고] {path} 응답 {r.status_code}: {text[:200]!r}", file=sys.stderr)
-        except Exception as e:
-            print(f"  [경고] {path} 접속 실패: {e}", file=sys.stderr)
-        time.sleep(2 + attempt * 3)
+    if DOWN["n"] >= 6:
+        return None
+    for attempt in range(2):
+        for base in BASES:
+            try:
+                r = requests.get(f"{base}/{path}", params=params, timeout=(10, 60),
+                                 headers={"User-Agent": "Mozilla/5.0 (BismayahHSE law fetcher)"})
+                text = r.text.strip()
+                if r.status_code == 200 and text.startswith("{"):
+                    DOWN["n"] = 0
+                    return r.json()
+                print(f"  [경고] {path} 응답 {r.status_code}: {text[:200]!r}", file=sys.stderr)
+            except Exception as e:
+                print(f"  [경고] {base.split(':')[0]} {path} 접속 실패: {str(e)[:120]}", file=sys.stderr)
+        time.sleep(5)
+    DOWN["n"] += 1
     return None
 
 
@@ -179,9 +188,17 @@ def main():
         print("[오류] LAW_OC (국가법령정보센터 OC 값)가 없습니다.", file=sys.stderr)
         sys.exit(1)
 
+    # 지난번 파일에 있던 법령 ID·MST (검색이 안 될 때 바로 본문을 받는 데 씀)
+    prev = {}
+    try:
+        for l in json.load(open(OUTPUT_PATH, encoding="utf-8")).get("laws", []):
+            prev[l["name"]] = {"법령ID": l.get("id"), "법령일련번호": l.get("mst"), "시행일자": l.get("efYd", ""), "공포일자": l.get("promulgated", "")}
+    except Exception:
+        pass
+
     laws_meta, articles = [], []
     for name, short in LAWS:
-        info = find_law(oc, name)
+        info = find_law(oc, name) or prev.get(name)
         if not info:
             continue
         law_id, mst = info.get("법령ID"), info.get("법령일련번호")
