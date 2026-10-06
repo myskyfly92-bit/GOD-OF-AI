@@ -5637,8 +5637,11 @@ async function clinicCall(action, payload) {
       if (!img) {
         // 글 질문은 GET 으로 보낸다 (작업구역·클리닉과 같은 방식이라 가장 안정적).
         // 주소 길이를 줄이려고 내용을 base64(웹 안전)로 바꿔 넣는다.
-        const body = JSON.stringify({ q, history: history.slice(-4).map((h) => ({ role: h.role, text: String(h.text).slice(0, 300) })), passcode: pass });
-        const b64 = btoa(String.fromCharCode(...new TextEncoder().encode(body))).replace(/\+/g, "-").replace(/\//g, "_");
+        // 주소가 너무 길면 구글이 "Page Not Found"를 돌려준다 → 이전 대화는 주소 길이 안에 들어갈 만큼만 넣는다
+        const enc = (o) => btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(o)))).replace(/\+/g, "-").replace(/\//g, "_");
+        let hist = history.slice(-4).map((h) => ({ role: h.role, text: String(h.text).replace(/[#*\[\]]/g, "").replace(/\s+/g, " ").slice(0, h.role === "user" ? 150 : 200) }));
+        let b64 = enc({ q, history: hist, passcode: pass });
+        while (b64.length > 1500 && hist.length) { hist.shift(); b64 = enc({ q, history: hist, passcode: pass }); }
         res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=chat&p=" + encodeURIComponent(b64) + "&t=" + Date.now());
       } else {
         res = await fetch(url, {
@@ -5653,7 +5656,7 @@ async function clinicCall(action, payload) {
         const msg = (raw.match(/<div[^>]*>([^<]{8,200})<\/div>/) || raw.match(/<title>([^<]+)<\/title>/) || [])[1] || "";
         throw new Error("Apps Script가 오류 화면을 보냈습니다" + (msg ? ` (${msg.trim()})` : "") +
           (img ? ". 사진 질문 연결에 문제가 있어요. 글로 질문하면 답을 받을 수 있어요."
-               : ". Apps Script의 Code.gs 에 chat 한 줄을 넣고 '배포 관리 → 새 버전 배포'를 했는지 확인해 주세요."));
+               : ". 질문을 조금 짧게 줄이거나 '새 대화'로 다시 물어봐 주세요. 계속되면 Apps Script 배포 상태를 확인해 주세요."));
       }
       return j;
     };
