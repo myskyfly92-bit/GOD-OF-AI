@@ -195,52 +195,77 @@ def collect_notices(keys):
 
 
 # ---------- 2) 안전공지 ----------
+def safety_item(it, iso2, name):
+    return {
+        "kind": "안전공지", "title": field(it, "title"),
+        "body": clean_body(field(it, "txt_origin_cn", "content", "ctntText")),
+        "date": str(field(it, "wrt_dt", "wrtDt"))[:10], "country": name, "iso2": iso2, "file": "",
+    }
+
+
 def collect_safety(keys):
+    # 요청 방식 후보: 나라별 조건(가이드 방식) → 조건 없이 전체를 받아 여기서 나라를 고르는 방식
     variants = [
-        lambda iso2, nm: {"returnType": "JSON", "numOfRows": 30, "pageNo": 1, "cond[country_iso_alp2::EQ]": iso2},
-        lambda iso2, nm: {"returnType": "JSON", "numOfRows": 30, "pageNo": 1, "cond[country_nm::EQ]": nm},
-        lambda iso2, nm: {"numOfRows": 30, "pageNo": 1, "country_nm": nm},
+        ("나라조건", lambda iso2, nm: {"returnType": "JSON", "numOfRows": 30, "pageNo": 1, "cond[country_iso_alp2::EQ]": iso2}),
+        ("전체받기", None),
     ]
-    key = variant = None
-    err = None
+    errs = []
     for n, k in keys:
-        for v in variants:
-            _, _, e = get(SAFETY_LIST, k, v("IQ", "이라크"))
-            if not e:
-                key, variant = k, v
-                print(f"[안전공지] {n} 키 사용 · 요청 방식 {list(v('IQ', '이라크'))[-1]}")
-                break
-            err = f"{n}: {e}"
-            print(f"  [안전공지] 시도 실패 → {err}")
-            if "NOT_REGISTERED" in str(e) or "등록되지 않은" in str(e):
-                break
-        if key:
-            break
-    if not key:
-        return None, err
-    out = []
-    for iso2, iso3, name in COUNTRIES:
-        items, _, e = get(SAFETY_LIST, key, variant(iso2, name))
-        if e:
-            print(f"  {name}: 실패 ({e})")
-            continue
-        mine = [it for it in items if which_country(it)[0] in (None, iso2)
-                and (not field(it, "country_nm", "countryName") or field(it, "country_nm", "countryName") == name)]
-        mine.sort(key=lambda it: date_key(field(it, "wrt_dt", "wrtDt")), reverse=True)
-        print(f"  {name}: {len(mine)}건")
-        for it in mine[:PER_COUNTRY]:
-            out.append({
-                "kind": "안전공지", "title": field(it, "title"),
-                "body": clean_body(field(it, "txt_origin_cn", "content", "ctntText")),
-                "date": str(field(it, "wrt_dt", "wrtDt"))[:10], "country": name, "iso2": iso2, "file": "",
-            })
-        time.sleep(0.15)
-    return out, None
+        for vname, v in variants:
+            params = v("IQ", "이라크") if v else {"returnType": "JSON", "numOfRows": 10, "pageNo": 1}
+            items, total, e = get(SAFETY_LIST, k, params)
+            if e:
+                errs.append(f"{n}/{vname}: {e}")
+                print(f"  [안전공지] 시도 실패 → {errs[-1]}")
+                if "NOT_REGISTERED" in str(e) or "등록되지 않은" in str(e) or "SERVICE_KEY" in str(e):
+                    break          # 이 키는 이 API 신청이 안 된 키 → 다음 키
+                continue
+            print(f"[안전공지] {n} 키 사용 · 방식 {vname} · 이라크 시험 {len(items)}건 (전체 {total})")
+            if v:
+                out = []
+                for iso2, iso3, name in COUNTRIES:
+                    its, _, e2 = get(SAFETY_LIST, k, v(iso2, name))
+                    if e2:
+                        print(f"  {name}: 실패 ({e2})")
+                        continue
+                    mine = [it for it in its if not field(it, "country_iso_alp2") or str(field(it, "country_iso_alp2")).upper() == iso2]
+                    mine.sort(key=lambda it: date_key(field(it, "wrt_dt", "wrtDt")), reverse=True)
+                    print(f"  {name}: {len(mine)}건")
+                    out += [safety_item(it, iso2, name) for it in mine[:PER_COUNTRY]]
+                    time.sleep(0.15)
+                if out:
+                    return out, None
+                print("  [안전공지] 나라조건 방식으로 0건 → 전체받기 방식으로 다시 시도")
+                continue
+            # 전체받기: 최신 공지부터 여러 쪽을 받아 중동 나라만 고른다
+            by = {}
+            for page in range(1, 11):
+                its, _, e2 = get(SAFETY_LIST, k, {"returnType": "JSON", "numOfRows": 100, "pageNo": page})
+                if e2 or not its:
+                    break
+                for it in its:
+                    iso2, name = which_country({"countryName": field(it, "country_nm")}, None)
+                    code = str(field(it, "country_iso_alp2")).upper()
+                    for a, _, nm in COUNTRIES:
+                        if code == a:
+                            iso2, name = a, nm
+                    if iso2:
+                        by.setdefault(iso2, []).append(safety_item(it, iso2, name))
+                time.sleep(0.15)
+            out = []
+            for iso2, lst in by.items():
+                lst.sort(key=lambda x: date_key(x["date"]), reverse=True)
+                out += lst[:PER_COUNTRY]
+            print(f"  [안전공지] 전체받기로 {len(out)}건 ({', '.join(f'{a}:{len(b)}' for a, b in by.items())})")
+            if out:
+                return out, None
+            errs.append(f"{n}/{vname}: 응답은 정상이지만 중동 국가 공지가 0건")
+    return None, " | ".join(errs) or "알 수 없는 오류"
 
 
 def main():
     keys = service_keys()
-    notices, sources = [], {}
+    notices, sources, errors = [], {}, {}
     for kind, fn in (("공지사항", collect_notices), ("안전공지", collect_safety)):
         try:
             got, err = fn(keys)
@@ -248,13 +273,26 @@ def main():
             got, err = None, str(e)
         sources[kind] = got is not None
         if got is None:
+            errors[kind] = str(err)[:600]   # 인증키 값은 들어가지 않음 (키 이름과 API 오류 문구만)
             print(f"[{kind}] 사용할 수 없음 ({err})")
         else:
             notices.extend(got)
 
+    if not notices and os.path.exists(OUTPUT_PATH):
+        # 이번에 하나도 못 받았으면 예전 자료는 지키고, 오류 내용만 기록
+        try:
+            old = json.load(open(OUTPUT_PATH, encoding="utf-8"))
+            if old.get("items"):
+                old["errors"] = errors
+                old["lastTriedAt"] = datetime.now(timezone.utc).isoformat()
+                json.dump(old, open(OUTPUT_PATH, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+                print("[알림] 새 공지를 못 받아 기존 공지를 유지합니다.")
+                return
+        except Exception:
+            pass
     if not any(sources.values()):
-        print("[오류] 어떤 공지 API도 사용할 수 없었습니다. 기존 파일을 유지합니다.", file=sys.stderr)
-        sys.exit(1)
+        # 오류 내용을 embassy-notices.json 에 남겨, 저장소 파일만 봐도 원인을 알 수 있게 한다
+        print("[오류] 어떤 공지 API도 사용할 수 없었습니다. 오류 내용만 기록합니다.", file=sys.stderr)
 
     seen, uniq = set(), []
     for n in sorted(notices, key=lambda n: date_key(n["date"]), reverse=True):
@@ -269,6 +307,7 @@ def main():
         "_readme": "이 파일은 GitHub Actions가 외교부 공공데이터 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
         "country": "중동·주변국",
         "sources": sources,
+        "errors": errors,
         "countries": [{"iso2": a, "name": c, "count": counts.get(a, 0)} for a, _, c in COUNTRIES],
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "items": uniq[:MAX_ITEMS],
