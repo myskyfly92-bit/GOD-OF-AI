@@ -5878,3 +5878,68 @@ async function clinicCall(action, payload) {
   const kick = () => setTimeout(() => { if (!document.querySelector(".hse-intro")) start(); else kick(); }, 1200);
   if (document.readyState === "complete") kick(); else addEventListener("load", kick);
 })();
+
+/* ---------------- 안전작업절차서 > 관련 KOSHA GUIDE (kosha-guides.json, 주 1회 자동 갱신) ---------------- */
+(function koshaGuides() {
+  const list = document.getElementById("kgList");
+  if (!list) return;
+  // 현장에서 자주 찾는 작업 → 검색어
+  const WORKS = [
+    ["작업허가", "작업허가"], ["위험성평가", "위험성평가"], ["작업안전분석(JSA)", "작업안전분석"], ["비계", "비계"], ["거푸집·동바리", "거푸집|동바리"],
+    ["추락방지", "추락|안전난간|개구부"], ["사다리", "사다리"], ["고소작업대", "고소작업대"], ["크레인·양중", "크레인|양중|인양"],
+    ["굴착·흙막이", "굴착|흙막이"], ["밀폐공간", "밀폐공간"], ["용접·화기", "용접|화기|용단"], ["전기", "전기|감전|정전"],
+    ["지게차·차량", "지게차|차량계"], ["해체", "해체"], ["중량물", "중량물"], ["보호구", "보호구"], ["온열·폭염", "온열|고열|폭염"],
+  ];
+  let data = null, work = "", cat = "건설안전", q = "", shown = 30, loaded = false;
+  const esc = (s) => String(s || "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  function render() {
+    if (!data) return;
+    const g = data.guides || [];
+    const workRe = work ? new RegExp(work) : null;
+    const qq = q.trim().toLowerCase();
+    // 작업 버튼이나 검색어를 쓰면 분야 제한 없이 전체에서 찾는다
+    const rows = g.filter((x) =>
+      (workRe || qq ? true : (cat === "ALL" || x.cat === cat)) &&
+      (!workRe || workRe.test(x.nm)) &&
+      (!qq || x.nm.toLowerCase().includes(qq) || x.no.toLowerCase().includes(qq)));
+    document.getElementById("kgWorks").innerHTML = WORKS.map(([label, re]) =>
+      `<button type="button" data-w="${esc(re)}" class="${work === re ? "active" : ""}">${esc(label)}</button>`).join("");
+    const cats = Object.entries(data.cats || {}).sort((a, b) => b[1] - a[1]);
+    document.getElementById("kgCats").innerHTML = (workRe || qq) ? "" :
+      [["ALL", g.length], ...cats].map(([c, n]) => `<button type="button" data-c="${esc(c)}" class="${cat === c ? "active" : ""}">${c === "ALL" ? "전체" : esc(c)} <b>${n}</b></button>`).join("");
+    document.getElementById("kgCount").textContent = `${rows.length}건` + (workRe || qq ? " (전체 분야에서 찾음)" : "") + " · 최근 공표순";
+    list.innerHTML = rows.slice(0, shown).map((x) => `
+      <li class="kg-row">
+        <span class="kg-no">${esc(x.no)}</span>
+        <span class="kg-nm">${esc(x.nm)}<small>${esc(x.cat)} · ${esc(x.ymd)} 공표</small></span>
+        ${x.url ? `<a class="kg-dl" href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">지침 받기 ↗</a>` : ""}
+      </li>`).join("") +
+      (rows.length > shown ? `<li><button type="button" class="emb-more kg-more">더 보기 (${rows.length - shown}건)</button></li>` : "") +
+      (!rows.length ? `<li class="embassy-row skeleton">찾는 지침이 없어요. 다른 말로 검색해 보세요.</li>` : "");
+    const more = list.querySelector(".kg-more");
+    if (more) more.onclick = () => { shown += 30; render(); };
+    if (data.generatedAt) document.getElementById("kgMeta").textContent =
+      `출처: 한국산업안전보건공단 기술지원규정(KOSHA GUIDE) 조회 서비스 · 전체 ${data.total}건 · 공단 공식 다운로드 링크로 연결 (항상 최신본) · 주 1회 갱신 · KOSHA GUIDE는 법적 의무가 아닌 권고 기술지침입니다.`;
+  }
+  document.getElementById("kgWorks").onclick = (e) => { const b = e.target.closest("button[data-w]"); if (!b) return; work = work === b.dataset.w ? "" : b.dataset.w; shown = 30; render(); };
+  document.getElementById("kgCats").onclick = (e) => { const b = e.target.closest("button[data-c]"); if (!b) return; cat = b.dataset.c; shown = 30; render(); };
+  let tmr;
+  document.getElementById("kgQuery").oninput = (e) => { clearTimeout(tmr); tmr = setTimeout(() => { q = e.target.value; work = ""; shown = 30; render(); }, 200); };
+
+  async function load() {
+    if (loaded) return;
+    loaded = true;
+    try {
+      const r = await fetch("kosha-guides.json", { cache: "no-store" });
+      if (!r.ok) throw new Error(r.status);
+      data = await r.json();
+      render();
+    } catch (e) {
+      loaded = false;
+      document.getElementById("kgCount").textContent = "아직 kosha-guides.json이 없습니다. GitHub Actions(Update KOSHA GUIDE List)가 처음 한 번 실행된 뒤 표시됩니다.";
+    }
+  }
+  document.querySelectorAll('.tab-btn[data-view="view-procedures"]').forEach((b) => b.addEventListener("click", load));
+  if (document.getElementById("view-procedures").classList.contains("active")) load();
+})();

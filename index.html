@@ -33,7 +33,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261006q">
+<link rel="stylesheet" href="style.css?v=20261006r">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -674,6 +674,15 @@ html.intro-pending::after {
       <p class="skeleton">목록 불러오는 중…</p>
     </div>
   </section>
+  <section class="panel kg-panel" aria-label="관련 KOSHA GUIDE" style="grid-column: 1 / -1;">
+    <div class="panel-label">KOSHA GUIDE · 안전보건공단 기술지원규정 (절차서 작성 참고)</div>
+    <div class="kg-search"><input type="search" id="kgQuery" placeholder="지침 이름이나 번호로 찾기 (예: 비계, 밀폐공간, C-30)" autocomplete="off"></div>
+    <div class="kg-chips" id="kgWorks"></div>
+    <div class="kg-chips kg-cats" id="kgCats"></div>
+    <div class="kg-count" id="kgCount">목록 불러오는 중…</div>
+    <ul class="kg-list" id="kgList"></ul>
+    <p class="source-note" id="kgMeta">출처: 한국산업안전보건공단 기술지원규정(KOSHA GUIDE) 조회 서비스 · 공단 공식 다운로드 링크로 연결 (항상 최신본) · KOSHA GUIDE는 법적 의무가 아닌 권고 기술지침입니다.</p>
+  </section>
 </main>
 </div>
 
@@ -828,7 +837,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261006q"></script>
+<script src="script.js?v=20261006r"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

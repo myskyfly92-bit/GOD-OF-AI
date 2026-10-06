@@ -85,12 +85,19 @@ def fetch_news_api():
     r.raise_for_status()
     raw = r.json()
     items = raw if isinstance(raw, list) else raw.get("value", [])
+    if items:
+        print("[WHO 소식] API 필드:", sorted(items[0].keys())[:40])
     out = []
     for it in items:
         title = clean_text(pick(it, "Title", "title"), 200)
-        link = full_url(pick(it, "ItemDefaultUrl", "Url", "url"))
-        if link and "/news/item/" not in link and not link.startswith("http"):
-            link = "https://www.who.int/news/item" + ("" if link.startswith("/") else "/") + link
+        raw_url = str(pick(it, "ItemDefaultUrl", "Url", "url") or "").strip()
+        # 뉴스 API의 주소는 '/06-10-2026-제목' 처럼 와서 앞에 /news/item 을 붙여야 실제 페이지가 열린다
+        if raw_url.startswith("http"):
+            link = raw_url
+        elif raw_url:
+            link = "https://www.who.int" + ("" if raw_url.startswith("/news/") else "/news/item") + ("" if raw_url.startswith("/") else "/") + raw_url
+        else:
+            link = ""
         date = clean_text(pick(it, "PublicationDateAndTime", "PublicationDate", "FormatedDate"), 30)
         if not title or not link:
             continue
@@ -124,6 +131,45 @@ def fetch_news_rss():
     return out
 
 
+def page_summary(url):
+    """요약이 비어 있으면 기사 페이지의 소개 문구(og:description / description)를 가져온다"""
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=20)
+        if r.status_code != 200:
+            return ""
+        h = r.text
+        for pat in (r'<meta[^>]+property=["\']og:description["\'][^>]+content=["\']([^"\']+)',
+                    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:description',
+                    r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']+)'):
+            m = re.search(pat, h, re.I)
+            if m and len(m.group(1).strip()) > 20:
+                return clean_text(m.group(1))
+        # 소개 문구가 없으면 본문 첫 문단
+        m = re.search(r'<article[\s\S]*?<p[^>]*>([\s\S]{40,1200}?)</p>', h, re.I)
+        return clean_text(m.group(1)) if m else ""
+    except Exception as e:
+        print(f"  요약 받기 실패 {url}: {e}", file=sys.stderr)
+        return ""
+
+
+def fill_summaries(news):
+    # 이전에 받아 둔 요약은 다시 받지 않는다
+    old = {}
+    try:
+        for n in json.load(open(OUTPUT_PATH, encoding="utf-8")).get("items", []):
+            if n.get("summary"):
+                old[n.get("link")] = n["summary"]
+    except Exception:
+        pass
+    got = 0
+    for n in news:
+        if n.get("summary"):
+            continue
+        n["summary"] = old.get(n["link"]) or page_summary(n["link"])
+        got += 1 if n["summary"] else 0
+    print(f"[WHO 소식] 요약 채움 {got}건")
+
+
 def fetch_news():
     err = "자료 없음"
     for name, fn in (("API", fetch_news_api), ("RSS", fetch_news_rss)):
@@ -148,6 +194,7 @@ def main():
     except Exception as e:
         don, errors["감염병 발생"] = [], str(e)[:300]
     news, nerr = fetch_news()
+    fill_summaries(news)
     if nerr and not news:
         errors["WHO 소식"] = nerr
 

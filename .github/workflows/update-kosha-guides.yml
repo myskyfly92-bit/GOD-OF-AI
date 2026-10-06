@@ -1,0 +1,37 @@
+name: Update KOSHA GUIDE List
+
+on:
+  schedule:
+    - cron: "40 21 * * 0"   # 매주 월요일 바그다드 00:40 (지침은 자주 바뀌지 않아서 주 1회)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-kosha-guides:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: KOSHA GUIDE 목록 수집
+        env:
+          KOSHA_API_KEY: ${{ secrets.KOSHA_API_KEY }}
+          MOFA_API_KEY: ${{ secrets.MOFA_API_KEY }}
+          PYTHONUNBUFFERED: "1"
+        run: python scripts/fetch_kosha_guides.py
+
+      - name: 변경사항 자동 커밋
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: KOSHA GUIDE 목록 자동 업데이트"
+          file_pattern: kosha-guides.json
