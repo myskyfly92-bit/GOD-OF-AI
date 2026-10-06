@@ -5523,7 +5523,14 @@ async function clinicCall(action, payload) {
         method: "POST",
         body: JSON.stringify({ action: "chat", q, history: history.slice(-6), image: img ? { mime: img.mime, data: img.data } : null, passcode: pass }),
       });
-      const j = await res.json();
+      const raw = await res.text();
+      let j;
+      try { j = JSON.parse(raw); } catch (e) {
+        // Apps Script가 JSON 대신 오류 화면(HTML)을 보낸 경우: 화면 속 오류 문장을 꺼내 보여 준다
+        const msg = (raw.match(/<div[^>]*>([^<]{8,200})<\/div>/) || raw.match(/<title>([^<]+)<\/title>/) || [])[1] || "";
+        throw new Error("Apps Script가 오류 화면을 보냈습니다" + (msg ? ` (${msg.trim()})` : "") +
+          ". Apps Script에서 '배포 관리 → 새 버전 배포'를 했는지 확인해 주세요.");
+      }
       if (!j.ok) throw new Error(j.error || "답을 받지 못했습니다");
       const src = (j.sources || []);
       const cited = src.slice(0, Math.max(j.citedCount || 0, 0));
