@@ -5372,3 +5372,174 @@ async function clinicCall(action, payload) {
   if (btns[0]) btns[0].textContent = "Save";
   if (btns[1]) btns[1].textContent = "Close";
 })();
+
+
+/* ==========================================================
+   AI 법령 도우미 (오른쪽 아래 💬)
+   질문·현장 사진 → 구글 Apps Script(doPost, action=chat) → 관련 조문 검색 + Gemini 답변
+   한국 산업안전보건법령(kr-laws.json)과 이라크 법령(Apps Script 안의 자료)을 근거로 답한다.
+   ========================================================== */
+(function hseAssistant() {
+  let scriptUrl = "";
+  const history = [];          // {role, text}
+  let pendingImage = null;     // {mime, data, url}
+  let busy = false;
+
+  const esc = (v) => String(v == null ? "" : v)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+  // 간단한 마크다운 → HTML (### 제목, - 목록, **굵게**, [조문] 표시)
+  function md(text) {
+    const lines = esc(text).split(/\n/);
+    let html = "", inList = false;
+    const inline = (t) => t
+      .replace(/\*\*(.+?)\*\*/g, "<b>$1</b>")
+      .replace(/\[([^\]\n]{2,40}?제\d+조[^\]\n]{0,20})\]/g, '<span class="ai-cite">$1</span>');
+    for (const raw of lines) {
+      const ln = raw.trim();
+      const h = ln.match(/^#{2,4}\s*(.+)$/);
+      const li = ln.match(/^[-*•]\s+(.+)$/) || ln.match(/^\d+[.)]\s+(.+)$/);
+      if (li) { if (!inList) { html += "<ul>"; inList = true; } html += `<li>${inline(li[1])}</li>`; continue; }
+      if (inList) { html += "</ul>"; inList = false; }
+      if (h) html += `<h5>${inline(h[1])}</h5>`;
+      else if (ln) html += `<p>${inline(ln)}</p>`;
+    }
+    if (inList) html += "</ul>";
+    return html;
+  }
+
+  const SUGGEST = [
+    "고소작업 안전난간 설치 기준",
+    "밀폐공간 작업 전에 할 일",
+    "현장 클리닉에 의사가 몇 명 필요해?",
+    "이라크 연장근로 한도는?",
+    "건설 분진 날림 방지 의무",
+  ];
+
+  const root = document.createElement("div");
+  root.className = "ai-assist";
+  root.innerHTML = `
+    <button type="button" class="ai-fab" aria-label="AI 법령 도우미 열기">
+      <img src="assets/mascot.png" alt="" draggable="false"><span>법령 도우미</span>
+    </button>
+    <section class="ai-panel" role="dialog" aria-label="AI 법령 도우미" hidden>
+      <header class="ai-head">
+        <div>
+          <b>HSE 법령 도우미</b>
+          <small>한국 산업안전보건법령 · 이라크 노동·환경법 근거로 답해요</small>
+        </div>
+        <button type="button" class="ai-close" aria-label="닫기">✕</button>
+      </header>
+      <div class="ai-log" aria-live="polite">
+        <div class="ai-msg ai-bot ai-hello">
+          <p>질문하거나 📷 현장 사진을 올려 보세요. 관련 조문을 찾아 <b>한국 법</b>과 <b>이라크 법</b>을 나란히 알려 드려요.</p>
+          <div class="ai-sugs">${SUGGEST.map((q) => `<button type="button">${esc(q)}</button>`).join("")}</div>
+        </div>
+      </div>
+      <div class="ai-preview" hidden><img alt="첨부한 사진"><button type="button" aria-label="사진 빼기">✕</button></div>
+      <form class="ai-form">
+        <label class="ai-photo" title="현장 사진 올리기">📷<input type="file" accept="image/*" hidden></label>
+        <textarea rows="1" placeholder="예) 비계 작업발판 폭 기준은?" maxlength="800"></textarea>
+        <button type="submit" class="ai-send" aria-label="보내기">➤</button>
+      </form>
+      <p class="ai-foot">참고용 답변이에요. 법적 판단은 원문을 확인하세요 · 사진에 얼굴·이름표·간판·도면이 크게 나오지 않게 해 주세요</p>
+    </section>`;
+  document.body.appendChild(root);
+
+  const $ = (sel) => root.querySelector(sel);
+  const panel = $(".ai-panel"), log = $(".ai-log"), ta = $("textarea"), form = $(".ai-form");
+  const fileIn = $(".ai-photo input"), preview = $(".ai-preview");
+
+  function open(v) {
+    panel.hidden = !v;
+    root.classList.toggle("is-open", v);
+    if (v) setTimeout(() => ta.focus(), 50);
+  }
+  $(".ai-fab").onclick = () => open(panel.hidden);
+  $(".ai-close").onclick = () => open(false);
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) open(false); });
+
+  root.querySelectorAll(".ai-sugs button").forEach((b) => b.onclick = () => { ta.value = b.textContent; send(); });
+  ta.addEventListener("input", () => { ta.style.height = "auto"; ta.style.height = Math.min(120, ta.scrollHeight) + "px"; });
+  ta.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); send(); } });
+  form.addEventListener("submit", (e) => { e.preventDefault(); send(); });
+
+  // 사진: 긴 변 1280px JPEG로 줄여 보낸다 (다시 그리면 위치정보 등 사진 속 정보도 지워짐)
+  fileIn.addEventListener("change", async () => {
+    const f = fileIn.files && fileIn.files[0];
+    fileIn.value = "";
+    if (!f) return;
+    try {
+      const url = URL.createObjectURL(f);
+      const img = await new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = url; });
+      const k = Math.min(1, 1280 / Math.max(img.naturalWidth, img.naturalHeight));
+      const c = document.createElement("canvas");
+      c.width = Math.round(img.naturalWidth * k); c.height = Math.round(img.naturalHeight * k);
+      c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(url);
+      const dataUrl = c.toDataURL("image/jpeg", 0.82);
+      pendingImage = { mime: "image/jpeg", data: dataUrl.split(",")[1], url: dataUrl };
+      preview.querySelector("img").src = dataUrl;
+      preview.hidden = false;
+      ta.placeholder = "사진에 대해 물어보세요 (비워 두면 위험요소를 찾아 드려요)";
+    } catch (e) {
+      alert("사진을 읽지 못했습니다. 다른 사진으로 해 주세요.");
+    }
+  });
+  preview.querySelector("button").onclick = () => { pendingImage = null; preview.hidden = true; ta.placeholder = "예) 비계 작업발판 폭 기준은?"; };
+
+  function bubble(role, html) {
+    const d = document.createElement("div");
+    d.className = `ai-msg ai-${role}`;
+    d.innerHTML = html;
+    log.appendChild(d);
+    log.scrollTop = log.scrollHeight;
+    return d;
+  }
+
+  async function getUrl() {
+    if (scriptUrl) return scriptUrl;
+    const r = await fetch("work-zones.json", { cache: "no-store" });
+    const j = await r.json();
+    scriptUrl = String(j.appsScriptUrl || "").trim();
+    if (!scriptUrl) throw new Error("work-zones.json 에 appsScriptUrl 이 없습니다");
+    return scriptUrl;
+  }
+
+  async function send() {
+    const q = ta.value.trim();
+    if (busy || (!q && !pendingImage)) return;
+    busy = true;
+    const img = pendingImage;
+    bubble("user", (img ? `<img class="ai-thumb" src="${img.url}" alt="첨부 사진">` : "") + (q ? `<p>${esc(q)}</p>` : ""));
+    ta.value = ""; ta.style.height = "auto";
+    pendingImage = null; preview.hidden = true;
+    const wait = bubble("bot ai-wait", `<p><span class="ai-dots"><i></i><i></i><i></i></span> ${img ? "사진을 살펴보고 관련 조문을 찾는 중…" : "관련 조문을 찾는 중…"}</p>`);
+    try {
+      const url = await getUrl();
+      let pass = "";
+      try { pass = localStorage.getItem("wzPass") || ""; } catch (e) {}
+      const res = await fetch(url, {
+        method: "POST",
+        body: JSON.stringify({ action: "chat", q, history: history.slice(-6), image: img ? { mime: img.mime, data: img.data } : null, passcode: pass }),
+      });
+      const j = await res.json();
+      if (!j.ok) throw new Error(j.error || "답을 받지 못했습니다");
+      const src = (j.sources || []);
+      const cited = src.slice(0, Math.max(j.citedCount || 0, 0));
+      const others = src.slice(cited.length);
+      const chip = (s) => `<a class="ai-src ${s.kr ? "kr" : "iq"}" href="${esc(s.link)}" target="_blank" rel="noopener noreferrer" title="${esc(s.name)}${s.t ? " · " + esc(s.t) : ""}"><i>${s.kr ? "한국" : "이라크"}</i>${esc(s.law.replace(/^이라크\s*/, ""))} ${esc(s.no)}</a>`;
+      wait.className = "ai-msg ai-bot";
+      wait.innerHTML = md(j.answer) +
+        (cited.length ? `<div class="ai-srcs"><span>근거 조문</span>${cited.map(chip).join("")}</div>` : "") +
+        (others.length ? `<details class="ai-more"><summary>함께 찾은 조문 ${others.length}개</summary><div class="ai-srcs">${others.map(chip).join("")}</div></details>` : "");
+      history.push({ role: "user", text: q || "(사진 점검)" }, { role: "bot", text: j.answer });
+    } catch (err) {
+      wait.className = "ai-msg ai-bot ai-err";
+      wait.innerHTML = `<p>답을 받지 못했어요. ${esc(err.message || err)}</p>`;
+    } finally {
+      busy = false;
+      log.scrollTop = log.scrollHeight;
+    }
+  }
+})();
