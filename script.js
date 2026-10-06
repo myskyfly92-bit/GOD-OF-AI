@@ -5529,17 +5529,27 @@ async function clinicCall(action, payload) {
       const url = await getUrl();
       let pass = "";
       try { pass = localStorage.getItem("wzPass") || ""; } catch (e) {}
-      const res = await fetch(url, {
-        method: "POST",
-        body: JSON.stringify({ action: "chat", q, history: history.slice(-6), image: img ? { mime: img.mime, data: img.data } : null, passcode: pass }),
-      });
+      let res;
+      if (!img) {
+        // 글 질문은 GET 으로 보낸다 (작업구역·클리닉과 같은 방식이라 가장 안정적).
+        // 주소 길이를 줄이려고 내용을 base64(웹 안전)로 바꿔 넣는다.
+        const body = JSON.stringify({ q, history: history.slice(-4).map((h) => ({ role: h.role, text: String(h.text).slice(0, 300) })), passcode: pass });
+        const b64 = btoa(String.fromCharCode(...new TextEncoder().encode(body))).replace(/\+/g, "-").replace(/\//g, "_");
+        res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=chat&p=" + encodeURIComponent(b64) + "&t=" + Date.now());
+      } else {
+        res = await fetch(url, {
+          method: "POST",
+          body: JSON.stringify({ action: "chat", q, history: history.slice(-6), image: { mime: img.mime, data: img.data }, passcode: pass }),
+        });
+      }
       const raw = await res.text();
       let j;
       try { j = JSON.parse(raw); } catch (e) {
         // Apps Script가 JSON 대신 오류 화면(HTML)을 보낸 경우: 화면 속 오류 문장을 꺼내 보여 준다
         const msg = (raw.match(/<div[^>]*>([^<]{8,200})<\/div>/) || raw.match(/<title>([^<]+)<\/title>/) || [])[1] || "";
         throw new Error("Apps Script가 오류 화면을 보냈습니다" + (msg ? ` (${msg.trim()})` : "") +
-          ". Apps Script에서 '배포 관리 → 새 버전 배포'를 했는지 확인해 주세요.");
+          (img ? ". 사진 질문 연결에 문제가 있어요. 글로 질문하면 답을 받을 수 있어요."
+               : ". Apps Script의 Code.gs 에 chat 한 줄을 넣고 '배포 관리 → 새 버전 배포'를 했는지 확인해 주세요."));
       }
       return j;
     };
