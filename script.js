@@ -5735,3 +5735,146 @@ async function clinicCall(action, payload) {
   const start = () => (window.requestIdleCallback ? requestIdleCallback(run, { timeout: 3000 }) : setTimeout(run, 800));
   if (document.readyState === "complete") start(); else window.addEventListener("load", start, { once: true });
 })();
+
+/* ==========================================================
+   안전 도우미 캐릭터 안내 (처음 방문 시 자동 · 왼쪽 아래 '사용 안내' 버튼으로 다시 보기)
+   ① 대분류 탭 6개 소개  ② 법령 도우미  ③ (원하면) 작업구역 작성 방법
+   ========================================================== */
+(function hseGuide() {
+  const KEY = "hseGuideSeen_v1";
+  const $ = (s) => document.querySelector(s);
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+  const visible = (el) => { if (!el) return false; const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
+
+  const MAIN = [
+    { sel: null, text: "안녕하세요! 저는 <b>비스마야 HSE 통합정보 플랫폼</b> 안내를 맡은 안전 도우미예요.<br>위쪽 메뉴부터 하나씩 짧게 알려 드릴게요." },
+    { sel: '.group-btn[data-group="home"]', text: "<b>종합현황</b>에서는 무재해 일수, 오늘 작업, 현장 날씨·대기질, 공휴일 달력, 환율을 한눈에 볼 수 있어요." },
+    { sel: '.group-btn[data-group="safety"]', text: "<b>안전</b>에는 국내 중대재해 현황, 건설업 사고사례(PDF 자료), 안전작업절차서, 그리고 <b>작업구역</b>이 있어요." },
+    { sel: '.group-btn[data-group="health"]', text: "<b>보건</b>에서는 현장 클리닉 기록, 국내 감염병, 이라크 보건부·WHO 소식, 온열질환 정보를 봐요." },
+    { sel: '.group-btn[data-group="env"]', text: "<b>환경</b>에는 날씨·대기환경, 모래폭풍 5일 예보, 세계 대기질 순위, 중동 지진, 이라크 환경부 소식이 있어요." },
+    { sel: '.group-btn[data-group="fire"]', text: "<b>소방</b>에서는 주변 화재 현황과 이라크 민방위(소방) 소식을 확인해요." },
+    { sel: '.group-btn[data-group="etc"]', text: "<b>기타 정보</b>에는 해상·항공 현황, 해외 현장, 중동 각국 대사관 안전공지, 주변국 여행경보가 있어요." },
+    { sel: ".ai-fab", text: "궁금한 법령은 오른쪽 아래 <b>법령 도우미</b>에게 물어보세요. 한국 산안법과 이라크 법을 함께 찾아 줘요. 현장 사진을 올려도 돼요." },
+    { sel: null, text: "작업구역에 작업을 등록하는 방법도 알려 드릴까요?", choice: true },
+  ];
+  const WZ = [
+    { sel: ".wz-zone-tabs", text: "여기가 <b>작업구역</b>이에요. 먼저 위쪽에서 구역(캠프 · Site 북부 · Site 남부)을 골라요." },
+    { sel: "#wzScheduleCol", text: "오른쪽은 <b>주간 작업일정</b>이에요. ‹ › 로 주를 옮기고, 요일을 누르면 그날 작업 위치가 지도에 표시돼요." },
+    { sel: "#wzFilterBar", text: "<b>팀·파트 버튼</b>을 누르면 그 팀 작업만 걸러서 볼 수 있어요." },
+    { sel: "#wzPickToggle", text: "작업을 새로 넣으려면 <b>➕ 지도에 작업 추가</b>를 누르고, 지도에서 작업 위치를 클릭하세요." },
+    { sel: "#wzViewport", text: "그러면 입력창이 떠요. <b>날짜 · 파트 · 작업내용(필수)</b>을 넣고, 세부위치, 위험작업 체크, 작업인원, 담당자를 채운 뒤 <b>저장</b>을 누르면 구글 시트에 바로 저장돼요." },
+    { sel: "#wzUnplaced", text: "시트에만 있고 <b>지도 위치가 없는 작업</b>은 여기에 모여요. 작업을 누른 다음 지도에서 위치를 클릭하면 저장돼요." },
+    { sel: ".wz-edit", text: "등록한 작업은 일정 목록의 <b>수정 · 삭제</b> 버튼으로 고칠 수 있어요. 수정창에서 <b>위치 다시 찍기</b>도 돼요." },
+    { sel: null, text: "끝! 시트에서 직접 고친 내용은 새로고침하면 반영돼요. 다시 보고 싶으면 왼쪽 아래 <b>사용 안내</b>를 눌러 주세요. 안전한 하루 되세요!" },
+  ];
+
+  let root, ring, bubble, running = false;
+  function build() {
+    if (root) return;
+    root = document.createElement("div");
+    root.className = "hse-guide";
+    root.innerHTML = `
+      <div class="hg-ring" hidden></div>
+      <div class="hg-char"><img src="assets/guide-mascot.webp" alt="안전 도우미"></div>
+      <div class="hg-bubble" role="dialog" aria-live="polite">
+        <div class="hg-text"></div>
+        <div class="hg-actions"></div>
+      </div>`;
+    document.body.appendChild(root);
+    ring = root.querySelector(".hg-ring");
+    bubble = root.querySelector(".hg-bubble");
+  }
+  function place(el) {
+    if (!el || !visible(el)) { ring.hidden = true; return; }
+    const r = el.getBoundingClientRect();
+    const pad = 6;
+    Object.assign(ring.style, { left: r.left - pad + "px", top: r.top - pad + "px", width: r.width + pad * 2 + "px", height: r.height + pad * 2 + "px" });
+    ring.hidden = false;
+  }
+  // 한 단계를 보여 주고, 사용자가 누른 버튼 값을 돌려준다
+  function show(step, i, n) {
+    return new Promise(async (resolve) => {
+      let el = step.sel ? $(step.sel) : null;
+      if (el && visible(el)) {
+        const r = el.getBoundingClientRect();
+        if (r.top < 70 || r.bottom > innerHeight - 220) { el.scrollIntoView({ block: "center", behavior: "smooth" }); await wait(450); }
+      }
+      bubble.classList.remove("pop"); void bubble.offsetWidth; bubble.classList.add("pop");
+      root.querySelector(".hg-text").innerHTML = step.text;
+      const acts = root.querySelector(".hg-actions");
+      acts.innerHTML = step.choice
+        ? `<button type="button" data-v="wz" class="hg-primary">작업구역 안내 보기</button><button type="button" data-v="end">다음에 볼게요</button>`
+        : `<span class="hg-step">${i + 1} / ${n}</span><button type="button" data-v="skip">건너뛰기</button><button type="button" data-v="next" class="hg-primary">${i + 1 === n ? "닫기" : "다음"}</button>`;
+      place(el);
+      const onResize = () => place(el);
+      addEventListener("resize", onResize);
+      addEventListener("scroll", onResize, true);
+      acts.onclick = (e) => {
+        const b = e.target.closest("button[data-v]"); if (!b) return;
+        removeEventListener("resize", onResize);
+        removeEventListener("scroll", onResize, true);
+        resolve(b.dataset.v);
+      };
+    });
+  }
+  async function runSteps(steps) {
+    for (let i = 0; i < steps.length; i++) {
+      const v = await show(steps[i], i, steps.length);
+      if (v === "skip" || v === "end") return v;
+      if (v === "wz") return v;
+    }
+    return "done";
+  }
+  async function openWorkzone() {
+    const g = $('.group-btn[data-group="safety"]');
+    if (g) g.click();
+    await wait(150);
+    const t = $('.tab-btn[data-view="view-workzone"]');
+    if (t) t.click();
+    // 지도·일정이 그려질 때까지 잠깐 기다린다 (최대 6초)
+    for (let k = 0; k < 30 && !visible($(".wz-zone-tabs")); k++) await wait(200);
+    await wait(300);
+  }
+  async function start() {
+    if (running) return;
+    running = true;
+    document.body.classList.add("hg-running");
+    build();
+    root.classList.remove("out");
+    requestAnimationFrame(() => root.classList.add("in"));
+    await wait(650);
+    let r = await runSteps(MAIN);
+    if (r === "wz") {
+      ring.hidden = true;
+      root.querySelector(".hg-text").innerHTML = "작업구역 화면으로 이동할게요…";
+      root.querySelector(".hg-actions").innerHTML = "";
+      await openWorkzone();
+      // 보이지 않는 단계(예: 저장 기능이 꺼져 있으면 '지도에 작업 추가' 버튼이 없음)는 글만 보여 준다
+      await runSteps(WZ);
+    }
+    try { localStorage.setItem(KEY, "1"); } catch (e) {}
+    ring.hidden = true;
+    root.classList.remove("in");
+    root.classList.add("out");
+    await wait(600);
+    document.body.classList.remove("hg-running");
+    running = false;
+  }
+  window.hseGuideStart = start;
+
+  // 다시 보기 버튼 (왼쪽 아래)
+  const again = document.createElement("button");
+  again.type = "button";
+  again.className = "hg-again";
+  again.innerHTML = `<img src="assets/guide-mascot.webp" alt="">사용 안내`;
+  again.onclick = start;
+  document.body.appendChild(again);
+
+  // 처음 방문이면 인트로가 끝난 뒤 자동으로 나온다
+  let seen = false;
+  try { seen = localStorage.getItem(KEY) === "1"; } catch (e) { seen = true; }
+  if (new URLSearchParams(location.search).get("guide") === "1") seen = false;
+  if (seen) return;
+  const kick = () => setTimeout(() => { if (!document.querySelector(".hse-intro")) start(); else kick(); }, 1200);
+  if (document.readyState === "complete") kick(); else addEventListener("load", kick);
+})();
