@@ -2855,3 +2855,19 @@ html:not(.page-ready) main.grid { opacity: 0; }
 }
 .kosha-file:hover { background: rgba(242, 169, 59, 0.2); }
 .emb-links-top { margin: 4px 0 14px; }
+
+/* 외교부 안전공지: 본문 문단 줄바꿈 살리기, 제목 눌러 펼치기, NEW 표시 */
+#embApiBox { margin-bottom: 18px; }
+.embassy-row .notice-top { cursor: pointer; }
+.embassy-row.expanded .notice-body { white-space: pre-line; line-height: 1.7; }
+.embassy-row.is-new { border-left-color: var(--amber); background: rgba(242, 169, 59, 0.05); }
+.emb-new {
+  display: inline-block; margin-right: 6px; padding: 1px 6px; border-radius: 4px;
+  font-family: var(--font-mono); font-size: 10.5px; font-weight: 700;
+  color: #0a0e13; background: var(--amber); vertical-align: 1px;
+}
+.emb-more {
+  width: 100%; padding: 9px; font: inherit; font-size: 13px; cursor: pointer;
+  border: 1px dashed var(--border); border-radius: 6px; background: transparent; color: var(--text-muted);
+}
+.emb-more:hover { border-color: var(--cyan); color: var(--cyan); }

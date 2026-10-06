@@ -953,7 +953,7 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
 /* ---------------- 중동·주변국 대사관 안전공지 ----------------
    embassy-notices.json: 나라별(이라크·이란·시리아·요르단·사우디 등 16개국) 최근 공지를 날짜순으로 합친 것.
    위쪽 나라 버튼으로 걸러 볼 수 있다. */
-let embData = null, embCountry = "ALL", embKind = "ALL";
+let embData = null, embCountry = "ALL", embKind = "ALL", embShown = 8;
 // 대사관 바로가기 (외교부 재외공관 홈페이지). 시리아는 주레바논대사관이 겸임
 const EMBASSY_LINKS = [
   ["IQ", "이라크", "iq-ko"], ["IR", "이란", "ir-ko"], ["JO", "요르단", "jo-ko"], ["SA", "사우디아라비아", "sa-ko"],
@@ -1004,20 +1004,23 @@ function renderEmbassyNotices() {
     document.getElementById("embFilter").insertAdjacentHTML("beforeend", `<span class="emb-sep"></span>` +
       ["ALL", ...kinds].map((k) => `<button type="button" data-k="${k}" class="${embKind === k ? "active" : ""}">${k === "ALL" ? "모든 종류" : escapeHtml(k)}</button>`).join(""));
   }
-  document.querySelectorAll("#embFilter button[data-c]").forEach((b) => b.onclick = () => { embCountry = b.dataset.c; renderEmbassyNotices(); });
-  document.querySelectorAll("#embFilter button[data-k]").forEach((b) => b.onclick = () => { embKind = b.dataset.k; renderEmbassyNotices(); });
+  document.querySelectorAll("#embFilter button[data-c]").forEach((b) => b.onclick = () => { embCountry = b.dataset.c; embShown = 8; renderEmbassyNotices(); });
+  document.querySelectorAll("#embFilter button[data-k]").forEach((b) => b.onclick = () => { embKind = b.dataset.k; embShown = 8; renderEmbassyNotices(); });
 
   const shown = items.filter((n) => (embCountry === "ALL" || (n.iso2 || "IQ") === embCountry) && (embKind === "ALL" || (n.kind || "안전공지") === embKind));
   if (!shown.length) {
     list.innerHTML = `<li class="embassy-row skeleton">외교부 공지 API가 현재 자료를 제공하지 않고 있습니다. 위의 대사관 바로가기와 아래 관련 뉴스를 확인해 주세요. (API에 자료가 다시 들어오면 여기에 자동으로 표시됩니다)</li>`;
   } else {
-    list.innerHTML = shown.map((n) => {
+    // 최근 3일 안에 올라온 공지는 NEW 표시
+    const newSince = Date.now() - 3 * 86400000;
+    const isNew = (d) => { const t = Date.parse(String(d || "").slice(0, 10)); return !isNaN(t) && t >= newSince; };
+    list.innerHTML = shown.slice(0, embShown).map((n) => {
       const hasBody = n.body && n.body.trim().length > 0;
       const iso = n.iso2 || "IQ";
       return `
-      <li class="embassy-row">
+      <li class="embassy-row${isNew(n.date) ? " is-new" : ""}">
         <div class="notice-top">
-          <span class="notice-title"><span class="emb-country">${flag(iso)}${escapeHtml(n.country || "")}</span><span class="emb-kind ${(n.kind || "안전공지") === "안전공지" ? "safe" : ""}">${escapeHtml(n.kind || "안전공지")}</span>${escapeHtml(n.title)}</span>
+          <span class="notice-title"><span class="emb-country">${flag(iso)}${escapeHtml(n.country || "")}</span><span class="emb-kind ${(n.kind || "안전공지") === "안전공지" ? "safe" : ""}">${escapeHtml(n.kind || "안전공지")}</span>${isNew(n.date) ? `<span class="emb-new">NEW</span>` : ""}${escapeHtml(n.title)}</span>
           <span class="notice-date">${escapeHtml(n.date || "")}</span>
         </div>
         ${hasBody ? `
@@ -1028,18 +1031,25 @@ function renderEmbassyNotices() {
           <a class="embassy-link" href="https://www.0404.go.kr/" target="_blank" rel="noopener noreferrer">해외안전여행 홈페이지에서 원문 확인 ↗</a>
         `}
       </li>`;
-    }).join("");
-    list.querySelectorAll(".embassy-toggle").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const row = btn.closest(".embassy-row");
+    }).join("") + (shown.length > embShown
+      ? `<li><button type="button" class="emb-more">이전 공지 더 보기 (${shown.length - embShown}건)</button></li>` : "");
+    const more = list.querySelector(".emb-more");
+    if (more) more.onclick = () => { embShown += 8; renderEmbassyNotices(); };
+    // 제목이나 '자세히 보기'를 누르면 본문 펼치기/접기
+    list.querySelectorAll(".embassy-row").forEach((row) => {
+      const btn = row.querySelector(".embassy-toggle");
+      if (!btn) return;
+      const toggle = () => {
         const expanded = row.classList.toggle("expanded");
         btn.textContent = expanded ? "접기 ▴" : "자세히 보기 ▾";
-      });
+      };
+      btn.addEventListener("click", toggle);
+      row.querySelector(".notice-top").addEventListener("click", toggle);
     });
   }
   if (embData && embData.generatedAt) {
     document.getElementById("embassyMeta").textContent =
-      `외교부 공공데이터 API 연동 · 중동·주변국 ${(embData.countries || []).length || 1}개국 · 마지막 수집: ` +
+      `외교부 공공데이터 API 연동 · 중동·주변국 ${(embData.countries || []).length || 1}개국 · 3시간마다 갱신 · 마지막 수집: ` +
       new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(embData.generatedAt));
   }
 }
