@@ -2991,3 +2991,13 @@ html:not(.page-ready) main.grid { opacity: 0; }
 .hil-bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #35d0c0, #f2a93b); transition: width 0.35s ease; }
 .hil-txt { margin-top: 10px; font-size: 12px; letter-spacing: 0.06em; color: rgba(234, 240, 246, 0.6); }
 .hil-txt b { color: #eaf0f6; font-family: var(--font-mono); }
+
+/* 달력 아래 한글 안내문: 고정폭(코드) 글꼴 → 본문 글꼴로 바꿔 가독성 개선 */
+.holiday-legend,
+.holiday-list li,
+.holiday-note {
+  font-family: var(--font-body);
+  letter-spacing: 0;
+}
+.holiday-list .holiday-list-date { font-family: var(--font-mono); }
+.holiday-note { color: var(--text-muted); }
