@@ -4007,12 +4007,19 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   const satDone = [];
   // 직접 넣은 연도별 위성사진: assets/sat-2012.jpg … sat-2026.jpg (.webp 도 가능)
   // 구글 어스 프로의 '과거 이미지'로 캡처한 사진 등을 넣으면 그 해는 이 사진을 우선 쓴다 (2012·2013년도 가능)
-  async function loadManualSatYears() {
+  async function loadManualSatYears(onEach) {
     const thisYear = new Date().getFullYear();
-    const load = (src) => new Promise((res) => { const im = new Image(); im.onload = () => res(im); im.onerror = () => res(null); im.src = src; });
+    const load = (src) => new Promise((res) => {
+      const im = new Image();
+      im.onload = () => (im.decode ? im.decode().catch(() => {}) : Promise.resolve()).then(() => res(im));
+      im.onerror = () => res(null);
+      im.src = src;
+    });
     const out = {};
     await Promise.all(Array.from({ length: thisYear - CONSTRUCTION_YEAR + 1 }, (_, k) => CONSTRUCTION_YEAR + k).map(async (y) => {
-      const im = (await load(`assets/sat-${y}.jpg`)) || (await load(`assets/sat-${y}.webp`));
+      // 가벼운 WebP 를 먼저 찾고, 없으면 JPG
+      const im = (await load(`assets/sat-${y}.webp`)) || (await load(`assets/sat-${y}.jpg`));
+      if (onEach) onEach();
       if (!im) return;
       const cv = document.createElement("canvas");
       cv.width = im.naturalWidth; cv.height = im.naturalHeight;
@@ -4034,9 +4041,12 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
 
   async function loadSatelliteYears(onProgress) {
     if (!INTRO_SATELLITE) return [];
-    const manual = await loadManualSatYears();
+    const yearsNeeded = new Date().getFullYear() - CONSTRUCTION_YEAR + 1;
+    const manual = await loadManualSatYears(onProgress);
     if (Object.keys(manual).length) console.info("[인트로] 직접 넣은 위성사진 연도:", Object.keys(manual).join(", "));
     Object.values(manual).forEach((f) => satDone.push(f)); // 시간이 모자라도 직접 넣은 사진은 꼭 나오게
+    // 모든 해의 사진이 저장소에 있으면 외부 위성 서버에 접속하지 않는다 (회사망이 느리거나 막혀도 인트로가 온전히 나오게)
+    if (Object.keys(manual).length >= yearsNeeded) return Object.values(manual).sort((a, b) => a.year - b.year);
     let cfg;
     try {
       cfg = await (await fetch("https://s3-us-west-2.amazonaws.com/config.maptiles.arcgis.com/waybackconfig.json")).json();
@@ -4086,7 +4096,6 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       got.forEach((t) => g.drawImage(t.im, t.c * 256, t.r * 256));
       const fr = { year: p.year, canvas: cv };
       satDone.push(fr);
-      if (onProgress) onProgress(satDone.length, picks.length);
       return fr;
     }));
     const all = frames.filter(Boolean).concat(Object.values(manual)).sort((a, b) => a.year - b.year);
@@ -4113,7 +4122,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     let seen = false;
     try { seen = sessionStorage.getItem("hseIntroSeen") === "1"; } catch (e) {}
     if ((seen && params.get("intro") !== "1") || reduce) { unhide(); return; }
-    try { sessionStorage.setItem("hseIntroSeen", "1"); } catch (e) {}
+    // '봤음' 표시는 인트로가 끝난 뒤에 남긴다 (준비 중에 새로고침하면 다시 처음부터 보이게)
     const el = document.createElement("div");
     el.className = "hse-intro";
     el.innerHTML = `<div class="hse-intro-slides"></div><div class="hse-intro-capbox"></div><div class="hse-intro-flash"></div>
@@ -4129,6 +4138,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const done = () => {
       if (finished) return;
       finished = true;
+      try { sessionStorage.setItem("hseIntroSeen", "1"); } catch (e) {}
       timers.forEach(clearTimeout);
       el.classList.add("out");
       setTimeout(() => el.remove(), 900);
@@ -4143,32 +4153,39 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     el.addEventListener("click", done, { once: true });
     const showLogo = () => { el.classList.add("show-logo"); timers.push(setTimeout(done, 2300)); };
 
-    // 페이지 첫 로딩(지도·데이터 준비)이 끝난 뒤 시작해야 화면 전환이 매끄럽다
+    // ---- 인트로 준비: 필요한 사진·지구본을 '다' 받을 때까지 진행 막대를 보여 주고, 다 받으면 처음부터 끝까지 재생 ----
+    // (회사망이 느려도 인트로가 중간중간 빠지지 않게. 그래도 90초가 넘으면 받은 것만으로 시작)
+    const MAX_WAIT = 90000;
+    const load = document.createElement("div");
+    load.className = "hse-intro-load";
+    load.innerHTML = `<div class="hil-bar"><i></i></div><div class="hil-txt">인트로 준비 중… <b>0%</b></div>`;
+    el.appendChild(load);
+    const yearsN = Math.max(1, new Date().getFullYear() - CONSTRUCTION_YEAR + 1);
+    const total = (INTRO_SATELLITE ? yearsN : 0) + 3;   // 위성사진 해마다 + 지구본 + 인트로 사진 + 페이지
+    let doneN = 0;
+    const tick = () => {
+      doneN = Math.min(total, doneN + 1);
+      const pct = Math.round((doneN / total) * 100);
+      load.querySelector("i").style.width = pct + "%";
+      load.querySelector("b").textContent = pct + "%";
+    };
+    const capWait = (pr) => Promise.race([pr, new Promise((r) => setTimeout(() => r(null), MAX_WAIT))]);
     const pageReady = new Promise((res) => {
       if (document.readyState === "complete") res(); else window.addEventListener("load", res, { once: true });
-      setTimeout(res, 2500); // 너무 오래 걸리면 그냥 시작
-    });
-    // 위성사진은 받는 데 시간이 걸릴 수 있어 최대 12초까지 기다리고, 그때까지 받은 해만 보여 준다
-    const status = document.createElement("div");
-    status.className = "sat-status";
-    status.textContent = INTRO_SATELLITE ? "위성사진 불러오는 중…" : "";
-    el.appendChild(status);
-    const satReady = Promise.race([
-      loadSatelliteYears((n, total) => { status.textContent = `위성사진 불러오는 중… ${n} / ${total}`; }),
-      new Promise((r) => setTimeout(() => r(null), 12000)),
-    ]).then((res) => {
-      status.remove();
+      setTimeout(res, 8000); // 페이지 자체는 8초까지만 기다린다 (인트로가 화면을 덮고 있으므로)
+    }).then(() => tick());
+    const satReady = capWait(loadSatelliteYears(() => tick())).then((res) => {
       const list = (res || satDone).filter(Boolean).sort((a, b) => a.year - b.year);
-      if (!res) console.warn("[인트로] 12초 안에 다 못 받아서 받은 것만 사용:", list.length, "장");
+      if (!res) console.warn("[인트로] 시간 안에 다 못 받아서 받은 것만 사용:", list.length, "장");
       return list.length >= 2 ? list : [];
     });
-    // 3D 지구본 준비 (지도 그리기 도구 + 세계 지도). 5초 안에 안 되면 지구본은 건너뜀
+    // 3D 지구본 준비 (지도 그리기 도구 + 세계 지도)
     // (지구본 코드는 파일 뒤쪽에 있어서, 이 줄이 실행된 '다음 순간'에 찾아야 한다)
-    const globeReady = Promise.race([
-      Promise.resolve().then(() => (window.hseLoadGlobe ? window.hseLoadGlobe() : null)),
-      new Promise((r) => setTimeout(() => r(null), 5000)),
-    ]);
-    Promise.all([loadIntroImages(), satReady, pageReady, globeReady]).then(([imgs, sats, , globe]) => new Promise((r) => setTimeout(() => r([imgs, sats, globe]), 150))).then(([imgs, sats, globe]) => {
+    const globeReady = capWait(Promise.resolve().then(() => (window.hseLoadGlobe ? window.hseLoadGlobe() : null))).then((g) => { tick(); return g; });
+    const photosReady = loadIntroImages().then((x) => { tick(); return x; });
+    Promise.all([photosReady, satReady, pageReady, globeReady]).then(([imgs, sats, , globe]) => new Promise((r) => setTimeout(() => r([imgs, sats, globe]), 350))).then(([imgs, sats, globe]) => {
+      load.classList.add("done");
+      setTimeout(() => load.remove(), 500);
       if (finished) return;
       const goPhotos = () => runPhotoSlides(imgs);
       const goSat = () => { if (sats && sats.length) runSatellite(sats, goPhotos); else goPhotos(); };
@@ -4683,10 +4700,16 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   window.hseLoadGlobe = async function () {
     try {
       if (!(window.d3 && window.d3.geoOrthographic)) {
-        await loadScript("https://cdn.jsdelivr.net/npm/d3-array@3/dist/d3-array.min.js");
-        await loadScript("https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js");
+        // 저장소에 넣어 둔 파일을 먼저 쓰고(외부 CDN이 느리거나 막힌 회사망 대비), 없으면 CDN
+        try {
+          await loadScript("assets/vendor/d3-array.min.js");
+          await loadScript("assets/vendor/d3-geo.min.js");
+        } catch (e) {
+          await loadScript("https://cdn.jsdelivr.net/npm/d3-array@3/dist/d3-array.min.js");
+          await loadScript("https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js");
+        }
       }
-      const world = await (await fetch("world-map.json?v=iso2", { cache: "no-cache" })).json();
+      const world = await (await fetch("world-map.json?v=iso2")).json();
       return { d3: window.d3, world };
     } catch (e) {
       console.warn("[인트로] 지구본 준비 실패, 건너뜀", e);

@@ -2980,3 +2980,14 @@ html:not(.page-ready) main.grid { opacity: 0; }
 }
 .ai-retry:hover { background: rgba(53, 208, 192, 0.2); }
 .ai-degraded h5:first-child { color: var(--warn); }
+
+/* ---------- 인트로 준비 진행 막대 (느린 망에서도 다 받은 뒤 재생) ---------- */
+.hse-intro-load {
+  position: absolute; left: 50%; bottom: 14%; transform: translateX(-50%); z-index: 6;
+  width: min(360px, 70vw); text-align: center; transition: opacity 0.5s ease;
+}
+.hse-intro-load.done { opacity: 0; }
+.hil-bar { height: 3px; border-radius: 3px; background: rgba(255,255,255,0.12); overflow: hidden; }
+.hil-bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #35d0c0, #f2a93b); transition: width 0.35s ease; }
+.hil-txt { margin-top: 10px; font-size: 12px; letter-spacing: 0.06em; color: rgba(234, 240, 246, 0.6); }
+.hil-txt b { color: #eaf0f6; font-family: var(--font-mono); }
