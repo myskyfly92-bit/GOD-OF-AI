@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T23:57:12.086Z",
+  "generatedAt": "2026-10-06T01:45:27.822Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -10,13 +10,6 @@
       "date": "2025-12-16T12:27:05.000Z"
     },
     {
-      "title": "- 질병관리청",
-      "source": "",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-02T09:13:12.000Z"
-    },
-    {
       "title": "채용공고",
       "source": "질병관리청",
       "agency": "",
@@ -24,11 +17,11 @@
       "date": "2025-12-16T15:48:42.000Z"
     },
     {
-      "title": "건강교육 자료실",
-      "source": "국가건강정보포털",
+      "title": "65세 이상 어르신 국가예방접종 다음주부터 순차적 시작",
+      "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdENxSGlHaDAyanhlTEUyQ2hhTzBWZmRMVjJsbUNPVFNKQ1V5WC1QR01IcXFZYlc4YUhNdkdKMHl0aUdFVTN4SUNPWnU5MmE3NTJEUkV3NGJCMndUaGZJUXBrejZyaGhyZ2haaEo2d2djR2NlYU1YcURDWjZkcTUxUGRnaHN5Z09ESWFXb3pYRVVva1pRUjBXR2NuUVhEMktEeU1PNndRdnFRUm1IMjlhNGY0elpfRlBBSXVzOXV3?oc=5",
-      "date": "2026-09-28T14:16:39.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UUThZRDNPX2RkcFJyX3g2XzJXY2hnV0NQUk1vUk9NeWdZNFJzT001eklYenBUeFhqQURDRkxXdzVUTkFlNnhCUC02aFJJTTRZZTZfRTBvN1pmZ0J0cjVmbExGZw?oc=5",
+      "date": "2026-10-02T01:23:24.000Z"
     },
     {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
@@ -36,6 +29,20 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
       "date": "2024-06-10T03:38:59.000Z"
+    },
+    {
+      "title": "보도자료(전체)",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
+      "date": "2025-12-16T15:46:00.000Z"
+    },
+    {
+      "title": "- 질병관리청",
+      "source": "",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
+      "date": "2026-10-05T00:26:13.000Z"
     },
     {
       "title": "레지오넬라증",
@@ -59,6 +66,13 @@
       "date": "2026-08-23T04:33:22.000Z"
     },
     {
+      "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
+      "source": "질병관리청 감염병포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
+      "date": "2024-06-10T02:47:27.000Z"
+    },
+    {
       "title": "홍보물",
       "source": "질병관리청",
       "agency": "",
@@ -71,20 +85,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPU2E0T1E0dXRxOU9pSmxNT2RkdGotek1EZklEb1RNWE1ZSE82ZzR1bEk2SE1hbDN0YWhGeDR2WDVmZF85Y0pOV21wZW1sUGpfb1N5SWhYdjdvak5QLTBBVFR1THBLOTV6UlJwMERod0FJVVlVaFc0MXZieTg3ZXJmM0VLZEtFWUlqQkpnZlZmX3FfSlcwQkVqNFJ4SGlEYXZ1YTQ5cTJPRXpROHBXWEIyWGt6Ny1BTGxMZTk1YmdhTi1mS1dTNUtzR3NGUVBMODVPNEd6UHV1MmhZN0VnVC14RThKU3hJWkRROGc?oc=5",
       "date": "2026-09-30T04:16:52.000Z"
-    },
-    {
-      "title": "보도자료(전체)",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
-      "date": "2025-12-16T15:46:00.000Z"
-    },
-    {
-      "title": "ICCON 감염예방 소식지",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ueXN2cXpmUkJyLWV2cHc4VHB3Sm01dGcwc09pTlNXVG5xZjE4bHpvUFgxOVktQjJoLXJHRmJRTHM4TXhrbmJLZ1JTQ25yWklLeDlqek1B?oc=5",
-      "date": "2025-12-16T15:49:07.000Z"
     }
   ]
 }
