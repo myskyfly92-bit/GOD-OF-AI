@@ -140,15 +140,20 @@ def km(a, b, c, d):
 
 def waqi_station(token, lat, lon):
     """가까운 측정소의 실측 AQI → (aqi, 측정소이름, 거리km, 측정시각) 또는 (None, 사유)"""
+    j, err = None, ""
     for attempt in range(3):
         try:
             r = requests.get(WAQI.format(lat=lat, lon=lon), params={"token": token}, timeout=30)
             j = r.json()
-            break
         except Exception as e:
-            err = str(e)[:120]
+            j, err = None, str(e)[:120]
             time.sleep(3 * (attempt + 1))
-    else:
+            continue
+        if j.get("status") != "ok" and "connect" in str(j.get("data")):
+            time.sleep(3 * (attempt + 1))   # WAQI 서버 일시 오류 → 다시
+            continue
+        break
+    if j is None:
         return None, f"접속 실패 {err}"
     if j.get("status") != "ok":
         return None, f"WAQI 오류: {str(j.get('data'))[:120]}"
@@ -176,6 +181,34 @@ def waqi_station(token, lat, lon):
         return None, f"측정값이 오래됨 ({round(age_h)}시간 전)"
     return {"aqi": aqi, "station": str((d.get("city") or {}).get("name") or "")[:80],
             "km": round(dist, 1), "time": t.get("iso") or t.get("s") or ""}, None
+
+
+def waqi_bounds(token, lat, lon):
+    """가장 가까운 측정소가 꺼져 있을 때: 주변(약 40km) 측정소들 중 값이 있는 곳을 찾는다"""
+    dl, dn = 0.36, 0.36 / max(0.2, math.cos(math.radians(lat)))
+    try:
+        r = requests.get("https://api.waqi.info/v2/map/bounds",
+                         params={"latlng": f"{lat-dl},{lon-dn},{lat+dl},{lon+dn}", "networks": "all", "token": token}, timeout=30)
+        j = r.json()
+    except Exception:
+        return None
+    if j.get("status") != "ok":
+        return None
+    best = None
+    for st in j.get("data") or []:
+        try:
+            aqi = int(str(st.get("aqi")).strip())
+            dist = km(lat, lon, float(st["lat"]), float(st["lon"]))
+        except (ValueError, KeyError, TypeError):
+            continue
+        t = str((st.get("station") or {}).get("time") or "")
+        try:
+            age_h = (time.time() - datetime.fromisoformat(t).timestamp()) / 3600
+        except ValueError:
+            age_h = 99
+        if dist <= WAQI_MAX_KM and age_h <= WAQI_MAX_AGE_H and (best is None or dist < best["km"]):
+            best = {"aqi": aqi, "station": str((st.get("station") or {}).get("name") or "")[:80], "km": round(dist, 1), "time": t}
+    return best
 
 
 def main():
@@ -217,6 +250,12 @@ def main():
         reasons = {}
         for r in rows:
             st, why = waqi_station(token, r["lat"], r["lon"])
+            if not st and not str(why).startswith("WAQI 오류: Invalid"):
+                st2 = waqi_bounds(token, r["lat"], r["lon"])
+                if st2:
+                    st = st2
+                else:
+                    r["why"] = why   # 실측을 못 쓴 이유 (확인용)
             if st:
                 r.update(aqi=st["aqi"], src="실측", station=st["station"], stationKm=st["km"], measuredAt=st["time"])
                 measured += 1
