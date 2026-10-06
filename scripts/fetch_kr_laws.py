@@ -124,6 +124,55 @@ def parse_articles(j, law_idx):
     return arts
 
 
+def strings(node):
+    """어떤 구조든 안에 든 글자를 순서대로 모두 꺼낸다 (별표 내용용)"""
+    if isinstance(node, str):
+        return [node]
+    if isinstance(node, list):
+        return [x for v in node for x in strings(v)]
+    if isinstance(node, dict):
+        return [x for k, v in node.items() if "내용" in k for x in strings(v)]
+    return []
+
+
+ANNEX_CHUNK = 2400
+
+
+def parse_annexes(j, law_idx):
+    """별표(안전관리자 선임 기준표 같은 표)도 조문처럼 넣는다. 길면 여러 조각으로 나눈다."""
+    law = j.get("법령") or j
+    units = as_list(((law.get("별표") or {}).get("별표단위")))
+    out = []
+    for u in units:
+        if not isinstance(u, dict):
+            continue
+        kind = str(u.get("별표구분") or "별표").strip()
+        if kind != "별표":          # 서식은 빼고 별표만
+            continue
+        try:
+            num = int(str(u.get("별표번호") or "0"))
+        except ValueError:
+            continue
+        gaji = str(u.get("별표가지번호") or "").strip().lstrip("0")
+        no = f"별표 {num}" + (f"의{gaji}" if gaji else "")
+        title = clean(str(u.get("별표제목") or ""))
+        body = clean("\n".join(strings(u.get("별표내용"))))
+        if len(body) < 30:          # 그림(파일)으로만 된 별표는 글자가 없어서 뺀다
+            continue
+        lines, buf, part = body.split("\n"), "", 1
+        chunks = []
+        for ln in lines:
+            if len(buf) + len(ln) > ANNEX_CHUNK and buf:
+                chunks.append(buf); buf = ""
+            buf += ln + "\n"
+        if buf.strip():
+            chunks.append(buf)
+        for i, c in enumerate(chunks):
+            t = title + (f" ({i + 1}/{len(chunks)})" if len(chunks) > 1 else "")
+            out.append({"l": law_idx, "no": no, "t": t, "x": c.strip(), "ch": "별표"})
+    return out
+
+
 def main():
     oc = (os.environ.get("LAW_OC") or "").strip()
     if not oc:
@@ -144,6 +193,10 @@ def main():
             continue
         idx = len(laws_meta)
         arts = parse_articles(j, idx)
+        annex = parse_annexes(j, idx)
+        if annex:
+            print(f"  {name}: 별표 {len(set(a['no'] for a in annex))}개 ({len(annex)}조각)")
+        arts += annex
         if not arts:
             print(f"  [경고] '{name}' 조문 0개. 응답 앞부분: {json.dumps(j, ensure_ascii=False)[:500]}", file=sys.stderr)
             continue

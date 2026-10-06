@@ -26,7 +26,17 @@ ROWS = 500
 CATS = {
     "C": "건설안전", "G": "안전일반", "M": "기계안전", "E": "전기·계장", "F": "화재·폭발",
     "P": "공정안전", "X": "위험성평가·관리", "H": "건강관리", "W": "작업환경관리", "A": "작업환경측정·분석",
+    "D": "화학·폭발", "B": "조선·해양", "T": "독성시험", "O": "설비·정비", "K": "화학물질",
 }
+
+
+def category(no):
+    """지침 번호로 분야를 정한다. 2025년부터 쓰는 'C-C-…', 'A-G-…' 같은 새 번호는 앞 글자가 업종이라
+    건설(C)만 건설안전으로 묶고, 나머지는 '공통·업종별(새 번호)'로 둔다."""
+    no = (no or "").upper()
+    if re.match(r"^[A-Z]-[A-Z]-", no):
+        return "건설안전" if no.startswith("C-") else "공통·업종별(새 번호)"
+    return CATS.get(no[:1], "기타")
 
 
 def key():
@@ -90,7 +100,7 @@ def main():
         ymd = str(it.get("techGdlnOfancYmd") or "").strip()
         if re.fullmatch(r"\d{8}", ymd):
             ymd = f"{ymd[:4]}-{ymd[4:6]}-{ymd[6:]}"
-        cat = CATS.get(no[:1].upper(), "기타")
+        cat = category(no)
         out.append({"no": no, "nm": nm, "ymd": ymd, "cat": cat, "url": str(it.get("fileDownloadUrl") or "").strip()})
     out.sort(key=lambda g: g["ymd"], reverse=True)
 
