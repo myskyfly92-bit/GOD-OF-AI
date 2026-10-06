@@ -4749,7 +4749,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       const [x, y] = proj(lonlat);
       ctx.fillStyle = color;
       ctx.beginPath(); ctx.arc(x, y, 5, 0, Math.PI * 2); ctx.fill();
-      ctx.font = "700 14px 'JetBrains Mono', monospace";
+      ctx.font = "700 14px 'JetBrains Mono', 'Noto Sans KR', sans-serif";
       ctx.fillStyle = "#fff";
       ctx.fillText(text, x + 10, y - 8);
     }

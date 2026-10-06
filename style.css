@@ -25,7 +25,7 @@
   --gold: #ffd166;
   --pink: #ff7e79;
   --font-body: 'Noto Sans KR', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-mono: 'JetBrains Mono', 'Noto Sans KR', 'Malgun Gothic', sans-serif; /* 한글은 Noto Sans KR로 자동 대체 */
   --radius: 10px;
 }
 
@@ -429,7 +429,7 @@ code {
 .panel-label {
   font-family: var(--font-mono);
   font-size: 13px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-dim);
   margin-bottom: 16px;
