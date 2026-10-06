@@ -6,10 +6,10 @@
    - 목록: getCountryNoticeList?isoCode1=IRQ&isoCode2=IRN... (세 자리 국가코드, 한 번에 10개국까지)
    - 본문: getCountryNoticeInfo?id=...  (목록에는 본문이 없어서 최근 공지만 따로 불러옴)
    ※ 기술문서 '외교부_기술문서_국가별 공지사항 목록조회_v2.0' 기준
-2) 안전공지: 외교부_국가·지역별 안전공지 (CountrySafetyService6, JSON)
+2) 안전공지: 외교부_국가·지역별 안전공지 (CountrySafetyService7, JSON) — 2026년에 6 → 7로 버전이 바뀜
 
 인증키: 공공데이터포털 계정이 여러 개일 수 있어 등록된 키를 모두 시도합니다.
-        MOFA_API_KEY, NOTICE_API_KEY, TRAVEL_API_KEY, KDCA_API_KEY
+        KOSHA_API_KEY, MOFA_API_KEY, NOTICE_API_KEY, TRAVEL_API_KEY, KDCA_API_KEY
 """
 
 import html
@@ -38,8 +38,8 @@ COUNTRIES = [
 ]
 NOTICE_LIST = "https://apis.data.go.kr/1262000/CountryNoticeService/getCountryNoticeList"
 NOTICE_INFO = "https://apis.data.go.kr/1262000/CountryNoticeService/getCountryNoticeInfo"
-SAFETY_LIST = "https://apis.data.go.kr/1262000/CountrySafetyService6/getCountrySafetyList6"
-KEY_NAMES = ["MOFA_API_KEY", "NOTICE_API_KEY", "TRAVEL_API_KEY", "KDCA_API_KEY"]
+SAFETY_LIST = "https://apis.data.go.kr/1262000/CountrySafetyService7/getCountrySafetyList7"
+KEY_NAMES = ["KOSHA_API_KEY", "MOFA_API_KEY", "NOTICE_API_KEY", "TRAVEL_API_KEY", "KDCA_API_KEY"]
 
 
 def service_keys():
@@ -110,6 +110,22 @@ def clean(raw):
     t = html.unescape(html.unescape(str(raw)))
     t = re.sub(r"<[^<]+?>", " ", t)
     return re.sub(r"\s+", " ", t).strip()[:3000]
+
+
+def clean_body(raw):
+    """HTML 본문을 문단 줄바꿈은 살린 글자로 (안전공지 본문용)"""
+    if not raw:
+        return ""
+    t = html.unescape(str(raw))
+    t = re.sub(r"(?i)<br\s*/?>|</p>|</div>|</li>", "\n", t)
+    t = re.sub(r"<[^<]+?>", "", t)
+    t = html.unescape(t).replace("\u00a0", " ")
+    lines = [re.sub(r"[ \t]+", " ", ln).strip() for ln in t.split("\n")]
+    out = []
+    for ln in lines:
+        if ln or (out and out[-1]):
+            out.append(ln)
+    return "\n".join(out).strip()[:3000]
 
 
 def date_key(d):
@@ -215,7 +231,7 @@ def collect_safety(keys):
         for it in mine[:PER_COUNTRY]:
             out.append({
                 "kind": "안전공지", "title": field(it, "title"),
-                "body": clean(field(it, "txt_origin_cn", "content", "ctntText")),
+                "body": clean_body(field(it, "txt_origin_cn", "content", "ctntText")),
                 "date": str(field(it, "wrt_dt", "wrtDt"))[:10], "country": name, "iso2": iso2, "file": "",
             })
         time.sleep(0.15)

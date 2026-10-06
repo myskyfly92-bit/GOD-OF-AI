@@ -2,7 +2,7 @@ name: Update Embassy Safety Notices
 
 on:
   schedule:
-    - cron: "30 3 * * *"   # 매일 UTC 03:30 = 바그다드 06:30
+    - cron: "30 */3 * * *"   # 3시간마다 (안전공지는 급하게 올라오는 경우가 많아서)
   workflow_dispatch: {}
 
 permissions:
@@ -26,6 +26,7 @@ jobs:
       - name: 대사관 공지 수집 실행
         env:
           # 공공데이터포털 계정이 여러 개여도 되도록, 등록된 키를 모두 넘겨 API마다 되는 키를 골라 쓴다
+          KOSHA_API_KEY: ${{ secrets.KOSHA_API_KEY }}
           MOFA_API_KEY: ${{ secrets.MOFA_API_KEY }}
           NOTICE_API_KEY: ${{ secrets.NOTICE_API_KEY }}
           TRAVEL_API_KEY: ${{ secrets.TRAVEL_API_KEY }}
