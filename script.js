@@ -1231,21 +1231,39 @@ function getAppsScriptUrl() {
   return appsScriptUrlPromise;
 }
 
+let whoKind = "ALL";
 function renderWhoOutbreaks(items, generatedAt) {
   const list = document.getElementById("whoOutbreakList");
   if (!items || !items.length) {
     list.innerHTML = `<li class="embassy-row skeleton">최근 수집된 정보가 없습니다.</li>`;
     return;
   }
+  // 종류 버튼: 전체 / 감염병 발생 / WHO 소식 (예전 파일은 kind 가 없어서 감염병으로 본다)
+  const kindOf = (n) => n.kind || "감염병 발생";
+  const filterBox = document.getElementById("whoFilter");
+  let lastKo = null;
+  if (filterBox) {
+    const kinds = ["감염병 발생", "WHO 소식"].filter((k) => items.some((n) => kindOf(n) === k));
+    const cnt = (k) => items.filter((n) => k === "ALL" || kindOf(n) === k).length;
+    const btns = () => (kinds.length > 1 ? ["ALL", ...kinds] : []).map((k) =>
+      `<button type="button" data-k="${k}" class="${whoKind === k ? "active" : ""}">${k === "ALL" ? "전체" : k} <b>${cnt(k)}</b></button>`).join("");
+    filterBox.innerHTML = btns();
+    filterBox.onclick = (e) => {
+      const b = e.target.closest("button[data-k]"); if (!b) return;
+      whoKind = b.dataset.k; filterBox.innerHTML = btns(); draw(lastKo);
+    };
+  }
   const draw = (ko) => {
-    list.innerHTML = items.map(n => {
+    lastKo = ko;
+    const shown = items.filter((n) => whoKind === "ALL" || kindOf(n) === whoKind);
+    list.innerHTML = shown.map(n => {
       const k = ko && n.link ? ko[n.link] : null;
       const title = k && k.titleKo ? k.titleKo : n.title;
       const summary = k && k.summaryKo ? k.summaryKo : (n.summary || "");
       return `
     <li class="embassy-row">
       <div class="notice-top">
-        <span class="notice-title">${escapeHtml(title)}</span>
+        <span class="notice-title"><span class="emb-kind ${kindOf(n) === "감염병 발생" ? "safe" : ""}">${escapeHtml(kindOf(n))}</span>${escapeHtml(title)}</span>
         <span class="notice-date">${escapeHtml((n.date || "").slice(0, 10))}</span>
       </div>
       <div class="notice-body">${escapeHtml(summary)}</div>
@@ -1268,7 +1286,7 @@ function renderWhoOutbreaks(items, generatedAt) {
   if (generatedAt) {
     const dt = new Date(generatedAt);
     document.getElementById("whoOutbreakMeta").textContent =
-      "World Health Organization 공식 API 연동 · 한국어는 구글 번역 · 마지막 수집: " +
+      "World Health Organization 공식 API 연동 (감염병 발생 정보 + 최신 소식) · 6시간마다 갱신 · 한국어는 구글 번역 · 마지막 수집: " +
       new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(dt);
   }
 }

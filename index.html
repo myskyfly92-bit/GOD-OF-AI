@@ -33,7 +33,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261006o">
+<link rel="stylesheet" href="style.css?v=20261006p">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -471,8 +471,9 @@ html.intro-pending::after {
 
 
   <!-- WHO 전세계 감염병 발생 정보 -->
-  <section class="panel embassy-panel" aria-label="WHO 전세계 감염병 발생 정보" style="grid-column: 1 / -1;">
-    <div class="panel-label">WHO OUTBREAK NEWS · 전세계 감염병 발생 정보</div>
+  <section class="panel embassy-panel" aria-label="WHO 소식" style="grid-column: 1 / -1;">
+    <div class="panel-label">WHO NEWS · 감염병 발생 정보 · WHO 최신 소식</div>
+    <div class="emb-filter" id="whoFilter"></div>
     <ul class="embassy-list" id="whoOutbreakList">
       <li class="embassy-row skeleton">데이터 불러오는 중…</li>
     </ul>
@@ -827,7 +828,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261006o"></script>
+<script src="script.js?v=20261006p"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

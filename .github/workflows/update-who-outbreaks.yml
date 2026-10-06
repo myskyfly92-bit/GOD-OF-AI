@@ -1,8 +1,8 @@
-name: Update WHO Disease Outbreak News
+name: Update WHO News
 
 on:
   schedule:
-    - cron: "0 5 * * *"   # 매일 UTC 05:00 = 바그다드 08:00
+    - cron: "0 */6 * * *"   # 6시간마다 (감염병 발생 + WHO 최신 소식)
   workflow_dispatch: {}
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
       - name: 의존성 설치
         run: pip install requests
 
-      - name: WHO 감염병 발생 정보 수집 실행
+      - name: WHO 감염병·최신 소식 수집 실행
         run: python scripts/fetch_who_outbreaks.py
 
       - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
