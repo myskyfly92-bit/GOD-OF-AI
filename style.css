@@ -3198,3 +3198,5 @@ body.hg-running .hg-again { display: none; }
 .clinic-unlock[hidden], .clinic-table-wrap[hidden], .clinic-lock-btn[hidden], .clinic-add-btn[hidden] { display: none !important; }
 /* 인트로가 나오는 동안 법령 도우미 숨기기 */
 body:has(.hse-intro) .ai-assist { display: none; }
+/* 달리는 마스코트: 그림 자체에 움직임이 있어 뒤집기만 빠르게 */
+.mascot-runner.is-running .mascot-body img { transition: none; }

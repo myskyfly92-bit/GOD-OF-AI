@@ -3256,7 +3256,14 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   const bubble = runner.querySelector(".mascot-bubble");
 
   const LINES = ["안전제일!", "보호구 착용 확인!", "오늘도 무재해!", "안전벨트 체결!", "물 자주 마셔요!", "작업 전 TBM!", "위험하면 멈추기!"];
-  const MAX_SPEED = 30;      // px/초 (천천히 걷기)
+  const MAX_SPEED = 55;      // px/초 (달리는 그림에 맞춘 속도)
+  // 달릴 때는 옆모습 달리기 움직임(투명 배경 움직이는 그림), 멈추면 원래 마스코트 그림
+  const STAND_SRC = home.getAttribute("src");
+  const RUN_SRC = "assets/mascot-run.webp";
+  let running = false, runReady = false;
+  const pre = new Image();
+  pre.onload = () => { runReady = true; };
+  pre.src = RUN_SRC;
   const STEPS_PER_PX = 0.05; // 이동 거리당 걸음 수 → 빨리 걸으면 걸음도 빨라진다
   let x = 0, dir = 1, facing = 1, speed = 0, target = 0, phase = 0, breath = 0;
   let minX = 0, maxX = 0, last = 0, hover = false, busyUntil = 0, mode = "idle";
@@ -3335,7 +3342,11 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     if (x >= maxX) { x = maxX; if (mode === "walk") { busyUntil = 0; } }
 
     // 걸음: 한 걸음(π)마다 한 번 튀고, 걸음마다 좌우로 번갈아 기울기
-    const walkAmt = Math.min(1, speed / MAX_SPEED);
+    // 움직이기 시작하면 달리는 그림으로, 거의 멈추면 서 있는 그림으로 (자주 깜빡이지 않게 간격을 둠)
+    if (runReady && !running && speed > 10) { running = true; img.src = RUN_SRC; runner.classList.add("is-running"); }
+    else if (running && speed < 4) { running = false; img.src = STAND_SRC; runner.classList.remove("is-running"); }
+    // 달리는 그림은 몸이 스스로 튀므로 통통 튀기·기울기는 끈다
+    const walkAmt = running ? 0 : Math.min(1, speed / MAX_SPEED);
     phase += speed * dt * STEPS_PER_PX * Math.PI;
     const bob = Math.abs(Math.sin(phase)) * 5 * walkAmt;
     const tilt = Math.sin(phase) * 3 * walkAmt;
