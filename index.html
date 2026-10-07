@@ -33,7 +33,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261007c">
+<link rel="stylesheet" href="style.css?v=20261007d">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -518,7 +518,12 @@ html.intro-pending::after {
         <div class="clinic-inj-stats" id="clinicInjStats"></div>
       </div>
       <div>
-        <div class="clinic-sub clinic-sub-row">최근 진료 기록 <button type="button" class="clinic-add-btn" id="clinicAddBtn">+ 진료 기록 추가</button></div>
+        <div class="clinic-sub clinic-sub-row">최근 진료 기록 <button type="button" class="clinic-lock-btn" id="clinicLockBtn" hidden title="이 기기에서 잠그기">🔒 잠그기</button><button type="button" class="clinic-add-btn" id="clinicAddBtn" hidden>+ 진료 기록 추가</button></div>
+        <form class="clinic-unlock" id="clinicUnlock" hidden autocomplete="off">
+          <p>🔒 진료 기록은 보건 담당자만 볼 수 있습니다.<br><small>암호를 넣으면 이 기기에서 목록 보기·추가·삭제가 됩니다.</small></p>
+          <span class="cf-row"><input type="password" id="clinicPassInput" placeholder="클리닉 암호" autocomplete="current-password"><button type="submit">열기</button></span>
+          <span class="clinic-unlock-msg" id="clinicUnlockMsg"></span>
+        </form>
         <form class="clinic-form" id="clinicForm" hidden autocomplete="off">
           <label>날짜<span class="cf-row"><input type="date" name="date" required><button type="button" class="cf-chip" data-day="0">오늘</button><button type="button" class="cf-chip" data-day="-1">어제</button></span></label>
           <label>시간<span class="cf-row"><input type="text" name="time" inputmode="numeric" maxlength="5" placeholder="예: 0930 → 09:30" autocomplete="off"><button type="button" class="cf-chip" data-now>지금</button></span></label>
@@ -547,7 +552,7 @@ html.intro-pending::after {
         <div class="clinic-table-wrap"><table class="clinic-table" id="clinicTable"></table></div>
       </div>
     </div>
-    <p class="source-note" id="clinicMeta">구글 시트 '클리닉' 탭에서 불러옵니다 · 이름과 사번은 일부를 가려서 표시합니다</p>
+    <p class="source-note" id="clinicMeta">구글 시트 '클리닉' 탭에서 불러옵니다 · 이름은 성만 표시합니다</p>
   </section>
 </main>
 </div>
@@ -944,7 +949,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261007c"></script>
+<script src="script.js?v=20261007d"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

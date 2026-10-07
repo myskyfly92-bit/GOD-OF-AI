@@ -3185,3 +3185,14 @@ body.hg-running .hg-again { display: none; }
 .kosha-biz.is-cons { color: #1a1205; background: #f2a93b; border-color: #f2a93b; }
 .kosha-case.is-cons > summary { box-shadow: inset 3px 0 0 #f2a93b; }
 .kosha-date small { display: block; font-size: 10.5px; color: var(--text-dim); text-align: right; }
+
+/* 클리닉 잠금 */
+.clinic-lock-btn { margin-left: auto; font-family: var(--font-body); font-size: 11.5px; cursor: pointer; color: var(--text-dim); background: transparent; border: 1px solid var(--border); border-radius: 999px; padding: 4px 10px; }
+.clinic-lock-btn + .clinic-add-btn { margin-left: 0; }
+.clinic-unlock { border: 1px dashed var(--border); border-radius: 10px; padding: 18px 16px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.clinic-unlock p { margin: 0; font-size: 13.5px; line-height: 1.6; }
+.clinic-unlock small { color: var(--text-dim); }
+.clinic-unlock input { font: inherit; font-size: 14px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); color: inherit; width: 160px; }
+.clinic-unlock button { font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; color: #0a0e13; background: var(--cyan); border: none; border-radius: 8px; padding: 6px 14px; }
+.clinic-unlock-msg { font-size: 12px; color: #ff7e79; min-height: 1em; }
+.clinic-unlock[hidden], .clinic-table-wrap[hidden], .clinic-lock-btn[hidden], .clinic-add-btn[hidden] { display: none !important; }

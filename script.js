@@ -5225,6 +5225,10 @@ const CLINIC_INFO_EN = {
 };
 const CLINIC_CAT_COLOR = { "질병": "#4fb4ff", "부상(업무 중)": "#e5484d", "부상(업무 외)": "#ff7e79", "온열질환": "#f2a93b", "건강상담": "#35d0c0", "기타": "#8996a6" };
 let clinicLoadedAt = 0;
+const clinicPass = {
+  get() { try { return localStorage.getItem("clinicPass") || ""; } catch (e) { return ""; } },
+  set(v) { try { v ? localStorage.setItem("clinicPass", v) : localStorage.removeItem("clinicPass"); } catch (e) {} },
+};
 // 증상 분류 (신체 계통 8가지). 한 사람이 여러 계통일 수 있어(예: 고혈압+당뇨) 여러 개를 쉼표로 저장한다
 const SYMCATS = [
   ["호흡기계", "Respiratory", "#4fb4ff", /감기|기침|가래|콧물|코막힘|인후|목\s*아|편도|호흡|천식|폐렴|독감|인플루엔자|비염|cold|cough|flu|sore throat/i],
@@ -5263,9 +5267,16 @@ async function loadClinic(force) {
   try {
     const url = await getAppsScriptUrl();
     if (!url) throw new Error("Apps Script 주소가 없습니다");
-    const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + "action=clinic&t=" + Date.now())).json();
+    const pass = clinicPass.get();
+    const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + "action=clinic" + (pass ? "&pass=" + encodeURIComponent(pass) : "") + "&t=" + Date.now())).json();
     if (!r.ok) throw new Error(r.error || "불러오기 실패");
     rows = r.rows || [];
+    var locked = !!r.locked;
+    if (locked && pass) {   // 저장된 암호가 틀렸거나 바뀜
+      clinicPass.set("");
+      const m = document.getElementById("clinicUnlockMsg");
+      if (m) m.textContent = TT("암호가 맞지 않습니다", "Wrong passcode");
+    }
   } catch (e) {
     cards.innerHTML = `<p class="skeleton">${TT("진료 현황을 불러오지 못했습니다", "Could not load clinic data")} (${escapeHtml(e.message)})</p>`;
     return;
@@ -5345,20 +5356,27 @@ async function loadClinic(force) {
       <div><div class="cis-h">${TT("발생 형태", "Accident type")}</div><ul class="clinic-top">${bars(causes, INJ_CAUSES, "#f2a93b")}</ul></div></div>`;
   })();
 
-  // 최근 기록 (가려진 이름·사번)
-  const recent = rows.slice().sort((a, b) => (b.date + (b.time || "")).localeCompare(a.date + (a.time || ""))).slice(0, 25);
+  // 잠금: 암호 없으면 목록·추가 버튼을 숨기고 암호 입력 칸만
+  document.getElementById("clinicUnlock").hidden = !locked;
+  document.getElementById("clinicAddBtn").hidden = locked;
+  document.getElementById("clinicLockBtn").hidden = locked;
+  document.querySelector(".clinic-table-wrap").hidden = locked;
+  if (locked) document.getElementById("clinicForm").hidden = true;
+
+  // 최근 기록 (이름은 성만)
+  const recent = locked ? [] : rows.slice().sort((a, b) => (b.date + (b.time || "")).localeCompare(a.date + (a.time || ""))).slice(0, 25);
   document.getElementById("clinicTable").innerHTML = `
-    <thead><tr><th>${TT("날짜", "Date")}</th><th>${TT("시간", "Time")}</th><th>${TT("이름", "Name")}</th><th>${TT("사번", "ID")}</th><th>${TT("소속", "Company")}</th><th>${TT("구분", "Type")}</th><th>${TT("증상", "Symptoms")}</th><th>${TT("조치", "Action")}</th><th></th></tr></thead>
+    <thead><tr><th>${TT("날짜", "Date")}</th><th>${TT("시간", "Time")}</th><th>${TT("이름", "Name")}</th><th>${TT("소속", "Company")}</th><th>${TT("구분", "Type")}</th><th>${TT("증상", "Symptoms")}</th><th>${TT("조치", "Action")}</th><th></th></tr></thead>
     <tbody>${recent.map((x) => `<tr>
       <td>${escapeHtml(x.date.slice(5).replace("-", "/"))}</td><td>${escapeHtml(x.time || "")}</td>
-      <td>${escapeHtml(x.name || "")}</td><td class="mono">${escapeHtml(x.id || "")}</td><td>${escapeHtml(clinicTr(x.dept))}</td>
+      <td>${escapeHtml(x.name || "")}</td><td>${escapeHtml(clinicTr(x.dept))}</td>
       <td><span class="clinic-cat" style="--c:${CLINIC_CAT_COLOR[x.cat] || "#8996a6"}">${escapeHtml(clinicTr(x.cat))}</span></td>
       <td>${/부상/.test(x.cat || "") && (x.injType || x.injCause)
         ? String(x.injType || "").split(/\s*,\s*/).filter(Boolean).map((v) => `<span class="sc-tag" style="--c:#ff7e79">${escapeHtml(UI_EN ? ((INJ_TYPES.find((r) => r[0] === v) || [])[1] || v) : v)}</span>`).join("")
           + (x.injCause ? `<span class="sc-tag" style="--c:#f2a93b">${escapeHtml(UI_EN ? ((INJ_CAUSES.find((r) => r[0] === x.injCause) || [])[1] || x.injCause) : x.injCause)}</span>` : "")
         : ""}${symCatsOf(x).map((c) => `<span class="sc-tag" style="--c:${symCatInfo(c)[2]}">${escapeHtml(UI_EN ? symCatInfo(c)[1] : c)}</span>`).join("")} ${escapeHtml(clinicTr(x.symptom))}</td><td class="${/후송/.test(x.action || "") ? "ref" : ""}">${escapeHtml(clinicTr(x.action))}</td>
       <td><button type="button" class="clinic-del" data-row="${x.row}" data-date="${escapeHtml(x.date)}" title="이 기록 삭제">×</button></td></tr>`).join("") ||
-      `<tr><td colspan="9">${TT("아직 진료 기록이 없습니다. '+ 진료 기록 추가'로 입력해 주세요.", "No clinic records yet. Use '+ Add record' to enter one.")}</td></tr>`}</tbody>`;
+      `<tr><td colspan="8">${TT("아직 진료 기록이 없습니다. '+ 진료 기록 추가'로 입력해 주세요.", "No clinic records yet. Use '+ Add record' to enter one.")}</td></tr>`}</tbody>`;
   // 입력 도우미: 지금까지 쓴 소속·증상을 자동완성 목록으로
   const uniq = (arr) => [...new Set(arr.filter(Boolean))].slice(0, 30);
   document.getElementById("clinicDeptList").innerHTML = uniq(rows.map((x) => x.dept)).map((v) => `<option value="${escapeHtml(v)}">`).join("");
@@ -5371,31 +5389,46 @@ async function loadClinic(force) {
     catch (e) { alert(TT("삭제하지 못했습니다: ", "Could not delete: ") + e.message); b.disabled = false; }
   });
   document.getElementById("clinicMeta").textContent =
-    TT(`구글 시트 '클리닉' 탭에서 불러옵니다 (최근 60일) · 이름과 사번은 일부를 가려서 표시합니다 · 불러온 시각 `, `From the 'Clinic' Google Sheet (last 60 days) · Names and IDs are partially masked · Updated `) + `${new Intl.DateTimeFormat(UI_EN ? "en-GB" : "ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date())}`;
+    (locked
+      ? TT(`구글 시트 '클리닉' 탭에서 불러옵니다 (최근 60일) · 개인 기록은 암호를 넣은 담당자만 볼 수 있고, 지금은 통계만 표시합니다 · 불러온 시각 `, `From the 'Clinic' Google Sheet (last 60 days) · Individual records require the clinic passcode; showing statistics only · Updated `)
+      : TT(`구글 시트 '클리닉' 탭에서 불러옵니다 (최근 60일) · 이름은 성만, 사번은 표시하지 않습니다 · 불러온 시각 `, `From the 'Clinic' Google Sheet (last 60 days) · Surname initial only, no employee IDs · Updated `)) + `${new Intl.DateTimeFormat(UI_EN ? "en-GB" : "ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date())}`;
 }
 document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.addEventListener("click", () => { if (btn.dataset.view === "view-health-clinic") loadClinic(false); });
 });
+(function clinicLock() {
+  const f = document.getElementById("clinicUnlock");
+  if (!f) return;
+  f.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const inp = document.getElementById("clinicPassInput");
+    const v = inp.value.trim();
+    if (!v) return;
+    document.getElementById("clinicUnlockMsg").textContent = TT("확인 중…", "Checking…");
+    clinicPass.set(v);
+    inp.value = "";
+    await loadClinic(true);
+    if (!clinicPass.get()) return; // 틀리면 loadClinic 이 메시지를 띄움
+    document.getElementById("clinicUnlockMsg").textContent = "";
+  });
+  document.getElementById("clinicLockBtn").addEventListener("click", () => {
+    clinicPass.set("");
+    document.getElementById("clinicUnlockMsg").textContent = "";
+    loadClinic(true);
+  });
+})();
 
 /* 클리닉: 사이트에서 바로 진료 기록 넣기 */
 async function clinicCall(action, payload) {
   const url = await getAppsScriptUrl();
   if (!url) throw new Error("Apps Script 주소가 없습니다");
-  let pw = "";
-  try { pw = localStorage.getItem("wzPass") || ""; } catch (e) {}
-  const go = async (p) => {
-    const q = `action=${action}&payload=${encodeURIComponent(JSON.stringify({ ...payload, passcode: p }))}&t=${Date.now()}`;
-    const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + q)).json();
-    if (!r.ok) throw new Error(r.error || "실패");
-    return r;
-  };
-  try { return await go(pw); }
-  catch (e) {
-    if (!/암호/.test(e.message)) throw e;
-    const p = prompt("저장 암호를 입력하세요") || "";
-    try { localStorage.setItem("wzPass", p); } catch (er) {}
-    return go(p);
+  const q = `action=${action}&payload=${encodeURIComponent(JSON.stringify({ ...payload, passcode: clinicPass.get() }))}&t=${Date.now()}`;
+  const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + q)).json();
+  if (!r.ok) {
+    if (/암호/.test(r.error || "")) { clinicPass.set(""); loadClinic(true); }
+    throw new Error(r.error || "실패");
   }
+  return r;
 }
 (function clinicForm() {
   const form = document.getElementById("clinicForm");
