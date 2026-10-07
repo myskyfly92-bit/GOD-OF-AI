@@ -3331,13 +3331,14 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     body.classList.add(big ? "jump-big" : "jump");
   }
 
+  // 돌아서기: 서 있을 때는 정면 그림이라 뒤집지 않고, 방향만 바꿔 두었다가 달리기 시작할 때 그쪽을 보게 한다
   function turn(newDir) {
     if (newDir === facing) return;
     dir = newDir;
     target = 0;
     mode = "turn";
-    busyUntil = performance.now() + 700;
-    setTimeout(() => { facing = newDir; img.style.setProperty("--flip", facing); }, 250);
+    facing = newDir;
+    busyUntil = performance.now() + 300;
   }
 
   function decide(now) {
@@ -3376,8 +3377,8 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     // 걸음: 한 걸음(π)마다 한 번 튀고, 걸음마다 좌우로 번갈아 기울기
     // 움직이기 시작하면 달리는 그림으로, 거의 멈추면 서 있는 그림으로 (자주 깜빡이지 않게 간격을 둠)
     if (acting) { /* 경례 중에는 그림을 바꾸지 않는다 */ }
-    else if (runReady && !running && speed > 0) { running = true; img.src = RUN_SRC; runner.classList.add("is-running"); }
-    else if (running && speed === 0) { running = false; img.src = STAND_SRC; runner.classList.remove("is-running"); }
+    else if (runReady && !running && speed > 0) { running = true; img.style.setProperty("--flip", facing); img.src = RUN_SRC; runner.classList.add("is-running"); }
+    else if (running && speed === 0) { running = false; img.style.setProperty("--flip", 1); img.src = STAND_SRC; runner.classList.remove("is-running"); }
     // 달리는 그림은 몸이 스스로 튀므로 통통 튀기·기울기는 끈다
     const walkAmt = running ? 0 : Math.min(1, speed / MAX_SPEED);
     phase += speed * dt * STEPS_PER_PX * Math.PI;

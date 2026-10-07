@@ -1982,8 +1982,7 @@ html body {
 .mascot-step { will-change: transform; }
 .mascot-body img {
   height: 100%; width: auto; pointer-events: none;
-  transform: scaleX(var(--flip, 1));
-  transition: transform 0.35s cubic-bezier(.5, 0, .3, 1.4); /* 돌아설 때 살짝 튕기며 */
+  transform: scaleX(var(--flip, 1)); /* 달리는 방향으로만 뒤집는다 (정면 그림은 뒤집지 않음) */
   filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.3));
 }
 /* 점프: 웅크렸다가(준비) 뛰어올라 착지 */
