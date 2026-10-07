@@ -3351,10 +3351,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       if (d !== facing) { turn(d); return; }
       mode = "walk"; dir = d; target = MAX_SPEED;
       busyUntil = Infinity; // 끝에 닿으면 아래 tick 에서 다음 행동을 고른다
-    } else if (r < 0.75) {
-      mode = "idle"; target = 0; busyUntil = now + 1800;
-      setTimeout(() => jump(false), 350); // 멈춘 뒤 폴짝
-    } else if (r < 0.85) {
+    } else if (r < 0.85) {   // (제자리 폴짝 뛰기는 뺐다)
       mode = "idle"; target = 0; busyUntil = now + 3000;
       say(pickLine());
     } else {
@@ -3398,10 +3395,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   window.hseMascotSay = (t) => say(t);
   runner.addEventListener("mouseenter", () => { hover = true; });
   runner.addEventListener("mouseleave", () => { hover = false; busyUntil = performance.now() + 800; });
-  runner.addEventListener("click", () => {
-    jump(true);
-    say(pickLine());
-  });
+  runner.addEventListener("click", () => { say(pickLine()); }); // 누르면 한마디 (폴짝 뛰기는 뺐다)
 
   const start = () => { bounds(); busyUntil = performance.now() + 1500; requestAnimationFrame(tick); };
   if (home.complete) start(); else home.addEventListener("load", start, { once: true });
