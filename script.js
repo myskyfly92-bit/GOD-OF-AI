@@ -5943,3 +5943,81 @@ async function clinicCall(action, payload) {
   document.querySelectorAll('.tab-btn[data-view="view-procedures"]').forEach((b) => b.addEventListener("click", load));
   if (document.getElementById("view-procedures").classList.contains("active")) load();
 })();
+
+
+/* ==========================================================
+   보건 > 밀폐공간 작업: 환기 계산기 · 적정공기 기준 · 가스측정기 안내
+   - 가스측정기 실제 설명서(PDF)를 manuals/gas-detector.pdf 로 올리면 버튼이 자동으로 나타난다
+   ========================================================== */
+(function confinedSpace() {
+  const form = document.querySelector(".cs-form");
+  if (!form) return;
+  const $ = (id) => document.getElementById(id);
+  const DIMS = {
+    box: [["csL", "가로", 3, "m"], ["csW", "세로", 2, "m"], ["csH", "높이(깊이)", 2.5, "m"]],
+    cyl: [["csD", "지름", 2, "m"], ["csH", "높이(깊이·길이)", 3, "m"]],
+    vol: [["csV", "체적", 15, "m³"]],
+  };
+  const saved = {};
+  function drawDims() {
+    const shape = form.querySelector('input[name="csShape"]:checked').value;
+    $("csDims").querySelectorAll("input").forEach((i) => { saved[i.id] = i.value; });
+    $("csDims").innerHTML = DIMS[shape].map(([id, label, def, unit]) =>
+      `<label>${label}<span><input type="number" id="${id}" value="${saved[id] ?? def}" min="0" step="any"><em>${unit}</em></span></label>`).join("");
+    calc();
+  }
+  const num = (id) => { const e = $(id); const v = e ? parseFloat(e.value) : NaN; return isFinite(v) && v >= 0 ? v : 0; };
+  const fmtMin = (m) => {
+    if (!isFinite(m)) return "–";
+    if (m < 1) return `${Math.max(1, Math.round(m * 60))}초`;
+    const h = Math.floor(m / 60), mm = Math.ceil(m % 60);
+    return h ? `${h}시간 ${mm}분` : `${Math.ceil(m)}분`;
+  };
+  function calc() {
+    const shape = form.querySelector('input[name="csShape"]:checked').value;
+    const V = shape === "box" ? num("csL") * num("csW") * num("csH")
+      : shape === "cyl" ? Math.PI * (num("csD") / 2) ** 2 * num("csH") : num("csV");
+    const loss = Math.max(0.3, 1 - 0.05 * (num("csDuct") / 10) - 0.1 * num("csBend"));
+    const mode = $("csMode").value;
+    const Q = num("csFan") * Math.max(1, num("csFanN")) * loss;
+    const K = parseFloat($("csMix").value) || 1.5;
+    const N = Math.max(1, num("csPurge"));
+    const ach = Math.max(1, num("csAch"));
+    const box = $("csResult");
+    if (!(V > 0)) { box.innerHTML = `<p class="cs-empty">공간 크기를 입력하세요</p>`; return; }
+    if (!(Q > 0)) { box.innerHTML = `<p class="cs-empty">송풍기 풍량을 입력하세요</p>`; return; }
+    const tPurge = (N * V * K) / Q;             // 분
+    const needQ = (V * ach) / 60;               // m³/분
+    const achNow = (Q / V) * 60;                // 지금 송풍기로 시간당 교환 횟수
+    const ok = Q >= needQ;
+    const fan1 = num("csFan") * loss;
+    const needFans = fan1 > 0 ? Math.ceil(needQ / fan1) : 0;
+    const remain = (t) => Math.exp(-(Q * t) / (V * K)) * 100;
+    const pct = (v) => (v < 0.1 ? "0.1% 미만" : `${v < 10 ? v.toFixed(1) : Math.round(v)}%`);
+    box.innerHTML = `
+      <div class="cs-r-row"><span>공간 체적</span><b>${V.toFixed(1)} m³</b></div>
+      <div class="cs-r-row"><span>실제 풍량 <small>(덕트 손실 ${Math.round((1 - loss) * 100)}% 반영)</small></span><b>${Q.toFixed(1)} m³/분</b></div>
+      <div class="cs-r-big"><span>작업 전 최소 환기 시간</span><b>${fmtMin(tPurge)}</b>
+        <small>공기 ${N}회 교환 · 섞임 계수 ${K} · 처음 오염 농도의 약 ${pct(remain(tPurge))}까지 희석</small></div>
+      <div class="cs-r-steps">${[5, 10, 20, 30].map((t) => `<span>${t}분 후 <b>${pct(remain(t))}</b></span>`).join("")}</div>
+      <div class="cs-r-big ${ok ? "ok" : "bad"}"><span>작업 중 필요 풍량 (시간당 ${ach}회)</span><b>${needQ.toFixed(1)} m³/분</b>
+        <small>지금 송풍기로는 시간당 <b>${achNow.toFixed(0)}회</b> 교환 → ${ok ? "충분합니다" : `<b>부족합니다</b> · 같은 송풍기 <b>${needFans}대</b> 이상 필요`}</small></div>
+      <ul class="cs-r-tips">
+        ${mode === "push" ? "<li>급기 덕트 끝은 <b>작업자가 있는 바닥 가까이</b> 두고, 입구 반대편으로 공기가 빠져나가게 하세요.</li>" : ""}
+        ${mode === "pull" ? "<li>배기는 <b>오염원 가까이</b>에서 빨아내고, 빨아낸 공기가 다시 입구로 들어오지 않게 멀리 내보내세요.</li>" : ""}
+        ${mode === "both" ? "<li>급기와 배기 덕트를 <b>공간의 서로 반대편</b>에 두어야 공기가 고이지 않습니다.</li>" : ""}
+        <li>송풍기 흡입구는 <b>발전기·차량 배기가스가 없는 깨끗한 곳</b>에 두세요.</li>
+        <li><b>순수 산소로 환기하지 마세요.</b> 화재·폭발 위험이 커집니다.</li>
+        <li>계산 시간만큼 환기한 뒤에도 <b>가스측정기로 확인</b>하고, 작업 중에는 환기를 멈추지 마세요.</li>
+      </ul>`;
+  }
+  form.addEventListener("input", calc);
+  form.addEventListener("change", (e) => { if (e.target.name === "csShape") drawDims(); else calc(); });
+  drawDims();
+
+  // 실제 측정기 설명서가 저장소에 있으면 버튼 표시
+  fetch("manuals/gas-detector.pdf", { method: "HEAD", cache: "no-cache" }).then((r) => {
+    const el = $("csManualLink");
+    if (r.ok && el) el.innerHTML = `<a class="cs-pdf" href="${typeof docUrl === "function" ? docUrl("manuals/gas-detector.pdf") : "manuals/gas-detector.pdf"}" target="_blank" rel="noopener noreferrer">📄 현장 가스측정기 제조사 설명서 (PDF) 열기</a>`;
+  }).catch(() => {});
+})();

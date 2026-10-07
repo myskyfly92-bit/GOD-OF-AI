@@ -33,7 +33,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261006r">
+<link rel="stylesheet" href="style.css?v=20261007a">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -105,6 +105,7 @@ html.intro-pending::after {
       <button class="tab-btn" data-view="view-iraq-moh">이라크 보건부 소식</button>
       <button class="tab-btn" data-view="view-health-infect">WHO 소식</button>
       <button class="tab-btn" data-view="view-health-heat">온열질환</button>
+      <button class="tab-btn" data-view="view-health-confined">밀폐공간 작업</button>
     </div>
     <div class="sub-row" data-group="env" hidden>
       <button class="tab-btn" data-view="view-env-weather">날씨·대기환경</button>
@@ -381,6 +382,118 @@ html.intro-pending::after {
     <div class="panel-label">NEWS · 중동 대사관·안전 관련 뉴스</div>
     <ul class="topic-news-list" data-topic="embassy"><li class="skeleton">뉴스 불러오는 중…</li></ul>
     <p class="source-note topic-news-meta">구글 뉴스 검색 연동 · 하루 4번 갱신</p>
+  </section>
+</main>
+</div>
+
+<div id="view-health-confined" class="view">
+<main class="grid">
+  <section class="panel cs-panel" aria-label="밀폐공간 환기 계산기" style="grid-column: 1 / -1;">
+    <div class="panel-label">CONFINED SPACE · 밀폐공간 환기 계산기</div>
+    <p class="cs-lead">공간 크기와 송풍기 풍량을 넣으면 <b>작업 전 환기 시간</b>과 <b>작업 중 필요한 풍량</b>을 계산합니다. 계산값은 최소 기준이며, <b>입장 전에는 반드시 가스측정기로 확인</b>해야 합니다.</p>
+    <div class="cs-cols">
+      <div class="cs-form">
+        <div class="cs-sub">① 공간 크기</div>
+        <div class="cs-shape">
+          <label><input type="radio" name="csShape" value="box" checked> 직육면체 (맨홀 박스·피트·탱크실)</label>
+          <label><input type="radio" name="csShape" value="cyl"> 원통 (탱크·맨홀·관로)</label>
+          <label><input type="radio" name="csShape" value="vol"> 체적 직접 입력</label>
+        </div>
+        <div class="cs-grid" id="csDims"></div>
+        <div class="cs-sub">② 환기 설비</div>
+        <div class="cs-grid">
+          <label>송풍기 명판 풍량<span><input type="number" id="csFan" value="30" min="0" step="any"><em>m³/분</em></span></label>
+          <label>송풍기 대수<span><input type="number" id="csFanN" value="1" min="1" step="1"><em>대</em></span></label>
+          <label>덕트 길이<span><input type="number" id="csDuct" value="10" min="0" step="any"><em>m</em></span></label>
+          <label>덕트 꺾임 (90°)<span><input type="number" id="csBend" value="1" min="0" step="1"><em>곳</em></span></label>
+        </div>
+        <div class="cs-sub">③ 환기 조건 <small>현장 절차서 기준에 맞게 바꿔 쓰세요</small></div>
+        <div class="cs-grid">
+          <label>작업 전 공기 교환 횟수<span><input type="number" id="csPurge" value="7" min="1" step="1"><em>회</em></span></label>
+          <label>작업 중 시간당 교환 횟수<span><input type="number" id="csAch" value="20" min="1" step="1"><em>회/시간</em></span></label>
+          <label>공기 섞임 상태<span><select id="csMix">
+            <option value="1">좋음 (트인 공간, 덕트를 바닥까지)</option>
+            <option value="1.5" selected>보통</option>
+            <option value="2.5">나쁨 (칸막이·구석·배관 많음)</option>
+          </select></span></label>
+          <label>환기 방식<span><select id="csMode">
+            <option value="push">급기 (신선한 공기 불어넣기)</option>
+            <option value="pull">배기 (오염 공기 빨아내기)</option>
+            <option value="both">급기 + 배기 함께</option>
+          </select></span></label>
+        </div>
+      </div>
+      <div class="cs-result" id="csResult"></div>
+    </div>
+    <details class="cs-formula">
+      <summary>계산 공식 보기</summary>
+      <ul>
+        <li><b>체적</b> V : 직육면체 = 가로 × 세로 × 높이, 원통 = 3.14 × (지름 ÷ 2)² × 높이</li>
+        <li><b>실제 풍량</b> Q = 명판 풍량 × 대수 × 덕트 손실 계수 &nbsp;<small>(덕트 10m마다 약 5%, 90° 꺾임마다 약 10% 감소로 가정, 최소 30%까지)</small></li>
+        <li><b>작업 전 환기 시간</b> t = 교환 횟수 × V ÷ Q × 섞임 계수 &nbsp;<small>(공기를 공간 체적의 여러 배만큼 바꿔 넣어 오염 공기를 밀어낸다는 뜻. 7회 교환이면 섞임이 이상적일 때 처음 농도의 약 0.1%까지 희석)</small></li>
+        <li><b>작업 중 필요 풍량</b> Q필요 = V × 시간당 교환 횟수 ÷ 60 &nbsp;(m³/분)</li>
+        <li><b>희석 정도</b> 남는 농도 비율 ≈ e<sup>−(Q × t ÷ V ÷ 섞임 계수)</sup></li>
+      </ul>
+    </details>
+  </section>
+
+  <section class="panel cs-panel" aria-label="적정공기 기준" style="grid-column: 1 / -1;">
+    <div class="panel-label">SAFE ATMOSPHERE · 적정공기 기준과 측정 순서</div>
+    <div class="cs-std">
+      <div class="cs-std-card o2"><span>산소 (O₂)</span><b>18% 이상 ~ 23.5% 미만</b><small>18% 미만 = 산소결핍 · 23.5% 이상 = 화재 위험</small></div>
+      <div class="cs-std-card lel"><span>가연성 가스 (LEL)</span><b>10% LEL 미만</b><small>폭발하한계의 10%를 넘으면 입장 금지·화기 금지</small></div>
+      <div class="cs-std-card co"><span>일산화탄소 (CO)</span><b>30 ppm 미만</b><small>엔진·발전기 배기가 흘러들지 않게 주의</small></div>
+      <div class="cs-std-card h2s"><span>황화수소 (H₂S)</span><b>10 ppm 미만</b><small>하수·정화조·오수 피트에서 주의 · 공기보다 무거움</small></div>
+      <div class="cs-std-card co2"><span>탄산가스 (CO₂)</span><b>1.5% 미만</b><small>4가스 측정기에는 없는 경우가 많음</small></div>
+    </div>
+    <p class="source-note">기준: 산업안전보건기준에 관한 규칙 제618조 '적정공기' · 회사·발주처 기준이 더 엄격하면 그 기준을 따릅니다</p>
+    <ol class="cs-steps">
+      <li><b>작업 전 측정 (입장 금지 상태에서)</b> 측정기 호스·막대를 넣어 밖에서 잽니다. 순서는 <b>산소 → 가연성 가스 → 유독가스</b>.</li>
+      <li><b>위·가운데·아래 3곳 이상</b> 메탄은 위쪽에, 황화수소·이산화탄소는 아래쪽에 고이므로 높이를 바꿔 각각 잽니다. 깊이 1m 내려갈 때마다 측정기가 반응할 시간(보통 30초~1분)을 기다립니다.</li>
+      <li><b>환기 후 다시 측정</b> 기준을 넘었으면 위 계산 시간만큼 환기한 뒤 다시 잽니다. 환기를 멈춘 상태에서 잰 값이 정상이어야 합니다.</li>
+      <li><b>작업 중 계속 측정</b> 작업자는 개인 측정기를 몸에 달고 들어가고, 환기는 작업 내내 계속합니다. 경보가 울리면 즉시 대피합니다.</li>
+      <li><b>기록</b> 측정 시각, 위치, 측정값, 측정자를 밀폐공간 작업허가서에 적습니다. 감시인은 밖에서 계속 지킵니다.</li>
+    </ol>
+  </section>
+
+  <section class="panel cs-panel" aria-label="가스측정기 사용 안내" style="grid-column: 1 / -1;">
+    <div class="panel-label">GAS DETECTOR · 가스측정기 사용 안내 (4가스 측정기 공통)</div>
+    <div class="cs-manual-link" id="csManualLink"></div>
+    <div class="cs-man-cols">
+      <div>
+        <div class="cs-sub">사용 전 점검</div>
+        <ul class="cs-check">
+          <li>배터리 충전 상태 확인 (작업 시간보다 넉넉하게)</li>
+          <li><b>깨끗한 바깥 공기</b>에서 전원을 켜고 자동 영점(Zero)이 끝날 때까지 기다리기 (산소 20.9% 표시 확인)</li>
+          <li><b>범프 테스트</b>: 매일 사용 전 표준가스를 짧게 흘려 모든 센서가 반응하고 경보가 울리는지 확인</li>
+          <li><b>교정(Calibration)</b>: 제조사 권장 주기(보통 월 1회~6개월)마다, 또는 범프 테스트 실패 시</li>
+          <li>센서 유효기간, 필터 막힘, 흡입 펌프·호스 새는 곳 확인</li>
+        </ul>
+      </div>
+      <div>
+        <div class="cs-sub">경보 설정 (일반적인 기본값)</div>
+        <table class="cs-alarm">
+          <thead><tr><th>가스</th><th>1차 경보</th><th>2차 경보</th></tr></thead>
+          <tbody>
+            <tr><td>O₂</td><td>19.5% 이하</td><td>23.5% 이상</td></tr>
+            <tr><td>LEL</td><td>10%</td><td>20%</td></tr>
+            <tr><td>CO</td><td>30 ppm</td><td>200 ppm</td></tr>
+            <tr><td>H₂S</td><td>10 ppm</td><td>15 ppm</td></tr>
+          </tbody>
+        </table>
+        <p class="cs-note">경보값은 기종·회사 기준에 따라 다를 수 있습니다. 실제 설정은 측정기 화면에서 확인하세요.</p>
+      </div>
+      <div>
+        <div class="cs-sub">주의할 점</div>
+        <ul class="cs-check">
+          <li>흡입식은 <b>호스 1m당 약 2~3초</b>씩 공기가 늦게 도착하므로 그만큼 더 기다린 뒤 값을 읽기</li>
+          <li>산소가 부족하면 LEL 센서가 실제보다 <b>낮게</b> 읽을 수 있음 → 산소부터 확인</li>
+          <li>LEL이 100%를 넘을 만큼 진한 가스에서는 측정값이 오히려 0으로 떨어질 수 있음 → 갑자기 값이 떨어지면 의심</li>
+          <li>측정기를 물·진흙에 빠뜨리지 않기, 실리콘·고농도 황화수소는 센서를 망가뜨림</li>
+          <li>측정기 경보가 울리면 <b>값을 확인하러 머무르지 말고 먼저 대피</b></li>
+        </ul>
+      </div>
+    </div>
   </section>
 </main>
 </div>
@@ -837,7 +950,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261006r"></script>
+<script src="script.js?v=20261007a"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">
