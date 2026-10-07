@@ -3268,15 +3268,20 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   let x = 0, dir = 1, facing = 1, speed = 0, target = 0, phase = 0, breath = 0;
   let minX = 0, maxX = 0, last = 0, hover = false, busyUntil = 0, mode = "idle";
 
+  // 뛰는 구역: 제목 글자 오른쪽 끝 ~ 시계(오른쪽 상태 영역) 사이의 빈 공간 (글자를 가리지 않게)
   function bounds() {
     const b = bar.getBoundingClientRect();
-    const h = home.getBoundingClientRect();
+    const txt = bar.querySelector(".brand-text");
     const status = bar.querySelector(".topbar-status");
-    minX = h.left - b.left;
+    const t = txt ? txt.getBoundingClientRect() : home.getBoundingClientRect();
+    minX = t.right - b.left + 28;
     const right = status ? status.getBoundingClientRect().left - b.left : b.width;
-    maxX = Math.max(minX, right - runner.offsetWidth - 16);
+    maxX = right - runner.offsetWidth - 24;
+    // 빈 공간이 너무 좁으면(작은 화면) 숨긴다
+    runner.style.visibility = maxX - minX < 40 ? "hidden" : "";
+    maxX = Math.max(minX, maxX);
     x = Math.min(Math.max(x || minX, minX), maxX);
-    runner.style.top = (h.top - b.top) + "px";
+    runner.style.top = Math.round(t.top - b.top + (t.height - runner.offsetHeight) / 2 + 6) + "px";
   }
 
   // 날씨에 따라 다른 대사를 쓰게 (window.hseMascotLines 가 있으면 70% 확률로 그쪽에서 고름)

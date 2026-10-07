@@ -1973,7 +1973,7 @@ html body {
 .tw-link:hover { color: var(--text); border-color: var(--cyan); }
 
 /* ---------- 배너 마스코트 움직임 ---------- */
-.brand-mascot.mascot-home { visibility: hidden; } /* 원래 자리는 비워 두고 자리만 유지 */
+.brand-mascot.mascot-home { display: none; } /* 움직이는 마스코트는 제목 오른쪽 빈 공간에서 뛰므로 원래 자리는 없앤다 */
 .mascot-runner {
   position: absolute; left: 0; top: 0; height: 100px; width: 76px; z-index: 5;
   cursor: pointer; will-change: transform; user-select: none;
