@@ -9,6 +9,22 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO issues first global guidelines on child and adolescent obesity",
+      "date": "2026-10-07T07:09:37Z",
+      "summary": "The World Health Organization (WHO) today released its first guidelines addressing the sharp rise in obesity among children and adolescents, setting out how health systems and health workers can deliver timely, evidence-based and people-centred care.",
+      "link": "https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Advancing inclusive pandemic prevention, preparedness and response for migrants, refugees and displaced populations",
+      "date": "2026-10-07T05:41:00Z",
+      "summary": "High-level cross-sectoral roundtable to advance the meaningful inclusion of migrants, refugees and displaced populations in global pandemic prevention, preparedness and response (PPPR) efforts.",
+      "link": "https://www.who.int/news/item/07-10-2026-advancing-inclusive-pandemic-prevention--preparedness-and-response-for-migrants--refugees-and-displaced-populations",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO reinforces oral disease surveillance with an updated NCD STEPS module",
       "date": "2026-10-06T06:18:35Z",
       "summary": "A new publication in the Bulletin of the World Health Organization presents the revised WHO oral health module for the STEPwise approach to noncommunicable disease risk factor surveillance (STEPS). The updated module introduces a more contemporary and practical approach to collecting population-level data on oral diseases, helping countries generate the evidence needed to inform policy and strengthen monitoring of oral health program and policy implementation.The WHO STEPwise framework is a well",
@@ -112,28 +128,12 @@
       "newsType": "News release"
     },
     {
-      "kind": "WHO 소식",
-      "title": "World leaders renew commitment to protect the world from future pandemics",
-      "date": "2026-09-25T15:44:58Z",
-      "summary": "Political leaders meeting at the United Nations General Assembly (UNGA) renewed their commitment to making the world safer from future pandemics, stressing the need for sustained and more equitable investment and action on pandemic prevention, preparedness and response (PPPR).",
-      "link": "https://www.who.int/news/item/25-09-2026-world-leaders-renew-commitment-to-protect-the-world-from-future-pandemics",
-      "newsType": "News release"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-09-25T15:30:18Z",
       "summary": "Since the last Disease Outbreak News was published on 11 September 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded further, with two additional health zones affected. These include Bulu health zone in a new province, Sud Ubangi, located on the north-west part of the country and Dungu health zone in Haut-Uélé province, bordering South Sudan. This brings the total number of affected health zones to 63 across seven provinces out of 26 provinces of the countr",
       "link": "https://www.who.int/2026-DON618",
       "donId": "2026-DON618"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Recommendations announced for influenza vaccine composition for the 2027 southern hemisphere influenza season",
-      "date": "2026-09-25T11:38:17Z",
-      "summary": "WHO’s recommendations are used by national vaccine regulatory agencies and pharmaceutical companies around the world to develop, produce, and license influenza vaccines for the following influenza season.",
-      "link": "https://www.who.int/news/item/25-09-2026-recommendations-announced-for-influenza-vaccine-composition-for-the-2027-southern-hemisphere-influenza-season",
-      "newsType": "News release"
     },
     {
       "kind": "감염병 발생",
@@ -208,5 +208,5 @@
       "donId": "2026-DON610"
     }
   ],
-  "generatedAt": "2026-10-07T03:46:31.127152+00:00"
+  "generatedAt": "2026-10-07T12:28:15.521556+00:00"
 }
