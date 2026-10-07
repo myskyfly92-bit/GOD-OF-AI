@@ -3200,3 +3200,6 @@ body.hg-running .hg-again { display: none; }
 body:has(.hse-intro) .ai-assist { display: none; }
 /* 달리는 마스코트: 그림 자체에 움직임이 있어 뒤집기만 빠르게 */
 .mascot-runner.is-running .mascot-body img { transition: none; }
+/* 경례 동작: 그림 폭이 넓고 첫 장면의 몸이 왼쪽에 있어서, 달려온 자리와 맞도록 처음엔 오른쪽으로 당겼다가 미끄러지며 제자리로 */
+.mascot-runner.is-acting .mascot-body img { transition: none; animation: mascotActShift 1.6s ease-out both; }
+@keyframes mascotActShift { from { translate: 18px 0; } to { translate: 0 0; } }

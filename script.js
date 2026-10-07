@@ -3258,12 +3258,39 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   const LINES = ["안전제일!", "보호구 착용 확인!", "오늘도 무재해!", "안전벨트 체결!", "물 자주 마셔요!", "작업 전 TBM!", "위험하면 멈추기!"];
   const MAX_SPEED = 55;      // px/초 (달리는 그림에 맞춘 속도)
   // 달릴 때는 옆모습 달리기 움직임(투명 배경 움직이는 그림), 멈추면 원래 마스코트 그림
-  const STAND_SRC = home.getAttribute("src");
+  let STAND_SRC = home.getAttribute("src");
   const RUN_SRC = "assets/mascot-run.webp";
   let running = false, runReady = false;
   const pre = new Image();
   pre.onload = () => { runReady = true; };
   pre.src = RUN_SRC;
+  // 서 있는 그림: 달리기·경례와 같은 3D 그림체로 (못 불러오면 원래 그림)
+  const standPre = new Image();
+  standPre.onload = () => { STAND_SRC = standPre.src; if (!running && !acting) img.src = STAND_SRC; };
+  standPre.src = "assets/mascot-stand.webp";
+  // 시계 앞에 도착하면: 급정거 → 비틀 → 정면 경례 (한 번 재생, 8.4초)
+  // 같은 주소의 움직이는 그림은 브라우저가 처음부터 다시 틀어 주지 않아서, 한 번 받아 두고 재생할 때마다 새 주소(blob)를 만든다
+  const ACTION_MS = 8400;
+  let actionBlob = null, actionUrl = "", acting = false;
+  fetch("assets/mascot-salute.webp").then((r) => (r.ok ? r.blob() : null)).then((b) => { actionBlob = b; }).catch(() => {});
+  function playAction(t) {
+    if (!actionBlob) return false;
+    if (actionUrl) URL.revokeObjectURL(actionUrl);
+    actionUrl = URL.createObjectURL(actionBlob);
+    acting = true; running = false;
+    runner.classList.remove("is-running");
+    runner.classList.add("is-acting");
+    facing = 1; img.style.setProperty("--flip", 1);
+    img.src = actionUrl;
+    mode = "action"; target = 0; speed = 0;
+    busyUntil = t + ACTION_MS + 1500;          // 경례 자세로 잠깐 서 있다가
+    setTimeout(() => {                          // 정면으로 선 그림으로
+      acting = false;
+      runner.classList.remove("is-acting");
+      img.src = STAND_SRC;
+    }, ACTION_MS + 1200);
+    return true;
+  }
   const STEPS_PER_PX = 0.05; // 이동 거리당 걸음 수 → 빨리 걸으면 걸음도 빨라진다
   let x = 0, dir = 1, facing = 1, speed = 0, target = 0, phase = 0, breath = 0;
   let minX = 0, maxX = 0, last = 0, hover = false, busyUntil = 0, mode = "idle";
@@ -3276,7 +3303,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const t = txt ? txt.getBoundingClientRect() : home.getBoundingClientRect();
     minX = t.right - b.left + 28;
     const right = status ? status.getBoundingClientRect().left - b.left : b.width;
-    maxX = right - runner.offsetWidth - 24;
+    maxX = right - runner.offsetWidth - 44; // 도착 후 경례 그림이 조금 넓어서 여유를 더 둔다
     // 빈 공간이 너무 좁으면(작은 화면) 숨긴다
     runner.style.visibility = maxX - minX < 40 ? "hidden" : "";
     maxX = Math.max(minX, maxX);
@@ -3337,18 +3364,19 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   function tick(t) {
     const dt = last ? Math.min(0.05, (t - last) / 1000) : 0;
     last = t;
-    if (!hover && t > busyUntil) decide(t);
+    if (!hover && !acting && t > busyUntil) decide(t);
     if (hover) target = 0;
 
     // 달리는 그림이 제자리에서 헛발질하지 않도록 속도는 바로 붙고 바로 멈춘다
     speed = target;
     x += dir * speed * dt;
     if (x <= minX && dir < 0) { x = minX; if (mode === "walk") { mode = "idle"; target = 0; speed = 0; busyUntil = t + 1200; } }
-    if (x >= maxX && dir > 0) { x = maxX; if (mode === "walk") { mode = "idle"; target = 0; speed = 0; busyUntil = t + 1200; } }
+    if (x >= maxX && dir > 0) { x = maxX; if (mode === "walk") { if (!playAction(t)) { mode = "idle"; target = 0; speed = 0; busyUntil = t + 1200; } } }
 
     // 걸음: 한 걸음(π)마다 한 번 튀고, 걸음마다 좌우로 번갈아 기울기
     // 움직이기 시작하면 달리는 그림으로, 거의 멈추면 서 있는 그림으로 (자주 깜빡이지 않게 간격을 둠)
-    if (runReady && !running && speed > 0) { running = true; img.src = RUN_SRC; runner.classList.add("is-running"); }
+    if (acting) { /* 경례 중에는 그림을 바꾸지 않는다 */ }
+    else if (runReady && !running && speed > 0) { running = true; img.src = RUN_SRC; runner.classList.add("is-running"); }
     else if (running && speed === 0) { running = false; img.src = STAND_SRC; runner.classList.remove("is-running"); }
     // 달리는 그림은 몸이 스스로 튀므로 통통 튀기·기울기는 끈다
     const walkAmt = running ? 0 : Math.min(1, speed / MAX_SPEED);
