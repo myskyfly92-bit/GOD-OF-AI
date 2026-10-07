@@ -10908,5 +10908,15 @@
 "start": "2026-10-02",
 "end": "2029-05-31",
 "contractDate": "2026-10-02"
+},
+"20261006800697": {
+"kind": "공사수주",
+"name": "카자흐스탄 Shymkent CCPP(복합화력)",
+"amount": "1,152,180,085,272",
+"counterparty": "PGU Turkestan LLP",
+"region": "카자흐스탄 Shymkent(카자흐스탄 남부)",
+"start": "2023-03-14",
+"end": "2026-12-23",
+"contractDate": "2023-03-14"
 }
 }

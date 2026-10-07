@@ -1,6 +1,6 @@
 {
   "_readme": "해외 현장 지도 데이터. projects 중 auto: true 인 항목은 GitHub Actions가 DART 공시로 매일 자동 갱신하므로 손대지 마세요(다음 실행 때 덮어써짐). 직접 넣는 현장은 auto 없이 추가하면 그대로 유지됩니다. 자동 수집 현장의 위치·이름을 고치고 싶으면 overrides에 공시 접수번호(rceptNo)를 키로 적으세요. 예: \"overrides\": {\"20260220000001\": {\"lat\": 25.9, \"lon\": 49.6, \"city\": \"자푸라\"}}. logo는 assets 폴더 이미지 경로(없으면 약칭 배지). status는 공사중/수주/준공.",
-  "updatedAt": "2026-10-06",
+  "updatedAt": "2026-10-07",
   "companies": [
     {
       "id": "hanwha",
@@ -97,6 +97,23 @@
       "rceptNo": "20241206800034",
       "filedAt": "20241206",
       "dartName": "이라크 비스마야 신도시 관련 사업"
+    },
+    {
+      "company": "doosan",
+      "name": "카자흐스탄 Shymkent CCPP(복합화력)",
+      "country": "카자흐스탄",
+      "city": "쉼켄트",
+      "lat": 42.32,
+      "lon": 69.595,
+      "type": "공사수주",
+      "status": "공사중",
+      "amount": "1조 1,522억원",
+      "period": "2023-03-14 ~ 2026-12-23",
+      "note": "발주처: PGU Turkestan LLP",
+      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261006800697",
+      "auto": true,
+      "rceptNo": "20261006800697",
+      "filedAt": "20261006"
     },
     {
       "company": "doosan",
@@ -743,23 +760,6 @@
       "auto": true,
       "rceptNo": "20250826800187",
       "filedAt": "20250826"
-    },
-    {
-      "company": "doosan",
-      "name": "카자흐스탄 Shymkent CCPP(복합화력)",
-      "country": "카자흐스탄",
-      "city": "쉼켄트",
-      "lat": 42.32,
-      "lon": 69.595,
-      "type": "공사수주",
-      "status": "준공",
-      "amount": "",
-      "period": "2023-03-14 ~ 2025-08-23",
-      "note": "발주처: PGU Turkestan LLP",
-      "link": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250822800401",
-      "auto": true,
-      "rceptNo": "20250822800401",
-      "filedAt": "20250822"
     },
     {
       "company": "hdec",
