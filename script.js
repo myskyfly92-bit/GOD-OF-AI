@@ -3317,11 +3317,12 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     if (maxX <= minX) { mode = "idle"; target = 0; busyUntil = now + 4000; return; }
     const r = Math.random();
     if (r < 0.6) {
+      // 한 번 출발하면 반대쪽 끝(시계 앞 또는 제목 옆)까지 멈추지 않고 쭉 달린다
       let d = facing;
-      if (x <= minX + 4) d = 1; else if (x >= maxX - 4) d = -1; else if (Math.random() < 0.3) d = -facing;
+      if (x <= minX + 4) d = 1; else if (x >= maxX - 4) d = -1;
       if (d !== facing) { turn(d); return; }
-      mode = "walk"; dir = d; target = MAX_SPEED * (0.75 + Math.random() * 0.35);
-      busyUntil = now + 3000 + Math.random() * 5000;
+      mode = "walk"; dir = d; target = MAX_SPEED;
+      busyUntil = Infinity; // 끝에 닿으면 아래 tick 에서 다음 행동을 고른다
     } else if (r < 0.75) {
       mode = "idle"; target = 0; busyUntil = now + 1800;
       setTimeout(() => jump(false), 350); // 멈춘 뒤 폴짝
@@ -3339,17 +3340,16 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     if (!hover && t > busyUntil) decide(t);
     if (hover) target = 0;
 
-    // 부드럽게 빨라지고 느려지기
-    speed += (target - speed) * Math.min(1, dt * 3);
-    if (speed < 0.3 && target === 0) speed = 0;
+    // 달리는 그림이 제자리에서 헛발질하지 않도록 속도는 바로 붙고 바로 멈춘다
+    speed = target;
     x += dir * speed * dt;
-    if (x <= minX) { x = minX; if (mode === "walk") { busyUntil = 0; } }
-    if (x >= maxX) { x = maxX; if (mode === "walk") { busyUntil = 0; } }
+    if (x <= minX && dir < 0) { x = minX; if (mode === "walk") { mode = "idle"; target = 0; speed = 0; busyUntil = t + 1200; } }
+    if (x >= maxX && dir > 0) { x = maxX; if (mode === "walk") { mode = "idle"; target = 0; speed = 0; busyUntil = t + 1200; } }
 
     // 걸음: 한 걸음(π)마다 한 번 튀고, 걸음마다 좌우로 번갈아 기울기
     // 움직이기 시작하면 달리는 그림으로, 거의 멈추면 서 있는 그림으로 (자주 깜빡이지 않게 간격을 둠)
-    if (runReady && !running && speed > 10) { running = true; img.src = RUN_SRC; runner.classList.add("is-running"); }
-    else if (running && speed < 4) { running = false; img.src = STAND_SRC; runner.classList.remove("is-running"); }
+    if (runReady && !running && speed > 0) { running = true; img.src = RUN_SRC; runner.classList.add("is-running"); }
+    else if (running && speed === 0) { running = false; img.src = STAND_SRC; runner.classList.remove("is-running"); }
     // 달리는 그림은 몸이 스스로 튀므로 통통 튀기·기울기는 끈다
     const walkAmt = running ? 0 : Math.min(1, speed / MAX_SPEED);
     phase += speed * dt * STEPS_PER_PX * Math.PI;
