@@ -2,11 +2,29 @@
   "_readme": "이 파일은 GitHub Actions가 한국산업안전보건공단 국내재해사례 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
   "source": "한국산업안전보건공단 산업안전포털 국내재해사례 (건설업)",
   "sourceUrl": "https://portal.kosha.or.kr",
-  "boardTotal": 6383,
+  "boardTotal": 6385,
   "scanned": 300,
   "count": 120,
-  "generatedAt": "2026-10-06T06:50:30.894295+00:00",
+  "generatedAt": "2026-10-07T06:25:32.394967+00:00",
   "items": [
+    {
+      "boardno": "20261006163144WAVLM4",
+      "title": "고소작업대 작업 중 추락",
+      "contents": "2026. 7. 00. (토) 09:30 경 경기도 김포시 소재 근린생활시설 신축공사 현장에서, 건축물 누수 하자 보수를 위해 시저형 고소작업대에 탑승한 상태로 잡고있던 판넬이 강풍으로 흔들리며 작업자가 작업대 난간을 넘어 떨어짐",
+      "type": "떨어짐",
+      "accidentDate": "2026-07",
+      "sortKey": "20260700",
+      "place": "경기 김포시",
+      "newsQuery": "김포 고소작업대 추락",
+      "registeredAt": "2026-10-06 16:31",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "고소작업대 작업 중 추락.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20261006163144WAVLM4/D0801000010001"
+        }
+      ]
+    },
     {
       "boardno": "2026093013064839KJUQ",
       "title": "금속 창호 설치 작업 중 떨어짐",
@@ -2154,24 +2172,6 @@
         {
           "name": "어스오거 전도방지대에 끼임.pdf",
           "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/2026012610502642LKSZ/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20251012140405ZSHVPW",
-      "title": "콘크리트 보 위에서 떨어짐",
-      "contents": "2024. 10. 09.(수) 08:15경 전남 구례군소재 OOOO에서 E/V실 옥상층 철골조립 작업을 위해, 콘크리트보 사이를 이동하던 중, E/V PIT층 바닥으로 떨어짐",
-      "type": "떨어짐",
-      "accidentDate": "2024-10-09",
-      "sortKey": "20241009",
-      "place": "전남 구례군",
-      "newsQuery": "구례 콘크리트 위 추락",
-      "registeredAt": "2025-10-12 14:04",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "콘크리트 보 위에서 떨어짐.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20251012140405ZSHVPW/D0801000010001"
         }
       ]
     }
