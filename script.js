@@ -1421,8 +1421,8 @@ function renderProcedures(categories) {
 
 loadProcedures();
 
-/* ---------------- 사고사례: 국내 건설업 재해사례 (kosha-cases.json 기반) ----------------
-   한국산업안전보건공단 국내재해사례 게시판에서 건설업만 골라
+/* ---------------- 사고사례: 국내 산업재해 사례 (kosha-cases.json 기반) ----------------
+   한국산업안전보건공단 국내재해사례 게시판의 전 업종 사례를 (건설업은 따로 표시)
    GitHub Actions(update-kosha-cases.yml)가 매일 kosha-cases.json으로 저장한다. */
 function accEscapeHtml(str) {
   if (str === undefined || str === null) return "";
@@ -1432,6 +1432,7 @@ function accEscapeHtml(str) {
 
 let accKosha = null;
 let accKoshaType = "전체";
+let accKoshaBiz = "전체";
 let accKoshaShown = 15;
 const ACC_KOSHA_STEP = 15;
 
@@ -1451,15 +1452,21 @@ async function loadAccidentCases() {
 
 function renderKoshaCases() {
   if (!accKosha || !(accKosha.items || []).length) {
-    return `<p class="skeleton">국내 건설업 재해사례를 준비 중입니다. (자동 수집이 처음 실행되면 표시됩니다)</p>`;
+    return `<p class="skeleton">국내 산업재해 사례를 준비 중입니다. (자동 수집이 처음 실행되면 표시됩니다)</p>`;
   }
-  // 사고 발생일 기준 최신 → 과거 (발생일이 본문에 없는 사례는 맨 뒤)
-  const items = [...accKosha.items].sort((a, b) =>
-    String(b.sortKey || "0").localeCompare(String(a.sortKey || "0")) ||
-    String(b.boardno || "").localeCompare(String(a.boardno || "")));
+  // 공단 게시 최신순 (공단은 사고 몇 달 뒤에 사례를 올리므로, 발생일순이면 최근 게시가 묻힌다)
+  const all = [...accKosha.items].map((it) => ({ ...it, business: it.business || "건설업" }))
+    .sort((a, b) => String(b.boardno || "").localeCompare(String(a.boardno || "")));
+  // 업종 버튼: 건설업을 맨 앞에
+  const bizCount = {};
+  all.forEach((it) => { bizCount[it.business] = (bizCount[it.business] || 0) + 1; });
+  const bizList = Object.keys(bizCount).sort((x, y) => (x === "건설업" ? -1 : y === "건설업" ? 1 : bizCount[y] - bizCount[x]));
+  if (accKoshaBiz !== "전체" && !bizCount[accKoshaBiz]) accKoshaBiz = "전체";
+  const items = accKoshaBiz === "전체" ? all : all.filter((it) => it.business === accKoshaBiz);
   const counts = {};
   items.forEach(it => { counts[it.type] = (counts[it.type] || 0) + 1; });
   const types = Object.keys(counts).sort((x, y) => counts[y] - counts[x]);
+  if (accKoshaType !== "전체" && !counts[accKoshaType]) accKoshaType = "전체";
   const filtered = accKoshaType === "전체" ? items : items.filter(it => it.type === accKoshaType);
   const shown = filtered.slice(0, accKoshaShown);
   const updated = accKosha.generatedAt
@@ -1469,22 +1476,31 @@ function renderKoshaCases() {
     <button type="button" class="kosha-chip${accKoshaType === label ? " is-active" : ""}"
       data-kosha-type="${accEscapeHtml(label)}">${accEscapeHtml(label)} <span>${n}</span></button>`;
 
+  const bizChip = (label, n) => `
+    <button type="button" class="kosha-chip kosha-biz-chip${label === "건설업" ? " is-cons" : ""}${accKoshaBiz === label ? " is-active" : ""}"
+      data-kosha-biz="${accEscapeHtml(label)}">${accEscapeHtml(label)} <span>${n}</span></button>`;
+
   return `
     <p class="kosha-source">
-      한국산업안전보건공단 산업안전포털 국내재해사례 중 <b>건설업</b> 최신 ${items.length}건${updated ? ` · ${updated} 갱신` : ""}
+      한국산업안전보건공단 산업안전포털 국내재해사례 최신 ${all.length}건 (건설업 <b>${bizCount["건설업"] || 0}</b>건)${updated ? ` · ${updated} 갱신` : ""}
     </p>
-    <div class="kosha-chips">
+    <div class="kosha-chips kosha-biz-row"><span class="kosha-row-label">업종</span>
+      ${bizChip("전체", all.length)}
+      ${bizList.map((b) => bizChip(b, bizCount[b])).join("")}
+    </div>
+    <div class="kosha-chips"><span class="kosha-row-label">재해 형태</span>
       ${chip("전체", items.length)}
       ${types.map(t => chip(t, counts[t])).join("")}
     </div>
     <ul class="kosha-list">
       ${shown.map(it => `
         <li>
-          <details class="kosha-case">
+          <details class="kosha-case${it.business === "건설업" ? " is-cons" : ""}">
             <summary>
+              <span class="kosha-biz${it.business === "건설업" ? " is-cons" : ""}">${accEscapeHtml(it.business)}</span>
               <span class="kosha-type kosha-type--${accEscapeHtml(it.type)}">${accEscapeHtml(it.type)}</span>
               <span class="kosha-title">${accEscapeHtml(it.title)}</span>
-              <span class="kosha-date">${accEscapeHtml(koshaDateLabel(it.accidentDate))}</span>
+              <span class="kosha-date" title="사고 발생일 · 공단 게시일">${accEscapeHtml(koshaDateLabel(it.accidentDate))}${it.registeredAt ? `<small>게시 ${accEscapeHtml(it.registeredAt.slice(5, 10).replace("-", "."))}</small>` : ""}</span>
             </summary>
             <p class="kosha-body">${accEscapeHtml(it.contents)}</p>
             ${koshaLinks(it)}
@@ -1495,7 +1511,7 @@ function renderKoshaCases() {
     ${filtered.length > accKoshaShown
       ? `<button type="button" class="kosha-more" data-kosha-more>더 보기 (${filtered.length - accKoshaShown}건 남음)</button>`
       : ""}
-    <p class="kosha-note">출처: 한국산업안전보건공단 <a href="${accEscapeHtml(accKosha.sourceUrl || "https://portal.kosha.or.kr")}" target="_blank" rel="noopener noreferrer">산업안전포털</a> 국내재해사례 · 공공데이터포털 오픈API · 매일 자동 갱신 · 날짜는 사고 발생일(일자가 가려진 사례는 연·월만 표시) · 상세 자료는 공단이 사례별로 첨부한 원문입니다</p>
+    <p class="kosha-note">출처: 한국산업안전보건공단 <a href="${accEscapeHtml(accKosha.sourceUrl || "https://portal.kosha.or.kr")}" target="_blank" rel="noopener noreferrer">산업안전포털</a> 국내재해사례 · 공공데이터포털 오픈API · 매일 자동 갱신 · 공단 게시 최신순 · 큰 날짜는 사고 발생일(일자가 가려진 사례는 연·월만), 작은 날짜는 공단 게시일 · 공단은 보통 사고 2~3개월 뒤에 사례를 올립니다 · 상세 자료는 공단이 사례별로 첨부한 원문입니다</p>
   `;
 }
 
@@ -1521,6 +1537,14 @@ function koshaLinks(it) {
 document.addEventListener("click", (e) => {
   const box = document.getElementById("accidentContainer");
   if (!box || !box.contains(e.target)) return;
+  const biz = e.target.closest("[data-kosha-biz]");
+  if (biz) {
+    accKoshaBiz = biz.dataset.koshaBiz;
+    accKoshaType = "전체";
+    accKoshaShown = ACC_KOSHA_STEP;
+    box.innerHTML = renderKoshaCases();
+    return;
+  }
   const chip = e.target.closest("[data-kosha-type]");
   if (chip) {
     accKoshaType = chip.dataset.koshaType;

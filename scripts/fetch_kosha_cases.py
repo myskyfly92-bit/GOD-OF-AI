@@ -1,7 +1,8 @@
 """
 한국산업안전보건공단_국내재해사례 게시판 정보 조회서비스에서
-최신 재해사례를 받아 '건설업'만 골라 kosha-cases.json으로 저장합니다.
-(안전 > 사고사례 탭의 '타사 사고사례'에 표시)
+최신 재해사례를 모든 업종(건설업·제조업·조선업 등) 받아 kosha-cases.json으로 저장합니다.
+각 사례에 업종(business)을 붙여, 사이트에서 건설업을 따로 표시·필터할 수 있게 합니다.
+(안전 > 사고사례 탭)
 
 참고: 설명서상 business(게시판 종류) 조건이 있지만 실제 서버는 이 조건을
 무시하고 전체 목록을 돌려줍니다. 그래서 최신순으로 여러 페이지를 받은 뒤
@@ -36,10 +37,9 @@ ATTACH_ENDPOINTS = [
     "http://apis.data.go.kr/B552468/disaster_attach_api02/Disaster_attach_api02",
 ]
 OUTPUT_PATH = "kosha-cases.json"
-TARGET_BUSINESS = "건설업"
 ROWS_PER_PAGE = 100
-MAX_PAGES = 3          # 최신 300건까지 훑기 (건설업 약 150건)
-MAX_ITEMS = 120        # 화면에 남길 최대 건수
+MAX_PAGES = 4          # 최신 400건까지 훑기 (모든 업종)
+MAX_ITEMS = 300        # 화면에 남길 최대 건수
 
 # 제목 끝말로 재해 유형을 분류합니다 (앞에 있는 것이 우선).
 TYPE_RULES = [
@@ -220,8 +220,7 @@ def main():
         items, board_total = fetch_page(key, page)
         scanned += len(items)
         for it in items:
-            if (it.get("business") or "").strip() != TARGET_BUSINESS:
-                continue
+            business = (it.get("business") or "").strip() or "기타"
             bno = (it.get("boardno") or "").strip()
             if not bno or bno in seen:
                 continue
@@ -241,6 +240,7 @@ def main():
                 sort_key = "0"  # 발생일이 본문에 없으면 맨 뒤로
             picked.append({
                 "boardno": bno,
+                "business": business,
                 "title": title,
                 "contents": contents,
                 "type": typ,
@@ -256,11 +256,11 @@ def main():
         time.sleep(0.5)
 
     if not picked:
-        print("[오류] 건설업 사례를 하나도 받지 못해 기존 파일을 유지합니다.", file=sys.stderr)
+        print("[오류] 사례를 하나도 받지 못해 기존 파일을 유지합니다.", file=sys.stderr)
         sys.exit(1)
 
-    # 사고 발생일 기준 최신 → 과거 (같은 날이면 최근 등록 먼저)
-    picked.sort(key=lambda x: (x["sortKey"], x["boardno"]), reverse=True)
+    # 공단 게시(등록) 최신순 — 공단은 사고 후 몇 달 뒤에 사례를 올리므로 발생일순으로 자르면 최근 게시가 빠질 수 있다
+    picked.sort(key=lambda x: x["boardno"], reverse=True)
     picked = picked[:MAX_ITEMS]
 
     # 사례별 첨부파일(상세 자료) — 새로 생긴 사례만 조회
@@ -282,17 +282,21 @@ def main():
 
     out = {
         "_readme": "이 파일은 GitHub Actions가 한국산업안전보건공단 국내재해사례 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
-        "source": "한국산업안전보건공단 산업안전포털 국내재해사례 (건설업)",
+        "source": "한국산업안전보건공단 산업안전포털 국내재해사례 (전 업종)",
         "sourceUrl": "https://portal.kosha.or.kr",
         "boardTotal": board_total,
         "scanned": scanned,
         "count": len(picked),
+        "businesses": sorted({it["business"] for it in picked}),
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "items": picked,
     }
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
-    print(f"[완료] {scanned}건 중 건설업 {len(picked)}건 저장 → {OUTPUT_PATH}")
+    by = {}
+    for it in picked:
+        by[it["business"]] = by.get(it["business"], 0) + 1
+    print(f"[완료] {scanned}건 중 {len(picked)}건 저장 → {OUTPUT_PATH} · 업종별 {by}")
 
 
 if __name__ == "__main__":

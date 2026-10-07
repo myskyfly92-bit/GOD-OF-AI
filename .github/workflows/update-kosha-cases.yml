@@ -24,7 +24,7 @@ jobs:
       - name: 의존성 설치
         run: pip install requests
 
-      - name: 국내재해사례(건설업) 수집 실행
+      - name: 국내재해사례(전 업종) 수집 실행
         env:
           KOSHA_API_KEY: ${{ secrets.KOSHA_API_KEY }}
           MOFA_API_KEY: ${{ secrets.MOFA_API_KEY }}
@@ -39,7 +39,7 @@ jobs:
             echo "변경사항 없음, 커밋 생략"
             exit 0
           fi
-          git commit -m "chore: 국내재해사례(건설업) 자동 업데이트"
+          git commit -m "chore: 국내재해사례 자동 업데이트"
           for i in 1 2 3 4 5; do
             if git pull --rebase origin main && git push origin main; then
               echo "푸시 성공"
