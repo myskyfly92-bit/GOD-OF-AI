@@ -3255,7 +3255,45 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   const shadow = runner.querySelector(".mascot-shadow");
   const bubble = runner.querySelector(".mascot-bubble");
 
-  const LINES = ["안전제일!", "보호구 착용 확인!", "오늘도 무재해!", "안전벨트 체결!", "물 자주 마셔요!", "작업 전 TBM!", "위험하면 멈추기!"];
+  // 대사 묶음: 주제별로 골고루, 같은 말이 연달아 나오지 않게 (아래 pickLine 참고)
+  const LINES = [
+    // 보호구
+    "안전모 턱끈까지 딸깍!", "안전대 고리는 내 생명줄!", "보안경 쓰셨죠?", "안전화 끈 다시 한 번!", "장갑은 작업에 맞는 걸로!",
+    "안전모는 패션이 아니라 생명!", "귀마개도 보호구예요!",
+    // 추락·고소
+    "사다리는 세 점 지지!", "개구부엔 덮개부터!", "비계 발판 고정 확인!", "높은 곳에선 고리 먼저!", "난간에 기대지 않기!",
+    // 장비·차량
+    "장비 회전반경 밖으로!", "후진 차량엔 유도자!", "인양물 밑으로 지나가지 않기!", "줄걸이 각도 확인!", "운전석 비우면 시동 OFF!",
+    // 전기·화기·밀폐
+    "전원 차단하고 잠금!", "젖은 손으로 전기 NO!", "용접 불티 주변 확인!", "소화기 위치 알고 계시죠?", "밀폐공간은 측정 먼저!",
+    // 습관·태도
+    "급할수록 돌아가요!", "아차! 싶으면 멈추기!", "모르면 묻고 하기!", "위험하면 작업중지 요청!", "작업 전 TBM 꼭!",
+    "아차사고도 신고해요!", "정리정돈이 안전의 시작!", "통로에 자재 두지 않기!", "서로서로 한 번 더 확인!",
+    // 건강
+    "물은 목마르기 전에!", "스트레칭 한 번 하고 가요!", "무거운 건 둘이서!", "허리 말고 무릎으로 들기!", "어지러우면 바로 클리닉!",
+    // 장난
+    "오늘도 무사히 퇴근 각!", "안전 순찰 중… 이상 무!", "제가 지켜보고 있어요 👀", "현장의 평화는 내가 지킨다!", "오늘 컨디션 몇 점이에요?",
+  ];
+  // 지금 상황에 맞춘 대사 (시간·요일·무재해 일수)
+  function contextLines() {
+    const out = [];
+    const now = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Baghdad" }));
+    const h = now.getHours(), d = now.getDay();
+    if (h >= 5 && h < 8) out.push("좋은 아침! TBM 하고 시작해요", "아침 체조로 몸 풀기!");
+    else if (h >= 8 && h < 11) out.push("오전 작업 힘내요!", "출근하자마자 보호구 점검!");
+    else if (h >= 11 && h < 13) out.push("곧 점심! 밥 먹고 꼭 쉬어요", "배고프다고 서두르지 않기!");
+    else if (h >= 13 && h < 16) out.push("오후엔 졸음 주의!", "제일 더운 시간, 그늘 휴식!");
+    else if (h >= 16 && h < 19) out.push("마무리 정리정돈!", "퇴근 직전이 제일 위험해요!");
+    else out.push("야간작업 조명 확인!", "늦게까지 고생 많아요!", "피곤하면 꼭 쉬어 가요");
+    if (d === 4) out.push("내일은 금요일! 끝까지 안전하게");
+    if (d === 5) out.push("금요일에도 근무 중이시군요, 화이팅!");
+    if (d === 6) out.push("한 주 시작! 안전하게 출발!");
+    const n = parseInt(String((document.getElementById("incidentFreeDays") || {}).textContent || "").replace(/[^\d]/g, ""), 10);
+    if (n > 0) out.push(`무재해 ${n}일째! 오늘도 이어가요`, n % 10 === 0 ? `무재해 ${n}일 달성! 🎉` : `${Math.ceil(n / 10) * 10}일까지 ${Math.ceil(n / 10) * 10 - n}일!`);
+    return out;
+  }
+  // 눌렀을 때 대답
+  const POKES = ["앗, 간지러워요!", "저 순찰 중이에요!", "부르셨어요? 안전 이상 무!", "한 번 더 누르면… 안전교육!", "충성! 🫡", "헤헤, 오늘도 안전!"];
   const MAX_SPEED = 55;      // px/초 (달리는 그림에 맞춘 속도)
   // 달릴 때는 옆모습 달리기 움직임(투명 배경 움직이는 그림), 멈추면 원래 마스코트 그림
   let STAND_SRC = home.getAttribute("src");
@@ -3284,6 +3322,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     img.src = actionUrl;
     mode = "action"; target = 0; speed = 0;
     busyUntil = t + ACTION_MS + 1500;          // 경례 자세로 잠깐 서 있다가
+    setTimeout(() => say(SALUTES[saluteI++ % SALUTES.length]), 6600); // 경례하면서 한마디
     setTimeout(() => {                          // 정면으로 선 그림으로
       acting = false;
       runner.classList.remove("is-acting");
@@ -3312,17 +3351,36 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   }
 
   // 날씨에 따라 다른 대사를 쓰게 (window.hseMascotLines 가 있으면 70% 확률로 그쪽에서 고름)
+  // 대사 고르기: 날씨(있으면 35%) → 지금 상황(25%) → 나머지는 큰 묶음에서 '카드 섞기'로 (다 쓸 때까지 같은 말 안 나옴)
+  let bag = [];
+  const recent = [];
+  const fresh = (arr) => arr.filter((t) => !recent.includes(t));
   const pickLine = () => {
-    const w = window.hseMascotLines;
-    const pool = w && w.length && Math.random() < 0.7 ? w : LINES;
-    return pool[Math.floor(Math.random() * pool.length)];
+    const w = fresh(window.hseMascotLines || []), c = fresh(contextLines());
+    const r = Math.random();
+    let line;
+    if (w.length && r < 0.35) line = w[Math.floor(Math.random() * w.length)];
+    else if (c.length && r < 0.6) line = c[Math.floor(Math.random() * c.length)];
+    else {
+      if (!bag.length) bag = LINES.slice().sort(() => Math.random() - 0.5);
+      line = bag.pop();
+      if (recent.includes(line) && bag.length) line = bag.pop();
+    }
+    recent.push(line); if (recent.length > 8) recent.shift();
+    return line;
   };
+  let pokeI = Math.floor(Math.random() * 6);
+  const SALUTES = ["충성! 안전 이상 무!", "보고합니다! 현장 이상 무!", "오늘도 무재해 경례!", "시계 앞 순찰 완료!", "경례! 보호구 점검 끝!"];
+  let saluteI = Math.floor(Math.random() * 5);
   function say(text) {
     bubble.textContent = text;
+    bubble.classList.remove("bye");
+    bubble.hidden = true; void bubble.offsetWidth;  // 다시 말할 때도 톡 튀어나오게
     bubble.hidden = false;
-    bubble.classList.toggle("left", facing < 0 && x > minX + 120);
-    clearTimeout(say.t);
-    say.t = setTimeout(() => { bubble.hidden = true; }, 2600);
+    // 오른쪽 끝(시계 쪽)에서는 말풍선이 시계를 가리지 않게 왼쪽으로
+    bubble.classList.toggle("left", x > maxX - 160);
+    clearTimeout(say.t); clearTimeout(say.t2);
+    say.t = setTimeout(() => { bubble.classList.add("bye"); say.t2 = setTimeout(() => { bubble.hidden = true; }, 250); }, 2800);
   }
 
   function jump(big) {
@@ -3368,7 +3426,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     // 달리는 그림이 제자리에서 헛발질하지 않도록 속도는 바로 붙고 바로 멈춘다
     speed = target;
     x += dir * speed * dt;
-    if (x <= minX && dir < 0) { x = minX; if (mode === "walk") { mode = "idle"; target = 0; speed = 0; busyUntil = t + 1200; } }
+    if (x <= minX && dir < 0) { x = minX; if (mode === "walk") { mode = "idle"; target = 0; speed = 0; busyUntil = t + 3200; if (Math.random() < 0.75) setTimeout(() => say(pickLine()), 300); } }
     if (x >= maxX && dir > 0) { x = maxX; if (mode === "walk") { if (!playAction(t)) { mode = "idle"; target = 0; speed = 0; busyUntil = t + 1200; } } }
 
     // 걸음: 한 걸음(π)마다 한 번 튀고, 걸음마다 좌우로 번갈아 기울기
@@ -3395,7 +3453,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   window.hseMascotSay = (t) => say(t);
   runner.addEventListener("mouseenter", () => { hover = true; });
   runner.addEventListener("mouseleave", () => { hover = false; busyUntil = performance.now() + 800; });
-  runner.addEventListener("click", () => { say(pickLine()); }); // 누르면 한마디 (폴짝 뛰기는 뺐다)
+  runner.addEventListener("click", () => { say(POKES[pokeI++ % POKES.length]); }); // 누르면 대답 (폴짝 뛰기는 뺐다)
 
   const start = () => { bounds(); busyUntil = performance.now() + 1500; requestAnimationFrame(tick); };
   if (home.complete) start(); else home.addEventListener("load", start, { once: true });
