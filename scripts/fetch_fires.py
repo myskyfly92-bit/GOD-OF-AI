@@ -4,7 +4,7 @@ NASA FIRMS(위성 화재 감지) API로 이라크 일대의 화재·열 이상 �
 - 위성(VIIRS 3기 + MODIS)이 이라크 상공을 지날 때 감지한 지점이라, 보통 몇 시간 전 상황입니다.
 - 이라크는 유전 가스 플레어(가스를 태우는 불꽃)가 매우 많아서, 최근 5일 중 3일 이상
   같은 자리(약 2km 이내)에서 감지된 지점은 "상시 열원(가스 플레어 추정)"으로 구분합니다.
-- 비스마야 현장 반경 50km 안의 최근 24시간 신규 화재는 따로 요약합니다.
+- 비스마야 현장 반경 10km 안의 최근 24시간 신규 화재는 따로 요약합니다.
 
 사전 준비:
     https://firms.modaps.eosdis.nasa.gov/api/map_key/ 에서 무료 MAP_KEY 발급
@@ -34,7 +34,7 @@ CELL_DEG = 0.02        # 같은 자리 판단 격자 (약 2km)
 
 BISMAYAH_LAT = 33.193
 BISMAYAH_LON = 44.618
-NEARBY_KM = 50
+NEARBY_KM = 10
 
 URL = "https://firms.modaps.eosdis.nasa.gov/api/area/csv/{key}/{source}/{area}/{days}"
 

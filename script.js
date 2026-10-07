@@ -2671,9 +2671,9 @@ async function initFireMap() {
     console.error(err);
   }
 
-  // 비스마야 현장 + 반경 50km
+  // 비스마야 현장 + 경보 반경 10km
   L.circle([BISMAYAH_LAT, BISMAYAH_LON], {
-    radius: 50000, color: "#35d0c0", weight: 1.5, dashArray: "6 6", fill: true, fillOpacity: 0.05, interactive: false,
+    radius: FIRE_ALERT_KM * 1000, color: "#35d0c0", weight: 1.5, dashArray: "6 6", fill: true, fillOpacity: 0.05, interactive: false,
   }).addTo(fireMapInstance);
   L.marker([BISMAYAH_LAT, BISMAYAH_LON], {
     icon: L.divIcon({ className: "map-label-wrap", html: '<span class="site-star">★</span>', iconSize: [0, 0] }),
@@ -2689,6 +2689,7 @@ async function initFireMap() {
   loadFires();
 }
 
+const FIRE_ALERT_KM = 10;   // 화재 경보 반경 (현장 기준)
 async function loadFires() {
   const meta = document.getElementById("fireMeta");
   const alertBox = document.getElementById("fireAlert");
@@ -2746,7 +2747,10 @@ function renderFires(data) {
   }
 
   if (alertBox) {
-    const near = data.nearby || { count: 0, closest: [], radiusKm: 50 };
+    // 경보는 현장 반경 10km 안만 (수집 파일의 반경과 상관없이 여기서 다시 거른다)
+    const nearList = (data.fires || []).filter((f) => !f.persistent && f.hoursAgo <= 24 && f.distanceKm <= FIRE_ALERT_KM)
+      .sort((a, b) => a.distanceKm - b.distanceKm);
+    const near = { count: nearList.length, closest: nearList, radiusKm: FIRE_ALERT_KM };
     if (near.count > 0) {
       const c = near.closest[0];
       alertBox.className = "fire-alert fire-alert-warn";
@@ -4003,7 +4007,8 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const reasons = [];
     const [kd, fi] = await Promise.all([fetchJson("kdca-infectious.json"), fetchJson("fires.json")]);
     if (kd && kd.grade1Recent && kd.grade1Recent.length) reasons.push(`제1급 감염병 신고: ${kd.grade1Recent.map((g) => g.name).join(", ")}`);
-    if (fi && fi.nearby && fi.nearby.count > 0) reasons.push(`현장 ${fi.nearby.radiusKm}km 내 신규 화재 ${fi.nearby.count}건`);
+    const fiNear = fi ? (fi.fires || []).filter((f) => !f.persistent && f.hoursAgo <= 24 && f.distanceKm <= FIRE_ALERT_KM).length : 0;
+    if (fiNear > 0) reasons.push(`현장 ${FIRE_ALERT_KM}km 내 신규 화재 ${fiNear}건`);
     const r = wx.raw || {};
     if (r.gust > 10) reasons.push(`순간풍속 ${r.gust.toFixed(1)}m/s (크레인 작업 제한)`);
     if (r.dust > 150) reasons.push("모래폭풍 수준 먼지");
@@ -4200,7 +4205,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const MAX_WAIT = 90000;
     const load = document.createElement("div");
     load.className = "hse-intro-load";
-    load.innerHTML = `<div class="hil-bar"><i></i></div><div class="hil-txt">인트로 준비 중… <b>0%</b></div>`;
+    load.innerHTML = `<div class="hil-bar"><i></i></div><div class="hil-txt">최적화 중… <b>0%</b></div>`;
     el.appendChild(load);
     const yearsN = Math.max(1, new Date().getFullYear() - CONSTRUCTION_YEAR + 1);
     const total = (INTRO_SATELLITE ? yearsN : 0) + 3;   // 위성사진 해마다 + 지구본 + 인트로 사진 + 페이지
@@ -4313,7 +4318,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     { cls: "bg-env", label: "현장 날씨", text: () => { const r = wx.raw || {}; return r.temp != null ? `현재 <b>${Math.round(r.temp)}℃</b> · 바람 <b>${(r.wind || 0).toFixed(1)}</b>m/s · 순간 <b>${(r.gust || 0).toFixed(1)}</b>m/s${r.dust != null ? ` · 모래먼지 <b>${Math.round(r.dust)}</b>㎍/㎥` : ""}` : "현장 날씨 확인 중"; } },
     { cls: "bg-safety", label: "국내 중대재해", text: () => saCache ? `${saCache.period} 사고사망자 <b>${(saCache.byIndustry || []).reduce((a, x) => a + (x.total || 0), 0)}</b>명` : "국내 중대재해 현황" },
     { cls: "bg-health", label: "국내 감염병", text: () => kdcaCache ? `${kdcaCache.baseWeek.label} 법정감염병 <b>${kdcaCache.totalBase.toLocaleString()}</b>건 · 제1급 <b>${kdcaCache.grades["제1급"].base}</b>건` : "국내 감염병 현황" },
-    { cls: "bg-fire", label: "화재 현황", text: () => fireCache && fireCache.nearby ? `현장 ${fireCache.nearby.radiusKm}km 내 최근 24시간 신규 화재 <b>${fireCache.nearby.count}</b>건` : "이라크 화재 현황" },
+    { cls: "bg-fire", label: "화재 현황", text: () => fireCache && fireCache.fires ? `현장 ${FIRE_ALERT_KM}km 내 최근 24시간 신규 화재 <b>${fireCache.fires.filter((f) => !f.persistent && f.hoursAgo <= 24 && f.distanceKm <= FIRE_ALERT_KM).length}</b>건` : "이라크 화재 현황" },
     { cls: "bg-etc", label: "해상·항공", text: () => "중동 상공 항공기 · 걸프만 선박 실시간 모니터링" },
   ];
   const kiosk = {

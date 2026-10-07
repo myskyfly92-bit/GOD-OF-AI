@@ -3196,3 +3196,5 @@ body.hg-running .hg-again { display: none; }
 .clinic-unlock button { font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; color: #0a0e13; background: var(--cyan); border: none; border-radius: 8px; padding: 6px 14px; }
 .clinic-unlock-msg { font-size: 12px; color: #ff7e79; min-height: 1em; }
 .clinic-unlock[hidden], .clinic-table-wrap[hidden], .clinic-lock-btn[hidden], .clinic-add-btn[hidden] { display: none !important; }
+/* 인트로가 나오는 동안 법령 도우미 숨기기 */
+body:has(.hse-intro) .ai-assist { display: none; }
