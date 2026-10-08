@@ -2967,6 +2967,16 @@ html:not(.page-ready) main.grid { opacity: 0; }
   box-shadow: 0 18px 48px rgba(0,0,0,0.55); overflow: hidden;
 }
 .ai-panel[hidden] { display: none; }
+.ai-panel { position: relative; }
+.ai-head-btns { display: inline-flex; gap: 4px; align-items: center; }
+.ai-size { border: 1px solid var(--border-soft); background: transparent; color: var(--text-muted); border-radius: 6px; width: 28px; height: 28px; font-size: 15px; cursor: pointer; }
+.ai-size:hover { color: var(--cyan); border-color: var(--cyan); }
+/* 왼쪽 위 모서리 크기 조절 손잡이 */
+.ai-grip { position: absolute; left: 0; top: 0; width: 18px; height: 18px; cursor: nwse-resize; z-index: 3; touch-action: none; }
+.ai-grip::before { content: ""; position: absolute; left: 4px; top: 4px; width: 9px; height: 9px; border-left: 2px solid var(--text-dim); border-top: 2px solid var(--text-dim); border-radius: 3px 0 0 0; opacity: .7; }
+.ai-grip:hover::before { border-color: var(--cyan); opacity: 1; }
+.ai-resizing, .ai-resizing * { user-select: none; cursor: nwse-resize !important; }
+@media (max-width: 700px) { .ai-grip, .ai-size { display: none; } }
 .ai-head {
   display: flex; align-items: flex-start; justify-content: space-between; gap: 10px;
   padding: 14px 16px 12px; border-bottom: 1px solid var(--border-soft); background: var(--panel-2);

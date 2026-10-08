@@ -5859,8 +5859,9 @@ async function clinicCall(action, payload) {
           <b>HSE 법령 도우미</b>
           <small>한국 산업안전보건법령 · 이라크 노동·환경법 근거로 답해요</small>
         </div>
-        <button type="button" class="ai-close" aria-label="닫기">✕</button>
+        <span class="ai-head-btns"><button type="button" class="ai-size" title="창 크기 바꾸기 (작게·중간·크게)" aria-label="창 크기 바꾸기">⤢</button><button type="button" class="ai-close" aria-label="닫기">✕</button></span>
       </header>
+      <div class="ai-grip" title="끌어서 창 크기 조절" aria-hidden="true"></div>
       <div class="ai-log" aria-live="polite">
         <div class="ai-msg ai-bot ai-hello">
           <p>질문하거나 📷 현장 사진을 올려 보세요. 관련 조문을 찾아 <b>한국 법</b>과 <b>이라크 법</b>을 나란히 알려 드려요.</p>
@@ -5888,6 +5889,39 @@ async function clinicCall(action, payload) {
   }
   $(".ai-fab").onclick = () => open(panel.hidden);
   $(".ai-close").onclick = () => open(false);
+
+  // 창 크기: 왼쪽 위 모서리를 끌거나 ⤢ 버튼으로 작게·중간·크게 (이 기기에 기억)
+  const SIZE_KEY = "aiPanelSize";
+  const PRESETS = [[420, 640], [640, 760], [900, 9999]];
+  const clampSize = (w, h) => [Math.max(340, Math.min(w, innerWidth - 36)), Math.max(380, Math.min(h, innerHeight - 40))];
+  function setSize(w, h, save) {
+    if (innerWidth <= 700) { panel.style.width = panel.style.height = ""; return; }
+    [w, h] = clampSize(w, h);
+    panel.style.width = w + "px"; panel.style.height = h + "px";
+    if (save) { try { localStorage.setItem(SIZE_KEY, JSON.stringify([w, h])); } catch (e) {} }
+  }
+  try { const v = JSON.parse(localStorage.getItem(SIZE_KEY) || "null"); if (Array.isArray(v)) setSize(v[0], v[1], false); } catch (e) {}
+  $(".ai-size").onclick = () => {
+    const r = panel.getBoundingClientRect();
+    const i = PRESETS.findIndex(([w]) => w > r.width + 10);
+    const [w, h] = PRESETS[i < 0 ? 0 : i];
+    setSize(w, h, true);
+  };
+  $(".ai-grip").addEventListener("pointerdown", (e) => {
+    if (innerWidth <= 700) return;
+    e.preventDefault();
+    const r0 = panel.getBoundingClientRect(), x0 = e.clientX, y0 = e.clientY;
+    const grip = e.currentTarget; grip.setPointerCapture(e.pointerId);
+    root.classList.add("ai-resizing");
+    const move = (ev) => setSize(r0.width + (x0 - ev.clientX), r0.height + (y0 - ev.clientY), false); // 오른쪽 아래가 고정이라 왼쪽·위로 끌면 커진다
+    const up = () => {
+      grip.removeEventListener("pointermove", move); grip.removeEventListener("pointerup", up); grip.removeEventListener("pointercancel", up);
+      root.classList.remove("ai-resizing");
+      const r = panel.getBoundingClientRect(); setSize(r.width, r.height, true);
+    };
+    grip.addEventListener("pointermove", move); grip.addEventListener("pointerup", up); grip.addEventListener("pointercancel", up);
+  });
+  addEventListener("resize", () => { if (panel.style.width) { const r = panel.getBoundingClientRect(); setSize(r.width, r.height, false); } });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) open(false); });
 
   root.querySelectorAll(".ai-sugs button").forEach((b) => b.onclick = () => { ta.value = b.textContent; send(); });
