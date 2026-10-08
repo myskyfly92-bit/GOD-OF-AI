@@ -9,6 +9,7 @@ const fs = require("fs");
 const OUT = "bismayah-news.json";
 const KEEP_DAYS = 60;   // 이 기간 안의 기사만 남긴다
 const MAX_ITEMS = 60;   // 최대 몇 건까지 보여 줄지
+const BODY_PER_RUN = 30; // 한 번 실행할 때 본문을 새로 가져올 최대 건수
 
 const SEARCHES = [
   { lang: "ko", q: "비스마야 when:30d", hl: "ko", gl: "KR", ceid: "KR:ko" },
@@ -58,7 +59,7 @@ async function searchNews({ lang, q, hl, gl, ceid }) {
 }
 
 async function translateGtx(text, from) {
-  const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${from}&tl=ko&dt=t&q=${encodeURIComponent(text.slice(0, 500))}`;
+  const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${from}&tl=ko&dt=t&q=${encodeURIComponent(text.slice(0, 900))}`;
   const res = await fetch(url, { headers: UA });
   if (!res.ok) throw new Error("gtx " + res.status);
   const j = await res.json();
@@ -74,6 +75,68 @@ async function translateMyMemory(text, from) {
 async function translate(text, from) {
   try { const t = await translateGtx(text, from); if (t) return t; } catch (e) { /* 아래로 */ }
   try { return await translateMyMemory(text, from); } catch (e) { return ""; }
+}
+
+// 구글 뉴스 주소(news.google.com/rss/articles/…)를 실제 기사 주소로 바꾼다
+async function resolveGoogle(link) {
+  const m = String(link).match(/news\.google\.com\/(?:rss\/)?articles\/([^?/]+)/);
+  if (!m) return link;
+  const id = m[1];
+  try {
+    const page = await (await fetch(`https://news.google.com/articles/${id}`, { headers: UA })).text();
+    const sg = (page.match(/data-n-a-sg="([^"]+)"/) || [])[1], ts = (page.match(/data-n-a-ts="([^"]+)"/) || [])[1];
+    if (!sg || !ts) return link;
+    const req = [[["Fbv4je", JSON.stringify(["garturlreq", [["X", "X", ["X", "X"], null, null, 1, 1, "US:en", null, 1, null, null, null, null, null, 0, 1], "X", "X", 1, [1, 1, 1], 1, 1, null, 0, 0, null, 0], id, Number(ts), sg]), null, "generic"]]];
+    const res = await fetch("https://news.google.com/_/DotsSplashUi/data/batchexecute", {
+      method: "POST",
+      headers: { ...UA, "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+      body: "f.req=" + encodeURIComponent(JSON.stringify(req)),
+    });
+    const txt = await res.text();
+    const part = txt.split("\n\n")[1];
+    const url = JSON.parse(JSON.parse(part)[0][2])[1];
+    return /^https?:\/\//.test(url) ? url : link;
+  } catch (e) {
+    return link;
+  }
+}
+
+// 기사 페이지에서 본문 앞부분(요약 + 첫 문단 몇 개)만 뽑는다 (전문이 아니라 미리보기용 발췌)
+async function articleText(url) {
+  try {
+    const ctl = new AbortController(); const tm = setTimeout(() => ctl.abort(), 15000);
+    const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36", "Accept-Language": "ko,ar;q=0.8,en;q=0.7" }, redirect: "follow", signal: ctl.signal });
+    clearTimeout(tm);
+    if (!res.ok) return "";
+    let html = await res.text();
+    const clean = (t) => decodeEntities(String(t).replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+    const og = clean((html.match(/<meta[^>]+(?:property|name)=["'](?:og:description|description)["'][^>]+content=["']([^"']+)/i) || [])[1] || "");
+    html = html.replace(/<(script|style|nav|header|footer|aside|form|noscript|figure)[\s\S]*?<\/\1>/gi, " ");
+    const art = html.match(/<article[\s\S]*?<\/article>/i);
+    if (art) html = art[0];
+    const paras = (html.match(/<p[^>]*>[\s\S]*?<\/p>/gi) || []).map(clean).filter((t) =>
+      t.length > 50 && /[.!?؟。다]/.test(t) && t.split(" ").length >= 7 &&
+      !/cookie|copyright|©|subscribe|javascript|all rights reserved|جميع الحقوق|무단 ?전재|재배포 ?금지|기자\s*[a-z0-9._%+-]+@/i.test(t));
+    let text = og && og.length > 40 ? og : "";
+    for (const t of paras) {
+      if (text.length > 800) break;
+      if (!text.includes(t.slice(0, 40))) text += (text ? "\n" : "") + t;
+    }
+    return text.slice(0, 1000);
+  } catch (e) {
+    return "";
+  }
+}
+
+// 긴 글 번역: 문단별로 잘라서 번역 (주소 길이 제한 때문에)
+async function translateLong(text, from) {
+  const out = [];
+  for (const para of text.split("\n")) {
+    if (!para.trim()) continue;
+    out.push((await translate(para, from)) || "");
+    await sleep(250);
+  }
+  return out.filter(Boolean).join("\n");
 }
 
 function loadPrev() {
@@ -113,22 +176,40 @@ async function main() {
     return true;
   }).sort((a, b) => (b.date || "").localeCompare(a.date || "")).slice(0, MAX_ITEMS);
 
-  let translated = 0;
+  let translated = 0, bodies = 0;
+  const tkey = (t) => String(t || "").replace(/[\s\-–—|:"'«»]+/g, "").slice(0, 50);
+  const prevByLink = new Map(prev.map((n) => [n.link, n]));
+  const prevByTitle = new Map(prev.map((n) => [tkey(n.title), n]));
   for (const n of list) {
     delete n._desc;
-    if (n.lang === "ko") { n.titleKo = n.title; continue; }
-    n.titleKo = n.titleKo || prevKo.get(n.link) || "";
-    if (!n.titleKo) {
-      n.titleKo = await translate(n.title, n.lang);
-      if (n.titleKo) translated++;
-      await sleep(350);
+    const old = prevByLink.get(n.link) || prevByTitle.get(tkey(n.title)) || {};
+    if (n.lang === "ko") n.titleKo = n.title;
+    else {
+      n.titleKo = n.titleKo || old.titleKo || prevKo.get(n.link) || "";
+      if (!n.titleKo) {
+        n.titleKo = await translate(n.title, n.lang);
+        if (n.titleKo) translated++;
+        await sleep(350);
+      }
     }
+    // 본문 미리보기: 예전에 가져온 게 있으면 그대로, 없으면 이번에 가져온다 (한 번에 최대 BODY_PER_RUN건)
+    if (old.body !== undefined && old.tried) { n.url = old.url; n.body = old.body; n.bodyKo = old.bodyKo; n.tried = true; continue; }
+    if (bodies >= BODY_PER_RUN) continue;
+    bodies++;
+    n.url = await resolveGoogle(n.link);
+    n.body = n.url !== n.link || !/news\.google\.com/.test(n.url) ? await articleText(n.url) : "";
+    n.bodyKo = n.body ? (n.lang === "ko" ? n.body : await translateLong(n.body, n.lang)) : "";
+    n.tried = true;
+    console.log(`  본문 ${n.body ? n.body.length + "자" : "못 가져옴"} · ${n.url.slice(0, 80)}`);
+    await sleep(500);
   }
+  // 바로 가는 원문 주소가 있으면 그걸 링크로 쓴다
+  list.forEach((n) => { if (n.url && !/news\.google\.com/.test(n.url)) n.link = n.url; });
 
   const out = { generatedAt: new Date().toISOString(), items: list };
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n", "utf-8");
   const by = (l) => list.filter((n) => n.lang === l).length;
-  console.log(`저장 완료: 총 ${list.length}건 (한국어 ${by("ko")} · 아랍어 ${by("ar")} · 영어 ${by("en")}) · 새로 번역 ${translated}건`);
+  console.log(`저장 완료: 총 ${list.length}건 (한국어 ${by("ko")} · 아랍어 ${by("ar")} · 영어 ${by("en")}) · 새로 번역 ${translated}건 · 본문 있음 ${list.filter((n) => n.body).length}건`);
 }
 
 main().catch((err) => { console.error(err); process.exit(1); });

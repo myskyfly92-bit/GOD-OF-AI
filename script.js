@@ -6231,7 +6231,7 @@ async function clinicCall(action, payload) {
       { go: "view-iraq-cd", sel: ".cd-intro-panel", text: `<b>이라크 민방위(소방) 소식</b>이에요. 위에는 민방위총국 소개와 연락처, 아래에는 현지 화재·구조 소식이 있어요.` },
     ]},
     { id: "etc", title: "기타", icon: "🧩", steps: [
-      { go: "view-bismayah", sel: "#bnewsList", text: `<b>기타 › 비스마야 소식</b>이에요. <b>비스마야</b>가 나온 뉴스를 6시간마다 모아서 왼쪽은 <b>국내 뉴스</b>(한국 언론), 오른쪽은 <b>이라크 뉴스</b>(현지 아랍어·영어 기사, 제목 한국어 번역)로 나눠 보여 줘요. 누르면 원문 기사가 열려요.` },
+      { go: "view-bismayah", sel: "#bnewsList", text: `<b>기타 › 비스마야 소식</b>이에요. <b>비스마야</b>가 나온 뉴스를 6시간마다 모아서 왼쪽은 <b>국내 뉴스</b>(한국 언론), 오른쪽은 <b>이라크 뉴스</b>(현지 아랍어·영어 기사, 제목 한국어 번역)로 나눠 보여 줘요. 기사를 누르면 그 자리에서 <b>본문 미리보기</b>가 펼쳐지고, 맨 아래 링크로 전체 기사를 볼 수 있어요.` },
       { go: "view-ships", sel: ".air-switch", text: `<b>해상·항공 현황</b>이에요. <b>실시간 항공 지도</b>와 공항·항공기 <b>요약 지도</b>를 바꿔 볼 수 있어요. 아래로 내리면 <b>걸프만 선박 현황</b>도 있어요. 출장·자재 운송 일정 볼 때 참고하세요.` },
       { go: "view-global", sel: "#globalFilter", text: `<b>해외 현장</b>이에요. 국내 건설사의 해외 현장을 지도와 표로 보여 줘요. 위 버튼으로 회사를 골라 볼 수 있어요.` },
       { go: "view-embassy", sel: "#view-embassy .embassy-panel", text: `<b>중동 각국 대사관 공지</b>예요. 이라크와 주변국 <b>대한민국 대사관의 안전공지</b>를 매일 모아요. 버튼으로 나라와 공지 종류를 고르고, 제목을 누르면 원문이 열려요.` },
@@ -7054,18 +7054,37 @@ function hseWeldWord(host, wordEl, onDone) {
     const d = new Date(iso); if (isNaN(d)) return "";
     return new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Baghdad", year: "numeric", month: "2-digit", day: "2-digit" }).format(d).replace(/\.\s?/g, ".").replace(/\.$/, "");
   };
+  // 기사 카드: 누르면 그 자리에서 본문 미리보기가 펼쳐진다 (원문 링크는 맨 아래 작게)
+  const paras = (t) => String(t || "").split("\n").filter(Boolean).map((p) => `<p>${escapeHtml(p)}</p>`).join("");
   const card = (n) => {
     const orig = n.titleKo && n.titleKo !== n.title;
-    return `<a class="bnews-item" href="${escapeHtml(n.link)}" target="_blank" rel="noopener noreferrer">
-      <div class="bnews-meta">${LANG[n.lang] ? `<span class="bnews-lang l-${escapeHtml(n.lang)}">${LANG[n.lang]}</span>` : ""}<span class="bnews-date">${escapeHtml(fmt(n.date))}</span><span class="bnews-src">${escapeHtml(n.source || "")}</span></div>
+    const ar = n.lang === "ar" ? 'dir="rtl" lang="ar"' : "";
+    const body = n.bodyKo || n.body;
+    return `<div class="bnews-item" tabindex="0" role="button" aria-expanded="false">
+      <div class="bnews-meta">${LANG[n.lang] ? `<span class="bnews-lang l-${escapeHtml(n.lang)}">${LANG[n.lang]}</span>` : ""}<span class="bnews-date">${escapeHtml(fmt(n.date))}</span><span class="bnews-src">${escapeHtml(n.source || "")}</span><span class="bnews-caret">▾</span></div>
       <div class="bnews-title">${escapeHtml(n.titleKo || n.title)}</div>
-      ${orig ? `<div class="bnews-orig" ${n.lang === "ar" ? 'dir="rtl" lang="ar"' : ""}>${escapeHtml(n.title)}</div>` : ""}
-    </a>`;
+      ${orig ? `<div class="bnews-orig" ${ar}>${escapeHtml(n.title)}</div>` : ""}
+      <div class="bnews-body">
+        ${body ? `<div class="bnews-text">${paras(body)}</div>` : `<p class="bnews-none">본문 미리보기를 가져오지 못한 기사예요.</p>`}
+        ${n.lang !== "ko" && n.body && n.bodyKo ? `<details class="bnews-src-text"><summary>원문(${LANG[n.lang]}) 보기</summary><div ${ar}>${paras(n.body)}</div></details>` : ""}
+        <a class="bnews-link" href="${escapeHtml(n.link)}" target="_blank" rel="noopener noreferrer">${body ? "기사 전체 보기" : "원문 기사 열기"} ↗</a>
+      </div>
+    </div>`;
   };
   function fill(box, countEl, L) {
     document.getElementById(countEl).textContent = `${L.length}건`;
     box.innerHTML = L.length ? L.map(card).join("") : `<p class="skeleton">최근 60일 동안 기사가 없어요</p>`;
   }
+  const toggle = (it) => { const o = it.classList.toggle("open"); it.setAttribute("aria-expanded", o); };
+  [koBox, iqBox].forEach((box) => {
+    box.addEventListener("click", (e) => {
+      if (e.target.closest("a, details")) return; // 링크·원문 펼치기는 그대로
+      const it = e.target.closest(".bnews-item"); if (it) toggle(it);
+    });
+    box.addEventListener("keydown", (e) => {
+      if ((e.key === "Enter" || e.key === " ") && e.target.classList.contains("bnews-item")) { e.preventDefault(); toggle(e.target); }
+    });
+  });
   async function load() {
     if (items) return;
     try {
