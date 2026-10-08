@@ -6027,7 +6027,7 @@ async function clinicCall(action, payload) {
   const CH = [
     { id: "basic", title: "기본 화면과 도구", icon: "🧭", steps: [
       { go: "view-dashboard", sel: null, text: `이 장에서는 화면 맨 위와 어디서나 쓰는 도구들을 알려 드릴게요.<br>안내 중에는 <b>다음 · 이전</b> 버튼이나 키보드 <b>← →</b> 로 넘기고, <b>Esc</b> 나 오른쪽 위 <b>✕</b> 로 언제든 끝낼 수 있어요.` },
-      { sel: ".brand-text", text: `맨 위 <b>배너</b>예요. 가끔 제가 이 위를 달려가요. 오른쪽 시계 앞에 도착하면 <b>경례</b>를 하고, 안전 한마디를 해요.<br>달리는 저를 <b>눌러 보면</b> 말을 걸어요!` },
+      { sel: ".topbar", text: `맨 위 <b>배너</b>예요. 가끔 제가 이 위를 달려가요. 오른쪽 시계 앞에 도착하면 <b>경례</b>를 하고, 안전 한마디를 해요.<br>달리는 저를 <b>눌러 보면</b> 말을 걸어요!` },
       { sel: ".clock-block", text: `<b>시계</b>예요. 큰 글씨가 <b>바그다드 현지 시각</b>, 아래 작은 글씨가 <b>한국 시각</b>(6시간 빠름)이에요. 본사와 통화할 때 참고하세요.` },
       { sel: ".group-bar", text: `여기가 <b>대분류 메뉴</b>예요: 종합현황 · 안전 · 보건 · 환경 · 소방 · 기타.<br>하나를 누르면 바로 아래에 <b>소분류 탭</b> 줄이 나타나고, 마지막으로 보던 소분류를 기억해요.` },
       { sel: "#langSwitcher", text: `<b>언어 선택</b>이에요. <b>ENG</b> 나 <b>العربية</b> 를 누르면 화면 글자가 자동 번역돼요. 영어·아랍어를 쓰는 동료에게 보여 줄 때 좋아요.<br>자동 번역이라 어색한 말이 있을 수 있으니 중요한 내용은 한국어로 한 번 더 확인하세요.` },
@@ -6123,9 +6123,11 @@ async function clinicCall(action, payload) {
     bubble.style.top = "";
     if (!el || !visible(el)) { ring.hidden = true; return; }
     const r = el.getBoundingClientRect();
-    const pad = 6, hdr = hdrBottom();
+    const inHdr = !!el.closest(".topbar"); // 배너 안에 있는 것(시계·제목)은 배너 기준으로 자르지 않는다
+    const pad = 6, hdr = inHdr ? 0 : hdrBottom();
     const top = Math.max(r.top - pad, hdr + 4), bottom = Math.min(r.bottom + pad, innerHeight - 4);
-    Object.assign(ring.style, { left: r.left - pad + "px", top: top + "px", width: r.width + pad * 2 + "px", height: Math.max(bottom - top, 20) + "px" });
+    const left = Math.max(r.left - pad, 4), right = Math.min(r.right + pad, innerWidth - 4);
+    Object.assign(ring.style, { left: left + "px", top: top + "px", width: Math.max(right - left, 20) + "px", height: Math.max(bottom - top, 20) + "px" });
     ring.hidden = false;
     // 말풍선이 표시한 곳을 가리면 위쪽으로 옮긴다
     // 말풍선이 표시한 곳을 가리면 위쪽으로 옮긴다. 단, 긴 영역은 윗부분이 보여야 하므로 아래에 둔다
@@ -6177,7 +6179,9 @@ async function clinicCall(action, payload) {
     let el = step.sel ? $(step.sel) : null;
     // 늦게 그려지는 화면은 잠깐 기다린다 (최대 2초)
     for (let k = 0; step.sel && k < 10 && !visible(el); k++) { await wait(200); el = $(step.sel); }
-    if (el && visible(el)) {
+    if (el && visible(el) && el.closest(".topbar")) {
+      window.scrollTo({ top: 0, behavior: "smooth" }); await wait(300); // 배너는 늘 보이므로 맨 위로만
+    } else if (el && visible(el)) {
       // 긴 영역은 윗부분이 배너 바로 아래에 오게, 짧은 영역은 화면 가운데에 오게 스크롤
       const r = el.getBoundingClientRect(), hdr = hdrBottom();
       const room = innerHeight - hdr - 230;
