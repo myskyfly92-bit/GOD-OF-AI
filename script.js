@@ -7232,7 +7232,10 @@ function hseWeldWord(host, wordEl, onDone) {
     // 고리는 배너 아래 끝(구조물 보) 근처에 건다
     const bar = document.querySelector(".topbar");
     // 크기는 그대로(100px) 두고, 발이 카드 위쪽 선에 오도록 고리 높이를 정한다 (배너 아래 끝 근처)
-    const barB = (bar ? bar.getBoundingClientRect().bottom : tr.top) + sy;
+    // 다른 탭에서는 소분류 줄만큼 카드가 내려가 있으므로, 고리도 그만큼 아래에 건다 (발이 카드 윗선에 닿게)
+    const sub = document.getElementById("subBar");
+    const subH = sub && !sub.hidden && sub.offsetParent ? Math.max(0, sub.getBoundingClientRect().bottom - tr.bottom) : 0;
+    const barB = (bar ? bar.getBoundingClientRect().bottom : tr.top) + sy + subH;
     const Hk = H * K.hook, Hr = H * K.rappel;
     const Hs = H, HP = { x: HOOK_PT.x * K.hook, y: HOOK_PT.y * K.hook }, RX = ROPE_X * K.rappel;
     const ay = Math.min(barB + 2, floor - Hk + HP.y);
