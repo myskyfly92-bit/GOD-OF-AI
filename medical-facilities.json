@@ -10,8 +10,8 @@
   {
    "id": "node/9547504717",
    "name": "المركز الصحي الاول في بسماية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Bismayah First Primary Health Center",
+   "nameAr": "المركز الصحي الاول في بسماية",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -23,13 +23,14 @@
    "lon": 44.614146,
    "km": 1.3,
    "roadKm": 1.5,
-   "min": 3
+   "min": 3,
+   "enAuto": true
   },
   {
    "id": "node/13337155298",
    "name": "مستشفى الجامعه اللبناني",
    "nameEn": "Lebanese University Hospital",
-   "nameAr": "",
+   "nameAr": "مستشفى الجامعه اللبناني",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -65,7 +66,7 @@
    "id": "node/7855668985",
    "name": "حيدر الكردي",
    "nameEn": "Haider kurdi",
-   "nameAr": "",
+   "nameAr": "حيدر الكردي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -82,8 +83,8 @@
   {
    "id": "node/5450247821",
    "name": "مستوصف طبي حي القادسيه",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Hay Al-Qadisiya Medical Dispensary",
+   "nameAr": "مستوصف طبي حي القادسيه",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -95,12 +96,13 @@
    "lon": 44.678207,
    "km": 9.4,
    "roadKm": 12.7,
-   "min": 14
+   "min": 14,
+   "enAuto": true
   },
   {
    "id": "node/5105748123",
    "name": "دكتورة وجدان اكرم",
-   "nameEn": "",
+   "nameEn": "Dr. Wijdan Akram Clinic",
    "nameAr": "دكتورة وجدان اكرم",
    "kind": "clinic",
    "own": "",
@@ -113,12 +115,13 @@
    "lon": 44.521693,
    "km": 9.7,
    "roadKm": 11.6,
-   "min": 11
+   "min": 11,
+   "enAuto": true
   },
   {
    "id": "node/4678138689",
    "name": "محمود عبد حمد",
-   "nameEn": "",
+   "nameEn": "Mahmoud Abd Hamad Clinic",
    "nameAr": "محمود عبد حمد",
    "kind": "doctors",
    "own": "",
@@ -131,7 +134,8 @@
    "lon": 44.521601,
    "km": 9.7,
    "roadKm": 11.7,
-   "min": 11
+   "min": 11,
+   "enAuto": true
   },
   {
    "id": "node/8912994380",
@@ -155,7 +159,7 @@
    "id": "node/13337155302",
    "name": "مجمع الساعة الطبي",
    "nameEn": "Al-Sa’a Medical Complex",
-   "nameAr": "",
+   "nameAr": "مجمع الساعة الطبي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -209,7 +213,7 @@
    "id": "node/5579503523",
    "name": "اسعاف",
    "nameEn": "Health Center in Khalissa",
-   "nameAr": "",
+   "nameAr": "اسعاف",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -227,7 +231,7 @@
    "id": "node/13337155313",
    "name": "عيادة.دكتورة وسن الشمري",
    "nameEn": "Dr. Wasan Al-Shammari Clinic",
-   "nameAr": "",
+   "nameAr": "عيادة.دكتورة وسن الشمري",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -263,7 +267,7 @@
    "id": "node/13337155315",
    "name": "سعد المضمد",
    "nameEn": "Saad the Paramedic",
-   "nameAr": "",
+   "nameAr": "سعد المضمد",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -298,8 +302,8 @@
   {
    "id": "node/7327770786",
    "name": "مركز الصحي الرشيد",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Rasheed Primary Health Center",
+   "nameAr": "مركز الصحي الرشيد",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -311,13 +315,14 @@
    "lon": 44.50368,
    "km": 12.3,
    "roadKm": 15.5,
-   "min": 16
+   "min": 16,
+   "enAuto": true
   },
   {
    "id": "node/8702769717",
    "name": "مجمع الدكتور عبد السلام صالح سلطان",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Abdul-Salam Salih Sultan Medical Complex",
+   "nameAr": "مجمع الدكتور عبد السلام صالح سلطان",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -329,13 +334,14 @@
    "lon": 44.629743,
    "km": 12.4,
    "roadKm": 18.9,
-   "min": 21
+   "min": 21,
+   "enAuto": true
   },
   {
    "id": "node/7920881885",
    "name": "المستوصف الصحي في النهروان",
    "nameEn": "health center",
-   "nameAr": "",
+   "nameAr": "المستوصف الصحي في النهروان",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -370,8 +376,8 @@
   {
    "id": "node/11288253469",
    "name": "مركز صحي الامام الرضا",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Imam Al-Ridha Primary Health Center",
+   "nameAr": "مركز صحي الامام الرضا",
    "kind": "clinic",
    "own": "public",
    "emergency": false,
@@ -383,7 +389,8 @@
    "lon": 44.509787,
    "km": 12.5,
    "roadKm": 16.2,
-   "min": 17
+   "min": 17,
+   "enAuto": true
   },
   {
    "id": "node/8912994383",
@@ -408,7 +415,7 @@
    "name": "Shamook City Veteran's H.C.",
    "nameEn": "Shamook City Veteran's H.C.",
    "nameAr": "",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -425,7 +432,7 @@
    "id": "node/10206724717",
    "name": "مجمع الأنوار الطبي",
    "nameEn": "Medical Anwar Complex",
-   "nameAr": "",
+   "nameAr": "مجمع الأنوار الطبي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -442,8 +449,8 @@
   {
    "id": "node/11909543469",
    "name": "مجمع ابو تراب الطبي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Abu Turab Medical Complex",
+   "nameAr": "مجمع ابو تراب الطبي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -455,13 +462,14 @@
    "lon": 44.495219,
    "km": 13.8,
    "roadKm": 17.2,
-   "min": 18
+   "min": 18,
+   "enAuto": true
   },
   {
    "id": "node/8979011517",
    "name": "الإسعاف الفوري في الزعفرانية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Zafaraniya Emergency Ambulance Unit",
+   "nameAr": "الإسعاف الفوري في الزعفرانية",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -473,13 +481,14 @@
    "lon": 44.490035,
    "km": 14.0,
    "roadKm": 16.4,
-   "min": 16
+   "min": 16,
+   "enAuto": true
   },
   {
    "id": "node/10206724718",
    "name": "مركز صحي 9 نيسان",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "9 Nisan Primary Health Center",
+   "nameAr": "مركز صحي 9 نيسان",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -491,12 +500,13 @@
    "lon": 44.676587,
    "km": 14.3,
    "roadKm": 23.8,
-   "min": 33
+   "min": 33,
+   "enAuto": true
   },
   {
    "id": "node/4408484089",
    "name": "مستشفى الزعفرانية",
-   "nameEn": "",
+   "nameEn": "Al-Zafaraniya General Hospital",
    "nameAr": "مستشفى الزعفرانية",
    "kind": "hospital",
    "own": "public",
@@ -509,29 +519,14 @@
    "lon": 44.488287,
    "km": 14.7,
    "roadKm": 18.1,
-   "min": 18
-  },
-  {
-   "id": "node/7966858785",
-   "name": "مختبر الدكتور ليث كاظم الحچيمي",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "07738209666",
-   "website": "http://ddaadd1212@gmail.com",
-   "addr": "بغداد الامين نواب الضباط سكينة ورقية شارع 20مقابل سوبر ماركت السلطان مجاور حلويات الباشا",
-   "lat": 33.299965,
-   "lon": 44.520608,
-   "km": 14.9
+   "min": 18,
+   "enAuto": true
   },
   {
    "id": "node/9243835317",
    "name": "دكتورة مي سبع",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. May Sabea Clinic",
+   "nameAr": "دكتورة مي سبع",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -541,13 +536,14 @@
    "addr": "",
    "lat": 33.305211,
    "lon": 44.525476,
-   "km": 15.2
+   "km": 15.2,
+   "enAuto": true
   },
   {
    "id": "node/9331959917",
    "name": "المستشفى الألماني",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "German Hospital",
+   "nameAr": "المستشفى الألماني",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -557,13 +553,14 @@
    "addr": "",
    "lat": 33.254578,
    "lon": 44.47228,
-   "km": 15.2
+   "km": 15.2,
+   "enAuto": true
   },
   {
    "id": "node/11146975123",
    "name": "مركز الصحي الزعفرانية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Zafaraniya Primary Health Center",
+   "nameAr": "مركز الصحي الزعفرانية",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -573,13 +570,14 @@
    "addr": "بغداد",
    "lat": 33.269107,
    "lon": 44.481793,
-   "km": 15.2
+   "km": 15.2,
+   "enAuto": true
   },
   {
    "id": "node/6477004985",
    "name": "د.حسنين زلزال",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Hasanain Zilzal Clinic",
+   "nameAr": "د.حسنين زلزال",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -589,13 +587,14 @@
    "addr": "",
    "lat": 33.268806,
    "lon": 44.480689,
-   "km": 15.3
+   "km": 15.3,
+   "enAuto": true
   },
   {
    "id": "node/5540358823",
    "name": "المركز الصحي في الامين الثانية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Amin 2 Primary Health Center",
+   "nameAr": "المركز الصحي في الامين الثانية",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -605,13 +604,14 @@
    "addr": "",
    "lat": 33.306302,
    "lon": 44.522325,
-   "km": 15.4
+   "km": 15.4,
+   "enAuto": true
   },
   {
    "id": "node/11515974707",
    "name": "مستشفى السلام للاطفال",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Salam Children's Hospital",
+   "nameAr": "مستشفى السلام للاطفال",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -623,29 +623,14 @@
    "lon": 44.47092,
    "km": 15.4,
    "roadKm": 18.6,
-   "min": 19
-  },
-  {
-   "id": "node/6130065285",
-   "name": "سيد معالج روحاني",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "doctors",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.261873,
-   "lon": 44.47353,
-   "km": 15.5
+   "min": 19,
+   "enAuto": true
   },
   {
    "id": "node/6338284685",
    "name": "عيادة تاج الاسنان",
    "nameEn": "Teeth Crown clinic",
-   "nameAr": "",
+   "nameAr": "عيادة تاج الاسنان",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -660,8 +645,8 @@
   {
    "id": "node/6223371085",
    "name": "د. مثنى فلاح الغرباوي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Muthanna Falah Al-Gharbawi Clinic",
+   "nameAr": "د. مثنى فلاح الغرباوي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -671,13 +656,14 @@
    "addr": "",
    "lat": 33.304925,
    "lon": 44.511334,
-   "km": 15.9
+   "km": 15.9,
+   "enAuto": true
   },
   {
    "id": "node/8877846917",
    "name": "د.يسرى وحيد .. دكتورة نسائي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Yusra Waheed (Gynecology)",
+   "nameAr": "د.يسرى وحيد .. دكتورة نسائي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -687,13 +673,14 @@
    "addr": "شارع الارامل",
    "lat": 33.30993,
    "lon": 44.516619,
-   "km": 16.1
+   "km": 16.1,
+   "enAuto": true
   },
   {
    "id": "node/5895253708",
    "name": "مستوصف السندباد",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Sindibad Dispensary",
+   "nameAr": "مستوصف السندباد",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -703,7 +690,8 @@
    "addr": "",
    "lat": 33.264,
    "lon": 44.467702,
-   "km": 16.1
+   "km": 16.1,
+   "enAuto": true
   },
   {
    "id": "node/5920761187",
@@ -724,8 +712,8 @@
   {
    "id": "node/11146975131",
    "name": "الامين",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Amin Clinic",
+   "nameAr": "الامين",
    "kind": "clinic",
    "own": "public",
    "emergency": false,
@@ -735,13 +723,14 @@
    "addr": "بغداد",
    "lat": 33.30926,
    "lon": 44.51154,
-   "km": 16.3
+   "km": 16.3,
+   "enAuto": true
   },
   {
    "id": "node/5830977985",
    "name": "عيادة د نهلة غلام ص اشرف عبد القادر",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Nahla Ghulam / Ashraf Abdul-Qadir Clinic",
+   "nameAr": "عيادة د نهلة غلام ص اشرف عبد القادر",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -751,29 +740,14 @@
    "addr": "",
    "lat": 33.298261,
    "lon": 44.49124,
-   "km": 16.6
-  },
-  {
-   "id": "node/8907438968",
-   "name": "AL KHALIJ SUSPECT LABORATORY",
-   "nameEn": "AL KHALIJ SUSPECT LABORATORY",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.296512,
-   "lon": 44.487934,
-   "km": 16.7
+   "km": 16.6,
+   "enAuto": true
   },
   {
    "id": "node/6398982785",
    "name": "زنبرانية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Zanbaraniya Clinic",
+   "nameAr": "زنبرانية",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -783,13 +757,14 @@
    "addr": "",
    "lat": 33.120204,
    "lon": 44.459559,
-   "km": 16.8
+   "km": 16.8,
+   "enAuto": true
   },
   {
    "id": "node/5917305685",
    "name": "مستوصف الامين",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Amin Dispensary",
+   "nameAr": "مستوصف الامين",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -799,13 +774,14 @@
    "addr": "",
    "lat": 33.314365,
    "lon": 44.508907,
-   "km": 16.9
+   "km": 16.9,
+   "enAuto": true
   },
   {
    "id": "node/9039082217",
    "name": "الدكتور فاضل اللامي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Fadhil Al-Lami Clinic",
+   "nameAr": "الدكتور فاضل اللامي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -815,13 +791,14 @@
    "addr": "",
    "lat": 33.303092,
    "lon": 44.492244,
-   "km": 16.9
+   "km": 16.9,
+   "enAuto": true
   },
   {
    "id": "node/6844882716",
    "name": "مركز الشام الطبي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Sham Medical Center",
+   "nameAr": "مركز الشام الطبي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -831,7 +808,8 @@
    "addr": "حي الرئاسة",
    "lat": 33.321419,
    "lon": 44.518231,
-   "km": 17.0
+   "km": 17.0,
+   "enAuto": true
   },
   {
    "id": "node/11338517570",
@@ -852,8 +830,8 @@
   {
    "id": "node/10255229809",
    "name": "مركز الشام الطبي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Sham Medical Center",
+   "nameAr": "مركز الشام الطبي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -863,23 +841,8 @@
    "addr": "قرب نهاية شارع المطبك",
    "lat": 33.322078,
    "lon": 44.518928,
-   "km": 17.1
-  },
-  {
-   "id": "node/8989381617",
-   "name": "مختبر مسك العذاري",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.306671,
-   "lon": 44.493077,
-   "km": 17.2
+   "km": 17.1,
+   "enAuto": true
   },
   {
    "id": "node/5224865248",
@@ -900,8 +863,8 @@
   {
    "id": "node/6590040085",
    "name": "د.حسن كرار العبادي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Hassan Karrar Al-Abadi Clinic",
+   "nameAr": "د.حسن كرار العبادي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -911,13 +874,14 @@
    "addr": "",
    "lat": 33.299695,
    "lon": 44.482891,
-   "km": 17.3
+   "km": 17.3,
+   "enAuto": true
   },
   {
    "id": "node/5974652990",
    "name": "د.حيدر القريشي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Haider Al-Quraishi Clinic",
+   "nameAr": "د.حيدر القريشي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -927,13 +891,14 @@
    "addr": "",
    "lat": 33.325659,
    "lon": 44.517315,
-   "km": 17.5
+   "km": 17.5,
+   "enAuto": true
   },
   {
    "id": "node/8009801185",
    "name": "عيادة نسائية الدكتورة حكيمة",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Hakima Gynecology Clinic",
+   "nameAr": "عيادة نسائية الدكتورة حكيمة",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -943,13 +908,14 @@
    "addr": "",
    "lat": 33.305495,
    "lon": 44.485484,
-   "km": 17.6
+   "km": 17.6,
+   "enAuto": true
   },
   {
    "id": "node/7137092686",
    "name": "مركز بغداد لصناعة وتقويم الاسنان",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Baghdad Prosthodontics & Orthodontics Center",
+   "nameAr": "مركز بغداد لصناعة وتقويم الاسنان",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -959,13 +925,14 @@
    "addr": "",
    "lat": 33.316721,
    "lon": 44.496672,
-   "km": 17.8
+   "km": 17.8,
+   "enAuto": true
   },
   {
    "id": "node/11697780266",
    "name": "مستشفى الرشيد سابقا",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Rasheed Hospital (former)",
+   "nameAr": "مستشفى الرشيد سابقا",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -977,7 +944,8 @@
    "lon": 44.457124,
    "km": 17.8,
    "roadKm": 21.5,
-   "min": 22
+   "min": 22,
+   "enAuto": true
   },
   {
    "id": "node/11278750169",
@@ -1016,7 +984,7 @@
   {
    "id": "node/4462027391",
    "name": "دكتور حكمت فرج نعوم للعلاج الفيزياوي",
-   "nameEn": "",
+   "nameEn": "Dr. Hikmat Faraj Naoum Physiotherapy",
    "nameAr": "دكتور حكمت فرج نعوم للعلاج الفيزياوي",
    "kind": "doctors",
    "own": "",
@@ -1027,13 +995,14 @@
    "addr": "حي المعلمين",
    "lat": 33.323067,
    "lon": 44.501472,
-   "km": 18.1
+   "km": 18.1,
+   "enAuto": true
   },
   {
    "id": "node/9341662318",
    "name": "مستشفى العلماء الاهلي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Ulamaa Private Hospital",
+   "nameAr": "مستشفى العلماء الاهلي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -1043,13 +1012,14 @@
    "addr": "",
    "lat": 33.311262,
    "lon": 44.48095,
-   "km": 18.3
+   "km": 18.3,
+   "enAuto": true
   },
   {
    "id": "node/9024984917",
    "name": "د. منال صائب الساعدي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Manal Saib Al-Saadi Clinic",
+   "nameAr": "د. منال صائب الساعدي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1059,13 +1029,14 @@
    "addr": "",
    "lat": 33.311119,
    "lon": 44.480041,
-   "km": 18.4
+   "km": 18.4,
+   "enAuto": true
   },
   {
    "id": "node/5809811654",
    "name": "د.محمد خضير هجول",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Mohammed Khudhair Hajjul Clinic",
+   "nameAr": "د.محمد خضير هجول",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -1075,7 +1046,8 @@
    "addr": "",
    "lat": 33.333545,
    "lon": 44.510987,
-   "km": 18.5
+   "km": 18.5,
+   "enAuto": true
   },
   {
    "id": "node/5123590721",
@@ -1096,7 +1068,7 @@
   {
    "id": "node/4719196093",
    "name": "د.جواد كاظم زاير",
-   "nameEn": "",
+   "nameEn": "Dr. Jawad Kadhim Zayer Clinic",
    "nameAr": "د.جواد كاظم زاير",
    "kind": "doctors",
    "own": "",
@@ -1107,12 +1079,13 @@
    "addr": "",
    "lat": 33.30959,
    "lon": 44.474266,
-   "km": 18.6
+   "km": 18.6,
+   "enAuto": true
   },
   {
    "id": "node/4719197392",
    "name": "د.علي صادق",
-   "nameEn": "",
+   "nameEn": "Dr. Ali Sadiq Clinic",
    "nameAr": "د.علي صادق",
    "kind": "doctors",
    "own": "",
@@ -1123,13 +1096,14 @@
    "addr": "",
    "lat": 33.311789,
    "lon": 44.477184,
-   "km": 18.6
+   "km": 18.6,
+   "enAuto": true
   },
   {
    "id": "node/11146975119",
    "name": "الاقصى",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Aqsa Clinic",
+   "nameAr": "الاقصى",
    "kind": "clinic",
    "own": "public",
    "emergency": false,
@@ -1139,7 +1113,8 @@
    "addr": "بغداد",
    "lat": 33.31767,
    "lon": 44.48259,
-   "km": 18.7
+   "km": 18.7,
+   "enAuto": true
   },
   {
    "id": "node/4909193121",
@@ -1160,7 +1135,7 @@
   {
    "id": "node/4987074640",
    "name": "العياده الشعبيه في بغداد الجديده",
-   "nameEn": "",
+   "nameEn": "New Baghdad Public Clinic",
    "nameAr": "العياده الشعبيه في بغداد الجديده",
    "kind": "hospital",
    "own": "",
@@ -1173,23 +1148,8 @@
    "lon": 44.468955,
    "km": 18.8,
    "roadKm": 25.6,
-   "min": 21
-  },
-  {
-   "id": "node/9124379419",
-   "name": "مختبر الامير ( المشتل ) عيادة د. محمد نصار كركوش",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.326132,
-   "lon": 44.493608,
-   "km": 18.8
+   "min": 21,
+   "enAuto": true
   },
   {
    "id": "node/8912994382",
@@ -1210,7 +1170,7 @@
   {
    "id": "node/4209712290",
    "name": "مستشفى دكتور قيصر الاهلي",
-   "nameEn": "",
+   "nameEn": "Dr. Qaisar Private Hospital",
    "nameAr": "مستشفى دكتور قيصر الاهلي",
    "kind": "hospital",
    "own": "",
@@ -1223,13 +1183,14 @@
    "lon": 44.484418,
    "km": 19.0,
    "roadKm": 24.8,
-   "min": 21
+   "min": 21,
+   "enAuto": true
   },
   {
    "id": "node/5801463953",
    "name": "ام عبير",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Umm Abeer Clinic",
+   "nameAr": "ام عبير",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1239,13 +1200,14 @@
    "addr": "",
    "lat": 33.317644,
    "lon": 44.477232,
-   "km": 19.1
+   "km": 19.1,
+   "enAuto": true
   },
   {
    "id": "node/8868054018",
    "name": "عيادة شعبية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Public Clinic",
+   "nameAr": "عيادة شعبية",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1255,13 +1217,14 @@
    "addr": "",
    "lat": 33.301357,
    "lon": 44.45857,
-   "km": 19.1
+   "km": 19.1,
+   "enAuto": true
   },
   {
    "id": "node/14129117301",
    "name": "د محمد سعد الصفار",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Mohammed Saad Al-Saffar Clinic",
+   "nameAr": "د محمد سعد الصفار",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1271,13 +1234,14 @@
    "addr": "",
    "lat": 33.256609,
    "lon": 44.427458,
-   "km": 19.1
+   "km": 19.1,
+   "enAuto": true
   },
   {
    "id": "node/8688183120",
    "name": "دكتور احسان صباح مطر",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Ihsan Sabah Matar Clinic",
+   "nameAr": "دكتور احسان صباح مطر",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -1287,13 +1251,14 @@
    "addr": "",
    "lat": 33.313763,
    "lon": 44.469825,
-   "km": 19.2
+   "km": 19.2,
+   "enAuto": true
   },
   {
    "id": "node/9202771317",
    "name": "مركز المظهريه الصحي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Mudhariya Primary Health Center",
+   "nameAr": "مركز المظهريه الصحي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1303,13 +1268,14 @@
    "addr": "",
    "lat": 33.083196,
    "lon": 44.458722,
-   "km": 19.2
+   "km": 19.2,
+   "enAuto": true
   },
   {
    "id": "node/10140324817",
    "name": "مجمع طبي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Medical Complex",
+   "nameAr": "مجمع طبي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -1321,7 +1287,8 @@
    "lon": 44.440452,
    "km": 19.3,
    "roadKm": 23.5,
-   "min": 23
+   "min": 23,
+   "enAuto": true
   },
   {
    "id": "node/2483921998",
@@ -1343,7 +1310,7 @@
    "id": "node/6217652486",
    "name": "مذخر ادوية ندى الرافدين",
    "nameEn": "Nada AlRafidain Drugstore",
-   "nameAr": "",
+   "nameAr": "مذخر ادوية ندى الرافدين",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -1358,7 +1325,7 @@
   {
    "id": "node/4451989089",
    "name": "الدكتور سيمون واروجان",
-   "nameEn": "",
+   "nameEn": "Dr. Simon Warujan Clinic",
    "nameAr": "الدكتور سيمون واروجان",
    "kind": "clinic",
    "own": "",
@@ -1369,7 +1336,8 @@
    "addr": "",
    "lat": 33.315058,
    "lon": 44.468777,
-   "km": 19.4
+   "km": 19.4,
+   "enAuto": true
   },
   {
    "id": "node/8912994381",
@@ -1390,8 +1358,8 @@
   {
    "id": "node/6960105285",
    "name": "الدكتورة منال صائب الساعدي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Manal Saib Al-Saadi Clinic",
+   "nameAr": "الدكتورة منال صائب الساعدي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -1403,13 +1371,14 @@
    "lon": 44.489505,
    "km": 19.5,
    "roadKm": 26.0,
-   "min": 22
+   "min": 22,
+   "enAuto": true
   },
   {
    "id": "node/8443811317",
    "name": "الامور الطبية لوزارة الداخلية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Ministry of Interior Medical Affairs",
+   "nameAr": "الامور الطبية لوزارة الداخلية",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1419,13 +1388,14 @@
    "addr": "",
    "lat": 33.324109,
    "lon": 44.478703,
-   "km": 19.5
+   "km": 19.5,
+   "enAuto": true
   },
   {
    "id": "way/1231912189",
    "name": "مجمع فلسطين الطبي الخيري",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Palestine Charity Medical Complex",
+   "nameAr": "مجمع فلسطين الطبي الخيري",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -1435,12 +1405,13 @@
    "addr": "",
    "lat": 33.332431,
    "lon": 44.490164,
-   "km": 19.5
+   "km": 19.5,
+   "enAuto": true
   },
   {
    "id": "node/5027988722",
    "name": "مركز الزهراء الصحي في حي الخنساء",
-   "nameEn": "",
+   "nameEn": "Al-Zahraa Primary Health Center, Hay Al-Khansaa",
    "nameAr": "مركز الزهراء الصحي في حي الخنساء",
    "kind": "hospital",
    "own": "",
@@ -1453,13 +1424,14 @@
    "lon": 44.5178,
    "km": 19.6,
    "roadKm": 29.2,
-   "min": 25
+   "min": 25,
+   "enAuto": true
   },
   {
    "id": "node/6560245686",
    "name": "الدكتور مهند الناصح",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Muhannad Al-Nasih Clinic",
+   "nameAr": "الدكتور مهند الناصح",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -1469,13 +1441,14 @@
    "addr": "",
    "lat": 33.322243,
    "lon": 44.472634,
-   "km": 19.7
+   "km": 19.7,
+   "enAuto": true
   },
   {
    "id": "node/6975855885",
    "name": "مديرية الخدمات الطبية لوزارة الداخلية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Ministry of Interior Medical Services",
+   "nameAr": "مديرية الخدمات الطبية لوزارة الداخلية",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1485,12 +1458,13 @@
    "addr": "شارع القناة /الامن العامة سابقاً",
    "lat": 33.329051,
    "lon": 44.481584,
-   "km": 19.7
+   "km": 19.7,
+   "enAuto": true
   },
   {
    "id": "node/5302877424",
    "name": "الضمان الصحي لمنتسبي وزاره الداخليه",
-   "nameEn": "",
+   "nameEn": "Ministry of Interior Staff Health Insurance Clinic",
    "nameAr": "الضمان الصحي لمنتسبي وزاره الداخليه",
    "kind": "doctors",
    "own": "",
@@ -1501,13 +1475,14 @@
    "addr": "",
    "lat": 33.305537,
    "lon": 44.452918,
-   "km": 19.8
+   "km": 19.8,
+   "enAuto": true
   },
   {
    "id": "node/8227800317",
    "name": "د سيف عبد الحسين",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Saif Abdul-Hussein Clinic",
+   "nameAr": "د سيف عبد الحسين",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -1517,7 +1492,8 @@
    "addr": "الكمالية شارع الجامع",
    "lat": 33.348004,
    "lon": 44.512108,
-   "km": 19.8
+   "km": 19.8,
+   "enAuto": true
   },
   {
    "id": "node/4726411097",
@@ -1559,7 +1535,7 @@
    "id": "node/13443101203",
    "name": "دكتور سرمد",
    "nameEn": "طبيب اسنان  دكتور سرمد",
-   "nameAr": "",
+   "nameAr": "دكتور سرمد",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1574,8 +1550,8 @@
   {
    "id": "node/5808971453",
    "name": "اسنان",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dental Clinic",
+   "nameAr": "اسنان",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -1585,13 +1561,14 @@
    "addr": "",
    "lat": 33.321702,
    "lon": 44.465805,
-   "km": 20.1
+   "km": 20.1,
+   "enAuto": true
   },
   {
    "id": "node/6301017485",
    "name": "مؤسسة كنزي للجلدية،الشعر،التجميل والليزر",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Kenzi Dermatology, Hair, Cosmetic & Laser Center",
+   "nameAr": "مؤسسة كنزي للجلدية،الشعر،التجميل والليزر",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -1603,7 +1580,8 @@
    "lon": 44.466044,
    "km": 20.1,
    "roadKm": 26.7,
-   "min": 22
+   "min": 22,
+   "enAuto": true
   },
   {
    "id": "node/8916815387",
@@ -1624,8 +1602,8 @@
   {
    "id": "node/9728829217",
    "name": "مستوصف الامام الحسين (ع)",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Imam Hussein Dispensary",
+   "nameAr": "مستوصف الامام الحسين (ع)",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1635,7 +1613,8 @@
    "addr": "",
    "lat": 33.357791,
    "lon": 44.521225,
-   "km": 20.4
+   "km": 20.4,
+   "enAuto": true
   },
   {
    "id": "way/1244921932",
@@ -1659,7 +1638,7 @@
    "id": "node/10284643709",
    "name": "فانيتا سبا",
    "nameEn": "vanita spa",
-   "nameAr": "",
+   "nameAr": "فانيتا سبا",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1674,8 +1653,8 @@
   {
    "id": "node/9082334517",
    "name": "المركز الطبي العلاج الطبيعي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Physiotherapy Medical Center",
+   "nameAr": "المركز الطبي العلاج الطبيعي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -1687,7 +1666,8 @@
    "lon": 44.441656,
    "km": 20.6,
    "roadKm": 24.1,
-   "min": 24
+   "min": 24,
+   "enAuto": true
   },
   {
    "id": "way/848334472",
@@ -1710,8 +1690,8 @@
   {
    "id": "node/9053978218",
    "name": "مركز ايف الطبي/د.تكبير",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Eve Medical Center / Dr. Takbir",
+   "nameAr": "مركز ايف الطبي/د.تكبير",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1721,13 +1701,14 @@
    "addr": "",
    "lat": 33.305789,
    "lon": 44.441578,
-   "km": 20.7
+   "km": 20.7,
+   "enAuto": true
   },
   {
    "id": "node/11663115355",
    "name": "مستشفى طب الاسنان",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dental Hospital",
+   "nameAr": "مستشفى طب الاسنان",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -1739,7 +1720,8 @@
    "lon": 44.411873,
    "km": 20.7,
    "roadKm": 30.5,
-   "min": 29
+   "min": 29,
+   "enAuto": true
   },
   {
    "id": "node/8806888838",
@@ -1776,8 +1758,8 @@
   {
    "id": "node/5593118746",
    "name": "دكتور عمر للاطفال",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Omar Pediatric Clinic",
+   "nameAr": "دكتور عمر للاطفال",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -1787,28 +1769,13 @@
    "addr": "Al Rubaie Street",
    "lat": 33.325908,
    "lon": 44.460014,
-   "km": 20.8
-  },
-  {
-   "id": "node/7792904485",
-   "name": "عوينات النرجس",
-   "nameEn": "Al narjs optical",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "07728389353",
-   "website": "",
-   "addr": "شارع 60",
-   "lat": 33.230143,
-   "lon": 44.397678,
-   "km": 20.9
+   "km": 20.8,
+   "enAuto": true
   },
   {
    "id": "node/4161323689",
    "name": "مستشفى حياة الراهبات",
-   "nameEn": "",
+   "nameEn": "Hayat Al-Rahibat (Sisters') Hospital",
    "nameAr": "مستشفى حياة الراهبات",
    "kind": "hospital",
    "own": "",
@@ -1821,28 +1788,13 @@
    "lon": 44.437534,
    "km": 20.9,
    "roadKm": 24.0,
-   "min": 23
-  },
-  {
-   "id": "node/7132078864",
-   "name": "مختبر هيلين للتحليلات المرضية",
-   "nameEn": "Helen medical lab",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "public",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.241164,
-   "lon": 44.400816,
-   "km": 20.9
+   "min": 23,
+   "enAuto": true
   },
   {
    "id": "node/8869381317",
    "name": "مجمع طيارة الطبي",
-   "nameEn": "",
+   "nameEn": "Tayyara Medical Complex",
    "nameAr": "مجمع طيارة الطبي",
    "kind": "clinic",
    "own": "",
@@ -1853,13 +1805,14 @@
    "addr": "",
    "lat": 33.257976,
    "lon": 44.407545,
-   "km": 20.9
+   "km": 20.9,
+   "enAuto": true
   },
   {
    "id": "node/11663118670",
    "name": "مستشفى الدورة الأهلي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Dora Private Hospital",
+   "nameAr": "مستشفى الدورة الأهلي",
    "kind": "hospital",
    "own": "private",
    "emergency": false,
@@ -1871,12 +1824,13 @@
    "lon": 44.408286,
    "km": 20.9,
    "roadKm": 30.7,
-   "min": 28
+   "min": 28,
+   "enAuto": true
   },
   {
    "id": "node/4718793194",
    "name": "عيادة د.عيسى توما سلومي",
-   "nameEn": "",
+   "nameEn": "Dr. Issa Toma Saloumi Clinic",
    "nameAr": "عيادة د.عيسى توما سلومي",
    "kind": "doctors",
    "own": "",
@@ -1887,12 +1841,13 @@
    "addr": "",
    "lat": 33.290968,
    "lon": 44.42543,
-   "km": 21.0
+   "km": 21.0,
+   "enAuto": true
   },
   {
    "id": "node/7490813085",
    "name": "مستشىفى الامراض السرطانية",
-   "nameEn": "",
+   "nameEn": "Oncology (Cancer) Hospital",
    "nameAr": "مستشفى الامراض السرطانية",
    "kind": "clinic",
    "own": "",
@@ -1903,13 +1858,14 @@
    "addr": "",
    "lat": 33.333813,
    "lon": 44.46789,
-   "km": 21.0
+   "km": 21.0,
+   "enAuto": true
   },
   {
    "id": "node/10962601705",
    "name": "عيادة الدكتور آزاد آل نجف الكرادة",
    "nameEn": "Azad al Najaf",
-   "nameAr": "",
+   "nameAr": "عيادة الدكتور آزاد آل نجف الكرادة",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -1942,8 +1898,8 @@
   {
    "id": "node/11146975127",
    "name": "الدورة /1 التخصصيه",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Dora 1 Specialty Center",
+   "nameAr": "الدورة /1 التخصصيه",
    "kind": "clinic",
    "own": "public",
    "emergency": false,
@@ -1953,13 +1909,14 @@
    "addr": "بغداد",
    "lat": 33.254533,
    "lon": 44.403467,
-   "km": 21.1
+   "km": 21.1,
+   "enAuto": true
   },
   {
    "id": "node/12766374712",
    "name": "السندباد لتجميل الاسنان",
    "nameEn": "Sindbad Dental Beauty Center",
-   "nameAr": "",
+   "nameAr": "السندباد لتجميل الاسنان",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1974,8 +1931,8 @@
   {
    "id": "node/9071182417",
    "name": "منور النقاش",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Munawar Al-Naqqash Clinic",
+   "nameAr": "منور النقاش",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -1985,13 +1942,14 @@
    "addr": "",
    "lat": 33.318002,
    "lon": 44.446821,
-   "km": 21.1
+   "km": 21.1,
+   "enAuto": true
   },
   {
    "id": "node/11033884405",
    "name": "د علي الدرة للعيون",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Ali Al-Durra Eye Clinic",
+   "nameAr": "د علي الدرة للعيون",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -2001,39 +1959,8 @@
    "addr": "",
    "lat": 33.297505,
    "lon": 44.429243,
-   "km": 21.1
-  },
-  {
-   "id": "node/5928378785",
-   "name": "شركه بايونير",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.292498,
-   "lon": 44.423374,
-   "km": 21.2
-  },
-  {
-   "id": "node/13437773401",
-   "name": "بيت دودي و عزوز",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "doctors",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "832-15",
-   "lat": 33.237155,
-   "lon": 44.396178,
-   "km": 21.2
+   "km": 21.1,
+   "enAuto": true
   },
   {
    "id": "node/4328361592",
@@ -2056,8 +1983,8 @@
   {
    "id": "node/11146975149",
    "name": "ابو دشير",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Abu Dshir Health Center",
+   "nameAr": "ابو دشير",
    "kind": "clinic",
    "own": "public",
    "emergency": false,
@@ -2067,13 +1994,14 @@
    "addr": "بغداد",
    "lat": 33.212533,
    "lon": 44.390733,
-   "km": 21.3
+   "km": 21.3,
+   "enAuto": true
   },
   {
    "id": "node/12766374717",
    "name": "اورانوس للطب والجراحه",
    "nameEn": "Uranus Medical & Surgery Center",
-   "nameAr": "",
+   "nameAr": "اورانوس للطب والجراحه",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -2088,8 +2016,8 @@
   {
    "id": "node/5590779422",
    "name": "دكتور عمر للاطفال",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Omar Pediatric Clinic",
+   "nameAr": "دكتور عمر للاطفال",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -2099,7 +2027,8 @@
    "addr": "شارع الربيعي",
    "lat": 33.328683,
    "lon": 44.456348,
-   "km": 21.3
+   "km": 21.3,
+   "enAuto": true
   },
   {
    "id": "node/4575222193",
@@ -2121,7 +2050,7 @@
    "id": "node/9019703517",
    "name": "دكتور ليث العكيلي",
    "nameEn": "Dr laith al egealy",
-   "nameAr": "",
+   "nameAr": "دكتور ليث العكيلي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -2136,8 +2065,8 @@
   {
    "id": "node/6221837991",
    "name": "د.جمعة الساعدي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Jumaa Al-Saadi Clinic",
+   "nameAr": "د.جمعة الساعدي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -2147,13 +2076,14 @@
    "addr": "",
    "lat": 33.361982,
    "lon": 44.508338,
-   "km": 21.4
+   "km": 21.4,
+   "enAuto": true
   },
   {
    "id": "node/11663199510",
    "name": "د.علي الجميلي جراح عظام و كسور و مفاصل",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Ali Al-Jumaili (Orthopedic & Fracture Surgeon)",
+   "nameAr": "د.علي الجميلي جراح عظام و كسور و مفاصل",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -2163,7 +2093,8 @@
    "addr": "",
    "lat": 33.247729,
    "lon": 44.397008,
-   "km": 21.4
+   "km": 21.4,
+   "enAuto": true
   },
   {
    "id": "node/4506066789",
@@ -2200,7 +2131,7 @@
   {
    "id": "node/6049269088",
    "name": "مركز جنه للعيون",
-   "nameEn": "",
+   "nameEn": "Janna Eye Center",
    "nameAr": "مركز جنه للعيون",
    "kind": "hospital",
    "own": "",
@@ -2213,13 +2144,14 @@
    "lon": 44.434195,
    "km": 21.5,
    "roadKm": 24.9,
-   "min": 24
+   "min": 24,
+   "enAuto": true
   },
   {
    "id": "node/6134997488",
    "name": "مركز السلام التاهيلي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Salam Rehabilitation Center",
+   "nameAr": "مركز السلام التاهيلي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -2231,13 +2163,14 @@
    "lon": 44.454911,
    "km": 21.5,
    "roadKm": 28.1,
-   "min": 24
+   "min": 24,
+   "enAuto": true
   },
   {
    "id": "node/8112396517",
    "name": "دكتور واثق",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Wathiq Clinic",
+   "nameAr": "دكتور واثق",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -2249,13 +2182,14 @@
    "lon": 44.448903,
    "km": 21.5,
    "roadKm": 28.8,
-   "min": 25
+   "min": 25,
+   "enAuto": true
   },
   {
    "id": "node/8187782017",
    "name": "عيادة الدكتور حيدر محسن الشمري دكتور اسنان",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Haider Mohsen Al-Shammari Dental Clinic",
+   "nameAr": "عيادة الدكتور حيدر محسن الشمري دكتور اسنان",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -2265,13 +2199,14 @@
    "addr": "",
    "lat": 33.305558,
    "lon": 44.430524,
-   "km": 21.5
+   "km": 21.5,
+   "enAuto": true
   },
   {
    "id": "node/9384594058",
    "name": "السلام لتأهيل المعاقين",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Salam Disability Rehabilitation Center",
+   "nameAr": "السلام لتأهيل المعاقين",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -2281,55 +2216,8 @@
    "addr": "",
    "lat": 33.329804,
    "lon": 44.455334,
-   "km": 21.5
-  },
-  {
-   "id": "node/4828461123",
-   "name": "عوينات أمنية بغداد",
-   "nameEn": "",
-   "nameAr": "عوينات أمنية بغداد",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "07705744133",
-   "website": "",
-   "addr": "الدورة شارع الطعمة",
-   "lat": 33.246787,
-   "lon": 44.394853,
-   "km": 21.6
-  },
-  {
-   "id": "node/5595708221",
-   "name": "مختبر هديل",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.311926,
-   "lon": 44.434106,
-   "km": 21.6
-  },
-  {
-   "id": "node/6149985485",
-   "name": "شركة الحمراء تأمين",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.290516,
-   "lon": 44.417214,
-   "km": 21.6
+   "km": 21.5,
+   "enAuto": true
   },
   {
    "id": "node/5141949522",
@@ -2366,25 +2254,9 @@
    "min": 24
   },
   {
-   "id": "node/4622438791",
-   "name": "مختبر المسره",
-   "nameEn": "internal medicine and paediatric",
-   "nameAr": "مختبر المسره",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "الدورة شارع الطعمة",
-   "lat": 33.251714,
-   "lon": 44.395689,
-   "km": 21.7
-  },
-  {
    "id": "node/4818631623",
    "name": "مستشفى الراهبات رافائيل",
-   "nameEn": "",
+   "nameEn": "Saint Raphael Sisters' Hospital",
    "nameAr": "مستشفى الراهبات رافائيل",
    "kind": "hospital",
    "own": "",
@@ -2397,12 +2269,13 @@
    "lon": 44.424423,
    "km": 21.7,
    "roadKm": 24.9,
-   "min": 25
+   "min": 25,
+   "enAuto": true
   },
   {
    "id": "node/8942631218",
    "name": "د. زيد عبدالرزاق الامارة اختصاصباطنية - قلبية",
-   "nameEn": "",
+   "nameEn": "Dr. Zaid Abdulrazzaq Al-Imara (Internal Medicine & Cardiology)",
    "nameAr": "د. زيد عبدالرزاق الامارة اختصاص باطنية - قلبية",
    "kind": "doctors",
    "own": "",
@@ -2413,13 +2286,14 @@
    "addr": "",
    "lat": 33.310985,
    "lon": 44.432099,
-   "km": 21.7
+   "km": 21.7,
+   "enAuto": true
   },
   {
    "id": "node/8332536317",
    "name": "دكتور نواف الداغر تكميم معده",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Nawaf Al-Dagher (Bariatric Surgery)",
+   "nameAr": "دكتور نواف الداغر تكميم معده",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -2429,13 +2303,14 @@
    "addr": "",
    "lat": 33.31334,
    "lon": 44.434461,
-   "km": 21.7
+   "km": 21.7,
+   "enAuto": true
   },
   {
    "id": "node/8811361517",
    "name": "عيادة ديموزي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dumuzi Clinic",
+   "nameAr": "عيادة ديموزي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -2445,29 +2320,14 @@
    "addr": "",
    "lat": 33.323094,
    "lon": 44.443593,
-   "km": 21.7
-  },
-  {
-   "id": "node/9264886917",
-   "name": "مختبر د.جغفر",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.296822,
-   "lon": 44.420718,
-   "km": 21.7
+   "km": 21.7,
+   "enAuto": true
   },
   {
    "id": "node/11665331577",
    "name": "الدكتورة دينا نوفل عبد",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Dina Nawfal Abd Clinic",
+   "nameAr": "الدكتورة دينا نوفل عبد",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -2477,7 +2337,8 @@
    "addr": "",
    "lat": 33.250138,
    "lon": 44.395462,
-   "km": 21.7
+   "km": 21.7,
+   "enAuto": true
   },
   {
    "id": "node/5314483922",
@@ -2494,24 +2355,6 @@
    "lat": 33.284611,
    "lon": 44.410905,
    "km": 21.8
-  },
-  {
-   "id": "node/4360104995",
-   "name": "مختبر الواثق التخصصي",
-   "nameEn": "Alwathiq Lab.",
-   "nameAr": "مختبر الواثق التخصصي",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "07716313222",
-   "website": "",
-   "addr": "Salman Fayq St.",
-   "lat": 33.309931,
-   "lon": 44.430223,
-   "km": 21.8,
-   "roadKm": 25.0,
-   "min": 24
   },
   {
    "id": "node/4365277389",
@@ -2564,7 +2407,7 @@
   {
    "id": "node/4818626124",
    "name": "دكتور جعفر الحسيني اذن وانف وحنجرة",
-   "nameEn": "",
+   "nameEn": "Dr. Jaafar Al-Husseini (ENT)",
    "nameAr": "دكتور جعفر الحسيني اذن وانف وحنجرة",
    "kind": "hospital",
    "own": "",
@@ -2577,13 +2420,14 @@
    "lon": 44.420011,
    "km": 21.8,
    "roadKm": 26.7,
-   "min": 26
+   "min": 26,
+   "enAuto": true
   },
   {
    "id": "node/5401064221",
    "name": "د محمود شهاب وهاب",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Mahmoud Shihab Wahab Clinic",
+   "nameAr": "د محمود شهاب وهاب",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -2593,13 +2437,14 @@
    "addr": "",
    "lat": 33.309242,
    "lon": 44.428867,
-   "km": 21.8
+   "km": 21.8,
+   "enAuto": true
   },
   {
    "id": "node/11663306245",
    "name": "مركز اللؤلؤة الطبي التخصصي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Lulua Specialty Medical Center",
+   "nameAr": "مركز اللؤلؤة الطبي التخصصي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -2609,7 +2454,8 @@
    "addr": "",
    "lat": 33.23166,
    "lon": 44.388125,
-   "km": 21.8
+   "km": 21.8,
+   "enAuto": true
   },
   {
    "id": "node/2938108044",
@@ -2662,26 +2508,10 @@
    "min": 24
   },
   {
-   "id": "node/10537425699",
-   "name": "مكتب تسجيل ولادات ووفيات في النهروان/ م.ص. النهروان",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "بغداد",
-   "lat": 33.379467,
-   "lon": 44.69515,
-   "km": 21.9
-  },
-  {
    "id": "node/11663306241",
    "name": "عيادة برستيج للأسنان والتجميل",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Prestige Dental & Cosmetic Clinic",
+   "nameAr": "عيادة برستيج للأسنان والتجميل",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -2691,13 +2521,14 @@
    "addr": "",
    "lat": 33.233396,
    "lon": 44.387388,
-   "km": 21.9
+   "km": 21.9,
+   "enAuto": true
   },
   {
    "id": "node/11663306243",
    "name": "مستشفى الصحة الاهلية النموذجية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Sihha Model Private Hospital",
+   "nameAr": "مستشفى الصحة الاهلية النموذجية",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -2709,23 +2540,8 @@
    "lon": 44.387103,
    "km": 21.9,
    "roadKm": 33.8,
-   "min": 32
-  },
-  {
-   "id": "node/6046604986",
-   "name": "مختبر القمم التخصصي",
-   "nameEn": "Al-Qimmam Specialized Lab.",
-   "nameAr": "عياده د.ليث توما",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "+9647713070407",
-   "website": "",
-   "addr": "Inner Karrada Street",
-   "lat": 33.305967,
-   "lon": 44.423366,
-   "km": 22.0
+   "min": 32,
+   "enAuto": true
   },
   {
    "id": "node/8293933524",
@@ -2746,7 +2562,7 @@
   {
    "id": "node/4760091223",
    "name": "مستشفى البشارة الاهلي",
-   "nameEn": "",
+   "nameEn": "Al-Bishara Private Hospital",
    "nameAr": "مستشفى البشارة الاهلي",
    "kind": "hospital",
    "own": "",
@@ -2759,7 +2575,8 @@
    "lon": 44.420108,
    "km": 22.0,
    "roadKm": 26.7,
-   "min": 26
+   "min": 26,
+   "enAuto": true
   },
   {
    "id": "node/8915744523",
@@ -2782,8 +2599,8 @@
   {
    "id": "node/9591606718",
    "name": "عيادة د.نور علي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Noor Ali Clinic",
+   "nameAr": "عيادة د.نور علي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -2793,13 +2610,14 @@
    "addr": "",
    "lat": 33.34925,
    "lon": 44.472792,
-   "km": 22.0
+   "km": 22.0,
+   "enAuto": true
   },
   {
    "id": "node/13337155319",
    "name": "ألدكتور احمد عبدالزهرة دواي الكورجي",
    "nameEn": "Dr. Ahmed Abdulzahra Dawai Al-Kurji",
-   "nameAr": "",
+   "nameAr": "ألدكتور احمد عبدالزهرة دواي الكورجي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -2814,8 +2632,8 @@
   {
    "id": "node/8757144817",
    "name": "الدكتور داوود العبيدي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Dawood Al-Obaidi Clinic",
+   "nameAr": "الدكتور داوود العبيدي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -2825,7 +2643,8 @@
    "addr": "",
    "lat": 33.301156,
    "lon": 44.420462,
-   "km": 22.0
+   "km": 22.0,
+   "enAuto": true
   },
   {
    "id": "node/4665830490",
@@ -2863,7 +2682,7 @@
    "id": "node/5846660590",
    "name": "مستشفى العلوية الاهلي",
    "nameEn": "Al Oluia private hospital",
-   "nameAr": "",
+   "nameAr": "مستشفى العلوية الاهلي",
    "kind": "hospital",
    "own": "private",
    "emergency": false,
@@ -2878,25 +2697,9 @@
    "min": 24
   },
   {
-   "id": "node/8378650319",
-   "name": "مختبر الجوادين العلمي",
-   "nameEn": "Al Gawadin lab",
-   "nameAr": "",
-   "kind": "doctors",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "07705340055",
-   "website": "",
-   "addr": "شارع الشهيد",
-   "lat": 33.37098,
-   "lon": 44.513376,
-   "km": 22.1
-  },
-  {
    "id": "node/5186242022",
    "name": "دكتورة ثناء حكمت اختصاص إذن وأنف وحنجرة",
-   "nameEn": "",
+   "nameEn": "Dr. Thanaa Hikmat (ENT)",
    "nameAr": "دكتورة ثناء حكمت اختصاص إذن وأنف وحنجرة",
    "kind": "doctors",
    "own": "",
@@ -2907,29 +2710,14 @@
    "addr": "",
    "lat": 33.307942,
    "lon": 44.423484,
-   "km": 22.1
-  },
-  {
-   "id": "node/11146975142",
-   "name": "مجمع الدورة السكني",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "public",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "بغداد",
-   "lat": 33.229983,
-   "lon": 44.384383,
-   "km": 22.1
+   "km": 22.1,
+   "enAuto": true
   },
   {
    "id": "node/12023358069",
    "name": "موكز صحي ابو دشير",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Abu Dshir Primary Health Center",
+   "nameAr": "موكز صحي ابو دشير",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -2939,7 +2727,8 @@
    "addr": "",
    "lat": 33.20909,
    "lon": 44.38092,
-   "km": 22.1
+   "km": 22.1,
+   "enAuto": true
   },
   {
    "id": "node/1233035915",
@@ -2976,26 +2765,10 @@
    "km": 22.2
   },
   {
-   "id": "node/6665274485",
-   "name": "محل القند",
-   "nameEn": "",
-   "nameAr": "مكتب القند للمختبريات",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "07816407320",
-   "website": "",
-   "addr": "كرادة داخل",
-   "lat": 33.308982,
-   "lon": 44.423499,
-   "km": 22.2
-  },
-  {
    "id": "node/6221837992",
    "name": "د.حيدر حسين الزبيدي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Haider Hussein Al-Zubaidi Clinic",
+   "nameAr": "د.حيدر حسين الزبيدي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -3005,13 +2778,14 @@
    "addr": "",
    "lat": 33.366087,
    "lon": 44.499081,
-   "km": 22.2
+   "km": 22.2,
+   "enAuto": true
   },
   {
    "id": "node/6270162101",
    "name": "مستشفى العلوية للولادة",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Elwiya Maternity Hospital",
+   "nameAr": "مستشفى العلوية للولادة",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3021,13 +2795,14 @@
    "addr": "",
    "lat": 33.318987,
    "lon": 44.433146,
-   "km": 22.2
+   "km": 22.2,
+   "enAuto": true
   },
   {
    "id": "node/6419344985",
    "name": "دكتور محمد حمزة احمد",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Mohammed Hamza Ahmed Clinic",
+   "nameAr": "دكتور محمد حمزة احمد",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -3037,13 +2812,14 @@
    "addr": "",
    "lat": 33.31361,
    "lon": 44.427384,
-   "km": 22.2
+   "km": 22.2,
+   "enAuto": true
   },
   {
    "id": "node/7794472685",
    "name": "مجمع المختار الطبي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Mukhtar Medical Complex",
+   "nameAr": "مجمع المختار الطبي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3053,29 +2829,14 @@
    "addr": "شارع الجامع",
    "lat": 33.373025,
    "lon": 44.51354,
-   "km": 22.2
-  },
-  {
-   "id": "node/10750573605",
-   "name": "ميثاق ابو فاطمة المعالج",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.372714,
-   "lon": 44.514696,
-   "km": 22.2
+   "km": 22.2,
+   "enAuto": true
   },
   {
    "id": "node/11017355506",
    "name": "مركز جنة الشام",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Jannat Al-Sham Center",
+   "nameAr": "مركز جنة الشام",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3085,7 +2846,8 @@
    "addr": "",
    "lat": 33.237797,
    "lon": 44.385228,
-   "km": 22.2
+   "km": 22.2,
+   "enAuto": true
   },
   {
    "id": "node/5258511867",
@@ -3107,7 +2869,7 @@
    "id": "node/6350024285",
    "name": "مستشفى بغداد الأهلي",
    "nameEn": "Baghdad Private Hospital",
-   "nameAr": "",
+   "nameAr": "مستشفى بغداد الأهلي",
    "kind": "clinic",
    "own": "private",
    "emergency": false,
@@ -3154,8 +2916,8 @@
   {
    "id": "node/11146975147",
    "name": "الكرادة الاستشاريه",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Karrada Consultation Clinic",
+   "nameAr": "الكرادة الاستشاريه",
    "kind": "clinic",
    "own": "public",
    "emergency": false,
@@ -3165,13 +2927,14 @@
    "addr": "بغداد",
    "lat": 33.293833,
    "lon": 44.410367,
-   "km": 22.3
+   "km": 22.3,
+   "enAuto": true
   },
   {
    "id": "node/13337155318",
    "name": "حيدر كريم",
    "nameEn": "Haider Kareem",
-   "nameAr": "",
+   "nameAr": "حيدر كريم",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3187,7 +2950,7 @@
    "id": "way/1218316893",
    "name": "مركز صحي الصدرين",
    "nameEn": "alsadreen health center",
-   "nameAr": "",
+   "nameAr": "مركز صحي الصدرين",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3202,8 +2965,8 @@
   {
    "id": "node/6302426085",
    "name": "عيادة الاسنان",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dental Clinic",
+   "nameAr": "عيادة الاسنان",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3213,28 +2976,13 @@
    "addr": "",
    "lat": 33.353966,
    "lon": 44.475806,
-   "km": 22.3
-  },
-  {
-   "id": "node/4358811804",
-   "name": "مختبر الصحة العامة المركزي",
-   "nameEn": "CPHL",
-   "nameAr": "مختبر الصحة العامة المركزي",
-   "kind": "hospital",
-   "own": "public",
-   "emergency": true,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "ساحة الأندلس",
-   "lat": 33.316844,
-   "lon": 44.428142,
-   "km": 22.4
+   "km": 22.3,
+   "enAuto": true
   },
   {
    "id": "node/4708888589",
    "name": "مجمع حي البتول الطبي",
-   "nameEn": "",
+   "nameEn": "Hay Al-Batool Medical Complex",
    "nameAr": "مجمع حي البتول الطبي",
    "kind": "clinic",
    "own": "",
@@ -3245,13 +2993,14 @@
    "addr": "",
    "lat": 33.383799,
    "lon": 44.53606,
-   "km": 22.5
+   "km": 22.5,
+   "enAuto": true
   },
   {
    "id": "node/6198868685",
    "name": "مضمد",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "First-Aid Dresser",
+   "nameAr": "مضمد",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -3261,13 +3010,14 @@
    "addr": "شارع الجامعة",
    "lat": 33.285578,
    "lon": 44.402647,
-   "km": 22.5
+   "km": 22.5,
+   "enAuto": true
   },
   {
    "id": "way/1222575612",
    "name": "مركز صحي  الباويه",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Bawiya Primary Health Center",
+   "nameAr": "مركز صحي  الباويه",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3277,7 +3027,8 @@
    "addr": "",
    "lat": 33.381816,
    "lon": 44.530812,
-   "km": 22.5
+   "km": 22.5,
+   "enAuto": true
   },
   {
    "id": "node/2486242587",
@@ -3298,7 +3049,7 @@
   {
    "id": "node/4403820190",
    "name": "مستشفى جنين الاهلي",
-   "nameEn": "",
+   "nameEn": "Jenin Private Hospital",
    "nameAr": "مستشفى جنين الاهلي",
    "kind": "hospital",
    "own": "",
@@ -3309,13 +3060,14 @@
    "addr": "",
    "lat": 33.292992,
    "lon": 44.406308,
-   "km": 22.6
+   "km": 22.6,
+   "enAuto": true
   },
   {
    "id": "node/5863702385",
    "name": "مركز صحي واقعة ألطف",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Waqi'at Al-Taff Primary Health Center",
+   "nameAr": "مركز صحي واقعة ألطف",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3325,23 +3077,8 @@
    "addr": "",
    "lat": 33.377432,
    "lon": 44.514618,
-   "km": 22.6
-  },
-  {
-   "id": "node/10537462246",
-   "name": "مكتب تسجيل ولادات ووفيات العبيدي",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "بغداد",
-   "lat": 33.377333,
-   "lon": 44.5148,
-   "km": 22.6
+   "km": 22.6,
+   "enAuto": true
   },
   {
    "id": "node/4557264789",
@@ -3362,8 +3099,8 @@
   {
    "id": "node/5342940521",
    "name": "مستشفى الفردوس الأهلي للعيون",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Firdaws Private Eye Hospital",
+   "nameAr": "مستشفى الفردوس الأهلي للعيون",
    "kind": "hospital",
    "own": "private",
    "emergency": false,
@@ -3373,13 +3110,14 @@
    "addr": "",
    "lat": 33.316411,
    "lon": 44.423062,
-   "km": 22.7
+   "km": 22.7,
+   "enAuto": true
   },
   {
    "id": "node/7934621885",
    "name": "د علاء كامل",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Alaa Kamil Clinic",
+   "nameAr": "د علاء كامل",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3389,13 +3127,14 @@
    "addr": "",
    "lat": 33.293222,
    "lon": 44.404839,
-   "km": 22.7
+   "km": 22.7,
+   "enAuto": true
   },
   {
    "id": "node/8398850717",
    "name": "مستشفى الفردوس",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Firdaws Hospital",
+   "nameAr": "مستشفى الفردوس",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -3405,7 +3144,8 @@
    "addr": "",
    "lat": 33.316385,
    "lon": 44.423098,
-   "km": 22.7
+   "km": 22.7,
+   "enAuto": true
   },
   {
    "id": "way/1193598423",
@@ -3442,8 +3182,8 @@
   {
    "id": "node/5612950421",
    "name": "الدكتورة كوثر الطائي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Kawthar Al-Taie Clinic",
+   "nameAr": "الدكتورة كوثر الطائي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -3453,13 +3193,14 @@
    "addr": "",
    "lat": 33.293662,
    "lon": 44.403887,
-   "km": 22.8
+   "km": 22.8,
+   "enAuto": true
   },
   {
    "id": "node/10537425690",
    "name": "مركز صحي عبدالسلام البهادلي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Abdul-Salam Al-Bahadli Primary Health Center",
+   "nameAr": "مركز صحي عبدالسلام البهادلي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3469,13 +3210,14 @@
    "addr": "بغداد",
    "lat": 33.3511,
    "lon": 44.45937,
-   "km": 22.9
+   "km": 22.9,
+   "enAuto": true
   },
   {
    "id": "node/10846494505",
    "name": "دكتورة زينب",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Zainab Clinic",
+   "nameAr": "دكتورة زينب",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -3485,13 +3227,14 @@
    "addr": "",
    "lat": 33.375937,
    "lon": 44.505657,
-   "km": 22.9
+   "km": 22.9,
+   "enAuto": true
   },
   {
    "id": "node/11483904369",
    "name": "المعاون الطبي ميثم قادر",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Medical Assistant Maytham Qadir",
+   "nameAr": "المعاون الطبي ميثم قادر",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3501,7 +3244,8 @@
    "addr": "شارع المثنى بن حارث",
    "lat": 33.352386,
    "lon": 44.462382,
-   "km": 22.9
+   "km": 22.9,
+   "enAuto": true
   },
   {
    "id": "way/991872567",
@@ -3538,8 +3282,8 @@
   {
    "id": "node/11966151228",
    "name": "مستشفى القصر الابيض 2",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "White Palace Hospital 2",
+   "nameAr": "مستشفى القصر الابيض 2",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -3549,13 +3293,14 @@
    "addr": "",
    "lat": 33.320536,
    "lon": 44.421323,
-   "km": 23.1
+   "km": 23.1,
+   "enAuto": true
   },
   {
    "id": "node/6400917288",
    "name": "مركز الدورة الصحي (m&h)",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Dora Primary Health Center (M&H)",
+   "nameAr": "مركز الدورة الصحي (m&h)",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -3565,13 +3310,14 @@
    "addr": "",
    "lat": 33.254395,
    "lon": 44.379101,
-   "km": 23.2
+   "km": 23.2,
+   "enAuto": true
   },
   {
    "id": "node/11146975134",
    "name": "السعدون",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Saadoun Clinic",
+   "nameAr": "السعدون",
    "kind": "clinic",
    "own": "public",
    "emergency": false,
@@ -3581,13 +3327,14 @@
    "addr": "بغداد",
    "lat": 33.32296,
    "lon": 44.42184,
-   "km": 23.3
+   "km": 23.3,
+   "enAuto": true
   },
   {
    "id": "node/5650573121",
    "name": "مركز صحي فخر الدين ال جميل",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Fakhr Al-Din Al-Jamil Primary Health Center",
+   "nameAr": "مركز صحي فخر الدين ال جميل",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -3597,13 +3344,14 @@
    "addr": "",
    "lat": 33.323121,
    "lon": 44.42172,
-   "km": 23.3
+   "km": 23.3,
+   "enAuto": true
   },
   {
    "id": "node/11018130705",
    "name": "زيد عمر",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Zaid Omar Clinic",
+   "nameAr": "زيد عمر",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3613,13 +3361,14 @@
    "addr": "",
    "lat": 33.287437,
    "lon": 44.394808,
-   "km": 23.3
+   "km": 23.3,
+   "enAuto": true
   },
   {
    "id": "node/10537462228",
    "name": "مركز صحي حي النصر",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Hay Al-Nasr Primary Health Center",
+   "nameAr": "مركز صحي حي النصر",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3629,13 +3378,14 @@
    "addr": "بغداد",
    "lat": 33.3889,
    "lon": 44.52504,
-   "km": 23.4
+   "km": 23.4,
+   "enAuto": true
   },
   {
    "id": "node/11289094709",
    "name": "مجمع النصر الطبي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Nasr Medical Complex",
+   "nameAr": "مجمع النصر الطبي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3645,7 +3395,8 @@
    "addr": "",
    "lat": 33.388587,
    "lon": 44.524854,
-   "km": 23.4
+   "km": 23.4,
+   "enAuto": true
   },
   {
    "id": "node/5022974323",
@@ -3666,7 +3417,7 @@
   {
    "id": "node/4580554695",
    "name": "صحتك اولا",
-   "nameEn": "",
+   "nameEn": "Your Health First Clinic",
    "nameAr": "صحتك اولا",
    "kind": "clinic",
    "own": "",
@@ -3677,13 +3428,14 @@
    "addr": "",
    "lat": 33.360727,
    "lon": 44.46359,
-   "km": 23.5
+   "km": 23.5,
+   "enAuto": true
   },
   {
    "id": "node/8042739885",
    "name": "مجمع الدكتوره عاتكه الطبي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Atika Medical Complex",
+   "nameAr": "مجمع الدكتوره عاتكه الطبي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3693,7 +3445,8 @@
    "addr": "شارع الكهرباء",
    "lat": 33.377008,
    "lon": 44.490945,
-   "km": 23.6
+   "km": 23.6,
+   "enAuto": true
   },
   {
    "id": "node/8814043668",
@@ -3712,26 +3465,10 @@
    "km": 23.7
   },
   {
-   "id": "node/4586976592",
-   "name": "مزرعة د. طريف الغريري",
-   "nameEn": "",
-   "nameAr": "مزرعة د. طريف الغريري",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "ابو 5",
-   "lat": 33.073126,
-   "lon": 44.407122,
-   "km": 23.7
-  },
-  {
    "id": "way/83049192",
    "name": "مستشفى الحبيبية",
    "nameEn": "Habibiya Hospital",
-   "nameAr": "",
+   "nameAr": "مستشفى الحبيبية",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -3746,8 +3483,8 @@
   {
    "id": "way/1230672794",
    "name": "المركز الصحي في الرشاد سابقا",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Rashad Primary Health Center (former)",
+   "nameAr": "المركز الصحي في الرشاد سابقا",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -3757,7 +3494,8 @@
    "addr": "",
    "lat": 33.388789,
    "lon": 44.515947,
-   "km": 23.7
+   "km": 23.7,
+   "enAuto": true
   },
   {
    "id": "node/4439578689",
@@ -3776,41 +3514,9 @@
    "km": 23.8
   },
   {
-   "id": "node/8810764317",
-   "name": "مختبرات النخبة",
-   "nameEn": "Alnokhba lab",
-   "nameAr": "",
-   "kind": "clinic",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "شارع الجامعة",
-   "lat": 33.281369,
-   "lon": 44.384343,
-   "km": 23.8
-  },
-  {
-   "id": "node/4344353006",
-   "name": "مختبر الدكتور منذر للتحليلات المرضية",
-   "nameEn": "",
-   "nameAr": "مختبر الدكتور منذر للتحليلات المرضية",
-   "kind": "doctors",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "Khulfalfa Street",
-   "lat": 33.32417,
-   "lon": 44.413879,
-   "km": 23.9
-  },
-  {
    "id": "node/5402926021",
    "name": "الدكتور عدنان محمد الجبوري",
-   "nameEn": "",
+   "nameEn": "Dr. Adnan Mohammed Al-Jubouri Clinic",
    "nameAr": "الدكتور عدنان محمد الجبوري",
    "kind": "clinic",
    "own": "",
@@ -3821,7 +3527,8 @@
    "addr": "بغداد السعدون",
    "lat": 33.322917,
    "lon": 44.413712,
-   "km": 23.9
+   "km": 23.9,
+   "enAuto": true
   },
   {
    "id": "node/8846043311",
@@ -3838,22 +3545,6 @@
    "lat": 33.330784,
    "lon": 44.420707,
    "km": 23.9
-  },
-  {
-   "id": "node/4335498204",
-   "name": "مختبر الدكتور منذر مصطفى",
-   "nameEn": "",
-   "nameAr": "مختبر الدكتور منذر مصطفى",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.324238,
-   "lon": 44.41372,
-   "km": 24.0
   },
   {
    "id": "node/8913825849",
@@ -3891,7 +3582,7 @@
    "id": "node/6089569285",
    "name": "الدكتورة ايمان عباس فاضل",
    "nameEn": "Dr. Iman Abbas F.",
-   "nameAr": "",
+   "nameAr": "الدكتورة ايمان عباس فاضل",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3906,8 +3597,8 @@
   {
    "id": "node/8358849517",
    "name": "علي سعود عبدالرزاق جراحة اورام الغدة النخامية بالناظور",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Ali Saud Abdulrazzaq (Endoscopic Pituitary Surgery)",
+   "nameAr": "علي سعود عبدالرزاق جراحة اورام الغدة النخامية بالناظور",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -3917,13 +3608,14 @@
    "addr": "",
    "lat": 33.333512,
    "lon": 44.420963,
-   "km": 24.1
+   "km": 24.1,
+   "enAuto": true
   },
   {
    "id": "node/6252152785",
    "name": "دكتور محمد قاسم",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Mohammed Qasim Clinic",
+   "nameAr": "دكتور محمد قاسم",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3933,7 +3625,8 @@
    "addr": "المهدية الأولى",
    "lat": 33.257314,
    "lon": 44.370478,
-   "km": 24.1
+   "km": 24.1,
+   "enAuto": true
   },
   {
    "id": "node/8907420724",
@@ -3970,8 +3663,8 @@
   {
    "id": "node/9957187028",
    "name": "المركز الصحي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Primary Health Center",
+   "nameAr": "المركز الصحي",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3981,13 +3674,14 @@
    "addr": "",
    "lat": 33.273397,
    "lon": 44.376311,
-   "km": 24.2
+   "km": 24.2,
+   "enAuto": true
   },
   {
    "id": "way/988816837",
    "name": "مستوصف",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dispensary",
+   "nameAr": "مستوصف",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3997,13 +3691,14 @@
    "addr": "",
    "lat": 33.27686,
    "lon": 44.378098,
-   "km": 24.2
+   "km": 24.2,
+   "enAuto": true
   },
   {
    "id": "way/1222358723",
    "name": "مركز صحي الرشاد",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Rashad Primary Health Center",
+   "nameAr": "مركز صحي الرشاد",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -4013,7 +3708,8 @@
    "addr": "",
    "lat": 33.391846,
    "lon": 44.512721,
-   "km": 24.2
+   "km": 24.2,
+   "enAuto": true
   },
   {
    "id": "node/10867061905",
@@ -4029,22 +3725,6 @@
    "addr": "",
    "lat": 33.369084,
    "lon": 44.462712,
-   "km": 24.3
-  },
-  {
-   "id": "node/8380941318",
-   "name": "عوينات الشمس",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.325727,
-   "lon": 44.410911,
    "km": 24.3
   },
   {
@@ -4082,8 +3762,8 @@
   {
    "id": "node/8374726917",
    "name": "الدكتور حامد البكري",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Hamid Al-Bakri Clinic",
+   "nameAr": "الدكتور حامد البكري",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -4093,13 +3773,14 @@
    "addr": "شارع المشجر",
    "lat": 33.32643,
    "lon": 44.410186,
-   "km": 24.4
+   "km": 24.4,
+   "enAuto": true
   },
   {
    "id": "node/10537425676",
    "name": "المركز الصحي الرابع",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Fourth Primary Health Center",
+   "nameAr": "المركز الصحي الرابع",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -4109,13 +3790,14 @@
    "addr": "بغداد",
    "lat": 33.384,
    "lon": 44.48776,
-   "km": 24.4
+   "km": 24.4,
+   "enAuto": true
   },
   {
    "id": "node/4956860521",
    "name": "الرازي ا للسمعيات Al -Razi for Hearing Aids",
    "nameEn": "الرازي ا للسمعيات Al -Razi for Hearing Aids",
-   "nameAr": "",
+   "nameAr": "الرازي ا للسمعيات Al -Razi for Hearing Aids",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -4146,8 +3828,8 @@
   {
    "id": "node/6773693086",
    "name": "مركز صحي الرشيد الثاني",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Rasheed 2 Primary Health Center",
+   "nameAr": "مركز صحي الرشيد الثاني",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -4157,13 +3839,14 @@
    "addr": "",
    "lat": 33.114525,
    "lon": 44.370662,
-   "km": 24.6
+   "km": 24.6,
+   "enAuto": true
   },
   {
    "id": "node/7087781485",
    "name": "عيادة الدكتور سرمد عبد الباري لطب و تجميل الاسنان",
    "nameEn": "Sarmad's dental clinic",
-   "nameAr": "",
+   "nameAr": "عيادة الدكتور سرمد عبد الباري لطب و تجميل الاسنان",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -4179,7 +3862,7 @@
    "id": "node/8913825846",
    "name": "مستشفى الطفل العربي سابقاً",
    "nameEn": "Arab Children's Hospital (Former)",
-   "nameAr": "",
+   "nameAr": "مستشفى الطفل العربي سابقاً",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4192,25 +3875,9 @@
    "km": 24.7
   },
   {
-   "id": "node/9481476517",
-   "name": "طوفان",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "doctors",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.167829,
-   "lon": 44.354736,
-   "km": 24.7
-  },
-  {
    "id": "node/4719029589",
    "name": "مركز الإدريسي الصحي",
-   "nameEn": "",
+   "nameEn": "Al-Idrisi Primary Health Center",
    "nameAr": "مركز الإدريسي الصحي",
    "kind": "hospital",
    "own": "",
@@ -4221,12 +3888,13 @@
    "addr": "",
    "lat": 33.354218,
    "lon": 44.433338,
-   "km": 24.8
+   "km": 24.8,
+   "enAuto": true
   },
   {
    "id": "node/4978168626",
    "name": "دار الرعاية الصحية المسائية",
-   "nameEn": "",
+   "nameEn": "Evening Health Care Center",
    "nameAr": "دار الرعاية الصحية المسائية",
    "kind": "doctors",
    "own": "",
@@ -4237,13 +3905,14 @@
    "addr": "",
    "lat": 33.364455,
    "lon": 44.447566,
-   "km": 24.8
+   "km": 24.8,
+   "enAuto": true
   },
   {
    "id": "way/1218114375",
    "name": "ممرض",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Nurse",
+   "nameAr": "ممرض",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -4253,7 +3922,8 @@
    "addr": "",
    "lat": 33.401619,
    "lon": 44.523734,
-   "km": 24.8
+   "km": 24.8,
+   "enAuto": true
   },
   {
    "id": "node/4978168622",
@@ -4290,8 +3960,8 @@
   {
    "id": "node/6327562889",
    "name": "د. علاء العبيدي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Alaa Al-Obaidi Clinic",
+   "nameAr": "د. علاء العبيدي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -4301,7 +3971,8 @@
    "addr": "",
    "lat": 33.37482,
    "lon": 44.459141,
-   "km": 25.0
+   "km": 25.0,
+   "enAuto": true
   },
   {
    "id": "way/83047293",
@@ -4322,7 +3993,7 @@
   {
    "id": "node/4382402898",
    "name": "المركز الصحي",
-   "nameEn": "",
+   "nameEn": "Primary Health Center",
    "nameAr": "المركز الصحي",
    "kind": "hospital",
    "own": "",
@@ -4333,12 +4004,13 @@
    "addr": "",
    "lat": 33.02397,
    "lon": 44.797746,
-   "km": 25.2
+   "km": 25.2,
+   "enAuto": true
   },
   {
    "id": "node/4553939690",
    "name": "المركز التخصصي لطب الاسنان في مدينة الصدر",
-   "nameEn": "",
+   "nameEn": "Sadr City Specialized Dental Center",
    "nameAr": "المركز التخصصي لطب الاسنان في مدينة الصدر",
    "kind": "hospital",
    "own": "",
@@ -4349,13 +4021,14 @@
    "addr": "Fellah Street",
    "lat": 33.365832,
    "lon": 44.440793,
-   "km": 25.3
+   "km": 25.3,
+   "enAuto": true
   },
   {
    "id": "node/12136656201",
    "name": "مركز الغدير التخصصي للتأهيل",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Ghadeer Specialized Rehabilitation Center",
+   "nameAr": "مركز الغدير التخصصي للتأهيل",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4365,12 +4038,13 @@
    "addr": "شارع العمال",
    "lat": 33.363024,
    "lon": 44.434112,
-   "km": 25.5
+   "km": 25.5,
+   "enAuto": true
   },
   {
    "id": "node/5184858625",
    "name": "المركز الصحي في الصالحية",
-   "nameEn": "",
+   "nameEn": "Al-Salihiya Primary Health Center",
    "nameAr": "المركز الصحي في الصالحية",
    "kind": "hospital",
    "own": "",
@@ -4381,7 +4055,8 @@
    "addr": "",
    "lat": 33.325267,
    "lon": 44.392884,
-   "km": 25.6
+   "km": 25.6,
+   "enAuto": true
   },
   {
    "id": "node/8913876254",
@@ -4402,8 +4077,8 @@
   {
    "id": "node/11316399469",
    "name": "الدكتورةگلاويژ احمد",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Galawezh Ahmed Clinic",
+   "nameAr": "الدكتورةگلاويژ احمد",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4413,13 +4088,14 @@
    "addr": "503-1",
    "lat": 33.353547,
    "lon": 44.418852,
-   "km": 25.7
+   "km": 25.7,
+   "enAuto": true
   },
   {
    "id": "node/6156968386",
    "name": "دكتورة رحاب مجيد",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Rehab Majeed Clinic",
+   "nameAr": "دكتورة رحاب مجيد",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4429,7 +4105,8 @@
    "addr": "",
    "lat": 33.380603,
    "lon": 44.457248,
-   "km": 25.7
+   "km": 25.7,
+   "enAuto": true
   },
   {
    "id": "node/8358849417",
@@ -4451,7 +4128,7 @@
    "id": "node/8613738217",
    "name": "مستشفى الكندي التعليمي",
    "nameEn": "Al-Kindi teaching hospital",
-   "nameAr": "",
+   "nameAr": "مستشفى الكندي التعليمي",
    "kind": "hospital",
    "own": "public",
    "emergency": false,
@@ -4466,8 +4143,8 @@
   {
    "id": "node/11635065278",
    "name": "مستشفى الأمير الاهلي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Ameer Private Hospital",
+   "nameAr": "مستشفى الأمير الاهلي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4477,7 +4154,8 @@
    "addr": "",
    "lat": 33.362118,
    "lon": 44.426807,
-   "km": 25.9
+   "km": 25.9,
+   "enAuto": true
   },
   {
    "id": "way/450682229",
@@ -4499,7 +4177,7 @@
    "id": "node/5879375085",
    "name": "مستشفى الاميرات",
    "nameEn": "Princesses Hospital",
-   "nameAr": "",
+   "nameAr": "مستشفى الاميرات",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4514,8 +4192,8 @@
   {
    "id": "node/8275824317",
    "name": "دكتور هيثم",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Haitham Clinic",
+   "nameAr": "دكتور هيثم",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4525,7 +4203,8 @@
    "addr": "",
    "lat": 33.059198,
    "lon": 44.385548,
-   "km": 26.3
+   "km": 26.3,
+   "enAuto": true
   },
   {
    "id": "node/8915744521",
@@ -4546,7 +4225,7 @@
   {
    "id": "node/5036654322",
    "name": "المركز العراقي الالماني",
-   "nameEn": "",
+   "nameEn": "Iraqi-German Medical Center",
    "nameAr": "المركز العراقي الالماني",
    "kind": "hospital",
    "own": "",
@@ -4557,7 +4236,8 @@
    "addr": "",
    "lat": 33.305427,
    "lon": 44.364999,
-   "km": 26.6
+   "km": 26.6,
+   "enAuto": true
   },
   {
    "id": "node/8913825847",
@@ -4579,7 +4259,7 @@
    "id": "way/83045177",
    "name": "مستشفى الإمام علي",
    "nameEn": "Imam Ali Hospital",
-   "nameAr": "",
+   "nameAr": "مستشفى الإمام علي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4594,8 +4274,8 @@
   {
    "id": "node/14031050479",
    "name": "مركز ابيض الطبي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Abyad Medical Center",
+   "nameAr": "مركز ابيض الطبي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4605,7 +4285,8 @@
    "addr": "",
    "lat": 33.30861,
    "lon": 44.366758,
-   "km": 26.7
+   "km": 26.7,
+   "enAuto": true
   },
   {
    "id": "node/8916634838",
@@ -4627,7 +4308,7 @@
    "id": "node/5806395055",
    "name": "مستشفى الطوارىء القديمة",
    "nameEn": "Baghdad Hospital At Tawari",
-   "nameAr": "",
+   "nameAr": "مستشفى الطوارىء القديمة",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4672,42 +4353,10 @@
    "km": 27.0
   },
   {
-   "id": "node/4336492895",
-   "name": "مستشفى الحارثية الاهلي",
-   "nameEn": "ali moneeb laboratory",
-   "nameAr": "مستشفى الحارثية الاهلي",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.31094,
-   "lon": 44.364668,
-   "km": 27.0
-  },
-  {
-   "id": "way/82692901",
-   "name": "مستشفى اليرموك",
-   "nameEn": "BAGHDAD BIOLOGICAL LABORATORIES YARMUK HOSPITAL",
-   "nameAr": "مستشفى اليرموك",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.293633,
-   "lon": 44.352603,
-   "km": 27.1
-  },
-  {
    "id": "way/987247609",
    "name": "مستشفى المحمودية - Mahmoudia Hospital",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Mahmoudiya General Hospital",
+   "nameAr": "مستشفى المحمودية - Mahmoudia Hospital",
    "kind": "hospital",
    "own": "public",
    "emergency": true,
@@ -4717,13 +4366,14 @@
    "addr": "المحمودية",
    "lat": 33.069521,
    "lon": 44.363946,
-   "km": 27.4
+   "km": 27.4,
+   "enAuto": true
   },
   {
    "id": "node/9620080117",
    "name": "علي هاتو",
    "nameEn": "Ali hato",
-   "nameAr": "",
+   "nameAr": "علي هاتو",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4738,7 +4388,7 @@
   {
    "id": "node/5423721022",
    "name": "مستشفى العالمية",
-   "nameEn": "",
+   "nameEn": "Al-Alamiya (International) Hospital",
    "nameAr": "مستشفى العالمية",
    "kind": "hospital",
    "own": "",
@@ -4749,7 +4399,8 @@
    "addr": "",
    "lat": 33.362462,
    "lon": 44.402275,
-   "km": 27.5
+   "km": 27.5,
+   "enAuto": true
   },
   {
    "id": "node/8913825853",
@@ -4771,7 +4422,7 @@
    "id": "way/939048972",
    "name": "مستشفى الهلال الاحمر",
    "nameEn": "Red Crescent Hospital",
-   "nameAr": "",
+   "nameAr": "مستشفى الهلال الاحمر",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4786,8 +4437,8 @@
   {
    "id": "way/954717506",
    "name": "مركز الشهيد ابو منتظر المحمداوي للاطراف الصناعية و المساند الطبية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Martyr Abu Muntadhar Al-Mohammadawi Prosthetics & Orthotics Center",
+   "nameAr": "مركز الشهيد ابو منتظر المحمداوي للاطراف الصناعية و المساند الطبية",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4797,7 +4448,8 @@
    "addr": "",
    "lat": 33.373448,
    "lon": 44.411849,
-   "km": 27.7
+   "km": 27.7,
+   "enAuto": true
   },
   {
    "id": "node/1966367994",
@@ -4845,22 +4497,6 @@
    "addr": "",
    "lat": 33.34791,
    "lon": 44.378741,
-   "km": 28.1
-  },
-  {
-   "id": "node/13523441001",
-   "name": "معهد الصحة العالي/ المحمودية",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.053308,
-   "lon": 44.366691,
    "km": 28.1
   },
   {
@@ -4944,25 +4580,9 @@
    "km": 28.3
   },
   {
-   "id": "node/4524159390",
-   "name": "معهد المهن الصحية العالي",
-   "nameEn": "",
-   "nameAr": "معهد المهن الصحية العالي",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.351636,
-   "lon": 44.378729,
-   "km": 28.4
-  },
-  {
    "id": "node/4752554721",
    "name": "مستشفى دار السلام الاهلي للعيون",
-   "nameEn": "",
+   "nameEn": "Dar Al-Salam Private Eye Hospital",
    "nameAr": "مستشفى دار السلام الاهلي للعيون",
    "kind": "hospital",
    "own": "",
@@ -4973,12 +4593,13 @@
    "addr": "",
    "lat": 33.321469,
    "lon": 44.354465,
-   "km": 28.4
+   "km": 28.4,
+   "enAuto": true
   },
   {
    "id": "way/220599265",
    "name": "مركز الداخلية الصحي",
-   "nameEn": "",
+   "nameEn": "Ministry of Interior Health Center",
    "nameAr": "مركز الداخلية الصحي",
    "kind": "hospital",
    "own": "",
@@ -4989,13 +4610,14 @@
    "addr": "",
    "lat": 33.291938,
    "lon": 44.336049,
-   "km": 28.4
+   "km": 28.4,
+   "enAuto": true
   },
   {
    "id": "node/12832593311",
    "name": "عيادات السيدة الزهراء الخيرية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Sayyida Al-Zahraa Charity Clinics",
+   "nameAr": "عيادات السيدة الزهراء الخيرية",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5005,7 +4627,8 @@
    "addr": "شارع الرضوانية, بغداد",
    "lat": 33.245523,
    "lon": 44.319234,
-   "km": 28.4
+   "km": 28.4,
+   "enAuto": true
   },
   {
    "id": "node/4873734121",
@@ -5090,7 +4713,7 @@
   {
    "id": "node/4705434789",
    "name": "المركز الصحي في حي السلام",
-   "nameEn": "",
+   "nameEn": "Hay Al-Salam Primary Health Center",
    "nameAr": "المركز الصحي في حي السلام",
    "kind": "hospital",
    "own": "",
@@ -5101,12 +4724,13 @@
    "addr": "",
    "lat": 33.263412,
    "lon": 44.319572,
-   "km": 28.8
+   "km": 28.8,
+   "enAuto": true
   },
   {
    "id": "node/4372106492",
    "name": "عيادات ذو الفقار الطبيه",
-   "nameEn": "",
+   "nameEn": "Dhu Al-Fiqar Medical Clinics",
    "nameAr": "عيادات ذو الفقار الطبيه",
    "kind": "hospital",
    "own": "",
@@ -5117,13 +4741,14 @@
    "addr": "",
    "lat": 33.400958,
    "lon": 44.432106,
-   "km": 28.9
+   "km": 28.9,
+   "enAuto": true
   },
   {
    "id": "node/8443811117",
    "name": "مركز فيتان لزراعة الشعر",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Vitan Hair Transplant Center",
+   "nameAr": "مركز فيتان لزراعة الشعر",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5133,13 +4758,14 @@
    "addr": "",
    "lat": 33.317286,
    "lon": 44.344652,
-   "km": 28.9
+   "km": 28.9,
+   "enAuto": true
   },
   {
    "id": "way/868476238",
    "name": "مستشفى المؤيد الاهلي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Muayyad Private Hospital",
+   "nameAr": "مستشفى المؤيد الاهلي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5149,12 +4775,13 @@
    "addr": "",
    "lat": 33.364145,
    "lon": 44.383626,
-   "km": 28.9
+   "km": 28.9,
+   "enAuto": true
   },
   {
    "id": "way/255002923",
    "name": "مجمع الرحمن الطبي",
-   "nameEn": "",
+   "nameEn": "Al-Rahman Medical Complex",
    "nameAr": "مجمع الرحمن الطبي",
    "kind": "hospital",
    "own": "",
@@ -5165,28 +4792,13 @@
    "addr": "",
    "lat": 33.248478,
    "lon": 44.312661,
-   "km": 29.1
-  },
-  {
-   "id": "node/8003945085",
-   "name": "مختبر مايكرو للتحليلات المرضية",
-   "nameEn": "Micro Lab",
-   "nameAr": "مختبر مايكرو",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "07829500060",
-   "website": "",
-   "addr": "شارع المنصور",
-   "lat": 33.324665,
-   "lon": 44.346801,
-   "km": 29.2
+   "km": 29.1,
+   "enAuto": true
   },
   {
    "id": "way/931215982",
    "name": "مستشفى الخيال",
-   "nameEn": "",
+   "nameEn": "Al-Khayal Hospital",
    "nameAr": "مستشفى الخيال",
    "kind": "hospital",
    "own": "",
@@ -5197,7 +4809,8 @@
    "addr": "",
    "lat": 33.363394,
    "lon": 44.377018,
-   "km": 29.3
+   "km": 29.3,
+   "enAuto": true
   },
   {
    "id": "node/4271082501",
@@ -5234,7 +4847,7 @@
   {
    "id": "node/4426486391",
    "name": "مجمع صحي",
-   "nameEn": "",
+   "nameEn": "Health Complex",
    "nameAr": "مجمع صحي",
    "kind": "hospital",
    "own": "",
@@ -5245,7 +4858,8 @@
    "addr": "كريم سفيح",
    "lat": 33.38979,
    "lon": 44.405826,
-   "km": 29.5
+   "km": 29.5,
+   "enAuto": true
   },
   {
    "id": "node/8913825851",
@@ -5266,7 +4880,7 @@
   {
    "id": "node/2619332724",
    "name": "Dijla Hospital مستشفى دجلة",
-   "nameEn": "",
+   "nameEn": "Dijla Hospital",
    "nameAr": "Dijla Hospital مستشفى دجلة",
    "kind": "hospital",
    "own": "",
@@ -5277,13 +4891,14 @@
    "addr": "",
    "lat": 33.369709,
    "lon": 44.372337,
-   "km": 30.1
+   "km": 30.1,
+   "enAuto": true
   },
   {
    "id": "node/7925460885",
    "name": "مكتب الحساسية و الربو",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Allergy & Asthma Clinic",
+   "nameAr": "مكتب الحساسية و الربو",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5293,7 +4908,8 @@
    "addr": "",
    "lat": 33.353732,
    "lon": 44.357895,
-   "km": 30.1
+   "km": 30.1,
+   "enAuto": true
   },
   {
    "id": "node/5427233721",
@@ -5314,7 +4930,7 @@
   {
    "id": "node/5038150021",
    "name": "المركز الصحي في معامل الطابوق",
-   "nameEn": "",
+   "nameEn": "Brick Factories Primary Health Center",
    "nameAr": "المركز الصحي في معامل الطابوق",
    "kind": "hospital",
    "own": "",
@@ -5325,7 +4941,8 @@
    "addr": "",
    "lat": 33.397573,
    "lon": 44.83417,
-   "km": 30.3
+   "km": 30.3,
+   "enAuto": true
   },
   {
    "id": "node/6707857487",
@@ -5346,7 +4963,7 @@
   {
    "id": "node/4354449996",
    "name": "مستشفى البنوك",
-   "nameEn": "",
+   "nameEn": "Al-Bunook Hospital",
    "nameAr": "مستشفى البنوك الاهليه",
    "kind": "hospital",
    "own": "public",
@@ -5357,7 +4974,8 @@
    "addr": "البنوك شارع البانزين خانه",
    "lat": 33.399986,
    "lon": 44.40269,
-   "km": 30.5
+   "km": 30.5,
+   "enAuto": true
   },
   {
    "id": "node/4550704705",
@@ -5426,8 +5044,8 @@
   {
    "id": "node/7207473285",
    "name": "مركز حي أور الطبي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Hay Ur Medical Center",
+   "nameAr": "مركز حي أور الطبي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5437,7 +5055,8 @@
    "addr": "",
    "lat": 33.41575,
    "lon": 44.422007,
-   "km": 30.7
+   "km": 30.7,
+   "enAuto": true
   },
   {
    "id": "node/4336516291",
@@ -5458,8 +5077,8 @@
   {
    "id": "node/8327157217",
    "name": "دكتوره مي شوقي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. May Shawqi Clinic",
+   "nameAr": "دكتوره مي شوقي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5469,7 +5088,8 @@
    "addr": "",
    "lat": 33.375871,
    "lon": 44.365992,
-   "km": 31.0
+   "km": 31.0,
+   "enAuto": true
   },
   {
    "id": "way/91323060",
@@ -5486,22 +5106,6 @@
    "lat": 33.362605,
    "lon": 44.352627,
    "km": 31.1
-  },
-  {
-   "id": "node/5095080725",
-   "name": "مختبر الروز",
-   "nameEn": "alroz lab",
-   "nameAr": "مختبر الروز",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "07732664745",
-   "website": "",
-   "addr": "شارع صليخ 600",
-   "lat": 33.390569,
-   "lon": 44.375588,
-   "km": 31.5
   },
   {
    "id": "way/85863854",
@@ -5522,8 +5126,8 @@
   {
    "id": "node/8754205217",
    "name": "د.سعيد عبدالغني الموسوي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Dr. Saeed Abdul-Ghani Al-Musawi Clinic",
+   "nameAr": "د.سعيد عبدالغني الموسوي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5533,7 +5137,8 @@
    "addr": "سوق شلال",
    "lat": 33.415754,
    "lon": 44.401655,
-   "km": 31.9
+   "km": 31.9,
+   "enAuto": true
   },
   {
    "id": "way/1288442727",
@@ -5570,7 +5175,7 @@
   {
    "id": "node/4663294012",
    "name": "مستشفى القائم العام",
-   "nameEn": "",
+   "nameEn": "Al-Qaim General Hospital",
    "nameAr": "مستشفى القائم العام",
    "kind": "hospital",
    "own": "public",
@@ -5581,12 +5186,13 @@
    "addr": "",
    "lat": 33.423434,
    "lon": 44.408657,
-   "km": 32.2
+   "km": 32.2,
+   "enAuto": true
   },
   {
    "id": "node/4980440122",
    "name": "مشتشفى الزهراء الجراحي",
-   "nameEn": "",
+   "nameEn": "Al-Zahraa Surgical Hospital",
    "nameAr": "مشتشفى الزهراء الجراحي",
    "kind": "hospital",
    "own": "",
@@ -5597,13 +5203,14 @@
    "addr": "",
    "lat": 33.368317,
    "lon": 44.341415,
-   "km": 32.3
+   "km": 32.3,
+   "enAuto": true
   },
   {
    "id": "node/9104986981",
    "name": "مركز الشفاء التخصصي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Shifa Specialty Center",
+   "nameAr": "مركز الشفاء التخصصي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5613,13 +5220,14 @@
    "addr": "",
    "lat": 32.932949,
    "lon": 44.77349,
-   "km": 32.3
+   "km": 32.3,
+   "enAuto": true
   },
   {
    "id": "node/10980553505",
    "name": "مستشفى الصويرة لعام",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Suwaira General Hospital",
+   "nameAr": "مستشفى الصويرة لعام",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5629,7 +5237,8 @@
    "addr": "",
    "lat": 32.932028,
    "lon": 44.777828,
-   "km": 32.6
+   "km": 32.6,
+   "enAuto": true
   },
   {
    "id": "node/2202187518",
@@ -5650,7 +5259,7 @@
   {
    "id": "node/4657130395",
    "name": "مستشفى الكاظمية الخاص / النواب",
-   "nameEn": "",
+   "nameEn": "Kadhimiya Private Hospital (Al-Nuwab)",
    "nameAr": "مستشفى الكاظمية الخاص / النواب",
    "kind": "hospital",
    "own": "private",
@@ -5661,7 +5270,8 @@
    "addr": "",
    "lat": 33.370488,
    "lon": 44.33788,
-   "km": 32.7
+   "km": 32.7,
+   "enAuto": true
   },
   {
    "id": "node/2202187519",
@@ -5682,7 +5292,7 @@
   {
    "id": "node/4995782525",
    "name": "المجمع الطبي الاسلامي",
-   "nameEn": "",
+   "nameEn": "Islamic Medical Complex",
    "nameAr": "المجمع الطبي الاسلامي",
    "kind": "hospital",
    "own": "",
@@ -5693,12 +5303,13 @@
    "addr": "",
    "lat": 33.299322,
    "lon": 44.290187,
-   "km": 32.7
+   "km": 32.7,
+   "enAuto": true
   },
   {
    "id": "node/4462730794",
    "name": "مركز طبي",
-   "nameEn": "",
+   "nameEn": "Medical Center",
    "nameAr": "مركز لرعاية الحيوانات الاليفة",
    "kind": "hospital",
    "own": "",
@@ -5709,13 +5320,14 @@
    "addr": "",
    "lat": 33.313155,
    "lon": 44.296343,
-   "km": 32.8
+   "km": 32.8,
+   "enAuto": true
   },
   {
    "id": "node/11396410769",
    "name": "العياده التمريضيه",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Nursing Clinic",
+   "nameAr": "العياده التمريضيه",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5725,12 +5337,13 @@
    "addr": "",
    "lat": 33.401832,
    "lon": 44.369278,
-   "km": 32.8
+   "km": 32.8,
+   "enAuto": true
   },
   {
    "id": "node/5091320324",
    "name": "مستشفى الرازي",
-   "nameEn": "",
+   "nameEn": "Al-Razi Hospital",
    "nameAr": "مستشفى الرازي",
    "kind": "hospital",
    "own": "",
@@ -5741,7 +5354,8 @@
    "addr": "",
    "lat": 32.931381,
    "lon": 44.784318,
-   "km": 33.0
+   "km": 33.0,
+   "enAuto": true
   },
   {
    "id": "node/5389629630",
@@ -5762,7 +5376,7 @@
   {
    "id": "node/4728644889",
    "name": "مركز الدهلكي الصحي",
-   "nameEn": "",
+   "nameEn": "Al-Dahlaki Primary Health Center",
    "nameAr": "مركز الدهلكي الصحي",
    "kind": "hospital",
    "own": "",
@@ -5773,7 +5387,8 @@
    "addr": "",
    "lat": 33.3939,
    "lon": 44.3501,
-   "km": 33.5
+   "km": 33.5,
+   "enAuto": true
   },
   {
    "id": "node/5257822622",
@@ -5794,8 +5409,8 @@
   {
    "id": "node/10157510617",
    "name": "عياده الربيع التمريضيه",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Rabee Nursing Clinic",
+   "nameAr": "عياده الربيع التمريضيه",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5805,7 +5420,8 @@
    "addr": "",
    "lat": 33.407201,
    "lon": 44.359482,
-   "km": 33.8
+   "km": 33.8,
+   "enAuto": true
   },
   {
    "id": "node/997416381",
@@ -5875,7 +5491,7 @@
    "id": "node/13337155300",
    "name": "مركز اللطيفية للرعاية الصحية الاولية",
    "nameEn": "Latifiyah Primary Health Care Center",
-   "nameAr": "",
+   "nameAr": "مركز اللطيفية للرعاية الصحية الاولية",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5890,8 +5506,8 @@
   {
    "id": "node/6560387085",
    "name": "مركز الزهراء الصحي النموذجي",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Zahraa Model Primary Health Center",
+   "nameAr": "مركز الزهراء الصحي النموذجي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5901,7 +5517,8 @@
    "addr": "حي الزهور الصويره الكوت",
    "lat": 32.9109,
    "lon": 44.789495,
-   "km": 35.2
+   "km": 35.2,
+   "enAuto": true
   },
   {
    "id": "node/5133105021",
@@ -5922,8 +5539,8 @@
   {
    "id": "node/6146456987",
    "name": "عمارة الوليد ( عيادات اطباء )",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Waleed Building (Doctors' Clinics)",
+   "nameAr": "عمارة الوليد ( عيادات اطباء )",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5933,13 +5550,14 @@
    "addr": "",
    "lat": 33.362294,
    "lon": 44.279691,
-   "km": 36.7
+   "km": 36.7,
+   "enAuto": true
   },
   {
    "id": "node/10995221305",
    "name": "صحة وعافية",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Sihha wa Afiya Clinic",
+   "nameAr": "صحة وعافية",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5949,12 +5567,13 @@
    "addr": "",
    "lat": 33.370235,
    "lon": 44.285061,
-   "km": 36.7
+   "km": 36.7,
+   "enAuto": true
   },
   {
    "id": "node/4235554889",
    "name": "مستشفى الحكيم العام",
-   "nameEn": "",
+   "nameEn": "Al-Hakeem General Hospital",
    "nameAr": "استشارية",
    "kind": "hospital",
    "own": "public",
@@ -5965,7 +5584,8 @@
    "addr": "الشعله قطاع 6",
    "lat": 33.370392,
    "lon": 44.279007,
-   "km": 37.2
+   "km": 37.2,
+   "enAuto": true
   },
   {
    "id": "node/8918746009",
@@ -6018,7 +5638,7 @@
   {
    "id": "node/5327256421",
    "name": "دار الشفاء الاهلي ابي غربب",
-   "nameEn": "",
+   "nameEn": "Dar Al-Shifa Private Clinic, Abu Ghraib",
    "nameAr": "دار الشفاء الاهلي ابي غربب",
    "kind": "hospital",
    "own": "",
@@ -6029,7 +5649,8 @@
    "addr": "",
    "lat": 33.301154,
    "lon": 44.186335,
-   "km": 41.9
+   "km": 41.9,
+   "enAuto": true
   },
   {
    "id": "node/4423547690",
@@ -6067,7 +5688,7 @@
    "id": "node/8309210729",
    "name": "مركز صحي الجلاعطة",
    "nameEn": "al-jalatah hospital",
-   "nameAr": "",
+   "nameAr": "مركز صحي الجلاعطة",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -6082,7 +5703,7 @@
   {
    "id": "node/4727166189",
    "name": "مستشفى الحسينية العام",
-   "nameEn": "",
+   "nameEn": "Al-Husseiniya General Hospital",
    "nameAr": "مستشفى الحسينية العام",
    "kind": "hospital",
    "own": "public",
@@ -6093,13 +5714,14 @@
    "addr": "",
    "lat": 33.5483,
    "lon": 44.4171,
-   "km": 43.7
+   "km": 43.7,
+   "enAuto": true
   },
   {
    "id": "node/7599886987",
    "name": "مركز الحسينية التخصصي لطب الاسنان",
-   "nameEn": "",
-   "nameAr": "",
+   "nameEn": "Al-Husseiniya Specialized Dental Center",
+   "nameAr": "مركز الحسينية التخصصي لطب الاسنان",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -6109,7 +5731,8 @@
    "addr": "",
    "lat": 33.54837,
    "lon": 44.406194,
-   "km": 44.1
+   "km": 44.1,
+   "enAuto": true
   }
  ]
 }

@@ -78,6 +78,48 @@ def ownership(t):
     return ""
 
 
+NAMES_FILE = "scripts/medical_names_en.json"
+AR = __import__("re").compile(r"[\u0600-\u06FF]")
+
+
+def translate_ar(text):
+    """구글 번역(무료 주소)으로 아랍어 → 영어. 실패하면 빈 문자열."""
+    try:
+        r = requests.get("https://translate.googleapis.com/translate_a/single",
+                         params={"client": "gtx", "sl": "ar", "tl": "en", "dt": "t", "q": text}, headers=HEAD, timeout=20)
+        j = r.json()
+        return "".join(seg[0] for seg in j[0] if seg and seg[0]).strip()
+    except Exception:  # noqa
+        return ""
+
+
+def fill_english(items):
+    """영어 이름이 없는 시설: 이름표(scripts/medical_names_en.json) → 없으면 자동 번역 후 표에 추가"""
+    try:
+        names = json.load(open(NAMES_FILE, encoding="utf-8"))
+    except Exception:  # noqa
+        names = {}
+    added = 0
+    for x in items:
+        if not x.get("nameAr") and AR.search(x["name"]):
+            x["nameAr"] = x["name"]
+        if x.get("nameEn") or not AR.search(x["name"]):
+            continue
+        en = names.get(x["name"])
+        if not en and added < 80:
+            en = translate_ar(x["name"])
+            if en:
+                names[x["name"]] = en; added += 1
+                time.sleep(0.3)
+        if en:
+            x["nameEn"] = en
+            x["enAuto"] = True   # 사람이 아니라 표·번역으로 채운 영어 이름
+    if added:
+        with open(NAMES_FILE, "w", encoding="utf-8") as f:
+            json.dump(names, f, ensure_ascii=False, indent=1)
+        print(f"새로 번역한 이름 {added}개 → {NAMES_FILE}")
+
+
 def main():
     try:
         els = overpass()
@@ -114,7 +156,7 @@ def main():
         })
     # ---- 잡음 거르기 ----
     import re as _re
-    BAD = _re.compile(r"بيطري|veterinar|\bvet\b|ادارة|إدارة|مقر|دائرة|directorate|office|nuclear|military|air force|\bbase\b|عسكري|دواجن|poultry|pharmac|صيدلي", _re.I)
+    BAD = _re.compile(r"بيطري|veterinar|\bvet\b|ادارة|إدارة|مقر|دائرة|directorate|office|nuclear|military|air force|\bbase\b|عسكري|دواجن|poultry|pharmac|صيدلي|مختبر|\blab\b|laborator|عوينات|بصريات|optic|مزرعة|\bfarm\b|شركة|شركه|تأمين|insurance|روحاني|المعالج|مكتب تسجيل|معهد|institute|سكني|residential|محل |بيت دودي|طوفان", _re.I)
     items = [x for x in items if not BAD.search(" ".join((x["name"], x["nameEn"], x["nameAr"])))]
     # 옛날 지명 자료(전부 대문자 'BAGHDAD HOSPITAL ...')는 근처에 같은 병원이 따로 있으면 뺀다
     def legacy(x):
@@ -146,6 +188,7 @@ def main():
         n = " ".join((x["name"], x["nameEn"], x["nameAr"]))
         if x["kind"] == "hospital" and CLIN.search(n) and not HOSP.search(n):
             x["kind"] = "clinic"
+    fill_english(items)
     # 의원·보건소는 가까운 곳(25km)만 — 너무 많아서 지도가 복잡해짐
     items = [x for x in items if x["kind"] == "hospital" or x["km"] <= 25]
     items.sort(key=lambda x: x["km"])
