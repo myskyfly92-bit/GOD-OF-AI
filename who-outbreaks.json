@@ -9,6 +9,14 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "New global roadmap launched to tackle hypertension in pregnancy, a leading cause of maternal and newborn deaths",
+      "date": "2026-10-08T08:12:34Z",
+      "summary": "The World Health Organization (WHO) and partners today launched a new global roadmap to tackle hypertensive disorders of pregnancy, including pre-eclampsia, which affect millions of women every year.",
+      "link": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO issues first global guidelines on child and adolescent obesity",
       "date": "2026-10-07T07:09:37Z",
       "summary": "The World Health Organization (WHO) today released its first guidelines addressing the sharp rise in obesity among children and adolescents, setting out how health systems and health workers can deliver timely, evidence-based and people-centred care.",
@@ -120,14 +128,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "WHO reports latest global trends in cholera, meningitis and plague",
-      "date": "2026-09-29T09:50:55Z",
-      "summary": "Cholera deaths increased by 30% in 2025, despite fewer cases being reported to the World Health Organization (WHO). In 2025, 47 countries reported 451 499 cholera cases and 7870 deaths to WHO. This is the highest number of annual cholera deaths reported to WHO since 1999.",
-      "link": "https://www.who.int/news/item/29-09-2026-who-reports-latest-global-trends-in-cholera--meningitis-and-plague",
-      "newsType": "News release"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-09-25T15:30:18Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON610"
     }
   ],
-  "generatedAt": "2026-10-08T03:27:50.333308+00:00"
+  "generatedAt": "2026-10-08T12:26:01.826045+00:00"
 }
