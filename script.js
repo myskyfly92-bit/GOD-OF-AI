@@ -3631,8 +3631,9 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   function tick(t) {
     const dt = last ? Math.min(0.05, (t - last) / 1000) : 0;
     last = t;
-    if (!hover && !acting && t > busyUntil) decide(t);
-    if (hover) target = 0;
+    const held = window.__mascotHold;           // 줄 타기 장면 중에는 그 자리에 멈춰 서 있는다
+    if (!hover && !held && !acting && t > busyUntil) decide(t);
+    if (hover || held) target = 0;
 
     // 달리는 그림이 제자리에서 헛발질하지 않도록 속도는 바로 붙고 바로 멈춘다
     speed = target;
@@ -7173,12 +7174,16 @@ function hseWeldWord(host, wordEl, onDone) {
     const runner = document.querySelector(".mascot-runner");
     const tab = document.querySelector('.group-btn[data-group="safety"]');
     if (!runner || !tab || innerWidth < 1100 || document.body.classList.contains("hg-running")) return;
-    const rr = runner.getBoundingClientRect(), tr = tab.getBoundingClientRect();
+    let rr = runner.getBoundingClientRect(), tr = tab.getBoundingClientRect();
     const next = tab.nextElementSibling, nr = next ? next.getBoundingClientRect() : null;
     const card = document.querySelector(".view.active .grid > .panel");
     const cardTop = card ? card.getBoundingClientRect().top : tr.bottom + 40;
     if (!rr.width || !tr.width || tr.top < 0) return;
     running = true;
+    // 배너 마스코트를 먼저 그 자리에 세운다 (서 있는 정면 그림 = 뛰어내리기 영상 첫 장면)
+    window.__mascotHold = true;
+    await wait(120);
+    rr = runner.getBoundingClientRect();
     const sx = scrollX, sy = scrollY;
     // 고리 걸 곳: '안전' 탭 오른쪽 옆 (다음 탭과의 틈), 탭 윗부분 높이
     // 단, 서 있는 발이 아래 카드 영역을 넘지 않게 높이를 맞춘다
@@ -7233,13 +7238,14 @@ function hseWeldWord(host, wordEl, onDone) {
       const hx = ax - HP.x, hy = ay - HP.y;                              // 고리 걸 때 서 있을 자리
       const hookW = 135 / 220 * Hk, STAND_W = 196 / 200 * H;            // 그림 폭 (가운데를 맞추려고)
       const runX = hx + (hookW - RUN_W) / 2, standX = hx + (hookW - STAND_W) / 2;
-      runner.style.visibility = "hidden";
-      img.style.height = H + "px";
+
       // 1) 배너에서 아래 탭 줄로 뛰어내리기 (구글 플로우 영상: 돌아서기 → 폴짝 → 착지 → 왼쪽으로 달리기 시작)
       const cl = rr.left + rr.width / 2 + sx - DROP.cx0, ct = y0 - DROP.top0;
       const D = floor - (ct + DROP.foot);                               // 영상 속 높이에서 더 내려가야 할 거리
       const runMax = Math.max(0, Math.min(1.35 * 240, cl + DROP.cxEnd - RUN_W / 2 - hx));  // '안전'을 지나치지 않게
-      await pose(fresh(SRC.drop), DROP.h); at(cl, ct);
+      at(cl, ct);
+      await pose(fresh(SRC.drop), DROP.h);
+      runner.style.visibility = "hidden";                               // 새 그림이 준비된 같은 순간에 바꿔 끼운다 (사라졌다 나오지 않게)
       await anim(4000, (t) => {
         const sec = t * 4;
         const fall = sec < 1.0 ? 0 : sec > 1.85 ? 1 : Math.pow((sec - 1.0) / 0.85, 1.6);   // 공중에 떠 있는 동안 아래로
@@ -7278,8 +7284,9 @@ function hseWeldWord(host, wordEl, onDone) {
         at(hl + (HOPUP.cxEnd - HOPUP.cx0) * 0, ht - U * up);
       });
     } finally {
-      root.remove();
       runner.style.visibility = "";
+      root.remove();
+      window.__mascotHold = false;
       running = false;
     }
   }
