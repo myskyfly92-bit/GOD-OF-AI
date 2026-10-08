@@ -101,8 +101,8 @@ def fill_english(items):
         names = {}
     added = 0
     for x in items:
-        if not x.get("nameAr") and AR.search(x["name"]):
-            x["nameAr"] = x["name"]
+        if AR.search(x["name"]):
+            x["nameAr"] = x["name"]   # 아랍어 이름은 항상 원래 이름 그대로
         if x.get("nameEn") or not AR.search(x["name"]):
             continue
         en = names.get(x["name"])
@@ -175,7 +175,7 @@ def main():
     for x in items:
         dup = next((y for y in merged if y["kind"] == x["kind"] and hav((x["lat"], x["lon"]), (y["lat"], y["lon"])) < 0.3), None)
         if dup:
-            for k in ("nameEn", "nameAr", "phone", "website", "beds", "own"):
+            for k in ("phone", "website", "beds", "own"):   # 이름은 섞지 않는다 (다른 병원 이름이 붙지 않게)
                 if not dup.get(k) and x.get(k): dup[k] = x[k]
             dup["emergency"] = dup["emergency"] or x["emergency"]
             continue
