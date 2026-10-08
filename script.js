@@ -5855,13 +5855,18 @@ async function clinicCall(action, payload) {
     return html;
   }
 
+  // 질문 예시: 이 중에서 5개씩 골라 보여 주고, 창이 열려 있는 동안 주기적으로 바꾼다
   const SUGGEST = [
-    "고소작업 안전난간 설치 기준",
-    "밀폐공간 작업 전에 할 일",
-    "현장 클리닉에 의사가 몇 명 필요해?",
-    "이라크 연장근로 한도는?",
-    "건설 분진 날림 방지 의무",
+    "고소작업 안전난간 설치 기준", "밀폐공간 작업 전에 할 일", "현장 클리닉에 의사가 몇 명 필요해?", "이라크 연장근로 한도는?", "건설 분진 날림 방지 의무",
+    "비계 작업발판 폭 기준은?", "안전대 부착설비 설치 기준", "개구부 덮개 기준", "사다리 사용 시 지켜야 할 것", "고소작업대 안전수칙",
+    "크레인 인양작업 신호수 배치 기준", "줄걸이 와이어로프 폐기 기준", "지게차 운전 자격과 안전수칙", "굴착 깊이별 흙막이 기준", "굴착기로 인양작업 해도 돼?",
+    "용접 작업 화재감시자 배치 기준", "가스 용기 보관 기준", "전기작업 정전 잠금(LOTO) 절차", "임시 분전반 누전차단기 기준", "감전 예방 접지 기준",
+    "밀폐공간 산소농도 적정 기준", "황화수소 노출 기준", "폭염 시 옥외작업 휴식 기준", "이라크 여름철 옥외작업 금지 시간", "보호구 지급 의무 범위",
+    "안전보건교육 시간 기준", "신규 채용자 교육 내용", "TBM 기록 남겨야 해?", "위험성평가 실시 시기", "작업중지 요건은?",
+    "중대재해 발생 시 보고 절차", "이라크 산업재해 신고 기한", "이라크 근로자 연차휴가 일수", "이라크 노동법 야간근로 규정", "이라크 외국인 근로자 고용 규정",
+    "소화기 설치 기준", "비상대피로 확보 기준", "건설폐기물 보관 기준", "소음 노출 기준과 청력보호구", "근골격계 부담작업 유해요인 조사",
   ];
+  const pickSugs = (n) => { const a = SUGGEST.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a.slice(0, n); };
 
   const root = document.createElement("div");
   root.className = "ai-assist";
@@ -5881,7 +5886,7 @@ async function clinicCall(action, payload) {
       <div class="ai-log" aria-live="polite">
         <div class="ai-msg ai-bot ai-hello">
           <p>질문하거나 📷 현장 사진을 올려 보세요. 관련 조문을 찾아 <b>한국 법</b>과 <b>이라크 법</b>을 나란히 알려 드려요.</p>
-          <div class="ai-sugs">${SUGGEST.map((q) => `<button type="button">${esc(q)}</button>`).join("")}</div>
+          <div class="ai-sugs"></div>
         </div>
       </div>
       <div class="ai-preview" hidden><img alt="첨부한 사진"><button type="button" aria-label="사진 빼기">✕</button></div>
@@ -5940,7 +5945,27 @@ async function clinicCall(action, payload) {
   addEventListener("resize", () => { if (panel.style.width) { const r = panel.getBoundingClientRect(); setSize(r.width, r.height, false); } });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) open(false); });
 
-  root.querySelectorAll(".ai-sugs button").forEach((b) => b.onclick = () => { ta.value = b.textContent; send(); });
+  // 질문 예시: 열 때마다 새로 섞고, 열려 있는 동안 15초마다 바꾼다 (마우스를 올려 두면 멈춤)
+  const sugBox = $(".ai-sugs");
+  function drawSugs() {
+    if (!sugBox) return;
+    sugBox.classList.add("swap");
+    setTimeout(() => {
+      sugBox.innerHTML = pickSugs(5).map((q) => `<button type="button">${esc(q)}</button>`).join("") +
+        `<button type="button" class="ai-sug-more" title="다른 예시 보기" aria-label="다른 예시 보기">↻</button>`;
+      sugBox.classList.remove("swap");
+    }, sugBox.childElementCount ? 220 : 0);
+  }
+  if (sugBox) {
+    sugBox.addEventListener("click", (e) => {
+      const b = e.target.closest("button"); if (!b) return;
+      if (b.classList.contains("ai-sug-more")) { drawSugs(); return; }
+      ta.value = b.textContent; send();
+    });
+    drawSugs();
+    setInterval(() => { if (!panel.hidden && !sugBox.matches(":hover") && sugBox.isConnected) drawSugs(); }, 15000);
+    $(".ai-fab").addEventListener("click", () => { if (!panel.hidden) drawSugs(); });
+  }
   ta.addEventListener("input", () => { ta.style.height = "auto"; ta.style.height = Math.min(120, ta.scrollHeight) + "px"; });
   ta.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); send(); } });
   form.addEventListener("submit", (e) => { e.preventDefault(); send(); });

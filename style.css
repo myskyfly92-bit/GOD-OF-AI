@@ -3013,6 +3013,9 @@ html:not(.page-ready) main.grid { opacity: 0; }
   color: var(--text-muted); background: transparent; border: 1px solid var(--border);
 }
 .ai-sugs button:hover { color: var(--cyan); border-color: var(--cyan); }
+.ai-sugs { transition: opacity .22s ease; }
+.ai-sugs.swap { opacity: 0; }
+.ai-sugs .ai-sug-more { padding-left: 10px; padding-right: 10px; font-size: 13px; }
 .ai-srcs { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; margin-top: 10px; }
 .ai-srcs > span { font-size: 11px; color: var(--text-dim); margin-right: 2px; }
 .ai-src {
