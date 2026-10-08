@@ -7155,7 +7155,7 @@ function hseWeldWord(host, wordEl, onDone) {
   const DROP = { h: 140.5, cx0: 46.7, top0: 36.8, foot: 136.4, cxEnd: 33.0, cxLand: 42.9 }, HOPUP = { h: 140.5, cx0: 42.9, cxEnd: 47.4, top1: 36.8, foot: 137.7 };
   const RUN_W = 114 / 220 * 100;
   // 영상마다 캐릭터가 찍힌 크기가 조금씩 달라서, 머리(헬멧) 크기와 키를 기준으로 배너 마스코트와 같아 보이게 맞춘 비율
-  const K = { hook: 0.87, rappel: 0.87, drop: 0.93 };
+  const K = { hook: 0.97, rappel: 1.0, drop: 0.93 };   // 키(몸 높이)가 달리기 그림과 같아 보이게
   ["h", "cx0", "top0", "foot", "cxEnd", "top1", "cxLand"].forEach((k) => { if (k in DROP) DROP[k] *= K.drop; if (k in HOPUP) HOPUP[k] *= K.drop; });
   const H = 100;                                   // 배너 마스코트와 같은 키
   const HOOK_PT = { x: 30 / 135 * (135 * H / 220), y: 30 / 220 * H };   // 고리 거는 손 위치 (영상 기준)
