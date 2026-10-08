@@ -6324,6 +6324,7 @@ function hseWeldWord(host, wordEl, onDone) {
     // ---- 3) 점화 ----
     if (!ignited && t >= T_IGN) {
       ignited = true;
+      tc.clearRect(0, 0, bw, bh); hc.clearRect(0, 0, bw, bh);   // 그은 윤곽선은 지운다 (채운 글자와 두 겹으로 보이지 않게)
       spark(cx, cy, 140, Math.PI * 2, 250, 1100, false);
       if (host2 && !shook) { shook = true; host2.classList.add("weld-shake"); setTimeout(() => host2.classList.remove("weld-shake"), 420); }
     }
@@ -6358,8 +6359,8 @@ function hseWeldWord(host, wordEl, onDone) {
       ctx.globalAlpha = 1;
       // 가장자리 잔열: 점화 직후 강하고 천천히 은은하게
       const heatEdge = 0.35 + 0.65 * (1 - ig);
-      if (canFilter) { ctx.save(); ctx.globalCompositeOperation = "lighter"; ctx.filter = `blur(${Math.max(2, Math.round(fs * 0.05))}px)`; ctx.globalAlpha = heatEdge; ctx.drawImage(edge, bx, by, bw, bh); ctx.restore(); }
-      ctx.globalAlpha = heatEdge * 0.9; ctx.drawImage(edge, bx, by, bw, bh); ctx.globalAlpha = 1;
+      if (canFilter) { ctx.save(); ctx.globalCompositeOperation = "lighter"; ctx.filter = `blur(${Math.max(3, Math.round(fs * 0.07))}px)`; ctx.globalAlpha = heatEdge * 0.8; ctx.drawImage(edge, bx, by, bw, bh); ctx.restore(); }
+      // (주황 테두리는 번진 빛으로만 — 선으로 그리면 글자 가장자리와 두 겹으로 보임)
       // 빛줄기 한 번 쓸고 지나가기
       const sp = (t - T_IGN - T_COOL * 0.55) / T_SHEEN;
       if (sp > 0 && sp < 1) {
