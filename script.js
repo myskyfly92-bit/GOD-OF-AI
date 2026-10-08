@@ -3293,7 +3293,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     return out;
   }
   // 눌렀을 때 대답
-  const POKES = ["앗, 간지러워요!", "저 순찰 중이에요!", "부르셨어요? 안전 이상 무!", "한 번 더 누르면… 안전교육!", "충성! 🫡", "헤헤, 오늘도 안전!"];
+  const POKES = ["앗, 간지러워요!", "저 헌수호예요! 순찰 중!", "헌수호 출동! 안전 이상 무!", "부르셨어요? 안전 이상 무!", "한 번 더 누르면… 안전교육!", "충성! 🫡", "헤헤, 오늘도 안전!"];
   const MAX_SPEED = 55;      // px/초 (달리는 그림에 맞춘 속도)
   // 달릴 때는 옆모습 달리기 움직임(투명 배경 움직이는 그림), 멈추면 원래 마스코트 그림
   let STAND_SRC = home.getAttribute("src");
@@ -5907,47 +5907,106 @@ async function clinicCall(action, payload) {
 })();
 
 /* ==========================================================
-   안전 도우미 캐릭터 안내 (처음 방문 시 자동 · 왼쪽 아래 '사용 안내' 버튼으로 다시 보기)
-   ① 대분류 탭 6개 소개  ② 법령 도우미  ③ (원하면) 작업구역 작성 방법
+   헌수호 사용 안내 (처음 방문 시 자동 · 왼쪽 아래 '사용 안내' 버튼으로 다시 보기)
+   - 장(章)별로 실제 탭을 열어 가며 화면 요소를 하나씩 짚어 준다
+   - '처음부터 전체' 또는 '골라서 보기' · 이전/다음 · 키보드 ← → Esc
    ========================================================== */
 (function hseGuide() {
-  const KEY = "hseGuideSeen_v1";
+  const KEY = "hseGuideSeen_v2";
+  const NAME = "헌수호";
+  const IMG = "assets/guide-mascot.webp?v=2";
   const $ = (s) => document.querySelector(s);
   const wait = (ms) => new Promise((r) => setTimeout(r, ms));
   const visible = (el) => { if (!el) return false; const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
 
-  const MAIN = [
-    { sel: null, text: "안녕하세요! 저는 <b>비스마야 HSE 통합정보 플랫폼</b> 안내를 맡은 안전 도우미예요.<br>위쪽 메뉴부터 하나씩 짧게 알려 드릴게요." },
-    { sel: '.group-btn[data-group="home"]', text: "<b>종합현황</b>에서는 무재해 일수, 오늘 작업, 현장 날씨·대기질, 공휴일 달력, 환율을 한눈에 볼 수 있어요." },
-    { sel: '.group-btn[data-group="safety"]', text: "<b>안전</b>에는 국내 중대재해 현황, 건설업 사고사례(PDF 자료), 안전작업절차서, 그리고 <b>작업구역</b>이 있어요." },
-    { sel: '.group-btn[data-group="health"]', text: "<b>보건</b>에서는 현장 클리닉 기록, 국내 감염병, 이라크 보건부·WHO 소식, 온열질환 정보를 봐요." },
-    { sel: '.group-btn[data-group="env"]', text: "<b>환경</b>에는 날씨·대기환경, 모래폭풍 5일 예보, 세계 대기질 순위, 중동 지진, 이라크 환경부 소식이 있어요." },
-    { sel: '.group-btn[data-group="fire"]', text: "<b>소방</b>에서는 주변 화재 현황과 이라크 민방위(소방) 소식을 확인해요." },
-    { sel: '.group-btn[data-group="etc"]', text: "<b>기타</b>에는 해상·항공 현황, 해외 현장, 중동 각국 대사관 안전공지, 주변국 여행경보, 그리고 <b>개선 건의·제안</b>이 있어요. 현장이나 사이트에 바라는 점을 남겨 주세요!" },
-    { sel: ".ai-fab", text: "궁금한 법령은 오른쪽 아래 <b>법령 도우미</b>에게 물어보세요. 한국 산안법과 이라크 법을 함께 찾아 줘요. 현장 사진을 올려도 돼요." },
-    { sel: null, text: "작업구역에 작업을 등록하는 방법도 알려 드릴까요?", choice: true },
-  ];
-  const WZ = [
-    { sel: ".wz-zone-tabs", text: "여기가 <b>작업구역</b>이에요. 먼저 위쪽에서 구역(캠프 · Site 북부 · Site 남부)을 골라요." },
-    { sel: "#wzScheduleCol", text: "오른쪽은 <b>주간 작업일정</b>이에요. ‹ › 로 주를 옮기고, 요일을 누르면 그날 작업 위치가 지도에 표시돼요." },
-    { sel: "#wzFilterBar", text: "<b>팀·파트 버튼</b>을 누르면 그 팀 작업만 걸러서 볼 수 있어요." },
-    { sel: "#wzPickToggle", text: "작업을 새로 넣으려면 <b>➕ 지도에 작업 추가</b>를 누르고, 지도에서 작업 위치를 클릭하세요." },
-    { sel: "#wzViewport", text: "그러면 입력창이 떠요. <b>날짜 · 파트 · 작업내용(필수)</b>을 넣고, 세부위치, 위험작업 체크, 작업인원, 담당자를 채운 뒤 <b>저장</b>을 누르면 구글 시트에 바로 저장돼요." },
-    { sel: "#wzUnplaced", text: "시트에만 있고 <b>지도 위치가 없는 작업</b>은 여기에 모여요. 작업을 누른 다음 지도에서 위치를 클릭하면 저장돼요." },
-    { sel: ".wz-edit", text: "등록한 작업은 일정 목록의 <b>수정 · 삭제</b> 버튼으로 고칠 수 있어요. 수정창에서 <b>위치 다시 찍기</b>도 돼요." },
-    { sel: null, text: "끝! 시트에서 직접 고친 내용은 새로고침하면 반영돼요. 다시 보고 싶으면 왼쪽 아래 <b>사용 안내</b>를 눌러 주세요. 안전한 하루 되세요!" },
+  // go: 먼저 열 소분류 화면 · sel: 반짝 표시할 곳 (없거나 안 보이면 글만 보여 줌)
+  const CH = [
+    { id: "basic", title: "기본 화면과 도구", icon: "🧭", steps: [
+      { go: "view-dashboard", sel: null, text: `이 장에서는 화면 맨 위와 어디서나 쓰는 도구들을 알려 드릴게요.<br>안내 중에는 <b>다음 · 이전</b> 버튼이나 키보드 <b>← →</b> 로 넘기고, <b>Esc</b> 나 오른쪽 위 <b>✕</b> 로 언제든 끝낼 수 있어요.` },
+      { sel: ".brand-text", text: `맨 위 <b>배너</b>예요. 가끔 제가 이 위를 달려가요. 오른쪽 시계 앞에 도착하면 <b>경례</b>를 하고, 안전 한마디를 해요.<br>달리는 저를 <b>눌러 보면</b> 말을 걸어요!` },
+      { sel: ".clock-block", text: `<b>시계</b>예요. 큰 글씨가 <b>바그다드 현지 시각</b>, 아래 작은 글씨가 <b>한국 시각</b>(6시간 빠름)이에요. 본사와 통화할 때 참고하세요.` },
+      { sel: ".group-bar", text: `여기가 <b>대분류 메뉴</b>예요: 종합현황 · 안전 · 보건 · 환경 · 소방 · 기타.<br>하나를 누르면 바로 아래에 <b>소분류 탭</b> 줄이 나타나고, 마지막으로 보던 소분류를 기억해요.` },
+      { sel: "#langSwitcher", text: `<b>언어 선택</b>이에요. <b>ENG</b> 나 <b>العربية</b> 를 누르면 화면 글자가 자동 번역돼요. 영어·아랍어를 쓰는 동료에게 보여 줄 때 좋아요.<br>자동 번역이라 어색한 말이 있을 수 있으니 중요한 내용은 한국어로 한 번 더 확인하세요.` },
+      { sel: "#familySiteSelect", text: `<b>패밀리사이트</b> 바로가기예요. 목록에서 고르면 <b>BNCP AI Assistant</b> 같은 관련 사이트가 새 창으로 열려요.` },
+      { sel: ".bg-peek-btn", text: `<b>배경 보기</b>를 누르면 카드들이 잠깐 숨고 배경 사진이 보여요. 다시 누르거나 <b>Esc</b> 를 누르면 돌아와요.<br>한동안 화면을 안 만지면 상황실 화면처럼 자동으로 배경이 보이기도 해요.` },
+      { sel: ".ai-fab", text: `오른쪽 아래 <b>법령 도우미</b>예요. "고소작업 안전대 기준은?", "이라크 노동법 근로시간은?" 처럼 <b>평소 말투로 물어보면</b> <b>한국 산업안전보건법</b>과 <b>이라크 법</b>을 함께 찾아서 답해 줘요.<br>📷 <b>현장 사진</b>을 올리면 위험요소도 짚어 줘요. 답은 참고용이니 중요한 판단은 원문으로 확인하세요.` },
+      { sel: null, text: `안내를 다시 보고 싶으면 화면 <b>왼쪽 아래 '사용 안내'</b> 버튼을 누르세요. 거기서 필요한 장만 골라 볼 수도 있어요.` },
+    ]},
+    { id: "home", title: "종합현황", icon: "📊", steps: [
+      { go: "view-dashboard", sel: ".hero-panel", text: `<b>무재해 연속일수</b>예요. 마지막 사고 이후 며칠째 무재해인지, 그리고 <b>착공 후 경과일</b>을 함께 보여 줘요. 숫자는 매일 자동으로 올라가요.` },
+      { sel: ".heat-panel", text: `<b>옥외작업 환경 상태</b>예요. 현장 기온을 기준으로 <b>정상 · 주의 · 경고 · 위험</b> 네 단계 중 어디인지와 작업 권고사항을 알려 줘요.` },
+      { sel: ".today-work-panel", text: `<b>오늘 작업 현황</b>이에요. 작업구역 일정(구글 시트)에서 오늘 날짜만 모아 <b>작업 건수 · 투입 인원 · 위험작업 수</b>를 보여 줘요.<br>아래 <b>'작업구역 탭에서 보기 →'</b> 를 누르면 지도로 바로 넘어가요.` },
+      { sel: "section[aria-label='현재 날씨 및 대기환경']", text: `<b>현장 날씨·대기환경</b>이에요. 지금 기온·체감온도·습도·바람과 미세먼지(PM10·PM2.5)를 보여 줘요. 바람이 세면 <b>양중·고소작업</b> 전에 꼭 확인하세요.` },
+      { sel: ".notices-panel", text: `<b>공지사항 / 알림</b>이에요. HSE 팀이 올린 공지와 주의사항이 여기 떠요.` },
+      { sel: ".contacts-panel", text: `<b>비상연락망</b>이에요. 사고·화재·응급환자가 생기면 여기 번호로 먼저 연락하세요. 휴대폰에 미리 저장해 두면 더 좋아요.` },
+      { sel: ".holiday-panel", opt: true, text: `<b>공휴일 달력</b>이에요. ‹ › 로 달을 옮기고, <b>한국 공휴일</b>과 <b>이라크 공휴일</b>을 색으로 구분해요. 이슬람력 휴일은 달 관측에 따라 하루쯤 바뀔 수 있어요.` },
+      { sel: "#fxWidget", opt: true, text: `<b>환율</b>이에요. 달러→이라크 디나르(<b>공식 고시</b>와 <b>시장 환율</b>), 달러→원, 엔·위안→원을 보여 줘요.` },
+    ]},
+    { id: "safety", title: "안전", icon: "⛑️", steps: [
+      { go: "view-sa", sel: "#saStage", text: `<b>안전 › 국내 중대재해 현황</b>이에요. 최근 국내 중대재해를 카드로 넘겨 보여 줘요.<br>아래 <b>‹ ›</b> 로 넘기고, <b>❚❚</b> 로 자동 넘김을 멈출 수 있어요.` },
+      { sel: "#saSide", text: `오른쪽은 <b>고용노동부 통계 요약</b>이에요. 전체 사고사망자, 발생유형별·규모별 사망자 수와 <b>전년 대비 증감</b>을 ‹ › 로 넘겨 볼 수 있어요.` },
+      { go: "view-accidents", sel: "#accidentContainer", text: `<b>사고사례</b>예요. 한국산업안전보건공단의 국내 산업재해 사례를 모아 두었고, <b>건설업은 따로 표시</b>해요.<br>업종·사고 유형 버튼으로 걸러 보고, 아래 <b>더 보기</b>로 더 불러와요. 📄 버튼은 공단 원문 자료로 연결돼요.` },
+      { go: "view-procedures", sel: "#kgQuery", text: `<b>안전작업절차서</b> 탭이에요. 절차서를 만들 때 참고할 <b>KOSHA GUIDE</b>를 찾아요.<br>검색칸에 "비계", "밀폐공간", "C-30" 처럼 <b>이름이나 번호</b>를 넣어 보세요.` },
+      { sel: "#kgWorks", text: `자주 찾는 작업(작업허가, 위험성평가, 비계, 크레인, 굴착, 용접·화기 등)은 <b>버튼 한 번</b>으로 걸러져요. 목록을 누르면 공단 <b>공식 최신본</b>이 열려요.<br>KOSHA GUIDE 는 법적 의무가 아닌 <b>권고 지침</b>이에요.` },
+      { go: "view-workzone", sel: ".workzone-panel", text: `<b>작업구역</b>이에요. 공사팀·관리재경팀이 같이 쓰는 <b>구글 시트 작업일정</b>을 지도에 표시해요.<br>작업 등록 방법은 목차의 <b>'작업구역 작업 등록'</b> 장에서 자세히 알려 드려요.` },
+    ]},
+    { id: "wz", title: "작업구역 작업 등록", icon: "🗺️", wz: true, steps: [
+      { go: "view-workzone", sel: ".wz-zone-tabs", text: `여기가 <b>작업구역</b>이에요. 먼저 위쪽에서 구역(캠프 · Site 북부 · Site 남부)을 골라요.` },
+      { sel: "#wzScheduleCol", text: `오른쪽은 <b>주간 작업일정</b>이에요. ‹ › 로 주를 옮기고, 요일을 누르면 그날 작업 위치가 지도에 표시돼요.` },
+      { sel: "#wzFilterBar", text: `<b>팀·파트 버튼</b>을 누르면 그 팀 작업만 걸러서 볼 수 있어요.` },
+      { sel: "#wzPickToggle", text: `작업을 새로 넣으려면 <b>➕ 지도에 작업 추가</b>를 누르고, 지도에서 작업 위치를 클릭하세요.` },
+      { sel: "#wzViewport", text: `그러면 입력창이 떠요. <b>날짜 · 파트 · 작업내용(필수)</b>을 넣고, 세부위치, <b>위험작업 체크</b>, 작업인원, 담당자를 채운 뒤 <b>저장</b>을 누르면 구글 시트에 바로 저장돼요.<br>위험작업으로 체크하면 종합현황 '오늘 작업'에 ⚠ 로 따로 세어져요.` },
+      { sel: "#wzUnplaced", text: `시트에만 있고 <b>지도 위치가 없는 작업</b>은 여기에 모여요. 작업을 누른 다음 지도에서 위치를 클릭하면 저장돼요.` },
+      { sel: ".wz-edit", text: `등록한 작업은 일정 목록의 <b>수정 · 삭제</b> 버튼으로 고칠 수 있어요. 수정창에서 <b>위치 다시 찍기</b>도 돼요.` },
+      { sel: null, text: `시트에서 직접 고친 내용은 <b>새로고침</b>하면 반영돼요. 사이트에서 추가한 건 바로 보여요.` },
+    ]},
+    { id: "health", title: "보건", icon: "🩺", steps: [
+      { go: "view-health-medical", sel: "#medCards", text: `<b>보건 › 주변 의료시설</b>이에요. 맨 위 카드에 <b>가장 가까운 병원 · 응급실 · 공립 병원</b>과 차로 거리·시간을 요약해요. 카드를 누르면 지도에서 그 병원으로 이동해요.` },
+      { sel: "#medMap", text: `<b>지도</b>예요. 현장을 중심으로 <b>10 · 20 · 40 km</b> 원이 그려져 있어요. 점을 누르면 병원 이름과 거리가 나와요.` },
+      { sel: "#medFilter", text: `위 버튼으로 <b>병원 · 응급실 · 공립 · 의원·보건소</b>만 골라 볼 수 있고, 옆 <b>진료과</b> 목록에서 정형외과·화상·안과 등을 고르면 그 과가 있는 곳만 남아요.<br>진료과는 병원 이름과 지도 정보로 <b>추정</b>한 것이라 방문 전 전화로 확인하세요.` },
+      { sel: "#medList", text: `<b>목록</b>은 가까운 순이에요. 이름은 <b>영어</b>를 먼저, 아래에 <b>아랍어</b>를 함께 적어서 현지 기사님께 그대로 보여 줄 수 있어요.<br><b>길찾기</b>를 누르면 구글 지도 경로가 열려요. 거리·시간은 <b>교통 상황이 반영되지 않은</b> 값이에요.` },
+      { go: "view-health-clinic", sel: ".clinic-panel", text: `<b>현장 클리닉 현황</b>이에요. 진료 건수, 많이 온 증상, 부상 통계와 추이를 보여 줘요. 누가 왔는지가 아니라 <b>현장 건강 경향</b>을 보는 곳이에요.` },
+      { sel: "#clinicUnlock", text: `<b>진료 기록</b>은 잠겨 있어요. 담당자만 <b>클리닉 암호</b>를 넣고 <b>열기</b>를 누르면 기록 보기·추가가 돼요. 이름은 열어도 <b>성만</b> 보여요.<br>여럿이 쓰는 PC라면 다 쓴 뒤 <b>🔒 잠그기</b>를 꼭 눌러 주세요.` },
+      { go: "view-health-kdca", sel: ".kdca-panel", text: `<b>국내 감염병 현황</b>이에요. 질병관리청 주간 신고 통계로 <b>등급별 건수</b>, 많이 늘어난 감염병, <b>해외 유입</b> 사례를 보여 줘요. 휴가 복귀자 관리에 참고하세요.` },
+      { go: "view-iraq-moh", sel: "#view-iraq-moh .iraq-news-panel", text: `<b>이라크 보건부 소식</b>이에요. 현지 감염병·예방접종·보건 공지를 모아 한국어로 보여 줘요.` },
+      { go: "view-health-infect", sel: "#whoFilter", text: `<b>WHO 소식</b>이에요. 세계보건기구의 <b>감염병 발생 정보</b>와 최신 소식이에요. 위 버튼으로 <b>감염병 발생 / WHO 소식</b>을 골라 볼 수 있어요. 아래에는 국내 의학·질병 뉴스와 질병관리청·복지부 소식도 있어요.` },
+      { go: "view-health-confined", sel: ".cs-panel", text: `<b>밀폐공간 작업</b> 탭의 <b>환기 계산기</b>예요. 공간 크기, 송풍기 풍량·대수, 덕트 길이·꺾임을 넣으면 <b>작업 전 환기 시간</b>과 작업 중 필요 풍량을 계산해 줘요.<br>아래로 내리면 <b>적정공기 기준</b>(산소 18~23.5% 등)과 <b>가스측정기 사용법</b>도 있어요.` },
+    ]},
+    { id: "env", title: "환경", icon: "🌤️", steps: [
+      { go: "view-env-weather", sel: ".hsewx-panel", text: `<b>환경 › 날씨·대기환경</b>이에요. 체감온도·바람·자외선 같은 <b>작업 안전 기상 지표</b>를 <b>비스마야와 서울</b>로 나란히 비교해요.` },
+      { go: "view-env-dust", sel: "#dustAlert", text: `<b>모래폭풍 예보</b>예요. 앞으로 <b>5일</b> 동안 먼지 농도를 예보해서, 심한 날이면 맨 위에 경고가 떠요.` },
+      { sel: "#view-env-dust .dust-chart-wrap", text: `날짜별 카드와 아래 <b>시간별 그래프</b>로 언제 가장 심한지 볼 수 있어요. 심한 시간대에는 <b>방진마스크·보안경</b>을 챙기고 양중작업은 미루는 게 좋아요.` },
+      { go: "view-env-aqi", sel: "#aqiMode", text: `<b>세계 대기질 순위</b>예요. 위 버튼으로 <b>나라 / 도시</b>, <b>전 세계 / 중동만</b>을 바꿔 가며 순위를 볼 수 있어요. 미국 EPA 기준 AQI 이고 3시간마다 갱신돼요.` },
+      { go: "view-env-quake", sel: "#quakeMap", text: `<b>중동 지진 현황</b>이에요. 최근 30일 동안 규모 2.5 이상 지진을 지도에 표시해요. 원이 클수록 규모가 커요.` },
+      { go: "view-iraq-moen", sel: "#view-iraq-moen .iraq-news-panel", text: `<b>이라크 환경부 소식</b>이에요. 모래폭풍·대기오염·환경 규정 관련 현지 공지를 모아요.` },
+    ]},
+    { id: "fire", title: "소방", icon: "🚒", steps: [
+      { go: "view-fires", sel: "#fireAlert", text: `<b>소방 › 화재 현황</b>이에요. NASA 위성이 감지한 이라크 화재를 보여 줘요. 현장 <b>10 km 안</b>에서 새 화재가 잡히면 여기 <b>경보</b>가 떠요.` },
+      { sel: "#fireMap", text: `<b>지도</b>에서 <b>빨간 점</b>은 24시간 안, <b>주황</b>은 24~48시간, <b>회색</b>은 <b>가스 플레어</b> 같은 상시 열원이에요. ★ 가 현장이에요.<br>위성이 지나간 시각 기준이라 보통 <b>몇 시간 전</b> 상황이고, 작은 화재나 구름 낀 날은 안 잡힐 수 있어요.` },
+      { go: "view-iraq-cd", sel: ".cd-intro-panel", text: `<b>이라크 민방위(소방) 소식</b>이에요. 위에는 민방위총국 소개와 연락처, 아래에는 현지 화재·구조 소식이 있어요.` },
+    ]},
+    { id: "etc", title: "기타", icon: "🧩", steps: [
+      { go: "view-ships", sel: ".air-switch", text: `<b>기타 › 해상·항공 현황</b>이에요. <b>실시간 항공 지도</b>와 공항·항공기 <b>요약 지도</b>를 바꿔 볼 수 있어요. 아래로 내리면 <b>걸프만 선박 현황</b>도 있어요. 출장·자재 운송 일정 볼 때 참고하세요.` },
+      { go: "view-global", sel: "#globalFilter", text: `<b>해외 현장</b>이에요. 국내 건설사의 해외 현장을 지도와 표로 보여 줘요. 위 버튼으로 회사를 골라 볼 수 있어요.` },
+      { go: "view-embassy", sel: "#view-embassy .embassy-panel", text: `<b>중동 각국 대사관 공지</b>예요. 이라크와 주변국 <b>대한민국 대사관의 안전공지</b>를 매일 모아요. 버튼으로 나라와 공지 종류를 고르고, 제목을 누르면 원문이 열려요.` },
+      { go: "view-travel", sel: "#travelMap", text: `<b>주변국 여행경보</b>예요. 외교부 여행경보 단계(여행유의 · 자제 · 출국권고 · 금지)를 지도에 색으로 보여 줘요. 휴가·출장 경유지 확인할 때 보세요.` },
+      { go: "view-suggest", sel: "#sugForm", text: `<b>개선 건의·제안</b>이에요. 현장 안전이나 이 사이트에 바라는 점을 남겨 주세요.<br><b>분류</b>를 고르고 <b>제목 · 내용</b>(필수)을 쓰고, 위치와 이름은 원하면 적어요. 이름은 목록에 <b>성만</b> 보여요.` },
+      { sel: "#sugList", text: `남긴 건의는 아래 목록에 쌓여요. 담당자가 확인하면 상태가 <b>접수 → 검토중 → 반영 / 보류</b>로 바뀌고, <b>담당자 답변</b>도 여기서 볼 수 있어요.` },
+    ]},
   ];
 
-  let root, ring, bubble, running = false;
+  let root, ring, bubble, running = false, stopFlag = false;
   function build() {
     if (root) return;
     root = document.createElement("div");
     root.className = "hse-guide";
     root.innerHTML = `
       <div class="hg-ring" hidden></div>
-      <div class="hg-char"><img src="assets/guide-mascot.webp?v=2" alt="안전 도우미"></div>
-      <div class="hg-bubble" role="dialog" aria-live="polite">
+      <div class="hg-char"><img src="${IMG}" alt="${NAME}"><span class="hg-tag">${NAME}</span></div>
+      <div class="hg-bubble" role="dialog" aria-live="polite" aria-label="${NAME} 사용 안내">
+        <div class="hg-head"><span class="hg-who">${NAME}</span><span class="hg-chap"></span><button type="button" class="hg-x" data-v="close" aria-label="안내 닫기">✕</button></div>
         <div class="hg-text"></div>
+        <div class="hg-bar"><i></i></div>
         <div class="hg-actions"></div>
       </div>`;
     document.body.appendChild(root);
@@ -5955,72 +6014,141 @@ async function clinicCall(action, payload) {
     bubble = root.querySelector(".hg-bubble");
   }
   function place(el) {
+    bubble.classList.remove("hg-top");
     if (!el || !visible(el)) { ring.hidden = true; return; }
     const r = el.getBoundingClientRect();
     const pad = 6;
-    Object.assign(ring.style, { left: r.left - pad + "px", top: r.top - pad + "px", width: r.width + pad * 2 + "px", height: r.height + pad * 2 + "px" });
+    const top = Math.max(r.top - pad, 4), bottom = Math.min(r.bottom + pad, innerHeight - 4);
+    Object.assign(ring.style, { left: r.left - pad + "px", top: top + "px", width: r.width + pad * 2 + "px", height: Math.max(bottom - top, 20) + "px" });
     ring.hidden = false;
+    // 말풍선이 표시한 곳을 가리면 위쪽으로 옮긴다
+    const b = bubble.getBoundingClientRect();
+    if (b.width && !(b.right < r.left || b.left > r.right || b.bottom < top || b.top > bottom)) bubble.classList.add("hg-top");
   }
-  // 한 단계를 보여 주고, 사용자가 누른 버튼 값을 돌려준다
-  function show(step, i, n) {
-    return new Promise(async (resolve) => {
-      let el = step.sel ? $(step.sel) : null;
-      if (el && visible(el)) {
-        const r = el.getBoundingClientRect();
-        if (r.top < 70 || r.bottom > innerHeight - 220) { el.scrollIntoView({ block: "center", behavior: "smooth" }); await wait(450); }
-      }
+  async function goView(id) {
+    const cur = document.querySelector(".view.active");
+    if (cur && cur.id === id) return;
+    const t = document.querySelector(`.tab-btn[data-view="${id}"]`);
+    if (t) t.click();
+    window.scrollTo({ top: 0 });
+    await wait(350);
+  }
+  // 버튼 한 줄을 그리고 누른 값(data-v)을 돌려준다
+  let keyHandler = null;
+  function ask(html, actsHtml, keys) {
+    return new Promise((resolve) => {
       bubble.classList.remove("pop"); void bubble.offsetWidth; bubble.classList.add("pop");
-      root.querySelector(".hg-text").innerHTML = step.text;
+      root.querySelector(".hg-text").innerHTML = html;
       const acts = root.querySelector(".hg-actions");
-      acts.innerHTML = step.choice
-        ? `<button type="button" data-v="wz" class="hg-primary">작업구역 안내 보기</button><button type="button" data-v="end">다음에 볼게요</button>`
-        : `<span class="hg-step">${i + 1} / ${n}</span><button type="button" data-v="skip">건너뛰기</button><button type="button" data-v="next" class="hg-primary">${i + 1 === n ? "닫기" : "다음"}</button>`;
-      place(el);
-      const onResize = () => place(el);
-      addEventListener("resize", onResize);
-      addEventListener("scroll", onResize, true);
-      acts.onclick = (e) => {
-        const b = e.target.closest("button[data-v]"); if (!b) return;
-        removeEventListener("resize", onResize);
-        removeEventListener("scroll", onResize, true);
-        resolve(b.dataset.v);
+      acts.innerHTML = actsHtml;
+      const done = (v) => { removeEventListener("keydown", keyHandler); keyHandler = null; bubble.onclick = null; resolve(v); };
+      bubble.onclick = (e) => { const b = e.target.closest("button[data-v]"); if (b) done(b.dataset.v); };
+      if (keyHandler) removeEventListener("keydown", keyHandler);
+      keyHandler = (e) => {
+        if (e.target.closest && e.target.closest("input,textarea,select")) return;
+        if (e.key === "Escape") done("close");
+        else if (keys && e.key === "ArrowRight") done("next");
+        else if (keys && e.key === "ArrowLeft") done("prev");
       };
+      addEventListener("keydown", keyHandler);
+      const p = acts.querySelector(".hg-primary"); if (p) p.focus({ preventScroll: true });
     });
   }
-  async function runSteps(steps) {
-    for (let i = 0; i < steps.length; i++) {
-      const v = await show(steps[i], i, steps.length);
-      if (v === "skip" || v === "end") return v;
-      if (v === "wz") return v;
+  function setHead(chap, frac) {
+    root.querySelector(".hg-chap").textContent = chap || "";
+    const bar = root.querySelector(".hg-bar");
+    bar.hidden = frac == null;
+    if (frac != null) bar.firstElementChild.style.width = Math.round(frac * 100) + "%";
+  }
+  async function showStep(ch, i, pos) {
+    const step = ch.steps[i];
+    if (step.go) await goView(step.go);
+    let el = step.sel ? $(step.sel) : null;
+    // 늦게 그려지는 화면은 잠깐 기다린다 (최대 2초)
+    for (let k = 0; step.sel && k < 10 && !visible(el); k++) { await wait(200); el = $(step.sel); }
+    if (el && visible(el)) {
+      const r = el.getBoundingClientRect();
+      const tall = r.height > innerHeight - 260;
+      if (r.top < 90 || r.bottom > innerHeight - 200 || tall) { el.scrollIntoView({ block: tall ? "start" : "center", behavior: "smooth" }); await wait(500); }
+    } else el = null;
+    if (step.opt && !el) return "auto"; // 화면이 좁아 안 보이는 위젯은 건너뛴다
+    setHead(`${ch.icon} ${ch.title} · ${i + 1}/${ch.steps.length}`, pos);
+    ring.hidden = true;
+    const p = ask(step.text,
+      `<button type="button" data-v="menu" class="hg-ghost">목차</button>` +
+      `<button type="button" data-v="prev"${pos === 0 ? " disabled" : ""}>이전</button>` +
+      `<button type="button" data-v="next" class="hg-primary">다음</button>`, true);
+    place(el);
+    const onMove = () => place(el);
+    addEventListener("resize", onMove); addEventListener("scroll", onMove, true);
+    const v = await p;
+    removeEventListener("resize", onMove); removeEventListener("scroll", onMove, true);
+    return v;
+  }
+  // 장 목록(chs)을 차례로 보여 준다. 'menu'·'close' 면 그 값을 돌려준다
+  async function runChapters(chs) {
+    let dir = 1;
+    const flat = [];
+    chs.forEach((ch) => ch.steps.forEach((_, i) => flat.push([ch, i])));
+    let k = 0;
+    while (k < flat.length) {
+      const [ch, i] = flat[k];
+      if (ch.wz && i === 0) {
+        ring.hidden = true; setHead(`${ch.icon} ${ch.title}`, null);
+        root.querySelector(".hg-text").innerHTML = "작업구역 화면으로 이동할게요…";
+        root.querySelector(".hg-actions").innerHTML = "";
+        await goView("view-workzone");
+        for (let t = 0; t < 30 && !visible($(".wz-zone-tabs")); t++) await wait(200);
+      }
+      const v = await showStep(ch, i, flat.length > 1 ? k / (flat.length - 1) : 1);
+      if (v === "auto") { k = Math.max(0, k + dir); if (k === 0 && dir < 0) dir = 1; }
+      else if (v === "next") { dir = 1; k++; }
+      else if (v === "prev") { dir = -1; k = Math.max(0, k - 1); }
+      else return v;
     }
     return "done";
   }
-  async function openWorkzone() {
-    const g = $('.group-btn[data-group="safety"]');
-    if (g) g.click();
-    await wait(150);
-    const t = $('.tab-btn[data-view="view-workzone"]');
-    if (t) t.click();
-    // 지도·일정이 그려질 때까지 잠깐 기다린다 (최대 6초)
-    for (let k = 0; k < 30 && !visible($(".wz-zone-tabs")); k++) await wait(200);
-    await wait(300);
+  function menuHtml() {
+    return `<div class="hg-menu">${CH.map((c) => `<button type="button" data-v="ch:${c.id}"><span>${c.icon}</span>${c.title}<em>${c.steps.length}단계</em></button>`).join("")}</div>`;
   }
-  async function start() {
+  async function menu() {
+    ring.hidden = true; setHead("목차", null);
+    return ask(`어떤 부분이 궁금하세요? <b>장</b>을 고르면 그 화면을 열어서 하나씩 짚어 드려요.${menuHtml()}`,
+      `<button type="button" data-v="all" class="hg-primary">처음부터 전체 보기</button><button type="button" data-v="close">닫기</button>`, false);
+  }
+  async function finish() {
+    ring.hidden = true; setHead("끝", 1);
+    await goView("view-dashboard");
+    return ask(`안내 끝! 수고하셨어요 🙌<br>다시 보고 싶으면 <b>왼쪽 아래 '사용 안내'</b>를 누르세요. 저는 배너 위에서 순찰하고 있을게요. <b>오늘도 무재해!</b>`,
+      `<button type="button" data-v="menu">목차로</button><button type="button" data-v="close" class="hg-primary">닫기</button>`, false);
+  }
+
+  async function start(opts) {
     if (running) return;
     running = true;
     document.body.classList.add("hg-running");
+    if (window.hseSetReveal && document.body.classList.contains("bg-reveal")) window.hseSetReveal(false);
     build();
     root.classList.remove("out");
     requestAnimationFrame(() => root.classList.add("in"));
     await wait(650);
-    let r = await runSteps(MAIN);
-    if (r === "wz") {
-      ring.hidden = true;
-      root.querySelector(".hg-text").innerHTML = "작업구역 화면으로 이동할게요…";
-      root.querySelector(".hg-actions").innerHTML = "";
-      await openWorkzone();
-      // 보이지 않는 단계(예: 저장 기능이 꺼져 있으면 '지도에 작업 추가' 버튼이 없음)는 글만 보여 준다
-      await runSteps(WZ);
+    const total = CH.reduce((s, c) => s + c.steps.length, 0);
+    setHead("반가워요", null);
+    let v = (opts && opts.menu) ? "pick" : await ask(
+      `안녕하세요! 저는 비스마야 현장 안전 지킴이 <b>${NAME}</b>예요. 🫡<br>이 상황실은 <b>안전 · 보건 · 환경 · 소방</b> 정보를 한곳에 모아 둔 곳이에요. 메뉴를 하나씩 직접 열어 가며 자세히 알려 드릴게요.<br><small>전체 ${CH.length}장 · ${total}단계 · 약 5분</small>`,
+      `<button type="button" data-v="all" class="hg-primary">처음부터 전체 안내</button><button type="button" data-v="pick">골라서 보기</button><button type="button" data-v="close">다음에 볼게요</button>`, false);
+    while (v !== "close") {
+      if (v === "pick" || v === "menu") v = await menu();
+      else if (v === "all") { v = await runChapters(CH); if (v === "done") v = await finish(); }
+      else if (v.startsWith("ch:")) {
+        const ch = CH.find((c) => c.id === v.slice(3));
+        v = await runChapters([ch]);
+        if (v === "done") {
+          ring.hidden = true; setHead(`${ch.icon} ${ch.title} · 끝`, 1);
+          v = await ask(`<b>${ch.title}</b> 안내를 마쳤어요. 다른 장도 볼까요?`,
+            `<button type="button" data-v="menu" class="hg-primary">목차로</button><button type="button" data-v="close">닫기</button>`, false);
+        }
+      } else v = "close";
     }
     try { localStorage.setItem(KEY, "1"); } catch (e) {}
     ring.hidden = true;
@@ -6036,8 +6164,9 @@ async function clinicCall(action, payload) {
   const again = document.createElement("button");
   again.type = "button";
   again.className = "hg-again";
-  again.innerHTML = `<img src="assets/guide-mascot.webp?v=2" alt="">사용 안내`;
-  again.onclick = start;
+  again.title = `${NAME}의 사용 안내`;
+  again.innerHTML = `<img src="${IMG}" alt="">사용 안내`;
+  again.onclick = () => start();
   document.body.appendChild(again);
 
   // 처음 방문이면 인트로가 끝난 뒤 자동으로 나온다

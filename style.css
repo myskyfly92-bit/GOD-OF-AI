@@ -3116,6 +3116,35 @@ html:not(.page-ready) main.grid { opacity: 0; }
 }
 body.hg-running .hg-again { display: none; }
 
+/* 헌수호 안내 v2: 이름표 · 머리줄 · 진행 막대 · 목차 */
+.hse-guide .hg-tag { position: absolute; left: 50%; bottom: 8px; transform: translateX(-50%); background: #0f8a7e; color: #fff; font: 700 12px/1 var(--font-body); padding: 5px 10px; border-radius: 999px; box-shadow: 0 4px 10px rgba(0,0,0,.35); white-space: nowrap; letter-spacing: .04em; }
+.hse-guide .hg-bubble { width: min(460px, calc(100vw - 250px)); max-height: calc(100vh - 190px); overflow-y: auto; }
+.hse-guide .hg-bubble.hg-top { bottom: auto; top: 86px; }
+.hse-guide .hg-bubble.hg-top::before { display: none; }
+.hse-guide .hg-head { display: flex; align-items: center; gap: 8px; margin: -4px 0 8px; font-size: 12px; }
+.hse-guide .hg-who { font-weight: 800; color: #fff; background: #0f8a7e; border-radius: 6px; padding: 2px 8px; }
+.hse-guide .hg-chap { color: #5b6976; font-weight: 600; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hse-guide .hg-x { border: 0; background: none; color: #7a8794; font-size: 16px; line-height: 1; cursor: pointer; padding: 4px 6px; border-radius: 6px; }
+.hse-guide .hg-x:hover { background: #e6ecf1; color: #14202b; }
+.hse-guide .hg-text small { color: #6b7884; }
+.hse-guide .hg-bar { height: 4px; background: #e2e8ee; border-radius: 4px; margin-top: 12px; overflow: hidden; }
+.hse-guide .hg-bar[hidden] { display: none; }
+.hse-guide .hg-bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #0f8a7e, #35d0c0); transition: width .35s ease; }
+.hse-guide .hg-actions button:disabled { opacity: .4; cursor: default; }
+.hse-guide .hg-actions .hg-ghost { margin-right: auto; }
+.hse-guide .hg-menu { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+.hse-guide .hg-menu button { display: flex; align-items: center; gap: 8px; text-align: left; font: 600 13.5px/1.3 var(--font-body); color: #14202b; background: #fff; border: 1px solid #d3dce4; border-radius: 10px; padding: 9px 10px; cursor: pointer; }
+.hse-guide .hg-menu button:hover { border-color: #0f8a7e; background: #eef8f6; }
+.hse-guide .hg-menu button span { font-size: 17px; }
+.hse-guide .hg-menu button em { margin-left: auto; font-style: normal; font-size: 11px; color: #8693a0; font-weight: 500; }
+@media (max-width: 700px) {
+  .hse-guide .hg-bubble { width: auto; max-height: calc(100vh - 220px); }
+  .hse-guide .hg-bubble.hg-top { top: 12px; }
+  .hse-guide .hg-menu { grid-template-columns: 1fr; }
+  .hse-guide .hg-tag { font-size: 11px; }
+}
+
+
 /* ---------- 안전작업절차서 > KOSHA GUIDE ---------- */
 .kg-search input { width: 100%; max-width: 520px; background: var(--panel-2); border: 1px solid var(--border); color: var(--text); border-radius: 8px; padding: 9px 12px; font-family: var(--font-body); font-size: 14px; }
 .kg-search input:focus { outline: none; border-color: var(--cyan); }
@@ -3223,6 +3252,7 @@ body:has(.hse-intro) .ai-assist { display: none; }
 /* 회사 로고 그림 대신 한글 글자 '한화' */
 .brand-mark { background: transparent; box-shadow: none; padding: 0; border-radius: 0; }
 .brand-word {
+  white-space: nowrap;
   height: auto; max-width: none; display: flex; align-items: center; justify-content: center;
   min-width: 96px; height: 64px; padding: 0 18px; border-radius: 10px;
   font-family: var(--font-body); font-size: 30px; font-weight: 800; letter-spacing: 0.08em; color: #fff;
