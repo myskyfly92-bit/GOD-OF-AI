@@ -921,6 +921,25 @@ function alignSideWidgets() {
       rightGroup.style.marginLeft = "auto";
     }
   }
+  fitRowToFx(fitsOnScreen && fxWidget && fxWidget.style.display !== "none" ? fxWidget : null);
+}
+
+// 종합현황 둘째 줄(오늘 작업 현황 · 공지사항) 카드의 아래 끝을 오른쪽 환율 위젯 아래 끝에 맞춘다
+function fitRowToFx(fx) {
+  const tw = document.querySelector("#view-dashboard .today-work-panel");
+  const nt = document.querySelector("#view-dashboard .notices-panel");
+  if (!tw || !nt) return;
+  const docTop = (el) => { let t = 0; for (let e = el; e; e = e.offsetParent) t += e.offsetTop; return t; }; // 떠오르는 효과(transform)와 무관한 최종 위치
+  const clear = () => { [tw, nt].forEach((p) => { p.style.height = ""; p.classList.remove("fit-fx"); }); };
+  if (!fx || !tw.offsetParent || docTop(tw) !== docTop(nt)) return clear(); // 한 줄에 나란히 있을 때만
+  const h = Math.round(docTop(fx) + fx.offsetHeight - docTop(tw));
+  if (h < 240) return clear();
+  [tw, nt].forEach((p) => { p.style.height = h + "px"; p.classList.add("fit-fx"); });
+}
+if (window.ResizeObserver) {
+  let raf = 0;
+  const ro = new ResizeObserver(() => { cancelAnimationFrame(raf); raf = requestAnimationFrame(alignSideWidgets); });
+  ["holidayPanel", "fxWidget"].forEach((id) => { const el = document.getElementById(id); if (el) ro.observe(el); });
 }
 
 window.addEventListener("load", alignSideWidgets);
@@ -5938,7 +5957,6 @@ async function clinicCall(action, payload) {
       { sel: ".heat-wx", text: `같은 카드 아래쪽은 <b>현장 날씨·대기환경</b>이에요. 기온·체감온도·습도·바람, 미세먼지(PM10·PM2.5)·자외선·오존, 일출·일몰·강수확률을 보여 줘요. 바람이 세면 <b>양중·고소작업</b> 전에 꼭 확인하세요.` },
       { sel: ".today-work-panel", text: `<b>오늘 작업 현황</b>이에요. 작업구역 일정(구글 시트)에서 오늘 날짜만 모아 <b>작업 건수 · 투입 인원 · 위험작업 수</b>를 보여 줘요.<br>아래 <b>'작업구역 탭에서 보기 →'</b> 를 누르면 지도로 바로 넘어가요.` },
       { sel: ".notices-panel", text: `<b>공지사항 / 알림</b>이에요. HSE 팀이 올린 공지와 주의사항이 여기 떠요.` },
-      { sel: ".contacts-panel", text: `<b>비상연락망</b>이에요. 사고·화재·응급환자가 생기면 여기 번호로 먼저 연락하세요. 휴대폰에 미리 저장해 두면 더 좋아요.` },
       { sel: ".holiday-panel", opt: true, text: `<b>공휴일 달력</b>이에요. ‹ › 로 달을 옮기고, <b>한국 공휴일</b>과 <b>이라크 공휴일</b>을 색으로 구분해요. 이슬람력 휴일은 달 관측에 따라 하루쯤 바뀔 수 있어요.` },
       { sel: "#fxWidget", opt: true, text: `<b>환율</b>이에요. 달러→이라크 디나르(<b>공식 고시</b>와 <b>시장 환율</b>), 달러→원, 엔·위안→원을 보여 줘요.` },
     ]},

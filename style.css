@@ -2732,7 +2732,13 @@ html:not(.page-ready) main.grid { opacity: 0; }
 #view-dashboard section[aria-label="안전 지표"],
 #view-dashboard .incident-dept-panel,
 #view-dashboard .heat-illness-panel,
-#view-dashboard .disaster-panel { display: none; }
+#view-dashboard .disaster-panel,
+#view-dashboard .contacts-panel { display: none; }
+/* 오늘 작업 현황 · 공지사항: 환율 위젯 아래 끝에 높이를 맞출 때 (script.js fitRowToFx) 넘치는 내용은 카드 안에서 스크롤 */
+.fit-fx { display: flex; flex-direction: column; overflow: hidden; }
+.fit-fx > * { flex-shrink: 0; }
+.fit-fx .tw-rows, .fit-fx .notice-list { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
+.fit-fx .tw-link { align-self: flex-start; margin-top: auto; }
 
 /* 작업구역: 작업마다 수정·삭제 버튼 */
 .wz-item { position: relative; }
