@@ -7225,10 +7225,30 @@ function hseWeldWord(host, wordEl, onDone) {
       await wait(ms); bubble.classList.add("bye"); await wait(260); bubble.hidden = true;
     };
     // 달리기: 일정한 속도로, 발걸음에 맞춰 살짝 들썩
+    // 카드 사이 틈: 아래 첫 줄 카드(와 오른쪽 달력) 윗변을 바닥 삼아 달리다가, 카드 사이 빈틈은 폴짝 뛰어 건넌다
+    const gaps = (() => {
+      const rows = [...document.querySelectorAll(".view.active .grid > .panel"), document.getElementById("holidayPanel")]
+        .filter(Boolean).map((el) => el.getBoundingClientRect())
+        .filter((r) => r.width > 0 && Math.abs(r.top - cardTop) < 40)
+        .map((r) => [r.left + sx, r.right + sx]).sort((p, q) => p[0] - q[0]);
+      const g = [];
+      for (let i = 1; i < rows.length; i++) if (rows[i][0] - rows[i - 1][1] > 4) g.push([rows[i - 1][1], rows[i][0]]);
+      return g;
+    })();
+    const hopAt = (cx) => {               // 몸 가운데(cx)가 틈 근처일 때 위로 뜨는 높이
+      for (const [g0, g1] of gaps) {
+        const s0 = g0 - 34, s1 = g1 + 34;
+        if (cx > s0 && cx < s1) { const p = (cx - s0) / (s1 - s0); return Math.sin(Math.PI * p) * 34; }
+      }
+      return 0;
+    };
     const runTo = async (x1, x2, y) => {
       await pose(SRC.run, H, x2 < x1); at(x1, y);
       const ms = Math.max(500, Math.abs(x2 - x1) / 0.24);              // 초당 약 240px
-      await anim(ms, (t) => at(x1 + (x2 - x1) * t, y - Math.abs(Math.sin(t * ms / 130)) * 2));
+      await anim(ms, (t) => {
+        const x = x1 + (x2 - x1) * t, hop = hopAt(x + RUN_W / 2);
+        at(x, y - (hop > 0 ? hop : Math.abs(Math.sin(t * ms / 130)) * 2));   // 뛰는 동안은 발걸음 들썩임 없이
+      });
     };
     ring.style.left = ax + "px"; ring.style.top = ay + "px";
 
@@ -7250,7 +7270,7 @@ function hseWeldWord(host, wordEl, onDone) {
         const sec = t * 4;
         const fall = sec < 1.0 ? 0 : sec > 1.85 ? 1 : Math.pow((sec - 1.0) / 0.85, 1.6);   // 공중에 떠 있는 동안 아래로
         const run = Math.min(runMax, Math.max(0, sec - 2.65) * 240);                                          // 착지 후 달리기 시작
-        at(cl - run, ct + D * fall);
+        at(cl - run, ct + D * fall - (run > 0 ? hopAt(cl - run + DROP.cxEnd) : 0));               // 달리다 카드 틈이면 폴짝
       });
       const startX = cl - runMax + DROP.cxEnd - RUN_W / 2;
       // 2) 탭 줄을 따라 '안전' 옆까지 달려가기
