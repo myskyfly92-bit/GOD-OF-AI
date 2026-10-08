@@ -7142,7 +7142,10 @@ function hseWeldWord(host, wordEl, onDone) {
    ========================================================== */
 (function mascotRappel() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  const SRC = { hook: "assets/mascot-hook.webp", rappel: "assets/mascot-rappel.webp", stand: "assets/mascot-stand.webp", run: "assets/mascot-run.webp" };
+  const SRC = { hook: "assets/mascot-hook.webp", rappel: "assets/mascot-rappel.webp", stand: "assets/mascot-stand.webp", run: "assets/mascot-run.webp", drop: "assets/mascot-drop.webp", hopup: "assets/mascot-hopup.webp" };
+  // 뛰어내리기 영상 그림 크기(표시 px)와 캐릭터 위치: 가로 가운데, 머리 위, 발바닥
+  const DROP = { h: 107.4, cx0: 43.5, top0: 6.4, foot: 106, cxEnd: 28.5 }, HOPUP = { h: 107.4, cx0: 39.9, cxEnd: 44.1, top1: 6.4, foot: 106.2 };
+  const RUN_W = 114 / 220 * 100;
   const H = 100;                                   // 배너 마스코트와 같은 키
   const HOOK_PT = { x: 30 / 135 * (135 * H / 220), y: 30 / 220 * H };   // 고리 거는 손 위치 (영상 기준)
   const ROPE_X = 41.2 / 140 * (140 * H / 220);     // 줄 타기 그림에서 줄이 나오는 x
@@ -7220,17 +7223,21 @@ function hseWeldWord(host, wordEl, onDone) {
       const hx = ax - HP.x, hy = ay - HP.y;                              // 고리 걸 때 서 있을 자리
       runner.style.visibility = "hidden";
       img.style.height = H + "px";
-      // 1) 배너에서 그 자리 그대로 아래 줄로 사뿐히 (살짝 떴다가 떨어지며 크기도 조금 줄인다)
-      img.src = SRC.stand; at(x0, y0);
-      await anim(700, (t) => {
-        img.style.height = H + (Hs - H) * t + "px";
-        at(x0 + (H - (H + (Hs - H) * t)) * 0.3, y0 + (groundY - y0) * (t * t) - Math.sin(Math.PI * Math.min(1, t * 1.6)) * 14);
+      // 1) 배너에서 아래 탭 줄로 뛰어내리기 (구글 플로우 영상: 돌아서기 → 폴짝 → 착지 → 왼쪽으로 달리기 시작)
+      const cl = rr.left + rr.width / 2 + sx - DROP.cx0, ct = y0 - DROP.top0;
+      const D = floor - (ct + DROP.foot);                               // 영상 속 높이에서 더 내려가야 할 거리
+      const runMax = Math.max(0, Math.min(1.35 * 240, cl + DROP.cxEnd - RUN_W / 2 - hx));  // '안전'을 지나치지 않게
+      img.src = fresh(SRC.drop); img.style.height = DROP.h + "px"; at(cl, ct);
+      await anim(4000, (t) => {
+        const sec = t * 4;
+        const fall = sec < 0.95 ? 0 : sec > 1.95 ? 1 : Math.pow((sec - 0.95) / 1.0, 1.6);   // 공중에 떠 있는 동안 아래로
+        const run = Math.min(runMax, Math.max(0, sec - 2.65) * 240);                                          // 착지 후 달리기 시작
+        at(cl - run, ct + D * fall);
       });
-      img.style.height = Hs + "px";
-      await anim(180, (t) => { img.style.transform = `scaleY(${1 - Math.sin(Math.PI * t) * 0.08})`; });   // 착지 쿵
-      img.style.transform = "";
+      img.style.height = H + "px";
+      const startX = cl - runMax + DROP.cxEnd - RUN_W / 2;
       // 2) 탭 줄을 따라 '안전' 옆까지 달려가기
-      await runTo(x0, hx, groundY);
+      await runTo(startX, hx, groundY);
       // 3) 제자리에서 고리 걸기 (발은 카드 위쪽 선 위)
       img.src = SRC.stand; at(hx, groundY);
       if (Math.abs(groundY - hy) > 1) await anim(220, (t) => at(hx, groundY + (hy - groundY) * t));  // 거의 같은 높이
@@ -7250,12 +7257,18 @@ function hseWeldWord(host, wordEl, onDone) {
       img.src = SRC.stand; at(hx, hy);
       if (Math.abs(groundY - hy) > 1) await anim(200, (t) => at(hx, hy + (groundY - hy) * t));
       await wait(250);
-      // 6) 원래 자리로 달려가서 배너로 폴짝
+      // 6) 원래 자리 아래까지 달려가서 배너로 폴짝 (뛰어내리기 영상을 거꾸로)
       const r2 = runner.getBoundingClientRect();
       const bx = r2.left + scrollX, by = r2.top + scrollY;
-      await runTo(hx, bx, groundY);
-      img.src = SRC.stand;
-      await anim(650, (t) => { img.style.height = Hs + (H - Hs) * t + "px"; at(bx, groundY + (by - groundY) * ease(t) - Math.sin(Math.PI * t) * 30); });
+      const hl = bx + r2.width / 2 - HOPUP.cx0;                          // 폴짝 그림 왼쪽
+      await runTo(hx, hl + HOPUP.cx0 - RUN_W / 2, groundY);
+      const ht = floor - HOPUP.foot, U = ht - (by - HOPUP.top1);         // 올라가야 할 거리
+      img.src = fresh(SRC.hopup); img.style.height = HOPUP.h + "px"; at(hl, ht);
+      await anim(1680, (t) => {
+        const sec = t * 1.68;
+        const up = sec < 0.36 ? 0 : sec > 1.14 ? 1 : 1 - Math.pow(1 - (sec - 0.36) / 0.78, 1.6);
+        at(hl + (HOPUP.cxEnd - HOPUP.cx0) * 0, ht - U * up);
+      });
     } finally {
       root.remove();
       runner.style.visibility = "";
