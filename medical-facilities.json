@@ -5,7 +5,7 @@
   "lon": 44.618
  },
  "radiusKm": 45,
- "updatedAt": "2026-10-08T08:30:52.602119+00:00",
+ "updatedAt": "2026-10-08T08:41:02.727646+00:00",
  "items": [
   {
    "id": "node/9547504717",
@@ -372,7 +372,7 @@
    "name": "مركز صحي الامام الرضا",
    "nameEn": "",
    "nameAr": "",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "public",
    "emergency": false,
    "beds": "",
@@ -525,9 +525,7 @@
    "addr": "بغداد الامين نواب الضباط سكينة ورقية شارع 20مقابل سوبر ماركت السلطان مجاور حلويات الباشا",
    "lat": 33.299965,
    "lon": 44.520608,
-   "km": 14.9,
-   "roadKm": 20.3,
-   "min": 18
+   "km": 14.9
   },
   {
    "id": "node/9243835317",
@@ -696,7 +694,7 @@
    "name": "مستوصف السندباد",
    "nameEn": "",
    "nameAr": "",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -705,16 +703,14 @@
    "addr": "",
    "lat": 33.264,
    "lon": 44.467702,
-   "km": 16.1,
-   "roadKm": 19.0,
-   "min": 20
+   "km": 16.1
   },
   {
    "id": "node/5920761187",
    "name": "العيادة الطبية الشعبية في الأمين",
    "nameEn": "PHC in Al-Amin",
    "nameAr": "العيادة الطبية الشعبية في الأمين",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -723,9 +719,7 @@
    "addr": "",
    "lat": 33.309068,
    "lon": 44.51155,
-   "km": 16.3,
-   "roadKm": 22.8,
-   "min": 19
+   "km": 16.3
   },
   {
    "id": "node/11146975131",
@@ -892,7 +886,7 @@
    "name": "مستوصف داوود الجنابي",
    "nameEn": "Haj Dawood Al Al-Janabi PHC",
    "nameAr": "مستوصف داوود الجنابي",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -901,9 +895,7 @@
    "addr": "",
    "lat": 33.298761,
    "lon": 44.48141,
-   "km": 17.3,
-   "roadKm": 26.2,
-   "min": 23
+   "km": 17.3
   },
   {
    "id": "node/6590040085",
@@ -1010,7 +1002,7 @@
    "name": "مستوصف الامين",
    "nameEn": "Health Center",
    "nameAr": "مستوصف الأمين",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -1019,9 +1011,7 @@
    "addr": "شارع المعلمين",
    "lat": 33.319155,
    "lon": 44.494901,
-   "km": 18.1,
-   "roadKm": 23.9,
-   "min": 20
+   "km": 18.1
   },
   {
    "id": "node/4462027391",
@@ -1156,7 +1146,7 @@
    "name": "مركز صحي بغداد الجديدة الثاني",
    "nameEn": "PHC in Al-Jadida #2 (New Baghdad #2)",
    "nameAr": "مركز صحي بغداد الجديدة الثاني",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -1165,9 +1155,7 @@
    "addr": "",
    "lat": 33.317915,
    "lon": 44.482517,
-   "km": 18.8,
-   "roadKm": 24.8,
-   "min": 21
+   "km": 18.8
   },
   {
    "id": "node/4987074640",
@@ -1340,7 +1328,7 @@
    "name": "مستوصف فاضل حسن",
    "nameEn": "Mustawsaf Fadil Hasan",
    "nameAr": "مستوصف فاضل حسن",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -1349,9 +1337,7 @@
    "addr": "",
    "lat": 33.193542,
    "lon": 44.409175,
-   "km": 19.4,
-   "roadKm": 36.3,
-   "min": 38
+   "km": 19.4
   },
   {
    "id": "node/6217652486",
@@ -2532,7 +2518,7 @@
    "name": "مركز صحي النهروان الثاني",
    "nameEn": "مركز صحي النهروان الثاني",
    "nameAr": "مركز صحي النهروان الثاني",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -2589,7 +2575,9 @@
    "addr": "",
    "lat": 33.298807,
    "lon": 44.420011,
-   "km": 21.8
+   "km": 21.8,
+   "roadKm": 26.7,
+   "min": 26
   },
   {
    "id": "node/5401064221",
@@ -2669,7 +2657,9 @@
    "addr": "",
    "lat": 33.312899,
    "lon": 44.430508,
-   "km": 21.9
+   "km": 21.9,
+   "roadKm": 25.1,
+   "min": 24
   },
   {
    "id": "node/10537425699",
@@ -2717,7 +2707,9 @@
    "addr": "",
    "lat": 33.232999,
    "lon": 44.387103,
-   "km": 21.9
+   "km": 21.9,
+   "roadKm": 33.8,
+   "min": 32
   },
   {
    "id": "node/6046604986",
@@ -2765,7 +2757,9 @@
    "addr": "",
    "lat": 33.301687,
    "lon": 44.420108,
-   "km": 22.0
+   "km": 22.0,
+   "roadKm": 26.7,
+   "min": 26
   },
   {
    "id": "node/8915744523",
@@ -2781,7 +2775,9 @@
    "addr": "",
    "lat": 33.315728,
    "lon": 44.432179,
-   "km": 22.0
+   "km": 22.0,
+   "roadKm": 30.2,
+   "min": 25
   },
   {
    "id": "node/9591606718",
@@ -2836,7 +2832,7 @@
    "name": "المركز الصحي في النهروان /1",
    "nameEn": "PHC Center Al Nahrawan",
    "nameAr": "المركز الصحي في النهروان /1",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -2877,7 +2873,9 @@
    "addr": "",
    "lat": 33.310667,
    "lon": 44.426688,
-   "km": 22.1
+   "km": 22.1,
+   "roadKm": 24.9,
+   "min": 24
   },
   {
    "id": "node/8378650319",
@@ -2957,7 +2955,9 @@
    "addr": "",
    "lat": 33.319479,
    "lon": 44.432962,
-   "km": 22.2
+   "km": 22.2,
+   "roadKm": 29.7,
+   "min": 24
   },
   {
    "id": "node/4207930072",
@@ -3188,7 +3188,7 @@
    "name": "مركز صحي الصدرين",
    "nameEn": "alsadreen health center",
    "nameAr": "",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -3204,7 +3204,7 @@
    "name": "عيادة الاسنان",
    "nameEn": "",
    "nameAr": "",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -3268,7 +3268,7 @@
    "name": "مركز صحي  الباويه",
    "nameEn": "",
    "nameAr": "",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -3284,7 +3284,7 @@
    "name": "عيادة عبد الله",
    "nameEn": "Iyadah Abd Allah",
    "nameAr": "عيادة عبد الله",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -3316,7 +3316,7 @@
    "name": "مركز صحي واقعة ألطف",
    "nameEn": "",
    "nameAr": "",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -3620,7 +3620,7 @@
    "name": "مركز صحي حي النصر",
    "nameEn": "",
    "nameAr": "",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -4004,7 +4004,7 @@
    "name": "مركز صحي الرشاد",
    "nameEn": "",
    "nameAr": "",
-   "kind": "hospital",
+   "kind": "clinic",
    "own": "",
    "emergency": false,
    "beds": "",
@@ -4336,38 +4336,6 @@
    "km": 25.2
   },
   {
-   "id": "node/6166795989",
-   "name": "عيادة دكتور حيدر",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.319292,
-   "lon": 44.392503,
-   "km": 25.2
-  },
-  {
-   "id": "node/1037908152",
-   "name": "dental clinic dr.nadir",
-   "nameEn": "dental clinic dr.nadir",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.255003,
-   "lon": 44.356201,
-   "km": 25.3
-  },
-  {
    "id": "node/4553939690",
    "name": "المركز التخصصي لطب الاسنان في مدينة الصدر",
    "nameEn": "",
@@ -4464,22 +4432,6 @@
    "km": 25.7
   },
   {
-   "id": "way/1218104135",
-   "name": "مركز صحي الرحمه",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.411276,
-   "lon": 44.528204,
-   "km": 25.7
-  },
-  {
    "id": "node/8358849417",
    "name": "الدكتور علي سعود عبدالرزاق",
    "nameEn": "Ali Saud",
@@ -4509,22 +4461,6 @@
    "addr": "",
    "lat": 33.3479,
    "lon": 44.409492,
-   "km": 25.9
-  },
-  {
-   "id": "node/4278130730",
-   "name": "مستوصف الشهيد الكعبي",
-   "nameEn": "",
-   "nameAr": "مستوصف الشهيد الكعبي",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.371036,
-   "lon": 44.438766,
    "km": 25.9
   },
   {
@@ -4558,38 +4494,6 @@
    "lat": 33.326708,
    "lon": 44.388085,
    "km": 26.0
-  },
-  {
-   "id": "node/4155382694",
-   "name": "مستوصف",
-   "nameEn": "",
-   "nameAr": "مستوصف الفحص الطبي 55",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.373694,
-   "lon": 44.439603,
-   "km": 26.1
-  },
-  {
-   "id": "node/5341253621",
-   "name": "عيادة الباطنية والقلب د.حسين الجبير",
-   "nameEn": "Dr. hoseen Aljubair",
-   "nameAr": "عيادة الباطنية والقلب د.حسين الجبير",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "شارع الجوادر",
-   "lat": 33.385599,
-   "lon": 44.453904,
-   "km": 26.3
   },
   {
    "id": "node/5879375085",
@@ -4638,22 +4542,6 @@
    "lat": 33.383593,
    "lon": 44.448219,
    "km": 26.4
-  },
-  {
-   "id": "node/4338182294",
-   "name": "العيادة الشعبية",
-   "nameEn": "Saudi Aid",
-   "nameAr": "العيادة الشعبية",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "شارع 13",
-   "lat": 33.276503,
-   "lon": 44.35085,
-   "km": 26.5
   },
   {
    "id": "node/5036654322",
@@ -4816,22 +4704,6 @@
    "km": 27.1
   },
   {
-   "id": "node/4315494289",
-   "name": "مستوصف الاعلام",
-   "nameEn": "PRIMARY HEALTH CARE CENTER BK02",
-   "nameAr": "مستوصف الاعلام",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.24303,
-   "lon": 44.331449,
-   "km": 27.2
-  },
-  {
    "id": "way/987247609",
    "name": "مستشفى المحمودية - Mahmoudia Hospital",
    "nameEn": "",
@@ -4845,22 +4717,6 @@
    "addr": "المحمودية",
    "lat": 33.069521,
    "lon": 44.363946,
-   "km": 27.4
-  },
-  {
-   "id": "node/4845048321",
-   "name": "اسنان الكيارة التخصصي",
-   "nameEn": "PHC in Al-Kaiyara",
-   "nameAr": "اسنان الكيارة التخصصي",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.393524,
-   "lon": 44.446707,
    "km": 27.4
   },
   {
@@ -4910,22 +4766,6 @@
    "lat": 33.33908,
    "lon": 44.379793,
    "km": 27.5
-  },
-  {
-   "id": "node/9463174625",
-   "name": "عيادة د.غصون",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.276889,
-   "lon": 44.338631,
-   "km": 27.6
   },
   {
    "id": "way/939048972",
@@ -5088,22 +4928,6 @@
    "km": 28.2
   },
   {
-   "id": "way/1223806715",
-   "name": "مركز صحي الباوية",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.436571,
-   "lon": 44.533737,
-   "km": 28.2
-  },
-  {
    "id": "node/8913876249",
    "name": "Baghdad Hospital Al Habi Bija",
    "nameEn": "Baghdad Hospital Al Habi Bija",
@@ -5213,22 +5037,6 @@
    "addr": "",
    "lat": 33.348128,
    "lon": 44.374592,
-   "km": 28.5
-  },
-  {
-   "id": "node/6011862186",
-   "name": "ابن البلدي الصحي",
-   "nameEn": "Ibn Al Baladi PHC and PuHC",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.391027,
-   "lon": 44.423389,
    "km": 28.5
   },
   {
@@ -5376,22 +5184,6 @@
    "km": 29.2
   },
   {
-   "id": "node/8301994617",
-   "name": "مركز صحي الداخلية / الموقع البديل",
-   "nameEn": "",
-   "nameAr": "مركز صحي الداخلية / الموقع البديل",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.293181,
-   "lon": 44.326493,
-   "km": 29.3
-  },
-  {
    "id": "way/931215982",
    "name": "مستشفى الخيال",
    "nameEn": "",
@@ -5440,22 +5232,6 @@
    "km": 29.5
   },
   {
-   "id": "node/4727145190",
-   "name": "مستوصف الحميدية",
-   "nameEn": "Dispensary Hamidiyah",
-   "nameAr": "مستوصف الحميدية",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "شارع الثورة",
-   "lat": 33.4234,
-   "lon": 44.4607,
-   "km": 29.5
-  },
-  {
    "id": "node/4426486391",
    "name": "مجمع صحي",
    "nameEn": "",
@@ -5486,38 +5262,6 @@
    "lat": 33.370083,
    "lon": 44.382177,
    "km": 29.5
-  },
-  {
-   "id": "node/10567758777",
-   "name": "عيادة الدكتور علي سعد العبيدي",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "07800070819",
-   "website": "",
-   "addr": "شارع سعد بن ابي وقاص, baghdad",
-   "lat": 33.328942,
-   "lon": 44.346142,
-   "km": 29.5
-  },
-  {
-   "id": "node/4719529095",
-   "name": "المستوصف الصحي في الوشاش",
-   "nameEn": "",
-   "nameAr": "المستوصف الصحي في الوشاش",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.331781,
-   "lon": 44.341516,
-   "km": 30.0
   },
   {
    "id": "node/2619332724",
@@ -5568,22 +5312,6 @@
    "km": 30.2
   },
   {
-   "id": "node/4797321421",
-   "name": "مركز الصحي سليمان",
-   "nameEn": "aliaman Fidy (in Hay-Aur) PHC",
-   "nameAr": "مركز الصحي سليمان الفيضي",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.40007,
-   "lon": 44.406727,
-   "km": 30.3
-  },
-  {
    "id": "node/5038150021",
    "name": "المركز الصحي في معامل الطابوق",
    "nameEn": "",
@@ -5597,22 +5325,6 @@
    "addr": "",
    "lat": 33.397573,
    "lon": 44.83417,
-   "km": 30.3
-  },
-  {
-   "id": "node/12996336027",
-   "name": "عيادة لانوس لطب الاسنان",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "private",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "شارع الربيع, Baghdad",
-   "lat": 33.312479,
-   "lon": 44.324596,
    "km": 30.3
   },
   {
@@ -5728,22 +5440,6 @@
    "km": 30.7
   },
   {
-   "id": "node/13137463075",
-   "name": "العيادة الشعبية في الصليخ الجديد",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.392419,
-   "lon": 44.387285,
-   "km": 30.8
-  },
-  {
    "id": "node/4336516291",
    "name": "مستشفى الجامعة الاهلي",
    "nameEn": "Aljamaa hospital",
@@ -5792,38 +5488,6 @@
    "km": 31.1
   },
   {
-   "id": "node/4110058094",
-   "name": "عياده الشعبيه",
-   "nameEn": "Popular clinic in Al - Shaab neighborhood",
-   "nameAr": "عياده الشعبيه في الشعب",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.413809,
-   "lon": 44.410584,
-   "km": 31.2
-  },
-  {
-   "id": "node/5996559886",
-   "name": "مستوصف صحي",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.419717,
-   "lon": 44.418899,
-   "km": 31.3
-  },
-  {
    "id": "node/5095080725",
    "name": "مختبر الروز",
    "nameEn": "alroz lab",
@@ -5837,22 +5501,6 @@
    "addr": "شارع صليخ 600",
    "lat": 33.390569,
    "lon": 44.375588,
-   "km": 31.5
-  },
-  {
-   "id": "way/1531278959",
-   "name": "مركز صحي المزرعه",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "شارع الوحدة, اللطيفية",
-   "lat": 33.003381,
-   "lon": 44.366277,
    "km": 31.5
   },
   {
@@ -5870,22 +5518,6 @@
    "lat": 33.425013,
    "lon": 44.422011,
    "km": 31.6
-  },
-  {
-   "id": "way/1249052851",
-   "name": "مركز صحي الشاعورة",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.472708,
-   "lon": 44.551838,
-   "km": 31.7
   },
   {
    "id": "node/8754205217",
@@ -5968,22 +5600,6 @@
    "km": 32.3
   },
   {
-   "id": "node/8838258117",
-   "name": "مستوصف الدهاليك",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.389625,
-   "lon": 44.361934,
-   "km": 32.3
-  },
-  {
    "id": "node/9104986981",
    "name": "مركز الشفاء التخصصي",
    "nameEn": "",
@@ -6048,22 +5664,6 @@
    "km": 32.7
   },
   {
-   "id": "node/5480681022",
-   "name": "مستوصف الحرية",
-   "nameEn": "Dispensary Alhuuriya",
-   "nameAr": "العيادة الشعبية",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "شارع الحرية الاولى",
-   "lat": 33.355022,
-   "lon": 44.323854,
-   "km": 32.7
-  },
-  {
    "id": "node/2202187519",
    "name": "Al Kazimiyah",
    "nameEn": "Al Kazimiyah",
@@ -6096,22 +5696,6 @@
    "km": 32.7
   },
   {
-   "id": "node/5287287622",
-   "name": "مركز صحي",
-   "nameEn": "Health center",
-   "nameAr": "مركز صحي",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "الدور نواب الضباط",
-   "lat": 33.347657,
-   "lon": 44.317647,
-   "km": 32.8
-  },
-  {
    "id": "node/4462730794",
    "name": "مركز طبي",
    "nameEn": "",
@@ -6125,22 +5709,6 @@
    "addr": "",
    "lat": 33.313155,
    "lon": 44.296343,
-   "km": 32.8
-  },
-  {
-   "id": "node/6404141250",
-   "name": "مستوصف العامرية",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "public",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.304289,
-   "lon": 44.29107,
    "km": 32.8
   },
   {
@@ -6240,22 +5808,6 @@
    "km": 33.8
   },
   {
-   "id": "node/4367704295",
-   "name": "مستوصف الكريعات",
-   "nameEn": "",
-   "nameAr": "مستوصف الكريعات",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.391999,
-   "lon": 44.341449,
-   "km": 33.9
-  },
-  {
    "id": "node/997416381",
    "name": "مدينة الامامين الكاظمين الطبية",
    "nameEn": "Imamain Al-Kadhimain Medical City",
@@ -6304,22 +5856,6 @@
    "km": 34.4
   },
   {
-   "id": "node/4867689028",
-   "name": "مركز صحي الثعالبة",
-   "nameEn": "",
-   "nameAr": "مركز صحي الثعالبة",
-   "kind": "hospital",
-   "own": "",
-   "emergency": true,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "365-28",
-   "lat": 33.446013,
-   "lon": 44.394159,
-   "km": 35.0
-  },
-  {
    "id": "node/8145623217",
    "name": "iraq clince",
    "nameEn": "",
@@ -6334,22 +5870,6 @@
    "lat": 33.369308,
    "lon": 44.306415,
    "km": 35.0
-  },
-  {
-   "id": "node/4727115589",
-   "name": "مستوصف صحي بوب الشام",
-   "nameEn": "",
-   "nameAr": "مستوصف صحي بوب الشام",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "شارع الجامع",
-   "lat": 33.4396,
-   "lon": 44.3824,
-   "km": 35.1
   },
   {
    "id": "node/13337155300",
@@ -6400,22 +5920,6 @@
    "km": 35.3
   },
   {
-   "id": "node/4236953090",
-   "name": "مستوصف الرحمانيه",
-   "nameEn": "",
-   "nameAr": "مستوصف الرحمانيه",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "الرحمانيه.ش المشاتل",
-   "lat": 33.364395,
-   "lon": 44.283114,
-   "km": 36.5
-  },
-  {
    "id": "node/6146456987",
    "name": "عمارة الوليد ( عيادات اطباء )",
    "nameEn": "",
@@ -6429,22 +5933,6 @@
    "addr": "",
    "lat": 33.362294,
    "lon": 44.279691,
-   "km": 36.7
-  },
-  {
-   "id": "node/9699685417",
-   "name": "مركز صحي بوب الشام",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.465108,
-   "lon": 44.395302,
    "km": 36.7
   },
   {
@@ -6480,22 +5968,6 @@
    "km": 37.2
   },
   {
-   "id": "node/9095163218",
-   "name": "مستوصف الوفاء",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.376889,
-   "lon": 44.282631,
-   "km": 37.3
-  },
-  {
    "id": "node/8918746009",
    "name": "BANI SAD HOSPITAL BARRACKS AND SCHOOL SOUTH",
    "nameEn": "BANI SAD HOSPITAL BARRACKS AND SCHOOL SOUTH",
@@ -6510,22 +5982,6 @@
    "lat": 33.521158,
    "lon": 44.525262,
    "km": 37.5
-  },
-  {
-   "id": "node/4240901106",
-   "name": "مركز صحي",
-   "nameEn": "",
-   "nameAr": "مركز صحي",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "الغزاليه.ش الضغط;شارع الضغط",
-   "lat": 33.358584,
-   "lon": 44.262449,
-   "km": 37.8
   },
   {
    "id": "way/1077848955",
@@ -6558,38 +6014,6 @@
    "lat": 33.362777,
    "lon": 44.257014,
    "km": 38.5
-  },
-  {
-   "id": "way/1311307655",
-   "name": "مركز صحي القرية العصرية",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 32.886134,
-   "lon": 44.384076,
-   "km": 40.5
-  },
-  {
-   "id": "node/9019009619",
-   "name": "مركز قطاع الاستقلال / صحة الرصافة",
-   "nameEn": "istiqlal health center",
-   "nameAr": "مركز قطاع الاستقلال الصحي / صحة الرصافة",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.508423,
-   "lon": 44.373071,
-   "km": 41.8
   },
   {
    "id": "node/5327256421",
@@ -6656,22 +6080,6 @@
    "km": 42.4
   },
   {
-   "id": "way/1246054824",
-   "name": "مركز صحي بني سعد",
-   "nameEn": "",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.568283,
-   "lon": 44.540195,
-   "km": 42.4
-  },
-  {
    "id": "node/4727166189",
    "name": "مستشفى الحسينية العام",
    "nameEn": "",
@@ -6685,22 +6093,6 @@
    "addr": "",
    "lat": 33.5483,
    "lon": 44.4171,
-   "km": 43.7
-  },
-  {
-   "id": "node/9019037517",
-   "name": "مستوصف الزهور الصحي",
-   "nameEn": "alzuhoor health care",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.551966,
-   "lon": 44.425315,
    "km": 43.7
   },
   {
@@ -6718,22 +6110,6 @@
    "lat": 33.54837,
    "lon": 44.406194,
    "km": 44.1
-  },
-  {
-   "id": "node/13337155304",
-   "name": "مركز صحي عباس التميمي",
-   "nameEn": "Abbas Al-Tamimi Health Center",
-   "nameAr": "",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "",
-   "lat": 33.403669,
-   "lon": 44.211501,
-   "km": 44.5
   }
  ]
 }
