@@ -3662,6 +3662,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const squash = 1 - (1 - walkAmt) * 0.015 * (1 + Math.sin(breath));
 
     runner.style.transform = `translateX(${x.toFixed(1)}px)`;
+    if (!runner.classList.contains("ready") && maxX > 0) requestAnimationFrame(() => runner.classList.add("ready"));   // 자리를 잡은 뒤에 보이게
     step.style.transform = `translateY(${(-bob).toFixed(2)}px) rotate(${(tilt * facing).toFixed(2)}deg) scaleY(${squash.toFixed(4)})`;
     shadow.style.transform = `scaleX(${(1 - bob / 18).toFixed(3)})`;
     shadow.style.opacity = (0.35 - bob / 40).toFixed(3);

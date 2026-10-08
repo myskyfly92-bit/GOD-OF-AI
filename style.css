@@ -140,8 +140,10 @@ code {
   object-fit: contain;
 }
 
+/* 원래 자리(한화 로고와 제목 사이)의 마스코트 그림은 쓰지 않는다: 새로고침 순간 그 자리에 잠깐 보이지 않게 처음부터 숨김
+   (배너를 달리는 마스코트가 이 그림 주소만 빌려 쓴다) */
 .brand-mascot {
-  display: block;
+  display: none !important;
   height: 100px;
   width: auto;
   object-fit: contain;
@@ -2006,6 +2008,7 @@ html body {
 .brand-mascot.mascot-home { display: none; } /* 움직이는 마스코트는 제목 오른쪽 빈 공간에서 뛰므로 원래 자리는 없앤다 */
 .mascot-runner {
   position: absolute; left: 0; top: 0; height: 100px; width: 76px; z-index: 5;
+  opacity: 0; /* 제자리를 잡은 다음 나타난다 (JS가 .ready 를 붙임) */
   cursor: pointer; will-change: transform; user-select: none;
 }
 .mascot-body, .mascot-step { height: 100%; display: flex; justify-content: center; transform-origin: 50% 100%; }
@@ -2070,6 +2073,7 @@ html body {
 @keyframes bubbleOut { to { opacity: 0; transform: translateY(-4px) scale(0.9); } }
 @keyframes bubbleDot { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
 @media (max-width: 980px) { .mascot-runner { display: none; } }
+.mascot-runner.ready { opacity: 1; transition: opacity .4s ease; }
 /* 제목 글자는 마스코트보다 앞에 두어, 지나가도 글자가 가려지지 않게 */
 .topbar .brand-text, .topbar .topbar-status { position: relative; z-index: 6; }
 
