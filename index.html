@@ -33,7 +33,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261008z">
+<link rel="stylesheet" href="style.css?v=20261008za">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -201,6 +201,12 @@ html.intro-pending::after {
         <span class="substat-label">누적 사고(건)</span>
       </div>
     </div>
+    <div class="hero-notices" aria-label="공지사항 및 알림">
+      <div class="hero-notices-label">NOTICES · 공지사항 / 알림</div>
+      <ul class="notice-list" id="noticeList">
+        <li class="notice-row skeleton">공지사항 불러오는 중…</li>
+      </ul>
+    </div>
   </section>
 
   <!-- 작업환경 상태 밴드 (폭염 지수) -->
@@ -289,6 +295,12 @@ html.intro-pending::after {
     <button type="button" class="tw-link" id="twGo">작업구역 탭에서 보기 →</button>
   </section>
 
+  <!-- 오늘 작업 목록 (오늘 작업 현황의 짝 카드) -->
+  <section class="panel today-list-panel" aria-label="오늘 작업 목록">
+    <div class="panel-label">TODAY'S JOBS · 오늘 작업 목록 <span class="tw-list-count" id="twListCount"></span></div>
+    <div class="tw-list" id="twList"><p class="tw-empty">작업일정 불러오는 중…</p></div>
+  </section>
+
   <!-- 날씨/환경 -->
 
   <!-- 안전 지표 -->
@@ -340,13 +352,6 @@ html.intro-pending::after {
     </ul>
   </section>
 
-  <!-- 공지사항 -->
-  <section class="panel notices-panel" aria-label="공지사항 및 알림">
-    <div class="panel-label">NOTICES · 공지사항 / 알림</div>
-    <ul class="notice-list" id="noticeList">
-      <li class="notice-row skeleton">공지사항 불러오는 중…</li>
-    </ul>
-  </section>
 
   <!-- 비상연락망 -->
   <section class="panel contacts-panel" aria-label="비상연락망">
@@ -1030,7 +1035,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261008z"></script>
+<script src="script.js?v=20261008za"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

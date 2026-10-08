@@ -2750,11 +2750,32 @@ html:not(.page-ready) main.grid { opacity: 0; }
 #view-dashboard .disaster-panel,
 #view-dashboard .contacts-panel { display: none; }
 /* 무재해 카드 아래 숫자 3개(이달 점검·교육 이수율·누적 사고)는 숨김 — 다시 보이게 하려면 이 줄을 지우면 됨 */
-.hero-panel .hero-substats { visibility: hidden; } /* 자리는 비워 두고 내용만 숨김 */
+.hero-panel .hero-substats { display: none; }
+/* 무재해 카드 아래쪽에 들어간 공지사항 (카드 남는 높이만큼 채우고, 넘치면 안에서 스크롤) */
+.hero-panel { display: flex; flex-direction: column; }
+.hero-notices { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border-soft); display: flex; flex-direction: column; min-height: 0; }
+.hero-notices-label { font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; color: var(--text-dim); margin-bottom: 10px; }
+.hero-notices .notice-list { overflow-y: auto; min-height: 0; }
+@media (min-width: 1251px) {
+  .hero-notices { flex: 1 1 auto; contain: size; min-height: 150px; }
+  .hero-notices .notice-list { flex: 1 1 auto; }
+}
+/* 오늘 작업 목록 카드 */
+.tw-list-count { color: var(--cyan); margin-left: 4px; }
+.tw-list { display: flex; flex-direction: column; gap: 8px; }
+.tw-job { border: 1px solid var(--border-soft); border-left: 3px solid var(--c); border-radius: 8px; padding: 8px 10px; background: rgba(255,255,255,0.02); font-size: 12.5px; }
+.tw-job.risky { border-color: rgba(229, 72, 77, 0.45); border-left-color: var(--danger); background: rgba(229, 72, 77, 0.06); }
+.tw-job-top { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.tw-job-top b { color: var(--text); font-size: 13.5px; }
+.tw-job-part { font-size: 11px; font-weight: 700; color: var(--c); border: 1px solid color-mix(in srgb, var(--c) 55%, transparent); border-radius: 999px; padding: 0 8px; }
+.tw-job-crew { margin-left: auto; color: var(--text-muted); font-size: 12px; white-space: nowrap; }
+.tw-job-meta { color: var(--text-muted); margin-top: 3px; font-size: 12px; }
+.tw-job-risks { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
+.tw-job-risks span { font-size: 11px; color: var(--danger); border: 1px solid rgba(229, 72, 77, 0.5); border-radius: 999px; padding: 0 7px; }
 /* 오늘 작업 현황 · 공지사항: 환율 위젯 아래 끝에 높이를 맞출 때 (script.js fitRowToFx) 넘치는 내용은 카드 안에서 스크롤 */
 .fit-fx { display: flex; flex-direction: column; overflow: hidden; }
 .fit-fx > * { flex-shrink: 0; }
-.fit-fx .tw-rows, .fit-fx .notice-list { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
+.fit-fx .tw-rows, .fit-fx .tw-list { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
 .fit-fx .tw-link { align-self: flex-start; margin-top: auto; }
 
 /* 작업구역: 작업마다 수정·삭제 버튼 */

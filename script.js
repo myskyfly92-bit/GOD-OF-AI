@@ -924,10 +924,10 @@ function alignSideWidgets() {
   fitRowToFx(fitsOnScreen && fxWidget && fxWidget.style.display !== "none" ? fxWidget : null);
 }
 
-// 종합현황 둘째 줄(오늘 작업 현황 · 공지사항) 카드의 아래 끝을 오른쪽 환율 위젯 아래 끝에 맞춘다
+// 종합현황 둘째 줄(오늘 작업 현황 · 오늘 작업 목록) 카드의 아래 끝을 오른쪽 환율 위젯 아래 끝에 맞춘다
 function fitRowToFx(fx) {
   const tw = document.querySelector("#view-dashboard .today-work-panel");
-  const nt = document.querySelector("#view-dashboard .notices-panel");
+  const nt = document.querySelector("#view-dashboard .today-list-panel");
   if (!tw || !nt) return;
   const docTop = (el) => { let t = 0; for (let e = el; e; e = e.offsetParent) t += e.offsetTop; return t; }; // 떠오르는 효과(transform)와 무관한 최종 위치
   const clear = () => { [tw, nt].forEach((p) => { p.style.height = ""; p.classList.remove("fit-fx"); }); };
@@ -1839,6 +1839,7 @@ function renderTodayWork() {
   if (!wzItems) {
     totalEl.textContent = "–"; riskEl.textContent = "–"; document.getElementById("twCrew").textContent = "–";
     rowsEl.innerHTML = `<p class="tw-empty">${wzSheetError ? "작업일정을 불러오지 못했습니다" : "작업일정 시트 연결 전입니다"}</p>`;
+    renderTodayList(null);
     return;
   }
   const items = wzItems.filter((it) => (it.date ? it.date === today : it.day === dow));
@@ -1863,10 +1864,30 @@ function renderTodayWork() {
     <div class="tw-row"><span class="tw-key">팀별</span><div>${chips(byTeam, (t) => (WZ_TEAMS[t] || {}).color || "#8996a6")}</div></div>
     <div class="tw-row"><span class="tw-key">구역별</span><div>${chips(byZone)}</div></div>
     ${crewAll ? `<div class="tw-row"><span class="tw-key">인원(명)</span><div>${chips(Object.fromEntries(Object.keys(WZ_TEAMS).map((t) => [t, items.filter((it) => it.team === t).reduce((a, it) => a + it.crew, 0)]).filter(([, n]) => n)), (t) => (WZ_TEAMS[t] || {}).color || "#8996a6")}</div></div>` : ""}
-    ${risky.length ? `<div class="tw-row"><span class="tw-key">위험작업</span><div>${chips(byRisk, () => "#e5484d")}</div></div>
-    <div class="tw-risk-list">${risky.slice(0, 4).map((it) => `<div>⚠ <b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)} <span>${wzEscapeHtml(it.zone || "")}${it.loc ? " · " + wzEscapeHtml(it.loc) : ""}${it.crew ? " · 👥 " + it.crew + "명" : ""}</span></div>`).join("")}
-      ${risky.length > 4 ? `<div class="tw-more">외 ${risky.length - 4}건</div>` : ""}</div>` : ""}`
+    ${risky.length ? `<div class="tw-row"><span class="tw-key">위험작업</span><div>${chips(byRisk, () => "#e5484d")}</div></div>` : ""}`
     : `<p class="tw-empty">오늘 등록된 작업이 없습니다</p>`;
+  renderTodayList(items);
+}
+
+// 오늘 작업 목록 카드: 위험작업을 먼저, 그다음 팀·파트 순
+function renderTodayList(items) {
+  const box = document.getElementById("twList");
+  if (!box) return;
+  const cnt = document.getElementById("twListCount");
+  if (!items) {
+    if (cnt) cnt.textContent = "";
+    box.innerHTML = `<p class="tw-empty">${wzSheetError ? "작업일정을 불러오지 못했습니다" : "작업일정 시트 연결 전입니다"}</p>`;
+    return;
+  }
+  if (cnt) cnt.textContent = items.length ? `· ${items.length}건` : "";
+  const list = items.slice().sort((a, b) => (b.risks.length > 0) - (a.risks.length > 0) || (a.team || "").localeCompare(b.team || "") || (a.part || "").localeCompare(b.part || ""));
+  box.innerHTML = list.length ? list.map((it) => `
+    <div class="tw-job ${it.risks.length ? "risky" : ""}" style="--c:${WZ_PART_COLORS[it.part] || "#8996a6"}">
+      <div class="tw-job-top"><span class="tw-job-part">${wzEscapeHtml(it.part || it.team || "–")}</span><b>${wzEscapeHtml(it.work)}</b>${it.crew ? `<span class="tw-job-crew">👥 ${it.crew}명</span>` : ""}</div>
+      <div class="tw-job-meta">${[it.zone && "📍 " + wzEscapeHtml(it.zone) + (it.loc ? " · " + wzEscapeHtml(it.loc) : ""), it.person && "👷 " + wzEscapeHtml(it.person)].filter(Boolean).join(" · ")}</div>
+      ${it.equip ? `<div class="tw-job-meta">🚜 ${wzEscapeHtml(it.equip)}</div>` : ""}
+      ${it.risks.length ? `<div class="tw-job-risks">${it.risks.map((r) => `<span>⚠ ${wzEscapeHtml(r)}</span>`).join("")}</div>` : ""}
+    </div>`).join("") : `<p class="tw-empty">오늘 등록된 작업이 없습니다</p>`;
 }
 
 // 상황실 화면을 켜 두어도 10분마다 작업일정을 다시 읽는다
@@ -6038,10 +6059,12 @@ async function clinicCall(action, payload) {
     ]},
     { id: "home", title: "종합현황", icon: "📊", steps: [
       { go: "view-dashboard", sel: ".hero-panel", text: `<b>무재해 연속일수</b>예요. 마지막 사고 이후 며칠째 무재해인지, 그리고 <b>착공 후 경과일</b>을 함께 보여 줘요. 숫자는 매일 자동으로 올라가요.` },
+      { sel: ".hero-notices", text: `같은 카드 아래쪽은 <b>공지사항 / 알림</b>이에요. HSE 팀이 올린 공지가 <b>주의</b>(노랑) · <b>안내</b>(청록)로 구분돼 떠요. 많으면 카드 안에서 스크롤돼요.` },
       { sel: ".heat-panel .heat-status", text: `<b>옥외작업 환경 상태</b>예요. 현장 체감온도를 기준으로 <b>정상 · 주의 · 경고 · 위험</b> 네 단계 중 어디인지와 작업 권고사항을 알려 줘요.` },
       { sel: ".heat-wx", text: `같은 카드 아래쪽은 <b>현장 날씨·대기환경</b>이에요. 기온·체감온도·습도·바람, 미세먼지(PM10·PM2.5)·자외선·오존, 일출·일몰·강수확률을 보여 줘요. 바람이 세면 <b>양중·고소작업</b> 전에 꼭 확인하세요.` },
       { sel: ".today-work-panel", text: `<b>오늘 작업 현황</b>이에요. 작업구역 일정(구글 시트)에서 오늘 날짜만 모아 <b>작업 건수 · 투입 인원 · 위험작업 수</b>를 보여 줘요.<br>아래 <b>'작업구역 탭에서 보기 →'</b> 를 누르면 지도로 바로 넘어가요.` },
-      { sel: ".notices-panel", text: `<b>공지사항 / 알림</b>이에요. HSE 팀이 올린 공지와 주의사항이 여기 떠요.` },
+      { sel: ".today-list-panel", text: `옆 카드는 <b>오늘 작업 목록</b>이에요. 오늘 작업을 하나씩 보여 주고, <b>위험작업이 맨 위</b>에 빨간 표시로 와요. 구역·세부위치, 인원, 담당자, <b>사용장비</b>까지 한눈에 볼 수 있어요.` },
+      
       { sel: ".holiday-panel", opt: true, text: `<b>공휴일 달력</b>이에요. ‹ › 로 달을 옮기고, <b>한국 공휴일</b>과 <b>이라크 공휴일</b>을 색으로 구분해요. 이슬람력 휴일은 달 관측에 따라 하루쯤 바뀔 수 있어요.` },
       { sel: "#fxWidget", opt: true, text: `<b>환율</b>이에요. 달러→이라크 디나르(<b>공식 고시</b>와 <b>시장 환율</b>), 달러→원, 엔·위안→원을 보여 줘요.` },
     ]},
