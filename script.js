@@ -7197,10 +7197,18 @@ function hseWeldWord(host, wordEl, onDone) {
     root.innerHTML = `<svg class="mrap-rope" aria-hidden="true"><line /></svg><span class="mrap-ring"></span>
       <div class="mrap-sprite"><img alt="" draggable="false"><div class="mascot-bubble" hidden></div></div>`;
     document.body.appendChild(root);
-    const sprite = root.querySelector(".mrap-sprite"), img = sprite.querySelector("img"), bubble = sprite.querySelector(".mascot-bubble");
+    const sprite = root.querySelector(".mrap-sprite"), bubble = sprite.querySelector(".mascot-bubble");
+    let img = sprite.querySelector("img");
+    // 그림 바꾸기: 새 그림을 다 읽어 둔 다음 한 번에 갈아 끼운다 (바뀌는 순간 빈 화면·크기 깜빡임 없게)
+    const pose = async (src, h, flip) => {
+      const n = new Image();
+      n.alt = ""; n.draggable = false; n.src = src; n.style.height = h + "px";
+      if (flip) n.style.transform = "scaleX(-1)";
+      try { await Promise.race([n.decode(), wait(1500)]); } catch (e) { /* 그래도 바꾼다 */ }
+      img.replaceWith(n); img = n;
+    };
     const svg = root.querySelector("svg"), line = svg.querySelector("line"), ring = root.querySelector(".mrap-ring");
     const at = (x, y) => { sprite.style.transform = `translate(${x}px, ${y}px)`; };
-    const face = (dir) => { img.style.transform = dir < 0 ? "scaleX(-1)" : ""; };
     const rope = (x1, y1, x2, y2) => {
       const minX = Math.min(x1, x2) - 4, minY = Math.min(y1, y2) - 4;
       Object.assign(svg.style, { left: minX + "px", top: minY + "px", width: Math.abs(x2 - x1) + 8 + "px", height: Math.abs(y2 - y1) + 8 + "px" });
@@ -7213,10 +7221,9 @@ function hseWeldWord(host, wordEl, onDone) {
     };
     // 달리기: 일정한 속도로, 발걸음에 맞춰 살짝 들썩
     const runTo = async (x1, x2, y) => {
-      img.src = SRC.run; face(x2 < x1 ? -1 : 1);
+      await pose(SRC.run, H, x2 < x1); at(x1, y);
       const ms = Math.max(500, Math.abs(x2 - x1) / 0.24);              // 초당 약 240px
       await anim(ms, (t) => at(x1 + (x2 - x1) * t, y - Math.abs(Math.sin(t * ms / 130)) * 2));
-      face(1);
     };
     ring.style.left = ax + "px"; ring.style.top = ay + "px";
 
@@ -7232,25 +7239,23 @@ function hseWeldWord(host, wordEl, onDone) {
       const cl = rr.left + rr.width / 2 + sx - DROP.cx0, ct = y0 - DROP.top0;
       const D = floor - (ct + DROP.foot);                               // 영상 속 높이에서 더 내려가야 할 거리
       const runMax = Math.max(0, Math.min(1.35 * 240, cl + DROP.cxEnd - RUN_W / 2 - hx));  // '안전'을 지나치지 않게
-      img.src = fresh(SRC.drop); img.style.height = DROP.h + "px"; at(cl, ct);
+      await pose(fresh(SRC.drop), DROP.h); at(cl, ct);
       await anim(4000, (t) => {
         const sec = t * 4;
         const fall = sec < 1.0 ? 0 : sec > 1.85 ? 1 : Math.pow((sec - 1.0) / 0.85, 1.6);   // 공중에 떠 있는 동안 아래로
         const run = Math.min(runMax, Math.max(0, sec - 2.65) * 240);                                          // 착지 후 달리기 시작
         at(cl - run, ct + D * fall);
       });
-      img.style.height = H + "px";
       const startX = cl - runMax + DROP.cxEnd - RUN_W / 2;
       // 2) 탭 줄을 따라 '안전' 옆까지 달려가기
       await runTo(startX, runX, groundY);
       // 3) 제자리에서 고리 걸기 (발은 카드 위쪽 선 위)
-      img.src = SRC.stand; at(standX, groundY); await wait(200);
-      img.src = fresh(SRC.hook); img.style.height = Hk + "px"; at(hx, hy);
+      await pose(fresh(SRC.hook), Hk); at(hx, hy);                     // 달리다 바로 고리 걸기 (영상 첫 장면이 서 있는 자세)
       await wait(1650);
       ring.classList.add("on");
       await wait(2350);
       // 4) 줄 타고 내려가기
-      img.src = SRC.rappel; img.style.height = Hr + "px";
+      await pose(SRC.rappel, Hr);
       const rx = ax - RX, top0 = hy + 4, drop = Math.min(260, Math.max(140, innerHeight - (top0 - sy) - 200));
       at(rx, top0); rope(ax, ay, ax, top0 + 2);
       await anim(3200, (t) => { const y = top0 + drop * ease(t); at(rx, y); rope(ax, ay, ax, y + 2); });
@@ -7258,7 +7263,7 @@ function hseWeldWord(host, wordEl, onDone) {
       // 5) 다시 올라가서 고리 풀기
       await anim(2400, (t) => { const y = top0 + drop * (1 - ease(t)); at(rx, y); rope(ax, ay, ax, y + 2); });
       svg.style.display = "none"; ring.classList.remove("on");
-      img.src = SRC.stand; img.style.height = H + "px"; at(standX, groundY);
+      await pose(SRC.stand, H); at(standX, groundY);
       await wait(300);
       // 6) 원래 자리 아래까지 달려가서 배너로 폴짝 (뛰어내리기 영상을 거꾸로)
       const r2 = runner.getBoundingClientRect();
@@ -7266,7 +7271,7 @@ function hseWeldWord(host, wordEl, onDone) {
       const hl = bx + r2.width / 2 - HOPUP.cx0;                          // 폴짝 그림 왼쪽
       await runTo(runX, hl + HOPUP.cx0 - RUN_W / 2, groundY);
       const ht = floor - HOPUP.foot, U = ht - (by - HOPUP.top1);         // 올라가야 할 거리
-      img.src = fresh(SRC.hopup); img.style.height = HOPUP.h + "px"; at(hl, ht);
+      await pose(fresh(SRC.hopup), HOPUP.h); at(hl, ht);
       await anim(1680, (t) => {
         const sec = t * 1.68;
         const up = sec < 0.5 ? 0 : sec > 1.05 ? 1 : 1 - Math.pow(1 - (sec - 0.5) / 0.55, 1.6);
