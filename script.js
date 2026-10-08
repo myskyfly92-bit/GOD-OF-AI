@@ -930,11 +930,12 @@ function fitRowToFx(fx) {
   const nt = document.querySelector("#view-dashboard .today-list-panel");
   if (!tw || !nt) return;
   const docTop = (el) => { let t = 0; for (let e = el; e; e = e.offsetParent) t += e.offsetTop; return t; }; // 떠오르는 효과(transform)와 무관한 최종 위치
-  const clear = () => { [tw, nt].forEach((p) => { p.style.height = ""; p.classList.remove("fit-fx"); }); };
+  const clear = () => { [tw, nt].forEach((p) => { p.style.height = ""; p.style.minHeight = ""; p.classList.remove("fit-fx"); }); };
   if (!fx || !tw.offsetParent || docTop(tw) !== docTop(nt)) return clear(); // 한 줄에 나란히 있을 때만
   const h = Math.round(docTop(fx) + fx.offsetHeight - docTop(tw));
   if (h < 240) return clear();
-  [tw, nt].forEach((p) => { p.style.height = h + "px"; p.classList.add("fit-fx"); });
+  // 최소 높이만 맞춘다: 내용이 더 많으면 스크롤 대신 카드가 길어진다
+  [tw, nt].forEach((p) => { p.style.height = ""; p.style.minHeight = h + "px"; p.classList.add("fit-fx"); });
 }
 if (window.ResizeObserver) {
   let raf = 0;
@@ -6059,7 +6060,7 @@ async function clinicCall(action, payload) {
     ]},
     { id: "home", title: "종합현황", icon: "📊", steps: [
       { go: "view-dashboard", sel: ".hero-panel", text: `<b>무재해 연속일수</b>예요. 마지막 사고 이후 며칠째 무재해인지, 그리고 <b>착공 후 경과일</b>을 함께 보여 줘요. 숫자는 매일 자동으로 올라가요.` },
-      { sel: ".hero-notices", text: `같은 카드 아래쪽은 <b>공지사항 / 알림</b>이에요. HSE 팀이 올린 공지가 <b>주의</b>(노랑) · <b>안내</b>(청록)로 구분돼 떠요. 많으면 카드 안에서 스크롤돼요.` },
+      { sel: ".hero-notices", text: `같은 카드 아래쪽은 <b>공지사항 / 알림</b>이에요. HSE 팀이 올린 공지가 <b>주의</b>(노랑) · <b>안내</b>(청록)로 구분돼 떠요. 많아지면 카드가 그만큼 길어져요.` },
       { sel: ".heat-panel .heat-status", text: `<b>옥외작업 환경 상태</b>예요. 현장 체감온도를 기준으로 <b>정상 · 주의 · 경고 · 위험</b> 네 단계 중 어디인지와 작업 권고사항을 알려 줘요.` },
       { sel: ".heat-wx", text: `같은 카드 아래쪽은 <b>현장 날씨·대기환경</b>이에요. 기온·체감온도·습도·바람, 미세먼지(PM10·PM2.5)·자외선·오존, 일출·일몰·강수확률을 보여 줘요. 바람이 세면 <b>양중·고소작업</b> 전에 꼭 확인하세요.` },
       { sel: ".today-work-panel", text: `<b>오늘 작업 현황</b>이에요. 작업구역 일정(구글 시트)에서 오늘 날짜만 모아 <b>작업 건수 · 투입 인원 · 위험작업 수</b>를 보여 줘요.<br>아래 <b>'작업구역 탭에서 보기 →'</b> 를 누르면 지도로 바로 넘어가요.` },
