@@ -140,7 +140,7 @@ def main():
         merged.append(x)
     items = merged
     # 이름이 보건소·진료소인데 '병원'으로 등록된 곳은 의원·보건소로
-    CLIN = _re.compile(r"مركز صحي|مستوصف|عيادة|العيادة|health ?cent|\bphc\b|\bh\.?c\.?$|clinic|dispensary", _re.I)
+    CLIN = _re.compile(r"مركز صحي|مستوصف|عيادة|العيادة|health ?cent|\bphc\b|\bh\.c\.?(?=\s|$)|clinic|dispensary", _re.I)
     HOSP = _re.compile(r"مستشفى|مستشفيات|hospital|مدينة الطب|medical city", _re.I)
     for x in items:
         n = " ".join((x["name"], x["nameEn"], x["nameAr"]))
