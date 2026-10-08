@@ -8,6 +8,14 @@
   "errors": {},
   "items": [
     {
+      "kind": "감염병 발생",
+      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+      "date": "2026-10-08T16:06:26Z",
+      "summary": "On 5 October 2026, WHO was informed about a laboratory-confirmed imported case of Bundibugyo virus disease (BVD) in Kenya with travel history from the Democratic Republic of the Congo. The patient travelled from the Democratic Republic of the Congo to Kenya through Uganda. The patient was hospitalized and treated in Kenya but subsequently died on 5 October. Public health response measures have been initiated in Kenya and Uganda, including contact tracing. Since the last Disease Outbreak News was",
+      "link": "https://www.who.int/2026-DON619",
+      "donId": "2026-DON619"
+    },
+    {
       "kind": "WHO 소식",
       "title": "New global roadmap launched to tackle hypertension in pregnancy, a leading cause of maternal and newborn deaths",
       "date": "2026-10-08T08:12:34Z",
@@ -198,15 +206,7 @@
       "summary": "On 11 June 2026, the Kerala State Health Department confirmed one laboratory confirmed case of Nipah virus (NiV) infection in Kozhikode district, Kerala State, India. The case is an adult male who developed symptoms on 30 May 2026 and was hospitalized on 10 June 2026. He presented with neurological manifestations and at the time of reporting is on ventilatory support in an intensive care unit (ICU). As of 18 June 2026, a total of 104 contacts had been identified and were under monitoring, includ",
       "link": "https://www.who.int/2026-DON609",
       "donId": "2026-DON609"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Yellow fever - Global",
-      "date": "2026-06-24T15:23:22Z",
-      "summary": "Yellow fever is a viral disease found in areas of Africa and the Americas, spread by infected mosquitoes. Following an increase of cases in the Americas in 2025, transmission activity remained into 2026. From 1 January to 26 May 2026, six countries reported a total of 79 human infections along with multiple epizootics, indicating active sylvatic circulation. In Africa, sustained activity continued across parts of the region, affecting 13 high-risk countries (as per classification in the Eliminat",
-      "link": "https://www.who.int/2026-DON610",
-      "donId": "2026-DON610"
     }
   ],
-  "generatedAt": "2026-10-08T12:26:01.826045+00:00"
+  "generatedAt": "2026-10-08T22:37:34.812176+00:00"
 }
