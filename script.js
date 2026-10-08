@@ -4295,7 +4295,15 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       if (window.hsePlayEnter) window.hsePlayEnter();
     };
     el.addEventListener("click", done, { once: true });
-    const showLogo = () => { el.classList.add("show-logo"); timers.push(setTimeout(done, 2300)); };
+    // 로고 장면: '한화'를 용접으로 새긴 뒤 → 글자·제목이 나타나고 → 2.3초 뒤 끝
+    const showLogo = () => {
+      const word = el.querySelector(".hse-intro-word");
+      let shown = false;
+      const reveal = () => { if (shown) return; shown = true; el.classList.add("show-logo"); timers.push(setTimeout(done, 2300)); };
+      if (!word || typeof hseWeldWord !== "function") return reveal();
+      try { hseWeldWord(el, word, reveal); } catch (e) { reveal(); }
+      timers.push(setTimeout(reveal, 5000)); // 혹시 멈춰도 넘어가게
+    };
 
     // ---- 인트로 준비: 필요한 사진·지구본을 '다' 받을 때까지 진행 막대를 보여 주고, 다 받으면 처음부터 끝까지 재생 ----
     // (회사망이 느려도 인트로가 중간중간 빠지지 않게. 그래도 90초가 넘으면 받은 것만으로 시작)
@@ -6180,3 +6188,139 @@ async function clinicCall(action, payload) {
     if (r.ok && el) el.innerHTML = `<a class="cs-pdf" href="${typeof docUrl === "function" ? docUrl("manuals/gas-detector.pdf") : "manuals/gas-detector.pdf"}" target="_blank" rel="noopener noreferrer">📄 현장 가스측정기 제조사 설명서 (PDF) 열기</a>`;
   }).catch(() => {});
 })();
+
+/* ==========================================================
+   인트로 '한화' 용접 연출
+   - 보이지 않는 용접봉이 글자를 왼쪽부터 지그재그로 훑으며 새긴다
+   - 지나간 자리는 하얗게 달았다가 주황색으로 식고, 불티가 튀어 바닥에서 튄다
+   - 다 새기면 그림은 서서히 사라지고 진짜 글자(빛나는 '한화')로 바뀐다
+   ========================================================== */
+function hseWeldWord(host, wordEl, onDone) {
+  const dpr = Math.min(2, window.devicePixelRatio || 1);
+  const W = host.clientWidth, H = host.clientHeight;
+  const cv = document.createElement("canvas");
+  cv.className = "hse-weld";
+  cv.width = W * dpr; cv.height = H * dpr;
+  host.appendChild(cv);
+  const ctx = cv.getContext("2d");
+  ctx.scale(dpr, dpr);
+
+  // 글자 자리·크기는 실제 '한화' 글자와 똑같이
+  const r = wordEl.getBoundingClientRect(), hr = host.getBoundingClientRect();
+  const cs = getComputedStyle(wordEl);
+  const fs = parseFloat(cs.fontSize);
+  const cx = r.left - hr.left + r.width / 2, cy = r.top - hr.top + r.height / 2;
+  const font = `${cs.fontWeight} ${fs}px ${cs.fontFamily}`;
+
+  // 글자 모양을 점으로 나눈다
+  const off = document.createElement("canvas");
+  const ow = Math.ceil(fs * 3.2), oh = Math.ceil(fs * 1.6);
+  off.width = ow; off.height = oh;
+  const o = off.getContext("2d");
+  o.font = font; o.textAlign = "center"; o.textBaseline = "middle";
+  try { o.letterSpacing = cs.letterSpacing; } catch (e) {}
+  o.fillStyle = "#fff"; o.fillText(wordEl.textContent.trim(), ow / 2, oh / 2);
+  const px = o.getImageData(0, 0, ow, oh).data;
+  const step = Math.max(2, Math.round(fs / 42));
+  const band = step * 7;
+  const pts = [];
+  for (let y = 0; y < oh; y += step) for (let x = 0; x < ow; x += step) {
+    if (px[(y * ow + x) * 4 + 3] > 120) pts.push({ x: cx - ow / 2 + x, y: cy - oh / 2 + y, b: Math.floor(x / band), t: -1 });
+  }
+  // 왼쪽 띠부터, 띠 안에서는 위→아래 / 아래→위 번갈아 (용접봉이 지그재그로 지나가게)
+  pts.sort((a, b) => a.b - b.b || (a.b % 2 ? b.y - a.y : a.y - b.y));
+  if (!pts.length) { cv.remove(); onDone(); return; }
+
+  // 식은 자리는 따로 그려 둔다 (매번 다시 그리지 않게)
+  const plate = document.createElement("canvas");
+  plate.width = cv.width; plate.height = cv.height;
+  const pl = plate.getContext("2d");
+  pl.scale(dpr, dpr);
+
+  const WELD_MS = 2300, COOL_MS = 650;
+  const floorY = Math.min(H - 10, cy + fs * 1.9);
+  const sparks = [];
+  let start = 0, last = 0, drawn = 0, finished = false;
+  const hot = (k) => { // 0(식음)~1(막 지남) → 색
+    if (k > 0.66) return `rgba(255,255,${Math.round(200 + 55 * (k - 0.66) / 0.34)},1)`;
+    if (k > 0.33) return `rgba(255,${Math.round(190 + 65 * (k - 0.33) / 0.33)},${Math.round(90 + 110 * (k - 0.33) / 0.33)},1)`;
+    return `rgba(255,${Math.round(120 + 70 * k / 0.33)},${Math.round(40 + 50 * k / 0.33)},1)`;
+  };
+
+  function frame(now) {
+    if (!start) start = last = now;
+    const dt = Math.min(0.05, (now - last) / 1000); last = now;
+    const el = now - start;
+    const target = Math.min(pts.length, Math.floor(pts.length * Math.min(1, el / WELD_MS)));
+    for (; drawn < target; drawn++) pts[drawn].t = now;
+    const torch = drawn < pts.length ? pts[Math.max(0, drawn - 1)] : null;
+
+    ctx.clearRect(0, 0, W, H);
+    // 식어 가는 자리: 오래된 점은 판에 굳히고, 최근 점만 밝게
+    ctx.globalCompositeOperation = "lighter";
+    for (let i = Math.max(0, drawn - 900); i < drawn; i++) {
+      const p = pts[i];
+      if (p.t < 0) continue;
+      const age = now - p.t;
+      if (age > COOL_MS) {
+        if (!p.done) { p.done = true; pl.fillStyle = "rgba(255,150,60,0.95)"; pl.beginPath(); pl.arc(p.x, p.y, step * 0.95, 0, 6.2832); pl.fill(); }
+        continue;
+      }
+      const k = 1 - age / COOL_MS;
+      ctx.fillStyle = hot(k);
+      const s = step * (0.9 + k * 1.1);
+      ctx.beginPath(); ctx.arc(p.x, p.y, s * 0.6, 0, 6.2832); ctx.fill();
+    }
+    for (let i = 0; i < Math.max(0, drawn - 900); i++) {
+      const p = pts[i];
+      if (!p.done) { p.done = true; pl.fillStyle = "rgba(255,150,60,0.95)"; pl.beginPath(); pl.arc(p.x, p.y, step * 0.95, 0, 6.2832); pl.fill(); }
+    }
+    ctx.globalCompositeOperation = "source-over";
+    ctx.save();
+    ctx.shadowColor = "rgba(255,110,20,0.9)"; ctx.shadowBlur = fs * 0.25;
+    ctx.drawImage(plate, 0, 0, W, H);
+    ctx.restore();
+    ctx.globalCompositeOperation = "lighter";
+
+    // 용접 불빛 + 불티
+    if (torch) {
+      const fl = 0.75 + Math.random() * 0.5;
+      const g = ctx.createRadialGradient(torch.x, torch.y, 0, torch.x, torch.y, fs * 0.9 * fl);
+      g.addColorStop(0, "rgba(255,255,255,1)");
+      g.addColorStop(0.08, "rgba(220,240,255,0.95)");
+      g.addColorStop(0.25, "rgba(255,200,120,0.45)");
+      g.addColorStop(1, "rgba(255,120,30,0)");
+      ctx.fillStyle = g;
+      ctx.fillRect(torch.x - fs, torch.y - fs, fs * 2, fs * 2);
+      for (let n = 0; n < 9; n++) {
+        const a = -Math.PI / 2 + (Math.random() - 0.5) * Math.PI * 1.5;
+        const v = 180 + Math.random() * 520;
+        sparks.push({ x: torch.x, y: torch.y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, life: 0.5 + Math.random() * 0.8, age: 0 });
+      }
+    }
+    ctx.lineCap = "round";
+    for (let i = sparks.length - 1; i >= 0; i--) {
+      const s = sparks[i];
+      s.age += dt;
+      if (s.age > s.life) { sparks.splice(i, 1); continue; }
+      s.vy += 1500 * dt;
+      const px0 = s.x, py0 = s.y;
+      s.x += s.vx * dt; s.y += s.vy * dt;
+      if (s.y > floorY) { s.y = floorY; s.vy *= -0.35; s.vx *= 0.6; }
+      const k = 1 - s.age / s.life;
+      ctx.strokeStyle = k > 0.6 ? `rgba(255,250,210,${k})` : `rgba(255,${Math.round(120 + 120 * k)},40,${k})`;
+      ctx.lineWidth = 1 + k * 1.4;
+      ctx.beginPath(); ctx.moveTo(px0 - s.vx * 0.012, py0 - s.vy * 0.012); ctx.lineTo(s.x, s.y); ctx.stroke();
+    }
+    ctx.globalCompositeOperation = "source-over";
+
+    if (drawn >= pts.length && !finished) {
+      finished = true;
+      // 마지막 점들도 굳히고, 진짜 글자로 넘긴다
+      setTimeout(() => { cv.classList.add("fade"); onDone(); setTimeout(() => cv.remove(), 1200); }, 450);
+    }
+    if (!cv.isConnected) return;
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
