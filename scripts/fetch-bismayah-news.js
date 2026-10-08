@@ -27,7 +27,10 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 function decodeEntities(s) {
   return String(s || "")
     .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"')
-    .replace(/&#39;|&apos;/g, "'").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&");
+    .replace(/&#39;|&apos;/g, "'").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&")
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/\u00a0/g, " ");
 }
 function stripTags(html) { return decodeEntities(String(html || "").replace(/<[^>]*>/g, " ")).replace(/\s+/g, " ").trim(); }
 function extractTag(block, tag) {
@@ -193,12 +196,14 @@ async function main() {
       }
     }
     // 본문 미리보기: 예전에 가져온 게 있으면 그대로, 없으면 이번에 가져온다 (한 번에 최대 BODY_PER_RUN건)
-    if (old.body !== undefined && old.tried) { n.url = old.url; n.body = old.body; n.bodyKo = old.bodyKo; n.tried = true; continue; }
+    const tidy = (t) => decodeEntities(t || "").replace(/&#\d*;?/g, " ").replace(/[ \t]+/g, " ").trim();
+    if (old.body !== undefined && old.tried) { n.url = old.url; n.body = tidy(old.body); n.bodyKo = tidy(old.bodyKo); n.tried = true; continue; }
     if (bodies >= BODY_PER_RUN) continue;
     bodies++;
     n.url = await resolveGoogle(n.link);
     n.body = n.url !== n.link || !/news\.google\.com/.test(n.url) ? await articleText(n.url) : "";
     n.bodyKo = n.body ? (n.lang === "ko" ? n.body : await translateLong(n.body, n.lang)) : "";
+    n.bodyKo = decodeEntities(n.bodyKo).replace(/&#\d*;?/g, " ");
     n.tried = true;
     console.log(`  본문 ${n.body ? n.body.length + "자" : "못 가져옴"} · ${n.url.slice(0, 80)}`);
     await sleep(500);
