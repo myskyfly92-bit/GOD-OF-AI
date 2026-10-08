@@ -2074,6 +2074,7 @@ html body {
 @keyframes bubbleDot { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
 @media (max-width: 980px) { .mascot-runner { display: none; } }
 .mascot-runner.ready { opacity: 1; transition: opacity .4s ease; }
+.mascot-runner.too-narrow { visibility: hidden; }
 /* 제목 글자는 마스코트보다 앞에 두어, 지나가도 글자가 가려지지 않게 */
 .topbar .brand-text, .topbar .topbar-status { position: relative; z-index: 6; }
 

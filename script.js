@@ -3555,7 +3555,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const right = status ? status.getBoundingClientRect().left - b.left : b.width;
     maxX = right - runner.offsetWidth - 44; // 도착 후 경례 그림이 조금 넓어서 여유를 더 둔다
     // 빈 공간이 너무 좁으면(작은 화면) 숨긴다
-    runner.style.visibility = maxX - minX < 40 ? "hidden" : "";
+    runner.classList.toggle("too-narrow", maxX - minX < 40);   // (줄 타기 장면이 숨겨 둔 것을 다시 보이게 하지 않도록 클래스로)
     maxX = Math.max(minX, maxX);
     x = Math.min(Math.max(x || minX, minX), maxX);
     runner.style.top = Math.round(t.top - b.top + (t.height - runner.offsetHeight) / 2 + 6) + "px";
@@ -7163,8 +7163,9 @@ function hseWeldWord(host, wordEl, onDone) {
   const LINES = ["고소작업은 안전대 체결부터!", "고리는 머리 위 튼튼한 곳에!", "줄 타기 전, 고리 두 번 당겨 확인!", "안전대는 내 생명줄!"];
   let running = false, lineIdx = Math.floor(Math.random() * LINES.length);
   // 카드가 숨어 있으면(오래 안 만져서 배경 보기·상황실 순환 화면) 장면을 하지 않고, 하던 중이면 바로 접는다
-  const cardsHidden = () => {
-    if (document.body.classList.contains("bg-reveal") || document.body.classList.contains("kiosk-on")) return true;
+  const cardsHidden = () => document.body.classList.contains("bg-reveal") || document.body.classList.contains("kiosk-on");
+  const cardsAway = () => {                                       // 시작할 때만: 카드가 실제로 보이는지까지 확인
+    if (cardsHidden()) return true;
     const c = document.querySelector(".view.active .grid > .panel");
     if (!c) return true;
     const cs = getComputedStyle(c);
@@ -7205,14 +7206,14 @@ function hseWeldWord(host, wordEl, onDone) {
   function can() {
     return !running && innerWidth >= 1100 && scrollY < 80 && !document.hidden
       && document.querySelector("#view-dashboard.active") && !document.querySelector(".hse-intro")
-      && !document.body.classList.contains("hg-running") && !cardsHidden();
+      && !document.body.classList.contains("hg-running") && !cardsAway();
   }
   window.hseRappelCan = can;
   async function show() {
     if (running) return;
     const runner = document.querySelector(".mascot-runner");
     const tab = document.querySelector('.group-btn[data-group="safety"]');
-    if (!runner || !tab || innerWidth < 1100 || document.body.classList.contains("hg-running") || cardsHidden()) return;
+    if (!runner || !tab || innerWidth < 1100 || document.body.classList.contains("hg-running") || cardsAway()) return;
     let rr = runner.getBoundingClientRect(), tr = tab.getBoundingClientRect();
     const next = tab.nextElementSibling, nr = next ? next.getBoundingClientRect() : null;
     const card = document.querySelector(".view.active .grid > .panel");
@@ -7265,16 +7266,22 @@ function hseWeldWord(host, wordEl, onDone) {
     };
     // 달리기: 일정한 속도로, 발걸음에 맞춰 살짝 들썩
     // 카드 사이 틈: 아래 첫 줄 카드(와 오른쪽 달력) 윗변을 바닥 삼아 달리다가, 카드 사이 빈틈은 폴짝 뛰어 건넌다
-    const gaps = (() => {
-      const rows = [...document.querySelectorAll(".view.active .grid > .panel"), document.getElementById("holidayPanel")]
-        .filter(Boolean).map((el) => el.getBoundingClientRect())
-        .filter((r) => r.width > 0 && Math.abs(r.top - cardTop) < 40)
-        .map((r) => [r.left + sx, r.right + sx]).sort((p, q) => p[0] - q[0]);
-      const g = [];
-      for (let i = 1; i < rows.length; i++) if (rows[i][0] - rows[i - 1][1] > 4) g.push([rows[i - 1][1], rows[i][0]]);
-      return g;
-    })();
+    // 다른 탭을 누르면 그 탭의 첫 줄 카드 기준으로 다시 계산한다
+    let gaps = [], gapsView;
+    const calcGaps = () => {
+      const v = document.querySelector(".view.active");
+      if (v === gapsView) return;
+      gapsView = v;
+      const els = [...(v ? v.querySelectorAll(".grid > .panel") : []), document.getElementById("holidayPanel")]
+        .filter((el) => el && el.offsetParent).map((el) => el.getBoundingClientRect()).filter((r) => r.width > 0);
+      const top0 = els.length ? Math.min(...els.map((r) => r.top)) : 0;
+      const rows = els.filter((r) => Math.abs(r.top - top0) < 40).map((r) => [r.left + scrollX, r.right + scrollX]).sort((p, q) => p[0] - q[0]);
+      gaps = [];
+      for (let i = 1; i < rows.length; i++) if (rows[i][0] - rows[i - 1][1] > 4) gaps.push([rows[i - 1][1], rows[i][0]]);
+    };
+    calcGaps();
     const hopAt = (cx) => {               // 몸 가운데(cx)가 틈 근처일 때 위로 뜨는 높이
+      calcGaps();
       for (const [g0, g1] of gaps) {
         const s0 = g0 - 34, s1 = g1 + 34;
         if (cx > s0 && cx < s1) { const p = (cx - s0) / (s1 - s0); return Math.sin(Math.PI * p) * 34; }
@@ -7302,6 +7309,17 @@ function hseWeldWord(host, wordEl, onDone) {
       });
     };
     ring.style.left = ax + "px"; ring.style.top = ay + "px";
+    const viewTop = () => { const v = document.querySelector(".view.active"); return v ? v.getBoundingClientRect().top + scrollY : 0; };
+    const vt0 = viewTop();
+    let off = 0, offRaf = 0;
+    const follow = () => {
+      const tgt = viewTop() - vt0;
+      off += (tgt - off) * 0.1;                                       // 툭 떨어지지 않고 스르륵
+      if (Math.abs(tgt - off) < 0.3) off = tgt;
+      root.style.transform = off ? `translateY(${off.toFixed(1)}px)` : "";
+      offRaf = requestAnimationFrame(follow);
+    };
+    offRaf = requestAnimationFrame(follow);
 
     try {
       const x0 = rr.left + sx, y0 = rr.top + sy;
@@ -7351,7 +7369,7 @@ function hseWeldWord(host, wordEl, onDone) {
       const bx = r2.left + scrollX, by = r2.top + scrollY;
       const hl = bx + r2.width / 2 - HOPUP.cx0;                          // 폴짝 그림 왼쪽
       await runTo(runX, hl + HOPUP.cx0 - RUN_W / 2, groundY);
-      const ht = floor - HOPUP.foot, U = ht - (by + H * 0.985 - HOPUP.foot);   // 올라가야 할 거리 (발바닥 기준)
+      const ht = floor - HOPUP.foot, U = ht - (by - off + H * 0.985 - HOPUP.foot);   // 장면이 내려가 있으면 그만큼 더 올라간다   // 올라가야 할 거리 (발바닥 기준)
       await pose(fresh(SRC.hopup), HOPUP.h); at(hl, ht);
       await anim(1680, (t) => {
         const sec = t * 1.68;
@@ -7367,6 +7385,7 @@ function hseWeldWord(host, wordEl, onDone) {
       requestAnimationFrame(() => { runner.style.opacity = "1"; sprite.style.opacity = "0"; });
       await sleep(320);
       runner.style.opacity = ""; runner.style.transition = "";
+      cancelAnimationFrame(offRaf);
       root.remove();
       window.__mascotHold = false;
       running = false;
