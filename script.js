@@ -3639,7 +3639,13 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     speed = target;
     x += dir * speed * dt;
     if (x <= minX && dir < 0) { x = minX; if (mode === "walk") { mode = "idle"; target = 0; speed = 0; busyUntil = t + 3200; if (Math.random() < 0.75) setTimeout(() => say(pickLine()), 300); } }
-    if (x >= maxX && dir > 0) { x = maxX; if (mode === "walk") { if (!playAction(t)) { mode = "idle"; target = 0; speed = 0; busyUntil = t + 1200; } } }
+    if (x >= maxX && dir > 0) { x = maxX; if (mode === "walk") {
+      // 오른쪽 끝(시계 앞)에 닿으면: 줄 타기 장면을 할 수 있으면 바로 아래로 뛰어내리고, 아니면 경례
+      if (window.hseRappelCan && window.hseRappelCan()) {
+        mode = "idle"; target = 0; speed = 0; busyUntil = Infinity;
+        window.hseRappelShow().finally(() => { busyUntil = performance.now() + 2500; });
+      } else if (!playAction(t)) { mode = "idle"; target = 0; speed = 0; busyUntil = t + 1200; }
+    } }
 
     // 걸음: 한 걸음(π)마다 한 번 튀고, 걸음마다 좌우로 번갈아 기울기
     // 움직이기 시작하면 달리는 그림으로, 거의 멈추면 서 있는 그림으로 (자주 깜빡이지 않게 간격을 둠)
@@ -7148,7 +7154,7 @@ function hseWeldWord(host, wordEl, onDone) {
   const DROP = { h: 140.5, cx0: 46.7, top0: 36.8, foot: 136.4, cxEnd: 33.0 }, HOPUP = { h: 140.5, cx0: 42.9, cxEnd: 47.4, top1: 36.8, foot: 137.7 };
   const RUN_W = 114 / 220 * 100;
   // 영상마다 캐릭터가 찍힌 크기가 조금씩 달라서, 머리(헬멧) 크기와 키를 기준으로 배너 마스코트와 같아 보이게 맞춘 비율
-  const K = { hook: 0.87, rappel: 0.87, drop: 0.90 };
+  const K = { hook: 0.87, rappel: 0.87, drop: 0.93 };
   ["h", "cx0", "top0", "foot", "cxEnd", "top1"].forEach((k) => { if (k in DROP) DROP[k] *= K.drop; if (k in HOPUP) HOPUP[k] *= K.drop; });
   const H = 100;                                   // 배너 마스코트와 같은 키
   const HOOK_PT = { x: 30 / 135 * (135 * H / 220), y: 30 / 220 * H };   // 고리 거는 손 위치 (영상 기준)
@@ -7169,6 +7175,13 @@ function hseWeldWord(host, wordEl, onDone) {
     });
   }
 
+  // 지금 장면을 보여 줄 수 있는지: 종합현황 · 화면 맨 위 · PC 화면 · 안내/인트로 중이 아님 · 탭이 보이는 중
+  function can() {
+    return !running && innerWidth >= 1100 && scrollY < 80 && !document.hidden
+      && document.querySelector("#view-dashboard.active") && !document.querySelector(".hse-intro")
+      && !document.body.classList.contains("hg-running") && !document.body.classList.contains("bg-reveal");
+  }
+  window.hseRappelCan = can;
   async function show() {
     if (running) return;
     const runner = document.querySelector(".mascot-runner");
@@ -7260,12 +7273,17 @@ function hseWeldWord(host, wordEl, onDone) {
       const runX = hx + (hookW - RUN_W) / 2, standX = hx + (hookW - STAND_W) / 2;
 
       // 1) 배너에서 아래 탭 줄로 뛰어내리기 (구글 플로우 영상: 돌아서기 → 폴짝 → 착지 → 왼쪽으로 달리기 시작)
-      const cl = rr.left + rr.width / 2 + sx - DROP.cx0, ct = y0 - DROP.top0;
+      const cl = rr.left + rr.width / 2 + sx - DROP.cx0, ct = y0 + H * 0.985 - DROP.foot;   // 발바닥 높이를 배너 마스코트와 맞춘다
       const D = floor - (ct + DROP.foot);                               // 영상 속 높이에서 더 내려가야 할 거리
       const runMax = Math.max(0, Math.min(1.35 * 240, cl + DROP.cxEnd - RUN_W / 2 - hx));  // '안전'을 지나치지 않게
       at(cl, ct);
+      sprite.style.opacity = "0";
       await pose(fresh(SRC.drop), DROP.h);
-      runner.style.visibility = "hidden";                               // 새 그림이 준비된 같은 순간에 바꿔 끼운다 (사라졌다 나오지 않게)
+      // 배너 마스코트와 장면 그림을 0.35초 동안 겹쳐서 바꾼다 (갑자기 다른 그림으로 바뀌는 이질감 줄이기)
+      sprite.style.transition = "opacity .35s ease"; runner.style.transition = "opacity .35s ease";
+      requestAnimationFrame(() => { sprite.style.opacity = "1"; runner.style.opacity = "0"; });
+      await wait(380);
+      runner.style.visibility = "hidden"; runner.style.opacity = ""; runner.style.transition = "";
       await anim(4000, (t) => {
         const sec = t * 4;
         const fall = sec < 1.0 ? 0 : sec > 1.85 ? 1 : Math.pow((sec - 1.0) / 0.85, 1.6);   // 공중에 떠 있는 동안 아래로
@@ -7296,7 +7314,7 @@ function hseWeldWord(host, wordEl, onDone) {
       const bx = r2.left + scrollX, by = r2.top + scrollY;
       const hl = bx + r2.width / 2 - HOPUP.cx0;                          // 폴짝 그림 왼쪽
       await runTo(runX, hl + HOPUP.cx0 - RUN_W / 2, groundY);
-      const ht = floor - HOPUP.foot, U = ht - (by - HOPUP.top1);         // 올라가야 할 거리
+      const ht = floor - HOPUP.foot, U = ht - (by + H * 0.985 - HOPUP.foot);   // 올라가야 할 거리 (발바닥 기준)
       await pose(fresh(SRC.hopup), HOPUP.h); at(hl, ht);
       await anim(1680, (t) => {
         const sec = t * 1.68;
@@ -7304,7 +7322,12 @@ function hseWeldWord(host, wordEl, onDone) {
         at(hl + (HOPUP.cxEnd - HOPUP.cx0) * 0, ht - U * up);
       });
     } finally {
-      runner.style.visibility = "";
+      // 끝날 때도 0.3초 겹쳐서 배너 마스코트로 돌아간다
+      runner.style.opacity = "0"; runner.style.visibility = "";
+      runner.style.transition = "opacity .3s ease"; sprite.style.transition = "opacity .3s ease";
+      requestAnimationFrame(() => { runner.style.opacity = "1"; sprite.style.opacity = "0"; });
+      await wait(320);
+      runner.style.opacity = ""; runner.style.transition = "";
       root.remove();
       window.__mascotHold = false;
       running = false;
@@ -7312,13 +7335,7 @@ function hseWeldWord(host, wordEl, onDone) {
   }
   window.hseRappelShow = show;
 
-  // 가끔 자동으로: 종합현황을 보고 있고, 화면 맨 위 근처이고, PC 화면일 때 6~10분에 한 번
-  const plan = () => setTimeout(() => {
-    const onHome = document.querySelector("#view-dashboard.active");
-    if (onHome && scrollY < 80 && !document.hidden && !document.querySelector(".hse-intro")) show();
-    plan();
-  }, (6 + Math.random() * 4) * 60 * 1000);
-  plan();
+  // 자동: 배너를 달리던 헌수호가 오른쪽 끝(시계 앞)에 닿을 때마다 (배너 쪽 코드에서 hseRappelCan 확인 후 호출)
   if (new URLSearchParams(location.search).get("rappel") === "1") setTimeout(show, 4000);
   // 배너의 헌수호를 두 번 누르면 바로 보여 준다
   document.addEventListener("dblclick", (e) => { if (e.target.closest(".mascot-runner")) show(); });
