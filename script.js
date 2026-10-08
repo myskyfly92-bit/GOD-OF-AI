@@ -5188,7 +5188,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const distKm = Math.round(d3.geoDistance(SEOUL, SITE) * 6371);
     const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
-    const T1 = 2600, T2 = 1900; // 1단계: 서울→비스마야 비행 / 2단계: 현장으로 확대
+    const T1 = 3200, T2 = 1900; // 1단계: 서울→비스마야 비행 / 2단계: 현장으로 확대
     let start = 0, handed = false;
     capbox.innerHTML = `<div class="hse-intro-cap globe"><b id="globeKm">0 km</b><span>SEOUL → BISMAYAH · 서울에서 비스마야까지</span></div>`;
     const kmEl = capbox.querySelector("#globeKm");
@@ -5201,6 +5201,38 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       ctx.font = "700 14px 'JetBrains Mono', 'Noto Sans KR', sans-serif";
       ctx.fillStyle = "#fff";
       ctx.fillText(text, x + 10, y - 8);
+    }
+
+    // 비행기 (위에서 본 모양, 오른쪽을 보고 있는 그림을 진행 방향으로 돌려서 그린다)
+    function planeShape() {
+      ctx.beginPath();
+      ctx.moveTo(15, 0); ctx.quadraticCurveTo(13, -2.4, 9, -2.4);               // 기수
+      ctx.lineTo(3, -2.4); ctx.lineTo(-4, -14); ctx.lineTo(-7.5, -14); ctx.lineTo(-3.5, -2.4);   // 왼쪽 날개
+      ctx.lineTo(-10, -2.2); ctx.lineTo(-13.5, -7); ctx.lineTo(-15.5, -7); ctx.lineTo(-13.5, -1.6); // 왼쪽 꼬리날개
+      ctx.lineTo(-14.5, 0);
+      ctx.lineTo(-13.5, 1.6); ctx.lineTo(-15.5, 7); ctx.lineTo(-13.5, 7); ctx.lineTo(-10, 2.2);
+      ctx.lineTo(-3.5, 2.4); ctx.lineTo(-7.5, 14); ctx.lineTo(-4, 14); ctx.lineTo(3, 2.4);
+      ctx.lineTo(9, 2.4); ctx.quadraticCurveTo(13, 2.4, 15, 0);
+      ctx.closePath();
+    }
+    function drawPlane(x, y, ang, sc, alpha, lift) {
+      if (alpha <= 0.01) return;
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      // 땅에 비친 그림자 (높이 날수록 멀리·흐리게)
+      ctx.save();
+      ctx.translate(x + lift * 0.9, y + lift * 1.3); ctx.rotate(ang); ctx.scale(sc * 0.9, sc * 0.9);
+      ctx.fillStyle = `rgba(0,0,0,${0.35 - lift * 0.012})`; ctx.filter = "blur(2px)";
+      planeShape(); ctx.fill();
+      ctx.restore();
+      // 몸체
+      ctx.translate(x, y); ctx.rotate(ang); ctx.scale(sc, sc);
+      ctx.shadowColor = "rgba(255,209,102,0.9)"; ctx.shadowBlur = 14;
+      ctx.fillStyle = "#ffffff"; planeShape(); ctx.fill();
+      ctx.shadowBlur = 0;
+      ctx.strokeStyle = "rgba(20,40,60,0.55)"; ctx.lineWidth = 0.8 / sc; ctx.stroke();
+      ctx.fillStyle = "#35d0c0"; ctx.fillRect(-12, -0.7, 20, 1.4);           // 몸통 줄무늬
+      ctx.restore();
     }
 
     function frame(now) {
@@ -5234,19 +5266,30 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       if (korea) { ctx.beginPath(); path(korea); ctx.fillStyle = "rgba(53,208,192,0.55)"; ctx.fill(); }
       if (iraq) { ctx.beginPath(); path(iraq); ctx.fillStyle = "rgba(242,169,59,0.55)"; ctx.fill(); }
 
-      // 비행선
-      const n = 80, pts = [];
+      // 갈 길(흐린 점선) + 지나온 길(비행운) + 맨 앞의 비행기
+      const n = 80, pts = [], all = [];
+      for (let i = 0; i <= n; i++) all.push(interp(i / n));
+      ctx.save();
+      ctx.beginPath(); path({ type: "LineString", coordinates: all });
+      ctx.setLineDash([3, 6]); ctx.strokeStyle = "rgba(255,209,102,0.28)"; ctx.lineWidth = 1.5; ctx.stroke();
+      ctx.restore();
       for (let i = 0; i <= n * arcT; i++) pts.push(interp(i / n));
+      pts.push(interp(arcT));
       if (pts.length > 1) {
         ctx.save();
         ctx.beginPath(); path({ type: "LineString", coordinates: pts });
         ctx.strokeStyle = "#ffd166"; ctx.lineWidth = 2.5; ctx.shadowColor = "#ffd166"; ctx.shadowBlur = 12; ctx.stroke();
         ctx.restore();
-        const head = pts[pts.length - 1];
-        if (d3.geoDistance(head, center) < Math.PI / 2) {
-          const [hx, hy] = proj(head);
-          ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.arc(hx, hy, 4, 0, Math.PI * 2); ctx.fill();
-        }
+      }
+      const head = interp(arcT);
+      if (d3.geoDistance(head, center) < Math.PI / 2) {
+        const [hx, hy] = proj(head);
+        // 진행 방향: 조금 앞(도착 뒤에는 조금 뒤)의 점을 보고 정한다
+        const a = arcT < 0.99 ? proj(interp(Math.min(1, arcT + 0.01))) : proj(interp(0.98));
+        const ang = arcT < 0.99 ? Math.atan2(a[1] - hy, a[0] - hx) : Math.atan2(hy - a[1], hx - a[0]);
+        const land = t < T1 ? 0 : Math.min(1, (t - T1) / 700);          // 도착하면 내려앉으며 사라진다
+        const lift = Math.sin(Math.PI * Math.min(1, arcT)) * 12 * (1 - land);   // 가운데쯤 가장 높이
+        drawPlane(hx, hy, ang, (1.3 + lift / 30) * (1 - land * 0.45), 1 - land, lift);
       }
       label(SEOUL, "SEOUL", "#35d0c0");
       if (arcT > 0.95) {
