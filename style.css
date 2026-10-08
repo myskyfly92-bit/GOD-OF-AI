@@ -3241,3 +3241,8 @@ body:has(.hse-intro) .ai-assist { display: none; }
 .hse-intro-inner { position: relative; z-index: 2; }
 /* 용접으로 새기는 동안·뒤에는 그림판 글자만 보이게 (진짜 글자 요소는 자리만 차지) */
 .hse-intro.welding .hse-intro-word { opacity: 0 !important; animation: none !important; }
+/* 배너 정리: 해·달 그림과 마스코트 위 날씨 덧그림(바람 줄·마스크·땀)은 3D 마스코트와 어울리지 않아 숨긴다
+   (하늘색 변화와 날씨 대사는 그대로) */
+.topbar .sky-body { display: none !important; }
+.mascot-runner .mx-wind, .mascot-runner .mx-mask, .mascot-runner .mx-sweat { display: none !important; }
+.mascot-runner.mood-wind .mascot-body img { transform: scaleX(var(--flip, 1)) !important; }
