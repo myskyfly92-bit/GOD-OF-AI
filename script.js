@@ -7256,12 +7256,23 @@ function hseWeldWord(host, wordEl, onDone) {
       }
       return 0;
     };
+    // 배너 위와 같은 속도(초당 55px)로 달리고, 틈을 건너는 폴짝 구간만 빠르게 (느리면 둥둥 떠 보여서)
+    const RUN_V = 55, HOP_V = 150;
     const runTo = async (x1, x2, y) => {
       await pose(SRC.run, H, x2 < x1); at(x1, y);
-      const ms = Math.max(500, Math.abs(x2 - x1) / 0.24);              // 초당 약 240px
-      await anim(ms, (t) => {
-        const x = x1 + (x2 - x1) * t, hop = hopAt(x + RUN_W / 2);
-        at(x, y - (hop > 0 ? hop : Math.abs(Math.sin(t * ms / 130)) * 2));   // 뛰는 동안은 발걸음 들썩임 없이
+      const dir = Math.sign(x2 - x1) || 1;
+      await new Promise((res) => {
+        let x = x1, last = 0, el = 0;
+        const step = (ts) => {
+          const dt = last ? Math.min(0.1, (ts - last) / 1000) : 0; last = ts; el += dt;
+          const hop0 = hopAt(x + RUN_W / 2);
+          x += dir * (hop0 > 0 ? HOP_V : RUN_V) * dt;
+          if ((x2 - x) * dir <= 0) { at(x2, y); return res(); }
+          const hop = hopAt(x + RUN_W / 2);
+          at(x, y - (hop > 0 ? hop : Math.abs(Math.sin(el * 1000 / 130)) * 2));   // 뛰는 동안은 발걸음 들썩임 없이
+          requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
       });
     };
     ring.style.left = ax + "px"; ring.style.top = ay + "px";
