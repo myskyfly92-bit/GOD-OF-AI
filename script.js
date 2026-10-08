@@ -4299,13 +4299,13 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const showLogo = () => {
       const word = el.querySelector(".hse-intro-word");
       let shown = false;
-      const reveal = () => { if (shown) return; shown = true; el.classList.add("show-logo"); timers.push(setTimeout(done, 2300)); };
+      const reveal = () => { if (shown) return; shown = true; el.classList.add("show-logo"); timers.push(setTimeout(done, 3200)); };
       if (!word || typeof hseWeldWord !== "function") return reveal();
       // 사진·연도 글자가 완전히 어두워진 뒤에 용접을 시작한다 (겹쳐 보이지 않게)
       el.classList.add("logo-stage");
       el.querySelector(".hse-intro-capbox").innerHTML = "";
       timers.push(setTimeout(() => { try { hseWeldWord(el, word, reveal); } catch (e) { reveal(); } }, 750));
-      timers.push(setTimeout(reveal, 5800)); // 혹시 멈춰도 넘어가게
+      timers.push(setTimeout(reveal, 8500)); // 혹시 멈춰도 넘어가게
     };
 
     // ---- 인트로 준비: 필요한 사진·지구본을 '다' 받을 때까지 진행 막대를 보여 주고, 다 받으면 처음부터 끝까지 재생 ----
@@ -6272,7 +6272,7 @@ function hseWeldWord(host, wordEl, onDone) {
   const [hotL, hc] = mk(bw, bh);    // 뜨거운 윤곽 (점점 식음)
   const [tmp, tx] = mk(bw, bh);
 
-  const T_ARC = 250, T_TRACE = 1900, T_COOL = 900, T_SHEEN = 900;
+  const T_ARC = 700, T_TRACE = 4300, T_COOL = 1600, T_SHEEN = 1400; // 천천히: 불꽃 켜짐 0.7초 → 윤곽 4.3초 → 식기 1.6초
   const T_IGN = T_ARC + T_TRACE;
   const sparks = [], embers = [];
   const floorY = Math.min(H - 8, cy + fs * 1.5);
@@ -6297,7 +6297,7 @@ function hseWeldWord(host, wordEl, onDone) {
 
     // 뜨거운 윤곽은 매 장면 조금씩 식는다
     hc.globalCompositeOperation = "destination-out";
-    hc.fillStyle = `rgba(0,0,0,${Math.min(1, dt * 4.5)})`; hc.fillRect(0, 0, bw, bh);
+    hc.fillStyle = `rgba(0,0,0,${Math.min(1, dt * 3)})`; hc.fillRect(0, 0, bw, bh);
     hc.globalCompositeOperation = "source-over";
 
     // ---- 2) 윤곽 따라 긋기 ----
@@ -6328,7 +6328,7 @@ function hseWeldWord(host, wordEl, onDone) {
       if (host2 && !shook) { shook = true; host2.classList.add("weld-shake"); setTimeout(() => host2.classList.remove("weld-shake"), 420); }
     }
     const ig = ignited ? Math.min(1, (t - T_IGN) / T_COOL) : 0;      // 0(막 점화) → 1(다 식음)
-    if (ignited && !called && t - T_IGN > 300) { called = true; onDone(); }
+    if (ignited && !called && t - T_IGN > 600) { called = true; onDone(); }
 
     // 화면 번쩍 (점화 직후)
     if (ignited && t - T_IGN < 260) {
