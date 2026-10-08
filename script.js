@@ -4271,7 +4271,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     el.className = "hse-intro";
     el.innerHTML = `<div class="hse-intro-slides"></div><div class="hse-intro-capbox"></div><div class="hse-intro-flash"></div>
     <div class="hse-intro-inner">
-      <img class="hse-intro-logo" src="assets/hanwha-logo.jpg" alt="Hanwha">
+      <div class="hse-intro-logo hse-intro-word">한화</div>
       <div class="hse-intro-title">비스마야 안전보건환경 상황실</div>
       <div class="hse-intro-sub">BISMAYAH NEW CITY PROJECT · HSE SITUATION ROOM</div>
       <div class="hse-intro-line"></div>

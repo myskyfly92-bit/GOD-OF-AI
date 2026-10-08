@@ -3220,3 +3220,16 @@ body:has(.hse-intro) .ai-assist { display: none; }
 /* 경례 동작: 그림 폭이 넓고 첫 장면의 몸이 왼쪽에 있어서, 달려온 자리와 맞도록 처음엔 오른쪽으로 당겼다가 미끄러지며 제자리로 */
 .mascot-runner.is-acting .mascot-body img { transition: none; animation: mascotActShift 1.6s ease-out both; }
 @keyframes mascotActShift { from { translate: 18px 0; } to { translate: 0 0; } }
+/* 회사 로고 그림 대신 한글 글자 '한화' */
+.brand-mark { background: transparent; box-shadow: none; padding: 0; border-radius: 0; }
+.brand-word {
+  height: auto; max-width: none; display: flex; align-items: center; justify-content: center;
+  min-width: 96px; height: 64px; padding: 0 18px; border-radius: 10px;
+  font-family: var(--font-body); font-size: 30px; font-weight: 800; letter-spacing: 0.08em; color: #fff;
+  background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.18);
+}
+.hse-intro-word {
+  width: auto; display: inline-block; background: transparent; padding: 0;
+  font-size: clamp(44px, 7vw, 76px); font-weight: 800; letter-spacing: 0.12em; color: #fff;
+}
