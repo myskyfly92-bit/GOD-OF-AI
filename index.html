@@ -33,7 +33,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261008q">
+<link rel="stylesheet" href="style.css?v=20261008r">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -204,7 +204,7 @@ html.intro-pending::after {
   </section>
 
   <!-- 작업환경 상태 밴드 (폭염 지수) -->
-  <section class="panel heat-panel" aria-label="옥외작업 환경 상태">
+  <section class="panel heat-panel" aria-label="옥외작업 환경 상태 및 현장 날씨">
     <div class="panel-label">WORK-ENVIRONMENT STATUS · 옥외작업 기준</div>
     <div id="heatStatus" class="heat-status heat-loading">
       <div class="heat-status-title">환경 데이터 확인 중…</div>
@@ -215,6 +215,65 @@ html.intro-pending::after {
       <div class="heat-scale-seg seg-caution">주의</div>
       <div class="heat-scale-seg seg-warn">경고</div>
       <div class="heat-scale-seg seg-danger">위험</div>
+    </div>
+    <div class="heat-wx" aria-label="현재 날씨 및 대기환경">
+      <div class="heat-wx-label">현장 날씨·대기환경</div>
+      <div class="weather-grid" id="weatherGrid">
+        <div class="weather-item">
+          <span class="weather-value" id="wTemp">–</span>
+          <span class="weather-key">기온 (°C)</span>
+        </div>
+        <div class="weather-item">
+          <span class="weather-value" id="wFeels">–</span>
+          <span class="weather-key">체감온도 (°C)</span>
+        </div>
+        <div class="weather-item">
+          <span class="weather-value" id="wHumidity">–</span>
+          <span class="weather-key">습도 (%)</span>
+        </div>
+        <div class="weather-item">
+          <span class="weather-value" id="wWind">–</span>
+          <span class="weather-key">풍속 (m/s)</span>
+        </div>
+        <div class="weather-item weather-item-wind">
+          <span class="weather-value wind-compass-value">
+            <svg id="windArrow" class="wind-arrow" viewBox="0 0 24 24" style="transform: rotate(0deg);">
+              <path d="M12 2 L18 14 L12 10.5 L6 14 Z" fill="currentColor"/>
+            </svg>
+            <span id="wWindDir">–</span>
+          </span>
+          <span class="weather-key">풍향</span>
+        </div>
+        <div class="weather-item">
+          <span class="weather-value" id="wPm10">–</span>
+          <span class="weather-key">미세먼지 PM10 (㎍/㎥)</span>
+        </div>
+        <div class="weather-item">
+          <span class="weather-value" id="wPm25">–</span>
+          <span class="weather-key">초미세먼지 PM2.5 (㎍/㎥)</span>
+        </div>
+        <div class="weather-item">
+          <span class="weather-value" id="wUv">–</span>
+          <span class="weather-key">자외선 지수 (UV)</span>
+        </div>
+        <div class="weather-item">
+          <span class="weather-value" id="wOzone">–</span>
+          <span class="weather-key">오존 O₃ (㎍/㎥)</span>
+        </div>
+        <div class="weather-item">
+          <span class="weather-value" id="wSunrise">–</span>
+          <span class="weather-key">일출</span>
+        </div>
+        <div class="weather-item">
+          <span class="weather-value" id="wSunset">–</span>
+          <span class="weather-key">일몰</span>
+        </div>
+        <div class="weather-item">
+          <span class="weather-value" id="wRainChance">–</span>
+          <span class="weather-key">강수확률 (%)</span>
+        </div>
+      </div>
+      <p class="source-note">Open-Meteo 실시간 기상·대기질 · 비스마야 기준</p>
     </div>
   </section>
 
@@ -231,65 +290,6 @@ html.intro-pending::after {
   </section>
 
   <!-- 날씨/환경 -->
-  <section class="panel" aria-label="현재 날씨 및 대기환경">
-    <div class="panel-label">ENVIRONMENT · 현장 날씨·대기환경</div>
-    <div class="weather-grid" id="weatherGrid">
-      <div class="weather-item">
-        <span class="weather-value" id="wTemp">–</span>
-        <span class="weather-key">기온 (°C)</span>
-      </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wFeels">–</span>
-        <span class="weather-key">체감온도 (°C)</span>
-      </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wHumidity">–</span>
-        <span class="weather-key">습도 (%)</span>
-      </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wWind">–</span>
-        <span class="weather-key">풍속 (m/s)</span>
-      </div>
-      <div class="weather-item weather-item-wind">
-        <span class="weather-value wind-compass-value">
-          <svg id="windArrow" class="wind-arrow" viewBox="0 0 24 24" style="transform: rotate(0deg);">
-            <path d="M12 2 L18 14 L12 10.5 L6 14 Z" fill="currentColor"/>
-          </svg>
-          <span id="wWindDir">–</span>
-        </span>
-        <span class="weather-key">풍향</span>
-      </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wPm10">–</span>
-        <span class="weather-key">미세먼지 PM10 (㎍/㎥)</span>
-      </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wPm25">–</span>
-        <span class="weather-key">초미세먼지 PM2.5 (㎍/㎥)</span>
-      </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wUv">–</span>
-        <span class="weather-key">자외선 지수 (UV)</span>
-      </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wOzone">–</span>
-        <span class="weather-key">오존 O₃ (㎍/㎥)</span>
-      </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wSunrise">–</span>
-        <span class="weather-key">일출</span>
-      </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wSunset">–</span>
-        <span class="weather-key">일몰</span>
-      </div>
-      <div class="weather-item">
-        <span class="weather-value" id="wRainChance">–</span>
-        <span class="weather-key">강수확률 (%)</span>
-      </div>
-    </div>
-    <p class="source-note">Open-Meteo 실시간 기상·대기질 API 연동 · 비스마야(33.19°N, 44.62°E) 기준</p>
-  </section>
 
   <!-- 안전 지표 -->
   <section class="panel" aria-label="안전 지표">
@@ -621,7 +621,7 @@ html.intro-pending::after {
 </main>
 </div>
 
-<div id="view-env-weather" class="view view-borrow" data-borrow="section[aria-label='현재 날씨 및 대기환경']">
+<div id="view-env-weather" class="view view-borrow" data-borrow=".heat-panel">
 <main class="grid">
   <!-- HSE 기상 지표: 비스마야 vs 서울 -->
   <section class="panel hsewx-panel" aria-label="HSE 기상 지표 비교" style="grid-column: 1 / -1;">
@@ -1030,7 +1030,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261008q"></script>
+<script src="script.js?v=20261008r"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

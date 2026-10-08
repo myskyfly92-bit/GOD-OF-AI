@@ -566,6 +566,15 @@ code {
 .seg-warn.active    { background: var(--amber); border-color: var(--amber); }
 .seg-danger.active  { background: var(--danger); border-color: var(--danger); }
 
+/* 옥외작업 환경 카드 안에 들어간 현장 날씨 (공간을 아끼려고 4칸으로 촘촘하게) */
+.heat-wx { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); }
+.heat-wx-label { font-size: 12px; color: var(--text-muted); letter-spacing: .04em; margin-bottom: 10px; }
+.heat-wx .weather-grid { grid-template-columns: repeat(4, 1fr); gap: 10px 10px; }
+.heat-wx .weather-value { font-size: 19px; }
+.heat-wx .weather-key { font-size: 12px; }
+.heat-wx .source-note { margin: 8px 0 0; }
+@media (max-width: 600px) { .heat-wx .weather-grid { grid-template-columns: repeat(3, 1fr); } }
+
 /* ---------- 날씨 ---------- */
 .weather-grid {
   display: grid;
