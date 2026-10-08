@@ -1949,7 +1949,22 @@ html body {
 .wz-pick-actions { display: flex; gap: 6px; }
 .wz-pick-actions button { flex: 1; }
 .wz-pick-box .wz-pick-cancel { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
-.wz-pick-box { width: 260px; }
+.wz-pick-box { width: 280px; max-height: calc(100% - 20px); overflow-y: auto; }
+/* 작업 추가 · 사용장비 */
+.wz-equip { display: flex; flex-direction: column; gap: 5px; padding: 7px 8px; border: 1px dashed var(--border); border-radius: 6px; }
+.wz-equip-head { font-size: 11.5px; color: var(--text-muted); font-weight: 700; }
+.wz-equip-head small { font-weight: 400; }
+.wz-equip select { min-width: 0; width: 100%; }
+.wz-equip-row { display: grid; grid-template-columns: 1fr 46px auto auto; gap: 4px; align-items: center; color: var(--text-muted); }
+.wz-equip-row input { min-width: 0; padding: 5px 4px; text-align: center; }
+.wz-equip-row button { padding: 5px 9px; }
+.wz-equip-row button:disabled { opacity: .4; cursor: default; }
+.wz-equip-list { display: flex; flex-wrap: wrap; gap: 4px; }
+.wz-equip-list:empty { display: none; }
+.wz-eq-chip { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; padding: 2px 4px 2px 8px; border-radius: 999px; border: 1px solid rgba(240, 170, 60, 0.5); background: rgba(240, 170, 60, 0.1); color: var(--text); }
+.wz-eq-chip b { color: var(--amber); font-weight: 700; }
+.wz-pick-box .wz-eq-chip button { background: none; color: var(--text-muted); padding: 0 4px; font-size: 13px; line-height: 1; }
+.wz-item-equip { font-size: 11.5px; color: var(--text-muted); margin-top: 2px; }
 
 /* ---------- 종합현황: 오늘 작업 현황 ---------- */
 .tw-date { color: var(--cyan); margin-left: 4px; }

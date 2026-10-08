@@ -1615,6 +1615,58 @@ const WZ_PART_COLORS = {
   "플랜트": "#ff7e79", "건축": "#f2a93b", "토목": "#c9a26b", "조경": "#5fd68f", "기계": "#4fb4ff",
   "전기": "#ffd166", "수처리시설": "#7fc8f8", "유지보수": "#35d0c0",
 };
+// 사용 장비 목록 (장비 종류 → 규격). 바꾸려면 여기만 고치면 된다.
+const WZ_EQUIP = [
+  ["Ambulance", "구급차", ["H-1"]],
+  ["Arm Roll Truck", "암롤트럭", ["6x4,27m3"]],
+  ["Asphalt Distributor", "아스팔트 살포기", ["8,000L"]],
+  ["Asphalt Finisher", "아스팔트 피니셔", ["3-7.5m"]],
+  ["Box Truck (W/Lifter)", "탑차(리프트)", ["2.5Ton"]],
+  ["Bucket(Boom)Truck", "버킷(고소작업)차", ["39.5m,2인"]],
+  ["Bull Dozer", "불도저", ["7.8Ton", "18Ton", "27Ton"]],
+  ["Bus", "버스", ["시티형(21+1)", "우등형(45+1)"]],
+  ["Cargo Crane Truck", "카고크레인", ["6X4,6T", "8X4,16T", "8X4,20T"]],
+  ["Cargo Truck", "카고트럭", ["4X4,8.5T", "6X4,11.5T", "8X4,19T"]],
+  ["Combi Roller", "콤비롤러", ["3.4Ton", "3.7Ton"]],
+  ["Concrete Pump Car", "콘크리트 펌프카", ["37m,135m3/h", "43m,150m3/h", "53m"]],
+  ["Crawler Crane", "크롤러 크레인", ["70Ton", "75Ton", "80Ton", "100Ton", "110Ton"]],
+  ["Dump Truck", "덤프트럭", ["4X2,8T", "6X4,15T", "8X4,24T"]],
+  ["Excavator(crawler)", "굴착기(크롤러)", ["0.2m3", "1.27m3", "2.9m3"]],
+  ["Excavator(wheel)", "굴착기(타이어)", ["0.2m3", "0.7m3"]],
+  ["Fire Truck", "소방차", ["16,000L"]],
+  ["Fork Lift", "지게차", ["3Ton", "5Ton", "7Ton", "16Ton", "25Ton"]],
+  ["Fuel Truck", "급유차", ["4X2,8KL", "6X4,15KL", "6X4,20KL"]],
+  ["Hyd. Crane", "유압 크레인", ["30Ton", "50Ton", "70Ton"]],
+  ["MINI BUS", "미니버스", ["M/T,16P"]],
+  ["Mini Cargo Truck", "소형 카고트럭", ["2.5Ton,DLX"]],
+  ["Mixer Truck", "레미콘 트럭", ["7m3"]],
+  ["Motor Grader", "모터그레이더", ["14Feet"]],
+  ["Pick-Up", "픽업트럭", ["M/T,4x2", "M/T,4x4", "A/T,4x4"]],
+  ["Refrigerator Truck", "냉동탑차", ["4X2,8T"]],
+  ["Road Sweeper", "노면청소차", ["6.0m3"]],
+  ["Sewage Truck", "오수 흡입차", ["6X4,14KL"]],
+  ["Sheepfoot Roller", "탬핑롤러", ["10Ton", "15Ton"]],
+  ["Skid Loader", "스키드 로더", ["0.4m3", "0.5m3"]],
+  ["Slipform Paver", "슬립폼 페이버", ["3.5-8.5m"]],
+  ["SUV, Wagon", "SUV·왜건", ["A/T,4x4"]],
+  ["Tandem Roller", "탠덤롤러", ["12Ton"]],
+  ["Tire Roller", "타이어롤러", ["10Ton"]],
+  ["Tractor", "트랙터(트레일러)", ["6X4,55T"]],
+  ["Tractor(Bulk/Cement)", "벌크 시멘트 트랙터", ["6X4,55T"]],
+  ["Vibration Roller", "진동롤러", ["10Ton", "15Ton"]],
+  ["Water Truck", "살수차", ["6X4,16KL"]],
+  ["Water Truck(High)", "고압 살수차", ["12KL"]],
+  ["Water Truck(Sus)", "스테인리스 살수차", ["6X4,16KL"]],
+  ["Wheel Loader", "휠로더", ["3.0m3", "3.9m3", "5.4m3"]],
+  ["Wrecker Truck", "견인차(렉카)", ["25Ton"]],
+];
+// 시트에 적는 모양: "Dump Truck(6X4,15T) 2대 / Fork Lift(5Ton) 1대"
+const wzEquipParse = (t) => String(t || "").split(/\s*\/\s*(?![^()]*\))/).map((x) => x.trim()).filter(Boolean).map((x) => {
+  const m = x.match(/^(.*?)(?:\s+(\d+)\s*대)?$/);
+  return { name: m[1].trim(), n: m[2] ? parseInt(m[2], 10) : 1 };
+});
+const wzEquipText = (list) => list.map((e) => `${e.name} ${e.n}대`).join(" / ");
+const wzEquipKo = (name) => { const t = WZ_EQUIP.find(([en]) => name.startsWith(en + "(") || name === en); return t ? t[1] : ""; };
 const WZ_RISK_WORDS = ["고소", "중량물", "화기", "밀폐", "굴착", "전기", "해체", "크레인", "야간"];
 
 let wzItems = null;        // 시트에서 읽은 작업 목록 (null = 시트 미연결)
@@ -1743,7 +1795,7 @@ async function wzLoadSheet(data) {
     const c = {
       date: col("날짜", "일자"), day: col("요일"), zone: col("구역"), team: col("팀"), part: col("파트"),
       work: col("작업내용", "작업"), loc: col("세부위치", "위치"), risk: col("위험작업", "위험"),
-      person: col("담당"), note: col("비고"), xy: col("좌표"), crew: col("작업인원", "인원"),
+      person: col("담당"), note: col("비고"), xy: col("좌표"), crew: col("작업인원", "인원"), equip: col("사용장비"),
     };
     const get = (r, i) => (i >= 0 && r[i] ? r[i].trim() : "");
     wzItems = rows.slice(1).map((r, idx) => {
@@ -1759,7 +1811,7 @@ async function wzLoadSheet(data) {
       const xy = xyM ? { x: parseFloat(xyM[1]), y: parseFloat(xyM[2]) } : null;
       return { date, day, zone: get(r, c.zone), team, part, work: get(r, c.work), loc: get(r, c.loc), risks,
                person: get(r, c.person), note: get(r, c.note), xy, row: idx + 2,
-               crew: parseInt(get(r, c.crew).replace(/[^\d]/g, ""), 10) || 0 };
+               crew: parseInt(get(r, c.crew).replace(/[^\d]/g, ""), 10) || 0, equip: get(r, c.equip) };
     }).filter((it) => it.work && (it.date || WZ_DAY_ORDER.includes(it.day)));
     wzSheetError = "";
   } catch (err) {
@@ -1984,6 +2036,7 @@ function wzShowSchedule(zone) {
         <div class="wz-item-body">
           <div class="wz-item-work">${wzEscapeHtml(it.work)}${it.date ? "" : ' <span class="wz-repeat">매주</span>'}</div>
           ${(it.loc || it.person || it.note || it.crew) ? `<div class="wz-item-meta">${[it.loc && "📍 " + wzEscapeHtml(it.loc), it.crew && "👥 " + it.crew + "명", it.person && "👷 " + wzEscapeHtml(it.person), it.note && wzEscapeHtml(it.note)].filter(Boolean).join(" · ")}</div>` : ""}
+          ${it.equip ? `<div class="wz-item-equip">🚜 ${wzEscapeHtml(it.equip)}</div>` : ""}
           ${it.risks.length ? `<div class="wz-risks">${it.risks.map((r) => `<span class="wz-risk">⚠ ${wzEscapeHtml(r)}</span>`).join("")}</div>` : ""}
         </div>
         ${canEdit ? `<span class="wz-item-tools"><button type="button" class="wz-edit" data-row="${it.row}" title="수정">수정</button><button type="button" class="wz-del" data-row="${it.row}" title="삭제">삭제</button></span>` : ""}
@@ -2050,7 +2103,7 @@ function wzRenderPins(zone, items, dayLabel) {
     const color = WZ_PART_COLORS[first.part] || "#8996a6";
     const risky = g.items.some((it) => it.risks.length);
     const list = g.items.map((it) => `
-      <div class="wz-pin-row"><b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)}${it.crew ? ` <span class="wz-pin-crew">👥 ${it.crew}명</span>` : ""}
+      <div class="wz-pin-row"><b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)}${it.crew ? ` <span class="wz-pin-crew">👥 ${it.crew}명</span>` : ""}${it.equip ? ` <span class="wz-pin-crew">🚜 ${wzEscapeHtml(wzEquipParse(it.equip).map((e) => e.name.replace(/\(.*\)$/, "") + (e.n > 1 ? "×" + e.n : "")).join(", "))}</span>` : ""}
         ${it.risks.length ? `<span class="wz-pin-risk">⚠ ${it.risks.map(wzEscapeHtml).join(", ")}</span>` : ""}</div>`).join("");
     // 사진 위쪽 핀은 설명 카드를 아래로 펼쳐서 잘리지 않게
     return `<div class="wz-pin ${risky ? "wz-pin-risky" : ""} ${g.place.y < 40 ? "wz-pin-below" : ""}" style="left:${g.place.x}%;top:${g.place.y}%;--c:${color}">
@@ -2158,6 +2211,12 @@ function wzShowAddForm(x, y, editItem) {
     <input type="date" id="wzfDate" value="${defDate}">
     <select id="wzfPart">${partOpts}</select>
     <input type="text" id="wzfWork" placeholder="작업내용 (필수)">
+    <div class="wz-equip">
+      <div class="wz-equip-head">사용장비 <small>(선택 · 여러 대 추가 가능)</small></div>
+      <select id="wzfEqType"><option value="">장비 종류 고르기</option>${WZ_EQUIP.map(([en, ko], i) => `<option value="${i}">${wzEscapeHtml(en)} · ${wzEscapeHtml(ko)}</option>`).join("")}</select>
+      <div class="wz-equip-row"><select id="wzfEqCap" disabled><option value="">규격</option></select><input type="number" id="wzfEqN" min="1" step="1" value="1" inputmode="numeric" aria-label="대수"><span>대</span><button type="button" id="wzfEqAdd" disabled>추가</button></div>
+      <div class="wz-equip-list" id="wzfEqList"></div>
+    </div>
     <input type="text" id="wzfLoc" placeholder="세부위치 (예: 식당동 옥상)">
     <div class="wz-risk-checks">${WZ_RISK_WORDS.map((r) => `<label><input type="checkbox" value="${r}">${r}</label>`).join("")}</div>
     <div class="wz-form-pair">
@@ -2176,6 +2235,28 @@ function wzShowAddForm(x, y, editItem) {
     box.querySelectorAll(".wz-risk-checks input").forEach((c) => { c.checked = ed.risks.includes(c.value); });
     document.getElementById("wzfMove").onclick = () => wzStartPick({ mode: "setxy", item: ed });
   }
+  // 사용장비 고르기: 종류 → 규격 → 대수 → 추가 (같은 장비·규격은 대수만 더함)
+  let equip = ed ? wzEquipParse(ed.equip) : [];
+  const eqType = document.getElementById("wzfEqType"), eqCap = document.getElementById("wzfEqCap");
+  const eqN = document.getElementById("wzfEqN"), eqAdd = document.getElementById("wzfEqAdd");
+  const drawEquip = () => {
+    document.getElementById("wzfEqList").innerHTML = equip.map((e, i) =>
+      `<span class="wz-eq-chip" title="${wzEscapeHtml(wzEquipKo(e.name))}">${wzEscapeHtml(e.name)} <b>${e.n}대</b><button type="button" data-i="${i}" aria-label="빼기">×</button></span>`).join("");
+  };
+  document.getElementById("wzfEqList").onclick = (e) => { const b = e.target.closest("button[data-i]"); if (b) { equip.splice(+b.dataset.i, 1); drawEquip(); } };
+  eqType.onchange = () => {
+    const t = WZ_EQUIP[eqType.value];
+    eqCap.innerHTML = t ? t[2].map((c) => `<option>${wzEscapeHtml(c)}</option>`).join("") : `<option value="">규격</option>`;
+    eqCap.disabled = eqAdd.disabled = !t;
+  };
+  eqAdd.onclick = () => {
+    const t = WZ_EQUIP[eqType.value]; if (!t) return;
+    const name = `${t[0]}(${eqCap.value})`, n = Math.max(1, parseInt(eqN.value, 10) || 1);
+    const same = equip.find((e) => e.name === name);
+    if (same) same.n += n; else equip.push({ name, n });
+    eqN.value = 1; drawEquip();
+  };
+  drawEquip();
   document.getElementById("wzfWork").focus();
   document.getElementById("wzfSave").onclick = async () => {
     const work = document.getElementById("wzfWork").value.trim();
@@ -2191,6 +2272,7 @@ function wzShowAddForm(x, y, editItem) {
       risks: [...box.querySelectorAll(".wz-risk-checks input:checked")].map((c) => c.value),
       person: document.getElementById("wzfPerson").value.trim(),
       crew: parseInt(document.getElementById("wzfCrew").value, 10) || "", x, y,
+      equip: wzEquipText(equip),
     });
     if (ok) wzStartPick(null); else { btn.disabled = false; btn.textContent = "저장"; }
   };
@@ -5973,7 +6055,7 @@ async function clinicCall(action, payload) {
       { sel: "#wzScheduleCol", text: `오른쪽은 <b>주간 작업일정</b>이에요. ‹ › 로 주를 옮기고, 요일을 누르면 그날 작업 위치가 지도에 표시돼요.` },
       { sel: "#wzFilterBar", text: `<b>팀·파트 버튼</b>을 누르면 그 팀 작업만 걸러서 볼 수 있어요.` },
       { sel: "#wzPickToggle", text: `작업을 새로 넣으려면 <b>➕ 지도에 작업 추가</b>를 누르고, 지도에서 작업 위치를 클릭하세요.` },
-      { sel: "#wzViewport", text: `그러면 입력창이 떠요. <b>날짜 · 파트 · 작업내용(필수)</b>을 넣고, 세부위치, <b>위험작업 체크</b>, 작업인원, 담당자를 채운 뒤 <b>저장</b>을 누르면 구글 시트에 바로 저장돼요.<br>위험작업으로 체크하면 종합현황 '오늘 작업'에 ⚠ 로 따로 세어져요.` },
+      { sel: "#wzViewport", text: `그러면 입력창이 떠요. <b>날짜 · 파트 · 작업내용(필수)</b>을 넣고, <b>사용장비</b>(종류 → 규격 → 대수 → 추가), 세부위치, <b>위험작업 체크</b>, 작업인원, 담당자를 채운 뒤 <b>저장</b>을 누르면 구글 시트에 바로 저장돼요.<br>위험작업으로 체크하면 종합현황 '오늘 작업'에 ⚠ 로 따로 세어져요.` },
       { sel: "#wzUnplaced", text: `시트에만 있고 <b>지도 위치가 없는 작업</b>은 여기에 모여요. 작업을 누른 다음 지도에서 위치를 클릭하면 저장돼요.` },
       { sel: ".wz-edit", text: `등록한 작업은 일정 목록의 <b>수정 · 삭제</b> 버튼으로 고칠 수 있어요. 수정창에서 <b>위치 다시 찍기</b>도 돼요.` },
       { sel: null, text: `시트에서 직접 고친 내용은 <b>새로고침</b>하면 반영돼요. 사이트에서 추가한 건 바로 보여요.` },
