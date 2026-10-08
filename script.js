@@ -7146,6 +7146,9 @@ function hseWeldWord(host, wordEl, onDone) {
   // 뛰어내리기 영상 그림 크기(표시 px)와 캐릭터 위치: 가로 가운데, 머리 위, 발바닥
   const DROP = { h: 140.5, cx0: 46.7, top0: 36.8, foot: 136.4, cxEnd: 33.0 }, HOPUP = { h: 140.5, cx0: 42.9, cxEnd: 47.4, top1: 36.8, foot: 137.7 };
   const RUN_W = 114 / 220 * 100;
+  // 영상마다 캐릭터가 찍힌 크기가 조금씩 달라서, 머리(헬멧) 크기와 키를 기준으로 배너 마스코트와 같아 보이게 맞춘 비율
+  const K = { hook: 0.87, rappel: 0.87, drop: 0.90 };
+  ["h", "cx0", "top0", "foot", "cxEnd", "top1"].forEach((k) => { if (k in DROP) DROP[k] *= K.drop; if (k in HOPUP) HOPUP[k] *= K.drop; });
   const H = 100;                                   // 배너 마스코트와 같은 키
   const HOOK_PT = { x: 30 / 135 * (135 * H / 220), y: 30 / 220 * H };   // 고리 거는 손 위치 (영상 기준)
   const ROPE_X = 41.2 / 140 * (140 * H / 220);     // 줄 타기 그림에서 줄이 나오는 x
@@ -7185,9 +7188,9 @@ function hseWeldWord(host, wordEl, onDone) {
     const bar = document.querySelector(".topbar");
     // 크기는 그대로(100px) 두고, 발이 카드 위쪽 선에 오도록 고리 높이를 정한다 (배너 아래 끝 근처)
     const barB = (bar ? bar.getBoundingClientRect().bottom : tr.top) + sy;
-    const ay = Math.min(barB + 2, floor - H + HOOK_PT.y);
-    const S = 1;
-    const Hs = Math.round(H * S), HP = { x: HOOK_PT.x * S, y: HOOK_PT.y * S }, RX = ROPE_X * S;
+    const Hk = H * K.hook, Hr = H * K.rappel;
+    const Hs = H, HP = { x: HOOK_PT.x * K.hook, y: HOOK_PT.y * K.hook }, RX = ROPE_X * K.rappel;
+    const ay = Math.min(barB + 2, floor - Hk + HP.y);
 
     const root = document.createElement("div");
     root.className = "mrap";
@@ -7221,6 +7224,8 @@ function hseWeldWord(host, wordEl, onDone) {
       const x0 = rr.left + sx, y0 = rr.top + sy;
       const groundY = floor - Hs;                                       // 아래 줄에 서 있을 때의 위쪽 좌표
       const hx = ax - HP.x, hy = ay - HP.y;                              // 고리 걸 때 서 있을 자리
+      const hookW = 135 / 220 * Hk, STAND_W = 196 / 200 * H;            // 그림 폭 (가운데를 맞추려고)
+      const runX = hx + (hookW - RUN_W) / 2, standX = hx + (hookW - STAND_W) / 2;
       runner.style.visibility = "hidden";
       img.style.height = H + "px";
       // 1) 배너에서 아래 탭 줄로 뛰어내리기 (구글 플로우 영상: 돌아서기 → 폴짝 → 착지 → 왼쪽으로 달리기 시작)
@@ -7237,16 +7242,15 @@ function hseWeldWord(host, wordEl, onDone) {
       img.style.height = H + "px";
       const startX = cl - runMax + DROP.cxEnd - RUN_W / 2;
       // 2) 탭 줄을 따라 '안전' 옆까지 달려가기
-      await runTo(startX, hx, groundY);
+      await runTo(startX, runX, groundY);
       // 3) 제자리에서 고리 걸기 (발은 카드 위쪽 선 위)
-      img.src = SRC.stand; at(hx, groundY);
-      if (Math.abs(groundY - hy) > 1) await anim(220, (t) => at(hx, groundY + (hy - groundY) * t));  // 거의 같은 높이
-      img.src = fresh(SRC.hook); at(hx, hy);
+      img.src = SRC.stand; at(standX, groundY); await wait(200);
+      img.src = fresh(SRC.hook); img.style.height = Hk + "px"; at(hx, hy);
       await wait(1650);
       ring.classList.add("on");
       await wait(2350);
       // 4) 줄 타고 내려가기
-      img.src = SRC.rappel;
+      img.src = SRC.rappel; img.style.height = Hr + "px";
       const rx = ax - RX, top0 = hy + 4, drop = Math.min(260, Math.max(140, innerHeight - (top0 - sy) - 200));
       at(rx, top0); rope(ax, ay, ax, top0 + 2);
       await anim(3200, (t) => { const y = top0 + drop * ease(t); at(rx, y); rope(ax, ay, ax, y + 2); });
@@ -7254,14 +7258,13 @@ function hseWeldWord(host, wordEl, onDone) {
       // 5) 다시 올라가서 고리 풀기
       await anim(2400, (t) => { const y = top0 + drop * (1 - ease(t)); at(rx, y); rope(ax, ay, ax, y + 2); });
       svg.style.display = "none"; ring.classList.remove("on");
-      img.src = SRC.stand; at(hx, hy);
-      if (Math.abs(groundY - hy) > 1) await anim(200, (t) => at(hx, hy + (groundY - hy) * t));
-      await wait(250);
+      img.src = SRC.stand; img.style.height = H + "px"; at(standX, groundY);
+      await wait(300);
       // 6) 원래 자리 아래까지 달려가서 배너로 폴짝 (뛰어내리기 영상을 거꾸로)
       const r2 = runner.getBoundingClientRect();
       const bx = r2.left + scrollX, by = r2.top + scrollY;
       const hl = bx + r2.width / 2 - HOPUP.cx0;                          // 폴짝 그림 왼쪽
-      await runTo(hx, hl + HOPUP.cx0 - RUN_W / 2, groundY);
+      await runTo(runX, hl + HOPUP.cx0 - RUN_W / 2, groundY);
       const ht = floor - HOPUP.foot, U = ht - (by - HOPUP.top1);         // 올라가야 할 거리
       img.src = fresh(SRC.hopup); img.style.height = HOPUP.h + "px"; at(hl, ht);
       await anim(1680, (t) => {
