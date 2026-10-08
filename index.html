@@ -33,7 +33,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261008j">
+<link rel="stylesheet" href="style.css?v=20261008k">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -79,14 +79,14 @@ html.intro-pending::after {
 <div id="google_translate_element" class="translate-widget-floating"></div>
 
 <nav class="tab-bar">
-  <!-- 대분류: 종합현황 / 안전 / 보건 / 환경 / 기타 정보 -->
+  <!-- 대분류: 종합현황 / 안전 / 보건 / 환경 / 소방 / 기타 -->
   <div class="group-bar">
     <button type="button" class="group-btn active" data-group="home">종합현황</button>
     <button type="button" class="group-btn" data-group="safety">안전</button>
     <button type="button" class="group-btn" data-group="health">보건</button>
     <button type="button" class="group-btn" data-group="env">환경</button>
     <button type="button" class="group-btn" data-group="fire">소방</button>
-    <button type="button" class="group-btn" data-group="etc">기타 정보</button>
+    <button type="button" class="group-btn" data-group="etc">기타</button>
   </div>
   <!-- 소분류 (대분류를 누르면 해당 줄만 보인다) -->
   <div class="sub-bar" id="subBar" hidden>
@@ -123,6 +123,7 @@ html.intro-pending::after {
       <button class="tab-btn" data-view="view-global">해외 현장</button>
       <button class="tab-btn" data-view="view-embassy">중동 각국 대사관 공지</button>
       <button class="tab-btn" data-view="view-travel">주변국 여행경보</button>
+      <button class="tab-btn" data-view="view-suggest">개선 건의·제안</button>
     </div>
   </div>
 
@@ -784,6 +785,51 @@ html.intro-pending::after {
 </main>
 </div>
 
+<div id="view-suggest" class="view">
+<main class="grid">
+  <section class="panel sug-panel" aria-label="개선 건의·제안" style="grid-column: 1 / -1;">
+    <div class="panel-label">IMPROVEMENT · 개선 건의·제안</div>
+    <p class="sug-lead">현장 안전·보건·환경을 더 좋게 만들 아이디어나, 이 사이트에 바라는 점을 자유롭게 남겨 주세요.
+      <b>이름은 안 적어도 됩니다.</b> 남긴 의견은 담당자가 확인해서 처리 상태와 답변을 아래 목록에 달아 드려요.</p>
+    <div class="sug-cols">
+      <form class="sug-form" id="sugForm" autocomplete="off">
+        <div class="sug-cats" id="sugCats">
+          <button type="button" class="sug-cat active" data-v="안전">안전</button>
+          <button type="button" class="sug-cat" data-v="보건">보건</button>
+          <button type="button" class="sug-cat" data-v="환경">환경</button>
+          <button type="button" class="sug-cat" data-v="소방">소방</button>
+          <button type="button" class="sug-cat" data-v="시설·작업환경">시설·작업환경</button>
+          <button type="button" class="sug-cat" data-v="사이트 기능">사이트 기능</button>
+          <button type="button" class="sug-cat" data-v="기타">기타</button>
+        </div>
+        <label>제목<input type="text" name="title" maxlength="60" required placeholder="예: B동 계단 조명이 어두워요"></label>
+        <label>내용<textarea name="body" maxlength="400" rows="5" required placeholder="무엇이 문제인지, 어떻게 바뀌면 좋을지 적어 주세요."></textarea>
+          <small class="sug-count"><span id="sugCount">0</span> / 400자</small></label>
+        <div class="sug-row">
+          <label>위치 <small>(선택)</small><input type="text" name="place" maxlength="40" placeholder="예: 캠프 식당 앞"></label>
+          <label>이름 <small>(선택 · 성만 표시)</small><input type="text" name="name" maxlength="20" placeholder="비우면 익명"></label>
+        </div>
+        <div class="sug-actions"><button type="submit">건의하기</button><span id="sugMsg"></span></div>
+      </form>
+      <div class="sug-list-wrap">
+        <div class="sug-list-head">
+          <span>최근 건의</span>
+          <div class="sug-filter" id="sugFilter">
+            <button type="button" class="active" data-s="">전체</button>
+            <button type="button" data-s="접수">접수</button>
+            <button type="button" data-s="검토중">검토중</button>
+            <button type="button" data-s="반영">반영</button>
+            <button type="button" data-s="보류">보류</button>
+          </div>
+        </div>
+        <div class="sug-list" id="sugList"><p class="skeleton">건의 목록 불러오는 중…</p></div>
+      </div>
+    </div>
+    <p class="source-note" id="sugMeta">구글 시트 '건의' 탭에 저장됩니다 · 처리 상태와 답변은 담당자가 시트에서 적습니다</p>
+  </section>
+</main>
+</div>
+
 <div id="view-procedures" class="view">
 <main class="grid">
   <section class="panel kg-panel" aria-label="관련 KOSHA GUIDE" style="grid-column: 1 / -1;">
@@ -949,7 +995,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261008j"></script>
+<script src="script.js?v=20261008k"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

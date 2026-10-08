@@ -5923,7 +5923,7 @@ async function clinicCall(action, payload) {
     { sel: '.group-btn[data-group="health"]', text: "<b>보건</b>에서는 현장 클리닉 기록, 국내 감염병, 이라크 보건부·WHO 소식, 온열질환 정보를 봐요." },
     { sel: '.group-btn[data-group="env"]', text: "<b>환경</b>에는 날씨·대기환경, 모래폭풍 5일 예보, 세계 대기질 순위, 중동 지진, 이라크 환경부 소식이 있어요." },
     { sel: '.group-btn[data-group="fire"]', text: "<b>소방</b>에서는 주변 화재 현황과 이라크 민방위(소방) 소식을 확인해요." },
-    { sel: '.group-btn[data-group="etc"]', text: "<b>기타 정보</b>에는 해상·항공 현황, 해외 현장, 중동 각국 대사관 안전공지, 주변국 여행경보가 있어요." },
+    { sel: '.group-btn[data-group="etc"]', text: "<b>기타</b>에는 해상·항공 현황, 해외 현장, 중동 각국 대사관 안전공지, 주변국 여행경보, 그리고 <b>개선 건의·제안</b>이 있어요. 현장이나 사이트에 바라는 점을 남겨 주세요!" },
     { sel: ".ai-fab", text: "궁금한 법령은 오른쪽 아래 <b>법령 도우미</b>에게 물어보세요. 한국 산안법과 이라크 법을 함께 찾아 줘요. 현장 사진을 올려도 돼요." },
     { sel: null, text: "작업구역에 작업을 등록하는 방법도 알려 드릴까요?", choice: true },
   ];
@@ -6433,3 +6433,94 @@ function hseWeldWord(host, wordEl, onDone) {
   }
   requestAnimationFrame(frame);
 }
+
+
+/* ==========================================================
+   기타 > 개선 건의·제안
+   - 보내기: Apps Script action=sugAdd (내용은 주소 길이를 줄이려고 base64로)
+   - 목록: action=sugList (최근 120일, 이름은 성만)
+   - 처리 상태(접수/검토중/반영/보류)·답변은 담당자가 구글 시트 '건의' 탭에서 적는다
+   ========================================================== */
+(function suggestBox() {
+  const form = document.getElementById("sugForm");
+  if (!form) return;
+  const listBox = document.getElementById("sugList");
+  const msg = document.getElementById("sugMsg");
+  let cat = "안전", filter = "", rows = null, loading = false;
+  const STATUS_COLOR = { "접수": "#8fa3b8", "검토중": "#f2a93b", "반영": "#35d0c0", "보류": "#8a94a3" };
+  const b64 = (o) => btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(o)))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  const call = async (q) => {
+    const url = await getAppsScriptUrl();
+    if (!url) throw new Error("Apps Script 주소가 없습니다");
+    const res = await fetch(url + (url.includes("?") ? "&" : "?") + q + "&t=" + Date.now());
+    const j = await res.json();
+    if (!j.ok) throw new Error(j.error || "실패");
+    return j;
+  };
+
+  document.getElementById("sugCats").addEventListener("click", (e) => {
+    const b = e.target.closest(".sug-cat"); if (!b) return;
+    cat = b.dataset.v;
+    form.querySelectorAll(".sug-cat").forEach((x) => x.classList.toggle("active", x === b));
+  });
+  const body = form.elements.body, count = document.getElementById("sugCount");
+  body.addEventListener("input", () => { count.textContent = body.value.length; });
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const d = { cat, title: form.elements.title.value.trim(), body: body.value.trim(), place: form.elements.place.value.trim(), name: form.elements.name.value.trim() };
+    if (!d.title || !d.body) { msg.className = "err"; msg.textContent = "제목과 내용을 적어 주세요"; return; }
+    const btn = form.querySelector("button[type=submit]");
+    btn.disabled = true; msg.className = ""; msg.textContent = "보내는 중…";
+    try {
+      await call("action=sugAdd&p=" + encodeURIComponent(b64(d)));
+      msg.className = "ok"; msg.textContent = "건의가 접수됐어요. 감사합니다!";
+      form.reset(); count.textContent = "0";
+      rows = null; load(true);
+    } catch (err) {
+      msg.className = "err"; msg.textContent = "보내지 못했어요: " + err.message;
+    } finally { btn.disabled = false; }
+  });
+
+  document.getElementById("sugFilter").addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    filter = b.dataset.s;
+    document.querySelectorAll("#sugFilter button").forEach((x) => x.classList.toggle("active", x === b));
+    render();
+  });
+
+  function render() {
+    if (!rows) return;
+    const list = filter ? rows.filter((r) => (r.status || "접수") === filter) : rows;
+    if (!list.length) { listBox.innerHTML = `<p class="sug-empty">${filter ? `'${escapeHtml(filter)}' 상태인 건의가 없어요` : "아직 건의가 없어요. 첫 의견을 남겨 주세요!"}</p>`; return; }
+    listBox.innerHTML = list.map((r) => {
+      const st = r.status || "접수";
+      return `<details class="sug-item">
+        <summary>
+          <span class="sug-st" style="--c:${STATUS_COLOR[st] || "#8fa3b8"}">${escapeHtml(st)}</span>
+          <span class="sug-c">${escapeHtml(r.cat || "기타")}</span>
+          <span class="sug-t">${escapeHtml(r.title)}</span>
+          <span class="sug-d">${escapeHtml((r.date || "").slice(5).replace("-", "/"))}</span>
+        </summary>
+        <div class="sug-body">${escapeHtml(r.body).replace(/\n/g, "<br>")}
+          <div class="sug-meta">${r.place ? `📍 ${escapeHtml(r.place)} · ` : ""}${escapeHtml(r.name || "익명")}</div>
+          ${r.answer ? `<div class="sug-answer"><b>담당자 답변</b>${escapeHtml(r.answer).replace(/\n/g, "<br>")}</div>` : ""}
+        </div>
+      </details>`;
+    }).join("");
+  }
+
+  async function load(force) {
+    if (loading || (rows && !force)) return;
+    loading = true;
+    try {
+      const j = await call("action=sugList");
+      rows = j.rows || [];
+      render();
+    } catch (err) {
+      listBox.innerHTML = `<p class="sug-empty">목록을 불러오지 못했어요 (${escapeHtml(err.message)}) · Apps Script에 건의함 코드를 넣었는지 확인해 주세요</p>`;
+    } finally { loading = false; }
+  }
+  document.querySelectorAll('.tab-btn[data-view="view-suggest"]').forEach((b) => b.addEventListener("click", () => load(false)));
+  if (document.getElementById("view-suggest").classList.contains("active")) load(false);
+})();
