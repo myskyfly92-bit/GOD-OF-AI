@@ -5696,7 +5696,7 @@ async function clinicCall(action, payload) {
   root.className = "ai-assist";
   root.innerHTML = `
     <button type="button" class="ai-fab" aria-label="AI 법령 도우미 열기">
-      <img src="assets/mascot.png" alt="" draggable="false"><span>법령 도우미</span>
+      <img src="assets/mascot.png?v=2" alt="" draggable="false"><span>법령 도우미</span>
     </button>
     <section class="ai-panel" role="dialog" aria-label="AI 법령 도우미" hidden>
       <header class="ai-head">
@@ -5934,7 +5934,7 @@ async function clinicCall(action, payload) {
     root.className = "hse-guide";
     root.innerHTML = `
       <div class="hg-ring" hidden></div>
-      <div class="hg-char"><img src="assets/guide-mascot.webp" alt="안전 도우미"></div>
+      <div class="hg-char"><img src="assets/guide-mascot.webp?v=2" alt="안전 도우미"></div>
       <div class="hg-bubble" role="dialog" aria-live="polite">
         <div class="hg-text"></div>
         <div class="hg-actions"></div>
@@ -6025,7 +6025,7 @@ async function clinicCall(action, payload) {
   const again = document.createElement("button");
   again.type = "button";
   again.className = "hg-again";
-  again.innerHTML = `<img src="assets/guide-mascot.webp" alt="">사용 안내`;
+  again.innerHTML = `<img src="assets/guide-mascot.webp?v=2" alt="">사용 안내`;
   again.onclick = start;
   document.body.appendChild(again);
 
