@@ -4301,8 +4301,11 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       let shown = false;
       const reveal = () => { if (shown) return; shown = true; el.classList.add("show-logo"); timers.push(setTimeout(done, 2300)); };
       if (!word || typeof hseWeldWord !== "function") return reveal();
-      try { hseWeldWord(el, word, reveal); } catch (e) { reveal(); }
-      timers.push(setTimeout(reveal, 5000)); // 혹시 멈춰도 넘어가게
+      // 사진·연도 글자가 완전히 어두워진 뒤에 용접을 시작한다 (겹쳐 보이지 않게)
+      el.classList.add("logo-stage");
+      el.querySelector(".hse-intro-capbox").innerHTML = "";
+      timers.push(setTimeout(() => { try { hseWeldWord(el, word, reveal); } catch (e) { reveal(); } }, 750));
+      timers.push(setTimeout(reveal, 5800)); // 혹시 멈춰도 넘어가게
     };
 
     // ---- 인트로 준비: 필요한 사진·지구본을 '다' 받을 때까지 진행 막대를 보여 주고, 다 받으면 처음부터 끝까지 재생 ----
