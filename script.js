@@ -6231,7 +6231,7 @@ async function clinicCall(action, payload) {
       { go: "view-iraq-cd", sel: ".cd-intro-panel", text: `<b>이라크 민방위(소방) 소식</b>이에요. 위에는 민방위총국 소개와 연락처, 아래에는 현지 화재·구조 소식이 있어요.` },
     ]},
     { id: "etc", title: "기타", icon: "🧩", steps: [
-      { go: "view-bismayah", sel: "#bnewsList", text: `<b>기타 › 비스마야 소식</b>이에요. 한국 언론·이라크(아랍어)·영어 기사 중 <b>비스마야</b>가 나온 뉴스를 6시간마다 모아요. 아랍어·영어 제목은 한국어로 번역되고, 누르면 원문 기사가 열려요. 위 버튼으로 언어별로 볼 수 있어요.` },
+      { go: "view-bismayah", sel: "#bnewsList", text: `<b>기타 › 비스마야 소식</b>이에요. <b>비스마야</b>가 나온 뉴스를 6시간마다 모아서 왼쪽은 <b>국내 뉴스</b>(한국 언론), 오른쪽은 <b>이라크 뉴스</b>(현지 아랍어·영어 기사, 제목 한국어 번역)로 나눠 보여 줘요. 누르면 원문 기사가 열려요.` },
       { go: "view-ships", sel: ".air-switch", text: `<b>해상·항공 현황</b>이에요. <b>실시간 항공 지도</b>와 공항·항공기 <b>요약 지도</b>를 바꿔 볼 수 있어요. 아래로 내리면 <b>걸프만 선박 현황</b>도 있어요. 출장·자재 운송 일정 볼 때 참고하세요.` },
       { go: "view-global", sel: "#globalFilter", text: `<b>해외 현장</b>이에요. 국내 건설사의 해외 현장을 지도와 표로 보여 줘요. 위 버튼으로 회사를 골라 볼 수 있어요.` },
       { go: "view-embassy", sel: "#view-embassy .embassy-panel", text: `<b>중동 각국 대사관 공지</b>예요. 이라크와 주변국 <b>대한민국 대사관의 안전공지</b>를 매일 모아요. 버튼으로 나라와 공지 종류를 고르고, 제목을 누르면 원문이 열려요.` },
@@ -7046,25 +7046,25 @@ function hseWeldWord(host, wordEl, onDone) {
    기타 > 비스마야 소식 (bismayah-news.json · GitHub Actions가 6시간마다 구글 뉴스에서 수집)
    ========================================================== */
 (function bismayahNews() {
-  const list = document.getElementById("bnewsList");
-  if (!list) return;
-  let items = null, lang = "all";
-  const LANG = { ko: "한국", ar: "아랍어", en: "영어" };
+  const koBox = document.getElementById("bnewsKo"), iqBox = document.getElementById("bnewsIq");
+  if (!koBox || !iqBox) return;
+  let items = null;
+  const LANG = { ar: "아랍어", en: "영어" };
   const fmt = (iso) => {
     const d = new Date(iso); if (isNaN(d)) return "";
     return new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Baghdad", year: "numeric", month: "2-digit", day: "2-digit" }).format(d).replace(/\.\s?/g, ".").replace(/\.$/, "");
   };
-  function draw() {
-    const L = (items || []).filter((n) => lang === "all" || n.lang === lang);
-    document.getElementById("bnewsCount").textContent = items ? `· ${L.length}건` : "";
-    list.innerHTML = L.length ? L.map((n) => {
-      const orig = n.titleKo && n.titleKo !== n.title;
-      return `<a class="bnews-item" href="${escapeHtml(n.link)}" target="_blank" rel="noopener noreferrer">
-        <div class="bnews-meta"><span class="bnews-lang l-${escapeHtml(n.lang)}">${LANG[n.lang] || ""}</span><span class="bnews-date">${escapeHtml(fmt(n.date))}</span><span class="bnews-src">${escapeHtml(n.source || "")}</span></div>
-        <div class="bnews-title">${escapeHtml(n.titleKo || n.title)}</div>
-        ${orig ? `<div class="bnews-orig" ${n.lang === "ar" ? 'dir="rtl" lang="ar"' : ""}>${escapeHtml(n.title)}</div>` : ""}
-      </a>`;
-    }).join("") : `<p class="skeleton">${items ? "해당하는 기사가 없어요" : "아직 모은 기사가 없어요 (자동 수집 대기 중)"}</p>`;
+  const card = (n) => {
+    const orig = n.titleKo && n.titleKo !== n.title;
+    return `<a class="bnews-item" href="${escapeHtml(n.link)}" target="_blank" rel="noopener noreferrer">
+      <div class="bnews-meta">${LANG[n.lang] ? `<span class="bnews-lang l-${escapeHtml(n.lang)}">${LANG[n.lang]}</span>` : ""}<span class="bnews-date">${escapeHtml(fmt(n.date))}</span><span class="bnews-src">${escapeHtml(n.source || "")}</span></div>
+      <div class="bnews-title">${escapeHtml(n.titleKo || n.title)}</div>
+      ${orig ? `<div class="bnews-orig" ${n.lang === "ar" ? 'dir="rtl" lang="ar"' : ""}>${escapeHtml(n.title)}</div>` : ""}
+    </a>`;
+  };
+  function fill(box, countEl, L) {
+    document.getElementById(countEl).textContent = `${L.length}건`;
+    box.innerHTML = L.length ? L.map(card).join("") : `<p class="skeleton">최근 60일 동안 기사가 없어요</p>`;
   }
   async function load() {
     if (items) return;
@@ -7076,17 +7076,14 @@ function hseWeldWord(host, wordEl, onDone) {
       const d = new Date(j.generatedAt);
       if (!isNaN(d)) document.getElementById("bnewsMeta").textContent += ` · 마지막 수집 ${d.toLocaleString("ko-KR", { timeZone: "Asia/Baghdad", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false })}`;
     } catch (e) {
-      list.innerHTML = `<p class="skeleton">기사를 불러오지 못했습니다 (${escapeHtml(e.message)})</p>`;
+      [koBox, iqBox].forEach((b) => { b.innerHTML = `<p class="skeleton">기사를 불러오지 못했습니다 (${escapeHtml(e.message)})</p>`; });
       return;
     }
-    draw();
+    // 국내 = 한국 언론(한국어 기사), 이라크 = 그 밖(아랍어·영어 기사)
+    fill(koBox, "bnewsKoN", items.filter((n) => n.lang === "ko"));
+    fill(iqBox, "bnewsIqN", items.filter((n) => n.lang !== "ko"));
+    document.getElementById("bnewsCount").textContent = `· ${items.length}건`;
   }
-  document.getElementById("bnewsFilter").addEventListener("click", (e) => {
-    const b = e.target.closest("button[data-l]"); if (!b) return;
-    lang = b.dataset.l;
-    document.querySelectorAll("#bnewsFilter button").forEach((x) => x.classList.toggle("active", x === b));
-    draw();
-  });
   document.querySelectorAll('.tab-btn[data-view="view-bismayah"]').forEach((b) => b.addEventListener("click", load));
   if (document.querySelector("#view-bismayah.active")) load();
 })();
