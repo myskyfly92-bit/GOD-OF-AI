@@ -7162,7 +7162,23 @@ function hseWeldWord(host, wordEl, onDone) {
   const ROPE_X = 41.2 / 140 * (140 * H / 220);     // 줄 타기 그림에서 줄이 나오는 x
   const LINES = ["고소작업은 안전대 체결부터!", "고리는 머리 위 튼튼한 곳에!", "줄 타기 전, 고리 두 번 당겨 확인!", "안전대는 내 생명줄!"];
   let running = false, lineIdx = Math.floor(Math.random() * LINES.length);
-  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+  // 카드가 숨어 있으면(오래 안 만져서 배경 보기·상황실 순환 화면) 장면을 하지 않고, 하던 중이면 바로 접는다
+  const cardsHidden = () => {
+    if (document.body.classList.contains("bg-reveal") || document.body.classList.contains("kiosk-on")) return true;
+    const c = document.querySelector(".view.active .grid > .panel");
+    if (!c) return true;
+    const cs = getComputedStyle(c);
+    return cs.visibility === "hidden" || cs.display === "none" || parseFloat(cs.opacity) < 0.5;
+  };
+  const STOP = new Error("rappel-stop");
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  const wait = (ms) => new Promise((r, j) => {                  // 기다리는 동안에도 카드가 숨으면 멈춘다
+    const t0 = Date.now();
+    const iv = setInterval(() => {
+      if (running && cardsHidden()) { clearInterval(iv); j(STOP); }
+      else if (Date.now() - t0 >= ms) { clearInterval(iv); r(); }
+    }, 40);
+  });
   // 한 번만 도는 그림을 처음부터: 미리 받아 둔 파일로 새 주소(blob)를 만든다
   // (예전처럼 주소 뒤에 ?t= 를 붙이면 매번 새로 내려받느라, 그동안 달리기 그림이 제자리에서 뛰고 있었다)
   const blobs = {};
@@ -7175,9 +7191,12 @@ function hseWeldWord(host, wordEl, onDone) {
   });
 
   function anim(ms, fn) {
-    return new Promise((res) => {
+    return new Promise((res, rej) => {
       const t0 = performance.now();
-      const step = (now) => { const t = Math.min(1, (now - t0) / ms); fn(t); if (t < 1) requestAnimationFrame(step); else res(); };
+      const step = (now) => {
+        if (running && cardsHidden()) return rej(STOP);
+        const t = Math.min(1, (now - t0) / ms); fn(t); if (t < 1) requestAnimationFrame(step); else res();
+      };
       requestAnimationFrame(step);
     });
   }
@@ -7186,14 +7205,14 @@ function hseWeldWord(host, wordEl, onDone) {
   function can() {
     return !running && innerWidth >= 1100 && scrollY < 80 && !document.hidden
       && document.querySelector("#view-dashboard.active") && !document.querySelector(".hse-intro")
-      && !document.body.classList.contains("hg-running") && !document.body.classList.contains("bg-reveal");
+      && !document.body.classList.contains("hg-running") && !cardsHidden();
   }
   window.hseRappelCan = can;
   async function show() {
     if (running) return;
     const runner = document.querySelector(".mascot-runner");
     const tab = document.querySelector('.group-btn[data-group="safety"]');
-    if (!runner || !tab || innerWidth < 1100 || document.body.classList.contains("hg-running")) return;
+    if (!runner || !tab || innerWidth < 1100 || document.body.classList.contains("hg-running") || cardsHidden()) return;
     let rr = runner.getBoundingClientRect(), tr = tab.getBoundingClientRect();
     const next = tab.nextElementSibling, nr = next ? next.getBoundingClientRect() : null;
     const card = document.querySelector(".view.active .grid > .panel");
@@ -7202,7 +7221,7 @@ function hseWeldWord(host, wordEl, onDone) {
     running = true;
     // 배너 마스코트를 먼저 그 자리에 세운다 (서 있는 정면 그림 = 뛰어내리기 영상 첫 장면)
     window.__mascotHold = true;
-    await wait(120);
+    await sleep(120);
     rr = runner.getBoundingClientRect();
     const sx = scrollX, sy = scrollY;
     // 고리 걸 곳: '안전' 탭 오른쪽 옆 (다음 탭과의 틈), 탭 윗부분 높이
@@ -7267,9 +7286,10 @@ function hseWeldWord(host, wordEl, onDone) {
     const runTo = async (x1, x2, y) => {
       await pose(fresh(SRC.run), H, x2 < x1); at(x1, y);
       const dir = Math.sign(x2 - x1) || 1;
-      await new Promise((res) => {
+      await new Promise((res, rej) => {
         let x = x1, last = 0, el = 0;
         const step = (ts) => {
+          if (cardsHidden()) return rej(STOP);
           const dt = last ? Math.min(0.1, (ts - last) / 1000) : 0; last = ts; el += dt;
           const hop0 = hopAt(x + RUN_W / 2);
           x += dir * (hop0 > 0 ? HOP_V : RUN_V) * dt;
@@ -7338,12 +7358,14 @@ function hseWeldWord(host, wordEl, onDone) {
         const up = sec < 0.5 ? 0 : sec > 1.05 ? 1 : 1 - Math.pow(1 - (sec - 0.5) / 0.55, 1.6);
         at(hl + (HOPUP.cxEnd - HOPUP.cx0) * 0, ht - U * up);
       });
+    } catch (e) {
+      if (e !== STOP) console.warn(e);
     } finally {
       // 끝날 때도 0.3초 겹쳐서 배너 마스코트로 돌아간다
       runner.style.opacity = "0"; runner.style.visibility = "";
       runner.style.transition = "opacity .3s ease"; sprite.style.transition = "opacity .3s ease";
       requestAnimationFrame(() => { runner.style.opacity = "1"; sprite.style.opacity = "0"; });
-      await wait(320);
+      await sleep(320);
       runner.style.opacity = ""; runner.style.transition = "";
       root.remove();
       window.__mascotHold = false;
