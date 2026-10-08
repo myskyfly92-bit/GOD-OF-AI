@@ -39,13 +39,19 @@ out center tags;"""
     for url in OVERPASS:
         for attempt in range(2):
             try:
-                res = requests.post(url, data={"data": q}, headers=HEAD, timeout=120)
+                res = requests.post(url, data={"data": q}, headers=HEAD, timeout=150)
                 if res.status_code == 200:
-                    return res.json().get("elements", [])
-                last = f"{url} → {res.status_code}"
+                    j = res.json()
+                    els = j.get("elements", [])
+                    if els:
+                        return els
+                    last = f"{url} → 결과 0건 ({j.get('remark', '')[:120]})"
+                else:
+                    last = f"{url} → HTTP {res.status_code}"
             except Exception as e:  # noqa
                 last = f"{url} → {e}"
-            time.sleep(5)
+            print(f"::warning::Overpass 재시도: {last}")
+            time.sleep(20)
     raise RuntimeError(f"Overpass 실패: {last}")
 
 
@@ -73,7 +79,12 @@ def ownership(t):
 
 
 def main():
-    els = overpass()
+    try:
+        els = overpass()
+    except Exception as e:  # noqa
+        # 서버가 바쁘면 이번에는 건너뛰고 지난번 자료를 그대로 둔다
+        print(f"::warning::의료시설 수집 건너뜀 (지난 자료 유지): {e}")
+        return
     print(f"OSM 결과 {len(els)}건")
     seen, items = set(), []
     for e in els:
