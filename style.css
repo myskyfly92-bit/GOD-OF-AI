@@ -1456,6 +1456,7 @@ html body {
 /* 실제 시장환율(암시장) 값은 주황색으로 강조, 공식 고시환율은 흐린 참고용 톤 */
 .fx-value-market { color: var(--amber); }
 .fx-value-official { color: var(--text-dim); }
+.fx-sub { font-size: 11.5px; color: var(--text-dim); text-align: right; margin: -4px 0 4px; }
 
 .fx-updated {
   margin-top: 10px;

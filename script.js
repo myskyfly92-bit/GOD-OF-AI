@@ -753,13 +753,25 @@ async function loadExchangeRates() {
     console.error(err);
   }
 
-  let marketIqd = null;
+  // 공식 고시환율은 data.json 의 iqdOfficial (중앙은행 발표를 직접 적어 둔 값)을 쓴다.
+  // usdiqd.com 의 '공식' 숫자는 2026-10-07 개정(1,300→1,500)을 반영하지 않아 쓰지 않는다.
+  let official = null;
+  try {
+    const res = await fetch("data.json", { cache: "no-store" });
+    if (res.ok) official = (await res.json()).iqdOfficial || null;
+  } catch (err) {
+    console.error(err);
+  }
+  if (official && official.rate) officialIqd = official.rate;
+
+  let marketIqd = null, marketAt = null;
   try {
     const res = await fetch("market-fx.json", { cache: "no-store" });
     if (res.ok) {
       const data = await res.json();
       marketIqd = data.usdIqdParallel || null;
-      if (data.usdIqdOfficial) officialIqd = data.usdIqdOfficial; // 같은 출처 값이 있으면 그쪽을 우선
+      marketAt = data.sourceDate || data.generatedAt || null;
+      if (!official && data.usdIqdOfficial) officialIqd = data.usdIqdOfficial;
     }
   } catch (err) {
     console.error(err);
@@ -772,6 +784,13 @@ async function loadExchangeRates() {
 
   if (officialIqd) {
     elUsdIqdOfficial.textContent = officialIqd.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
+  }
+  const subEl = document.getElementById("fxOfficialSub");
+  if (subEl && official) {
+    const f = (n) => Number(n).toLocaleString("ko-KR");
+    const since = official.since ? `${Number(official.since.slice(5, 7))}/${Number(official.since.slice(8, 10))} 개정` : "";
+    subEl.textContent = [official.bankSell && `은행 판매 ${f(official.bankSell)}`, official.retailMax && `일반 ${f(official.retailMax)}`, since].filter(Boolean).join(" · ");
+    subEl.hidden = false;
   }
   if (marketIqd) {
     elUsdIqd.textContent = marketIqd.toLocaleString("ko-KR", { maximumFractionDigits: 0 });
@@ -794,8 +813,14 @@ async function loadExchangeRates() {
 
   const now = new Date();
   const stamp = new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(now);
+  // 시장환율은 수집한 시각을 따로 보여 준다 (화면 갱신 시각과 다를 수 있음)
+  let mAt = "";
+  if (marketAt) {
+    const d = new Date(marketAt);
+    if (!isNaN(d)) mAt = new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false }).format(d);
+  }
   elUpdated.textContent = marketIqd
-    ? `갱신: ${stamp} (바그다드) · 시장환율은 usdiqd.com 기준`
+    ? `갱신: ${stamp} (바그다드) · 시장환율 ${mAt ? mAt + " 수집" : ""} (usdiqd.com)`
     : `갱신: ${stamp} (바그다드) · 시장환율 수집 전`;
 }
 loadExchangeRates();

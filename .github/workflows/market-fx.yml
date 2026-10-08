@@ -2,8 +2,8 @@ name: Update Iraq market FX rate (시장환율)
 
 on:
   schedule:
-    # 하루 4번 (바그다드 약 06·12·18·24시). 붐비는 정각을 피해 12분에 실행
-    - cron: "12 3,9,15,21 * * *"
+    # 1시간마다 (붐비는 정각을 피해 매시 12분). 깃허브 사정으로 늦어질 수 있음
+    - cron: "12 * * * *"
   workflow_dispatch: {} # 저장소의 Actions 탭에서 수동 실행도 가능
 
 permissions:
