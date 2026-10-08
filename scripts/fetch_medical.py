@@ -101,6 +101,35 @@ def main():
             "lat": round(lat, 6), "lon": round(lon, 6),
             "km": round(hav(SITE, (lat, lon)), 1),
         })
+    # ---- 잡음 거르기 ----
+    import re as _re
+    BAD = _re.compile(r"بيطري|veterinar|\bvet\b|ادارة|إدارة|مقر|دائرة|directorate|office|nuclear|military|air force|\bbase\b|عسكري|دواجن|poultry|pharmac|صيدلي", _re.I)
+    items = [x for x in items if not BAD.search(" ".join((x["name"], x["nameEn"], x["nameAr"])))]
+    # 옛날 지명 자료(전부 대문자 'BAGHDAD HOSPITAL ...')는 근처에 같은 병원이 따로 있으면 뺀다
+    def legacy(x):
+        n = x["name"]
+        return n.isupper() and "HOSPITAL" in n
+    keep = []
+    for x in items:
+        if legacy(x) and any(y is not x and not legacy(y) and y["kind"] == "hospital" and hav((x["lat"], x["lon"]), (y["lat"], y["lon"])) < 1.2 for y in items):
+            continue
+        keep.append(x)
+    items = keep
+    # 같은 병원이 점·건물로 두 번 들어간 경우: 300m 안 같은 종류는 하나로 (정보 많은 쪽을 남김)
+    def score(x): return sum(bool(x.get(k)) for k in ("nameEn", "nameAr", "phone", "website", "beds", "own")) + (2 if x["emergency"] else 0)
+    items.sort(key=lambda x: -score(x))
+    merged = []
+    for x in items:
+        dup = next((y for y in merged if y["kind"] == x["kind"] and hav((x["lat"], x["lon"]), (y["lat"], y["lon"])) < 0.3), None)
+        if dup:
+            for k in ("nameEn", "nameAr", "phone", "website", "beds", "own"):
+                if not dup.get(k) and x.get(k): dup[k] = x[k]
+            dup["emergency"] = dup["emergency"] or x["emergency"]
+            continue
+        merged.append(x)
+    items = merged
+    # 의원·보건소는 가까운 곳(25km)만 — 너무 많아서 지도가 복잡해짐
+    items = [x for x in items if x["kind"] == "hospital" or x["km"] <= 25]
     items.sort(key=lambda x: x["km"])
 
     # 도로 거리·시간 (가까운 병원 우선, 그다음 의원)
