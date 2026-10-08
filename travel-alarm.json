@@ -663,6 +663,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "서사하라 이외 지역"
+    },
+    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -673,12 +679,6 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "서사하라 내 모래방어벽 서쪽"
-    },
-    {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "서사하라 이외 지역"
     }
    ],
    "written": "",
@@ -1866,12 +1866,6 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "중•북부 시나이 반도(1,2단계 지역 제외), 리비아 국경으로부터 30km까지"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -1882,6 +1876,12 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "다합•샴엘셰이크지역, 카이로 등 나일강 유역 도시지역, 마르트루~지중해 유역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "중•북부 시나이 반도(1,2단계 지역 제외), 리비아 국경으로부터 30km까지"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-10-07T07:45:42.726338+00:00"
+ "generatedAt": "2026-10-08T08:03:05.428300+00:00"
 }
