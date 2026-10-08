@@ -7178,10 +7178,12 @@ function hseWeldWord(host, wordEl, onDone) {
     // 단, 서 있는 발이 아래 카드 영역을 넘지 않게 높이를 맞춘다
     const floor = cardTop - 6 + sy;                                     // 발이 닿는 선 (카드 위쪽 바로 위)
     const ax = (nr ? (tr.right + nr.left) / 2 : tr.right + 8) + sx;
-    // 고리는 배너 아래 끝(구조물 보)에 건다. 그 아래 탭 줄에 서도 발이 카드에 닿지 않게 키를 줄인다
+    // 고리는 배너 아래 끝(구조물 보) 근처에 건다
     const bar = document.querySelector(".topbar");
-    const ay = (bar ? bar.getBoundingClientRect().bottom : tr.top) + 2 + sy;
-    const S = Math.max(0.6, Math.min(1, (floor - ay) / (H * (1 - HOOK_PT.y / H))));   // 크기 비율
+    // 크기는 그대로(100px) 두고, 발이 카드 위쪽 선에 오도록 고리 높이를 정한다 (배너 아래 끝 근처)
+    const barB = (bar ? bar.getBoundingClientRect().bottom : tr.top) + sy;
+    const ay = Math.min(barB + 2, floor - H + HOOK_PT.y);
+    const S = 1;
     const Hs = Math.round(H * S), HP = { x: HOOK_PT.x * S, y: HOOK_PT.y * S }, RX = ROPE_X * S;
 
     const root = document.createElement("div");
