@@ -6190,136 +6190,180 @@ async function clinicCall(action, payload) {
 })();
 
 /* ==========================================================
-   인트로 '한화' 용접 연출
-   - 보이지 않는 용접봉이 글자를 왼쪽부터 지그재그로 훑으며 새긴다
-   - 지나간 자리는 하얗게 달았다가 주황색으로 식고, 불티가 튀어 바닥에서 튄다
-   - 다 새기면 그림은 서서히 사라지고 진짜 글자(빛나는 '한화')로 바뀐다
+   인트로 '한화' 용접 연출 (v2)
+   - 글자는 진짜 글꼴 모양 그대로(매끈한 가장자리). 용접봉이 지나간 자리만 드러난다
+   - 막 지나간 자리는 하얗게 달았다가 금속 그라데이션(노랑→주황→적동)으로 식는다
+   - 용접 불빛: 하얀 심 + 가로 광선(렌즈 플레어) + 주변을 비추는 큰 빛, 깜빡임
+   - 불티: 빛 번짐 + 속도만큼 긴 꼬리, 바닥에서 튐
+   - 다 새기면 그 그림 그대로 식혀서 마무리(진짜 글자와 바꿔치기하지 않음)
    ========================================================== */
 function hseWeldWord(host, wordEl, onDone) {
   const dpr = Math.min(2, window.devicePixelRatio || 1);
   const W = host.clientWidth, H = host.clientHeight;
-  const cv = document.createElement("canvas");
+  const mk = (w, h) => { const c = document.createElement("canvas"); c.width = Math.ceil(w * dpr); c.height = Math.ceil(h * dpr); const x = c.getContext("2d"); x.setTransform(dpr, 0, 0, dpr, 0, 0); return [c, x]; };
+  const [cv, ctx] = mk(W, H);
   cv.className = "hse-weld";
-  cv.width = W * dpr; cv.height = H * dpr;
   host.appendChild(cv);
-  const ctx = cv.getContext("2d");
-  ctx.scale(dpr, dpr);
+  host.classList.add("welding");
 
-  // 글자 자리·크기는 실제 '한화' 글자와 똑같이
+  // 글자 자리·크기는 실제 글자 요소와 같게
   const r = wordEl.getBoundingClientRect(), hr = host.getBoundingClientRect();
   const cs = getComputedStyle(wordEl);
   const fs = parseFloat(cs.fontSize);
+  const text = wordEl.textContent.trim();
   const cx = r.left - hr.left + r.width / 2, cy = r.top - hr.top + r.height / 2;
   const font = `${cs.fontWeight} ${fs}px ${cs.fontFamily}`;
 
-  // 글자 모양을 점으로 나눈다
-  const off = document.createElement("canvas");
-  const ow = Math.ceil(fs * 3.2), oh = Math.ceil(fs * 1.6);
-  off.width = ow; off.height = oh;
-  const o = off.getContext("2d");
-  o.font = font; o.textAlign = "center"; o.textBaseline = "middle";
-  try { o.letterSpacing = cs.letterSpacing; } catch (e) {}
-  o.fillStyle = "#fff"; o.fillText(wordEl.textContent.trim(), ow / 2, oh / 2);
-  const px = o.getImageData(0, 0, ow, oh).data;
-  const step = Math.max(2, Math.round(fs / 42));
-  const band = step * 7;
+  // 글자 상자 (이 안에서만 글자 그림을 다룬다 → 가볍게)
+  const bw = Math.ceil(fs * 3.4), bh = Math.ceil(fs * 1.7);
+  const bx = cx - bw / 2, by = cy - bh / 2;
+  const setText = (x) => { x.font = font; x.textAlign = "center"; x.textBaseline = "middle"; try { x.letterSpacing = cs.letterSpacing; } catch (e) {} };
+
+  // 식은 글자: 금속 그라데이션 + 얇은 테두리
+  const [cool, cc] = mk(bw, bh);
+  setText(cc);
+  const g1 = cc.createLinearGradient(0, bh * 0.2, 0, bh * 0.8);
+  g1.addColorStop(0, "#fff3d0"); g1.addColorStop(0.35, "#ffc061"); g1.addColorStop(0.7, "#ff7a1c"); g1.addColorStop(1, "#c8400a");
+  cc.fillStyle = g1; cc.fillText(text, bw / 2, bh / 2);
+  cc.lineWidth = Math.max(1, fs / 90); cc.strokeStyle = "rgba(255,240,210,0.55)"; cc.strokeText(text, bw / 2, bh / 2);
+  // 달군 글자: 하얀빛
+  const [hotT, hc] = mk(bw, bh);
+  setText(hc); hc.fillStyle = "#fffbe8"; hc.fillText(text, bw / 2, bh / 2);
+
+  // 용접봉이 지나갈 길: 글자 모양을 촘촘한 점으로 → 왼쪽부터 지그재그
+  const [probe, pc] = mk(bw, bh);
+  setText(pc); pc.fillStyle = "#fff"; pc.fillText(text, bw / 2, bh / 2);
+  const pd = pc.getImageData(0, 0, probe.width, probe.height).data;
+  const step = Math.max(2, Math.round(fs / 30));
+  const band = step * 6;
   const pts = [];
-  for (let y = 0; y < oh; y += step) for (let x = 0; x < ow; x += step) {
-    if (px[(y * ow + x) * 4 + 3] > 120) pts.push({ x: cx - ow / 2 + x, y: cy - oh / 2 + y, b: Math.floor(x / band), t: -1 });
+  for (let y = 0; y < bh; y += step) for (let x = 0; x < bw; x += step) {
+    const i = (Math.floor(y * dpr) * probe.width + Math.floor(x * dpr)) * 4 + 3;
+    if (pd[i] > 100) pts.push({ x, y, b: Math.floor(x / band), t: -1 });
   }
-  // 왼쪽 띠부터, 띠 안에서는 위→아래 / 아래→위 번갈아 (용접봉이 지그재그로 지나가게)
   pts.sort((a, b) => a.b - b.b || (a.b % 2 ? b.y - a.y : a.y - b.y));
-  if (!pts.length) { cv.remove(); onDone(); return; }
+  if (!pts.length) { cv.remove(); host.classList.remove("welding"); onDone(); return; }
 
-  // 식은 자리는 따로 그려 둔다 (매번 다시 그리지 않게)
-  const plate = document.createElement("canvas");
-  plate.width = cv.width; plate.height = cv.height;
-  const pl = plate.getContext("2d");
-  pl.scale(dpr, dpr);
-
-  const WELD_MS = 2300, COOL_MS = 650;
-  const floorY = Math.min(H - 10, cy + fs * 1.9);
-  const sparks = [];
-  let start = 0, last = 0, drawn = 0, finished = false;
-  const hot = (k) => { // 0(식음)~1(막 지남) → 색
-    if (k > 0.66) return `rgba(255,255,${Math.round(200 + 55 * (k - 0.66) / 0.34)},1)`;
-    if (k > 0.33) return `rgba(255,${Math.round(190 + 65 * (k - 0.33) / 0.33)},${Math.round(90 + 110 * (k - 0.33) / 0.33)},1)`;
-    return `rgba(255,${Math.round(120 + 70 * k / 0.33)},${Math.round(40 + 50 * k / 0.33)},1)`;
+  const [mask, mc] = mk(bw, bh);   // 드러난 자리 (계속 쌓임)
+  const [heat, htc] = mk(bw, bh);  // 지금 뜨거운 자리 (매 장면 새로)
+  const [layer, lc] = mk(bw, bh);  // 합성용
+  const R = step * 2.3;
+  const dot = document.createElement("canvas"); dot.width = dot.height = 64;
+  { const d = dot.getContext("2d"), g = d.createRadialGradient(32, 32, 0, 32, 32, 32); g.addColorStop(0, "#fff"); g.addColorStop(0.55, "#fff"); g.addColorStop(1, "rgba(255,255,255,0)"); d.fillStyle = g; d.fillRect(0, 0, 64, 64); }
+  const stamp = (x, px, py, rad, a) => { x.globalAlpha = a; x.drawImage(dot, px - rad, py - rad, rad * 2, rad * 2); x.globalAlpha = 1; };
+  const soft = (x, c, px, py, rad, a) => {
+    const g = x.createRadialGradient(px, py, 0, px, py, rad);
+    g.addColorStop(0, `rgba(${c},${a})`); g.addColorStop(0.55, `rgba(${c},${a})`); g.addColorStop(1, `rgba(${c},0)`);
+    x.fillStyle = g; x.fillRect(px - rad, py - rad, rad * 2, rad * 2);
   };
 
+  const WELD_MS = 2400, HOT_MS = 520, SETTLE_MS = 1100;
+  const floorY = Math.min(H - 8, cy + fs * 1.6);
+  const sparks = [];
+  let start = 0, last = 0, done = 0, finishedAt = 0, called = false;
+  const canFilter = "filter" in ctx;
+
   function frame(now) {
+    if (!cv.isConnected) return;
     if (!start) start = last = now;
     const dt = Math.min(0.05, (now - last) / 1000); last = now;
     const el = now - start;
     const target = Math.min(pts.length, Math.floor(pts.length * Math.min(1, el / WELD_MS)));
-    for (; drawn < target; drawn++) pts[drawn].t = now;
-    const torch = drawn < pts.length ? pts[Math.max(0, drawn - 1)] : null;
+    for (; done < target; done++) { const p = pts[done]; p.t = now; stamp(mc, p.x, p.y, R, 1); }
+    const welding = done < pts.length;
+    const tp = welding ? pts[Math.max(0, done - 1)] : null;
+    if (!welding && !finishedAt) finishedAt = now;
+
+    // 뜨거운 자리
+    htc.clearRect(0, 0, bw, bh);
+    for (let i = Math.max(0, done - 600); i < done; i++) {
+      const p = pts[i], age = now - p.t;
+      if (age < HOT_MS) stamp(htc, p.x, p.y, R * 1.05, 1 - age / HOT_MS);
+    }
 
     ctx.clearRect(0, 0, W, H);
-    // 식어 가는 자리: 오래된 점은 판에 굳히고, 최근 점만 밝게
-    ctx.globalCompositeOperation = "lighter";
-    for (let i = Math.max(0, drawn - 900); i < drawn; i++) {
-      const p = pts[i];
-      if (p.t < 0) continue;
-      const age = now - p.t;
-      if (age > COOL_MS) {
-        if (!p.done) { p.done = true; pl.fillStyle = "rgba(255,150,60,0.95)"; pl.beginPath(); pl.arc(p.x, p.y, step * 0.95, 0, 6.2832); pl.fill(); }
-        continue;
-      }
-      const k = 1 - age / COOL_MS;
-      ctx.fillStyle = hot(k);
-      const s = step * (0.9 + k * 1.1);
-      ctx.beginPath(); ctx.arc(p.x, p.y, s * 0.6, 0, 6.2832); ctx.fill();
-    }
-    for (let i = 0; i < Math.max(0, drawn - 900); i++) {
-      const p = pts[i];
-      if (!p.done) { p.done = true; pl.fillStyle = "rgba(255,150,60,0.95)"; pl.beginPath(); pl.arc(p.x, p.y, step * 0.95, 0, 6.2832); pl.fill(); }
-    }
-    ctx.globalCompositeOperation = "source-over";
-    ctx.save();
-    ctx.shadowColor = "rgba(255,110,20,0.9)"; ctx.shadowBlur = fs * 0.25;
-    ctx.drawImage(plate, 0, 0, W, H);
-    ctx.restore();
-    ctx.globalCompositeOperation = "lighter";
+    const flick = 0.7 + Math.random() * 0.6;
 
-    // 용접 불빛 + 불티
-    if (torch) {
-      const fl = 0.75 + Math.random() * 0.5;
-      const g = ctx.createRadialGradient(torch.x, torch.y, 0, torch.x, torch.y, fs * 0.9 * fl);
-      g.addColorStop(0, "rgba(255,255,255,1)");
-      g.addColorStop(0.08, "rgba(220,240,255,0.95)");
-      g.addColorStop(0.25, "rgba(255,200,120,0.45)");
-      g.addColorStop(1, "rgba(255,120,30,0)");
-      ctx.fillStyle = g;
-      ctx.fillRect(torch.x - fs, torch.y - fs, fs * 2, fs * 2);
-      for (let n = 0; n < 9; n++) {
-        const a = -Math.PI / 2 + (Math.random() - 0.5) * Math.PI * 1.5;
-        const v = 180 + Math.random() * 520;
-        sparks.push({ x: torch.x, y: torch.y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, life: 0.5 + Math.random() * 0.8, age: 0 });
+    // 1) 용접 불빛이 주변을 비춘다
+    if (tp) {
+      ctx.globalCompositeOperation = "lighter";
+      const lx = bx + tp.x, ly = by + tp.y;
+      const g = ctx.createRadialGradient(lx, ly, 0, lx, ly, fs * 4.5);
+      g.addColorStop(0, `rgba(120,170,255,${0.11 * flick})`); g.addColorStop(0.3, `rgba(255,140,60,${0.08 * flick})`); g.addColorStop(1, "rgba(0,0,0,0)");
+      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+      ctx.globalCompositeOperation = "source-over";
+    }
+
+    // 2) 식은 글자 (드러난 자리만) + 빛 번짐
+    lc.globalCompositeOperation = "source-over";
+    lc.clearRect(0, 0, bw, bh);
+    lc.drawImage(cool, 0, 0, bw, bh);
+    lc.globalCompositeOperation = "destination-in";
+    lc.drawImage(mask, 0, 0, bw, bh);
+    lc.globalCompositeOperation = "source-over";
+    const settle = finishedAt ? Math.min(1, (now - finishedAt) / SETTLE_MS) : 0;
+    if (canFilter) {
+      ctx.save();
+      ctx.globalCompositeOperation = "lighter";
+      ctx.filter = `blur(${Math.round(fs * 0.16)}px)`;
+      ctx.globalAlpha = 0.75 + 0.15 * Math.sin(now / 300) * settle;
+      ctx.drawImage(layer, bx, by, bw, bh);
+      ctx.filter = `blur(${Math.round(fs * 0.45)}px)`;
+      ctx.globalAlpha = 0.45;
+      ctx.drawImage(layer, bx, by, bw, bh);
+      ctx.restore();
+    }
+    ctx.drawImage(layer, bx, by, bw, bh);
+
+    // 3) 달군 자리: 하얀빛
+    lc.clearRect(0, 0, bw, bh);
+    lc.drawImage(hotT, 0, 0, bw, bh);
+    lc.globalCompositeOperation = "destination-in";
+    lc.drawImage(heat, 0, 0, bw, bh);
+    lc.globalCompositeOperation = "source-over";
+    ctx.save();
+    ctx.globalCompositeOperation = "lighter";
+    if (canFilter) { ctx.filter = `blur(${Math.round(fs * 0.08)}px)`; ctx.drawImage(layer, bx, by, bw, bh); ctx.filter = "none"; }
+    ctx.drawImage(layer, bx, by, bw, bh);
+    ctx.restore();
+
+    // 4) 용접봉 끝: 하얀 심 + 가로 광선
+    ctx.globalCompositeOperation = "lighter";
+    if (tp) {
+      const lx = bx + tp.x, ly = by + tp.y;
+      soft(ctx, "255,255,255", lx, ly, fs * 0.1 * flick, 1);
+      soft(ctx, "190,220,255", lx, ly, fs * 0.32 * flick, 0.4);
+      const fl = ctx.createLinearGradient(lx - fs * 2.2, ly, lx + fs * 2.2, ly);
+      fl.addColorStop(0, "rgba(160,200,255,0)"); fl.addColorStop(0.5, `rgba(220,235,255,${0.8 * flick})`); fl.addColorStop(1, "rgba(160,200,255,0)");
+      ctx.fillStyle = fl; ctx.fillRect(lx - fs * 2.2, ly - 1.5, fs * 4.4, 3);
+      for (let n = 0; n < 16; n++) {
+        const a = -Math.PI / 2 + (Math.random() - 0.5) * Math.PI * 1.7;
+        const v = 150 + Math.random() * 650;
+        sparks.push({ x: lx, y: ly, vx: Math.cos(a) * v, vy: Math.sin(a) * v, life: 0.35 + Math.random() * 0.9, age: 0, w: 0.6 + Math.random() });
       }
     }
+
+    // 5) 불티: 빛 번짐 + 꼬리
     ctx.lineCap = "round";
     for (let i = sparks.length - 1; i >= 0; i--) {
       const s = sparks[i];
       s.age += dt;
       if (s.age > s.life) { sparks.splice(i, 1); continue; }
-      s.vy += 1500 * dt;
-      const px0 = s.x, py0 = s.y;
+      s.vy += 1600 * dt; s.vx *= (1 - 0.6 * dt);
       s.x += s.vx * dt; s.y += s.vy * dt;
-      if (s.y > floorY) { s.y = floorY; s.vy *= -0.35; s.vx *= 0.6; }
+      if (s.y > floorY) { s.y = floorY; s.vy *= -0.32; s.vx *= 0.55; }
       const k = 1 - s.age / s.life;
-      ctx.strokeStyle = k > 0.6 ? `rgba(255,250,210,${k})` : `rgba(255,${Math.round(120 + 120 * k)},40,${k})`;
-      ctx.lineWidth = 1 + k * 1.4;
-      ctx.beginPath(); ctx.moveTo(px0 - s.vx * 0.012, py0 - s.vy * 0.012); ctx.lineTo(s.x, s.y); ctx.stroke();
+      const tail = 0.028;
+      const x0 = s.x - s.vx * tail, y0 = s.y - s.vy * tail;
+      const col = k > 0.55 ? "255,245,200" : `255,${Math.round(110 + 140 * k)},${Math.round(30 + 60 * k)}`;
+      ctx.strokeStyle = `rgba(${k > 0.55 ? "255,170,60" : col},${0.22 * k})`; ctx.lineWidth = 4.5 * s.w;
+      ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(s.x, s.y); ctx.stroke();
+      ctx.strokeStyle = `rgba(${col},${Math.min(1, 0.4 + k)})`; ctx.lineWidth = 1.1 * s.w + k * 0.6;
+      ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(s.x, s.y); ctx.stroke();
     }
     ctx.globalCompositeOperation = "source-over";
 
-    if (drawn >= pts.length && !finished) {
-      finished = true;
-      // 마지막 점들도 굳히고, 진짜 글자로 넘긴다
-      setTimeout(() => { cv.classList.add("fade"); onDone(); setTimeout(() => cv.remove(), 1200); }, 450);
-    }
-    if (!cv.isConnected) return;
+    if (finishedAt && !called && now - finishedAt > 350) { called = true; onDone(); }
     requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);

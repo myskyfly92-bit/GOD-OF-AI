@@ -3239,3 +3239,5 @@ body:has(.hse-intro) .ai-assist { display: none; }
 .hse-weld { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 3; transition: opacity 1s ease; }
 .hse-weld.fade { opacity: 0; }
 .hse-intro-inner { position: relative; z-index: 2; }
+/* 용접으로 새기는 동안·뒤에는 그림판 글자만 보이게 (진짜 글자 요소는 자리만 차지) */
+.hse-intro.welding .hse-intro-word { opacity: 0 !important; animation: none !important; }
