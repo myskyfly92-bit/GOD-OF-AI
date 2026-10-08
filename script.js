@@ -6676,14 +6676,15 @@ function hseWeldWord(host, wordEl, onDone) {
     const near = byTime[0] || H[0];
     const er = H.filter((x) => x.emergency).sort((a, b) => (a.min ?? 999) - (b.min ?? 999) || a.km - b.km)[0];
     const pub = H.filter((x) => x.own === "public").sort((a, b) => (a.min ?? 999) - (b.min ?? 999) || a.km - b.km)[0];
-    const card = (lab, x, cls) => x ? `<div class="med-card ${cls || ""}" data-id="${escapeHtml(x.id)}"><span>${lab}</span><b>${escapeHtml(main(x))}</b><em>${dist(x)}</em></div>` : "";
+    const card = (lab, x, cls) => x ? `<div class="med-card ${cls || ""}" data-id="${escapeHtml(x.id)}" data-f="${{ near: "hospital", er: "emergency", pub: "public" }[cls]}"><span>${lab}</span><b>${escapeHtml(main(x))}</b><em>${dist(x)}</em></div>` : "";
     document.getElementById("medCards").innerHTML =
       card("가장 가까운 병원", near, "near") + card("가장 가까운 응급실", er, "er") + card("가장 가까운 공립 병원", pub, "pub") +
       `<div class="med-card cnt"><span>현장 주변 (반경 ${data.radiusKm}km)</span><b>병원 ${H.length}곳</b><em>20km 안 ${H.filter((x) => x.km <= 20).length}곳 · 의원 등 ${data.items.length - H.length}곳</em></div>`;
-    document.querySelectorAll("#medCards .med-card[data-id]").forEach((c) => c.addEventListener("click", () => focus(c.dataset.id)));
+    document.querySelectorAll("#medCards .med-card[data-id]").forEach((c) => c.addEventListener("click", () => focus(c.dataset.id, c.dataset.f)));
   }
 
-  function list() {
+  const SHOW_MAX = 80; // 목록·지도에 함께 보여 줄 최대 개수 (가까운 순)
+  function current() {
     let L2 = data.items.slice();
     if (filter === "hospital") L2 = L2.filter((x) => x.kind === "hospital");
     else if (filter === "emergency") L2 = L2.filter((x) => x.emergency);
@@ -6691,7 +6692,14 @@ function hseWeldWord(host, wordEl, onDone) {
     else if (filter === "clinic") L2 = L2.filter((x) => x.kind !== "hospital");
     if (spec) L2 = data.items.filter((x) => (x.spec || []).includes(spec));   // 진료과를 고르면 병원·의원 모두에서
     L2.sort((a, b) => (a.min ?? 9999) - (b.min ?? 9999) || a.km - b.km);
-    document.getElementById("medList").innerHTML = L2.slice(0, 80).map((x) => `
+    return L2;
+  }
+
+  // 목록과 지도 표시를 같은 기준(버튼·진료과)으로 함께 바꾼다
+  function list() {
+    const L2 = current();
+    const shown = L2.slice(0, SHOW_MAX);
+    document.getElementById("medList").innerHTML = shown.map((x) => `
       <div class="med-item" data-id="${escapeHtml(x.id)}">
         <div class="mi-top"><span class="mi-k ${x.kind === "hospital" ? "h" : "c"}">${KIND[x.kind] || "의료"}</span>
           ${x.emergency ? '<span class="mi-e">응급실</span>' : ""}${x.own ? `<span class="mi-o">${OWN[x.own]}</span>` : ""}
@@ -6699,18 +6707,27 @@ function hseWeldWord(host, wordEl, onDone) {
         <div class="mi-n">${nm(x)}</div>
         ${(x.spec || []).length ? `<div class="mi-s">${x.spec.map((s) => `<span>${escapeHtml(s)}</span>`).join("")}</div>` : ""}
         <div class="mi-x">${x.phone ? `☎ <a href="tel:${escapeHtml(x.phone.replace(/\s/g, ""))}">${escapeHtml(x.phone)}</a> · ` : ""}${x.beds ? `병상 ${escapeHtml(x.beds)} · ` : ""}<a href="${dirUrl(x)}" target="_blank" rel="noopener">길찾기 ↗</a></div>
-      </div>`).join("") || `<p class="med-empty">해당하는 시설이 없어요</p>`;
+      </div>`).join("") + (L2.length > SHOW_MAX ? `<p class="med-empty">가까운 ${SHOW_MAX}곳만 보여 줘요 (전체 ${L2.length}곳)</p>` : "") || `<p class="med-empty">해당하는 시설이 없어요</p>`;
+    if (map) draw(shown);
     document.querySelectorAll("#medList .med-item").forEach((el) => el.addEventListener("click", (e) => { if (!e.target.closest("a")) focus(el.dataset.id); }));
   }
 
-  function focus(id) {
+  function setFilter(f) {
+    filter = f; spec = "";
+    const sel = document.getElementById("medSpec"); if (sel) sel.value = "";
+    document.querySelectorAll("#medFilter button").forEach((x) => x.classList.toggle("active", x.dataset.f === f));
+    list();
+  }
+  function focus(id, f) {
+    if (!marks[id] && f) setFilter(f);
+    if (!marks[id]) setFilter("all");
     const m = marks[id]; if (!m) return;
     map.setView(m.getLatLng(), Math.max(map.getZoom(), 13), { animate: true });
     m.openPopup();
     document.querySelectorAll("#medList .med-item").forEach((el) => el.classList.toggle("on", el.dataset.id === id));
   }
 
-  function draw() {
+  function draw(items) {
     if (!map) {
       map = L.map("medMap", { zoomSnap: 0.5 }).setView([BISMAYAH_LAT, BISMAYAH_LON], 10);
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "&copy; OpenStreetMap contributors", maxZoom: 18 }).addTo(map);
@@ -6720,7 +6737,7 @@ function hseWeldWord(host, wordEl, onDone) {
       layer = L.layerGroup().addTo(map);
     }
     layer.clearLayers(); marks = {};
-    data.items.forEach((x) => {
+    (items || []).forEach((x) => {
       const h = x.kind === "hospital";
       const cls = h ? (x.emergency ? "mk e" : "mk h") : "mk c";
       const m = L.marker([x.lat, x.lon], { icon: L.divIcon({ className: "med-mk-wrap", html: `<i class="${cls}">${h ? "+" : ""}</i>`, iconSize: [h ? 20 : 12, h ? 20 : 12], iconAnchor: [h ? 10 : 6, h ? 10 : 6] }), zIndexOffset: h ? 500 : 0 })
@@ -6750,15 +6767,13 @@ function hseWeldWord(host, wordEl, onDone) {
       sel.innerHTML = `<option value="">진료과 전체</option>` + Object.keys(cnt).sort((a, b) => cnt[b] - cnt[a]).map((s) => `<option value="${escapeHtml(s)}">${escapeHtml(s)} (${cnt[s]})</option>`).join("");
       sel.onchange = () => { spec = sel.value; list(); };
     }
-    cards(); list(); draw();
+    draw([]); cards(); list();
     const d = new Date(data.updatedAt);
     document.getElementById("medMeta").textContent = `출처: OpenStreetMap(© OpenStreetMap contributors) · 도로 거리·시간: OSRM (교통 상황 미반영) · 매주 갱신 · 마지막 수집 ${d.toLocaleDateString("ko-KR")}`;
   }
   document.getElementById("medFilter")?.addEventListener("click", (e) => {
     const b = e.target.closest("button"); if (!b || !data) return;
-    filter = b.dataset.f;
-    document.querySelectorAll("#medFilter button").forEach((x) => x.classList.toggle("active", x === b));
-    list();
+    setFilter(b.dataset.f);
   });
   document.querySelectorAll('.tab-btn[data-view="view-health-medical"]').forEach((b) => b.addEventListener("click", load));
 })();
