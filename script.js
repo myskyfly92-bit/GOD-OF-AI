@@ -7144,7 +7144,7 @@ function hseWeldWord(host, wordEl, onDone) {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const SRC = { hook: "assets/mascot-hook.webp", rappel: "assets/mascot-rappel.webp", stand: "assets/mascot-stand.webp", run: "assets/mascot-run.webp", drop: "assets/mascot-drop.webp", hopup: "assets/mascot-hopup.webp" };
   // 뛰어내리기 영상 그림 크기(표시 px)와 캐릭터 위치: 가로 가운데, 머리 위, 발바닥
-  const DROP = { h: 107.4, cx0: 43.5, top0: 6.4, foot: 106, cxEnd: 28.5 }, HOPUP = { h: 107.4, cx0: 39.9, cxEnd: 44.1, top1: 6.4, foot: 106.2 };
+  const DROP = { h: 140.5, cx0: 46.7, top0: 36.8, foot: 136.4, cxEnd: 33.0 }, HOPUP = { h: 140.5, cx0: 42.9, cxEnd: 47.4, top1: 36.8, foot: 137.7 };
   const RUN_W = 114 / 220 * 100;
   const H = 100;                                   // 배너 마스코트와 같은 키
   const HOOK_PT = { x: 30 / 135 * (135 * H / 220), y: 30 / 220 * H };   // 고리 거는 손 위치 (영상 기준)
@@ -7230,7 +7230,7 @@ function hseWeldWord(host, wordEl, onDone) {
       img.src = fresh(SRC.drop); img.style.height = DROP.h + "px"; at(cl, ct);
       await anim(4000, (t) => {
         const sec = t * 4;
-        const fall = sec < 0.95 ? 0 : sec > 1.95 ? 1 : Math.pow((sec - 0.95) / 1.0, 1.6);   // 공중에 떠 있는 동안 아래로
+        const fall = sec < 1.0 ? 0 : sec > 1.85 ? 1 : Math.pow((sec - 1.0) / 0.85, 1.6);   // 공중에 떠 있는 동안 아래로
         const run = Math.min(runMax, Math.max(0, sec - 2.65) * 240);                                          // 착지 후 달리기 시작
         at(cl - run, ct + D * fall);
       });
@@ -7266,7 +7266,7 @@ function hseWeldWord(host, wordEl, onDone) {
       img.src = fresh(SRC.hopup); img.style.height = HOPUP.h + "px"; at(hl, ht);
       await anim(1680, (t) => {
         const sec = t * 1.68;
-        const up = sec < 0.36 ? 0 : sec > 1.14 ? 1 : 1 - Math.pow(1 - (sec - 0.36) / 0.78, 1.6);
+        const up = sec < 0.5 ? 0 : sec > 1.05 ? 1 : 1 - Math.pow(1 - (sec - 0.5) / 0.55, 1.6);
         at(hl + (HOPUP.cxEnd - HOPUP.cx0) * 0, ht - U * up);
       });
     } finally {
