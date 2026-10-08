@@ -268,4 +268,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:  # 로그를 못 볼 때도 원인이 보이게 경고로 남긴다
+        print(f"::error::진행률 수집 실패: {type(exc).__name__}: {str(exc)[:300]}")
+        sys.exit(1)

@@ -32,6 +32,7 @@ jobs:
         run: python scripts/fetch_dart_overseas.py
 
       - name: DART 정기보고서 진행률(공정률) 수집
+        if: always()
         continue-on-error: true   # 실패해도 해외 현장 업데이트는 그대로 올린다
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
@@ -39,6 +40,7 @@ jobs:
         run: python scripts/fetch_dart_progress.py
 
       - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
