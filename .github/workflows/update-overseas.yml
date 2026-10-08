@@ -31,11 +31,19 @@ jobs:
           PYTHONUNBUFFERED: "1"   # 진행 상황이 로그에 바로바로 보이게
         run: python scripts/fetch_dart_overseas.py
 
+      - name: DART 정기보고서 진행률(공정률) 수집
+        continue-on-error: true   # 실패해도 해외 현장 업데이트는 그대로 올린다
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          PYTHONUNBUFFERED: "1"
+        run: python scripts/fetch_dart_progress.py
+
       - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add overseas-projects.json dart-contracts-cache.json
+          [ -f dart-progress.json ] && git add dart-progress.json
           if git diff --cached --quiet; then
             echo "변경사항 없음, 커밋 생략"
             exit 0

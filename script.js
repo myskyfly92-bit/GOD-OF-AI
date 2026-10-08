@@ -3068,11 +3068,18 @@ async function initGlobalMap() {
         <div class="gpopup-head">${globalBadgeHtml(c, 40)}<div><b>${escapeHtml(c.name)}</b><br><span>${escapeHtml(p.name)}</span></div></div>
         국가: ${escapeHtml(p.country || "–")}${p.city ? " · " + escapeHtml(p.city) : ""}<br>
         공종: ${escapeHtml(p.type || "–")} · 상태: <b style="color:${GLOBAL_STATUS_COLOR[p.status] || "inherit"}">${escapeHtml(p.status || "–")}</b><br>
-        ${p.amount ? `금액: ${escapeHtml(p.amount)}<br>` : ""}${p.period ? `기간: ${escapeHtml(p.period)}<br>` : ""}${p.note ? `<span style="opacity:.65">${escapeHtml(p.note)}</span><br>` : ""}
+        ${p.amount ? `금액: ${escapeHtml(p.amount)}<br>` : ""}${p.period ? `기간: ${escapeHtml(p.period)}<br>` : ""}<!--prog-->${p.note ? `<span style="opacity:.65">${escapeHtml(p.note)}</span><br>` : ""}
         ${p.link ? `<a href="${escapeHtml(p.link)}" target="_blank" rel="noopener">${p.auto ? "DART 공시 원문 보기 ↗" : "관련 자료 보기 ↗"}</a>` : ""}
       </div>`);
     return { marker, project: p, company: c };
   });
+
+  // 공정률 (DART 정기보고서 진행률, 있는 현장만)
+  try {
+    const r = await fetch("dart-progress.json", { cache: "no-store" });
+    if (r.ok) globalProgress = (await r.json()).matches || {};
+  } catch (e) { /* 아직 없음 */ }
+  globalMarkers.forEach((m) => { const pr = globalProgressBar(m.project, true); if (pr) m.marker.setPopupContent(m.marker.getPopup().getContent().replace("<!--prog-->", pr)); });
 
   renderGlobalFilter(projects);
   renderGlobalList();
@@ -3081,6 +3088,26 @@ async function initGlobalMap() {
   document.getElementById("globalMeta").textContent =
     `${companyCount}개사 · ${countries}개국 · 현장 ${projects.length}곳${data.updatedAt ? " · 자료 기준일 " + data.updatedAt : ""}${data.autoSource ? " · 자동 수집: " + data.autoSource : ""}`;
   setTimeout(() => globalMapInstance.invalidateSize(), 100);
+}
+
+// 기간 경과율(계약기간 중 오늘까지 지난 비율)과 공정률(DART 공시 진행률)을 한 막대에
+let globalProgress = {};
+function globalElapsed(p) {
+  const m = String(p.period || "").match(/(\d{4}-\d{2}-\d{2})\s*~\s*(\d{4}-\d{2}-\d{2})/);
+  if (!m) return null;
+  const a = Date.parse(m[1]), b = Date.parse(m[2]), now = Date.now();
+  if (!(b > a)) return null;
+  return Math.max(0, Math.min(100, Math.round(((now - a) / (b - a)) * 100)));
+}
+function globalProgressBar(p, popup) {
+  const el = globalElapsed(p);
+  const pr = globalProgress[p.name];
+  if (el == null && !pr) return "";
+  const asOf = pr && pr.asOf ? pr.asOf.replace(/^20(\d{2})-0?(\d+)$/, "$1.$2") : "";
+  const bar = `<span class="gprog" title="${el != null ? `계약기간 ${el}% 경과` : ""}${pr ? ` · 공정률 ${pr.rate}% (DART ${asOf} 기준)` : ""}">
+      ${el != null ? `<i class="gprog-el" style="width:${el}%"></i>` : ""}${pr ? `<i class="gprog-pr" style="width:${Math.min(100, pr.rate)}%"></i>` : ""}</span>`;
+  const txt = `${el != null ? `기간 ${el}%` : ""}${el != null && pr ? " · " : ""}${pr ? `<b>공정 ${Math.round(pr.rate * 10) / 10}%</b><small> (${asOf})</small>` : ""}`;
+  return popup ? `<div class="gprog-pop">${bar}<span>${txt}</span></div>` : `${bar}<span class="gprog-txt">${txt}</span>`;
 }
 
 function renderGlobalFilter(projects) {
@@ -3121,7 +3148,7 @@ function renderGlobalList() {
   const tbody = document.getElementById("globalList");
   const rows = globalMarkers.filter((m) => globalActiveCompany === "all" || m.project.company === globalActiveCompany);
   if (!rows.length) {
-    tbody.innerHTML = `<tr><td colspan="6" class="global-empty">등록된 현장이 없습니다</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="7" class="global-empty">등록된 현장이 없습니다</td></tr>`;
     return;
   }
   tbody.innerHTML = rows.map((m, i) => {
@@ -3133,6 +3160,7 @@ function renderGlobalList() {
       <td>${escapeHtml(p.type || "–")}</td>
       <td><span class="gstatus" style="color:${GLOBAL_STATUS_COLOR[p.status] || "inherit"}">${escapeHtml(p.status || "–")}</span></td>
       <td>${escapeHtml(p.amount || "–")}</td>
+      <td class="gprog-cell">${globalProgressBar(p, false) || "–"}</td>
     </tr>`;
   }).join("");
   tbody.querySelectorAll("tr[data-idx]").forEach((tr) => {
