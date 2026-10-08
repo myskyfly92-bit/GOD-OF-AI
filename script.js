@@ -7135,3 +7135,115 @@ function hseWeldWord(host, wordEl, onDone) {
   if (document.querySelector("#view-bismayah.active")) load();
 })();
 
+/* ==========================================================
+   헌수호 '안전대 걸고 줄 타기' 깜짝 장면 (PC 종합현황에서 가끔, 또는 ?rappel=1)
+   배너에서 '안전' 탭 아래로 뛰어내려 → 고리를 탭에 딸깍 → 줄 타고 내려가 한마디 → 다시 올라가 배너로
+   - 캐릭터 동작은 구글 플로우 영상(초록 배경 제거)으로, 줄·이동은 코드로 그린다
+   ========================================================== */
+(function mascotRappel() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const SRC = { hook: "assets/mascot-hook.webp", rappel: "assets/mascot-rappel.webp", stand: "assets/mascot-stand.webp" };
+  const H = 100;                                   // 배너 마스코트와 같은 키
+  const HOOK_PT = { x: 30 / 135 * (135 * H / 220), y: 30 / 220 * H };   // 고리 거는 손 위치 (영상 기준)
+  const ROPE_X = 41.2 / 140 * (140 * H / 220);     // 줄 타기 그림에서 줄이 나오는 x
+  const LINES = ["고소작업은 안전대 체결부터!", "고리는 머리 위 튼튼한 곳에!", "줄 타기 전, 고리 두 번 당겨 확인!", "안전대는 내 생명줄!"];
+  let running = false, lineIdx = Math.floor(Math.random() * LINES.length);
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+  const fresh = (src) => src + (src.includes("?") ? "&" : "?") + "t=" + Date.now(); // 한 번만 도는 그림을 처음부터
+  const ease = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  // 미리 받아 둔다
+  Object.values(SRC).forEach((s) => { const i = new Image(); i.src = s; });
+
+  function anim(ms, fn) {
+    return new Promise((res) => {
+      const t0 = performance.now();
+      const step = (now) => { const t = Math.min(1, (now - t0) / ms); fn(t); if (t < 1) requestAnimationFrame(step); else res(); };
+      requestAnimationFrame(step);
+    });
+  }
+
+  async function show() {
+    if (running) return;
+    const runner = document.querySelector(".mascot-runner");
+    const tab = document.querySelector('.group-btn[data-group="safety"]');
+    if (!runner || !tab || innerWidth < 1100 || document.body.classList.contains("hg-running")) return;
+    const rr = runner.getBoundingClientRect(), tr = tab.getBoundingClientRect();
+    if (!rr.width || !tr.width || tr.top < 0) return;
+    running = true;
+    const sx = scrollX, sy = scrollY;
+    const ax = tr.left + tr.width / 2 + sx, ay = tr.bottom - 2 + sy;      // 고리를 걸 곳 (탭 아래 가운데)
+
+    const root = document.createElement("div");
+    root.className = "mrap";
+    root.innerHTML = `<svg class="mrap-rope" aria-hidden="true"><line /></svg><span class="mrap-ring"></span>
+      <div class="mrap-sprite"><img alt="" draggable="false"><div class="mascot-bubble" hidden></div></div>`;
+    document.body.appendChild(root);
+    const sprite = root.querySelector(".mrap-sprite"), img = sprite.querySelector("img"), bubble = sprite.querySelector(".mascot-bubble");
+    const svg = root.querySelector("svg"), line = svg.querySelector("line"), ring = root.querySelector(".mrap-ring");
+    const at = (x, y) => { sprite.style.transform = `translate(${x}px, ${y}px)`; };
+    const rope = (x1, y1, x2, y2) => {
+      const minX = Math.min(x1, x2) - 4, minY = Math.min(y1, y2) - 4;
+      Object.assign(svg.style, { left: minX + "px", top: minY + "px", width: Math.abs(x2 - x1) + 8 + "px", height: Math.abs(y2 - y1) + 8 + "px" });
+      line.setAttribute("x1", x1 - minX); line.setAttribute("y1", y1 - minY); line.setAttribute("x2", x2 - minX); line.setAttribute("y2", y2 - minY);
+      svg.style.display = "block";
+    };
+    const say = async (text, ms) => {
+      bubble.textContent = text; bubble.hidden = false; bubble.classList.remove("bye");
+      await wait(ms); bubble.classList.add("bye"); await wait(260); bubble.hidden = true;
+    };
+    ring.style.left = ax + "px"; ring.style.top = ay + "px";
+
+    try {
+      // 1) 배너에서 탭 아래로 폴짝
+      runner.style.visibility = "hidden";
+      img.src = SRC.stand; img.style.height = H + "px";
+      const x0 = rr.left + sx, y0 = rr.top + sy;
+      const hx = ax - HOOK_PT.x, hy = ay - HOOK_PT.y + 6;
+      await anim(950, (t) => {
+        const e = ease(t);
+        at(x0 + (hx - x0) * e, y0 + (hy - y0) * e - Math.sin(Math.PI * t) * 70);
+        img.style.transform = `rotate(${Math.sin(Math.PI * t) * -10}deg)`;
+      });
+      img.style.transform = "";
+      // 2) 고리 걸기 (영상 4초, 1.6초쯤 '딸깍')
+      img.src = fresh(SRC.hook);
+      await wait(1650);
+      ring.classList.add("on");
+      await wait(2350);
+      // 3) 줄 타고 내려가기
+      img.src = SRC.rappel;
+      const rx = ax - ROPE_X, top0 = ay + 8, drop = Math.min(260, Math.max(140, innerHeight - (ay - sy) - 220));
+      at(rx, top0); rope(ax, ay, ax, top0 + 2);
+      await anim(3200, (t) => { const y = top0 + drop * ease(t); at(rx, y); rope(ax, ay, ax, y + 2); });
+      await say(LINES[lineIdx++ % LINES.length], 2600);
+      // 4) 다시 올라가기
+      await anim(2400, (t) => { const y = top0 + drop * (1 - ease(t)); at(rx, y); rope(ax, ay, ax, y + 2); });
+      svg.style.display = "none"; ring.classList.remove("on");
+      // 5) 배너로 폴짝 돌아가기
+      img.src = SRC.stand;
+      const r2 = runner.getBoundingClientRect();
+      const bx = r2.left + scrollX, by = r2.top + scrollY;
+      await anim(900, (t) => {
+        const e = ease(t);
+        at(rx + (bx - rx) * e, top0 + (by - top0) * e - Math.sin(Math.PI * t) * 60);
+        img.style.transform = `rotate(${Math.sin(Math.PI * t) * 10}deg)`;
+      });
+    } finally {
+      root.remove();
+      runner.style.visibility = "";
+      running = false;
+    }
+  }
+  window.hseRappelShow = show;
+
+  // 가끔 자동으로: 종합현황을 보고 있고, 화면 맨 위 근처이고, PC 화면일 때 6~10분에 한 번
+  const plan = () => setTimeout(() => {
+    const onHome = document.querySelector("#view-dashboard.active");
+    if (onHome && scrollY < 80 && !document.hidden && !document.querySelector(".hse-intro")) show();
+    plan();
+  }, (6 + Math.random() * 4) * 60 * 1000);
+  plan();
+  if (new URLSearchParams(location.search).get("rappel") === "1") setTimeout(show, 4000);
+  // 배너의 헌수호를 두 번 누르면 바로 보여 준다
+  document.addEventListener("dblclick", (e) => { if (e.target.closest(".mascot-runner")) show(); });
+})();

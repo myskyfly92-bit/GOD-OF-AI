@@ -3495,3 +3495,14 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .gprog-cell { min-width: 130px; }
 .gprog-pop { margin: 4px 0 6px; display: flex; align-items: center; gap: 8px; }
 .gprog-pop .gprog { width: 120px; }
+
+/* ---------- 헌수호 줄 타기 장면 ---------- */
+.mrap { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 320; pointer-events: none; }
+.mrap-sprite { position: absolute; left: 0; top: 0; will-change: transform; }
+.mrap-sprite img { display: block; height: 100px; width: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); transform-origin: 50% 100%; }
+.mrap-sprite .mascot-bubble { left: 82%; top: 4px; }
+.mrap-rope { position: absolute; display: none; overflow: visible; }
+.mrap-rope line { stroke: #e6e9ec; stroke-width: 2; stroke-linecap: round; filter: drop-shadow(0 1px 1px rgba(0,0,0,.5)); }
+.mrap-ring { position: absolute; width: 12px; height: 12px; margin: -6px 0 0 -6px; border: 2.5px solid #d9dee4; border-radius: 50%; opacity: 0; transform: scale(.3); transition: opacity .15s, transform .25s cubic-bezier(.2,1.8,.4,1); box-shadow: 0 0 0 0 rgba(53,208,192,.7); }
+.mrap-ring.on { opacity: 1; transform: scale(1); animation: mrapClick .6s ease-out; }
+@keyframes mrapClick { from { box-shadow: 0 0 0 0 rgba(53,208,192,.8); } to { box-shadow: 0 0 0 14px rgba(53,208,192,0); } }
