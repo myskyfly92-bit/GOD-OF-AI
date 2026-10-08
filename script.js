@@ -422,8 +422,9 @@ function renderIncidentCounter(site) {
   const now = new Date();
   const days = Math.max(0, Math.floor((now - start) / 86400000));
   animateCount(document.getElementById("incidentFreeDays"), days);
-  document.getElementById("lastIncidentText").textContent =
-    `최종 사고 기준일: ${site.lastIncidentDate} · 무사고 목표를 함께 지켜주세요.`;
+  // 두 줄로 나눠 표시: 기준일 / 무사고 문구 (긴 한 줄이 어색하게 꺾이지 않게)
+  document.getElementById("lastIncidentText").innerHTML =
+    `최종 사고 기준일: ${escapeHtml(site.lastIncidentDate)}<br>무사고 목표를 함께 지켜주세요.`;
   document.getElementById("monthlyInspections").textContent = site.monthlyInspections ?? "–";
   document.getElementById("trainingRate").textContent = site.trainingRate ?? "–";
   document.getElementById("incidentCount").textContent = site.incidentCount ?? "–";
