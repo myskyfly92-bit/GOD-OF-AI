@@ -3246,3 +3246,9 @@ body:has(.hse-intro) .ai-assist { display: none; }
 .topbar .sky-body { display: none !important; }
 .mascot-runner .mx-wind, .mascot-runner .mx-mask, .mascot-runner .mx-sweat { display: none !important; }
 .mascot-runner.mood-wind .mascot-body img { transform: scaleX(var(--flip, 1)) !important; }
+/* 점화 순간 살짝 흔들림 */
+.hse-intro-inner.weld-shake { animation: weldShake 0.42s cubic-bezier(.36,.07,.19,.97); }
+@keyframes weldShake {
+  10% { transform: translate(-3px, 2px); } 20% { transform: translate(4px, -2px); } 35% { transform: translate(-4px, 1px); }
+  50% { transform: translate(3px, 2px); } 65% { transform: translate(-2px, -1px); } 80% { transform: translate(1px, 1px); } 100% { transform: none; }
+}
