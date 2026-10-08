@@ -6531,7 +6531,7 @@ function hseWeldWord(host, wordEl, onDone) {
    보건 > 주변 의료시설 (medical-facilities.json: OSM 병원·의원 + OSRM 도로 거리)
    ========================================================== */
 (function medicalNearby() {
-  let map = null, layer = null, data = null, filter = "hospital", marks = {};
+  let map = null, layer = null, data = null, filter = "hospital", spec = "", marks = {};
   const KIND = { hospital: "병원", clinic: "의원·보건소", doctors: "개인 의원" };
   const OWN = { public: "공립", private: "사립" };
   const dirUrl = (x) => `https://www.google.com/maps/dir/?api=1&origin=${BISMAYAH_LAT},${BISMAYAH_LON}&destination=${x.lat},${x.lon}&travelmode=driving`;
@@ -6560,6 +6560,7 @@ function hseWeldWord(host, wordEl, onDone) {
     else if (filter === "emergency") L2 = L2.filter((x) => x.emergency);
     else if (filter === "public") L2 = L2.filter((x) => x.own === "public");
     else if (filter === "clinic") L2 = L2.filter((x) => x.kind !== "hospital");
+    if (spec) L2 = data.items.filter((x) => (x.spec || []).includes(spec));   // 진료과를 고르면 병원·의원 모두에서
     L2.sort((a, b) => (a.min ?? 9999) - (b.min ?? 9999) || a.km - b.km);
     document.getElementById("medList").innerHTML = L2.slice(0, 80).map((x) => `
       <div class="med-item" data-id="${escapeHtml(x.id)}">
@@ -6567,6 +6568,7 @@ function hseWeldWord(host, wordEl, onDone) {
           ${x.emergency ? '<span class="mi-e">응급실</span>' : ""}${x.own ? `<span class="mi-o">${OWN[x.own]}</span>` : ""}
           <span class="mi-d">${dist(x)}</span></div>
         <div class="mi-n">${nm(x)}</div>
+        ${(x.spec || []).length ? `<div class="mi-s">${x.spec.map((s) => `<span>${escapeHtml(s)}</span>`).join("")}</div>` : ""}
         <div class="mi-x">${x.phone ? `☎ <a href="tel:${escapeHtml(x.phone.replace(/\s/g, ""))}">${escapeHtml(x.phone)}</a> · ` : ""}${x.beds ? `병상 ${escapeHtml(x.beds)} · ` : ""}<a href="${dirUrl(x)}" target="_blank" rel="noopener">길찾기 ↗</a></div>
       </div>`).join("") || `<p class="med-empty">해당하는 시설이 없어요</p>`;
     document.querySelectorAll("#medList .med-item").forEach((el) => el.addEventListener("click", (e) => { if (!e.target.closest("a")) focus(el.dataset.id); }));
@@ -6594,7 +6596,7 @@ function hseWeldWord(host, wordEl, onDone) {
       const cls = h ? (x.emergency ? "mk e" : "mk h") : "mk c";
       const m = L.marker([x.lat, x.lon], { icon: L.divIcon({ className: "med-mk-wrap", html: `<i class="${cls}">${h ? "+" : ""}</i>`, iconSize: [h ? 20 : 12, h ? 20 : 12], iconAnchor: [h ? 10 : 6, h ? 10 : 6] }), zIndexOffset: h ? 500 : 0 })
         .bindPopup(`<b>${escapeHtml(main(x))}</b>${ar(x) && ar(x) !== main(x) ? `<br><span style="opacity:.75" dir="rtl">${escapeHtml(ar(x))}</span>` : ""}
-          <br>${KIND[x.kind] || ""}${x.emergency ? " · 응급실" : ""}${x.own ? " · " + OWN[x.own] : ""}
+          <br>${KIND[x.kind] || ""}${x.emergency ? " · 응급실" : ""}${x.own ? " · " + OWN[x.own] : ""}${(x.spec || []).filter((s) => s !== "응급").length ? `<br>진료: ${escapeHtml(x.spec.filter((s) => s !== "응급").join(", "))}` : ""}
           <br>${dist(x)}${x.phone ? `<br>☎ ${escapeHtml(x.phone)}` : ""}
           <br><a href="${dirUrl(x)}" target="_blank" rel="noopener">구글 지도 길찾기 ↗</a>`);
       m.addTo(layer); marks[x.id] = m;
@@ -6611,6 +6613,13 @@ function hseWeldWord(host, wordEl, onDone) {
     } catch (e) {
       document.getElementById("medCards").innerHTML = `<p class="skeleton">의료시설 정보를 불러오지 못했습니다. ${escapeHtml(e.message)}</p>`;
       return;
+    }
+    // 진료과 고르기 (자료에 나온 과목만)
+    const cnt = {}; data.items.forEach((x) => (x.spec || []).forEach((s) => { cnt[s] = (cnt[s] || 0) + 1; }));
+    const sel = document.getElementById("medSpec");
+    if (sel) {
+      sel.innerHTML = `<option value="">진료과 전체</option>` + Object.keys(cnt).sort((a, b) => cnt[b] - cnt[a]).map((s) => `<option value="${escapeHtml(s)}">${escapeHtml(s)} (${cnt[s]})</option>`).join("");
+      sel.onchange = () => { spec = sel.value; list(); };
     }
     cards(); list(); draw();
     const d = new Date(data.updatedAt);

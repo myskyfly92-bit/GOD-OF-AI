@@ -33,7 +33,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261008m">
+<link rel="stylesheet" href="style.css?v=20261008n">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -806,12 +806,14 @@ html.intro-pending::after {
           <button type="button" data-f="public">공립</button>
           <button type="button" data-f="clinic">의원·보건소</button>
           <button type="button" data-f="all">전체</button>
+          <select id="medSpec" class="med-spec" aria-label="진료과"><option value="">진료과 전체</option></select>
         </div>
         <div class="med-list" id="medList"></div>
       </div>
     </div>
     <p class="med-warn">🚑 <b>응급 상황에서는 먼저 현장 클리닉(0780-926-2446)과 이라크 긴급전화 911에 연락</b>하고, 후송 병원은 클리닉 지시에 따르세요.
       아래 정보는 오픈스트리트맵에 등록된 자료라 빠지거나 바뀐 곳이 있을 수 있습니다. 실제 이용 전 확인이 필요합니다.</p>
+    <p class="source-note med-spec-note">진료과는 병원 이름(예: 'للعيون' 안과, 'للاطفال' 소아과)과 OSM 등록 정보로 <b>추정</b>한 것입니다. 종합병원이라도 실제 진료 가능 과목은 병원마다 다르니 전화로 확인하세요.</p>
     <p class="source-note" id="medMeta">출처: OpenStreetMap(© OpenStreetMap contributors) · 도로 거리·시간: OSRM (교통 상황 미반영) · 매주 갱신</p>
   </section>
 </main>
@@ -1027,7 +1029,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261008m"></script>
+<script src="script.js?v=20261008n"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

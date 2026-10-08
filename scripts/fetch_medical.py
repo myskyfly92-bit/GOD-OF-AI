@@ -78,6 +78,38 @@ def ownership(t):
     return ""
 
 
+# ---- 진료과목: 이름에 들어간 말 + OSM healthcare:speciality 태그로 추정 ----
+import re
+SPEC = [  # (한국어 표시, 이름에서 찾을 말, OSM healthcare:speciality 값)
+ ("종합", r"العام\b|عام$|التعليمي|general hospital|teaching hospital|medical city|مدينة الطب", ("general",)),
+ ("응급", r"طوارئ|الإسعاف|اسعاف|emergency", ("emergency",)),
+ ("외과", r"جراحي|الجراحي|جراحة|surgical|surgery", ("surgery", "general_surgery")),
+ ("정형외과", r"عظام|كسور|مفاصل|orthop", ("orthopaedics", "orthopedics", "trauma")),
+ ("화상", r"حروق|burn", ("burns",)),
+ ("내과", r"باطنية|باطني|internal medicine", ("internal",)),
+ ("심장", r"قلب|قلبية|cardi", ("cardiology",)),
+ ("소아과", r"اطفال|أطفال|الطفل|children|pediatr|paediatr", ("paediatrics", "pediatrics")),
+ ("산부인과", r"ولادة|للولادة|نسائي|نسائية|maternity|gyn|obstet|women", ("gynaecology", "obstetrics")),
+ ("안과", r"عيون|للعيون|eye|ophthalm", ("ophthalmology",)),
+ ("이비인후과", r"اذن|أذن|إذن|حنجرة|\bent\b", ("otolaryngology",)),
+ ("치과", r"اسنان|أسنان|الاسنان|dental|dentist|orthodont|prosthodont", ("dentistry", "dental_oral_maxillo_facial_surgery", "orthodontics")),
+ ("피부과", r"جلدية|derma", ("dermatology",)),
+ ("암", r"سرطان|السرطانية|اورام|أورام|oncolog|cancer", ("oncology",)),
+ ("신경", r"عصبية|اعصاب|neuro|الغدة النخامية|pituitary", ("neurology", "neurosurgery")),
+ ("정신과", r"نفسي|نفسية|psychiat", ("psychiatry",)),
+ ("재활·물리치료", r"تأهيل|تاهيل|التاهيلي|علاج طبيعي|العلاج الطبيعي|فيزياوي|rehab|physio|اطراف صناعية|prosthetic", ("rehabilitation", "physiotherapy")),
+ ("비만", r"تكميم|bariatric", ()),
+]
+def specs(names, osm_spec=""):
+    txt = " ".join(n for n in names if n)
+    osm = [v.strip().lower() for v in (osm_spec or "").replace(",", ";").split(";") if v.strip()]
+    out = []
+    for lab, rx, keys in SPEC:
+        if re.search(rx, txt, re.I) or any(k in osm for k in keys):
+            out.append(lab)
+    return out
+
+
 NAMES_FILE = "scripts/medical_names_en.json"
 AR = __import__("re").compile(r"[\u0600-\u06FF]")
 
@@ -150,6 +182,7 @@ def main():
             "emergency": t.get("emergency") == "yes",
             "beds": t.get("beds", ""), "phone": t.get("phone") or t.get("contact:phone", ""),
             "website": t.get("website") or t.get("contact:website", ""),
+            "specRaw": t.get("healthcare:speciality", ""),
             "addr": ", ".join(x for x in (t.get("addr:street", ""), t.get("addr:city", "") or t.get("addr:district", "")) if x),
             "lat": round(lat, 6), "lon": round(lon, 6),
             "km": round(hav(SITE, (lat, lon)), 1),
@@ -189,6 +222,10 @@ def main():
         if x["kind"] == "hospital" and CLIN.search(n) and not HOSP.search(n):
             x["kind"] = "clinic"
     fill_english(items)
+    for x in items:
+        x["spec"] = specs((x["name"], x.get("nameEn", ""), x.get("nameAr", "")), x.pop("specRaw", ""))
+        if x.get("emergency") and "응급" not in x["spec"]:
+            x["spec"].insert(0, "응급")
     # 의원·보건소는 가까운 곳(25km)만 — 너무 많아서 지도가 복잡해짐
     items = [x for x in items if x["kind"] == "hospital" or x["km"] <= 25]
     items.sort(key=lambda x: x["km"])
