@@ -1949,7 +1949,12 @@ html body {
 .wz-pick-actions { display: flex; gap: 6px; }
 .wz-pick-actions button { flex: 1; }
 .wz-pick-box .wz-pick-cancel { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
-.wz-pick-box { width: 280px; max-height: calc(100% - 20px); overflow-y: auto; }
+.wz-pick-box { width: 320px; max-height: calc(100% - 20px); overflow-y: auto; }
+/* 작업 추가 · 날짜 + 작업시간 한 줄 */
+.wz-when { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) auto minmax(0, 1fr); gap: 4px; align-items: center; color: var(--text-muted); }
+.wz-when input, .wz-when select { min-width: 0; width: 100%; padding: 5px 4px; }
+.wz-time { font-size: 11px; color: var(--text-muted); font-weight: 400; white-space: nowrap; }
+.tw-job-time { color: var(--cyan); font-size: 12px; white-space: nowrap; }
 /* 작업 추가 · 사용장비 */
 .wz-equip { display: flex; flex-direction: column; gap: 5px; padding: 7px 8px; border: 1px dashed var(--border); border-radius: 6px; }
 .wz-equip-head { font-size: 11.5px; color: var(--text-muted); font-weight: 700; }

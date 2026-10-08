@@ -1800,7 +1800,7 @@ async function wzLoadSheet(data) {
     const c = {
       date: col("날짜", "일자"), day: col("요일"), zone: col("구역"), team: col("팀"), part: col("파트"),
       work: col("작업내용", "작업"), loc: col("세부위치", "위치"), risk: col("위험작업", "위험"),
-      person: col("담당"), note: col("비고"), xy: col("좌표"), crew: col("작업인원", "인원"), equip: col("사용장비"),
+      person: col("담당"), note: col("비고"), xy: col("좌표"), crew: col("작업인원", "인원"), equip: col("사용장비"), wtime: col("작업시간"),
     };
     const get = (r, i) => (i >= 0 && r[i] ? r[i].trim() : "");
     wzItems = rows.slice(1).map((r, idx) => {
@@ -1816,7 +1816,7 @@ async function wzLoadSheet(data) {
       const xy = xyM ? { x: parseFloat(xyM[1]), y: parseFloat(xyM[2]) } : null;
       return { date, day, zone: get(r, c.zone), team, part, work: get(r, c.work), loc: get(r, c.loc), risks,
                person: get(r, c.person), note: get(r, c.note), xy, row: idx + 2,
-               crew: parseInt(get(r, c.crew).replace(/[^\d]/g, ""), 10) || 0, equip: get(r, c.equip) };
+               crew: parseInt(get(r, c.crew).replace(/[^\d]/g, ""), 10) || 0, equip: get(r, c.equip), wtime: get(r, c.wtime) };
     }).filter((it) => it.work && (it.date || WZ_DAY_ORDER.includes(it.day)));
     wzSheetError = "";
   } catch (err) {
@@ -1885,7 +1885,7 @@ function renderTodayList(items) {
   const list = items.slice().sort((a, b) => (b.risks.length > 0) - (a.risks.length > 0) || (a.team || "").localeCompare(b.team || "") || (a.part || "").localeCompare(b.part || ""));
   box.innerHTML = list.length ? list.map((it) => `
     <div class="tw-job ${it.risks.length ? "risky" : ""}" style="--c:${WZ_PART_COLORS[it.part] || "#8996a6"}">
-      <div class="tw-job-top"><span class="tw-job-part">${wzEscapeHtml(it.part || it.team || "–")}</span><b>${wzEscapeHtml(it.work)}</b>${it.crew ? `<span class="tw-job-crew">👥 ${it.crew}명</span>` : ""}</div>
+      <div class="tw-job-top"><span class="tw-job-part">${wzEscapeHtml(it.part || it.team || "–")}</span><b>${wzEscapeHtml(it.work)}</b>${it.wtime ? `<span class="tw-job-time">🕘 ${wzEscapeHtml(it.wtime)}</span>` : ""}${it.crew ? `<span class="tw-job-crew">👥 ${it.crew}명</span>` : ""}</div>
       <div class="tw-job-meta">${[it.zone && "📍 " + wzEscapeHtml(it.zone) + (it.loc ? " · " + wzEscapeHtml(it.loc) : ""), it.person && "👷 " + wzEscapeHtml(it.person)].filter(Boolean).join(" · ")}</div>
       ${it.equip ? `<div class="tw-job-meta">🚜 ${wzEscapeHtml(it.equip)}</div>` : ""}
       ${it.risks.length ? `<div class="tw-job-risks">${it.risks.map((r) => `<span>⚠ ${wzEscapeHtml(r)}</span>`).join("")}</div>` : ""}
@@ -2060,7 +2060,7 @@ function wzShowSchedule(zone) {
       <div class="wz-item" style="--c:${WZ_PART_COLORS[it.part] || "#8996a6"}">
         <span class="wz-part-badge">${wzEscapeHtml(it.part || it.team || "–")}</span>
         <div class="wz-item-body">
-          <div class="wz-item-work">${wzEscapeHtml(it.work)}${it.date ? "" : ' <span class="wz-repeat">매주</span>'}</div>
+          <div class="wz-item-work">${wzEscapeHtml(it.work)}${it.date ? "" : ' <span class="wz-repeat">매주</span>'}${it.wtime ? ` <span class="wz-time">🕘 ${wzEscapeHtml(it.wtime)}</span>` : ""}</div>
           ${(it.loc || it.person || it.note || it.crew) ? `<div class="wz-item-meta">${[it.loc && "📍 " + wzEscapeHtml(it.loc), it.crew && "👥 " + it.crew + "명", it.person && "👷 " + wzEscapeHtml(it.person), it.note && wzEscapeHtml(it.note)].filter(Boolean).join(" · ")}</div>` : ""}
           ${it.equip ? `<div class="wz-item-equip">🚜 ${wzEscapeHtml(it.equip)}</div>` : ""}
           ${it.risks.length ? `<div class="wz-risks">${it.risks.map((r) => `<span class="wz-risk">⚠ ${wzEscapeHtml(r)}</span>`).join("")}</div>` : ""}
@@ -2129,7 +2129,7 @@ function wzRenderPins(zone, items, dayLabel) {
     const color = WZ_PART_COLORS[first.part] || "#8996a6";
     const risky = g.items.some((it) => it.risks.length);
     const list = g.items.map((it) => `
-      <div class="wz-pin-row"><b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)}${it.crew ? ` <span class="wz-pin-crew">👥 ${it.crew}명</span>` : ""}${it.equip ? ` <span class="wz-pin-crew">🚜 ${wzEscapeHtml(wzEquipParse(it.equip).map((e) => e.name.replace(/\(.*\)$/, "") + (e.n > 1 ? "×" + e.n : "")).join(", "))}</span>` : ""}
+      <div class="wz-pin-row"><b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)}${it.wtime ? ` <span class="wz-pin-crew">🕘 ${wzEscapeHtml(it.wtime)}</span>` : ""}${it.crew ? ` <span class="wz-pin-crew">👥 ${it.crew}명</span>` : ""}${it.equip ? ` <span class="wz-pin-crew">🚜 ${wzEscapeHtml(wzEquipParse(it.equip).map((e) => e.name.replace(/\(.*\)$/, "") + (e.n > 1 ? "×" + e.n : "")).join(", "))}</span>` : ""}
         ${it.risks.length ? `<span class="wz-pin-risk">⚠ ${it.risks.map(wzEscapeHtml).join(", ")}</span>` : ""}</div>`).join("");
     // 사진 위쪽 핀은 설명 카드를 아래로 펼쳐서 잘리지 않게
     return `<div class="wz-pin ${risky ? "wz-pin-risky" : ""} ${g.place.y < 40 ? "wz-pin-below" : ""}" style="left:${g.place.x}%;top:${g.place.y}%;--c:${color}">
@@ -2222,6 +2222,18 @@ async function wzSaveAndRefresh(action, payload) {
   return true;
 }
 
+// 작업시간 고르기 (30분 단위, 05:00 ~ 23:30 먼저, 그다음 새벽)
+function wzTimeOpts(label) {
+  const t = [];
+  for (let k = 0; k < 48; k++) { const h = (k + 10) % 48; t.push(`${String(Math.floor(h / 2)).padStart(2, "0")}:${h % 2 ? "30" : "00"}`); }
+  return `<option value="">${label}</option>` + t.map((v) => `<option>${v}</option>`).join("");
+}
+function wzSetTime(id, v) {
+  const el = document.getElementById(id); if (!el) return;
+  const [h, m] = v.split(":"); const val = `${h.padStart(2, "0")}:${m}`;
+  if (![...el.options].some((o) => o.value === val)) el.insertAdjacentHTML("beforeend", `<option>${val}</option>`);
+  el.value = val;
+}
 function wzShowAddForm(x, y, editItem) {
   const box = document.getElementById("wzPickBox");
   const zone = wzZones[wzActiveIdx];
@@ -2234,7 +2246,7 @@ function wzShowAddForm(x, y, editItem) {
   box.hidden = false;
   box.innerHTML = `
     <div>${ed ? `<b>작업 수정</b> <small>${ed.date ? "" : "(매주 반복 작업 · 날짜를 넣으면 그날 작업으로 바뀝니다)"}</small>` : `<b>${wzEscapeHtml(zone.name)}</b>에 작업 추가 <small>(X ${x}, Y ${y})</small>`}</div>
-    <input type="date" id="wzfDate" value="${defDate}">
+    <div class="wz-when"><input type="date" id="wzfDate" value="${defDate}"><select id="wzfT1" aria-label="시작 시간">${wzTimeOpts("시작")}</select><span>~</span><select id="wzfT2" aria-label="종료 시간">${wzTimeOpts("종료")}</select></div>
     <select id="wzfPart">${partOpts}</select>
     <input type="text" id="wzfWork" placeholder="작업내용 (필수)">
     <div class="wz-equip">
@@ -2258,6 +2270,8 @@ function wzShowAddForm(x, y, editItem) {
     document.getElementById("wzfLoc").value = ed.loc || "";
     document.getElementById("wzfCrew").value = ed.crew || "";
     document.getElementById("wzfPerson").value = ed.person || "";
+    const tm = String(ed.wtime || "").match(/(\d{1,2}:\d{2})\s*[~\-]\s*(\d{1,2}:\d{2})?/);
+    if (tm) { wzSetTime("wzfT1", tm[1]); if (tm[2]) wzSetTime("wzfT2", tm[2]); }
     box.querySelectorAll(".wz-risk-checks input").forEach((c) => { c.checked = ed.risks.includes(c.value); });
     document.getElementById("wzfMove").onclick = () => wzStartPick({ mode: "setxy", item: ed });
   }
@@ -2299,6 +2313,7 @@ function wzShowAddForm(x, y, editItem) {
       person: document.getElementById("wzfPerson").value.trim(),
       crew: parseInt(document.getElementById("wzfCrew").value, 10) || "", x, y,
       equip: wzEquipText(equip),
+      time: (() => { const a = document.getElementById("wzfT1").value, b = document.getElementById("wzfT2").value; return a || b ? `${a || "?"}~${b || "?"}` : ""; })(),
     });
     if (ok) wzStartPick(null); else { btn.disabled = false; btn.textContent = "저장"; }
   };
@@ -6083,7 +6098,7 @@ async function clinicCall(action, payload) {
       { sel: "#wzScheduleCol", text: `오른쪽은 <b>주간 작업일정</b>이에요. ‹ › 로 주를 옮기고, 요일을 누르면 그날 작업 위치가 지도에 표시돼요.` },
       { sel: "#wzFilterBar", text: `<b>팀·파트 버튼</b>을 누르면 그 팀 작업만 걸러서 볼 수 있어요.` },
       { sel: "#wzPickToggle", text: `작업을 새로 넣으려면 <b>➕ 지도에 작업 추가</b>를 누르고, 지도에서 작업 위치를 클릭하세요.` },
-      { sel: "#wzViewport", text: `그러면 입력창이 떠요. <b>날짜 · 파트 · 작업내용(필수)</b>을 넣고, <b>사용장비</b>(종류 → 규격 → 대수 → 추가), 세부위치, <b>위험작업 체크</b>, 작업인원, 담당자를 채운 뒤 <b>저장</b>을 누르면 구글 시트에 바로 저장돼요.<br>위험작업으로 체크하면 종합현황 '오늘 작업'에 ⚠ 로 따로 세어져요.` },
+      { sel: "#wzViewport", text: `그러면 입력창이 떠요. <b>날짜 · 작업시간(몇 시~몇 시) · 파트 · 작업내용(필수)</b>을 넣고, <b>사용장비</b>(종류 → 규격 → 대수 → 추가), 세부위치, <b>위험작업 체크</b>, 작업인원, 담당자를 채운 뒤 <b>저장</b>을 누르면 구글 시트에 바로 저장돼요.<br>위험작업으로 체크하면 종합현황 '오늘 작업'에 ⚠ 로 따로 세어져요.` },
       { sel: "#wzUnplaced", text: `시트에만 있고 <b>지도 위치가 없는 작업</b>은 여기에 모여요. 작업을 누른 다음 지도에서 위치를 클릭하면 저장돼요.` },
       { sel: ".wz-edit", text: `등록한 작업은 일정 목록의 <b>수정 · 삭제</b> 버튼으로 고칠 수 있어요. 수정창에서 <b>위치 다시 찍기</b>도 돼요.` },
       { sel: null, text: `시트에서 직접 고친 내용은 <b>새로고침</b>하면 반영돼요. 사이트에서 추가한 건 바로 보여요.` },
