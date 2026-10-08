@@ -3449,3 +3449,19 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .mi-s { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
 .mi-s span { font-size: 11px; padding: 1px 7px; border-radius: 6px; background: rgba(79,180,255,0.12); color: #9fd2ff; border: 1px solid rgba(79,180,255,0.3); }
 .med-spec-note b { color: var(--text-muted); }
+
+/* ---------- 기타 > 비스마야 소식 ---------- */
+.bnews-count { color: var(--cyan); margin-left: 4px; }
+.bnews-filter { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 12px; }
+.bnews-filter button { font-family: var(--font-body); font-size: 12.5px; color: var(--text-muted); background: rgba(10,14,19,.5); border: 1px solid var(--border-soft); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+.bnews-filter button.active { color: var(--cyan); border-color: var(--cyan); }
+.bnews-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 10px; }
+.bnews-item { display: block; text-decoration: none; padding: 12px 14px; border: 1px solid var(--border-soft); border-radius: 10px; background: rgba(255,255,255,0.02); transition: border-color .15s, background .15s; }
+.bnews-item:hover { border-color: var(--cyan); background: rgba(53,208,192,0.05); }
+.bnews-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 11.5px; color: var(--text-dim); }
+.bnews-date { font-family: var(--font-mono); color: var(--text-muted); }
+.bnews-lang { font-size: 10.5px; font-weight: 700; border-radius: 999px; padding: 1px 8px; border: 1px solid currentColor; }
+.bnews-lang.l-ko { color: #6fb7ff; } .bnews-lang.l-ar { color: #5fd68f; } .bnews-lang.l-en { color: #f2a93b; }
+.bnews-title { margin-top: 6px; font-size: 14.5px; line-height: 1.5; color: var(--text); font-weight: 600; word-break: keep-all; }
+.bnews-orig { margin-top: 4px; font-size: 12px; color: var(--text-dim); line-height: 1.5; }
+@media (max-width: 600px) { .bnews-list { grid-template-columns: 1fr; } }
