@@ -7151,11 +7151,11 @@ function hseWeldWord(host, wordEl, onDone) {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const SRC = { hook: "assets/mascot-hook.webp", rappel: "assets/mascot-rappel.webp", stand: "assets/mascot-stand.webp", run: "assets/mascot-run.webp", drop: "assets/mascot-drop.webp", hopup: "assets/mascot-hopup.webp" };
   // 뛰어내리기 영상 그림 크기(표시 px)와 캐릭터 위치: 가로 가운데, 머리 위, 발바닥
-  const DROP = { h: 140.5, cx0: 46.7, top0: 36.8, foot: 136.4, cxEnd: 33.0 }, HOPUP = { h: 140.5, cx0: 42.9, cxEnd: 47.4, top1: 36.8, foot: 137.7 };
+  const DROP = { h: 140.5, cx0: 46.7, top0: 36.8, foot: 136.4, cxEnd: 33.0, cxLand: 42.9 }, HOPUP = { h: 140.5, cx0: 42.9, cxEnd: 47.4, top1: 36.8, foot: 137.7 };
   const RUN_W = 114 / 220 * 100;
   // 영상마다 캐릭터가 찍힌 크기가 조금씩 달라서, 머리(헬멧) 크기와 키를 기준으로 배너 마스코트와 같아 보이게 맞춘 비율
   const K = { hook: 0.87, rappel: 0.87, drop: 0.93 };
-  ["h", "cx0", "top0", "foot", "cxEnd", "top1"].forEach((k) => { if (k in DROP) DROP[k] *= K.drop; if (k in HOPUP) HOPUP[k] *= K.drop; });
+  ["h", "cx0", "top0", "foot", "cxEnd", "top1", "cxLand"].forEach((k) => { if (k in DROP) DROP[k] *= K.drop; if (k in HOPUP) HOPUP[k] *= K.drop; });
   const H = 100;                                   // 배너 마스코트와 같은 키
   const HOOK_PT = { x: 30 / 135 * (135 * H / 220), y: 30 / 220 * H };   // 고리 거는 손 위치 (영상 기준)
   const ROPE_X = 41.2 / 140 * (140 * H / 220);     // 줄 타기 그림에서 줄이 나오는 x
@@ -7275,7 +7275,6 @@ function hseWeldWord(host, wordEl, onDone) {
       // 1) 배너에서 아래 탭 줄로 뛰어내리기 (구글 플로우 영상: 돌아서기 → 폴짝 → 착지 → 왼쪽으로 달리기 시작)
       const cl = rr.left + rr.width / 2 + sx - DROP.cx0, ct = y0 + H * 0.985 - DROP.foot;   // 발바닥 높이를 배너 마스코트와 맞춘다
       const D = floor - (ct + DROP.foot);                               // 영상 속 높이에서 더 내려가야 할 거리
-      const runMax = Math.max(0, Math.min(1.35 * 240, cl + DROP.cxEnd - RUN_W / 2 - hx));  // '안전'을 지나치지 않게
       at(cl, ct);
       sprite.style.opacity = "0";
       await pose(fresh(SRC.drop), DROP.h);
@@ -7284,13 +7283,13 @@ function hseWeldWord(host, wordEl, onDone) {
       requestAnimationFrame(() => { sprite.style.opacity = "1"; runner.style.opacity = "0"; });
       await wait(380);
       runner.style.visibility = "hidden"; runner.style.opacity = ""; runner.style.transition = "";
-      await anim(4000, (t) => {
-        const sec = t * 4;
+      // 영상은 착지해서 일어서는 데(2.6초)까지만 쓰고, 달리기부터는 늘 같은 달리기 그림으로 (틈 건너뛸 때 캐릭터가 바뀌지 않게)
+      await anim(2600, (t) => {
+        const sec = t * 2.6;
         const fall = sec < 1.0 ? 0 : sec > 1.85 ? 1 : Math.pow((sec - 1.0) / 0.85, 1.6);   // 공중에 떠 있는 동안 아래로
-        const run = Math.min(runMax, Math.max(0, sec - 2.65) * 240);                                          // 착지 후 달리기 시작
-        at(cl - run, ct + D * fall - (run > 0 ? hopAt(cl - run + DROP.cxEnd) : 0));               // 달리다 카드 틈이면 폴짝
+        at(cl, ct + D * fall);
       });
-      const startX = cl - runMax + DROP.cxEnd - RUN_W / 2;
+      const startX = cl + DROP.cxLand - RUN_W / 2;
       // 2) 탭 줄을 따라 '안전' 옆까지 달려가기
       await runTo(startX, runX, groundY);
       // 3) 제자리에서 고리 걸기 (발은 카드 위쪽 선 위)
