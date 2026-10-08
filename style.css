@@ -2749,6 +2749,8 @@ html:not(.page-ready) main.grid { opacity: 0; }
 #view-dashboard .heat-illness-panel,
 #view-dashboard .disaster-panel,
 #view-dashboard .contacts-panel { display: none; }
+/* 무재해 카드 아래 숫자 3개(이달 점검·교육 이수율·누적 사고)는 숨김 — 다시 보이게 하려면 이 줄을 지우면 됨 */
+.hero-panel .hero-substats { display: none; }
 /* 오늘 작업 현황 · 공지사항: 환율 위젯 아래 끝에 높이를 맞출 때 (script.js fitRowToFx) 넘치는 내용은 카드 안에서 스크롤 */
 .fit-fx { display: flex; flex-direction: column; overflow: hidden; }
 .fit-fx > * { flex-shrink: 0; }
