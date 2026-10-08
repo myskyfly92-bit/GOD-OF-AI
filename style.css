@@ -2294,6 +2294,13 @@ body.bg-reveal::before {
 }
 .bg-peek-btn:hover { opacity: 1; border-color: var(--cyan); }
 body.bg-reveal .bg-peek-btn { opacity: 1; border-color: var(--cyan); color: var(--cyan); }
+/* 메뉴줄 안의 배경 보기: 언어 버튼과 같은 모양 */
+.bg-peek-btn.in-bar {
+  position: static; opacity: 1; font-family: var(--font-body); font-size: 12px; padding: 7px 14px;
+  color: var(--text-muted); background: rgba(10, 14, 19, 0.65); border: 1px solid var(--border-soft); white-space: nowrap;
+}
+.bg-peek-btn.in-bar:hover { color: var(--text); border-color: var(--border); }
+body.bg-reveal .bg-peek-btn.in-bar { color: var(--cyan); border-color: var(--cyan); }
 @media (prefers-reduced-motion: reduce) {
   .view.view-enter .grid > .panel { animation: none; }
   main.grid, .holiday-panel, .fx-widget, .footer, .sub-bar { transition: none; }
@@ -2943,7 +2950,7 @@ html:not(.page-ready) main.grid { opacity: 0; }
 .emb-more:hover { border-color: var(--cyan); color: var(--cyan); }
 
 /* ---------- AI 법령 도우미 ---------- */
-.ai-assist { position: fixed; right: 18px; bottom: 64px; z-index: 1200; font-family: var(--font-body); }  /* '배경 보기' 버튼(오른쪽 맨 아래) 위에 */
+.ai-assist { position: fixed; right: 18px; bottom: 18px; z-index: 1200; font-family: var(--font-body); }  /* '배경 보기' 버튼(오른쪽 맨 아래) 위에 */
 .ai-fab {
   display: flex; align-items: center; gap: 8px; cursor: pointer;
   padding: 6px 16px 6px 6px; border-radius: 999px; border: 1px solid rgba(53, 208, 192, 0.55);
@@ -3037,7 +3044,7 @@ html:not(.page-ready) main.grid { opacity: 0; }
 }
 .ai-foot { margin: 0; padding: 0 14px 10px; font-size: 10.5px; line-height: 1.5; color: var(--text-dim); }
 @media (max-width: 600px) {
-  .ai-assist { right: 12px; bottom: 60px; }
+  .ai-assist { right: 12px; bottom: 14px; }
   .ai-assist.is-open { left: 0; right: 0; bottom: 0; }
   .ai-panel { width: 100vw; height: 85vh; border-radius: 14px 14px 0 0; }
   .ai-fab span { display: none; }

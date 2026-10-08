@@ -3993,14 +3993,16 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   const btn = document.createElement("button");
   btn.type = "button";
   btn.className = "bg-peek-btn";
-  btn.textContent = "배경 보기";
+  btn.textContent = "🖼 배경 보기";
   btn.title = "카드를 잠시 숨기고 배경 사진을 봅니다 (Esc로 복귀)";
-  document.body.appendChild(btn);
+  // 위쪽 메뉴줄(언어·패밀리사이트 옆)에 둔다. 없으면 예전처럼 화면 오른쪽 아래
+  const rg = document.getElementById("tabbarRightGroup");
+  if (rg) { btn.classList.add("in-bar"); rg.insertBefore(btn, rg.querySelector(".family-site")); } else document.body.appendChild(btn);
   let manual = false;
   function setReveal(on, byUser) {
     manual = on && byUser;
     document.body.classList.toggle("bg-reveal", on);
-    btn.textContent = on ? "정보 다시 보기" : "배경 보기";
+    btn.textContent = on ? "↩ 정보 보기" : "🖼 배경 보기";
     if (!on) playEnter(document.querySelector(".view.active"));
   }
   btn.addEventListener("click", (e) => { e.stopPropagation(); setReveal(!document.body.classList.contains("bg-reveal"), true); });
@@ -6070,7 +6072,7 @@ async function clinicCall(action, payload) {
       { sel: ".group-bar", text: `여기가 <b>대분류 메뉴</b>예요: 종합현황 · 안전 · 보건 · 환경 · 소방 · 기타.<br>하나를 누르면 바로 아래에 <b>소분류 탭</b> 줄이 나타나고, 마지막으로 보던 소분류를 기억해요.` },
       { sel: "#langSwitcher", text: `<b>언어 선택</b>이에요. <b>ENG</b> 나 <b>العربية</b> 를 누르면 화면 글자가 자동 번역돼요. 영어·아랍어를 쓰는 동료에게 보여 줄 때 좋아요.<br>자동 번역이라 어색한 말이 있을 수 있으니 중요한 내용은 한국어로 한 번 더 확인하세요.` },
       { sel: "#familySiteSelect", text: `<b>패밀리사이트</b> 바로가기예요. 목록에서 고르면 <b>BNCP AI Assistant</b> 같은 관련 사이트가 새 창으로 열려요.` },
-      { sel: ".bg-peek-btn", text: `<b>배경 보기</b>를 누르면 카드들이 잠깐 숨고 배경 사진이 보여요. 다시 누르거나 <b>Esc</b> 를 누르면 돌아와요.<br>한동안 화면을 안 만지면 상황실 화면처럼 자동으로 배경이 보이기도 해요.` },
+      { sel: ".bg-peek-btn", text: `위쪽 메뉴줄의 <b>🖼 배경 보기</b>를 누르면 카드들이 잠깐 숨고 배경 사진이 보여요. 다시 누르거나 <b>Esc</b> 를 누르면 돌아와요.<br>한동안 화면을 안 만지면 상황실 화면처럼 자동으로 배경이 보이기도 해요.` },
       { sel: ".ai-fab", text: `오른쪽 아래 <b>법령 도우미</b>예요. "고소작업 안전대 기준은?", "이라크 노동법 근로시간은?" 처럼 <b>평소 말투로 물어보면</b> <b>한국 산업안전보건법</b>과 <b>이라크 법</b>을 함께 찾아서 답해 줘요.<br>📷 <b>현장 사진</b>을 올리면 위험요소도 짚어 줘요. 답은 참고용이니 중요한 판단은 원문으로 확인하세요.` },
       { sel: null, text: `안내를 다시 보고 싶으면 화면 <b>왼쪽 아래 '사용 안내'</b> 버튼을 누르세요. 거기서 필요한 장만 골라 볼 수도 있어요.` },
     ]},
