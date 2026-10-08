@@ -829,7 +829,7 @@ code {
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 18px 32px 30px;
+  padding: 18px 32px 92px; /* 아래쪽 여유: 맨 아래까지 내려도 '사용 안내'·'법령 도우미' 버튼에 글자가 가리지 않게 */
   max-width: 1360px;
   /* 오른쪽에 달력/환율 위젯이 들어갈 여백을 항상 확보하기 위해
      완전 중앙정렬 대신 왼쪽으로 살짝 치우쳐 정렬한다 */

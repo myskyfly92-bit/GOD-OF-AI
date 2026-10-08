@@ -923,6 +923,22 @@ function alignSideWidgets() {
     }
   }
   fitRowToFx(fitsOnScreen && fxWidget && fxWidget.style.display !== "none" ? fxWidget : null);
+  alignFooterToFx(fitsOnScreen && fxWidget && fxWidget.style.display !== "none" ? fxWidget : null);
+}
+
+// 아래쪽 '마지막 갱신' 글자의 오른쪽 끝을 환율 위젯의 '갱신 …' 글자 오른쪽 끝에 맞춘다
+function alignFooterToFx(fx) {
+  const footer = document.querySelector(".footer");
+  if (!footer) return;
+  if (!fx) { footer.style.width = ""; footer.style.maxWidth = ""; return; }
+  footer.style.maxWidth = "none";
+  const fr = footer.getBoundingClientRect(), xr = fx.getBoundingClientRect();
+  const fxText = fx.querySelector(".fx-updated") || fx;
+  const textRight = fxText.getBoundingClientRect().right - (parseFloat(getComputedStyle(fxText).paddingRight) || 0);
+  const padR = parseFloat(getComputedStyle(footer).paddingRight) || 0;
+  const borderBox = getComputedStyle(footer).boxSizing === "border-box";
+  const w = textRight + padR - fr.left - (borderBox ? 0 : (parseFloat(getComputedStyle(footer).paddingLeft) || 0) + padR);
+  if (xr.width && w > 300) footer.style.width = Math.round(w) + "px";
 }
 
 // 종합현황 둘째 줄(오늘 작업 현황 · 오늘 작업 목록) 카드의 아래 끝을 오른쪽 환율 위젯 아래 끝에 맞춘다
