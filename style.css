@@ -3499,7 +3499,7 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 /* ---------- 헌수호 줄 타기 장면 ---------- */
 .mrap { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 320; pointer-events: none; }
 .mrap-sprite { position: absolute; left: 0; top: 0; will-change: transform; }
-.mrap-sprite img { display: block; height: 100px; width: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); transform-origin: 50% 100%; }
+.mrap-sprite img { display: block; height: 100px; width: auto; transition: none; filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); transform-origin: 50% 100%; }
 .mrap-sprite .mascot-bubble { left: 82%; top: 4px; }
 .mrap-rope { position: absolute; display: none; overflow: visible; }
 .mrap-rope line { stroke: #e6e9ec; stroke-width: 2; stroke-linecap: round; filter: drop-shadow(0 1px 1px rgba(0,0,0,.5)); }

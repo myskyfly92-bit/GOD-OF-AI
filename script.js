@@ -7142,7 +7142,7 @@ function hseWeldWord(host, wordEl, onDone) {
    ========================================================== */
 (function mascotRappel() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  const SRC = { hook: "assets/mascot-hook.webp", rappel: "assets/mascot-rappel.webp", stand: "assets/mascot-stand.webp" };
+  const SRC = { hook: "assets/mascot-hook.webp", rappel: "assets/mascot-rappel.webp", stand: "assets/mascot-stand.webp", run: "assets/mascot-run.webp" };
   const H = 100;                                   // 배너 마스코트와 같은 키
   const HOOK_PT = { x: 30 / 135 * (135 * H / 220), y: 30 / 220 * H };   // 고리 거는 손 위치 (영상 기준)
   const ROPE_X = 41.2 / 140 * (140 * H / 220);     // 줄 타기 그림에서 줄이 나오는 x
@@ -7168,10 +7168,21 @@ function hseWeldWord(host, wordEl, onDone) {
     const tab = document.querySelector('.group-btn[data-group="safety"]');
     if (!runner || !tab || innerWidth < 1100 || document.body.classList.contains("hg-running")) return;
     const rr = runner.getBoundingClientRect(), tr = tab.getBoundingClientRect();
+    const next = tab.nextElementSibling, nr = next ? next.getBoundingClientRect() : null;
+    const card = document.querySelector(".view.active .grid > .panel");
+    const cardTop = card ? card.getBoundingClientRect().top : tr.bottom + 40;
     if (!rr.width || !tr.width || tr.top < 0) return;
     running = true;
     const sx = scrollX, sy = scrollY;
-    const ax = tr.left + tr.width / 2 + sx, ay = tr.bottom - 2 + sy;      // 고리를 걸 곳 (탭 아래 가운데)
+    // 고리 걸 곳: '안전' 탭 오른쪽 옆 (다음 탭과의 틈), 탭 윗부분 높이
+    // 단, 서 있는 발이 아래 카드 영역을 넘지 않게 높이를 맞춘다
+    const floor = cardTop - 6 + sy;                                     // 발이 닿는 선 (카드 위쪽 바로 위)
+    const ax = (nr ? (tr.right + nr.left) / 2 : tr.right + 8) + sx;
+    // 고리는 배너 아래 끝(구조물 보)에 건다. 그 아래 탭 줄에 서도 발이 카드에 닿지 않게 키를 줄인다
+    const bar = document.querySelector(".topbar");
+    const ay = (bar ? bar.getBoundingClientRect().bottom : tr.top) + 2 + sy;
+    const S = Math.max(0.6, Math.min(1, (floor - ay) / (H * (1 - HOOK_PT.y / H))));   // 크기 비율
+    const Hs = Math.round(H * S), HP = { x: HOOK_PT.x * S, y: HOOK_PT.y * S }, RX = ROPE_X * S;
 
     const root = document.createElement("div");
     root.className = "mrap";
@@ -7181,6 +7192,7 @@ function hseWeldWord(host, wordEl, onDone) {
     const sprite = root.querySelector(".mrap-sprite"), img = sprite.querySelector("img"), bubble = sprite.querySelector(".mascot-bubble");
     const svg = root.querySelector("svg"), line = svg.querySelector("line"), ring = root.querySelector(".mrap-ring");
     const at = (x, y) => { sprite.style.transform = `translate(${x}px, ${y}px)`; };
+    const face = (dir) => { img.style.transform = dir < 0 ? "scaleX(-1)" : ""; };
     const rope = (x1, y1, x2, y2) => {
       const minX = Math.min(x1, x2) - 4, minY = Math.min(y1, y2) - 4;
       Object.assign(svg.style, { left: minX + "px", top: minY + "px", width: Math.abs(x2 - x1) + 8 + "px", height: Math.abs(y2 - y1) + 8 + "px" });
@@ -7191,43 +7203,57 @@ function hseWeldWord(host, wordEl, onDone) {
       bubble.textContent = text; bubble.hidden = false; bubble.classList.remove("bye");
       await wait(ms); bubble.classList.add("bye"); await wait(260); bubble.hidden = true;
     };
+    // 달리기: 일정한 속도로, 발걸음에 맞춰 살짝 들썩
+    const runTo = async (x1, x2, y) => {
+      img.src = SRC.run; face(x2 < x1 ? -1 : 1);
+      const ms = Math.max(500, Math.abs(x2 - x1) / 0.24);              // 초당 약 240px
+      await anim(ms, (t) => at(x1 + (x2 - x1) * t, y - Math.abs(Math.sin(t * ms / 130)) * 2));
+      face(1);
+    };
     ring.style.left = ax + "px"; ring.style.top = ay + "px";
 
     try {
-      // 1) 배너에서 탭 아래로 폴짝
-      runner.style.visibility = "hidden";
-      img.src = SRC.stand; img.style.height = H + "px";
       const x0 = rr.left + sx, y0 = rr.top + sy;
-      const hx = ax - HOOK_PT.x, hy = ay - HOOK_PT.y + 6;
-      await anim(950, (t) => {
-        const e = ease(t);
-        at(x0 + (hx - x0) * e, y0 + (hy - y0) * e - Math.sin(Math.PI * t) * 70);
-        img.style.transform = `rotate(${Math.sin(Math.PI * t) * -10}deg)`;
+      const groundY = floor - Hs;                                       // 아래 줄에 서 있을 때의 위쪽 좌표
+      const hx = ax - HP.x, hy = ay - HP.y;                              // 고리 걸 때 서 있을 자리
+      runner.style.visibility = "hidden";
+      img.style.height = H + "px";
+      // 1) 배너에서 그 자리 그대로 아래 줄로 사뿐히 (살짝 떴다가 떨어지며 크기도 조금 줄인다)
+      img.src = SRC.stand; at(x0, y0);
+      await anim(700, (t) => {
+        img.style.height = H + (Hs - H) * t + "px";
+        at(x0 + (H - (H + (Hs - H) * t)) * 0.3, y0 + (groundY - y0) * (t * t) - Math.sin(Math.PI * Math.min(1, t * 1.6)) * 14);
       });
+      img.style.height = Hs + "px";
+      await anim(180, (t) => { img.style.transform = `scaleY(${1 - Math.sin(Math.PI * t) * 0.08})`; });   // 착지 쿵
       img.style.transform = "";
-      // 2) 고리 걸기 (영상 4초, 1.6초쯤 '딸깍')
-      img.src = fresh(SRC.hook);
+      // 2) 탭 줄을 따라 '안전' 옆까지 달려가기
+      await runTo(x0, hx, groundY);
+      // 3) 제자리에서 고리 걸기 (발은 카드 위쪽 선 위)
+      img.src = SRC.stand; at(hx, groundY);
+      if (Math.abs(groundY - hy) > 1) await anim(220, (t) => at(hx, groundY + (hy - groundY) * t));  // 거의 같은 높이
+      img.src = fresh(SRC.hook); at(hx, hy);
       await wait(1650);
       ring.classList.add("on");
       await wait(2350);
-      // 3) 줄 타고 내려가기
+      // 4) 줄 타고 내려가기
       img.src = SRC.rappel;
-      const rx = ax - ROPE_X, top0 = ay + 8, drop = Math.min(260, Math.max(140, innerHeight - (ay - sy) - 220));
+      const rx = ax - RX, top0 = hy + 4, drop = Math.min(260, Math.max(140, innerHeight - (top0 - sy) - 200));
       at(rx, top0); rope(ax, ay, ax, top0 + 2);
       await anim(3200, (t) => { const y = top0 + drop * ease(t); at(rx, y); rope(ax, ay, ax, y + 2); });
       await say(LINES[lineIdx++ % LINES.length], 2600);
-      // 4) 다시 올라가기
+      // 5) 다시 올라가서 고리 풀기
       await anim(2400, (t) => { const y = top0 + drop * (1 - ease(t)); at(rx, y); rope(ax, ay, ax, y + 2); });
       svg.style.display = "none"; ring.classList.remove("on");
-      // 5) 배너로 폴짝 돌아가기
-      img.src = SRC.stand;
+      img.src = SRC.stand; at(hx, hy);
+      if (Math.abs(groundY - hy) > 1) await anim(200, (t) => at(hx, hy + (groundY - hy) * t));
+      await wait(250);
+      // 6) 원래 자리로 달려가서 배너로 폴짝
       const r2 = runner.getBoundingClientRect();
       const bx = r2.left + scrollX, by = r2.top + scrollY;
-      await anim(900, (t) => {
-        const e = ease(t);
-        at(rx + (bx - rx) * e, top0 + (by - top0) * e - Math.sin(Math.PI * t) * 60);
-        img.style.transform = `rotate(${Math.sin(Math.PI * t) * 10}deg)`;
-      });
+      await runTo(hx, bx, groundY);
+      img.src = SRC.stand;
+      await anim(650, (t) => { img.style.height = Hs + (H - Hs) * t + "px"; at(bx, groundY + (by - groundY) * ease(t) - Math.sin(Math.PI * t) * 30); });
     } finally {
       root.remove();
       runner.style.visibility = "";
