@@ -128,6 +128,13 @@ def main():
             continue
         merged.append(x)
     items = merged
+    # 이름이 보건소·진료소인데 '병원'으로 등록된 곳은 의원·보건소로
+    CLIN = _re.compile(r"مركز صحي|مستوصف|عيادة|العيادة|health ?cent|\bphc\b|\bh\.?c\.?$|clinic|dispensary", _re.I)
+    HOSP = _re.compile(r"مستشفى|مستشفيات|hospital|مدينة الطب|medical city", _re.I)
+    for x in items:
+        n = " ".join((x["name"], x["nameEn"], x["nameAr"]))
+        if x["kind"] == "hospital" and CLIN.search(n) and not HOSP.search(n):
+            x["kind"] = "clinic"
     # 의원·보건소는 가까운 곳(25km)만 — 너무 많아서 지도가 복잡해짐
     items = [x for x in items if x["kind"] == "hospital" or x["km"] <= 25]
     items.sort(key=lambda x: x["km"])
