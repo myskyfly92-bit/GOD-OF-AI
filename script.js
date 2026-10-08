@@ -3456,7 +3456,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   const runner = document.createElement("div");
   runner.className = "mascot-runner";
   runner.innerHTML = `<div class="mascot-shadow"></div>
-    <div class="mascot-body"><div class="mascot-step"><img src="${home.getAttribute("src")}" alt="" draggable="false"></div></div>
+    <div class="mascot-body"><div class="mascot-step"><img src="assets/mascot-stand.webp" alt="" draggable="false"></div></div>
     <div class="mascot-bubble" hidden></div>`;
   bar.appendChild(runner);
   home.classList.add("mascot-home");
@@ -3507,7 +3507,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   const POKES = ["앗, 간지러워요!", "저 헌수호예요! 순찰 중!", "헌수호 출동! 안전 이상 무!", "부르셨어요? 안전 이상 무!", "한 번 더 누르면… 안전교육!", "충성! 🫡", "헤헤, 오늘도 안전!"];
   const MAX_SPEED = 55;      // px/초 (달리는 그림에 맞춘 속도)
   // 달릴 때는 옆모습 달리기 움직임(투명 배경 움직이는 그림), 멈추면 원래 마스코트 그림
-  let STAND_SRC = home.getAttribute("src");
+  let STAND_SRC = "assets/mascot-stand.webp";   // 처음부터 달리기·경례와 같은 3D 그림 (예전 2D 그림이 잠깐 보이지 않게)
   const RUN_SRC = "assets/mascot-run.webp";
   let running = false, runReady = false;
   const pre = new Image();
@@ -3515,7 +3515,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   pre.src = RUN_SRC;
   // 서 있는 그림: 달리기·경례와 같은 3D 그림체로 (못 불러오면 원래 그림)
   const standPre = new Image();
-  standPre.onload = () => { STAND_SRC = standPre.src; if (!running && !acting) img.src = STAND_SRC; };
+  standPre.onerror = () => { STAND_SRC = home.getAttribute("src"); if (!running && !acting) img.src = STAND_SRC; };
   standPre.src = "assets/mascot-stand.webp";
   // 시계 앞에 도착하면: 급정거 → 비틀 → 정면 경례 (한 번 재생, 8.4초)
   // 같은 주소의 움직이는 그림은 브라우저가 처음부터 다시 틀어 주지 않아서, 한 번 받아 두고 재생할 때마다 새 주소(blob)를 만든다
@@ -3662,7 +3662,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const squash = 1 - (1 - walkAmt) * 0.015 * (1 + Math.sin(breath));
 
     runner.style.transform = `translateX(${x.toFixed(1)}px)`;
-    if (!runner.classList.contains("ready") && maxX > 0) requestAnimationFrame(() => runner.classList.add("ready"));   // 자리를 잡은 뒤에 보이게
+    if (!runner.classList.contains("ready") && maxX > 0 && img.complete) requestAnimationFrame(() => runner.classList.add("ready"));   // 자리를 잡은 뒤에 보이게
     step.style.transform = `translateY(${(-bob).toFixed(2)}px) rotate(${(tilt * facing).toFixed(2)}deg) scaleY(${squash.toFixed(4)})`;
     shadow.style.transform = `scaleX(${(1 - bob / 18).toFixed(3)})`;
     shadow.style.opacity = (0.35 - bob / 40).toFixed(3);
@@ -7163,10 +7163,16 @@ function hseWeldWord(host, wordEl, onDone) {
   const LINES = ["고소작업은 안전대 체결부터!", "고리는 머리 위 튼튼한 곳에!", "줄 타기 전, 고리 두 번 당겨 확인!", "안전대는 내 생명줄!"];
   let running = false, lineIdx = Math.floor(Math.random() * LINES.length);
   const wait = (ms) => new Promise((r) => setTimeout(r, ms));
-  const fresh = (src) => src + (src.includes("?") ? "&" : "?") + "t=" + Date.now(); // 한 번만 도는 그림을 처음부터
+  // 한 번만 도는 그림을 처음부터: 미리 받아 둔 파일로 새 주소(blob)를 만든다
+  // (예전처럼 주소 뒤에 ?t= 를 붙이면 매번 새로 내려받느라, 그동안 달리기 그림이 제자리에서 뛰고 있었다)
+  const blobs = {};
+  const fresh = (src) => blobs[src] ? URL.createObjectURL(blobs[src]) : src + (src.includes("?") ? "&" : "?") + "t=" + Date.now();
   const ease = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
   // 미리 받아 둔다
-  Object.values(SRC).forEach((s) => { const i = new Image(); i.src = s; });
+  Object.values(SRC).forEach((s) => {
+    const i = new Image(); i.src = s;
+    fetch(s).then((r) => (r.ok ? r.blob() : null)).then((b) => { if (b) blobs[s] = b; }).catch(() => {});
+  });
 
   function anim(ms, fn) {
     return new Promise((res) => {
@@ -7259,7 +7265,7 @@ function hseWeldWord(host, wordEl, onDone) {
     // 배너 위와 같은 속도(초당 55px)로 달리고, 틈을 건너는 폴짝 구간만 빠르게 (느리면 둥둥 떠 보여서)
     const RUN_V = 55, HOP_V = 150;
     const runTo = async (x1, x2, y) => {
-      await pose(SRC.run, H, x2 < x1); at(x1, y);
+      await pose(fresh(SRC.run), H, x2 < x1); at(x1, y);
       const dir = Math.sign(x2 - x1) || 1;
       await new Promise((res) => {
         let x = x1, last = 0, el = 0;
