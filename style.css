@@ -3256,3 +3256,8 @@ body:has(.hse-intro) .ai-assist { display: none; }
 .hse-intro.logo-stage .hse-intro-slides { opacity: 0 !important; transition: opacity 0.6s ease; }
 .hse-intro.logo-stage .hse-intro-capbox { display: none; }
 .hse-intro.logo-stage .hse-intro-title { margin-top: 44px; }
+/* 인트로가 끝날 때: 글자(한화·제목·불꽃)를 먼저 지우고, 그다음 어두운 배경을 걷어 낸다
+   (배경과 글자가 같이 흐려지면 뒤의 대시보드 글씨와 겹쳐 보이므로) */
+.hse-intro .hse-intro-inner, .hse-intro .hse-weld { transition: opacity 0.35s ease; }
+.hse-intro.out .hse-intro-inner, .hse-intro.out .hse-weld { opacity: 0 !important; }
+.hse-intro.out { transition: opacity 0.6s ease 0.4s, visibility 0s linear 1s; }

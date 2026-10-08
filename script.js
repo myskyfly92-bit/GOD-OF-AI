@@ -4285,7 +4285,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       try { sessionStorage.setItem("hseIntroSeen", "1"); } catch (e) {}
       timers.forEach(clearTimeout);
       el.classList.add("out");
-      setTimeout(() => el.remove(), 900);
+      setTimeout(() => el.remove(), 1100);
       // 숫자를 0부터 다시 올린다 (인트로에 가려 처음 올라가는 걸 못 봤으므로)
       ["incidentFreeDays", "constructionDays"].forEach((id) => {
         const n = document.getElementById(id);
