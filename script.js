@@ -6521,6 +6521,7 @@ function hseWeldWord(host, wordEl, onDone) {
       listBox.innerHTML = `<p class="sug-empty">목록을 불러오지 못했어요 (${escapeHtml(err.message)}) · Apps Script에 건의함 코드를 넣었는지 확인해 주세요</p>`;
     } finally { loading = false; }
   }
-  document.querySelectorAll('.tab-btn[data-view="view-suggest"]').forEach((b) => b.addEventListener("click", () => load(false)));
+  // 탭을 열 때마다 시트에서 새로 불러온다 (담당자가 시트에서 상태·답변을 고치면 바로 보이게)
+  document.querySelectorAll('.tab-btn[data-view="view-suggest"]').forEach((b) => b.addEventListener("click", () => load(true)));
   if (document.getElementById("view-suggest").classList.contains("active")) load(false);
 })();
