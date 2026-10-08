@@ -6116,17 +6116,25 @@ async function clinicCall(action, payload) {
     ring = root.querySelector(".hg-ring");
     bubble = root.querySelector(".hg-bubble");
   }
+  // 위에 붙어 있는 배너(상단 바) 아래 끝: 표시 영역이 배너에 가려지지 않게 기준으로 쓴다
+  const hdrBottom = () => { const t = document.querySelector(".topbar"); return t ? Math.max(0, t.getBoundingClientRect().bottom) : 0; };
   function place(el) {
     bubble.classList.remove("hg-top");
+    bubble.style.top = "";
     if (!el || !visible(el)) { ring.hidden = true; return; }
     const r = el.getBoundingClientRect();
-    const pad = 6;
-    const top = Math.max(r.top - pad, 4), bottom = Math.min(r.bottom + pad, innerHeight - 4);
+    const pad = 6, hdr = hdrBottom();
+    const top = Math.max(r.top - pad, hdr + 4), bottom = Math.min(r.bottom + pad, innerHeight - 4);
     Object.assign(ring.style, { left: r.left - pad + "px", top: top + "px", width: r.width + pad * 2 + "px", height: Math.max(bottom - top, 20) + "px" });
     ring.hidden = false;
     // 말풍선이 표시한 곳을 가리면 위쪽으로 옮긴다
+    // 말풍선이 표시한 곳을 가리면 위쪽으로 옮긴다. 단, 긴 영역은 윗부분이 보여야 하므로 아래에 둔다
+    const tall = bottom - top > (innerHeight - hdr) * 0.55;
     const b = bubble.getBoundingClientRect();
-    if (b.width && !(b.right < r.left || b.left > r.right || b.bottom < top || b.top > bottom)) bubble.classList.add("hg-top");
+    if (!tall && b.width && !(b.right < r.left || b.left > r.right || b.bottom < top || b.top > bottom)) {
+      bubble.classList.add("hg-top");
+      if (innerWidth > 700) bubble.style.top = hdr + 14 + "px";
+    }
   }
   async function goView(id) {
     const cur = document.querySelector(".view.active");
@@ -6170,9 +6178,15 @@ async function clinicCall(action, payload) {
     // 늦게 그려지는 화면은 잠깐 기다린다 (최대 2초)
     for (let k = 0; step.sel && k < 10 && !visible(el); k++) { await wait(200); el = $(step.sel); }
     if (el && visible(el)) {
-      const r = el.getBoundingClientRect();
-      const tall = r.height > innerHeight - 260;
-      if (r.top < 90 || r.bottom > innerHeight - 200 || tall) { el.scrollIntoView({ block: tall ? "start" : "center", behavior: "smooth" }); await wait(500); }
+      // 긴 영역은 윗부분이 배너 바로 아래에 오게, 짧은 영역은 화면 가운데에 오게 스크롤
+      const r = el.getBoundingClientRect(), hdr = hdrBottom();
+      const room = innerHeight - hdr - 230;
+      const tall = r.height > room;
+      if (tall) {
+        if (Math.abs(r.top - (hdr + 16)) > 8) { window.scrollTo({ top: scrollY + r.top - hdr - 16, behavior: "smooth" }); await wait(550); }
+      } else if (r.top < hdr + 10 || r.bottom > innerHeight - 200) {
+        window.scrollTo({ top: scrollY + r.top - hdr - Math.max(16, (room - r.height) / 2), behavior: "smooth" }); await wait(550);
+      }
     } else el = null;
     if (step.opt && !el) return "auto"; // 화면이 좁아 안 보이는 위젯은 건너뛴다
     setHead(`${ch.icon} ${ch.title} · ${i + 1}/${ch.steps.length}`, pos);
