@@ -33,7 +33,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261008l">
+<link rel="stylesheet" href="style.css?v=20261008m">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -106,6 +106,7 @@ html.intro-pending::after {
       <button class="tab-btn" data-view="view-health-infect">WHO 소식</button>
       <button class="tab-btn" data-view="view-health-heat">온열질환</button>
       <button class="tab-btn" data-view="view-health-confined">밀폐공간 작업</button>
+      <button class="tab-btn" data-view="view-health-medical">주변 의료시설</button>
     </div>
     <div class="sub-row" data-group="env" hidden>
       <button class="tab-btn" data-view="view-env-weather">날씨·대기환경</button>
@@ -785,6 +786,37 @@ html.intro-pending::after {
 </main>
 </div>
 
+<div id="view-health-medical" class="view">
+<main class="grid">
+  <section class="panel med-panel" aria-label="주변 의료시설" style="grid-column: 1 / -1;">
+    <div class="panel-label">NEARBY MEDICAL · 비스마야 주변 병원·의료시설</div>
+    <div class="med-cards" id="medCards"><p class="skeleton">의료시설 불러오는 중…</p></div>
+    <div class="med-cols">
+      <div class="med-map-wrap">
+        <div id="medMap" class="med-map"></div>
+        <div class="med-legend">
+          <span><i class="mk h"></i>병원</span><span><i class="mk c"></i>의원·보건소</span><span><i class="mk e"></i>응급실</span>
+          <span><i class="ring"></i>현장에서 10·20·40km</span>
+        </div>
+      </div>
+      <div class="med-side">
+        <div class="med-filter" id="medFilter">
+          <button type="button" class="active" data-f="hospital">병원</button>
+          <button type="button" data-f="emergency">응급실</button>
+          <button type="button" data-f="public">공립</button>
+          <button type="button" data-f="clinic">의원·보건소</button>
+          <button type="button" data-f="all">전체</button>
+        </div>
+        <div class="med-list" id="medList"></div>
+      </div>
+    </div>
+    <p class="med-warn">🚑 <b>응급 상황에서는 먼저 현장 클리닉(0780-926-2446)과 이라크 긴급전화 911에 연락</b>하고, 후송 병원은 클리닉 지시에 따르세요.
+      아래 정보는 오픈스트리트맵에 등록된 자료라 빠지거나 바뀐 곳이 있을 수 있습니다. 실제 이용 전 확인이 필요합니다.</p>
+    <p class="source-note" id="medMeta">출처: OpenStreetMap(© OpenStreetMap contributors) · 도로 거리·시간: OSRM (교통 상황 미반영) · 매주 갱신</p>
+  </section>
+</main>
+</div>
+
 <div id="view-suggest" class="view">
 <main class="grid">
   <section class="panel sug-panel" aria-label="개선 건의·제안" style="grid-column: 1 / -1;">
@@ -995,7 +1027,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261008l"></script>
+<script src="script.js?v=20261008m"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

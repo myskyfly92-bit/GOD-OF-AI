@@ -6525,3 +6525,102 @@ function hseWeldWord(host, wordEl, onDone) {
   document.querySelectorAll('.tab-btn[data-view="view-suggest"]').forEach((b) => b.addEventListener("click", () => load(true)));
   if (document.getElementById("view-suggest").classList.contains("active")) load(false);
 })();
+
+
+/* ==========================================================
+   보건 > 주변 의료시설 (medical-facilities.json: OSM 병원·의원 + OSRM 도로 거리)
+   ========================================================== */
+(function medicalNearby() {
+  let map = null, layer = null, data = null, filter = "hospital", marks = {};
+  const KIND = { hospital: "병원", clinic: "의원·보건소", doctors: "개인 의원" };
+  const OWN = { public: "공립", private: "사립" };
+  const dirUrl = (x) => `https://www.google.com/maps/dir/?api=1&origin=${BISMAYAH_LAT},${BISMAYAH_LON}&destination=${x.lat},${x.lon}&travelmode=driving`;
+  // 이름: 영어가 있으면 영어를 크게, 아랍어는 작게 (아랍어만 있으면 그대로)
+  const ar = (x) => x.nameAr || (/[\u0600-\u06FF]/.test(x.name) ? x.name : "");
+  const main = (x) => x.nameEn || x.name;
+  const nm = (x) => { const a = ar(x); return escapeHtml(main(x)) + (a && a !== main(x) ? `<small dir="rtl">${escapeHtml(a)}</small>` : ""); };
+  const dist = (x) => x.roadKm != null ? `${x.roadKm}km · 차로 약 ${x.min}분` : `직선 ${x.km}km`;
+
+  function cards() {
+    const H = data.items.filter((x) => x.kind === "hospital");
+    const byTime = H.filter((x) => x.min != null).sort((a, b) => a.min - b.min);
+    const near = byTime[0] || H[0];
+    const er = H.filter((x) => x.emergency).sort((a, b) => (a.min ?? 999) - (b.min ?? 999) || a.km - b.km)[0];
+    const pub = H.filter((x) => x.own === "public").sort((a, b) => (a.min ?? 999) - (b.min ?? 999) || a.km - b.km)[0];
+    const card = (lab, x, cls) => x ? `<div class="med-card ${cls || ""}" data-id="${escapeHtml(x.id)}"><span>${lab}</span><b>${escapeHtml(main(x))}</b><em>${dist(x)}</em></div>` : "";
+    document.getElementById("medCards").innerHTML =
+      card("가장 가까운 병원", near, "near") + card("가장 가까운 응급실", er, "er") + card("가장 가까운 공립 병원", pub, "pub") +
+      `<div class="med-card cnt"><span>현장 주변 (반경 ${data.radiusKm}km)</span><b>병원 ${H.length}곳</b><em>20km 안 ${H.filter((x) => x.km <= 20).length}곳 · 의원 등 ${data.items.length - H.length}곳</em></div>`;
+    document.querySelectorAll("#medCards .med-card[data-id]").forEach((c) => c.addEventListener("click", () => focus(c.dataset.id)));
+  }
+
+  function list() {
+    let L2 = data.items.slice();
+    if (filter === "hospital") L2 = L2.filter((x) => x.kind === "hospital");
+    else if (filter === "emergency") L2 = L2.filter((x) => x.emergency);
+    else if (filter === "public") L2 = L2.filter((x) => x.own === "public");
+    else if (filter === "clinic") L2 = L2.filter((x) => x.kind !== "hospital");
+    L2.sort((a, b) => (a.min ?? 9999) - (b.min ?? 9999) || a.km - b.km);
+    document.getElementById("medList").innerHTML = L2.slice(0, 80).map((x) => `
+      <div class="med-item" data-id="${escapeHtml(x.id)}">
+        <div class="mi-top"><span class="mi-k ${x.kind === "hospital" ? "h" : "c"}">${KIND[x.kind] || "의료"}</span>
+          ${x.emergency ? '<span class="mi-e">응급실</span>' : ""}${x.own ? `<span class="mi-o">${OWN[x.own]}</span>` : ""}
+          <span class="mi-d">${dist(x)}</span></div>
+        <div class="mi-n">${nm(x)}</div>
+        <div class="mi-x">${x.phone ? `☎ <a href="tel:${escapeHtml(x.phone.replace(/\s/g, ""))}">${escapeHtml(x.phone)}</a> · ` : ""}${x.beds ? `병상 ${escapeHtml(x.beds)} · ` : ""}<a href="${dirUrl(x)}" target="_blank" rel="noopener">길찾기 ↗</a></div>
+      </div>`).join("") || `<p class="med-empty">해당하는 시설이 없어요</p>`;
+    document.querySelectorAll("#medList .med-item").forEach((el) => el.addEventListener("click", (e) => { if (!e.target.closest("a")) focus(el.dataset.id); }));
+  }
+
+  function focus(id) {
+    const m = marks[id]; if (!m) return;
+    map.setView(m.getLatLng(), Math.max(map.getZoom(), 13), { animate: true });
+    m.openPopup();
+    document.querySelectorAll("#medList .med-item").forEach((el) => el.classList.toggle("on", el.dataset.id === id));
+  }
+
+  function draw() {
+    if (!map) {
+      map = L.map("medMap", { zoomSnap: 0.5 }).setView([BISMAYAH_LAT, BISMAYAH_LON], 10);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "&copy; OpenStreetMap contributors", maxZoom: 18 }).addTo(map);
+      [10, 20, 40].forEach((k) => L.circle([BISMAYAH_LAT, BISMAYAH_LON], { radius: k * 1000, color: "#35d0c0", weight: 1, dashArray: "5 6", fill: false, interactive: false }).addTo(map));
+      L.marker([BISMAYAH_LAT, BISMAYAH_LON], { icon: L.divIcon({ className: "map-label-wrap", html: '<span class="site-star">★</span>', iconSize: [0, 0] }), zIndexOffset: 1000 })
+        .bindPopup("<b>비스마야 현장</b>").addTo(map);
+      layer = L.layerGroup().addTo(map);
+    }
+    layer.clearLayers(); marks = {};
+    data.items.forEach((x) => {
+      const h = x.kind === "hospital";
+      const cls = h ? (x.emergency ? "mk e" : "mk h") : "mk c";
+      const m = L.marker([x.lat, x.lon], { icon: L.divIcon({ className: "med-mk-wrap", html: `<i class="${cls}">${h ? "+" : ""}</i>`, iconSize: [h ? 20 : 12, h ? 20 : 12], iconAnchor: [h ? 10 : 6, h ? 10 : 6] }), zIndexOffset: h ? 500 : 0 })
+        .bindPopup(`<b>${escapeHtml(main(x))}</b>${ar(x) && ar(x) !== main(x) ? `<br><span style="opacity:.75" dir="rtl">${escapeHtml(ar(x))}</span>` : ""}
+          <br>${KIND[x.kind] || ""}${x.emergency ? " · 응급실" : ""}${x.own ? " · " + OWN[x.own] : ""}
+          <br>${dist(x)}${x.phone ? `<br>☎ ${escapeHtml(x.phone)}` : ""}
+          <br><a href="${dirUrl(x)}" target="_blank" rel="noopener">구글 지도 길찾기 ↗</a>`);
+      m.addTo(layer); marks[x.id] = m;
+    });
+    setTimeout(() => map.invalidateSize(), 120);
+  }
+
+  async function load() {
+    if (data) { setTimeout(() => map && map.invalidateSize(), 120); return; }
+    try {
+      const r = await fetch("medical-facilities.json", { cache: "no-store" });
+      if (!r.ok) throw new Error("아직 자료가 없습니다 (자동 수집 대기 중)");
+      data = await r.json();
+    } catch (e) {
+      document.getElementById("medCards").innerHTML = `<p class="skeleton">의료시설 정보를 불러오지 못했습니다. ${escapeHtml(e.message)}</p>`;
+      return;
+    }
+    cards(); list(); draw();
+    const d = new Date(data.updatedAt);
+    document.getElementById("medMeta").textContent = `출처: OpenStreetMap(© OpenStreetMap contributors) · 도로 거리·시간: OSRM (교통 상황 미반영) · 매주 갱신 · 마지막 수집 ${d.toLocaleDateString("ko-KR")}`;
+  }
+  document.getElementById("medFilter")?.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b || !data) return;
+    filter = b.dataset.f;
+    document.querySelectorAll("#medFilter button").forEach((x) => x.classList.toggle("active", x === b));
+    list();
+  });
+  document.querySelectorAll('.tab-btn[data-view="view-health-medical"]').forEach((b) => b.addEventListener("click", load));
+})();

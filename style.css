@@ -3299,3 +3299,42 @@ body:has(.hse-intro) .ai-assist { display: none; }
 .sug-answer { margin-top: 8px; padding: 8px 10px; border-left: 3px solid var(--cyan); background: rgba(53, 208, 192, 0.07); border-radius: 0 8px 8px 0; color: var(--text); }
 .sug-answer b { display: block; font-size: 11.5px; color: var(--cyan); margin-bottom: 2px; }
 .sug-empty { font-size: 13px; color: var(--text-dim); padding: 14px 4px; }
+
+/* ---------- 보건 > 주변 의료시설 ---------- */
+.med-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 14px; }
+@media (max-width: 1000px) { .med-cards { grid-template-columns: 1fr 1fr; } }
+.med-card { border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; background: rgba(255,255,255,0.03); cursor: pointer; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.med-card span { font-size: 11.5px; color: var(--text-dim); }
+.med-card b { font-size: 15px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.med-card em { font-style: normal; font-size: 12.5px; color: var(--cyan); font-family: var(--font-mono); }
+.med-card.er { border-color: rgba(229,72,77,0.55); } .med-card.er em { color: #ff8a8d; }
+.med-card.cnt { cursor: default; }
+.med-cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: 14px; }
+@media (max-width: 1000px) { .med-cols { grid-template-columns: 1fr; } }
+.med-map { height: 520px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+.med-legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 11.5px; color: var(--text-dim); margin-top: 8px; align-items: center; }
+.med-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.med-legend i.ring { width: 14px; height: 14px; border-radius: 50%; border: 1px dashed #35d0c0; }
+.med-mk-wrap { background: none; border: none; }
+i.mk { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-style: normal; font-weight: 900; color: #fff; box-shadow: 0 0 0 2px rgba(0,0,0,0.35); }
+.med-mk-wrap i.mk { width: 100%; height: 100%; font-size: 14px; line-height: 1; }
+.med-legend i.mk { width: 12px; height: 12px; }
+i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 2px #fff, 0 0 10px rgba(229,72,77,0.8); } i.mk.c { background: #4fb4ff; }
+.med-filter { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.med-filter button { font-family: var(--font-body); font-size: 12px; cursor: pointer; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--border); background: transparent; color: var(--text-muted); }
+.med-filter button.active { background: var(--cyan); border-color: var(--cyan); color: #0a0e13; font-weight: 700; }
+.med-list { display: flex; flex-direction: column; gap: 6px; max-height: 500px; overflow-y: auto; padding-right: 2px; }
+.med-item { border: 1px solid var(--border); border-radius: 10px; padding: 9px 11px; cursor: pointer; background: rgba(255,255,255,0.02); }
+.med-item:hover, .med-item.on { border-color: var(--cyan); background: rgba(53,208,192,0.06); }
+.mi-top { display: flex; align-items: center; gap: 6px; font-size: 11px; }
+.mi-k { font-weight: 800; padding: 1px 7px; border-radius: 999px; color: #0a0e13; } .mi-k.h { background: #ff7e79; } .mi-k.c { background: #4fb4ff; }
+.mi-e { font-weight: 800; padding: 1px 7px; border-radius: 999px; background: #e5484d; color: #fff; }
+.mi-o { padding: 1px 7px; border-radius: 999px; border: 1px solid var(--border); color: var(--text-muted); }
+.mi-d { margin-left: auto; font-family: var(--font-mono); color: var(--cyan); }
+.mi-n { margin-top: 4px; font-size: 13.5px; color: var(--text); font-weight: 700; }
+.mi-n small, .med-card small { display: block; font-size: 11.5px; font-weight: 400; color: var(--text-dim); }
+.mi-x { margin-top: 3px; font-size: 12px; color: var(--text-dim); }
+.mi-x a { color: var(--cyan); text-decoration: none; }
+.med-empty { font-size: 13px; color: var(--text-dim); padding: 12px 4px; }
+.med-warn { margin-top: 12px; font-size: 12.5px; line-height: 1.7; color: var(--text-muted); padding: 10px 12px; border-radius: 10px; border: 1px solid rgba(229,72,77,0.4); background: rgba(229,72,77,0.07); }
+.med-warn b { color: #ffb4b4; }
