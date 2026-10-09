@@ -936,13 +936,18 @@ function alignSideWidgets() {
       const tabBarRect = (tabBarEl.querySelector(".group-bar") || tabBarEl).getBoundingClientRect();
       const tabBarCenterY = tabBarRect.top + tabBarRect.height / 2;
       const groupHeight = rightGroup.offsetHeight || 0;
-      rightGroup.style.left = `${Math.round(calendarRight - groupWidth + scrollX)}px`;
+      // 왼쪽 위치 대신 '오른쪽 끝'을 달력에 맞춘다 (글꼴이 늦게 읽혀 버튼 폭이 바뀌어도 오른쪽 끝은 그대로)
+      void groupWidth;
+      rightGroup.style.position = ""; rightGroup.style.marginLeft = "";   // 창을 좁혔다 넓히면 남아 있던 static(탭 줄 안 자리)을 풀어 준다
+      rightGroup.style.left = "auto";
+      rightGroup.style.right = `${Math.round(document.documentElement.clientWidth - calendarRight - scrollX)}px`;
       rightGroup.style.top = `${Math.round(tabBarCenterY - groupHeight / 2 + scrollY)}px`;
       rightGroup.style.display = "";
     } else {
       // 달력 자체가 안 뜨는 좁은 화면에서는 탭 바 안의 원래 자리로 되돌린다
       rightGroup.style.left = "";
       rightGroup.style.top = "";
+      rightGroup.style.right = "";
       rightGroup.style.position = "static";
       rightGroup.style.marginLeft = "auto";
     }
