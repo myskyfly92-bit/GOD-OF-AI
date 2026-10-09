@@ -5159,7 +5159,26 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
         }
       }
       const world = await (await fetch("world-map.json?v=iso2")).json();
-      return { d3: window.d3, world };
+      // 비행기 창문 속 헌수호 영상 (없거나 못 받으면 이 장면만 건너뛴다)
+      let planeVid = null;
+      try {
+        const probe = document.createElement("video");
+        const src = probe.canPlayType('video/webm; codecs="vp9"') ? "assets/intro-plane.webm?v=1" : probe.canPlayType("video/mp4") ? "assets/intro-plane.mp4?v=1" : "";
+        const r = src ? await fetch(src) : { ok: false };
+        if (r.ok) {
+          const url = URL.createObjectURL(await r.blob());
+          planeVid = await new Promise((res) => {
+            const v = document.createElement("video");
+            v.muted = true; v.playsInline = true; v.preload = "auto"; v.src = url;
+            const ok = () => res(v), bad = () => res(null);
+            v.addEventListener("canplaythrough", ok, { once: true });
+            v.addEventListener("error", bad, { once: true });
+            setTimeout(() => res(v.readyState >= 3 ? v : null), 15000);
+            v.load();
+          });
+        }
+      } catch (e) { planeVid = null; }
+      return { d3: window.d3, world, planeVid };
     } catch (e) {
       console.warn("[인트로] 지구본 준비 실패, 건너뜀", e);
       return null;
@@ -5190,6 +5209,42 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
 
     const T1 = 3200, T2 = 1900; // 1단계: 서울→비스마야 비행 / 2단계: 현장으로 확대
     let start = 0, handed = false;
+    // 비행 중간에 비행기로 확대 → 창문 속 헌수호 영상 → 하얗게 넘어와 다시 지구본 (영상이 있을 때만)
+    const vid = globe.planeVid;
+    const CUT = T1 * 0.5, TZ = 1100, TB = 900, VID_END = 7.95;
+    let mode = "fly", zoomAt = 0, backAt = 0, paused = 0, closeDone = !vid;
+    const whiteEl = document.createElement("div");
+    whiteEl.className = "globe-white";
+    box.appendChild(whiteEl);
+    if (vid) { vid.className = "globe-plane-vid"; box.appendChild(vid); }
+    const zEase = (x) => x * x * (3 - 2 * x);
+    function startVideo(now) {
+      mode = "video";
+      whiteEl.style.transition = "none"; whiteEl.style.opacity = "1";
+      let fading = false, ended = false;
+      const finish = () => {
+        if (ended) return; ended = true;
+        try { vid.pause(); } catch (e) {}
+        vid.style.opacity = "0"; setTimeout(() => vid.remove(), 400);
+        paused += performance.now() - zoomAt;
+        mode = "back"; backAt = performance.now();
+        whiteEl.style.transition = "opacity .7s ease"; whiteEl.style.opacity = "0";
+        capbox.style.opacity = "1";
+        requestAnimationFrame(frame);
+      };
+      const watch = () => {
+        if (isFinished()) { try { vid.pause(); } catch (e) {} return; }
+        if (!fading && vid.currentTime >= VID_END - 0.5) { fading = true; whiteEl.style.transition = "opacity .45s ease-in"; whiteEl.style.opacity = "1"; }
+        if (vid.currentTime >= VID_END || vid.ended) return finish();
+        requestAnimationFrame(watch);
+      };
+      try { vid.currentTime = 0; } catch (e) {}
+      const p = vid.play();
+      requestAnimationFrame(() => { vid.style.opacity = "1"; whiteEl.style.transition = "opacity .5s ease"; whiteEl.style.opacity = "0"; });
+      if (p && p.catch) p.catch(finish);
+      setTimeout(finish, 12000);                    // 혹시 멈춰도 넘어가게
+      requestAnimationFrame(watch);
+    }
     capbox.innerHTML = `<div class="hse-intro-cap globe"><b id="globeKm">0 km</b><span>SEOUL → BISMAYAH · 서울에서 비스마야까지</span></div>`;
     const kmEl = capbox.querySelector("#globeKm");
 
@@ -5237,13 +5292,19 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
 
     function frame(now) {
       if (isFinished()) return;
+      if (mode === "video") return;
       if (!start) start = now;
-      const t = now - start;
+      let t = now - start - paused;
+      if (mode === "fly" && !closeDone && t >= CUT) { mode = "zoom"; zoomAt = now; closeDone = true; capbox.style.transition = "opacity .5s"; capbox.style.opacity = "0"; }
+      let zk = 0;                                       // 비행기 쪽 확대 정도 (0~1)
+      if (mode === "zoom") { t = CUT; zk = zEase(Math.min(1, (now - zoomAt) / TZ)); }
+      else if (mode === "back") { const b = Math.min(1, (now - backAt) / TB); zk = 1 - zEase(b); if (b >= 1) mode = "fly"; }
       let center, k = 1, arcT = 1;
       if (t < T1) {
         const e = ease(Math.min(1, t / T1));
         arcT = e;
-        center = interp(Math.min(1, e * 1.05)); // 비행기 머리를 따라 지구가 돈다
+        center = interp(Math.min(1, e * (1.05 - 0.05 * zk))); // 비행기 머리를 따라 지구가 돈다 (확대할 땐 비행기 한가운데로)
+        k = 1 + 5 * zk * zk;
       } else {
         center = SITE;
         const e = ease(Math.min(1, (t - T1) / T2));
@@ -5289,7 +5350,13 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
         const ang = arcT < 0.99 ? Math.atan2(a[1] - hy, a[0] - hx) : Math.atan2(hy - a[1], hx - a[0]);
         const land = t < T1 ? 0 : Math.min(1, (t - T1) / 700);          // 도착하면 내려앉으며 사라진다
         const lift = Math.sin(Math.PI * Math.min(1, arcT)) * 12 * (1 - land);   // 가운데쯤 가장 높이
-        drawPlane(hx, hy, ang, (1.3 + lift / 30) * (1 - land * 0.45), 1 - land, lift);
+        drawPlane(hx, hy, ang, (1.3 + lift / 30) * (1 - land * 0.45) * (1 + 7 * zk * zk), 1 - land, lift * (1 - zk));
+      }
+      // 비행기로 확대하는 끝무렵 하얗게 (구름 속으로 들어가는 느낌) → 영상 시작
+      if (mode === "zoom") {
+        const w = Math.max(0, (zk - 0.55) / 0.45);
+        if (w > 0) { ctx.fillStyle = `rgba(255,255,255,${(w * w).toFixed(3)})`; ctx.fillRect(0, 0, W, H); }
+        if (now - zoomAt >= TZ) { ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, W, H); startVideo(now); return; }
       }
       label(SEOUL, "SEOUL", "#35d0c0");
       if (arcT > 0.95) {
