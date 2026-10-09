@@ -6090,6 +6090,7 @@ async function clinicCall(action, payload) {
 
   const $ = (sel) => root.querySelector(sel);
   const panel = $(".ai-panel"), log = $(".ai-log"), ta = $("textarea"), form = $(".ai-form");
+  log.addEventListener("click", (e) => { const c = e.target.closest(".ai-cite"); if (c) toggleCite(c); });   // 조문 표시 → 원문 펼치기
   const fileIn = $(".ai-photo input"), preview = $(".ai-preview");
 
   function open(v) {
@@ -6211,6 +6212,84 @@ async function clinicCall(action, payload) {
     ask(q, img, null);
   }
 
+  // ---- 답변 속 [조문] 표시를 누르면 그 조문 원문을 바로 아래에 펼쳐 보여 준다 (kr-laws.json, 처음 누를 때 한 번만 받음) ----
+  let lawsP = null;
+  const loadLaws = () => (lawsP = lawsP || fetch("kr-laws.json").then((r) => r.json()).catch(() => { lawsP = null; return null; }));
+  const norm = (t) => String(t || "").replace(/[\s「」『』·ㆍ]/g, "");
+  function findArticle(db, cite) {
+    const m = cite.match(/^(.*?)\s*(제\d+조(?:의\d+)?)/);
+    if (!m) return null;
+    const lawTxt = norm(m[1]), no = m[2];
+    let best = null, bestLen = 0;
+    db.laws.forEach((L, i) => {
+      [L.name, L.short].forEach((nm) => {
+        const n = norm(nm);
+        if (!n) return;
+        // 정확히 같은 이름 > 끝이 같은 이름 > 앞부분만 같은 이름 순 (예: '산업안전보건법'이 '…법 시행규칙'으로 가지 않게)
+        const sc = lawTxt === n ? 3000 : lawTxt.endsWith(n) ? 2000 : (lawTxt.length >= 3 && n.startsWith(lawTxt) ? 1000 - n.length : 0);
+        const score = sc >= 2000 ? sc + n.length : sc;
+        if (sc && score > bestLen) { best = i; bestLen = score; }
+      });
+    });
+    if (best === null) return null;
+    const a = db.articles.find((x) => x.l === best && x.no === no);
+    return a ? { law: db.laws[best], art: a } : { law: db.laws[best], art: null, no };
+  }
+  async function toggleCite(el) {
+    const next = el.closest("p, li");
+    const host = next || el;
+    const key = el.textContent.trim();
+    const open = host.nextElementSibling && host.nextElementSibling.classList.contains("ai-art") && host.nextElementSibling.dataset.key === key;
+    if (open) { host.nextElementSibling.remove(); el.classList.remove("on"); return; }
+    if (host.nextElementSibling && host.nextElementSibling.classList.contains("ai-art")) host.nextElementSibling.remove();
+    el.closest(".ai-msg").querySelectorAll(".ai-cite.on").forEach((x) => x.classList.remove("on"));
+    const box = document.createElement("div");
+    box.className = "ai-art"; box.dataset.key = key;
+    box.innerHTML = `<p class="ai-art-wait">원문을 불러오는 중…</p>`;
+    host.after(box); el.classList.add("on");
+    const db = await loadLaws();
+    const f = db && findArticle(db, key);
+    if (!f) { box.innerHTML = `<p class="ai-art-none">이 조문은 사이트에 원문이 없어요 (이라크 법령 등). 아래 근거 조문 링크로 확인해 주세요.</p>`; return; }
+    const link = `${f.law.link}/${f.art ? f.art.no : f.no}`;
+    box.innerHTML = f.art
+      ? `<div class="ai-art-h"><b>${esc(f.law.name)} ${esc(f.art.no)}</b>${f.art.t ? `<span>${esc(f.art.t)}</span>` : ""}<button type="button" class="ai-art-x" aria-label="닫기">✕</button></div>` +
+        `<div class="ai-art-x-body">${esc(f.art.x).replace(/\n/g, "<br>")}</div>` +
+        `<a class="ai-art-link" href="${esc(link)}" target="_blank" rel="noopener noreferrer">국가법령정보센터에서 보기 ↗</a>` +
+        (f.law.efYd ? `<span class="ai-art-ef">시행 ${esc(f.law.efYd.replace(/(\d{4})(\d{2})(\d{2})/, "$1.$2.$3"))}</span>` : "")
+      : `<p class="ai-art-none">${esc(f.law.name)} ${esc(f.no)}는 저장된 조문 목록에 없어요.</p><a class="ai-art-link" href="${esc(link)}" target="_blank" rel="noopener noreferrer">국가법령정보센터에서 찾아보기 ↗</a>`;
+    const x = box.querySelector(".ai-art-x");
+    if (x) x.onclick = () => { box.remove(); el.classList.remove("on"); };
+  }
+
+  // ---- 답변 평가 (👍/👎 + 아쉬운 점) → Apps Script action=aiRate → 구글 시트 '법령도우미평가' 탭 ----
+  function addRate(msg, q, answer) {
+    const row = document.createElement("div");
+    row.className = "ai-rate";
+    row.innerHTML = `<span>답이 도움이 됐나요?</span><button type="button" data-r="1" aria-label="도움이 됐어요">👍</button><button type="button" data-r="-1" aria-label="아쉬워요">👎</button>`;
+    msg.appendChild(row);
+    const send = async (r, c) => {
+      row.innerHTML = `<span class="ai-rate-done">${r > 0 ? "고마워요! 👍" : "의견 고마워요. 더 좋아지게 할게요."}</span>`;
+      try {
+        const url = await getUrl();
+        const enc = (o) => btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(o)))).replace(/\+/g, "-").replace(/\//g, "_");
+        let a = String(answer || "").replace(/\s+/g, " ");
+        let b64 = enc({ r, q: String(q || "").slice(0, 300), a: a.slice(0, 500), c: String(c || "").slice(0, 300) });
+        if (b64.length > 1800) b64 = enc({ r, q: String(q || "").slice(0, 200), a: a.slice(0, 200), c: String(c || "").slice(0, 200) });
+        await fetch(url + (url.includes("?") ? "&" : "?") + "action=aiRate&p=" + encodeURIComponent(b64) + "&t=" + Date.now());
+      } catch (e) { /* 평가는 못 보내도 대화는 계속 */ }
+    };
+    row.querySelector('[data-r="1"]').onclick = () => send(1, "");
+    row.querySelector('[data-r="-1"]').onclick = () => {
+      row.innerHTML = `<input type="text" maxlength="300" placeholder="어떤 점이 아쉬웠나요? (선택)"><button type="button" class="ai-rate-send">보내기</button>`;
+      const inp = row.querySelector("input");
+      inp.focus();
+      const go = () => send(-1, inp.value.trim());
+      row.querySelector(".ai-rate-send").onclick = go;
+      inp.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); go(); } });
+      log.scrollTop = log.scrollHeight;
+    };
+  }
+
   // 질문을 보내고 답을 그린다. 붐빌 때는 조금 기다렸다가 자동으로 한 번 더 시도하고,
   // 그래도 조문만 받았으면 "AI 답변 다시 받기" 버튼을 붙인다.
   async function ask(q, img, target) {
@@ -6281,6 +6360,7 @@ async function clinicCall(action, payload) {
         wait.querySelector(".ai-retry").onclick = () => ask(q, img, wait);
       } else {
         history.push({ role: "user", text: q || "(사진 점검)" }, { role: "bot", text: j.answer });
+        addRate(wait, q || "(사진 점검)", j.answer);
       }
     } catch (err) {
       wait.className = "ai-msg ai-bot ai-err";
@@ -6337,7 +6417,7 @@ async function clinicCall(action, payload) {
       { sel: "#langSwitcher", text: `<b>언어 선택</b>이에요. <b>ENG</b> 나 <b>العربية</b> 를 누르면 화면 글자가 자동 번역돼요. 영어·아랍어를 쓰는 동료에게 보여 줄 때 좋아요.<br>자동 번역이라 어색한 말이 있을 수 있으니 중요한 내용은 한국어로 한 번 더 확인하세요.` },
       { sel: "#familySiteSelect", text: `<b>패밀리사이트</b> 바로가기예요. 목록에서 고르면 <b>BNCP AI Assistant</b> 같은 관련 사이트가 새 창으로 열려요.` },
       { sel: ".bg-peek-btn", text: `위쪽 메뉴줄의 <b>🖼 배경 보기</b>를 누르면 카드들이 잠깐 숨고 배경 사진이 보여요. 다시 누르거나 <b>Esc</b> 를 누르면 돌아와요.<br>한동안 화면을 안 만지면 상황실 화면처럼 자동으로 배경이 보이기도 해요.` },
-      { sel: ".ai-fab", text: `오른쪽 아래 <b>법령 도우미</b>예요. "고소작업 안전대 기준은?", "이라크 노동법 근로시간은?" 처럼 <b>평소 말투로 물어보면</b> <b>한국 산업안전보건법</b>과 <b>이라크 법</b>을 함께 찾아서 답해 줘요.<br>📷 <b>현장 사진</b>을 올리면 위험요소도 짚어 줘요. 답은 참고용이니 중요한 판단은 원문으로 확인하세요.` },
+      { sel: ".ai-fab", text: `오른쪽 아래 <b>법령 도우미</b>예요. "고소작업 안전대 기준은?", "이라크 노동법 근로시간은?" 처럼 <b>평소 말투로 물어보면</b> <b>한국 산업안전보건법</b>과 <b>이라크 법</b>을 함께 찾아서 답해 줘요.<br>📷 <b>현장 사진</b>을 올리면 위험요소도 짚어 줘요. 답 속 <b>[조문]</b>을 누르면 원문이 펼쳐지고, 👍/👎로 답을 평가할 수 있어요. 답은 참고용이니 중요한 판단은 원문으로 확인하세요.` },
       { sel: null, text: `안내를 다시 보고 싶으면 화면 <b>왼쪽 아래 '사용 안내'</b> 버튼을 누르세요. 거기서 필요한 장만 골라 볼 수도 있어요.` },
     ]},
     { id: "home", title: "종합현황", icon: "📊", steps: [
