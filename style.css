@@ -3527,6 +3527,7 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 
 /* 법령 도우미: 조문 원문 펼치기 · 답변 평가 */
 .ai-cite { cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; }
+.ai-src.kr.on { outline: 1px solid var(--cyan); }
 .ai-cite:hover, .ai-cite.on { filter: brightness(1.25); text-decoration-style: solid; }
 .ai-art { margin: 6px 0 10px; padding: 10px 12px; border-radius: 10px; background: rgba(53,208,192,0.07); border: 1px solid rgba(53,208,192,0.3); font-size: 12.5px; line-height: 1.6; }
 .ai-art-h { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }

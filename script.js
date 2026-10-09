@@ -6090,7 +6090,12 @@ async function clinicCall(action, payload) {
 
   const $ = (sel) => root.querySelector(sel);
   const panel = $(".ai-panel"), log = $(".ai-log"), ta = $("textarea"), form = $(".ai-form");
-  log.addEventListener("click", (e) => { const c = e.target.closest(".ai-cite"); if (c) toggleCite(c); });   // 조문 표시 → 원문 펼치기
+  log.addEventListener("click", (e) => {
+    const c = e.target.closest(".ai-cite, .ai-src.kr[data-cite]");
+    if (!c) return;
+    e.preventDefault();          // 한국 조문 칩도 새 창 대신 바로 아래에 원문을 펼친다 (원문 상자 안에 법령정보센터 링크가 있음)
+    toggleCite(c);
+  });   // 조문 표시 → 원문 펼치기
   const fileIn = $(".ai-photo input"), preview = $(".ai-preview");
 
   function open(v) {
@@ -6236,13 +6241,13 @@ async function clinicCall(action, payload) {
     return a ? { law: db.laws[best], art: a } : { law: db.laws[best], art: null, no };
   }
   async function toggleCite(el) {
-    const next = el.closest("p, li");
-    const host = next || el;
-    const key = el.textContent.trim();
+    // 본문 속 [조문]은 그 문단 아래에, '근거 조문' 칩은 칩 줄 아래에 펼친다
+    const host = el.closest(".ai-srcs, details") || el.closest("p, li") || el;
+    const key = (el.dataset.cite || el.textContent).trim();
     const open = host.nextElementSibling && host.nextElementSibling.classList.contains("ai-art") && host.nextElementSibling.dataset.key === key;
     if (open) { host.nextElementSibling.remove(); el.classList.remove("on"); return; }
     if (host.nextElementSibling && host.nextElementSibling.classList.contains("ai-art")) host.nextElementSibling.remove();
-    el.closest(".ai-msg").querySelectorAll(".ai-cite.on").forEach((x) => x.classList.remove("on"));
+    el.closest(".ai-msg").querySelectorAll(".ai-cite.on, .ai-src.on").forEach((x) => x.classList.remove("on"));
     const box = document.createElement("div");
     box.className = "ai-art"; box.dataset.key = key;
     box.innerHTML = `<p class="ai-art-wait">원문을 불러오는 중…</p>`;
@@ -6259,6 +6264,7 @@ async function clinicCall(action, payload) {
       : `<p class="ai-art-none">${esc(f.law.name)} ${esc(f.no)}는 저장된 조문 목록에 없어요.</p><a class="ai-art-link" href="${esc(link)}" target="_blank" rel="noopener noreferrer">국가법령정보센터에서 찾아보기 ↗</a>`;
     const x = box.querySelector(".ai-art-x");
     if (x) x.onclick = () => { box.remove(); el.classList.remove("on"); };
+    box.scrollIntoView({ block: "nearest", behavior: "smooth" });   // 펼친 원문이 대화창 아래로 숨지 않게
   }
 
   // ---- 답변 평가 (👍/👎 + 아쉬운 점) → Apps Script action=aiRate → 구글 시트 '법령도우미평가' 탭 ----
@@ -6349,7 +6355,7 @@ async function clinicCall(action, payload) {
       const src = (j.sources || []);
       const cited = src.slice(0, Math.max(j.citedCount || 0, 0));
       const others = src.slice(cited.length);
-      const chip = (s) => `<a class="ai-src ${s.kr ? "kr" : "iq"}" href="${esc(s.link)}" target="_blank" rel="noopener noreferrer" title="${esc(s.name)}${s.t ? " · " + esc(s.t) : ""}"><i>${s.kr ? "한국" : "이라크"}</i>${esc(s.law.replace(/^이라크\s*/, ""))} ${esc(s.no)}</a>`;
+      const chip = (s) => `<a class="ai-src ${s.kr ? "kr" : "iq"}"${s.kr ? ` data-cite="${esc(s.law)} ${esc(s.no)}"` : ""} href="${esc(s.link)}" target="_blank" rel="noopener noreferrer" title="${esc(s.name)}${s.t ? " · " + esc(s.t) : ""}"><i>${s.kr ? "한국" : "이라크"}</i>${esc(s.law.replace(/^이라크\s*/, ""))} ${esc(s.no)}</a>`;
       wait.className = "ai-msg ai-bot" + (j.degraded ? " ai-degraded" : "");
       wait.innerHTML = md(j.answer) +
         (cited.length ? `<div class="ai-srcs"><span>근거 조문</span>${cited.map(chip).join("")}</div>` : "") +
