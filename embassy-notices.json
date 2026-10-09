@@ -6,7 +6,7 @@
     "안전공지": true
   },
   "errors": {
-    "안전공지": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Read timed out. (read timeout=30)"
+    "안전공지": "KOSHA_API_KEY/전체받기: 응답은 정상이지만 중동 국가 공지가 0건 | MOFA_API_KEY/전체받기: 응답은 정상이지만 중동 국가 공지가 0건"
   },
   "countries": [
     {
@@ -1380,5 +1380,5 @@
       "file": ""
     }
   ],
-  "lastTriedAt": "2026-10-09T01:21:51.845681+00:00"
+  "lastTriedAt": "2026-10-09T10:51:52.464133+00:00"
 }
