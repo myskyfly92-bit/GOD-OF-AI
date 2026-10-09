@@ -7478,11 +7478,16 @@ function hseWeldWord(host, wordEl, onDone) {
     return cs.visibility === "hidden" || cs.display === "none" || parseFloat(cs.opacity) < 0.5;
   };
   const STOP = new Error("rappel-stop");
+  // 장면 도중 창 크기·화면 배율이 바뀌면 처음에 잰 위치(탭·카드·고리)가 다 어긋나므로 장면을 접고 배너로 돌아간다
+  // (다음 장면은 새 크기로 다시 잰다)
+  let sizeChanged = false;
+  window.addEventListener("resize", () => { if (running) sizeChanged = true; });
+  const mustStop = () => cardsHidden() || sizeChanged;
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const wait = (ms) => new Promise((r, j) => {                  // 기다리는 동안에도 카드가 숨으면 멈춘다
     const t0 = Date.now();
     const iv = setInterval(() => {
-      if (running && cardsHidden()) { clearInterval(iv); j(STOP); }
+      if (running && mustStop()) { clearInterval(iv); j(STOP); }
       else if (Date.now() - t0 >= ms) { clearInterval(iv); r(); }
     }, 40);
   });
@@ -7501,7 +7506,7 @@ function hseWeldWord(host, wordEl, onDone) {
     return new Promise((res, rej) => {
       const t0 = performance.now();
       const step = (now) => {
-        if (running && cardsHidden()) return rej(STOP);
+        if (running && mustStop()) return rej(STOP);
         const t = Math.min(1, (now - t0) / ms); fn(t); if (t < 1) requestAnimationFrame(step); else res();
       };
       requestAnimationFrame(step);
@@ -7525,7 +7530,7 @@ function hseWeldWord(host, wordEl, onDone) {
     const card = document.querySelector(".view.active .grid > .panel");
     const cardTop = card ? card.getBoundingClientRect().top : tr.bottom + 40;
     if (!rr.width || !tr.width || tr.top < 0) return;
-    running = true;
+    running = true; sizeChanged = false;
     // 배너 마스코트를 먼저 그 자리에 세운다 (서 있는 정면 그림 = 뛰어내리기 영상 첫 장면)
     window.__mascotHold = true;
     await sleep(120);
@@ -7605,7 +7610,7 @@ function hseWeldWord(host, wordEl, onDone) {
       await new Promise((res, rej) => {
         let x = x1, last = 0, el = 0;
         const step = (ts) => {
-          if (cardsHidden()) return rej(STOP);
+          if (mustStop()) return rej(STOP);
           const dt = last ? Math.min(0.1, (ts - last) / 1000) : 0; last = ts; el += dt;
           const hop0 = hopAt(x + RUN_W / 2);
           x += dir * (hop0 > 0 ? HOP_V : RUN_V) * dt;
