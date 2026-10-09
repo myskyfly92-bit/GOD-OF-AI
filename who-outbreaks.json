@@ -8,6 +8,22 @@
   "errors": {},
   "items": [
     {
+      "kind": "WHO 소식",
+      "title": "WHO Youth Council welcomes 2026–2028 members in Berlin",
+      "date": "2026-10-09T12:30:33Z",
+      "summary": "The WHO Youth Council launched its 2026–2028 term in Berlin on 9–10 October 2026, bringing together 25 youth-led and youth-serving organizations from around the world. Members reviewed progress from the previous term, set priorities for the next two years, and strengthened their role in advancing meaningful youth participation in global health governance. The meeting was followed by participation in the World Health Summit.",
+      "link": "https://www.who.int/news/item/09-10-2026-who-youth-council-welcomes-2026-2028-members-in-berlin",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO urges shift from institutional to community-based mental health care",
+      "date": "2026-10-09T09:00:00Z",
+      "summary": "WHO has released a new guide to support countries in shifting away from institutionalized mental health care models focused on long-term stays in psychiatric hospitals towards person-centred care in the community that respect people’s rights and choices.",
+      "link": "https://www.who.int/news/item/09-10-2026-who-urges-shift-from-institutional-to-community-based-mental-health-care",
+      "newsType": "News release"
+    },
+    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-10-08T16:06:26Z",
@@ -120,22 +136,6 @@
       "newsType": "News release"
     },
     {
-      "kind": "WHO 소식",
-      "title": "WHO advances tools to govern life sciences and dual-use research",
-      "date": "2026-09-29T17:25:39Z",
-      "summary": "As rapid advances in biotechnology, genomics, synthetic biology, artificial intelligence and related life sciences continue to reshape global health and innovation, countries face a growing need to manage emerging risks without slowing scientific progress. Tools and knowledge developed for beneficial purposes can also pose risks if misused accidentally, inadvertently or deliberately. The World Health Organization (WHO) is responding by supporting Member States with practical, evidence-informed, ",
-      "link": "https://www.who.int/news/item/29-09-2026-who-advances-tools-to-govern-life-sciences-and-dual-use-research",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO and partners discuss governance of traditional medicine knowledge in the AI era at WIPO-IGC",
-      "date": "2026-09-29T12:00:00Z",
-      "summary": "From left to right: Thiru Balasubramanium, Dr. Suerie Moon, James Love, Ambassador Guilherme de Aguiar Patriota, Peter Harrison, Margo A BagleyCredit: IFPMA/Komal KalhaBringing together experts from international organizations, academia, governments and civil society, WHO-KEI (Knowledge Ecology International) co-organized an event on the sidelines of 53rd Inter Government Consultations (IGC) at World Intellectual Property Organization (WIPO) on 22 September 2026. It explored how intellectual pro",
-      "link": "https://www.who.int/news/item/29-09-2026-who-and-partners-discuss-governance-of-traditional-medicine-knowledge-in-the-ai-era-at-wipo-igc",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-09-25T15:30:18Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON609"
     }
   ],
-  "generatedAt": "2026-10-09T12:15:16.984095+00:00"
+  "generatedAt": "2026-10-09T21:59:11.363424+00:00"
 }
