@@ -6692,11 +6692,32 @@ function hseWeldWord(host, wordEl, onDone) {
   const setText = (x) => { x.font = font; x.textAlign = "center"; x.textBaseline = "middle"; try { x.letterSpacing = cs.letterSpacing; } catch (e) {} };
 
   // ---- 글자 그림들 ----
-  const [steel, sc] = mk(bw, bh);            // 완성: 은빛 강철
+  const [steel, sc] = mk(bw, bh);            // 완성: 솔질한 강철 + 모서리가 깎인 입체 글자
   setText(sc);
-  const gs = sc.createLinearGradient(0, bh * 0.22, 0, bh * 0.78);
-  gs.addColorStop(0, "#ffffff"); gs.addColorStop(0.45, "#e4e8ee"); gs.addColorStop(0.55, "#b9c2cd"); gs.addColorStop(1, "#eef1f5");
+  const gs = sc.createLinearGradient(0, bh * 0.2, 0, bh * 0.8);
+  gs.addColorStop(0, "#f7f9fb"); gs.addColorStop(0.42, "#cfd6de"); gs.addColorStop(0.5, "#9aa5b2"); gs.addColorStop(0.58, "#c3cbd4"); gs.addColorStop(1, "#eef2f6");
   sc.fillStyle = gs; sc.fillText(text, bw / 2, bh / 2);
+  {
+    // 가로 솔질 결 (글자 안에만)
+    sc.save(); sc.globalCompositeOperation = "source-atop";
+    for (let y = 0; y < bh; y += 1) {
+      const a = Math.random() * 0.09;
+      sc.fillStyle = Math.random() < 0.5 ? `rgba(255,255,255,${a})` : `rgba(40,50,60,${a})`;
+      sc.fillRect(0, y, bw, Math.random() < 0.3 ? 2 : 1);
+    }
+    // 베벨: 왼쪽 위 모서리는 밝게, 오른쪽 아래는 어둡게
+    const bev = Math.max(1.5, fs / 38);
+    const edgeOf = (dx, dy, color, blur) => {
+      const [m, mc] = mk(bw, bh); setText(mc);
+      mc.fillStyle = "#000"; mc.fillText(text, bw / 2, bh / 2);
+      mc.globalCompositeOperation = "destination-out"; mc.fillText(text, bw / 2 + dx, bh / 2 + dy);
+      mc.globalCompositeOperation = "source-in"; mc.fillStyle = color; mc.fillRect(0, 0, bw, bh);
+      sc.filter = `blur(${blur}px)`; sc.drawImage(m, 0, 0, bw, bh); sc.filter = "none";
+    };
+    edgeOf(bev, bev, "rgba(255,255,255,0.95)", bev * 0.35);
+    edgeOf(-bev, -bev, "rgba(30,38,48,0.75)", bev * 0.35);
+    sc.restore();
+  }
   const [white, wc] = mk(bw, bh);            // 점화 순간: 하얀 글자
   setText(wc); wc.fillStyle = "#fff"; wc.fillText(text, bw / 2, bh / 2);
   const [edge, ec] = mk(bw, bh);             // 가장자리 잔열(주황 테두리)
@@ -6746,7 +6767,7 @@ function hseWeldWord(host, wordEl, onDone) {
 
   const T_ARC = 700, T_TRACE = 4300, T_COOL = 1600, T_SHEEN = 1400; // 천천히: 불꽃 켜짐 0.7초 → 윤곽 4.3초 → 식기 1.6초
   const T_IGN = T_ARC + T_TRACE;
-  const sparks = [], embers = [];
+  const sparks = [], embers = [], smokes = [];
   const floorY = Math.min(H - 8, cy + fs * 1.5);
   let start = 0, last = 0, ignited = false, called = false, shook = false;
   const canFilter = "filter" in ctx;
@@ -6778,7 +6799,7 @@ function hseWeldWord(host, wordEl, onDone) {
     torches.forEach((tr) => {
       if (!tr.path.length) return;
       const target = Math.floor(tr.path.length * trace);
-      tc.lineWidth = Math.max(1.2, fs / 70); tc.strokeStyle = "rgba(255,130,40,0.9)"; tc.lineCap = "round";
+      tc.lineWidth = Math.max(2, fs / 30); tc.strokeStyle = "rgba(140,50,20,0.85)"; tc.lineCap = "round"; tc.lineJoin = "round";
       hc.lineWidth = Math.max(2.5, fs / 34); hc.strokeStyle = "rgba(255,250,230,1)"; hc.lineCap = "round";
       if (tr.i < target) {
         tc.beginPath(); hc.beginPath();
@@ -6788,6 +6809,11 @@ function hseWeldWord(host, wordEl, onDone) {
           if (first || p.jump) { tc.moveTo(p.x, p.y); hc.moveTo(p.x, p.y); first = false; } else { tc.lineTo(p.x, p.y); hc.lineTo(p.x, p.y); }
         }
         tc.stroke(); hc.stroke();
+        // 비드 가운데의 밝은 줄 + 물결 무늬(일정 간격의 작은 점)
+        tc.save(); tc.lineWidth = Math.max(1, fs / 80); tc.strokeStyle = "rgba(255,150,70,0.9)"; tc.stroke(); tc.restore();
+        for (let i = Math.max(0, tr.i); i < target; i += 3) {
+          const q = tr.path[i]; tc.fillStyle = "rgba(255,190,120,0.55)"; tc.beginPath(); tc.arc(q.x, q.y, Math.max(0.8, fs / 120), 0, 6.2832); tc.fill();
+        }
         tr.i = target;
       }
       if (t < T_IGN) { const p = tr.path[Math.min(tr.path.length - 1, Math.max(0, tr.i - 1))]; tips.push([bx + p.x, by + p.y]); }
@@ -6826,8 +6852,23 @@ function hseWeldWord(host, wordEl, onDone) {
         ctx.save(); ctx.globalCompositeOperation = "lighter"; ctx.filter = `blur(${Math.round(fs * 0.22)}px)`;
         ctx.globalAlpha = 0.35 + 0.65 * (1 - ig); ctx.drawImage(ig < 1 ? white : steel, bx, by, bw, bh); ctx.restore();
       }
-      ctx.globalAlpha = ig; ctx.drawImage(steel, bx, by, bw, bh);
-      ctx.globalAlpha = 1 - ig; ctx.drawImage(white, bx, by, bw, bh);
+      // 강철 몸통 (그림자로 살짝 떠 보이게)
+      ctx.save(); ctx.shadowColor = "rgba(0,0,0,0.55)"; ctx.shadowBlur = fs * 0.12; ctx.shadowOffsetY = fs * 0.04;
+      ctx.globalAlpha = Math.min(1, ig * 1.4); ctx.drawImage(steel, bx, by, bw, bh); ctx.restore();
+      // 달궈진 색: 식는 정도(ig)에 따라 색과 진하기
+      const STOPS = [[0, 255, 255, 255, 1], [0.16, 255, 244, 190, 1], [0.36, 255, 176, 72, 0.95], [0.58, 255, 96, 28, 0.72], [0.8, 186, 38, 14, 0.35], [1, 120, 20, 10, 0]];
+      let hcol = STOPS[STOPS.length - 1];
+      for (let i = 1; i < STOPS.length; i++) if (ig <= STOPS[i][0]) {
+        const a = STOPS[i - 1], b2 = STOPS[i], u = (ig - a[0]) / (b2[0] - a[0]);
+        hcol = a.map((v, j) => v + (b2[j] - v) * u); break;
+      }
+      if (hcol[4] > 0.01) {
+        tx.clearRect(0, 0, bw, bh); tx.drawImage(white, 0, 0, bw, bh);
+        tx.globalCompositeOperation = "source-in";
+        tx.fillStyle = `rgba(${hcol[1] | 0},${hcol[2] | 0},${hcol[3] | 0},${hcol[4].toFixed(3)})`; tx.fillRect(0, 0, bw, bh);
+        tx.globalCompositeOperation = "source-over";
+        ctx.drawImage(tmp, bx, by, bw, bh);
+      }
       ctx.globalAlpha = 1;
       // 가장자리 잔열: 점화 직후 강하고 천천히 은은하게
       const heatEdge = 0.35 + 0.65 * (1 - ig);
@@ -6886,6 +6927,20 @@ function hseWeldWord(host, wordEl, onDone) {
       ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(s.x, s.y); ctx.stroke();
       ctx.strokeStyle = `rgba(${col},${Math.min(1, 0.35 + k)})`; ctx.lineWidth = 1 * s.w + 0.6 * k;
       ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(s.x, s.y); ctx.stroke();
+    }
+
+    // ---- 연기: 점화 직후 몽글몽글 피어올라 흩어진다 ----
+    if (ignited && t - T_IGN < 1800 && smokes.length < 26 && Math.random() < 0.45) {
+      smokes.push({ x: bx + bw * (0.22 + Math.random() * 0.56), y: by + bh * (0.3 + Math.random() * 0.35), r: fs * 0.08, vr: fs * (0.18 + Math.random() * 0.2), vx: (Math.random() - 0.5) * 14, vy: -18 - Math.random() * 26, life: 2.4 + Math.random() * 1.6, age: 0 });
+    }
+    for (let i = smokes.length - 1; i >= 0; i--) {
+      const m = smokes[i]; m.age += dt;
+      if (m.age > m.life) { smokes.splice(i, 1); continue; }
+      m.x += (m.vx + Math.sin(now / 700 + i) * 6) * dt; m.y += m.vy * dt; m.r += m.vr * dt;
+      const k = Math.sin(Math.PI * m.age / m.life);
+      const g = ctx.createRadialGradient(m.x, m.y, 0, m.x, m.y, m.r);
+      g.addColorStop(0, `rgba(170,180,192,${0.07 * k})`); g.addColorStop(1, "rgba(170,180,192,0)");
+      ctx.fillStyle = g; ctx.fillRect(m.x - m.r, m.y - m.r, m.r * 2, m.r * 2);
     }
 
     // ---- 5) 잔불: 점화 뒤 천천히 위로 ----
