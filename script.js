@@ -6030,7 +6030,7 @@ async function clinicCall(action, payload) {
     let html = "", inList = false;
     const inline = (t) => t
       .replace(/\*\*(.+?)\*\*/g, "<b>$1</b>")
-      .replace(/\[([^\]\n]{2,40}?제\d+조[^\]\n]{0,20})\]/g, '<span class="ai-cite">$1</span>');
+      .replace(/\[([^\]\n]{2,40}?(?:제\d+조|별표\s*\d+)[^\]\n]{0,20})\]/g, '<span class="ai-cite">$1</span>');
     for (const raw of lines) {
       const ln = raw.trim();
       const h = ln.match(/^#{2,4}\s*(.+)$/);
@@ -6222,24 +6222,60 @@ async function clinicCall(action, payload) {
   const loadLaws = () => (lawsP = lawsP || fetch("kr-laws.json").then((r) => r.json()).catch(() => { lawsP = null; return null; }));
   const norm = (t) => String(t || "").replace(/[\s「」『』·ㆍ]/g, "");
   function findArticle(db, cite) {
-    const m = cite.match(/^(.*?)\s*(제\d+조(?:의\d+)?)/);
+    const m = cite.match(/^(.*?)\s*(제\d+조(?:의\d+)?|별표\s*\d+(?:의\d+)?)/);
     if (!m) return null;
-    const lawTxt = norm(m[1]), no = m[2];
+    const lawTxt = norm(m[1]), no = m[2].replace(/^별표\s*/, "별표 ");
     let best = null, bestLen = 0;
     db.laws.forEach((L, i) => {
       [L.name, L.short].forEach((nm) => {
         const n = norm(nm);
         if (!n) return;
         // 정확히 같은 이름 > 끝이 같은 이름 > 앞부분만 같은 이름 순 (예: '산업안전보건법'이 '…법 시행규칙'으로 가지 않게)
-        const sc = lawTxt === n ? 3000 : lawTxt.endsWith(n) ? 2000 : (lawTxt.length >= 3 && n.startsWith(lawTxt) ? 1000 - n.length : 0);
+        const sc = lawTxt === n ? 3000 : lawTxt.endsWith(n) ? 2000 : (lawTxt.length >= 3 && n.startsWith(lawTxt) ? 1000 - n.length
+          : (lawTxt.length >= 3 && n.endsWith(lawTxt) ? 500 - i : 0));   // '시행령 별표 3'처럼 법 이름 없이 오면 산안법 쪽을 먼저
         const score = sc >= 2000 ? sc + n.length : sc;
         if (sc && score > bestLen) { best = i; bestLen = score; }
       });
     });
     if (best === null) return null;
-    const a = db.articles.find((x) => x.l === best && x.no === no);
-    return a ? { law: db.laws[best], art: a } : { law: db.laws[best], art: null, no };
+    // 별표는 길어서 여러 조각으로 나뉘어 있으므로 이어 붙인다
+    const parts = db.articles.filter((x) => x.l === best && x.no === no);
+    if (!parts.length) return { law: db.laws[best], art: null, no };
+    const a = parts.length === 1 ? parts[0] : { ...parts[0], t: String(parts[0].t || "").replace(/\s*\(\d+\/\d+\)\s*$/, ""), x: parts.map((p) => p.x).join("\n") };
+    return { law: db.laws[best], art: a, annex: /^별표/.test(no) };
   }
+  // 별표의 글자 표(┌─┬─┐ │ │)를 진짜 표(HTML)로 바꾼다 — 한글·영문 폭이 달라 글자 그대로는 칸이 어긋나 보이므로
+  function annexHtml(text) {
+    const lines = String(text).split(/\n/);
+    let html = "", rows = null, cur = null;
+    const flushRow = () => { if (cur && cur.some((c) => c.some((t) => t))) rows.push(cur); cur = null; };
+    const flushTable = () => {
+      flushRow();
+      if (rows && rows.length) html += `<table class="ai-annex-t">${rows.map((r) => `<tr>${r.map((c) => `<td>${c.filter((t, i) => t || i < c.length - 1).map(esc).join("<br>")}</td>`).join("")}</tr>`).join("")}</table>`;
+      rows = null;
+    };
+    for (const ln of lines) {
+      const t = ln.replace(/\s+$/, "");
+      if (/^[┌├└]/.test(t)) {                 // 표 시작·가로줄·끝
+        if (!rows) rows = [];
+        flushRow();
+        if (/^└/.test(t)) flushTable();
+        continue;
+      }
+      if (rows && /^│/.test(t)) {             // 표 안의 한 줄: 칸마다 글자를 모은다 (한 칸이 여러 줄이면 줄바꿈 유지)
+        const cells = t.replace(/^│|│$/g, "").split("│").map((c) => c.trim());
+        if (!cur) cur = cells.map(() => []);
+        while (cur.length < cells.length) cur.push([]);
+        cells.forEach((c, i) => cur[i].push(c));
+        continue;
+      }
+      if (rows) flushTable();
+      html += t.trim() ? `<p>${esc(t.trim())}</p>` : "";
+    }
+    if (rows) flushTable();
+    return html;
+  }
+
   async function toggleCite(el) {
     // 본문 속 [조문]은 그 문단 아래에, '근거 조문' 칩은 칩 줄 아래에 펼친다
     const host = el.closest(".ai-srcs, details") || el.closest("p, li") || el;
@@ -6255,10 +6291,11 @@ async function clinicCall(action, payload) {
     const db = await loadLaws();
     const f = db && findArticle(db, key);
     if (!f) { box.innerHTML = `<p class="ai-art-none">이 조문은 사이트에 원문이 없어요 (이라크 법령 등). 아래 근거 조문 링크로 확인해 주세요.</p>`; return; }
-    const link = `${f.law.link}/${f.art ? f.art.no : f.no}`;
+    const link = /^별표/.test(f.art ? f.art.no : f.no) ? f.law.link : `${f.law.link}/${f.art ? f.art.no : f.no}`;   // 별표는 법령 본문 페이지로
     box.innerHTML = f.art
       ? `<div class="ai-art-h"><b>${esc(f.law.name)} ${esc(f.art.no)}</b>${f.art.t ? `<span>${esc(f.art.t)}</span>` : ""}<button type="button" class="ai-art-x" aria-label="닫기">✕</button></div>` +
-        `<div class="ai-art-x-body">${esc(f.art.x).replace(/\n/g, "<br>")}</div>` +
+        (f.annex ? `<div class="ai-art-x-body ai-art-annex">${annexHtml(f.art.x)}</div>`
+                 : `<div class="ai-art-x-body">${esc(f.art.x).replace(/\n/g, "<br>")}</div>`) +
         `<a class="ai-art-link" href="${esc(link)}" target="_blank" rel="noopener noreferrer">국가법령정보센터에서 보기 ↗</a>` +
         (f.law.efYd ? `<span class="ai-art-ef">시행 ${esc(f.law.efYd.replace(/(\d{4})(\d{2})(\d{2})/, "$1.$2.$3"))}</span>` : "")
       : `<p class="ai-art-none">${esc(f.law.name)} ${esc(f.no)}는 저장된 조문 목록에 없어요.</p><a class="ai-art-link" href="${esc(link)}" target="_blank" rel="noopener noreferrer">국가법령정보센터에서 찾아보기 ↗</a>`;

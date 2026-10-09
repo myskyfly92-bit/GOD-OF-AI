@@ -3545,3 +3545,8 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .ai-rate input { flex: 1; min-width: 0; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.16); border-radius: 8px; padding: 5px 8px; color: var(--text); font-size: 12px; }
 .ai-rate .ai-rate-send { font-size: 12px; }
 .ai-rate-done { color: var(--cyan); }
+.ai-art-annex { overflow: auto; max-height: 340px; font-size: 12px; line-height: 1.5; }
+.ai-art-annex p { margin: 0 0 4px; }
+.ai-annex-t { border-collapse: collapse; margin: 6px 0 8px; min-width: 100%; font-size: 11.5px; }
+.ai-annex-t td { border: 1px solid rgba(255,255,255,0.18); padding: 4px 6px; vertical-align: top; color: var(--text); }
+.ai-annex-t tr:first-child td { background: rgba(53,208,192,0.10); font-weight: 600; }
