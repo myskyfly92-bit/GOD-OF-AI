@@ -843,6 +843,18 @@ function alignSideWidgets() {
   // 탭 전환 직후처럼 아직 화면에 그려지지 않은 상태면 계산하지 않는다
   if (gridEl.getBoundingClientRect().width === 0) return;
 
+  // 휴대폰: 달력이 위에 떠서 탭·카드를 가리지 않도록, 종합현황 카드들 '아래'로 옮겨 일반 흐름에 넣는다
+  // (다시 넓어지면 원래 자리로 돌려놓는다)
+  const dash = document.getElementById("view-dashboard");
+  if (holidayPanel && dash) {
+    if (!holidayPanel.__home) holidayPanel.__home = { parent: holidayPanel.parentElement, next: holidayPanel.nextSibling };
+    const mobile = window.innerWidth <= 980;          // 카드가 한 줄로 쌓이는 폭부터
+    if (mobile && holidayPanel.parentElement !== dash) dash.appendChild(holidayPanel);
+    if (!mobile && holidayPanel.parentElement === dash) holidayPanel.__home.parent.insertBefore(holidayPanel, holidayPanel.__home.next);
+    holidayPanel.classList.toggle("in-flow", mobile);
+    if (mobile) { holidayPanel.style.top = ""; holidayPanel.style.width = ""; holidayPanel.style.left = ""; holidayPanel.style.display = ""; }
+  }
+
   if (window.innerWidth <= 768) {
     // 좁은 화면: JS로 강제 설정한 left 값을 지워서 CSS 미디어쿼리가 그대로 적용되게 둔다
     if (holidayPanel) holidayPanel.style.left = "";
@@ -903,6 +915,7 @@ function alignSideWidgets() {
 
   [holidayPanel, fxWidget].forEach((el) => {
     if (!el) return;
+    if (el === holidayPanel && el.classList.contains("in-flow")) return;
 
     if (fitsOnScreen) {
       el.style.left = `${Math.round(left + scrollX)}px`;
