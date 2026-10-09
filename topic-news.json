@@ -1,85 +1,91 @@
 {
-  "generatedAt": "2026-10-09T01:23:19.196Z",
+  "generatedAt": "2026-10-09T10:52:33.892Z",
   "sa": {
     "label": "중대재해·산업재해",
     "items": [
       {
-        "title": "가스기술공사, AI·스마트 기술 기반 중대재해 예방 강화",
-        "source": "충남일보",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9zaHExeC1ScVRXY3RsUmlMVzB3dEhYY2NvTFRWWU9PakxGMEgwcUluTXlyT0F6ajNpbEtYQ05qZ0g2SmVuWmZpZ1pyc2w5TEJ2dFVjNUFhSXZRM3paNkJiVTNTZVlnVF9yZEhTUmNFT1lvMms?oc=5",
-        "date": "2026-10-09T01:04:54.000Z"
+        "title": "영월 석회석 광산서 장비 수리하던 50대 추락사",
+        "source": "뉴시스",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9NNHhlcTNUQ0wzaXIyYjZiaTlJeEZGdkxsdDZ1UzNLelBleW9QeUtuZE0xUXBrMmU4RnhlSFpEb1NVQ0UtSXdidDVHYm5XczgtcWY1SEVCNmlKaExtZENMbtIBeEFVX3lxTE1WY2VIZzRwMENQajh4cGx5U0lWRW9YeEVDX3dRUUx4b25wZmFVMGdETEpwTGY0RjNKM1lHZWI1cFRUVlRZNWxra2l0VWRMd1ptZi1ObDZISmVLYTFleVBHeTJFY09MY3pvLWo0MUF3UnNybFR0ZWNzRA?oc=5",
+        "date": "2026-10-09T09:00:24.000Z"
       },
       {
-        "title": "근로복지공단, 산재 사망 필리핀 노동자 유족 입국부터 귀국까지 지원",
-        "source": "BBS불교방송",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1NeW9wQ2ktQ05ad0tzeE9ZYl9mZ0E1bnZjZmIxMjBDRzF6VkxUUWU5UkRxekNoRVZTeF9xX3diSnduUlpWVXB5WVVhcTRoV0psVTFUMTRxOWlKZnN5a3A0Rkh1Mm1sblpOUkxB?oc=5",
-        "date": "2026-10-09T00:00:00.000Z"
+        "title": "[속보]강원 영월 석회석 광산서 50대 근로자 추락사",
+        "source": "아이뉴스24",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1QTmloMC1YQ04zLXRoM3p2QlpncFlJWUlqbjd6SXIwdUV1ZzZ0M25IV1FyWjRHOUJWeDJwLXJkQkhqQ0ZrZjNoS1h6NA?oc=5",
+        "date": "2026-10-09T08:55:18.000Z"
       },
       {
-        "title": "최기상 의원 “방산업체 산업재해 128명 중 청년 35.2%”…한화에어로스페이스 위반 473건·안전감독 강화 촉구",
-        "source": "월드장애인사랑뉴스",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5sZUF2Z1k1aGZ6V1NTWkk1TnlMQVpGRmYzbFhuUnUzTms1TDFuMThsNzBEeGYxeVkyT2JlZmIwX05yZGdYcUJzUW1kREc2cHhfRU83QmYyTTBfT3lUY1ZGdUg1dGtJSXA4NTlfc1NtUQ?oc=5",
-        "date": "2026-10-08T23:52:31.000Z"
+        "title": "영월 석회석 광산 터널서 장비 수리하던 작업자 추락사",
+        "source": "한국일보",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBKWjZZbTZZVVhKa3hMazMwV0NwR21wS0NwZWRLN0RIamJxb1lWanZuQ3hiNkw3MnFaSTNRVEs0ejVvRkFhaVRvXzFQWHROWmplM0RvUlY5emlzWVRMOV9TMXByX0NMLVpaVk5FYkM1VXRkaXfSAXNBVV95cUxQSlo2WW02WVVYSmt4TGszMFdDcEdtcEtDcGVkSzdESGpicW9ZVmp2bkN4YjZMNzJxWkkzUVRLNHo1b0ZBYWlUb18xUFh0TlpqZTNEb1JWOXppc1lUTDlfUzFwcl9DTC1aWlZORWJDNVV0ZGl3?oc=5",
+        "date": "2026-10-09T08:38:00.000Z"
       },
       {
-        "title": "대구 주차타워서 70대 노동자 리프트에 끼여 숨져···중대재해법 위반 조사",
-        "source": "경향신문",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KSWNEWUhta3owSHZrUXN2VW5ELS1acUw0R3M5NEVpQkxSS1dxX29vbXJ2blA0RnNWeWQzNzBrSnVSSmkwY3FsazBEb0JudGRodGRFeExpaW12Z9IBX0FVX3lxTFAtdzhhV1RFNF90QkpQdWhlWnRxSkcydk5DV0FLcXBWb3VMVHVYTi05SVRKZC04R0UzdGtQRDU4RjRvMjBKUWVERlVEbTRqZnRvd3lsMWlEQ1VvWFpzdHlr?oc=5",
-        "date": "2026-10-08T23:46:00.000Z"
-      },
-      {
-        "title": "주차타워 리프트에 끼인 70대 하청 노동자 숨져…중대재해법 조사",
-        "source": "콜뉴스24",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBxSS0zSWNCMV80OHowWlF1RVk0NzQ0bGM1WXVGRjRUb1FuVGFZUTFiZ3pmUnlFbG5PT3NRMWc2VGtsQ0RtQTI2ODJqZ3VVN0VkMjg1dXF6Q3ZQbC0xQjByNTQySHBJVVRMZVcyMg?oc=5",
-        "date": "2026-10-08T23:35:46.000Z"
-      },
-      {
-        "title": "방산업체 산업재해 5년 반 동안 128명…청년 노동자 비율 35.2%",
-        "source": "여성종합뉴스",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1uTHNEeUdDTHprOHNWZkZhZ0VwZHRxQkNwdllteVhvRnBZQTZ1aEZwZF9mWW9tU0N3YmpSaWVkMmk2aXRoaC1FNktXUUl4aVRNU1JaMXE2SVFva1RNam9jTzZIb2FOZmlvUi04cVNtRQ?oc=5",
-        "date": "2026-10-08T23:01:28.000Z"
-      },
-      {
-        "title": "정상체중에 식욕억제제 7년간 처방…법원 “환자 추락사에 의사 책임”",
+        "title": "영월 석회석 광산서 50대 근로자 추락사…장비 수리 중 사고",
         "source": "이투데이",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBHMDJzMDZ2TkhENWNmNmxpS0ZhMUZmUlYtLVhjRmZ2dXBWTF9iNEd4YU4yVVFqZV9wOFcwQXR3WWIxcFZxbTZLUGtvYVFVVUFVU05PWGhzbUFUNGZVUWdTNTBpcXZNZFo4YnlhZWRGY2R0MVpU?oc=5",
-        "date": "2026-10-08T21:00:00.000Z"
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9uRzdwcW4wMnpDUi1kTE1RYld4U0VFRm9LVThCUllMbkRpOUEtRkpfTU9XUl93czM4bHRxMGJwUEhBRUtad29GMW9PM2gtR3NJemgwMms2Q195X21zeXBlNXo3MHJIdFVEZnZXSlN3?oc=5",
+        "date": "2026-10-09T08:32:00.000Z"
       },
       {
-        "title": "안호영 의원 \"문화예술산업종사자 산재보험 당연적용 대상 확대 추진\"",
-        "source": "메트로신문",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aMnhJWV85cFRzTjliXzBzU3JoeEpiY3RpME0yZTczWjRlVnhUNm8xcU5VLUU3OWRFejVqWXF4b2FOaWR4WUtoUVNGODFiU0RId2ZHQy1DV1hseWxvd1RUeg?oc=5",
-        "date": "2026-10-08T20:30:21.000Z"
+        "title": "영월 석회석 광산 터널서 50대 근로자 추락사",
+        "source": "연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1JZXFadzMxQm5UblB4Z2xOUnN5eTh6S1R5cmdNRkJhRzdzQlhGMWpYbDNOQ3g1MlBSWE9tQ09YSVNhV3Blc29WdEJqbXYwbEpVblZxakRsVm84VTdmQXZGX9IBYEFVX3lxTE1JZXFadzMxQm5UblB4Z2xOUnN5eTh6S1R5cmdNRkJhRzdzQlhGMWpYbDNOQ3g1MlBSWE9tQ09YSVNhV3Blc29WdEJqbXYwbEpVblZxakRsVm84VTdmQXZGXw?oc=5",
+        "date": "2026-10-09T08:19:30.000Z"
       },
       {
-        "title": "호서대학교 일반대학원, \"안전·재난·중대재해 분야 석·박사 과정\" 운영",
-        "source": "아산포커스",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1yTjVrSkpFeE9xSU9iWENacERNUzExaTZFcXlQVjBlUUdVVC15Tml3aUpxQ2xZQnBsRXhlelRWb0djY0FjWUYzdlV3YjllSzJ2c2c1c2JDbHNrN3pBRktIR29CYjk5aXF5Rm5CMHpn?oc=5",
-        "date": "2026-10-08T17:59:50.000Z"
+        "title": "인천 과자공장서 70대 노동자 추락사…화물 옮기던 승강기 통로서 사고",
+        "source": "세이프티퍼스트닷뉴스",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1JS1ZmSlZqckduMjhROWFJUGl0Y1ZnR1NscTNRNlVxWUdmeFRqVEExdTQ0bEhYVUI4VlJjcjRfWDBSTmRieDhsMFRkd29nZDJRcGlTelAybVJxbHB5QVdlcWVJYkl5T0luYW1LZ1VoYw?oc=5",
+        "date": "2026-10-09T08:13:33.000Z"
       },
       {
-        "title": "[단독] 유족도 못 보는 산재 조사보고서… 법 바뀌어도 공개율 3%",
-        "source": "국민일보",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA4ajZMYk5pQzlKNW4zV053Q1c0N2VXaWNRQTJMZUZ6X2NqQ1JvdjRjaVctcWY1Qkg3ZktFTy1hclFLZ3RhcmNuSXlCUVZlS29sbnFuVktlcVlnZ0V3YnhNc0NWWDU0WXlpbXZnSNIBbEFVX3lxTFA4ajZMYk5pQzlKNW4zV053Q1c0N2VXaWNRQTJMZUZ6X2NqQ1JvdjRjaVctcWY1Qkg3ZktFTy1hclFLZ3RhcmNuSXlCUVZlS29sbnFuVktlcVlnZ0V3YnhNc0NWWDU0WXlpbXZnSA?oc=5",
-        "date": "2026-10-08T15:07:00.000Z"
+        "title": "대구 주차타워서 70대 하청 노동자 숨져…리프트 끼임 사고 조사",
+        "source": "세이프티퍼스트닷뉴스",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlc0MxNkxWdmdaT0dKNGJZdkFqOHE5R2NTMVBGWDVJaWFpVTU1aVd3dDZZUkxBLVE0WWRJR2c3TlZkQkhCMnlhLWM3ZTA0MkhPd0ZQYm5rLVY1aS1LLVZYdzZUSDZMSVI5eFRheTZjaw?oc=5",
+        "date": "2026-10-09T08:12:28.000Z"
       },
       {
-        "title": "한보총, 'AI 기반 안전보건 최고위과정' 1기 출범…AI로 산업재해 예방",
-        "source": "비욘드포스트",
-        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9GN3A0LWxiNHlqM2tCQzdiSnljQXV5bTRxM0dlODBSeHVkLXFJeTNESFJiNzE1NkoxMGEwS3lUSTk5MHBLY0NfX0dzWWwxc3hvb0xsZ1FySVJxTlFvc1pPbGFOejl3Z3hqZTN5SXhUaDN6RVBvRXBuQnFPS2M?oc=5",
-        "date": "2026-10-08T14:07:23.000Z"
+        "title": "실감 나는 ‘안전사고’ 직접 체험…3년간 중대재해 ‘0건’",
+        "source": "JTBC",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4tV0ZOdmQ2OHMwQ3F4N0lyb2h3cS1BLXV6eENXVmUzWDdraWNVN1U1b19wUjVwY1gtdE10NmNBMTA2NmRHZEJyYUhKTllDdG52NkE?oc=5",
+        "date": "2026-10-09T07:15:15.000Z"
       },
       {
-        "title": "대구 주차타워서 70대 하청 노동자 숨져…'중대재해법' 위반 조사 - 머니투데이",
-        "source": "머니투데이",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB0cHBDQ2c4N05mZ3JxZWIyWHB1RGd3dDE4NWFCV18tQl9rRXhsaUh3YlVjWlViMGNxZHRrdWl6R2hRRlc1bjUtb0JMUGtJTjVLTU5qOFU4Q1ZLSEdEYmdrZVpJU1FYcUhncFc1SC1LeE3SAXBBVV95cUxQdHBwQ0NnODdOZmdycWViMlhwdURnd3QxODVhQldfLUJfa0V4bGlId2JVY1pVYjBjcWR0a3VpekdoUUZXNW41LW9CTFBrSU41S01OajhVOENWS0hHRGJna2VaSVNRWHFIZ3BXNUgtS3hN?oc=5",
-        "date": "2026-10-08T13:49:56.000Z"
+        "title": "KCC건설 김포파주고속도로 공사현장서 70대 하청노동자 사망",
+        "source": "비즈중앙",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9mWVJpTXdkRHFPVmhnQi1QUEVzODk2Zjl0c1dkZjV3d2FZQW1wUVNJU01CdmtwcUlzUDEyaHcwQTlfRlA2VWpyT3BTN2Y0OWgzWW1USEpkeDc1anUxd1ZVd0hWQ3haNGxnVnowZmozUVc?oc=5",
+        "date": "2026-10-09T06:29:27.000Z"
+      },
+      {
+        "title": "광주 한 아파트서 외벽 도색 작업 준비하던 70대 추락사",
+        "source": "프레시안",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GVnQ1a2xRRC1STnFRMEQ1NVBmSnZheEhialZQejlRdzB0TTRvQ01kb3ItSDlQVEMyR21wR3JZLU42d2dHRjVUUmNiaGRxdU5qNTVkM2VQY1o0YzBhbjBTSTRDd2oyNXBjV0xR?oc=5",
+        "date": "2026-10-09T06:19:12.000Z"
+      },
+      {
+        "title": "대구 주차타워서 70대 하청 노동자 끼임 사망…중대재해법 조사",
+        "source": "비즈중앙",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9hRHdQMDhfTTVTNkhDX1YxUmpab0pNTG8wNFFDVVNTczRMME1CXzlhYndEN3Q3MmhCeDkxMm9zRXZuTm1meGVrQ2U3czFtU0hoYndmSTNFUWJWQkl0MTZUaXluQm8xdU0tOHpMUUstN2c?oc=5",
+        "date": "2026-10-09T05:15:03.000Z"
+      },
+      {
+        "title": "근로복지공단, 산재 사망 이주노동자 마지막 귀향길 배웅",
+        "source": "아시아경제",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5OMDNNbUQ3djZ2UlIxZ3dlU2RMLWxqbXRmTDVZQmsyN1hwTW54NmtMNjRnRkVyWWdfS2NxMTVvcnZkZndnckU4cDNoTFZ4Wkk4WGlpVTZuUFVhQ3p4Y2Uxbg?oc=5",
+        "date": "2026-10-09T03:33:34.000Z"
       }
     ]
   },
   "embassy": {
     "label": "중동 대사관·안전",
     "items": [
+      {
+        "title": "이란의 공격으로 미군은 쿠웨이트 기지를 철수해야 했다.",
+        "source": "Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdTRqTDl6RUsybGlUcTNlZ0s4eUszc1BOVE5Rb0p3YnhubmdhWDhSS2x4UWZXMzMtbDU0emV2VEJqOXpjYXhtdWdjUW5hOFFsY3VFNllkNGNEd2EtNGNmMVEyc1kzamZCTkpCbmo3bDI4MjlSVVI5bURNNDhLcURRb2pCNDZkMVoxRDRmcDR0TE5Ddl9KSU83Sg?oc=5",
+        "date": "2026-10-09T04:37:19.000Z"
+      },
       {
         "title": "주레바논대사관 ‘한국문화의 날’ 성황…5천여명 참여",
         "source": "코리아포스트 한글판",
@@ -145,12 +151,6 @@
         "source": "이데일리",
         "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNUdLa1ZTZzBreUwzcWZWOGdNNG5TQVMtekl0Zm9RaFY0LVpUWXp0aGxwN2lKNUJyb280OWg2QmxDQ1hKVlBSa2VHOUl0ZjFSWl9SNUNoOU9oSzhUc2NPMjVYR1NxYmxOQmpOYngycGJhaHRzTWtrSmpKOENReDFmRg?oc=5",
         "date": "2026-10-07T10:34:11.000Z"
-      },
-      {
-        "title": "이란 “이스라엘 철수”…유엔은 헤즈볼라 무장해제도",
-        "source": "OBC 뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBVcWFjNVJNdHhDS1ZuQ3MtX2J0Y0JEVXBmam81SmhMZ2pOYzZhUFJHb0NEZGlIRUNlZHRiejRlemk3THh3a184X3pKVzNjUzNKTUNUQ1pTTXVUOTNUOU9HOVE0RS1Pa2tCM1E?oc=5",
-        "date": "2026-10-07T10:02:53.000Z"
       }
     ]
   },
@@ -158,76 +158,76 @@
     "label": "감염병",
     "items": [
       {
-        "title": "권백신 의원, 경상북도 재난안전대책본부 구성 및 운영 등에 관한 조례 일부개정조례안 발의",
-        "source": "안동뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kR1h4SXR3NEFVWEFJS2Y5UHhXM3ZWRUtCYUVGZHBTQnNibFRFaEY0OWVQeWRnbklzRlBkdFZwa2VObGhNaFhVd1dEdWl0YWx5cVoxYnFjTV9iNWFJN2JZaVFKTQ?oc=5",
-        "date": "2026-10-09T00:54:00.000Z"
-      },
-      {
-        "title": "가짜 코로나 백신 증명서 산 축구 국대 주장…2.4억 벌금형 집유",
-        "source": "한국경제",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9MTUh3a0xwTk12Tmw2SjFwVS1RNkwxRkV5Zk9lMi1UdVFJNzYzYjg3bzJ1VjB6cmlHcnk1S3d6SHVwVXFGSkF0VFBHRm93T0xFc3RONy1YNHcwQQ?oc=5",
-        "date": "2026-10-09T00:51:41.000Z"
-      },
-      {
-        "title": "'가짜 백신 증명서 구입' 자카, 벌금형 집행유예",
-        "source": "뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9jX0NnZ3BLRFBsX0hIbjF6S0c1NW1GcHN0NEl5NnIwTEh6cGxJcmtqVG1fWUFJeFpmdnUtWjAxTzVVYnZvckQwNTktcy0xWjU5dHp6dzZBVl9VMUZPVDBQag?oc=5",
-        "date": "2026-10-09T00:35:00.000Z"
-      },
-      {
-        "title": "'가짜 백신 증명서 구입' 스위스 '캡틴' 자카, 벌금형 집행유예",
-        "source": "뉴시스",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1oVWlLZEplVkJwLWVwdldVNU1iZEtGbG15T1kwNjZHclRoNl9uNmpDMkZBNzlhc3BQbXRkZVoweEFzX0RvTUpVQW9OV2psaW5qUTRIcmRyOXRSQnpBaUZKOHlFemlMMjEtZGhEbDA1ek4xSERRLVVKc9IBeEFVX3lxTE1oVWlLZEplVkJwLWVwdldVNU1iZEtGbG15T1kwNjZHclRoNl9uNmpDMkZBNzlhc3BQbXRkZVoweEFzX0RvTUpVQW9OV2psaW5qUTRIcmRyOXRSQnpBaUZKOHlFemlMMjEtZGhEbDA1ek4xSERRLVVKcw?oc=5",
-        "date": "2026-10-08T23:51:30.000Z"
-      },
-      {
-        "title": "“고병원성 AI 확진 농가 86곳 공식 통계서 누락 … 발생현황 분류체계 개선해야”",
-        "source": "코리아플러스",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1TbGJkOENPeVIxX18ya2NBeklsMV9xNlRVTEYwWXdTSS1hZHpZTmk3dzZPa1psenE4VzAyY3N1cXRaLTEydFBtWU5mTEY0NFloT1F4NVUxRk03QUNlLTFiNmt4QWtVUQ?oc=5",
-        "date": "2026-10-08T23:33:11.000Z"
-      },
-      {
-        "title": "‘가짜 백신 증명서’ 15만프랑 벌금형 자카, 2년 집행유예",
-        "source": "TopStarNews",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE0tRlVDcDN1eUkzcU1YMVZTMzZXc3lPX2k4aTIxTnBhZVhRa1FIRUZ3MWJ6RkZpNmxvNmpOWnk5a09VYjBUUTgwZEFQMlZyRURwbFN3dVJMM05ZVm5jSndSRzNURjEtMVRuZmh5NUFCNnZHUQ?oc=5",
-        "date": "2026-10-08T23:04:20.000Z"
-      },
-      {
-        "title": "독감 시즌 예년보다 일찍 시작… \"빨리 백신 맞아야\"",
-        "source": "미주조선일보",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9EUnpoRTdUeTc2SGpTTXRYN3owM0hnWWpJQmEwNzBNcVVuYk1Rb0xndW9FenhrRXJ3U0UwZG5SczFVSGt6dURuNF9DMzBEV2tFdDZTbGhENG9SUk1teXk4N0twRWxGVTRfVDVYdkJEZlJ0Smkzb3c?oc=5",
-        "date": "2026-10-08T21:27:40.000Z"
-      },
-      {
-        "title": "독감 시즌 벌써 시작됐다… 백신 접종 서둘러야",
-        "source": "미주중앙일보",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8xSnBtQ2w2andCd2hMNERTOHh2N2FKRVowT2NZTlFhYW84dUR6SlNvUXdaTkxIbEQxUi1raDd1eFlwY2F0Y2ZDMnlNU3lrMW9iZ2l0MFpoUmFxLUpKM2xZOUVB?oc=5",
-        "date": "2026-10-08T20:51:00.000Z"
-      },
-      {
-        "title": "[밴쿠버 조선일보]BC주, 독감 백신 접종 예약 13일부터 시행 | 밴쿠버 뉴스",
-        "source": "밴쿠버 조선일보",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1nb0o5ZS1VQ0lnMGNCbFhxWm9LXzRHZ01pVF9WUlV4S01yNHNfTEdjcWJxOXpRU3NRY3lzVU5SX0NLc3pYcVk4N3phcEp6STZobWNCcU9JdjlTRGxaVnp6SGtoc3loc1FCZS1jTU0tMHdRekpTaXN5SmJsMWJGWDg?oc=5",
-        "date": "2026-10-08T18:50:00.000Z"
-      },
-      {
-        "title": "럼피 스킨병의 예방 및 관리를 위해 54,000회 이상의 백신이 투여되었습니다.",
+        "title": "뎅기열과 수족구병이 증가 추세를 보이며 생명을 위협하는 합병증에 대한 우려가 커지고 있습니다.",
         "source": "Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMUdMNXdudkc2UzYzNFFYRTNXb3RYdmFmZVVmRjVwcjNjUGxaaXJjS1lEWEZYdnVRbHFTc1RTMWUtODVrY25Qcl9yQlJUMVZTM2tFYUROd1JwRUhDYWMxM2l3S3l5SjlvNDVWZzRVb1FiZkl1WjlrbVQ0MWNZRVp0eUg1N0gtYjQ5RFc5V1VHWjhQb3VGTUdKQUE2ZGJMaVk?oc=5",
-        "date": "2026-10-08T18:14:24.000Z"
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQb05TY2MtNlRRalhfSlpXMVdwRlNTOGhqRWVBNkEtVWM5MkV1S09zSlF5dVZqS3hIY0lXUXVmc1BXRFplcXREaFA5TkdPNWRlN1llV29TTmNpdWpjd1Q5NkxJMkVvSmRhNlJ6MGV3OS1MYk1lNm1ndnRDcFBTZmptRmV6aUx0dFRSZlhrQXlIZl96NnBiZzRyMHB6eDlnQlRGV2JF?oc=5",
+        "date": "2026-10-09T09:22:08.000Z"
       },
       {
-        "title": "'아스널 前 캡틴’ 가짜 백신 증명서 구입→'집행유예+벌금형'...실형은 면했다",
-        "source": "인터풋볼",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5QREI0cjZHSXloYTF6TUhEOGJNaGNuSU9SUDh4RDUyRkZmcUtMQ0VoYjVJTHdGZUJwSHJab0RvaC1JN3lUc01pUE5vN1pxT0NyMWJGMjRsaVBIMGVtMlExcnpjYnFxUk9kOHY0aWttdjZPOHRp?oc=5",
-        "date": "2026-10-08T14:46:28.000Z"
+        "title": "미국이 새로운 백신 연구 센터를 설립했다.",
+        "source": "Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tY0hWSjhHQTBneVRORTZiQXNjTk12dWtOYUJNLW81dC1rbGxrc2JBZk10TFZXWUZLX2UyM2szMzZ1RnNBNkZLUGlfUUxYY3JRemllbVZiWkh2M2l6UXRxQnFPdkZZMldhQ0RlRTMxbElFQzJIOW50MGRlM01xWTg?oc=5",
+        "date": "2026-10-09T09:20:57.000Z"
       },
       {
-        "title": "“탄저 백신 부족…에볼라 치료제 매년 구매해야”",
-        "source": "뉴스더보이스헬스케어",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBuVjROTDA3R2lYY2lhWXgzRHZLVFEtQTQ3SHpEWkFzeUF5NWxkMUVjbzNXYnpVOVdKSllPRll0MjhvV3c5czFmelN1alpCbHpEMjFBdzV6SzRSS2hDSG43aDJIWWxxQVhOMXY2UU13?oc=5",
-        "date": "2026-10-08T13:41:18.000Z"
+        "title": "노로바이러스 소독법, 알코올은 못 죽인다…락스 1000ppm·85도 1분",
+        "source": "매일신문",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9GQmRQV2tCZnVTUlQtVzVsRUhhZGFWSjktNUhJRnhoYkpNelB2cWtNQ2UzcFAySFlFcF8zTFFBdEdQUTVFem1LYWV0VGpuQnJHVFc5RzRVRlluX2cwOGtWdmJ3?oc=5",
+        "date": "2026-10-09T08:09:59.000Z"
+      },
+      {
+        "title": "구미시, 파크골프장서 찾아가는 감염병 예방 캠페인 실시",
+        "source": "매일일보",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5mcWt5Wjk5WHZBLVFib1NBZm1pNFRveklEaGFOdmdEU0l5cV81aVV2VEd0VkZaNGdnSVJSSFhTaEVVUV9zWElRWFdGMzNqX3NYZW92bG93OU9ScWdGU3Rab2gzLV8?oc=5",
+        "date": "2026-10-09T07:56:11.000Z"
+      },
+      {
+        "title": "[닥터스 M라운지] 기침 없어 위험한 노인 폐렴…무료 백신은 예방효과 한계",
+        "source": "매일경제",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0tZVctdUY2TEFtVXVsTkFIQW13aGpHbTQwMFZTQlZVRFhYc09fMzk0SHJtOC1INFg4cWNqQjEyNTdPN2tDZ1E?oc=5",
+        "date": "2026-10-09T07:55:32.000Z"
+      },
+      {
+        "title": "베트남은 차세대 백신 개발을 위해 다양한 플랫폼을 연구하고 있습니다.",
+        "source": "Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRGhBdWZhVm5CY2JIdU5zVjJBRl9nY1h6emtiVmI3YXg3WHI5VVpnV09QRDJnNVhfWlBmQzJJbEpzNm9nYTJidURXb1NGc3BROXlpVDVnWkE0dElwN1hMV3JKWk55VWhmWkN3Q0tYYktwNjBJNkdBeG5RUlc4eDJONUQ0ajQ1dw?oc=5",
+        "date": "2026-10-09T07:24:32.000Z"
+      },
+      {
+        "title": "'최대 5년 징역형 피했다!' 허위 코로나19 백신 접종 증명서 발급받았던 PL 미드필더, 벌금형 선고→집행유예 2년",
+        "source": "마이데일리",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBYWXFQcERBLW1hUGlpYTJ2QTBMWHR6aEZLektjX2k2S1pTNm96YW10ZFBwOE52dGVkalhYUW5DNkcyUHQ3ZHpzT2oxc2dJUVdBdXA4ZDFnc1hNU1dmQjJnbklyQjNQdw?oc=5",
+        "date": "2026-10-09T07:03:00.000Z"
+      },
+      {
+        "title": "칸화에서 열린 백신 연구 개발 워크숍에 전문가와 과학자 35명이 참석했습니다.",
+        "source": "Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOLW1GSGwta0gzRkpWU3BpYTk0NWxtZ2NBLTBFV2lBTFNMMVpuWWpmY0ZnQUJZbm41VVdGRkhyUVp2Z0pyOFNRWDZuMFpjYjNKbWlROUVkbV9uOEJuWDJKQWFzYWVHdHZsSm4xdnRLb0tkb3BDUHJLcTFCeXFaLTdHcFNBbGhvSkRpX3laQlJWMGp1YUhTTUNqTDZzOExZNjNWVFVxWUNkLTRCeVZRUnlYVy1jQXA0dlU?oc=5",
+        "date": "2026-10-09T07:02:29.000Z"
+      },
+      {
+        "title": "펜실베이니아주는 1991년 이후 미국에서 가장 큰 규모의 홍역 발생을 기록했습니다.",
+        "source": "Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWWNPWnVUUWJoZWxTZkNWN3p3NnZpMDV1a1NwejVYZEJ1cXY5dnZ3azZxUVZFS2RSdV9vN20yS1VrLTc1b2R6RFRsWGJERVYyT1JrQkpZem5lVm51aTBESWhQcTFVcTZkWU1wTUhGOENnUFhRaHQ5VU9XeHR4dmxpMHIxd08yRFVqUUk0bFJlbTBYR1hJVEZDUjA5aVF3aUozQXlv?oc=5",
+        "date": "2026-10-09T06:20:58.000Z"
+      },
+      {
+        "title": "'허위 코로나19 백신 접종 증명서 구매한' 스위스 대표팀 캡틴 '그라니트 자카' 벌금형 집행유예 처분",
+        "source": "스포츠타임스",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFAxaU9KNUtJQUZqZ3R6OElQSHBBV1d3NlVzTXo5THluMWREemNrZmpfZERHblpLX2NxXzdyZVYxaUJ0bW1ocGdvTG0yM0Z4X3VPMGozaW9HU20wRXRCU3cxU00wZVE3bGNkLVo3X1RDRnRIUQ?oc=5",
+        "date": "2026-10-09T06:15:16.000Z"
+      },
+      {
+        "title": "양천시설공단, 임직원 독감 예방접종비 지원",
+        "source": "시사경제신문",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE95aTdpWm9jMEJXc1RLWXBFT2xfZzZ0SW84X0dvT3JMMlk0X0pBS21CRFU1OFJLZ2xiMnpVamJ6SFYxTEZsR1l6TzRYZWtGQndQYktoNTUzYWR2T3VxTVhIeHozQW9ySXdXaWhiZtIBbEFVX3lxTE95aTdpWm9jMEJXc1RLWXBFT2xfZzZ0SW84X0dvT3JMMlk0X0pBS21CRFU1OFJLZ2xiMnpVamJ6SFYxTEZsR1l6TzRYZWtGQndQYktoNTUzYWR2T3VxTVhIeHozQW9ySXdXaWhiZg?oc=5",
+        "date": "2026-10-09T05:56:22.000Z"
+      },
+      {
+        "title": "[국정감사 보도자료 박지원 의원 전북] C 형간염 국가검진 , 감염 확인 1,116 명 중 초기 치료 시작은 201 명에 불과",
+        "source": "한국시민기자협회 뉴스포털1",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAzMDRlQnFZMnlDRk0xbFhlSXdURWR0SDBkY29TSUhSc2ZjOXBPd2ZnSWdGSnNoWlJYMGVtdXFXR3hYX3JRRnJPWDBlQ0lNbGVMNjdDdENlaGxkcmtDZDBwZDcxU25oSjN5MXp4WHQ3cE52YUp5LWgw0gF3QVVfeXFMUDMwNGVCcVkyeUNGTTFsWGVJd1RFZHRIMGRjb1NJSFJzZmM5cE93ZmdJZ0ZKc2haUlgwZW11cVdHeFhfclFGck9YMGVDSU1sZUw2N0N0Q2VobGRya0NkMHBkNzFTbmhKM3kxenhYdDdwTnZhSnktaDA?oc=5",
+        "date": "2026-10-09T05:17:49.000Z"
       }
     ]
   }
