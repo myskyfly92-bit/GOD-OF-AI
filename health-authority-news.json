@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T01:01:06.094Z",
+  "generatedAt": "2026-10-09T01:13:52.791Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -10,18 +10,18 @@
       "date": "2026-10-06T02:45:00.000Z"
     },
     {
-      "title": "약국 이름에 ‘창고’, ‘마트’, ‘공장’, ‘최대’, ‘특가’ 못 쓴다... 「약사법 시행규칙」 개정 추진",
-      "source": "보건복지부 대표홈페이지",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSGtLOHFJSGdRa3ZfelRLQW9iU3o5Qlp6UnhPVFRUNmkxZUE0OG1xTGZVY2ZUREthZlRtclpkYUEzLV9XczJ0dTdLaF9VNlVaeHlfVnhWSEw3QzhaYlExb0tfSkJBdkZzM2tranUwcmJ2akliODN4Q3kyNVlFbzBtWVdCc1ZmZ2k2eXBtUnVSLU16WjNtTGhjYy1FTQ?oc=5",
-      "date": "2026-10-06T07:53:00.000Z"
-    },
-    {
       "title": "- 보건복지부 대표홈페이지",
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcWl1eDFmSFlfSDFzdFo3c1RVOXRrMzZfOE5pejFoZFJ2VGpDcXl3V01VV1dLTmxDTnVIV295OHpNZTJrc2Vibmo2eXJZRFozRk1hMUlHYUdNN2pWMUNyMVJaNjc1UVd0VkphSWxHMEdQX3FUeFFNdkdDYU9NY0w4VWd0NWJHQkl3VVBB?oc=5",
       "date": "2026-10-06T19:58:03.000Z"
+    },
+    {
+      "title": "약국 이름에 ‘창고’, ‘마트’, ‘공장’, ‘최대’, ‘특가’ 못 쓴다... 「약사법 시행규칙」 개정 추진",
+      "source": "보건복지부 대표홈페이지",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSGtLOHFJSGdRa3ZfelRLQW9iU3o5Qlp6UnhPVFRUNmkxZUE0OG1xTGZVY2ZUREthZlRtclpkYUEzLV9XczJ0dTdLaF9VNlVaeHlfVnhWSEw3QzhaYlExb0tfSkJBdkZzM2tranUwcmJ2akliODN4Q3kyNVlFbzBtWVdCc1ZmZ2k2eXBtUnVSLU16WjNtTGhjYy1FTQ?oc=5",
+      "date": "2026-10-06T07:53:00.000Z"
     },
     {
       "title": "65세 이상 어르신 국가예방접종 다음주부터 순차적 시작",
@@ -31,11 +31,25 @@
       "date": "2026-10-02T01:23:24.000Z"
     },
     {
+      "title": "암정보",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOVJ0cE1rNW9DUDEwTGtiZFdXcWFrWHNYdHp4Ul9OWVdPcEFoTnZtMGRJYXpQT0tpSzhrVkF1c1VKbTNoVkpfdkMzQmdHUzY1S0ZtbC1vQnlxWkpWbjZ2LW82cEc2QnBPOHY5TU5jbDRiQzI4RUJDaU9hX2NHb3NEX0ZDS2tNQmR5UWNWQks1cVlFbG1CZDJUd0FXS3M0UQ?oc=5",
+      "date": "2026-10-08T11:54:52.000Z"
+    },
+    {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
       "source": "질병관리청 감염병포털",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
       "date": "2024-06-10T03:38:59.000Z"
+    },
+    {
+      "title": "지침",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0RTllaXJiOXVCbVFEQjJqZ3FKLTVMNHNHV1BDLWxjMXpHX2tOLUJoY1dhNDFIVnFCeFJ6X2pLb01IZTZJWU1ablFmcktsX0txQTlZSUdB?oc=5",
+      "date": "2025-12-16T12:27:05.000Z"
     },
     {
       "title": "보도자료(전체)",
@@ -49,14 +63,14 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-07T08:42:14.000Z"
+      "date": "2026-10-08T11:49:43.000Z"
     },
     {
-      "title": "신청절차",
+      "title": "감시체계 연보",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5BeW5DRU9NbjhKR2JUUVhsZ0F1Z2VqOVBrT1hucGdPSHNGYTFlWWxNM1UtNlNFMFNPamR5U0o5dEp0RFRzV3U3RUZzZlN4TnM0X2pocVZR?oc=5",
-      "date": "2026-08-23T04:33:22.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tOW1Tdng1ZEhkR2duX1ViaWdQYktJQXNncGlJckFoU0syYURRZGRmRUdHcERWQmVjUlpEVWpMTEd6SmxMVUx6c3lGNU9oamhtZjdjWTdn?oc=5",
+      "date": "2025-12-16T16:42:53.000Z"
     },
     {
       "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
@@ -66,25 +80,11 @@
       "date": "2024-06-10T02:47:27.000Z"
     },
     {
-      "title": "홍보물",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoZDI5VGFnRWd1b0hoSFhVX0VIV1VKaXhjSzRxb2dfT3J0ZlNOeVdWUlV3YlhPVTUwM3Y5UmxDc3EzelBlaXp4akQzYmNsLVhqVzJrOFNn?oc=5",
-      "date": "2026-02-10T10:33:00.000Z"
-    },
-    {
       "title": "채용공고",
       "source": "질병관리청",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
       "date": "2025-12-16T15:48:42.000Z"
-    },
-    {
-      "title": "ICCON 감염예방 소식지",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ueXN2cXpmUkJyLWV2cHc4VHB3Sm01dGcwc09pTlNXVG5xZjE4bHpvUFgxOVktQjJoLXJHRmJRTHM4TXhrbmJLZ1JTQ25yWklLeDlqek1B?oc=5",
-      "date": "2025-12-16T15:49:07.000Z"
     }
   ]
 }
