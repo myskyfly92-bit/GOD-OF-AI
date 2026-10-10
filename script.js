@@ -168,6 +168,12 @@ const IQ_HOLIDAYS_2026 = {
   "2026-12-25": "Christmas Day",
 };
 
+/* 현장 일정 (달력에 금색 점 + 아래 목록에 표시). 새 일정은 여기에 한 줄씩 추가 */
+const SITE_EVENTS = {
+  "2026-10-15": "얼음물 배부 종료",
+  "2026-10-20": "안전보건교육 (이라크인·TCN 근로자)",
+};
+
 /* ---------------- 달력용 일별 날씨 아이콘 (Open-Meteo weathercode) ---------------- */
 let CALENDAR_DAILY_FORECAST = {}; // { "YYYY-MM-DD": { code, tmax, tmin } }
 let refreshHolidayCalendarWeather = null; // 아래 IIFE 안에서 실제 렌더 함수로 채워짐
@@ -233,11 +239,13 @@ function storeDailyForecastForCalendar(daily) {
       const key = dateKey(viewYear, viewMonth, d);
       const krName = KR_HOLIDAYS_2026[key];
       const iqName = IQ_HOLIDAYS_2026[key];
+      const evName = SITE_EVENTS[key];
 
       const cell = document.createElement("div");
       cell.className = "holiday-cell";
       if (key === todayKey) cell.classList.add("is-today");
       if (krName || iqName) cell.classList.add("has-holiday");
+      if (evName) cell.classList.add("has-event");
 
       const num = document.createElement("span");
       num.textContent = String(d);
@@ -261,7 +269,7 @@ function storeDailyForecastForCalendar(daily) {
         }
       }
 
-      if (krName || iqName) {
+      if (krName || iqName || evName) {
         const dots = document.createElement("span");
         dots.className = "holiday-dots";
         if (krName) {
@@ -274,12 +282,18 @@ function storeDailyForecastForCalendar(daily) {
           dot.className = "holiday-dot holiday-dot-iq";
           dots.appendChild(dot);
         }
+        if (evName) {
+          const dot = document.createElement("span");
+          dot.className = "holiday-dot holiday-dot-ev";
+          dots.appendChild(dot);
+        }
         cell.appendChild(dots);
         const titleParts = [];
         if (krName) titleParts.push(`🇰🇷 ${krName}`);
         if (iqName) titleParts.push(`🇮🇶 ${iqName}`);
+        if (evName) titleParts.push(`📌 ${evName}`);
         cell.title = titleParts.join(" · ");
-        monthEntries.push({ d, krName, iqName });
+        monthEntries.push({ d, krName, iqName, evName });
       }
 
       grid.appendChild(cell);
@@ -289,10 +303,10 @@ function storeDailyForecastForCalendar(daily) {
     if (monthEntries.length === 0) {
       const li = document.createElement("li");
       li.className = "holiday-list-empty";
-      li.textContent = "이번 달은 공휴일이 없습니다.";
+      li.textContent = "이번 달은 공휴일·현장 일정이 없습니다.";
       list.appendChild(li);
     } else {
-      monthEntries.forEach(({ d, krName, iqName }) => {
+      monthEntries.forEach(({ d, krName, iqName, evName }) => {
         const li = document.createElement("li");
         const dateSpan = document.createElement("span");
         dateSpan.className = "holiday-list-date";
@@ -303,6 +317,13 @@ function storeDailyForecastForCalendar(daily) {
         if (krName) names.push(`🇰🇷 ${krName}`);
         if (iqName) names.push(`🇮🇶 ${iqName}`);
         nameSpan.textContent = names.join("  ·  ");
+        if (evName) {
+          const ev = document.createElement("span");
+          ev.className = "holiday-list-ev";
+          ev.textContent = `📌 ${evName}`;
+          if (names.length) nameSpan.append("  ·  ");
+          nameSpan.appendChild(ev);
+        }
         li.appendChild(nameSpan);
         list.appendChild(li);
       });
