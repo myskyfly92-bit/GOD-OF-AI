@@ -3552,3 +3552,7 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .ai-annex-t { border-collapse: collapse; margin: 6px 0 8px; min-width: 100%; font-size: 11.5px; }
 .ai-annex-t td { border: 1px solid rgba(255,255,255,0.18); padding: 4px 6px; vertical-align: top; color: var(--text); }
 .ai-annex-t tr:first-child td { background: rgba(53,208,192,0.10); font-weight: 600; }
+/* 클리닉: EMR 통계 모드 */
+.clinic-panel.emr-mode .clinic-sub-row, .clinic-panel.emr-mode .clinic-table-wrap, .clinic-panel.emr-mode #clinicForm { display: none !important; }
+.clinic-emr-note { margin-top: 14px; padding: 12px 14px; border: 1px solid var(--border-soft); border-radius: 10px; background: rgba(53,208,192,0.06); font-size: 13px; line-height: 1.6; color: var(--text-muted); }
+.clinic-emr-note b { color: var(--text); } .clinic-emr-note a { display: inline-block; margin-top: 6px; color: var(--cyan); font-weight: 600; }

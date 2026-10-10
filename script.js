@@ -5707,7 +5707,10 @@ const CLINIC_EN = {
   "찰과상": "Abrasion", "열상": "Laceration", "열사병 의심": "Suspected heatstroke", "탈수": "Dehydration",
   "눈 이물질": "Foreign body in eye", "복통": "Stomachache", "설사": "Diarrhea", "어지러움": "Dizziness", "기침": "Cough",
   "한화": "Hanwha", "협력사": "Subcontractor",
+  "외부 병원 진료": "Outside hospital visit", "피부 상처": "Skin / wound", "눈": "Eye", "이비인후 치과": "ENT / dental", "열 관련": "Heat-related", "알레르기": "Allergy",
 };
+// BNCP Clinic EMR 주소 (진료 기록 원본) — 패밀리사이트와 같은 주소
+const EMR_URL = "https://script.google.com/macros/s/AKfycbzbc2OL601G8iW08brqgG_xggnMgul4FV5hV---IY2jp65-j_2kAYsa0r2kWnIASdAReg/exec";
 // 값 번역: 사전에 있으면 영어로, 쉼표로 나뉜 증상은 하나씩, 없으면 원문 그대로
 const clinicTr = (v) => {
   if (!UI_EN || !v) return v || "";
@@ -5765,16 +5768,25 @@ async function loadClinic(force) {
     (() => { const I = UI_EN ? CLINIC_INFO_EN : CLINIC_INFO;
       return `<span><b>${TT("운영", "Hours")}</b> ${escapeHtml(I.hours)}</span><span><b>${TT("위치", "Location")}</b> ${escapeHtml(I.place)}</span><span><b>${TT("연락", "Contact")}</b> ${escapeHtml(I.contact)}</span>`; })();
   const cards = document.getElementById("clinicCards");
-  let rows;
+  let rows, emr = null;
   try {
     const url = await getAppsScriptUrl();
     if (!url) throw new Error("Apps Script 주소가 없습니다");
     const pass = clinicPass.get();
-    const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + "action=clinic" + (pass ? "&pass=" + encodeURIComponent(pass) : "") + "&t=" + Date.now())).json();
-    if (!r.ok) throw new Error(r.error || "불러오기 실패");
-    rows = r.rows || [];
-    var locked = !!r.locked;
-    if (locked && pass) {   // 저장된 암호가 틀렸거나 바뀜
+    const base = url + (url.includes("?") ? "&" : "?");
+    // EMR 통계(건수만)가 들어와 있으면 그것을 쓰고, 없으면 예전처럼 '클리닉' 시트를 쓴다
+    const [r, em] = await Promise.all([
+      fetch(base + "action=clinic" + (pass ? "&pass=" + encodeURIComponent(pass) : "") + "&t=" + Date.now()).then((x) => x.json()).catch((e) => ({ ok: false, error: e.message })),
+      fetch(base + "action=emrStats&t=" + Date.now()).then((x) => x.json()).catch(() => null),
+    ]);
+    if (em && em.ok && em.data && Array.isArray(em.data.rows)) emr = em.data;
+    if (emr) {
+      rows = [];
+      emr.rows.forEach((t) => { for (let i = 0; i < (Number(t[7]) || 1); i++) rows.push({ date: t[0], cat: t[1], symCat: t[2], symptom: t[3], action: t[4], injType: t[5], injCause: t[6] }); });
+    } else if (!r.ok) throw new Error(r.error || "불러오기 실패");
+    else rows = r.rows || [];
+    var locked = emr ? true : !!r.locked;
+    if (!emr && locked && pass) {   // 저장된 암호가 틀렸거나 바뀜
       clinicPass.set("");
       const m = document.getElementById("clinicUnlockMsg");
       if (m) m.textContent = TT("암호가 맞지 않습니다", "Wrong passcode");
@@ -5858,8 +5870,24 @@ async function loadClinic(force) {
       <div><div class="cis-h">${TT("발생 형태", "Accident type")}</div><ul class="clinic-top">${bars(causes, INJ_CAUSES, "#f2a93b")}</ul></div></div>`;
   })();
 
+  // EMR 통계 모드: 개별 기록 대신 조치별 건수와 EMR 안내를 보여 준다
+  const panel = document.querySelector(".clinic-panel");
+  let emrBox = document.getElementById("clinicEmrBox");
+  if (emr) {
+    if (!emrBox) { emrBox = document.createElement("div"); emrBox.id = "clinicEmrBox"; document.querySelector(".clinic-table-wrap").parentElement.appendChild(emrBox); }
+    const acts = {}; week.forEach((x) => { acts[x.action || "기타"] = (acts[x.action || "기타"] || 0) + 1; });
+    const actRows = Object.entries(acts).sort((a, b) => b[1] - a[1]);
+    const aMax = Math.max(1, ...actRows.map((a) => a[1]));
+    emrBox.innerHTML = `<div class="clinic-sub">${TT("조치별 (최근 7일)", "By action (last 7 days)")}</div>
+      <ul class="clinic-top">${actRows.length ? actRows.map(([a, n]) => `<li class="sc-row"><span class="sc-name"><i style="background:${/후송/.test(a) ? "#e5484d" : /외부/.test(a) ? "#f2a93b" : "#35d0c0"}"></i>${escapeHtml(clinicTr(a))}</span>
+        <span class="sc-bar"><b style="width:${(n / aMax) * 100}%;background:${/후송/.test(a) ? "#e5484d" : /외부/.test(a) ? "#f2a93b" : "#35d0c0"}"></b></span><span class="sc-n">${n}${TT("건", "")}</span></li>`).join("") : `<li>${TT("최근 7일 진료 없음", "No visits in the last 7 days")}</li>`}</ul>
+      <div class="clinic-emr-note">🔒 ${TT("개별 진료 기록은 <b>BNCP Clinic EMR</b>에서 관리합니다 (등록된 클리닉 담당자만 열람). 이 화면에는 개인정보 없이 건수만 표시됩니다.", "Individual records are kept in <b>BNCP Clinic EMR</b> (registered clinic staff only). This page shows counts only, without personal data.")}
+        <a href="${EMR_URL}" target="_blank" rel="noopener noreferrer">${TT("EMR 열기", "Open EMR")} ↗</a></div>`;
+    emrBox.hidden = false;
+  } else if (emrBox) emrBox.hidden = true;
+  if (panel) panel.classList.toggle("emr-mode", !!emr);
   // 잠금: 암호 없으면 목록·추가 버튼을 숨기고 암호 입력 칸만
-  document.getElementById("clinicUnlock").hidden = !locked;
+  document.getElementById("clinicUnlock").hidden = !locked || !!emr;
   document.getElementById("clinicAddBtn").hidden = locked;
   document.getElementById("clinicLockBtn").hidden = locked;
   document.querySelector(".clinic-table-wrap").hidden = locked;
@@ -5890,6 +5918,11 @@ async function loadClinic(force) {
     try { await clinicCall("clinicDel", { row: Number(b.dataset.row), date: b.dataset.date }); await loadClinic(true); }
     catch (e) { alert(TT("삭제하지 못했습니다: ", "Could not delete: ") + e.message); b.disabled = false; }
   });
+  if (emr) {
+    document.getElementById("clinicMeta").textContent = TT(`BNCP Clinic EMR에서 자동 집계 (개인정보 없이 건수만 · 30분마다 갱신 · 최근 63일) · EMR 집계 시각 ${emr.updated}`,
+      `Aggregated automatically from BNCP Clinic EMR (counts only, no personal data · every 30 min · last 63 days) · EMR updated ${emr.updated}`);
+    return;
+  }
   document.getElementById("clinicMeta").textContent =
     (locked
       ? TT(`구글 시트 '클리닉' 탭에서 불러옵니다 (최근 60일) · 개인 기록은 암호를 넣은 담당자만 볼 수 있고, 지금은 통계만 표시합니다 · 불러온 시각 `, `From the 'Clinic' Google Sheet (last 60 days) · Individual records require the clinic passcode; showing statistics only · Updated `)
@@ -6538,7 +6571,7 @@ async function clinicCall(action, payload) {
       { sel: "#medFilter", text: `위 버튼으로 <b>병원 · 응급실 · 공립 · 의원·보건소</b>만 골라 볼 수 있고, 옆 <b>진료과</b> 목록에서 정형외과·화상·안과 등을 고르면 그 과가 있는 곳만 남아요.<br>진료과는 병원 이름과 지도 정보로 <b>추정</b>한 것이라 방문 전 전화로 확인하세요.` },
       { sel: "#medList", text: `<b>목록</b>은 가까운 순이에요. 이름은 <b>영어</b>를 먼저, 아래에 <b>아랍어</b>를 함께 적어서 현지 기사님께 그대로 보여 줄 수 있어요.<br><b>길찾기</b>를 누르면 구글 지도 경로가 열려요. 거리·시간은 <b>교통 상황이 반영되지 않은</b> 값이에요.` },
       { go: "view-health-clinic", sel: ".clinic-panel", text: `<b>현장 클리닉 현황</b>이에요. 진료 건수, 많이 온 증상, 부상 통계와 추이를 보여 줘요. 누가 왔는지가 아니라 <b>현장 건강 경향</b>을 보는 곳이에요.` },
-      { sel: "#clinicUnlock", text: `<b>진료 기록</b>은 잠겨 있어요. 담당자만 <b>클리닉 암호</b>를 넣고 <b>열기</b>를 누르면 기록 보기·추가가 돼요. 이름은 열어도 <b>성만</b> 보여요.<br>여럿이 쓰는 PC라면 다 쓴 뒤 <b>🔒 잠그기</b>를 꼭 눌러 주세요.` },
+      { sel: "#clinicMeta", text: `이 카드의 통계는 <b>BNCP Clinic EMR</b>(클리닉 전자 진료기록)에서 <b>30분마다 자동으로</b> 들어와요. 이름·사번·회사 같은 개인정보 없이 <b>건수만</b> 받아요. 개별 진료 기록은 EMR에서 등록된 클리닉 담당자만 볼 수 있어요.` },
       { go: "view-health-kdca", sel: ".kdca-panel", text: `<b>국내 감염병 현황</b>이에요. 질병관리청 주간 신고 통계로 <b>등급별 건수</b>, 많이 늘어난 감염병, <b>해외 유입</b> 사례를 보여 줘요. 휴가 복귀자 관리에 참고하세요.` },
       { go: "view-iraq-moh", sel: "#view-iraq-moh .iraq-news-panel", text: `<b>이라크 보건부 소식</b>이에요. 현지 감염병·예방접종·보건 공지를 모아 한국어로 보여 줘요.` },
       { go: "view-health-issues", sel: "#view-health-issues .bnews-panel", text: `<b>세계 보건 이슈</b>예요. 페스트·에볼라·조류인플루엔자처럼 <b>세계적으로 화제가 되는 감염병 소식</b>을 국내 보도와 해외·이라크 보도로 나눠 모았어요. 해외 기사는 한국어로 번역돼 있고, <b>기사를 누르면 본문이 펼쳐져요.</b> 6시간마다 새로 모아요.` },
