@@ -571,40 +571,67 @@ function escapeHtml(str) {
 }
 
 /* ---------------- 날씨 & 대기질 (Open-Meteo) ---------------- */
+// 일시 장애·호출 제한에 대비: 날씨와 대기질을 따로 받고, 실패하면 몇 번 다시 시도하고,
+// 그래도 안 되면 마지막으로 받은 값(이 기기에 저장)을 '○시 기준'으로 보여 준다
+async function fetchJsonRetry(url, tries = 3) {
+  let last;
+  for (let k = 0; k < tries; k++) {
+    try {
+      const r = await fetch(url, { cache: "no-store" });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const j = await r.json();
+      if (j && j.error) throw new Error(j.reason || "API error");
+      return j;
+    } catch (e) { last = e; if (k < tries - 1) await new Promise((res) => setTimeout(res, 1500 * (k + 1))); }
+  }
+  throw last;
+}
+const wxCache = {
+  get(k) { try { const v = JSON.parse(localStorage.getItem("wx_" + k) || "null"); return v && Date.now() - v.t < 12 * 3600 * 1000 ? v : null; } catch (e) { return null; } },
+  set(k, d) { try { localStorage.setItem("wx_" + k, JSON.stringify({ t: Date.now(), d })); } catch (e) {} },
+};
 async function loadWeather() {
+  const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m,wind_direction_10m&hourly=precipitation_probability&daily=sunrise,sunset,weathercode,temperature_2m_max,temperature_2m_min&forecast_days=16&timezone=${encodeURIComponent(TIMEZONE)}`;
+  const airUrl = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=pm10,pm2_5,ozone,uv_index&timezone=${encodeURIComponent(TIMEZONE)}`;
+  const [wr, ar] = await Promise.allSettled([fetchJsonRetry(weatherUrl), fetchJsonRetry(airUrl)]);
+  let weather = null, air = null, staleAt = 0;
+  if (wr.status === "fulfilled" && wr.value && wr.value.current) { weather = wr.value; wxCache.set("main", weather); }
+  else { const c = wxCache.get("main"); if (c) { weather = c.d; staleAt = c.t; } }
+  if (ar.status === "fulfilled" && ar.value && ar.value.current) { air = ar.value; wxCache.set("air", air); }
+  else { const c = wxCache.get("air"); if (c) air = c.d; }
+  if (!weather) {
+    console.error(wr.reason);
+    document.getElementById("heatStatus").innerHTML = `
+      <div class="heat-status-title">날씨 데이터를 불러올 수 없습니다</div>
+      <div class="heat-status-desc">날씨 서버(Open-Meteo)가 잠시 응답하지 않습니다. 1분 뒤 자동으로 다시 시도합니다.</div>
+    `;
+    if (!loadWeather._retry) { loadWeather._retry = setTimeout(() => { loadWeather._retry = null; loadWeather(); }, 60 * 1000); }
+    return;
+  }
   try {
-    const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=temperature_2m,relative_humidity_2m,apparent_temperature,wind_speed_10m,wind_direction_10m&hourly=precipitation_probability&daily=sunrise,sunset,weathercode,temperature_2m_max,temperature_2m_min&forecast_days=16&timezone=${encodeURIComponent(TIMEZONE)}`;
-    const airUrl = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&current=pm10,pm2_5,ozone,uv_index&timezone=${encodeURIComponent(TIMEZONE)}`;
-
-    const [weatherRes, airRes] = await Promise.all([fetch(weatherUrl), fetch(airUrl)]);
-    const weather = await weatherRes.json();
-    const air = await airRes.json();
-
     const c = weather.current;
-    const a = air.current;
-
+    const a = (air && air.current) || {};
     document.getElementById("wTemp").textContent = c.temperature_2m?.toFixed(1) ?? "–";
     document.getElementById("wFeels").textContent = c.apparent_temperature?.toFixed(1) ?? "–";
     document.getElementById("wHumidity").textContent = c.relative_humidity_2m ?? "–";
     document.getElementById("wWind").textContent = c.wind_speed_10m?.toFixed(1) ?? "–";
     updateWindDirection(c.wind_direction_10m);
-    updateAirQualityGrade("wPm10", a.pm10, PM10_GRADES);
-    updateAirQualityGrade("wPm25", a.pm2_5, PM25_GRADES);
-    updateAirQualityGrade("wOzone", a.ozone, OZONE_GRADES);
-    updateUvIndex(a.uv_index);
-
+    if (air) {
+      updateAirQualityGrade("wPm10", a.pm10, PM10_GRADES);
+      updateAirQualityGrade("wPm25", a.pm2_5, PM25_GRADES);
+      updateAirQualityGrade("wOzone", a.ozone, OZONE_GRADES);
+      updateUvIndex(a.uv_index);
+    }
     updateHeatStatus(c.temperature_2m, c.apparent_temperature);
     updateSunTimes(weather.daily);
     updateRainChance(weather.hourly);
     storeDailyForecastForCalendar(weather.daily);
-    document.getElementById("lastUpdated").textContent =
-      "마지막 갱신: " + new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date());
+    const hm = (t) => new Intl.DateTimeFormat("ko-KR", { timeZone: TIMEZONE, hour: "2-digit", minute: "2-digit" }).format(new Date(t));
+    document.getElementById("lastUpdated").textContent = staleAt
+      ? `날씨 서버 응답 지연 · ${hm(staleAt)}에 받은 값을 표시 중 (자동 재시도)`
+      : "마지막 갱신: " + hm(Date.now()) + (air ? "" : " · 대기질은 잠시 후 다시 시도");
   } catch (err) {
     console.error(err);
-    document.getElementById("heatStatus").innerHTML = `
-      <div class="heat-status-title">날씨 데이터를 불러올 수 없습니다</div>
-      <div class="heat-status-desc">네트워크 연결을 확인하거나 잠시 후 다시 시도하세요.</div>
-    `;
   }
 }
 
