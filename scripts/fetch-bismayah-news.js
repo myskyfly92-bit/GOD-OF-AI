@@ -32,6 +32,10 @@ const CFGS = {
     ],
     // 감염병·보건 관련 낱말이 실제로 있어야 한다
     MUST: /감염|전염|확진|역학|페스트|흑사병|에볼라|마버그|바이러스|독감|인플루엔자|엠폭스|콜레라|니파|홍역|뎅기|outbreak|plague|ebola|marburg|virus|flu|h5n1|mpox|cholera|nipah|measles|dengue|epidemic|pandemic|infection|cchf|hemorrhagic|نزفية|كوليرا|انفلونزا|حصبة|فيروس|وباء|إصابات|الصحة/i,
+    // 보건 탭은 제목에 감염병 낱말이 있어야 한다 (요약에만 스친 기사 거르기)
+    TITLE_ONLY: true,
+    // '모터페스트' 같은 게임·축제, 주식 시황 기사는 뺀다
+    NOT: /(모터|뮤직|푸드|맥주|아트|영화|게임|댄스|재즈|록|락|와인|커피|스트리트|썸머|윈터|북)\s?페스트|페스티벌|motorfest|festival|특징주|株|주가|급등|급락|airways|airlines? resumes?/i,
   },
 };
 const CFG = CFGS[process.env.NEWS_CFG || "bismayah"];
@@ -41,6 +45,8 @@ const MAX_ITEMS = CFG.MAX_ITEMS;   // 최대 몇 건까지 보여 줄지
 const BODY_PER_RUN = 30; // 한 번 실행할 때 본문을 새로 가져올 최대 건수
 const SEARCHES = CFG.SEARCHES;
 const MUST = CFG.MUST;
+const NOT = CFG.NOT || null;
+const keep = (n) => MUST.test(n.title + (CFG.TITLE_ONLY ? "" : " " + (n._desc || ""))) && !(NOT && NOT.test(n.title + " " + (n._desc || "")));
 
 const UA = { "User-Agent": "Mozilla/5.0 (compatible; BismayahHSEBot/1.0)" };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -174,7 +180,7 @@ async function main() {
   let ok = 0;
   for (const s of SEARCHES) {
     try {
-      const items = (await searchNews(s)).filter((n) => MUST.test(n.title + " " + n._desc));
+      const items = (await searchNews(s)).filter(keep);
       console.log(`[${s.lang}] "${s.q}" → ${items.length}건`);
       found.push(...items);
       ok++;
@@ -191,7 +197,7 @@ async function main() {
   // 새로 찾은 것 + 예전 것(기간 안) → 중복 제거 → 최신순
   const since = Date.now() - KEEP_DAYS * 86400000;
   const seenLink = new Set(), seenTitle = new Set();
-  const list = [...found, ...prev].filter((n) => {
+  const list = [...found, ...prev.filter(keep)].filter((n) => {
     const t = n.date ? Date.parse(n.date) : Date.now();
     if (t < since) return false;
     const k = n.title.replace(/[\s\-–—|:"'«»]+/g, "").slice(0, 50);
