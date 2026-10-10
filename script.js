@@ -3625,7 +3625,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   // 낮잠: 하품 → 안전모 벗어 베개 삼아 눕기 → 쿨쿨(반복) → 깨서 안전모 다시 쓰고 경례
   // 주기: 처음 오른쪽으로 달려가다가 중간쯤에서 한숨 자고, 그 뒤로는 5~8분마다 오른쪽으로 달리는 길에 한 번씩
   //       (그림 3개 약 2MB 는 화면이 뜨고 3초 뒤에 받아 둔다)
-  const SLEEP = { a: { src: "assets/mascot-sleep.webp", ms: 13300 }, l: { src: "assets/mascot-sleep-loop.webp", ms: 3800 }, w: { src: "assets/mascot-wake.webp", ms: 10400 } };
+  const SLEEP = { a: { src: "assets/mascot-sleep.webp", ms: 13300 }, l: { src: "assets/mascot-sleep-loop.webp?v=2", ms: 3800 }, w: { src: "assets/mascot-wake.webp?v=2", ms: 10400 } };
   const sleepBlob = {}, sleepUrl = {};
   let sleeping = 0, sleepTimers = [], lastSleep = 0;
   let napDue = 0, napX = null;              // napDue: 이 시각 이후 오른쪽으로 달릴 때 napX 에서 잠든다 (0 = 바로 다음 번)
