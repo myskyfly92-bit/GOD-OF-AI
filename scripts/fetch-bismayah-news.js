@@ -229,6 +229,11 @@ async function main() {
     console.log(`  본문 ${n.body ? n.body.length + "자" : "못 가져옴"} · ${n.url.slice(0, 80)}`);
     await sleep(500);
   }
+  // 자동 번역이 자주 틀리는 낱말 바로잡기 (예: plague → '전염병'이 아니라 '페스트')
+  const FIX = [[/plague/i, /전염병|흑사병/g, "페스트"]];
+  list.forEach((n) => FIX.forEach(([src, bad, good]) => {
+    if (n.lang !== "ko" && src.test(n.title) && n.titleKo && !n.titleKo.includes(good)) n.titleKo = n.titleKo.replace(bad, good);
+  }));
   // 바로 가는 원문 주소가 있으면 그걸 링크로 쓴다
   list.forEach((n) => { if (n.url && !/news\.google\.com/.test(n.url)) n.link = n.url; });
 
