@@ -4102,6 +4102,10 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   }
   btn.addEventListener("click", (e) => { e.stopPropagation(); setReveal(!document.body.classList.contains("bg-reveal"), true); });
   window.hseSetReveal = setReveal;
+  // 배경 보기 중에 다른 탭(대분류·소분류)을 누르면 배경 보기를 풀고 그 탭의 정보를 보여 준다
+  document.addEventListener("click", (e) => {
+    if (document.body.classList.contains("bg-reveal") && e.target.closest(".tab-btn, .group-btn")) setReveal(false);
+  }, true);
   window.hsePlayEnter = () => playEnter(document.querySelector(".view.active"));
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && document.body.classList.contains("bg-reveal")) setReveal(false); });
 
