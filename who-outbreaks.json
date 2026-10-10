@@ -8,6 +8,14 @@
   "errors": {},
   "items": [
     {
+      "kind": "감염병 발생",
+      "title": "Pneumonia of undetermined etiology - the Russian Federation",
+      "date": "2026-10-10T15:53:19Z",
+      "summary": "On 2 October 2026, WHO became aware through media reports of the death of an employee of the Irkutsk Antiplague Research Institute (APRI) of Siberia and the Far East, the Russian Federation. According to these reports, the individual died on 2 October following hospitalization for severe pneumonia on 29 September, and pneumonic plague was suspected as the cause of death, following occupational exposure in laboratory settings. Following requests for verification from WHO, the National Focal Point",
+      "link": "https://www.who.int/2026-DON620",
+      "donId": "2026-DON620"
+    },
+    {
       "kind": "WHO 소식",
       "title": "WHO Youth Council welcomes 2026–2028 members in Berlin",
       "date": "2026-10-09T12:30:33Z",
@@ -198,15 +206,7 @@
       "summary": "This is the fifth Disease Outbreak News posting on the Andes hantavirus (ANDV) outbreak linked to the cruise ship M/V Hondius. The outbreak identification followed the notification to the World Health Organization (WHO) on 2 May 2026 of severe acute respiratory illness cases onboard. Since the previous Disease Outbreak News was published on 28 May 2026, one of the probable cases from Tristan da Cunha, an Overseas Territory of the United Kingdom of Great Britain and Northern Ireland (hereafter re",
       "link": "https://www.who.int/2026-DON611",
       "donId": "2026-DON611"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Nipah virus disease - India",
-      "date": "2026-06-25T15:43:28Z",
-      "summary": "On 11 June 2026, the Kerala State Health Department confirmed one laboratory confirmed case of Nipah virus (NiV) infection in Kozhikode district, Kerala State, India. The case is an adult male who developed symptoms on 30 May 2026 and was hospitalized on 10 June 2026. He presented with neurological manifestations and at the time of reporting is on ventilatory support in an intensive care unit (ICU). As of 18 June 2026, a total of 104 contacts had been identified and were under monitoring, includ",
-      "link": "https://www.who.int/2026-DON609",
-      "donId": "2026-DON609"
     }
   ],
-  "generatedAt": "2026-10-10T11:32:41.295636+00:00"
+  "generatedAt": "2026-10-10T16:33:19.790489+00:00"
 }
