@@ -2255,7 +2255,19 @@ function wzPasscode(ask) {
 async function wzCallScript(action, payload) {
   const url = wzConfig.appsScriptUrl.trim();
   const q = `action=${action}&payload=${encodeURIComponent(JSON.stringify(payload))}&t=${Date.now()}`;
-  const res = await fetch(url + (url.includes("?") ? "&" : "?") + q);
+  let res;
+  try {
+    res = await fetch(url + (url.includes("?") ? "&" : "?") + q);
+  } catch (err) {
+    // 구글 서버 응답이 중간에 끊기는 경우(Failed to fetch): 같은 내용으로 다시 보내도 안전한 '수정·위치'만 1.5초 뒤 한 번 더
+    if (action !== "edit" && action !== "setxy") throw new Error("구글 시트와 연결이 잠깐 끊겼습니다. 새로고침해서 저장됐는지 확인한 뒤 다시 시도해 주세요");
+    await new Promise((r) => setTimeout(r, 1500));
+    try {
+      res = await fetch(url + (url.includes("?") ? "&" : "?") + q.replace(/&t=\d+$/, "&t=" + Date.now()));
+    } catch (err2) {
+      throw new Error("구글 시트와 연결이 잠깐 끊겼습니다. 잠시 뒤 다시 시도해 주세요");
+    }
+  }
   const j = await res.json();
   if (!j.ok) throw new Error(j.error || "저장 실패");
   return j;
