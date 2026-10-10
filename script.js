@@ -3622,6 +3622,47 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     }, ACTION_MS + 1200);
     return true;
   }
+  // 낮잠: 하품 → 안전모 벗어 베개 삼아 눕기 → 쿨쿨(반복) → 깨서 안전모 다시 쓰고 경례
+  // 그림 3개(약 2MB)는 페이지가 뜨고 1분 뒤에 받아 둔다. 잠은 가끔만(8분에 한 번 이하)
+  const SLEEP = { a: { src: "assets/mascot-sleep.webp", ms: 13300 }, l: { src: "assets/mascot-sleep-loop.webp", ms: 3800 }, w: { src: "assets/mascot-wake.webp", ms: 10400 } };
+  const sleepBlob = {}, sleepUrl = {};
+  let sleeping = 0, sleepTimers = [], lastSleep = 0;   // sleeping: 0=깨어 있음, 1=잠드는 중, 2=쿨쿨, 3=깨는 중
+  setTimeout(() => {
+    Object.keys(SLEEP).forEach((k) => fetch(SLEEP[k].src).then((r) => (r.ok ? r.blob() : null)).then((b) => { if (b) sleepBlob[k] = b; }).catch(() => {}));
+  }, 60 * 1000);
+  const sleepReady = () => sleepBlob.a && sleepBlob.l && sleepBlob.w;
+  function showSleep(k) {
+    if (sleepUrl[k]) URL.revokeObjectURL(sleepUrl[k]);
+    sleepUrl[k] = URL.createObjectURL(sleepBlob[k]);   // 매번 새 주소 → 처음부터 재생
+    img.src = sleepUrl[k];
+  }
+  const later = (fn, ms) => sleepTimers.push(setTimeout(fn, ms));
+  function startSleep(t) {
+    if (!sleepReady() || window.__mascotHold || acting) return false;
+    acting = true; running = false; sleeping = 1; lastSleep = t;
+    runner.classList.remove("is-running"); runner.classList.add("is-sleeping");
+    facing = 1; img.style.setProperty("--flip", 1);
+    mode = "action"; target = 0; speed = 0; busyUntil = Infinity;
+    showSleep("a");
+    later(() => say(["하암~ 잠깐 휴식!", "휴게시간엔 푹 쉬어요 💤", "안전모는 잠깐 베개로…"][Math.floor(Math.random() * 3)]), 1200);
+    later(() => { sleeping = 2; showSleep("l"); later(() => say("쿨쿨… 💤"), 600); }, SLEEP.a.ms);
+    const cycles = 4 + Math.floor(Math.random() * 3);   // 15~23초 쿨쿨
+    later(wakeUp, SLEEP.a.ms + cycles * SLEEP.l.ms);
+    return true;
+  }
+  function wakeUp() {
+    if (sleeping !== 1 && sleeping !== 2) return;
+    sleepTimers.forEach(clearTimeout); sleepTimers = [];
+    sleeping = 3;
+    showSleep("w");
+    later(() => say("안전모 다시 착용! 턱끈까지 딸깍 ✔"), 6200);
+    later(() => {
+      sleeping = 0; acting = false;
+      runner.classList.remove("is-sleeping");
+      img.src = STAND_SRC;
+      busyUntil = performance.now() + 2500;
+    }, SLEEP.w.ms + 300);
+  }
   const STEPS_PER_PX = 0.05; // 이동 거리당 걸음 수 → 빨리 걸으면 걸음도 빨라진다
   let x = 0, dir = 1, facing = 1, speed = 0, target = 0, phase = 0, breath = 0;
   let minX = 0, maxX = 0, last = 0, hover = false, busyUntil = 0, mode = "idle";
@@ -3701,6 +3742,8 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       if (d !== facing) { turn(d); return; }
       mode = "walk"; dir = d; target = MAX_SPEED;
       busyUntil = Infinity; // 끝에 닿으면 아래 tick 에서 다음 행동을 고른다
+    } else if (r < 0.68 && sleepReady() && now - lastSleep > 8 * 60 * 1000 && x > minX + 30 && x < maxX - 30 && startSleep(now)) {
+      // 가끔 낮잠 (위 startSleep 이 시작함)
     } else if (r < 0.85) {   // (제자리 폴짝 뛰기는 뺐다)
       mode = "idle"; target = 0; busyUntil = now + 3000;
       say(pickLine());
@@ -3751,9 +3794,14 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   }
 
   window.hseMascotSay = (t) => say(t);
+  window.hseMascotSleep = () => startSleep(performance.now());   // 시험용: 콘솔에서 바로 재우기
   runner.addEventListener("mouseenter", () => { hover = true; });
   runner.addEventListener("mouseleave", () => { hover = false; busyUntil = performance.now() + 800; });
-  runner.addEventListener("click", () => { say(POKES[pokeI++ % POKES.length]); }); // 누르면 대답 (폴짝 뛰기는 뺐다)
+  runner.addEventListener("click", () => {
+    if (sleeping === 2 || sleeping === 1) { say("앗! 깜빡 졸았네요 😅"); wakeUp(); return; }   // 자고 있으면 깨운다
+    if (sleeping === 3) return;
+    say(POKES[pokeI++ % POKES.length]);
+  }); // 누르면 대답 (폴짝 뛰기는 뺐다)
 
   const start = () => { bounds(); busyUntil = performance.now() + 1500; requestAnimationFrame(tick); };
   if (home.complete) start(); else home.addEventListener("load", start, { once: true });
