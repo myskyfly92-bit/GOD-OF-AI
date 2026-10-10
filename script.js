@@ -667,7 +667,7 @@ function updateWindDirection(deg) {
   const idx = Math.round(deg / 22.5) % 16;
   if (label) {
     label.innerHTML =
-      `<span class="wind-compass-deg">${WIND_COMPASS[idx]} (${Math.round(deg)}°)</span>` +
+      `<span class="wind-compass-deg">${WIND_COMPASS[idx]}<small class="wv-grade">${Math.round(deg)}°</small></span>` +
       `<span class="wind-compass-ko">${WIND_COMPASS_KO[idx]}</span>`;
   }
 }
@@ -704,7 +704,7 @@ function updateAirQualityGrade(elementId, value, grades) {
     return;
   }
   const grade = grades.find((g) => value <= g.max) || grades[grades.length - 1];
-  el.textContent = `${value.toFixed(0)} (${grade.label})`;
+  el.innerHTML = `${value.toFixed(0)}<small class="wv-grade">${escapeHtml(grade.label)}</small>`;   // 등급은 작게 옆에 (두 줄로 안 넘어가게)
   el.style.color = grade.color;
 }
 
@@ -721,7 +721,7 @@ function updateUvIndex(uv) {
   else if (uv < 8) label = "높음";
   else if (uv < 11) label = "매우높음";
   else label = "위험";
-  el.textContent = `${uv.toFixed(1)} (${label})`;
+  el.innerHTML = `${uv.toFixed(1)}<small class="wv-grade">${escapeHtml(label)}</small>`;
 }
 
 function updateSunTimes(daily) {

@@ -3570,7 +3570,7 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 #view-dashboard .heat-status-title { font-size: 18.5px; }
 #view-dashboard .heat-status-desc { font-size: 14.5px; }
 #view-dashboard .heat-scale-seg { font-size: 13.5px; }
-#view-dashboard .heat-wx-label, #view-dashboard .weather-key { font-size: 13.5px; }
+#view-dashboard .heat-wx-label, #view-dashboard .weather-key { font-size: 13px; }
 #view-dashboard .weather-value { font-size: 22px; }
 #view-dashboard .source-note { font-size: 14px; }
 #view-dashboard .tw-date, #view-dashboard .tw-empty { font-size: 14.5px; }
@@ -3594,3 +3594,7 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .fx-widget .fx-widget-title, .fx-widget .fx-updated { font-size: 13.5px; }
 .fx-widget .fx-label { font-size: 14.5px; }
 .fx-widget .fx-value { font-size: 17.5px; }
+#view-dashboard .weather-value { white-space: nowrap; }
+.weather-value .wv-grade { font-size: 13px; font-weight: 600; margin-left: 5px; opacity: .9; letter-spacing: 0; vertical-align: 2px; }
+/* 좁은 화면에서 날씨 칸 이름이 여러 줄로 넘어가지 않게 */
+@media (max-width: 1600px) { #view-dashboard .heat-panel .panel-label { font-size: 13px; } #view-dashboard .heat-wx-label, #view-dashboard .weather-key { font-size: 12px; letter-spacing: -0.2px; } #view-dashboard .weather-value { font-size: 20px; } }
