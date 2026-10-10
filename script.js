@@ -3623,13 +3623,16 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     return true;
   }
   // 낮잠: 하품 → 안전모 벗어 베개 삼아 눕기 → 쿨쿨(반복) → 깨서 안전모 다시 쓰고 경례
-  // 그림 3개(약 2MB)는 페이지가 뜨고 1분 뒤에 받아 둔다. 잠은 가끔만(8분에 한 번 이하)
+  // 주기: 처음 오른쪽으로 달려가다가 중간쯤에서 한숨 자고, 그 뒤로는 5~8분마다 오른쪽으로 달리는 길에 한 번씩
+  //       (그림 3개 약 2MB 는 화면이 뜨고 3초 뒤에 받아 둔다)
   const SLEEP = { a: { src: "assets/mascot-sleep.webp", ms: 13300 }, l: { src: "assets/mascot-sleep-loop.webp", ms: 3800 }, w: { src: "assets/mascot-wake.webp", ms: 10400 } };
   const sleepBlob = {}, sleepUrl = {};
-  let sleeping = 0, sleepTimers = [], lastSleep = 0;   // sleeping: 0=깨어 있음, 1=잠드는 중, 2=쿨쿨, 3=깨는 중
+  let sleeping = 0, sleepTimers = [], lastSleep = 0;
+  let napDue = 0, napX = null;              // napDue: 이 시각 이후 오른쪽으로 달릴 때 napX 에서 잠든다 (0 = 바로 다음 번)
+  const nextNap = () => { napDue = performance.now() + (5 + Math.random() * 3) * 60 * 1000; napX = null; };   // sleeping: 0=깨어 있음, 1=잠드는 중, 2=쿨쿨, 3=깨는 중
   setTimeout(() => {
     Object.keys(SLEEP).forEach((k) => fetch(SLEEP[k].src).then((r) => (r.ok ? r.blob() : null)).then((b) => { if (b) sleepBlob[k] = b; }).catch(() => {}));
-  }, 60 * 1000);
+  }, 3000);
   const sleepReady = () => sleepBlob.a && sleepBlob.l && sleepBlob.w;
   function showSleep(k) {
     if (sleepUrl[k]) URL.revokeObjectURL(sleepUrl[k]);
@@ -3661,6 +3664,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       runner.classList.remove("is-sleeping");
       img.src = STAND_SRC;
       busyUntil = performance.now() + 2500;
+      nextNap();
     }, SLEEP.w.ms + 300);
   }
   const STEPS_PER_PX = 0.05; // 이동 거리당 걸음 수 → 빨리 걸으면 걸음도 빨라진다
@@ -3742,8 +3746,6 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       if (d !== facing) { turn(d); return; }
       mode = "walk"; dir = d; target = MAX_SPEED;
       busyUntil = Infinity; // 끝에 닿으면 아래 tick 에서 다음 행동을 고른다
-    } else if (r < 0.68 && sleepReady() && now - lastSleep > 8 * 60 * 1000 && x > minX + 30 && x < maxX - 30 && startSleep(now)) {
-      // 가끔 낮잠 (위 startSleep 이 시작함)
     } else if (r < 0.85) {   // (제자리 폴짝 뛰기는 뺐다)
       mode = "idle"; target = 0; busyUntil = now + 3000;
       say(pickLine());
@@ -3762,6 +3764,11 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     // 달리는 그림이 제자리에서 헛발질하지 않도록 속도는 바로 붙고 바로 멈춘다
     speed = target;
     x += dir * speed * dt;
+    // 낮잠 때가 됐으면: 오른쪽으로 달리는 길의 중간쯤(40~70%)에서 멈춰 잠든다
+    if (mode === "walk" && dir > 0 && !acting && !held && !hover && t >= napDue && sleepReady() && maxX - minX > 120) {
+      if (napX === null) napX = minX + (maxX - minX) * (0.4 + Math.random() * 0.3);
+      if (x >= napX && x < maxX - 30) { running = false; startSleep(t); }
+    }
     if (x <= minX && dir < 0) { x = minX; if (mode === "walk") { mode = "idle"; target = 0; speed = 0; busyUntil = t + 3200; if (Math.random() < 0.75) setTimeout(() => say(pickLine()), 300); } }
     if (x >= maxX && dir > 0) { x = maxX; if (mode === "walk") {
       // 오른쪽 끝(시계 앞)에 닿으면: 줄 타기 장면을 할 수 있으면 바로 아래로 뛰어내리고, 아니면 경례
