@@ -3619,6 +3619,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       acting = false;
       runner.classList.remove("is-acting");
       img.src = STAND_SRC;
+      afterEdgeShow();
     }, ACTION_MS + 1200);
     return true;
   }
@@ -3628,7 +3629,8 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   const SLEEP = { a: { src: "assets/mascot-sleep.webp", ms: 13300 }, l: { src: "assets/mascot-sleep-loop.webp?v=2", ms: 3800 }, w: { src: "assets/mascot-wake.webp?v=2", ms: 10400 } };
   const sleepBlob = {}, sleepUrl = {};
   let sleeping = 0, sleepTimers = [], lastSleep = 0;
-  let napDue = 0, napX = null;              // napDue: 이 시각 이후 오른쪽으로 달릴 때 napX 에서 잠든다 (0 = 바로 다음 번)
+  let napDue = Infinity, napX = null;       // napDue: 이 시각 이후 오른쪽으로 달릴 때 napX 에서 잠든다. 처음에는 고리 걸기(줄 타기)·경례를 본 다음에
+  const afterEdgeShow = () => { if (napDue === Infinity) { napDue = 0; napX = null; } };
   const nextNap = () => { napDue = performance.now() + (5 + Math.random() * 3) * 60 * 1000; napX = null; };   // sleeping: 0=깨어 있음, 1=잠드는 중, 2=쿨쿨, 3=깨는 중
   setTimeout(() => {
     Object.keys(SLEEP).forEach((k) => fetch(SLEEP[k].src).then((r) => (r.ok ? r.blob() : null)).then((b) => { if (b) sleepBlob[k] = b; }).catch(() => {}));
@@ -3774,7 +3776,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       // 오른쪽 끝(시계 앞)에 닿으면: 줄 타기 장면을 할 수 있으면 바로 아래로 뛰어내리고, 아니면 경례
       if (window.hseRappelCan && window.hseRappelCan()) {
         mode = "idle"; target = 0; speed = 0; busyUntil = Infinity;
-        window.hseRappelShow().finally(() => { busyUntil = performance.now() + 2500; });
+        window.hseRappelShow().finally(() => { busyUntil = performance.now() + 2500; afterEdgeShow(); });
       } else if (!playAction(t)) { mode = "idle"; target = 0; speed = 0; busyUntil = t + 1200; }
     } }
 
