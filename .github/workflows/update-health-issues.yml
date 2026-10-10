@@ -1,0 +1,47 @@
+name: Update health issues (보건 > 세계 보건 이슈)
+
+on:
+  schedule:
+    - cron: "11 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-health-issues:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 세계 보건 이슈 뉴스 가져오기
+        run: NEWS_CFG=health node scripts/fetch-bismayah-news.js
+
+      - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # 처음 만들어진 파일도 잡히도록 먼저 add 한 뒤 비교한다
+          git add health-issues.json
+          if git diff --cached --quiet; then
+            echo "변경사항 없음, 커밋 생략"
+            exit 0
+          fi
+          git commit -m "chore: 세계 보건 이슈 뉴스 자동 갱신"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "푸시 성공"
+              exit 0
+            fi
+            echo "충돌 발생, ${i}번째 재시도 전 5초 대기..."
+            sleep 5
+          done
+          echo "5회 재시도 후에도 푸시 실패"
+          exit 1

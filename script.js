@@ -7403,8 +7403,9 @@ function hseWeldWord(host, wordEl, onDone) {
 /* ==========================================================
    기타 > 비스마야 소식 (bismayah-news.json · GitHub Actions가 6시간마다 구글 뉴스에서 수집)
    ========================================================== */
-(function bismayahNews() {
-  const koBox = document.getElementById("bnewsKo"), iqBox = document.getElementById("bnewsIq");
+// 같은 모양의 뉴스 탭(국내 / 해외 두 칸, 누르면 본문 펼침)을 만든다: 비스마야 소식 · 세계 보건 이슈
+function makeNewsView(o) {
+  const koBox = document.getElementById(o.ko), iqBox = document.getElementById(o.iq);
   if (!koBox || !iqBox) return;
   let items = null;
   const LANG = { ar: "아랍어", en: "영어" };
@@ -7431,7 +7432,7 @@ function hseWeldWord(host, wordEl, onDone) {
   };
   function fill(box, countEl, L) {
     document.getElementById(countEl).textContent = `${L.length}건`;
-    box.innerHTML = L.length ? L.map(card).join("") : `<p class="skeleton">최근 60일 동안 기사가 없어요</p>`;
+    box.innerHTML = L.length ? L.map(card).join("") : `<p class="skeleton">최근 ${o.days}일 동안 기사가 없어요</p>`;
   }
   const toggle = (it) => { const o = it.classList.toggle("open"); it.setAttribute("aria-expanded", o); };
   [koBox, iqBox].forEach((box) => {
@@ -7446,24 +7447,26 @@ function hseWeldWord(host, wordEl, onDone) {
   async function load() {
     if (items) return;
     try {
-      const r = await fetch("bismayah-news.json", { cache: "no-store" });
+      const r = await fetch(o.json, { cache: "no-store" });
       if (!r.ok) throw new Error("아직 자료가 없습니다");
       const j = await r.json();
       items = j.items || [];
       const d = new Date(j.generatedAt);
-      if (!isNaN(d)) document.getElementById("bnewsMeta").textContent += ` · 마지막 수집 ${d.toLocaleString("ko-KR", { timeZone: "Asia/Baghdad", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false })}`;
+      if (!isNaN(d)) document.getElementById(o.meta).textContent += ` · 마지막 수집 ${d.toLocaleString("ko-KR", { timeZone: "Asia/Baghdad", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false })}`;
     } catch (e) {
       [koBox, iqBox].forEach((b) => { b.innerHTML = `<p class="skeleton">기사를 불러오지 못했습니다 (${escapeHtml(e.message)})</p>`; });
       return;
     }
     // 국내 = 한국 언론(한국어 기사), 이라크 = 그 밖(아랍어·영어 기사)
-    fill(koBox, "bnewsKoN", items.filter((n) => n.lang === "ko"));
-    fill(iqBox, "bnewsIqN", items.filter((n) => n.lang !== "ko"));
-    document.getElementById("bnewsCount").textContent = `· ${items.length}건`;
+    fill(koBox, o.koN, items.filter((n) => n.lang === "ko"));
+    fill(iqBox, o.iqN, items.filter((n) => n.lang !== "ko"));
+    document.getElementById(o.count).textContent = `· ${items.length}건`;
   }
-  document.querySelectorAll('.tab-btn[data-view="view-bismayah"]').forEach((b) => b.addEventListener("click", load));
-  if (document.querySelector("#view-bismayah.active")) load();
-})();
+  document.querySelectorAll(`.tab-btn[data-view="${o.view}"]`).forEach((b) => b.addEventListener("click", load));
+  if (document.querySelector(`#${o.view}.active`)) load();
+}
+makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, ko: "bnewsKo", iq: "bnewsIq", koN: "bnewsKoN", iqN: "bnewsIqN", count: "bnewsCount", meta: "bnewsMeta" });
+makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30, ko: "hnewsKo", iq: "hnewsIq", koN: "hnewsKoN", iqN: "hnewsIqN", count: "hnewsCount", meta: "hnewsMeta" });
 
 /* ==========================================================
    헌수호 '안전대 걸고 줄 타기' 깜짝 장면 (PC 종합현황에서 가끔, 또는 ?rappel=1)

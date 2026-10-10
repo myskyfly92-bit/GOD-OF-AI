@@ -6,20 +6,41 @@
 // - 이전 파일에 있던 기사도 기간 안이면 남겨서, 검색에 잠깐 안 잡혀도 목록이 비지 않게 한다
 
 const fs = require("fs");
-const OUT = "bismayah-news.json";
-const KEEP_DAYS = 60;   // 이 기간 안의 기사만 남긴다
-const MAX_ITEMS = 60;   // 최대 몇 건까지 보여 줄지
+// NEWS_CFG=health 로 돌리면 '보건 > 세계 보건 이슈' 용 (감염병 유행·페스트·에볼라 등)
+const CFGS = {
+  bismayah: {
+    OUT: "bismayah-news.json", KEEP_DAYS: 60, MAX_ITEMS: 60,
+    SEARCHES: [
+      { lang: "ko", q: "비스마야 when:30d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "비스마야 신도시 한화 when:60d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ar", q: "بسماية when:30d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+      { lang: "ar", q: '"مدينة بسماية" OR "مجمع بسماية" when:60d', hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+      { lang: "en", q: "(Bismayah OR Bismaya) Iraq when:60d", hl: "en-US", gl: "US", ceid: "US:en" },
+    ],
+    // 제목이나 요약에 비스마야가 실제로 나와야 한다 (검색 엔진이 엉뚱한 기사를 섞는 것 거르기)
+    MUST: /비스마야|بسماية|بسمايه|bismay/i,
+  },
+  health: {
+    OUT: "health-issues.json", KEEP_DAYS: 30, MAX_ITEMS: 80,
+    SEARCHES: [
+      { lang: "ko", q: "(페스트 OR 흑사병 OR 에볼라 OR 마버그 OR 조류인플루엔자 OR 엠폭스 OR 콜레라 OR 니파) when:14d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "해외 감염병 유행 when:14d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "WHO 감염병 경보 when:14d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "en", q: '(plague OR ebola OR marburg OR "bird flu" OR H5N1 OR mpox OR cholera OR nipah) outbreak when:7d', hl: "en-US", gl: "US", ceid: "US:en" },
+      { lang: "en", q: 'Iraq (cholera OR "hemorrhagic fever" OR CCHF OR measles OR outbreak) when:30d', hl: "en-US", gl: "US", ceid: "US:en" },
+      { lang: "ar", q: "(الحمى النزفية OR الكوليرا OR انفلونزا الطيور OR الحصبة) العراق when:30d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+    ],
+    // 감염병·보건 관련 낱말이 실제로 있어야 한다
+    MUST: /감염|전염|확진|역학|페스트|흑사병|에볼라|마버그|바이러스|독감|인플루엔자|엠폭스|콜레라|니파|홍역|뎅기|outbreak|plague|ebola|marburg|virus|flu|h5n1|mpox|cholera|nipah|measles|dengue|epidemic|pandemic|infection|cchf|hemorrhagic|نزفية|كوليرا|انفلونزا|حصبة|فيروس|وباء|إصابات|الصحة/i,
+  },
+};
+const CFG = CFGS[process.env.NEWS_CFG || "bismayah"];
+const OUT = CFG.OUT;
+const KEEP_DAYS = CFG.KEEP_DAYS;   // 이 기간 안의 기사만 남긴다
+const MAX_ITEMS = CFG.MAX_ITEMS;   // 최대 몇 건까지 보여 줄지
 const BODY_PER_RUN = 30; // 한 번 실행할 때 본문을 새로 가져올 최대 건수
-
-const SEARCHES = [
-  { lang: "ko", q: "비스마야 when:30d", hl: "ko", gl: "KR", ceid: "KR:ko" },
-  { lang: "ko", q: "비스마야 신도시 한화 when:60d", hl: "ko", gl: "KR", ceid: "KR:ko" },
-  { lang: "ar", q: "بسماية when:30d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
-  { lang: "ar", q: '"مدينة بسماية" OR "مجمع بسماية" when:60d', hl: "ar", gl: "IQ", ceid: "IQ:ar" },
-  { lang: "en", q: "(Bismayah OR Bismaya) Iraq when:60d", hl: "en-US", gl: "US", ceid: "US:en" },
-];
-// 제목이나 요약에 비스마야가 실제로 나와야 한다 (검색 엔진이 엉뚱한 기사를 섞는 것 거르기)
-const MUST = /비스마야|بسماية|بسمايه|bismay/i;
+const SEARCHES = CFG.SEARCHES;
+const MUST = CFG.MUST;
 
 const UA = { "User-Agent": "Mozilla/5.0 (compatible; BismayahHSEBot/1.0)" };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
