@@ -471,6 +471,9 @@ function renderNotices(notices) {
     list.innerHTML = `<li class="notice-row skeleton">등록된 공지사항이 없습니다.</li>`;
     return;
   }
+  // 중요도순(긴급 → 주의 → 안내), 같은 등급 안에서는 data.json 순서 그대로
+  const rank = { "긴급": 0, "주의": 1, "안내": 2 };
+  notices = notices.map((n, i) => [n, i]).sort((x, y) => ((rank[x[0].level] ?? 3) - (rank[y[0].level] ?? 3)) || (x[1] - y[1])).map((x) => x[0]);
   list.innerHTML = notices.map(n => `
     <li class="notice-row level-${escapeHtml(n.level)}">
       <div class="notice-top">
