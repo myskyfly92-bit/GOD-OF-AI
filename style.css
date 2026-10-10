@@ -3556,3 +3556,41 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .clinic-panel.emr-mode .clinic-sub-row, .clinic-panel.emr-mode .clinic-table-wrap, .clinic-panel.emr-mode #clinicForm { display: none !important; }
 .clinic-emr-note { margin-top: 14px; padding: 12px 14px; border: 1px solid var(--border-soft); border-radius: 10px; background: rgba(53,208,192,0.06); font-size: 13px; line-height: 1.6; color: var(--text-muted); }
 .clinic-emr-note b { color: var(--text); } .clinic-emr-note a { display: inline-block; margin-top: 6px; color: var(--cyan); font-weight: 600; }
+
+/* ===== 종합현황 글씨 한 단계 크게 (어르신들도 잘 보이게) — 되돌리려면 이 블록을 지우면 됨 ===== */
+#view-dashboard .panel-label { font-size: 14.5px; }
+#view-dashboard .hero-notices-label { font-size: 12.5px; }
+#view-dashboard .notice-tag { font-size: 12.5px; }
+#view-dashboard .notice-title { font-size: 15.5px; }
+#view-dashboard .notice-date { font-size: 14px; }
+#view-dashboard .notice-body, .hero-notices .notice-body { font-size: 14.5px; line-height: 1.6; }
+#view-dashboard .hero-sub { font-size: 15px; }
+#view-dashboard .hero-duo-title { font-size: 15px; }
+#view-dashboard .hero-unit { font-size: 21px; }
+#view-dashboard .heat-status-title { font-size: 18.5px; }
+#view-dashboard .heat-status-desc { font-size: 14.5px; }
+#view-dashboard .heat-scale-seg { font-size: 13.5px; }
+#view-dashboard .heat-wx-label, #view-dashboard .weather-key { font-size: 13.5px; }
+#view-dashboard .weather-value { font-size: 22px; }
+#view-dashboard .source-note { font-size: 14px; }
+#view-dashboard .tw-date, #view-dashboard .tw-empty { font-size: 14.5px; }
+#view-dashboard .tw-link { font-size: 13.5px; }
+#view-dashboard .tw-big small { font-size: 15.5px; }
+#view-dashboard .tw-big em { font-size: 13.5px; }
+#view-dashboard .tw-big em i { font-size: 12.5px; }
+#view-dashboard .tw-row, #view-dashboard .tw-risk-list { font-size: 14px; }
+#view-dashboard .tw-risk-list span, #view-dashboard .tw-more { font-size: 13px; }
+#view-dashboard .tw-job { font-size: 14px; }
+#view-dashboard .tw-job-top b { font-size: 15px; }
+#view-dashboard .tw-job-part, #view-dashboard .tw-job-risks span { font-size: 12.5px; }
+#view-dashboard .tw-job-time, #view-dashboard .tw-job-crew, #view-dashboard .tw-job-meta { font-size: 13.5px; }
+.holiday-panel .holiday-cell { font-size: 16.5px; }
+.holiday-panel .holiday-weekdays { font-size: 15px; }
+.holiday-panel .holiday-temp { font-size: 11.5px; }
+.holiday-panel .holiday-legend, .holiday-panel .holiday-legend-item { font-size: 14px; }
+.holiday-panel .holiday-list li { font-size: 14.5px; }
+.holiday-panel .holiday-list .holiday-list-date { font-size: 15px; }
+.holiday-panel .holiday-note { font-size: 13.5px; }
+.fx-widget .fx-widget-title, .fx-widget .fx-updated { font-size: 13.5px; }
+.fx-widget .fx-label { font-size: 14.5px; }
+.fx-widget .fx-value { font-size: 17.5px; }
