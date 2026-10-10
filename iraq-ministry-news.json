@@ -1,13 +1,37 @@
 {
-  "generatedAt": "2026-10-09T20:09:48.242Z",
+  "generatedAt": "2026-10-10T10:00:31.620Z",
   "health": [
+    {
+      "title": "مشاركة سفيرجمهورية العراق في اجتماع مجلس السفراء العرب في وارشو",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE43U2JOTzZ4c3l1RGFtWThDOC1kV2U2TUpSc0V5RTFORGhhZWc4XzV5cjAzU2VuOXRHb1d4ZU1JcExlWGtjd2lXWU9IWGxhdURxNmhXSw?oc=5",
+      "date": "2026-10-09T21:04:09.000Z",
+      "lang": "ar",
+      "titleKo": "바르샤바 주재 아랍 대사 협의회 회의에 주한 이라크 대사 참여"
+    },
+    {
+      "title": "احتفال سفارة جمهورية العراق في وارشو بيوم السيادة",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9FUHFmQzFLSFQtZUdBaElIUTNLSDNNQ1dBaF94VkdNUmpTalRNb1NQZlZyU19fU0RoZDRJdzczVmFTR21HekV2d0JXNzVKNEl6ZEFMLQ?oc=5",
+      "date": "2026-10-09T21:04:08.000Z",
+      "lang": "ar",
+      "titleKo": "주권자의 날을 기념하는 바르샤바 주재 이라크 대사관"
+    },
     {
       "title": "وزير الصحة يوجّه بشمول الملاكات الإدارية بتخفيض أجور الأجنحة الخاصة",
       "source": "شفقنا العراق",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9TLWRsX0phTG82bHpHZWt5Qy1mbTZ0T050OHBfWmlTdlVzQ1llWlF3RUFxN2hUcUhnRlRhV2sxNGMwZEZ0UUxhSDM0a2Q?oc=5",
-      "date": "2026-10-09T18:26:18.000Z",
+      "date": "2026-10-09T18:46:03.000Z",
       "lang": "ar",
       "titleKo": "보건부 장관은 민간 병동의 임금을 줄임으로써 행정 직원을 포함하도록 지시합니다."
+    },
+    {
+      "title": "الفناطسة مديراً لصحة معان",
+      "source": "نبأ الأردن",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5yVHVkZnZONTNDVTZIdzFiTldBUmw0NGZSaDB0UUU3SmsxeUR2MWR5b0tNM09ScmdHZTk2RHRSWkhXSnZKR1lmdXk5Z2pFeW9r?oc=5",
+      "date": "2026-10-08T21:35:50.000Z",
+      "lang": "ar",
+      "titleKo": "알 파나체 (Ma 'an Health 이사)"
     },
     {
       "title": "تنقلات في وزارة الصحة (اسماء)",
@@ -72,33 +96,17 @@
       "date": "2026-10-08T09:44:17.000Z",
       "lang": "ar",
       "titleKo": "보건부 공고 제815호 - 부쿠레슈티 주 이라크 대사관"
-    },
-    {
-      "title": "إعلان وزارة الصحة رقم 814 – سفارة جمهورية العراق في بوخارست",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5adEFJa3FIdm1udU5MNUwyUVJJcjJmZno0Zm5IQ3ZEb1JZR2pzTU51Q1A0Vl8xMlgyVTdaUW5TdzQ3a1lpdEV0NXBRYTFwQQ?oc=5",
-      "date": "2026-10-08T09:44:17.000Z",
-      "lang": "ar",
-      "titleKo": "보건부 공고 제814호 - 부쿠레슈티 주 이라크 대사관"
-    },
-    {
-      "title": "اختراق شبكة مخدرات من خارج الحدود وإتلاف كميات كبيرة في واسط والبصرة",
-      "source": "شفق نيوز",
-      "link": "https://news.google.com/rss/articles/CBMisARBVV95cUxQRjdkcHNIOGZSNXlEc1gyR0hWVkNwNjBvcXZwRnlaRHNnTThQTC1UZE5palhTczJweWRmbnNZTTBMQ1U5eXg1UURJMDRGTXdnZ21JRGlCRHVQcjhSSzhFUno1QkFNczRsX1lwTWFTVldjZkY0Rk4yX0ZMcG1LbEtSWkdCOFg2aW4wZ1VTMzZLbk9BNmc5SWl6RklSSDI1MHgzNF8yQlpkRzc2MVE2MU9nLUNRYmtmdU9YeUNZM09Zb3BFdWtvLU1fUlk4dUhycHU3azFvVVBHdDRBdDBmZ1VNSEprM2p5ZzJUa2NRVEZKVlFTSHpFQUZ0bThKVnNLQVZtZEtoclFxdldNekNtQ2hMd2JLQWpNME1KYnhmQzlyTlc0YlFyalBJNW9GMHdiYTZzNUszaWdWbkU0cmJycGVkV01SVnpxVmVRUmpnTFBXSGxTYVJ6aFQzZ1czR3NNODQxLW10dmtEbkR2d1hISFRaeXlmTThuYjhENnM5RjBhS0NOdVRRaHRVMjhCaXVRNW1JaHFZeGlSeTAwV3hpUWI3cFJJZjNONlBwUkhEb3l6MENfajZLbHJWNzBmLWluTVVrVFpESmVLTjQ2aWNKcm85em1uc1BEaVk2RzhQQmYyT2hXcWk5dWNyeHlQZThzMzVjNUtBQkJwNGQ1dE4wdm5TbVNveTNVODg2eHp2X29WZUlYcEtVWXJxUHlyRThndV9Wdk9fZXU2ZzlNMkt6YnlMTA?oc=5",
-      "date": "2026-10-08T08:28:38.000Z",
-      "lang": "ar",
-      "titleKo": "국경 밖에서 마약 네트워크를 침범하고 와시트와 바스라에서 대량 파괴"
-    },
-    {
-      "title": "النجف تطلق خدمة طبية غير مسبوقة في العراق",
-      "source": "وكالة تنوع نيوز",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5TVGM1MGlPdjR2VEh2dnpPRnVmN1VGT3BNbUZMVW1DUVpqVTY2V2FQMFhYTlRpak83Y1FJMWZQdThYbXRCVjdv?oc=5",
-      "date": "2026-10-08T08:00:57.000Z",
-      "lang": "ar",
-      "titleKo": "나자프, 이라크에서 전례 없는 의료 서비스 시작"
     }
   ],
   "environment": [
+    {
+      "title": "“البيئة” تطلق خريطة طريق مناخية لعشر سنوات وتباشر مشاريع في وسط العراق وجنوبه#",
+      "source": "عراق اوبزيرفر",
+      "link": "https://news.google.com/rss/articles/CBMivwJBVV95cUxPYUhWanZlTmUzTGFabEFyMzJjYjdPSnFWaDZOcVVSZDBNdDR2ZWlxZ0ZTeG5KT3ROZV9aTTZRUHNVWXN2WDFwSGR6T25hY1NvOTlOam15QmlHbF9RWmc5cktra2k3VEMxRVZwVTBHNWg3UEVzVFBSYTJoMUowN1pWQ0NqUlFaSUxHNzVEVmtBWlFsTzQ3QnZSZ1Y5MXp3b2tGXzd1TkxOT3RIR0ZDSnZ0WWpEcjN5YWxIV0lVa2FBM0hMX2p5ejZUWVR2VkRlSkZCeGNEUEFCeDRLbjJpV016WkQ1N0hPeU03cVVRZFl2QjJiQ2ZjZjV3VXdJcjNiTFRZclg5amI0LUdkMko3QjIxb3pPT3RDSEVsaExvMnZlUFVXWmVxenVSTUkyU2J4a0VwNG9hWTBkUDZndU9MT1Fn?oc=5",
+      "date": "2026-10-09T16:47:27.000Z",
+      "lang": "ar",
+      "titleKo": "\"환경\" 은 10 년 기후 로드맵을 시작하고 이라크 중부 및 남부에서 프로젝트를 시작합니다. #"
+    },
     {
       "title": "البيئة: إطلاق خريطة طريق مناخية لعشر سنوات والبدء بتنفيذ مشاريع في وسط العراق وجنوبه",
       "source": "وكالة الانباء العراقية (واع)",
@@ -116,6 +124,14 @@
       "titleKo": "이라크, 업데이트된 NDC 출시"
     },
     {
+      "title": "فيديو | \" أمنيتي كانت وزارة الثقافة \"وزيرة البيئة : ساترك بصمتي في وزارة البيئة",
+      "source": "هذا اليوم",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9TMDNVM19tMXI4SlBoRUF2RTFmWThVcGNreTNQVGdsaG1mR3hXOFk3NWhuVk1fTzJudmRIMzY4SmxTX253QkVMTHNR0gFKQVVfeXFMT1MwM1UzX20xcjhKUGhFQXZFMWZZOFVwY2t5M1BUZ2xobWZHeFc4WTc1aG5WTV9PMm52ZEgzNjhKbFNfbndCRUxMc1E?oc=5",
+      "date": "2026-10-09T00:24:04.000Z",
+      "lang": "ar",
+      "titleKo": "동영상 | “제 소원은 문화부였습니다” 환경부 장관: 환경부에 흔적을 남기겠습니다"
+    },
+    {
       "title": "فيديو | جهاز مكافحة الإرهاب في إقليم كردستان العراق: مسيرتان مفخختان استهدفتا مخيمًا للاجئين الكرد",
       "source": "هذا اليوم",
       "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1IdkhIT2xIcGh6SjBINnBGTHZGVXkxbEVGcjBxLWc3cTFJLTRZLVF5SEpuWUs2M2J4UUlzOGk0dUFFanI3bkpYQ0tB0gFKQVVfeXFMTUh2SEhPbEhwaHpKMEg2cEZMdkZVeTFsRUZyMHEtZzdxMUktNFktUXlISm5ZSzYzYnhRSXM4aTR1QUVqcjduSlhDS0E?oc=5",
@@ -124,12 +140,12 @@
       "titleKo": "동영상 | 이라크 쿠르디스탄 지역의 대테러 서비스: 두 개의 부비트랩 행진이 쿠르드 난민 캠프를 겨냥했다."
     },
     {
-      "title": "فيديو | الزيدي يخاطب العراقيين.. جنبتكم الادخار الاجباري | حصاد الرشيد",
+      "title": "فيديو | رفع سعر الدولار في العراق.. من يدفع فاتورة القرار ومن يحصد مكاسبه؟",
       "source": "هذا اليوم",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1qZHRqMXV6bTdaV2F3RmUyeDJLX0lZZjRNM3RDeGdRalV0empxRXpGZWJlWllNR1FKRlBVZ1RjRFpoTHNxSmZfbUh30gFKQVVfeXFMTWpkdGoxdXptN1pXYXdGZTJ4MktfSVlmNE0zdEN4Z1FqVXR6anFFekZlYmVaWU1HUUpGUFVnVGNEWmhMc3FKZl9tSHc?oc=5",
-      "date": "2026-10-08T18:39:02.000Z",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBoZ0h4WEFiT0lYem5EYVRyVUdFOGF3WVJyVW1fNU9oNjhJaDlDY1VTbVc5X0NXOEkwbk91UjNucWF2OEk3SDBLMzZR0gFKQVVfeXFMUGhnSHhYQWJPSVh6bkRhVHJVR0U4YXdZUnJVbV81T2g2OEloOUNjVVNtVzlfQ1c4STBuT3VSM25xYXY4STdIMEszNlE?oc=5",
+      "date": "2026-10-08T22:45:05.000Z",
       "lang": "ar",
-      "titleKo": "동영상 | 알자이디가 이라크인들에게 연설합니다. 당신 편은 의무적으로 저축해야 합니다 | 알라시드 수확"
+      "titleKo": "동영상 | 이라크 달러 가격 인상.. 누가 결정에 대한 비용을 지불하고 누가 이익을 거두는가?"
     },
     {
       "title": "إطلاق وثيقة المساهمات المحددة وطنياً للعراق NDC",
@@ -151,7 +167,7 @@
       "title": "واع / القضاء يشدد على أهمية التعامل مع ظاهرة التسول وملاحقة جرائم الاستغلال غير مشروع",
       "source": "وكالة انباء الاعلام العراقي",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBnQWhQelpPRzJTY3Y4QUx3WDMweUR5dnJoTm9JcWZzQXdGWTZldFk4eXlJRWpKN1hXZEFOVDJSM3MwMmcwZXc0Q3ZZUEY2MVA1dUE?oc=5",
-      "date": "2026-10-08T11:38:18.000Z",
+      "date": "2026-10-08T11:32:10.000Z",
       "lang": "ar",
       "titleKo": "의식/사법부는 불법 착취 범죄를 구걸하고 기소하는 현상에 대처하는 것이 중요하다고 강조"
     },
@@ -178,22 +194,6 @@
       "date": "2026-10-08T10:49:58.000Z",
       "lang": "ar",
       "titleKo": "이라크는 기후 변화의 영향을 해결하기 위한 업데이트된 계획을 시작한다."
-    },
-    {
-      "title": "برعاية رئيس الوزراء.. وزارة البيئة تطلق وثيقة المساهمات المحددة وطنياً للعراق/NDC",
-      "source": "وكالة اليوم الإخبارية",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9YcHc4TnhycDBFMEthU1pfcm0xWnM0RzhRXzNMWHlYYkFDdlBCbEU1N3JGejZXeWFEVjR0NzkxdWVRendwNzBQWUNjYTJtWTg?oc=5",
-      "date": "2026-10-08T10:34:21.000Z",
-      "lang": "ar",
-      "titleKo": "환경부는 총리의 후원하에 이라크/NDC에 대한 국가적으로 결정된 기부금 문서를 발간합니다."
-    },
-    {
-      "title": "العراق يحدّث التزاماته المناخية.. إطلاق وثيقة المساهمات الوطنية بموجب اتفاق باريس",
-      "source": "RojNews.News",
-      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1jSDhsc3VBRDBGcWRDckRXT29kT3dtaXMzekprWHlMblNXS2hhcDByTjQyalhleDFVdDNFY25fUFRMM1Q0Wnhvdw?oc=5",
-      "date": "2026-10-08T10:31:21.000Z",
-      "lang": "ar",
-      "titleKo": "이라크, 기후 약속 업데이트.. 파리 협정에 따른 국가 기여 문서 발간"
     }
   ]
 }
