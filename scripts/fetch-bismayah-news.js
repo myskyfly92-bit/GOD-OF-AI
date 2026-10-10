@@ -234,6 +234,8 @@ async function main() {
   list.forEach((n) => FIX.forEach(([src, bad, good]) => {
     if (n.lang !== "ko" && src.test(n.title) && n.titleKo && !n.titleKo.includes(good)) n.titleKo = n.titleKo.replace(bad, good);
   }));
+  // 바꾼 낱말 뒤 조사 맞추기 (페스트은 → 페스트는, 페스트으로 → 페스트로 …)
+  list.forEach((n) => { if (n.titleKo) n.titleKo = n.titleKo.replace(/페스트은/g, "페스트는").replace(/페스트으로/g, "페스트로").replace(/페스트을/g, "페스트를").replace(/페스트과/g, "페스트와").replace(/페스트이(?=[\s,.]|$)/g, "페스트가"); });
   // 바로 가는 원문 주소가 있으면 그걸 링크로 쓴다
   list.forEach((n) => { if (n.url && !/news\.google\.com/.test(n.url)) n.link = n.url; });
 
