@@ -6517,7 +6517,7 @@ async function clinicCall(action, payload) {
       { sel: "#clinicUnlock", text: `<b>진료 기록</b>은 잠겨 있어요. 담당자만 <b>클리닉 암호</b>를 넣고 <b>열기</b>를 누르면 기록 보기·추가가 돼요. 이름은 열어도 <b>성만</b> 보여요.<br>여럿이 쓰는 PC라면 다 쓴 뒤 <b>🔒 잠그기</b>를 꼭 눌러 주세요.` },
       { go: "view-health-kdca", sel: ".kdca-panel", text: `<b>국내 감염병 현황</b>이에요. 질병관리청 주간 신고 통계로 <b>등급별 건수</b>, 많이 늘어난 감염병, <b>해외 유입</b> 사례를 보여 줘요. 휴가 복귀자 관리에 참고하세요.` },
       { go: "view-iraq-moh", sel: "#view-iraq-moh .iraq-news-panel", text: `<b>이라크 보건부 소식</b>이에요. 현지 감염병·예방접종·보건 공지를 모아 한국어로 보여 줘요.` },
-      { go: "view-health-infect", sel: "#whoFilter", text: `<b>WHO 소식</b>이에요. 세계보건기구의 <b>감염병 발생 정보</b>와 최신 소식이에요. 위 버튼으로 <b>감염병 발생 / WHO 소식</b>을 골라 볼 수 있어요. 아래에는 국내 의학·질병 뉴스와 질병관리청·복지부 소식도 있어요.` },
+      { go: "view-health-issues", sel: "#view-health-issues .bnews-panel", text: `<b>세계 보건 이슈</b>예요. 페스트·에볼라·조류인플루엔자처럼 <b>세계적으로 화제가 되는 감염병 소식</b>을 국내 보도와 해외·이라크 보도로 나눠 모았어요. 해외 기사는 한국어로 번역돼 있고, <b>기사를 누르면 본문이 펼쳐져요.</b> 6시간마다 새로 모아요.` },
       { go: "view-health-confined", sel: ".cs-panel", text: `<b>밀폐공간 작업</b> 탭의 <b>환기 계산기</b>예요. 공간 크기, 송풍기 풍량·대수, 덕트 길이·꺾임을 넣으면 <b>작업 전 환기 시간</b>과 작업 중 필요 풍량을 계산해 줘요.<br>아래로 내리면 <b>적정공기 기준</b>(산소 18~23.5% 등)과 <b>가스측정기 사용법</b>도 있어요.` },
     ]},
     { id: "env", title: "환경", icon: "🌤️", steps: [

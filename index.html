@@ -34,7 +34,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261010c">
+<link rel="stylesheet" href="style.css?v=20261010d">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -107,7 +107,7 @@ html.intro-pending::after {
       <button class="tab-btn" data-view="view-health-clinic">현장 클리닉 현황</button>
       <button class="tab-btn" data-view="view-health-kdca">국내 감염병 현황</button>
       <button class="tab-btn" data-view="view-iraq-moh">이라크 보건부 소식</button>
-      <button class="tab-btn" data-view="view-health-infect">WHO 소식</button>
+      <!-- WHO 소식 탭은 '세계 보건 이슈'로 대신함 (다시 쓰려면 이 줄을 살리면 됨): <button class="tab-btn" data-view="view-health-infect">WHO 소식</button> -->
       <!-- 온열질환 탭은 겨울철이라 숨김 (여름에 다시 쓰려면 이 줄을 살리면 됨):
       <button class="tab-btn" data-view="view-health-heat">온열질환</button> -->
       <button class="tab-btn" data-view="view-health-confined">밀폐공간 작업</button>
@@ -844,7 +844,7 @@ html.intro-pending::after {
         <div class="bnews-list" id="hnewsIq"><p class="skeleton">기사 불러오는 중…</p></div>
       </div>
     </div>
-    <p class="source-note" id="hnewsMeta">구글 뉴스 검색(페스트·에볼라·조류인플루엔자·콜레라·니파 등 해외 감염병 유행, 이라크 출혈열·콜레라 등)으로 모은 공개 기사입니다 · 영어·아랍어는 자동 번역 · 6시간마다 갱신 · 공식 발표는 WHO 소식·국내 감염병 현황 탭을 함께 보세요</p>
+    <p class="source-note" id="hnewsMeta">구글 뉴스 검색(페스트·에볼라·조류인플루엔자·콜레라·니파 등 해외 감염병 유행, 이라크 출혈열·콜레라 등)으로 모은 공개 기사입니다 · 영어·아랍어는 자동 번역 · 6시간마다 갱신 · 국내 공식 현황은 국내 감염병 현황 탭을 함께 보세요</p>
   </section>
 </main>
 </div>
@@ -1078,7 +1078,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261010c"></script>
+<script src="script.js?v=20261010d"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">
