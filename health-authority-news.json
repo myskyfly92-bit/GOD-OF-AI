@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T00:52:01.474Z",
+  "generatedAt": "2026-10-11T00:14:32.935Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -8,13 +8,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNX21CZm93bjhaOXV5a2RxX3ZleW1DaFY2cEJvdEg0aTlsOE5ZX0h5RzBsMXpfM2F4RDgwSDVBR202Q243ejlBUGdwVDJ4REp0ZVItcXlnWmVreGlySjVHai12dDJad3hCVFdodUpDUEtHMXRWRDNyX0ViVzhHTzZlSWM0cU5FbjEzREhneEpETEVfbW9PcHFtLU1jVQ?oc=5",
       "date": "2026-10-06T02:45:00.000Z"
-    },
-    {
-      "title": "- 보건복지부 대표홈페이지",
-      "source": "",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcWl1eDFmSFlfSDFzdFo3c1RVOXRrMzZfOE5pejFoZFJ2VGpDcXl3V01VV1dLTmxDTnVIV295OHpNZTJrc2Vibmo2eXJZRFozRk1hMUlHYUdNN2pWMUNyMVJaNjc1UVd0VkphSWxHMEdQX3FUeFFNdkdDYU9NY0w4VWd0NWJHQkl3VVBB?oc=5",
-      "date": "2026-10-06T19:58:03.000Z"
     },
     {
       "title": "약국 이름에 ‘창고’, ‘마트’, ‘공장’, ‘최대’, ‘특가’ 못 쓴다... 「약사법 시행규칙」 개정 추진",
@@ -63,7 +56,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-09T03:34:01.000Z"
+      "date": "2026-10-10T05:56:30.000Z"
     },
     {
       "title": "감시체계 연보",
@@ -85,6 +78,13 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
       "date": "2025-12-16T15:48:42.000Z"
+    },
+    {
+      "title": "주간건강과질병",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1xZW96NG9LR2QtQmhlT0loV1Z6TVc0TlU5V0RhejRTVWx1akd0cnMzTUdtS2h4Q3NpRHQzYzdCb0dmQk1nSTVrekxEY3lYNmdEbkhlMEhR?oc=5",
+      "date": "2025-12-16T12:33:23.000Z"
     }
   ]
 }
