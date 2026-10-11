@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-11T12:58:11Z",
+ "generatedAt": "2026-10-11T13:15:11Z",
  "note": "상장 건설사 정기보고서 '수주산업 관련 공시'의 진행률 (미청구공사·공사미수금은 담지 않음)",
  "companies": {
   "hdec": {
@@ -7,6 +7,7 @@
    "report": "반기보고서 (2026.06)",
    "rcept_no": "20260814003360",
    "asOf": "2026-06",
+   "parser": 2,
    "rows": [
     {
      "name": "이라크 해수처리시설 공사",
@@ -386,6 +387,7 @@
    "report": "반기보고서 (2026.06)",
    "rcept_no": "20260814002969",
    "asOf": "2026-06",
+   "parser": 2,
    "rows": [
     {
      "name": "UAE 원전",
@@ -569,6 +571,7 @@
    "report": "반기보고서 (2026.06)",
    "rcept_no": "20260814003428",
    "asOf": "2026-06",
+   "parser": 2,
    "rows": [
     {
      "name": "Vietnam LSP HDPE/PP Project",
@@ -857,6 +860,7 @@
    "report": "반기보고서 (2026.06)",
    "rcept_no": "20260814002161",
    "asOf": "2026-06",
+   "parser": 2,
    "rows": [
     {
      "name": "GTX-A",
@@ -1152,6 +1156,7 @@
    "report": "반기보고서 (2026.06)",
    "rcept_no": "20260814003712",
    "asOf": "2026-06",
+   "parser": 2,
    "rows": []
   },
   "doosan": {
@@ -1159,6 +1164,7 @@
    "report": "반기보고서 (2026.06)",
    "rcept_no": "20260814003782",
    "asOf": "2026-06",
+   "parser": 2,
    "rows": []
   },
   "hanwha": {
@@ -1166,62 +1172,63 @@
    "report": "[기재정정]반기보고서 (2026.06)",
    "rcept_no": "20260831001249",
    "asOf": "2026-06",
+   "parser": 2,
    "rows": [
     {
      "name": "전체 계약",
      "client": "대전하수처리장 현대화",
      "contractDate": "2021-11-01",
      "due": "2027-03-31",
-     "rate": 0.42
+     "rate": 42.0
     },
     {
      "name": "수도권광역급행철도 C노선(GTX-C)",
      "client": "",
      "contractDate": "2024-04-01",
      "due": "2028-03-31",
-     "rate": 0.04
+     "rate": 4.0
     },
     {
      "name": "인천공항 제2터미널 확장",
      "client": "",
      "contractDate": "2021-01-01",
      "due": "2025-07-14",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "고양 삼송 이지스 데이터센터",
      "client": "",
      "contractDate": "2023-07-07",
      "due": "2026-05-22",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "서울 아레나 복합문화시설",
      "client": "",
      "contractDate": "2023-11-30",
      "due": "2027-07-30",
-     "rate": 0.68
+     "rate": 68.0
     },
     {
      "name": "예천 비행시설 신축공사",
      "client": "",
      "contractDate": "2025-12-06",
      "due": "2028-11-29",
-     "rate": 0.02
+     "rate": 2.0
     },
     {
      "name": "상인천초교주변 재개발",
      "client": "",
      "contractDate": "2022-09-01",
      "due": "2029-08-31",
-     "rate": 0.08
+     "rate": 8.0
     },
     {
      "name": "운암3단지 재건축",
      "client": "",
      "contractDate": "2021-04-01",
      "due": "2026-03-30",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "계림3 재개발",
@@ -1235,21 +1242,21 @@
      "client": "",
      "contractDate": "2024-12-16",
      "due": "2029-06-30",
-     "rate": 0.1
+     "rate": 10.0
     },
     {
      "name": "대전 학하 민간임대",
      "client": "",
      "contractDate": "2021-08-01",
      "due": "2026-02-23",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "청주 매봉공원",
      "client": "",
      "contractDate": "2021-10-01",
      "due": "2025-09-24",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "천안 구성 1,2구역 재개발",
@@ -1263,14 +1270,14 @@
      "client": "",
      "contractDate": "2021-10-01",
      "due": "2026-04-16",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "아산 배방 생활숙박시설",
      "client": "",
      "contractDate": "2021-10-28",
      "due": "2027-03-23",
-     "rate": 0.81
+     "rate": 81.0
     },
     {
      "name": "서울 가재울7구역 재개발",
@@ -1284,7 +1291,7 @@
      "client": "",
      "contractDate": "2025-06-02",
      "due": "2028-09-30",
-     "rate": 0.08
+     "rate": 8.0
     },
     {
      "name": "서울 양천구 신월동 7-2구역 재개발",
@@ -1298,28 +1305,28 @@
      "client": "",
      "contractDate": "2021-10-01",
      "due": "2025-12-12",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "미추8구역 재개발",
      "client": "",
      "contractDate": "2020-03-01",
      "due": "2026-12-31",
-     "rate": 0.05
+     "rate": 5.0
     },
     {
      "name": "당리2구역 재개발",
      "client": "",
      "contractDate": "2022-01-01",
      "due": "2027-09-30",
-     "rate": 0.14
+     "rate": 14.0
     },
     {
      "name": "원당1구역 재개발",
      "client": "",
      "contractDate": "2022-07-01",
      "due": "2028-01-31",
-     "rate": 0.42
+     "rate": 42.0
     },
     {
      "name": "대전부사 재개발",
@@ -1333,63 +1340,63 @@
      "client": "",
      "contractDate": "2023-08-01",
      "due": "2027-07-31",
-     "rate": 0.58
+     "rate": 58.0
     },
     {
      "name": "오시리아 메디타운",
      "client": "",
      "contractDate": "2021-12-31",
      "due": "2025-01-31",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "강북 미아삼양 주상복합",
      "client": "",
      "contractDate": "2021-05-25",
      "due": "2025-11-27",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "제주 대정 공동주택",
      "client": "",
      "contractDate": "2022-11-03",
      "due": "2025-10-02",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "평택 화양지구 7-2BL 공동주택",
      "client": "",
      "contractDate": "2022-06-07",
      "due": "2025-11-26",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "천안 순천향대 새병원",
      "client": "",
      "contractDate": "2021-05-06",
      "due": "2026-07-31",
-     "rate": 0.91
+     "rate": 91.0
     },
     {
      "name": "포항영덕고속도로",
      "client": "",
      "contractDate": "2016-08-18",
      "due": "2026-04-03",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "신분당선(용산강남)",
      "client": "",
      "contractDate": "2016-08-30",
      "due": "2031-12-31",
-     "rate": 0.49
+     "rate": 49.0
     },
     {
      "name": "창원 IDC 개발사업",
      "client": "",
      "contractDate": "2024-04-19",
      "due": "2026-10-19",
-     "rate": 0.19
+     "rate": 19.0
     },
     {
      "name": "서울 노원구 상계주공5단지 재건축",
@@ -1403,35 +1410,35 @@
      "client": "",
      "contractDate": "2012-05-30",
      "due": "2032-12-31",
-     "rate": 0.45
+     "rate": 45.0
     },
     {
      "name": "이라크 Bismayah Social Infra",
      "client": "",
      "contractDate": "2015-04-05",
      "due": "2032-12-31",
-     "rate": 0.3
+     "rate": 30.0
     },
     {
      "name": "Ma'aden PAP",
      "client": "",
      "contractDate": "2013-12-19",
      "due": "2018-03-21",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "NRP Project",
      "client": "",
      "contractDate": "2015-10-28",
      "due": "2023-10-31",
-     "rate": 0.99
+     "rate": 99.0
     },
     {
      "name": "안성구리고속도로",
      "client": "",
      "contractDate": "2016-12-13",
      "due": "2025-05-27",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "대전하수처리장 현대화",
@@ -1447,6 +1454,7 @@
    "report": "반기보고서 (2026.06)",
    "rcept_no": "20260814003744",
    "asOf": "2026-06",
+   "parser": 2,
    "rows": [
     {
      "name": "수원 권선6구역 재건축",
@@ -1637,216 +1645,217 @@
    "report": "반기보고서 (2026.06)",
    "rcept_no": "20260813001475",
    "asOf": "2026-06",
+   "parser": 2,
    "rows": [
     {
      "name": "함양-창녕2",
      "client": "총장부금액",
      "contractDate": "2018-02-23",
      "due": "2026-12-31",
-     "rate": 0.93
+     "rate": 93.0
     },
     {
      "name": "김포-파주 2공구",
      "client": "총장부금액",
      "contractDate": "2020-04-13",
      "due": "2027-12-31",
-     "rate": 0.69
+     "rate": 69.0
     },
     {
      "name": "광명-서울 고속도로 민자사업(1~3공구)",
      "client": "총장부금액",
      "contractDate": "2019-09-20",
      "due": "2027-12-31",
-     "rate": 0.63
+     "rate": 63.0
     },
     {
      "name": "호남고속철도 2단계 2공구",
      "client": "총장부금액",
      "contractDate": "2021-06-29",
      "due": "2027-06-30",
-     "rate": 0.78
+     "rate": 78.0
     },
     {
      "name": "인천검단AA13인천신문",
      "client": "총장부금액",
      "contractDate": "2020-12-31",
      "due": "2025-02-18",
-     "rate": 0.86
+     "rate": 86.0
     },
     {
      "name": "인천검단 AA-21BL 아파트 건설공사 7공구",
      "client": "총장부금액",
      "contractDate": "2021-12-31",
      "due": "2026-07-08",
-     "rate": 0.92
+     "rate": 92.0
     },
     {
      "name": "평택오송4",
      "client": "총장부금액",
      "contractDate": "2023-06-02",
      "due": "2028-06-01",
-     "rate": 0.44
+     "rate": 44.0
     },
     {
      "name": "지하철7-6",
      "client": "총장부금액",
      "contractDate": "2022-02-21",
      "due": "2027-10-17",
-     "rate": 0.52
+     "rate": 52.0
     },
     {
      "name": "거제 상동2지구 공동주택",
      "client": "총장부금액",
      "contractDate": "2022-04-07",
      "due": "2029-05-31",
-     "rate": 0.02
+     "rate": 2.0
     },
     {
      "name": "대구 칠성동2가 주상복합",
      "client": "총장부금액",
      "contractDate": "2022-10-01",
      "due": "2026-02-28",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "부천대장1",
      "client": "총장부금액",
      "contractDate": "2023-01-25",
      "due": "2027-10-16",
-     "rate": 0.29
+     "rate": 29.0
     },
     {
      "name": "RGY Line 3&4 Expansion Project",
      "client": "총장부금액",
      "contractDate": "2024-04-06",
      "due": "2026-08-31",
-     "rate": 0.92
+     "rate": 92.0
     },
     {
      "name": "월곶판교2",
      "client": "총장부금액",
      "contractDate": "2023-12-19",
      "due": "2028-11-21",
-     "rate": 0.14
+     "rate": 14.0
     },
     {
      "name": "춘천~속초 철도건설 제2공구 노반신설",
      "client": "총장부금액",
      "contractDate": "2024-06-19",
      "due": "2029-03-19",
-     "rate": 0.08
+     "rate": 8.0
     },
     {
      "name": "서울양천우체국 복합청사 건립공사",
      "client": "총장부금액",
      "contractDate": "2024-06-20",
      "due": "2028-07-28",
-     "rate": 0.24
+     "rate": 24.0
     },
     {
      "name": "경동나비엔 서탄공장 부품동&사출동",
      "client": "총장부금액",
      "contractDate": "2024-07-19",
      "due": "2026-04-18",
-     "rate": 0.92
+     "rate": 92.0
     },
     {
      "name": "검단 16호공원 개발사업",
      "client": "총장부금액",
      "contractDate": "2025-06-20",
      "due": "2028-11-21",
-     "rate": 0.04
+     "rate": 4.0
     },
     {
      "name": "부산항 진해신항 준설토투기장 호안 축조공사",
      "client": "총장부금액",
      "contractDate": "2024-06-27",
      "due": "2028-05-22",
-     "rate": 0.48
+     "rate": 48.0
     },
     {
      "name": "LH 대방동군부지,남양주 양정S8",
      "client": "총장부금액",
      "contractDate": "2024-03-29",
      "due": "2032-12-31",
-     "rate": 0.01
+     "rate": 1.0
     },
     {
      "name": "대장홍대 복선전철",
      "client": "총장부금액",
      "contractDate": "2026-04-15",
      "due": "2032-04-29",
-     "rate": 0.03
+     "rate": 3.0
     },
     {
      "name": "GTOWN 개발사업 신축공사",
      "client": "총장부금액",
      "contractDate": "2024-07-22",
      "due": "2027-07-21",
-     "rate": 0.4
+     "rate": 40.0
     },
     {
      "name": "강릉~제진 철도건설 제8공구",
      "client": "총장부금액",
      "contractDate": "2024-09-02",
      "due": "2029-12-04",
-     "rate": 0.12
+     "rate": 12.0
     },
     {
      "name": "울산 남구 신정동 공동주택",
      "client": "총장부금액",
      "contractDate": "2024-08-28",
      "due": "2028-03-20",
-     "rate": 0.39
+     "rate": 39.0
     },
     {
      "name": "송파 창의혁신 공공주택",
      "client": "총장부금액",
      "contractDate": "2025-01-26",
      "due": "2028-10-21",
-     "rate": 0.04
+     "rate": 4.0
     },
     {
      "name": "남양주진접2 A-7BL 아파트 건설공사 6공구",
      "client": "총장부금액",
      "contractDate": "2024-11-29",
      "due": "2028-04-01",
-     "rate": 0.27
+     "rate": 27.0
     },
     {
      "name": "수도권광역급행철도 B노선 민간투자사업",
      "client": "총장부금액",
      "contractDate": "2025-08-04",
      "due": "2031-08-03",
-     "rate": 0.08
+     "rate": 8.0
     },
     {
      "name": "오뚜기물류서비스 백암 물류센터 신축공사",
      "client": "총장부금액",
      "contractDate": "2025-10-01",
      "due": "2027-11-30",
-     "rate": 0.22
+     "rate": 22.0
     },
     {
      "name": "평택고덕 A-56BL 민간참여 공공주택",
      "client": "총장부금액",
      "contractDate": "2025-03-31",
      "due": "2028-12-31",
-     "rate": 0.09
+     "rate": 9.0
     },
     {
      "name": "부산신항~김해간 고속국도 건설공사(제1공구)",
      "client": "총장부금액",
      "contractDate": "2025-06-25",
      "due": "2032-06-24",
-     "rate": 0.01
+     "rate": 1.0
     },
     {
      "name": "삼성전자 고창 CDC 물류센터",
      "client": "총장부금액",
      "contractDate": "2025-10-02",
      "due": "2027-12-31",
-     "rate": 0.23
+     "rate": 23.0
     },
     {
      "name": "앰코테크놀로지코리아 송도공장 증설공사",
@@ -1860,14 +1869,14 @@
      "client": "총장부금액",
      "contractDate": "2026-01-20",
      "due": "2029-01-08",
-     "rate": 0.01
+     "rate": 1.0
     },
     {
      "name": "남양주왕숙 A-25BL 민간참여 공공주택건설",
      "client": "총장부금액",
      "contractDate": "2026-04-01",
      "due": "2028-12-31",
-     "rate": 0.04
+     "rate": 4.0
     },
     {
      "name": "계양-강화 고속국도 건설공사 3공구",
@@ -1881,14 +1890,14 @@
      "client": "총장부금액",
      "contractDate": "2026-01-16",
      "due": "2030-01-14",
-     "rate": 0.02
+     "rate": 2.0
     },
     {
      "name": "SK하이닉스 용인기숙사",
      "client": "총장부금액",
      "contractDate": "2026-03-09",
      "due": "2028-07-31",
-     "rate": 0.04
+     "rate": 4.0
     },
     {
      "name": "제천~영월 고속국도 건설공사 2공구",
@@ -1909,42 +1918,42 @@
      "client": "총장부금액",
      "contractDate": "2025-09-15",
      "due": "2028-08-25",
-     "rate": 0.09
+     "rate": 9.0
     },
     {
      "name": "엘살바도르 로스초로스 교량건설",
      "client": "총장부금액",
      "contractDate": "2023-10-24",
      "due": "2028-04-05",
-     "rate": 0.56
+     "rate": 56.0
     },
     {
      "name": "양주회천 A-3BL 공공주택",
      "client": "총장부금액",
      "contractDate": "2022-03-01",
      "due": "2025-03-31",
-     "rate": 0.01
+     "rate": 1.0
     },
     {
      "name": "새만금 접안시설",
      "client": "총장부금액",
      "contractDate": "2022-08-10",
      "due": "2026-08-03",
-     "rate": 0.95
+     "rate": 95.0
     },
     {
      "name": "화성동탄2 76-2BL 민간참여 공동주택",
      "client": "총장부금액",
      "contractDate": "2025-05-30",
      "due": "2028-07-31",
-     "rate": 0.16
+     "rate": 16.0
     },
     {
      "name": "THE-K 제주호텔 리모델링 공사",
      "client": "총장부금액",
      "contractDate": "2024-11-15",
      "due": "2026-06-30",
-     "rate": 0.96
+     "rate": 96.0
     }
    ]
   },
@@ -1953,174 +1962,175 @@
    "report": "반기보고서 (2026.06)",
    "rcept_no": "20260812000297",
    "asOf": "2026-06",
+   "parser": 2,
    "rows": [
     {
      "name": "건축사업",
      "client": "부산오페라하우스 건립공사",
      "contractDate": "2018-05-23",
      "due": "2026-12-31",
-     "rate": 0.69
+     "rate": 69.0
     },
     {
      "name": "제2여객터미널 확장 골조 및 마감공사(서)",
      "client": "",
      "contractDate": "2020-12-03",
      "due": "2026-03-31",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "한국에너지공과대학교 캠퍼스 시설공사",
      "client": "",
      "contractDate": "2023-02-27",
      "due": "2027-12-12",
-     "rate": 0.69
+     "rate": 69.0
     },
     {
      "name": "연산5구역 주택재개발정비사업",
      "client": "",
      "contractDate": "2023-03-30",
      "due": "2026-05-29",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "대전도마변동9 주택재개발정비사업",
      "client": "",
      "contractDate": "2023-11-10",
      "due": "2027-03-09",
-     "rate": 0.68
+     "rate": 68.0
     },
     {
      "name": "부산 서대신 4구역 재개발정비사업",
      "client": "",
      "contractDate": "2025-10-31",
      "due": "2029-03-14",
-     "rate": 0.1
+     "rate": 10.0
     },
     {
      "name": "토목사업",
      "client": "삼성-동탄 광역급행철도 제4공구",
      "contractDate": "2016-10-06",
      "due": "2028-12-31",
-     "rate": 0.81
+     "rate": 81.0
     },
     {
      "name": "수도권광역급행철도 A노선",
      "client": "",
      "contractDate": "2019-06-30",
      "due": "2028-04-30",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "오송지선 고속도로 건설공사",
      "client": "",
      "contractDate": "2019-12-27",
      "due": "2026-12-31",
-     "rate": 0.88
+     "rate": 88.0
     },
     {
      "name": "춘천~속초 철도건설 제1공구 노반공사",
      "client": "",
      "contractDate": "2022-09-05",
      "due": "2028-02-29",
-     "rate": 0.34
+     "rate": 34.0
     },
     {
      "name": "영동선 안산~북수원간 확장(개량)공사(2공구)",
      "client": "",
      "contractDate": "2021-04-30",
      "due": "2027-12-31",
-     "rate": 0.55
+     "rate": 55.0
     },
     {
      "name": "신분당선 광교~호매실 복선전철1공구 건설공사",
      "client": "",
      "contractDate": "2024-04-30",
      "due": "2029-03-30",
-     "rate": 0.1
+     "rate": 10.0
     },
     {
      "name": "수도권광역급행철도 B노선 3-2공구",
      "client": "",
      "contractDate": "2024-06-17",
      "due": "2030-01-16",
-     "rate": 0.03
+     "rate": 3.0
     },
     {
      "name": "평택지역 전기공급시설 전력구공사 1공구",
      "client": "",
      "contractDate": "2025-12-17",
      "due": "2029-12-25",
-     "rate": 0.01
+     "rate": 1.0
     },
     {
      "name": "필리핀 세부 신항만 건설공사",
      "client": "",
      "contractDate": "2024-12-18",
      "due": "2028-01-17",
-     "rate": 0.3
+     "rate": 30.0
     },
     {
      "name": "플랜트사업",
      "client": "보령신복합 1호기 건설공사",
      "contractDate": "2023-10-16",
      "due": "2027-03-31",
-     "rate": 0.75
+     "rate": 75.0
     },
     {
      "name": "부산항 신항 서컨2-6단계 트랜스퍼크레인 제작설치공사",
      "client": "",
      "contractDate": "2024-06-26",
      "due": "2027-06-26",
-     "rate": 0.69
+     "rate": 69.0
     },
     {
      "name": "여수 천연가스발전소 건설공사",
      "client": "",
      "contractDate": "2026-04-30",
      "due": "2029-04-29",
-     "rate": 0.01
+     "rate": 1.0
     },
     {
      "name": "조선사업",
      "client": "고속상륙정(SS00188~189)",
      "contractDate": "2019-12-09",
      "due": "2026-08-30",
-     "rate": 0.96
+     "rate": 96.0
     },
     {
      "name": "고속정(SS00199~202)",
      "client": "",
      "contractDate": "2022-11-24",
      "due": "2026-11-13",
-     "rate": 0.93
+     "rate": 93.0
     },
     {
      "name": "대형수송함(SS00203)",
      "client": "",
      "contractDate": "2022-11-28",
      "due": "2027-11-30",
-     "rate": 0.71
+     "rate": 71.0
     },
     {
      "name": "군수지원(SS00204)",
      "client": "",
      "contractDate": "2022-12-12",
      "due": "2027-05-31",
-     "rate": 0.93
+     "rate": 93.0
     },
     {
      "name": "고속정(SS00206~209)",
      "client": "",
      "contractDate": "2023-12-21",
      "due": "2027-10-29",
-     "rate": 0.49
+     "rate": 49.0
     },
     {
      "name": "고속함 성능개량(SS00229)",
      "client": "",
      "contractDate": "2024-11-26",
      "due": "2030-12-31",
-     "rate": 0.02
+     "rate": 2.0
     },
     {
      "name": "고속정(SS00230~233)",
@@ -2141,70 +2151,70 @@
      "client": "",
      "contractDate": "2024-06-17",
      "due": "2026-05-21",
-     "rate": 1.0
+     "rate": 100.0
     },
     {
      "name": "CONTAINER(SN00287)",
      "client": "",
      "contractDate": "2024-06-17",
      "due": "2026-10-31",
-     "rate": 0.93
+     "rate": 93.0
     },
     {
      "name": "CONTAINER(SN00288)",
      "client": "",
      "contractDate": "2024-09-12",
      "due": "2027-01-31",
-     "rate": 0.58
+     "rate": 58.0
     },
     {
      "name": "CONTAINER(SN00289)",
      "client": "",
      "contractDate": "2024-09-12",
      "due": "2027-03-31",
-     "rate": 0.45
+     "rate": 45.0
     },
     {
      "name": "CONTAINER(SN00290)",
      "client": "",
      "contractDate": "2024-11-21",
      "due": "2026-07-31",
-     "rate": 0.96
+     "rate": 96.0
     },
     {
      "name": "CONTAINER(SN00291)",
      "client": "",
      "contractDate": "2024-11-21",
      "due": "2026-10-31",
-     "rate": 0.88
+     "rate": 88.0
     },
     {
      "name": "CONTAINER(SN00292)",
      "client": "",
      "contractDate": "2024-11-21",
      "due": "2027-04-30",
-     "rate": 0.32
+     "rate": 32.0
     },
     {
      "name": "CONTAINER(SN00293)",
      "client": "",
      "contractDate": "2024-11-21",
      "due": "2027-06-30",
-     "rate": 0.19
+     "rate": 19.0
     },
     {
      "name": "CONTAINER(SN00295)",
      "client": "",
      "contractDate": "2025-09-08",
      "due": "2027-08-31",
-     "rate": 0.08
+     "rate": 8.0
     },
     {
      "name": "CONTAINER(SN00296)",
      "client": "",
      "contractDate": "2025-09-08",
      "due": "2027-10-31",
-     "rate": 0.01
+     "rate": 1.0
     },
     {
      "name": "서대신4구역 주택재개발정비사업",
@@ -2240,7 +2250,7 @@
  "matches": {
   "비스마야 신도시 (Bismayah New City)": {
    "company": "hanwha",
-   "rate": 0.45,
+   "rate": 45.0,
    "contract": "이라크 Bismayah 국민주택도급사업",
    "due": "2032-12-31",
    "contractDate": "2012-05-30",
@@ -2294,7 +2304,7 @@
   },
   "엘살바도르 로스초로스 교량건설 및 도로확장사업": {
    "company": "dongbu",
-   "rate": 0.56,
+   "rate": 56.0,
    "contract": "엘살바도르 로스초로스 교량건설",
    "due": "2028-04-05",
    "contractDate": "2023-10-24",
@@ -2366,7 +2376,7 @@
   },
   "필리핀 세부 신항만 건설사업": {
    "company": "hj",
-   "rate": 0.3,
+   "rate": 30.0,
    "contract": "필리핀 세부 신항만 건설공사",
    "due": "2028-01-17",
    "contractDate": "2024-12-18",
