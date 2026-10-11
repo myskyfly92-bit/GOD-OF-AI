@@ -8039,7 +8039,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       const url = await getAppsScriptUrl();
       if (!url) return;
       const d = dayNow(), hit = getDay() !== d;
-      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&sid=" + sid + "&t=" + Date.now());
+      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&vid=" + sid + "&t=" + Date.now());
       const txt = await res.text();
       let r = null;
       try { r = JSON.parse(txt); } catch (e) {
