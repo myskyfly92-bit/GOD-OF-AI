@@ -38,16 +38,41 @@ const CFGS = {
     // '6G 비전 페스트' 처럼 행사 이름에 붙은 '페스트'(개막·개최·참가…)도 뺀다
     NOT: /(모터|뮤직|푸드|맥주|아트|영화|게임|댄스|재즈|록|락|와인|커피|스트리트|썸머|윈터|북|비전|테크|과학|드론|로봇|웹툰|청년|창업|스타트업|미디어|콘텐츠|디지털|에너지|\d\s?G|AI|IT|K-?)\s?페스트|페스트['"’”]?\s*(\d{1,2}월\s*\d{1,2}일\s*)?[^\s,…]*\s*(개막|폐막|성료|개최|열려|열린다|참가|모집|부스)|페스티벌|motorfest|festival|특징주|株|주가|급등|급락|airways|airlines? resumes?/i,
   },
+  // NEWS_CFG=sa : 상황판 하단 '중대재해 보도' 알림 (국내 산업현장 사망사고 기사, 최근 7일)
+  sa: {
+    OUT: "sa-news.json", KEEP_DAYS: 7, MAX_ITEMS: 40, BODY_PER_RUN: 12, COMPANY: true,
+    SEARCHES: [
+      { lang: "ko", q: "건설현장 사망 when:2d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "공사현장 추락 숨져 when:2d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "근로자 사망 중대재해 when:2d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "작업 중 숨져 when:2d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "노동부 중대재해 조사 착수 when:3d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+    ],
+    // 제목에 사망을 뜻하는 말 + 일터를 뜻하는 말이 둘 다 있어야 한다
+    MUST: /사망|숨져|숨진|숨지|목숨|추락사|질식사|매몰|깔려\s?숨|끼여\s?숨|중대재해/,
+    MUST2: /현장|공사|건설|공장|작업|근로자|노동자|작업자|인부|하청|협력업체|크레인|타워|굴착|비계|사업장|중대재해/,
+    TITLE_ONLY: true,
+    // 재판·처벌·통계·정책·추모 기사, 교통사고·범죄 기사는 뺀다 (새로 일어난 사고만)
+    NOT: /선고|징역|판결|기소|재판|항소|상고|벌금|집행유예|무죄|유죄|구형|송치|입건|압수수색|토론회|세미나|간담회|포럼|국회|개정안|법안|시행령|통계|분기|상반기|하반기|대책|캠페인|교육|주기|추모|기획|칼럼|사설|인터뷰|교통사고|음주|살인|흉기|자살|극단|실종|등산|낚시|물놀이|해외|중국|미국|일본|베트남/,
+  },
 };
 const CFG = CFGS[process.env.NEWS_CFG || "bismayah"];
 const OUT = CFG.OUT;
 const KEEP_DAYS = CFG.KEEP_DAYS;   // 이 기간 안의 기사만 남긴다
 const MAX_ITEMS = CFG.MAX_ITEMS;   // 최대 몇 건까지 보여 줄지
-const BODY_PER_RUN = 30; // 한 번 실행할 때 본문을 새로 가져올 최대 건수
+const BODY_PER_RUN = CFG.BODY_PER_RUN || 30; // 한 번 실행할 때 본문을 새로 가져올 최대 건수
 const SEARCHES = CFG.SEARCHES;
 const MUST = CFG.MUST;
 const NOT = CFG.NOT || null;
-const keep = (n) => MUST.test(n.title + (CFG.TITLE_ONLY ? "" : " " + (n._desc || ""))) && !(NOT && NOT.test(n.title + " " + (n._desc || "")));
+const keep = (n) => MUST.test(n.title + (CFG.TITLE_ONLY ? "" : " " + (n._desc || ""))) && (!CFG.MUST2 || CFG.MUST2.test(n.title)) && !(NOT && NOT.test(n.title + " " + (n._desc || "")));
+// 기사 제목·본문에서 회사 이름 찾기 (예: 'OO건설 현장서 추락' → OO건설). 못 찾으면 비워 둔다
+const CO_RE = /([가-힣A-Za-z0-9&]{1,12}(?:건설|이앤씨|E&C|엔지니어링|중공업|종합건설|산업개발|건영|토건|물산|에코플랜트|플랜트|디앤씨|D&C|하우징|건축))(?=[\s,·…'"’”)\]]|현장|의\s|가\s|서\s|에서|$)/g;
+const CO_STOP = /^(대형|중소|지역|민간|공공|해외|국내|종합|전문|하청|원청|협력|모|한|해당|일반|국토|산업|중견|대기업|업계|부실)(건설|건축|플랜트|종합건설)$|^(건설|건축)$/;
+function findCompany(text) {
+  const out = [];
+  for (const m of String(text || "").matchAll(CO_RE)) { const c = m[1].replace(/^[\d]+/, ""); if (c.length >= 3 && !CO_STOP.test(c) && !out.includes(c)) out.push(c); }
+  return out[0] || "";
+}
 
 const UA = { "User-Agent": "Mozilla/5.0 (compatible; BismayahHSEBot/1.0)" };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -243,6 +268,8 @@ async function main() {
   }));
   // 바꾼 낱말 뒤 조사 맞추기 (페스트은 → 페스트는, 페스트으로 → 페스트로 …)
   list.forEach((n) => { if (n.titleKo) n.titleKo = n.titleKo.replace(/페스트은/g, "페스트는").replace(/페스트으로/g, "페스트로").replace(/페스트을/g, "페스트를").replace(/페스트과/g, "페스트와").replace(/페스트이(?=[\s,.]|$)/g, "페스트가"); });
+  // 회사 이름 (제목에서 먼저, 없으면 본문 앞부분에서) – 언론 보도에 나온 이름 그대로
+  if (CFG.COMPANY) list.forEach((n) => { n.company = findCompany(n.title) || findCompany(String(n.body || "").slice(0, 400)); });
   // 바로 가는 원문 주소가 있으면 그걸 링크로 쓴다
   list.forEach((n) => { if (n.url && !/news\.google\.com/.test(n.url)) n.link = n.url; });
 

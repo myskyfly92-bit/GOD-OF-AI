@@ -7966,3 +7966,48 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   setInterval(() => { if (Date.now() - lastTest >= TEST_EVERY - 5000) speedTest(); }, 60 * 1000);
   draw();
 })();
+
+// ---- 하단 '중대재해 보도' 알림 (sa-news.json · 3시간마다 수집, 최근 72시간 기사만) ----
+// 언론 보도 제목·회사명을 그대로 옮겨 보여 준다. 누르면 기사 원문. ✕ 로 닫으면 새 기사가 올 때까지 숨김.
+(function saAlertBar() {
+  const HOURS = 72;
+  const bar = document.createElement("div");
+  bar.className = "sa-alert"; bar.hidden = true;
+  bar.innerHTML = `<span class="sa-alert-tag">🚨 중대재해 보도</span><a class="sa-alert-item" target="_blank" rel="noopener"></a>
+    <span class="sa-alert-count"></span><button type="button" class="sa-alert-all" title="최근 기사 모두 보기">목록</button><button type="button" class="sa-alert-x" title="닫기">✕</button>
+    <div class="sa-alert-list" hidden></div>`;
+  document.body.appendChild(bar);
+  const itemEl = bar.querySelector(".sa-alert-item"), listEl = bar.querySelector(".sa-alert-list");
+  let items = [], idx = 0, timer = null;
+  const ago = (d) => { const h = Math.max(0, Math.round((Date.now() - Date.parse(d)) / 3600000)); return h < 1 ? "방금" : h < 24 ? h + "시간 전" : Math.floor(h / 24) + "일 전"; };
+  const row = (n) => `${n.company ? `<b class="sa-co">${escapeHtml(n.company)}</b>` : ""}<span class="sa-t">${escapeHtml(n.titleKo || n.title)}</span><small>${escapeHtml(n.source || "")} · ${ago(n.date)}</small>`;
+  function show() {
+    const n = items[idx % items.length];
+    itemEl.href = n.link; itemEl.innerHTML = row(n);
+    itemEl.classList.remove("in"); void itemEl.offsetWidth; itemEl.classList.add("in");
+  }
+  async function load() {
+    try {
+      const r = await fetch("sa-news.json", { cache: "no-store" });
+      if (!r.ok) return;
+      const d = await r.json();
+      const since = Date.now() - HOURS * 3600000;
+      items = (d.items || []).filter((n) => n.date && Date.parse(n.date) >= since).slice(0, 12);
+    } catch (e) { items = []; }
+    const newest = items[0] ? items[0].link : "";
+    let closed = ""; try { closed = sessionStorage.getItem("saAlertClosed") || ""; } catch (e) {}
+    if (!items.length || closed === newest) { bar.hidden = true; clearInterval(timer); return; }
+    bar.hidden = false;
+    bar.querySelector(".sa-alert-count").textContent = items.length > 1 ? `최근 3일 ${items.length}건` : "";
+    listEl.innerHTML = items.map((n) => `<a href="${escapeHtml(n.link)}" target="_blank" rel="noopener">${row(n)}</a>`).join("") +
+      `<p>언론 보도 제목을 그대로 옮긴 것입니다 · 첫 보도는 사실과 다를 수 있으니 원문과 고용노동부 발표를 확인하세요</p>`;
+    idx = 0; show();
+    clearInterval(timer); if (items.length > 1) timer = setInterval(() => { idx++; show(); }, 7000);
+  }
+  bar.querySelector(".sa-alert-x").onclick = () => { try { sessionStorage.setItem("saAlertClosed", items[0] ? items[0].link : ""); } catch (e) {} bar.hidden = true; clearInterval(timer); };
+  bar.querySelector(".sa-alert-all").onclick = () => { listEl.hidden = !listEl.hidden; };
+  document.addEventListener("click", (e) => { if (!bar.contains(e.target)) listEl.hidden = true; });
+  setTimeout(load, 4000);
+  setInterval(load, 30 * 60 * 1000);
+  window.hseSaAlertTest = (list) => { items = list; bar.hidden = false; listEl.innerHTML = list.map((n) => `<a href="#">${row(n)}</a>`).join(""); bar.querySelector(".sa-alert-count").textContent = `최근 3일 ${list.length}건`; idx = 0; show(); };
+})();
