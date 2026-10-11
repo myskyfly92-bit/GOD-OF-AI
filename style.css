@@ -3495,11 +3495,22 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .gprog { position: relative; display: block; width: 110px; height: 7px; border-radius: 4px; background: rgba(255,255,255,0.08); overflow: hidden; }
 .gprog i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; }
 .gprog-el { background: rgba(160,175,190,0.45); }
-.gprog-pr { background: var(--cyan); top: 2px !important; bottom: 2px !important; box-shadow: 0 0 6px rgba(53,208,192,.6); }
+.gprog-pr { background: var(--cyan); box-shadow: 0 0 6px rgba(53,208,192,.6); }
+.gprog-pr.behind { background: #f0a43a; box-shadow: 0 0 6px rgba(240,164,58,.55); }
+.gp-pair { display: flex; flex-direction: column; gap: 4px; }
+.gp-pair.pop { margin: 5px 0 7px; }
+.gp-row { display: flex; align-items: center; gap: 6px; white-space: nowrap; font-size: 11.5px; color: var(--text-muted); }
+.gp-row .gp-l { width: 26px; flex: none; }
+.gp-row .gprog { width: 90px; flex: none; }
+.gp-row .gp-v { min-width: 34px; }
+.gp-pair .gp-row:has(.gprog-pr) .gp-v { color: var(--cyan); font-weight: 700; }
+.gp-pair .gp-row:has(.gprog-pr.behind) .gp-v { color: #f0a43a; }
+.gp-row small { color: var(--text-dim); font-weight: 400; }
+.gp-pair.pop .gp-row { font-size: 12px; } .gp-pair.pop .gprog { width: 120px; }
 .gprog-txt { display: block; margin-top: 4px; font-size: 11.5px; color: var(--text-muted); white-space: nowrap; }
 .gprog-txt b, .gprog-pop b { color: var(--cyan); font-weight: 700; }
 .gprog-txt small, .gprog-pop small { color: var(--text-dim); }
-.gprog-cell { min-width: 130px; }
+.gprog-cell { min-width: 175px; }
 .gprog-pop { margin: 4px 0 6px; display: flex; align-items: center; gap: 8px; }
 .gprog-pop .gprog { width: 120px; }
 
@@ -3601,3 +3612,8 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 /* 낮잠 장면: 누우면 그림이 넓어져서, 바닥선을 맞추고 그림자는 숨긴다 */
 .mascot-runner.is-sleeping .mascot-body img { transition: none; }
 .mascot-runner.is-sleeping .mascot-shadow { opacity: 0 !important; }
+.leaflet-popup-content .gp-pair.pop .gprog { background: #e3e8ee; }
+.leaflet-popup-content .gp-pair.pop .gprog-el { background: #9aa7b4; }
+.leaflet-popup-content .gp-pair.pop .gp-row { color: #4a5562; }
+.leaflet-popup-content .gp-pair.pop .gp-row:has(.gprog-pr) .gp-v { color: #138a7e; }
+.leaflet-popup-content .gp-pair.pop .gp-row:has(.gprog-pr.behind) .gp-v { color: #c77a10; }

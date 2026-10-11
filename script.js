@@ -3185,10 +3185,14 @@ function globalProgressBar(p, popup) {
   const pr = globalProgress[p.name];
   if (el == null && !pr) return "";
   const asOf = pr && pr.asOf ? pr.asOf.replace(/^20(\d{2})-0?(\d+)$/, "$1.$2") : "";
-  const bar = `<span class="gprog" title="${el != null ? `계약기간 ${el}% 경과` : ""}${pr ? ` · 공정률 ${pr.rate}% (DART ${asOf} 기준)` : ""}">
-      ${el != null ? `<i class="gprog-el" style="width:${el}%"></i>` : ""}${pr ? `<i class="gprog-pr" style="width:${Math.min(100, pr.rate)}%"></i>` : ""}</span>`;
-  const txt = `${el != null ? `기간 ${el}%` : ""}${el != null && pr ? " · " : ""}${pr ? `<b>공정 ${Math.round(pr.rate * 10) / 10}%</b><small> (${asOf})</small>` : ""}`;
-  return popup ? `<div class="gprog-pop">${bar}<span>${txt}</span></div>` : `${bar}<span class="gprog-txt">${txt}</span>`;
+  // 기간 경과율과 공정률을 나란히 (같은 길이 막대 두 줄) – 공정이 기간보다 뒤처지면 주황색
+  const rate = pr ? Math.round(pr.rate * 10) / 10 : null;
+  const behind = el != null && rate != null && rate + 10 < el;
+  const line = (label, v, cls, extra, tip) => `<span class="gp-row" title="${tip}"><span class="gp-l">${label}</span>` +
+    `<span class="gprog"><i class="${cls}" style="width:${Math.min(100, v)}%"></i></span><span class="gp-v">${v}%${extra}</span></span>`;
+  const rows = (el != null ? line("기간", el, "gprog-el", "", `계약기간 ${el}% 경과`) : "") +
+    (pr ? line("공정", rate, "gprog-pr" + (behind ? " behind" : ""), `<small> ${asOf}</small>`, `공정률 ${rate}% (DART ${asOf} 기준)`) : "");
+  return `<span class="gp-pair${popup ? " pop" : ""}">${rows}</span>`;
 }
 
 function renderGlobalFilter(projects) {
