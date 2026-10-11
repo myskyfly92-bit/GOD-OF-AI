@@ -3617,3 +3617,17 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .leaflet-popup-content .gp-pair.pop .gp-row { color: #4a5562; }
 .leaflet-popup-content .gp-pair.pop .gp-row:has(.gprog-pr) .gp-v { color: #138a7e; }
 .leaflet-popup-content .gp-pair.pop .gp-row:has(.gprog-pr.behind) .gp-v { color: #c77a10; }
+
+/* 인터넷 속도 표시 (상단 시계 왼쪽) */
+.net-pill { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; padding: 6px 12px 6px 26px; position: relative; border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.18); background: rgba(10,20,30,.35); color: var(--text); cursor: pointer; font: inherit; line-height: 1.15; min-width: 118px; text-align: left; }
+.net-pill:hover { background: rgba(10,20,30,.5); }
+.net-dot { position: absolute; left: 10px; top: 50%; width: 9px; height: 9px; margin-top: -4.5px; border-radius: 50%; background: #8a96a3; }
+.net-main { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.net-sub { font-size: 11px; color: var(--text-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.net-pill.good .net-dot { background: #35d07f; box-shadow: 0 0 6px rgba(53,208,127,.7); }
+.net-pill.ok .net-dot { background: #f0c23a; box-shadow: 0 0 6px rgba(240,194,58,.7); }
+.net-pill.bad .net-dot { background: #ef5350; box-shadow: 0 0 6px rgba(239,83,80,.8); animation: pulse 1.4s infinite; }
+.net-pill.bad .net-main { color: #ff8a80; }
+.net-pill.testing .net-dot { animation: pulse 1s infinite; }
+@media (max-width: 900px) { .net-pill { display: none; } }

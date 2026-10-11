@@ -34,7 +34,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261011d">
+<link rel="stylesheet" href="style.css?v=20261011e">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -58,13 +58,16 @@ html.intro-pending::after {
     <div class="brand-mark">
       <span class="brand-logo brand-word" aria-label="한화">한화</span>
     </div>
-    <img class="brand-mascot" src="assets/mascot.png?v=2" alt="한화 안전 마스코트">
+    <img class="brand-mascot" src="assets/mascot.png?v=3" alt="한화 안전 마스코트">
     <div class="brand-text">
       <h1>비스마야 안전보건환경 상황실</h1>
       <p>Bismayah New City Project · HSE Situation Room</p>
     </div>
   </div>
   <div class="topbar-status">
+    <button type="button" class="net-pill notranslate" id="netPill" translate="no" title="이 PC의 인터넷 속도 (10분마다 측정 · 누르면 지금 측정)">
+      <span class="net-dot"></span><span class="net-main" id="netMain">인터넷 확인 중</span><span class="net-sub" id="netSub"></span>
+    </button>
     <div class="clock-block notranslate" translate="no">
       <div class="clock"><span id="clock">--:--:--</span> <span class="clock-label clock-label-baghdad" aria-hidden="true"></span></div>
       <div id="date" class="date">----년 --월 --일</div>
@@ -1079,7 +1082,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261011d"></script>
+<script src="script.js?v=20261011e"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

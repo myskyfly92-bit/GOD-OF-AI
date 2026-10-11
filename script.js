@@ -6224,7 +6224,7 @@ async function clinicCall(action, payload) {
   root.className = "ai-assist";
   root.innerHTML = `
     <button type="button" class="ai-fab" aria-label="AI 법령 도우미 열기">
-      <img src="assets/mascot.png?v=2" alt="" draggable="false"><span>법령 도우미</span>
+      <img src="assets/mascot.png?v=3" alt="" draggable="false"><span>법령 도우미</span>
     </button>
     <section class="ai-panel" role="dialog" aria-label="AI 법령 도우미" hidden>
       <header class="ai-head">
@@ -7877,4 +7877,64 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   if (new URLSearchParams(location.search).get("rappel") === "1") setTimeout(show, 4000);
   // 배너의 헌수호를 두 번 누르면 바로 보여 준다
   document.addEventListener("dblclick", (e) => { if (e.target.closest(".mascot-runner")) show(); });
+})();
+
+// ---- 인터넷 속도 (이 PC 기준) ----
+// 응답 속도: 30초마다 아주 작은 요청 1번 · 다운로드 속도: 10분마다 약 270KB 그림 1장을 받아 계산 (데이터를 많이 쓰지 않게)
+// 버튼을 누르면 바로 다시 잰다. 화면이 숨어 있을 때(다른 창/탭)는 재지 않는다.
+(function netMeter() {
+  const pill = document.getElementById("netPill");
+  if (!pill) return;
+  const main = document.getElementById("netMain"), sub = document.getElementById("netSub");
+  const TEST_FILE = "assets/sat-2016.webp";
+  const pings = [];
+  let mbps = null, lastTest = 0, testing = false, failCount = 0;
+  const median = (a) => { const b = a.slice().sort((x, y) => x - y); return b.length ? b[Math.floor(b.length / 2)] : null; };
+  function draw() {
+    pill.classList.remove("good", "ok", "bad");
+    if (!navigator.onLine || failCount >= 2) {
+      pill.classList.add("bad"); main.textContent = "인터넷 끊김"; sub.textContent = "연결 확인 중…"; return;
+    }
+    const rtt = median(pings);
+    let level = "good";
+    if ((mbps != null && mbps < 1) || (rtt != null && rtt > 1500)) level = "bad";
+    else if ((mbps != null && mbps < 5) || (rtt != null && rtt > 600)) level = "ok";
+    pill.classList.add(level);
+    main.textContent = mbps != null ? (mbps >= 10 ? Math.round(mbps) : mbps.toFixed(1)) + " Mbps" : "측정 중…";
+    sub.textContent = (rtt != null ? "응답 " + Math.round(rtt) + "ms" : "") + (level === "bad" ? " · 느림" : level === "ok" ? " · 보통" : " · 좋음");
+    pill.title = "이 PC의 인터넷 속도 – 다운로드 " + (mbps != null ? mbps.toFixed(1) + " Mbps" : "측정 전") + (rtt != null ? ", 응답 " + Math.round(rtt) + "ms" : "") +
+      (lastTest ? " (" + new Date(lastTest).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" }) + " 측정)" : "") + "\n10분마다 자동 측정 · 누르면 지금 측정";
+  }
+  async function ping() {
+    if (document.hidden) return;
+    const t0 = performance.now();
+    try {
+      const r = await fetch("data.json?ping=" + Date.now(), { method: "HEAD", cache: "no-store" });
+      if (!r.ok && r.status !== 405) throw new Error("bad");
+      pings.push(performance.now() - t0); if (pings.length > 5) pings.shift();
+      failCount = 0;
+    } catch (e) { failCount++; }
+    draw();
+  }
+  async function speedTest() {
+    if (testing || document.hidden || !navigator.onLine) return;
+    testing = true; pill.classList.add("testing");
+    const t0 = performance.now();
+    try {
+      const r = await fetch(TEST_FILE + "?speed=" + Date.now(), { cache: "no-store" });
+      const buf = await r.arrayBuffer();
+      const sec = (performance.now() - t0) / 1000;
+      if (buf.byteLength > 50000 && sec > 0) { mbps = (buf.byteLength * 8) / sec / 1e6; lastTest = Date.now(); failCount = 0; }
+    } catch (e) { failCount++; }
+    testing = false; pill.classList.remove("testing");
+    draw();
+  }
+  pill.addEventListener("click", () => { ping(); speedTest(); });
+  window.addEventListener("online", () => { failCount = 0; ping(); speedTest(); });
+  window.addEventListener("offline", draw);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && Date.now() - lastTest > 10 * 60 * 1000) speedTest(); });
+  setTimeout(() => { ping(); setTimeout(speedTest, 1500); }, 8000);   // 처음 화면이 다 뜬 뒤에 (첫 로딩과 겹치지 않게)
+  setInterval(ping, 30 * 1000);
+  setInterval(() => { if (Date.now() - lastTest >= 10 * 60 * 1000 - 5000) speedTest(); }, 60 * 1000);
+  draw();
 })();
