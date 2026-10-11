@@ -7980,7 +7980,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   const itemEl = bar.querySelector(".sa-alert-item"), listEl = bar.querySelector(".sa-alert-list");
   let items = [], idx = 0, timer = null;
   const ago = (d) => { const h = Math.max(0, Math.round((Date.now() - Date.parse(d)) / 3600000)); return h < 1 ? "방금" : h < 24 ? h + "시간 전" : Math.floor(h / 24) + "일 전"; };
-  const row = (n) => `${n.company ? `<b class="sa-co">${escapeHtml(n.company)}</b>` : ""}<span class="sa-t">${escapeHtml(n.titleKo || n.title)}</span><small>${escapeHtml(n.source || "")} · ${ago(n.date)}</small>`;
+  const row = (n) => `${n.company ? `<b class="sa-co">${escapeHtml(n.company)}</b>` : ""}<span class="sa-t">${escapeHtml(n.titleKo || n.title)}</span><small>${escapeHtml(n.source || "")}${n.count > 1 ? ` 외 · 보도 ${n.count}건` : ""} · ${ago(n.date)}</small>`;
   function show() {
     const n = items[idx % items.length];
     itemEl.href = n.link; itemEl.innerHTML = row(n);

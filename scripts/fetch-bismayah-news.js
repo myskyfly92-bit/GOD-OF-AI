@@ -53,7 +53,7 @@ const CFGS = {
     MUST2: /현장|공사|건설|공장|작업|근로자|노동자|작업자|인부|하청|협력업체|크레인|타워|굴착|비계|사업장|중대재해/,
     TITLE_ONLY: true,
     // 재판·처벌·통계·정책·추모 기사, 교통사고·범죄 기사는 뺀다 (새로 일어난 사고만)
-    NOT: /선고|징역|판결|기소|재판|항소|상고|벌금|집행유예|무죄|유죄|구형|송치|입건|압수수색|토론회|세미나|간담회|포럼|국회|개정안|법안|시행령|통계|분기|상반기|하반기|대책|캠페인|교육|주기|추모|기획|칼럼|사설|인터뷰|교통사고|음주|살인|흉기|자살|극단|실종|등산|낚시|물놀이|해외|중국|미국|일본|베트남/,
+    NOT: /선고|징역|판결|기소|재판|항소|상고|벌금|집행유예|무죄|유죄|구형|송치|입건|압수수색|토론회|세미나|간담회|포럼|국회|개정안|법안|시행령|통계|분기|상반기|하반기|대책|캠페인|교육|주기|추모|기획|칼럼|사설|인터뷰|교통사고|음주|살인|흉기|자살|극단|실종|등산|낚시|물놀이|해외|중국|미국|일본|베트남|법원|法|산재\s?(불)?인정|업무상\s?재해|유족급여|안전한 일터|\d+\s?(개월|년)여?\s?만에/,
   },
 };
 const CFG = CFGS[process.env.NEWS_CFG || "bismayah"];
@@ -71,6 +71,7 @@ const CO_STOP = /^(대형|중소|지역|민간|공공|해외|국내|종합|전�
 function findCompany(text) {
   const out = [];
   for (const m of String(text || "").matchAll(CO_RE)) { const c = m[1].replace(/^[\d]+/, ""); if (c.length >= 3 && !CO_STOP.test(c) && !out.includes(c)) out.push(c); }
+  if (!out.length) { const m = String(text || "").match(/([가-힣A-Za-z0-9&]{3,12})\s?(?:하청|협력업체|원청)/); if (m && !/^(건설|공사|현장|업체|회사)/.test(m[1])) out.push(m[1]); }
   return out[0] || "";
 }
 
@@ -270,6 +271,33 @@ async function main() {
   list.forEach((n) => { if (n.titleKo) n.titleKo = n.titleKo.replace(/페스트은/g, "페스트는").replace(/페스트으로/g, "페스트로").replace(/페스트을/g, "페스트를").replace(/페스트과/g, "페스트와").replace(/페스트이(?=[\s,.]|$)/g, "페스트가"); });
   // 회사 이름 (제목에서 먼저, 없으면 본문 앞부분에서) – 언론 보도에 나온 이름 그대로
   if (CFG.COMPANY) list.forEach((n) => { n.company = findCompany(n.title) || findCompany(String(n.body || "").slice(0, 400)); });
+  // 같은 사고를 여러 언론이 쓴 기사는 하나로 묶는다 (대표 기사 + 보도 건수)
+  if (CFG.COMPANY) {
+    const STOP = new Set("사망 숨져 숨진 숨지고 부상 중상 사고 사망사고 노동자 근로자 작업자 현장 공사장 공사 건설현장 조사 위반 여부 중대재해 중대재해법 중처법 노동부 발생 시공 1명 2명 3명 40대 50대 60대 70대 맞아 맞은 다쳐 사상 이동 중 경찰 착수 수사".split(" "));
+    const norm = (c) => String(c || "").replace(/^디엘/, "DL").replace(/^지에스/, "GS").replace(/^에이치디씨/, "HDC").toUpperCase();
+    const toks = (t) => (String(t).match(/[가-힣A-Za-z0-9]{2,}/g) || []).map((w) => w.replace(/(에서|으로|서|에|의|로|가|이|은|는|을|를)$/, "")).filter((w) => w.length >= 2 && !STOP.has(w));
+    const groups = [];
+    for (const n of list) {
+      const tk = toks(n.title), first = tk.slice(0, 2), co = norm(n.company), t = Date.parse(n.date);
+      const g = groups.find((g) => {
+        if (Math.abs(g.t - t) > 48 * 3600000) return false;
+        const share = tk.filter((w) => g.tk.has(w)).length;
+        return share >= 2 || (co && g.co === co && share >= 1) || (Math.abs(g.t - t) < 24 * 3600000 && first.some((w) => g.first.has(w)));
+      });
+      if (g) { g.items.push(n); tk.forEach((w) => g.tk.add(w)); first.forEach((w) => g.first.add(w)); if (!g.co && co) g.co = co; }
+      else groups.push({ t, co, tk: new Set(tk), first: new Set(first), items: [n] });
+    }
+    list.length = 0;
+    groups.forEach((g) => {
+      const rep = g.items.find((n) => n.company) || g.items[0];
+      rep.count = g.items.length;
+      rep.firstDate = g.items[g.items.length - 1].date;
+      rep.date = g.items[0].date;                 // 가장 최근 보도 시각
+      rep.sources = [...new Set(g.items.map((n) => n.source).filter(Boolean))].slice(0, 6);
+      if (!rep.company) rep.company = (g.items.find((n) => n.company) || {}).company || "";
+      list.push(rep);
+    });
+  }
   // 바로 가는 원문 주소가 있으면 그걸 링크로 쓴다
   list.forEach((n) => { if (n.url && !/news\.google\.com/.test(n.url)) n.link = n.url; });
 
