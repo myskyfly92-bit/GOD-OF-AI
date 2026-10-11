@@ -6619,7 +6619,7 @@ async function clinicCall(action, payload) {
       { go: "view-dashboard", sel: null, text: `이 장에서는 화면 맨 위와 어디서나 쓰는 도구들을 알려 드릴게요.<br>안내 중에는 <b>다음 · 이전</b> 버튼이나 키보드 <b>← →</b> 로 넘기고, <b>Esc</b> 나 오른쪽 위 <b>✕</b> 로 언제든 끝낼 수 있어요.` },
       { sel: ".topbar", text: `맨 위 <b>배너</b>예요. 가끔 제가 이 위를 달려가요. 오른쪽 시계 앞에 도착하면 <b>경례</b>를 하고, 안전 한마디를 해요. 가끔은 안전모를 베개 삼아 <b>잠깐 낮잠</b>도 자요 💤<br>달리는 저를 <b>눌러 보면</b> 말을 걸고, 자고 있을 때 누르면 깨어나요!` },
       { sel: ".clock-block", text: `<b>시계</b>예요. 큰 글씨가 <b>바그다드 현지 시각</b>, 아래 작은 글씨가 <b>한국 시각</b>(6시간 빠름)이에요. 본사와 통화할 때 참고하세요.` },
-      { sel: "#visitCounter", opt: true, text: `제목 아래 <b>TODAY | TOTAL</b> 은 싸이월드 미니홈피처럼 이 상황판을 <b>오늘 / 지금까지 연 기기 수</b>예요. 같은 PC·폰은 새로고침해도 <b>하루 한 번만</b> 세고, 이름 같은 정보는 받지 않아요. 마우스를 올리면 어제 숫자도 보여요.` },
+      { sel: "#visitCounter", opt: true, text: `제목 아래 <b>TODAY | TOTAL</b> 은 싸이월드 미니홈피처럼 이 상황판을 <b>오늘 / 지금까지 연 기기 수</b>예요. 초록 점 <b>NOW</b> 는 <b>지금 이 화면을 열어 둔 기기 수</b>예요(몇 분 단위로 갱신). 같은 PC·폰은 새로고침해도 <b>하루 한 번만</b> 세고, 이름 같은 정보는 받지 않아요. 마우스를 올리면 어제 숫자도 보여요.` },
       { sel: "#netPill", text: `시계 오른쪽 국기 아래는 <b>인터넷 속도</b>예요. 이 PC에서 잰 <b>다운로드 속도(Mbps)</b>와 <b>응답 시간(ms)</b>을 보여 줘요.<br>🟢 좋음(5Mbps 이상) · 🟡 보통(1~5) · 🔴 느림(1 미만)이고, 끊기면 <b>'인터넷 끊김'</b>이 떠요. 15분마다 자동으로 재고, <b>누르면 바로</b> 더 정확하게 다시 재요. fast.com 처럼 가까운 측정 서버(Cloudflare)에서 받아서 재요.<br>화면이 비어 보이거나 지도가 안 뜰 때 여기가 빨간색이면 인터넷 탓이니 잠시 뒤 새로고침하세요.` },
       { sel: ".group-bar", text: `여기가 <b>대분류 메뉴</b>예요: 종합현황 · 안전 · 보건 · 환경 · 소방 · 기타.<br>하나를 누르면 바로 아래에 <b>소분류 탭</b> 줄이 나타나고, 마지막으로 보던 소분류를 기억해요.` },
       { sel: ".sa-alert", opt: true, text: `화면 아래 빨간 띠는 <b>중대재해 보도 알림</b>이에요. 최근 3일 안에 국내 산업현장 사망사고 기사가 나오면 <b>회사명과 기사 제목</b>이 떠요. 같은 사고 기사는 하나로 묶어 '보도 n건'으로 보여 주고, 누르면 원문이 열려요.<br>첫 보도는 사실과 다를 수 있으니 원문과 고용노동부 발표를 확인하세요. ✕ 로 닫으면 새 사고 기사가 올 때까지 숨어요.` },
@@ -8024,6 +8024,11 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   const box = document.getElementById("visitCounter");
   if (!box) return;
   const elT = document.getElementById("vcToday"), elA = document.getElementById("vcTotal");
+  const elN = document.getElementById("vcNow"), nowWrap = document.getElementById("vcNowWrap");
+  // 지금 접속자용 무작위 기기 번호 (개인 정보 아님)
+  let sid = "";
+  try { sid = localStorage.getItem("vcSid") || ""; } catch (e) {}
+  if (!sid) { sid = Math.random().toString(36).slice(2, 12); try { localStorage.setItem("vcSid", sid); } catch (e) {} }
   const dayNow = () => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Baghdad" }).format(new Date());
   const getDay = () => { try { return localStorage.getItem("vcDay") || ""; } catch (e) { return ""; } };
   const setDay = (d) => { try { localStorage.setItem("vcDay", d); } catch (e) {} };
@@ -8033,18 +8038,21 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       const url = await getAppsScriptUrl();
       if (!url) return;
       const d = dayNow(), hit = getDay() !== d;
-      const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&t=" + Date.now())).json();
+      const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&sid=" + sid + "&t=" + Date.now())).json();
       if (!r || !r.ok) return;
       if (hit) setDay(d);
       elT.textContent = Number(r.today).toLocaleString("en-US");
       elA.textContent = Number(r.total).toLocaleString("en-US");
-      box.title = `오늘 ${r.today} · 어제 ${r.yesterday} · 누적 ${r.total} (${String(r.since).replace(/(\d{4})(\d\d)(\d\d)/, "$1.$2.$3")}부터, 기기마다 하루 한 번만 셉니다)`;
+      if (typeof r.online === "number" && r.online > 0) { elN.textContent = r.online; nowWrap.hidden = false; } else nowWrap.hidden = true;
+      box.title = `${typeof r.online === "number" ? `지금 접속 ${r.online} · ` : ""}오늘 ${r.today} · 어제 ${r.yesterday} · 누적 ${r.total} (${String(r.since).replace(/(\d{4})(\d\d)(\d\d)/, "$1.$2.$3")}부터, 기기마다 하루 한 번만 셉니다)`;
       if (last !== null && r.today > last) { elT.classList.remove("bump"); void elT.offsetWidth; elT.classList.add("bump"); }
       last = r.today;
       box.hidden = false;
     } catch (e) { /* 서버 준비 전이거나 오프라인이면 그냥 숨겨 둔다 */ }
   }
   tick();
-  setInterval(tick, 5 * 60 * 1000);
-  window.hseVisitTest = (t, a) => { elT.textContent = t; elA.textContent = a; box.hidden = false; elT.classList.add("bump"); };
+  // 90초마다 신호 (화면이 가려져 있으면 쉬었다가 다시 보일 때 바로 한 번)
+  setInterval(() => { if (!document.hidden) tick(); }, 90 * 1000);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) tick(); });
+  window.hseVisitTest = (t, a, n) => { elT.textContent = t; elA.textContent = a; if (n) { elN.textContent = n; nowWrap.hidden = false; } box.hidden = false; elT.classList.add("bump"); };
 })();

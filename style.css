@@ -3684,3 +3684,8 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .visit-counter .vc-today.bump { animation: vcBump .9s ease-out; }
 @keyframes vcBump { 0% { transform: scale(1.6); color: #ffd23f; } 100% { transform: scale(1); } }
 .visit-counter b { display: inline-block; }
+.visit-counter .vc-now { display: inline-flex; align-items: baseline; gap: 5px; }
+.visit-counter .vc-now[hidden] { display: none; }
+.visit-counter .vc-on { color: #3ddc84; }
+.visit-counter .vc-dot { width: 6px; height: 6px; border-radius: 50%; background: #3ddc84; align-self: center; box-shadow: 0 0 6px #3ddc84; animation: vcBlink 1.6s ease-in-out infinite; }
+@keyframes vcBlink { 50% { opacity: .25; } }
