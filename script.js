@@ -1187,6 +1187,30 @@ function renderEmbassyNotices() {
 
 loadEmbassyNotices();
 
+/* 이름 가운데 글자 가리기 (상황판에 실명이 그대로 보이지 않게)
+   김대영 → 김○영, 남궁민수 → 남○○수, 홍길 → 홍○, "김대영 대리" → "김○영 대리"
+   Ahmed Ali Hassan → Ahmed ○ Hassan, Cha, Min Sung → Cha, ○ Sung, Ahmed Ali → Ahmed A.
+   직함·역할 낱말(대리, 과장, 안전관리자 …)은 그대로 둔다 */
+const NAME_KEEP = /^(성명|대리|과장|차장|부장|사원|주임|대표|소장|반장|팀장|조장|기사|이사|상무|전무|담당|감독|책임|선임|수석|매니저|관리자|기능공|협력사|한화|직영|외주|본사|현장|캠프|전원|미정|없음|휴무|안전|보건|환경|공무|관리|품질|공정|설비|전기|기계|토목|건축)$|(관리자|담당자?|팀장|반장|소장|조장|과장|부장|차장|대리|주임|사원|기사|감독관?|공|신호수|유도원|감시인|감시자|작업자|운전원|기능원|업체|건설|팀|조)$/;
+const KO_SURNAME = "남궁제갈선우독고김이박최정강조윤장임한오서신권황안송류유전홍고문양손배백허남심노하곽성차주우구민진나지엄채원천방공현함변염여추도소석선설마길연위표명기반왕금옥육인맹제모탁국어은편용예봉경사부황보";
+function maskName(s) {
+  s = String(s || "");
+  // 한글 이름 (2~4글자 낱말)
+  s = s.replace(/[가-힣]+/g, (w) => {
+    if (w.length < 2 || w.length > 4 || NAME_KEEP.test(w) || !KO_SURNAME.includes(w[0])) return w;
+    if (w.length === 2) return w[0] + "○";
+    return w[0] + "○".repeat(w.length - 2) + w[w.length - 1];
+  });
+  // 영어·아랍어 이름: 슬래시·가운뎃점으로 나뉜 사람마다 가운데 낱말을 ○ 로 ('Cha, Min Sung' 은 한 사람)
+  return s.split(/(\s*[/·;]\s*)/).map((part) => {
+    if (/[가-힣]/.test(part) || !/[A-Za-z\u0600-\u06FF]{2}/.test(part)) return part;
+    const w = part.trim().split(/\s+/);
+    if (w.length >= 3) return part.replace(part.trim(), [w[0], ...w.slice(1, -1).map(() => "○"), w[w.length - 1]].join(" "));
+    if (w.length === 2 && /^[A-Z\u0600-\u06FF]/.test(w[1])) return part.replace(part.trim(), w[0] + " " + w[1][0] + ".");
+    return part;
+  }).join("");
+}
+
 function renderOrgChart(org) {
   const container = document.getElementById("orgChartContainer");
   if (!container) return;
@@ -1199,13 +1223,13 @@ function renderOrgChart(org) {
     <div class="org-team">
       <div class="org-box org-lead">
         <span class="org-title">${escapeHtml(team.title)}</span>
-        <span class="org-name">${escapeHtml(team.name || "")}</span>
+        <span class="org-name">${escapeHtml(maskName(team.name))}</span>
       </div>
       <div class="org-members">
         ${(team.members || []).map(m => `
           <div class="org-box org-member">
             <span class="org-title">${escapeHtml(m.title)}</span>
-            <span class="org-name">${escapeHtml(m.name || "")}</span>
+            <span class="org-name">${escapeHtml(maskName(m.name))}</span>
           </div>
         `).join("")}
       </div>
@@ -1216,7 +1240,7 @@ function renderOrgChart(org) {
     <div class="org-root-row">
       <div class="org-box org-root">
         <span class="org-title">${escapeHtml(org.root.title)}</span>
-        <span class="org-name">${escapeHtml(org.root.name || "")}</span>
+        <span class="org-name">${escapeHtml(maskName(org.root.name))}</span>
       </div>
     </div>
     <div class="org-teams-row">
@@ -1996,7 +2020,7 @@ function renderTodayList(items) {
   box.innerHTML = list.length ? list.map((it) => `
     <div class="tw-job ${it.risks.length ? "risky" : ""}" style="--c:${WZ_PART_COLORS[it.part] || "#8996a6"}">
       <div class="tw-job-top"><span class="tw-job-part">${wzEscapeHtml(it.part || it.team || "–")}</span><b>${wzEscapeHtml(it.work)}</b>${it.wtime ? `<span class="tw-job-time">🕘 ${wzEscapeHtml(it.wtime)}</span>` : ""}${it.crew ? `<span class="tw-job-crew">👥 ${it.crew}명</span>` : ""}</div>
-      <div class="tw-job-meta">${[it.zone && "📍 " + wzEscapeHtml(it.zone) + (it.loc ? " · " + wzEscapeHtml(it.loc) : ""), it.person && "👷 " + wzEscapeHtml(it.person)].filter(Boolean).join(" · ")}</div>
+      <div class="tw-job-meta">${[it.zone && "📍 " + wzEscapeHtml(it.zone) + (it.loc ? " · " + wzEscapeHtml(it.loc) : ""), it.person && "👷 " + wzEscapeHtml(maskName(it.person))].filter(Boolean).join(" · ")}</div>
       ${it.equip ? `<div class="tw-job-meta">🚜 ${wzEscapeHtml(it.equip)}</div>` : ""}
       ${it.risks.length ? `<div class="tw-job-risks">${it.risks.map((r) => `<span>⚠ ${wzEscapeHtml(r)}</span>`).join("")}</div>` : ""}
     </div>`).join("") : `<p class="tw-empty">오늘 등록된 작업이 없습니다</p>`;
@@ -2171,7 +2195,7 @@ function wzShowSchedule(zone) {
         <span class="wz-part-badge">${wzEscapeHtml(it.part || it.team || "–")}</span>
         <div class="wz-item-body">
           <div class="wz-item-work">${wzEscapeHtml(it.work)}${it.date ? "" : ' <span class="wz-repeat">매주</span>'}${it.wtime ? ` <span class="wz-time">🕘 ${wzEscapeHtml(it.wtime)}</span>` : ""}</div>
-          ${(it.loc || it.person || it.note || it.crew) ? `<div class="wz-item-meta">${[it.loc && "📍 " + wzEscapeHtml(it.loc), it.crew && "👥 " + it.crew + "명", it.person && "👷 " + wzEscapeHtml(it.person), it.note && wzEscapeHtml(it.note)].filter(Boolean).join(" · ")}</div>` : ""}
+          ${(it.loc || it.person || it.note || it.crew) ? `<div class="wz-item-meta">${[it.loc && "📍 " + wzEscapeHtml(it.loc), it.crew && "👥 " + it.crew + "명", it.person && "👷 " + wzEscapeHtml(maskName(it.person)), it.note && wzEscapeHtml(it.note)].filter(Boolean).join(" · ")}</div>` : ""}
           ${it.equip ? `<div class="wz-item-equip">🚜 ${wzEscapeHtml(it.equip)}</div>` : ""}
           ${it.risks.length ? `<div class="wz-risks">${it.risks.map((r) => `<span class="wz-risk">⚠ ${wzEscapeHtml(r)}</span>`).join("")}</div>` : ""}
         </div>
