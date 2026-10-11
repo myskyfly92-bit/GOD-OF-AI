@@ -28,7 +28,7 @@ TIME_BUDGET_SEC = 10 * 60
 
 # 자동으로 안 이어질 때 손으로 잇기: (회사 id, 지도 현장 이름에 들어 있는 말) → 보고서 계약명에 들어 있는 말
 MANUAL_MATCH = {
-    ("hanwha", "비스마야"): "비스마야",
+    ("hanwha", "비스마야"): "Bismayah 국민주택",   # 한화 보고서는 'Bismayah' 영문 표기
 }
 
 COUNTRY_WORDS = {"사우디", "사우디아라비아", "이라크", "카타르", "쿠웨이트", "아랍에미리트", "UAE", "오만", "바레인", "이집트",
@@ -154,6 +154,7 @@ def progress_rows(html):
         head = " ".join(" ".join(r) for r in tb[:3])
         if "진행률" not in head or not ("완성기한" in head or "계약일" in head):
             continue
+        tbl = []
         for row in tb:
             dates = [i for i, c in enumerate(row) if as_date(c)]
             if len(dates) < 2:
@@ -170,7 +171,13 @@ def progress_rows(html):
             client = row[i1 - 1] if i1 >= 2 else ""
             if not name or re.fullmatch(r"[\d,.\-\s]+", name):
                 continue
-            out.append({"name": name, "client": client, "contractDate": as_date(row[i1]), "due": as_date(row[i2]), "rate": rate})
+            tbl.append({"name": name, "client": client, "contractDate": as_date(row[i1]), "due": as_date(row[i2]), "rate": rate})
+        # 회사에 따라 진행률을 비율(0.56 = 56%)로 적는다 → 표 전체가 1 이하이고 0~1 사이 값이 있으면 % 로 바꾼다
+        rates = [r["rate"] for r in tbl]
+        if rates and max(rates) <= 1.0 and any(0 < x < 1 for x in rates):
+            for r in tbl:
+                r["rate"] = round(r["rate"] * 100, 2)
+        out.extend(tbl)
     # 같은 계약이 여러 표(연결·별도)에 두 번 나오면 하나만
     seen, uniq = set(), []
     for r in out:
