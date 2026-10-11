@@ -8032,13 +8032,20 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   const dayNow = () => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Baghdad" }).format(new Date());
   const getDay = () => { try { return localStorage.getItem("vcDay") || ""; } catch (e) { return ""; } };
   const setDay = (d) => { try { localStorage.setItem("vcDay", d); } catch (e) {} };
-  let last = null;
+  let last = null, lastErr = "";
+  box.addEventListener("click", () => { if (last === null && lastErr) alert("방문자 카운터 연결 상태\n\n" + lastErr); });
   async function tick() {
     try {
       const url = await getAppsScriptUrl();
       if (!url) return;
       const d = dayNow(), hit = getDay() !== d;
-      const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&sid=" + sid + "&t=" + Date.now())).json();
+      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&sid=" + sid + "&t=" + Date.now());
+      const txt = await res.text();
+      let r = null;
+      try { r = JSON.parse(txt); } catch (e) {
+        const plain = txt.replace(/<style[\s\S]*?<\/style>|<script[\s\S]*?<\/script>/gi, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+        showErr("JSON 아님 (HTTP " + res.status + "): " + plain.slice(0, 160)); return;
+      }
       if (!r || !r.ok) { showErr("서버 응답: " + ((r && r.error) || "알 수 없음")); return; }
       if (hit) setDay(d);
       elT.textContent = Number(r.today).toLocaleString("en-US");
@@ -8056,7 +8063,8 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     console.warn("[방문자 카운터]", msg);
     if (last !== null) return;           // 한 번이라도 숫자가 떴으면 그대로 둔다
     elT.textContent = "–"; elA.textContent = "–";
-    box.title = "방문자 카운터 준비 중 · " + msg;
+    box.title = "방문자 카운터 준비 중 · " + msg + " (누르면 자세히)";
+    lastErr = msg;
     box.style.opacity = ".55";
     box.hidden = false;
   }
