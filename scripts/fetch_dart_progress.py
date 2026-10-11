@@ -35,6 +35,48 @@ COUNTRY_WORDS = {"사우디", "사우디아라비아", "이라크", "카타르",
                  "알제리", "리비아", "베트남", "필리핀", "말레이시아", "싱가포르", "인도네시아", "대만", "미국", "멕시코",
                  "러시아", "나이지리아", "모잠비크", "체코", "폴란드", "투르크메니스탄", "우즈베키스탄", "카자흐스탄", "SAUDI", "IRAQ",
                  "QATAR", "KUWAIT", "OMAN", "해외", "국내"}
+# 업종·방향을 나타내는 흔한 말 – 이것 하나만 겹쳐서는 같은 현장으로 보지 않음 (예: POWER, AIRPORT, REFINERY)
+INDUSTRY_GENERIC = {"POWER", "REFINERY", "AIRPORT", "INTERNATIONAL", "TERMINAL", "SOUTH", "NORTH", "EAST", "WEST", "CENTRAL",
+                    "WATER", "GAS", "OIL", "METHANOL", "AREA", "LINE", "RAILWAY", "ROAD", "BRIDGE", "PORT", "HOSPITAL",
+                    "EXPANSION", "PRODUCTION", "PROCESSING", "COMPLEX", "INDEPENDENT", "TRACK", "FAST", "STATION", "TRANSMISSION",
+                    "정유", "정유공", "정유공장", "공항", "발전", "발전소", "항만", "도로", "철도", "병원", "송전", "플랜트"}
+# 나라 이름 표기 → 같은 나라로 묶기 (보고서 계약명에 다른 나라가 적혀 있으면 이어 붙이지 않음)
+COUNTRY_ALIASES = {
+    "사우디아라비아": ["사우디", "SAUDI", "KSA"], "이라크": ["이라크", "IRAQ"], "카타르": ["카타르", "QATAR"], "쿠웨이트": ["쿠웨이트", "KUWAIT"],
+    "아랍에미리트": ["아랍에미리트", "UAE", "아부다비", "ABU DHABI", "두바이", "DUBAI"], "오만": ["오만", "OMAN"], "바레인": ["바레인", "BAHRAIN"],
+    "이집트": ["이집트", "EGYPT"], "알제리": ["알제리", "ALGERIA"], "리비아": ["리비아", "LIBYA"], "베트남": ["베트남", "VIETNAM"],
+    "필리핀": ["필리핀", "PHILIPPINES"], "말레이시아": ["말레이시아", "말련", "MALAYSIA"], "싱가포르": ["싱가포르", "싱가폴", "SINGAPORE"],
+    "인도네시아": ["인도네시아", "INDONESIA"], "대만": ["대만", "TAIWAN"], "미국": ["미국", "USA", "U.S."], "멕시코": ["멕시코", "MEXICO"],
+    "러시아": ["러시아", "RUSSIA"], "나이지리아": ["나이지리아", "NIGERIA"], "모잠비크": ["모잠비크", "MOZAMBIQUE"], "체코": ["체코", "CZECH"],
+    "폴란드": ["폴란드", "POLAND"], "투르크메니스탄": ["투르크메니스탄", "TURKMENISTAN"], "우즈베키스탄": ["우즈베키스탄", "UZBEKISTAN"],
+    "카자흐스탄": ["카자흐스탄", "KAZAKHSTAN"], "방글라데시": ["방글라데시", "BANGLADESH"], "파나마": ["파나마", "PANAMA"],
+    "엘살바도르": ["엘살바도르", "EL SALVADOR"], "인도": ["인도 ", "INDIA"], "호주": ["호주", "AUSTRALIA"], "캐나다": ["캐나다", "CANADA"],
+    "튀르키예": ["튀르키예", "터키", "TURKEY", "TURKIYE"], "홍콩": ["홍콩", "HONG KONG"], "페루": ["페루", "PERU"], "칠레": ["칠레", "CHILE"],
+}
+
+
+def countries_in(text):
+    t = " " + (text or "").upper() + " "
+    found = set()
+    for canon, al in COUNTRY_ALIASES.items():
+        for a in al:
+            a = a.upper()
+            if re.fullmatch(r"[A-Z .]+", a.strip()):
+                if re.search(r"(?<![A-Z])" + re.escape(a.strip()) + r"(?![A-Z])", t):
+                    found.add(canon)
+            elif a in t:
+                found.add(canon)
+    return found
+
+
+def canon_country(name):
+    for canon, al in COUNTRY_ALIASES.items():
+        if name == canon or name in al:
+            return canon
+    c = countries_in(name)
+    return next(iter(c)) if len(c) == 1 else name
+
+
 EXTRA_GENERIC = {"공사", "프로젝트", "설비", "시설", "현장", "계약", "건설공사", "신축", "공사중", "플랜트", "PROJECT", "EPC",
                  "UNIT", "FACILITIES", "FACILITY", "ENGINEERING", "CONSTRUCTION", "WORKS"}
 
@@ -180,11 +222,18 @@ def match(projects, rows_by_company):
                 best = next((r for r in rows if rword in r["name"]), None)
         if not best:
             pt = tokens(f"{p.get('name', '')} {p.get('dartName', '')} {p.get('city', '')}")
+            pc = canon_country(p.get("country") or "") if p.get("country") else ""
+            generic = {w.upper() for w in INDUSTRY_GENERIC}
             scored = []
             for r in rows:
+                rc = countries_in(f"{r['name']} {r.get('client', '')}")
+                if pc and rc and pc not in rc:
+                    continue                      # 계약명에 다른 나라가 적혀 있음 → 다른 현장
                 common = pt & tokens(f"{r['name']} {r['client']}")
-                if common:
-                    scored.append((len(common), r))
+                distinct = {t for t in common if t not in generic}
+                if not distinct:
+                    continue                      # 'POWER', 'AIRPORT' 같은 흔한 말만 겹침
+                scored.append((len(distinct) + (1 if pc and pc in rc else 0), r))
             scored.sort(key=lambda x: -x[0])
             if scored and (len(scored) == 1 or scored[0][0] > scored[1][0]):
                 best = scored[0][1]

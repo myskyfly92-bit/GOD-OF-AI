@@ -2247,6 +2247,15 @@
    "asOf": "2026-06",
    "rcept_no": "20260814003428"
   },
+  "ENGINEERING, PROCUREMENT, INSTALLATION AND COMMISSIONING OF DUKHAN SOLAR POWER PLANT": {
+   "company": "samsungcnt",
+   "rate": 0.8,
+   "contract": "카타르 Dukhan PV",
+   "due": "2030-02-28",
+   "contractDate": "2025-08-24",
+   "asOf": "2026-06",
+   "rcept_no": "20260814002969"
+  },
   "카타르 Ras Laffan Petrochemicals Project": {
    "company": "samsungea",
    "rate": 79.06,
@@ -2262,15 +2271,6 @@
    "contract": "SAUDI APOC PDH/UTOS Project",
    "due": "2024-06-02",
    "contractDate": "2021-05-03",
-   "asOf": "2026-06",
-   "rcept_no": "20260814003428"
-  },
-  "UAE Methanol Project": {
-   "company": "samsungea",
-   "rate": 99.2,
-   "contract": "말련 Sarawak Methanol",
-   "due": "2025-06-30",
-   "contractDate": "2019-03-09",
    "asOf": "2026-06",
    "rcept_no": "20260814003428"
   },
@@ -2298,24 +2298,6 @@
    "contract": "NIGERIA GBARAN INFILL PJ(*2)",
    "due": "2026-06-30",
    "contractDate": "2014-05-01",
-   "asOf": "2026-06",
-   "rcept_no": "20260814002161"
-  },
-  "카타르 Facility E Independent Water and Power Production Project": {
-   "company": "samsungcnt",
-   "rate": 99.5,
-   "contract": "UAE 원전",
-   "due": "2026-06-30",
-   "contractDate": "2010-03-26",
-   "asOf": "2026-06",
-   "rcept_no": "20260814002969"
-  },
-  "리비아 Fast Track Power Plant Project": {
-   "company": "daewoo",
-   "rate": 35.16,
-   "contract": "LIBYA ZWITINA POWER PLANT PJ(*3)",
-   "due": "2018-12-31",
-   "contractDate": "2013-01-28",
    "asOf": "2026-06",
    "rcept_no": "20260814002161"
   },
@@ -2373,51 +2355,6 @@
    "asOf": "2026-06",
    "rcept_no": "20260814002161"
   },
-  "필리핀 South Commuter Railway Project 공사(PKG CP S-04)": {
-   "company": "hdec",
-   "rate": 88.0,
-   "contract": "이라크 바스라 정유공장 고도화설비 공사",
-   "due": "2026-12-31",
-   "contractDate": "2021-02-15",
-   "asOf": "2026-06",
-   "rcept_no": "20260814003360"
-  },
-  "필리핀 South Commuter Railway Project 공사(PKG CP S-06)": {
-   "company": "hdec",
-   "rate": 88.0,
-   "contract": "이라크 바스라 정유공장 고도화설비 공사",
-   "due": "2026-12-31",
-   "contractDate": "2021-02-15",
-   "asOf": "2026-06",
-   "rcept_no": "20260814003360"
-  },
-  "필리핀 South Commuter Railway Project 공사(PKG CP S-05)": {
-   "company": "hdec",
-   "rate": 88.0,
-   "contract": "이라크 바스라 정유공장 고도화설비 공사",
-   "due": "2026-12-31",
-   "contractDate": "2021-02-15",
-   "asOf": "2026-06",
-   "rcept_no": "20260814003360"
-  },
-  "Dos Bocas New Refinery Project 2단계": {
-   "company": "samsungea",
-   "rate": 98.25,
-   "contract": "Oman Duqm Refinery Project Pkg.2",
-   "due": "2025-12-20",
-   "contractDate": "2018-06-03",
-   "asOf": "2026-06",
-   "rcept_no": "20260814003428"
-  },
-  "Hazrat Shahjalal International Airport Expansion Project": {
-   "company": "samsungcnt",
-   "rate": 81.6,
-   "contract": "대만 Taoyuan Airport Terminal 3",
-   "due": "2027-08-31",
-   "contractDate": "2021-06-01",
-   "asOf": "2026-06",
-   "rcept_no": "20260814002969"
-  },
   "필리핀 세부 신항만 건설사업": {
    "company": "hj",
    "rate": 0.3,
@@ -2435,6 +2372,15 @@
    "contractDate": "2025-01-02",
    "asOf": "2026-06",
    "rcept_no": "20260814003428"
+  },
+  "Onshore Offplot Common Lean LNG Storage and Loading Facilities of the NORTH FIELD EXPANSION PROJECT": {
+   "company": "samsungcnt",
+   "rate": 94.6,
+   "contract": "카타르 LNG 수출기지 Tank",
+   "due": "2027-08-31",
+   "contractDate": "2021-03-01",
+   "asOf": "2026-06",
+   "rcept_no": "20260814002969"
   },
   "카타르 Ras Laffan Petrochemicals Project - Ethylene Storage Plant": {
    "company": "samsungea",
