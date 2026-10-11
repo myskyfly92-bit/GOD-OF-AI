@@ -1,5 +1,5 @@
 // 비스마야 신도시 관련 뉴스를 구글 뉴스 검색(한국어·아랍어·영어)으로 모아
-// bismayah-news.json 으로 저장한다. GitHub Actions에서 6시간마다 실행.
+// bismayah-news.json 으로 저장한다. GitHub Actions에서 3시간마다 실행.
 //
 // - 검색어: 비스마야 / بسماية / Bismayah·Bismaya
 // - 아랍어·영어 제목은 한국어로 번역해 붙인다 (구글 번역 무료 주소 → 안 되면 MyMemory)
@@ -16,9 +16,15 @@ const CFGS = {
       { lang: "ar", q: "بسماية when:30d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
       { lang: "ar", q: '"مدينة بسماية" OR "مجمع بسماية" when:60d', hl: "ar", gl: "IQ", ceid: "IQ:ar" },
       { lang: "en", q: "(Bismayah OR Bismaya) Iraq when:60d", hl: "en-US", gl: "US", ceid: "US:en" },
+      // 오타·다른 표기로 쓴 기사도 잡는다 (예: 더구루 '비스야마', 영어 'Basmaya')
+      { lang: "ko", q: "(비스야마 OR 비스마이야 OR 바스마야) when:30d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "한화 이라크 (신도시 OR 미수금 OR 공사대금) when:30d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ar", q: '(بسمايا OR "هانوا" OR "هانوها") العراق when:30d', hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+      { lang: "en", q: "(Basmaya OR Besmaya OR \"Hanwha Iraq\") when:30d", hl: "en-US", gl: "US", ceid: "US:en" },
     ],
-    // 제목이나 요약에 비스마야가 실제로 나와야 한다 (검색 엔진이 엉뚱한 기사를 섞는 것 거르기)
-    MUST: /비스마야|بسماية|بسمايه|bismay/i,
+    // 제목이나 요약에 비스마야(또는 다른 표기)가 실제로 나와야 한다 (검색 엔진이 엉뚱한 기사를 섞는 것 거르기)
+    // 한화+이라크 기사는 비스마야 사업 얘기라 같이 받는다
+    MUST: /비스마야|비스야마|비스마이야|바스마야|بسماية|بسمايه|بسمايا|bismay|basmaya|besmaya|한화.{0,30}이라크|이라크.{0,30}한화|hanwha.{0,40}iraq|iraq.{0,40}hanwha|(هانوا|هانوها).{0,60}(العراق|بغداد|الاستثمار)|(العراق|بغداد|الاستثمار).{0,60}(هانوا|هانوها)/i,
   },
   health: {
     OUT: "health-issues.json", KEEP_DAYS: 30, MAX_ITEMS: 80,
