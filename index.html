@@ -34,7 +34,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261011k">
+<link rel="stylesheet" href="style.css?v=20261011l">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -109,7 +109,7 @@ html.intro-pending::after {
     <div class="sub-row" data-group="health" hidden>
       <button class="tab-btn" data-view="view-health-issues">세계 보건 이슈</button>
       <button class="tab-btn" data-view="view-health-medical">주변 의료기관</button>
-      <button class="tab-btn" data-view="view-health-clinic">현장 클리닉 현황</button>
+      <button class="tab-btn" data-view="view-health-clinic">클리닉 진료현황</button>
       <button class="tab-btn" data-view="view-health-kdca">국내 감염병 현황</button>
       <button class="tab-btn" data-view="view-iraq-moh">이라크 보건부 소식</button>
       <!-- WHO 소식 탭은 '세계 보건 이슈'로 대신함 (다시 쓰려면 이 줄을 살리면 됨): <button class="tab-btn" data-view="view-health-infect">WHO 소식</button> -->
@@ -523,8 +523,8 @@ html.intro-pending::after {
 
 <div id="view-health-clinic" class="view">
 <main class="grid">
-  <section class="panel clinic-panel" aria-label="현장 클리닉 현황" style="grid-column: 1 / -1;">
-    <div class="panel-label">SITE CLINIC · 현장 클리닉 진료 현황</div>
+  <section class="panel clinic-panel" aria-label="클리닉 진료현황" style="grid-column: 1 / -1;">
+    <div class="panel-label">SITE CLINIC · 클리닉 진료현황</div>
     <div class="clinic-info" id="clinicInfo"></div>
     <div class="clinic-cards" id="clinicCards"><p class="skeleton">진료 현황 불러오는 중…</p></div>
     <div class="clinic-cols">
@@ -1084,7 +1084,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261011k"></script>
+<script src="script.js?v=20261011l"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">
