@@ -25,6 +25,7 @@ from fetch_dart_overseas import (TARGETS, dart_get, fetch_document_html, load_co
 OUT = "dart-progress.json"
 PROJECTS_PATH = "overseas-projects.json"
 TIME_BUDGET_SEC = 10 * 60
+PARSER_VER = 2   # 표 읽는 방식이 바뀌면 올린다 → 같은 보고서라도 다시 읽음 (2: 비율 → % 환산)
 
 # 자동으로 안 이어질 때 손으로 잇기: (회사 id, 지도 현장 이름에 들어 있는 말) → 보고서 계약명에 들어 있는 말
 MANUAL_MATCH = {
@@ -289,7 +290,7 @@ def main():
                 companies[cid] = prev_co[cid]
             continue
         old = prev_co.get(cid) or {}
-        if old.get("rcept_no") == rep["rcept_no"] and old.get("rows"):
+        if old.get("rcept_no") == rep["rcept_no"] and old.get("rows") and old.get("parser") == PARSER_VER:
             companies[cid] = old  # 같은 보고서면 다시 읽지 않는다
             print(f"{cname}: 같은 보고서({rep['report_nm']}) · {len(old['rows'])}줄 재사용")
             continue
@@ -304,7 +305,7 @@ def main():
             companies[cid] = old
             continue
         companies[cid] = {"name": cname, "report": rep["report_nm"].strip(), "rcept_no": rep["rcept_no"],
-                          "asOf": as_of(rep["report_nm"]), "rows": rows}
+                          "asOf": as_of(rep["report_nm"]), "parser": PARSER_VER, "rows": rows}
         time.sleep(0.5)
 
     rows_by_company = {cid: v.get("rows", []) for cid, v in companies.items()}
