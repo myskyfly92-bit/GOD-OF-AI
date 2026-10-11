@@ -6652,7 +6652,7 @@ async function clinicCall(action, payload) {
       { sel: null, text: `시트에서 직접 고친 내용은 <b>새로고침</b>하면 반영돼요. 사이트에서 추가한 건 바로 보여요.` },
     ]},
     { id: "health", title: "보건", icon: "🩺", steps: [
-      { go: "view-health-medical", sel: "#medCards", text: `<b>보건 › 주변 의료시설</b>이에요. 맨 위 카드에 <b>가장 가까운 병원 · 응급실 · 공립 병원</b>과 차로 거리·시간을 요약해요. 카드를 누르면 지도에서 그 병원으로 이동해요.` },
+      { go: "view-health-medical", sel: "#medCards", text: `<b>보건 › 주변 의료기관</b>이에요. 맨 위 카드에 <b>가장 가까운 병원 · 응급실 · 공립 병원</b>과 차로 거리·시간을 요약해요. 카드를 누르면 지도에서 그 병원으로 이동해요.` },
       { sel: "#medMap", text: `<b>지도</b>예요. 현장을 중심으로 <b>10 · 20 · 40 km</b> 원이 그려져 있어요. 점을 누르면 병원 이름과 거리가 나와요.` },
       { sel: "#medFilter", text: `위 버튼으로 <b>병원 · 응급실 · 공립 · 의원·보건소</b>만 골라 볼 수 있고, 옆 <b>진료과</b> 목록에서 정형외과·화상·안과 등을 고르면 그 과가 있는 곳만 남아요.<br>진료과는 병원 이름과 지도 정보로 <b>추정</b>한 것이라 방문 전 전화로 확인하세요.` },
       { sel: "#medList", text: `<b>목록</b>은 가까운 순이에요. 이름은 <b>영어</b>를 먼저, 아래에 <b>아랍어</b>를 함께 적어서 현지 기사님께 그대로 보여 줄 수 있어요.<br><b>길찾기</b>를 누르면 구글 지도 경로가 열려요. 거리·시간은 <b>교통 상황이 반영되지 않은</b> 값이에요.` },
@@ -7422,7 +7422,7 @@ function hseWeldWord(host, wordEl, onDone) {
 
 
 /* ==========================================================
-   보건 > 주변 의료시설 (medical-facilities.json: OSM 병원·의원 + OSRM 도로 거리)
+   보건 > 주변 의료기관 (medical-facilities.json: OSM 병원·의원 + OSRM 도로 거리)
    ========================================================== */
 (function medicalNearby() {
   let map = null, layer = null, data = null, filter = "hospital", spec = "", marks = {};
