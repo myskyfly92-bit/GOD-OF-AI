@@ -3626,7 +3626,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   // 낮잠: 하품 → 안전모 벗어 베개 삼아 눕기 → 쿨쿨(반복) → 깨서 안전모 다시 쓰고 경례
   // 주기: 처음 오른쪽으로 달려가다가 중간쯤에서 한숨 자고, 그 뒤로는 5~8분마다 오른쪽으로 달리는 길에 한 번씩
   //       (그림 3개 약 2MB 는 화면이 뜨고 3초 뒤에 받아 둔다)
-  const SLEEP = { a: { src: "assets/mascot-sleep.webp", ms: 13300 }, l: { src: "assets/mascot-sleep-loop.webp?v=2", ms: 3800 }, w: { src: "assets/mascot-wake.webp?v=2", ms: 10400 } };
+  const SLEEP = { a: { src: "assets/mascot-sleep.webp", ms: 13300 }, l: { src: "assets/mascot-sleep-loop.webp?v=2", ms: 3800 }, w: { src: "assets/mascot-wake.webp?v=3", ms: 8800 } };
   const sleepBlob = {}, sleepUrl = {};
   let sleeping = 0, sleepTimers = [], lastSleep = 0;
   let napDue = Infinity, napX = null;       // napDue: 이 시각 이후 오른쪽으로 달릴 때 napX 에서 잠든다. 처음에는 고리 걸기(줄 타기)·경례를 본 다음에
@@ -3650,7 +3650,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     mode = "action"; target = 0; speed = 0; busyUntil = Infinity;
     showSleep("a");
     later(() => say(["하암~ 잠깐 휴식!", "휴게시간엔 푹 쉬어요 💤", "안전모는 잠깐 베개로…"][Math.floor(Math.random() * 3)]), 1200);
-    later(() => { sleeping = 2; showSleep("l"); later(() => say("쿨쿨… 💤"), 600); }, SLEEP.a.ms);
+    later(() => { sleeping = 2; showSleep("l"); }, SLEEP.a.ms);   // 자는 동안은 말 없이 조용히
     const cycles = 4 + Math.floor(Math.random() * 3);   // 15~23초 쿨쿨
     later(wakeUp, SLEEP.a.ms + cycles * SLEEP.l.ms);
     return true;
@@ -3660,14 +3660,16 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     sleepTimers.forEach(clearTimeout); sleepTimers = [];
     sleeping = 3;
     showSleep("w");
-    later(() => say("안전모 다시 착용! 턱끈까지 딸깍 ✔"), 6200);
+    later(() => say("안전모 다시 착용! 턱끈까지 딸깍 ✔"), 6000);
+    // 경례 끝 → 원래 서 있는 그림으로 살짝 겹치듯 바꿔서(뚝 끊기지 않게) 다시 순찰
+    later(() => { img.style.transition = "opacity .22s ease"; img.style.opacity = "0"; }, SLEEP.w.ms + 400);
     later(() => {
-      sleeping = 0; acting = false;
+      sleeping = 0;
       runner.classList.remove("is-sleeping");
       img.src = STAND_SRC;
-      busyUntil = performance.now() + 2500;
-      nextNap();
-    }, SLEEP.w.ms + 300);
+      img.style.opacity = "1";
+      setTimeout(() => { img.style.transition = ""; acting = false; busyUntil = performance.now() + 1500; nextNap(); }, 260);
+    }, SLEEP.w.ms + 640);
   }
   const STEPS_PER_PX = 0.05; // 이동 거리당 걸음 수 → 빨리 걸으면 걸음도 빨라진다
   let x = 0, dir = 1, facing = 1, speed = 0, target = 0, phase = 0, breath = 0;
