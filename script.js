@@ -7522,7 +7522,7 @@ function hseWeldWord(host, wordEl, onDone) {
       if (!r.ok) throw new Error("아직 자료가 없습니다 (자동 수집 대기 중)");
       data = await r.json();
     } catch (e) {
-      document.getElementById("medCards").innerHTML = `<p class="skeleton">의료시설 정보를 불러오지 못했습니다. ${escapeHtml(e.message)}</p>`;
+      document.getElementById("medCards").innerHTML = `<p class="skeleton">의료기관 정보를 불러오지 못했습니다. ${escapeHtml(e.message)}</p>`;
       return;
     }
     // 진료과 고르기 (자료에 나온 과목만)
