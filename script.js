@@ -8039,7 +8039,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       if (!url) return;
       const d = dayNow(), hit = getDay() !== d;
       const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&sid=" + sid + "&t=" + Date.now())).json();
-      if (!r || !r.ok) return;
+      if (!r || !r.ok) { showErr("서버 응답: " + ((r && r.error) || "알 수 없음")); return; }
       if (hit) setDay(d);
       elT.textContent = Number(r.today).toLocaleString("en-US");
       elA.textContent = Number(r.total).toLocaleString("en-US");
@@ -8047,8 +8047,18 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       box.title = `${typeof r.online === "number" ? `지금 접속 ${r.online} · ` : ""}오늘 ${r.today} · 어제 ${r.yesterday} · 누적 ${r.total} (${String(r.since).replace(/(\d{4})(\d\d)(\d\d)/, "$1.$2.$3")}부터, 기기마다 하루 한 번만 셉니다)`;
       if (last !== null && r.today > last) { elT.classList.remove("bump"); void elT.offsetWidth; elT.classList.add("bump"); }
       last = r.today;
+      box.style.opacity = "";
       box.hidden = false;
-    } catch (e) { /* 서버 준비 전이거나 오프라인이면 그냥 숨겨 둔다 */ }
+    } catch (e) { showErr("연결 실패: " + e.message); }
+  }
+  // 아직 서버 준비 전이면 흐리게 '–' 로 두고, 마우스를 올리면 이유가 보이게 한다
+  function showErr(msg) {
+    console.warn("[방문자 카운터]", msg);
+    if (last !== null) return;           // 한 번이라도 숫자가 떴으면 그대로 둔다
+    elT.textContent = "–"; elA.textContent = "–";
+    box.title = "방문자 카운터 준비 중 · " + msg;
+    box.style.opacity = ".55";
+    box.hidden = false;
   }
   tick();
   // 90초마다 신호 (화면이 가려져 있으면 쉬었다가 다시 보일 때 바로 한 번)
