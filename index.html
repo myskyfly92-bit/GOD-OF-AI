@@ -34,7 +34,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261011q">
+<link rel="stylesheet" href="style.css?v=20261011r">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -62,6 +62,9 @@ html.intro-pending::after {
     <div class="brand-text">
       <h1>비스마야 안전보건환경 상황실</h1>
       <p>Bismayah New City Project · HSE Situation Room</p>
+      <div class="visit-counter notranslate" id="visitCounter" translate="no" hidden title="이 화면을 연 기기 수 (기기마다 하루 한 번만 셉니다)">
+        <span class="vc-k">TODAY</span><b class="vc-today" id="vcToday">0</b><span class="vc-sep">|</span><span class="vc-k">TOTAL</span><b class="vc-total" id="vcTotal">0</b>
+      </div>
     </div>
   </div>
   <div class="topbar-status">
@@ -1085,7 +1088,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261011q"></script>
+<script src="script.js?v=20261011r"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">
