@@ -855,6 +855,12 @@ code {
   cursor: pointer;
   outline: none;
   backdrop-filter: blur(4px);
+  /* 가장 긴 항목 폭이 아니라 '패밀리사이트 ▾' 글자 폭에 맞춘다 */
+  -webkit-appearance: none;
+  appearance: none;
+  field-sizing: content;
+  max-width: 132px;
+  text-overflow: ellipsis;
 }
 
 .family-site select:hover {
