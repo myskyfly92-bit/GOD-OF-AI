@@ -1,19 +1,49 @@
 {
-  "generatedAt": "2026-10-11T00:24:50.002Z",
+  "generatedAt": "2026-10-11T10:17:04.156Z",
   "sa": {
     "label": "중대재해·산업재해",
     "items": [
+      {
+        "title": "DL이앤씨 시공 부천 발전소 공사장서 1명 사망·1명 부상…중대재해법 위반 조사",
+        "source": "딜라이트닷넷",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBfMW5LV0pnY19OWWliQVNxYmM0ZjE5YzVCcmtNckU2LWpkUDhPZjU3bEcwR0ZpVGxTOE5acVBOV2dncjRkMWtrdUgtWUsxenRXalcxVVFFcTVLMUszOU9BNVNfTlFXRWN2YzRQTzAwTnNEQdIBckFVX3lxTFBfMW5LV0pnY19OWWliQVNxYmM0ZjE5YzVCcmtNckU2LWpkUDhPZjU3bEcwR0ZpVGxTOE5acVBOV2dncjRkMWtrdUgtWUsxenRXalcxVVFFcTVLMUszOU9BNVNfTlFXRWN2YzRQTzAwTnNEQQ?oc=5",
+        "date": "2026-10-11T06:33:41.000Z"
+      },
+      {
+        "title": "음성군, 산업단지 산재 예방·안전문화 캠페인 전개",
+        "source": "충청도민일보",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE44SEpVYnMyclJFSGJJSklQSnAtVVJzS0VFaUxXdXdkbmlVYUR5YktHLXFqWERfMDZtRy1XTWcxVGRVeDctbGhvaHlHdGF2U1Bha3NzTDV3eVhURC1WRTdIbnkzQVZvWjZLTnEtRg?oc=5",
+        "date": "2026-10-11T06:09:20.000Z"
+      },
+      {
+        "title": "음성군 노사민정협의회, 하반기 ‘노사가 함께하는 산재예방 및 안전문화 확산 캠페인’ 추진",
+        "source": "금강일보",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9TTFVmd0EtWWtBaE5fRWlhVWRZLTdqdXNVRHJRVEhnT0hRaDFUUm9hbFJMVFkzT05UU0FvalB5bE9fWHlNajBTa3lqQlZHdF9JZTZxU2VmeFpuVThrMGx1QTFjeUV5R1d1V2c?oc=5",
+        "date": "2026-10-11T03:35:30.000Z"
+      },
+      {
+        "title": "제주시, 중대재해 예방 위해 276개소 안전관리 실태 점검",
+        "source": "신아일보",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jSF9xb2NYZUtLMUdBLVBtTUszaEdvVnVxdlZPSk03UWpERVk1U1IwT1c5bEtWUDN3ZWU5NkRpczc2N0huSFcwYTBicGV2YmlfdEdOSmlRT3dBNkE4dzlkWGgtWUdWaFkzc1JPUFpKV04?oc=5",
+        "date": "2026-10-11T03:24:08.000Z"
+      },
+      {
+        "title": "[단독] “사망사고 나자 민간에 떠넘기나”…한전, 정전복구 외주화 추진",
+        "source": "이데일리",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTDFVQUt3R2VwRm93RzMwTjFoMVg0ZkVYcW9CMy1leEhCMEVtQzZPa2VkenRrWTE5eWlJaHNHcTlIMHF5Zld5eU5fU0FTQTA3S1Jiel9hQ09aMUFabXE4V05EUy1RaV9yQmhGbi1QbldBSjBSb3hEMkg3ZnRseG04Vg?oc=5",
+        "date": "2026-10-11T01:30:02.000Z"
+      },
+      {
+        "title": "중대재해처벌법 양형기준안의 주요 내용 [김동현 변호사의 산업안전 톺아보기]",
+        "source": "서울경제",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5FTloyX2pnVGxxaGwwamJBNTZiMTJsZ3lvNFY3czc5VDB2V3g4VVhvMGVCeWs1ZFR2ZV81MGlFa2txcjdsUEtxdG5jVGJsWkFNV2FN0gFTQVVfeXFMTkVOWjJfamdUbHFobDBqYkE1NmIxMmxneW80VjdzNzlUMHZXeDhVWG8wZUJ5azVkVHZlXzUwaUVra3FyN2xQS3F0bmNUYmxaQU1XYU0?oc=5",
+        "date": "2026-10-11T00:00:03.000Z"
+      },
       {
         "title": "반복되는 산재예방 보조금 부정수급…상반기 66억 환수",
         "source": "뉴시스",
         "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBMZVpHdGxSN0tCVkh6MDdrUU1GVVpDMjQ5X2twaXp2TGJkQVNlSUc0R2ljRjI4T3dMeXd1YTNYY2xUVE9XRFpDTUlJOTJUb3QzU0tJbDlSV19TWkZUcFpGWjNnLWtwTzNKaHkxbTFLZWppSnc0a3R1OdIBeEFVX3lxTFBMZVpHdGxSN0tCVkh6MDdrUU1GVVpDMjQ5X2twaXp2TGJkQVNlSUc0R2ljRjI4T3dMeXd1YTNYY2xUVE9XRFpDTUlJOTJUb3QzU0tJbDlSV19TWkZUcFpGWjNnLWtwTzNKaHkxbTFLZWppSnc0a3R1OQ?oc=5",
         "date": "2026-10-10T23:00:00.000Z"
-      },
-      {
-        "title": "영유아·고령자 ‘끼임 사고’…에스컬레이터 주의",
-        "source": "KBS 뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYVnl4S1U4dEZVTVlyaVg3REw3X0w5R29PcXNNRjlPVnpLOFRzR0FOZmtLUXg1bUpFc2llNnpjbWZaZFgxRmhlTHNrU1YxYzY4Y25QdzFDNF9oQUE?oc=5",
-        "date": "2026-10-10T22:18:00.000Z"
       },
       {
         "title": "캠핑장 안전조치 미흡 손님 추락사…업주는 금고형 집유",
@@ -44,42 +74,18 @@
         "source": "비즈중앙",
         "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5NTGRTeTgxbzNiZ0tIN2xGVUt5WlRlZkc0MGFsWVhld3lEOUoxR0QxWDJSWTVEQ2ZRSjBZcEpXWmsyT3FsYktuTkdkNURvM0dsbWtHUEVPamVwSzcyY2xXZzlYbHlLV1l3akJqcGhvdVE?oc=5",
         "date": "2026-10-10T04:30:17.000Z"
-      },
-      {
-        "title": "부천 발전소 공사 현장서 크레인 무게추에 맞은 1명 사망·1명 부상",
-        "source": "이데일리",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNlN3blJ5TmRYWTdpR2JKVV9EX2lQSDRzYXZwX2xQdU5VYVNuaXdnUjkzd2dCZXZMWTZadDNyU3FPbTd2WVpPSVktQm1UVFFCYjdMNzVBVkR2djM2OXJOYlhFc2syQlFZaGtObEc5MU96NWcyNlZxaWVZOS1JcWl4Ug?oc=5",
-        "date": "2026-10-10T01:36:52.000Z"
-      },
-      {
-        "title": "부천 발전소 공사장서 크레인 무게추에 맞아…1명 사망·1명 부상",
-        "source": "뉴시스",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5uNUpzZkEyaVNCczdnSkVqVG9xT2FXRW1SRzVFTExUdVVNQ0Q1ajMtTEd3QTFDLXotWllNckpSVVhFTHdiRTA5QUh2N3R6VHM1NDBiQVo1a21TUFVnNnNhVkJMeFNwQVl6bF9UX3JkT00xTVRQSzcza9IBeEFVX3lxTE5uNUpzZkEyaVNCczdnSkVqVG9xT2FXRW1SRzVFTExUdVVNQ0Q1ajMtTEd3QTFDLXotWllNckpSVVhFTHdiRTA5QUh2N3R6VHM1NDBiQVo1a21TUFVnNnNhVkJMeFNwQVl6bF9UX3JkT00xTVRQSzczaw?oc=5",
-        "date": "2026-10-10T00:30:26.000Z"
-      },
-      {
-        "title": "[안전한 일터] 이주노동자 산재...출신국만으론 설명 어렵다",
-        "source": "비즈중앙",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBsM2FzeXp0U3E3NWdfYnYyNVJvT2dmSkUxME1SbGJkM3FnNTlwUGxCQ1F5ZmVVcng1blVFZWRQY2pVUlZ3Ym1yQ0gzYXU0aE9WTlZHLVJlcmhSbXhjZ1o3TENTOXpaeFM3YVBiZEZfNTQ?oc=5",
-        "date": "2026-10-10T00:00:00.000Z"
-      },
-      {
-        "title": "한국안심일터기술원 경기지사 개소, 산업재해예방 본격화",
-        "source": "참좋은뉴스",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBRMWFnZTBsa0M0eG9ZNjAtckFWeTRQR2d5clZ2dElQMllBVFdmQlV4R1RhcGZmMktxdXFDZFpiZjJNdFk5bHVOTWd2YzI2eG9neF9IaUVXaUhkNVJnN2UtT1Z1eHdMalpMOEJhaS1tZEEwU3M?oc=5",
-        "date": "2026-10-09T14:51:03.000Z"
-      },
-      {
-        "title": "방산업계 산재자 128명…청년 노동자 35% 차지 '안전 취약성'",
-        "source": "국제뉴스",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1KUjlfWTRhSElIRzVOamFyd1IyMnlkLWFwR0ZLTlI3dnJ3XzBzclU5dTBESTRsM25UTnNtSnpFYXpOR0FxX3JzdFpfVGdDMVc4LURodm94SGtuUHpLaDAyR3hiWTFYVzF6LTg4TUNn?oc=5",
-        "date": "2026-10-09T14:28:32.000Z"
       }
     ]
   },
   "embassy": {
     "label": "중동 대사관·안전",
     "items": [
+      {
+        "title": "[게시판] 주UAE 대사관, 한글날 기념 세미나",
+        "source": "연합뉴스 한민족센터",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBKNHJKU2pYdDFvMFFib3Q5NjVtM1Yzd3lJdTdUcGVYa3VOSl9jXzVPQWlENkF0ckJuZDU3clV4VHRqSndoNnVHbXlibTRrRXpUM18tS3MySW1XMVZRcXY4N3Z1U2hmSnd2QUFqU0M1TDl2TXFG?oc=5",
+        "date": "2026-10-11T09:39:57.000Z"
+      },
       {
         "title": "사우디 리야드 국제공항 또 공격…폭발음에 승객 대피·항공편 중단",
         "source": "더페어",
@@ -145,12 +151,6 @@
         "source": "뉴시스",
         "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KdXBUSmVkUUZNT2hSeVZtb0NGQjd5aElXMmdoZmdPVnNQWHRRTldwS0I1cjNrdEZlRHBReUVtbE5ONzFDUW9nUjJmZnMxZHlPREFadDB5M19CTDJLMHFETlBya2FRdw?oc=5",
         "date": "2026-10-08T00:28:28.000Z"
-      },
-      {
-        "title": "콜롬비아 주재 이스라엘 대사관에 모인 친팔 시위대",
-        "source": "뉴시스",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9xOW15dHA2VkE4SWVHWHdpOXBSRHFGOVdkdUZBcmR4T3dxZVczSUw1MUtZUEtjdTVsV2t2ZWZHZTNrT0RjX05YWldQQ0oyNVpwcExEc0VuVm9MTi1RQVpzd1JRSVUtdw?oc=5",
-        "date": "2026-10-07T23:17:08.000Z"
       }
     ]
   },
@@ -158,76 +158,76 @@
     "label": "감염병",
     "items": [
       {
-        "title": "코로나 필수예방접종 전환 첫 해…백신은 충분?",
-        "source": "뉴시스",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE12bzBwVHFZMXRseXdvSXdFYzA2M3MyQUZYdU9NUVhiQ3VPVTh2OWNWNWFMb0dyeVZpcngtX3p4QU1DVDVoMjlJWUd2V3BNQVlBZC1PanpCUlU3YUhWMzk1eNIBeEFVX3lxTE9OaUJxS0x4Q0puWEJEb1E4SFM1UE5VUEtQb2NxbFlTNklqRXNwa3hwajNFbHo0MlU3Sk54ckNXbnpyYk5WaWhMZ2ZLUXNkeXJUaVFyN1V2MlpMT1hWMi11Q01tMHhLR2p0WTBIcVRQUXgxaTM4MlBUYw?oc=5",
-        "date": "2026-10-11T00:01:00.000Z"
+        "title": "감염병 위기, 준비된 학교가 안전을 만든다",
+        "source": "영남신문",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBnQTFwbGx2b1cwaHQ5TDlFTXJLOGVEdE90NHpZS2xJaDBEd2VZb250RnhnVG1ORE05YUl5QjFlUGpfY3k3S2YxeEJWSnRDMjJmNkZJR0hzQlRyNTVBaGEyNTVFRGhMTnMtdEFnMVd3?oc=5",
+        "date": "2026-10-11T10:06:01.000Z"
       },
       {
-        "title": "S&P500 코로나 백신주, 올해 600% 상승",
-        "source": "BeInCrypto",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wQThuclBoTXZvTmpmVHJ1WmxpNnNaU1hUdDV3MkxFdzRuVWFSakhSZ2FLSWltSExIenpyeHlQY053VXNwZ203bzlQZktodTFfSGhwLXQ4OXZtaFFwdmRJSEYtVXdFSVds?oc=5",
-        "date": "2026-10-10T22:34:46.000Z"
+        "title": "독감·코로나19 백신 동시접종 가능…주사 부위는 분리",
+        "source": "비건뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9pQ2tpT09wZ2w1RDE3Uk1qZzZDTDhsZTJhc1RWVV9fN0FDR0tyYmR2NTVpLWdOYVhXczlXYXRZMG5yWHZzVkVEQ052X1pHQ01kdjFRWUpONkJxb1BMYUZVZHpIdEpGZw?oc=5",
+        "date": "2026-10-11T10:00:58.000Z"
       },
       {
-        "title": "‘수익성 탓’ 백신·항암제 공급 중단 …올해만 47건",
-        "source": "국민일보",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8xN0JZYkFqUVNtWXh6bUpOOWVkV1ZBb0F4Mk5GSXFLdm1BdEUyRVRZSktxNzJiZlFlZTFGSGI3OUx5Mk5nSFdGSkpQZmtqVzZqT2pLNFEwYjdnZHRyMTBXMllyV2YzcGppeFQ0T18zRHpfSGhiODhJZ2hR0gFsQVVfeXFMTVJKNjlYRDNxQUJxWHdaWDEwb0J1ZUhndEktVWhIRDJmNE9Ha0xQSnlLTEQwVmFVU3VVUkEzZ05yY3RYeTdWX1ZyNnA3TXZCZHhJZlBxUm5OOWxRQ1pOV3lZeDl3UmdTU1FIeE9n?oc=5",
-        "date": "2026-10-10T22:26:00.000Z"
+        "title": "K-구제역 방역과 함께한 10년…바이오제네시스 바고 \"동행 이어갈 것\"",
+        "source": "돼지와사람",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5pbUdfckVSSER4LVRSMFVNMWdjMkVTYU1xcHV0cTYyY3V2bV9tSENtOGNFSHNOR1BjUWk5RmZrVWhjTTlQdThKN19LY2hIeGh1dmlUanhoLXhJVDJtVzJtM0NmMEQ?oc=5",
+        "date": "2026-10-11T09:01:09.000Z"
       },
       {
-        "title": "[게임백신] AI가 뼈대를 세워도 '재미'는 인간의 영역이다",
-        "source": "글로벌E",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4tWGZNdVU5U3FCM3BpRENCRkpUZUx1eTMyWi16MmNvU3I3UzAtSUNwX0FldE81TGJlYlJhUWxYcnlKX2FsX3Y1Q0NaTHY2Uk1ZZzZScXlZamViYVJzbndEaE1IbDZKN2NFNVYw0gFvQVVfeXFMUDJrNHFzVk9hVDM5bDRBTTEtWmZoaHhJNmI0ZkpOMHB0MjRZMzhQREJranJXd3pxSTdBX1ljTjBNYWo0SDg1TV9helBVZkJTU2ZSbkNRSUxVcVQ4UmNtQXZrY0RPaS00UlJKZk04M1pz?oc=5",
-        "date": "2026-10-10T21:28:37.000Z"
+        "title": "[너흰 병원가니? 난 보건소 간다⑦]달서구보건소, 감염병부터 재난·재활까지…주민 곁으로 들어간 건강관리",
+        "source": "영남일보",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBINUkzN0ZJbmJtR3l1VU9ib1RwVWFmSmlPcmZvdE90ZmxHRHQyZmxuUXQ5NkVPMG5hMy1jVFFGMmFCcnliSEc3QjZSQ3Q2LUxINTZNbXNxX21sTzlZdWQ2R3FhbHJia3QydEZB?oc=5",
+        "date": "2026-10-11T08:56:46.000Z"
       },
       {
-        "title": "\"돈 안돼\" 백신·항암제 공급중단…올해만 47건",
-        "source": "뉴시스",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5FeXp5TVB1R2F5SGUzSTJydWZGcDY2Z3VLLVR3dTRoOS04a1ZoVV9COUFUNXBYaFk2SzlrU3pUVktFV1dFSmJYTDI5bVd0eTEzYnhFV1VKY0FZRWRYM3RJZWxPVjhKbjh5TTdzekJBdDlieGhrbk96NNIBeEFVX3lxTE5FeXp5TVB1R2F5SGUzSTJydWZGcDY2Z3VLLVR3dTRoOS04a1ZoVV9COUFUNXBYaFk2SzlrU3pUVktFV1dFSmJYTDI5bVd0eTEzYnhFV1VKY0FZRWRYM3RJZWxPVjhKbjh5TTdzekJBdDlieGhrbk96NA?oc=5",
-        "date": "2026-10-10T20:01:00.000Z"
+        "title": "전남광주특별시, 하반기 구제역 백신 항체검사 실시",
+        "source": "누리일보",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Ebkg0OUpEY2o3dDBiUjFGSVNuaTBTYkdKRkZ1NjRodEpSNGI0aGU4eWc0VEFzT2NwU2VqZ3h5V1BWU2dHeWNzOEltcXNYMC03S1pmYXptUmw1V0ky?oc=5",
+        "date": "2026-10-11T08:30:40.000Z"
       },
       {
-        "title": "[오늘 바로] 코로나19 예방접종 피해보상 특례 이의신청 23일 마감",
-        "source": "여성신문",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9YcWRHLWtiTElQUjBuN2JpdXdmNlVyUmFsUVExSzM5bF9jb0Vxb0YxQ0R3NW40a2R4UlY3enNUem44SzNLV3J2Q2dyRExYTU5ySnRYbUZRS3dGc1JlVkZIbWNqc1BuTm8xZ0c3emxqcHU1SmPSAXNBVV95cUxPWHFkRy1rYkxJUFIwbjdiaXV3ZjZVclJhbFFRMUszOWxfY29FcW9GMUNEdzVuNGtkeFJWN3pzVHpuOEszS1dydkNnckRMWE1Ockp0WG1GUUt3RnNSZVZGSG1janNQbk5vMWdHN3psanB1NUpj?oc=5",
-        "date": "2026-10-10T17:48:00.000Z"
+        "title": "노인들은 질병 예방을 위해 독감 백신을 적극적으로 접종합니다",
+        "source": "Laodong.vn",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRDk5Vkg2SzJmZ0NMbmROYjgzd2lNQVBpZUNBM0cwazdueWtrWnA2a2t0N2tRSWdvX1RYZTRXSWRKSno3VjRZUWUwOUdPYUtDYzB1Y0N3V2t1Skd6SjVwRGs0YkRhcFZkTGtyRjBKRFJFUm5hSnJQMmhFY0prUmJNZ0VQaXZjeTRwMEItZ092a2FJY3BJMUxsVUxYTWpndw?oc=5",
+        "date": "2026-10-11T07:50:44.000Z"
       },
       {
-        "title": "\"우산 챙기세요\" 내륙 곳곳 비 '최대 20㎜'…빨라진 독감 유행, 백신 접종해야 하는 시기는 [오늘 날씨]",
-        "source": "데일리안",
-        "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNTWw4bXh1dE1NOTFFTGxXcVV0X280T0xvWFV3b3FweFY0VENET3RobGJVQXE5VG82VVlvRFQ5TEg0Y1Y1bkFVUldzZEZOMTN0N1JRdFUyNGQzQkJsSlV4V0FzeXh1aVBOSkFMcWJpdFJpejJhcHlReG9zQWNBbkFXd2hfQ2pjenJqR1FuYW5YckRZenRsZVpVQUtBZ0tBX1NIb1NCdnFJQmJzeVBaNzFXck5pTmtSajM5M25IYTRWM1VKVUxoWVBEbjNta3NOWDFfZVNhSEZDcEpycHIyWDB1MVRhaTB0WFJTX01XR0pLMW12amVNTUtFSzdDRlZFUEhDd1p3?oc=5",
-        "date": "2026-10-10T15:12:00.000Z"
+        "title": "질병청, 코로나 백신 피해보상 소송에 수임료 17억…1,015명분 보상비",
+        "source": "medicalworldnews.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1xRkkxU3I5UWotUUZqWjhLXzQzM3dJTmN0eWxKemE5djZQQzFaVGlxVThCRWxHLXJLUElDXzR1S2JwZUt0cVE5cnhVQzlhcEkzb0N0UlZUYW82YXpHRl81NU5WTHlGVzVZUzd6VHlmMTQ?oc=5",
+        "date": "2026-10-11T06:22:10.000Z"
       },
       {
-        "title": "통영시, '의료관련 감염병 예방교육' 실시",
-        "source": "한국뉴스통신",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBIYTZDUEhXejY0ekI3OUJJcUszOEJCT0ctdkJBdDFLcFFkM1JKVkg3YXlOVklwUVppam15a3hiOWdqX2ZnNHpJdUdXdzlqQW5vcnJxSEFYa1Myb0IzX3E5ZXFuWDlXYUU?oc=5",
-        "date": "2026-10-10T14:45:32.000Z"
+        "title": "코로나19 무료 예방접종 12일 시작…65세 이상·면역저하자 대상, 접종 방법은?",
+        "source": "용인신문",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBZYm4wcnpVWVhPU0ppS2ZNaU1nRE5sOVVkaDJoc3hPMGZZWW9fb1puVjAzN05xUmJ0dndVU2Q4dTZkTEZxckY3VFk4YXM1ckRwTUpiOVN2dlRUcjIwcGZVdjR6MzM?oc=5",
+        "date": "2026-10-11T06:04:43.000Z"
       },
       {
-        "title": "필리핀에 아프리카돼지열병 백신 30만 도스 공급 주문을 완료했습니다.",
-        "source": "Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQUxGR3hvdVlqbzBEcE1sTHhtUnZIa1JrZjIxbmVnclRuYm81X2lMWFZUMHBjZTVuLV90c2MtRmh4cXpFSDVybks4b2RJR3paLWprUF9zU1RUcllaTVJ5M3QxdDZIM3RFMTdBSDNGeVFxNndVeFNZUnJrOHBUazl3cXk0M3REWkpSVnRySldBNlV4eWJ4NDU4VUNiOWNOeUJqV1oxZQ?oc=5",
-        "date": "2026-10-10T14:30:00.000Z"
+        "title": "내일부터 코로나19 백신 접종…독감 주사 같이 맞아도 될까",
+        "source": "아주경제",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzQmVzLVpGTThZM0ZkWWVxcEMtdUpJQV92dThJNUMzQWVfX1AyclRkaTdKTmZSc2V1QWgyREhzRlo3bjFNU29xQjltaFd4WTc1Zjhla0VyNEHSAVhBVV95cUxQc0Jlcy1aRk04WTNGZFllcXBDLXVKSUFfdnU4STVDM0FlX19QMnJUZGk3Sk5mUnNldUFoMkRIc0ZaN24xTVNvcUI5bWhXeFk3NWY4ZWtFcjRB?oc=5",
+        "date": "2026-10-11T05:04:05.000Z"
       },
       {
-        "title": "“70세 이상은 독감백신 맞아도 독감 걸린다”… 질병청 연구용역에서 확인",
-        "source": "뉴스데일리",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9vQ2tQQTVEZk5TUERYaHF2NzIyTDZ3aXRzT0NhOV95aGRROEN4VmUySG13SEEyQkxoajBJcTlUREUzUEduZWl1dGhmdW5sTndkR2NUVzNzVkNwTFRkWi1wV2tkcjVVRkhLdjZJ?oc=5",
-        "date": "2026-10-10T13:48:32.000Z"
+        "title": "허종식 \"메르스 11년, 감염병전문병원 5곳 중 4곳 아직 '설계 중'… 첫 개원 앞둔 호남권 장비비 87.5% 미확보",
+        "source": "대한투데이",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBlTkRfQllHTjV1bXgyTUNzSFViSE1kOGVna1l6Vi1qbnN2YldlTlQ2OU9YQW1oRlNOMFM4ekkydU51dFd2b29xVEt3WmVrT2NkN2owUkVLSnUwV05ZX09PcmJ6M1NkWENsclE?oc=5",
+        "date": "2026-10-11T04:46:53.000Z"
       },
       {
-        "title": "[알지노바 알츠하이머 백신, CTAD 무대 진입…\"2상 ADVANCE 설계 공개\"] 주요 평가 변수는 ALZ-101이 단순히 안전성 여부뿐만 아니라 초기 알츠하이머 환자에게 실제로 치료 효과를 내는지를",
-        "source": "AI넷",
-        "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE8zZXVXbTJFRGladFJLd2ZLdmdGSHoxZ1BnMnU5em9aaDU4WWMwU1FmaTRZeExDTkJ6ejZRWEJsSXQ?oc=5",
-        "date": "2026-10-10T13:01:38.000Z"
+        "title": "증상 한 달이나 있었는데 공항 무사통과...'이 질병' 확진자 이틀 만에 사망",
+        "source": "위키트리",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNQVFnWU92b0VwQndvQU1helhRTEJvRUZKQUtkRDUwdVkycUNCdjhRcmEyNks3VWRHZGhxNVdVMlkyN3dFalZadHFHaWwwM1c2bVc5VUxB?oc=5",
+        "date": "2026-10-11T04:28:00.000Z"
       },
       {
-        "title": "[AI 남동이]65세 이상 독감 백신, '고용량'이 입원율 9% 낮췄다",
-        "source": "남동뉴스",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5zdEFzSHpFZFJQTi1sS0I5Zjh4V2E2b3Mxalcxb293YS1QeUZwTlJuV1R3cmhhSXZESlFWMFVBd0l1TzBOQWpBSkUyMHMwOGhhY0xjNHB3bGpMY3NRODUwRnFBc2t1UmdWdWpjRVZsUnJUUUXSAXNBVV95cUxOc3RBc0h6RWRSUE4tbEtCOWY4eFdhNm9zMWpXMW9vd2EtUHlGcE5SbldUd3JoYUl2REpRVjBVQXdJdU8wTkFqQUpFMjBzMDhoYWNMYzRwd2xqTGNzUTg1MEZxQXNrdVJnVnVqY0VWbFJyVFFF?oc=5",
-        "date": "2026-10-10T13:01:28.000Z"
+        "title": "국민건강보험공단, 환절기 ‘호흡기 감염병 예방수칙’ 집중 홍보",
+        "source": "투위복지뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB3emdoQXJqUm9MLUkzS01UM2h1SUVDUk4zNEI4RUlIdDZZdS1CMTkzMzNfVUpEVW1RYnV1ektWckI3TlpRUjhERjN1LXliLUhQLUE?oc=5",
+        "date": "2026-10-11T03:41:06.000Z"
       }
     ]
   }
