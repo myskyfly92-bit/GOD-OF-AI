@@ -6619,7 +6619,7 @@ async function clinicCall(action, payload) {
       { go: "view-dashboard", sel: null, text: `이 장에서는 화면 맨 위와 어디서나 쓰는 도구들을 알려 드릴게요.<br>안내 중에는 <b>다음 · 이전</b> 버튼이나 키보드 <b>← →</b> 로 넘기고, <b>Esc</b> 나 오른쪽 위 <b>✕</b> 로 언제든 끝낼 수 있어요.` },
       { sel: ".topbar", text: `맨 위 <b>배너</b>예요. 가끔 제가 이 위를 달려가요. 오른쪽 시계 앞에 도착하면 <b>경례</b>를 하고, 안전 한마디를 해요. 가끔은 안전모를 베개 삼아 <b>잠깐 낮잠</b>도 자요 💤<br>달리는 저를 <b>눌러 보면</b> 말을 걸고, 자고 있을 때 누르면 깨어나요!` },
       { sel: ".clock-block", text: `<b>시계</b>예요. 큰 글씨가 <b>바그다드 현지 시각</b>, 아래 작은 글씨가 <b>한국 시각</b>(6시간 빠름)이에요. 본사와 통화할 때 참고하세요.` },
-      { sel: "#netPill", text: `시계 오른쪽 국기 아래는 <b>인터넷 속도</b>예요. 이 PC에서 잰 <b>다운로드 속도(Mbps)</b>와 <b>응답 시간(ms)</b>을 보여 줘요.<br>🟢 좋음(5Mbps 이상) · 🟡 보통(1~5) · 🔴 느림(1 미만)이고, 끊기면 <b>'인터넷 끊김'</b>이 떠요. 15분마다 자동으로 재고, <b>누르면 바로</b> 다시 재요. fast.com 같은 측정 사이트와 비슷한 방식이지만 상황판 서버(해외)에서 받는 속도라 조금 낮게 나올 수 있어요.<br>화면이 비어 보이거나 지도가 안 뜰 때 여기가 빨간색이면 인터넷 탓이니 잠시 뒤 새로고침하세요.` },
+      { sel: "#netPill", text: `시계 오른쪽 국기 아래는 <b>인터넷 속도</b>예요. 이 PC에서 잰 <b>다운로드 속도(Mbps)</b>와 <b>응답 시간(ms)</b>을 보여 줘요.<br>🟢 좋음(5Mbps 이상) · 🟡 보통(1~5) · 🔴 느림(1 미만)이고, 끊기면 <b>'인터넷 끊김'</b>이 떠요. 30분마다 자동으로 재고, <b>누르면 바로</b> 더 정확하게 다시 재요. fast.com 처럼 가까운 측정 서버(Cloudflare)에서 받아서 재요.<br>화면이 비어 보이거나 지도가 안 뜰 때 여기가 빨간색이면 인터넷 탓이니 잠시 뒤 새로고침하세요.` },
       { sel: ".group-bar", text: `여기가 <b>대분류 메뉴</b>예요: 종합현황 · 안전 · 보건 · 환경 · 소방 · 기타.<br>하나를 누르면 바로 아래에 <b>소분류 탭</b> 줄이 나타나고, 마지막으로 보던 소분류를 기억해요.` },
       { sel: "#langSwitcher", text: `<b>언어 선택</b>이에요. <b>ENG</b> 나 <b>العربية</b> 를 누르면 화면 글자가 자동 번역돼요. 영어·아랍어를 쓰는 동료에게 보여 줄 때 좋아요.<br>자동 번역이라 어색한 말이 있을 수 있으니 중요한 내용은 한국어로 한 번 더 확인하세요.` },
       { sel: "#familySiteSelect", text: `<b>패밀리사이트</b> 바로가기예요. 목록에서 <b>BNCP AI Assistant</b>, <b>BNCP Clinic EMR</b>(현장 클리닉 진료기록, 등록된 담당자만 사용) 같은 관련 사이트를 고르면 새 창으로 열려요.` },
@@ -7882,15 +7882,18 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
 
 // ---- 인터넷 속도 (이 PC 기준) ----
 // 응답 속도: 30초마다 아주 작은 요청 1번
-// 다운로드 속도: 15분마다 그림 3장(약 830KB)을 '동시에' 받아, 첫 바이트가 온 뒤부터 다 받을 때까지의 속도로 계산
-//   (작은 파일 1장을 처음부터 재면 응답 대기 시간이 섞여 실제 회선보다 훨씬 낮게 나와서 – fast.com 과 비슷한 방식)
+// 다운로드 속도: Cloudflare 속도측정 서버(가까운 지역 서버, speed.cloudflare.com 과 같은 곳)에서 2갈래로 동시에 받아
+//   첫 바이트가 온 뒤부터 다 받을 때까지의 속도로 계산 (fast.com 과 같은 원리). 30분마다 2MB, 누르면 8MB 로 더 정확히.
+//   Cloudflare 에 못 닿으면 상황판 서버(GitHub, 해외)의 그림 3장으로 대신 잰다 → 이때는 실제보다 낮게 나올 수 있다.
 // 버튼을 누르면 바로 다시 잰다. 화면이 숨어 있을 때(다른 창/탭)는 재지 않는다.
 (function netMeter() {
   const pill = document.getElementById("netPill");
   if (!pill) return;
   const main = document.getElementById("netMain"), sub = document.getElementById("netSub");
   const TEST_FILES = ["assets/sat-2016.webp", "assets/sat-2017.webp", "assets/sat-2019.webp"];
-  const TEST_EVERY = 15 * 60 * 1000;
+  const TEST_EVERY = 30 * 60 * 1000;
+  const CF = "https://speed.cloudflare.com/__down?bytes=";
+  let src = "";
   const pings = [];
   let mbps = null, lastTest = 0, testing = false, failCount = 0;
   const median = (a) => { const b = a.slice().sort((x, y) => x - y); return b.length ? b[Math.floor(b.length / 2)] : null; };
@@ -7907,7 +7910,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     main.textContent = mbps != null ? (mbps >= 10 ? Math.round(mbps) : mbps.toFixed(1)) + " Mbps" : "측정 중…";
     sub.textContent = (rtt != null ? "응답 " + Math.round(rtt) + "ms" : "") + (level === "bad" ? " · 느림" : level === "ok" ? " · 보통" : " · 좋음");
     pill.title = "이 PC의 인터넷 속도 – 다운로드 " + (mbps != null ? mbps.toFixed(1) + " Mbps" : "측정 전") + (rtt != null ? ", 응답 " + Math.round(rtt) + "ms" : "") +
-      (lastTest ? " (" + new Date(lastTest).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" }) + " 측정)" : "") + "\n15분마다 자동 측정(그림 3장 동시 다운로드) · 누르면 지금 측정";
+      (lastTest ? " (" + new Date(lastTest).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" }) + " 측정)" : "") + (src ? " · " + src + " 기준" : "") + "\n30분마다 자동 측정 · 누르면 지금 더 정확히 측정";
   }
   async function ping() {
     if (document.hidden) return;
@@ -7920,13 +7923,13 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     } catch (e) { failCount++; }
     draw();
   }
-  async function speedTest() {
-    if (testing || document.hidden || !navigator.onLine) return;
-    testing = true; pill.classList.add("testing");
-    try {
+  // 여러 주소를 동시에 받아 '첫 바이트 이후' 속도(Mbps)를 돌려준다
+  async function measure(urls) {
       let first = null, bytes = 0;
-      await Promise.all(TEST_FILES.map(async (f) => {
-        const r = await fetch(f + "?speed=" + Date.now(), { cache: "no-store" });
+      const ac = new AbortController(), stop = setTimeout(() => ac.abort(), 25000);   // 25초 넘게 걸리면 그만
+      try {
+      await Promise.all(urls.map(async (f) => {
+        const r = await fetch(f + (f.includes("?") ? "&" : "?") + "r=" + Date.now() + Math.random().toString(36).slice(2, 6), { cache: "no-store", signal: ac.signal });
         if (!r.ok) throw new Error("bad");
         if (!r.body || !r.body.getReader) { const b = await r.arrayBuffer(); if (first === null) first = performance.now(); else bytes += b.byteLength; return; }
         const rd = r.body.getReader();
@@ -7937,13 +7940,24 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
           else bytes += value.byteLength;
         }
       }));
+      } finally { clearTimeout(stop); }
       const sec = (performance.now() - first) / 1000;
-      if (bytes > 100000 && sec > 0) { mbps = (bytes * 8) / sec / 1e6; lastTest = Date.now(); failCount = 0; }
+      if (!(bytes > 100000 && sec > 0)) throw new Error("too small");
+      return (bytes * 8) / sec / 1e6;
+  }
+  async function speedTest(big) {
+    if (testing || document.hidden || !navigator.onLine) return;
+    testing = true; pill.classList.add("testing");
+    const n = big ? 4000000 : 1000000;
+    try {
+      try { mbps = await measure([CF + n, CF + n]); src = "Cloudflare"; }
+      catch (e) { mbps = await measure(TEST_FILES); src = "상황판 서버"; }
+      lastTest = Date.now(); failCount = 0;
     } catch (e) { failCount++; }
     testing = false; pill.classList.remove("testing");
     draw();
   }
-  pill.addEventListener("click", () => { ping(); speedTest(); });
+  pill.addEventListener("click", () => { ping(); speedTest(true); });
   window.addEventListener("online", () => { failCount = 0; ping(); speedTest(); });
   window.addEventListener("offline", draw);
   document.addEventListener("visibilitychange", () => { if (!document.hidden && Date.now() - lastTest > TEST_EVERY) speedTest(); });
