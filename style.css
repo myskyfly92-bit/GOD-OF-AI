@@ -3482,6 +3482,21 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .inews-rel a { display: block; color: var(--text); text-decoration: none; padding: 3px 0; opacity: .85; } .inews-rel a:hover { opacity: 1; text-decoration: underline; }
 .inews-rel small { color: var(--text-dim); margin-left: 6px; }
 @media (max-width: 760px) { .inews-line { grid-template-columns: 1fr; gap: 4px; } .inews-line .bnews-tag { justify-self: start; } .inews-row .bnews-body { margin-left: 0; } .inews-meta { white-space: normal; } }
+/* 이라크 공휴일·통제 알림 띠 */
+.iq-alert { max-width: 1600px; margin: 10px auto 0; padding: 0 24px; display: flex; flex-direction: column; gap: 6px; }
+.iq-alert[hidden] { display: none; }
+.iq-al { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-radius: 10px; border: 1px solid rgba(242,169,59,.5); background: linear-gradient(90deg, rgba(242,169,59,.22), rgba(242,169,59,.06)); animation: iqIn .4s ease-out; }
+.iq-al.k-control { border-color: rgba(255,90,90,.55); background: linear-gradient(90deg, rgba(255,90,90,.22), rgba(255,90,90,.06)); }
+@keyframes iqIn { from { opacity: 0; transform: translateY(-6px); } }
+.iq-ic { font-size: 18px; }
+.iq-k { font-size: 11.5px; font-weight: 800; padding: 2px 8px; border-radius: 999px; background: rgba(242,169,59,.25); color: #ffc670; white-space: nowrap; }
+.k-control .iq-k { background: rgba(255,90,90,.25); color: #ff9a9a; }
+.iq-t { flex: 1; min-width: 0; font-weight: 700; font-size: 14.5px; color: var(--text); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.iq-t:hover { text-decoration: underline; }
+.iq-m { font-size: 11.5px; color: var(--text-dim); white-space: nowrap; }
+.iq-more, .iq-x { font: inherit; font-size: 12px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); color: var(--text); border-radius: 8px; padding: 4px 10px; cursor: pointer; white-space: nowrap; }
+.iq-x { padding: 4px 8px; }
+@media (max-width: 760px) { .iq-alert { padding: 0 12px; } .iq-al { flex-wrap: wrap; } .iq-t { white-space: normal; flex-basis: 100%; order: 3; } .iq-m { order: 4; } }
 .bnews-filter { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 12px; }
 .bnews-filter button { font-family: var(--font-body); font-size: 12.5px; color: var(--text-muted); background: rgba(10,14,19,.5); border: 1px solid var(--border-soft); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
 .bnews-filter button.active { color: var(--cyan); border-color: var(--cyan); }

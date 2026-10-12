@@ -7691,6 +7691,38 @@ function makeNewsView(o) {
   if (document.querySelector(`#${o.view}.active`)) load();
 }
 makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, ko: "bnewsKo", iq: "bnewsIq", koN: "bnewsKoN", iqN: "bnewsIqN", count: "bnewsCount", meta: "bnewsMeta" });
+/* 이라크 갑작스러운 공휴일 선포 · 통행금지·도로 통제 알림 (iraq-issues.json 의 alerts, 1시간마다 수집)
+   화면 맨 위 띠로 보여 주고, ✕ 로 닫으면 그 기사는 이 브라우저에서 다시 안 띄운다 */
+(function iraqAlert() {
+  const box = document.getElementById("iqAlert"); if (!box) return;
+  const KEY = "iqAlertHide";
+  const hidden = () => { try { return JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { return []; } };
+  const ago = (iso) => { const m = Math.round((Date.now() - Date.parse(iso)) / 60000); return m < 60 ? `${Math.max(1, m)}분 전` : m < 1440 ? `${Math.round(m / 60)}시간 전` : `${Math.round(m / 1440)}일 전`; };
+  fetch("iraq-issues.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : null).then((j) => {
+    const hid = hidden();
+    const L = ((j && j.alerts) || []).filter((a) => !hid.includes(a.link) && Date.now() - Date.parse(a.date) < 36 * 3600000);
+    if (!L.length) return;
+    box.innerHTML = L.map((a, i) => `<div class="iq-al k-${a.kind}" data-i="${i}">
+      <span class="iq-ic">${a.kind === "holiday" ? "🗓️" : "⛔"}</span>
+      <span class="iq-k">${a.kind === "holiday" ? "이라크 공휴일·휴무 발표" : "통행금지·도로 통제"}</span>
+      <a class="iq-t" href="${escapeHtml(a.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(a.titleKo || a.title)}</a>
+      <span class="iq-m">${escapeHtml(a.source || "")}${a.count > 1 ? ` 외 ${a.count - 1}곳` : ""} · ${ago(a.date)}</span>
+      <button type="button" class="iq-more">이라크 이슈 ›</button>
+      <button type="button" class="iq-x" title="이 알림 닫기" aria-label="닫기">✕</button></div>`).join("");
+    box.hidden = false;
+    box.addEventListener("click", (e) => {
+      const row = e.target.closest(".iq-al"); if (!row) return;
+      if (e.target.closest(".iq-x")) {
+        const a = L[+row.dataset.i]; try { localStorage.setItem(KEY, JSON.stringify(hidden().concat(a.link).slice(-40))); } catch (er) { /* 저장 안 돼도 닫기만 */ }
+        row.remove(); if (!box.children.length) box.hidden = true;
+      } else if (e.target.closest(".iq-more")) {
+        const g = document.querySelector('.group-btn[data-group="etc"]'); if (g) g.click();
+        const t = document.querySelector('.tab-btn[data-view="view-iraq-issues"]'); if (t) t.click();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    });
+  }).catch(() => {});
+})();
 makeNewsView({ view: "view-iraq-issues", json: "iraq-issues.json", days: 7, compact: true, iq: "inewsIq", iqN: "inewsIqN", count: "inewsCount", meta: "inewsMeta", tags: "inewsTags" });
 makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30, ko: "hnewsKo", iq: "hnewsIq", koN: "hnewsKoN", iqN: "hnewsIqN", count: "hnewsCount", meta: "hnewsMeta" });
 

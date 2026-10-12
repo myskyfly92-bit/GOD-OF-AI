@@ -2,7 +2,7 @@ name: Update Iraq issues (이라크 주요 이슈)
 
 on:
   schedule:
-    - cron: "23 */3 * * *"
+    - cron: "23 * * * *"
   workflow_dispatch: {}
 
 permissions:

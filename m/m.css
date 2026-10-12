@@ -182,3 +182,5 @@ main { padding: 14px 14px calc(88px + var(--safe-b)); }
 #sosMsg { font-size: 13px; resize: vertical; }
 .btn.kakao { background: #fee500; border-color: #fee500; color: #191600; }
 .tag.vio { background: rgba(167,139,250,.16); color: #b9a4ff; }
+.alert.hol { background: linear-gradient(90deg, rgba(242,169,59,.2), rgba(242,169,59,.06)); border-color: rgba(242,169,59,.5); }
+#iqAlert .alert { margin-bottom: 8px; }

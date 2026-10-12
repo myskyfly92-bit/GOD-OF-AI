@@ -55,7 +55,21 @@ const CFGS = {
       { lang: "ar", q: "بغداد (تظاهرات OR احتجاجات OR انفجار OR \"حظر التجوال\" OR \"قطع طرق\") when:3d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
       { lang: "ar", q: "العراق (\"عطلة رسمية\" OR تعطيل الدوام) when:7d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
       { lang: "ar", q: "العراق (الكهرباء OR \"العاصفة الترابية\" OR \"سعر الدولار\") when:3d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+      // 갑작스러운 공휴일·통제 알림용 (짧은 기간으로 자주)
+      { lang: "ar", q: "(\"تعطيل الدوام الرسمي\" OR \"عطلة رسمية\" OR \"عطلة الدوام\") when:2d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+      { lang: "ar", q: "بغداد (\"حظر التجوال\" OR \"قطع الطرق\" OR \"غلق الطرق\" OR \"قطع طريق\" OR \"إغلاق جسر\") when:2d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+      { lang: "en", q: "Iraq (\"public holiday\" OR \"official holiday\" OR curfew OR \"roads closed\") when:2d", hl: "en-US", gl: "US", ceid: "US:en" },
     ],
+    // 현장 알림: 공휴일 선포 / 통행금지·도로 통제 (바그다드 또는 전국 대상만, 기사 나온 지 36시간 안)
+    ALERTS: {
+      HOURS: 36,
+      holiday: /공휴일|휴무|관공서.{0,6}쉰|public holiday|official holiday|day off|suspend(s|ed)? (official )?work|تعطيل الدوام|تعطل الدوام|عطلة رسمية|عطلة الدوام|تعطيل رسمي/i,
+      control: /통행금지|통금|도로\s?(봉쇄|통제|차단|폐쇄)|교량\s?(폐쇄|통제)|curfew|roads? (closed|closure|blocked)|bridge closed|حظر (ال)?تجوال|قطع (ال)?طر(ق|يق)|غلق (ال)?طر(ق|يق)|إغلاق (ال)?(طرق|جسر|شوارع)|قطع جسر/i,
+      // 바그다드나 전국이 아니라 다른 주(州)만 해당하면 뺀다
+      HERE: /바그다드|전국|이라크|iraq|이라크 정부|총리|내각|baghdad|nationwide|all provinces|government|cabinet|prime minister|بغداد|جميع المحافظات|عموم العراق|العراق|الحكومة|مجلس الوزراء|رئيس الوزراء|الأمانة العامة/i,
+      OTHER: /바스라|나자프|카르발라|모술|키르쿠크|아르빌|에르빌|술라이마니|두호크|안바르|basra|najaf|karbala|mosul|nineveh|kirkuk|erbil|sulaymaniyah|duhok|anbar|dhi qar|maysan|babil|diwaniyah|muthanna|wasit|البصرة|النجف|كربلاء|نينوى|الموصل|كركوك|أربيل|السليمانية|دهوك|الأنبار|ذي قار|ميسان|بابل|الديوانية|المثنى|واسط|صلاح الدين|ديالى/i,
+      // 지난 일·해제·연장 안 함 같은 기사는 빼지 않는다 (해제도 알 필요가 있음) — 다만 스포츠·종교행사 단순 보도는 NOT에서 걸러짐
+    },
     MUST: /이라크|바그다드|쿠르드|아르빌|에르빌|바스라|모술|키르쿠크|iraq|baghdad|kurdistan|erbil|basra|mosul|kirkuk|diyala|najaf|karbala|العراق|العراقي|بغداد|أربيل|البصرة|كردستان|الموصل|كركوك|ديالى|النجف|كربلاء|نينوى/i,
     TITLE_ONLY: true,
     // 스포츠·연예·주식 기사는 뺀다
@@ -366,7 +380,27 @@ async function main() {
   // 바로 가는 원문 주소가 있으면 그걸 링크로 쓴다
   list.forEach((n) => { if (n.url && !/news\.google\.com/.test(n.url)) n.link = n.url; });
 
+  // 현장 알림 뽑기 (CFG.ALERTS)
+  let alerts;
+  if (CFG.ALERTS) {
+    const A = CFG.ALERTS, lim = Date.now() - A.HOURS * 3600000;
+    alerts = [];
+    for (const n of list) {
+      if (Date.parse(n.date) < lim) continue;
+      const t = [n.title, n.titleKo].concat((n.related || []).map((r) => r.titleKo)).join(" ");
+      const kind = A.holiday.test(t) ? "holiday" : A.control.test(t) ? "control" : "";
+      if (!kind) continue;
+      const here = A.HERE.test(n.title + " " + n.titleKo);
+      const otherOnly = A.OTHER.test(n.title + " " + n.titleKo) && !/بغداد|baghdad|바그다드|جميع المحافظات|عموم العراق|nationwide|전국/i.test(n.title + " " + n.titleKo);
+      if (!here || otherOnly) continue;
+      alerts.push({ kind, titleKo: n.titleKo, title: n.title, link: n.link, source: n.source, date: n.date, count: n.count || 1 });
+      if (kind === "holiday") n.tag = "휴일·행사"; else n.tag = "시위·통제";
+    }
+    alerts = alerts.slice(0, 4);
+    console.log(`현장 알림 ${alerts.length}건`, alerts.map((a) => a.kind + ":" + a.titleKo).join(" / "));
+  }
   const out = { generatedAt: new Date().toISOString(), items: list };
+  if (alerts) out.alerts = alerts;
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n", "utf-8");
   const by = (l) => list.filter((n) => n.lang === l).length;
   console.log(`저장 완료: 총 ${list.length}건 (한국어 ${by("ko")} · 아랍어 ${by("ar")} · 영어 ${by("en")}) · 새로 번역 ${translated}건 · 본문 있음 ${list.filter((n) => n.body).length}건`);

@@ -135,6 +135,15 @@
         ${list.length ? `<ul class="list" style="margin-top:10px">${list.slice(0, 6).map(workLi).join("")}</ul>` + (list.length > 6 ? `<p class="src">외 ${list.length - 6}건 · 안전 탭에서 이번 주 전체 보기</p>` : "") : `<p class="empty" style="margin-top:8px">오늘 등록된 작업이 없습니다.</p>`}`);
     });
 
+    // 이라크 공휴일 선포 · 통행금지·도로 통제 (홈 맨 위)
+    getJ("iraq-issues.json").then((d) => {
+      const L = (d.alerts || []).filter((a) => Date.now() - Date.parse(a.date) < 36 * 3600000);
+      if (!L.length) return;
+      $("#iqAlert").innerHTML = L.map((a) => `<a class="alert ${a.kind === "holiday" ? "hol" : ""}" href="${esc(a.link)}" target="_blank" rel="noopener"><span class="ic">${a.kind === "holiday" ? "🗓️" : "⛔"}</span><span>
+        <div class="m" style="font-weight:700">${a.kind === "holiday" ? "이라크 공휴일·휴무 발표" : "통행금지·도로 통제"}</div><div class="t">${esc(a.titleKo || a.title)}</div>
+        <div class="m">${esc(a.source || "")}${a.count > 1 ? " 외 " + (a.count - 1) + "곳" : ""} · ${ago(a.date)}</div></span></a>`).join("");
+    }).catch(() => {});
+
     // 중대재해 보도 (홈 위쪽 띠)
     getJ("sa-news.json").then((d) => {
       const it = (d.items || []).filter((x) => Date.now() - Date.parse(x.date) < 72 * 3600000);
