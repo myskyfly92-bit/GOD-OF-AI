@@ -56,19 +56,20 @@ const CFGS = {
       { lang: "ar", q: "العراق (\"عطلة رسمية\" OR تعطيل الدوام) when:7d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
       { lang: "ar", q: "العراق (الكهرباء OR \"العاصفة الترابية\" OR \"سعر الدولار\") when:3d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
     ],
-    MUST: /이라크|바그다드|쿠르드|iraq|baghdad|kurdistan|erbil|basra|العراق|العراقي|بغداد|أربيل|البصرة|كردستان/i,
+    MUST: /이라크|바그다드|쿠르드|아르빌|에르빌|바스라|모술|키르쿠크|iraq|baghdad|kurdistan|erbil|basra|mosul|kirkuk|diyala|najaf|karbala|العراق|العراقي|بغداد|أربيل|البصرة|كردستان|الموصل|كركوك|ديالى|النجف|كربلاء|نينوى/i,
+    TITLE_ONLY: true,
     // 스포츠·연예·주식 기사는 뺀다
-    NOT: /축구|월드컵|예선|골\s|K리그|야구|배구|농구|올림픽|아시안컵|드라마|가수|영화|공연|주가|특징주|football|soccer|world cup|qualifier|match|league|fifa|basketball|olympic|كرة القدم|المنتخب|الدوري|مباراة|منتخبنا|فيفا|كأس/i,
+    NOT: /축구|월드컵|예선|골\s|체스|선수권|K리그|야구|배구|농구|올림픽|아시안컵|드라마|가수|영화|공연|주가|특징주|football|soccer|chess|championship|world cup|qualifier|match|league|fifa|basketball|olympic|كرة القدم|المنتخب|الدوري|مباراة|منتخبنا|فيفا|كأس/i,
     // 분류 표시 (위에서부터 먼저 맞는 것)
     TAGS: [
-      ["치안·테러", /테러|폭발|공격|드론|로켓|무장|IS\b|ISIS|민병대|총격|납치|암살|attack|explosion|blast|drone|rocket|militia|gunmen|kidnap|isis|terror|انفجار|هجوم|مسيرة|صاروخ|داعش|اغتيال|خطف|مسلح/i],
+      ["치안·테러", /테러|폭발|공격|드론|로켓|무장|IS\b|ISIS|다에시|PKK|민병대|총격|납치|암살|체포|마약|공습|전투기|보안군|군사|attack|daesh|airstrike|security forces|arrest|militar|smuggl|explosion|blast|drone|rocket|militia|gunmen|kidnap|isis|terror|انفجار|هجوم|مسيرة|صاروخ|داعش|اغتيال|خطف|مسلح|اعتقال|القبض|مخدرات|العمال الكردستاني/i],
       ["시위·통제", /시위|집회|통행금지|도로\s?봉쇄|protest|demonstrat|curfew|road closure|تظاهر|احتجاج|حظر التجوال|قطع طرق|اعتصام/i],
       ["휴일·행사", /공휴일|휴무|라마단|아르바인|아슈라|이드|holiday|ramadan|arbaeen|ashura|eid|pilgrim|عطلة|تعطيل|الدوام|رمضان|الأربعين|عاشوراء|عيد|زيارة/i],
       ["정치·선거", /선거|총리|의회|대통령|내각|정부|election|parliament|prime minister|president|cabinet|government|انتخاب|البرلمان|مجلس النواب|رئيس الوزراء|الحكومة|السوداني/i],
       ["전력·생활", /전력|정전|전기|물\s?부족|수도|electricity|power|outage|water|الكهرباء|انقطاع|الماء|المياه/i],
       ["날씨·재난", /모래|먼지|폭염|홍수|지진|dust|sandstorm|heat|flood|earthquake|عاصفة|غبار|ترابية|حرارة|فيضان|زلزال/i],
       ["경제·유가", /유가|원유|석유|디나르|환율|경제|oil|crude|dinar|dollar|economy|budget|نفط|النفط|الدينار|الدولار|اقتصاد|الموازنة/i],
-      ["한국·외교", /한국|한화|대사관|외교|korea|hanwha|embassy|كوريا|السفارة/i],
+      ["한국·외교", /한국|한화|대사|외교|korea|hanwha|embassy|ambassador|envoy|كوريا|السفارة|سفير/i],
     ],
   },
   // NEWS_CFG=sa : 상황판 하단 '중대재해 보도' 알림 (국내 산업현장 사망사고 기사, 최근 7일)
