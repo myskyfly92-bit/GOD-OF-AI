@@ -8056,14 +8056,26 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   const dayNow = () => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Baghdad" }).format(new Date());
   const getDay = () => { try { return localStorage.getItem("vcDay") || ""; } catch (e) { return ""; } };
   const setDay = (d) => { try { localStorage.setItem("vcDay", d); } catch (e) {} };
-  let last = null, lastErr = "";
-  box.addEventListener("click", () => { if (last === null && lastErr) alert("방문자 카운터 연결 상태\n\n" + lastErr); });
+  let last = null, lastErr = "", busy = false, retryT = 0;
+  box.addEventListener("click", () => { if (lastErr) alert("방문자 카운터 연결 상태\n\n" + lastErr); });
+  // 서버 답을 기다리는 동안에도 칸은 항상 보이게: 지난번 숫자를 먼저 보여 준다 (날짜가 바뀌었으면 TODAY 는 '…')
+  const show = (t, a) => { elT.textContent = t; elA.textContent = a; box.hidden = false; };
+  try {
+    const c = JSON.parse(localStorage.getItem("vcLast") || "null");
+    if (c && c.total != null) show(c.day === dayNow() ? Number(c.today).toLocaleString("en-US") : "…", Number(c.total).toLocaleString("en-US"));
+    else show("…", "…");
+  } catch (e) { show("…", "…"); }
+  box.style.opacity = ".7";
   async function tick() {
+    if (busy) return;
+    busy = true;
+    const ctl = new AbortController();
+    const to = setTimeout(() => ctl.abort(), 20000);   // 구글이 느리면 20초에서 끊고 곧 다시 시도
     try {
       const url = await getAppsScriptUrl();
-      if (!url) return;
+      if (!url) { showErr("Apps Script 주소를 못 읽음 (work-zones.json)"); return; }
       const d = dayNow(), hit = getDay() !== d;
-      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&vid=" + sid + "&t=" + Date.now());
+      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&vid=" + sid + "&t=" + Date.now(), { signal: ctl.signal });
       const txt = await res.text();
       let r = null;
       try { r = JSON.parse(txt); } catch (e) {
@@ -8077,18 +8089,23 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       if (typeof r.online === "number" && r.online > 0) { elN.textContent = r.online; nowWrap.hidden = false; } else nowWrap.hidden = true;
       box.title = `${typeof r.online === "number" ? `지금 접속 ${r.online} · ` : ""}오늘 ${r.today} · 어제 ${r.yesterday} · 누적 ${r.total} (${String(r.since).replace(/(\d{4})(\d\d)(\d\d)/, "$1.$2.$3")}부터, 기기마다 하루 한 번만 셉니다)`;
       if (last !== null && r.today > last) { elT.classList.remove("bump"); void elT.offsetWidth; elT.classList.add("bump"); }
-      last = r.today;
+      last = r.today; lastErr = "";
+      try { localStorage.setItem("vcLast", JSON.stringify({ day: d, today: r.today, total: r.total })); } catch (e) {}
       box.style.opacity = "";
       box.hidden = false;
-    } catch (e) { showErr("연결 실패: " + e.message); }
+    } catch (e) { showErr(e.name === "AbortError" ? "응답이 20초 넘게 없음 (구글 서버 지연)" : "연결 실패: " + e.message); }
+    finally { clearTimeout(to); busy = false; }
   }
   // 아직 서버 준비 전이면 흐리게 '–' 로 두고, 마우스를 올리면 이유가 보이게 한다
   function showErr(msg) {
     console.warn("[방문자 카운터]", msg);
+    lastErr = new Date().toLocaleTimeString("ko-KR") + " · " + msg;
+    // 실패하면 1분 뒤 한 번 더 (평소 주기 90초보다 먼저 회복되게)
+    clearTimeout(retryT); retryT = setTimeout(tick, 60 * 1000);
     if (last !== null) return;           // 한 번이라도 숫자가 떴으면 그대로 둔다
-    elT.textContent = "–"; elA.textContent = "–";
-    box.title = "방문자 카운터 준비 중 · " + msg + " (누르면 자세히)";
-    lastErr = msg;
+    if (elT.textContent === "…") elT.textContent = "–";
+    if (elA.textContent === "…") elA.textContent = "–";
+    box.title = "방문자 카운터 연결 중 · " + msg + " (누르면 자세히)";
     box.style.opacity = ".55";
     box.hidden = false;
   }
