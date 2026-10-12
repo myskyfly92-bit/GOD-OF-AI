@@ -5,7 +5,7 @@
   "lon": 44.618
  },
  "radiusKm": 45,
- "updatedAt": "2026-10-08T08:41:02.727646+00:00",
+ "updatedAt": "2026-10-12T09:12:28.985170+00:00",
  "items": [
   {
    "id": "node/9547504717",
@@ -22,10 +22,10 @@
    "lat": 33.182146,
    "lon": 44.614146,
    "km": 1.3,
-   "roadKm": 1.5,
-   "min": 3,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 1.5,
+   "min": 3
   },
   {
    "id": "node/13337155298",
@@ -42,9 +42,9 @@
    "lat": 33.160394,
    "lon": 44.640905,
    "km": 4.2,
+   "spec": [],
    "roadKm": 7.5,
-   "min": 10,
-   "spec": []
+   "min": 10
   },
   {
    "id": "node/8913114617",
@@ -61,9 +61,9 @@
    "lat": 33.276078,
    "lon": 44.618849,
    "km": 9.2,
+   "spec": [],
    "roadKm": 15.5,
-   "min": 18,
-   "spec": []
+   "min": 18
   },
   {
    "id": "node/7855668985",
@@ -80,9 +80,9 @@
    "lat": 33.233748,
    "lon": 44.529711,
    "km": 9.4,
+   "spec": [],
    "roadKm": 13.2,
-   "min": 14,
-   "spec": []
+   "min": 14
   },
   {
    "id": "node/5450247821",
@@ -99,10 +99,10 @@
    "lat": 33.125573,
    "lon": 44.678207,
    "km": 9.4,
-   "roadKm": 12.7,
-   "min": 14,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 12.7,
+   "min": 14
   },
   {
    "id": "node/5105748123",
@@ -119,10 +119,10 @@
    "lat": 33.225582,
    "lon": 44.521693,
    "km": 9.7,
-   "roadKm": 11.6,
-   "min": 11,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 11.6,
+   "min": 11
   },
   {
    "id": "node/4678138689",
@@ -139,10 +139,10 @@
    "lat": 33.225806,
    "lon": 44.521601,
    "km": 9.7,
-   "roadKm": 11.7,
-   "min": 11,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 11.7,
+   "min": 11
   },
   {
    "id": "node/8912994380",
@@ -159,9 +159,9 @@
    "lat": 33.229705,
    "lon": 44.519222,
    "km": 10.1,
+   "spec": [],
    "roadKm": 12.2,
-   "min": 12,
-   "spec": []
+   "min": 12
   },
   {
    "id": "node/13337155302",
@@ -178,9 +178,9 @@
    "lat": 33.105059,
    "lon": 44.580881,
    "km": 10.4,
+   "spec": [],
    "roadKm": 20.7,
-   "min": 20,
-   "spec": []
+   "min": 20
   },
   {
    "id": "node/2482526804",
@@ -197,14 +197,14 @@
    "lat": 33.224497,
    "lon": 44.511685,
    "km": 10.5,
+   "spec": [],
    "roadKm": 13.2,
-   "min": 13,
-   "spec": []
+   "min": 13
   },
   {
    "id": "node/4728683990",
    "name": "مستشفى المدائن",
-   "nameEn": "Madain Hospital",
+   "nameEn": "Al-Mada'in Hospital",
    "nameAr": "مستشفى المدائن",
    "kind": "hospital",
    "own": "",
@@ -216,9 +216,10 @@
    "lat": 33.1058,
    "lon": 44.5741,
    "km": 10.5,
+   "enAuto": true,
+   "spec": [],
    "roadKm": 21.3,
-   "min": 21,
-   "spec": []
+   "min": 21
   },
   {
    "id": "node/5579503523",
@@ -235,11 +236,11 @@
    "lat": 33.123693,
    "lon": 44.696754,
    "km": 10.6,
-   "roadKm": 13.5,
-   "min": 14,
    "spec": [
     "응급"
-   ]
+   ],
+   "roadKm": 13.5,
+   "min": 14
   },
   {
    "id": "node/13337155313",
@@ -256,9 +257,9 @@
    "lat": 33.100878,
    "lon": 44.579351,
    "km": 10.9,
+   "spec": [],
    "roadKm": 21.2,
-   "min": 21,
-   "spec": []
+   "min": 21
   },
   {
    "id": "node/8913114618",
@@ -275,9 +276,9 @@
    "lat": 33.098507,
    "lon": 44.577528,
    "km": 11.2,
+   "spec": [],
    "roadKm": 21.6,
-   "min": 22,
-   "spec": []
+   "min": 22
   },
   {
    "id": "node/13337155315",
@@ -294,9 +295,9 @@
    "lat": 33.09474,
    "lon": 44.592977,
    "km": 11.2,
+   "spec": [],
    "roadKm": 22.6,
-   "min": 24,
-   "spec": []
+   "min": 24
   },
   {
    "id": "node/8915744517",
@@ -313,9 +314,9 @@
    "lat": 33.216915,
    "lon": 44.499623,
    "km": 11.3,
+   "spec": [],
    "roadKm": 38.3,
-   "min": 51,
-   "spec": []
+   "min": 51
   },
   {
    "id": "node/7327770786",
@@ -332,10 +333,10 @@
    "lat": 33.248947,
    "lon": 44.50368,
    "km": 12.3,
-   "roadKm": 15.5,
-   "min": 16,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 15.5,
+   "min": 16
   },
   {
    "id": "node/8702769717",
@@ -352,10 +353,10 @@
    "lat": 33.303734,
    "lon": 44.629743,
    "km": 12.4,
-   "roadKm": 18.9,
-   "min": 21,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 18.9,
+   "min": 21
   },
   {
    "id": "node/7920881885",
@@ -372,9 +373,9 @@
    "lat": 33.304209,
    "lon": 44.597579,
    "km": 12.5,
+   "spec": [],
    "roadKm": 18.9,
-   "min": 19,
-   "spec": []
+   "min": 19
   },
   {
    "id": "node/8913103116",
@@ -391,9 +392,9 @@
    "lat": 33.295967,
    "lon": 44.67082,
    "km": 12.5,
+   "spec": [],
    "roadKm": 24.3,
-   "min": 34,
-   "spec": []
+   "min": 34
   },
   {
    "id": "node/11288253469",
@@ -410,10 +411,10 @@
    "lat": 33.259255,
    "lon": 44.509787,
    "km": 12.5,
-   "roadKm": 16.2,
-   "min": 17,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 16.2,
+   "min": 17
   },
   {
    "id": "node/8912994383",
@@ -430,9 +431,9 @@
    "lat": 33.246827,
    "lon": 44.49912,
    "km": 12.6,
+   "spec": [],
    "roadKm": 15.0,
-   "min": 15,
-   "spec": []
+   "min": 15
   },
   {
    "id": "node/8912994384",
@@ -449,9 +450,9 @@
    "lat": 33.260694,
    "lon": 44.496417,
    "km": 13.6,
+   "spec": [],
    "roadKm": 17.3,
-   "min": 18,
-   "spec": []
+   "min": 18
   },
   {
    "id": "node/10206724717",
@@ -468,9 +469,9 @@
    "lat": 33.307602,
    "lon": 44.674179,
    "km": 13.8,
+   "spec": [],
    "roadKm": 23.2,
-   "min": 31,
-   "spec": []
+   "min": 31
   },
   {
    "id": "node/11909543469",
@@ -487,10 +488,10 @@
    "lat": 33.262212,
    "lon": 44.495219,
    "km": 13.8,
-   "roadKm": 17.2,
-   "min": 18,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 17.2,
+   "min": 18
   },
   {
    "id": "node/8979011517",
@@ -507,12 +508,12 @@
    "lat": 33.258631,
    "lon": 44.490035,
    "km": 14.0,
-   "roadKm": 16.4,
-   "min": 16,
    "enAuto": true,
    "spec": [
     "응급"
-   ]
+   ],
+   "roadKm": 16.4,
+   "min": 16
   },
   {
    "id": "node/10206724718",
@@ -529,8 +530,6 @@
    "lat": 33.311838,
    "lon": 44.676587,
    "km": 14.3,
-   "roadKm": 23.8,
-   "min": 33,
    "enAuto": true,
    "spec": []
   },
@@ -549,13 +548,13 @@
    "lat": 33.268802,
    "lon": 44.488287,
    "km": 14.7,
-   "roadKm": 18.1,
-   "min": 18,
    "enAuto": true,
    "spec": [
     "응급",
     "종합"
-   ]
+   ],
+   "roadKm": 18.1,
+   "min": 18
   },
   {
    "id": "node/9243835317",
@@ -662,12 +661,12 @@
    "lat": 33.255634,
    "lon": 44.47092,
    "km": 15.4,
-   "roadKm": 18.6,
-   "min": 19,
    "enAuto": true,
    "spec": [
     "소아과"
-   ]
+   ],
+   "roadKm": 18.6,
+   "min": 19
   },
   {
    "id": "node/6338284685",
@@ -798,6 +797,23 @@
    "spec": []
   },
   {
+   "id": "node/14265074003",
+   "name": "مجمع روعة بغداد الطبي / عيادة R&B",
+   "nameEn": "",
+   "nameAr": "مجمع روعة بغداد الطبي / عيادة R&B",
+   "kind": "doctors",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "709-37, بغداد",
+   "lat": 33.300836,
+   "lon": 44.493394,
+   "km": 16.7,
+   "spec": []
+  },
+  {
    "id": "node/6398982785",
    "name": "زنبرانية",
    "nameEn": "Zanbaraniya Clinic",
@@ -872,7 +888,7 @@
   {
    "id": "node/11338517570",
    "name": "عيادة الدكتورة امال",
-   "nameEn": "dr.hussain",
+   "nameEn": "Dr. Amal's clinic",
    "nameAr": "عيادة الدكتورة امال",
    "kind": "clinic",
    "own": "",
@@ -884,6 +900,7 @@
    "lat": 33.313918,
    "lon": 44.503642,
    "km": 17.1,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -1012,10 +1029,10 @@
    "lat": 33.279096,
    "lon": 44.457124,
    "km": 17.8,
-   "roadKm": 21.5,
-   "min": 22,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 21.5,
+   "min": 22
   },
   {
    "id": "node/11278750169",
@@ -1032,9 +1049,9 @@
    "lat": 33.308816,
    "lon": 44.484943,
    "km": 17.9,
+   "spec": [],
    "roadKm": 25.5,
-   "min": 22,
-   "spec": []
+   "min": 22
   },
   {
    "id": "node/4284563389",
@@ -1230,10 +1247,10 @@
    "lat": 33.307668,
    "lon": 44.468955,
    "km": 18.8,
-   "roadKm": 25.6,
-   "min": 21,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 25.6,
+   "min": 21
   },
   {
    "id": "node/8912994382",
@@ -1267,10 +1284,10 @@
    "lat": 33.322614,
    "lon": 44.484418,
    "km": 19.0,
-   "roadKm": 24.8,
-   "min": 21,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 24.8,
+   "min": 21
   },
   {
    "id": "node/5801463953",
@@ -1377,10 +1394,10 @@
    "lat": 33.283203,
    "lon": 44.440452,
    "km": 19.3,
-   "roadKm": 23.5,
-   "min": 23,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 23.5,
+   "min": 23
   },
   {
    "id": "node/2483921998",
@@ -1466,10 +1483,10 @@
    "lat": 33.331551,
    "lon": 44.489505,
    "km": 19.5,
-   "roadKm": 26.0,
-   "min": 22,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 26.0,
+   "min": 22
   },
   {
    "id": "node/8443811317",
@@ -1522,10 +1539,10 @@
    "lat": 33.347598,
    "lon": 44.5178,
    "km": 19.6,
-   "roadKm": 29.2,
-   "min": 25,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 29.3,
+   "min": 25
   },
   {
    "id": "node/6560245686",
@@ -1614,11 +1631,11 @@
    "lat": 33.307102,
    "lon": 44.451102,
    "km": 20.0,
-   "roadKm": 23.3,
-   "min": 23,
    "spec": [
     "소아과"
-   ]
+   ],
+   "roadKm": 23.3,
+   "min": 23
   },
   {
    "id": "node/8907420726",
@@ -1635,9 +1652,9 @@
    "lat": 33.303929,
    "lon": 44.449168,
    "km": 20.0,
+   "spec": [],
    "roadKm": 23.3,
-   "min": 23,
-   "spec": []
+   "min": 23
   },
   {
    "id": "node/13443101203",
@@ -1693,12 +1710,12 @@
    "lat": 33.321348,
    "lon": 44.466044,
    "km": 20.1,
-   "roadKm": 26.7,
-   "min": 22,
    "enAuto": true,
    "spec": [
     "피부과"
-   ]
+   ],
+   "roadKm": 26.7,
+   "min": 22
   },
   {
    "id": "node/8916815387",
@@ -1750,9 +1767,9 @@
    "lat": 33.357621,
    "lon": 44.521245,
    "km": 20.4,
+   "spec": [],
    "roadKm": 29.7,
-   "min": 25,
-   "spec": []
+   "min": 25
   },
   {
    "id": "node/10284643709",
@@ -1786,12 +1803,12 @@
    "lat": 33.305662,
    "lon": 44.441656,
    "km": 20.6,
-   "roadKm": 24.1,
-   "min": 24,
    "enAuto": true,
    "spec": [
     "재활·물리치료"
-   ]
+   ],
+   "roadKm": 24.1,
+   "min": 24
   },
   {
    "id": "way/848334472",
@@ -1808,9 +1825,9 @@
    "lat": 33.310683,
    "lon": 44.446401,
    "km": 20.6,
+   "spec": [],
    "roadKm": 29.1,
-   "min": 24,
-   "spec": []
+   "min": 24
   },
   {
    "id": "node/9053978218",
@@ -1845,12 +1862,12 @@
    "lat": 33.262542,
    "lon": 44.411873,
    "km": 20.7,
-   "roadKm": 30.5,
-   "min": 29,
    "enAuto": true,
    "spec": [
     "치과"
-   ]
+   ],
+   "roadKm": 30.5,
+   "min": 29
   },
   {
    "id": "node/8806888838",
@@ -1921,10 +1938,10 @@
    "lat": 33.305375,
    "lon": 44.437534,
    "km": 20.9,
-   "roadKm": 24.0,
-   "min": 23,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 24.0,
+   "min": 23
   },
   {
    "id": "node/8869381317",
@@ -1945,6 +1962,23 @@
    "spec": []
   },
   {
+   "id": "node/11146975124",
+   "name": "الانتفاضة",
+   "nameEn": "",
+   "nameAr": "الانتفاضة",
+   "kind": "clinic",
+   "own": "public",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "بغداد",
+   "lat": 33.243367,
+   "lon": 44.401217,
+   "km": 20.9,
+   "spec": []
+  },
+  {
    "id": "node/11663118670",
    "name": "مستشفى الدورة الأهلي",
    "nameEn": "Al-Dora Private Hospital",
@@ -1959,10 +1993,10 @@
    "lat": 33.259461,
    "lon": 44.408286,
    "km": 20.9,
-   "roadKm": 30.7,
-   "min": 28,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 30.7,
+   "min": 28
   },
   {
    "id": "node/4718793194",
@@ -2034,9 +2068,9 @@
    "lat": 33.333925,
    "lon": 44.466378,
    "km": 21.1,
+   "spec": [],
    "roadKm": 26.1,
-   "min": 21,
-   "spec": []
+   "min": 21
   },
   {
    "id": "node/11146975127",
@@ -2114,6 +2148,23 @@
    ]
   },
   {
+   "id": "node/7284216485",
+   "name": "فرع مستشفى الجادرية",
+   "nameEn": "",
+   "nameAr": "فرع مستشفى الجادرية",
+   "kind": "clinic",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "",
+   "lat": 33.292237,
+   "lon": 44.423509,
+   "km": 21.2,
+   "spec": []
+  },
+  {
    "id": "node/4328361592",
    "name": "مستشفى الجادرية",
    "nameEn": "Al-Jadriya Private Hospital",
@@ -2128,9 +2179,9 @@
    "lat": 33.293916,
    "lon": 44.423525,
    "km": 21.3,
+   "spec": [],
    "roadKm": 25.3,
-   "min": 25,
-   "spec": []
+   "min": 25
   },
   {
    "id": "node/11146975149",
@@ -2281,7 +2332,7 @@
   {
    "id": "node/4507305191",
    "name": "نسائيه وامراض العقم",
-   "nameEn": "Turbo Dental Center",
+   "nameEn": "Gynecology and infertility diseases",
    "nameAr": "نسائيه وامراض العقم",
    "kind": "clinic",
    "own": "",
@@ -2293,9 +2344,9 @@
    "lat": 33.325007,
    "lon": 44.449482,
    "km": 21.5,
+   "enAuto": true,
    "spec": [
-    "산부인과",
-    "치과"
+    "산부인과"
    ]
   },
   {
@@ -2313,12 +2364,12 @@
    "lat": 33.30982,
    "lon": 44.434195,
    "km": 21.5,
-   "roadKm": 24.9,
-   "min": 24,
    "enAuto": true,
    "spec": [
     "안과"
-   ]
+   ],
+   "roadKm": 24.9,
+   "min": 24
   },
   {
    "id": "node/6134997488",
@@ -2335,12 +2386,12 @@
    "lat": 33.329892,
    "lon": 44.454911,
    "km": 21.5,
-   "roadKm": 28.1,
-   "min": 24,
    "enAuto": true,
    "spec": [
     "재활·물리치료"
-   ]
+   ],
+   "roadKm": 28.1,
+   "min": 24
   },
   {
    "id": "node/8112396517",
@@ -2357,10 +2408,10 @@
    "lat": 33.325518,
    "lon": 44.448903,
    "km": 21.5,
-   "roadKm": 28.8,
-   "min": 25,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 28.8,
+   "min": 25
   },
   {
    "id": "node/8187782017",
@@ -2403,6 +2454,43 @@
    ]
   },
   {
+   "id": "node/6885530385",
+   "name": "عيادة الامراض الباطنية و امراض الاطفال",
+   "nameEn": "internal medicine and paediatric",
+   "nameAr": "عيادة الامراض الباطنية و امراض الاطفال",
+   "kind": "clinic",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "شارع الطعمه",
+   "lat": 33.250271,
+   "lon": 44.395678,
+   "km": 21.6,
+   "spec": [
+    "내과",
+    "소아과"
+   ]
+  },
+  {
+   "id": "node/11917645669",
+   "name": "المركز الطبي الانكليزي",
+   "nameEn": "",
+   "nameAr": "المركز الطبي الانكليزي",
+   "kind": "clinic",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "",
+   "lat": 33.311698,
+   "lon": 44.433869,
+   "km": 21.6,
+   "spec": []
+  },
+  {
    "id": "node/5141949522",
    "name": "العيادة التخصصية لعلاج الاورام افيل نديم الحسيني",
    "nameEn": "Oncology cancer clinic Ofail Alhusseiny",
@@ -2422,6 +2510,25 @@
    ]
   },
   {
+   "id": "node/5009816423",
+   "name": "مركز الطب الدولي",
+   "nameEn": "IMC",
+   "nameAr": "مركز الطب الدولي",
+   "kind": "hospital",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "Salman Fayq St.",
+   "lat": 33.309521,
+   "lon": 44.43042,
+   "km": 21.7,
+   "spec": [],
+   "roadKm": 24.6,
+   "min": 23
+  },
+  {
    "id": "node/6474503486",
    "name": "Al Arabi Hospital",
    "nameEn": "Al Arabi Hospital",
@@ -2436,9 +2543,9 @@
    "lat": 33.313486,
    "lon": 44.434845,
    "km": 21.7,
+   "spec": [],
    "roadKm": 28.9,
-   "min": 24,
-   "spec": []
+   "min": 24
   },
   {
    "id": "node/4818631623",
@@ -2455,10 +2562,10 @@
    "lat": 33.302313,
    "lon": 44.424423,
    "km": 21.7,
-   "roadKm": 24.9,
-   "min": 25,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 24.9,
+   "min": 25
   },
   {
    "id": "node/8942631218",
@@ -2592,7 +2699,7 @@
   {
    "id": "node/4465468298",
    "name": "عيادة الدكتور اصيل الحسيني",
-   "nameEn": "PHC in Al-Umalia",
+   "nameEn": "Dr. Aseel Al-Husseini's clinic",
    "nameAr": "عيادة الدكتور اصيل الحسيني",
    "kind": "clinic",
    "own": "",
@@ -2604,6 +2711,7 @@
    "lat": 33.343111,
    "lon": 44.467028,
    "km": 21.8,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -2621,12 +2729,12 @@
    "lat": 33.298807,
    "lon": 44.420011,
    "km": 21.8,
-   "roadKm": 26.7,
-   "min": 26,
    "enAuto": true,
    "spec": [
     "이비인후과"
-   ]
+   ],
+   "roadKm": 26.7,
+   "min": 26
   },
   {
    "id": "node/5401064221",
@@ -2644,6 +2752,23 @@
    "lon": 44.428867,
    "km": 21.8,
    "enAuto": true,
+   "spec": []
+  },
+  {
+   "id": "node/10537462219",
+   "name": "مركز صحي النهروان الثاني النموذجي",
+   "nameEn": "",
+   "nameAr": "مركز صحي النهروان الثاني النموذجي",
+   "kind": "clinic",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "بغداد",
+   "lat": 33.37802,
+   "lon": 44.69533,
+   "km": 21.8,
    "spec": []
   },
   {
@@ -2715,9 +2840,9 @@
    "lat": 33.312899,
    "lon": 44.430508,
    "km": 21.9,
+   "spec": [],
    "roadKm": 25.1,
-   "min": 24,
-   "spec": []
+   "min": 24
   },
   {
    "id": "node/11663306241",
@@ -2754,10 +2879,10 @@
    "lat": 33.232999,
    "lon": 44.387103,
    "km": 21.9,
-   "roadKm": 33.8,
-   "min": 32,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 33.8,
+   "min": 32
   },
   {
    "id": "node/8293933524",
@@ -2791,10 +2916,10 @@
    "lat": 33.301687,
    "lon": 44.420108,
    "km": 22.0,
-   "roadKm": 26.7,
-   "min": 26,
    "enAuto": true,
-   "spec": []
+   "spec": [],
+   "roadKm": 26.7,
+   "min": 26
   },
   {
    "id": "node/8915744523",
@@ -2811,9 +2936,9 @@
    "lat": 33.315728,
    "lon": 44.432179,
    "km": 22.0,
+   "spec": [],
    "roadKm": 30.2,
-   "min": 25,
-   "spec": []
+   "min": 25
   },
   {
    "id": "node/9591606718",
@@ -2847,6 +2972,23 @@
    "addr": "",
    "lat": 33.374026,
    "lon": 44.712781,
+   "km": 22.0,
+   "spec": []
+  },
+  {
+   "id": "node/6221840992",
+   "name": "د.عدنان سدخان جبر",
+   "nameEn": "",
+   "nameAr": "د.عدنان سدخان جبر",
+   "kind": "doctors",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "",
+   "lat": 33.370836,
+   "lon": 44.513555,
    "km": 22.0,
    "spec": []
   },
@@ -2917,9 +3059,9 @@
    "lat": 33.310667,
    "lon": 44.426688,
    "km": 22.1,
+   "spec": [],
    "roadKm": 24.9,
-   "min": 24,
-   "spec": []
+   "min": 24
   },
   {
    "id": "node/5186242022",
@@ -2940,6 +3082,23 @@
    "spec": [
     "이비인후과"
    ]
+  },
+  {
+   "id": "node/9201781217",
+   "name": "مستوصف الصحه / العيادة الشعبية / مركز صحي حي الصحة الرئيسي",
+   "nameEn": "",
+   "nameAr": "مستوصف الصحه / العيادة الشعبية / مركز صحي حي الصحة الرئيسي",
+   "kind": "clinic",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "",
+   "lat": 33.229931,
+   "lon": 44.384469,
+   "km": 22.1,
+   "spec": []
   },
   {
    "id": "node/12023358069",
@@ -2974,13 +3133,13 @@
    "lat": 33.319479,
    "lon": 44.432962,
    "km": 22.2,
-   "roadKm": 29.7,
-   "min": 24,
    "spec": [
     "응급",
     "종합",
     "산부인과"
-   ]
+   ],
+   "roadKm": 29.7,
+   "min": 24
   },
   {
    "id": "node/4207930072",
@@ -2997,7 +3156,9 @@
    "lat": 33.307877,
    "lon": 44.423124,
    "km": 22.2,
-   "spec": []
+   "spec": [],
+   "roadKm": 25.6,
+   "min": 25
   },
   {
    "id": "node/6221837992",
@@ -3160,6 +3321,24 @@
    "spec": []
   },
   {
+   "id": "node/4963930733",
+   "name": "عيادة د. ليث توما",
+   "nameEn": "Dr. Clinic Laith Touma",
+   "nameAr": "عيادة د. ليث توما",
+   "kind": "clinic",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "",
+   "lat": 33.307652,
+   "lon": 44.421756,
+   "km": 22.3,
+   "enAuto": true,
+   "spec": []
+  },
+  {
    "id": "node/11146975147",
    "name": "الكرادة الاستشاريه",
    "nameEn": "Karrada Consultation Clinic",
@@ -3303,6 +3482,23 @@
    "spec": []
   },
   {
+   "id": "node/5448844421",
+   "name": "مستشفى إبن رشد",
+   "nameEn": "Ibn rushd hospital",
+   "nameAr": "مستشفى إبن رشد",
+   "kind": "hospital",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "Al-Saadoon Street",
+   "lat": 33.318082,
+   "lon": 44.42593,
+   "km": 22.6,
+   "spec": []
+  },
+  {
    "id": "node/4403820190",
    "name": "مستشفى جنين الاهلي",
    "nameEn": "Jenin Private Hospital",
@@ -3318,7 +3514,9 @@
    "lon": 44.406308,
    "km": 22.6,
    "enAuto": true,
-   "spec": []
+   "spec": [
+    "종합"
+   ]
   },
   {
    "id": "node/5863702385",
@@ -3345,7 +3543,7 @@
    "nameAr": "مستشفى التاج التخصصي",
    "kind": "hospital",
    "own": "",
-   "emergency": false,
+   "emergency": true,
    "beds": "",
    "phone": "",
    "website": "",
@@ -3353,7 +3551,9 @@
    "lat": 33.320598,
    "lon": 44.427284,
    "km": 22.7,
-   "spec": []
+   "spec": [
+    "응급"
+   ]
   },
   {
    "id": "node/5342940521",
@@ -3734,7 +3934,7 @@
    "id": "node/8814043668",
    "name": "Ibn Sina general hospital",
    "nameEn": "Ibn Sina general hospital",
-   "nameAr": "مستشفى ابن محمد الزماط",
+   "nameAr": "",
    "kind": "hospital",
    "own": "public",
    "emergency": false,
@@ -3763,6 +3963,23 @@
    "addr": "",
    "lat": 33.361784,
    "lon": 44.462584,
+   "km": 23.7,
+   "spec": []
+  },
+  {
+   "id": "node/4711075991",
+   "name": "مركز باربي للتجميل",
+   "nameEn": "",
+   "nameAr": "مركز باربي للتجميل",
+   "kind": "clinic",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "",
+   "lat": 33.283164,
+   "lon": 44.386573,
    "km": 23.7,
    "spec": []
   },
@@ -3853,6 +4070,25 @@
    "km": 24.0,
    "spec": [
     "산부인과"
+   ]
+  },
+  {
+   "id": "node/7465597685",
+   "name": "الدكتورة ندئ محمد (عيون)",
+   "nameEn": "",
+   "nameAr": "الدكتورة ندئ محمد (عيون)",
+   "kind": "doctors",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "",
+   "lat": 33.324827,
+   "lon": 44.413225,
+   "km": 24.0,
+   "spec": [
+    "안과"
    ]
   },
   {
@@ -3952,7 +4188,7 @@
    "id": "node/8913876250",
    "name": "Baghdad Hospital Neurosurgical Center",
    "nameEn": "Baghdad Hospital Neurosurgical Center",
-   "nameAr": "مستشفى الجملة العصبية",
+   "nameAr": "",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -4515,7 +4751,7 @@
   {
    "id": "way/450682229",
    "name": "Ibn Al-Bitar Hospital",
-   "nameEn": "Ibn Al-Bitar Hospital",
+   "nameEn": "",
    "nameAr": "",
    "kind": "hospital",
    "own": "",
@@ -4599,6 +4835,23 @@
    "lon": 44.364999,
    "km": 26.6,
    "enAuto": true,
+   "spec": []
+  },
+  {
+   "id": "node/7948982385",
+   "name": "مجمع مكنون الطبي",
+   "nameEn": "maknoon",
+   "nameAr": "مجمع مكنون الطبي",
+   "kind": "hospital",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "حارثية, Baghdad",
+   "lat": 33.311458,
+   "lon": 44.367927,
+   "km": 26.7,
    "spec": []
   },
   {
@@ -4725,6 +4978,41 @@
    "spec": [
     "산부인과"
    ]
+  },
+  {
+   "id": "node/4336492895",
+   "name": "مستشفى الحارثية الاهلي",
+   "nameEn": "Al Harithiya National Hospital",
+   "nameAr": "مستشفى الحارثية الاهلي",
+   "kind": "hospital",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "",
+   "lat": 33.31094,
+   "lon": 44.364668,
+   "km": 27.0,
+   "enAuto": true,
+   "spec": []
+  },
+  {
+   "id": "node/8913167798",
+   "name": "Baghdad Hospital Al Quds",
+   "nameEn": "Baghdad Hospital Al Quds",
+   "nameAr": "",
+   "kind": "hospital",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "",
+   "lat": 33.293853,
+   "lon": 44.353649,
+   "km": 27.0,
+   "spec": []
   },
   {
    "id": "way/987247609",
@@ -5032,7 +5320,10 @@
    "lon": 44.319234,
    "km": 28.4,
    "enAuto": true,
-   "spec": []
+   "spec": [
+    "종합",
+    "내과"
+   ]
   },
   {
    "id": "node/4873734121",
@@ -5341,7 +5632,7 @@
   {
    "id": "node/5427233721",
    "name": "مستشفى الفردوس الاهلي",
-   "nameEn": "Baghdad Hospital Child Welfare",
+   "nameEn": "Al-Firdous National Hospital",
    "nameAr": "مستشفى الفردوس الاهلي",
    "kind": "hospital",
    "own": "",
@@ -5353,6 +5644,7 @@
    "lat": 33.368373,
    "lon": 44.36923,
    "km": 30.2,
+   "enAuto": true,
    "spec": []
   },
   {
