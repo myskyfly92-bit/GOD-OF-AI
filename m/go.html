@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>위치 보기 · 비스마야 HSE</title>
+<style>body{margin:0;font-family:sans-serif;background:#0b1118;color:#e8edf3;display:grid;place-items:center;min-height:100vh;text-align:center}a{color:#35d0c0;font-weight:700}</style>
+</head><body>
+<!-- 카카오톡 신고 메시지의 '위치 보기' 버튼이 여는 페이지: 좌표(q=위도,경도)를 받아 구글 지도로 바로 넘긴다 -->
+<p id="t">지도를 여는 중…</p>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get("q") || "";
+  if (!/^-?\d{1,2}\.\d+,-?\d{1,3}\.\d+$/.test(q)) { document.getElementById("t").textContent = "위치 정보가 없습니다."; return; }
+  var u = "https://maps.google.com/?q=" + q;
+  document.getElementById("t").innerHTML = '지도를 여는 중… <br><a href="' + u + '">바로 열기</a>';
+  location.replace(u);
+})();
+</script>
+</body></html>

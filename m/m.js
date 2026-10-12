@@ -426,10 +426,33 @@
     const close = () => { box.hidden = true; bg.hidden = true; document.body.style.overflow = ""; };
     document.querySelectorAll("[data-sos]").forEach((b) => b.addEventListener("click", open));
     $("#sosClose").addEventListener("click", close); bg.addEventListener("click", close);
-    // 카카오톡: 휴대폰 '공유하기' 창을 띄우면 카카오톡이 목록에 나온다 (카카오 앱 키 없이 쓰는 방법)
-    $("#sosKakao").addEventListener("click", () => {
+    // 카카오톡: 카카오 개발자 앱(JavaScript 키, 등록 도메인 myskyfly92-bit.github.io)으로 카카오톡을 바로 연다.
+    //   카카오 메시지의 링크는 등록 도메인만 허용 → 위치 버튼은 우리 사이트의 m/go.html 을 거쳐 구글 지도로 간다.
+    //   SDK 를 못 불러오면 휴대폰 '공유하기' 창 → 그것도 없으면 복사 안내
+    const KAKAO_KEY = "1f5c36ace6d178373c7e7d611eca9741";
+    let kakaoP = null;
+    const loadKakao = () => kakaoP || (kakaoP = new Promise((res, rej) => {
+      if (window.Kakao) return res(window.Kakao);
+      const sc = document.createElement("script");
+      sc.src = "https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"; sc.crossOrigin = "anonymous";
+      sc.onload = () => window.Kakao ? res(window.Kakao) : rej(new Error("no Kakao"));
+      sc.onerror = () => { kakaoP = null; rej(new Error("load fail")); };
+      document.head.appendChild(sc);
+    }));
+    const fallbackShare = () => {
       if (navigator.share) navigator.share({ text: msg.value }).catch(() => {});
-      else { $("#sosCopy").click(); alert("이 휴대폰은 바로 공유가 안 됩니다. 내용이 복사됐으니 카카오톡 대화방에 붙여 넣어 주세요."); }
+      else { $("#sosCopy").click(); alert("카카오톡을 바로 열지 못했습니다. 내용이 복사됐으니 카카오톡 대화방에 붙여 넣어 주세요."); }
+    };
+    $("#sosKakao").addEventListener("click", () => {
+      loadKakao().then((K) => {
+        if (!K.isInitialized()) K.init(KAKAO_KEY);
+        const site = location.origin + location.pathname.replace(/[^/]*$/, "");
+        const mapUrl = pos ? site + "go.html?q=" + pos.lat.toFixed(6) + "," + pos.lon.toFixed(6) : site;
+        let text = msg.value.replace(/https:\/\/maps\.google\.com\/\?q=[\d.,-]+/, "아래 '위치 보기' 버튼");
+        if (text.length > 200) text = text.slice(0, 197) + "…";
+        K.Share.sendDefault({ objectType: "text", text: text, link: { mobileWebUrl: mapUrl, webUrl: mapUrl },
+          buttonTitle: pos ? "📍 위치 보기" : "상황판 열기" });
+      }).catch(fallbackShare);
     });
     $("#sosCopy").addEventListener("click", () => {
       const done = () => { $("#sosCopy").textContent = "✅ 복사됨 — 원하는 곳에 붙여 넣으세요"; setTimeout(() => { $("#sosCopy").textContent = "📋 내용 복사"; }, 2500); };
