@@ -387,6 +387,52 @@
   document.querySelectorAll("[data-sub]").forEach((b) => b.addEventListener("click", () => showSub(b.dataset.sub)));
   $("#subBack").addEventListener("click", () => showSub(null));
 
+  /* ---------------- 사고·응급 신고 (위치 공유) ----------------
+     누른 순간 GPS 를 한 번 읽어 구글 지도 링크가 들어간 신고 문구를 만들고,
+     문자·왓츠앱·전화 앱을 내용이 채워진 채로 열어 준다. 보내기는 사람이 직접 누른다. */
+  (function sos() {
+    const box = $("#sos"), bg = $("#sosBg"), msg = $("#sosMsg"), loc = $("#sosLoc");
+    let kind = "부상자 발생", pos = null, edited = false;
+    const stamp = () => new Intl.DateTimeFormat("ko-KR", { timeZone: TZ, month: "long", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date());
+    const text = () => `[🚨 비스마야 현장 사고·응급 신고]\n- 상황: ${kind}\n- 시각: ${stamp()} (바그다드)\n- 위치: ` +
+      (pos ? `https://maps.google.com/?q=${pos.lat.toFixed(6)},${pos.lon.toFixed(6)} (오차 약 ${Math.round(pos.acc)}m)` : "위치 확인 불가 — 장소를 직접 적어 주세요") +
+      `\n- 세부 위치/내용: `;
+    const sync = () => {
+      if (!edited) msg.value = text();
+      const enc = encodeURIComponent(msg.value);
+      $("#sosSms").href = "sms:?&body=" + enc;
+      $("#sosWa").href = "https://wa.me/?text=" + enc;
+    };
+    msg.addEventListener("input", () => { edited = true; sync(); });
+    $("#sosKind").addEventListener("click", (e) => { const b = e.target.closest(".chip"); if (!b) return;
+      kind = b.dataset.k; $("#sosKind").querySelectorAll(".chip").forEach((x) => x.classList.toggle("on", x === b));
+      if (edited) msg.value = msg.value.replace(/- 상황: .*/, "- 상황: " + kind); sync(); });
+    function locate() {
+      pos = null; loc.className = "sos-loc"; loc.textContent = "📍 위치 확인 중… (처음이면 '위치 허용'을 눌러 주세요)"; sync();
+      if (!navigator.geolocation) { loc.className = "sos-loc bad"; loc.textContent = "이 휴대폰에서는 위치를 읽을 수 없습니다. 장소를 직접 적어 주세요."; return; }
+      navigator.geolocation.getCurrentPosition((p) => {
+        pos = { lat: p.coords.latitude, lon: p.coords.longitude, acc: p.coords.accuracy };
+        loc.innerHTML = `📍 확인됨 · 오차 약 ${Math.round(pos.acc)}m · <a href="https://maps.google.com/?q=${pos.lat},${pos.lon}" target="_blank" rel="noopener">지도에서 보기</a>`;
+        sync();
+      }, (err) => {
+        loc.className = "sos-loc bad";
+        loc.innerHTML = (err.code === 1 ? "위치 사용이 꺼져 있습니다 (휴대폰 설정 또는 브라우저 권한)." : "위치를 찾지 못했습니다 (실내·지하는 잘 안 잡힐 수 있음).") +
+          ' 장소를 직접 적어 주세요. <a href="#" id="sosRetry">다시 시도</a>';
+        $("#sosRetry").onclick = (e) => { e.preventDefault(); locate(); };
+        sync();
+      }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 30000 });
+    }
+    const open = () => { edited = false; box.hidden = false; bg.hidden = false; document.body.style.overflow = "hidden"; locate(); };
+    const close = () => { box.hidden = true; bg.hidden = true; document.body.style.overflow = ""; };
+    document.querySelectorAll("[data-sos]").forEach((b) => b.addEventListener("click", open));
+    $("#sosClose").addEventListener("click", close); bg.addEventListener("click", close);
+    $("#sosCopy").addEventListener("click", () => {
+      const done = () => { $("#sosCopy").textContent = "✅ 복사됨 — 원하는 곳에 붙여 넣으세요"; setTimeout(() => { $("#sosCopy").textContent = "📋 내용 복사"; }, 2500); };
+      if (navigator.clipboard) navigator.clipboard.writeText(msg.value).then(done, () => { msg.select(); document.execCommand("copy"); done(); });
+      else { msg.select(); document.execCommand("copy"); done(); }
+    });
+  })();
+
   // 처음: 지난번 보던 탭 (없으면 홈)
   const first = ls.get("mTab");
   loaded.home = true; loadHome();

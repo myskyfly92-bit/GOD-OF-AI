@@ -159,3 +159,24 @@ main { padding: 14px 14px calc(88px + var(--safe-b)); }
 .call { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); font-size: 14px; }
 .call:first-child { border-top: 0; }
 .call a { color: var(--cyan); font-weight: 700; }
+
+/* 사고·응급 신고 */
+.sos-btn { display: block; width: 100%; text-align: left; background: linear-gradient(90deg, #d93a37, #b52a28); color: #fff; font-weight: 800; font-size: 16px;
+  border-radius: 14px; padding: 14px 16px; margin-bottom: 12px; box-shadow: 0 6px 18px rgba(217,58,55,.25); }
+.sos-btn small { display: block; font-size: 12px; font-weight: 500; opacity: .85; margin-top: 2px; }
+.sheet-bg { position: fixed; inset: 0; z-index: 90; background: rgba(0,0,0,.55); }
+.sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 100; max-height: 92vh; overflow-y: auto; background: var(--card); border-top: 1px solid var(--line2);
+  border-radius: 20px 20px 0 0; padding: 8px 16px calc(18px + var(--safe-b)); animation: up .2s ease; }
+@keyframes up { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
+.sheet[hidden], .sheet-bg[hidden] { display: none; }
+.sheet-grip { width: 40px; height: 4px; border-radius: 2px; background: var(--line2); margin: 4px auto 10px; }
+.sheet h2 { margin: 0 0 10px; font-size: 19px; }
+.sos-step { font-size: 13px; font-weight: 700; color: var(--muted); margin: 12px 0 8px; display: flex; align-items: center; gap: 8px; }
+.sos-step b { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--red); color: #fff; font-size: 11px; }
+.sos-step span { margin-left: auto; font-weight: 500; font-size: 11px; color: var(--dim); }
+.sos-kinds { flex-wrap: wrap; margin: 0; padding: 0; overflow: visible; }
+.sos-kinds .chip.on { background: var(--red); border-color: var(--red); color: #fff; }
+.sos-loc { background: var(--bg2); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; font-size: 13.5px; margin-bottom: 8px; }
+.sos-loc a { color: var(--cyan); font-weight: 600; }
+.sos-loc.bad { border-color: rgba(239,83,80,.5); color: #ff9a97; }
+#sosMsg { font-size: 13px; resize: vertical; }

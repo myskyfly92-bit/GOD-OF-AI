@@ -7,7 +7,7 @@
 <title>비스마야 HSE 상황실 · 모바일</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="m.css?v=20261012m1">
+<link rel="stylesheet" href="m.css?v=20261012m2">
 </head>
 <body>
 
@@ -21,6 +21,7 @@
   <!-- 홈 -->
   <section class="page on" id="p-home">
     <div id="homeAlert"></div>
+    <button class="sos-btn" data-sos>🚨 사고·응급 신고 <small>위치 공유 · 클리닉 전화</small></button>
     <div class="card hero">
       <div><div class="lbl">무재해 연속</div><div class="big num" id="freeDays">–<small>일</small></div></div>
       <div class="side"><div class="lbl">착공 후</div><div class="v num" id="buildDays">–<small>일째</small></div></div>
@@ -66,6 +67,7 @@
   <section class="page" id="p-more">
     <div id="moreHome">
       <div class="ph"><h2>더보기</h2><span></span></div>
+      <button class="sos-btn" data-sos>🚨 사고·응급 신고 <small>위치 공유 · 클리닉 전화</small></button>
       <div class="menu">
         <button data-sub="bnews"><span class="ic">📰</span>비스마야 소식<small>국내·이라크 기사</small></button>
         <button data-sub="embassy"><span class="ic">🏛️</span>대사관 안전공지<small>중동 각국 대사관</small></button>
@@ -91,6 +93,32 @@
   <div class="foot-links">© 2026 비스마야 안전보건환경 상황실 · <a href="../?pc=1">PC 화면</a></div>
 </main>
 
+<!-- 사고·응급 신고 창 -->
+<div class="sheet-bg" id="sosBg" hidden></div>
+<div class="sheet" id="sos" hidden role="dialog" aria-label="사고·응급 신고">
+  <div class="sheet-grip"></div>
+  <h2>🚨 사고·응급 신고</h2>
+  <div class="sos-step"><b>1</b> 무슨 일인가요?</div>
+  <div class="chips sos-kinds" id="sosKind">
+    <button class="chip on" data-k="부상자 발생">부상자</button><button class="chip" data-k="환자(쓰러짐·의식 저하)">환자</button>
+    <button class="chip" data-k="화재">화재</button><button class="chip" data-k="추락·낙하">추락·낙하</button>
+    <button class="chip" data-k="장비·차량 사고">장비·차량</button><button class="chip" data-k="기타 위험 상황">기타</button>
+  </div>
+  <div class="sos-step"><b>2</b> 현재 위치</div>
+  <div class="sos-loc" id="sosLoc">📍 위치 확인 중…</div>
+  <textarea class="search" id="sosMsg" rows="4"></textarea>
+  <div class="sos-step"><b>3</b> 보내기 · 전화 <span>보내기 버튼은 직접 누르세요</span></div>
+  <div class="row2">
+    <a class="btn pri" id="sosCall" href="tel:07809262446">📞 클리닉 전화</a>
+    <a class="btn" href="tel:911">📞 이라크 911</a>
+    <a class="btn" id="sosSms" href="#">💬 문자로 보내기</a>
+    <a class="btn" id="sosWa" href="#" target="_blank" rel="noopener">🟢 왓츠앱으로 보내기</a>
+  </div>
+  <button class="btn" id="sosCopy" style="margin-top:8px">📋 내용 복사</button>
+  <button class="btn" id="sosClose" style="margin-top:8px;background:none">닫기</button>
+  <p class="src">위치는 이 버튼을 누른 순간 한 번만 읽고, 어디에도 저장하지 않습니다. 생명이 위급하면 먼저 전화하세요.</p>
+</div>
+
 <nav class="nav" id="nav">
   <button class="on" data-p="home"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg>홈</button>
   <button data-p="safety"><svg viewBox="0 0 24 24"><path d="M4 16a8 8 0 0116 0"/><path d="M2 16h20v3H2z"/><path d="M12 8V4"/></svg>안전</button>
@@ -99,6 +127,6 @@
   <button data-p="more"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>더보기</button>
 </nav>
 
-<script src="m.js?v=20261012m1"></script>
+<script src="m.js?v=20261012m2"></script>
 </body>
 </html>
