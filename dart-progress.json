@@ -2255,7 +2255,23 @@
    "due": "2032-12-31",
    "contractDate": "2012-05-30",
    "asOf": "2026-06",
-   "rcept_no": "20260831001249"
+   "rcept_no": "20260831001249",
+   "parts": [
+    {
+     "label": "주택",
+     "rate": 45.0,
+     "contract": "이라크 Bismayah 국민주택도급사업",
+     "due": "2032-12-31",
+     "contractDate": "2012-05-30"
+    },
+    {
+     "label": "인프라",
+     "rate": 30.0,
+     "contract": "이라크 Bismayah Social Infra",
+     "due": "2032-12-31",
+     "contractDate": "2015-04-05"
+    }
+   ]
   },
   "말레이시아 Shell OGP Project": {
    "company": "samsungea",

@@ -3214,9 +3214,18 @@ function globalProgressBar(p, popup) {
   const behind = el != null && rate != null && rate + 10 < el;
   const line = (label, v, cls, extra, tip) => `<span class="gp-row" title="${tip}"><span class="gp-l">${label}</span>` +
     `<span class="gprog"><i class="${cls}" style="width:${Math.min(100, v)}%"></i></span><span class="gp-v">${v}%${extra}</span></span>`;
+  // 계약이 여러 개로 나뉜 현장(예: 비스마야 주택 / 인프라)은 공정 막대를 계약별로 그린다
+  const parts = pr && Array.isArray(pr.parts) && pr.parts.length > 1 ? pr.parts : null;
+  const partRows = parts ? parts.map((x) => {
+    const v = Math.round(x.rate * 10) / 10;
+    const pe = globalElapsed({ period: `${x.contractDate} ~ ${x.due}` });
+    const late = pe != null && v + 10 < pe;
+    return line(escapeHtml(x.label), v, "gprog-pr" + (late ? " behind" : ""), `<small> ${asOf}</small>`,
+      `${escapeHtml(x.contract)} 공정률 ${v}% (DART ${asOf} 기준${pe != null ? ` · 이 계약 기간 ${pe}% 경과` : ""})`);
+  }).join("") : "";
   const rows = (el != null ? line("기간", el, "gprog-el", "", `계약기간 ${el}% 경과`) : "") +
-    (pr ? line("공정", rate, "gprog-pr" + (behind ? " behind" : ""), `<small> ${asOf}</small>`, `공정률 ${rate}% (DART ${asOf} 기준)`) : "");
-  return `<span class="gp-pair${popup ? " pop" : ""}">${rows}</span>`;
+    (parts ? partRows : pr ? line("공정", rate, "gprog-pr" + (behind ? " behind" : ""), `<small> ${asOf}</small>`, `공정률 ${rate}% (DART ${asOf} 기준)`) : "");
+  return `<span class="gp-pair${popup ? " pop" : ""}${parts ? " multi" : ""}">${rows}</span>`;
 }
 
 function renderGlobalFilter(projects) {

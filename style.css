@@ -3689,3 +3689,6 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .visit-counter .vc-on { color: #3ddc84; }
 .visit-counter .vc-dot { width: 6px; height: 6px; border-radius: 50%; background: #3ddc84; align-self: center; box-shadow: 0 0 6px #3ddc84; animation: vcBlink 1.6s ease-in-out infinite; }
 @keyframes vcBlink { 50% { opacity: .25; } }
+
+/* 계약별 공정 막대(주택·인프라)가 있는 현장은 이름 칸을 조금 넓힌다 */
+.gp-pair.multi .gp-row .gp-l { width: 36px; }

@@ -32,6 +32,12 @@ MANUAL_MATCH = {
     ("hanwha", "비스마야"): "Bismayah 국민주택",   # 한화 보고서는 'Bismayah' 영문 표기
 }
 
+# 한 현장이 보고서에 계약 여러 개로 나뉘어 있으면 막대를 계약별로 따로 그린다 (첫 번째가 대표값)
+#   (회사 id, 지도 현장 이름 일부) → [(보고서 계약명 일부, 화면 이름), ...]
+MULTI_PARTS = {
+    ("hanwha", "비스마야"): [("Bismayah 국민주택", "주택"), ("Bismayah Social Infra", "인프라")],
+}
+
 COUNTRY_WORDS = {"사우디", "사우디아라비아", "이라크", "카타르", "쿠웨이트", "아랍에미리트", "UAE", "오만", "바레인", "이집트",
                  "알제리", "리비아", "베트남", "필리핀", "말레이시아", "싱가포르", "인도네시아", "대만", "미국", "멕시코",
                  "러시아", "나이지리아", "모잠비크", "체코", "폴란드", "투르크메니스탄", "우즈베키스탄", "카자흐스탄", "SAUDI", "IRAQ",
@@ -248,6 +254,16 @@ def match(projects, rows_by_company):
         if best:
             matches[p["name"]] = {"company": p["company"], "rate": best["rate"], "contract": best["name"],
                                   "due": best.get("due"), "contractDate": best.get("contractDate")}
+            for (cid, word), plist in MULTI_PARTS.items():
+                if cid == p.get("company") and word in (p.get("name") or ""):
+                    parts = []
+                    for rword, label in plist:
+                        r = next((r for r in rows if rword in r["name"]), None)
+                        if r:
+                            parts.append({"label": label, "rate": r["rate"], "contract": r["name"],
+                                          "due": r.get("due"), "contractDate": r.get("contractDate")})
+                    if len(parts) > 1:
+                        matches[p["name"]]["parts"] = parts
     return matches
 
 
