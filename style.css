@@ -3465,6 +3465,9 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 
 /* ---------- 기타 > 비스마야 소식 ---------- */
 .bnews-count { color: var(--cyan); margin-left: 4px; }
+.bnews-cols.one { grid-template-columns: 1fr; }
+.bnews-list.wide { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 10px; align-items: start; max-height: none; }
+@media (max-width: 640px) { .bnews-list.wide { grid-template-columns: 1fr; } }
 .bnews-filter { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 12px; }
 .bnews-filter button { font-family: var(--font-body); font-size: 12.5px; color: var(--text-muted); background: rgba(10,14,19,.5); border: 1px solid var(--border-soft); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
 .bnews-filter button.active { color: var(--cyan); border-color: var(--cyan); }
