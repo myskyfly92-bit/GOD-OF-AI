@@ -3692,3 +3692,20 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 
 /* 계약별 공정 막대(주택·인프라)가 있는 현장은 이름 칸을 조금 넓힌다 */
 .gp-pair.multi .gp-row .gp-l { width: 36px; }
+
+/* ---------- 휴대폰 화면 보정 ---------- */
+@media (max-width: 900px) { .sug-cols { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 640px) {
+  /* 넓은 표는 찌그러뜨리지 않고 옆으로 밀어서 보게 */
+  .global-list { min-width: 760px; }
+  .kdca-table { min-width: 520px; }
+  /* 국내 중대재해: 업종 카드·유형 줄을 좁은 화면에 맞게 */
+  .sa-ind-tiles { gap: 6px; }
+  .sa-ind { padding: 10px 8px; }
+  .sa-ind-name { font-size: 12.5px; white-space: nowrap; }
+  .sa-ind-num { font-size: 24px; }
+  .sa-ind-foot { font-size: 11px; }
+  .sa-type-row { grid-template-columns: 18px 62px minmax(0, 1fr) 40px 64px; gap: 6px; font-size: 12px; }
+  .sa-type-pct { font-size: 11px; }
+  .sug-row { grid-template-columns: minmax(0, 1fr); }
+}
