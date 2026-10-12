@@ -8,6 +8,22 @@
   "errors": {},
   "items": [
     {
+      "kind": "WHO 소식",
+      "title": "IPC Sudan Food Insecurity and Malnutrition Alert",
+      "date": "2026-10-12T16:00:35Z",
+      "summary": "The Integrated Food Security Phase Classification (IPC), of which WHO is a member, today issued a Food Insecurity and Malnutrition Alert for Sudan.",
+      "link": "https://www.who.int/news/item/12-10-2026-ipc-sudan-food-insecurity-and-malnutrition-alert",
+      "newsType": "Note for Media"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO Pandemic Hub sets ambitious goal to detect new outbreaks within 24 hours",
+      "date": "2026-10-12T07:48:13Z",
+      "summary": "WHO launched a new five-year strategy for its Hub for Pandemic and Epidemic Intelligence, charting a path towards a world where every country can detect and understand emerging health threats within 24 hours of their appearance by 2030.",
+      "link": "https://www.who.int/news/item/12-10-2026-who-pandemic-hub-sets-ambitious-goal-to-detect-new-outbreaks-within-24-hours",
+      "newsType": "News release"
+    },
+    {
       "kind": "감염병 발생",
       "title": "Pneumonia of undetermined etiology - the Russian Federation",
       "date": "2026-10-10T15:53:19Z",
@@ -128,22 +144,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Fifteen years of tobacco tax reform show countries can make harmful products less affordable",
-      "date": "2026-09-30T08:50:34Z",
-      "summary": "A new independent analysis of 15 countries finds that every country made improvements to cigarette taxation between 2009 and 2025. The strongest results came where governments acted boldly, substantially raising taxes, simplifying tax systems and preventing cigarettes from becoming more affordable as incomes rose.",
-      "link": "https://www.who.int/news/item/30-09-2026-fifteen-years-of-tobacco-tax-reform-show-countries-can-make-harmful-products-less-affordable",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO releases new guidance to prevent heat-related illness at mass gatherings",
-      "date": "2026-09-30T08:12:23Z",
-      "summary": "To help host countries and event organizers better anticipate and manage heat-related health risks, WHO is releasing a new set of resources under the title Prevention and management of heat-related illness at mass gatherings, building on evidence synthesized through systematic reviews and lessons learned from mass gathering events worldwide.",
-      "link": "https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings",
-      "newsType": "News release"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-09-25T15:30:18Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON611"
     }
   ],
-  "generatedAt": "2026-10-12T13:49:32.049523+00:00"
+  "generatedAt": "2026-10-12T23:55:55.242002+00:00"
 }
