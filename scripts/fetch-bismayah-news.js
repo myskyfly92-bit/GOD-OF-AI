@@ -44,6 +44,33 @@ const CFGS = {
     // '6G 비전 페스트' 처럼 행사 이름에 붙은 '페스트'(개막·개최·참가…)도 뺀다
     NOT: /(모터|뮤직|푸드|맥주|아트|영화|게임|댄스|재즈|록|락|와인|커피|스트리트|썸머|윈터|북|비전|테크|과학|드론|로봇|웹툰|청년|창업|스타트업|미디어|콘텐츠|디지털|에너지|\d\s?G|AI|IT|K-?)\s?페스트|페스트['"’”]?\s*(\d{1,2}월\s*\d{1,2}일\s*)?[^\s,…]*\s*(개막|폐막|성료|개최|열려|열린다|참가|모집|부스)|페스티벌|motorfest|festival|특징주|株|주가|급등|급락|airways|airlines? resumes?/i,
   },
+  // NEWS_CFG=iraq : 기타 > 이라크 주요 이슈 (치안·시위·정치·휴일·전력·경제 등 현장 생활에 영향 주는 이라크 소식, 최근 7일)
+  iraq: {
+    OUT: "iraq-issues.json", KEEP_DAYS: 7, MAX_ITEMS: 70, BODY_PER_RUN: 15,
+    SEARCHES: [
+      { lang: "ko", q: "이라크 when:3d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "(바그다드 OR 이라크 정부 OR 이라크 시위 OR 이라크 테러) when:7d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "en", q: "Iraq (security OR attack OR protest OR curfew OR election OR parliament OR \"prime minister\") when:3d", hl: "en-US", gl: "US", ceid: "US:en" },
+      { lang: "en", q: "Baghdad (electricity OR \"power outage\" OR \"public holiday\" OR \"dust storm\" OR dinar) when:7d", hl: "en-US", gl: "US", ceid: "US:en" },
+      { lang: "ar", q: "بغداد (تظاهرات OR احتجاجات OR انفجار OR \"حظر التجوال\" OR \"قطع طرق\") when:3d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+      { lang: "ar", q: "العراق (\"عطلة رسمية\" OR تعطيل الدوام) when:7d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+      { lang: "ar", q: "العراق (الكهرباء OR \"العاصفة الترابية\" OR \"سعر الدولار\") when:3d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+    ],
+    MUST: /이라크|바그다드|쿠르드|iraq|baghdad|kurdistan|erbil|basra|العراق|العراقي|بغداد|أربيل|البصرة|كردستان/i,
+    // 스포츠·연예·주식 기사는 뺀다
+    NOT: /축구|월드컵|예선|골\s|K리그|야구|배구|농구|올림픽|아시안컵|드라마|가수|영화|공연|주가|특징주|football|soccer|world cup|qualifier|match|league|fifa|basketball|olympic|كرة القدم|المنتخب|الدوري|مباراة|منتخبنا|فيفا|كأس/i,
+    // 분류 표시 (위에서부터 먼저 맞는 것)
+    TAGS: [
+      ["치안·테러", /테러|폭발|공격|드론|로켓|무장|IS\b|ISIS|민병대|총격|납치|암살|attack|explosion|blast|drone|rocket|militia|gunmen|kidnap|isis|terror|انفجار|هجوم|مسيرة|صاروخ|داعش|اغتيال|خطف|مسلح/i],
+      ["시위·통제", /시위|집회|통행금지|도로\s?봉쇄|protest|demonstrat|curfew|road closure|تظاهر|احتجاج|حظر التجوال|قطع طرق|اعتصام/i],
+      ["휴일·행사", /공휴일|휴무|라마단|아르바인|아슈라|이드|holiday|ramadan|arbaeen|ashura|eid|pilgrim|عطلة|تعطيل|الدوام|رمضان|الأربعين|عاشوراء|عيد|زيارة/i],
+      ["정치·선거", /선거|총리|의회|대통령|내각|정부|election|parliament|prime minister|president|cabinet|government|انتخاب|البرلمان|مجلس النواب|رئيس الوزراء|الحكومة|السوداني/i],
+      ["전력·생활", /전력|정전|전기|물\s?부족|수도|electricity|power|outage|water|الكهرباء|انقطاع|الماء|المياه/i],
+      ["날씨·재난", /모래|먼지|폭염|홍수|지진|dust|sandstorm|heat|flood|earthquake|عاصفة|غبار|ترابية|حرارة|فيضان|زلزال/i],
+      ["경제·유가", /유가|원유|석유|디나르|환율|경제|oil|crude|dinar|dollar|economy|budget|نفط|النفط|الدينار|الدولار|اقتصاد|الموازنة/i],
+      ["한국·외교", /한국|한화|대사관|외교|korea|hanwha|embassy|كوريا|السفارة/i],
+    ],
+  },
   // NEWS_CFG=sa : 상황판 하단 '중대재해 보도' 알림 (국내 산업현장 사망사고 기사, 최근 7일)
   sa: {
     OUT: "sa-news.json", KEEP_DAYS: 7, MAX_ITEMS: 40, BODY_PER_RUN: 12, COMPANY: true,
@@ -304,6 +331,8 @@ async function main() {
       list.push(rep);
     });
   }
+  // 분류 표시 (CFG.TAGS 가 있을 때만)
+  if (CFG.TAGS) list.forEach((n) => { const t = n.title + " " + (n.titleKo || ""); const hit = CFG.TAGS.find(([, re]) => re.test(t)); n.tag = hit ? hit[0] : "기타"; });
   // 바로 가는 원문 주소가 있으면 그걸 링크로 쓴다
   list.forEach((n) => { if (n.url && !/news\.google\.com/.test(n.url)) n.link = n.url; });
 

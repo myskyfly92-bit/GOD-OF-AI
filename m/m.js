@@ -345,6 +345,14 @@
         <div class="card"><ul class="list">${it.map((x) => `<li class="item"><a href="${esc(x.link || x.url)}" target="_blank" rel="noopener"><div class="t" style="font-size:14px">${esc(x.titleKo || x.title)}</div>
         <div class="m">${x.lang !== "ko" ? '<span class="tag cy">이라크</span>' : ""}${esc(x.source)} · ${md(x.date)} (${ago(x.date)})</div></a></li>`).join("")}</ul><p class="src">구글 뉴스 검색 · 아랍어·영어 제목은 자동 번역</p></div>`;
         $("#subBody").querySelectorAll(".chip").forEach((b) => b.onclick = () => { f = b.dataset.f; draw(); }); }; draw(); })],
+    iraq: ["이라크 주요 이슈", () => getJ("iraq-issues.json").then((d) => { let f = "전체"; const all = d.items || [];
+      const TC = { "치안·테러": "red", "시위·통제": "amb", "휴일·행사": "vio", "날씨·재난": "amb", "전력·생활": "cy" };
+      const tags = ["전체"].concat(["치안·테러", "시위·통제", "휴일·행사", "정치·선거", "전력·생활", "날씨·재난", "경제·유가", "한국·외교", "기타"].filter((t) => all.some((x) => x.tag === t)));
+      const draw = () => { const it = all.filter((x) => f === "전체" || x.tag === f).slice(0, 40);
+        $("#subBody").innerHTML = `<div class="chips">${tags.map((c) => `<button class="chip ${c === f ? "on" : ""}" data-f="${c}">${c}</button>`).join("")}</div>
+        <div class="card"><ul class="list">${it.map((x) => `<li class="item"><a href="${esc(x.link || x.url)}" target="_blank" rel="noopener"><div class="t" style="font-size:14px">${esc(x.titleKo || x.title)}</div>
+        <div class="m">${x.tag ? `<span class="tag ${TC[x.tag] || ""}">${esc(x.tag)}</span> ` : ""}${esc(x.source)} · ${md(x.date)} (${ago(x.date)})</div></a></li>`).join("") || '<li class="empty">최근 7일 기사가 없습니다.</li>'}</ul><p class="src">구글 뉴스 검색 · 최근 7일 · 분류는 제목으로 자동 판정 · 아랍어·영어 제목은 자동 번역</p></div>`;
+        $("#subBody").querySelectorAll(".chip").forEach((b) => b.onclick = () => { f = b.dataset.f; draw(); }); }; draw(); })],
     embassy: ["대사관 안전공지", () => getJ("embassy-notices.json").then((d) => { let f = "이라크"; const all = d.items || [];
       const cs = ["이라크", "전체"].concat((d.countries || []).map((c) => c.name).filter((n) => n !== "이라크"));
       const draw = () => { const it = all.filter((x) => f === "전체" || x.country === f).slice(0, 30);

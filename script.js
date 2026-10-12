@@ -6719,6 +6719,7 @@ async function clinicCall(action, payload) {
       { go: "view-iraq-cd", sel: ".cd-intro-panel", text: `<b>이라크 민방위(소방) 소식</b>이에요. 위에는 민방위총국 소개와 연락처, 아래에는 현지 화재·구조 소식이 있어요.` },
     ]},
     { id: "etc", title: "기타", icon: "🧩", steps: [
+      { go: "view-iraq-issues", sel: "#view-iraq-issues .bnews-panel", text: `<b>기타 › 이라크 주요 이슈</b>예요. 치안·시위·정치·공휴일·정전·유가처럼 <b>현장 생활과 출퇴근에 영향을 줄 수 있는 이라크 소식</b>을 3시간마다 모아요. 위의 <b>분류 버튼</b>으로 골라 볼 수 있고, 기사를 누르면 본문이 펼쳐져요.` },
       { go: "view-bismayah", sel: "#bnewsList", text: `<b>기타 › 비스마야 소식</b>이에요. <b>비스마야</b>가 나온 뉴스를 3시간마다 모아서 왼쪽은 <b>국내 뉴스</b>(한국 언론), 오른쪽은 <b>이라크 뉴스</b>(현지 아랍어·영어 기사, 제목 한국어 번역)로 나눠 보여 줘요. 기사를 누르면 그 자리에서 <b>본문 미리보기</b>가 펼쳐지고, 맨 아래 링크로 전체 기사를 볼 수 있어요.` },
       { go: "view-ships", sel: ".air-switch", text: `<b>해상·항공 현황</b>이에요. <b>실시간 항공 지도</b>와 공항·항공기 <b>요약 지도</b>를 바꿔 볼 수 있어요. 아래로 내리면 <b>걸프만 선박 현황</b>도 있어요. 출장·자재 운송 일정 볼 때 참고하세요.` },
       { go: "view-global", sel: "#globalFilter", text: `<b>건설사 해외현장</b>이에요. 국내 건설사의 해외 현장을 지도와 표로 보여 줘요. 위 버튼으로 회사를 골라 볼 수 있어요.<br>표와 지도 팝업의 <b>기간 · 공정</b> 막대 두 줄은 계약기간이 얼마나 지났는지와 <b>DART 공시 공정률</b>을 나란히 보여 줘요. 공정이 기간보다 많이 뒤처지면 <b>주황색</b>이에요.` },
@@ -7594,6 +7595,8 @@ function makeNewsView(o) {
   if (!koBox || !iqBox) return;
   let items = null;
   const LANG = { ar: "아랍어", en: "영어" };
+  const TAGC = { "치안·테러": "red", "시위·통제": "amb", "휴일·행사": "vio", "정치·선거": "blu", "전력·생활": "cy", "날씨·재난": "amb", "경제·유가": "grn", "한국·외교": "blu" };
+  let tagF = "전체";
   const fmt = (iso) => {
     const d = new Date(iso); if (isNaN(d)) return "";
     return new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Baghdad", year: "numeric", month: "2-digit", day: "2-digit" }).format(d).replace(/\.\s?/g, ".").replace(/\.$/, "");
@@ -7605,7 +7608,7 @@ function makeNewsView(o) {
     const ar = n.lang === "ar" ? 'dir="rtl" lang="ar"' : "";
     const body = n.bodyKo || n.body;
     return `<div class="bnews-item" tabindex="0" role="button" aria-expanded="false">
-      <div class="bnews-meta">${LANG[n.lang] ? `<span class="bnews-lang l-${escapeHtml(n.lang)}">${LANG[n.lang]}</span>` : ""}<span class="bnews-date">${escapeHtml(fmt(n.date))}</span><span class="bnews-src">${escapeHtml(n.source || "")}</span><span class="bnews-caret">▾</span></div>
+      <div class="bnews-meta">${n.tag ? `<span class="bnews-tag t-${escapeHtml(TAGC[n.tag] || "etc")}">${escapeHtml(n.tag)}</span>` : ""}${LANG[n.lang] ? `<span class="bnews-lang l-${escapeHtml(n.lang)}">${LANG[n.lang]}</span>` : ""}<span class="bnews-date">${escapeHtml(fmt(n.date))}</span><span class="bnews-src">${escapeHtml(n.source || "")}</span><span class="bnews-caret">▾</span></div>
       <div class="bnews-title">${escapeHtml(n.titleKo || n.title)}</div>
       ${orig ? `<div class="bnews-orig" ${ar}>${escapeHtml(n.title)}</div>` : ""}
       <div class="bnews-body">
@@ -7642,15 +7645,27 @@ function makeNewsView(o) {
       [koBox, iqBox].forEach((b) => { b.innerHTML = `<p class="skeleton">기사를 불러오지 못했습니다 (${escapeHtml(e.message)})</p>`; });
       return;
     }
-    // 국내 = 한국 언론(한국어 기사), 이라크 = 그 밖(아랍어·영어 기사)
-    fill(koBox, o.koN, items.filter((n) => n.lang === "ko"));
-    fill(iqBox, o.iqN, items.filter((n) => n.lang !== "ko"));
+    draw();
     document.getElementById(o.count).textContent = `· ${items.length}건`;
+  }
+  // 국내 = 한국 언론(한국어 기사), 이라크 = 그 밖(아랍어·영어 기사) · 분류 버튼이 있으면 그 분류만
+  function draw() {
+    const L = items.filter((n) => tagF === "전체" || n.tag === tagF);
+    fill(koBox, o.koN, L.filter((n) => n.lang === "ko"));
+    fill(iqBox, o.iqN, L.filter((n) => n.lang !== "ko"));
+    const tb = o.tags && document.getElementById(o.tags);
+    if (tb) {
+      const cnt = {}; items.forEach((n) => { if (n.tag) cnt[n.tag] = (cnt[n.tag] || 0) + 1; });
+      const order = ["치안·테러", "시위·통제", "휴일·행사", "정치·선거", "전력·생활", "날씨·재난", "경제·유가", "한국·외교", "기타"].filter((t) => cnt[t]);
+      tb.innerHTML = ["전체"].concat(order).map((t) => `<button type="button" class="bnews-f${t === tagF ? " on" : ""}" data-t="${escapeHtml(t)}">${escapeHtml(t)} <small>${t === "전체" ? items.length : cnt[t]}</small></button>`).join("");
+      tb.onclick = (e) => { const b = e.target.closest("[data-t]"); if (b) { tagF = b.dataset.t; draw(); } };
+    }
   }
   document.querySelectorAll(`.tab-btn[data-view="${o.view}"]`).forEach((b) => b.addEventListener("click", load));
   if (document.querySelector(`#${o.view}.active`)) load();
 }
 makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, ko: "bnewsKo", iq: "bnewsIq", koN: "bnewsKoN", iqN: "bnewsIqN", count: "bnewsCount", meta: "bnewsMeta" });
+makeNewsView({ view: "view-iraq-issues", json: "iraq-issues.json", days: 7, ko: "inewsKo", iq: "inewsIq", koN: "inewsKoN", iqN: "inewsIqN", count: "inewsCount", meta: "inewsMeta", tags: "inewsTags" });
 makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30, ko: "hnewsKo", iq: "hnewsIq", koN: "hnewsKoN", iqN: "hnewsIqN", count: "hnewsCount", meta: "hnewsMeta" });
 
 /* ==========================================================
