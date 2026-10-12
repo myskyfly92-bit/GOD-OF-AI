@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T00:14:32.935Z",
+  "generatedAt": "2026-10-12T00:32:31.935Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -8,13 +8,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNX21CZm93bjhaOXV5a2RxX3ZleW1DaFY2cEJvdEg0aTlsOE5ZX0h5RzBsMXpfM2F4RDgwSDVBR202Q243ejlBUGdwVDJ4REp0ZVItcXlnWmVreGlySjVHai12dDJad3hCVFdodUpDUEtHMXRWRDNyX0ViVzhHTzZlSWM0cU5FbjEzREhneEpETEVfbW9PcHFtLU1jVQ?oc=5",
       "date": "2026-10-06T02:45:00.000Z"
-    },
-    {
-      "title": "약국 이름에 ‘창고’, ‘마트’, ‘공장’, ‘최대’, ‘특가’ 못 쓴다... 「약사법 시행규칙」 개정 추진",
-      "source": "보건복지부 대표홈페이지",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSGtLOHFJSGdRa3ZfelRLQW9iU3o5Qlp6UnhPVFRUNmkxZUE0OG1xTGZVY2ZUREthZlRtclpkYUEzLV9XczJ0dTdLaF9VNlVaeHlfVnhWSEw3QzhaYlExb0tfSkJBdkZzM2tranUwcmJ2akliODN4Q3kyNVlFbzBtWVdCc1ZmZ2k2eXBtUnVSLU16WjNtTGhjYy1FTQ?oc=5",
-      "date": "2026-10-06T07:53:00.000Z"
     },
     {
       "title": "보도자료 - [10.8.목.조간] 임신당뇨병 산모의 자녀, 당뇨병 위험 최대 4배 이상 높아",
@@ -80,11 +73,18 @@
       "date": "2025-12-16T15:48:42.000Z"
     },
     {
-      "title": "주간건강과질병",
+      "title": "신고현황",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1xZW96NG9LR2QtQmhlT0loV1Z6TVc0TlU5V0RhejRTVWx1akd0cnMzTUdtS2h4Q3NpRHQzYzdCb0dmQk1nSTVrekxEY3lYNmdEbkhlMEhR?oc=5",
-      "date": "2025-12-16T12:33:23.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MbExBX0JEd0RiZmxBQ3djZnFIQjdYUGwycC1BdUlvMDFDV0VOLUFmbU5QSU00TmNINE5BdmE5NlRVSThkN0c3TVJDa3dHRFJJWlNKWkZ3?oc=5",
+      "date": "2025-12-16T16:42:42.000Z"
+    },
+    {
+      "title": "약국 이름에 ‘창고’, ‘마트’, ‘공장’, ‘최대’, ‘특가’ 못 쓴다... 「약사법 시행규칙」 개정 추진",
+      "source": "보건복지부 대표홈페이지",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSGtLOHFJSGdRa3ZfelRLQW9iU3o5Qlp6UnhPVFRUNmkxZUE0OG1xTGZVY2ZUREthZlRtclpkYUEzLV9XczJ0dTdLaF9VNlVaeHlfVnhWSEw3QzhaYlExb0tfSkJBdkZzM2tranUwcmJ2akliODN4Q3kyNVlFbzBtWVdCc1ZmZ2k2eXBtUnVSLU16WjNtTGhjYy1FTQ?oc=5",
+      "date": "2026-10-06T07:53:00.000Z"
     }
   ]
 }
