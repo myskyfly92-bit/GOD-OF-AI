@@ -1,6 +1,55 @@
 {
-  "generatedAt": "2026-10-12T19:21:33.877Z",
+  "generatedAt": "2026-10-12T19:41:47.520Z",
   "items": [
+    {
+      "title": "PKK evacuates four areas in north Iraq: security sources",
+      "source": "Hürriyet Daily News",
+      "link": "https://www.hurriyetdailynews.com/pkk-evacuates-four-areas-in-north-iraq-security-sources-228038",
+      "date": "2026-10-12T19:31:09.000Z",
+      "lang": "en",
+      "titleKo": "PKK, 이라크 북부 4개 지역 대피: 보안 소식통",
+      "url": "https://www.hurriyetdailynews.com/pkk-evacuates-four-areas-in-north-iraq-security-sources-228038",
+      "body": "Turkish security sources have announced that the PKK has evacuated four residential areas in northern Iraq in line with the implementation of the “terror-free Türkiye” project.\nThe sources reported that the area evacuated on Oct. 8 by the PKK was the Baze region near Metina in northern Iraq.\n“This development is a clear indication that the terror-free Türkiye project is advancing with determination,” the sources said.\nLaunched in late 2024, Türkiye’s anti-terror bid stipulates the full disarmament and dissolution of the PKK, ending decades-old terrorism that claimed the lives of more than 40,000 people.\nThe process was further strengthened and matured after the Turkish parliament overwhelmingly voted in favor of a comprehensive framework law that tackles political and social aspects of the terror-free Türkiye bid.",
+      "bodyKo": "터키 보안 소식통은 PKK가 '테러 없는 투르키예' 프로젝트 시행에 맞춰 이라크 북부의 주거 지역 4곳에서 철수했다고 발표했습니다.\n소식통은 PKK가 지난 10월 8일 철수한 지역은 이라크 북부 메티나 인근 바제 지역이라고 전했다.\n소식통은 \"이러한 발전은 테러 없는 투르키예 프로젝트가 결단력 있게 전진하고 있다는 분명한 증거\"라고 말했습니다.\n2024년 후반에 시작된 투르키예의 대테러 입찰은 PKK의 완전한 군축과 해체를 규정하고 4만 명 이상의 목숨을 앗아간 수십 년 된 테러리즘을 종식시킵니다.\n터키 의회가 테러 없는 투르키예 입찰의 정치적, 사회적 측면을 다루는 포괄적인 기본법에 압도적으로 찬성표를 던진 후 이 과정은 더욱 강화되고 성숙해졌습니다.",
+      "tried": true,
+      "count": 8,
+      "sources": [
+        "The Washington Post",
+        "The National",
+        "Al-Monitor",
+        "UA.NEWS",
+        "Arab News",
+        "Türkiye Today"
+      ],
+      "related": [
+        {
+          "titleKo": "쿠르드족 PKK 무장세력, 터키와의 평화 협상 일환으로 이라크 북부 캠프 4곳 철수",
+          "source": "The Washington Post",
+          "link": "https://www.washingtonpost.com/world/2026/10/12/turkey-peace-pkk-vacate-camps-northern-iraq/9b10e174-c63f-11f1-aefb-abe4112d087e_story.html"
+        },
+        {
+          "titleKo": "PKK, 이라크 쿠르디스탄의 터키 국경 지역에서 철수",
+          "source": "The National",
+          "link": "https://www.thenationalnews.com/news/mena/2026/10/12/pkk-withdraws-from-turkish-border-area-in-iraqi-kurdistan/"
+        },
+        {
+          "titleKo": "PKK, 터키 평화 과정 속에서 이라크 북부 메티나에서 철수 - Al-Monitor",
+          "source": "Al-Monitor",
+          "link": "https://www.al-monitor.com/originals/2026/10/pkk-pulls-out-metina-northern-iraq-amid-turkey-peace-process"
+        },
+        {
+          "titleKo": "PKK가 이라크에 캠프 4곳을 떠났다고 터키 소식통이 전했습니다.",
+          "source": "UA.NEWS",
+          "link": "https://ua.news/en/world/pkk-zalishila-chotiri-tabori-v-iraku-za-danimi-turechchini-cyprus-mail"
+        },
+        {
+          "titleKo": "쿠르드 노동자당 무장세력이 이라크 북부의 일부 수용소를 떠났다고 터키 소식통이 전했습니다.",
+          "source": "Arab News",
+          "link": "https://www.arabnews.com/middle-east/kurdistan-workers-party-militants-quit-some-camps-in-north-iraq-turkish-sources-say-3005932"
+        }
+      ],
+      "tag": "치안·테러"
+    },
     {
       "title": "العراق والسعودية يبحثان التعاون في قطاع الطاقة ودعم استقرار المنظومة الكهربائية",
       "source": "وكالة الانباء العراقية (واع)",
@@ -12,19 +61,46 @@
       "body": "",
       "bodyKo": "",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
       "tag": "전력·생활"
     },
     {
-      "title": "Iraq, Saudi Arabia discuss energy cooperation as electricity and oil ministers meet in Riyadh",
+      "title": "Iraq’s Minister of Electricity visits Riyadh to attend WPC Energy Congress",
       "source": "Iraqi News",
-      "link": "https://www.iraqinews.com/iraq/iraq-saudi-arabia-discuss-energy-cooperation-as-electricity-and-oil-ministers-meet-in-riyadh/",
+      "link": "https://www.iraqinews.com/iraq/iraqs-minister-of-electricity-visits-riyadh-to-attend-wpc-energy-congress/",
       "date": "2026-10-12T18:37:28.000Z",
       "lang": "en",
-      "titleKo": "이라크, 사우디아라비아, 리야드에서 전기 및 석유 장관 회의에서 에너지 협력 논의",
-      "url": "https://www.iraqinews.com/iraq/iraq-saudi-arabia-discuss-energy-cooperation-as-electricity-and-oil-ministers-meet-in-riyadh/",
-      "body": "Iraq, Saudi Arabia discuss energy cooperation as electricity and oil ministers meet in Riyadh\nIraq’s Minister of Electricity Ali Saadi Waheeb (left), Iraq’s Minister of Oil Basim Mohammed Khudair (center), and Saudi Energy Minister Prince Abdulaziz bin Salman (right) meet in Riyadh on the sidelines of the 25th WPC Energy Congress to discuss strengthening bilateral energy cooperation.\nRiyadh (IraqiNews.com) — Iraq’s Oil Minister, Basim Mohammed Khudair, and Iraq’s Electricity Minister, Ali Saadi Waheeb, met with Saudi Energy Minister Prince Abdulaziz bin Salman in Riyadh to discuss extending bilateral energy cooperation and boosting coordination between the two nations.\nThe meeting was held on the sidelines of the 25th WPC Energy Congress, sponsored by Saudi Arabia and attended by energy ministers, industry executives, and representatives from major international energy firms.",
-      "bodyKo": "이라크, 사우디아라비아, 리야드에서 전기 및 석유 장관 회의에서 에너지 협력 논의\n알리 사디 와히브 이라크 전기부 장관(왼쪽), 바심 모하메드 쿠다이르 이라크 석유부 장관(가운데), 압둘아지즈 빈 살만 사우디 에너지 장관(오른쪽)이 제25차 WPC 에너지 총회에 참석해 리야드에서 만나 양국 에너지 협력 강화에 대해 논의하고 있다.\n리야드(IraqiNews.com) – 이라크 석유장관 바심 모하메드 쿠다이르(Basim Mohammed Khudair)와 이라크 전기장관 알리 사디 와히브(Ali Saadi Waheeb)가 리야드에서 사우디 에너지 장관 압둘아지즈 빈 살만(Abdulaziz bin Salman) 왕자를 만나 양국 간 에너지 협력 확대와 협력 강화에 대해 논의했습니다.\n이번 회의는 사우디아라비아가 후원하고 에너지 장관, 업계 임원, 주요 국제 에너지 기업 대표들이 참석한 제25차 WPC 에너지 회의와 별도로 열렸습니다.",
+      "titleKo": "이라크 전기부 장관, WPC 에너지 회의 참석 위해 리야드 방문",
+      "url": "https://www.iraqinews.com/iraq/iraqs-minister-of-electricity-visits-riyadh-to-attend-wpc-energy-congress/",
+      "body": "Iraq’s Minister of Electricity visits Riyadh to attend WPC Energy Congress\nIraq’s Minister of Electricity Ali Saadi Waheeb with Saudi Energy Minister Prince Abdulaziz bin Salman and Qatar’s Minister of State for Energy Affairs Saad bin Sherida Al Kaabi during the 25th WPC Energy Congress in Riyadh.\nBaghdad (IraqiNews.com) – Iraq’s Minister of Electricity, Ali Saadi Waheeb, attended the 25th WPC Energy Congress in Riyadh on Monday, where he met with key international energy authorities and discussed ways to develop Iraq’s electrical industry and promote regional collaboration.\nWaheeb attended the event with Iraq’s Minister of Oil, Basim Mohammed Khudair, as Saudi Arabia welcomed ministers, industry executives, and officials from international energy corporations to discuss energy security, investment, and technological innovation.",
+      "bodyKo": "이라크 전기부 장관, WPC 에너지 회의 참석 위해 리야드 방문\n리야드에서 열린 제25차 WPC 에너지 회의에 참석한 이라크 전기부 장관 알리 사디 와히브(Ali Saadi Waheeb)와 사우디 에너지 장관 압둘라지즈 빈 살만(Abdulaziz bin Salman) 왕자, 카타르 에너지부 장관 사아드 빈 셰리다 알 카비(Saad bin Sherida Al Kaabi).\n바그다드(IraqiNews.com) - 알리 사디 와히브(Ali Saadi Waheeb) 이라크 전기부 장관은 월요일 리야드에서 열린 제25차 WPC 에너지 회의에 참석하여 주요 국제 에너지 당국자들과 만나 이라크의 전기 산업 발전과 지역 협력 증진 방안을 논의했습니다.\nWaheeb는 이라크 석유부 장관 Basim Mohammed Khudair와 함께 행사에 참석했으며, 사우디아라비아는 장관, 업계 임원, 국제 에너지 기업 관계자들을 환영하여 에너지 안보, 투자 및 기술 혁신에 대해 논의했습니다.",
       "tried": true,
+      "count": 4,
+      "sources": [
+        "Iraqi News",
+        "شفقنا العراق"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크, 사우디아라비아, 리야드에서 전기 및 석유 장관 회의에서 에너지 협력 논의",
+          "source": "Iraqi News",
+          "link": "https://www.iraqinews.com/iraq/iraq-saudi-arabia-discuss-energy-cooperation-as-electricity-and-oil-ministers-meet-in-riyadh/"
+        },
+        {
+          "titleKo": "전기부 장관, 세계 에너지 회의에 참석 - 이라크 샤파크나",
+          "source": "شفقنا العراق",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE15eWtZamVMZ3pWcm9zTFQtbEg5SlZ5WEZhR0M1ajg1SC1wUnhRQ0RUZWRCZF9tMnI4ZzlzSVB3VV9CNjY1eTUwbkZxNnk?oc=5"
+        },
+        {
+          "titleKo": "사우디 장관이 도시를 '에너지 안보의 수도'로 선언함에 따라 이라크는 리야드 에너지 정상 회담에 참석합니다.",
+          "source": "Iraqi News",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdkNVYlNBckc5Uko2Rnk1UHNqVV80Rjl4a3BWX3N1WHZGY2tEWkE5WGNxdlQ2b05ERkFVeE9PV3Ytb2xNbW1NY2NTS0c5bGVmT0JuVWxiOGllckZaSUhYYjNycnBLdFZPUzRHRi1Uak5hZTdvaDlQS1BnLW45bzY3SFhqcTN2Z0NVQk5PTGgzZkpQSmJmSUJpQTVtYW5KSmZsbGwtbXliQ1BuMWEtbmtXX2FEVHcxWnRUUW5yTUg1ZU5RUQ?oc=5"
+        }
+      ],
       "tag": "전력·생활"
     },
     {
@@ -38,33 +114,12 @@
       "body": "Tom Barrack meets Iraq’s top judge Faiq Zaidan in Baghdad\nBaghdad (IraqiNews.com) – US Envoy Tom Barrack met with Iraq’s top judicial leadership in Baghdad on Monday, as Washington and Baghdad strive to rebuild their bilateral relationship in the face of regional tensions and a shifting security situation.\nBarrack met with Judge Faiq Zaidan, President of Iraq’s Supreme Judicial Council, to explore ways to strengthen bilateral legal and judicial collaboration.\nThe meeting comes at a difficult time for the region, after fatal assaults on Riyadh’s international airport over the weekend, which Saudi officials blamed on Yemen’s Houthi movement.\nIn a statement issued after the negotiations, Barrack praised his meeting with Zaidan as positive and emphasized the necessity of an independent judiciary for Iraq’s future.",
       "bodyKo": "Tom Barrack이 바그다드에서 이라크 최고 판사 Faiq Zaidan을 만났습니다.\n바그다드(IraqiNews.com) – 워싱턴과 바그다드가 지역적 긴장과 변화하는 안보 상황에 직면해 양국 관계를 재건하기 위해 노력하는 가운데 톰 배랙 미국 특사는 월요일 바그다드에서 이라크 최고 사법 지도자들을 만났습니다.\nBarrack은 이라크 최고사법위원회 의장인 Faiq Zaidan 판사를 만나 양국간 법률 및 사법 협력을 강화할 수 있는 방법을 모색했습니다.\n이번 회의는 지난 주말 리야드 국제공항에 대한 치명적인 공격이 발생한 후 사우디 관리들이 예멘의 후티 운동을 비난한 이후 지역적으로 어려운 시기에 이루어졌습니다.\n협상 후 발표된 성명에서 Barrack은 Zaidan과의 만남을 긍정적으로 칭찬하고 이라크의 미래를 위해 독립적인 사법부의 필요성을 강조했습니다.",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "Iraqi News"
+      ],
+      "related": [],
       "tag": "기타"
-    },
-    {
-      "title": "Kurdish PKK militants pull out of 4 camps in northern Iraq as part of peace process with Turkey",
-      "source": "The Washington Post",
-      "link": "https://www.washingtonpost.com/world/2026/10/12/turkey-peace-pkk-vacate-camps-northern-iraq/9b10e174-c63f-11f1-aefb-abe4112d087e_story.html",
-      "date": "2026-10-12T18:01:09.000Z",
-      "lang": "en",
-      "titleKo": "쿠르드족 PKK 무장세력, 터키와의 평화 협상 일환으로 이라크 북부 캠프 4곳 철수",
-      "url": "https://www.washingtonpost.com/world/2026/10/12/turkey-peace-pkk-vacate-camps-northern-iraq/9b10e174-c63f-11f1-aefb-abe4112d087e_story.html",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "tag": "치안·테러"
-    },
-    {
-      "title": "Iraq’s Minister of Electricity visits Riyadh to attend WPC Energy Congress",
-      "source": "Iraqi News",
-      "link": "https://www.iraqinews.com/iraq/iraqs-minister-of-electricity-visits-riyadh-to-attend-wpc-energy-congress/",
-      "date": "2026-10-12T17:57:44.000Z",
-      "lang": "en",
-      "titleKo": "이라크 전기부 장관, WPC 에너지 회의 참석 위해 리야드 방문",
-      "url": "https://www.iraqinews.com/iraq/iraqs-minister-of-electricity-visits-riyadh-to-attend-wpc-energy-congress/",
-      "body": "Iraq’s Minister of Electricity visits Riyadh to attend WPC Energy Congress\nIraq’s Minister of Electricity Ali Saadi Waheeb with Saudi Energy Minister Prince Abdulaziz bin Salman and Qatar’s Minister of State for Energy Affairs Saad bin Sherida Al Kaabi during the 25th WPC Energy Congress in Riyadh.\nBaghdad (IraqiNews.com) – Iraq’s Minister of Electricity, Ali Saadi Waheeb, attended the 25th WPC Energy Congress in Riyadh on Monday, where he met with key international energy authorities and discussed ways to develop Iraq’s electrical industry and promote regional collaboration.\nWaheeb attended the event with Iraq’s Minister of Oil, Basim Mohammed Khudair, as Saudi Arabia welcomed ministers, industry executives, and officials from international energy corporations to discuss energy security, investment, and technological innovation.",
-      "bodyKo": "이라크 전기부 장관, WPC 에너지 회의 참석 위해 리야드 방문\n리야드에서 열린 제25차 WPC 에너지 회의에 참석한 이라크 전기부 장관 알리 사디 와히브(Ali Saadi Waheeb)와 사우디 에너지 장관 압둘라지즈 빈 살만(Abdulaziz bin Salman) 왕자, 카타르 에너지부 장관 사아드 빈 셰리다 알 카비(Saad bin Sherida Al Kaabi).\n바그다드(IraqiNews.com) - 알리 사디 와히브(Ali Saadi Waheeb) 이라크 전기부 장관은 월요일 리야드에서 열린 제25차 WPC 에너지 회의에 참석하여 주요 국제 에너지 당국자들과 만나 이라크의 전기 산업 발전과 지역 협력 증진 방안을 논의했습니다.\nWaheeb는 이라크 석유부 장관 Basim Mohammed Khudair와 함께 행사에 참석했으며, 사우디아라비아는 장관, 업계 임원, 국제 에너지 기업 관계자들을 환영하여 에너지 안보, 투자 및 기술 혁신에 대해 논의했습니다.",
-      "tried": true,
-      "tag": "전력·생활"
     },
     {
       "title": "وزير الكهرباء يؤكد حرص العراق على توسيع التعاون مع تركيا والجزائر",
@@ -77,6 +132,11 @@
       "body": "سياسية أمنية اقتصاد محلية دنيا و سمارت رياضة تقارير عالم النوافذ فيديو انفوجرافيك آراء",
       "bodyKo": "정치, 안보, 경제, 지역, 세계와 스마트, 스포츠, 리포트, 월드오브윈도우, 영상, 인포그래픽, 오피니언",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة موازين نيوز"
+      ],
+      "related": [],
       "tag": "전력·생활"
     },
     {
@@ -90,6 +150,11 @@
       "body": "المعلومة/تقرير.. رغم الرهان المتواصل على الاستثمار الخارجي بوصفه أحد المسارات الأساسية لتطوير الاقتصاد العراقي، لا تزال أزمات الكهرباء والبنية التحتية حاضرة بقوة، في وقت لم تنعكس فيه الاستثمارات والعقود المعلنة بالمستوى المأمول على حياة المواطنين، ما يفتح باب التساؤلات بشأن كفاءة إدارة المشاريع، وآليات تنفيذ العقود، ومدى قدرة الجهات الحكومية على تحويل الأموال والاتفاقيات إلى خدمات فعلية. وبهذا الصدد أكد عضو ائتلاف دولة القانون صلاح بوشي، لـ/المعلومة /، إن \"الاستثمار لا ينبغي التعامل معه بوصفه غاية بحد ذاته، أو الاكتفاء بقيمة العقود المعلنة من دون النظر إلى نتائجها الفعلية داخل الاقتصاد العراقي\"، مبيناً أن \"الاستثمارات التي لا تسهم في توسيع القاعدة الإنتاجية، ونقل التكنولوجيا، وتعزيز قدرات الشركات الوطنية، تبقى مساهمتها في التنمية دون المستوى المأمول\". وأضاف أن \"العراق بحاجة إلى الانتقال من سياسة استقطاب رؤوس الأموال إلى سياسة تعظيم العائد الوطني منها، من خلال مراجعة العقود الاستثمارية ومعدلات الإنجاز، وربط الحوافز المقدمة للمستثمرين بمؤشرات واضحة تتعلق بالإنتاج والتشغيل ونقل الخبرات\".",
       "bodyKo": "정보/보고.. 이라크 경제 발전을 위한 기본 경로 중 하나로 외국인 투자에 대한 지속적인 투자에도 불구하고 전력 및 기반 시설 위기는 여전히 존재하며, 발표된 투자 및 계약이 시민들의 삶에 기대하는 수준으로 반영되지 않아 프로젝트 관리의 효율성, 계약 이행 메커니즘, 자금 및 계약을 실제 서비스로 전환하는 정부 기관의 능력 범위에 대한 의문이 제기됩니다. 이에 대해 법치연합의 살라 부시 의원은 “투자는 그 자체를 목적으로 삼거나 이라크 경제 내에서의 실제 결과를 고려하지 않고 발표된 계약의 가치에 만족해서는 안 된다”며 “생산 기반 확대, 기술 이전, 자국 기업의 역량 강화에 기여하지 않는 투자는 발전 기여도가 원하는 수준에 미치지 못한다”고 밝혔다. 이어 \"이라크는 투자계약 등을 검토해 자본유치 정책에서 국민수익 극대화 정책으로 전환해야 한다\"고 덧붙였다.",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "المعلومة"
+      ],
+      "related": [],
       "tag": "기타"
     },
     {
@@ -103,58 +168,78 @@
       "body": "In a panel discussion at the MERI forum in Erbil, ambassadors from Italy, Finland and Romania to Iraq on Monday hailed the country's transition to a new phase following the withdrawal of international",
       "bodyKo": "월요일 아르빌에서 열린 MERI 포럼의 패널 토론에서 이탈리아, 핀란드, 루마니아의 이라크 대사들은 국제 연합의 철수 이후 국가가 새로운 단계로 전환한 것을 환영했습니다.",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
       "tag": "한국·외교"
     },
     {
-      "title": "Shafaq News..Four drug traffickers sentenced in Iraq's Dhi Qar",
+      "title": "Four drug traffickers sentenced in Iraq's Dhi Qar",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/en/Security/Four-drug-traffickers-sentenced-in-Iraq-s-Dhi-Qar",
       "date": "2026-10-12T16:35:32.000Z",
       "lang": "en",
-      "titleKo": "샤팍뉴스..이라크 디카르서 마약 밀매범 4명 징역형 선고",
+      "titleKo": "이라크 디카르서 마약 밀매범 4명 징역형 선고",
       "url": "https://shafaq.com/en/Security/Four-drug-traffickers-sentenced-in-Iraq-s-Dhi-Qar",
       "body": "Shafaq News- Dhi Qar The Dhi Qar Criminal Court sentenced four people convicted of drug trafficking on Monday, an informed source told Shafaq News. The source said two defendants received five-year\nLast week, anti-narcotics forces in Wasit province seized 12 kilograms of opium and arrested an Asian national, according to the Interior Ministry. In Basra, authorities separately destroyed about 85 kilograms of drugs, 65,000 psychotropic pills and other seized substances after completing legal procedures.",
       "bodyKo": "Shafaq News- Dhi Qar Dhi Qar 형사법원은 월요일 마약 밀매 혐의로 유죄 판결을 받은 4명에게 형을 선고했다고 소식통이 Shafaq News에 말했습니다. 소식통은 두 명의 피고인이 5년 형을 받았다고 말했습니다.\n내무부에 따르면 지난주 와싯(Wasit) 지역의 마약단속반이 아편 12kg을 압수하고 아시아인 한 명을 체포했다고 한다. 바스라에서는 당국이 법적 절차를 마친 뒤 마약 약 85kg, 향정신성 약 6만5000개, 기타 압수 물질을 별도로 폐기했다.",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
       "tag": "치안·테러"
     },
     {
-      "title": "PKK withdraws from Turkish border area in Iraqi Kurdistan",
-      "source": "The National",
-      "link": "https://www.thenationalnews.com/news/mena/2026/10/12/pkk-withdraws-from-turkish-border-area-in-iraqi-kurdistan/",
-      "date": "2026-10-12T16:00:32.000Z",
-      "lang": "en",
-      "titleKo": "PKK, 이라크 쿠르디스탄의 터키 국경 지역에서 철수",
-      "url": "https://www.thenationalnews.com/news/mena/2026/10/12/pkk-withdraws-from-turkish-border-area-in-iraqi-kurdistan/",
-      "body": "Turkish security sources confirm move as part of militant group's dissolution process\nMilitants from the Kurdistan Workers’ Party (PKK) have withdrawn from four camps in northern Iraq , Turkish security sources said on Monday, as part of a drawn-out disarmament process that could eventually include the return of former militants to Turkey .\nFighters from the PKK withdrew from “four shelters” in the Metina area near the border with Turkey in Iraq’s Kurdistan region, security sources told state news agency Anadolu.\nThe PKK last week said it had evacuated four “war tunnels” in the Metina area and withdrawn fighters from Turkey in the days before that. The moves showed it had “fulfilled” its strategy “to end the armed struggle against Turkey”, the group said.\nThe Turkish sources did not mention withdrawals from Turkey but said the PKK's departure from the locations in Iraq’s Kurdistan region was part of efforts to evacuate locations that “pose a risk of conflict to Turkey’s security”.",
-      "bodyKo": "터키 보안 소식통은 무장 단체 해체 과정의 일환으로 움직임을 확인했습니다.\n쿠르드 노동자당(PKK) 소속 무장세력이 이라크 북부에 있는 4개 수용소에서 철수했다고 터키 보안 소식통이 월요일 밝혔습니다. 이는 결국 전 무장세력의 터키 귀환을 포함할 수 있는 장기간의 군축 과정의 일환입니다.\nPKK 소속 전사들은 이라크 쿠르드 지역의 터키 국경 근처 메티나 지역의 '4개 대피소'에서 철수했다고 보안 소식통이 국영 통신사 아나돌루에 말했습니다.\n지난 주 PKK는 메티나 지역에 있는 4개의 \"전쟁 터널\"을 대피시켰고 그 며칠 전에 터키에서 전사들을 철수했다고 말했습니다. 이러한 움직임은 \"터키에 대한 무장투쟁을 종식시키려는\" 전략을 \"이행\"했다는 것을 보여준다고 이 단체는 말했습니다.\n터키 소식통은 터키에서의 철수에 대해서는 언급하지 않았지만 PKK가 이라크 쿠르드 지역에서 철수한 것은 \"터키 안보에 충돌 위험이 있는\" 지역을 대피시키려는 노력의 일환이라고 말했습니다.",
-      "tried": true,
-      "tag": "치안·테러"
-    },
-    {
-      "title": "Iranian drones hit Iranian Kurdish opposition camp in northern Iraq",
-      "source": "The Jerusalem Post",
-      "link": "https://www.jpost.com/middle-east/iran-news/article-911436",
+      "title": "Iranian drones attack KDPI camp in Iraq’s Koya — Jerusalem Post",
+      "source": "UA.NEWS",
+      "link": "https://ua.news/en/world/iranski-droni-atakuvali-tabir-kdpi-v-irakskomu-koyi-jerusalem-post",
       "date": "2026-10-12T15:45:38.000Z",
       "lang": "en",
-      "titleKo": "이란 드론, 이라크 북부 이란 쿠르드족 야당 캠프 공격",
-      "url": "https://www.jpost.com/middle-east/iran-news/article-911436",
-      "body": "Iran has carried out more than 1,000 drone and missile attacks on the Kurdistan Region. Many of them targeted Kurdish opposition groups.",
-      "bodyKo": "이란은 쿠르드 지역에 대해 1000회 이상의 드론과 미사일 공격을 감행했다. 그들 중 다수는 쿠르드 반군을 표적으로 삼았습니다.",
+      "titleKo": "이란 드론, 이라크 코야의 KDPI 캠프 공격",
+      "url": "https://ua.news/en/world/iranski-droni-atakuvali-tabir-kdpi-v-irakskomu-koyi-jerusalem-post",
+      "body": "Iranian drones struck the KDPI’s Azadi camp in Koya, northern Iraq. The camp had been evacuated, and no casualties were reported.\n--> Iranian drones attacked the Azadi camp of the Kurdistan Democratic Party of Iran (KDPI) in the city of Koya in the Kurdistan Region of northern Iraq. The Jerusalem Post reported this, citing a party statement and local Kurdish media.\nThe KDPI said that one drone struck the camp at 12:01 p.m. According to Rudaw, two drones hit the facility in the Koya district of Erbil province. A senior party official and a security source told the outlet that there was material damage, while no one was killed or injured.\nAs Rudaw notes, the camp was evacuated before the attack, so no one remained on its territory. A security source also confirmed a second drone strike on the same location.",
+      "bodyKo": "이란 드론이 이라크 북부 코야에 있는 KDPI의 아자디 캠프를 공격했습니다. 캠프는 대피했으며 사상자는보고되지 않았습니다.\n--> 이란 드론이 이라크 북부 쿠르드 지역 코야 시에 있는 이란 쿠르드 민주당(KDPI)의 아자디 캠프를 공격했습니다. 예루살렘 포스트는 당 성명과 현지 쿠르드 언론을 인용해 이같이 보도했습니다.\nKDPI는 이날 오후 12시 1분쯤 드론 1대가 캠프를 공격했다고 밝혔다. Rudaw에 따르면 두 대의 드론이 아르빌(Erbil) 지방 코야(Koya) 지역의 시설에 충돌했습니다. 당 고위 간부와 보안 소식통은 매체에 \"물적 피해가 발생했지만 숨지거나 다친 사람은 없다\"고 전했다.\nRudaw가 지적했듯이 캠프는 공격 전에 대피되었으므로 아무도 그 영토에 남아 있지 않았습니다. 보안 소식통은 또한 같은 장소에서 두 번째 드론 공격이 이루어졌다고 확인했습니다.",
       "tried": true,
+      "count": 3,
+      "sources": [
+        "The Jerusalem Post",
+        "UA.NEWS",
+        "The Times of India"
+      ],
+      "related": [
+        {
+          "titleKo": "이란 드론, 이라크 북부 이란 쿠르드족 야당 캠프 공격",
+          "source": "The Jerusalem Post",
+          "link": "https://www.jpost.com/middle-east/iran-news/article-911436"
+        },
+        {
+          "titleKo": "두 대의 드론이 코야 근처 야당 캠프를 공격함에 따라 이란의 쿠르드족 라이벌들이 다시 이라크를 표적으로 삼았습니다.",
+          "source": "The Times of India",
+          "link": "https://timesofindia.indiatimes.com/videos/international/irans-kurdish-rivals-targeted-in-iraq-again-as-two-drones-strike-opposition-camp-near-koya/videoshow/134893912.cms"
+        }
+      ],
       "tag": "치안·테러"
     },
     {
-      "title": "Shafaq News..Iraq weighs agency mergers, spending cuts in 2027 budget",
+      "title": "Iraq weighs agency mergers, spending cuts in 2027 budget",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/en/Iraq/Iraq-weighs-agency-mergers-spending-cuts-in-2027-budget",
       "date": "2026-10-12T15:34:54.000Z",
       "lang": "en",
-      "titleKo": "Shafaq News..이라크, 기관 합병, 2027년 예산 지출 삭감 고려",
+      "titleKo": "이라크, 기관 합병, 2027년 예산 지출 삭감 고려",
       "url": "https://shafaq.com/en/Iraq/Iraq-weighs-agency-mergers-spending-cuts-in-2027-budget",
       "body": "Shafaq News- Baghdad An Iraqi government team has proposed wide-ranging measures to curb public spending under the 2027 federal budget, including examining the possibility of merging some independent\nThe team, tasked by Prime Minister Ali al-Zaidi with assessing the financial crisis and proposing solutions, has submitted a series of recommendations in coordination with the parliamentary legal committee to ease pressure on state finances and limit unnecessary spending, the source said. The proposals include reviewing the oil sector and crude oil export procedures, merging some independent bodies, tightening oversight of dollar transactions, cutting government spending, and reviewing salaries for certain groups and pension payments to some officials.\nAccording to the source, to avoid political controversy over some of the proposed measures, the team is seeking to include a general provision in the 2027 budget bill allowing the government to defer financially burdensome obligations and me",
       "bodyKo": "Shafaq News- 바그다드 이라크 정부 팀은 2027년 연방 예산에 따라 공공 지출을 억제하기 위한 광범위한 조치를 제안했으며 일부 독립적인 합병 가능성을 검토했습니다.\n소식통은 알리 알자이디 총리가 금융 위기를 평가하고 해결책을 제안하는 임무를 맡은 팀이 의회 법률위원회와 협력하여 국가 재정에 대한 압박을 완화하고 불필요한 지출을 제한하기 위한 일련의 권고안을 제출했다고 말했습니다. 제안에는 석유 부문 및 원유 수출 절차 검토, 일부 독립 기관 통합, 달러 거래에 대한 감독 강화, 정부 지출 삭감, 특정 그룹의 급여 및 일부 공무원에 대한 연금 지급 검토 등이 포함됩니다.\n소식통에 따르면, 제안된 일부 법안에 대한 정치적 논란을 피하기 위해 팀은 2027년 예산안에 정부가 재정적으로 부담스러운 의무를 연기할 수 있는 일반 조항을 포함하는 방안을 모색하고 있습니다.",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
       "tag": "경제·유가"
     },
     {
@@ -168,111 +253,91 @@
       "body": "البصرة / المرسى نيوز دعا المجلس السياسي في محافظة البصرة بأطيافه ومكوناته كافة الحكومة الإتحادية وصناع القرار من المكونات السياسية وغيرها من مؤسسات حاكمة\nوقال المجلس في بيان، الاثنين، ان الظروف الراهنة التي يمر بها بلدنا العزيز وما يمر به العالم والمنطقة من تقلبات سياسية وعسكرية واقتصادية بات من الضروري عقد العزم والنية على إشراك كامل القوى السياسية في إيجاد حلول مناسبة تراعي ظروف المرحلة والإحتياجات المستقبلية للعراق بلداً وشعباً.\nأولاّ_ متابعة الأسواق المحلية ، واتخاذ الإجراءات الأمنية والفنية لتقليل الفارق بين السعر الرسمي لتصريف الدولار أمام الدينار العراقي والسعر الموازي في الأسواق المحلية.\nثانياً_متابعة أسعار المواد المطروحة كافة ولا سيما أسعار السلع الضرورية والمنتجة محلياً.\nثالثاً_طرح برنامج السوق التعاوني الحكومي ، و بيع السلع الضرورية والإستهلاكية بأسعار مناسبة على وفق دفاتر اشتراك لكل أسرة عراقية.",
       "bodyKo": "바스라 / 알 마르사 뉴스 스펙트럼과 구성 요소를 갖춘 바스라 주 정치 위원회는 모든 연방 정부와 정치 구성 요소 및 기타 통치 기관의 의사 결정자들을 불러 모았습니다.\n위원회는 월요일 성명을 통해 사랑하는 조국이 겪고 있는 현재 상황과 세계와 지역이 겪고 있는 정치적, 군사적, 경제적 변동을 해결하는 데 필요하다고 밝혔으며, 무대 상황과 이라크 국가와 국민의 미래 요구를 고려한 적절한 해결책을 찾는 데 모든 정치 세력을 참여시킬 계획이라고 밝혔습니다.\n첫째, 현지 시장에 대한 후속 조치를 취하고, 이라크 디나르에 대한 달러의 공식 환율과 현지 시장의 병행 가격 간의 차이를 줄이기 위한 보안 및 기술적 조치를 취합니다.\n둘째, 제공되는 모든 자재의 가격, 특히 필수품과 현지 생산품의 가격을 추적합니다.\n셋째, 정부 협력 시장 프로그램을 도입하고 모든 이라크 가족을 위한 청약서에 따라 필수품과 소비재를 합리적인 가격에 판매합니다.",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة المرسى نيوز"
+      ],
+      "related": [],
       "tag": "경제·유가"
     },
     {
-      "title": "PKK pulls out of Metina in northern Iraq amid Turkey peace process - Al-Monitor",
-      "source": "Al-Monitor",
-      "link": "https://www.al-monitor.com/originals/2026/10/pkk-pulls-out-metina-northern-iraq-amid-turkey-peace-process",
-      "date": "2026-10-12T14:55:14.000Z",
-      "lang": "en",
-      "titleKo": "PKK, 터키 평화 과정 속에서 이라크 북부 메티나에서 철수 - Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/10/pkk-pulls-out-metina-northern-iraq-amid-turkey-peace-process",
-      "body": "The withdrawal comes as the peace process between Turkey and the militant group gains momentum alongside increasing security cooperation between Ankara and Baghdad.\nANKARA — The Kurdistan Workers Party (PKK) has withdrawn from four areas in northern Iraq as part of an ongoing peace process aimed at ending more than four decades of conflict between Turkey and the militant group , according to Turkish security sources.\nThe PKK, which is headquartered in the northern Iraqi mountains, has waged an armed insurgency against Turkey since 1984 for Kurdish self-rule inside the country. It announced in May 2025 that it would disband and dissolve itself as part of ongoing peace talks the Turkish government launched in 2024. The militant group is considered a terror outfit by Turkey, the United States and the European Union.",
-      "bodyKo": "이번 철수는 앙카라와 바그다드 간 안보 협력이 강화되면서 터키와 무장세력 사이의 평화 과정이 탄력을 받는 가운데 나온 것입니다.\n앙카라 — 쿠르드 노동자당(PKK)이 터키와 무장세력 사이의 40년 이상 갈등을 종식시키기 위한 지속적인 평화 과정의 일환으로 이라크 북부 4개 지역에서 철수했다고 터키 보안 소식통이 밝혔습니다.\n이라크 북부 산맥에 본부를 두고 있는 PKK는 쿠르드족의 국내 통치를 위해 1984년부터 터키에 맞서 무장 반란을 벌여왔습니다. 2025년 5월, 터키 정부가 2024년에 개시한 평화 회담의 일환으로 조직을 해체하고 해산하겠다고 발표했습니다. 이 무장 단체는 터키, 미국, 유럽 연합에서 테러 조직으로 간주됩니다.",
-      "tried": true,
-      "tag": "치안·테러"
-    },
-    {
-      "title": "Shafaq News..Four Baghdad employees caught taking bribes",
+      "title": "Four Baghdad employees caught taking bribes",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/en/Security/Four-Baghdad-employees-caught-taking-bribes",
       "date": "2026-10-12T14:43:04.000Z",
       "lang": "en",
-      "titleKo": "샤팍뉴스..바그다드 직원 4명 뇌물수수 적발",
+      "titleKo": "바그다드 직원 4명 뇌물수수 적발",
       "url": "https://shafaq.com/en/Security/Four-Baghdad-employees-caught-taking-bribes",
       "body": "Shafaq News- Baghdad Four Baghdad public employees were caught taking bribes in three separate stings, Iraq's Federal Integrity Commission said on Monday. At the Abu Ghraib municipality, the head\nTwo employees at the Al-Sadr City municipality were arrested after taking a payment from a bakery owner, whom they had agreed to help by removing concrete barriers outside his shop.\nThe fourth, an employee of the Rusafa enforcement office, which carries out court rulings, was caught demanding a bribe to carry out an inspection before a property eviction, according to the commission.\nJudges at Baghdad's Rusafa and Karkh courts ordered all four to be held under Iraq's anti-bribery law.",
       "bodyKo": "샤파크 뉴스 - 바그다드 바그다드 공무원 4명이 세 차례에 걸쳐 뇌물을 받은 혐의로 체포됐다고 이라크 연방청렴위원회(Federal Integrity Commission)가 월요일 밝혔다. Abu Ghraib 지방 자치 단체의 수장\n알 사드르 시 자치단체의 직원 2명은 빵집 주인으로부터 돈을 받은 뒤 체포됐는데, 빵집 주인은 빵집 주인이 가게 외부의 콘크리트 장벽을 제거하는 데 도움을 주기로 합의했습니다.\n넷째, 법원 판결을 집행하는 루사파 집행 사무소 직원이 재산 퇴거 전 조사를 실시하기 위해 뇌물을 요구하다 적발됐다고 위원회는 밝혔다.\n바그다드의 루사파(Rusafa) 법원과 카르크(Karkh) 법원의 판사들은 4건 모두 이라크의 뇌물방지법에 따라 구금될 것을 명령했습니다.",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
       "tag": "기타"
-    },
-    {
-      "title": "Iraq targets lingering ISIS pockets with airstrikes, operations in security vacuum after US pullout",
-      "source": "The Jerusalem Post",
-      "link": "https://www.jpost.com/middle-east/article-911425",
-      "date": "2026-10-12T14:30:31.000Z",
-      "lang": "en",
-      "titleKo": "이라크는 공습으로 남아있는 ISIS 주머니를 표적으로 삼고 미국 철수 이후 보안 공백 상태에서 작전을 수행합니다.",
-      "url": "https://www.jpost.com/middle-east/article-911425",
-      "body": "\"F-16 aircraft carried out two airstrikes targeting a hideout belonging to remnants of Daesh elements in the Nareen area, resulting in its complete destruction.\"",
-      "bodyKo": "\"F-16 항공기는 나린 지역에 있는 다에쉬 잔당의 은신처를 목표로 두 차례 공습을 실시하여 완전히 파괴되었습니다.\"",
-      "tried": true,
-      "tag": "치안·테러"
     },
     {
       "title": "Iraq’s Contested Sovereignty After the U.S. Military Withdrawal",
       "source": "Middle East Council on Global Affairs",
       "link": "https://mecouncil.org/blog_posts/iraqs-contested-sovereignty-after-the-u-s-military-withdrawal/",
-      "date": "2026-10-12T14:10:18.000Z",
+      "date": "2026-10-12T14:30:31.000Z",
       "lang": "en",
       "titleKo": "미군 철수 이후 이라크 주권 경쟁",
       "url": "https://mecouncil.org/blog_posts/iraqs-contested-sovereignty-after-the-u-s-military-withdrawal/",
-      "body": "The U.S. military withdrawal exposes Iraq’s struggle over state control of weapons, armed factions, and the security of the Kurdistan Region.\nOpen menu Core activities Our Team Our Partners Our Initiatives Archives Careers News Open menu Press Releases In The News Afkār MEnbar EN Issues Countries About Artificial intelligence (AI) CBDC Civil War Climate Action Council Views Elections Energy & Oil Markets Great Power Competition Iran War Israel War on Gaza JCPOA Mediation MENA Governance MENA-Asia Relations Peace and Security Political Economy Protests and Uprisings Public opinion Regional Relations U.S. Foreign Policy Women Women Peace and Security World Cup --> Algeria Bahrain Egypt Iran Iraq Jordan Kuwait Lebanon Libya Mauritania Morocco Oman Palestine-Israel Qatar Saudi Arabia Sudan Syria Tunisia Turkey United Arab Emirates Yemen GCC MENA --> GCC MENA About Afkār is a publication of the Middle East Council on Global Affairs, providing short-form analyses, insights, and perspectives ",
+      "body": "The U.S. military withdrawal exposes Iraq’s struggle over state control of weapons, armed factions, and the security of the Kurdistan Region.\nOpen menu Core activities Our Team Our Partners Our Initiatives Archives Careers News Open menu Press Releases In The News Afkār MEnbar EN Issues Countries About Artificial intelligence (AI) CBDC Civil War Climate Action Council Views Elections Energy & Oil Markets Great Power Competition Iran War Israel War on Gaza JCPOA Mediation MENA Governance MENA-Asia Relations Peace and Security Political Economy Protests and Uprisings Public opinion Regional Relations U.S. Foreign Policy Women Women Peace and Security World Cup --> Algeria Bahrain Egypt Iran Iraq Jordan Kuwait Lebanon Libya Mauritania Morocco Oman Palestine-Israel Qatar Saudi Arabia Sudan Syria Tunisia Turkey United Arab Emirates Yemen GCC MENA --> GCC MENA About Afkār is a publication of the Middle East Council on Global Affairs, providing short-form analyses, insights, and perspectives",
       "bodyKo": "미군의 철수는 무기, 무장 세력, 쿠르드 지역의 안보에 대한 국가 통제를 둘러싼 이라크의 투쟁을 폭로합니다.\n메뉴 열기 핵심 활동 우리 팀 파트너 이니셔티브 아카이브 채용 뉴스 메뉴 열기 언론 보도 뉴스 Afkār MEnbar EN 이슈 국가 인공 지능(AI) 소개 CBDC 남북전쟁 기후 행동 위원회 견해 선거 에너지 및 석유 시장 강대국 경쟁 이란 전쟁 이스라엘 가자지구 전쟁 JCPOA 중재 MENA 거버넌스 MENA-아시아 관계 평화 및 안보 정치 경제 항의 및 봉기 여론 지역 관계 미국 외교 정책 여성 여자 평화와 안보 월드컵 --> 알제리 바레인 이집트 이란 이라크 요르단 쿠웨이트 레바논 리비아 모리타니 모로코 오만 팔레스타인-이스라엘 카타르 사우디아라비아 수단 시리아 튀니지 터키 아랍에미리트 예멘 GCC MENA --> GCC MENA Afkār 소개는 중동평의회(Middle East Council on Global Affairs)에서 발행하는 간행물로서 간략한 분석, 통찰 및 관점을 제공합니다.",
       "tried": true,
+      "count": 2,
+      "sources": [
+        "The Jerusalem Post",
+        "Middle East Council on Global Affairs"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크는 공습으로 남아있는 ISIS 주머니를 표적으로 삼고 미국 철수 이후 보안 공백 상태에서 작전을 수행합니다.",
+          "source": "The Jerusalem Post",
+          "link": "https://www.jpost.com/middle-east/article-911425"
+        }
+      ],
       "tag": "치안·테러"
     },
     {
-      "title": "PKK leaves four camps in Iraq, Turkish sources say — Cyprus Mail",
-      "source": "UA.NEWS",
-      "link": "https://ua.news/en/world/pkk-zalishila-chotiri-tabori-v-iraku-za-danimi-turechchini-cyprus-mail",
-      "date": "2026-10-12T13:45:31.000Z",
-      "lang": "en",
-      "titleKo": "PKK가 이라크에 캠프 4곳을 떠났다고 터키 소식통이 전했습니다.",
-      "url": "https://ua.news/en/world/pkk-zalishila-chotiri-tabori-v-iraku-za-danimi-turechchini-cyprus-mail",
-      "body": "PKK militants have left four camps in northern Iraq, Turkish security sources said, calling it a first step toward the organization's planned dissolution.\n--> Militants of the Kurdistan Workers' Party (PKK) have left four camps in the Metina region of northern Iraq. This was the first step toward the planned dissolution of the organization, Turkish security sources said, Cyprus Mail reports .\nAccording to the sources, since last Thursday the PKK has left the Gebat, Yayik, Sabri and Sason camps in the Baze area. Turkish security sources described this as evidence of progress in the peace process.\nIn August, Turkey's parliament adopted a law defining the parameters for the PKK's dissolution. The legislation provides protection for many former militants who have not committed certain crimes and also allows sentences to be suspended for some people convicted of membership in the organization. This is intended to facilitate their reintegration into society.",
-      "bodyKo": "터키 보안 소식통은 PKK 무장세력이 이라크 북부에 있는 4개 캠프를 떠났다며 이것이 조직의 계획된 해체를 향한 첫 단계라고 말했습니다.\n--> 쿠르드 노동자당(PKK) 무장세력은 이라크 북부 메티나 지역에 4개의 수용소를 떠났습니다. 이는 터키 보안 소식통에 따르면 조직의 해산 계획을 향한 첫 번째 단계였다고 Cyprus Mail이 보도했습니다.\n소식통에 따르면 지난 목요일부터 PKK는 Baze 지역의 Gebat, Yayik, Sabri 및 Sason 캠프를 떠났습니다. 터키 보안 소식통은 이를 평화 과정의 진전의 증거라고 설명했습니다.\n지난 8월 터키 의회는 PKK 해산 기준을 정의하는 법안을 채택했습니다. 이 법안은 특정 범죄를 저 지르지 않은 많은 전직 무장 세력에 대한 보호를 제공하고 조직 구성원으로 유죄 판결을받은 일부 사람들에 대한 형을 유예하도록 허용합니다. 이는 이들의 사회 복귀를 촉진하기 위한 것입니다.",
-      "tried": true,
-      "tag": "치안·테러"
-    },
-    {
-      "title": "Shafaq News..Dollar edges higher in Baghdad, Erbil",
+      "title": "Dollar edges higher in Baghdad, Erbil",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/en/Economy/Dollar-edges-higher-in-Baghdad-Erbil-0",
       "date": "2026-10-12T13:39:20.000Z",
       "lang": "en",
-      "titleKo": "Shafaq News..바그다드, 아르빌에서 달러 상승",
+      "titleKo": "바그다드, 아르빌에서 달러 상승",
       "url": "https://shafaq.com/en/Economy/Dollar-edges-higher-in-Baghdad-Erbil-0",
       "body": "Shafaq News- Baghdad/ Erbil The US dollar closed Monday&rsquo;s trading higher in Iraq, hovering around 166,000 dinars per 100 dollars. According to a Shafaq News market survey, the dollar traded in\nIn the Iraqi capital, exchange shops sold the dollar at 166,500 dinars and bought it at 165,500 dinars, while in Erbil, selling prices stood at 165,950 dinars and buying prices at 165,850 dinars.",
       "bodyKo": "Shafaq News- 바그다드/아르빌 미 달러화는 월요일 이라크 증시에서 100달러당 166,000디나르 부근에서 상승세로 거래를 마감했습니다. Shafaq News 시장 조사에 따르면 달러는\n이라크 수도에서는 환전소에서 달러를 166,500디나르에 팔고 165,500디나르에 샀고, 아르빌에서는 판매 가격이 165,950디나르, 구매 가격이 165,850디나르였습니다.",
       "tried": true,
+      "count": 4,
+      "sources": [
+        "شفق نيوز",
+        "Alsumaria",
+        "جريدة المدى"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 달러 가치의 새로운 상승",
+          "source": "Alsumaria",
+          "link": "https://www.alsumaria.tv/news/economy/578522/%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%AC%D8%AF%D9%8A%D8%AF-%D8%A8%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82"
+        },
+        {
+          "titleKo": "달러 16만5천 터치…바그다드·아르빌 환율 새 상승",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%8A%D9%84%D8%A7%D9%85%D8%B3-165-%D9%84%D9%81%D8%A7-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%84-%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%B5%D8%B1%D9%81-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88-%D8%B1%D8%A8%D9%8A%D9%84"
+        },
+        {
+          "titleKo": "이라크의 달러 가격 상승은 노동자들에게 압력을 가하고 있습니다. 소득은 감소하고 물가는 상승하며 생활 조건은 더욱 어려워지고 있습니다.",
+          "source": "جريدة المدى",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1xd0VQQTN0OC1YbHBuckhiUm5iSzVYQ0t3WVd2Y0FzeXlIcXJHLTJwY1VpNDZEUW1Ya2xzVVFIQnJrcGcyekE?oc=5"
+        }
+      ],
       "tag": "경제·유가"
-    },
-    {
-      "title": "ارتفاع جديد بسعر الدولار في العراق",
-      "source": "Alsumaria",
-      "link": "https://www.alsumaria.tv/news/economy/578522/%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%AC%D8%AF%D9%8A%D8%AF-%D8%A8%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "date": "2026-10-12T13:31:02.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 달러 가치의 새로운 상승",
-      "url": "https://www.alsumaria.tv/news/economy/578522/%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%AC%D8%AF%D9%8A%D8%AF-%D8%A8%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "body": "ارتفاع جديد بسعر الدولار في العراق سجلت أسعار صرف الدولار ارتفاعاً جديداً، اليوم الاثنين، مع اغلاق التداولات في بغداد واربيل.",
-      "bodyKo": "이라크 달러 가치의 새로운 상승. 달러 환율은 오늘 월요일 바그다드와 아르빌의 거래가 마감되면서 새로운 상승세를 기록했습니다.",
-      "tried": true,
-      "tag": "경제·유가"
-    },
-    {
-      "title": "Iranian drones attack KDPI camp in Iraq’s Koya — Jerusalem Post",
-      "source": "UA.NEWS",
-      "link": "https://ua.news/en/world/iranski-droni-atakuvali-tabir-kdpi-v-irakskomu-koyi-jerusalem-post",
-      "date": "2026-10-12T13:29:21.000Z",
-      "lang": "en",
-      "titleKo": "이란 드론, 이라크 코야의 KDPI 캠프 공격 - 예루살렘 포스트",
-      "url": "https://ua.news/en/world/iranski-droni-atakuvali-tabir-kdpi-v-irakskomu-koyi-jerusalem-post",
-      "body": "Iranian drones struck the KDPI’s Azadi camp in Koya, northern Iraq. The camp had been evacuated, and no casualties were reported.\n--> Iranian drones attacked the Azadi camp of the Kurdistan Democratic Party of Iran (KDPI) in the city of Koya in the Kurdistan Region of northern Iraq. The Jerusalem Post reported this, citing a party statement and local Kurdish media.\nThe KDPI said that one drone struck the camp at 12:01 p.m. According to Rudaw, two drones hit the facility in the Koya district of Erbil province. A senior party official and a security source told the outlet that there was material damage, while no one was killed or injured.\nAs Rudaw notes, the camp was evacuated before the attack, so no one remained on its territory. A security source also confirmed a second drone strike on the same location.",
-      "bodyKo": "이란 드론이 이라크 북부 코야에 있는 KDPI의 아자디 캠프를 공격했습니다. 캠프는 대피했으며 사상자는보고되지 않았습니다.\n--> 이란 드론이 이라크 북부 쿠르드 지역 코야 시에 있는 이란 쿠르드 민주당(KDPI)의 아자디 캠프를 공격했습니다. 예루살렘 포스트는 당 성명과 현지 쿠르드 언론을 인용해 이같이 보도했습니다.\nKDPI는 이날 오후 12시 1분쯤 드론 1대가 캠프를 공격했다고 밝혔다. Rudaw에 따르면 두 대의 드론이 아르빌(Erbil) 지방 코야(Koya) 지역의 시설에 충돌했습니다. 당 고위 간부와 보안 소식통은 매체에 \"물적 피해가 발생했지만 숨지거나 다친 사람은 없다\"고 전했다.\nRudaw가 지적했듯이 캠프는 공격 전에 대피되었으므로 아무도 그 영토에 남아 있지 않았습니다. 보안 소식통은 또한 같은 장소에서 두 번째 드론 공격이 이루어졌다고 확인했습니다.",
-      "tried": true,
-      "tag": "치안·테러"
     },
     {
       "title": "Iraq tracks 200 military flights a day but cannot stop them, Zebari says",
@@ -282,9 +347,14 @@
       "lang": "en",
       "titleKo": "이라크는 하루에 200건의 군사 비행을 추적하지만 이를 막을 수는 없다고 Zebari는 말합니다.",
       "url": "https://en.964media.com/53650/",
-      "body": "BAGHDAD — Iraqi forces track about 200 military flights a day over the country but have no means of dealing\nZebari, a former foreign and finance minister, also praised Prime Minister Ali al-Zaidi’s devaluation of the dinar as a step earlier governments had been too afraid to take.\n“Drones today are certainly more dangerous than ISIS,” Zebari told Iraq 24 TV. “Jordan is a small country with limited resources, yet it has 15 air defense systems. Ask our security commanders how many systems we have.” He had spoken with security commanders on Saturday, he said. “Iraqi forces can see these flights, but they have no capability to deal with them.”\nThe coalition’s departure had left Iraq exposed, he said. “When the international coalition was present in Iraq, it coordinated with Iraqi forces to prevent Israeli attacks and interventions. But the coalition’s cover is gone. Who guarantees our security now? Our skies are open.” Zaidi formally declared the end of the U.S.-led coalition’s mission on ",
+      "body": "BAGHDAD — Iraqi forces track about 200 military flights a day over the country but have no means of dealing\nZebari, a former foreign and finance minister, also praised Prime Minister Ali al-Zaidi’s devaluation of the dinar as a step earlier governments had been too afraid to take.\n“Drones today are certainly more dangerous than ISIS,” Zebari told Iraq 24 TV. “Jordan is a small country with limited resources, yet it has 15 air defense systems. Ask our security commanders how many systems we have.” He had spoken with security commanders on Saturday, he said. “Iraqi forces can see these flights, but they have no capability to deal with them.”\nThe coalition’s departure had left Iraq exposed, he said. “When the international coalition was present in Iraq, it coordinated with Iraqi forces to prevent Israeli attacks and interventions. But the coalition’s cover is gone. Who guarantees our security now? Our skies are open.” Zaidi formally declared the end of the U.S.-led coalition’s mission on",
       "bodyKo": "바그다드 — 이라크군은 하루에 약 200편의 군사비행을 추적하고 있지만 이를 처리할 수단은 없습니다.\n전 외무장관이자 재무장관이었던 제바리(Zebari)도 알리 알자이디(Ali al-Zaidi) 총리의 디나르 평가절하를 칭찬했는데, 이는 이전 정부들이 너무 두려워서 받아들이지 못했던 조치였다.\n\"오늘날의 드론은 확실히 ISIS보다 더 위험합니다\"라고 Zebari는 이라크 24 TV에 말했습니다. \"요르단은 자원이 제한된 작은 나라이지만 15개의 방공 시스템을 보유하고 있습니다. 우리 보안 사령관에게 우리가 얼마나 많은 시스템을 보유하고 있는지 물어보세요.\" 그는 토요일에 보안 사령관들과 이야기를 나눴다고 말했습니다. \"이라크군은 이러한 비행을 볼 수 있지만 이에 대처할 능력은 없습니다.\"\n연합군의 이탈로 이라크가 노출됐다고 그는 말했다. \"국제 연합군이 이라크에 있을 때 이스라엘의 공격과 개입을 막기 위해 이라크군과 협력했습니다. 그러나 연합군의 위장은 사라졌습니다. 이제 우리의 안전은 누가 보장합니까? 우리의 하늘은 열려 있습니다.\" 자이디는 미국 주도 연합군의 임무 종료를 공식적으로 선언했다.",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "964media"
+      ],
+      "related": [],
       "tag": "치안·테러"
     },
     {
@@ -298,36 +368,15 @@
       "body": "The devaluation of the Iraqi dinar and the increase in the dollar rate have sparked sharp disagreements between the government and parliament over financial and economic\nAccording to Kurdistan Press, the devaluation of the Iraqi dinar and the increase in the dollar rate have sparked sharp disagreements between the government and parliament over financial and economic policies, and have become a political challenge for the government of Iraqi Prime Minister Ali Al-Zaidi.\nOn October 6, the Iraqi Council of Ministers approved a 15 percent increase in the dollar rate from 1,320 to 1,520 dinars. A day later, the Iraqi Parliament suspended its agenda to review the decision, and a number of MPs called for its cancellation before submitting the 2027 budget draft to parliament.The Central Bank of Iraq announced that it would buy dollars from the Ministry of Finance at a rate of 1,500 dinars and offer them to banks at a rate of 1,510 dinars and to the public at a rate of 1,520 dinars. The bank d",
       "bodyKo": "이라크 디나르의 평가절하와 달러 환율의 상승으로 인해 재정 및 경제 문제를 두고 정부와 의회 사이에 날카로운 의견 차이가 촉발되었습니다.\nKurdistan Press에 따르면, 이라크 디나르의 평가절하와 달러 환율의 상승은 금융 및 경제 정책을 두고 정부와 의회 사이에 극심한 의견 차이를 촉발시켰고 알리 알 자이디 이라크 총리 정부에게 정치적 도전이 되었습니다.\n10월 6일, 이라크 각료회의는 달러 환율을 1,320디나르에서 1,520디나르로 15% 인상하는 안을 승인했습니다. 하루 뒤 이라크 의회는 이 결정을 검토하기 위한 의제를 중단했고, 다수의 국회의원들은 2027년 예산안을 의회에 제출하기 전에 취소를 요구했습니다. 이라크 중앙은행은 재무부로부터 1,500디나르의 환율로 달러를 매입하여 은행에 1,510디나르의 환율로, 국민에게 1,520디나르의 환율로 제공하겠다고 발표했습니다. 은행 d",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "کردپرس"
+      ],
+      "related": [],
       "tag": "정치·선거"
     },
     {
-      "title": "Iran’s Kurdish Rivals Targeted In Iraq Again As Two Drones Strike Opposition Camp Near Koya",
-      "source": "The Times of India",
-      "link": "https://timesofindia.indiatimes.com/videos/international/irans-kurdish-rivals-targeted-in-iraq-again-as-two-drones-strike-opposition-camp-near-koya/videoshow/134893912.cms",
-      "date": "2026-10-12T12:56:56.000Z",
-      "lang": "en",
-      "titleKo": "두 대의 드론이 코야 근처 야당 캠프를 공격함에 따라 이란의 쿠르드족 라이벌들이 다시 이라크를 표적으로 삼았습니다.",
-      "url": "https://timesofindia.indiatimes.com/videos/international/irans-kurdish-rivals-targeted-in-iraq-again-as-two-drones-strike-opposition-camp-near-koya/videoshow/134893912.cms",
-      "body": "Two drones have struck a camp belonging to an Iranian Kurdish opposition group in northern Iraq, bringing another cross-border security incident to the Kurdistan region amid heightened regional tensions. According to reports from Rudaw and Shafaq News, the drones targeted the Azadi camp of the Kurdistan Democratic Party of Iran, or KDPI, near Koya in Erbil province. There were no immediate reports of casualties or damage. Responsibility for the latest attack has not been confirmed. Iran has previously targeted Iranian Kurdish opposition groups based in Iraqi Kurdistan, accusing them of threatening Iranian security and cooperating with foreign powers including Israel. The KDPI rejects those allegations and says civilians and members’ families also live in its camps. The same facility was reportedly targeted weeks earlier in a suspected Iranian drone attack. KDPI spokesperson Khalid Azizi has said the organisation pledged not to use Iraqi territory to launch military operations against I",
-      "bodyKo": "두 대의 드론이 이라크 북부에 있는 이란 쿠르드족 반군 캠프를 공격해 지역적 긴장이 고조되는 가운데 쿠르드 지역에 또 다른 국경 보안 사고가 발생했습니다. Rudaw와 Shafaq News의 보도에 따르면 드론은 아르빌 지방 코야 근처에 있는 이란 쿠르드 민주당(KDPI)의 아자디 캠프를 표적으로 삼았습니다. 인명 피해나 피해에 대한 즉각적인 보고는 없었습니다. 이번 공격에 대한 책임은 확인되지 않았습니다. 이란은 이전에 이라크 쿠르드족에 기반을 둔 이란 쿠르드족 반군 단체들을 표적으로 삼아 그들이 이란의 안보를 위협하고 이스라엘을 포함한 외국 세력과 협력하고 있다고 비난했습니다. KDPI는 이러한 주장을 일축하며 민간인과 회원 가족들도 수용소에 거주하고 있다고 밝혔습니다. 같은 시설은 몇 주 전에 이란의 드론 공격으로 의심되는 표적이 된 것으로 알려졌습니다. KDPI 대변인 칼리드 아지지(Khalid Azizi)",
-      "tried": true,
-      "tag": "치안·테러"
-    },
-    {
-      "title": "Kurdistan Workers' Party militants quit some camps in north Iraq, Turkish sources say",
-      "source": "Arab News",
-      "link": "https://www.arabnews.com/middle-east/kurdistan-workers-party-militants-quit-some-camps-in-north-iraq-turkish-sources-say-3005932",
-      "date": "2026-10-12T12:39:05.000Z",
-      "lang": "en",
-      "titleKo": "쿠르드 노동자당 무장세력이 이라크 북부의 일부 수용소를 떠났다고 터키 소식통이 전했습니다.",
-      "url": "https://www.arabnews.com/middle-east/kurdistan-workers-party-militants-quit-some-camps-in-north-iraq-turkish-sources-say-3005932",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "tag": "치안·테러"
-    },
-    {
-      "title": "العراق يريد الاستفادة من خبرات الجزائر في قطاع الغاز - الطاقة",
+      "title": "العراق يريد الاستفادة من خبرات الجزائر في قطاع الغاز",
       "source": "أول منصة عربية متخصصة في أخبار الطاقة",
       "link": "https://attaqa.net/2026/10/12/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B1%D9%8A%D8%AF-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D8%A9-%D9%85%D9%86-%D8%AE%D8%A8%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6/",
       "date": "2026-10-12T12:33:20.000Z",
@@ -337,20 +386,12 @@
       "body": "يتجه العراق إلى تعزيز التعاون مع الجزائر في قطاع الغاز الطبيعي، ضمن مساعيه إلى تطوير استغلال موارده الطبيعية، خاصة الغاز المصاحب، بما يدعم الاستفادة\nوبحسب ما اطّلعت عليه منصة الطاقة المتخصصة (مقرها واشنطن)، بحث وزير النفط العراقي باسم محمد خضير مع وزير الدولة وزير المحروقات الجزائري محمد عرقاب فرص التعاون في قطاع المحروقات ، خلال لقاء جمعهما على هامش فعاليات أسبوع الطاقة بالرياض، اليوم الإثنين 12 أكتوبر/تشرين الأول 2026.\nوركّزت المباحثات على إمكان الاستفادة من الخبرات الجزائرية في جمع الغاز المصاحب ومعالجته واستغلاله، إلى جانب تطوير الشراكات الاستثمارية بين الشركات النفطية في البلدين.\nوتأتي التحركات في وقت يعمل فيه العراق على تنفيذ مشروعات لزيادة إنتاج الغاز المحلي، وتقليل الكميات المحروقة، وتوفير إمدادات إضافية من الوقود لمحطات توليد الكهرباء.\nشكّل تطوير قدرات جمع الغاز المصاحب ومعالجته أحد أبرز محاور المباحثات العراقية الجزائرية، في ظل اهتمام بغداد بتعظيم الاستفادة من الموارد الغازية المتاحة، وتحويلها إلى منتجات ذات قيمة اقتصادية.",
       "bodyKo": "이라크는 천연자원, 특히 수반가스의 개발을 위한 노력의 일환으로 천연가스 분야에서 알제리와의 협력을 강화하기 위해 움직이고 있습니다.\nSpecialized Energy Platform(워싱턴 소재)이 확인한 내용에 따르면, 이라크 석유 장관 Bassem Muhammad Khudair는 2026년 10월 12일 월요일 리야드에서 에너지 주간 활동과 별도로 한자리에 모인 회의에서 알제리 국무 장관 및 탄화수소 장관 Muhammad Arkab과 탄화수소 부문 협력 기회에 대해 논의했습니다.\n토론에서는 양국의 석유 회사 간 투자 파트너십을 개발하는 것 외에도 수반 가스 수집, 처리 및 활용에 대한 알제리의 전문 지식을 활용할 수 있는 가능성에 초점을 맞췄습니다.\n이번 조치는 이라크가 국내 가스 생산량을 늘리고, 연소량을 줄이고, 발전소에 추가 연료 공급을 제공하기 위한 프로젝트를 시행하기 위해 노력하고 있는 가운데 나온 것입니다.\n수반가스 수집 및 처리 능력 개발은 가용 가스 자원의 활용을 극대화하고 이를 경제적 가치가 있는 제품으로 전환하려는 바그다드의 관심에 비추어 볼 때 이라크-알제리 논의에서 가장 두드러진 축 중 하나였습니다.",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "أول منصة عربية متخصصة في أخبار الطاقة"
+      ],
+      "related": [],
       "tag": "기타"
-    },
-    {
-      "title": "PKK clears 4 shelters in Iraq's Metina as Terror-Free Türkiye push advances",
-      "source": "Türkiye Today",
-      "link": "https://www.turkiyetoday.com/nation/pkk-clears-4-shelters-in-iraqs-metina-as-terror-free-turkiye-push-advances-3230166",
-      "date": "2026-10-12T12:13:17.000Z",
-      "lang": "en",
-      "titleKo": "PKK는 테러 없는 투르키예의 추진이 진전됨에 따라 이라크 메티나의 대피소 4곳을 정리했습니다.",
-      "url": "https://www.turkiyetoday.com/nation/pkk-clears-4-shelters-in-iraqs-metina-as-terror-free-turkiye-push-advances-3230166",
-      "body": "Terrorist group PKK evacuates four shelters in northern Iraq\nT he PKK/KCK terrorist group evacuated four shelters in the Metina region of northern Iraq on Oct. 8 as part of Türkiye's process to end the group’s activities, Turkish security sources stated Monday.\nThe shelters, named Hebat, Yajk, Sabri and Sason, are in the Baze area of Metina, the sources said. They were cleared under efforts to empty shelters seen as posing a risk of renewed conflict and a threat to Türkiye's security.\nThe evacuation is the latest step in the Terror-Free Türkiye process, under which the PKK announced its dissolution in 2025, and paves the way for its members' eventual return and reintegration into Turkish society.\n\"The ‘Strengthening National Solidarity and Social Integration’ vision, launched to ensure stability in the region and strengthen Turkish-Kurdish brotherhood, is being pursued resolutely and without compromise,\" the security sources said in a statement.",
-      "bodyKo": "테러단체 PKK, 이라크 북부 대피소 4곳 대피\nPKK/KCK 테러 단체는 그룹 활동을 종료하기 위한 투르키예의 절차의 일환으로 10월 8일 이라크 북부 메티나 지역에 있는 대피소 4곳을 대피했다고 터키 보안 소식통이 월요일 밝혔습니다.\nHebat, Yajk, Sabri 및 Sason이라는 이름의 대피소는 Metina의 Baze 지역에 있다고 소식통은 말했습니다. 그들은 새로운 갈등의 위험과 투르키예의 안보에 위협이 되는 것으로 여겨지는 대피소를 비우려는 노력으로 제거되었습니다.\n이번 대피는 PKK가 2025년 해체를 선언하고 PKK 회원들이 최종적으로 돌아와 터키 사회로 재통합할 수 있는 길을 닦는 테러 없는 터키 프로세스의 최신 단계입니다.\n보안 소식통은 성명을 통해 “지역 안정을 보장하고 터키-쿠르드족 형제애를 강화하기 위해 출범한 ‘국가 연대와 사회 통합 강화’ 비전이 타협 없이 단호하게 추진되고 있다”고 밝혔다.",
-      "tried": true,
-      "tag": "치안·테러"
     },
     {
       "title": "Iraqi security arrests kidnappers of formal officials",
@@ -360,158 +401,250 @@
       "lang": "en",
       "titleKo": "이라크 보안군, 공식 관료 납치범 체포",
       "url": "https://www.iraqinews.com/iraq/iraqi-security-arrests-kidnappers-of-formal-officials/",
-      "body": "Iraqi security arrests kidnappers of formal officials\nMembers of the Iraqi Counter-terrorism Service standing guard outside their headquarters in Baghdad, Iraq. Photo: AFP\nBaghdad (IraqiNews.com) – The Iraqi National Security Service (INSS) revealed on Saturday that two former government officials had been rescued from their kidnappers following a specialized operation in Baghdad.\nThe INSS said in a statement that security forces carried out a specialized security operation within 48 hours, resulting in the rescue of two former officials and the arrest of eight people engaged in the kidnapping and other crimes.\nAccording to the state-run Iraqi News Agency (IINA), the operation was based on information and accurate field observation.\nThe statement mentioned that the operation resulted in the seizure of firearms, ammunition, and fake documents belonging to an illegal armed organization at the place where the victims were held. Investigations indicated that the suspects had past criminal ",
+      "body": "Iraqi security arrests kidnappers of formal officials\nMembers of the Iraqi Counter-terrorism Service standing guard outside their headquarters in Baghdad, Iraq. Photo: AFP\nBaghdad (IraqiNews.com) – The Iraqi National Security Service (INSS) revealed on Saturday that two former government officials had been rescued from their kidnappers following a specialized operation in Baghdad.\nThe INSS said in a statement that security forces carried out a specialized security operation within 48 hours, resulting in the rescue of two former officials and the arrest of eight people engaged in the kidnapping and other crimes.\nAccording to the state-run Iraqi News Agency (IINA), the operation was based on information and accurate field observation.\nThe statement mentioned that the operation resulted in the seizure of firearms, ammunition, and fake documents belonging to an illegal armed organization at the place where the victims were held. Investigations indicated that the suspects had past criminal",
       "bodyKo": "이라크 보안군, 공식 관료 납치범 체포\n이라크 바그다드에 있는 본부 밖에서 경비를 서고 있는 이라크 대테러 서비스 대원들. 사진 : AFP\n바그다드(IraqiNews.com) – 이라크 국가안보국(INSS)은 토요일 바그다드에서 특수 작전을 수행한 후 두 명의 전직 정부 관리가 납치범들로부터 구출되었다고 밝혔습니다.\nINSS는 성명을 통해 보안군이 48시간 이내에 특수 보안 작전을 수행해 전직 공무원 2명을 구출하고 납치 및 기타 범죄에 연루된 8명을 체포했다고 밝혔습니다.\n국영 이라크 통신사(IINA)에 따르면 이번 작전은 정보와 정확한 현장 관찰을 바탕으로 이뤄졌다.\n성명서는 이번 작전으로 피해자들이 구금된 장소에서 불법 무장단체 소유의 총기, 탄약, 위조문서 등을 압수했다고 밝혔다. 조사 결과 용의자들은 전과가 있는 것으로 드러났다.",
       "tried": true,
+      "count": 1,
+      "sources": [
+        "Iraqi News"
+      ],
+      "related": [],
       "tag": "치안·테러"
     },
     {
-      "title": "Turkey intelligence confirms PKK evacuates four bases in north Iraq",
-      "source": "Moneycontrol.com",
-      "link": "https://www.moneycontrol.com/news/world/turkey-intelligence-confirms-pkk-evacuates-four-bases-in-north-iraq-14050271.html",
-      "date": "2026-10-12T11:57:50.000Z",
-      "lang": "en",
-      "titleKo": "터키 정보당국, PKK가 이라크 북부의 기지 4곳을 철수했다고 확인",
-      "url": "https://www.moneycontrol.com/news/world/turkey-intelligence-confirms-pkk-evacuates-four-bases-in-north-iraq-14050271.html",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "tag": "치안·테러"
-    },
-    {
-      "title": "Shafaq News..Iraq invites international firms to invest in Mosul airport",
+      "title": "Iraq invites international firms to invest in Mosul airport",
       "source": "شفق نيوز",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQnNqZkhxUEg4MmJ3eDcyWWd4WjJRSEh3MWE3QzZnbW1PaDV0a1Fnc2ZOTVhNaEZVVVlUVUNLcDl3T1NfOUZfR0k1VGhWWXRnb0ZhbUxDWmIxdTNsWUdHN1RpTXFWQ2xiVjJMQ2l5akRmLUtVUWhySVRSVFdWOHRDWnhlanpjeGhVdmxhZFpmNkR3aFE?oc=5",
+      "link": "https://shafaq.com/en/society/Iraq-invites-international-firms-to-invest-in-Mosul-airport",
       "date": "2026-10-12T11:27:59.000Z",
       "lang": "en",
-      "titleKo": "샤팩뉴스..이라크, 국제기업 모술공항 투자 유치",
+      "titleKo": "이라크, 국제기업 모술공항 투자 유치",
+      "url": "https://shafaq.com/en/society/Iraq-invites-international-firms-to-invest-in-Mosul-airport",
+      "body": "Shafaq News- Mosul Iraqi Prime Minister Ali al-Zaidi said on Monday that the government had formally invited international companies specializing in airport management and operations to invest in Mos\nDuring a visit to Mosul, al-Zaidi reviewed service and development projects, including the airport, and launched implementation work on a national initiative to distribute one million residential plots across Iraq.\nAl-Zaidi said the government wanted international companies to do more than build a passenger terminal, emphasizing that it sought partners to help develop the airport and improve its services.\nThe prime minister also laid the foundation stone for a residential land distribution project described as Nineveh&rsquo;s largest. The ceremony took place in the Damirji area, also known as Bab al-Sham, west of Mosul, as part of the national initiative to distribute one million residential plots to eligible citizens.",
+      "bodyKo": "Shafaq 뉴스 - 알리 알 자이디 모술 이라크 총리는 월요일 정부가 Mos에 투자하기 위해 공항 관리 및 운영을 전문으로 하는 국제 기업을 공식적으로 초청했다고 말했습니다.\n모술을 방문하는 동안 al-Zaidi는 공항을 포함한 서비스 및 개발 프로젝트를 검토하고 이라크 전역에 백만 개의 주거용 부지를 배포하기 위한 국가 계획에 대한 구현 작업을 시작했습니다.\nAl-Zaidi는 정부가 국제 기업이 여객 터미널을 건설하는 것 이상의 일을 하기를 원하며 공항 개발과 서비스 개선을 돕기 위해 파트너를 찾았다고 강조했습니다.\n총리는 또한 니네베 최대 규모로 묘사되는 주거용 토지 분배 프로젝트의 초석을 놓았습니다. 이 행사는 적격 시민에게 100만 개의 주거용 부지를 배포하려는 국가 계획의 일환으로 모술 서쪽의 Bab al-Sham으로도 알려진 Damirji 지역에서 열렸습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
       "tag": "기타"
     },
     {
       "title": "الزيدي يعلن خطة الحكومة لإطلاق مشروع مليون مزرعة لعموم محافظات العراق",
       "source": "وكالة المرسى نيوز",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5TTjJQelRicnJ4Y1A5MWtBWlB4dk5mS1NEZ0lRanpGbm1SRERhYUx5eVVqYnUtNS1CcEhlUkJjRW5XaVdqVE5vU2Z0WHF5Wmx4WGNtY3QzUQ?oc=5",
+      "link": "https://www.almarsa-news.com/news-32971.html",
       "date": "2026-10-12T10:39:51.000Z",
       "lang": "ar",
       "titleKo": "Al-Zaidi는 이라크의 모든 주정부를 대상으로 One Million Farms 프로젝트를 시작하려는 정부 계획을 발표했습니다.",
+      "url": "https://www.almarsa-news.com/news-32971.html",
+      "body": "بغداد / المرسى نيوز اعلن رئيس مجلس الوزراء علي فالح الزيدي ، من نينوى، خطة الحكومة لإطلاق مشروع مليون مزرعة، لعموم محافظات العراق، بجانب مشاريع المدن السكنية",
+      "bodyKo": "바그다드 / 알 마르사 뉴스 니네베 출신 알리 팔레 알자이디(Ali Faleh Al-Zaidi) 총리는 주거용 도시 프로젝트 외에도 이라크 전역을 대상으로 백만 농장 프로젝트를 시작하겠다는 정부 계획을 발표했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة المرسى نيوز"
+      ],
+      "related": [],
       "tag": "정치·선거"
     },
     {
-      "title": "Iraqi fighter jets destroy Daesh terrorist group position in eastern province: report",
-      "source": "TRT World",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWVpiVE45LXVCczcwaDhGYl9rSHo1UTNaZmZsTXZ3cWhYVFJJRlM0a3NzYUplT19DSS0yOUJhbkl3WXd4SWZvX0JpbHRmNS1LY01YdWVsZEpHeHMzamZnVm5zdVF0YlhEMldLcXl2SXQ1NWduMTQ3MGx3T0lJalBKa3Z2SXktZEZrT2NYZWI2MFJFZHV6bl9Pd2MwQ0E2cm0xSWplNXZnb0h4Z3N4cUJCR2JsTjlDT1ROMUFubFZWVnlzOE5CT1JCcQ?oc=5",
+      "title": "Iraqi jets destroy Daesh position in Diyala province",
+      "source": "Yeni Şafak English",
+      "link": "https://en.yenisafak.com/world/iraqi-jets-destroy-daesh-position-in-diyala-province-3724387",
       "date": "2026-10-12T10:37:06.000Z",
       "lang": "en",
-      "titleKo": "이라크 전투기, 동부 지방의 다에시 테러리스트 그룹 진지 파괴: 보고서",
+      "titleKo": "이라크 전투기, 디얄라 지방의 다에시 기지 파괴",
+      "url": "https://en.yenisafak.com/world/iraqi-jets-destroy-daesh-position-in-diyala-province-3724387",
+      "body": "Iraqi F-16 fighter jets carried out twin airstrikes that destroyed a Daesh position in eastern Diyala province, security officials said Sunday, noting the operation relied on precise intelligence coordination.\nFile photo Iraqi F-16 fighter jets carried out twin airstrikes that destroyed a Daesh position in the eastern province of Diyala, security officials said Sunday, noting that the operation relied on precise intelligence from the Military Intelligence Directorate. Iraqi F-16 fighter jets carried out two airstrikes that destroyed a position used by the Daesh terrorist group in the eastern province of Diyala on Sunday, security officials said, noting that the operation was based on intelligence provided by the Military Intelligence Directorate and coordinated with aerial reconnaissance units.",
+      "bodyKo": "이라크 F-16 전투기는 동부 디얄라 지방의 다에시(Daesh) 진지를 파괴하는 두 차례의 공습을 실시했다고 보안 관리들이 일요일 밝혔으며 이 작전은 정확한 정보 협력에 달려 있다고 지적했습니다.\n이라크 F-16 전투기는 동부 디얄라 지방의 다에시(Daesh) 진지를 파괴하는 두 차례의 공습을 실시했다고 보안 관리들이 일요일 밝혔으며 이 작전은 군사 정보국의 정확한 정보에 의존했다고 지적했습니다. 이라크 F-16 전투기는 일요일 동부 디얄라 주에서 다에시 테러 단체가 사용하는 위치를 파괴하는 두 차례의 공습을 실시했다고 보안 관리들은 말했습니다. 이 작전은 군사 정보국이 제공한 정보에 기초하고 공중 정찰 부대와 협력했다고 지적했습니다.",
+      "tried": true,
+      "count": 4,
+      "sources": [
+        "TRT World",
+        "Yeni Şafak English",
+        "Anadolu Ajansı",
+        "شفق نيوز"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 전투기, 동부 지방의 다에시 테러리스트 그룹 진지 파괴: 보고서",
+          "source": "TRT World",
+          "link": "https://trtworld.com/article/cb357bca18c8?utm_source=bed2715876e0&utm_medium=internal&utm_campaign=recommended&utm_content=inline"
+        },
+        {
+          "titleKo": "이라크 전투기, 동부 ISIS 거점 파괴",
+          "source": "Anadolu Ajansı",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOLVVicnVhUzBCNEZVZTVreEJSTmdUaThNM1hudEFScFZnS0JvcXIxNWZnZ19GVVBmUTk4ZE8xLU5ieTkxckNvUmN6aWJ6TkFuMHNqbWlxTHU1S2lEZm1uUXQtWUxhT0RSVlZhd0VQQU9XcDN4UmR2am9NbDBMMW10R2E2TGpzb1NmRFRKcTEyekRNcmp4aGQyUVlmNnpXTjJzSnc?oc=5"
+        },
+        {
+          "titleKo": "이라크 F-16, 디얄라의 ISIS 은신처 파괴",
+          "source": "شفق نيوز",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5sWFFBQlN3YlNuVThvZGFZOF9VbGZTSEZiV1hZNlVibjNYOXFCSlh6X19hR0U4UTJnTHRMQVdWLV9LMFp5UjRUc3JfMnRqekcxVFZtbmtoOUdMTnVGS1dCT255T05hbzYwTGloUk5HeF91NExOS3ZkZk15REZXZw?oc=5"
+        }
+      ],
       "tag": "치안·테러"
     },
     {
       "title": "Prime Minister Invites Global Companies to Invest in Mosul International Airport » Iraqi News Agency",
       "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZ0Z2akN3SHE4dGpRWmJBT1oxSldjTVNnb1pWZjdZY29wM25UQjJSZy0zU3FjZkdURFplbDZUV3Y5WWw0cEpROTlnVDNLMkQwYXN3YkRzdHZVVlVmN0hqcmhJV3BTY3g1OGw4ZkYzakFwMnhNSGpGYVpDYThZUkdDcy14V0pOOEh6bnl3TW5vYU9DQ2ItQm9HS2ZlU0tMSDJnbS1DeTNYNk5PRy14WXJoYnZmUndOT1V1NUE?oc=5",
+      "link": "https://ina.iq/en/politics/52808-prime-minister-invites-global-companies-to-invest-in-mosul-international-airport.html",
       "date": "2026-10-12T10:33:29.000Z",
       "lang": "en",
       "titleKo": "총리, 모술 국제공항 투자에 글로벌 기업 초청",
-      "tag": "정치·선거"
+      "tag": "정치·선거",
+      "url": "https://ina.iq/en/politics/52808-prime-minister-invites-global-companies-to-invest-in-mosul-international-airport.html",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": []
     },
     {
       "title": "President Barzani Meets Former Iraqi Prime Minister Sudani in Pirmam",
       "source": "Kurdistan24",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVTA2RjhyTFZmemN5aGI4NGdLZHlrb0NuUmVqSUstSDdvZ0hqUXAzQmZxUjY2aXdLOGw4WmNKbTcxN0dIWV8zd0xPWVlkNmZzVmtfWkx6MUYyN0IxeGE0Q3FZLXBKaXpyQ3c0bGxkelpXdm5ja193eTJuczVzamRwc24xTnNoZjNnOTF1SnE3RGpvQVA4YVFORms0b21WQXdRVkNXag?oc=5",
+      "link": "https://www.kurdistan24.net/en/story/945580/barzani-meets-former-iraqi-prime-minister-sudani-in-pirmam",
       "date": "2026-10-12T10:30:00.000Z",
       "lang": "en",
       "titleKo": "바르자니 대통령, 피르맘에서 수단니 전 이라크 총리 만나",
+      "url": "https://www.kurdistan24.net/en/story/945580/barzani-meets-former-iraqi-prime-minister-sudani-in-pirmam",
+      "body": "Talks focus on completing Iraq’s cabinet, approving the federal budget, and resolving outstanding disputes between Erbil and Baghdad\nERBIL (Kurdistan24) &mdash; President Masoud Barzani received former Iraqi Prime Minister Mohammed Shia al-Sudani in Pirmam on Monday, for talks on the political situation in Iraq and the wider region, as well as efforts to complete the federal government&rsquo;s cabinet and address outstanding issues between Erbil and Baghdad.\nSudani, who heads the Reconstruction and Development Coalition, met with Barzani to discuss the need to complete the formation of the federal government&rsquo;s ministerial lineup and support its work, according to a statement on the meeting.\nThe discussions also addressed the federal budget, the enactment of necessary legislation, and ways to resolve disputes between the Kurdistan Regional Government (KRG) and the federal government in Baghdad.",
+      "bodyKo": "회담은 이라크 내각 완성, 연방 예산 승인, 아르빌과 바그다드 간의 미해결 분쟁 해결에 초점을 맞추고 있습니다.\n에르빌(Kurdistan24) — 마수드 바르자니 대통령은 월요일 피르맘에서 모하메드 시아 알수다니 전 이라크 총리를 접대해 이라크와 더 넓은 지역의 정치적 상황에 대한 회담은 물론 연방 정부의 내각 완성과 아르빌과 바그다드 사이의 미해결 문제를 해결하기 위한 노력을 펼쳤습니다.\n회의 성명에 따르면 재건개발연합(Reconstruction and Development Coalition)의 수다니(Sudani) 대표는 바르자니(Barzani)를 만나 연방정부의 장관 구성을 완료하고 그 업무를 지원해야 할 필요성을 논의했다고 합니다.\n또한 이날 논의에서는 연방 예산, 필요한 법률 제정, 쿠르드 지방정부(KRG)와 바그다드 연방정부 간 분쟁 해결 방안 등도 다루어졌다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
       "tag": "정치·선거"
     },
     {
       "title": "Iraq appoints Ahmed Nayef Al Dulaimi as ambassador to Saudi Arabia",
       "source": "Iraqi News",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeENrQ05NWjE3bldkR2g3VnRheDcyR1I3RzZacllXaTB5TXJ3ZWF3am5CX3ZRS0xMSmk5V0cwenVOdDZLMWJ4NGQ5T2NVNG9EUGNrcEV1c2lTUklTWVduQWR5aDJMNGw2ckdES1l1RDdzdGtVZy1ZSGVfcDg5T0xlQ3MxcE1PQlZ1R1VNRFdSWlJKcF9jdlhzeDZ1RVRnZw?oc=5",
+      "link": "https://www.iraqinews.com/iraq/iraq-appoints-ahmed-nayef-al-dulaimi-ambassador-saudi-arabia-2026/",
       "date": "2026-10-12T10:24:15.000Z",
       "lang": "en",
       "titleKo": "이라크, 사우디 주재 대사에 아흐메드 나예프 알 두라이미 임명",
+      "url": "https://www.iraqinews.com/iraq/iraq-appoints-ahmed-nayef-al-dulaimi-ambassador-saudi-arabia-2026/",
+      "body": "Iraq appoints Ahmed Nayef Al Dulaimi as ambassador to Saudi Arabia\nThe national flags of Iraq and Saudi Arabia. Photo: Gulf Leaders Circle\nBaghdad (IraqiNews.com) – The Iraqi Ministry of Foreign Affairs issued an official ministerial decree transferring Ambassador Ahmed Nayef Rashid Al-Dulaimi to head the Iraqi Embassy in Riyadh as Ambassador Extraordinary and Plenipotentiary, succeeding Ambassador Safia Al-Suhail.\nThe high-level diplomatic reshuffle comes directly ahead of an official Gulf tour by Prime Minister Ali Al-Zaidi, scheduled to begin with an executive visit to the Kingdom of Saudi Arabia followed by bilateral engagements in Kuwait.\nA formal document confirmed that the decree, issued by the administrative department of the foreign ministry and signed by Foreign Minister Fuad Hussein, designates Al-Dulaimi as head of mission in the Saudi capital, taking formal effect from the date of his administrative detachment from his previous diplomatic post.",
+      "bodyKo": "이라크, 사우디 주재 대사에 아흐메드 나예프 알 두라이미 임명\n이라크와 사우디아라비아의 국기. 사진: 걸프 리더스 서클\n바그다드(IraqiNews.com) – 이라크 외무부는 아흐메드 나예프 라시드 알둘라이미 대사를 사피아 알수하일 대사의 뒤를 이어 특명전권대사로 리야드 주재 이라크 대사관에 임명하는 공식 장관령을 발표했습니다.\n이번 고위급 외교 개편은 알리 알자이디 총리의 공식 걸프 순방을 앞두고 사우디아라비아 국빈방문을 시작으로 쿠웨이트에서의 양자 회담을 앞두고 이뤄졌다.\n외무부가 발표하고 푸아드 후세인 외무장관이 서명한 이 법령은 알둘라이미를 사우디 수도 주재 공관장으로 지정하고 이전 외교관직에서 행정분리된 날부터 공식적으로 효력을 발휘한다는 공식 문서를 통해 확인됐다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Iraqi News"
+      ],
+      "related": [],
       "tag": "한국·외교"
     },
     {
       "title": "Britain's Covert Influence Architecture in Iraq: State Power - Digital Media and the Crisis of Information Sovereignty",
       "source": "https://debuglies.com",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNDZxZ1M5cVUxb3lvY3VZblMwS0FHOE5valBYUkxzOFc5YVhPclB1Q3RvYkd1YlRKb0cwaVVHSFpRRURuTUhFUm5ualRKekdyQ3ZzOU84bXlfWWJUU1E4WUNST2xXRUxJN3VRT0F0Rkg4dUZuUzZmYVBMX2JOb2tjUURXa3dLTDIycV9vQU5oY3dYblk4djU3RHpZNm1oclZZYXhtN0dNOVZsRkhEOGQwWnVWdjF6d19OQ3ZZeTBnTEhpM3BhOVNFd1B3WWkxQ3YyM1pmQUp5TWthT0VIVVUyLS1B?oc=5",
+      "link": "https://debuglies.com/2026/10/12/britains-covert-influence-architecture-in-iraq-state-power-digital-media-and-the-crisis-of-information-sovereignty/",
       "date": "2026-10-12T10:05:38.000Z",
       "lang": "en",
-      "titleKo": "영국의 이라크 은밀한 영향력 구축: 국가권력 - 디지털 미디어와 정보주권의 위기",
-      "tag": "치안·테러"
-    },
-    {
-      "title": "Iraqi jets destroy Daesh position in Diyala province",
-      "source": "Yeni Şafak English",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOR1BYd3Q2QjlTRndteHlpbVZmYVJtYnQtTVFHNXptNzZUb3p6UVBkSTlhMmJ3UFFBT1ptd3dEeUdqdmtLVXNmUVpGUktycHJUWjhJLXdyUElDU2k0VXpoR2puY1hWY3hDdEZob0RoMkRNZlI2dTZHS0MxS205SGV5bHR3SkFDZVFVbWVvbDFpbUpQRWd1ZlE?oc=5",
-      "date": "2026-10-12T10:00:34.000Z",
-      "lang": "en",
-      "titleKo": "이라크 전투기, 디얄라 지방의 다에시 기지 파괴",
+      "titleKo": "영국의 이라크 은밀한 영향력 구축: 국가권력",
+      "url": "https://debuglies.com/2026/10/12/britains-covert-influence-architecture-in-iraq-state-power-digital-media-and-the-crisis-of-information-sovereignty/",
+      "body": "Britain's Covert Influence Architecture in Iraq: State Power - Digital Media and the Crisis of Information Sovereignty - Highlight https://debuglies.com\nThe conclusion of the international coalition’s military mission in Iraq on 30 September 2026 represents a change in the instruments of British influence rather than the termination of Britain’s strategic involvement in the country. The United Kingdom has explicitly confirmed that it will continue coordinating communications against Islamic State propaganda while developing a bilateral defence partnership with Baghdad.\nHistorical British government records establish that London developed an organised counter-Islamic State communications capability, supported by public funding, multinational coordination and relationships with regional governmental and civil-society organisations. The British government stated in 2016 that it had committed £10 million to establish the Counter-Daesh Coalition Communications Cell.",
+      "bodyKo": "영국의 이라크 내 은밀한 영향력 구축: 국가 권력 - 디지털 미디어와 정보 주권의 위기 - 하이라이트 https://debuglies.com\n2026년 9월 30일 이라크에서 국제 연합의 군사 임무가 종료된 것은 영국의 이라크에 대한 전략적 개입이 종료되기보다는 영국의 영향력을 행사하는 도구의 변화를 의미합니다. 영국은 바그다드와 양자간 국방 파트너십을 발전시키는 동시에 이슬람국가(IS) 선전에 맞서 통신을 계속 조정할 것임을 명시적으로 확인했다.\n영국 정부의 역사적인 기록에 따르면 런던은 공공 자금, 다국적 조정, 지역 정부 및 시민 사회 조직과의 관계를 통해 조직적인 반이슬람 국가 커뮤니케이션 능력을 개발했습니다. 영국 정부는 2016년에 대다에시 연합 통신 셀(Counter-Daesh Coalition Communications Cell)을 설립하기 위해 1,000만 파운드를 투자했다고 밝혔습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "https://debuglies.com"
+      ],
+      "related": [],
       "tag": "치안·테러"
     },
     {
       "title": "بعد ارتفاع الدولار.. العراقي يؤجل صيانة سيارته وأجهزته المنزلية",
       "source": "شفق نيوز",
-      "link": "https://news.google.com/rss/articles/CBMi0gRBVV95cUxNV01LR3dzTjIzRkFNZHJBaG1mdHJxeTdhMFc1Q01TclRyVTRoQUxueXk4VkxPNHR2VmhRVzF0bFJTQXh0VWFZYUlXbTVvRlVqQmQ0WUNIUWRxTFAzeUdsczJ1ajludVNiWWhidnhuSmRYZ3VIUHAtOTkwRk03UVJhQl9HWlRJd3ZIc083dVhBYy1WSHcxLU40R0dyVTRUTkFDM04taVJSV25YSVFnLTVEWHRMaDY1Q0ktbFVYLUl2U21jSEgzSm9zNi12NlRna0xkNldFc09HbWVOWkZqLWNTbldwNEZiTXlBbFBUWjNUVm1RWVZsaG1FamNiM2tTX2E5ZkNTMXRYZUtUQ2IzMG14WWV2Z1hpSVFPSUdzTXpiSGpYZjNzYWhKbm5JZmdHNmk5REpvbFYwbXkxWHdTcGItRE1JMTRfZ01NUHdOTE9pM1Y1S2hQemZoc3IyS21WWkhLU0gzLU9DeERfMTZpejBKOEZVLTc2bXFFaU04WndiM2YwSkNqaHFzQTU2OTE5OWpZRjV1WHRsZ2hLOG9OMkUwaVNXOV9yMUpCQnNENk0wZXh2d1hxbDBCTDF4aG04dHdzaDFCS0xTOWZPZ2RqVWI4c1FEcUY2NE56LXBXWC1FR0NnUzdTb0NSOEFraVllQmJXXzBjdEdyeE9oN1dtc0pWY1dlREhUcHB1WkJjSzVmYWVya0lYTTFHV3RkSXZnYnc4dVlqN0ZJRVplM21FUWpiWXgzN1ZMRnpkYmtWU2NQTGRMTnl5dTBqUjNoY2MtLU5pQ0E?oc=5",
+      "link": "https://shafaq.com/ar/%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1-%D9%88%D8%AA%D8%AD%D9%84%D9%8A%D9%84%D8%A7%D8%AA/%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A-%D8%AC%D9%84-%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%D9%87-%D9%88-%D8%AC%D9%87%D8%B2%D8%AA%D9%87-%D8%A7%D9%84%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9",
       "date": "2026-10-12T09:58:11.000Z",
       "lang": "ar",
       "titleKo": "달러 강세 이후..이라크인, 자동차·가전제품 정비 연기",
+      "url": "https://shafaq.com/ar/%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1-%D9%88%D8%AA%D8%AD%D9%84%D9%8A%D9%84%D8%A7%D8%AA/%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A-%D8%AC%D9%84-%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%D9%87-%D9%88-%D8%AC%D9%87%D8%B2%D8%AA%D9%87-%D8%A7%D9%84%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9",
+      "body": "لم يعد ارتفاع سعر الدولار ينعكس على أسعار السلع المستوردة فحسب، بل امتد أثره إلى كلفة صيانة السيارات والأجهزة الكهربائية والأثاث في العراق، مع ارتفاع أسعار قطع الغيار والمواد الأولية، ما دفع مواطنين إلى تأجيل التصليح أو اللجوء إلى بدائل أقل كلفة، فيما بات أصحاب بعض المهن يواجهون تراجعاً في الطلب على منتجاتهم وخدماتهم.\nوبينما يواجه المواطن ارتفاعاً في كلفة شراء الأجهزة الجديدة وقطع تبديل السيارات، أصبحت الأعطال المنزلية والمركبات المتضررة مصدراً إضافياً للإنفاق، خصوصاً أن جزءاً من مستلزمات الصيانة يعتمد على الاستيراد، ما يجعل أسعارها عرضة للتأثر بتحركات سعر صرف الدولار وكلف الشحن والتوزيع.\nوقال المواطن مفيد علي، لوكالة شفق نيوز، إن صيانة السيارات والأجهزة الكهربائية أصبحت مكلفة بسبب ارتفاع أسعار قطع الغيار، مبيناً أنه غالباً ما يؤجل إصلاح سيارته في حال تعرضها لحادث، نتيجة ارتفاع أسعار القطع وأجور أصحاب ورش التصليح.",
+      "bodyKo": "달러 가격 상승은 더 이상 수입품 가격에만 반영되지 않고 예비 부품 및 원자재 가격이 상승하여 시민들이 수리를 연기하거나 저렴한 대안을 선택하게 되면서 이라크의 자동차, 전기 제품 및 가구 유지 비용에도 영향을 미치고 있으며 일부 직업 소유자는 현재 제품 및 서비스에 대한 수요 감소에 직면하고 있습니다.\n시민들은 새로운 가전제품과 자동차 교체 부품을 구입하는 데 드는 비용이 증가하는 반면, 가정의 고장과 손상된 차량은 추가적인 지출 원인이 되었습니다. 특히 유지 관리 용품의 일부가 수입에 의존하기 때문에 가격이 달러 환율과 운송 및 유통 비용의 변동에 취약해졌습니다.\nCitizen Mufid Ali는 Shafaq News Agency에 예비 부품 가격이 높아 자동차와 전자 제품을 유지하는 데 비용이 많이 들고 부품 가격과 수리점 주인의 임금이 높아 사고 발생 시 자동차 수리를 연기하는 경우가 많다고 말했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
       "tag": "경제·유가"
     },
     {
       "title": "Prime Minister Barzani, Sudani Discuss 2027 Budget and Erbil-Baghdad Relations",
       "source": "Kurdistan24",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOamQyWllRelc1SFRneXRzT2xhbUc2NXZCQUs4S2drTmVhNDJWemprdFVraEZzLVE5SG5Sd2cwRnU5N05CUk4tWDE0VE9INkdLZzFrZGFxLWpGNHBzQ2dDQ0tzU2s3dW5UUWI4QlQ1RXVHd2tQRkFsa0xIWmZlU09tcnA2SkRzeFZ3LTNUbHZNZV9pUndaUlUxQzFHU0JOTzJkM1RiSjV1QU1ZYk5QeVJsT3RadFozVk1UUDFQT2lB?oc=5",
+      "link": "https://www.kurdistan24.net/en/story/945566/prime-minister-barzani-sudani-discuss-2027-budget-and-erbil-baghdad-relations",
       "date": "2026-10-12T09:38:26.000Z",
       "lang": "en",
       "titleKo": "Barzani 총리, Sudani, 2027 예산 및 아르빌-바그다드 관계 논의",
+      "url": "https://www.kurdistan24.net/en/story/945566/prime-minister-barzani-sudani-discuss-2027-budget-and-erbil-baghdad-relations",
+      "body": "Kurdistan Region Prime Minister Masrour Barzani and Mohammed Shia al-Sudani, head of Reconstruction and Development Coalition, discussed Erbil-Baghdad relations, political coordination and the Kurdistan Region's share of Iraq's 2027 federal budget.\nERBIL (Kurdistan24) - Kurdistan Region Prime Minister Masrour Barzani on Monday received Mohammed Shia al-Sudani, head of the Reconstruction and Development Coalition and former Iraqi prime minister, for talks on political developments, Erbil-Baghdad relations and the 2027 federal budget.\nAccording to a Kurdistan Regional Government readout, the two sides discussed the broader situation in Iraq and the region, as well as relations between the Kurdistan Region and the federal government.\nThey agreed on the importance of strengthening cooperation and coordination among Iraq's political parties to support the federal government in increasing public revenues, addressing current challenges and providing services to all citizens and communities wi",
+      "bodyKo": "쿠르드 지역 총리 Masrour Barzani와 재건 개발 연합 대표인 Mohammed Shia al-Sudani는 아르빌-바그다드 관계, 정치적 조정 및 이라크 2027년 연방 예산에서 쿠르드 지역이 차지하는 비중에 대해 논의했습니다.\n에르빌(Kurdistan24) – 쿠르드 지역 총리 마스루르 바르자니(Masrour Barzani)는 월요일 재건개발연합 대표이자 전 이라크 총리인 모하메드 시아 알 수단니(Mohammed Shia al-Sudani)를 만나 정치 발전, 아르빌-바그다드 관계 및 2027년 연방 예산에 관한 회담을 가졌습니다.\n쿠르드 지역 정부의 보도에 따르면 양측은 이라크와 이 지역의 광범위한 상황은 물론 쿠르드 지역과 연방 정부 간의 관계에 대해 논의했습니다.\n그들은 연방 정부가 공공 수입을 늘리고 현재의 문제를 해결하며 모든 시민과 지역 사회에 서비스를 제공하도록 지원하기 위해 이라크 정당 간의 협력과 조정을 강화하는 것이 중요하다는 데 동의했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
       "tag": "정치·선거"
     },
     {
       "title": "Exclusive: Iraq Advances Plans for Nationwide Air Defense",
       "source": "Kurdistan24",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbU5oeEJubWx3QzJJRjlHcU9ZSWo0dGhCcDVTZFhKYlB1UWJjRjM4bEZoeUE4eEItdFlnUFdxbGRIczlWMnFOYVBZQUtqTVZpcktna2lvaW1DUVR4a2pMOEZhSXRnTHRJdllYc2VyMVNadVRlaEo3dzhFeUFJZzVjN0dqc2hrRXpDVVNBZjFxTnc3eXdqVEVFMWJSc1RMbnZjdmc?oc=5",
+      "link": "https://www.kurdistan24.net/en/story/945558/exclusive-iraq-advances-plans-for-nationwide-air-defense",
       "date": "2026-10-12T09:23:23.000Z",
       "lang": "en",
       "titleKo": "독점: 이라크, 전국 방공 계획 발전",
+      "url": "https://www.kurdistan24.net/en/story/945558/exclusive-iraq-advances-plans-for-nationwide-air-defense",
+      "body": "Iraq says the first components of a new nationwide air-defense system will arrive within six months, as Baghdad also highlights strong coordination with Peshmerga forces.\nERBIL (Kurdistan24) - Iraq has made significant progress toward acquiring a new air-defense system capable of covering the entire country, with the first system expected to arrive within six months, Sabah Numan, spokesperson for the Commander-in-Chief of the Iraqi Armed Forces, told Kurdistan24 in an exclusive interview.\nNuman said Iraqi authorities had advanced negotiations and agreements with companies supplying air-defense systems, with the aim of establishing nationwide coverage.\n\"We have made good progress in securing an air-defense system and reaching agreements with companies to provide air-defense systems covering all of Iraq,\" Numan said.",
+      "bodyKo": "이라크는 바그다드도 페시메르가 군대와의 강력한 협력을 강조하면서 새로운 전국적 방공 시스템의 첫 번째 구성 요소가 6개월 이내에 도착할 것이라고 밝혔습니다.\nERBIL(Kurdistan24) - 이라크는 전국을 포괄할 수 있는 새로운 대공방어 시스템을 확보하는 데 상당한 진전을 이루었으며 첫 번째 시스템은 6개월 이내에 도착할 것으로 예상된다고 이라크군 총사령관 대변인 Sabah Numan이 Kurdistan24와의 단독 인터뷰에서 말했습니다.\n누만 씨는 이라크 당국이 전국적인 적용 범위를 구축할 목적으로 대공 방어 시스템을 공급하는 회사들과 사전 협상 및 협정을 맺었다고 말했습니다.\n\"우리는 대공 방어 시스템을 확보하고 이라크 전역에 대공 방어 시스템을 제공하기로 기업과 합의하는 데 좋은 진전을 이루었습니다.\"라고 Numan은 말했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
       "tag": "기타"
     },
     {
       "title": "Iraq's major Dawa Party rethinks course after electoral fumble / Omar Sattar",
       "source": "کردپرس",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZnNXTnNZaGxTbE9SSVpjbnNwZjE5cW9SbTh4T0tXV3l4cW5QUHZFampoWlQwZzFPamg3SUljZWtvREl6M1QxN0ZaZGM2QzNkVjBkWHVGallfcFB1Mm1rdFRoUE1kWGIzNE5LbFdQb0QweHlhdkJkaVpEZnp5eG5FNml5Nm9IREN4WHByc2JZeThIVG1ZQUFlTjdlMjNaSTdlNnBxT1RfNE5NeTV3emtULVJLSW16dw?oc=5",
+      "link": "https://www.kurdpress.com/en/news/127210/iraq-s-major-dawa-party-rethinks-course-after-electoral-fumble-omar-sattar",
       "date": "2026-10-12T09:19:57.000Z",
       "lang": "en",
       "titleKo": "이라크의 주요 다와당, 선거 실수 이후 진로 재검토 / 오마르 사타르",
+      "url": "https://www.kurdpress.com/en/news/127210/iraq-s-major-dawa-party-rethinks-course-after-electoral-fumble-omar-sattar",
+      "body": "For the first time since 2005, the Islamic Dawa Party finds itself far removed from the head of Iraq&rsquo;s federal government. The number of seats it holds in the new p\nIbrahim al-Jafari, Dawa's former secretary-general, held the post of interim prime minister from 2005 until 2006, before his successor and the party&rsquo;s current leader, Nouri al-Maliki, took the role from 2006 to 2014. In August 2014, Haider al-Abadi took over.\nIt could be argued that the biggest reason behind the party's loss of the premiership to the compromise candidate, Adel Abdul Mahdi, was its division into two lists &mdash; the Victory list headed by outgoing Abadi and Maliki's State of Law list. The Electoral Commission does not permit one party to run on two electoral lists.\nDawa leader Hassan al-Sunaid told Al-Monitor, &ldquo;There are calls by the leaders of the Islamic Dawa Party to hold an urgent conference, with the aim of unifying internal ranks and electing a new secretariat for the party.&rdquo; A",
+      "bodyKo": "2005년 이후 처음으로 이슬람 다와당(Islamic Dawa Party)이 이라크 연방정부 수장 자리에서 멀리 떨어져 있음을 알게 되었습니다. 새 p에서 보유하는 좌석 수\n다와의 전 사무총장인 이브라힘 알 자파리(Ibrahim al-Jafari)는 2005년부터 2006년까지 임시 총리직을 맡았으며, 그의 후임이자 당의 현 지도자인 누리 알 말리키(Nouri al-Maliki)가 2006년부터 2014년까지 총리직을 맡았습니다. 2014년 8월 하이더 알 아바디(Haider al-Abadi)가 총리직을 맡았습니다.\n당이 타협 후보인 아델 압둘 마흐디(Adel Abdul Mahdi)에게 총리직을 잃은 가장 큰 이유는 퇴임하는 아바디(Abadi)와 말리키(Maliki)의 법치 국가 목록이 이끄는 승리 목록, 즉 두 개의 목록으로 나뉘었기 때문이라고 주장할 수 있습니다. 선거관리위원회는 한 정당이 두 개의 선거인명부에 출마하는 것을 허용하지 않습니다.\n다와(Dawa) 지도자 하산 알 수나이드(Hassan al-Sunaid)는 알모니터(Al-Monitor)와의 인터뷰에서 \"이슬람 다와당 지도자들은 내부 계급을 통합하고 당의 새 사무국을 선출하기 위해 긴급 회의를 열 것을 요구하고 있다\"고 말했다. 에이",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "کردپرس"
+      ],
+      "related": [],
       "tag": "정치·선거"
-    },
-    {
-      "title": "PKK evacuates four areas in north Iraq: security sources",
-      "source": "Hürriyet Daily News",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNFp4c1IwaXVGWkUxLVRrWG5PUUpPb2t1VEs1RlVQRTJLMW10Y1AyZ0dKM2ViOUNLUkFaSGxLNUYybVJJR0dkVDFlYkVraXdpcVBtMm1CU2VXNEs3UEw4Z0RMN3JmMVdBM3l3QTZLOGZ4TWhtcnhYMkIyemZHZThSd3RhWU4zaF93RW1EQkRJbTZXaWdoRVFWdEFKeHc?oc=5",
-      "date": "2026-10-12T08:52:58.000Z",
-      "lang": "en",
-      "titleKo": "PKK, 이라크 북부 4개 지역 대피: 보안 소식통",
-      "tag": "치안·테러"
     },
     {
       "title": "واع / اختتام بطولة اندية العراق للشباب بالشطرنج",
       "source": "وكالة انباء الاعلام العراقي",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9tR1U5d0hZSXRiM2lDLTVJVm0wS21MZXZJRmN0a0gxTURaRFQ2SUNja0NtMXBCamdFOFFtWkpBNTVKelYybS1Ec1JRNUF2MVpocXc?oc=5",
+      "link": "https://al-iraqinews.com/archives/670281",
       "date": "2026-10-12T08:03:14.000Z",
       "lang": "ar",
-      "titleKo": "INA / 이라크 클럽 청소년 체스 선수권대회 폐막",
+      "titleKo": "이라크 클럽 청소년 체스 선수권대회 폐막",
+      "url": "https://al-iraqinews.com/archives/670281",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة انباء الاعلام العراقي"
+      ],
+      "related": [],
       "tag": "기타"
-    },
-    {
-      "title": "الدولار يلامس 165 ألفاً.. ارتفاع جديد لأسعار الصرف في بغداد وأربيل",
-      "source": "شفق نيوز",
-      "link": "https://news.google.com/rss/articles/CBMi_wNBVV95cUxNNllPNWw3a3ozR3VsNTMxbWVocVhrcFlsQmxmV1FMU3FBYnZ2cHRSeGRUaG1zX0ZSaWtUSjMzN0Y1LVdFcnpTeVBYcWlIbXRyRGhzNGd1SHd5SlZPc19CZ1NUNkZFLTR1cVhvb2lEbGJLWHJwSlVUejZlRWhhbEFWYndpSEN2VXhtVE9KeGdBM0FjQVVMdU9nYWM5T1FiSU9mYlRRN21sdXV5cm5uNGt5LTQyYTNfTWJwbURTTFp3MTV6dEYtZXVJMm1fYXlXTVVEZ21xMnFLbFR2TDJ0ZWFjTXVZYi1KbjRDMDlzMGlObTlFMUNfN3NxN09CTGd6cnd3QU5rMmlsUWdDem1scTU0UnZJRzhRc2hlSmZfc1oxR3RqM0cwSFo5N0tuc2IzRGZnT1otSFQ4YlNwcFhzbjg1VnZzMWJRc0pMTXk2ZDFnbFZLaGZNeXN3ZFpneHN0dmNQRjI1LWN4ZWhXcnJPNTYwY2pBMDgtckdzZWVCVDlmdm90bXk5RzAxbGhoRVh5QnJjZjFqaVBIN1dKclk4V0FxZjJVZmJnaXpQX0h5bEVVZzlyeld6ZDJNb3N1ektXazdhcTZnN0N6cWM3M1pRZTRLU3BmVEZTcEhnR2Z3WHltM0xELW02VGhqVVE1Sm8xcTdrci1sVC1ESzJHaDh2dUFZ?oc=5",
-      "date": "2026-10-12T07:57:29.000Z",
-      "lang": "ar",
-      "titleKo": "달러 16만5천 터치…바그다드·아르빌 환율 새 상승",
-      "tag": "경제·유가"
     },
     {
       "title": "بغداد.. اعتقالات وأحكام بالحبس في قضية تزوير بديوان الوقف السني",
@@ -520,6 +653,11 @@
       "date": "2026-10-12T07:50:42.000Z",
       "lang": "ar",
       "titleKo": "바그다드..수니 기부처 위조 사건 체포 및 징역형",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
       "tag": "치안·테러"
     },
     {
@@ -529,6 +667,11 @@
       "date": "2026-10-12T07:46:27.000Z",
       "lang": "ar",
       "titleKo": "바그다드의 전력망을 지원하는 고정식 및 이동식 보조 스테이션",
+      "count": 1,
+      "sources": [
+        "شفقنا العراق"
+      ],
+      "related": [],
       "tag": "전력·생활"
     },
     {
@@ -538,6 +681,11 @@
       "date": "2026-10-12T07:33:00.000Z",
       "lang": "en",
       "titleKo": "KDP는 이라크의 주요 정치 블록과 강한 관계를 가지고 있다고 말합니다",
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
       "tag": "기타"
     },
     {
@@ -547,6 +695,11 @@
       "date": "2026-10-12T07:29:48.000Z",
       "lang": "ko",
       "titleKo": "이라크에서 열리는 활기 넘치는 바빌론 문화 축제",
+      "count": 1,
+      "sources": [
+        "Vietnam.vn"
+      ],
+      "related": [],
       "tag": "기타"
     },
     {
@@ -556,6 +709,11 @@
       "date": "2026-10-12T07:26:00.000Z",
       "lang": "en",
       "titleKo": "이라크의 '그림자 민병대', 사우디아라비아 공격 모의 혐의",
+      "count": 1,
+      "sources": [
+        "باسنیوز"
+      ],
+      "related": [],
       "tag": "치안·테러"
     },
     {
@@ -565,6 +723,11 @@
       "date": "2026-10-12T06:54:00.000Z",
       "lang": "ar",
       "titleKo": "이라크 중앙은행은 달러 가격을 조정하기 전에 확인된 무역 이전에 대한 가격을 고정합니다.",
+      "count": 1,
+      "sources": [
+        "annahar.com"
+      ],
+      "related": [],
       "tag": "경제·유가"
     },
     {
@@ -574,6 +737,11 @@
       "date": "2026-10-12T06:42:00.000Z",
       "lang": "en",
       "titleKo": "이라크 그룹, 사우디 긴장 고조로 후티 반군 지원",
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
       "tag": "치안·테러"
     },
     {
@@ -583,6 +751,11 @@
       "date": "2026-10-12T06:27:23.000Z",
       "lang": "en",
       "titleKo": "이라크, 이란 국경 근처 디얄라에 있는 ISIS 은신처에 두 차례 공습",
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
       "tag": "치안·테러"
     },
     {
@@ -592,6 +765,11 @@
       "date": "2026-10-12T05:28:20.000Z",
       "lang": "ko",
       "titleKo": "한화, 이라크 정부 미지급 공사대금 1억1100만달러 지급 한다",
+      "count": 1,
+      "sources": [
+        "PRESS9"
+      ],
+      "related": [],
       "tag": "정치·선거"
     },
     {
@@ -601,6 +779,11 @@
       "date": "2026-10-12T04:46:35.000Z",
       "lang": "ar",
       "titleKo": "이라크의 환율 위기와 그것이 시민의 삶과 정부 금융 수단에 미치는 영향",
+      "count": 1,
+      "sources": [
+        "اقرأ 24"
+      ],
+      "related": [],
       "tag": "정치·선거"
     },
     {
@@ -610,34 +793,26 @@
       "date": "2026-10-12T03:12:01.000Z",
       "lang": "en",
       "titleKo": "마수드 바르자니 이라크 주재 영국대사가 선거 후 상황에 대해 논의하고 있다.",
+      "count": 1,
+      "sources": [
+        "کردپرس"
+      ],
+      "related": [],
       "tag": "정치·선거"
     },
     {
-      "title": "Iraqi warplanes destroy ISIS position in country’s east",
-      "source": "Anadolu Ajansı",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOLVVicnVhUzBCNEZVZTVreEJSTmdUaThNM1hudEFScFZnS0JvcXIxNWZnZ19GVVBmUTk4ZE8xLU5ieTkxckNvUmN6aWJ6TkFuMHNqbWlxTHU1S2lEZm1uUXQtWUxhT0RSVlZhd0VQQU9XcDN4UmR2am9NbDBMMW10R2E2TGpzb1NmRFRKcTEyekRNcmp4aGQyUVlmNnpXTjJzSnc?oc=5",
-      "date": "2026-10-12T02:40:16.000Z",
-      "lang": "en",
-      "titleKo": "이라크 전투기, 동부 ISIS 거점 파괴",
-      "tag": "치안·테러"
-    },
-    {
-      "title": "Shafaq News..21 Asian nationals detained at Iraq borders",
+      "title": "21 Asian nationals detained at Iraq borders",
       "source": "شفق نيوز",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zSWFlN1JRTUItUEVuNHJ2S0dWcEpuNkEzRG9sNkVwQnBjLUx1V2JjM3FlWmdYa1lvcXRPak1ZcHc0eEphYzVqZlFueWItVktYRlQxWkZwMTlTNnpRNERpc19CbTJUTl9DSjdGTnpoLWFNbnlTbXZYcHBVMm1GWGc?oc=5",
       "date": "2026-10-11T22:34:13.000Z",
       "lang": "en",
-      "titleKo": "샤팍뉴스..이라크 국경에 아시아인 21명 억류",
+      "titleKo": "이라크 국경에 아시아인 21명 억류",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
       "tag": "기타"
-    },
-    {
-      "title": "ارتفاع سعر الدولار في العراق يضغط على العمال: دخل يتراجع وأسعار تتصاعد ومعيشة تزداد صعوبة",
-      "source": "جريدة المدى",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1xd0VQQTN0OC1YbHBuckhiUm5iSzVYQ0t3WVd2Y0FzeXlIcXJHLTJwY1VpNDZEUW1Ya2xzVVFIQnJrcGcyekE?oc=5",
-      "date": "2026-10-11T21:48:11.000Z",
-      "lang": "ar",
-      "titleKo": "이라크의 달러 가격 상승은 노동자들에게 압력을 가하고 있습니다. 소득은 감소하고 물가는 상승하며 생활 조건은 더욱 어려워지고 있습니다.",
-      "tag": "경제·유가"
     },
     {
       "title": "Iraqi parliament speaker welcomes re-election",
@@ -646,6 +821,11 @@
       "date": "2026-10-11T21:42:17.000Z",
       "lang": "en",
       "titleKo": "이라크 국회의장, 재선 환영",
+      "count": 1,
+      "sources": [
+        "کردپرس"
+      ],
+      "related": [],
       "tag": "정치·선거"
     },
     {
@@ -655,15 +835,25 @@
       "date": "2026-10-11T21:38:35.000Z",
       "lang": "en",
       "titleKo": "TotalEnergies CEO, 석유 및 가스 투자 회담을 위해 이라크 총리를 만나기 위해 바그다드 방문",
+      "count": 1,
+      "sources": [
+        "IraqiNews"
+      ],
+      "related": [],
       "tag": "정치·선거"
     },
     {
-      "title": "Shafaq News..Iran updates list of medicines banned in Iraq",
+      "title": "Iran updates list of medicines banned in Iraq",
       "source": "شفق نيوز",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORGR2QUxwZ3VvRlUyanBiRVZ5Z3hYamI1UmlaX3B3cFBmTTlRVlFoQ1BEQUExa1FnVUxNbzk0ZWk0aHdvUWJOc2h1VTNmWDFlMU42LVliYldVMk93ZmJWMk1CdmQ5cFBZOERhaXJ1SGhWVDJfaTVmZjNFN1dfZjRPdw?oc=5",
       "date": "2026-10-11T21:28:44.000Z",
       "lang": "en",
       "titleKo": "샤파크뉴스..이란, 이라크 금지 의약품 목록 업데이트",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
       "tag": "기타"
     },
     {
@@ -673,16 +863,12 @@
       "date": "2026-10-11T21:26:05.000Z",
       "lang": "en",
       "titleKo": "아르빌에서의 미국의 움직임과 이라크의 마지막 기지에서 철수의 시작",
+      "count": 1,
+      "sources": [
+        "کردپرس"
+      ],
+      "related": [],
       "tag": "기타"
-    },
-    {
-      "title": "Shafaq News..Iraqi F-16s destroy ISIS hideout in Diyala",
-      "source": "شفق نيوز",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5sWFFBQlN3YlNuVThvZGFZOF9VbGZTSEZiV1hZNlVibjNYOXFCSlh6X19hR0U4UTJnTHRMQVdWLV9LMFp5UjRUc3JfMnRqekcxVFZtbmtoOUdMTnVGS1dCT255T05hbzYwTGloUk5HeF91NExOS3ZkZk15REZXZw?oc=5",
-      "date": "2026-10-11T20:59:01.000Z",
-      "lang": "en",
-      "titleKo": "Shafaq News..이라크 F-16, 디얄라의 ISIS 은신처 파괴",
-      "tag": "치안·테러"
     },
     {
       "title": "The imminent visit of the Iraqi Prime Minister to America; Arms control and economy-oriented discussions",
@@ -691,15 +877,25 @@
       "date": "2026-10-11T20:56:37.000Z",
       "lang": "en",
       "titleKo": "이라크 총리의 미국 방문이 임박했습니다. 군비통제와 경제 중심 논의",
+      "count": 1,
+      "sources": [
+        "کردپرس"
+      ],
+      "related": [],
       "tag": "정치·선거"
     },
     {
-      "title": "Syria Foils Drug Smuggling on Iraq and Jordan Borders - Enab Baladi",
+      "title": "Syria Foils Drug Smuggling on Iraq and Jordan Borders",
       "source": "Enab Baladi",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTE8xWVFzMnNka19oNzBhbTZzZWQyNWVoUTdJaHZiYm12d0VYYW5QeXFUenNOQWNSX1pYSHhpNk9BN3hIVVBXT0Rva2FnQm1rR3E1Q1RzLWtLanpIVXNPR0xNeUpNZ21EcjBWZ3k1a0ZFaTJhem03engxSFI0OWlMYU1YVFA0UGRnTUduaG1HWTU3Rkw0ZFQySTNCbUdnUkxyMlJnT9IBqgFBVV95cUxOYWpDWW5JdVEtWGJXZ1hlVXg5WXltcGlkcllSQ0lnZVk2UUNxWU05V3kzV3FLX1ptZzUyZFFsdHc2NGszb0VVcnhPVEItaGJ6SjZNSEY4aE9weHc0VC0wa29zTTdjZUw4WlRpY3M4cnZkY2N6bEp3ZWc0cGtWUFdaYmhXcmo4TjdIRjRfOXpRbGo4VnN5eHFycDlWdU02cGlpNy1Uc2RCclgydw?oc=5",
       "date": "2026-10-11T19:27:56.000Z",
       "lang": "en",
-      "titleKo": "시리아, 이라크와 요르단 국경에서의 마약 밀수를 막다 - Enab Baladi",
+      "titleKo": "시리아, 이라크와 요르단 국경에서의 마약 밀수를 막다",
+      "count": 1,
+      "sources": [
+        "Enab Baladi"
+      ],
+      "related": [],
       "tag": "치안·테러"
     },
     {
@@ -709,16 +905,12 @@
       "date": "2026-10-11T19:13:38.000Z",
       "lang": "en",
       "titleKo": "이라크인들이 일주일 안에 10,000건이 넘는 무기 등록 요청을 제출했습니다.",
+      "count": 1,
+      "sources": [
+        "IraqiNews"
+      ],
+      "related": [],
       "tag": "치안·테러"
-    },
-    {
-      "title": "وزير الكهرباء يشارك في مؤتمر الطاقة العالمي - شفقنا العراق | الوكالة الشيعية للأخبار من العراق، النجف، كربلاء والعالم",
-      "source": "شفقنا العراق",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE15eWtZamVMZ3pWcm9zTFQtbEg5SlZ5WEZhR0M1ajg1SC1wUnhRQ0RUZWRCZF9tMnI4ZzlzSVB3VV9CNjY1eTUwbkZxNnk?oc=5",
-      "date": "2026-10-11T18:50:31.000Z",
-      "lang": "ar",
-      "titleKo": "전기부 장관, 세계 에너지 회의에 참석 - 이라크 샤파크나 | 이라크, 나자프, 카르발라 및 세계의 시아파 통신사",
-      "tag": "전력·생활"
     },
     {
       "title": "Kurdistan Region parliament election result will decide election of Iraq president, official tells Kurdpress",
@@ -727,16 +919,12 @@
       "date": "2026-10-11T18:45:21.000Z",
       "lang": "en",
       "titleKo": "쿠르드 지역 의회 선거 결과가 이라크 대통령 선거를 결정할 것이라고 관계자가 Kurdpress에 전했습니다.",
+      "count": 1,
+      "sources": [
+        "کردپرس"
+      ],
+      "related": [],
       "tag": "정치·선거"
-    },
-    {
-      "title": "Iraq attends Riyadh energy summit as Saudi minister declares city ‘capital of energy security’",
-      "source": "Iraqi News",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdkNVYlNBckc5Uko2Rnk1UHNqVV80Rjl4a3BWX3N1WHZGY2tEWkE5WGNxdlQ2b05ERkFVeE9PV3Ytb2xNbW1NY2NTS0c5bGVmT0JuVWxiOGllckZaSUhYYjNycnBLdFZPUzRHRi1Uak5hZTdvaDlQS1BnLW45bzY3SFhqcTN2Z0NVQk5PTGgzZkpQSmJmSUJpQTVtYW5KSmZsbGwtbXliQ1BuMWEtbmtXX2FEVHcxWnRUUW5yTUg1ZU5RUQ?oc=5",
-      "date": "2026-10-11T18:38:37.000Z",
-      "lang": "en",
-      "titleKo": "사우디 장관이 도시를 '에너지 안보의 수도'로 선언함에 따라 이라크는 리야드 에너지 정상 회담에 참석합니다.",
-      "tag": "전력·생활"
     },
     {
       "title": "Iraq clarifies security’s role in dollar market amid dinar devaluation fallout",
@@ -745,6 +933,11 @@
       "date": "2026-10-11T18:37:34.000Z",
       "lang": "en",
       "titleKo": "이라크, 디나르 평가절하 여파 속 달러시장에서 안보 역할 분명히 밝혀",
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
       "tag": "경제·유가"
     }
   ]
