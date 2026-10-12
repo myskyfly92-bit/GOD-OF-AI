@@ -426,6 +426,11 @@
     const close = () => { box.hidden = true; bg.hidden = true; document.body.style.overflow = ""; };
     document.querySelectorAll("[data-sos]").forEach((b) => b.addEventListener("click", open));
     $("#sosClose").addEventListener("click", close); bg.addEventListener("click", close);
+    // 카카오톡: 휴대폰 '공유하기' 창을 띄우면 카카오톡이 목록에 나온다 (카카오 앱 키 없이 쓰는 방법)
+    $("#sosKakao").addEventListener("click", () => {
+      if (navigator.share) navigator.share({ text: msg.value }).catch(() => {});
+      else { $("#sosCopy").click(); alert("이 휴대폰은 바로 공유가 안 됩니다. 내용이 복사됐으니 카카오톡 대화방에 붙여 넣어 주세요."); }
+    });
     $("#sosCopy").addEventListener("click", () => {
       const done = () => { $("#sosCopy").textContent = "✅ 복사됨 — 원하는 곳에 붙여 넣으세요"; setTimeout(() => { $("#sosCopy").textContent = "📋 내용 복사"; }, 2500); };
       if (navigator.clipboard) navigator.clipboard.writeText(msg.value).then(done, () => { msg.select(); document.execCommand("copy"); done(); });

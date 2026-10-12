@@ -180,3 +180,4 @@ main { padding: 14px 14px calc(88px + var(--safe-b)); }
 .sos-loc a { color: var(--cyan); font-weight: 600; }
 .sos-loc.bad { border-color: rgba(239,83,80,.5); color: #ff9a97; }
 #sosMsg { font-size: 13px; resize: vertical; }
+.btn.kakao { background: #fee500; border-color: #fee500; color: #191600; }
