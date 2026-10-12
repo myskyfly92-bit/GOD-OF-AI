@@ -8126,3 +8126,23 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   document.addEventListener("visibilitychange", () => { if (!document.hidden) tick(); });
   window.hseVisitTest = (t, a, n) => { elT.textContent = t; elA.textContent = a; if (n) { elN.textContent = n; nowWrap.hidden = false; } box.hidden = false; elT.classList.add("bump"); };
 })();
+
+
+/* ==========================================================
+   휴대폰 전용 화면(m/)과 오가기
+   - 휴대폰에서 'PC 화면으로 보기'를 골라 여기 온 경우: 왼쪽 위에 '📱 모바일 화면' 버튼
+   - 주소 끝이 #suggest 이면 '개선 건의·제안' 탭을 바로 연다 (모바일 화면의 건의 버튼)
+   ========================================================== */
+(function mobileBridge() {
+  let pcPinned = false;
+  try { pcPinned = localStorage.getItem("hsePC") === "1"; } catch (e) {}
+  const small = window.matchMedia && matchMedia("(max-width: 760px)").matches;
+  if (pcPinned && small) {
+    const a = document.createElement("a");
+    a.href = "m/"; a.textContent = "📱 모바일 화면";
+    a.style.cssText = "position:fixed;top:10px;right:10px;z-index:2000;background:#35d0c0;color:#06231f;font-weight:800;font-size:12px;padding:6px 10px;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.4)";
+    a.addEventListener("click", () => { try { localStorage.removeItem("hsePC"); } catch (e) {} });
+    document.body.appendChild(a);
+  }
+  if (location.hash === "#suggest") setTimeout(() => { const b = document.querySelector('[data-view="view-suggest"]'); if (b) b.click(); }, 800);
+})();

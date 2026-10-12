@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1118">
+<title>비스마야 HSE 상황실 · 모바일</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="m.css?v=20261012m1">
+</head>
+<body>
+
+<header class="top">
+  <span class="mark">한화</span>
+  <div class="ttl"><b>비스마야 HSE 상황실</b><small id="vc" class="vc">Bismayah New City · HSE</small></div>
+  <div class="clk"><b class="num" id="clk">--:--</b><small id="clk2">바그다드 · 한국 --:--</small></div>
+</header>
+
+<main>
+  <!-- 홈 -->
+  <section class="page on" id="p-home">
+    <div id="homeAlert"></div>
+    <div class="card hero">
+      <div><div class="lbl">무재해 연속</div><div class="big num" id="freeDays">–<small>일</small></div></div>
+      <div class="side"><div class="lbl">착공 후</div><div class="v num" id="buildDays">–<small>일째</small></div></div>
+      <div class="foot"><span id="lastInc">최종 사고 기준일 –</span><span>무사고 목표를 함께 지켜 주세요</span></div>
+    </div>
+    <div class="card" id="envCard"><h3><span class="dot"></span>지금 작업환경 · 현장 날씨</h3><div class="skel"></div><div class="skel" style="width:70%"></div></div>
+    <div class="card" id="workCard"><h3><span class="dot" style="background:var(--amber)"></span>오늘 작업</h3><div class="skel"></div></div>
+    <div class="card" id="noticeCard"><h3><span class="dot" style="background:var(--blue)"></span>공지사항</h3><div class="skel"></div></div>
+    <div class="card" id="calCard"><h3><span class="dot" style="background:var(--violet)"></span>다가오는 일정</h3></div>
+    <div class="card" id="fxCard"><h3><span class="dot" style="background:var(--green)"></span>환율</h3><div class="skel"></div></div>
+  </section>
+
+  <!-- 안전 -->
+  <section class="page" id="p-safety">
+    <div class="ph"><h2>안전</h2><span>국내 중대재해 · 사고사례 · 작업일정</span></div>
+    <div class="card" id="saNewsCard"><h3><span class="dot" style="background:var(--red)"></span>중대재해 보도 (최근 7일)</h3><div class="skel"></div></div>
+    <div class="card" id="saStatCard"><h3><span class="dot"></span>국내 중대재해 현황</h3><div class="skel"></div></div>
+    <div class="card" id="weekCard"><h3><span class="dot" style="background:var(--amber)"></span>이번 주 작업일정</h3><div class="skel"></div></div>
+    <div class="card" id="caseCard"><h3><span class="dot" style="background:var(--violet)"></span>최근 사고사례</h3><div class="skel"></div></div>
+    <div class="card" id="guideCard"><h3><span class="dot" style="background:var(--blue)"></span>KOSHA GUIDE 찾기</h3>
+      <input class="search" id="guideQ" placeholder="예: 비계, 밀폐공간, 크레인" autocomplete="off"><ul class="list" id="guideList"></ul></div>
+  </section>
+
+  <!-- 보건 -->
+  <section class="page" id="p-health">
+    <div class="ph"><h2>보건</h2><span>클리닉 · 병원 · 감염병</span></div>
+    <div class="card" id="clinicCard"><h3><span class="dot"></span>클리닉 진료현황</h3><div class="skel"></div></div>
+    <div class="card" id="medCard"><h3><span class="dot" style="background:var(--red)"></span>가까운 의료기관</h3><div class="skel"></div></div>
+    <div class="card" id="kdcaCard"><h3><span class="dot" style="background:var(--amber)"></span>국내 감염병 (주간)</h3><div class="skel"></div></div>
+    <div class="card" id="hiCard"><h3><span class="dot" style="background:var(--violet)"></span>세계 보건 이슈</h3><div class="skel"></div></div>
+  </section>
+
+  <!-- 환경 -->
+  <section class="page" id="p-env">
+    <div class="ph"><h2>환경</h2><span>날씨 · 모래먼지 · 지진 · 화재</span></div>
+    <div class="card" id="dustCard"><h3><span class="dot" style="background:var(--amber)"></span>모래먼지 예보 (48시간)</h3><div class="skel"></div></div>
+    <div class="card" id="aqiCard"><h3><span class="dot"></span>대기질</h3><div class="skel"></div></div>
+    <div class="card" id="fireCard"><h3><span class="dot" style="background:var(--red)"></span>화재 (위성 감지)</h3><div class="skel"></div></div>
+    <div class="card" id="quakeCard"><h3><span class="dot" style="background:var(--violet)"></span>주변 지진 (최근 30일)</h3><div class="skel"></div></div>
+  </section>
+
+  <!-- 더보기 -->
+  <section class="page" id="p-more">
+    <div id="moreHome">
+      <div class="ph"><h2>더보기</h2><span></span></div>
+      <div class="menu">
+        <button data-sub="bnews"><span class="ic">📰</span>비스마야 소식<small>국내·이라크 기사</small></button>
+        <button data-sub="embassy"><span class="ic">🏛️</span>대사관 안전공지<small>중동 각국 대사관</small></button>
+        <button data-sub="travel"><span class="ic">✈️</span>여행경보<small>주변국 단계</small></button>
+        <button data-sub="global"><span class="ic">🌍</span>건설사 해외현장<small>공정률 비교</small></button>
+        <button data-sub="contacts"><span class="ic">📞</span>연락처<small>클리닉 · 긴급</small></button>
+        <a href="../?pc=1#suggest"><span class="ic">💡</span>개선 건의<small>PC 화면에서 작성</small></a>
+      </div>
+      <div class="card"><h3>바로가기</h3>
+        <div class="row2">
+          <a class="btn" href="https://script.google.com/macros/s/AKfycbzbc2OL601G8iW08brqgG_xggnMgul4FV5hV---IY2jp65-j_2kAYsa0r2kWnIASdAReg/exec" target="_blank" rel="noopener">Clinic EMR ↗</a>
+          <a class="btn" href="https://hhkas.github.io/IRIS/" target="_blank" rel="noopener">IRIS ↗</a>
+        </div>
+        <a class="btn pri" style="margin-top:8px" href="../?pc=1" id="toPc">🖥 PC 화면으로 보기</a>
+      </div>
+    </div>
+    <div id="moreSub" hidden>
+      <div class="sub-head"><button id="subBack" aria-label="뒤로">‹</button><h2 id="subTitle"></h2></div>
+      <div id="subBody"></div>
+    </div>
+  </section>
+
+  <div class="foot-links">© 2026 비스마야 안전보건환경 상황실 · <a href="../?pc=1">PC 화면</a></div>
+</main>
+
+<nav class="nav" id="nav">
+  <button class="on" data-p="home"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg>홈</button>
+  <button data-p="safety"><svg viewBox="0 0 24 24"><path d="M4 16a8 8 0 0116 0"/><path d="M2 16h20v3H2z"/><path d="M12 8V4"/></svg>안전</button>
+  <button data-p="health"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M12 8v8M8 12h8"/></svg>보건</button>
+  <button data-p="env"><svg viewBox="0 0 24 24"><circle cx="9" cy="9" r="4"/><path d="M8 20h9a4 4 0 000-8 5 5 0 00-9.5 1"/></svg>환경</button>
+  <button data-p="more"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></svg>더보기</button>
+</nav>
+
+<script src="m.js?v=20261012m1"></script>
+</body>
+</html>
