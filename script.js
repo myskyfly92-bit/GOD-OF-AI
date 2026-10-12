@@ -7618,14 +7618,40 @@ function makeNewsView(o) {
       </div>
     </div>`;
   };
+  // 한 줄 목록 (이라크 주요 이슈): 날짜별로 묶고, 같은 사건 여러 보도는 하나로
+  const hm = (iso) => { const d = new Date(iso); return isNaN(d) ? "" : d.toLocaleTimeString("ko-KR", { timeZone: "Asia/Baghdad", hour: "2-digit", minute: "2-digit", hour12: false }); };
+  const dayKey = (iso) => new Date(iso).toLocaleDateString("en-CA", { timeZone: "Asia/Baghdad" });
+  const dayName = (k) => {
+    const today = dayKey(new Date().toISOString()), y = dayKey(new Date(Date.now() - 864e5).toISOString());
+    const d = new Date(k + "T12:00:00"), lab = `${d.getMonth() + 1}.${d.getDate()} (${"일월화수목금토"[d.getDay()]})`;
+    return k === today ? `오늘 · ${lab}` : k === y ? `어제 · ${lab}` : lab;
+  };
+  const row = (n) => {
+    const body = n.bodyKo || n.body, rel = n.related || [];
+    return `<div class="inews-row bnews-item" tabindex="0" role="button" aria-expanded="false">
+      <div class="inews-line"><span class="bnews-tag t-${escapeHtml(TAGC[n.tag] || "etc")}">${escapeHtml(n.tag || "기타")}</span>
+        <span class="inews-title">${escapeHtml(n.titleKo || n.title)}</span>
+        <span class="inews-meta">${n.count > 1 ? `<b>보도 ${n.count}건</b> · ` : ""}${escapeHtml((n.sources && n.sources[0]) || n.source || "")} · ${hm(n.date)}</span></div>
+      <div class="bnews-body">
+        ${n.titleKo && n.titleKo !== n.title ? `<p class="bnews-orig" ${n.lang === "ar" ? 'dir="rtl" lang="ar"' : ""}>${escapeHtml(n.title)}</p>` : ""}
+        ${body ? `<div class="bnews-text">${paras(body)}</div>` : ""}
+        ${rel.length ? `<div class="inews-rel"><b>같은 소식 다른 보도</b>${rel.map((r) => `<a href="${escapeHtml(r.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.titleKo)} <small>${escapeHtml(r.source || "")}</small></a>`).join("")}</div>` : ""}
+        <a class="bnews-link" href="${escapeHtml(n.link)}" target="_blank" rel="noopener noreferrer">원문 기사 열기 ↗</a>
+      </div>
+    </div>`;
+  };
   function fill(box, countEl, L) {
     document.getElementById(countEl).textContent = `${L.length}건`;
-    box.innerHTML = L.length ? L.map(card).join("") : `<p class="skeleton">최근 ${o.days}일 동안 기사가 없어요</p>`;
+    if (!L.length) { box.innerHTML = `<p class="skeleton">최근 ${o.days}일 동안 기사가 없어요</p>`; return; }
+    if (!o.compact) { box.innerHTML = L.map(card).join(""); return; }
+    let html = "", cur = "";
+    L.forEach((n) => { const k = dayKey(n.date); if (k !== cur) { cur = k; html += `<div class="inews-day">${escapeHtml(dayName(k))}</div>`; } html += row(n); });
+    box.innerHTML = html;
   }
   const toggle = (it) => { const o = it.classList.toggle("open"); it.setAttribute("aria-expanded", o); };
   [koBox, iqBox].filter(Boolean).forEach((box) => {
     box.addEventListener("click", (e) => {
-      if (e.target.closest("a, details")) return; // 링크·원문 펼치기는 그대로
+      if (e.target.closest("a, details, .bnews-body")) return; // 링크·원문 펼치기는 그대로
       const it = e.target.closest(".bnews-item"); if (it) toggle(it);
     });
     box.addEventListener("keydown", (e) => {
@@ -7665,7 +7691,7 @@ function makeNewsView(o) {
   if (document.querySelector(`#${o.view}.active`)) load();
 }
 makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, ko: "bnewsKo", iq: "bnewsIq", koN: "bnewsKoN", iqN: "bnewsIqN", count: "bnewsCount", meta: "bnewsMeta" });
-makeNewsView({ view: "view-iraq-issues", json: "iraq-issues.json", days: 7, iq: "inewsIq", iqN: "inewsIqN", count: "inewsCount", meta: "inewsMeta", tags: "inewsTags" });
+makeNewsView({ view: "view-iraq-issues", json: "iraq-issues.json", days: 7, compact: true, iq: "inewsIq", iqN: "inewsIqN", count: "inewsCount", meta: "inewsMeta", tags: "inewsTags" });
 makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30, ko: "hnewsKo", iq: "hnewsIq", koN: "hnewsKoN", iqN: "hnewsIqN", count: "hnewsCount", meta: "hnewsMeta" });
 
 /* ==========================================================

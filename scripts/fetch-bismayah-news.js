@@ -60,6 +60,7 @@ const CFGS = {
     TITLE_ONLY: true,
     // 스포츠·연예·주식 기사는 뺀다
     NOT: /축구|월드컵|예선|골\s|체스|선수권|K리그|야구|배구|농구|올림픽|아시안컵|드라마|가수|영화|공연|주가|특징주|football|soccer|chess|championship|world cup|qualifier|match|league|fifa|basketball|olympic|كرة القدم|المنتخب|الدوري|مباراة|منتخبنا|فيفا|كأس/i,
+    GROUP: true,   // 같은 사건 기사는 하나로 묶는다
     // 분류 표시 (위에서부터 먼저 맞는 것)
     TAGS: [
       ["치안·테러", /테러|폭발|공격|드론|로켓|무장|IS\b|ISIS|다에시|PKK|민병대|총격|납치|암살|체포|마약|공습|전투기|보안군|군사|attack|daesh|airstrike|security forces|arrest|militar|smuggl|explosion|blast|drone|rocket|militia|gunmen|kidnap|isis|terror|انفجار|هجوم|مسيرة|صاروخ|داعش|اغتيال|خطف|مسلح|اعتقال|القبض|مخدرات|العمال الكردستاني/i],
@@ -332,8 +333,36 @@ async function main() {
       list.push(rep);
     });
   }
+  // 제목 앞뒤에 붙은 매체 이름 떼기 ('샤팍뉴스..', 'INA / ', ' - Al-Monitor')
+  if (CFG.GROUP) list.forEach((n) => {
+    const cl = (t) => String(t || "").replace(/^(샤[팍팩파]\s?뉴스|샤파크나|Shafaq News|INA|이나|IQ News|Rudaw|루다우|Kurdistan24|쿠르디스탄24)\s*(\.\.|\/|:|-|·|…)\s*/i, "").replace(/\s[-–|]\s[^-–|]{2,40}$/, "").replace(/\s+/g, " ").trim();
+    n.titleKo = cl(n.titleKo || n.title); if (n.lang !== "ko") n.title = cl(n.title);
+  });
+  // 같은 사건을 여러 매체가 쓴 기사 묶기 (제목 낱말이 많이 겹치고 3일 안이면 같은 사건)
+  if (CFG.GROUP) {
+    const STOP = new Set("이라크 이라크의 이라크는 이라크가 이라크에 바그다드 바그다드에서 및 그리고 위해 대한 있다 있는 했다 밝혔다 말했다 따르면 새로운 관련 통해 위한 것으로 중 등 북부 남부 동부 서부 캠프 소식통 전했습니다 관계자 보고서 따라 the of in and to for on with iraq iraqi baghdad".split(" "));
+    const toks = (t) => [...new Set((String(t).toLowerCase().match(/[가-힣a-z0-9]{2,}/g) || []).map((w) => w.replace(/(에서|으로|에게|과의|와의|과|와|의|을|를|이|가|은|는|에|로|도)$/, "")).filter((w) => w.length >= 2 && !STOP.has(w)))];
+    const sim = (a, b) => { const sh = a.filter((w) => b.includes(w)).length; return sh >= 2 && sh / Math.min(a.length, b.length) >= 0.4; };
+    const groups = [];
+    for (const n of list) {
+      const tk = toks(n.titleKo || n.title), t = Date.parse(n.date) || Date.now();
+      const g = groups.find((g) => Math.abs(g.t - t) < 72 * 3600000 && g.tks.some((b) => sim(tk, b)));
+      if (g) { g.items.push(n); g.tks.push(tk); } else groups.push({ t, tks: [tk], items: [n] });
+    }
+    list.length = 0;
+    groups.forEach((g) => {
+      // 대표 기사: 한국어 기사 → 본문 있는 것 → 제목이 짧은 것
+      const rep = g.items.slice().sort((a, b) => (b.lang === "ko") - (a.lang === "ko") || (!!b.bodyKo) - (!!a.bodyKo) || (a.titleKo || "").length - (b.titleKo || "").length)[0];
+      rep.count = g.items.length;
+      rep.date = g.items.map((n) => n.date).sort().pop();
+      rep.sources = [...new Set(g.items.map((n) => n.source).filter(Boolean))].slice(0, 6);
+      rep.related = g.items.filter((n) => n !== rep).slice(0, 5).map((n) => ({ titleKo: n.titleKo, source: n.source, link: (n.url && !/news\.google\.com/.test(n.url)) ? n.url : n.link }));
+      list.push(rep);
+    });
+    list.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  }
   // 분류 표시 (CFG.TAGS 가 있을 때만)
-  if (CFG.TAGS) list.forEach((n) => { const t = n.title + " " + (n.titleKo || ""); const hit = CFG.TAGS.find(([, re]) => re.test(t)); n.tag = hit ? hit[0] : "기타"; });
+  if (CFG.TAGS) list.forEach((n) => { const t = n.title + " " + (n.titleKo || "") + " " + (n.related || []).map((r) => r.titleKo).join(" "); const hit = CFG.TAGS.find(([, re]) => re.test(t)); n.tag = hit ? hit[0] : "기타"; });
   // 바로 가는 원문 주소가 있으면 그걸 링크로 쓴다
   list.forEach((n) => { if (n.url && !/news\.google\.com/.test(n.url)) n.link = n.url; });
 

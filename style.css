@@ -3468,6 +3468,20 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .bnews-cols.one { grid-template-columns: 1fr; }
 .bnews-list.wide { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 10px; align-items: start; max-height: none; }
 @media (max-width: 640px) { .bnews-list.wide { grid-template-columns: 1fr; } }
+.inews-list { gap: 0; }
+.inews-day { font-size: 12px; font-weight: 700; color: var(--text-dim); letter-spacing: .3px; padding: 14px 4px 6px; border-bottom: 1px solid var(--border-soft); }
+.inews-row.bnews-item { border: 0; border-bottom: 1px solid var(--border-soft); border-radius: 0; padding: 10px 6px; background: transparent; }
+.inews-row.bnews-item:hover { background: rgba(255,255,255,.03); }
+.inews-line { display: grid; grid-template-columns: 78px 1fr auto; gap: 12px; align-items: baseline; }
+.inews-line .bnews-tag { text-align: center; }
+.inews-title { font-size: 14.5px; font-weight: 600; color: var(--text); line-height: 1.45; }
+.inews-meta { font-size: 11.5px; color: var(--text-dim); white-space: nowrap; }
+.inews-meta b { color: #f2b65e; font-weight: 700; }
+.inews-row .bnews-body { margin-left: 90px; }
+.inews-rel { margin: 8px 0; font-size: 12.5px; } .inews-rel b { display: block; color: var(--text-dim); font-size: 11.5px; margin-bottom: 4px; }
+.inews-rel a { display: block; color: var(--text); text-decoration: none; padding: 3px 0; opacity: .85; } .inews-rel a:hover { opacity: 1; text-decoration: underline; }
+.inews-rel small { color: var(--text-dim); margin-left: 6px; }
+@media (max-width: 760px) { .inews-line { grid-template-columns: 1fr; gap: 4px; } .inews-line .bnews-tag { justify-self: start; } .inews-row .bnews-body { margin-left: 0; } .inews-meta { white-space: normal; } }
 .bnews-filter { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 12px; }
 .bnews-filter button { font-family: var(--font-body); font-size: 12.5px; color: var(--text-muted); background: rgba(10,14,19,.5); border: 1px solid var(--border-soft); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
 .bnews-filter button.active { color: var(--cyan); border-color: var(--cyan); }

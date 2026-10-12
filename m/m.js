@@ -351,7 +351,7 @@
       const draw = () => { const it = all.filter((x) => f === "전체" || x.tag === f).slice(0, 40);
         $("#subBody").innerHTML = `<div class="chips">${tags.map((c) => `<button class="chip ${c === f ? "on" : ""}" data-f="${c}">${c}</button>`).join("")}</div>
         <div class="card"><ul class="list">${it.map((x) => `<li class="item"><a href="${esc(x.link || x.url)}" target="_blank" rel="noopener"><div class="t" style="font-size:14px">${esc(x.titleKo || x.title)}</div>
-        <div class="m">${x.tag ? `<span class="tag ${TC[x.tag] || ""}">${esc(x.tag)}</span> ` : ""}${esc(x.source)} · ${md(x.date)} (${ago(x.date)})</div></a></li>`).join("") || '<li class="empty">최근 7일 기사가 없습니다.</li>'}</ul><p class="src">구글 뉴스 검색 · 최근 7일 · 분류는 제목으로 자동 판정 · 아랍어·영어 제목은 자동 번역</p></div>`;
+        <div class="m">${x.tag ? `<span class="tag ${TC[x.tag] || ""}">${esc(x.tag)}</span> ` : ""}${x.count > 1 ? `보도 ${x.count}건 · ` : ""}${esc(x.source)} · ${md(x.date)} (${ago(x.date)})</div></a></li>`).join("") || '<li class="empty">최근 7일 기사가 없습니다.</li>'}</ul><p class="src">구글 뉴스 검색 · 최근 7일 · 분류는 제목으로 자동 판정 · 아랍어·영어 제목은 자동 번역</p></div>`;
         $("#subBody").querySelectorAll(".chip").forEach((b) => b.onclick = () => { f = b.dataset.f; draw(); }); }; draw(); })],
     embassy: ["대사관 안전공지", () => getJ("embassy-notices.json").then((d) => { let f = "이라크"; const all = d.items || [];
       const cs = ["이라크", "전체"].concat((d.countries || []).map((c) => c.name).filter((n) => n !== "이라크"));
