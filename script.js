@@ -495,6 +495,8 @@ function renderNotices(notices) {
   // 중요도순(긴급 → 주의 → 안내), 같은 등급 안에서는 data.json 순서 그대로
   const rank = { "긴급": 0, "주의": 1, "안내": 2 };
   notices = notices.map((n, i) => [n, i]).sort((x, y) => ((rank[x[0].level] ?? 3) - (rank[y[0].level] ?? 3)) || (x[1] - y[1])).map((x) => x[0]);
+  // 휴대폰에서는 공지 본문이 두 줄만 보이고, 누르면 펼쳐진다 (CSS 쪽 640px 이하에서만 적용)
+  if (!list.dataset.tapBound) { list.dataset.tapBound = "1"; list.addEventListener("click", (e) => { const r = e.target.closest(".notice-row"); if (r) r.classList.toggle("open"); }); }
   list.innerHTML = notices.map(n => `
     <li class="notice-row level-${escapeHtml(n.level)}">
       <div class="notice-top">
