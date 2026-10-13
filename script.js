@@ -1363,7 +1363,7 @@ function renderDailyDisaster(data) {
   `).join("");
 }
 
-loadDailyDisaster();
+// loadDailyDisaster();  // 종합현황 '전국 건설업 중대재해' 칸은 공단 자료가 끊겨(2026-09-28~) 뺐다
 
 /* ---------------- WHO 전세계 감염병 발생 정보 ---------------- */
 async function loadWhoOutbreaks() {
