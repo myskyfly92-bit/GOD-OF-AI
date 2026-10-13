@@ -191,3 +191,66 @@ main { padding: 14px 14px calc(88px + var(--safe-b)); }
 .vc-win h2 { font-size: 18px; margin: 8px 0 6px; } .vc-win p { font-size: 14px; line-height: 1.6; color: #c3ccd7; margin: 0 0 12px; }
 .vc-win-code { background: rgba(242,182,94,.1); border: 1px dashed rgba(242,182,94,.5); border-radius: 10px; padding: 8px; font-size: 13px; } .vc-win-code span { font-size: 11.5px; color: #8e9aa8; }
 .vc-win button { margin-top: 14px; font: inherit; font-weight: 700; background: #f2b65e; color: #1a1205; border: 0; border-radius: 10px; padding: 10px 24px; }
+
+/* ===== 2026-10-13 모바일 다듬기: 큰 터치 영역 · 긴 목록 접기 · 영상 · 1:1 상담 ===== */
+.item[hidden] { display: none !important; }
+.more-btn { display: block; width: 100%; margin-top: 10px; padding: 11px 0; border-radius: 12px; border: 1px dashed var(--line2); color: var(--cyan); font-size: 13px; font-weight: 700; background: rgba(53,208,192,.05); }
+.more-btn::after { content: " ⌄"; }
+.more-btn:active { background: rgba(53,208,192,.15); }
+.chip { min-height: 38px; padding: 8px 14px; font-size: 13px; }
+.chips { gap: 8px; }
+.links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.link { margin-top: 0; padding: 8px 14px; border-radius: 999px; background: rgba(53,208,192,.1); border: 1px solid rgba(53,208,192,.28); font-size: 13px; min-height: 36px; display: inline-flex; align-items: center; }
+.link:active { background: rgba(53,208,192,.25); }
+a.tel { display: inline-flex; align-items: center; margin-top: 6px; padding: 7px 12px; border-radius: 999px; background: rgba(53,208,192,.12); border: 1px solid rgba(53,208,192,.3); color: var(--cyan); font-weight: 700; font-size: 13px; }
+.sub-head button { min-width: 44px; min-height: 44px; padding: 0; border-radius: 12px; background: var(--card); border: 1px solid var(--line); color: var(--text); }
+.call a { padding: 8px 12px; border-radius: 999px; background: rgba(53,208,192,.1); }
+.nav button { position: relative; min-height: 52px; justify-content: center; }
+.nav button:active { transform: scale(.94); }
+.menu button:active, .menu a:active, .talk-row:active { transform: scale(.98); background: #16202b; }
+/* 뉴스 / 유튜브 나눔 */
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; margin-bottom: 12px; border-radius: 14px; background: var(--card); border: 1px solid var(--line); }
+.seg button { min-height: 42px; border-radius: 10px; font-size: 14px; font-weight: 700; color: var(--muted); }
+.seg button.on { background: #1d2a36; color: var(--text); box-shadow: inset 0 0 0 1px var(--line2); }
+.seg small { color: var(--dim); font-weight: 600; margin-left: 2px; }
+.seg .yt { display: inline-grid; place-items: center; width: 20px; height: 14px; border-radius: 4px; background: #ff0033; color: #fff; font-size: 8px; vertical-align: 1px; margin-right: 2px; }
+.vgrid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.vcard { display: block; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.vcard .vth { position: relative; aspect-ratio: 16/9; background: #0d141b; }
+.vcard .vth img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.vcard .vth span { position: absolute; right: 8px; bottom: 8px; padding: 2px 6px; border-radius: 5px; background: rgba(0,0,0,.8); color: #fff; font-size: 11.5px; font-weight: 700; }
+.vcard .vt { padding: 10px 12px 2px; font-size: 14.5px; font-weight: 700; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.vcard .m { padding: 0 12px 12px; }
+/* 1:1 상담 */
+.talk-row { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; margin-bottom: 12px; padding: 14px; border-radius: 14px; background: linear-gradient(135deg, rgba(53,208,192,.16), rgba(79,163,255,.08)); border: 1px solid rgba(53,208,192,.35); }
+.talk-row .ic { font-size: 24px; }
+.talk-row b { display: block; font-size: 15px; }
+.talk-row small { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+.talk-row > span:nth-child(2) { flex: 1; }
+.talk-row .arr { font-size: 22px; color: var(--cyan); }
+.tbadge { min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: var(--red); color: #fff; font-size: 11px; font-weight: 800; display: inline-grid; place-items: center; box-shadow: 0 0 0 2px var(--bg, #0b1118); }
+.tbadge[hidden] { display: none; }
+.nav .tbadge { position: absolute; top: 4px; left: calc(50% + 6px); }
+.talk-row .tbadge { position: static; box-shadow: none; }
+.tbox { display: flex; flex-direction: column; gap: 10px; }
+.tst { font-size: 12.5px; color: var(--muted); padding: 8px 12px; border-radius: 10px; background: var(--card); border: 1px solid var(--line); }
+.tst.on { color: var(--green); }
+.tlog { display: flex; flex-direction: column; gap: 10px; min-height: 40vh; max-height: calc(100dvh - 330px); overflow-y: auto; padding: 4px 2px; overscroll-behavior: contain; }
+.thello { font-size: 13.5px; line-height: 1.6; padding: 12px 14px; border-radius: 14px; background: var(--card); border: 1px solid var(--line); }
+.thello small { display: block; margin-top: 6px; color: var(--dim); font-size: 11.5px; }
+.tmsg { max-width: 82%; display: flex; flex-direction: column; gap: 3px; }
+.tmsg.me { align-self: flex-end; align-items: flex-end; }
+.tmsg .tb { padding: 9px 13px; border-radius: 16px; font-size: 14px; line-height: 1.5; word-break: break-word; background: #1d2a36; }
+.tmsg.me .tb { background: var(--cyan); color: #06231f; border-bottom-right-radius: 5px; }
+.tmsg.you .tb { border-bottom-left-radius: 5px; }
+.tmsg.pending { opacity: .6; }
+.tmsg small { font-size: 11px; color: var(--dim); }
+.tin { display: flex; gap: 8px; align-items: flex-end; }
+.tin textarea { flex: 1; resize: none; min-height: 46px; max-height: 120px; padding: 12px 14px; border-radius: 14px; background: var(--card); border: 1px solid var(--line2); color: var(--text); font: inherit; font-size: 16px; }
+.tin textarea:focus { outline: none; border-color: var(--cyan); }
+.tin button { width: 46px; height: 46px; border-radius: 50%; background: var(--cyan); color: #06231f; font-size: 18px; font-weight: 800; flex: none; }
+#tname { font-size: 16px; }
+.search { font-size: 16px; }
+.top .ttl { min-width: 0; flex: 1; }
+.vc { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.top .ttl small.vcs { display: inline; margin-left: 2px; font-size: 10.5px; }

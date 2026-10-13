@@ -27,6 +27,14 @@
     return m < 60 ? Math.max(1, Math.round(m)) + "분 전" : m < 1440 ? Math.round(m / 60) + "시간 전" : Math.round(m / 1440) + "일 전"; };
   const md = (iso) => { const d = String(iso || "").slice(0, 10).split("-"); return d.length === 3 ? `${+d[1]}/${+d[2]}` : ""; };
   const card = (id) => document.getElementById(id);
+  // 긴 목록은 앞의 n개만 보이고 '더 보기'로 펼친다 (휴대폰 스크롤 줄이기)
+  const clip = (el, n) => { if (typeof el === "string") el = card(el); if (!el) return;
+    const ul = el.matches("ul") ? el : el.querySelector("ul.list"); if (!ul) return;
+    const nx = ul.nextElementSibling; if (nx && nx.classList.contains("more-btn")) nx.remove();
+    const li = [...ul.children].filter((x) => x.classList.contains("item")); if (li.length <= n + 1) return;
+    li.slice(n).forEach((x) => { x.hidden = true; });
+    const b = document.createElement("button"); b.type = "button"; b.className = "more-btn"; b.textContent = `${li.length - n}개 더 보기`;
+    b.onclick = () => { li.forEach((x) => { x.hidden = false; }); b.remove(); }; ul.after(b); };
   const fill = (id, html) => { const c = card(id); const h = c.querySelector("h3"); c.innerHTML = (h ? h.outerHTML : "") + html; };
   const fail = (id, msg) => fill(id, `<p class="empty">${esc(msg || "지금은 불러오지 못했습니다. 잠시 뒤 다시 열어 보세요.")}</p>`);
   // 눌러서 펼치는 목록 (공지·사례·대사관 등)
@@ -46,7 +54,7 @@
   clock(); setInterval(clock, 15000);
 
   /* ---------------- 아래 탭 ---------------- */
-  const loaded = {};
+  let loaded = {}, curTab = "home";
   const LOAD = { home: loadHome, safety: loadSafety, health: loadHealth, env: loadEnv, more: () => {} };
   function go(p) {
     document.querySelectorAll(".page").forEach((s) => s.classList.toggle("on", s.id === "p-" + p));
@@ -54,8 +62,34 @@
     window.scrollTo(0, 0);
     if (!loaded[p]) { loaded[p] = true; LOAD[p](); }
     if (p === "more") showSub(null);
-    ls.set("mTab", p);
+    curTab = p; ls.set("mTab", p); hist();
   }
+  /* 휴대폰 '뒤로' 버튼: 사이트를 나가지 않고 열린 창 → 하위 메뉴 → 홈 순서로 닫는다 */
+  let pushed = false, inPop = false;
+  const isRoot = () => curTab === "home" && $("#moreSub").hidden && $("#sos").hidden;
+  function hist() {
+    if (inPop) return;
+    if (!isRoot() && !pushed) { try { history.pushState({ m: 1 }, ""); pushed = true; } catch (e) {} }
+  }
+  window.addEventListener("popstate", () => {
+    pushed = false; inPop = true;
+    try {
+      if (!$("#sos").hidden) $("#sosClose").click();
+      else if (!$("#moreSub").hidden) showSub(null);
+      else if (curTab !== "home") go("home");
+    } finally { inPop = false; }
+    hist();
+  });
+  // 다른 앱에 갔다가 10분 넘어 돌아오면 지금 탭을 새 자료로 다시 그린다
+  let hiddenAt = 0;
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) { hiddenAt = Date.now(); return; }
+    if (!hiddenAt || Date.now() - hiddenAt < 600000) return;
+    hiddenAt = 0;
+    Object.keys(J).forEach((k) => delete J[k]); WXDATA = null; WORK = null; loaded = {}; loaded[curTab] = true;
+    LOAD[curTab]();
+    if (curTab === "more" && !$("#moreSub").hidden && curSub) showSub(curSub, true);
+  });
   $("#nav").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) go(b.dataset.p); });
   $("#toPc").addEventListener("click", () => ls.set("hsePC", "1"));
   document.querySelectorAll('a[href^="../?pc=1"]').forEach((a) => a.addEventListener("click", () => ls.set("hsePC", "1")));
@@ -77,7 +111,7 @@
           <div class="vc-win-code">당첨 확인번호 <b>#${n}-${String(vid).slice(0, 6).toUpperCase()}</b><br><span>${esc(at)} (바그다드)</span></div><button type="button">확인했어요</button></div>`;
         bg.querySelector("button").onclick = () => bg.remove(); document.body.appendChild(bg);
       }
-      $("#vc").innerHTML = `TODAY <b class="t">${fmt(r.today)}</b> · TOTAL <b>${fmt(r.total)}</b>` + (r.online > 0 ? ` · <b class="n">● ${r.online}</b>` + (typeof r.onlinePc === "number" ? ` <small class="vcs">💻${r.onlinePc} 📱${r.onlineMobile}</small>` : "") : "");
+      $("#vc").innerHTML = `오늘 <b class="t">${fmt(r.today)}</b> · 누적 <b>${fmt(r.total)}</b>` + (r.online > 0 ? ` · <b class="n">●${r.online}</b>` + (typeof r.onlinePc === "number" ? `<small class="vcs">(💻${r.onlinePc}·📱${r.onlineMobile})</small>` : "") : "");
     }).catch(() => {});
     tick(hit); setInterval(() => { if (!document.hidden) tick(false); }, 90000);
   })();
@@ -234,6 +268,7 @@
         <div class="t">${x.company ? `<span class="co">${esc(x.company)}</span> · ` : ""}${esc(x.titleKo || x.title)}</div>
         <div class="m">${esc(x.source)}${x.count > 1 ? ` 외 · <span class="tag red">보도 ${x.count}건</span>` : ""} · ${ago(x.date)}</div></a></li>`).join("")}</ul>
         <p class="src">언론 보도 제목을 그대로 옮긴 것입니다 · 첫 보도는 사실과 다를 수 있으니 원문과 고용노동부 발표를 확인하세요.</p>` : `<p class="empty">최근 7일 보도된 사고가 없습니다.</p>`);
+      clip("saNewsCard", 5);
     }).catch(() => fail("saNewsCard"));
 
     getJ("serious-accidents.json").then((d) => {
@@ -264,6 +299,7 @@
           <ul class="list">${it.map((x) => `<li class="item fold"><div class="t"><span class="tag amb">${esc(x.type)}</span> ${esc(x.title)}</div>
           <div class="m">${esc(x.business)} · ${esc(x.accidentDate)} · ${esc(x.place || "")}</div><div class="b">${esc(x.contents)}</div></li>`).join("")}</ul>
           <p class="src">출처: 안전보건공단 국내재해사례 · 눌러서 내용 보기</p>`);
+        clip("caseCard", 5);
         card("caseCard").querySelectorAll(".chip").forEach((b) => b.onclick = (e) => { e.stopPropagation(); f = b.dataset.f; draw(); }); };
       draw();
     }).catch(() => fail("caseCard"));
@@ -272,7 +308,8 @@
       const all = d.guides || [];
       const draw = () => { const q = $("#guideQ").value.trim().toLowerCase();
         const it = (q ? all.filter((g) => (g.nm + " " + g.no + " " + g.cat).toLowerCase().includes(q)) : all).slice(0, 12);
-        $("#guideList").innerHTML = it.map((g) => `<li class="item"><a href="${esc(g.url)}" target="_blank" rel="noopener"><div class="t">${esc(g.nm)}</div><div class="m"><span class="tag bl">${esc(g.no)}</span> ${esc(g.cat)} · ${esc(g.ymd)} · 내려받기 ↗</div></a></li>`).join("") || `<li class="empty">찾는 지침이 없습니다.</li>`; };
+        $("#guideList").innerHTML = it.map((g) => `<li class="item"><a href="${esc(g.url)}" target="_blank" rel="noopener"><div class="t">${esc(g.nm)}</div><div class="m"><span class="tag bl">${esc(g.no)}</span> ${esc(g.cat)} · ${esc(g.ymd)} · 내려받기 ↗</div></a></li>`).join("") || `<li class="empty">찾는 지침이 없습니다.</li>`;
+        clip($("#guideList"), q ? 12 : 4); };
       $("#guideQ").addEventListener("input", draw); draw();
     }).catch(() => { $("#guideList").innerHTML = `<li class="empty">지침 목록을 불러오지 못했습니다.</li>`; });
   }
@@ -291,15 +328,16 @@
         <div class="kpi"><span>최근 7일</span><b class="num">${wk.length}</b><small>건</small></div>
         <div class="kpi ${wk.filter((x) => /후송/.test(x.action || "")).length ? "red" : ""}"><span>병원 후송 (7일)</span><b class="num">${wk.filter((x) => /후송/.test(x.action || "")).length}</b><small>건</small></div></div>
         ${top.length ? `<div style="margin-top:12px;font-size:12px;color:var(--muted)">최근 30일 많은 증상 계통</div>${top.map(([k, v]) => `<div class="prow"><span style="grid-column:span 1">${esc(k.replace("계", ""))}</span><div class="bar"><i style="width:${v / mx * 100}%"></i></div><b>${v}</b></div>`).join("")}` : ""}
-        <p class="src">BNCP Clinic EMR 자동 집계 · 개인정보 없이 건수만 · 운영 24시간 · <a href="tel:07809262446" style="color:var(--cyan)">0780-926-2446</a></p>`);
-    }).catch(() => fill("clinicCard", `<p class="empty">진료 통계를 불러오지 못했습니다.</p><p class="src">클리닉 24시간 운영 · <a href="tel:07809262446" style="color:var(--cyan)">0780-926-2446</a></p>`));
+        <p class="src">BNCP Clinic EMR 자동 집계 · 개인정보 없이 건수만 · 운영 24시간 · <a class="tel" href="tel:07809262446">📞 0780-926-2446</a></p>`);
+    }).catch(() => fill("clinicCard", `<p class="empty">진료 통계를 불러오지 못했습니다.</p><p class="src">클리닉 24시간 운영 · <a class="tel" href="tel:07809262446">📞 0780-926-2446</a></p>`));
 
     getJ("medical-facilities.json").then((d) => {
       const it = (d.items || []).filter((x) => x.kind === "hospital" || x.emergency === true || x.emergency === "True").sort((a, b) => a.km - b.km).slice(0, 6);
       fill("medCard", `<ul class="list">${it.map((x) => `<li class="item"><div class="t">${esc(x.nameEn || x.name)} ${x.emergency === true || x.emergency === "True" ? '<span class="tag red">응급실</span>' : ""}</div>
         <div class="m">${[x.nameAr && x.nameAr !== x.nameEn ? esc(x.nameAr) : "", "직선 " + x.km + "km"].filter(Boolean).join(" · ")}</div>
-        <a class="link" href="https://www.google.com/maps/dir/?api=1&destination=${x.lat},${x.lon}" target="_blank" rel="noopener">길찾기 ↗</a>${x.phone ? ` · <a class="link" href="tel:${esc(x.phone)}">전화</a>` : ""}</li>`).join("")}</ul>
+        <div class="links"><a class="link" href="https://www.google.com/maps/dir/?api=1&destination=${x.lat},${x.lon}" target="_blank" rel="noopener">🧭 길찾기</a>${x.phone ? `<a class="link" href="tel:${esc(x.phone)}">📞 전화</a>` : ""}</div></li>`).join("")}</ul>
         <p class="src">🚑 응급 시 먼저 현장 클리닉(0780-926-2446)과 이라크 긴급전화 911 · 출처 OpenStreetMap</p>`);
+      clip("medCard", 4);
     }).catch(() => fail("medCard"));
 
     getJ("kdca-infectious.json").then((d) => {
@@ -312,6 +350,7 @@
 
     getJ("health-issues.json").then((d) => {
       fill("hiCard", `<ul class="list">${(d.items || []).slice(0, 10).map((x) => `<li class="item"><a href="${esc(x.link || x.url)}" target="_blank" rel="noopener"><div class="t" style="font-size:14px">${esc(x.titleKo || x.title)}</div><div class="m">${esc(x.source)} · ${ago(x.date)}${x.lang && x.lang !== "ko" ? ' · <span class="tag">번역</span>' : ""}</div></a></li>`).join("")}</ul>`);
+      clip("hiCard", 5);
     }).catch(() => fail("hiCard"));
   }
 
@@ -358,17 +397,112 @@
       fill("quakeCard", f.length ? `<ul class="list">${f.slice(0, 10).map((q) => { const p = q.properties, c = q.geometry.coordinates, m = p.mag;
         return `<li class="item"><div class="t"><span class="tag ${m >= 5 ? "red" : m >= 4.5 ? "amb" : ""}">규모 ${m.toFixed(1)}</span> ${esc(p.place || "")}</div><div class="m">현장에서 ${km(c[1], c[0])}km · ${ago(new Date(p.time).toISOString())}</div></li>`; }).join("")}</ul>
         <p class="src">미국지질조사국(USGS) · 현장 800km 안, 규모 3.5 이상</p>` : `<p class="empty">최근 30일 현장 800km 안에 규모 3.5 이상 지진이 없습니다.</p>`);
+      clip("quakeCard", 5);
     }).catch(() => fail("quakeCard", "지진 정보 서버가 응답하지 않습니다."));
   }
 
+  /* ================== 1:1 상담 (방문자 쪽 · PC 상황실의 담당자에게 바로 감) ==================
+     같은 '상담' 서버(Apps Script action=talk)를 쓴다. 이 창을 열어 둔 동안 3초마다,
+     닫혀 있으면 대화가 있던 사람만 30초마다 답장을 확인해 '더보기' 탭에 빨간 숫자를 띄운다. */
+  const TALK = (function () {
+    let room = ls.get("talkRoom");
+    if (!room) { room = "r" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); ls.set("talkRoom", room); }
+    const enc = (o) => btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(o)))).replace(/\+/g, "-").replace(/\//g, "_");
+    const call = (op, d) => gas("action=talk&op=" + op + "&p=" + encodeURIComponent(enc(Object.assign({ op, room }, d || {})))).then((j) => { if (!j || !j.ok) throw new Error((j && j.error) || "실패"); return j; });
+    const hm = (t) => new Date(t).toLocaleTimeString("ko-KR", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hour12: false });
+    let isOpen = false, since = 0, timer = 0, unread = 0, seenA = Number(ls.get("talkSeenA") || 0);
+    const msgs = new Map();
+    const badge = (n) => { unread = n; document.querySelectorAll(".tbadge").forEach((b) => { b.hidden = !n; b.textContent = n > 9 ? "9+" : n; }); };
+    const bubble = (m) => `<div class="tmsg ${m.who === "u" ? "me" : "you"}${m.pending ? " pending" : ""}"><div class="tb">${esc(m.text).replace(/\n/g, "<br>")}</div><small>${m.who === "u" ? "" : "HSE 담당자 · "}${hm(m.at)}${m.pending ? " · 보내는 중" : ""}</small></div>`;
+    function render() {
+      const log = $("#tlog"); if (!log) return;
+      const arr = [...msgs.values()].sort((a, b) => a.at - b.at);
+      log.innerHTML = `<div class="thello">안녕하세요, 비스마야 HSE팀입니다 👷<br>안전·보건·환경 관련 궁금한 점이나 현장에서 본 위험을 편하게 남겨 주세요. 담당자가 확인하는 대로 여기로 답을 드려요.<small>창을 닫아도 대화는 이 휴대폰에 이어집니다 · 개인 건강정보는 꼭 필요한 만큼만</small></div>` + arr.map(bubble).join("");
+      log.scrollTop = log.scrollHeight;
+    }
+    async function poll() {
+      try {
+        const j = await call("poll", { since });
+        const st = $("#tst"); if (st) { st.textContent = j.online ? "🟢 담당자 접속 중 · 바로 답해 드려요" : "⚪ 담당자 부재 · 남겨 주시면 확인 후 답해요"; st.className = "tst" + (j.online ? " on" : ""); }
+        if (j.msgs && j.msgs.length) {
+          j.msgs.forEach((m) => msgs.set(m.id, m)); since = Math.max(since, ...j.msgs.map((m) => m.id));
+          [...msgs.keys()].forEach((k) => { if (String(k).startsWith("t")) msgs.delete(k); });
+          ls.set("talkHas", "1");
+          const newA = j.msgs.filter((m) => m.who === "a" && m.id > seenA);
+          if (newA.length) {
+            if (isOpen && !document.hidden) { seenA = Math.max(...newA.map((m) => m.id)); ls.set("talkSeenA", seenA); }
+            else { badge(unread + newA.length); try { navigator.vibrate && navigator.vibrate([80, 60, 80]); } catch (e) {} }
+          }
+          if (isOpen) render();
+        }
+      } catch (e) { const st = $("#tst"); if (st && isOpen) st.textContent = "연결 확인 중…"; }
+    }
+    function schedule() {
+      clearTimeout(timer);
+      const ms = isOpen ? 3000 : ls.get("talkHas") ? 30000 : 0;
+      if (ms) timer = setTimeout(async () => { if (!document.hidden) await poll(); schedule(); }, ms);
+    }
+    function open() {
+      isOpen = true; badge(0);
+      $("#subBody").innerHTML = `<div class="tbox"><div class="tst" id="tst">연결 확인 중…</div><div class="tlog" id="tlog"></div>
+        <input class="search" id="tname" maxlength="30" placeholder="이름·소속 (선택, 예: 공사팀 김OO)" value="${esc(ls.get("talkName") || "")}">
+        <form class="tin" id="tin"><textarea rows="1" maxlength="600" placeholder="메시지 입력"></textarea><button type="submit" aria-label="보내기">➤</button></form></div>`;
+      render();
+      const ta = $("#tin textarea");
+      ta.addEventListener("input", () => { ta.style.height = "auto"; ta.style.height = Math.min(120, ta.scrollHeight) + "px"; });
+      $("#tin").addEventListener("submit", async (e) => {
+        e.preventDefault(); const text = ta.value.trim(); if (!text) return;
+        const name = $("#tname").value.trim(); ls.set("talkName", name);
+        ta.value = ""; ta.style.height = "";
+        const tmp = { id: "t" + Date.now(), who: "u", text, at: Date.now(), pending: true }; msgs.set(tmp.id, tmp); render();
+        try {
+          const j = await call("send", { name, text, since });
+          msgs.delete(tmp.id);
+          (j.msgs || []).concat(j.sent ? [j.sent] : []).forEach((m) => msgs.set(m.id, m));
+          since = Math.max(since, ...(j.msgs || []).map((m) => m.id), j.sent ? j.sent.id : 0);
+          ls.set("talkHas", "1"); render();
+        } catch (err) { msgs.delete(tmp.id); render(); ta.value = text; alert("보내지 못했습니다: " + err.message); }
+      });
+      poll().then(() => { seenA = Math.max(seenA, ...[...msgs.values()].filter((m) => m.who === "a").map((m) => Number(m.id) || 0)); ls.set("talkSeenA", seenA); });
+      schedule();
+    }
+    function close() { isOpen = false; schedule(); }
+    document.addEventListener("visibilitychange", () => { if (!document.hidden && isOpen) poll(); });
+    if (ls.get("talkHas")) { poll(); schedule(); }
+    return { open, close };
+  })();
+
   /* ================================ 더보기 ================================ */
   const SUBS = {
-    bnews: ["비스마야 소식", () => getJ("bismayah-news.json").then((d) => { let f = "전체"; const all = d.items || [];
-      const draw = () => { const it = all.filter((x) => f === "전체" || (f === "국내" ? x.lang === "ko" : x.lang !== "ko")).slice(0, 30);
-        $("#subBody").innerHTML = `<div class="chips">${["전체", "국내", "이라크"].map((c) => `<button class="chip ${c === f ? "on" : ""}" data-f="${c}">${c}</button>`).join("")}</div>
+    bnews: ["비스마야 소식", () => Promise.all([getJ("bismayah-news.json").catch(() => ({})), getJ("bismayah-videos.json").catch(() => ({}))]).then(([d, v]) => {
+      let f = "전체", mode = ls.get("mBnews") === "video" ? "video" : "news"; const all = d.items || [], vids = v.items || [];
+      const seg = () => `<div class="seg"><button data-m="news" class="${mode === "news" ? "on" : ""}">📰 뉴스 <small>${all.length}</small></button><button data-m="video" class="${mode === "video" ? "on" : ""}"><span class="yt">▶</span> 유튜브 <small>${vids.length}</small></button></div>`;
+      const draw = () => {
+        if (mode === "video") {
+          $("#subBody").innerHTML = seg() + (vids.length ? `<div class="vgrid">${vids.slice(0, 30).map((x) => `<a class="vcard" href="https://www.youtube.com/watch?v=${encodeURIComponent(x.id)}" target="_blank" rel="noopener">
+            <div class="vth"><img loading="lazy" decoding="async" src="https://i.ytimg.com/vi/${encodeURIComponent(x.id)}/mqdefault.jpg" alt="">${x.length ? `<span>${esc(x.length)}</span>` : ""}</div>
+            <div class="vt">${esc(x.titleKo || x.title)}</div><div class="m">${esc(x.channel)} · ${esc(x.published || ago(x.date))}${x.titleKo ? ' · <span class="tag">번역</span>' : ""}</div></a>`).join("")}</div>`
+            : `<div class="card"><p class="empty">영상을 불러오지 못했습니다.</p></div>`) + `<p class="src">유튜브 검색에서 비스마야가 들어간 공개 영상 · 누르면 유튜브 앱/사이트에서 열립니다 · 6시간마다 갱신</p>`;
+        } else {
+          const it = all.filter((x) => f === "전체" || (f === "국내" ? x.lang === "ko" : x.lang !== "ko")).slice(0, 30);
+          $("#subBody").innerHTML = seg() + `<div class="chips">${["전체", "국내", "이라크"].map((c) => `<button class="chip ${c === f ? "on" : ""}" data-f="${c}">${c}</button>`).join("")}</div>
+          <div class="card"><ul class="list">${it.map((x) => `<li class="item"><a href="${esc(x.link || x.url)}" target="_blank" rel="noopener"><div class="t" style="font-size:14px">${esc(x.titleKo || x.title)}</div>
+          <div class="m">${x.lang !== "ko" ? '<span class="tag cy">이라크</span>' : ""}${esc(x.source)} · ${md(x.date)} (${ago(x.date)})</div></a></li>`).join("") || '<li class="empty">기사가 없습니다.</li>'}</ul><p class="src">구글 뉴스 검색 · 아랍어·영어 제목은 자동 번역</p></div>`;
+          $("#subBody").querySelectorAll(".chip").forEach((b) => b.onclick = () => { f = b.dataset.f; draw(); }); clip($("#subBody ul.list"), 15);
+        }
+        $("#subBody").querySelectorAll(".seg button").forEach((b) => b.onclick = () => { mode = b.dataset.m; ls.set("mBnews", mode); draw(); });
+      }; draw(); })],
+    fire: ["소방 · 화재 사례", () => getJ("fire-news.json").then((d) => { let f = "전체"; const all = d.items || [];
+      const ORD = ["용접·불티", "단열재·자재", "전기·배터리", "숙소·창고", "고층·건물", "공장·플랜트", "시장·상가", "기타"];
+      const tags = ["전체", "국내", "중동"].concat(ORD.filter((t) => all.some((x) => x.tag === t)));
+      const TC = { "용접·불티": "red", "전기·배터리": "amb", "단열재·자재": "amb" };
+      const draw = () => { const it = all.filter((x) => f === "전체" || (f === "국내" ? x.lang === "ko" : f === "중동" ? x.lang !== "ko" : x.tag === f)).slice(0, 40);
+        $("#subBody").innerHTML = `<div class="chips">${tags.map((c) => `<button class="chip ${c === f ? "on" : ""}" data-f="${c}">${c}</button>`).join("")}</div>
         <div class="card"><ul class="list">${it.map((x) => `<li class="item"><a href="${esc(x.link || x.url)}" target="_blank" rel="noopener"><div class="t" style="font-size:14px">${esc(x.titleKo || x.title)}</div>
-        <div class="m">${x.lang !== "ko" ? '<span class="tag cy">이라크</span>' : ""}${esc(x.source)} · ${md(x.date)} (${ago(x.date)})</div></a></li>`).join("")}</ul><p class="src">구글 뉴스 검색 · 아랍어·영어 제목은 자동 번역</p></div>`;
-        $("#subBody").querySelectorAll(".chip").forEach((b) => b.onclick = () => { f = b.dataset.f; draw(); }); }; draw(); })],
+        <div class="m">${x.tag ? `<span class="tag ${TC[x.tag] || ""}">${esc(x.tag)}</span> ` : ""}${x.lang !== "ko" ? '<span class="tag cy">중동</span> ' : ""}${x.count > 1 ? `보도 ${x.count}건 · ` : ""}${esc(x.source)} · ${md(x.date)} (${ago(x.date)})</div></a></li>`).join("") || '<li class="empty">최근 30일 기사가 없습니다.</li>'}</ul>
+        <p class="src">국내 건설현장·공장·창고·숙소 화재와 중동 대형 화재 보도 · 3시간마다 갱신 · 아침 TBM 사례 공유에 활용하세요</p></div>`;
+        $("#subBody").querySelectorAll(".chip").forEach((b) => b.onclick = () => { f = b.dataset.f; draw(); }); clip($("#subBody ul.list"), 15); }; draw(); })],
+    talk: ["HSE 1:1 상담", () => { TALK.open(); return Promise.resolve(); }],
     iraq: ["이라크 주요 이슈", () => getJ("iraq-issues.json").then((d) => { let f = "전체"; const all = d.items || [];
       const TC = { "치안·테러": "red", "시위·통제": "amb", "휴일·행사": "vio", "날씨·재난": "amb", "전력·생활": "cy" };
       const tags = ["전체"].concat(["치안·테러", "시위·통제", "휴일·행사", "정치·선거", "전력·생활", "날씨·재난", "경제·유가", "한국·외교", "기타"].filter((t) => all.some((x) => x.tag === t)));
@@ -376,14 +510,14 @@
         $("#subBody").innerHTML = `<div class="chips">${tags.map((c) => `<button class="chip ${c === f ? "on" : ""}" data-f="${c}">${c}</button>`).join("")}</div>
         <div class="card"><ul class="list">${it.map((x) => `<li class="item"><a href="${esc(x.link || x.url)}" target="_blank" rel="noopener"><div class="t" style="font-size:14px">${esc(x.titleKo || x.title)}</div>
         <div class="m">${x.tag ? `<span class="tag ${TC[x.tag] || ""}">${esc(x.tag)}</span> ` : ""}${x.count > 1 ? `보도 ${x.count}건 · ` : ""}${esc(x.source)} · ${md(x.date)} (${ago(x.date)})</div></a></li>`).join("") || '<li class="empty">최근 7일 기사가 없습니다.</li>'}</ul><p class="src">구글 뉴스 검색 · 최근 7일 · 분류는 제목으로 자동 판정 · 아랍어·영어 제목은 자동 번역</p></div>`;
-        $("#subBody").querySelectorAll(".chip").forEach((b) => b.onclick = () => { f = b.dataset.f; draw(); }); }; draw(); })],
+        $("#subBody").querySelectorAll(".chip").forEach((b) => b.onclick = () => { f = b.dataset.f; draw(); }); clip($("#subBody ul.list"), 15); }; draw(); })],
     embassy: ["대사관 안전공지", () => getJ("embassy-notices.json").then((d) => { let f = "이라크"; const all = d.items || [];
       const cs = ["이라크", "전체"].concat((d.countries || []).map((c) => c.name).filter((n) => n !== "이라크"));
       const draw = () => { const it = all.filter((x) => f === "전체" || x.country === f).slice(0, 30);
         $("#subBody").innerHTML = `<div class="chips">${cs.map((c) => `<button class="chip ${c === f ? "on" : ""}" data-f="${c}">${c}</button>`).join("")}</div>
         <div class="card"><ul class="list">${it.map((x) => `<li class="item fold"><div class="t" style="font-size:14px">${x.kind === "안전공지" ? '<span class="tag red">안전</span> ' : ""}${esc(String(x.title).replace(/ /g, " "))}</div>
         <div class="m">${esc(x.country)} · ${esc(x.date)}</div><div class="b">${esc(String(x.body || "").slice(0, 1200))}</div></li>`).join("") || '<li class="empty">공지가 없습니다.</li>'}</ul><p class="src">외교부 해외안전여행 · 눌러서 내용 보기</p></div>`;
-        $("#subBody").querySelectorAll(".chip").forEach((b) => b.onclick = () => { f = b.dataset.f; draw(); }); }; draw(); })],
+        $("#subBody").querySelectorAll(".chip").forEach((b) => b.onclick = () => { f = b.dataset.f; draw(); }); clip($("#subBody ul.list"), 15); }; draw(); })],
     travel: ["주변국 여행경보", () => getJ("travel-alarm.json").then((d) => {
       const ids = ["IQ", "IR", "SY", "JO", "KW", "SA", "TR", "LB", "IL", "PS", "YE", "AE", "QA", "BH", "OM", "EG"];
       const it = ids.map((k) => d.countries[k]).filter(Boolean).sort((a, b) => b.level - a.level);
@@ -409,15 +543,19 @@
         ${cs.map((c) => `<div class="call"><span>${esc(c.role)}</span><a href="tel:${esc(c.phone)}">${esc(c.phone)}</a></div>`).join("")}</div>
         <p class="src">번호를 누르면 바로 전화가 걸립니다.</p>`; })],
   };
-  function showSub(key) {
+  let curSub = null;
+  function showSub(key, keepScroll) {
     $("#moreHome").hidden = !!key; $("#moreSub").hidden = !key;
+    if (curSub === "talk" && key !== "talk") TALK.close();
+    curSub = key || null;
     if (!key) return;
+    hist();
     $("#subTitle").textContent = SUBS[key][0]; $("#subBody").innerHTML = `<div class="card"><div class="skel"></div><div class="skel"></div></div>`;
-    window.scrollTo(0, 0);
-    SUBS[key][1]().catch(() => { $("#subBody").innerHTML = `<div class="card"><p class="empty">불러오지 못했습니다. 잠시 뒤 다시 열어 보세요.</p></div>`; });
+    if (!keepScroll) window.scrollTo(0, 0);
+    SUBS[key][1]().then(() => { const ul = $("#subBody ul.list"); if (ul && key !== "travel") clip(ul, 15); }).catch(() => { $("#subBody").innerHTML = `<div class="card"><p class="empty">불러오지 못했습니다. 잠시 뒤 다시 열어 보세요.</p></div>`; });
   }
   document.querySelectorAll("[data-sub]").forEach((b) => b.addEventListener("click", () => showSub(b.dataset.sub)));
-  $("#subBack").addEventListener("click", () => showSub(null));
+  $("#subBack").addEventListener("click", () => { if (pushed) history.back(); else showSub(null); });
 
   /* ---------------- 사고·응급 신고 (위치 공유) ----------------
      누른 순간 GPS 를 한 번 읽어 구글 지도 링크가 들어간 신고 문구를 만들고,
@@ -454,10 +592,12 @@
         sync();
       }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 30000 });
     }
-    const open = () => { edited = false; box.hidden = false; bg.hidden = false; document.body.style.overflow = "hidden"; locate(); };
+    const open = () => { edited = false; box.hidden = false; bg.hidden = false; document.body.style.overflow = "hidden"; locate(); hist(); };
     const close = () => { box.hidden = true; bg.hidden = true; document.body.style.overflow = ""; };
+    const uclose = () => { if (pushed && !inPop && isRootAfterSos()) history.back(); else close(); };
+    const isRootAfterSos = () => curTab === "home" && $("#moreSub").hidden;
     document.querySelectorAll("[data-sos]").forEach((b) => b.addEventListener("click", open));
-    $("#sosClose").addEventListener("click", close); bg.addEventListener("click", close);
+    $("#sosClose").addEventListener("click", () => inPop ? close() : uclose()); bg.addEventListener("click", uclose);
     // 카카오톡: 카카오 개발자 앱(JavaScript 키, 등록 도메인 myskyfly92-bit.github.io)으로 카카오톡을 바로 연다.
     //   카카오 메시지의 링크는 등록 도메인만 허용 → 위치 버튼은 우리 사이트의 m/go.html 을 거쳐 구글 지도로 간다.
     //   SDK 를 못 불러오면 휴대폰 '공유하기' 창 → 그것도 없으면 복사 안내
