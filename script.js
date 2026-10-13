@@ -2118,6 +2118,7 @@ function renderWorkZones(data) {
       <div class="wz-map-col">
         <div class="wz-board" id="wzBoard">
         <div class="wz-co-strip wz-co-top" id="wzCoTop"></div>
+        <div class="wz-vpwrap">
         <div class="wz-viewport" id="wzViewport">
           <div class="wz-zoombox" id="wzZoombox">
             <img src="" alt="구역 사진" class="workzone-bg" id="wzBgImg"
@@ -2125,6 +2126,7 @@ function renderWorkZones(data) {
             <div id="workzoneMapFallback" class="workzone-fallback" style="display:none;"></div>
             <div class="wz-pins" id="wzPins"></div>
           </div>
+        </div>
           <div class="wz-map-day" id="wzMapDay"></div>
           <div class="wz-pick-box" id="wzPickBox" hidden></div>
         </div>
@@ -2136,7 +2138,7 @@ function renderWorkZones(data) {
           <button type="button" id="wzZoomReset" class="wz-zoom-btn">초기화</button>
           <button type="button" id="wzZoomIn" class="wz-zoom-btn">+</button>
           <button type="button" id="wzCoToggle" class="wz-zoom-btn wz-co-btn" title="작업 위치마다 확대 사진 상자를 붙여 보여 줍니다">🎯 상황도</button>
-          <span class="wz-zoom-hint">마우스 휠로 확대/축소 · 드래그로 이동</span>
+          <span class="wz-zoom-hint">휠로 확대·축소 · 확대하면 드래그나 스크롤로 이동</span>
           <button type="button" id="wzPickToggle" class="wz-pick-toggle" title="지도를 클릭해 그 자리에 작업을 추가합니다" hidden>➕ 지도에 작업 추가</button>
         </div>
         <div class="wz-unplaced" id="wzUnplaced"></div>
@@ -2250,11 +2252,19 @@ function wzShowZone(idx, init) {
    - 좌표(위경도)는 보여 주지 않는다 (현장 인원 위치가 밖으로 드러나지 않게) → 상자에는 작업 정보만 */
 let wzCoOn = (() => { try { return localStorage.getItem("wzCo") !== "0"; } catch (e) { return true; } })();
 let wzCoGroups = [];
+let wzFitRO = null;
 function wzFitViewport() {
+  const vpx = document.getElementById("wzViewport");
+  if (vpx && window.ResizeObserver && (!wzFitRO || wzFitRO.__el !== vpx)) {
+    if (wzFitRO) wzFitRO.disconnect();
+    let lastW = 0;
+    wzFitRO = new ResizeObserver(() => { const w = vpx.offsetWidth; if (w && w !== lastW) { lastW = w; wzFitViewport(); wzCoLayout(); } });
+    wzFitRO.__el = vpx; wzFitRO.observe(vpx);
+  }
   // 사진 비율에 맞춰 지도 칸 높이를 맞춘다 (사진 아래 빈 공간 없애기). 작업 입력창이 열려 있으면 원래 높이
   const vp = document.getElementById("wzViewport"), img = document.getElementById("wzBgImg");
   if (!vp || !img || !img.naturalWidth) return;
-  const h = Math.round(vp.clientWidth * img.naturalHeight / img.naturalWidth);
+  const h = Math.round(vp.offsetWidth * img.naturalHeight / img.naturalWidth);
   vp.style.height = Math.min(h, Math.round(window.innerHeight * 0.75)) + "px";
 }
 function wzRenderCallouts(groups) {
@@ -2846,8 +2856,10 @@ function wzSetupPickMode() {
 function wzApplyTransform() {
   const box = document.getElementById("wzZoombox");
   if (!box) return;
-  box.style.transform = `translate(${wzTx}px, ${wzTy}px) scale(${wzScale})`;
-  box.style.setProperty("--inv", String(1 / wzScale));
+  // 확대는 그림 폭을 키우고, 이동은 스크롤로 (그림 밖 빈 공간이 생기지 않게)
+  box.style.transform = "none";
+  box.style.width = (wzScale * 100) + "%";
+  box.style.setProperty("--inv", "1");
   wzCoLines();
 }
 
@@ -2880,17 +2892,14 @@ function wzSetupZoomPan() {
   const MIN_SCALE = 1, MAX_SCALE = 5;
 
   function zoomAt(clientX, clientY, factor) {
-    const rect = viewport.getBoundingClientRect();
-    const mx = clientX - rect.left;
-    const my = clientY - rect.top;
-    const contentX = (mx - wzTx) / wzScale;
-    const contentY = (my - wzTy) / wzScale;
-    const newScale = wzClamp(wzScale * factor, MIN_SCALE, MAX_SCALE);
-    wzTx = mx - contentX * newScale;
-    wzTy = my - contentY * newScale;
-    wzScale = newScale;
-    if (wzScale === MIN_SCALE) { wzTx = 0; wzTy = 0; }
+    const v = document.getElementById("wzViewport");
+    const rect = v.getBoundingClientRect();
+    const mx = clientX - rect.left, my = clientY - rect.top;
+    const cx = (v.scrollLeft + mx) / wzScale, cy = (v.scrollTop + my) / wzScale;   // 마우스 아래 지점을 그대로 두고 확대
+    wzScale = wzClamp(wzScale * factor, MIN_SCALE, MAX_SCALE);
     wzApplyTransform();
+    v.scrollLeft = cx * wzScale - mx;
+    v.scrollTop = cy * wzScale - my;
   }
 
   // 이전 리스너가 중복 등록되지 않도록 새 요소로 교체
@@ -2919,7 +2928,9 @@ function wzSetupZoomPan() {
   document.getElementById("wzZoomReset")?.addEventListener("click", () => {
     wzScale = 1; wzTx = 0; wzTy = 0;
     wzApplyTransform();
+    vp.scrollLeft = 0; vp.scrollTop = 0;
   });
+  vp.addEventListener("scroll", () => wzCoLines(), { passive: true });
 
   // 드래그로 이동 (마우스)
   let dragging = false, startX = 0, startY = 0, startTx = 0, startTy = 0;
@@ -2928,16 +2939,18 @@ function wzSetupZoomPan() {
     zb.dataset.panBound = "1";
     zb.addEventListener("mousedown", (e) => {
       if (wzScale <= 1) return;
+      const v = document.getElementById("wzViewport");
       dragging = true;
       startX = e.clientX; startY = e.clientY;
-      startTx = wzTx; startTy = wzTy;
+      startTx = v.scrollLeft; startTy = v.scrollTop;
       zb.classList.add("wz-dragging");
+      e.preventDefault();
     });
     window.addEventListener("mousemove", (e) => {
       if (!dragging) return;
-      wzTx = startTx + (e.clientX - startX);
-      wzTy = startTy + (e.clientY - startY);
-      wzApplyTransform();
+      const v = document.getElementById("wzViewport");
+      v.scrollLeft = startTx - (e.clientX - startX);
+      v.scrollTop = startTy - (e.clientY - startY);
     });
     window.addEventListener("mouseup", () => {
       dragging = false;
@@ -2955,10 +2968,6 @@ function wzSetupZoomPan() {
         e.touches[0].clientY - e.touches[1].clientY
       );
       touchStartScale = wzScale;
-    } else if (e.touches.length === 1 && wzScale > 1) {
-      dragging = true;
-      startX = e.touches[0].clientX; startY = e.touches[0].clientY;
-      startTx = wzTx; startTy = wzTy;
     }
   }, { passive: true });
 
@@ -2970,10 +2979,6 @@ function wzSetupZoomPan() {
       );
       const factor = dist / touchStartDist;
       wzScale = wzClamp(touchStartScale * factor, MIN_SCALE, MAX_SCALE);
-      wzApplyTransform();
-    } else if (e.touches.length === 1 && dragging) {
-      wzTx = startTx + (e.touches[0].clientX - startX);
-      wzTy = startTy + (e.touches[0].clientY - startY);
       wzApplyTransform();
     }
   }, { passive: true });

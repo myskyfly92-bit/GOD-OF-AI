@@ -4109,3 +4109,9 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .wz-home-back:hover { border-color: var(--cyan); color: var(--cyan); }
 @media (max-width: 560px) { .wzh-card { grid-template-columns: 96px 1fr auto; } .wzh-thumb { height: 64px; } }
 .wzh-brd path { fill: none; stroke: rgba(255,255,255,0.55); stroke-width: 1.1; stroke-dasharray: 4 2; }
+
+/* 확대하면 스크롤로 이동 (그림이 줄거나 밀려 빈 공간이 생기지 않게) */
+.wz-vpwrap { position: relative; }
+.wz-viewport { overflow: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.wz-zoombox { position: relative; max-width: none; }
+.wz-co-btn { width: auto; padding: 0 12px; display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-body); font-size: 13px; flex: none; }
