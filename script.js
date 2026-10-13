@@ -6835,7 +6835,7 @@ async function clinicCall(action, payload) {
       { go: "view-dashboard", sel: null, text: `이 장에서는 화면 맨 위와 어디서나 쓰는 도구들을 알려 드릴게요.<br>안내 중에는 <b>다음 · 이전</b> 버튼이나 키보드 <b>← →</b> 로 넘기고, <b>Esc</b> 나 오른쪽 위 <b>✕</b> 로 언제든 끝낼 수 있어요.` },
       { sel: ".topbar", text: `맨 위 <b>배너</b>예요. 가끔 제가 이 위를 달려가요. 오른쪽 시계 앞에 도착하면 <b>경례</b>를 하고, 안전 한마디를 해요. 가끔은 안전모를 베개 삼아 <b>잠깐 낮잠</b>도 자요 💤<br>달리는 저를 <b>눌러 보면</b> 말을 걸고, 자고 있을 때 누르면 깨어나요!` },
       { sel: ".clock-block", text: `<b>시계</b>예요. 큰 글씨가 <b>바그다드 현지 시각</b>, 아래 작은 글씨가 <b>한국 시각</b>(6시간 빠름)이에요. 본사와 통화할 때 참고하세요.` },
-      { sel: "#visitCounter", opt: true, text: `제목 아래 <b>TODAY | TOTAL</b> 은 싸이월드 미니홈피처럼 이 상황판을 <b>오늘 / 지금까지 연 기기 수</b>예요. 초록 점 <b>NOW</b> 는 <b>지금 이 화면을 열어 둔 기기 수</b>예요(몇 분 단위로 갱신). 같은 PC·폰은 새로고침해도 <b>하루 한 번만</b> 세고, 이름 같은 정보는 받지 않아요. 마우스를 올리면 어제 숫자도 보여요.` },
+      { sel: "#visitCounter", opt: true, text: `제목 아래 <b>TODAY | TOTAL</b> 은 싸이월드 미니홈피처럼 이 상황판을 <b>오늘 / 지금까지 연 기기 수</b>예요. 초록 점 <b>NOW</b> 는 <b>지금 이 화면을 열어 둔 기기 수</b>예요(몇 분 단위로 갱신). 같은 PC·폰은 새로고침해도 <b>하루 한 번만</b> 세고, 이름 같은 정보는 받지 않아요. 마우스를 올리면 <b>최근 방문자 추이 그래프</b>와 <b>이번 달 많이 본 탭</b>이 살짝 떠요.` },
       { sel: "#netPill", text: `시계 오른쪽 국기 아래는 <b>인터넷 속도</b>예요. 이 PC에서 잰 <b>다운로드 속도(Mbps)</b>와 <b>응답 시간(ms)</b>을 보여 줘요.<br>🟢 좋음(5Mbps 이상) · 🟡 보통(1~5) · 🔴 느림(1 미만)이고, 끊기면 <b>'인터넷 끊김'</b>이 떠요. 15분마다 자동으로 재고, <b>누르면 바로</b> 더 정확하게 다시 재요. fast.com 처럼 가까운 측정 서버(Cloudflare)에서 받아서 재요.<br>화면이 비어 보이거나 지도가 안 뜰 때 여기가 빨간색이면 인터넷 탓이니 잠시 뒤 새로고침하세요.` },
       { sel: ".group-bar", text: `여기가 <b>대분류 메뉴</b>예요: 종합현황 · 안전 · 보건 · 환경 · 소방 · 기타.<br>하나를 누르면 바로 아래에 <b>소분류 탭</b> 줄이 나타나고, 마지막으로 보던 소분류를 기억해요.` },
       { sel: ".sa-alert", opt: true, text: `화면 아래 빨간 띠는 <b>중대재해 보도 알림</b>이에요. 최근 3일 안에 국내 산업현장 사망사고 기사가 나오면 <b>회사명과 기사 제목</b>이 떠요. 같은 사고 기사는 하나로 묶어 '보도 n건'으로 보여 주고, 누르면 원문이 열려요.<br>첫 보도는 사실과 다를 수 있으니 원문과 고용노동부 발표를 확인하세요. ✕ 로 닫으면 새 사고 기사가 올 때까지 숨어요.` },
@@ -8388,7 +8388,105 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   const getDay = () => { try { return localStorage.getItem("vcDay") || ""; } catch (e) { return ""; } };
   const setDay = (d) => { try { localStorage.setItem("vcDay", d); } catch (e) {} };
   let last = null, lastErr = "", busy = false, retryT = 0;
-  box.addEventListener("click", () => { if (lastErr) alert("방문자 카운터 연결 상태\n\n" + lastErr); });
+  let lastR = null;
+  box.addEventListener("click", () => { if (lastErr && last === null) alert("방문자 카운터 연결 상태\n\n" + lastErr); else vcPopToggle(); });
+
+  /* ---- 탭 기록: 기기마다 하루 한 번, 처음 연 탭 이름(view-…)만 모아 두었다가 다음 신호 때 같이 보낸다 ---- */
+  const tvGet = () => { try { const o = JSON.parse(localStorage.getItem("vcTv") || "null"); if (o && o.day === dayNow()) return o; } catch (e) {} return { day: dayNow(), sent: [], pend: [] }; };
+  const tvSet = (o) => { try { localStorage.setItem("vcTv", JSON.stringify(o)); } catch (e) {} };
+  const tvMark = (id) => {
+    if (!/^view-[a-z0-9-]{1,40}$/.test(id || "")) return;
+    const o = tvGet(); if (o.sent.includes(id) || o.pend.includes(id)) return;
+    o.pend.push(id); tvSet(o);
+  };
+  function tvPend() { return tvGet().pend.slice(0, 40); }
+  function tvDone(list) { if (!list.length) return; const o = tvGet(); o.pend = o.pend.filter((x) => !list.includes(x)); o.sent = o.sent.concat(list); tvSet(o); }
+  document.addEventListener("click", (e) => { const b = e.target.closest && e.target.closest(".tab-btn[data-view]"); if (b) tvMark(b.dataset.view); }, true);
+  setTimeout(() => { const v = document.querySelector(".view.active"); if (v) tvMark(v.id); }, 2500);
+
+  /* ---- 마우스를 올리면 살짝 뜨는 '방문자 추이' 창 ---- */
+  let pop = null, popT = 0, stats = null, statsAt = 0, statsBusy = false;
+  const fmtN = (n) => Number(n || 0).toLocaleString("en-US");
+  const md = (d) => `${Number(d.slice(4, 6))}.${Number(d.slice(6, 8))}`;
+  const wd = (d) => "일월화수목금토"[new Date(+d.slice(0, 4), +d.slice(4, 6) - 1, +d.slice(6, 8)).getDay()];
+  const tabName = (id) => {
+    const b = document.querySelector(`.tab-btn[data-view="${id}"]`);
+    if (!b) return id.replace(/^view-/, "");
+    const row = b.closest(".sub-row"), g = row && document.querySelector(`.group-btn[data-group="${row.dataset.group}"]`);
+    const t = b.textContent.trim(), gt = g ? g.textContent.trim() : "";
+    return gt && gt !== t ? `${gt} › ${t}` : t;
+  };
+  async function loadStats() {
+    if (statsBusy || (stats && Date.now() - statsAt < 300000)) return;
+    statsBusy = true;
+    try {
+      const url = await getAppsScriptUrl();
+      const r = await (await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&stat=1&t=" + Date.now())).json();
+      stats = r && Array.isArray(r.days) ? r : { old: true };
+      statsAt = Date.now();
+    } catch (e) { stats = stats || { err: true }; }
+    finally { statsBusy = false; if (pop) drawPop(); }
+  }
+  function drawPop() {
+    const r = lastR || {};
+    const head = `<div class="vcp-h"><b>방문자 추이</b><span>기기마다 하루 한 번</span></div>`;
+    if (!stats || stats.err || stats.old) {
+      pop.innerHTML = head + `<div class="vcp-kpi"><div><span>오늘</span><b>${fmtN(r.today)}</b></div><div><span>어제</span><b>${fmtN(r.yesterday)}</b></div><div><span>지금</span><b>${fmtN(r.online)}</b></div><div><span>누적</span><b>${fmtN(r.total)}</b></div></div>
+        <p class="vcp-note">${!stats ? "추이 불러오는 중…" : stats.old ? "날짜별 추이는 방문자카운터 서버를 새 버전으로 바꾸면 보여요." : "추이를 불러오지 못했어요."}</p>`;
+      return;
+    }
+    // 카운터를 켠 날(since) 이전의 빈 날은 빼고 최근 30일까지
+    const st = String(stats.since || r.since || "");
+    let days = stats.days.slice(-30).map((x) => x.slice());
+    if (st) { const k = days.filter((x) => x[0] >= st); if (k.length >= 2) days = k; }
+    if (r.today != null && days.length) days[days.length - 1][1] = Math.max(days[days.length - 1][1], Number(r.today));   // 서버 캐시(5분)보다 최신 오늘 숫자
+    const vals = days.map((x) => x[1]);
+    const max = Math.max(1, ...vals);
+    const last7 = vals.slice(-8, -1), avg7 = last7.length ? Math.round(last7.reduce((a, b) => a + b, 0) / last7.length) : 0;
+    const bi = vals.indexOf(Math.max(...vals));
+    const W = 300, H = 86, n = days.length, gap = n > 20 ? 2 : 4, bw = Math.min(28, (W - gap * (n - 1)) / n);
+    const bars = days.map(([d, v], i) => {
+      const h = v ? Math.max(3, (v / max) * (H - 4)) : 0, x = i * (bw + gap);
+      const cls = i === n - 1 ? "t" : wd(d) === "금" ? "f" : "";
+      return `<g class="vcp-b ${cls}" data-i="${i}"><rect class="hit" x="${x - gap / 2}" y="0" width="${bw + gap}" height="${H}"></rect>${h ? `<rect class="bar" x="${x}" y="${H - h}" width="${bw}" height="${h}" rx="${Math.min(2, bw / 2)}"></rect>` : `<rect class="zero" x="${x}" y="${H - 1}" width="${bw}" height="1"></rect>`}</g>`;
+    }).join("");
+    const T = stats.tabs || {}, top = Object.keys(T).sort((a, b) => T[b] - T[a]).slice(0, 5), tmax = top.length ? T[top[0]] : 1;
+    const since = String(stats.since || r.since || "").replace(/(\d{4})(\d\d)(\d\d)/, "$1.$2.$3");
+    pop.innerHTML = head + `
+      <div class="vcp-kpi"><div><span>오늘</span><b class="o">${fmtN(vals[n - 1])}</b></div><div><span>어제</span><b>${fmtN(vals[n - 2])}</b></div><div><span>7일 평균</span><b>${fmtN(avg7)}</b></div><div><span>최고</span><b>${fmtN(vals[bi])}</b><small>${md(days[bi][0])}</small></div></div>
+      <div class="vcp-chart"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="최근 ${n}일 날짜별 방문 기기 수">${bars}</svg>
+        <div class="vcp-x"><span>${md(days[0][0])}</span><span class="vcp-tip" aria-live="polite">막대에 마우스를 올려 보세요</span><span>오늘</span></div></div>
+      <div class="vcp-tabs"><div class="vcp-st">이번 달 많이 본 탭</div>${top.length ? top.map((id) => `<div class="vcp-tr"><span class="nm">${escapeHtml(tabName(id))}</span><span class="bg"><i style="width:${Math.round((T[id] / tmax) * 100)}%"></i></span><b>${fmtN(T[id])}</b></div>`).join("") : `<p class="vcp-note">탭 기록을 모으는 중이에요 (오늘부터 쌓여요)</p>`}</div>
+      <div class="vcp-f">지금 접속 ${fmtN(r.online)} · 누적 ${fmtN(r.total)}${since ? ` · ${since}부터` : ""}</div>`;
+    const tip = pop.querySelector(".vcp-tip");
+    pop.querySelectorAll(".vcp-b").forEach((g) => {
+      const show = () => { const [d, v] = days[+g.dataset.i]; tip.textContent = `${md(d)} (${wd(d)}) · ${fmtN(v)}대`; tip.classList.add("on"); pop.querySelectorAll(".vcp-b.h").forEach((x) => x.classList.remove("h")); g.classList.add("h"); };
+      g.addEventListener("mouseenter", show); g.addEventListener("click", show);
+    });
+    pop.querySelector("svg").addEventListener("mouseleave", () => { tip.textContent = "막대에 마우스를 올려 보세요"; tip.classList.remove("on"); pop.querySelectorAll(".vcp-b.h").forEach((x) => x.classList.remove("h")); });
+  }
+  function vcPopOpen() {
+    clearTimeout(popT);
+    if (!pop) {
+      pop = document.createElement("div"); pop.className = "vc-pop notranslate"; pop.setAttribute("translate", "no"); pop.setAttribute("role", "tooltip");
+      pop.addEventListener("mouseenter", () => clearTimeout(popT));
+      pop.addEventListener("mouseleave", vcPopLater);
+      document.body.appendChild(pop);
+    }
+    drawPop();
+    const rc = box.getBoundingClientRect();
+    pop.style.top = (rc.bottom + window.scrollY + 8) + "px";
+    pop.style.left = Math.max(10, Math.min(window.innerWidth - 350, rc.left + window.scrollX)) + "px";
+    requestAnimationFrame(() => pop && pop.classList.add("on"));
+    loadStats();
+  }
+  function vcPopClose() { if (!pop) return; const p = pop; pop = null; p.classList.remove("on"); setTimeout(() => p.remove(), 180); }
+  function vcPopLater() { clearTimeout(popT); popT = setTimeout(vcPopClose, 220); }
+  function vcPopToggle() { if (pop) vcPopClose(); else vcPopOpen(); }
+  box.addEventListener("mouseenter", () => { clearTimeout(popT); popT = setTimeout(vcPopOpen, 120); });
+  box.addEventListener("mouseleave", vcPopLater);
+  document.addEventListener("click", (e) => { if (pop && !pop.contains(e.target) && !box.contains(e.target)) vcPopClose(); });
+  window.addEventListener("scroll", () => { if (pop) vcPopClose(); }, { passive: true });
   // 서버 답을 기다리는 동안에도 칸은 항상 보이게: 지난번 숫자를 먼저 보여 준다 (날짜가 바뀌었으면 TODAY 는 '…')
   const show = (t, a) => { elT.textContent = t; elA.textContent = a; box.hidden = false; };
   try {
@@ -8406,7 +8504,8 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       const url = await getAppsScriptUrl();
       if (!url) { showErr("Apps Script 주소를 못 읽음 (work-zones.json)"); return; }
       const d = dayNow(), hit = getDay() !== d;
-      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&vid=" + sid + "&t=" + Date.now(), { signal: ctl.signal });
+      const tvSend = tvPend();
+      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&vid=" + sid + (tvSend.length ? "&tv=" + tvSend.join(".") : "") + "&t=" + Date.now(), { signal: ctl.signal });
       const txt = await res.text();
       let r = null;
       try { r = JSON.parse(txt); } catch (e) {
@@ -8415,10 +8514,12 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       }
       if (!r || !r.ok) { showErr("서버 응답: " + ((r && r.error) || "알 수 없음")); return; }
       if (hit) setDay(d);
+      tvDone(tvSend);
+      lastR = r;
       elT.textContent = Number(r.today).toLocaleString("en-US");
       elA.textContent = Number(r.total).toLocaleString("en-US");
       if (typeof r.online === "number" && r.online > 0) { elN.textContent = r.online; nowWrap.hidden = false; } else nowWrap.hidden = true;
-      box.title = `${typeof r.online === "number" ? `지금 접속 ${r.online} · ` : ""}오늘 ${r.today} · 어제 ${r.yesterday} · 누적 ${r.total} (${String(r.since).replace(/(\d{4})(\d\d)(\d\d)/, "$1.$2.$3")}부터, 기기마다 하루 한 번만 셉니다)`;
+      box.removeAttribute("title");
       if (last !== null && r.today > last) { elT.classList.remove("bump"); void elT.offsetWidth; elT.classList.add("bump"); }
       last = r.today; lastErr = "";
       vcGift(r, hit, sid);
