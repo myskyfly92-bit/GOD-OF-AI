@@ -7253,6 +7253,7 @@ async function clinicCall(action, payload) {
       { go: "view-health-clinic", sel: ".clinic-panel", text: `<b>보건 › 클리닉 진료현황</b>이에요. 진료 건수, 많이 온 증상, 부상 통계와 추이를 보여 줘요. 누가 왔는지가 아니라 <b>현장 건강 경향</b>을 보는 곳이에요.` },
       { sel: "#clinicMeta", text: `이 카드의 통계는 <b>BNCP Clinic EMR</b>(클리닉 전자 진료기록)에서 <b>30분마다 자동으로</b> 들어와요. 이름·사번·회사 같은 개인정보 없이 <b>건수만</b> 받아요. 개별 진료 기록은 EMR에서 등록된 클리닉 담당자만 볼 수 있어요.` },
       { go: "view-health-kdca", sel: ".kdca-panel", text: `<b>국내 감염병 현황</b>이에요. 질병관리청 주간 신고 통계로 <b>등급별 건수</b>, 많이 늘어난 감염병, <b>해외 유입</b> 사례를 보여 줘요. 휴가 복귀자 관리에 참고하세요.` },
+      { go: "view-health-world", sel: "#hwMetric", text: `<b>세계 의료 수준</b>이에요. 세계은행·WHO 지표 8개로 <b>나라마다 의료 인프라 점수(0~100)</b>를 매겨 지도와 순위로 보여 줘요. 위 버튼으로 <b>의사 수·병상·기대수명</b>처럼 지표 하나만 골라 볼 수 있고, 지역을 고르면 지도가 그 지역으로 확대돼요. 나라를 누르면 <b>이라크·한국과 나란히 비교</b>해요. 파견·출장지 의료 수준을 가늠할 때 쓰세요.` },
       { go: "view-iraq-moh", sel: "#view-iraq-moh .iraq-news-panel", text: `<b>이라크 보건부 소식</b>이에요. 현지 감염병·예방접종·보건 공지를 모아 한국어로 보여 줘요.` },
       { go: "view-health-issues", sel: "#view-health-issues .bnews-panel", text: `<b>세계 보건 이슈</b>예요. 페스트·에볼라·조류인플루엔자처럼 <b>세계적으로 화제가 되는 감염병 소식</b>을 국내 보도와 해외·이라크 보도로 나눠 모았어요. 해외 기사는 한국어로 번역돼 있고, <b>기사를 누르면 본문이 펼쳐져요.</b> 6시간마다 새로 모아요.` },
       { go: "view-health-confined", sel: ".cs-panel", text: `<b>밀폐공간 작업</b> 탭의 <b>환기 계산기</b>예요. 공간 크기, 송풍기 풍량·대수, 덕트 길이·꺾임을 넣으면 <b>작업 전 환기 시간</b>과 작업 중 필요 풍량을 계산해 줘요.<br>아래로 내리면 <b>적정공기 기준</b>(산소 18~23.5% 등)과 <b>가스측정기 사용법</b>도 있어요.` },
@@ -9577,3 +9578,165 @@ function hseFilmIntro(el, done, timers) {
   const mo = new MutationObserver(() => { if (el.classList.contains("out")) { box.__stop = true; mo.disconnect(); } });
   mo.observe(el, { attributes: true, attributeFilter: ["class"] });
 }
+
+/* ---------------- 보건 > 세계 의료 수준 (health-infra.json · 매주 세계은행 지표 수집) ----------------
+   지도(assets/world-map.json, 미리 그려 둔 SVG 경로) + 순위 + 나라 상세. 종합점수 또는 지표 하나로 색칠한다. */
+(function worldHealth() {
+  const COL = ["#2a3442", "#c4453f", "#e08a3c", "#d6c25a", "#5fb88a", "#35d0c0"];   // 자료없음 · 1 매우 낮음 … 5 매우 높음
+  const esc = (v) => String(v == null ? "" : v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  const $ = (id) => document.getElementById(id);
+  let D = null, MAP = null, metric = "score", region = "", sel = "IRQ", started = false;
+  const byC = {};
+  const fmtV = (ind, v) => v == null ? "–" : Number(v).toLocaleString("en-US", { maximumFractionDigits: ind.dec, minimumFractionDigits: ind.dec });
+  const fresh = (vy) => vy && vy[1] >= (D.minYear || 2010);
+  // 지표 하나의 백분위(0~100, 높을수록 좋음) → 1~5 등급
+  function pctOf(x, k) {
+    if (k === "score") return x.score;
+    const r = x.r && x.r[k], n = D.world[k] && D.world[k].n;
+    if (!r || !n || !fresh(x.v[k])) return null;
+    return n > 1 ? (1 - (r - 1) / (n - 1)) * 100 : 100;
+  }
+  const gradeOf = (p) => p == null ? 0 : p >= 80 ? 5 : p >= 60 ? 4 : p >= 40 ? 3 : p >= 20 ? 2 : 1;
+  const indOf = (k) => D.indicators.find((i) => i.k === k);
+  const rankOf = (x) => metric === "score" ? x.rank : (fresh(x.v[metric]) ? x.r[metric] : null);
+  const totalOf = () => metric === "score" ? D.scoredCount : (D.world[metric] || {}).n;
+  const valTxt = (x) => { if (metric === "score") return x.score != null ? x.score.toFixed(1) + "점" : "자료 부족";
+    const ind = indOf(metric), vy = x.v[metric]; return vy ? fmtV(ind, vy[0]) + ind.unit : "–"; };
+
+  async function start() {
+    if (started) return; started = true;
+    try {
+      const [d, m] = await Promise.all([
+        fetch("health-infra.json?t=" + Math.floor(Date.now() / 36e5)).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+        fetch("assets/world-map.json?v=1").then((r) => r.json()),
+      ]);
+      D = d; MAP = m; D.countries.forEach((x) => { byC[x.c] = x; });
+    } catch (e) {
+      started = false;
+      $("hwKpis").innerHTML = `<p class="skeleton">세계 의료 지표를 아직 불러오지 못했습니다. (자동 수집이 처음 한 번 돌면 표시됩니다)</p>`;
+      return;
+    }
+    $("hwUpd").textContent = "· " + new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Baghdad", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(D.generatedAt)) + " 수집";
+    const segs = [{ k: "score", short: "종합점수" }].concat(D.indicators);
+    $("hwMetric").innerHTML = segs.map((s) => `<button type="button" data-k="${s.k}" class="${s.k === metric ? "active" : ""}" title="${esc(s.name || "8개 지표 종합 (0~100)")}">${esc(s.short)}</button>`).join("");
+    $("hwMetric").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; metric = b.dataset.k; $("hwMetric").querySelectorAll("button").forEach((x) => x.classList.toggle("active", x === b)); draw(); };
+    $("hwRegion").onchange = (e) => { region = e.target.value; draw(); zoomRegion(); };
+    $("hwSearch").oninput = () => drawList();
+    $("hwSearch").onkeydown = (e) => { if (e.key === "Enter") { const f = $("hwList").querySelector("li[data-c]"); if (f) pick(f.dataset.c); } };
+    buildMap(); draw();
+    // 순위 목록 높이를 지도 높이에 맞춘다
+    const fit = () => { const h = document.querySelector(".hw-mapbox").offsetHeight - $("hwRankH").offsetHeight - 2; if (h > 200 && innerWidth > 1100) $("hwList").style.maxHeight = h + "px"; else $("hwList").style.maxHeight = ""; };
+    if (window.ResizeObserver) new ResizeObserver(fit).observe(document.querySelector(".hw-mapbox")); fit();
+  }
+  // 지역을 고르면 지도를 그 지역으로 확대 (작은 섬나라 하나가 멀리 있어도 너무 작아지지 않게 면적 큰 순으로 90%까지만)
+  function zoomRegion() {
+    const svg = $("hwMap"); let vb = [0, 0, MAP.w, MAP.h];
+    if (region) {
+      const bs = [...svg.querySelectorAll("path[data-c]")].filter((p) => byC[p.dataset.c] && byC[p.dataset.c].reg === region).map((p) => p.getBBox()).filter((b) => b.width < MAP.w * 0.6);
+      if (bs.length) {
+        bs.sort((a, b) => b.width * b.height - a.width * a.height);
+        const tot = bs.reduce((s, b) => s + b.width * b.height, 0); let acc = 0; const keep = [];
+        for (const b of bs) { keep.push(b); acc += b.width * b.height; if (acc >= tot * 0.97 && keep.length >= 3) break; }
+        let x0 = Math.min(...keep.map((b) => b.x)), y0 = Math.min(...keep.map((b) => b.y)), x1 = Math.max(...keep.map((b) => b.x + b.width)), y1 = Math.max(...keep.map((b) => b.y + b.height));
+        const pad = 14; x0 -= pad; y0 -= pad; x1 += pad; y1 += pad;
+        // 화면 비율(가로:세로)을 지도와 같게 맞춘다
+        let w = x1 - x0, h = y1 - y0; const r = MAP.w / MAP.h;
+        if (w / h > r) { const nh = w / r; y0 -= (nh - h) / 2; h = nh; } else { const nw = h * r; x0 -= (nw - w) / 2; w = nw; }
+        vb = [x0, y0, w, h];
+      }
+    }
+    svg.setAttribute("viewBox", vb.map((v) => Math.round(v * 10) / 10).join(" "));
+    const k = Math.max(0.5, vb[2] / MAP.w);
+    svg.querySelector(".hw-site").setAttribute("transform", `translate(${MAP.site[0]},${MAP.site[1]}) scale(${k.toFixed(3)})`);
+    svg.classList.toggle("zoomed", !!region);
+  }
+
+  function buildMap() {
+    const svg = $("hwMap");
+    svg.setAttribute("viewBox", `0 0 ${MAP.w} ${MAP.h}`);
+    svg.innerHTML = MAP.paths.map((p) => `<path d="${p.d}" data-c="${p.c}"></path>`).join("") +
+      `<g class="hw-site" transform="translate(${MAP.site[0]},${MAP.site[1]})"><circle r="7"></circle><circle r="2.6"></circle></g>`;
+    const tip = $("hwTip");
+    svg.addEventListener("mousemove", (e) => {
+      const p = e.target.closest("path[data-c]"); const x = p && byC[p.dataset.c];
+      if (!p) { tip.hidden = true; return; }
+      const name = x ? x.ko : (MAP.paths.find((q) => q.c === p.dataset.c) || {}).n || "";
+      const rk = x && rankOf(x);
+      tip.innerHTML = `<b>${esc(name)}</b>${x ? `<span>${esc(valTxt(x))}${rk ? ` · ${rk}위 / ${totalOf()}` : ""}</span>` : "<span>자료 없음</span>"}`;
+      const box = svg.parentNode.getBoundingClientRect();
+      tip.hidden = false;
+      tip.style.left = Math.min(box.width - tip.offsetWidth - 6, e.clientX - box.left + 14) + "px";
+      tip.style.top = (e.clientY - box.top + 14) + "px";
+    });
+    svg.addEventListener("mouseleave", () => { tip.hidden = true; });
+    svg.addEventListener("click", (e) => { const p = e.target.closest("path[data-c]"); if (p && byC[p.dataset.c]) pick(p.dataset.c); });
+  }
+
+  function pick(c) { sel = c; draw(); const li = $("hwList").querySelector(`li[data-c="${c}"]`); if (li) li.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+
+  function draw() {
+    // 지도 색
+    $("hwMap").querySelectorAll("path[data-c]").forEach((p) => {
+      const x = byC[p.dataset.c];
+      const g = x ? gradeOf(pctOf(x, metric)) : 0;
+      p.style.fill = COL[g];
+      p.classList.toggle("dim", !!region && (!x || x.reg !== region));
+      p.classList.toggle("sel", p.dataset.c === sel);
+    });
+    const selP = $("hwMap").querySelector(`path[data-c="${sel}"]`); if (selP) selP.parentNode.insertBefore(selP, $("hwMap").querySelector(".hw-site"));
+    const lbl = metric === "score" ? ["매우 낮음", "낮음", "보통", "높음", "매우 높음"] : ["하위 20%", "20~40%", "40~60%", "60~80%", "상위 20%"];
+    $("hwLegend").innerHTML = [5, 4, 3, 2, 1].map((g) => `<span><i style="background:${COL[g]}"></i>${lbl[g - 1]}</span>`).join("") + `<span><i style="background:${COL[0]}"></i>자료 없음</span><span class="hw-lg-site"><i></i>비스마야 현장</span>`;
+    drawKpis(); drawList(); drawDetail();
+  }
+
+  function drawKpis() {
+    const tot = D.scoredCount, top = D.countries[0];
+    const tile = (x, tag, cls) => { if (!x) return "";
+      const g = x.grade || 0;
+      return `<button type="button" class="hw-kpi ${cls || ""} ${x.c === sel ? "on" : ""}" data-c="${x.c}"><span class="hw-kpi-t">${tag}</span><b>${esc(x.ko)}</b>
+        <span class="hw-kpi-s"><em style="color:${COL[g]}">${x.score != null ? x.score.toFixed(1) : "–"}</em><small>점</small></span>
+        <span class="hw-kpi-r">${x.rank ? `세계 <b>${x.rank}</b>위 / ${tot}` : "자료 부족"} · <i style="color:${COL[g]}">${esc(D.grades[g] || "")}</i></span></button>`; };
+    const pick2 = byC[sel] && !["IRQ", "KOR"].includes(sel) && sel !== top.c ? byC[sel] : null;
+    $("hwKpis").innerHTML = tile(byC.IRQ, "🇮🇶 현장 국가", "iq") + tile(byC.KOR, "🇰🇷 한국") + tile(top, "🥇 세계 1위") +
+      (pick2 ? tile(pick2, "📍 선택한 나라", "pk") : `<div class="hw-kpi hw-kpi-hint">지도나 오른쪽 순위에서<br>나라를 누르면 비교됩니다</div>`);
+    $("hwKpis").querySelectorAll("button[data-c]").forEach((b) => b.onclick = () => pick(b.dataset.c));
+  }
+
+  function drawList() {
+    const q = $("hwSearch").value.trim().toLowerCase();
+    const list = D.countries.filter((x) => (!region || x.reg === region) && (!q || (x.ko + " " + x.en + " " + x.c).toLowerCase().includes(q)));
+    const withV = list.filter((x) => rankOf(x)).sort((a, b) => rankOf(a) - rankOf(b));
+    const noV = list.filter((x) => !rankOf(x));
+    const ind = metric === "score" ? null : indOf(metric);
+    const max = metric === "score" ? 100 : Math.max(...withV.map((x) => x.v[metric][0]), 1);
+    $("hwRankH").innerHTML = `<b>${metric === "score" ? "종합점수" : esc(ind.name)}</b> 순위 <span>${region ? esc($("hwRegion").selectedOptions[0].text) + " " : ""}${withV.length}개 나라${ind && !ind.hi ? " · 낮을수록 좋음" : ""}</span>`;
+    $("hwList").innerHTML = withV.map((x) => { const g = gradeOf(pctOf(x, metric)); const v = metric === "score" ? x.score : x.v[metric][0];
+      return `<li data-c="${x.c}" class="${x.c === sel ? "on" : ""} ${x.c === "IRQ" ? "iq" : ""} ${x.c === "KOR" ? "kr" : ""}"><span class="hw-n">${rankOf(x)}</span><span class="hw-nm">${esc(x.ko)}</span>
+        <span class="hw-bar"><i style="width:${Math.max(2, v / max * 100)}%;background:${COL[g]}"></i></span><span class="hw-v">${esc(valTxt(x))}</span></li>`; }).join("") +
+      (noV.length ? `<li class="hw-nodata">자료 부족 ${noV.length}개 나라: ${noV.slice(0, 40).map((x) => `<a href="#" data-c="${x.c}">${esc(x.ko)}</a>`).join(", ")}${noV.length > 40 ? " …" : ""}</li>` : "") ||
+      `<li class="hw-nodata">찾는 나라가 없습니다.</li>`;
+    $("hwList").querySelectorAll("[data-c]").forEach((li) => li.onclick = (e) => { e.preventDefault(); pick(li.dataset.c); });
+  }
+
+  function drawDetail() {
+    const x = byC[sel]; if (!x) { $("hwDetail").innerHTML = ""; return; }
+    const iq = byC.IRQ, kr = byC.KOR;
+    const cmp = [x].concat([iq, kr].filter((y) => y && y.c !== x.c));
+    const cell = (y, ind) => { const vy = y.v[ind.k]; if (!vy) return `<td class="na">–</td>`;
+      const old = !fresh(vy);
+      return `<td class="${old ? "old" : ""}"><b>${fmtV(ind, vy[0])}</b><small>${vy[1]}${old ? " · 오래됨" : ""}</small></td>`; };
+    const rows = D.indicators.map((ind) => { const vy = x.v[ind.k], w = D.world[ind.k] || {};
+      const p = pctOf(x, ind.k), g = gradeOf(p);
+      return `<tr><th>${esc(ind.name)}<small>가중치 ${ind.w}${ind.hi ? "" : " · 낮을수록 좋음"}</small></th>
+        <td class="hw-pbar"><div><i style="width:${p == null ? 0 : Math.max(3, p)}%;background:${COL[g]}"></i><u style="left:50%" title="세계 중간"></u></div>
+          <small>${p == null ? "점수 제외" : `세계 ${x.r[ind.k]}위 / ${w.n} · ${p >= 50 ? "상위 " + Math.max(1, Math.round(100 - p)) : "하위 " + Math.max(1, Math.round(p))}%`}</small></td>
+        ${cmp.map((y) => cell(y, ind)).join("")}<td class="wm">${w.median != null ? fmtV(ind, w.median) : "–"}</td></tr>`; }).join("");
+    $("hwDetail").innerHTML = `<div class="hw-d-h"><b>${esc(x.ko)}</b><span>${esc(x.en)} · ${esc(x.region)}${x.income ? " · " + esc(x.income) + " 국가" : ""}</span>
+        <em style="background:${COL[x.grade || 0]}">${x.score != null ? `종합 ${x.score.toFixed(1)}점 · ${x.rank}위 · ${esc(D.grades[x.grade])}` : "종합점수 자료 부족"}</em></div>
+      <table class="hw-table"><thead><tr><th>지표</th><th>세계 안에서 위치 <small>(가운데 선 = 세계 중간)</small></th>${cmp.map((y) => `<th class="${y.c === x.c ? "me" : ""}">${esc(y.ko)}</th>`).join("")}<th>세계 중간값</th></tr></thead><tbody>${rows}</tbody></table>`;
+    $("hwMeta").textContent = `출처: ${D.source} · 나라마다 가장 최근 값 (연도 표시) · 매주 월요일 자동 갱신 · 지도에 안 보이는 작은 나라는 오른쪽 순위·검색으로 보세요`;
+  }
+
+  document.querySelectorAll('.tab-btn[data-view="view-health-world"]').forEach((b) => b.addEventListener("click", start));
+  const v = document.getElementById("view-health-world"); if (v && v.classList.contains("active")) start();
+})();

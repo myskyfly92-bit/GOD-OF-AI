@@ -49,7 +49,7 @@ html.intro-pending::after {
 <link rel="icon" type="image/png" href="assets/icon/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=20261014r">
+<link rel="stylesheet" href="style.css?v=20261014s">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -132,6 +132,7 @@ html.intro-pending::after {
       <button class="tab-btn" data-view="view-health-medical">주변 의료기관</button>
       <button class="tab-btn" data-view="view-health-clinic">클리닉 진료현황</button>
       <button class="tab-btn" data-view="view-health-kdca">국내 감염병 현황</button>
+      <button class="tab-btn" data-view="view-health-world">세계 의료 수준</button>
       <button class="tab-btn" data-view="view-iraq-moh">이라크 보건부 소식</button>
       <!-- WHO 소식 탭은 '세계 보건 이슈'로 대신함 (다시 쓰려면 이 줄을 살리면 됨): <button class="tab-btn" data-view="view-health-infect">WHO 소식</button> -->
       <!-- 온열질환 탭은 겨울철이라 숨김 (여름에 다시 쓰려면 이 줄을 살리면 됨):
@@ -579,6 +580,41 @@ html.intro-pending::after {
       </div>
     </div>
     <p class="source-note" id="clinicMeta">구글 시트 '클리닉' 탭에서 불러옵니다 · 이름은 성만 표시합니다</p>
+  </section>
+</main>
+</div>
+
+<div id="view-health-world" class="view">
+<main class="grid">
+  <section class="panel hw-panel" aria-label="세계 의료 인프라 수준" style="grid-column: 1 / -1;">
+    <div class="panel-label">WORLD HEALTHCARE · 세계 의료 인프라 수준 <span class="hw-upd" id="hwUpd"></span></div>
+    <div class="hw-kpis" id="hwKpis"><p class="skeleton">세계 의료 지표 불러오는 중…</p></div>
+    <div class="hw-controls">
+      <div class="hw-seg" id="hwMetric" role="tablist" aria-label="지표 고르기"></div>
+      <div class="hw-right">
+        <select class="hw-region" id="hwRegion" aria-label="지역">
+          <option value="">전 세계</option><option value="MEA">중동·북아프리카</option><option value="ECS">유럽·중앙아시아</option>
+          <option value="EAS">동아시아·태평양</option><option value="SAS">남아시아</option><option value="SSF">사하라 이남 아프리카</option>
+          <option value="LCN">중남미</option><option value="NAC">북미</option>
+        </select>
+        <input type="search" class="hw-search" id="hwSearch" placeholder="나라 찾기 (예: 요르단)" autocomplete="off">
+      </div>
+    </div>
+    <div class="hw-body">
+      <div class="hw-mapbox">
+        <svg class="hw-map" id="hwMap" role="img" aria-label="세계 의료 수준 지도"></svg>
+        <div class="hw-tip" id="hwTip" hidden></div>
+        <div class="hw-legend" id="hwLegend"></div>
+      </div>
+      <div class="hw-rank">
+        <div class="hw-rank-h" id="hwRankH"></div>
+        <ol class="hw-list" id="hwList"></ol>
+      </div>
+    </div>
+    <div class="hw-detail" id="hwDetail"></div>
+    <p class="source-note" id="hwMeta"></p>
+    <p class="source-note">※ <b>종합점수</b>는 상황실이 세계은행 지표 8개로 계산한 참고값입니다 (공식 순위 아님). 지표마다 '세계 몇 %의 나라보다 나은지'를 구해 가중 평균했습니다 — UHC 지수 30 · 의사 15 · 간호 10 · 병상 10 · 의료비 10 · 기대수명 10 · 영아사망 10 · 모성사망 5. 2010년 이전 값은 점수에서 뺍니다.
+      다른 공식 평가: <a href="https://www.who.int/data/gho/data/themes/topics/service-coverage" target="_blank" rel="noopener noreferrer">WHO UHC 지수 ↗</a> · <a href="https://www.healthdata.org/" target="_blank" rel="noopener noreferrer">IHME HAQ 지수 ↗</a> · <a href="https://ghsindex.org/" target="_blank" rel="noopener noreferrer">세계 보건안보 지수(GHS) ↗</a> · <a href="https://www.internationalsos.com/risk-outlook" target="_blank" rel="noopener noreferrer">International SOS 의료 위험 지도 ↗</a></p>
   </section>
 </main>
 </div>
@@ -1138,7 +1174,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261014r"></script>
+<script src="script.js?v=20261014s"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

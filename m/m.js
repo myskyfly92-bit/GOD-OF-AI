@@ -348,6 +348,29 @@
         <p class="src">질병관리청 · ${esc((d.baseWeek || {}).label || "")} 기준</p>`);
     }).catch(() => fail("kdcaCard"));
 
+    getJ("health-infra.json").then((d) => {
+      const COL = ["#2a3442", "#c4453f", "#e08a3c", "#d6c25a", "#5fb88a", "#35d0c0"];
+      const by = {}; d.countries.forEach((x) => { by[x.c] = x; });
+      const fresh = (vy) => vy && vy[1] >= (d.minYear || 2010);
+      const f = (ind, v) => Number(v).toLocaleString("en-US", { maximumFractionDigits: ind.dec, minimumFractionDigits: ind.dec });
+      const kpi = (x, t) => x ? `<div class="kpi" style="border-color:${COL[x.grade || 0]}55"><span>${t}</span><b class="num" style="color:${COL[x.grade || 0]}">${x.score != null ? x.score.toFixed(1) : "–"}</b><small>${x.rank ? x.rank + "위 / " + d.scoredCount : "자료 부족"}</small></div>` : "";
+      const li = (x) => `<li class="item fold hw-li"><div class="t"><span class="hw-rk">${x.rank || "–"}</span> ${esc(x.ko)}${x.c === "IRQ" ? " 🇮🇶" : x.c === "KOR" ? " 🇰🇷" : ""}
+          <b class="hw-sc" style="color:${COL[x.grade || 0]}">${x.score != null ? x.score.toFixed(1) : "–"}</b></div>
+        <div class="m">${esc(x.region)}${x.income ? " · " + esc(x.income) : ""} · ${esc(d.grades[x.grade || 0] || "자료 부족")}</div>
+        <div class="b"><table class="hw-t">${d.indicators.map((ind) => { const vy = x.v[ind.k], w = d.world[ind.k] || {};
+          return `<tr><th>${esc(ind.short)}</th><td><b>${vy ? f(ind, vy[0]) : "–"}</b>${vy ? ` <small>${esc(ind.unit)} · ${vy[1]}</small>` : ""}</td><td>${vy && fresh(vy) && x.r[ind.k] ? `${x.r[ind.k]}위` : "–"}</td><td class="wm">세계 중간 ${w.median != null ? f(ind, w.median) : "–"}</td></tr>`; }).join("")}</table></div></li>`;
+      const draw = () => { const q = ($("#hwQ") || {}).value || "";
+        const it = q.trim() ? d.countries.filter((x) => (x.ko + " " + x.en + " " + x.c).toLowerCase().includes(q.trim().toLowerCase())).slice(0, 20) : d.countries.filter((x) => x.rank);
+        $("#hwList").innerHTML = it.map(li).join("") || '<li class="empty">찾는 나라가 없습니다.</li>';
+        clip($("#hwList"), q.trim() ? 99 : 10); };
+      fill("hwCard", `<div class="kpis">${kpi(by.IRQ, "🇮🇶 이라크")}${kpi(by.KOR, "🇰🇷 한국")}${kpi(d.countries[0], "🥇 " + esc(d.countries[0].ko))}</div>
+        <div class="hw-scale">${[5, 4, 3, 2, 1].map((g) => `<span><i style="background:${COL[g]}"></i>${d.grades[g]}</span>`).join("")}</div>
+        <input class="search" id="hwQ" placeholder="나라 찾기 (예: 요르단, 쿠웨이트)" autocomplete="off" style="margin-top:12px">
+        <ul class="list" id="hwList"></ul>
+        <p class="src">종합점수(0~100)는 세계은행·WHO 지표 8개(UHC 지수·의사·간호·병상·의료비·기대수명·영아/모성 사망)로 상황실이 계산한 참고값 · 나라를 누르면 지표별 값 · 지도는 PC 화면 '보건 → 세계 의료 수준'</p>`);
+      $("#hwQ").addEventListener("input", draw); draw();
+    }).catch(() => fail("hwCard"));
+
     getJ("health-issues.json").then((d) => {
       fill("hiCard", `<ul class="list">${(d.items || []).slice(0, 10).map((x) => `<li class="item"><a href="${esc(x.link || x.url)}" target="_blank" rel="noopener"><div class="t" style="font-size:14px">${esc(x.titleKo || x.title)}</div><div class="m">${esc(x.source)} · ${ago(x.date)}${x.lang && x.lang !== "ko" ? ' · <span class="tag">번역</span>' : ""}</div></a></li>`).join("")}</ul>`);
       clip("hiCard", 5);
