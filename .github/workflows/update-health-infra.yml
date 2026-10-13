@@ -1,0 +1,31 @@
+name: Update World Health Infrastructure
+
+on:
+  schedule:
+    - cron: "40 2 * * 1"   # 매주 월요일 (원자료가 1년에 한두 번 바뀌는 통계)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-health-infra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 세계 의료 인프라 지표 수집 (세계은행)
+        run: node scripts/fetch-health-infra.js
+
+      - name: 변경사항 자동 커밋
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: 세계 의료 인프라 지표 자동 업데이트"
+          file_pattern: health-infra.json
