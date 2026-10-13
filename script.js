@@ -5180,7 +5180,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const unhide = () => document.documentElement.classList.remove("intro-pending");
     let seen = false;
     try { seen = sessionStorage.getItem("hseIntroSeen") === "1"; } catch (e) {}
-    const forced = ["1", "day", "classic"].includes(params.get("intro") || "");
+    const forced = ["1", "day", "city", "classic"].includes(params.get("intro") || "");
     if ((seen && !forced) || reduce) { unhide(); return; }
     // '봤음' 표시는 인트로가 끝난 뒤에 남긴다 (준비 중에 새로고침하면 다시 처음부터 보이게)
     const el = document.createElement("div");
@@ -5217,11 +5217,11 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     skip.innerHTML = `인트로 생략 <span aria-hidden="true">›</span>`;
     skip.addEventListener("click", (e) => { e.stopPropagation(); done(); });
     el.appendChild(skip);
-    // 인트로 고르기: ?intro=day → '현장의 하루', ?intro=classic → 기존 인트로, 그 밖에는 날짜에 따라 번갈아
+    // 인트로 고르기: ?intro=city → '도시가 지어지는 미니어처', ?intro=classic → 기존 인트로, 그 밖에는 날짜에 따라 번갈아
     const im = params.get("intro");
     const doy = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 864e5);
-    const mode = im === "day" ? "day" : im === "classic" ? "classic" : (doy % 2 === 0 ? "day" : "classic");
-    if (mode === "day" && typeof hseDayIntro === "function") { hseDayIntro(el, done, timers); return; }
+    const mode = (im === "city" || im === "day") ? "city" : im === "classic" ? "classic" : (doy % 2 === 0 ? "city" : "classic");
+    if (mode === "city" && typeof hseCityIntro === "function") { hseCityIntro(el, done, timers); return; }
     // 로고 장면: '한화'를 용접으로 새긴 뒤 → 글자·제목이 나타나고 → 2.3초 뒤 끝
     const showLogo = () => {
       const word = el.querySelector(".hse-intro-word");
@@ -9345,111 +9345,159 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
 
 
 /* ==========================================================
-   인트로 2: '현장의 하루' — 현장 위성사진 위로 새벽 → 아침 → 한낮 → 해질녘 → 밤 빛이 흐르고,
-   마지막에 '오늘도 무재해'와 무재해 일수가 떠오른 뒤 상황실이 열린다 (약 12초 · 인트로 생략 가능)
+   인트로 2: '도시가 지어지는 미니어처' — 사진 없이 코드로 그린다
+   빈 사막 땅에 측량선 → 설계 윤곽(청사진 선) → 크레인이 돌며 아파트가 한 층씩 올라가고
+   연도가 2012 → 올해로 흐른 뒤, 밤이 되며 창문 불이 켜지고 '오늘도 무재해' (약 14초 · 생략 가능)
    ========================================================== */
-function hseDayIntro(el, done, timers) {
-  el.classList.add("day-mode");
+function hseCityIntro(el, done, timers) {
+  el.classList.add("city-mode");
   const num = (id) => { const n = document.getElementById(id); const v = n ? String(n.textContent).replace(/[^\d,]/g, "") : ""; return v && v !== "0" ? v : ""; };
-  const IMG = "assets/sat-2026.webp";
   const box = document.createElement("div");
-  box.className = "di";
-  box.innerHTML = `
-    <div class="di-img"></div><div class="di-tint"></div><div class="di-sunglow"></div>
-    <div class="di-stars"></div><canvas class="di-lights"></canvas>
-    <svg class="di-arc" viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true"><path d="M60 200 Q500 -60 940 200" /></svg>
-    <div class="di-orb"></div>
-    <div class="di-top"><div class="di-clock">05:00</div><div class="di-phase">새벽</div></div>
-    <div class="di-cap"><b></b><span></span></div>
-    <div class="di-final">
-      <small>BISMAYAH NEW CITY PROJECT · HSE SITUATION ROOM</small>
-      <b>오늘도 무재해</b>
-      <span class="di-nums"></span>
-      <i>비스마야 안전보건환경 상황실</i>
-    </div>`;
+  box.className = "ci";
+  box.innerHTML = `<canvas></canvas>
+    <div class="ci-top"><div class="ci-year">2012</div><div class="ci-sub">착공</div></div>
+    <div class="ci-cap"><b></b><span></span></div>
+    <div class="ci-final"><small>BISMAYAH NEW CITY PROJECT · HSE SITUATION ROOM</small><b>오늘도 무재해</b><span class="ci-nums"></span><i>비스마야 안전보건환경 상황실</i></div>`;
   el.appendChild(box);
-  const $ = (s) => box.querySelector(s);
-  const img = $(".di-img"), tint = $(".di-tint"), glow = $(".di-sunglow"), orb = $(".di-orb"), stars = $(".di-stars"), cv = $(".di-lights");
-  const clock = $(".di-clock"), phase = $(".di-phase"), capB = $(".di-cap b"), capS = $(".di-cap span"), cap = $(".di-cap");
-  // 시간대별 빛 (시각: 덧칠 색 r,g,b,a · 밝기 · 채도)
-  const K = [
-    [5, 12, 22, 62, 0.78, 0.32, 0.6], [6.3, 255, 120, 90, 0.42, 0.62, 0.85], [8, 255, 196, 140, 0.2, 0.86, 0.95],
-    [11, 255, 250, 235, 0.06, 1.06, 1.0], [14, 255, 238, 205, 0.08, 1.04, 1.0], [16.5, 255, 170, 90, 0.22, 0.88, 1.05],
-    [18.3, 230, 70, 50, 0.42, 0.55, 1.1], [19.3, 40, 30, 90, 0.7, 0.36, 0.8], [20, 8, 14, 46, 0.82, 0.26, 0.6]];
-  const at = (h) => { let i = 0; while (i < K.length - 2 && h > K[i + 1][0]) i++; const a = K[i], b = K[i + 1], f = Math.max(0, Math.min(1, (h - a[0]) / (b[0] - a[0]))); return a.map((v, j) => v + (b[j] - v) * f); };
-  const items = (typeof wzItems !== "undefined" && Array.isArray(wzItems)) ? wzItems : null;
-  const today = typeof wzBaghdadToday === "function" ? wzBaghdadToday() : "";
-  let todayN = 0, todayCrew = 0;
-  if (items && today) { const dow = WZ_DAY_ORDER[(new Date(today + "T00:00:00Z").getUTCDay() + 6) % 7]; const t = items.filter((it) => wzOnDate(it, today, dow)); todayN = t.length; todayCrew = t.reduce((a, it) => a + (it.crew || 0), 0); }
-  const CAPS = [
-    [5.0, "새벽", "현장이 깨어납니다"],
-    [6.4, "06:30 · TBM", "오늘의 위험을 함께 확인합니다"],
-    [8.6, "작업 시작", todayN ? `오늘 작업 ${todayN}건 · ${todayCrew}명 투입` : "안전대 체결 · 신호수 배치"],
-    [11.6, "한낮", "물 · 그늘 · 휴식, 더위를 이겨 냅니다"],
-    [15.4, "마무리 점검", "정리정돈 · 장비 잠금 · 출입 통제"],
-    [18.2, "퇴근", "오늘도 모두 무사히 집으로"]];
-  const PH = (h) => h < 6 ? "새벽" : h < 9 ? "아침" : h < 12 ? "오전" : h < 15 ? "한낮" : h < 17.5 ? "오후" : h < 19 ? "해질녘" : "밤";
-  // 밤 불빛 (도시 쪽에 따뜻한 점들)
-  const ctx = cv.getContext("2d"), DPR = Math.min(2, window.devicePixelRatio || 1);
-  const pts = []; let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
-  for (let i = 0; i < 420; i++) { const cx = 0.2 + rnd() * 0.65, cy = 0.15 + rnd() * 0.75; pts.push([cx, cy, 0.6 + rnd() * 1.6, rnd() * 6.28, rnd() < 0.15]); }
-  const size = () => { cv.width = innerWidth * DPR; cv.height = innerHeight * DPR; };
+  const cv = box.querySelector("canvas"), ctx = cv.getContext("2d");
+  const yearEl = box.querySelector(".ci-year"), subEl = box.querySelector(".ci-sub"), cap = box.querySelector(".ci-cap");
+  const DPR = Math.min(2, window.devicePixelRatio || 1);
+  let W = 0, H = 0;
+  const size = () => { W = innerWidth; H = innerHeight; cv.width = W * DPR; cv.height = H * DPR; cv.style.width = W + "px"; cv.style.height = H + "px"; };
   size(); window.addEventListener("resize", size);
-  const T_DAY = 11500, T_FINAL = 2800;
-  let t0 = 0, capIdx = -1, raf = 0, finalShown = false, stopped = false;
+  // ---- 단지 배치 (고정된 난수라 매번 같은 모양) ----
+  let seed = 20120530; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const N = 12, ROAD = (i) => i === 4 || i === 8;
+  const lots = [], trees = [];
+  for (let x = 0; x < N; x++) for (let y = 0; y < N; y++) {
+    if (ROAD(x) || ROAD(y)) continue;
+    const r = rnd();
+    if (r < 0.12) { trees.push([x + 0.5, y + 0.5]); continue; }        // 공원·나무
+    const floors = 6 + Math.floor(rnd() * 9);                           // 6~14층
+    const d = Math.hypot(x - 5.5, y - 5.5);
+    lots.push({ x: x + 0.14, y: y + 0.14, w: 0.72, d: 0.72, floors, start: 0.08 + d / 9 * 0.62 + rnd() * 0.12, tone: rnd(),
+      lit: Array.from({ length: floors * 6 }, () => rnd()) });
+  }
+  lots.sort((a, b) => (a.x + a.y) - (b.x + b.y));
+  const cranes = [[3.3, 2.6, 0.2], [9.5, 6.4, 2.1], [5.6, 9.5, 4.0], [2.5, 7.4, 1.0]].map(([x, y, a]) => ({ x, y, a, sp: 0.25 + rnd() * 0.25 }));
+  const stars = Array.from({ length: 140 }, () => [rnd(), rnd() * 0.55, rnd() * 1.2 + 0.3, rnd() * 6.28]);
+  // ---- 투영 (아이소메트릭) ----
+  let S = 1, CX = 0, CY = 0;
+  const FLOOR = 7;   // 한 층 높이(px, 확대 전)
+  const iso = (x, y, z) => [CX + (x - y) * 32 * S, CY + (x + y) * 16 * S - z * S];
+  const poly = (pts, fill, stroke, lw) => { ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath(); if (fill) { ctx.fillStyle = fill; ctx.fill(); } if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = lw || 1; ctx.stroke(); } };
+  const mix = (a, b, f) => a.map((v, i) => Math.round(v + (b[i] - v) * f));
+  const rgb = (c, al) => `rgba(${c[0]},${c[1]},${c[2]},${al == null ? 1 : al})`;
+  const ease = (t) => t <= 0 ? 0 : t >= 1 ? 1 : 1 - Math.pow(1 - t, 3);
+  const CAPS = [[0.02, "2012 · 착공", "사막 위에 첫 측량선을 긋다"], [0.2, "골조 공사", "한 층 한 층, 안전하게"], [0.45, "10만 가구", "하나의 도시가 올라갑니다"],
+    [0.7, "오늘", "비스마야 신도시"]];
+  const Y0 = 2012, Y1 = new Date().getFullYear();
+  const T = 10800, T_FINAL = 3000;
+  let t0 = 0, raf = 0, stopped = false, capIdx = -1, finalShown = false;
   function frame(now) {
     if (stopped) return;
     if (!t0) t0 = now;
-    // 새벽·해질녘은 천천히, 한낮은 빠르게 흐르게 (양 끝이 느린 곡선)
-    const ms = now - t0, p = Math.min(1, ms / T_DAY), h = 5 + 15 * (p - 0.13 * Math.sin(2 * Math.PI * p));
-    const [, r, g, b, a, br, sat] = at(h);
-    tint.style.background = `rgba(${r | 0},${g | 0},${b | 0},${a.toFixed(3)})`;
-    img.style.filter = `brightness(${br.toFixed(3)}) saturate(${sat.toFixed(3)})`;
-    img.style.transform = `scale(${(1.06 + p * 0.12).toFixed(4)}) translate(${(-p * 1.5).toFixed(2)}%, ${(-p * 1).toFixed(2)}%)`;
-    // 해·달: 6시 동쪽(왼쪽) → 18시 서쪽(오른쪽), 그 밖에는 달
-    const sunP = Math.max(0, Math.min(1, (h - 6) / 12)), day = h >= 6 && h <= 18.4;
-    const night = h < 6 ? (6 - h) : h > 18.4 ? Math.min(1, (h - 18.4) / 1.2) : 0;
-    const x = 6 + (day ? sunP : (h > 18 ? 1 : 0)) * 88, y = 92 - Math.sin(Math.PI * (day ? sunP : 0.04)) * 78;
-    orb.style.left = x + "%"; orb.style.top = (y * 0.22) + "%";
-    orb.className = "di-orb " + (day ? "sun" : "moon");
-    glow.style.background = `radial-gradient(circle at ${x}% ${8 + y * 0.25}%, rgba(255,${day ? 210 : 220},${day ? 140 : 255},${day ? (0.35 - Math.abs(sunP - 0.5) * 0.25).toFixed(2) : 0.08}) 0%, transparent 55%)`;
-    stars.style.opacity = Math.min(1, night).toFixed(2);
-    // 불빛
-    ctx.clearRect(0, 0, cv.width, cv.height);
-    const lo = Math.min(1, night * 1.2);
-    if (lo > 0.01) {
-      pts.forEach(([px, py, rr, ph, big]) => {
-        const tw = 0.65 + 0.35 * Math.sin(ms / 380 + ph);
-        ctx.fillStyle = big ? `rgba(255,214,150,${(lo * tw).toFixed(3)})` : `rgba(255,190,120,${(lo * tw * 0.8).toFixed(3)})`;
-        ctx.beginPath(); ctx.arc(px * cv.width, py * cv.height, rr * DPR * (big ? 1.5 : 1), 0, 6.283); ctx.fill();
-      });
+    const ms = now - t0, p = Math.min(1, ms / T);
+    const night = ease((p - 0.72) / 0.22);                 // 끝 무렵 밤이 된다
+    const zoom = 1.22 - 0.22 * ease(p / 0.9);
+    S = Math.min(W * 0.88 / (N * 64), H * 0.62 / (N * 32 + 90)) * zoom;
+    CX = W / 2; CY = H * 0.5 - N * 16 * S + 40 * S * (1 - p * 0.3);
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    // 하늘
+    const sky1 = mix([22, 44, 66], [5, 9, 22], night), sky2 = mix([196, 150, 102], [16, 24, 52], night);
+    const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, rgb(sky1)); g.addColorStop(1, rgb(sky2));
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    if (night > 0) stars.forEach(([x, y, r, ph]) => { ctx.fillStyle = `rgba(255,255,255,${(night * (0.5 + 0.5 * Math.sin(ms / 500 + ph))).toFixed(3)})`; ctx.fillRect(x * W, y * H, r, r); });
+    // 땅
+    const sand = mix([214, 180, 128], [52, 46, 44], night);
+    poly([iso(0, 0, 0), iso(N, 0, 0), iso(N, N, 0), iso(0, N, 0)], rgb(sand));
+    // 도로
+    const road = rgb(mix([120, 108, 92], [30, 30, 36], night));
+    [4, 8].forEach((k) => { poly([iso(k, 0, 0), iso(k + 1, 0, 0), iso(k + 1, N, 0), iso(k, N, 0)], road); poly([iso(0, k, 0), iso(N, k, 0), iso(N, k + 1, 0), iso(0, k + 1, 0)], road); });
+    // 측량선 (처음 1.5초 동안 그려짐)
+    const survey = ease(ms / 1500);
+    ctx.strokeStyle = `rgba(53,208,192,${(0.55 * (1 - ease((p - 0.35) / 0.2))).toFixed(3)})`; ctx.lineWidth = 1;
+    for (let i = 0; i <= N; i++) {
+      const L = N * survey;
+      let [a, b] = [iso(i, 0, 0), iso(i, L, 0)]; ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+      [a, b] = [iso(0, i, 0), iso(L, i, 0)]; ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
     }
-    // 시계 · 시간대
-    const hh = Math.floor(h), mm = Math.floor((h - hh) * 60 / 10) * 10;
-    clock.textContent = `${String(hh).padStart(2, "0")}:${String(mm).padStart(2, "0")}`;
-    phase.textContent = PH(h);
-    // 자막
-    let ci = -1; CAPS.forEach((c, i) => { if (h >= c[0]) ci = i; });
-    if (ci !== capIdx && ci >= 0) {
-      capIdx = ci; cap.classList.remove("in"); void cap.offsetWidth;
-      capB.textContent = CAPS[ci][1]; capS.textContent = CAPS[ci][2]; cap.classList.add("in");
-    }
+    // 가로등 (밤)
+    if (night > 0.05) for (let k = 0; k < N; k += 1) [[4.5, k + 0.5], [8.5, k + 0.5], [k + 0.5, 4.5], [k + 0.5, 8.5]].forEach(([x, y]) => {
+      const [sx, sy] = iso(x, y, 0); const gr = ctx.createRadialGradient(sx, sy, 0, sx, sy, 14 * S);
+      gr.addColorStop(0, `rgba(255,200,120,${(0.55 * night).toFixed(3)})`); gr.addColorStop(1, "rgba(255,200,120,0)"); ctx.fillStyle = gr; ctx.fillRect(sx - 14 * S, sy - 14 * S, 28 * S, 28 * S);
+    });
+    // 나무
+    trees.forEach(([x, y]) => { const [sx, sy] = iso(x, y, 0); const gp = ease((p - 0.5) / 0.2); if (gp <= 0) return; ctx.fillStyle = rgb(mix([74, 132, 84], [24, 46, 36], night)); ctx.beginPath(); ctx.ellipse(sx, sy - 5 * S * gp, 7 * S * gp, 5 * S * gp, 0, 0, 6.283); ctx.fill(); });
+    // 건물 (뒤에서 앞으로)
+    lots.forEach((b) => {
+      const gp = ease((p - b.start) / 0.22);
+      const fullH = b.floors * FLOOR, h = fullH * gp;
+      const A = [b.x, b.y], B = [b.x + b.w, b.y], C = [b.x + b.w, b.y + b.d], D = [b.x, b.y + b.d];
+      // 설계 윤곽 (청사진 선)
+      const bp = ease((ms - 600) / 900) * (1 - gp);
+      if (bp > 0.02) {
+        ctx.setLineDash([3, 3]);
+        const st = `rgba(120,220,255,${(0.6 * bp).toFixed(3)})`;
+        poly([iso(...A, fullH), iso(...B, fullH), iso(...C, fullH), iso(...D, fullH)], null, st, 0.8);
+        [B, C, D].forEach((q) => { const [x1, y1] = iso(...q, 0), [x2, y2] = iso(...q, fullH); ctx.strokeStyle = st; ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke(); });
+        ctx.setLineDash([]);
+      }
+      if (h < 0.5) return;
+      const base = mix([236, 226, 208], [228, 214, 196], b.tone);
+      const top = mix(base, [40, 44, 58], night * 0.85), left = mix(mix(base, [150, 140, 128], 0.35), [26, 30, 42], night * 0.9), right = mix(mix(base, [110, 100, 92], 0.55), [18, 22, 32], night * 0.9);
+      poly([iso(...D, 0), iso(...C, 0), iso(...C, h), iso(...D, h)], rgb(left));
+      poly([iso(...B, 0), iso(...C, 0), iso(...C, h), iso(...B, h)], rgb(right));
+      poly([iso(...A, h), iso(...B, h), iso(...C, h), iso(...D, h)], rgb(top));
+      // 층 줄·창문
+      const fl = Math.floor(h / FLOOR);
+      for (let f = 0; f < fl; f++) {
+        const z = f * FLOOR + FLOOR * 0.55;
+        for (let k = 0; k < 3; k++) {
+          const u0 = 0.12 + k * 0.29, u1 = u0 + 0.18;
+          [[D, C, 0], [B, C, 1]].forEach(([P, Q, side]) => {
+            const lerp = (u) => [P[0] + (Q[0] - P[0]) * u, P[1] + (Q[1] - P[1]) * u];
+            const [x1, y1] = iso(...lerp(u0), z), [x2, y2] = iso(...lerp(u1), z);
+            const lit = b.lit[(f * 6 + k * 2 + side) % b.lit.length] < night * 0.85;
+            ctx.strokeStyle = lit ? `rgba(255,${200 + ((f * 7 + k) % 40)},120,0.95)` : rgb(mix([120, 132, 148], [12, 16, 24], night), 0.85);
+            ctx.lineWidth = Math.max(1, 2.6 * S); ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+          });
+        }
+      }
+      // 올라가는 중인 층: 노란 안전망
+      if (gp > 0 && gp < 1) poly([iso(...D, h), iso(...C, h), iso(...C, h + 4), iso(...D, h + 4)], "rgba(242,169,59,0.75)");
+    });
+    // 크레인
+    const cOp = 1 - ease((p - 0.66) / 0.12);
+    if (cOp > 0 && ms > 900) cranes.forEach((c) => {
+      const mastH = 120 * Math.min(1, ease((ms - 900) / 900)), a = c.a + ms / 1000 * c.sp;
+      const [bx, by] = iso(c.x, c.y, 0), [tx, ty] = iso(c.x, c.y, mastH);
+      ctx.globalAlpha = cOp;
+      ctx.strokeStyle = "#f2a93b"; ctx.lineWidth = Math.max(1.2, 2.4 * S); ctx.beginPath(); ctx.moveTo(bx, by); ctx.lineTo(tx, ty); ctx.stroke();
+      const [jx, jy] = iso(c.x + Math.cos(a) * 2.4, c.y + Math.sin(a) * 2.4, mastH), [kx, ky] = iso(c.x - Math.cos(a) * 0.9, c.y - Math.sin(a) * 0.9, mastH);
+      ctx.beginPath(); ctx.moveTo(kx, ky); ctx.lineTo(jx, jy); ctx.stroke();
+      const tr = 0.6 + 0.3 * Math.sin(ms / 900 + c.a), [hx, hy] = iso(c.x + Math.cos(a) * 2.4 * tr, c.y + Math.sin(a) * 2.4 * tr, mastH);
+      ctx.lineWidth = 1; ctx.strokeStyle = "rgba(255,255,255,0.7)"; ctx.beginPath(); ctx.moveTo(hx, hy); ctx.lineTo(hx, hy + 40 * S); ctx.stroke();
+      ctx.fillStyle = "#f2a93b"; ctx.fillRect(hx - 3 * S, hy + 40 * S, 6 * S, 4 * S);
+      ctx.fillStyle = ms % 1000 < 500 ? "#ff4d4f" : "rgba(255,77,79,0.25)"; ctx.beginPath(); ctx.arc(tx, ty - 2, Math.max(1.5, 2.5 * S), 0, 6.283); ctx.fill();   // 항공 장애등
+      ctx.globalAlpha = 1;
+    });
+    // 연도 · 자막
+    const yr = Math.min(Y1, Y0 + Math.floor((Y1 - Y0 + 1) * Math.max(0, Math.min(1, (p - 0.06) / 0.66))));   // 건물이 올라가는 속도에 맞춰 고르게
+    yearEl.textContent = yr; subEl.textContent = p < 0.12 ? "착공" : p < 0.72 ? "공사 " + (yr - Y0 + 1) + "년차" : "오늘";
+    let ci = -1; CAPS.forEach((c, i) => { if (p >= c[0]) ci = i; });
+    if (ci !== capIdx && ci >= 0) { capIdx = ci; cap.classList.remove("in"); void cap.offsetWidth; cap.querySelector("b").textContent = CAPS[ci][1]; cap.querySelector("span").textContent = CAPS[ci][2]; cap.classList.add("in"); }
     if (p >= 1 && !finalShown) {
       finalShown = true;
       const fd = num("incidentFreeDays"), cd = num("constructionDays");
-      $(".di-nums").innerHTML = [fd && `무재해 <em>${fd}</em>일`, cd && `착공 <em>${cd}</em>일째`].filter(Boolean).join(" · ");
-      cap.classList.remove("in");
+      box.querySelector(".ci-nums").innerHTML = [fd && `무재해 <em>${fd}</em>일`, cd && `착공 <em>${cd}</em>일째`].filter(Boolean).join(" · ");
       box.classList.add("final");
       timers.push(setTimeout(() => { stopped = true; done(); }, T_FINAL));
     }
     raf = requestAnimationFrame(frame);
   }
-  const start = () => { if (stopped) return; box.classList.add("go"); raf = requestAnimationFrame(frame); };
-  const pre = new Image(); let begun = false;
-  const go = () => { if (begun) return; begun = true; img.style.backgroundImage = `url('${IMG}')`; start(); };
-  pre.onload = go; pre.onerror = go; pre.src = IMG;
-  timers.push(setTimeout(go, 4000));   // 사진이 늦으면 4초 뒤 그냥 시작
-  // 인트로가 끝나면(생략 포함) 그림 그리기를 멈춘다
+  requestAnimationFrame(() => box.classList.add("go"));
+  raf = requestAnimationFrame(frame);
   const mo = new MutationObserver(() => { if (el.classList.contains("out")) { stopped = true; cancelAnimationFrame(raf); mo.disconnect(); window.removeEventListener("resize", size); } });
   mo.observe(el, { attributes: true, attributeFilter: ["class"] });
 }

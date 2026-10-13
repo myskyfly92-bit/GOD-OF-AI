@@ -4283,39 +4283,25 @@ body:has(.hse-intro) .talk { display: none; }
   .hg-again { right: 12px !important; left: auto !important; bottom: 118px !important; }
 }
 
-/* ---------- 인트로 2: 현장의 하루 ---------- */
-.hse-intro.day-mode .hse-intro-inner, .hse-intro.day-mode .hse-intro-slides, .hse-intro.day-mode .hse-intro-capbox, .hse-intro.day-mode .hse-intro-flash { display: none; }
-.hse-intro.day-mode { background: #05070b; }
-.di { position: absolute; inset: 0; overflow: hidden; opacity: 0; transition: opacity 1.2s ease; }
-.di.go { opacity: 1; }
-.di-img { position: absolute; inset: -4%; background: #0b1018 center / cover no-repeat; transform-origin: 55% 50%; will-change: transform, filter; }
-.di-tint { position: absolute; inset: 0; mix-blend-mode: multiply; }
-.di-sunglow { position: absolute; inset: 0; mix-blend-mode: screen; }
-.di-stars { position: absolute; inset: 0; opacity: 1; pointer-events: none;
-  background-image: radial-gradient(1px 1px at 12% 18%, #fff, transparent), radial-gradient(1px 1px at 28% 8%, #fff, transparent), radial-gradient(1.5px 1.5px at 44% 22%, #fff, transparent),
-    radial-gradient(1px 1px at 63% 11%, #fff, transparent), radial-gradient(1px 1px at 78% 26%, #fff, transparent), radial-gradient(1.5px 1.5px at 88% 9%, #fff, transparent),
-    radial-gradient(1px 1px at 6% 34%, #fff, transparent), radial-gradient(1px 1px at 52% 4%, #fff, transparent), radial-gradient(1px 1px at 93% 38%, #fff, transparent),
-    radial-gradient(1px 1px at 35% 30%, #cfe3ff, transparent), radial-gradient(1px 1px at 70% 35%, #cfe3ff, transparent); }
-.di-lights { position: absolute; inset: 0; width: 100%; height: 100%; mix-blend-mode: screen; pointer-events: none; }
-.di-arc { position: absolute; left: 4%; right: 4%; top: 2%; width: 92%; height: 22%; pointer-events: none; }
-.di-arc path { fill: none; stroke: rgba(255,255,255,0.22); stroke-width: 1.5; stroke-dasharray: 4 7; vector-effect: non-scaling-stroke; }
-.di-orb { position: absolute; width: 34px; height: 34px; margin: -17px 0 0 -17px; border-radius: 50%; pointer-events: none; transition: background .6s, box-shadow .6s; }
-.di-orb.sun { background: radial-gradient(circle, #fff7d6 0%, #ffd27a 55%, #ffb347 100%); box-shadow: 0 0 30px 10px rgba(255,200,110,.55), 0 0 90px 30px rgba(255,170,80,.25); }
-.di-orb.moon { background: radial-gradient(circle at 40% 40%, #f4f7ff, #c9d4ea 70%); box-shadow: 0 0 24px 6px rgba(200,215,255,.35); }
-.di-top { position: absolute; left: 50%; top: 26%; transform: translateX(-50%); text-align: center; color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.6); transition: opacity .8s, transform .8s; }
-.di-clock { font: 800 clamp(48px, 8vw, 110px)/1 var(--font-mono); letter-spacing: .04em; }
-.di-phase { margin-top: 8px; font-size: clamp(14px, 1.6vw, 20px); letter-spacing: .5em; color: rgba(255,255,255,.75); padding-left: .5em; }
-.di-cap { position: absolute; left: 50%; bottom: 16%; transform: translate(-50%, 12px); opacity: 0; text-align: center; color: #fff; transition: opacity .6s ease, transform .6s ease; text-shadow: 0 2px 14px rgba(0,0,0,.7); white-space: nowrap; }
-.di-cap.in { opacity: 1; transform: translate(-50%, 0); }
-.di-cap b { display: block; font-size: clamp(13px, 1.3vw, 16px); letter-spacing: .3em; color: var(--gold, #f2a93b); margin-bottom: 8px; }
-.di-cap span { font-size: clamp(20px, 2.6vw, 36px); font-weight: 800; }
-.di-final { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: #fff; opacity: 0; transform: scale(.96); transition: opacity 1s ease .2s, transform 1.4s ease .2s; pointer-events: none; text-align: center; }
-.di.final .di-final { opacity: 1; transform: none; }
-.di.final .di-top, .di.final .di-arc, .di.final .di-orb { opacity: 0; }
-.di.final .di-img { filter: brightness(.22) saturate(.6) !important; transition: filter 1.2s; }
-.di-final small { font-size: 12px; letter-spacing: .35em; color: rgba(255,255,255,.6); }
-.di-final b { font-size: clamp(44px, 7vw, 96px); font-weight: 900; letter-spacing: .06em; background: linear-gradient(180deg, #fff, #ffe0a0 60%, #f2a93b); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 30px rgba(242,169,59,.35)); }
-.di-nums { font-size: clamp(16px, 1.8vw, 22px); color: rgba(255,255,255,.85); }
-.di-nums em { font-style: normal; font-family: var(--font-mono); font-weight: 800; color: #35d0c0; font-size: 1.25em; }
-.di-final i { font-style: normal; font-size: 14px; letter-spacing: .2em; color: rgba(255,255,255,.55); margin-top: 6px; }
+/* ---------- 인트로 2: 도시가 지어지는 미니어처 ---------- */
+.hse-intro.city-mode .hse-intro-inner, .hse-intro.city-mode .hse-intro-slides, .hse-intro.city-mode .hse-intro-capbox, .hse-intro.city-mode .hse-intro-flash { display: none; }
+.hse-intro.city-mode { background: #0b1520; }
+.ci { position: absolute; inset: 0; overflow: hidden; opacity: 0; transition: opacity 1s ease; }
+.ci.go { opacity: 1; }
+.ci canvas { position: absolute; inset: 0; display: block; }
+.ci-top { position: absolute; left: 50%; top: 7%; transform: translateX(-50%); text-align: center; color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.55); transition: opacity .8s; }
+.ci-year { font: 800 clamp(44px, 7vw, 96px)/1 var(--font-mono); letter-spacing: .06em; }
+.ci-sub { margin-top: 6px; font-size: clamp(13px, 1.4vw, 18px); letter-spacing: .45em; padding-left: .45em; color: rgba(255,255,255,.75); }
+.ci-cap { position: absolute; left: 50%; bottom: 9%; transform: translate(-50%, 12px); opacity: 0; text-align: center; color: #fff; transition: opacity .6s, transform .6s; text-shadow: 0 2px 14px rgba(0,0,0,.7); white-space: nowrap; }
+.ci-cap.in { opacity: 1; transform: translate(-50%, 0); }
+.ci-cap b { display: block; font-size: clamp(12px, 1.2vw, 15px); letter-spacing: .3em; color: #f2a93b; margin-bottom: 8px; }
+.ci-cap span { font-size: clamp(20px, 2.6vw, 34px); font-weight: 800; }
+.ci-final { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: #fff; opacity: 0; transform: scale(.96); transition: opacity 1s ease .2s, transform 1.4s ease .2s; pointer-events: none; text-align: center; background: radial-gradient(ellipse at 50% 50%, rgba(5,8,16,.72), rgba(5,8,16,.35) 60%, transparent 80%); }
+.ci.final .ci-final { opacity: 1; transform: none; }
+.ci.final .ci-top, .ci.final .ci-cap { opacity: 0; }
+.ci-final small { font-size: 12px; letter-spacing: .35em; color: rgba(255,255,255,.6); }
+.ci-final b { font-size: clamp(44px, 7vw, 96px); font-weight: 900; letter-spacing: .06em; background: linear-gradient(180deg, #fff, #ffe0a0 60%, #f2a93b); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 30px rgba(242,169,59,.35)); }
+.ci-nums { font-size: clamp(16px, 1.8vw, 22px); color: rgba(255,255,255,.88); }
+.ci-nums em { font-style: normal; font-family: var(--font-mono); font-weight: 800; color: #35d0c0; font-size: 1.25em; }
+.ci-final i { font-style: normal; font-size: 14px; letter-spacing: .2em; color: rgba(255,255,255,.55); margin-top: 6px; }
 body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !important; }
