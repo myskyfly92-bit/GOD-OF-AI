@@ -4117,22 +4117,33 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .wz-zoombox { position: relative; max-width: none; }
 .wz-co-btn { width: auto; padding: 0 12px; display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-body); font-size: 13px; flex: none; }
 
-/* 오늘 작업 현황: '작업구역 탭에서 보기' 버튼 — 오른쪽 위로 올려 아래 줄과 겹치지 않게, 반짝반짝 */
+/* 오늘 작업 현황: '작업구역 탭에서 보기' 버튼 — 오른쪽 위, 위엄 있게 은은히 빛남
+   어두운 바탕 + 테두리를 따라 천천히 도는 청록·금빛 + 느린 숨쉬기 광채 + 가끔 지나가는 옅은 광택 */
+@property --twa { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
 .today-work-panel { position: relative; }
 .today-work-panel .tw-link, .fit-fx .today-work-panel .tw-link {
   position: absolute; top: 12px; right: 14px; margin: 0; z-index: 2; overflow: hidden; isolation: isolate;
-  color: #0a0e13; font-weight: 800; border: 1px solid rgba(53,208,192,0.9);
-  background: linear-gradient(135deg, #35d0c0, #7ee8dc 45%, #35d0c0);
-  animation: twGlow 2s ease-in-out infinite;
+  padding: 7px 18px; border-radius: 999px; border: 1.5px solid transparent;
+  font-weight: 700; font-size: 12.5px; letter-spacing: 0.03em; color: #e6fbf8;
+  background:
+    linear-gradient(180deg, #13202a, #0b1219) padding-box,
+    conic-gradient(from var(--twa), rgba(53,208,192,0.18), #35d0c0 10%, #f3d48b 16%, #35d0c0 22%, rgba(53,208,192,0.18) 34%,
+      rgba(53,208,192,0.18) 60%, #35d0c0 72%, rgba(243,212,139,0.9) 78%, rgba(53,208,192,0.18) 90%) border-box;
+  text-shadow: 0 0 10px rgba(53,208,192,0.35);
+  animation: twOrbit 7s linear infinite, twBreath 5s ease-in-out infinite;
 }
 .today-work-panel .tw-link::after {
-  content: ""; position: absolute; top: -20%; bottom: -20%; left: -60%; width: 40%; z-index: -1;
-  background: linear-gradient(100deg, transparent, rgba(255,255,255,0.85), transparent); transform: skewX(-20deg);
-  animation: twShine 2.6s ease-in-out infinite;
+  content: ""; position: absolute; top: 0; bottom: 0; left: -70%; width: 45%; z-index: -1; pointer-events: none;
+  background: linear-gradient(100deg, transparent, rgba(243,212,139,0.18) 45%, rgba(255,255,255,0.22) 50%, rgba(53,208,192,0.14) 55%, transparent);
+  transform: skewX(-18deg); animation: twSheen 7s cubic-bezier(.4,0,.2,1) infinite;
 }
-.today-work-panel .tw-link:hover { color: #0a0e13; filter: brightness(1.1); border-color: #fff; }
-@keyframes twGlow { 0%, 100% { box-shadow: 0 0 0 0 rgba(53,208,192,0.55), 0 0 8px rgba(53,208,192,0.35); } 50% { box-shadow: 0 0 0 5px rgba(53,208,192,0), 0 0 16px rgba(53,208,192,0.75); } }
-@keyframes twShine { 0% { left: -60%; } 55%, 100% { left: 130%; } }
+.today-work-panel .tw-link:hover { color: #fff; text-shadow: 0 0 14px rgba(53,208,192,0.7); animation-duration: 3s, 5s; }
+@keyframes twOrbit { to { --twa: 360deg; } }
+@keyframes twBreath {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(53,208,192,0.06), 0 0 10px rgba(53,208,192,0.12), inset 0 0 8px rgba(53,208,192,0.05); }
+  50% { box-shadow: 0 0 0 1px rgba(53,208,192,0.14), 0 0 22px rgba(53,208,192,0.32), 0 0 34px rgba(243,212,139,0.10), inset 0 0 12px rgba(53,208,192,0.12); }
+}
+@keyframes twSheen { 0%, 62% { left: -70%; } 85%, 100% { left: 130%; } }
 @media (prefers-reduced-motion: reduce) { .today-work-panel .tw-link, .today-work-panel .tw-link::after { animation: none; } }
 @media (max-width: 560px) { .today-work-panel .tw-link { position: static; margin-top: 10px; } }
 
