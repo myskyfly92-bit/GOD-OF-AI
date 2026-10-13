@@ -2121,8 +2121,6 @@ function renderWorkZones(data) {
             <img src="" alt="구역 사진" class="workzone-bg" id="wzBgImg"
                  onerror="this.style.display='none'; document.getElementById('workzoneMapFallback').style.display='flex';">
             <div id="workzoneMapFallback" class="workzone-fallback" style="display:none;"></div>
-            <svg class="wz-tint" id="wzTint" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
-            <div class="wz-zone-title" id="wzZoneTitle"></div>
             <div class="wz-pins" id="wzPins"></div>
           </div>
           <div class="wz-map-day" id="wzMapDay"></div>
@@ -2172,23 +2170,14 @@ function wzShowZone(idx) {
   }
 
   wzSetupZoomPan();
-  wzDrawTint(zone);
   if (img) img.onload = () => { wzFitViewport(); wzCoLayout(); };
   wzShowSchedule(zone);
 }
 
-/* ---------- 상황도 보기: 구역 붉은 음영 + 작업 위치마다 확대 사진 상자(콜아웃)와 연결선 ----------
-   - 구역 경계: work-zones.json 의 zone.boundary = [[x%, y%], …] 가 있으면 그 모양, 없으면 사진 테두리 안쪽
+/* ---------- 상황도 보기: 작업 위치마다 확대 사진 상자(콜아웃)와 연결선 ----------
    - 좌표(위경도)는 보여 주지 않는다 (현장 인원 위치가 밖으로 드러나지 않게) → 상자에는 작업 정보만 */
 let wzCoOn = (() => { try { return localStorage.getItem("wzCo") !== "0"; } catch (e) { return true; } })();
 let wzCoGroups = [];
-function wzDrawTint(zone) {
-  const svg = document.getElementById("wzTint"), title = document.getElementById("wzZoneTitle");
-  if (!svg) return;
-  const pts = Array.isArray(zone.boundary) && zone.boundary.length >= 3 ? zone.boundary : [[1.2, 1.5], [98.8, 1.5], [98.8, 98.5], [1.2, 98.5]];
-  svg.innerHTML = `<polygon points="${pts.map((p) => `${Number(p[0])},${Number(p[1])}`).join(" ")}" />`;
-  if (title) title.textContent = zone.name || "";
-}
 function wzFitViewport() {
   // 사진 비율에 맞춰 지도 칸 높이를 맞춘다 (사진 아래 빈 공간 없애기). 작업 입력창이 열려 있으면 원래 높이
   const vp = document.getElementById("wzViewport"), img = document.getElementById("wzBgImg");
