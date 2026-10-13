@@ -4143,3 +4143,29 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .wz-viewport::-webkit-scrollbar-thumb { background: rgba(53, 208, 192, 0.5); border-radius: 999px; border: 2px solid rgba(10, 14, 19, 0.85); }
 .wz-viewport::-webkit-scrollbar-thumb:hover { background: rgba(53, 208, 192, 0.85); }
 .wz-viewport::-webkit-scrollbar-corner { background: rgba(10, 14, 19, 0.85); }
+
+/* 작업구역 첫 화면 크게 (옆 달력·환율 칸 높이에 맞춰) */
+.wz-home { min-height: 660px; gap: 26px; }
+.wzh-map { display: flex; align-items: center; justify-content: center; padding: 16px; }
+.wzh-map svg { max-height: 640px; height: 100%; }
+.wzh-cap { font-size: 13px; }
+.wzh-city { font-size: 13px; }
+.wzh-site { font-size: 15px; }
+.wzh-lbl text { font-size: 12px; }
+.wzh-side { gap: 16px; }
+.wzh-h b { font-size: 24px; letter-spacing: -0.01em; }
+.wzh-h span { font-size: 14.5px; }
+.wzh-cards { flex: 1; gap: 14px; }
+.wzh-card { flex: 1; grid-template-columns: 230px 1fr auto; gap: 20px; padding: 14px; border-radius: 14px; }
+.wzh-thumb { height: 100%; min-height: 128px; border-radius: 10px; }
+.wzh-no { width: 30px; height: 30px; font-size: 15px; left: 8px; top: 8px; }
+.wzh-body { gap: 6px; }
+.wzh-body b { font-size: 23px; }
+.wzh-body small { font-size: 14px; }
+.wzh-stat { font-size: 15.5px; margin-top: 4px; }
+.wzh-stat em { font-size: 18px; }
+.wzh-go { font-size: 40px; }
+.wzh-note { font-size: 13.5px; }
+@media (max-width: 1200px) { .wzh-card { grid-template-columns: 170px 1fr auto; } .wzh-body b { font-size: 20px; } }
+@media (max-width: 900px) { .wz-home { min-height: 0; } .wzh-thumb { min-height: 96px; } }
+@media (max-width: 560px) { .wzh-card { grid-template-columns: 110px 1fr auto; } .wzh-body b { font-size: 17px; } .wzh-stat { font-size: 13px; } }

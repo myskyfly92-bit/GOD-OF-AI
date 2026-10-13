@@ -2223,7 +2223,7 @@ async function wzDrawIraq() {
     `<circle class="wzh-bgd" cx="${gx}" cy="${gy}" r="3"/><text class="wzh-city" x="${gx - 6}" y="${gy - 8}" text-anchor="end">바그다드</text>` +
     `<circle class="wzh-ping" cx="${bx}" cy="${by}" r="6"/><circle class="wzh-pt" cx="${bx}" cy="${by}" r="5"/>` +
     `<path class="wzh-lead" d="M${bx + 6} ${by + 2} L${bx + 40} ${by + 26} L${W - 6} ${by + 26}"/>` +
-    `<text class="wzh-site" x="${bx + 44}" y="${by + 20}">BNCP 비스마야 현장</text>`;
+    `<text class="wzh-site" x="${W - 6}" y="${by + 20}" text-anchor="end">BNCP 현장</text>`;
 }
 
 function wzShowZone(idx, init) {
