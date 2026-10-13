@@ -6,6 +6,8 @@
   const TZ = "Asia/Baghdad", LAT = 33.193, LON = 44.618;
   const $ = (s, r) => (r || document).querySelector(s);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  // 작업일정: 기간 작업(시작~끝, 금 제외)·날짜 작업·매주 반복 작업이 그 날에 해당하는지
+  const onDate = (x, iso, dn) => x.dateEnd ? (iso >= x.date && iso <= x.dateEnd && !(x.noFri && new Date(iso + "T00:00:00Z").getUTCDay() === 5)) : x.date ? x.date === iso : x.day === dn;
   const fmt = (n) => Number(n || 0).toLocaleString("en-US");
   const today = () => new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).format(new Date());
   const ls = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch (e) {} } };
@@ -127,7 +129,7 @@
     loadWork().then((items) => {
       if (!items) return fail("workCard", "작업일정을 불러오지 못했습니다.");
       const t = today(), dow = "월화수목금토일"[(new Date(t + "T00:00:00Z").getUTCDay() + 6) % 7];
-      const list = items.filter((x) => x.date ? x.date === t : x.day === dow).sort((a, b) => (b.risks.length > 0) - (a.risks.length > 0));
+      const list = items.filter((x) => onDate(x, t, dow)).sort((a, b) => (b.risks.length > 0) - (a.risks.length > 0));
       const crew = list.reduce((s, x) => s + x.crew, 0), risky = list.filter((x) => x.risks.length).length;
       fill("workCard", `<div class="kpis"><div class="kpi cy"><span>오늘 작업</span><b class="num">${list.length}</b><small>건</small></div>
         <div class="kpi"><span>투입 인원</span><b class="num">${fmt(crew)}</b><small>명</small></div>
@@ -202,10 +204,12 @@
         risk: col("위험작업", "위험"), person: col("담당"), crew: col("작업인원", "인원"), wtime: col("작업시간") };
       const g = (r, i) => (i >= 0 && r[i] != null ? String(r[i]).trim() : "");
       const DAYS = "월화수목금토일";
-      return rows.slice(1).map((r) => { const date = pDate(g(r, c.date)); let day = g(r, c.day).replace("요일", "");
+      return rows.slice(1).map((r) => { const raw = g(r, c.date), rg = raw.match(/^(.+?)\s*[~∼～]\s*(.+?)(\s*\(?\s*금\s*제외\s*\)?)?$/);
+        const r1 = rg && pDate(rg[1]), r2 = rg && pDate(rg[2]), isR = !!(r1 && r2 && r2 >= r1);
+        const date = isR ? r1 : pDate(raw); let day = g(r, c.day).replace("요일", "");
         if (date) day = DAYS[(new Date(date + "T00:00:00Z").getUTCDay() + 6) % 7];
         const rt = g(r, c.risk);
-        return { date, day, zone: g(r, c.zone), part: g(r, c.part), work: g(r, c.work), loc: g(r, c.loc), risks: rt ? rt.split(/[,/·\s]+/).filter(Boolean) : [],
+        return { date, dateEnd: isR ? r2 : "", noFri: isR && !!rg[3], day, zone: g(r, c.zone), part: g(r, c.part), work: g(r, c.work), loc: g(r, c.loc), risks: rt ? rt.split(/[,/·\s]+/).filter(Boolean) : [],
           person: g(r, c.person), crew: parseInt(g(r, c.crew).replace(/[^\d]/g, ""), 10) || 0, wtime: g(r, c.wtime) }; })
         .filter((x) => x.work && (x.date || DAYS.includes(x.day)));
     }).catch(() => null);
@@ -236,7 +240,7 @@
       const t = today(), base = new Date(t + "T00:00:00Z"), mon = new Date(base - ((base.getUTCDay() + 6) % 7) * 86400000);
       const DAYS = "월화수목금토일"; let html = "";
       for (let i = 0; i < 7; i++) { const dt = new Date(+mon + i * 86400000).toISOString().slice(0, 10);
-        const list = items.filter((x) => x.date ? x.date === dt : x.day === DAYS[i]);
+        const list = items.filter((x) => onDate(x, dt, DAYS[i]));
         html += `<div style="margin:${i ? 12 : 0}px 0 2px;font-size:12.5px;font-weight:700;color:${dt === t ? "var(--cyan)" : "var(--muted)"}">${DAYS[i]} ${md(dt)}${dt === t ? " · 오늘" : ""} <span style="color:var(--dim);font-weight:500">${list.length ? list.length + "건" : "작업 없음"}</span></div>`;
         if (list.length) html += `<ul class="list">${list.map(workLi).join("")}</ul>`; }
       fill("weekCard", html + `<p class="src">공사팀·관리재경팀 작업일정 시트 · 지도는 PC 화면 '작업구역'에서</p>`);

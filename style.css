@@ -1962,6 +1962,16 @@ html body {
 .wz-pick-box .wz-pick-cancel { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
 .wz-pick-box { width: 320px; max-height: calc(100% - 20px); overflow-y: auto; }
 /* 작업 추가 · 날짜 + 작업시간 한 줄 */
+.wz-zoombox.wz-picking .wz-pin { pointer-events: none; opacity: .55; } /* 작업 추가 중엔 핀을 눌러도 지도 클릭으로 */
+.wz-period, .wz-when.wz-when2 { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto minmax(0, 1fr); gap: 4px; align-items: center; color: var(--text-muted); }
+.wz-period input, .wz-when2 select { min-width: 0; width: 100%; padding: 5px 4px; }
+.wz-plab { font-size: 11px; color: var(--text-dim); }
+.wz-period-opt { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-left: 38px; font-size: 11.5px; color: var(--text-muted); }
+.wz-pick-box .wz-period-opt button { background: transparent; color: var(--text); border: 1px solid var(--border); padding: 2px 8px; font-weight: 600; font-size: 11.5px; }
+.wz-pick-box .wz-period-opt button:hover { border-color: var(--amber); color: var(--amber); }
+.wz-period-opt label { display: inline-flex; align-items: center; gap: 3px; margin-left: 2px; }
+#wzfDays { margin-left: auto; color: var(--text-dim); } #wzfDays.on { color: var(--amber); font-weight: 700; }
+.wz-repeat.wz-range { background: rgba(242,169,59,.16); color: var(--amber); }
 .wz-when { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) auto minmax(0, 1fr); gap: 4px; align-items: center; color: var(--text-muted); }
 .wz-when input, .wz-when select { min-width: 0; width: 100%; padding: 5px 4px; }
 .wz-time { font-size: 11px; color: var(--text-muted); font-weight: 400; white-space: nowrap; }
