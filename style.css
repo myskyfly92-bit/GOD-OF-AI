@@ -3899,7 +3899,7 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .desk-step > b:first-child { color: #3fd27e; margin-right: 6px; } .desk-step small { color: var(--text-dim); }
 .desk-act { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; }
 .desk-act button { font: inherit; font-size: 13px; font-weight: 700; border-radius: 9px; padding: 8px 14px; cursor: pointer; border: 1px solid var(--border); background: transparent; color: var(--text); }
-.desk-act .desk-dl { background: #00a14d; border-color: #00a14d; color: #fff; }
+.desk-act .desk-dl, .desk-act .desk-ok { background: #00a14d; border-color: #00a14d; color: #fff; }
 .desk-toast { position: fixed; left: 50%; bottom: 80px; transform: translateX(-50%); z-index: 10000; background: rgba(12,18,26,.96); border: 1px solid #00a14d; color: var(--text); border-radius: 10px; padding: 10px 16px; font-size: 13.5px; }
 
 .appmode-bar { position: sticky; top: 0; z-index: 9500; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 8px 16px; background: #10301f; border-bottom: 1px solid #00a14d; color: #e8f5ec; font-size: 13px; }
