@@ -8454,46 +8454,58 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
 })();
 
 
-/* 📌 바탕화면 아이콘 만들기 (버튼 하나로)
-   - 크롬·엣지: 브라우저의 '앱 설치' 창을 바로 띄움 → 바탕화면·시작 메뉴에 무재해 로고 아이콘 생성, 주소창 없는 창으로 열림
-   - 설치 창을 띄울 수 없는 경우: 바로가기 파일(.url)을 내려받게 하고, 브라우저별 방법을 안내 */
-(function deskInstall() {
+/* 📌 바탕화면 아이콘 만들기 (버튼 하나로) — 앱 설치가 아니라 평소처럼 브라우저 탭으로 열리는 '바로가기'
+   - 버튼: 바로가기 파일(.url, 무재해 아이콘)을 바로 내려받고, 바탕화면으로 옮기는 법을 짧게 안내
+   - 처음 온 PC에는 한 번만 작은 말풍선으로 권함 (바로가기로 들어온 PC나 '괜찮아요'를 누른 PC는 다시 안 띄움) */
+(function deskShortcut() {
   const btn = document.getElementById("deskInstall");
   if (!btn) return;
-  const installed = () => window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
-  if (installed() || /Android|iPhone|iPad/i.test(navigator.userAgent)) { btn.hidden = true; return; }
-  let dp = null;
-  window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); dp = e; btn.classList.add("ready"); });
-  window.addEventListener("appinstalled", () => { btn.hidden = true; deskMsg("✓ 바탕화면에 상황실 아이콘을 만들었어요. 다음부터는 바탕화면의 무재해 아이콘으로 바로 여세요."); });
-  function deskMsg(text) {
-    const d = document.createElement("div"); d.className = "desk-toast"; d.textContent = text;
-    document.body.appendChild(d); setTimeout(() => d.remove(), 6000);
-  }
-  // 바로가기 파일: 사이트에 올려 둔 진짜 .url 파일을 받게 한다 (브라우저에서 만든 파일은 확장자가 빠지는 경우가 있어서)
-  function urlFile() {
+  const ls = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+  if (/[?&]from=desk\b/.test(location.search)) ls.set("deskDone", "1");          // 바탕화면 바로가기로 들어옴
+  if (/Android|iPhone|iPad/i.test(navigator.userAgent)) { btn.hidden = true; return; }
+  if (ls.get("deskDone")) btn.classList.add("done");
+  function download() {
     const a = document.createElement("a");
     a.href = "assets/icon/Bismayah-HSE.url";
     a.download = "Bismayah-HSE.url";
     document.body.appendChild(a); a.click(); setTimeout(() => a.remove(), 1000);
   }
-  btn.addEventListener("click", async () => {
-    if (dp) {
-      dp.prompt();
-      const r = await dp.userChoice.catch(() => ({}));
-      dp = null; btn.classList.remove("ready");
-      if (r && r.outcome === "accepted") deskMsg("✓ 설치했어요. 바탕화면에 무재해 아이콘이 생깁니다.");
-      return;
-    }
+  function guide() {
+    document.querySelectorAll(".desk-bg").forEach((x) => x.remove());
     const edge = /Edg\//.test(navigator.userAgent);
     const bg = document.createElement("div"); bg.className = "desk-bg";
-    bg.innerHTML = `<div class="desk-box" role="dialog" aria-label="바탕화면 아이콘 만들기">
-      <div class="desk-h"><img src="assets/icon/icon-192.png" alt=""><div><b>바탕화면에 상황실 아이콘 만들기</b><span>무재해 로고 아이콘 · 주소창 없는 창으로 바로 열림</span></div></div>
-      <div class="desk-step"><b>방법 1</b> ${edge ? "엣지 오른쪽 위 <b>⋯ → 앱 → 이 사이트를 앱으로 설치</b>" : "크롬 오른쪽 위 <b>⋮ → 저장 및 공유 → 바로가기 만들기…</b> → <b>창으로 열기</b> 체크 → 만들기"}</div>
-      <div class="desk-step"><b>방법 2</b> 아래 버튼으로 바로가기 파일을 받은 뒤 <b>바탕화면으로 끌어다</b> 놓기<br><small>이름은 바탕화면에서 F2로 "안전보건환경 상황실"처럼 바꿀 수 있어요 · 아이콘이 브라우저 모양이면: 오른쪽 클릭 → 속성 → 아이콘 변경</small></div>
-      <div class="desk-act"><button type="button" class="desk-dl">⬇ 바로가기 파일 받기</button><button type="button" class="desk-x">닫기</button></div>
+    bg.innerHTML = `<div class="desk-box" role="dialog" aria-label="바탕화면 바로가기 만들기">
+      <div class="desk-h"><img src="assets/icon/icon-192.png" alt=""><div><b>바탕화면 바로가기를 받았어요</b><span>무재해 아이콘을 누르면 평소처럼 인터넷 창으로 상황실이 열립니다</span></div></div>
+      <div class="desk-step"><b>①</b> 화면 ${edge ? "위쪽" : "오른쪽 위"} <b>다운로드</b> 목록에서 <b>Bismayah-HSE</b> 파일을 <b>바탕화면으로 끌어다 놓기</b></div>
+      <div class="desk-step"><b>②</b> (선택) 바탕화면 아이콘 <b>오른쪽 클릭 → 이름 바꾸기</b> → "안전보건환경 상황실"</div>
+      <div class="desk-step desk-alt">다운로드가 막혀 있으면: ${edge ? "엣지 <b>⋯ → 기타 도구 → 바로 가기 만들기</b>" : "크롬 <b>⋮ → 저장 및 공유 → 바로가기 만들기…</b>"} → <b>'창으로 열기'는 체크하지 말고</b> 만들기</div>
+      <div class="desk-act"><button type="button" class="desk-dl">⬇ 다시 받기</button><button type="button" class="desk-x">닫기</button></div>
     </div>`;
     bg.addEventListener("click", (e) => { if (e.target === bg || e.target.closest(".desk-x")) bg.remove(); });
-    bg.querySelector(".desk-dl").onclick = () => { urlFile(); };
+    bg.querySelector(".desk-dl").onclick = download;
     document.body.appendChild(bg);
-  });
+  }
+  btn.addEventListener("click", () => { ls.set("deskDone", "1"); btn.classList.add("done"); hideTip(); download(); guide(); });
+
+  // 처음 온 PC에 한 번만: 버튼 아래 작은 말풍선
+  let tip = null;
+  function hideTip() { if (tip) { tip.remove(); tip = null; } }
+  if (!ls.get("deskDone") && !ls.get("deskTipNo")) {
+    let tries = 0;
+    const showTip = () => {
+      if (ls.get("deskDone")) return;
+      // 다른 안내 창이 떠 있거나 버튼이 안 보이는 순간이면 조금 뒤에 다시 (최대 4번)
+      if (document.querySelector(".desk-bg, .vc-win-bg, .guide-pop, .guide-overlay") || btn.offsetParent === null || btn.getBoundingClientRect().width === 0) { if (++tries < 4) setTimeout(showTip, 12000); return; }
+      tip = document.createElement("div"); tip.className = "desk-tip";
+      tip.innerHTML = `<b>📌 바탕화면에 상황실 아이콘을 만들어 두세요</b><span>무재해 아이콘 한 번이면 매일 바로 열려요</span><div><button type="button" class="ok">만들기</button><button type="button" class="no">괜찮아요</button></div>`;
+      document.body.appendChild(tip);
+      const r = btn.getBoundingClientRect();
+      tip.style.top = (r.bottom + window.scrollY + 10) + "px";
+      tip.style.left = Math.max(12, Math.min(window.innerWidth - 300, r.left + r.width / 2 - 150)) + "px";
+      tip.querySelector(".ok").onclick = () => btn.click();
+      tip.querySelector(".no").onclick = () => { ls.set("deskTipNo", "1"); hideTip(); };
+      setTimeout(hideTip, 20000);   // 20초 지나면 조용히 사라짐 (다음 접속 때 다시 한 번)
+    };
+    setTimeout(showTip, 15000);
+  }
 })();

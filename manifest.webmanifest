@@ -3,7 +3,7 @@
   "short_name": "HSE 상황실",
   "start_url": "./?pc=1",
   "scope": "./",
-  "display": "standalone",
+  "display": "browser",
   "background_color": "#0b1118",
   "theme_color": "#00a14d",
   "icons": [
