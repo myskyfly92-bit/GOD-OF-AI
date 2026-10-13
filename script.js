@@ -5180,7 +5180,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const unhide = () => document.documentElement.classList.remove("intro-pending");
     let seen = false;
     try { seen = sessionStorage.getItem("hseIntroSeen") === "1"; } catch (e) {}
-    const forced = ["1", "day", "city", "classic"].includes(params.get("intro") || "");
+    const forced = ["1", "day", "city", "film", "classic"].includes(params.get("intro") || "");
     if ((seen && !forced) || reduce) { unhide(); return; }
     // '봤음' 표시는 인트로가 끝난 뒤에 남긴다 (준비 중에 새로고침하면 다시 처음부터 보이게)
     const el = document.createElement("div");
@@ -5220,7 +5220,8 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     // 인트로 고르기: ?intro=city → '도시가 지어지는 미니어처', ?intro=classic → 기존 인트로, 그 밖에는 날짜에 따라 번갈아
     const im = params.get("intro");
     const doy = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 864e5);
-    const mode = (im === "city" || im === "day") ? "city" : im === "classic" ? "classic" : (doy % 2 === 0 ? "city" : "classic");
+    const mode = im === "film" ? "film" : (im === "city" || im === "day") ? "city" : im === "classic" ? "classic" : (doy % 2 === 0 ? "film" : "classic");
+    if (mode === "film" && typeof hseFilmIntro === "function") { hseFilmIntro(el, done, timers); return; }
     if (mode === "city" && typeof hseCityIntro === "function") { hseCityIntro(el, done, timers); return; }
     // 로고 장면: '한화'를 용접으로 새긴 뒤 → 글자·제목이 나타나고 → 2.3초 뒤 끝
     const showLogo = () => {
@@ -9499,5 +9500,59 @@ function hseCityIntro(el, done, timers) {
   requestAnimationFrame(() => box.classList.add("go"));
   raf = requestAnimationFrame(frame);
   const mo = new MutationObserver(() => { if (el.classList.contains("out")) { stopped = true; cancelAnimationFrame(raf); mo.disconnect(); window.removeEventListener("resize", size); } });
+  mo.observe(el, { attributes: true, attributeFilter: ["class"] });
+}
+
+
+/* ==========================================================
+   인트로 3: 영화 오프닝식 타이포 — 검은 화면, 위아래 영화 띠, 필름 입자, 큰 글자가 박자에 맞춰 바뀐다
+   2012. 사막. → 5,249일. → 10만 가구. → 그리고, → 오늘도 무재해. (약 13초 · 생략 가능)
+   ========================================================== */
+function hseFilmIntro(el, done, timers) {
+  el.classList.add("film-mode");
+  const domNum = (id) => { const n = document.getElementById(id); const v = n ? String(n.textContent).replace(/[^\d]/g, "") : ""; return v && v !== "0" ? Number(v) : 0; };
+  const start = new Date("2012-05-30T00:00:00+03:00");
+  const days = Math.floor((Date.now() - start) / 864e5);   // 종합현황 '착공 후 경과일수'와 같은 계산
+  let free = 0;
+  // 무재해 일수: 종합현황 숫자는 올라가는 중일 수 있어서 원본(data.json)으로 직접 계산
+  fetch("data.json").then((r) => r.json()).then((d) => {
+    const s0 = d && d.site && d.site.lastIncidentDate; if (!s0) return;
+    free = Math.max(0, Math.floor((Date.now() - new Date(s0 + "T00:00:00")) / 864e5));
+    const sm = box.querySelector(".fi-last small"); if (sm && free) sm.innerHTML = `<span class="fi-free">0</span>일 연속 · 모두 무사히`;
+  }).catch(() => {});
+  const box = document.createElement("div");
+  box.className = "fi";
+  box.innerHTML = `
+    <div class="fi-leak"></div><div class="fi-grain"></div>
+    <div class="fi-bar top"></div><div class="fi-bar bot"></div>
+    <div class="fi-loc">BISMAYAH NEW CITY · BAGHDAD, IRAQ</div>
+    <div class="fi-sc" data-i="0"><b>2012.</b><em>사막.</em></div>
+    <div class="fi-sc" data-i="1"><b class="fi-count">0</b><em>일.</em><small>하루도 멈추지 않은 현장</small></div>
+    <div class="fi-sc" data-i="2"><b>10만</b><em>가구.</em><small>사막 위에 세운 하나의 도시</small></div>
+    <div class="fi-sc fi-and" data-i="3"><em>그리고,</em></div>
+    <div class="fi-sc fi-last" data-i="4"><b>오늘도 무재해.</b><small>모두 무사히 집으로</small><i>비스마야 안전보건환경 상황실</i></div>
+    <div class="fi-sweep"></div><div class="fi-prog"><i></i></div>`;
+  el.appendChild(box);
+  const sc = [...box.querySelectorAll(".fi-sc")], sweep = box.querySelector(".fi-sweep");
+  const at = (ms, fn) => timers.push(setTimeout(fn, ms));
+  const show = (i) => {
+    sc.forEach((x, j) => { if (j === i) { x.classList.remove("off"); x.classList.add("on"); } else if (x.classList.contains("on")) { x.classList.remove("on"); x.classList.add("off"); } });
+    sweep.classList.remove("go"); void sweep.offsetWidth; sweep.classList.add("go");
+  };
+  const count = (elx, to, ms) => {
+    const t0 = performance.now();
+    const step = (now) => { const p = Math.min(1, (now - t0) / ms), e = 1 - Math.pow(1 - p, 4); elx.textContent = Math.round(to * e).toLocaleString("en-US"); if (p < 1 && !box.__stop) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  };
+  const T = [700, 2900, 5500, 7900, 9200];   // 장면 시작 시각(ms)
+  at(80, () => box.classList.add("go"));
+  at(T[0], () => show(0));
+  at(T[1], () => { show(1); count(box.querySelector(".fi-count"), days, 1500); });
+  at(T[2], () => show(2));
+  at(T[3], () => show(3));
+  at(T[4], () => { show(4); box.classList.add("gold"); const f = box.querySelector(".fi-free"); if (f) count(f, free, 1200); });
+  at(12400, () => box.classList.add("open"));        // 위아래 띠가 열리며
+  at(13300, () => { box.__stop = true; done(); });
+  const mo = new MutationObserver(() => { if (el.classList.contains("out")) { box.__stop = true; mo.disconnect(); } });
   mo.observe(el, { attributes: true, attributeFilter: ["class"] });
 }

@@ -4305,3 +4305,52 @@ body:has(.hse-intro) .talk { display: none; }
 .ci-nums em { font-style: normal; font-family: var(--font-mono); font-weight: 800; color: #35d0c0; font-size: 1.25em; }
 .ci-final i { font-style: normal; font-size: 14px; letter-spacing: .2em; color: rgba(255,255,255,.55); margin-top: 6px; }
 body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !important; }
+
+/* ---------- 인트로 3: 영화 오프닝식 타이포 ---------- */
+.hse-intro.film-mode .hse-intro-inner, .hse-intro.film-mode .hse-intro-slides, .hse-intro.film-mode .hse-intro-capbox, .hse-intro.film-mode .hse-intro-flash { display: none; }
+.hse-intro.film-mode { background: #000; }
+.fi { position: absolute; inset: 0; overflow: hidden; background: radial-gradient(ellipse at 50% 55%, #0c1118 0%, #030405 70%); opacity: 0; transition: opacity 1.2s ease; }
+.fi.go { opacity: 1; }
+.fi-grain { position: absolute; inset: -50%; opacity: .09; pointer-events: none; animation: fiGrain .5s steps(4) infinite;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+@keyframes fiGrain { 0% { transform: translate(0,0); } 25% { transform: translate(-3%,2%); } 50% { transform: translate(2%,-3%); } 75% { transform: translate(-2%,-1%); } 100% { transform: translate(1%,3%); } }
+.fi-leak { position: absolute; inset: 0; pointer-events: none; mix-blend-mode: screen; opacity: .55;
+  background: radial-gradient(circle at 15% 30%, rgba(242,169,59,.22), transparent 40%), radial-gradient(circle at 85% 70%, rgba(53,208,192,.14), transparent 45%);
+  animation: fiLeak 9s ease-in-out infinite alternate; }
+@keyframes fiLeak { from { transform: translate(-4%, -2%) scale(1); } to { transform: translate(4%, 3%) scale(1.15); } }
+.fi.gold .fi-leak { background: radial-gradient(circle at 50% 50%, rgba(242,169,59,.28), transparent 55%); opacity: .8; }
+.fi-bar { position: absolute; left: 0; right: 0; height: 11vh; background: #000; z-index: 5; transition: transform 1s cubic-bezier(.7,0,.3,1); }
+.fi-bar.top { top: 0; transform: translateY(-100%); } .fi-bar.bot { bottom: 0; transform: translateY(100%); }
+.fi.go .fi-bar { transform: none; }
+.fi.open .fi-bar.top { transform: translateY(-100%); } .fi.open .fi-bar.bot { transform: translateY(100%); }
+.fi-loc { position: absolute; left: 50%; top: calc(11vh + 22px); transform: translateX(-50%); z-index: 6; font: 600 11px/1 var(--font-mono); letter-spacing: .5em; color: rgba(255,255,255,.45); opacity: 0; transition: opacity 1.2s ease .6s; white-space: nowrap; }
+.fi.go .fi-loc { opacity: 1; }
+.fi-sc { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #fff; text-align: center; opacity: 0; pointer-events: none; }
+.fi-sc > b, .fi-sc > em { display: inline-block; }
+.fi-sc { flex-wrap: wrap; flex-direction: row; align-content: center; column-gap: .35em; }
+.fi-sc small, .fi-sc i { flex-basis: 100%; }
+.fi-sc b { font: 900 clamp(64px, 12vw, 180px)/1 var(--font-body); letter-spacing: -.02em; }
+.fi-sc em { font: 300 clamp(64px, 12vw, 180px)/1 var(--font-body); font-style: normal; color: rgba(255,255,255,.55); letter-spacing: -.02em; }
+.fi-sc small { margin-top: 18px; font-size: clamp(14px, 1.6vw, 20px); letter-spacing: .35em; color: rgba(255,255,255,.6); }
+.fi-count { font-family: var(--font-mono) !important; font-variant-numeric: tabular-nums; }
+.fi-and em { font-size: clamp(40px, 6vw, 90px); color: rgba(255,255,255,.7); font-weight: 200; }
+.fi-last b { font-size: clamp(56px, 9vw, 140px); background: linear-gradient(180deg, #fff 10%, #ffe2a8 55%, #f2a93b); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 8px 40px rgba(242,169,59,.35)); }
+.fi-last small { color: rgba(255,255,255,.8); letter-spacing: .2em; }
+.fi-free { font-family: var(--font-mono); font-weight: 800; color: #35d0c0; font-size: 1.3em; letter-spacing: 0; }
+.fi-last i { flex-basis: 100%; margin-top: 10px; font-style: normal; font-size: 13px; letter-spacing: .4em; color: rgba(255,255,255,.45); }
+.fi-sc.on { animation: fiIn 1.1s cubic-bezier(.2,.7,.2,1) forwards; }
+.fi-sc.off { animation: fiOut .55s ease forwards; }
+.fi-sc.on em { animation: fiIn 1.1s cubic-bezier(.2,.7,.2,1) .35s both; }
+.fi-sc.on small, .fi-sc.on i { animation: fiUp 1s ease .55s both; }
+@keyframes fiIn { from { opacity: 0; filter: blur(14px); transform: scale(1.08); letter-spacing: .02em; } to { opacity: 1; filter: blur(0); transform: scale(1); } }
+@keyframes fiOut { from { opacity: 1; transform: scale(1); filter: blur(0); } to { opacity: 0; transform: scale(.97); filter: blur(8px); } }
+@keyframes fiUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.fi-sc.on.fi-last { animation: fiIn 1.6s cubic-bezier(.2,.7,.2,1) forwards; }
+.fi-sweep { position: absolute; left: 0; right: 0; top: 50%; height: 1px; z-index: 4; background: linear-gradient(90deg, transparent, rgba(255,255,255,.9), transparent); opacity: 0; }
+.fi-sweep.go { animation: fiSweep .7s ease-out; }
+@keyframes fiSweep { 0% { opacity: 0; transform: scaleX(0); } 30% { opacity: 1; } 100% { opacity: 0; transform: scaleX(1); } }
+.fi-prog { position: absolute; left: 0; right: 0; bottom: calc(11vh - 2px); height: 2px; z-index: 6; background: rgba(255,255,255,.06); }
+.fi-prog i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #35d0c0, #f2a93b); }
+.fi.go .fi-prog i { animation: fiProg 13s linear forwards; }
+@keyframes fiProg { to { width: 100%; } }
+.fi.open .fi-prog { opacity: 0; transition: opacity .4s; }
