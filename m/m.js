@@ -194,7 +194,7 @@
       m = v.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/); return m ? `${m[3]}-${m[1].padStart(2, "0")}-${m[2].padStart(2, "0")}` : null; };
     return WORK = getJ("work-zones.json").then(async (w) => {
       let rows = null;
-      if (w.appsScriptUrl) { try { const j = await gas("x=1"); if (j && j.ok) rows = j.rows; } catch (e) {} }
+      if (w.appsScriptUrl) { try { const j = await gas("action=wz2&op=read"); if (j && j.ok) rows = j.rows; } catch (e) {} }
       if (!rows && w.sheetCsvUrl) { const r = await fetch(w.sheetCsvUrl + (w.sheetCsvUrl.includes("?") ? "&" : "?") + "t=" + Date.now()); rows = parseCsv(await r.text()); }
       if (!rows || !rows.length) return [];
       const head = rows[0].map((h) => String(h).replace(/\s|\(.*?\)/g, ""));

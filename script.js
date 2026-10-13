@@ -1927,9 +1927,16 @@ async function wzFetchRows(data) {
   const script = (data.appsScriptUrl || "").trim();
   if (script) {
     try {
-      const res = await wzFetchT(script + (script.includes("?") ? "&" : "?") + "t=" + Date.now(), 20000);
-      const j = await res.json();
+      const t0 = performance.now();
+      const res = await wzFetchT(script + (script.includes("?") ? "&" : "?") + "action=wz2&op=read&t=" + Date.now(), 25000);
+      let j = await res.json();
+      if (j.ok && !Array.isArray(j.rows)) {   // 혹시 모르는 서버 응답이면 예전 방식 읽기로 한 번 더
+        j = await (await wzFetchT(script + (script.includes("?") ? "&" : "?") + "t=" + Date.now(), 25000)).json();
+        j.wz2 = false;
+      }
       if (!j.ok) throw new Error(j.error || "Apps Script 오류");
+      if (typeof wzConfig === "object" && wzConfig) wzConfig._wz2 = !!j.wz2;   // 빠른 저장(wz2) 설치 여부
+      wzDiag("read", performance.now() - t0, j.ms, "");
       return j.rows;
     } catch (err) {
       console.error("Apps Script 읽기 실패, 웹 게시 CSV로 대신 읽습니다:", err);
@@ -1948,6 +1955,17 @@ async function wzLoadSheet(data) {
   if (!(data.sheetCsvUrl || "").trim() && !(data.appsScriptUrl || "").trim()) { wzItems = null; return; }
   try {
     const rows = await wzFetchRows(data);
+    wzApplyRows(rows);
+  } catch (err) {
+    console.error("작업일정 시트 불러오기 실패:", err);
+    wzItems = null;
+    wzSheetError = err.message;
+  }
+  renderTodayWork();
+}
+// 시트 줄(머리글 포함) → 작업 목록 (읽기·저장 응답 모두 여기로)
+function wzApplyRows(rows) {
+  {
     if (!rows) { wzItems = null; return; }
     if (!rows.length) { wzItems = []; return; }
     const head = rows[0].map((h) => h.replace(/\s|\(.*?\)/g, ""));
@@ -1975,12 +1993,7 @@ async function wzLoadSheet(data) {
                crew: parseInt(get(r, c.crew).replace(/[^\d]/g, ""), 10) || 0, equip: get(r, c.equip), wtime: get(r, c.wtime) };
     }).filter((it) => it.work && (it.date || WZ_DAY_ORDER.includes(it.day)));
     wzSheetError = "";
-  } catch (err) {
-    console.error("작업일정 시트 불러오기 실패:", err);
-    wzItems = null;
-    wzSheetError = err.message;
   }
-  renderTodayWork();
 }
 
 /* ---------------- 종합현황: 오늘 작업 현황 ---------------- */
@@ -2213,15 +2226,15 @@ function wzShowSchedule(zone) {
     const iso = dates[i];
     const list = weekItems.filter((it) => wzOnDate(it, iso, day)).filter(wzPassFilter);
     const items = list.map((it) => `
-      <div class="wz-item" style="--c:${WZ_PART_COLORS[it.part] || "#8996a6"}">
+      <div class="wz-item${it.pending ? " wz-item-pending" : ""}" style="--c:${WZ_PART_COLORS[it.part] || "#8996a6"}">
         <span class="wz-part-badge">${wzEscapeHtml(it.part || it.team || "–")}</span>
         <div class="wz-item-body">
-          <div class="wz-item-work">${wzEscapeHtml(it.work)}${it.dateEnd ? ` <span class="wz-repeat wz-range">${wzMD(it.date)}~${wzMD(it.dateEnd)}${it.noFri ? " 금 제외" : ""}</span>` : it.date ? "" : ' <span class="wz-repeat">매주</span>'}${it.wtime ? ` <span class="wz-time">🕘 ${wzEscapeHtml(it.wtime)}</span>` : ""}</div>
+          <div class="wz-item-work">${it.pending ? '<span class="wz-pend">⏳ 저장 중</span> ' : ""}${wzEscapeHtml(it.work)}${it.dateEnd ? ` <span class="wz-repeat wz-range">${wzMD(it.date)}~${wzMD(it.dateEnd)}${it.noFri ? " 금 제외" : ""}</span>` : it.date ? "" : ' <span class="wz-repeat">매주</span>'}${it.wtime ? ` <span class="wz-time">🕘 ${wzEscapeHtml(it.wtime)}</span>` : ""}</div>
           ${(it.loc || it.person || it.note || it.crew) ? `<div class="wz-item-meta">${[it.loc && "📍 " + wzEscapeHtml(it.loc), it.crew && "👥 " + it.crew + "명", it.person && "👷 " + wzEscapeHtml(maskName(it.person)), it.note && wzEscapeHtml(it.note)].filter(Boolean).join(" · ")}</div>` : ""}
           ${it.equip ? `<div class="wz-item-equip">🚜 ${wzEscapeHtml(it.equip)}</div>` : ""}
           ${it.risks.length ? `<div class="wz-risks">${it.risks.map((r) => `<span class="wz-risk">⚠ ${wzEscapeHtml(r)}</span>`).join("")}</div>` : ""}
         </div>
-        ${canEdit ? `<span class="wz-item-tools"><button type="button" class="wz-edit" data-row="${it.row}" title="수정">수정</button><button type="button" class="wz-del" data-row="${it.row}" title="삭제">삭제</button></span>` : ""}
+        ${canEdit && !it.pending ? `<span class="wz-item-tools"><button type="button" class="wz-edit" data-row="${it.row}" title="수정">수정</button><button type="button" class="wz-del" data-row="${it.row}" title="삭제">삭제</button></span>` : ""}
       </div>`).join("");
     return `
       <div class="wz-day-row wz-day-v2 ${list.length ? "" : "wz-day-empty"} ${iso === today ? "wz-today" : ""}">
@@ -2251,7 +2264,11 @@ function wzShowSchedule(zone) {
     if (!it) return;
     if (!confirm(`'${it.work}' 작업을 지울까요?\n(구글 시트에서도 지워집니다)`)) return;
     b.disabled = true; b.textContent = "…";
-    await wzSaveAndRefresh("del", { row: it.row, work: it.work });
+    const before = wzItems.slice();
+    wzItems = wzItems.filter((x) => x !== it);
+    wzShowSchedule(wzZones[wzActiveIdx]);
+    const ok = await wzSaveAndRefresh("del", { row: it.row, work: it.work });
+    if (!ok) { wzItems = before; wzShowSchedule(wzZones[wzActiveIdx]); }
   });
 
   // 지도에 표시할 날짜: 고른 날짜 → 오늘(이번 주면) → 그 주 월요일
@@ -2354,8 +2371,51 @@ function wzFetchT(url, ms) {
   const ctl = new AbortController(); const tm = setTimeout(() => ctl.abort(), ms);
   return fetch(url, { signal: ctl.signal }).finally(() => clearTimeout(tm));
 }
+// 저장 속도 기록 (원인 찾기용): 화면 주소 끝에 ?wzdiag=1 을 붙이면 최근 기록이 보인다
+function wzDiag(op, ms, serverMs, err) {
+  try {
+    const L = JSON.parse(localStorage.getItem("wzDiag") || "[]");
+    L.push({ t: new Date().toISOString().slice(5, 19).replace("T", " "), op, ms: Math.round(ms), s: serverMs == null ? "" : serverMs, e: String(err || "").slice(0, 80) });
+    localStorage.setItem("wzDiag", JSON.stringify(L.slice(-40)));
+  } catch (e) { /* 저장 안 돼도 그만 */ }
+}
+// 미리 깨우기: '지도에 작업 추가'를 누르는 순간 구글 서버를 깨워 두면, 입력을 마치고 저장할 때 빨라진다
+let wzWarmAt = 0;
+function wzWarmUp() {
+  const url = ((wzConfig && wzConfig.appsScriptUrl) || "").trim();
+  if (!url || wzConfig._wz2 === false || Date.now() - wzWarmAt < 60000) return;
+  wzWarmAt = Date.now();
+  wzFetchT(url + (url.includes("?") ? "&" : "?") + "action=wz2&op=ping&t=" + Date.now(), 20000).catch(() => {});
+}
 async function wzCallScript(action, payload) {
   const url = wzConfig.appsScriptUrl.trim();
+  if (wzConfig._wz2 !== false) {
+    if (action === "add" && !payload.uid) payload.uid = "u" + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+    const q2 = () => `action=wz2&op=${action}&withRows=1&payload=${encodeURIComponent(JSON.stringify(payload))}&t=${Date.now()}`;
+    const t0 = performance.now();
+    let j = null, lastErr = null;
+    // 끊기면 한 번 더 (새 작업은 uid 로 두 번 안 들어감 · 삭제는 다시 보내지 않음)
+    for (let k = 0; k < (action === "del" ? 1 : 2) && !j; k++) {
+      try {
+        const res = await wzFetchT(url + (url.includes("?") ? "&" : "?") + q2(), 40000);
+        j = await res.json();
+      } catch (err) {
+        lastErr = err;
+        if (k === 0 && action !== "del") await new Promise((r) => setTimeout(r, 1500));
+      }
+    }
+    if (!j) {
+      wzDiag(action, performance.now() - t0, null, "network");
+      throw new Error(action === "del" ? "구글 시트와 연결이 끊겼습니다. 새로고침해서 지워졌는지 확인해 주세요" : "구글 시트와 연결이 계속 끊깁니다. 인터넷 연결을 확인한 뒤 다시 시도해 주세요");
+    }
+    if (j.wz2) {
+      wzDiag(action, performance.now() - t0, j.ms, j.ok ? "" : j.error);
+      if (!j.ok) throw new Error(j.error || "저장 실패");
+      if (j.rows) { wzApplyRows(j.rows); renderTodayWork(); j._applied = true; }
+      return j;
+    }
+    wzConfig._wz2 = false;   // 빠른 저장이 아직 설치 안 된 서버 → 아래 예전 방식으로
+  }
   const q = `action=${action}&payload=${encodeURIComponent(JSON.stringify(payload))}&t=${Date.now()}`;
   let res;
   try {
@@ -2384,23 +2444,34 @@ async function wzCallScript(action, payload) {
   return j;
 }
 
-async function wzSaveAndRefresh(action, payload) {
+let wzPendingN = 0;
+window.addEventListener("beforeunload", (e) => { if (wzPendingN > 0) { e.preventDefault(); e.returnValue = "아직 저장 중인 작업이 있습니다"; } });
+async function wzSaveAndRefresh(action, payload, opt) {
+  opt = opt || {};
   payload.passcode = wzPasscode(false);
+  const t0 = performance.now();
+  wzPendingN++;
+  let j;
   try {
     try {
-      await wzCallScript(action, payload);
+      j = await wzCallScript(action, payload);
     } catch (err) {
       if (!/암호/.test(err.message)) throw err;
       payload.passcode = wzPasscode(true); // 암호가 걸려 있으면 그때만 물어보고 한 번 더 시도
-      if (!payload.passcode) return false;
-      await wzCallScript(action, payload);
+      if (!payload.passcode) { wzPendingN--; return false; }
+      j = await wzCallScript(action, payload);
     }
   } catch (err) {
+    wzPendingN--;
+    if (opt.quiet) throw err;
     alert("저장하지 못했습니다: " + err.message);
     return false;
   }
-  // 저장은 끝났다. 목록 새로 읽기는 기다리지 않고 뒤에서 (느려도 저장 버튼이 멈추지 않게)
-  wzLoadSheet(wzConfig).then(() => wzShowSchedule(wzZones[wzActiveIdx])).catch(() => {});
+  wzPendingN--;
+  if (j && j._applied) { if (wzZones[wzActiveIdx]) wzShowSchedule(wzZones[wzActiveIdx]); }
+  // 예전 서버: 목록 새로 읽기는 기다리지 않고 뒤에서 (느려도 저장 버튼이 멈추지 않게)
+  else wzLoadSheet(wzConfig).then(() => wzShowSchedule(wzZones[wzActiveIdx])).catch(() => {});
+  wzToast(`✓ 저장됨 · ${((performance.now() - t0) / 1000).toFixed(1)}초`);
   return true;
 }
 
@@ -2507,9 +2578,7 @@ function wzShowAddForm(x, y, editItem) {
     const dateVal = d2 && d2 > d1 ? `${d1}~${d2}${fF.checked ? " (금 제외)" : ""}` : d1;
     const part = document.getElementById("wzfPart").value;
     const team = Object.keys(WZ_TEAMS).find((t) => WZ_TEAMS[t].parts.includes(part)) || "";
-    const btn = document.getElementById("wzfSave");
-    btn.disabled = true; btn.textContent = "저장 중…";
-    const ok = await wzSaveAndRefresh(ed ? "edit" : "add", {
+    const payload = {
       ...(ed ? { row: ed.row, origWork: ed.work } : {}),
       date: dateVal, zone: zone.name, team, part, work,
       loc: document.getElementById("wzfLoc").value.trim(),
@@ -2518,18 +2587,62 @@ function wzShowAddForm(x, y, editItem) {
       crew: parseInt(document.getElementById("wzfCrew").value, 10) || "", x, y,
       equip: wzEquipText(equip),
       time: (() => { const a = document.getElementById("wzfT1").value, b = document.getElementById("wzfT2").value; return a || b ? `${a || "?"}~${b || "?"}` : ""; })(),
-    });
-    if (ok) wzStartPick(null); else { btn.disabled = false; btn.textContent = "저장"; }
+    };
+    // 기다리지 않게: 창은 바로 닫고, 목록에 '⏳ 저장 중'으로 먼저 보여 준 뒤 뒤에서 저장
+    wzStartPick(null);
+    wzOptimistic(ed ? "edit" : "add", payload, ed, x, y);
   };
 }
 
+// 저장 결과 알림 (화면 오른쪽 아래)
+function wzToast(msg, bad, actions) {
+  let box = document.getElementById("wzToastBox");
+  if (!box) { box = document.createElement("div"); box.id = "wzToastBox"; box.className = "wz-toast-box"; document.body.appendChild(box); }
+  const el = document.createElement("div");
+  el.className = "wz-toast" + (bad ? " bad" : "");
+  el.innerHTML = `<span>${wzEscapeHtml(msg)}</span>`;
+  (actions || []).forEach(([label, fn]) => { const b = document.createElement("button"); b.type = "button"; b.textContent = label; b.onclick = () => { el.remove(); fn(); }; el.appendChild(b); });
+  if (bad) { const x = document.createElement("button"); x.type = "button"; x.textContent = "✕"; x.onclick = () => el.remove(); el.appendChild(x); }
+  box.appendChild(el);
+  if (!bad) setTimeout(() => el.remove(), 3500);
+  return el;
+}
+function wzOptimistic(action, payload, ed, x, y) {
+  const range = wzParseRange(payload.date);
+  const temp = { date: range ? range.start : payload.date, dateEnd: range ? range.end : "", noFri: range ? range.noFri : false,
+    day: payload.date ? WZ_DAY_ORDER[(new Date((range ? range.start : payload.date) + "T00:00:00Z").getUTCDay() + 6) % 7] : (ed ? ed.day : ""),
+    zone: payload.zone, team: payload.team, part: payload.part, work: payload.work, loc: payload.loc, risks: payload.risks || [],
+    person: payload.person, note: "", xy: x != null ? { x, y } : (ed ? ed.xy : null), row: ed ? ed.row : -Date.now(),
+    crew: Number(payload.crew) || 0, equip: payload.equip, wtime: payload.time, pending: true };
+  const before = wzItems ? wzItems.slice() : [];
+  if (wzItems) { if (ed) wzItems = wzItems.map((it) => (it.row === ed.row ? temp : it)); else wzItems.push(temp); }
+  if (wzZones[wzActiveIdx]) wzShowSchedule(wzZones[wzActiveIdx]);
+  const busy = wzToast(`⏳ '${payload.work}' 저장 중…`);
+  wzSaveAndRefresh(action, payload, { quiet: true }).then(() => busy.remove()).catch((err) => {
+    busy.remove();
+    wzItems = before; if (wzZones[wzActiveIdx]) wzShowSchedule(wzZones[wzActiveIdx]);
+    wzToast(`저장 못 함: '${payload.work}' — ${err.message}`, true, [
+      ["다시 저장", () => wzOptimistic(action, payload, ed, x, y)],
+      ["입력창 다시 열기", () => { const zi = wzZones.findIndex((z) => z.name === payload.zone); if (zi >= 0 && zi !== wzActiveIdx) { wzActiveIdx = zi; document.querySelectorAll(".wz-tab-btn").forEach((b, i) => b.classList.toggle("active", i === zi)); wzShowZone(zi); } wzShowAddForm(x, y, ed ? Object.assign({}, ed, temp, { row: ed.row, pending: false }) : null); if (!ed) wzRefill(payload); }],
+    ]);
+  });
+}
+// 저장 못 한 새 작업을 다시 열 때 입력값 채우기
+function wzRefill(p) {
+  const set = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.value = v; };
+  const r = wzParseRange(p.date);
+  set("wzfDate", r ? r.start : p.date); set("wzfEnd", r ? r.end : ""); const nf = document.getElementById("wzfNoFri"); if (nf) nf.checked = !!(r && r.noFri);
+  set("wzfPart", p.part); set("wzfWork", p.work); set("wzfLoc", p.loc); set("wzfCrew", p.crew); set("wzfPerson", p.person);
+  const tm = String(p.time || "").match(/(\d{1,2}:\d{2})\s*~\s*(\d{1,2}:\d{2})?/); if (tm) { wzSetTime("wzfT1", tm[1]); if (tm[2]) wzSetTime("wzfT2", tm[2]); }
+  document.querySelectorAll("#wzPickBox .wz-risk-checks input").forEach((c) => { c.checked = (p.risks || []).includes(c.value); });
+}
 function wzSetupPickMode() {
   const btn = document.getElementById("wzPickToggle");
   const zb = document.getElementById("wzZoombox");
   if (!btn || !zb) return;
   const canEdit = !!(wzConfig.appsScriptUrl || "").trim();
   btn.hidden = !canEdit;
-  btn.onclick = () => wzStartPick(wzPick && wzPick.mode === "add" ? null : { mode: "add" });
+  btn.onclick = () => { if (!(wzPick && wzPick.mode === "add")) wzWarmUp(); wzStartPick(wzPick && wzPick.mode === "add" ? null : { mode: "add" }); };
   let downX = 0, downY = 0;
   zb.addEventListener("mousedown", (e) => { downX = e.clientX; downY = e.clientY; });
   zb.addEventListener("click", async (e) => {
@@ -2542,11 +2655,11 @@ function wzSetupPickMode() {
       wzShowAddForm(x, y);
     } else if (wzPick.mode === "setxy") {
       const it = wzPick.item;
-      const box = document.getElementById("wzPickBox");
-      box.innerHTML = `<div>'${wzEscapeHtml(it.work)}' 위치 저장 중…</div>`;
-      const ok = await wzSaveAndRefresh("setxy", { row: it.row, work: it.work, x, y });
       wzStartPick(null);
-      if (!ok) box.hidden = true;
+      const old = it.xy; it.xy = { x, y }; it.pending = true;
+      if (wzZones[wzActiveIdx]) wzShowSchedule(wzZones[wzActiveIdx]);
+      const ok = await wzSaveAndRefresh("setxy", { row: it.row, work: it.work, x, y });
+      if (!ok) { it.xy = old; it.pending = false; if (wzZones[wzActiveIdx]) wzShowSchedule(wzZones[wzActiveIdx]); }
     }
   });
 }
@@ -8292,4 +8405,15 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   });
   fix(document);
   new MutationObserver((ms) => ms.forEach((m) => m.addedNodes.forEach((n) => { if (n.nodeType === 1) { if (n.matches && n.matches('input[type="date"]')) fix(n.parentNode || n); else fix(n); } }))).observe(document.body, { childList: true, subtree: true });
+})();
+
+
+/* 작업구역 저장 속도 진단: 주소 끝에 ?wzdiag=1 → 최근 저장·읽기 걸린 시간 표 (원인 찾기용) */
+(function wzDiagPanel() {
+  if (!/[?&]wzdiag=1/.test(location.search)) return;
+  let L = []; try { L = JSON.parse(localStorage.getItem("wzDiag") || "[]"); } catch (e) {}
+  const d = document.createElement("div"); d.className = "wz-diag";
+  d.innerHTML = `<b>작업구역 저장 기록 (최근 ${L.length}건)</b> <button type="button">닫기</button><table><tr><th>시각</th><th>종류</th><th>전체(ms)</th><th>서버(ms)</th><th>오류</th></tr>${L.slice().reverse().map((x) => `<tr><td>${x.t}</td><td>${x.op}</td><td>${x.ms}</td><td>${x.s}</td><td>${wzEscapeHtml(x.e || "")}</td></tr>`).join("")}</table>`;
+  d.querySelector("button").onclick = () => d.remove();
+  document.body.appendChild(d);
 })();
