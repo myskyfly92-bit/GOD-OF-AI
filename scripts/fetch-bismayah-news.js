@@ -107,7 +107,7 @@ const CFGS = {
     TITLE_ONLY: true,
     // 산불·차량·재판·훈련·전쟁(포격)·'사격(fire)' 기사는 뺀다
     // 점검·협약·대책·교육 같은 예방 행정 기사, 보험·보상 기사, 유럽 등 다른 지역 기사도 뺀다 (실제 일어난 불만)
-    NOT: /점검|협약|대책|전수조사|지원|교육|체험|로봇|과학자|뉴스픽|주요뉴스|안전기준|성능검사|추진|확대|강화|재구성|기획|칼럼|사설|보상금|보험|리얄|insurance|파리|프랑스|유럽|باريس|فرنسا|Paris|France|산불|들불|차량\s?화재|승용차|화재보험|모의|훈련|캠페인|예방\s?교육|선고|징역|재판|판결|기소|주가|특징주|소방관 채용|ceasefire|cease-fire|gunfire|open(ed)? fire|fired|firing|wildfire|forest fire|bushfire|airstrike|missile|drone strike|shelling|إطلاق (ال)?نار|وقف إطلاق|الغابات|غارة|قصف|صاروخ|مسيرة/i,
+    NOT: /점검|협약|대책|전수조사|실태조사|표창|사실\s?확인|팩트체크|재공유|예측|전망|인도|붉은 어린이 시장|fact.?check|forecast|India|지원|교육|체험|로봇|과학자|뉴스픽|주요뉴스|안전기준|성능검사|추진|확대|강화|재구성|기획|칼럼|사설|보상금|보험|리얄|insurance|파리|프랑스|유럽|باريس|فرنسا|Paris|France|산불|들불|차량\s?화재|승용차|화재보험|모의|훈련|캠페인|예방\s?교육|선고|징역|재판|판결|기소|주가|특징주|소방관 채용|ceasefire|cease-fire|gunfire|open(ed)? fire|fired|firing|wildfire|forest fire|bushfire|airstrike|missile|drone strike|shelling|إطلاق (ال)?نار|وقف إطلاق|الغابات|غارة|قصف|صاروخ|مسيرة/i,
     GROUP: true, NOT_KO: true,
     TAGS: [
       ["용접·불티", /용접|절단|불티|그라인더|산소절단|welding|spark|لحام/i],
