@@ -182,13 +182,29 @@
         ${list.length ? `<ul class="list" style="margin-top:10px">${list.slice(0, 6).map(workLi).join("")}</ul>` + (list.length > 6 ? `<p class="src">외 ${list.length - 6}건 · 안전 탭에서 이번 주 전체 보기</p>` : "") : `<p class="empty" style="margin-top:8px">오늘 등록된 작업이 없습니다.</p>`}`);
     });
 
-    // 이라크 공휴일 선포 · 통행금지·도로 통제 (홈 맨 위)
+    // 홈 맨 위: 🆕 새 기능 소개(정해 둔 날까지, ✕로 닫기) + 이라크 공휴일·휴무 발표 (통행금지·도로 통제 알림은 2026-10-13 부터 뺌)
+    const NEW = { id: "wn-20261013", date: "10월 13일", until: "2026-10-22", items: [
+      { ic: "💬", t: "HSE 1:1 상담", d: "궁금한 점·현장 위험을 담당자에게 바로", go: () => { go("more"); showSub("talk"); } },
+      { ic: "🌍", t: "세계 의료 수준", d: "193개 나라 의료 점수 · 이라크·한국 비교", go: () => { go("health"); setTimeout(() => { const c = card("hwCard"); if (c) c.scrollIntoView({ behavior: "smooth", block: "start" }); }, 500); } },
+      { ic: "▶️", t: "비스마야 유튜브", d: "더보기 → 비스마야 소식 → 유튜브", go: () => { ls.set("mBnews", "video"); go("more"); showSub("bnews"); } },
+      { ic: "🔥", t: "소방 · 화재 사례", d: "국내 현장·중동 화재를 원인별로", go: () => { go("more"); showSub("fire"); } },
+      { ic: "📱", t: "더 편해진 화면", d: "긴 목록 접기 · 휴대폰 뒤로 버튼 · 큰 버튼" },
+    ] };
+    const drawTop = (hol) => {
+      const showNew = today() <= NEW.until && ls.get("wnHide") !== NEW.id;
+      $("#iqAlert").innerHTML = (hol || []).map((a) => `<a class="alert hol" href="${esc(a.link)}" target="_blank" rel="noopener"><span class="ic">🗓️</span><span>
+        <div class="m" style="font-weight:700">이라크 공휴일·휴무 발표</div><div class="t">${esc(a.titleKo || a.title)}</div>
+        <div class="m">${esc(a.source || "")}${a.count > 1 ? " 외 " + (a.count - 1) + "곳" : ""} · ${ago(a.date)}</div></span></a>`).join("") +
+        (showNew ? `<div class="wn"><div class="wn-h"><span class="wn-b">🆕 새 기능</span><b>${NEW.date} 업데이트</b><button class="wn-x" aria-label="닫기">✕</button></div>
+          <div class="wn-row">${NEW.items.map((it, i) => `<button class="wn-i" data-i="${i}" ${it.go ? "" : "disabled"}><span>${it.ic}</span><b>${it.t}</b><small>${it.d}</small></button>`).join("")}</div></div>` : "");
+      const w = $("#iqAlert .wn"); if (!w) return;
+      w.querySelector(".wn-x").onclick = () => { ls.set("wnHide", NEW.id); w.remove(); };
+      w.querySelectorAll(".wn-i").forEach((b) => b.onclick = () => { const it = NEW.items[+b.dataset.i]; if (it.go) it.go(); });
+    };
+    drawTop([]);
     getJ("iraq-issues.json").then((d) => {
-      const L = (d.alerts || []).filter((a) => Date.now() - Date.parse(a.date) < 36 * 3600000);
-      if (!L.length) return;
-      $("#iqAlert").innerHTML = L.map((a) => `<a class="alert ${a.kind === "holiday" ? "hol" : ""}" href="${esc(a.link)}" target="_blank" rel="noopener"><span class="ic">${a.kind === "holiday" ? "🗓️" : "⛔"}</span><span>
-        <div class="m" style="font-weight:700">${a.kind === "holiday" ? "이라크 공휴일·휴무 발표" : "통행금지·도로 통제"}</div><div class="t">${esc(a.titleKo || a.title)}</div>
-        <div class="m">${esc(a.source || "")}${a.count > 1 ? " 외 " + (a.count - 1) + "곳" : ""} · ${ago(a.date)}</div></span></a>`).join("");
+      const L = (d.alerts || []).filter((a) => a.kind === "holiday" && Date.now() - Date.parse(a.date) < 36 * 3600000);
+      if (L.length) drawTop(L);
     }).catch(() => {});
 
     // 중대재해 보도 (홈 위쪽 띠)

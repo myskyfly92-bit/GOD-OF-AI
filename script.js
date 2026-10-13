@@ -7202,7 +7202,7 @@ async function clinicCall(action, payload) {
       { sel: "#visitCounter", opt: true, text: `제목 아래 <b>TODAY | TOTAL</b> 은 싸이월드 미니홈피처럼 이 상황판을 <b>오늘 / 지금까지 연 기기 수</b>예요. 초록 점 <b>NOW</b> 는 <b>지금 이 화면을 열어 둔 기기 수</b>예요(몇 분 단위로 갱신). 옆의 💻·📱 는 그중 <b>컴퓨터 / 휴대폰</b> 수예요. 같은 PC·폰은 새로고침해도 <b>하루 한 번만</b> 세고, 이름 같은 정보는 받지 않아요. 마우스를 올리면 <b>최근 방문자 추이 그래프</b>와 <b>이번 달 많이 본 탭</b>이 살짝 떠요.` },
       { sel: "#vcGift", opt: true, text: `방문자 숫자 아래 🎁 줄은 <b>100번째 · 1,000번째 방문자 선물</b> 안내예요. 행운의 번호에 걸리면 축하 창이 뜨니, 그 화면을 <b>캡처해서 HSE팀</b>에 보내 주세요.` },
       { sel: "#netPill", text: `시계 오른쪽 국기 아래는 <b>인터넷 속도</b>예요. 마우스를 올리면 <b>오늘 측정 기록·끊김 횟수·화상회의 가능 여부</b>가 떠요. 이 PC에서 잰 <b>다운로드 속도(Mbps)</b>와 <b>응답 시간(ms)</b>을 보여 줘요.<br>🟢 좋음(5Mbps 이상) · 🟡 보통(1~5) · 🔴 느림(1 미만)이고, 끊기면 <b>'인터넷 끊김'</b>이 떠요. 15분마다 자동으로 재고, <b>누르면 바로</b> 더 정확하게 다시 재요. fast.com 처럼 가까운 측정 서버(Cloudflare)에서 받아서 재요.<br>화면이 비어 보이거나 지도가 안 뜰 때 여기가 빨간색이면 인터넷 탓이니 잠시 뒤 새로고침하세요.` },
-      { sel: "#iqAlert", opt: true, text: `메뉴 위 빨간 띠는 <b>이라크 긴급 알림</b>이에요. 갑작스러운 <b>공휴일 선포</b>나 바그다드 <b>통행금지·도로·다리 통제</b> 소식이 나오면 1시간 안에 떠요. 누르면 기사 내용, <b>✕</b> 로 닫으면 그 소식은 다시 안 떠요.` },
+      { sel: "#iqAlert", opt: true, text: `메뉴 위 띠에는 <b>🆕 새 기능 소개</b>와 <b>이라크 공휴일·휴무 발표</b>가 떠요. 새 기능은 7초마다 넘어가고 <b>보기 ›</b>를 누르면 그 화면으로 바로 가요. <b>전체</b>로 한눈에 보고, <b>✕</b>로 닫으면 다시 안 떠요.` },
       { sel: ".group-bar", text: `여기가 <b>대분류 메뉴</b>예요: 종합현황 · 안전 · 보건 · 환경 · 소방 · 기타.<br>하나를 누르면 바로 아래에 <b>소분류 탭</b> 줄이 나타나고, 마지막으로 보던 소분류를 기억해요.` },
       { sel: ".sa-alert", opt: true, text: `화면 아래 빨간 띠는 <b>중대재해 보도 알림</b>이에요. 최근 3일 안에 국내 산업현장 사망사고 기사가 나오면 <b>회사명과 기사 제목</b>이 떠요. 같은 사고 기사는 하나로 묶어 '보도 n건'으로 보여 주고, 누르면 원문이 열려요.<br>첫 보도는 사실과 다를 수 있으니 원문과 고용노동부 발표를 확인하세요. ✕ 로 닫으면 새 사고 기사가 올 때까지 숨어요.` },
       { sel: "#langSwitcher", text: `<b>언어 선택</b>이에요. <b>ENG</b> 나 <b>العربية</b> 를 누르면 화면 글자가 자동 번역돼요. 영어·아랍어를 쓰는 동료에게 보여 줄 때 좋아요.<br>자동 번역이라 어색한 말이 있을 수 있으니 중요한 내용은 한국어로 한 번 더 확인하세요.` },
@@ -8310,36 +8310,90 @@ makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, subN
   if (view) new MutationObserver(check).observe(view, { attributes: true, attributeFilter: ["class"] });
   check();
 })();
-/* 이라크 갑작스러운 공휴일 선포 · 통행금지·도로 통제 알림 (iraq-issues.json 의 alerts, 1시간마다 수집)
-   화면 맨 위 띠로 보여 주고, ✕ 로 닫으면 그 기사는 이 브라우저에서 다시 안 띄운다 */
-(function iraqAlert() {
+/* 메뉴 위 띠: ① 🆕 새 기능 소개 (정해 둔 날까지, ✕로 닫으면 이 브라우저에선 다시 안 뜸)
+              ② 이라크 갑작스러운 공휴일·휴무 발표 (iraq-issues.json 의 alerts) — 통행금지·도로 통제 알림은 2026-10-13 부터 뺌 */
+(function topStrip() {
   const box = document.getElementById("iqAlert"); if (!box) return;
+  const LS = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Baghdad" }).format(new Date());
+  const tab = (g, v, then) => () => {
+    const gb = document.querySelector(`.group-btn[data-group="${g}"]`); if (gb) gb.click();
+    const t = document.querySelector(`.tab-btn[data-view="${v}"]`); if (t) t.click();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (then) setTimeout(then, 400);
+  };
+  const press = (sel) => () => { const b = document.querySelector(sel); if (b) b.click(); };
+  const glow = (sel) => () => { const el = document.querySelector(sel); if (!el) return; window.scrollTo({ top: 0, behavior: "smooth" }); el.classList.remove("wn-glow"); void el.offsetWidth; el.classList.add("wn-glow"); setTimeout(() => el.classList.remove("wn-glow"), 4200); };
+  // ---- 새 기능 소개 (바꿀 때: id·until·items 만 고치면 됨) ----
+  const NEW = { id: "wn-20261013", date: "10월 13일", until: "2026-10-22", items: [
+    { ic: "💬", t: "1:1 상담", d: "오른쪽 아래 <b>💬 1:1 상담</b> — 궁금한 점·현장 위험을 남기면 HSE 담당자가 바로 답해요", go: press(".talk-fab"), btn: "열기" },
+    { ic: "🗺️", t: "작업구역 새 단장", d: "<b>안전 → 작업구역</b> — 이라크 지도에서 구역 고르기 · <b>동시작업·돌풍·폭염 경고</b> · 지난주 작업 그대로 가져오기", go: tab("safety", "view-workzone") },
+    { ic: "🌍", t: "세계 의료 수준", d: "<b>보건 → 세계 의료 수준</b> — 193개 나라 의료 인프라 점수·지도, 이라크·한국과 나란히 비교", go: tab("health", "view-health-world") },
+    { ic: "⚖️", t: "법령 도우미 + 소방", d: "<b>법령 도우미</b>에 소방 법령·화재안전기준 추가 — \"소화기 몇 m마다?\" \"중대재해란?\"처럼 물어보세요", go: press(".ai-fab"), btn: "물어보기" },
+    { ic: "🔥", t: "화재 사례", d: "<b>소방 → 화재 사례</b> — 국내 현장·중동 대형 화재를 용접·전기 등 원인별로 (TBM 사례 공유용)", go: tab("fire", "view-fire-news") },
+    { ic: "▶️", t: "비스마야 유튜브", d: "<b>기타 → 비스마야 소식</b>에 ▶ 유튜브 영상 탭이 생겼어요", go: tab("etc", "view-bismayah", press('.bsub-btn[data-p="video"]')) },
+    { ic: "📊", t: "숫자에 마우스", d: "위쪽 <b>방문자 수</b>·<b>인터넷 속도</b>에 마우스를 올리면 방문 추이·끊김 기록이 떠요", go: glow("#visitCounter"), btn: "위치 보기" },
+    { ic: "📱", t: "휴대폰 화면", d: "휴대폰으로 열면 <b>1:1 상담·유튜브·화재 사례·세계 의료</b>까지 · 휴대폰 뒤로 버튼도 자연스럽게" },
+  ] };
+  const showNew = today <= NEW.until && LS.get("wnHide") !== NEW.id;
+  const rows = [];
+  if (showNew) rows.push(`<div class="iq-al k-new" data-new="1">
+      <span class="wn-badge">🆕 새 기능 <small>${NEW.date}</small></span>
+      <span class="wn-ic" id="wnIc"></span><span class="iq-t wn-t" id="wnT"></span>
+      <span class="wn-dots" id="wnDots">${NEW.items.map((_, i) => `<i data-i="${i}"></i>`).join("")}</span>
+      <button type="button" class="iq-more" id="wnGo">보기 ›</button>
+      <button type="button" class="iq-more" id="wnAll">전체 ${NEW.items.length}가지</button>
+      <button type="button" class="iq-x" id="wnX" title="새 기능 안내 닫기" aria-label="닫기">✕</button>
+      <div class="wn-list" id="wnList" hidden>${NEW.items.map((it, i) => `<button type="button" data-i="${i}"><span>${it.ic}</span><b>${it.t}</b><small>${it.d.replace(/<[^>]+>/g, "")}</small></button>`).join("")}</div></div>`);
   const KEY = "iqAlertHide";
   const hidden = () => { try { return JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { return []; } };
   const ago = (iso) => { const m = Math.round((Date.now() - Date.parse(iso)) / 60000); return m < 60 ? `${Math.max(1, m)}분 전` : m < 1440 ? `${Math.round(m / 60)}시간 전` : `${Math.round(m / 1440)}일 전`; };
-  fetch("iraq-issues.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : null).then((j) => {
-    const hid = hidden();
-    const L = ((j && j.alerts) || []).filter((a) => !hid.includes(a.link) && Date.now() - Date.parse(a.date) < 36 * 3600000);
-    if (!L.length) return;
-    box.innerHTML = L.map((a, i) => `<div class="iq-al k-${a.kind}" data-i="${i}">
-      <span class="iq-ic">${a.kind === "holiday" ? "🗓️" : "⛔"}</span>
-      <span class="iq-k">${a.kind === "holiday" ? "이라크 공휴일·휴무 발표" : "통행금지·도로 통제"}</span>
+  let L = [];
+  const render = () => {
+    const hol = L.map((a, i) => `<div class="iq-al k-${a.kind}" data-i="${i}">
+      <span class="iq-ic">🗓️</span><span class="iq-k">이라크 공휴일·휴무 발표</span>
       <a class="iq-t" href="${escapeHtml(a.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(a.titleKo || a.title)}</a>
       <span class="iq-m">${escapeHtml(a.source || "")}${a.count > 1 ? ` 외 ${a.count - 1}곳` : ""} · ${ago(a.date)}</span>
       <button type="button" class="iq-more">이라크 이슈 ›</button>
-      <button type="button" class="iq-x" title="이 알림 닫기" aria-label="닫기">✕</button></div>`).join("");
-    box.hidden = false;
-    box.addEventListener("click", (e) => {
-      const row = e.target.closest(".iq-al"); if (!row) return;
-      if (e.target.closest(".iq-x")) {
-        const a = L[+row.dataset.i]; try { localStorage.setItem(KEY, JSON.stringify(hidden().concat(a.link).slice(-40))); } catch (er) { /* 저장 안 돼도 닫기만 */ }
-        row.remove(); if (!box.children.length) box.hidden = true;
-      } else if (e.target.closest(".iq-more")) {
-        const g = document.querySelector('.group-btn[data-group="etc"]'); if (g) g.click();
-        const t = document.querySelector('.tab-btn[data-view="view-iraq-issues"]'); if (t) t.click();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
+      <button type="button" class="iq-x" title="이 알림 닫기" aria-label="닫기">✕</button></div>`);
+    box.innerHTML = hol.concat(rows).join("");
+    box.hidden = !box.children.length;
+    if (showNew && box.querySelector("[data-new]")) startNew();
+  };
+  // 새 기능 띠: 7초마다 다음 항목, 마우스를 올리면 멈춤
+  let cur = 0, timer = 0, paused = false;
+  function startNew() {
+    const row = box.querySelector("[data-new]");
+    const set = (i) => {
+      cur = (i + NEW.items.length) % NEW.items.length; const it = NEW.items[cur];
+      const t = document.getElementById("wnT"); t.classList.remove("in"); void t.offsetWidth; t.classList.add("in");
+      document.getElementById("wnIc").textContent = it.ic; t.innerHTML = it.d;
+      const go = document.getElementById("wnGo"); go.hidden = !it.go; go.textContent = (it.btn || "보기") + " ›";
+      row.querySelectorAll("#wnDots i").forEach((d, k) => d.classList.toggle("on", k === cur));
+    };
+    const tick = () => { clearTimeout(timer); timer = setTimeout(() => { if (!paused && !document.hidden) set(cur + 1); tick(); }, 7000); };
+    set(0); tick();
+    row.addEventListener("mouseenter", () => { paused = true; }); row.addEventListener("mouseleave", () => { paused = false; });
+    row.addEventListener("click", (e) => {
+      const d = e.target.closest("#wnDots i"); if (d) { set(+d.dataset.i); tick(); return; }
+      if (e.target.closest("#wnGo")) { const it = NEW.items[cur]; if (it.go) it.go(); return; }
+      if (e.target.closest("#wnAll")) { const l = document.getElementById("wnList"); l.hidden = !l.hidden; e.target.closest("#wnAll").classList.toggle("on", !l.hidden); return; }
+      const li = e.target.closest("#wnList button"); if (li) { const it = NEW.items[+li.dataset.i]; set(+li.dataset.i); tick(); if (it.go) it.go(); return; }
+      if (e.target.closest("#wnX")) { LS.set("wnHide", NEW.id); clearTimeout(timer); row.remove(); if (!box.children.length) box.hidden = true; }
     });
+  }
+  box.addEventListener("click", (e) => {
+    const row = e.target.closest(".iq-al:not([data-new])"); if (!row) return;
+    if (e.target.closest(".iq-x")) {
+      const a = L[+row.dataset.i]; try { localStorage.setItem(KEY, JSON.stringify(hidden().concat(a.link).slice(-40))); } catch (er) { /* 저장 안 돼도 닫기만 */ }
+      row.remove(); if (!box.children.length) box.hidden = true;
+    } else if (e.target.closest(".iq-more")) tab("etc", "view-iraq-issues")();
+  });
+  render();
+  fetch("iraq-issues.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : null).then((j) => {
+    const hid = hidden();
+    L = ((j && j.alerts) || []).filter((a) => a.kind === "holiday" && !hid.includes(a.link) && Date.now() - Date.parse(a.date) < 36 * 3600000);
+    if (L.length) render();
   }).catch(() => {});
 })();
 makeNewsView({ view: "view-iraq-issues", json: "iraq-issues.json", days: 7, compact: true, iq: "inewsIq", iqN: "inewsIqN", count: "inewsCount", meta: "inewsMeta", tags: "inewsTags" });
