@@ -7153,7 +7153,7 @@ async function clinicCall(action, payload) {
 })();
 
 /* ==========================================================
-   헌수호 사용 안내 (처음 방문 시 자동 · 왼쪽 아래 '사용 안내' 버튼으로 다시 보기)
+   헌수호 사용 안내 (처음 방문 시 자동 · 오른쪽 아래 '사용 안내' 버튼으로 다시 보기)
    - 장(章)별로 실제 탭을 열어 가며 화면 요소를 하나씩 짚어 준다
    - '처음부터 전체' 또는 '골라서 보기' · 이전/다음 · 키보드 ← → Esc
    ========================================================== */
@@ -7183,7 +7183,7 @@ async function clinicCall(action, payload) {
       { sel: ".bg-peek-btn", text: `위쪽 메뉴줄의 <b>🖼 배경 보기</b>를 누르면 카드들이 잠깐 숨고 배경 사진이 보여요. 다시 누르거나 <b>Esc</b> 를 누르면 돌아와요.<br>한동안 화면을 안 만지면 상황실 화면처럼 자동으로 배경이 보이기도 해요.` },
       { sel: ".talk-fab", opt: true, text: `<b>💬 1:1 상담</b>이에요. 안전·보건·환경 관련 궁금한 점이나 현장에서 본 위험을 남기면 <b>HSE 담당자</b>가 이 창에 바로 답해 드려요. 위에 <b>🟢 담당자 접속 중</b>이면 금방 답이 와요.<br>창을 닫아도 대화는 이 PC에 이어지고, 답장이 오면 버튼에 빨간 숫자가 떠요.` },
       { sel: ".ai-fab", text: `오른쪽 아래 <b>법령 도우미</b>예요. "고소작업 안전대 기준은?", "임시소방시설 설치 대상은?", "이라크 노동법 근로시간은?" 처럼 <b>평소 말투로 물어보면</b> <b>한국 산업안전보건법·소방 법령</b>과 <b>이라크 법</b>을 함께 찾아서 답해 줘요.<br>📷 <b>현장 사진</b>을 올리면 위험요소도 짚어 줘요. 답 속 <b>[조문]</b>을 누르면 조문·<b>별표</b> 원문이 그 자리에서 바로 펼쳐지고, 👍/👎로 답을 평가할 수 있어요. 답은 참고용이니 중요한 판단은 원문으로 확인하세요.` },
-      { sel: null, text: `안내를 다시 보고 싶으면 화면 <b>왼쪽 아래 '사용 안내'</b> 버튼을 누르세요. 거기서 필요한 장만 골라 볼 수도 있어요.` },
+      { sel: null, text: `안내를 다시 보고 싶으면 화면 <b>오른쪽 아래 '사용 안내'</b> 버튼을 누르세요. 거기서 필요한 장만 골라 볼 수도 있어요.` },
     ]},
     { id: "home", title: "종합현황", icon: "📊", steps: [
       { go: "view-dashboard", sel: ".hero-panel", text: `<b>무재해 연속일수</b>예요. 마지막 사고 이후 며칠째 무재해인지, 그리고 <b>착공 후 경과일</b>을 함께 보여 줘요. 숫자는 매일 자동으로 올라가요.` },
@@ -7398,7 +7398,7 @@ async function clinicCall(action, payload) {
   async function finish() {
     ring.hidden = true; setHead("끝", 1);
     await goView("view-dashboard");
-    return ask(`안내 끝! 수고하셨어요 🙌<br>다시 보고 싶으면 <b>왼쪽 아래 '사용 안내'</b>를 누르세요. 저는 배너 위에서 순찰하고 있을게요. <b>오늘도 무재해!</b>`,
+    return ask(`안내 끝! 수고하셨어요 🙌<br>다시 보고 싶으면 <b>오른쪽 아래 '사용 안내'</b>를 누르세요. 저는 배너 위에서 순찰하고 있을게요. <b>오늘도 무재해!</b>`,
       `<button type="button" data-v="menu">목차로</button><button type="button" data-v="close" class="hg-primary">닫기</button>`, false);
   }
 
@@ -7439,7 +7439,7 @@ async function clinicCall(action, payload) {
   }
   window.hseGuideStart = start;
 
-  // 다시 보기 버튼 (왼쪽 아래)
+  // 다시 보기 버튼 (오른쪽 아래, 1:1 상담·법령 도우미 위)
   const again = document.createElement("button");
   again.type = "button";
   again.className = "hg-again";

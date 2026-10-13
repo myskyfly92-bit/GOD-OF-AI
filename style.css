@@ -3837,7 +3837,7 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
   /* 아래쪽 띠·버튼 */
   .sa-alert { bottom: 8px !important; width: calc(100vw - 16px) !important; padding: 6px 8px !important; font-size: 12px !important; }
   .sa-alert-btn, .sa-alert button { padding: 2px 8px !important; font-size: 11px !important; }
-  .hg-again { font-size: 0 !important; padding: 4px !important; bottom: 58px !important; left: 8px !important; }
+  .hg-again { font-size: 0 !important; padding: 4px !important; }
   .hg-again img { margin: 0 !important; }
   .footer { padding-bottom: 70px !important; }
 }
@@ -4261,3 +4261,24 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .talk-conv-h b { color: #fff; }
 @media (max-width: 640px) { .talk { bottom: 78px; right: 12px; } .talk-lb { display: none; } .talk.is-admin .talk-admin { grid-template-columns: 1fr; } .talk.is-admin .talk-rooms { max-height: 34%; border-right: 0; border-bottom: 1px solid var(--border-soft); } }
 body:has(.hse-intro) .talk { display: none; }
+
+/* ---------- 오른쪽 아래 버튼 3개 한 줄로 모으기 (같은 크기): 사용 안내 · 1:1 상담 · 법령 도우미 ---------- */
+.hg-again { left: auto !important; right: 18px; bottom: 130px; z-index: 1199; }
+.talk { bottom: 74px; }
+.hg-again, .talk-fab, .ai-fab {
+  box-sizing: border-box; width: 148px; height: 48px; padding: 0 14px 0 6px; gap: 9px; justify-content: flex-start;
+  border-radius: 999px; font-family: var(--font-body); font-size: 13.5px; font-weight: 700; line-height: 1;
+  background: #0f1a22; box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+}
+.hg-again { color: var(--text); border: 1px solid rgba(255,255,255,0.28); }
+.hg-again img, .ai-fab img { width: 36px; height: 36px; flex: none; }
+.talk-fab { color: #ffe2a8; border: 1px solid rgba(242, 169, 59, 0.6); }
+.talk-ic { width: 36px; height: 36px; flex: none; display: grid; place-items: center; border-radius: 50%; background: rgba(242, 169, 59, 0.16); font-size: 18px; }
+.hg-again:hover { border-color: #fff; }
+@media (max-width: 640px) {
+  .hg-again, .talk-fab, .ai-fab { width: 46px !important; height: 46px !important; padding: 4px !important; justify-content: center; font-size: 0 !important; gap: 0; }
+  .ai-fab span, .talk-lb { display: none; }
+  .ai-assist { right: 12px !important; bottom: 14px !important; }
+  .talk { right: 12px !important; bottom: 66px !important; }
+  .hg-again { right: 12px !important; left: auto !important; bottom: 118px !important; }
+}
