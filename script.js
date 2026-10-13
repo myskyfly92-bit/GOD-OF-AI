@@ -8469,7 +8469,10 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     document.querySelectorAll(".desk-bg").forEach((x) => x.remove());
     const edge = /Edg\//.test(navigator.userAgent);
     const chrome = `<div class="desk-step"><b>크롬</b> 오른쪽 위 <b>⋮ → 저장 및 공유 → 바로가기 만들기…</b><br>→ 이름을 "안전보건환경 상황실"로 → <b>'창으로 열기'는 체크하지 말고</b> → <b>만들기</b><br><small>무재해 아이콘으로 바로 생기고, 평소 크롬 창(주소창·즐겨찾기 그대로)으로 열립니다</small></div>`;
-    const edgeHow = `<div class="desk-step"><b>엣지</b> 주소창 왼쪽의 <b>🔒 자물쇠 모양</b>을 마우스로 잡고 <b>바탕화면으로 끌어다 놓기</b><br><small>평소 엣지 창으로 열립니다 · 이름은 오른쪽 클릭 → 이름 바꾸기 · 아이콘은 엣지 모양으로 보여요</small></div>`;
+    const edgeHow = `<div class="desk-step"><b>엣지</b> 주소창 왼쪽의 <b>🔒 자물쇠 모양</b>을 마우스로 잡고 <b>바탕화면으로 끌어다 놓기</b><br><small>평소 엣지 창으로 열립니다 · 이름은 오른쪽 클릭 → 이름 바꾸기</small>
+      <div class="desk-ico"><b>무재해 아이콘으로 바꾸기</b> (윈도우는 아이콘 파일이 PC 안에 있어야 바꿀 수 있어요)<br>
+      ① <a href="assets/icon/favicon.ico" download="Bismayah-HSE.ico">무재해 아이콘 파일 받기</a> → 받은 파일을 <b>문서</b> 폴더로 옮겨 두기 (다운로드 폴더를 비우면 아이콘이 사라져요)<br>
+      ② 바탕화면 바로가기 <b>오른쪽 클릭 → 속성 → 웹 문서 탭 → 아이콘 변경 → 찾아보기</b> → 옮겨 둔 파일 선택 → 확인 → 확인</div></div>`;
     const bg = document.createElement("div"); bg.className = "desk-bg";
     bg.innerHTML = `<div class="desk-box" role="dialog" aria-label="바탕화면 바로가기 만들기">
       <div class="desk-h"><img src="assets/icon/icon-192.png" alt=""><div><b>바탕화면에 상황실 바로가기 만들기</b><span>아이콘을 누르면 평소처럼 인터넷 창으로 상황실이 열려요</span></div></div>

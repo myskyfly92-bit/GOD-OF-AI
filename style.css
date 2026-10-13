@@ -3906,3 +3906,6 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .appmode-bar a { color: #fff; background: #00a14d; border-radius: 8px; padding: 4px 12px; font-weight: 700; text-decoration: none; }
 .appmode-bar button { font: inherit; font-size: 12px; background: transparent; color: #cfe8d8; border: 1px solid rgba(255,255,255,.25); border-radius: 8px; padding: 3px 10px; cursor: pointer; }
 .appmode-bar .x { margin-left: auto; }
+
+.desk-ico { margin-top: 8px; padding: 8px 10px; border-radius: 8px; background: rgba(0,161,77,.08); border: 1px dashed rgba(0,161,77,.45); font-size: 12px; line-height: 1.7; }
+.desk-ico a { color: #00a14d; font-weight: 700; text-decoration: underline; }
