@@ -6898,6 +6898,7 @@ async function clinicCall(action, payload) {
       { go: "view-fires", sel: "#fireAlert", text: `<b>소방 › 화재 현황</b>이에요. NASA 위성이 감지한 이라크 화재를 보여 줘요. 현장 <b>10 km 안</b>에서 새 화재가 잡히면 여기 <b>경보</b>가 떠요.` },
       { sel: "#fireMap", text: `<b>지도</b>에서 <b>빨간 점</b>은 24시간 안, <b>주황</b>은 24~48시간, <b>회색</b>은 <b>가스 플레어</b> 같은 상시 열원이에요. ★ 가 현장이에요.<br>위성이 지나간 시각 기준이라 보통 <b>몇 시간 전</b> 상황이고, 작은 화재나 구름 낀 날은 안 잡힐 수 있어요.` },
       { go: "view-iraq-cd", sel: ".cd-intro-panel", text: `<b>이라크 민방위(소방) 소식</b>이에요. 위에는 민방위총국 소개와 연락처, 아래에는 현지 화재·구조 소식이 있어요.` },
+      { go: "view-fire-news", sel: "#fnewsTags", text: `<b>화재 사례</b>예요. 왼쪽은 <b>국내 건설현장·공장·창고·숙소 화재</b>, 오른쪽은 <b>중동 대형 화재</b>(한국어 번역)를 3시간마다 모아요. 위 버튼으로 <b>용접·불티, 단열재, 전기·배터리</b>처럼 원인별로 골라 볼 수 있어 아침 TBM 사례 공유에 좋아요.` },
     ]},
     { id: "etc", title: "기타", icon: "🧩", steps: [
       { go: "view-iraq-issues", sel: "#view-iraq-issues .bnews-panel", text: `<b>기타 › 이라크 주요 이슈</b>예요. 치안·시위·정치·공휴일·정전·유가처럼 <b>현장 생활과 출퇴근에 영향을 줄 수 있는 이라크 소식</b>을 3시간마다 모아요. 위의 <b>분류 버튼</b>으로 골라 볼 수 있고, 기사를 누르면 본문이 펼쳐져요.` },
@@ -7776,7 +7777,7 @@ function makeNewsView(o) {
   if (!iqBox || (o.ko && !koBox)) return;
   let items = null;
   const LANG = { ar: "아랍어", en: "영어" };
-  const TAGC = { "치안·테러": "red", "시위·통제": "amb", "휴일·행사": "vio", "정치·선거": "blu", "전력·생활": "cy", "날씨·재난": "amb", "경제·유가": "grn", "한국·외교": "blu" };
+  const TAGC = { "용접·불티": "red", "단열재·자재": "amb", "전기·배터리": "vio", "숙소·창고": "blu", "고층·건물": "cy", "공장·플랜트": "grn", "시장·상가": "amb", "치안·테러": "red", "시위·통제": "amb", "휴일·행사": "vio", "정치·선거": "blu", "전력·생활": "cy", "날씨·재난": "amb", "경제·유가": "grn", "한국·외교": "blu" };
   let tagF = "전체";
   const fmt = (iso) => {
     const d = new Date(iso); if (isNaN(d)) return "";
@@ -7864,7 +7865,7 @@ function makeNewsView(o) {
     const tb = o.tags && document.getElementById(o.tags);
     if (tb) {
       const cnt = {}; items.forEach((n) => { if (n.tag) cnt[n.tag] = (cnt[n.tag] || 0) + 1; });
-      const order = ["치안·테러", "시위·통제", "휴일·행사", "정치·선거", "전력·생활", "날씨·재난", "경제·유가", "한국·외교", "기타"].filter((t) => cnt[t]);
+      const order = (o.tagOrder || ["치안·테러", "시위·통제", "휴일·행사", "정치·선거", "전력·생활", "날씨·재난", "경제·유가", "한국·외교"]).concat("기타").filter((t) => cnt[t]);
       tb.innerHTML = ["전체"].concat(order).map((t) => `<button type="button" class="bnews-f${t === tagF ? " on" : ""}" data-t="${escapeHtml(t)}">${escapeHtml(t)} <small>${t === "전체" ? items.length : cnt[t]}</small></button>`).join("");
       tb.onclick = (e) => { const b = e.target.closest("[data-t]"); if (b) { tagF = b.dataset.t; draw(); } };
     }
@@ -7969,6 +7970,7 @@ makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, subN
   }).catch(() => {});
 })();
 makeNewsView({ view: "view-iraq-issues", json: "iraq-issues.json", days: 7, compact: true, iq: "inewsIq", iqN: "inewsIqN", count: "inewsCount", meta: "inewsMeta", tags: "inewsTags" });
+makeNewsView({ view: "view-fire-news", json: "fire-news.json", days: 30, ko: "fnewsKo", iq: "fnewsIq", koN: "fnewsKoN", iqN: "fnewsIqN", count: "fnewsCount", meta: "fnewsMeta", tags: "fnewsTags", tagOrder: ["용접·불티", "단열재·자재", "전기·배터리", "숙소·창고", "고층·건물", "공장·플랜트", "시장·상가"] });
 makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30, ko: "hnewsKo", iq: "hnewsIq", koN: "hnewsKoN", iqN: "hnewsIqN", count: "hnewsCount", meta: "hnewsMeta" });
 
 /* ==========================================================

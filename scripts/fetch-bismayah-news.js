@@ -106,8 +106,9 @@ const CFGS = {
     MUST2: /현장|공사|건설|공장|작업|근로자|노동자|작업자|용접|절단|숙소|기숙사|창고|물류|배터리|공사장|신축|리모델링|철거|타워|빌딩|건물|상가|시장|병원|호텔|플랜트|building|tower|warehouse|market|factory|hospital|site|construction|worker|labou?r|plant|refinery|mall|hotel|high-rise|skyscraper|برج|مستودع|مخزن|سوق|مصنع|معمل|مستشفى|مبنى|عمارة|موقع|فندق|مول|مجمع|دائرة|شركة|محطة|مصفى/i,
     TITLE_ONLY: true,
     // 산불·차량·재판·훈련·전쟁(포격)·'사격(fire)' 기사는 뺀다
-    NOT: /산불|들불|차량\s?화재|승용차|화재보험|모의|훈련|캠페인|예방\s?교육|선고|징역|재판|판결|기소|주가|특징주|소방관 채용|ceasefire|cease-fire|gunfire|open(ed)? fire|fired|firing|wildfire|forest fire|bushfire|airstrike|missile|drone strike|shelling|إطلاق (ال)?نار|وقف إطلاق|الغابات|غارة|قصف|صاروخ|مسيرة/i,
-    GROUP: true,
+    // 점검·협약·대책·교육 같은 예방 행정 기사, 보험·보상 기사, 유럽 등 다른 지역 기사도 뺀다 (실제 일어난 불만)
+    NOT: /점검|협약|대책|전수조사|지원|교육|체험|로봇|과학자|뉴스픽|주요뉴스|안전기준|성능검사|추진|확대|강화|재구성|기획|칼럼|사설|보상금|보험|리얄|insurance|파리|프랑스|유럽|باريس|فرنسا|Paris|France|산불|들불|차량\s?화재|승용차|화재보험|모의|훈련|캠페인|예방\s?교육|선고|징역|재판|판결|기소|주가|특징주|소방관 채용|ceasefire|cease-fire|gunfire|open(ed)? fire|fired|firing|wildfire|forest fire|bushfire|airstrike|missile|drone strike|shelling|إطلاق (ال)?نار|وقف إطلاق|الغابات|غارة|قصف|صاروخ|مسيرة/i,
+    GROUP: true, NOT_KO: true,
     TAGS: [
       ["용접·불티", /용접|절단|불티|그라인더|산소절단|welding|spark|لحام/i],
       ["단열재·자재", /우레탄|단열재|샌드위치\s?패널|스티로폼|자재|cladding|insulation|facade|الواجهة|العازل/i],
@@ -408,6 +409,8 @@ async function main() {
     list.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
   }
   // 분류 표시 (CFG.TAGS 가 있을 때만)
+  // 번역된 한국어 제목으로도 한 번 더 거른다 (아랍어 원문으로는 '보험·파리' 같은 낱말을 못 잡으므로)
+  if (CFG.NOT_KO && NOT) for (let i = list.length - 1; i >= 0; i--) if (NOT.test(list[i].titleKo || "")) list.splice(i, 1);
   if (CFG.TAGS) list.forEach((n) => { const t = n.title + " " + (n.titleKo || "") + " " + (n.related || []).map((r) => r.titleKo).join(" "); const hit = CFG.TAGS.find(([, re]) => re.test(t)); n.tag = hit ? hit[0] : "기타"; });
   // 바로 가는 원문 주소가 있으면 그걸 링크로 쓴다
   list.forEach((n) => { if (n.url && !/news\.google\.com/.test(n.url)) n.link = n.url; });
