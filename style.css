@@ -4342,3 +4342,69 @@ body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !impo
 .fi.go .fi-prog i { animation: fiProg 13s linear forwards; }
 @keyframes fiProg { to { width: 100%; } }
 .fi.open .fi-prog { opacity: 0; transition: opacity .4s; }
+
+/* ==========================================================
+   작업구역 화면 정리 — 색 규칙: 빨강 = 위험·동시작업 / 주황 = 날씨·입력 마감 / 청록 = 선택
+   파트 색은 작은 점으로만 · 지도 크게 · 경고는 한곳에 한 번
+   ========================================================== */
+.wz-layout { grid-template-columns: minmax(0, 1.85fr) minmax(320px, 1fr); }
+@media (max-width: 1100px) { .wz-layout { grid-template-columns: 1fr; } }
+/* 입력 안내 → ⓘ */
+.wz-info { position: relative; margin-left: auto; align-self: center; font-size: 12px; color: var(--text-dim); cursor: help; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border-soft); }
+.wz-info:hover, .wz-info:focus { color: var(--text); border-color: var(--border); outline: none; }
+.wz-info-pop { display: none; position: absolute; right: 0; top: calc(100% + 8px); z-index: 30; width: 320px; padding: 12px 14px; border-radius: 10px; background: #0d141b; border: 1px solid var(--border); box-shadow: 0 12px 30px rgba(0,0,0,.5); font-size: 12.5px; line-height: 1.6; color: var(--text-muted); cursor: default; }
+.wz-info-pop b { color: var(--text); } .wz-info-pop > b:first-child { display: block; margin-bottom: 4px; }
+.wz-info-pop small { display: block; margin-top: 6px; color: var(--text-dim); }
+.wz-info:hover .wz-info-pop, .wz-info:focus .wz-info-pop { display: block; }
+/* 숫자 한 줄 + 팀·파트 */
+.wz-filter-bar { margin: 2px 0 14px; }
+.wz-bar-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.wz-kpis { display: flex; flex-wrap: wrap; gap: 6px; }
+.wz-kpi { display: inline-flex; align-items: baseline; gap: 6px; padding: 5px 11px; border-radius: 8px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-soft); font-size: 12px; color: var(--text-muted); }
+.wz-kpi em { font-style: normal; }
+.wz-kpi b { font-family: var(--font-mono); font-size: 14px; color: var(--text); }
+.wz-kpi.risk { border-color: rgba(229,72,77,.45); background: rgba(229,72,77,.08); } .wz-kpi.risk b { color: #ff8a8d; }
+.wz-kpi.due { border-color: rgba(242,169,59,.5); background: rgba(242,169,59,.08); } .wz-kpi.due b { color: #f2a93b; }
+.wz-filt { display: flex; gap: 8px; align-items: center; }
+.wz-seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.wz-seg button { padding: 5px 11px; border: 0; background: transparent; color: var(--text-muted); font: inherit; font-size: 12px; cursor: pointer; }
+.wz-seg button + button { border-left: 1px solid var(--border-soft); }
+.wz-seg button small { font-family: var(--font-mono); color: var(--text-dim); margin-left: 2px; }
+.wz-seg button.on { background: rgba(53,208,192,.14); color: var(--cyan); } .wz-seg button.on small { color: var(--cyan); }
+.wz-part-sel { padding: 5px 10px; border-radius: 8px; border: 1px solid var(--border); background: #0f1720; color: var(--text); font: inherit; font-size: 12px; }
+/* 일정: 파트는 점 + 글자, 위험은 빨간 왼쪽 줄 */
+.wz-item { border-left-color: var(--border); }
+.wz-item.is-risk { border-left-color: rgba(229,72,77,.8); }
+.wz-part-badge { background: transparent; color: var(--text-muted); font-weight: 600; padding: 1px 0; display: inline-flex; align-items: center; gap: 5px; }
+.wz-part-badge i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); flex: none; }
+.wz-ic { margin-left: 5px; font-size: 12px; cursor: help; }
+.wz-item-tools { opacity: 0; }
+.wz-item:hover .wz-item-tools, .wz-item:focus-within .wz-item-tools { opacity: 1; }
+@media (hover: none) { .wz-item-tools { opacity: .7; } }
+.wz-item-tools button { width: 24px; height: 24px; padding: 0 !important; display: inline-grid; place-items: center; font-size: 12px !important; }
+.wz-item-tools .wz-del:hover { color: #ff8a8d; border-color: rgba(229,72,77,.6); }
+/* 주의사항 한곳에 */
+.wz-alerts:empty { display: none; }
+.wz-alerts { margin: 0 0 10px; padding: 10px 12px; border-radius: 10px; background: rgba(255,255,255,0.025); border: 1px solid var(--border-soft); }
+.wz-al-h { font-size: 12px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+.wz-al-h em { font-style: normal; font-family: var(--font-mono); color: #ff8a8d; margin-left: 4px; }
+.wz-alerts ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.wz-alerts li { padding-left: 10px; border-left: 3px solid; font-size: 12px; line-height: 1.5; }
+.wz-alerts li.risk { border-color: #e5484d; } .wz-alerts li.wx { border-color: #f2a93b; }
+.wz-alerts li b { display: block; color: var(--text); font-weight: 700; }
+.wz-alerts li span { color: var(--text-muted); } .wz-alerts li small { display: block; color: var(--text-dim); }
+.wz-copyweek-bar { margin: -4px 0 8px; }
+/* 지도 핀: 어두운 이름표 + 파트 점 (위험이면 빨간 테두리) */
+.wz-pin-tag { background: rgba(10,14,19,.88) !important; color: #fff !important; border: 1px solid rgba(255,255,255,.25); display: inline-flex; align-items: center; gap: 5px; }
+.wz-pin-tag::after { content: ""; order: -1; width: 7px; height: 7px; border-radius: 50%; background: var(--c); }
+.wz-pin-risky .wz-pin-tag { border-color: rgba(229,72,77,.85); }
+/* 확대 사진 상자: 빨간 띠 대신 어두운 머리띠 + 번호만 색 (위험이면 빨강) */
+.wz-co { border-color: rgba(255,255,255,.22); }
+.wz-co-h { background: rgba(255,255,255,.06); color: var(--text); border-bottom: 1px solid rgba(255,255,255,.08); }
+.wz-co-h b { color: var(--cyan); }
+.wz-co.risky .wz-co-h b { color: #ff6b6b; }
+.wz-co.risky { border-color: rgba(229,72,77,.6); }
+.wz-co-btn.on { background: rgba(53,208,192,.16); border-color: var(--cyan); color: var(--cyan); }
+.wz-item { position: relative; }
+.wz-item-tools { position: absolute; right: 0; top: -2px; margin: 0; padding: 2px; border-radius: 6px; background: rgba(13, 20, 27, 0.95); }
+.wz-day-row.wz-selected { outline-color: rgba(53, 208, 192, 0.7); background: rgba(53, 208, 192, 0.04); }

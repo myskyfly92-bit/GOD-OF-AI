@@ -2193,7 +2193,7 @@ function renderWorkZones(data) {
   wrap.innerHTML = `
     <div class="wz-home" id="wzHome"></div>
     <div class="wz-main" id="wzMain" hidden>
-    <div class="wz-zone-tabs"><button type="button" class="wz-home-back" id="wzHomeBack" title="이라크 지도에서 구역 다시 고르기">🗺 구역 선택</button>${tabsHtml}<div class="wz-guide-note"><b>📝 입력 안내</b> 사무실·창고 등 평소 근무 구역의 일상 업무는 적지 않아도 됩니다.<br><span>새 작업, 위험작업, 장비 투입처럼 <b>평소와 다른 작업</b>만 기입해 주세요.</span></div></div>
+    <div class="wz-zone-tabs"><button type="button" class="wz-home-back" id="wzHomeBack" title="이라크 지도에서 구역 다시 고르기">🗺 구역 선택</button>${tabsHtml}<span class="wz-info" tabindex="0">ⓘ 입력 안내<span class="wz-info-pop"><b>📝 입력 안내</b>사무실·창고 등 평소 근무 구역의 일상 업무는 적지 않아도 됩니다.<br>새 작업, 위험작업, 장비 투입처럼 <b>평소와 다른 작업</b>만 기입해 주세요.<br><small>전날 17시까지 다음 날 작업을 넣어 주세요.</small></span></span></div>
     <div class="wz-filter-bar" id="wzFilterBar"></div>
     <div class="wz-layout">
       <div class="wz-map-col">
@@ -2483,14 +2483,23 @@ function wzShowSchedule(zone) {
   wzLoadWx();
   const todayClash = wzClashes(zone, todayItems).length;
   const inWeek = dates.includes(today);
+  // 다음 근무일 입력 건수 (오후 2시 이후에만 강조)
+  const nd = wzNextWorkday(today), ndDow = WZ_DAY_ORDER[(new Date(nd + "T00:00:00Z").getUTCDay() + 6) % 7];
+  const ndN = (wzItems || []).filter((it) => it.date && wzOnDate(it, nd, ndDow)).length;
+  const lateDay = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Baghdad" })).getHours() >= 14;
+  const kpi = (lab, n, cls, title) => `<span class="wz-kpi ${cls || ""}" ${title ? `title="${wzEscapeHtml(title)}"` : ""}><em>${lab}</em><b>${n}</b></span>`;
   bar.innerHTML = `
-    <div class="wz-summary">${inWeek ? `오늘 작업 <b>${todayItems.length}</b>건 · 인원 <b>${todayItems.reduce((a, it) => a + it.crew, 0)}</b>명 · ${Object.keys(WZ_TEAMS).map((t) => `${t} ${todayItems.filter((it) => it.team === t).length}`).join(" · ")}
-      ${todayRisk ? `· <span class="wz-risk-sum">⚠ 위험작업 ${todayRisk}건</span>` : ""}${todayClash ? ` · <span class="wz-risk-sum">🚧 동시작업 주의 ${todayClash}</span>` : ""}` : "다른 주를 보고 있습니다"}</div>
-    ${wzTomorrowNote()}
-    <div class="wz-chips">${teamChips}</div>
-    <div class="wz-chips">${partChips}</div>`;
+    <div class="wz-bar-row">
+      <div class="wz-kpis">${inWeek ? kpi("오늘 작업", todayItems.length) + kpi("인원", todayItems.reduce((a, it) => a + it.crew, 0) + "명") +
+        kpi("⚠ 위험", todayRisk, todayRisk ? "risk" : "") + kpi("🚧 동시작업", todayClash, todayClash ? "risk" : "", "같은 날 가까운 자리에서 위험이 겹치는 작업") +
+        kpi(`📝 내일(${wzMD(nd)}) 입력`, ndN + "건", lateDay && !ndN ? "due" : "", "전날 17시까지 다음 날 작업을 넣어 주세요") : `<span class="wz-kpi"><em>다른 주를 보고 있습니다</em></span>`}</div>
+      <div class="wz-filt">
+        <div class="wz-seg">${[["all", "전체"], ...Object.keys(WZ_TEAMS).map((t) => [t, t])].map(([k, lab]) => `<button type="button" class="${wzTeam === k ? "on" : ""}" data-team="${wzEscapeHtml(k)}">${wzEscapeHtml(lab)} <small>${k === "all" ? weekItems.length : cnt((it) => it.team === k)}</small></button>`).join("")}</div>
+        <select class="wz-part-sel" aria-label="파트 고르기"><option value="">파트: 전체</option>${partList.map((p) => `<option value="${wzEscapeHtml(p)}" ${wzPart === p ? "selected" : ""}>${wzEscapeHtml(p)} (${cnt((it) => it.part === p)})</option>`).join("")}</select>
+      </div>
+    </div>`;
+  bar.querySelector(".wz-part-sel").onchange = (e) => { wzPart = e.target.value || null; wzShowSchedule(zone); };
   bar.querySelectorAll("[data-team]").forEach((b) => b.onclick = () => { wzTeam = b.dataset.team; wzPart = null; wzShowSchedule(zone); });
-  bar.querySelectorAll("[data-part]").forEach((b) => b.onclick = () => { wzPart = wzPart === b.dataset.part ? null : b.dataset.part; wzShowSchedule(zone); });
 
   const fmt = (iso) => `${Number(iso.slice(5, 7))}/${Number(iso.slice(8, 10))}`;
   const canEdit = !!((wzConfig && wzConfig.appsScriptUrl) || "").trim();
@@ -2498,19 +2507,21 @@ function wzShowSchedule(zone) {
     const iso = dates[i];
     const list = weekItems.filter((it) => wzOnDate(it, iso, day)).filter(wzPassFilter);
     const clash = wzClashes(zone, weekItems.filter((it) => wzOnDate(it, iso, day)));
-    const clashOf = (it) => clash.filter((c) => c.a === it || c.b === it).map((c) => `<div class="wz-clash">${wzEscapeHtml(c.msg)} <small>· '${wzEscapeHtml((c.a === it ? c.b : c.a).work)}'와 가까움</small></div>`).join("");
+    const icons = (it) => {
+      const cl = clash.filter((c) => c.a === it || c.b === it), w = wzWxItem(it, iso);
+      return (cl.length ? `<span class="wz-ic risk" title="${wzEscapeHtml(cl.map((c) => c.msg + " · '" + (c.a === it ? c.b : c.a).work + "'와 가까움").join("\n"))}">🚧</span>` : "") +
+        (w ? `<span class="wz-ic wx" title="${wzEscapeHtml(w)}">🌬</span>` : "");
+    };
     const items = list.map((it) => `
-      <div class="wz-item${it.pending ? " wz-item-pending" : ""}" style="--c:${WZ_PART_COLORS[it.part] || "#8996a6"}">
-        <span class="wz-part-badge">${wzEscapeHtml(it.part || it.team || "–")}</span>
+      <div class="wz-item${it.pending ? " wz-item-pending" : ""}${it.risks.length ? " is-risk" : ""}" style="--c:${WZ_PART_COLORS[it.part] || "#8996a6"}">
+        <span class="wz-part-badge"><i></i>${wzEscapeHtml(it.part || it.team || "–")}</span>
         <div class="wz-item-body">
-          <div class="wz-item-work">${it.pending ? '<span class="wz-pend">⏳ 저장 중</span> ' : ""}${wzEscapeHtml(it.work)}${it.dateEnd ? ` <span class="wz-repeat wz-range">${wzMD(it.date)}~${wzMD(it.dateEnd)}${it.noFri ? " 금 제외" : ""}</span>` : it.date ? "" : ' <span class="wz-repeat">매주</span>'}${it.wtime ? ` <span class="wz-time">🕘 ${wzEscapeHtml(it.wtime)}</span>` : ""}</div>
+          <div class="wz-item-work">${it.pending ? '<span class="wz-pend">⏳ 저장 중</span> ' : ""}${wzEscapeHtml(it.work)}${icons(it)}${it.dateEnd ? ` <span class="wz-repeat wz-range">${wzMD(it.date)}~${wzMD(it.dateEnd)}${it.noFri ? " 금 제외" : ""}</span>` : it.date ? "" : ' <span class="wz-repeat">매주</span>'}${it.wtime ? ` <span class="wz-time">🕘 ${wzEscapeHtml(it.wtime)}</span>` : ""}</div>
           ${(it.loc || it.person || it.note || it.crew) ? `<div class="wz-item-meta">${[it.loc && "📍 " + wzEscapeHtml(it.loc), it.crew && "👥 " + it.crew + "명", it.person && "👷 " + wzEscapeHtml(maskName(it.person)), it.note && wzEscapeHtml(it.note)].filter(Boolean).join(" · ")}</div>` : ""}
           ${it.equip ? `<div class="wz-item-equip">🚜 ${wzEscapeHtml(it.equip)}</div>` : ""}
           ${it.risks.length ? `<div class="wz-risks">${it.risks.map((r) => `<span class="wz-risk">⚠ ${wzEscapeHtml(r)}</span>`).join("")}</div>` : ""}
-          ${(() => { const w = wzWxItem(it, iso); return w ? `<div class="wz-wxwarn">${wzEscapeHtml(w)}</div>` : ""; })()}
-          ${clashOf(it)}
         </div>
-        ${canEdit && !it.pending ? `<span class="wz-item-tools"><button type="button" class="wz-edit" data-row="${it.row}" title="수정">수정</button><button type="button" class="wz-copy" data-row="${it.row}" title="같은 작업을 다른 날짜로 다시 넣기">복사</button><button type="button" class="wz-del" data-row="${it.row}" title="삭제">삭제</button></span>` : ""}
+        ${canEdit && !it.pending ? `<span class="wz-item-tools"><button type="button" class="wz-edit" data-row="${it.row}" title="수정" aria-label="수정">✎</button><button type="button" class="wz-copy" data-row="${it.row}" title="복사 — 같은 작업을 다른 날짜로 다시 넣기" aria-label="복사">⧉</button><button type="button" class="wz-del" data-row="${it.row}" title="삭제" aria-label="삭제">✕</button></span>` : ""}
       </div>`).join("");
     return `
       <div class="wz-day-row wz-day-v2 ${list.length ? "" : "wz-day-empty"} ${iso === today ? "wz-today" : ""}">
@@ -2524,7 +2535,7 @@ function wzShowSchedule(zone) {
         <button type="button" data-w="-1" aria-label="이전 주">‹</button>
         <span>${fmt(dates[0])} ~ ${fmt(dates[6])}${wzWeekOffset === 0 ? " (이번 주)" : ""}</span>
         <button type="button" data-w="1" aria-label="다음 주">›</button>
-      </span></div>`) + (canEdit ? `<div class="wz-copyweek-bar"><button type="button" class="wz-copyweek" id="wzCopyWeek" title="지난주 같은 요일 작업을 이번 주로 한꺼번에 옮겨 적기">📋 지난주 작업 그대로 가져오기</button></div>` : "") + `<div class="wz-day-list">${rows}</div>`;
+      </span></div>`) + (canEdit ? `<div class="wz-copyweek-bar"><button type="button" class="wz-copyweek" id="wzCopyWeek" title="지난주 같은 요일 작업을 이번 주로 한꺼번에 옮겨 적기">📋 지난주 작업 가져오기</button></div>` : "") + `<div class="wz-alerts" id="wzAlerts"></div><div class="wz-day-list">${rows}</div>`;
   col.querySelectorAll(".wz-week-nav button").forEach((b) => b.onclick = () => { wzWeekOffset += Number(b.dataset.w); wzSelDate = null; wzShowSchedule(zone); });
 
   // 수정·삭제 버튼 (누를 때 그 줄 선택(날짜 바꾸기)이 같이 일어나지 않게 막는다)
@@ -2563,7 +2574,17 @@ function wzShowSchedule(zone) {
   const selDay = WZ_DAY_ORDER[dates.indexOf(sel)];
   const dayItems = weekItems.filter((it) => wzOnDate(it, sel, selDay)).filter(wzPassFilter);
   wzRenderPins(zone, dayItems, `${selDay} ${fmt(sel)}${sel === today ? " (오늘)" : ""}`);
-  wzDrawClash(zone, wzClashes(zone, weekItems.filter((it) => wzOnDate(it, sel, selDay))));
+  const selAll = weekItems.filter((it) => wzOnDate(it, sel, selDay));
+  const selClash = wzClashes(zone, selAll);
+  wzDrawClash(zone, selClash);
+  // 고른 날의 주의사항: 동시작업 · 날씨를 한곳에 한 번씩
+  const al = document.getElementById("wzAlerts");
+  if (al) {
+    const wxs = [...new Set(selAll.map((it) => wzWxItem(it, sel)).filter(Boolean))].map((w) => ({ t: w, who: selAll.filter((it) => wzWxItem(it, sel) === w).map((it) => it.work) }));
+    const list = selClash.map((c) => `<li class="risk"><b>${wzEscapeHtml(c.msg.split(" — ")[0])}</b><span>${wzEscapeHtml(c.a.work)} ↔ ${wzEscapeHtml(c.b.work)}</span><small>${wzEscapeHtml(c.msg.split(" — ")[1] || "")}</small></li>`)
+      .concat(wxs.map((w) => `<li class="wx"><b>${wzEscapeHtml(w.t.split(" — ")[0])}</b><span>${w.who.map(wzEscapeHtml).join(", ")}</span><small>${wzEscapeHtml(w.t.split(" — ")[1] || "")}</small></li>`));
+    al.innerHTML = list.length ? `<div class="wz-al-h">${wzEscapeHtml(selDay)} ${fmt(sel)} 주의사항 <em>${list.length}</em></div><ul>${list.join("")}</ul>` : "";
+  }
 }
 // 지도: 겹치는 두 작업을 빨간 점선으로 잇고 가운데 ⚠
 function wzDrawClash(zone, list) {
@@ -7215,7 +7236,7 @@ async function clinicCall(action, payload) {
       { go: "view-workzone", act: () => window.wzShowHome && window.wzShowHome(false), sel: "#wzHome", text: `여기가 <b>작업구역</b>이에요. 처음엔 <b>이라크 지도</b>와 함께 BNCP 현장의 세 구역(<b>캠프 · Site 북부 · Site 남부</b>)이 나오고, 구역마다 <b>오늘 작업 건수·위험작업·인원</b>이 보여요. 보고 싶은 구역을 누르세요.` },
       { act: () => window.wzOpenZone && window.wzOpenZone(0), sel: ".wz-zone-tabs", text: `구역에 들어오면 위쪽 버튼으로 다른 구역으로 바로 옮길 수 있고, <b>🗺 구역 선택</b>을 누르면 지도 화면으로 돌아가요.` },
       { sel: "#wzScheduleCol", text: `오른쪽은 <b>주간 작업일정</b>이에요. ‹ › 로 주를 옮기고, 요일을 누르면 그날 작업 위치가 지도에 표시돼요.` },
-      { sel: "#wzFilterBar", text: `<b>팀·파트 버튼</b>을 누르면 그 팀 작업만 걸러서 볼 수 있어요.` },
+      { sel: "#wzFilterBar", text: `위쪽 숫자 줄에서 <b>오늘 작업·인원·위험·동시작업·내일 입력 건수</b>를 한눈에 보고, 오른쪽 <b>팀 버튼과 '파트' 선택</b>으로 그 팀·파트 작업만 걸러 볼 수 있어요.` },
       { sel: "#wzCopyWeek", opt: true, text: `<b>📋 지난주 작업 그대로 가져오기</b>를 누르면 지난주 같은 요일 작업이 이번 주로 한꺼번에 복사돼요. 작업마다 있는 <b>복사</b> 버튼은 같은 작업을 날짜만 바꿔 다시 넣을 때 써요.<br>같은 날 가까운 자리에 위험한 작업이 겹치면(용접 옆 도장, 크레인 인양 아래 작업 등) <b>🚧 동시작업 주의</b>가 뜨고, 바람·더위가 심한 날은 크레인·고소작업에 <b>🌬 경고</b>가 붙어요.` },
       { sel: "#wzPickToggle", text: `작업을 새로 넣으려면 <b>➕ 지도에 작업 추가</b>를 누르고, 지도에서 작업 위치를 클릭하세요.` },
       { sel: "#wzViewport", text: `그러면 입력창이 떠요. <b>날짜 · 작업시간(몇 시~몇 시) · 파트 · 작업내용(필수)</b>을 넣고, <b>사용장비</b>(종류 → 규격 → 대수 → 추가), 세부위치, <b>위험작업 체크</b>, 작업인원, 담당자를 채운 뒤 <b>저장</b>을 누르면 구글 시트에 바로 저장돼요.<br>위험작업으로 체크하면 종합현황 '오늘 작업'에 ⚠ 로 따로 세어져요.` },
