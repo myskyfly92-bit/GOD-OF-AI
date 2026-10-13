@@ -1,13 +1,27 @@
 {
-  "generatedAt": "2026-10-12T00:32:31.935Z",
+  "generatedAt": "2026-10-13T02:34:53.353Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
-      "title": "AI의 도움으로 24시간 끊김없는 돌봄, 더 쉽게 누리는 복지, 사람에 집중하는 돌봄 만든다",
+      "title": "여행건강알림e : HOME",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKTWN3aV9fQVZCVG45d1V3LTQyUXMwSlFEM1lGU2h6Z05hYk5FdEM4N0lTSG5QVjY4UEY4ZUU4TGtkTGM3X0lDdmxQWmdPcmVuN1FDMVpQdDZxQmc?oc=5",
+      "date": "2026-09-30T14:38:13.000Z"
+    },
+    {
+      "title": "지침",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0RTllaXJiOXVCbVFEQjJqZ3FKLTVMNHNHV1BDLWxjMXpHX2tOLUJoY1dhNDFIVnFCeFJ6X2pLb01IZTZJWU1ablFmcktsX0txQTlZSUdB?oc=5",
+      "date": "2025-12-16T12:27:05.000Z"
+    },
+    {
+      "title": "AI의 위로가 사람을 대신할 수 없습니다 「정신건강 목적 생성형 AI 이용 가이드라인」 발표",
       "source": "보건복지부 대표홈페이지",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNX21CZm93bjhaOXV5a2RxX3ZleW1DaFY2cEJvdEg0aTlsOE5ZX0h5RzBsMXpfM2F4RDgwSDVBR202Q243ejlBUGdwVDJ4REp0ZVItcXlnWmVreGlySjVHai12dDJad3hCVFdodUpDUEtHMXRWRDNyX0ViVzhHTzZlSWM0cU5FbjEzREhneEpETEVfbW9PcHFtLU1jVQ?oc=5",
-      "date": "2026-10-06T02:45:00.000Z"
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTGtscTNMUUxNMFZKU2dJSElQMldSaEVpSnBjaEVHb1FhbXhsRUNlQ3g0UzdkLVhIZUt1MFUtaTVfM19XRGtTYUhNejFpYk5ta3RXbVZhdGxkUlJ5QmtLVjRFcjBaT3RlYk42LUR3Y0lOenFFOEtycURTV0FIYmRlMVlRUGg1TzBzQkZfbE1sOF9ySDJ1bkc0U1djcw?oc=5",
+      "date": "2026-10-08T04:35:00.000Z"
     },
     {
       "title": "보도자료 - [10.8.목.조간] 임신당뇨병 산모의 자녀, 당뇨병 위험 최대 4배 이상 높아",
@@ -31,25 +45,18 @@
       "date": "2024-06-10T03:38:59.000Z"
     },
     {
-      "title": "지침",
+      "title": "원시자료",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0RTllaXJiOXVCbVFEQjJqZ3FKLTVMNHNHV1BDLWxjMXpHX2tOLUJoY1dhNDFIVnFCeFJ6X2pLb01IZTZJWU1ablFmcktsX0txQTlZSUdB?oc=5",
-      "date": "2025-12-16T12:27:05.000Z"
-    },
-    {
-      "title": "보도자료(전체)",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
-      "date": "2025-12-16T15:46:00.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjMVpCbVpsS2Z6NmFPSFJOQzZBT2Z4TDhwRkxtdjRQOHlPTUFDQzdNbzl2Nk5BZ2owZGhsMkswVEllOFBjVmliMjhnamxncWlRbmhhY2NR?oc=5",
+      "date": "2026-01-16T10:40:08.000Z"
     },
     {
       "title": "- 질병관리청",
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-10T05:56:30.000Z"
+      "date": "2026-10-12T23:38:52.000Z"
     },
     {
       "title": "감시체계 연보",
@@ -73,18 +80,11 @@
       "date": "2025-12-16T15:48:42.000Z"
     },
     {
-      "title": "신고현황",
+      "title": "ICCON 감염예방 소식지",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MbExBX0JEd0RiZmxBQ3djZnFIQjdYUGwycC1BdUlvMDFDV0VOLUFmbU5QSU00TmNINE5BdmE5NlRVSThkN0c3TVJDa3dHRFJJWlNKWkZ3?oc=5",
-      "date": "2025-12-16T16:42:42.000Z"
-    },
-    {
-      "title": "약국 이름에 ‘창고’, ‘마트’, ‘공장’, ‘최대’, ‘특가’ 못 쓴다... 「약사법 시행규칙」 개정 추진",
-      "source": "보건복지부 대표홈페이지",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSGtLOHFJSGdRa3ZfelRLQW9iU3o5Qlp6UnhPVFRUNmkxZUE0OG1xTGZVY2ZUREthZlRtclpkYUEzLV9XczJ0dTdLaF9VNlVaeHlfVnhWSEw3QzhaYlExb0tfSkJBdkZzM2tranUwcmJ2akliODN4Q3kyNVlFbzBtWVdCc1ZmZ2k2eXBtUnVSLU16WjNtTGhjYy1FTQ?oc=5",
-      "date": "2026-10-06T07:53:00.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ueXN2cXpmUkJyLWV2cHc4VHB3Sm01dGcwc09pTlNXVG5xZjE4bHpvUFgxOVktQjJoLXJHRmJRTHM4TXhrbmJLZ1JTQ25yWklLeDlqek1B?oc=5",
+      "date": "2025-12-16T15:49:07.000Z"
     }
   ]
 }
