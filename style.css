@@ -4117,22 +4117,27 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .wz-zoombox { position: relative; max-width: none; }
 .wz-co-btn { width: auto; padding: 0 12px; display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-body); font-size: 13px; flex: none; }
 
-/* 오늘 작업 현황: '작업구역 탭에서 보기' — 칸 제목줄(TODAY'S WORK · 오늘 작업 현황 · 10/13)과 같은 글꼴·색으로 조용히,
-   화살표만 가끔 살짝 움직여 '누를 수 있다'는 것만 알려 준다 */
+/* 오늘 작업 현황: '작업구역 지도' 버튼 — 위쪽 메뉴 버튼(종합현황·안전…)과 같은 알약 모양,
+   왼쪽에 현장 지도 미리보기 동그라미 · 오른쪽 화살표 · 마우스를 올리면 메뉴 선택처럼 청록으로 채워짐 */
 .today-work-panel { position: relative; }
 .today-work-panel .tw-link, .fit-fx .today-work-panel .tw-link {
-  position: absolute; top: 16px; right: 18px; margin: 0; z-index: 2;
-  display: inline-flex; align-items: center; gap: 6px; padding: 4px 4px 4px 10px; border-radius: 6px;
-  font-family: var(--font-mono); font-size: 11.5px; font-weight: 600; letter-spacing: 0.12em; color: var(--cyan);
-  background: transparent; border: 1px solid transparent; animation: none; box-shadow: none; text-shadow: none;
-  transition: background .2s, border-color .2s, color .2s;
+  position: absolute; top: 10px; right: 14px; margin: 0; z-index: 2;
+  display: inline-flex; align-items: center; gap: 8px; padding: 4px 6px 4px 4px; border-radius: 999px;
+  font-family: var(--font-body); font-size: 13px; font-weight: 700; letter-spacing: 0; color: var(--text);
+  background: rgba(10, 14, 19, 0.7); border: 1px solid var(--border); backdrop-filter: blur(4px);
+  box-shadow: 0 4px 14px rgba(0,0,0,.35); animation: none; text-shadow: none; cursor: pointer;
+  transition: background .18s, border-color .18s, color .18s, transform .18s;
 }
 .today-work-panel .tw-link::after { content: none; }
-.today-work-panel .tw-link .tw-arr { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; border: 1px solid rgba(53, 208, 192, 0.45); font-size: 11px; line-height: 1; animation: twNudge 3.2s ease-in-out infinite; }
-.today-work-panel .tw-link:hover { color: #fff; background: rgba(53, 208, 192, 0.08); border-color: rgba(53, 208, 192, 0.35); }
-.today-work-panel .tw-link:hover .tw-arr { background: var(--cyan); color: #0a0e13; border-color: var(--cyan); animation: none; }
+.tw-thumb { width: 28px; height: 28px; border-radius: 50%; flex: none; background: url("assets/site-map.png?v=3") center / cover; box-shadow: 0 0 0 1.5px rgba(53,208,192,.7), 0 0 0 4px rgba(53,208,192,.12); position: relative; overflow: hidden; }
+.tw-thumb::after { content: ""; position: absolute; left: 50%; top: 50%; width: 5px; height: 5px; margin: -2.5px; border-radius: 50%; background: #ff4d4f; box-shadow: 0 0 0 1.5px rgba(255,255,255,.9), 0 0 6px rgba(255,77,79,.8); animation: twPin 2.4s ease-in-out infinite; }
+@keyframes twPin { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.35); } }
+.tw-txt { padding-right: 2px; }
+.today-work-panel .tw-link .tw-arr { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: rgba(53,208,192,.14); color: var(--cyan); font-size: 15px; line-height: 1; border: 0; animation: twNudge 3.2s ease-in-out infinite; }
+.today-work-panel .tw-link:hover { color: var(--bg, #0a0e13); background: var(--cyan); border-color: var(--cyan); transform: translateY(-1px); }
+.today-work-panel .tw-link:hover .tw-arr { background: rgba(10,14,19,.18); color: #0a0e13; animation: none; transform: translateX(2px); }
 @keyframes twNudge { 0%, 70%, 100% { transform: translateX(0); } 80% { transform: translateX(3px); } 90% { transform: translateX(0); } }
-@media (prefers-reduced-motion: reduce) { .today-work-panel .tw-link .tw-arr { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .today-work-panel .tw-link .tw-arr, .tw-thumb::after { animation: none; } }
 @media (max-width: 560px) { .today-work-panel .tw-link { position: static; margin-top: 10px; } }
 
 /* 지도 스크롤바: 상황실 색(어두운 바탕 + 청록) */
