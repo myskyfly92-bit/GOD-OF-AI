@@ -87,6 +87,37 @@ const CFGS = {
       ["한국·외교", /한국|한화|대사|외교|korea|hanwha|embassy|ambassador|envoy|كوريا|السفارة|سفير/i],
     ],
   },
+  // NEWS_CFG=fire : 소방 > 화재 사례 (국내 건설현장·공장·숙소 화재 / 중동 대형 화재, 최근 30일)
+  fire: {
+    OUT: "fire-news.json", KEEP_DAYS: 30, MAX_ITEMS: 80, BODY_PER_RUN: 15,
+    SEARCHES: [
+      { lang: "ko", q: "공사현장 화재 when:3d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "건설현장 화재 when:3d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "(신축 OR 공사장 OR 리모델링 OR 철거) 화재 when:3d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "(용접 OR 불티 OR 우레탄 OR 단열재) 화재 when:7d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "(공장 OR 물류창고 OR 기숙사) 화재 근로자 when:3d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ko", q: "(배터리 OR 전동킥보드 OR ESS) 화재 (공장 OR 숙소 OR 현장) when:7d", hl: "ko", gl: "KR", ceid: "KR:ko" },
+      { lang: "ar", q: "حريق (بغداد OR العراق) when:3d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+      { lang: "ar", q: "حريق (برج OR مستودع OR سوق OR مصنع OR مستشفى OR مبنى) (السعودية OR الإمارات OR دبي OR الكويت OR قطر OR الأردن) when:7d", hl: "ar", gl: "IQ", ceid: "IQ:ar" },
+      { lang: "en", q: "fire (building OR tower OR warehouse OR market OR factory OR hospital OR \"construction site\" OR \"labour camp\") (UAE OR Dubai OR \"Abu Dhabi\" OR Saudi OR Riyadh OR Jeddah OR Kuwait OR Qatar OR Iraq OR Baghdad OR Oman OR Bahrain) when:7d", hl: "en-US", gl: "US", ceid: "US:en" },
+    ],
+    // 제목에 '불'이 있어야 하고 + 일터·건물을 뜻하는 말이 있어야 한다
+    MUST: /화재|불길|불이 나|불나|큰불|불타|전소|폭발|진화|불티|fire|blaze|ablaze|inferno|burn|حريق|حرائق|النيران|اندلاع|احتراق|الحريق/i,
+    MUST2: /현장|공사|건설|공장|작업|근로자|노동자|작업자|용접|절단|숙소|기숙사|창고|물류|배터리|공사장|신축|리모델링|철거|타워|빌딩|건물|상가|시장|병원|호텔|플랜트|building|tower|warehouse|market|factory|hospital|site|construction|worker|labou?r|plant|refinery|mall|hotel|high-rise|skyscraper|برج|مستودع|مخزن|سوق|مصنع|معمل|مستشفى|مبنى|عمارة|موقع|فندق|مول|مجمع|دائرة|شركة|محطة|مصفى/i,
+    TITLE_ONLY: true,
+    // 산불·차량·재판·훈련·전쟁(포격)·'사격(fire)' 기사는 뺀다
+    NOT: /산불|들불|차량\s?화재|승용차|화재보험|모의|훈련|캠페인|예방\s?교육|선고|징역|재판|판결|기소|주가|특징주|소방관 채용|ceasefire|cease-fire|gunfire|open(ed)? fire|fired|firing|wildfire|forest fire|bushfire|airstrike|missile|drone strike|shelling|إطلاق (ال)?نار|وقف إطلاق|الغابات|غارة|قصف|صاروخ|مسيرة/i,
+    GROUP: true,
+    TAGS: [
+      ["용접·불티", /용접|절단|불티|그라인더|산소절단|welding|spark|لحام/i],
+      ["단열재·자재", /우레탄|단열재|샌드위치\s?패널|스티로폼|자재|cladding|insulation|facade|الواجهة|العازل/i],
+      ["전기·배터리", /전기|누전|합선|배터리|리튬|전동킥보드|ESS|electrical|short circuit|battery|تماس كهربائي|بطارية|كهربائي/i],
+      ["숙소·창고", /숙소|기숙사|창고|물류|warehouse|dormitor|labou?r camp|accommodation|مستودع|مخزن|سكن/i],
+      ["고층·건물", /고층|타워|빌딩|오피스텔|아파트|tower|high-rise|skyscraper|apartment|residential|برج|عمارة|مبنى|شقة/i],
+      ["공장·플랜트", /공장|플랜트|정유|화학|발전소|factory|plant|refinery|chemical|مصنع|معمل|مصفى|محطة/i],
+      ["시장·상가", /시장|상가|백화점|마트|market|mall|souq|souk|سوق|مول|محلات/i],
+    ],
+  },
   // NEWS_CFG=sa : 상황판 하단 '중대재해 보도' 알림 (국내 산업현장 사망사고 기사, 최근 7일)
   sa: {
     OUT: "sa-news.json", KEEP_DAYS: 7, MAX_ITEMS: 40, BODY_PER_RUN: 12, COMPANY: true,
