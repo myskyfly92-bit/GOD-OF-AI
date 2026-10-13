@@ -66,6 +66,17 @@
     const d = today(), hit = ls.get("vcDay") !== d;
     const tick = (h) => gas("action=visit&h=" + (h ? 1 : 0) + "&vid=" + vid).then((r) => {
       if (!r || !r.ok) return; if (h) ls.set("vcDay", d);
+      // 🎁 100번째 · 1,000번째 방문자 당첨 축하 (캡처해서 HSE팀에)
+      const G = r.gifts || [100, 1000], n = r.you != null ? Number(r.you) : (h ? Number(r.total) : 0);
+      if (h && G.includes(n) && !ls.get("vcWin_" + n)) {
+        ls.set("vcWin_" + n, "1");
+        const at = new Date().toLocaleString("ko-KR", { timeZone: TZ, hour12: false });
+        const bg = document.createElement("div"); bg.className = "vc-win-bg";
+        bg.innerHTML = `<div class="vc-win"><div class="vc-win-burst">🎉</div><div class="vc-win-n">${fmt(n)}<small>번째</small></div><h2>축하합니다! 행운의 방문자</h2>
+          <p>상황실의 <b>${fmt(n)}번째</b> 방문자가 되셨어요.<br>이 화면을 <b>캡처</b>해서 <b>HSE팀</b>에 보내 주시면 작은 선물을 드립니다 🎁</p>
+          <div class="vc-win-code">당첨 확인번호 <b>#${n}-${String(vid).slice(0, 6).toUpperCase()}</b><br><span>${esc(at)} (바그다드)</span></div><button type="button">확인했어요</button></div>`;
+        bg.querySelector("button").onclick = () => bg.remove(); document.body.appendChild(bg);
+      }
       $("#vc").innerHTML = `TODAY <b class="t">${fmt(r.today)}</b> · TOTAL <b>${fmt(r.total)}</b>` + (r.online > 0 ? ` · <b class="n">● ${r.online}</b>` : "");
     }).catch(() => {});
     tick(hit); setInterval(() => { if (!document.hidden) tick(false); }, 90000);

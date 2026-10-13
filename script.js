@@ -8349,12 +8349,47 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       box.title = `${typeof r.online === "number" ? `지금 접속 ${r.online} · ` : ""}오늘 ${r.today} · 어제 ${r.yesterday} · 누적 ${r.total} (${String(r.since).replace(/(\d{4})(\d\d)(\d\d)/, "$1.$2.$3")}부터, 기기마다 하루 한 번만 셉니다)`;
       if (last !== null && r.today > last) { elT.classList.remove("bump"); void elT.offsetWidth; elT.classList.add("bump"); }
       last = r.today; lastErr = "";
+      vcGift(r, hit, sid);
       try { localStorage.setItem("vcLast", JSON.stringify({ day: d, today: r.today, total: r.total })); } catch (e) {}
       box.style.opacity = "";
       box.hidden = false;
     } catch (e) { showErr(e.name === "AbortError" ? "응답이 20초 넘게 없음 (구글 서버 지연)" : "연결 실패: " + e.message); }
     finally { clearTimeout(to); busy = false; }
   }
+  // 🎁 100번째 · 1,000번째 방문자 선물: 안내 한 줄 + 당첨되면 축하 창 (캡처해서 HSE팀에 보내기)
+  function vcGift(r, hit, vid) {
+    const G = Array.isArray(r.gifts) && r.gifts.length ? r.gifts : [100, 1000];
+    const line = document.getElementById("vcGift"), left = document.getElementById("vcGiftLeft");
+    const next = G.find((n) => n > r.total);
+    if (line) {
+      line.hidden = !next && !r.you;
+      if (left) left.textContent = next ? ` · 다음 행운 번호까지 ${(next - r.total).toLocaleString("en-US")}명` : "";
+    }
+    // 당첨 판정: 새 서버는 '몇 번째'(you)를 알려 주고, 예전 서버면 방금 올린 TOTAL 로 판단
+    const n = r.you != null ? Number(r.you) : (hit ? Number(r.total) : 0);
+    if (!hit || !G.includes(n)) return;
+    try { if (localStorage.getItem("vcWin_" + n)) return; localStorage.setItem("vcWin_" + n, "1"); } catch (e) {}
+    const at = new Date().toLocaleString("ko-KR", { timeZone: "Asia/Baghdad", hour12: false });
+    const bg = document.createElement("div");
+    bg.className = "vc-win-bg";
+    bg.innerHTML = `<div class="vc-win" role="dialog" aria-label="방문자 선물 당첨">
+      <div class="vc-win-burst">🎉</div>
+      <div class="vc-win-n">${n.toLocaleString("en-US")}<small>번째</small></div>
+      <h2>축하합니다! 행운의 방문자입니다</h2>
+      <p>비스마야 안전보건환경 상황실의 <b>${n.toLocaleString("en-US")}번째</b> 방문자가 되셨어요.<br>이 화면을 <b>캡처</b>해서 <b>HSE팀</b>에 보내 주시면 작은 선물을 드립니다 🎁</p>
+      <div class="vc-win-code">당첨 확인번호 <b>#${n}-${String(vid || "").slice(0, 6).toUpperCase()}</b><br><span>${at} (바그다드)</span></div>
+      <button type="button">확인했어요</button>
+    </div>`;
+    bg.querySelector("button").onclick = () => bg.remove();
+    document.body.appendChild(bg);
+    for (let i = 0; i < 40; i++) {
+      const c = document.createElement("i"); c.className = "vc-conf";
+      c.style.left = Math.random() * 100 + "vw"; c.style.background = ["#f2a93b", "#35d0c0", "#ff6b6b", "#7aa7ff", "#ffd84d"][i % 5];
+      c.style.animationDelay = Math.random() * 1.2 + "s"; c.style.animationDuration = 2.4 + Math.random() * 1.6 + "s";
+      bg.appendChild(c);
+    }
+  }
+  window.hseGiftTest = (n) => vcGift({ total: n, you: n, gifts: [100, 1000] }, true, sid);
   // 아직 서버 준비 전이면 흐리게 '–' 로 두고, 마우스를 올리면 이유가 보이게 한다
   function showErr(msg) {
     console.warn("[방문자 카운터]", msg);

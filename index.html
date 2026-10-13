@@ -45,7 +45,7 @@ html.intro-pending::after {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261013d">
+<link rel="stylesheet" href="style.css?v=20261013e">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -76,6 +76,7 @@ html.intro-pending::after {
       <div class="visit-counter notranslate" id="visitCounter" translate="no" hidden title="이 화면을 연 기기 수 (기기마다 하루 한 번만 셉니다)">
         <span class="vc-k">TODAY</span><b class="vc-today" id="vcToday">0</b><span class="vc-sep">|</span><span class="vc-k">TOTAL</span><b class="vc-total" id="vcTotal">0</b><span class="vc-now" id="vcNowWrap" hidden><span class="vc-sep">|</span><i class="vc-dot"></i><span class="vc-k">NOW</span><b class="vc-on" id="vcNow">0</b></span>
       </div>
+      <div class="vc-gift notranslate" id="vcGift" translate="no" hidden>🎁 <b>100번째</b> · <b>1,000번째</b> 방문자께 작은 선물을 드려요<span id="vcGiftLeft"></span></div>
     </div>
   </div>
   <div class="topbar-status">
@@ -1118,7 +1119,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261013d"></script>
+<script src="script.js?v=20261013e"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">
