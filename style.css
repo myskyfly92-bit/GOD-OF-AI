@@ -1235,6 +1235,7 @@ a:focus-visible, button:focus-visible {
 
 .wz-zone-tabs {
   display: flex;
+  align-items: center;
   gap: 8px;
   margin-bottom: 16px;
   flex-wrap: wrap;
@@ -3840,3 +3841,9 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
   .hg-again img { margin: 0 !important; }
   .footer { padding-bottom: 70px !important; }
 }
+
+/* 작업구역 입력 안내 (구역 탭 오른쪽) */
+.wz-guide-note { margin-left: auto; align-self: center; font-size: 12px; line-height: 1.5; color: var(--text-muted); padding: 6px 12px; border-left: 3px solid var(--amber); background: rgba(242,169,59,.07); border-radius: 0 8px 8px 0; flex: 1 1 300px; max-width: 560px; }
+.wz-guide-note > b { color: var(--amber); margin-right: 4px; }
+.wz-guide-note span { color: var(--text-dim); } .wz-guide-note span b { color: var(--text); font-weight: 700; }
+@media (max-width: 900px) { .wz-guide-note { margin-left: 0; flex-basis: 100%; } }

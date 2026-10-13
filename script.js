@@ -2097,7 +2097,7 @@ function renderWorkZones(data) {
   `).join("");
 
   wrap.innerHTML = `
-    <div class="wz-zone-tabs">${tabsHtml}</div>
+    <div class="wz-zone-tabs">${tabsHtml}<div class="wz-guide-note"><b>📝 입력 안내</b> 사무실·창고 등 평소 근무 구역의 일상 업무는 적지 않아도 됩니다.<br><span>새 작업, 위험작업, 장비 투입처럼 <b>평소와 다른 작업</b>만 기입해 주세요.</span></div></div>
     <div class="wz-filter-bar" id="wzFilterBar"></div>
     <div class="wz-layout">
       <div class="wz-map-col">
