@@ -4002,3 +4002,8 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .vc-split { margin-left: 5px; font-size: 10.5px; font-weight: 700; color: #9fb0c0; font-variant-numeric: tabular-nums; }
 .vc-split[hidden] { display: none; }
 .vc-split i { font-style: normal; font-size: 10px; margin: 0 1px 0 3px; opacity: .9; }
+
+/* 순환(대기) 화면 자막: 가운데 정렬 때문에 화면 절반 폭에 갇혀 두 줄로 꺾이던 것 → 글자 길이만큼 넓게, 한 줄로 */
+.kiosk-caption { width: max-content; max-width: 94vw; }
+.kiosk-text { white-space: nowrap; font-size: clamp(18px, 2.3vw, 38px); }
+@media (max-width: 760px) { .kiosk-text { white-space: normal; } }
