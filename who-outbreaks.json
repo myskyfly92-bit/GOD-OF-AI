@@ -9,6 +9,22 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO invites organizations worldwide to join the Together for Science and Health movement",
+      "date": "2026-10-13T08:00:39Z",
+      "summary": "a global call inviting organizations and institutions to affiliate with Together for Science and Health, a new movement to strengthen the connection between science, health and society and build trust in evidence-informed decision-making.",
+      "link": "https://www.who.int/news/item/13-10-2026-who-invites-organizations-worldwide-to-join-the-together-for-science-and-health-movement",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response",
+      "date": "2026-10-12T20:18:36Z",
+      "summary": "The Political Declaration on Pandemic Prevention, Preparedness and Response provides a strong reaffirmation of the global solidarity and commitment needed to protect future generations from the devastating impacts of pandemics.",
+      "link": "https://www.who.int/news/item/12-10-2026-who-welcomes-adoption-of-united-nations-political-declaration-on-pandemic-prevention-preparedness-and-response",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "IPC Sudan Food Insecurity and Malnutrition Alert",
       "date": "2026-10-12T16:00:35Z",
       "summary": "The Integrated Food Security Phase Classification (IPC), of which WHO is a member, today issued a Food Insecurity and Malnutrition Alert for Sudan.",
@@ -128,22 +144,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Kazakhstan Summer School strengthens national clinical research capacity",
-      "date": "2026-09-30T14:00:00Z",
-      "summary": "From 16 June to 16 July 2026, more than 200 researchers and health care practitioners participated in Kazakhstan’s Summer School on Clinical Research, delivered by the National Scientific Centre for Health Development with support from WHO and members of the Global Clinical Trials Forum (GCTF).",
-      "link": "https://www.who.int/news/item/30-09-2026-kazakhstan-summer-school-strengthens-national-clinical-research-capacity",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "The WHO Academy expands multilingual learning to advance equitable access",
-      "date": "2026-09-30T12:33:46Z",
-      "summary": "On International Translation Day, the WHO Academy highlights the growth of its multilingual learning offer, reflecting its commitment to making high-quality learning accessible across diverse linguistic and operational contexts.As of today, 269 courses are available in English on the Academy's online learning platform, alongside 250 versions in other languages, including 73 in Spanish, 15 in Chinese, 3 in Hindi and 1 in Simplified Chinese. In total, the platform now offers learning opportunities",
-      "link": "https://www.who.int/news/item/30-09-2026-the-who-academy-expands-multilingual-learning-to-advance-equitable-access",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-09-25T15:30:18Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON611"
     }
   ],
-  "generatedAt": "2026-10-12T23:55:55.242002+00:00"
+  "generatedAt": "2026-10-13T04:41:26.243569+00:00"
 }
