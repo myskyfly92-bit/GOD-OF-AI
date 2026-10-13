@@ -8281,3 +8281,15 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   }
   if (location.hash === "#suggest") setTimeout(() => { const b = document.querySelector('[data-view="view-suggest"]'); if (b) b.click(); }, 800);
 })();
+
+
+/* 날짜 칸: 연도가 6자리까지 들어가는 문제 → 범위(max)를 정해 두면 연도 4자리를 치면 자동으로 월로 넘어간다
+   나중에 만들어지는 날짜 칸(작업 추가 창 등)에도 자동으로 붙인다 */
+(function dateYear4() {
+  const fix = (root) => (root.querySelectorAll ? root.querySelectorAll('input[type="date"]') : []).forEach((el) => {
+    if (!el.max) el.max = "2099-12-31";
+    if (!el.min) el.min = "2000-01-01";
+  });
+  fix(document);
+  new MutationObserver((ms) => ms.forEach((m) => m.addedNodes.forEach((n) => { if (n.nodeType === 1) { if (n.matches && n.matches('input[type="date"]')) fix(n.parentNode || n); else fix(n); } }))).observe(document.body, { childList: true, subtree: true });
+})();
