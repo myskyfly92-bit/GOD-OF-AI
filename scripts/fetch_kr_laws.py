@@ -221,7 +221,7 @@ def find_admrul(oc, code):
     items = root.get("admrul") or []
     if isinstance(items, dict):
         items = [items]
-    nc = re.sub(r"\s+", "", code).upper()
+    nc = re.sub(r"\s+", "", code).upper() + ")"      # 'NFPC103)' — 'NFPC103A)'(간이스프링클러)와 헷갈리지 않게
     for it in items:
         nm = str(it.get("행정규칙명") or "")
         if nc in re.sub(r"\s+", "", nm).upper() and str(it.get("현행연혁구분", "현행")) in ("현행", ""):
@@ -234,6 +234,21 @@ def find_admrul(oc, code):
 
 
 HEAD_RE = re.compile(r"^(제\d+조(?:의\d+)?)\s*\(([^)]{1,60})\)|^(\d+\.\d+)\s+(\S.{0,60})$")
+
+
+def split_glued(t):
+    """화재안전기준 본문은 줄바꿈 없이 이어 붙어 오는 경우가 많다 → 절 번호·호 번호 앞에서 줄을 나눈다.
+    - 기술기준(NFTC): '…적용범위1.1.1 이 기준은…다.2.1 소화기구의…' → 번호가 글자·마침표에 바로 붙어 있을 때만
+      (문장 속 '높이 1.5 m', '표 2.1.1.3' 처럼 앞에 빈칸이 있는 숫자는 그대로)
+    - 성능기준(NFPC): '…한다.1. 특정…할 것2. 특정…' / '…다.② …'"""
+    D = r"(?:(?<=[가-힣)」\]])|(?<=\D\.))"          # 글자·괄호 뒤, 또는 '숫자가 아닌 것 + 마침표' 뒤 (1.1.1 안은 안 나눔)
+    t = re.sub(D + r"(?=\d{1,2}(?:\.\d{1,2}){1,5}\s?[가-힣「(\"])", "\n", t)
+    t = re.sub(r"(?:(?<=[것)])|(?<=\D\.))(?=\d{1,2}\.\s?[가-힣「\"])", "\n", t)
+    # 목(가. 나. …): '할 것나.' '30제곱미터나.' 처럼 붙은 것만 ('한다. 다만'의 '다.'는 그대로)
+    t = re.sub(r"(?<=[것터)\d])(?=[가나다라마바사아자차카타파하]\.\s)", "\n", t)
+    t = re.sub(r"(?<=[가-힣])(?=[나라마바사아자차카타파하]\.\s)", "\n", t)
+    t = re.sub(r"(?<=\S)(?=[①-⑳])", "\n", t)
+    return t
 
 
 def parse_admrul(j, law_idx):
@@ -258,7 +273,7 @@ def parse_admrul(j, law_idx):
         walk(root)
     lines = []
     for t in texts:
-        lines += [ln for ln in clean(t).split("\n") if ln.strip()]
+        lines += [ln for ln in split_glued(clean(t)).split("\n") if ln.strip()]
     arts, cur = [], None
     for ln in lines:
         m = HEAD_RE.match(ln.strip())
