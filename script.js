@@ -8452,3 +8452,49 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   d.querySelector("button").onclick = () => d.remove();
   document.body.appendChild(d);
 })();
+
+
+/* 📌 바탕화면 아이콘 만들기 (버튼 하나로)
+   - 크롬·엣지: 브라우저의 '앱 설치' 창을 바로 띄움 → 바탕화면·시작 메뉴에 무재해 로고 아이콘 생성, 주소창 없는 창으로 열림
+   - 설치 창을 띄울 수 없는 경우: 바로가기 파일(.url)을 내려받게 하고, 브라우저별 방법을 안내 */
+(function deskInstall() {
+  const btn = document.getElementById("deskInstall");
+  if (!btn) return;
+  const installed = () => window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+  if (installed() || /Android|iPhone|iPad/i.test(navigator.userAgent)) { btn.hidden = true; return; }
+  let dp = null;
+  window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); dp = e; btn.classList.add("ready"); });
+  window.addEventListener("appinstalled", () => { btn.hidden = true; deskMsg("✓ 바탕화면에 상황실 아이콘을 만들었어요. 다음부터는 바탕화면의 무재해 아이콘으로 바로 여세요."); });
+  function deskMsg(text) {
+    const d = document.createElement("div"); d.className = "desk-toast"; d.textContent = text;
+    document.body.appendChild(d); setTimeout(() => d.remove(), 6000);
+  }
+  function urlFile() {
+    const base = location.origin + location.pathname.replace(/[^/]*$/, "");
+    const body = "[InternetShortcut]\r\nURL=" + base + "?pc=1\r\nIconFile=" + base + "assets/icon/favicon.ico\r\nIconIndex=0\r\n";
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([body], { type: "application/octet-stream" }));
+    a.download = "Bismayah HSE Situation Room.url";   // 한글 파일 이름은 일부 브라우저에서 이름이 깨져 영문으로
+    document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  }
+  btn.addEventListener("click", async () => {
+    if (dp) {
+      dp.prompt();
+      const r = await dp.userChoice.catch(() => ({}));
+      dp = null; btn.classList.remove("ready");
+      if (r && r.outcome === "accepted") deskMsg("✓ 설치했어요. 바탕화면에 무재해 아이콘이 생깁니다.");
+      return;
+    }
+    const edge = /Edg\//.test(navigator.userAgent);
+    const bg = document.createElement("div"); bg.className = "desk-bg";
+    bg.innerHTML = `<div class="desk-box" role="dialog" aria-label="바탕화면 아이콘 만들기">
+      <div class="desk-h"><img src="assets/icon/icon-192.png" alt=""><div><b>바탕화면에 상황실 아이콘 만들기</b><span>무재해 로고 아이콘 · 주소창 없는 창으로 바로 열림</span></div></div>
+      <div class="desk-step"><b>방법 1</b> ${edge ? "엣지 오른쪽 위 <b>⋯ → 앱 → 이 사이트를 앱으로 설치</b>" : "크롬 오른쪽 위 <b>⋮ → 저장 및 공유 → 바로가기 만들기…</b> → <b>창으로 열기</b> 체크 → 만들기"}</div>
+      <div class="desk-step"><b>방법 2</b> 아래 버튼으로 바로가기 파일을 받은 뒤 <b>바탕화면으로 끌어다</b> 놓기<br><small>이름은 바탕화면에서 F2로 "안전보건환경 상황실"처럼 바꿀 수 있어요 · 아이콘이 브라우저 모양이면: 오른쪽 클릭 → 속성 → 아이콘 변경</small></div>
+      <div class="desk-act"><button type="button" class="desk-dl">⬇ 바로가기 파일 받기</button><button type="button" class="desk-x">닫기</button></div>
+    </div>`;
+    bg.addEventListener("click", (e) => { if (e.target === bg || e.target.closest(".desk-x")) bg.remove(); });
+    bg.querySelector(".desk-dl").onclick = () => { urlFile(); };
+    document.body.appendChild(bg);
+  });
+})();

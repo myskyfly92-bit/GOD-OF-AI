@@ -3877,3 +3877,20 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .vc-win button { margin-top: 14px; font: inherit; font-weight: 700; background: #f2b65e; color: #1a1205; border: 0; border-radius: 10px; padding: 9px 22px; cursor: pointer; }
 .vc-conf { position: absolute; top: -12px; width: 8px; height: 14px; border-radius: 2px; z-index: 1; animation: vcFall linear forwards; }
 @keyframes vcFall { to { transform: translateY(105vh) rotate(720deg); } }
+
+/* 📌 바탕화면 아이콘 버튼 · 안내 창 */
+.desk-btn { font: inherit; font-size: 12px; font-weight: 600; color: var(--text); background: rgba(255,255,255,.08); border: 1px solid var(--border); border-radius: 999px; padding: 6px 12px; cursor: pointer; white-space: nowrap; }
+.desk-btn:hover { color: var(--text); border-color: #00a14d; }
+.desk-btn.ready { color: #fff; border-color: #00a14d; background: rgba(0,161,77,.25); }
+.desk-btn[hidden] { display: none; }
+.desk-bg { position: fixed; inset: 0; z-index: 10000; background: rgba(5,9,14,.65); display: flex; align-items: center; justify-content: center; }
+.desk-box { width: min(480px, calc(100vw - 32px)); background: #121a24; border: 1px solid rgba(0,161,77,.55); border-radius: 16px; padding: 18px; color: var(--text); box-shadow: 0 20px 60px rgba(0,0,0,.5); word-break: keep-all; }
+.desk-h { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+.desk-h img { width: 52px; height: 52px; border-radius: 12px; }
+.desk-h b { display: block; font-size: 16px; } .desk-h span { font-size: 12px; color: var(--text-dim); }
+.desk-step { font-size: 13.5px; line-height: 1.6; background: rgba(255,255,255,.04); border-radius: 10px; padding: 9px 12px; margin-top: 8px; }
+.desk-step > b:first-child { color: #3fd27e; margin-right: 6px; } .desk-step small { color: var(--text-dim); }
+.desk-act { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; }
+.desk-act button { font: inherit; font-size: 13px; font-weight: 700; border-radius: 9px; padding: 8px 14px; cursor: pointer; border: 1px solid var(--border); background: transparent; color: var(--text); }
+.desk-act .desk-dl { background: #00a14d; border-color: #00a14d; color: #fff; }
+.desk-toast { position: fixed; left: 50%; bottom: 80px; transform: translateX(-50%); z-index: 10000; background: rgba(12,18,26,.96); border: 1px solid #00a14d; color: var(--text); border-radius: 10px; padding: 10px 16px; font-size: 13.5px; }
