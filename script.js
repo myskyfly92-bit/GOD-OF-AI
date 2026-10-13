@@ -7181,6 +7181,7 @@ async function clinicCall(action, payload) {
       { sel: "#familySiteSelect", text: `<b>패밀리사이트</b> 바로가기예요. 목록에서 <b>BNCP AI Assistant</b>, <b>BNCP Clinic EMR</b>(현장 클리닉 진료기록, 등록된 담당자만 사용), <b>IRIS</b>(이라크 규제·수입·조달시장 모니터) 같은 관련 사이트를 고르면 새 창으로 열려요.` },
       { sel: "#deskInstall", opt: true, text: `<b>📌 바탕화면 바로가기</b>를 누르면 PC 바탕화면에 상황실 아이콘을 만드는 법이 나와요. <b>크롬</b>은 메뉴에서 '바로가기 만들기'(창으로 열기 체크 안 함) 한 번이면 <b>무재해 아이콘</b>으로 생기고, 엣지는 주소창 🔒 를 바탕화면으로 끌어다 놓으면 돼요.` },
       { sel: ".bg-peek-btn", text: `위쪽 메뉴줄의 <b>🖼 배경 보기</b>를 누르면 카드들이 잠깐 숨고 배경 사진이 보여요. 다시 누르거나 <b>Esc</b> 를 누르면 돌아와요.<br>한동안 화면을 안 만지면 상황실 화면처럼 자동으로 배경이 보이기도 해요.` },
+      { sel: ".talk-fab", opt: true, text: `<b>💬 1:1 상담</b>이에요. 안전·보건·환경 관련 궁금한 점이나 현장에서 본 위험을 남기면 <b>HSE 담당자</b>가 이 창에 바로 답해 드려요. 위에 <b>🟢 담당자 접속 중</b>이면 금방 답이 와요.<br>창을 닫아도 대화는 이 PC에 이어지고, 답장이 오면 버튼에 빨간 숫자가 떠요.` },
       { sel: ".ai-fab", text: `오른쪽 아래 <b>법령 도우미</b>예요. "고소작업 안전대 기준은?", "임시소방시설 설치 대상은?", "이라크 노동법 근로시간은?" 처럼 <b>평소 말투로 물어보면</b> <b>한국 산업안전보건법·소방 법령</b>과 <b>이라크 법</b>을 함께 찾아서 답해 줘요.<br>📷 <b>현장 사진</b>을 올리면 위험요소도 짚어 줘요. 답 속 <b>[조문]</b>을 누르면 조문·<b>별표</b> 원문이 그 자리에서 바로 펼쳐지고, 👍/👎로 답을 평가할 수 있어요. 답은 참고용이니 중요한 판단은 원문으로 확인하세요.` },
       { sel: null, text: `안내를 다시 보고 싶으면 화면 <b>왼쪽 아래 '사용 안내'</b> 버튼을 누르세요. 거기서 필요한 장만 골라 볼 수도 있어요.` },
     ]},
@@ -9126,4 +9127,212 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     ? "이 창 오른쪽 위 ⋯ → '앱 설정' 또는 '제거' (또는 주소창에 edge://apps 입력 → 상황실 ⋯ → 제거)\n\n지운 뒤에는 상황실의 '📌 바탕화면 바로가기' 버튼으로 일반 바로가기를 만드세요."
     : "이 창 오른쪽 위 ⋮ → '…제거' (또는 크롬 주소창에 chrome://apps 입력 → 상황실 오른쪽 클릭 → Chrome에서 삭제)\n\n지운 뒤에는 상황실의 '📌 바탕화면 바로가기' 버튼으로 일반 바로가기를 만드세요.");
   document.body.prepend(bar);
+})();
+
+/* ==========================================================
+   1:1 실시간 상담 (방문자 ↔ HSE 담당자) — Apps Script action=talk · '상담' 시트
+   - 방문자: 오른쪽 아래 '💬 1:1 상담' → 질문을 보내면 담당자 화면에 바로 알림
+   - 담당자: 같은 상황실에서 암호를 한 번 넣으면 '받은 상담' 목록이 뜨고 소리·제목줄로 알림
+   - 상담창이 열려 있을 때만 3초마다 새 글 확인 (닫혀 있으면 30초마다 답장 여부만)
+   ========================================================== */
+(function talkWidget() {
+  const LS = { get: (k) => { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+  let room = LS.get("talkRoom");
+  if (!room) { room = "r" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); LS.set("talkRoom", room); }
+  let adminPass = LS.get("talkPass");
+  const enc = (o) => btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(o)))).replace(/\+/g, "-").replace(/\//g, "_");
+  async function call(op, d) {
+    const url = await getAppsScriptUrl();
+    if (!url) throw new Error("서버 주소 없음");
+    const ctl = new AbortController(), tm = setTimeout(() => ctl.abort(), 15000);
+    try {
+      const r = await fetch(url + (url.includes("?") ? "&" : "?") + "action=talk&op=" + op + "&p=" + encodeURIComponent(enc(Object.assign({ op, room }, d || {}))) + "&t=" + Date.now(), { signal: ctl.signal });
+      const j = await r.json();
+      if (!j.ok) throw new Error(j.error || "실패");
+      return j;
+    } finally { clearTimeout(tm); }
+  }
+  const esc = (v) => String(v == null ? "" : v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  const hm = (t) => new Date(t).toLocaleTimeString("ko-KR", { timeZone: "Asia/Baghdad", hour: "2-digit", minute: "2-digit", hour12: false });
+  const ago = (t) => { const m = Math.round((Date.now() - t) / 60000); return m < 1 ? "방금" : m < 60 ? m + "분 전" : m < 1440 ? Math.round(m / 60) + "시간 전" : Math.round(m / 1440) + "일 전"; };
+  // 알림 소리 (짧은 두 음)
+  function ding() {
+    try {
+      const A = window.__talkAC || (window.__talkAC = new (window.AudioContext || window.webkitAudioContext)());
+      [880, 1320].forEach((f, i) => { const o = A.createOscillator(), g = A.createGain(); o.frequency.value = f; o.type = "sine"; g.gain.setValueAtTime(0.0001, A.currentTime + i * 0.16); g.gain.exponentialRampToValueAtTime(0.18, A.currentTime + i * 0.16 + 0.02); g.gain.exponentialRampToValueAtTime(0.0001, A.currentTime + i * 0.16 + 0.25); o.connect(g).connect(A.destination); o.start(A.currentTime + i * 0.16); o.stop(A.currentTime + i * 0.16 + 0.3); });
+    } catch (e) {}
+  }
+  // 제목줄 깜빡임 (다른 창을 보고 있을 때)
+  let titleT = 0; const baseTitle = document.title;
+  function flashTitle(msg) { clearInterval(titleT); let on = false; titleT = setInterval(() => { document.title = (on = !on) ? msg : baseTitle; }, 1000); }
+  const stopTitle = () => { clearInterval(titleT); document.title = baseTitle; };
+  window.addEventListener("focus", stopTitle); document.addEventListener("visibilitychange", () => { if (!document.hidden) stopTitle(); });
+
+  const root = document.createElement("div");
+  root.className = "talk notranslate"; root.setAttribute("translate", "no");
+  root.innerHTML = `
+    <button type="button" class="talk-fab" aria-label="1:1 상담 열기"><span class="talk-ic">💬</span><span class="talk-lb">1:1 상담</span><b class="talk-badge" hidden></b></button>
+    <section class="talk-panel" role="dialog" aria-label="1:1 상담" hidden>
+      <header class="talk-h"><div><b>HSE 1:1 상담</b><span class="talk-st">확인 중…</span></div>
+        <div class="talk-hbtn"><button type="button" class="talk-mode" title="담당자 화면">🛡</button><button type="button" class="talk-x" aria-label="닫기">✕</button></div></header>
+      <div class="talk-user">
+        <div class="talk-log" aria-live="polite"><div class="talk-hello">안녕하세요, 비스마야 HSE팀입니다 👷<br>안전·보건·환경 관련해서 궁금한 점이나 현장에서 본 위험을 편하게 남겨 주세요. 담당자가 확인하는 대로 이 창에 답을 드려요.<small>창을 닫아도 대화는 이 PC(브라우저)에 이어집니다 · 개인 건강정보는 꼭 필요한 만큼만 적어 주세요</small></div></div>
+        <div class="talk-name"><input type="text" class="talk-nm" maxlength="30" placeholder="이름·소속 (선택, 예: 공사팀 김OO)"></div>
+        <form class="talk-in"><textarea rows="1" maxlength="600" placeholder="메시지 입력 (Enter 보내기)"></textarea><button type="submit" aria-label="보내기">➤</button></form>
+      </div>
+      <div class="talk-admin" hidden>
+        <div class="talk-rooms"></div>
+        <div class="talk-conv"><div class="talk-conv-h">왼쪽에서 상담을 고르세요</div><div class="talk-log talk-alog"></div>
+          <form class="talk-in talk-ain" hidden><textarea rows="1" maxlength="600" placeholder="답장 입력 (Enter 보내기)"></textarea><button type="submit" aria-label="답장 보내기">➤</button></form></div>
+      </div>
+    </section>`;
+  document.body.appendChild(root);
+  const $ = (s) => root.querySelector(s);
+  const fab = $(".talk-fab"), panel = $(".talk-panel"), badge = $(".talk-badge"), st = $(".talk-st");
+  const ulog = $(".talk-user .talk-log"), uin = $(".talk-user .talk-in"), nm = $(".talk-nm");
+  nm.value = LS.get("talkName");
+  let open = false, admin = false, since = 0, lastSeenAdmin = Number(LS.get("talkSeenA") || 0), unread = 0;
+  const bubble = (m, mine) => `<div class="talk-msg ${mine ? "me" : "you"}"><div class="talk-b">${esc(m.text).replace(/\n/g, "<br>")}</div><small>${mine ? "" : esc(m.who === "a" ? "HSE 담당자" : (m.name || "방문자")) + " · "}${hm(m.at)}</small></div>`;
+  function setBadge(n) { unread = n; badge.hidden = !n; badge.textContent = n > 9 ? "9+" : n; fab.classList.toggle("ping", n > 0); }
+
+  /* ---- 방문자 ---- */
+  let polling = 0, gotAny = false;
+  async function upoll(first) {
+    try {
+      const j = await call("poll", { since });
+      st.textContent = j.online ? "🟢 담당자 접속 중 · 바로 답해 드려요" : "⚪ 담당자 부재 · 남겨 주시면 확인 후 답해요";
+      st.className = "talk-st " + (j.online ? "on" : "");
+      if (j.msgs && j.msgs.length) {
+        j.msgs.forEach((m) => { if (!ulog.querySelector(`[data-id="${m.id}"]`)) ulog.insertAdjacentHTML("beforeend", bubble(m, m.who === "u").replace('class="talk-msg', `data-id="${m.id}" class="talk-msg`)); });
+        since = Math.max(since, ...j.msgs.map((m) => m.id));
+        ulog.scrollTop = ulog.scrollHeight;
+        const newA = j.msgs.filter((m) => m.who === "a" && m.id > lastSeenAdmin);
+        if (newA.length) {
+          if (open && !admin) { lastSeenAdmin = Math.max(...newA.map((m) => m.id)); LS.set("talkSeenA", lastSeenAdmin); }
+          else { setBadge(unread + newA.length); ding(); if (document.hidden) flashTitle("💬 HSE 답장이 왔어요"); }
+        }
+        gotAny = true;
+      }
+      LS.set("talkHas", gotAny ? "1" : LS.get("talkHas"));
+    } catch (e) { if (open && !admin) st.textContent = "연결 확인 중… (" + e.message + ")"; }
+  }
+  function schedule() {
+    clearTimeout(polling);
+    const ms = admin ? 0 : open ? 3000 : (LS.get("talkHas") ? 30000 : 0);
+    if (ms) polling = setTimeout(async () => { if (!document.hidden || !open) await upoll(); schedule(); }, ms);
+  }
+  uin.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const ta = uin.querySelector("textarea"), text = ta.value.trim();
+    if (!text) return;
+    LS.set("talkName", nm.value.trim());
+    ta.value = ""; ta.style.height = "";
+    const tmp = { id: "t" + Date.now(), who: "u", text, at: Date.now() };
+    ulog.insertAdjacentHTML("beforeend", bubble(tmp, true).replace('class="talk-msg', `data-tmp="1" class="talk-msg pending`));
+    ulog.scrollTop = ulog.scrollHeight;
+    try {
+      const j = await call("send", { text, name: nm.value.trim(), since });
+      ulog.querySelectorAll("[data-tmp]").forEach((x) => x.remove());
+      (j.msgs || []).forEach((m) => { if (!ulog.querySelector(`[data-id="${m.id}"]`)) ulog.insertAdjacentHTML("beforeend", bubble(m, m.who === "u").replace('class="talk-msg', `data-id="${m.id}" class="talk-msg`)); });
+      since = Math.max(since, ...(j.msgs || []).map((m) => m.id), 0);
+      LS.set("talkHas", "1"); gotAny = true;
+      ulog.scrollTop = ulog.scrollHeight;
+    } catch (err) {
+      const p = ulog.querySelector("[data-tmp]"); if (p) { p.classList.add("fail"); p.querySelector("small").textContent = "보내지 못했어요 — " + err.message; }
+      ta.value = text;
+    }
+  });
+
+  /* ---- 담당자 ---- */
+  const rlist = $(".talk-rooms"), alog = $(".talk-alog"), ain = $(".talk-ain"), convH = $(".talk-conv-h");
+  let curRoom = "", aSince = 0, inboxV = 0, rooms = [], adminT = 0, lastUnread = 0;
+  function drawRooms() {
+    rlist.innerHTML = rooms.length ? rooms.map((r) => `<button type="button" class="talk-room ${r.room === curRoom ? "on" : ""} ${r.unread ? "new" : ""}" data-r="${esc(r.room)}">
+      <b>${esc(r.name || "이름 없음")}</b>${r.unread ? `<em>${r.unread}</em>` : ""}<span>${r.lastWho === "a" ? "↩ " : ""}${esc(r.last || "")}</span><small>${r.lastAt ? ago(r.lastAt) : ""}</small></button>`).join("")
+      : `<p class="talk-empty">아직 들어온 상담이 없어요</p>`;
+    rlist.querySelectorAll(".talk-room").forEach((b) => b.onclick = () => openRoom(b.dataset.r));
+    const n = rooms.reduce((a, r) => a + (r.unread || 0), 0);
+    setBadge(n);
+    if (n > lastUnread) { ding(); if (document.hidden || !open) flashTitle(`🔔 새 상담 ${n}건`); }
+    lastUnread = n;
+  }
+  async function openRoom(r) {
+    curRoom = r; aSince = 0; alog.innerHTML = ""; ain.hidden = false;
+    const info = rooms.find((x) => x.room === r) || {};
+    convH.innerHTML = `<b>${esc(info.name || "이름 없음")}</b> <small>방 ${esc(r.slice(-5))}</small>`;
+    await aRoomPoll();
+    drawRooms();
+    ain.querySelector("textarea").focus();
+  }
+  async function aRoomPoll() {
+    if (!curRoom) return;
+    const j = await call("room", { room: curRoom, since: aSince, pass: adminPass });
+    (j.msgs || []).forEach((m) => { if (!alog.querySelector(`[data-id="${m.id}"]`)) alog.insertAdjacentHTML("beforeend", bubble(m, m.who === "a").replace('class="talk-msg', `data-id="${m.id}" class="talk-msg`)); });
+    if (j.msgs && j.msgs.length) { aSince = Math.max(aSince, ...j.msgs.map((m) => m.id)); alog.scrollTop = alog.scrollHeight; }
+    if (j.rooms) { rooms = j.rooms; }
+  }
+  async function aPoll() {
+    try {
+      const j = await call("inbox", { since: inboxV, pass: adminPass });
+      if (!j.same) { rooms = j.rooms || []; inboxV = j.v; if (open && curRoom) await aRoomPoll(); drawRooms(); }
+      st.textContent = "🛡 담당자 화면 · 상담 " + rooms.length + "건"; st.className = "talk-st on";
+    } catch (e) {
+      if (/암호/.test(e.message)) { admin = false; adminPass = ""; LS.set("talkPass", ""); setMode(); return; }
+      st.textContent = "연결 확인 중…";
+    }
+  }
+  function aSchedule() {
+    clearTimeout(adminT);
+    if (!admin) return;
+    adminT = setTimeout(async () => { await aPoll(); aSchedule(); }, open ? 3000 : document.hidden ? 15000 : 6000);
+  }
+  ain.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const ta = ain.querySelector("textarea"), text = ta.value.trim();
+    if (!text || !curRoom) return;
+    ta.value = ""; ta.style.height = "";
+    try {
+      const j = await call("reply", { room: curRoom, text, since: aSince, pass: adminPass });
+      (j.msgs || []).forEach((m) => { if (!alog.querySelector(`[data-id="${m.id}"]`)) alog.insertAdjacentHTML("beforeend", bubble(m, m.who === "a").replace('class="talk-msg', `data-id="${m.id}" class="talk-msg`)); });
+      if (j.msgs && j.msgs.length) aSince = Math.max(aSince, ...j.msgs.map((m) => m.id));
+      if (j.rooms) { rooms = j.rooms; drawRooms(); }
+      alog.scrollTop = alog.scrollHeight;
+    } catch (err) { ta.value = text; alert("답장을 보내지 못했어요: " + err.message); }
+  });
+
+  function setMode() {
+    root.classList.toggle("is-admin", admin);
+    $(".talk-user").hidden = admin; $(".talk-admin").hidden = !admin;
+    $(".talk-lb").textContent = admin ? "받은 상담" : "1:1 상담";
+    $(".talk-h b").textContent = admin ? "HSE 1:1 상담 · 담당자" : "HSE 1:1 상담";
+    $(".talk-mode").title = admin ? "방문자 화면으로" : "담당자 화면 (암호)";
+    if (admin) { aPoll(); aSchedule(); } else { clearTimeout(adminT); upoll(true); schedule(); }
+  }
+  $(".talk-mode").onclick = async () => {
+    if (admin) { admin = false; setMode(); return; }
+    const pw = adminPass || prompt("담당자 암호를 입력하세요");
+    if (!pw) return;
+    try { await call("check", { pass: pw }); adminPass = pw; LS.set("talkPass", pw); admin = true; setMode(); }
+    catch (e) { alert("암호가 맞지 않거나 서버에 상담 기능이 아직 없어요 (" + e.message + ")"); }
+  };
+  function setOpen(v) {
+    open = v; panel.hidden = !v; root.classList.toggle("is-open", v);
+    if (v) {
+      stopTitle();
+      if (!admin) { setBadge(0); upoll(true).then(() => { lastSeenAdmin = Math.max(lastSeenAdmin, since); LS.set("talkSeenA", lastSeenAdmin); }); uin.querySelector("textarea").focus(); }
+      else aPoll();
+    }
+    admin ? aSchedule() : schedule();
+  }
+  fab.onclick = () => setOpen(true);
+  $(".talk-x").onclick = () => setOpen(false);
+  // 글 입력칸: 내용만큼 늘어나고 Enter 로 보내기
+  root.querySelectorAll(".talk-in textarea").forEach((ta) => {
+    ta.addEventListener("input", () => { ta.style.height = "auto"; ta.style.height = Math.min(110, ta.scrollHeight) + "px"; });
+    ta.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); ta.form.requestSubmit(); } });
+  });
+  // 담당자 암호가 이 PC에 저장돼 있으면 처음부터 담당자 모드로 (받은 상담 알림이 바로 오게)
+  if (adminPass) { admin = true; setTimeout(setMode, 4000); }
+  else if (LS.get("talkHas")) setTimeout(() => { upoll(true); schedule(); }, 5000);
+  if (new URLSearchParams(location.search).get("talkadmin") === "1") setTimeout(() => $(".talk-mode").click(), 1500);
 })();
