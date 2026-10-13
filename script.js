@@ -2860,6 +2860,9 @@ function wzApplyTransform() {
   box.style.transform = "none";
   box.style.width = (wzScale * 100) + "%";
   box.style.setProperty("--inv", "1");
+  // 원래 크기일 때는 스크롤바를 숨긴다 (반올림 1~2px 차이로 스크롤바가 생기지 않게)
+  const vpEl = document.getElementById("wzViewport");
+  if (vpEl) { vpEl.classList.toggle("wz-zoomed", wzScale > 1.001); if (wzScale <= 1.001) { vpEl.scrollLeft = 0; vpEl.scrollTop = 0; } }
   wzCoLines();
 }
 

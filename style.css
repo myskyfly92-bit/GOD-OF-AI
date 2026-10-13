@@ -4112,7 +4112,8 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 
 /* 확대하면 스크롤로 이동 (그림이 줄거나 밀려 빈 공간이 생기지 않게) */
 .wz-vpwrap { position: relative; }
-.wz-viewport { overflow: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.wz-viewport { overflow: hidden; overscroll-behavior: contain; }
+.wz-viewport.wz-zoomed { overflow: auto; }
 .wz-zoombox { position: relative; max-width: none; }
 .wz-co-btn { width: auto; padding: 0 12px; display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-body); font-size: 13px; flex: none; }
 
@@ -4134,3 +4135,11 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 @keyframes twShine { 0% { left: -60%; } 55%, 100% { left: 130%; } }
 @media (prefers-reduced-motion: reduce) { .today-work-panel .tw-link, .today-work-panel .tw-link::after { animation: none; } }
 @media (max-width: 560px) { .today-work-panel .tw-link { position: static; margin-top: 10px; } }
+
+/* 지도 스크롤바: 상황실 색(어두운 바탕 + 청록) */
+.wz-viewport { scrollbar-width: thin; scrollbar-color: rgba(53, 208, 192, 0.55) rgba(10, 14, 19, 0.85); }
+.wz-viewport::-webkit-scrollbar { width: 10px; height: 10px; }
+.wz-viewport::-webkit-scrollbar-track { background: rgba(10, 14, 19, 0.85); }
+.wz-viewport::-webkit-scrollbar-thumb { background: rgba(53, 208, 192, 0.5); border-radius: 999px; border: 2px solid rgba(10, 14, 19, 0.85); }
+.wz-viewport::-webkit-scrollbar-thumb:hover { background: rgba(53, 208, 192, 0.85); }
+.wz-viewport::-webkit-scrollbar-corner { background: rgba(10, 14, 19, 0.85); }
