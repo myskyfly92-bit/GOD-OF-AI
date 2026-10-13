@@ -49,6 +49,17 @@ LAWS = [
     ("위험물안전관리법 시행령", "위험물안전관리법 시행령"),
     ("위험물안전관리법 시행규칙", "위험물안전관리법 시행규칙"),
 ]
+# 소방청 화재안전기준 (행정규칙 '고시'): 소화기 보행거리 같은 현장 세부 기준은 법이 아니라 여기 있다
+#  (코드, 짧은 이름) — 성능기준(NFPC)과 기술기준(NFTC)을 모두 받는다
+ADMRULS = [
+    ("NFPC 101", "소화기구 성능기준"), ("NFTC 101", "소화기구 기술기준"),
+    ("NFPC 102", "옥내소화전 성능기준"), ("NFTC 102", "옥내소화전 기술기준"),
+    ("NFPC 103", "스프링클러 성능기준"), ("NFTC 103", "스프링클러 기술기준"),
+    ("NFPC 203", "자동화재탐지설비 성능기준"), ("NFTC 203", "자동화재탐지설비 기술기준"),
+    ("NFPC 303", "유도등 성능기준"), ("NFTC 303", "유도등 기술기준"),
+    ("NFPC 304", "비상조명등 성능기준"), ("NFTC 304", "비상조명등 기술기준"),
+    ("NFPC 606", "임시소방시설 성능기준"), ("NFTC 606", "임시소방시설 기술기준"),
+]
 MAX_TEXT = 3500   # 조문 하나에 담을 최대 글자 수 (별표처럼 아주 긴 조문은 앞부분만)
 
 
@@ -201,6 +212,78 @@ def parse_annexes(j, law_idx):
     return out
 
 
+def find_admrul(oc, code):
+    """'NFPC 101' 같은 코드로 현행 화재안전기준(행정규칙)을 찾는다."""
+    j = get_json("lawSearch.do", {"OC": oc, "target": "admrul", "type": "JSON", "query": code, "display": 20})
+    if not j:
+        return None, None
+    root = j.get("AdmRulSearch") or j
+    items = root.get("admrul") or []
+    if isinstance(items, dict):
+        items = [items]
+    nc = re.sub(r"\s+", "", code).upper()
+    for it in items:
+        nm = str(it.get("행정규칙명") or "")
+        if nc in re.sub(r"\s+", "", nm).upper() and str(it.get("현행연혁구분", "현행")) in ("현행", ""):
+            return it, None
+    for it in items:
+        nm = str(it.get("행정규칙명") or "")
+        if nc in re.sub(r"\s+", "", nm).upper():
+            return it, None
+    return None, json.dumps(j, ensure_ascii=False)[:600]
+
+
+HEAD_RE = re.compile(r"^(제\d+조(?:의\d+)?)\s*\(([^)]{1,60})\)|^(\d+\.\d+)\s+(\S.{0,60})$")
+
+
+def parse_admrul(j, law_idx):
+    """행정규칙 본문: 조문(제N조) 또는 기술기준의 절(2.1, 2.2 …) 단위로 나눈다."""
+    root = j.get("AdmRulService") or j
+    texts = []
+    def walk(n, key=""):
+        if isinstance(n, str):
+            if "조문" in key or "내용" in key:
+                texts.append(n)
+        elif isinstance(n, list):
+            for x in n:
+                walk(x, key)
+        elif isinstance(n, dict):
+            for k, v in n.items():
+                if "별표" in k or "기본정보" in k or "첨부" in k:
+                    continue
+                walk(v, k)
+    if root.get("조문내용") is not None:
+        walk(root.get("조문내용"), "조문내용")
+    else:
+        walk(root)
+    lines = []
+    for t in texts:
+        lines += [ln for ln in clean(t).split("\n") if ln.strip()]
+    arts, cur = [], None
+    for ln in lines:
+        m = HEAD_RE.match(ln.strip())
+        if m:
+            if cur:
+                arts.append(cur)
+            no = m.group(1) or m.group(3)
+            title = (m.group(2) or m.group(4) or "").strip()
+            cur = {"l": law_idx, "no": no, "t": title, "x": ln, "ch": ""}
+        elif cur:
+            cur["x"] += "\n" + ln
+        else:
+            cur = {"l": law_idx, "no": "머리말", "t": "", "x": ln, "ch": ""}
+    if cur:
+        arts.append(cur)
+    out = []
+    for a in arts:
+        x = a["x"]
+        # 길면 나눠 담는다 (기술기준 2.1 같은 절은 아주 길 수 있음)
+        parts = [x[i:i + MAX_TEXT] for i in range(0, len(x), MAX_TEXT)] or [x]
+        for k, p in enumerate(parts):
+            out.append({**a, "x": p, "t": a["t"] + (f" ({k + 1}/{len(parts)})" if len(parts) > 1 else "")})
+    return out
+
+
 def main():
     oc = (os.environ.get("LAW_OC") or "").strip()
     if not oc:
@@ -249,6 +332,43 @@ def main():
         print(f"[완료] {name}: 조문 {len(arts)}개 (시행 {info.get('시행일자', '')})")
         time.sleep(1)
 
+    # 화재안전기준(행정규칙)
+    debug = []
+    for code, short in ADMRULS:
+        info, miss = find_admrul(oc, code)
+        if not info:
+            print(f"  [경고] 화재안전기준 '{code}' 를 찾지 못함", file=sys.stderr)
+            if miss and len(debug) < 3:
+                debug.append({"code": code, "search": miss})
+            continue
+        name = str(info.get("행정규칙명") or code).strip()
+        sn = info.get("행정규칙일련번호") or info.get("행정규칙 일련번호")
+        rid = info.get("행정규칙ID")
+        j = get_json("lawService.do", {"OC": oc, "target": "admrul", "type": "JSON", "ID": sn}) if sn else None
+        if not j and rid:
+            j = get_json("lawService.do", {"OC": oc, "target": "admrul", "type": "JSON", "LID": rid})
+        if not j:
+            print(f"  [경고] '{name}' 본문을 받지 못함", file=sys.stderr)
+            continue
+        idx = len(laws_meta)
+        try:
+            arts = parse_admrul(j, idx)
+        except Exception as e:
+            arts = []
+            print(f"  [경고] '{name}' 해석 실패: {e}", file=sys.stderr)
+        if len(arts) < 2:
+            if len(debug) < 3:
+                debug.append({"code": code, "service": json.dumps(j, ensure_ascii=False)[:1500]})
+            continue
+        laws_meta.append({
+            "name": name, "short": short + f" ({code})", "id": rid, "mst": sn, "kind": "고시",
+            "efYd": str(info.get("시행일자", "")), "promulgated": str(info.get("발령일자", "")),
+            "link": "https://www.law.go.kr/행정규칙/" + re.sub(r"\s+", "", name),
+        })
+        articles.extend(arts)
+        print(f"[완료] {name}: {len(arts)}개 단위")
+        time.sleep(1)
+
     if len(laws_meta) < 2:
         print("[오류] 받은 법령이 너무 적어 기존 파일을 유지합니다.", file=sys.stderr)
         sys.exit(1)
@@ -260,6 +380,8 @@ def main():
         "laws": laws_meta,
         "articles": articles,
     }
+    if debug:                       # 화재안전기준을 못 읽었을 때 원인 확인용 (응답 앞부분)
+        out["_debug"] = debug
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
     size = os.path.getsize(OUTPUT_PATH) / 1024
