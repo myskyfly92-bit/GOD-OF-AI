@@ -5,10 +5,7 @@
     "공지사항": true,
     "안전공지": true
   },
-  "errors": {
-    "공지사항": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1262000/CountryNoticeService/getCountryNoticeList?serviceKey=23e0ac38aea326db055087ef52e0d2f2a528def5f2a5a0e8070cbbbaea493d78&numOfRows=1&pageNo=1&isoCode1=IRQ (Caused by ConnectTimeoutError(<HTTPSConnection(host='apis.data.go.kr', port=443) at 0x7f4a5c8b99d0>, 'Connection to apis.data.go.kr timed out. (connect timeout=30)'))",
-    "안전공지": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1262000/CountrySafetyService7/getCountrySafetyList7?serviceKey=23e0ac38aea326db055087ef52e0d2f2a528def5f2a5a0e8070cbbbaea493d78&returnType=JSON&numOfRows=30&pageNo=1&cond%5Bcountry_iso_alp2%3A%3AEQ%5D=IQ (Caused by ConnectTimeoutError(<HTTPSConnection(host='apis.data.go.kr', port=443) at 0x7f4a5c8bbc10>, 'Connection to apis.data.go.kr timed out. (connect timeout=30)'))"
-  },
+  "errors": {},
   "countries": [
     {
       "iso2": "IQ",
@@ -91,7 +88,7 @@
       "count": 10
     }
   ],
-  "generatedAt": "2026-10-12T21:23:25.197001+00:00",
+  "generatedAt": "2026-10-13T10:57:59.293111+00:00",
   "items": [
     {
       "kind": "안전공지",
@@ -1371,6 +1368,5 @@
       "iso2": "SY",
       "file": ""
     }
-  ],
-  "lastTriedAt": "2026-10-13T02:42:08.125352+00:00"
+  ]
 }
