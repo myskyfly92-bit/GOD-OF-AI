@@ -6901,7 +6901,7 @@ async function clinicCall(action, payload) {
     ]},
     { id: "etc", title: "기타", icon: "🧩", steps: [
       { go: "view-iraq-issues", sel: "#view-iraq-issues .bnews-panel", text: `<b>기타 › 이라크 주요 이슈</b>예요. 치안·시위·정치·공휴일·정전·유가처럼 <b>현장 생활과 출퇴근에 영향을 줄 수 있는 이라크 소식</b>을 3시간마다 모아요. 위의 <b>분류 버튼</b>으로 골라 볼 수 있고, 기사를 누르면 본문이 펼쳐져요.` },
-      { go: "view-bismayah", sel: "#bnewsList", text: `<b>기타 › 비스마야 소식</b>이에요. <b>비스마야</b>가 나온 뉴스를 3시간마다 모아서 왼쪽은 <b>국내 뉴스</b>(한국 언론), 오른쪽은 <b>이라크 뉴스</b>(현지 아랍어·영어 기사, 제목 한국어 번역)로 나눠 보여 줘요. 기사를 누르면 그 자리에서 <b>본문 미리보기</b>가 펼쳐지고, 맨 아래 링크로 전체 기사를 볼 수 있어요.` },
+      { go: "view-bismayah", sel: "#bnewsList", text: `<b>기타 › 비스마야 소식</b>이에요. <b>비스마야</b>가 나온 뉴스를 3시간마다 모아서 왼쪽은 <b>국내 뉴스</b>(한국 언론), 오른쪽은 <b>이라크 뉴스</b>(현지 아랍어·영어 기사, 제목 한국어 번역)로 나눠 보여 줘요. 기사를 누르면 그 자리에서 <b>본문 미리보기</b>가 펼쳐지고, 맨 아래 링크로 전체 기사를 볼 수 있어요. 그 아래에는 <b>비스마야 유튜브 영상</b>도 썸네일로 모아 두었어요.` },
       { go: "view-ships", sel: ".air-switch", text: `<b>해상·항공 현황</b>이에요. <b>실시간 항공 지도</b>와 공항·항공기 <b>요약 지도</b>를 바꿔 볼 수 있어요. 아래로 내리면 <b>걸프만 선박 현황</b>도 있어요. 출장·자재 운송 일정 볼 때 참고하세요.` },
       { go: "view-global", sel: "#globalFilter", text: `<b>건설사 해외현장</b>이에요. 국내 건설사의 해외 현장을 지도와 표로 보여 줘요. 위 버튼으로 회사를 골라 볼 수 있어요.<br>표와 지도 팝업의 <b>기간 · 공정</b> 막대 두 줄은 계약기간이 얼마나 지났는지와 <b>DART 공시 공정률</b>을 나란히 보여 줘요. 공정이 기간보다 많이 뒤처지면 <b>주황색</b>이에요.` },
       { go: "view-embassy", sel: "#view-embassy .embassy-panel", text: `<b>중동 각국 대사관 공지</b>예요. 이라크와 주변국 <b>대한민국 대사관의 안전공지</b>를 매일 모아요. 버튼으로 나라와 공지 종류를 고르고, 제목을 누르면 원문이 열려요.` },
@@ -7872,6 +7872,53 @@ function makeNewsView(o) {
   if (document.querySelector(`#${o.view}.active`)) load();
 }
 makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, ko: "bnewsKo", iq: "bnewsIq", koN: "bnewsKoN", iqN: "bnewsIqN", count: "bnewsCount", meta: "bnewsMeta" });
+/* 기타 > 비스마야 소식 아래: 비스마야 유튜브 영상 (bismayah-videos.json · 6시간마다 수집)
+   썸네일 + 제목 + 채널·날짜, 누르면 유튜브 새 창. 처음엔 8개, '더 보기'로 8개씩 */
+(function bismayahVideos() {
+  const grid = document.getElementById("bvidGrid"); if (!grid) return;
+  const more = document.getElementById("bvidMore"), fl = document.getElementById("bvidFilter");
+  let items = null, shown = 8, f = "전체";
+  const LANG = { ko: "한국어", ar: "아랍어", en: "영어" };
+  const ago = (iso) => {
+    const d = new Date(iso); if (isNaN(d)) return "";
+    const days = Math.floor((Date.now() - d) / 864e5);
+    if (days < 1) return "오늘"; if (days < 7) return days + "일 전"; if (days < 31) return Math.floor(days / 7) + "주 전";
+    if (days < 365) return Math.floor(days / 30) + "개월 전"; return Math.floor(days / 365) + "년 전";
+  };
+  const card = (v) => {
+    const id = encodeURIComponent(v.id);
+    const ar = v.lang === "ar" ? ' dir="rtl" lang="ar"' : "";
+    return `<a class="bvid" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(v.title)}">
+      <span class="bvid-th"><img loading="lazy" src="https://i.ytimg.com/vi/${id}/mqdefault.jpg" alt="" onerror="this.parentNode.classList.add('noimg')"><i class="bvid-play" aria-hidden="true">▶</i>${v.length ? `<b class="bvid-len">${escapeHtml(v.length)}</b>` : ""}</span>
+      <span class="bvid-t">${escapeHtml(v.titleKo || v.title)}</span>
+      ${v.titleKo && v.titleKo !== v.title ? `<span class="bvid-o"${ar}>${escapeHtml(v.title)}</span>` : ""}
+      <span class="bvid-m">${v.lang !== "ko" ? `<em class="bnews-lang l-${escapeHtml(v.lang || "en")}">${LANG[v.lang] || "영어"}</em>` : ""}${escapeHtml(v.channel || "")}${v.date ? ` · ${ago(v.date)}` : ""}</span>
+    </a>`;
+  };
+  const render = () => {
+    const list = (items || []).filter((v) => f === "전체" || (f === "한국어" ? v.lang === "ko" : v.lang !== "ko"));
+    grid.innerHTML = list.length ? list.slice(0, shown).map(card).join("") : `<p class="bnews-empty">아직 모인 영상이 없어요.</p>`;
+    more.hidden = list.length <= shown;
+  };
+  more.onclick = () => { shown += 8; render(); };
+  let started = false;
+  const load = () => {
+    if (started) return; started = true;
+    fetch("bismayah-videos.json?t=" + Math.floor(Date.now() / 6e5)).then((r) => r.ok ? r.json() : null).then((d) => {
+      items = (d && d.items) || [];
+      const c = document.getElementById("bvidCount"); if (c) c.textContent = items.length ? items.length + "개" : "";
+      const ko = items.filter((v) => v.lang === "ko").length;
+      fl.innerHTML = items.length ? ["전체", "한국어", "현지·해외"].map((x) => `<button type="button" class="${x === f ? "active" : ""}" data-f="${x}">${x} <small>${x === "전체" ? items.length : x === "한국어" ? ko : items.length - ko}</small></button>`).join("") : "";
+      fl.querySelectorAll("button").forEach((b) => b.onclick = () => { f = b.dataset.f; shown = 8; fl.querySelectorAll("button").forEach((x) => x.classList.toggle("active", x === b)); render(); });
+      render();
+    }).catch(() => { grid.innerHTML = `<p class="bnews-empty">영상 목록을 불러오지 못했어요.</p>`; });
+  };
+  // 비스마야 소식 탭을 열 때 처음 불러온다 (썸네일을 미리 받지 않게)
+  const view = document.getElementById("view-bismayah");
+  const check = () => { if (view && view.classList.contains("active")) load(); };
+  if (view) new MutationObserver(check).observe(view, { attributes: true, attributeFilter: ["class"] });
+  check();
+})();
 /* 이라크 갑작스러운 공휴일 선포 · 통행금지·도로 통제 알림 (iraq-issues.json 의 alerts, 1시간마다 수집)
    화면 맨 위 띠로 보여 주고, ✕ 로 닫으면 그 기사는 이 브라우저에서 다시 안 띄운다 */
 (function iraqAlert() {
