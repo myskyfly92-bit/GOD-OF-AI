@@ -4874,6 +4874,12 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
       if (window.hsePlayEnter) window.hsePlayEnter();
     };
     el.addEventListener("click", done, { once: true });
+    // 오른쪽 아래 '인트로 생략' 버튼 (준비 막대가 도는 동안부터 보인다)
+    const skip = document.createElement("button");
+    skip.type = "button"; skip.className = "hse-intro-skip";
+    skip.innerHTML = `인트로 생략 <span aria-hidden="true">›</span>`;
+    skip.addEventListener("click", (e) => { e.stopPropagation(); done(); });
+    el.appendChild(skip);
     // 로고 장면: '한화'를 용접으로 새긴 뒤 → 글자·제목이 나타나고 → 2.3초 뒤 끝
     const showLogo = () => {
       const word = el.querySelector(".hse-intro-word");
@@ -8492,6 +8498,8 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     let tries = 0;
     const showTip = () => {
       if (ls.get("deskDone")) return;
+      // 인트로가 도는 중이면 끝난 뒤 10초쯤 지나서 띄운다
+      if (document.querySelector(".hse-intro") || document.documentElement.classList.contains("intro-pending")) { setTimeout(showTip, 10000); return; }
       // 다른 안내 창이 떠 있거나 버튼이 안 보이는 순간이면 조금 뒤에 다시 (최대 4번)
       if (document.querySelector(".desk-bg, .vc-win-bg, .guide-pop, .guide-overlay") || btn.offsetParent === null || btn.getBoundingClientRect().width === 0) { if (++tries < 4) setTimeout(showTip, 12000); return; }
       tip = document.createElement("div"); tip.className = "desk-tip";

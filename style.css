@@ -3909,3 +3909,17 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 
 .desk-ico { margin-top: 8px; padding: 8px 10px; border-radius: 8px; background: rgba(0,161,77,.08); border: 1px dashed rgba(0,161,77,.45); font-size: 12px; line-height: 1.7; }
 .desk-ico a { color: #00a14d; font-weight: 700; text-decoration: underline; }
+
+/* 인트로 생략 버튼: 오른쪽 아래 */
+.hse-intro-skip {
+  position: absolute; right: 28px; bottom: 26px; z-index: 8;
+  padding: 9px 16px 9px 18px; border-radius: 999px; cursor: pointer;
+  font: 600 13px/1 inherit; letter-spacing: 0.04em; color: rgba(234,240,246,0.85);
+  background: rgba(10,16,24,0.55); border: 1px solid rgba(255,255,255,0.22);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  transition: background .2s, color .2s, border-color .2s;
+}
+.hse-intro-skip span { margin-left: 4px; font-size: 15px; }
+.hse-intro-skip:hover, .hse-intro-skip:focus-visible { color: #fff; background: rgba(53,208,192,0.22); border-color: rgba(53,208,192,0.7); outline: none; }
+.hse-intro.out .hse-intro-skip { opacity: 0; pointer-events: none; }
+@media (max-width: 640px) { .hse-intro-skip { right: 16px; bottom: 18px; } }
