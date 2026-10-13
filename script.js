@@ -2581,23 +2581,26 @@ async function wzCallScript(action, payload) {
     if (action === "add" && !payload.uid) payload.uid = "u" + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
     const q2 = () => `action=wz2&op=${action}&withRows=1&payload=${encodeURIComponent(JSON.stringify(payload))}&t=${Date.now()}`;
     const t0 = performance.now();
-    let j = null, lastErr = null;
-    // 끊기면 한 번 더 (새 작업은 uid 로 두 번 안 들어감 · 삭제는 다시 보내지 않음)
-    for (let k = 0; k < (action === "del" ? 1 : 2) && !j; k++) {
+    let j = null, lastErr = null, tries = 0;
+    // 서버 처리는 1초 안팎인데 가끔 오가는 길(인터넷·구글 입구)에서 수십 초씩 걸리는 경우가 있다.
+    // → 오래 걸리면 끊고 다시 보낸다 (새 작업은 uid 로 두 번 안 들어감 · 삭제는 다시 보내지 않음)
+    const LIMITS = action === "del" ? [40000] : [10000, 15000, 30000];
+    for (let k = 0; k < LIMITS.length && !j; k++) {
+      tries = k + 1;
       try {
-        const res = await wzFetchT(url + (url.includes("?") ? "&" : "?") + q2(), 40000);
+        const res = await wzFetchT(url + (url.includes("?") ? "&" : "?") + q2(), LIMITS[k]);
         j = await res.json();
       } catch (err) {
         lastErr = err;
-        if (k === 0 && action !== "del") await new Promise((r) => setTimeout(r, 1500));
+        if (k < LIMITS.length - 1) await new Promise((r) => setTimeout(r, 600));
       }
     }
     if (!j) {
-      wzDiag(action, performance.now() - t0, null, "network");
+      wzDiag(action, performance.now() - t0, null, "network ×" + tries);
       throw new Error(action === "del" ? "구글 시트와 연결이 끊겼습니다. 새로고침해서 지워졌는지 확인해 주세요" : "구글 시트와 연결이 계속 끊깁니다. 인터넷 연결을 확인한 뒤 다시 시도해 주세요");
     }
     if (j.wz2) {
-      wzDiag(action, performance.now() - t0, j.ms, j.ok ? "" : j.error);
+      wzDiag(action, performance.now() - t0, j.ms, (j.ok ? "" : j.error) + (tries > 1 ? ` (다시 보냄 ×${tries - 1}${j.again ? ", 중복 막음" : ""})` : ""));
       if (!j.ok) throw new Error(j.error || "저장 실패");
       if (j.rows) { wzApplyRows(j.rows); renderTodayWork(); j._applied = true; }
       return j;
