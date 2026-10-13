@@ -8469,13 +8469,12 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     const d = document.createElement("div"); d.className = "desk-toast"; d.textContent = text;
     document.body.appendChild(d); setTimeout(() => d.remove(), 6000);
   }
+  // 바로가기 파일: 사이트에 올려 둔 진짜 .url 파일을 받게 한다 (브라우저에서 만든 파일은 확장자가 빠지는 경우가 있어서)
   function urlFile() {
-    const base = location.origin + location.pathname.replace(/[^/]*$/, "");
-    const body = "[InternetShortcut]\r\nURL=" + base + "?pc=1\r\nIconFile=" + base + "assets/icon/favicon.ico\r\nIconIndex=0\r\n";
     const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([body], { type: "application/octet-stream" }));
-    a.download = "Bismayah HSE Situation Room.url";   // 한글 파일 이름은 일부 브라우저에서 이름이 깨져 영문으로
-    document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    a.href = "assets/icon/Bismayah-HSE.url";
+    a.download = "Bismayah-HSE.url";
+    document.body.appendChild(a); a.click(); setTimeout(() => a.remove(), 1000);
   }
   btn.addEventListener("click", async () => {
     if (dp) {
