@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-12T01:33:09Z",
+ "generatedAt": "2026-10-13T03:05:34Z",
  "note": "상장 건설사 정기보고서 '수주산업 관련 공시'의 진행률 (미청구공사·공사미수금은 담지 않음)",
  "companies": {
   "hdec": {
@@ -2254,8 +2254,6 @@
    "contract": "이라크 Bismayah 국민주택도급사업",
    "due": "2032-12-31",
    "contractDate": "2012-05-30",
-   "asOf": "2026-06",
-   "rcept_no": "20260831001249",
    "parts": [
     {
      "label": "주택",
@@ -2271,7 +2269,9 @@
      "due": "2032-12-31",
      "contractDate": "2015-04-05"
     }
-   ]
+   ],
+   "asOf": "2026-06",
+   "rcept_no": "20260831001249"
   },
   "말레이시아 Shell OGP Project": {
    "company": "samsungea",
