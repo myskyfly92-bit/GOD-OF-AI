@@ -8509,3 +8509,20 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     setTimeout(showTip, 15000);
   }
 })();
+
+
+/* 예전에 '앱으로 설치'해서 주소창 없는 창으로 열린 경우: 일반 인터넷 창으로 여는 버튼과 앱 지우는 법 안내 */
+(function appModeNotice() {
+  const app = window.matchMedia("(display-mode: standalone)").matches || window.matchMedia("(display-mode: minimal-ui)").matches || window.navigator.standalone === true;
+  if (!app) return;
+  const edge = /Edg\//.test(navigator.userAgent);
+  const bar = document.createElement("div"); bar.className = "appmode-bar";
+  bar.innerHTML = `<span>지금은 <b>앱 창</b>(주소창·즐겨찾기 없음)으로 열려 있어요.</span>
+    <a href="${location.origin + location.pathname}?pc=1&from=desk" target="_blank" rel="noopener">🌐 일반 인터넷 창으로 열기</a>
+    <button type="button" class="how">앱 지우는 법</button><button type="button" class="x" aria-label="닫기">✕</button>`;
+  bar.querySelector(".x").onclick = () => bar.remove();
+  bar.querySelector(".how").onclick = () => alert(edge
+    ? "이 창 오른쪽 위 ⋯ → '앱 설정' 또는 '제거' (또는 주소창에 edge://apps 입력 → 상황실 ⋯ → 제거)\n\n지운 뒤에는 상황실의 '📌 바탕화면 바로가기' 버튼으로 일반 바로가기를 만드세요."
+    : "이 창 오른쪽 위 ⋮ → '…제거' (또는 크롬 주소창에 chrome://apps 입력 → 상황실 오른쪽 클릭 → Chrome에서 삭제)\n\n지운 뒤에는 상황실의 '📌 바탕화면 바로가기' 버튼으로 일반 바로가기를 만드세요.");
+  document.body.prepend(bar);
+})();
