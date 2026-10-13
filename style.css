@@ -4117,34 +4117,22 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .wz-zoombox { position: relative; max-width: none; }
 .wz-co-btn { width: auto; padding: 0 12px; display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-body); font-size: 13px; flex: none; }
 
-/* 오늘 작업 현황: '작업구역 탭에서 보기' 버튼 — 오른쪽 위, 위엄 있게 은은히 빛남
-   어두운 바탕 + 테두리를 따라 천천히 도는 청록·금빛 + 느린 숨쉬기 광채 + 가끔 지나가는 옅은 광택 */
-@property --twa { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+/* 오늘 작업 현황: '작업구역 탭에서 보기' — 칸 제목줄(TODAY'S WORK · 오늘 작업 현황 · 10/13)과 같은 글꼴·색으로 조용히,
+   화살표만 가끔 살짝 움직여 '누를 수 있다'는 것만 알려 준다 */
 .today-work-panel { position: relative; }
 .today-work-panel .tw-link, .fit-fx .today-work-panel .tw-link {
-  position: absolute; top: 12px; right: 14px; margin: 0; z-index: 2; overflow: hidden; isolation: isolate;
-  padding: 7px 18px; border-radius: 999px; border: 1.5px solid transparent;
-  font-weight: 700; font-size: 12.5px; letter-spacing: 0.03em; color: #e6fbf8;
-  background:
-    linear-gradient(180deg, #13202a, #0b1219) padding-box,
-    conic-gradient(from var(--twa), rgba(53,208,192,0.18), #35d0c0 10%, #f3d48b 16%, #35d0c0 22%, rgba(53,208,192,0.18) 34%,
-      rgba(53,208,192,0.18) 60%, #35d0c0 72%, rgba(243,212,139,0.9) 78%, rgba(53,208,192,0.18) 90%) border-box;
-  text-shadow: 0 0 10px rgba(53,208,192,0.35);
-  animation: twOrbit 7s linear infinite, twBreath 5s ease-in-out infinite;
+  position: absolute; top: 16px; right: 18px; margin: 0; z-index: 2;
+  display: inline-flex; align-items: center; gap: 6px; padding: 4px 4px 4px 10px; border-radius: 6px;
+  font-family: var(--font-mono); font-size: 11.5px; font-weight: 600; letter-spacing: 0.12em; color: var(--cyan);
+  background: transparent; border: 1px solid transparent; animation: none; box-shadow: none; text-shadow: none;
+  transition: background .2s, border-color .2s, color .2s;
 }
-.today-work-panel .tw-link::after {
-  content: ""; position: absolute; top: 0; bottom: 0; left: -70%; width: 45%; z-index: -1; pointer-events: none;
-  background: linear-gradient(100deg, transparent, rgba(243,212,139,0.18) 45%, rgba(255,255,255,0.22) 50%, rgba(53,208,192,0.14) 55%, transparent);
-  transform: skewX(-18deg); animation: twSheen 7s cubic-bezier(.4,0,.2,1) infinite;
-}
-.today-work-panel .tw-link:hover { color: #fff; text-shadow: 0 0 14px rgba(53,208,192,0.7); animation-duration: 3s, 5s; }
-@keyframes twOrbit { to { --twa: 360deg; } }
-@keyframes twBreath {
-  0%, 100% { box-shadow: 0 0 0 1px rgba(53,208,192,0.06), 0 0 10px rgba(53,208,192,0.12), inset 0 0 8px rgba(53,208,192,0.05); }
-  50% { box-shadow: 0 0 0 1px rgba(53,208,192,0.14), 0 0 22px rgba(53,208,192,0.32), 0 0 34px rgba(243,212,139,0.10), inset 0 0 12px rgba(53,208,192,0.12); }
-}
-@keyframes twSheen { 0%, 62% { left: -70%; } 85%, 100% { left: 130%; } }
-@media (prefers-reduced-motion: reduce) { .today-work-panel .tw-link, .today-work-panel .tw-link::after { animation: none; } }
+.today-work-panel .tw-link::after { content: none; }
+.today-work-panel .tw-link .tw-arr { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; border: 1px solid rgba(53, 208, 192, 0.45); font-size: 11px; line-height: 1; animation: twNudge 3.2s ease-in-out infinite; }
+.today-work-panel .tw-link:hover { color: #fff; background: rgba(53, 208, 192, 0.08); border-color: rgba(53, 208, 192, 0.35); }
+.today-work-panel .tw-link:hover .tw-arr { background: var(--cyan); color: #0a0e13; border-color: var(--cyan); animation: none; }
+@keyframes twNudge { 0%, 70%, 100% { transform: translateX(0); } 80% { transform: translateX(3px); } 90% { transform: translateX(0); } }
+@media (prefers-reduced-motion: reduce) { .today-work-panel .tw-link .tw-arr { animation: none; } }
 @media (max-width: 560px) { .today-work-panel .tw-link { position: static; margin-top: 10px; } }
 
 /* 지도 스크롤바: 상황실 색(어두운 바탕 + 청록) */
