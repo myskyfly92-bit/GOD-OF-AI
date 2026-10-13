@@ -6446,7 +6446,7 @@ async function clinicCall(action, payload) {
       <header class="ai-head">
         <div>
           <b>HSE 법령 도우미</b>
-          <small>한국 산업안전보건·소방 법령 · 이라크 노동·환경법 근거로 답해요</small>
+          <small>한국 안전보건·소방 법령 · 이라크 법 근거로 답해요</small>
         </div>
         <span class="ai-head-btns"><button type="button" class="ai-size" title="창 크기 바꾸기 (작게·중간·크게)" aria-label="창 크기 바꾸기">⤢</button><button type="button" class="ai-close" aria-label="닫기">✕</button></span>
       </header>
