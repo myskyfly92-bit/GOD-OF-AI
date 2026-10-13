@@ -350,7 +350,7 @@ async function main() {
   }
   // 제목 앞뒤에 붙은 매체 이름 떼기 ('샤팍뉴스..', 'INA / ', ' - Al-Monitor')
   if (CFG.GROUP) list.forEach((n) => {
-    const cl = (t) => String(t || "").replace(/^(샤[팍팩파]\s?뉴스|샤파크나|Shafaq News|INA|이나|IQ News|Rudaw|루다우|Kurdistan24|쿠르디스탄24)\s*(\.\.|\/|:|-|·|…)\s*/i, "").replace(/\s[-–|]\s[^-–|]{2,40}$/, "").replace(/\s+/g, " ").trim();
+    const cl = (t) => String(t || "").replace(/^(샤[팍팩파]\s?뉴스|샤파크나|트와일라잇\s?뉴스|황혼\s?뉴스|Shafaq News|شفق نيوز|السومرية نيوز|INA|이나|IQ News|Rudaw|루다우|Kurdistan24|쿠르디스탄24)\s*(\.\.|\/|:|-|·|…)\s*/i, "").replace(/\s[-–|]\s[^-–|]{2,40}$/, "").replace(/\s+/g, " ").trim();
     n.titleKo = cl(n.titleKo || n.title); if (n.lang !== "ko") n.title = cl(n.title);
   });
   // 같은 사건을 여러 매체가 쓴 기사 묶기 (제목 낱말이 많이 겹치고 3일 안이면 같은 사건)
