@@ -58,7 +58,7 @@ DOWN = {"n": 0}   # 연속 접속 실패 수 (계속 안 되면 일찍 포기해
 
 
 def get_json(path, params):
-    if DOWN["n"] >= 6:
+    if DOWN["n"] >= 8:
         return None
     for attempt in range(2):
         for base in BASES:
@@ -118,7 +118,9 @@ def flatten(node):
 
 
 def clean(t):
-    t = re.sub(r"<[^>]+>", "", t or "")
+    if isinstance(t, (list, dict)):          # 법령에 따라 글자 대신 목록이 오는 경우가 있다
+        t = "\n".join(flatten(t)) if isinstance(t, dict) else "\n".join(x if isinstance(x, str) else "\n".join(flatten(x)) for x in t)
+    t = re.sub(r"<[^>]+>", "", str(t or ""))
     t = t.replace(" ", " ")
     lines = [re.sub(r"[ \t]+", " ", ln).strip() for ln in t.split("\n")]
     return "\n".join(ln for ln in lines if ln)
@@ -226,8 +228,12 @@ def main():
             print(f"  [경고] '{name}' 본문을 받지 못함", file=sys.stderr)
             continue
         idx = len(laws_meta)
-        arts = parse_articles(j, idx)
-        annex = parse_annexes(j, idx)
+        try:
+            arts = parse_articles(j, idx)
+            annex = parse_annexes(j, idx)
+        except Exception as e:                # 한 법령이 이상해도 나머지는 계속 받는다
+            print(f"  [경고] '{name}' 조문 해석 실패: {e}", file=sys.stderr)
+            continue
         if annex:
             print(f"  {name}: 별표 {len(set(a['no'] for a in annex))}개 ({len(annex)}조각)")
         arts += annex
