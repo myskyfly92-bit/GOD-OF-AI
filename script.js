@@ -2110,7 +2110,9 @@ function renderWorkZones(data) {
   `).join("");
 
   wrap.innerHTML = `
-    <div class="wz-zone-tabs">${tabsHtml}<div class="wz-guide-note"><b>📝 입력 안내</b> 사무실·창고 등 평소 근무 구역의 일상 업무는 적지 않아도 됩니다.<br><span>새 작업, 위험작업, 장비 투입처럼 <b>평소와 다른 작업</b>만 기입해 주세요.</span></div></div>
+    <div class="wz-home" id="wzHome"></div>
+    <div class="wz-main" id="wzMain" hidden>
+    <div class="wz-zone-tabs"><button type="button" class="wz-home-back" id="wzHomeBack" title="이라크 지도에서 구역 다시 고르기">🗺 구역 선택</button>${tabsHtml}<div class="wz-guide-note"><b>📝 입력 안내</b> 사무실·창고 등 평소 근무 구역의 일상 업무는 적지 않아도 됩니다.<br><span>새 작업, 위험작업, 장비 투입처럼 <b>평소와 다른 작업</b>만 기입해 주세요.</span></div></div>
     <div class="wz-filter-bar" id="wzFilterBar"></div>
     <div class="wz-layout">
       <div class="wz-map-col">
@@ -2141,6 +2143,7 @@ function renderWorkZones(data) {
       </div>
       <div class="wz-schedule-col" id="wzScheduleCol"></div>
     </div>
+    </div>
   `;
 
   document.querySelectorAll(".wz-tab-btn").forEach(btn => {
@@ -2153,12 +2156,81 @@ function renderWorkZones(data) {
   });
 
   wzSetupPickMode();
-  wzShowZone(0);
+  wzShowZone(0, true);
+  document.getElementById("wzHomeBack").onclick = () => wzShowHome(true);
+  wzShowHome(false);
 }
 
-function wzShowZone(idx) {
+/* ---------- 작업구역 첫 화면: 이라크 지도 + BNCP 현장 3개 구역(Camp · 북부 · 남부) 고르기 ---------- */
+let wzIraqGeo = null;
+function wzOpenZone(i) {
+  const home = document.getElementById("wzHome"), main = document.getElementById("wzMain");
+  if (home) home.hidden = true;
+  if (main) main.hidden = false;
+  const btn = document.querySelector(`.wz-tab-btn[data-idx="${i}"]`);
+  if (btn) btn.click(); else wzShowZone(i);
+  requestAnimationFrame(() => { wzFitViewport(); wzCoLayout(); });
+}
+function wzShowHome(scroll) {
+  const home = document.getElementById("wzHome"), main = document.getElementById("wzMain");
+  if (!home) return;
+  home.hidden = false; if (main) main.hidden = true;
+  const today = wzBaghdadToday(), dow = WZ_DAY_ORDER[(new Date(today + "T00:00:00Z").getUTCDay() + 6) % 7];
+  const stat = (z) => {
+    const its = wzItemsFor(z, [today]).filter((it) => wzOnDate(it, today, dow));
+    return { n: its.length, risk: its.filter((it) => it.risks.length).length, crew: its.reduce((a, it) => a + (it.crew || 0), 0) };
+  };
+  const SUB = { "캠프": "숙소·사무·식당", "Site 북부": "북쪽 공사 현장", "Site 남부": "남쪽 공사 현장" };
+  home.innerHTML = `
+    <div class="wzh-map"><svg id="wzhSvg" viewBox="0 0 400 420" role="img" aria-label="이라크 지도 · 비스마야 신도시 위치"></svg>
+      <div class="wzh-cap">🇮🇶 이라크 · 바그다드 남동쪽 약 10km</div></div>
+    <div class="wzh-side">
+      <div class="wzh-h"><b>BNCP 비스마야 신도시 현장</b><span>보고 싶은 구역을 고르세요 · 오늘 ${Number(today.slice(5, 7))}/${Number(today.slice(8, 10))} (${dow}) 작업 기준</span></div>
+      <div class="wzh-cards">${wzZones.map((z, i) => { const t = stat(z); return `
+        <button type="button" class="wzh-card ${WZ_CATEGORY_CLASS[z.category] || ""}" data-i="${i}">
+          <span class="wzh-thumb" style="background-image:url('${wzEscapeHtml(z.image || "")}')"><i class="wzh-no">${i + 1}</i></span>
+          <span class="wzh-body"><b>${wzEscapeHtml(z.name)}</b><small>${wzEscapeHtml(SUB[z.category] || z.category || "")}</small>
+            <span class="wzh-stat">${t.n ? `오늘 작업 <em>${t.n}</em>건${t.crew ? ` · 👥 ${t.crew}명` : ""}${t.risk ? ` · <em class="r">⚠ 위험 ${t.risk}</em>` : ""}` : `<span class="dim">오늘 등록된 작업 없음</span>`}</span></span>
+          <span class="wzh-go">›</span>
+        </button>`; }).join("")}</div>
+      <p class="wzh-note">구역 안에서는 지도 위 <b>🗺 구역 선택</b> 버튼으로 이 화면에 돌아올 수 있어요.</p>
+    </div>`;
+  home.querySelectorAll(".wzh-card").forEach((b) => b.onclick = () => wzOpenZone(Number(b.dataset.i)));
+  wzDrawIraq();
+  if (scroll) home.scrollIntoView({ block: "nearest", behavior: "smooth" });
+}
+async function wzDrawIraq() {
+  const svg = document.getElementById("wzhSvg");
+  if (!svg) return;
+  try { wzIraqGeo = wzIraqGeo || await (await fetch("iraq-map.json", { cache: "force-cache" })).json(); } catch (e) { return; }
+  const LON0 = 38.6, LON1 = 48.8, LAT0 = 28.9, LAT1 = 37.5, W = 400, H = 420;
+  const kx = Math.cos(33 * Math.PI / 180), sc = Math.min(W / ((LON1 - LON0) * kx), H / (LAT1 - LAT0));
+  const ox = (W - (LON1 - LON0) * kx * sc) / 2, oy = (H - (LAT1 - LAT0) * sc) / 2;
+  const P = (lon, lat) => [ox + (lon - LON0) * kx * sc, oy + (LAT1 - lat) * sc];
+  const ring = (r) => r.map((c, i) => { const [x, y] = P(c[0], c[1]); return (i ? "L" : "M") + x.toFixed(1) + " " + y.toFixed(1); }).join("") + "Z";
+  const geoPath = (g) => !g ? "" : g.type === "Polygon" ? g.coordinates.map(ring).join("") : g.type === "MultiPolygon" ? g.coordinates.map((p) => p.map(ring).join("")).join("") : "";
+  const line = (g) => { if (!g) return ""; const ls = g.type === "LineString" ? [g.coordinates] : g.type === "MultiLineString" ? g.coordinates : []; return ls.map((l) => l.map((c, i) => { const [x, y] = P(c[0], c[1]); return (i ? "L" : "M") + x.toFixed(1) + " " + y.toFixed(1); }).join("")).join(""); };
+  const G = wzIraqGeo;
+  const [bx, by] = P(BISMAYAH_LON, BISMAYAH_LAT), [gx, gy] = P(44.366, 33.315);
+  svg.innerHTML =
+    `<g class="wzh-cty">${(G.countries || []).map((f) => `<path d="${geoPath(f.geometry)}"/>`).join("")}</g>` +
+    `<g class="wzh-gov">${(G.governorates || []).map((f) => `<path class="${f.properties.en === "Baghdad" ? "bg" : ""}" d="${geoPath(f.geometry)}"><title>${wzEscapeHtml(f.properties.ko || f.properties.en || "")}</title></path>`).join("")}</g>` +
+    `<g class="wzh-riv">${(G.rivers || []).map((f) => `<path d="${line(f.geometry)}"/>`).join("")}</g>` +
+    `<g class="wzh-brd">${(G.borders || []).map((f) => `<path d="${line(f.geometry)}"/>`).join("")}</g>` +
+    `<g class="wzh-lbl">${(G.countries || []).map((f) => { const p = f.properties; if (!p.labelLat) return ""; const [x, y] = P(p.labelLon, p.labelLat); return x > 0 && x < W && y > 0 && y < H ? `<text x="${x}" y="${y}">${wzEscapeHtml(p.ko || "")}</text>` : ""; }).join("")}</g>` +
+    `<circle class="wzh-bgd" cx="${gx}" cy="${gy}" r="3"/><text class="wzh-city" x="${gx - 6}" y="${gy - 8}" text-anchor="end">바그다드</text>` +
+    `<circle class="wzh-ping" cx="${bx}" cy="${by}" r="6"/><circle class="wzh-pt" cx="${bx}" cy="${by}" r="5"/>` +
+    `<path class="wzh-lead" d="M${bx + 6} ${by + 2} L${bx + 40} ${by + 26} L${W - 6} ${by + 26}"/>` +
+    `<text class="wzh-site" x="${bx + 44}" y="${by + 20}">BNCP 비스마야 현장</text>`;
+}
+
+function wzShowZone(idx, init) {
   const zone = wzZones[idx];
   if (!zone) return;
+  if (!init) {   // 다른 곳(입력창 다시 열기 등)에서 구역을 열면 첫 화면은 닫는다
+    const home = document.getElementById("wzHome"), main = document.getElementById("wzMain");
+    if (home && !home.hidden) { home.hidden = true; if (main) main.hidden = false; requestAnimationFrame(() => { wzFitViewport(); wzCoLayout(); }); }
+  }
 
   const img = document.getElementById("wzBgImg");
   const fallback = document.getElementById("workzoneMapFallback");
@@ -6986,7 +7058,8 @@ async function clinicCall(action, payload) {
       { go: "view-workzone", sel: ".workzone-panel", text: `<b>작업구역</b>이에요. 공사팀·관리재경팀이 같이 쓰는 <b>구글 시트 작업일정</b>을 지도에 표시해요.<br>작업 등록 방법은 목차의 <b>'작업구역 작업 등록'</b> 장에서 자세히 알려 드려요.` },
     ]},
     { id: "wz", title: "작업구역 작업 등록", icon: "🗺️", wz: true, steps: [
-      { go: "view-workzone", sel: ".wz-zone-tabs", text: `여기가 <b>작업구역</b>이에요. 먼저 위쪽에서 구역(캠프 · Site 북부 · Site 남부)을 골라요.` },
+      { go: "view-workzone", act: () => window.wzShowHome && window.wzShowHome(false), sel: "#wzHome", text: `여기가 <b>작업구역</b>이에요. 처음엔 <b>이라크 지도</b>와 함께 BNCP 현장의 세 구역(<b>캠프 · Site 북부 · Site 남부</b>)이 나오고, 구역마다 <b>오늘 작업 건수·위험작업·인원</b>이 보여요. 보고 싶은 구역을 누르세요.` },
+      { act: () => window.wzOpenZone && window.wzOpenZone(0), sel: ".wz-zone-tabs", text: `구역에 들어오면 위쪽 버튼으로 다른 구역으로 바로 옮길 수 있고, <b>🗺 구역 선택</b>을 누르면 지도 화면으로 돌아가요.` },
       { sel: "#wzScheduleCol", text: `오른쪽은 <b>주간 작업일정</b>이에요. ‹ › 로 주를 옮기고, 요일을 누르면 그날 작업 위치가 지도에 표시돼요.` },
       { sel: "#wzFilterBar", text: `<b>팀·파트 버튼</b>을 누르면 그 팀 작업만 걸러서 볼 수 있어요.` },
       { sel: "#wzPickToggle", text: `작업을 새로 넣으려면 <b>➕ 지도에 작업 추가</b>를 누르고, 지도에서 작업 위치를 클릭하세요.` },
@@ -7111,6 +7184,7 @@ async function clinicCall(action, payload) {
   async function showStep(ch, i, pos) {
     const step = ch.steps[i];
     if (step.go) await goView(step.go);
+    if (step.act) { try { step.act(); } catch (e) {} await wait(300); }
     let el = step.sel ? $(step.sel) : null;
     // 늦게 그려지는 화면은 잠깐 기다린다 (최대 2초)
     for (let k = 0; step.sel && k < 10 && !visible(el); k++) { await wait(200); el = $(step.sel); }
