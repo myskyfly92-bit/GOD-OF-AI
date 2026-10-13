@@ -6836,7 +6836,7 @@ async function clinicCall(action, payload) {
       { sel: ".topbar", text: `맨 위 <b>배너</b>예요. 가끔 제가 이 위를 달려가요. 오른쪽 시계 앞에 도착하면 <b>경례</b>를 하고, 안전 한마디를 해요. 가끔은 안전모를 베개 삼아 <b>잠깐 낮잠</b>도 자요 💤<br>달리는 저를 <b>눌러 보면</b> 말을 걸고, 자고 있을 때 누르면 깨어나요!` },
       { sel: ".clock-block", text: `<b>시계</b>예요. 큰 글씨가 <b>바그다드 현지 시각</b>, 아래 작은 글씨가 <b>한국 시각</b>(6시간 빠름)이에요. 본사와 통화할 때 참고하세요.` },
       { sel: "#visitCounter", opt: true, text: `제목 아래 <b>TODAY | TOTAL</b> 은 싸이월드 미니홈피처럼 이 상황판을 <b>오늘 / 지금까지 연 기기 수</b>예요. 초록 점 <b>NOW</b> 는 <b>지금 이 화면을 열어 둔 기기 수</b>예요(몇 분 단위로 갱신). 옆의 💻·📱 는 그중 <b>컴퓨터 / 휴대폰</b> 수예요. 같은 PC·폰은 새로고침해도 <b>하루 한 번만</b> 세고, 이름 같은 정보는 받지 않아요. 마우스를 올리면 <b>최근 방문자 추이 그래프</b>와 <b>이번 달 많이 본 탭</b>이 살짝 떠요.` },
-      { sel: "#netPill", text: `시계 오른쪽 국기 아래는 <b>인터넷 속도</b>예요. 이 PC에서 잰 <b>다운로드 속도(Mbps)</b>와 <b>응답 시간(ms)</b>을 보여 줘요.<br>🟢 좋음(5Mbps 이상) · 🟡 보통(1~5) · 🔴 느림(1 미만)이고, 끊기면 <b>'인터넷 끊김'</b>이 떠요. 15분마다 자동으로 재고, <b>누르면 바로</b> 더 정확하게 다시 재요. fast.com 처럼 가까운 측정 서버(Cloudflare)에서 받아서 재요.<br>화면이 비어 보이거나 지도가 안 뜰 때 여기가 빨간색이면 인터넷 탓이니 잠시 뒤 새로고침하세요.` },
+      { sel: "#netPill", text: `시계 오른쪽 국기 아래는 <b>인터넷 속도</b>예요. 마우스를 올리면 <b>오늘 측정 기록·끊김 횟수·화상회의 가능 여부</b>가 떠요. 이 PC에서 잰 <b>다운로드 속도(Mbps)</b>와 <b>응답 시간(ms)</b>을 보여 줘요.<br>🟢 좋음(5Mbps 이상) · 🟡 보통(1~5) · 🔴 느림(1 미만)이고, 끊기면 <b>'인터넷 끊김'</b>이 떠요. 15분마다 자동으로 재고, <b>누르면 바로</b> 더 정확하게 다시 재요. fast.com 처럼 가까운 측정 서버(Cloudflare)에서 받아서 재요.<br>화면이 비어 보이거나 지도가 안 뜰 때 여기가 빨간색이면 인터넷 탓이니 잠시 뒤 새로고침하세요.` },
       { sel: ".group-bar", text: `여기가 <b>대분류 메뉴</b>예요: 종합현황 · 안전 · 보건 · 환경 · 소방 · 기타.<br>하나를 누르면 바로 아래에 <b>소분류 탭</b> 줄이 나타나고, 마지막으로 보던 소분류를 기억해요.` },
       { sel: ".sa-alert", opt: true, text: `화면 아래 빨간 띠는 <b>중대재해 보도 알림</b>이에요. 최근 3일 안에 국내 산업현장 사망사고 기사가 나오면 <b>회사명과 기사 제목</b>이 떠요. 같은 사고 기사는 하나로 묶어 '보도 n건'으로 보여 주고, 누르면 원문이 열려요.<br>첫 보도는 사실과 다를 수 있으니 원문과 고용노동부 발표를 확인하세요. ✕ 로 닫으면 새 사고 기사가 올 때까지 숨어요.` },
       { sel: "#langSwitcher", text: `<b>언어 선택</b>이에요. <b>ENG</b> 나 <b>العربية</b> 를 누르면 화면 글자가 자동 번역돼요. 영어·아랍어를 쓰는 동료에게 보여 줄 때 좋아요.<br>자동 번역이라 어색한 말이 있을 수 있으니 중요한 내용은 한국어로 한 번 더 확인하세요.` },
@@ -8252,11 +8252,14 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   const CF = "https://speed.cloudflare.com/__down?bytes=";
   let src = "";
   const pings = [];
-  let mbps = null, lastTest = 0, testing = false, failCount = 0;
+  let mbps = null, lastTest = 0, testing = false, failCount = 0, pop = null, popT = 0;
   const median = (a) => { const b = a.slice().sort((x, y) => x - y); return b.length ? b[Math.floor(b.length / 2)] : null; };
   function draw() {
     pill.classList.remove("good", "ok", "bad");
-    if (!navigator.onLine || failCount >= 2) {
+    const isDown = !navigator.onLine || failCount >= 2;
+    noteDown(isDown);
+    if (pop) drawPop();
+    if (isDown) {
       pill.classList.add("bad"); main.textContent = "인터넷 끊김"; sub.textContent = "연결 확인 중…"; return;
     }
     const rtt = median(pings);
@@ -8266,8 +8269,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     pill.classList.add(level);
     main.textContent = mbps != null ? (mbps >= 10 ? Math.round(mbps) : mbps.toFixed(1)) + " Mbps" : "측정 중…";
     sub.textContent = (rtt != null ? "응답 " + Math.round(rtt) + "ms" : "") + (level === "bad" ? " · 느림" : level === "ok" ? " · 보통" : " · 좋음");
-    pill.title = "이 PC의 인터넷 속도 – 다운로드 " + (mbps != null ? mbps.toFixed(1) + " Mbps" : "측정 전") + (rtt != null ? ", 응답 " + Math.round(rtt) + "ms" : "") +
-      (lastTest ? " (" + new Date(lastTest).toLocaleTimeString("ko-KR", { hour: "2-digit", minute: "2-digit" }) + " 측정)" : "") + (src ? " · " + src + " 기준" : "") + "\n15분마다 자동 측정 · 누르면 지금 더 정확히 측정";
+    pill.removeAttribute("title");   // 자세한 내용은 마우스를 올리면 뜨는 창으로
   }
   async function ping() {
     if (document.hidden) return;
@@ -8310,10 +8312,86 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       try { mbps = await measure([CF + n, CF + n]); src = "Cloudflare"; }
       catch (e) { mbps = await measure(TEST_FILES); src = "상황판 서버"; }
       lastTest = Date.now(); failCount = 0;
+      histAdd(mbps, median(pings));
     } catch (e) { failCount++; }
     testing = false; pill.classList.remove("testing");
     draw();
+    if (pop) drawPop();
   }
+
+  /* ---- 측정 기록 (이 PC 브라우저에만, 최근 7일) · 끊김 횟수 ---- */
+  const dayKey = () => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Baghdad" }).format(new Date());
+  const histGet = () => { try { const h = JSON.parse(localStorage.getItem("netHist") || "{}"); return h && typeof h === "object" ? h : {}; } catch (e) { return {}; } };
+  function histAdd(m, r) {
+    const h = histGet(), k = dayKey();
+    (h[k] = h[k] || []).push([Date.now(), Math.round(m * 10) / 10, r != null ? Math.round(r) : null]);
+    if (h[k].length > 120) h[k] = h[k].slice(-120);
+    Object.keys(h).sort().slice(0, -7).forEach((x) => delete h[x]);
+    try { localStorage.setItem("netHist", JSON.stringify(h)); } catch (e) {}
+  }
+  let wasDown = false;
+  function noteDown(down) {
+    if (down && !wasDown) { try { const o = JSON.parse(localStorage.getItem("netDown") || "{}"); const k = dayKey(); o[k] = (o[k] || 0) + 1; Object.keys(o).sort().slice(0, -7).forEach((x) => delete o[x]); localStorage.setItem("netDown", JSON.stringify(o)); } catch (e) {} }
+    wasDown = down;
+  }
+
+  /* ---- 마우스를 올리면 살짝 뜨는 '인터넷 상태' 창 (방문자 창과 같은 모양) ---- */
+  const lv = (m, r) => (m != null && m < 1) || (r != null && r > 1500) ? "bad" : (m != null && m < 5) || (r != null && r > 600) ? "ok" : "good";
+  const LV = { good: "좋음", ok: "보통", bad: "느림" };
+  const fmtM = (m) => m == null ? "–" : m >= 10 ? Math.round(m) : m.toFixed(1);
+  const secs = (mb, m) => { if (!m) return "–"; const t = (mb * 8) / m; return t < 1 ? "1초 안" : t < 60 ? `약 ${Math.round(t)}초` : `약 ${Math.round(t / 60)}분`; };
+  function drawPop() {
+    const rtt = median(pings);
+    const jit = pings.length >= 3 ? Math.round(pings.slice(1).reduce((a, p, i) => a + Math.abs(p - pings[i]), 0) / (pings.length - 1)) : null;
+    const down = !navigator.onLine || failCount >= 2;
+    const level = down ? "bad" : lv(mbps, rtt);
+    const h = histGet(), today = h[dayKey()] || [];
+    const ys = Object.keys(h).sort().filter((k) => k !== dayKey()).pop();
+    const avg = (a) => a.length ? a.reduce((x, y) => x + y[1], 0) / a.length : null;
+    let downN = 0; try { downN = (JSON.parse(localStorage.getItem("netDown") || "{}"))[dayKey()] || 0; } catch (e) {}
+    // 오늘 측정 막대 (0시~24시 자리에)
+    const W = 300, H = 70, max = Math.max(10, ...today.map((x) => x[1]));
+    const d0 = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Baghdad" })); d0.setHours(0, 0, 0, 0);
+    const off = Date.now() - new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Baghdad" })).getTime();
+    const bars = today.map(([t, m, r], i) => {
+      const loc = t - off, x = Math.max(0, Math.min(W - 4, ((loc - d0.getTime()) / 864e5) * W)), hh = Math.max(3, (m / max) * (H - 4));
+      return `<g class="ntp-b ${lv(m, r)}" data-i="${i}"><rect class="hit" x="${x - 3}" y="0" width="10" height="${H}"></rect><rect class="bar" x="${x}" y="${H - hh}" width="4" height="${hh}" rx="2"></rect></g>`;
+    }).join("");
+    const hm = (t) => new Date(t).toLocaleTimeString("ko-KR", { timeZone: "Asia/Baghdad", hour: "2-digit", minute: "2-digit", hour12: false });
+    pop.innerHTML = `<div class="vcp-h"><b>인터넷 상태</b><span>이 PC 기준${src ? " · " + src + " 서버로 측정" : ""}</span></div>
+      <div class="vcp-kpi"><div><span>다운로드</span><b class="${level}">${down ? "끊김" : fmtM(mbps)}</b><small>Mbps</small></div><div><span>응답</span><b>${rtt != null ? Math.round(rtt) : "–"}</b><small>ms</small></div><div><span>흔들림</span><b>${jit != null ? jit : "–"}</b><small>ms</small></div><div><span>상태</span><b class="${level}">${down ? "끊김" : LV[level]}</b></div></div>
+      <div class="vcp-chart"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="오늘 측정한 다운로드 속도">${bars || ""}</svg>
+        <div class="vcp-x"><span>0시</span><span class="vcp-tip">${today.length ? `오늘 ${today.length}번 측정 · 막대에 마우스를 올려 보세요` : "오늘 측정 기록이 쌓이는 중이에요"}</span><span>24시</span></div></div>
+      <div class="ntp-sum"><span>오늘 평균 <b>${fmtM(avg(today))}</b> · 최저 <b>${today.length ? fmtM(Math.min(...today.map((x) => x[1]))) : "–"}</b> · 최고 <b>${today.length ? fmtM(Math.max(...today.map((x) => x[1]))) : "–"}</b> Mbps</span>${ys ? `<span>어제 평균 <b>${fmtM(avg(h[ys]))}</b> Mbps</span>` : ""}<span>오늘 끊김 <b>${downN}</b>회</span></div>
+      <div class="vcp-tabs"><div class="vcp-st">지금 속도라면</div>
+        <div class="ntp-can">${[["화상회의(줌·팀즈)", !down && (mbps || 0) >= 3 && (rtt || 0) < 400], ["HD 동영상", !down && (mbps || 0) >= 5], ["현장 사진 10MB 올리기·받기", null, secs(10, down ? 0 : mbps)], ["도면 PDF 100MB 받기", null, secs(100, down ? 0 : mbps)]]
+          .map(([k, ok, t]) => `<div><span>${k}</span><b class="${t ? "" : ok ? "good" : "bad"}">${t || (ok ? "✓ 원활" : "✕ 끊길 수 있음")}</b></div>`).join("")}</div></div>
+      <div class="vcp-f">${lastTest ? hm(lastTest) + " 측정 · " : ""}15분마다 자동 · <b>누르면 지금 다시 측정</b>${testing ? " · ⏳ 측정 중…" : ""}</div>`;
+    const tip = pop.querySelector(".vcp-tip");
+    pop.querySelectorAll(".ntp-b").forEach((g) => g.addEventListener("mouseenter", () => {
+      const [t, m, r] = today[+g.dataset.i]; tip.textContent = `${hm(t)} · ${fmtM(m)} Mbps${r != null ? ` · 응답 ${r}ms` : ""}`; tip.classList.add("on");
+    }));
+  }
+  function popOpen() {
+    clearTimeout(popT);
+    if (!pop) {
+      pop = document.createElement("div"); pop.className = "vc-pop net-pop notranslate"; pop.setAttribute("translate", "no"); pop.setAttribute("role", "tooltip");
+      pop.addEventListener("mouseenter", () => clearTimeout(popT));
+      pop.addEventListener("mouseleave", popLater);
+      document.body.appendChild(pop);
+    }
+    drawPop();
+    const rc = pill.getBoundingClientRect();
+    pop.style.top = (rc.bottom + window.scrollY + 8) + "px";
+    pop.style.left = Math.max(10, Math.min(window.innerWidth - 350, rc.right + window.scrollX - 340)) + "px";
+    requestAnimationFrame(() => pop && pop.classList.add("on"));
+  }
+  function popClose() { if (!pop) return; const p = pop; pop = null; p.classList.remove("on"); setTimeout(() => p.remove(), 180); }
+  function popLater() { clearTimeout(popT); popT = setTimeout(popClose, 220); }
+  pill.addEventListener("mouseenter", () => { clearTimeout(popT); popT = setTimeout(popOpen, 120); });
+  pill.addEventListener("mouseleave", popLater);
+  window.addEventListener("scroll", () => { if (pop) popClose(); }, { passive: true });
+  document.addEventListener("click", (e) => { if (pop && !pop.contains(e.target) && !pill.contains(e.target)) popClose(); });
   pill.addEventListener("click", () => { ping(); speedTest(true); });
   window.addEventListener("online", () => { failCount = 0; ping(); speedTest(); });
   window.addEventListener("offline", draw);

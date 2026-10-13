@@ -4007,3 +4007,21 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .kiosk-caption { width: max-content; max-width: 94vw; }
 .kiosk-text { white-space: nowrap; font-size: clamp(18px, 2.3vw, 38px); }
 @media (max-width: 760px) { .kiosk-text { white-space: normal; } }
+
+/* 인터넷 속도에 마우스를 올리면 뜨는 창 (방문자 창 모양을 같이 씀) */
+.net-pop .vcp-kpi b.good { color: #35d0c0; }
+.net-pop .vcp-kpi b.ok { color: #f2a93b; }
+.net-pop .vcp-kpi b.bad { color: #ff6b6b; }
+.ntp-b .hit { fill: transparent; }
+.ntp-b .bar { fill: #35d0c0; opacity: .85; }
+.ntp-b.ok .bar { fill: #f2a93b; }
+.ntp-b.bad .bar { fill: #ff6b6b; }
+.ntp-b:hover .bar { opacity: 1; }
+.ntp-sum { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 8px; font-size: 11.5px; color: #8b98a7; }
+.ntp-sum b { color: #eaf0f6; font-variant-numeric: tabular-nums; }
+.ntp-can > div { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; font-size: 11.5px; border-bottom: 1px dashed rgba(255,255,255,0.06); }
+.ntp-can > div:last-child { border-bottom: 0; }
+.ntp-can b { font-weight: 700; color: #eaf0f6; }
+.ntp-can b.good { color: #35d0c0; }
+.ntp-can b.bad { color: #ff6b6b; }
+.net-pop .vcp-f b { color: #cfd8e2; font-weight: 600; }
