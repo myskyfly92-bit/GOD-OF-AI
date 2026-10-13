@@ -49,7 +49,7 @@ html.intro-pending::after {
 <link rel="icon" type="image/png" href="assets/icon/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=20261013n">
+<link rel="stylesheet" href="style.css?v=20261013o">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -898,6 +898,10 @@ html.intro-pending::after {
 
 <div id="view-bismayah" class="view">
 <main class="grid">
+  <div class="bsub" role="tablist" aria-label="비스마야 소식 나눠 보기" style="grid-column: 1 / -1;">
+    <button type="button" role="tab" class="bsub-btn active" data-p="news" aria-selected="true">📰 뉴스 기사 <small id="bsubNewsN"></small></button>
+    <button type="button" role="tab" class="bsub-btn" data-p="video" aria-selected="false"><span class="bsub-yt">▶</span> 유튜브 영상 <small id="bsubVidN"></small></button>
+  </div>
   <section class="panel bnews-panel" aria-label="비스마야 소식" style="grid-column: 1 / -1;">
     <div class="panel-label">BISMAYAH NEWS · 비스마야 신도시 소식 <span class="bnews-count" id="bnewsCount"></span></div>
     <div class="bnews-cols">
@@ -912,7 +916,7 @@ html.intro-pending::after {
     </div>
     <p class="source-note" id="bnewsMeta">구글 뉴스 검색(비스마야 · بسماية · Bismayah)으로 모은 공개 기사입니다 · 아랍어·영어 제목은 자동 번역 · 3시간마다 갱신</p>
   </section>
-  <section class="panel bvid-panel" aria-label="비스마야 영상" style="grid-column: 1 / -1;">
+  <section class="panel bvid-panel" aria-label="비스마야 영상" style="grid-column: 1 / -1;" hidden>
     <div class="panel-label">BISMAYAH ON YOUTUBE · 비스마야 영상 <span class="bnews-count" id="bvidCount"></span></div>
     <div class="bvid-filter bnews-filter" id="bvidFilter"></div>
     <div class="bvid-grid" id="bvidGrid"><p class="skeleton">영상 불러오는 중…</p></div>
@@ -1132,7 +1136,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261013n"></script>
+<script src="script.js?v=20261013o"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

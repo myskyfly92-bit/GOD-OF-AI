@@ -7854,6 +7854,7 @@ function makeNewsView(o) {
     }
     draw();
     document.getElementById(o.count).textContent = `· ${items.length}건`;
+    if (o.subN) { const sn = document.getElementById(o.subN); if (sn) sn.textContent = items.length; }
   }
   // 국내 = 한국 언론(한국어 기사), 이라크 = 그 밖(아랍어·영어 기사) · 분류 버튼이 있으면 그 분류만
   function draw() {
@@ -7871,7 +7872,7 @@ function makeNewsView(o) {
   document.querySelectorAll(`.tab-btn[data-view="${o.view}"]`).forEach((b) => b.addEventListener("click", load));
   if (document.querySelector(`#${o.view}.active`)) load();
 }
-makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, ko: "bnewsKo", iq: "bnewsIq", koN: "bnewsKoN", iqN: "bnewsIqN", count: "bnewsCount", meta: "bnewsMeta" });
+makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, subN: "bsubNewsN", ko: "bnewsKo", iq: "bnewsIq", koN: "bnewsKoN", iqN: "bnewsIqN", count: "bnewsCount", meta: "bnewsMeta" });
 /* 기타 > 비스마야 소식 아래: 비스마야 유튜브 영상 (bismayah-videos.json · 6시간마다 수집)
    썸네일 + 제목 + 채널·날짜, 누르면 유튜브 새 창. 처음엔 8개, '더 보기'로 8개씩 */
 (function bismayahVideos() {
@@ -7897,6 +7898,7 @@ makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, ko: 
   };
   const render = () => {
     const list = (items || []).filter((v) => f === "전체" || (f === "한국어" ? v.lang === "ko" : v.lang !== "ko"));
+    if (sub !== "video") return;   // 영상 탭이 열려 있을 때만 썸네일을 그린다
     grid.innerHTML = list.length ? list.slice(0, shown).map(card).join("") : `<p class="bnews-empty">아직 모인 영상이 없어요.</p>`;
     more.hidden = list.length <= shown;
   };
@@ -7907,14 +7909,29 @@ makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, ko: 
     fetch("bismayah-videos.json?t=" + Math.floor(Date.now() / 6e5)).then((r) => r.ok ? r.json() : null).then((d) => {
       items = (d && d.items) || [];
       const c = document.getElementById("bvidCount"); if (c) c.textContent = items.length ? items.length + "개" : "";
+      const sn = document.getElementById("bsubVidN"); if (sn) sn.textContent = items.length ? items.length : "";
       const ko = items.filter((v) => v.lang === "ko").length;
       fl.innerHTML = items.length ? ["전체", "한국어", "현지·해외"].map((x) => `<button type="button" class="${x === f ? "active" : ""}" data-f="${x}">${x} <small>${x === "전체" ? items.length : x === "한국어" ? ko : items.length - ko}</small></button>`).join("") : "";
       fl.querySelectorAll("button").forEach((b) => b.onclick = () => { f = b.dataset.f; shown = 8; fl.querySelectorAll("button").forEach((x) => x.classList.toggle("active", x === b)); render(); });
       render();
     }).catch(() => { grid.innerHTML = `<p class="bnews-empty">영상 목록을 불러오지 못했어요.</p>`; });
   };
-  // 비스마야 소식 탭을 열 때 처음 불러온다 (썸네일을 미리 받지 않게)
+  // 소소분류: 📰 뉴스 기사 / ▶ 유튜브 영상 (마지막에 본 쪽을 기억)
   const view = document.getElementById("view-bismayah");
+  const panels = { news: document.querySelector("#view-bismayah .bnews-panel"), video: document.querySelector("#view-bismayah .bvid-panel") };
+  const subBtns = document.querySelectorAll("#view-bismayah .bsub-btn");
+  let sub = "news";
+  try { if (localStorage.getItem("bsub") === "video") sub = "video"; } catch (e) {}
+  const setSub = (p) => {
+    sub = p;
+    subBtns.forEach((b) => { const on = b.dataset.p === p; b.classList.toggle("active", on); b.setAttribute("aria-selected", on ? "true" : "false"); });
+    Object.keys(panels).forEach((k) => { if (panels[k]) panels[k].hidden = k !== p; });
+    try { localStorage.setItem("bsub", p); } catch (e) {}
+    if (p === "video") { if (items) render(); else load(); }
+  };
+  subBtns.forEach((b) => b.addEventListener("click", () => setSub(b.dataset.p)));
+  setSub(sub);
+  // 탭 이름 옆 개수: 탭을 열면 영상 목록도 받아 개수만 먼저 보여 준다 (썸네일은 영상 탭을 열 때만)
   const check = () => { if (view && view.classList.contains("active")) load(); };
   if (view) new MutationObserver(check).observe(view, { attributes: true, attributeFilter: ["class"] });
   check();
