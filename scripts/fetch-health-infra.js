@@ -8,13 +8,13 @@
 // 종합점수 (0~100, 상황실 자체 계산 — 공식 순위가 아님)
 //   - 지표마다 '세계 몇 % 나라보다 나은지'(백분위)를 구한다. 사망률은 낮을수록 좋게 뒤집는다.
 //   - 가중 평균: UHC 30 · 의사 15 · 간호 10 · 병상 10 · 의료비 10 · 기대수명 10 · 영아사망 10 · 모성사망 5
-//   - 2010년 이후 값만 점수에 쓴다. 가중치 합이 60 이상 모인 나라만 점수를 매긴다.
+//   - 2010년 이후 값만 점수에 쓴다. 가중치 합이 70 이상 모인 나라만 점수를 매긴다.
 const fs = require("fs");
 const OUT = "health-infra.json";
 const KO = JSON.parse(fs.readFileSync("assets/country-ko.json", "utf8"));
 const MIN_YEAR = 2010;
 const IND = [
-  { k: "uhc", id: "SH.UHC.SRVS.CV.XD", name: "UHC 서비스 보장 지수", short: "UHC 지수", unit: "점", w: 30, hi: true, dec: 0 },
+  { k: "uhc", id: "SH.UHC.SRVS.CV.XD", who: "UHC_INDEX_REPORTED", name: "UHC 서비스 보장 지수", short: "UHC 지수", unit: "점", w: 30, hi: true, dec: 0 },
   { k: "doc", id: "SH.MED.PHYS.ZS", name: "의사 수 (인구 1,000명당)", short: "의사", unit: "명", w: 15, hi: true, dec: 2 },
   { k: "nurse", id: "SH.MED.NUMW.P3", name: "간호·조산 인력 (인구 1,000명당)", short: "간호인력", unit: "명", w: 10, hi: true, dec: 1 },
   { k: "bed", id: "SH.MED.BEDS.ZS", name: "병상 수 (인구 1,000명당)", short: "병상", unit: "개", w: 10, hi: true, dec: 1 },
@@ -62,9 +62,25 @@ async function main() {
         if (!x.v[ind.k] || yr > x.v[ind.k][1]) { x.v[ind.k] = [Math.round(row.value * 100) / 100, yr]; }
       }
       for (const k in C) if (C[k].v[ind.k]) n++;
-      console.log(`[${ind.short}] ${n}개 나라`);
-      okInd++;
-    } catch (e) { console.warn(`[${ind.short}] 수집 실패: ${e.message}`); }
+      console.log(`[${ind.short}] 세계은행 ${n}개 나라`);
+      if (n >= 30) okInd++;
+    } catch (e) { console.warn(`[${ind.short}] 세계은행 수집 실패: ${e.message}`); }
+    // 세계은행에 값이 적으면 WHO 세계보건관측소(GHO)에서 직접 받는다 (UHC 지수 원자료는 WHO)
+    if (ind.who && Object.values(C).filter((x) => x.v[ind.k]).length < 50) {
+      try {
+        const j = await getJson(`https://ghoapi.azureedge.net/api/${ind.who}`);
+        let n = 0;
+        for (const row of j.value || []) {
+          const x = C[row.SpatialDim]; const val = row.NumericValue != null ? row.NumericValue : parseFloat(row.Value);
+          if (!x || row.SpatialDimType !== "COUNTRY" || !isFinite(val)) continue;
+          const yr = Number(row.TimeDim);
+          if (!x.v[ind.k] || yr > x.v[ind.k][1]) x.v[ind.k] = [Math.round(val * 100) / 100, yr];
+        }
+        for (const k in C) if (C[k].v[ind.k]) n++;
+        console.log(`[${ind.short}] WHO GHO 보충 후 ${n}개 나라`);
+        if (n >= 30) okInd++;
+      } catch (e) { console.warn(`[${ind.short}] WHO 수집도 실패: ${e.message}`); }
+    }
     await new Promise((s) => setTimeout(s, 800));
   }
   if (okInd < 4) {
@@ -95,7 +111,7 @@ async function main() {
     let s = 0, w = 0;
     for (const ind of IND) if (x.p[ind.k] != null) { s += x.p[ind.k] * ind.w; w += ind.w; }
     x.cover = w;
-    if (w >= 60) {
+    if (w >= 70) {
       x.score = Math.round(s / w * 10) / 10;
       x.grade = x.score >= 80 ? 5 : x.score >= 60 ? 4 : x.score >= 40 ? 3 : x.score >= 20 ? 2 : 1;
     }
@@ -107,7 +123,7 @@ async function main() {
 
   const out = {
     generatedAt: new Date().toISOString(),
-    source: "World Bank World Development Indicators (원자료 WHO·UN 등)",
+    source: "세계은행 WDI · WHO 세계보건관측소(GHO)",
     minYear: MIN_YEAR,
     indicators: IND.map(({ id, ...r }) => ({ ...r, wb: id })),
     grades: ["", "매우 낮음", "낮음", "보통", "높음", "매우 높음"],
