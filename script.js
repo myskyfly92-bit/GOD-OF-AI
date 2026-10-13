@@ -2114,20 +2114,28 @@ function renderWorkZones(data) {
     <div class="wz-filter-bar" id="wzFilterBar"></div>
     <div class="wz-layout">
       <div class="wz-map-col">
+        <div class="wz-board" id="wzBoard">
+        <div class="wz-co-strip wz-co-top" id="wzCoTop"></div>
         <div class="wz-viewport" id="wzViewport">
           <div class="wz-zoombox" id="wzZoombox">
             <img src="" alt="구역 사진" class="workzone-bg" id="wzBgImg"
                  onerror="this.style.display='none'; document.getElementById('workzoneMapFallback').style.display='flex';">
             <div id="workzoneMapFallback" class="workzone-fallback" style="display:none;"></div>
+            <svg class="wz-tint" id="wzTint" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+            <div class="wz-zone-title" id="wzZoneTitle"></div>
             <div class="wz-pins" id="wzPins"></div>
           </div>
           <div class="wz-map-day" id="wzMapDay"></div>
           <div class="wz-pick-box" id="wzPickBox" hidden></div>
         </div>
+        <div class="wz-co-strip wz-co-bot" id="wzCoBot"></div>
+        <svg class="wz-co-lines" id="wzCoLines" aria-hidden="true"></svg>
+        </div>
         <div class="wz-zoom-controls">
           <button type="button" id="wzZoomOut" class="wz-zoom-btn">−</button>
           <button type="button" id="wzZoomReset" class="wz-zoom-btn">초기화</button>
           <button type="button" id="wzZoomIn" class="wz-zoom-btn">+</button>
+          <button type="button" id="wzCoToggle" class="wz-zoom-btn wz-co-btn" title="작업 위치마다 확대 사진 상자를 붙여 보여 줍니다">🎯 상황도</button>
           <span class="wz-zoom-hint">마우스 휠로 확대/축소 · 드래그로 이동</span>
           <button type="button" id="wzPickToggle" class="wz-pick-toggle" title="지도를 클릭해 그 자리에 작업을 추가합니다" hidden>➕ 지도에 작업 추가</button>
         </div>
@@ -2164,7 +2172,115 @@ function wzShowZone(idx) {
   }
 
   wzSetupZoomPan();
+  wzDrawTint(zone);
+  if (img) img.onload = () => { wzFitViewport(); wzCoLayout(); };
   wzShowSchedule(zone);
+}
+
+/* ---------- 상황도 보기: 구역 붉은 음영 + 작업 위치마다 확대 사진 상자(콜아웃)와 연결선 ----------
+   - 구역 경계: work-zones.json 의 zone.boundary = [[x%, y%], …] 가 있으면 그 모양, 없으면 사진 테두리 안쪽
+   - 좌표(위경도)는 보여 주지 않는다 (현장 인원 위치가 밖으로 드러나지 않게) → 상자에는 작업 정보만 */
+let wzCoOn = (() => { try { return localStorage.getItem("wzCo") !== "0"; } catch (e) { return true; } })();
+let wzCoGroups = [];
+function wzDrawTint(zone) {
+  const svg = document.getElementById("wzTint"), title = document.getElementById("wzZoneTitle");
+  if (!svg) return;
+  const pts = Array.isArray(zone.boundary) && zone.boundary.length >= 3 ? zone.boundary : [[1.2, 1.5], [98.8, 1.5], [98.8, 98.5], [1.2, 98.5]];
+  svg.innerHTML = `<polygon points="${pts.map((p) => `${Number(p[0])},${Number(p[1])}`).join(" ")}" />`;
+  if (title) title.textContent = zone.name || "";
+}
+function wzFitViewport() {
+  // 사진 비율에 맞춰 지도 칸 높이를 맞춘다 (사진 아래 빈 공간 없애기). 작업 입력창이 열려 있으면 원래 높이
+  const vp = document.getElementById("wzViewport"), img = document.getElementById("wzBgImg");
+  if (!vp || !img || !img.naturalWidth) return;
+  const h = Math.round(vp.clientWidth * img.naturalHeight / img.naturalWidth);
+  vp.style.height = Math.min(h, Math.round(window.innerHeight * 0.75)) + "px";
+}
+function wzRenderCallouts(groups) {
+  wzCoGroups = groups;
+  const board = document.getElementById("wzBoard"), top = document.getElementById("wzCoTop"), bot = document.getElementById("wzCoBot");
+  if (!board || !top || !bot) return;
+  const btn = document.getElementById("wzCoToggle"); if (btn) btn.classList.toggle("on", wzCoOn);
+  board.classList.toggle("wz-co-on", wzCoOn && groups.length > 0);
+  top.innerHTML = ""; bot.innerHTML = "";
+  document.querySelectorAll("#wzPins .wz-pin").forEach((p) => { p.removeAttribute("data-k"); p.querySelector(".wz-pin-num")?.remove(); });
+  if (!wzCoOn || !groups.length) { wzCoLines(); return; }
+  // 위쪽 절반 핀 → 위 줄, 아래쪽 → 아래 줄 (한 줄에 4개까지, 넘치면 반대 줄로)
+  const PER = 4;
+  let up = groups.filter((g) => g.place.y < 50), dn = groups.filter((g) => g.place.y >= 50);
+  up.sort((a, b) => b.place.y - a.place.y); dn.sort((a, b) => a.place.y - b.place.y);
+  while (up.length > PER && dn.length < PER) dn.push(up.shift());
+  while (dn.length > PER && up.length < PER) up.push(dn.shift());
+  up = up.slice(-PER); dn = dn.slice(-PER);
+  const place = (list) => {   // 가로 위치에 가까운 칸(4칸)에 차례로
+    const used = new Set(), out = [];
+    list.slice().sort((a, b) => a.place.x - b.place.x).forEach((g) => {
+      const want = Math.min(PER - 1, Math.floor(g.place.x / (100 / PER)));
+      let best = -1, bd = 99;
+      for (let c = 0; c < PER; c++) if (!used.has(c) && Math.abs(c - want) < bd) { bd = Math.abs(c - want); best = c; }
+      used.add(best); out.push({ g, col: best });
+    });
+    return out.sort((a, b) => a.col - b.col);
+  };
+  const N = "①②③④⑤⑥⑦⑧";
+  let k = 0;
+  const imgSrc = (document.getElementById("wzBgImg") || {}).src || "";
+  const card = ({ g, col }) => {
+    const it = g.items[0], c = WZ_PART_COLORS[it.part] || "#8996a6", n = N[k], i = k++;
+    const risks = [...new Set(g.items.flatMap((x) => x.risks))];
+    const crew = g.items.reduce((a, x) => a + (Number(x.crew) || 0), 0);
+    const pin = [...document.querySelectorAll("#wzPins .wz-pin")].find((p) => p.dataset.gx === String(g.place.x) && p.dataset.gy === String(g.place.y));
+    if (pin) { pin.dataset.k = i; const t = pin.querySelector(".wz-pin-tag"); if (t) t.insertAdjacentHTML("afterbegin", `<b class="wz-pin-num">${n}</b>`); }
+    return `<div class="wz-co ${risks.length ? "risky" : ""}" data-k="${i}" style="grid-column:${col + 1};--c:${c}">
+      <div class="wz-co-h"><b>${n}</b><span>${wzEscapeHtml(it.part)} · ${wzEscapeHtml(it.work)}</span>${g.items.length > 1 ? `<em>+${g.items.length - 1}</em>` : ""}</div>
+      <div class="wz-co-img" data-x="${g.place.x}" data-y="${g.place.y}" style="background-image:url('${imgSrc.replace(/'/g, "%27")}')"><i class="wz-co-mk"></i></div>
+      <div class="wz-co-f">${g.place.name && g.place.name !== "작업 위치" ? `📍 ${wzEscapeHtml(g.place.name)}` : ""}${crew ? ` 👥 ${crew}명` : ""}${it.wtime ? ` 🕘 ${wzEscapeHtml(it.wtime)}` : ""}</div>
+      ${risks.length ? `<div class="wz-co-r">⚠ ${risks.map(wzEscapeHtml).join(" · ")}</div>` : ""}
+    </div>`;
+  };
+  top.innerHTML = place(up).map(card).join("");
+  bot.innerHTML = place(dn).map(card).join("");
+  // 상자를 누르면 그 핀의 설명 카드를 연다
+  board.querySelectorAll(".wz-co").forEach((el) => el.onclick = () => {
+    const p = document.querySelector(`#wzPins .wz-pin[data-k="${el.dataset.k}"]`); if (p) p.classList.toggle("open");
+  });
+  requestAnimationFrame(wzCoLayout);
+}
+function wzCoLayout() {
+  const img = document.getElementById("wzBgImg");
+  if (!img) return;
+  const W = img.clientWidth, H = img.clientHeight, Z = 2.4;
+  document.querySelectorAll(".wz-co-img").forEach((el) => {
+    const cw = el.clientWidth, ch = el.clientHeight, x = Number(el.dataset.x) / 100, y = Number(el.dataset.y) / 100;
+    el.style.backgroundSize = `${W * Z}px ${H * Z}px`;
+    el.style.backgroundPosition = `${-(x * W * Z - cw / 2)}px ${-(y * H * Z - ch / 2)}px`;
+  });
+  wzCoLines();
+}
+let wzCoRaf = 0;
+function wzCoLines() {
+  cancelAnimationFrame(wzCoRaf);
+  wzCoRaf = requestAnimationFrame(() => {
+    const board = document.getElementById("wzBoard"), svg = document.getElementById("wzCoLines"), vp = document.getElementById("wzViewport");
+    if (!board || !svg || !vp) return;
+    const br = board.getBoundingClientRect(), vr = vp.getBoundingClientRect();
+    svg.setAttribute("viewBox", `0 0 ${br.width} ${br.height}`);
+    if (!board.classList.contains("wz-co-on")) { svg.innerHTML = ""; return; }
+    let html = "";
+    board.querySelectorAll(".wz-co").forEach((el) => {
+      const pin = document.querySelector(`#wzPins .wz-pin[data-k="${el.dataset.k}"]`);
+      if (!pin) return;
+      const pr = pin.getBoundingClientRect(), cr = el.getBoundingClientRect();
+      const isTop = !!el.closest(".wz-co-top");
+      const ax = cr.left + cr.width / 2 - br.left, ay = (isTop ? cr.bottom : cr.top) - br.top;
+      const px = pr.left - br.left, py = pr.top - br.top;
+      const inside = pr.left >= vr.left && pr.left <= vr.right && pr.top >= vr.top && pr.top <= vr.bottom;
+      const my = ay + (isTop ? 14 : -14);
+      html += `<path class="${inside ? "" : "off"}" style="--c:${getComputedStyle(el).getPropertyValue("--c")}" d="M${ax} ${ay} L${ax} ${my} L${px} ${py}" />` +
+        (inside ? `<rect x="${px - 9}" y="${py - 9}" width="18" height="18" rx="2" />` : "");
+    });
+    svg.innerHTML = html;
+  });
 }
 
 function wzShowSchedule(zone) {
@@ -2305,7 +2421,7 @@ function wzRenderPins(zone, items, dayLabel) {
       <div class="wz-pin-row"><b style="color:${WZ_PART_COLORS[it.part] || "#8996a6"}">${wzEscapeHtml(it.part)}</b> ${wzEscapeHtml(it.work)}${it.wtime ? ` <span class="wz-pin-crew">🕘 ${wzEscapeHtml(it.wtime)}</span>` : ""}${it.crew ? ` <span class="wz-pin-crew">👥 ${it.crew}명</span>` : ""}${it.equip ? ` <span class="wz-pin-crew">🚜 ${wzEscapeHtml(wzEquipParse(it.equip).map((e) => e.name.replace(/\(.*\)$/, "") + (e.n > 1 ? "×" + e.n : "")).join(", "))}</span>` : ""}
         ${it.risks.length ? `<span class="wz-pin-risk">⚠ ${it.risks.map(wzEscapeHtml).join(", ")}</span>` : ""}</div>`).join("");
     // 사진 위쪽 핀은 설명 카드를 아래로 펼쳐서 잘리지 않게
-    return `<div class="wz-pin ${risky ? "wz-pin-risky" : ""} ${g.place.y < 40 ? "wz-pin-below" : ""}" style="left:${g.place.x}%;top:${g.place.y}%;--c:${color}">
+    return `<div class="wz-pin ${risky ? "wz-pin-risky" : ""} ${g.place.y < 40 ? "wz-pin-below" : ""}" data-gx="${g.place.x}" data-gy="${g.place.y}" style="left:${g.place.x}%;top:${g.place.y}%;--c:${color}">
       <div class="wz-pin-inner">
         <div class="wz-pin-card"><div class="wz-pin-title">📍 ${wzEscapeHtml(g.place.name)}</div>${list}</div>
         <span class="wz-pin-tag">${wzEscapeHtml(first.part)}${g.items.length > 1 ? ` +${g.items.length - 1}` : ""}</span>
@@ -2319,6 +2435,7 @@ function wzRenderPins(zone, items, dayLabel) {
     el.addEventListener("click", (e) => { e.stopPropagation(); el.classList.toggle("open"); });
   });
 
+  wzRenderCallouts([...groups.values()]);
   if (label) {
     label.innerHTML = `${wzEscapeHtml(dayLabel)} 작업 위치 <b>${groups.size}</b>곳` +
       (items.length ? "" : " · 작업 없음");
@@ -2670,12 +2787,27 @@ function wzApplyTransform() {
   if (!box) return;
   box.style.transform = `translate(${wzTx}px, ${wzTy}px) scale(${wzScale})`;
   box.style.setProperty("--inv", String(1 / wzScale));
+  wzCoLines();
 }
 
 function wzClamp(val, min, max) {
   return Math.min(max, Math.max(min, val));
 }
 
+if (!window.__wzCoBound) {
+  window.__wzCoBound = true;
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest("#wzCoToggle")) return;
+    wzCoOn = !wzCoOn; try { localStorage.setItem("wzCo", wzCoOn ? "1" : "0"); } catch (er) {}
+    wzRenderCallouts(wzCoGroups);
+  });
+  window.addEventListener("resize", () => { wzFitViewport(); wzCoLayout(); });
+  // 작업 입력창이 열리면 지도 칸을 원래 높이로 (입력창이 잘리지 않게)
+  new MutationObserver(() => {
+    const pb = document.getElementById("wzPickBox"), vp = document.getElementById("wzViewport");
+    if (pb && vp) { vp.classList.toggle("wz-tall", !pb.hidden); requestAnimationFrame(wzCoLines); }
+  }).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["hidden"] });
+}
 function wzSetupZoomPan() {
   const viewport = document.getElementById("wzViewport");
   const zoombox = document.getElementById("wzZoombox");
@@ -8596,8 +8728,8 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       if (hit) setDay(d);
       tvDone(tvSend);
       lastR = r;
-      elT.textContent = Number(r.today).toLocaleString("en-US");
-      elA.textContent = Number(r.total).toLocaleString("en-US");
+      elT.textContent = r.today != null ? Number(r.today).toLocaleString("en-US") : "–";
+      elA.textContent = r.total != null ? Number(r.total).toLocaleString("en-US") : "–";
       if (typeof r.online === "number" && r.online > 0) {
         elN.textContent = r.online; nowWrap.hidden = false;
         // 새 서버면 컴퓨터/모바일 나눠서: NOW 3 💻2 📱1
