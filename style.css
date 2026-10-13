@@ -3997,3 +3997,8 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 .vcp-tr b { text-align: right; font-size: 11.5px; font-variant-numeric: tabular-nums; color: #eaf0f6; }
 .vcp-note { margin: 6px 0 2px; font-size: 11.5px; color: #8b98a7; }
 .vcp-f { margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 10.5px; color: #7f8c9b; }
+
+/* NOW 옆 컴퓨터/모바일 나눔 */
+.vc-split { margin-left: 5px; font-size: 10.5px; font-weight: 700; color: #9fb0c0; font-variant-numeric: tabular-nums; }
+.vc-split[hidden] { display: none; }
+.vc-split i { font-style: normal; font-size: 10px; margin: 0 1px 0 3px; opacity: .9; }

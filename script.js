@@ -6835,7 +6835,7 @@ async function clinicCall(action, payload) {
       { go: "view-dashboard", sel: null, text: `이 장에서는 화면 맨 위와 어디서나 쓰는 도구들을 알려 드릴게요.<br>안내 중에는 <b>다음 · 이전</b> 버튼이나 키보드 <b>← →</b> 로 넘기고, <b>Esc</b> 나 오른쪽 위 <b>✕</b> 로 언제든 끝낼 수 있어요.` },
       { sel: ".topbar", text: `맨 위 <b>배너</b>예요. 가끔 제가 이 위를 달려가요. 오른쪽 시계 앞에 도착하면 <b>경례</b>를 하고, 안전 한마디를 해요. 가끔은 안전모를 베개 삼아 <b>잠깐 낮잠</b>도 자요 💤<br>달리는 저를 <b>눌러 보면</b> 말을 걸고, 자고 있을 때 누르면 깨어나요!` },
       { sel: ".clock-block", text: `<b>시계</b>예요. 큰 글씨가 <b>바그다드 현지 시각</b>, 아래 작은 글씨가 <b>한국 시각</b>(6시간 빠름)이에요. 본사와 통화할 때 참고하세요.` },
-      { sel: "#visitCounter", opt: true, text: `제목 아래 <b>TODAY | TOTAL</b> 은 싸이월드 미니홈피처럼 이 상황판을 <b>오늘 / 지금까지 연 기기 수</b>예요. 초록 점 <b>NOW</b> 는 <b>지금 이 화면을 열어 둔 기기 수</b>예요(몇 분 단위로 갱신). 같은 PC·폰은 새로고침해도 <b>하루 한 번만</b> 세고, 이름 같은 정보는 받지 않아요. 마우스를 올리면 <b>최근 방문자 추이 그래프</b>와 <b>이번 달 많이 본 탭</b>이 살짝 떠요.` },
+      { sel: "#visitCounter", opt: true, text: `제목 아래 <b>TODAY | TOTAL</b> 은 싸이월드 미니홈피처럼 이 상황판을 <b>오늘 / 지금까지 연 기기 수</b>예요. 초록 점 <b>NOW</b> 는 <b>지금 이 화면을 열어 둔 기기 수</b>예요(몇 분 단위로 갱신). 옆의 💻·📱 는 그중 <b>컴퓨터 / 휴대폰</b> 수예요. 같은 PC·폰은 새로고침해도 <b>하루 한 번만</b> 세고, 이름 같은 정보는 받지 않아요. 마우스를 올리면 <b>최근 방문자 추이 그래프</b>와 <b>이번 달 많이 본 탭</b>이 살짝 떠요.` },
       { sel: "#netPill", text: `시계 오른쪽 국기 아래는 <b>인터넷 속도</b>예요. 이 PC에서 잰 <b>다운로드 속도(Mbps)</b>와 <b>응답 시간(ms)</b>을 보여 줘요.<br>🟢 좋음(5Mbps 이상) · 🟡 보통(1~5) · 🔴 느림(1 미만)이고, 끊기면 <b>'인터넷 끊김'</b>이 떠요. 15분마다 자동으로 재고, <b>누르면 바로</b> 더 정확하게 다시 재요. fast.com 처럼 가까운 측정 서버(Cloudflare)에서 받아서 재요.<br>화면이 비어 보이거나 지도가 안 뜰 때 여기가 빨간색이면 인터넷 탓이니 잠시 뒤 새로고침하세요.` },
       { sel: ".group-bar", text: `여기가 <b>대분류 메뉴</b>예요: 종합현황 · 안전 · 보건 · 환경 · 소방 · 기타.<br>하나를 누르면 바로 아래에 <b>소분류 탭</b> 줄이 나타나고, 마지막으로 보던 소분류를 기억해요.` },
       { sel: ".sa-alert", opt: true, text: `화면 아래 빨간 띠는 <b>중대재해 보도 알림</b>이에요. 최근 3일 안에 국내 산업현장 사망사고 기사가 나오면 <b>회사명과 기사 제목</b>이 떠요. 같은 사고 기사는 하나로 묶어 '보도 n건'으로 보여 주고, 누르면 원문이 열려요.<br>첫 보도는 사실과 다를 수 있으니 원문과 고용노동부 발표를 확인하세요. ✕ 로 닫으면 새 사고 기사가 올 때까지 숨어요.` },
@@ -8389,6 +8389,8 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   const setDay = (d) => { try { localStorage.setItem("vcDay", d); } catch (e) {} };
   let last = null, lastErr = "", busy = false, retryT = 0;
   let lastR = null;
+  // 이 기기가 휴대폰·태블릿인지 (NOW 를 컴퓨터/모바일로 나눠 세는 데만 씀)
+  const isMobileDev = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent));
   box.addEventListener("click", () => { if (lastErr && last === null) alert("방문자 카운터 연결 상태\n\n" + lastErr); else vcPopToggle(); });
 
   /* ---- 탭 기록: 기기마다 하루 한 번, 처음 연 탭 이름(view-…)만 모아 두었다가 다음 신호 때 같이 보낸다 ---- */
@@ -8431,7 +8433,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     const r = lastR || {};
     const head = `<div class="vcp-h"><b>방문자 추이</b><span>기기마다 하루 한 번</span></div>`;
     if (!stats || stats.err || stats.old) {
-      pop.innerHTML = head + `<div class="vcp-kpi"><div><span>오늘</span><b>${fmtN(r.today)}</b></div><div><span>어제</span><b>${fmtN(r.yesterday)}</b></div><div><span>지금</span><b>${fmtN(r.online)}</b></div><div><span>누적</span><b>${fmtN(r.total)}</b></div></div>
+      pop.innerHTML = head + `<div class="vcp-kpi"><div><span>오늘</span><b>${fmtN(r.today)}</b></div><div><span>어제</span><b>${fmtN(r.yesterday)}</b></div><div><span>지금</span><b>${fmtN(r.online)}</b>${typeof r.onlinePc === "number" ? `<small>💻${r.onlinePc} 📱${r.onlineMobile}</small>` : ""}</div><div><span>누적</span><b>${fmtN(r.total)}</b></div></div>
         <p class="vcp-note">${!stats ? "추이 불러오는 중…" : stats.old ? "날짜별 추이는 방문자카운터 서버를 새 버전으로 바꾸면 보여요." : "추이를 불러오지 못했어요."}</p>`;
       return;
     }
@@ -8457,7 +8459,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       <div class="vcp-chart"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="최근 ${n}일 날짜별 방문 기기 수">${bars}</svg>
         <div class="vcp-x"><span>${md(days[0][0])}</span><span class="vcp-tip" aria-live="polite">막대에 마우스를 올려 보세요</span><span>오늘</span></div></div>
       <div class="vcp-tabs"><div class="vcp-st">이번 달 많이 본 탭</div>${top.length ? top.map((id) => `<div class="vcp-tr"><span class="nm">${escapeHtml(tabName(id))}</span><span class="bg"><i style="width:${Math.round((T[id] / tmax) * 100)}%"></i></span><b>${fmtN(T[id])}</b></div>`).join("") : `<p class="vcp-note">탭 기록을 모으는 중이에요 (오늘부터 쌓여요)</p>`}</div>
-      <div class="vcp-f">지금 접속 ${fmtN(r.online)} · 누적 ${fmtN(r.total)}${since ? ` · ${since}부터` : ""}</div>`;
+      <div class="vcp-f">지금 접속 ${fmtN(r.online)}${typeof r.onlinePc === "number" ? ` (컴퓨터 ${fmtN(r.onlinePc)} · 모바일 ${fmtN(r.onlineMobile)})` : ""} · 누적 ${fmtN(r.total)}${since ? ` · ${since}부터` : ""}</div>`;
     const tip = pop.querySelector(".vcp-tip");
     pop.querySelectorAll(".vcp-b").forEach((g) => {
       const show = () => { const [d, v] = days[+g.dataset.i]; tip.textContent = `${md(d)} (${wd(d)}) · ${fmtN(v)}대`; tip.classList.add("on"); pop.querySelectorAll(".vcp-b.h").forEach((x) => x.classList.remove("h")); g.classList.add("h"); };
@@ -8505,7 +8507,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       if (!url) { showErr("Apps Script 주소를 못 읽음 (work-zones.json)"); return; }
       const d = dayNow(), hit = getDay() !== d;
       const tvSend = tvPend();
-      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&vid=" + sid + (tvSend.length ? "&tv=" + tvSend.join(".") : "") + "&t=" + Date.now(), { signal: ctl.signal });
+      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&vid=" + sid + "&dv=" + (isMobileDev ? "m" : "p") + (tvSend.length ? "&tv=" + tvSend.join(".") : "") + "&t=" + Date.now(), { signal: ctl.signal });
       const txt = await res.text();
       let r = null;
       try { r = JSON.parse(txt); } catch (e) {
@@ -8518,7 +8520,12 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       lastR = r;
       elT.textContent = Number(r.today).toLocaleString("en-US");
       elA.textContent = Number(r.total).toLocaleString("en-US");
-      if (typeof r.online === "number" && r.online > 0) { elN.textContent = r.online; nowWrap.hidden = false; } else nowWrap.hidden = true;
+      if (typeof r.online === "number" && r.online > 0) {
+        elN.textContent = r.online; nowWrap.hidden = false;
+        // 새 서버면 컴퓨터/모바일 나눠서: NOW 3 💻2 📱1
+        const sp = document.getElementById("vcNowSplit");
+        if (sp) { const has = typeof r.onlinePc === "number"; sp.hidden = !has; if (has) sp.innerHTML = `<i>💻</i>${r.onlinePc}<i>📱</i>${r.onlineMobile}`; }
+      } else nowWrap.hidden = true;
       box.removeAttribute("title");
       if (last !== null && r.today > last) { elT.classList.remove("bump"); void elT.offsetWidth; elT.classList.add("bump"); }
       last = r.today; lastErr = "";

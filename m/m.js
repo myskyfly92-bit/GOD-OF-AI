@@ -64,7 +64,7 @@
   (function visit() {
     let vid = ls.get("vcSid"); if (!vid) { vid = Math.random().toString(36).slice(2, 12); ls.set("vcSid", vid); }
     const d = today(), hit = ls.get("vcDay") !== d;
-    const tick = (h) => gas("action=visit&h=" + (h ? 1 : 0) + "&vid=" + vid).then((r) => {
+    const tick = (h) => gas("action=visit&h=" + (h ? 1 : 0) + "&vid=" + vid + "&dv=" + (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || navigator.maxTouchPoints > 1 ? "m" : "p")).then((r) => {
       if (!r || !r.ok) return; if (h) ls.set("vcDay", d);
       // 🎁 100번째 · 1,000번째 방문자 당첨 축하 (캡처해서 HSE팀에)
       const G = r.gifts || [100, 1000], n = r.you != null ? Number(r.you) : (h ? Number(r.total) : 0);
@@ -77,7 +77,7 @@
           <div class="vc-win-code">당첨 확인번호 <b>#${n}-${String(vid).slice(0, 6).toUpperCase()}</b><br><span>${esc(at)} (바그다드)</span></div><button type="button">확인했어요</button></div>`;
         bg.querySelector("button").onclick = () => bg.remove(); document.body.appendChild(bg);
       }
-      $("#vc").innerHTML = `TODAY <b class="t">${fmt(r.today)}</b> · TOTAL <b>${fmt(r.total)}</b>` + (r.online > 0 ? ` · <b class="n">● ${r.online}</b>` : "");
+      $("#vc").innerHTML = `TODAY <b class="t">${fmt(r.today)}</b> · TOTAL <b>${fmt(r.total)}</b>` + (r.online > 0 ? ` · <b class="n">● ${r.online}</b>` + (typeof r.onlinePc === "number" ? ` <small class="vcs">💻${r.onlinePc} 📱${r.onlineMobile}</small>` : "") : "");
     }).catch(() => {});
     tick(hit); setInterval(() => { if (!document.hidden) tick(false); }, 90000);
   })();
