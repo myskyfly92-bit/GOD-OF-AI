@@ -5180,7 +5180,8 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     const unhide = () => document.documentElement.classList.remove("intro-pending");
     let seen = false;
     try { seen = sessionStorage.getItem("hseIntroSeen") === "1"; } catch (e) {}
-    if ((seen && params.get("intro") !== "1") || reduce) { unhide(); return; }
+    const forced = ["1", "day", "classic"].includes(params.get("intro") || "");
+    if ((seen && !forced) || reduce) { unhide(); return; }
     // '봤음' 표시는 인트로가 끝난 뒤에 남긴다 (준비 중에 새로고침하면 다시 처음부터 보이게)
     const el = document.createElement("div");
     el.className = "hse-intro";
@@ -5216,6 +5217,11 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
     skip.innerHTML = `인트로 생략 <span aria-hidden="true">›</span>`;
     skip.addEventListener("click", (e) => { e.stopPropagation(); done(); });
     el.appendChild(skip);
+    // 인트로 고르기: ?intro=day → '현장의 하루', ?intro=classic → 기존 인트로, 그 밖에는 날짜에 따라 번갈아
+    const im = params.get("intro");
+    const doy = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 864e5);
+    const mode = im === "day" ? "day" : im === "classic" ? "classic" : (doy % 2 === 0 ? "day" : "classic");
+    if (mode === "day" && typeof hseDayIntro === "function") { hseDayIntro(el, done, timers); return; }
     // 로고 장면: '한화'를 용접으로 새긴 뒤 → 글자·제목이 나타나고 → 2.3초 뒤 끝
     const showLogo = () => {
       const word = el.querySelector(".hse-intro-word");
@@ -9336,3 +9342,114 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   else if (LS.get("talkHas")) setTimeout(() => { upoll(true); schedule(); }, 5000);
   if (new URLSearchParams(location.search).get("talkadmin") === "1") setTimeout(() => $(".talk-mode").click(), 1500);
 })();
+
+
+/* ==========================================================
+   인트로 2: '현장의 하루' — 현장 위성사진 위로 새벽 → 아침 → 한낮 → 해질녘 → 밤 빛이 흐르고,
+   마지막에 '오늘도 무재해'와 무재해 일수가 떠오른 뒤 상황실이 열린다 (약 12초 · 인트로 생략 가능)
+   ========================================================== */
+function hseDayIntro(el, done, timers) {
+  el.classList.add("day-mode");
+  const num = (id) => { const n = document.getElementById(id); const v = n ? String(n.textContent).replace(/[^\d,]/g, "") : ""; return v && v !== "0" ? v : ""; };
+  const IMG = "assets/sat-2026.webp";
+  const box = document.createElement("div");
+  box.className = "di";
+  box.innerHTML = `
+    <div class="di-img"></div><div class="di-tint"></div><div class="di-sunglow"></div>
+    <div class="di-stars"></div><canvas class="di-lights"></canvas>
+    <svg class="di-arc" viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true"><path d="M60 200 Q500 -60 940 200" /></svg>
+    <div class="di-orb"></div>
+    <div class="di-top"><div class="di-clock">05:00</div><div class="di-phase">새벽</div></div>
+    <div class="di-cap"><b></b><span></span></div>
+    <div class="di-final">
+      <small>BISMAYAH NEW CITY PROJECT · HSE SITUATION ROOM</small>
+      <b>오늘도 무재해</b>
+      <span class="di-nums"></span>
+      <i>비스마야 안전보건환경 상황실</i>
+    </div>`;
+  el.appendChild(box);
+  const $ = (s) => box.querySelector(s);
+  const img = $(".di-img"), tint = $(".di-tint"), glow = $(".di-sunglow"), orb = $(".di-orb"), stars = $(".di-stars"), cv = $(".di-lights");
+  const clock = $(".di-clock"), phase = $(".di-phase"), capB = $(".di-cap b"), capS = $(".di-cap span"), cap = $(".di-cap");
+  // 시간대별 빛 (시각: 덧칠 색 r,g,b,a · 밝기 · 채도)
+  const K = [
+    [5, 12, 22, 62, 0.78, 0.32, 0.6], [6.3, 255, 120, 90, 0.42, 0.62, 0.85], [8, 255, 196, 140, 0.2, 0.86, 0.95],
+    [11, 255, 250, 235, 0.06, 1.06, 1.0], [14, 255, 238, 205, 0.08, 1.04, 1.0], [16.5, 255, 170, 90, 0.22, 0.88, 1.05],
+    [18.3, 230, 70, 50, 0.42, 0.55, 1.1], [19.3, 40, 30, 90, 0.7, 0.36, 0.8], [20, 8, 14, 46, 0.82, 0.26, 0.6]];
+  const at = (h) => { let i = 0; while (i < K.length - 2 && h > K[i + 1][0]) i++; const a = K[i], b = K[i + 1], f = Math.max(0, Math.min(1, (h - a[0]) / (b[0] - a[0]))); return a.map((v, j) => v + (b[j] - v) * f); };
+  const items = (typeof wzItems !== "undefined" && Array.isArray(wzItems)) ? wzItems : null;
+  const today = typeof wzBaghdadToday === "function" ? wzBaghdadToday() : "";
+  let todayN = 0, todayCrew = 0;
+  if (items && today) { const dow = WZ_DAY_ORDER[(new Date(today + "T00:00:00Z").getUTCDay() + 6) % 7]; const t = items.filter((it) => wzOnDate(it, today, dow)); todayN = t.length; todayCrew = t.reduce((a, it) => a + (it.crew || 0), 0); }
+  const CAPS = [
+    [5.0, "새벽", "현장이 깨어납니다"],
+    [6.4, "06:30 · TBM", "오늘의 위험을 함께 확인합니다"],
+    [8.6, "작업 시작", todayN ? `오늘 작업 ${todayN}건 · ${todayCrew}명 투입` : "안전대 체결 · 신호수 배치"],
+    [11.6, "한낮", "물 · 그늘 · 휴식, 더위를 이겨 냅니다"],
+    [15.4, "마무리 점검", "정리정돈 · 장비 잠금 · 출입 통제"],
+    [18.2, "퇴근", "오늘도 모두 무사히 집으로"]];
+  const PH = (h) => h < 6 ? "새벽" : h < 9 ? "아침" : h < 12 ? "오전" : h < 15 ? "한낮" : h < 17.5 ? "오후" : h < 19 ? "해질녘" : "밤";
+  // 밤 불빛 (도시 쪽에 따뜻한 점들)
+  const ctx = cv.getContext("2d"), DPR = Math.min(2, window.devicePixelRatio || 1);
+  const pts = []; let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  for (let i = 0; i < 420; i++) { const cx = 0.2 + rnd() * 0.65, cy = 0.15 + rnd() * 0.75; pts.push([cx, cy, 0.6 + rnd() * 1.6, rnd() * 6.28, rnd() < 0.15]); }
+  const size = () => { cv.width = innerWidth * DPR; cv.height = innerHeight * DPR; };
+  size(); window.addEventListener("resize", size);
+  const T_DAY = 11500, T_FINAL = 2800;
+  let t0 = 0, capIdx = -1, raf = 0, finalShown = false, stopped = false;
+  function frame(now) {
+    if (stopped) return;
+    if (!t0) t0 = now;
+    // 새벽·해질녘은 천천히, 한낮은 빠르게 흐르게 (양 끝이 느린 곡선)
+    const ms = now - t0, p = Math.min(1, ms / T_DAY), h = 5 + 15 * (p - 0.13 * Math.sin(2 * Math.PI * p));
+    const [, r, g, b, a, br, sat] = at(h);
+    tint.style.background = `rgba(${r | 0},${g | 0},${b | 0},${a.toFixed(3)})`;
+    img.style.filter = `brightness(${br.toFixed(3)}) saturate(${sat.toFixed(3)})`;
+    img.style.transform = `scale(${(1.06 + p * 0.12).toFixed(4)}) translate(${(-p * 1.5).toFixed(2)}%, ${(-p * 1).toFixed(2)}%)`;
+    // 해·달: 6시 동쪽(왼쪽) → 18시 서쪽(오른쪽), 그 밖에는 달
+    const sunP = Math.max(0, Math.min(1, (h - 6) / 12)), day = h >= 6 && h <= 18.4;
+    const night = h < 6 ? (6 - h) : h > 18.4 ? Math.min(1, (h - 18.4) / 1.2) : 0;
+    const x = 6 + (day ? sunP : (h > 18 ? 1 : 0)) * 88, y = 92 - Math.sin(Math.PI * (day ? sunP : 0.04)) * 78;
+    orb.style.left = x + "%"; orb.style.top = (y * 0.22) + "%";
+    orb.className = "di-orb " + (day ? "sun" : "moon");
+    glow.style.background = `radial-gradient(circle at ${x}% ${8 + y * 0.25}%, rgba(255,${day ? 210 : 220},${day ? 140 : 255},${day ? (0.35 - Math.abs(sunP - 0.5) * 0.25).toFixed(2) : 0.08}) 0%, transparent 55%)`;
+    stars.style.opacity = Math.min(1, night).toFixed(2);
+    // 불빛
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    const lo = Math.min(1, night * 1.2);
+    if (lo > 0.01) {
+      pts.forEach(([px, py, rr, ph, big]) => {
+        const tw = 0.65 + 0.35 * Math.sin(ms / 380 + ph);
+        ctx.fillStyle = big ? `rgba(255,214,150,${(lo * tw).toFixed(3)})` : `rgba(255,190,120,${(lo * tw * 0.8).toFixed(3)})`;
+        ctx.beginPath(); ctx.arc(px * cv.width, py * cv.height, rr * DPR * (big ? 1.5 : 1), 0, 6.283); ctx.fill();
+      });
+    }
+    // 시계 · 시간대
+    const hh = Math.floor(h), mm = Math.floor((h - hh) * 60 / 10) * 10;
+    clock.textContent = `${String(hh).padStart(2, "0")}:${String(mm).padStart(2, "0")}`;
+    phase.textContent = PH(h);
+    // 자막
+    let ci = -1; CAPS.forEach((c, i) => { if (h >= c[0]) ci = i; });
+    if (ci !== capIdx && ci >= 0) {
+      capIdx = ci; cap.classList.remove("in"); void cap.offsetWidth;
+      capB.textContent = CAPS[ci][1]; capS.textContent = CAPS[ci][2]; cap.classList.add("in");
+    }
+    if (p >= 1 && !finalShown) {
+      finalShown = true;
+      const fd = num("incidentFreeDays"), cd = num("constructionDays");
+      $(".di-nums").innerHTML = [fd && `무재해 <em>${fd}</em>일`, cd && `착공 <em>${cd}</em>일째`].filter(Boolean).join(" · ");
+      cap.classList.remove("in");
+      box.classList.add("final");
+      timers.push(setTimeout(() => { stopped = true; done(); }, T_FINAL));
+    }
+    raf = requestAnimationFrame(frame);
+  }
+  const start = () => { if (stopped) return; box.classList.add("go"); raf = requestAnimationFrame(frame); };
+  const pre = new Image(); let begun = false;
+  const go = () => { if (begun) return; begun = true; img.style.backgroundImage = `url('${IMG}')`; start(); };
+  pre.onload = go; pre.onerror = go; pre.src = IMG;
+  timers.push(setTimeout(go, 4000));   // 사진이 늦으면 4초 뒤 그냥 시작
+  // 인트로가 끝나면(생략 포함) 그림 그리기를 멈춘다
+  const mo = new MutationObserver(() => { if (el.classList.contains("out")) { stopped = true; cancelAnimationFrame(raf); mo.disconnect(); window.removeEventListener("resize", size); } });
+  mo.observe(el, { attributes: true, attributeFilter: ["class"] });
+}
