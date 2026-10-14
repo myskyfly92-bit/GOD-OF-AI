@@ -1,41 +1,81 @@
 {
-  "generatedAt": "2026-10-13T19:36:37.650Z",
+  "generatedAt": "2026-10-14T00:42:05.532Z",
   "items": [
     {
       "title": "한국전력공사 마산지사 건물 화재",
       "source": "내외일보",
       "link": "https://www.naewoeilbo.com/news/articleView.html?idxno=2430328",
-      "date": "2026-10-13T15:02:43.000Z",
+      "date": "2026-10-14T00:13:06.000Z",
       "lang": "ko",
       "titleKo": "한국전력공사 마산지사 건물 화재",
       "url": "https://www.naewoeilbo.com/news/articleView.html?idxno=2430328",
       "body": "[내외일보=경남] 김성삼 기자 =창원시 마산회원구 구암동 한국전력공사 마산지사 건물에서 13일(오늘) 화재가 났다.마산소방서에 따르면, 이날 오전 7시 17분께\n마산소방서에 따르면, 이날 오전 7시 17분께 한전 마산지사 지상 4층 건물 중 3층에서 불이 났으며, 발생 30분만인 오전 7시 47분에 완전진압 됐다.\n건물에는 검은 연기가 다량 분출됐지만, 내부에 있던 직원들을 신속히 대피시켜 1명이 연기 흡입으로 병원에 이송됐으며, 더 이상 인명피해는 없는 것으로 알려졌다.",
       "bodyKo": "[내외일보=경남] 김성삼 기자 =창원시 마산회원구 구암동 한국전력공사 마산지사 건물에서 13일(오늘) 화재가 났다.마산소방서에 따르면, 이날 오전 7시 17분께\n마산소방서에 따르면, 이날 오전 7시 17분께 한전 마산지사 지상 4층 건물 중 3층에서 불이 났으며, 발생 30분만인 오전 7시 47분에 완전진압 됐다.\n건물에는 검은 연기가 다량 분출됐지만, 내부에 있던 직원들을 신속히 대피시켜 1명이 연기 흡입으로 병원에 이송됐으며, 더 이상 인명피해는 없는 것으로 알려졌다.",
       "tried": true,
-      "count": 4,
+      "count": 23,
       "sources": [
-        "تركيا عاجل",
-        "내외일보",
-        "중도일보",
-        "Times Kuwait"
+        "Moneycontrol.com",
+        "بوابة الشروق",
+        "Reuters",
+        "Breakingthenews.net",
+        "Union-Bulletin",
+        "أربيك"
       ],
       "related": [
         {
-          "titleKo": "긴급 | 터키 아르나부트쾨이 (Arnavutköy) 에 있는 5층 건물 내부에 주민들이 갇힌 화재",
-          "source": "تركيا عاجل",
-          "link": "https://turkey-breaking.com/News/2026/10/13/%D8%B9%D8%A7%D8%AC%D9%84-%D8%AD%D8%B1%D9%8A%D9%82-%D9%8A%D8%AD%D8%A7%D8%B5%D8%B1-%D8%B3%D9%83%D8%A7%D9%86%D9%8B%D8%A7-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%A8%D9%86%D9%89-%D9%85%D9%86-5-%D8%B7%D9%88/"
+          "titleKo": "사우디아라비아는 후티의 공격으로 아람코 건물 화재가 발생했으며 리야드에서 4명이 부상을 입었다고 밝혔습니다.",
+          "source": "Moneycontrol.com",
+          "link": "https://www.moneycontrol.com/world/saudi-arabia-says-houthi-attacks-sparked-aramco-building-fire-four-injured-in-riyadh-article-14051440.html"
         },
         {
-          "titleKo": "학성고 36년 된 건물 누수·화재 우려…철거 방안 논의",
-          "source": "중도일보",
-          "link": "https://www.joongdo.co.kr/web/view.php?key=20261012010002881"
+          "titleKo": "사우디아라비아: 다란의 아람코 사무실 건물에서 부상 없이 제한적으로 화재 발생",
+          "source": "بوابة الشروق",
+          "link": "https://www.shorouknews.com/mobile/news/view.aspx?cdate=14102026&id=f0229412-7d41-49a6-8508-12684f51f2da"
         },
         {
-          "titleKo": "Sabah Al-Salem 아파트 건물에 화재가 발생했습니다. 두 건은 질식사 치료를 받았습니다.",
-          "source": "Times Kuwait",
-          "link": "https://timeskuwait.com/fire-contained-at-sabah-al-salem-apartment-building-two-treated-for-asphyxiation/"
+          "titleKo": "사우디아라비아 아람코 행정 건물 공격, 제한된 화재 신고",
+          "source": "Reuters",
+          "link": "https://www.reuters.com/business/energy/saudi-led-coalition-orders-evacuation-yemen-oil-facility-sanaa-ahead-operation-2026-10-13/"
+        },
+        {
+          "titleKo": "사우디아라비아 아람코 건물은 공격 후 '제한된' 화재를 겪습니다.",
+          "source": "Breakingthenews.net",
+          "link": "https://breakingthenews.net/Article/Saudi-Aramco-building-suffers-'limited'-fire-after-attack/67290142"
+        },
+        {
+          "titleKo": "사우디아라비아 에너지부, 공격 대상인 아람코 화합물의 건물에서 제한된 화재 보고 - Union-Bulletin",
+          "source": "Union-Bulletin",
+          "link": "https://www.union-bulletin.com/news/world/saudi-ministry-of-energy-reports-limited-fire-in-building-in-aramco-compound-targeted-in-attack/article_16233242-5e44-51e0-b09b-79fe11f5b862.html"
         }
       ],
+      "tag": "기타"
+    },
+    {
+      "title": "Houthis Attack Saudi Aramco Administrative Building in Dhahran, Triggering Limited Fire: 51 outlets compared",
+      "source": "NewsCord",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQSEVNWFdLTDNZNXpRYUZIemx2N29EYm1BdS16YWhSRXZDTWFIZlNEcEg1LWFEOHdvMVNFRk5OTHEyZ2VqaS1hd0oyMnZVdTVZVGlPMG5JUWo2bkRaYUY1a1RMcGQwN01LUGRFaG01b2tTYzhraUZnRzIzZzdTb0YxdzZrNjZBaFl6cjh6TG1lMExBc1FaazVXT3puTWd4QTVVdFIzRUJ4b0lQMTljQXpsZ0FQcjJLSzF4a2c4ck03Z2llSVJOZ1JYRl95VTBCblZ1QW1tUG5xWGVJamhtQVVjZlVURkVEYmRj?oc=5",
+      "date": "2026-10-13T17:55:48.000Z",
+      "lang": "en",
+      "titleKo": "Houthis Attack Saudi Aramco Administrative Building in Dhahran, Triggering Limited Fire: 51 매장 비교",
+      "count": 1,
+      "sources": [
+        "NewsCord"
+      ],
+      "related": [],
+      "tag": "기타"
+    },
+    {
+      "title": "عاجل | حريق يحاصر سكانًا داخل مبنى من 5 طوابق في أرناؤوط كوي التركية",
+      "source": "تركيا عاجل",
+      "link": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxOeG9oQUxMeXI2M2N3VzlFRFh3SmphM2pDdXBZVkhQVFUya1ZHUC1Ec1E2YTI2bk1GT05WaGNPc0lFd3JUTWczUjY3eEVhRk5Pa1hVeWg1MGVPMGJ2ajF2Q2FCZFlkX0tqdVY5S1RWc0x6MUdydzRpMVhtZllXT09zSTZ1QXpqR1o4akg2ajZ4VFQ4ZnBaVlhSN3NVSmpLNlVIZHFCSEZJZ0wwOXVTX3BlZDNUWVhuUFc3OWp3ZXk5SGlXLU1tQ1ZycDYxeWtFR3pDcUhpbFFqd0NOZS11bmh1Y1BDRnZkR0ZNVWdRWUVsSzFRTm1ZNXI1MXFCbmdPOTBUbkpGZU9JemJsVk5YWnd5UG5tZGJBNlZHMDRZRjZyZWNrTjMwVFRrVUhuZjdZbTdvMlZOMmJIR2ROUUN0MC1XVlJyWFZRWThLWWlZblpES0dLdmo4WlpuLUh1blXSAdwCQVVfeXFMTnhvaEFMTHlyNjNjd1c5RURYd0pqYTNqQ3VwWVZIUFRVMmtWR1AtRHNRNmEyNm5NRk9OVmhjT3NJRXdyVE1nM1I2N3hFYUZOT2tYVXloNTBlTzBidmoxdkNhQmRZZF9LanVWOUtUVnNMejFHcnc0aTFYbWZZV09Pc0k2dUF6akdaOGpINmo2eFRUOGZwWlZYUjdzVUpqSzZVSGRxQkhGSWdMMDl1U19wZWQzVFlYblBXNzlqd2V5OUhpVy1NbUNWcnA2MXlrRUd6Q3FIaWxRandDTmUtdW5odWNQQ0Z2ZEdGTVVnUVlFbEsxUU5tWTVyNTFxQm5nTzkwVG5KRmVPSXpibFZOWFp3eVBubWRiQTZWRzA0WUY2cmVja04zMFRUa1VIbmY3WW03bzJWTjJiSEdkTlFDdDAtV1ZSclhWUVk4S1lpWW5aREtHS3ZqOFpabi1IdW5V?oc=5",
+      "date": "2026-10-13T15:52:22.000Z",
+      "lang": "ar",
+      "titleKo": "긴급 | 터키 아르나부트쾨이 (Arnavutköy) 에 있는 5층 건물 내부에 주민들이 갇힌 화재",
+      "count": 1,
+      "sources": [
+        "تركيا عاجل"
+      ],
+      "related": [],
       "tag": "고층·건물"
     },
     {
@@ -49,7 +89,7 @@
       "body": "Civil Defence contained a warehouse fire in Barakat Al Awamer with no reported injuries, as announced by the Ministry of Interior.\nThe Ministry of Interior announced on 13 October 2026 that the Civil Defence had successfully brought a fire in a warehouse in the Birkat Al Awamer area under control.\nThe Civil Defence brings a fire at a warehouse in the Birkat Al Awamer area under control. No injuries were reported. #MOIQatar\nThe Ministry also confirmed that no injuries had been reported.\nIf you have anything you want to share with us, send us an e-mail at contact@iloveqatar.net !\nWant to send a tip? Drop us an e-mail at contact@iloveqatar.net , anonymity is guaranteed!\nHow ajeeb was that!? Thanks for contributing to our community! Your post will appear after we take a quick look!",
       "bodyKo": "민방위는 내무부가 발표한 바와 같이 부상이 보고되지 않은 바라카트 알 아와메르의 창고 화재를 포함하고 있었다.\n내무부는 2026년 10월 13일 민방위가 비르카트 알 아와메르 지역의 창고에서 화재를 성공적으로 진압했다고 발표했다.\n민방위는 통제하에 있는 Birkat Al Awamer 지역의 창고에 불을 지릅니다. 부상자는 보고되지 않았습니다. # MOIQatar\n국토부는 또한 부상이 보고되지 않았음을 확인했다.\n공유하고 싶은 사항이 있으시면 contact@iloveqatar.net으로 이메일을 보내주세요!\n팁을 보내고 싶으신가요? contact@iloveqatar.net으로 이메일을 보내주세요. 익명성이 보장됩니다!\n얼마나 어이쿠!? 커뮤니티에 참여해주셔서 감사합니다! 포스트는 간단히 검토한 후 표시됩니다.",
       "tried": true,
-      "count": 17,
+      "count": 16,
       "sources": [
         "ILoveQatar.net",
         "www.uaebarq.ae",
@@ -80,7 +120,7 @@
           "link": "https://news.google.com/rss/articles/CBMitwVBVV95cUxPdjVUVElzd2dLbFhQWGU4MG80OERYdV8xSDFKNkkxUTJLX3d3akdTUV81RzNvOGJTa0FJU0U3VHRod1U0ZFNXMDNDLXpmZ3UycWlWZFNQdWtpXzNETUFYMHM2ZURUZ2V6YkQ2WTRXZ2NGdW53ZDlmUjBlQ2lIUk1qZmVUeFVIeTdLTzJfX0lNVkdsU1dSa0RkalV2WkZQVWtaeS16cTZBci1PQWRFLW1vWk9VaFJTeElvNk01dDdMdmlITGpXT2h2eGdGa0tKREV1aTJyRVZIajJNeVM5eEVhcFZ2alRPbWhrMW8xeUxHQzFOZnJNUDhLb2dORHVFTEZJdUpYazQtZWgxY0YzamlpZ0lZSUZmS3UxdHZrRThrTzlTbmc5M2JsSnVvdzZUMFFOT3YyZ3k2MmcxVHc3Tjc0QWxLNDVYczZXeDVSZ3c0YWZzbWkwQmoyYk1zX21lamxYNGE5SGxwZWxmMXJCVUQ3VEYtQnhGNGhOSERyU0NUZ0RHREZhYUdBT0J3TExIZ2hKRzNvRXpVNmJtQ0c4N1YxY01qWTBjRGF1bVpaYUlOTlQySi1hY0l6clp1LUFjMU1xUUp1ZWRodTJQaHBkWXJOM1o0dTEzLUl1b0VFazJLWTBXaFJsd1ZzVUtOV0dNUkQ5ZWo0SUphU0p2eExJQ005dkF0MVlwRmlKaWJEWGtKeno1M2poQU44X3Z0aklCY1luX1NkQ2lqdzBWNFgwMEFWUlBnckNMdUV2RWZvYmtkVXZUZUNraWk0amdlaGdxd2dISEgyRV9vME9uTXo3V21mNnJ5Q2JId2M4SHp4NnQ5QlRuOV9tYU53RGplRmtKUUszdEdiMkJWb0RlQXdpTW52WjZZMDVxQW1DbkpjNUk0czBrdC02R1hvT2hoUFRMZm94WWk2ZE1uYw?oc=5"
         },
         {
-          "titleKo": "아부다비 알다프라 지역 창고에서 발생한 화재",
+          "titleKo": "아부다비 알다프라 지역의 창고에 화재가 발생했습니다.",
           "source": "ARN News Centre",
           "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOWM4TlVkLUcyYUJJVzItZWRIck0wRHA4V0hTUWx5bUZpaktJNVd5cklYdWl0bjRJMldBWGdZQ1U3ZmxsRkRYb1ZWbVRWSnVCSTFwckVwU3phVENnTjQzLWJ4TTZRWTVEbjkzZzlFX2ZTaWNfeHFyaWk1RW95Q01LemlQVFgxOVEwSG55bkR0bTdVRmdFd0tGZ3VlY1RaVXo5TW1sZg?oc=5"
         }
@@ -107,7 +147,7 @@
         {
           "titleKo": "김천 폐기물공장 화재 6시간 만에 초진 : 사회",
           "source": "재경일보",
-          "link": "https://news.jkn.co.kr/post/1021008"
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5kSUl1OHNDSU1jSmZ6QWF3ZXY2ZXZzZGhfSDA4eWVaajZ4dVZOZzZ0V1FPc0htYWJrVTl0OWhVSjZsZ1Q4UHVSQzJoMA?oc=5"
         }
       ],
       "tag": "공장·플랜트"
@@ -208,17 +248,17 @@
         {
           "titleKo": "화재 발생 두 달여만에 ‘또’…당진 리튬 배터리 공장 화재",
           "source": "충청신문",
-          "link": "https://www.dailycc.net/news/articleViewAmp.html?idxno=876842"
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4wdmdjYXJjczJGMnA5NXVHLUlIOE9CbHF5UG1sWXZfQ09EQm95UGNadVpEUDJ5MnBmTlEzMkNnVDMzWEdldXU1MldiUEdYQmhBbDUxYXdKNUF6OTRBMWpnWExmeUhaZG1ILTVWUEl30gFuQVVfeXFMTjB2Z2NhcmNzMkYycDk1dUctSUg4T0JscXlQbWxZdl9DT0RCb3lQY1p1WkRQMnkycGZOUTMyQ2dUMzNYR2V1dTUyV2JQR1hCaEFsNTFhd0o1QXo5NEExamdYTGZ5SFpkbUgtNVZQSXc?oc=5"
         },
         {
           "titleKo": "충남 당진 리튬 배터리 공장서 또 불… 3시간 만에 진화 - FPN-소방방재신문",
           "source": "FPN-소방방재신문",
-          "link": "https://www.fpn119.co.kr/257811"
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9WR3RYWkt0M2VYT0JWd2ZaMEk1bXBiWHNObGFXTGh6Q3VIeWc1RDBVbjAxSUVBUWdPaWRuWjJfblV4bEVvV3c?oc=5"
         },
         {
           "titleKo": "당진 리튬 베터리 공장서 40여일 만에 또 화재",
           "source": "한겨레",
-          "link": "https://www.hani.co.kr/arti/area/chungcheong/1281982.html"
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83WVBuZVpXOFFYb0t1TlI5cUEwdF9NV1VKRUhIR3BpS3lDRFF6NmlXNFRUNm5TcFJ6RmdNZWMzQ1Y5U1B0dVFfTG81bjdiODZnNGprbkNTRVNtY2RKZEhDalB3Ni02UGlJ?oc=5"
         },
         {
           "titleKo": "충남 당진 리튬배터리 공장 창고서 또 '화재'",
@@ -250,7 +290,7 @@
         {
           "titleKo": "아부다비 경찰: 부상 없이 알 다프라 지역의 창고에서 화재를 통제하세요.",
           "source": "قناة الغد",
-          "link": "https://www.alghad.tv/index.php/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%BA%D8%AF/news/%D8%B4%D8%B1%D8%B7%D8%A9-%D8%A3%D8%A8%D9%88-%D8%B8%D8%A8%D9%8A-%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B8%D9%81%D8%B1%D8%A9-%D8%AF%D9%88%D9%86-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA"
+          "link": "https://news.google.com/rss/articles/CBMizwRBVV95cUxOcHpJYlFyUFRJQW9KSFdvYUFrLXVrRE5BM2Q5R3FYejM5OElTWWZ0dGhFbFZVeUpOLXJycVYwVE1LZGxhb016ek41V0hrelFiR25NZVFseWlnaVRBeGdRUnhleXJDcXhIZzUyV0hkai11djYwWkwwd1VpcTdfWHhrc0RtdGhiQTJYWUJzQTFmSVVzdXd3aHhsQ3RaTW5kbmQzZ09KVGR6RXV2a1A0MWVtd0tRSmRtM0pMaXg1S1QtN2licUhrTHc0a1NPSTQzeU5uQ0FRRnN6RWVZLXkwYVRvUGxfUmdHMWo4ZjNvT2NENldZbXoxekE3WGRmNF9ETVVuWDJhazg1bE1zTVh6VEhuZDY2bU5naDNzRloyT3Jod1RMbHlEU1N5bWp5NWtwT1U5Y1UxN2kyc3pPQ1p0cHl4M282VzI2SVoyaC0tZGo2WlNXVFJJc1VDclh6WldLd0NIZW5uZnFTQW55UmJVbkU1R2JGa19vVnYzekwydDNyMVR5QkIwUWZLRHdMaEwyUlZtLUJYemVabG4zSjAyYTRYdzQ0MC1FME5JN0hCbFF6X3lJclNCYXdKZm9OOGJZR3FoenBqZ2dBdVNhbjk1c2JnVGtjbWxMTWM2bFdNM3ZHTHZJZzBlbzZnWkh6b3V3VE9OZk5xUU9tTzFnM2JocHc1cnZnSE9iOHJRZnNZRWQxTjNfY1Vaang5WTdpaEdEUU1IWWlEUjRVZ1dBTm5CR09DbXhmZ0tvdHpkSk4zM3pHOHVqQ1lMRXQzSWdoVi1hVm8?oc=5"
         },
         {
           "titleKo": "부상 없이 아부다비의 알 다프라 창고 화재를 통제하세요.",
@@ -284,12 +324,12 @@
         {
           "titleKo": "영덕 풍력발전기 화재, 반년만에 현장 감식",
           "source": "국제신문",
-          "link": "http://www.kookje.co.kr/mobile/view.asp?gbn=v&code=0900&key=20261013.22006003254"
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWENVUV9Bd1JsNkNGR25mZzgzUzREMmRIYWp2S2JjSW5TcHpVc3lyRnJ2RlZyREtKcTBfZDRGSWdlcm5vNC02eWI3Y01UbFlXU1EyakliZ1EtNjdabHdLY0xqTC1DSVQ5TG40NEpEelR3OGJhaUstX3Z0UlN2SE0tR2djWXFTajg?oc=5"
         },
         {
           "titleKo": "3명 숨진 영덕 풍력발전기 화재…6개월여 지나 현장 감식 들어가",
           "source": "경북신문",
-          "link": "https://www.kbsm.net/news/view.php?idx=537121"
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ZaDg1UUtEbzNDZjhYUGNncGw4a0VvTkxSQXc2bVpKcUZ0SlRkN1BfS2NtYjk5MkZoX29Lb1J6aXdOekhoWjFOZnZOejdyX3cteTBuTWh2THM?oc=5"
         },
         {
           "titleKo": "영덕풍력발전기 화재 현장 검증",
@@ -414,167 +454,6 @@
       "count": 1,
       "sources": [
         "alghadpress.com"
-      ],
-      "related": [],
-      "tag": "기타"
-    },
-    {
-      "title": "هجوم جديد على مطار الملك خالد الدولي بالرياض يتسبب في اندلاع حريق في مبنى الركاب رقم 4",
-      "source": "Agenzia Nova",
-      "link": "https://news.google.com/rss/articles/CBMijAVBVV95cUxOZG1HQmxsbFZvbkt1cl9ZMmVVZkVJSFEwYkVfem9JQzN4RDdHTDAxUHUtYnItV2RxRkpvYjlCZ1BLNnJWMjBKeVVvVk5tV0t5UTlyZEJaUVJMbDNlaFU3cTdwWWx4anhRYXBlcXN5YWlnR0NqcWdpUGoyS2k1OWRtRFpuakJBSTQtbGZMeUozaS1wT2Z0cDgwRW00QW85V3ctUTlkeUlpQWd6RV91XzRtaGQ0YTNNMkJzZng1NWlOLTU1dFhrMnZDR2w1eUUxUlhjdlpvdHFvNFFhU0VodUc4QmxSNWlCOUh5SEJHMzhxaXM1b0hmcDBBeGlvZnJyb3FDVEJ2X2tFVUhxZ3lPMjlfZ0t2N3RKTzFOa21aa28tdGdDV2EyeWQ1ZFVRQkJYWWR5c3RudGhmb2VDTXUyaHRoN0VRaXZueXFDLU5uTGhIc3ctOExSbWR4SjM3eGRETnRCcVNSS3g0aWJLYnVDaWpvRjNBcUoxT28tVTdmSWdUZHBTaG9xLVlKclZtejJERkpDdURWTW1WZDFoQnlnZ2lTY2YzLXo0MzZEZ1lnOE04eE1SZElrdERJdVhCXzVfMmNrT2VneC1yeWNxUTc4NjZWOHFveExfczJ3aUl5NUFrZ2QxSDJnT2VTajgzU1B3ak02bEsxZjlzd3hWMS1lazA3bHcxVzllaEZtell1N3JVbDZMbTlIUVhpbFAtN0FZajl5UEpXbkh2WTFmY3FROFRrMFZxVTM2N3FmR25FaVFnLUdhZ0Q5d1FVc00tT3dkUUJ6bGJnRXFQRmVKckdqODBlQzhlUkRCNmJXODBUWHo2b2tSYVVCWXRCdXpiTzRWRXF2d1E0dVhxZzZCQ19H?oc=5",
-      "date": "2026-10-11T15:02:30.000Z",
-      "lang": "ar",
-      "titleKo": "리야드 킹 칼리드 국제공항에 대한 새로운 공격으로 인해 터미널 4에서 화재가 발생했습니다",
-      "count": 1,
-      "sources": [
-        "Agenzia Nova"
-      ],
-      "related": [],
-      "tag": "고층·건물"
-    },
-    {
-      "title": "بـ5 سيارات إطفاء.. السيطرة على حريق مصنع إسفنج بالقليوبية دون إصابات",
-      "source": "شبكة تواصل الإخبارية",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5mOXdFVngzMjNqblhSaTExRHVId05iLUY1bFl6Mlc0akJCSGtYN1lncERkZW1lSVdzN0pMYlFxV1h6MDhPMy01MWJTNS1BU29XRUlR?oc=5",
-      "date": "2026-10-11T10:23:54.000Z",
-      "lang": "ar",
-      "titleKo": "소방차 5대로…칼류비아 스펀지공장 화재, 인명피해 없이 진압",
-      "count": 1,
-      "sources": [
-        "شبكة تواصل الإخبارية"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "한국철강 철스크랩 야드서 또 불…폐배터리 화재 주의보",
-      "source": "철강금속신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE82c094RXJiUlNEakNJLWEtVTNXelRWMkk4Wm1tYi1Wak9xenlnczV4YU5ycWpqTDlWN2JUTG5XVTRjVEtQQkhjT2J3ZjhhUjc4aHpIdmxjbHk0SENSX0l1ZDFxdTZvSlJZaHc?oc=5",
-      "date": "2026-10-11T05:00:00.000Z",
-      "lang": "ko",
-      "titleKo": "한국철강 철스크랩 야드서 또 불…폐배터리 화재 주의보",
-      "count": 1,
-      "sources": [
-        "철강금속신문"
-      ],
-      "related": [],
-      "tag": "전기·배터리"
-    },
-    {
-      "title": "109시간 불탄 인천 쿠팡물류센터 화재 원인, ‘리튬배터리’ 추정",
-      "source": "서울Pn",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5YcVZFRmY1VFNNVXVSS0pSOU5ISk15elVhNEg3NU9iSzF0bUFqWFZLV2tpYzZYbWY3bmhTejQwNTNiYkY5RG1rZU9PVlN5X09VMnhfWFlwZGItc3h5SDNYMXI2cjRLOVRka1ZkN0UtSDQ?oc=5",
-      "date": "2026-10-11T02:43:23.000Z",
-      "lang": "ko",
-      "titleKo": "109시간 불탄 인천 쿠팡물류센터 화재 원인, ‘리튬배터리’ 추정",
-      "count": 1,
-      "sources": [
-        "서울Pn"
-      ],
-      "related": [],
-      "tag": "전기·배터리"
-    },
-    {
-      "title": "محافظ دمياط يتابع إخماد حريق بمصنع للصناعات الكيماوية",
-      "source": "صدى البلد",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1BUDBUZ3ZIRDJ5S2lYWHpkNkVpemlmaExwQV9zM2R3YXNvWjhvWHVwTmZBQkNqQ1ByQW1uSHFPNUdiU2xNbnNN?oc=5",
-      "date": "2026-10-10T18:13:00.000Z",
-      "lang": "ar",
-      "titleKo": "다미에타(Damietta) 주지사가 화학 산업 공장의 화재 진화를 모니터링하고 있습니다.",
-      "count": 1,
-      "sources": [
-        "صدى البلد"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "'용접 불티' 남양주 금속가공공장 화재…건물 1개동 전소",
-      "source": "뉴시스",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5PZmFUeGFscTZPUDNpSTliYmtXNGo5dVBhN0JfcG1YZmhnejZncExxbnhiSU1HNUZ0VUxQd1JFVm9yMVhibmZCUE1MS1FPZ0xvYmF0UEZIeXVwblM2a09TcEI4c0RJYnl2YkRaWVB0S2IyN3BYR0lqd9IBeEFVX3lxTE5PZmFUeGFscTZPUDNpSTliYmtXNGo5dVBhN0JfcG1YZmhnejZncExxbnhiSU1HNUZ0VUxQd1JFVm9yMVhibmZCUE1MS1FPZ0xvYmF0UEZIeXVwblM2a09TcEI4c0RJYnl2YkRaWVB0S2IyN3BYR0lqdw?oc=5",
-      "date": "2026-10-10T01:43:38.000Z",
-      "lang": "ko",
-      "titleKo": "'용접 불티' 남양주 금속가공공장 화재…건물 1개동 전소",
-      "count": 2,
-      "sources": [
-        "뉴시스",
-        "연합뉴스"
-      ],
-      "related": [
-        {
-          "titleKo": "남양주 금속 가공 공장에서 용접 중 화재…건물 1개동 불타",
-          "source": "연합뉴스",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OMEZmbWhtNDRtR0EyVjFHQzlDZHNFN2RJQ1NrUEI0LWIxalNQM2RLU3JNX3g4eHU0RHgyR2c0MXQ3dllXZDhhWWIxR3ZBYVJqclNidXdVWGtvZUo5SWt1NUxJZ1ltV0QxbnpBZ0pMYWdSSnfSAWBBVV95cUxNWGk2Y0ZCYm5tQllKS1kwS2dzZFluWkl6Znk2ajhBdE14T1A1TXVmYjY2NnNtX0tzLXJoUjFHNE9Ndlo1RUxTSWljdnllZjk0ai14UjJZZXloM2gwOUFtYUM?oc=5"
-        }
-      ],
-      "tag": "용접·불티"
-    },
-    {
-      "title": "3 مراكز إطفاء تسيطر على حريق مصنع لتدوير النفايات في «ميناء عبدالله»",
-      "source": "جريدة الأنباء الكويتية",
-      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5UeTFFdEh0NS1EclRJQjVaNy1hRUFjbHRWMEczdWNGZXhOTldRQVdyZWY0dkdLTVNkREROWExnNDdBU3F1VWNnbw?oc=5",
-      "date": "2026-10-09T16:52:01.000Z",
-      "lang": "ar",
-      "titleKo": "3개 소방서가 '미나 압둘라(Mina Abdullah)' 폐기물 재활용 공장 화재를 진압하고 있다.",
-      "count": 1,
-      "sources": [
-        "جريدة الأنباء الكويتية"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "حريق يلتهم مصنع خزائن مطابخ في دوزجه والدخان يلفت الأنظار",
-      "source": "تركيا عاجل",
-      "link": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxOYXhjVHlOMkR1NS1IWVN4ZEk3bUYwS2d1ektZTy1KTl9GQVRfeWxWc1J0NjN4bWJIbWNINjJQVkJ6ZTVsckNYRnBLMFlHWjl0bkhLOTdLSDhUS19saWVfVXh4OHZmd2VQSVpvanRleWNiY0c5QVdhTGpQX0VPLUJBM3dtOWxQUHlGa1M5bDk0cFRXeEh3a2J1cF9TaXgtckdhNktoYmlJQjg1S0V1SVNGelI1UERiRmZEMV9MSC11bm9odHdGTTU5TnhhQWNnanhwRmJOM2cwaXVHYjc1U2RZWFZUMC1BOWpmYTU5U283YmwxNlFQcnlmb0YwOUgwcFRyTkJJNGVJMEhQQkxyTUJRWndIQlI2OWhVejFHMEQxMjhMc1FLTVVtNjNyV0haejdrOTMtMmJ5OG4zWXB4QkFyUjkzWk1Ya3RMMGxFRVd5NVpNR09sUDVrSk43S0x0VldJSFHSAeICQVVfeXFMTmF4Y1R5TjJEdTUtSFlTeGRJN21GMEtndXpLWU8tSk5fRkFUX3lsVnNSdDYzeG1iSG1jSDYyUFZCemU1bHJDWEZwSzBZR1o5dG5ISzk3S0g4VEtfbGllX1V4eDh2ZndlUElab2p0ZXljYmNHOUFXYUxqUF9FTy1CQTN3bTlsUFB5RmtTOWw5NHBUV3hId2tidXBfU2l4LXJHYTZLaGJpSUI4NUtFdUlTRnpSNVBEYkZmRDFfTEgtdW5vaHR3Rk01OU54YUFjZ2p4cEZiTjNnMGl1R2I3NVNkWVhWVDAtQTlqZmE1OVNvN2JsMTZRUHJ5Zm9GMDlIMHBUck5CSTRlSTBIUEJMck1CUVp3SEJSNjloVXoxRzBEMTI4THNRS01VbTYzcldIWno3azkzLTJieThuM1lweEJBclI5M1pNWGt0TDBsRUVXeTVaTUdPbFA1a0pON0tMdFZXSUhR?oc=5",
-      "date": "2026-10-09T14:08:29.000Z",
-      "lang": "ar",
-      "titleKo": "Duzce의 주방 캐비닛 공장에서 화재가 발생하고 연기가 주목을 끌고 있습니다.",
-      "count": 1,
-      "sources": [
-        "تركيا عاجل"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "رهط: طواقم الإطفاء تسيطر على حريق في مبنى دون تسجيل إصابات",
-      "source": "كل العرب",
-      "link": "https://news.google.com/rss/articles/CBMizARBVV95cUxNVnNId2xXMFRpOXVFM2QwY3lTS1k1cjFsd2ZndkdjTTFFTU4xa1owZkVKbVRTR24wQXQtb1VWdVV0X1V0ME02bGVjUDhVV1JhVm5oSm1qQllOV1NycXBJaF9FZkk4VGFuNTJQWnJ0S09xOHBhZ1NlLV9FZEIzMkY0UkFDcXRYMjJuZzN3amJuYmx0V011WkVXbWNfYW42bVBtcXF3bmdpTU55M2lKUFVRSUlmTHkxUnhwOUdQaE42aGhZek1NdEs0WkpYWVFtQjUyRzUtTTBoMzI3RGNGY0tMd1F0VkNuYnh6OEhPbWYtWjlaZnFBRjVaMklWcmxHT2VaQWFmbkVWcEtYbkdRZnUxSHpwcjRwV1dpX3BFYnN0UTQtTWZqQTYyTnJ6OTJqdEF3Vm41SnNpajl2aGhQa3ZKd2V2Q3FYUDByYjJtejlsdHkxRXRUeFdlWXlXMTg3bE5HdWpNQTI4RDZxTE9TQnJuYVZYcXVTSWFMTkF6c0dtVG9qVVJNaEsybW1RcVBpUTFuUjVmeGYxNjJVLTAtVlU4OWF1V0lJQk9Sc1JSV0Uwc3h0NFU0Q19JUHV2NklaaUYwOFE1Z3dUZ2pYR2t0ZzRrcXBfWXk4dmU3VHA3bVFYbzZGbjdFeV8ySTNLbGdTZlNISlFtX0RpdzhnWFhYX1pwbFlVRE43ZE9mTHZFbHpKMVpXVmFqT0xnNWJnZF8wLXRpZkc1czNhb3pWZlVCZVFZZFRnVlRlMTFPaXgtbGRsUks5MVFyQTBxSkhPLVjSAU9BVV95cUxQdDBDZEdnejBJVWNpX0Z3QzBfRGhncFEtUld2YUxMTGNPQk9tMDZNU2VaZ1BnMU1rRm9KTm5zbVdINDFmS3k0Q2hZU0JqUFpr?oc=5",
-      "date": "2026-10-09T10:37:07.000Z",
-      "lang": "ar",
-      "titleKo": "Rahat: 소방대원들이 사상자를 기록하지 않고 건물 화재를 진압하고 있습니다.",
-      "count": 1,
-      "sources": [
-        "كل العرب"
-      ],
-      "related": [],
-      "tag": "고층·건물"
-    },
-    {
-      "title": "إصابة 4 أشخاص بإختناق في حريق داخل مصنع مجمدات بالشرقية",
-      "source": "شبكة تواصل الإخبارية",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBvZ0ZKY09nQ3I4VXc0MEloUVZTLTFyT2EwcWR2eWhmRnRkZG1BNFp6QUZCOUtra0U5UjlDTFFKQW42V0xSdFZWcmY1LUg1dW9rY2dJ?oc=5",
-      "date": "2026-10-07T11:38:44.000Z",
-      "lang": "ar",
-      "titleKo": "샤르키야 냉동공장 화재로 4명 질식사",
-      "count": 1,
-      "sources": [
-        "شبكة تواصل الإخبارية"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "Fire breaks out at waste collection site in Abu Dhabi’s Al Wathba",
-      "source": "Gulf News",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbk13aG1GNndIbEVoS1V4RmNFaHltNTNDd3VVT21fS2Z1VDRyQks0RVRZUW9xbUZQWVM4c0dqR1JrNm1vdk1tSUREZ3V1Yl9yLTJOb1FQMy15bGxVblJyMnliNk9US2tabGVQYVluOTJ2cElxMWFrbGljdllCQjN5aUg4WnQ0VmVCVjVSb1dSbXdBVjF0QkVDYWNYZnpnWEd3UllKUmE0TE1qNmdDYWxsVzZ0SdIBxgFBVV95cUxNTlpLblU5WjhpLVMxemJaa2pYT0FxN091YUYtaFZwNk1fVW1sVDlicFpnVkJUeGlkcVJGYjRxUFlaZG1mbFNpRDA4Mjk1Q2NkTlBNVGtnLU4xSmg5ZWdBVnZhZ3ZpVWFjWDA0QWlITzRYaUh2MEJycl9wZmVSX3pEMW5jbEY5elVpZ0FpaTJDOGFhMThtVW1DYVZaSkxoNENvLW94MG1SN0p0bk45cnBfYzZLWHdRUUc3dHRFSDg1ZTBqWXU1UUE?oc=5",
-      "date": "2026-09-30T07:00:00.000Z",
-      "lang": "en",
-      "titleKo": "아부다비 알 와트바 쓰레기 수거장에서 화재 발생",
-      "count": 1,
-      "sources": [
-        "Gulf News"
       ],
       "related": [],
       "tag": "기타"
