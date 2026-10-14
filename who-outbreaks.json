@@ -17,6 +17,14 @@
     },
     {
       "kind": "WHO 소식",
+      "title": "WHO Guideline Development Group meets to review Abortion care guideline",
+      "date": "2026-10-14T12:03:06Z",
+      "summary": "The World Health Organization has transitioned the Abortion care guideline to a living guideline format to focus on targeted recommendations that address new evidence or implementation issues as they arise. To this effect, the evidence for repeat dosing for the misoprostol-alone regimen for medical abortion at less than 12 weeks will be revisited (Recommendation 27b). In line with the WHO handbook for guideline development, a subset of the Abortion care guideline’s Guideline Development Group (G",
+      "link": "https://www.who.int/news/item/14-10-2026-who-guideline-development-group-meets-to-review-abortion-care-guideline",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO and partners drive improved alignment for effective NTD and supply chain delivery",
       "date": "2026-10-13T13:22:07Z",
       "summary": "The meetings – the NTD Supply Chain Forum (NTD-SCF), the Supply Chain Technical Support Mechanism (SCTSM) and the Global Coordination and Stewardship Committee (GCSC) – brought together global, regional and national stakeholders to review progress, address persistent supply chain challenges and consider how NTD programmes can prepare for the changing environment toward and beyond 2030.",
@@ -136,14 +144,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "New analysis shows high levels of violence against adolescent girls",
-      "date": "2026-10-05T22:00:00Z",
-      "summary": "For millions of adolescent girls around the world, violence is shaping their health, education, safety and future opportunities. In 2023, nearly 30% of adolescent girls aged 15–19 years have experienced intimate partner violence, non-partner sexual violence, or both at least once in their lives. This is about 43 million girls worldwide. A new technical brief summarizes the latest estimates by the World Health Organization (WHO), HRP (the UNDP/UNFPA/UNICEF/WHO/World Bank Special Programme of Rese",
-      "link": "https://www.who.int/news/item/05-10-2026-new-analysis-shows-high-levels-of-violence-against-adolescent-girls",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-09-25T15:30:18Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON611"
     }
   ],
-  "generatedAt": "2026-10-14T10:49:19.916907+00:00"
+  "generatedAt": "2026-10-14T16:08:23.647783+00:00"
 }
