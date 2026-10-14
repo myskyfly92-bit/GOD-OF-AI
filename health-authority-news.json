@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T00:18:35.863Z",
+  "generatedAt": "2026-10-14T23:55:03.107Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -22,13 +22,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTGtscTNMUUxNMFZKU2dJSElQMldSaEVpSnBjaEVHb1FhbXhsRUNlQ3g0UzdkLVhIZUt1MFUtaTVfM19XRGtTYUhNejFpYk5ta3RXbVZhdGxkUlJ5QmtLVjRFcjBaT3RlYk42LUR3Y0lOenFFOEtycURTV0FIYmRlMVlRUGg1TzBzQkZfbE1sOF9ySDJ1bkc0U1djcw?oc=5",
       "date": "2026-10-08T04:35:00.000Z"
-    },
-    {
-      "title": "보도자료 - [10.8.목.조간] 임신당뇨병 산모의 자녀, 당뇨병 위험 최대 4배 이상 높아",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE96YmlHTG9icmRER054XzNfa1dXanFNX1QyTTAzMDVzajRXMjlTNXNtMW9vajg5ZnlObXczT09KQnBzaUZUUWJKd29IYWJYTHduOXhnNkc5S1JRdEVuMExyT1RYY3dFRGFXWHBvTWFTTGNhMlJQalN3Rw?oc=5",
-      "date": "2026-10-07T03:06:15.000Z"
     },
     {
       "title": "암정보",
@@ -63,7 +56,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-13T11:40:14.000Z"
+      "date": "2026-10-14T08:45:37.000Z"
     },
     {
       "title": "감시체계 연보",
@@ -85,6 +78,13 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ueXN2cXpmUkJyLWV2cHc4VHB3Sm01dGcwc09pTlNXVG5xZjE4bHpvUFgxOVktQjJoLXJHRmJRTHM4TXhrbmJLZ1JTQ25yWklLeDlqek1B?oc=5",
       "date": "2025-12-16T15:49:07.000Z"
+    },
+    {
+      "title": "정보구독",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5WbWp5dGlFbE9sRDVsWTRNc2lFd1ZGZ0h3eHpoUENWZW1jN2podTNxbzlvRENEQ0lpNm1hTDRsa2cyeVk1QmxpVDM2OHl2TmJpS3VSaXdR?oc=5",
+      "date": "2025-12-16T14:35:45.000Z"
     }
   ]
 }
