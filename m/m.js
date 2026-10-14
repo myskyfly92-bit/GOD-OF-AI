@@ -113,7 +113,7 @@
       }
       $("#vc").innerHTML = `오늘 <b class="t">${fmt(r.today)}</b> · 누적 <b>${fmt(r.total)}</b>` + (r.online > 0 ? ` · <b class="n">●${r.online}</b>` + (typeof r.onlinePc === "number" ? `<small class="vcs">(💻${r.onlinePc}·📱${r.onlineMobile})</small>` : "") : "");
     }).catch(() => {});
-    tick(hit); setInterval(() => { if (!document.hidden) tick(false); }, 90000);
+    tick(hit); setInterval(() => { if (!document.hidden) tick(false); }, 120000);
   })();
 
   /* ================================ 홈 ================================ */
@@ -478,7 +478,7 @@
     }
     function schedule() {
       clearTimeout(timer);
-      const ms = isOpen ? 3000 : ls.get("talkHas") ? 30000 : 0;
+      const ms = isOpen ? 3000 : ls.get("talkHas") ? 60000 : 0;
       if (ms) timer = setTimeout(async () => { if (!document.hidden) await poll(); schedule(); }, ms);
     }
     function open() {

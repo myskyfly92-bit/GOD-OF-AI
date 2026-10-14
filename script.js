@@ -2735,20 +2735,45 @@ async function wzCallScript(action, payload) {
     let j = null, lastErr = null, tries = 0;
     // 서버 처리는 1초 안팎인데 가끔 오가는 길(인터넷·구글 입구)에서 수십 초씩 걸리는 경우가 있다.
     // → 오래 걸리면 끊고 다시 보낸다 (새 작업은 uid 로 두 번 안 들어감 · 삭제는 다시 보내지 않음)
-    const LIMITS = action === "del" ? [40000] : [10000, 15000, 30000];
+    // 서버는 다른 저장이 끝나기를 최대 20초 기다리므로 첫 시도도 25초는 기다린다 (2026-10-14: 10초 → 25초)
+    const LIMITS = action === "del" ? [40000] : [25000, 30000];
+    const readJ = async (res) => {
+      const txt = await res.text();
+      try { return JSON.parse(txt); } catch (e) {
+        // 구글이 JSON 대신 오류 화면(HTML)을 보냄 → 화면 속 문장을 꺼내 진짜 이유를 남긴다
+        const m = (txt.match(/<div[^>]*>([^<]{8,200})<\/div>/) || txt.match(/<title>([^<]+)<\/title>/) || [])[1] || ("HTTP " + res.status);
+        const err = new Error(m.trim()); err.gas = true; throw err;
+      }
+    };
     for (let k = 0; k < LIMITS.length && !j; k++) {
       tries = k + 1;
       try {
         const res = await wzFetchT(url + (url.includes("?") ? "&" : "?") + q2(), LIMITS[k]);
-        j = await res.json();
+        j = await readJ(res);
+        // 서버가 '잠시 밀렸습니다'(다른 저장 대기)·'동시 실행' 류로 실패하면 잠깐 쉬고 다시 (새 작업은 uid 로 중복 안 됨)
+        if (j && j.wz2 && !j.ok && action !== "del" && k < LIMITS.length - 1 && /밀렸|too many|simultaneous|동시|timed out|시간 초과|Service|서비스/i.test(j.error || "")) {
+          lastErr = new Error(j.error); j = null; await new Promise((r) => setTimeout(r, 2500));
+        }
       } catch (err) {
         lastErr = err;
-        if (k < LIMITS.length - 1) await new Promise((r) => setTimeout(r, 600));
+        if (k < LIMITS.length - 1) await new Promise((r) => setTimeout(r, err.gas ? 2500 : 800));
       }
     }
+    if (!j && action === "add") {
+      // 응답은 못 받았지만 실제로는 들어갔을 수 있다 → 목록을 새로 읽어 같은 작업이 있으면 성공으로 본다
+      try {
+        const res = await wzFetchT(url + (url.includes("?") ? "&" : "?") + `action=wz2&op=read&fresh=1&t=${Date.now()}`, 25000);
+        const r = await readJ(res);
+        const norm = (v) => String(v || "").replace(/\s/g, "");
+        const hit = r && r.ok && (r.rows || []).some((row) => row.some((v) => String(v).trim() === payload.work) && row.some((v) => String(v).trim() === payload.zone) && row.some((v) => norm(v).startsWith(norm(payload.date).slice(0, 10))));
+        if (hit) { wzDiag(action, performance.now() - t0, null, "응답 없었지만 시트에서 확인됨"); wzApplyRows(r.rows); renderTodayWork(); return { ok: true, verified: true, _applied: true }; }
+      } catch (e2) { /* 아래 안내로 */ }
+    }
     if (!j) {
-      wzDiag(action, performance.now() - t0, null, "network ×" + tries);
-      throw new Error(action === "del" ? "구글 시트와 연결이 끊겼습니다. 새로고침해서 지워졌는지 확인해 주세요" : "구글 시트와 연결이 계속 끊깁니다. 인터넷 연결을 확인한 뒤 다시 시도해 주세요");
+      const why = lastErr && lastErr.name !== "AbortError" && !/Failed to fetch|NetworkError|Load failed/i.test(lastErr.message) ? lastErr.message : "";
+      wzDiag(action, performance.now() - t0, null, (why || (lastErr && lastErr.name === "AbortError" ? "시간 초과" : "network")) + " ×" + tries);
+      if (why) throw new Error("구글 서버가 거절했습니다 (" + why.slice(0, 120) + "). 1~2분 뒤 다시 저장해 주세요");
+      throw new Error(action === "del" ? "구글 시트와 연결이 끊겼습니다. 새로고침해서 지워졌는지 확인해 주세요" : "구글 서버 응답이 너무 늦습니다. 1~2분 뒤 '다시 저장'을 눌러 주세요 (같은 작업이 두 번 들어가지는 않습니다)");
     }
     if (j.wz2) {
       wzDiag(action, performance.now() - t0, j.ms, (j.ok ? "" : j.error) + (tries > 1 ? ` (다시 보냄 ×${tries - 1}${j.again ? ", 중복 막음" : ""})` : ""));
@@ -9090,7 +9115,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   }
   tick();
   // 90초마다 신호 (화면이 가려져 있으면 쉬었다가 다시 보일 때 바로 한 번)
-  setInterval(() => { if (!document.hidden) tick(); }, 90 * 1000);
+  setInterval(() => { if (!document.hidden) tick(); }, 120 * 1000);   // 2분마다 (접속 중 판정은 4분)
   document.addEventListener("visibilitychange", () => { if (!document.hidden) tick(); });
   window.hseVisitTest = (t, a, n) => { elT.textContent = t; elA.textContent = a; if (n) { elN.textContent = n; nowWrap.hidden = false; } box.hidden = false; elT.classList.add("bump"); };
 })();
@@ -9301,7 +9326,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   }
   function schedule() {
     clearTimeout(polling);
-    const ms = admin ? 0 : open ? 3000 : (LS.get("talkHas") ? 30000 : 0);
+    const ms = admin ? 0 : open ? 3000 : (LS.get("talkHas") ? 60000 : 0);
     if (ms) polling = setTimeout(async () => { if (!document.hidden || !open) await upoll(); schedule(); }, ms);
   }
   uin.addEventListener("submit", async (e) => {
