@@ -241,16 +241,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "니아메"
-    },
-    {
      "level": 4,
      "levelName": "여행금지",
      "region": "일부",
      "remark": "수도 니아메 제외 전 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "니아메"
     }
    ],
    "written": "",
@@ -372,16 +372,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "북카프카즈 지역(체첸/다게스탄/세베로오세티아/카바르디노발카르/잉귀시/까라차예보체르케스카야/아디게이) 및 우크라이나 접경지역(4단계 제외 로스토프, 벨고로드, 보로네시, 브랸스크 주 및 오룔 주 일부(샤블리키노, 드미트롭스크, 사스코보, 크로믜, 트로스나 5개 지역))"
-    },
-    {
      "level": 4,
      "levelName": "여행금지",
      "region": "일부",
      "remark": "우크라이나 접경지역(쿠르스크주 전체 및 로스토프&middot;벨고로드&middot;보로네시&middot;브랸스크 지역 내 우크라이나 국경에서 30km 구간)"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "북카프카즈 지역(체첸/다게스탄/세베로오세티아/카바르디노발카르/잉귀시/까라차예보체르케스카야/아디게이) 및 우크라이나 접경지역(4단계 제외 로스토프, 벨고로드, 보로네시, 브랸스크 주 및 오룔 주 일부(샤블리키노, 드미트롭스크, 사스코보, 크로믜, 트로스나 5개 지역))"
     }
    ],
    "written": "",
@@ -1142,6 +1142,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "파마구스타 내 바로샤 지역"
+    },
+    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -1152,12 +1158,6 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "남부 지역"
-    },
-    {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "파마구스타 내 바로샤 지역"
     }
    ],
    "written": "",
@@ -1415,12 +1415,6 @@
    "level": 4,
    "regions": [
     {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "2, 4단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 4,
      "levelName": "여행금지",
      "region": "일부",
@@ -1431,6 +1425,12 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "아라라트주, 게가쿠니크주, 바요츠조르주, 슈니크주, 타부시주"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "2, 4단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -1667,16 +1667,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "아디스아바바 시, 디레다와 시, 하라르 주, SNNPR 주, SWEPR 주, 시다마 주, 오로미아 주 일부(3단계 지역 제외), 아파르 주(3단계 지역 제외)"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "암하라 주, 티그라이 주, 소말리 주, 베니샹굴-구무즈 주, 감벨라 주, 오로미아 주 일부(East Welega, West Welega, Kelam Welega, Guji, Borena 지역), 수단 및 에리트리아 국경 10km 접경지역, 아파르주에서 티그라이주 10km 접경지역, △케냐 및 남수단 국경 10km 접경 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "아디스아바바 시, 디레다와 시, 하라르 주, SNNPR 주, SWEPR 주, 시다마 주, 오로미아 주 일부(3단계 지역 제외), 아파르 주(3단계 지역 제외)"
     }
    ],
    "written": "",
@@ -1866,12 +1866,6 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "중•북부 시나이 반도(1,2단계 지역 제외), 리비아 국경으로부터 30km까지"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -1882,6 +1876,12 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "다합•샴엘셰이크지역, 카이로 등 나일강 유역 도시지역, 마르트루~지중해 유역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "중•북부 시나이 반도(1,2단계 지역 제외), 리비아 국경으로부터 30km까지"
     }
    ],
    "written": "",
@@ -1975,16 +1975,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "킹스턴, 세인트앤드류, 세인트캐서린"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "킹스턴, 세인트앤드류, 세인트캐서린"
     }
    ],
    "written": "",
@@ -2169,16 +2169,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "전체",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "노르드 주, 아다모와 주, 북서부 주, 남서부 주, 최북부 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2461,16 +2461,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "음트와라(Mtwara) 주"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "음트와라(Mtwara) 주"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-10-13T08:32:36.371851+00:00"
+ "generatedAt": "2026-10-14T06:46:58.755770+00:00"
 }
