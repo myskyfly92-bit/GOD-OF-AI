@@ -1,128 +1,259 @@
 {
-  "generatedAt": "2026-10-14T05:33:08.412Z",
+  "generatedAt": "2026-10-14T17:40:06.127Z",
   "items": [
+    {
+      "title": "السعودية: حريق محدود بعد استهداف مبنى لأرامكو في الظهران",
+      "source": "صحيفة الخليج",
+      "link": "https://www.alkhaleej.ae/2026-10-14/%D8%B9%D8%B1%D8%A8-%D9%88%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%AF%D9%88%D8%AF-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%A8%D9%86%D9%89-%D9%84%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D9%81%D9%8A-%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "date": "2026-10-14T13:59:29.000Z",
+      "lang": "ar",
+      "titleKo": "사우디아라비아: 다란의 아람코 건물 화재 제한",
+      "url": "https://www.alkhaleej.ae/2026-10-14/%D8%B9%D8%B1%D8%A8-%D9%88%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%AF%D9%88%D8%AF-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%A8%D9%86%D9%89-%D9%84%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D9%81%D9%8A-%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
+      "body": "أعلنت وزارة الطاقة السعودية صباح الأربعاء أنّ «حريقاً محدوداً» اندلع في أحد المباني...",
+      "bodyKo": "사우디 에너지부는 수요일 아침 한 건물에서 \"제한된 화재\" 가 발생했다고 발표했습니다...",
+      "tried": true,
+      "count": 21,
+      "sources": [
+        "نيو ترك بوست",
+        "CBC",
+        "شبكة تواصل الإخبارية",
+        "صحيفة الخليج",
+        "إرم بزنس",
+        "CNN الاقتصادية"
+      ],
+      "related": [
+        {
+          "titleKo": "사우디아라비아 아람코 언더 타겟: 다란 행정 건물 내 제한 화재",
+          "source": "نيو ترك بوست",
+          "link": "https://newturkpost.com/news/128182-%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%AD%D8%AA-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%AF%D9%88%D8%AF-%D9%81%D9%8A-%D9%85%D8%A8%D9%86%D9%89-%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A-%D8%A8%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86"
+        },
+        {
+          "titleKo": "사우디아라비아 아람코 (Aramco) 행정 건물이 후티 (Houthis) 의 공격을 받았으며, 제한된 화재",
+          "source": "CBC",
+          "link": "https://www.cbc.ca/news/world/saudi-arabia-aramco-houthis-missile-9.7379854"
+        },
+        {
+          "titleKo": "후티족 대상 사우디아라비아 아람코 행정 건물, 제한된 화재 신고",
+          "source": "شبكة تواصل الإخبارية",
+          "link": "https://twaslnews1.twaslnews.com/6004613/"
+        },
+        {
+          "titleKo": "사우디아라비아 아람코의 행정 건물과 제한된 화재 소식",
+          "source": "إرم بزنس",
+          "link": "https://www.erembusiness.com/companies/k81hmqt"
+        },
+        {
+          "titleKo": "사우디 에너지: 아람코 사무실 건물 대상 및 화재 제한",
+          "source": "CNN الاقتصادية",
+          "link": "https://cnnbusinessarabic.com/finance-markets/1150175/%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%A8%D9%86%D9%89-%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A-%D9%84%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D9%88%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%AF%D9%88%D8%AF"
+        }
+      ],
+      "tag": "고층·건물"
+    },
+    {
+      "title": "تقصي الحقيقة: فيديو لحريق في سوق بعجمان في 2020 وليس في مدينة ينبع",
+      "source": "Reuters",
+      "link": "https://www.reuters.com/ar/fact-check/2IFHW2SP5ZKQROQG73UU25YJ6E-2026-10-14/",
+      "date": "2026-10-14T13:37:33.000Z",
+      "lang": "ar",
+      "titleKo": "진상 조사: 옌부 시가 아닌 2020년 아즈만 시장 화재 동영상",
+      "url": "https://www.reuters.com/ar/fact-check/2IFHW2SP5ZKQROQG73UU25YJ6E-2026-10-14/",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Reuters"
+      ],
+      "related": [],
+      "tag": "시장·상가"
+    },
     {
       "title": "온산 화학공장 폭발·화재…7천여 명 대피",
       "source": "KBS 뉴스",
       "link": "https://news.kbs.co.kr/news/view.do?ncd=8685453",
-      "date": "2026-10-14T05:26:09.000Z",
+      "date": "2026-10-14T11:19:00.000Z",
       "lang": "ko",
       "titleKo": "온산 화학공장 폭발·화재…7천여 명 대피",
       "url": "https://news.kbs.co.kr/news/view.do?ncd=8685453",
       "body": "오늘 오전 9시 40분쯤 울산 온산국가산업단지 내 화학공장에서 폭발과 함께 큰 불이 나 4시간 만에 초진됐...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
       "bodyKo": "오늘 오전 9시 40분쯤 울산 온산국가산업단지 내 화학공장에서 폭발과 함께 큰 불이 나 4시간 만에 초진됐...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
       "tried": true,
-      "count": 24,
+      "count": 41,
       "sources": [
-        "중앙일보",
+        "울산신문",
+        "한국재난뉴스",
+        "파이낸셜뉴스",
+        "공감신문",
         "KBS 뉴스",
-        "글로벌E",
-        "매일일보",
-        "신아일보",
-        "재경일보"
+        "미주중앙일보"
       ],
       "related": [
+        {
+          "titleKo": "울산 온산 학남리 화학공장 톨루엔 탱크 폭발 화재",
+          "source": "울산신문",
+          "link": "https://www.ulsanpress.net/news/articleView.html?idxno=584714"
+        },
+        {
+          "titleKo": "울산 화학공장 화재 4시간여 만에 진화... 인명피해 없어",
+          "source": "한국재난뉴스",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9sd0ZrUXFfRlViU25nQzliand0WFBKWlU1cENzQlJ0RE02aHFnZE1Za1BQQUU3MzRYRE95RnVabGZJSUpnMVl4WVEwZF9nNGExdXZnNzFVZkpFbko3Z2hDamVaRTlpMGZJWXc?oc=5"
+        },
+        {
+          "titleKo": "울산 화학공장 화재 4시간여 만에 완진…\"인명 피해 없어\"",
+          "source": "파이낸셜뉴스",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvRW92THNsVzhRRzlzM3AwSlExNnlpa0hHUnFDcmdsTHJONUJCMmV1dV9rMU0yWUFWNFgwTllfLWFwMUtwU081UUFTQVN4Y1VzQ0FlblUwUHZFQQ?oc=5"
+        },
+        {
+          "titleKo": "울산 화학공장 대형 화재 발생, 톨루엔 저장탱크 폭발 위기",
+          "source": "공감신문",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44b1ZBNHl4WTFoZjc2cEZVTzVBVFNDX0pxZ0RKMmxIU0NjNzM4b1o0Tk5xakhhZ3JYdVd2YThKeHU1VS0xNEhMa1MzeGthSTgtTkRaZWIwSVVwNDA3Y3ZrM1djRWpvcTNB?oc=5"
+        },
         {
           "titleKo": "울산 온산 화학업체 화재…인근 공사장에 불씨, 수천명 대피",
-          "source": "중앙일보",
-          "link": "https://www.joongang.co.kr/article/25469645"
-        },
-        {
-          "titleKo": "울산 온산 화학공장 '톨루엔 폭발' 화재, 근로자 7,000여명 대피",
-          "source": "글로벌E",
-          "link": "https://www.globale.co.kr/news/articleView.html?idxno=41036"
-        },
-        {
-          "titleKo": "울산 온산읍 화학제품 제조업체 화재…인근 현장 근로자 7000명 대피",
-          "source": "매일일보",
-          "link": "https://www.m-i.kr/news/articleView.html?idxno=2005782"
-        },
-        {
-          "titleKo": "울주군 화학공장 저장탱크서 화재…7000여명 대피",
-          "source": "신아일보",
-          "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5071685"
-        },
-        {
-          "titleKo": "울주 화학공장 화재 7000명 대피…총리 긴급지시 : 정치",
-          "source": "재경일보",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBhdFNoT21qRF9XS05FcW5Za1RuVUdWR1puZk84UlZuWVdUY3lwc0hRUWVTSjJBYXNzeVB5ZElUNEFKVXFMQ1h0VjZkVQ?oc=5"
+          "source": "미주중앙일보",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9fV3RMTnh4VjkwQVFhSFVwcjlZNGJIbG9sYlhuTjgxY2syNFpveDVockVtdTBuR0xJRHZNM0dxckVzWjdzdGFfZU5Cb0tPZ251UVYzb0t5YmlKejFvUWF3VUJB?oc=5"
         }
       ],
       "tag": "공장·플랜트"
     },
     {
-      "title": "석유화학 공장 밀집한 온산산단에 큰불…인명 피해는 없어",
-      "source": "매일경제",
-      "link": "https://www.mk.co.kr/news/society/12175513",
-      "date": "2026-10-14T05:23:00.000Z",
+      "title": "대한민국: 화학 공장에서 발생한 대형 화재로 수천 명 대피.",
+      "source": "Vietnam.vn",
+      "link": "https://www.vietnam.vn/ko/han-quoc-chay-lon-tai-cong-ty-hoa-chat-hang-nghin-nguoi-phai-so-tan",
+      "date": "2026-10-14T10:56:54.000Z",
       "lang": "ko",
-      "titleKo": "석유화학 공장 밀집한 온산산단에 큰불…인명 피해는 없어",
-      "url": "https://www.mk.co.kr/news/society/12175513",
-      "body": "톨루엔·시너 저장탱크 불길 산단 근로자 7000여 명 대피 검은 연기 치솟아 주민 불안\n폭발 위험이 큰 석유화학 제품을 취급하는 공장이 밀집한 울산 울주군 온산국가산단의 한 공장에서 불이 나 근로자 수천 명이 대피했다. 소방 당국은 4시간여 만에 화재를 진압했고, 인명 피해는 없는 것으로 파악됐다.\n14일 오전 9시41분께 울주군 온산읍 A사의 옥외 저장탱크에서 화재가 발생했다. 당시 업체는 톨루엔 저장 탱크와 연결된 배관을 통해 톨루엔을 옮기는 작업을 했던 것으로 알려졌다. 바람을 타고 불길이 번지면서 톨루엔, 시너, 에탄올 등이 저장된 옥외 저장탱크 7기가 모두 불에 탔다.\n화재가 발생하자 저장탱크 주변에 있었던 작업자와 사무실 직원 등 12명은 현장을 떠나 대피했다. A사 옆 에쓰오일 샤힌프로젝트 공사 현장도 작업을 중단하고 근로자 7000여 명을 안전한 곳으로 대피시켰다.\n울주군은 재난안내문자를 발송해 주민의 주의를 당부했다. 인명 피해는 없는 것으로 파악됐으나 석유화학제품이 불에 타면서 검은 연기가 하늘로 치솟았고, 화재가 인근 공장으로 확산할 수도 있어 산단 근로자와 주민은 불안에 떨었다.\n소방청은 국가소방동원령을 내리고 부산·대구·경남에서 고성능 화학차 8대와 무인 방수차 1대 등 총 9대의 차량을 동원했다. 불은 오후 1시50분께 완진됐다.\n울산 울주군 온산국가산단의 한 공장에서 발생한 대형 화재로 인해, 인근 주민들과 산단 근로자들은 큰 불안감에 떨고 있어요. 석유화학제품이 타오르면서 치솟은 시꺼먼 연기와 재난안전문자는 지역 주민들에게 직접적인 공포감을 안겨주었지요. 🏭💨 다행히 이번 사고로 인한 인명 피해는 없는 것으로 파악되었지만, 화재가 주변 공장으로 번질 수 있는 위험한 상황 속에서 작업자와 사무실 직원 등 12명과 인근 공사 현장의 근로자 7000여 명이 급히 대피하는 소동이 벌어졌어요. 🏃‍♂️⚠️ 자주 발생하는 산업단지 내 사고 소식은 평온한 일상을 보내는 개인들에게 안전에 대한 깊은 우려를 심어주고 있어요. 😟",
-      "bodyKo": "톨루엔·시너 저장탱크 불길 산단 근로자 7000여 명 대피 검은 연기 치솟아 주민 불안\n폭발 위험이 큰 석유화학 제품을 취급하는 공장이 밀집한 울산 울주군 온산국가산단의 한 공장에서 불이 나 근로자 수천 명이 대피했다. 소방 당국은 4시간여 만에 화재를 진압했고, 인명 피해는 없는 것으로 파악됐다.\n14일 오전 9시41분께 울주군 온산읍 A사의 옥외 저장탱크에서 화재가 발생했다. 당시 업체는 톨루엔 저장 탱크와 연결된 배관을 통해 톨루엔을 옮기는 작업을 했던 것으로 알려졌다. 바람을 타고 불길이 번지면서 톨루엔, 시너, 에탄올 등이 저장된 옥외 저장탱크 7기가 모두 불에 탔다.\n화재가 발생하자 저장탱크 주변에 있었던 작업자와 사무실 직원 등 12명은 현장을 떠나 대피했다. A사 옆 에쓰오일 샤힌프로젝트 공사 현장도 작업을 중단하고 근로자 7000여 명을 안전한 곳으로 대피시켰다.\n울주군은 재난안내문자를 발송해 주민의 주의를 당부했다. 인명 피해는 없는 것으로 파악됐으나 석유화학제품이 불에 타면서 검은 연기가 하늘로 치솟았고, 화재가 인근 공장으로 확산할 수도 있어 산단 근로자와 주민은 불안에 떨었다.\n소방청은 국가소방동원령을 내리고 부산·대구·경남에서 고성능 화학차 8대와 무인 방수차 1대 등 총 9대의 차량을 동원했다. 불은 오후 1시50분께 완진됐다.\n울산 울주군 온산국가산단의 한 공장에서 발생한 대형 화재로 인해, 인근 주민들과 산단 근로자들은 큰 불안감에 떨고 있어요. 석유화학제품이 타오르면서 치솟은 시꺼먼 연기와 재난안전문자는 지역 주민들에게 직접적인 공포감을 안겨주었지요. 🏭💨 다행히 이번 사고로 인한 인명 피해는 없는 것으로 파악되었지만, 화재가 주변 공장으로 번질 수 있는 위험한 상황 속에서 작업자와 사무실 직원 등 12명과 인근 공사 현장의 근로자 7000여 명이 급히 대피하는 소동이 벌어졌어요. 🏃‍♂️⚠️ 자주 발생하는 산업단지 내 사고 소식은 평온한 일상을 보내는 개인들에게 안전에 대한 깊은 우려를 심어주고 있어요. 😟",
+      "titleKo": "대한민국: 화학 공장에서 발생한 대형 화재로 수천 명 대피.",
+      "url": "https://www.vietnam.vn/ko/han-quoc-chay-lon-tai-cong-ty-hoa-chat-hang-nghin-nguoi-phai-so-tan",
+      "body": "10월 14일, 한국 남동부 산업도시 울산에 위치한 한 석유화학 공장에서 인근 화학 제조 공장에서 대형 화재가 발생하자 약 7,000명의 근로자들이 대피했다.\n0 연합뉴스에 따르면, 이번 화재는 10월 14일 오전 9시 41분경 서울 남동쪽 약 300km 떨어진 울산의 한 화학 생산 시설에서 발생했습니다. 공장에 근무하던 직원 12명은 모두 안전하게 대피했습니다. 인근 석유화학 공장 건설 현장의 근로자 약 7,000명과 주변 사업장 직원들도 예방 차원에서 대피했습니다. 현재까지 인명 피해는 보고되지 않았습니다.\n화재는 인화성이 매우 높은 화학물질인 톨루엔 8,000리터가 담긴 야외 탱크에서 시작되었으며, 해당 물질을 다른 용기로 옮기던 중 발생했습니다. 불길은 아세톤과 에탄올을 포함한 다른 위험 화학물질 저장 구역으로 번졌습니다. 당국은 화재 진압을 위해 200명이 넘는 소방관을 투입했습니다.",
+      "bodyKo": "10월 14일, 한국 남동부 산업도시 울산에 위치한 한 석유화학 공장에서 인근 화학 제조 공장에서 대형 화재가 발생하자 약 7,000명의 근로자들이 대피했다.\n0 연합뉴스에 따르면, 이번 화재는 10월 14일 오전 9시 41분경 서울 남동쪽 약 300km 떨어진 울산의 한 화학 생산 시설에서 발생했습니다. 공장에 근무하던 직원 12명은 모두 안전하게 대피했습니다. 인근 석유화학 공장 건설 현장의 근로자 약 7,000명과 주변 사업장 직원들도 예방 차원에서 대피했습니다. 현재까지 인명 피해는 보고되지 않았습니다.\n화재는 인화성이 매우 높은 화학물질인 톨루엔 8,000리터가 담긴 야외 탱크에서 시작되었으며, 해당 물질을 다른 용기로 옮기던 중 발생했습니다. 불길은 아세톤과 에탄올을 포함한 다른 위험 화학물질 저장 구역으로 번졌습니다. 당국은 화재 진압을 위해 200명이 넘는 소방관을 투입했습니다.",
       "tried": true,
-      "count": 2,
+      "count": 5,
       "sources": [
-        "Chosunbiz",
-        "매일경제"
+        "Vietnam.vn",
+        "Laodong.vn",
+        "세계일보",
+        "퍼블릭타임스"
       ],
       "related": [
         {
-          "titleKo": "울산 화학물질 공장 화재 4시간 만에 진화… 인명 피해 없어",
-          "source": "Chosunbiz",
-          "link": "https://biz.chosun.com/topics/topics_social/2026/10/14/6CVCBKF6N5E2XPDRXHWDFE74YA/"
+          "titleKo": "대한민국: 화학 공장에서 발생한 대형 화재로 약 7,000명이 대피했습니다.",
+          "source": "Vietnam.vn",
+          "link": "https://www.vietnam.vn/ko/han-quoc-khoang-7-000-nguoi-so-tan-do-chay-lon-tai-nha-may-hoa-chat"
+        },
+        {
+          "titleKo": "한국, 화학 공장 화재로 7,000명 긴급 대피",
+          "source": "Laodong.vn",
+          "link": "https://ko.laodong.vn/the-gioi/han-quoc-khan-cap-so-tan-7000-nguoi-do-vu-chay-tai-nha-may-hoa-chat-1783066.ldo"
+        },
+        {
+          "titleKo": "불길 옆엔 또 화학공장… 울산 온산산단 화재에 7000명 긴급 대피 ‘큰일날 뻔’",
+          "source": "세계일보",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1aSUtCTmZreTRSNURGNzhGQXVtSlhrTnVhT1hNSHpLdld5MFpyQnZMRklpTHNfZklZdHhHNjZvamFUTnVXbF9vUkU4TkZObmRC0gFUQVVfeXFMUG9ZeVl0bTYzUVpxbkJVRWl3MVNDeDZ3Z3hVU04ta0g2cml4a1hNYXZhU2w0aVBUTFFHWmlSOFEwTHVuZXp1bVRmd2syS1ByT2hYZGs2?oc=5"
+        },
+        {
+          "titleKo": "윤호중 행안, 울산 울주군 공장 화재 관련 가용자원 총동원 긴급 지시",
+          "source": "퍼블릭타임스",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1tLXptRi1SZlpqSU41YnM3WmVjSWY1eUVfWV9SLWRnRFpMSzB1LVJLcko2Wm9wSFZfVmc4cmxGSWtQb0h6em4xSlJMM3BCNzkyN3dPOEhodFFHNUxEb3FTODhtOFJVQ0tFZXfSAW5BVV95cUxNaFg0TFo4VmRQYXFmbi1HXzJ2Tk0yWWNTeVFNT2Z0eEtZbXFoMDM5NW01Sy1HNWRBR29LbjFiS2VtOHRxRVl0bFVJb09qT0lDYy03THFVTTdZakh4bmNRckRSZ1BqUGQ2Sm1POE5LZw?oc=5"
         }
       ],
       "tag": "공장·플랜트"
     },
     {
-      "title": "استهداف مبنى تابع لأرامكو في السعودية .. حريق محدود دون إصابات",
-      "source": "صحيفة السوسنة الأردنية",
-      "link": "https://www.assawsana.com/article/735444",
-      "date": "2026-10-14T05:19:00.000Z",
-      "lang": "ar",
-      "titleKo": "사우디아라비아의 아람코 건물 타겟팅.. 부상 없는 제한된 화재",
-      "url": "https://www.assawsana.com/article/735444",
-      "body": "السوسنة - أعلنت السعودية، عن استهداف مبني إداري تابع لشركة أرامكو النفطية، بمدية الظهران بالمنطقة الشرقية، ما أسفر عن حريق محدود دون إصابات أووفيات...\n6 حدائق جديدة في الأردن بحلول 2027 .. تعرف إلى المحافظات\nاستهداف مبنى تابع لأرامكو في السعودية .. حريق محدود دون إصابات\nأمطار ورعد في هذه المناطق بالأردن .. وتحذير من الغبار\nالأردنيون على موعد مع رسوم عبور هذا الطريق .. توضيح آلية الدفع\nخبير اقتصادي يحذر الأردنيين .. استعدوا لسيناريوهات صعبة\n100 شخص يحصلون على الجنسية الأردنية و17 ألف قرار إبعاد .. التفاصيل\nإعفاء السيارات الأميركية يقترب .. هل تنخفض الأسعار وتتغير الخريطة؟\nالمملكة على موعد مع تقلبات جوية .. أمطار وغبار وتغيرات بالحرارة\nالأردنيون على موعد مع أمطار وسيول .. وهذا موعد الذروة\nزيادة الـ30 دينارا في الأردن .. هل يحرمك راتبك من الاستفادة؟\nشتوة الزيتون ليست كما يعتقد الأردنيون .. خبراء يحسمون الجدل",
-      "bodyKo": "Al-Susana - 사우디 아라비아는 동부 지방의 다란 (Dhahran) 시에 있는 아람코 석유 회사 (Aramco Oil Company) 소속의 행정 건물을 목표로 발표했으며, 이로 인해 부상이나 사망 없이 화재가 제한적으로 발생했습니다...\n2027년까지 요르단에 6개의 새로운 공원.. 주지사에 대해 알아보기\n사우디아라비아의 아람코 건물 타겟팅.. 부상 없는 제한된 화재\n요르단의 이 지역에는 비와 천둥, 그리고 먼지에 대한 경고가 있습니다.\n이 길을 건널 때 수수료가 부과되는 날짜의 요르단인.. 지불 메커니즘 설명\n경제학자가 요르단 사람들에게 경고합니다.. 어려운 시나리오에 대비하십시오\n100명이 요르단 시민권을 취득하고 17,000명의 추방 결정을 받습니다. 세부 정보\n미국 자동차 면제가 다가오고 있습니다.. 가격이 하락하고 지도가 변경되고 있습니까?\n왕국은 기상 변화, 비, 먼지 및 기온 변화가있는 날짜에 있습니다.\n요르단 사람들은 비와 홍수로 데이트를하고 있습니다.. 그리고 이것은 피크 날짜입니다\n요르단의 30 디나르를 늘리십시오.. 급여가 혜택을 박탈합니까?\n올리브 겨울은 요르단 사람들이 믿는 것과 다릅니다.. 전문가들이 논쟁을 결정합니다",
+      "title": "화학공장 불길이 샤힌 프로젝트 현장까지…작업자 7000여 명 긴급 대피",
+      "source": "뉴스21일간",
+      "link": "http://www.krnews21.co.kr/news/363404",
+      "date": "2026-10-14T08:31:01.000Z",
+      "lang": "ko",
+      "titleKo": "화학공장 불길이 샤힌 프로젝트 현장까지…작업자 7000여 명 긴급 대피",
+      "url": "http://www.krnews21.co.kr/news/363404",
+      "body": "울산 온산국가산업단지의 한 화학제품 제조공장에서 발생한 불이 인근 사업장까지 번지면서 7000여 명의 작업자가 긴급 대피하는 상황이 벌어졌다.\n14일 소방당국에 따르면 이날 오전 9시40분께 울산 울주군 온산국가산업단지 내 화학제품 제조공장에서 화재가 발생했다.\n공장에서 시작된 불은 거센 불길과 함께 검은 연기를 내뿜으며 확산했다. 불티가 바람을 타고 날아가면서 주변 사업장에도 불이 옮겨붙었다.\n소방당국은 화재 발생 약 20분 만에 대응 1단계를 발령한 데 이어 국가소방동원령을 내리고 진화에 나섰다. 소방헬기 3대를 비롯한 인력과 장비를 집중 투입해 화재 발생 4시간여 만인 오후 1시50분께 큰 불길을 잡았다.\n불은 한때 인근에서 진행 중인 9조2000억원 규모의 에쓰오일 샤힌 프로젝트 건설현장까지 번졌다. 이에 일부 공사가 중단됐으며 현장에 있던 작업자 7000여 명이 긴급 대피했다. 현재까지 확인된 인명피해는 없다.\n불이 난 공장은 페인트와 고무 제조 등에 사용되는 화학물질 첨가물을 취급하는 곳으로 파악됐다. 화재 당시 야외에는 석유화학물질인 톨루엔 8000리터 등을 보관하는 탱크 7기가 있었던 것으로 전해졌다.\n소방당국은 톨루엔을 다른 용기에 옮겨 담는 과정에서 처음 불이 발생한 뒤 주변 탱크로 확산했을 가능성을 염두에 두고 정확한 경위를 확인하고 있다.\n윤동현 울산 남울주소방서 예방안전과장은 화재 당시 상황에 대해 “탱크 7기가 다 불이 붙어 있는 상태”라며 외부에서도 탱크에 붙은 불길을 확인할 수 있는 상황이었다고 설명했다.\n경찰과 소방당국은 진화 작업이 마무리되는 대로 공장 관계자 등을 상대로 최초 발화 지점과 화재 원인, 안전수칙 준수 여부 등을 조사할 방침이다.",
+      "bodyKo": "울산 온산국가산업단지의 한 화학제품 제조공장에서 발생한 불이 인근 사업장까지 번지면서 7000여 명의 작업자가 긴급 대피하는 상황이 벌어졌다.\n14일 소방당국에 따르면 이날 오전 9시40분께 울산 울주군 온산국가산업단지 내 화학제품 제조공장에서 화재가 발생했다.\n공장에서 시작된 불은 거센 불길과 함께 검은 연기를 내뿜으며 확산했다. 불티가 바람을 타고 날아가면서 주변 사업장에도 불이 옮겨붙었다.\n소방당국은 화재 발생 약 20분 만에 대응 1단계를 발령한 데 이어 국가소방동원령을 내리고 진화에 나섰다. 소방헬기 3대를 비롯한 인력과 장비를 집중 투입해 화재 발생 4시간여 만인 오후 1시50분께 큰 불길을 잡았다.\n불은 한때 인근에서 진행 중인 9조2000억원 규모의 에쓰오일 샤힌 프로젝트 건설현장까지 번졌다. 이에 일부 공사가 중단됐으며 현장에 있던 작업자 7000여 명이 긴급 대피했다. 현재까지 확인된 인명피해는 없다.\n불이 난 공장은 페인트와 고무 제조 등에 사용되는 화학물질 첨가물을 취급하는 곳으로 파악됐다. 화재 당시 야외에는 석유화학물질인 톨루엔 8000리터 등을 보관하는 탱크 7기가 있었던 것으로 전해졌다.\n소방당국은 톨루엔을 다른 용기에 옮겨 담는 과정에서 처음 불이 발생한 뒤 주변 탱크로 확산했을 가능성을 염두에 두고 정확한 경위를 확인하고 있다.\n윤동현 울산 남울주소방서 예방안전과장은 화재 당시 상황에 대해 “탱크 7기가 다 불이 붙어 있는 상태”라며 외부에서도 탱크에 붙은 불길을 확인할 수 있는 상황이었다고 설명했다.\n경찰과 소방당국은 진화 작업이 마무리되는 대로 공장 관계자 등을 상대로 최초 발화 지점과 화재 원인, 안전수칙 준수 여부 등을 조사할 방침이다.",
       "tried": true,
-      "count": 27,
+      "count": 1,
       "sources": [
-        "صحيفة السوسنة الأردنية",
-        "Arab Times Kuwait News",
-        "Daily Observer",
-        "جهات الإخبارية",
-        "PressTV",
-        "Gulf News"
+        "뉴스21일간"
       ],
-      "related": [
-        {
-          "titleKo": "사우디아라비아 아람코 (Aramco) 행정 건물 다란 (Dhahran) 을 겨냥한 화재 신고",
-          "source": "Arab Times Kuwait News",
-          "link": "https://www.arabtimesonline.com/news/saudi-aramco-administrative-building-targeted-in-dhahran-limited-fire-reported/"
-        },
-        {
-          "titleKo": "사우디아라비아 후티 공격, 아람코 건물 화재 발생",
-          "source": "Daily Observer",
-          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1pcnNORG5zMDRvakVCVUZIcFlPWTQ1OHlfelR1RnlyREZGRngwSlpONl9xeGstNDR5bkxuaGNra2xpU2JmSERXQVp3?oc=5"
-        },
-        {
-          "titleKo": "다란의 제한된 화재.. 부상없이 사우디 아람코의 행정 건물을 목표로 함",
-          "source": "جهات الإخبارية",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB0NHVIbW5qbjd0T3lNMkphc0RxdzBydnFkUEZLVkVERndBNnVGRkVsc05SMWZJTUhTRGpFd3AyRDdDWlNaZU5ZSkpXTExodw?oc=5"
-        },
-        {
-          "titleKo": "사우디아라비아는 예멘의 경고 속에 아람코 건물에서 화재가 발생했다고 보고했습니다.",
-          "source": "PressTV",
-          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPU0pVeWMxZXg5OGJ1d0ZoYkx1UGRSVWpQbk1Qb1A2ZUhmMDRYSUEyVnMxd214MmREb09wMGlkdTRIWlAzSHBGTFJfV3VZcmhxS3pROENxbjlUaHd0QXUwRk90X2hOQ3ZiclQ0OFI4MDVKSkY5SFJJS0J1WXZvZzhRalVqNk0wb04w?oc=5"
-        },
-        {
-          "titleKo": "사우디아라비아: 후티 공격으로 아람코 건물 화재 발생, 리야드에서 4명 부상",
-          "source": "Gulf News",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNXzBkbUthWkFxSTdvT3dNdWc3TkRkVXlfVE05UGpBbFAwRVJYR0QxSGFLYm9EZUFlOE9ZcEVlRWdsbU9CM1RCWml1ajIwd2hxaGJoaTlNSW9TWFFGOUVtdkphZk5nNnRrcnhUc2Flc0Q4Zl9ac0VCb3ZuNlBRd3owdTh3TUV2MmhNMlRRWjFzUEVhdHAzWk5mTHdVSWdoSVVNS0Vxcm5TYXl1bUlNZWItUU55bXJTU0NiakhJZEcwQ1BlQdIB1wFBVV95cUxOdXR5Y3FpaWpfZzU2WlUtMExXQkdoTk9TNmlLc3M4bFVzY0Y4SGE5eWFodFJ4YlZxaVU5QTM1Ry1rdjVOOXlIaWZDTnlsc3NHNE5rclNydnl0XzVKd09VSENwWUJRVlpBVVM2R19CS2x0bTZOdGZ5ZG1QeUlFVTBMa3ZPa3d5eHJhM2FwSUJLZHRFdldXYWV5dUJBQW5fM0x4RXllWUdqaW84aDFDOEJhRjFFZWVtbnBfbVY3TmJTYmZ4ZElwbTk5N21ZemxzazNya0d4WmVKSQ?oc=5"
-        }
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "울주군 온산산단 화학공장 화재 4시간 만에 진화…인명피해는 없어",
+      "source": "국제뉴스",
+      "link": "https://www.gukjenews.com/news/articleView.html?idxno=3721581",
+      "date": "2026-10-14T08:02:20.000Z",
+      "lang": "ko",
+      "titleKo": "울주군 온산산단 화학공장 화재 4시간 만에 진화…인명피해는 없어",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3721581",
+      "body": "(울주=국제뉴스) 주영곤 기자 = 14일 오전 울산 울주군 온산국가산업단지 내 한 화학제품 제조업체에서 화재가 발생했다.이 불은 발생 약 4시간 만인 오후 1시 50분에 완전히 진화됐으며, 인명피해는 발생하지 않았다.화재는 오전 9시 41분경 업체가 인화성 물질인 톨루엔을 저장탱크에서 200ℓ 드럼통으로 옮기는 과정에서 시작된 것으로 소방당국은 보고 있다.불은 인근 야적장 등으로 번졌으며, 현장에서는 여러 차례 폭발음과 검은 연기가 관측됐다.저장탱크 주입구 배관 쪽에서 폭발음과 전기 스파크 소리가 들린 뒤 밸브를 잠갔고 이후 폭발이\n화재 당시 온산국가산업단지 내 대한유화 울산공장, 샤힌프로젝트 공사 현장 등 인근 사업장과 대형 공사 현장 작업자 7000여 명이 대피했다.\n소방당국은 오전 10시 4분 대응 1단계를 발령하고 소방관 등 109명, 헬기 3대, 소방장비 71대를 투입해 진화에 나섰다.\n울주군은 오전 10시 15분께 주민들에게 안전안내문자를 발송하고 현장 주변 차량을 통제했다.\n울산은 화학물질 제조량이 전국에서 가장 많은 지역으로, 2024년 기준 1억6050만t을 기록해 국내 전체의 26%를 차지하고 있다.\n소방본부 관계자는 화학물질을 대량 취급하는 사업장이 집중된 지역 특성을 감안해 신속한 초기 대응과 피해 확산 방지의 중요성을 강조했다.\n윤호중 행정안전부 장관은 가용 인력과 장비를 총동원해 화재 진압과 인명 구조에 총력을 기울일 것을 지시했다.\n경찰과 소방당국은 화재 진화 후 업체 관계자 등을 상대로 정확한 발화 원인과 재산피해 규모를 조사할 계획이다.",
+      "bodyKo": "(울주=국제뉴스) 주영곤 기자 = 14일 오전 울산 울주군 온산국가산업단지 내 한 화학제품 제조업체에서 화재가 발생했다.이 불은 발생 약 4시간 만인 오후 1시 50분에 완전히 진화됐으며, 인명피해는 발생하지 않았다.화재는 오전 9시 41분경 업체가 인화성 물질인 톨루엔을 저장탱크에서 200ℓ 드럼통으로 옮기는 과정에서 시작된 것으로 소방당국은 보고 있다.불은 인근 야적장 등으로 번졌으며, 현장에서는 여러 차례 폭발음과 검은 연기가 관측됐다.저장탱크 주입구 배관 쪽에서 폭발음과 전기 스파크 소리가 들린 뒤 밸브를 잠갔고 이후 폭발이\n화재 당시 온산국가산업단지 내 대한유화 울산공장, 샤힌프로젝트 공사 현장 등 인근 사업장과 대형 공사 현장 작업자 7000여 명이 대피했다.\n소방당국은 오전 10시 4분 대응 1단계를 발령하고 소방관 등 109명, 헬기 3대, 소방장비 71대를 투입해 진화에 나섰다.\n울주군은 오전 10시 15분께 주민들에게 안전안내문자를 발송하고 현장 주변 차량을 통제했다.\n울산은 화학물질 제조량이 전국에서 가장 많은 지역으로, 2024년 기준 1억6050만t을 기록해 국내 전체의 26%를 차지하고 있다.\n소방본부 관계자는 화학물질을 대량 취급하는 사업장이 집중된 지역 특성을 감안해 신속한 초기 대응과 피해 확산 방지의 중요성을 강조했다.\n윤호중 행정안전부 장관은 가용 인력과 장비를 총동원해 화재 진압과 인명 구조에 총력을 기울일 것을 지시했다.\n경찰과 소방당국은 화재 진화 후 업체 관계자 등을 상대로 정확한 발화 원인과 재산피해 규모를 조사할 계획이다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "국제뉴스"
       ],
-      "tag": "고층·건물"
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "울산 화학공장 화재, 4시간 만에 완진…저장탱크 7기로 번져 연기·폭발음",
+      "source": "싱글리스트",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=773424",
+      "date": "2026-10-14T07:53:40.000Z",
+      "lang": "ko",
+      "titleKo": "울산 화학공장 화재, 4시간 만에 완진…저장탱크 7기로 번져 연기·폭발음",
+      "url": "https://www.slist.kr/news/articleView.html?idxno=773424",
+      "body": "울산 울주군의 한 화학제품 제조업체에서 발생한 대형 화재가 약 4시간 만에 완전히 진화됐다. 인명피해는 없었지만 인화성 물질을 보관하던 저장탱크 7기로 불길이 번지면서 인근 산업단지 근로자 7천여명이 긴급 대피했다.14일 연합뉴스에 따르면 울산소방본부는 이날 오전 9시 41분께 울주군 온산읍 학남리 부승화학에서 발생한 화재를 오후 1시 50분께 완전히 진압했다.불은 톨루엔을 저장탱크에서 200ℓ 드럼통으로 옮기는 작업 도중 시작된 것으로 파악됐다. 당시 원인을 알 수 없는 불꽃이 주변 드럼통으로 옮겨붙었고, 강한 바람을 타고 인근\n이 화재로 업체가 보유한 옥외 저장탱크 33기 가운데 7기와 야적장에 있던 드럼통 등이 불에 탔다. 피해 탱크에는 톨루엔을 비롯해 시너, 아세톤, 에탄올, 자일렌 등 인화성 물질이 보관돼 있었다.\n화재 직후 업체 작업자 12명과 인근 공사 현장 근로자 약 7천명이 대피했다. 인접한 에쓰오일 샤힌프로젝트 공사장에서도 일부 작업이 중단됐다. 진화 이후 일부 공정이 재개됐으나 화재 현장과 가까운 작업장은 잿가루 등의 영향으로 작업이 재개되지 못했다.\n소방 당국은 대응 1단계와 두 차례의 국가소방동원령을 발령하고 장비 106대, 인력 255명을 투입했다. 주변에 저장탱크가 밀집한 만큼 추가 확산을 막기 위한 냉각 작업도 병행했다.\n현장에서는 검은 연기와 함께 폭발음이 여러 차례 들린 것으로 전해졌다. 인근 사업장 근로자는 \"약 1분 뒤 묵직한 '펑' 소리가 들리면서 건물이 조금 흔들리는 듯한 느낌을 받았다\"며 당시 상황을 설명했다.\n소방 당국은 완진 이후에도 탱크에 남은 열기를 식히고 재발화를 막기 위한 방수 작업을 이어가고 있다. 관계 기관은 대기질을 측정하고 있으며, 현재까지 바다로 유출된 화학물질은 없는 것으로 파악됐다.",
+      "bodyKo": "울산 울주군의 한 화학제품 제조업체에서 발생한 대형 화재가 약 4시간 만에 완전히 진화됐다. 인명피해는 없었지만 인화성 물질을 보관하던 저장탱크 7기로 불길이 번지면서 인근 산업단지 근로자 7천여명이 긴급 대피했다.14일 연합뉴스에 따르면 울산소방본부는 이날 오전 9시 41분께 울주군 온산읍 학남리 부승화학에서 발생한 화재를 오후 1시 50분께 완전히 진압했다.불은 톨루엔을 저장탱크에서 200ℓ 드럼통으로 옮기는 작업 도중 시작된 것으로 파악됐다. 당시 원인을 알 수 없는 불꽃이 주변 드럼통으로 옮겨붙었고, 강한 바람을 타고 인근\n이 화재로 업체가 보유한 옥외 저장탱크 33기 가운데 7기와 야적장에 있던 드럼통 등이 불에 탔다. 피해 탱크에는 톨루엔을 비롯해 시너, 아세톤, 에탄올, 자일렌 등 인화성 물질이 보관돼 있었다.\n화재 직후 업체 작업자 12명과 인근 공사 현장 근로자 약 7천명이 대피했다. 인접한 에쓰오일 샤힌프로젝트 공사장에서도 일부 작업이 중단됐다. 진화 이후 일부 공정이 재개됐으나 화재 현장과 가까운 작업장은 잿가루 등의 영향으로 작업이 재개되지 못했다.\n소방 당국은 대응 1단계와 두 차례의 국가소방동원령을 발령하고 장비 106대, 인력 255명을 투입했다. 주변에 저장탱크가 밀집한 만큼 추가 확산을 막기 위한 냉각 작업도 병행했다.\n현장에서는 검은 연기와 함께 폭발음이 여러 차례 들린 것으로 전해졌다. 인근 사업장 근로자는 \"약 1분 뒤 묵직한 '펑' 소리가 들리면서 건물이 조금 흔들리는 듯한 느낌을 받았다\"며 당시 상황을 설명했다.\n소방 당국은 완진 이후에도 탱크에 남은 열기를 식히고 재발화를 막기 위한 방수 작업을 이어가고 있다. 관계 기관은 대기질을 측정하고 있으며, 현재까지 바다로 유출된 화학물질은 없는 것으로 파악됐다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "싱글리스트"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "울산 온산 화학공장서 큰불…폭발음 잇따라 인근 근로자 수천 명 대피",
+      "source": "잉크뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBDMFI4VzlOclIzRkkwZGRKNUFJZlE4eHd5QTZyRS13TkpGM1VPcFVILVNNRmhfb1JPT1l0c191RkMxWDNtRnRMRzNxeU9vdG1BaVZKWXRMV0FRZHdmN09xczRNVXBOUQ?oc=5",
+      "date": "2026-10-14T06:39:11.000Z",
+      "lang": "ko",
+      "titleKo": "울산 온산 화학공장서 큰불…폭발음 잇따라 인근 근로자 수천 명 대피",
+      "count": 1,
+      "sources": [
+        "잉크뉴스"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "잇단 공장 화재에 ‘빨간불’… 포항남부소방서 예방 당부",
+      "source": "경북도민일보",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1mSXBKY3MzSlJwZ0JyNnM1MS1lZDNmRUh6cVo3aS1vZUNOZTFqUWN4ek1ITGV5b19rTHJUTzFlX0gyN0Y2VUoyOUJyRTZVT1dIbFkyazVRQnhFbVZoWEkzcnVIUVRnUEJrSGc?oc=5",
+      "date": "2026-10-14T06:33:54.000Z",
+      "lang": "ko",
+      "titleKo": "잇단 공장 화재에 ‘빨간불’… 포항남부소방서 예방 당부",
+      "count": 1,
+      "sources": [
+        "경북도민일보"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "[오늘의 사건사고] 울산 화학 공장서 화재…‘옥외탱크 폭발’로 인근 ‘대피령’",
+      "source": "뉴시안",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TQWlWcTBVN2NrZ0hCZWp3QUxJeDRueHJ4WmdXQVBHcndkNDRLRkFIMDROb19iU3hiOUZaeldiWmdtVjdtaS16azgwLW1KQnFnRDN6YjREU3F4eW9ISl9heWI1SmFCSlNJM3fSAW5BVV95cUxQYlVVMzdsRWszdVpZQ25FbTN0amx5dUIwQnBNOXd1NUwwUEZKd0hsLTAwSUNnYWIyRXJmWVBqdjlpa01nOFA3bXdYVVctQV9uUjBBdkxfejhfdGs4aVFBeW5rTWltOFZZZW1vVFUyZw?oc=5",
+      "date": "2026-10-14T05:40:54.000Z",
+      "lang": "ko",
+      "titleKo": "[오늘의 사건사고] 울산 화학 공장서 화재…‘옥외탱크 폭발’로 인근 ‘대피령’",
+      "count": 1,
+      "sources": [
+        "뉴시안"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
     },
     {
       "title": "한 총리, 울주 공장 화재에 \"인명피해 방지 총력\"",
@@ -135,40 +266,16 @@
       "body": "소방력·장비 총동원 지시…“소방공무원 안전에도 만전“ 한성숙 국무총리는 울산 울주군의 화학제품 제조업체에서 발생한 화재와 관련해 가용 소방력과 장비를 총동원해 진압과 인명피해 방지에 최선을 다하라고 긴급 지시했습니다. 총리실에 따르면 한 총리는 오늘(14일) 화재 상황",
       "bodyKo": "소방력·장비 총동원 지시…“소방공무원 안전에도 만전“ 한성숙 국무총리는 울산 울주군의 화학제품 제조업체에서 발생한 화재와 관련해 가용 소방력과 장비를 총동원해 진압과 인명피해 방지에 최선을 다하라고 긴급 지시했습니다. 총리실에 따르면 한 총리는 오늘(14일) 화재 상황",
       "tried": true,
-      "count": 11,
+      "count": 2,
       "sources": [
         "연합뉴스TV",
-        "아주경제",
-        "퍼블릭타임스",
-        "뉴스핌",
-        "한국재난뉴스",
-        "연합뉴스"
+        "아주경제"
       ],
       "related": [
         {
           "titleKo": "울산 울주 공장 화재에...윤호중 행안장관 가용 인력·장비 총동원",
           "source": "아주경제",
-          "link": "https://www.ajunews.com/amp/20261014131715188"
-        },
-        {
-          "titleKo": "윤호중 행안, 울산 울주군 공장 화재 관련 가용자원 총동원 긴급 지시",
-          "source": "퍼블릭타임스",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1tLXptRi1SZlpqSU41YnM3WmVjSWY1eUVfWV9SLWRnRFpMSzB1LVJLcko2Wm9wSFZfVmc4cmxGSWtQb0h6em4xSlJMM3BCNzkyN3dPOEhodFFHNUxEb3FTODhtOFJVQ0tFZXfSAW5BVV95cUxNaFg0TFo4VmRQYXFmbi1HXzJ2Tk0yWWNTeVFNT2Z0eEtZbXFoMDM5NW01Sy1HNWRBR29LbjFiS2VtOHRxRVl0bFVJb09qT0lDYy03THFVTTdZakh4bmNRckRSZ1BqUGQ2Sm1POE5LZw?oc=5"
-        },
-        {
-          "titleKo": "한성숙 총리, 울산 공장 화재에 \"인명피해 방지 최선\"",
-          "source": "뉴스핌",
-          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qTXNiNkllT253Z0hIMklDTjlTVWxnOWhNN1U3eFVXdnJKbkd4d3R4UUpaeTFjRmhYc201cFNrb2QxbTJuMXVPRnkwZXUxYkRISFpyU3dORllBWk5n?oc=5"
-        },
-        {
-          "titleKo": "울산 화학제품 공장 톨루엔 저장탱크 화재... 윤 장관 “화재 진압 총력” 지시",
-          "source": "한국재난뉴스",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5yWnYtUk1xcjJPTU5Zc0QzRlVOS1ZYaGc0U3pVTHc1R0x5dHk1Z2dXSlBLQzVvNmEwMUdkTFdZak9hTDV2bkpSeGs0NnNOSk0ySmRQRFJhUkNqV1c0ZlV1bGdwN0d4MHZTMFE?oc=5"
-        },
-        {
-          "titleKo": "韓총리, 울주군 공장 화재 \"인명피해 방지 최선\" 긴급지시",
-          "source": "연합뉴스",
-          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90YWNFTkpZRUQtWmVlU0N2VjNka1B2bHpZRzFaSEFydVJFS0phdm5MaWJsOWJRV2VGYW9iSk5rMXVHalpGU2ZYbWFGZU56d2dZZlNNcl9CcXdDSFpwMUtiNtIBYEFVX3lxTE90YWNFTkpZRUQtWmVlU0N2VjNka1B2bHpZRzFaSEFydVJFS0phdm5MaWJsOWJRV2VGYW9iSk5rMXVHalpGU2ZYbWFGZU56d2dZZlNNcl9CcXdDSFpwMUtiNg?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9pb0F5VnlEQ0FTaVZIWklyQnh2bFhtaHBMbk9wVzgyMDVBS19jMUg1eTQ5MGk3RGlTeG1JUzRyQjNfbE1IejVyS1NSYzhoVmIwSEJMZHJ5bU3SAVhBVV95cUxPaW9BeVZ5RENBU2lWSFpJckJ4dmxYbWhwTG5PcFc4MjA1QUtfYzFINXk0OTBpN0RpU3htSVM0ckIzX2xNSHo1cktTUmM4aFZiMEhCTGRyeW1N?oc=5"
         }
       ],
       "tag": "공장·플랜트"
@@ -192,76 +299,15 @@
       "tag": "공장·플랜트"
     },
     {
-      "title": "울산 화학공장서 톨루엔 옮기다 화재…저장탱크 7기로 불길 번져",
-      "source": "파이낸셜뉴스",
-      "link": "https://www.fnnews.com/news/202610141311406253",
-      "date": "2026-10-14T04:15:48.000Z",
+      "title": "\"큰 폭발음에 건물 진동\" 울산 화학업체 화재현장 인근 근로자들",
+      "source": "연합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBZaVJGN3lCdkdVYVBTWTJfeWtZN0J3UkF4YjI5UVNkbGVTSXB4ZEVSRTVTM1hUVHdvQlowd2lTdFJXM3d3R2R5Uk94TWoxWl9SNlg0d1pyT1NUT1gwYkdxNNIBYEFVX3lxTFBZaVJGN3lCdkdVYVBTWTJfeWtZN0J3UkF4YjI5UVNkbGVTSXB4ZEVSRTVTM1hUVHdvQlowd2lTdFJXM3d3R2R5Uk94TWoxWl9SNlg0d1pyT1NUT1gwYkdxNA?oc=5",
+      "date": "2026-10-14T04:20:22.000Z",
       "lang": "ko",
-      "titleKo": "울산 화학공장서 톨루엔 옮기다 화재…저장탱크 7기로 불길 번져",
-      "url": "https://www.fnnews.com/news/202610141311406253",
-      "body": "울산 울주군의 한 화학제품 제조공장에서 인화성 물질인 톨루엔을 드럼통에 옮겨 담던 중 불이 나 저장탱크 7기로 번진 것으로 파악됐다.소방당국은 헬기까지 동원해 진화 작업을 벌이고 있지만 불길이 쉽게 잡히지 않고 있다.소방당국은 저장탱크 7기 내부의 인화성 물..\n14일 울산소방본부에 따르면 이날 오전 9시 41분께 울산 울주군 온산읍의 한 화학제품 제조업체에서 불이 났다. 당시 공장에서는 톨루엔을 출하하기 위해 저장탱크와 연결된 배관을 통해 200ℓ 드럼통에 옮겨 담는 작업을 하고 있었다. 소방당국은 이 과정에서 불이 시작된 것으로 보고 있으나 정확한 발화 원인은 아직 밝혀지지 않았다.\n저장탱크에는 톨루엔과 시너, 아세톤, 에탄올, 자일렌 등 불이 붙기 쉬운 화학물질이 보관돼 있었다. 이들 물질은 소방당국이 제4류 위험물 중 제1석유류로 분류한 인화성 액체다. 인화점이 21도 미만으로 낮아 상온에서도 발생한 증기에 불꽃이 닿으면 쉽게 불이 붙을 수 있다.\n소방당국은 오전 9시 47분 현장에 도착해 진화에 나섰으며, 오전 10시 4분 대응 1단계를 발령했다. 이어 오전 10시 17분 국가소방동원령을 발령해 부산·대구·경남에서 고성능 화학차 8대와 무인방수차 1대 등 9대를 동원했다.\n오전 11시 18분에는 장시간 진화 작업에 대비해 국가소방동원령을 추가 발령하고 부산·대구·경남에서 회복지원차 3대를 추가로 동원했다.\n소방당국은 저장탱크 7기 내부의 인화성 물질이 모두 탈 때까지 주변으로 불이 번지는 것을 막는 데 주력할 방침이다.\n화재 현장 인근에는 에쓰오일(S-OIL)의 대규모 석유화학시설 건설 사업인 '샤힌 프로젝트' 현장이 있다. 화재 당시 폭발음이 잇따르고 검은 연기가 치솟으면서 건설 현장 근로자 약 7000명이 대피했다. 공장 작업자 16명도 모두 대피했으며 현재까지 인명피해는 없는 것으로 파악됐다.",
-      "bodyKo": "울산 울주군의 한 화학제품 제조공장에서 인화성 물질인 톨루엔을 드럼통에 옮겨 담던 중 불이 나 저장탱크 7기로 번진 것으로 파악됐다.소방당국은 헬기까지 동원해 진화 작업을 벌이고 있지만 불길이 쉽게 잡히지 않고 있다.소방당국은 저장탱크 7기 내부의 인화성 물..\n14일 울산소방본부에 따르면 이날 오전 9시 41분께 울산 울주군 온산읍의 한 화학제품 제조업체에서 불이 났다. 당시 공장에서는 톨루엔을 출하하기 위해 저장탱크와 연결된 배관을 통해 200ℓ 드럼통에 옮겨 담는 작업을 하고 있었다. 소방당국은 이 과정에서 불이 시작된 것으로 보고 있으나 정확한 발화 원인은 아직 밝혀지지 않았다.\n저장탱크에는 톨루엔과 시너, 아세톤, 에탄올, 자일렌 등 불이 붙기 쉬운 화학물질이 보관돼 있었다. 이들 물질은 소방당국이 제4류 위험물 중 제1석유류로 분류한 인화성 액체다. 인화점이 21도 미만으로 낮아 상온에서도 발생한 증기에 불꽃이 닿으면 쉽게 불이 붙을 수 있다.\n소방당국은 오전 9시 47분 현장에 도착해 진화에 나섰으며, 오전 10시 4분 대응 1단계를 발령했다. 이어 오전 10시 17분 국가소방동원령을 발령해 부산·대구·경남에서 고성능 화학차 8대와 무인방수차 1대 등 9대를 동원했다.\n오전 11시 18분에는 장시간 진화 작업에 대비해 국가소방동원령을 추가 발령하고 부산·대구·경남에서 회복지원차 3대를 추가로 동원했다.\n소방당국은 저장탱크 7기 내부의 인화성 물질이 모두 탈 때까지 주변으로 불이 번지는 것을 막는 데 주력할 방침이다.\n화재 현장 인근에는 에쓰오일(S-OIL)의 대규모 석유화학시설 건설 사업인 '샤힌 프로젝트' 현장이 있다. 화재 당시 폭발음이 잇따르고 검은 연기가 치솟으면서 건설 현장 근로자 약 7000명이 대피했다. 공장 작업자 16명도 모두 대피했으며 현재까지 인명피해는 없는 것으로 파악됐다.",
-      "tried": true,
+      "titleKo": "\"큰 폭발음에 건물 진동\" 울산 화학업체 화재현장 인근 근로자들",
       "count": 1,
       "sources": [
-        "파이낸셜뉴스"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "울주군 화학공장서 화재…대응 1단계 발령 진화중",
-      "source": "국제뉴스",
-      "link": "https://www.gukjenews.com/news/articleView.html?idxno=3721198",
-      "date": "2026-10-14T03:57:45.000Z",
-      "lang": "ko",
-      "titleKo": "울주군 화학공장서 화재…대응 1단계 발령 진화중",
-      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3721198",
-      "body": "울산 울주군 온산국가산업단지 내에 위치한 화학제품 제조업체 부승화학에서 13일 오전 대규모 화재가 발생해, 인근 에쓰오일 샤힌 프로젝트 현장 근로자 약 7000명을 비롯해 주변 사업장 직원들이 긴급히 대피하는 상황이 벌어졌다.이 화재로 인해 온산공단 일대에는 검은 연기와 강한 냄새가 퍼졌으며, 인근 도로를 지나는 차량에도 우회 안내가 내려졌다.불은 오전 9시 41분 울주군 온산읍 학남리 부승화학 옥외탱크에서 시작됐다.해당 탱크에는 인화성 액체인 제4류 위험물 톨루엔 8000ℓ가 저장돼 있었으며, 시너와 메탄올, 아세톤 등 다양한 인\n현장에서는 5~6차례의 폭발음이 들린 뒤 불길과 검은 연기가 하늘로 치솟았고, 바람을 타고 불씨가 인근 사업장 잔디밭으로 날아가 추가 화재가 발생하기도 했다.\n화재 당시 부승화학 내부에 있던 16명의 작업자는 모두 자력으로 대피해 현재까지 인명 피해는 없는 것으로 확인됐다.\n그러나 유독가스와 냄새가 심하게 발생해, 에쓰오일 샤힌 프로젝트 패키지1 현장과 주변 기업체들도 작업을 중단하고 근로자들을 안전한 지역으로 이동시켰다.\n울산소방본부는 오전 10시 4분 대응 1단계를 발령하고, 소방과 유관기관 인력 200여 명, 소방 헬기 3대, 대용량 방사포 차량 1대 등 장비를 동원해 진화 작업을 벌였다.\n물만으로는 진화가 어려운 위험물 화재 특성상 포 소화약제를 함께 사용하고 있으며, 불길이 옆 저장탱크로 번지지 않도록 연소 확대 방지에 집중하고 있다.\n울주군은 오전 10시 15분경 재난안전문자를 통해 차량 우회와 인근 주민의 안전 유의를 당부했다.\n부승화학은 고순도 유기용제 및 무기화학 제품을 저장&middot;공급하는 업체로, 시너, 가성소다, 메탄올 등 다량의 화학물질을 드럼통과 탱크에 보관하고 있는 것으로 알려졌다.",
-      "bodyKo": "울산 울주군 온산국가산업단지 내에 위치한 화학제품 제조업체 부승화학에서 13일 오전 대규모 화재가 발생해, 인근 에쓰오일 샤힌 프로젝트 현장 근로자 약 7000명을 비롯해 주변 사업장 직원들이 긴급히 대피하는 상황이 벌어졌다.이 화재로 인해 온산공단 일대에는 검은 연기와 강한 냄새가 퍼졌으며, 인근 도로를 지나는 차량에도 우회 안내가 내려졌다.불은 오전 9시 41분 울주군 온산읍 학남리 부승화학 옥외탱크에서 시작됐다.해당 탱크에는 인화성 액체인 제4류 위험물 톨루엔 8000ℓ가 저장돼 있었으며, 시너와 메탄올, 아세톤 등 다양한 인\n현장에서는 5~6차례의 폭발음이 들린 뒤 불길과 검은 연기가 하늘로 치솟았고, 바람을 타고 불씨가 인근 사업장 잔디밭으로 날아가 추가 화재가 발생하기도 했다.\n화재 당시 부승화학 내부에 있던 16명의 작업자는 모두 자력으로 대피해 현재까지 인명 피해는 없는 것으로 확인됐다.\n그러나 유독가스와 냄새가 심하게 발생해, 에쓰오일 샤힌 프로젝트 패키지1 현장과 주변 기업체들도 작업을 중단하고 근로자들을 안전한 지역으로 이동시켰다.\n울산소방본부는 오전 10시 4분 대응 1단계를 발령하고, 소방과 유관기관 인력 200여 명, 소방 헬기 3대, 대용량 방사포 차량 1대 등 장비를 동원해 진화 작업을 벌였다.\n물만으로는 진화가 어려운 위험물 화재 특성상 포 소화약제를 함께 사용하고 있으며, 불길이 옆 저장탱크로 번지지 않도록 연소 확대 방지에 집중하고 있다.\n울주군은 오전 10시 15분경 재난안전문자를 통해 차량 우회와 인근 주민의 안전 유의를 당부했다.\n부승화학은 고순도 유기용제 및 무기화학 제품을 저장&middot;공급하는 업체로, 시너, 가성소다, 메탄올 등 다량의 화학물질을 드럼통과 탱크에 보관하고 있는 것으로 알려졌다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "국제뉴스"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "울산 화학공장 화재에 국가소방동원령 두 차례 발령…고성능 화학차 등 특수차량 12대 동원",
-      "source": "부산파이낸셜뉴스",
-      "link": "https://busan.fnnews.com/news/202610141250558474",
-      "date": "2026-10-14T03:56:00.000Z",
-      "lang": "ko",
-      "titleKo": "울산 화학공장 화재에 국가소방동원령 두 차례 발령…고성능 화학차 등 특수차량 12대 동원",
-      "url": "https://busan.fnnews.com/news/202610141250558474",
-      "body": "[파이낸셜뉴스] /사진=뉴시스화상 울산 울주군의 화학물질 제조공장에서 발생한 화재가 확산할 우려가 커지면서 소방청이 국가소방동원령을 두 차례 발령했다. 부산&middot;대구&middot;경남의 고성능 화학차 ..",
-      "bodyKo": "[파이낸셜뉴스] /사진=뉴시스화상 울산 울주군의 화학물질 제조공장에서 발생한 화재가 확산할 우려가 커지면서 소방청이 국가소방동원령을 두 차례 발령했다. 부산&middot;대구&middot;경남의 고성능 화학차 ..",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "부산파이낸셜뉴스",
-        "뉴시스"
-      ],
-      "related": [
-        {
-          "titleKo": "[속보]소방청, 울산 제조공장 화재에 '국가소방동원령' 발령",
-          "source": "뉴시스",
-          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBrTDUxdExkOHliN0pHRkRxSTlLTDFlZV9PTE9DZFhZVWEzNWZnV1V3VjIwSmsxMmRXMkdFTXllNlZkR2ZWNHJXZGlKc2JPOXV0MU9yWE1Ea1NDelpuRE1XV9IBeEFVX3lxTFBGLWY4VFVIWG8xbFdZdkt2QW1sMGhleWZjMW5WaEFzYWxVd054N1BqUjVfdld5TXdkczVjUEttN3ZYRlVuRFgyamQzcmxwNWQxOGdVbGVYMmFRZGZfNy03WU5LRmFZUW5CSTAzVC1ZZGZ1Y0xWVk5QVQ?oc=5"
-        }
-      ],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "울산 화학공장 불, 톨루엔 탱크서 번져…“진화 장시간 걸릴 듯”",
-      "source": "부산일보",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE01d3hXMllvSlM3bmlub2k5ZVhtUGF6ZXdkM0RncEZvRnNfOWU3eUJBeGlwWXlMdUpveS02SlRYdjZCS1duNmVYNjN1NXk5aVhWNFNMYWM0cGVJTW9mcU0tWWM2WkRnbkVVbG0tYmN3WEFOSEd2NzMxOUFMMA?oc=5",
-      "date": "2026-10-14T03:04:13.000Z",
-      "lang": "ko",
-      "titleKo": "울산 화학공장 불, 톨루엔 탱크서 번져…“진화 장시간 걸릴 듯”",
-      "count": 1,
-      "sources": [
-        "부산일보"
+        "연합뉴스"
       ],
       "related": [],
       "tag": "공장·플랜트"
@@ -293,131 +339,6 @@
       ],
       "related": [],
       "tag": "기타"
-    },
-    {
-      "title": "Houthis Attack Saudi Aramco Administrative Building in Dhahran, Triggering Limited Fire: 51 outlets compared",
-      "source": "NewsCord",
-      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQSEVNWFdLTDNZNXpRYUZIemx2N29EYm1BdS16YWhSRXZDTWFIZlNEcEg1LWFEOHdvMVNFRk5OTHEyZ2VqaS1hd0oyMnZVdTVZVGlPMG5JUWo2bkRaYUY1a1RMcGQwN01LUGRFaG01b2tTYzhraUZnRzIzZzdTb0YxdzZrNjZBaFl6cjh6TG1lMExBc1FaazVXT3puTWd4QTVVdFIzRUJ4b0lQMTljQXpsZ0FQcjJLSzF4a2c4ck03Z2llSVJOZ1JYRl95VTBCblZ1QW1tUG5xWGVJamhtQVVjZlVURkVEYmRj?oc=5",
-      "date": "2026-10-13T17:55:48.000Z",
-      "lang": "en",
-      "titleKo": "Houthis Attack Saudi Aramco Administrative Building in Dhahran, Triggering Limited Fire: 51 매장 비교",
-      "count": 1,
-      "sources": [
-        "NewsCord"
-      ],
-      "related": [],
-      "tag": "기타"
-    },
-    {
-      "title": "عاجل | حريق يحاصر سكانًا داخل مبنى من 5 طوابق في أرناؤوط كوي التركية",
-      "source": "تركيا عاجل",
-      "link": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxOeG9oQUxMeXI2M2N3VzlFRFh3SmphM2pDdXBZVkhQVFUya1ZHUC1Ec1E2YTI2bk1GT05WaGNPc0lFd3JUTWczUjY3eEVhRk5Pa1hVeWg1MGVPMGJ2ajF2Q2FCZFlkX0tqdVY5S1RWc0x6MUdydzRpMVhtZllXT09zSTZ1QXpqR1o4akg2ajZ4VFQ4ZnBaVlhSN3NVSmpLNlVIZHFCSEZJZ0wwOXVTX3BlZDNUWVhuUFc3OWp3ZXk5SGlXLU1tQ1ZycDYxeWtFR3pDcUhpbFFqd0NOZS11bmh1Y1BDRnZkR0ZNVWdRWUVsSzFRTm1ZNXI1MXFCbmdPOTBUbkpGZU9JemJsVk5YWnd5UG5tZGJBNlZHMDRZRjZyZWNrTjMwVFRrVUhuZjdZbTdvMlZOMmJIR2ROUUN0MC1XVlJyWFZRWThLWWlZblpES0dLdmo4WlpuLUh1blXSAdwCQVVfeXFMTnhvaEFMTHlyNjNjd1c5RURYd0pqYTNqQ3VwWVZIUFRVMmtWR1AtRHNRNmEyNm5NRk9OVmhjT3NJRXdyVE1nM1I2N3hFYUZOT2tYVXloNTBlTzBidmoxdkNhQmRZZF9LanVWOUtUVnNMejFHcnc0aTFYbWZZV09Pc0k2dUF6akdaOGpINmo2eFRUOGZwWlZYUjdzVUpqSzZVSGRxQkhGSWdMMDl1U19wZWQzVFlYblBXNzlqd2V5OUhpVy1NbUNWcnA2MXlrRUd6Q3FIaWxRandDTmUtdW5odWNQQ0Z2ZEdGTVVnUVlFbEsxUU5tWTVyNTFxQm5nTzkwVG5KRmVPSXpibFZOWFp3eVBubWRiQTZWRzA0WUY2cmVja04zMFRUa1VIbmY3WW03bzJWTjJiSEdkTlFDdDAtV1ZSclhWUVk4S1lpWW5aREtHS3ZqOFpabi1IdW5V?oc=5",
-      "date": "2026-10-13T15:52:22.000Z",
-      "lang": "ar",
-      "titleKo": "긴급 | 터키 아르나부트쾨이 (Arnavutköy) 에 있는 5층 건물 내부에 주민들이 갇힌 화재",
-      "count": 1,
-      "sources": [
-        "تركيا عاجل"
-      ],
-      "related": [],
-      "tag": "고층·건물"
-    },
-    {
-      "title": "Civil Defence contains a warehouse fire in Birkat Al Awamer",
-      "source": "ILoveQatar.net",
-      "link": "https://www.iloveqatar.net/news/general/civil-defence-contains-warehouse-fire-birkat-al-awamer",
-      "date": "2026-10-13T11:50:00.000Z",
-      "lang": "en",
-      "titleKo": "Birkat Al Awamer에 창고 화재가 있는 민방위",
-      "url": "https://www.iloveqatar.net/news/general/civil-defence-contains-warehouse-fire-birkat-al-awamer",
-      "body": "Civil Defence contained a warehouse fire in Barakat Al Awamer with no reported injuries, as announced by the Ministry of Interior.\nThe Ministry of Interior announced on 13 October 2026 that the Civil Defence had successfully brought a fire in a warehouse in the Birkat Al Awamer area under control.\nThe Civil Defence brings a fire at a warehouse in the Birkat Al Awamer area under control. No injuries were reported. #MOIQatar\nThe Ministry also confirmed that no injuries had been reported.\nIf you have anything you want to share with us, send us an e-mail at contact@iloveqatar.net !\nWant to send a tip? Drop us an e-mail at contact@iloveqatar.net , anonymity is guaranteed!\nHow ajeeb was that!? Thanks for contributing to our community! Your post will appear after we take a quick look!",
-      "bodyKo": "민방위는 내무부가 발표한 바와 같이 부상이 보고되지 않은 바라카트 알 아와메르의 창고 화재를 포함하고 있었다.\n내무부는 2026년 10월 13일 민방위가 비르카트 알 아와메르 지역의 창고에서 화재를 성공적으로 진압했다고 발표했다.\n민방위는 통제하에 있는 Birkat Al Awamer 지역의 창고에 불을 지릅니다. 부상자는 보고되지 않았습니다. # MOIQatar\n국토부는 또한 부상이 보고되지 않았음을 확인했다.\n공유하고 싶은 사항이 있으시면 contact@iloveqatar.net으로 이메일을 보내주세요!\n팁을 보내고 싶으신가요? contact@iloveqatar.net으로 이메일을 보내주세요. 익명성이 보장됩니다!\n얼마나 어이쿠!? 커뮤니티에 참여해주셔서 감사합니다! 포스트는 간단히 검토한 후 표시됩니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "ILoveQatar.net"
-      ],
-      "related": [],
-      "tag": "숙소·창고"
-    },
-    {
-      "title": "김천 폐기물공장 화재 6시간 만에 잡혀",
-      "source": "매일일보",
-      "link": "https://www.m-i.kr/news/articleView.html?idxno=2005498",
-      "date": "2026-10-13T10:25:28.000Z",
-      "lang": "ko",
-      "titleKo": "김천 폐기물공장 화재 6시간 만에 잡혀",
-      "url": "https://www.m-i.kr/news/articleView.html?idxno=2005498",
-      "body": "매일일보 = 신승엽 기자 | 경북 김천시 남면의 한 폐기물처리공장에서 원인 불명의 화재가 6시간여 만에 진화됐다. 화재는 이날 오전 11시 27분께 발생했다. 소",
-      "bodyKo": "매일일보 = 신승엽 기자 | 경북 김천시 남면의 한 폐기물처리공장에서 원인 불명의 화재가 6시간여 만에 진화됐다. 화재는 이날 오전 11시 27분께 발생했다. 소",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "매일일보",
-        "재경일보"
-      ],
-      "related": [
-        {
-          "titleKo": "김천 폐기물공장 화재 6시간 만에 초진 : 사회",
-          "source": "재경일보",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5kSUl1OHNDSU1jSmZ6QWF3ZXY2ZXZzZGhfSDA4eWVaajZ4dVZOZzZ0V1FPc0htYWJrVTl0OWhVSjZsZ1Q4UHVSQzJoMA?oc=5"
-        }
-      ],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "창원 철강공장 화재 62시간여 사투 끝 진화 … 인명피해 없어",
-      "source": "아시아경제",
-      "link": "https://www.asiae.co.kr/article/2026101317080105442",
-      "date": "2026-10-13T08:08:59.000Z",
-      "lang": "ko",
-      "titleKo": "창원 철강공장 화재 62시간여 사투 끝 진화 … 인명피해 없어",
-      "url": "https://www.asiae.co.kr/article/2026101317080105442",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "아시아경제"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "واع / الدفاع المدني يخمد حريقاً داخل مخزن للمواد الاحتياطية في الرمادي",
-      "source": "وكالة انباء الاعلام العراقي",
-      "link": "https://al-iraqinews.com/archives/670545",
-      "date": "2026-10-13T07:05:36.000Z",
-      "lang": "ar",
-      "titleKo": "의식/민방위는 라마디의 여분의 재료를 비축한 내부에서 화재를 진압합니다.",
-      "url": "https://al-iraqinews.com/archives/670545",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "وكالة انباء الاعلام العراقي"
-      ],
-      "related": [],
-      "tag": "숙소·창고"
-    },
-    {
-      "title": "배터리 산업의 그늘… ‘폭발·납오염·끼임’ 위험 속 철저한 안전관리 절실",
-      "source": "https://www.didimkorea.net/",
-      "link": "https://www.didimkorea.net/news/561024",
-      "date": "2026-10-13T00:56:50.000Z",
-      "lang": "ko",
-      "titleKo": "배터리 산업의 그늘… ‘폭발·납오염·끼임’ 위험 속 철저한 안전관리 절실",
-      "url": "https://www.didimkorea.net/news/561024",
-      "body": "배터리 생산 공장 자동화 라인[사회안전학교폭력예방신문= 이동훈 기자] 전동화 및 친환경 모빌리티 시장의 급성장에 맞춰 배터리 제조업은 국가 핵심 산업으로 자리매김했다. 그러나 화려한 성장의 이면에는 화재·폭발, 중금속 오염, 설비 정비 중 중대재해라는 치명적인 산업재해 위험성이 늘 상존하고 있다.특히 자동차용 배터리(납축전지) 및 제조 부품 공장이 밀집한\n특히 자동차용 배터리(납축전지) 및 제조 부품 공장이 밀집한 경주 지역에서도 이러한 위험 요인에 대한 철저한 관리와 선제적 예방 조치의 중요성이 그 어느 때보다 높게 요구되고 있다.\n화재 및 폭발 위험: 전해액 주입 및 충전, 화기 작업 공정에서는 가스 및 분진 발화로 인한 화재 가능성이 크다. 최근 타지역 납축전지 및 리튬배터리 공장에서 발생한 대형 화재 사고에서 보듯, 초기 진화 실패 시 대형 참사로 이어질 수 있다.\n유해물질 및 환경오염 위험: 자동차용 배터리의 주원료인 납(Pb)과 전해액으로 쓰이는 강산성 황산(Sulfuric Acid)은 작업자의 건강 위협은 물론 누출 시 토양 및 수질을 심각하게 오염시킨다. 밀폐·환기 설비 관리 소홀은 중금속 중독 및 유독가스 사고로 직결된다.\n기계 설비 끼임(협착) 사고: 대형 자동화 라인이 상시 가동되는 현장에서 보전·청소 작업 중 '전원 차단(LOTO)' 수칙을 지키지 않을 경우 인명 사고가 발생할 위험이 높다.\n경주 공단에 위치한 현대성우쏠라이트는 국내외 시장에 자동차용 배터리를 공급하는 지역의 대표적인 제조기업이다. 그동안 비교적 안정적인 공정 관리를 유지해 왔으나, 최근 그룹 계열사 및 지역 산단 내에서 정비 중 끼임, 유독가스 질식 등 산재 사고가 이어지면서 배터리 제조 현장 역시 긴장의 끈을 놓을 수 없는 상황이다.",
-      "bodyKo": "배터리 생산 공장 자동화 라인[사회안전학교폭력예방신문= 이동훈 기자] 전동화 및 친환경 모빌리티 시장의 급성장에 맞춰 배터리 제조업은 국가 핵심 산업으로 자리매김했다. 그러나 화려한 성장의 이면에는 화재·폭발, 중금속 오염, 설비 정비 중 중대재해라는 치명적인 산업재해 위험성이 늘 상존하고 있다.특히 자동차용 배터리(납축전지) 및 제조 부품 공장이 밀집한\n특히 자동차용 배터리(납축전지) 및 제조 부품 공장이 밀집한 경주 지역에서도 이러한 위험 요인에 대한 철저한 관리와 선제적 예방 조치의 중요성이 그 어느 때보다 높게 요구되고 있다.\n화재 및 폭발 위험: 전해액 주입 및 충전, 화기 작업 공정에서는 가스 및 분진 발화로 인한 화재 가능성이 크다. 최근 타지역 납축전지 및 리튬배터리 공장에서 발생한 대형 화재 사고에서 보듯, 초기 진화 실패 시 대형 참사로 이어질 수 있다.\n유해물질 및 환경오염 위험: 자동차용 배터리의 주원료인 납(Pb)과 전해액으로 쓰이는 강산성 황산(Sulfuric Acid)은 작업자의 건강 위협은 물론 누출 시 토양 및 수질을 심각하게 오염시킨다. 밀폐·환기 설비 관리 소홀은 중금속 중독 및 유독가스 사고로 직결된다.\n기계 설비 끼임(협착) 사고: 대형 자동화 라인이 상시 가동되는 현장에서 보전·청소 작업 중 '전원 차단(LOTO)' 수칙을 지키지 않을 경우 인명 사고가 발생할 위험이 높다.\n경주 공단에 위치한 현대성우쏠라이트는 국내외 시장에 자동차용 배터리를 공급하는 지역의 대표적인 제조기업이다. 그동안 비교적 안정적인 공정 관리를 유지해 왔으나, 최근 그룹 계열사 및 지역 산단 내에서 정비 중 끼임, 유독가스 질식 등 산재 사고가 이어지면서 배터리 제조 현장 역시 긴장의 끈을 놓을 수 없는 상황이다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "https://www.didimkorea.net/"
-      ],
-      "related": [],
-      "tag": "전기·배터리"
     }
   ]
 }
