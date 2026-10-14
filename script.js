@@ -6653,8 +6653,9 @@ async function loadClinic(force) {
       <ul class="clinic-top">${actRows.length ? actRows.map(([a, n]) => `<li class="sc-row"><span class="sc-name"><i style="background:${/후송/.test(a) ? "#e5484d" : /외부/.test(a) ? "#f2a93b" : "#35d0c0"}"></i>${escapeHtml(clinicTr(a))}</span>
         <span class="sc-bar"><b style="width:${(n / aMax) * 100}%;background:${/후송/.test(a) ? "#e5484d" : /외부/.test(a) ? "#f2a93b" : "#35d0c0"}"></b></span><span class="sc-n">${n}${TT("건", "")}</span></li>`).join("") : `<li>${TT("최근 7일 진료 없음", "No visits in the last 7 days")}</li>`}</ul>
       <div class="clinic-emr-note">🔒 ${TT("개별 진료 기록은 <b>BNCP Clinic EMR</b>에서 관리합니다 (등록된 클리닉 담당자만 열람). 이 화면에는 개인정보 없이 건수만 표시됩니다.", "Individual records are kept in <b>BNCP Clinic EMR</b> (registered clinic staff only). This page shows counts only, without personal data.")}
-        <a href="${EMR_URL}" target="_blank" rel="noopener noreferrer">${TT("EMR 열기", "Open EMR")} ↗</a></div>`;
+        <a href="${EMR_URL}" target="_blank" rel="noopener noreferrer">${TT("EMR 열기", "Open EMR")} ↗</a></div>` + clinicExtraHtml(month);
     emrBox.hidden = false;
+    clinicFillEr();
   } else if (emrBox) emrBox.hidden = true;
   if (panel) panel.classList.toggle("emr-mode", !!emr);
   // 잠금: 암호 없으면 목록·추가 버튼을 숨기고 암호 입력 칸만
@@ -9895,3 +9896,53 @@ function hseFilmIntro(el, done, timers) {
   document.querySelectorAll('.tab-btn[data-view="view-health-world"]').forEach((b) => b.addEventListener("click", start));
   const v = document.getElementById("view-health-world"); if (v && v.classList.contains("active")) start();
 })();
+
+
+/* 클리닉 진료현황 오른쪽 칸 채우기 (건수만 · 개인정보 없음)
+   ① 많이 나온 증상 TOP 6 (최근 30일)  ② 요일별 진료 (최근 30일)  ③ 이번 달 건강 수칙 + 응급 시 가까운 응급실 */
+const CLINIC_TIPS = {
+  1: [["🧥", "새벽 기온이 크게 떨어져요 — 아침 작업 전 겹쳐 입기"], ["🤧", "감기·독감 유행 — 손 씻기, 기침은 옷소매에"], ["🔥", "숙소 난방기·전기장판 주변 가연물 치우기"]],
+  2: [["🤧", "감기·독감이 이어져요 — 증상 있으면 일찍 클리닉으로"], ["🧥", "일교차 커요 — 아침·저녁 보온"], ["💧", "건조해요 — 물 자주 마시기"]],
+  3: [["🌪", "모래먼지가 잦아져요 — 바람 불면 마스크·보안경"], ["🌡", "일교차 커요 — 감기 조심"], ["👁", "눈에 먼지 들어가면 비비지 말고 물로 씻기"]],
+  4: [["🌪", "모래폭풍 철 — 호흡기·눈 보호"], ["☀️", "더위가 시작돼요 — 물 자주 마시기 시작"], ["🦟", "모기가 늘어요 — 긴소매, 기피제"]],
+  5: [["🌡", "온열질환 주의 시작 — 물·그늘·휴식"], ["🌪", "모래먼지 — 마스크·보안경"], ["🦟", "모기·파리 — 방역 시간엔 창문 닫기"]],
+  6: [["🔥", "폭염 — 매시간 물 한 컵, 그늘 휴식"], ["🧂", "땀을 많이 흘리면 이온음료도"], ["🆘", "어지럼·두통·구역질은 온열질환 신호 — 즉시 클리닉"]],
+  7: [["🔥", "한여름 폭염 — 한낮 옥외작업 줄이기"], ["💧", "목마르기 전에 물 마시기"], ["🆘", "동료가 땀을 안 흘리고 몸이 뜨거우면 열사병 — 바로 신고"]],
+  8: [["🔥", "폭염 계속 — 물·그늘·휴식"], ["🍽", "음식이 빨리 상해요 — 식중독 주의"], ["🦟", "모기 — 긴소매, 기피제"]],
+  9: [["🌡", "낮엔 아직 더워요 — 수분 섭취 계속"], ["🍽", "식중독 주의 — 남은 음식 바로 버리기"], ["🌪", "모래먼지 — 마스크·보안경"]],
+  10: [["🌡", "일교차가 커져요 — 아침·저녁 겉옷 챙기기"], ["🦟", "방역 시간(토·월·수 15:30 숙소)에는 창문·문 닫기"], ["🐕", "들개·고양이에 물리면 15분 씻고 바로 클리닉"]],
+  11: [["🤧", "감기 유행 시작 — 손 씻기·환기"], ["🧥", "새벽 추위 — 보온"], ["🔥", "난방기 켤 때 주변 정리·자리 비우면 끄기"]],
+  12: [["🤧", "감기·독감 — 증상 있으면 일찍 클리닉"], ["🔥", "숙소 난방기·전기장판 화재 주의"], ["🧥", "새벽 작업 보온·미끄럼 주의"]],
+};
+function clinicExtraHtml(month) {
+  // ① 증상 TOP
+  const sym = {};
+  month.forEach((x) => String(x.symptom || "").split(/\s*[,，、/·]\s*/).map((v) => v.trim()).filter((v) => v && v.length <= 20).forEach((v) => { sym[v] = (sym[v] || 0) + 1; }));
+  const top = Object.entries(sym).sort((a, b) => b[1] - a[1]).slice(0, 6);
+  const tMax = top.length ? top[0][1] : 1;
+  // ② 요일별
+  const DN = UI_EN ? ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] : ["일", "월", "화", "수", "목", "금", "토"];
+  const wd = [0, 0, 0, 0, 0, 0, 0]; month.forEach((x) => { const d = new Date(x.date + "T00:00:00Z"); if (!isNaN(d)) wd[d.getUTCDay()]++; });
+  const wMax = Math.max(1, ...wd), busy = wd.indexOf(Math.max(...wd));
+  // ③ 이번 달 건강 수칙
+  const mo = Number(new Intl.DateTimeFormat("en-CA", { timeZone: TIMEZONE, month: "numeric" }).format(new Date()));
+  const tips = CLINIC_TIPS[mo] || [];
+  return `<div class="clinic-x">
+    <div class="clinic-sub">${TT("많이 나온 증상 (최근 30일)", "Top symptoms (last 30 days)")}</div>
+    ${top.length ? `<div class="cx-sym">${top.map(([v, n]) => `<span class="cx-chip" style="--w:${Math.round(n / tMax * 100)}%"><b>${escapeHtml(v)}</b><em>${n}</em></span>`).join("")}</div>` : `<p class="cis-empty">${TT("기록된 증상이 없습니다", "No symptoms recorded")}</p>`}
+    <div class="clinic-sub" style="margin-top:14px">${TT("요일별 진료 (최근 30일)", "Visits by weekday (last 30 days)")}${month.length ? ` <small class="cx-note">${TT(`${DN[busy]}요일에 가장 많아요`, `busiest on ${DN[busy]}`)}</small>` : ""}</div>
+    <div class="cx-wd">${wd.map((n, i) => `<div class="cx-wd-c${i === busy && n ? " on" : ""}${i === 5 ? " fri" : ""}"><span class="cx-wd-n">${n}</span><span class="cx-wd-b"><i style="height:${(n / wMax) * 100}%"></i></span><span class="cx-wd-l">${DN[i]}</span></div>`).join("")}</div>
+    <div class="clinic-sub" style="margin-top:14px">${TT(`${mo}월 건강 수칙`, "This month's health tips")}</div>
+    <ul class="cx-tips">${tips.map(([ic, t]) => `<li><span>${ic}</span>${escapeHtml(t)}</li>`).join("")}</ul>
+    <div class="cx-er" id="clinicEr"><b>🚑 ${TT("응급 시", "Emergency")}</b> ${TT("현장 클리닉", "Site clinic")} <a href="tel:07809262446">0780-926-2446</a> · ${TT("이라크 긴급", "Iraq emergency")} <a href="tel:911">911</a></div>
+  </div>`;
+}
+// 가까운 응급실 2곳 (주변 의료기관 자료 · OpenStreetMap)
+function clinicFillEr() {
+  fetch("medical-facilities.json?t=" + Math.floor(Date.now() / 36e5)).then((r) => r.ok ? r.json() : null).then((d) => {
+    const box = document.getElementById("clinicEr"); if (!box || !d) return;
+    const er = (d.items || []).filter((x) => x.emergency === true || x.emergency === "True").sort((a, b) => a.km - b.km).slice(0, 2);
+    if (!er.length) return;
+    box.insertAdjacentHTML("beforeend", `<div class="cx-er-l">${TT("가까운 응급실", "Nearest ER")}: ${er.map((x) => `<a href="https://www.google.com/maps/dir/?api=1&destination=${x.lat},${x.lon}" target="_blank" rel="noopener noreferrer">${escapeHtml(x.nameEn || x.name)} <small>${x.km}km ↗</small></a>`).join(" · ")}</div>`);
+  }).catch(() => {});
+}

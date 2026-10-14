@@ -4555,3 +4555,24 @@ body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !impo
 .notice-more { list-style: none; }
 .notice-more button { width: 100%; font: inherit; font-size: 13px; color: var(--cyan); background: transparent; border: 1px dashed var(--border); border-radius: 8px; padding: 7px 0; cursor: pointer; }
 .notice-more button:hover { background: rgba(53,208,192,.07); }
+/* 클리닉 진료현황 오른쪽 칸: 증상 TOP · 요일별 · 이번 달 건강 수칙 · 응급 시 */
+.clinic-x { margin-top: 16px; }
+.cx-sym { display: flex; flex-wrap: wrap; gap: 6px; }
+.cx-chip { position: relative; overflow: hidden; display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.04); border: 1px solid var(--border); font-size: 13px; }
+.cx-chip::before { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--w); background: rgba(53,208,192,.12); }
+.cx-chip b, .cx-chip em { position: relative; } .cx-chip em { font-style: normal; font-family: var(--font-mono); color: var(--cyan); font-weight: 700; }
+.cx-note { font-weight: 500; color: var(--text-muted); margin-left: 6px; font-size: 12px; }
+.cx-wd { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; height: 110px; }
+.cx-wd-c { display: flex; flex-direction: column; align-items: center; gap: 4px; min-height: 0; }
+.cx-wd-n { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); }
+.cx-wd-b { flex: 1; width: 100%; max-width: 34px; display: flex; align-items: flex-end; background: rgba(255,255,255,.03); border-radius: 6px; overflow: hidden; }
+.cx-wd-b i { display: block; width: 100%; background: rgba(53,208,192,.55); border-radius: 6px 6px 0 0; min-height: 2px; }
+.cx-wd-c.on .cx-wd-b i { background: var(--cyan); } .cx-wd-c.on .cx-wd-n { color: var(--cyan); font-weight: 700; }
+.cx-wd-l { font-size: 12px; color: var(--text-muted); } .cx-wd-c.fri .cx-wd-l { color: #ff8f8a; }
+.cx-tips { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.cx-tips li { display: flex; gap: 10px; align-items: center; padding: 9px 12px; border-radius: 10px; background: rgba(255,255,255,.03); border: 1px solid var(--border); font-size: 13.5px; line-height: 1.45; }
+.cx-tips span { font-size: 17px; }
+.cx-er { margin-top: 12px; padding: 10px 14px; border-radius: 10px; background: rgba(229,72,77,.08); border: 1px solid rgba(229,72,77,.35); font-size: 13px; line-height: 1.7; }
+.cx-er a { color: #ff9a96; font-weight: 700; text-decoration: none; } .cx-er a:hover { text-decoration: underline; }
+.cx-er small { color: var(--text-muted); font-weight: 500; }
+.cx-er-l { color: var(--text-muted); }
