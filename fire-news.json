@@ -1,53 +1,297 @@
 {
-  "generatedAt": "2026-10-14T00:42:05.532Z",
+  "generatedAt": "2026-10-14T05:33:08.412Z",
   "items": [
     {
-      "title": "한국전력공사 마산지사 건물 화재",
-      "source": "내외일보",
-      "link": "https://www.naewoeilbo.com/news/articleView.html?idxno=2430328",
-      "date": "2026-10-14T00:13:06.000Z",
+      "title": "온산 화학공장 폭발·화재…7천여 명 대피",
+      "source": "KBS 뉴스",
+      "link": "https://news.kbs.co.kr/news/view.do?ncd=8685453",
+      "date": "2026-10-14T05:26:09.000Z",
       "lang": "ko",
-      "titleKo": "한국전력공사 마산지사 건물 화재",
-      "url": "https://www.naewoeilbo.com/news/articleView.html?idxno=2430328",
-      "body": "[내외일보=경남] 김성삼 기자 =창원시 마산회원구 구암동 한국전력공사 마산지사 건물에서 13일(오늘) 화재가 났다.마산소방서에 따르면, 이날 오전 7시 17분께\n마산소방서에 따르면, 이날 오전 7시 17분께 한전 마산지사 지상 4층 건물 중 3층에서 불이 났으며, 발생 30분만인 오전 7시 47분에 완전진압 됐다.\n건물에는 검은 연기가 다량 분출됐지만, 내부에 있던 직원들을 신속히 대피시켜 1명이 연기 흡입으로 병원에 이송됐으며, 더 이상 인명피해는 없는 것으로 알려졌다.",
-      "bodyKo": "[내외일보=경남] 김성삼 기자 =창원시 마산회원구 구암동 한국전력공사 마산지사 건물에서 13일(오늘) 화재가 났다.마산소방서에 따르면, 이날 오전 7시 17분께\n마산소방서에 따르면, 이날 오전 7시 17분께 한전 마산지사 지상 4층 건물 중 3층에서 불이 났으며, 발생 30분만인 오전 7시 47분에 완전진압 됐다.\n건물에는 검은 연기가 다량 분출됐지만, 내부에 있던 직원들을 신속히 대피시켜 1명이 연기 흡입으로 병원에 이송됐으며, 더 이상 인명피해는 없는 것으로 알려졌다.",
+      "titleKo": "온산 화학공장 폭발·화재…7천여 명 대피",
+      "url": "https://news.kbs.co.kr/news/view.do?ncd=8685453",
+      "body": "오늘 오전 9시 40분쯤 울산 온산국가산업단지 내 화학공장에서 폭발과 함께 큰 불이 나 4시간 만에 초진됐...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
+      "bodyKo": "오늘 오전 9시 40분쯤 울산 온산국가산업단지 내 화학공장에서 폭발과 함께 큰 불이 나 4시간 만에 초진됐...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
       "tried": true,
-      "count": 23,
+      "count": 24,
       "sources": [
-        "Moneycontrol.com",
-        "بوابة الشروق",
-        "Reuters",
-        "Breakingthenews.net",
-        "Union-Bulletin",
-        "أربيك"
+        "중앙일보",
+        "KBS 뉴스",
+        "글로벌E",
+        "매일일보",
+        "신아일보",
+        "재경일보"
       ],
       "related": [
         {
-          "titleKo": "사우디아라비아는 후티의 공격으로 아람코 건물 화재가 발생했으며 리야드에서 4명이 부상을 입었다고 밝혔습니다.",
-          "source": "Moneycontrol.com",
-          "link": "https://www.moneycontrol.com/world/saudi-arabia-says-houthi-attacks-sparked-aramco-building-fire-four-injured-in-riyadh-article-14051440.html"
+          "titleKo": "울산 온산 화학업체 화재…인근 공사장에 불씨, 수천명 대피",
+          "source": "중앙일보",
+          "link": "https://www.joongang.co.kr/article/25469645"
         },
         {
-          "titleKo": "사우디아라비아: 다란의 아람코 사무실 건물에서 부상 없이 제한적으로 화재 발생",
-          "source": "بوابة الشروق",
-          "link": "https://www.shorouknews.com/mobile/news/view.aspx?cdate=14102026&id=f0229412-7d41-49a6-8508-12684f51f2da"
+          "titleKo": "울산 온산 화학공장 '톨루엔 폭발' 화재, 근로자 7,000여명 대피",
+          "source": "글로벌E",
+          "link": "https://www.globale.co.kr/news/articleView.html?idxno=41036"
         },
         {
-          "titleKo": "사우디아라비아 아람코 행정 건물 공격, 제한된 화재 신고",
-          "source": "Reuters",
-          "link": "https://www.reuters.com/business/energy/saudi-led-coalition-orders-evacuation-yemen-oil-facility-sanaa-ahead-operation-2026-10-13/"
+          "titleKo": "울산 온산읍 화학제품 제조업체 화재…인근 현장 근로자 7000명 대피",
+          "source": "매일일보",
+          "link": "https://www.m-i.kr/news/articleView.html?idxno=2005782"
         },
         {
-          "titleKo": "사우디아라비아 아람코 건물은 공격 후 '제한된' 화재를 겪습니다.",
-          "source": "Breakingthenews.net",
-          "link": "https://breakingthenews.net/Article/Saudi-Aramco-building-suffers-'limited'-fire-after-attack/67290142"
+          "titleKo": "울주군 화학공장 저장탱크서 화재…7000여명 대피",
+          "source": "신아일보",
+          "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5071685"
         },
         {
-          "titleKo": "사우디아라비아 에너지부, 공격 대상인 아람코 화합물의 건물에서 제한된 화재 보고 - Union-Bulletin",
-          "source": "Union-Bulletin",
-          "link": "https://www.union-bulletin.com/news/world/saudi-ministry-of-energy-reports-limited-fire-in-building-in-aramco-compound-targeted-in-attack/article_16233242-5e44-51e0-b09b-79fe11f5b862.html"
+          "titleKo": "울주 화학공장 화재 7000명 대피…총리 긴급지시 : 정치",
+          "source": "재경일보",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBhdFNoT21qRF9XS05FcW5Za1RuVUdWR1puZk84UlZuWVdUY3lwc0hRUWVTSjJBYXNzeVB5ZElUNEFKVXFMQ1h0VjZkVQ?oc=5"
         }
       ],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "석유화학 공장 밀집한 온산산단에 큰불…인명 피해는 없어",
+      "source": "매일경제",
+      "link": "https://www.mk.co.kr/news/society/12175513",
+      "date": "2026-10-14T05:23:00.000Z",
+      "lang": "ko",
+      "titleKo": "석유화학 공장 밀집한 온산산단에 큰불…인명 피해는 없어",
+      "url": "https://www.mk.co.kr/news/society/12175513",
+      "body": "톨루엔·시너 저장탱크 불길 산단 근로자 7000여 명 대피 검은 연기 치솟아 주민 불안\n폭발 위험이 큰 석유화학 제품을 취급하는 공장이 밀집한 울산 울주군 온산국가산단의 한 공장에서 불이 나 근로자 수천 명이 대피했다. 소방 당국은 4시간여 만에 화재를 진압했고, 인명 피해는 없는 것으로 파악됐다.\n14일 오전 9시41분께 울주군 온산읍 A사의 옥외 저장탱크에서 화재가 발생했다. 당시 업체는 톨루엔 저장 탱크와 연결된 배관을 통해 톨루엔을 옮기는 작업을 했던 것으로 알려졌다. 바람을 타고 불길이 번지면서 톨루엔, 시너, 에탄올 등이 저장된 옥외 저장탱크 7기가 모두 불에 탔다.\n화재가 발생하자 저장탱크 주변에 있었던 작업자와 사무실 직원 등 12명은 현장을 떠나 대피했다. A사 옆 에쓰오일 샤힌프로젝트 공사 현장도 작업을 중단하고 근로자 7000여 명을 안전한 곳으로 대피시켰다.\n울주군은 재난안내문자를 발송해 주민의 주의를 당부했다. 인명 피해는 없는 것으로 파악됐으나 석유화학제품이 불에 타면서 검은 연기가 하늘로 치솟았고, 화재가 인근 공장으로 확산할 수도 있어 산단 근로자와 주민은 불안에 떨었다.\n소방청은 국가소방동원령을 내리고 부산·대구·경남에서 고성능 화학차 8대와 무인 방수차 1대 등 총 9대의 차량을 동원했다. 불은 오후 1시50분께 완진됐다.\n울산 울주군 온산국가산단의 한 공장에서 발생한 대형 화재로 인해, 인근 주민들과 산단 근로자들은 큰 불안감에 떨고 있어요. 석유화학제품이 타오르면서 치솟은 시꺼먼 연기와 재난안전문자는 지역 주민들에게 직접적인 공포감을 안겨주었지요. 🏭💨 다행히 이번 사고로 인한 인명 피해는 없는 것으로 파악되었지만, 화재가 주변 공장으로 번질 수 있는 위험한 상황 속에서 작업자와 사무실 직원 등 12명과 인근 공사 현장의 근로자 7000여 명이 급히 대피하는 소동이 벌어졌어요. 🏃‍♂️⚠️ 자주 발생하는 산업단지 내 사고 소식은 평온한 일상을 보내는 개인들에게 안전에 대한 깊은 우려를 심어주고 있어요. 😟",
+      "bodyKo": "톨루엔·시너 저장탱크 불길 산단 근로자 7000여 명 대피 검은 연기 치솟아 주민 불안\n폭발 위험이 큰 석유화학 제품을 취급하는 공장이 밀집한 울산 울주군 온산국가산단의 한 공장에서 불이 나 근로자 수천 명이 대피했다. 소방 당국은 4시간여 만에 화재를 진압했고, 인명 피해는 없는 것으로 파악됐다.\n14일 오전 9시41분께 울주군 온산읍 A사의 옥외 저장탱크에서 화재가 발생했다. 당시 업체는 톨루엔 저장 탱크와 연결된 배관을 통해 톨루엔을 옮기는 작업을 했던 것으로 알려졌다. 바람을 타고 불길이 번지면서 톨루엔, 시너, 에탄올 등이 저장된 옥외 저장탱크 7기가 모두 불에 탔다.\n화재가 발생하자 저장탱크 주변에 있었던 작업자와 사무실 직원 등 12명은 현장을 떠나 대피했다. A사 옆 에쓰오일 샤힌프로젝트 공사 현장도 작업을 중단하고 근로자 7000여 명을 안전한 곳으로 대피시켰다.\n울주군은 재난안내문자를 발송해 주민의 주의를 당부했다. 인명 피해는 없는 것으로 파악됐으나 석유화학제품이 불에 타면서 검은 연기가 하늘로 치솟았고, 화재가 인근 공장으로 확산할 수도 있어 산단 근로자와 주민은 불안에 떨었다.\n소방청은 국가소방동원령을 내리고 부산·대구·경남에서 고성능 화학차 8대와 무인 방수차 1대 등 총 9대의 차량을 동원했다. 불은 오후 1시50분께 완진됐다.\n울산 울주군 온산국가산단의 한 공장에서 발생한 대형 화재로 인해, 인근 주민들과 산단 근로자들은 큰 불안감에 떨고 있어요. 석유화학제품이 타오르면서 치솟은 시꺼먼 연기와 재난안전문자는 지역 주민들에게 직접적인 공포감을 안겨주었지요. 🏭💨 다행히 이번 사고로 인한 인명 피해는 없는 것으로 파악되었지만, 화재가 주변 공장으로 번질 수 있는 위험한 상황 속에서 작업자와 사무실 직원 등 12명과 인근 공사 현장의 근로자 7000여 명이 급히 대피하는 소동이 벌어졌어요. 🏃‍♂️⚠️ 자주 발생하는 산업단지 내 사고 소식은 평온한 일상을 보내는 개인들에게 안전에 대한 깊은 우려를 심어주고 있어요. 😟",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Chosunbiz",
+        "매일경제"
+      ],
+      "related": [
+        {
+          "titleKo": "울산 화학물질 공장 화재 4시간 만에 진화… 인명 피해 없어",
+          "source": "Chosunbiz",
+          "link": "https://biz.chosun.com/topics/topics_social/2026/10/14/6CVCBKF6N5E2XPDRXHWDFE74YA/"
+        }
+      ],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "استهداف مبنى تابع لأرامكو في السعودية .. حريق محدود دون إصابات",
+      "source": "صحيفة السوسنة الأردنية",
+      "link": "https://www.assawsana.com/article/735444",
+      "date": "2026-10-14T05:19:00.000Z",
+      "lang": "ar",
+      "titleKo": "사우디아라비아의 아람코 건물 타겟팅.. 부상 없는 제한된 화재",
+      "url": "https://www.assawsana.com/article/735444",
+      "body": "السوسنة - أعلنت السعودية، عن استهداف مبني إداري تابع لشركة أرامكو النفطية، بمدية الظهران بالمنطقة الشرقية، ما أسفر عن حريق محدود دون إصابات أووفيات...\n6 حدائق جديدة في الأردن بحلول 2027 .. تعرف إلى المحافظات\nاستهداف مبنى تابع لأرامكو في السعودية .. حريق محدود دون إصابات\nأمطار ورعد في هذه المناطق بالأردن .. وتحذير من الغبار\nالأردنيون على موعد مع رسوم عبور هذا الطريق .. توضيح آلية الدفع\nخبير اقتصادي يحذر الأردنيين .. استعدوا لسيناريوهات صعبة\n100 شخص يحصلون على الجنسية الأردنية و17 ألف قرار إبعاد .. التفاصيل\nإعفاء السيارات الأميركية يقترب .. هل تنخفض الأسعار وتتغير الخريطة؟\nالمملكة على موعد مع تقلبات جوية .. أمطار وغبار وتغيرات بالحرارة\nالأردنيون على موعد مع أمطار وسيول .. وهذا موعد الذروة\nزيادة الـ30 دينارا في الأردن .. هل يحرمك راتبك من الاستفادة؟\nشتوة الزيتون ليست كما يعتقد الأردنيون .. خبراء يحسمون الجدل",
+      "bodyKo": "Al-Susana - 사우디 아라비아는 동부 지방의 다란 (Dhahran) 시에 있는 아람코 석유 회사 (Aramco Oil Company) 소속의 행정 건물을 목표로 발표했으며, 이로 인해 부상이나 사망 없이 화재가 제한적으로 발생했습니다...\n2027년까지 요르단에 6개의 새로운 공원.. 주지사에 대해 알아보기\n사우디아라비아의 아람코 건물 타겟팅.. 부상 없는 제한된 화재\n요르단의 이 지역에는 비와 천둥, 그리고 먼지에 대한 경고가 있습니다.\n이 길을 건널 때 수수료가 부과되는 날짜의 요르단인.. 지불 메커니즘 설명\n경제학자가 요르단 사람들에게 경고합니다.. 어려운 시나리오에 대비하십시오\n100명이 요르단 시민권을 취득하고 17,000명의 추방 결정을 받습니다. 세부 정보\n미국 자동차 면제가 다가오고 있습니다.. 가격이 하락하고 지도가 변경되고 있습니까?\n왕국은 기상 변화, 비, 먼지 및 기온 변화가있는 날짜에 있습니다.\n요르단 사람들은 비와 홍수로 데이트를하고 있습니다.. 그리고 이것은 피크 날짜입니다\n요르단의 30 디나르를 늘리십시오.. 급여가 혜택을 박탈합니까?\n올리브 겨울은 요르단 사람들이 믿는 것과 다릅니다.. 전문가들이 논쟁을 결정합니다",
+      "tried": true,
+      "count": 27,
+      "sources": [
+        "صحيفة السوسنة الأردنية",
+        "Arab Times Kuwait News",
+        "Daily Observer",
+        "جهات الإخبارية",
+        "PressTV",
+        "Gulf News"
+      ],
+      "related": [
+        {
+          "titleKo": "사우디아라비아 아람코 (Aramco) 행정 건물 다란 (Dhahran) 을 겨냥한 화재 신고",
+          "source": "Arab Times Kuwait News",
+          "link": "https://www.arabtimesonline.com/news/saudi-aramco-administrative-building-targeted-in-dhahran-limited-fire-reported/"
+        },
+        {
+          "titleKo": "사우디아라비아 후티 공격, 아람코 건물 화재 발생",
+          "source": "Daily Observer",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1pcnNORG5zMDRvakVCVUZIcFlPWTQ1OHlfelR1RnlyREZGRngwSlpONl9xeGstNDR5bkxuaGNra2xpU2JmSERXQVp3?oc=5"
+        },
+        {
+          "titleKo": "다란의 제한된 화재.. 부상없이 사우디 아람코의 행정 건물을 목표로 함",
+          "source": "جهات الإخبارية",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB0NHVIbW5qbjd0T3lNMkphc0RxdzBydnFkUEZLVkVERndBNnVGRkVsc05SMWZJTUhTRGpFd3AyRDdDWlNaZU5ZSkpXTExodw?oc=5"
+        },
+        {
+          "titleKo": "사우디아라비아는 예멘의 경고 속에 아람코 건물에서 화재가 발생했다고 보고했습니다.",
+          "source": "PressTV",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPU0pVeWMxZXg5OGJ1d0ZoYkx1UGRSVWpQbk1Qb1A2ZUhmMDRYSUEyVnMxd214MmREb09wMGlkdTRIWlAzSHBGTFJfV3VZcmhxS3pROENxbjlUaHd0QXUwRk90X2hOQ3ZiclQ0OFI4MDVKSkY5SFJJS0J1WXZvZzhRalVqNk0wb04w?oc=5"
+        },
+        {
+          "titleKo": "사우디아라비아: 후티 공격으로 아람코 건물 화재 발생, 리야드에서 4명 부상",
+          "source": "Gulf News",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNXzBkbUthWkFxSTdvT3dNdWc3TkRkVXlfVE05UGpBbFAwRVJYR0QxSGFLYm9EZUFlOE9ZcEVlRWdsbU9CM1RCWml1ajIwd2hxaGJoaTlNSW9TWFFGOUVtdkphZk5nNnRrcnhUc2Flc0Q4Zl9ac0VCb3ZuNlBRd3owdTh3TUV2MmhNMlRRWjFzUEVhdHAzWk5mTHdVSWdoSVVNS0Vxcm5TYXl1bUlNZWItUU55bXJTU0NiakhJZEcwQ1BlQdIB1wFBVV95cUxOdXR5Y3FpaWpfZzU2WlUtMExXQkdoTk9TNmlLc3M4bFVzY0Y4SGE5eWFodFJ4YlZxaVU5QTM1Ry1rdjVOOXlIaWZDTnlsc3NHNE5rclNydnl0XzVKd09VSENwWUJRVlpBVVM2R19CS2x0bTZOdGZ5ZG1QeUlFVTBMa3ZPa3d5eHJhM2FwSUJLZHRFdldXYWV5dUJBQW5fM0x4RXllWUdqaW84aDFDOEJhRjFFZWVtbnBfbVY3TmJTYmZ4ZElwbTk5N21ZemxzazNya0d4WmVKSQ?oc=5"
+        }
+      ],
+      "tag": "고층·건물"
+    },
+    {
+      "title": "한 총리, 울주 공장 화재에 \"인명피해 방지 총력\"",
+      "source": "연합뉴스TV",
+      "link": "https://www.yonhapnewstv.co.kr/news/AKR20261014135310XGE",
+      "date": "2026-10-14T04:53:00.000Z",
+      "lang": "ko",
+      "titleKo": "한 총리, 울주 공장 화재에 \"인명피해 방지 총력\"",
+      "url": "https://www.yonhapnewstv.co.kr/news/AKR20261014135310XGE",
+      "body": "소방력·장비 총동원 지시…“소방공무원 안전에도 만전“ 한성숙 국무총리는 울산 울주군의 화학제품 제조업체에서 발생한 화재와 관련해 가용 소방력과 장비를 총동원해 진압과 인명피해 방지에 최선을 다하라고 긴급 지시했습니다. 총리실에 따르면 한 총리는 오늘(14일) 화재 상황",
+      "bodyKo": "소방력·장비 총동원 지시…“소방공무원 안전에도 만전“ 한성숙 국무총리는 울산 울주군의 화학제품 제조업체에서 발생한 화재와 관련해 가용 소방력과 장비를 총동원해 진압과 인명피해 방지에 최선을 다하라고 긴급 지시했습니다. 총리실에 따르면 한 총리는 오늘(14일) 화재 상황",
+      "tried": true,
+      "count": 11,
+      "sources": [
+        "연합뉴스TV",
+        "아주경제",
+        "퍼블릭타임스",
+        "뉴스핌",
+        "한국재난뉴스",
+        "연합뉴스"
+      ],
+      "related": [
+        {
+          "titleKo": "울산 울주 공장 화재에...윤호중 행안장관 가용 인력·장비 총동원",
+          "source": "아주경제",
+          "link": "https://www.ajunews.com/amp/20261014131715188"
+        },
+        {
+          "titleKo": "윤호중 행안, 울산 울주군 공장 화재 관련 가용자원 총동원 긴급 지시",
+          "source": "퍼블릭타임스",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1tLXptRi1SZlpqSU41YnM3WmVjSWY1eUVfWV9SLWRnRFpMSzB1LVJLcko2Wm9wSFZfVmc4cmxGSWtQb0h6em4xSlJMM3BCNzkyN3dPOEhodFFHNUxEb3FTODhtOFJVQ0tFZXfSAW5BVV95cUxNaFg0TFo4VmRQYXFmbi1HXzJ2Tk0yWWNTeVFNT2Z0eEtZbXFoMDM5NW01Sy1HNWRBR29LbjFiS2VtOHRxRVl0bFVJb09qT0lDYy03THFVTTdZakh4bmNRckRSZ1BqUGQ2Sm1POE5LZw?oc=5"
+        },
+        {
+          "titleKo": "한성숙 총리, 울산 공장 화재에 \"인명피해 방지 최선\"",
+          "source": "뉴스핌",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qTXNiNkllT253Z0hIMklDTjlTVWxnOWhNN1U3eFVXdnJKbkd4d3R4UUpaeTFjRmhYc201cFNrb2QxbTJuMXVPRnkwZXUxYkRISFpyU3dORllBWk5n?oc=5"
+        },
+        {
+          "titleKo": "울산 화학제품 공장 톨루엔 저장탱크 화재... 윤 장관 “화재 진압 총력” 지시",
+          "source": "한국재난뉴스",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5yWnYtUk1xcjJPTU5Zc0QzRlVOS1ZYaGc0U3pVTHc1R0x5dHk1Z2dXSlBLQzVvNmEwMUdkTFdZak9hTDV2bkpSeGs0NnNOSk0ySmRQRFJhUkNqV1c0ZlV1bGdwN0d4MHZTMFE?oc=5"
+        },
+        {
+          "titleKo": "韓총리, 울주군 공장 화재 \"인명피해 방지 최선\" 긴급지시",
+          "source": "연합뉴스",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90YWNFTkpZRUQtWmVlU0N2VjNka1B2bHpZRzFaSEFydVJFS0phdm5MaWJsOWJRV2VGYW9iSk5rMXVHalpGU2ZYbWFGZU56d2dZZlNNcl9CcXdDSFpwMUtiNtIBYEFVX3lxTE90YWNFTkpZRUQtWmVlU0N2VjNka1B2bHpZRzFaSEFydVJFS0phdm5MaWJsOWJRV2VGYW9iSk5rMXVHalpGU2ZYbWFGZU56d2dZZlNNcl9CcXdDSFpwMUtiNg?oc=5"
+        }
+      ],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "韓총리 울주 공장화재에 가용 소방력 총동원",
+      "source": "아주경제",
+      "link": "https://www.ajunews.com/view/20261014132617208",
+      "date": "2026-10-14T04:42:01.000Z",
+      "lang": "ko",
+      "titleKo": "韓총리 울주 공장화재에 가용 소방력 총동원",
+      "url": "https://www.ajunews.com/view/20261014132617208",
+      "body": "한성숙 국무총리는 14일 울산 울주군 공장에서 발생한 화재와 관련해 가용 소방력과 장비를 총동원해 진화와 인명피해 방지에 최선을 다하라고 긴급 지시했다.한 총리는...",
+      "bodyKo": "한성숙 국무총리는 14일 울산 울주군 공장에서 발생한 화재와 관련해 가용 소방력과 장비를 총동원해 진화와 인명피해 방지에 최선을 다하라고 긴급 지시했다.한 총리는...",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "아주경제"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "울산 화학공장서 톨루엔 옮기다 화재…저장탱크 7기로 불길 번져",
+      "source": "파이낸셜뉴스",
+      "link": "https://www.fnnews.com/news/202610141311406253",
+      "date": "2026-10-14T04:15:48.000Z",
+      "lang": "ko",
+      "titleKo": "울산 화학공장서 톨루엔 옮기다 화재…저장탱크 7기로 불길 번져",
+      "url": "https://www.fnnews.com/news/202610141311406253",
+      "body": "울산 울주군의 한 화학제품 제조공장에서 인화성 물질인 톨루엔을 드럼통에 옮겨 담던 중 불이 나 저장탱크 7기로 번진 것으로 파악됐다.소방당국은 헬기까지 동원해 진화 작업을 벌이고 있지만 불길이 쉽게 잡히지 않고 있다.소방당국은 저장탱크 7기 내부의 인화성 물..\n14일 울산소방본부에 따르면 이날 오전 9시 41분께 울산 울주군 온산읍의 한 화학제품 제조업체에서 불이 났다. 당시 공장에서는 톨루엔을 출하하기 위해 저장탱크와 연결된 배관을 통해 200ℓ 드럼통에 옮겨 담는 작업을 하고 있었다. 소방당국은 이 과정에서 불이 시작된 것으로 보고 있으나 정확한 발화 원인은 아직 밝혀지지 않았다.\n저장탱크에는 톨루엔과 시너, 아세톤, 에탄올, 자일렌 등 불이 붙기 쉬운 화학물질이 보관돼 있었다. 이들 물질은 소방당국이 제4류 위험물 중 제1석유류로 분류한 인화성 액체다. 인화점이 21도 미만으로 낮아 상온에서도 발생한 증기에 불꽃이 닿으면 쉽게 불이 붙을 수 있다.\n소방당국은 오전 9시 47분 현장에 도착해 진화에 나섰으며, 오전 10시 4분 대응 1단계를 발령했다. 이어 오전 10시 17분 국가소방동원령을 발령해 부산·대구·경남에서 고성능 화학차 8대와 무인방수차 1대 등 9대를 동원했다.\n오전 11시 18분에는 장시간 진화 작업에 대비해 국가소방동원령을 추가 발령하고 부산·대구·경남에서 회복지원차 3대를 추가로 동원했다.\n소방당국은 저장탱크 7기 내부의 인화성 물질이 모두 탈 때까지 주변으로 불이 번지는 것을 막는 데 주력할 방침이다.\n화재 현장 인근에는 에쓰오일(S-OIL)의 대규모 석유화학시설 건설 사업인 '샤힌 프로젝트' 현장이 있다. 화재 당시 폭발음이 잇따르고 검은 연기가 치솟으면서 건설 현장 근로자 약 7000명이 대피했다. 공장 작업자 16명도 모두 대피했으며 현재까지 인명피해는 없는 것으로 파악됐다.",
+      "bodyKo": "울산 울주군의 한 화학제품 제조공장에서 인화성 물질인 톨루엔을 드럼통에 옮겨 담던 중 불이 나 저장탱크 7기로 번진 것으로 파악됐다.소방당국은 헬기까지 동원해 진화 작업을 벌이고 있지만 불길이 쉽게 잡히지 않고 있다.소방당국은 저장탱크 7기 내부의 인화성 물..\n14일 울산소방본부에 따르면 이날 오전 9시 41분께 울산 울주군 온산읍의 한 화학제품 제조업체에서 불이 났다. 당시 공장에서는 톨루엔을 출하하기 위해 저장탱크와 연결된 배관을 통해 200ℓ 드럼통에 옮겨 담는 작업을 하고 있었다. 소방당국은 이 과정에서 불이 시작된 것으로 보고 있으나 정확한 발화 원인은 아직 밝혀지지 않았다.\n저장탱크에는 톨루엔과 시너, 아세톤, 에탄올, 자일렌 등 불이 붙기 쉬운 화학물질이 보관돼 있었다. 이들 물질은 소방당국이 제4류 위험물 중 제1석유류로 분류한 인화성 액체다. 인화점이 21도 미만으로 낮아 상온에서도 발생한 증기에 불꽃이 닿으면 쉽게 불이 붙을 수 있다.\n소방당국은 오전 9시 47분 현장에 도착해 진화에 나섰으며, 오전 10시 4분 대응 1단계를 발령했다. 이어 오전 10시 17분 국가소방동원령을 발령해 부산·대구·경남에서 고성능 화학차 8대와 무인방수차 1대 등 9대를 동원했다.\n오전 11시 18분에는 장시간 진화 작업에 대비해 국가소방동원령을 추가 발령하고 부산·대구·경남에서 회복지원차 3대를 추가로 동원했다.\n소방당국은 저장탱크 7기 내부의 인화성 물질이 모두 탈 때까지 주변으로 불이 번지는 것을 막는 데 주력할 방침이다.\n화재 현장 인근에는 에쓰오일(S-OIL)의 대규모 석유화학시설 건설 사업인 '샤힌 프로젝트' 현장이 있다. 화재 당시 폭발음이 잇따르고 검은 연기가 치솟으면서 건설 현장 근로자 약 7000명이 대피했다. 공장 작업자 16명도 모두 대피했으며 현재까지 인명피해는 없는 것으로 파악됐다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "파이낸셜뉴스"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "울주군 화학공장서 화재…대응 1단계 발령 진화중",
+      "source": "국제뉴스",
+      "link": "https://www.gukjenews.com/news/articleView.html?idxno=3721198",
+      "date": "2026-10-14T03:57:45.000Z",
+      "lang": "ko",
+      "titleKo": "울주군 화학공장서 화재…대응 1단계 발령 진화중",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3721198",
+      "body": "울산 울주군 온산국가산업단지 내에 위치한 화학제품 제조업체 부승화학에서 13일 오전 대규모 화재가 발생해, 인근 에쓰오일 샤힌 프로젝트 현장 근로자 약 7000명을 비롯해 주변 사업장 직원들이 긴급히 대피하는 상황이 벌어졌다.이 화재로 인해 온산공단 일대에는 검은 연기와 강한 냄새가 퍼졌으며, 인근 도로를 지나는 차량에도 우회 안내가 내려졌다.불은 오전 9시 41분 울주군 온산읍 학남리 부승화학 옥외탱크에서 시작됐다.해당 탱크에는 인화성 액체인 제4류 위험물 톨루엔 8000ℓ가 저장돼 있었으며, 시너와 메탄올, 아세톤 등 다양한 인\n현장에서는 5~6차례의 폭발음이 들린 뒤 불길과 검은 연기가 하늘로 치솟았고, 바람을 타고 불씨가 인근 사업장 잔디밭으로 날아가 추가 화재가 발생하기도 했다.\n화재 당시 부승화학 내부에 있던 16명의 작업자는 모두 자력으로 대피해 현재까지 인명 피해는 없는 것으로 확인됐다.\n그러나 유독가스와 냄새가 심하게 발생해, 에쓰오일 샤힌 프로젝트 패키지1 현장과 주변 기업체들도 작업을 중단하고 근로자들을 안전한 지역으로 이동시켰다.\n울산소방본부는 오전 10시 4분 대응 1단계를 발령하고, 소방과 유관기관 인력 200여 명, 소방 헬기 3대, 대용량 방사포 차량 1대 등 장비를 동원해 진화 작업을 벌였다.\n물만으로는 진화가 어려운 위험물 화재 특성상 포 소화약제를 함께 사용하고 있으며, 불길이 옆 저장탱크로 번지지 않도록 연소 확대 방지에 집중하고 있다.\n울주군은 오전 10시 15분경 재난안전문자를 통해 차량 우회와 인근 주민의 안전 유의를 당부했다.\n부승화학은 고순도 유기용제 및 무기화학 제품을 저장&middot;공급하는 업체로, 시너, 가성소다, 메탄올 등 다량의 화학물질을 드럼통과 탱크에 보관하고 있는 것으로 알려졌다.",
+      "bodyKo": "울산 울주군 온산국가산업단지 내에 위치한 화학제품 제조업체 부승화학에서 13일 오전 대규모 화재가 발생해, 인근 에쓰오일 샤힌 프로젝트 현장 근로자 약 7000명을 비롯해 주변 사업장 직원들이 긴급히 대피하는 상황이 벌어졌다.이 화재로 인해 온산공단 일대에는 검은 연기와 강한 냄새가 퍼졌으며, 인근 도로를 지나는 차량에도 우회 안내가 내려졌다.불은 오전 9시 41분 울주군 온산읍 학남리 부승화학 옥외탱크에서 시작됐다.해당 탱크에는 인화성 액체인 제4류 위험물 톨루엔 8000ℓ가 저장돼 있었으며, 시너와 메탄올, 아세톤 등 다양한 인\n현장에서는 5~6차례의 폭발음이 들린 뒤 불길과 검은 연기가 하늘로 치솟았고, 바람을 타고 불씨가 인근 사업장 잔디밭으로 날아가 추가 화재가 발생하기도 했다.\n화재 당시 부승화학 내부에 있던 16명의 작업자는 모두 자력으로 대피해 현재까지 인명 피해는 없는 것으로 확인됐다.\n그러나 유독가스와 냄새가 심하게 발생해, 에쓰오일 샤힌 프로젝트 패키지1 현장과 주변 기업체들도 작업을 중단하고 근로자들을 안전한 지역으로 이동시켰다.\n울산소방본부는 오전 10시 4분 대응 1단계를 발령하고, 소방과 유관기관 인력 200여 명, 소방 헬기 3대, 대용량 방사포 차량 1대 등 장비를 동원해 진화 작업을 벌였다.\n물만으로는 진화가 어려운 위험물 화재 특성상 포 소화약제를 함께 사용하고 있으며, 불길이 옆 저장탱크로 번지지 않도록 연소 확대 방지에 집중하고 있다.\n울주군은 오전 10시 15분경 재난안전문자를 통해 차량 우회와 인근 주민의 안전 유의를 당부했다.\n부승화학은 고순도 유기용제 및 무기화학 제품을 저장&middot;공급하는 업체로, 시너, 가성소다, 메탄올 등 다량의 화학물질을 드럼통과 탱크에 보관하고 있는 것으로 알려졌다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "국제뉴스"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "울산 화학공장 화재에 국가소방동원령 두 차례 발령…고성능 화학차 등 특수차량 12대 동원",
+      "source": "부산파이낸셜뉴스",
+      "link": "https://busan.fnnews.com/news/202610141250558474",
+      "date": "2026-10-14T03:56:00.000Z",
+      "lang": "ko",
+      "titleKo": "울산 화학공장 화재에 국가소방동원령 두 차례 발령…고성능 화학차 등 특수차량 12대 동원",
+      "url": "https://busan.fnnews.com/news/202610141250558474",
+      "body": "[파이낸셜뉴스] /사진=뉴시스화상 울산 울주군의 화학물질 제조공장에서 발생한 화재가 확산할 우려가 커지면서 소방청이 국가소방동원령을 두 차례 발령했다. 부산&middot;대구&middot;경남의 고성능 화학차 ..",
+      "bodyKo": "[파이낸셜뉴스] /사진=뉴시스화상 울산 울주군의 화학물질 제조공장에서 발생한 화재가 확산할 우려가 커지면서 소방청이 국가소방동원령을 두 차례 발령했다. 부산&middot;대구&middot;경남의 고성능 화학차 ..",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "부산파이낸셜뉴스",
+        "뉴시스"
+      ],
+      "related": [
+        {
+          "titleKo": "[속보]소방청, 울산 제조공장 화재에 '국가소방동원령' 발령",
+          "source": "뉴시스",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBrTDUxdExkOHliN0pHRkRxSTlLTDFlZV9PTE9DZFhZVWEzNWZnV1V3VjIwSmsxMmRXMkdFTXllNlZkR2ZWNHJXZGlKc2JPOXV0MU9yWE1Ea1NDelpuRE1XV9IBeEFVX3lxTFBGLWY4VFVIWG8xbFdZdkt2QW1sMGhleWZjMW5WaEFzYWxVd054N1BqUjVfdld5TXdkczVjUEttN3ZYRlVuRFgyamQzcmxwNWQxOGdVbGVYMmFRZGZfNy03WU5LRmFZUW5CSTAzVC1ZZGZ1Y0xWVk5QVQ?oc=5"
+        }
+      ],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "울산 화학공장 불, 톨루엔 탱크서 번져…“진화 장시간 걸릴 듯”",
+      "source": "부산일보",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE01d3hXMllvSlM3bmlub2k5ZVhtUGF6ZXdkM0RncEZvRnNfOWU3eUJBeGlwWXlMdUpveS02SlRYdjZCS1duNmVYNjN1NXk5aVhWNFNMYWM0cGVJTW9mcU0tWWM2WkRnbkVVbG0tYmN3WEFOSEd2NzMxOUFMMA?oc=5",
+      "date": "2026-10-14T03:04:13.000Z",
+      "lang": "ko",
+      "titleKo": "울산 화학공장 불, 톨루엔 탱크서 번져…“진화 장시간 걸릴 듯”",
+      "count": 1,
+      "sources": [
+        "부산일보"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "Farsnews | السعودية تؤكد استهداف مبنى لأرامكو بالظهران ونشوب حريق فيه",
+      "source": "Fars News Agency",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE01SDFNR0pia0ZuYkgtcVZjWFVDM1lERmVPaHhZM0NEZ25IRldnM0x2dlVoWWlxOUJFYTN3Z0JsTmNfMUdPUlUwdGJfUTlfbHdmbWp3Um42NW9tNGRoeXc?oc=5",
+      "date": "2026-10-14T02:39:56.000Z",
+      "lang": "ar",
+      "titleKo": "파스뉴스",
+      "count": 1,
+      "sources": [
+        "Fars News Agency"
+      ],
+      "related": [],
+      "tag": "고층·건물"
+    },
+    {
+      "title": "울산 온산읍 화재 여파…에쓰오일 샤힌 프로젝트 일부 작업 중지",
+      "source": "핀포인트뉴스",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9wVktZSGtxazQxZG5zeXF6a2NVWmo2NHhvZUVibURnLWRRVjh0LU10N0RLYk5PbFA1a2xRb2dZeGRKOWx4V05GMXdZZW5ITXNvZkxqWV9sYnJzSVJ6cXZXSVE3TElhdzU4MFlFSTd6TEctSU42RVZZ0gF3QVVfeXFMT3BWS1lIa3FrNDFkbnN5cXprY1VaajY0eG9lRWJtRGctZFFWOHQtTXQ3REtiTk9sUDVrbFFvZ1l4ZEo5bHhXTkYxd1llbkhNc29mTGpZX2xicnNJUnpxdldJUTdMSWF3NTgwWUVJN3pMRy1JTjZFVlk?oc=5",
+      "date": "2026-10-14T02:37:24.000Z",
+      "lang": "ko",
+      "titleKo": "울산 온산읍 화재 여파…에쓰오일 샤힌 프로젝트 일부 작업 중지",
+      "count": 1,
+      "sources": [
+        "핀포인트뉴스"
+      ],
+      "related": [],
       "tag": "기타"
     },
     {
@@ -89,42 +333,11 @@
       "body": "Civil Defence contained a warehouse fire in Barakat Al Awamer with no reported injuries, as announced by the Ministry of Interior.\nThe Ministry of Interior announced on 13 October 2026 that the Civil Defence had successfully brought a fire in a warehouse in the Birkat Al Awamer area under control.\nThe Civil Defence brings a fire at a warehouse in the Birkat Al Awamer area under control. No injuries were reported. #MOIQatar\nThe Ministry also confirmed that no injuries had been reported.\nIf you have anything you want to share with us, send us an e-mail at contact@iloveqatar.net !\nWant to send a tip? Drop us an e-mail at contact@iloveqatar.net , anonymity is guaranteed!\nHow ajeeb was that!? Thanks for contributing to our community! Your post will appear after we take a quick look!",
       "bodyKo": "민방위는 내무부가 발표한 바와 같이 부상이 보고되지 않은 바라카트 알 아와메르의 창고 화재를 포함하고 있었다.\n내무부는 2026년 10월 13일 민방위가 비르카트 알 아와메르 지역의 창고에서 화재를 성공적으로 진압했다고 발표했다.\n민방위는 통제하에 있는 Birkat Al Awamer 지역의 창고에 불을 지릅니다. 부상자는 보고되지 않았습니다. # MOIQatar\n국토부는 또한 부상이 보고되지 않았음을 확인했다.\n공유하고 싶은 사항이 있으시면 contact@iloveqatar.net으로 이메일을 보내주세요!\n팁을 보내고 싶으신가요? contact@iloveqatar.net으로 이메일을 보내주세요. 익명성이 보장됩니다!\n얼마나 어이쿠!? 커뮤니티에 참여해주셔서 감사합니다! 포스트는 간단히 검토한 후 표시됩니다.",
       "tried": true,
-      "count": 16,
+      "count": 1,
       "sources": [
-        "ILoveQatar.net",
-        "www.uaebarq.ae",
-        "صحيفة الخليج",
-        "وكالة الانباء العراقية (واع)",
-        "ARN News Centre",
-        "Khaleej Times"
+        "ILoveQatar.net"
       ],
-      "related": [
-        {
-          "titleKo": "아부다비: 알 다프라 창고 화재 통제",
-          "source": "www.uaebarq.ae",
-          "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxQZzMzT3l6RDl5cmpWN1VlRXpmMmsyNW5rcks4ajRDaFBpYm5uZVJIaXFoNWVXeEdMYVFoanFiZmRZdDhDRjlOaGFydHFhbXlRMFRWYXZzZ2JfSURIMDZUamtUdVVqMk1yZlM0cTNmcTlUUU4yemhoUUoxckM1U0hfOTRxQ3QyUWxYRGVEZTNHNWN2OFBNTHJwcDUyVEVhN2lrdy1kTHlMdHFCYjVCMDhjR0UtVzllN2JTWF95RWFJVlFYblpkS3RfUUhFaVRTeXVYblE2S0FrRlh5N0dJbE1Pdjg5Y0tIUklDN1R3cXhNN04yNjZ6UTV3TnhmLU1MTUdVU0I2eGJrdEVZbk12Q1RfMVc3akhTTDA0N2dKeEpGV1h4YnVoV1dWTUtzSFFSSzBYNTV1UDNJNE51YUx5WmhNU2xXcWN4OTVHUi1VMVBSbDJxVVRIdmV3?oc=5"
-        },
-        {
-          "titleKo": "아부다비 경찰: 알 다프라의 창고에서 화재 통제.. 부상 없음",
-          "source": "صحيفة الخليج",
-          "link": "https://news.google.com/rss/articles/CBMi7ARBVV95cUxQbzBoTF9OZXhfcVUxTGtMbGlLaWhzOW1XcmoxdWJSUFdoTGhWMU9nQm83Z1YxQVBORXpDeEM2Y1cyLUdIRm5vaW1tTTlNQXFGbVYxeFRYUFVUWmk2VVVKYjN6cnZNbnB4cHpQUXp6bnoxbndUeDV0bHo3WHFYajlkWUNRQzVxa0FHTWFjcmNlZVJGZTdBY05wNVRqS3VjTlNCbEtIQ3VtYno0YjNiUEFaOUJ3d2NsdTF1M0hqRXN6ekQ0S2pKeEZNNmlCSlhkeDFOVWFBZ0VieWIzUFBwSjdhWTZueWJLVV9mX1FCMlFzT3l5Qnp1LU5ZWUtQcjlmZGtTVzNJTlJnaFFNNjZVWkh1Qlg1UFdMd0dIWlFid1VNMVlYZHNELWlrR3JUY1h1MUZTQWlQODhvN0VfaUtjeUM0aUMzZ1RUbzRmVDhGUTFVVkxLdWNoaENpMHhXT3VUMEJGZ3Q4Rlkxa210R19Zd1JVZTBUdjk4Mmc1eVhSeVV6eE5ldVYtbnNOTkQ3VHJIZ1RKQllfTzhyQjBTYW1lSFNCa012UDZQOW5sT0dGUVFQNFFyLVZTb2RGY3FOSklKWDFmQkxudmZzNm1QZ2RlSHpiV3M4bExUajJoVlFFaXhlbElNa2tCaElJNVNnV0RzY1p6RENQdXowRHRmSVVoNnNPV2NnQVRUaHpJOEE1WWhmaHNPbmZ4RDlZVjJYTnlSMU1pN3plSDRrbWcyMVgxQTN6dHc2V2htYTBTQkc5X2dwZFpZdlVOWDlIUUxiWW9VbXdpOFdMc01DTkJaUnpDQWg4ak03VWlONlA4andCSA?oc=5"
-        },
-        {
-          "titleKo": "민방위: 바그다드의 개인 병원 내부에서 인명 피해 없이 화재 통제",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5RZWEwZWlHeTIwaWdaeVkyTUc1UkNkWWpjNUtIZW4tNkxOSTZzNXBLMUI1eU05Q3VueWFjSmhqTzdmTUprWnEyQnI0TmM?oc=5"
-        },
-        {
-          "titleKo": "아부다비.. 알 다프라의 창고에서 화재를 처리하는 경찰 및 민방위 팀",
-          "source": "صحيفة الخليج",
-          "link": "https://news.google.com/rss/articles/CBMitwVBVV95cUxPdjVUVElzd2dLbFhQWGU4MG80OERYdV8xSDFKNkkxUTJLX3d3akdTUV81RzNvOGJTa0FJU0U3VHRod1U0ZFNXMDNDLXpmZ3UycWlWZFNQdWtpXzNETUFYMHM2ZURUZ2V6YkQ2WTRXZ2NGdW53ZDlmUjBlQ2lIUk1qZmVUeFVIeTdLTzJfX0lNVkdsU1dSa0RkalV2WkZQVWtaeS16cTZBci1PQWRFLW1vWk9VaFJTeElvNk01dDdMdmlITGpXT2h2eGdGa0tKREV1aTJyRVZIajJNeVM5eEVhcFZ2alRPbWhrMW8xeUxHQzFOZnJNUDhLb2dORHVFTEZJdUpYazQtZWgxY0YzamlpZ0lZSUZmS3UxdHZrRThrTzlTbmc5M2JsSnVvdzZUMFFOT3YyZ3k2MmcxVHc3Tjc0QWxLNDVYczZXeDVSZ3c0YWZzbWkwQmoyYk1zX21lamxYNGE5SGxwZWxmMXJCVUQ3VEYtQnhGNGhOSERyU0NUZ0RHREZhYUdBT0J3TExIZ2hKRzNvRXpVNmJtQ0c4N1YxY01qWTBjRGF1bVpaYUlOTlQySi1hY0l6clp1LUFjMU1xUUp1ZWRodTJQaHBkWXJOM1o0dTEzLUl1b0VFazJLWTBXaFJsd1ZzVUtOV0dNUkQ5ZWo0SUphU0p2eExJQ005dkF0MVlwRmlKaWJEWGtKeno1M2poQU44X3Z0aklCY1luX1NkQ2lqdzBWNFgwMEFWUlBnckNMdUV2RWZvYmtkVXZUZUNraWk0amdlaGdxd2dISEgyRV9vME9uTXo3V21mNnJ5Q2JId2M4SHp4NnQ5QlRuOV9tYU53RGplRmtKUUszdEdiMkJWb0RlQXdpTW52WjZZMDVxQW1DbkpjNUk0czBrdC02R1hvT2hoUFRMZm94WWk2ZE1uYw?oc=5"
-        },
-        {
-          "titleKo": "아부다비 알다프라 지역의 창고에 화재가 발생했습니다.",
-          "source": "ARN News Centre",
-          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOWM4TlVkLUcyYUJJVzItZWRIck0wRHA4V0hTUWx5bUZpaktJNVd5cklYdWl0bjRJMldBWGdZQ1U3ZmxsRkRYb1ZWbVRWSnVCSTFwckVwU3phVENnTjQzLWJ4TTZRWTVEbjkzZzlFX2ZTaWNfeHFyaWk1RW95Q01LemlQVFgxOVEwSG55bkR0bTdVRmdFd0tGZ3VlY1RaVXo5TW1sZg?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "숙소·창고"
     },
     {
@@ -205,258 +418,6 @@
       ],
       "related": [],
       "tag": "전기·배터리"
-    },
-    {
-      "title": "فرق الدفاع المدني تخمد حريق مولدة وتنقذ خزان وقود بسعة 2000 لتر وسط بغداد",
-      "source": "ارض اشور",
-      "link": "https://ashourland.net/2026/10/12/%D9%81%D8%B1%D9%82-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D8%AA%D8%AE%D9%85%D8%AF-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D9%88%D9%84%D8%AF%D8%A9-%D9%88%D8%AA%D9%86%D9%82/",
-      "date": "2026-10-12T14:45:29.000Z",
-      "lang": "ar",
-      "titleKo": "민방위팀은 바그다드 중심부에서 발전기 화재를 진압하고 2,000리터 연료탱크를 구출했습니다.",
-      "url": "https://ashourland.net/2026/10/12/%D9%81%D8%B1%D9%82-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D8%AA%D8%AE%D9%85%D8%AF-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D9%88%D9%84%D8%AF%D8%A9-%D9%88%D8%AA%D9%86%D9%82/",
-      "body": "​أخمدت مفارز مركز دفاع مدني الشورجة حريقاً اندلع في مولدة كهربائية على سطح بناية مجمع الأنوار السكني بمنطقة شارع النضال، مقابل وزارة الصناعة دون تسجيل إصابات بشرية.…",
-      "bodyKo": "산업부 맞은편 알 니달 거리 지역의 알 안와르 주거단지 건물 옥상에 있는 발전기에서 발생한 화재를 쇼자 민방위 센터 소속 부대가 인명 피해 없이 진압했습니다.…",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "ارض اشور"
-      ],
-      "related": [],
-      "tag": "전기·배터리"
-    },
-    {
-      "title": "당진 리튬 배터리 공장 창고서 또 화재",
-      "source": "스페셜타임스",
-      "link": "http://www.specialtimes.co.kr/news/articleView.html?idxno=473016",
-      "date": "2026-10-12T10:42:21.000Z",
-      "lang": "ko",
-      "titleKo": "당진 리튬 배터리 공장 창고서 또 화재",
-      "url": "http://www.specialtimes.co.kr/news/articleView.html?idxno=473016",
-      "body": "12일 오전 11시 1분께 충남 당진시 합덕읍의 한 리튬 배터리 제조공장 완제품 창고에서 불이 났습니다.소방 당국은 소방차 등 장비 32대와 인력 80여명을 투입해 진화에 나섰고, 화재는 2시간 57분 만인 오후 1시 58분께 모두 꺼졌습니다.화재 당시 창고 안에 직원들은 없었던 것으\n당국은 창고에 보관 중이던 배터리를 밖으로 옮기면서 정확한 화재 원인과 피해 규모를 조사하고 있습니다. 소방 당국 관계자는 \"보관 중이던 리튬 배터리에서 열폭주가 일어난 것으로 보인다\"며 \"불이 다른 배터리나 건물로 급속히 옮겨붙지는 않았다\"고 밝혔습니다.\n이 공장 창고에서는 앞서 지난 8월 31일 오전 7시 24분께도 불이 나 보관 중이던 리튬배터리 15t과 창고건물 703㎡ 중 234㎡를 태운 뒤 22시간여만에 진화된 바 있습니다.\n▶ 경기도 남양주시 오남읍 10월 7일 18:15경 오남읍 양지리 797-11 창고 화재로 다량의 연기가 유입되고 있습니다\n스페셜타임스는 AI 기술의 도움을 받아 더 빠르고 다양한 뉴스를 독자에게 전달하기 위해 노력하고 있습니다.",
-      "bodyKo": "12일 오전 11시 1분께 충남 당진시 합덕읍의 한 리튬 배터리 제조공장 완제품 창고에서 불이 났습니다.소방 당국은 소방차 등 장비 32대와 인력 80여명을 투입해 진화에 나섰고, 화재는 2시간 57분 만인 오후 1시 58분께 모두 꺼졌습니다.화재 당시 창고 안에 직원들은 없었던 것으\n당국은 창고에 보관 중이던 배터리를 밖으로 옮기면서 정확한 화재 원인과 피해 규모를 조사하고 있습니다. 소방 당국 관계자는 \"보관 중이던 리튬 배터리에서 열폭주가 일어난 것으로 보인다\"며 \"불이 다른 배터리나 건물로 급속히 옮겨붙지는 않았다\"고 밝혔습니다.\n이 공장 창고에서는 앞서 지난 8월 31일 오전 7시 24분께도 불이 나 보관 중이던 리튬배터리 15t과 창고건물 703㎡ 중 234㎡를 태운 뒤 22시간여만에 진화된 바 있습니다.\n▶ 경기도 남양주시 오남읍 10월 7일 18:15경 오남읍 양지리 797-11 창고 화재로 다량의 연기가 유입되고 있습니다\n스페셜타임스는 AI 기술의 도움을 받아 더 빠르고 다양한 뉴스를 독자에게 전달하기 위해 노력하고 있습니다.",
-      "tried": true,
-      "count": 9,
-      "sources": [
-        "충청신문",
-        "FPN-소방방재신문",
-        "한겨레",
-        "세이프타임즈",
-        "스페셜타임스",
-        "연합뉴스"
-      ],
-      "related": [
-        {
-          "titleKo": "화재 발생 두 달여만에 ‘또’…당진 리튬 배터리 공장 화재",
-          "source": "충청신문",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4wdmdjYXJjczJGMnA5NXVHLUlIOE9CbHF5UG1sWXZfQ09EQm95UGNadVpEUDJ5MnBmTlEzMkNnVDMzWEdldXU1MldiUEdYQmhBbDUxYXdKNUF6OTRBMWpnWExmeUhaZG1ILTVWUEl30gFuQVVfeXFMTjB2Z2NhcmNzMkYycDk1dUctSUg4T0JscXlQbWxZdl9DT0RCb3lQY1p1WkRQMnkycGZOUTMyQ2dUMzNYR2V1dTUyV2JQR1hCaEFsNTFhd0o1QXo5NEExamdYTGZ5SFpkbUgtNVZQSXc?oc=5"
-        },
-        {
-          "titleKo": "충남 당진 리튬 배터리 공장서 또 불… 3시간 만에 진화 - FPN-소방방재신문",
-          "source": "FPN-소방방재신문",
-          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9WR3RYWkt0M2VYT0JWd2ZaMEk1bXBiWHNObGFXTGh6Q3VIeWc1RDBVbjAxSUVBUWdPaWRuWjJfblV4bEVvV3c?oc=5"
-        },
-        {
-          "titleKo": "당진 리튬 베터리 공장서 40여일 만에 또 화재",
-          "source": "한겨레",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83WVBuZVpXOFFYb0t1TlI5cUEwdF9NV1VKRUhIR3BpS3lDRFF6NmlXNFRUNm5TcFJ6RmdNZWMzQ1Y5U1B0dVFfTG81bjdiODZnNGprbkNTRVNtY2RKZEhDalB3Ni02UGlJ?oc=5"
-        },
-        {
-          "titleKo": "충남 당진 리튬배터리 공장 창고서 또 '화재'",
-          "source": "세이프타임즈",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBoZlVDOEs1M05nSy1WMGMyVXl2WEtUQk9UUE9acHcyQUd1QkxoUnBSUWd2bElPWDFDczRlbzFXdUZaMy0yNktzNXlCd2VveXFxRUVJM0toY3I4N3UwTktMc1lhV095aWJJRlpYaXhzSdIBc0FVX3lxTE1ZUFN5RVB6clljY0tJRDR1VGZheWJ5VE8wYkVxR2txa0VfZHFObXdVSnJBY085MnVuc0t5NTJsS0Z1Y181V2FkdlYzVW1ibC0zdWtsU3lHRndkMnhMd3RyYXI3czl1cTBOOFUtRGhGWC10djA?oc=5"
-        },
-        {
-          "titleKo": "8월에 불난 당진 리튬 배터리 공장 창고서 또 화재(종합)",
-          "source": "연합뉴스",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WYVktdTBIalRORV9rUkNHaVZWWnEtbUExRnFmWGFtbGxkNDZRekhwbW9GQUJaZWZHNE81b3U5dmcwRDFCOHRzVTVaZ2pLRWowWFFadDQzM0k2QnfSAWBBVV95cUxNYlBZRS1Ub21GVWFoWUR0ODdXOWFhS1pPTHlMalh6VDF4b1pKa295RUZFbkZTaGJhb2JkWWFIaEVaVkNjeUI5RnhMUDc0MXJ6YU1kTVJPWGR4dHpMbVhnbDM?oc=5"
-        }
-      ],
-      "tag": "전기·배터리"
-    },
-    {
-      "title": "شرطة أبوظبي: السيطرة على حريق في مستودع بمنطقة الظفرة",
-      "source": "الاتحاد للأخبار",
-      "link": "https://news.google.com/rss/articles/CBMi-wNBVV95cUxPYk1lREI3YjVQQUJPSDZsZ0dKdmFmdkpGS0JvbE44RF8waHJKRzRsOXJ6OWhZdXFLaEJveGFEWDUxSkdMTm5nenUxdlhtSzNES3YwRjJ1eGdVTGR2U1RwR0h1M2NNZXNaX1J1aHJFLS16NmdGNy12QUFfbHRQNmJIOVpmV2JCMTZyc2ZiT0VmLU05NlFIQkRqdUw2enEtMzF2bk93SkNVbTdzRFNkajQwdGhaR1U0QmNaMVJnQXJaQTMtbC1mVjVnVEphb2s2aTA3OGFwMmJMUEtES05ydFlDSVJPSlhOX2UtYXE2MjhFUHZ4NGJCbzJLcjI3ZmRwNWRnVnFoVHJuV25uTTl3NlpCVXMwUW5iT0ZxUXVhM1pRd3RNLVlIZGRVNlR4dkE3Ynhlc2syT3FNblhIQk9MTWZ4MEJwc2pqV2YyRl9Scnh0dWExY0xaOGktZUFwWFJGTEVoRzFFMmdqVER0SFRkTEM0cU9COWpmQ2ROaHEyWi1kNGRKOXMzUF9XSDNOVHZ2MFYtY1dRSWhvLUc2d0lpR0FBckxRZzFIMG4xNDBfeEVZRDZEZGFocGQtdDh3b3pqdjVFT3hodVlRUWJzOVFENDBUS2p0ci1PazEzbEo2d1lfRzlXc1NOZkRwaHA3RDhqYTNuaWNHM0RPZ3NyWjA?oc=5",
-      "date": "2026-10-12T10:35:39.000Z",
-      "lang": "ar",
-      "titleKo": "아부다비 경찰: 알 다프라의 창고에서 화재 통제",
-      "count": 3,
-      "sources": [
-        "قناة الغد",
-        "جريدة القدس",
-        "الاتحاد للأخبار"
-      ],
-      "related": [
-        {
-          "titleKo": "아부다비 경찰: 부상 없이 알 다프라 지역의 창고에서 화재를 통제하세요.",
-          "source": "قناة الغد",
-          "link": "https://news.google.com/rss/articles/CBMizwRBVV95cUxOcHpJYlFyUFRJQW9KSFdvYUFrLXVrRE5BM2Q5R3FYejM5OElTWWZ0dGhFbFZVeUpOLXJycVYwVE1LZGxhb016ek41V0hrelFiR25NZVFseWlnaVRBeGdRUnhleXJDcXhIZzUyV0hkai11djYwWkwwd1VpcTdfWHhrc0RtdGhiQTJYWUJzQTFmSVVzdXd3aHhsQ3RaTW5kbmQzZ09KVGR6RXV2a1A0MWVtd0tRSmRtM0pMaXg1S1QtN2licUhrTHc0a1NPSTQzeU5uQ0FRRnN6RWVZLXkwYVRvUGxfUmdHMWo4ZjNvT2NENldZbXoxekE3WGRmNF9ETVVuWDJhazg1bE1zTVh6VEhuZDY2bU5naDNzRloyT3Jod1RMbHlEU1N5bWp5NWtwT1U5Y1UxN2kyc3pPQ1p0cHl4M282VzI2SVoyaC0tZGo2WlNXVFJJc1VDclh6WldLd0NIZW5uZnFTQW55UmJVbkU1R2JGa19vVnYzekwydDNyMVR5QkIwUWZLRHdMaEwyUlZtLUJYemVabG4zSjAyYTRYdzQ0MC1FME5JN0hCbFF6X3lJclNCYXdKZm9OOGJZR3FoenBqZ2dBdVNhbjk1c2JnVGtjbWxMTWM2bFdNM3ZHTHZJZzBlbzZnWkh6b3V3VE9OZk5xUU9tTzFnM2JocHc1cnZnSE9iOHJRZnNZRWQxTjNfY1Vaang5WTdpaEdEUU1IWWlEUjRVZ1dBTm5CR09DbXhmZ0tvdHpkSk4zM3pHOHVqQ1lMRXQzSWdoVi1hVm8?oc=5"
-        },
-        {
-          "titleKo": "부상 없이 아부다비의 알 다프라 창고 화재를 통제하세요.",
-          "source": "جريدة القدس",
-          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWnZiaGZDZEJ2SGFfNnV3eVlZRFBrTG1SUGt6dHlZeFhWVzJrbUgxb21tb0JlcFFlMjVUeEFsZUxHcE41cDhUX0F5RHNnZ0NxMkpnY3owUkl2NTFvVF9nWENqbTZUdC1vMjF3UkdrX1JsRFE0SG5EYXBGTnRrcnBtVkFUVUd3N3VK?oc=5"
-        }
-      ],
-      "tag": "숙소·창고"
-    },
-    {
-      "title": "작업자 3명 숨진 영덕 풍력발전기 화재…6개월여 만에 합동감식",
-      "source": "경북매일",
-      "link": "https://www.kbmaeil.com/article/20261012500364",
-      "date": "2026-10-12T09:53:00.000Z",
-      "lang": "ko",
-      "titleKo": "작업자 3명 숨진 영덕 풍력발전기 화재…6개월여 만에 합동감식",
-      "url": "https://www.kbmaeil.com/article/20261012500364",
-      "body": "작업자 3명이 숨진 경북 영덕 풍력발전기 화재 현장에서 사고 발생 6개월여 만에 합동감식이 진행됐다. 관계 당국은 해체된 발전장치를 중심으로 화재 원인을 조사하고 안전조치 위반 여부를 규명할 방침이다. 경북경찰청 광역범죄수사대는 12일 오전 영덕군 영덕읍 창포리 영덕풍\n경찰·국과수 등 40여명 투입…불탄 발전장치 집중 조사 80m 높이·구조물 안전 문제에 중장비 진입로 확보 지연 유족 “정확한 원인 밝혀야”…안전조치 위반 책임 수사 작업자 3명이 숨진 경북 영덕 풍력발전기 화재 현장에서 사고 발생 6개월여 만에 합동감식이 진행됐다. 관계 당국은 해체된 발전장치를 중심으로 화재 원인을 조사하고 안전조치 위반 여부를 규명할 방침이다.\n경북경찰청 광역범죄수사대는 12일 오전 영덕군 영덕읍 창포리 영덕풍력발전단지에서 합동감식에 착수했다. 지난 3월 23일 풍력발전기 19호기에서 화재가 발생한 지 6개월여 만이다.\n감식에는 국립과학수사연구원과 고용노동부, 산업안전 관계기관, 소방, 한국전기안전공사 등이 참여했다. 관계자 40여명은 현장에서 회의를 진행한 뒤 기관별로 사고 현장을 살펴보고 사진 촬영과 기록 작업을 이어갔다.\n현장에는 해체된 풍력발전기 타워 구조물이 지상에 놓여 있었으며, 타워 상부의 발전장치도 분리돼 천막으로 덮여 있었다. 감식 참여자들은 천막을 걷어내고 검게 탄 발전장치를 집중적으로 조사했다.\n사고 당시 발전기에 올라가 수리 작업을 하던 작업자 3명이 숨졌다. 경찰은 2명이 추락한 블레이드 내부에서 발견됐고, 나머지 1명은 숨진 뒤 발전기 아래로 추락한 것으로 파악했다.\n불은 발생 74시간 만에 모두 꺼졌지만, 타워 구조물의 안전 문제로 현장 접근이 어려워 감식이 늦어졌다.",
-      "bodyKo": "작업자 3명이 숨진 경북 영덕 풍력발전기 화재 현장에서 사고 발생 6개월여 만에 합동감식이 진행됐다. 관계 당국은 해체된 발전장치를 중심으로 화재 원인을 조사하고 안전조치 위반 여부를 규명할 방침이다. 경북경찰청 광역범죄수사대는 12일 오전 영덕군 영덕읍 창포리 영덕풍\n경찰·국과수 등 40여명 투입…불탄 발전장치 집중 조사 80m 높이·구조물 안전 문제에 중장비 진입로 확보 지연 유족 “정확한 원인 밝혀야”…안전조치 위반 책임 수사 작업자 3명이 숨진 경북 영덕 풍력발전기 화재 현장에서 사고 발생 6개월여 만에 합동감식이 진행됐다. 관계 당국은 해체된 발전장치를 중심으로 화재 원인을 조사하고 안전조치 위반 여부를 규명할 방침이다.\n경북경찰청 광역범죄수사대는 12일 오전 영덕군 영덕읍 창포리 영덕풍력발전단지에서 합동감식에 착수했다. 지난 3월 23일 풍력발전기 19호기에서 화재가 발생한 지 6개월여 만이다.\n감식에는 국립과학수사연구원과 고용노동부, 산업안전 관계기관, 소방, 한국전기안전공사 등이 참여했다. 관계자 40여명은 현장에서 회의를 진행한 뒤 기관별로 사고 현장을 살펴보고 사진 촬영과 기록 작업을 이어갔다.\n현장에는 해체된 풍력발전기 타워 구조물이 지상에 놓여 있었으며, 타워 상부의 발전장치도 분리돼 천막으로 덮여 있었다. 감식 참여자들은 천막을 걷어내고 검게 탄 발전장치를 집중적으로 조사했다.\n사고 당시 발전기에 올라가 수리 작업을 하던 작업자 3명이 숨졌다. 경찰은 2명이 추락한 블레이드 내부에서 발견됐고, 나머지 1명은 숨진 뒤 발전기 아래로 추락한 것으로 파악했다.\n불은 발생 74시간 만에 모두 꺼졌지만, 타워 구조물의 안전 문제로 현장 접근이 어려워 감식이 늦어졌다.",
-      "tried": true,
-      "count": 12,
-      "sources": [
-        "국제신문",
-        "경북신문",
-        "뉴스1",
-        "서울신문",
-        "경북매일",
-        "연합뉴스"
-      ],
-      "related": [
-        {
-          "titleKo": "영덕 풍력발전기 화재, 반년만에 현장 감식",
-          "source": "국제신문",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWENVUV9Bd1JsNkNGR25mZzgzUzREMmRIYWp2S2JjSW5TcHpVc3lyRnJ2RlZyREtKcTBfZDRGSWdlcm5vNC02eWI3Y01UbFlXU1EyakliZ1EtNjdabHdLY0xqTC1DSVQ5TG40NEpEelR3OGJhaUstX3Z0UlN2SE0tR2djWXFTajg?oc=5"
-        },
-        {
-          "titleKo": "3명 숨진 영덕 풍력발전기 화재…6개월여 지나 현장 감식 들어가",
-          "source": "경북신문",
-          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ZaDg1UUtEbzNDZjhYUGNncGw4a0VvTkxSQXc2bVpKcUZ0SlRkN1BfS2NtYjk5MkZoX29Lb1J6aXdOekhoWjFOZnZOejdyX3cteTBuTWh2THM?oc=5"
-        },
-        {
-          "titleKo": "영덕풍력발전기 화재 현장 검증",
-          "source": "뉴스1",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAxdU00ZE5GZE5KUDlZMGJPTWtha2I3anZ2aFdIeEtoVXNNWFdRdjFIaGJ0LVdfUS1kam85OHl4ZS02VUgyemJuMC1tcw?oc=5"
-        },
-        {
-          "titleKo": "작업자 3명 숨진 영덕풍력 화재…6개월여 만에 합동감식",
-          "source": "서울신문",
-          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1vWjNDUkFoRndIN2NFcjFuQkdUR3dMcDEwYk8wTXZ0S210NG5lM0czNHhOZk8zUmh4LXlwZWZuSzkzQjlsZ2txcWFRMTItaDZXNUNJWDhCMA?oc=5"
-        },
-        {
-          "titleKo": "유가족도 지켜봤다…'3명 사망' 영덕풍력단지 화재 현장 7개월 만에 합동 감식",
-          "source": "뉴스1",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBsVTRQdEdxMFZoXzNUOWViUW04dllxb0FqdmlURmR0S0lZWXI4UEd1R1NlV2R1OHJxTVF5RWZDNUI3TEl4SXVoaFM1U3pKQ1FieWdWcjRkUjBfZDJ4Z1Y0?oc=5"
-        }
-      ],
-      "tag": "전기·배터리"
-    },
-    {
-      "title": "양양 손양면 주택 공사 현장서 용접 불티로 인한 화재… 인명피해 없어",
-      "source": "국제뉴스",
-      "link": "https://www.gukjenews.com/news/articleView.html?idxno=3718779",
-      "date": "2026-10-12T06:04:03.000Z",
-      "lang": "ko",
-      "titleKo": "양양 손양면 주택 공사 현장서 용접 불티로 인한 화재… 인명피해 없어",
-      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3718779",
-      "body": "(양양=국제뉴스) 김병섭 기자 = 양양군 손양면 송현리의 한 주택 공사 현장에서 용접 부주의로 추정되는 화재가 발생했으나, 신속한 진화로 인명피해 없이 13분 만에 진화됐다.강원특별자치도 소방본부 119소방활동 상황보고에 따르면, 지난 11일 오전 11시 29분쯤 양양군 손양면 송현리의 한 주택 공사 현장에서 불이 났다.신고를 받고 출동한 소방당국은 장비와 인력을 투입해 화재 발생 13분 만인 오전 11시 42분경 완전히 불을 껐다.이번 화재는 현장 내에서 진행된 용접 작업 중 튄 불티가 인근에 적재되어 있던 건축자재인 스티로폼에\n이 화재로 스티로폼 등 건축자재 일부가 소실되어 소방서 추산 99만 원 상당의 재산피해가 발생했으나, 다행히 작업자 및 인명피해는 발생하지 않았다.",
-      "bodyKo": "(양양=국제뉴스) 김병섭 기자 = 양양군 손양면 송현리의 한 주택 공사 현장에서 용접 부주의로 추정되는 화재가 발생했으나, 신속한 진화로 인명피해 없이 13분 만에 진화됐다.강원특별자치도 소방본부 119소방활동 상황보고에 따르면, 지난 11일 오전 11시 29분쯤 양양군 손양면 송현리의 한 주택 공사 현장에서 불이 났다.신고를 받고 출동한 소방당국은 장비와 인력을 투입해 화재 발생 13분 만인 오전 11시 42분경 완전히 불을 껐다.이번 화재는 현장 내에서 진행된 용접 작업 중 튄 불티가 인근에 적재되어 있던 건축자재인 스티로폼에\n이 화재로 스티로폼 등 건축자재 일부가 소실되어 소방서 추산 99만 원 상당의 재산피해가 발생했으나, 다행히 작업자 및 인명피해는 발생하지 않았다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "국제뉴스"
-      ],
-      "related": [],
-      "tag": "용접·불티"
-    },
-    {
-      "title": "Baghdad hospital fire forces over 60 evacuations, four years after previous blaze",
-      "source": "Rudaw",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5VLVBRaFJJNlRZRnlFTVg0anZDV3JQUmVqVkJLZ29zeTc0ekg2MkRJR1dvc1lFUV9JZzlhcFVLTEs4S1ZzSE83bEszZW83Y29JVEJxZ242ZFItUmtvOHc?oc=5",
-      "date": "2026-10-12T01:13:50.000Z",
-      "lang": "en",
-      "titleKo": "60건이 넘는 바그다드 병원 소방대 대피, 이전의 불길 이후 4년",
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "기타"
-    },
-    {
-      "title": "حريق اندلع داخل محل لتجارة الإطارات والبطاريات في مجمع المشن بمنطقة الكرادة",
-      "source": "الوكالة الوطنية العراقية للأنباء| نينا",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE41eE1ySXdIZmFQNTVzSFhLcS1rQjhZM2VhSDN5VDhPTk5tWWkySVkzMFNtUTNYZXFXUHY2SE1UeFRMMGZ2UnJfX0N1RE1jQWZGejNPbkl4S3pZd3NDaDJ2UWlOZ2xlRUFF?oc=5",
-      "date": "2026-10-11T20:15:05.000Z",
-      "lang": "ar",
-      "titleKo": "카라다(Karrada) 지역 알마쉬(Al-Mashn) 단지의 타이어 및 배터리 거래 상점에서 화재가 발생했습니다.",
-      "count": 1,
-      "sources": [
-        "الوكالة الوطنية العراقية للأنباء| نينا"
-      ],
-      "related": [],
-      "tag": "전기·배터리"
-    },
-    {
-      "title": "الدفاع المدني ينقذ مجمعاً تجارياً من ألسنة النيران -فيديو",
-      "source": "موقع كلمة الإخباري",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9kcGZqekpkb0FMODVqMWFIMXZlVHc2Y0NURGhEQjFDNTR3cmRRbTJLaUF2cDQya1h3Q3A2clljQlM1YWZ5cFhIRDY5MVhLbXJW?oc=5",
-      "date": "2026-10-11T19:49:05.000Z",
-      "lang": "ar",
-      "titleKo": "민방위가 상업 단지를 화염으로부터 구했습니다",
-      "count": 2,
-      "sources": [
-        "موقع كلمة الإخباري",
-        "العراق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "민방위는 상업 단지에서 화재를 진압할 수 있습니다",
-          "source": "العراق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxOd0VTWXQ1N2FEQkxrd3l6Y0xJSjQxVTE4N24tLTYzT045NHZIN182TEpScmdkWEliMG1VY05OVnRyQUtCamhDUEZmNGtzNDc2VVNLWDVRZUxTb3ZLaTROcUM5QlB0aFU3S04xa2hqUmtlYTh1ZjFHcUhYeE1ZZUgwaDAydkZNNjE4ejlRQUl2dzlIanhrak50R1hFbEZmeWxGR3Vpdmwxc2YyZ3NYZ2V5RVV1NjJBcEQ0R2NacGFsR1lnQVBLcXJfQ0hmVGFjaUVoMnd1eVhaeVdzaVVIenZZOFJqMVU1Q3ZlLWJfUjJ5bUdfMkhiaXAtT3BVclRIR1VHeVAwV0dzLThnWVZnMnIyVUpCanU4dVl1RUVTSzcwbjV0M2JYRkFLOXo2SEZXc3A4TkJhZkNsb0V6ZlhVNTNCc1VvQTdBVDk3bW11RGNCZXNPbWxKbGfSAdsCQVVfeXFMTTNlQ2NJTzJXUkpaZWhkbmxSMTJFc1plR3o5YUNPeDFfWW00czFqeWFWa2hRbF9uc3h6UGNJNUZpTGJkOWVqVnNzZTZRUnJRQXkyS2k0OFR0TWgya1Z0aFVwbjZFM3NCRGJrTjFhRTNpR2JtaGpMcWl5bG1LeWVmVl9ZRFZQcXRUT01LcXdlZ21iWS1OWkdYTTFKeWwtbVpXZ1ltQ2MzWGktd0NacHdMaEg1TXFXYjRwSElGWl9zUTJwa2J0Qm5md2FoVTlhUW9LVVZvSWxBc3R1RkNURVJpOTMyZTFQUDdDdVNvOGwxRlRVYXlSOFFkVVVHRGRQUkZ4TU9pZ3ZpdkVZQ0hXZmJWbE41LTM3S0c0NWpFWTBOMGdNNXRsQnJjSE5wbDZxNkJmdjF0WVRnZE5CenI0RHNQT0dlZXY2aFlKSnFWU1pqdzNDUDZtMEFTMnlDYkk?oc=5"
-        }
-      ],
-      "tag": "기타"
-    },
-    {
-      "title": "بالصور.. الدفاع المدني يسيطر على حريق داخل مستشفى أهلي وسط بغداد دون إصابات",
-      "source": "المعلومة",
-      "link": "https://news.google.com/rss/articles/CBMi7wNBVV95cUxORGxxN3VQWVdDZlRzZDdOSDAwTHYyRnJqZ2ZraXQ2NGh6NlgzVkpLN0FzWExkNUxTRFNsSWdTVzlJV1plWkRnRF9JQ0dfMlVRaV9LWFUtWV9iUVBrWHQ3YUVoSVh1ZjVCUld6MklZT1lObWh6TEg3OWp0enZpakktd1ZLT01wQmtLaXhqYTBFT053NEFyWTB4SU41MmhXWE1XSDJsYWFmNWNhb3NuUXBTMUZsOVM0OWFOMHZxeVpiYTg2Q1ZDajRCblJYSkhCaFdNNmZLZmphZk03MFhiV1hERlNQMHk1MjU3cGUwVHJnUHVMLXVpeW1rTmlSbzVEUlh1d1pLYWRGM0dBRlpLb1NreTRuOVNrVmltMENVMmI3MXJfQzV2WFNrUTYyOGUxWEEyN0Q0WThaN2JnU0VWQ0kteTFTUzlXck9veFY3RnAyN0RKYXB5WmxpOXVCd2hzY0hEQjFyQmhtN0Q5dXg3TzUxanh2SWpPMXJPU2lWRVpILVhSWjN0NkhKZE5BQ1p2NUd6dktwQmJKd0J4UFRKb0RlWW9UTWtqdWk2Y3JyY2J1eEFqWWVzeGU4VWhuVGM3QkpjbURwcHZLTURuUm9DOGs4ZGluYV96dktCSC1jMFBtR3lBQlZDMzhXeXFMSVh1RUU?oc=5",
-      "date": "2026-10-11T19:23:05.000Z",
-      "lang": "ar",
-      "titleKo": "사진 속: 민방위대가 바그다드 중심부에 있는 알아흘리 병원에서 화재를 진압하고 있지만 부상자는 없었다.",
-      "count": 1,
-      "sources": [
-        "المعلومة"
-      ],
-      "related": [],
-      "tag": "기타"
-    },
-    {
-      "title": "إخماد حريق داخل مستشفى الأندلس في بغداد وإنقاذ 60 نزيلًا",
-      "source": "شفقنا العراق",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1HZXlBX2RhdFpJcFBBMFBGeHB3ZERKWjRvUUFta3B3RTV0LTVEMWdjb1NvUkVxZHZWU1VqWGcyemZjaUk5RzdfbkxrTUk?oc=5",
-      "date": "2026-10-11T17:50:28.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드의 알 안달루스 병원 내부에서 불을 피우고 수감자 60명을 구함",
-      "count": 1,
-      "sources": [
-        "شفقنا العراق"
-      ],
-      "related": [],
-      "tag": "기타"
-    },
-    {
-      "title": "اخماد حريق داخل مستشفى أهلي ببغداد دون إصابات بشرية » وكالة الغد برس",
-      "source": "alghadpress.com",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB5QTFFcVF3VWNUS2taTkgydktHYXZXYkZaTHczM1Vmd3JkRUZHYWpsb19IUkRPZ2xCSDZvVkItVjBYZ096SXpTbDZfSnE?oc=5",
-      "date": "2026-10-11T17:13:26.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드의 한 개인병원에서 발생한 화재를 인명피해 없이 진압했습니다. 알가드 언론사",
-      "count": 1,
-      "sources": [
-        "alghadpress.com"
-      ],
-      "related": [],
-      "tag": "기타"
     }
   ]
 }
