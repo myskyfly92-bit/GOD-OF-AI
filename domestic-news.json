@@ -1,90 +1,90 @@
 {
-  "generatedAt": "2026-10-14T00:13:54.601Z",
+  "generatedAt": "2026-10-14T23:50:50.515Z",
   "query": "(질병 OR 전염병 OR 감염병 OR 사고 OR 의료 OR 의학) when:2d",
   "items": [
     {
-      "title": "\"포기할 줄 아는 사람이 잘 뛰는 사람\"...잇따른 마라톤 사고에 황영조 '일침' [앵커리포트]",
-      "source": "YTN",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4zclhmcnhGd0R2RE1EZEkyLUxFbFVIR2VzMk01TGxTcENjRzBpSnQ1bFJObWJHNTJFbGpNT2tpWlE2aFYweWV4aFlBWE10ZVcwM1dNOV9jYlZPZGhhamc?oc=5",
-      "date": "2026-10-13T23:33:00.000Z",
-      "summary": "YTN"
+      "title": "중진료권 70개→50개 지역·필수·공공의료 해법 제시",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oY2FXcXNja2FkcTFhdVBaM0loWEEycDVnRFlvYTVqOTNGNlNiN3lESFdEd1JOTTNqMmNmeElQQWhJNFRGVC10TzNmNXUwYjZNM2JOeFJTZ0JhYy1fby1XTU9QNWV4bmtjS1E?oc=5",
+      "date": "2026-10-14T21:03:51.000Z",
+      "summary": "의학신문"
     },
     {
-      "title": "금융위, 오늘 해킹사고 점검회의…새마을금고 추가 유출도 주시",
-      "source": "연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5xYmV0cEJWNjhtWGRtSFdQb2c1dkwtd0NqdkQwakFUTW5qTmlOaHFKQzhJWDRDVlJTbFpIR0pfd0pGMWMzZFlMcGRkYmtRQmg4VnZIbWdsNUx2d2PSAWBBVV95cUxQbTBVU1R3T25RSVcyZEtET3NEWWNHYjVlNGhDMzlPMzlJSmQzZkpmcmo0M2RubEkxTFR6aTg1M2JfbjA0cWVwWFBVdUFVbXZGb1VvSVZDMk53S2UwcWtsMDU?oc=5",
-      "date": "2026-10-13T20:51:00.000Z",
-      "summary": "연합뉴스"
-    },
-    {
-      "title": "명지병원, 감염병 대응 모의훈련 실시",
-      "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1QYzBQd2hwekRGQnpibkVWQlBwVU5sUzBmVEtjdUlvby1CU2hDT2FmQU81VjIxM3l6RFNyNWwyZDZqc3V0N0E2emRNTHhHMFQtc0pKbERHdw?oc=5",
-      "date": "2026-10-13T23:57:00.000Z",
-      "summary": "MEDI:GATE NEWS"
-    },
-    {
-      "title": "부산대병원, 스마트병동 구축*해상 의료지원 협약",
-      "source": "부산경남대표방송 KNN 뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA1d1hFaS1aY19JT0ZQWWZQel9hdFFHNlE5b01TN3FJOHhpMU5JbTBsYm5pWU9xSE9pd3hoR1Z5YjhsMkFxM1hvLW9mLUFTeE1pTW9TTw?oc=5",
-      "date": "2026-10-13T23:02:00.000Z",
-      "summary": "부산경남대표방송 KNN 뉴스"
-    },
-    {
-      "title": "AI 맞춤형 화장품 규제 풀고 의료관광 문턱 낮춘다···정부, ‘K-뷰티’ 산업 고도화 추진",
-      "source": "경향신문",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAxWEI1RG9aa2N4cXZhZHF3QW1sOWxfTmlxdlcxUnNwaUlPWF9tU0FuRzBONGdmSlZQanNhalliYnhicHMzbzJUSHlCRU9CSXNlSUpQX0lXeTlCZ9IBX0FVX3lxTE5lNEZBaTFHMG5fZFFaaXUwTXRnN1NCOU81RzFUaE1Sa3J6Ry1TRVlDdHg2cGQ4OUtBOGdlcUxTQmFxVGl4LWNXTFpHUmdWM25PaG5DeHBSdG1sOXJZazE4?oc=5",
-      "date": "2026-10-13T22:42:00.000Z",
-      "summary": "경향신문"
-    },
-    {
-      "title": "[사건사고] 성폭력·스토킹 4차례 신고했지만 종결…참극으로 이어져 外",
-      "source": "연합뉴스TV",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Db1VNYmZtSW5aRE9aSGlid0tGTzJrNktndk9mU05Jc0hYSXlDUmZzMUdTUFpJanVhQWMtclJ3TV83ZzlOQmtPWlFJTTRFOEJxVXdBYUVVeVdGV25ITWVadGZzbVV5NFU?oc=5",
-      "date": "2026-10-14T00:00:00.000Z",
-      "summary": "연합뉴스TV"
-    },
-    {
-      "title": "충남대병원, '소아청소년 완화의료 바로 알리기 캠페인' 개최",
-      "source": "메디칼업저버",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9BN3FSYXdWOXhhbUtVTU8zd1ktZHc5bzFMc1Rkb2NGdU5MU2xyZEFaM3EwS24zRk81a3ZEbFNkZXA2d0tET2pDXzY0M1o4TkVKbDBja2VnU3AwbFlsNUpDMVFlMF9TMXE5VHdN?oc=5",
-      "date": "2026-10-13T23:08:15.000Z",
-      "summary": "메디칼업저버"
-    },
-    {
-      "title": "챗GPT는 ‘의료 전문가’가 될 수 있을까 | 뉴스룸 칼럼 | 피플",
-      "source": "서울아산병원 뉴스룸",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8wTTZZcll2UFlONTVEZmRlaUlMd1BoMGQ0TFNSalNpYkk5UlYzTXhSd0VUd2VEMTc1eE0tc1hxNGVKbGpVUklVUUV4UF8zQnBFZXJteEh4VzFudjVaY1lwcVBxV2Z3aEE?oc=5",
-      "date": "2026-10-13T15:03:50.000Z",
-      "summary": "서울아산병원 뉴스룸"
-    },
-    {
-      "title": "[잇슈 SNS] 미 놀이공원서 또 롤러코스터 사고 “1명 사망·4명 부상”",
-      "source": "KBS 뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5CZTBncGdVYzRQTHdTQjZWMHk0R3FRdmJ5X1k0VzdrYVpubXZJMW9wN1hfa0RvV0FvSU5qM0xjNERLR0FybVctb00xbURGLTduZ3dfYWxmeTNISzdnOENpVF9RaEVJUQ?oc=5",
-      "date": "2026-10-13T22:36:00.000Z",
-      "summary": "KBS 뉴스"
-    },
-    {
-      "title": "주미대사관 “강경화 ‘불의의 사고 아니다’ 발언, 李 반박 취지 아냐”",
-      "source": "중앙일보",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE00R3dXMVN3SDAtMUxjaHJfVjR5YXRXazFORUNJOUFNTUROOU1weXROdDBuVTJKOTRzNTVKZnNUajQ4UFJWRlB3T1dCSWNoRFNPZmRRdWRR?oc=5",
-      "date": "2026-10-13T23:54:05.000Z",
-      "summary": "중앙일보"
-    },
-    {
-      "title": "뇌동맥박리 진단 늦었다고 의료과실?…병원 손 들어준 法 \"단정 어려워\"",
+      "title": "환자 줄어드는 지역의료…\"중진료권 줄이고 의료자원 집중해야\"",
       "source": "청년의사",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9SQzN5ZFJZT3V5ZV92RExEVkhMVUF3SHZnV1oxREp5VDdiR3NZb1dLSXIyeGxBV2ZBeHhVZ2dlOGhRbVloVlNDVmxCN0V4aEYwV01xTjhJcUQtT0lXMG1DQzdTQV9jWmpkM2RjMjl1ZF8?oc=5",
-      "date": "2026-10-13T21:51:22.000Z",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fMXg5a1FNMFRhS1Z0bkZHekdwcnQtakd3c2t1N3pRMnYwUXFpaW8zYi1LYW1tZGdvZ215QkNJakZjQndmU0N5RG5YakR2dFNGeFd6aFdNbi1nVjh2WlN1TFNCT2JMOF9wSV9ua2FXR2s?oc=5",
+      "date": "2026-10-14T21:44:51.000Z",
       "summary": "청년의사"
     },
     {
-      "title": "큐렉소, 북미척추학회서 '큐비스-스파인' 소개",
-      "source": "히트뉴스",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5NSEFLdXlLV1hxY3lqNkt5b2RMRTdxN3hUYmtGRXAtei1kWTdJcGh3Znp2X05YeFlxWklLX0IyczVnN1dGY3lrWkVCOWo2cExadUlWRUhBVE04ZzVrNTV6NlktN1RFeE10TE1r?oc=5",
-      "date": "2026-10-13T23:37:32.000Z",
-      "summary": "히트뉴스"
+      "title": "“내 질병정보가 영업수단?\"…약배송 민감정보 113만건 어디로 갔나",
+      "source": "약사공론",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1yR1ROcURLRDFwa2toYnZTVVNFWVJmb1Q0dFo4aExXbU9nQk1qMVA5d1o3RmRFd0NjY0gtQklMWmlQWEYxN3B5Uzh3RHE2d2E3dDRJSFB6aGh6a2h1R1U1MVlnU2FQeFc5S2RKYg?oc=5",
+      "date": "2026-10-14T20:55:00.000Z",
+      "summary": "약사공론"
+    },
+    {
+      "title": "올 상반기 대구 산업재해 사고사망자 73% 감소",
+      "source": "Tbc.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWUhnZlg5RFU3eHlROEtyYVJTUlJIenNuWUpCeVBEWEF2YXlEVEZEUXBNNjNWUXAxWmVKZTBpWjVQdzZPTG5vT25KUVpGSlZBN3l0QU5nUzB5YjJSLXAtMkp0Tjh4a1hHMGVuTVlfZVNybHlSS05kZVFsSzNfQ3J4akJaMjh4Zw?oc=5",
+      "date": "2026-10-14T23:33:39.000Z",
+      "summary": "Tbc.co.kr"
+    },
+    {
+      "title": "[단독]1만명 옮겨가는데… 세종 내년 입주 ‘0’, 의료시설 계획 34%만 운영",
+      "source": "동아일보",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5YSzNXR0N3ZkQ5bFZXallmN3dMWXNNR0FXN3pjUENOY3JhWHJ3RWFRaEEzRlUzc2p1MnNJNWNEYUk4M0V6VWcwOVI4UUF0UWphVHZEQTJMRmNkUGlRTEZLTjFyVVNlX3RJMkQxMlRabzBheVJIeWfSAWZBVV95cUxQeDZYYjNxU0pKZFQxNDJjZ2tmUUszeWc2ck1MR1l5UmQ2alRNMVJMMVVpRTNKVnNNRDI2NjhOcWVubHdNWkQwa09LeHpkd0t4c09YSWJ5NmxXdDFzQnlsUGFnOFZzdHc?oc=5",
+      "date": "2026-10-14T19:30:00.000Z",
+      "summary": "동아일보"
+    },
+    {
+      "title": "허사비스 \"안전 조치 미흡하면 2년내 대형 AI 보안 사고\"",
+      "source": "YTN",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9lWWJpdVBzMGpvUXV2U09mREtTRFMwSWxqY3BoMldzY29ubDAwTFQ1Rng1czY3cHhDdXVRRzc3WmVTcXh6VWpQWmRhWFl2UlhpMDFNMEp2aEVnei1Qb1E?oc=5",
+      "date": "2026-10-14T22:40:00.000Z",
+      "summary": "YTN"
+    },
+    {
+      "title": "중개사무소 한곳에서 일어난 보증사고가 57건, 153억… HUG가 다 물어줬다 - 조선비즈",
+      "source": "Chosunbiz",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUndvVWFIcl8zRnFvQXFXdHdWYWQwdzlXMHFmelZfaDFSMnlrbl9mbHRINXpEYnJLdnNNVTlqOXFtQmxpZ0d4Z2ZuNEZMcTVubTNDcE1ZYVlfUGgwelhLdzJITWlMaFBGTFIxVEx5SnRGWVRPR0NEWFlwcHBHTXgwWXMxVUxvZzJycUwzS2pRRE01akprU0hTctIBrAFBVV95cUxOOThTaU1CU012b2ozc2d0TEU1eE1ULWg1bU1LQ2JhUjMyTFdZLXVLTHhmQU1LblVMUzVOTURzaE1Eai02RGdEN1l1RzNOUzVvRkgyYlpTRmNVLThFTW9FN0lZNUhiRHJNZUMwcUJydXVadVNaaTFnaDU5V01vT1N5a1NxQXFLRUV0eGhOMy1CS2FLWXNLSFFtYVE0QVpqUzJWUmRYaTFuMXZFLTAt?oc=5",
+      "date": "2026-10-14T23:13:00.000Z",
+      "summary": "Chosunbiz"
+    },
+    {
+      "title": "“행정경계 아닌 의료접근성으로”…중진료권 70개→50개 재편 제안",
+      "source": "MEDI:GATE NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBOeUpjZ0NXQzdhU3oxX0hZR1JNOVZMVE5Ha3hlVW5RV2FVYzVFdDVCM2FOTFd5Z1o0SUExY19KdUtnWFNrVHhLUGZTSFp5WkdLS3BrTm9nRQ?oc=5",
+      "date": "2026-10-14T21:59:00.000Z",
+      "summary": "MEDI:GATE NEWS"
+    },
+    {
+      "title": "유방암 ICHOM 국제 인증 | 의료 | 뉴스",
+      "source": "서울아산병원 뉴스룸",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5mUURTcEJZaFNhSUpmek9qS2FkNl9YLU9PdjNvdmVMX0NETm1EdVVyZDBHUzV6ZXhUX2Q2NXh4SGIteWdkdGxJdURaVzhBUVg2WnNwRHJqcGtTN2E4Rll5UjhDM1hLWGs?oc=5",
+      "date": "2026-10-14T20:23:32.000Z",
+      "summary": "서울아산병원 뉴스룸"
+    },
+    {
+      "title": "[스카이랩스 대해부②]'의료기기 성배' 커프리스 혈압계…정확도로 증명했다",
+      "source": "팜이데일리",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5xWHpTVmhUS2lpVktDLWVySXRHWmhxbWswamhSYVdJVElDSllmWVVIU0N4NDBOMjY5dzJ4dGVNSVotMWNjdzlkMzY3UnVaN05mNEJNNTgzVkJVWXR4Uzc2azhrd2dQemE4VWgybmd3?oc=5",
+      "date": "2026-10-14T22:00:04.000Z",
+      "summary": "팜이데일리"
+    },
+    {
+      "title": "금융사 침해사고로 약 10만건 정보 샜다…금융위, 보안 시스템 전수조사",
+      "source": "아시아경제",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yQTFacUpyNXdEeFRXX3podjNHRU1YU29LRmd3NXhwT0FOVV9hcHcyRmFLQk5fUFQ3bjlISkJoU3dfWnZrcmh3UEhwdG1qNWlyTG1VZ1FvUWxseFhIQzhJRQ?oc=5",
+      "date": "2026-10-14T21:59:46.000Z",
+      "summary": "아시아경제"
+    },
+    {
+      "title": "유동균 마포구청장, 가스폭발·인파 밀집사고 대비 재난대응 안전한국훈련 주관",
+      "source": "문화일보",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5IVzEwOFp4TnlET3BnTDBYcS1Pbkh1RmZQYkhHMnJPLVVEVy16ejdoWnFZYTVvMkVIb0pjOUR2dFpzWHBLbjBaTjl5TWlJREp1?oc=5",
+      "date": "2026-10-14T23:36:22.000Z",
+      "summary": "문화일보"
     }
   ]
 }
