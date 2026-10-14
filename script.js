@@ -520,8 +520,43 @@ function renderNotices(notices) {
         <span class="notice-date">${escapeHtml(n.date)}</span>
       </div>
       <div class="notice-body">${escapeHtml(n.body)}</div>
+      ${n.image ? `<button type="button" class="notice-img" data-img="${escapeHtml(n.image)}" title="사진 크게 보기"><img src="${escapeHtml(n.image)}" alt="${escapeHtml(n.imageAlt || n.title)}" loading="lazy"><span>📷 사진 보기</span></button>` : ""}
     </li>
   `).join("");
+  list.querySelectorAll(".notice-img").forEach((b) => b.onclick = (e) => { e.stopPropagation(); const n = notices.find((x) => x.image === b.dataset.img); if (n) noticePopup(n, true); });
+  // popupUntil 날짜까지는 상황실을 열 때 팝업으로 (인트로가 끝난 뒤, 페이지당 한 번)
+  if (!renderNotices._popped) {
+    renderNotices._popped = true;
+    const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Baghdad" }).format(new Date());
+    const pop = notices.filter((n) => n.popupUntil && today <= n.popupUntil && today >= (n.date || "")).filter((n) => { try { return localStorage.getItem("ntcPopHide") !== today + "|" + n.title; } catch (e) { return true; } });
+    if (pop.length) {
+      let waited = 0;
+      const tryShow = () => {
+        if (document.querySelector(".hse-intro") && waited < 90000) { waited += 600; return setTimeout(tryShow, 600); }
+        setTimeout(() => noticePopup(pop[0]), 1200);
+      };
+      tryShow();
+    }
+  }
+}
+// 공지 팝업 (사진 + 내용) — '오늘 그만 보기'는 이 브라우저에서 오늘 하루만, 순환 화면처럼 아무도 안 만지면 90초 뒤 저절로 닫힘
+function noticePopup(n, manual) {
+  document.querySelectorAll(".ntc-pop-bg").forEach((x) => x.remove());
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Baghdad" }).format(new Date());
+  const bg = document.createElement("div"); bg.className = "ntc-pop-bg";
+  bg.innerHTML = `<div class="ntc-pop level-${escapeHtml(n.level)}" role="dialog" aria-label="공지 ${escapeHtml(n.title)}">
+      <div class="ntc-pop-h"><span class="notice-tag">${escapeHtml(n.level)}</span><span class="ntc-pop-k">📢 HSE 공지 · ${escapeHtml(n.date || "")}</span><button type="button" class="ntc-x" aria-label="닫기">✕</button></div>
+      <h2>${escapeHtml(n.title)}</h2>
+      <div class="ntc-pop-c">${n.image ? `<img src="${escapeHtml(n.image)}" alt="${escapeHtml(n.imageAlt || n.title)}">` : ""}
+        <div class="ntc-pop-b">${escapeHtml(n.body)}</div></div>
+      <div class="ntc-pop-f">${manual ? "" : `<button type="button" class="ntc-hide">오늘 그만 보기</button>`}<button type="button" class="ntc-ok">확인</button></div>
+    </div>`;
+  const close = () => { bg.classList.add("out"); setTimeout(() => bg.remove(), 250); clearTimeout(auto); };
+  const auto = manual ? 0 : setTimeout(close, 90000);
+  bg.addEventListener("click", (e) => { if (e.target === bg || e.target.closest(".ntc-x, .ntc-ok")) close(); });
+  const hide = bg.querySelector(".ntc-hide"); if (hide) hide.onclick = () => { try { localStorage.setItem("ntcPopHide", today + "|" + n.title); } catch (e) {} close(); };
+  document.addEventListener("keydown", function esc(e) { if (e.key === "Escape") { close(); document.removeEventListener("keydown", esc); } });
+  document.body.appendChild(bg);
 }
 
 function renderContacts(contacts) {

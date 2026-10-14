@@ -144,7 +144,20 @@
       const rank = { "긴급": 0, "주의": 1, "안내": 2 };
       const ns = (d.notices || []).slice().sort((a, b) => (rank[a.level] ?? 3) - (rank[b.level] ?? 3));
       fill("noticeCard", ns.length ? `<ul class="list">${ns.map((n) => `<li class="item fold"><div class="t"><span class="tag ${n.level === "긴급" ? "red" : n.level === "주의" ? "amb" : ""}">${esc(n.level)}</span> ${esc(n.title)}</div>
-        <div class="m">${esc(n.date)}</div><div class="b">${esc(n.body)}</div></li>`).join("")}</ul>` : `<p class="empty">새 공지가 없습니다.</p>`);
+        <div class="m">${esc(n.date)}${n.image ? " · 📷 사진" : ""}</div><div class="b">${esc(n.body)}${n.image ? `<img class="ntc-img" src="../${esc(n.image)}" alt="${esc(n.imageAlt || n.title)}" loading="lazy">` : ""}</div></li>`).join("")}</ul>` : `<p class="empty">새 공지가 없습니다.</p>`);
+      // popupUntil 날짜까지는 열 때 사진과 함께 팝업 (오늘 그만 보기)
+      const td = today(), pop = ns.find((n) => n.popupUntil && td <= n.popupUntil && td >= (n.date || "") && ls.get("ntcPopHide") !== td + "|" + n.title);
+      if (pop && !loadHome._popped) {
+        loadHome._popped = true;
+        const bg = document.createElement("div"); bg.className = "sheet-bg ntc-bg";
+        bg.innerHTML = `<div class="ntc-m" role="dialog" aria-label="공지"><div class="ntc-m-h"><span class="tag ${pop.level === "긴급" ? "red" : pop.level === "주의" ? "amb" : ""}">${esc(pop.level)}</span> 📢 HSE 공지 · ${esc(pop.date)}</div>
+          <h2>${esc(pop.title)}</h2>${pop.image ? `<img src="../${esc(pop.image)}" alt="${esc(pop.imageAlt || pop.title)}">` : ""}<p>${esc(pop.body)}</p>
+          <div class="row2"><button class="btn ntc-hide">오늘 그만 보기</button><button class="btn pri ntc-ok">확인</button></div></div>`;
+        const close = () => bg.remove();
+        bg.addEventListener("click", (e) => { if (e.target === bg || e.target.closest(".ntc-ok")) close(); });
+        bg.querySelector(".ntc-hide").onclick = () => { ls.set("ntcPopHide", td + "|" + pop.title); close(); };
+        setTimeout(() => document.body.appendChild(bg), 700);
+      }
       if (d.iqdOfficial) J._iqd = d.iqdOfficial;
     }).catch(() => fail("noticeCard"));
 

@@ -4520,3 +4520,27 @@ body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !impo
 .holiday-list-mo .holiday-list-fire { color: #ff9a5c; font-weight: 700; }
 .holiday-list-mo small { color: var(--text-muted); font-size: 11.5px; margin-left: 4px; }
 .holiday-legend-bar { display: inline-block; width: 14px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, #ff7a3d, #f2a93b); margin-right: 5px; vertical-align: 3px; }
+
+/* 공지: 사진 · 팝업 */
+.notice-body { white-space: pre-line; }
+.notice-img { display: inline-flex; align-items: center; gap: 10px; margin-top: 8px; padding: 4px 12px 4px 4px; border-radius: 10px; background: rgba(255,255,255,.04); border: 1px solid var(--border); color: var(--text-muted); font: inherit; font-size: 12.5px; cursor: zoom-in; }
+.notice-img img { width: 64px; height: 48px; object-fit: cover; border-radius: 7px; display: block; }
+.notice-img:hover { border-color: var(--cyan); color: var(--text); }
+.ntc-pop-bg { position: fixed; inset: 0; z-index: 2500; background: rgba(3,6,10,.72); backdrop-filter: blur(3px); display: flex; align-items: center; justify-content: center; padding: 24px; animation: ntcIn .3s ease-out; }
+.ntc-pop-bg.out { opacity: 0; transition: opacity .25s; }
+@keyframes ntcIn { from { opacity: 0; } }
+.ntc-pop { width: min(860px, 100%); max-height: calc(100vh - 48px); overflow: auto; background: linear-gradient(160deg, #18222e, #111821); border: 1px solid rgba(53,208,192,.45); border-radius: 18px; padding: 20px 22px; box-shadow: 0 24px 70px rgba(0,0,0,.6); animation: ntcUp .35s cubic-bezier(.2,.8,.2,1); }
+.ntc-pop.level-주의 { border-color: rgba(242,169,59,.55); } .ntc-pop.level-긴급 { border-color: rgba(255,90,90,.6); }
+@keyframes ntcUp { from { transform: translateY(14px) scale(.98); opacity: 0; } }
+.ntc-pop-h { display: flex; align-items: center; gap: 10px; }
+.ntc-pop-k { font-size: 12.5px; color: var(--text-muted); flex: 1; }
+.ntc-x { width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.06); border: 1px solid var(--border); color: var(--text); cursor: pointer; font-size: 14px; }
+.ntc-pop h2 { margin: 12px 0 14px; font-size: 22px; line-height: 1.4; }
+.ntc-pop-c { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 18px; align-items: start; }
+.ntc-pop-c img { width: 100%; max-height: 62vh; object-fit: cover; border-radius: 12px; display: block; border: 1px solid var(--border); }
+.ntc-pop-b { white-space: pre-line; font-size: 15.5px; line-height: 1.8; color: #d6dee8; }
+.ntc-pop-c:not(:has(img)) { grid-template-columns: 1fr; }
+.ntc-pop-f { display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; }
+.ntc-pop-f button { font: inherit; font-size: 14px; padding: 9px 18px; border-radius: 10px; cursor: pointer; border: 1px solid var(--border); background: rgba(255,255,255,.05); color: var(--text); }
+.ntc-pop-f .ntc-ok { background: var(--cyan); border-color: var(--cyan); color: #06231f; font-weight: 700; }
+@media (max-width: 760px) { .ntc-pop-c { grid-template-columns: 1fr; } .ntc-pop h2 { font-size: 18px; } }

@@ -280,3 +280,11 @@ a.tel { display: inline-flex; align-items: center; margin-top: 6px; padding: 7px
 .wn-i span { font-size: 20px; } .wn-i b { font-size: 13.5px; } .wn-i small { font-size: 11.5px; color: var(--muted); line-height: 1.4; }
 .wn-i:active { transform: scale(.97); background: #16202b; }
 .wn-i:disabled { opacity: 1; }
+/* 공지 사진 · 공지 팝업 */
+.ntc-img { display: block; width: 100%; max-height: 360px; object-fit: cover; border-radius: 12px; margin-top: 10px; }
+.ntc-bg { position: fixed; inset: 0; z-index: 300; background: rgba(4,8,12,.72); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.ntc-m { width: 100%; max-width: 420px; max-height: calc(100dvh - 32px); overflow-y: auto; background: var(--card); border: 1px solid var(--line2); border-radius: 18px; padding: 16px; box-shadow: 0 20px 50px rgba(0,0,0,.5); }
+.ntc-m-h { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+.ntc-m h2 { font-size: 17px; line-height: 1.4; margin: 8px 0 10px; }
+.ntc-m img { display: block; width: 100%; max-height: 48vh; object-fit: cover; border-radius: 12px; }
+.ntc-m p { font-size: 14px; line-height: 1.65; white-space: pre-line; color: #cfd8e3; margin: 12px 0 14px; }
