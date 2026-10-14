@@ -4048,6 +4048,19 @@ function saRenderSide(d, moel) {
   restartSide();
 }
 
+// '2026년 2분기(누적)' → 다음 분기 통계가 보통 언제 나오는지 한 줄
+//   지난 발표일: 1분기 2022-05-05·2024-05-29 / 상반기 2025-08-21 / 3분기 2023-11-06·2025-11-25 / 연간 2024-03-07·2025-03-11
+function saNextRelease(period) {
+  const m = String(period || "").match(/(\d{4})\s*년\s*(\d)\s*분기/) || (/(\d{4})\s*년/.test(period || "") && /연간|4분기/.test(period) ? [0, period.match(/(\d{4})/)[1], "4"] : null);
+  if (!m) return "";
+  let y = +m[1], q = +m[2] + 1; if (q > 4) { q = 1; y++; }
+  const WHEN = { 1: ["1~3월", "5월 중·하순", "2024년 5월 29일"], 2: ["1~6월 누적", "8월 하순", "2025년 8월 21일"], 3: ["1~9월 누적", "11월 초~하순", "2023년 11월 6일 · 2025년 11월 25일"], 4: ["1년 전체", "다음 해 3월 초·중순", "2024년 3월 7일 · 2025년 3월 11일"] };
+  const w = WHEN[q];
+  const label = q === 4 ? `${y}년 연간` : `${y}년 ${q}분기`;
+  const when = q === 4 ? `${y + 1}년 3월 초·중순` : `${y}년 ${w[1]}`;
+  return `📅 <b>${label}(${w[0]})</b> 통계는 고용노동부가 보통 <b>${when}</b>에 발표합니다 <small>(지난 발표: ${w[2]})</small> · 분기가 끝나고 재해조사를 마친 뒤 집계해서 1~2달 늦게 나옵니다. 발표되는 대로 바로 반영하며, 그 전까지는 지금 보이는 <b>${escapeHtml(period)}</b> 숫자가 가장 최신 공식 통계입니다.`;
+}
+
 async function initSeriousAccidents() {
   if (saLoaded) return;
   let d;
@@ -4061,6 +4074,8 @@ async function initSeriousAccidents() {
     return;
   }
   saLoaded = true;
+  // 다음 발표 시기 안내 (고용노동부는 분기가 끝나고 1~2달 뒤에 발표 → 그동안 숫자가 안 바뀌는 이유를 알려 줌)
+  try { const nx = saNextRelease(d.period); if (nx) { const el = document.getElementById("saRelease"); el.innerHTML = nx; el.hidden = false; } } catch (e) { /* 안내만 생략 */ }
 
   // 고용노동부 사이트 자동 수집분(있으면): 발생유형별 수치는 이것을 우선 사용
   let moel = null;

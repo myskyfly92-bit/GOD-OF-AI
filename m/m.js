@@ -294,7 +294,10 @@
         ${d.totalYoy != null ? `<span class="tag ${Number(d.totalYoy) < 0 ? "cy" : "red"}" style="margin-left:auto">전년 대비 ${Number(d.totalYoy) > 0 ? "+" : ""}${d.totalYoy}%</span>` : ""}</div>
         <div class="kpis">${ind.map((x) => `<div class="kpi ${col[x.key] || ""}"><span>${esc(x.name)}</span><b class="num">${x.total}</b><small>${tot ? Math.round(x.total / tot * 100) : 0}%</small></div>`).join("")}</div>
         ${(d.topFactors || []).length ? `<div style="margin-top:12px">${d.topFactors.map((f) => `<div class="prow"><span>${esc(f.axis.replace("별", ""))}</span><div><div style="font-size:12.5px;color:var(--text)">${esc(f.label)}</div><div class="bar"><i class="amb" style="width:${Math.min(100, f.pct)}%"></i></div></div><b>${f.pct}%</b></div>`).join("")}</div>` : ""}
-        <p class="src">출처: ${esc(d.source)} · ${esc(d.updatedAt)} 반영</p>`);
+        <p class="src">출처: ${esc(d.source)} · ${esc(d.updatedAt)} 반영</p>${(() => { const m = String(d.period || "").match(/(\d{4})\s*년\s*(\d)\s*분기/); if (!m) return "";
+          let y = +m[1], q = +m[2] + 1; if (q > 4) { q = 1; y++; }
+          const W = { 1: `${y}년 1분기 통계는 보통 ${y}년 5월 중·하순`, 2: `${y}년 상반기 통계는 보통 ${y}년 8월 하순`, 3: `${y}년 3분기(1~9월) 통계는 보통 ${y}년 11월 초~하순`, 4: `${y}년 연간 통계는 보통 ${y + 1}년 3월 초·중순` };
+          return `<p class="src" style="color:var(--blue)">📅 다음 발표: ${W[q]}에 고용노동부가 발표합니다 (분기가 끝나고 1~2달 뒤) · 그 전까지는 이 숫자가 최신입니다</p>`; })()}`);
     }).catch(() => fail("saStatCard"));
 
     loadWork().then((items) => {
