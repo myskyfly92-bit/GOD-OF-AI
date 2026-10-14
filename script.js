@@ -517,7 +517,8 @@ function renderNotices(notices) {
   // 공지가 길어져도 아래 '오늘 작업 현황'이 밀려나지 않게: 본문은 두 줄만, 누르면 그 공지만 펼침 · 2개 넘으면 '더 보기'
   const SHOW = 2;
   if (!list.dataset.tapBound) { list.dataset.tapBound = "1"; list.addEventListener("click", (e) => {
-    const more = e.target.closest(".notice-more"); if (more) { list.classList.add("all"); more.remove(); return; }
+    const more = e.target.closest(".notice-more button");
+    if (more) { const all = list.classList.toggle("all"); more.textContent = all ? "공지 접기 ⌃" : more.dataset.label; if (!all) list.querySelectorAll(".notice-extra.open").forEach((x) => x.classList.remove("open")); return; }
     const r = e.target.closest(".notice-row"); if (!r || e.target.closest("a")) return;
     const was = r.classList.contains("open"); list.querySelectorAll(".notice-row.open").forEach((x) => x.classList.remove("open")); if (!was) r.classList.add("open");
   }); }
@@ -531,7 +532,7 @@ function renderNotices(notices) {
       <div class="notice-body">${escapeHtml(n.body)}</div>
       ${n.image ? `<button type="button" class="notice-img" data-img="${escapeHtml(n.image)}" title="사진 크게 보기"><img src="${escapeHtml(n.image)}" alt="${escapeHtml(n.imageAlt || n.title)}" loading="lazy"><span>📷 사진 보기</span></button>` : ""}
     </li>
-  `).join("") + (notices.length > SHOW ? `<li class="notice-more"><button type="button">공지 ${notices.length - SHOW}개 더 보기 ⌄</button></li>` : "");
+  `).join("") + (notices.length > SHOW ? `<li class="notice-more"><button type="button" data-label="공지 ${notices.length - SHOW}개 더 보기 ⌄">공지 ${notices.length - SHOW}개 더 보기 ⌄</button></li>` : "");
   list.querySelectorAll(".notice-img").forEach((b) => b.onclick = (e) => { e.stopPropagation(); const n = notices.find((x) => x.image === b.dataset.img); if (n) noticePopup(n, true); });
   // popupUntil 날짜까지는 상황실을 열 때 팝업으로 (인트로가 끝난 뒤, 페이지당 한 번)
   if (!renderNotices._popped) {
