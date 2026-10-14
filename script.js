@@ -508,21 +508,30 @@ function renderNotices(notices) {
     list.innerHTML = `<li class="notice-row skeleton">등록된 공지사항이 없습니다.</li>`;
     return;
   }
+  // 'until' 날짜가 지난 공지는 화면에서 내린다 (data.json 에는 남아 있음)
+  const todayN = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Baghdad" }).format(new Date());
+  notices = notices.filter((n) => !n.until || todayN <= n.until);
   // 중요도순(긴급 → 주의 → 안내), 같은 등급 안에서는 data.json 순서 그대로
   const rank = { "긴급": 0, "주의": 1, "안내": 2 };
   notices = notices.map((n, i) => [n, i]).sort((x, y) => ((rank[x[0].level] ?? 3) - (rank[y[0].level] ?? 3)) || (x[1] - y[1])).map((x) => x[0]);
-  // 휴대폰에서는 공지 본문이 두 줄만 보이고, 누르면 펼쳐진다 (CSS 쪽 640px 이하에서만 적용)
-  if (!list.dataset.tapBound) { list.dataset.tapBound = "1"; list.addEventListener("click", (e) => { const r = e.target.closest(".notice-row"); if (r) r.classList.toggle("open"); }); }
-  list.innerHTML = notices.map(n => `
-    <li class="notice-row level-${escapeHtml(n.level)}">
+  // 공지가 길어져도 아래 '오늘 작업 현황'이 밀려나지 않게: 본문은 두 줄만, 누르면 그 공지만 펼침 · 2개 넘으면 '더 보기'
+  const SHOW = 2;
+  if (!list.dataset.tapBound) { list.dataset.tapBound = "1"; list.addEventListener("click", (e) => {
+    const more = e.target.closest(".notice-more"); if (more) { list.classList.add("all"); more.remove(); return; }
+    const r = e.target.closest(".notice-row"); if (!r || e.target.closest("a")) return;
+    const was = r.classList.contains("open"); list.querySelectorAll(".notice-row.open").forEach((x) => x.classList.remove("open")); if (!was) r.classList.add("open");
+  }); }
+  list.classList.remove("all");
+  list.innerHTML = notices.map((n, i) => `
+    <li class="notice-row level-${escapeHtml(n.level)}${i >= SHOW ? " notice-extra" : ""}" title="눌러서 전체 내용 보기">
       <div class="notice-top">
-        <span class="notice-title"><span class="notice-tag">${escapeHtml(n.level)}</span>${escapeHtml(n.title)}</span>
+        <span class="notice-title"><span class="notice-tag">${escapeHtml(n.level)}</span>${escapeHtml(n.title)}${n.image ? ' <span class="notice-cam" title="사진 있음">📷</span>' : ""}</span>
         <span class="notice-date">${escapeHtml(n.date)}</span>
       </div>
       <div class="notice-body">${escapeHtml(n.body)}</div>
       ${n.image ? `<button type="button" class="notice-img" data-img="${escapeHtml(n.image)}" title="사진 크게 보기"><img src="${escapeHtml(n.image)}" alt="${escapeHtml(n.imageAlt || n.title)}" loading="lazy"><span>📷 사진 보기</span></button>` : ""}
     </li>
-  `).join("");
+  `).join("") + (notices.length > SHOW ? `<li class="notice-more"><button type="button">공지 ${notices.length - SHOW}개 더 보기 ⌄</button></li>` : "");
   list.querySelectorAll(".notice-img").forEach((b) => b.onclick = (e) => { e.stopPropagation(); const n = notices.find((x) => x.image === b.dataset.img); if (n) noticePopup(n, true); });
   // popupUntil 날짜까지는 상황실을 열 때 팝업으로 (인트로가 끝난 뒤, 페이지당 한 번)
   if (!renderNotices._popped) {

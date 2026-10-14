@@ -4544,3 +4544,14 @@ body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !impo
 .ntc-pop-f button { font: inherit; font-size: 14px; padding: 9px 18px; border-radius: 10px; cursor: pointer; border: 1px solid var(--border); background: rgba(255,255,255,.05); color: var(--text); }
 .ntc-pop-f .ntc-ok { background: var(--cyan); border-color: var(--cyan); color: #06231f; font-weight: 700; }
 @media (max-width: 760px) { .ntc-pop-c { grid-template-columns: 1fr; } .ntc-pop h2 { font-size: 18px; } }
+/* 공지: 두 줄만 보이고 누르면 펼침 (모든 화면 크기) · 3개 넘으면 '더 보기' */
+.hero-notices .notice-row { cursor: pointer; transition: background .15s; }
+.hero-notices .notice-row:hover { background: rgba(255,255,255,.03); }
+.hero-notices .notice-row:not(.open) .notice-body { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.hero-notices .notice-row:not(.open) .notice-img { display: none; }
+.hero-notices .notice-row.open { background: rgba(53,208,192,.05); }
+.notice-cam { font-size: .85em; opacity: .8; }
+.notice-list:not(.all) .notice-extra { display: none; }
+.notice-more { list-style: none; }
+.notice-more button { width: 100%; font: inherit; font-size: 13px; color: var(--cyan); background: transparent; border: 1px dashed var(--border); border-radius: 8px; padding: 7px 0; cursor: pointer; }
+.notice-more button:hover { background: rgba(53,208,192,.07); }

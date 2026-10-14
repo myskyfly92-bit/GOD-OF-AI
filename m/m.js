@@ -142,7 +142,7 @@
       if (s.lastIncidentDate) { $("#freeDays").innerHTML = fmt(days(s.lastIncidentDate)) + "<small>일</small>"; $("#lastInc").textContent = "최종 사고 기준일 " + s.lastIncidentDate; }
       if (s.constructionStartDate) $("#buildDays").innerHTML = fmt(days(s.constructionStartDate) + 1) + "<small>일째</small>";
       const rank = { "긴급": 0, "주의": 1, "안내": 2 };
-      const ns = (d.notices || []).slice().sort((a, b) => (rank[a.level] ?? 3) - (rank[b.level] ?? 3));
+      const ns = (d.notices || []).filter((n) => !n.until || today() <= n.until).sort((a, b) => (rank[a.level] ?? 3) - (rank[b.level] ?? 3));
       fill("noticeCard", ns.length ? `<ul class="list">${ns.map((n) => `<li class="item fold"><div class="t"><span class="tag ${n.level === "긴급" ? "red" : n.level === "주의" ? "amb" : ""}">${esc(n.level)}</span> ${esc(n.title)}</div>
         <div class="m">${esc(n.date)}${n.image ? " · 📷 사진" : ""}</div><div class="b">${esc(n.body)}${n.image ? `<img class="ntc-img" src="../${esc(n.image)}" alt="${esc(n.imageAlt || n.title)}" loading="lazy">` : ""}</div></li>`).join("")}</ul>` : `<p class="empty">새 공지가 없습니다.</p>`);
       // popupUntil 날짜까지는 열 때 사진과 함께 팝업 (오늘 그만 보기)
