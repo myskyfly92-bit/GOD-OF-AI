@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T02:34:53.353Z",
+  "generatedAt": "2026-10-14T00:18:35.863Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -10,11 +10,11 @@
       "date": "2026-09-30T14:38:13.000Z"
     },
     {
-      "title": "지침",
+      "title": "채용공고",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0RTllaXJiOXVCbVFEQjJqZ3FKLTVMNHNHV1BDLWxjMXpHX2tOLUJoY1dhNDFIVnFCeFJ6X2pLb01IZTZJWU1ablFmcktsX0txQTlZSUdB?oc=5",
-      "date": "2025-12-16T12:27:05.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
+      "date": "2025-12-16T15:48:42.000Z"
     },
     {
       "title": "AI의 위로가 사람을 대신할 수 없습니다 「정신건강 목적 생성형 AI 이용 가이드라인」 발표",
@@ -52,11 +52,18 @@
       "date": "2026-01-16T10:40:08.000Z"
     },
     {
+      "title": "보도자료(전체)",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
+      "date": "2025-12-16T15:46:00.000Z"
+    },
+    {
       "title": "- 질병관리청",
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-12T23:38:52.000Z"
+      "date": "2026-10-13T11:40:14.000Z"
     },
     {
       "title": "감시체계 연보",
@@ -71,13 +78,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
       "date": "2024-06-10T02:47:27.000Z"
-    },
-    {
-      "title": "채용공고",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
-      "date": "2025-12-16T15:48:42.000Z"
     },
     {
       "title": "ICCON 감염예방 소식지",
