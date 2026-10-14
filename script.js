@@ -173,6 +173,11 @@ const SITE_EVENTS = {
   "2026-10-15": "얼음물 배부 종료",
   "2026-10-20": "안전보건교육 (이라크인·TCN 근로자)",
 };
+/* 매달 반복 현장 일정: 소화기 일제 점검 기간 (매달 1~5일, 2026년 11월부터) — 달력 칸 아래 주황 띠 + 목록 한 줄 */
+const MONTHLY_EVENTS = [
+  { from: "2026-11", d1: 1, d2: 5, ic: "🧯", name: "소화기 일제 점검 기간", cls: "has-firecheck" },
+];
+const monthlyOn = (y, m0, d) => { const ym = `${y}-${String(m0 + 1).padStart(2, "0")}`; return MONTHLY_EVENTS.filter((e) => ym >= e.from && d >= e.d1 && d <= e.d2); };
 
 /* ---------------- 달력용 일별 날씨 아이콘 (Open-Meteo weathercode) ---------------- */
 let CALENDAR_DAILY_FORECAST = {}; // { "YYYY-MM-DD": { code, tmax, tmin } }
@@ -246,6 +251,9 @@ function storeDailyForecastForCalendar(daily) {
       if (key === todayKey) cell.classList.add("is-today");
       if (krName || iqName) cell.classList.add("has-holiday");
       if (evName) cell.classList.add("has-event");
+      const mon = monthlyOn(viewYear, viewMonth, d);
+      mon.forEach((e) => { cell.classList.add(e.cls); if (d === e.d1) cell.classList.add("mo-start"); if (d === e.d2) cell.classList.add("mo-end"); });
+      if (mon.length && !(krName || iqName || evName)) cell.title = mon.map((e) => `${e.ic} ${e.name} (매달 ${e.d1}~${e.d2}일)`).join(" · ");
 
       const num = document.createElement("span");
       num.textContent = String(d);
@@ -292,6 +300,7 @@ function storeDailyForecastForCalendar(daily) {
         if (krName) titleParts.push(`🇰🇷 ${krName}`);
         if (iqName) titleParts.push(`🇮🇶 ${iqName}`);
         if (evName) titleParts.push(`📌 ${evName}`);
+        mon.forEach((e) => titleParts.push(`${e.ic} ${e.name}`));
         cell.title = titleParts.join(" · ");
         monthEntries.push({ d, krName, iqName, evName });
       }
@@ -300,7 +309,14 @@ function storeDailyForecastForCalendar(daily) {
     }
 
     list.innerHTML = "";
-    if (monthEntries.length === 0) {
+    // 매달 반복 일정은 날짜 범위로 한 줄 (맨 위)
+    const ym = `${viewYear}-${pad2(viewMonth + 1)}`;
+    MONTHLY_EVENTS.filter((e) => ym >= e.from).forEach((e) => {
+      const li = document.createElement("li"); li.className = "holiday-list-mo";
+      li.innerHTML = `<span class="holiday-list-date">${pad2(viewMonth + 1)}/${pad2(e.d1)}~${pad2(e.d2)}</span><span><span class="holiday-list-fire">${e.ic} ${e.name}</span> <small>매달 ${e.d1}~${e.d2}일</small></span>`;
+      list.appendChild(li);
+    });
+    if (monthEntries.length === 0 && !list.children.length) {
       const li = document.createElement("li");
       li.className = "holiday-list-empty";
       li.textContent = "이번 달은 공휴일·현장 일정이 없습니다.";
@@ -7261,7 +7277,7 @@ async function clinicCall(action, payload) {
       { sel: ".today-work-panel", text: `<b>오늘 작업 현황</b>이에요. 작업구역 일정(구글 시트)에서 오늘 날짜만 모아 <b>작업 건수 · 투입 인원 · 위험작업 수</b>를 보여 줘요.<br>아래 <b>'작업구역 탭에서 보기 →'</b> 를 누르면 지도로 바로 넘어가요.` },
       { sel: ".today-list-panel", text: `옆 카드는 <b>오늘 작업 목록</b>이에요. 오늘 작업을 하나씩 보여 주고, <b>위험작업이 맨 위</b>에 빨간 표시로 와요. 구역·세부위치, 인원, 담당자, <b>사용장비</b>까지 한눈에 볼 수 있어요.` },
       
-      { sel: ".holiday-panel", opt: true, text: `<b>달력</b>이에요. ‹ › 로 달을 옮기고, <b>한국 공휴일</b>(빨강) · <b>이라크 공휴일</b>(청록) · <b>현장 일정</b>(금색)을 점으로 구분해요. 얼음물 배부 종료, 안전보건교육 같은 현장 일정은 아래 목록에 📌로 나와요. 이슬람력 휴일은 달 관측에 따라 하루쯤 바뀔 수 있어요.` },
+      { sel: ".holiday-panel", opt: true, text: `<b>달력</b>이에요. ‹ › 로 달을 옮기고, <b>한국 공휴일</b>(빨강) · <b>이라크 공휴일</b>(청록) · <b>현장 일정</b>(금색)을 점으로 구분해요. 얼음물 배부 종료, 안전보건교육 같은 현장 일정은 아래 목록에 📌로 나와요. 매달 <b>1~5일</b>은 <b>🧯 소화기 일제 점검 기간</b>으로 날짜 아래 주황 띠가 그어져요. 이슬람력 휴일은 달 관측에 따라 하루쯤 바뀔 수 있어요.` },
       { sel: "#fxWidget", opt: true, text: `<b>환율</b>이에요. 달러→이라크 디나르(<b>공식 고시</b>와 <b>시장 환율</b>), 달러→원, 엔·위안→원을 보여 줘요.` },
     ]},
     { id: "safety", title: "안전", icon: "⛑️", steps: [

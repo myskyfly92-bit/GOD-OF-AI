@@ -221,10 +221,16 @@
     const t0 = Date.parse(today() + "T00:00:00Z"), ev = [];
     const addAll = (o, kind) => Object.keys(o).forEach((k) => { const dt = Date.parse(k + "T00:00:00Z"); if (dt >= t0 && dt - t0 <= 60 * 86400000) ev.push([k, kind, o[k]]); });
     addAll(SITE_EV, "site"); addAll(KR_HOL, "kr"); addAll(IQ_HOL, "iq");
+    // 매달 1~5일 소화기 일제 점검 기간 (2026년 11월부터): 진행 중이면 오늘, 아니면 다음 달 1일을 한 줄로
+    (() => { const td = today(), y = +td.slice(0, 4), mo = +td.slice(5, 7), d = +td.slice(8, 10);
+      const pick = d <= 5 ? [y, mo] : mo === 12 ? [y + 1, 1] : [y, mo + 1];
+      const ym = `${pick[0]}-${String(pick[1]).padStart(2, "0")}`; if (ym < "2026-11") return;
+      const k = d <= 5 && `${y}-${String(mo).padStart(2, "0")}` === ym ? td : ym + "-01";
+      ev.push([k, "fire", `소화기 일제 점검 기간 (${pick[1]}/1~${pick[1]}/5)`]); })();
     ev.sort((a, b) => a[0].localeCompare(b[0]));
     fill("calCard", ev.length ? `<ul class="list">${ev.slice(0, 6).map(([k, kind, n]) => {
       const dd = Math.round((Date.parse(k + "T00:00:00Z") - t0) / 86400000);
-      return `<li class="item"><div class="t">${kind === "site" ? "📌 " : kind === "kr" ? "🇰🇷 " : "🇮🇶 "}${esc(n)}</div><div class="m">${md(k)} (${"일월화수목금토"[new Date(k + "T00:00:00Z").getUTCDay()]}) · ${dd === 0 ? "오늘" : "D-" + dd}</div></li>`; }).join("")}</ul>
+      return `<li class="item"><div class="t">${kind === "site" ? "📌 " : kind === "fire" ? "🧯 " : kind === "kr" ? "🇰🇷 " : "🇮🇶 "}${esc(n)}</div><div class="m">${md(k)} (${"일월화수목금토"[new Date(k + "T00:00:00Z").getUTCDay()]}) · ${dd === 0 ? "오늘" : "D-" + dd}</div></li>`; }).join("")}</ul>
       <p class="src">이라크 이슬람력 공휴일은 달 관측에 따라 ±1일 바뀔 수 있습니다.</p>` : `<p class="empty">60일 안에 예정된 일정이 없습니다.</p>`);
 
     // 환율
