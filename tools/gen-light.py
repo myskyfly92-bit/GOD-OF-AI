@@ -11,7 +11,7 @@ css = open(os.path.join(ROOT, 'style.css'), encoding='utf-8').read()
 base = open(os.path.join(ROOT, 'tools', 'light-base.css'), encoding='utf-8').read()
 css = re.sub(r'/\*.*?\*/', '', css, flags=re.S)
 
-SKIP_SEL = re.compile(r'topbar|hse-intro|mascot|kiosk|brand|sky-layer|clock|flap|hse-guide|vc-win|vc-pop|visit-counter|net-pill|\.vc-|desk-tip|desk-box|desk-toast|bg-reveal|guide-|wx-fx|rain|snow|plane-icon|::selection|@font', re.I)
+SKIP_SEL = re.compile(r'topbar|hse-intro|mascot|kiosk|brand|sky-layer|clock|flap|\.fc\b|\.fc-|hse-guide|vc-win|vc-pop|visit-counter|net-pill|\.vc-|desk-tip|desk-box|desk-toast|bg-reveal|guide-|wx-fx|rain|snow|plane-icon|::selection|@font', re.I)
 COLOR_PROPS = {'color', 'fill', 'stroke', 'caret-color', '-webkit-text-fill-color', 'text-decoration-color'}
 SURF_PROPS = re.compile(r'^(background(-color|-image)?|border(-(top|bottom|left|right))?(-color)?|outline(-color)?|box-shadow|text-shadow|column-rule(-color)?)$')
 
