@@ -6535,6 +6535,8 @@ const symCatInfo = (name) => SYMCATS.find((c) => c[0] === name) || SYMCATS[SYMCA
 
 async function loadClinic(force) {
   if (!force && Date.now() - clinicLoadedAt < 5 * 60 * 1000) return;
+  const fcnBox = document.getElementById("clinicFcn");
+  if (fcnBox) fcnBox.innerHTML = fcnHtml();
   document.getElementById("clinicInfo").innerHTML =
     (() => { const I = UI_EN ? CLINIC_INFO_EN : CLINIC_INFO;
       return `<span><b>${TT("운영", "Hours")}</b> ${escapeHtml(I.hours)}</span><span><b>${TT("위치", "Location")}</b> ${escapeHtml(I.place)}</span><span><b>${TT("연락", "Contact")}</b> ${escapeHtml(I.contact)}</span>`; })();
@@ -9916,6 +9918,17 @@ const CLINIC_TIPS = {
   11: [["🤧", "감기 유행 시작 — 손 씻기·환기"], ["🧥", "새벽 추위 — 보온"], ["🔥", "난방기 켤 때 주변 정리·자리 비우면 끄기"]],
   12: [["🤧", "감기·독감 — 증상 있으면 일찍 클리닉"], ["🔥", "숙소 난방기·전기장판 화재 주의"], ["🧥", "새벽 작업 보온·미끄럼 주의"]],
 };
+// FCN 진료 신청 (사업 재개 시 운영 예정 — 지금은 입력 막음, 아무 데도 저장 안 함)
+function fcnHtml() {
+  const f = (k, e, c) => `<input type="text"${c ? ` class="${c}"` : ""} placeholder="${TT(k, e)}" aria-label="${TT(k, e)}" disabled>`;
+  return `<div class="cx-fcn-h"><span class="cx-fcn-ic">🩺</span><div><b>${TT("FCN 진료 신청", "FCN appointment request")}</b> <span class="cx-fcn-tag">${TT("준비 중", "Coming soon")}</span>
+      <p class="cx-fcn-note">${TT("사업 재개 시 운영 예정입니다.", "Will open when the project resumes.")}</p></div></div>
+    <form class="cx-fcn-f" onsubmit="return false" aria-disabled="true">
+      ${f("소속", "Company / Dept")}${f("사번", "Employee ID")}${f("이름", "Name")}${f("한국인 담당자", "Korean supervisor")}
+      ${f("증상 (예: 두통, 기침 3일째)", "Symptoms (e.g. headache, cough for 3 days)", "cx-fcn-wide")}
+      <button type="button" disabled>${TT("신청", "Request")}</button>
+    </form>`;
+}
 function clinicExtraHtml(month) {
   // ① 증상 TOP
   const sym = {};
@@ -9937,18 +9950,6 @@ function clinicExtraHtml(month) {
     <div class="clinic-sub" style="margin-top:14px">${TT(`${mo}월 건강 수칙`, "This month's health tips")}</div>
     <ul class="cx-tips">${tips.map(([ic, t]) => `<li><span>${ic}</span>${escapeHtml(t)}</li>`).join("")}</ul>
     <div class="cx-er" id="clinicEr"><b>🚑 ${TT("응급 시", "Emergency")}</b> ${TT("현장 클리닉", "Site clinic")} <a href="tel:07809262446">0780-926-2446</a> · ${TT("이라크 긴급", "Iraq emergency")} <a href="tel:911">911</a></div>
-    <div class="cx-fcn">
-      <div class="clinic-sub">🩺 ${TT("FCN 진료 신청", "FCN appointment request")} <span class="cx-fcn-tag">${TT("준비 중", "Coming soon")}</span></div>
-      <form class="cx-fcn-f" onsubmit="return false" aria-disabled="true">
-        <input type="text" placeholder="${TT("소속", "Company / Dept")}" aria-label="${TT("소속", "Company / Dept")}" disabled>
-        <input type="text" placeholder="${TT("사번", "Employee ID")}" aria-label="${TT("사번", "Employee ID")}" disabled>
-        <input type="text" placeholder="${TT("이름", "Name")}" aria-label="${TT("이름", "Name")}" disabled>
-        <input type="text" placeholder="${TT("한국인 담당자", "Korean supervisor")}" aria-label="${TT("한국인 담당자", "Korean supervisor")}" disabled>
-        <input type="text" class="cx-fcn-wide" placeholder="${TT("증상 (예: 두통, 기침 3일째)", "Symptoms (e.g. headache, cough for 3 days)")}" aria-label="${TT("증상", "Symptoms")}" disabled>
-        <button type="button" disabled>${TT("신청", "Request")}</button>
-      </form>
-      <p class="cx-fcn-note">※ ${TT("사업 재개 시 운영 예정입니다.", "Will open when the project resumes.")}</p>
-    </div>
   </div>`;
 }
 // 가까운 응급실 2곳 (주변 의료기관 자료 · OpenStreetMap)

@@ -4577,13 +4577,19 @@ body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !impo
 .cx-er small { color: var(--text-muted); font-weight: 500; }
 .cx-er-l { color: var(--text-muted); }
 
-/* FCN 진료 신청 (사업 재개 시 운영 예정 — 지금은 입력 막음) */
-.cx-fcn { margin-top: 14px; padding: 12px 14px; border-radius: 10px; background: rgba(255,255,255,.03); border: 1px dashed var(--border); }
-.cx-fcn .clinic-sub { margin-top: 0; display: flex; align-items: center; gap: 8px; }
-.cx-fcn-tag { font-size: 11px; font-weight: 700; color: #f2a93b; border: 1px solid rgba(242,169,59,.5); border-radius: 999px; padding: 1px 8px; }
-.cx-fcn-f { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
-.cx-fcn-f button, .cx-fcn-f .cx-fcn-wide { grid-column: 1 / -1; }
-.cx-fcn-f input, .cx-fcn-f button { min-width: 0; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: rgba(255,255,255,.04); color: var(--text); font: inherit; font-size: 13px; }
-.cx-fcn-f :disabled { opacity: .55; cursor: not-allowed; }
-.cx-fcn-f button { font-weight: 700; }
-.cx-fcn-note { margin: 8px 0 0; font-size: 12.5px; color: var(--text-muted); }
+/* FCN 진료 신청 (사업 재개 시 운영 예정 — 지금은 입력 막음) · 진료현황 맨 위 */
+.cx-fcn { display: grid; grid-template-columns: minmax(220px, auto) 1fr; gap: 16px; align-items: center; margin: 4px 0 14px; padding: 14px 18px; border-radius: 14px;
+  background: linear-gradient(100deg, rgba(53,208,192,.16), rgba(53,208,192,.04) 60%); border: 1px solid rgba(53,208,192,.45); }
+.cx-fcn:empty { display: none; }
+.cx-fcn-h { display: flex; gap: 12px; align-items: center; }
+.cx-fcn-ic { font-size: 30px; line-height: 1; }
+.cx-fcn-h b { font-size: 18px; letter-spacing: -.01em; }
+.cx-fcn-tag { display: inline-block; vertical-align: 2px; margin-left: 4px; font-size: 11px; font-weight: 700; color: #f2a93b; border: 1px solid rgba(242,169,59,.6); border-radius: 999px; padding: 1px 8px; }
+.cx-fcn-note { margin: 4px 0 0; font-size: 13px; color: var(--text-muted); }
+.cx-fcn-f { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.cx-fcn-f .cx-fcn-wide { grid-column: span 3; }
+.cx-fcn-f input, .cx-fcn-f button { min-width: 0; padding: 9px 11px; border-radius: 8px; border: 1px solid var(--border); background: rgba(0,0,0,.18); color: var(--text); font: inherit; font-size: 13px; }
+.cx-fcn-f :disabled { cursor: not-allowed; }
+.cx-fcn-f input:disabled { opacity: .7; }
+.cx-fcn-f button { font-weight: 700; background: rgba(53,208,192,.25); border-color: rgba(53,208,192,.5); opacity: .6; }
+@media (max-width: 900px) { .cx-fcn { grid-template-columns: 1fr; } .cx-fcn-f { grid-template-columns: 1fr 1fr; } .cx-fcn-f .cx-fcn-wide, .cx-fcn-f button { grid-column: 1 / -1; } }
