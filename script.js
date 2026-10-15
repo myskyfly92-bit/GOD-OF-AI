@@ -9940,8 +9940,10 @@ function clinicExtraHtml(month) {
     <div class="cx-fcn">
       <div class="clinic-sub">🩺 ${TT("FCN 진료 신청", "FCN appointment request")} <span class="cx-fcn-tag">${TT("준비 중", "Coming soon")}</span></div>
       <form class="cx-fcn-f" onsubmit="return false" aria-disabled="true">
+        <input type="text" placeholder="${TT("소속", "Company / Dept")}" aria-label="${TT("소속", "Company / Dept")}" disabled>
         <input type="text" placeholder="${TT("사번", "Employee ID")}" aria-label="${TT("사번", "Employee ID")}" disabled>
         <input type="text" placeholder="${TT("이름", "Name")}" aria-label="${TT("이름", "Name")}" disabled>
+        <input type="text" placeholder="${TT("한국인 담당자", "Korean supervisor")}" aria-label="${TT("한국인 담당자", "Korean supervisor")}" disabled>
         <button type="button" disabled>${TT("신청", "Request")}</button>
       </form>
       <p class="cx-fcn-note">※ ${TT("사업 재개 시 운영 예정입니다.", "Will open when the project resumes.")}</p>
