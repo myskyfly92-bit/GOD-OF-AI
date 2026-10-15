@@ -4593,3 +4593,7 @@ body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !impo
 .cx-fcn-f input:disabled { opacity: .7; }
 .cx-fcn-f button { font-weight: 700; background: rgba(53,208,192,.25); border-color: rgba(53,208,192,.5); opacity: .6; }
 @media (max-width: 900px) { .cx-fcn { grid-template-columns: 1fr; } .cx-fcn-f { grid-template-columns: 1fr 1fr; } .cx-fcn-f .cx-fcn-wide, .cx-fcn-f button { grid-column: 1 / -1; } }
+
+/* 헌수호가 위로 올라간 말풍선을 따라감 (--hg-dy: 위로 올라가는 거리) */
+.hse-guide.in .hg-char { transform: translateY(var(--hg-dy, 0px)); }
+.hse-guide .hg-bubble.hg-top.hg-side::before { display: block; bottom: auto; top: 34px; }

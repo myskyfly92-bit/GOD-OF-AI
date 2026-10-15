@@ -7412,7 +7412,7 @@ async function clinicCall(action, payload) {
   function place(el) {
     bubble.classList.remove("hg-top");
     bubble.style.top = "";
-    if (!el || !visible(el)) { ring.hidden = true; return; }
+    if (!el || !visible(el)) { ring.hidden = true; followChar(null); return; }
     const r = el.getBoundingClientRect();
     const inHdr = !!el.closest(".topbar"); // 배너 안에 있는 것(시계·제목)은 배너 기준으로 자르지 않는다
     const pad = 6, hdr = inHdr ? 0 : hdrBottom();
@@ -7428,6 +7428,25 @@ async function clinicCall(action, payload) {
       bubble.classList.add("hg-top");
       if (innerWidth > 700) bubble.style.top = hdr + 14 + "px";
     }
+    followChar({ left, top, right, bottom });
+  }
+  // 말풍선이 위로 올라가면 헌수호도 말풍선 옆으로 따라 올라간다 (표시한 곳을 가리면 제자리)
+  function followChar(t) {
+    const ch = root.querySelector(".hg-char");
+    let dy = 0, side = false;
+    if (bubble.classList.contains("hg-top") && innerWidth > 700) {
+      const b = bubble.getBoundingClientRect(), h = ch.offsetHeight, w = ch.offsetWidth, cl = ch.offsetLeft;
+      dy = Math.round(b.top + 238 - innerHeight);   // 평소(꼬리가 발끝에서 194px 위)와 같은 자리에 말풍선 꼬리(위에서 44px)가 오게
+      dy = Math.min(0, Math.max(dy, 4 - (innerHeight - h)));                    // 화면 위로 넘치지 않게
+      const cTop = innerHeight - h + dy, cBot = cTop + h;
+      // 그림 둘레 여백은 빼고, 40px 넘게 겹칠 때만 '가린다'고 본다
+      const ox = t ? Math.min(cl + w * 0.85, t.right) - Math.max(cl + w * 0.15, t.left) : 0;
+      const oy = t ? Math.min(cBot - 20, t.bottom) - Math.max(cTop, t.top) : 0;
+      const hit = t && ox > 40 && oy > 40;
+      if (hit) dy = 0; else side = true;
+    }
+    ch.style.setProperty("--hg-dy", dy + "px");
+    bubble.classList.toggle("hg-side", side);
   }
   async function goView(id) {
     const cur = document.querySelector(".view.active");
