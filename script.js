@@ -10001,6 +10001,58 @@ function clinicFillEr() {
   }).catch(() => {});
 }
 
+/* 라이트 모드 글자색 자동 보정: 화면 곳곳에서 JS 가 직접 넣은 밝은 글자색(style="color:#f2a93b", --c)은
+   흰 바탕에서 흐리게 보이므로, 라이트 모드일 때만 같은 색상(hue)을 유지한 채 진하게 바꾼다 (원래 값은 data-ltc 에 보관) */
+const lightInk = (function () {
+  const root = document.documentElement;
+  const SKIP = ".topbar, .mascot-bubble, .vc-win, .vc-pop, .desk-tip, .desk-box, .hse-intro, .kiosk-caption, .hse-guide";
+  const rgbOf = (s) => {
+    s = String(s || "").trim();
+    let m = s.match(/^#([0-9a-f]{3}|[0-9a-f]{6})$/i);
+    if (m) { let h = m[1]; if (h.length === 3) h = h.replace(/./g, "$&$&"); return [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16)); }
+    m = s.match(/^rgba?\(\s*([\d.]+)[,\s]+([\d.]+)[,\s]+([\d.]+)/i);
+    return m ? [+m[1], +m[2], +m[3]] : null;
+  };
+  const lum = ([r, g, b]) => [r, g, b].map((v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); }).reduce((a, v, i) => a + v * [0.2126, 0.7152, 0.0722][i], 0);
+  // 흰 바탕 대비 4.5:1 (휘도 0.18 이하)가 될 때까지 명도만 낮춘다
+  function ink(col) {
+    const c = rgbOf(col); if (!c || lum(c) <= 0.18) return null;
+    let [r, g, b] = c.map((v) => v / 255);
+    const mx = Math.max(r, g, b), mn = Math.min(r, g, b), l0 = (mx + mn) / 2, d = mx - mn;
+    let h = 0, sat = 0;
+    if (d) { sat = l0 > 0.5 ? d / (2 - mx - mn) : d / (mx + mn); h = mx === r ? (g - b) / d + (g < b ? 6 : 0) : mx === g ? (b - r) / d + 2 : (r - g) / d + 4; h /= 6; }
+    const toRgb = (l) => { if (!sat) return [l, l, l].map((v) => Math.round(v * 255)); const q = l < 0.5 ? l * (1 + sat) : l + sat - l * sat, p = 2 * l - q;
+      const f = (t) => { t = (t + 1) % 1; return t < 1 / 6 ? p + (q - p) * 6 * t : t < 1 / 2 ? q : t < 2 / 3 ? p + (q - p) * (2 / 3 - t) * 6 : p; };
+      return [f(h + 1 / 3), f(h), f(h - 1 / 3)].map((v) => Math.round(v * 255)); };
+    let l = Math.min(l0, 0.5), out = toRgb(l);
+    while (lum(out) > 0.17 && l > 0.05) { l -= 0.02; out = toRgb(l); }
+    return `rgb(${out.join(",")})`;
+  }
+  function fix(scope) {
+    if (root.getAttribute("data-theme") !== "light") return;
+    (scope || document).querySelectorAll('[style*="color"], [style*="--c"]').forEach((el) => {
+      if (el.dataset.ltc != null || el.closest(SKIP)) return;
+      const c = el.style.color, v = el.style.getPropertyValue("--c");
+      const nc = c && ink(c), nv = v && ink(v);
+      if (!nc && !nv) return;
+      el.dataset.ltc = JSON.stringify([c, v]);
+      if (nc) el.style.color = nc;
+      if (nv) el.style.setProperty("--c", nv);
+    });
+  }
+  function undo() {
+    document.querySelectorAll("[data-ltc]").forEach((el) => {
+      try { const [c, v] = JSON.parse(el.dataset.ltc); el.style.color = c || ""; if (v) el.style.setProperty("--c", v); } catch (e) {}
+      delete el.dataset.ltc;
+    });
+  }
+  let t = 0;
+  new MutationObserver(() => { if (t || root.getAttribute("data-theme") !== "light") return; t = requestAnimationFrame(() => { t = 0; fix(); }); })
+    .observe(document.body, { childList: true, subtree: true });
+  fix();
+  return { fix, undo };
+})();
+
 /* 라이트 / 다크 모드 전환 (상단 메뉴줄 ☀️ 버튼) — 기기마다 기억 (localStorage hseTheme) */
 (function themeToggle() {
   const btn = document.getElementById("themeBtn"); if (!btn) return;
@@ -10010,6 +10062,7 @@ function clinicFillEr() {
     const light = root.getAttribute("data-theme") !== "light";
     if (light) root.setAttribute("data-theme", "light"); else root.removeAttribute("data-theme");
     try { localStorage.setItem("hseTheme", light ? "light" : "dark"); } catch (e) {}
+    if (light) lightInk.fix(); else lightInk.undo();
     draw();
   });
   draw();

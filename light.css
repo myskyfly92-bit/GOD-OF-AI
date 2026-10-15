@@ -16,7 +16,7 @@ html[data-theme="light"], html[data-theme="light"] body { background: var(--bg);
 html[data-theme="light"] body::before { opacity: .07 !important; filter: grayscale(.5); }
 html[data-theme="light"] body::after { opacity: 0 !important; }
 /* 어두운 섬(배너·안내 버튼·마스코트 말풍선 등)은 다크 색 변수를 그대로 쓴다 */
-html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-pop, .desk-tip, .desk-box, .desk-toast, .hse-intro, .kiosk-caption) {
+html[data-theme="light"] :is(.topbar, .mascot-bubble, .vc-win, .vc-pop, .desk-tip, .desk-box, .desk-toast, .hse-intro, .kiosk-caption) {
   --text: #eaf0f6; --text-muted: #8996a6; --text-dim: #7d8998;
   --panel: #121924; --panel-2: #0f151e; --border: #202a38; --border-soft: #1a2330; --bg: #0a0e13;
   --cyan: #35d0c0; --amber: #f2a93b; --danger: #e5484d; --blue: #4fb4ff; --green: #5fd68f; --gold: #ffd166;
@@ -88,7 +88,6 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .sa-chart { background: rgba(248,248,249,0.55); }
 :where(html[data-theme="light"]) .sa-bar-track { background: rgba(20,40,60,0.046); }
 :where(html[data-theme="light"]) .sa-side { color: #292929; background: radial-gradient(circle at 80% 90%, rgba(79, 180, 255, 0.18), transparent 50%), #e6ebf0; }
-:where(html[data-theme="light"]) .sa-side-arrow { color: #f9fafb; }
 :where(html[data-theme="light"]) .sa-side-card { background: rgba(20,40,60,0.092); }
 :where(html[data-theme="light"]) .sa-side-card small { color: #002559; }
 :where(html[data-theme="light"]) .sa-side-sep { border-top: 1px dashed rgba(20,40,60,0.402); }
@@ -112,8 +111,7 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .air-tab { background: rgba(248,248,249,0.6); }
 :where(html[data-theme="light"]) .air-tab.active { color: #fafafa; }
 :where(html[data-theme="light"]) .air-live iframe { background: #f3f4f6; }
-:where(html[data-theme="light"]) .airport-pin { color: #fafafa; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
-:where(html[data-theme="light"]) .airport-label { color: #f9fafb; }
+:where(html[data-theme="light"]) .airport-pin { box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
 :where(html[data-theme="light"]) .group-btn { background: rgba(248,248,249,0.7); }
 :where(html[data-theme="light"]) .sub-row { background: rgba(248,248,249,0.45); }
 :where(html[data-theme="light"]) .sub-row .tab-btn { color: #273447; }
@@ -132,7 +130,10 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .alert-chip b { color: #292929; }
 :where(html[data-theme="light"]) .dust-alert.bad { color: #c26200; }
 :where(html[data-theme="light"]) .dust-alert.storm { color: #9e0004; }
-:where(html[data-theme="light"]) .dust-day { background: rgba(20,40,60,0.023); }
+:where(html[data-theme="light"]) .dust-day { --c: #539b27; background: rgba(20,40,60,0.023); }
+:where(html[data-theme="light"]) .dust-day.warn { --c: #c28800; }
+:where(html[data-theme="light"]) .dust-day.bad { --c: #ba7308; }
+:where(html[data-theme="light"]) .dust-day.storm { --c: #ad1419; }
 :where(html[data-theme="light"]) .dust-chart-wrap { background: rgba(248,248,249,0.4); }
 :where(html[data-theme="light"]) .quake-map, :where(html[data-theme="light"]) .travel-map { background: #f3f4f6 !important; }
 :where(html[data-theme="light"]) .quake-table tr.big td { color: #9e0004; }
@@ -140,10 +141,11 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .sat-frame::after { background: radial-gradient(circle at 50% 50%, transparent 40%, rgba(251,251,252,0.55)), linear-gradient(90deg, rgba(251,251,252,0.55), transparent 55%); }
 :where(html[data-theme="light"]) .sat-credit { color: rgba(41,41,41,0.6); }
 :where(html[data-theme="light"]) .sat-status { color: rgba(41,41,41,0.55); }
-:where(html[data-theme="light"]) .celebrate-banner { color: #fbfaf9; }
-:where(html[data-theme="light"]) .celebrate-banner button { color: #fbfaf9; }
-:where(html[data-theme="light"]) .clinic-card { background: rgba(20,40,60,0.023); }
+:where(html[data-theme="light"]) .clinic-card { --c: #22a093; background: rgba(20,40,60,0.023); }
 :where(html[data-theme="light"]) .clinic-card em.up { color: #9e0004; }
+:where(html[data-theme="light"]) .clinic-card.warn { --c: #af0700; }
+:where(html[data-theme="light"]) .clinic-card.heat { --c: #ba7308; }
+:where(html[data-theme="light"]) .clinic-card.danger { --c: #ad1419; }
 :where(html[data-theme="light"]) .clinic-top li span { background: rgba(20,40,60,0.069); }
 :where(html[data-theme="light"]) .clinic-table td.ref { color: #9e0004; }
 :where(html[data-theme="light"]) .clinic-add-btn { color: #fafafa; }
@@ -152,7 +154,6 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .clinic-del:hover { color: #9e0004; }
 :where(html[data-theme="light"]) .emb-filter button { background: rgba(248,248,249,0.6); }
 :where(html[data-theme="light"]) .emb-filter button.active { color: #fafafa; }
-:where(html[data-theme="light"]) .emb-filter button.active b { color: #fafafa; }
 :where(html[data-theme="light"]) .emb-kind.safe { color: #9e0004; }
 :where(html[data-theme="light"]) .fc { color: #292929; box-shadow: 0 2px 6px rgba(0,0,0,0.165), inset 0 0 0 1px rgba(20,40,60,0.069); }
 :where(html[data-theme="light"]) .fc-top, :where(html[data-theme="light"]) .fc-flip-top { background: #e8eaec; }
@@ -188,14 +189,19 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .aqi-seg button.active { color: #fafafa; }
 :where(html[data-theme="light"]) .aqi-row { background: rgba(20,40,60,0.029); }
 :where(html[data-theme="light"]) .aqi-bar { background: rgba(20,40,60,0.069); }
+:where(html[data-theme="light"]) .hg-again { background: rgba(248,248,249,0.82); }
 :where(html[data-theme="light"]) .kg-chips button { background: rgba(248,248,249,0.6); }
 :where(html[data-theme="light"]) .kg-chips button.active { color: #fafafa; }
 :where(html[data-theme="light"]) .kg-row { background: rgba(20,40,60,0.029); }
 :where(html[data-theme="light"]) .cs-result { background: rgba(248,248,249,0.45); }
 :where(html[data-theme="light"]) .cs-r-big.bad > b { color: #9e0004; }
-:where(html[data-theme="light"]) .cs-std-card { background: rgba(20,40,60,0.023); }
+:where(html[data-theme="light"]) .cs-std-card { --c: #22a093; background: rgba(20,40,60,0.023); }
+:where(html[data-theme="light"]) .cs-std-card.o2 { --c: #006fc2; }
+:where(html[data-theme="light"]) .cs-std-card.lel { --c: #ba7308; }
+:where(html[data-theme="light"]) .cs-std-card.co { --c: #af0700; }
+:where(html[data-theme="light"]) .cs-std-card.h2s { --c: #c28800; }
+:where(html[data-theme="light"]) .cs-std-card.co2 { --c: #621992; }
 :where(html[data-theme="light"]) .kosha-biz-chip.is-cons { color: #ae6e0d; }
-:where(html[data-theme="light"]) .kosha-biz.is-cons { color: #fbfaf9; }
 :where(html[data-theme="light"]) .clinic-unlock input { background: rgba(20,40,60,0.057); }
 :where(html[data-theme="light"]) .clinic-unlock button { color: #fafafa; }
 :where(html[data-theme="light"]) .clinic-unlock-msg { color: #af0700; }
@@ -208,7 +214,6 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) i.mk { color: #292929; box-shadow: 0 0 0 2px rgba(0,0,0,0.105); }
 :where(html[data-theme="light"]) .med-filter button.active { color: #fafafa; }
 :where(html[data-theme="light"]) .med-item { background: rgba(20,40,60,0.023); }
-:where(html[data-theme="light"]) .mi-k { color: #fafafa; }
 :where(html[data-theme="light"]) .mi-e { color: #292929; }
 :where(html[data-theme="light"]) .med-warn b { color: #740000; }
 :where(html[data-theme="light"]) .mi-s span { color: #004989; }
@@ -316,7 +321,7 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .wz-co-lines path { stroke: rgba(41,41,41,0.9); }
 :where(html[data-theme="light"]) .wz-co-lines rect { stroke: #292929; }
 :where(html[data-theme="light"]) .wz-co-btn.on { color: #292929; }
-:where(html[data-theme="light"]) .wzh-cty path { fill: rgba(250,250,250,0.25); stroke: rgba(41,41,41,0.08); }
+:where(html[data-theme="light"]) .wzh-cty path { stroke: rgba(41,41,41,0.08); }
 :where(html[data-theme="light"]) .wzh-gov path { fill: rgba(34,160,147,0.13); stroke: rgba(34,160,147,0.3); }
 :where(html[data-theme="light"]) .wzh-gov path.bg { fill: rgba(186,115,8,0.18); stroke: rgba(186,115,8,0.7); }
 :where(html[data-theme="light"]) .wzh-riv path { stroke: rgba(0,77,186,0.55); }
@@ -332,7 +337,6 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .wzh-card:hover, :where(html[data-theme="light"]) .wzh-card:focus-visible { background: rgba(20,40,60,0.046); }
 :where(html[data-theme="light"]) .wzh-card.wz-cat-camp, :where(html[data-theme="light"]) .wzh-card.wz-cat-north, :where(html[data-theme="light"]) .wzh-card.wz-cat-south { background: rgba(248,248,249,0.6); }
 :where(html[data-theme="light"]) .wzh-thumb { border: 1px solid rgba(20,40,60,0.172); }
-:where(html[data-theme="light"]) .wzh-no { color: #fafafa; }
 :where(html[data-theme="light"]) .wzh-body b { color: #292929; }
 :where(html[data-theme="light"]) .wzh-stat em.r { color: #9e0004; }
 :where(html[data-theme="light"]) .wzh-card:hover .wzh-go { color: #292929; }
@@ -340,7 +344,7 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .wzh-brd path { stroke: rgba(41,41,41,0.55); }
 :where(html[data-theme="light"]) .today-work-panel .tw-link, :where(html[data-theme="light"]) .fit-fx .today-work-panel .tw-link { background: rgba(248,248,249,0.7); box-shadow: 0 4px 14px rgba(0,0,0,0.105); }
 :where(html[data-theme="light"]) .today-work-panel .tw-link:hover { color: var(--bg, #fafafa); }
-:where(html[data-theme="light"]) .today-work-panel .tw-link:hover .tw-arr { background: rgba(248,248,249,0.18); color: #fafafa; }
+:where(html[data-theme="light"]) .today-work-panel .tw-link:hover .tw-arr { background: rgba(248,248,249,0.18); }
 :where(html[data-theme="light"]) .wz-viewport::-webkit-scrollbar-track { background: rgba(248,248,249,0.85); }
 :where(html[data-theme="light"]) .wz-viewport::-webkit-scrollbar-thumb { border: 2px solid rgba(248,248,249,0.85); }
 :where(html[data-theme="light"]) .wz-viewport::-webkit-scrollbar-corner { background: rgba(248,248,249,0.85); }
@@ -363,16 +367,16 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .talk-st.on { color: #1aa75c; }
 :where(html[data-theme="light"]) .talk-hbtn button:hover { color: #292929; }
 :where(html[data-theme="light"]) .talk-hello { background: rgba(20,40,60,0.034); }
-:where(html[data-theme="light"]) .talk-msg.me .talk-b { color: #fbfaf9; }
 :where(html[data-theme="light"]) .talk-msg.you .talk-b { background: #ebedef; }
 :where(html[data-theme="light"]) .talk-msg.fail small { color: #9e0004; }
 :where(html[data-theme="light"]) .talk-name input { background: rgba(20,40,60,0.034); }
 :where(html[data-theme="light"]) .talk-in textarea { background: #f2f3f5; }
-:where(html[data-theme="light"]) .talk-in button { color: #fbfaf9; }
 :where(html[data-theme="light"]) .talk-room:hover { background: rgba(20,40,60,0.046); }
 :where(html[data-theme="light"]) .talk-room em { color: #292929; }
 :where(html[data-theme="light"]) .talk-room.new b { color: #805500; }
 :where(html[data-theme="light"]) .talk-conv-h b { color: #292929; }
+:where(html[data-theme="light"]) .hg-again, :where(html[data-theme="light"]) .talk-fab, :where(html[data-theme="light"]) .ai-fab { background: #f2f4f5; box-shadow: 0 8px 24px rgba(0,0,0,0.135); }
+:where(html[data-theme="light"]) .hg-again { border: 1px solid rgba(20,40,60,0.322); }
 :where(html[data-theme="light"]) .talk-fab { color: #805500; }
 :where(html[data-theme="light"]) .ci-top { color: #292929; text-shadow: 0 2px 18px rgba(0,0,0,0.165); }
 :where(html[data-theme="light"]) .ci-sub { color: rgba(41,41,41,0.75); }
@@ -410,7 +414,6 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .hw-seg button:hover { background: rgba(20,40,60,0.034); }
 :where(html[data-theme="light"]) .hw-seg button.active { color: #fafafa; }
 :where(html[data-theme="light"]) .hw-mapbox { background: radial-gradient(ellipse at 50% 40%, #f1f3f5, var(--panel-2) 75%); }
-:where(html[data-theme="light"]) .hw-map path { stroke: #fafafa; }
 :where(html[data-theme="light"]) .hw-map path:hover { stroke: #292929; }
 :where(html[data-theme="light"]) .hw-map path.sel { stroke: #292929; }
 :where(html[data-theme="light"]) .hw-site circle:first-child { stroke: #c20002; }
@@ -418,7 +421,6 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .hw-tip { background: rgba(248,249,250,0.95); box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
 :where(html[data-theme="light"]) .hw-list li[data-c]:hover { background: rgba(20,40,60,0.046); }
 :where(html[data-theme="light"]) .hw-bar { background: rgba(20,40,60,0.069); }
-:where(html[data-theme="light"]) .hw-d-h em { color: #fafafa; }
 :where(html[data-theme="light"]) .hw-pbar div { background: rgba(20,40,60,0.069); }
 :where(html[data-theme="light"]) .hw-pbar u { background: rgba(20,40,60,0.5); }
 :where(html[data-theme="light"]) .wn-badge { color: #f9fbfa; }
@@ -454,3 +456,57 @@ html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-po
 :where(html[data-theme="light"]) .theme-btn { background: rgba(20,40,60,0.092); }
 
 /* ---- 손으로 맞춘 부분 ---- */
+/* ===== 라이트 모드 손 보정 (tools/light-fix.css → light.css 맨 끝에 붙음) ===== */
+
+/* 화면 효과: 경보 테두리 빛·주사선은 밝은 화면에서 거슬리므로 약하게 */
+html[data-theme="light"] .scanlines { display: none; }
+html[data-theme="light"] .alert-glow { box-shadow: inset 0 0 0 2px rgba(196, 38, 44, .45), inset 0 0 40px rgba(196, 38, 44, .12); }
+html[data-theme="light"] .alert-glow.still { opacity: .6; }
+
+/* 배너 아래 경계를 부드럽게 (어두운 배너 → 밝은 본문) */
+html[data-theme="light"] .topbar { box-shadow: 0 6px 18px rgba(16, 32, 48, .18); }
+
+/* 카드: 흰 판 + 아주 옅은 그림자, 테두리는 연하게 */
+html[data-theme="light"] .panel { background: #fff; border-color: #dfe5ec; box-shadow: 0 1px 2px rgba(16, 32, 48, .04), 0 6px 18px rgba(16, 32, 48, .05); }
+html[data-theme="light"] .panel-label { color: #5d6a78; }
+
+/* 메뉴 버튼 줄 */
+html[data-theme="light"] :is(.group-btn, .tab-btn, .lang-btn, .bg-peek-btn, .theme-btn, .desk-btn) { background: #fff; border-color: #d3dbe4; color: #2b3947; }
+html[data-theme="light"] :is(.group-btn, .tab-btn, .lang-btn):hover { border-color: #077e73; color: #077e73; }
+html[data-theme="light"] :is(.group-btn.active, .tab-btn.active, .lang-btn.active) { background: #077e73; border-color: #077e73; color: #fff; }
+html[data-theme="light"] .sub-row { background: rgba(255, 255, 255, .7); }
+
+/* 오른쪽 아래 떠 있는 버튼 3개(사용 안내·1:1 상담·법령 도우미)를 같은 톤으로 */
+html[data-theme="light"] .hg-again { background: #fff; color: #16202b; border: 1px solid #d3dbe4; box-shadow: 0 4px 14px rgba(16, 32, 48, .12); }
+html[data-theme="light"] .hg-again:hover { border-color: #077e73; }
+
+/* ---- 지도: 어두운 바다·땅 → 밝은 지도 ---- */
+html[data-theme="light"] :is(.fire-map, .global-map, .quake-map, .travel-map) { background: #d6e6f0 !important; border-color: #d3dbe4; }
+/* 이라크 화재 지도 */
+html[data-theme="light"] .fire-map path[fill="#1b232d"] { fill: #eef1f4; }
+html[data-theme="light"] .fire-map path[fill="#26313d"] { fill: #e2e8ee; stroke: #a3afbb; }
+html[data-theme="light"] .fire-map path[stroke="#4a5563"] { stroke: #b4bec9; }
+html[data-theme="light"] .fire-map path[fill="#1d4a66"] { fill: #b7d6ea; stroke: #8ab8d6; }
+/* 건설사 해외현장 세계 지도 */
+html[data-theme="light"] .global-map path[fill="#1b232d"] { fill: #eef1f4; stroke: #c6cfd8; }
+html[data-theme="light"] .global-map path[fill="#1f4a55"] { fill: #bfe2dc; stroke: #7fb2aa; }
+/* 여행경보 지도: 경보 없는 나라 · 나라 경계 */
+html[data-theme="light"] .travel-map path[fill="#2a3442"] { fill: #e6eaef; }
+html[data-theme="light"] .travel-map path[stroke="#0f1720"] { stroke: #ffffff; }
+/* 지도 글자: 밝은 땅 위에서 읽히게 흰 테두리 */
+html[data-theme="light"] .map-label-wrap > span { text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 2px #fff; }
+html[data-theme="light"] .gov-label { color: #2b3947; }
+html[data-theme="light"] .country-label { color: #6b7886; }
+html[data-theme="light"] .water-label { color: #2a6f9e; }
+html[data-theme="light"] .gcountry-label { color: #1d6f66; text-shadow: 0 0 3px #fff, 0 0 6px #fff; }
+html[data-theme="light"] .map-label-wrap > span.site-label, html[data-theme="light"] .site-star { color: #077e73; }
+/* Leaflet 확대 버튼·출처 표기 */
+html[data-theme="light"] .leaflet-bar a { background: #fff; color: #2b3947; border-color: #d3dbe4; }
+html[data-theme="light"] .leaflet-control-attribution { background: rgba(255, 255, 255, .8) !important; color: #5d6a78 !important; }
+
+/* 국내 중대재해 현황: 오른쪽 '전체 사고사망자' 카드 */
+html[data-theme="light"] .sa-side { background: linear-gradient(160deg, #f4f9fd, #e9f2f9); border-color: #cfe0ee; color: #16202b; }
+html[data-theme="light"] .sa-side-card { background: #fff; border: 1px solid #dbe7f1; }
+html[data-theme="light"] .sa-side-arrow { background: #e6eef6; color: #1a4f80; }
+html[data-theme="light"] .sa-side-arrow:hover { background: #d3e3f1; }
+html[data-theme="light"] .sa-side-sep { border-top-color: #cfdbe6; }

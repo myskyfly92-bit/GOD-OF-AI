@@ -11,7 +11,7 @@ css = open(os.path.join(ROOT, 'style.css'), encoding='utf-8').read()
 base = open(os.path.join(ROOT, 'tools', 'light-base.css'), encoding='utf-8').read()
 css = re.sub(r'/\*.*?\*/', '', css, flags=re.S)
 
-SKIP_SEL = re.compile(r'topbar|hse-intro|mascot|kiosk|brand|sky-layer|clock|flap|\.hg-|hse-guide|vc-win|vc-pop|visit-counter|net-pill|\.vc-|desk-tip|desk-box|desk-toast|bg-reveal|guide-|wx-fx|rain|snow|plane-icon|::selection|@font', re.I)
+SKIP_SEL = re.compile(r'topbar|hse-intro|mascot|kiosk|brand|sky-layer|clock|flap|hse-guide|vc-win|vc-pop|visit-counter|net-pill|\.vc-|desk-tip|desk-box|desk-toast|bg-reveal|guide-|wx-fx|rain|snow|plane-icon|::selection|@font', re.I)
 COLOR_PROPS = {'color', 'fill', 'stroke', 'caret-color', '-webkit-text-fill-color', 'text-decoration-color'}
 SURF_PROPS = re.compile(r'^(background(-color|-image)?|border(-(top|bottom|left|right))?(-color)?|outline(-color)?|box-shadow|text-shadow|column-rule(-color)?)$')
 
@@ -38,11 +38,15 @@ def fmt(r, g, b, a):
 def hls(r, g, b): return colorsys.rgb_to_hls(r / 255, g / 255, b / 255)
 def rgb(h, l, s): return [x * 255 for x in colorsys.hls_to_rgb(h, l, s)]
 
-def conv(col, kind):
+def conv(col, kind, body=''):
     r, g, b, a = col
     h, l, s = hls(r, g, b)
     if kind == 'text':
-        if l < 0.25: return fmt(*rgb(h, 0.98, s * 0.2), a)               # 밝은 바탕 위 어두운 글씨 → 흰 글씨
+        if l < 0.25:
+            # 어두운 글씨: 같은 규칙의 바탕이 테마 색 변수(var(--cyan) 등, 라이트에선 진해짐)일 때만 흰 글씨로.
+            # 바탕이 밝은 고정색이거나 바탕이 없으면 어두운 글씨 그대로 (흰 화면에서 읽힘)
+            if re.search(r'background(-color)?\s*:[^;]*var\(--', body): return fmt(*rgb(h, 0.98, s * 0.2), a)
+            return None
         if l >= 0.4: return fmt(*rgb(h, max(0.16, min(0.38, 1.08 - l)), min(1, s * 1.05)), a)
         return None
     # surface (배경·테두리·그림자)
@@ -52,16 +56,20 @@ def conv(col, kind):
     return None
 
 TOK = re.compile(r'#[0-9a-fA-F]{3,8}\b|rgba?\([^)]*\)|\bwhite\b')
-def conv_decl(prop, val):
+def conv_decl(prop, val, body=''):
     p = prop.strip().lower()
-    if p.startswith('--'): return None
-    kind = 'text' if p in COLOR_PROPS else 'surf' if SURF_PROPS.match(p) else None
+    if p.startswith('--'):
+        # 부품마다 정한 색 변수(--c 등): 값이 색 하나뿐이면 글자색처럼 진하게 (테두리·글자에 같이 쓰임)
+        if not parse_color(val.strip()): return None
+        kind = 'text'
+    else:
+        kind = 'text' if p in COLOR_PROPS else 'surf' if SURF_PROPS.match(p) else None
     if not kind: return None
     changed = [False]
     def rep(m):
         c = parse_color(m.group(0))
         if not c: return m.group(0)
-        n = conv(c, kind)
+        n = conv(c, kind, body)
         if n is None: return m.group(0)
         changed[0] = True; return n
     nv = TOK.sub(rep, val)
@@ -101,7 +109,7 @@ def walk(text, ctx):
             for d_ in body.split(';'):
                 if ':' not in d_: continue
                 p, v = d_.split(':', 1)
-                nv = conv_decl(p, v)
+                nv = conv_decl(p, v, body)
                 if nv is not None:
                     imp = '' if '!important' in nv else ''
                     decls.append(f'{p.strip()}: {nv.strip()}')
