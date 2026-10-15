@@ -17,7 +17,14 @@
         "Rudaw"
       ],
       "related": [],
-      "tag": "정치·선거"
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "KDP Names Candidates for Iraq’s Deputy Prime Minister and Construction Minister Posts",
@@ -35,7 +42,14 @@
         "Kurdistan24"
       ],
       "related": [],
-      "tag": "정치·선거"
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
+      }
     },
     {
       "title": "من مصر إلى العراق والسعودية: كيف تتشكل حلول الطاقة الشمسية وفق احتياجات كل سوق؟",
@@ -53,7 +67,14 @@
         "سولارابيك"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Iraqi Cabinet Plan Includes Four Deputy PMs and Three New Ministries",
@@ -71,7 +92,14 @@
         "PUKmedia یەکێتیی نیشتمانیی کوردستان"
       ],
       "related": [],
-      "tag": "정치·선거"
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Iraq Is Still in Kuwait’s Security Calculus",
@@ -89,7 +117,14 @@
         "Middle East Forum"
       ],
       "related": [],
-      "tag": "치안·테러"
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Sadiqoun wants US-sanctioned Laith al-Khazali as future Iraqi prime minister",
@@ -107,7 +142,14 @@
         "964media"
       ],
       "related": [],
-      "tag": "정치·선거"
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "اعلان وزارة الكهرباء – القنصلية العامة لجمهورية العراق في غازي عنتاب",
@@ -131,7 +173,14 @@
           "link": "https://mofa.gov.iq/gaziantep/?p=7893"
         }
       ],
-      "tag": "전력·생활"
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Iraqi-Saudi Meeting Held to Strengthen Border Security » Iraqi News Agency",
@@ -149,7 +198,14 @@
         "وكالة الانباء العراقية (واع)"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "New exchange rate lifts Iraqi passport costs",
@@ -167,7 +223,14 @@
         "شفق نيوز"
       ],
       "related": [],
-      "tag": "경제·유가"
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Iraq devalues dinar to ease cash crunch, leaving traders in limbo",
@@ -185,7 +248,14 @@
         "Al Jazeera"
       ],
       "related": [],
-      "tag": "경제·유가"
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "y",
+        "line": "디나르 환율 조정 — 현지 인력 급여 환산·현지 구매 단가 영향 가능",
+        "act": "현지 구매·용역 단가와 급여 환전 기준 확인",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Barrack, al-Zaidi Discuss Iraq’s Difficult Path to Stability - ASHARQ AL-AWSAT English",
@@ -203,7 +273,14 @@
         "ASHARQ AL-AWSAT English"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "تربية البصرة تحرز المركز الثالث في بطولة العراق لألعاب القوى المدرسية للمرحلة الثانوية (بنين)",
@@ -221,7 +298,14 @@
         "وكالة المرسى نيوز"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바스라",
+        "km": 422
+      }
     },
     {
       "title": "Iraqi traders count losses after dinar devaluation",
@@ -239,7 +323,14 @@
         "شفق نيوز"
       ],
       "related": [],
-      "tag": "경제·유가"
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "y",
+        "line": "디나르 환율 조정 — 현지 인력 급여 환산·현지 구매 단가 영향 가능",
+        "act": "현지 구매·용역 단가와 급여 환전 기준 확인",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Nine vacant Iraqi ministries to be filled Thursday: State media",
@@ -257,7 +348,14 @@
         "The New Region"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "لتعويض نقص الكهرباء.. العراق يختبر نموذجًا جديدًا لنشر الطاقة الشمسية في بغداد",
@@ -271,7 +369,14 @@
         "سولارابيك"
       ],
       "related": [],
-      "tag": "전력·생활"
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
     },
     {
       "title": "Pro-Iran armed group says Iraq weapons agreement still at 'square one'",
@@ -289,7 +394,14 @@
         "Rudaw"
       ],
       "related": [],
-      "tag": "치안·테러"
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "5 challenges and opportunities for Iraq after the US troop withdrawal.",
@@ -307,7 +419,14 @@
         "Vietnam.vn"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "In Iraq, court rules Kurdistan state security law is unconstitutional",
@@ -325,7 +444,14 @@
         "ConstitutionNet"
       ],
       "related": [],
-      "tag": "치안·테러"
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Australian detainee ‘under duress’ when he signed document shielding Iraq from liability, lawyers say",
@@ -343,7 +469,14 @@
         "Crikey"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "دعم الدولار في العراق.. أثرياء النافذة وفاتورة المواطن",
@@ -357,7 +490,14 @@
         "ستاد الأهلي"
       ],
       "related": [],
-      "tag": "경제·유가"
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Iraq will not become a launchpad for attacks on Saudi Arabia, vows prime minister",
@@ -406,7 +546,14 @@
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1aWUJUb3Q1QWt2RXNCaHFhMVc4RWxIN1M4dTdjQm5rTE9NVFFtbmVUS0pFcTBXbVJYVVVOUE4xbF9Na0paLXNzWWo5Mkp6VU1G0gFKQVVfeXFMUGY2R3JIT2R5TTZjZVVCY2thWVVJTmxQSlNxS0l0cHNsSjVOSFo3X3gwVTV1R3p2cWlCbFVMMjlrMG50OHJjYjFJTFE?oc=5"
         }
       ],
-      "tag": "치안·테러"
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "이라크 총리 리야드방문, 사우디 왕세자와 중동전 현안 논의",
@@ -431,7 +578,14 @@
           "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQM2dkRjMxZEpzZU5wZi1nbHdhRGhOb184NFZucmdQRGRiN2YtbFVwR0JEMmFObDJFZng2QkN5elpoU0QzVHBFM2JuczdZZXFSTE93bkVSS3lOdkdTcEZnd1FIWlVoSzk4ekp3UTBMUlVCMEFkVlB0OTdHM0ZpdmZGcWJTcXI0TlhqNUVJSkVpc3ZmTXZWdUJ6Ty1jSUdocFpHNGlYblNtalp1RWpsdGhCeA?oc=5"
         }
       ],
-      "tag": "정치·선거"
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "مقتل جنديين عراقيين في انفجار نفذته فلول جماعة إرهابية في كركوك",
@@ -462,7 +616,14 @@
           "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE53SkYxVUI0RVFQWGVEcUxaelhyS01hS3BHQUM0ZFZSeUJ0NGNEeW5vaHJ0UXNGTVdHbHRhNHowT1AyNjdzRGQxMlItMDdOUQ?oc=5"
         }
       ],
-      "tag": "치안·테러"
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "먼 지역 치안 사건 (키르쿠크) — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "키르쿠크",
+        "km": 254
+      }
     },
     {
       "title": "تكليف مدير جديد لقسم شرطة خانقين في ديالى",
@@ -480,7 +641,14 @@
         "هذا اليوم"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "디얄라주",
+        "km": 91
+      }
     },
     {
       "title": "Iraq court sets trial date for arrested politician under corruption charges",
@@ -498,7 +666,14 @@
         "Rudaw"
       ],
       "related": [],
-      "tag": "치안·테러"
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "사마라",
+        "km": 132
+      }
     },
     {
       "title": "Iraqi Prime Minister Ali al-Zaidi arrives in Riyadh on first official visit to Saudi Arabia",
@@ -523,7 +698,14 @@
           "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTXlFNldNN3RFdl96TE5oaEF4Y3NpcklEVmRGMzJXSklWRFZjNUNfakhRS3lYRHBsZ05nWjBOLVVsMGRUWWhkNEROTWdnZjd5dGxDTThsMkk1ZEF6RThSTDFESGFFMTZGeVVpbXdNQVJJVUlXa0drQld1azRIb3dyOWw0dWdCZVp0MXZSV0pDRWEwRUVKdE53Nk1KVlBMVnZJR0FjNDFR0gGrAUFVX3lxTFB3Q0sxZXZHamNEbmEtSy1qb3d0MjdUeFNTZGw1c0NiRDBhU2gxS1dLWWNLYmZDem5ET1d1NW5iVkFfMFNEWG5ITUZ4ek9GRGVQMmxYRFhnb2RXaGpSWTN1aFlGTW1yUGtRUTNKM05uOWVxNkJSOWhJZk5FSTdNbGxETGRLVFYxZ19ZaUhNNndsMk9mM2pMczhVbC1PNFM4cU9oVmhGVW52MVZNYw?oc=5"
         }
       ],
-      "tag": "정치·선거"
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Masrour Barzani orders KRG negotiators to seek Peshmerga pay parity in Iraq's 2027 budget",
@@ -541,7 +723,14 @@
         "The Insight International"
       ],
       "related": [],
-      "tag": "경제·유가"
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
+      }
     },
     {
       "title": "العراق ينسق مع سوريا والأردن لإطلاق مشروع بيئي مشترك لمكافحة التصحر والعواصف الترابية",
@@ -559,7 +748,14 @@
         "ShiaWaves"
       ],
       "related": [],
-      "tag": "날씨·재난"
+      "tag": "날씨·재난",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Iraqi government plans to push parallel dinar rate down to 1,550",
@@ -584,7 +780,14 @@
           "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWXRIRlFJQmV3aDBGQ3hGOUtPZHI5YzhfbG5PNVpId0pNanQyR2pBMkxMUkVfLWhVNlVKS0dGQzY4b29Md3NyWVRteHh6QjRHeWM2dndUTUlZTXBDQmxVUldVWVZpdnZWQ1RWalpqM3lrY2JFQmtCcmNNT3ZDRk1IRklXTGY3UGUwdmUxenF5SERFa1ZWbjFCM0dYcW9MQQ?oc=5"
         }
       ],
-      "tag": "정치·선거"
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Iraqi Kurdish leaders raise prospect of peace talks between Iran and Kurdish opposition",
@@ -602,7 +805,14 @@
         "Voice of America English News"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
+      }
     },
     {
       "title": "Kirkuk roadside bomb kills three Iraqi soldiers",
@@ -632,7 +842,14 @@
           "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPb2VsakQ3dWZWVXZZd19hZzdRX2UycHQ0WGNIM213ek5wX2ZLOEFFN01EM2pfQ0F6S3cybDI5TVRFbUlCcG9OVXFMeHlOTTgtbjJaRFAtdV9DMjhPdnJwbVg2eEZKcmJpaFlYUnByMFRSYkNlY21DMnkyZVNmdnA3RjRZTlZQYmxOU2tnT3lZZ2V3WGNrZDdMUjg0SFFIWU9IWDM5bUhCaFdRZWl6M0QzRUtzdHhtbVB0SnNtZw?oc=5"
         }
       ],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "먼 지역 치안 사건 (키르쿠크) — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "키르쿠크",
+        "km": 254
+      }
     },
     {
       "title": "ارتفاع حصيلة قتلى انفجار كركوك واشتباك مسلح يوقع إصابات بصلاح الدين",
@@ -650,7 +867,14 @@
         "شفق نيوز"
       ],
       "related": [],
-      "tag": "치안·테러"
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "먼 지역 치안 사건 (티크리트(살라딘)) — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "티크리트(살라딘)",
+        "km": 179
+      }
     },
     {
       "title": "إقتراح معادلة نقدية جديدة للدينار العراقي مقابل سعر الدولار",
@@ -668,7 +892,14 @@
         "Azzaman"
       ],
       "related": [],
-      "tag": "경제·유가"
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Iraq Has Been Here Before",
@@ -686,7 +917,14 @@
         "الحرة"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Saudi Crown Prince meets Iraqi PM in Riyadh after deadly Houthi airport attack",
@@ -725,7 +963,14 @@
           "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1CbzdJdVZYdGFMU253VTAxVGRoUWdFWkxOR2l3eXdzQ0JlY1pRRnQtRjRYMkdvdkk3SFQ5LUpHa0VRM3RF?oc=5"
         }
       ],
-      "tag": "치안·테러"
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 사건 — 발생 지역 확인 필요",
+        "act": "바그다드 인근이면 보안팀 확인",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Iraqi lawmaker urges neutrality amid US-Iran tensions",
@@ -749,7 +994,14 @@
           "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQa05tMlA1ZDVOa0wtVGJaRm1ZTkYzdjhjZjRBNGdnMzNGXzdORjBqMUdDX2ZEX0ZnbW96cWdSME50MHZnaEJZaU9rNm1VcmhFNlIwX2xKeUJ4V3VWOUlucDJZSmotQmhXa1JOODdPeEVFSGdoQWxYaWFFdG91MnZnTHVhNzR6WFU?oc=5"
         }
       ],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Iraqi Group Backs Houthis as Saudi Tensions Rise",
@@ -767,7 +1019,14 @@
         "Kurdistan24"
       ],
       "related": [],
-      "tag": "치안·테러"
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
+      }
     },
     {
       "title": "Iraq Resorts to a Currency Devaluation Amid Falling Oil Revenues",
@@ -785,7 +1044,14 @@
         "RANE Worldview"
       ],
       "related": [],
-      "tag": "경제·유가"
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "y",
+        "line": "디나르 환율 조정 — 현지 인력 급여 환산·현지 구매 단가 영향 가능",
+        "act": "현지 구매·용역 단가와 급여 환전 기준 확인",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "الاحتيال على 29 معتمراً في بغداد",
@@ -803,7 +1069,14 @@
         "هذا اليوم"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
     },
     {
       "title": "(وسائط متعددة) مقتل ضابط وجندي في انفجار عبوة ناسفة من مخلفات تنظيم الدولة الإسلامية بالعراق",
@@ -821,7 +1094,14 @@
         "新华网"
       ],
       "related": [],
-      "tag": "치안·테러"
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 사건 — 발생 지역 확인 필요",
+        "act": "바그다드 인근이면 보안팀 확인",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "فيديو",
@@ -835,7 +1115,14 @@
         "هذا اليوم"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "كركوك: مقتل عميد وجندي … والزيدي يوجّه برفع الجاهزية القتالية",
@@ -853,7 +1140,14 @@
         "القدس العربي"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "키르쿠크",
+        "km": 254
+      }
     },
     {
       "title": "Iraq vows no attacks on Saudi Arabia from its soil as Al-Zaidi, MBS discuss regional stability",
@@ -871,7 +1165,14 @@
         "TRT World"
       ],
       "related": [],
-      "tag": "치안·테러"
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "مناقصات وزارة الكهرباء – القنصلية العامة لجمهورية العراق في مونتريال",
@@ -889,7 +1190,14 @@
         "وزارة الخارجية العراقية"
       ],
       "related": [],
-      "tag": "전력·생활"
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "الخارجية: 53 دولة أكدت مشاركتها بدورة بغداد لمنظمة التعاون الإسلامي",
@@ -903,7 +1211,14 @@
         "المسلة الحدث كما حدث"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
     },
     {
       "title": "هل تتحول وعود الحكومة العراقية إلى إجراءات تهدئ الشارع",
@@ -921,7 +1236,14 @@
         "ميدل ايست اونلاين"
       ],
       "related": [],
-      "tag": "정치·선거"
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Baghdad eases food import rules after dinar devaluation",
@@ -935,7 +1257,14 @@
         "شفق نيوز"
       ],
       "related": [],
-      "tag": "경제·유가"
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "y",
+        "line": "디나르 환율 조정 — 현지 인력 급여 환산·현지 구매 단가 영향 가능",
+        "act": "현지 구매·용역 단가와 급여 환전 기준 확인",
+        "place": "바그다드",
+        "km": 27
+      }
     },
     {
       "title": "Iraq, Saudi Arabia Discuss Regional Security",
@@ -949,7 +1278,14 @@
         "باسنیوز"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
     },
     {
       "title": "Al-Zaidi in Riyadh: The Pledge Baghdad Cannot Keep",
@@ -963,8 +1299,27 @@
         "https://houseofsaud.com/"
       ],
       "related": [],
-      "tag": "기타"
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
     }
   ],
-  "alerts": []
+  "alerts": [],
+  "brief": [
+    {
+      "lv": "y",
+      "titleKo": "이라크는 현금 위기를 완화하기 위해 디나르를 평가 절하하여 거래자를 림보에 남겨 둡니다.",
+      "line": "디나르 환율 조정 — 현지 인력 급여 환산·현지 구매 단가 영향 가능",
+      "act": "현지 구매·용역 단가와 급여 환전 기준 확인",
+      "km": null,
+      "link": "https://www.aljazeera.com/economy/2026/10/15/iraq-devalues-dinar-to-ease-cash-crunch-leaving-traders-in-limbo",
+      "date": "2026-10-15T08:49:58.000Z",
+      "more": 3
+    }
+  ]
 }

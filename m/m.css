@@ -288,3 +288,10 @@ a.tel { display: inline-flex; align-items: center; margin-top: 6px; padding: 7px
 .ntc-m h2 { font-size: 17px; line-height: 1.4; margin: 8px 0 10px; }
 .ntc-m img { display: block; width: 100%; max-height: 48vh; object-fit: cover; border-radius: 12px; }
 .ntc-m p { font-size: 14px; line-height: 1.65; white-space: pre-line; color: #cfd8e3; margin: 12px 0 14px; }
+
+/* 이라크 주요 이슈: 현장 브리핑 · 현장 영향 */
+.ibrief-m .ib-i{display:flex;flex-direction:column;gap:2px;padding:6px 0;border-top:1px solid rgba(255,255,255,.06)}
+.ibrief-m .ib-i:first-of-type{border-top:0}
+.ibrief-m .ib-i b{font-size:13.5px}.ibrief-m .ib-i span{font-size:12.5px;color:#f6e3b0}
+.ibrief-m .ib-i a{font-size:12px;opacity:.75;color:inherit;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.imp-m{margin-top:3px;font-size:12px;color:#f6e3b0}

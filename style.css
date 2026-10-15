@@ -4598,3 +4598,23 @@ body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !impo
 .hse-guide.in .hg-char { transform: translateY(var(--hg-dy, 0px)); }
 .hse-guide .hg-bubble.hg-top.hg-side::before { display: block; bottom: auto; top: 34px; }
 .cx-fcn-why { grid-column: 1 / -1; margin: 0; font-size: 12.5px; color: var(--text-muted); border-top: 1px dashed rgba(53,208,192,.3); padding-top: 8px; }
+
+/* 이라크 주요 이슈: 🏗 현장 영향 · 오늘의 현장 브리핑 */
+.imp { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 3px 0 0 2px; font-size: 12.5px; color: var(--text-muted); }
+.imp-lv { font-weight: 700; font-size: 11.5px; white-space: nowrap; }
+.imp-r .imp-lv { color: #ff8a86; } .imp-y .imp-lv { color: #f2c14e; } .imp-g .imp-lv { color: var(--text-muted); opacity: .8; }
+.imp-r .imp-t { color: #ffd0ce; } .imp-y .imp-t { color: #f6e3b0; }
+.imp-km { font-family: var(--font-mono); font-size: 11.5px; padding: 0 6px; border-radius: 6px; background: rgba(255,255,255,.06); }
+.imp-act { margin: 0 0 8px; padding: 6px 10px; border-radius: 8px; background: rgba(242,193,78,.08); border: 1px solid rgba(242,193,78,.25); color: #f6e3b0; font-size: 13px; }
+.bnews-f.site { border-color: rgba(53,208,192,.55); color: var(--cyan); }
+.ibrief { margin: 4px 0 12px; padding: 12px 16px; border-radius: 12px; background: linear-gradient(100deg, rgba(53,208,192,.12), rgba(53,208,192,.03) 70%); border: 1px solid rgba(53,208,192,.4); }
+.ibrief[hidden] { display: none; }
+.ibrief-h { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.ibrief-h b { font-size: 15px; } .ibrief-h small { color: var(--text-muted); font-size: 12px; }
+.ibrief-l { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.ibrief-l li { display: flex; gap: 10px; align-items: flex-start; }
+.ibrief-l li > div { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ibrief-l b { font-size: 14px; } .ibrief-act { font-size: 12.5px; color: #f6e3b0; }
+.ibrief-l a { font-size: 12.5px; color: var(--text-muted); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ibrief-l a:hover { color: var(--cyan); }
+.ibrief-none { margin: 2px 0 0; color: var(--text-muted); font-size: 13.5px; }

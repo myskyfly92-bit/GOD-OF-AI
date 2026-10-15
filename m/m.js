@@ -566,11 +566,13 @@
     talk: ["HSE 1:1 상담", () => { TALK.open(); return Promise.resolve(); }],
     iraq: ["이라크 주요 이슈", () => getJ("iraq-issues.json").then((d) => { let f = "전체"; const all = d.items || [];
       const TC = { "치안·테러": "red", "시위·통제": "amb", "휴일·행사": "vio", "날씨·재난": "amb", "전력·생활": "cy" };
-      const tags = ["전체"].concat(["치안·테러", "시위·통제", "휴일·행사", "정치·선거", "전력·생활", "날씨·재난", "경제·유가", "한국·외교", "기타"].filter((t) => all.some((x) => x.tag === t)));
-      const draw = () => { const it = all.filter((x) => f === "전체" || x.tag === f).slice(0, 40);
-        $("#subBody").innerHTML = `<div class="chips">${tags.map((c) => `<button class="chip ${c === f ? "on" : ""}" data-f="${c}">${c}</button>`).join("")}</div>
+      const tags = ["전체", "🏗 현장 관련"].concat(["치안·테러", "시위·통제", "휴일·행사", "정치·선거", "전력·생활", "날씨·재난", "경제·유가", "한국·외교", "기타"].filter((t) => all.some((x) => x.tag === t)));
+      const IMP = { r: "🔴", y: "🟡", g: "⚪" }, B = d.brief || [];
+      const brief = `<div class="card ibrief-m"><h3><span class="dot"></span>🏗 오늘의 현장 브리핑</h3>${B.length ? B.map((b) => `<div class="ib-i"><b>${IMP[b.lv]} ${esc(b.line)}${b.km != null ? ` · 📍${b.km}km` : ""}</b>${b.act ? `<span>▶ ${esc(b.act)}</span>` : ""}<a href="${esc(b.link)}" target="_blank" rel="noopener">${esc(b.titleKo)}${b.more ? ` 외 ${b.more}건` : ""} ↗</a></div>`).join("") : '<p class="src">✅ 최근 24시간 현장에 영향 줄 만한 소식 없음</p>'}</div>`;
+      const draw = () => { const it = all.filter((x) => f === "전체" || (f === "🏗 현장 관련" ? x.impact && x.impact.lv !== "g" : x.tag === f)).slice(0, 40);
+        $("#subBody").innerHTML = brief + `<div class="chips">${tags.map((c) => `<button class="chip ${c === f ? "on" : ""}" data-f="${c}">${c}</button>`).join("")}</div>
         <div class="card"><ul class="list">${it.map((x) => `<li class="item"><a href="${esc(x.link || x.url)}" target="_blank" rel="noopener"><div class="t" style="font-size:14px">${esc(x.titleKo || x.title)}</div>
-        <div class="m">${x.tag ? `<span class="tag ${TC[x.tag] || ""}">${esc(x.tag)}</span> ` : ""}${x.count > 1 ? `보도 ${x.count}건 · ` : ""}${esc(x.source)} · ${md(x.date)} (${ago(x.date)})</div></a></li>`).join("") || '<li class="empty">최근 7일 기사가 없습니다.</li>'}</ul><p class="src">구글 뉴스 검색 · 최근 7일 · 분류는 제목으로 자동 판정 · 아랍어·영어 제목은 자동 번역</p></div>`;
+        <div class="m">${x.tag ? `<span class="tag ${TC[x.tag] || ""}">${esc(x.tag)}</span> ` : ""}${x.count > 1 ? `보도 ${x.count}건 · ` : ""}${esc(x.source)} · ${md(x.date)} (${ago(x.date)})</div>${x.impact && x.impact.lv !== "g" ? `<div class="imp-m">${IMP[x.impact.lv]} 🏗 ${esc(x.impact.line)}${x.impact.km != null ? ` · 📍${x.impact.km}km` : ""}</div>` : ""}</a></li>`).join("") || '<li class="empty">최근 7일 기사가 없습니다.</li>'}</ul><p class="src">구글 뉴스 검색 · 최근 7일 · 분류는 제목으로 자동 판정 · 아랍어·영어 제목은 자동 번역</p></div>`;
         $("#subBody").querySelectorAll(".chip").forEach((b) => b.onclick = () => { f = b.dataset.f; draw(); }); clip($("#subBody ul.list"), 15); }; draw(); })],
     embassy: ["대사관 안전공지", () => getJ("embassy-notices.json").then((d) => { let f = "이라크"; const all = d.items || [];
       const cs = ["이라크", "전체"].concat((d.countries || []).map((c) => c.name).filter((n) => n !== "이라크"));

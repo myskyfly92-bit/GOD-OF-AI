@@ -49,7 +49,7 @@ html.intro-pending::after {
 <link rel="icon" type="image/png" href="assets/icon/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=20261015j">
+<link rel="stylesheet" href="style.css?v=20261015k">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -904,6 +904,7 @@ html.intro-pending::after {
 <main class="grid">
   <section class="panel bnews-panel" aria-label="이라크 주요 이슈" style="grid-column: 1 / -1;">
     <div class="panel-label">IRAQ ISSUES · 이라크 주요 이슈 <span class="bnews-count" id="inewsCount"></span></div>
+    <div class="ibrief" id="inewsBrief" hidden></div>
     <div class="bnews-filter" id="inewsTags"></div>
     <div class="bnews-cols one">
       <div class="bnews-col">
@@ -911,7 +912,7 @@ html.intro-pending::after {
         <div class="bnews-list inews-list" id="inewsIq"><p class="skeleton">기사 불러오는 중…</p></div>
       </div>
     </div>
-    <p class="source-note" id="inewsMeta">구글 뉴스 검색(이라크·바그다드 치안·시위·정치·공휴일·전력·유가)으로 모은 최근 7일 공개 기사입니다 · 분류는 제목 낱말로 자동 판정 · 아랍어·영어는 자동 번역 · 3시간마다 갱신 · 공식 안전 공지는 대사관 공지 탭을 함께 보세요</p>
+    <p class="source-note" id="inewsMeta">구글 뉴스 검색(이라크·바그다드 치안·시위·정치·공휴일·전력·유가)으로 모은 최근 7일 공개 기사입니다 · 분류와 🏗 현장 영향(비스마야까지 거리·위험도·권장 행동)은 제목 낱말로 자동 판정한 참고 정보 · 아랍어·영어는 자동 번역 · 3시간마다 갱신 · 공식 안전 공지는 대사관 공지 탭을 함께 보세요</p>
   </section>
 </main>
 </div>
@@ -1177,7 +1178,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261015j"></script>
+<script src="script.js?v=20261015k"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

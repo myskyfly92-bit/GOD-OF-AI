@@ -8305,13 +8305,21 @@ function makeNewsView(o) {
     const d = new Date(k + "T12:00:00"), lab = `${d.getMonth() + 1}.${d.getDate()} (${"일월화수목금토"[d.getDay()]})`;
     return k === today ? `오늘 · ${lab}` : k === y ? `어제 · ${lab}` : lab;
   };
+  // 🏗 현장 영향 한 줄 (이라크 주요 이슈): 🔴 즉시 주의 · 🟡 지켜볼 것 · ⚪ 참고
+  const IMP = { r: ["🔴", "즉시 주의"], y: ["🟡", "지켜볼 것"], g: ["⚪", "참고"] };
+  const impLine = (n) => {
+    const m = n.impact; if (!m || !o.impact) return "";
+    return `<div class="imp imp-${m.lv}"><span class="imp-lv">${IMP[m.lv][0]} ${IMP[m.lv][1]}</span><span class="imp-t">🏗 ${escapeHtml(m.line)}</span>${m.km != null && m.lv !== "g" ? `<span class="imp-km">📍 ${m.km}km</span>` : ""}</div>`;
+  };
   const row = (n) => {
     const body = n.bodyKo || n.body, rel = n.related || [];
     return `<div class="inews-row bnews-item" tabindex="0" role="button" aria-expanded="false">
       <div class="inews-line"><span class="bnews-tag t-${escapeHtml(TAGC[n.tag] || "etc")}">${escapeHtml(n.tag || "기타")}</span>
         <span class="inews-title">${escapeHtml(n.titleKo || n.title)}</span>
         <span class="inews-meta">${n.count > 1 ? `<b>보도 ${n.count}건</b> · ` : ""}${escapeHtml((n.sources && n.sources[0]) || n.source || "")} · ${hm(n.date)}</span></div>
+      ${impLine(n)}
       <div class="bnews-body">
+        ${n.impact && n.impact.act && o.impact ? `<p class="imp-act">▶ 권장: ${escapeHtml(n.impact.act)}</p>` : ""}
         ${n.titleKo && n.titleKo !== n.title ? `<p class="bnews-orig" ${n.lang === "ar" ? 'dir="rtl" lang="ar"' : ""}>${escapeHtml(n.title)}</p>` : ""}
         ${body ? `<div class="bnews-text">${paras(body)}</div>` : ""}
         ${rel.length ? `<div class="inews-rel"><b>같은 소식 다른 보도</b>${rel.map((r) => `<a href="${escapeHtml(r.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.titleKo)} <small>${escapeHtml(r.source || "")}</small></a>`).join("")}</div>` : ""}
@@ -8344,6 +8352,7 @@ function makeNewsView(o) {
       if (!r.ok) throw new Error("아직 자료가 없습니다");
       const j = await r.json();
       items = j.items || [];
+      if (o.impact) drawBrief(j.brief || []);
       const d = new Date(j.generatedAt);
       if (!isNaN(d)) document.getElementById(o.meta).textContent += ` · 마지막 수집 ${d.toLocaleString("ko-KR", { timeZone: "Asia/Baghdad", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit", hour12: false })}`;
     } catch (e) {
@@ -8356,16 +8365,26 @@ function makeNewsView(o) {
   }
   // 국내 = 한국 언론(한국어 기사), 이라크 = 그 밖(아랍어·영어 기사) · 분류 버튼이 있으면 그 분류만
   function draw() {
-    const L = items.filter((n) => tagF === "전체" || n.tag === tagF);
+    const L = items.filter((n) => tagF === "전체" || (tagF === "🏗 현장 관련" ? n.impact && n.impact.lv !== "g" : n.tag === tagF));
     if (koBox) { fill(koBox, o.koN, L.filter((n) => n.lang === "ko")); fill(iqBox, o.iqN, L.filter((n) => n.lang !== "ko")); }
     else fill(iqBox, o.iqN, L);   // 한 칸짜리: 모든 기사를 최신순으로
     const tb = o.tags && document.getElementById(o.tags);
     if (tb) {
       const cnt = {}; items.forEach((n) => { if (n.tag) cnt[n.tag] = (cnt[n.tag] || 0) + 1; });
       const order = (o.tagOrder || ["치안·테러", "시위·통제", "휴일·행사", "정치·선거", "전력·생활", "날씨·재난", "경제·유가", "한국·외교"]).concat("기타").filter((t) => cnt[t]);
-      tb.innerHTML = ["전체"].concat(order).map((t) => `<button type="button" class="bnews-f${t === tagF ? " on" : ""}" data-t="${escapeHtml(t)}">${escapeHtml(t)} <small>${t === "전체" ? items.length : cnt[t]}</small></button>`).join("");
+      const siteN = items.filter((n) => n.impact && n.impact.lv !== "g").length;
+      const first = ["전체"].concat(o.impact ? ["🏗 현장 관련"] : []);
+      tb.innerHTML = first.concat(order).map((t) => `<button type="button" class="bnews-f${t === tagF ? " on" : ""}${t === "🏗 현장 관련" ? " site" : ""}" data-t="${escapeHtml(t)}">${escapeHtml(t)} <small>${t === "전체" ? items.length : t === "🏗 현장 관련" ? siteN : cnt[t]}</small></button>`).join("");
       tb.onclick = (e) => { const b = e.target.closest("[data-t]"); if (b) { tagF = b.dataset.t; draw(); } };
     }
+  }
+  // 오늘의 현장 브리핑 (최근 24시간, 현장 관련 상위 3건)
+  function drawBrief(B) {
+    const box = document.getElementById("inewsBrief"); if (!box) return;
+    box.hidden = false;
+    box.innerHTML = `<div class="ibrief-h"><b>🏗 오늘의 현장 브리핑</b><small>최근 24시간 이라크 소식 중 비스마야 현장에 영향이 있을 만한 것</small></div>` +
+      (B.length ? `<ol class="ibrief-l">${B.map((b) => `<li class="imp-${b.lv}"><span class="imp-lv">${IMP[b.lv][0]}</span><div><b>${escapeHtml(b.line)}${b.km != null ? ` <span class="imp-km">📍 ${b.km}km</span>` : ""}</b>${b.act ? `<span class="ibrief-act">▶ ${escapeHtml(b.act)}</span>` : ""}<a href="${escapeHtml(b.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(b.titleKo)}${b.more ? ` <small>외 관련 ${b.more}건</small>` : ""} ↗</a></div></li>`).join("")}</ol>`
+        : `<p class="ibrief-none">✅ 최근 24시간 동안 현장에 영향 줄 만한 이라크 소식은 없어요.</p>`);
   }
   document.querySelectorAll(`.tab-btn[data-view="${o.view}"]`).forEach((b) => b.addEventListener("click", load));
   if (document.querySelector(`#${o.view}.active`)) load();
@@ -8520,7 +8539,7 @@ makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, subN
     if (L.length) render();
   }).catch(() => {});
 })();
-makeNewsView({ view: "view-iraq-issues", json: "iraq-issues.json", days: 7, compact: true, iq: "inewsIq", iqN: "inewsIqN", count: "inewsCount", meta: "inewsMeta", tags: "inewsTags" });
+makeNewsView({ view: "view-iraq-issues", json: "iraq-issues.json", days: 7, compact: true, impact: true, iq: "inewsIq", iqN: "inewsIqN", count: "inewsCount", meta: "inewsMeta", tags: "inewsTags" });
 makeNewsView({ view: "view-fire-news", json: "fire-news.json", days: 30, ko: "fnewsKo", iq: "fnewsIq", koN: "fnewsKoN", iqN: "fnewsIqN", count: "fnewsCount", meta: "fnewsMeta", tags: "fnewsTags", tagOrder: ["용접·불티", "단열재·자재", "전기·배터리", "숙소·창고", "고층·건물", "공장·플랜트", "시장·상가"] });
 makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30, ko: "hnewsKo", iq: "hnewsIq", koN: "hnewsKoN", iqN: "hnewsIqN", count: "hnewsCount", meta: "hnewsMeta" });
 

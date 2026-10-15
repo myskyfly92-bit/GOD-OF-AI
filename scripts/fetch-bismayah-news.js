@@ -75,6 +75,7 @@ const CFGS = {
     // 스포츠·연예·주식 기사는 뺀다
     NOT: /축구|월드컵|예선|골\s|체스|선수권|K리그|야구|배구|농구|올림픽|아시안컵|드라마|가수|영화|공연|주가|특징주|football|soccer|chess|championship|world cup|qualifier|match|league|fifa|basketball|olympic|كرة القدم|المنتخب|الدوري|مباراة|منتخبنا|فيفا|كأس/i,
     GROUP: true,   // 같은 사건 기사는 하나로 묶는다
+    IMPACT: true,  // 현장 영향·위험도·권장 행동 + 오늘의 현장 브리핑 (scripts/iraq-impact.js)
     // 분류 표시 (위에서부터 먼저 맞는 것)
     TAGS: [
       ["치안·테러", /테러|폭발|공격|드론|로켓|무장|IS\b|ISIS|다에시|PKK|민병대|총격|납치|암살|체포|마약|공습|전투기|보안군|군사|attack|daesh|airstrike|security forces|arrest|militar|smuggl|explosion|blast|drone|rocket|militia|gunmen|kidnap|isis|terror|انفجار|هجوم|مسيرة|صاروخ|داعش|اغتيال|خطف|مسلح|اعتقال|القبض|مخدرات|العمال الكردستاني/i],
@@ -437,6 +438,14 @@ async function main() {
   }
   const out = { generatedAt: new Date().toISOString(), items: list };
   if (alerts) out.alerts = alerts;
+  // 현장 영향 판단 (이라크 주요 이슈만)
+  if (CFG.IMPACT) {
+    const { assess, brief } = require("./iraq-impact.js");
+    list.forEach((n) => { n.impact = assess(n); });
+    out.brief = brief(list);
+    const c = { r: 0, y: 0, g: 0 }; list.forEach((n) => { c[n.impact.lv]++; });
+    console.log(`현장 영향: 즉시 주의 ${c.r} · 지켜볼 것 ${c.y} · 참고 ${c.g} · 브리핑 ${out.brief.length}건`);
+  }
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n", "utf-8");
   const by = (l) => list.filter((n) => n.lang === l).length;
   console.log(`저장 완료: 총 ${list.length}건 (한국어 ${by("ko")} · 아랍어 ${by("ar")} · 영어 ${by("en")}) · 새로 번역 ${translated}건 · 본문 있음 ${list.filter((n) => n.body).length}건`);
