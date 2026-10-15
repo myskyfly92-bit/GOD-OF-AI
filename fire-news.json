@@ -1,27 +1,86 @@
 {
-  "generatedAt": "2026-10-14T21:59:50.949Z",
+  "generatedAt": "2026-10-15T05:22:21.622Z",
   "items": [
+    {
+      "title": "온산 화학공장 폭발·화재…7천여 명 대피",
+      "source": "KBS 뉴스",
+      "link": "https://news.kbs.co.kr/news/view.do?ncd=8685453",
+      "date": "2026-10-15T01:34:06.000Z",
+      "lang": "ko",
+      "titleKo": "온산 화학공장 폭발·화재…7천여 명 대피",
+      "url": "https://news.kbs.co.kr/news/view.do?ncd=8685453",
+      "body": "오늘 오전 9시 40분쯤 울산 온산국가산업단지 내 화학공장에서 폭발과 함께 큰 불이 나 4시간 만에 초진됐...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
+      "bodyKo": "오늘 오전 9시 40분쯤 울산 온산국가산업단지 내 화학공장에서 폭발과 함께 큰 불이 나 4시간 만에 초진됐...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
+      "tried": true,
+      "count": 45,
+      "sources": [
+        "뉴스1",
+        "펜앤마이크",
+        "MBC 뉴스",
+        "문화예술의전당",
+        "울산신문",
+        "KBS 뉴스"
+      ],
+      "related": [
+        {
+          "titleKo": "톨루엔 옮기다 '펑'…'7000명 대피' 울산 화학 업체 화재 현장 감식",
+          "source": "뉴스1",
+          "link": "https://www.news1.kr/local/ulsan/6320862"
+        },
+        {
+          "titleKo": "울산 온산공단 화학공장서 톨루엔 옮기다 화재… 4시간 만에 진화, 7000명 대피",
+          "source": "펜앤마이크",
+          "link": "https://www.pennmike.com/news/articleViewAmp.html?idxno=129547"
+        },
+        {
+          "titleKo": "울산 화학공장 대형 화재‥7천여 명 대피 '혼란'",
+          "source": "MBC 뉴스",
+          "link": "https://imnews.imbc.com/replay/2026/nwtoday/article/6858069_37013.html"
+        },
+        {
+          "titleKo": "울산 온산공단 부승화학 화재, 대응 1단계 발령…톨루엔 저장탱크 화재에 인근 근로자 7,000여 명 대피",
+          "source": "문화예술의전당",
+          "link": "https://www.lullu.net/62568"
+        },
+        {
+          "titleKo": "울산 온산 학남리 화학공장 톨루엔 탱크 폭발 화재",
+          "source": "울산신문",
+          "link": "https://www.ulsanpress.net/news/articleView.html?idxno=584714"
+        }
+      ],
+      "tag": "공장·플랜트"
+    },
     {
       "title": "السعودية: حريق محدود بعد استهداف مبنى لأرامكو في الظهران",
       "source": "صحيفة الخليج",
       "link": "https://www.alkhaleej.ae/2026-10-14/%D8%B9%D8%B1%D8%A8-%D9%88%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%AF%D9%88%D8%AF-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%A8%D9%86%D9%89-%D9%84%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D9%81%D9%8A-%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
-      "date": "2026-10-14T20:46:49.000Z",
+      "date": "2026-10-15T01:21:21.000Z",
       "lang": "ar",
       "titleKo": "사우디아라비아: 다란의 아람코 건물 화재 제한",
       "url": "https://www.alkhaleej.ae/2026-10-14/%D8%B9%D8%B1%D8%A8-%D9%88%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%AF%D9%88%D8%AF-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%A8%D9%86%D9%89-%D9%84%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D9%81%D9%8A-%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86",
       "body": "أعلنت وزارة الطاقة السعودية صباح الأربعاء أنّ «حريقاً محدوداً» اندلع في أحد المباني...",
       "bodyKo": "사우디 에너지부는 수요일 아침 한 건물에서 \"제한된 화재\" 가 발생했다고 발표했습니다...",
       "tried": true,
-      "count": 23,
+      "count": 24,
       "sources": [
+        "Mezha.net",
+        "Arab Times Kuwait News",
         "اقرأ 24",
         "صحيفة الخليج",
         "نيو ترك بوست",
-        "CBC",
-        "شبكة تواصل الإخبارية",
-        "إرم بزنس"
+        "CBC"
       ],
       "related": [
+        {
+          "titleKo": "후티 공격 이후 사우디아라비아에서 화재가 발생한 아람코 건물",
+          "source": "Mezha.net",
+          "link": "https://mezha.net/eng/news/mezha-1b5a83704dee48049ff23cac_aramco_building_catches/"
+        },
+        {
+          "titleKo": "사우디아라비아 아람코 (Aramco) 행정 건물 다란 (Dhahran) 을 겨냥한 화재 신고",
+          "source": "Arab Times Kuwait News",
+          "link": "https://www.arabtimesonline.com/news/saudi-aramco-administrative-building-targeted-in-dhahran-limited-fire-reported/"
+        },
         {
           "titleKo": "사우디아라비아는 후티 미사일에 맞서고 극적인 안보 발전으로 다란의 아람코 건물을 불태운다.",
           "source": "اقرأ 24",
@@ -36,16 +95,6 @@
           "titleKo": "사우디아라비아 아람코 언더 타겟: 다란 행정 건물 내 제한 화재",
           "source": "نيو ترك بوست",
           "link": "https://newturkpost.com/news/128182-%D8%A3%D8%B1%D8%A7%D9%85%D9%83%D9%88-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%AD%D8%AA-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%AF%D9%88%D8%AF-%D9%81%D9%8A-%D9%85%D8%A8%D9%86%D9%89-%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A-%D8%A8%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86"
-        },
-        {
-          "titleKo": "사우디아라비아 아람코 (Aramco) 행정 건물이 후티 (Houthis) 의 공격을 받았으며, 제한된 화재",
-          "source": "CBC",
-          "link": "https://www.cbc.ca/news/world/saudi-arabia-aramco-houthis-missile-9.7379854"
-        },
-        {
-          "titleKo": "후티족 대상 사우디아라비아 아람코 행정 건물, 제한된 화재 신고",
-          "source": "شبكة تواصل الإخبارية",
-          "link": "https://twaslnews1.twaslnews.com/6004613/"
         }
       ],
       "tag": "고층·건물"
@@ -69,82 +118,21 @@
       "tag": "시장·상가"
     },
     {
-      "title": "온산 화학공장 폭발·화재…7천여 명 대피",
-      "source": "KBS 뉴스",
-      "link": "https://news.kbs.co.kr/news/view.do?ncd=8685453",
-      "date": "2026-10-14T11:19:00.000Z",
-      "lang": "ko",
-      "titleKo": "온산 화학공장 폭발·화재…7천여 명 대피",
-      "url": "https://news.kbs.co.kr/news/view.do?ncd=8685453",
-      "body": "오늘 오전 9시 40분쯤 울산 온산국가산업단지 내 화학공장에서 폭발과 함께 큰 불이 나 4시간 만에 초진됐...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
-      "bodyKo": "오늘 오전 9시 40분쯤 울산 온산국가산업단지 내 화학공장에서 폭발과 함께 큰 불이 나 4시간 만에 초진됐...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
-      "tried": true,
-      "count": 43,
-      "sources": [
-        "울산신문",
-        "KBS 뉴스",
-        "세이프타임즈",
-        "싱글리스트",
-        "세계일보",
-        "한국재난뉴스"
-      ],
-      "related": [
-        {
-          "titleKo": "울산 온산 학남리 화학공장 톨루엔 탱크 폭발 화재",
-          "source": "울산신문",
-          "link": "https://www.ulsanpress.net/news/articleView.html?idxno=584714"
-        },
-        {
-          "titleKo": "울산 화학공장 화재 … 행안부 장관 '총력 지시'",
-          "source": "세이프타임즈",
-          "link": "https://www.safetimes.co.kr/news/articleView.html?idxno=246493"
-        },
-        {
-          "titleKo": "울산 화학공장 화재, 4시간 만에 완진…저장탱크 7기로 번져 연기·폭발음",
-          "source": "싱글리스트",
-          "link": "https://www.slist.kr/news/articleView.html?idxno=773424"
-        },
-        {
-          "titleKo": "불길 옆엔 또 화학공장… 울산 온산산단 화재에 7000명 긴급 대피 ‘큰일날 뻔’",
-          "source": "세계일보",
-          "link": "https://m.segye.com/view/20261014517475"
-        },
-        {
-          "titleKo": "울산 화학공장 화재 4시간여 만에 진화... 인명피해 없어",
-          "source": "한국재난뉴스",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9sd0ZrUXFfRlViU25nQzliand0WFBKWlU1cENzQlJ0RE02aHFnZE1Za1BQQUU3MzRYRE95RnVabGZJSUpnMVl4WVEwZF9nNGExdXZnNzFVZkpFbko3Z2hDamVaRTlpMGZJWXc?oc=5"
-        }
-      ],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "대한민국: 화학 공장에서 발생한 대형 화재로 수천 명 대피.",
+      "title": "대한민국: 화학 공장에서 발생한 대형 화재로 약 7,000명이 대피했습니다.",
       "source": "Vietnam.vn",
-      "link": "https://www.vietnam.vn/ko/han-quoc-chay-lon-tai-cong-ty-hoa-chat-hang-nghin-nguoi-phai-so-tan",
+      "link": "https://www.vietnam.vn/ko/han-quoc-khoang-7-000-nguoi-so-tan-do-chay-lon-tai-nha-may-hoa-chat",
       "date": "2026-10-14T10:56:54.000Z",
       "lang": "ko",
-      "titleKo": "대한민국: 화학 공장에서 발생한 대형 화재로 수천 명 대피.",
-      "url": "https://www.vietnam.vn/ko/han-quoc-chay-lon-tai-cong-ty-hoa-chat-hang-nghin-nguoi-phai-so-tan",
-      "body": "10월 14일, 한국 남동부 산업도시 울산에 위치한 한 석유화학 공장에서 인근 화학 제조 공장에서 대형 화재가 발생하자 약 7,000명의 근로자들이 대피했다.\n0 연합뉴스에 따르면, 이번 화재는 10월 14일 오전 9시 41분경 서울 남동쪽 약 300km 떨어진 울산의 한 화학 생산 시설에서 발생했습니다. 공장에 근무하던 직원 12명은 모두 안전하게 대피했습니다. 인근 석유화학 공장 건설 현장의 근로자 약 7,000명과 주변 사업장 직원들도 예방 차원에서 대피했습니다. 현재까지 인명 피해는 보고되지 않았습니다.\n화재는 인화성이 매우 높은 화학물질인 톨루엔 8,000리터가 담긴 야외 탱크에서 시작되었으며, 해당 물질을 다른 용기로 옮기던 중 발생했습니다. 불길은 아세톤과 에탄올을 포함한 다른 위험 화학물질 저장 구역으로 번졌습니다. 당국은 화재 진압을 위해 200명이 넘는 소방관을 투입했습니다.",
-      "bodyKo": "10월 14일, 한국 남동부 산업도시 울산에 위치한 한 석유화학 공장에서 인근 화학 제조 공장에서 대형 화재가 발생하자 약 7,000명의 근로자들이 대피했다.\n0 연합뉴스에 따르면, 이번 화재는 10월 14일 오전 9시 41분경 서울 남동쪽 약 300km 떨어진 울산의 한 화학 생산 시설에서 발생했습니다. 공장에 근무하던 직원 12명은 모두 안전하게 대피했습니다. 인근 석유화학 공장 건설 현장의 근로자 약 7,000명과 주변 사업장 직원들도 예방 차원에서 대피했습니다. 현재까지 인명 피해는 보고되지 않았습니다.\n화재는 인화성이 매우 높은 화학물질인 톨루엔 8,000리터가 담긴 야외 탱크에서 시작되었으며, 해당 물질을 다른 용기로 옮기던 중 발생했습니다. 불길은 아세톤과 에탄올을 포함한 다른 위험 화학물질 저장 구역으로 번졌습니다. 당국은 화재 진압을 위해 200명이 넘는 소방관을 투입했습니다.",
+      "titleKo": "대한민국: 화학 공장에서 발생한 대형 화재로 약 7,000명이 대피했습니다.",
+      "url": "https://www.vietnam.vn/ko/han-quoc-khoang-7-000-nguoi-so-tan-do-chay-lon-tai-nha-may-hoa-chat",
+      "body": "10월 14일, 한국 남동부의 산업 도시 울산에 위치한 한 화학 공장에서 대형 화재가 발생해 약 7,000명의 근로자가 대피했습니다.\n0 화재는 같은 날 오전 9시 41분경 서울에서 남동쪽으로 약 300km 떨어진 울산의 한 화학 공장에서 발생했습니다.\n화재는 인화성이 매우 높은 물질인 톨루엔 8,000리터가 저장된 야외 저장 탱크에서 시작되었습니다.\n화재가 발생하여 인접한 지역의 잔디밭으로 번졌습니다. 또한 불길이 인근 화학물질 저장 탱크로 확산될 위험도 있었습니다.\n검은 연기가 자욱하게 피어오르고 유독 화학물질 냄새가 주변을 뒤덮었다. 안전상의 이유로 인근 석유화학 공장 건설 현장의 근로자 약 7,000명이 대피했다.\n화재 발생 후 소방 당국은 전국적인 동원령을 내리고 특수 소방 차량, 헬리콥터, 그리고 인근 도시와 지역에서 200명이 넘는 인력을 투입하여 진화 작업을 벌였습니다.",
+      "bodyKo": "10월 14일, 한국 남동부의 산업 도시 울산에 위치한 한 화학 공장에서 대형 화재가 발생해 약 7,000명의 근로자가 대피했습니다.\n0 화재는 같은 날 오전 9시 41분경 서울에서 남동쪽으로 약 300km 떨어진 울산의 한 화학 공장에서 발생했습니다.\n화재는 인화성이 매우 높은 물질인 톨루엔 8,000리터가 저장된 야외 저장 탱크에서 시작되었습니다.\n화재가 발생하여 인접한 지역의 잔디밭으로 번졌습니다. 또한 불길이 인근 화학물질 저장 탱크로 확산될 위험도 있었습니다.\n검은 연기가 자욱하게 피어오르고 유독 화학물질 냄새가 주변을 뒤덮었다. 안전상의 이유로 인근 석유화학 공장 건설 현장의 근로자 약 7,000명이 대피했다.\n화재 발생 후 소방 당국은 전국적인 동원령을 내리고 특수 소방 차량, 헬리콥터, 그리고 인근 도시와 지역에서 200명이 넘는 인력을 투입하여 진화 작업을 벌였습니다.",
       "tried": true,
-      "count": 3,
+      "count": 1,
       "sources": [
-        "Vietnam.vn",
-        "Laodong.vn"
+        "Vietnam.vn"
       ],
-      "related": [
-        {
-          "titleKo": "대한민국: 화학 공장에서 발생한 대형 화재로 약 7,000명이 대피했습니다.",
-          "source": "Vietnam.vn",
-          "link": "https://www.vietnam.vn/ko/han-quoc-khoang-7-000-nguoi-so-tan-do-chay-lon-tai-nha-may-hoa-chat"
-        },
-        {
-          "titleKo": "한국, 화학 공장 화재로 7,000명 긴급 대피",
-          "source": "Laodong.vn",
-          "link": "https://ko.laodong.vn/the-gioi/han-quoc-khan-cap-so-tan-7000-nguoi-do-vu-chay-tai-nha-may-hoa-chat-1783066.ldo"
-        }
-      ],
+      "related": [],
       "tag": "공장·플랜트"
     },
     {
@@ -179,20 +167,6 @@
       "count": 1,
       "sources": [
         "국제뉴스"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "울산 온산 화학공장서 큰불…폭발음 잇따라 인근 근로자 수천 명 대피",
-      "source": "잉크뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBDMFI4VzlOclIzRkkwZGRKNUFJZlE4eHd5QTZyRS13TkpGM1VPcFVILVNNRmhfb1JPT1l0c191RkMxWDNtRnRMRzNxeU9vdG1BaVZKWXRMV0FRZHdmN09xczRNVXBOUQ?oc=5",
-      "date": "2026-10-14T06:39:11.000Z",
-      "lang": "ko",
-      "titleKo": "울산 온산 화학공장서 큰불…폭발음 잇따라 인근 근로자 수천 명 대피",
-      "count": 1,
-      "sources": [
-        "잉크뉴스"
       ],
       "related": [],
       "tag": "공장·플랜트"
