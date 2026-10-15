@@ -4274,7 +4274,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   // 같은 주소의 움직이는 그림은 브라우저가 처음부터 다시 틀어 주지 않아서, 한 번 받아 두고 재생할 때마다 새 주소(blob)를 만든다
   const ACTION_MS = 8400;
   let actionBlob = null, actionUrl = "", acting = false;
-  fetch("assets/mascot-salute.webp").then((r) => (r.ok ? r.blob() : null)).then((b) => { actionBlob = b; }).catch(() => {});
+  setTimeout(() => fetch("assets/mascot-salute.webp").then((r) => (r.ok ? r.blob() : null)).then((b) => { actionBlob = b; }).catch(() => {}), 12000);   // 첫 화면 뒤에 받기
   function playAction(t) {
     if (!actionBlob) return false;
     if (actionUrl) URL.revokeObjectURL(actionUrl);
@@ -4306,7 +4306,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   const nextNap = () => { napDue = performance.now() + (5 + Math.random() * 3) * 60 * 1000; napX = null; };   // sleeping: 0=깨어 있음, 1=잠드는 중, 2=쿨쿨, 3=깨는 중
   setTimeout(() => {
     Object.keys(SLEEP).forEach((k) => fetch(SLEEP[k].src).then((r) => (r.ok ? r.blob() : null)).then((b) => { if (b) sleepBlob[k] = b; }).catch(() => {}));
-  }, 3000);
+  }, 45000);   // 낮잠은 몇 분 뒤에야 나오니 첫 화면과 겹치지 않게 45초 뒤에 받는다
   const sleepReady = () => sleepBlob.a && sleepBlob.l && sleepBlob.w;
   function showSleep(k) {
     if (sleepUrl[k]) URL.revokeObjectURL(sleepUrl[k]);
@@ -7278,7 +7278,8 @@ async function clinicCall(action, payload) {
     if (im.decode) im.decode().catch(() => {});
     keep.push(im);
   }, i * 300));
-  const start = () => (window.requestIdleCallback ? requestIdleCallback(run, { timeout: 3000 }) : setTimeout(run, 800));
+  // 첫 화면과 다투지 않게 10초 뒤부터 (2026-10-15)
+  const start = () => setTimeout(() => (window.requestIdleCallback ? requestIdleCallback(run, { timeout: 3000 }) : run()), 10000);
   if (document.readyState === "complete") start(); else window.addEventListener("load", start, { once: true });
 })();
 
@@ -8549,11 +8550,12 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   const blobs = {};
   const fresh = (src) => blobs[src] ? URL.createObjectURL(blobs[src]) : src + (src.includes("?") ? "&" : "?") + "t=" + Date.now();
   const ease = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-  // 미리 받아 둔다
-  Object.values(SRC).forEach((s) => {
-    const i = new Image(); i.src = s;
+  // 미리 받아 둔다 — 첫 화면을 다 띄운 뒤(20초 뒤)에 받는다. 다 받기 전에는 이 장면을 하지 않는다 (2026-10-15 첫 화면 가볍게)
+  const preloadScene = () => Object.values(SRC).forEach((s) => {
     fetch(s).then((r) => (r.ok ? r.blob() : null)).then((b) => { if (b) blobs[s] = b; }).catch(() => {});
   });
+  const sceneReady = () => Object.values(SRC).every((s) => blobs[s]);
+  if (document.readyState === "complete") setTimeout(preloadScene, 20000); else window.addEventListener("load", () => setTimeout(preloadScene, 20000), { once: true });
 
   function anim(ms, fn) {
     return new Promise((res, rej) => {
@@ -8568,7 +8570,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
 
   // 지금 장면을 보여 줄 수 있는지: 종합현황 · 화면 맨 위 · PC 화면 · 안내/인트로 중이 아님 · 탭이 보이는 중
   function can() {
-    return !running && innerWidth >= 1100 && scrollY < 80 && !document.hidden
+    return !running && sceneReady() && innerWidth >= 1100 && scrollY < 80 && !document.hidden
       && document.querySelector("#view-dashboard.active") && !document.querySelector(".hse-intro")
       && !document.body.classList.contains("hg-running") && !cardsAway();
   }
