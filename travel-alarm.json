@@ -594,12 +594,6 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "사바주 동부도서 지역 및 동부해안"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -610,6 +604,12 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "사바주 동부도서 지역 및 동부해안"
     }
    ],
    "written": "",
@@ -1866,6 +1866,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "중•북부 시나이 반도(1,2단계 지역 제외), 리비아 국경으로부터 30km까지"
+    },
+    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -1876,12 +1882,6 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "다합•샴엘셰이크지역, 카이로 등 나일강 유역 도시지역, 마르트루~지중해 유역"
-    },
-    {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "중•북부 시나이 반도(1,2단계 지역 제외), 리비아 국경으로부터 30km까지"
     }
    ],
    "written": "",
@@ -1935,16 +1935,16 @@
    "level": 2,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "서파루아, 파푸아, 말루쿠, 아체"
-    },
-    {
      "level": 1,
      "levelName": "여행유의",
      "region": "일부",
      "remark": "2단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "서파루아, 파푸아, 말루쿠, 아체"
     }
    ],
    "written": "",
@@ -1975,16 +1975,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "킹스턴, 세인트앤드류, 세인트캐서린"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2169,16 +2169,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "노르드 주, 아다모와 주, 북서부 주, 남서부 주, 최북부 주"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "전체",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "노르드 주, 아다모와 주, 북서부 주, 남서부 주, 최북부 주"
     }
    ],
    "written": "",
@@ -2318,16 +2318,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "라이베리아ㆍ기니와 국경을 접한 서부 지역(뎅겔레 주, 몽타뉴 주, 바핑 주), 초로고(Tchologo), 붕카니(Bounkani) 지역"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "라이베리아ㆍ기니와 국경을 접한 서부 지역(뎅겔레 주, 몽타뉴 주, 바핑 주), 초로고(Tchologo), 붕카니(Bounkani) 지역"
     }
    ],
    "written": "",
@@ -2461,16 +2461,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "음트와라(Mtwara) 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2622,16 +2622,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "콜롬비아 국경지역 40Km 지역"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "콜롬비아 국경지역 40Km 지역"
     }
    ],
    "written": "",
@@ -2662,12 +2662,6 @@
    "level": 4,
    "regions": [
     {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "발루치스탄"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -2678,6 +2672,12 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "이슬라마바드, 페이살라바드, 라왈핀디, 라호르, 훈자, 길깃, 스카르두"
+    },
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "발루치스탄"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-10-14T06:46:58.755770+00:00"
+ "generatedAt": "2026-10-15T06:33:46.988857+00:00"
 }
