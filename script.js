@@ -9937,6 +9937,15 @@ function clinicExtraHtml(month) {
     <div class="clinic-sub" style="margin-top:14px">${TT(`${mo}월 건강 수칙`, "This month's health tips")}</div>
     <ul class="cx-tips">${tips.map(([ic, t]) => `<li><span>${ic}</span>${escapeHtml(t)}</li>`).join("")}</ul>
     <div class="cx-er" id="clinicEr"><b>🚑 ${TT("응급 시", "Emergency")}</b> ${TT("현장 클리닉", "Site clinic")} <a href="tel:07809262446">0780-926-2446</a> · ${TT("이라크 긴급", "Iraq emergency")} <a href="tel:911">911</a></div>
+    <div class="cx-fcn">
+      <div class="clinic-sub">🩺 ${TT("FCN 진료 신청", "FCN appointment request")} <span class="cx-fcn-tag">${TT("준비 중", "Coming soon")}</span></div>
+      <form class="cx-fcn-f" onsubmit="return false" aria-disabled="true">
+        <input type="text" placeholder="${TT("사번", "Employee ID")}" aria-label="${TT("사번", "Employee ID")}" disabled>
+        <input type="text" placeholder="${TT("이름", "Name")}" aria-label="${TT("이름", "Name")}" disabled>
+        <button type="button" disabled>${TT("신청", "Request")}</button>
+      </form>
+      <p class="cx-fcn-note">※ ${TT("사업 재개 시 운영 예정입니다.", "Will open when the project resumes.")}</p>
+    </div>
   </div>`;
 }
 // 가까운 응급실 2곳 (주변 의료기관 자료 · OpenStreetMap)
