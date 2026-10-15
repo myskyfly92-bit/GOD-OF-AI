@@ -454,6 +454,8 @@ html[data-theme="light"] :is(.topbar, .mascot-bubble, .vc-win, .vc-pop, .desk-ti
 :where(html[data-theme="light"]) .imp-act { color: #76590b; }
 :where(html[data-theme="light"]) .ibrief-act { color: #76590b; }
 :where(html[data-theme="light"]) .theme-btn { background: rgba(20,40,60,0.092); }
+:where(html[data-theme="light"]) .gdot { box-shadow: 0 1px 4px rgba(0,0,0,0.135); }
+:where(html[data-theme="light"]) .gclu { box-shadow: 0 2px 8px rgba(0,0,0,0.135); }
 
 /* ---- 손으로 맞춘 부분 ---- */
 /* ===== 라이트 모드 손 보정 (tools/light-fix.css → light.css 맨 끝에 붙음) ===== */

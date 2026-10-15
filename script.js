@@ -3690,6 +3690,11 @@ let globalCompanies = {};
 let globalActiveCompany = "all";
 
 const GLOBAL_STATUS_COLOR = { "공사중": "#35d0c0", "수주": "#f2a93b", "준공": "#8a94a3" };
+// 지도용 회사 색: 회사 고유색은 파란색이 대부분이라 지도에서 구분이 안 된다 → 서로 확실히 다른 색으로
+const GLOBAL_PALETTE = { hanwha: "#f37321", hdec: "#2f6fd6", samsungcnt: "#14a38b", samsungea: "#8b5cf6", daewoo: "#e5487a",
+  dlenc: "#c99a06", doosan: "#0ea5e9", kolon: "#d6001c", dongbu: "#65a30d", hj: "#8b5e3c", shi: "#64748b" };
+const GLOBAL_EXTRA = ["#db2777", "#0891b2", "#a16207", "#4d7c0f", "#7c3aed", "#be123c"];
+let globalClusterLayer = null;
 
 function globalBadgeHtml(company, size) {
   const s = size || 34;
@@ -3726,7 +3731,7 @@ async function initGlobalMap() {
   }
 
   globalCompanies = {};
-  (data.companies || []).forEach((c) => { globalCompanies[c.id] = c; });
+  (data.companies || []).forEach((c, i) => { globalCompanies[c.id] = Object.assign({}, c, { color: GLOBAL_PALETTE[c.id] || GLOBAL_EXTRA[i % GLOBAL_EXTRA.length] }); });
 
   // 로고를 따로 지정하지 않은 회사는 assets/logos/회사id.png(.jpg/.svg) 파일이 있으면 자동으로 쓴다
   // 예: 현대건설 → assets/logos/hdec.png, 삼성물산 → assets/logos/samsungcnt.png
@@ -3775,19 +3780,19 @@ async function initGlobalMap() {
     let dLat = 0, dLon = 0;
     if (n > 1) {
       const angle = (n - 1) * 2.39996; // 황금각(라디안)
-      const r = 1.4 * Math.sqrt(n - 1);
+      const r = 1.1 * Math.sqrt(n - 1);
       dLat = r * Math.sin(angle) * 0.7;
       dLon = r * Math.cos(angle);
     }
     const marker = L.marker([p.lat + dLat, p.lon + dLon], {
       icon: L.divIcon({
-        className: "gmarker-wrap",
-        html: `<div class="gmarker" style="--st:${GLOBAL_STATUS_COLOR[p.status] || "#35d0c0"}">${globalBadgeHtml(c, 34)}</div>`,
-        iconSize: [0, 0],
+        className: "gdot-wrap",
+        html: `<span class="gdot${p.status === "수주" ? " won" : ""}" style="--c:${c.color}"></span>`,
+        iconSize: [16, 16], iconAnchor: [8, 8],
       }),
       riseOnHover: true,
-    }).addTo(globalMapInstance);
-    marker.bindTooltip(`<b>${escapeHtml(c.name)}</b><br>${escapeHtml(p.name)}`, { direction: "top", offset: [0, -20], className: "gtooltip" });
+    });
+    marker.bindTooltip(`<b style="color:${c.color}">●</b> <b>${escapeHtml(c.name)}</b><br>${escapeHtml(p.name)}<br><span style="opacity:.75">${escapeHtml(p.country || "")} · ${escapeHtml(p.status || "")}</span>`, { direction: "top", offset: [0, -8], className: "gtooltip" });
     marker.bindPopup(`
       <div class="gpopup">
         <div class="gpopup-head">${globalBadgeHtml(c, 40)}<div><b>${escapeHtml(c.name)}</b><br><span>${escapeHtml(p.name)}</span></div></div>
@@ -3806,8 +3811,12 @@ async function initGlobalMap() {
   } catch (e) { /* 아직 없음 */ }
   globalMarkers.forEach((m) => { const pr = globalProgressBar(m.project, true); if (pr) m.marker.setPopupContent(m.marker.getPopup().getContent().replace("<!--prog-->", pr)); });
 
+  globalClusterLayer = L.layerGroup().addTo(globalMapInstance);
+  globalMapInstance.on("zoomend", globalRefresh);
+  globalRefresh();
   renderGlobalFilter(projects);
   renderGlobalList();
+  renderGlobalLegend();
   const countries = new Set(projects.map((p) => p.country)).size;
   const companyCount = new Set(projects.map((p) => p.company)).size;
   document.getElementById("globalMeta").textContent =
@@ -3867,13 +3876,57 @@ function renderGlobalFilter(projects) {
   });
 }
 
+// 지도 다시 그리기: 화면에서 서로 가까운(36px 안) 현장은 하나의 원(회사 비율 원그래프 + 현장 수)으로 묶고,
+// 떨어져 있는 현장은 점으로 보여 준다. 확대하면 묶음이 저절로 풀린다
+function globalRefresh() {
+  if (!globalMapInstance || !globalClusterLayer) return;
+  const map = globalMapInstance;
+  const shown = globalMarkers.filter((m) => globalActiveCompany === "all" || m.project.company === globalActiveCompany);
+  globalClusterLayer.clearLayers();
+  globalMarkers.forEach((m) => m.marker.remove());
+  const R = 36, groups = [];
+  shown.forEach((m) => {
+    const pt = map.latLngToLayerPoint(m.marker.getLatLng());
+    const g = groups.find((x) => x.pt.distanceTo(pt) < R);
+    if (g) { g.list.push(m); g.pt = L.point((g.pt.x * (g.list.length - 1) + pt.x) / g.list.length, (g.pt.y * (g.list.length - 1) + pt.y) / g.list.length); }
+    else groups.push({ pt, list: [m] });
+  });
+  groups.forEach((g) => {
+    if (g.list.length === 1) { g.list[0].marker.addTo(map); return; }
+    const by = {}; g.list.forEach((m) => { by[m.company.id] = (by[m.company.id] || 0) + 1; });
+    const ids = Object.keys(by).sort((a, b) => by[b] - by[a]);
+    let acc = 0;
+    const pie = ids.map((id) => { const a0 = acc; acc += by[id] / g.list.length * 360; return `${globalCompanies[id].color} ${a0}deg ${acc}deg`; }).join(",");
+    const size = Math.round(26 + 6 * Math.sqrt(g.list.length));
+    const countries = [...new Set(g.list.map((m) => m.project.country).filter(Boolean))];
+    const mk = L.marker(map.layerPointToLatLng(g.pt), {
+      icon: L.divIcon({ className: "gclu-wrap", html: `<div class="gclu" style="width:${size}px;height:${size}px;background:conic-gradient(${pie})"><b>${g.list.length}</b></div>`, iconSize: [size, size], iconAnchor: [size / 2, size / 2] }),
+      riseOnHover: true,
+    }).addTo(globalClusterLayer);
+    mk.bindTooltip(`<b>${escapeHtml(countries.slice(0, 4).join(" · "))}${countries.length > 4 ? " 외" : ""}</b> · 현장 ${g.list.length}곳<br>` +
+      ids.map((id) => `<span style="color:${globalCompanies[id].color}">●</span> ${escapeHtml(globalCompanies[id].name)} ${by[id]}`).join("<br>") + `<br><span style="opacity:.7">누르면 확대</span>`,
+      { direction: "top", offset: [0, -size / 2], className: "gtooltip" });
+    mk.on("click", () => {
+      const b = L.latLngBounds(g.list.map((m) => m.marker.getLatLng()));
+      map.fitBounds(b.pad(0.5), { maxZoom: Math.max(map.getZoom() + 2, 5) });
+    });
+  });
+}
+// 지도 아래 회사 색 범례
+function renderGlobalLegend() {
+  const box = document.getElementById("globalLegend"); if (!box) return;
+  const ids = [...new Set(globalMarkers.map((m) => m.company.id))];
+  box.innerHTML = ids.map((id) => `<span><i style="background:${globalCompanies[id].color}"></i>${escapeHtml(globalCompanies[id].name)}</span>`).join("") +
+    `<span class="gl-note"><i class="won"></i>테두리 점선 = 수주(착공 전) · 숫자 원 = 가까이 모인 현장 수 (누르면 확대)</span>`;
+}
+
 function applyGlobalFilter() {
   const visible = [];
   globalMarkers.forEach((m) => {
     const show = globalActiveCompany === "all" || m.project.company === globalActiveCompany;
-    if (show) { m.marker.addTo(globalMapInstance); visible.push(m.marker.getLatLng()); }
-    else m.marker.remove();
+    if (show) visible.push(m.marker.getLatLng());
   });
+  globalRefresh();
   if (globalActiveCompany !== "all" && visible.length) {
     globalMapInstance.fitBounds(L.latLngBounds(visible).pad(0.5), { maxZoom: 5 });
   } else if (globalActiveCompany === "all") {

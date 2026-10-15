@@ -4622,3 +4622,18 @@ body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !impo
 /* 라이트/다크 전환 버튼 (메뉴줄) */
 .theme-btn { font: inherit; font-size: 12px; font-weight: 600; color: var(--text); background: rgba(255,255,255,.08); border: 1px solid var(--border); border-radius: 999px; padding: 6px 12px; cursor: pointer; white-space: nowrap; }
 .theme-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+
+/* 건설사 해외현장 지도: 현장 점 · 나라별 묶음 · 범례 */
+.gdot-wrap { background: transparent; border: none; }
+.gdot { display: block; width: 16px; height: 16px; border-radius: 50%; background: var(--c); border: 2.5px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.45); box-sizing: border-box; cursor: pointer; transition: transform .15s; }
+.gdot.won { border-style: dashed; }
+.gdot:hover { transform: scale(1.35); }
+.gclu-wrap { background: transparent; border: none; }
+.gclu { position: relative; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,.45); cursor: pointer; transition: transform .15s; }
+.gclu:hover { transform: scale(1.1); }
+.gclu b { position: absolute; inset: 22%; border-radius: 50%; background: #fff; color: #16202b; display: flex; align-items: center; justify-content: center; font: 800 12px/1 var(--font-mono); }
+.glegend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: -4px 0 10px; font-size: 12px; color: var(--text-muted); }
+.glegend span { display: inline-flex; align-items: center; gap: 5px; }
+.glegend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.glegend .gl-note { color: var(--text-dim); }
+.glegend i.won { background: transparent; border: 2px dashed var(--text-muted); width: 8px; height: 8px; }
