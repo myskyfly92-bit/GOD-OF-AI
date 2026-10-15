@@ -4618,3 +4618,7 @@ body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !impo
 .ibrief-l a { font-size: 12.5px; color: var(--text-muted); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ibrief-l a:hover { color: var(--cyan); }
 .ibrief-none { margin: 2px 0 0; color: var(--text-muted); font-size: 13.5px; }
+
+/* 라이트/다크 전환 버튼 (메뉴줄) */
+.theme-btn { font: inherit; font-size: 12px; font-weight: 600; color: var(--text); background: rgba(255,255,255,.08); border: 1px solid var(--border); border-radius: 999px; padding: 6px 12px; cursor: pointer; white-space: nowrap; }
+.theme-btn:hover { border-color: var(--cyan); color: var(--cyan); }

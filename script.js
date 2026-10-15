@@ -10000,3 +10000,17 @@ function clinicFillEr() {
     box.insertAdjacentHTML("beforeend", `<div class="cx-er-l">${TT("가까운 응급실", "Nearest ER")}: ${er.map((x) => `<a href="https://www.google.com/maps/dir/?api=1&destination=${x.lat},${x.lon}" target="_blank" rel="noopener noreferrer">${escapeHtml(x.nameEn || x.name)} <small>${x.km}km ↗</small></a>`).join(" · ")}</div>`);
   }).catch(() => {});
 }
+
+/* 라이트 / 다크 모드 전환 (상단 메뉴줄 ☀️ 버튼) — 기기마다 기억 (localStorage hseTheme) */
+(function themeToggle() {
+  const btn = document.getElementById("themeBtn"); if (!btn) return;
+  const root = document.documentElement;
+  const draw = () => { const light = root.getAttribute("data-theme") === "light"; btn.textContent = light ? "🌙 어둡게" : "☀️ 밝게"; btn.setAttribute("aria-pressed", light); };
+  btn.addEventListener("click", () => {
+    const light = root.getAttribute("data-theme") !== "light";
+    if (light) root.setAttribute("data-theme", "light"); else root.removeAttribute("data-theme");
+    try { localStorage.setItem("hseTheme", light ? "light" : "dark"); } catch (e) {}
+    draw();
+  });
+  draw();
+})();

@@ -49,7 +49,9 @@ html.intro-pending::after {
 <link rel="icon" type="image/png" href="assets/icon/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=20261015l">
+<link rel="stylesheet" href="style.css?v=20261015m">
+<link rel="stylesheet" href="light.css?v=20261015m">
+<script>try{if(localStorage.getItem("hseTheme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
@@ -168,6 +170,8 @@ html.intro-pending::after {
       <button type="button" class="lang-btn" data-lang="en">ENG</button>
       <button type="button" class="lang-btn" data-lang="ar">العربية</button>
     </div>
+
+    <button type="button" class="theme-btn" id="themeBtn" title="밝은 화면 / 어두운 화면 바꾸기">☀️ 밝게</button>
 
     <button type="button" class="desk-btn" id="deskInstall" title="바탕화면에 상황실 바로가기(무재해 아이콘) 만들기">📌 바탕화면 바로가기</button>
 
@@ -1178,7 +1182,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261015l"></script>
+<script src="script.js?v=20261015m"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

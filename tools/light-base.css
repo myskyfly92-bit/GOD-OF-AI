@@ -1,0 +1,23 @@
+/* 라이트 모드 기본 색 (html[data-theme="light"]) */
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #eef2f6; --bg-grid: #e6ebf1;
+  --panel: #ffffff; --panel-2: #f7f9fb;
+  --border: #d3dbe4; --border-soft: #e1e7ee;
+  --text: #16202b; --text-muted: #4a5868; --text-dim: #5d6a78;
+  --amber: #a85f00; --amber-dim: #e9c58c;
+  --cyan: #077e73; --ok: #077e73;
+  --danger: #c4262c; --warn: #8f6400;
+  --blue: #1a64c4; --violet: #6f3fb8; --green: #18793f; --gold: #8a5d00; --pink: #b8323d;
+}
+html[data-theme="light"], html[data-theme="light"] body { background: var(--bg); }
+/* 배경 사진은 아주 옅게만 */
+html[data-theme="light"] body::before { opacity: .07 !important; filter: grayscale(.5); }
+html[data-theme="light"] body::after { opacity: 0 !important; }
+/* 어두운 섬(배너·안내 버튼·마스코트 말풍선 등)은 다크 색 변수를 그대로 쓴다 */
+html[data-theme="light"] :is(.topbar, .hg-again, .mascot-bubble, .vc-win, .vc-pop, .desk-tip, .desk-box, .desk-toast, .hse-intro, .kiosk-caption) {
+  --text: #eaf0f6; --text-muted: #8996a6; --text-dim: #7d8998;
+  --panel: #121924; --panel-2: #0f151e; --border: #202a38; --border-soft: #1a2330; --bg: #0a0e13;
+  --cyan: #35d0c0; --amber: #f2a93b; --danger: #e5484d; --blue: #4fb4ff; --green: #5fd68f; --gold: #ffd166;
+  color: var(--text);
+}
