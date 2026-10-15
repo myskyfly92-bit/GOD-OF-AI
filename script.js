@@ -9946,7 +9946,8 @@ function fcnHtml() {
       ${f("소속", "Company / Dept")}${f("사번", "Employee ID")}${f("이름", "Name")}${f("한국인 담당자", "Korean supervisor")}
       ${f("증상 (예: 두통, 기침 3일째)", "Symptoms (e.g. headache, cough for 3 days)", "cx-fcn-wide")}
       <button type="button" disabled>${TT("신청", "Request")}</button>
-    </form>`;
+    </form>
+    <p class="cx-fcn-why">${TT("근무시간 무단이탈 방지 및 작업 공백·인원 파악 혼선 예방을 위한 진료 사전 신청입니다.", "Book clinic visits in advance to prevent unauthorized absence during work hours and avoid gaps in work and headcount confusion.")}</p>`;
 }
 function clinicExtraHtml(month) {
   // ① 증상 TOP
