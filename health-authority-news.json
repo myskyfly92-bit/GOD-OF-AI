@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T23:55:03.107Z",
+  "generatedAt": "2026-10-15T23:41:43.156Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -17,20 +17,6 @@
       "date": "2025-12-16T15:48:42.000Z"
     },
     {
-      "title": "AI의 위로가 사람을 대신할 수 없습니다 「정신건강 목적 생성형 AI 이용 가이드라인」 발표",
-      "source": "보건복지부 대표홈페이지",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTGtscTNMUUxNMFZKU2dJSElQMldSaEVpSnBjaEVHb1FhbXhsRUNlQ3g0UzdkLVhIZUt1MFUtaTVfM19XRGtTYUhNejFpYk5ta3RXbVZhdGxkUlJ5QmtLVjRFcjBaT3RlYk42LUR3Y0lOenFFOEtycURTV0FIYmRlMVlRUGg1TzBzQkZfbE1sOF9ySDJ1bkc0U1djcw?oc=5",
-      "date": "2026-10-08T04:35:00.000Z"
-    },
-    {
-      "title": "암정보",
-      "source": "국가건강정보포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOVJ0cE1rNW9DUDEwTGtiZFdXcWFrWHNYdHp4Ul9OWVdPcEFoTnZtMGRJYXpQT0tpSzhrVkF1c1VKbTNoVkpfdkMzQmdHUzY1S0ZtbC1vQnlxWkpWbjZ2LW82cEc2QnBPOHY5TU5jbDRiQzI4RUJDaU9hX2NHb3NEX0ZDS2tNQmR5UWNWQks1cVlFbG1CZDJUd0FXS3M0UQ?oc=5",
-      "date": "2026-10-08T11:54:52.000Z"
-    },
-    {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
       "source": "질병관리청 감염병포털",
       "agency": "",
@@ -38,32 +24,18 @@
       "date": "2024-06-10T03:38:59.000Z"
     },
     {
-      "title": "원시자료",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjMVpCbVpsS2Z6NmFPSFJOQzZBT2Z4TDhwRkxtdjRQOHlPTUFDQzdNbzl2Nk5BZ2owZGhsMkswVEllOFBjVmliMjhnamxncWlRbmhhY2NR?oc=5",
-      "date": "2026-01-16T10:40:08.000Z"
-    },
-    {
-      "title": "보도자료(전체)",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
-      "date": "2025-12-16T15:46:00.000Z"
-    },
-    {
       "title": "- 질병관리청",
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-14T08:45:37.000Z"
+      "date": "2026-10-15T05:37:02.000Z"
     },
     {
-      "title": "감시체계 연보",
+      "title": "레지오넬라증",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tOW1Tdng1ZEhkR2duX1ViaWdQYktJQXNncGlJckFoU0syYURRZGRmRUdHcERWQmVjUlpEVWpMTEd6SmxMVUx6c3lGNU9oamhtZjdjWTdn?oc=5",
-      "date": "2025-12-16T16:42:53.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52SW9Ma2pUR1JIZ1AxZHJEQnhtaFh1N1A0b3VVWTByTHVyVG9qQWJ1VmtMOElGdzM4MnRNdkVBd2dUa1F6OU82Mk44UGppVFlKb0UwUGRn?oc=5",
+      "date": "2025-12-16T16:14:22.000Z"
     },
     {
       "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
@@ -80,11 +52,39 @@
       "date": "2025-12-16T15:49:07.000Z"
     },
     {
-      "title": "정보구독",
+      "title": "보도자료 - [10.16.금.조간] 2026년 상반기 감염병 예방행태 실태조사 결과 발표",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5WbWp5dGlFbE9sRDVsWTRNc2lFd1ZGZ0h3eHpoUENWZW1jN2podTNxbzlvRENEQ0lpNm1hTDRsa2cyeVk1QmxpVDM2OHl2TmJpS3VSaXdR?oc=5",
-      "date": "2025-12-16T14:35:45.000Z"
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1TWk44TThaTXBaNk51aWdkQTRCb24za3FZbnRxbGR3Mlo3U2NOSndRM0hDb0FsbDJTSkJFQmIxQ1RFTXROQVFKaWduTVkxS0Y5NHYxenlPdnVrWWE0QVpsLUxyd1VIUXVHbmZqaGdmTi04WVNyeW5hZQ?oc=5",
+      "date": "2026-10-15T03:13:59.000Z"
+    },
+    {
+      "title": "홍보지",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJb3BJdkZ4eHRZZWZUdlM1bmpsZzlpdDlkSnVFT0UyS1Q1LVFHTTZaVEtHcXU0YTJLTDc2eGFpckpncmdpb2U5N0FIXzJ3RmhXdVJrMFJ3?oc=5",
+      "date": "2025-12-16T15:47:43.000Z"
+    },
+    {
+      "title": "신고현황 - 2025년 온열질환감시체계 운영 결과(5.15.~8.8.)",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9KQ0JCdzB2TzBmbllyYXdNaThsbDhqQ2hzZnk1WWZSc2FCNEpJTzl3YTV2LS1ZbXA3M1ZqejJ5aldfQmtRZUVSaXh2WVBtOGpnb1dybC0yYVMwQVZQOG5aMlRwczU5VWtvdWVfaXZHcmc0R2VuSFRobUt3?oc=5",
+      "date": "2025-12-16T23:45:41.000Z"
+    },
+    {
+      "title": "보도자료",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9JZnl6T202QkNnTlo0dFdWdkZnT0IzbzFGWmd3TVh5aVVDZmx4NDRKZVgwekdkTW13eUxtUnRGR2otcHJ5TGU4NDh6dnNFRmwxUXVJNVdlTEtyNWcxcVQtZnlXQ2ZDQXlMaXNVck1qVmhUT0dJenNxVQ?oc=5",
+      "date": "2026-10-12T23:52:49.000Z"
+    },
+    {
+      "title": "희귀질환정보",
+      "source": "질병관리청 희귀질환 헬프라인",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcnRpZ3BUQkw2eWEyWDl2aDF6Y2d3X2lxY3MtNm4tcndwTFpHYW5zUzZSbTlSQXMtRGpneUpWMW81N28yU2VSb2tDSnpmWi05amlGUkstbmxRbzNqS0NfQ2RKTl9DZHU3bERvWnVpLWxVNWZnTk9GQzI1bnptMEtEMC1pZXQzcGt5MnNJaVBlZ29NS3poWDhLYWx5aFg3MFZNVGVwZHlUX0VmU0xPMlpKY3ptT3dDU1FYRDctUHVQWlFjVXJsQmo5Qg?oc=5",
+      "date": "2026-10-11T19:59:54.000Z"
     }
   ]
 }
