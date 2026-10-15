@@ -9944,6 +9944,7 @@ function clinicExtraHtml(month) {
         <input type="text" placeholder="${TT("사번", "Employee ID")}" aria-label="${TT("사번", "Employee ID")}" disabled>
         <input type="text" placeholder="${TT("이름", "Name")}" aria-label="${TT("이름", "Name")}" disabled>
         <input type="text" placeholder="${TT("한국인 담당자", "Korean supervisor")}" aria-label="${TT("한국인 담당자", "Korean supervisor")}" disabled>
+        <input type="text" class="cx-fcn-wide" placeholder="${TT("증상 (예: 두통, 기침 3일째)", "Symptoms (e.g. headache, cough for 3 days)")}" aria-label="${TT("증상", "Symptoms")}" disabled>
         <button type="button" disabled>${TT("신청", "Request")}</button>
       </form>
       <p class="cx-fcn-note">※ ${TT("사업 재개 시 운영 예정입니다.", "Will open when the project resumes.")}</p>
