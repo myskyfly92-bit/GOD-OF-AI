@@ -12,7 +12,7 @@
   --border-soft: #1a2330;
   --text: #eaf0f6;
   --text-muted: #8996a6;
-  --text-dim: #5b6675;
+  --text-dim: #7d8998; /* 흐린 글씨: 패널 위 대비 5:1 (접근성 기준 4.5:1 이상) */
   --amber: #f2a93b;
   --amber-dim: #7a5b24;
   --cyan: #35d0c0;

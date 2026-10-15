@@ -4578,7 +4578,7 @@ const HSEWX_BANDS = {
   wbgt: [[21, "거의 안전", "#35d0c0"], [25, "주의", "#8bd35f"], [28, "경계", "#ffd166"], [31, "엄중 경계", "#f2a93b"], [Infinity, "위험", "#e5484d"]],
 };
 function hsewxBand(kind, v) {
-  if (v == null || !isFinite(v)) return { name: "–", color: "#5b6675" };
+  if (v == null || !isFinite(v)) return { name: "–", color: "#7d8998" };
   const b = HSEWX_BANDS[kind].find(([max]) => v < max) || HSEWX_BANDS[kind][HSEWX_BANDS[kind].length - 1];
   return { name: b[1], color: b[2] };
 }

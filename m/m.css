@@ -1,7 +1,7 @@
 /* 비스마야 HSE 상황실 — 휴대폰 전용 화면 */
 :root {
   --bg: #0b1118; --bg2: #0f1720; --card: #131c27; --card2: #182331; --line: #223042; --line2: #2b3b50;
-  --text: #e8edf3; --muted: #9aa8b8; --dim: #6c7b8d;
+  --text: #e8edf3; --muted: #9aa8b8; --dim: #808ea0;
   --cyan: #35d0c0; --amber: #f2a93b; --red: #ef5350; --green: #4cc38a; --blue: #4fa3ff; --violet: #b18cff;
   --r: 16px; --safe-b: env(safe-area-inset-bottom, 0px);
   color-scheme: dark;
