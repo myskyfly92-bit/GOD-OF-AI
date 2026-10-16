@@ -1,90 +1,90 @@
 {
-  "generatedAt": "2026-10-15T23:38:22.203Z",
+  "generatedAt": "2026-10-16T23:26:23.299Z",
   "query": "(질병 OR 전염병 OR 감염병 OR 사고 OR 의료 OR 의학) when:2d",
   "items": [
     {
-      "title": "국내 최고령 하마 '하순' 무지개별로…\"질병 없이 눈 감아\"",
-      "source": "연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBDQkY5bFY5VTlkaTVqWExCMXctM3o2U3plSmFFNE9HMXRZVkdXai1iMnlWZ3hZaU1vWGZtajRkajh6V0JGZHRCUl9UM0hvQk1ZMXpkTURyUlJ3WUk?oc=5",
-      "date": "2026-10-15T23:01:35.000Z",
-      "summary": "연합뉴스"
+      "title": "사고 잦은 설악산...단풍철 앞두고 탐방로 정비",
+      "source": "YTN",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1WOVF4NkVTV2dzbi1tTHlWVE40NG9WY0VSYWJ1ODV6OWd0cG1udkNMTDY1QjVkb3hWUDJWSlJ5bDNYaVNRRGE2TXM1Wl9PVHBjRk5fZm9rRmx1VXpTNHc?oc=5",
+      "date": "2026-10-16T19:37:00.000Z",
+      "summary": "YTN"
     },
     {
-      "title": "경마현장 사고 5년간 807건, 마사회 파악도 안 해",
-      "source": "매일노동뉴스",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhdW9VdXFmNkdhbjJfQzlsUm03ZnhvSlE3N1JwYzJDcXFvekcteGM1Y0FhWXh2dGN3OEViOGNpeG5INkRLaFFCd3RHdU9yeTB6ZGpCMWdZWTc3ZmRhSlNjVjdIWW8xOVVYdVlqdzh0RVQ?oc=5",
-      "date": "2026-10-15T21:30:04.000Z",
-      "summary": "매일노동뉴스"
+      "title": "[보도설명자료][10.16.금 뉴스1] 업체와 논문·특허 공유한 교수가 심의... 혁신의료기술 안전관리 '구멍' 관련",
+      "source": "대한민국 정책브리핑",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9HYmhrTURVUVRxX2Y3SjVnUm1GY0dVQUJfczl5dThrTlRlNmdsbFRRMG9xWWU4QjItem1vMkphdWR3eXRoTWhMVHk3OUJ5UkpwamlkUTgwOWxaejZWS2J5WWhHN0tBQkQ0N251SXNsNA?oc=5",
+      "date": "2026-10-16T19:48:21.000Z",
+      "summary": "대한민국 정책브리핑"
     },
     {
-      "title": "[단독] “용량 부족해서”…귀중한 AI 의료데이터 날린 심평원",
-      "source": "중앙일보",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5hRFNsRHQwUDRidzU4NWhTd2xSVjNjODUyTHYzT1diQU1yTjVpbWVSaE1QUGNoVlp0QlJodjBsbGlFck1xRmVmS2pjdDE3N3Y1SzRXZVNn?oc=5",
-      "date": "2026-10-15T20:00:00.000Z",
-      "summary": "중앙일보"
-    },
-    {
-      "title": "“보툴리눔 톡신 ‘국가핵심기술’ 지정 수출 발목”",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBlbG9GeFlEcnpoN0NGUDEtZWFFMXhrRF9XOUJJV2NvTjJ6Q00tOVdjbHdVNnY3aEdqWS01cFZ0d213Tk9taE84OXM4UE1tdy1vbWpQejA2dGY3T2ZSdDZOcjBwRVp1cnZ3YWc?oc=5",
-      "date": "2026-10-15T21:00:00.000Z",
-      "summary": "의학신문"
-    },
-    {
-      "title": "전공의 복귀했지만 교수 없어…수련·지역의료 위기 경고",
-      "source": "메디칼업저버",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5zQzlwSlhfSG5fMGdxRzFhOFk0OElOQ0lpbnNpaWxQV01pZG8wXzc3N1FEOUk1TjJhT1pSM1VoM0ZLdUMxYzJpdWdwZEwtVS1yMUR4UFNNd0ZPc2gta3VZZEdtRmtka0ZEb2NZ?oc=5",
-      "date": "2026-10-15T21:02:16.000Z",
-      "summary": "메디칼업저버"
-    },
-    {
-      "title": "가을철 산악사고 대응능력 강화 나서다!",
-      "source": "데일리대구경북뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE42QkxKbGZQSWoyNExmU19NQkRaRTJlWW50bGREOTVGODFERWxERTU2dnhzcFF6UU5pOEhIUGhUSDlGRU5BNG9JYklLUkhPaS1aUTVGNldfaUE1TjkyWFJ3SzZDaHlfZw?oc=5",
-      "date": "2026-10-15T23:33:10.000Z",
-      "summary": "데일리대구경북뉴스"
-    },
-    {
-      "title": "교통사고 분석 '일주일→1시간' 단축…손해사정 돕는 AI 어시스트 - 머니투데이",
-      "source": "머니투데이",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBPanFCbW16dnVMMEU3dnBfdEc2ODFKdVBfN2Y5RTJrWC1Jd0JNQW1tNzRuMHJqd2dQaDktNE9peFFHSTBwblNOazZZQ1JOaU5SVU4wLUloR2dCRzdfQlB4QVdjUHVib2ZqRnfSAW9BVV95cUxPVWk1M1owZjVOaWFsYWxNXzJTQlpZMG14c2t4UlNvX29acUxEMFJqRG9US1htSHNLQjhCRWUteVN0TUF6d3d2Y29uWHRpdlFrOGdzZUIxN1lCRTg1N01LMThQN1RZbkVBMGpFUU56eGs?oc=5",
-      "date": "2026-10-15T22:00:00.000Z",
-      "summary": "머니투데이"
-    },
-    {
-      "title": "경상국립대학교병원, 책임의료기관 심포지엄서 재택의료 논의",
+      "title": "연명의료 결정 개선, 급성 위기 판단·이후 돌봄 논의",
       "source": "메디포뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBwa3YwbXU0T05GUHBrQ1ZTcEpIN0t6TTh5T1Z5aGpfcWhleGkyQkRJMEpmR1RUSXNHQ0tGQU9TRVRXVjk2cjJuVnBCMkFSOEFrdG9OR2xodkVCWDR2NnJfTVVRNmg?oc=5",
-      "date": "2026-10-15T20:55:06.000Z",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1QYUd0SzBWclNjcEVxc3hxZ09hX2FaT001U1dhalhBbHJIMUJlOXVTUHNaOERYYWJhcmwtWThZV19SV05jRzBTcjdXdzRPdldhSmRmWFAyMm5KUWluWThjY08wTXU?oc=5",
+      "date": "2026-10-16T21:06:09.000Z",
       "summary": "메디포뉴스"
     },
     {
-      "title": "주차 차량에 가려진 놀이터 아이들… 단지 내 사고 하루 9건",
-      "source": "동아일보",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5hQ2gwRWkyaGJ3dkRlS2NNbTJ6bFV3T1VXSWczRjhjZ1ZPNXVCN0llaTNORHdpMG1FSUxwaWc5WW5kRDRqa3lPdGhRZTFxU3pibjVvSGRsYnVuMEZxeDZFQmNFc0JDUWlwcWVOZDQ5VzRldDdvLXfSAWZBVV95cUxOand0UElWUVkxRTJUVGhNN2I3bjVMNjZ4cDZ0dzRiNmFvY3pDVWs3TngtN0pkQjFvbjBGc0t3VEFRZ2hreFVlaW5uX2lSbWlDRGtoNGhobXljNG8xUE5YQjMzVlBhcWc?oc=5",
-      "date": "2026-10-15T19:30:00.000Z",
-      "summary": "동아일보"
+      "title": "[반도 앨리스] ‘지뢰 사고’ 없도록…육군, 가상공간 DMZ서 로봇개 수색·정찰 훈련",
+      "source": "경향신문",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zU3NoMGloZm1RUmVKSkZfMnpDcXdrRmRYcDhlbWVZS0VnTFVmTmhhWmJMRXF3YzlvVU1WYkdoYlkwbW0wWEQwQktJV0dOdEM5djlOYjhEVGt2QdIBX0FVX3lxTFBSbFhKN1dnQTcyNzJLTi1WWlVFTzJHeHl6ajhNVjBNamhuaEJ4bXhnM1N3QTBxTzAxSXVFdzE0cmgxalQ4TW45U2sxbFktNGVIaVBuRkFqblZZODV6UGN3?oc=5",
+      "date": "2026-10-16T21:00:00.000Z",
+      "summary": "경향신문"
     },
     {
-      "title": "국제성모병원, 카자흐스탄 원격의료센터 개소",
-      "source": "데일리메디",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5YQ0VFV2VjY0RCR2k1dDU0aGk2ZDhWU3VfUHVqY1dBNS1xMjlKcnBHWHhCZnFsQW85NlZtVEJ5U2UyM2EyMXlrcDF3N3puVEVfN0xUOXpJOGl0d09BTWVtVGNpSVotRlFRcmdwVzdmOXhkUEdF?oc=5",
-      "date": "2026-10-15T21:00:00.000Z",
-      "summary": "데일리메디"
+      "title": "어바인서 차량 충돌 사고…80대 여성 사망",
+      "source": "미주중앙일보",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA2VXkzWFZteS1XMFJNWktHX2hfVndGUkgtZ1V3Y0xUUV9PY2ZUcUd6WXdWYVJ6SjFxR0hxT0ZvWWx4NFVMRHcxOHF3Z0hVMVFaTXJTUU1VSi1KZV9oVmwxR1h3?oc=5",
+      "date": "2026-10-16T21:15:00.000Z",
+      "summary": "미주중앙일보"
     },
     {
-      "title": "수원시보건소, '세계 손씻기의 날' 맞아 감염병 예방 캠페인",
-      "source": "한국글로벌뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9NSjNZNnlpOHNieUZfS055Z2ZHMWdFc2oyN0o3VlZ4R1A5ZmI1QmNNQ2wtbnZ6OUdPTFFJYldHcFNYZ2NYWENLWm1keWFxVDVFT1M4R29EN1FkX2dJVlk4dA?oc=5",
-      "date": "2026-10-15T23:10:48.000Z",
-      "summary": "한국글로벌뉴스"
+      "title": "재택의료학회 11월 8일 추계학회 '재택의료 질·표준화' 논의",
+      "source": "의협신문",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9MYXg0aU8yby1SVV9EaFFxRnNUTEVRa0h5dHBCdzNGUmMxbHZDUlpHTmY5MkgyVlBJQ2tQdGdaM3BKME1iekpxeVg3TzFxaXVzcG1RdXpzUGlrYkdILU9KU21EcmxOQl9IUmx2RXpvdUNOUQ?oc=5",
+      "date": "2026-10-16T06:54:00.000Z",
+      "summary": "의협신문"
     },
     {
-      "title": "“떨어지면 빚내 사고 또 샀는데”…33.7조 빚투 개미들 손실 눈덩이",
-      "source": "매일경제 마켓",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB0M1dNMGF6emJ1cHFLRnVwNXhNN2N5WDd5ZTNMeTB2ajNNd0ZHbEI5MXkweVVNNFF0NzZJSUk0U1B6OFVnSGYxSEhmOTRZZ1BRMXc?oc=5",
-      "date": "2026-10-15T23:28:31.000Z",
-      "summary": "매일경제 마켓"
+      "title": "가천대 길병원, ‘호스피스의 날’ 권역 기관 연합 시민 인식개선 행사 성료",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9fWVozUm5uU09KWjZOdTFNRVJxWENXVEphTUxfRVJEaEI5UXNCTWNlRG0zWDZ0NWU5RlpfMDVlUTRIUjdjeUlHMmhKbVJGaEtlWXdIWlh0SEU3WjM5ck5SeU1DUThTRVBydGc?oc=5",
+      "date": "2026-10-16T12:42:11.000Z",
+      "summary": "의학신문"
+    },
+    {
+      "title": "단풍철 산악사고 급증…‘10월에 연간 구조 12% 집중’",
+      "source": "KBS 뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMV3hDdTlKM2tsa094UzFCek1JVzJEUU9Kd3ljTGdWWjgtLWVNcjNNTDQ3eUdaVUJ3VFhDX2ZMdU13QkFVYUxONGotMmdlQkZnV3MtbVBJZzdtZG8?oc=5",
+      "date": "2026-10-16T12:13:00.000Z",
+      "summary": "KBS 뉴스"
+    },
+    {
+      "title": "생애 말 의료현장 어려움 덜고 환자 권리 높인다",
+      "source": "병원신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5CaldVRlJRNDFlVkV1cUFMcVF6emk0bzVSdW5xTXlBMWhaYWVlbk9idDBfcGZPbE9pczNnUG9HRmE5S0hERzh2aVI2R095N1lGczk4X21ieHdRakNxU091WG1nQV9DbWJHZUE?oc=5",
+      "date": "2026-10-16T11:57:47.000Z",
+      "summary": "병원신문"
+    },
+    {
+      "title": "휴대용 보온기, 인공 산호초…의료·환경문제 고민한 디자인",
+      "source": "중앙일보",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE02d1BPWW5pZy1LTkZZTTFuTGRJOWo3Z0dCRFBqNWZJSmlfVHZnYlJ0QWJodnVpUzNZU0RJWkZBNzQxNWdYV0NKVVRGaGZ3aVlZS0ZrNmp3?oc=5",
+      "date": "2026-10-16T15:28:19.000Z",
+      "summary": "중앙일보"
+    },
+    {
+      "title": "의료혁신위, 내달 연명의료결정제도 국민 공론화",
+      "source": "연합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBnbEZZQVFXckFBclpYNVNCSmpQMXE3RjRnU3hlMzgxemZDY1BTUU9yQmJ4MGdQcW5mdVI0LXJvdWtVSzJSc2hKSGRHMmFKaWt0QjUxZG1meTZuTHBxWmp5atIBYEFVX3lxTFBnbEZZQVFXckFBclpYNVNCSmpQMXE3RjRnU3hlMzgxemZDY1BTUU9yQmJ4MGdQcW5mdVI0LXJvdWtVSzJSc2hKSGRHMmFKaWt0QjUxZG1meTZuTHBxWmp5ag?oc=5",
+      "date": "2026-10-16T07:59:33.000Z",
+      "summary": "연합뉴스"
+    },
+    {
+      "title": "‘단풍보러 왔어요’ 가을철 산악 사고 급증…주의할 점은?",
+      "source": "JTBC",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5vVF9JSTVreVhVUHdlRWd2WmNMS05UR2QzYmRBazhrX2NqdUtBSF9PREE4aGtpUnRTLXMyNG9pOTdHUnlsS0pYaC1mWDVxWTFHcW5CTg?oc=5",
+      "date": "2026-10-16T11:18:00.000Z",
+      "summary": "JTBC"
     }
   ]
 }
