@@ -49,8 +49,8 @@ html.intro-pending::after {
 <link rel="icon" type="image/png" href="assets/icon/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=20261016a">
-<link rel="stylesheet" href="light.css?v=20261016a">
+<link rel="stylesheet" href="style.css?v=20261016b">
+<link rel="stylesheet" href="light.css?v=20261016b">
 <script>try{if(localStorage.getItem("hseTheme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -171,9 +171,19 @@ html.intro-pending::after {
       <button type="button" class="lang-btn" data-lang="ar">العربية</button>
     </div>
 
-    <button type="button" class="theme-btn" id="themeBtn" title="라이트 모드 / 다크 모드 바꾸기">☀️ 라이트 모드</button>
-
-    <button type="button" class="desk-btn" id="deskInstall" title="바탕화면에 상황실 바로가기(무재해 아이콘) 만들기">📌 바탕화면 바로가기</button>
+    <div class="set-wrap" id="setWrap">
+      <button type="button" class="set-btn" id="setBtn" aria-haspopup="true" aria-expanded="false" title="화면 모드 · 바탕화면 바로가기 · 배경 보기">⚙ 설정</button>
+      <div class="set-menu" id="setMenu" hidden>
+        <div class="set-h">화면 모드</div>
+        <div class="set-seg" role="group" aria-label="화면 모드">
+          <button type="button" data-th="dark">🌙 다크 모드</button>
+          <button type="button" data-th="light">☀️ 라이트 모드</button>
+        </div>
+        <div class="set-h">바로가기 · 보기</div>
+        <button type="button" class="set-item desk-btn" id="deskInstall">📌 바탕화면 바로가기 만들기<small>PC 바탕화면에 무재해 아이콘으로</small></button>
+        <div id="setPeekSlot"></div>
+      </div>
+    </div>
 
     <div class="family-site">
       <select id="familySiteSelect" aria-label="패밀리사이트 바로가기">
@@ -1183,7 +1193,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261016a"></script>
+<script src="script.js?v=20261016b"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

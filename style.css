@@ -4637,3 +4637,26 @@ body:has(.hse-intro) .hg-again, body:has(.hse-intro) .talk { display: none !impo
 .glegend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 .glegend .gl-note { color: var(--text-dim); }
 .glegend i.won { background: transparent; border: 2px dashed var(--text-muted); width: 8px; height: 8px; }
+
+/* ⚙ 설정 메뉴 (메뉴줄): 화면 모드 · 바탕화면 바로가기 · 배경 보기 */
+.set-wrap { position: relative; }
+.set-btn { font: inherit; font-size: 12px; font-weight: 600; color: var(--text); background: rgba(255,255,255,.08); border: 1px solid var(--border); border-radius: 999px; padding: 6px 12px; cursor: pointer; white-space: nowrap; }
+.set-btn:hover, .set-btn.on { border-color: var(--cyan); color: var(--cyan); }
+.set-btn.reveal { border-color: var(--cyan); color: var(--cyan); }
+.set-menu { position: absolute; right: 0; top: calc(100% + 8px); z-index: 1200; width: 270px; padding: 12px; border-radius: 14px;
+  background: var(--panel); border: 1px solid var(--border); box-shadow: 0 14px 36px rgba(0,0,0,.45); display: flex; flex-direction: column; gap: 6px; }
+.set-menu[hidden] { display: none; }
+.set-h { font-size: 11px; font-weight: 700; color: var(--text-dim); letter-spacing: .04em; margin: 2px 2px 0; }
+.set-h + .set-seg { margin-bottom: 6px; }
+.set-seg { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 3px; border-radius: 10px; background: rgba(255,255,255,.05); border: 1px solid var(--border-soft); }
+.set-seg button { font: inherit; font-size: 12.5px; font-weight: 600; border: 0; border-radius: 8px; padding: 7px 6px; cursor: pointer; background: transparent; color: var(--text-muted); }
+.set-seg button.on { background: var(--cyan); color: var(--bg); }
+.set-item { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; width: 100%; text-align: left; font: inherit; font-size: 13px; font-weight: 600; color: var(--text);
+  background: rgba(255,255,255,.04); border: 1px solid var(--border-soft); border-radius: 10px; padding: 8px 10px; cursor: pointer; white-space: normal; opacity: 1; position: static; }
+.set-item small { font-size: 11px; font-weight: 500; color: var(--text-dim); }
+.set-item:hover { border-color: var(--cyan); }
+.set-item.desk-btn:not(.done) { border-color: rgba(0,161,77,.55); }
+body.bg-reveal .set-item.bg-peek-btn { color: var(--cyan); }
+@media (max-width: 768px) { .set-wrap { display: none; } }
+/* 설정 메뉴가 열려 있을 때는 달력·배너보다 위로 */
+.tabbar-right-group:has(.set-menu:not([hidden])) { z-index: 1200; }

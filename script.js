@@ -4938,13 +4938,16 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   btn.textContent = "🖼 배경 보기";
   btn.title = "카드를 잠시 숨기고 배경 사진을 봅니다 (Esc로 복귀)";
   // 위쪽 메뉴줄(언어·패밀리사이트 옆)에 둔다. 없으면 예전처럼 화면 오른쪽 아래
-  const rg = document.getElementById("tabbarRightGroup");
-  if (rg) { btn.classList.add("in-bar"); rg.insertBefore(btn, rg.querySelector(".family-site")); } else document.body.appendChild(btn);
+  const slot = document.getElementById("setPeekSlot"), rg = document.getElementById("tabbarRightGroup");
+  if (slot) { btn.className = "set-item bg-peek-btn"; btn.innerHTML = "🖼 배경 보기<small>카드를 잠시 숨기고 배경 사진 보기 (Esc 로 복귀)</small>"; slot.appendChild(btn); }
+  else if (rg) { btn.classList.add("in-bar"); rg.insertBefore(btn, rg.querySelector(".family-site")); } else document.body.appendChild(btn);
   let manual = false;
   function setReveal(on, byUser) {
     manual = on && byUser;
     document.body.classList.toggle("bg-reveal", on);
-    btn.textContent = on ? "↩ 정보 보기" : "🖼 배경 보기";
+    if (slot) btn.innerHTML = on ? "↩ 정보 보기<small>숨긴 카드를 다시 보이기</small>" : "🖼 배경 보기<small>카드를 잠시 숨기고 배경 사진 보기 (Esc 로 복귀)</small>";
+    else btn.textContent = on ? "↩ 정보 보기" : "🖼 배경 보기";
+    document.dispatchEvent(new CustomEvent("hse-reveal", { detail: on }));
     if (!on) playEnter(document.querySelector(".view.active"));
   }
   btn.addEventListener("click", (e) => { e.stopPropagation(); setReveal(!document.body.classList.contains("bg-reveal"), true); });
@@ -7365,8 +7368,7 @@ async function clinicCall(action, payload) {
       { sel: ".sa-alert", opt: true, text: `화면 아래 빨간 띠는 <b>중대재해 보도 알림</b>이에요. 최근 3일 안에 국내 산업현장 사망사고 기사가 나오면 <b>회사명과 기사 제목</b>이 떠요. 같은 사고 기사는 하나로 묶어 '보도 n건'으로 보여 주고, 누르면 원문이 열려요.<br>첫 보도는 사실과 다를 수 있으니 원문과 고용노동부 발표를 확인하세요. ✕ 로 닫으면 새 사고 기사가 올 때까지 숨어요.` },
       { sel: "#langSwitcher", text: `<b>언어 선택</b>이에요. <b>ENG</b> 나 <b>العربية</b> 를 누르면 화면 글자가 자동 번역돼요. 영어·아랍어를 쓰는 동료에게 보여 줄 때 좋아요.<br>자동 번역이라 어색한 말이 있을 수 있으니 중요한 내용은 한국어로 한 번 더 확인하세요.` },
       { sel: "#familySiteSelect", text: `<b>패밀리사이트</b> 바로가기예요. 목록에서 <b>BNCP AI Assistant</b>, <b>BNCP Clinic EMR</b>(현장 클리닉 진료기록, 등록된 담당자만 사용), <b>IRIS</b>(이라크 규제·수입·조달시장 모니터) 같은 관련 사이트를 고르면 새 창으로 열려요.` },
-      { sel: "#deskInstall", opt: true, text: `<b>📌 바탕화면 바로가기</b>를 누르면 PC 바탕화면에 상황실 아이콘을 만드는 법이 나와요. <b>크롬</b>은 메뉴에서 '바로가기 만들기'(창으로 열기 체크 안 함) 한 번이면 <b>무재해 아이콘</b>으로 생기고, 엣지는 주소창 🔒 를 바탕화면으로 끌어다 놓으면 돼요.` },
-      { sel: ".bg-peek-btn", text: `위쪽 메뉴줄의 <b>🖼 배경 보기</b>를 누르면 카드들이 잠깐 숨고 배경 사진이 보여요. 다시 누르거나 <b>Esc</b> 를 누르면 돌아와요.<br>한동안 화면을 안 만지면 상황실 화면처럼 자동으로 배경이 보이기도 해요.` },
+      { sel: "#setBtn", opt: true, text: `메뉴줄 오른쪽 <b>⚙ 설정</b>을 누르면 세 가지가 있어요.<br>• <b>화면 모드</b> — 🌙 다크 / ☀️ 라이트 (밝은 사무실에선 라이트가 편해요. PC마다 기억해요)<br>• <b>📌 바탕화면 바로가기</b> — PC 바탕화면에 무재해 아이콘으로 상황실 바로가기 만드는 법<br>• <b>🖼 배경 보기</b> — 카드를 잠시 숨기고 배경 사진 보기 (다시 누르거나 <b>Esc</b> 로 복귀). 한동안 화면을 안 만지면 상황실 화면처럼 자동으로 배경이 보이기도 해요.` },
       { sel: ".talk-fab", opt: true, text: `<b>💬 1:1 상담</b>이에요. 안전·보건·환경 관련 궁금한 점이나 현장에서 본 위험을 남기면 <b>HSE 담당자</b>가 이 창에 바로 답해 드려요. 위에 <b>🟢 담당자 접속 중</b>이면 금방 답이 와요.<br>창을 닫아도 대화는 이 PC에 이어지고, 답장이 오면 버튼에 빨간 숫자가 떠요.` },
       { sel: ".ai-fab", text: `오른쪽 아래 <b>법령 도우미</b>예요. "고소작업 안전대 기준은?", "임시소방시설 설치 대상은?", "이라크 노동법 근로시간은?" 처럼 <b>평소 말투로 물어보면</b> <b>한국 산업안전보건법·소방 법령</b>과 <b>이라크 법</b>을 함께 찾아서 답해 줘요.<br>📷 <b>현장 사진</b>을 올리면 위험요소도 짚어 줘요. 답 속 <b>[조문]</b>을 누르면 조문·<b>별표</b> 원문이 그 자리에서 바로 펼쳐지고, 👍/👎로 답을 평가할 수 있어요. 답은 참고용이니 중요한 판단은 원문으로 확인하세요.` },
       { sel: null, text: `안내를 다시 보고 싶으면 화면 <b>오른쪽 아래 '사용 안내'</b> 버튼을 누르세요. 거기서 필요한 장만 골라 볼 수도 있어요.` },
@@ -9377,11 +9379,12 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       // 인트로가 도는 중이면 끝난 뒤 10초쯤 지나서 띄운다
       if (document.querySelector(".hse-intro") || document.documentElement.classList.contains("intro-pending")) { setTimeout(showTip, 10000); return; }
       // 다른 안내 창이 떠 있거나 버튼이 안 보이는 순간이면 조금 뒤에 다시 (최대 4번)
-      if (document.querySelector(".desk-bg, .vc-win-bg, .guide-pop, .guide-overlay") || btn.offsetParent === null || btn.getBoundingClientRect().width === 0) { if (++tries < 4) setTimeout(showTip, 12000); return; }
+      const anchor = document.getElementById("setBtn") || btn;
+      if (document.querySelector(".desk-bg, .vc-win-bg, .guide-pop, .guide-overlay") || anchor.offsetParent === null || anchor.getBoundingClientRect().width === 0) { if (++tries < 4) setTimeout(showTip, 12000); return; }
       tip = document.createElement("div"); tip.className = "desk-tip";
       tip.innerHTML = `<b>📌 바탕화면에 상황실 아이콘을 만들어 두세요</b><span>무재해 아이콘 한 번이면 매일 바로 열려요</span><div><button type="button" class="ok">만들기</button><button type="button" class="no">괜찮아요</button></div>`;
       document.body.appendChild(tip);
-      const r = btn.getBoundingClientRect();
+      const r = anchor.getBoundingClientRect();
       tip.style.top = (r.bottom + window.scrollY + 10) + "px";
       tip.style.left = Math.max(12, Math.min(window.innerWidth - 300, r.left + r.width / 2 - 150)) + "px";
       tip.querySelector(".ok").onclick = () => { hideTip(); guide(); };
@@ -10106,17 +10109,33 @@ const lightInk = (function () {
   return { fix, undo };
 })();
 
-/* 라이트 / 다크 모드 전환 (상단 메뉴줄 ☀️ 버튼) — 기기마다 기억 (localStorage hseTheme) */
-(function themeToggle() {
-  const btn = document.getElementById("themeBtn"); if (!btn) return;
+/* ⚙ 설정 메뉴 (메뉴줄 오른쪽): 화면 모드(라이트/다크) · 바탕화면 바로가기 · 배경 보기
+   화면 모드는 기기마다 기억 (localStorage hseTheme) */
+(function settingsMenu() {
+  const btn = document.getElementById("setBtn"), menu = document.getElementById("setMenu"); if (!btn || !menu) return;
   const root = document.documentElement;
-  const draw = () => { const light = root.getAttribute("data-theme") === "light"; btn.textContent = light ? "🌙 다크 모드" : "☀️ 라이트 모드"; btn.setAttribute("aria-pressed", light); };
-  btn.addEventListener("click", () => {
-    const light = root.getAttribute("data-theme") !== "light";
-    if (light) root.setAttribute("data-theme", "light"); else root.removeAttribute("data-theme");
-    try { localStorage.setItem("hseTheme", light ? "light" : "dark"); } catch (e) {}
-    if (light) lightInk.fix(); else lightInk.undo();
-    draw();
+  const open = (on) => { menu.hidden = !on; btn.setAttribute("aria-expanded", on); btn.classList.toggle("on", on); };
+  const drawTheme = () => { const light = root.getAttribute("data-theme") === "light"; menu.querySelectorAll("[data-th]").forEach((b) => b.classList.toggle("on", (b.dataset.th === "light") === light)); };
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (document.body.classList.contains("bg-reveal") && window.hseSetReveal) { window.hseSetReveal(false); return; }   // 배경 보기 중이면 바로 복귀
+    open(menu.hidden);
   });
-  draw();
+  menu.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const t = e.target.closest("[data-th]");
+    if (t) {
+      const light = t.dataset.th === "light";
+      if (light) root.setAttribute("data-theme", "light"); else root.removeAttribute("data-theme");
+      try { localStorage.setItem("hseTheme", light ? "light" : "dark"); } catch (err) {}
+      if (light) lightInk.fix(); else lightInk.undo();
+      drawTheme(); return;
+    }
+  });
+  // 바로가기 안내·배경 보기는 누르면 메뉴를 닫는다 (그 버튼들이 클릭 전파를 막아서 '캡처' 단계에서 처리)
+  menu.addEventListener("click", (e) => { if (e.target.closest(".set-item")) setTimeout(() => open(false), 0); }, true);
+  document.addEventListener("click", () => { if (!menu.hidden) open(false); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !menu.hidden) open(false); });
+  document.addEventListener("hse-reveal", (e) => { btn.textContent = e.detail ? "↩ 정보 보기" : "⚙ 설정"; btn.classList.toggle("reveal", e.detail); });
+  drawTheme();
 })();
