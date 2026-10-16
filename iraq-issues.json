@@ -1,6 +1,352 @@
 {
-  "generatedAt": "2026-10-16T12:33:10.483Z",
+  "generatedAt": "2026-10-16T17:33:05.785Z",
   "items": [
+    {
+      "title": "War has cost Iraq $60 billion, foreign minister tells Italy",
+      "source": "964media",
+      "link": "https://en.964media.com/53834/",
+      "date": "2026-10-16T16:53:41.000Z",
+      "lang": "en",
+      "titleKo": "이라크의 전쟁 비용은 600억 달러 ($) 였다고 외무장관이 이탈리아에 말했다.",
+      "url": "https://en.964media.com/53834/",
+      "body": "BAGHDAD — Iraq has suffered an estimated $60 billion in economic losses from the war between the United States\nHussein met Italian Deputy Prime Minister and Foreign Minister Antonio Tajani in Rome on Thursday, Iraq’s Foreign Ministry said in a statement released Friday. The war had deepened the global energy crisis and raised fears of inflation, with consequences reaching European economies, Hussein said, urging the European Union and individual European countries, including Italy, to back peace initiatives, encourage negotiations and help stop the conflict from spreading.\nPrime Minister Ali al-Zaidi said in September that Iraq had lost nearly $60 billion in oil revenue since the war began, blaming restrictions on Iraqi tankers in the Strait of Hormuz and saying extensive talks with Tehran had failed to secure unrestricted passage. Exports fell from more than 99 million barrels in February to 18.6 million in March, cutting monthly revenue from more than $6.8 billion to about $1.95 bill",
+      "bodyKo": "바그다드 — 이라크는 미국 간의 전쟁으로 인해 $ 600억 달러의 경제적 손실을 입은 것으로 추정됩니다.\n이라크 외무부는 금요일 발표한 성명에서 후세인이 안토니오 타자니 이탈리아 부총리 겸 외무장관을 로마에서 만났다고 밝혔다. 후세인은 전쟁은 세계 에너지 위기를 심화시키고 인플레이션에 대한 두려움을 불러일으켰으며, 그 결과는 유럽 경제에까지 미쳤다고 말하면서 유럽 연합과 이탈리아를 포함한 개별 유럽 국가들이 평화 이니셔티브를 지지하고 협상을 장려하며 분쟁 확산을 막을 것을 촉구했다.\n알리 알자이디 총리는 지난 9월 이라크가 전쟁이 시작된 이후 거의 600억 달러의 석유 수입을 잃었다며, 호르무즈 해협에서 이라크 유조선에 대한 제한을 비난하고 테헤란과의 광범위한 대화가 제한 없는 통과를 확보하지 못했다고 말했다. 수출은 2월 9900만 배럴 이상에서 3월 1860만 배럴로 감소하여 월 매출이 68억 달러 이상에서 약 1.95 달러로 감소했습니다.",
+      "tried": true,
+      "count": 3,
+      "sources": [
+        "شبكة تواصل الإخبارية",
+        "964media",
+        "صوت الإمارات"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크는 이란 전쟁과 호르무즈 항로 교란으로 인해 600억 달러의 손실을 입었습니다.",
+          "source": "شبكة تواصل الإخبارية",
+          "link": "https://twaslnews1.twaslnews.com/6099420/"
+        },
+        {
+          "titleKo": "푸아드 후세인: 이라크는 이란과의 전쟁으로 인해 $ 600억의 손실을 입었습니다.",
+          "source": "صوت الإمارات",
+          "link": "https://www.voiceofemirates.com/en/politics/2026/10/16/fuad-hussein-iraq-suffered-60-billion-in-losses-due-to-the-war-with-iran/"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "بغداد والديوانية.. اعتقال هارب محكوم بالإعدام وإعلان عن تفجير بعد ساعات",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/ar/%D8%A3%D9%85%D9%80%D9%86/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A7%D9%84%D8%AF%D9%8A%D9%88%D8%A7%D9%86%D9%8A%D8%A9-%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84-%D9%87%D8%A7%D8%B1%D8%A8-%D9%85%D8%AD%D9%83%D9%88%D9%85-%D8%A8%D8%A7%D9%84-%D8%B9%D8%AF%D8%A7%D9%85-%D9%88-%D8%B9%D9%84%D8%A7%D9%86-%D8%B9%D9%86-%D8%AA%D9%81%D8%AC%D9%8A%D8%B1-%D8%A8%D8%B9%D8%AF-%D8%B3%D8%A7%D8%B9%D8%A7%D8%AA",
+      "date": "2026-10-16T15:34:33.000Z",
+      "lang": "ar",
+      "titleKo": "바그다드와 디와니야.. 사형을 선고받은 탈주자의 체포와 몇 시간 후 폭탄 테러 발표",
+      "url": "https://shafaq.com/ar/%D8%A3%D9%85%D9%80%D9%86/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A7%D9%84%D8%AF%D9%8A%D9%88%D8%A7%D9%86%D9%8A%D8%A9-%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84-%D9%87%D8%A7%D8%B1%D8%A8-%D9%85%D8%AD%D9%83%D9%88%D9%85-%D8%A8%D8%A7%D9%84-%D8%B9%D8%AF%D8%A7%D9%85-%D9%88-%D8%B9%D9%84%D8%A7%D9%86-%D8%B9%D9%86-%D8%AA%D9%81%D8%AC%D9%8A%D8%B1-%D8%A8%D8%B9%D8%AF-%D8%B3%D8%A7%D8%B9%D8%A7%D8%AA",
+      "body": "شفق نيوز- بغداد/ الديوانية&nbsp; أعلنت &#1\nأعلنت قيادة شرطة بغداد الكرخ، مساء الجمعة، القبض على مدان هارب صادر بحقه حكم قضائي بالإعدام عن جريمة قتل، فيما نوهت قيادة شرطة الديوانية المواطنين إلى تنفيذ تفجير مسيطر عليه لمخلفات حربية قديمة.\nوعن تفاصيل القبض على المدان في بغداد، أوضحت شرطة الكرخ في بيان ورد لوكالة شفق نيوز، أن مفارز مديرية مكافحة إجرام الكرخ/ قسم البياع تمكنت من إلقاء القبض على مدان هارب صادر بحقه حكم قضائي بالإعدام عن جريمة قتل، وذلك بعد عمليات متابعة ومراقبة أمنية واستخبارية مكثفة أسفرت عن تحديد مكان وجوده.\nوفي الديوانية، نوهت قيادة الشرطة في بيان، المواطنين في عموم المحافظة إلى تنفيذ تفجير مسيطر عليه من قبل فرق المعالجة في مديرية دفاع مدني الديوانية لمخلفات حربية قديمة، وذلك بالقرب من منطقة دور سيد محمد، هذا اليوم.",
+      "bodyKo": "Shafaq News - 바그다드/디와니야 발표 & # 1\n금요일 저녁, 바그다드 카르흐 경찰 사령부는 살인 혐의로 사형을 선고받은 도망자 유죄 판결의 체포를 발표했고, 디와니야 경찰 사령부는 시민들에게 오래된 잔해의 통제된 폭발을 수행하라고 경고했다.\n바그다드에서 유죄 판결을 받은 것에 대한 세부 사항에 대해 카르크 경찰은 샤파크 뉴스가 받은 성명서에서 카르크/알바야 경찰국의 범죄 퇴치 국장 파견대가 집중적인 보안 및 정보 후속 조치와 감시 작전으로 인해 살인죄로 사형을 선고받은 도망자 유죄 판결자를 체포할 수 있었다고 설명했다.\n디와니야에서 경찰 사령부는 성명서를 통해 오늘 두르 사예드 무하마드 (Dur Sayed Muhammad) 지역 근처의 디와니야 민방위국 (Diwaniyah Civil Defense Directorate) 의 치료 팀에 의해 통제된 폭발을 수행하라고 경고했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Iraq’s militias are adjusting for a new era, not going away",
+      "source": "Atlantic Council",
+      "link": "https://www.atlanticcouncil.org/blogs/menasource/iraqs-militias-are-adjusting-for-a-new-era-not-going-away/",
+      "date": "2026-10-16T14:58:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크 민병대는 사라지지 않고 새로운 시대에 적응하고 있습니다.",
+      "url": "https://www.atlanticcouncil.org/blogs/menasource/iraqs-militias-are-adjusting-for-a-new-era-not-going-away/",
+      "body": "While signaling restraint, the militias are carving room to consolidate their position and shape the terms of Iraq’s next security order.\nIran-backed militias in Iraq are celebrating their “ victory ” over the United States following the completion of the withdrawal of US forces from Iraq. They are adjusting their posture for a new era in Iraq, signaling restraint, and continuing to pursue the completion of their state capture project. This “restraint” is designed to facilitate deeper entrenchment by easing US pressure on Baghdad while preserving the militias’ military capabilities.\nA statement by Kataib Hezbollah Secretary General Abu Hussein al-Hamidawi illustrates this posture. He ordered his fighters to halt “all military operations and mobile logistical activities,” but explicitly retained an exception for targeting hostile aircraft violating Iraqi airspace until government air defenses are fully established.",
+      "bodyKo": "자제라는 신호를 보내는 동안, 민병대는 그들의 위치를 공고히 하고 이라크의 다음 안보 질서의 조건을 형성할 여지를 조각하고 있다.\n이라크에서 이란의 지원을 받는 민병대는 이라크에서 미군의 철수가 완료된 후 미국에 대한 \"승리\" 를 축하하고 있습니다. 그들은 이라크의 새로운 시대를 위해 자세를 조정하고, 자제를 알리고, 국가 점령 프로젝트의 완성을 계속 추진하고 있다. 이 \"억제\" 는 민병대의 군사력을 보존하면서 바그다드에 대한 미국의 압력을 완화함으로써 더 깊은 침투를 촉진하도록 설계되었습니다.\n카타이브 헤즈볼라 (Kataib Hezbollah) 사무총장 아부 후세인 알하미다위 (Abu Hussein al-Hamidawi) 의 성명서는 이러한 자세를 잘 보여준다. 그는 전투원들에게 \"모든 군사 작전과 이동 물류 활동\" 을 중단하라고 명령했지만, 정부 방공이 완전히 확립될 때까지 이라크 영공을 침범하는 적대적인 항공기를 표적으로 삼는 것에 대한 예외를 명시적으로 유지했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Atlantic Council"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Barrack, al-Zaidi Discuss Iraq’s Difficult Path to Stability - ASHARQ AL-AWSAT English",
+      "source": "ASHARQ AL-AWSAT English",
+      "link": "https://english.aawsat.com/arab-world/5329461-barrack-al-zaidi-discuss-iraq%E2%80%99s-difficult-path-stability",
+      "date": "2026-10-16T14:55:59.000Z",
+      "lang": "en",
+      "titleKo": "이라크의 안정으로 가는 어려운 길에 대해 알자이디 배럭 - ASHARQ Al-Awsat English",
+      "url": "https://english.aawsat.com/arab-world/5329461-barrack-al-zaidi-discuss-iraq%E2%80%99s-difficult-path-stability",
+      "body": "Iraqi sources have indicated that the issue of weapons held by armed factions was likely among the topics discussed in Baghdad between Iraq’s prime minister, head of the judiciary and US envoy Tom Barrack, who spoke of the “hard road toward” towards achieving stability in the region. Prime Minister Ali al-Zaidi received Barrack on Monday evening, nearly two weeks after the withdrawal of the US-led international coalition forces from Iraqi territory.\nAccording to observers, the withdrawal could prompt Washington and Baghdad to discuss post-pullout arrangements, particularly amid regional tensions and the possibility of renewed conflict between Washington and Tehran.\nThe Iraqi Prime Minister’s Office said the meeting between al-Zaidi and Barrack addressed “bilateral relations between Iraq and the United States and ways to strengthen cooperation in various fields.”",
+      "bodyKo": "이라크 소식통에 따르면 무장 진영이 보유한 무기 문제는 이라크 총리, 사법부 책임자, 미국 특사 톰 배럭 (Tom Barrack) 이 바그다드에서 논의한 주제 중 하나일 가능성이 높다. 알리 알자이디 총리는 이라크 영토에서 미국 주도의 국제 연합군이 철수한 지 거의 2주 후인 월요일 저녁에 배럭을 받았다.\n관측통들에 따르면, 탈퇴는 워싱턴과 바그다드가 특히 지역적 긴장과 워싱턴과 테헤란 간의 새로운 갈등의 가능성 속에서 탈퇴 후 협상을 촉구할 수 있다고 한다.\n이라크 총리실은 알자이디와 바락의 회담에서 \"이라크와 미국 간의 양국 관계와 다양한 분야에서 협력을 강화하는 방법\" 에 대해 언급했다고 밝혔다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "ASHARQ AL-AWSAT English"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "US greenlights inclusion of Iraqi resistance figures in government cabinet: Report",
+      "source": "thecradle.co",
+      "link": "https://thecradle.co/articles/us-greenlights-inclusion-of-iraqi-resistance-figures-in-government-cabinet-report",
+      "date": "2026-10-16T14:42:30.000Z",
+      "lang": "en",
+      "titleKo": "미국 녹색당, 정부 내각에 이라크 저항인물 포함: 보고서",
+      "url": "https://thecradle.co/articles/us-greenlights-inclusion-of-iraqi-resistance-figures-in-government-cabinet-report",
+      "body": "Iraqi Minister Ali al-Zaidi remains under pressure from Washington to disarm the resistance, which is supported by Iran, and has fought occupying US troops and ISIS",
+      "bodyKo": "알리 알자이디 이라크 장관은 이란의 지원을 받는 저항 세력을 무장 해제하라는 워싱턴의 압력을 받고 있으며, 미군과 ISIS를 점령하기 위해 싸워왔습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "thecradle.co"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "العراق يستحدث تخصصات جامعية لإعداد كوادر المشاريع النووية",
+      "source": "جريدة المدى",
+      "link": "https://almadapaper.net/457019/",
+      "date": "2026-10-16T14:32:09.000Z",
+      "lang": "ar",
+      "titleKo": "이라크는 핵 프로젝트 후보생을 준비하기 위해 대학 전문 분야를 개발합니다.",
+      "url": "https://almadapaper.net/457019/",
+      "body": "متابعة/المدى أعلنت هيئة الطاقة الذرية العراقية، اليوم الجمعة، التوصل إلى اتفاق مع وزارة التعليم العالي والبحث العلمي لإعداد كوادر متخصصة بالمشاريع النووية السلمية، ضمن توجهات لاستخدام الطاقة الذرية في توليد الكهرباء وتحلية المياه. وقالت رئيسة الهيئة ثناء الزجراوي، في تصريح تابعته (المدى)، إن الوكالة الدولية للطاقة الذرية طلبت من العراق تهيئة الكوادر العلمية اللازمة لتنفيذ [&hellip;]\nوأضافت أن إدارة برنامج إعداد الكوادر ستكون مشتركة بين هيئة الطاقة الذرية ووزارة التعليم العالي، مشيرة إلى تقديم طلب لاستحداث أقسام علمية متخصصة بالفيزياء النووية في الجامعات العراقية.\nوأوضحت الزجراوي أن الخطوة تأتي بالتزامن مع توجه العراق إلى توسيع الاستخدامات السلمية للطاقة الذرية في مجالات توليد الكهرباء وتحلية المياه وقطاعات أخرى.\nوكان رئيس الوزراء علي فالح الزيدي قد أصدر، في الثالث من تشرين الأول الجاري، أمراً ديوانياً بتكليف ثناء جاسم كريم الزجراوي برئاسة هيئة الطاقة الذرية العراقية بالوكالة.",
+      "bodyKo": "이라크 원자력위원회는 오늘 (금요일) 고등 교육 과학 연구부와 전기 발전 및 물 담수화에 원자력을 사용하기위한 지침 내에서 평화로운 원자력 프로젝트에 특화된 중핵을 준비하기위한 합의에 도달했다고 발표했다. 당국의 책임자 인 Thanaa Al-Zajrawi는 성명서에서 국제 원자력기구 (IAEA) 가 이라크에 […]\n그녀는 이라크 대학에 핵 물리학 전문 과학 학과를 개발하라는 요청을 언급하면서 사관학교 준비 프로그램의 관리가 원자력위원회와 고등 교육부 간의 합동이 될 것이라고 덧붙였다.\nAl-Zajrawi는 이러한 움직임이 이라크가 발전, 물 담수화 및 기타 분야에서 원자력의 평화적 사용을 확대하려는 경향과 함께 나타난다고 설명했습니다.\n10월 3일, 알리 팔레 알자이디 총리는 타나 자심 카림 알자지로이 (Thana Jassim Karim al-Zajrawi) 를 대리인으로 이라크 원자력 위원회 (Iraqi Atomic Energy Commission) 의 수장으로 임명하는 법원 명령을 내렸다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "جريدة المدى"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq Does Not Seek War, Supports Peace Initiatives, FM Says",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/946507/iraq-does-not-seek-war-supports-peace-initiatives-fm-says",
+      "date": "2026-10-16T14:21:00.000Z",
+      "lang": "en",
+      "titleKo": "FM은 이라크는 전쟁을 추구하지 않고 평화 이니셔티브를 지원한다고 말합니다.",
+      "url": "https://www.kurdistan24.net/en/story/946507/iraq-does-not-seek-war-supports-peace-initiatives-fm-says",
+      "body": "Hussein made the remarks during a meeting with Italian Defense Minister Guido Crosetto at the Italian Defense Ministry headquarters in Rome, as part of his visit to the Italian capital.\nERBIL (Kurdistan24) &mdash; Iraqi Foreign Minister Fuad Hussein said on Friday that Iraq does not seek war and supports all peace initiatives, as he and his Italian counterpart reaffirmed continued security cooperation and military training for Iraqi forces, including the Peshmerga.\nAccording to a statement from Iraq&rsquo;s Foreign Ministry, the talks focused on the role of the international coalition in combating terrorism in Iraq, Italy&rsquo;s participation in efforts to defeat the Islamic State (ISIS), and Rome&rsquo;s support for training members of the Iraqi army and Peshmerga forces to strengthen their military and security capabilities.",
+      "bodyKo": "후세인은 이탈리아 수도를 방문한 일환으로 로마의 이탈리아 국방부 본부에서 귀도 크로세토 이탈리아 국방장관과 회담을 가졌다.\n에르빌 (쿠르디스탄24) — 푸아드 후세인 이라크 외무장관은 금요일 이라크가 페슈메르가를 포함한 이라크군에 대한 지속적인 안보 협력과 군사 훈련을 재확인함에 따라 이라크는 전쟁을 추구하지 않으며 모든 평화 이니셔티브를 지지한다고 말했다.\n이라크 외무부의 성명서에 따르면, 이번 회담은 이라크 테러 퇴치를 위한 국제 연합의 역할, 이탈리아가 이슬람 국가 (ISIS) 를 물리치기 위한 노력에 참여하는 것, 이라크 군대와 페슈메르가 군대의 군사 및 안보 역량을 강화하기 위한 훈련에 대한 로마의 지원에 초점을 맞췄다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
+      }
+    },
+    {
+      "title": "US greenlights Iraqi cabinet with blacklisted factions, say diplomatic sources",
+      "source": "Free Malaysia Today",
+      "link": "https://www.freemalaysiatoday.com/category/world/2026/10/16/us-greenlights-iraqi-cabinet-with-blacklisted-factions-say-diplomatic-sources",
+      "date": "2026-10-16T13:47:50.000Z",
+      "lang": "en",
+      "titleKo": "외교 소식통은 미국이 블랙리스트에 오른 파벌과 함께 이라크 내각에 불을 붙인다고 말합니다.",
+      "url": "https://www.freemalaysiatoday.com/category/world/2026/10/16/us-greenlights-iraqi-cabinet-with-blacklisted-factions-say-diplomatic-sources",
+      "body": "Iraq's prime minister Ali al-Zaidi announced his cabinet line-up Thursday night, naming Laith al-Khazali, a senior leader of the US-blacklisted Asaib Ahl al-Haq group, as one of his deputies.\nOn Thursday night, Ali al-Zaidi announced the completion of his government, appointing Laith al-Khazali, a senior leader in the US-blacklisted Asaib Ahl al-Haq group, as one of his deputies.\nPrime Minister Ali al-Zaidi “secured tacit US approval during his visit to the US in September” for the UN General Assembly, and during which he met President Donald Trump, a diplomatic source said on Friday.\nThe US agreed to the participation of some pro-Iran factions in the government “after the prime minister promised to move forward with his disarmament plans and provided guarantees that the groups will not attack US interests in Iraq”, the source added.",
+      "bodyKo": "이라크 총리 알리 알자이디 (Ali al-Zaidi) 는 목요일 밤 자신의 내각 라인업을 발표하면서 미국이 블랙리스트에 올린 아사이브 알 알 알 하크 (Asaib Ahl al-Haq) 그룹의 고위 지도자인 라이스 알 카잘리 (Laith al-Khazali) 를 그의 부관 중 한 명으로 지명했다.\n목요일 밤, 알리 알자이디 (Ali al-Zaidi) 는 미국이 블랙리스트에 올린 아사이브 알 알 하크 (Asaib Ahl al-Haq) 그룹의 고위 지도자 라이스 알 카잘리 (Laith al-Khazali) 를 그의 부관 중 한 명으로 임명하면서 정부 완성을 발표했다.\n알리 알자이디 총리는 지난 9월 유엔 총회를 위해 \"미국을 방문하는 동안 암묵적인 승인을 확보했다\" 며 도널드 트럼프 대통령을 만났다고 외교 소식통이 금요일 전했다.\n소식통은 미국이 \"총리가 군축 계획을 추진하겠다고 약속하고 이라크에 대한 미국의 이익을 공격하지 않을 것이라는 보장을 제공한 후\" 일부 친이란 진영의 정부 참여에 동의했다고 덧붙였다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Arab News",
+        "Free Malaysia Today"
+      ],
+      "related": [
+        {
+          "titleKo": "미국, 블랙리스트에 오른 파벌과 함께 이라크 내각을 초록색으로 비추다: 외교적 출처",
+          "source": "Arab News",
+          "link": "https://www.arabnews.com/middle-east/us-greenlights-iraqi-cabinet-with-blacklisted-factions-diplomatic-sources-3006713"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "CF hails completion of Iraq's government",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Iraq/CF-hails-completion-of-Iraq-s-government",
+      "date": "2026-10-16T13:27:48.000Z",
+      "lang": "en",
+      "titleKo": "CF, 이라크 정부 완공 축하",
+      "url": "https://shafaq.com/en/Iraq/CF-hails-completion-of-Iraq-s-government",
+      "body": "Shafaq News- Baghdad The Coordination Framework (CF), an alliance of predominantly Shiite political parties, welcomed the completion of Iraq's cabinet on Thursday. In a statement, the CF said th\nIn a statement, the CF said the completed cabinet represents an important step toward strengthening political stability, improving the functioning of state institutions, and implementing the government's program.\nOn October 15, Prime Minister Ali Al-Zaidi said the appointment of three deputy prime ministers and approval of 11 cabinet nominees would strengthen his government's ability to address economic and security challenges and fulfill its commitments.\nThe parliamentary vote took place during a session chaired by Speaker Haibet Al-Halbousi and attended by 261 lawmakers.",
+      "bodyKo": "샤파크 뉴스- 바그다드 주로 시아파 정당들의 동맹인 조정 프레임워크 (CF) 는 목요일 이라크 내각의 완성을 환영했다. 성명서에서 CF는 다음과 같이 말했습니다.\nCF는 성명에서 완성된 내각은 정치적 안정성 강화, 국가 기관의 기능 개선, 정부의 프로그램 시행을 위한 중요한 단계를 나타낸다고 말했다.\n10월 15일, 알리 알자이디 총리는 3명의 부총리 임명과 11명의 내각 지명자의 승인이 경제 및 안보 문제를 해결하고 약속을 이행하는 정부의 능력을 강화할 것이라고 말했다.\n의회 투표는 하이베트 알할부시 (Haibet Al-Halbousi) 의장이 의장을 맡고 261명의 의원이 참석한 세션에서 진행되었다.",
+      "tried": true,
+      "count": 6,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [
+        {
+          "titleKo": "샤파크 뉴스.. 바르자니 대통령, 이라크 내각 완공 축하",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Kurdistan/President-Barzani-hails-completion-of-Iraqi-cabinet"
+        },
+        {
+          "titleKo": "샤파크 뉴스.. 이라크 공산당, 알자이디 내각 완성 거부",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Iraq/Iraqi-Communist-Party-rejects-Al-Zaidi-s-completed-cabinet"
+        },
+        {
+          "titleKo": "샤파크 뉴스.. 나자프 성직자가 이라크의 새로운 내각 직위를 비판하다",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/society/Najaf-cleric-criticizes-Iraq-s-new-cabinet-posts"
+        },
+        {
+          "titleKo": "샤파크 뉴스.. 수야나 블록, 이라크 내각에서 기독교 대표성 요구",
+          "source": "شفق نيوز",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNazdfZW5jeE9jTkVEZHBLemhVZ2tGbEFlU1JnYzBXU2czWEkzYUdncG1rOUM5ZjJZZkFMb3Axc2JSWnNCRnNaWlhOLXFDR0pGRFVOSjRaUEJTQVFSUVZmZkhoNUdWVzhwTmJHOUZLM2YzXzMzM1J2Rlp3SV90czhBWmpycDE3WVNPaXZ3aWlQLWhxUDA?oc=5"
+        },
+        {
+          "titleKo": "CF, 이라크 정부 완공 축하",
+          "source": "شفق نيوز",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBMQ2E3VEwwNDNMSVZJRW8ybV9COFIxdE5fTGpaZFFPNlN3aEQyeFQ4NXBldWozNUJLejNuTUtxYVBidjNQOTV6RzVOWXdBbGpBejBUNnZ3YVF3a0RPejV6Ym5WUFc0Q1E3S1h3S3ZMdkNtUEVZSGc?oc=5"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Riyadh, Baghdad can build on shared security interests",
+      "source": "Arab News",
+      "link": "https://www.arabnews.com/opinion/riyadh-baghdad-can-build-on-shared-security-interests-3006646",
+      "date": "2026-10-16T13:04:09.000Z",
+      "lang": "en",
+      "titleKo": "리야드, 바그다드는 공동의 보안 이익을 기반으로 구축할 수 있습니다",
+      "url": "https://www.arabnews.com/opinion/riyadh-baghdad-can-build-on-shared-security-interests-3006646",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Arab News"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "الخارجية العراقية: اكتمال الاستعدادات لانطلاق اجتماع وزراء خارجية التعاون الإسلامي في بغداد",
+      "source": "بوابة روز اليوسف",
+      "link": "https://www.rosaelyoussef.com/1442515",
+      "date": "2026-10-16T13:03:31.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 외무부: 바그다드에서 이슬람 협력 외무장관 회의 시작 준비 완료",
+      "url": "https://www.rosaelyoussef.com/1442515",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "بوابة روز اليوسف"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "نساء البصرة يصعدن ضد قانون الأحوال الجعفري.. ظلم في الحضانة وزواج القاصرات",
+      "source": "شبكة 964",
+      "link": "https://964media.com/725969/",
+      "date": "2026-10-16T12:44:56.000Z",
+      "lang": "ar",
+      "titleKo": "Basra 여성들은 Jaafari 지위법에 반대하여 격상되고 있습니다.. 양육권 및 미성년자 결혼의 불의",
+      "url": "https://964media.com/725969/",
+      "body": "كورنيش البصرة – 964 نظمت مجموعة من النساء في البصرة، اليوم الجمعة (16 تشرين الأول 2026)، وقفة احتجاجية\nانضموا إلى أسرع منصاتنا وعبرت المشاركات في المؤتمر عن رفضهن لما وصفنه بـ “سلب حقوق الأمومة وغياب مصلحة المحضون وانعدام استقراره النفسي”، وطالبن بإلغاء الأثر الرجعي للقانون ورفع “الإجبار” ومنح المرأة حرية الاختيار في تطبيق أحكام المذهب الجعفري، وإلغاء القرار (93) الخاص بتخيير المحضون عند إكماله الثامن عشر لمخالفته المادة (337) من المدونة الجعفرية وإجابات المرجعية بشأن سن الرشد، فضلاً عن تفعيل معيار “مصلحة الطفل” كأولوية في قضايا الحضانة، وإلغاء زواج القاصرات بالعودة إلى السن القانوني السابق، مؤكدات على تنظيم وقفات احتجاجية قادمة في حال عدم الاستجابة لمطالبهن وتعديل بنود القانون.\nوامتدت الاحتجاجات النسوية الرافضة لتطبيق تعديلات “قانون الأحوال الجعفري”، اليوم الجمعة، (16 تشرين الأول 2026)، من البصرة إلى العاصمة بغداد ، حيث نظمت مجموعة من النساء وقفة احتجاجية في ساحة الفردوس، تخللتها مسيرة باتجاه ساحة كهرمانة، للمطالبة بتعديل أحكام الحضانة وإلغاء الأثر الرجعي للقانون وحماية الأطفال والنسا",
+      "bodyKo": "바스라 코르니쉬 (Basra Corniche) – 964 오늘 금요일 (2026년 10월 16일) 바스라에서 조직된 여성 그룹, 자경단\n그들은 우리의 가장 빠른 플랫폼에 합류했으며 회의 참가자들은 \"출산 권리의 거부와 아동의 관심의 부재 및 그의 심리적 불안정성\" 이라고 묘사 한 것에 대해 거부감을 표명하고 법의 소급 효과의 폐지와 \"강압\" 의 해제를 요구하고 여성에게 Jaafari 교리의 조항 적용에 대한 선택의 자유를 부여하고 Jaafari 강령 제 337 조 및 성년에 관한 참조의 답변을 위반했다는 이유로 18 세 완료시 아동의 선택에 대한 결정 (93) 을 취소하고 \"아동의 이익\" 의 기준을 양육권 사건의 우선 순위로 활성화하고 미성년자의 결혼을 취소했다.\n2026년 10월 16일 금요일, 바스라에서 수도 바그다드로 확장된 \"자아파리 지위법\" 의 개정안 적용에 반대하는 페미니스트 시위는 카라마나 광장을 향한 행진을 포함하여 알 파르두스 광장에서 여성 단체가 양육권 조항의 개정, 법의 소급 효력 폐지, 아동 및 여성 보호를 요구하는 시위를 조직했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شبكة 964"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바스라",
+        "km": 422
+      }
+    },
     {
       "title": "“حرب وراثية” من العمارة حتى أبو غريب.. دعاء تقاتل لمنع انقراض دجاج العراق القديم",
       "source": "شبكة 964",
@@ -52,6 +398,31 @@
       }
     },
     {
+      "title": "Only Iraqis may solve Sinjar security issue: PM Zaidi spox",
+      "source": "The New Region",
+      "link": "https://thenewregion.com/posts/6818",
+      "date": "2026-10-16T11:51:41.000Z",
+      "lang": "en",
+      "titleKo": "이라크인만 Sinjar 보안 문제를 해결할 수 있습니다: PM Zaidi SPOX",
+      "url": "https://thenewregion.com/posts/6818",
+      "body": "\"We are talking with the neighbors, especially Turkey, that the issue of Sinjar is an Iraqi issue, and we don't allow anyone except the Iraqis to fix this problem,” said Sabah al-Numan.\nERBIL, Kurdistan Region of Iraq - Sabah al-Numan, spokesperson for the commander-in-chief of the Iraqi armed forces, told The New Region in an exclusive interview that the militia integration file in Sinjar is &ldquo;an Iraqi issue&rdquo; that may only be solved by domestic authorities, adding that Baghdad is working to appoint a new district mayor.\n&ldquo;The case in Sinjar, it's not a firm security issue, but it's combined between the politics and between the vision of this city and the initiative to reorganize this city and nominate a mayor, a leader from the people of the city,&rdquo; Numan told The New Region.",
+      "bodyKo": "사바 알 누만 (Sabah al-Numan) 은 \"우리는 이웃 국가들, 특히 터키와 신자르 문제가 이라크 문제라고 이야기하고 있으며, 이라크인 외에는 누구도 이 문제를 해결할 수 없도록 하고 있다\" 고 말했다.\n이라크 쿠르디스탄 에르빌 지역 - 이라크 군 총사령관의 대변인인 사바 알 누만 (Sabah al-Numan) 은 독점 인터뷰에서 신자르 민병대 통합 파일은 국내 당국에서만 해결할 수 있는 \"이라크 문제\" 라고 말하며 바그다드가 새로운 지역 시장을 임명하기 위해 노력하고 있다고 덧붙였다.\nNuman은 The New Region과의 인터뷰에서 \"신자르의 경우, 확고한 안보 문제는 아니지만, 정치와 이 도시의 비전, 그리고 이 도시를 재조직하고 도시 주민들의 지도자인 시장을 지명하는 이니셔티브가 결합되어 있습니다.\" 라고 말했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The New Region"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "신자르",
+        "km": 429
+      }
+    },
+    {
       "title": "Suyana bloc demands Christian representation in Iraq's cabinet",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/en/Iraq/Suyana-bloc-demands-Christian-representation-in-Iraq-s-cabinet",
@@ -62,35 +433,65 @@
       "body": "Shafaq News- Baghdad Iraq's Christian Suyana bloc demanded representation in the new cabinet through its own nominee, rejecting a rival candidate allegedly affiliated with the Babylon bloc, the bloc&\nOghanna accused political rivals of trying to pass off their candidate as an independent.\nPrime Minister Ali Al-Zaidi had promised his bloc representation in the government, Oghanna said. He added that the bloc holds five of the nine parliamentary seats reserved for minority communities, including three of the five Christian seats.\n&ldquo;We have submitted our candidates' names to Al-Zaidi, but the problem is that he is putting forward nominees as independents when they are not.&rdquo;\nIraq's parliament on October 15 approved three deputy prime ministers and 11 cabinet nominees, including a minister of state, while leaving the Migration and Displacement Ministry portfolio vacant.",
       "bodyKo": "샤파크 뉴스 - 이라크 바그다드의 크리스티안 수야나 블록은 바빌론 블록에 연루된 것으로 알려진 경쟁 후보를 거부하면서 자신의 후보자를 통해 새 내각에서 대표성을 요구했습니다.\nOghanna는 정치적 경쟁자들이 자신의 후보를 무소속으로 사칭하려 한다고 비난했습니다.\n알리 알 자이디 총리는 정부에서 자신의 블록 대표를 약속했다고 오가나는 말했습니다. 그는 블록이 기독교인 의석 5석 중 3석을 포함해 소수자 공동체를 위해 배정된 의회 의석 9석 중 5석을 보유하고 있다고 덧붙였습니다.\n\"우리는 후보자 이름을 알자이디에게 제출했지만, 문제는 그가 무소속 후보를 무소속으로 내세운다는 것입니다.\"\n10월 15일 이라크 의회는 부총리 3명과 국무장관 1명을 포함한 내각 지명자 11명을 승인했지만 이민부 자리는 공석으로 남겨두었습니다.",
       "tried": true,
-      "count": 6,
+      "count": 1,
       "sources": [
         "شفق نيوز"
       ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "이라크 의회, 경제 우려 고조 속 내각 인준 완료.",
+      "source": "Vietnam.vn",
+      "link": "https://www.vietnam.vn/ko/quoc-hoi-iraq-hoan-tat-phe-chuan-noi-cac-trong-boi-canh-lo-ngai-kinh-te-gia-tang",
+      "date": "2026-10-16T10:37:43.000Z",
+      "lang": "ko",
+      "titleKo": "이라크 의회, 경제 우려 고조 속 내각 인준 완료.",
+      "url": "https://www.vietnam.vn/ko/quoc-hoi-iraq-hoan-tat-phe-chuan-noi-cac-trong-boi-canh-lo-ngai-kinh-te-gia-tang",
+      "body": "10월 15일, 이라크 의회는 공석이었던 장관직과 3명의 부총리직을 승인함으로써, 심각한 경제 및 안보 문제에 직면한 이라크 정부 구성을 완료했다.\n이번 회의에서 의원들은 나예프 알샴마리 국방부 장관, 야세르 알말리키 내무부 장관을 비롯해 기획부 장관, 문화부 장관, 고등 교육 과학연구부 장관 등 11명의 내각 구성원을 승인했습니다.\n이라크 의회는 정당 간 합의에 도달하지 못했기 때문에 아직 이민 및 난민부 장관 후보자에 대한 표결을 진행하지 않았다.\n이란 의 지원을 받는 아사이브 아흘 알하크 운동의 고위 지도자이자 지도자 카이스 알카잘리의 동생인 라이스 알카잘리를 포함한 3명의 부총리도 승인되었다.\n미국은 2020년 아사이브 아흘 알하크를 외국 테러 조직으로 지정했으며, 카이스 형제인 라이스 알카잘리를 \"특별 지정 국제 테러리스트\" 명단에 올렸습니다. 워싱턴은 이 단체가 2007년 미군 5명이 사망한 공격을 포함한 여러 공격에 연루되었다고 비난하고 있습니다. 2019년 미국 재무부는 이라크 시위대 사망 사건과 관련하여 카이스 형제에게 제재를 가했습니다.\n내각 승인 후 연설에서 알 자이디 총리는 의회에 감사를 표하고 부총리와 장관들에게 \"최고 수준의 헌신, 역량 및 청렴성\"을 가지고 직무를 수행해 줄 것을 촉구했습니다. 그는 정부가 2월 28일 시작된 미국, 이스라엘, 이란 간의 분쟁으로 인해 이라크가 직면한 특수한 경제 및 안보 문제를 해결하기 위한 노력을 가속화할 것이라고 말했습니다.\n이라크는 현재 분쟁의 여파로 심각한 유동성 부족에 직면해 있습니다. 전쟁 발발 이전에는 호르무즈 해협을 통해 하루 약 350만 배럴의 석유를 수출했으며, 석유 수입이 정부 수입의 약 90%를 차지했습니다.",
+      "bodyKo": "10월 15일, 이라크 의회는 공석이었던 장관직과 3명의 부총리직을 승인함으로써, 심각한 경제 및 안보 문제에 직면한 이라크 정부 구성을 완료했다.\n이번 회의에서 의원들은 나예프 알샴마리 국방부 장관, 야세르 알말리키 내무부 장관을 비롯해 기획부 장관, 문화부 장관, 고등 교육 과학연구부 장관 등 11명의 내각 구성원을 승인했습니다.\n이라크 의회는 정당 간 합의에 도달하지 못했기 때문에 아직 이민 및 난민부 장관 후보자에 대한 표결을 진행하지 않았다.\n이란 의 지원을 받는 아사이브 아흘 알하크 운동의 고위 지도자이자 지도자 카이스 알카잘리의 동생인 라이스 알카잘리를 포함한 3명의 부총리도 승인되었다.\n미국은 2020년 아사이브 아흘 알하크를 외국 테러 조직으로 지정했으며, 카이스 형제인 라이스 알카잘리를 \"특별 지정 국제 테러리스트\" 명단에 올렸습니다. 워싱턴은 이 단체가 2007년 미군 5명이 사망한 공격을 포함한 여러 공격에 연루되었다고 비난하고 있습니다. 2019년 미국 재무부는 이라크 시위대 사망 사건과 관련하여 카이스 형제에게 제재를 가했습니다.\n내각 승인 후 연설에서 알 자이디 총리는 의회에 감사를 표하고 부총리와 장관들에게 \"최고 수준의 헌신, 역량 및 청렴성\"을 가지고 직무를 수행해 줄 것을 촉구했습니다. 그는 정부가 2월 28일 시작된 미국, 이스라엘, 이란 간의 분쟁으로 인해 이라크가 직면한 특수한 경제 및 안보 문제를 해결하기 위한 노력을 가속화할 것이라고 말했습니다.\n이라크는 현재 분쟁의 여파로 심각한 유동성 부족에 직면해 있습니다. 전쟁 발발 이전에는 호르무즈 해협을 통해 하루 약 350만 배럴의 석유를 수출했으며, 석유 수입이 정부 수입의 약 90%를 차지했습니다.",
+      "tried": true,
+      "count": 13,
+      "sources": [
+        "Agenzia Nova",
+        "Demócrata",
+        "Yeni Şafak English",
+        "Iraqi News",
+        "Vietnam.vn",
+        "Al Jazeera"
+      ],
       "related": [
         {
-          "titleKo": "샤파크 뉴스.. 이라크 공산당, 알자이디 내각 완성 거부",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Iraq/Iraqi-Communist-Party-rejects-Al-Zaidi-s-completed-cabinet"
+          "titleKo": "이라크: 의회, 정부 구성 완료, 11개 장관 임명 승인",
+          "source": "Agenzia Nova",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOd3l1VTdoZUt0d3hvaEs5LXh0WjZRMFQtN2hIVlF4TEc0VUE3eHRzZy1tREVXNEJ6eE5PYjcwOEtqNUdXNVR3eXYtZGRDdVh1dmdsTkJ1d2c1M2RzZ2tETldxU1BtcjlVNHB3SVhmVFcxanNlcmVZZzR6aU54d05XS2R2bC1iU1hwUFNKb2lURkpqTnhmbWFFaVQ4dFY0YzBLTExzTGc0V3VsazJ6d3ZleWJvMXVNV25Uc2ZjWURwRQ?oc=5"
         },
         {
-          "titleKo": "샤파크 뉴스.. 나자프 성직자가 이라크의 새로운 내각 직위를 비판하다",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/society/Najaf-cleric-criticizes-Iraq-s-new-cabinet-posts"
+          "titleKo": "이라크 의회는 선거 5개월 후 새 정부를 완성합니다.",
+          "source": "Demócrata",
+          "link": "https://www.democrata.es/en/international/the-iraqi-parliament-completes-the-new-government-five-months-after-the-elections/"
         },
         {
-          "titleKo": "샤파크 뉴스.. 수야나 블록, 이라크 내각에서 기독교 대표성 요구",
-          "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZEhBX2xIemlPaHdFN2h2VHJia2VPTEZ6Q0N6ZDBJcjZGMnh0cVVuOHFmcUpGYWh0YV83X0gxMkdXeGNGYUk0UmFUZXZITE9URC1GV0prVlpFTkoyVlp6ZmxIOFlOeU5zZmw3S3NGYXliQjd1SjVYRW5tdUNrcXh2bEJBMGhxdmlKSnNZSnhlRWs1bW9FXy0zbA?oc=5"
+          "titleKo": "이라크 총리, 의회가 11명의 장관을 승인한 후 내각 구성 완료",
+          "source": "Yeni Şafak English",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONklfRHhCeW10SWNLZlVFQm9ybGxXLUs2RlZUdXlQeEVueUgzSTlCLVk4UDBRX1NFRDB6SFJoNDRaODZkdEtjNE1RU2JiajB3bk4xSUxCc2xSR25Oa0ZVYmFtOTE1dzNkd2w0QzFwaElidWhoSXFtM0t4V0RyQ3VsRnVhbzdMclhOS2lGaU1QbUNOc2lqVElwVFlZNU8wZnN2ejF2aWYtZzFneVBYanc?oc=5"
         },
         {
-          "titleKo": "이라크 의회, 내각 완성에 대한 투표 소집",
-          "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORTZqdUtLOHd3Wml0Y3pnUVhUVFdta01JU0VfRHo4aldiRnEzUlhNOHJtVzhxcERWRndDekRvaGl6Tk9mVmtydm0zdkRrUXlFQ0pMUlpxdjRXZWtfdVBFZEY5QWR5MVFST2I1dGNNejMzeThHeTJHVWZaRTZlYXJzLXdmdktXQXl0TlE?oc=5"
+          "titleKo": "이라크 의회, 새 내각 장관 승인",
+          "source": "Iraqi News",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZFRRTTZTaWtuME5kNngyZUQ3YThGRmVwR2F4S3BPbWFpS2VRZEJBUUhSemZlUmt2T3k2T0M1ekFBQnBXNEhnME95RnNEX3lFakdnY2YzLVNCVFZvb3poUFRxRm5jQ2lONk5hQTJnZnFpVnRrVkk2MEMtZDdhdFZXZVhsVkNXUQ?oc=5"
         },
         {
-          "titleKo": "정족수가 얼마 남지 않았기 때문에 의원들이 이라크 내각 투표를 보이콧합니다.",
-          "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTE1xemZiZ252T2ZZeXE2dGFITHV4ZzY1Z0ZIUWZzVHFNM01yZjJ5SWNuRWh6WmRoaUFKVVg3T3I3OFRzQkREVFIzbjRMeWxrSEtFa1BHdTFIdDZlcDN4R0p1NktxZVBkMDNpWHhsNkFKbURCTlF4bURrdnQ1bjcwTjRNaG1rSXRKM2gxQw?oc=5"
+          "titleKo": "이라크 의회는 경제적 우려가 커지는 가운데 알자이디 내각을 승인했습니다.",
+          "source": "Al Jazeera",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSTlWX3RicWNsZ09LNWpFay11ZktpNjh6c2Z5REtzLUlIN3BXYjBreDA1R29sdW5fLTd0S1A1RFBreWtGaVpmWnJ1T2lqcE1GV3FOeHRIcEhybGswU1g0bkwtZDgtQVFtamVyREVVQm81dDI1Y3hVMzNnLUtNeGpjSHY2VWNSYldHQk9aYXg5ZWpjMW51SE4tTTBUSlVZNGtnc1ZCSHlXUldBSEtfTklVdXItVzR6UdIBuwFBVV95cUxQOXMzVUxiWnJtaXlFdm5WSnpYbVRkS3VINVVlbXROenV5SlBoUkkweXVVblF0TGR6d1dnRXFCejVod3kyV2FiRWJpTlA2bjFjbVNOMEsxR0JhMGJib25JSmZVdDlFTW5ORDFlOHBfcWtqVzRPQTZDSDMzMFhZTVhYX0JzbGVCNV9QSGZua2dLRVNkY0U0bzVhLTAycmhLUUc0THJHWVhBbHFQYWQ4b1ZOZmtGSlNjZy1UV3dZ?oc=5"
         }
       ],
       "tag": "정치·선거",
@@ -103,19 +504,36 @@
       }
     },
     {
-      "title": "US greenlights Iraqi cabinet with blacklisted factions, say diplomatic sources",
-      "source": "Free Malaysia Today",
-      "link": "https://www.freemalaysiatoday.com/category/world/2026/10/16/us-greenlights-iraqi-cabinet-with-blacklisted-factions-say-diplomatic-sources",
-      "date": "2026-10-16T11:11:00.000Z",
+      "title": "Kurdistan Democratic Party of Iraq takes over the presidency of the Iraqi Military Academy",
+      "source": "کردپرس",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeUhScFl2TF9pVkxHTmxuUDk3U1dnWXU4WWNwWENlZVdMWWJZYzZyYVJWMFhyTjBtTmFHRDY3N1BxdnRzeVpranYyZW94amVRMlZMRmFCOEtmVEFYcTlPV3liZFFMak9SV3JlMFZMejVMMFMwdzMxbnhGLV9nV0Z2T19JZnk3ay1lVk1GWWwzWW9hS0NKRzFLcmgyNFBDcTI1djVtWkFTcWp1ZkN5SV80Vk9ETUZ4cHJsbG1udFdjR200Q1EyY3Fsdl96UkxtdVgxQzg3a3lqVmc?oc=5",
+      "date": "2026-10-16T10:10:13.000Z",
       "lang": "en",
-      "titleKo": "외교 소식통은 미국이 블랙리스트에 오른 파벌과 함께 이라크 내각에 불을 붙인다고 말합니다.",
-      "url": "https://www.freemalaysiatoday.com/category/world/2026/10/16/us-greenlights-iraqi-cabinet-with-blacklisted-factions-say-diplomatic-sources",
-      "body": "Iraq's prime minister Ali al-Zaidi announced his cabinet line-up Thursday night, naming Laith al-Khazali, a senior leader of the US-blacklisted Asaib Ahl al-Haq group, as one of his deputies.\nOn Thursday night, Ali al-Zaidi announced the completion of his government, appointing Laith al-Khazali, a senior leader in the US-blacklisted Asaib Ahl al-Haq group, as one of his deputies.\nPrime Minister Ali al-Zaidi “secured tacit US approval during his visit to the US in September” for the UN General Assembly, and during which he met President Donald Trump, a diplomatic source said on Friday.\nThe US agreed to the participation of some pro-Iran factions in the government “after the prime minister promised to move forward with his disarmament plans and provided guarantees that the groups will not attack US interests in Iraq”, the source added.",
-      "bodyKo": "이라크 총리 알리 알자이디 (Ali al-Zaidi) 는 목요일 밤 자신의 내각 라인업을 발표하면서 미국이 블랙리스트에 올린 아사이브 알 알 알 하크 (Asaib Ahl al-Haq) 그룹의 고위 지도자인 라이스 알 카잘리 (Laith al-Khazali) 를 그의 부관 중 한 명으로 지명했다.\n목요일 밤, 알리 알자이디 (Ali al-Zaidi) 는 미국이 블랙리스트에 올린 아사이브 알 알 하크 (Asaib Ahl al-Haq) 그룹의 고위 지도자 라이스 알 카잘리 (Laith al-Khazali) 를 그의 부관 중 한 명으로 임명하면서 정부 완성을 발표했다.\n알리 알자이디 총리는 지난 9월 유엔 총회를 위해 \"미국을 방문하는 동안 암묵적인 승인을 확보했다\" 며 도널드 트럼프 대통령을 만났다고 외교 소식통이 금요일 전했다.\n소식통은 미국이 \"총리가 군축 계획을 추진하겠다고 약속하고 이라크에 대한 미국의 이익을 공격하지 않을 것이라는 보장을 제공한 후\" 일부 친이란 진영의 정부 참여에 동의했다고 덧붙였다.",
-      "tried": true,
+      "titleKo": "이라크 쿠르디스탄 민주당, 이라크 육군사관학교 총장 취임",
       "count": 1,
       "sources": [
-        "Free Malaysia Today"
+        "کردپرس"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraqi Parliament Votes on 14 Candidates for Ministerial and Government Positions",
+      "source": "کردپرس",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTlRqTm9XazhqWU1nR1BjTUVNUU9laE1LX1BTNUx2dHpwMHhiTW9SVExmUVdOZXhGS2FEdEY2LVRkbUJSUEVMNzJqY1NvTkFSbFNGbVhoWnZPRUkwQnpudlhYYm5XTDBZV00zcHZ1VWZqeTR5NHhwdlhzSF9haWpEQ0E0bm14UUNBNWVPeURKZjY4UlhZU3lXbzFNZ1ZmazFYWXFDRHIxSTgzU0Q4NEYtMkxNTlFXNFFTRDRoamFYZW1YX3o3Y0ZwT3JIQQ?oc=5",
+      "date": "2026-10-16T10:05:58.000Z",
+      "lang": "en",
+      "titleKo": "이라크 의회, 14명의 장관 및 정부직 후보자 투표",
+      "count": 1,
+      "sources": [
+        "کردپرس"
       ],
       "related": [],
       "tag": "정치·선거",
@@ -128,35 +546,10 @@
       }
     },
     {
-      "title": "War has cost Iraq $60 billion, foreign minister tells Italy",
-      "source": "964media",
-      "link": "https://en.964media.com/53834/",
-      "date": "2026-10-16T09:57:15.000Z",
-      "lang": "en",
-      "titleKo": "이라크의 전쟁 비용은 600억 달러 ($) 였다고 외무장관이 이탈리아에 말했다.",
-      "url": "https://en.964media.com/53834/",
-      "body": "BAGHDAD — Iraq has suffered an estimated $60 billion in economic losses from the war between the United States\nHussein met Italian Deputy Prime Minister and Foreign Minister Antonio Tajani in Rome on Thursday, Iraq’s Foreign Ministry said in a statement released Friday. The war had deepened the global energy crisis and raised fears of inflation, with consequences reaching European economies, Hussein said, urging the European Union and individual European countries, including Italy, to back peace initiatives, encourage negotiations and help stop the conflict from spreading.\nPrime Minister Ali al-Zaidi said in September that Iraq had lost nearly $60 billion in oil revenue since the war began, blaming restrictions on Iraqi tankers in the Strait of Hormuz and saying extensive talks with Tehran had failed to secure unrestricted passage. Exports fell from more than 99 million barrels in February to 18.6 million in March, cutting monthly revenue from more than $6.8 billion to about $1.95 bill",
-      "bodyKo": "바그다드 — 이라크는 미국 간의 전쟁으로 인해 $ 600억 달러의 경제적 손실을 입은 것으로 추정됩니다.\n이라크 외무부는 금요일 발표한 성명에서 후세인이 안토니오 타자니 이탈리아 부총리 겸 외무장관을 로마에서 만났다고 밝혔다. 후세인은 전쟁은 세계 에너지 위기를 심화시키고 인플레이션에 대한 두려움을 불러일으켰으며, 그 결과는 유럽 경제에까지 미쳤다고 말하면서 유럽 연합과 이탈리아를 포함한 개별 유럽 국가들이 평화 이니셔티브를 지지하고 협상을 장려하며 분쟁 확산을 막을 것을 촉구했다.\n알리 알자이디 총리는 지난 9월 이라크가 전쟁이 시작된 이후 거의 600억 달러의 석유 수입을 잃었다며, 호르무즈 해협에서 이라크 유조선에 대한 제한을 비난하고 테헤란과의 광범위한 대화가 제한 없는 통과를 확보하지 못했다고 말했다. 수출은 2월 9900만 배럴 이상에서 3월 1860만 배럴로 감소하여 월 매출이 68억 달러 이상에서 약 1.95 달러로 감소했습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "964media"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "سعر صرف الدولار مقابل الدينار العراقي (USD/IQD)",
       "source": "DailyForex",
       "link": "https://arab.dailyforex.com/forex-technical-analysis/2026/10/%D8%B3%D8%B9%D8%B1-%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-usdiqd-%D9%83%D9%8A%D9%81-%D8%AA%D8%AD%D8%B1%D9%83-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%81%D9%8A-%D8%AE%D8%AA%D8%A7%D9%85-%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9/250798",
-      "date": "2026-10-16T09:50:58.000Z",
+      "date": "2026-10-16T10:03:41.000Z",
       "lang": "ar",
       "titleKo": "달러-이라크 디나르 환율 (USD/IQD)",
       "url": "https://arab.dailyforex.com/forex-technical-analysis/2026/10/%D8%B3%D8%B9%D8%B1-%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-usdiqd-%D9%83%D9%8A%D9%81-%D8%AA%D8%AD%D8%B1%D9%83-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%81%D9%8A-%D8%AE%D8%AA%D8%A7%D9%85-%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9/250798",
@@ -165,14 +558,13 @@
       "tried": true,
       "count": 2,
       "sources": [
-        "DailyForex",
-        "Iraqi News"
+        "DailyForex"
       ],
       "related": [
         {
-          "titleKo": "미국 달러 환율은 이라크 디나르 대비 소폭 상승",
-          "source": "Iraqi News",
-          "link": "https://www.iraqinews.com/iraq/us-dollar-exchange-rate-slightly-rises-against-iraqi-dinar/"
+          "titleKo": "USD/IQD 환율: 주말에 USD/IQD 환율은 어떻게 변했나요?",
+          "source": "DailyForex",
+          "link": "https://news.google.com/rss/articles/CBMinAZBVV95cUxNWGhWQU9kX2tlcEpDR3ZwTXJSSER0N25hOTVKSVVBUG1vaU53eWwteUI3cUdIQXNsaTlUUVYzYjFDQURPYTliSzM1dTYxbEtuSEFyOW5QV0hDeGY3eGh4Tnl2N3AyVlB1M1M5OVhFdU5sSGJrQU55RVJ3QVF2ZDAzS3Raajd2bUdfbTV6V3R5a1d3SGVvWFlxQjZkSzl6VGQ1WWM5bUNSbVNrM0xaOFI5T0w2ZVVMdXdvbUVDYkRwcTBiWF9uQkk5OEVTZm1RQ0lSb3ZRdEFXSzlzV2F2aU1pSG90MldJa2tvMnE2cnBKVlhhSUZibTFaMWNvUmJWa0t5YTBKeXNnT2t5Ym5LdXUtY21DdHZ5Zk5kNGRyNW9YQ2RueHNXcmxIT1dDSklKeG1pWGxESmxJR2V3ejVrQmtaSjlMT0hicndNOFZ1YUtRZTgyRlVpaUczLVZ4NW5kaG9pNHBVbk1RWDM4RTFwZFBpckNpLXNrbUNtNFIwRnJ1U3lqM0dQalZKSUlfNDZrRTRYNldGUnB3ZzhoaEFjRWxRLWxHVmZPN2JxVm9abFQwbTlsYXhnQURCdnZkbjJ2M3F1VFZIcWE4RExFNGstSnI2WHY4WGRhUWFHV0JYMFBqaU90Y2tyTkRiQ1lmY1lhZVYwOFRCYnQ4QUY4WU0weWJ0Um9tT0pHVTVQYU1BN0drTTdsMXVyUkxrb1hZeGo0MkVmZkhVdkxydjQ4N3Ftak5wanNLTXhEVW0wN012WWxPOFFxLU40SXpySUdEOVgxdGNBbEpGX09FejlLNHE5VVh4Tmc0VGhKSWpqX05GVE5DZ0VqNzU5VF9sR1JnX0NkOXg2bFZhR2RtcUNkNk9YMjhsR2JRV0YyMG55bVg1MXUzTk1QVGpYNjg2RXRGMkxCWml3bjZrOGZ2MUhYaTBiSVlNTkFkRE1uR1owb0dWVG00NWQ4ZVg0czNaNjkzbDlrcnBSR0xHY2RjN3UyNm5ZVnlndHhRLVJNbXUtNDZRTDBmY1piYzlLQ3hHakoxcEFZWlU1S2FxMTRiWXdVVjhS?oc=5"
         }
       ],
       "tag": "경제·유가",
@@ -185,50 +577,56 @@
       }
     },
     {
-      "title": "이라크 의회, 경제 우려 고조 속 내각 인준 완료.",
-      "source": "Vietnam.vn",
-      "link": "https://www.vietnam.vn/ko/quoc-hoi-iraq-hoan-tat-phe-chuan-noi-cac-trong-boi-canh-lo-ngai-kinh-te-gia-tang",
-      "date": "2026-10-16T09:32:14.000Z",
-      "lang": "ko",
-      "titleKo": "이라크 의회, 경제 우려 고조 속 내각 인준 완료.",
-      "url": "https://www.vietnam.vn/ko/quoc-hoi-iraq-hoan-tat-phe-chuan-noi-cac-trong-boi-canh-lo-ngai-kinh-te-gia-tang",
-      "body": "10월 15일, 이라크 의회는 공석이었던 장관직과 3명의 부총리직을 승인함으로써, 심각한 경제 및 안보 문제에 직면한 이라크 정부 구성을 완료했다.\n이번 회의에서 의원들은 나예프 알샴마리 국방부 장관, 야세르 알말리키 내무부 장관을 비롯해 기획부 장관, 문화부 장관, 고등 교육 과학연구부 장관 등 11명의 내각 구성원을 승인했습니다.\n이라크 의회는 정당 간 합의에 도달하지 못했기 때문에 아직 이민 및 난민부 장관 후보자에 대한 표결을 진행하지 않았다.\n이란 의 지원을 받는 아사이브 아흘 알하크 운동의 고위 지도자이자 지도자 카이스 알카잘리의 동생인 라이스 알카잘리를 포함한 3명의 부총리도 승인되었다.\n미국은 2020년 아사이브 아흘 알하크를 외국 테러 조직으로 지정했으며, 카이스 형제인 라이스 알카잘리를 \"특별 지정 국제 테러리스트\" 명단에 올렸습니다. 워싱턴은 이 단체가 2007년 미군 5명이 사망한 공격을 포함한 여러 공격에 연루되었다고 비난하고 있습니다. 2019년 미국 재무부는 이라크 시위대 사망 사건과 관련하여 카이스 형제에게 제재를 가했습니다.\n내각 승인 후 연설에서 알 자이디 총리는 의회에 감사를 표하고 부총리와 장관들에게 \"최고 수준의 헌신, 역량 및 청렴성\"을 가지고 직무를 수행해 줄 것을 촉구했습니다. 그는 정부가 2월 28일 시작된 미국, 이스라엘, 이란 간의 분쟁으로 인해 이라크가 직면한 특수한 경제 및 안보 문제를 해결하기 위한 노력을 가속화할 것이라고 말했습니다.\n이라크는 현재 분쟁의 여파로 심각한 유동성 부족에 직면해 있습니다. 전쟁 발발 이전에는 호르무즈 해협을 통해 하루 약 350만 배럴의 석유를 수출했으며, 석유 수입이 정부 수입의 약 90%를 차지했습니다.",
-      "bodyKo": "10월 15일, 이라크 의회는 공석이었던 장관직과 3명의 부총리직을 승인함으로써, 심각한 경제 및 안보 문제에 직면한 이라크 정부 구성을 완료했다.\n이번 회의에서 의원들은 나예프 알샴마리 국방부 장관, 야세르 알말리키 내무부 장관을 비롯해 기획부 장관, 문화부 장관, 고등 교육 과학연구부 장관 등 11명의 내각 구성원을 승인했습니다.\n이라크 의회는 정당 간 합의에 도달하지 못했기 때문에 아직 이민 및 난민부 장관 후보자에 대한 표결을 진행하지 않았다.\n이란 의 지원을 받는 아사이브 아흘 알하크 운동의 고위 지도자이자 지도자 카이스 알카잘리의 동생인 라이스 알카잘리를 포함한 3명의 부총리도 승인되었다.\n미국은 2020년 아사이브 아흘 알하크를 외국 테러 조직으로 지정했으며, 카이스 형제인 라이스 알카잘리를 \"특별 지정 국제 테러리스트\" 명단에 올렸습니다. 워싱턴은 이 단체가 2007년 미군 5명이 사망한 공격을 포함한 여러 공격에 연루되었다고 비난하고 있습니다. 2019년 미국 재무부는 이라크 시위대 사망 사건과 관련하여 카이스 형제에게 제재를 가했습니다.\n내각 승인 후 연설에서 알 자이디 총리는 의회에 감사를 표하고 부총리와 장관들에게 \"최고 수준의 헌신, 역량 및 청렴성\"을 가지고 직무를 수행해 줄 것을 촉구했습니다. 그는 정부가 2월 28일 시작된 미국, 이스라엘, 이란 간의 분쟁으로 인해 이라크가 직면한 특수한 경제 및 안보 문제를 해결하기 위한 노력을 가속화할 것이라고 말했습니다.\n이라크는 현재 분쟁의 여파로 심각한 유동성 부족에 직면해 있습니다. 전쟁 발발 이전에는 호르무즈 해협을 통해 하루 약 350만 배럴의 석유를 수출했으며, 석유 수입이 정부 수입의 약 90%를 차지했습니다.",
-      "tried": true,
-      "count": 19,
+      "title": "4 مباريات في افتتاح الجولة 10 للدوري العراقي",
+      "source": "صحيفة الخليج",
+      "link": "https://news.google.com/rss/articles/CBMi5gNBVV95cUxNcXlCQlp4UGZPaHJpT3NiS25vRk9rUkNkVzdoWjE4dE42MFlSa19jRUNjUFBCSnZTSm9FZVFTWjk1WHZLY0k1X0VzNGFScWpaSDFfWUpOV01FTTJ1Wk9tNW1WMDhaT1NFN1Yzd1R1WVMtXzFCaUNOSWpZUlRTWm5VajJQTVVzLXNyZ0dUc0RvUVdXZWplN01KRzlOcW1XUVJrd1FDZ1hnZVczeWFKT1ZKY3RST3RmRVFpWkdzdWlRdHBpZGF3cmdmSlZCU0pPSkxsaHhDLUZsMkc2RlhLcEdaYmJBWGFhNXNDbW5nd0l4eUdrZUpnZmZGS1RiUnlIVjVTbms5aHJPa19DTTBYRUx0a0Qwdm9sQkNxZlFJaWNUcnRQNlV0Z2xQTW80dk9kNExQZlVkWkx0ZFVmVmMzWDlnR19nOVFvNDdZNVdieGVWX3VRMlJvMkJiVGFscG5ualo3VkoycVZ0QmVGTUZyOHhMR2RkN3dJMS0yaTVYdWVqN3VHZDFpMjdwT0NaR2xiWW9oNWVYR3RUSVppSnlVeGY0amtkM1pFaW5ZZ0k2aFpYQS1EdWhHMENXREx6S3NBRXc4X2k0TlFSOFVVT0RaUmJ6ckF4ZkdIdGhzZzZIOU1SSUEyTUVNR0E?oc=5",
+      "date": "2026-10-16T09:56:43.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 리그 10라운드 개막전 4경기",
+      "count": 3,
       "sources": [
-        "The Arab Weekly",
-        "The National",
-        "Iraqi News",
-        "شفق نيوز",
-        "Vietnam.vn",
-        "Al Jazeera"
+        "Al Daee News",
+        "صحيفة الخليج",
+        "وكالة الصحافة المستقلة"
       ],
       "related": [
         {
-          "titleKo": "이라크 의회는 미국이 허가한 인물을 포함한 주요 장관들을 승인합니다.",
-          "source": "The Arab Weekly",
-          "link": "http://www.thearabweekly.com/iraq-parliament-approves-key-ministers-including-us-sanctioned-figure"
+          "titleKo": "이라크 스타즈 리그 10라운드는 오늘 4경기로 시작됩니다.",
+          "source": "Al Daee News",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1PWlpDZGh1VEtFWXN4OFNxRk8zZnRMWld1UFdqeFd2alVZZEJQRDV5WDladXRFd0w4aDVtRzd6b09fZXpvSkJYanJiVlAzOG1kbzZXX1J2UjVxTVdrZlE?oc=5"
         },
+        {
+          "titleKo": "준우승을 놓고 치열한 갈등이 벌어지고 있는 가운데 이라크 스타즈 리그 10라운드에서 4번의 맞대결이 펼쳐진다.",
+          "source": "وكالة الصحافة المستقلة",
+          "link": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNTm90Y2RuZmw0UVgxUzFhMjhpakJxbHpDXzB0RFg1anMzd1paU0pQTGQyODB5QmtWalo2Yk9UVHhRSWNmWkdRUTY4c0RYdjU1Mko0ZWlYTHljazlnN2Myc0hGbUJVelpRSFFTZmR4anNITFlzVXBpOV85Ul9jMkdPdjRtTnFGWUQ4UWwzSUFfemVRU3dSU3BhandFVm95OFlyMVFYNll5eDNsRTY4ek1SVV8tMl9UUWxheWNZdkpIMXduUmNpTThYTV9BT3V5dE4tZTI2Ukx0VDZPd1VjLW1CMGxSOTdtN25ZdjlYZHpXaDlRcXFRZGJ0MTVBYmhjOWlSYWwwRF9Hc1drcDZTSFR1V1lOcmFMTGFtNlNsaDJDak1qYTk4NXhiZjR1X2ZPY3llNWpCVGFaUG9UMk1TcldWX2ZsOA?oc=5"
+        }
+      ],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq parliament approves key ministers, including US-sanctioned figure",
+      "source": "The Arab Weekly",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYmJnRHByUzcyd2ZLMGctWlR4Mk84V3hlb0ZxR2YzMFRNaUFzbGlYb1oxbGJnMnV3QnVRWmMtOWltYktxb0ZkMGdWS29hWEcySUVBY3pYTlR5LXBvNWw0Uzk0NGs5WmpQdmk3Y3ZLcGtrZFBYc1FVTzZ1NzJON2M3Mk4tU1lwaWt2azBoNEhhRlZKNzFMRUJwQkE4MTVDOUU?oc=5",
+      "date": "2026-10-16T09:32:14.000Z",
+      "lang": "en",
+      "titleKo": "이라크 의회는 미국이 허가한 인물을 포함한 주요 장관들을 승인합니다.",
+      "count": 2,
+      "sources": [
+        "The Arab Weekly",
+        "The National"
+      ],
+      "related": [
         {
           "titleKo": "이라크 의회는 미국이 허가한 PM 차관을 포함한 주요 내각 직위를 승인합니다.",
           "source": "The National",
           "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOLXY3MHk2NVdyLTZRUlFYbXdPa2JYOWFaNW1PSUlobC10ejNQeHJUZUxmVUdSZTZpcFVuZE1ZVFBxa3R0SGV0dklZc0ZfVmJHdGFzRUlPUFI1bkFJcmhCT2pvc0paamN0QV9pZC1tV3JwbHlfZXRDRHVSaGU0NXlYV3hpa3d0T2pWQ29MMXVVWkx4UllZOGE0bXQ1eTdxeVl6c2gxTk1PWGxXazVDQ0M3R2xvX0FldmF6ZWxfYjhxREZKS21NVElLbDV4UQ?oc=5"
-        },
-        {
-          "titleKo": "이라크 의회, 새 내각 장관 승인",
-          "source": "Iraqi News",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZFRRTTZTaWtuME5kNngyZUQ3YThGRmVwR2F4S3BPbWFpS2VRZEJBUUhSemZlUmt2T3k2T0M1ekFBQnBXNEhnME95RnNEX3lFakdnY2YzLVNCVFZvb3poUFRxRm5jQ2lONk5hQTJnZnFpVnRrVkk2MEMtZDdhdFZXZVhsVkNXUQ?oc=5"
-        },
-        {
-          "titleKo": "미국 의원, 이라크 PM 임명 규탄",
-          "source": "شفق نيوز",
-          "link": "https://www.shafaq.com/en/Iraq/US-lawmaker-condemns-appointment-of-Iraq-s-deputy-PM"
-        },
-        {
-          "titleKo": "이라크 의회는 경제적 우려가 커지는 가운데 알자이디 내각을 승인했습니다.",
-          "source": "Al Jazeera",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSTlWX3RicWNsZ09LNWpFay11ZktpNjh6c2Z5REtzLUlIN3BXYjBreDA1R29sdW5fLTd0S1A1RFBreWtGaVpmWnJ1T2lqcE1GV3FOeHRIcEhybGswU1g0bkwtZDgtQVFtamVyREVVQm81dDI1Y3hVMzNnLUtNeGpjSHY2VWNSYldHQk9aYXg5ZWpjMW51SE4tTTBUSlVZNGtnc1ZCSHlXUldBSEtfTklVdXItVzR6UdIBuwFBVV95cUxQOXMzVUxiWnJtaXlFdm5WSnpYbVRkS3VINVVlbXROenV5SlBoUkkweXVVblF0TGR6d1dnRXFCejVod3kyV2FiRWJpTlA2bjFjbVNOMEsxR0JhMGJib25JSmZVdDlFTW5ORDFlOHBfcWtqVzRPQTZDSDMzMFhZTVhYX0JzbGVCNV9QSGZua2dLRVNkY0U0bzVhLTAycmhLUUc0THJHWVhBbHFQYWQ4b1ZOZmtGSlNjZy1UV3dZ?oc=5"
         }
       ],
       "tag": "정치·선거",
@@ -276,11 +674,17 @@
       "body": "Shafaq News- BaghdadIraq&rsquo;s Land Forces Commander Lt. Gen. Qasim Mohammed Saleh Al-Mohammadi reviewed modern weapons, equipment and military technology alongside land forces commanders from sever\nThe ministry said the visit aimed to strengthen the Iraqi Army&rsquo;s capabilities and modernize its weapons and equipment in line with international military advances.\nOn October 3, Ahmed Kain Al-Khazali, the deputy chair of Parliament&rsquo;s Security and Defense Committee, said Baghdad was assessing foreign weapons based on their capabilities and suitability for Iraq&rsquo;s military needs. Iraq is also pursuing bilateral defense cooperation with Washington, including training, armament, and capacity-building, following the September 30 conclusion of the US-led coalition&rsquo;s mission in Iraq.",
       "bodyKo": "Shafaq News- 바그다드 이라크 육군 사령관 카심 모하메드 살레 알 모하마디 (Qasim Mohammed Saleh Al-Mohammadi) 중장은 현대 무기, 장비 및 군사 기술을 육군 사령관들과 함께 검토했습니다.\n국방부는 이번 방문이 이라크 육군의 역량을 강화하고 국제 군사 발전에 따라 무기와 장비를 현대화하기 위한 것이라고 밝혔다.\n10월 3일, 아흐메드 카인 알카잘리 (Ahmed Kain Al-Khazali) 의회 안보 및 국방위원회 부위원장은 바그다드가 이라크의 군사적 요구에 대한 역량과 적합성을 바탕으로 외국 무기를 평가하고 있다고 말했다. 이라크는 또한 9월 30일 미국 주도의 이라크 연합군 임무가 종료된 후 훈련, 무기, 역량 강화 등 워싱턴과의 양자 방위 협력을 추진하고 있다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "샤파크 뉴스.. 이라크, 워싱턴 엑스포에서 군사 기술 탐구",
+          "source": "شفق نيوز",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNS2JTR3lxbEpuQkdqMzJGcWtIWldEVUl1TnQxc1RGYkxINjZYMnZKYjUzRndXUFBxZmg2U2s4V3p6aC1DS1JOWEJic0p4XzRhWW8tRjZCZnZJV2hNWTMxZ0JrYUhuVGhreXlnWDVSdk9VQVZOd0FPc0JBb3VnQUZNWkRaR0J0dzNsODhr?oc=5"
+        }
+      ],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -291,25 +695,21 @@
       }
     },
     {
-      "title": "The Iraqi Parliament completes the new Government five months after the elections",
-      "source": "Demócrata",
-      "link": "https://www.democrata.es/en/international/the-iraqi-parliament-completes-the-new-government-five-months-after-the-elections/",
-      "date": "2026-10-16T08:14:28.000Z",
+      "title": "Iraq’s Turkmen front secures first minister of state post",
+      "source": "Hürriyet Daily News",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOFc1cS11SzNoTGNHeXhvVjRaYWtwWlRlZkk1ajZPc011dnRoZjRnbkZmTlE3UDB5UVI5VU9jTEc3ZlN3eUE5Y0g4T0k5QTF3ZkRxYUZRdFdyWkxpSXQ3U3Z4TkxKazFITjYwektqcThuelBicVFNRVp2a1hKeGJhd2J5TFFaTEhWZlVBSm44aUxKVVVqblp4LXVoN0ItZw?oc=5",
+      "date": "2026-10-16T08:31:05.000Z",
       "lang": "en",
-      "titleKo": "이라크 의회는 선거 5개월 후 새 정부를 완성합니다.",
-      "url": "https://www.democrata.es/en/international/the-iraqi-parliament-completes-the-new-government-five-months-after-the-elections/",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
+      "titleKo": "이라크 투르크멘 전선, 첫 국무장관 자리 확보",
       "count": 1,
       "sources": [
-        "Demócrata"
+        "Hürriyet Daily News"
       ],
       "related": [],
-      "tag": "정치·선거",
+      "tag": "치안·테러",
       "impact": {
         "lv": "g",
-        "line": "현장 직접 영향 낮음",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
         "act": "",
         "place": "",
         "km": null
@@ -341,19 +741,15 @@
       }
     },
     {
-      "title": "Fuad Hussein: Iraq suffered $60 billion in losses due to the war with Iran",
-      "source": "صوت الإمارات",
-      "link": "https://www.voiceofemirates.com/en/politics/2026/10/16/fuad-hussein-iraq-suffered-60-billion-in-losses-due-to-the-war-with-iran/",
-      "date": "2026-10-16T07:41:55.000Z",
+      "title": "Memorandum of Understanding between Iraq and Morocco to develop security training and qualification",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTlg5RWQwdXZweDV0QnNhS1ZOSlYxRlc3clIxa3djTGV3RXE4dGpZVDY1OF9mWm94cjlZa3F2QlVlWk9NV3JKWjdvb0pFZ01CS3dkUUtpSS0taWRxVVZBOFJ3T3RDd1RGQVY4RE55Nk53VnBoM2RpSW5fRkhOdjJiSWc0dFpfRl9KY2pLSktMS2txZ0xIUGdfc0VNb2Vlc2hJTnZMX3JBX25Fdy0tdGRJYWh0eHM2OG1QaVNmU01PaGE2cGFrUXFEbUVpNkFhd3FudXY4?oc=5",
+      "date": "2026-10-16T07:54:03.000Z",
       "lang": "en",
-      "titleKo": "푸아드 후세인: 이라크는 이란과의 전쟁으로 인해 $ 600억의 손실을 입었습니다.",
-      "url": "https://www.voiceofemirates.com/en/politics/2026/10/16/fuad-hussein-iraq-suffered-60-billion-in-losses-due-to-the-war-with-iran/",
-      "body": "Details regarding the economic damage sustained by Iraq as a result of the regional conflict, and its impact on European countries.\nSummarize Summarize with AI ChatGPT Claude Perplexity Grok Copy Prompt Highlights Iraqi appreciation for Italian support and the strengthening of the security partnership A shared vision regarding regional and international crises Baghdad, Iraq – Iraqi Foreign Minister Fuad Hussein announced that his country has incurred massive economic losses, estimated at approximately 60 billion US dollars, as a result of the war and the recent escalation between the United States and Iran. Hussein explained that the persistence and intensifying nature of this regional conflict have directly contributed to exacerbating the global energy crisis. Furthermore, these events have fueled international concerns regarding rising inflation rates, which has had a negative impact on the economies of many nations worldwide—most notably European countries, which were already grappl",
-      "bodyKo": "지역 분쟁으로 인한 이라크의 경제적 피해와 유럽 국가에 미치는 영향에 대한 세부 사항.\nAI 채팅으로 요약하기GPT 클로드 당혹감 그록 카피 프롬프트 하이라이트 이라크의 이탈리아 지원과 안보 파트너십 강화에 대한 감사 지역 및 국제 위기에 관한 비전 공유 이라크 바그다드 – 이라크 외교부 장관 푸아드 후세인은 이라크가 전쟁과 최근 미국과 이라 사이의 격화로 인해 약 600억 달러에 달하는 막대한 경제적 손실을 입었다고 발표했다.",
-      "tried": true,
+      "titleKo": "보안 교육 및 자격 개발을 위한 이라크와 모로코 간의 양해 각서",
       "count": 1,
       "sources": [
-        "صوت الإمارات"
+        "وكالة الانباء العراقية (واع)"
       ],
       "related": [],
       "tag": "기타",
@@ -416,27 +812,6 @@
       }
     },
     {
-      "title": "Iraqi premier completes Cabinet after parliament approves 11 ministers",
-      "source": "Yeni Şafak English",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONklfRHhCeW10SWNLZlVFQm9ybGxXLUs2RlZUdXlQeEVueUgzSTlCLVk4UDBRX1NFRDB6SFJoNDRaODZkdEtjNE1RU2JiajB3bk4xSUxCc2xSR25Oa0ZVYmFtOTE1dzNkd2w0QzFwaElidWhoSXFtM0t4V0RyQ3VsRnVhbzdMclhOS2lGaU1QbUNOc2lqVElwVFlZNU8wZnN2ejF2aWYtZzFneVBYanc?oc=5",
-      "date": "2026-10-16T06:56:14.000Z",
-      "lang": "en",
-      "titleKo": "이라크 총리, 의회가 11명의 장관을 승인한 후 내각 구성 완료",
-      "count": 1,
-      "sources": [
-        "Yeni Şafak English"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "Iraq’s Zaidi secures breakthrough in long-delayed cabinet formation",
       "source": "Middle East Online",
       "link": "https://middle-east-online.com/en/iraq%E2%80%99s-zaidi-secures-breakthrough-long-delayed-cabinet-formation",
@@ -453,27 +828,6 @@
       ],
       "related": [],
       "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Barrack, al-Zaidi Discuss Iraq’s Difficult Path to Stability - ASHARQ AL-AWSAT English",
-      "source": "ASHARQ AL-AWSAT English",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTXB2ZTBIV0hPd1BfYURHWWE2dXFKdl9vRVZLSmxLYnU1cUlxOVVNMXVmMEVuNVIwX0xQNGVrUzRLV1gzdEhTOHZqQnV4RzVMaXlLSndac2JtRzBTUlhXYVkya29XcHpTd2lNSFh3MnBHWFRYNXMtQ2thQ1ZtbFpMdGtKYjc5NHBoV3RSdjA5UTlmRUpNaWJQNE5yc0ZKdC0wcVZhNl9lczBZMVVBVksw?oc=5",
-      "date": "2026-10-16T06:51:43.000Z",
-      "lang": "en",
-      "titleKo": "이라크의 안정으로 가는 어려운 길에 대해 알자이디 배럭 - ASHARQ Al-Awsat English",
-      "count": 1,
-      "sources": [
-        "ASHARQ AL-AWSAT English"
-      ],
-      "related": [],
-      "tag": "기타",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -690,27 +1044,17 @@
       }
     },
     {
-      "title": "CF hails completion of Iraq's government",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Iraq/CF-hails-completion-of-Iraq-s-government",
-      "date": "2026-10-15T21:32:40.000Z",
+      "title": "Iraq rounds out Al Zaidi’s cabinet, mulls more ministries despite ballooning payroll",
+      "source": "EnterpriseAM",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUThndHA2N0xNRklMN1dFWnNjeHFTNVpGNU81Zm91LUVqdGY1Sng1M0Y0cjR4dTlOTmpFSUs4UHk0RlNPaXpTR0ZJTE9xanNIZFVDZm15blJGRkJJQkNKUVM2OUlxd01UY05uOUY2aXQ2RHpHZnR0UjVEUXFrdlVyV3NxcWJLRnFEMHRXQ2ZxcmpRenJZN3ZwdjdlVXFtNVFHRWgxUUxZMG4yblQ0SEhWTUhxaTFCdUM3LUtObV9iWXpvTWpZYWlR?oc=5",
+      "date": "2026-10-15T21:00:00.000Z",
       "lang": "en",
-      "titleKo": "CF, 이라크 정부 완공 축하",
-      "url": "https://shafaq.com/en/Iraq/CF-hails-completion-of-Iraq-s-government",
-      "body": "Shafaq News- Baghdad The Coordination Framework (CF), an alliance of predominantly Shiite political parties, welcomed the completion of Iraq's cabinet on Thursday. In a statement, the CF said th\nIn a statement, the CF said the completed cabinet represents an important step toward strengthening political stability, improving the functioning of state institutions, and implementing the government's program.\nOn October 15, Prime Minister Ali Al-Zaidi said the appointment of three deputy prime ministers and approval of 11 cabinet nominees would strengthen his government's ability to address economic and security challenges and fulfill its commitments.\nThe parliamentary vote took place during a session chaired by Speaker Haibet Al-Halbousi and attended by 261 lawmakers.",
-      "bodyKo": "샤파크 뉴스- 바그다드 주로 시아파 정당들의 동맹인 조정 프레임워크 (CF) 는 목요일 이라크 내각의 완성을 환영했다. 성명서에서 CF는 다음과 같이 말했습니다.\nCF는 성명에서 완성된 내각은 정치적 안정성 강화, 국가 기관의 기능 개선, 정부의 프로그램 시행을 위한 중요한 단계를 나타낸다고 말했다.\n10월 15일, 알리 알자이디 총리는 3명의 부총리 임명과 11명의 내각 지명자의 승인이 경제 및 안보 문제를 해결하고 약속을 이행하는 정부의 능력을 강화할 것이라고 말했다.\n의회 투표는 하이베트 알할부시 (Haibet Al-Halbousi) 의장이 의장을 맡고 261명의 의원이 참석한 세션에서 진행되었다.",
-      "tried": true,
-      "count": 2,
+      "titleKo": "이라크는 알 자이디의 내각을 반올림하고, 풍선 급여에도 불구하고 더 많은 부처를 무효화합니다.",
+      "count": 1,
       "sources": [
-        "شفق نيوز"
+        "EnterpriseAM"
       ],
-      "related": [
-        {
-          "titleKo": "CF, 이라크 정부 완공 축하",
-          "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBMQ2E3VEwwNDNMSVZJRW8ybV9COFIxdE5fTGpaZFFPNlN3aEQyeFQ4NXBldWozNUJLejNuTUtxYVBidjNQOTV6RzVOWXdBbGpBejBUNnZ3YVF3a0RPejV6Ym5WUFc0Q1E3S1h3S3ZMdkNtUEVZSGc?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "정치·선거",
       "impact": {
         "lv": "g",
@@ -718,27 +1062,6 @@
         "act": "",
         "place": "",
         "km": null
-      }
-    },
-    {
-      "title": "Only Iraqis may solve Sinjar security issue: PM Zaidi spox",
-      "source": "The New Region",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBIRklnOUwxZnpqV2t1dlZqN0c3NUxXT0FzQ3FtQmNFUFhQam1QeHRKLS1RanRWUkJqQ3pvckg1c2ctbG1wOFBzSGc2Yw?oc=5",
-      "date": "2026-10-15T21:11:51.000Z",
-      "lang": "en",
-      "titleKo": "이라크인만 Sinjar 보안 문제를 해결할 수 있습니다: PM Zaidi SPOX",
-      "count": 1,
-      "sources": [
-        "The New Region"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "신자르",
-        "km": 429
       }
     },
     {
@@ -840,247 +1163,19 @@
     {
       "title": "Al-Zaidi vows faster reforms after Iraq Cabinet vote",
       "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Iraq/Al-Zaidi-vows-faster-reforms-after-Iraq-Cabinet-vote",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQaW05b3Y5N3VjSExmUG9MOHAtVF8tV29pNzk1c1B2MGp4bU4wRDY1Zmt4TVBUU3E3VVBuYXdfdVljRlFDVjljQ2ZRazBkUTdTRklTLUFvaDhla2ltMWpCT2xhY0lhbS1aLUhrOE4tdTMwNmFoMkNlUXc5eWFCc3d5U01MZkt5UQ?oc=5",
       "date": "2026-10-15T19:38:30.000Z",
       "lang": "en",
-      "titleKo": "Al-Zaidi는 이라크 내각 투표 후 더 빠른 개혁을 약속합니다",
-      "url": "https://shafaq.com/en/Iraq/Al-Zaidi-vows-faster-reforms-after-Iraq-Cabinet-vote",
-      "body": "Shafaq News- BaghdadIraqi Prime Minister Ali al-Zaidi said on Thursday that the appointment of three deputy prime ministers and the approval of 11 cabinet nominees would strengthen his government's ab\nIn a statement, al-Zaidi said the government had filled vacant cabinet posts five months after taking office and would now accelerate efforts to implement its program and meet public expectations.\nHe acknowledged that the government had faced difficult domestic and regional conditions, citing economic pressures from the ongoing war and security challenges requiring heightened vigilance.\nDespite those difficulties, al-Zaidi said his administration had pursued its parliamentary-approved agenda, tackled corruption, and taken steps to strengthen Iraq's sovereignty, including ending the Global Coalition's military presence in the country.",
-      "bodyKo": "샤파크 뉴스 - 알리 알 자이디 바그다드 이라크 총리는 목요일 부총리 3명을 임명하고 내각 후보자 11명을 승인하면 정부의 역량이 강화될 것이라고 말했습니다.\n알자이디 총리는 성명을 통해 정부가 취임 후 5개월 만에 공석인 내각 직위를 충원했으며 이제 프로그램 시행과 국민 기대에 부응하기 위한 노력을 가속화할 것이라고 말했습니다.\n그는 계속되는 전쟁으로 인한 경제적 압박과 더욱 높은 경계가 필요한 안보 문제를 언급하면서 정부가 어려운 국내 및 지역 상황에 직면해 있음을 인정했습니다.\n이러한 어려움에도 불구하고 알 자이디 총리는 그의 행정부가 의회가 승인한 의제를 추구하고 부패를 척결했으며 세계연합의 이라크 주둔을 종료하는 등 이라크의 주권을 강화하기 위한 조치를 취했다고 말했습니다.",
-      "tried": true,
-      "count": 2,
+      "titleKo": "Al-Zaidi는 이라크 내각 투표 후 더 빠른 개혁을 약속합니다.",
+      "count": 1,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [
-        {
-          "titleKo": "Al-Zaidi는 이라크 내각 투표 후 더 빠른 개혁을 약속합니다.",
-          "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQaW05b3Y5N3VjSExmUG9MOHAtVF8tV29pNzk1c1B2MGp4bU4wRDY1Zmt4TVBUU3E3VVBuYXdfdVljRlFDVjljQ2ZRazBkUTdTRklTLUFvaDhla2ltMWpCT2xhY0lhbS1aLUhrOE4tdTMwNmFoMkNlUXc5eWFCc3d5U01MZkt5UQ?oc=5"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraqi PM Vows to Implement Government Program After Iraqi Cabinet Is Completed",
-      "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/en/story/946389/iraqi-pm-vows-to-implement-government-program-after-iraqi-cabinet-is-completed",
-      "date": "2026-10-15T19:29:00.000Z",
-      "lang": "en",
-      "titleKo": "이라크 총리, 이라크 내각 완성 후 정부 프로그램 시행 약속",
-      "url": "https://www.kurdistan24.net/en/story/946389/iraqi-pm-vows-to-implement-government-program-after-iraqi-cabinet-is-completed",
-      "body": "In a statement following Thursday’s parliamentary session, al-Zaidi said the completion of the cabinet would allow the government to move forward with swift action and serious work, five months after its formation.\nERBIL (Kurdistan24) &mdash; Iraqi Prime Minister Ali al-Zaidi said on Thursday that his government had operated under highly complex domestic and international circumstances over the past five months, reaffirming his commitment to implementing its program and meeting citizens&rsquo; demands after parliament completed the cabinet.\nIn a statement following Thursday&rsquo;s parliamentary session, al-Zaidi said the completion of the cabinet would allow the government to move forward with swift action and serious work, five months after its formation.\nHe reiterated his commitment to the Iraqi people to implement the government&rsquo;s program and fulfill their demands.",
-      "bodyKo": "알 자이디 총리는 목요일 국회 회의 후 성명을 통해 내각이 완성되면 정부가 출범 5개월 만에 신속한 조치와 진지한 업무를 추진할 수 있게 될 것이라고 말했습니다.\n에르빌(Kurdistan24) - 알리 알 자이디 이라크 총리는 목요일 자신의 정부가 지난 5개월 동안 매우 복잡한 국내 및 국제 상황에서 운영됐다고 말하면서 의회가 내각을 마친 후 프로그램을 이행하고 시민들의 요구를 충족시키겠다는 자신의 의지를 재확인했습니다.\n알 자이디 총리는 목요일 국회 회의 후 성명을 통해 내각이 완성되면 정부가 출범 5개월 만에 신속한 조치와 진지한 업무를 추진할 수 있게 될 것이라고 말했습니다.\n그는 이라크 국민이 정부 프로그램을 이행하고 그들의 요구를 이행하겠다는 약속을 다시 한 번 강조했습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Kurdistan24"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "에르빌",
-        "km": 338
-      }
-    },
-    {
-      "title": "أكتوبر 15, 2026",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1yemI1eGFMd0JHREZtNndyampRd2ozalpORmdFNFNESnc0aVpmcTI3NzQtNXhDQk1oeUhkNDFNRUY3NzZaVzFYUDlocF9pWDg?oc=5",
-      "date": "2026-10-15T18:47:41.000Z",
-      "lang": "ar",
-      "titleKo": "2026년 10월 15일",
-      "count": 1,
-      "sources": [
-        "وزارة الخارجية العراقية"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "미 재무부, 이란 정권에 금융서비스 제공한 이라크 은행 등 제재",
-      "source": "뉴스핌",
-      "link": "https://www.newspim.com/news/view/20261016000027",
-      "date": "2026-10-15T18:18:00.000Z",
-      "lang": "ko",
-      "titleKo": "미 재무부, 이란 정권에 금융서비스 제공한 이라크 은행 등 제재",
-      "url": "https://www.newspim.com/news/view/20261016000027",
-      "body": "[워싱턴=뉴스핌] 이상민 특파원 = 미국 재무부가 15일(현지시간) 이란 정권에 금융서비스를 제공한 이라크 은행 등을 제재했다.지난 8월 재무부가 시작한 이란 정권의 경제적 고립을 목표로 하는\n뉴스핌을 선호 출처로 추가 가 가 프린트 ※ 본문 글자 크기 조정 가 더 작게 가 작게 가 보통 가 크게 가 더 크게 닫기 ※ 번역할 언어 선택 -- 선택 -- 닫기 AI 핵심 요약 beta 분석 중... 미 재무부는 15일 이란에 금융서비스를 제공한 이라크 은행 등을 제재했다. 제재 대상에는 이란 역외은행과 석유 수익 세탁에 관여한 기업들도 포함됐다. 재무부는 이란의 종교 자선금 악용과 비공식 송금 경로에 금융기관의 주의를 촉구했다. ! AI가 자동 생성한 요약으로 정확하지 않을 수 있어요.\n지난 8월 재무부가 시작한 이란 정권의 경제적 고립을 목표로 하는 '경제적 왕따 작전(Operation Economic Outcast)'이 계속되고 있는 양상이다.\n재무부는 이날 이란 정권과 이란 연계 민병대에 미국 달러화 접근 및 금융서비스를 제공해 온 이라크 국제개발투자금융은행(IDB)을 제재 대상으로 지정했다.\nIDB는 미국의 제재로 문을 닫은 이란 멜리 은행의 자본을 넘겨받아 사업을 운영하면서 발생한 이익을 매달 미국 달러화로 이란에 송금해 온 것으로 알려졌다.\n재무부는 또한 이란 중앙은행과 최고국가안보회의의 승인을 받아 자유무역지대에서 운영되는 이란 역외은행인 '자지레 국제은행'과 '차바하르 국제역외은행'을 제재했다. 이들 은행은 대이란 제재 회피를 지원한 것으로 전해졌다.\n재무부는 이어 두바이에 거주하는 이란 석유 중개인 '사예드 루홀라 라자비'가 소유하거나 통제하는 이란 소재 두 기업도 제재 대상으로 지정했다. 이 기업들은 라자비의 네트워크를 통해 홍콩을 거쳐 아랍에미리트와 튀르키예로 자금을 이동시키고, 이를 금과 현금으로 바꾼 뒤 이란의 마한항공편으로 이란과 해외 이란 연계 무장세력에 밀반입하는 방식으로 석유 수익금을 세탁했다고 재무부는 밝혔다.",
-      "bodyKo": "[워싱턴=뉴스핌] 이상민 특파원 = 미국 재무부가 15일(현지시간) 이란 정권에 금융서비스를 제공한 이라크 은행 등을 제재했다.지난 8월 재무부가 시작한 이란 정권의 경제적 고립을 목표로 하는\n뉴스핌을 선호 출처로 추가 가 가 프린트 ※ 본문 글자 크기 조정 가 더 작게 가 작게 가 보통 가 크게 가 더 크게 닫기 ※ 번역할 언어 선택 -- 선택 -- 닫기 AI 핵심 요약 beta 분석 중... 미 재무부는 15일 이란에 금융서비스를 제공한 이라크 은행 등을 제재했다. 제재 대상에는 이란 역외은행과 석유 수익 세탁에 관여한 기업들도 포함됐다. 재무부는 이란의 종교 자선금 악용과 비공식 송금 경로에 금융기관의 주의를 촉구했다. ! AI가 자동 생성한 요약으로 정확하지 않을 수 있어요.\n지난 8월 재무부가 시작한 이란 정권의 경제적 고립을 목표로 하는 '경제적 왕따 작전(Operation Economic Outcast)'이 계속되고 있는 양상이다.\n재무부는 이날 이란 정권과 이란 연계 민병대에 미국 달러화 접근 및 금융서비스를 제공해 온 이라크 국제개발투자금융은행(IDB)을 제재 대상으로 지정했다.\nIDB는 미국의 제재로 문을 닫은 이란 멜리 은행의 자본을 넘겨받아 사업을 운영하면서 발생한 이익을 매달 미국 달러화로 이란에 송금해 온 것으로 알려졌다.\n재무부는 또한 이란 중앙은행과 최고국가안보회의의 승인을 받아 자유무역지대에서 운영되는 이란 역외은행인 '자지레 국제은행'과 '차바하르 국제역외은행'을 제재했다. 이들 은행은 대이란 제재 회피를 지원한 것으로 전해졌다.\n재무부는 이어 두바이에 거주하는 이란 석유 중개인 '사예드 루홀라 라자비'가 소유하거나 통제하는 이란 소재 두 기업도 제재 대상으로 지정했다. 이 기업들은 라자비의 네트워크를 통해 홍콩을 거쳐 아랍에미리트와 튀르키예로 자금을 이동시키고, 이를 금과 현금으로 바꾼 뒤 이란의 마한항공편으로 이란과 해외 이란 연계 무장세력에 밀반입하는 방식으로 석유 수익금을 세탁했다고 재무부는 밝혔다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "뉴스핌"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Several Iraqi Parliamentary Blocs Boycott Session Over Proposed New Ministries",
-      "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/en/story/946372/iraqi-parliamentary-blocs-boycott-session-over-proposed-new-ministries",
-      "date": "2026-10-15T18:13:16.000Z",
-      "lang": "en",
-      "titleKo": "몇몇 이라크 의회 블록은 제안된 새로운 부처에 대한 보이콧 세션을 진행했습니다.",
-      "url": "https://www.kurdistan24.net/en/story/946372/iraqi-parliamentary-blocs-boycott-session-over-proposed-new-ministries",
-      "body": "At a joint press conference, the blocs categorically rejected the proposed positions, arguing that they were designed to satisfy political parties and distribute government posts along partisan lines rather than serve the public interest.\nERBIL (Kurdistan24) &mdash; Several Iraqi parliamentary blocs on Thursday boycotted a session intended to complete Prime Minister Ali al-Zaidi&rsquo;s cabinet, protesting plans to establish new ministries and ministerial positions that they said would reinforce political quotas and waste public funds.\nThe blocs described the proposals as a departure from the government&rsquo;s priorities and urged political parties to act responsibly, reduce public expenditure, and safeguard state finances.\nThey stressed that Iraq&rsquo;s public funds and resources should not be treated as assets to be divided among political factions, but as a shared national responsibility.",
-      "bodyKo": "공동 기자회견에서 블록들은 제안된 입장이 공익에 봉사하기보다는 정당을 만족시키고 당파적 노선에 따라 정부 직책을 분배하기 위해 고안되었다고 주장하면서 제안된 입장을 단호히 거부했습니다.\n에르빌(Kurdistan24) — 목요일 몇몇 이라크 의회 블록은 알리 알 자이디 총리의 내각을 완성하기 위한 회의를 보이콧했으며, 정치적 할당량을 강화하고 공공 자금을 낭비할 것이라고 말한 새로운 부처와 장관직을 설립하려는 계획에 항의했습니다.\n블록들은 이 제안이 정부의 우선순위에서 벗어난 것이라고 설명하고 정당들이 책임감 있게 행동하고, 공공 지출을 줄이고, 주 재정을 보호할 것을 촉구했습니다.\n그들은 이라크의 공공자금과 자원이 정치 세력들 사이에 나누어지는 자산으로 취급되어서는 안 되며, 국가 공동의 책임으로 다루어져야 한다고 강조했습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Kurdistan24"
-      ],
       "related": [],
       "tag": "정치·선거",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "에르빌",
-        "km": 338
-      }
-    },
-    {
-      "title": "Air routes between Iraq and Kuwait reopen",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Security/Air-routes-between-Iraq-and-Kuwait-reopen",
-      "date": "2026-10-15T18:07:59.000Z",
-      "lang": "en",
-      "titleKo": "이라크와 쿠웨이트 간 항공 노선 재개",
-      "url": "https://shafaq.com/en/Security/Air-routes-between-Iraq-and-Kuwait-reopen",
-      "body": "Shafaq News- Baghdad Air routes between Iraq and Kuwait reopened on Thursday after being suspended because of security developments and regional tensions, Iraq's Transport Ministry said. The route\nThe routes reopened at 11:00 GMT (14:00 Baghdad Time) under operating arrangements agreed with Kuwait, Qatar, Saudi Arabia, Bahrain and the United Arab Emirates, and supervised by the International Civil Aviation Organization (ICAO).\nFlights will follow set routes and altitudes to keep aircraft safely separated. The arrangements will be introduced gradually and monitored, so that any technical or operational problems can be addressed with the countries involved.\nUS bases in Kuwait have been repeatedly targeted by Iranian missiles and drones since late February. In June, an Iranian drone strike forced the temporary closure of Kuwait International Airport.",
-      "bodyKo": "Shafaq News- 이라크와 쿠웨이트를 잇는 바그다드 항공 노선이 보안 상황과 지역적 긴장 때문에 운항이 중단된 후 목요일에 재개통되었다고 이라크 교통부가 밝혔습니다.\n이 노선은 쿠웨이트, 카타르, 사우디아라비아, 바레인, 아랍에미리트와 합의하고 국제민간항공기구 (ICAO) 의 감독하에 11:00 GMT (14:00 바그다드 시간) 에 재개되었습니다.\n항공편은 항공기를 안전하게 분리하기 위해 설정된 경로와 고도를 따릅니다. 관련 국가에서 기술적 또는 운영상의 문제를 해결할 수 있도록 협약이 점진적으로 도입되고 모니터링될 것입니다.\n쿠웨이트의 미군 기지는 지난 2월 말부터 이란 미사일과 드론의 공격 대상이 되고 있다. 지난 6월 이란의 드론 공격으로 쿠웨이트 국제공항이 일시적으로 폐쇄됐다.",
-      "tried": true,
-      "count": 3,
-      "sources": [
-        "PUKmedia یەکێتیی نیشتمانیی کوردستان",
-        "شفق نيوز",
-        "Iraqi News"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크, 쿠웨이트와 항공편 노선 재개 발표",
-          "source": "PUKmedia یەکێتیی نیشتمانیی کوردستان",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBGUkVQOEF2aDNKUXFULThVTVR6eDdZeWQ5a2diaVhWZnc4NlBqd3ZiQnZ4TF9iZnhVOW81U0RYMEE1eWEwdjJJMHhNSnhYZw?oc=5"
-        },
-        {
-          "titleKo": "이라크, 쿠웨이트 간 항공 노선 공식 재개",
-          "source": "Iraqi News",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWkg0cWVQZ0NyOTR0ZWx6anhuclQ4dzhFczVRaWlXdFRSLThKZllnVU55YS1pRDRpQ1hBVERkN0hGNHdUUkxQZGdFSWpuSTFEc2VpYVlsTG9PT1lHME4wZ3B2QUFGbC1FazB0NXdTUURmeDBiRWVPUzlvc0NXU1JVdDZ6VTdzTjhtbFE?oc=5"
-        }
-      ],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "الأحد المقبل.. العراق يطلق أول محطة أرضية للأقمار الاصطناعية في بغداد",
-      "source": "وكالة المرسى نيوز",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB0ZWhVM1pPZmFUVC1lamNZT2ZuS3IwVWp1YjRoNDZ3enVGZGdnZ0F4cjZvN1RiaWVRb3JmVXFYTWlfQS1PSERCQ0pyQ0lzb3JxMUE?oc=5",
-      "date": "2026-10-15T17:37:13.000Z",
-      "lang": "ar",
-      "titleKo": "다음 주 일요일, 이라크는 바그다드의 첫 번째 위성 지상국을 가동할 예정입니다.",
-      "count": 1,
-      "sources": [
-        "وكالة المرسى نيوز"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraqi commander killed by Islamic State following Iraqi airstrikes against the group",
-      "source": "The Long War Journal",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUWFuS1hLakhUZUlnUS1IdVZmcDZsdkExcWd5SERsVS1TUTBzNnc5UGFCNWxKVFBqY2VQN0hXMzZzQ3dXaEN4QngzT2JFdTRSM0RZTEg0Q01nVzFDQzZkdXhhNlp4aTdXdWdzN1lSR0VzcjVLN3p5eXJEZS1nX1otTnNkYnNZMnVodUZBN21IdHR5V2dRYUFfaDUtTXpHSGdBa29mV1QyaWhXc0c3U3VkQkloc1ZBZ1hRT1pKTFFVX1p0a3BCMmJZeWQzcUE3MnJJS0E?oc=5",
-      "date": "2026-10-15T17:29:38.000Z",
-      "lang": "en",
-      "titleKo": "이슬람국가(IS)에 대한 이라크 공습으로 이라크 사령관 사망",
-      "count": 1,
-      "sources": [
-        "The Long War Journal"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 사건 — 발생 지역 확인 필요",
-        "act": "바그다드 인근이면 보안팀 확인",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "\"المركزي\" العراقي يعلن عن آلية جديدة لتوفير الدولار للمسافرين",
-      "source": "الحدث",
-      "link": "https://news.google.com/rss/articles/CBMi9gNBVV95cUxQQkJWSzlINkw4cy1CVXdqaks3S3RLTnU4RGxMd0N2VWprZ1NGQkRkMENieUw1VHRmOUFyeUd6UTR1YnNOdU1MVGloajB5MzVEejhJRm5mcEJnc2t4c2R0b05jbWpmbjJEV0o4WldkOFVOY3VaaHM3VFpUSzJsR0FtMG9yUFJfQmxNWkc0d0ZuUEd0QTU3MjJfNzZZQXFJcGZuczhqV0xZWFljV2xlNHRzSVd3Z0hkalh0YTZYOENpWUt6ZklhMVUxeHVuWVR1V2stdzQyX3hSMnFTWGFIQ1NQMTFjeDUtV2RQdEFmNTdkanhFeElwdlRqcTNnY3JhWDgzMzVKc1hycWpXMDFqaVM1U0o4Zl90MFYySHVJN0dvcm9BOV9QQS1KM3pHWHNsVWR6MVVOdm14TzJOUklCcWpMdnQ1NTdaZWtLMUl2WnF4dEczZUdiX0owdFk3N0pPOFZDOXE5bFJvUmI1TWU0c2hGV1JwZlpGTGF0TGROdlNVRnRhTlpuQnV1YlFDdkh5ZXl1aFhWelFRSUlqbG1zd09pS0p4VHBOQVVNdTBac3J1SFpOUkk2VXhLbGVaYVZnVzdhRTdMZUNHa2pXenBpRWhoSlk2Z3VGQzZ4SktMMUxOTUNVeWI1TFZWUGw2SUppR19LMXlhblN30gGPBEFVX3lxTFBGNFpPMnltbHJfM1FhUUphb012d2FFbVgtb0pTc1hhUFNKSXRTQ005M0k2dXZhQU5jU3lFTS1rV1VCVURIU3l0dXh3Y0twYUtQOXBBMXJPUm9oeHNwb3ROa0xWYUtIX0JnTmVYcjZ3RmkzVEc2ZnhCeVo2bzdtTlZhNk1fWFpnVTFEeGxwMDg3M1d4eEVWd2syaHNGRTFsRy1IMnhuV3FFYWxYVUMzRzE1dlhfd0p4VVA2T0NKdnI4Y0RHTW1PQXhOLXh2NWgwQy1vYW54aE4zR2JYSXJOV0RCT19ZOVRqaDkzVElJM1NPMDQ4X3l2RmNyVHNXU2JQQ1hxbU1nQVdrMmJ6eWlmdE4xWGVHYlQ0bEZScVF2UFMzQWFPZlRwVlYwNEprQXlvNlRMZlE4YWxMOE50NWZMX3k2ZXg2c2ZzUTl0dmFrSERxTDVheEt4WjJRRG9NUGtuajZCekljVVNhRWVtU0VoS1FoVFFGZU90aGF2UlNDakI5amtpdHpXU2RXUjY3OXZyMFdPSE1JdmtnWldfZDgxZmJSdzBMUXF6bF9xaXcyQ0pESXVWdk5NZHhPNC0xR0k3Y2RYT1pXbEtnSFdHTjJPd1pmOUVjVDFUVGRSdFpyU2V4S1Z1eHk4MUNxSDJ3WUtCX1pPdWxtMGFWTkQ5TmNxRVYtUUt4aVgyNklmc3ZNSGpN?oc=5",
-      "date": "2026-10-15T17:08:00.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 중앙은행은 여행자에게 달러를 제공하는 새로운 메커니즘을 발표했습니다.",
-      "count": 1,
-      "sources": [
-        "الحدث"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "من 18 أكتوبر.. العراق ينظم مخصصات الدولار للمسافرين",
-      "source": "الجريدة العقارية",
-      "link": "https://news.google.com/rss/articles/CBMiqwNBVV95cUxQUGVtdTdlejNNeENyZ1hUcHJOajVxd2RiZlJkY2dJSUs1RWxjUlJKOXJMbks4Q2xUZjdQYmlNSF9PNlZpb1ZITlVyVnBqcV9jYkdPQ2N4YmFFcURGaFI2ODBpbVRtdm1ZcUhad2NiQXdFZTNlQjZqZEpZTW80T3RTQWNOWWJ5eWN1V2FNbHowMWJDN0VOaTRLaERTZlBHdkh2QlZtN1JSNHlicUJyUmUxdVoteDhhSFdQXzAwUEhjMG1yUUJGd0lhVFQzb2o3S25nWEszcHpPU3lIOGxjbVIxMDc4TzI1Q2ZzZGRFM2pScUY3aEd6RF82Qk5YaWlUSV9GanR0OGpmY0piMVdDV0JkVkF0UGVPZTdOTDFNd0Rfd0hMMVdNYkR1MFlhY0E4X1Y3dDBGNTMwQXN3bk1qV3lJdjFnYnZLcnhXdHJ4Y2c3V0FMS0YtVl8zXzVXbjJSeVBxYXJ4QU5HaDZ5c2ZoRTllbDk4ZmRrRFE3U0lUSFBNUnZZR2VnTkFCOWsybmQxYlpMWHZBSTBhWmxVTDVJWFlrUEc4ZkpwQ1lJOGlZ?oc=5",
-      "date": "2026-10-15T17:07:02.000Z",
-      "lang": "ar",
-      "titleKo": "10월 18일부터…이라크, 여행자 달러 할당 규제",
-      "count": 1,
-      "sources": [
-        "الجريدة العقارية"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
         "act": "",
         "place": "",
         "km": null
