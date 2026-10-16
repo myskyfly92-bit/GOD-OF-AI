@@ -10110,7 +10110,7 @@ const lightInk = (function () {
 (function themeToggle() {
   const btn = document.getElementById("themeBtn"); if (!btn) return;
   const root = document.documentElement;
-  const draw = () => { const light = root.getAttribute("data-theme") === "light"; btn.textContent = light ? "🌙 어둡게" : "☀️ 밝게"; btn.setAttribute("aria-pressed", light); };
+  const draw = () => { const light = root.getAttribute("data-theme") === "light"; btn.textContent = light ? "🌙 다크 모드" : "☀️ 라이트 모드"; btn.setAttribute("aria-pressed", light); };
   btn.addEventListener("click", () => {
     const light = root.getAttribute("data-theme") !== "light";
     if (light) root.setAttribute("data-theme", "light"); else root.removeAttribute("data-theme");
