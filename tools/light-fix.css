@@ -59,3 +59,13 @@ html[data-theme="light"] .flap {
   box-shadow: inset 0 0 0 1px #d6dee7, 0 0.04em 0.1em rgba(16, 32, 48, .12);
 }
 html[data-theme="light"] .flap::after { background: rgba(16, 32, 48, .12); }
+
+/* 달력(라이트): 최고/최저 기온은 빨강·파랑, 현장 일정은 보라로 공휴일·소화기 점검(주황)과 구분 */
+html[data-theme="light"] .holiday-temp { color: #8a96a3; }
+html[data-theme="light"] .holiday-temp-max { color: #d9363e; }
+html[data-theme="light"] .holiday-temp-min { color: #1f6fd6; }
+html[data-theme="light"] .holiday-dot-kr { background: #e5484d; }
+html[data-theme="light"] .holiday-dot-iq { background: #0f9bb5; }
+html[data-theme="light"] .holiday-dot-ev { background: #7c4dff; }
+html[data-theme="light"] .holiday-list .holiday-list-ev { color: #6a3fd9; }
+html[data-theme="light"] .holiday-cell.is-today { background: #dff4f1; box-shadow: inset 0 0 0 1px #9fd9d1; }
