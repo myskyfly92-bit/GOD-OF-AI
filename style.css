@@ -4660,3 +4660,91 @@ body.bg-reveal .set-item.bg-peek-btn { color: var(--cyan); }
 @media (max-width: 768px) { .set-wrap { display: none; } }
 /* 설정 메뉴가 열려 있을 때는 달력·배너보다 위로 */
 .tabbar-right-group:has(.set-menu:not([hidden])) { z-index: 1200; }
+
+/* 🧘 2분 스트레칭 팝업 (stretch.js) */
+.st-bg { position: fixed; inset: 0; z-index: 2600; background: rgba(3,6,10,.68); backdrop-filter: blur(3px); display: flex; align-items: center; justify-content: center; padding: 20px; animation: ntcIn .3s ease-out; }
+.st-box { position: relative; width: min(780px, 100%); max-height: calc(100vh - 40px); overflow: auto; background: var(--panel); border: 1px solid var(--border); border-radius: 18px; padding: 20px 22px 14px; box-shadow: 0 24px 60px rgba(0,0,0,.5); color: var(--text); font-family: var(--font-body); }
+.st-x { position: absolute; top: 12px; right: 12px; width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border); background: transparent; color: var(--text-muted); font-size: 15px; cursor: pointer; }
+.st-x:hover { color: var(--text); border-color: var(--cyan); }
+.st-kicker { font-size: 19px; font-weight: 800; color: var(--cyan); }
+.st-sub { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+.st-main { display: grid; grid-template-columns: 300px 1fr; gap: 22px; margin-top: 14px; align-items: center; }
+.st-stage { width: 300px; height: 300px; border-radius: 16px; background: radial-gradient(circle at 50% 40%, rgba(53,208,192,.16), rgba(53,208,192,.04) 70%); border: 1px solid var(--border-soft); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.st-fig { width: 100%; height: 100%; display: block; }
+.st-step { font-family: var(--font-mono); font-size: 12.5px; font-weight: 700; color: var(--text-dim); letter-spacing: .06em; }
+.st-title { margin: 4px 0 6px; font-size: 24px; font-weight: 800; color: var(--text); }
+.st-part { display: inline-block; font-size: 12.5px; font-weight: 700; color: #ff9a8a; background: rgba(255,120,100,.12); border: 1px solid rgba(255,120,100,.35); border-radius: 999px; padding: 2px 10px; }
+.st-desc { margin: 12px 0 8px; font-size: 15px; line-height: 1.65; color: var(--text); word-break: keep-all; }
+.st-rep { font-size: 14px; font-weight: 700; color: var(--amber); }
+.st-ctrl { display: flex; align-items: center; gap: 8px; margin-top: 16px; }
+.st-ring { position: relative; width: 52px; height: 52px; margin-right: 6px; }
+.st-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.st-ring circle { fill: none; stroke-width: 4; }
+.st-ring-bg { stroke: var(--border); }
+.st-ring-fg { stroke: var(--cyan); stroke-linecap: round; stroke-dasharray: 119.4; transition: stroke-dashoffset 1s linear; }
+.st-sec { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 16px; font-weight: 800; color: var(--text); }
+.st-btn { min-width: 40px; height: 36px; border-radius: 10px; border: 1px solid var(--border); background: rgba(255,255,255,.05); color: var(--text); font: inherit; font-size: 14px; cursor: pointer; padding: 0 10px; }
+.st-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+.st-btn.wide { background: var(--cyan); color: var(--bg); border-color: var(--cyan); font-weight: 700; }
+.st-dots { display: flex; justify-content: center; gap: 8px; margin: 16px 0 10px; }
+.st-dots button { width: 28px; height: 6px; border-radius: 3px; border: 0; padding: 0; cursor: pointer; background: var(--border); }
+.st-dots button.done { background: rgba(53,208,192,.45); }
+.st-dots button.on { background: var(--cyan); }
+.st-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; padding-top: 10px; border-top: 1px solid var(--border-soft); font-size: 12.5px; color: var(--text-muted); }
+.st-auto { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; white-space: nowrap; }
+.st-auto input { accent-color: var(--cyan); }
+.st-fin { font-size: 110px; animation: stPop .6s ease-out; }
+.st-again { font: inherit; font-size: 13.5px; font-weight: 700; border-radius: 10px; border: 1px solid var(--cyan); color: var(--cyan); background: transparent; padding: 6px 14px; cursor: pointer; }
+.st-bg.fin .st-ctrl { display: none; }
+@keyframes stPop { 0% { transform: scale(.3); opacity: 0; } 70% { transform: scale(1.12); } 100% { transform: scale(1); opacity: 1; } }
+@media (max-width: 680px) { .st-main { grid-template-columns: 1fr; } .st-stage { width: 100%; height: 240px; } }
+
+/* 사람 그림 동작 — 기본(쉬는) 자세 */
+.st-fig .st-ua-l { transform: rotate(14deg); } .st-fig .st-fa-l { transform: rotate(-30deg); }
+.st-fig .st-ua-r { transform: rotate(-14deg); } .st-fig .st-fa-r { transform: rotate(30deg); }
+.st-fig .st-hot { fill: rgba(255,90,80,.22); stroke: rgba(255,90,80,.75); stroke-width: 1.5; stroke-dasharray: 3 3; animation: stHot 1.6s ease-in-out infinite; }
+.st-fig.paused * { animation-play-state: paused !important; }
+@keyframes stHot { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+/* 1 목 옆 */
+.st-ex1 .st-head { animation: stNeck 8s ease-in-out infinite; }
+@keyframes stNeck { 0%,100% { transform: rotate(0); } 12%,42% { transform: rotate(-20deg); } 50% { transform: rotate(0); } 62%,92% { transform: rotate(20deg); } }
+/* 2 뒷목 (깍지 끼고 고개 숙이기) */
+.st-ex2 .st-ua-l { transform: rotate(150deg); } .st-ex2 .st-fa-l { transform: rotate(100deg); }
+.st-ex2 .st-ua-r { transform: rotate(-150deg); } .st-ex2 .st-fa-r { transform: rotate(-100deg); }
+.st-ex2 .st-head { animation: stNod 6s ease-in-out infinite; }
+.st-ex2 .st-face { animation: stNodF 6s ease-in-out infinite; }
+@keyframes stNod { 0%,100% { transform: translateY(0); } 20%,80% { transform: translateY(5px); } }
+@keyframes stNodF { 0%,100% { transform: translateY(0); } 20%,80% { transform: translateY(6px) scaleY(.9); } }
+/* 3 어깨 으쓱 → 툭 */
+.st-ex3 .st-sh { animation: stShrug 4s infinite; }
+@keyframes stShrug { 0% { transform: translateY(0); animation-timing-function: ease-out; } 25%,62% { transform: translateY(-11px); animation-timing-function: ease-in; } 70%,100% { transform: translateY(0); } }
+/* 4 가슴 펴기 W */
+.st-ex4 .st-ua-l { animation: stWuL 5s ease-in-out infinite; } .st-ex4 .st-fa-l { animation: stWfL 5s ease-in-out infinite; }
+.st-ex4 .st-ua-r { animation: stWuR 5s ease-in-out infinite; } .st-ex4 .st-fa-r { animation: stWfR 5s ease-in-out infinite; }
+.st-ex4 .st-head { animation: stLift 5s ease-in-out infinite; }
+@keyframes stWuL { 0%,100% { transform: rotate(105deg); } 40%,75% { transform: rotate(70deg); } }
+@keyframes stWfL { 0%,100% { transform: rotate(75deg); } 40%,75% { transform: rotate(110deg); } }
+@keyframes stWuR { 0%,100% { transform: rotate(-105deg); } 40%,75% { transform: rotate(-70deg); } }
+@keyframes stWfR { 0%,100% { transform: rotate(-75deg); } 40%,75% { transform: rotate(-110deg); } }
+@keyframes stLift { 0%,100% { transform: translateY(0); } 40%,75% { transform: translateY(-2px); } }
+/* 5 옆구리 기지개 */
+.st-ex5 .st-ua-l { transform: rotate(165deg); } .st-ex5 .st-fa-l { transform: rotate(62deg); }
+.st-ex5 .st-ua-r { transform: rotate(-165deg); } .st-ex5 .st-fa-r { transform: rotate(-62deg); }
+.st-ex5 .st-up { animation: stSide 8s ease-in-out infinite; }
+@keyframes stSide { 0%,100% { transform: rotate(0); } 14%,42% { transform: rotate(-13deg); } 50% { transform: rotate(0); } 64%,92% { transform: rotate(13deg); } }
+/* 6 손목 젖히기 */
+.st-ex6 .st-ua-r { transform: rotate(-92deg); } .st-ex6 .st-fa-r { transform: rotate(0deg); }
+.st-ex6 .st-hand-r { animation: stWrist 6s ease-in-out infinite; }
+@keyframes stWrist { 0%,100% { transform: rotate(0); } 15%,45% { transform: rotate(-75deg); } 55% { transform: rotate(0); } 70%,95% { transform: rotate(75deg); } }
+
+/* 50분 알림 카드 (왼쪽 아래) */
+.st-toast { position: fixed; left: 18px; bottom: 70px; z-index: 1300; display: flex; gap: 12px; align-items: center; width: 410px; max-width: calc(100vw - 36px); padding: 12px 14px 12px 10px; border-radius: 16px; background: var(--panel); border: 1px solid var(--cyan); box-shadow: 0 16px 40px rgba(0,0,0,.45); color: var(--text); font-family: var(--font-body); animation: stToastIn .45s cubic-bezier(.2,.9,.3,1.2); }
+@keyframes stToastIn { from { transform: translateY(30px); opacity: 0; } to { transform: none; opacity: 1; } }
+.st-toast-fig { flex: 0 0 92px; height: 92px; border-radius: 12px; background: rgba(53,208,192,.1); overflow: hidden; }
+.st-toast-txt { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.st-toast-txt b { font-size: 15px; color: var(--cyan); }
+.st-toast-txt span { font-size: 13px; color: var(--text-muted); line-height: 1.45; word-break: keep-all; }
+.st-toast-btns { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+.st-toast-btns button { font: inherit; font-size: 12px; font-weight: 600; border-radius: 8px; padding: 5px 8px; white-space: nowrap; cursor: pointer; border: 1px solid var(--border); background: transparent; color: var(--text-muted); }
+.st-toast-btns .go { background: var(--cyan); border-color: var(--cyan); color: var(--bg); font-weight: 700; }
+.st-toast-btns button:hover { border-color: var(--cyan); }

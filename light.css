@@ -456,6 +456,12 @@ html[data-theme="light"] :is(.topbar, .mascot-bubble, .vc-win, .vc-pop, .desk-ti
 :where(html[data-theme="light"]) .set-menu { box-shadow: 0 14px 36px rgba(0,0,0,0.135); }
 :where(html[data-theme="light"]) .set-seg { background: rgba(20,40,60,0.057); }
 :where(html[data-theme="light"]) .set-item { background: rgba(20,40,60,0.046); }
+:where(html[data-theme="light"]) .st-bg { background: rgba(252,252,253,0.68); }
+:where(html[data-theme="light"]) .st-box { box-shadow: 0 24px 60px rgba(0,0,0,0.15); }
+:where(html[data-theme="light"]) .st-part { color: #9e1600; }
+:where(html[data-theme="light"]) .st-btn { background: rgba(20,40,60,0.057); }
+:where(html[data-theme="light"]) .st-fig .st-hot { fill: rgba(194,11,0,0.22); stroke: rgba(194,11,0,0.75); }
+:where(html[data-theme="light"]) .st-toast { box-shadow: 0 16px 40px rgba(0,0,0,0.135); }
 
 /* ---- 손으로 맞춘 부분 ---- */
 /* ===== 라이트 모드 손 보정 (tools/light-fix.css → light.css 맨 끝에 붙음) ===== */
