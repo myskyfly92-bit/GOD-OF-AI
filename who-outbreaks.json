@@ -2,211 +2,118 @@
   "_readme": "이 파일은 GitHub Actions가 WHO 공식 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
   "source": "World Health Organization - Disease Outbreak News + Newsroom",
   "counts": {
-    "감염병 발생": 10,
+    "감염병 발생": 0,
     "WHO 소식": 15
   },
-  "errors": {},
+  "errors": {
+    "감염병 발생": "HTTPSConnectionPool(host='www.who.int', port=443): Read timed out. (read timeout=30)"
+  },
   "items": [
     {
       "kind": "WHO 소식",
-      "title": "Countries move to accelerate action against lead poisoning",
-      "date": "2026-10-15T07:00:36Z",
-      "summary": "The World Health Organization (WHO) is calling on countries to accelerate action to prevent lead exposure, a widespread but preventable health threat estimated to contribute to more than 3.5 million deaths globally each year and affecting hundreds of millions of children.",
-      "link": "https://www.who.int/news/item/15-10-2026-countries-move-to-accelerate-action-against-lead-poisoning",
-      "newsType": "Departmental update"
+      "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
+      "date": "2026-02-25T18:06:55Z",
+      "summary": "The Director-General of the World Health Organization, Dr Tedros Adhanom Ghebreyesus, today concluded the first day of his two-day State visit to the Hashemite Kingdom of Jordan, underscoring the strong partnership between WHO and Jordan across the areas of universal health coverage (UHC), mental health and humanitarian health action.",
+      "link": "https://www.who.int/news/item/25-02-2026-who-director-general-visits-jordan-to-recognize-strong-collaboration-on-health-system-delivery--emergency-relief-and-advancing-mental-health"
     },
     {
       "kind": "WHO 소식",
-      "title": "WHO formalize partnership with the largest organization for physicians and oncology professionals",
-      "date": "2026-10-15T06:00:00Z",
-      "summary": "WHO and the American Society of Clinical Oncology (ASCO) have signed a collaboration agreement with the joint objective of elevating quality as a priority in the global cancer agenda and supporting governments in implementing programmes that improve access and, ultimately, survival.",
-      "link": "https://www.who.int/news/item/15-10-2026-who-formalize-partnership-with-the-largest-organization-for-physicians-and-oncology-professionals",
-      "newsType": "Departmental update"
+      "title": "WHO statement on notification of withdrawal of the United States",
+      "date": "2026-01-24T20:09:49Z",
+      "summary": "WHO regrets the United States’ notification of withdrawal from WHO – a decision that makes both the United States and the world less safe. The notification of withdrawal raises issues that will be considered by the WHO Executive Board at its regular meeting starting on 2 February and by the World Health Assembly at its annual meeting in May 2026.",
+      "link": "https://www.who.int/news/item/24-01-2026-who-statement-on-notification-of-withdrawal-of-the-united-states"
     },
     {
       "kind": "WHO 소식",
-      "title": "WHO Guideline Development Group meets to review Abortion care guideline",
-      "date": "2026-10-14T12:03:06Z",
-      "summary": "The World Health Organization has transitioned the Abortion care guideline to a living guideline format to focus on targeted recommendations that address new evidence or implementation issues as they arise. To this effect, the evidence for repeat dosing for the misoprostol-alone regimen for medical abortion at less than 12 weeks will be revisited (Recommendation 27b). In line with the WHO handbook for guideline development, a subset of the Abortion care guideline’s Guideline Development Group (G",
-      "link": "https://www.who.int/news/item/14-10-2026-who-guideline-development-group-meets-to-review-abortion-care-guideline",
-      "newsType": "Departmental update"
+      "title": "Paying tribute to David Nabarro",
+      "date": "2025-07-30T08:56:15Z",
+      "summary": "Tribute to Dr David Nabarro",
+      "link": "https://www.who.int/news/item/30-07-2025-paying-tribute-to-david-nabarro"
     },
     {
       "kind": "WHO 소식",
-      "title": "WHO and partners drive improved alignment for effective NTD and supply chain delivery",
-      "date": "2026-10-13T13:22:07Z",
-      "summary": "The meetings – the NTD Supply Chain Forum (NTD-SCF), the Supply Chain Technical Support Mechanism (SCTSM) and the Global Coordination and Stewardship Committee (GCSC) – brought together global, regional and national stakeholders to review progress, address persistent supply chain challenges and consider how NTD programmes can prepare for the changing environment toward and beyond 2030.",
-      "link": "https://www.who.int/news/item/13-10-2026-who-and-partners-drive-improved-alignment-for-effective-ntd-and-supply-chain-delivery",
-      "newsType": "Departmental update"
+      "title": "Timor-Leste certified malaria-free by WHO",
+      "date": "2025-07-23T10:07:41Z",
+      "summary": "The World Health Organization (WHO) has certified Timor-Leste as malaria-free, a remarkable achievement for a country that prioritized the disease and embarked on a concerted, nation-wide response shortly after gaining independence in 2002. “WHO congratulates the people and government of Timor-Leste on this significant milestone,” said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. “Timor-Leste’s success proves that malaria can be stopped in its tracks when strong political will, smart int",
+      "link": "https://www.who.int/news/item/24-07-2025-timor-leste-certified-malaria-free-by-who"
     },
     {
       "kind": "WHO 소식",
-      "title": "WHO launches TB in pregnancy and lactation research toolkit",
-      "date": "2026-10-13T13:00:00Z",
-      "summary": "WHO has launched the TB in pregnancy and lactation research toolkit, a new online resource designed to support the earlier and optimal inclusion of pregnant and lactating women in tuberculosis (TB) research. The toolkit provides practical guidance and tools for researchers, trial sponsors, ethics committees, regulators and other stakeholders involved in TB drug and vaccine research.",
-      "link": "https://www.who.int/news/item/13-10-2026-who-launches-tb-in-pregnancy-and-lactation-research-toolkit",
-      "newsType": "Departmental update"
+      "title": "African Union and World Health Organization renew strategic partnership to drive impact and strengthen health systems in Africa",
+      "date": "2025-05-24T17:47:21Z",
+      "summary": "The World Health Organization (WHO) and the African Union (AU) Commission renewed their longstanding strategic partnership today with the signing of an updated Memorandum of Understanding (MoU) on the sidelines of the 78th World Health Assembly in Geneva. This renewed agreement reaffirms the joint commitment to advancing health security, universal health coverage, and sustainable development across the African continent at a time of unprecedented financial challenges in the global health landsca",
+      "link": "https://www.who.int/news/item/24-05-2025-world-health-organization-and-african-union-renew-strategic-partnership-to-drive-impact-and-strengthen-health-systems-in-africa"
     },
     {
       "kind": "WHO 소식",
-      "title": "WHO invites organizations worldwide to join the Together for Science and Health movement",
-      "date": "2026-10-13T08:00:39Z",
-      "summary": "a global call inviting organizations and institutions to affiliate with Together for Science and Health, a new movement to strengthen the connection between science, health and society and build trust in evidence-informed decision-making.",
-      "link": "https://www.who.int/news/item/13-10-2026-who-invites-organizations-worldwide-to-join-the-together-for-science-and-health-movement",
-      "newsType": "Departmental update"
+      "title": "WHO’s strategic engagement with philanthropies: advancing global health and resilient health systems",
+      "date": "2025-05-19T11:53:23Z",
+      "summary": "Philanthropic support plays a vital role in enabling countries to build stronger health systems and advance towards health equity. From vaccine equity and pandemic preparedness to primary health care, the contributions of philanthropic partners help drive progress across WHO’s key priorities. The importance of philanthropic support was underscored by Dr Tedros Adhanom Ghebreyesus, WHO Director-General, in his recent remarks to the Philanthropy Asia Summit, held in Singapore on 5–7 May 2025. In h",
+      "link": "https://www.who.int/news/item/19-05-2025-who-s-strategic-engagement-with-philanthropies-advancing-global-health-and-resilient-health-systems"
     },
     {
       "kind": "WHO 소식",
-      "title": "WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response",
-      "date": "2026-10-12T20:18:36Z",
-      "summary": "The Political Declaration on Pandemic Prevention, Preparedness and Response provides a strong reaffirmation of the global solidarity and commitment needed to protect future generations from the devastating impacts of pandemics.",
-      "link": "https://www.who.int/news/item/12-10-2026-who-welcomes-adoption-of-united-nations-political-declaration-on-pandemic-prevention-preparedness-and-response",
-      "newsType": "News release"
+      "title": "Strengthening public health across Lebanon with EIB Global",
+      "date": "2025-04-01T11:55:48Z",
+      "summary": "Dr Tedros Adhanom Ghebreyesus, Director-General of the World Health Organization (WHO), and Thomas Östros, Vice-President of the European Investment Bank (EIB Global), met at the EIB Group Forum in Luxembourg and signed an agreement for a €10 million grant to strengthen public health across Lebanon. The initiative will re-establish Lebanon's Central Public Health Laboratory and prioritize medication provision and healthcare support to over 50 000 people with chronic diseases like diabetes, cardi",
+      "link": "https://www.who.int/news/item/06-03-2025-strengthening-public-health-across-lebanon-with-eib-global"
     },
     {
       "kind": "WHO 소식",
-      "title": "IPC Sudan Food Insecurity and Malnutrition Alert",
-      "date": "2026-10-12T16:00:35Z",
-      "summary": "The Integrated Food Security Phase Classification (IPC), of which WHO is a member, today issued a Food Insecurity and Malnutrition Alert for Sudan.",
-      "link": "https://www.who.int/news/item/12-10-2026-ipc-sudan-food-insecurity-and-malnutrition-alert",
-      "newsType": "Note for Media"
+      "title": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
+      "date": "2025-03-11T08:49:23Z",
+      "summary": "In a three-day strategic dialogue, Belgium and WHO reviewed progress in their longstanding partnership, and agreed to further boost their collaboration on universal health coverage, health-systems strengthening and equitable access to essential vaccines, medicines and health technologies. The Belgian delegation – headed by H.E. Christophe Payot, Ambassador of Belgium to the United Nations and other international organizations in Geneva – discussed issues of strategic importance, exchanged views ",
+      "link": "https://www.who.int/news/item/11-03-2025-frank--in-depth-discussion-as-belgium-and-who-map-ahead-priorities-for-collaboration"
     },
     {
       "kind": "WHO 소식",
-      "title": "WHO Pandemic Hub sets ambitious goal to detect new outbreaks within 24 hours",
-      "date": "2026-10-12T07:48:13Z",
-      "summary": "WHO launched a new five-year strategy for its Hub for Pandemic and Epidemic Intelligence, charting a path towards a world where every country can detect and understand emerging health threats within 24 hours of their appearance by 2030.",
-      "link": "https://www.who.int/news/item/12-10-2026-who-pandemic-hub-sets-ambitious-goal-to-detect-new-outbreaks-within-24-hours",
-      "newsType": "News release"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Pneumonia of undetermined etiology - the Russian Federation",
-      "date": "2026-10-10T15:53:19Z",
-      "summary": "On 2 October 2026, WHO became aware through media reports of the death of an employee of the Irkutsk Antiplague Research Institute (APRI) of Siberia and the Far East, the Russian Federation. According to these reports, the individual died on 2 October following hospitalization for severe pneumonia on 29 September, and pneumonic plague was suspected as the cause of death, following occupational exposure in laboratory settings. Following requests for verification from WHO, the National Focal Point",
-      "link": "https://www.who.int/2026-DON620",
-      "donId": "2026-DON620"
+      "title": "WHO and Switzerland cement cooperation until 2028",
+      "date": "2025-03-07T12:38:51Z",
+      "summary": "WHO and Switzerland have announced the renewal of their cooperation strategy for the period 2024-2028. In 2013, Switzerland became the first high-income country in the WHO European Region to pilot a cooperation strategy with WHO (hereafter referred to as the WHO-Switzerland Cooperation Strategy). In 2022, WHO and Switzerland jointly decided to update and renew this cooperation strategy, which was done on 4 March 2025 at the Regional Office of the WHO in Copenhagen, Denmark.",
+      "link": "https://www.who.int/news/item/07-03-2025-who-and-switzerland-cement-cooperation-until-2028"
     },
     {
       "kind": "WHO 소식",
-      "title": "WHO Youth Council welcomes 2026–2028 members in Berlin",
-      "date": "2026-10-09T12:30:33Z",
-      "summary": "The WHO Youth Council launched its 2026–2028 term in Berlin on 9–10 October 2026, bringing together 25 youth-led and youth-serving organizations from around the world. Members reviewed progress from the previous term, set priorities for the next two years, and strengthened their role in advancing meaningful youth participation in global health governance. The meeting was followed by participation in the World Health Summit.",
-      "link": "https://www.who.int/news/item/09-10-2026-who-youth-council-welcomes-2026-2028-members-in-berlin",
-      "newsType": "Departmental update"
+      "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
+      "date": "2025-03-06T12:48:53Z",
+      "summary": "The Riyadh International Humanitarian Forum 2025 was a significant event that underscored the continued partnership between WHO and KSrelief, as well as with other international partners to address critical humanitarian health crises. The agreements made during the forum are pivotal in combating diseases like malaria, cholera, and polio, and ensuring better healthcare for displaced populations. The forum also highlighted Saudi Arabia’s ongoing commitment to global humanitarian efforts, reaffirmi",
+      "link": "https://www.who.int/news/item/24-02-2025-who-and-the-kingdom-of-saudi-arabia-sign-agreements-in-support-of-health-priorities"
     },
     {
       "kind": "WHO 소식",
-      "title": "WHO urges shift from institutional to community-based mental health care",
-      "date": "2026-10-09T09:00:00Z",
-      "summary": "WHO has released a new guide to support countries in shifting away from institutionalized mental health care models focused on long-term stays in psychiatric hospitals towards person-centred care in the community that respect people’s rights and choices.",
-      "link": "https://www.who.int/news/item/09-10-2026-who-urges-shift-from-institutional-to-community-based-mental-health-care",
-      "newsType": "News release"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
-      "date": "2026-10-08T16:06:26Z",
-      "summary": "On 5 October 2026, WHO was informed about a laboratory-confirmed imported case of Bundibugyo virus disease (BVD) in Kenya with travel history from the Democratic Republic of the Congo. The patient travelled from the Democratic Republic of the Congo to Kenya through Uganda. The patient was hospitalized and treated in Kenya but subsequently died on 5 October. Public health response measures have been initiated in Kenya and Uganda, including contact tracing. Since the last Disease Outbreak News was",
-      "link": "https://www.who.int/2026-DON619",
-      "donId": "2026-DON619"
+      "title": "Signing ceremony for contribution agreements between WHO and France",
+      "date": "2024-10-17T12:01:38Z",
+      "summary": "Geneva 17 October 2024 – This afternoon, His Excellency Mr Jérôme Bonnafont, Permanent Representative of France to the United Nations in Geneva, and WHO Director-General Dr Tedros Adhanom Ghebreyesus met in the WHO headquarters for the signing of seven contribution agreements. The contribution totalling €24 million comes through the Ministry of Europe & Foreign Affairs. It fits in the France–WHO Framework Agreement for 2020 to 2025, which provides both a strategic framework for engagement, align",
+      "link": "https://www.who.int/news/item/17-10-2024-signing-ceremony-for-contribution-agreements-between-who-and-france"
     },
     {
       "kind": "WHO 소식",
-      "title": "New global roadmap launched to tackle hypertension in pregnancy, a leading cause of maternal and newborn deaths",
-      "date": "2026-10-08T08:12:34Z",
-      "summary": "The World Health Organization (WHO) and partners today launched a new global roadmap to tackle hypertensive disorders of pregnancy, including pre-eclampsia, which affect millions of women every year.",
-      "link": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
-      "newsType": "News release"
+      "title": "WHO and the Netherlands renew their partnership on climate change and health",
+      "date": "2024-10-10T07:47:50Z",
+      "summary": "The World Health Organization (WHO) and the Kingdom of the Netherlands have renewed their strategic partnership in addressing the growing impacts of climate change on global health. The Netherlands is providing a new allocation of €500 000 for 2024 to WHO, reinforcing its commitment to climate resilience and sustainable healthcare systems worldwide. This allocation supports WHO’s ongoing efforts to strengthen the Alliance for Transformative Action on Climate and Health Secretariat and advance cl",
+      "link": "https://www.who.int/news/item/10-10-2024-who-and-the-netherlands-renew-their-partnership-on-climate-change-and-health"
     },
     {
       "kind": "WHO 소식",
-      "title": "WHO issues first global guidelines on child and adolescent obesity",
-      "date": "2026-10-07T07:09:37Z",
-      "summary": "The World Health Organization (WHO) today released its first guidelines addressing the sharp rise in obesity among children and adolescents, setting out how health systems and health workers can deliver timely, evidence-based and people-centred care.",
-      "link": "https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity",
-      "newsType": "News release"
+      "title": "The Republic of Korea and WHO discuss joint priorities, challenges and trends around global health",
+      "date": "2024-09-04T09:19:05Z",
+      "summary": "The World Health Organization (WHO) and the Republic of Korea have a long-standing partnership spanning over 75 years. As a result of their fruitful collaboration, there has been significant progress in health and development all around the world. The Republic of Korea has gone from being a donor-recipient country to a donor-country and is now a leader in global health and playing a critical role on the world stage. Dr Catharina Boehme, Assistant Director-General for External Relations and Gover",
+      "link": "https://www.who.int/news/item/29-08-2024-the-republic-of-korea-and-who-discuss-joint-priorities--challenges-and-trends-around-global-health"
     },
     {
       "kind": "WHO 소식",
-      "title": "Advancing inclusive pandemic prevention, preparedness and response for migrants, refugees and displaced populations",
-      "date": "2026-10-07T05:41:00Z",
-      "summary": "High-level cross-sectoral roundtable to advance the meaningful inclusion of migrants, refugees and displaced populations in global pandemic prevention, preparedness and response (PPPR) efforts.",
-      "link": "https://www.who.int/news/item/07-10-2026-advancing-inclusive-pandemic-prevention--preparedness-and-response-for-migrants--refugees-and-displaced-populations",
-      "newsType": "Departmental update"
+      "title": "Fourteen African countries, key partners unite to provide critical resources for health in WHO’s first-ever Investment Round",
+      "date": "2024-08-27T19:45:08Z",
+      "summary": "In an unprecedented show of unity in support of the World Health Organization, 14 African countries and many partners pledged over US$ 45 million to the WHO Investment Round, a three-month-old initiative aimed at generating sustainable financing for the organization at the center of the global health architecture. The commitments were made during the World Health Organization (WHO) Regional Committee for Africa, with heads of state and government from across the continent underscoring the import",
+      "link": "https://www.who.int/news/item/27-08-2024-fourteen-african-countries--key-partners-unite-to-provide-critical-resources-for-health-in-who-s-first-ever-investment-round"
     },
     {
       "kind": "WHO 소식",
-      "title": "WHO reinforces oral disease surveillance with an updated NCD STEPS module",
-      "date": "2026-10-06T06:18:35Z",
-      "summary": "A new publication in the Bulletin of the World Health Organization presents the revised WHO oral health module for the STEPwise approach to noncommunicable disease risk factor surveillance (STEPS). The updated module introduces a more contemporary and practical approach to collecting population-level data on oral diseases, helping countries generate the evidence needed to inform policy and strengthen monitoring of oral health program and policy implementation.The WHO STEPwise framework is a well",
-      "link": "https://www.who.int/news/item/06-10-2026-who-reinforces-oral-disease-surveillance-with-an-updated-ncd-steps-module",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
-      "date": "2026-09-25T15:30:18Z",
-      "summary": "Since the last Disease Outbreak News was published on 11 September 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded further, with two additional health zones affected. These include Bulu health zone in a new province, Sud Ubangi, located on the north-west part of the country and Dungu health zone in Haut-Uélé province, bordering South Sudan. This brings the total number of affected health zones to 63 across seven provinces out of 26 provinces of the countr",
-      "link": "https://www.who.int/2026-DON618",
-      "donId": "2026-DON618"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
-      "date": "2026-09-10T08:52:02Z",
-      "summary": "Since the last Disease Outbreak News was published on 28 August 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded to one additional health zone, Kayna, in North Kivu. This increase brings the total number of affected health zones to 61 across six out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, and Tshopo. As of 7 September 2026, the Democratic Republic of the Congo has reported 6757 confirmed cases, including 3267 dea",
-      "link": "https://www.who.int/2026-DON617",
-      "donId": "2026-DON617"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
-      "date": "2026-08-28T15:31:07Z",
-      "summary": "Since the last Disease Outbreak News was published on 14 August 2026, the outbreak has spread from 54 to 60 health zones. The number of affected provinces stands at six out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, and Tshopo. Six additional health zones reported cases since the last update - Ganga and Viadana health zones in Bas-Uélé province, Biena, Manguredjipa, and Mutwanga in North Kivu, and Tshopo health zone in Tshopo province. As of 26 August 202",
-      "link": "https://www.who.int/2026-DON616",
-      "donId": "2026-DON616"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
-      "date": "2026-08-14T15:54:20Z",
-      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is in a phase of intense transmission. It is the largest Ebola outbreak ever reported in the country and expanding faster than any previous Ebola outbreak. The epidemic is increasingly characterized by sustained transmission within interconnected geographic clusters. Initially confined to the Mongbwalu health zone in Ituri Province, the outbreak has now expanded to 54 health zones across six provinces (Ituri, Nor",
-      "link": "https://www.who.int/2026-DON615",
-      "donId": "2026-DON615"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
-      "date": "2026-08-01T10:46:53Z",
-      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is intensifying, with sustained transmission and continued increases in reported cases and deaths. Initially confined to the Mongbwalu health zone in Ituri Province, over the last two months, the outbreak has expanded to five provinces (Ituri, North Kivu, South Kivu, Haut-Uélé and Tshopo), now affecting 49 health zones. The outbreak is now the largest Ebola outbreak ever reported in the Democratic Republic of the",
-      "link": "https://www.who.int/2026-DON614",
-      "donId": "2026-DON614"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
-      "date": "2026-07-17T16:51:09Z",
-      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo remains active, with sustained transmission driving increases in reported cases and deaths. As of 15 July 2026, a cumulative total of 2124 confirmed cases, including 828 deaths, have been reported from the Democratic Republic of the Congo. On 13 July 2026, German authorities informed WHO of a laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a humanitarian worker from the United States of A",
-      "link": "https://www.who.int/2026-DON613",
-      "donId": "2026-DON613"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
-      "date": "2026-07-03T15:31:57Z",
-      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with sustained transmission and increasing numbers of reported cases. As of 1 July, a cumulative of 1460 confirmed cases, including 452 deaths, have been reported from the Democratic Republic of the Congo. As of 2 July, Uganda has reported 20 confirmed cases including two deaths, as well as one probable case who has died. In addition, on 24 June 2026, French authorities notified WHO o",
-      "link": "https://www.who.int/2026-DON612",
-      "donId": "2026-DON612"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Hantavirus outbreak linked to cruise ship travel, Multi-locations",
-      "date": "2026-07-02T18:27:48Z",
-      "summary": "This is the fifth Disease Outbreak News posting on the Andes hantavirus (ANDV) outbreak linked to the cruise ship M/V Hondius. The outbreak identification followed the notification to the World Health Organization (WHO) on 2 May 2026 of severe acute respiratory illness cases onboard. Since the previous Disease Outbreak News was published on 28 May 2026, one of the probable cases from Tristan da Cunha, an Overseas Territory of the United Kingdom of Great Britain and Northern Ireland (hereafter re",
-      "link": "https://www.who.int/2026-DON611",
-      "donId": "2026-DON611"
+      "title": "India commits US$ 85 million to WHO Global Traditional Medicine Centre",
+      "date": "2024-07-31T05:00:27Z",
+      "summary": "The WHO-India donor agreement is part of a US$ 250 million investment from India in support of the establishment of the WHO Global Centre of Traditional Medicine in 2022, which includes financial support for the workplan of the Centre, interim premises and a new building. This support will scale up WHO’s capacities on traditional medicine across technical divisions and regions in the spirit of global collaboration and solidarity. Part of this substantial contribution from the Government of India",
+      "link": "https://www.who.int/news/item/31-07-2024-india-commits-usd-85-million-to-who-global-traditional-medicine-centre"
     }
   ],
-  "generatedAt": "2026-10-16T02:07:47.686410+00:00"
+  "generatedAt": "2026-10-16T10:19:47.207658+00:00"
 }
