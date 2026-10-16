@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T23:41:43.156Z",
+  "generatedAt": "2026-10-16T23:36:02.496Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -8,6 +8,13 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKTWN3aV9fQVZCVG45d1V3LTQyUXMwSlFEM1lGU2h6Z05hYk5FdEM4N0lTSG5QVjY4UEY4ZUU4TGtkTGM3X0lDdmxQWmdPcmVuN1FDMVpQdDZxQmc?oc=5",
       "date": "2026-09-30T14:38:13.000Z"
+    },
+    {
+      "title": "홍보지",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJb3BJdkZ4eHRZZWZUdlM1bmpsZzlpdDlkSnVFT0UyS1Q1LVFHTTZaVEtHcXU0YTJLTDc2eGFpckpncmdpb2U5N0FIXzJ3RmhXdVJrMFJ3?oc=5",
+      "date": "2025-12-16T15:47:43.000Z"
     },
     {
       "title": "채용공고",
@@ -28,7 +35,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-15T05:37:02.000Z"
+      "date": "2026-10-16T08:36:09.000Z"
     },
     {
       "title": "레지오넬라증",
@@ -45,6 +52,13 @@
       "date": "2024-06-10T02:47:27.000Z"
     },
     {
+      "title": "홍보물",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBpVFRoOHFHTUYxall6MTlWRjdOOHdJdU1hQUwwbnhHb1pqUVhNZjVtYVlXX0pwQk9xRUI4ajF1U0UwYks3cUJVdUttSWJEdUlZUnpRVURR?oc=5",
+      "date": "2026-02-10T05:30:11.000Z"
+    },
+    {
       "title": "ICCON 감염예방 소식지",
       "source": "질병관리청",
       "agency": "",
@@ -59,11 +73,11 @@
       "date": "2026-10-15T03:13:59.000Z"
     },
     {
-      "title": "홍보지",
+      "title": "신고현황",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJb3BJdkZ4eHRZZWZUdlM1bmpsZzlpdDlkSnVFT0UyS1Q1LVFHTTZaVEtHcXU0YTJLTDc2eGFpckpncmdpb2U5N0FIXzJ3RmhXdVJrMFJ3?oc=5",
-      "date": "2025-12-16T15:47:43.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MbExBX0JEd0RiZmxBQ3djZnFIQjdYUGwycC1BdUlvMDFDV0VOLUFmbU5QSU00TmNINE5BdmE5NlRVSThkN0c3TVJDa3dHRFJJWlNKWkZ3?oc=5",
+      "date": "2025-12-16T16:42:42.000Z"
     },
     {
       "title": "신고현황 - 2025년 온열질환감시체계 운영 결과(5.15.~8.8.)",
@@ -71,20 +85,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9KQ0JCdzB2TzBmbllyYXdNaThsbDhqQ2hzZnk1WWZSc2FCNEpJTzl3YTV2LS1ZbXA3M1ZqejJ5aldfQmtRZUVSaXh2WVBtOGpnb1dybC0yYVMwQVZQOG5aMlRwczU5VWtvdWVfaXZHcmc0R2VuSFRobUt3?oc=5",
       "date": "2025-12-16T23:45:41.000Z"
-    },
-    {
-      "title": "보도자료",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9JZnl6T202QkNnTlo0dFdWdkZnT0IzbzFGWmd3TVh5aVVDZmx4NDRKZVgwekdkTW13eUxtUnRGR2otcHJ5TGU4NDh6dnNFRmwxUXVJNVdlTEtyNWcxcVQtZnlXQ2ZDQXlMaXNVck1qVmhUT0dJenNxVQ?oc=5",
-      "date": "2026-10-12T23:52:49.000Z"
-    },
-    {
-      "title": "희귀질환정보",
-      "source": "질병관리청 희귀질환 헬프라인",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcnRpZ3BUQkw2eWEyWDl2aDF6Y2d3X2lxY3MtNm4tcndwTFpHYW5zUzZSbTlSQXMtRGpneUpWMW81N28yU2VSb2tDSnpmWi05amlGUkstbmxRbzNqS0NfQ2RKTl9DZHU3bERvWnVpLWxVNWZnTk9GQzI1bnptMEtEMC1pZXQzcGt5MnNJaVBlZ29NS3poWDhLYWx5aFg3MFZNVGVwZHlUX0VmU0xPMlpKY3ptT3dDU1FYRDctUHVQWlFjVXJsQmo5Qg?oc=5",
-      "date": "2026-10-11T19:59:54.000Z"
     }
   ]
 }
