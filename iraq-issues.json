@@ -1,6 +1,106 @@
 {
-  "generatedAt": "2026-10-16T21:22:22.920Z",
+  "generatedAt": "2026-10-16T23:43:07.874Z",
   "items": [
+    {
+      "title": "EXCLUSIVE - Iraq detains Ukrainian nationals on suspicion of plotting attack on Gulf oil facilities",
+      "source": "thecradle.co",
+      "link": "https://thecradle.co/articles/exclusive-iraq-detains-ukrainian-nationals-on-suspicion-of-plotting-attack-on-gulf-oil-facilities",
+      "date": "2026-10-16T22:37:43.000Z",
+      "lang": "en",
+      "titleKo": "독점",
+      "url": "https://thecradle.co/articles/exclusive-iraq-detains-ukrainian-nationals-on-suspicion-of-plotting-attack-on-gulf-oil-facilities",
+      "body": "The foreigners were detained on suspicion of planning an attack on Gulf oil facilities amid Iraq-Saudi tensions following mysterious drone strikes on Saudi oil sites",
+      "bodyKo": "이라크-사우디의 긴장 속에서 걸프 석유 시설에 대한 공격을 계획했다는 의혹으로 구금된 외국인들은 사우디 석유 현장에서 의문의 드론 공격을 받았다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "thecradle.co"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "US report flags Iraq investment risks",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Economy/US-report-flags-Iraq-investment-risks",
+      "date": "2026-10-16T22:12:25.000Z",
+      "lang": "en",
+      "titleKo": "미국 보고서, 이라크 투자 위험 신고",
+      "url": "https://shafaq.com/en/Economy/US-report-flags-Iraq-investment-risks",
+      "body": "Shafaq News- Washington Iraq offers significant opportunities for foreign investment in energy, infrastructure, agriculture, and other sectors, but bureaucratic hurdles, corruption, regulatory uncer\nThe report, issued Friday by the department's Bureau of Economic, Energy, and Business Affairs, highlights Iraq's efforts to attract international companies as the government seeks to diversify the economy, modernize infrastructure, and reduce dependence on oil revenues. Opportunities include capturing gas currently burned off during oil production, expanding electricity generation, developing renewable energy projects, and improving transport infrastructure.\nHowever, foreign investors continue to face difficulties navigating administrative procedures, resolving contractual disputes, securing timely payments, and operating under inconsistent regulations. Corruption in public procurement and licensing, alongside weaknesses in the financial sector, also remains a significant obstacle to attra",
+      "bodyKo": "Shafaq News- 워싱턴 이라크는 에너지, 인프라, 농업 및 기타 부문에 대한 외국인 투자를위한 상당한 기회를 제공하지만 관료적 장애물, 부패, 규제 운세\n이 보고서는 이라크 정부가 경제를 다각화하고 인프라를 현대화하며 석유 수입에 대한 의존도를 줄이기 위해 국제 기업을 유치하려는 이라크의 노력을 강조한다. 석유 생산 중 현재 연소된 가스를 포집하고, 발전을 확대하고, 재생 에너지 프로젝트를 개발하고, 운송 인프라를 개선할 수 있습니다.\n그러나 외국인 투자자는 행정 절차를 진행하고, 계약 분쟁을 해결하고, 적시 지불을 확보하고, 일관성 없는 규정에 따라 운영되는 데 계속 어려움을 겪고 있습니다. 금융 부문의 약점과 함께 공공 조달 및 면허의 부패도 여전히 중요한 장애물로 남아 있습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Italy ready to resume military training, intelligence cooperation with Kurdistan: Ambassador",
+      "source": "Rudaw",
+      "link": "https://www.rudaw.net/english/categories/interview/1079761",
+      "date": "2026-10-16T20:20:21.000Z",
+      "lang": "en",
+      "titleKo": "이탈리아는 쿠르드족과 군사 훈련, 정보 협력을 재개할 준비가 되어 있습니다: 대사",
+      "url": "https://www.rudaw.net/english/categories/interview/1079761",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "الميناء يعود بخسارة من نوروز بهدفين دون رد في دوري نجوم العراق",
+      "source": "وكالة المرسى نيوز",
+      "link": "https://almarsa-news.com/news-33058.html",
+      "date": "2026-10-16T20:03:57.000Z",
+      "lang": "ar",
+      "titleKo": "이 항구는 이라크 스타즈 리그에서 응답 없이 두 골을 넣으며 노우루즈의 패배로 돌아온다.",
+      "url": "https://almarsa-news.com/news-33058.html",
+      "body": "البصرة / المرسى نيوز عاد فريق الميناء بخسارة أمام مضيفه نوروز بهدفين دون رد، في المباراة التي احتضنها ملعب الأخير، ضمن منافسات الجولة العاشرة من دوري نجوم\nوبدأ نوروز المباراة بضغط نسبي فارضا أفضلية في الدقائق الأولى من الشوط الأول، ومهددا مرمى الميناء بأكثر من محاولة إلا أن دفاعات السفانة، ومن خلفها الحارس عمار علي، نجحت في التصدي لتلك المحاولات.\nوفي الدقيقة 33 تمكن حبيب الوسلاتي من افتتاح التسجيل لنوروز بهدف رائع ليحاول الميناء بعد ذلك العودة إلى أجواء المباراة وإدراك التعادل، ضاغطا على مرمى الحارس علي كاظم. لكن نوروز عاد ليعزز تقدمه بهدف ثان حمل توقيع الوسلاتي نفسه، في الدقيقة الثانية من الوقت بدل الضائع، لينتهي الشوط الأول بتقدم أصحاب الأرض بهدفين دون مقابل.\nوفي الشوط الثاني، اعتمد الميناء على الهجمات المرتدة سعيا لتقليص الفارق، في حين واصل نوروز ضغطه الهجومي بحثا عن هدف ثالث، مستفيدا من بعض الثغرات وعدم التنظيم في الخطوط الدفاعية للسفانة.",
+      "bodyKo": "바스라/알-마르사 뉴스 항구 팀은 후자의 경기장에서 주최한 경기에서, 스타즈 리그 10라운드 대회에서, 응답 없이 두 골을 넣으며 호스트인 노우루즈를 상대로 패배를 안고 돌아왔습니다.\n노우루즈는 상대적인 압박감으로 경기를 시작했고, 전반 1분 만에 우위를 점했고, 두 번 이상의 시도로 항구 골문을 위협했지만, 배의 방어와 그 뒤에는 경비원 암마르 알리가 그 시도에 대항하는 데 성공했다.\n33분, 하빕 알 와슬라티는 멋진 골로 노우루즈의 기록을 펼칠 수 있었고, 그 후 항구는 경기 분위기로 돌아가 골키퍼 알리 카짐을 누르고 동점을 실현하려고 했습니다. 그러나 노우루즈는 잃어버린 시간의 두 번째 분에 와슬라티의 동일한 서명을 받은 두 번째 골로 자신의 진전을 통합하여 토지 소유자의 진전으로 전반전을 무료로 끝내기 위해 돌아왔습니다.\n후반전 항구는 격차를 줄이기 위해 반격에 의존한 반면, 노우루즈는 선박 방어선의 격차와 조직력 부족을 활용하여 세 번째 목표를 찾기 위해 공격적인 압력을 계속했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة المرسى نيوز"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바스라",
+        "km": 422
+      }
+    },
     {
       "title": "Iraq's cabinet completion raises Iranian influence concerns, but offers PM chance to curb militias",
       "source": "Voice of America English News",
@@ -74,6 +174,56 @@
         "act": "",
         "place": "디얄라주",
         "km": 91
+      }
+    },
+    {
+      "title": "Iraqi President Calls for Citizen-Centred Security in Meeting with New Interior Minister",
+      "source": "PUKmedia یەکێتیی نیشتمانیی کوردستان",
+      "link": "https://www.pukmedia.com/EN/Details/83127",
+      "date": "2026-10-16T19:39:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크 대통령, 새 내무장관 면담에서 시민 중심의 안보 요구",
+      "url": "https://www.pukmedia.com/EN/Details/83127",
+      "body": "Home News Kurdistan Iraq World Interviews Economy Opinions Reports P.U.K multimedia Gallery Video About Contacts Archive Newsletter Iraqi President Calls for Citizen-Centred Security in Meeting with New Interior Minister Iraq 10:39 PM - 2026-10-16 Iraqi Presidency Iraqi President Nizar Amedi and new Interior Minister Yasser al-Maliki. Iraq Iraqi Presidency Iraqi President Iraqi President Nazar Amedi received Interior Minister Yasser al-Maliki on Friday. According to a statement by the Iraqi Presidency, President Amedi congratulated al-Maliki on securing Parliament&rsquo;s confidence and assuming his new role as Interior Minister. The statement noted that President Amedi emphasised that the confidence placed in him carries a national responsibility to strengthen the Ministry&rsquo;s performance, capabilities, and effectiveness. He also stressed the importance of strengthening institutional practices within the Ministry and enhancing its ability to enforce the law and respond effectively",
+      "bodyKo": "Home News Kurdistan Iraq World Interviews Economy Opinions Reports P.U.K multimedia Gallery Video About Contacts Archive Newsletter 이라크 대통령, 이라크 신임 내무장관 면담에서 시민 중심의 안보를 촉구하다 10:39 PM - 2026-10-16 이라크 대통령 니자르 아메디 (Nizar Amedi) 와 신임 내무장관 야세르 알 말리키 (Yasser al-Maliki). 이라크 대통령 이라크 대통령 나자르 아메디 이라크 대통령은 금요일 야세르 알 말리키 내무장관을 접견했다. Stateme에 따르면",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "PUKmedia یەکێتیی نیشتمانیی کوردستان"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "مكتب حقوق الإنسان في البصرة يطالب بإيقاف جباية الماء ومراجعة أجور الكهرباء",
+      "source": "وكالة المرسى نيوز",
+      "link": "https://almarsa-news.com/news-33060.html",
+      "date": "2026-10-16T19:33:56.000Z",
+      "lang": "ar",
+      "titleKo": "바스라의 인권 사무소 (Human Rights Office) 는 물 수거와 전기 임금 검토를 중단할 것을 촉구합니다.",
+      "url": "https://almarsa-news.com/news-33060.html",
+      "body": "البصرة / المرسى نيوز طالب مكتب المفوضية العليا لحقوق الإنسان في محافظة البصرة، اليوم الجمعة، محافظ البصرة ورؤساء لجان النزاهة والطاقة والقانونية في مجلس ا\nودعا المكتب بحسب بيان إلى وقف الإجراءات التي تطبق حصرا في محافظة البصرة، مؤكدا ،ضرورة معالجة الآثار المترتبة عليها بما يضمن حماية حقوق المواطنين ومصالحهم.\nكما طالب مكتب محافظ البصرة بإيقاف أجور جباية الماء، مشيرا إلى أن هذه الأجور لا تتجاوز نسبة 25% من صلاحية كمياه، فضلا عن عدم توافقها مع المعايير البيئية المتعلقة بالتلوث والملوحة والشحة، مقارنةً بدول الجوار والعالم./ انتهى",
+      "bodyKo": "바스라/마르사 뉴스 바스라 주 고등 인권 위원회 사무실, 오늘, 금요일, 바스라 주지사 및 각료회의의 청렴, 에너지 및 법률 위원회 책임자\n성명서에 따르면, 사무소는 바스라 지방에서만 적용되는 절차의 중단을 촉구하며 시민의 권익 보호를 위해 이러한 조치의 영향을 해결해야 할 필요성을 강조했다.\n바스라 주지사 사무실은 또한 이러한 임금이 주변 국가 및 세계에 비해 오염, 염분 및 희소성과 관련된 환경 기준과의 부적합성뿐만 아니라 물의 타당성의 25% 를 초과하지 않는다는 점에 주목하여 물 수거 수수료의 중단을 촉구했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة المرسى نيوز"
+      ],
+      "related": [],
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바스라",
+        "km": 422
       }
     },
     {
@@ -152,31 +302,6 @@
       }
     },
     {
-      "title": "الميناء يعود بخسارة من نوروز بهدفين دون رد في دوري نجوم العراق",
-      "source": "وكالة المرسى نيوز",
-      "link": "https://almarsa-news.com/news-33058.html",
-      "date": "2026-10-16T18:43:27.000Z",
-      "lang": "ar",
-      "titleKo": "이 항구는 이라크 스타즈 리그에서 응답 없이 두 골을 넣으며 노우루즈의 패배로 돌아온다.",
-      "url": "https://almarsa-news.com/news-33058.html",
-      "body": "البصرة / المرسى نيوز عاد فريق الميناء بخسارة أمام مضيفه نوروز بهدفين دون رد، في المباراة التي احتضنها ملعب الأخير، ضمن منافسات الجولة العاشرة من دوري نجوم\nوبدأ نوروز المباراة بضغط نسبي فارضا أفضلية في الدقائق الأولى من الشوط الأول، ومهددا مرمى الميناء بأكثر من محاولة إلا أن دفاعات السفانة، ومن خلفها الحارس عمار علي، نجحت في التصدي لتلك المحاولات.\nوفي الدقيقة 33 تمكن حبيب الوسلاتي من افتتاح التسجيل لنوروز بهدف رائع ليحاول الميناء بعد ذلك العودة إلى أجواء المباراة وإدراك التعادل، ضاغطا على مرمى الحارس علي كاظم. لكن نوروز عاد ليعزز تقدمه بهدف ثان حمل توقيع الوسلاتي نفسه، في الدقيقة الثانية من الوقت بدل الضائع، لينتهي الشوط الأول بتقدم أصحاب الأرض بهدفين دون مقابل.\nوفي الشوط الثاني، اعتمد الميناء على الهجمات المرتدة سعيا لتقليص الفارق، في حين واصل نوروز ضغطه الهجومي بحثا عن هدف ثالث، مستفيدا من بعض الثغرات وعدم التنظيم في الخطوط الدفاعية للسفانة.",
-      "bodyKo": "바스라/알-마르사 뉴스 항구 팀은 후자의 경기장에서 주최한 경기에서, 스타즈 리그 10라운드 대회에서, 응답 없이 두 골을 넣으며 호스트인 노우루즈를 상대로 패배를 안고 돌아왔습니다.\n노우루즈는 상대적인 압박감으로 경기를 시작했고, 전반 1분 만에 우위를 점했고, 두 번 이상의 시도로 항구 골문을 위협했지만, 배의 방어와 그 뒤에는 경비원 암마르 알리가 그 시도에 대항하는 데 성공했다.\n33분, 하빕 알 와슬라티는 멋진 골로 노우루즈의 기록을 펼칠 수 있었고, 그 후 항구는 경기 분위기로 돌아가 골키퍼 알리 카짐을 누르고 동점을 실현하려고 했습니다. 그러나 노우루즈는 잃어버린 시간의 두 번째 분에 와슬라티의 동일한 서명을 받은 두 번째 골로 자신의 진전을 통합하여 토지 소유자의 진전으로 전반전을 무료로 끝내기 위해 돌아왔습니다.\n후반전 항구는 격차를 줄이기 위해 반격에 의존한 반면, 노우루즈는 선박 방어선의 격차와 조직력 부족을 활용하여 세 번째 목표를 찾기 위해 공격적인 압력을 계속했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "وكالة المرسى نيوز"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바스라",
-        "km": 422
-      }
-    },
-    {
       "title": "Kirkuk imposes overnight curfew south of Daquq",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/en/Security/Kirkuk-imposes-overnight-curfew-south-of-Daquq",
@@ -187,11 +312,17 @@
       "body": "Shafaq News- Kirkuk Iraqi security authorities imposed an overnight curfew on Friday across all villages south of Daquq district in Kirkuk province, a security source told Shafaq News. The restricti\nThe restrictions, in effect from 6 p.m. to 6 a.m. local time until further notice, aim to protect residents and prevent suspicious movements or potential militant activity, according to the source, who said security forces will establish checkpoints at village entrances and exits, deploy patrols, and monitor surrounding roads.\nThree days earlier, Iraqi warplanes struck ISIS hideouts in Wadi Zghaitoun, Kirkuk, killing at least two militants.\nKirkuk is among the territories disputed between Iraq&rsquo;s federal government and the Kurdistan Regional Government (KRG), where gaps in security coordination have allowed ISIS remnants to operate. In August, Iraqi authorities announced plans to transfer security responsibility for Daquq and Tuz Khurmatu from the East Saladin Operations Command to the",
       "bodyKo": "Shafaq News- 키르쿠크 이라크 보안 당국은 금요일에 키르쿠크 지방의 Daquq 지구 남쪽의 모든 마을에 야간 통행 금지를 부과했다고 보안 소식통이 Shafaq News에 전했다. 제한\n소식통에 따르면 현지 시간으로 오후 6시부터 오전 6시까지 시행되는 이 제한은 주민을 보호하고 의심스러운 움직임이나 잠재적인 무장 활동을 방지하는 것을 목표로 하며, 보안군은 마을 입구와 출구에 검문소를 설치하고, 순찰대를 배치하고, 주변 도로를 감시할 것이라고 밝혔다.\n3일 전, 이라크 전투기가 키르쿠크 와디 즈하이툰의 ISIS 은신처를 강타해 최소 2명의 무장 세력이 사망했습니다.\n키르쿠크는 이라크 연방 정부와 쿠르드 지방 정부 (KRG) 사이에서 분쟁을 벌이는 영토 중 하나이며, 안보 조정의 격차로 ISIS 잔재가 운영될 수 있었다. 지난 8월, 이라크 당국은 Daquq 및 Tuz Khurmatu에 대한 보안 책임을 동부 살라딘 작전 사령부에서 동부 살라딘 작전 사령부로 이관하겠다는 계획을 발표했습니다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "키르쿠크, Daquq 남쪽에서 야간 통행금지 조치",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Security/Kirkuk-imposes-overnight-curfew-south-of-Daquq"
+        }
+      ],
       "tag": "시위·통제",
       "impact": {
         "lv": "g",
@@ -253,7 +384,7 @@
         {
           "titleKo": "이라크의 전쟁 비용은 600억 달러 ($) 였다고 외무장관이 이탈리아에 말했다.",
           "source": "964media",
-          "link": "https://en.964media.com/53834/"
+          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE4tNjRSX2d5Zkp0b1M3c19WVGFEaGFvUllnckppX3pBRmhHYnppYjZ4TDI1NFd4blhUazZIUzFmdk4wa2lJ?oc=5"
         },
         {
           "titleKo": "푸아드 후세인: 이라크는 이란과의 전쟁으로 인해 $ 600억의 손실을 입었습니다.",
@@ -431,19 +562,12 @@
       "body": "Hussein made the remarks during a meeting with Italian Defense Minister Guido Crosetto at the Italian Defense Ministry headquarters in Rome, as part of his visit to the Italian capital.\nERBIL (Kurdistan24) &mdash; Iraqi Foreign Minister Fuad Hussein said on Friday that Iraq does not seek war and supports all peace initiatives, as he and his Italian counterpart reaffirmed continued security cooperation and military training for Iraqi forces, including the Peshmerga.\nAccording to a statement from Iraq&rsquo;s Foreign Ministry, the talks focused on the role of the international coalition in combating terrorism in Iraq, Italy&rsquo;s participation in efforts to defeat the Islamic State (ISIS), and Rome&rsquo;s support for training members of the Iraqi army and Peshmerga forces to strengthen their military and security capabilities.",
       "bodyKo": "후세인은 이탈리아 수도를 방문한 일환으로 로마의 이탈리아 국방부 본부에서 귀도 크로세토 이탈리아 국방장관과 회담을 가졌다.\n에르빌 (쿠르디스탄24) — 푸아드 후세인 이라크 외무장관은 금요일 이라크가 페슈메르가를 포함한 이라크군에 대한 지속적인 안보 협력과 군사 훈련을 재확인함에 따라 이라크는 전쟁을 추구하지 않으며 모든 평화 이니셔티브를 지지한다고 말했다.\n이라크 외무부의 성명서에 따르면, 이번 회담은 이라크 테러 퇴치를 위한 국제 연합의 역할, 이탈리아가 이슬람 국가 (ISIS) 를 물리치기 위한 노력에 참여하는 것, 이라크 군대와 페슈메르가 군대의 군사 및 안보 역량을 강화하기 위한 훈련에 대한 로마의 지원에 초점을 맞췄다.",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "Kurdistan24",
-        "وكالة الانباء العراقية (واع)"
+        "Kurdistan24"
       ],
-      "related": [
-        {
-          "titleKo": "외무장관: 이라크는 전쟁을 추구하지 않으며 평화의 길을 지지합니다 »이라크 통신사",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://ina.iq/en/politics/52937-foreign-minister-iraq-does-not-seek-war-and-supports-paths-to-peace.html"
-        }
-      ],
-      "tag": "치안·테러",
+      "related": [],
+      "tag": "기타",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -495,7 +619,7 @@
       "body": "Shafaq News- Baghdad The Coordination Framework (CF), an alliance of predominantly Shiite political parties, welcomed the completion of Iraq's cabinet on Thursday. In a statement, the CF said th\nIn a statement, the CF said the completed cabinet represents an important step toward strengthening political stability, improving the functioning of state institutions, and implementing the government's program.\nOn October 15, Prime Minister Ali Al-Zaidi said the appointment of three deputy prime ministers and approval of 11 cabinet nominees would strengthen his government's ability to address economic and security challenges and fulfill its commitments.\nThe parliamentary vote took place during a session chaired by Speaker Haibet Al-Halbousi and attended by 261 lawmakers.",
       "bodyKo": "샤파크 뉴스- 바그다드 주로 시아파 정당들의 동맹인 조정 프레임워크 (CF) 는 목요일 이라크 내각의 완성을 환영했다. 성명서에서 CF는 다음과 같이 말했습니다.\nCF는 성명에서 완성된 내각은 정치적 안정성 강화, 국가 기관의 기능 개선, 정부의 프로그램 시행을 위한 중요한 단계를 나타낸다고 말했다.\n10월 15일, 알리 알자이디 총리는 3명의 부총리 임명과 11명의 내각 지명자의 승인이 경제 및 안보 문제를 해결하고 약속을 이행하는 정부의 능력을 강화할 것이라고 말했다.\n의회 투표는 하이베트 알할부시 (Haibet Al-Halbousi) 의장이 의장을 맡고 261명의 의원이 참석한 세션에서 진행되었다.",
       "tried": true,
-      "count": 5,
+      "count": 4,
       "sources": [
         "شفق نيوز"
       ],
@@ -508,17 +632,12 @@
         {
           "titleKo": "샤파크 뉴스.. 이라크 공산당, 알자이디 내각 완성 거부",
           "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSW9qaFdDTzluTy02VlBqV1doMUQ0c3d6a2dkVmp4NkVicUoxQngyaHdhNGN5TjF2Yy1nSTZoMldkN2JDaWJla3ZaUGE5NUhobXltMTFGNFpndGk4dk4xd2QyLXEybEUxalhIcVZzcmlfMmhORjRmRmJxLUtzT1o1Y25HdURfQ1UzRVRVck53?oc=5"
+          "link": "https://shafaq.com/en/Iraq/Iraqi-Communist-Party-rejects-Al-Zaidi-s-completed-cabinet"
         },
         {
           "titleKo": "샤파크 뉴스.. 나자프 성직자가 이라크의 새로운 내각 직위를 비판하다",
           "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPc3cyNTBxbXRRZUswSEIyNldUekhKVHl4RnNkV293d2k0OGhjQWFkcDI1cXh6TDNmeThQLTZ3WEw5QmVKTXlUZkpRZS1zejMwcnphUXR2NTFlMHJNZDd6RkhBU0Y5NjFVbWtqaUxxbzliLWUzRndUdk1nZktjLXhmVUNrUVE?oc=5"
-        },
-        {
-          "titleKo": "CF, 이라크 정부 완공 축하",
-          "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBMQ2E3VEwwNDNMSVZJRW8ybV9COFIxdE5fTGpaZFFPNlN3aEQyeFQ4NXBldWozNUJLejNuTUtxYVBidjNQOTV6RzVOWXdBbGpBejBUNnZ3YVF3a0RPejV6Ym5WUFc0Q1E3S1h3S3ZMdkNtUEVZSGc?oc=5"
+          "link": "https://shafaq.com/en/society/Najaf-cleric-criticizes-Iraq-s-new-cabinet-posts"
         }
       ],
       "tag": "정치·선거",
@@ -716,10 +835,9 @@
       "body": "10월 15일, 이라크 의회는 공석이었던 장관직과 3명의 부총리직을 승인함으로써, 심각한 경제 및 안보 문제에 직면한 이라크 정부 구성을 완료했다.\n이번 회의에서 의원들은 나예프 알샴마리 국방부 장관, 야세르 알말리키 내무부 장관을 비롯해 기획부 장관, 문화부 장관, 고등 교육 과학연구부 장관 등 11명의 내각 구성원을 승인했습니다.\n이라크 의회는 정당 간 합의에 도달하지 못했기 때문에 아직 이민 및 난민부 장관 후보자에 대한 표결을 진행하지 않았다.\n이란 의 지원을 받는 아사이브 아흘 알하크 운동의 고위 지도자이자 지도자 카이스 알카잘리의 동생인 라이스 알카잘리를 포함한 3명의 부총리도 승인되었다.\n미국은 2020년 아사이브 아흘 알하크를 외국 테러 조직으로 지정했으며, 카이스 형제인 라이스 알카잘리를 \"특별 지정 국제 테러리스트\" 명단에 올렸습니다. 워싱턴은 이 단체가 2007년 미군 5명이 사망한 공격을 포함한 여러 공격에 연루되었다고 비난하고 있습니다. 2019년 미국 재무부는 이라크 시위대 사망 사건과 관련하여 카이스 형제에게 제재를 가했습니다.\n내각 승인 후 연설에서 알 자이디 총리는 의회에 감사를 표하고 부총리와 장관들에게 \"최고 수준의 헌신, 역량 및 청렴성\"을 가지고 직무를 수행해 줄 것을 촉구했습니다. 그는 정부가 2월 28일 시작된 미국, 이스라엘, 이란 간의 분쟁으로 인해 이라크가 직면한 특수한 경제 및 안보 문제를 해결하기 위한 노력을 가속화할 것이라고 말했습니다.\n이라크는 현재 분쟁의 여파로 심각한 유동성 부족에 직면해 있습니다. 전쟁 발발 이전에는 호르무즈 해협을 통해 하루 약 350만 배럴의 석유를 수출했으며, 석유 수입이 정부 수입의 약 90%를 차지했습니다.",
       "bodyKo": "10월 15일, 이라크 의회는 공석이었던 장관직과 3명의 부총리직을 승인함으로써, 심각한 경제 및 안보 문제에 직면한 이라크 정부 구성을 완료했다.\n이번 회의에서 의원들은 나예프 알샴마리 국방부 장관, 야세르 알말리키 내무부 장관을 비롯해 기획부 장관, 문화부 장관, 고등 교육 과학연구부 장관 등 11명의 내각 구성원을 승인했습니다.\n이라크 의회는 정당 간 합의에 도달하지 못했기 때문에 아직 이민 및 난민부 장관 후보자에 대한 표결을 진행하지 않았다.\n이란 의 지원을 받는 아사이브 아흘 알하크 운동의 고위 지도자이자 지도자 카이스 알카잘리의 동생인 라이스 알카잘리를 포함한 3명의 부총리도 승인되었다.\n미국은 2020년 아사이브 아흘 알하크를 외국 테러 조직으로 지정했으며, 카이스 형제인 라이스 알카잘리를 \"특별 지정 국제 테러리스트\" 명단에 올렸습니다. 워싱턴은 이 단체가 2007년 미군 5명이 사망한 공격을 포함한 여러 공격에 연루되었다고 비난하고 있습니다. 2019년 미국 재무부는 이라크 시위대 사망 사건과 관련하여 카이스 형제에게 제재를 가했습니다.\n내각 승인 후 연설에서 알 자이디 총리는 의회에 감사를 표하고 부총리와 장관들에게 \"최고 수준의 헌신, 역량 및 청렴성\"을 가지고 직무를 수행해 줄 것을 촉구했습니다. 그는 정부가 2월 28일 시작된 미국, 이스라엘, 이란 간의 분쟁으로 인해 이라크가 직면한 특수한 경제 및 안보 문제를 해결하기 위한 노력을 가속화할 것이라고 말했습니다.\n이라크는 현재 분쟁의 여파로 심각한 유동성 부족에 직면해 있습니다. 전쟁 발발 이전에는 호르무즈 해협을 통해 하루 약 350만 배럴의 석유를 수출했으며, 석유 수입이 정부 수입의 약 90%를 차지했습니다.",
       "tried": true,
-      "count": 6,
+      "count": 5,
       "sources": [
         "Agenzia Nova",
-        "Demócrata",
         "Yeni Şafak English",
         "Iraqi News",
         "Vietnam.vn",
@@ -729,12 +847,7 @@
         {
           "titleKo": "이라크: 의회, 정부 구성 완료, 11개 장관 임명 승인",
           "source": "Agenzia Nova",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOd3l1VTdoZUt0d3hvaEs5LXh0WjZRMFQtN2hIVlF4TEc0VUE3eHRzZy1tREVXNEJ6eE5PYjcwOEtqNUdXNVR3eXYtZGRDdVh1dmdsTkJ1d2c1M2RzZ2tETldxU1BtcjlVNHB3SVhmVFcxanNlcmVZZzR6aU54d05XS2R2bC1iU1hwUFNKb2lURkpqTnhmbWFFaVQ4dFY0YzBLTExzTGc0V3VsazJ6d3ZleWJvMXVNV25Uc2ZjWURwRQ?oc=5"
-        },
-        {
-          "titleKo": "이라크 의회는 선거 5개월 후 새 정부를 완성합니다.",
-          "source": "Demócrata",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUWNadWU0dGFRV2RDT04wOURhOEJMTmF6bVNXb2dQU1NELXhGVzFMcWRncXQ0QUdCdDJocTZROUFXekZwS01yMXpaM2ZSczAxYjAxT05QUWFWWjB3d0swVVFLOFhuaFdmaUE3ZUdrTEZnNER3RGNFdHBuSklMQ2FvR0NxVS1RWW40ZVlheXRwQUVLdEpJZlFodHJEd24zMG9QUE1RTGJDTkt3RE81NU92NERabVBEVXNWNTN3NG4wWEE5d9IBxwFBVV95cUxQYWhXUXFReEFNRnhBVURmQzVlbk12V2gtSnZGRmdjT2xmWk0yU3EtZEE5MlhraU15Z2gzaEVLeTZ2VjdNWTIyYnZsaUh6S2oyVmNRUEsyX0RheVRmczM3NU5hOWZjLXJadGV5b3pqX2FrU1JncUpfZWRxQ3g2WEFrQ1FudGpXZDFlTEZUbmREd2VzV2tBLVlEMGVIZjJSQnh0ekZjZTZlMHRGUGR5c0NwWDROLUdwMmE2RXIyZFlscUFNYW5INXpj?oc=5"
+          "link": "https://www.agenzianova.com/en/news/Iraqi-parliament-completes-government-formation--11-ministerial-appointments-approved/"
         },
         {
           "titleKo": "이라크 총리, 의회가 11명의 장관을 승인한 후 내각 구성 완료",
@@ -762,12 +875,41 @@
       }
     },
     {
+      "title": "وزيرة الخارجية تصل بغداد للمشاركة في اجتماعات منظمة التعاون الإسلامي",
+      "source": "أربيك",
+      "link": "https://pagearabic.com/news29786.html",
+      "date": "2026-10-16T10:26:50.000Z",
+      "lang": "ar",
+      "titleKo": "외교부 장관이 OIC 회의에 참여하기 위해 바그다드에 도착합니다.",
+      "url": "https://pagearabic.com/news29786.html",
+      "body": "وصلت وزيرة الخارجية وشؤون المغتربين، الدكتورة أفراح عبدالعزيز الزوبة، اليوم الجمعة، إلى العاصمة العراقية بغداد، للمشاركة في أعمال الدورة الثانية والخم\nرئيس مجلس القيادة الرئاسي يلتقي المديرة العامة لصندوق النقد الدولي [ 18/09/2023 ]. لجنة تحديد الأقاليم تستمع الى دراسات عن التحديد الإداري وتقسيم الموارد ومعايير اختيار العاصمة ومقومات عدن الاقتصادية [ 08/05/2015 ]. جمعية الابداع بالجوف تختتم انشطتها التوعوية لدعم مخرجات الحوار [ 08/05/2015 ].\nتقرير آلي مُجمَّع بالذكاء الاصطناعي من 3 مصادر، آخر تحديث 16:10 — يُحدَّث تلقائياً مع كل مصدر جديد. روابط الأخبار الأصلية أدناه.\nهذا الخبر منشور في موقع المشهد اليمني، ونحن نعرض عنوانه ومقتطفاً منه فقط. حقوق المحتوى محفوظة لأصحابها.",
+      "bodyKo": "아프라 압둘아지즈 알자우바 (Afrah Abdulaziz Al-Zawba) 외교부 장관은 오늘 금요일 이라크 수도 바그다드에 도착하여 두 번째 세션의 작업에 참여했습니다.\n대통령 직속 리더십 위원회 의장이 국제통화기금의 상무이사를 만나다 [2023/09/18]. 지역결정위원회는 Aden의 행정결정, 자원분할, 자본선정기준 및 경제적 구성요소에 관한 연구를 경청한다 [08/05/2015]. Al-Ibda 'a Association in Al-Jouf는 대화의 결과를 지원하기 위한 인식 활동을 마무리합니다 [08/05/2015].\n3가지 소스의 자동 AI 합성 보고서, 최종 업데이트 16:10 — 각 새 소스에 대해 자동으로 업데이트됩니다. 원본 뉴스 링크는 아래에 있습니다.\n이 뉴스는 예멘 현장 사이트에 게시되며 제목과 발췌 내용만 표시됩니다. 콘텐츠에 대한 권리는 해당 소유자에게 있습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "أربيك"
+      ],
+      "related": [],
+      "tag": "한국·외교",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
       "title": "Faiq Zidan: The Iraqi Parliament Must Amend the Constitution",
       "source": "کردپرس",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ2RZOEU4U1B2cV80aWNGekNDNG5Jejdnb2plbmJmM1lqNVFscmhKRTJhWTZSZHlmMkJIREhzc19oZHYycGowSGNZS016T0l3ZXFsMVBkMkU4aU5PR1hCSmd3RG51dkxKU2dMVmwyUU11Y0U1Q1Bvby1oQXpmUFhFZnlMNlRLNE90MFM5WVgwREM3V053RVhWQ2tlb1g0ZnJRcW5xWWNLUFRRQ0N2R1o0?oc=5",
+      "link": "https://www.kurdpress.com/en/news/2800834/Faiq-Zidan-The-Iraqi-Parliament-Must-Amend-the-Constitution-x3asdtnm",
       "date": "2026-10-16T10:13:04.000Z",
       "lang": "en",
       "titleKo": "파이크 지단: 이라크 의회는 헌법을 개정해야 한다",
+      "url": "https://www.kurdpress.com/en/news/2800834/Faiq-Zidan-The-Iraqi-Parliament-Must-Amend-the-Constitution-x3asdtnm",
+      "body": "Faiq Zidan, the head of the Supreme Judicial Council of Iraq, referred to the problems existing in the implementation of the constitution and the interpretation of its pr\nAccording to Kurdistan Press, Faiq Zidan, the head of the Supreme Judicial Council of Iraq, announced in a message on the occasion of the 21st anniversary of the referendum on the permanent Iraqi constitution in 2005 that there are problems in the implementation of the constitution and the interpretation of its provisions, and the parliament must take action to amend this law.He emphasized in this message: More than two decades after the drafting of the Iraqi Constitution, experience has shown that there are problems in implementing the provisions of this law and interpreting it, which have disrupted the exercise of the powers and mechanisms foreseen in the Constitution.",
+      "bodyKo": "이라크 최고사법위원회 (Supreme Judicial Council of Iraq) 의 수장인 파이크 지단 (Faiq Zidan) 은 헌법 시행에 존재하는 문제와 헌법 해석에 대해 언급했다.\n쿠르디스탄 언론에 따르면, 이라크 최고사법위원회 (Supreme Judicial Council of Iraq) 의 수장인 파이크 지단 (Faiq Zidan) 은 2005년 이라크 영구 헌법에 대한 국민투표 21주년을 맞아 메시지를 통해 헌법의 시행과 조항의 해석에 문제가 있으며, 의회는 이 법을 개정하기 위한 조치를 취해야 한다고 발표했습니다. 그는 이 메시지에서 다음과 같이 강조했습니다. 이라크 헌법 초안이 작성된 지 20여 년이 지난 후, 예",
+      "tried": true,
       "count": 1,
       "sources": [
         "کردپرس"
@@ -785,10 +927,14 @@
     {
       "title": "Kurdistan Democratic Party of Iraq takes over the presidency of the Iraqi Military Academy",
       "source": "کردپرس",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeUhScFl2TF9pVkxHTmxuUDk3U1dnWXU4WWNwWENlZVdMWWJZYzZyYVJWMFhyTjBtTmFHRDY3N1BxdnRzeVpranYyZW94amVRMlZMRmFCOEtmVEFYcTlPV3liZFFMak9SV3JlMFZMejVMMFMwdzMxbnhGLV9nV0Z2T19JZnk3ay1lVk1GWWwzWW9hS0NKRzFLcmgyNFBDcTI1djVtWkFTcWp1ZkN5SV80Vk9ETUZ4cHJsbG1udFdjR200Q1EyY3Fsdl96UkxtdVgxQzg3a3lqVmc?oc=5",
+      "link": "https://www.kurdpress.com/en/news/2800833/Kurdistan-Democratic-Party-of-Iraq-takes-over-the-presidency-of-the-Iraqi-Military-Academy-vvunfryr",
       "date": "2026-10-16T10:10:13.000Z",
       "lang": "en",
       "titleKo": "이라크 쿠르디스탄 민주당, 이라크 육군사관학교 총장 취임",
+      "url": "https://www.kurdpress.com/en/news/2800833/Kurdistan-Democratic-Party-of-Iraq-takes-over-the-presidency-of-the-Iraqi-Military-Academy-vvunfryr",
+      "body": "Brigadier General Nazir Asim Agha announced on his personal page that he has been appointed as the president of the Iraqi Military Academy.\nIn announcing his inauguration as the president of the Iraqi Military Academy, Brigadier General Nazir Asim Agha announced his plan to improve the level of military education and develop the country's military academies. He described his appointment as the result of Massoud Barzani's proposal and the signature of Ali Zaidi, the Iraqi Prime Minister.\nHe wrote in this regard: \"I began my activity as the president of the Iraqi Military Academy at the suggestion of Massoud Barzani and with the signature of Ali Zaidi, the Iraqi Prime Minister.\nIn my new position, I will do my best to raise the process of military education to the highest possible level.\"My main goal is to raise the level of military academies to the highest standards so that they are on par with the world's advanced academies in terms of science and military and become a source of pride",
+      "bodyKo": "나지르 아심 아가 (Nazir Asim Agha) 준장은 자신의 개인 페이지에 이라크 육군사관학교의 총장으로 임명되었다고 발표했다.\n나지르 아심 아가 (Nazir Asim Agha) 준장은 이라크 육군사관학교 총장 취임을 발표하면서 군사 교육 수준을 향상시키고 사관학교를 발전시키기 위한 계획을 발표했다. 그는 마수드 바르자니 (Massoud Barzani) 의 제안과 이라크 총리 알리 자이디 (Ali Zaidi) 의 서명으로 자신의 임명을 설명했다.\n그는 이와 관련하여 다음과 같이 썼다. \"나는 마수드 바르자니의 제안과 이라크 총리 알리 자이디의 서명으로 이라크 육군사관학교 총장으로서 활동을 시작했다.\n새로운 위치에서 군사 교육 과정을 가능한 한 최고 수준으로 끌어올리기 위해 최선을 다하겠습니다. \"저의 주요 목표는 사관학교의 수준을 최고 수준으로 끌어올려 과학 및 군사 측면에서 세계 선진 사관학교와 동등한 수준에 있고 자부심의 원천이 되는 것입니다.",
+      "tried": true,
       "count": 1,
       "sources": [
         "کردپرس"
@@ -837,13 +983,14 @@
       "tried": true,
       "count": 2,
       "sources": [
-        "DailyForex"
+        "DailyForex",
+        "أخبار العالم اليوم"
       ],
       "related": [
         {
-          "titleKo": "USD/IQD 환율: 주말에 USD/IQD 환율은 어떻게 변했나요?",
-          "source": "DailyForex",
-          "link": "https://news.google.com/rss/articles/CBMinAZBVV95cUxNWGhWQU9kX2tlcEpDR3ZwTXJSSER0N25hOTVKSVVBUG1vaU53eWwteUI3cUdIQXNsaTlUUVYzYjFDQURPYTliSzM1dTYxbEtuSEFyOW5QV0hDeGY3eGh4Tnl2N3AyVlB1M1M5OVhFdU5sSGJrQU55RVJ3QVF2ZDAzS3Raajd2bUdfbTV6V3R5a1d3SGVvWFlxQjZkSzl6VGQ1WWM5bUNSbVNrM0xaOFI5T0w2ZVVMdXdvbUVDYkRwcTBiWF9uQkk5OEVTZm1RQ0lSb3ZRdEFXSzlzV2F2aU1pSG90MldJa2tvMnE2cnBKVlhhSUZibTFaMWNvUmJWa0t5YTBKeXNnT2t5Ym5LdXUtY21DdHZ5Zk5kNGRyNW9YQ2RueHNXcmxIT1dDSklKeG1pWGxESmxJR2V3ejVrQmtaSjlMT0hicndNOFZ1YUtRZTgyRlVpaUczLVZ4NW5kaG9pNHBVbk1RWDM4RTFwZFBpckNpLXNrbUNtNFIwRnJ1U3lqM0dQalZKSUlfNDZrRTRYNldGUnB3ZzhoaEFjRWxRLWxHVmZPN2JxVm9abFQwbTlsYXhnQURCdnZkbjJ2M3F1VFZIcWE4RExFNGstSnI2WHY4WGRhUWFHV0JYMFBqaU90Y2tyTkRiQ1lmY1lhZVYwOFRCYnQ4QUY4WU0weWJ0Um9tT0pHVTVQYU1BN0drTTdsMXVyUkxrb1hZeGo0MkVmZkhVdkxydjQ4N3Ftak5wanNLTXhEVW0wN012WWxPOFFxLU40SXpySUdEOVgxdGNBbEpGX09FejlLNHE5VVh4Tmc0VGhKSWpqX05GVE5DZ0VqNzU5VF9sR1JnX0NkOXg2bFZhR2RtcUNkNk9YMjhsR2JRV0YyMG55bVg1MXUzTk1QVGpYNjg2RXRGMkxCWml3bjZrOGZ2MUhYaTBiSVlNTkFkRE1uR1owb0dWVG00NWQ4ZVg0czNaNjkzbDlrcnBSR0xHY2RjN3UyNm5ZVnlndHhRLVJNbXUtNDZRTDBmY1piYzlLQ3hHakoxcEFZWlU1S2FxMTRiWXdVVjhS?oc=5"
+          "titleKo": "오늘 16/10/2026 금요일 이라크 디나르에 대한 이라크 달러 가격.. 즉시 업데이트 - Al-Mashhad 채널 및 플랫폼",
+          "source": "أخبار العالم اليوم",
+          "link": "https://news.google.com/rss/articles/CBMi4gRBVV95cUxPdkYyczUtdFNXY2xkdnlqeGRuaVQwMG80VlppOE1fVlc1QTNrMHphWWtUbmFKeElEMWlpU2NSQVpBWW1mR21xdWlRXzAxNl9iRUJXMjhxYmNLTU1ZQXc1RWJFSVV6UGEyY2xGTmVrT2ZpbEc0VDZqaHQyN3JMN3pCTkdueTR3VDVMMmR5TlVDWWVLQzlPWGlRQlF4WWhvSUJycHJKaWNMZ0VoaHVORmhaYTVVc1RJSVFLS1NhRnBrLVlEbDgtRU1nc2x0VUtyYjlqb09xdkE1bURDb21qVy1na204TVRaU08zbHczeHhPNC1Zenk3ME1kWGl3aUZaMHh0UHZQY1huLUtZWGZ3QmtGM2RTUUlvM0MySTVrUHBIVUhQTzZsamJIV2w5UUZ5bHhIclFhV2hVSlVFZUdyMFFZREJzNGVJcUJtMGdDSzNCT09iY1hVVkZDdFBVRXJNTW1jQXduOWt3T2FfUmo1MF91eVQ3Zy1wTnFwV1hMSVBSZjRiRWs1LVRwUWF4X3poOWNaRkFPWDUxM21jbFFpWmstSGJMX1hYd0dzN3duUDFvX0hFUnhWMlZ3b18ta0IydHp3T09xb2RnQmQwRXNaQjBhVjNGczZhdjJJVmVUT1FkR1A1S21XUFo4dU1FU1VGYVBoSktJUXRCZ0tOWWt2LXBFUDVUUDhDRXZJMEljbmIwRjFoRUpBdFJ3OXlJNk93eENIOGdaTWR6cWlaajR0UHlKSW5WU1ZlVlRYZ2pqQUZscmk1b2tnR2p0d1k5T0M1R0NKR2pENUt3c05jRm9aY21GclJn0gHnBEFVX3lxTE5xNmU3WTB3ZWJLUXhhM2xVeWFEVl9YT210MHpZMURDSzRMYU1BYUl0N2Y3UTJtdU1oTDh0UGJuMlFibVFmdmRJczRSeFZWYkh5V3VqLWxJVjZIQUhGSWsyMldZeXVzY2xxN2h2TXYxVTBYZ3pDT1d1MjUxNmdCZ2U2YXgxakt6RFpIdk9UdjdlMkgzRWxZRTlhazhBeUltM01MaDNCWURuSmtuZnVtZ2ZrMjZZMi1Nc1JCUjRQQWd4dDluRHZfdGpTWXRsQVpNS0plMExqQkRVaG9jTXZaTzVYWE82aHZRR0laWHhFZG9mdl9RRzhGcDc0c2lmSy10dnlaMEUyMEhDUC14eWhNbmI0MmhZdWVKZHNKRHFMa3RBRWJONE9fYUJTWmlkZHlYTzV0WDM0cEpHZVg4X2VlYzM1eVd0Wl9lMEE0ZGJuQnMtZGt5ejYtRzRBTTFlcVkzLUFXRU5QbERLekpyaDRwZGhObjR3LXdQWV9VSndfUmZUNElIdHA1WGJFTjVfQ2gyMDFFQjNvdFZzdTUtVzZnbVRkdVlZWjVNYm5hVjI3d3M4eVNSeUtTMGhXVWR4SGs0YWtKMkh5YmlMdmc0WDctLWltQnhya2FlbTZFZ1ljVS1XREN4RFlabWxZUUhtanY0TVNKZFowSkE3MGlwdDFLRFJxclhFNVYtNFYxMktFSUJJckNqOG4ycHVNcTdFSzUwRWdMeXYxdXpWd0drX3JGRHhBVFJMY0NRdklwUWJ2YWdJRG53dWJCMU54enptcG1QR0xQekpYT05mbUNQRHFlVk9tRTVJd2hTMA?oc=5"
         }
       ],
       "tag": "경제·유가",
@@ -884,24 +1031,18 @@
       }
     },
     {
-      "title": "Iraq parliament approves remaining cabinet posts and deputy prime ministers",
-      "source": "Mezha.net",
-      "link": "https://mezha.net/eng/news/mezha-f715d3e1a01071770c9becff_iraq_parliament_approves/",
+      "title": "Iraq parliament fills Cabinet posts, naming a US-sanctioned deputy prime minister",
+      "source": "AP News",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNVNDa0VPNWh0VGhTMEFaLTFrRUcwd28yOC1tRWpGUHp5SUFQQ0tpOElpQ2hWQzdrNnJ1RUFTamttYW00TG9ySVRNQzdNR29VVnRrNTlVSkVWcjJjYjRaSUhPZFhTYU5hR3J0Y1hIQlMxaVlpRk5aUDJ0WF91bnZfQzJZU3RpanM0YXNacGNCMDlmeGF6cG1BeFdfVFZDRjVKV2NqUzVBQ0Y5akVUMDdv?oc=5",
       "date": "2026-10-16T09:32:14.000Z",
       "lang": "en",
-      "titleKo": "이라크 의회는 나머지 각료직과 부총리직을 승인한다.",
-      "url": "https://mezha.net/eng/news/mezha-f715d3e1a01071770c9becff_iraq_parliament_approves/",
-      "body": "The vote fills 11 cabinet positions and approves three deputy prime ministers, while a separate ministerial nomination remains unresolved.\nIraq’s parliament on Thursday approved 11 ministerial portfolios, including defence minister Nayef al-Shammari and interior minister Yasir al-Maliki, lawmakers said. The posts had been vacant since Prime Minister Ali al-Zaidi’s government took office in May.\nLawmakers postponed a vote on the nominee for migration and displacement minister because of disagreements among political parties. They also approved three deputy prime ministers, including Laith al-Khazali, a senior leader of the Iran-backed Asaib Ahl al-Haq movement.\nIn 2020, the United States designated Asaib Ahl al-Haq as a foreign terrorist organisation and its leaders, brothers Qais al-Khazali and Laith al-Khazali, as specially designated global terrorists. The US has accused the group of carrying out attacks against US and coalition forces in Iraq.",
-      "bodyKo": "이 투표는 11개 내각 직위를 채우고 3명의 부총리를 승인하는 한편, 별도의 장관 지명은 여전히 해결되지 않고 있다.\n이라크 의회는 목요일 Nayef al-Shammari 국방장관과 Yasir al-Maliki 내무장관을 포함한 11개 장관 포트폴리오를 승인했다고 의원들이 말했다. 지난 5월 알리 알자이디 총리가 취임한 이후 이 직책은 공석이었다.\n의원들은 정당 간 이견 때문에 이주 및 이주 장관 후보자에 대한 투표를 연기했다. 그들은 또한 이란의 지원을 받는 아사이브 알 알 하크 운동의 고위 지도자인 라이스 알 카잘리를 포함한 3명의 부총리를 승인했다.\n2020년 미국은 아사이브 알 알-하크를 외국 테러리스트 조직으로, 카이스 알-카잘리 (Qais al-Khazali) 와 라이스 알-카잘리 (Laith al-Khazali) 형제를 국제 테러리스트로 지정했다. 미국은 이 단체가 이라크에서 미군과 연합군에 대한 공격을 수행하고 있다고 비난했습니다.",
-      "tried": true,
-      "count": 6,
+      "titleKo": "이라크 의회는 각료직을 채우고, 미국이 승인한 부총리를 임명한다.",
+      "count": 4,
       "sources": [
         "The Arab Weekly",
         "PressTV",
         "The National",
-        "AP News",
-        "UA.NEWS",
-        "Mezha.net"
+        "AP News"
       ],
       "related": [
         {
@@ -918,16 +1059,6 @@
           "titleKo": "이라크 의회는 미국이 허가한 PM 차관을 포함한 주요 내각 직위를 승인합니다.",
           "source": "The National",
           "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOLXY3MHk2NVdyLTZRUlFYbXdPa2JYOWFaNW1PSUlobC10ejNQeHJUZUxmVUdSZTZpcFVuZE1ZVFBxa3R0SGV0dklZc0ZfVmJHdGFzRUlPUFI1bkFJcmhCT2pvc0paamN0QV9pZC1tV3JwbHlfZXRDRHVSaGU0NXlYV3hpa3d0T2pWQ29MMXVVWkx4UllZOGE0bXQ1eTdxeVl6c2gxTk1PWGxXazVDQ0M3R2xvX0FldmF6ZWxfYjhxREZKS21NVElLbDV4UQ?oc=5"
-        },
-        {
-          "titleKo": "이라크 의회는 각료직을 채우고, 미국이 승인한 부총리를 임명한다.",
-          "source": "AP News",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNVNDa0VPNWh0VGhTMEFaLTFrRUcwd28yOC1tRWpGUHp5SUFQQ0tpOElpQ2hWQzdrNnJ1RUFTamttYW00TG9ySVRNQzdNR29VVnRrNTlVSkVWcjJjYjRaSUhPZFhTYU5hR3J0Y1hIQlMxaVlpRk5aUDJ0WF91bnZfQzJZU3RpanM0YXNacGNCMDlmeGF6cG1BeFdfVFZDRjVKV2NqUzVBQ0Y5akVUMDdv?oc=5"
-        },
-        {
-          "titleKo": "이라크 의회, 미국이 인정한 알 카잘리 (Al-Khazali) 를 아샤르크 알-아우사트 (Asharq Al-Awsat) 부총리로 임명",
-          "source": "UA.NEWS",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZHpGM2hNbmVIV1NuVzhyd3hrX2wxbG9reWNKXzlRanV3Q3N0akZ0ZkxSejA0VnZpN1lnUDhrejQyUTJJbXR1RGdZbVBweUdKaGp6OVdrazR5VElLVlp3NXUzc1RLbXFjWE0yZElrbGZRMHhfOS1peWJxZjdNS0ZQd3dPRm14dV9vR3BMRU1scGhRU3JKWE10YVFqemlyOGRnU0RNWlJEdWFFYWh5bnlWOHRSMXIydw?oc=5"
         }
       ],
       "tag": "정치·선거",
@@ -1254,56 +1385,6 @@
       ],
       "related": [],
       "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq vows not to allow attacks on Saudi Arabia from its territory: Prime minister",
-      "source": "Anadolu Ajansı",
-      "link": "https://www.aa.com.tr/en/middle-east/iraq-vows-not-to-allow-attacks-on-saudi-arabia-from-its-territory-prime-minister/4089137?lang=sq",
-      "date": "2026-10-15T23:03:44.000Z",
-      "lang": "en",
-      "titleKo": "이라크는 자국 영토에서 사우디아라비아에 대한 공격을 허용하지 않겠다고 서약: 총리",
-      "url": "https://www.aa.com.tr/en/middle-east/iraq-vows-not-to-allow-attacks-on-saudi-arabia-from-its-territory-prime-minister/4089137?lang=sq",
-      "body": "Ali al-Zaidi condemns attacks on Saudi airports during Riyadh visit as crown prince backs Baghdad's efforts to promote regional stability | Anadolu\nEDITION Iraq vows not to allow attacks on Saudi Arabia from its territory: Prime minister Politics Middle East Iraq vows not to allow attacks on Saudi Arabia from its territory: Prime minister Ali al-Zaidi condemns attacks on Saudi airports during Riyadh visit as crown prince backs Baghdad's efforts to promote regional stability Hussien Elkabany and Sahin Demir 15 October 2026 • Update : 15 October 2026 İSTANBUL Iraqi Prime Minister Ali al-Zaidi said Wednesday that Baghdad would not allow its territory to be used to launch attacks threatening Saudi Arabia or other countries in the region, as he met Saudi Crown Prince Mohammed bin Salman in Riyadh.",
-      "bodyKo": "리야드 왕세자가 바그다드의 지역 안정을 위한 노력을 뒷받침함에 따라 알리 알자이디가 리야드 방문 중 사우디 공항에 대한 공격을 비난하다 | Anadolu\n판 이라크는 자국 영토에서 사우디아라비아에 대한 공격을 허용하지 않겠다고 서약합니다. 총리 정치 중동 이라크는 자국 영토에서 사우디아라비아에 대한 공격을 허용하지 않겠다고 서약합니다. 알리 알자이디 총리는 리야드 방문 중 사우디아라비아 공항에 대한 공격을 비난합니다. 왕세자는 바그다드의 지역 안정을 위한 노력을 지지합니다. 후시엔 엘카바니 (Hussien Elkabany) 와 사힌 데미르 (Sahin Demir) 2026년 10월 15일 • 업데이트: 2026년 10월 15일 이스탄불 이라크 총리 알리 알자이디 (Ali al-Zaidi) 는 수요일 바그다드 워 (Baghdad wo) 가",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Anadolu Ajansı"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "ISIS Appears to Regroup in Iraq After US Departure",
-      "source": "الحرة",
-      "link": "https://alhurra.com/en/46703",
-      "date": "2026-10-15T22:18:14.000Z",
-      "lang": "en",
-      "titleKo": "ISIS, 미국 출발 후 이라크에서 재집결하는 듯",
-      "url": "https://alhurra.com/en/46703",
-      "body": "Small ISIS units are moving from areas of northern Iraq toward the outskirts of Baghdad, where they are working to arm their members and reorganize fighters who previously pledged allegiance to the group, according to a source at Iraq’s Federal Intelligence Agency (FIA) who spoke to MBN. The source, who requested anonymity because he was&hellip;\nThe movements suggest that the group is seeking to reorganize after U.S. troops withdrew from the country on Sept. 30, the source said, although other officials MBN spoke with said ISIS did not pose a serious threat.\nEach unit consists of three to five members. The FIA source said the groups mostly seemed focused on securing weapons, recruiting new members and reestablishing connections with people who had since severed ties.\nIntelligence officials have managed to identify the members of only three such units. But some teams include people Iraqi intelligence has yet to identify.",
-      "bodyKo": "MBN과 통화한 이라크 연방정보국(FIA) 소식통에 따르면 소규모 ISIS 부대가 이라크 북부 지역에서 바그다드 외곽으로 이동해 대원들을 무장시키고 이전에 이 단체에 충성을 맹세했던 전사들을 재편성하기 위해 노력하고 있다고 한다. 익명을 요구한 제보자는…\n이러한 움직임은 지난 9월 30일 미군이 철수한 이후 그룹이 재편성을 모색하고 있음을 암시한다고 소식통은 전했다. 그러나 MBN의 다른 관계자들은 ISIS가 심각한 위협을 가하지 않는다고 말했다.\n각 유닛은 3~5명의 멤버로 구성됩니다. FIA 소식통은 이들 그룹이 주로 무기 확보, 신규 회원 모집, 이후 관계가 단절된 사람들과의 관계 재구축에 초점을 맞춘 것으로 보인다고 말했습니다.\n정보 당국자들은 그러한 부대의 구성원을 단 세 명만 식별했습니다. 그러나 일부 팀에는 이라크 정보국이 아직 식별하지 못한 사람들이 포함되어 있습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "الحرة"
-      ],
-      "related": [],
-      "tag": "치안·테러",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
