@@ -1,14 +1,8 @@
 {
-  "generatedAt": "2026-10-16T18:58:57.119Z",
+  "generatedAt": "2026-10-16T23:50:15.054Z",
   "sa": {
     "label": "중대재해·산업재해",
     "items": [
-      {
-        "title": "대구 학교 급식실 산재 3년간 178건···노조 “화상 치료비 지원·인력 충원해야”",
-        "source": "뉴스민",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5sSEQ0SmlzYkZaMXJsaE9EX3hjalBreUEyWF9UcUNnaHp5Ql84bURtUl96NXB0M3Z6SDgzTV93TWVoWlRyTXZENmFoWTZSRkk?oc=5",
-        "date": "2026-10-16T15:06:06.000Z"
-      },
       {
         "title": "[아유경제_사회] 노무법인 권리, 몽골 외국인 근로자 산재 무료지원 협약 체결 추진",
         "source": "아유경제",
@@ -44,6 +38,12 @@
         "source": "글로벌뉴스통신GNA",
         "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5DdFJPbU9Nd3hwQ3l6cnVhNHd6T25ZWldia2ZYd2sweXBnRHJKMVRFeWFJOE5rYVc0MTloVUFUV1RORi16QTRwTjY3YTNza2VFUXZ3NTFEM2lMYnhSY0loZzZmMGJ4cnhiNTV3cGpBWDV2bjhz?oc=5",
         "date": "2026-10-16T11:42:04.000Z"
+      },
+      {
+        "title": "강화군, 중대재해 제로 향해 현업근로자 안전보건교육… 실제 재해 사례로 경각심 높여",
+        "source": "더글로벌타임즈",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB0dXpubU1QT0c0RDdYMFE5Slc4dXE1MHRtTWc4U19iM0VOSlJvem5NNGpuYW03LVJzaU5URl9tN2VmRENMX0Z4amV5Ty1QV09GYnROWGp2MkRQMGl3ZVk2clFXVTFnanhlZGtxU1VnWljSAXBBVV95cUxQdHV6bm1NUE9HNEQ3WDBROUpXOHVxNTB0bU1nOFNfYjNFTkpSb3puTTRqbmFtNy1Sc2lOVEZfbTdlZkRDTF9GeGpleU8tUFdPRmJ0TlhqdjJEUDBpd2VZNnJRV1UxZ2p4ZWRrcVNVZ1pY?oc=5",
+        "date": "2026-10-16T10:57:28.000Z"
       },
       {
         "title": "제주 양식장 추락 사망...광주노동청 산재 불승인 '뭇매'",
@@ -158,6 +158,42 @@
     "label": "감염병",
     "items": [
       {
+        "title": "[AI그래픽뉴스] 올겨울 독감 대유행 경보… 백신 접종, 지금이 최적기",
+        "source": "뉴스핌",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9YcjNfUkR0aGJXSXZMZHlOM1h1WDQ3VlZ5TC11eF95QUx0dXBTUGpRbEIwU2hMWTdvSVlLNGtVWnJpYXdjMjNGbzJmdkVDSGVtVU9oczhySXdmb3hi?oc=5",
+        "date": "2026-10-16T23:00:00.000Z"
+      },
+      {
+        "title": "미국 홍역 확진자 4,410명…일주일 새 330명 증가, 어린이·청소년 감염 확산",
+        "source": "라디오코리아",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9sR2xFcXVTdzZjNHY4d1NvaG9tRE1kb2lHeEV6X1NQejRsMFA0Xzh4ZlA3SUdkN0RTQnBVWkUtRlYxdFFLTHhTSUJXRkZKTm5GYnpKakxqMUM0OHBsNzNneUtiRkE?oc=5",
+        "date": "2026-10-16T22:23:00.000Z"
+      },
+      {
+        "title": "미주 홍역 5만5792명…전년 동기의 4.8배",
+        "source": "메디포뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5LMnhLTUFTRTgwb1BnNDE3OFFtNWNUUFVKWjNsS2Jnbi1XenUtYUo1QmlzNEc2Y2dZVTdsLWx6cVdrZ2FJRXRvdzEwS1hkelplX1JpajgxaEJHMlVPZG1fUnJtVW4?oc=5",
+        "date": "2026-10-16T21:42:17.000Z"
+      },
+      {
+        "title": "7~12세 독감 의심환자 비율 반등…전체는 2주째 감소",
+        "source": "메디포뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5obldfTEJTdGdZcEJMVlZLNk9ZbnZvODdkSkY2NHJWLS1BUHpwd0NSZ0V3WFdvSENudWZ5c0ZBd1dJV3RvTGpDalhoUGFQVjFyVVE3SngxYkl5NmJuUzZSYno4dlc?oc=5",
+        "date": "2026-10-16T21:02:02.000Z"
+      },
+      {
+        "title": "\"맞춤형 암백신, 재발 얼마나 막았나\"…'D-6' ESMO 관전 포인트는",
+        "source": "뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SdnBfWkMzMV8tWW1HMngzV3d1QkZfMU1fcnNRNV94X0tkTWR5Z19oel9RNllYWDVUYmlRRld2a2pHbXF5a0pBSkNyQlhULUd0SS1ycnF5LVdrTmtfNUp4OQ?oc=5",
+        "date": "2026-10-16T21:00:00.000Z"
+      },
+      {
+        "title": "민주콩고 에볼라 확진 9천명 넘어…지원금 9천억원 행방 ‘깜깜’",
+        "source": "연합뉴스TV",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5MYV9TT185OTdxR3BqQ0hGZDg3aFg5cXAxNTNvQVF0SHZDbncwZ2d5cm9QSHFwYnRfUktVTWtDV3FUcGpvMm5BeGJRUE9hR0NlTDA5bU9kQ0VPeUFDTWRBV2s0S0JKRnc?oc=5",
+        "date": "2026-10-16T19:44:00.000Z"
+      },
+      {
         "title": "민주콩고 ‘에볼라 지원금 1조’ 증발…확진 9천200명 돌파",
         "source": "KBS 뉴스",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1qaGgtWkFtZVZyVTA1dE0wZTFtYjQ3eE9QclhBYVg5YUhqRU9ObHBkMWo3WlBkWXVoSk1ueVplVDRYU0lsenZEQ1E4WHNneC1td3RveHRsWjdVMzQ?oc=5",
@@ -166,7 +202,7 @@
       {
         "title": "민주콩고 에볼라 확진 9천200명 넘어…지원금 1조원은 어디로",
         "source": "연합뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE16RkVSMUpQWUhqR3hLcFR4czQxSzc3eGlhWWlYemNoTXEyWk9CQlFYWGlnUDdWaTdCTWEtSDJhTGJNRHZoRFpkbVR1a0phNko0ZHNHbktYQ2NXdWfSAWBBVV95cUxOUXY5dFl0VnlqTDRuVHpBUnN1azJHV0VocjdBeFNnckRtWWZWRUh4QlNVYlNRV1d3c0Vja2FCNWlVb040VnpWWUNfUGpTYlBiZ215WDVFb1JNR1RkQnZwMEU?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Rdjl0WXRWeWpMNG5UekFSc3VrMkdXRWhyN0F4U2dyRG1ZZlZFSHhCU1ViU1FXV3dzRWNrYUI1aVVvTjRWelZZQ19QalNiUGJnbXlYNUVvUk1HVGRCdnAwRdIBYEFVX3lxTE5Rdjl0WXRWeWpMNG5UekFSc3VrMkdXRWhyN0F4U2dyRG1ZZlZFSHhCU1ViU1FXV3dzRWNrYUI1aVVvTjRWelZZQ19QalNiUGJnbXlYNUVvUk1HVGRCdnAwRQ?oc=5",
         "date": "2026-10-16T17:02:35.000Z"
       },
       {
@@ -192,42 +228,6 @@
         "source": "의학신문",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrT1dfeG1YdUdTNWJDNHZsbV9qSjg5dS1Fd1ZWeGx0S1ZYcVdqLVBEMzB3WTFFeGNMZnRtbUtvSEdGLU5xc20zSExkenc2SHFpY0FoeEtfMTBXUDNJRE1XRkp4QklNTGthdXc?oc=5",
         "date": "2026-10-16T12:38:47.000Z"
-      },
-      {
-        "title": "한국베링거인겔하임동물약품, 차세대 돼지 파보바이러스 백신 ‘파보플렉스 주’ 국내 출시",
-        "source": "농수축산신문",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1TcEo1a050bTBTNnNxVDBUYmp5R1BmdXRGQkVvS3BXQ0k0OExPamxLTDhEclVETGhHWXhDRkVjOTNrd1M5cXdTYWlVZGRNcTBCaFAxMWFIZTBqanhSQ0FYV1htdlZFOWRJQXAwWA?oc=5",
-        "date": "2026-10-16T11:35:31.000Z"
-      },
-      {
-        "title": "코로나19 백신 ‘1차 접종 128만 5909명 완료’",
-        "source": "중앙신문",
-        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQem9JZFdNOHZrejgyZ1lYak11cUJOWV9GOHBISGxRNlV6Sk1UZWFONDIxaG1COWQ4cW9FT1RYdUlNZS0tMWdZQTNTdUdSYmw1eHJxNE0yMUFIaUNQZzYwN3Y5eEV5RlJNRmQxLU9pMkZ5UmF4SVpIMGlfdTYtaWQ2SElRZEpjWHJaOFVpQkVsdC0wazZqVklNSGFqTXROY0gyV2w0eW1IT3ZvYW9MaUlOR3hsdzVlZXE0YVZhNnRrclJ6dTJmUllkR0l0WHA4VUVjVWVIazVEejZ1MXp5dHdSdHZCeHZVWldsT25yTy1pV2Y?oc=5",
-        "date": "2026-10-16T11:26:00.000Z"
-      },
-      {
-        "title": "인천시 ‘신규 확진 15명’...‘누적 확진 5257명’",
-        "source": "중앙신문",
-        "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPZE03emVPRlZvWVpkQ29XbWhVQ1hWaUxUVDVOX0RqN0U0dzJvU3FPRWdCcldpaF9QYm0za1lwWjhXdGhVXzVHV3NXWEhHQnRSdVV2LTl1TTVwVFdobmdKaE01RGJyNVJNbGloQWpyaGxxMkVmUklFczlJVVFsbUgxRWlXWVdGUlpWb2ozZFppQjNBMF9RM25fbERLcDVVdVNNWV9wb25HWTdSdU5faEtEamNUelUyMlpYY3FMaFVPclp5NVA3MmgyUExWa1ZuTjluNzRTc3MwUmhTVncyRmFaWDg2MVRmWmQwTVE?oc=5",
-        "date": "2026-10-16T11:26:00.000Z"
-      },
-      {
-        "title": "일일 신규 확진자 또 700명 넘겼다...‘국내 692명, 해외 유입 39명’",
-        "source": "중앙신문",
-        "link": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxNZFk3S2c5bWd3TnE3dDVLeWJuRW1ScWpLeGduZ1FBWmhHc0J0T040SkNCajJXdTZod2VXX2pCaHRjemk5UnZPM1c0bUJRWGx5YkpPcFBsT2d3NlpKT25TU2pyRUFTTGZDV1ZhbzFQOGxINDRWbHdpZDVGbm5aeUtPYlhFUVozeDhFaVFfTFo2RnpZRktHcGRVNkQ2T0p2bFdHRl9uc1ZkUkVWUnl0aGVHZDY4Q3d5Q1ktVEtORFcwS0M5SkxXZk9DNHlibVBWSTFRdVZPbE4wRW9JbHJLUzNsU09felg3UEFUSlN1Rmd5bE5meDBtcTVwa1pOdHJIdGI5OFpPY1F0bm5wemhhZEVJeFRMbmhudGRpTE9NelVTMnVuRmZ1TXR3UGpZT1NwdkFidFdZQUVtbDd4ZDlCSzJuQlhhSEl3TjN3Y2JRRlZtR0tWX0h2dXlkQXJlMU1XbDA?oc=5",
-        "date": "2026-10-16T11:26:00.000Z"
-      },
-      {
-        "title": "인천시 일일 신규 확진 20명 ‘연수구 8명 등 5개 지역서 발생’",
-        "source": "중앙신문",
-        "link": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxPbTdVd29Ec2p4UmsybnFsZ1EyY29XQ2IzTkN6bERhb1VEMFpBdUZXYjRRWG5RN3hjOXZPTHVPZ3FnakJLbGtvTXd2cjFWamctREVrR0Zta1o5TlhlVEZvREN5NXh0aHZub3pfM1Q5S01NU2VDekttaTl0NHVtbVN2Zk1ubWF6M2N6cGliSDcwcXRKWTVTQVVLUUV2c1FPR28yZ01vQlVVUmEybkd2YndyRExoQjFzeDgtSy1aTC1Gc1pLb0JtZVdtTlN2dm0wRjlELUJnWlFGWmZqbWp0RUdjc0d4RWoxZEtKQUxTd2FDX1U2dzYyQzFOQW1Ta0N0YUZ2RkdzaGMwY2dicGV4NVRRWURueGJIUDN6V216bThXU1ZjWldYNHR5aVpiOFhTS0dRcHVXWVNZcXJRbENwclZ1cURmNTZDb0NUWHdsU2hIeWgtVkItbnU3Y1NseHY5Q1NIbnI0UDZn?oc=5",
-        "date": "2026-10-16T11:26:00.000Z"
-      },
-      {
-        "title": "인천시 신규 확진 16명 ‘연수구 등 5개 지역서 발생’",
-        "source": "중앙신문",
-        "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxORVY3U0dscDU0M3ZIS2Z6UlQ5YWJ3cU9kRkhNMjZCbXljdGp5aWhxRDB5UVFmSmNsdkRPSmQtWVZQSU44N0w0cnhaek9fWC1kSFF3QWliYm56RXFCT2kxVjRtSFR2Tm52bWt5WHpUOEtmd2R5SXFmOFhaaDg4bUF2NWhDMGhISzhkNjBKelAxYjY3ZThyT05GWnBleWQ5clNtNUNzdmVvdTNPUWlVRnVmNTA0WFhLN21qSWdVend0WE1pS01qdFZmV3VYRmphNlBRVEQ0U2pSNUVWNHJKV21qY2trM3pIOEtLamJGM2NqcEVnUW9sekNqSG9iSFRraGlIQVg0T0JJNG9VM1pEQ0lJUmwtVnpyMURZaFducDdKSVJpTWthWHZ4SGhyR3BzUnQ1MDR0Sl9naXNuOFpNY0E?oc=5",
-        "date": "2026-10-16T11:26:00.000Z"
       }
     ]
   }
