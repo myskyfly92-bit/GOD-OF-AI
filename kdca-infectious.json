@@ -67,9 +67,9 @@
   },
   "제2급": {
    "diseases": 21,
-   "base": 2040,
-   "prev": 1461,
-   "provisional": 1397,
+   "base": 2042,
+   "prev": 1462,
+   "provisional": 1405,
    "outnatn": 0,
    "trend": [
     2063,
@@ -77,34 +77,34 @@
     2082,
     2064,
     1911,
-    1840,
+    1839,
     2166,
     1906,
     1919,
     1919,
-    1461,
-    2040
+    1462,
+    2042
    ]
   },
   "제3급": {
    "diseases": 28,
-   "base": 193,
+   "base": 195,
    "prev": 132,
-   "provisional": 118,
+   "provisional": 124,
    "outnatn": 8,
    "trend": [
     149,
     229,
     201,
-    206,
-    214,
+    205,
+    213,
     169,
     212,
     207,
     237,
-    213,
+    215,
     132,
-    193
+    195
    ]
   }
  },
@@ -112,10 +112,10 @@
   {
    "name": "카바페넴내성장내세균목(CRE) 감염증",
    "grade": "제2급",
-   "base": 1322,
+   "base": 1323,
    "prev": 849,
    "provisional": 821,
-   "dmstc": 1322,
+   "dmstc": 1323,
    "outnatn": 0
   },
   {
@@ -130,10 +130,10 @@
   {
    "name": "성홍열",
    "grade": "제2급",
-   "base": 130,
+   "base": 131,
    "prev": 121,
-   "provisional": 122,
-   "dmstc": 130,
+   "provisional": 130,
+   "dmstc": 131,
    "outnatn": 0
   },
   {
@@ -141,7 +141,7 @@
    "grade": "제3급",
    "base": 91,
    "prev": 58,
-   "provisional": 47,
+   "provisional": 49,
    "dmstc": 91,
    "outnatn": 0
   },
@@ -168,7 +168,7 @@
    "grade": "제2급",
    "base": 25,
    "prev": 29,
-   "provisional": 29,
+   "provisional": 30,
    "dmstc": 25,
    "outnatn": 0
   },
@@ -186,9 +186,18 @@
    "grade": "제3급",
    "base": 11,
    "prev": 11,
-   "provisional": 9,
+   "provisional": 11,
    "dmstc": 11,
    "outnatn": 0
+  },
+  {
+   "name": "말라리아",
+   "grade": "제3급",
+   "base": 9,
+   "prev": 3,
+   "provisional": 4,
+   "dmstc": 8,
+   "outnatn": 1
   },
   {
    "name": "백일해",
@@ -204,25 +213,16 @@
    "grade": "제2급",
    "base": 8,
    "prev": 5,
-   "provisional": 6,
+   "provisional": 5,
    "dmstc": 8,
    "outnatn": 0
-  },
-  {
-   "name": "말라리아",
-   "grade": "제3급",
-   "base": 8,
-   "prev": 3,
-   "provisional": 3,
-   "dmstc": 7,
-   "outnatn": 1
   },
   {
    "name": "쯔쯔가무시증",
    "grade": "제3급",
    "base": 8,
    "prev": 9,
-   "provisional": 15,
+   "provisional": 16,
    "dmstc": 8,
    "outnatn": 0
   },
@@ -281,9 +281,14 @@
    "name": "치쿤구니야열",
    "grade": "제3급",
    "count": 1
+  },
+  {
+   "name": "지카바이러스감염증",
+   "grade": "제3급",
+   "count": 1
   }
  ],
- "totalBase": 2233,
- "totalPrev": 1593,
- "generatedAt": "2026-10-16T00:46:07.770939+00:00"
+ "totalBase": 2237,
+ "totalPrev": 1594,
+ "generatedAt": "2026-10-17T00:46:51.548121+00:00"
 }
