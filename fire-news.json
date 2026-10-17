@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T17:02:10.397Z",
+  "generatedAt": "2026-10-17T00:00:09.824Z",
   "items": [
     {
       "title": "انفجار شاحنة وقود يشعل حريقا هائلا في سوق بمدينة بنين النيجيرية ويصيب 10 أشخاص",
@@ -23,7 +23,7 @@
       "title": "هذا الفيديو لا يصوّر استهداف منشآت نفطية في السعودية بل احتراق مستودع وقود في العراق",
       "source": "في ميزان فرانس برس",
       "link": "https://factcheckarabic.afp.com/doc.afp.com.D3H67WE",
-      "date": "2026-10-16T13:13:20.000Z",
+      "date": "2026-10-16T13:27:55.000Z",
       "lang": "ar",
       "titleKo": "이 동영상은 사우디아라비아의 석유 시설 타겟팅이 아니라 이라크의 연료 저장고 연소를 묘사한 것입니다.",
       "url": "https://factcheckarabic.afp.com/doc.afp.com.D3H67WE",
@@ -48,16 +48,34 @@
       "body": "[인사이트에너지뉴스] 한국남부발전(사장 김준동)은 배터리 솔루션 전문기업 (주)피엠그로우(대표이사 박재홍)와 함께 전기버스 사용후 배터리를 재활용(Reuse)해 자원순환을 실현하고 안전성을 강화한 ‘화재방지형 R-ESS(Reuse Energy Storage System)’의 실증 기념식을 15일 개최했다고 밝혔다.남부발전이 주관하고 피엠그로우가 협력사로 참여한 이번 행사는 강원도 영월군에 위치한 영월빛드림본부 실증 현장에서 진행됐으며 양사 주요 관계자들이 참석해 실증설비의 안정적인 운영과 무재해 가동을 다짐했다.이번에 본격 가동되는",
       "bodyKo": "[인사이트에너지뉴스] 한국남부발전(사장 김준동)은 배터리 솔루션 전문기업 (주)피엠그로우(대표이사 박재홍)와 함께 전기버스 사용후 배터리를 재활용(Reuse)해 자원순환을 실현하고 안전성을 강화한 ‘화재방지형 R-ESS(Reuse Energy Storage System)’의 실증 기념식을 15일 개최했다고 밝혔다.남부발전이 주관하고 피엠그로우가 협력사로 참여한 이번 행사는 강원도 영월군에 위치한 영월빛드림본부 실증 현장에서 진행됐으며 양사 주요 관계자들이 참석해 실증설비의 안정적인 운영과 무재해 가동을 다짐했다.이번에 본격 가동되는",
       "tried": true,
-      "count": 2,
+      "count": 5,
       "sources": [
         "부산일보",
-        "인사이트에너지뉴스"
+        "스트레이트뉴스",
+        "인사이트에너지뉴스",
+        "국제뉴스",
+        "매일경제"
       ],
       "related": [
         {
           "titleKo": "남부발전, 전기버스 사용후배터리 활용 ‘화재방지형 R-ESS’ 기술 실증 나선다",
           "source": "부산일보",
-          "link": "https://www.busan.com/view/busan/view.php?code=2026101620424383338"
+          "link": "https://mobile.busan.com/view/election/view.php?code=2026101620424383338"
+        },
+        {
+          "titleKo": "남부발전, 전기버스 사용후 배터리 활용 ‘화재방지형 R-ESS’ 기술로 시장 선도",
+          "source": "스트레이트뉴스",
+          "link": "https://www.straightnews.co.kr/news/articleView.html?idxno=313287"
+        },
+        {
+          "titleKo": "남부발전, 전기버스 사용후 배터리 활용 '화재방지형 R-ESS' 실증 가동",
+          "source": "국제뉴스",
+          "link": "https://www.gukjenews.com/news/articleView.html?idxno=3723450"
+        },
+        {
+          "titleKo": "“전기버스 사용후 배터리 활용”…남부발전, ‘화재방지형 R-ESS’ 기술 시장 선도",
+          "source": "매일경제",
+          "link": "https://m.mk.co.kr/amp/12177635"
         }
       ],
       "tag": "전기·배터리"
@@ -73,7 +91,7 @@
       "body": "[부천=뉴시스] 고승민 기자 = 16일 경기도 부천시 오정구의 한 도장공장에서 화재가 발생해 소방대원 등이 내부를 살펴보고 있다. 2026.10.16. kkssmm@newsis.com",
       "bodyKo": "[부천=뉴시스] 고승민 기자 = 16일 경기도 부천시 오정구의 한 도장공장에서 화재가 발생해 소방대원 등이 내부를 살펴보고 있다. 2026.10.16. kkssmm@newsis.com",
       "tried": true,
-      "count": 45,
+      "count": 43,
       "sources": [
         "경기핫타임뉴스",
         "Vietnam.vn",
@@ -140,7 +158,7 @@
       "body": "추미애 경기도지사가 16일 부천 오정구의 한 도장공장 화재현장을 살핀 뒤 현장을 나서고 있다",
       "bodyKo": "추미애 경기도지사가 16일 부천 오정구의 한 도장공장 화재현장을 살핀 뒤 현장을 나서고 있다",
       "tried": true,
-      "count": 2,
+      "count": 3,
       "sources": [
         "경기핫타임뉴스",
         "뉴시스"
@@ -150,9 +168,14 @@
           "titleKo": "부천 화재현장 찾은 추미애 경기도지사, “부상 소방관 치료와 회복에 최선을 다하겠다”",
           "source": "경기핫타임뉴스",
           "link": "https://www.ghottimenews.com/news/article.html?no=442149"
+        },
+        {
+          "titleKo": "부천 도장공장 화재현장 찾은 추미애 경기도지사",
+          "source": "뉴시스",
+          "link": "https://mobile.newsis.com/photo/NISI20261016_0021491316"
         }
       ],
-      "tag": "기타"
+      "tag": "공장·플랜트"
     },
     {
       "title": "특정장소서 용접·용단 작업시 화재감시자 배치 필수",
@@ -219,43 +242,57 @@
       "body": "오늘 오전 9시 40분쯤 울산 온산국가산업단지 내 화학공장에서 폭발과 함께 큰 불이 나 4시간 만에 초진됐...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
       "bodyKo": "오늘 오전 9시 40분쯤 울산 온산국가산업단지 내 화학공장에서 폭발과 함께 큰 불이 나 4시간 만에 초진됐...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
       "tried": true,
-      "count": 18,
+      "count": 5,
       "sources": [
         "KBS 뉴스",
-        "뉴데일리",
-        "뉴스1",
-        "펜앤마이크",
         "MBC 뉴스",
-        "동아일보"
+        "동아일보",
+        "울산신문"
       ],
       "related": [
         {
           "titleKo": "온산 화학공장 화재 합동감식…정전기 폭발 가능성",
           "source": "KBS 뉴스",
-          "link": "https://news.kbs.co.kr/news/view.do?ncd=8686815"
-        },
-        {
-          "titleKo": "'7000명 대피' 울산 화학공장 화재 … 정전기 발화 가능성 조사",
-          "source": "뉴데일리",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYjBZV0NxMGhrVW5feTlmVzlxWFI5ZnNQb0Q3Nll0SmtZV1hESW1RbWs3eS1VUXkwSklNbmducnNEMmJ5S0tRbFg5WWx1M0c0ajc5OWVuc01fTkcxcjFsVWNBX1BvTk9HS21GR0M0SE9DUEJNUXlQdWVUdFQ1cVR2VtIBgAFBVV95cUxQYjBZV0NxMGhrVW5feTlmVzlxWFI5ZnNQb0Q3Nll0SmtZV1hESW1RbWs3eS1VUXkwSklNbmducnNEMmJ5S0tRbFg5WWx1M0c0ajc5OWVuc01fTkcxcjFsVWNBX1BvTk9HS21GR0M0SE9DUEJNUXlQdWVUdFQ1cVR2Vg?oc=5"
-        },
-        {
-          "titleKo": "톨루엔 옮기다 '펑'…'7000명 대피' 울산 화학 업체 화재 현장 감식",
-          "source": "뉴스1",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8xRVdRXzIwTHBENVRZd2twOVoydlljZDI5X1E4YWVWcldxeDcxS1ZzTTFkYWJVT3I0Mm1fMUpsOGRic2FFZmdZZS1TVFhFblAxUmc?oc=5"
-        },
-        {
-          "titleKo": "울산 온산공단 화학공장서 톨루엔 옮기다 화재… 4시간 만에 진화, 7000명 대피",
-          "source": "펜앤마이크",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE41c2FVSEJUWDB2ckZjZGQxbkZSYU5uSy0xZzFsazFaelFiUUMzUGZ0blFIUzZKTFpvUHpRQTByOGpsMzdqWEVFeWl4QnJFLVF1WHN1UE11alNiaHlpdERubm5ndUpud09ZNVN5cXlVZ9IBb0FVX3lxTE41c2FVSEJUWDB2ckZjZGQxbkZSYU5uSy0xZzFsazFaelFiUUMzUGZ0blFIUzZKTFpvUHpRQTByOGpsMzdqWEVFeWl4QnJFLVF1WHN1UE11alNiaHlpdERubm5ndUpud09ZNVN5cXlVZw?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QSG44TjltS0dlSldnNXllOHpFYlR0X0hUMWd5TnYySkNzY2ktR25wZXVSMHJPQVNkLVZvSEZUa016U0JHTWFhNnRabWlpLUx5OXJHS0VDT0RENGs?oc=5"
         },
         {
           "titleKo": "울산 화학공장 대형 화재‥7천여 명 대피 '혼란'",
           "source": "MBC 뉴스",
           "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB1dFVGbjVyXzdiN1NYR2V1WWpFcmg4OG9OVVdTRWlKVUZCamxwVjFyV3pNekJwWjFqRkVrb2JZemVUWWxiNVNDYm9yWmllM3pnUHU1SXBTUTJYWngzVnJYOWVOaUJLZU51T3FibGZ5dlhJdEJKM0pxRWxR0gF6QVVfeXFMUHV0VUZuNXJfN2I3U1hHZXVZakVyaDg4b05VV1NFaUpVRkJqbHBWMXJXek16QnBaMWpGRWtvYll6ZVRZbGI1U0Nib3JaaWUzemdQdTVJcFNRMlhaeDNWclg5ZU5pQktlTnVPcWJsZnl2WEl0QkozSnFFbFE?oc=5"
+        },
+        {
+          "titleKo": "울주 화학제품 공장 대형 화재, 7000명 긴급 대피",
+          "source": "동아일보",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBQdXpGbzBXSkkxT1RhZDNZQXNoY1lxSTVpOGNBVUhPMDRtNVRzdDN5RE0wRjRPbWZMTW91dmktM0dheXdsQlpXazRTVjQ0cmtRbFhNc3htbGZLbkozMmRMVDJBUmxwcTFTTFhKTjFGS2xRaU5lUlHSAWZBVV95cUxPS3ZwVGVObDFPTWlnWlFmeEppblgyZDA3S0dmcmxyU3QwaG1OY1JPOEFHem8xNmItcVNfLUFzM0ppZ2FDTXhOQmpWN2V4OWtyM0tGN0RZalJTWVRUVEN0eU1uTFV1aWc?oc=5"
+        },
+        {
+          "titleKo": "울산 온산 학남리 화학공장 톨루엔 탱크 폭발 화재",
+          "source": "울산신문",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE96UndIMy1yNU5nd3NMd0ZrU3Bnei1FOU02N2tBclUyMHZBNzQyb2tvSWduODlYbVc2bWxJd1ZOSVZQczN4Nl91bjM5TUhMUG1JaE5VZ0Y4YkVLSk8xRnllQ2dKNFBoNG9qaEEwU2dudGZxQdIBckFVX3lxTE96UndIMy1yNU5nd3NMd0ZrU3Bnei1FOU02N2tBclUyMHZBNzQyb2tvSWduODlYbVc2bWxJd1ZOSVZQczN4Nl91bjM5TUhMUG1JaE5VZ0Y4YkVLSk8xRnllQ2dKNFBoNG9qaEEwU2dudGZxQQ?oc=5"
         }
       ],
       "tag": "전기·배터리"
+    },
+    {
+      "title": "톨루엔 옮기다 '펑'…'7000명 대피' 울산 화학 업체 화재 현장 감식",
+      "source": "뉴스1",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8xRVdRXzIwTHBENVRZd2twOVoydlljZDI5X1E4YWVWcldxeDcxS1ZzTTFkYWJVT3I0Mm1fMUpsOGRic2FFZmdZZS1TVFhFblAxUmc?oc=5",
+      "date": "2026-10-15T01:34:06.000Z",
+      "lang": "ko",
+      "titleKo": "톨루엔 옮기다 '펑'…'7000명 대피' 울산 화학 업체 화재 현장 감식",
+      "count": 2,
+      "sources": [
+        "뉴스1",
+        "펜앤마이크"
+      ],
+      "related": [
+        {
+          "titleKo": "울산 온산공단 화학공장서 톨루엔 옮기다 화재… 4시간 만에 진화, 7000명 대피",
+          "source": "펜앤마이크",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE41c2FVSEJUWDB2ckZjZGQxbkZSYU5uSy0xZzFsazFaelFiUUMzUGZ0blFIUzZKTFpvUHpRQTByOGpsMzdqWEVFeWl4QnJFLVF1WHN1UE11alNiaHlpdERubm5ndUpud09ZNVN5cXlVZ9IBb0FVX3lxTE41c2FVSEJUWDB2ckZjZGQxbkZSYU5uSy0xZzFsazFaelFiUUMzUGZ0blFIUzZKTFpvUHpRQTByOGpsMzdqWEVFeWl4QnJFLVF1WHN1UE11alNiaHlpdERubm5ndUpud09ZNVN5cXlVZw?oc=5"
+        }
+      ],
+      "tag": "공장·플랜트"
     },
     {
       "title": "소방청, 신고 6분 만에 현장 도착…1·2차 동원령으로 화학공장 화재 확산 차단",
@@ -286,11 +323,42 @@
       "body": "A Saudi Aramco administrative building in Dhahran was targeted, causing a limited fire with no injuries reported, a...\nRIYADH, Oct 13: A Saudi Aramco administrative building in Dhahran in Saudi Arabia’s Eastern Region was targeted on Tuesday evening, causing a limited fire, an official source at the Ministry of Energy said.\nThe source confirmed that there were no injuries or fatalities in the incident.\nThe competent authorities responded to the incident and took the necessary measures, the source said.\nNo further details were immediately provided about the nature of the attack, the extent of the damage or those responsible.\nThe incident targeted a facility belonging to Saudi Aramco, the kingdom’s state-owned oil giant, in Dhahran, a major centre of Saudi Arabia’s energy industry.",
       "bodyKo": "다란(Dhahran)에 있는 사우디 아람코(Saudi Aramco) 관리 건물이 표적이 되어 화재가 발생했지만 부상자는 보고되지 않았습니다.\n리야드, 10월 13일: 사우디아라비아 동부 지역 다란에 있는 사우디 아람코 관리 건물이 화요일 저녁 표적이 되어 제한된 화재가 발생했다고 에너지부 공식 소식통이 말했습니다.\n소식통은 이번 사건에서 부상자나 사망자는 없었다고 확인했다.\n소식통은 관할 당국이 사건에 대응하고 필요한 조치를 취했다고 전했다.\n공격의 성격, 피해 규모, 책임자에 대한 추가 세부 정보는 즉시 제공되지 않았습니다.\n이번 사건은 사우디아라비아 에너지 산업의 중심지인 다란에 있는 사우디 국영 석유 대기업인 사우디 아람코(Saudi Aramco) 소유의 시설을 겨냥했습니다.",
       "tried": true,
-      "count": 1,
+      "count": 10,
       "sources": [
-        "Arab Times Kuwait News"
+        "Arab Times Kuwait News",
+        "صحيفة الخليج",
+        "نيو ترك بوست",
+        "CBC",
+        "MnAmerica",
+        "إرم بزنس"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "사우디아라비아, 다란의 아람코 건물에서 후티 미사일과 화재 격퇴",
+          "source": "صحيفة الخليج",
+          "link": "https://news.google.com/rss/articles/CBMiywRBVV95cUxQVHVCTEFmU2h4a0hqRFQwcGNPVU9YNVA2dWZmbWVJWXVXQkJmeVZheXBWendycTh3enRLbTNwQ2s5T1pJV1VfaUhNOWRZZFpWMzVGY042c3V1ZWlwbzREVlhPXy1HaU9yeUZPQVBLY2w1XzNpTVYyZFNfblF0VkdKY3diRHgyS0daeXBHZTUweXJLUTVzTEViYW11YXVFdDE5VEZ5LURhelJqay1lUkl1Q2lHUTVOVjBFY3JPSGN1a3NmXzZLdTRrUF9UVV8tcHpxRFN6UUxUTGdaYjVZSHFQeTFKVE1pQzZ3VXBRanBhdkN2aV9sbHE5b3NCY0dLdUVvMnFqdGtWWE95TWxwY0JHMmJ3dzlKRDRvdW93OVZmUnhLaXZaM2xOUjEtMmJ3UzdGQTBMRno5MUNDaF9Pb1J3N2Z1YXdEX29tczJEUzFFTHF1clFXX2wtQUt1anJKb2ZCNGI5dU1CVmdFWFF5V2xWYTlrZC0yTVhlWTlHSlM2WlBLZXFoMmowOWp5Nk1CNW5uSi1KTmlzUDZYUGRxNEYyamhqTWpIWmZQby12RHNrZGpfV2RPSjdDZW42MEtGeElaMlBhbGlfUGVNdlN5WWM4QmdhdXZtWlB6QTFWUXdBbVR2WE8wUU5TeVJQczhrXzVKUHBXWjNiZ0NKSFhkZWVES0Z0aDlHMjVZczNWWWJpNkMyZWQzRGRYRW1RN0tvTW1fYkxPWERYREJGMXhicS1XNmo0ZWg1by14cEJXblhIdjNuMURvZGNxYlpCdw?oc=5"
+        },
+        {
+          "titleKo": "사우디아라비아 아람코 언더 타겟: 다란 행정 건물 내 제한 화재",
+          "source": "نيو ترك بوست",
+          "link": "https://news.google.com/rss/articles/CBMiiARBVV95cUxNTnp5dHVGWHFsQXdxc2VBZVNzN1JGTG5KU29jS0VTVGo2TzRsZk93ZzBFSERUTFVJTEMwVzUzNXFKVW9rYmk5MWhFa1JSTmNJbnpnVzFLT1R1WXdHYnFqV25wR3VKYjQ2ejhybWlGTC1oZ2Z4bHc3bVpQNW9mWGl1dTdjQ0ZvdUg0azl0SDY2U1dfbmJGbzR5c05sd3g2UUlRY0dZaGZHanZZYk9PX041U1FkREFsWC1pSV9JWXd0MDM5X3FYMmJSaDlSMzFXT1dxZDZCeWRSdDA3N2FoaUwxTUQ3eFc3ZjIwZGJRX3BMZ0hKQ3hLeFlQY2RyOF9JZFlWTEc1NzRUQ0dpWkM5OE5iYWhBNE5nRTFmdVFTd2RpZW1yUGVzbzh0aUo5MFRxSnJVLVZGNGhKQjR5QW9xeFoxWVY1bnoybEZNeVI1T1J5S3JJN3pKQl9mc2ZMVk1TbFFKanhwaWRpZ3E4Skt5RlR5X2pIcEQxTklfWFNvd1pibEYzd0hDamNRaHlhU2hBRElBZDd0VV91TVg0SHl6cHJFTGJrOVYwN0RtUEpCMTJldDFWeTJWTGlGdFdwOWExX2VnSVBoNjE5Qm5oNzFSdlJpZExJZXlUMWFNZnBRcVJvRVo5VC1sWmJZOFRfeERjZ2FaNVZWRjlNZG5PQ1VGNFhpdFhNVXpSamVN?oc=5"
+        },
+        {
+          "titleKo": "사우디아라비아 아람코 (Aramco) 행정 건물이 후티 (Houthis) 의 공격을 받았으며, 제한된 화재",
+          "source": "CBC",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYWxicl9uTEZWVFE3NkstTjVFbUZDaU5OdGRJeVpkTm5OZmVzUVJGUXNzX1pBV3JxeUFMUWllcmRtaDY4eHFURVphZTlJQjFMdl9WYTh5SmJQQUdlSG1feWkxUkZLRXV5S3BpblNfcU9BTFE2WjlWdS1UUnhvdXRzWQ?oc=5"
+        },
+        {
+          "titleKo": "후티족 대상 사우디아라비아 아람코 행정 건물, 제한된 화재 신고",
+          "source": "MnAmerica",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBYdHRUTXVVUUFlYkdpenhTUzJjMExhNzdUU0tmelNxR0lTZEdCQlZteloxTGd6WlVmYllwd2UwWG16ZngzcGFpQUZ3?oc=5"
+        },
+        {
+          "titleKo": "사우디아라비아: 다란의 아람코 건물 화재 제한",
+          "source": "صحيفة الخليج",
+          "link": "https://news.google.com/rss/articles/CBMiwwRBVV95cUxNRHFhUmNYTzkwcU91M2RtREh2bHRUcUlpWDBlNTlPZzFseHdMLXNvbUZuRFh0dEJtMFR6SzZSMHk5bC1yMFZVMlNHSlZ5QU1pQTA5ck5vVkhBR1JaWi1mQUt6aHQyQjRjejVodnA3dVdyQnBxaU4xRkJDWTRTeEZuLTBwYVZEN0lBbFlNWElLcU55SS1rUzNEaDQ1WVZhdl9CR01nR3RtRVRQQXZHM1hRelNndjBBN09yS3oySFdsclRuV0tUM2N6eGtoLVJLTWhKRW1jSGkwS0UtV3Fzb0UzUTBDakhWY0JZZjZya0xNQlduMmdQTzNvOHVYM1Z6WDBQNFRjVXM2SzJnUFFuV0RxOTdUSmx2b1cxaTlGSFJmNTB5NTk3OTVLN3RiOUtHZnJxTWN0M09IbjMwQTBwQUpCbU00YTZ3eGtUMll2QVNNWTF5SDNBcnlmOEE5cUlGbmhESEk4ZzZQajBKTDl3ajZFRnFGLVNLVlVZY3FQenJGcFJnYjUtaVNiMk5vN0FWV0FaSzhocFdmRXBGdVRESWNDdkRUNEtNMFdNZm9heGQ4S3V5NjBCeEFaU0JkYWh6TEhBaTY0d3NCdWJ4RWw4YVFUb1JzVTA2b1h3S0Q3U0JSaHZEdGI3YlFZb3NFaThIRURxa2p6R2NnSmstcTJqQThIczhXTkV6a0d1WXVxdWJ1WTU4LVZLN0xKMV85UzYta3FSeEpMV1k0SmxlVHpHRXU5S0s3Rm1JYnl5aEI1anRsTW5vUHM?oc=5"
+        }
+      ],
       "tag": "기타"
     },
     {
