@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T23:36:02.496Z",
+  "generatedAt": "2026-10-17T23:08:11.766Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -24,6 +24,13 @@
       "date": "2025-12-16T15:48:42.000Z"
     },
     {
+      "title": "1339콜센터",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBRQU0xeUFtWTNKNnozU3h6YWV2WVBncU1oenZuMmR0R2dNMzRVUzR4QlBwaDVydWFReXgydVh0aTQ3Z0wxVjV6T3RWVVBpOEh5Ny1PVVdB?oc=5",
+      "date": "2026-08-23T23:28:53.000Z"
+    },
+    {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
       "source": "질병관리청 감염병포털",
       "agency": "",
@@ -35,7 +42,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-16T08:36:09.000Z"
+      "date": "2026-10-17T05:38:41.000Z"
     },
     {
       "title": "레지오넬라증",
@@ -78,13 +85,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MbExBX0JEd0RiZmxBQ3djZnFIQjdYUGwycC1BdUlvMDFDV0VOLUFmbU5QSU00TmNINE5BdmE5NlRVSThkN0c3TVJDa3dHRFJJWlNKWkZ3?oc=5",
       "date": "2025-12-16T16:42:42.000Z"
-    },
-    {
-      "title": "신고현황 - 2025년 온열질환감시체계 운영 결과(5.15.~8.8.)",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9KQ0JCdzB2TzBmbllyYXdNaThsbDhqQ2hzZnk1WWZSc2FCNEpJTzl3YTV2LS1ZbXA3M1ZqejJ5aldfQmtRZUVSaXh2WVBtOGpnb1dybC0yYVMwQVZQOG5aMlRwczU5VWtvdWVfaXZHcmc0R2VuSFRobUt3?oc=5",
-      "date": "2025-12-16T23:45:41.000Z"
     }
   ]
 }
