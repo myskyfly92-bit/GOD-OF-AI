@@ -241,16 +241,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "니아메"
-    },
-    {
      "level": 4,
      "levelName": "여행금지",
      "region": "일부",
      "remark": "수도 니아메 제외 전 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "니아메"
     }
    ],
    "written": "",
@@ -395,16 +395,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "4단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 4,
      "levelName": "여행금지",
      "region": "일부",
      "remark": "남부 이스라엘 접경 지역(블루라인으로부터 5km 포함), 남부주, 나바티예주, 다히예의 일부 지역(베이루트 공항 및 M51 도로 제외),바알벡헤르멜주,베카주(서베카구,라샤야구)"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "4단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -594,6 +594,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -604,12 +610,6 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "사바주 동부 해안"
-    },
-    {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -663,6 +663,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "서사하라 이외 지역"
+    },
+    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -673,12 +679,6 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "서사하라 내 모래방어벽 서쪽"
-    },
-    {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "서사하라 이외 지역"
     }
    ],
    "written": "",
@@ -692,16 +692,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "누악쇼트, 누아디브, 인시리, 트라르자 및 아다르(우아단까지 일부지역)"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "2단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "누악쇼트, 누아디브, 인시리, 트라르자 및 아다르(우아단까지 일부지역)"
     }
    ],
    "written": "",
@@ -2547,6 +2547,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "튀니스와 수도권 지역/비제르트 주/나불 주/수스 주/모나스티르 주 마흐디아 주/스팍스 주/제르바 주"
+    },
+    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -2557,12 +2563,6 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "1, 3단계 지정 지역을 제외한 지역"
-    },
-    {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "튀니스와 수도권 지역/비제르트 주/나불 주/수스 주/모나스티르 주 마흐디아 주/스팍스 주/제르바 주"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-10-16T06:27:57.409868+00:00"
+ "generatedAt": "2026-10-17T06:16:41.201393+00:00"
 }
