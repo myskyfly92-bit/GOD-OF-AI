@@ -1,51 +1,165 @@
 {
-  "generatedAt": "2026-10-17T19:32:00.041Z",
+  "generatedAt": "2026-10-17T22:27:49.678Z",
   "items": [
     {
-      "title": "قتيل وجرحى من الحشد الشعبي بانفجار شرقي بغداد",
-      "source": "زاد الاردن",
-      "link": "https://www.jordanzad.com/index.php?page=article&id=768091",
-      "date": "2026-10-17T18:52:00.000Z",
+      "title": "انفجار عتاد تالف داخل مقر للحشد الشعبي في بغداد(فيديو)",
+      "source": "https://www.akhbaralyawm.com/",
+      "link": "https://www.akhbaralyawm.com/news/584741/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%B9%D8%AA%D8%A7%D8%AF-%D8%AA%D8%A7%D9%84%D9%81-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D9%82%D8%B1-%D9%84%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF(%D9%81%D9%8A%D8%AF%D9%8A%D9%88)",
+      "date": "2026-10-17T22:18:45.000Z",
       "lang": "ar",
-      "titleKo": "바그다드 동부에서 폭탄 테러가 발생해 인민동원군 1명이 숨지고 1명이 부상당했다.",
-      "url": "https://www.jordanzad.com/index.php?page=article&id=768091",
-      "body": "أفادت وكالة رويترز -نقلا عن مصادر أمنية وطبية- بمقتل عنصر من الحشد الشعبي وإصابة 4 آخرين، اليوم السبت، إثر انفجار داخل مقر للقوات شرقي العاصمة...",
-      "bodyKo": "로이터통신은 보안과 의료 소식통을 인용해 오늘 토요일 수도 동쪽 군 본부에서 폭발이 일어나 인민동원군 대원 1명이 사망하고 4명이 부상했다고 보도했습니다.",
+      "titleKo": "바그다드 PMF 본사 내부에서 손상된 장비 폭발 (동영상)",
+      "url": "https://www.akhbaralyawm.com/news/584741/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%B9%D8%AA%D8%A7%D8%AF-%D8%AA%D8%A7%D9%84%D9%81-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D9%82%D8%B1-%D9%84%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF(%D9%81%D9%8A%D8%AF%D9%8A%D9%88)",
+      "body": "akhbaralyawm.com أعلنت هيئة الحشد الشعبي، اليوم السبت، انفجار كدس من العتاد التالف في بغداد دون تسجيل أضرار.وذكرت الهيئة، في بيان تلقته وكالة الأنباء العراقية (واع)، أ",
+      "bodyKo": "akhbaralyawm.com 인기 동원 당국은 오늘 (토요일) 바그다드에서 손상된 장비 더미가 폭발했다고 발표했다. 당국은 이라크 통신사 (INA) 가받은 성명서에서",
       "tried": true,
-      "count": 26,
+      "count": 42,
       "sources": [
-        "زاد الاردن",
-        "عاجل",
-        "بوابة الأهرام",
-        "رأي اليوم",
-        "أهل مصر",
-        "صحيفة الرأي"
+        "وكالة الانباء العراقية (واع)",
+        "https://www.akhbaralyawm.com/",
+        "عراق اوبزيرفر",
+        "وكالة بغداد اليوم الاخبارية",
+        "alghadpress.com",
+        "RojNews.News"
       ],
       "related": [
         {
-          "titleKo": "바그다드 인민동원군 본부에서 폭발이 발생해 1명이 숨지고 4명이 부상당했다.",
-          "source": "عاجل",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9aTk45c1ZIa3BTVFo5OWJuUUNWc0JsWVJuMEhURzRnMGtmUWxqRWpxMU53MkpYdXUwdWVWYkpyaUs5SllZTTZCMkRtaFZBcExY?oc=5"
+          "titleKo": "PMF: 바그다드 동쪽 본부에서 발생한 폭발은 내부 불균형의 결과였으며 외부 타겟팅의 징후가 없습니다.",
+          "source": "وكالة الانباء العراقية (واع)",
+          "link": "https://ina.iq/ar/security/276473-.html"
         },
         {
-          "titleKo": "로이터: 이라크에서 바그다드에 있는 인민동원군 본부 중 한 곳에서 폭발이 발생해 인민동원군 대원 1명이 사망하고 4명이 부상당했습니다.",
-          "source": "بوابة الأهرام",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBRcy04aTFVajlheFF5ZmZrM3RSczFDQk5YUnlMaW9idXFoS3JId2J5Nl9GdHlMalZmMEk5eTNVd2NaVWNkZVdOSmNjem1ZUHdTSjhmZjhn?oc=5"
+          "titleKo": "공식 성명서.. 바그다드 운하 동쪽 PMF 본부에서 손상된 장비 더미가 폭발했습니다. #",
+          "source": "عراق اوبزيرفر",
+          "link": "https://observeriraq.net/%D8%A8%D9%8A%D8%A7%D9%86-%D8%B1%D8%B3%D9%85%D9%8A-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%83%D8%AF%D8%B3-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D8%AA%D8%A7%D8%AF-%D8%A7%D9%84%D8%AA%D8%A7%D9%84%D9%81/"
         },
         {
-          "titleKo": "바그다드 인민동원군 본부 장비 상점에서 폭발 발생",
-          "source": "رأي اليوم",
-          "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxOU1BGV0NMSXNsMUpZcnFhZG0yUDB1Q2xiT2MzdDgwTUQ3VWRmTkpiNTdFRzRPengxWVh1eDFMWWItSkZqbEx5R1V3WmxsajhndFN2cndDTnptcnJjaGltdDhDSVNaTDJWeUpJOElTVE9nRmhNb2RLMnM0WVAzdzRzSk5jWGtwMnhKZUxzVVA3TFhPSWhLNzV6SG1uamNGNDJoN0lNcjgtQlpuNUlZY3FtQVBXa1hvbDI2NGNLM3U1SjEwekJoZjB1dktVcmdZVFdoWHprdXkxZ2g1eDk2cFY3ZFJib09oR05rQTVuU3l1M0RsZTRFZENXNUZiQkNfR2dDMERLT0w0T0t5S2Z2dHFZMkRTeHY4emFONXdxQ081REMwM09yZnRkdU1VZWxYdVhHSGlSSWJyZUxBSW9Yd2V3cXVoUkp3Z2w3aXc?oc=5"
+          "titleKo": "PMF는 바그다드 동쪽 본부 중 한 곳에서 손상된 장비가 폭발했다고 발표했습니다.",
+          "source": "وكالة بغداد اليوم الاخبارية",
+          "link": "https://baghdadtoday.news/306669-.html"
         },
         {
-          "titleKo": "바그다드 북부 인민동원군 본부 내부에서 폭발이 발생했습니다. 사건의 원인은 알려지지 않았다",
-          "source": "أهل مصر",
-          "link": "https://news.google.com/rss/articles/CBMitgRBVV95cUxNckx1LUR3ekZITjVNV2xlaFZCYTZYZmh0cjBLdlRsem0yN3d6TzlDc1E3M2QwbWljS3M5UTZrY2kyeF9VNjBYTVdQQWE3WmduWTdsX1ZlRlNaUDFJeC1NUEpvRlVZSGlBRlV0NVc1cnd1UmhFWi15V19kQmoybjFVaFVxcG1uSzFpeXBIb0pWXzlfRXZJVWRwUFlBX19ta3BuWXkxWmFxLTZYU3VHcC0yNXViZmRHQm9xeUU0R0pGYUg3YUpscHZwQlJOYkFpT3d4YkR4Ty15Um90a2JqZFNncGxrSnNYeWJtZTBZRGJ5NlVHdTlENHNMdmQ4RGZ0S3VlQzh2bU00b0RELThlOGpZS2dLVnJ4dWVsRXQtdlFKOHhjbGo5bmdtTXZtVGc2c2NUUjlRcDdQQTRyOTcxYjUtODNJNVB0R1IwdlNVXzlRZHN5aVBhNURxdkdueWk0bF91dzBDcVpSRkpROXg1Y1BPY2FISEticGRac3lyR2JiSkQ3YmVtNERDZ3cwZTFlUW9RbkNNekRKV2t4aWRsRHNzVzJjQkdmdkZtLW5aYllWTlBrUWE0ems2M1dsM3lYMi1BSVpHT0hRWHQtbkdnWUZUNDB0aGNEN1FnR0dEVkk0VmFrTHRFclduNUxWZG9BLXB5QWhhSjNNWVNjMk4yOHRoSVNEcWk3VmhlZndYc19nSV9BRm9wbjJ5S21tWWwzTERjR2pPVDJ1MVE1Q040VDE3Vk5ObHBtZw?oc=5"
+          "titleKo": "알자이디는 바그다드 동쪽 PMF 본부 내부에서 장비 더미가 폭발한 사건에 대한 조사를 지휘합니다. »알가드 언론사",
+          "source": "alghadpress.com",
+          "link": "https://alghadpress.com/122006-.html"
         },
         {
-          "titleKo": "바그다드에서 폭발이 발생해 인민동원군 대원 1명이 사망하고 4명이 부상당했다.",
-          "source": "صحيفة الرأي",
-          "link": "https://news.google.com/rss/articles/CBMilARBVV95cUxNQ01SQ0RJU0szSjdmaVZMTE5nZ1V1Mk85a2hta3IzaGpRbzBKV2ZMTmQ2clY2ZGNVdEJrNUFCRDM0T0VQU2lsXzN3b2dNdk1raE8tQTM4V1loVmx6cFNHWF92TFZKU2l3SG94NVZKNm5EcUhZVVBMTnhWRzJ3OVVYaGk1c1QtQmxfamcydlM1Vzc4bENucUQ1YzN4SEhHb3ZrNGFDRGVyU3FHSDZRb25LaXdBcjVPZjdqcHVLbjVJMnFhUFlDY21GaVJwR01SN21rVVI5dVAxN2FXdWh3ZzN5OW05b1JlYWVjeHNaSGU3Zms1MnY4U1FxUUt4YTJTTXhtWGRsR29JWHU4bW9pM044bDNOTV8yQl9FNEp5US1ac3ZmcnV5WVRyZHF0WEpqVTFRTlZtNDhPTlNTRTN5UUtEUDVuN05BSHJycjJjUEZyZ25ybldaSVhDSVZYQXpJM1NIM1FPeHpDbFpDbXVFaGF0OF9JbWV0WDFmSjZsSHh3Tl9PNXVnWlJfZzBaTFBtTlV0Yk80eERDcWpaMk5vTFBuTTg1VzBFRzBPQWtXQnBUalh6Q05KYllsWmVDcUxlUkt2WHhOV21TU1dXVzFvZFpXWkRRN01pMkpjc25naWpwd0xFdWNTanEybTdXR2NfX0l2Z1NIdVI1bm5OTlBST1JhX0h6dHdseTdUX282Q2xoM3pQTE50?oc=5"
+          "titleKo": "PMF: 바그다드에서 손상된 장비가 부상 없이 폭발했습니다.",
+          "source": "RojNews.News",
+          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBlV1JUd2lMQWlzQlpvcTdkbGxNN1AzOEprenl2U2FsOTdMTlc1VF95TE9wMXFvVzNxY1hKbnE2VmRFOWluUFl2LQ?oc=5"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "القائد العام يوجه بتشكيل لجنة للوقوف على ملابسات انفجار كدس للعتاد داخل مقر للحشد في بغداد",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://ina.iq/ar/security/276469-.html",
+      "date": "2026-10-17T22:18:45.000Z",
+      "lang": "ar",
+      "titleKo": "총사령관은 바그다드 PMF 본부 내부의 장비 비축 폭발 상황을 파악하기 위해 위원회 구성을 지시합니다.",
+      "url": "https://ina.iq/ar/security/276469-.html",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Turkish foreign minister praises Iraqi premier's 'strong vision' for advancing bilateral ties with Ankara",
+      "source": "Anadolu Ajansı",
+      "link": "https://aa.com.tr/en/turkiye/turkish-foreign-minister-praises-iraqi-premiers-strong-vision-for-advancing-bilateral-ties-with-ankara/4092319",
+      "date": "2026-10-17T21:58:22.000Z",
+      "lang": "en",
+      "titleKo": "터키 외무장관은 앙카라와의 양국 관계 발전에 대한 이라크 총리의 '강력한 비전' 에 찬사를 보냅니다.",
+      "url": "https://aa.com.tr/en/turkiye/turkish-foreign-minister-praises-iraqi-premiers-strong-vision-for-advancing-bilateral-ties-with-ankara/4092319",
+      "body": "Hakan Fidan says talks with Iraqi officials cover energy, security, counterterrorism, Development Road Project | Anadolu\nANKARA Turkish Foreign Minister Hakan Fidan on Saturday praised Iraqi Prime Minister Ali al-Zaidi's \"strong vision\" for strengthening bilateral relations following talks in Baghdad on Saturday.\n\"Mr. al-Zaidi has a very strong vision for advancing relations with Türkiye. We are also seeing the positive and constructive impact of this vision in Iraq's policies,\" Fidan told reporters.\nThe two met on the sidelines of the 52nd Session of the Council of Foreign Ministers of the Organization of Islamic Cooperation (OIC).\nFidan said al-Zaidi has demonstrated a strong commitment to improving bilateral relations and taking practical steps to address Iraq's challenges.\nHe said discussions with Iraqi officials covered energy, connectivity, the Development Road Project, security and defense cooperation, counterterrorism and the situation in Sinjar.",
+      "bodyKo": "하칸 피단은 이라크 관리들과의 회담에서 에너지, 안보, 대테러, 개발도로 프로젝트 | Anadolu\n앙카라 터키 외무장관 하칸 피단 (Hakan Fidan) 은 토요일 이라크 총리 알리 알자이디 (Ali al-Zaidi) 가 토요일 바그다드에서 회담을 가진 후 양국 관계를 강화한 것에 대해 \"강력한 비전\" 을 높이 평가했다.\n\"알자이디는 튀르키예와의 관계를 발전시키기 위한 매우 강력한 비전을 가지고 있습니다. 우리는 또한 이라크 정책에서 이 비전이 긍정적이고 건설적인 영향을 미치고 있음을 보고 있다\" 고 피단 장관은 기자들에게 말했다.\n두 사람은 제52차 이슬람 협력 기구 (OIC) 외무장관 회의에서 만났다.\n피단 장관은 알자이디 총리가 양국 관계를 개선하고 이라크의 당면 과제를 해결하기 위한 실질적인 조치를 취하겠다는 강한 의지를 보였다고 말했습니다.\n그는 이라크 관리들과의 논의에서 에너지, 연결성, 개발도로 프로젝트, 안보 및 국방 협력, 대테러 및 신자르 사태를 다루었다고 말했다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Anadolu Ajansı",
+        "سانا"
+      ],
+      "related": [
+        {
+          "titleKo": "알 샤이바니, 이라크 총리 만나 양국 관계 논의",
+          "source": "سانا",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9EYV85MTVCTG9CTDF2NGU3WmFUOTJWWGVFLXlCRE9HSmdwRGgzUTItVmRjUWxBWFVQU29nZDNKc0g1bHY2dnJaalM0MWI?oc=5"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "مصادر أمنية لـ\"رويترز\": مقتل أحد عناصر الحشد الشعبي في انفجار مخزن سلاح في بغداد",
+      "source": "https://www.akhbaralyawm.com/",
+      "link": "https://www.akhbaralyawm.com/news/584749/%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D8%A3%D9%85%D9%86%D9%8A%D8%A9-%D9%84%D9%80%D8%B1%D9%88%D9%8A%D8%AA%D8%B1%D8%B2:-%D9%85%D9%82%D8%AA%D9%84-%D8%A3%D8%AD%D8%AF-%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D9%81%D9%8A-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%85%D8%AE%D8%B2%D9%86-%D8%B3%D9%84%D8%A7%D8%AD-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF",
+      "date": "2026-10-17T21:54:19.000Z",
+      "lang": "ar",
+      "titleKo": "REUTERS SECURITY SOURCES: PMF 회원이 바그다드의 무기 창고에서 폭발로 사망했습니다.",
+      "url": "https://www.akhbaralyawm.com/news/584749/%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D8%A3%D9%85%D9%86%D9%8A%D8%A9-%D9%84%D9%80%D8%B1%D9%88%D9%8A%D8%AA%D8%B1%D8%B2:-%D9%85%D9%82%D8%AA%D9%84-%D8%A3%D8%AD%D8%AF-%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D9%81%D9%8A-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%85%D8%AE%D8%B2%D9%86-%D8%B3%D9%84%D8%A7%D8%AD-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "https://www.akhbaralyawm.com/"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "r",
+        "line": "현장 가까운 치안 사건 (바그다드)",
+        "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "이라크 바그다드의 PMF민병대 탄약고 폭발로 부상자 5명",
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20261018_0003830171",
+      "date": "2026-10-17T21:00:56.000Z",
+      "lang": "ko",
+      "titleKo": "이라크 바그다드의 PMF민병대 탄약고 폭발로 부상자 5명",
+      "url": "https://www.newsis.com/view/NISX20261018_0003830171",
+      "body": "[서울=뉴시스] 차미례 기자 = 이라크의 수도 바그다드의 이란이 지원하는 민병대 인민동원군(PMF) 진지에서 손상된 탄약을 모아둔 저장소가 폭발하는 사고가 17일 오후(현지시간)에 일어났다고 PMF가 공식 발표했다.이 사고로 5명이 경상을 입었다고 PMF측은 밝혔다. PMF는 소방대가 폭발로 인한 화재를 곧 진화했으며, 사고를 조사하기 위한 특별위원회가 곧..",
+      "bodyKo": "[서울=뉴시스] 차미례 기자 = 이라크의 수도 바그다드의 이란이 지원하는 민병대 인민동원군(PMF) 진지에서 손상된 탄약을 모아둔 저장소가 폭발하는 사고가 17일 오후(현지시간)에 일어났다고 PMF가 공식 발표했다.이 사고로 5명이 경상을 입었다고 PMF측은 밝혔다. PMF는 소방대가 폭발로 인한 화재를 곧 진화했으며, 사고를 조사하기 위한 특별위원회가 곧..",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "뉴시스",
+        "اندبندنت عربية"
+      ],
+      "related": [
+        {
+          "titleKo": "바그다드 인민동원군 탄약고에서 폭발",
+          "source": "اندبندنت عربية",
+          "link": "https://www.independentarabia.com/node/660662/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%A8%D9%85%D8%AE%D8%B2%D9%86-%D9%84%D9%84%D8%B0%D8%AE%D8%A7%D8%A6%D8%B1-%D8%AA%D8%A7%D8%A8%D8%B9-%D9%84%D9%80%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF"
         }
       ],
       "tag": "치안·테러",
@@ -58,52 +172,234 @@
       }
     },
     {
-      "title": "انفجار بمخزن للذخائر تابع لـ\"الحشد الشعبي\" في بغداد",
-      "source": "اندبندنت عربية",
-      "link": "https://www.independentarabia.com/node/660662/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%A8%D9%85%D8%AE%D8%B2%D9%86-%D9%84%D9%84%D8%B0%D8%AE%D8%A7%D8%A6%D8%B1-%D8%AA%D8%A7%D8%A8%D8%B9-%D9%84%D9%80%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF",
-      "date": "2026-10-17T18:45:00.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 인민동원군 탄약고에서 폭발",
-      "url": "https://www.independentarabia.com/node/660662/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%A8%D9%85%D8%AE%D8%B2%D9%86-%D9%84%D9%84%D8%B0%D8%AE%D8%A7%D8%A6%D8%B1-%D8%AA%D8%A7%D8%A8%D8%B9-%D9%84%D9%80%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF",
-      "body": "قالت القوات إن انفجاراً وقع داخل مستودع ⁠للذخائر التالفة، مما أسفر ‌عن ‌جرح ​خمسة ‌أشخاص واندلاع حريق ‌تمت السيطرة عليه لاحقاً.\nأعلنت \"هيئة الحشد الشعبي\" اليوم السبت وقوع انفجار في مخزن للعتاد داخل أحد مقارها في بغداد، في وقت أفاد سكان وكالة الصحافة الفرنسية بسماع دوي قوي وتصاعد دخان.\nوأوردت الهيئة عبر بيان \"انفجار كدس من العتاد التالف داخل مقر لـ’ الحشد الشعبي ‘ شرق القناة في بغداد\"، وأشارت في بيان لاحق إلى تسجيل إصابة خمسة عناصر بجروح طفيفة، مؤكدة سيطرتها على حريق ناجم عن الانفجار، ولفتت إلى أنها بدأت التحقيق في ملابسات الحادثة.\nوذكر مصدران أمني وطبي لـ\"رويترز\" أن انفجاراً وقع في مقر ‌لقوات \"الحشد ‌الشعبي\" ​في ‌ بغداد ⁠وأسفر ​عن مقتل ⁠أحد أفرادها وجرح أربعة آخرين.\nوقالت القوات إن انفجاراً وقع داخل مستودع ⁠للذخائر التالفة، مما أسفر ‌عن جرح ​خمسة ‌أشخاص واندلاع حريق ‌تمت السيطرة عليه لاحقاً.",
-      "bodyKo": "군 당국은 파손된 탄약 창고 내부에서 폭발이 발생해 5명이 부상하고 화재가 발생했다고 밝혔습니다.\n인민동원군은 토요일 바그다드 본부 내 장비 창고에서 폭발이 발생했다고 발표했으며 주민들은 큰 소리와 연기가 피어오르는 소리를 들었다고 프랑스 프랑스 언론국에 신고했습니다.\n당국은 성명을 통해 바그다드 운하 동쪽에 위치한 인민동원군 본부 내부에서 파손된 장비 더미가 폭발했다고 밝혔다. 이후 성명을 통해 멤버 5명이 가벼운 부상을 입었다고 밝히며 폭발로 인한 화재를 진압했음을 확인하고 사건 정황에 대한 조사에 착수했다고 밝혔습니다.\n두 명의 보안 및 의료 소식통은 바그다드의 인민동원군 본부에서 폭발이 발생해 대원 중 한 명이 사망하고 4명이 부상했다고 로이터에 전했다.\n군 당국은 파손된 탄약 창고 내부에서 폭발이 발생해 5명이 부상하고 화재가 발생했다고 밝혔습니다.",
+      "title": "Iraqi PM meets Hakan Fidan to discuss water cooperation, regional security",
+      "source": "İlke Haber Ajansı",
+      "link": "https://ilkha.com/english/world/iraqi-pm-meets-hakan-fidan-to-discuss-water-cooperation-regional-security-569597",
+      "date": "2026-10-17T20:56:50.000Z",
+      "lang": "en",
+      "titleKo": "이라크 PM이 하칸 피단을 만나 물 협력, 지역 안보에 대해 논의합니다.",
+      "url": "https://ilkha.com/english/world/iraqi-pm-meets-hakan-fidan-to-discuss-water-cooperation-regional-security-569597",
+      "body": "",
+      "bodyKo": "",
       "tried": true,
-      "count": 25,
+      "count": 1,
       "sources": [
-        "annahar.com",
-        "جريدة القدس",
-        "Kurdistan24",
-        "الوكالة الوطنية العراقية للأنباء| نينا",
-        "شبكة تواصل الإخبارية",
-        "Lebanon Debate"
+        "İlke Haber Ajansı"
       ],
-      "related": [
-        {
-          "titleKo": "바그다드 인민동원군 본부 장비상점 내부 폭발 원인 규명(영상)",
-          "source": "annahar.com",
-          "link": "https://www.annahar.com/arab-world/arabian-levant/357877/%D9%82%D8%AA%D9%8A%D9%84-%D9%884-%D9%85%D8%B5%D8%A7%D8%A8%D9%8A%D9%86-%D8%A8%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%81%D9%8A-%D9%85%D9%82%D8%B1-%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82"
-        },
-        {
-          "titleKo": "바그다드 인민동원군 본부 폭발: 사상자 및 공식 조사",
-          "source": "جريدة القدس",
-          "link": "https://alquds.com/ar/posts/262619-baghdad-pmu-ammunition-depot-explosion-injuries"
-        },
-        {
-          "titleKo": "인민동원군: 바그다드 동쪽 본부에서 발생한 폭발은 내부 결함의 결과였으며 외부 표적의 징후는 없었습니다.",
-          "source": "Kurdistan24",
-          "link": "https://www.kurdistan24.net/ar/story/946737/%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D8%A7%D9%84%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%81%D9%8A-%D9%85%D9%82%D8%B1-%D8%B4%D8%B1%D9%82%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%86%D8%AA%D9%8A%D8%AC%D8%A9-%D8%AE%D9%84%D9%84-%D8%AF%D8%A7%D8%AE%D9%84%D9%8A-%D9%88%D9%84%D8%A7-%D9%85%D8%A4%D8%B4%D8%B1-%D8%B9%D9%84%D9%89-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A"
-        },
-        {
-          "titleKo": "바그다드 폭발을 둘러싼 군중들: 내부 결함 때문이었다",
-          "source": "الوكالة الوطنية العراقية للأنباء| نينا",
-          "link": "https://ninanews.com/website/News/Details?Key=1320566"
-        },
-        {
-          "titleKo": "바그다드 동부 인민동원군 본부 내부에서 폭발이 발생해 사망 및 부상",
-          "source": "شبكة تواصل الإخبارية",
-          "link": "https://twaslnews1.twaslnews.com/6142238/"
-        }
+      "related": [],
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Scrap collector shot dead near PMF site in Baghdad",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Security/Scrap-collector-shot-dead-near-PMF-site-in-Baghdad",
+      "date": "2026-10-17T20:44:12.000Z",
+      "lang": "en",
+      "titleKo": "바그다드 PMF 부지 근처에서 고철 수집가 총격 사망",
+      "url": "https://shafaq.com/en/Security/Scrap-collector-shot-dead-near-PMF-site-in-Baghdad",
+      "body": "Shafaq News- BaghdadA scrap collector was shot dead on Saturday while attempting to enter a steel factory site in Abu Ghraib, west of Baghdad, a security source told Shafaq News.The victim was driving\nThe victim was driving a small three-wheeled vehicle, locally known as a sattuta, to collect scrap metal when gunfire came from the direction of a nearby headquarters belonging to the Popular Mobilization Forces (PMF), an umbrella organization of armed groups formally incorporated into Iraq's security forces.\nThe man was struck in the back and died from his injuries, the source added.",
+      "bodyKo": "Shafaq News- 바그다드 보안 소식통은 Shafaq News에 바그다드 서쪽의 아부 그라이브 (Abu Ghraib) 에있는 철강 공장 부지에 들어가려고 시도하던 중 토요일에 고철 수집가가 총에 맞아 사망했다고 전했다. 피해자는 운전 중이었다.\n희생자는 이라크 보안군에 공식적으로 편입된 무장 단체의 우산 조직인 인민 동원군 (PMF) 에 속한 인근 본부 방향에서 총격이 발생했을 때 현지에서 사투타로 알려진 작은 삼륜차를 운전하여 고철을 수집하고 있었다.\n소식통은 남자가 등을 맞고 부상으로 사망했다고 덧붙였다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
       ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "r",
+        "line": "현장 가까운 치안 사건 (바그다드)",
+        "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "وزير الخارجية: العراق يتطلع إلى تحويل مخرجات الدورة الـ52 لمنظمة التعاون الإسلامي إلى خطوات عملية",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://mofa.gov.iq/jeddah/?p=10377",
+      "date": "2026-10-17T20:33:53.000Z",
+      "lang": "ar",
+      "titleKo": "외교부 장관: 이라크는 제52차 이슬람 협력 기구 회의의 결과를 실질적인 조치로 전환하기를 기대합니다.",
+      "url": "https://mofa.gov.iq/jeddah/?p=10377",
+      "body": "ألقى وزير الخارجية، السيد فؤاد حسين، يوم السبت الموافق 17 تشرين الأول 2026، كلمةً في افتتاح أعمال الدورة الثانية والخمسين لمجلس وزراء خارجية الدول الأعضاء في منظمة التعاون الإسلامي، التي تستضيفها العاصمة بغداد.\nوأكد السيد الوزير، في كلمته، التزام العراق بتعزيز العمل الإسلامي المشترك، وتوحيد المواقف إزاء القضايا المصيرية، وفي مقدمتها القضية الفلسطينية، مشدداً على دعم الحقوق الوطنية المشروعة للشعب الفلسطيني، وضرورة إنهاء الاحتلال ووقف الاستيطان والانتهاكات، وضمان وصول المساعدات الإنسانية إلى الفلسطينيين، وحماية القدس الشريف والحفاظ على هويتها ومكانتها التاريخية والقانونية.\nوأشار السيد فؤاد حسين إلى أهمية احترام سيادة الدول واستقلالها ووحدة أراضيها، والاحتكام إلى الحوار والقانون الدولي، وتجنب السياسات التي تؤدي إلى تصعيد التوترات، مؤكداً أن الاستقرار الإقليمي مسؤولية مشتركة تتطلب تعزيز الثقة المتبادلة وترسيخ مبادئ حسن الجوار.",
+      "bodyKo": "2026년 10월 17일 토요일, 푸아드 후세인 외무장관은 수도 바그다드에서 주최한 이슬람 협력 기구 (OIC) 외무장관 회의의 52번째 개회식에서 연설했다.\n장관은 연설에서 이라크가 이슬람 공동 행동을 촉진하고 중요한 문제에 대한 입장을 통일하겠다고 약속했으며, 그 중 가장 중요한 것은 팔레스타인 문제이며, 팔레스타인 국민의 합법적인 국가 권리에 대한 지원, 점령을 종식하고 정착과 침해를 중단해야 할 필요성, 팔레스타인에 대한 인도적 지원을 보장하고, 알 쿠즈 알 샤리프를 보호하고, 정체성과 역사적, 법적 지위를 보존해야 할 필요성을 강조했습니다.\n푸아드 후세인 (Fouad Hussein) 씨는 국가의 주권, 독립성 및 영토 보전을 존중하고, 대화와 국제법을 촉구하며, 긴장 고조로 이어지는 정책을 피하는 것이 중요하다고 지적하며, 지역 안정은 상호 신뢰의 증진과 선한 이웃의 원칙을 공고히 해야 하는 공동의 책임이라고 강조했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وزارة الخارجية العراقية"
+      ],
+      "related": [],
+      "tag": "한국·외교",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "도라",
+        "km": 22
+      }
+    },
+    {
+      "title": "[속보]바그다드의 친이란 민병대 PMF군 폐탄약 저장소에서 대폭발",
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20261018_0003830168",
+      "date": "2026-10-17T20:33:25.000Z",
+      "lang": "ko",
+      "titleKo": "[속보]바그다드의 친이란 민병대 PMF군 폐탄약 저장소에서 대폭발",
+      "url": "https://www.newsis.com/view/NISX20261018_0003830168",
+      "body": "[서울=뉴시스] 차미례 기자 = 이라크 수도 바그다드의 이란이 지원하는 이라크 준군사조직 인민동원군(PMF ) 진지에서 17일(현지시간)고장나거나 훼손된 탄약 저장물이 폭발했다고PMF가 성명을 통해 발표했다. 발표문에 따르면 아직까지 이 폭발 사고로 인한 사상자 수는 집계된 것이 없으며, 더 자세한 소식은 후속 보고가 들어오는 대로 발표할 것이라고 PMF는..",
+      "bodyKo": "[서울=뉴시스] 차미례 기자 = 이라크 수도 바그다드의 이란이 지원하는 이라크 준군사조직 인민동원군(PMF ) 진지에서 17일(현지시간)고장나거나 훼손된 탄약 저장물이 폭발했다고PMF가 성명을 통해 발표했다. 발표문에 따르면 아직까지 이 폭발 사고로 인한 사상자 수는 집계된 것이 없으며, 더 자세한 소식은 후속 보고가 들어오는 대로 발표할 것이라고 PMF는..",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "뉴시스"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "مقتل عنصر من الحشد الشعبي وإصابة 4 آخرين في انفجار شمالي بغداد",
+      "source": "صوت الإمارات",
+      "link": "https://www.voiceofemirates.com/news/2026/10/17/%D9%85%D9%82%D8%AA%D9%84-%D8%B9%D9%86%D8%B5%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-4-%D8%A2%D8%AE%D8%B1%D9%8A%D9%86/",
+      "date": "2026-10-17T19:31:49.000Z",
+      "lang": "ar",
+      "titleKo": "바그다드 북쪽에서 폭발로 인해 PMF 대원 1명이 사망하고 4명이 부상을 입었습니다.",
+      "url": "https://www.voiceofemirates.com/news/2026/10/17/%D9%85%D9%82%D8%AA%D9%84-%D8%B9%D9%86%D8%B5%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-4-%D8%A2%D8%AE%D8%B1%D9%8A%D9%86/",
+      "body": "قُتل عنصر من الحشد الشعبي وأُصيب 4 آخرون إثر انفجار غامض استهدف مقراً عناعراً شمالي العاصمة العراقية بغداد وسط تحقيقات أمنية مكثفة.\nلخص تلخيص بالذكاء الاصطناعي ChatGPT Claude Perplexity Grok Copy Prompt قُتل أحد عناصر الحشد الشعبي وأُصيب أربعة آخرون جراء انفجار وقع في مقر تابع للحشد شمالي بغداد، وفق ما أفادت به مصادر أمنية.\nويأتي الحادث وسط ترقب لكشف ملابساته وتحديد طبيعة الانفجار. في الوقت نفسه، لم تتضح بعد تفاصيل إضافية بشأن توقيته الدقيق أو حجم الأضرار التي لحقت بالمقر.\nوأوضحت المصادر الأمنية أن الانفجار أسفر عن مقتل عنصر وإصابة أربعة آخرين. ومع ذلك، لم يتم الكشف عن هويات المصابين أو طبيعة الإصابات التي تعرضوا لها.\nولم تتوافر حتى الآن معلومات مؤكدة بشأن سبب الانفجار أو ما إذا كان ناجما عن عبوة ناسفة أو حادث داخلي. بالإضافة إلى ذلك، لم تعلن الجهات المعنية تفاصيل إضافية بشأن ملابساته.\nومن المنتظر أن تكشف التحقيقات الأمنية مزيدا من المعلومات حول الحادث وموقعه الدقيق. حتى الآن، لا يوجد إعلان رسمي يوضح أسبابه أو يحدد المسؤولية عنه.",
+      "bodyKo": "이라크 수도 바그다드 북쪽의 아나르 본부를 겨냥한 의문의 폭발로 PMF 대원이 사망하고 4명이 부상을 입었다.\n보안 소식통에 따르면, 인공 지능 ChatGPT Claude Perplexity Grok Copy Prompt의 요약은 바그다드 북쪽 PMF 본부에서 폭발로 인해 PMF 회원 1명이 사망하고 4명이 부상당했다고 요약했습니다.\n이 사건은 정황을 밝히고 폭발의 본질을 결정할 것으로 예상되는 가운데 발생합니다. 동시에 정확한 시기나 건물 손상 정도에 대한 자세한 내용은 아직 명확하지 않습니다.\n보안 소식통은 폭발로 1명이 사망하고 4명이 부상을 입었다고 설명했다. 그러나 부상자의 신원이나 입은 부상의 본질은 공개되지 않았다.\n현재까지 폭발의 원인이나 폭발 장치 또는 내부 사고에 의한 것인지에 대한 확인된 정보는 없습니다. 또한, 관련 당국은 그의 상황에 대한 추가 세부 정보를 발표하지 않았습니다.\n보안 조사를 통해 사건과 정확한 위치에 대한 자세한 정보가 공개될 것으로 예상됩니다. 현재까지 그 이유를 밝히거나 그에 대한 책임을 부여하는 공식 선언은 없습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "صوت الإمارات"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "r",
+        "line": "현장 가까운 치안 사건 (바그다드)",
+        "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Fidan says Iraqi prime minister has 'serious vision' for ties with Türkiye",
+      "source": "Türkiye Today",
+      "link": "https://www.turkiyetoday.com/region/fidan-says-iraqi-prime-minister-has-serious-vision-for-ties-with-turkiye-3230521",
+      "date": "2026-10-17T19:13:29.000Z",
+      "lang": "en",
+      "titleKo": "피단 총리는 이라크 총리가 튀르키예와의 관계에 대해 '진지한 비전' 을 가지고 있다고 말했습니다.",
+      "url": "https://www.turkiyetoday.com/region/fidan-says-iraqi-prime-minister-has-serious-vision-for-ties-with-turkiye-3230521",
+      "body": "Fidan says Iraqi PM has serious vision for ties with Türkiye, after meeting Iraqi leaders in Baghdad on sidelines of OIC foreign ministers’ council\nF oreign Minister Hakan Fidan said Iraqi Prime Minister Ali al-Zaidi has “a very serious vision” for advancing relations with Türkiye, and that its “positive and constructive effect” can be seen in Iraqi policy, after a day of meetings in Baghdad on the sidelines of the Organization of Islamic Cooperation’s foreign ministers’ council.\nSpeaking to reporters after the 52nd session of the OIC Council of Foreign Ministers, Fidan described a long but productive day. He said Türkiye handed the council’s chairmanship to Iraq on Saturday after holding it for a year and a half.\nFidan said the council examined a range of issues of close concern to the Islamic world, “primarily the Palestinian question,” and discussed them “in a qualified manner.” The OIC is a grouping of Muslim-majority states. He said the meetings and bilateral contacts in Baghdad w",
+      "bodyKo": "피단 장관은 OIC 외무장관 회의에서 바그다드에서 이라크 지도자들을 만난 후 이라크 총리가 튀르키예와의 관계에 대한 진지한 비전을 갖고 있다고 말했습니다.\n하칸 피단 이라크 총리는 이라크 총리 알리 알자이디가 튀르키예와의 관계를 발전시키기 위해 \"매우 진지한 비전\" 을 가지고 있으며, 이라크 정책에서 이슬람 협력 기구 외무장관 회의의 부재로 바그다드에서 회담을 가진 후 \"긍정적이고 건설적인 효과\" 를 볼 수 있다고 말했다.\n피단은 제52차 OIC 외무장관회의가 끝난 후 기자들과 만나 길지만 생산적인 하루를 보냈다고 말했다. 그는 튀르키예가 의회의 의장직을 1년 반 동안 유지한 후 토요일 이라크에 넘겼다고 말했다.\n피단은 협의회가 이슬람 세계와 밀접한 관련이 있는 다양한 문제, 즉 \"주로 팔레스타인 문제\" 를 검토하고 \"자격을 갖춘 방식으로 논의했다\" 고 말했다. \"OIC는 무슬림 대다수 국가의 그룹입니다. 그는 바그다드에서 열린 회의와 양자 접촉이",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Türkiye Today"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "الحشد الشعبي يوضح سبب الانفجار في شرق بغداد - شفقنا العراق | الوكالة الشيعية للأخبار من العراق، النجف، كربلاء والعالم",
+      "source": "شفقنا العراق",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE40UjNkcm03VTN0VXJtRDJKekJfcnJPZ2p3VTM2cnJLTjNSWW5CRUdibXFVUUxudURyWWw2X2hvdG9TWmVpRl9obmJOYnU?oc=5",
+      "date": "2026-10-17T19:00:23.000Z",
+      "lang": "ar",
+      "titleKo": "PMF, 바그다드 동부 폭발 원인 설명 - 샤파크나 이라크 | Shia News Agency from Iraq, Najaf, Karbala and the world",
+      "count": 1,
+      "sources": [
+        "شفقنا العراق"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "r",
+        "line": "현장 가까운 치안 사건 (바그다드)",
+        "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "قتيل وجرحى من الحشد الشعبي بانفجار شرقي بغداد",
+      "source": "زاد الاردن",
+      "link": "https://www.jordanzad.com/index.php?page=article&id=768091",
+      "date": "2026-10-17T18:52:00.000Z",
+      "lang": "ar",
+      "titleKo": "바그다드 동부에서 폭탄 테러가 발생해 인민동원군 1명이 숨지고 1명이 부상당했다.",
+      "url": "https://www.jordanzad.com/index.php?page=article&id=768091",
+      "body": "أفادت وكالة رويترز -نقلا عن مصادر أمنية وطبية- بمقتل عنصر من الحشد الشعبي وإصابة 4 آخرين، اليوم السبت، إثر انفجار داخل مقر للقوات شرقي العاصمة...",
+      "bodyKo": "로이터통신은 보안과 의료 소식통을 인용해 오늘 토요일 수도 동쪽 군 본부에서 폭발이 일어나 인민동원군 대원 1명이 사망하고 4명이 부상했다고 보도했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "زاد الاردن"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "r",
+        "line": "현장 가까운 치안 사건 (바그다드)",
+        "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "الحشد الشعبي: إصابة 5 منتسبين بجروح جراء انفجار كدس الأعتدة ببغداد » وكالة الغد برس",
+      "source": "alghadpress.com",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9jWm9fbHFIdnhLOWVqSXFtVDY5NmkwXzhVcG1DVUNLN3Y5ckN3OFhIeFo0VUtBUFVFaVdmdXZ2REpteG9DaU8yTHk2aTc2UQ?oc=5",
+      "date": "2026-10-17T18:51:40.000Z",
+      "lang": "ar",
+      "titleKo": "PMF: 바그다드에서 탄약 비축량이 폭발하여 5명이 부상당했습니다. »Al-Ghad Press Agency",
+      "count": 1,
+      "sources": [
+        "alghadpress.com"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "r",
+        "line": "현장 가까운 치안 사건 (바그다드)",
+        "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "فيديو | مصدر أمني للجزيرة: مصابون بانفجار مقر للحشد الشعبي شرقي بغداد",
+      "source": "هذا اليوم",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5KVlg1TjBCSmVqbTFwem10UUhmOGdNZG92NWc1RjloRExyS3JDdzJUdU1MckVtR0dCUGdPZVp6eGFBcFZkTExXb0ROd9IBSkFVX3lxTFBlZnRUMmhfd1lfQVJ2eWg0a3pFTE9XS3lhUlpQMjNkWnBveEk0cGowbjZzUXNZdkx6dUFJYjQ2RDBnNDJGV0twdnh3?oc=5",
+      "date": "2026-10-17T18:30:03.000Z",
+      "lang": "ar",
+      "titleKo": "동영상",
+      "count": 1,
+      "sources": [
+        "هذا اليوم"
+      ],
+      "related": [],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -174,11 +470,18 @@
       "body": "An explosion at the Popular Mobilisation Forces headquarters in Baghdad killed one member of the Iraqi paramilitary ‌group and ‌wounded five ‌others,",
       "bodyKo": "바그다드 인민동원군 본부에서 폭발이 일어나 이라크 준군사조직원 1명이 사망하고 5명이 부상을 입었다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
-        "Egyptian Gazette"
+        "Egyptian Gazette",
+        "Arab News"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "이라크 준군사 동맹 기지에서 폭발이 일어나 회원국 한 명이 사망했다고 소식통은 전합니다.",
+          "source": "Arab News",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTmdxaFJBbXd4Y2U4TEVpRTJsWi1WeDZCSlFYWUJGcU9YR01KeDNGcWNiVi0xUEx4Zm1zSUM1LVFnQVIyTnBLUS0yVGJxZlZObzEzaGtQU1VqcTdNR2RuWmxLWmRZd080UmRfRnlubUNSVHJZTHhXTzJ1QXFWQ3pGalFHZkFkaDhaMW5DbGtPMU1fTm4tUjVSYk53X3RhODFRVWFwM0V5MW04d0dPeVcwdldzTGZmbFhQRkdj?oc=5"
+        }
+      ],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -189,19 +492,15 @@
       }
     },
     {
-      "title": "PMF says no external actor behind Baghdad depot explosion",
-      "source": "The New Region",
-      "link": "https://thenewregion.com/posts/6838",
-      "date": "2026-10-17T18:07:42.000Z",
-      "lang": "en",
-      "titleKo": "PMF는 바그다드 창고 폭발 뒤에 외부 행위자가 없다고 밝혔습니다.",
-      "url": "https://thenewregion.com/posts/6838",
-      "body": "The PMF statement came shortly after Iraqi Prime Minister Ali al-Zaidi ordered an investigation into the explosion to “to ascertain the precise causes of the incident,” according to Iraq’s Security Media Cell.\nERBIL, Kurdistan Region of Iraq &ndash; Iraq&rsquo;s Popular Mobilization Forces (PMF) on Saturday said that the explosion in the force&rsquo;s Baghdad ammunition depot was caused by an &ldquo;internal malfunction,&rdquo; adding that there is no indications of &ldquo;any external targeting.&rdquo;\nThe depot was located in a residential area in southern Baghdad, according to The New Region&rsquo;s correspondent. The PMF said that at least five personnel were left with &ldquo;minor injuries&rdquo; as a result of the incident.\nA similar explosion rocked another ammunition depot of the PMF in eastern Diyala province in June, causing a fire but no casualties.",
-      "bodyKo": "이라크 보안 미디어 셀에 따르면 PMF의 성명은 알리 알자이디 이라크 총리가 \"사건의 정확한 원인을 확인하기 위해\" 폭발 조사를 지시한 직후 나왔다고 한다.\n이라크 쿠르드 지역 에르빌 - 이라크 인민동원군(PMF)은 토요일 바그다드 탄약고 폭발이 \"내부 오작동\"에 의해 발생했다고 밝혔으며 \"외부 표적\"의 징후는 없다고 덧붙였습니다.\nThe New Region의 특파원에 따르면 창고는 바그다드 남부의 주거 지역에 위치해 있었습니다. PMF는 이번 사고로 최소 5명의 인원이 '경상'을 입었다고 밝혔다.\n지난 6월에도 디얄라 동부에 있는 PMF의 또 다른 탄약고에서 유사한 폭발이 발생해 화재가 발생했지만 인명 피해는 발생하지 않았습니다.",
-      "tried": true,
+      "title": "عاجل - الحشد الشعبي: انفجار مستودع يحتوي على عتاد تالف في بغداد ولا خسائر بشرية",
+      "source": "نبأ الأردن",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5vMVlrMWpKVXRVeWo4QTRfZzdxZi1ORkZ0eFczaGVUemdfSTZPZWJ3b1g1Sl83TmEwYWt6WGVIbTNqT0thcFhVbVR4MXVRVkdn?oc=5",
+      "date": "2026-10-17T17:35:58.000Z",
+      "lang": "ar",
+      "titleKo": "긴급",
       "count": 1,
       "sources": [
-        "The New Region"
+        "نبأ الأردن"
       ],
       "related": [],
       "tag": "치안·테러",
@@ -209,31 +508,6 @@
         "lv": "g",
         "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
         "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "انفجار مقر الحشد في بغداد تابع.. ماذا كشفت التحقيقات الأولية؟",
-      "source": "جنوبية",
-      "link": "https://janoubia.com/2026/10/17/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%85%D9%82%D8%B1-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AA%D8%A7%D8%A8%D8%B9-%D9%85%D8%A7%D8%B0%D8%A7-%D9%83%D8%B4/",
-      "date": "2026-10-17T17:30:39.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 PMF 본부가 폭발했다. 계속하세요... 초기 조사에서 밝혀진 것은 무엇입니까?",
-      "url": "https://janoubia.com/2026/10/17/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%85%D9%82%D8%B1-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AA%D8%A7%D8%A8%D8%B9-%D9%85%D8%A7%D8%B0%D8%A7-%D9%83%D8%B4/",
-      "body": "أشارت التحقيقات الأولية للأدلة الجنائية التابعة لوزارة الداخلية العراقية إلى أن الانفجار الذي وقع داخل أحد مقار هيئة الحشد الشعبي شرقي القناة في بغداد نجم\nوأعلنت هيئة الحشد الشعبي السيطرة على الحريق الناجم عن انفجار كدس من العتاد التالف داخل أحد مقارها في العاصمة بغداد، مشيرة إلى أن الحصيلة النهائية للحادث أسفرت عن إصابة خمسة من منتسبيها بجروح طفيفة.\nوأكدت الهيئة أن اللجان المختصة باشرت إجراءات التحقيق لتحديد ملابسات الانفجار وأسبابه، على أن تُعلن النتائج فور استكمال التحقيقات.\nوفي موازاة ذلك، وجّه رئيس مجلس الوزراء والقائد العام للقوات المسلحة علي فالح الزيدي، اليوم السبت، بتشكيل لجنة تحقيقية للوقوف على ملابسات الانفجار وتحديد أسبابه الدقيقة، ولا سيما في ظل الإصابات والأضرار المادية التي لحقت بمنازل مجاورة.\nوذكرت خلية الإعلام الأمني، في بيان، أن الزيدي شدد على ضرورة الإسراع في إنجاز التحقيقات، واتخاذ التدابير وإجراءات السلامة اللازمة لمنع تكرار حوادث مماثلة مستقبلاً.",
-      "bodyKo": "이라크 내무부의 초기 법의학 조사에 따르면 바그다드 운하 동쪽 인민동원군 본부 중 한 곳에서 발생한 폭발은\n인민동원군은 수도 바그다드에 있는 본부 중 한 곳에서 손상된 장비 더미가 폭발하면서 발생한 화재를 진압했다고 발표했습니다. 이번 사건의 최종 결과로 대원 5명이 경미한 부상을 입었다고 밝혔습니다.\n당국은 폭발 상황과 원인을 파악하기 위해 관련 위원회에서 조사 절차에 착수했으며, 조사가 완료되는 대로 결과를 즉시 발표할 것이라고 확인했습니다.\n이와 동시에 알리 팔레 알자이디 총리 겸 육군 총사령관은 오늘 토요일 폭발 상황을 파악하고 특히 부상과 인근 가옥의 물질적 피해를 고려하여 폭발의 정확한 원인을 파악하기 위해 조사위원회 구성을 지시했습니다.\n보안 미디어 셀은 성명을 통해 알 자이디가 조사를 신속히 완료하고 향후 유사한 사건의 재발을 방지하기 위해 필요한 안전 조치와 조치를 취해야 한다고 강조했다고 밝혔습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "جنوبية"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "r",
-        "line": "현장 가까운 치안 사건 (바그다드)",
-        "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
         "place": "바그다드",
         "km": 27
       }
@@ -257,48 +531,6 @@
         "act": "",
         "place": "바그다드",
         "km": 27
-      }
-    },
-    {
-      "title": "الزيدي يوجه بالتحقيق في انفجار كدس عتاد للحشد ببغداد",
-      "source": "Kurdistan24",
-      "link": "https://news.google.com/rss/articles/CBMiwgNBVV95cUxQOVVFOXVpZTFtZjJwRkdsblBYZUNJeFV2cmc1bVFnRHlBT0M2V0VUZ1BMQkFQc2VpSXZkQmlmVDU0UGU1c204YlNhd1htS1J2elh1Zk5pcGEybDhEU3hESXI0NjlyM3d2LTB3LTEtZ1BWVHEzVk9PaThoN2Ffcjh6VUt2X0xDSEVkY01pUXU1N1BEdUxQd0c3NzVneU12TGg4eUxXdEE3Z0swU0Q2Q0ExeDBaZzk3T2EzS1UxaHBRYzZlQ2Zjd29ZSTltdGswYXV5aFU0aWJyYU9CTUxLdDZVazFVT2kyTnczZjczSlJRaGlFaThndkFXbVFvTkNMamJ0SlRWenNzVXhfZ3M5LXRUNlU5UHVMMzZNbS0zQWpoTVBKUXR1V2VQanVSamR2bkpvWTBiV0Q1b3lTcXo5QUQ5UWt0RWFtREpSRllLNWtYWE0zcE5XWUlZX0VyZlFLRHFodGstTHl1QTVWRWJwR05aRzRWaUVxZVJwYkQ4YUpkcGNlSGx1dTJkVHJiMU5ZOE9SUkJVMnI1ZDkwRFNiQi1GeUJkczRhTGVPanY1MEtNX29VNERiamlBZXBDV01xcWx5dWc?oc=5",
-      "date": "2026-10-17T17:25:00.000Z",
-      "lang": "ar",
-      "titleKo": "알 자이디는 바그다드에서 해시드 장비 더미가 폭발한 사건에 대한 조사를 지휘하고 있습니다.",
-      "count": 1,
-      "sources": [
-        "Kurdistan24"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Al-Shaibani meets Iraqi prime minister to discuss bilateral ties",
-      "source": "سانا",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9EYV85MTVCTG9CTDF2NGU3WmFUOTJWWGVFLXlCRE9HSmdwRGgzUTItVmRjUWxBWFVQU29nZDNKc0g1bHY2dnJaalM0MWI?oc=5",
-      "date": "2026-10-17T17:15:11.000Z",
-      "lang": "en",
-      "titleKo": "알 샤이바니, 이라크 총리 만나 양국 관계 논의",
-      "count": 1,
-      "sources": [
-        "سانا"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
       }
     },
     {
@@ -365,12 +597,12 @@
       }
     },
     {
-      "title": "سعر الدولار في العراق السبت 17 أكتوبر 2026.. ارتفاع في بغداد وأربيل",
-      "source": "العين الإخبارية",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0waTlWdE9EQmJtemZRU1VqT0Z0Z3NyckRPX1o1WDJIWWZWTnJYOW1sX2JfbHJVNHduWHg3Z08yX2xLRTV4aENMZ1kzM3E4dnctUnd3TXlYaWdXQ3dzM1Fiem5kUG8zeHlMVkRJNTdmLWoyMmQ0T1ZBS3E5cjU?oc=5",
+      "title": "ارتفاع سعر الدولار في بغداد وأربيل صباح اليوم 17 أكتوبر 2026",
+      "source": "جريدة آخر الأخبار",
+      "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxPWFBvbkd1d2NMQ2xsaXVWaFd0UjdZS3VRRkV6Q2tjVW4tQndJb3NDS0dFMnZncjk1NF90Nk9XODJZdG1sRzNFSkItVWZ6czE0ejl1cDdpVFhXR2VsVnhlU0hjQjBzcE41TkFGRS1TVXIza0ZuU0FLRlk4ZldqVTQ0azV5MVlJdHBEOTZNSVd0YW10Y3RHVE42MkFBT1phU0k0MnFJVzk3QU5wd2tkOER6WDROOGM1dGEtdHBHbmNtX2FJWjhDMzhhbF83NVBiak9iWERmQno2LXlJS0lxWFVFUmZPVXZIMTVDR1lQdFN4UVpoaFlBQWpIMUJBT1pVekMtVjJLdG96aFVZQnhLS2Q5ejN3Y2Z5LXFOOVRvQlE2cVI3cmVNeDI2cWNsdWVIemNBZ3k5WkZwYU5BVkpjWjZxUENOUGhYNEk?oc=5",
       "date": "2026-10-17T16:42:17.000Z",
       "lang": "ar",
-      "titleKo": "이라크 달러시세 2026년 10월 17일 토요일..바그다드·아르빌 상승",
+      "titleKo": "2026년 10월 17일 아침 바그다드와 에르빌의 달러 가격 상승",
       "count": 2,
       "sources": [
         "جريدة آخر الأخبار",
@@ -378,9 +610,9 @@
       ],
       "related": [
         {
-          "titleKo": "2026년 10월 17일 오늘 아침 바그다드와 아르빌에서 달러 가격이 상승했습니다.",
-          "source": "جريدة آخر الأخبار",
-          "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxPWFBvbkd1d2NMQ2xsaXVWaFd0UjdZS3VRRkV6Q2tjVW4tQndJb3NDS0dFMnZncjk1NF90Nk9XODJZdG1sRzNFSkItVWZ6czE0ejl1cDdpVFhXR2VsVnhlU0hjQjBzcE41TkFGRS1TVXIza0ZuU0FLRlk4ZldqVTQ0azV5MVlJdHBEOTZNSVd0YW10Y3RHVE42MkFBT1phU0k0MnFJVzk3QU5wd2tkOER6WDROOGM1dGEtdHBHbmNtX2FJWjhDMzhhbF83NVBiak9iWERmQno2LXlJS0lxWFVFUmZPVXZIMTVDR1lQdFN4UVpoaFlBQWpIMUJBT1pVekMtVjJLdG96aFVZQnhLS2Q5ejN3Y2Z5LXFOOVRvQlE2cVI3cmVNeDI2cWNsdWVIemNBZ3k5WkZwYU5BVkpjWjZxUENOUGhYNEk?oc=5"
+          "titleKo": "이라크 달러시세 2026년 10월 17일 토요일..바그다드·아르빌 상승",
+          "source": "العين الإخبارية",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0waTlWdE9EQmJtemZRU1VqT0Z0Z3NyckRPX1o1WDJIWWZWTnJYOW1sX2JfbHJVNHduWHg3Z08yX2xLRTV4aENMZ1kzM3E4dnctUnd3TXlYaWdXQ3dzM1Fiem5kUG8zeHlMVkRJNTdmLWoyMmQ0T1ZBS3E5cjU?oc=5"
         }
       ],
       "tag": "경제·유가",
@@ -412,124 +644,19 @@
         "place": "",
         "km": null
       }
-    },
-    {
-      "title": "Egypt, Iraq keen to deepen economic ties, advance regional co-operation",
-      "source": "Egyptian Gazette",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeXpqTXFlNXEybWk3U3N0dkNuRlF6b0Z1Q1lZaWhTUXgyZ2tzMzNkLUV3d1gxamw0VlRsdnNqa0ZwOE1POE10Y3F3YllkODBWc290anRtXzlzblhmRFFoSjZuQzZVZ0Y4d0ZIb1RyQzE2ZUFfNmVfaTJyelloemlLR1RZUHlZWE1YLUx4WGZkZzFGdWgtTHNPRGRSLVd6YXdBQmMtVGFleng?oc=5",
-      "date": "2026-10-17T16:28:12.000Z",
-      "lang": "en",
-      "titleKo": "이집트와 이라크는 경제 관계를 심화하고 지역 협력을 발전시키길 원합니다",
-      "count": 1,
-      "sources": [
-        "Egyptian Gazette"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "فيديو | تضارب المعلومات حول أسباب الانفجار شرقي بغداد",
-      "source": "هذا اليوم",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9hRG82Z1I1ZXk0NzFIMmJlUU1ib2NGV3hzSWJ3WVJteXdTbElCdEZnd09KOEpHUlltNTI1X253U3U3Y2Q5dDhSUDBNUdIBSkFVX3lxTE1ydms2eTFKTlVaMDVmTmNFdFh0OFZhaGhydXRTT3VlckRSSEo5TFR1WE11VDVUVVVWTlRYaVBBTmg2YjAzdkl5NE1B?oc=5",
-      "date": "2026-10-17T16:27:02.000Z",
-      "lang": "ar",
-      "titleKo": "비디오",
-      "count": 1,
-      "sources": [
-        "هذا اليوم"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "رئيس مجلس الخبراء العراقي: 5 قطاعات واعدة أمام الاستثمارات الإماراتية",
-      "source": "العين الإخبارية",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB6YXdnTDc2bjg2S2ZGOE14bjZLTXFfZ2hhVzRpLUcyYW9PSmo5WW0tSkFLZVdNaDNpSUgwU1FwU21NVWJMVjN2eFdra29OczdKR29fVlRsV1RyYW9EM3RxTHhNN2h0X0pIQnlMOEdpUEgyeXh1d0ZjSi1WMTNxLWs?oc=5",
-      "date": "2026-10-17T16:25:23.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 전문가 협의회 의장: UAE 투자를 위한 5가지 유망 분야",
-      "count": 1,
-      "sources": [
-        "العين الإخبارية"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "PM: Iraq's relations with Syria in counterterrorism and border security are important » Iraqi News Agency",
-      "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOR2wxbEJWelgtRy1nOUlZWGJISEJyUWhIbzVDbnZvdHBGaG1GZzVLbXBoQjBaTmZDU3lPdHE2Qy1pYm5fUFBaOXNRNm5OdUE4eDJ6ZGx6YUV2cHgyNmZKVVJXVnFybWVNaURJTGNXVnBJalNBdS10akZZOTNBUFh6VDdMZEp6aWpKQW41bkdNbm1XTXM3Y3BGOXcwdm5wS25SZFE0b2ZubVhVNlV2U2xIdEtHTThYWnJQZ3RFZC1n?oc=5",
-      "date": "2026-10-17T16:14:41.000Z",
-      "lang": "en",
-      "titleKo": "PM: 대테러와 국경 안보 분야에서 이라크와 시리아의 관계가 중요합니다. » 이라크 통신사",
-      "count": 1,
-      "sources": [
-        "وكالة الانباء العراقية (واع)"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "ألسنة اللهب تتصاعد من كدس للحشد ببغداد.. «رويترز» تتحدث عن سقوط ضحايا",
-      "source": "باسنیوز",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB4Tk9OMzdudkIxbi1LV3R4UGZPTXJRTlRuamZheEctaTlFRUN2eUs4ekZJOXRzQUpxYXRSaERUeXRYLXVPREM5X1RjSXRhc0tO?oc=5",
-      "date": "2026-10-17T16:13:00.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드의 군중 더미에서 불길이 치솟고 있습니다. 로이터, 사상자 보고",
-      "count": 1,
-      "sources": [
-        "باسنیوز"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
     }
   ],
   "alerts": [],
   "brief": [
     {
       "lv": "r",
-      "titleKo": "바그다드 동부에서 폭탄 테러가 발생해 인민동원군 1명이 숨지고 1명이 부상당했다.",
+      "titleKo": "이라크 바그다드의 PMF민병대 탄약고 폭발로 부상자 5명",
       "line": "현장 가까운 치안 사건 (바그다드)",
       "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
       "km": 27,
-      "link": "https://www.jordanzad.com/index.php?page=article&id=768091",
-      "date": "2026-10-17T18:52:00.000Z",
-      "more": 3
+      "link": "https://www.newsis.com/view/NISX20261018_0003830171",
+      "date": "2026-10-17T21:00:56.000Z",
+      "more": 8
     }
   ]
 }
