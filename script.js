@@ -8594,6 +8594,15 @@ makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, subN
     if (L.length) render();
   }).catch(() => {});
 })();
+/* 위쪽 띠(새 기능·이라크 공휴일 안내)·머리·메뉴줄의 높이가 바뀌면 (✕로 닫기, 소분류 줄 열림 등)
+   카드가 위아래로 움직이므로 오른쪽 달력·환율 위젯 위치를 다시 맞춘다 */
+(function keepSideWidgetsAligned() {
+  if (!window.ResizeObserver) return;
+  let raf = 0;
+  const ro = new ResizeObserver(() => { cancelAnimationFrame(raf); raf = requestAnimationFrame(() => { try { alignSideWidgets(); } catch (e) { /* */ } }); });
+  ["iqAlert"].forEach((id) => { const el = document.getElementById(id); if (el) ro.observe(el); });
+  document.querySelectorAll(".topbar, .tab-bar, header").forEach((el) => ro.observe(el));
+})();
 makeNewsView({ view: "view-iraq-issues", json: "iraq-issues.json", days: 7, compact: true, impact: true, iq: "inewsIq", iqN: "inewsIqN", count: "inewsCount", meta: "inewsMeta", tags: "inewsTags" });
 makeNewsView({ view: "view-fire-news", json: "fire-news.json", days: 30, ko: "fnewsKo", iq: "fnewsIq", koN: "fnewsKoN", iqN: "fnewsIqN", count: "fnewsCount", meta: "fnewsMeta", tags: "fnewsTags", tagOrder: ["용접·불티", "단열재·자재", "전기·배터리", "숙소·창고", "고층·건물", "공장·플랜트", "시장·상가"] });
 makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30, ko: "hnewsKo", iq: "hnewsIq", koN: "hnewsKoN", iqN: "hnewsIqN", count: "hnewsCount", meta: "hnewsMeta" });
