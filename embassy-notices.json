@@ -2,12 +2,10 @@
   "_readme": "이 파일은 GitHub Actions가 외교부 공공데이터 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
   "country": "중동·주변국",
   "sources": {
-    "공지사항": false,
+    "공지사항": true,
     "안전공지": true
   },
-  "errors": {
-    "공지사항": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Read timed out. (read timeout=30)"
-  },
+  "errors": {},
   "countries": [
     {
       "iso2": "IQ",
@@ -90,7 +88,7 @@
       "count": 10
     }
   ],
-  "generatedAt": "2026-10-18T05:00:58.084933+00:00",
+  "generatedAt": "2026-10-18T11:36:34.456301+00:00",
   "items": [
     {
       "kind": "안전공지",
