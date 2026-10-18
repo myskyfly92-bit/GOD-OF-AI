@@ -1,14 +1,17 @@
 name: diag-air
 on: { push: { branches: [diag-air] } }
+permissions: { contents: write }
 jobs:
   d:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with: { ref: diag-air }
       - run: |
           for u in "https://adsb.lol/?lat=32.0&lon=45.0&zoom=6&hideSidebar&hideButtons" "https://globe.adsb.fi/?lat=32&lon=45&zoom=6&hideSidebar&hideButtons" "https://globe.airplanes.live/?lat=32&lon=45&zoom=6&hideSidebar&hideButtons" "https://api.adsb.lol/v2/lat/33.3/lon/44.4/dist/250"; do
-            echo "=== $u"; curl -sS -m 25 -D - -o /tmp/b "$u" | grep -iE "^HTTP|x-frame|content-security|frame-ancestors|cf-mitigated|server|location" ; head -c 300 /tmp/b; echo; done
+            echo "=== $u" >> out.txt; curl -sS -m 25 -D - -o /tmp/b "$u" | grep -iE "^HTTP|x-frame|content-security|frame-ancestors|cf-mitigated|server|location" >> out.txt; head -c 300 /tmp/b >> out.txt; echo >> out.txt; done
       - run: |
-          npm i playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
+          npm i playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1; rm -rf node_modules/.cache
           cat > t.js <<'JS'
           const {chromium}=require('playwright');(async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1200,height:800}});
           const urls={lol:'https://adsb.lol/?lat=32.0&lon=45.0&zoom=6&hideSidebar&hideButtons',fi:'https://globe.adsb.fi/?lat=32&lon=45&zoom=6&hideSidebar&hideButtons',al:'https://globe.airplanes.live/?lat=32&lon=45&zoom=6&hideSidebar&hideButtons'};
@@ -20,6 +23,7 @@ jobs:
             console.log(k,info);await p.screenshot({path:k+'.png'});}
           await b.close()})();
           JS
-          node t.js
-      - uses: actions/upload-artifact@v4
-        with: { name: shots, path: "*.png" }
+          node t.js >> out.txt 2>&1
+      - run: |
+          mkdir -p diagout && mv out.txt *.png diagout/ ; git config user.name diag; git config user.email diag@users.noreply.github.com
+          git add diagout && git commit -m "diag results [skip ci]" && git push
