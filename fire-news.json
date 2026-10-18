@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T11:48:36.283Z",
+  "generatedAt": "2026-10-18T16:12:08.093Z",
   "items": [
     {
       "title": "부천 금속부품 도장 공장에서 화재",
@@ -8,20 +8,24 @@
       "date": "2026-10-18T10:38:00.000Z",
       "lang": "ko",
       "titleKo": "부천 금속부품 도장 공장에서 화재",
-      "count": 7,
+      "count": 6,
       "sources": [
         "صحيفة السوسنة الأردنية",
+        "شبكة تواصل الإخبارية",
         "Al Daee News",
         "연합뉴스",
-        "Vietnam.vn",
-        "경인일보",
-        "매일일보"
+        "Vietnam.vn"
       ],
       "related": [
         {
           "titleKo": "민방위는 마프라크의 스펀지 공장에서 화재를 통제합니다.",
           "source": "صحيفة السوسنة الأردنية",
           "link": "https://www.assawsana.com/article/736008"
+        },
+        {
+          "titleKo": "ROYA REPORTER: 민방위는 스폰지 공장의 화재를 통제합니다...",
+          "source": "شبكة تواصل الإخبارية",
+          "link": "https://twaslnews1.twaslnews.com/6164778/"
         },
         {
           "titleKo": "민방위는 카스라의 목공 공장에서 화재를 진압하고 바그다드의 갈증 지역을 진압합니다.",
@@ -37,11 +41,6 @@
           "titleKo": "[뉴스초점] 부천 공장 화재…소방관 5명 포함 7명 중경상",
           "source": "연합뉴스",
           "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2bnZraDFQOVdWcDgzMzJEMGI0Q21GcjJjMWVWa1phZlhwYVVvWk9kWHlFSnpta0lDRGJsd2xuX3ZuSzV3V0tMRHJMU3h0SDAtSlVJLVhkTHhUZW9LWWc5RdIBYEFVX3lxTFA2bnZraDFQOVdWcDgzMzJEMGI0Q21GcjJjMWVWa1phZlhwYVVvWk9kWHlFSnpta0lDRGJsd2xuX3ZuSzV3V0tMRHJMU3h0SDAtSlVJLVhkTHhUZW9LWWc5RQ?oc=5"
-        },
-        {
-          "titleKo": "[화보] 부천 도장 공장 화재 현장",
-          "source": "경인일보",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAyZXFWTkhSdVBHOFBmNVNfLWF0cHd1bXNLVlBseEZsbmdkM2RIUXVHNjRtVFE2VW5vbVNoX0ZxU21CUkZXUWZhNV9DYUlnNG9BQ2c?oc=5"
         }
       ],
       "tag": "공장·플랜트"
@@ -75,12 +74,12 @@
         {
           "titleKo": "술라이마니야의 연료 저장고에서 거대한 화재가 발생합니다.",
           "source": "الوكالة الوطنية العراقية للأنباء| نينا",
-          "link": "https://ninanews.com/website/News/Details?Key=1320443"
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5FT0dyTlgxaUxHWDlVQ3M1aWhnT18zbi1rWTh4T092Znh6YkpHSTVrMHFIdk5lUFhxUHNfWHNRVWZSRjdXY2F6bFktZFJzbXJuUmhCd3VkSjlLNzRESkRIRGxMVQ?oc=5"
         },
         {
           "titleKo": "술라이마니야 탕그로 지역의 석유 파생 상품 창고에서 화재 발생",
           "source": "هذا اليوم",
-          "link": "https://hathalyoum.net/articles/4248731"
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1JYjdRU2MxazBmNEg5aUFLRWg4NlgtazBwaG01NmQ2NTFXY0ItRks1eDZZcWlvNUFTQWt1M0JQSk5neVNGaDNtNXhSb0RvRjJt0gFKQVVfeXFMTWtYOFhBYmVBMjFBZzN2Zjg5RDVFeEl6QzJNX0J2dnZhZjZIYWRSQjduNWJFd2FrOVFfQ1JWcVgxVktveHMwTlV0X1E?oc=5"
         },
         {
           "titleKo": "리모델링 중이던 마사지 업소에서 화재가 발생해 재산 피해가 발생했습니다.",
@@ -91,15 +90,15 @@
       "tag": "숙소·창고"
     },
     {
-      "title": "화재현장 살핀 추미애 지사",
-      "source": "뉴시스",
-      "link": "https://mobile.newsis.com/photo/NISI20261016_0021491520",
+      "title": "[포토] 부천 공장 화재 현장 관리하는 경찰",
+      "source": "신아일보",
+      "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5072748",
       "date": "2026-10-18T06:07:58.000Z",
       "lang": "ko",
-      "titleKo": "화재현장 살핀 추미애 지사",
-      "url": "https://mobile.newsis.com/photo/NISI20261016_0021491520",
-      "body": "추미애 경기도지사가 16일 부천 오정구의 한 도장공장 화재현장을 살핀 뒤 현장을 나서고 있다",
-      "bodyKo": "추미애 경기도지사가 16일 부천 오정구의 한 도장공장 화재현장을 살핀 뒤 현장을 나서고 있다",
+      "titleKo": "[포토] 부천 공장 화재 현장 관리하는 경찰",
+      "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5072748",
+      "body": "경찰이 17일 오후 경기 부천시 오정구의 한 건물에 출동해 있다. 이 건물 3층에 있는 금속 사출·도장 업체에서 전날 큰불이 났다.[신아일보] 천동환 기자",
+      "bodyKo": "경찰이 17일 오후 경기 부천시 오정구의 한 건물에 출동해 있다. 이 건물 3층에 있는 금속 사출·도장 업체에서 전날 큰불이 났다.[신아일보] 천동환 기자",
       "tried": true,
       "count": 39,
       "sources": [
@@ -132,9 +131,9 @@
           "link": "https://www.newsis.com/view/NISX20261017_0003830067"
         },
         {
-          "titleKo": "[포토] 부천 공장 화재 현장 관리하는 경찰",
+          "titleKo": "[포토] 부천 공장 화재 현장 '사투의 흔적'",
           "source": "신아일보",
-          "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5072748"
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2MDRxMHBmS1laU0hxbmwzQjdpaXZDUWFsVEJnMDhQRnA0Y3ZJNnNYd0pnS2dJSHpmT1lnTnNpUXlHcWFUWFhESWcyNjduR2c0VjN3Q21hSGtuWlVTVDk4NWlwWEdSakY5d0FjcHFJN3c?oc=5"
         }
       ],
       "tag": "공장·플랜트"
@@ -222,7 +221,7 @@
       "title": "당진 리튬 창고 화재, 첨단 특수장비 투입해 초기 진압",
       "source": "쿠키뉴스",
       "link": "https://www.kukinews.com/article/view/kuk202608310135",
-      "date": "2026-10-17T14:36:43.000Z",
+      "date": "2026-10-17T12:49:05.000Z",
       "lang": "ko",
       "titleKo": "당진 리튬 창고 화재, 첨단 특수장비 투입해 초기 진압",
       "url": "https://www.kukinews.com/article/view/kuk202608310135",
@@ -231,15 +230,15 @@
       "tried": true,
       "count": 3,
       "sources": [
-        "مانكيش نت",
+        "الشرق للأخبار",
         "التلفزيون العربي",
         "쿠키뉴스"
       ],
       "related": [
         {
           "titleKo": "이라크의 석유 파생품 창고에서 화재 발생",
-          "source": "مانكيش نت",
-          "link": "https://mangish.net/%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D9%84%D9%84%D9%85%D8%B4%D8%AA%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7%D9%8A/"
+          "source": "الشرق للأخبار",
+          "link": "https://asharq.com/videos/shorts/16362/%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D9%84%D9%84%D9%85%D8%B4%D8%AA%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82/"
         },
         {
           "titleKo": "이라크.. 술라이마니야 탕그로 지역 석유 파생물 창고 화재",
@@ -312,6 +311,24 @@
           "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOS3V0bmlzUVpXWEswTTk5bXdEeTRJQWRyU1pObGdHcUZfODJueGF5REtWQTdqaVh3dHhCdHBvUHJqQUJlZl9pVjdHZzVzXzBvMVgxMGU3bEpCUWVpVzFsNlVWLTF5OHVvMENvTGpBc1pIaURhR1lWQm95c0dFMmh6YXpXeURUbjFmWHhkN2FxQmZxZGl0UFE?oc=5"
         }
       ],
+      "tag": "기타"
+    },
+    {
+      "title": "올해 화재 현장서 숨진 소방관 4명⋯7년간 '위험직무 순직' 28명",
+      "source": "아이뉴스24",
+      "link": "http://www.inews24.com/view/2016113",
+      "date": "2026-10-17T09:41:57.000Z",
+      "lang": "ko",
+      "titleKo": "올해 화재 현장서 숨진 소방관 4명⋯7년간 '위험직무 순직' 28명",
+      "url": "http://www.inews24.com/view/2016113",
+      "body": "부천 공장화재를 진압하기 위해 선착대로 투입됐던 소방관이 끝내 숨지면서 올해 화재 현장에서 순직한 소방관이 4명으로 늘었다. 17일 소방청 등에 따르면 전날 오전 경기 부천시 오정구 내동에 있는 한 금속 사출 인쇄공장에서 난 불을 진압하다가 크게 다친 A 소방장이 이날 오전 0시 55분경 숨졌다.\n[아이뉴스24 김효진 기자] 부천 공장화재를 진압하기 위해 선착대로 투입됐던 소방관이 끝내 숨지면서 올해 화재 현장에서 순직한 소방관이 4명으로 늘었다.\n고인은 화재 신고 지점인 건물 3층에 선착대로 투입돼 진화 작업을 벌이다가 갑자기 치솟은 불길에 고립됐으며, 심정지 상태로 구조돼 근처 병원으로 옮겨져 치료받던 중 유명을 달리했다.\n고(故) 성치인 소방경은 지난해 11월 24일 경기 고양시에 있는 한 자동차 검사소에서 발생한 불을 끄다 크게 다쳤고, 이후 병원 치료를 받았지만 회복하지 못하고 올해 3월 3일 세상을 떠났다.\n올 4월 12일에는 전남 완도군 수산물 가공공장 화재가 발생, 불이 난 냉동창고 내부에 진입했던 고 박승원 소방경과 고 노태영 소방교가 순직했다.\n소방청에 따르면 2018년 10월부터 지난해 12월까지 7년여간 화재 진압과 구조 등 위험직무를 수행하다 순직한 것으로 승인된 소방관은 총 28명이다.\n연도별로는 2018년 6명, 2019년 3명, 2020년 8명, 2021년 4명, 2022년 3명, 2023년 1명, 2024년 3명이다. 작년에는 위험직무 순직자로 승인된 소방관은 없었다.\n근무 유형별로는 화재진압 중 순직한 소방관이 12명으로 가장 많았다. 이어 구조 9명, 생활안전 4명, 기타 3명 순이었다.",
+      "bodyKo": "부천 공장화재를 진압하기 위해 선착대로 투입됐던 소방관이 끝내 숨지면서 올해 화재 현장에서 순직한 소방관이 4명으로 늘었다. 17일 소방청 등에 따르면 전날 오전 경기 부천시 오정구 내동에 있는 한 금속 사출 인쇄공장에서 난 불을 진압하다가 크게 다친 A 소방장이 이날 오전 0시 55분경 숨졌다.\n[아이뉴스24 김효진 기자] 부천 공장화재를 진압하기 위해 선착대로 투입됐던 소방관이 끝내 숨지면서 올해 화재 현장에서 순직한 소방관이 4명으로 늘었다.\n고인은 화재 신고 지점인 건물 3층에 선착대로 투입돼 진화 작업을 벌이다가 갑자기 치솟은 불길에 고립됐으며, 심정지 상태로 구조돼 근처 병원으로 옮겨져 치료받던 중 유명을 달리했다.\n고(故) 성치인 소방경은 지난해 11월 24일 경기 고양시에 있는 한 자동차 검사소에서 발생한 불을 끄다 크게 다쳤고, 이후 병원 치료를 받았지만 회복하지 못하고 올해 3월 3일 세상을 떠났다.\n올 4월 12일에는 전남 완도군 수산물 가공공장 화재가 발생, 불이 난 냉동창고 내부에 진입했던 고 박승원 소방경과 고 노태영 소방교가 순직했다.\n소방청에 따르면 2018년 10월부터 지난해 12월까지 7년여간 화재 진압과 구조 등 위험직무를 수행하다 순직한 것으로 승인된 소방관은 총 28명이다.\n연도별로는 2018년 6명, 2019년 3명, 2020년 8명, 2021년 4명, 2022년 3명, 2023년 1명, 2024년 3명이다. 작년에는 위험직무 순직자로 승인된 소방관은 없었다.\n근무 유형별로는 화재진압 중 순직한 소방관이 12명으로 가장 많았다. 이어 구조 9명, 생활안전 4명, 기타 3명 순이었다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "아이뉴스24"
+      ],
+      "related": [],
       "tag": "기타"
     },
     {
