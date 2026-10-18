@@ -3,34 +3,33 @@
  "source": "질병관리청 전수신고 감염병 발생현황 (공공데이터포털)",
  "currentWeek": {
   "year": 2026,
-  "week": 42,
-  "label": "2026년 42주",
-  "start": "2026-10-11",
-  "end": "2026-10-17"
+  "week": 43,
+  "label": "2026년 43주",
+  "start": "2026-10-18",
+  "end": "2026-10-24"
  },
  "baseWeek": {
-  "year": 2026,
-  "week": 40,
-  "label": "2026년 40주",
-  "start": "2026-09-27",
-  "end": "2026-10-03"
- },
- "prevWeek": {
-  "year": 2026,
-  "week": 39,
-  "label": "2026년 39주",
-  "start": "2026-09-20",
-  "end": "2026-09-26"
- },
- "provisionalWeek": {
   "year": 2026,
   "week": 41,
   "label": "2026년 41주",
   "start": "2026-10-04",
   "end": "2026-10-10"
  },
+ "prevWeek": {
+  "year": 2026,
+  "week": 40,
+  "label": "2026년 40주",
+  "start": "2026-09-27",
+  "end": "2026-10-03"
+ },
+ "provisionalWeek": {
+  "year": 2026,
+  "week": 42,
+  "label": "2026년 42주",
+  "start": "2026-10-11",
+  "end": "2026-10-17"
+ },
  "trendWeeks": [
-  "2026년 29주",
   "2026년 30주",
   "2026년 31주",
   "2026년 32주",
@@ -41,7 +40,8 @@
   "2026년 37주",
   "2026년 38주",
   "2026년 39주",
-  "2026년 40주"
+  "2026년 40주",
+  "2026년 41주"
  ],
  "grades": {
   "제1급": {
@@ -67,12 +67,11 @@
   },
   "제2급": {
    "diseases": 21,
-   "base": 2042,
-   "prev": 1462,
-   "provisional": 1405,
-   "outnatn": 0,
+   "base": 1405,
+   "prev": 2042,
+   "provisional": 1193,
+   "outnatn": 2,
    "trend": [
-    2063,
     2346,
     2082,
     2064,
@@ -83,17 +82,17 @@
     1919,
     1919,
     1462,
-    2042
+    2042,
+    1405
    ]
   },
   "제3급": {
    "diseases": 28,
-   "base": 195,
-   "prev": 132,
-   "provisional": 124,
-   "outnatn": 8,
+   "base": 124,
+   "prev": 195,
+   "provisional": 128,
+   "outnatn": 5,
    "trend": [
-    149,
     229,
     201,
     205,
@@ -104,7 +103,8 @@
     237,
     215,
     132,
-    195
+    195,
+    124
    ]
   }
  },
@@ -112,73 +112,73 @@
   {
    "name": "카바페넴내성장내세균목(CRE) 감염증",
    "grade": "제2급",
-   "base": 1323,
-   "prev": 849,
-   "provisional": 821,
-   "dmstc": 1323,
+   "base": 821,
+   "prev": 1323,
+   "provisional": 780,
+   "dmstc": 821,
    "outnatn": 0
   },
   {
    "name": "수두",
    "grade": "제2급",
-   "base": 442,
-   "prev": 385,
-   "provisional": 339,
-   "dmstc": 442,
-   "outnatn": 0
+   "base": 339,
+   "prev": 442,
+   "provisional": 246,
+   "dmstc": 338,
+   "outnatn": 1
   },
   {
    "name": "성홍열",
    "grade": "제2급",
-   "base": 131,
-   "prev": 121,
-   "provisional": 130,
-   "dmstc": 131,
+   "base": 130,
+   "prev": 131,
+   "provisional": 74,
+   "dmstc": 129,
+   "outnatn": 1
+  },
+  {
+   "name": "유행성이하선염",
+   "grade": "제2급",
+   "base": 68,
+   "prev": 90,
+   "provisional": 57,
+   "dmstc": 68,
    "outnatn": 0
   },
   {
    "name": "C형간염",
    "grade": "제3급",
-   "base": 91,
-   "prev": 58,
-   "provisional": 49,
-   "dmstc": 91,
+   "base": 49,
+   "prev": 91,
+   "provisional": 51,
+   "dmstc": 49,
    "outnatn": 0
   },
   {
-   "name": "유행성이하선염",
+   "name": "A형간염",
    "grade": "제2급",
-   "base": 90,
-   "prev": 55,
-   "provisional": 68,
-   "dmstc": 90,
+   "base": 30,
+   "prev": 25,
+   "provisional": 30,
+   "dmstc": 30,
    "outnatn": 0
   },
   {
    "name": "매독",
    "grade": "제3급",
-   "base": 37,
-   "prev": 24,
-   "provisional": 25,
-   "dmstc": 33,
-   "outnatn": 4
-  },
-  {
-   "name": "A형간염",
-   "grade": "제2급",
    "base": 25,
-   "prev": 29,
-   "provisional": 30,
-   "dmstc": 25,
-   "outnatn": 0
+   "prev": 37,
+   "provisional": 22,
+   "dmstc": 22,
+   "outnatn": 3
   },
   {
-   "name": "레지오넬라증",
+   "name": "쯔쯔가무시증",
    "grade": "제3급",
-   "base": 17,
-   "prev": 10,
-   "provisional": 5,
-   "dmstc": 17,
+   "base": 16,
+   "prev": 8,
+   "provisional": 31,
+   "dmstc": 16,
    "outnatn": 0
   },
   {
@@ -186,62 +186,62 @@
    "grade": "제3급",
    "base": 11,
    "prev": 11,
-   "provisional": 11,
+   "provisional": 6,
    "dmstc": 11,
    "outnatn": 0
   },
   {
-   "name": "말라리아",
-   "grade": "제3급",
-   "base": 9,
-   "prev": 3,
-   "provisional": 4,
-   "dmstc": 8,
-   "outnatn": 1
-  },
-  {
    "name": "백일해",
    "grade": "제2급",
-   "base": 8,
-   "prev": 5,
-   "provisional": 6,
-   "dmstc": 8,
+   "base": 6,
+   "prev": 8,
+   "provisional": 1,
+   "dmstc": 6,
    "outnatn": 0
   },
   {
    "name": "E형간염",
    "grade": "제2급",
-   "base": 8,
-   "prev": 5,
-   "provisional": 5,
-   "dmstc": 8,
-   "outnatn": 0
-  },
-  {
-   "name": "쯔쯔가무시증",
-   "grade": "제3급",
-   "base": 8,
-   "prev": 9,
-   "provisional": 16,
-   "dmstc": 8,
-   "outnatn": 0
-  },
-  {
-   "name": "장출혈성대장균감염증",
-   "grade": "제2급",
-   "base": 7,
+   "base": 5,
    "prev": 8,
+   "provisional": 1,
+   "dmstc": 5,
+   "outnatn": 0
+  },
+  {
+   "name": "레지오넬라증",
+   "grade": "제3급",
+   "base": 5,
+   "prev": 17,
+   "provisional": 8,
+   "dmstc": 5,
+   "outnatn": 0
+  },
+  {
+   "name": "B형간염",
+   "grade": "제3급",
+   "base": 5,
+   "prev": 2,
    "provisional": 2,
-   "dmstc": 7,
+   "dmstc": 5,
    "outnatn": 0
   },
   {
    "name": "폐렴구균 감염증",
    "grade": "제2급",
-   "base": 7,
-   "prev": 3,
+   "base": 4,
+   "prev": 7,
    "provisional": 4,
-   "dmstc": 7,
+   "dmstc": 4,
+   "outnatn": 0
+  },
+  {
+   "name": "말라리아",
+   "grade": "제3급",
+   "base": 4,
+   "prev": 9,
+   "provisional": 3,
+   "dmstc": 4,
    "outnatn": 0
   }
  ],
@@ -250,20 +250,15 @@
   {
    "name": "매독",
    "grade": "제3급",
-   "count": 11
+   "count": 9
   },
   {
    "name": "뎅기열",
    "grade": "제3급",
-   "count": 7
+   "count": 6
   },
   {
    "name": "수두",
-   "grade": "제2급",
-   "count": 2
-  },
-  {
-   "name": "장티푸스",
    "grade": "제2급",
    "count": 1
   },
@@ -288,7 +283,7 @@
    "count": 1
   }
  ],
- "totalBase": 2237,
- "totalPrev": 1594,
- "generatedAt": "2026-10-17T00:46:51.548121+00:00"
+ "totalBase": 1529,
+ "totalPrev": 2237,
+ "generatedAt": "2026-10-18T00:20:50.097198+00:00"
 }
