@@ -1,0 +1,56 @@
+=== https://adsb.lol/?lat=32.0&lon=45.0&zoom=6&hideSidebar&hideButtons
+HTTP/2 403 
+server: istio-envoy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Verification</title>
+<style>
+:root{
+  --bg:#0b0d12;--bg-e:#12151c;--br:#222833;--ac:#3b82f6;--ac2:#60a5fa;--tx:#e5e7eb;--td:#9ca3af;--suc:#22c55e;--err:#fb923c;
+=== https://globe.adsb.fi/?lat=32&lon=45&zoom=6&hideSidebar&hideButtons
+HTTP/2 403 
+cf-mitigated: challenge
+content-security-policy: default-src 'none'; script-src 'nonce-sRs2pTiWf1t3HG3LUB4qki' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'
+server: cloudflare
+permissions-policy: accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*
+server-timing: chlray;desc="a4c9656b08fdcfb4"
+x-frame-options: SAMEORIGIN
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+=== https://globe.airplanes.live/?lat=32&lon=45&zoom=6&hideSidebar&hideButtons
+HTTP/2 403 
+cf-mitigated: challenge
+content-security-policy: default-src 'none'; script-src 'nonce-txHIBgIjimA0TkyfHlyHo5' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'
+server: cloudflare
+permissions-policy: accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*
+server-timing: chlray;desc="a4c9656b6da87ada"
+x-frame-options: SAMEORIGIN
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scal
+=== https://api.adsb.lol/v2/lat/33.3/lon/44.4/dist/250
+HTTP/2 200 
+server: istio-envoy
+{"ac":[
+]
+,"msg": "No error"
+,"now": 1792345939501
+,"total": 0
+,"ctime": 1792345939501
+,"ptime": 0
+}
+
+lol console Failed to load resource: the server responded with a status of 403 ()
+lol Verification | challenge cookies not found | planes=?
+lol console Failed to load resource: the server responded with a status of 403 ()
+fi console Failed to load resource: the server responded with a status of 403 ()
+lol console Refused to display 'https://globe.adsb.fi/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.
+fi console Refused to display 'https://globe.adsb.fi/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.
+fi  |  | planes=?
+lol console Failed to load resource: the server responded with a status of 403 ()
+fi console Failed to load resource: the server responded with a status of 403 ()
+al console Failed to load resource: the server responded with a status of 403 ()
+lol console Refused to display 'https://globe.airplanes.live/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.
+fi console Refused to display 'https://globe.airplanes.live/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.
+al console Refused to display 'https://globe.airplanes.live/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.
+al  |  | planes=?
