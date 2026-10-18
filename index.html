@@ -49,8 +49,8 @@ html.intro-pending::after {
 <link rel="icon" type="image/png" href="assets/icon/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=20261018b">
-<link rel="stylesheet" href="light.css?v=20261018b">
+<link rel="stylesheet" href="style.css?v=20261018c">
+<link rel="stylesheet" href="light.css?v=20261018c">
 <script>try{if(localStorage.getItem("hseTheme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -1090,16 +1090,13 @@ html.intro-pending::after {
   <section class="panel ships-panel" aria-label="선박·항공기 실시간 추적" style="grid-column: 1 / -1;">
     <div class="panel-label">AIR MONITORING · 항공기 현황 (중동)</div>
     <div class="air-switch" role="tablist">
-      <button type="button" class="air-tab" data-air="live" role="tab">🛰 실시간 항공 지도</button>
-      <button type="button" class="air-tab" data-air="summary" role="tab">🗺 요약 지도 (공항·항공기)</button>
-      <a class="air-open" id="airLiveOpen" target="_blank" rel="noopener">새 창으로 크게 보기 ↗</a>
+      <button type="button" class="air-tab active" data-air="summary" role="tab">🗺 항공기 지도 (공항·항공기 · 1분마다 갱신)</button>
+      <a class="air-open" id="airLiveOpen" target="_blank" rel="noopener" title="adsb.lol이 보안 확인 화면을 추가해서 상황실 안에는 띄울 수 없어요. 새 창에서는 볼 수 있어요.">adsb.lol 상세 지도 (새 창) ↗</a>
     </div>
     <p class="air-note">ⓘ 이라크 영공은 열려 있지만 유럽 등 여러 나라가 자국 항공사에 운항 자제를 권고하고 있어, 이라크를 통과하는 항공편이 주변국보다 적습니다.</p>
 
-    <div id="airLiveBox" class="air-live" hidden>
-      <iframe id="airLiveFrame" title="실시간 항공 지도" loading="lazy" referrerpolicy="no-referrer"></iframe>
-      <p class="source-note">adsb.lol 실시간 지도 (전 세계 자원봉사 수신기 데이터, 약 1초마다 갱신) · 비행기를 누르면 편명·고도·속도가 나옵니다 · 지도가 보이지 않으면 '요약 지도'를 이용하세요</p>
-    </div>
+    <!-- 2026-10: adsb.lol 웹지도가 보안 확인(쿠키) 화면을 넣어 iframe 안에서는 'challenge cookies not found'로 멈춘다 → 내장 지도만 사용 -->
+    <div id="airLiveBox" class="air-live" hidden><iframe id="airLiveFrame" title="실시간 항공 지도" hidden></iframe></div>
 
     <div id="airSummaryBox">
       <div class="ships-legend">
@@ -1108,7 +1105,7 @@ html.intro-pending::after {
       </div>
       <p class="source-note" id="shipsMeta">데이터 불러오는 중…</p>
       <div id="shipsMap" class="ships-map"></div>
-      <p class="source-note" id="airSummaryNote">adsb.lol에서 1분마다 실시간으로 불러옵니다 (연결이 안 되면 OpenSky·adsb.lol·adsb.fi 통합 저장 데이터로 표시) · 지도를 드래그해서 이동, 휠로 확대·축소</p>
+      <p class="source-note" id="airSummaryNote">adsb.lol에서 1분마다 실시간으로 불러옵니다 · 비행기를 누르면 편명·기종·고도·속도 (연결이 안 되면 OpenSky·adsb.lol·adsb.fi 통합 저장 데이터로 표시) · 지도를 드래그해서 이동, 휠로 확대·축소</p>
     </div>
   </section>
 
@@ -1193,7 +1190,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261018b"></script>
+<script src="script.js?v=20261018c"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

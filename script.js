@@ -3273,13 +3273,13 @@ const IRAQ_AIRPORTS = [
   { name: "술라이마니야 국제공항", code: "ISU", lat: 35.562, lon: 45.317 },
   { name: "나자프 국제공항", code: "NJF", lat: 31.990, lon: 44.404 },
 ];
-let airSetupDone = false, airView = "live", airLiveTimer = null;
+let airSetupDone = false, airView = "summary", airLiveTimer = null;
 
 function airSetupOnce() {
   if (airSetupDone) return;
   airSetupDone = true;
   document.getElementById("airLiveOpen").href = AIR_LIVE_OPEN;
-  try { airView = localStorage.getItem("airView") || "live"; } catch (e) {}
+  airView = "summary"; // adsb.lol 웹지도는 iframe 안에서 보안 확인에 막혀 내장 지도만 쓴다
   document.querySelectorAll(".air-tab").forEach((b) => b.onclick = () => airShow(b.dataset.air));
   // 공항 표시
   const apLayer = L.layerGroup().addTo(shipsMapInstance);
@@ -3337,6 +3337,8 @@ async function fetchLivePlanes() {
       source: "adsb.lol 실시간",
     });
   }));
+  // 응답은 왔는데 비행기가 하나도 없으면(차단·점검 등) 실시간이 아닌 것으로 보고 저장 데이터로 넘어간다
+  if (!map.size) throw new Error("adsb.lol 응답에 항공기 0대");
   return { planes: [...map.values()], generatedAt: new Date().toISOString(), live: true };
 }
 
@@ -7435,7 +7437,7 @@ async function clinicCall(action, payload) {
     { id: "etc", title: "기타", icon: "🧩", steps: [
       { go: "view-iraq-issues", sel: "#view-iraq-issues .bnews-panel", text: `<b>기타 › 이라크 주요 이슈</b>예요. 치안·시위·정치·공휴일·정전·유가처럼 <b>현장 생활과 출퇴근에 영향을 줄 수 있는 이라크 소식</b>을 3시간마다 모아요. 위의 <b>분류 버튼</b>으로 골라 볼 수 있고, 기사를 누르면 본문이 펼쳐져요.` },
       { go: "view-bismayah", sel: "#bnewsList", text: `<b>기타 › 비스마야 소식</b>이에요. <b>비스마야</b>가 나온 뉴스를 3시간마다 모아서 왼쪽은 <b>국내 뉴스</b>(한국 언론), 오른쪽은 <b>이라크 뉴스</b>(현지 아랍어·영어 기사, 제목 한국어 번역)로 나눠 보여 줘요. 기사를 누르면 그 자리에서 <b>본문 미리보기</b>가 펼쳐지고, 맨 아래 링크로 전체 기사를 볼 수 있어요. 그 아래에는 <b>비스마야 유튜브 영상</b>도 썸네일로 모아 두었어요.` },
-      { go: "view-ships", sel: ".air-switch", text: `<b>해상·항공 현황</b>이에요. <b>실시간 항공 지도</b>와 공항·항공기 <b>요약 지도</b>를 바꿔 볼 수 있어요. 아래로 내리면 <b>걸프만 선박 현황</b>도 있어요. 출장·자재 운송 일정 볼 때 참고하세요.` },
+      { go: "view-ships", sel: ".air-switch", text: `<b>해상·항공 현황</b>이에요. 중동 상공 항공기와 이라크 공항이 1분마다 갱신되고, 비행기를 누르면 편명·고도가 나와요. 아래로 내리면 <b>걸프만 선박 현황</b>도 있어요. 출장·자재 운송 일정 볼 때 참고하세요.` },
       { go: "view-global", sel: "#globalFilter", text: `<b>건설사 해외현장</b>이에요. 국내 건설사의 해외 현장을 지도와 표로 보여 줘요. 위 버튼으로 회사를 골라 볼 수 있어요.<br>표와 지도 팝업의 <b>기간 · 공정</b> 막대 두 줄은 계약기간이 얼마나 지났는지와 <b>DART 공시 공정률</b>을 나란히 보여 줘요. 공정이 기간보다 많이 뒤처지면 <b>주황색</b>이에요.` },
       { go: "view-embassy", sel: "#view-embassy .embassy-panel", text: `<b>중동 각국 대사관 공지</b>예요. 이라크와 주변국 <b>대한민국 대사관의 안전공지</b>를 매일 모아요. 버튼으로 나라와 공지 종류를 고르고, 제목을 누르면 원문이 열려요.` },
       { go: "view-travel", sel: "#travelMap", text: `<b>주변국 여행경보</b>예요. 외교부 여행경보 단계(여행유의 · 자제 · 출국권고 · 금지)를 지도에 색으로 보여 줘요. 휴가·출장 경유지 확인할 때 보세요.` },
