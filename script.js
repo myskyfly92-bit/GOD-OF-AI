@@ -7365,7 +7365,7 @@ async function clinicCall(action, payload) {
       { sel: "#netPill", text: `시계 오른쪽 국기 아래는 <b>인터넷 속도</b>예요. 마우스를 올리면 <b>오늘 측정 기록·끊김 횟수·화상회의 가능 여부</b>가 떠요. 이 PC에서 잰 <b>다운로드 속도(Mbps)</b>와 <b>응답 시간(ms)</b>을 보여 줘요.<br>🟢 좋음(5Mbps 이상) · 🟡 보통(1~5) · 🔴 느림(1 미만)이고, 끊기면 <b>'인터넷 끊김'</b>이 떠요. 15분마다 자동으로 재고, <b>누르면 바로</b> 더 정확하게 다시 재요. fast.com 처럼 가까운 측정 서버(Cloudflare)에서 받아서 재요.<br>화면이 비어 보이거나 지도가 안 뜰 때 여기가 빨간색이면 인터넷 탓이니 잠시 뒤 새로고침하세요.` },
       { sel: "#iqAlert", opt: true, text: `메뉴 위 띠에는 <b>🆕 새 기능 소개</b>와 <b>이라크 공휴일·휴무 발표</b>가 떠요. 새 기능은 7초마다 넘어가고 <b>보기 ›</b>를 누르면 그 화면으로 바로 가요. <b>전체</b>로 한눈에 보고, <b>✕</b>로 닫으면 다시 안 떠요.` },
       { sel: ".group-bar", text: `여기가 <b>대분류 메뉴</b>예요: 종합현황 · 안전 · 보건 · 환경 · 소방 · 기타.<br>하나를 누르면 바로 아래에 <b>소분류 탭</b> 줄이 나타나고, 마지막으로 보던 소분류를 기억해요.` },
-      { sel: ".sa-alert", opt: true, text: `화면 아래 빨간 띠는 <b>중대재해 보도 알림</b>이에요. 최근 3일 안에 국내 산업현장 사망사고 기사가 나오면 <b>회사명과 기사 제목</b>이 떠요. 같은 사고 기사는 하나로 묶어 '보도 n건'으로 보여 주고, 누르면 원문이 열려요.<br>첫 보도는 사실과 다를 수 있으니 원문과 고용노동부 발표를 확인하세요. ✕ 로 닫으면 새 사고 기사가 올 때까지 숨어요.` },
+      { sel: ".sa-alert", opt: true, text: `화면 아래 빨간 띠는 <b>중대재해 보도 알림</b>이에요. 최근 3일 안에 국내 산업현장 사망사고 기사가 나오면 <b>회사명과 기사 제목</b>이 떠요. 같은 사고 기사는 하나로 묶어 '보도 n건'으로 보여 주고, 누르면 상황실 안에서 기사 앞부분 미리보기가 떠요.<br>첫 보도는 사실과 다를 수 있으니 원문과 고용노동부 발표를 확인하세요. ✕ 로 닫으면 새 사고 기사가 올 때까지 숨어요.` },
       { sel: "#langSwitcher", text: `<b>언어 선택</b>이에요. <b>ENG</b> 나 <b>العربية</b> 를 누르면 화면 글자가 자동 번역돼요. 영어·아랍어를 쓰는 동료에게 보여 줄 때 좋아요.<br>자동 번역이라 어색한 말이 있을 수 있으니 중요한 내용은 한국어로 한 번 더 확인하세요.` },
       { sel: "#familySiteSelect", text: `<b>패밀리사이트</b> 바로가기예요. 목록에서 <b>BNCP AI Assistant</b>, <b>BNCP Clinic EMR</b>(현장 클리닉 진료기록, 등록된 담당자만 사용), <b>IRIS</b>(이라크 규제·수입·조달시장 모니터) 같은 관련 사이트를 고르면 새 창으로 열려요.` },
       { sel: "#setBtn", opt: true, text: `메뉴줄 오른쪽 <b>⚙ 설정</b>을 누르면 세 가지가 있어요.<br>• <b>화면 모드</b> — 🌙 다크 / ☀️ 라이트 (밝은 사무실에선 라이트가 편해요. PC마다 기억해요)<br>• <b>📌 바탕화면 바로가기</b> — PC 바탕화면에 무재해 아이콘으로 상황실 바로가기 만드는 법<br>• <b>🖼 배경 보기</b> — 카드를 잠시 숨기고 배경 사진 보기 (다시 누르거나 <b>Esc</b> 로 복귀). 한동안 화면을 안 만지면 상황실 화면처럼 자동으로 배경이 보이기도 해요.` },
@@ -9038,7 +9038,8 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
 })();
 
 // ---- 하단 '중대재해 보도' 알림 (sa-news.json · 3시간마다 수집, 최근 72시간 기사만) ----
-// 언론 보도 제목·회사명을 그대로 옮겨 보여 준다. 누르면 기사 원문. ✕ 로 닫으면 새 기사가 올 때까지 숨김.
+// 언론 보도 제목·회사명을 그대로 옮겨 보여 준다. 누르면 상황실 안에서 미리보기(기사 앞부분 몇 줄)가 뜨고,
+// 원문은 미리보기 아래 작은 링크로만 연다. ✕ 로 닫으면 새 기사가 올 때까지 숨김.
 (function saAlertBar() {
   const HOURS = 72;
   const bar = document.createElement("div");
@@ -9049,11 +9050,47 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   document.body.appendChild(bar);
   const itemEl = bar.querySelector(".sa-alert-item"), listEl = bar.querySelector(".sa-alert-list");
   let items = [], idx = 0, timer = null;
+  const okCo = (c) => c && !/(에서|에게|으로|에|의)$/.test(c);   // '당진공장에서' 처럼 잘못 뽑힌 회사명은 숨김
   const ago = (d) => { const h = Math.max(0, Math.round((Date.now() - Date.parse(d)) / 3600000)); return h < 1 ? "방금" : h < 24 ? h + "시간 전" : Math.floor(h / 24) + "일 전"; };
-  const row = (n) => `${n.company ? `<b class="sa-co">${escapeHtml(n.company)}</b>` : ""}<span class="sa-t">${escapeHtml(n.titleKo || n.title)}</span><small>${escapeHtml(n.source || "")}${n.count > 1 ? ` 외 · 보도 ${n.count}건` : ""} · ${ago(n.date)}</small>`;
+  const row = (n) => `${okCo(n.company) ? `<b class="sa-co">${escapeHtml(n.company)}</b>` : ""}<span class="sa-t">${escapeHtml(n.titleKo || n.title)}</span><small>${escapeHtml(n.source || "")}${n.count > 1 ? ` 외 · 보도 ${n.count}건` : ""} · ${ago(n.date)}</small>`;
+  // 미리보기: 저작권 때문에 기사 전체가 아니라 앞부분(문장 단위, 약 350자)만 보여 준다
+  const excerpt = (n) => {
+    let raw = String(n.bodyKo || n.body || ""), L = raw.split(/\n+/);
+    // 첫 줄이 '…'로 끝나는 예고문(사진 설명+앞부분)이면 빼고 본문부터
+    if (L.length > 1 && /(\.\.\.|…)\s*$/.test(L[0])) raw = L.slice(1).join(" ");
+    let t = raw.replace(/\s+/g, " ").replace(/\[[^\]]{0,30}(기자|사진|=)[^\]]{0,30}\]/g, "").trim();
+    if (!t) return "";
+    if (t.length > 350) { const cut = t.slice(0, 350), k = Math.max(cut.lastIndexOf("다. "), cut.lastIndexOf(". ")); t = (k > 120 ? cut.slice(0, k + 2) : cut) .trim() + " …"; }
+    return t;
+  };
+  let pv = null, pvI = 0;
+  function preview(i) {
+    if (!items.length) return;
+    pvI = (i + items.length) % items.length; const n = items[pvI], ex = excerpt(n);
+    if (!pv) {
+      pv = document.createElement("div"); pv.className = "sa-pv-bg";
+      pv.addEventListener("click", (e) => { if (e.target === pv || e.target.closest(".sa-pv-x")) closePv(); else if (e.target.closest("[data-pv]")) preview(pvI + Number(e.target.closest("[data-pv]").dataset.pv)); });
+      document.addEventListener("keydown", (e) => { if (!pv || pv.hidden) return; if (e.key === "Escape") closePv(); if (e.key === "ArrowRight") preview(pvI + 1); if (e.key === "ArrowLeft") preview(pvI - 1); });
+      document.body.appendChild(pv);
+    }
+    const when = n.date ? new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit" }).format(new Date(n.date)) : "";
+    pv.innerHTML = `<div class="sa-pv" role="dialog" aria-modal="true">
+      <div class="sa-pv-h"><span class="sa-alert-tag">🚨 중대재해 보도</span><span class="sa-pv-n">${pvI + 1} / ${items.length}</span><button type="button" class="sa-pv-x" aria-label="닫기">✕</button></div>
+      ${okCo(n.company) ? `<div class="sa-pv-co">${escapeHtml(n.company)}</div>` : ""}
+      <h3 class="sa-pv-t">${escapeHtml(n.titleKo || n.title)}</h3>
+      <div class="sa-pv-m">${escapeHtml(n.source || "")}${n.count > 1 ? ` 외 · 같은 사고 보도 ${n.count}건` : ""} · ${escapeHtml(when)} (${ago(n.date)})</div>
+      ${ex ? `<p class="sa-pv-b">${escapeHtml(ex)}</p>` : `<p class="sa-pv-b sa-pv-none">이 기사는 본문 미리보기를 가져오지 못했어요. 제목으로 내용을 확인하거나 아래 원문을 열어 보세요.</p>`}
+      <div class="sa-pv-f"><button type="button" data-pv="-1" ${items.length > 1 ? "" : "disabled"}>‹ 이전</button><button type="button" data-pv="1" ${items.length > 1 ? "" : "disabled"}>다음 ›</button>
+        <span class="sp"></span><a href="${escapeHtml(n.link)}" target="_blank" rel="noopener">원문 보기 ↗</a></div>
+      <p class="sa-pv-note">언론 보도 앞부분 미리보기 · 첫 보도는 사실과 다를 수 있으니 고용노동부 발표를 함께 확인하세요</p></div>`;
+    pv.hidden = false; clearInterval(timer);
+  }
+  function closePv() { if (pv) pv.hidden = true; clearInterval(timer); if (items.length > 1) timer = setInterval(() => { idx++; show(); }, 7000); }
+  itemEl.addEventListener("click", (e) => { e.preventDefault(); preview(idx % items.length); });
+  listEl.addEventListener("click", (e) => { const a = e.target.closest("a[data-i]"); if (!a) return; e.preventDefault(); listEl.hidden = true; preview(Number(a.dataset.i)); });
   function show() {
     const n = items[idx % items.length];
-    itemEl.href = n.link; itemEl.innerHTML = row(n);
+    itemEl.href = n.link; itemEl.title = "눌러서 미리보기"; itemEl.innerHTML = row(n);
     itemEl.classList.remove("in"); void itemEl.offsetWidth; itemEl.classList.add("in");
   }
   async function load() {
@@ -9069,8 +9106,8 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     if (!items.length || closed === newest) { bar.hidden = true; clearInterval(timer); return; }
     bar.hidden = false;
     bar.querySelector(".sa-alert-count").textContent = items.length > 1 ? `최근 3일 ${items.length}건` : "";
-    listEl.innerHTML = items.map((n) => `<a href="${escapeHtml(n.link)}" target="_blank" rel="noopener">${row(n)}</a>`).join("") +
-      `<p>언론 보도 제목을 그대로 옮긴 것입니다 · 첫 보도는 사실과 다를 수 있으니 원문과 고용노동부 발표를 확인하세요</p>`;
+    listEl.innerHTML = items.map((n, i) => `<a href="${escapeHtml(n.link)}" data-i="${i}">${row(n)}${n.body || n.bodyKo ? '<em class="sa-has">미리보기</em>' : ""}</a>`).join("") +
+      `<p>누르면 상황실 안에서 기사 앞부분을 미리 볼 수 있어요 · 첫 보도는 사실과 다를 수 있으니 고용노동부 발표를 함께 확인하세요</p>`;
     idx = 0; show();
     clearInterval(timer); if (items.length > 1) timer = setInterval(() => { idx++; show(); }, 7000);
   }
@@ -9079,7 +9116,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   document.addEventListener("click", (e) => { if (!bar.contains(e.target)) listEl.hidden = true; });
   setTimeout(load, 4000);
   setInterval(load, 30 * 60 * 1000);
-  window.hseSaAlertTest = (list) => { items = list; bar.hidden = false; listEl.innerHTML = list.map((n) => `<a href="#">${row(n)}</a>`).join(""); bar.querySelector(".sa-alert-count").textContent = `최근 3일 ${list.length}건`; idx = 0; show(); };
+  window.hseSaAlertTest = (list) => { items = list; bar.hidden = false; listEl.innerHTML = list.map((n, i) => `<a href="#" data-i="${i}">${row(n)}</a>`).join(""); bar.querySelector(".sa-alert-count").textContent = `최근 3일 ${list.length}건`; idx = 0; show(); };
 })();
 
 
