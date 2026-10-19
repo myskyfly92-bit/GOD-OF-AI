@@ -928,7 +928,7 @@ code {
 
 .holiday-weekdays {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   text-align: center;
   font-size: 14px;
   font-weight: 700;
@@ -938,7 +938,7 @@ code {
 
 .holiday-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr)); /* 기온 글자가 길어도 7칸이 달력 밖으로 밀려나지 않게 */
   gap: 2px;
 }
 
@@ -964,11 +964,16 @@ code {
 }
 
 .holiday-temp {
-  font-size: 10.5px;
+  /* 달력 폭에 맞춰 기온 글자 크기를 줄인다 (고정폭 글꼴이라 폭이 좁으면 '33°/22°'가 칸을 넘쳐 토요일 칸이 밖으로 밀렸음) */
+  font-size: clamp(8px, 3.3cqw, 10.5px);
   line-height: 1;
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+  max-width: 100%;
 }
+.holiday-panel { container-type: inline-size; }
+.holiday-cell { min-width: 0; overflow: hidden; }
 
 .holiday-temp-max { color: var(--amber); }
 .holiday-temp-min { color: var(--blue); }
@@ -3655,7 +3660,7 @@ i.mk.h { background: #ff7e79; } i.mk.e { background: #e5484d; box-shadow: 0 0 0 
 #view-dashboard .tw-job-time, #view-dashboard .tw-job-crew, #view-dashboard .tw-job-meta { font-size: 13.5px; }
 .holiday-panel .holiday-cell { font-size: 16.5px; }
 .holiday-panel .holiday-weekdays { font-size: 15px; }
-.holiday-panel .holiday-temp { font-size: 11.5px; }
+.holiday-panel .holiday-temp { font-size: clamp(8px, 3.3cqw, 11.5px); } /* 달력 폭에 맞춰 줄어듦 (좁으면 토요일 칸이 밖으로 밀리던 문제) */
 .holiday-panel .holiday-legend, .holiday-panel .holiday-legend-item { font-size: 14px; }
 .holiday-panel .holiday-list li { font-size: 14.5px; }
 .holiday-panel .holiday-list .holiday-list-date { font-size: 15px; }
