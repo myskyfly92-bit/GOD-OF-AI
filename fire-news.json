@@ -1,27 +1,50 @@
 {
-  "generatedAt": "2026-10-18T23:45:56.729Z",
+  "generatedAt": "2026-10-19T05:25:40.592Z",
   "items": [
+    {
+      "title": "소방당국, 데이터센터 배터리 화재 예방위해 실물 실험 나서",
+      "source": "https://www.2news.co.kr/",
+      "link": "https://www.2news.co.kr/news/articleView.html?idxno=29541",
+      "date": "2026-10-19T04:14:00.000Z",
+      "lang": "ko",
+      "titleKo": "소방당국, 데이터센터 배터리 화재 예방위해 실물 실험 나서",
+      "url": "https://www.2news.co.kr/news/articleView.html?idxno=29541",
+      "body": "소방당국이 데이터센터의 배터리 화재 위험성을 실물 실험으로 검증하고 시설 특성에 맞는 화재안전기준 마련에 나선다. 국립소방연구원은 지난 15일부터 16일까지 실제",
+      "bodyKo": "소방당국이 데이터센터의 배터리 화재 위험성을 실물 실험으로 검증하고 시설 특성에 맞는 화재안전기준 마련에 나선다. 국립소방연구원은 지난 15일부터 16일까지 실제",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "https://www.2news.co.kr/"
+      ],
+      "related": [],
+      "tag": "전기·배터리"
+    },
     {
       "title": "통제중인 부천 화재 현장",
       "source": "뉴시스",
       "link": "https://www.newsis.com/view/NISI20261018_0021493214",
-      "date": "2026-10-18T13:49:45.000Z",
+      "date": "2026-10-19T04:02:25.000Z",
       "lang": "ko",
       "titleKo": "통제중인 부천 화재 현장",
       "url": "https://www.newsis.com/view/NISI20261018_0021493214",
       "body": "[부천=뉴시스] 이영환 기자 = 지난 16일 화재가 발생했던 경기 부천의 한 도장공장 입구 일대가 통제되고 있다.이날 발생한 화재로 소방관 1명이 숨지고 7명이 다쳤다. 2026.10.18. 20hwan@newsis.com",
       "bodyKo": "[부천=뉴시스] 이영환 기자 = 지난 16일 화재가 발생했던 경기 부천의 한 도장공장 입구 일대가 통제되고 있다.이날 발생한 화재로 소방관 1명이 숨지고 7명이 다쳤다. 2026.10.18. 20hwan@newsis.com",
       "tried": true,
-      "count": 49,
+      "count": 37,
       "sources": [
+        "울산종합일보",
         "인천뉴스",
         "매일경제",
         "뉴시스",
         "전국도민일보",
-        "신아일보",
-        "연합뉴스"
+        "신아일보"
       ],
       "related": [
+        {
+          "titleKo": "＂영원히 기억할게요＂…부천 공장 화재 순직 소방관 영결식",
+          "source": "울산종합일보",
+          "link": "https://ujnews.co.kr/news/newsview.php?ncode=1065585764472242"
+        },
         {
           "titleKo": "[사회현안] 부천 공장 화재로 김진석 소방위 순직 … 위험물 관리·현장 안전체계 도마에",
           "source": "인천뉴스",
@@ -41,14 +64,81 @@
           "titleKo": "김재준 군산시장, 양계장 화재 현장 찾아 피해 농가 위로",
           "source": "신아일보",
           "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5072809"
-        },
-        {
-          "titleKo": "\"유증기 원인 추정\"…'부천 공장 화재' 수사 착수",
-          "source": "연합뉴스",
-          "link": "https://www.yna.co.kr/amp/view/MYH20261018000500038"
         }
       ],
       "tag": "공장·플랜트"
+    },
+    {
+      "title": "화재·폭발 사고로 숨진 노동자, 지난해보다 2배 늘어",
+      "source": "충남인터넷뉴스",
+      "link": "http://www.shanews.com/news/articleView.html?idxno=562208",
+      "date": "2026-10-19T01:36:18.000Z",
+      "lang": "ko",
+      "titleKo": "화재·폭발 사고로 숨진 노동자, 지난해보다 2배 늘어",
+      "url": "http://www.shanews.com/news/articleView.html?idxno=562208",
+      "body": "[안전&현장] 아산시 영인면에서 ‘2026년 안전충남훈련’ 진행하며 관계기관의 현장 대응 능력과 협력체계 점검 최근 대형화재가 이어져 우려가 높은 가운데 화재·폭발은 한번 발생하면 다수의 노동자가 피해를 당하는 대형 사고로 이어지는 만큼, 사고가 나기 전에 위험요인을 찾아 없애는 예방이 최선이자 가장 강한 안전조치라는 분석이다.사업장에서는 자율점검 기간에 불꽃·불티, 인화성 가스·증기, 정전기 등 현장의 위험요인과 소화설비·비상통로 등을 빠짐없이 확인하고, 미흡한 사항은 집중점검 전에 반드시 개선해야 한다.노동부에 따르면 올해 2분\n최근 대형화재가 이어져 우려가 높은 가운데 화재&middot;폭발은 한번 발생하면 다수의 노동자가 피해를 당하는 대형 사고로 이어지는 만큼, 사고가 나기 전에 위험요인을 찾아 없애는 예방이 최선이자 가장 강한 안전조치라는 분석이다.\n사업장에서는 자율점검 기간에 불꽃&middot;불티, 인화성 가스&middot;증기, 정전기 등 현장의 위험요인과 소화설비&middot;비상통로 등을 빠짐없이 확인하고, 미흡한 사항은 집중점검 전에 반드시 개선해야 한다.\n노동부에 따르면 올해 2분기까지 재해조사 대상 화재&middot;폭발 사고사망자는 32명으로, 지난해 같은 기간(16명)보다 16명(100%) 증가했다. 특히 제조업의 화재&middot;폭발 사고사망자는 4명에서 9명으로 늘었다.\n구체적으로 지난 3월 대전 자동차부품 공장에서 발생한 화재로 14명이 숨졌으며 6월 대전 방산업체 폭발 사고로 5명, 8월 충남 천안시 제조업 공장 화재로 3명이 사망했다.\n이와 관련 아산시는 지난 15일 영인면 삼양사 아산공장에서 &lsquo;2026년 안전충남훈련&rsquo;을 진행하며 관계 기관의 현장 대응 능력과 협력체계를 점검했다.",
+      "bodyKo": "[안전&현장] 아산시 영인면에서 ‘2026년 안전충남훈련’ 진행하며 관계기관의 현장 대응 능력과 협력체계 점검 최근 대형화재가 이어져 우려가 높은 가운데 화재·폭발은 한번 발생하면 다수의 노동자가 피해를 당하는 대형 사고로 이어지는 만큼, 사고가 나기 전에 위험요인을 찾아 없애는 예방이 최선이자 가장 강한 안전조치라는 분석이다.사업장에서는 자율점검 기간에 불꽃·불티, 인화성 가스·증기, 정전기 등 현장의 위험요인과 소화설비·비상통로 등을 빠짐없이 확인하고, 미흡한 사항은 집중점검 전에 반드시 개선해야 한다.노동부에 따르면 올해 2분\n최근 대형화재가 이어져 우려가 높은 가운데 화재&middot;폭발은 한번 발생하면 다수의 노동자가 피해를 당하는 대형 사고로 이어지는 만큼, 사고가 나기 전에 위험요인을 찾아 없애는 예방이 최선이자 가장 강한 안전조치라는 분석이다.\n사업장에서는 자율점검 기간에 불꽃&middot;불티, 인화성 가스&middot;증기, 정전기 등 현장의 위험요인과 소화설비&middot;비상통로 등을 빠짐없이 확인하고, 미흡한 사항은 집중점검 전에 반드시 개선해야 한다.\n노동부에 따르면 올해 2분기까지 재해조사 대상 화재&middot;폭발 사고사망자는 32명으로, 지난해 같은 기간(16명)보다 16명(100%) 증가했다. 특히 제조업의 화재&middot;폭발 사고사망자는 4명에서 9명으로 늘었다.\n구체적으로 지난 3월 대전 자동차부품 공장에서 발생한 화재로 14명이 숨졌으며 6월 대전 방산업체 폭발 사고로 5명, 8월 충남 천안시 제조업 공장 화재로 3명이 사망했다.\n이와 관련 아산시는 지난 15일 영인면 삼양사 아산공장에서 &lsquo;2026년 안전충남훈련&rsquo;을 진행하며 관계 기관의 현장 대응 능력과 협력체계를 점검했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "충남인터넷뉴스"
+      ],
+      "related": [],
+      "tag": "기타"
+    },
+    {
+      "title": "대형 산업시설 밀집한 당진시, 화재 현장 소방관 안전 확보 시급",
+      "source": "충남일보",
+      "link": "https://www.chungnamilbo.co.kr/news/articleView.html?idxno=915377",
+      "date": "2026-10-19T01:32:12.000Z",
+      "lang": "ko",
+      "titleKo": "대형 산업시설 밀집한 당진시, 화재 현장 소방관 안전 확보 시급",
+      "url": "https://www.chungnamilbo.co.kr/news/articleView.html?idxno=915377",
+      "body": "[충남일보 서세진 기자] 충남 당진지역에 대형 산업시설이 밀집하면서 화재 대응체계 강화와 함께 진압 현장에 투입되는 소방관들의 안전 확보가 중요한 과제로 떠오르고 있다.최근 경기도 부천의 한 공장 화재 현장에서 진압 활동을 벌이던 소방관이 순직하면서 산업시설 화재 대응 과정에서 소방대원의 안전을 최우선으로 확보해야 한다는 목소리가 커지고 있다.당진에는 현대제철과 당진화력발전소를 비롯해 석문국가산업단지 등 대규모 산업시설이 자리 잡고 있다. 철강·발전·화학·배터리 관련 시설이 운영되는 만큼 화재 발생 시 폭발과 유독가스, 대량 가연물\n지난 5월 22일 당진시 송산면 현대제철 당진공장에서는 대형 철구조물을 운반하는 특수운송장치에 화재발생 소방 장비 21대와 소방대원 등 38명이 투입돼 약 29분 만에 진화했다.\n또한 지난 8월 31일에는 합덕읍 인더스파크 내 비츠로셀 배터리 보관 창고에서 화재가 발생했으며, 9월 27일에도 석문국가산업단지 내 S 에너지에서 폭발음과 함께 불이 났다. 당시 소방당국은 대응 1단계를 발령하고 인력과 장비를 투입해 진화에 나섰다.\n이들 화재는 산업시설의 구조와 취급 물질에 따라 진화 과정에서 다양한 위험이 발생할 수 있음을 보여준다. 특히 리튬전지 관련 시설은 화재 시 열폭주와 유독가스 등 추가 위험에 대비해야 한다.\n다행히 해당 화재들에서는 인명피해가 발생하지 않았지만, 현장 상황이 급변할 경우 진화에 투입된 소방관들의 안전도 위협받을 수 있다.\n또한 유해화학물질 취급시설이 밀집한 지역의 주민 안전대책도 강화해야 한다. 화학물질관리법 등 관련 법령에 따른 화학사고 예방&middot;대응체계를 점검하고, 사고 발생 시 주민들이 신속하고 안전하게 대피할 수 있도록 주민 소산(대피) 매뉴얼 마련과 관련 교육이 제대로 이뤄지고 있는지 확인할 필요가 있다.",
+      "bodyKo": "[충남일보 서세진 기자] 충남 당진지역에 대형 산업시설이 밀집하면서 화재 대응체계 강화와 함께 진압 현장에 투입되는 소방관들의 안전 확보가 중요한 과제로 떠오르고 있다.최근 경기도 부천의 한 공장 화재 현장에서 진압 활동을 벌이던 소방관이 순직하면서 산업시설 화재 대응 과정에서 소방대원의 안전을 최우선으로 확보해야 한다는 목소리가 커지고 있다.당진에는 현대제철과 당진화력발전소를 비롯해 석문국가산업단지 등 대규모 산업시설이 자리 잡고 있다. 철강·발전·화학·배터리 관련 시설이 운영되는 만큼 화재 발생 시 폭발과 유독가스, 대량 가연물\n지난 5월 22일 당진시 송산면 현대제철 당진공장에서는 대형 철구조물을 운반하는 특수운송장치에 화재발생 소방 장비 21대와 소방대원 등 38명이 투입돼 약 29분 만에 진화했다.\n또한 지난 8월 31일에는 합덕읍 인더스파크 내 비츠로셀 배터리 보관 창고에서 화재가 발생했으며, 9월 27일에도 석문국가산업단지 내 S 에너지에서 폭발음과 함께 불이 났다. 당시 소방당국은 대응 1단계를 발령하고 인력과 장비를 투입해 진화에 나섰다.\n이들 화재는 산업시설의 구조와 취급 물질에 따라 진화 과정에서 다양한 위험이 발생할 수 있음을 보여준다. 특히 리튬전지 관련 시설은 화재 시 열폭주와 유독가스 등 추가 위험에 대비해야 한다.\n다행히 해당 화재들에서는 인명피해가 발생하지 않았지만, 현장 상황이 급변할 경우 진화에 투입된 소방관들의 안전도 위협받을 수 있다.\n또한 유해화학물질 취급시설이 밀집한 지역의 주민 안전대책도 강화해야 한다. 화학물질관리법 등 관련 법령에 따른 화학사고 예방&middot;대응체계를 점검하고, 사고 발생 시 주민들이 신속하고 안전하게 대피할 수 있도록 주민 소산(대피) 매뉴얼 마련과 관련 교육이 제대로 이뤄지고 있는지 확인할 필요가 있다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "충남일보"
+      ],
+      "related": [],
+      "tag": "기타"
+    },
+    {
+      "title": "원주시, 중앙시장 화재복구 '찾아가는 현장 설명회' 개최",
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20261019053100062",
+      "date": "2026-10-19T01:06:12.000Z",
+      "lang": "ko",
+      "titleKo": "원주시, 중앙시장 화재복구 '찾아가는 현장 설명회' 개최",
+      "url": "https://www.yna.co.kr/view/AKR20261019053100062",
+      "body": "(원주=연합뉴스) 류호준 기자 = 강원 원주시는 중앙시장 나동 화재복구사업 추진 방향을 설명하고 점포주와 시민 의견을 수렴하기 위해 오는 20일...\n이번 설명회는 지난 6일 중앙동행정복지센터에서 열린 1차 설명회에 참석하지 못한 점포주에게 사업 내용을 안내하고, 기존 참석자에게도 추진 계획과 향후 절차를 다시 설명하기 위해 마련됐다.\n아울러 화재복구사업을 차질 없이 추진하겠다는 의지를 밝히고, 상인들의 의견을 반영해 구체적인 복구 방안을 마련할 방침이다.\n매입한 공간에 상인교육장과 회의실, 문화공간 등으로 조성해 상인들의 편의를 높이고 전통시장 활성화에 활용할 계획이다.\n현재 시는 중앙시장 나동 보수·보강위원회 및 중앙시장 번영회와 협력해 사업 추진에 필요한 점포주 동의서를 받고 있다.\n현장 설명회를 통해 사업 내용을 충분히 안내하고 의견을 수렴해 동의율을 높이는 한편, 행정절차를 신속하게 추진해 사업이 실질적인 성과로 이어지도록 노력할 계획이다.\n설명회 및 중앙시장 나동 화재복구사업에 관한 자세한 사항은 시 경제진흥과(☎033-737-2940∼2941)로 문의하면 된다.\n구자열 시장은 \"시민과 중앙시장 나동 화재 피해 점포주와 함께 반드시 복구를 이뤄내고 전통시장 활성화를 위해 노력하겠다\"며 \"현장 중심의 소통으로 점포주와 시민의 목소리를 끝까지 듣고, 화재복구사업이 결실을 볼 수 있도록 최선을 다하겠다\"고 말했다.",
+      "bodyKo": "(원주=연합뉴스) 류호준 기자 = 강원 원주시는 중앙시장 나동 화재복구사업 추진 방향을 설명하고 점포주와 시민 의견을 수렴하기 위해 오는 20일...\n이번 설명회는 지난 6일 중앙동행정복지센터에서 열린 1차 설명회에 참석하지 못한 점포주에게 사업 내용을 안내하고, 기존 참석자에게도 추진 계획과 향후 절차를 다시 설명하기 위해 마련됐다.\n아울러 화재복구사업을 차질 없이 추진하겠다는 의지를 밝히고, 상인들의 의견을 반영해 구체적인 복구 방안을 마련할 방침이다.\n매입한 공간에 상인교육장과 회의실, 문화공간 등으로 조성해 상인들의 편의를 높이고 전통시장 활성화에 활용할 계획이다.\n현재 시는 중앙시장 나동 보수·보강위원회 및 중앙시장 번영회와 협력해 사업 추진에 필요한 점포주 동의서를 받고 있다.\n현장 설명회를 통해 사업 내용을 충분히 안내하고 의견을 수렴해 동의율을 높이는 한편, 행정절차를 신속하게 추진해 사업이 실질적인 성과로 이어지도록 노력할 계획이다.\n설명회 및 중앙시장 나동 화재복구사업에 관한 자세한 사항은 시 경제진흥과(☎033-737-2940∼2941)로 문의하면 된다.\n구자열 시장은 \"시민과 중앙시장 나동 화재 피해 점포주와 함께 반드시 복구를 이뤄내고 전통시장 활성화를 위해 노력하겠다\"며 \"현장 중심의 소통으로 점포주와 시민의 목소리를 끝까지 듣고, 화재복구사업이 결실을 볼 수 있도록 최선을 다하겠다\"고 말했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "연합뉴스"
+      ],
+      "related": [],
+      "tag": "시장·상가"
+    },
+    {
+      "title": "부천 화재현장 순직 故김진석 소방위, 오늘 서울현충원 안장",
+      "source": "연합뉴스",
+      "link": "https://www.yna.co.kr/view/AKR20261019024700504",
+      "date": "2026-10-19T00:13:21.000Z",
+      "lang": "ko",
+      "titleKo": "부천 화재현장 순직 故김진석 소방위, 오늘 서울현충원 안장",
+      "url": "https://www.yna.co.kr/view/AKR20261019024700504",
+      "body": "(서울=연합뉴스) 전명훈 기자 = 경기도 부천 공장 화재 현장에서 순직한 고(故) 김진석 소방위가 19일 국립서울현충원에 안장된다.\n국가보훈부는 김 소방위가 이날 오전 경기도청장(葬) 영결식을 마친 후 서울 동작구 국립서울현충원으로 이송돼 안장식을 거쳐 '충혼당'에 안장된다고 밝혔다.\n11년차 소방관인 김 소방위는 지난 16일 부천시 오정구 내동 금속 사출 인쇄공장 화재 현장에서 선착대로 현장에 도착해 불길 속으로 뛰어들었다가 순식간에 연소가 확대되는 과정에서 중상을 입어 병원으로 옮겨졌으나 끝내 숨을 거뒀다.\n권오을 장관은 \"국가보훈부는 고인의 마지막 길을 예를 다해 모시는 것은 물론, 남겨진 유가족분들이 아픔을 딛고 자긍심을 갖고 생활하실 수 있도록 예우와 지원도 세심하게 살피겠다\"고 말했다.\n권 장관은 앞서 17일 소셜미디어를 통해 김 소방위의 희생을 기리고 유가족과 동료 소방관들에게 위로를 전했고, 18일에는 김 소방위의 빈소가 차려진 순천향대 부천병원 장례식장을 찾아 조문하고 유가족을 직접 위로했다.\n권 장관은 빈소 방명록에 \"남편을, 아빠를, 아들을 잃은 유가족들에게 위로의 말씀을 드립니다. 고인과 유가족들을 저희가 잘 챙기겠습니다\"라고 적었다고 보훈부는 전했다.\n보훈부는 김 소방위와 유족이 희생에 걸맞은 예우를 받을 수 있도록 소방청·인사혁신처 등 관계부처와 협조하겠다고 밝혔다.",
+      "bodyKo": "(서울=연합뉴스) 전명훈 기자 = 경기도 부천 공장 화재 현장에서 순직한 고(故) 김진석 소방위가 19일 국립서울현충원에 안장된다.\n국가보훈부는 김 소방위가 이날 오전 경기도청장(葬) 영결식을 마친 후 서울 동작구 국립서울현충원으로 이송돼 안장식을 거쳐 '충혼당'에 안장된다고 밝혔다.\n11년차 소방관인 김 소방위는 지난 16일 부천시 오정구 내동 금속 사출 인쇄공장 화재 현장에서 선착대로 현장에 도착해 불길 속으로 뛰어들었다가 순식간에 연소가 확대되는 과정에서 중상을 입어 병원으로 옮겨졌으나 끝내 숨을 거뒀다.\n권오을 장관은 \"국가보훈부는 고인의 마지막 길을 예를 다해 모시는 것은 물론, 남겨진 유가족분들이 아픔을 딛고 자긍심을 갖고 생활하실 수 있도록 예우와 지원도 세심하게 살피겠다\"고 말했다.\n권 장관은 앞서 17일 소셜미디어를 통해 김 소방위의 희생을 기리고 유가족과 동료 소방관들에게 위로를 전했고, 18일에는 김 소방위의 빈소가 차려진 순천향대 부천병원 장례식장을 찾아 조문하고 유가족을 직접 위로했다.\n권 장관은 빈소 방명록에 \"남편을, 아빠를, 아들을 잃은 유가족들에게 위로의 말씀을 드립니다. 고인과 유가족들을 저희가 잘 챙기겠습니다\"라고 적었다고 보훈부는 전했다.\n보훈부는 김 소방위와 유족이 희생에 걸맞은 예우를 받을 수 있도록 소방청·인사혁신처 등 관계부처와 협조하겠다고 밝혔다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "연합뉴스"
+      ],
+      "related": [],
+      "tag": "기타"
     },
     {
       "title": "경찰은 리모델링 중이던 마사지 업소에서 발생한 화재를 진압했습니다.",
@@ -80,17 +170,17 @@
         {
           "titleKo": "술라이마니야 남쪽 탕그로 지역의 연료 저장고에서 화재 발생",
           "source": "شفقنا العراق",
-          "link": "https://iraq.shafaqna.com/AR/663826/"
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9ob3lBeUVNX1VmQ2hFRkdiak80MVJWNnhVZDNCNXFucERoT0JaTHpLQkNXN1c4ajA0eDhwZzRXanFyME5oVDVxYnZ2UmM?oc=5"
         },
         {
           "titleKo": "술라이마니야의 연료 저장고에서 거대한 화재가 발생합니다.",
           "source": "الوكالة الوطنية العراقية للأنباء| نينا",
-          "link": "https://ninanews.com/website/News/Details?Key=1320443"
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5FT0dyTlgxaUxHWDlVQ3M1aWhnT18zbi1rWTh4T092Znh6YkpHSTVrMHFIdk5lUFhxUHNfWHNRVWZSRjdXY2F6bFktZFJzbXJuUmhCd3VkSjlLNzRESkRIRGxMVQ?oc=5"
         },
         {
           "titleKo": "술라이마니야 탕그로 지역의 석유 파생 상품 창고에서 화재 발생",
           "source": "هذا اليوم",
-          "link": "https://hathalyoum.net/articles/4248731"
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1JYjdRU2MxazBmNEg5aUFLRWg4NlgtazBwaG01NmQ2NTFXY0ItRks1eDZZcWlvNUFTQWt1M0JQSk5neVNGaDNtNXhSb0RvRjJt0gFKQVVfeXFMTWtYOFhBYmVBMjFBZzN2Zjg5RDVFeEl6QzJNX0J2dnZhZjZIYWRSQjduNWJFd2FrOVFfQ1JWcVgxVktveHMwTlV0X1E?oc=5"
         }
       ],
       "tag": "숙소·창고"
@@ -175,7 +265,7 @@
         {
           "titleKo": "이라크.. 술라이마니야 탕그로 지역 석유 파생물 창고 화재",
           "source": "التلفزيون العربي",
-          "link": "https://www.alaraby.com/news/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D9%84%D9%84%D9%85%D8%B4%D8%AA%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7%D9%8A%D8%A9-%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%AA%D8%A7%D9%86%D8%AC%D8%B1%D9%88-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86%D9%8A%D8%A9"
+          "link": "https://news.google.com/rss/articles/CBMilwRBVV95cUxQY0R0ZURKM0tHQm5NS29ZWWZ5Z2ZWNjl4TU9pVmk5WDRNQjhMcjBkaDR0Uk9ZVm41X1NlUkRJdGNiaXdONVI5QldzZGpicGJaWkE2X2VCNHA5aHg4SnUxVGliVzNwYnNDczNiYWZoWnFuMFgzcUt4VEpzencxZHZhZ19XMU9RYzlEWmNURjFiblduUDJlWXNCeUN4aml6UUVoX0xQVUt1bUF6cHdPUkpkZEhhZkNScDZ0X2toamJRc1E4THotWFNtckZKdl92eWx0VDhBM05FY2JPN2VpeUVaWWpHYm0zNW1IdjdQQmFURjBBdzFuUk1lRG0wTzU2NThFNGZJTFlJZ2lORFBQMjVCaUVLSzdwU3BRckJKM1dqdzNRaEZnXzJNWk9TUVlld2Y4Uy04dmdRQk5yMHpGeHNwdFVDOExqcXVPUGV5M1hKYV9ZdWtRUHlaRndtTVIzMWkxeE9UZ0xmUFZVRVFuYUFxamtKRlRXRGZPVmlqRy03b21JWVJnQ0dIY2JRVFVrVWF6X2xicFRQTXYtZWQ1TjUwS0FxN2tIV0pULWg3dGk1akhVRktMLUVqbjdRdlJhMU5vbzV2NHlMNmxKOUxORmIxMjJVeHFsRDN1YlowUVVHUk93RGw4UzZXQXpRbXljeHhmdXdUMGMyOERZang0M2F1NC1DVE51dWJBV01KSUg4ZmF2aUdBYnZj0gGcBEFVX3lxTFB3WHdLLUhhZDNKTXhWbEoySHhYYzFTcW9MaUM3NGVPcnVZWUFHajRqaXdIcFE5SzJoQndqNmYxRW5JNkg1aVNjRkRfZFBKVDYyVE0zcEhBR0U2bTdjR0pnOWtRNUpVN090S1Zab0Z1eHBIV1ZzU0hzWm8xTmtLRUJCb1Izd1RxMk1xSDJlZ0FkWnBPcnhHOVExUnVnVndLMVBKZi1WN183MTBSV0MxNGk4eVlIdlFfVGlSTnctRDBsdVMtQ1dDMXRwYTMzSXo1ZHktVDItVFozVU04a3NtUzVyZ0ZDbDN4WEFiY1RqZ19iQlZ6b1A2RHNPaVNrb3NXMUU3X19aaS0xMjFfU3l3ektvaC1hNkNwSEh2ZU9VLUd5ZmpUekFna3RYa3NBZndCbWFLSkRuVmJGUDNkZGt4T0JmWXZOS3ZqQ243VU5FQ0J6YW9ZWHc0Vm1rTXZzYXZqeE5IQ2dkYW5ma2cxQzAzMGFlaUZqQTJKWFpiNElWVmUwTkRqdE4tSkpmb2NodEFraW9NN04xNl9sT2pzci0wYjd6M3hic1FMcmlxeHZSWUozLWVfZzR3MVA1TXk3SVV3UE5xMlYyXzh4WlBkSW9YdEowTndkV05WM00zazJoSWlIOWxuTFdScW5iQjBHUS1EZEhMZEJaZDNtSXE0ZWlCZ3pvWjhlWjVUdlFrVjNHdmF5RmQ5WGtJLWVmSkxydQ?oc=5"
         }
       ],
       "tag": "전기·배터리"
@@ -339,22 +429,46 @@
       "tag": "숙소·창고"
     },
     {
-      "title": "남부발전, 전기버스 사용후배터리 활용 ‘화재방지형 R-ESS’ 기술 실증 나선다",
-      "source": "부산일보",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9vcEpzUUhOR1M0Y2M3VElObEsyTlFBNVR6cVNXSmdCN0V6WlVxNGlTbHB5RHNxSFYtaVVtRkd3eHl3MEV1RTMzbXRWX2NjSlkweHpLTTJVRHBoZGxBMUQzY2tFRDAzNzBwd0NybE5uTklPTTJ4VmdhSWRtNVA?oc=5",
+      "title": "남부발전, 화재방지형 R-ESS 기술 시장 선도",
+      "source": "인사이트에너지뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ybXltR2VKdXJObUZVcUdTd3lHSnE2Ujkxem83RjlvQnk4b0ZmRXV6Z1FRQTFIRzVJQTRLU3FvQ2hlWEhNVXZLcmgxSTRjemtIMXFVM1YyTnBnQUtZelVZVkNpemhXMm_SAWtBVV95cUxNWFRwTGNaUGZwQUdWb3Jpb2dKZ0VHVjk3MWh6aTM2b1hzaGV1WGZ5ZUVxLVBnc2dKYlUzbFZDM091aDU4Y0xVcWNabF9EcTdvYmhNRnVIajNXckp3NWZSTUQxQUNDaHZTT0VpTQ?oc=5",
       "date": "2026-10-16T12:09:21.000Z",
       "lang": "ko",
-      "titleKo": "남부발전, 전기버스 사용후배터리 활용 ‘화재방지형 R-ESS’ 기술 실증 나선다",
-      "count": 2,
+      "titleKo": "남부발전, 화재방지형 R-ESS 기술 시장 선도",
+      "count": 7,
       "sources": [
         "부산일보",
-        "스트레이트뉴스"
+        "스트레이트뉴스",
+        "인사이트에너지뉴스",
+        "전기신문",
+        "국제뉴스",
+        "에너지데일리"
       ],
       "related": [
         {
+          "titleKo": "남부발전, 전기버스 사용후배터리 활용 ‘화재방지형 R-ESS’ 기술 실증 나선다",
+          "source": "부산일보",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9vcEpzUUhOR1M0Y2M3VElObEsyTlFBNVR6cVNXSmdCN0V6WlVxNGlTbHB5RHNxSFYtaVVtRkd3eHl3MEV1RTMzbXRWX2NjSlkweHpLTTJVRHBoZGxBMUQzY2tFRDAzNzBwd0NybE5uTklPTTJ4VmdhSWRtNVA?oc=5"
+        },
+        {
           "titleKo": "남부발전, 전기버스 사용후 배터리 활용 ‘화재방지형 R-ESS’ 기술로 시장 선도",
           "source": "스트레이트뉴스",
-          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1GMTVJTU1CWHNtWENLdUdybWlOR2dIMGltT2NtRTM3Mmg4Wm52ZnhfbnlpSVVFbEtpb21VWU00RFhEMzc0cnNXdEp4STVNRUZVcUVGOXBNWC1PU1lBeHc0aHZWLXV0SWw2aUJOd2gxR0U3N0R5enVv0gF3QVVfeXFMTUYxNUlNTUJYc21YQ0t1R3JtaU5HZ0gwaW1PY21FMzcyaDhabnZmeF9ueWlJVUVsS2lvbVVZTTREWEQzNzRyc1d0SnhJNU1FRlVxRUY5cE1YLU9TWUF4dzRodlYtdXRJbDZpQk53aDFHRTc3RHl6dW8?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE83WTlnT3VYVk12cDhMdk8tS2pZeGM1LVVRYS1PSWk4bVEwaktJN01MMEVKRU42WE9ydFBnWU1PTGU4MXNDSTlWWEh1WjBtOWxmdVNJNVZFYjRrR2ZZa2FuRERWaHNmU25ROU9QcVZpWklFYzg?oc=5"
+        },
+        {
+          "titleKo": "전기버스 폐배터리가 ESS로…남부발전, 화재 막는 기술 실증",
+          "source": "전기신문",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9NZTF6SEJDV2VJNDJURFE0SlBMUUp6UkRjdzZUR3hvSXI2eUN0SVQ5anFkVWJTTjJsdHNKYWdfU0c4UnZ1MzF3LWxmQmZkSmhiT21TeFZGM0xEUmZCNk9Ccy1iNFdJdVBXVUJuN0szbFLSAXBBVV95cUxPTWUxekhCQ1dlSTQyVERRNEpQTFFKelJEY3c2VEd4b0lyNnlDdElUOWpxZFViU04ybHRzSmFnX1NHOFJ2dTMxdy1sZkJmZEpoYk9tU3hWRjNMRFJmQjZPQnMtYjRXSXVQV1VCbjdLM2xS?oc=5"
+        },
+        {
+          "titleKo": "남부발전, 전기버스 사용후 배터리 활용 '화재방지형 R-ESS' 실증 가동",
+          "source": "국제뉴스",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5vWTRoa3A4VUNkb0VQb0FUNHZqQ04tZU9vbnNOeGc5RnZSTmllNzdVdlJJMXVjN2JwR3pIZ190MmVMUm9jVHhBV1pPbHhUZUVlWjJCR0NwcDkteVpRMGwyOFBIRDhBTmRsMXNQbjNR?oc=5"
+        },
+        {
+          "titleKo": "남부발전, 전기버스 폐배터리의 재발견… 화재 예방형 ESS 실증 본격화",
+          "source": "에너지데일리",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9PaG9hWHVxdUQ5R3p4N0RtLWhmNjR4OWJORHl3Um5VTFNhTmh0QzRfZmJaSUxCOHkzN1c3X3BEbnN1Z1pKeFJOLWpvLWxQc3Y0dHlxSVI5OGhqejBwUUVtSHlXdzhESWtGRWdLV0tZdnpKUQ?oc=5"
         }
       ],
       "tag": "전기·배터리"
@@ -380,18 +494,11 @@
       "date": "2026-10-16T08:48:50.000Z",
       "lang": "ko",
       "titleKo": "데이터 센터 냉각·화재 대응 함께 연구… 건설연-SK이노베이션 '맞손'",
-      "count": 2,
+      "count": 1,
       "sources": [
-        "헤럴드경제",
         "파이낸셜포스트"
       ],
-      "related": [
-        {
-          "titleKo": "“AI 데이터센터 전력·냉각·화재 해결”…건설연·SK이노베이션 ‘의기투합’",
-          "source": "헤럴드경제",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ESUxWVktQczJnWGRVSk1HU1M0V2RuMi1PR2xvNVNhMUUxNXA2VU83X1RzSzYxT1diQ0RlTDFLZzhaTkdKM0FTREFCWG5kTU1SSDE4ZTdn?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "기타"
     },
     {
@@ -407,6 +514,48 @@
       ],
       "related": [],
       "tag": "기타"
+    },
+    {
+      "title": "불티 하나가 큰불로! 작업장 화재·폭발 예방수칙",
+      "source": "정책브리핑",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBnWHV6RHNyV0cwa2hnckw5MXl4ZmhScWxWUGdIQ2pCWFVoOVBtdThueHc5Z0pkbUxvV3YyM0c3NUk3S21aaG1SZ09uTlBJUnlUM1UtYlpCNWNYZUJ5LWFQQkM4MjI?oc=5",
+      "date": "2026-10-16T02:43:42.000Z",
+      "lang": "ko",
+      "titleKo": "불티 하나가 큰불로! 작업장 화재·폭발 예방수칙",
+      "count": 1,
+      "sources": [
+        "정책브리핑"
+      ],
+      "related": [],
+      "tag": "용접·불티"
+    },
+    {
+      "title": "[출근길인터뷰] 보조배터리 부풀면 소금물에 넣어라?…화재 대처법은",
+      "source": "연합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5MUF9PdTkySGRrNzhqb251TE5JSlNGenJoZDRUbTR6bXVGaWJvbVFfNEx3YThUZ1htSTZad2UzQjlxYXczajRtZW81NEV5TVhzaV9oRHJzeXRveTZIRWhHVNIBYEFVX3lxTE5MUF9PdTkySGRrNzhqb251TE5JSlNGenJoZDRUbTR6bXVGaWJvbVFfNEx3YThUZ1htSTZad2UzQjlxYXczajRtZW81NEV5TVhzaV9oRHJzeXRveTZIRWhHVA?oc=5",
+      "date": "2026-10-15T23:07:33.000Z",
+      "lang": "ko",
+      "titleKo": "[출근길인터뷰] 보조배터리 부풀면 소금물에 넣어라?…화재 대처법은",
+      "count": 1,
+      "sources": [
+        "연합뉴스"
+      ],
+      "related": [],
+      "tag": "전기·배터리"
+    },
+    {
+      "title": "특정장소서 용접·용단 작업시 화재감시자 배치 필수",
+      "source": "대한전문건설신문",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPR242WnpFU29FRExZTXdUdFhiVjJHX3R6X3duNHlLd29YNjBRTmc5bVdmSUFvd0RZTjdSdHJWREJoWGJLdzFXNHIzcGRTVDRIU0swU3NJNTNqa21SX29Nd09tU0wxeDRs0gFsQVVfeXFMUHVkX0wxd2ZkUHZ5V3NqRWZJOThoNDNkUVYtVW9uODEwY2pkWVRUUmJGSEpPQXloOEM3S3d2WFlSS0VTVllIUDNMNzdlek9QRUZuMkcxS0lxdDkwY3lnY3JBcC1VbnFTWXh5bE1L?oc=5",
+      "date": "2026-10-15T23:00:00.000Z",
+      "lang": "ko",
+      "titleKo": "특정장소서 용접·용단 작업시 화재감시자 배치 필수",
+      "count": 1,
+      "sources": [
+        "대한전문건설신문"
+      ],
+      "related": [],
+      "tag": "용접·불티"
     }
   ]
 }
