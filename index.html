@@ -49,8 +49,8 @@ html.intro-pending::after {
 <link rel="icon" type="image/png" href="assets/icon/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=20261019a">
-<link rel="stylesheet" href="light.css?v=20261019a">
+<link rel="stylesheet" href="style.css?v=20261019b">
+<link rel="stylesheet" href="light.css?v=20261019b">
 <script>try{if(localStorage.getItem("hseTheme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -132,6 +132,7 @@ html.intro-pending::after {
     <div class="sub-row" data-group="health" hidden>
       <button class="tab-btn" data-view="view-health-clinic">클리닉 진료현황</button>
       <button class="tab-btn" data-view="view-health-medical">주변 의료기관</button>
+      <button class="tab-btn" data-view="view-health-drug">의약품 검색</button>
       <button class="tab-btn" data-view="view-health-confined">밀폐공간 작업</button>
       <button class="tab-btn" data-view="view-iraq-moh">이라크 보건부 소식</button>
       <button class="tab-btn" data-view="view-health-kdca">국내 감염병 현황</button>
@@ -596,6 +597,38 @@ html.intro-pending::after {
       </div>
     </div>
     <p class="source-note" id="clinicMeta">구글 시트 '클리닉' 탭에서 불러옵니다 · 이름은 성만 표시합니다</p>
+  </section>
+</main>
+</div>
+
+<div id="view-health-drug" class="view">
+<main class="grid">
+  <section class="panel drug-panel" aria-label="의약품 검색" style="grid-column: 1 / -1;">
+    <div class="panel-label">DRUG LOOKUP · 의약품 검색 (식품의약품안전처 허가 의약품)</div>
+    <div class="drug-modes" id="drugModes" role="tablist">
+      <button type="button" class="active" data-m="name">💊 이름·성분으로 찾기</button>
+      <button type="button" data-m="pill">🔍 생김새로 찾기 (각인·모양·색)</button>
+    </div>
+    <div class="drug-cols">
+      <div class="drug-left">
+        <div class="drug-q" id="drugNameBox">
+          <input type="search" id="drugQ" placeholder="약 이름·성분·영문명 (예: 타이레놀, acetaminophen, 아목시실린)" autocomplete="off">
+          <div class="drug-kind" id="drugKind"><button type="button" class="active" data-k="">전체</button><button type="button" data-k="전문의약품">전문의약품</button><button type="button" data-k="일반의약품">일반의약품</button></div>
+        </div>
+        <div class="drug-pillbox" id="drugPillBox" hidden>
+          <label class="drug-imprint">알약에 쓰인 글자·숫자 (각인)<input type="search" id="pillPrint" placeholder="예: TYLENOL, 500, DW" autocomplete="off"></label>
+          <div class="drug-fl"><span>모양</span><div class="drug-chips" id="pillShape"><button type="button" data-v="원형">원형</button><button type="button" data-v="타원형">타원형</button><button type="button" data-v="장방형">장방형</button><button type="button" data-v="반원형">반원형</button><button type="button" data-v="삼각형">삼각형</button><button type="button" data-v="사각형">사각형</button><button type="button" data-v="마름모형">마름모형</button><button type="button" data-v="오각형">오각형</button><button type="button" data-v="육각형">육각형</button><button type="button" data-v="팔각형">팔각형</button><button type="button" data-v="기타">기타</button></div></div>
+          <div class="drug-fl"><span>색깔</span><div class="drug-chips drug-colors" id="pillColor"><button type="button" data-v="하양"><i style="background:#ffffff"></i>하양</button><button type="button" data-v="노랑"><i style="background:#ffe14d"></i>노랑</button><button type="button" data-v="주황"><i style="background:#ff9a3c"></i>주황</button><button type="button" data-v="분홍"><i style="background:#ff9ec4"></i>분홍</button><button type="button" data-v="빨강"><i style="background:#e5484d"></i>빨강</button><button type="button" data-v="갈색"><i style="background:#9a6a3f"></i>갈색</button><button type="button" data-v="연두"><i style="background:#b6e35a"></i>연두</button><button type="button" data-v="초록"><i style="background:#3fb96b"></i>초록</button><button type="button" data-v="청록"><i style="background:#2bb5a8"></i>청록</button><button type="button" data-v="파랑"><i style="background:#3d8bfd"></i>파랑</button><button type="button" data-v="남색"><i style="background:#2c3e9e"></i>남색</button><button type="button" data-v="자주"><i style="background:#a8336e"></i>자주</button><button type="button" data-v="보라"><i style="background:#9061f9"></i>보라</button><button type="button" data-v="회색"><i style="background:#9aa3ad"></i>회색</button><button type="button" data-v="검정"><i style="background:#222"></i>검정</button><button type="button" data-v="투명"><i style="background:transparent"></i>투명</button></div></div>
+          <div class="drug-fl"><span>제형</span><div class="drug-chips" id="pillForm"><button type="button" data-v="정">정제</button><button type="button" data-v="경질캡슐">경질캡슐</button><button type="button" data-v="연질캡슐">연질캡슐</button></div></div>
+          <div class="drug-fl"><span>분할선</span><div class="drug-chips" id="pillLine"><button type="button" data-v="none">없음</button><button type="button" data-v="-">－ (일자)</button><button type="button" data-v="+">＋ (십자)</button></div></div>
+          <button type="button" class="drug-reset" id="pillReset">조건 지우기</button>
+        </div>
+        <div class="drug-count" id="drugCount"></div>
+        <div class="drug-results" id="drugResults"><p class="skeleton">약 이름이나 성분을 입력하세요.</p></div>
+      </div>
+      <div class="drug-detail" id="drugDetail"><p class="drug-empty">왼쪽 목록에서 약을 누르면 자세한 정보가 여기에 나옵니다.</p></div>
+    </div>
+    <p class="source-note" id="drugMeta">출처: 식품의약품안전처 의약품 제품 허가정보 · 의약품개요정보(e약은요) · 낱알식별 정보 (공공데이터포털) · 매주 갱신 · 참고용이며 복용·처방 판단은 의료진과 상의하세요.</p>
   </section>
 </main>
 </div>
@@ -1190,7 +1223,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261019a"></script>
+<script src="script.js?v=20261019b"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

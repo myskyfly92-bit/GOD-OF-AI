@@ -10187,3 +10187,161 @@ const lightInk = (function () {
   document.addEventListener("hse-reveal", (e) => { btn.textContent = e.detail ? "↩ 정보 보기" : "⚙ 설정"; btn.classList.toggle("reveal", e.detail); });
   drawTheme();
 })();
+
+/* ==========================================================
+   보건 > 의약품 검색 (drug-db/*.json · GitHub Actions가 매주 식약처 공공데이터에서 수집)
+   - 이름·성분: 허가 의약품 전체 (index.json)
+   - 생김새: 낱알식별 (pills.json) — 각인·모양·색·제형·분할선
+   - 상세: 일반의약품이면 e약은요 효능·용법·주의 (otc-N.json, 품목코드 끝자리로 나눠 필요할 때만 받음)
+   ========================================================== */
+(() => {
+  const view = document.getElementById("view-health-drug");
+  if (!view) return;
+  const $ = (id) => document.getElementById(id);
+  let idx = null, pills = null, pillBySeq = null, idxBySeq = null, mode = "name", kind = "", sel = "";
+  const otcCache = {};
+  const norm = (t) => String(t || "").toLowerCase().replace(/[\s\-·.,()\[\]/]/g, "");
+  const kindBadge = (k) => k ? `<span class="drug-badge ${k === "일반의약품" ? "otc" : k === "전문의약품" ? "etc" : ""}">${escapeHtml(k === "전문의약품" ? "전문 Rx" : k === "일반의약품" ? "일반 OTC" : k)}</span>` : "";
+  const fetchJson2 = async (u) => { const r = await fetch(u, { cache: "no-cache" }); if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); };
+
+  async function loadIndex() {
+    if (idx) return idx;
+    $("drugResults").innerHTML = '<p class="skeleton">의약품 목록 불러오는 중… (처음 한 번만, 몇 초 걸려요)</p>';
+    try {
+      const d = await fetchJson2("drug-db/index.json");
+      const c = d.cols.reduce((o, k, i) => ((o[k] = i), o), {});
+      idx = d.rows.map((r) => ({ seq: r[c.seq], name: r[c.name], eng: r[c.eng], maker: r[c.maker], makerEng: r[c.makerEng], kind: r[c.kind], cat: r[c.cat], ingr: r[c.ingr],
+        key: norm(r[c.name] + " " + r[c.eng] + " " + r[c.ingr]), nkey: norm(r[c.name]) }));
+      idxBySeq = {}; idx.forEach((x) => { idxBySeq[x.seq] = x; });
+      try { const m = await fetchJson2("drug-db/meta.json"); $("drugMeta").textContent = `출처: 식품의약품안전처 (공공데이터포털) · 허가 의약품 ${(m.parts.index || 0).toLocaleString()}개` + (m.parts.pills ? ` · 낱알식별 ${m.parts.pills.toLocaleString()}개` : "") + ` · 매주 갱신 (마지막 ${new Date(m.updatedAt).toLocaleDateString("ko-KR")}) · 참고용이며 복용·처방 판단은 의료진과 상의하세요.`; } catch (e) {}
+    } catch (e) {
+      idx = null;
+      $("drugResults").innerHTML = '<p class="skeleton">아직 의약품 데이터가 없습니다. GitHub Actions에서 "Update drug database"를 실행하면 표시됩니다.</p>';
+      throw e;
+    }
+    return idx;
+  }
+  let pillsP = null;
+  async function loadPills(quiet) {
+    if (pills) return pills;
+    if (pillsP) return pillsP;
+    if (!quiet) $("drugResults").innerHTML = '<p class="skeleton">낱알식별 자료 불러오는 중… (처음 한 번만)</p>';
+    pillsP = loadPills_().catch((e) => { pillsP = null; throw e; });
+    return pillsP;
+  }
+  async function loadPills_() {
+    const d = await fetchJson2("drug-db/pills.json");
+    const c = d.cols.reduce((o, k, i) => ((o[k] = i), o), {});
+    pills = d.rows.map((r) => ({ seq: r[c.seq], name: r[c.name], maker: r[c.maker], front: r[c.front], back: r[c.back], shape: r[c.shape], color1: r[c.color1], color2: r[c.color2],
+      lineF: r[c.lineF], lineB: r[c.lineB], form: r[c.form], img: r[c.img] ? (/^https?:/.test(r[c.img]) ? r[c.img] : d.imgPrefix + r[c.img]) : "", long: r[c.long], short: r[c.short], thick: r[c.thick],
+      cls: r[c.cls], kind: r[c.kind], chart: r[c.chart], pkey: norm(r[c.front] + " " + r[c.back]) }));
+    pillBySeq = {}; pills.forEach((p) => { if (!pillBySeq[p.seq]) pillBySeq[p.seq] = p; });
+    return pills;
+  }
+
+  // ---- 이름·성분 검색 ----
+  function nameSearch() {
+    const q = norm($("drugQ").value);
+    if (!idx) return;
+    if (q.length < 2) { $("drugCount").textContent = ""; $("drugResults").innerHTML = '<p class="skeleton">두 글자 이상 입력하세요.</p>'; return; }
+    const out = [];
+    for (const x of idx) {
+      if (kind && x.kind !== kind) continue;
+      const p = x.key.indexOf(q);
+      if (p < 0) continue;
+      out.push({ x, r: x.nkey.indexOf(q) === 0 ? 0 : x.nkey.indexOf(q) > 0 ? 1 : 2 });
+    }
+    out.sort((a, b) => a.r - b.r || a.x.name.length - b.x.name.length);
+    $("drugCount").textContent = out.length ? `${out.length.toLocaleString()}개 찾음` + (out.length > 80 ? " · 앞의 80개만 표시 (더 자세히 입력하세요)" : "") : "";
+    $("drugResults").innerHTML = out.length ? out.slice(0, 80).map(({ x }) => `
+      <button type="button" class="drug-row${x.seq === sel ? " sel" : ""}" data-seq="${escapeHtml(x.seq)}">
+        <span class="dr-top"><b>${escapeHtml(x.name)}</b>${kindBadge(x.kind)}</span>
+        <span class="dr-sub">${escapeHtml([x.ingr, x.maker].filter(Boolean).join(" · "))}</span>
+      </button>`).join("") : '<p class="skeleton">찾는 약이 없습니다. 철자나 성분명을 바꿔 보세요.</p>';
+  }
+
+  // ---- 생김새 검색 ----
+  const picked = (id) => Array.from($(id).querySelectorAll("button.active")).map((b) => b.dataset.v);
+  function pillSearch() {
+    if (!pills) return;
+    const q = norm($("pillPrint").value), shapes = picked("pillShape"), colors = picked("pillColor"), forms = picked("pillForm"), lines = picked("pillLine");
+    if (!q && !shapes.length && !colors.length && !forms.length && !lines.length) { $("drugCount").textContent = ""; $("drugResults").innerHTML = '<p class="skeleton">알약의 글자, 모양, 색 중 아는 것을 고르세요.</p>'; return; }
+    const out = pills.filter((p) => {
+      if (q && p.pkey.indexOf(q) < 0) return false;
+      if (shapes.length && !shapes.includes(p.shape)) return false;
+      if (colors.length && !colors.some((c) => (p.color1 + "," + p.color2).indexOf(c) >= 0)) return false;
+      if (forms.length && !forms.some((f) => f === "정" ? /정/.test(p.form) && !/캡슐/.test(p.form) : p.form.indexOf(f) >= 0)) return false;
+      if (lines.length) { const l = (p.lineF + p.lineB).replace(/\s/g, ""); const has = (ch) => l.indexOf(ch) >= 0; if (!lines.some((v) => v === "none" ? !has("-") && !has("+") : has(v))) return false; }
+      return true;
+    });
+    out.sort((a, b) => (q ? (norm(a.front) === q || norm(a.back) === q ? 0 : 1) - (norm(b.front) === q || norm(b.back) === q ? 0 : 1) : 0) || (b.img ? 1 : 0) - (a.img ? 1 : 0));
+    $("drugCount").textContent = out.length ? `${out.length.toLocaleString()}개 찾음` + (out.length > 60 ? " · 앞의 60개만 표시 (조건을 더 고르세요)" : "") : "";
+    $("drugResults").innerHTML = out.length ? `<div class="pill-grid">` + out.slice(0, 60).map((p) => `
+      <button type="button" class="pill-card${p.seq === sel ? " sel" : ""}" data-seq="${escapeHtml(p.seq)}">
+        <span class="pc-img">${p.img ? `<img src="${escapeHtml(p.img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}</span>
+        <b>${escapeHtml(p.name)}</b>
+        <span class="pc-sub">${escapeHtml([p.front && "앞 " + p.front, p.back && "뒤 " + p.back].filter(Boolean).join(" / ") || "각인 없음")}</span>
+        <span class="pc-sub">${escapeHtml([p.color1, p.shape].filter(Boolean).join(" · "))} ${kindBadge(p.kind)}</span>
+      </button>`).join("") + `</div>` : '<p class="skeleton">조건에 맞는 알약이 없습니다. 조건을 하나씩 빼 보세요.</p>';
+  }
+
+  // ---- 상세 ----
+  async function detail(seq) {
+    sel = seq;
+    view.querySelectorAll("[data-seq]").forEach((b) => b.classList.toggle("sel", b.dataset.seq === seq));
+    const x = (idxBySeq && idxBySeq[seq]) || {};
+    let p = pillBySeq && pillBySeq[seq];
+    const box = $("drugDetail");
+    const row = (k, v) => v ? `<tr><th>${k}</th><td>${escapeHtml(v)}</td></tr>` : "";
+    const render = (otc) => {
+      const name = x.name || (p && p.name) || (otc && otc.name) || seq;
+      box.innerHTML = `
+        ${p && p.img ? `<div class="dd-img"><img src="${escapeHtml(p.img)}" alt="${escapeHtml(name)} 사진" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>` : ""}
+        <h3>${escapeHtml(name)} ${kindBadge(x.kind || (p && p.kind))}</h3>
+        ${x.eng ? `<div class="dd-eng">${escapeHtml(x.eng)}</div>` : ""}
+        <table class="dd-tbl">
+          ${row("성분 (영문)", x.ingr)}
+          ${row("분류", x.cat || (p && p.cls))}
+          ${row("업체", [x.maker || (p && p.maker), x.makerEng].filter(Boolean).join(" · "))}
+          ${p ? row("생김새", [p.chart].filter(Boolean).join("")) + row("각인", [p.front && "앞 " + p.front, p.back && "뒤 " + p.back].filter(Boolean).join(" / ")) + row("모양·색", [p.shape, p.color1, p.color2, p.form].filter(Boolean).join(" · ")) + row("크기", p.long ? `${p.long} × ${p.short} mm` + (p.thick ? ` · 두께 ${p.thick} mm` : "") : "") : ""}
+        </table>
+        ${otc === undefined ? '<p class="skeleton">효능·용법 확인 중…</p>' : otc ? `
+          <div class="dd-sec"><h4>효능</h4><p>${escapeHtml(otc.efcy)}</p></div>
+          ${otc.use ? `<div class="dd-sec"><h4>용법·용량</h4><p>${escapeHtml(otc.use)}</p></div>` : ""}
+          ${otc.warn ? `<div class="dd-sec warn"><h4>⚠ 경고</h4><p>${escapeHtml(otc.warn)}</p></div>` : ""}
+          ${otc.atpn ? `<div class="dd-sec"><h4>주의사항</h4><p>${escapeHtml(otc.atpn)}</p></div>` : ""}
+          ${otc.intrc ? `<div class="dd-sec"><h4>상호작용</h4><p>${escapeHtml(otc.intrc)}</p></div>` : ""}
+          ${otc.se ? `<div class="dd-sec"><h4>부작용</h4><p>${escapeHtml(otc.se)}</p></div>` : ""}
+          ${otc.store ? `<div class="dd-sec"><h4>보관</h4><p>${escapeHtml(otc.store)}</p></div>` : ""}` : `<p class="dd-note">${x.kind === "전문의약품" ? "전문의약품은 의사 처방이 필요한 약입니다. 효능·용법은 아래 의약품안전나라에서 허가사항을 확인하세요." : "이 약의 효능·용법 요약은 e약은요 자료에 없습니다."}</p>`}
+        <a class="dd-link" href="https://nedrug.mfds.go.kr/pbp/CCBBB01/getItemDetail?itemSeq=${encodeURIComponent(seq)}" target="_blank" rel="noopener">의약품안전나라에서 허가사항 전체 보기 ↗</a>`;
+    };
+    render(undefined);
+    if (!pills) loadPills(true).then(() => { if (sel === seq && pillBySeq[seq]) detail(seq); }).catch(() => {});   // 사진·생김새는 낱알식별 자료에서
+    let otc = null;
+    try {
+      const sh = String(seq).slice(-1);
+      if (!otcCache[sh]) otcCache[sh] = fetchJson2(`drug-db/otc-${sh}.json`).catch(() => ({}));
+      otc = (await otcCache[sh])[seq] || null;
+    } catch (e) { otc = null; }
+    if (sel === seq) render(otc);
+  }
+
+  // ---- 이벤트 ----
+  let tmr;
+  $("drugQ").addEventListener("input", () => { clearTimeout(tmr); tmr = setTimeout(nameSearch, 180); });
+  $("drugKind").addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; kind = b.dataset.k; $("drugKind").querySelectorAll("button").forEach((x) => x.classList.toggle("active", x === b)); nameSearch(); });
+  ["pillShape", "pillColor", "pillForm", "pillLine"].forEach((id) => $(id).addEventListener("click", (e) => { const b = e.target.closest("button"); if (!b) return; b.classList.toggle("active"); pillSearch(); }));
+  $("pillPrint").addEventListener("input", () => { clearTimeout(tmr); tmr = setTimeout(pillSearch, 180); });
+  $("pillReset").addEventListener("click", () => { $("pillPrint").value = ""; view.querySelectorAll("#drugPillBox button.active").forEach((b) => b.classList.remove("active")); pillSearch(); });
+  $("drugResults").addEventListener("click", (e) => { const b = e.target.closest("[data-seq]"); if (b) detail(b.dataset.seq); });
+  $("drugModes").addEventListener("click", async (e) => {
+    const b = e.target.closest("button"); if (!b || b.dataset.m === mode) return;
+    mode = b.dataset.m; $("drugModes").querySelectorAll("button").forEach((x) => x.classList.toggle("active", x === b));
+    $("drugNameBox").hidden = mode !== "name"; $("drugPillBox").hidden = mode !== "pill";
+    if (mode === "pill") {
+      try { await loadPills(); pillSearch(); } catch (err) { $("drugResults").innerHTML = '<p class="skeleton">낱알식별 자료가 아직 없습니다. 공공데이터포털에서 "식품의약품안전처_의약품 낱알식별 정보"를 활용신청하면 다음 갱신 때 표시됩니다.</p>'; }
+    } else nameSearch();
+  });
+  const open = () => { loadIndex().then(() => { if (mode === "name") nameSearch(); }).catch(() => {}); };
+  document.querySelectorAll('.tab-btn[data-view="view-health-drug"]').forEach((b) => b.addEventListener("click", open));
+})();

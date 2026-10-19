@@ -469,6 +469,14 @@ html[data-theme="light"] :is(.topbar, .mascot-bubble, .vc-win, .vc-pop, .desk-ti
 :where(html[data-theme="light"]) .sa-pv-f a { color: rgba(41,41,41,0.7); }
 :where(html[data-theme="light"]) .sa-pv-note { color: rgba(41,41,41,0.45); }
 :where(html[data-theme="light"]) .sa-alert-list .sa-has { color: #238274; }
+:where(html[data-theme="light"]) .drug-modes button.active { color: #fafafa; }
+:where(html[data-theme="light"]) .drug-colors i { border: 1px solid rgba(20,40,60,0.402); }
+:where(html[data-theme="light"]) .drug-row { background: rgba(20,40,60,0.023); }
+:where(html[data-theme="light"]) .drug-row:hover, :where(html[data-theme="light"]) .pill-card:hover { background: rgba(20,40,60,0.057); }
+:where(html[data-theme="light"]) .drug-badge.etc { color: #9e0004; }
+:where(html[data-theme="light"]) .drug-badge.otc { color: #2d0083; }
+:where(html[data-theme="light"]) .pill-card { background: rgba(20,40,60,0.023); }
+:where(html[data-theme="light"]) .dd-sec.warn h4 { color: #9e0004; }
 
 /* ---- 손으로 맞춘 부분 ---- */
 /* ===== 라이트 모드 손 보정 (tools/light-fix.css → light.css 맨 끝에 붙음) ===== */
