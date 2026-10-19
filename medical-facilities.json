@@ -5,7 +5,7 @@
   "lon": 44.618
  },
  "radiusKm": 45,
- "updatedAt": "2026-10-12T09:12:28.985170+00:00",
+ "updatedAt": "2026-10-19T07:47:48.428466+00:00",
  "items": [
   {
    "id": "node/9547504717",
@@ -780,9 +780,9 @@
   },
   {
    "id": "node/5830977985",
-   "name": "عيادة د نهلة غلام ص اشرف عبد القادر",
-   "nameEn": "Dr. Nahla Ghulam / Ashraf Abdul-Qadir Clinic",
-   "nameAr": "عيادة د نهلة غلام ص اشرف عبد القادر",
+   "name": "عيادة الدكتورة نهلة غلام",
+   "nameEn": "Dr. Nahla Gholam's clinic",
+   "nameAr": "عيادة الدكتورة نهلة غلام",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -1253,6 +1253,23 @@
    "min": 21
   },
   {
+   "id": "node/9124379419",
+   "name": "الدكتور محمد نصار كركوش",
+   "nameEn": "",
+   "nameAr": "الدكتور محمد نصار كركوش",
+   "kind": "clinic",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "",
+   "lat": 33.326132,
+   "lon": 44.493608,
+   "km": 18.8,
+   "spec": []
+  },
+  {
    "id": "node/8912994382",
    "name": "PHC in Al-Fudhailia",
    "nameEn": "PHC in Al-Fudhailia",
@@ -1541,7 +1558,7 @@
    "km": 19.6,
    "enAuto": true,
    "spec": [],
-   "roadKm": 29.3,
+   "roadKm": 29.2,
    "min": 25
   },
   {
@@ -1697,9 +1714,9 @@
   },
   {
    "id": "node/6301017485",
-   "name": "مؤسسة كنزي للجلدية،الشعر،التجميل والليزر",
-   "nameEn": "Kenzi Dermatology, Hair, Cosmetic & Laser Center",
-   "nameAr": "مؤسسة كنزي للجلدية،الشعر،التجميل والليزر",
+   "name": "مؤسسة كنزي",
+   "nameEn": "Kenzi Foundation",
+   "nameAr": "مؤسسة كنزي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -1711,9 +1728,7 @@
    "lon": 44.466044,
    "km": 20.1,
    "enAuto": true,
-   "spec": [
-    "피부과"
-   ],
+   "spec": [],
    "roadKm": 26.7,
    "min": 22
   },
@@ -1964,7 +1979,7 @@
   {
    "id": "node/11146975124",
    "name": "الانتفاضة",
-   "nameEn": "",
+   "nameEn": "Uprising",
    "nameAr": "الانتفاضة",
    "kind": "clinic",
    "own": "public",
@@ -1976,6 +1991,7 @@
    "lat": 33.243367,
    "lon": 44.401217,
    "km": 20.9,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -2294,9 +2310,9 @@
   },
   {
    "id": "node/11663199510",
-   "name": "د.علي الجميلي جراح عظام و كسور و مفاصل",
-   "nameEn": "Dr. Ali Al-Jumaili (Orthopedic & Fracture Surgeon)",
-   "nameAr": "د.علي الجميلي جراح عظام و كسور و مفاصل",
+   "name": "الدكتور علي الجميلي",
+   "nameEn": "",
+   "nameAr": "الدكتور علي الجميلي",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -2307,10 +2323,7 @@
    "lat": 33.247729,
    "lon": 44.397008,
    "km": 21.4,
-   "enAuto": true,
-   "spec": [
-    "정형외과"
-   ]
+   "spec": []
   },
   {
    "id": "node/4506066789",
@@ -2415,9 +2428,9 @@
   },
   {
    "id": "node/8187782017",
-   "name": "عيادة الدكتور حيدر محسن الشمري دكتور اسنان",
-   "nameEn": "Dr. Haider Mohsen Al-Shammari Dental Clinic",
-   "nameAr": "عيادة الدكتور حيدر محسن الشمري دكتور اسنان",
+   "name": "عيادة الدكتور حيدر محسن الشمري",
+   "nameEn": "",
+   "nameAr": "عيادة الدكتور حيدر محسن الشمري",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -2428,10 +2441,7 @@
    "lat": 33.305558,
    "lon": 44.430524,
    "km": 21.5,
-   "enAuto": true,
-   "spec": [
-    "치과"
-   ]
+   "spec": []
   },
   {
    "id": "node/9384594058",
@@ -2492,9 +2502,9 @@
   },
   {
    "id": "node/5141949522",
-   "name": "العيادة التخصصية لعلاج الاورام افيل نديم الحسيني",
+   "name": "العيادة التخصصية لعلاج الاورام",
    "nameEn": "Oncology cancer clinic Ofail Alhusseiny",
-   "nameAr": "العيادة التخصصية لعلاج الاورام افيل نديم الحسيني",
+   "nameAr": "العيادة التخصصية لعلاج الاورام",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -2978,7 +2988,7 @@
   {
    "id": "node/6221840992",
    "name": "د.عدنان سدخان جبر",
-   "nameEn": "",
+   "nameEn": "Dr. Adnan Sadkhan Jabr",
    "nameAr": "د.عدنان سدخان جبر",
    "kind": "doctors",
    "own": "",
@@ -2990,6 +3000,7 @@
    "lat": 33.370836,
    "lon": 44.513555,
    "km": 22.0,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -3065,9 +3076,9 @@
   },
   {
    "id": "node/5186242022",
-   "name": "دكتورة ثناء حكمت اختصاص إذن وأنف وحنجرة",
-   "nameEn": "Dr. Thanaa Hikmat (ENT)",
-   "nameAr": "دكتورة ثناء حكمت اختصاص إذن وأنف وحنجرة",
+   "name": "الدكتورة ثناء حكمت",
+   "nameEn": "Dr. Thanaa Hikmat",
+   "nameAr": "الدكتورة ثناء حكمت",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -3079,15 +3090,13 @@
    "lon": 44.423484,
    "km": 22.1,
    "enAuto": true,
-   "spec": [
-    "이비인후과"
-   ]
+   "spec": []
   },
   {
    "id": "node/9201781217",
-   "name": "مستوصف الصحه / العيادة الشعبية / مركز صحي حي الصحة الرئيسي",
+   "name": "مستوصف الصحه",
    "nameEn": "",
-   "nameAr": "مستوصف الصحه / العيادة الشعبية / مركز صحي حي الصحة الرئيسي",
+   "nameAr": "مستوصف الصحه",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -3969,7 +3978,7 @@
   {
    "id": "node/4711075991",
    "name": "مركز باربي للتجميل",
-   "nameEn": "",
+   "nameEn": "Barbie Beauty Center",
    "nameAr": "مركز باربي للتجميل",
    "kind": "clinic",
    "own": "",
@@ -3981,6 +3990,7 @@
    "lat": 33.283164,
    "lon": 44.386573,
    "km": 23.7,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -4129,9 +4139,9 @@
   },
   {
    "id": "node/8358849517",
-   "name": "علي سعود عبدالرزاق جراحة اورام الغدة النخامية بالناظور",
-   "nameEn": "Dr. Ali Saud Abdulrazzaq (Endoscopic Pituitary Surgery)",
-   "nameAr": "علي سعود عبدالرزاق جراحة اورام الغدة النخامية بالناظور",
+   "name": "الدكتور علي سعود عبدالرزاق",
+   "nameEn": "Dr. Ali Saud Abdul Razzaq",
+   "nameAr": "الدكتور علي سعود عبدالرزاق",
    "kind": "doctors",
    "own": "",
    "emergency": false,
@@ -4143,11 +4153,7 @@
    "lon": 44.420963,
    "km": 24.1,
    "enAuto": true,
-   "spec": [
-    "외과",
-    "암",
-    "신경"
-   ]
+   "spec": []
   },
   {
    "id": "node/6252152785",
@@ -4401,9 +4407,9 @@
   },
   {
    "id": "node/7087781485",
-   "name": "عيادة الدكتور سرمد عبد الباري لطب و تجميل الاسنان",
+   "name": "عيادة الدكتور سرمد عبد الباري",
    "nameEn": "Sarmad's dental clinic",
-   "nameAr": "عيادة الدكتور سرمد عبد الباري لطب و تجميل الاسنان",
+   "nameAr": "عيادة الدكتور سرمد عبد الباري",
    "kind": "clinic",
    "own": "",
    "emergency": false,
@@ -4583,9 +4589,9 @@
   },
   {
    "id": "node/4553939690",
-   "name": "المركز التخصصي لطب الاسنان في مدينة الصدر",
-   "nameEn": "Sadr City Specialized Dental Center",
-   "nameAr": "المركز التخصصي لطب الاسنان في مدينة الصدر",
+   "name": "المركز التخصصي لطب الاسنان",
+   "nameEn": "Specialized Dental Center",
+   "nameAr": "المركز التخصصي لطب الاسنان",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5106,9 +5112,9 @@
   },
   {
    "id": "way/954717506",
-   "name": "مركز الشهيد ابو منتظر المحمداوي للاطراف الصناعية و المساند الطبية",
-   "nameEn": "Martyr Abu Muntadhar Al-Mohammadawi Prosthetics & Orthotics Center",
-   "nameAr": "مركز الشهيد ابو منتظر المحمداوي للاطراف الصناعية و المساند الطبية",
+   "name": "مركز الشهيد ابو منتظر المحمداوي",
+   "nameEn": "",
+   "nameAr": "مركز الشهيد ابو منتظر المحمداوي",
    "kind": "hospital",
    "own": "",
    "emergency": false,
@@ -5119,10 +5125,7 @@
    "lat": 33.373448,
    "lon": 44.411849,
    "km": 27.7,
-   "enAuto": true,
-   "spec": [
-    "재활·물리치료"
-   ]
+   "spec": []
   },
   {
    "id": "node/1966367994",
@@ -5957,6 +5960,24 @@
    "spec": [
     "외과"
    ]
+  },
+  {
+   "id": "node/10537462231",
+   "name": "مركز الرعاية الصحية الاولية في صليخ الجديد",
+   "nameEn": "Primary health care center in New Suleikh",
+   "nameAr": "مركز الرعاية الصحية الاولية في صليخ الجديد",
+   "kind": "hospital",
+   "own": "public",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "بغداد",
+   "lat": 33.38962,
+   "lon": 44.36167,
+   "km": 32.3,
+   "enAuto": true,
+   "spec": []
   },
   {
    "id": "node/9104986981",
