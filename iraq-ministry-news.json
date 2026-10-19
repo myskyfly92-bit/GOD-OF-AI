@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-10-18T18:12:46.454Z",
+  "generatedAt": "2026-10-19T09:08:01.347Z",
   "health": [
+    {
+      "title": "بعد أكثر من جولة مفاوضات.. وزارة الصحة تؤمّن شحنات دوائية بأكثر من 100 مليون دولار بالتعاون مع كبرى الشركات الدوائية العالمية، قبل فتح الاعتمادات المالية من قبل الوزارة",
+      "source": "وزارة الصحة العراقية",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8wWDk4MVEzcEQ0OXc3TVhQSVAtVWZEVkNRUFVRVVlYUklLUWJIZFJPSmJTWXJaVEVocFZYdTB4M3N1ZHNrY1dxUg?oc=5",
+      "date": "2026-10-19T06:02:00.000Z",
+      "lang": "ar",
+      "titleKo": "보건복지부는 1 회 이상의 협상 끝에 주요 국제 제약 회사와 협력하여 1 억 달러 이상의 제약 선적을 제공 한 후 보건부의 재정 배분을 개시합니다."
+    },
     {
       "title": "تشجيع الدول الأعضاء على إنشاء نُظُم صحية مستدامة: المرحلة الانتقالية الخاصة بشلل الأطفال في العراق",
       "source": "World Health Organization (WHO)",
@@ -18,14 +26,6 @@
       "titleKo": "건강은 노인 거주자를 개업의로 전환하기 위해 검사를 취소하기로 결정합니다."
     },
     {
-      "title": "بالتعاون مع شركات عالمية.. الصحة تعلن عن تأمين شحنات دوائية بـ100مليون دولار",
-      "source": "شفقنا العراق",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE83Z05kQmYwZThuT3NtM2puR1dnS2YweHJKLTBJX1Z1UWktX1RocFRLWWl2MlhLNFVJN3NWLTF3OGRjcVhRNTdfU0VNOTc?oc=5",
-      "date": "2026-10-18T13:42:51.000Z",
-      "lang": "ar",
-      "titleKo": "MOH는 국제 기업과 협력하여 1억 달러 규모의 의약품 출하를 발표했습니다."
-    },
-    {
       "title": "الصحة توفر شحنات دوائية بقيمة تتجاوز 100 مليون دولار",
       "source": "العراق نيوز",
       "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPOElGRzBsNjc4Z2Y5VFBoVmNVcWZ0aHIxWDRMbkFUVVQ3OGhyOG1kajFaWEx5dUhjdzkzby1HaTNXRnlQaWVEMllfaGkzdFd2WW1OcGFpVlBDblZ2dXctbEZCd0pmdVd5V1g3M2lkczVNMG44a0Rmb1NzRDdGa25oRmdIeXRXOEE3VG92anhyNS14d2p1Yno4ZjhzMTFTTW5XaS1hX0xDQ2ltV2wwNDFlbGJTcmVpRzFfclQwb244MlM3X1p2N0hvZWZ3QWI3U2tfcUU0LW1UODlDY19pbVhXY0wwWTNrTEd4T0lxdGduT2tEejB4TXpqNWJiaEYxUk9QUFlHbG5PMUxoZklGT0pzUjVMQVoxcjNCZFpuN1RzYkVYTUN6RzM2bWpyU25RMXNYSmpLZExLUldSZTZtVXpIRF8ydHJpaTE3WUc4ekk3QzLSAdYCQVVfeXFMTjBFOTFvV19MYlRhb09Qa1hHTjlmUTI3ODFPUHlOdkxmeFJxaVQ0UWN0MVJlRTFjQVhpQTlJd3JCZ2hKUUppMi1VM0RhdTFld2hTMFdtNlZFdU9lNnhVcDZ6SmVNdVF6TWEwSEVBa3ZvWngyLUNEOFFVdFBCSUcwd2RpMjEyQmtZbHBvQVFkYngta1R3eEptcTFKQUM1X2g4Qk5FNUNNdGF5R3N2b3VPNG00SFZ1RzlyYzA4S0dOam9PY1JzSmwyR2VxUjUzb2c3WGVmS3dNcUpYZDVRbC10aGF6N2JqU3R2X21EY3BfT0p5Yk92TjRSeThaY3o5dFNtTW5LODZyeWlmdEZMaTh5YUxRSzJsc254UW40QmtvUWo0amh0THM0czR6YzI5MU5SYjRTQ040RHA0My1JWFlWQTFkVktGWGpPZDBNaHFoSTlNbmptZ1Jn?oc=5",
@@ -36,7 +36,7 @@
     {
       "title": "الصحة العراقية تؤمّن أدوية ومستلزمات طبية بأكثر من 100 مليون دولار",
       "source": "Kurdistan24",
-      "link": "https://news.google.com/rss/articles/CBMiiARBVV95cUxNeUVMRWhxVk9qWEE5ZjlyLXk5ajZicUYtbXlJeDJpOW8tRDJ3VUdoaTJmd20xcXZHQWRfX3R6d3JfWWk0QjVBRTRNMHF3UnRoeHRqY0thYUYwOUhmcTl5cmZsdXRtbGdUajlvNjhhWVF3RlBjMGwtbV8yQ0l0Znlyd0p5aGJPZ3B4Z012YzJRM3ZFOVBFYmd6Qmx2WU42eW5leWRQMXFORFh4V213UG5mUmw3cW1ZYlVzeVI3V3hMbkZDa0JrZGxrZjFIN2lncHZKcmt4d2dib2d4c29WVFNEVmprV3lndmVneTBJaVdyVV8tMFBvY29yVlIwX3RjdnZfaVVtdi1KT01vRWNZZlZmM2hNN2JrUEZObGJTV0VGSGlGOUJscnNVellfcWd2Mjd3RjlDSWhxZ2ZaTGswSVpfNVhpR0NCWEhmbWRZQ3dKdkY1enRPbWlVRGg4WDRzMkRzQ0pLbTEyY1RPd01hY1pOeDNfNjBzVnBTVGVMaUdxMHhJNjEtUklaWHZhNEVsWl9paWl4ei14eG1hTHp6bkVkbzBXc3JnY3FQQTN1QlUyelQ5dWp5NlBtNkFzd1VibmRRZnp0ZDliQWFhYjlveGs2Z2JPWmJSRDBYM2pwMUgwMm5RZUwzeGhVOUtSRnY1aVEwa2M2UXp6WUx5YVVHaHQwQWJfRmVndjFx?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12aEhBX3Y2U05yYXRuWnZCYkpoNFR3akhfOW51aEVNakt6TlZnLVJ2Y05aellzd2JtcnpNSExXcEhXMW9tR1JBOFJ6VTlNS2Vfcl9YOUF3?oc=5",
       "date": "2026-10-18T12:55:00.000Z",
       "lang": "ar",
       "titleKo": "이라크 보건부, 1억 달러 이상의 의약품 및 의료 용품 제공"
@@ -45,7 +45,7 @@
       "title": "الصحة العراقية تؤمّن شحنات دوائية بقيمة 101 مليون دولار قبل فتح الاعتمادات المالية#",
       "source": "عراق اوبزيرفر",
       "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxONjJMNWVGSV8yTGFRcHc5dDlTeGNJVlNKMTVSV2dFMWNObnpPSkhYZmZhckdZZXlzWDFVRUpoeTlDZDI3eVlGWmRDYXlWZ2NOMGhyQTJ3T2NoRm9sbnpnQnF4MnFSZWl5cVhZa2NXTmUzVm9lZVdER0ZzOGtuS0FnbnZNWk1iLUdXdTFWZk5RMFVzRjNMSnZHWlU2ZWFmU0NtbmdPT0dZcEJUeGoyWTdCMW9QUGlvVGxKM2hXaTFSUVg4YVdLclltM1FUdmpUc2lEQ2NPZ3p4ME1lbUxQbTc4STdQOEtNeFNTdnAzSnNDLVB2R1MwZ2R5b0pmdXhZQkRKLUNPYlFFdGI5V3FjLUl4RE80dVVpT09XMTRHdkRpMi1wWkZZcWZhQ3liOW5WTm9aZDRBQXB1aUszVG1sdC1rODBDUF9jdw?oc=5",
-      "date": "2026-10-18T12:25:39.000Z",
+      "date": "2026-10-18T12:28:30.000Z",
       "lang": "ar",
       "titleKo": "이라크 보건부는 기금을 개설하기 전에 1억 1천 1백만 달러의 약물 운송을 제공합니다 #"
     },
@@ -53,7 +53,7 @@
       "title": "وزارة الصحة تطلق الحملة الوطنية للتلقيح ضد الإنفلونزا الموسمية",
       "source": "ارض اشور",
       "link": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxObTdwOHZ5X1NzS05KcGJDLXdkSTJyYm12TFgyV0dZZFUzSHJCZFRmZTJhMmY1OXVZVGk3Sm1zMWVGeXRmcldKTTZFU1I4V0JYNFMyaklZZjE2YkVZZEc2SEhjYjcxWFlQdTBpVjRYWElCQ08wUEVhR3pkLTRWLXBqSzVDQWZDRHlHZUVSM3BmVlZXSC1PLXZnaEVmc084QkVLQjdORUtLSVdUWlplMnRDTFZmb3BCZGdydk1BNjlWQlpZekd5eGg2T3pFT1E5cFRseFVta0tWNjdESFBVWW81VHdHTnVEeTBGSy1JaDd2bHhhX3lfRmNyU0hJeG03Q2F1QUVfR1lGUndhaXJVZTdaS2dWS216T0ZIbUJwVHRXb2RlUHM2LUI3VTVsZGtEUUU5ZVY3aEk2clN3SGt5NFJQdl9yTG9FdlQwLVFLNGw4c3NvQQ?oc=5",
-      "date": "2026-10-18T09:38:34.000Z",
+      "date": "2026-10-18T09:38:35.000Z",
       "lang": "ar",
       "titleKo": "MOH, 전국 계절성 인플루엔자 예방 접종 캠페인 시작"
     },
@@ -116,6 +116,14 @@
       "titleKo": "샤팍 뉴스.. 샤팍 뉴스의 체코 환경: 우리는 물 분야를 개발하고 이라크의 기후를 해결하기 위해 노력하고 있습니다."
     },
     {
+      "title": "انذار (ج) للبيئة العراقية – عباس الصباغ",
+      "source": "Azzaman",
+      "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxONFpibHpZMTNTMnozRjdiVmZrYWctVkFmY0xURjNqRVlmakdFTnVIb21SUlpfRzB0aGlEOXgzMmN6bWVRNUJNcXE4MllHTjZudzI1X2VBX3U0M2tvUm50Y1hlYVM2eks5N3lKbTdEa3AzdVk1eWV0b285bXV4M0ppU0trZ3VDNHFsUlhieXAtOTJCSGt3dXA0TG03ZTI0dWtlSFcyV1RQUGlYVWQ1TEJ2dFphNFY2Z2kyT2N3Z2ZjdERISmZqOUFNV3VyQ1E1anR3aFJUOER1Z0o4enoxbWVVcHR2VFppZ2tMQk5yTnRIZnhFNDMwRG1LWGdVWjNNZFBZNnFEM1JkdmhTcVZQVG9PX3Z1eVpkbEhjV29pTWFWb0tmN2FLbW5YR3c2YTA?oc=5",
+      "date": "2026-10-16T15:57:48.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 환경에 대한 경고 (C) – Abbas Al-Sabbagh"
+    },
+    {
       "title": "البيئة التشيكية: نبحث معالجة تلوث مياه العراق بأقل التكاليف",
       "source": "جريدة المدى",
       "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1hUF85ejhqQmhEV19LQ2oxNEswYVdCVTVVRDNJTXdqWTNiUlp1WEZ3a1BaMTJLeWNGaXA0bFk5Mk1kVmttanc?oc=5",
@@ -132,20 +140,20 @@
       "titleKo": "체코는 물 문제를 해결하기 위해 이라크와 협력하기를 원합니다."
     },
     {
-      "title": "تحرك تجاه الصيادين في العراق",
-      "source": "وكالة موازين نيوز",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1vQnQwSVU4aGNQMDhQaUd5T3hVSzB5czRNU2UxS0xOU0hrYlhRLWpQS0FOVmliVUdCWExsd1hHc2g3LWd3MXNKUmlDdTVPM0QyOF85akF5NENCclItUm00?oc=5",
-      "date": "2026-10-16T10:55:33.000Z",
-      "lang": "ar",
-      "titleKo": "이라크의 어부들을 향해 이동"
-    },
-    {
       "title": "\"أخشى تناول السمك بسبب الإيدز\".. تصريحات وزيرة عراقية تثير الجدل فماذا يقول الخبراء؟",
       "source": "DW.com",
       "link": "https://news.google.com/rss/articles/CBMi8ARBVV95cUxQOWZKUkp3bGVFVmF6Ymc0LUZ6LV9uOXhrWlZ5dnRhQ29WcmpiV1I1VFZOdVVqUEJMM1ZIVU9ILV9DYW96Yjd0VjJRSkQ3NUNHbkNHUlc0NkY3c3IyQzlhVlBVMlZqdzd2SXRPR2dkbXF6R0llVl9TTko2Nzl4cnAyZVVUYWtkcUJjU0NxRGxyQThzZlBTQ3JKd3Q5cGZTUU5jWWRCVUNNZlNueDMtMTNCMVMzX3FGTnh0SlRUc2xaNE43T1c2aDlCd0FIcEg4WG1XeGFsSmJYc1FWUVdMQmNOaFZsRzRqcTU0SDlCWWJXNWdVallzTFZKd001V3dHV0hmZnF3aHA0akdpV2x1MEJ0eVlUUnFOeFhITlEwWWlQQk5Rb1ZPX25hTS1GV19lVGhlSnZta2Zia2VRXzJEU3B0MzN2SHdWYXNNcy02M2xaZm5UVnYyY3hqM3ZYcUJyX1paQVlDT3lTaUtTMWVRajR2OVFVb3RqZHY5RlM3QkRxUGNQM3dOSmcxX01iSVRoYmxWeDhkdE9STXdETGE4cFI3OW9US0hnYTJQbjBTOVVlMkxlbnlydW9XdXc5SWVIb09WTEtYYXJJdkFrWjU1cy03OGhmdlV5WUR3RlVPOXhNZWQ2MFhTdUp0UmlGNTc0ZzRHcmJvVnczZkh6VUw0UVNrNDJPbFkwdC1YbjEwSmp6MklpTHlfMVJrd040aEI3d0VxYnI5ZVVxWkJaaDZWS0tzMHo4X2JhQWpTZnJiU1c5WmZMeU9ENy1qUFM0Wks2QnRQWG95anJuZFcwdlR1ZG11bDF5S19adWdwYUprc19aYmzSAfAEQVVfeXFMTngtakFsVmdzUmMxeWVncmc0QlBYa2cwdHg0djlQZ0ZQczRVM2VOZ3k1Ty1sczNzcTVYN3pwOWRudWRTcWtZZzlJMjRBSmxXbGxxS0FUVmxwWmZxeWxsLUhOZkJfWDRZeXhkdGNFSTk2Nzh4LUxOb25mY3dFRXZISkxVbWQ3cGI1RkcxdklaT2k3T3ZFd2FNR1pRZlAyVlJMbG1qd3ktTkJFc1EzWGZHOFNhdW41ejhFNUxvR3pIb2g5aWtnQkZJeFBXeTJ2UF9KMGZTMEdYRjJ0WVpmd2ZFVGVZQ1pYa3ZrYUYtTW5rei1ZTFByOVBlRFBMeUFsMHU3OGM5UW82WGRsQ0lFUEc4R3ZWaDZCbHhYUzBkRGp0dEtvWXpTYzYzRXpLR2V1MU1ZZ0haZUFyMmpndkgzQ0tCUlJvMlYwc0FDUWV1c2FQY1FJVnVLbUg2UW1RY1ZCVllkUU5ieTdoQlBuTEI0N2cyWkNsVTFtamZvSEdIZEFjblZHckJyT0JZWUhuN2FpR1J6RkFIcENDdTQ1TXItcGVHV0RzS1RtWF8yNHR5RGFoYTNKQzcyS1AyZlpzdzdtUW56bUlOUVdOZ252a1ZWZFdnd05vZG9ZVmJhUWgwcWszTlIzSlNNbEFfdE1qekJrWW5yNExsdUxXVDlTVWVaN0ozOWNNOUNyelZld1ExSU1JOXVlVEtGSU41cThVdUdBRy1iZzRqajlaM0ZLay1icWJYVU5jeUhYeFJRYkx2bmpiWFJLLXpqMlFnLTIyWVpwNmFsSjRpbkp1Rlo1bXJzRVdPVUdUQ1cxUzk3Y2w0SGVWR1dW?oc=5",
       "date": "2026-10-16T09:38:22.000Z",
       "lang": "ar",
       "titleKo": "\"에이즈 때문에 생선을 먹기가 두렵다\".. 이라크 장관의 발언은 논란의 여지가 있는데, 전문가들은 뭐라고 할까요?"
+    },
+    {
+      "title": "4 آلاف صياد في العراق.. جهود للحد من الصيد الجائر وحماية الأنواع المهددة بالإنقراض",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE85VTZmdHVWMkxqdUhyeEVPbkg5NmV4N1RSVC1QZEV2VTYwMFprZXdPNTVCNVNUMGhHa3NOWkhPNGU2ZThmMXNYNXRWajl3VmlW?oc=5",
+      "date": "2026-10-16T09:33:02.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 어민 4천명.. 남획 줄이고 멸종위기종 보호 노력"
     },
     {
       "title": "العراق والتشيك يبحثان توظيف التقنيات الحديثة وإنشاء سدود الحصاد لمواجهة الشح المائي",
@@ -156,12 +164,12 @@
       "titleKo": "이라크와 체코는 물 부족에 맞서기 위해 현대 기술의 사용과 수확 댐 건설에 대해 논의하고 있습니다."
     },
     {
-      "title": "العراق ينسق مع سوريا والأردن لإطلاق مشروع بيئي مشترك لمكافحة التصحر والعواصف الترابية",
-      "source": "ShiaWaves",
-      "link": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxNeXNYSUxGV24ySXgzclJxTUhleVpsU0FkRThMVmZrT0ZIc2ZId1FrMlJUV0VCckc3RkFwLVpYeG15YkEwYmRZTjUtelplazJGRHlGa3FhbnUyc2JHOGJVSm5jMWtQUmpqMC1YMm1GVEVmZVhjYndUOEZGM19QLThTVUdsLXA3aEc4NFNJMFBIVC12c2gwVVZFcVhUZlJWYWtMcXc3RUNHdFk0a2x4SDRRN2JrSVJBbUhRS1FIak1YNnV2QVlXZHhkeHlUeWx2QnoyR3NSNzlTTHQ1c0V4bUlGMEZrSXpMS1V0SFNnbW5QN3pXWGNoYWNrTVk5S1Z1WVhOYmVmeXdacGNHd1dDODM4c2ZaVWdkOEZCdXdNWHVUOC1pbEtKNlhqRm80QUhCTGdUc1JIcTlqMzJ3Z2RPU1ZzRUEzLW5lQWtmWFlTNnMwXzlyLUU3TmczNXRab1VTRGJuXzFNczFROHA?oc=5",
-      "date": "2026-10-14T20:14:54.000Z",
+      "title": "التلوث يحاصر مياه العراق ودعوات لإعداد خطة طوارئ",
+      "source": "اندبندنت عربية",
+      "link": "https://news.google.com/rss/articles/CBMizANBVV95cUxOdVRibGJRdzlod0ZJN2s2OEZDeGE3MV95UG5mNnRLNWlLeG5DVHVxWXVnRzZDeEQyMmJCWmlqSzdKLUxFU3pRU0NUWV9ORFEtUjF0SXdycE91R28xV2NvVnFMUUVtOEpfd2p4MVpGT3ktZmlPMU5mZkhQYUIwa3k2Z1RWZHhvMzA1M1d3UDVNUWVJRlJSUnVfbThfQlZmbWw5QUpXRU8yMFBDWDRkbDRkMFd6OWp0X0JobGdtcjFKWkZ6MEltX2M3Q1p2ZGFCelNzQm1VbFN6amdqTV9BdzBTRWJjUWlKQXlhWEU0amw5V3hFSkd5MW5lbDJWZGtPUTJwS05yOEJuLWNJT2I0YTZQMkpnXzRJV3RLZEE5T2tVNnBtS1B3Mk9SNTNFNFA2QndIaHVzRGRMSW5FT2RLQlY1NnpqOW1qa2p2R2VkekdvVVc2Yi1oQ3FCR0JxcFg0dWZfRDRPTHNRbzJ1TlVNUWkxYmdiWm85T211MGVIaWFFTERoQTB5SUt3dDBMTWVVb0V3YTU4ejRDaEd5VUNHQUNkZE9IZTVpMlJTNHRpbHo5QUZtbVpld205dTZyWEotRnZuYVRQQUhTUVF0RGNC?oc=5",
+      "date": "2026-10-14T09:41:24.000Z",
       "lang": "ar",
-      "titleKo": "이라크는 시리아 및 요르단과 협력하여 사막화와 먼지 폭풍에 대처하기 위한 공동 환경 프로젝트를 시작합니다."
+      "titleKo": "오염은 이라크의 바다를 둘러싸고 있으며 비상 계획을 요구합니다."
     },
     {
       "title": "هل يُهدد \"الإيدز\" الأسماك في دجلة؟ … تصريح لوزيرة البيئة يثير مخاوف العراقيين",
@@ -186,14 +194,6 @@
       "date": "2026-10-12T13:56:39.000Z",
       "lang": "ar",
       "titleKo": "티그리스 물고기와 \"에이즈\".. 환경부 장관의 성명은 이라크에서 논란에 불을 붙입니다"
-    },
-    {
-      "title": "جدل بين وزارتي البيئة والصحة.. هل تنقل أسماك العراق \"الإيدز\"؟",
-      "source": "العربي الجديد",
-      "link": "https://news.google.com/rss/articles/CBMizgNBVV95cUxNT3FVSnl4WnA0MmR3alFqM1ZLZ1VIOG9LWm54dUNOeVc5b1RpaUx5U2dHZjk0VGR1MHhRa1JVTDJ2ZFZrVlFKbWREcUpzREFiLW1PakpVMk9IbzlfR2lxemRDa1lDRnBNa0UtaUxJUHVrY0xKQ1FlTXY2bWE5YURrbjJlUDl1Z0t3cXhSZXVkdTR3UVJkQ0lXdnU4cnRoZjdidS1aamo0QVdndGxjZ2NQbDRqWnR1b0FGVXZMVEZKQmRGbFVLSWo2X1RLOEJFVTJpeUNxMEFSRk1Pd3pGWVZIMkNZOEhLbXhLalM0WGpwdXplOXd0S3JScEppM0VJOGlkc0NTYm5tcUUybVpjaVFkdG5QMGItenJxSUlWbkt4bWRzWGJISjNycTlkODlIZHBjdXBKYTZDQXNqYUdRZjdPU1VRV1RMVDJVbktSeWZfX2lYMVRCSXFVR2lEMW52dW1sT1R0dkhRSzFCV2FldTdNYkhNaFV1Y09iY29CZU1aQ251MEVvU09EQVlkRmtBY21OZmZ0UHh3T295elloazFJUDlCRTR5MGdXZ2h1QzFSTWtFaVBNc2VsbFU4WFByZzBUUXEtMVNSLUJyUzZ3V2fSAdMDQVVfeXFMTTJTSFBfM1BGQ3Jzd0R4NXNjei1YMlFvX3ozU1ZQYVRmRDYxOWh5WnQwaGdfQXdrR1kyekFzSVplWkdhbUV4eTVjcXhwbzNyTHdkcFRYTktZVzFfeGhIM3VKZUZpVmlMVTBoWDE0OU02R21sUm13OUdrNy00TThkY3RNTUxBOWs2QTJPLVNlTFk1d1JrV1FwanJUdWMwV2xGVFlWNmpuT0lmTmJGNEFfV3V2Z0xGYVFZYnU0emRpUFRkV2EyejM3bjRSOG5CMTdvcXFXRUFTOElMdjJOX3YxdXphYmdhTGFvb0daRDByc2FCUTh3TnkxVXFlcDNLZFBSbFJYWWNMaERrT3dNaXRSTUlKd3ZOSG50ZXktbHhsT3RyWkJmS3JzRE9uRVEzZlNvR0lHQVRBdklvajYweWhGYjlac0hYQkZJQnl4YXdrbjh5bEtVTzFEaGRLVDRucERCRGNCLUNEM3FMZTRjNXVpbHRJcFhITmFDNFZ0a1lia24xLVhWOUJiU1BaeGtpTXhscnhpVkFkQWR5U1pOX09OZ0I2TExZcV95bmV2eTd4NExiWmc3aUZOMU1NRlFPcFdnQ1dXUEhXNTVoWUM0bTd2M1dJT00?oc=5",
-      "date": "2026-10-12T11:13:18.000Z",
-      "lang": "ar",
-      "titleKo": "환경부와 보건부 사이의 논쟁.. 이라크 물고기는 \"AIDS\" 를 전염합니까?"
     }
   ]
 }
