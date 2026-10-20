@@ -1,90 +1,90 @@
 {
-  "generatedAt": "2026-10-18T22:58:52.300Z",
+  "generatedAt": "2026-10-20T00:12:22.352Z",
   "query": "(질병 OR 전염병 OR 감염병 OR 사고 OR 의료 OR 의학) when:2d",
   "items": [
     {
-      "title": "빗길에 고속도로 연쇄 추돌 사고...곳곳 화재도",
-      "source": "YTN",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9uemlnNVNsUER5UVUyNW9YWmpnNjZmZFJfeGRWQVZ2UExNY3M0S1dUZmFSa0hLV3d3VWtjUmd1SkZKNWNla0ltMnFwMExueVNyWVdPRnduQ205enFkQ3hJMVhJalBOWjJQdGw0SzJwVQ?oc=5",
-      "date": "2026-10-18T21:21:00.000Z",
-      "summary": "YTN"
-    },
-    {
-      "title": "현대제철 당진공장서 외부업체 40대 직원 끼임 사고로 숨져",
-      "source": "한겨레",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBIckhkVUtzTDhnNHlzOEQwWU5NOFF3TWNnM05tbkYybWRPR2tLTXhGd2NpUmtTS2hfYlhJTll4d3ZMcFBwZHZINFJ4Nk9zal9LbW9nQ2pjRDNEVWdtYzNQSWZqR2NjVEFX?oc=5",
-      "date": "2026-10-18T15:34:00.000Z",
-      "summary": "한겨레"
-    },
-    {
-      "title": "[판결] 의료과실 무죄, 손배 책임은 있다",
-      "source": "법률신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1YYXBmalBhenlPLThWMlRNS2ppaEhHMTVjeDYyTXhrazB0WDd6c1FaVUFPQ3FNaUdVQzZQTmRRWjc2UWlXcWFYMWZya0VVNlRjckJsRkpSVnRXX1FFbzdYa3prUmF0N2l4MnZBUHpB0gFyQVVfeXFMT3FqNkxGRS1tWXdIaVJ2SjBaN3RWbWFoTXJTdE1XMGUySU1rclNueERxc1ZhaG1aUFA3ODg2ZEhDUi1fS1Nmb1JGM2xSbEluTWJoaU5HbmhaUWlBZUJpS0Z3Vk1aYzg5UUxmdW9NYXotY05n?oc=5",
-      "date": "2026-10-18T21:05:00.000Z",
-      "summary": "법률신문"
-    },
-    {
-      "title": "[질병개론] ‘재채기·콧물·코막힘’ 면역 반응이 만든다",
-      "source": "약사공론",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE95azdlVmRsbm0zdjdPYmx1YWY2OHJGSkFEdFN3Z2hMSEhyLUstT2pUc0RKQ2NsdTU5QzVYLXEwSGNwamZXTGZGTWxwTEo2aTY2ZDZqcnpqRHZiUWhuRlRxLVYzcjlOUkl5UmRyYg?oc=5",
-      "date": "2026-10-18T20:50:00.000Z",
-      "summary": "약사공론"
-    },
-    {
-      "title": "경부고속도로 서울요금소 인근 음주 사고…20대 입건",
+      "title": "[사건사고] 북대전IC서 트럭이 사다리차 추돌…1명 사망 外",
       "source": "연합뉴스TV",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBkQnAxZVNSWGIwM3pwMGxBYmJfbTJ5eTdJQVU0c2NSWmo0V0VDY2o4TmZnSjJQbjd1VnpiMGJib1M3V0ZtUzVmcnhMODJvSGIwYTBfUmRIWWRvQlpGM0ZfeGJQUlozWDA?oc=5",
-      "date": "2026-10-18T22:04:00.000Z",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BeW9HMGZHemNGRDdiWkx0Q2IxOG4teTJSNkJQaWZJczQxQ0RWOGs4VFBuUEIzNml0UFdHYVRpenlzOFlsWGcwSmFtd2tlM2RxNGlMbmEwVmRZckVIZUxuYmx0X1FNSHM?oc=5",
+      "date": "2026-10-20T00:06:00.000Z",
       "summary": "연합뉴스TV"
     },
     {
-      "title": "폭우에 차량 미끄러지고 뒤집히고…밤사이 사건·사고",
+      "title": "[칼럼] 일차의료의 빈칸, 병원이 함께 채운다",
+      "source": "청년의사",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1FSlBTS3hxaUowdVFYRXRFNVExRF9fTXdIUk9nbEZZUnFUd053cmphLUN1dDZOZk5lM19FWjl1cFU2ZnNWUFowY1V0NVZPVDJkODhmTFAxcDFoYWVmMGYwZzFES0k2aWZUa1JBMDJLbG5oSWPSAXNBVV95cUxNRUpQU0t4cWlKMHVRWEV0RTVRMURfX013SFJPZ2xGWVJxVHdOd3JqYS1DdXQ2TmZOZTNfRVo5dXBVNmZzVlBaMGNVdDVWT1QyZDg4ZkxQMXAxaGFlZjBmMGcxREtJNmlmVGtSQTAyS2xuaElj?oc=5",
+      "date": "2026-10-19T21:48:24.000Z",
+      "summary": "청년의사"
+    },
+    {
+      "title": "취약 어르신 65만 명에 낙상사고 치료비·치매배상보험 무료 제공",
+      "source": "대한민국 정책브리핑",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5vZzdXWDRVMDMtOFNKQmNHS3NkRGE1WHRGRVdBZ1M2NjdRd1BpZkd6TGJRek81a210WWNTYmRwdVYtMm52aWxlMEtkWHJFT0tNOTVYb1VGeGN0MUxfdDdSX1VfNmJfa0F4Tk4xYQ?oc=5",
+      "date": "2026-10-19T18:22:30.000Z",
+      "summary": "대한민국 정책브리핑"
+    },
+    {
+      "title": "선한빛요양병원, 의료관련감염 예방 공로 질병청장 표창",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDN0dCSGZTaHFxY19jYkxNaS1HNmlBNDgzamhZaDl3QlpHSTdfTHhYc0NpUmwxUnZzWDFHNWtIVjBFakIwMTVRT09YSXdEem9veVZjdktXYlVzVXlMbmtBd0RkS2x4SC1pOGc?oc=5",
+      "date": "2026-10-19T23:57:55.000Z",
+      "summary": "의학신문"
+    },
+    {
+      "title": "광주 선한빛요양병원 질병관리청장 표창 수상",
+      "source": "의료&복지뉴스",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBiRk5ubjNkYUlSanRMMFlMY21vREJRbzFhemQ5OFFZUXgtVkFaa0h0RGZCYmt0Y196WHUwcHQwZW1RTVJucGFfWVJqZlpYRFZ1RWdjUWE4ajlVVEZRa3BUVjBCdk1Cd1VnQXdZ?oc=5",
+      "date": "2026-10-19T21:16:57.000Z",
+      "summary": "의료&복지뉴스"
+    },
+    {
+      "title": "“해킹 사고 과징금 어떻게 줄이나”… 대형로펌 찾는 은행들 - 조선비즈",
+      "source": "Chosunbiz",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZWpfRHJmR0czZldSbmZlaUw1ZWdrZ2J3ZzV0cnJhME5XY3kweEhMN085YW5YS09tSUtXc0RSUlVVdlltZmRDS0lhWjlGTGUtSUlsekhRM1pQd0FFS0pHc01ZSC1QY1B6R1FIYklFbXlCVDN0alYtdk05anF5R1ZfMNIBlAFBVV95cUxQZGU3aUIxXzQtd2VsWEh1MU56bW1zWTd3RHFzYVFEeU5mM0lIdktweDhPYWZTOGxRMGloUFFEWmJRTXJQVVJ0NlRMU1YxNmNNbnJZRDZkSFh4WWdmWjdjTUdleVNrXzNWQ2M0YnQ5SHUwOXlOS2YyQjN3V0hwcTR5Z09zY0ZOb1RvNDJxMU9sRWdVSHZ3?oc=5",
+      "date": "2026-10-19T21:00:00.000Z",
+      "summary": "Chosunbiz"
+    },
+    {
+      "title": "에이비스, 의료 AI 테스트베드 첫 현장점검서 '콴티 IHC' 실증 시연",
+      "source": "전자신문",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1LZXRyMjM2UHBRa1pMb1Z2Wjc4R2hXNU9Tc1lBSHZhSlUweGhvQjc1VGJTVzlUQUlxWEI0TmxQV3hIbFk0MFFidGZ4SDNTUQ?oc=5",
+      "date": "2026-10-19T23:49:24.000Z",
+      "summary": "전자신문"
+    },
+    {
+      "title": "이주영 의원, 아주대병원 찾아 의료AI 지원 논의…소아응급·중증외상 조명",
+      "source": "MEDI:GATE NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5JZTItUEZoeDRoaHRpaW1FRHRIODR5MUc0cHFUNlhSNF8weGd4N2dCSC1pdndmTXpZTDQ2czZFSXRzSEYwcGozTmtOTnJhQnJ4eVE3TFhpNA?oc=5",
+      "date": "2026-10-19T23:55:00.000Z",
+      "summary": "MEDI:GATE NEWS"
+    },
+    {
+      "title": "보건복지부, 연명의료결정제도 개선 방향 논의… 환자 권리 높이고 의료현장 어려움 덜어",
+      "source": "복지타임즈",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE55UFNoZXVMdlp2ZjNVX3FERWpnc3FnZWNTdGZOUWdkbHByTGQxZTJFcHE0RzZZOFFqMGNVNUlKYmZqQUlsQUcyUHZ2eGdMY1BZdlp5Nk9TU1JYbjZfejZQZTRFMW1lX3p2ODJ4eA?oc=5",
+      "date": "2026-10-20T00:00:54.000Z",
+      "summary": "복지타임즈"
+    },
+    {
+      "title": "'환자 4명 사망' 인천 원병원, 사고 전부터 국가평가서 기준 미달 \"사실상 방치\"",
+      "source": "인천투데이",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9XMTI3X3FhZkN4aE14Vm9teXlqU3lJLTV1OEJwQzVzVnlPVmFnN0U5RmNnb3ZmalZmeDZOOE9FNGVRT3planZZWE45MTVFUjlmNVoxSHl1QXM5bFJfb3JoUFo3aDhEc0hDMXE4S3JyZ0c?oc=5",
+      "date": "2026-10-20T00:07:43.000Z",
+      "summary": "인천투데이"
+    },
+    {
+      "title": "넬동물의료센터 의료진, 반려마루 여주서 보호동물 검진·돌봄 봉사",
+      "source": "데일리벳",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBvZTNxekZELWM1XzJqakxVeVZFZHFtYmJjVHZOcFY1QWRaRnd6bEdkUGoxTEw2TmZ6cjdqX0RYMzAtbW5fUldKTVFIRkJkTFFJdHU1bm9qc3AxamxweEZ5LQ?oc=5",
+      "date": "2026-10-19T23:17:15.000Z",
+      "summary": "데일리벳"
+    },
+    {
+      "title": "대전서 교통사고 잇따라…2명 사망 1명 중상",
       "source": "KBS 뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VelhTbHNZZGNSajBfbTQxaTBpc0ZSNERmb3hrbW0xYTIzeG9YbGJLZ1RsNEFPZ21kNWN6YTNETzAtUTlqdjFfMFhYaDBTUW5JbVZRSjBPMHZxQkJRNDlhdU5RUUhCdw?oc=5",
-      "date": "2026-10-18T21:17:00.000Z",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1lV0ZvZGFaRHl0bTMtaVFCS0ZwcnU4Ulk3dTI2ZUJNcTVVQkJ4MnNnZmg3ZVVpcXdzTjR4YnVITkRDc293czdxVFRTUUpqQXFCcFdmQldJaTFxeFk?oc=5",
+      "date": "2026-10-19T20:40:00.000Z",
       "summary": "KBS 뉴스"
-    },
-    {
-      "title": "대한내과의사회 \"행정 과부하에 일차의료 고사 위기\"",
-      "source": "의약뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE56ZzNUdUdDaTM4cjRydk1kRE4welVRRnVKQmRrRkZYcUVwNGlMcUdKdTZQYXVMYk9wNGVXWkljUUFNVVpGWHZfRHdGS1lWRGJLSHVtUWxmVWc0c0o5OEx1ZlI1blRKZTA?oc=5",
-      "date": "2026-10-18T20:58:00.000Z",
-      "summary": "의약뉴스"
-    },
-    {
-      "title": "현대제철 당진공장서 40대 협력업체 직원 끼임사고로 숨져",
-      "source": "경향신문",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mQW53S2FRX1FaTFlvVGtpN1NXcFFEN1V5N1VNd2t1eGV1ZERHM0kwbVNkd2VLMGxQTUhRb01ZQWJUeGJkM2RuYm52UVZ5dXdXUXk0UnRtbzVBd9IBX0FVX3lxTE1HZmNOdk8zQnlObEQ5dERXTUlZZzVyd2RQdG9OQkZSbUZ3bGluNkdaX3cyNGtnUFNXYnJHakJQUUYtY0o3c1ZpSmFiaXhuVnZLN042d29iZkNQdFdGUzdN?oc=5",
-      "date": "2026-10-18T06:11:00.000Z",
-      "summary": "경향신문"
-    },
-    {
-      "title": "현대제철, 당진공장서 끼임 사고…협력업체 40대 근로자 사망 By EBN",
-      "source": "Investing.com 한국어",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9IUjVMbm9jWHltX1lyelJBTVVESU4ybElrc0o4Y0VZOUl6dktId0x6ZmZ0LVlUXzJVV0ZaeC11UGdOTnhzZzZ4aWp1Qm1RdDl0R2lkclliQ1lvRnBxRzdaU3B4MGNscFpzMkdCUkhlLW4?oc=5",
-      "date": "2026-10-18T22:40:00.000Z",
-      "summary": "Investing.com 한국어"
-    },
-    {
-      "title": "마포나루 새우젓축제, 궂은 날씨에도 성황리 폐막… 안전사고 ‘제로’",
-      "source": "문화일보",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVd25oVkpiMWx4UUYxVUF3RzhscXhsQU5YYm05cTFBZzMxeFJyZlVJWFFlRjNicS0zYXB2Y0RyNXI0MHlEYUt3LVBSdW0tck5G?oc=5",
-      "date": "2026-10-18T21:47:47.000Z",
-      "summary": "문화일보"
-    },
-    {
-      "title": "[와글와글] 사고 현장서 사라진 운전자‥왜?",
-      "source": "MBC 뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBiWVRLc3lmUFJHWUFqQjlQTlR6eDV3MVpPNnpfTU80aEpESGZVYlJuei1halFEaGl5MWtVTjh3X3pMaUVoaW5PRG5USm5IS1hSUF9PeUVaV0wyYkZLYVJSZXB6cVktc1lWUlFrNzg2MEVaanU4TGt1T2Zn0gF6QVVfeXFMUDViMlRTTHZUYVM3Wmd4STJLWFN5enlPSnJqUnZqNEw4cGhIWVBlYS1MT3puUjhDYzJuODRJa3FxdUVPOWZ6QmIyb0o4WXFRVnA4MlUtTTZDQ25mRnhHeU45RFByX2ZuZXB6VWNCRjVkZXpFYXlNbE9FUlE?oc=5",
-      "date": "2026-10-18T21:36:00.000Z",
-      "summary": "MBC 뉴스"
-    },
-    {
-      "title": "양산, 자전거 사고 3년 연속 20건 넘어",
-      "source": "양산신문",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vMGtkcHVXZHJYMjBEcFNVUEdFZzltMElQWVh3aFBfTmVNMi1TMnFNNmZFYzdMLURsaU9XenJFTW5BV1doekdyR1B4eEI0bmVhX1ZwV1B3bTBMRy1hTWVJbjBCQ1FSR01xbERfc0M3cw?oc=5",
-      "date": "2026-10-18T22:44:00.000Z",
-      "summary": "양산신문"
     }
   ]
 }
