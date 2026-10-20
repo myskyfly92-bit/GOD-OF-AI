@@ -9,6 +9,38 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO report examines inequalities in noncommunicable diseases and their risk factors",
+      "date": "2026-10-20T08:30:00Z",
+      "summary": "The State of inequality: noncommunicable diseases and their risk factors report published today by the World Health Organization (WHO) provides a global assessment of inequalities in noncommunicable diseases (NCDs) and their risk factors, examining differences between population groups within countries. The report covers four major NCDs – cancer, cardiovascular diseases, chronic respiratory diseases and diabetes – and key risk factors including tobacco and alcohol use, obesity and unhealthy diet",
+      "link": "https://www.who.int/news/item/20-10-2026-who-report-examines-inequalities-in-noncommunicable-diseases-and-their-risk-factors",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "One in four doctors nearing retirement age as WHO warns of global health workforce gap",
+      "date": "2026-10-19T12:09:51Z",
+      "summary": "The World Health Organization (WHO) has published the National health workforce accounts: health workforce levels and trends 2026, the first in an annual series of reports offering the most comprehensive global picture of health workforce levels, trends and challenges based on official country data shared through the National Health Workforce Accounts (NHWA). In the past two decades, health workforce density (medical doctors, nursing and midwifery personnel, dentists and pharmacists) has increas",
+      "link": "https://www.who.int/news/item/18-09-2026-one-in-four-doctors-nearing-retirement-age-as-who-warns-of-global-health-workforce-gap",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Traditional medicine, resilience and well-being at World Health Summit 2026",
+      "date": "2026-10-19T12:00:00Z",
+      "summary": "Rewatch the event Conversation on traditional medicine continued this year at the World Health Summit (WHS) 2026 in Berlin. This marked the third event at the WHS since 2025, in which a dedicated session explored the challenges and opportunities of traditional medicine in advancing global health goals. The panel, moderated by Dr Hiba Boujnah, Head of the WHO Collaborating Centre at the Charité Competence Center for Traditional and Integrative Medicine (CCCTIM), reflected on the question, what ca",
+      "link": "https://www.who.int/news/item/19-10-2026-traditional-medicine--resilience-and-well-being-at-world-health-summit-2026",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO releases training manual to expand access to early breast cancer care",
+      "date": "2026-10-19T06:00:00Z",
+      "summary": "WHO has published the Global Breast Cancer Initiative (GBCI) Training Manual – a package for programme managers. This technical derivative product of the WHO Global Breast Cancer Initiative implementation framework provides guidance to countries establishing or strengthening their breast cancer programmes.",
+      "link": "https://www.who.int/news/item/19-10-2026-who-releases-training-manual-to-expand-access-to-early-breast-cancer-care",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO and ADVANCE-ID strengthen clinical trial capacity through workshop",
       "date": "2026-10-16T13:00:19Z",
       "summary": "The World Health Organization (WHO) and the Advancing Clinical Evidence in Infectious Diseases (ADVANCE-ID) Network jointly organised the ADVANCE-ID Clinical Trial Workshop 2026, held from 31 August to 2 September 2026 in Singapore. The workshop contributed to wider capacity-strengthening efforts through the Global Clinical Trials Forum (GCTF), bringing together researchers from different regions to strengthen practical skills in the design and conduct of high-quality clinical trials.ADVANCE-ID ",
@@ -104,44 +136,12 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response",
-      "date": "2026-10-12T20:18:36Z",
-      "summary": "The Political Declaration on Pandemic Prevention, Preparedness and Response provides a strong reaffirmation of the global solidarity and commitment needed to protect future generations from the devastating impacts of pandemics.",
-      "link": "https://www.who.int/news/item/12-10-2026-who-welcomes-adoption-of-united-nations-political-declaration-on-pandemic-prevention-preparedness-and-response",
-      "newsType": "News release"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "IPC Sudan Food Insecurity and Malnutrition Alert",
-      "date": "2026-10-12T16:00:35Z",
-      "summary": "The Integrated Food Security Phase Classification (IPC), of which WHO is a member, today issued a Food Insecurity and Malnutrition Alert for Sudan.",
-      "link": "https://www.who.int/news/item/12-10-2026-ipc-sudan-food-insecurity-and-malnutrition-alert",
-      "newsType": "Note for Media"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO Pandemic Hub sets ambitious goal to detect new outbreaks within 24 hours",
-      "date": "2026-10-12T07:48:13Z",
-      "summary": "WHO launched a new five-year strategy for its Hub for Pandemic and Epidemic Intelligence, charting a path towards a world where every country can detect and understand emerging health threats within 24 hours of their appearance by 2030.",
-      "link": "https://www.who.int/news/item/12-10-2026-who-pandemic-hub-sets-ambitious-goal-to-detect-new-outbreaks-within-24-hours",
-      "newsType": "News release"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Pneumonia of undetermined etiology - the Russian Federation",
       "date": "2026-10-10T15:53:19Z",
       "summary": "On 2 October 2026, WHO became aware through media reports of the death of an employee of the Irkutsk Antiplague Research Institute (APRI) of Siberia and the Far East, the Russian Federation. According to these reports, the individual died on 2 October following hospitalization for severe pneumonia on 29 September, and pneumonic plague was suspected as the cause of death, following occupational exposure in laboratory settings. Following requests for verification from WHO, the National Focal Point",
       "link": "https://www.who.int/2026-DON620",
       "donId": "2026-DON620"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO Youth Council welcomes 2026–2028 members in Berlin",
-      "date": "2026-10-09T12:30:33Z",
-      "summary": "The WHO Youth Council launched its 2026–2028 term in Berlin on 9–10 October 2026, bringing together 25 youth-led and youth-serving organizations from around the world. Members reviewed progress from the previous term, set priorities for the next two years, and strengthened their role in advancing meaningful youth participation in global health governance. The meeting was followed by participation in the World Health Summit.",
-      "link": "https://www.who.int/news/item/09-10-2026-who-youth-council-welcomes-2026-2028-members-in-berlin",
-      "newsType": "Departmental update"
     },
     {
       "kind": "감염병 발생",
@@ -208,5 +208,5 @@
       "donId": "2026-DON612"
     }
   ],
-  "generatedAt": "2026-10-20T02:31:39.261098+00:00"
+  "generatedAt": "2026-10-20T10:36:01.394623+00:00"
 }
