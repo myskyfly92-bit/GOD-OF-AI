@@ -10201,7 +10201,8 @@ const lightInk = (function () {
   let idx = null, pills = null, pillBySeq = null, idxBySeq = null, mode = "name", kind = "", sel = "";
   const otcCache = {};
   const norm = (t) => String(t || "").toLowerCase().replace(/[\s\-·.,()\[\]/]/g, "");
-  const kindBadge = (k) => k ? `<span class="drug-badge ${k === "일반의약품" ? "otc" : k === "전문의약품" ? "etc" : ""}">${escapeHtml(k === "전문의약품" ? "전문 Rx" : k === "일반의약품" ? "일반 OTC" : k)}</span>` : "";
+  // '전문,희귀' · '일반(안전상비)' 같은 값도 전문/일반으로 묶어 표시
+  const kindBadge = (k) => { if (!k) return ""; const e = /^전문/.test(k), o = /^일반/.test(k); return `<span class="drug-badge ${o ? "otc" : e ? "etc" : ""}">${escapeHtml(e ? "전문 Rx" + (/희귀/.test(k) ? " · 희귀" : "") : o ? "일반 OTC" + (/상비/.test(k) ? " · 안전상비" : "") : k)}</span>`; };
   const fetchJson2 = async (u) => { const r = await fetch(u, { cache: "no-cache" }); if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); };
 
   async function loadIndex() {
