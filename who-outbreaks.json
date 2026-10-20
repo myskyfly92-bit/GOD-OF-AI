@@ -9,6 +9,14 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "Call for Proposals for hosting the 20th International Conference of Drug Regulatory Authorities (ICDRA)",
+      "date": "2026-10-20T13:58:45Z",
+      "summary": "1. Background and purposeThe International Conference of Drug Regulatory Authorities (ICDRA) is a flagship global regulatory forum co-convened by the World Health Organization (WHO). Since its inception in 1980, ICDRA has provided a unique platform for heads of national regulatory authorities for medical products (NRAs), senior regulators, policymakers, international organizations, and key stakeholders to exchange knowledge and experiences, strengthen international regulatory cooperation, and ad",
+      "link": "https://www.who.int/news/item/20-10-2026-call-for-proposals-for-hosting-the-20th-international-conference-of-drug-regulatory-authorities-(icdra)",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO report examines inequalities in noncommunicable diseases and their risk factors",
       "date": "2026-10-20T08:30:00Z",
       "summary": "The State of inequality: noncommunicable diseases and their risk factors report published today by the World Health Organization (WHO) provides a global assessment of inequalities in noncommunicable diseases (NCDs) and their risk factors, examining differences between population groups within countries. The report covers four major NCDs – cancer, cardiovascular diseases, chronic respiratory diseases and diabetes – and key risk factors including tobacco and alcohol use, obesity and unhealthy diet",
@@ -128,14 +136,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "WHO invites organizations worldwide to join the Together for Science and Health movement",
-      "date": "2026-10-13T08:00:39Z",
-      "summary": "a global call inviting organizations and institutions to affiliate with Together for Science and Health, a new movement to strengthen the connection between science, health and society and build trust in evidence-informed decision-making.",
-      "link": "https://www.who.int/news/item/13-10-2026-who-invites-organizations-worldwide-to-join-the-together-for-science-and-health-movement",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Pneumonia of undetermined etiology - the Russian Federation",
       "date": "2026-10-10T15:53:19Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON612"
     }
   ],
-  "generatedAt": "2026-10-20T15:59:41.224379+00:00"
+  "generatedAt": "2026-10-20T20:59:13.787565+00:00"
 }
