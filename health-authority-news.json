@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T00:20:20.847Z",
+  "generatedAt": "2026-10-20T23:53:09.092Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -10,11 +10,11 @@
       "date": "2026-10-18T15:07:01.000Z"
     },
     {
-      "title": "채용공고",
+      "title": "홍보지",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
-      "date": "2025-12-16T15:48:42.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJb3BJdkZ4eHRZZWZUdlM1bmpsZzlpdDlkSnVFT0UyS1Q1LVFHTTZaVEtHcXU0YTJLTDc2eGFpckpncmdpb2U5N0FIXzJ3RmhXdVJrMFJ3?oc=5",
+      "date": "2025-12-16T15:47:43.000Z"
     },
     {
       "title": "FluON | Influenza Overview",
@@ -38,8 +38,8 @@
       "date": "2024-06-10T03:38:59.000Z"
     },
     {
-      "title": "여행건강알림e : HOME",
-      "source": "질병관리청",
+      "title": "여행건강알림e : HOME - Q-CODE",
+      "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKTWN3aV9fQVZCVG45d1V3LTQyUXMwSlFEM1lGU2h6Z05hYk5FdEM4N0lTSG5QVjY4UEY4ZUU4TGtkTGM3X0lDdmxQWmdPcmVuN1FDMVpQdDZxQmc?oc=5",
       "date": "2026-09-30T14:38:13.000Z"
@@ -49,7 +49,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-19T11:42:20.000Z"
+      "date": "2026-10-20T08:42:50.000Z"
     },
     {
       "title": "레지오넬라증",
@@ -73,18 +73,18 @@
       "date": "2026-02-10T10:33:00.000Z"
     },
     {
-      "title": "보도자료 - [10.16.금.조간] 2026년 상반기 감염병 예방행태 실태조사 결과 발표",
+      "title": "채용공고",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1TWk44TThaTXBaNk51aWdkQTRCb24za3FZbnRxbGR3Mlo3U2NOSndRM0hDb0FsbDJTSkJFQmIxQ1RFTXROQVFKaWduTVkxS0Y5NHYxenlPdnVrWWE0QVpsLUxyd1VIUXVHbmZqaGdmTi04WVNyeW5hZQ?oc=5",
-      "date": "2026-10-15T03:13:59.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
+      "date": "2025-12-16T15:48:42.000Z"
     },
     {
-      "title": "문서뷰어",
+      "title": "ICCON 감염예방 소식지",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5XVU9QTjBtVGhKdU9oYjh6Ym8xX1ZBckJva1pJQ1VjVGFjZmpsYXFrLTJrazRBUUtVMkRhdE9jVmJTMUE0aW9Rc2o5VmQwc2FHZUl2LVRVd1FPS3dzVmJxeS1n?oc=5",
-      "date": "2026-10-19T01:51:44.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ueXN2cXpmUkJyLWV2cHc4VHB3Sm01dGcwc09pTlNXVG5xZjE4bHpvUFgxOVktQjJoLXJHRmJRTHM4TXhrbmJLZ1JTQ25yWklLeDlqek1B?oc=5",
+      "date": "2025-12-16T15:49:07.000Z"
     }
   ]
 }
