@@ -9052,7 +9052,7 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   document.body.appendChild(bar);
   const itemEl = bar.querySelector(".sa-alert-item"), listEl = bar.querySelector(".sa-alert-list");
   let items = [], idx = 0, timer = null;
-  const okCo = (c) => c && !/(에서|에게|으로|에|의)$/.test(c);   // '당진공장에서' 처럼 잘못 뽑힌 회사명은 숨김
+  const okCo = (c) => c && !/(에서|에게|으로|에|의)$/.test(c) && !/^\d+대$/.test(c);   // '40대' 같은 나이도 회사명 아님   // '당진공장에서' 처럼 잘못 뽑힌 회사명은 숨김
   const ago = (d) => { const h = Math.max(0, Math.round((Date.now() - Date.parse(d)) / 3600000)); return h < 1 ? "방금" : h < 24 ? h + "시간 전" : Math.floor(h / 24) + "일 전"; };
   const row = (n) => `${okCo(n.company) ? `<b class="sa-co">${escapeHtml(n.company)}</b>` : ""}<span class="sa-t">${escapeHtml(n.titleKo || n.title)}</span><small>${escapeHtml(n.source || "")}${n.count > 1 ? ` 외 · 보도 ${n.count}건` : ""} · ${ago(n.date)}</small>`;
   // 미리보기: 저작권 때문에 기사 전체가 아니라 앞부분(문장 단위, 약 350자)만 보여 준다
@@ -9101,7 +9101,10 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
       if (!r.ok) return;
       const d = await r.json();
       const since = Date.now() - HOURS * 3600000;
-      items = (d.items || []).filter((n) => n.date && Date.parse(n.date) >= since).slice(0, 12);
+      // 국내 사고만 보여 준다 (외국 언론 한국어판·국제면·외국 지명 기사는 뺌 — 수집 단계에서도 거르지만 한 번 더)
+      const FOREIGN = /\.(vn|cn|jp|tw|hk|ru|kz|uz|mn|id|th|ph|my|sg|in)(\/|$)|laodong|vietnamplus|xinhua|\/(world|international|global|foreign|overseas|inter)\//i;
+      const FOREIGN_T = /대만|타이완|TSMC|홍콩|마카오|싱가포르|말레이|인도네시아|캄보디아|라오스|미얀마|방글라데시|파키스탄|네팔|몽골|카자흐|우즈벡|사우디|이라크|이란|이스라엘|튀르키예|터키|이집트|호주|캐나다|멕시코|브라질|칠레|페루|아르헨|남아공|나이지리아|케냐|스페인|이탈리아|네덜란드|폴란드|스웨덴|노르웨이|핀란드|뉴질랜드|외신|뚜옌꽝|하노이|호찌민|호치민|다낭|베이징|상하이|광둥|도쿄|오사카|해외|중국|미국|일본|베트남|태국|필리핀|인도|영국|프랑스|독일|러시아/;
+      items = (d.items || []).filter((n) => n.date && Date.parse(n.date) >= since && !FOREIGN.test(n.link || "") && !FOREIGN_T.test(n.titleKo || n.title || "")).slice(0, 12);
     } catch (e) { items = []; }
     const newest = items[0] ? items[0].link : "";
     let closed = ""; try { closed = sessionStorage.getItem("saAlertClosed") || ""; } catch (e) {}
