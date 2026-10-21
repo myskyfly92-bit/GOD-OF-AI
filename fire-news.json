@@ -1,23 +1,54 @@
 {
-  "generatedAt": "2026-10-21T12:30:17.198Z",
+  "generatedAt": "2026-10-21T17:43:28.035Z",
   "items": [
     {
       "title": "الدفاع المدني يسيطر على حريق في وحدة التكرير بمصفى بيجي",
       "source": "مانكيش نت",
       "link": "https://mangish.net/%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D9%8A%D8%B3%D9%8A%D8%B7%D8%B1-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84/",
-      "date": "2026-10-21T11:15:09.000Z",
+      "date": "2026-10-21T17:35:28.000Z",
       "lang": "ar",
       "titleKo": "민방위대가 바이지 정유공장 화재를 진압하고 있다.",
       "url": "https://mangish.net/%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D9%8A%D8%B3%D9%8A%D8%B7%D8%B1-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84/",
       "body": "أكدت مديرية الدفاع المدني أنها استطاعت السيطرة على حريق نشب في وحدة التكرير التابعة لمصفى بيجي الكائن في محافظة صلاح الدين. حيث صرحت",
       "bodyKo": "민방위국은 살라 알딘 주에 위치한 바이지 정유공장 정유시설에서 발생한 화재를 진압할 수 있었다고 확인했습니다. 내가 말한 곳",
       "tried": true,
-      "count": 1,
+      "count": 3,
       "sources": [
+        "وكالة اليوم الإخبارية",
+        "صحيفة صراحة الالكترونية",
         "مانكيش نت"
       ],
+      "related": [
+        {
+          "titleKo": "민방위가 바이지 정제소의 정제소에서 화재를 진압합니다.",
+          "source": "وكالة اليوم الإخبارية",
+          "link": "https://today-agency.net/Details/65754"
+        },
+        {
+          "titleKo": "민방위는 칼와에 있는 아파트 건물에서 화재로 (18) 명을 구출합니다.",
+          "source": "صحيفة صراحة الالكترونية",
+          "link": "https://www.sra7h.com/%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D9%8A%D9%86%D9%82%D8%B0-18-%D8%B4%D8%AE%D8%B5%D9%8B%D8%A7-%D9%85%D9%86-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%A8%D9%86/"
+        }
+      ],
+      "tag": "고층·건물"
+    },
+    {
+      "title": "إنقاذ 18 شخصًا إثر حريق بمبنى سكني في قلوة بسبب عبث أطفال",
+      "source": "أخبار 24",
+      "link": "https://www.akhbaar24.com/%D8%AD%D9%88%D8%A7%D8%AF%D8%AB/%D8%A5%D9%86%D9%82%D8%A7%D8%B0-18-%D8%B4%D8%AE%D8%B5%D8%A7-%D8%A5%D8%AB%D8%B1-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%A8%D9%86%D9%89-%D8%B3%D9%83%D9%86%D9%8A-%D9%81%D9%8A-%D9%82%D9%84%D9%88%D8%A9-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%B9%D8%A8%D8%AB-%D8%A3%D8%B7%D9%81%D8%A7%D9%84-773314",
+      "date": "2026-10-21T15:45:57.000Z",
+      "lang": "ar",
+      "titleKo": "어린이 변조로 인한 콸와주 아파트 화재 18명 구조",
+      "url": "https://www.akhbaar24.com/%D8%AD%D9%88%D8%A7%D8%AF%D8%AB/%D8%A5%D9%86%D9%82%D8%A7%D8%B0-18-%D8%B4%D8%AE%D8%B5%D8%A7-%D8%A5%D8%AB%D8%B1-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%A8%D9%86%D9%89-%D8%B3%D9%83%D9%86%D9%8A-%D9%81%D9%8A-%D9%82%D9%84%D9%88%D8%A9-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%B9%D8%A8%D8%AB-%D8%A3%D8%B7%D9%81%D8%A7%D9%84-773314",
+      "body": "تمكنت فرق الدفاع المدني في قلوة من إنقاذ 18 شخصًا من حريق نشب في غرفة داخل مبنى سكني نتيجة لعبث أطفال. وقد دعا الدفاع المدني إلى ضرورة مراقبة الأطفال وإبعاد المواد القابلة للاشتعال لتفادي الحوادث المنزلية.",
+      "bodyKo": "Qalwa의 민방위 팀은 아이들이 조작한 결과 아파트 건물 내부의 방에서 발생한 화재에서 18명을 구출할 수 있었습니다. 민방위는 가정 내 사고를 피하기 위해 어린이를 감시하고 가연성 물질을 제거해야 한다고 촉구했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "أخبار 24"
+      ],
       "related": [],
-      "tag": "공장·플랜트"
+      "tag": "숙소·창고"
     },
     {
       "title": "보일러 폭발로 작업자 두 명이 부상을 입었습니다.",
@@ -36,6 +67,24 @@
       ],
       "related": [],
       "tag": "기타"
+    },
+    {
+      "title": "مصدر مسؤول في وزارة الطاقة: استهداف مبنى إداري تابع لأرامكو في الظهران ونشوب حريق محدود",
+      "source": "صحيفة الاقتصاد الإلكترونية",
+      "link": "https://www.aleqtsad.org/%D9%85%D8%B5%D8%AF%D8%B1-%D9%85%D8%B3%D8%A4%D9%88%D9%84-%D9%81%D9%8A-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%A8%D9%86/",
+      "date": "2026-10-21T08:05:24.000Z",
+      "lang": "ar",
+      "titleKo": "에너지부의 공식 출처: 다란의 아람코 행정 건물과 제한된 화재를 목표로 함",
+      "url": "https://www.aleqtsad.org/%D9%85%D8%B5%D8%AF%D8%B1-%D9%85%D8%B3%D8%A4%D9%88%D9%84-%D9%81%D9%8A-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%A8%D9%86/",
+      "body": "الاقتصاد.الرياض أعلن مصدر مسؤول في وزارة الطاقة، وقوع استهداف لأحد المباني الإدارية التابعة لشركة أرامكو السعودية في مدينة الظهران بالمنطقة الشرقية مساء\nوأوضح المصدر، أن الجهات المختصة باشرت التعامل مع الحادثة واتخاذ الإجراءات اللازمة، مؤكدًا عدم وقوع أي إصابات أو وفيات.",
+      "bodyKo": "에너지부의 한 공식 소식통은 저녁에 동부 주 다란 시에 있는 사우디아라비아 아람코의 행정 건물 중 하나를 목표로 삼았다고 발표했습니다.\n소식통은 관할 당국이 사고에 대처하고 필요한 조치를 취하기 시작했으며 부상이나 사망은 없었다고 설명했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "صحيفة الاقتصاد الإلكترونية"
+      ],
+      "related": [],
+      "tag": "고층·건물"
     },
     {
       "title": "부천 공장화재 소방관 사망, 경찰 5일만에 압수수색",
@@ -66,12 +115,11 @@
       "body": "[서울=뉴시스] 조성우 기자 = 20일 서울 강남구 역삼동의 한 빌딩에서 화재가 발생해 소방대원들이 현장 수습을 하고 있다. 2026.10.20. xconfind@newsis.com",
       "bodyKo": "[서울=뉴시스] 조성우 기자 = 20일 서울 강남구 역삼동의 한 빌딩에서 화재가 발생해 소방대원들이 현장 수습을 하고 있다. 2026.10.20. xconfind@newsis.com",
       "tried": true,
-      "count": 12,
+      "count": 11,
       "sources": [
         "뉴시스",
         "뉴스핌",
         "www.ebn.co.kr",
-        "아주경제",
         "기독일보",
         "충남일보"
       ],
@@ -82,14 +130,14 @@
           "link": "https://www.newsis.com/view/NISI20261021_0021498472"
         },
         {
-          "titleKo": "경찰·소방, 역삼동 빌딩 화재 합동 현장 감식",
-          "source": "뉴시스",
-          "link": "https://www.newsis.com/view/NISI20261021_0021498468"
-        },
-        {
           "titleKo": "화재난 역삼동 빌딩 현장 감식 나서는 경찰 화재감식반",
           "source": "뉴시스",
           "link": "https://www.newsis.com/view/NISI20261021_0021498462"
+        },
+        {
+          "titleKo": "경찰·소방, 역삼동 빌딩 화재 합동 현장 감식",
+          "source": "뉴시스",
+          "link": "https://www.newsis.com/view/NISI20261021_0021498468"
         },
         {
           "titleKo": "역삼동 빌딩 현장 감식 나서는 경찰 화재감식반과 소방 화재조사관들",
@@ -148,17 +196,17 @@
           "link": "http://www.safetyin.co.kr/news/articleView.html?idxno=24856"
         },
         {
-          "titleKo": "마프라크 공장에서 화재",
+          "titleKo": "마프라크 공장 화재",
           "source": "القلعة نيوز",
           "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB4ejhrcGQ1SWhHY2dJOTg5UmlNaWw1Z1VYb0Y1MTRxRk1EOVVyTXJHbzRfSk1FSkRUdjc3NGI5eXFtcFZzY0RSZWxsdGNVbU0?oc=5"
         },
         {
-          "titleKo": "\"Roya\" 특파원: 민방위가 Mafraq의 Al-Dabbah Plain 지역에서 스폰지 공장 화재를 진압합니다",
+          "titleKo": "기자 \"로야\": 민방위는 마프라크의 살 알 디바 (Sahl al-Dibba) 지역에 있는 스폰지 공장의 화재를 통제합니다",
           "source": "رؤيا الإخباري",
           "link": "https://news.google.com/rss/articles/CBMikAVBVV95cUxOQmUxNVR3bndrZUNOSDNBUF95UXZIaXUtMUdHeE9tM3RDN3pTa21SQTN6MVlWaTFYVFZuaDlkeHZaZGFGUHNxM01lTFlrVng4VnhkNDExZG9WanRZblZDUmNLa25DalB1QXhiT3Y2SXlPR1NjT0lSS3FVU0dkX2ZNbnZMMGlQNlJNLVVfSFZJOFBuMDV2SXdPODk4Q29Meno3cUIyTS1mbzM2QjN1TGRtV3F1NkxxcnY5TmkzSTFMeWhFREE3Q211QkpFVmhSOGtScFRJcXdBSUk4bWg0OVU0Y2EwcjA2Wm9ESzRBdzV6QjU1eGw2RlNFOUhNbmotb1dtUm1DamVmTjIwQkY1NjQxeTllNFl4MEtGamhtaGMtZDBFZXM1OEdCVFJpZENRT3U0R0N2WkpZZ1c2bUhQX1RrUndMWmp4bFVlbTFzNWI4NWVqOE1CSTdpTEtZUm1BcncxUmRHTktURHVFSkNDNFJlOXRDd3EwY0NZZTh2azZ4VXNKQTRfdlhkemRqZk56Y2FOVThlRWVGM0c2ck9CSGRxczBqWllsX0tkWnR6a0lLcldQeTYwRUhGRHA2YVc0MjBOVEFSbnYzLWI4SGd6cnNUTXlmTFBWV0NPUnZVQTRoenJxSlJBMVNkWmo1ZWN3Z3p5WlJlck9nRS1ieVQydnppdi0xbHdVLVB0a0hwMm92cVVNV3pRcW1lYVBpOVpRQUh0SElkbDZpRUpiY0pWZnl1MmZtZXBZUEdiNF9QODNGREVuUmNKeGZUc01HQmg5UFVNUWh5X2g2WGlVNEtlWGM4TERadk11VXU4b25ManZyb0tVQzh6ZjJwNDN0Z25fd0NCLTJIU1EyR1VaNHBZdURtcg?oc=5"
         },
         {
-          "titleKo": "사라야 통신사(Saraya News Agency): 마프라크(Mafraq) 칼리디야(Khalidiya) 지역의 스폰지 공장에서 화재가 발생했으며 민방위대가 사건을 처리하고 있습니다.",
+          "titleKo": "사라야 에이전시: 마프라크 칼리디야 지역의 스펀지 공장에서 화재가 발생했습니다. 민방위가 이 사건을 처리하고 있습니다.",
           "source": "حرية سقفها السماء",
           "link": "https://news.google.com/rss/articles/CBMiiANBVV95cUxOMGszVEJTa1JiNmd0T1Z2ZzZpX2kwa0drY2lWck0zM2Q3bF9aaXlIaVlwSEN5elJ2amJPNXExQWxXOFA0T1NtZUdtaXJRU2JULVp0eVE1cTZjemo0WmZGSnc5S2hrcXBTTVAzaDQzTlJQbUVkVzJSRmUzUzR3WVhTS1lqY3B3UGlIbmtvbEQ0R3hqbVk2SzdXbExpV2lEbVRSRUp4VkV2dWlaQ1NxMGFRRHpLaDl0a3VWeHA2ay1MMTBJd3h4THdYdzNqVkR5UjhwdS0yN0pzQU1YTEc4dXBrdnFoeEpqWGREWFVUcnctZmRYRHRSYXpTSlZ0TnVRWjQtOG1MTFczY3loN2wycGxfb0FNdjlhQzNEQ1laVUhGcWIxMHE2eXJkdXgyaVo0ZGk0LVQ3dUdWZE5LakpTMVJQR3lBbDFhcmVBdzVhXzJvODRkZWNJanJUM3ZmZXNLaHphc0x4R190SE13N3FKb2Z2dzhKUktyOEdVNVNSMGFSMjJ5WG55VTV5eg?oc=5"
         }
@@ -626,22 +674,16 @@
       "body": "[이투뉴스] 한국남부발전(사장 김준동)과 피엠그로우(대표 박재홍)가 전기버스에 쓰인 사용후배터리로\n양사는 15일 강원도 영월군 남부발전 영월빛드림본부에서 R-ESS 실증 기념식을 개최했다고 17일 밝혔다.\n화재방지형 R-ESS는 운행을 마친 전기버스에서 회수한 배터리를 재사용하는 BESS이다. 전기차용으로 쓰인 배터리라도 일정 수준의 잔존성능을 보유하고 있는데, 이를 ESS로 활용하면 배터리 활용도를 극대화하고 자원 재순환에도 유익하기 때문이다.\n남부발전 R-ESS에는 사용후배터리 재사용 과정에 우려되는 화재 위험을 줄이기 위해 정밀 배터리 진단 및 안전 제어 기술, 오프가스(Off-gas) 사전 감지, 화재 전 단계 모니터링 및 예방 기술, 지능형 소화 및 온도 제어 기술 등이 다수 적용됐다.\n이번 실증을 통해 사용후 전기차배터리의 안전한 재사용을 위한 데이터를 확보하고, 재생에너지 변동성 대응과 전력계통 안정화에 활용할 수 있는 자원순환형 ESS 확대를 검토하기로 했다.\n정굳건 남부발전 기후환경처장은 &ldquo;이번 실증은 전기버스 사용후배터리의 잔존 가치를 재창출하고 안전기술을 접목해 자원순환의 실효성을 높였다는 데 의미가 있다&rdquo;며 &ldquo;실증설비의 안전한 운영과 사용후배터리 활용 확대를 통해 자원순환 경제 활성화 및 친환경 에너지 인프라 구축에 기여할 것\"이라고 말했다.",
       "bodyKo": "[이투뉴스] 한국남부발전(사장 김준동)과 피엠그로우(대표 박재홍)가 전기버스에 쓰인 사용후배터리로\n양사는 15일 강원도 영월군 남부발전 영월빛드림본부에서 R-ESS 실증 기념식을 개최했다고 17일 밝혔다.\n화재방지형 R-ESS는 운행을 마친 전기버스에서 회수한 배터리를 재사용하는 BESS이다. 전기차용으로 쓰인 배터리라도 일정 수준의 잔존성능을 보유하고 있는데, 이를 ESS로 활용하면 배터리 활용도를 극대화하고 자원 재순환에도 유익하기 때문이다.\n남부발전 R-ESS에는 사용후배터리 재사용 과정에 우려되는 화재 위험을 줄이기 위해 정밀 배터리 진단 및 안전 제어 기술, 오프가스(Off-gas) 사전 감지, 화재 전 단계 모니터링 및 예방 기술, 지능형 소화 및 온도 제어 기술 등이 다수 적용됐다.\n이번 실증을 통해 사용후 전기차배터리의 안전한 재사용을 위한 데이터를 확보하고, 재생에너지 변동성 대응과 전력계통 안정화에 활용할 수 있는 자원순환형 ESS 확대를 검토하기로 했다.\n정굳건 남부발전 기후환경처장은 &ldquo;이번 실증은 전기버스 사용후배터리의 잔존 가치를 재창출하고 안전기술을 접목해 자원순환의 실효성을 높였다는 데 의미가 있다&rdquo;며 &ldquo;실증설비의 안전한 운영과 사용후배터리 활용 확대를 통해 자원순환 경제 활성화 및 친환경 에너지 인프라 구축에 기여할 것\"이라고 말했다.",
       "tried": true,
-      "count": 3,
+      "count": 2,
       "sources": [
         "이투뉴스",
-        "부산일보",
-        "국제뉴스"
+        "부산일보"
       ],
       "related": [
         {
           "titleKo": "남부발전, 전기버스 사용후배터리 활용 ‘화재방지형 R-ESS’ 기술 실증 나선다",
           "source": "부산일보",
           "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9vcEpzUUhOR1M0Y2M3VElObEsyTlFBNVR6cVNXSmdCN0V6WlVxNGlTbHB5RHNxSFYtaVVtRkd3eHl3MEV1RTMzbXRWX2NjSlkweHpLTTJVRHBoZGxBMUQzY2tFRDAzNzBwd0NybE5uTklPTTJ4VmdhSWRtNVA?oc=5"
-        },
-        {
-          "titleKo": "남부발전, 전기버스 사용후 배터리 활용 '화재방지형 R-ESS' 실증 가동",
-          "source": "국제뉴스",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5vWTRoa3A4VUNkb0VQb0FUNHZqQ04tZU9vbnNOeGc5RnZSTmllNzdVdlJJMXVjN2JwR3pIZ190MmVMUm9jVHhBV1pPbHhUZUVlWjJCR0NwcDkteVpRMGwyOFBIRDhBTmRsMXNQbjNR?oc=5"
         }
       ],
       "tag": "전기·배터리"
@@ -923,34 +965,6 @@
       ],
       "related": [],
       "tag": "기타"
-    },
-    {
-      "title": "불티 하나가 큰불로! 작업장 화재·폭발 예방수칙",
-      "source": "정책브리핑",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBnWHV6RHNyV0cwa2hnckw5MXl4ZmhScWxWUGdIQ2pCWFVoOVBtdThueHc5Z0pkbUxvV3YyM0c3NUk3S21aaG1SZ09uTlBJUnlUM1UtYlpCNWNYZUJ5LWFQQkM4MjI?oc=5",
-      "date": "2026-10-16T02:43:42.000Z",
-      "lang": "ko",
-      "titleKo": "불티 하나가 큰불로! 작업장 화재·폭발 예방수칙",
-      "count": 1,
-      "sources": [
-        "정책브리핑"
-      ],
-      "related": [],
-      "tag": "용접·불티"
-    },
-    {
-      "title": "[출근길인터뷰] 보조배터리 부풀면 소금물에 넣어라?…화재 대처법은",
-      "source": "연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5MUF9PdTkySGRrNzhqb251TE5JSlNGenJoZDRUbTR6bXVGaWJvbVFfNEx3YThUZ1htSTZad2UzQjlxYXczajRtZW81NEV5TVhzaV9oRHJzeXRveTZIRWhHVNIBYEFVX3lxTE5MUF9PdTkySGRrNzhqb251TE5JSlNGenJoZDRUbTR6bXVGaWJvbVFfNEx3YThUZ1htSTZad2UzQjlxYXczajRtZW81NEV5TVhzaV9oRHJzeXRveTZIRWhHVA?oc=5",
-      "date": "2026-10-15T23:07:33.000Z",
-      "lang": "ko",
-      "titleKo": "[출근길인터뷰] 보조배터리 부풀면 소금물에 넣어라?…화재 대처법은",
-      "count": 1,
-      "sources": [
-        "연합뉴스"
-      ],
-      "related": [],
-      "tag": "전기·배터리"
     }
   ]
 }
