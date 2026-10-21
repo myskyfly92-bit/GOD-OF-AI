@@ -6539,7 +6539,7 @@ const CLINIC_EN = {
   "외부 병원 진료": "Outside hospital visit", "피부 상처": "Skin / wound", "눈": "Eye", "이비인후 치과": "ENT / dental", "열 관련": "Heat-related", "알레르기": "Allergy",
 };
 // BNCP Clinic EMR 주소 (진료 기록 원본) — 패밀리사이트와 같은 주소
-const EMR_URL = "https://script.google.com/macros/s/AKfycbzbc2OL601G8iW08brqgG_xggnMgul4FV5hV---IY2jp65-j_2kAYsa0r2kWnIASdAReg/exec";
+// EMR 주소는 공개 저장소에 두지 않는다 (2026-10-21: 봇 접속·노출 방지 — 클리닉 담당자는 즐겨찾기로 연다)
 // 값 번역: 사전에 있으면 영어로, 쉼표로 나뉜 증상은 하나씩, 없으면 원문 그대로
 const clinicTr = (v) => {
   if (!UI_EN || !v) return v || "";
@@ -6712,8 +6712,7 @@ async function loadClinic(force) {
     emrBox.innerHTML = `<div class="clinic-sub">${TT("조치별 (최근 7일)", "By action (last 7 days)")}</div>
       <ul class="clinic-top">${actRows.length ? actRows.map(([a, n]) => `<li class="sc-row"><span class="sc-name"><i style="background:${/후송/.test(a) ? "#e5484d" : /외부/.test(a) ? "#f2a93b" : "#35d0c0"}"></i>${escapeHtml(clinicTr(a))}</span>
         <span class="sc-bar"><b style="width:${(n / aMax) * 100}%;background:${/후송/.test(a) ? "#e5484d" : /외부/.test(a) ? "#f2a93b" : "#35d0c0"}"></b></span><span class="sc-n">${n}${TT("건", "")}</span></li>`).join("") : `<li>${TT("최근 7일 진료 없음", "No visits in the last 7 days")}</li>`}</ul>
-      <div class="clinic-emr-note">🔒 ${TT("개별 진료 기록은 <b>BNCP Clinic EMR</b>에서 관리합니다 (등록된 클리닉 담당자만 열람). 이 화면에는 개인정보 없이 건수만 표시됩니다.", "Individual records are kept in <b>BNCP Clinic EMR</b> (registered clinic staff only). This page shows counts only, without personal data.")}
-        <a href="${EMR_URL}" target="_blank" rel="noopener noreferrer">${TT("EMR 열기", "Open EMR")} ↗</a></div>` + clinicExtraHtml(month);
+      <div class="clinic-emr-note">🔒 ${TT("개별 진료 기록은 <b>BNCP Clinic EMR</b>에서 관리합니다 (등록된 클리닉 담당자만 열람). 이 화면에는 개인정보 없이 건수만 표시됩니다.", "Individual records are kept in <b>BNCP Clinic EMR</b> (registered clinic staff only). This page shows counts only, without personal data.")}</div>` + clinicExtraHtml(month);
     emrBox.hidden = false;
     clinicFillEr();
   } else if (emrBox) emrBox.hidden = true;
