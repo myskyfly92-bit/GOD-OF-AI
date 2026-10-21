@@ -9,11 +9,35 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "United Arab Emirates announces national commitments to advance evidence-based integrative medicine",
+      "date": "2026-10-21T12:00:00Z",
+      "summary": "Dr Ahmed Alosi; Dr Thekra Mohamed; Dr Geetha Krishnan G. Pillai.©WHOAt the Al Shifaa Summit for Integrative Medicine in Abu Dhabi, the United Arab Emirates (UAE) set out four national commitments aligned with the WHO Global Traditional Medicine Strategy 2025–2034 and highlighted plans for continued collaboration between the UAE Integrative Medicine Council and the World Health Organization. The United Arab Emirates has announced a set of national commitments to strengthen the evidence-based inte",
+      "link": "https://www.who.int/news/item/21-10-2026-united-arab-emirates-announces-national-commitments-to-advance-evidence-based-integrative-medicine",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "New global framework launched to track increasing health risks of extreme heat for pregnant women, newborns and children",
       "date": "2026-10-21T09:02:28Z",
       "summary": "As extreme heat intensifies around the world, the World Health Organization (WHO), the World Meteorological Organization (WMO), UNICEF and the United Nations Population Fund (UNFPA) today launched the first-ever set of priority indicators to help countries track the health impacts of heat on pregnant women, newborns and children.",
       "link": "https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children",
       "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO launches guidance on evidence generation for new TB diagnostics",
+      "date": "2026-10-21T06:00:00Z",
+      "summary": "WHO has published new Guidance on evidence generation (GEG) for new tuberculosis diagnostics. This guidance informs researchers, developers, funders and other stakeholders about how evidence should be generated to optimally inform WHO guideline development on new TB diagnostic tests, sample types and testing strategies.",
+      "link": "https://www.who.int/news/item/21-10-2026-who-launches-guidance-on-evidence-generation-for-new-tb-diagnostics",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "New WHO–ILO framework to track progress towards universal social protection inclusive of people with TB",
+      "date": "2026-10-21T06:00:00Z",
+      "summary": "WHO and ILO have published a new monitoring and evaluation framework to enable countries to track progress towards universal social protection inclusive of people with tuberculosis (TB). The new framework provides a practical approach to measuring progress towards the commitment to ensure that 100% of people with TB have access to a health and social benefits package by 2027, and identifying gaps in coverage and protection.",
+      "link": "https://www.who.int/news/item/21-10-2026-new-who-ilo-framework-to-track-progress-towards-universal-social-protection-inclusive-of-people-with-tb",
+      "newsType": "Departmental update"
     },
     {
       "kind": "WHO 소식",
@@ -112,30 +136,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "WHO formalize partnership with the largest organization for physicians and oncology professionals",
-      "date": "2026-10-15T06:00:00Z",
-      "summary": "WHO and the American Society of Clinical Oncology (ASCO) have signed a collaboration agreement with the joint objective of elevating quality as a priority in the global cancer agenda and supporting governments in implementing programmes that improve access and, ultimately, survival.",
-      "link": "https://www.who.int/news/item/15-10-2026-who-formalize-partnership-with-the-largest-organization-for-physicians-and-oncology-professionals",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO Guideline Development Group meets to review Abortion care guideline",
-      "date": "2026-10-14T12:03:06Z",
-      "summary": "The World Health Organization has transitioned the Abortion care guideline to a living guideline format to focus on targeted recommendations that address new evidence or implementation issues as they arise. To this effect, the evidence for repeat dosing for the misoprostol-alone regimen for medical abortion at less than 12 weeks will be revisited (Recommendation 27b). In line with the WHO handbook for guideline development, a subset of the Abortion care guideline’s Guideline Development Group (G",
-      "link": "https://www.who.int/news/item/14-10-2026-who-guideline-development-group-meets-to-review-abortion-care-guideline",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO and partners drive improved alignment for effective NTD and supply chain delivery",
-      "date": "2026-10-13T13:22:07Z",
-      "summary": "The meetings – the NTD Supply Chain Forum (NTD-SCF), the Supply Chain Technical Support Mechanism (SCTSM) and the Global Coordination and Stewardship Committee (GCSC) – brought together global, regional and national stakeholders to review progress, address persistent supply chain challenges and consider how NTD programmes can prepare for the changing environment toward and beyond 2030.",
-      "link": "https://www.who.int/news/item/13-10-2026-who-and-partners-drive-improved-alignment-for-effective-ntd-and-supply-chain-delivery",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Pneumonia of undetermined etiology - the Russian Federation",
       "date": "2026-10-10T15:53:19Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON612"
     }
   ],
-  "generatedAt": "2026-10-21T16:16:17.046734+00:00"
+  "generatedAt": "2026-10-21T21:00:01.530507+00:00"
 }
