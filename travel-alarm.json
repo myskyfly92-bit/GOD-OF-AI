@@ -789,16 +789,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "샨주 북부 및 동부, 까야주, 라카인주, 미야와디 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "4단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "샨주 북부 및 동부, 까야주, 라카인주, 미야와디 지역"
     }
    ],
    "written": "",
@@ -2089,16 +2089,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "에리트레아&bull;에티오피아&bull;소말리아 국경 10km 이내 접경지역"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "에리트레아&bull;에티오피아&bull;소말리아 국경 10km 이내 접경지역"
     }
    ],
    "written": "",
@@ -2344,7 +2344,7 @@
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
-     "remark": "베네수엘라 국경지역 20km/ 나리뇨 주(뚜마코)/ 바예델카우카 주(깔리 시 제외)/ 아라우카 주, 카우카 주/(*는 일부: 안티오키아 주*, 초코 주*/ 카케타 주*)  / 노르떼 데 산딴데르(Norte de Santander) 주"
+     "remark": "베네수엘라 국경지역 20km/ 에콰도르 국경지역 20km / 바예델카우카 주(깔리 시 제외)/ 아라우카 주, 카우카 주/(*는 일부: 안티오키아 주*, 초코 주*/ 카케타 주*)  / 노르떼 데 산딴데르(Norte de Santander) 주"
     },
     {
      "level": 2,
@@ -2662,6 +2662,12 @@
    "level": 4,
    "regions": [
     {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "이슬라마바드, 페이살라바드, 라왈핀디, 라호르, 훈자, 길깃, 스카르두"
+    },
+    {
      "level": 4,
      "levelName": "여행금지",
      "region": "일부",
@@ -2672,12 +2678,6 @@
      "levelName": "출국권고",
      "region": "일부",
      "remark": "2단계(여행자제), 4단계(여행금지) 지역을 제외한 전 지역"
-    },
-    {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "이슬라마바드, 페이살라바드, 라왈핀디, 라호르, 훈자, 길깃, 스카르두"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-10-20T06:44:07.224337+00:00"
+ "generatedAt": "2026-10-21T06:39:15.516888+00:00"
 }
