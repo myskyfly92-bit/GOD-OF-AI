@@ -1,23 +1,135 @@
 {
-  "generatedAt": "2026-10-20T22:27:33.836Z",
+  "generatedAt": "2026-10-21T01:43:07.533Z",
   "items": [
     {
-      "title": "Iraq scraps solar import tariffs, approves power deal",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Iraq/Iraq-scraps-solar-import-tariffs-approves-power-deal",
-      "date": "2026-10-20T22:09:26.000Z",
+      "title": "Cabinet vote in Iraq sees Shiite armed factions retain sway in government",
+      "source": "Amwaj.media",
+      "link": "https://amwaj.media/en/media-monitor/cabinet-vote-in-iraq-sees-shiite-armed-factions-retain-sway-in-government",
+      "date": "2026-10-21T01:19:01.000Z",
       "lang": "en",
-      "titleKo": "이라크, 태양광 수입 관세 폐기, 전력 거래 승인",
-      "url": "https://shafaq.com/en/Iraq/Iraq-scraps-solar-import-tariffs-approves-power-deal",
-      "body": "Shafaq News- Baghdad The Iraqi Cabinet approved eliminating customs duties on imported solar energy systems on Tuesday, according to Prime Minister Ali Al-Zaidi's media office. Separately, the Cab\nSeparately, the Cabinet authorized the Electricity Ministry's General Company for Electricity Transmission in the Northern Region to sign a contract for the supply of 600&ndash;1,000 megawatts of electricity.\nRead more: Can solar power alter Iraq&rsquo;s reliance on oil?\nThe government also authorized the Agriculture Ministry to allow imports of all agricultural crops through December 31, 2026, to support food security .\nThe Cabinet also issued decisions concerning health, maritime transport, oil, and water security, while newly appointed ministers took an oath of honor during the session.",
-      "bodyKo": "알리 알자이디 총리실에 따르면, 이라크 내각은 화요일에 수입된 태양 에너지 시스템에 대한 관세 철폐를 승인했다. 따로따로, 택시가\n이와는 별도로 내각은 북부 지역의 전기 송전 일반 회사에 600-1,000 메가와트의 전력 공급 계약을 체결하도록 승인했습니다.\n더 읽어보기: 태양광 발전이 이라크의 석유 의존도를 바꿀 수 있을까요?\n정부는 또한 농업부가 식량 안보를 지원하기 위해 2026년 12월 31일까지 모든 농작물의 수입을 허용하도록 승인했다.\n내각은 또한 건강, 해상 운송, 석유 및 물 안보에 관한 결정을 내렸고, 새로 임명된 장관들은 회기 중에 명예 선서를 했다.",
+      "titleKo": "이라크 내각 투표에 따르면 시아파 무장 진영이 정부에서 흔들리고 있다.",
+      "url": "https://amwaj.media/en/media-monitor/cabinet-vote-in-iraq-sees-shiite-armed-factions-retain-sway-in-government",
+      "body": "",
+      "bodyKo": "",
       "tried": true,
       "count": 1,
       "sources": [
-        "شفق نيوز"
+        "Amwaj.media"
       ],
       "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq scraps solar import tariffs, approves power deal",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/amp/en/Iraq/Iraq-scraps-solar-import-tariffs-approves-power-deal",
+      "date": "2026-10-20T22:10:04.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 태양광 수입 관세 폐기, 전력 거래 승인",
+      "url": "https://shafaq.com/amp/en/Iraq/Iraq-scraps-solar-import-tariffs-approves-power-deal",
+      "body": "Shafaq News- Baghdad The Iraqi Cabinet approved eliminating customs duties on imported solar energy systems on Tuesday, according to Prime Minister Ali Al-Zaidi's media office. Separately, the Cab\nSeparately, the Cabinet authorized the Electricity Ministry's General Company for Electricity Transmission in the Northern Region to sign a contract for the supply of 600&ndash;1,000 megawatts of electricity.\nRead more: Can solar power alter Iraq&rsquo;s reliance on oil?\nThe government also authorized the Agriculture Ministry to allow imports of all agricultural crops through December 31, 2026, to support food security .\nThe Cabinet also issued decisions concerning health, maritime transport, oil, and water security, while newly appointed ministers took an oath of honor during the session.",
+      "bodyKo": "알리 알자이디 총리실에 따르면, 이라크 내각은 화요일에 수입된 태양 에너지 시스템에 대한 관세 철폐를 승인했다. 따로따로, 택시가\n이와는 별도로 내각은 북부 지역의 전기 송전 일반 회사에 600-1,000 메가와트의 전력 공급 계약을 체결하도록 승인했습니다.\n더 읽어보기: 태양광 발전이 이라크의 석유 의존도를 바꿀 수 있을까요?\n정부는 또한 농업부가 식량 안보를 지원하기 위해 2026년 12월 31일까지 모든 농작물의 수입을 허용하도록 승인했다.\n내각은 또한 건강, 해상 운송, 석유 및 물 안보에 관한 결정을 내렸고, 새로 임명된 장관들은 회기 중에 명예 선서를 했다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크, 태양광 수입 관세 폐기, 전력 거래 승인",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Iraq/Iraq-scraps-solar-import-tariffs-approves-power-deal"
+        }
+      ],
       "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iran says deal reached with Iraq to expel Kurdish separatists: What to know - Al-Monitor",
+      "source": "Al-Monitor",
+      "link": "https://www.al-monitor.com/originals/2026/10/iran-says-deal-reached-iraq-expel-kurdish-separatists-what-know",
+      "date": "2026-10-20T21:20:11.000Z",
+      "lang": "en",
+      "titleKo": "이란은 쿠르드 분리주의자들을 추방하기 위해 이라크와 거래를 했다고 말합니다: 알아야 할 사항 - Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/10/iran-says-deal-reached-iraq-expel-kurdish-separatists-what-know",
+      "body": "Iran said an agreement was reached with Iraq to expel or hand over members of Kurdish separatist groups based in Iraqi Kurdistan.\nIran said on Tuesday it reached an agreement with Iraq to expel Iranian Kurdish separatist groups from the Iraqi Kurdistan Region as Iranian security forces intensify a crackdown against Kurdish groups concentrated in the country’s northwest.\nWhat happened : Iran’s ambassador to Baghdad, Mohammad Kazem Al-e Sadegh, said in an X post that the agreement was reached during a meeting of the joint security committee attended by an Iranian delegation and Iraq’s national security adviser, Qasim al-Aboudi, as part of security cooperation between the neighboring countries.\nفي إطار التعاون الأمني بين الجمهورية الإسلامية الإيرانية وجمهورية العراق، اتفق الجانبان خلال اجتماع اللجنة الأمنية المشتركة ، بحضور الوفد الإيراني ومستشار الأمن القومى العراقي، على اخراج عناصر الجماعات الانفصاليه الإرهابية الإيرانية من إقليم كردستان العراق أو تسليمهم لإيران. https://t.co/BFr346OpAf",
+      "bodyKo": "이란은 이라크와 이라크 쿠르디스탄에 본부를 둔 쿠르드 분리주의 단체를 추방하거나 넘겨주기로 합의했다고 밝혔다.\n이란 보안군이 이라크 북서부에 집중된 쿠르드족에 대한 단속을 강화함에 따라 이란은 화요일 이라크와 쿠르드족 분리주의 단체를 이라크 쿠르드족 지역에서 추방하기로 합의했다고 밝혔다.\n무슨 일이 있었는지: 모하마드 카젬 알에 사데그 바그다드 주재 이란 대사는 X 포스트에서 이란 대표단과 이라크 국가안보보좌관 카심 알 아부디가 참석한 공동안보위원회 회의에서 이웃 국가들 간의 안보 협력의 일환으로 합의에 도달했다고 말했다.\nفي إطار التعاون الأمني بين الجمهورية الإسلامية الإيرانية وجمهورية العراق، اتفق الجانبان خلال اجتماع اللجنة الأمنية المشتركة ، بحضور الوفد الإيراني ومستشار الأمن القومى العراقي، على اخراج عناصر الجماعات الانفصاليه الإرهابية الإيرانية من إقليم كردستان العراق أو تسليمهم لإيران. https://t.co/BFr346OpAf",
+      "tried": true,
+      "count": 9,
+      "sources": [
+        "www.taghribnews.com",
+        "Palestine Chronicle",
+        "Al-Monitor",
+        "Rudaw",
+        "964media",
+        "Türkiye Today"
+      ],
+      "related": [
+        {
+          "titleKo": "이란과 이라크 국경수비대 사령관은 국경 보안을 위한 협력을 약속합니다.",
+          "source": "www.taghribnews.com",
+          "link": "https://www.taghribnews.com/en/news/742819/iranian-and-iraqi-border-guard-commanders-pledge-cooperation-for-security"
+        },
+        {
+          "titleKo": "이란, 이라크, 쿠르드 지역 보안 거래",
+          "source": "Palestine Chronicle",
+          "link": "https://www.palestinechronicle.com/iran-iraq-and-kurdish-region-security-deal-new-details-revealed/"
+        },
+        {
+          "titleKo": "이라크 소식통은 이란과 쿠르드 야당을 축출하고 넘기기로 합의했다는 주장을 부인하고 있다.",
+          "source": "Rudaw",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9VQ0NIeFpBakxGZWUtdGRYdUdHb1VpNVkzMHNpRFlLWVVna1g4UFJWQV9tc2RMbkFEV0FFREJOYVhkelVheDFkdDZZMGZES3pWQkVKbFpwSExpcmk0a2Q3R1lnRjNTUQ?oc=5"
+        },
+        {
+          "titleKo": "이란은 이라크가 쿠르드 야당 의원들을 추방하거나 넘겨주는 데 동의한다고 말한다.",
+          "source": "964media",
+          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE93SHBORG9jdHpUeUJTOWVTbldTZkc0ZUxpd1ltcjZIdmRWdUFWTW56UTE0NUREbXF5UDdBcmNlZEVHZUx4?oc=5"
+        },
+        {
+          "titleKo": "이란은 이라크가 쿠르드족 반대 단체를 테헤란으로 추방하거나 넘기는 데 동의한다고 말한다.",
+          "source": "Türkiye Today",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOa2UzZDRYNlpicTdYQTZMOWRsUG0zQkxtdmlSNGJTWjZoNGhNbkd2TGkyMU5VeVplempaX0Vvb3BwWWF6Z1hqWDZEdW9Kc3ozWUtSOXN3YVo0NGpmQ2hoeUVmcFh0Tk5GdDduWEliMnJCT2ZVQ1pieGJ6dk9lQ04tUUxwaGZCRzdJajFfQzlFYmx6em9jWW8tQkdvb1lCWlZSVnBrQWpkYk5ZbWo4aGxNVG1iUFI2c0RmWm1mWnRVVDQ?oc=5"
+        }
+      ],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "US expects Iraqi PM to deliver on July commitments to Trump, State Department says",
+      "source": "Rudaw",
+      "link": "https://rudaw.net/english/categories/world/1079821",
+      "date": "2026-10-20T19:49:34.000Z",
+      "lang": "en",
+      "titleKo": "미 국무부는 이라크 정부가 트럼프에 대한 7월 약속을 이행할 것으로 예상한다고 밝혔습니다.",
+      "url": "https://rudaw.net/english/categories/world/1079821",
+      "body": "Washington expects Iraqi Prime Minister Ali al-Zaidi to “follow through” on commitments made to US President Donald Trump during their meeting earlier in July, including reining in armed groups and pr",
+      "bodyKo": "워싱턴은 알리 알자이디 이라크 총리가 지난 7월 초 도널드 트럼프 미국 대통령과의 회담에서 한 약속을 \"철저히 이행\" 할 것으로 기대하고 있습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
+      "tag": "정치·선거",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -37,11 +149,17 @@
       "body": "Shafaq News- Kirkuk Iraqi Army and Federal Police units are exchanging security assignments in Kirkuk and southern Baghdad under a redeployment plan, a security source told Shafaq News on Tuesday. T\nThe army's 17th Division has taken over the Hawija sector in Kirkuk, replacing Federal Police forces that are moving to Al-Latifiyah, south of the capital, to assume duties previously handled by the division.\nIn September, a security source said Ali Fadel Al-Mafraji had received an assignment order to lead Kirkuk Operations Command, although military authorities had not confirmed the appointment. Earlier this month, the Counter-Terrorism Service replaced its local regiment commander following an operation in Altun Kupri that killed two civilians.",
       "bodyKo": "Shafaq News- Kirkuk Iraqi Army and Federal Police units are exchanging security assignments in Kirkuk and southern Baghdad under a redeployment plan, a security source told Shafaq News on Tuesday. T\n육군 제17사단은 키르쿠크의 하와이 지역을 점령하여 수도 남쪽의 알라티피야로 이동하는 연방 경찰을 대체하여 이전에 사단이 처리한 임무를 맡았다.\n지난 9월, 안보 소식통은 알리 파델 알-마프라지가 키르쿠크 작전 사령부를 지휘하라는 명령을 받았지만 군 당국은 임명을 확인하지 않았다고 말했다. 이달 초, 대테러부는 알툰 쿠프리에서 민간인 2명을 살해한 작전에 따라 지역 연대 사령관을 교체했다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "이라크군이 키르쿠크와 바그다드 사이에 재배치",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Security/Iraqi-forces-redeploy-between-Kirkuk-and-Baghdad"
+        }
+      ],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -49,6 +167,31 @@
         "act": "",
         "place": "바그다드",
         "km": 27
+      }
+    },
+    {
+      "title": "Domestic and foreign congratulatory messages to Ali al-Zaidi after the vote of confidence in the Iraqi parliament",
+      "source": "کردپرس",
+      "link": "https://www.kurdpress.com/en/news/160748/domestic-and-foreign-congratulatory-messages-to-ali-al-zaidi-after-the-vote-of-confidence",
+      "date": "2026-10-20T19:30:04.000Z",
+      "lang": "en",
+      "titleKo": "이라크 의회에 대한 신뢰 투표 후 알리 알자이디에게 보내는 국내외 축하 메시지",
+      "url": "https://www.kurdpress.com/en/news/160748/domestic-and-foreign-congratulatory-messages-to-ali-al-zaidi-after-the-vote-of-confidence",
+      "body": "Iraq and Kurdistan Region Service - Following the formation of the new Iraqi government headed by \"Ali Falah Al Zaidi\", a number of leaders of the Kurdistan Region, the I\nAccording to Kurdpress, after the vote of confidence of the Iraqi parliament in the new cabinet headed by Ali Falah al-Zaidi, a wave of congratulatory messages was released by the leaders of the Kurdistan Region, Iraqi officials and also the United States.\nBafel Jalal Talabani, in a message to Ali al-Zaidi and his cabinet members, while congratulating on the occasion of the parliament's vote of confidence, wished success for the new government of Iraq and announced that the Patriotic Union of Kurdistan will seriously support the government's national and service projects.\nAlso, in a separate message, Qobad Talabani expressed hope that the new Iraqi government can strengthen security, stability and economic development and improve the living standards of citizens. He also emphasized on solving the problems between Erbi",
+      "bodyKo": "이라크 및 쿠르디스탄 지역 서비스 - 쿠르디스탄 지역의 여러 지도자인 \"알리 팔라 알 자이디\" 가 이끄는 새로운 이라크 정부가 수립된 후, I\n쿠르드프레스에 따르면, 알리 팔라 알자이디가 이끄는 새 내각에 대한 이라크 의회의 신뢰 투표 이후, 쿠르드 지역 지도자들, 이라크 관리들, 그리고 미국에 의해 축하 메시지가 공개되었다.\n바펠 잘랄 탈라바니 (Bafel Jalal Talabani) 는 알리 알자이디 (Ali al-Zaidi) 와 그의 내각 구성원들에게 보낸 메시지에서 의회의 신뢰 투표를 축하하면서 이라크 새 정부의 성공을 기원하고 쿠르디스탄 애국 연합이 정부의 국가 및 서비스 프로젝트를 진지하게 지원할 것이라고 발표했다.\n또한, 코바드 탈라바니 대통령은 별도의 메시지에서 새로운 이라크 정부가 안보, 안정 및 경제 발전을 강화하고 시민들의 생활 수준을 향상시킬 수 있기를 희망한다고 말했습니다. 그는 또한 Erbi 사이의 문제를 해결하는 데 중점을 두었습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "کردپرس"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
       }
     },
     {
@@ -87,14 +230,11 @@
       "body": "TABNAK, Oct. 20 - Iran and Iraq have reached an agreement to expel a separatist group from Iraq’s Kurdistan Region.\nIran’s ambassador to Baghdad Mohammad Kazem Al-e-Sadeq says Iran and Iraq have reached an agreement to expel a separatist group from Iraq’s Kurdistan Region.\nIn a post on his X account on Tuesday, Mohammad Kazem Al-e-Sadeq said that the two neighboring countries have come to an agreement to evict a separatist terrorist group from the Kurdistan Region or hand its members over to Iran.\nThe ambassador said the agreement was reached within the framework of security cooperation between Iran and Iraq.",
       "bodyKo": "TABNAK, 10월 20일 - 이란과 이라크가 이라크 쿠르디스탄 지역에서 분리주의 단체를 추방하기로 합의했다.\n바그다드 모하마드 카젬 알에사데크 주재 이란 대사는 이란과 이라크가 이라크 쿠르디스탄 지역에서 분리주의 단체를 추방하기로 합의했다고 밝혔습니다.\n모하마드 카젬 알에사데크는 화요일 X 계정에 올린 글에서 이웃 국가들이 쿠르드 지역에서 분리주의 테러 단체를 퇴거하거나 이란에 회원국을 넘기기로 합의했다고 말했다.\n앰배서더는 이란과 이라크의 안보 협력 틀 내에서 합의가 이뤄졌다고 말했습니다.",
       "tried": true,
-      "count": 14,
+      "count": 3,
       "sources": [
         "The Long War Journal",
         "The National",
-        "Palestine Chronicle",
-        "Tabnak",
-        "Al-Monitor",
-        "Rudaw"
+        "Tabnak"
       ],
       "related": [
         {
@@ -106,21 +246,6 @@
           "titleKo": "이란은 이라크가 쿠르디스탄 지역에서 반대 단체를 추방하는 데 동의했다고 말했습니다.",
           "source": "The National",
           "link": "https://www.thenationalnews.com/news/mena/2026/10/20/iran-says-iraq-has-agreed-to-expel-iranian-kurdish-opposition-groups-from-kurdistan-region/"
-        },
-        {
-          "titleKo": "이란, 이라크, 쿠르드 지역 보안 거래",
-          "source": "Palestine Chronicle",
-          "link": "https://www.palestinechronicle.com/iran-iraq-and-kurdish-region-security-deal-new-details-revealed/"
-        },
-        {
-          "titleKo": "이란은 쿠르드 분리주의자들을 추방하기 위해 이라크와 거래를 했다고 말합니다: 알아야 할 사항 - Al-Monitor",
-          "source": "Al-Monitor",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVUJ2RlVGXzFqWER4OUlnZThjY1RjRjhjeVJUNDhlLXJMQVU1SWFNR3BuTXp0SkNnZUQxLWFqZVhSUHMyX1NjaDJSc1V5eXI3OE9ibVVRdG53bXVUcTB0eldXeEJxMFJxSjJpamtBMTF2Mk1HcUx4XzNQWENIYlNLWUhJUlQ4bVBnYVNhMUlXaUZVSGp1N3F0dGpQcVJnMXN5OHRoUWV3SEI3Y2Vy?oc=5"
-        },
-        {
-          "titleKo": "이라크 소식통은 이란과 쿠르드 야당을 축출하고 넘기기로 합의했다는 주장을 부인하고 있다.",
-          "source": "Rudaw",
-          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9VQ0NIeFpBakxGZWUtdGRYdUdHb1VpNVkzMHNpRFlLWVVna1g4UFJWQV9tc2RMbkFEV0FFREJOYVhkelVheDFkdDZZMGZES3pWQkVKbFpwSExpcmk0a2Q3R1lnRjNTUQ?oc=5"
         }
       ],
       "tag": "치안·테러",
@@ -143,25 +268,20 @@
       "body": "Turkish Defense Minister Yasar Guler shared on Tuesday that the country\n\"We are maintaining our military presence in Iraq and Syria. When we assess that the necessary conditions have been met in terms of regional and border security, the status of our base areas and our presence in the region will be reconsidered,\" he told AFP.\nMeanwhile, Anadolu Agency reported that Guler will travel to Qatar today to join the signing of a defense industry cooperation agreement made among Türkiye, Qatar, Pakistan and Indonesia.\nHere we are to serve you with news right now. It does not cost much, but worth your attention.\nBy subscribing to our online newspaper, you can have full digital access to all news, analysis, and much more.",
       "bodyKo": "야사르 굴러 터키 국방장관은 화요일에 터키가\n\"우리는 이라크와 시리아에서 군사력을 유지하고 있습니다. 지역 및 국경 보안 측면에서 필요한 조건이 충족되었다고 평가할 때, 우리 기지 지역의 상태와 이 지역에 대한 우리의 존재는 재고될 것입니다.\" 라고 그는 AFP에 말했다.\n한편, Anadolu Agency는 Guler가 오늘 카타르를 방문하여 튀르키예, 카타르, 파키스탄, 인도네시아 간의 방위 산업 협력 협정 체결에 동참할 것이라고 보고했습니다.\n지금 바로 소식을 전해드리겠습니다. 비용은 많이 들지 않지만 주의를 기울일 가치가 있습니다.\n온라인 신문을 구독하면 모든 뉴스, 분석 등에 디지털로 액세스할 수 있습니다.",
       "tried": true,
-      "count": 12,
+      "count": 11,
       "sources": [
         "AzerNews",
         "Arab News",
-        "شبكة تواصل الإخبارية",
         "Türkiye Today",
         "Turkish Minute",
-        "TodayPress.tv"
+        "TodayPress.tv",
+        "Roya News"
       ],
       "related": [
         {
           "titleKo": "국방부 장관은 AFP에 이라크 시리아에 머물러야 하는 투르키예 군대에 대해 ‘국경 보안이 확보될 때까지’ 라고 말했다.",
           "source": "Arab News",
           "link": "https://www.arabnews.com/middle-east/turkiye-troops-to-stay-in-syria-iraq-until-border-security-ensured-defense-minister-tells-afp-3007364"
-        },
-        {
-          "titleKo": "이라크 시리아에 머물러야 하는 튀르키예 군대의 ‘국경 보안이 확보될 때까지’, 국방부 장관의 말",
-          "source": "شبكة تواصل الإخبارية",
-          "link": "https://twaslnews1.twaslnews.com/6300715/"
         },
         {
           "titleKo": "테러 위협이 끝날 때까지 이라크, 시리아에 머물러야 하는 터키군: 국방부 장관",
@@ -177,6 +297,11 @@
           "titleKo": "튀르키예는 시리아와 이라크에서 군대를 철수하기 위해 서두르지 않았습니다.",
           "source": "TodayPress.tv",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNT1JidzQtZ21acmVyNkVVQmRzTTVkVGxxOHVJWTZ0WVVnOXlubFdtQmhOR1gyU0V1RXA4Zk5lZlhHTUtQTDBBVU9QVWFhVC0xTHluQjhFUXRjb2p0Nl9YcHJ2SFFmR2JwV20xRWY5ZFRkTWtHQTgyR2dhZUhXbWZFU09zbVJqN3J0RjBIUnVTNTdZU2s?oc=5"
+        },
+        {
+          "titleKo": "국경이 확보될 때까지 시리아, 이라크에서 군대 주둔을 유지하기 위한 터키",
+          "source": "Roya News",
+          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIb0JXZTVnMWZLQkxFS1FoS2t1dkJKd2pOdVZYT3hQVWJ0c2xMT1J0TWxvSGlXbEFIOXlYbFJYOVlfbUxsOHJUSg?oc=5"
         }
       ],
       "tag": "치안·테러",
@@ -199,23 +324,11 @@
       "body": "Shafaq News- Ankara Turkiye will keep its forces in Iraq and Syria until the security of its borders with both countries is fully guaranteed, Turkish Defense Minister Yasar Guler said on Tuesday.\n\"We are maintaining our military presence in Iraq and Syria,\" Guler told Agence France-Presse in written answers to questions. \"When we assess that the necessary conditions have been met in terms of regional and border security, the status of our base areas and our presence in the region will be reconsidered.\"\nGuler declined to give troop numbers, saying deployments depend on threats, border security and conditions on the ground. Between 800 and 1,000 Turkish troops are stationed in Iraq, an Iraqi security source told AFP.\nLasting success, Guler said, requires the Kurdistan Workers' Party (PKK) to carry out its decision to dissolve, and Ankara is following the next stages of the process. Turkiye is also monitoring Iraq's efforts to disarm armed groups and bring them under state control, he sai",
       "bodyKo": "터키 국방장관 야사르 굴러 (Yasar Guler) 는 화요일에 양국 국경의 안전이 완전히 보장될 때까지 이라크와 시리아에 군대를 주둔시킬 것이라고 말했다.\n\"우리는 이라크와 시리아에서 군 주둔을 유지하고 있습니다.\" 라고 귈러는 프랑스-프레제에게 질문에 대한 서면 답변으로 말했다. \"지역 및 국경 보안 측면에서 필요한 조건이 충족되었다고 평가할 때, 우리 기지 지역의 상태와 이 지역에 대한 우리의 존재는 재고될 것입니다.\"\nGuler는 배치가 위협, 국경 보안 및 현장의 조건에 달려 있다고 말하면서 병력 수를 밝히지 않았습니다. 이라크 보안 소식통은 이라크에 800 ~ 1,000명의 터키군이 주둔하고 있다고 전했다.\n귈러는 지속적인 성공은 쿠르드 노동자당 (PKK) 이 해산 결정을 내릴 것을 요구하며 앙카라가 다음 단계의 절차를 밟고 있다고 말했다. 투르키예는 또한 무장 단체를 무장 해제하고 국가 통제하에 두려는 이라크의 노력을 감시하고 있다.",
       "tried": true,
-      "count": 4,
+      "count": 2,
       "sources": [
-        "Kurdistan24",
-        "Kuwait Times",
         "شفق نيوز"
       ],
       "related": [
-        {
-          "titleKo": "튀르키예, 국경이 확보될 때까지 시리아, 이라크에서 병력 유지",
-          "source": "Kurdistan24",
-          "link": "https://www.kurdistan24.net/en/story/947420/t%C3%BCrkiye-to-keep-troops-in-syria-iraq-until-borders-secure"
-        },
-        {
-          "titleKo": "이라크 시리아에 체류할 터키군 ‘국경 보안이 보장될 때까지’",
-          "source": "Kuwait Times",
-          "link": "https://kuwaittimes.com/article/52012/world/turkey-troops-to-stay-in-syria-iraq-until-border-security-ensured/amp"
-        },
         {
           "titleKo": "Turkiye, 국경이 확보될 때까지 이라크에 군대 유지",
           "source": "شفق نيوز",
@@ -307,6 +420,31 @@
       }
     },
     {
+      "title": "Iraq records 220 human trafficking cases in September",
+      "source": "Rudaw",
+      "link": "https://rudaw.net/english/categories/iraq/1079813",
+      "date": "2026-10-20T17:44:25.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 9월 인신매매 220건 기록",
+      "url": "https://rudaw.net/english/categories/iraq/1079813",
+      "body": "Iraqi courts recorded 220 cases related to human trafficking crimes across the country in September, the Supreme Judicial Council (SJC) announced on Tuesday, as authorities intensify efforts to combat",
+      "bodyKo": "이라크 법원은 9 월에 전국에서 인신 매매 범죄와 관련된 220 건을 기록했다고 최고 사법위원회 (SJC) 가 화요일 발표했다. 당국이 대처 노력을 강화하고있다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "Iraq Threatens Crackdown on Opponents of Disarmament Plan - ASHARQ AL-AWSAT English",
       "source": "ASHARQ AL-AWSAT English",
       "link": "https://english.aawsat.com/arab-world/5331704-iraq-threatens-crackdown-opponents-disarmament-plan",
@@ -332,10 +470,35 @@
       }
     },
     {
+      "title": "Turkey troops to stay in Syria, Iraq ‘until border security ensured’",
+      "source": "Kuwait Times",
+      "link": "https://kuwaittimes.com/article/52012/world/turkey-troops-to-stay-in-syria-iraq-until-border-security-ensured/amp",
+      "date": "2026-10-20T17:41:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크 시리아에 체류할 터키군 ‘국경 보안이 보장될 때까지’",
+      "url": "https://kuwaittimes.com/article/52012/world/turkey-troops-to-stay-in-syria-iraq-until-border-security-ensured/amp",
+      "body": "Turkey troops to stay in Syria, Iraq ‘until border security ensured’ - World - ANKARA: Turkey will keep its own troops in Syria and Iraq until border security with its two neighbors has been fully ensured, Defense Minister Yasar Guler told...\nWorld --> --> Turkey's Defence Minister Yasar Guler October 20, 2026 08:42 p.m --> Turkey troops to stay in Syria, Iraq ‘until border security ensured’ 30 --> ANKARA: Turkey will keep its own troops in Syria and Iraq until border security with its two neighbors has been fully ensured, Defense Minister Yasar Guler told AFP. \"We are maintaining our military presence in Iraq and Syria,” he said in a written answer to AFP questions. \"When we assess that the necessary conditions have been met in terms of regional and border security, the status of our base areas and our presence in the region will be reconsidered.”",
+      "bodyKo": "야사르 굴러르 (Yasar Guler) 국방장관은 터키군이 시리아, 이라크에 머물면서 ’국경 보안이 보장될 때까지’ - 세계 - 앙카라: 터키는 두 이웃 국가와의 국경 보안이 완전히 보장될 때까지 시리아와 이라크에 자체 군대를 유지할 것이라고 말했다...\n세계 -- > -- > 야사르 굴레르 터키 국방장관 2026년 10월 20일 08:42 p.m -- > 터키군이 이라크 시리아에서 ‘국경 보안이 보장될 때까지’ 체류 -- > 앙카라: 터키가 두 이웃 국가와의 국경 보안이 완전히 보장될 때까지 시리아와 이라크에 자국군을 유지할 것이라고 야사르 굴레르 국방장관이 AFP에 말했다. 그는 AFP 질문에 대한 서면 답변에서 \"우리는 이라크와 시리아에 군 주둔을 유지하고 있다\" 고 말했다. \"우리가 필요한 조건을 평가할 때 h",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kuwait Times"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "Iraq offers mediation between Iran, Gulf States",
-      "source": "Iraqi News",
+      "source": "IraqiNews",
       "link": "https://www.iraqinews.com/iraq/iraq-offers-mediation-between-iran-gulf-states/",
-      "date": "2026-10-20T17:36:24.000Z",
+      "date": "2026-10-20T17:38:18.000Z",
       "lang": "en",
       "titleKo": "이라크는 이란, 걸프 국가 간 중재를 제공합니다.",
       "url": "https://www.iraqinews.com/iraq/iraq-offers-mediation-between-iran-gulf-states/",
@@ -344,7 +507,7 @@
       "tried": true,
       "count": 1,
       "sources": [
-        "Iraqi News"
+        "IraqiNews"
       ],
       "related": [],
       "tag": "기타",
@@ -414,6 +577,31 @@
       }
     },
     {
+      "title": "الدفاع المدني: اخماد حريق في بناية تجارية لقطع غيار السيارات شرقي بغداد دون إصابات",
+      "source": "وكالة اليوم الإخبارية",
+      "link": "https://today-agency.net/Details/65731",
+      "date": "2026-10-20T17:00:07.000Z",
+      "lang": "ar",
+      "titleKo": "민방위: 바그다드 동쪽 자동차 부품을 위한 상업용 건물에서 부상 없이 화재 발생",
+      "url": "https://today-agency.net/Details/65731",
+      "body": "أعلنت مديرية الدفاع المدني، اليوم الثلاثاء، إخماد حريق داخل بناية تجارية في منطقة الطالبية دون تسجيل إصابات بشرية. وقال المتحدث باسم المديرية نؤاس صباح إن \"حريقاً اندلع داخل بناية تجارية من طابقين متخذة لتجارة الأدوات الاحتياطية في منطقة الطالبية\"، مؤكداً أنه \"تم إخماد الحريق، دون تسجيل إصابات بشرية\".",
+      "bodyKo": "민방위 국장은 오늘 화요일 탈비야 지구의 상업용 건물 내부에서 인명 피해를 기록하지 않은 채 화재가 진압됐다고 발표했습니다. 나와스 사바 (Nawas Sabah) 국장은 \"탈비야 (Talbiyah) 지역에서 남는 도구 거래를 위해 찍은 2층짜리 상업용 건물 내부에서 화재가 발생했다\" 며 \"인명 피해를 기록하지 않은 채 화재가 진압됐다\" 고 강조했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة اليوم الإخبارية"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
       "title": "Iranian Ambassador to Iraq: Tehran and Baghdad Agree to Expel Opposition Kurds",
       "source": "کردپرس",
       "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOYVZHNU1JU2NoTHg3WkEzRl80dEVUSXQ1dnRSZ3BVeUN5NFVob3VnMEp3OTUtTHBLcnBNQ2FRTUpINjdsNFdENi1qX0szLXhqWHY2a0N6UG02VjBxMk9IQ0txcndON29GSHhxOHpCOFlnOFFzcmdWYTFlVGtGQkt1QnBWQVdIc0lYYWw0XzRqVVpJaHF3dnItMnNqU244UXRGT0hwa2tESnU0cDJKT0Z1cGVEdnFhaTNPY1RDQldhVEpsX1hBT3pj?oc=5",
@@ -439,31 +627,6 @@
         "act": "",
         "place": "바그다드",
         "km": 27
-      }
-    },
-    {
-      "title": "Iraq records 220 human trafficking cases in September",
-      "source": "Rudaw",
-      "link": "https://rudaw.net/english/categories/iraq/1079813",
-      "date": "2026-10-20T16:44:25.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 9월 인신매매 220건 기록",
-      "url": "https://rudaw.net/english/categories/iraq/1079813",
-      "body": "Iraqi courts recorded 220 cases related to human trafficking crimes across the country in September, the Supreme Judicial Council (SJC) announced on Tuesday, as authorities intensify efforts to combat",
-      "bodyKo": "이라크 법원은 9 월에 전국에서 인신 매매 범죄와 관련된 220 건을 기록했다고 최고 사법위원회 (SJC) 가 화요일 발표했다. 당국이 대처 노력을 강화하고있다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
       }
     },
     {
@@ -734,21 +897,15 @@
       "body": "Shafaq News- Baghdad/ Erbil The US dollar closed Tuesday's trading higher in Iraq, hovering around 168,500 dinars per 100 dollars. According to a Shafaq News market survey, the dollar traded in Bagh\nIn the Iraqi capital, exchange shops sold the dollar at 169,250 dinars and bought it at 168,250 dinars, while in Erbil, selling prices stood at 168,750 dinars and buying prices at 168,650 dinars.",
       "bodyKo": "샤파크 뉴스 - 바그다드/에르빌 미국 달러는 화요일 이라크에서 100달러당 약 168,500디나르의 거래를 마감했다. Shafaq News 시장 조사에 따르면 달러는 Bagh에서 거래되었습니다.\n이라크 수도에서 환전소는 169,250 디나르로 달러를 팔아 168,250 디나르로 샀고, 에르빌에서는 판매 가격이 168,750 디나르로, 168,650 디나르로 샀다.",
       "tried": true,
-      "count": 3,
+      "count": 2,
       "sources": [
-        "شفق نيوز",
-        "Iraqi News"
+        "شفق نيوز"
       ],
       "related": [
         {
           "titleKo": "샤파크 뉴스.. 미국 달러, 바그다드, 에르빌 등반",
           "source": "شفق نيوز",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1WdllabWVtajV1RkhTMFBQUHdMREVFLXRVeXdKTXNubjRaN1d1Z3Fob0Y3a093QWg2RU04Q2hISXFLWk5sREFlaXZMT0pJVkNzZWJCNE5OcjU3bUhaT2d1OGg0YTV5eFlfV2FOdktJNUhSbHc?oc=5"
-        },
-        {
-          "titleKo": "바그다드, 바스라, 에르빌 거래소를 가로지르는 미국 달러 엣지",
-          "source": "Iraqi News",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNWlZJWEs0M3g4ckE3X2lkSXNyZGpaVUVYaDNMM1lUSkEwWVg1cjBwVFZxc2ZxNFF1Q014NjBXaUpCV0VBLWFkMG4wNVkxNGVYaUh2elV3dnpTdXhtb0JPS2R1Y1F4Q0VUY1EyTHZKMEdDSnZyeFdrNkZIeGtwOUotT0xQVWFka3R0UGUxdHo3V2dsT0pGWmc?oc=5"
         }
       ],
       "tag": "경제·유가",
@@ -880,15 +1037,36 @@
       }
     },
     {
+      "title": "مصرع امرأتين بحادث دهس وانتحار شاب في بغداد",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMikwNBVV95cUxPaUNjTjFYcVZETTJ5UzdoMXVab0dxVTFjbEhmV0swT1FuNzM3QXFyOWZxeC1NbVQwcHBnWTdIWEVUWTYzWnJ4OGZfSnhqMmtfOGYxQW5qMmdNMTdDTTQzOXdRRUZMSzRnSENMZXhlQUdnNnlXM3Rqc1pqSEdnZmlLNnNPT1ZDRjI3UVFCSnFDSC1VdDFuV2J3SWF4eEtRNy0teEtkbGstMWRIc1g0a1A0UDduTklaeTBiN1drWVRxMUx2aVdLN0thSjlPaHpvb05ma25EYzFMcklLMXdhQVV1UVBQM2x1eXFMZmo2UDgyV29XanJMRTF4OUxENEViT1YtS0hqME5HOWFZRnJKbkNVZTdGNEdQWHdQRjVMM2tJdkpJV29DNjd2NDFVMkRuczBRa1FOclhHY1MxRWJlRFBfU01WVFFMWW1NOW5tTFp2Q21RcGNaSG40N0tmRXVjNjZHbzVUdGJ4SExVWllzYm5wd1F1VjcwVmNlS3VCTDAtMVY4dld4YTlwT0xYOHFJME8yeFp3?oc=5",
+      "date": "2026-10-20T12:46:45.000Z",
+      "lang": "ar",
+      "titleKo": "차량 돌진 사고와 바그다드에서 한 청년의 자살로 두 명의 여성이 사망했습니다.",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
       "title": "Iraq Stock Exchange records 2.5 billion IQD in weekly trading turnover",
-      "source": "Iraqi News",
+      "source": "IraqiNews",
       "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWWdMcjNScEgyd3JKUGxSUmJHXzBjUXR0dEtEd1NGSGZJWTdXS0ZQa244OTN3SnB0MlRzV0cxM2s4T210dXpMM2dCM2VEYzFCNHVucnZhRmFOOEpNRklqNWFoOGJQd1ItczlsQ1FuU0FQR3Y4SnlEVUFlamh0UEdrcERVc2ozT2hqNnQ0azgtQjRuZw?oc=5",
       "date": "2026-10-20T12:07:58.000Z",
       "lang": "en",
       "titleKo": "이라크 증권거래소, 주간 거래 회전율 25억 IQD 기록",
       "count": 1,
       "sources": [
-        "Iraqi News"
+        "IraqiNews"
       ],
       "related": [],
       "tag": "기타",
@@ -919,48 +1097,6 @@
         "act": "",
         "place": "바그다드",
         "km": 27
-      }
-    },
-    {
-      "title": "이라크 원유 생산, 2026년 첫 9개월 동안 8억 3,470만 배럴 기록 - 뉴스 및 통계",
-      "source": "IndexBox",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWHd3eUdDMnZ6OEJIMkpEaVViaFZqb2syazlOZzVJZ1lYdDlfVzZKZThuSFJ5blBJVlZocFJHSG9STld5c3Z2WlFxamItVGpMQXlnNGxYcHp3Q1d0VzhLZVlxanQ2RmZ5RUNJalYwNkctRVl2MndIWWhpb21tMzNvS2FWSWF0MGxvQ2dkUFQ5X1oyMy1jQ2JBSFRvakhLNzREbjM4ZWlLZDc1UQ?oc=5",
-      "date": "2026-10-20T12:01:08.000Z",
-      "lang": "ko",
-      "titleKo": "이라크 원유 생산, 2026년 첫 9개월 동안 8억 3,470만 배럴 기록",
-      "count": 1,
-      "sources": [
-        "IndexBox"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "الياسري تدعو إلى تعديل الدستور واعتماد نظام شبه رئاسي في العراق",
-      "source": "وكالة المرسى نيوز",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56aWJGMFhMS211N1UtNEQtSU1HY2c0ZGZhMnVXeExIM0I1VjJpNTBDbXkwdXZWWHZOUlZ4aXZrdnlRa2VKY2pwMjV0LVVNcTFKUGc?oc=5",
-      "date": "2026-10-20T11:10:40.000Z",
-      "lang": "ar",
-      "titleKo": "알 야시리 (Al-Yasiri) 는 이라크에서 헌법을 개정하고 반 (半) 대통령제를 채택할 것을 요구합니다.",
-      "count": 1,
-      "sources": [
-        "وكالة المرسى نيوز"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
       }
     }
   ],
