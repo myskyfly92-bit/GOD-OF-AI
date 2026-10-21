@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T17:43:28.035Z",
+  "generatedAt": "2026-10-21T22:01:59.512Z",
   "items": [
     {
       "title": "الدفاع المدني يسيطر على حريق في وحدة التكرير بمصفى بيجي",
@@ -115,11 +115,12 @@
       "body": "[서울=뉴시스] 조성우 기자 = 20일 서울 강남구 역삼동의 한 빌딩에서 화재가 발생해 소방대원들이 현장 수습을 하고 있다. 2026.10.20. xconfind@newsis.com",
       "bodyKo": "[서울=뉴시스] 조성우 기자 = 20일 서울 강남구 역삼동의 한 빌딩에서 화재가 발생해 소방대원들이 현장 수습을 하고 있다. 2026.10.20. xconfind@newsis.com",
       "tried": true,
-      "count": 11,
+      "count": 12,
       "sources": [
         "뉴시스",
         "뉴스핌",
         "www.ebn.co.kr",
+        "울산종합일보",
         "기독일보",
         "충남일보"
       ],
@@ -342,7 +343,7 @@
         {
           "titleKo": "현대차 의왕연구소 배터리 연구동 화재... 1시간 30분 만에 진화",
           "source": "한국재난뉴스",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NVExkaERSN3ZPVDVwNC11OE15YWdMa1preFd3RVZVc2tPRzVxM1dyQ2EwNG9nUDNLUkotVUQyU1lmMU4tQ0RURURnc1I3NE5RVHlSc1ptd2Y0c1RIWFh3Y0FuQlVicGVOR3c?oc=5"
+          "link": "https://www.hjnews.co.kr/news/articleView.html?idxno=24975"
         },
         {
           "titleKo": "현대차그룹 의왕연구소 배터리 연구동 화재…인명피해 없어(종합)",
@@ -951,20 +952,6 @@
       ],
       "related": [],
       "tag": "전기·배터리"
-    },
-    {
-      "title": "구조물 가득한 화재현장 내부",
-      "source": "연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9sd1NEcmNXY2ZHMUs5clZwTmFYLUF1eDBrbVQ4Q1k2VTFjMS1oOTB5Uk5sRmYyeFhUQUMtaG15VVRJUV9nVjVyRHFCdUwzWHFSdXJoY1lvQUlzbzItaXBGetIBYEFVX3lxTE9sd1NEcmNXY2ZHMUs5clZwTmFYLUF1eDBrbVQ4Q1k2VTFjMS1oOTB5Uk5sRmYyeFhUQUMtaG15VVRJUV9nVjVyRHFCdUwzWHFSdXJoY1lvQUlzbzItaXBGeg?oc=5",
-      "date": "2026-10-16T05:19:22.000Z",
-      "lang": "ko",
-      "titleKo": "구조물 가득한 화재현장 내부",
-      "count": 1,
-      "sources": [
-        "연합뉴스"
-      ],
-      "related": [],
-      "tag": "기타"
     }
   ]
 }
