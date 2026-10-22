@@ -1,7 +1,7 @@
 {
   "_readme": "이 파일을 수정하면 웹페이지 내용이 자동으로 갱신됩니다. lastIncidentDate를 최근 사고 없는 시작일로 맞추면 무재해 일수가 자동 계산됩니다. 연락처는 반드시 실제 값으로 교체하세요. 공지에 \"image\"(사진 경로)를 넣으면 공지 아래 사진이 붙고, \"popupUntil\":\"YYYY-MM-DD\"를 넣으면 그날까지 상황실을 열 때 사진과 함께 팝업으로 뜹니다 (오늘 그만 보기 가능). 공지에 \"until\":\"YYYY-MM-DD\"를 넣으면 그날이 지나면 화면에서 자동으로 내려갑니다.",
   "site": {
-    "lastIncidentDate": "2026-08-01",
+    "lastIncidentDate": "2026-10-21",
     "monthlyInspections": 128,
     "trainingRate": "96%",
     "incidentCount": 2,
