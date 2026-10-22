@@ -4834,7 +4834,7 @@ body.bg-reveal .set-item.bg-peek-btn { color: var(--cyan); }
 @media (max-width: 520px) { .sg-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } .sg-plate { width: 92px; height: 92px; } .sg-plate.big { width: 200px; height: 200px; } .sg-pv-ko { font-size: 24px; } .sg-pv-dl { grid-template-columns: 1fr; } }
 .sg-card.k-ghs { --sgc: #e0302a; }
 .sg-k.k-ghs { background: rgba(224, 48, 42, 0.15); color: #ff7a75; }
-.sg-ref { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 14px; margin-top: 22px; }
+.sg-ref { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 14px; margin: 4px 0 20px; }
 .sg-ref-box { background: var(--panel-2); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; }
 .sg-ref-box h4 { margin: 0 0 12px; font-size: 16px; color: var(--text); }
 .sg-ref-box h4 small { font-weight: 400; color: var(--text-dim); font-size: 13px; }
