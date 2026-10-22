@@ -10351,3 +10351,226 @@ const lightInk = (function () {
   const open = () => { loadIndex().then(() => { if (mode === "name") nameSearch(); }).catch(() => {}); };
   document.querySelectorAll('.tab-btn[data-view="view-health-drug"]').forEach((b) => b.addEventListener("click", open));
 })();
+
+/* ===================== 안전 계산기 (안전 > 안전 계산기) =====================
+   줄걸이 장력 · 크레인 정격하중 사용률 · 사다리 각도 · 풍속별 작업중지 · 폭염 체감온도
+   입력값은 저장하지 않는다. 기준은 산업안전보건기준에 관한 규칙·고용노동부 가이드 (참고용) */
+(function safetyCalc() {
+  const grid = document.getElementById("scGrid"); if (!grid) return;
+  let built = false;
+  const f1 = (x, d = 1) => (isFinite(x) ? Number(x).toLocaleString("ko-KR", { maximumFractionDigits: d, minimumFractionDigits: d }) : "–");
+  const num = (id) => { const v = parseFloat(String(document.getElementById(id).value).replace(",", ".")); return isFinite(v) ? v : NaN; };
+  const lvl = (k, t) => `<span class="kc-lv sc-${k}">${t}</span>`;
+  const card = (id, ic, title, sub, body) => `<div class="kc-card" id="${id}"><div class="kc-h"><span class="kc-ic">${ic}</span><div><b>${title}</b><small>${sub}</small></div></div>${body}<div class="kc-out" id="${id}Out"></div></div>`;
+  const inp = (id, label, val, unit, attrs = "") => `<label class="kc-in"><span>${label}</span><span class="kc-f"><input id="${id}" type="number" inputmode="decimal" value="${val}" ${attrs}><em>${unit}</em></span></label>`;
+
+  function build() {
+    built = true;
+    grid.innerHTML =
+      card("scSling", "🪝", "줄걸이 장력", "매다는 각도에 따라 한 줄에 걸리는 힘",
+        `<div class="kc-row">${inp("slW", "짐 무게", 5, "t", 'min="0" step="0.1"')}${inp("slA", "두 줄 사이 각도", 60, "°", 'min="0" max="170" step="5"')}</div>
+         <div class="kc-row"><label class="kc-in"><span>줄 수</span><span class="kc-f"><select id="slN"><option value="1">1줄</option><option value="2" selected>2줄</option><option value="3">3줄</option><option value="4">4줄</option></select></span></label>${inp("slWll", "줄 1개 사용하중 (선택)", "", "t", 'min="0" step="0.1" placeholder="예: 3.2"')}</div>
+         <input type="range" id="slR" min="0" max="150" step="5" value="60" class="kc-range" aria-label="각도">`) +
+      card("scCrane", "🏗️", "크레인 정격하중 사용률", "작업반경의 정격하중 대비 실제 들어 올리는 무게",
+        `<div class="kc-row">${inp("crR", "정격하중 (그 반경에서)", 20, "t", 'min="0" step="0.1"')}${inp("crL", "짐 무게", 12, "t", 'min="0" step="0.1"')}</div>
+         <div class="kc-row">${inp("crH", "훅·줄걸이 용구 무게", 0.8, "t", 'min="0" step="0.1"')}<div class="kc-hint">정격하중은 <b>붐 길이·작업반경</b>에 맞는 값을 하중표에서 읽어 넣으세요.</div></div>`) +
+      card("scLadder", "🪜", "사다리 설치 각도", "75° (밑에서 4 : 1) 기준 — 벽에서 얼마나 띄울까",
+        `<div class="kc-row">${inp("ldH", "기대는 높이 (바닥 → 걸치는 곳)", 4, "m", 'min="0" step="0.1"')}${inp("ldL", "또는 사다리 길이", "", "m", 'min="0" step="0.1" placeholder="길이로 계산"')}</div>`) +
+      card("scWind", "🌬️", "풍속별 작업중지", "순간풍속(돌풍)을 넣으면 멈춰야 할 작업을 보여 줘요",
+        `<div class="kc-row">${inp("wdV", "순간풍속", 8, "m/s", 'min="0" step="0.5"')}<div class="kc-btns"><button type="button" class="kc-btn" id="wdNow">📍 비스마야 지금</button><button type="button" class="kc-btn" id="wdMax">24시간 최대 돌풍</button></div></div>`) +
+      card("scHeat", "🌡️", "폭염 체감온도 · 휴식", "기온과 습도로 체감온도를 계산해 휴식 기준을 알려 줘요",
+        `<div class="kc-row">${inp("htT", "기온", 38, "°C", 'step="0.5"')}${inp("htH", "상대습도", 25, "%", 'min="1" max="100" step="1"')}</div>
+         <div class="kc-row"><div class="kc-btns"><button type="button" class="kc-btn" id="htNow">📍 비스마야 지금 날씨 넣기</button></div></div>`);
+    ["slW", "slA", "slN", "slWll"].forEach((id) => document.getElementById(id).addEventListener("input", sling));
+    document.getElementById("slR").addEventListener("input", (e) => { document.getElementById("slA").value = e.target.value; sling(); });
+    document.getElementById("slA").addEventListener("input", (e) => { document.getElementById("slR").value = e.target.value; });
+    ["crR", "crL", "crH"].forEach((id) => document.getElementById(id).addEventListener("input", crane));
+    ["ldH", "ldL"].forEach((id) => document.getElementById(id).addEventListener("input", (e) => { if (e.target.value) document.getElementById(id === "ldH" ? "ldL" : "ldH").value = ""; ladder(); }));
+    document.getElementById("wdV").addEventListener("input", wind);
+    ["htT", "htH"].forEach((id) => document.getElementById(id).addEventListener("input", heat));
+    document.getElementById("wdNow").onclick = () => fill("now");
+    document.getElementById("wdMax").onclick = () => fill("max");
+    document.getElementById("htNow").onclick = () => fill("heat");
+    sling(); crane(); ladder(); wind(); heat();
+  }
+
+  // ---- 줄걸이: 한 줄 장력 = 무게 ÷ (부담하는 줄 수 × cos(각도/2)) · 3·4줄은 보수적으로 2줄이 받는다고 본다
+  function sling() {
+    const W = num("slW"), A = Math.min(170, Math.max(0, num("slA") || 0)), n = Number(document.getElementById("slN").value), wll = num("slWll");
+    const ne = n === 1 ? 1 : 2, k = n === 1 ? 1 : 1 / Math.cos((A / 2) * Math.PI / 180), T = (W / ne) * k;
+    const st = n === 1 ? lvl("ok", "1줄 걸이") : A <= 60 ? lvl("ok", "양호 · 60° 이하") : A <= 90 ? lvl("warn", "주의 · 60~90°") : A < 120 ? lvl("bad", "위험 · 90° 넘음 — 각도를 줄이세요") : lvl("stop", "금지 수준 · 장력 2배 이상");
+    const use = isFinite(wll) && wll > 0 ? T / wll * 100 : NaN;
+    // 그림: 훅에서 두 줄이 벌어져 짐을 매단 모습
+    const h = 70, half = n === 1 ? 0 : Math.min(95, Math.tan((A / 2) * Math.PI / 180) * h);
+    const svg = `<svg viewBox="0 0 220 120" class="kc-svg" aria-hidden="true"><circle cx="110" cy="14" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
+      ${n === 1 ? `<line x1="110" y1="21" x2="110" y2="${21 + h}" stroke="var(--amber)" stroke-width="3"/>` : `<line x1="110" y1="21" x2="${110 - half}" y2="${21 + h}" stroke="var(--amber)" stroke-width="3"/><line x1="110" y1="21" x2="${110 + half}" y2="${21 + h}" stroke="var(--amber)" stroke-width="3"/>
+      <path d="M ${110 - 14 * Math.sin(A / 2 * Math.PI / 180)} ${21 + 14 * Math.cos(A / 2 * Math.PI / 180)} A 14 14 0 0 0 ${110 + 14 * Math.sin(A / 2 * Math.PI / 180)} ${21 + 14 * Math.cos(A / 2 * Math.PI / 180)}" fill="none" stroke="var(--cyan)" stroke-width="2"/><text x="110" y="50" text-anchor="middle" font-size="11" fill="var(--cyan)">${A}°</text>`}
+      <rect x="${Math.max(8, 110 - half - 12)}" y="${21 + h}" width="${Math.min(204, 2 * half + 24)}" height="22" rx="3" fill="var(--panel-2)" stroke="currentColor" stroke-width="2"/><text x="110" y="${36 + h}" text-anchor="middle" font-size="11" fill="currentColor">${f1(W)} t</text></svg>`;
+    document.getElementById("scSlingOut").innerHTML = !(W > 0) ? `<p class="kc-dim">짐 무게를 넣어 주세요.</p>` :
+      `<div class="kc-res">${svg}<div><div class="kc-big">${f1(T, 2)} <small>t / 줄</small></div>${st}
+        <p class="kc-dim">각도 계수 ×${f1(k, 2)} (0° 대비 ${f1((k - 1) * 100, 0)}% 더 걸림)${n > 2 ? " · 3·4줄 걸이는 하중이 고르게 나뉘지 않을 수 있어 2줄이 받는 것으로 보수적으로 계산" : ""}</p>
+        ${isFinite(use) ? `<p>줄 사용하중 대비 <b class="${use > 100 ? "kc-t-bad" : use > 80 ? "kc-t-warn" : ""}">${f1(use, 0)}%</b>${use > 100 ? " — <b>줄이 약해요. 더 굵은 줄·줄 수 늘리기</b>" : ""}</p>` : ""}</div></div>
+       <div class="kc-tbl">${[0, 30, 60, 90, 120].map((a) => `<span class="${Math.abs(a - A) < 15 && n > 1 ? "on" : ""}">${a}° <b>×${f1(1 / Math.cos(a / 2 * Math.PI / 180), 2)}</b></span>`).join("")}</div>`;
+  }
+  // ---- 크레인 사용률
+  function crane() {
+    const R = num("crR"), L = num("crL"), H = num("crH") || 0, tot = L + H, u = tot / R * 100;
+    const st = u > 100 ? lvl("stop", "인양 금지 — 정격하중 초과") : u > 90 ? lvl("bad", "매우 높음 — 인양계획 재검토") : u > 75 ? lvl("warn", "중량물 인양 — 작업계획서·신호수·감독자 입회") : lvl("ok", "보통");
+    document.getElementById("scCraneOut").innerHTML = !(R > 0 && L >= 0) ? `<p class="kc-dim">정격하중과 짐 무게를 넣어 주세요.</p>` :
+      `<div class="kc-big">${f1(u, 0)}<small>%</small></div><div class="kc-bar"><b style="width:${Math.min(100, u)}%" class="${u > 90 ? "bad" : u > 75 ? "warn" : "ok"}"></b><i style="left:75%"></i><i style="left:90%"></i></div>${st}
+       <p class="kc-dim">들어 올리는 총 무게 ${f1(tot, 2)} t (짐 ${f1(L, 2)} + 훅·용구 ${f1(H, 2)}) · 정격하중 ${f1(R, 2)} t · 75%·90% 구분선은 일반적인 현장 기준이에요.</p>`;
+  }
+  // ---- 사다리: 75° → 밑 거리 = 높이 ÷ 4 (정확히는 높이 × cot75° = 0.268) · 걸치는 곳 위로 60cm 이상
+  function ladder() {
+    const H0 = num("ldH"), L0 = num("ldL"), r = 75 * Math.PI / 180;
+    let H, base, L;
+    if (H0 > 0) { H = H0; base = H / Math.tan(r); L = H / Math.sin(r) + 0.6; }
+    else if (L0 > 0) { L = L0; H = (L - 0.6) * Math.sin(r); base = (L - 0.6) * Math.cos(r); }
+    const out = document.getElementById("scLadderOut");
+    if (!(H > 0)) { out.innerHTML = `<p class="kc-dim">높이나 사다리 길이를 넣어 주세요.</p>`; return; }
+    const s = 80 / Math.max(H, 1), bx = 40, by = 100, tx = bx, ty = by - H * s, lx = bx + base * s;
+    out.innerHTML = `<div class="kc-res"><svg viewBox="0 0 200 112" class="kc-svg" aria-hidden="true"><line x1="${bx}" y1="6" x2="${bx}" y2="${by}" stroke="currentColor" stroke-width="4"/><line x1="10" y1="${by}" x2="190" y2="${by}" stroke="currentColor" stroke-width="2"/>
+        <line x1="${lx}" y1="${by}" x2="${tx}" y2="${ty - 0.6 * s * 0.96}" stroke="var(--amber)" stroke-width="4"/><line x1="${bx}" y1="${by + 6}" x2="${lx}" y2="${by + 6}" stroke="var(--cyan)" stroke-width="2"/>
+        <text x="${(bx + lx) / 2}" y="${by + 2 - 4}" font-size="10" text-anchor="middle" fill="var(--cyan)">${f1(base, 2)} m</text><text x="${lx + 6}" y="${by - 6}" font-size="10" fill="currentColor">75°</text></svg>
+      <div><div class="kc-big">${f1(base, 2)} <small>m 띄우기</small></div>${lvl("ok", "벽에서 사다리 발까지")}
+      <p>필요한 사다리 길이 <b>${f1(L, 1)} m 이상</b> (걸치는 곳 위로 60cm 더)<br>닿는 높이 ${f1(H, 2)} m</p></div></div>
+      <p class="kc-dim">어림셈: <b>높이 4m마다 1m</b> 띄우기 · 기울기는 75° 이하 (산업안전보건기준에 관한 규칙 제24조) · 미끄럼 방지 발판·상단 고정 확인</p>`;
+  }
+  // ---- 풍속 (순간풍속 m/s)
+  const WIND = [
+    [10, "철골 세우기·해체 작업", "풍속 10m/s 이상이면 중지 (기준규칙 제383조)", ">="],
+    [10, "타워크레인 설치·수리·점검·해체", "순간풍속 10m/s 넘으면 중지 (제37조)", ">"],
+    [12.5, "고소작업대 (MEWP)", "보통 12.5m/s 넘으면 사용 중지 — 장비 명판·매뉴얼 기준 확인", ">"],
+    [20, "타워크레인 운전 작업", "순간풍속 20m/s 넘으면 중지 (제37조)", ">"],
+    [30, "옥외 주행 크레인", "순간풍속 30m/s 넘는 바람 예상 시 이탈방지 조치, 분 뒤에는 점검 (제140·143조)", ">"],
+    [35, "건설용 리프트·승강기", "순간풍속 35m/s 넘는 바람 예상 시 받침 늘리는 등 붕괴 방지 (제154조)", ">"],
+  ];
+  function wind() {
+    const v = num("wdV"), out = document.getElementById("scWindOut");
+    if (!(v >= 0)) { out.innerHTML = `<p class="kc-dim">순간풍속을 넣어 주세요.</p>`; return; }
+    const feel = v < 5 ? "나뭇잎이 흔들리는 정도" : v < 10 ? "작은 나무가 흔들리고 먼지가 날림" : v < 14 ? "큰 나뭇가지가 흔들리고 우산 쓰기 어려움" : v < 20 ? "걷기 어렵고 작은 가지가 부러짐" : "지붕·간판이 날아갈 수 있는 강풍";
+    const hit = WIND.filter(([t, , , op]) => (op === ">=" ? v >= t : v > t));
+    out.innerHTML = `<div class="kc-big">${f1(v, 1)} <small>m/s · ${f1(v * 3.6, 0)} km/h</small></div><p class="kc-dim">${feel}</p>
+      <ul class="kc-list">${WIND.map(([t, n, d, op]) => { const on = op === ">=" ? v >= t : v > t; return `<li class="${on ? "stop" : ""}">${on ? "⛔" : "✅"} <b>${n}</b> <small>${d}</small></li>`; }).join("")}</ul>
+      ${hit.length ? "" : `<p class="kc-dim">법정 중지 기준에는 안 걸려요. 그래도 <b>이동식 크레인·고소작업</b>은 장비 매뉴얼의 허용 풍속을 확인하세요.</p>`}
+      <p class="kc-dim">비·눈·바람 등 악천후로 위험이 예상되면 기준 풍속 아래라도 작업을 멈출 수 있어요 (제37조).</p>`;
+  }
+  // ---- 폭염: 기상청 여름철 체감온도 (Stull 습구온도) · 고용노동부 단계
+  function heat() {
+    const Ta = num("htT"), RH = Math.min(100, Math.max(1, num("htH"))), out = document.getElementById("scHeatOut");
+    if (!isFinite(Ta) || !isFinite(RH)) { out.innerHTML = `<p class="kc-dim">기온과 습도를 넣어 주세요.</p>`; return; }
+    const at = Math.atan;
+    const Tw = Ta * at(0.151977 * Math.sqrt(RH + 8.313659)) + at(Ta + RH) - at(RH - 1.67633) + 0.00391838 * Math.pow(RH, 1.5) * at(0.023101 * RH) - 4.686035;
+    const F = -0.2442 + 0.55399 * Tw + 0.45535 * Ta - 0.0022 * Tw * Tw + 0.00278 * Tw * Ta + 3.0;
+    const L = F >= 38 ? ["stop", "위험", "매시간 15분 이상 휴식 · 14~17시 옥외작업 중지 (긴급작업 제외)"] : F >= 35 ? ["bad", "경고", "매시간 10~15분 휴식 · 14~17시 무더위 시간대 작업시간 조정"] : F >= 33 ? ["warn", "주의", "2시간마다 20분 이상 휴식 (법정 의무) · 가능하면 매시간 10분"] : F >= 31 ? ["note", "관심", "물·그늘·휴식 준비 · 작업자 건강 상태 확인"] : ["ok", "정상", "평소처럼 물 자주 마시기"];
+    out.innerHTML = `<div class="kc-big">${f1(F, 1)}<small>°C 체감</small></div>${lvl(L[0], "폭염 " + L[1])}<p><b>${L[2]}</b></p>
+      <div class="kc-bar heat"><b style="width:${Math.max(0, Math.min(100, (F - 25) / 20 * 100))}%"></b>${[31, 33, 35, 38].map((x) => `<i style="left:${(x - 25) / 20 * 100}%" title="${x}°C"></i>`).join("")}</div>
+      <p class="kc-dim">단계: 관심 31 · 주의 33 · 경고 35 · 위험 38℃ (체감온도) · 물·그늘·휴식 3대 수칙 · 체감온도 33℃ 이상이면 2시간마다 20분 이상 휴식이 법정 의무예요 (2025.7 시행). 이라크처럼 건조하면 체감온도가 실제 기온보다 낮게 나올 수 있으니 햇볕 아래 작업은 한 단계 높여 보세요.</p>`;
+  }
+  // ---- 비스마야 현재 날씨 넣기 (open-meteo)
+  let wxCache = null;
+  async function fill(kind) {
+    try {
+      if (!wxCache || Date.now() - wxCache.at > 10 * 60000) {
+        const r = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${BISMAYAH_LAT}&longitude=${BISMAYAH_LON}&wind_speed_unit=ms&current=temperature_2m,relative_humidity_2m,wind_gusts_10m&hourly=wind_gusts_10m&forecast_hours=24&timezone=Asia%2FBaghdad`);
+        const d = await r.json(); const hs = ((d.hourly && d.hourly.wind_gusts_10m) || []).filter((x) => x != null);
+        wxCache = { at: Date.now(), t: d.current.temperature_2m, h: d.current.relative_humidity_2m, g: d.current.wind_gusts_10m, gmax: hs.length ? Math.max(...hs) : null };
+      }
+      const w = wxCache;
+      if (kind === "heat") { document.getElementById("htT").value = w.t; document.getElementById("htH").value = w.h; heat(); }
+      else { const v = kind === "max" ? w.gmax : w.g; if (v == null) throw new Error("no data"); document.getElementById("wdV").value = Math.round(v * 10) / 10; wind(); }
+    } catch (e) { alert("지금 날씨를 불러오지 못했어요. 숫자를 직접 넣어 주세요."); }
+  }
+  const open = () => { if (!built) build(); };
+  document.querySelectorAll('.tab-btn[data-view="view-calc"]').forEach((b) => b.addEventListener("click", open));
+  if (document.getElementById("view-calc").classList.contains("active")) open();
+})();
+
+/* ===================== 안전표지 사전 (안전 > 안전표지 사전) =====================
+   산업안전보건법 시행규칙 별표 6 안전보건표지 + 현장에서 자주 쓰는 표지 · 한국어·English·العربية
+   그림은 이모지를 단색 그림으로 바꿔 표지 모양(원·삼각형·사각형) 안에 넣은 간단한 표현 */
+(function safetySigns() {
+  const gridEl = document.getElementById("sgGrid"); if (!gridEl) return;
+  const K = { no: "금지표지", warn: "경고표지", must: "지시표지", info: "안내표지", extra: "현장 추가" };
+  const KD = { no: "빨간 원·사선 — 하면 안 되는 행동", warn: "노란 삼각형 — 위험이 있는 곳·물질", must: "파란 원 — 반드시 해야 하는 것", info: "녹색 사각형 — 안전·응급 시설 위치", extra: "법정 표지는 아니지만 현장에서 자주 쓰는 표지" };
+  // [종류, 그림, 한국어, English, العربية, 설명(어디에 쓰나), 그림 아래 작은 글씨]
+  const S = [
+    ["no", "🧍", "출입금지", "No entry", "ممنوع الدخول", "허가받지 않은 사람이 들어가면 안 되는 곳 (위험구역·작업반경)"],
+    ["no", "🚶", "보행금지", "No pedestrians", "ممنوع مرور المشاة", "사람이 걸어 다니면 안 되는 길 (장비 통로 등)"],
+    ["no", "🚚", "차량통행금지", "No vehicles", "ممنوع مرور المركبات", "차량·장비가 들어가면 안 되는 곳"],
+    ["no", "✋", "사용금지", "Do not use", "ممنوع الاستخدام", "고장·점검 중인 기계·공구 (잠금·표지 LOTO)"],
+    ["no", "🚜", "탑승금지", "No riding", "ممنوع الركوب", "사람이 타면 안 되는 장비 (화물용 리프트·지게차 포크 등)"],
+    ["no", "🚬", "금연", "No smoking", "ممنوع التدخين", "흡연 금지 장소 (사무실·숙소·위험물 근처)"],
+    ["no", "🔥", "화기금지", "No open flames", "ممنوع استخدام اللهب المكشوف", "불꽃·불씨를 만들면 안 되는 곳 (유류·가스 저장소)"],
+    ["no", "📦", "물체이동금지", "Do not move", "ممنوع تحريك الأشياء", "정해진 자리에서 옮기면 안 되는 물건·설비"],
+    ["warn", "🔥", "인화성물질 경고", "Flammable material", "خطر: مواد قابلة للاشتعال", "기름·시너·가스 등 불붙기 쉬운 물질"],
+    ["warn", "🔆", "산화성물질 경고", "Oxidizing material", "خطر: مواد مؤكسدة", "다른 물질을 더 잘 타게 만드는 물질 (산소통 등)"],
+    ["warn", "💥", "폭발성물질 경고", "Explosive material", "خطر: مواد متفجرة", "폭발할 수 있는 물질 (화약·발파 자재)"],
+    ["warn", "☠️", "급성독성물질 경고", "Toxic material", "خطر: مواد سامة", "조금만 마시거나 닿아도 해로운 물질"],
+    ["warn", "🧪", "부식성물질 경고", "Corrosive material", "خطر: مواد أكّالة", "피부·금속을 녹이는 물질 (산·알칼리)"],
+    ["warn", "☢️", "방사성물질 경고", "Radioactive material", "خطر: مواد مشعة", "방사선이 나오는 물질·장비 (비파괴검사)"],
+    ["warn", "⚡", "고압전기 경고", "High voltage", "خطر: جهد كهربائي عالٍ", "감전 위험 — 분전반·변전설비·가공선 근처"],
+    ["warn", "🏗️", "매달린 물체 경고", "Suspended load", "خطر: حمولة معلّقة", "크레인으로 들어 올린 짐 아래 — 들어가지 않기"],
+    ["warn", "🪨", "낙하물 경고", "Falling objects", "خطر: سقوط أجسام", "위에서 물건이 떨어질 수 있는 곳 (비계·고소작업 아래)"],
+    ["warn", "🌡️", "고온 경고", "Hot surface / high temperature", "خطر: درجة حرارة عالية", "뜨거운 설비·표면 (보일러·용접 부재)"],
+    ["warn", "❄️", "저온 경고", "Low temperature", "خطر: درجة حرارة منخفضة", "아주 차가운 설비·물질 (냉동창고·액화가스)"],
+    ["warn", "🤸", "몸균형상실 경고", "Loss of balance (slip / trip)", "خطر: فقدان التوازن", "미끄러지거나 걸려 넘어지기 쉬운 곳"],
+    ["warn", "🔦", "레이저광선 경고", "Laser beam", "خطر: أشعة ليزر", "레이저 측량기·장비 — 눈으로 직접 보지 않기"],
+    ["warn", "🫁", "발암성·생식독성 등 경고", "Health hazard (carcinogen etc.)", "خطر: مواد مسرطنة وضارة بالصحة", "오래 노출되면 암·질병을 일으킬 수 있는 물질"],
+    ["warn", "❗", "위험장소 경고", "Danger area", "خطر: منطقة خطرة", "그 밖의 위험한 곳 (개구부·굴착 주변)"],
+    ["must", "🥽", "보안경 착용", "Wear safety goggles", "يجب ارتداء نظارات السلامة", "그라인더·절단·약품 작업"],
+    ["must", "<svg viewBox=\"0 0 48 48\" class=\"sg-svg\"><path d=\"M14 10c3-5 17-5 20 0l3 11c1 6-4 13-13 13S10 27 11 21z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"13\" cy=\"34\" r=\"7\" fill=\"currentColor\"/><circle cx=\"35\" cy=\"34\" r=\"7\" fill=\"currentColor\"/><path d=\"M18 30h12l-2 8h-8z\" fill=\"currentColor\"/></svg>", "방독마스크 착용", "Wear gas mask", "يجب ارتداء قناع الغاز", "유해가스·증기가 나오는 작업 (도장·용제)", "GAS"],
+    ["must", "<svg viewBox=\"0 0 48 48\" class=\"sg-svg\"><path d=\"M14 10c3-5 17-5 20 0l3 11c1 6-4 13-13 13S10 27 11 21z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M12 24c4 2 20 2 24 0l-2 12c-2 4-18 4-20 0z\" fill=\"currentColor\"/><path d=\"M6 22l7 4M42 22l-7 4\" stroke=\"currentColor\" stroke-width=\"2.5\"/></svg>", "방진마스크 착용", "Wear dust mask", "يجب ارتداء قناع الغبار", "먼지가 많은 작업 (절단·연마·모래바람)", "DUST"],
+    ["must", "🛡️", "보안면 착용", "Wear face shield", "يجب ارتداء واقي الوجه", "용접·그라인더 불티, 약품이 튈 수 있는 작업"],
+    ["must", "⛑️", "안전모 착용", "Wear safety helmet", "يجب ارتداء خوذة السلامة", "현장 안 어디서나 (턱끈까지 매기)"],
+    ["must", "🎧", "귀마개 착용", "Wear ear protection", "يجب ارتداء واقيات الأذن", "소음이 큰 곳 (85dB 이상 — 착암·발전기 주변)"],
+    ["must", "🥾", "안전화 착용", "Wear safety shoes", "يجب ارتداء حذاء السلامة", "현장 안 어디서나 (못 밟힘·물체 낙하)"],
+    ["must", "🧤", "안전장갑 착용", "Wear safety gloves", "يجب ارتداء قفازات السلامة", "날카로운 자재·약품·전기 작업"],
+    ["must", "🦺", "안전복 착용", "Wear protective clothing", "يجب ارتداء ملابس واقية", "약품·불티·야간 작업 (반사 조끼 포함)"],
+    ["info", "✚", "녹십자표지", "Safety first (green cross)", "شعار السلامة (الصليب الأخضر)", "안전을 강조하는 곳 — 현장 출입구·게시판", "", "cross"],
+    ["info", "✚", "응급구호표지", "First aid", "الإسعافات الأولية", "구급함·응급처치 장소"],
+    ["info", "🛏️", "들것", "Stretcher", "نقالة", "들것이 있는 곳"],
+    ["info", "🚿", "세안장치", "Eyewash station", "محطة غسل العيون", "눈에 약품·이물질이 들어갔을 때 씻는 곳"],
+    ["info", "🧰", "비상용기구", "Emergency equipment", "معدات الطوارئ", "비상용 장비 보관 장소"],
+    ["info", "🏃", "비상구", "Emergency exit", "مخرج الطوارئ", "비상시 나가는 문"],
+    ["info", "🏃", "좌측비상구", "Emergency exit (left)", "مخرج الطوارئ (يسار)", "왼쪽으로 가면 비상구", "←"],
+    ["info", "🏃", "우측비상구", "Emergency exit (right)", "مخرج الطوارئ (يمين)", "오른쪽으로 가면 비상구", "→"],
+    ["extra", "🪢", "안전대 착용", "Wear safety harness", "يجب ارتداء حزام الأمان", "높이 2m 이상 작업 — 안전대 걸고 작업", "", "must"],
+    ["extra", "🧯", "소화기", "Fire extinguisher", "طفاية حريق", "소화기 위치 (빨간 사각형 소방 표지)", "", "fire"],
+    ["extra", "👥", "비상 집결지", "Assembly point", "نقطة التجمع", "대피 후 모여서 인원을 확인하는 곳", "", "info"],
+    ["extra", "🚧", "작업 중 · 접근주의", "Work in progress — keep clear", "العمل جارٍ — ابتعد", "작업 구역 경계 (바리케이드·테이프)", "", "warn"],
+  ];
+  const shape = (s) => s[7] || s[0];
+  const signHtml = (s, big) => `<div class="sg-sign k-${shape(s)}${big ? " big" : ""}" aria-hidden="true"><span class="sg-ic">${s[1]}</span>${s[6] ? `<span class="sg-sub">${s[6]}</span>` : ""}</div>`;
+  let kind = "all", q = "", built = false, list = S, cur = 0, pv = null;
+  function draw() {
+    const t = q.trim().toLowerCase();
+    list = S.filter((s) => (kind === "all" || s[0] === kind) && (!t || (s[2] + " " + s[3] + " " + s[4] + " " + s[5]).toLowerCase().includes(t)));
+    gridEl.innerHTML = list.length ? list.map((s, i) => `<button type="button" class="sg-card" data-i="${i}">${signHtml(s)}<b>${escapeHtml(s[2])}</b><span class="sg-en">${escapeHtml(s[3])}</span><span class="sg-ar" lang="ar" dir="rtl">${escapeHtml(s[4])}</span><small class="sg-k k-${s[0]}">${K[s[0]]}</small></button>`).join("") : `<p class="kc-dim">찾는 표지가 없어요.</p>`;
+  }
+  function show(i) {
+    if (!list.length) return; cur = (i + list.length) % list.length; const s = list[cur];
+    if (!pv) {
+      pv = document.createElement("div"); pv.className = "sa-pv-bg sg-pv-bg";
+      pv.addEventListener("click", (e) => { if (e.target === pv || e.target.closest(".sa-pv-x")) pv.hidden = true; else if (e.target.closest("[data-sg]")) show(cur + Number(e.target.closest("[data-sg]").dataset.sg)); });
+      document.addEventListener("keydown", (e) => { if (!pv || pv.hidden) return; if (e.key === "Escape") pv.hidden = true; if (e.key === "ArrowRight") show(cur + 1); if (e.key === "ArrowLeft") show(cur - 1); });
+      document.body.appendChild(pv);
+    }
+    pv.innerHTML = `<div class="sa-pv sg-pv" role="dialog" aria-modal="true"><div class="sa-pv-h"><span class="sg-k k-${s[0]}">${K[s[0]]}</span><span class="sa-pv-n">${cur + 1} / ${list.length}</span><button type="button" class="sa-pv-x" aria-label="닫기">✕</button></div>
+      <div class="sg-pv-body">${signHtml(s, true)}<div class="sg-pv-t"><div class="sg-pv-ko">${escapeHtml(s[2])}</div><div class="sg-pv-en">${escapeHtml(s[3])}</div><div class="sg-pv-ar" lang="ar" dir="rtl">${escapeHtml(s[4])}</div></div></div>
+      <p class="sg-pv-d">📍 ${escapeHtml(s[5])}</p><p class="kc-dim">${escapeHtml(KD[s[0]])}</p>
+      <div class="sa-pv-f"><button type="button" data-sg="-1">‹ 이전</button><button type="button" data-sg="1">다음 ›</button></div></div>`;
+    pv.hidden = false;
+  }
+  function build() {
+    built = true;
+    document.getElementById("sgChips").innerHTML = [["all", "전체"]].concat(Object.entries(K)).map(([k, n]) => `<button type="button" class="sg-chip${k === kind ? " on" : ""}" data-k="${k}">${n} <small>${k === "all" ? S.length : S.filter((s) => s[0] === k).length}</small></button>`).join("");
+    document.getElementById("sgChips").addEventListener("click", (e) => { const b = e.target.closest("[data-k]"); if (!b) return; kind = b.dataset.k; document.querySelectorAll("#sgChips .sg-chip").forEach((x) => x.classList.toggle("on", x === b)); draw(); });
+    document.getElementById("sgQ").addEventListener("input", (e) => { q = e.target.value; draw(); });
+    gridEl.addEventListener("click", (e) => { const c = e.target.closest(".sg-card"); if (c) show(Number(c.dataset.i)); });
+    draw();
+  }
+  const open = () => { if (!built) build(); };
+  document.querySelectorAll('.tab-btn[data-view="view-signs"]').forEach((b) => b.addEventListener("click", open));
+  if (document.getElementById("view-signs").classList.contains("active")) open();
+})();
