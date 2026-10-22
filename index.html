@@ -49,8 +49,8 @@ html.intro-pending::after {
 <link rel="icon" type="image/png" href="assets/icon/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=20261022c">
-<link rel="stylesheet" href="light.css?v=20261022c">
+<link rel="stylesheet" href="style.css?v=20261022d">
+<link rel="stylesheet" href="light.css?v=20261022d">
 <script>try{if(localStorage.getItem("hseTheme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -130,6 +130,7 @@ html.intro-pending::after {
       <button class="tab-btn" data-view="view-procedures">KOSHA GUIDE</button>
       <button class="tab-btn" data-view="view-calc">안전 계산기</button>
       <button class="tab-btn" data-view="view-signs">안전표지 사전</button>
+      <button class="tab-btn" data-view="view-dict">안전 한영사전</button>
     </div>
     <div class="sub-row" data-group="health" hidden>
       <button class="tab-btn" data-view="view-health-clinic">클리닉 진료현황</button>
@@ -1067,6 +1068,29 @@ html.intro-pending::after {
 </main>
 </div>
 
+<!-- 안전 한영사전: 안전보건공단 「산업안전보건 한영사전」(2021) 3,218개 용어 검색 (safety-dict.json) -->
+<div id="view-dict" class="view">
+<main class="grid">
+  <section class="panel kd-panel" aria-label="산업안전보건 한영사전" style="grid-column: 1 / -1;">
+    <div class="kd-hero">
+      <div>
+        <div class="panel-label" style="margin-bottom:6px">OSH KOREAN–ENGLISH DICTIONARY · 산업안전보건 한영사전</div>
+        <h2 class="kd-title">현장 용어, 영어로 바로 찾기</h2>
+        <p class="kd-sub">한국어나 영어 어느 쪽으로 쳐도 찾아요. 영어 뜻을 누르면 <b>복사</b>되고, 🔊를 누르면 <b>발음</b>을 들려줘요.</p>
+      </div>
+      <div class="kd-count"><b id="kdN">3,218</b><small>개 용어</small></div>
+    </div>
+    <div class="kd-search"><span>🔎</span><input type="search" id="kdQ" placeholder="예: 비계, 추락, scaffold, confined space" autocomplete="off" spellcheck="false"><kbd>/</kbd></div>
+    <div class="kd-idx" id="kdIdx"></div>
+    <div class="kd-feat" id="kdFeat"></div>
+    <div class="kd-meta" id="kdMeta"></div>
+    <div class="kd-list" id="kdList"><p class="kd-dim">사전 불러오는 중…</p></div>
+    <button type="button" class="kd-more" id="kdMore" hidden>더 보기</button>
+    <p class="source-note">출처: 안전보건공단 「산업안전보건 한영사전」(Occupational Safety &amp; Health Korean-English Dictionary, 2021) · 사전에 실린 용어와 번역을 그대로 옮겼어요 (원문의 오탈자 포함).</p>
+  </section>
+</main>
+</div>
+
 <!-- 안전표지 사전: 산업안전보건법 시행규칙 별표 6 안전보건표지 + 현장에서 자주 쓰는 표지 (한국어·English·العربية) -->
 <div id="view-signs" class="view">
 <main class="grid">
@@ -1250,7 +1274,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261022c"></script>
+<script src="script.js?v=20261022d"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

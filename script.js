@@ -10576,3 +10576,88 @@ const lightInk = (function () {
   document.querySelectorAll('.tab-btn[data-view="view-signs"]').forEach((b) => b.addEventListener("click", open));
   if (document.getElementById("view-signs").classList.contains("active")) open();
 })();
+
+/* ===================== 안전 한영사전 (안전 > 안전 한영사전) =====================
+   안전보건공단 「산업안전보건 한영사전」(2021) 3,218개 용어 · safety-dict.json
+   한국어(띄어쓰기 무시)·영어 모두 검색 · 영어 뜻 누르면 복사 · 🔊 발음 (브라우저 음성) */
+(function safetyDict() {
+  const listEl = document.getElementById("kdList"); if (!listEl) return;
+  let T = null, loading = null, q = "", idx = "", shown = 60;
+  const INDEX = ["가", "나", "다", "라", "마", "바", "사", "아", "자", "차", "카", "타", "파", "하", "A–Z"];
+  const FEAT = ["비계", "안전대", "추락", "개구부", "작업발판", "안전난간", "밀폐공간", "감전", "접지", "크레인", "지게차", "고소작업대", "위험성평가", "작업허가", "보호구", "안전모", "안전화", "중대재해", "작업중지", "소화기", "응급처치", "열사병", "근골격계질환", "잠금장치"];
+  const nk = (s) => String(s).replace(/\s+/g, "").toLowerCase();
+  // 한글 첫 글자의 초성 묶음 (가~하) · 영문·숫자는 A–Z
+  const CHO = ["가", "가", "나", "다", "다", "라", "마", "바", "바", "사", "사", "아", "자", "자", "차", "카", "타", "파", "하"];
+  const group = (k) => { const c = k.charCodeAt(0); return c >= 0xac00 && c <= 0xd7a3 ? CHO[Math.floor((c - 0xac00) / 588)] : "A–Z"; };
+  const hl = (t, w) => { if (!w) return escapeHtml(t); const i = t.toLowerCase().indexOf(w.toLowerCase()); return i < 0 ? escapeHtml(t) : escapeHtml(t.slice(0, i)) + "<mark>" + escapeHtml(t.slice(i, i + w.length)) + "</mark>" + escapeHtml(t.slice(i + w.length)); };
+  function load() {
+    if (T) return Promise.resolve(T);
+    return loading || (loading = fetch("safety-dict.json").then((r) => r.json()).then((d) => {
+      T = d.terms.map(([k, e]) => ({ k, e, kn: nk(k), el: e.toLowerCase(), g: group(k) }));
+      document.getElementById("kdN").textContent = T.length.toLocaleString();
+      return T;
+    }));
+  }
+  function search() {
+    const w = q.trim(), wn = nk(w), wl = w.toLowerCase();
+    let rows;
+    if (w) {
+      rows = T.map((t) => {
+        let r = 9;
+        if (t.kn === wn || t.el === wl) r = 0;
+        else if (t.kn.startsWith(wn)) r = 1;
+        else if (new RegExp("(^|[^a-z])" + wl.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).test(t.el)) r = 2;
+        else if (t.kn.includes(wn)) r = 3;
+        else if (t.el.includes(wl)) r = 4;
+        return r < 9 ? { t, r } : null;
+      }).filter(Boolean).sort((a, b) => a.r - b.r || a.t.k.length - b.t.k.length || a.t.k.localeCompare(b.t.k, "ko")).map((x) => x.t);
+    } else rows = idx ? T.filter((t) => t.g === idx) : [];
+    return rows;
+  }
+  function draw() {
+    if (!T) return;
+    const rows = search(), w = q.trim();
+    document.getElementById("kdFeat").hidden = !!(w || idx);
+    document.getElementById("kdMeta").innerHTML = w ? `<b>"${escapeHtml(w)}"</b> 검색 결과 ${rows.length.toLocaleString()}개` : idx ? `<b>${idx}</b> 로 시작하는 용어 ${rows.length.toLocaleString()}개` : "";
+    if (!w && !idx) { listEl.innerHTML = ""; document.getElementById("kdMore").hidden = true; return; }
+    listEl.innerHTML = rows.length ? rows.slice(0, shown).map((t) => `<div class="kd-row"><div class="kd-ko">${hl(t.k, w)}</div>
+        <button type="button" class="kd-en" data-copy="${escapeHtml(t.e)}" title="눌러서 복사">${hl(t.e, w)}</button>
+        <button type="button" class="kd-say" data-say="${escapeHtml(t.e)}" title="영어 발음 듣기" aria-label="발음">🔊</button></div>`).join("")
+      : `<p class="kd-dim">찾는 용어가 없어요. 띄어쓰기를 빼거나 더 짧게 (예: "안전난간" → "난간") 찾아보세요.</p>`;
+    document.getElementById("kdMore").hidden = rows.length <= shown;
+    document.getElementById("kdMore").textContent = `더 보기 (${(rows.length - shown).toLocaleString()}개 남음)`;
+  }
+  function featured() {
+    const m = {}; T.forEach((t) => { if (!m[t.kn]) m[t.kn] = t; });
+    document.getElementById("kdFeat").innerHTML = `<div class="kd-feat-h">⭐ 현장에서 자주 쓰는 말</div><div class="kd-cards">` +
+      FEAT.map((f) => m[nk(f)]).filter(Boolean).map((t) => `<button type="button" class="kd-card" data-copy="${escapeHtml(t.e)}" title="눌러서 영어 복사"><b>${escapeHtml(t.k)}</b><span>${escapeHtml(t.e)}</span></button>`).join("") + `</div>`;
+  }
+  function toast(msg) {
+    let el = document.getElementById("kdToast");
+    if (!el) { el = document.createElement("div"); el.id = "kdToast"; el.className = "kd-toast"; document.body.appendChild(el); }
+    el.textContent = msg; el.classList.add("on"); clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove("on"), 1600);
+  }
+  function build() {
+    document.getElementById("kdIdx").innerHTML = INDEX.map((g) => `<button type="button" data-g="${g}">${g}</button>`).join("");
+    document.getElementById("kdIdx").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-g]"); if (!b) return;
+      idx = idx === b.dataset.g ? "" : b.dataset.g; q = ""; document.getElementById("kdQ").value = ""; shown = 60;
+      document.querySelectorAll("#kdIdx button").forEach((x) => x.classList.toggle("on", x.dataset.g === idx)); draw();
+    });
+    let tm = null;
+    document.getElementById("kdQ").addEventListener("input", (e) => { clearTimeout(tm); tm = setTimeout(() => { q = e.target.value; if (q.trim()) { idx = ""; document.querySelectorAll("#kdIdx button").forEach((x) => x.classList.remove("on")); } shown = 60; draw(); }, 120); });
+    document.getElementById("kdMore").onclick = () => { shown += 120; draw(); };
+    document.getElementById("view-dict").addEventListener("click", (e) => {
+      const c = e.target.closest("[data-copy]"), s = e.target.closest("[data-say]");
+      if (s) { try { const u = new SpeechSynthesisUtterance(s.dataset.say.replace(/:.*$/, "")); u.lang = "en-US"; u.rate = 0.9; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch (er) { toast("이 브라우저는 발음 듣기를 지원하지 않아요"); } return; }
+      if (c) { const v = c.dataset.copy; (navigator.clipboard ? navigator.clipboard.writeText(v) : Promise.reject()).then(() => toast("복사했어요 · " + v)).catch(() => toast(v)); }
+    });
+    // '/' 키로 검색칸 바로 가기 (사전 탭을 보고 있을 때만)
+    document.addEventListener("keydown", (e) => { if (e.key === "/" && document.getElementById("view-dict").classList.contains("active") && document.activeElement.tagName !== "INPUT") { e.preventDefault(); document.getElementById("kdQ").focus(); } });
+    featured(); draw();
+  }
+  let built = false;
+  const open = () => { load().then(() => { if (!built) { built = true; build(); } setTimeout(() => document.getElementById("kdQ").focus(), 50); }).catch(() => { listEl.innerHTML = `<p class="kd-dim">사전을 불러오지 못했어요. 새로고침해 주세요.</p>`; }); };
+  document.querySelectorAll('.tab-btn[data-view="view-dict"]').forEach((b) => b.addEventListener("click", open));
+  if (document.getElementById("view-dict").classList.contains("active")) open();
+})();

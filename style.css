@@ -4840,3 +4840,41 @@ body.bg-reveal .set-item.bg-peek-btn { color: var(--cyan); }
 .sg-pv-ar { font-size: 26px; color: var(--text); font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, sans-serif; }
 .sg-pv-d { font-size: 16px; color: var(--text); margin: 6px 0 2px; }
 @media (max-width: 520px) { .sg-grid { grid-template-columns: repeat(2, 1fr); } .sg-sign.big { --s: 150px; } .sg-pv-ko { font-size: 26px; } }
+
+/* ===================== 안전 한영사전 ===================== */
+.kd-hero { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 16px; }
+.kd-title { margin: 0; font-size: 26px; color: var(--text); letter-spacing: -0.02em; }
+.kd-sub { margin: 6px 0 0; color: var(--text-muted); font-size: 14.5px; }
+.kd-count { text-align: right; flex: none; }
+.kd-count b { display: block; font: 800 34px var(--font-mono); color: var(--cyan); line-height: 1; }
+.kd-count small { color: var(--text-dim); font-size: 13px; }
+.kd-search { display: flex; align-items: center; gap: 10px; background: var(--panel-2); border: 1.5px solid var(--border); border-radius: 14px; padding: 4px 14px; transition: border-color .15s, box-shadow .15s; }
+.kd-search:focus-within { border-color: var(--cyan); box-shadow: 0 0 0 4px rgba(53, 208, 192, 0.12); }
+.kd-search span { font-size: 18px; opacity: .7; }
+.kd-search input { flex: 1; min-width: 0; background: transparent; border: 0; outline: none; color: var(--text); font-size: 19px; padding: 12px 0; }
+.kd-search kbd { font: 12px var(--font-mono); color: var(--text-dim); border: 1px solid var(--border); border-radius: 5px; padding: 1px 6px; }
+.kd-idx { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 4px; }
+.kd-idx button { min-width: 38px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text-muted); border-radius: 8px; padding: 6px 9px; font-size: 14px; font-weight: 700; cursor: pointer; }
+.kd-idx button:hover { border-color: var(--cyan); color: var(--text); }
+.kd-idx button.on { background: var(--cyan); border-color: var(--cyan); color: #0a0e13; }
+.kd-feat-h { font-size: 13px; color: var(--text-dim); margin: 16px 0 8px; font-weight: 700; }
+.kd-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 8px; }
+.kd-card { text-align: left; background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; cursor: pointer; color: var(--text); display: flex; flex-direction: column; gap: 3px; font: inherit; }
+.kd-card:hover { border-color: var(--cyan); transform: translateY(-1px); }
+.kd-card b { font-size: 15px; }
+.kd-card span { font-size: 13px; color: var(--cyan); }
+.kd-meta { margin: 14px 0 6px; font-size: 13.5px; color: var(--text-muted); }
+.kd-list { display: flex; flex-direction: column; }
+.kd-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) 36px; gap: 12px; align-items: center; padding: 10px 6px; border-bottom: 1px solid var(--border-soft); }
+.kd-row:hover { background: rgba(255,255,255,0.025); }
+.kd-ko { font-size: 16px; font-weight: 700; color: var(--text); }
+.kd-en { text-align: left; background: none; border: 0; padding: 0; font: 600 15.5px var(--font-body); color: var(--cyan); cursor: copy; }
+.kd-en:hover { text-decoration: underline; }
+.kd-say { background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: 8px; width: 34px; height: 30px; cursor: pointer; font-size: 14px; }
+.kd-say:hover { border-color: var(--cyan); }
+.kd-row mark { background: rgba(242, 169, 59, 0.3); color: inherit; border-radius: 3px; padding: 0 1px; }
+.kd-more { display: block; margin: 14px auto 0; background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text); border-radius: 10px; padding: 9px 22px; cursor: pointer; font-size: 14px; }
+.kd-dim { color: var(--text-dim); font-size: 14px; padding: 10px 6px; }
+.kd-toast { position: fixed; left: 50%; bottom: 90px; transform: translate(-50%, 20px); background: #111a24; color: #fff; border: 1px solid var(--cyan); border-radius: 999px; padding: 9px 18px; font-size: 14px; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 9999; max-width: 90vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.kd-toast.on { opacity: 1; transform: translate(-50%, 0); }
+@media (max-width: 600px) { .kd-hero { flex-direction: column; align-items: flex-start; } .kd-row { grid-template-columns: 1fr 36px; } .kd-ko { grid-column: 1 / -1; } .kd-title { font-size: 21px; } }

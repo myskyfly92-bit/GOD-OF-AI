@@ -492,6 +492,12 @@ html[data-theme="light"] :is(.topbar, .mascot-bubble, .vc-win, .vc-pop, .desk-ti
 :where(html[data-theme="light"]) .sg-sign.k-must { color: #292929; }
 :where(html[data-theme="light"]) .sg-sign.k-info { color: #292929; }
 :where(html[data-theme="light"]) .sg-sign.k-fire { --sg-bg: #b11016; color: #292929; }
+:where(html[data-theme="light"]) .kd-idx button { background: rgba(20,40,60,0.046); }
+:where(html[data-theme="light"]) .kd-idx button.on { color: #fafafa; }
+:where(html[data-theme="light"]) .kd-row:hover { background: rgba(20,40,60,0.029); }
+:where(html[data-theme="light"]) .kd-say { background: rgba(20,40,60,0.057); }
+:where(html[data-theme="light"]) .kd-more { background: rgba(20,40,60,0.057); }
+:where(html[data-theme="light"]) .kd-toast { background: #f2f3f5; color: #292929; }
 
 /* ---- 손으로 맞춘 부분 ---- */
 /* ===== 라이트 모드 손 보정 (tools/light-fix.css → light.css 맨 끝에 붙음) ===== */
