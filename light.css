@@ -486,9 +486,12 @@ html[data-theme="light"] :is(.topbar, .mascot-bubble, .vc-win, .vc-pop, .desk-ti
 :where(html[data-theme="light"]) .sg-k.k-warn { color: #c29100; }
 :where(html[data-theme="light"]) .sg-k.k-must { color: #004daf; }
 :where(html[data-theme="light"]) .sg-k.k-info { color: #259d55; }
+:where(html[data-theme="light"]) .sg-sign { --sg-bg: #292929; }
+:where(html[data-theme="light"]) .sg-sign.k-warn { --sg-bg: #c29b00; }
 :where(html[data-theme="light"]) .sg-sign.k-warn::before { background: #f7f7f7; }
-:where(html[data-theme="light"]) .sg-sign.k-must { box-shadow: 0 0 0 1px rgba(0,0,0,0.075); }
-:where(html[data-theme="light"]) .sg-sign.k-must .sg-sub, :where(html[data-theme="light"]) .sg-sign.k-info .sg-sub, :where(html[data-theme="light"]) .sg-sign.k-fire .sg-sub { color: #292929; }
+:where(html[data-theme="light"]) .sg-sign.k-must { color: #292929; }
+:where(html[data-theme="light"]) .sg-sign.k-info { color: #292929; }
+:where(html[data-theme="light"]) .sg-sign.k-fire { --sg-bg: #b11016; color: #292929; }
 
 /* ---- 손으로 맞춘 부분 ---- */
 /* ===== 라이트 모드 손 보정 (tools/light-fix.css → light.css 맨 끝에 붙음) ===== */

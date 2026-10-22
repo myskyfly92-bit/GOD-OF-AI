@@ -4809,27 +4809,28 @@ body.bg-reveal .set-item.bg-peek-btn { color: var(--cyan); }
 .sg-k.k-must { background: rgba(29, 95, 171, 0.25); color: #79b4ff; }
 .sg-k.k-info { background: rgba(11, 138, 62, 0.2); color: #5fd68f; }
 .sg-k.k-extra { background: rgba(199, 146, 234, 0.18); color: var(--violet); }
-/* 표지 모양 */
-.sg-sign { --s: 84px; width: var(--s); height: var(--s); position: relative; display: grid; place-items: center; flex: none; }
+/* 표지 모양 — 그림은 48×48 벡터 (color = 그림 색, --sg-bg = 바탕색) */
+.sg-sign { --s: 84px; --sg-bg: #fff; width: var(--s); height: var(--s); position: relative; display: grid; place-items: center; flex: none; color: #111; }
 .sg-sign.big { --s: 200px; }
-.sg-ic { position: relative; z-index: 2; font-size: calc(var(--s) * 0.46); line-height: 1; font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif; }
-.sg-sub { position: absolute; z-index: 3; bottom: 15%; font: 800 calc(var(--s) * 0.11) var(--font-mono); letter-spacing: 0.05em; }
-.sg-sign.k-no { background: #fff; border: calc(var(--s) * 0.1) solid #d71920; border-radius: 50%; }
-.sg-sign.k-no .sg-ic { filter: grayscale(1) brightness(0); }
-.sg-sign.k-no::after { content: ""; position: absolute; z-index: 3; left: -2%; right: -2%; top: 50%; height: calc(var(--s) * 0.1); margin-top: calc(var(--s) * -0.05); background: #d71920; transform: rotate(45deg); }
+.sg-g { position: relative; z-index: 2; width: 62%; height: 62%; fill: currentColor; overflow: visible; }
+.sg-sub { position: absolute; z-index: 3; bottom: 10%; font: 800 calc(var(--s) * 0.1) var(--font-mono); letter-spacing: 0.05em; color: inherit; }
+/* 금지: 흰 바탕·빨간 테두리·사선 */
+.sg-sign.k-no { background: #fff; border: calc(var(--s) * 0.095) solid #d71920; border-radius: 50%; }
+.sg-sign.k-no .sg-g { width: 66%; height: 66%; }
+.sg-sign.k-no::after { content: ""; position: absolute; z-index: 3; left: -1%; right: -1%; top: 50%; height: calc(var(--s) * 0.095); margin-top: calc(var(--s) * -0.0475); background: #d71920; transform: rotate(45deg); }
+/* 경고: 노란 바탕·검은 테두리 삼각형 */
+.sg-sign.k-warn { --sg-bg: #ffcc00; }
 .sg-sign.k-warn::before { content: ""; position: absolute; inset: 0; background: #111; clip-path: polygon(50% 2%, 99% 92%, 1% 92%); }
-.sg-sign.k-warn::after { content: ""; position: absolute; inset: 0; background: #ffcc00; clip-path: polygon(50% 14%, 89% 85%, 11% 85%); }
-.sg-sign.k-warn .sg-ic { font-size: calc(var(--s) * 0.34); margin-top: calc(var(--s) * 0.16); filter: grayscale(1) brightness(0); }
-.sg-sign.k-must { background: #1d5fab; border-radius: 50%; border: calc(var(--s) * 0.03) solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,0.25); }
-.sg-sign.k-must .sg-ic, .sg-sign.k-info .sg-ic, .sg-sign.k-fire .sg-ic { filter: grayscale(1) brightness(0) invert(1); }
-.sg-svg { width: calc(var(--s) * 0.52); height: calc(var(--s) * 0.52); display: block; color: #000; margin-top: calc(var(--s) * -0.06); }
-.sg-sign.k-must .sg-sub, .sg-sign.k-info .sg-sub, .sg-sign.k-fire .sg-sub { color: #fff; }
-.sg-sign.k-info { background: #0b8a3e; border-radius: calc(var(--s) * 0.08); }
-.sg-sign.k-info .sg-sub { font-size: calc(var(--s) * 0.26); bottom: 4%; }
-.sg-sign.k-fire { background: #d71920; border-radius: calc(var(--s) * 0.08); }
-.sg-sign.k-cross { background: #fff; border-radius: calc(var(--s) * 0.08); border: 1px solid #ccc; }
-.sg-sign.k-cross .sg-ic { color: #0b8a3e; font-size: calc(var(--s) * 0.7); font-family: sans-serif; }
-.sg-sign.k-info .sg-ic { font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif; }
+.sg-sign.k-warn::after { content: ""; position: absolute; inset: 0; background: #ffcc00; clip-path: polygon(50% 13%, 89.5% 85.5%, 10.5% 85.5%); }
+.sg-sign.k-warn .sg-g { width: 46%; height: 46%; margin-top: 24%; }
+/* 지시: 파란 원 · 안내: 녹색 사각형 · 소방: 빨간 사각형 (흰 그림) */
+.sg-sign.k-must { --sg-bg: #1d5fab; background: #1d5fab; border-radius: 50%; color: #fff; }
+.sg-sign.k-must .sg-sub { bottom: 8%; }
+.sg-sign.k-info { --sg-bg: #0b8a3e; background: #0b8a3e; border-radius: calc(var(--s) * 0.08); color: #fff; }
+.sg-sign.k-info .sg-sub { font-size: calc(var(--s) * 0.24); bottom: 0; }
+.sg-sign.k-fire { --sg-bg: #d71920; background: #d71920; border-radius: calc(var(--s) * 0.08); color: #fff; }
+.sg-sign.k-cross { background: #fff; border-radius: calc(var(--s) * 0.08); color: #0b8a3e; box-shadow: inset 0 0 0 1px #ccc; }
+.sg-sign.k-cross .sg-g { width: 72%; height: 72%; }
 /* 크게 보기 */
 .sg-pv { max-width: 640px; }
 .sg-pv-body { display: flex; gap: 26px; align-items: center; margin: 14px 0 8px; flex-wrap: wrap; justify-content: center; }
