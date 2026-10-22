@@ -10487,68 +10487,73 @@ const lightInk = (function () {
 })();
 
 /* ===================== 안전표지 사전 (안전 > 안전표지 사전) =====================
-   산업안전보건법 시행규칙 별표 6 안전보건표지 + 현장에서 자주 쓰는 표지 · 한국어·English·العربية
-   그림은 이모지를 단색 그림으로 바꿔 표지 모양(원·삼각형·사각형) 안에 넣은 간단한 표현 */
+   산업안전보건법 시행규칙 [별표 6] 안전보건표지 (그림: 별표 6 원본을 다듬은 assets/signs/번호.webp)
+   용도·사용장소 예시: 구 산업안전보건기준 [별표 2] · 한국어·English·العربية */
 (function safetySigns() {
   const gridEl = document.getElementById("sgGrid"); if (!gridEl) return;
-  // 표지 그림 (48×48 단색 벡터 · 직접 그림) — currentColor = 그림 색, var(--sg-bg) = 표지 바탕색
-  const SG_G = {"stand": "<circle cx=\"24\" cy=\"7.5\" r=\"4.5\"/><path d=\"M18.5 14h11c1.6 0 2.6 1 3 2.4l3 11.6-3.4.9-2.6-9.4V44h-4.6V31.5h-2V44h-4.6V19.5l-2.6 9.4-3.4-.9 3-11.6c.4-1.4 1.4-2.4 3-2.4z\"/>", "walk": "<circle cx=\"27\" cy=\"6.5\" r=\"4.5\"/><path d=\"M22.5 13.5l7.5.5c1.3.1 2.2.9 2.6 2l2.8 8.2-3.3 1.2-2.1-5.9-2 8.4 5.8 6.4V44h-4.4v-8.8l-5.6-5.4-3.2 14.2h-4.6l4.8-21.8-2.8 4.5-3.8-1.9 4.5-8.9c.8-1.6 2.2-2.5 3.8-2.4z\"/>", "run": "<circle cx=\"30\" cy=\"6.5\" r=\"4.5\"/><path d=\"M23 13.5h8.5c1.4 0 2.4.6 3 1.8l3.5 7.2 6 1.5-.9 3.6-7.7-2-1.8-3.6-2.8 8 6.4 5.2-2.6 11.3-4.3-1 2-8.7-6.3-4.6-3.2 6.4H10.5v-4.2h8l5.6-14.3-3.6 1.4-3.2 6.2-3.8-1.9 4.2-8.2c.8-1.4 2.2-2.4 3.8-2.4z\"/>", "truck": "<path d=\"M3 12h25v20H3z\"/><path d=\"M30 18h8.5l6.5 8v6H30z\"/><circle cx=\"11\" cy=\"36\" r=\"4.5\"/><circle cx=\"36\" cy=\"36\" r=\"4.5\"/>", "hand": "<path d=\"M14 27V14.5a2.5 2.5 0 0 1 5 0V24h1V9.5a2.5 2.5 0 0 1 5 0V24h1V11.5a2.5 2.5 0 0 1 5 0V25h1v-9a2.5 2.5 0 0 1 5 0v15c0 8-5 14-13 14-5 0-8.5-2.5-11-7l-5.5-9.5a2.5 2.5 0 0 1 4.2-2.6z\"/>", "forklift": "<path d=\"M6 14h14l5 12v9H6z\"/><path d=\"M9 17h9l3 8H9z\" fill-opacity=\"0\"/><rect x=\"29\" y=\"6\" width=\"3.5\" height=\"32\"/><path d=\"M32.5 34H45v3.5H32.5z\"/><circle cx=\"11\" cy=\"38\" r=\"5\"/><circle cx=\"23\" cy=\"38\" r=\"4\"/>", "cig": "<rect x=\"4\" y=\"27\" width=\"31\" height=\"7\" rx=\"1\"/><rect x=\"36\" y=\"27\" width=\"8\" height=\"7\" rx=\"1\"/><path d=\"M38 24c-3-3 3-6 0-9s2-6 0-9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\"/>", "flame": "<path d=\"M24 3c1.5 7.5 12 12 12 25a12 12 0 0 1-24 0c0-6.5 3.8-9.6 5.2-14.2 1.6 3.6 2.8 6 5 7.2C23.6 15 21 9.6 24 3z\"/>", "box": "<path d=\"M8 18l16-8 16 8v18l-16 8-16-8z\"/><path d=\"M8 18l16 8 16-8M24 26v18\" fill=\"none\" stroke=\"var(--sg-bg)\" stroke-width=\"1.6\"/>", "oxid": "<circle cx=\"24\" cy=\"33\" r=\"10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><path d=\"M24 2c1 5 8 8 8 16a8 8 0 0 1-16 0c0-4 2.5-6 3.5-9 1 2.4 2 4 3.3 4.8.4-4-1.3-7.6 1.2-11.8z\"/>", "explode": "<path d=\"M24 2l4 10 9-6-2 11 11 1-9 7 8 8-11-1 1 11-8-7-6 9-2-11-10 4 5-10-10-5 11-2-5-9 10 4z\"/>", "skull": "<path fill-rule=\"evenodd\" d=\"M24 4c9.4 0 16 6.4 16 15 0 5-2.3 8.4-5.5 10.4V35H13.5v-5.6C10.3 27.4 8 24 8 19 8 10.4 14.6 4 24 4zm-6.5 12.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm13 0a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM24 25l-2.4 4h4.8z\"/><path d=\"M16 37h16v5H16z\"/><path d=\"M5 40l38 6M43 40L5 46\" stroke=\"currentColor\" stroke-width=\"3\"/>", "corrode": "<path d=\"M6 6h9l-2 9H8z\"/><path d=\"M33 6h9l-2 9h-5z\"/><path d=\"M10 18c-1 3-2 4-2 6a2 2 0 0 0 4 0c0-2-1-3-2-6zM37 18c-1 3-2 4-2 6a2 2 0 0 0 4 0c0-2-1-3-2-6z\"/><path d=\"M3 34h17v4H3z\"/><path d=\"M28 33c4-3 10-3 14 0v5H28z\"/><path d=\"M8 31l2-3 2 3M34 30l2-3 2 3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>", "radio": "<circle cx=\"24\" cy=\"24\" r=\"4.2\"/><path d=\"M24 24L14.3 7.2a19.4 19.4 0 0 1 19.4 0zM24 24l9.7 16.8a19.4 19.4 0 0 1-19.4 0zM24 24L4.6 24a19.4 19.4 0 0 1 9.7-16.8zM24 24h19.4a19.4 19.4 0 0 1-9.7 16.8z\" transform=\"rotate(30 24 24)\" fill-opacity=\"0\"/><path d=\"M24 24L14.3 7.2a19.4 19.4 0 0 1 19.4 0z\"/><path d=\"M24 24l19.4 0a19.4 19.4 0 0 1-9.7 16.8z\"/><path d=\"M24 24L14.3 40.8a19.4 19.4 0 0 1-9.7-16.8z\"/><circle cx=\"24\" cy=\"24\" r=\"7\" fill=\"var(--sg-bg)\"/><circle cx=\"24\" cy=\"24\" r=\"4.2\"/>", "bolt": "<path d=\"M28 2L10 27h11l-4 19 21-28H26z\"/>", "hookload": "<path d=\"M22 2h4v10h-4z\"/><path d=\"M24 12c5 0 7 3 7 6a6 6 0 0 1-6 6h-1v-3.6c1.8 0 3.2-1 3.2-2.4s-1.4-2.6-3.2-2.6c-1.6 0-3 1-3 2.4h-3.6c0-3 2.6-5.8 6.6-5.8z\"/><path d=\"M24 24L11 33M24 24l13 9\" stroke=\"currentColor\" stroke-width=\"2.4\"/><path d=\"M8 33h32v12H8z\"/>", "falling": "<path d=\"M14 3h8v8h-8zM28 9h7v7h-7zM20 17h6v6h-6z\"/><g transform=\"translate(0 6)\"><circle cx=\"24\" cy=\"24.5\" r=\"4\"/><path d=\"M18.8 30h10.4c1.5 0 2.4.9 2.8 2.2L34 42h-4l-1.4-5.6V42h-9.2v-5.6L18 42h-4l2-9.8c.4-1.3 1.3-2.2 2.8-2.2z\"/></g>", "hot": "<path d=\"M12 4c-3 4 3 6 0 10s3 6 0 10M24 4c-3 4 3 6 0 10s3 6 0 10M36 4c-3 4 3 6 0 10s3 6 0 10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M4 30h40v6H4z\"/><path d=\"M4 38h40v6H4z\" fill-opacity=\".55\"/>", "cold": "<g stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\" fill=\"none\"><path d=\"M24 4v40M6.7 14l34.6 20M6.7 34l34.6-20\"/><path d=\"M18 8l6 5 6-5M18 40l6-5 6 5M7 22l8-1-2-7M41 26l-8 1 2 7M7 26l8 1-2 7M41 22l-8-1 2-7\"/></g>", "slip": "<circle cx=\"12\" cy=\"13\" r=\"4.5\"/><path d=\"M16 18l12-4.5 1.6 3.6-8.6 3.6 6 6.4 9.5-3.6 1.4 3.7-12 4.6-5.8-5-3.8 9.6-4-1.6 5-12.6-6.6 3.4-1.8-3.6z\"/><path d=\"M2 42h44v4H2z\"/><path d=\"M30 39c3 0 4 1.5 7 1.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"/>", "laser": "<path d=\"M2 23h22v3H2z\"/><circle cx=\"31\" cy=\"24.5\" r=\"5\"/><g stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\"><path d=\"M31 12v-6M31 37v6M43 24.5h4M39.6 15.9l4.2-4.2M39.6 33.1l4.2 4.2M22.4 15.9l-4.2-4.2M22.4 33.1l-4.2 4.2\"/></g>", "health": "<circle cx=\"24\" cy=\"7\" r=\"4.5\"/><path d=\"M17 13.5h14c1.7 0 3 1.3 3 3V44h-6V31h-8v13h-6V16.5c0-1.7 1.3-3 3-3z\"/><path d=\"M24 17l1.6 3.4 3.7.4-2.7 2.5.8 3.7L24 25.2 20.6 27l.8-3.7-2.7-2.5 3.7-.4z\" fill=\"var(--sg-bg)\"/>", "danger": "<path d=\"M21 6h6l-1.2 25h-3.6z\"/><circle cx=\"24\" cy=\"38\" r=\"3.6\"/>", "goggles": "<path fill-rule=\"evenodd\" d=\"M6 16h36c2.2 0 4 1.8 4 4v8c0 3-2.4 5.4-5.4 5.4H32l-4-5h-8l-4 5H7.4C4.4 33.4 2 31 2 28v-8c0-2.2 1.8-4 4-4zm3 4.5v7c0 1 .8 1.8 1.8 1.8h8.4l1.6-2.2v-6.6zm30 0H26.2v6.6l1.6 2.2h8.4c1 0 1.8-.8 1.8-1.8z\"/>", "shield": "<path d=\"M8 46c0-8 7-12 16-12s16 4 16 12z\"/><circle cx=\"24\" cy=\"20\" r=\"10\"/><rect x=\"11\" y=\"11\" width=\"26\" height=\"25\" rx=\"6\" fill=\"none\" stroke=\"var(--sg-bg)\" stroke-width=\"6\"/><rect x=\"11\" y=\"11\" width=\"26\" height=\"25\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\"/><path d=\"M9 6h30v6H9z\"/>", "helmet": "<path d=\"M8 32c0-10 6.5-17.5 14-18.6V10h4v3.4C33.5 14.5 40 22 40 32z\"/><path d=\"M3 33h42v5H3z\"/><path d=\"M20 14.5v11M28 14.5v11\" stroke=\"var(--sg-bg)\" stroke-width=\"1.6\" stroke-opacity=\".0\"/>", "earmuff": "<path d=\"M10 26a14 14 0 0 1 28 0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"4\"/><rect x=\"5\" y=\"23\" width=\"10\" height=\"17\" rx=\"4\"/><rect x=\"33\" y=\"23\" width=\"10\" height=\"17\" rx=\"4\"/>", "boot": "<path d=\"M10 4h15v21l12 5c4 1.6 7 4.6 7 8.4V42H6V38c0-3 1-4 4-4.6z\"/><path d=\"M6 42h38v3H6z\"/>", "glove": "<path d=\"M13 46V36l-6-11c-1-2 2-4 4-2l4 5V9.5a2.5 2.5 0 0 1 5 0V22h1V6.5a2.5 2.5 0 0 1 5 0V22h1V8.5a2.5 2.5 0 0 1 5 0V23h1V12.5a2.5 2.5 0 0 1 5 0V30c0 6-3 9-5 11v5z\"/>", "coverall": "<circle cx=\"24\" cy=\"5.5\" r=\"4\"/><path d=\"M16 11h16l6 5-3 12-3-.8V44h-6V31h-4v13h-6V27.2L13 28 10 16z\"/><path d=\"M24 12v16\" stroke=\"var(--sg-bg)\" stroke-width=\"1.6\"/>", "harness": "<circle cx=\"24\" cy=\"6\" r=\"4.2\"/><path d=\"M18 12h12l2 14h-3v18h-4.4V31h-1.2v13H19V26h-3z\"/><path d=\"M17.5 13l13 12M30.5 13l-13 12M15 30h18\" stroke=\"var(--sg-bg)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M33 22c6 0 8 4 8 9v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\"/>", "plus": "<path d=\"M18 4h12v14h14v12H30v14H18V30H4V18h14z\"/>", "stretcher": "<circle cx=\"11\" cy=\"19\" r=\"4.5\"/><path d=\"M16 17h22c2 0 3 1 3 3v3H16z\"/><path d=\"M3 26h42v3H3z\"/><path d=\"M7 29v8M41 29v8\" stroke=\"currentColor\" stroke-width=\"3\"/>", "eyewash": "<path d=\"M10 40h28v4H10z\"/><path d=\"M22 28h4v12h-4z\"/><path d=\"M14 22h20l-3 6H17z\"/><path d=\"M16 18c-1-4 0-8 2-11M24 17V5M32 18c1-4 0-8-2-11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\"/>", "kit": "<path fill-rule=\"evenodd\" d=\"M18 8h12c1.6 0 3 1.4 3 3v3h8c2 0 3 1 3 3v22c0 2-1 3-3 3H7c-2 0-3-1-3-3V17c0-2 1-3 3-3h8v-3c0-1.6 1.4-3 3-3zm1 4v2h10v-2z\"/><path d=\"M21 21h6v6h6v6h-6v6h-6v-6h-6v-6h6z\" fill=\"var(--sg-bg)\"/>", "exit": "<path d=\"M30 4h15v40H30z\" fill-opacity=\".35\"/><g transform=\"translate(-4 0)\"><circle cx=\"30\" cy=\"6.5\" r=\"4.5\"/><path d=\"M23 13.5h8.5c1.4 0 2.4.6 3 1.8l3.5 7.2 6 1.5-.9 3.6-7.7-2-1.8-3.6-2.8 8 6.4 5.2-2.6 11.3-4.3-1 2-8.7-6.3-4.6-3.2 6.4H10.5v-4.2h8l5.6-14.3-3.6 1.4-3.2 6.2-3.8-1.9 4.2-8.2c.8-1.4 2.2-2.4 3.8-2.4z\"/></g>", "ext": "<path d=\"M19 9h8v4h-8z\"/><path d=\"M15 15h16c1.6 0 2.4.8 2.4 2.4V44H12.6V17.4c0-1.6.8-2.4 2.4-2.4z\"/><path d=\"M27 10h7l4 4-2 1.5-3-2.5h-6z\"/><path d=\"M38 14c3 4 5 9 5 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\"/>", "assembly": "<g transform=\"translate(-9 5) scale(.62)\"><circle cx=\"24\" cy=\"7.5\" r=\"4.5\"/><path d=\"M18.5 14h11c1.6 0 2.6 1 3 2.4l3 11.6-3.4.9-2.6-9.4V44h-4.6V31.5h-2V44h-4.6V19.5l-2.6 9.4-3.4-.9 3-11.6c.4-1.4 1.4-2.4 3-2.4z\"/></g><g transform=\"translate(9 5) scale(.62)\"><circle cx=\"24\" cy=\"7.5\" r=\"4.5\"/><path d=\"M18.5 14h11c1.6 0 2.6 1 3 2.4l3 11.6-3.4.9-2.6-9.4V44h-4.6V31.5h-2V44h-4.6V19.5l-2.6 9.4-3.4-.9 3-11.6c.4-1.4 1.4-2.4 3-2.4z\"/></g><g transform=\"translate(0 11) scale(.55)\"><circle cx=\"24\" cy=\"7.5\" r=\"4.5\"/><path d=\"M18.5 14h11c1.6 0 2.6 1 3 2.4l3 11.6-3.4.9-2.6-9.4V44h-4.6V31.5h-2V44h-4.6V19.5l-2.6 9.4-3.4-.9 3-11.6c.4-1.4 1.4-2.4 3-2.4z\"/></g><g transform=\"translate(19.2 22) scale(.55)\"><circle cx=\"24\" cy=\"7.5\" r=\"4.5\"/><path d=\"M18.5 14h11c1.6 0 2.6 1 3 2.4l3 11.6-3.4.9-2.6-9.4V44h-4.6V31.5h-2V44h-4.6V19.5l-2.6 9.4-3.4-.9 3-11.6c.4-1.4 1.4-2.4 3-2.4z\"/></g>", "barrier": "<path d=\"M4 14h40v10H4z\"/><path d=\"M10 14l-6 10M20 14l-6 10M30 14l-6 10M40 14l-6 10M44 18l-4 6\" stroke=\"var(--sg-bg)\" stroke-width=\"3.4\"/><path d=\"M8 24h4v20H8zM36 24h4v20h-4z\"/><path d=\"M4 42h12v3H4zM32 42h12v3H32z\"/>", "gas": "<path d=\"M14 10c3-5 17-5 20 0l3 11c1 6-4 13-13 13S10 27 11 21z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"13\" cy=\"34\" r=\"7\"/><circle cx=\"35\" cy=\"34\" r=\"7\"/><path d=\"M18 30h12l-2 8h-8z\"/>", "dust": "<path d=\"M14 10c3-5 17-5 20 0l3 11c1 6-4 13-13 13S10 27 11 21z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M12 24c4 2 20 2 24 0l-2 12c-2 4-18 4-20 0z\"/><path d=\"M6 22l7 4M42 22l-7 4\" stroke=\"currentColor\" stroke-width=\"2.5\"/>"};
-  const K = { no: "금지표지", warn: "경고표지", must: "지시표지", info: "안내표지", extra: "현장 추가" };
-  const KD = { no: "빨간 원·사선 — 하면 안 되는 행동", warn: "노란 삼각형 — 위험이 있는 곳·물질", must: "파란 원 — 반드시 해야 하는 것", info: "녹색 사각형 — 안전·응급 시설 위치", extra: "법정 표지는 아니지만 현장에서 자주 쓰는 표지" };
-  // [종류, 그림, 한국어, English, العربية, 설명(어디에 쓰나), 그림 아래 작은 글씨]
+  const K = { no: "금지표지", warn: "경고표지", must: "지시표지", info: "안내표지", staff: "관계자외 출입금지" };
+  const KD = {
+    no: "흰 바탕 · 빨간 원과 사선 · 검은 그림 — 하면 안 되는 행동",
+    warn: "노란 바탕 · 검은 삼각형 테두리 (화학물질은 흰 바탕 · 빨간 마름모) — 위험이 있는 곳·물질",
+    must: "파란 바탕 · 흰 그림 — 반드시 해야 하는 것 (보호구 착용)",
+    info: "녹색 바탕 · 흰 그림 (녹십자는 흰 바탕 · 녹색) — 안전·응급 시설 위치",
+    staff: "흰 바탕 · 검은 글씨 (출입금지는 빨간 글씨) — 허가받은 사람만 들어가는 곳",
+  };
+  // [번호, 종류, 한국어, English, العربية, 용도·사용장소, 사용장소 예시]
   const S = [
-    ["no", "stand", "출입금지", "No entry", "ممنوع الدخول", "허가받지 않은 사람이 들어가면 안 되는 곳 (위험구역·작업반경)"],
-    ["no", "walk", "보행금지", "No pedestrians", "ممنوع مرور المشاة", "사람이 걸어 다니면 안 되는 길 (장비 통로 등)"],
-    ["no", "truck", "차량통행금지", "No vehicles", "ممنوع مرور المركبات", "차량·장비가 들어가면 안 되는 곳"],
-    ["no", "hand", "사용금지", "Do not use", "ممنوع الاستخدام", "고장·점검 중인 기계·공구 (잠금·표지 LOTO)"],
-    ["no", "forklift", "탑승금지", "No riding", "ممنوع الركوب", "사람이 타면 안 되는 장비 (화물용 리프트·지게차 포크 등)"],
-    ["no", "cig", "금연", "No smoking", "ممنوع التدخين", "흡연 금지 장소 (사무실·숙소·위험물 근처)"],
-    ["no", "flame", "화기금지", "No open flames", "ممنوع استخدام اللهب المكشوف", "불꽃·불씨를 만들면 안 되는 곳 (유류·가스 저장소)"],
-    ["no", "box", "물체이동금지", "Do not move", "ممنوع تحريك الأشياء", "정해진 자리에서 옮기면 안 되는 물건·설비"],
-    ["warn", "flame", "인화성물질 경고", "Flammable material", "خطر: مواد قابلة للاشتعال", "기름·시너·가스 등 불붙기 쉬운 물질"],
-    ["warn", "oxid", "산화성물질 경고", "Oxidizing material", "خطر: مواد مؤكسدة", "다른 물질을 더 잘 타게 만드는 물질 (산소통 등)"],
-    ["warn", "explode", "폭발성물질 경고", "Explosive material", "خطر: مواد متفجرة", "폭발할 수 있는 물질 (화약·발파 자재)"],
-    ["warn", "skull", "급성독성물질 경고", "Toxic material", "خطر: مواد سامة", "조금만 마시거나 닿아도 해로운 물질"],
-    ["warn", "corrode", "부식성물질 경고", "Corrosive material", "خطر: مواد أكّالة", "피부·금속을 녹이는 물질 (산·알칼리)"],
-    ["warn", "radio", "방사성물질 경고", "Radioactive material", "خطر: مواد مشعة", "방사선이 나오는 물질·장비 (비파괴검사)"],
-    ["warn", "bolt", "고압전기 경고", "High voltage", "خطر: جهد كهربائي عالٍ", "감전 위험 — 분전반·변전설비·가공선 근처"],
-    ["warn", "hookload", "매달린 물체 경고", "Suspended load", "خطر: حمولة معلّقة", "크레인으로 들어 올린 짐 아래 — 들어가지 않기"],
-    ["warn", "falling", "낙하물 경고", "Falling objects", "خطر: سقوط أجسام", "위에서 물건이 떨어질 수 있는 곳 (비계·고소작업 아래)"],
-    ["warn", "hot", "고온 경고", "Hot surface / high temperature", "خطر: درجة حرارة عالية", "뜨거운 설비·표면 (보일러·용접 부재)"],
-    ["warn", "cold", "저온 경고", "Low temperature", "خطر: درجة حرارة منخفضة", "아주 차가운 설비·물질 (냉동창고·액화가스)"],
-    ["warn", "slip", "몸균형상실 경고", "Loss of balance (slip / trip)", "خطر: فقدان التوازن", "미끄러지거나 걸려 넘어지기 쉬운 곳"],
-    ["warn", "laser", "레이저광선 경고", "Laser beam", "خطر: أشعة ليزر", "레이저 측량기·장비 — 눈으로 직접 보지 않기"],
-    ["warn", "health", "발암성·생식독성 등 경고", "Health hazard (carcinogen etc.)", "خطر: مواد مسرطنة وضارة بالصحة", "오래 노출되면 암·질병을 일으킬 수 있는 물질"],
-    ["warn", "danger", "위험장소 경고", "Danger area", "خطر: منطقة خطرة", "그 밖의 위험한 곳 (개구부·굴착 주변)"],
-    ["must", "goggles", "보안경 착용", "Wear safety goggles", "يجب ارتداء نظارات السلامة", "그라인더·절단·약품 작업"],
-    ["must", "gas", "방독마스크 착용", "Wear gas mask", "يجب ارتداء قناع الغاز", "유해가스·증기가 나오는 작업 (도장·용제)", "GAS"],
-    ["must", "dust", "방진마스크 착용", "Wear dust mask", "يجب ارتداء قناع الغبار", "먼지가 많은 작업 (절단·연마·모래바람)", "DUST"],
-    ["must", "shield", "보안면 착용", "Wear face shield", "يجب ارتداء واقي الوجه", "용접·그라인더 불티, 약품이 튈 수 있는 작업"],
-    ["must", "helmet", "안전모 착용", "Wear safety helmet", "يجب ارتداء خوذة السلامة", "현장 안 어디서나 (턱끈까지 매기)"],
-    ["must", "earmuff", "귀마개 착용", "Wear ear protection", "يجب ارتداء واقيات الأذن", "소음이 큰 곳 (85dB 이상 — 착암·발전기 주변)"],
-    ["must", "boot", "안전화 착용", "Wear safety shoes", "يجب ارتداء حذاء السلامة", "현장 안 어디서나 (못 밟힘·물체 낙하)"],
-    ["must", "glove", "안전장갑 착용", "Wear safety gloves", "يجب ارتداء قفازات السلامة", "날카로운 자재·약품·전기 작업"],
-    ["must", "coverall", "안전복 착용", "Wear protective clothing", "يجب ارتداء ملابس واقية", "약품·불티·야간 작업 (반사 조끼 포함)"],
-    ["info", "plus", "녹십자표지", "Safety first (green cross)", "شعار السلامة (الصليب الأخضر)", "안전을 강조하는 곳 — 현장 출입구·게시판", "", "cross"],
-    ["info", "plus", "응급구호표지", "First aid", "الإسعافات الأولية", "구급함·응급처치 장소"],
-    ["info", "stretcher", "들것", "Stretcher", "نقالة", "들것이 있는 곳"],
-    ["info", "eyewash", "세안장치", "Eyewash station", "محطة غسل العيون", "눈에 약품·이물질이 들어갔을 때 씻는 곳"],
-    ["info", "kit", "비상용기구", "Emergency equipment", "معدات الطوارئ", "비상용 장비 보관 장소"],
-    ["info", "exit", "비상구", "Emergency exit", "مخرج الطوارئ", "비상시 나가는 문"],
-    ["info", "exit", "좌측비상구", "Emergency exit (left)", "مخرج الطوارئ (يسار)", "왼쪽으로 가면 비상구", "←"],
-    ["info", "exit", "우측비상구", "Emergency exit (right)", "مخرج الطوارئ (يمين)", "오른쪽으로 가면 비상구", "→"],
-    ["extra", "harness", "안전대 착용", "Wear safety harness", "يجب ارتداء حزام الأمان", "높이 2m 이상 작업 — 안전대 걸고 작업", "", "must"],
-    ["extra", "ext", "소화기", "Fire extinguisher", "طفاية حريق", "소화기 위치 (빨간 사각형 소방 표지)", "", "fire"],
-    ["extra", "assembly", "비상 집결지", "Assembly point", "نقطة التجمع", "대피 후 모여서 인원을 확인하는 곳", "", "info"],
-    ["extra", "barrier", "작업 중 · 접근주의", "Work in progress — keep clear", "العمل جارٍ — ابتعد", "작업 구역 경계 (바리케이드·테이프)", "", "warn"],
+    ["101", "no", "출입금지", "No entry", "ممنوع الدخول", "출입을 통제해야 할 장소", "조립·해체 작업장 입구"],
+    ["102", "no", "보행금지", "No pedestrians", "ممنوع مرور المشاة", "사람이 걸어 다녀서는 안 될 장소", "중장비 운전 작업장"],
+    ["103", "no", "차량통행금지", "No vehicles", "ممنوع مرور المركبات", "운반기기·차량의 통행을 금지해야 할 장소", "여럿이 걸어 다니는 장소"],
+    ["104", "no", "사용금지", "Do not use", "ممنوع الاستخدام", "수리·고장 등으로 만지거나 작동하면 안 되는 기계·기구·설비", "고장 난 기계"],
+    ["105", "no", "탑승금지", "No riding", "ممنوع الركوب", "엘리베이터 등에 타거나 어떤 장소에 올라가는 것을 금지", "고장 난 엘리베이터"],
+    ["106", "no", "금연", "No smoking", "ممنوع التدخين", "담배를 피워서는 안 될 장소", "사무실·숙소·위험물 근처"],
+    ["107", "no", "화기금지", "No open flames", "ممنوع استخدام اللهب المكشوف", "화재 염려가 있어 불을 다루면 안 되는 장소", "화학물질 취급 장소"],
+    ["108", "no", "물체이동금지", "Do not move", "ممنوع تحريك الأشياء", "정리정돈된 물체나 움직이면 안 되는 물체를 지켜야 할 장소", "절전 스위치 옆"],
+    ["201", "warn", "인화성물질 경고", "Flammable material", "خطر: مواد قابلة للاشتعال", "불을 극히 주의해야 하는 물질이 있는 장소", "휘발유 저장탱크"],
+    ["202", "warn", "산화성물질 경고", "Oxidizing material", "خطر: مواد مؤكسدة", "가열·압축하거나 강산·알칼리를 더하면 강한 산화성을 띠는 물질이 있는 장소", "질산 저장탱크"],
+    ["203", "warn", "폭발성물질 경고", "Explosive material", "خطر: مواد متفجرة", "폭발성 물질이 있는 장소", "폭발물 저장실"],
+    ["204", "warn", "급성독성물질 경고", "Acute toxic material", "خطر: مواد سامة", "급성 독성 물질이 있는 장소", "농약 제조·보관실"],
+    ["205", "warn", "부식성물질 경고", "Corrosive material", "خطر: مواد أكّالة", "몸이나 물체에 닿으면 부식시키는 물질이 있는 장소", "황산 저장실"],
+    ["206", "warn", "방사성물질 경고", "Radioactive material", "خطر: مواد مشعة", "방사능 물질이 있는 장소", "방사성 동위원소 사용실"],
+    ["207", "warn", "고압전기 경고", "High voltage", "خطر: جهد كهربائي عالٍ", "고전압이 흐르는 장소", "감전 염려 지역 입구"],
+    ["208", "warn", "매달린 물체 경고", "Overhead / suspended load", "خطر: حمولة معلّقة", "머리 위에 크레인 등으로 매달린 물체가 있는 장소", "크레인이 있는 작업장 입구"],
+    ["209", "warn", "낙하물 경고", "Falling objects", "خطر: سقوط أجسام", "돌·블록 등 떨어질 염려가 있는 물체가 있는 장소", "비계 설치 장소 입구"],
+    ["210", "warn", "고온 경고", "High temperature", "خطر: درجة حرارة عالية", "높은 열을 내는 물체나 온도가 아주 높은 장소", "주물 작업장 입구"],
+    ["211", "warn", "저온 경고", "Low temperature", "خطر: درجة حرارة منخفضة", "아주 차가운 물체나 온도가 아주 낮은 장소", "냉동 작업장 입구"],
+    ["212", "warn", "몸균형상실 경고", "Loss of balance (slip / trip)", "خطر: فقدان التوازن", "미끄러운 곳 등 넘어지기 쉬운 장소", "경사진 통로 입구"],
+    ["213", "warn", "레이저광선 경고", "Laser beam", "خطر: أشعة ليزر", "레이저 광선에 노출될 우려가 있는 장소", "레이저 실험실 입구"],
+    ["214", "warn", "발암성·변이원성·생식독성·전신독성·호흡기과민성 물질 경고", "Health hazard (carcinogen, mutagen etc.)", "خطر: مواد مسرطنة وضارة بالصحة", "몸에 오래 해로운 물질이 있는 장소", "납 분진 발생 장소"],
+    ["215", "warn", "위험장소 경고", "Danger area", "خطر: منطقة خطرة", "그 밖의 위험한 물체가 있는 장소", "맨홀 앞"],
+    ["301", "must", "보안경 착용", "Wear safety goggles", "يجب ارتداء نظارات السلامة", "보안경을 써야만 작업·출입할 수 있는 장소", "그라인더 작업장 입구"],
+    ["302", "must", "방독마스크 착용", "Wear gas mask", "يجب ارتداء قناع الغاز", "방독마스크를 써야만 작업·출입할 수 있는 장소", "유해물질 작업장 입구"],
+    ["303", "must", "방진마스크 착용", "Wear dust mask", "يجب ارتداء قناع الغبار", "방진마스크를 써야만 작업·출입할 수 있는 장소", "분진이 많은 곳"],
+    ["304", "must", "보안면 착용", "Wear face shield", "يجب ارتداء واقي الوجه", "보안면을 써야만 작업·출입할 수 있는 장소", "용접실 입구"],
+    ["305", "must", "안전모 착용", "Wear safety helmet", "يجب ارتداء خوذة السلامة", "안전모를 써야만 작업·출입할 수 있는 장소", "갱도 입구 · 건설현장"],
+    ["306", "must", "귀마개 착용", "Wear ear protection", "يجب ارتداء واقيات الأذن", "소음 장소 등 귀마개를 해야만 작업·출입할 수 있는 장소", "판금 작업장 입구"],
+    ["307", "must", "안전화 착용", "Wear safety shoes", "يجب ارتداء حذاء السلامة", "안전화를 신어야만 작업·출입할 수 있는 장소", "채탄 작업장 입구 · 건설현장"],
+    ["308", "must", "안전장갑 착용", "Wear safety gloves", "يجب ارتداء قفازات السلامة", "안전장갑을 껴야만 작업·출입할 수 있는 장소", "고온·저온 취급 작업장 입구"],
+    ["309", "must", "안전복 착용", "Wear protective clothing", "يجب ارتداء ملابس واقية", "방열복·방한복 등 안전복을 입어야만 작업·출입할 수 있는 장소", "단조 작업장 입구"],
+    ["401", "info", "녹십자표지", "Safety first (green cross)", "شعار السلامة (الصليب الأخضر)", "안전 의식을 높이기 위해 필요한 장소", "공사장 등 사람이 많이 보는 장소"],
+    ["402", "info", "응급구호표지", "First aid", "الإسعافات الأولية", "응급구호 설비가 있는 장소", "위생구호실 앞"],
+    ["403", "info", "들것", "Stretcher", "نقالة", "구호를 위한 들것이 있는 장소", "위생구호실 앞"],
+    ["404", "info", "세안장치", "Eyewash station", "محطة غسل العيون", "세안장치가 있는 장소", "위생구호실 앞 · 약품 취급 장소"],
+    ["405", "info", "비상용기구", "Emergency equipment", "معدات الطوارئ", "비상용 기구가 있는 장소", "비상용 기구 보관 장소"],
+    ["406", "info", "비상구", "Emergency exit", "مخرج الطوارئ", "비상 출입구", "비상구 위"],
+    ["407", "info", "좌측비상구", "Emergency exit (left)", "مخرج الطوارئ (يسار)", "비상구가 왼쪽에 있음을 알려야 하는 장소", "통로·복도"],
+    ["408", "info", "우측비상구", "Emergency exit (right)", "مخرج الطوارئ (يمين)", "비상구가 오른쪽에 있음을 알려야 하는 장소", "통로·복도"],
+    ["501", "staff", "허가대상물질 작업장", "Authorized persons only — permitted substance work area", "للمصرّح لهم فقط — منطقة عمل بمواد خاضعة للترخيص", "허가대상물질을 제조·사용·보관하는 작업장", "관계자외 출입금지 · (허가물질 명칭) 제조/사용/보관 중 · 보호구/보호복 착용 · 흡연 및 음식물 섭취 금지"],
+    ["502", "staff", "석면취급/해체 작업장", "Authorized persons only — asbestos work area", "للمصرّح لهم فقط — منطقة أعمال الأسبستوس", "석면을 취급하거나 해체하는 작업장", "관계자외 출입금지 · 석면 취급/해체 중 · 보호구/보호복 착용 · 흡연 및 음식물 섭취 금지"],
+    ["503", "staff", "금지대상물질의 취급 실험실 등", "Authorized persons only — prohibited substance laboratory", "للمصرّح لهم فقط — مختبر المواد المحظورة", "금지대상물질을 취급하는 실험실 등", "관계자외 출입금지 · 발암물질 취급 중 · 보호구/보호복 착용 · 흡연 및 음식물 섭취 금지"],
   ];
-  const shape = (s) => s[7] || s[0];
-  const signHtml = (s, big) => `<div class="sg-sign k-${shape(s)}${big ? " big" : ""}" aria-hidden="true"><svg class="sg-g" viewBox="0 0 48 48">${SG_G[s[1]] || ""}</svg>${s[6] ? `<span class="sg-sub">${s[6]}</span>` : ""}</div>`;
+  const STAFF_TXT = { "501": ["관계자외 출입금지", "(허가물질 명칭)", "제조/사용/보관 중"], "502": ["관계자외 출입금지", "석면 취급/해체 중"], "503": ["관계자외 출입금지", "발암물질 취급 중"] };
+  const signHtml = (s, big) => s[1] === "staff"
+    ? `<div class="sg-plate sg-txt${big ? " big" : ""}" aria-hidden="true">${STAFF_TXT[s[0]].map((t, i) => `<span class="${i === 0 ? "r" : ""}">${escapeHtml(t)}</span>`).join("")}<small>보호구/보호복 착용<br>흡연 및 음식물 섭취 금지</small></div>`
+    : `<div class="sg-plate${big ? " big" : ""}"><img src="assets/signs/${s[0]}.webp" alt="${escapeHtml(s[2])} 표지" loading="lazy" decoding="async"></div>`;
   let kind = "all", q = "", built = false, list = S, cur = 0, pv = null;
   function draw() {
     const t = q.trim().toLowerCase();
-    list = S.filter((s) => (kind === "all" || s[0] === kind) && (!t || (s[2] + " " + s[3] + " " + s[4] + " " + s[5]).toLowerCase().includes(t)));
-    gridEl.innerHTML = list.length ? list.map((s, i) => `<button type="button" class="sg-card" data-i="${i}">${signHtml(s)}<b>${escapeHtml(s[2])}</b><span class="sg-en">${escapeHtml(s[3])}</span><span class="sg-ar" lang="ar" dir="rtl">${escapeHtml(s[4])}</span><small class="sg-k k-${s[0]}">${K[s[0]]}</small></button>`).join("") : `<p class="kc-dim">찾는 표지가 없어요.</p>`;
+    list = S.filter((s) => (kind === "all" || s[1] === kind) && (!t || (s[0] + " " + s[2] + " " + s[3] + " " + s[4] + " " + s[5] + " " + s[6]).toLowerCase().includes(t)));
+    gridEl.innerHTML = list.length ? list.map((s, i) => `<button type="button" class="sg-card k-${s[1]}" data-i="${i}"><span class="sg-no">${s[0]}</span>${signHtml(s)}<b>${escapeHtml(s[2])}</b><span class="sg-en">${escapeHtml(s[3])}</span><span class="sg-ar" lang="ar" dir="rtl">${escapeHtml(s[4])}</span></button>`).join("") : `<p class="kc-dim">찾는 표지가 없어요.</p>`;
   }
   function show(i) {
     if (!list.length) return; cur = (i + list.length) % list.length; const s = list[cur];
@@ -10558,15 +10563,15 @@ const lightInk = (function () {
       document.addEventListener("keydown", (e) => { if (!pv || pv.hidden) return; if (e.key === "Escape") pv.hidden = true; if (e.key === "ArrowRight") show(cur + 1); if (e.key === "ArrowLeft") show(cur - 1); });
       document.body.appendChild(pv);
     }
-    pv.innerHTML = `<div class="sa-pv sg-pv" role="dialog" aria-modal="true"><div class="sa-pv-h"><span class="sg-k k-${s[0]}">${K[s[0]]}</span><span class="sa-pv-n">${cur + 1} / ${list.length}</span><button type="button" class="sa-pv-x" aria-label="닫기">✕</button></div>
+    pv.innerHTML = `<div class="sa-pv sg-pv" role="dialog" aria-modal="true"><div class="sa-pv-h"><span class="sg-k k-${s[1]}">${K[s[1]]} · ${s[0]}</span><span class="sa-pv-n">${cur + 1} / ${list.length}</span><button type="button" class="sa-pv-x" aria-label="닫기">✕</button></div>
       <div class="sg-pv-body">${signHtml(s, true)}<div class="sg-pv-t"><div class="sg-pv-ko">${escapeHtml(s[2])}</div><div class="sg-pv-en">${escapeHtml(s[3])}</div><div class="sg-pv-ar" lang="ar" dir="rtl">${escapeHtml(s[4])}</div></div></div>
-      <p class="sg-pv-d">📍 ${escapeHtml(s[5])}</p><p class="kc-dim">${escapeHtml(KD[s[0]])}</p>
+      <dl class="sg-pv-dl"><dt>용도·사용장소</dt><dd>${escapeHtml(s[5])}</dd><dt>${s[1] === "staff" ? "표지 문구" : "사용장소 예시"}</dt><dd>${escapeHtml(s[6])}</dd><dt>색채</dt><dd>${escapeHtml(KD[s[1]])}</dd></dl>
       <div class="sa-pv-f"><button type="button" data-sg="-1">‹ 이전</button><button type="button" data-sg="1">다음 ›</button></div></div>`;
     pv.hidden = false;
   }
   function build() {
     built = true;
-    document.getElementById("sgChips").innerHTML = [["all", "전체"]].concat(Object.entries(K)).map(([k, n]) => `<button type="button" class="sg-chip${k === kind ? " on" : ""}" data-k="${k}">${n} <small>${k === "all" ? S.length : S.filter((s) => s[0] === k).length}</small></button>`).join("");
+    document.getElementById("sgChips").innerHTML = [["all", "전체"]].concat(Object.entries(K)).map(([k, n]) => `<button type="button" class="sg-chip${k === kind ? " on" : ""}" data-k="${k}">${n} <small>${k === "all" ? S.length : S.filter((s) => s[1] === k).length}</small></button>`).join("");
     document.getElementById("sgChips").addEventListener("click", (e) => { const b = e.target.closest("[data-k]"); if (!b) return; kind = b.dataset.k; document.querySelectorAll("#sgChips .sg-chip").forEach((x) => x.classList.toggle("on", x === b)); draw(); });
     document.getElementById("sgQ").addEventListener("input", (e) => { q = e.target.value; draw(); });
     gridEl.addEventListener("click", (e) => { const c = e.target.closest(".sg-card"); if (c) show(Number(c.dataset.i)); });
