@@ -10497,7 +10497,7 @@ const lightInk = (function () {
     warn: "노란 바탕 · 검은 삼각형 테두리 (화학물질은 흰 바탕 · 빨간 마름모) — 위험이 있는 곳·물질",
     must: "파란 바탕 · 흰 그림 — 반드시 해야 하는 것 (보호구 착용)",
     info: "녹색 바탕 · 흰 그림 (녹십자는 흰 바탕 · 녹색) — 안전·응급 시설 위치",
-    staff: "흰 바탕 · 검은 글씨 (출입금지는 빨간 글씨) — 허가받은 사람만 들어가는 곳",
+    staff: "흰 바탕 · 검은 글씨 — 허가받은 사람만 들어가는 곳",
   };
   // [번호, 종류, 한국어, English, العربية, 용도·사용장소, 사용장소 예시]
   const S = [
@@ -10545,10 +10545,7 @@ const lightInk = (function () {
     ["502", "staff", "석면취급/해체 작업장", "Authorized persons only — asbestos work area", "للمصرّح لهم فقط — منطقة أعمال الأسبستوس", "석면을 취급하거나 해체하는 작업장", "관계자외 출입금지 · 석면 취급/해체 중 · 보호구/보호복 착용 · 흡연 및 음식물 섭취 금지"],
     ["503", "staff", "금지대상물질의 취급 실험실 등", "Authorized persons only — prohibited substance laboratory", "للمصرّح لهم فقط — مختبر المواد المحظورة", "금지대상물질을 취급하는 실험실 등", "관계자외 출입금지 · 발암물질 취급 중 · 보호구/보호복 착용 · 흡연 및 음식물 섭취 금지"],
   ];
-  const STAFF_TXT = { "501": ["관계자외 출입금지", "(허가물질 명칭)", "제조/사용/보관 중"], "502": ["관계자외 출입금지", "석면 취급/해체 중"], "503": ["관계자외 출입금지", "발암물질 취급 중"] };
-  const signHtml = (s, big) => s[1] === "staff"
-    ? `<div class="sg-plate sg-txt${big ? " big" : ""}" aria-hidden="true">${STAFF_TXT[s[0]].map((t, i) => `<span class="${i === 0 ? "r" : ""}">${escapeHtml(t)}</span>`).join("")}<small>보호구/보호복 착용<br>흡연 및 음식물 섭취 금지</small></div>`
-    : `<div class="sg-plate${big ? " big" : ""}"><img src="assets/signs/${s[0]}.webp" alt="${escapeHtml(s[2])} 표지" loading="lazy" decoding="async"></div>`;
+  const signHtml = (s, big) => `<div class="sg-plate${big ? " big" : ""}${s[1] === "staff" ? " tall" : ""}"><img src="assets/signs/${s[0]}.webp?v=2" alt="${escapeHtml(s[2])} 표지" loading="lazy" decoding="async"></div>`;
   let kind = "all", q = "", built = false, list = S, cur = 0, pv = null;
   function draw() {
     const t = q.trim().toLowerCase();
