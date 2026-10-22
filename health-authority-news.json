@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T00:00:23.406Z",
+  "generatedAt": "2026-10-22T23:59:23.696Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -10,18 +10,11 @@
       "date": "2026-10-18T15:07:01.000Z"
     },
     {
-      "title": "FluON | Influenza Overview",
-      "source": "Vercel",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBVLXY0RFRhYnNXcUp4OFExMlFlRUtRZjFwLWp1VUI1ZDZVWk4xSS1zQzdOazZZZ05VN2U1MmNuT3BaTmVlclhYUkw2MmhUWXVvYXZWS2tOcWE?oc=5",
-      "date": "2026-09-11T03:45:29.000Z"
-    },
-    {
-      "title": "1339콜센터",
+      "title": "감시체계 개요",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBRQU0xeUFtWTNKNnozU3h6YWV2WVBncU1oenZuMmR0R2dNMzRVUzR4QlBwaDVydWFReXgydVh0aTQ3Z0wxVjV6T3RWVVBpOEh5Ny1PVVdB?oc=5",
-      "date": "2026-08-23T23:28:53.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wWHJiVHVhblkyUXVMejFfWnhQeUJGUl92cWR2NTd1elJvU3h5WklNOGs4NFRubHVBdmdtbnctV3MydGJHN21xOTNYQk9YMEx0NkR6S3dR?oc=5",
+      "date": "2025-12-16T15:12:03.000Z"
     },
     {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
@@ -38,6 +31,13 @@
       "date": "2026-09-30T14:38:13.000Z"
     },
     {
+      "title": "보도자료(전체)",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
+      "date": "2025-12-16T15:46:00.000Z"
+    },
+    {
       "title": "ICCON 감염예방 소식지",
       "source": "질병관리청",
       "agency": "",
@@ -49,14 +49,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-21T08:44:09.000Z"
-    },
-    {
-      "title": "레지오넬라증",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52SW9Ma2pUR1JIZ1AxZHJEQnhtaFh1N1A0b3VVWTByTHVyVG9qQWJ1VmtMOElGdzM4MnRNdkVBd2dUa1F6OU82Mk44UGppVFlKb0UwUGRn?oc=5",
-      "date": "2025-12-16T16:14:22.000Z"
+      "date": "2026-10-22T08:55:46.000Z"
     },
     {
       "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
@@ -66,13 +59,6 @@
       "date": "2024-06-10T02:47:27.000Z"
     },
     {
-      "title": "홍보물",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBpVFRoOHFHTUYxall6MTlWRjdOOHdJdU1hQUwwbnhHb1pqUVhNZjVtYVlXX0pwQk9xRUI4ajF1U0UwYks3cUJVdUttSWJEdUlZUnpRVURR?oc=5",
-      "date": "2026-02-10T05:30:11.000Z"
-    },
-    {
       "title": "채용공고",
       "source": "질병관리청",
       "agency": "",
@@ -80,11 +66,25 @@
       "date": "2025-12-16T15:48:42.000Z"
     },
     {
-      "title": "보도자료 - [10.16.금.조간] 2026년 상반기 감염병 예방행태 실태조사 결과 발표",
+      "title": "검역관리",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1TWk44TThaTXBaNk51aWdkQTRCb24za3FZbnRxbGR3Mlo3U2NOSndRM0hDb0FsbDJTSkJFQmIxQ1RFTXROQVFKaWduTVkxS0Y5NHYxenlPdnVrWWE0QVpsLUxyd1VIUXVHbmZqaGdmTi04WVNyeW5hZQ?oc=5",
-      "date": "2026-10-15T03:13:59.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UTUhzTlh1ak5ITndXMzNDOE9wVWNyaFpTVmZMb01xcUVHLWxqcE05ZWdoc0wwdC0wemI3OThIRU1QNlNjWWFnVG1tM3RaYlpKOXNLMFpB?oc=5",
+      "date": "2026-07-13T05:36:24.000Z"
+    },
+    {
+      "title": "문서뷰어",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5XVU9QTjBtVGhKdU9oYjh6Ym8xX1ZBckJva1pJQ1VjVGFjZmpsYXFrLTJrazRBUUtVMkRhdE9jVmJTMUE0aW9Rc2o5VmQwc2FHZUl2LVRVd1FPS3dzVmJxeS1n?oc=5",
+      "date": "2026-10-19T01:51:44.000Z"
+    },
+    {
+      "title": "보도자료 - 생명을 살리는 골든타임을 아시나요 질병청「가슴 뛰게 하는 4분」 캠페인 시작(10.16.금)",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBkWGRDc1NmWnAxVDZRQUFwLV9qSDdQdnFQeGVKbGJZaTFhV3dxcUxkRnYzbVBLWU1NWWxLbTR4NWNDRTlXTUhGVGRCaG9WRFlpNEpUOUFxQjIxV3RtVTRxczcwQ0Z3OW01UjJ5S3l0LWdBZmhCUUcxaw?oc=5",
+      "date": "2026-10-16T00:01:17.000Z"
     }
   ]
 }
