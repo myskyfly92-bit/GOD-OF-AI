@@ -11058,5 +11058,25 @@
 "start": "2025-12-10",
 "end": "2029-12-18",
 "contractDate": "2025-11-26"
+},
+"20261021800641": {
+"kind": "공사수주",
+"name": "Hazrat Shahjalal International Airport Expansion Project",
+"amount": "1,919,684,875,054",
+"counterparty": "Civil Aviation Authority, Bangladesh",
+"region": "방글라데시 다카",
+"start": "2020-04-07",
+"end": "2024-01-02",
+"contractDate": "2020-01-14"
+},
+"20261021800307": {
+"kind": "공사수주",
+"name": "대전 갑천4BL 공공지원민간임대주택 건설사업",
+"amount": "230,017,500,000",
+"counterparty": "㈜대전도안갑천4공공지원민간임대위탁관리부동산투자회사",
+"region": "대전광역시 서구 도안동 2358 일원",
+"start": "2026-10-21",
+"end": "2029-05-30",
+"contractDate": "2026-10-21"
 }
 }
