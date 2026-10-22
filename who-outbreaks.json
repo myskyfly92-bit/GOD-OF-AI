@@ -9,7 +9,7 @@
   "items": [
     {
       "kind": "WHO 소식",
-      "title": "United Arab Emirates announces national commitments to advance evidence-based integrative medicine",
+      "title": "UAE Integrative Medicine Council announces commitments to advance evidence-based integrative medicine",
       "date": "2026-10-21T12:00:00Z",
       "summary": "Dr Ahmed Alosi; Dr Thekra Mohamed; Dr Geetha Krishnan G. Pillai.©WHOAt the Al Shifaa Summit for Integrative Medicine in Abu Dhabi, the United Arab Emirates (UAE) set out four national commitments aligned with the WHO Global Traditional Medicine Strategy 2025–2034 and highlighted plans for continued collaboration between the UAE Integrative Medicine Council and the World Health Organization. The United Arab Emirates has announced a set of national commitments to strengthen the evidence-based inte",
       "link": "https://www.who.int/news/item/21-10-2026-united-arab-emirates-announces-national-commitments-to-advance-evidence-based-integrative-medicine",
@@ -156,8 +156,8 @@
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
       "date": "2026-09-25T15:30:18Z",
       "summary": "Since the last Disease Outbreak News was published on 11 September 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded further, with two additional health zones affected. These include Bulu health zone in a new province, Sud Ubangi, located on the north-west part of the country and Dungu health zone in Haut-Uélé province, bordering South Sudan. This brings the total number of affected health zones to 63 across seven provinces out of 26 provinces of the countr",
-      "link": "https://www.who.int/2026-DON618",
-      "donId": "2026-DON618"
+      "link": "https://www.who.int/2026-DON621",
+      "donId": "2026-DON621"
     },
     {
       "kind": "감염병 발생",
@@ -208,5 +208,5 @@
       "donId": "2026-DON612"
     }
   ],
-  "generatedAt": "2026-10-22T16:14:59.103848+00:00"
+  "generatedAt": "2026-10-22T20:57:42.763887+00:00"
 }
