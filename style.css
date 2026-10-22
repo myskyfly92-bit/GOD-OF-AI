@@ -1680,6 +1680,8 @@ html body {
   padding: 8px 10px; border-bottom: 1px solid var(--border-soft); white-space: nowrap;
 }
 .global-list td { padding: 8px 10px; border-bottom: 1px solid var(--border-soft); color: var(--text); }
+/* 국가·공종·상태·금액·기간은 한 줄로 (줄바꿈은 프로젝트 이름 칸에서만) */
+.global-list th:nth-child(n+3), .global-list td:nth-child(n+3) { white-space: nowrap; }
 .global-list tbody tr { cursor: pointer; }
 .global-list tbody tr:hover { background: rgba(53, 208, 192, 0.06); }
 .glist-company { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
