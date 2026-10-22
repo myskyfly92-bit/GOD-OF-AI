@@ -494,6 +494,11 @@ html[data-theme="light"] :is(.topbar, .mascot-bubble, .vc-win, .vc-pop, .desk-ti
 :where(html[data-theme="light"]) .sg-k.k-warn { color: #c29100; }
 :where(html[data-theme="light"]) .sg-k.k-must { color: #004daf; }
 :where(html[data-theme="light"]) .sg-k.k-info { color: #259d55; }
+:where(html[data-theme="light"]) .sg-card.k-ghs { --sgc: #ad1a15; }
+:where(html[data-theme="light"]) .sg-k.k-ghs { color: #b30600; }
+:where(html[data-theme="light"]) .sg-sz.k-no { --sgc: #ae141b; }
+:where(html[data-theme="light"]) .sg-sz.k-warn { --sgc: #c29b00; }
+:where(html[data-theme="light"]) .sg-sz.k-must { --sgc: #1557ad; }
 
 /* ---- 손으로 맞춘 부분 ---- */
 /* ===== 라이트 모드 손 보정 (tools/light-fix.css → light.css 맨 끝에 붙음) ===== */

@@ -4832,3 +4832,22 @@ body.bg-reveal .set-item.bg-peek-btn { color: var(--cyan); }
 .sg-pv-dl dt { color: var(--text-dim); font-weight: 700; }
 .sg-pv-dl dd { margin: 0; color: var(--text); }
 @media (max-width: 520px) { .sg-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } .sg-plate { width: 92px; height: 92px; } .sg-plate.big { width: 200px; height: 200px; } .sg-pv-ko { font-size: 24px; } .sg-pv-dl { grid-template-columns: 1fr; } }
+.sg-card.k-ghs { --sgc: #e0302a; }
+.sg-k.k-ghs { background: rgba(224, 48, 42, 0.15); color: #ff7a75; }
+.sg-ref { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 14px; margin-top: 22px; }
+.sg-ref-box { background: var(--panel-2); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; }
+.sg-ref-box h4 { margin: 0 0 12px; font-size: 16px; color: var(--text); }
+.sg-ref-box h4 small { font-weight: 400; color: var(--text-dim); font-size: 13px; }
+.sg-col { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.sg-col td { padding: 7px 6px; border-bottom: 1px solid var(--border-soft); color: var(--text); vertical-align: top; }
+.sg-col td:first-child { white-space: nowrap; font-weight: 700; width: 1%; }
+.sg-col td small { display: block; font: 500 11.5px var(--font-mono); color: var(--text-dim); margin: 2px 0 0 24px; }
+.sg-col i { display: inline-block; width: 16px; height: 16px; border-radius: 4px; vertical-align: -3px; margin-right: 8px; }
+.sg-L { display: flex; align-items: center; gap: 8px; font-size: 14.5px; color: var(--text-muted); margin-bottom: 12px; }
+.sg-L input { width: 90px; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font: 700 18px var(--font-mono); padding: 6px 10px; }
+.sg-szs { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+.sg-sz { border: 1px solid var(--border); border-left: 4px solid var(--sgc); border-radius: 9px; padding: 8px 10px; display: flex; flex-direction: column; gap: 2px; }
+.sg-sz.k-no { --sgc: #d61e26; } .sg-sz.k-warn { --sgc: #f5c400; } .sg-sz.k-must { --sgc: #1f6fd6; } .sg-sz.k-info { --sgc: #12924c; }
+.sg-sz span { font-size: 12.5px; color: var(--text-muted); }
+.sg-sz small { font: 11px var(--font-mono); color: var(--text-dim); }
+.sg-sz b { font: 800 19px var(--font-mono); color: var(--text); }

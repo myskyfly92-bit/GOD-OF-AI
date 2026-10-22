@@ -10491,20 +10491,21 @@ const lightInk = (function () {
    용도·사용장소 예시: 구 산업안전보건기준 [별표 2] · 한국어·English·العربية */
 (function safetySigns() {
   const gridEl = document.getElementById("sgGrid"); if (!gridEl) return;
-  const K = { no: "금지표지", warn: "경고표지", must: "지시표지", info: "안내표지", staff: "관계자외 출입금지" };
+  const K = { no: "금지표지", warn: "경고표지", must: "지시표지", info: "안내표지", staff: "관계자외 출입금지", ghs: "GHS 그림문자 (화학물질)" };
   const KD = {
     no: "흰 바탕 · 빨간 원과 사선 · 검은 그림 — 하면 안 되는 행동",
     warn: "노란 바탕 · 검은 삼각형 테두리 (화학물질은 흰 바탕 · 빨간 마름모) — 위험이 있는 곳·물질",
     must: "파란 바탕 · 흰 그림 — 반드시 해야 하는 것 (보호구 착용)",
     info: "녹색 바탕 · 흰 그림 (녹십자는 흰 바탕 · 녹색) — 안전·응급 시설 위치",
     staff: "흰 바탕 · 검은 글씨 — 허가받은 사람만 들어가는 곳",
+    ghs: "흰 바탕 · 빨간 마름모 테두리 · 검은 그림 — 화학물질 용기·MSDS·경고표지에 쓰는 국제 공통 그림 (GHS)",
   };
   // [번호, 종류, 한국어, English, العربية, 용도·사용장소, 사용장소 예시]
   const S = [
     ["101", "no", "출입금지", "No entry", "ممنوع الدخول", "출입을 통제해야 할 장소", "조립·해체 작업장 입구"],
     ["102", "no", "보행금지", "No pedestrians", "ممنوع مرور المشاة", "사람이 걸어 다녀서는 안 될 장소", "중장비 운전 작업장"],
-    ["103", "no", "차량통행금지", "No vehicles", "ممنوع مرور المركبات", "운반기기·차량의 통행을 금지해야 할 장소", "여럿이 걸어 다니는 장소"],
-    ["104", "no", "사용금지", "Do not use", "ممنوع الاستخدام", "수리·고장 등으로 만지거나 작동하면 안 되는 기계·기구·설비", "고장 난 기계"],
+    ["103", "no", "차량통행금지", "No vehicles", "ممنوع مرور المركبات", "운반기기·차량의 통행을 금지해야 할 장소", "집단 보행 장소"],
+    ["104", "no", "사용금지", "Do not use", "ممنوع الاستخدام", "수리·고장 등으로 만지거나 작동시키면 안 되는 기계·기구·설비", "고장 난 기계"],
     ["105", "no", "탑승금지", "No riding", "ممنوع الركوب", "엘리베이터 등에 타거나 어떤 장소에 올라가는 것을 금지", "고장 난 엘리베이터"],
     ["106", "no", "금연", "No smoking", "ممنوع التدخين", "담배를 피워서는 안 될 장소", "사무실·숙소·위험물 근처"],
     ["107", "no", "화기금지", "No open flames", "ممنوع استخدام اللهب المكشوف", "화재 염려가 있어 불을 다루면 안 되는 장소", "화학물질 취급 장소"],
@@ -10512,8 +10513,8 @@ const lightInk = (function () {
     ["201", "warn", "인화성물질 경고", "Flammable material", "خطر: مواد قابلة للاشتعال", "불을 극히 주의해야 하는 물질이 있는 장소", "휘발유 저장탱크"],
     ["202", "warn", "산화성물질 경고", "Oxidizing material", "خطر: مواد مؤكسدة", "가열·압축하거나 강산·알칼리를 더하면 강한 산화성을 띠는 물질이 있는 장소", "질산 저장탱크"],
     ["203", "warn", "폭발성물질 경고", "Explosive material", "خطر: مواد متفجرة", "폭발성 물질이 있는 장소", "폭발물 저장실"],
-    ["204", "warn", "급성독성물질 경고", "Acute toxic material", "خطر: مواد سامة", "급성 독성 물질이 있는 장소", "농약 제조·보관실"],
-    ["205", "warn", "부식성물질 경고", "Corrosive material", "خطر: مواد أكّالة", "몸이나 물체에 닿으면 부식시키는 물질이 있는 장소", "황산 저장실"],
+    ["204", "warn", "급성독성물질 경고", "Acute toxic material", "خطر: مواد سامة", "급성 독성 물질이 있는 장소", "농약 제조·보관소"],
+    ["205", "warn", "부식성물질 경고", "Corrosive material", "خطر: مواد أكّالة", "몸이나 물체에 닿으면 부식시키는 물질이 있는 장소", "황산 저장소"],
     ["206", "warn", "방사성물질 경고", "Radioactive material", "خطر: مواد مشعة", "방사능 물질이 있는 장소", "방사성 동위원소 사용실"],
     ["207", "warn", "고압전기 경고", "High voltage", "خطر: جهد كهربائي عالٍ", "고전압이 흐르는 장소", "감전 염려 지역 입구"],
     ["208", "warn", "매달린 물체 경고", "Overhead / suspended load", "خطر: حمولة معلّقة", "머리 위에 크레인 등으로 매달린 물체가 있는 장소", "크레인이 있는 작업장 입구"],
@@ -10523,7 +10524,7 @@ const lightInk = (function () {
     ["212", "warn", "몸균형상실 경고", "Loss of balance (slip / trip)", "خطر: فقدان التوازن", "미끄러운 곳 등 넘어지기 쉬운 장소", "경사진 통로 입구"],
     ["213", "warn", "레이저광선 경고", "Laser beam", "خطر: أشعة ليزر", "레이저 광선에 노출될 우려가 있는 장소", "레이저 실험실 입구"],
     ["214", "warn", "발암성·변이원성·생식독성·전신독성·호흡기과민성 물질 경고", "Health hazard (carcinogen, mutagen etc.)", "خطر: مواد مسرطنة وضارة بالصحة", "몸에 오래 해로운 물질이 있는 장소", "납 분진 발생 장소"],
-    ["215", "warn", "위험장소 경고", "Danger area", "خطر: منطقة خطرة", "그 밖의 위험한 물체가 있는 장소", "맨홀 앞"],
+    ["215", "warn", "위험장소 경고", "Danger area", "خطر: منطقة خطرة", "그 밖의 위험한 물체가 있는 장소", "맨홀 앞 · 고열 금속찌꺼기 폐기 장소"],
     ["301", "must", "보안경 착용", "Wear safety goggles", "يجب ارتداء نظارات السلامة", "보안경을 써야만 작업·출입할 수 있는 장소", "그라인더 작업장 입구"],
     ["302", "must", "방독마스크 착용", "Wear gas mask", "يجب ارتداء قناع الغاز", "방독마스크를 써야만 작업·출입할 수 있는 장소", "유해물질 작업장 입구"],
     ["303", "must", "방진마스크 착용", "Wear dust mask", "يجب ارتداء قناع الغبار", "방진마스크를 써야만 작업·출입할 수 있는 장소", "분진이 많은 곳"],
@@ -10541,11 +10542,20 @@ const lightInk = (function () {
     ["406", "info", "비상구", "Emergency exit", "مخرج الطوارئ", "비상 출입구", "비상구 위"],
     ["407", "info", "좌측비상구", "Emergency exit (left)", "مخرج الطوارئ (يسار)", "비상구가 왼쪽에 있음을 알려야 하는 장소", "통로·복도"],
     ["408", "info", "우측비상구", "Emergency exit (right)", "مخرج الطوارئ (يمين)", "비상구가 오른쪽에 있음을 알려야 하는 장소", "통로·복도"],
+    ["GHS01", "ghs", "폭발성 · 자기반응성 · 유기과산화물", "Explosives", "متفجرات", "폭발하거나 열·충격·마찰로 폭발적으로 분해될 수 있는 물질", "화약·발파 자재, 일부 유기과산화물"],
+    ["GHS02", "ghs", "인화성 · 물반응성 · 자연발화성 · 자기발열성", "Flammables", "مواد قابلة للاشتعال", "불이 잘 붙거나 물·공기와 닿으면 불이 나는 물질", "휘발유·시너·LPG·아세틸렌·페인트"],
+    ["GHS03", "ghs", "산화성", "Oxidizers", "مواد مؤكسدة", "다른 물질을 더 잘 타게 만들거나 불을 키우는 물질", "산소, 과산화수소, 질산"],
+    ["GHS04", "ghs", "고압가스", "Gases under pressure", "غازات مضغوطة", "용기 안에 압축·액화된 가스 — 가열하면 터지거나 차가운 가스로 동상", "산소·질소·아르곤·CO₂ 실린더"],
+    ["GHS05", "ghs", "금속부식성 · 피부부식성 · 심한 눈 손상성", "Corrosives", "مواد أكّالة", "피부·눈에 화상을 입히거나 금속을 녹이는 물질", "황산·염산·가성소다, 배터리액"],
+    ["GHS06", "ghs", "급성독성", "Acute toxicity (severe)", "سمية حادة", "조금만 먹거나 들이마시거나 피부에 닿아도 생명이 위험한 물질", "농약, 시안화물, 일부 살충제"],
+    ["GHS07", "ghs", "경고 (자극성 · 유해성)", "Irritant / harmful", "تحذير: مهيّج / ضار", "피부·눈 자극, 졸음·어지러움 등 비교적 덜 심한 유해성", "세제, 일부 용제·접착제"],
+    ["GHS08", "ghs", "호흡기과민성 · 발암성 · 생식세포변이원성 · 생식독성 · 특정표적장기독성", "Health hazard", "خطر على الصحة", "오래 노출되면 암·장기 손상·생식 독성 등을 일으킬 수 있는 물질", "벤젠, 석면, 납, 일부 용제"],
+    ["GHS09", "ghs", "수생환경유해성", "Hazardous to the aquatic environment", "خطر على البيئة المائية", "물에 흘러들면 물고기·수생 생물에 해로운 물질", "폐유, 일부 살충제·방부제"],
     ["501", "staff", "허가대상물질 작업장", "Authorized persons only — permitted substance work area", "للمصرّح لهم فقط — منطقة عمل بمواد خاضعة للترخيص", "허가대상물질을 제조·사용·보관하는 작업장", "관계자외 출입금지 · (허가물질 명칭) 제조/사용/보관 중 · 보호구/보호복 착용 · 흡연 및 음식물 섭취 금지"],
     ["502", "staff", "석면취급/해체 작업장", "Authorized persons only — asbestos work area", "للمصرّح لهم فقط — منطقة أعمال الأسبستوس", "석면을 취급하거나 해체하는 작업장", "관계자외 출입금지 · 석면 취급/해체 중 · 보호구/보호복 착용 · 흡연 및 음식물 섭취 금지"],
     ["503", "staff", "금지대상물질의 취급 실험실 등", "Authorized persons only — prohibited substance laboratory", "للمصرّح لهم فقط — مختبر المواد المحظورة", "금지대상물질을 취급하는 실험실 등", "관계자외 출입금지 · 발암물질 취급 중 · 보호구/보호복 착용 · 흡연 및 음식물 섭취 금지"],
   ];
-  const signHtml = (s, big) => `<div class="sg-plate${big ? " big" : ""}${s[1] === "staff" ? " tall" : ""}"><img src="assets/signs/${s[0]}.webp?v=2" alt="${escapeHtml(s[2])} 표지" loading="lazy" decoding="async"></div>`;
+  const signHtml = (s, big) => `<div class="sg-plate${big ? " big" : ""}${s[1] === "staff" ? " tall" : ""}"><img src="assets/signs/${s[0].toLowerCase()}.webp?v=2" alt="${escapeHtml(s[2])} 표지" loading="lazy" decoding="async"></div>`;
   let kind = "all", q = "", built = false, list = S, cur = 0, pv = null;
   function draw() {
     const t = q.trim().toLowerCase();
@@ -10572,6 +10582,15 @@ const lightInk = (function () {
     document.getElementById("sgChips").addEventListener("click", (e) => { const b = e.target.closest("[data-k]"); if (!b) return; kind = b.dataset.k; document.querySelectorAll("#sgChips .sg-chip").forEach((x) => x.classList.toggle("on", x === b)); draw(); });
     document.getElementById("sgQ").addEventListener("input", (e) => { q = e.target.value; draw(); });
     gridEl.addEventListener("click", (e) => { const c = e.target.closest(".sg-card"); if (c) show(Number(c.dataset.i)); });
+    // 표지 크기 계산 (기본모형 규격: L = 표지를 알아봐야 하는 거리)
+    const sz = () => {
+      const L = parseFloat(document.getElementById("sgL").value) * 100; const o = document.getElementById("sgSizeOut");
+      if (!(L > 0)) { o.innerHTML = ""; return; }
+      const c = (x) => (Math.ceil(x * 10) / 10).toLocaleString("ko-KR") + " cm";
+      o.innerHTML = [["k-no", "금지표지 (원)", "지름 d ≥ 0.025L", c(0.025 * L)], ["k-warn", "경고표지 (삼각형)", "한 변 a ≥ 0.034L", c(0.034 * L)], ["k-warn", "경고표지 (화학물질 마름모)", "한 변 a ≥ 0.025L", c(0.025 * L)], ["k-must", "지시표지 (원)", "지름 d ≥ 0.025L", c(0.025 * L)], ["k-info", "안내표지 (정사각형)", "한 변 b ≥ 0.0224L", c(0.0224 * L)], ["k-info", "안내표지 (직사각형)", "가로×세로 ≥ 0.0005L²", (Math.ceil(0.0005 * L * L)).toLocaleString("ko-KR") + " cm²"]]
+        .map(([k, n, f, v]) => `<div class="sg-sz ${k}"><span>${n}</span><small>${f}</small><b>${v}</b></div>`).join("");
+    };
+    document.getElementById("sgL").addEventListener("input", sz); sz();
     draw();
   }
   const open = () => { if (!built) build(); };
