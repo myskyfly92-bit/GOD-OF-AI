@@ -8523,8 +8523,10 @@ makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, subN
   };
   const press = (sel) => () => { const b = document.querySelector(sel); if (b) b.click(); };
   const glow = (sel) => () => { const el = document.querySelector(sel); if (!el) return; window.scrollTo({ top: 0, behavior: "smooth" }); el.classList.remove("wn-glow"); void el.offsetWidth; el.classList.add("wn-glow"); setTimeout(() => el.classList.remove("wn-glow"), 4200); };
-  // ---- 새 기능 소개 (바꿀 때: id·until·items 만 고치면 됨) ----
-  const NEW = { id: "wn-20261013", date: "10월 13일", until: "2026-10-22", items: [
+  // ---- 새 기능 소개 (바꿀 때: id·start·items 만 고치면 됨) ----
+  // 띄우는 기간: start 부터 SHOW_DAYS 일 (2026-10-22: 너무 오래 떠 있지 않게 5일로)
+  const SHOW_DAYS = 5;
+  const NEW = { id: "wn-20261013", date: "10월 13일", start: "2026-10-13", items: [
     { ic: "💬", t: "1:1 상담", d: "오른쪽 아래 <b>💬 1:1 상담</b> — 궁금한 점·현장 위험을 남기면 HSE 담당자가 바로 답해요", go: press(".talk-fab"), btn: "열기" },
     { ic: "🗺️", t: "작업구역 새 단장", d: "<b>안전 → 작업구역</b> — 이라크 지도에서 구역 고르기 · <b>동시작업·돌풍·폭염 경고</b> · 지난주 작업 그대로 가져오기", go: tab("safety", "view-workzone") },
     { ic: "🌍", t: "세계 의료 수준", d: "<b>보건 → 세계 의료 수준</b> — 193개 나라 의료 인프라 점수·지도, 이라크·한국과 나란히 비교", go: tab("health", "view-health-world") },
@@ -8534,7 +8536,8 @@ makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, subN
     { ic: "📊", t: "숫자에 마우스", d: "위쪽 <b>방문자 수</b>·<b>인터넷 속도</b>에 마우스를 올리면 방문 추이·끊김 기록이 떠요", go: glow("#visitCounter"), btn: "위치 보기" },
     { ic: "📱", t: "휴대폰 화면", d: "휴대폰으로 열면 <b>1:1 상담·유튜브·화재 사례·세계 의료</b>까지 · 휴대폰 뒤로 버튼도 자연스럽게" },
   ] };
-  const showNew = today <= NEW.until && LS.get("wnHide") !== NEW.id;
+  NEW.until = new Date(Date.parse(NEW.start + "T00:00:00Z") + (SHOW_DAYS - 1) * 864e5).toISOString().slice(0, 10);
+  const showNew = today >= NEW.start && today <= NEW.until && LS.get("wnHide") !== NEW.id;
   const rows = [];
   if (showNew) rows.push(`<div class="iq-al k-new" data-new="1">
       <span class="wn-badge">🆕 새 기능 <small>${NEW.date}</small></span>
