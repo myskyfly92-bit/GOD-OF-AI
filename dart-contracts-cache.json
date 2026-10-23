@@ -11078,5 +11078,25 @@
 "start": "2026-10-21",
 "end": "2029-05-30",
 "contractDate": "2026-10-21"
+},
+"20261022800219": {
+"kind": "공사수주",
+"name": "사우디 Marjan Increment Program PKG #12 (Flare and Piperack)",
+"amount": "1,664,427,487,406",
+"counterparty": "SAUDI ARAMCO",
+"region": "사우디아라비아 Marjan 지역",
+"start": "2019-05-27",
+"end": "2027-03-30",
+"contractDate": "2019-06-27"
+},
+"20261022800203": {
+"kind": "공사수주",
+"name": "새만금지구 간척종합개발사업 농생명용지 3공구 조성공사",
+"amount": "106,172,871,600",
+"counterparty": "한국농어촌공사",
+"region": "전북 군산 옥서면 일원",
+"start": "2021-11-22",
+"end": "2027-12-17",
+"contractDate": "2021-11-22"
 }
 }
