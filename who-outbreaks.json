@@ -8,12 +8,36 @@
   "errors": {},
   "items": [
     {
+      "kind": "감염병 발생",
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria",
+      "date": "2026-10-23T15:48:48Z",
+      "summary": "Since the publication of the previous Disease Outbreak News on 8 October 2026, the Bundibugyo virus disease (BVD) outbreak has expanded geographically in the Democratic Republic of the Congo, as well as in the African Region, with Kenya and Nigeria reporting imported cases. Sustained, high-level transmission continues in the Democratic Republic of the Congo. As of 20 October 2026, a total of 9704 confirmed cases, including 4687 deaths (crude case fatality ratio: 48.3%), have been reported across",
+      "link": "https://www.who.int/2026-DON622",
+      "donId": "2026-DON622"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO launches working papers on traditional medicine",
+      "date": "2026-10-23T12:00:00Z",
+      "summary": "The WHO Global Traditional Medicine Centre is launching a series of working papers designed to document and examine traditional, complementary and integrative medicine (TCIM) worldwide. The inaugural publication, Cupping therapy: descriptive synthesis of training, provides a first-of-its-kind overview of training approaches for cupping therapy primarily based on Traditional Chinese Medicine (TCM). The series covers two streams: comprehensive traditional medicine systems and specific therapeutic ",
+      "link": "https://www.who.int/news/item/23-10-2026-who-launches-working-papers-on-traditional-medicine",
+      "newsType": "Departmental update"
+    },
+    {
       "kind": "WHO 소식",
       "title": "WHO and ENHYPEN join efforts to inspire young blood donors globally",
       "date": "2026-10-23T07:38:44Z",
       "summary": "World Health Organization (WHO) Director-General Dr Tedros Adhanom Ghebreyesus met with global K-pop group ENHYPEN in Seoul on 22 October to celebrate the success of their collaboration for World Blood Donor Day 2026 and recognize the group's role in inspiring young people around the world to donate blood and save lives.",
       "link": "https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally",
       "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Global Diagnostics Coalition calls for collective action to close the diagnostic gap",
+      "date": "2026-10-22T22:00:00Z",
+      "summary": "The Global Diagnostics Coalition (GDC) convened leaders from government, global health, civil society, industry and partner organizations at the World Health Summit 2026 to advance collective action to close persistent gaps in access to diagnostic services.Diagnostics are fundamental to quality health care, universal health coverage, health security and pandemic preparedness. Yet 47% of the world’s population still lacks access to a timely, reliable diagnosis, limiting opportunities for early de",
+      "link": "https://www.who.int/news/item/22-10-2026-global-diagnostics-coalition-calls-for-collective-action-to-close-the-diagnostic-gap",
+      "newsType": "Departmental update"
     },
     {
       "kind": "WHO 소식",
@@ -112,28 +136,12 @@
       "newsType": "Feature story"
     },
     {
-      "kind": "WHO 소식",
-      "title": "INTERPOL and WHO sign agreement to strengthen global health and security protection",
-      "date": "2026-10-16T08:00:00Z",
-      "summary": "INTERPOL and the World Health Organization (WHO) have signed a cooperation agreement aimed at tackling some of the most pressing threats at the intersection of public health and security.",
-      "link": "https://www.who.int/news/item/16-10-2026-interpol-and-who-sign-agreement-to-strengthen-global-health-and-security-protection",
-      "newsType": "Joint News Release"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Middle East respiratory syndrome coronavirus - Kingdom of Saudi Arabia",
       "date": "2026-10-15T16:22:00Z",
       "summary": "Between 1 January and 5 October 2026, the Kingdom of Saudi Arabia reported eight laboratory-confirmed cases of Middle East Respiratory Syndrome Coronavirus (MERS-CoV) infection, including one death. Cases were detected across six locations: Al Jouf (1), Arar (1), Hafr Al-Batin (1), Riyadh (2), Tabuk (1) and Taif (2). No epidemiological links were identified between any of the cases. All eight cases were symptomatic, most commonly presenting with fever (6/8), dyspnea (5/8), and cough (4/8). None ",
       "link": "https://www.who.int/middle-east-respiratory-syndrome-coronavirus---kingdom-of-saudi-arabia",
       "donId": "2026-DON618"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Requests for inclusion of new neglected tropical diseases put on hold pending review of criteria",
-      "date": "2026-10-15T12:41:04Z",
-      "summary": "The Strategic and Technical Advisory Group for Neglected Tropical Diseases (STAG-NTD) has recommended a temporary pause in the consideration of requests to add new diseases to the World Health Organization (WHO) list of neglected tropical diseases (NTDs), pending a comprehensive review of the criteria and processes used to determine inclusion.",
-      "link": "https://www.who.int/news/item/15-10-2026-requests-for-inclusion-of-new-neglected-tropical-diseases-put-on-hold-pending-review-of-criteria",
-      "newsType": "Departmental update"
     },
     {
       "kind": "감염병 발생",
@@ -198,15 +206,7 @@
       "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo remains active, with sustained transmission driving increases in reported cases and deaths. As of 15 July 2026, a cumulative total of 2124 confirmed cases, including 828 deaths, have been reported from the Democratic Republic of the Congo. On 13 July 2026, German authorities informed WHO of a laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a humanitarian worker from the United States of A",
       "link": "https://www.who.int/2026-DON613",
       "donId": "2026-DON613"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
-      "date": "2026-07-03T15:31:57Z",
-      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with sustained transmission and increasing numbers of reported cases. As of 1 July, a cumulative of 1460 confirmed cases, including 452 deaths, have been reported from the Democratic Republic of the Congo. As of 2 July, Uganda has reported 20 confirmed cases including two deaths, as well as one probable case who has died. In addition, on 24 June 2026, French authorities notified WHO o",
-      "link": "https://www.who.int/2026-DON612",
-      "donId": "2026-DON612"
     }
   ],
-  "generatedAt": "2026-10-23T16:04:59.071965+00:00"
+  "generatedAt": "2026-10-23T20:46:12.719923+00:00"
 }
