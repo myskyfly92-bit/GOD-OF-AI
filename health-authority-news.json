@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-10-22T23:59:23.696Z",
+  "generatedAt": "2026-10-23T23:51:41.798Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
+    {
+      "title": "- 보건복지부 대표홈페이지",
+      "source": "",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUlkwMlgwVUQwX2lwM1lNX2FwYVVEbzRvMy1oalF3bm91YTItdzAyQkdEdTV5aEpNc1NtN1hFNGdHa1ZfeWpldU42YmFDUW5XdFpvRlcwSFdFejRvNlFIQXJSblZmempIanpuYUdWX25pa1YtZ3dOdWVGT0p6Q3pNSEdSNFY0WkdaZFE?oc=5",
+      "date": "2026-10-22T22:58:40.000Z"
+    },
     {
       "title": "- 보건복지부 대표홈페이지",
       "source": "",
@@ -31,13 +38,6 @@
       "date": "2026-09-30T14:38:13.000Z"
     },
     {
-      "title": "보도자료(전체)",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
-      "date": "2025-12-16T15:46:00.000Z"
-    },
-    {
       "title": "ICCON 감염예방 소식지",
       "source": "질병관리청",
       "agency": "",
@@ -49,7 +49,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-22T08:55:46.000Z"
+      "date": "2026-10-23T08:45:28.000Z"
     },
     {
       "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
@@ -73,18 +73,18 @@
       "date": "2026-07-13T05:36:24.000Z"
     },
     {
+      "title": "신고현황",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MbExBX0JEd0RiZmxBQ3djZnFIQjdYUGwycC1BdUlvMDFDV0VOLUFmbU5QSU00TmNINE5BdmE5NlRVSThkN0c3TVJDa3dHRFJJWlNKWkZ3?oc=5",
+      "date": "2025-12-16T16:42:42.000Z"
+    },
+    {
       "title": "문서뷰어",
       "source": "질병관리청",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5XVU9QTjBtVGhKdU9oYjh6Ym8xX1ZBckJva1pJQ1VjVGFjZmpsYXFrLTJrazRBUUtVMkRhdE9jVmJTMUE0aW9Rc2o5VmQwc2FHZUl2LVRVd1FPS3dzVmJxeS1n?oc=5",
       "date": "2026-10-19T01:51:44.000Z"
-    },
-    {
-      "title": "보도자료 - 생명을 살리는 골든타임을 아시나요 질병청「가슴 뛰게 하는 4분」 캠페인 시작(10.16.금)",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBkWGRDc1NmWnAxVDZRQUFwLV9qSDdQdnFQeGVKbGJZaTFhV3dxcUxkRnYzbVBLWU1NWWxLbTR4NWNDRTlXTUhGVGRCaG9WRFlpNEpUOUFxQjIxV3RtVTRxczcwQ0Z3OW01UjJ5S3l0LWdBZmhCUUcxaw?oc=5",
-      "date": "2026-10-16T00:01:17.000Z"
     }
   ]
 }
