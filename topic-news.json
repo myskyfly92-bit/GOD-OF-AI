@@ -1,13 +1,31 @@
 {
-  "generatedAt": "2026-10-23T19:30:54.313Z",
+  "generatedAt": "2026-10-23T23:57:27.997Z",
   "sa": {
     "label": "중대재해·산업재해",
     "items": [
       {
+        "title": "포항·경주 건설 중대재해 10건 중 8건 읍·면서 발생",
+        "source": "경북신문",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8xN3pyU1UxOThWb1YwRGhTaFRtUTJ3WFZtVkZpeGpGQjhGRU01ZWxfWGFIYXF3RjVWbExkdXZjazVKWlBJeEt3RzVsekdQa0dkMWFaaERjZk4?oc=5",
+        "date": "2026-10-23T23:02:04.000Z"
+      },
+      {
+        "title": "벌목 현장 중대재해 막는다…유관기관 합동 안전점검",
+        "source": "씨원뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5RY1p3NEtzUkRReFBDQTI5TU5tM2k2WTlBdHJkZllramFNVEl4blVHUUQ5TWs0cy1TOEphVE5lXzVTTkExVU9HRll2VFdUYnBYeVFYZDVQYVRjQXFQa1JmNHJZaVMtWG8?oc=5",
+        "date": "2026-10-23T20:58:28.000Z"
+      },
+      {
+        "title": "[통하는 충남] 충남도, 잇따른 산재 사망사고에 유관기관 긴급회의",
+        "source": "쿠키뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBsUkVud2E2dDNNdUpiUGppUDVSSEdXa3ZDN0oyVWV2ZkxObXN5NW56MENweXh6eTN1V0FqbGJWZWFvcEI5UUh6eXVaNEZSUXdHa3F5c1Y4Z0FESmx3RTJIZlNVVQ?oc=5",
+        "date": "2026-10-23T18:58:52.000Z"
+      },
+      {
         "title": "[단독] 산림조합중앙회, 중대재해 조합에 되레 '일감 몰아주기'",
         "source": "더팩트",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5YMnJESXZjWHJkU3hHeHZ6cXJwZnJRMy1iQ09KTlVjbnZNdG9GLUE0SmgyWHNjMEVGbkFjWUhmNEhCWFUtRFBLR05PMXh1YUhuaEpz0gFTQVVfeXFMTlgyckRJdmNYcmRTeEd4dnpxcnBmclEzLWJDT0pOVWNudk10b0YtQTRKaDJYc2MwRUZuQWNZSGY0SEJYVS1EUEtHTk8xeHVhSG5oSnM?oc=5",
-        "date": "2026-10-23T15:00:00.000Z"
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9FeGMwbFFKOHdjSmlvREs0SHltUjZUWThfb2lscjhoc1Z6YVlEakoyZjNULWdRcUF5TUhfUFFaUzNaZmZBcGw4Y1pvWjQwUG5yQ0pnWV93R0vSAVNBVV95cUxOWDJyREl2Y1hyZFN4R3h2enFycGZyUTMtYkNPSk5VY252TXRvRi1BNEpoMlhzYzBFRm5BY1lIZjRIQlhVLURQS0dOTzF4dWFIbmhKcw?oc=5",
+        "date": "2026-10-23T15:00:04.000Z"
       },
       {
         "title": "[단독] 김영훈 장관, 쿠팡 산재 유가족 면담…재조사 요구에 “뒤집긴 어려워”",
@@ -16,28 +34,10 @@
         "date": "2026-10-23T14:20:00.000Z"
       },
       {
-        "title": "서울국유림관리소, 전 직원·수급업체 합동 ‘안전보건교육’ 실시",
-        "source": "로컬세계",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8yUVc0UHQzVmtyQ01SWVVReVZPbWg1WHdnTjlOa3U3NHdJeGZ0UXlMYm9qZUhtN014V1hBWHItZGhhMFdoOG9MdlNNWXlSRWVoem9pQWlKU2jSAVhBVV95cUxPMlFXNFB0M1ZrckNNUllVUXlWT21oNVh3Z045Tmt1NzR3SXhmdFF5TGJvamVIbTdNeFdYQVhyLWRoYTBXaDhvTHZTTVl5UkVlaHpvaUFpSlNo?oc=5",
-        "date": "2026-10-23T14:08:20.000Z"
-      },
-      {
-        "title": "현대제철 당진제철소서 노동자 사망…반복되는 산업재해",
-        "source": "당진시대",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9zR2Q1SW91WkI4NldxSEFOQ1BXTkdwZHRVRnNmaVlKSEZYUlBGLVZUYjBFT0hlSDRWbW5jeUtQVHE2a1loenR5UkNDMlhKQTQwSTBVZGFNMlRqWHp3VDYxZTRKcnhpaVpCS2lV0gFvQVVfeXFMTzNzalc1QWlIRGhSVkxzZEpLck1FZHFyekwyeVpnVTNPVXdxZlUzdGRTLUFXU01YSTh0dDZDYy1pWXZVSXVKYlREQmtXcGMxWlZlczQxc29aTDg5V0FEc0VNaUcyM1VYNWtZUVlpVTZn?oc=5",
-        "date": "2026-10-23T10:00:00.000Z"
-      },
-      {
         "title": "동부지방산림청, 벌목 현장 중대재해 예방 위해 유관기관 합동점검 실시",
         "source": "서울Pn",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBEa1dwNmF4bm5UcFllM3FIdDc3dXVDRncwOHhPUl8teG9WVG1yd285MFhIdWpJREJLQi1Gd0ZETnJabkJ6X09VNEhVVEE4dHpqeExpd0wyR09veVZqdlNySm53?oc=5",
         "date": "2026-10-23T09:04:51.000Z"
-      },
-      {
-        "title": "[로컬 워치] 당진·예산·논산서 노동자 잇단 사망…충남 산업현장 '죽음의 경고등'",
-        "source": "뉴시안",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE56SWp4bE5YdnZldGhOWDFLQjNvUnU0TF9sbGF3Y2Z3dXZkYXFnOVdHQThsUTZfZURreFhmbzFWWUxieGlmSUhGZUJVd0FTOHJLMU1qNF9XVTZPQ0RZSll3d2tUa0NJMjl1X2o0MUJn0gFuQVVfeXFMTnpJanhsTlh2dmV0aE5YMUtCM29SdTRMX2xsYXdjZnd1dmRhcWc5V0dBOGxRNl9lRGt4WGZvMVZZTGJ4aWZJSEZlQlV3QVM4cksxTWo0X1dVNk9DRFlKWXd3a1RrQ0kyOXVfajQxQmc?oc=5",
-        "date": "2026-10-23T08:38:55.000Z"
       },
       {
         "title": "중대재해 넘어 중대시민재해까지…건설·도시안전 박람회, 지자체·현장 위한 AI 예방기술 선보여",
@@ -46,16 +46,16 @@
         "date": "2026-10-23T08:24:25.000Z"
       },
       {
-        "title": "동부산림청, 강릉·태백 벌목 현장 합동점검…중대재해 예방 나서",
-        "source": "뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9nQzZueDZQVS1CQkpDVFhCOXpUVEhaNjNJd3liZFVWZ0k4QzZreVBHaWc0UEZzTFV3RDNkcXpJaUtsaDVMTk1NY05yaTlxbzlfSUpMSw?oc=5",
-        "date": "2026-10-23T08:16:07.000Z"
+        "title": "고창군, 현업근로 담당 공직자 대상 중대재해예방 교육 실시",
+        "source": "디스커버리뉴스(DISCOVERYNEWS)",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBfU3FBN0lLQVBNSjRmSlpnT0hLOEpQQzNoM3VNdENXRy1HaFc2ODZDS05uSDA1Z01VZjJSQWI1U2JRZy0zVE16Um5IcThrN2ZyWWhEVjlxOWVJcEhmSjYtVFFUNldHSHZEVkF2SEZyd3Rjdw?oc=5",
+        "date": "2026-10-23T08:18:34.000Z"
       },
       {
-        "title": "\"산재사망 절반 줄이겠다\"선포 다음날 잇따른 사망...충남도,긴급회의",
-        "source": "티제이비",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB4QjBYcjF1Y0dlMkYzakJoenE3MEhhQktPZ1JaMHRRLVNfZ1A4dTJUaThKcm5sY3hINzZmVnlPYUtNcUhtUFZuMkJVSm1WRWg0R3FRbkxlQktVZEV3?oc=5",
-        "date": "2026-10-23T08:08:15.000Z"
+        "title": "나주시, 공무원 중대재해 예방 역량 제고...“현장 위험요인 사전 차단”",
+        "source": "디스커버리뉴스(DISCOVERYNEWS)",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE8zT1JMWmhjTk0zbXJvbVRTWVBJU25YMHVfendVUzN4QzZST1A3OTdibnRIc3BjX090T0x4Mk5MSHB3am05c1JCR0Q1b01jdGJnWnR5VzB2RVR3d3hJdlVkOHo5RVMyeFhtY0JJSUp5eDNLZw?oc=5",
+        "date": "2026-10-23T08:09:52.000Z"
       },
       {
         "title": "북한산 인수봉, 암벽등반 중 60대 여성 추락사",
@@ -81,6 +81,12 @@
     "label": "중동 대사관·안전",
     "items": [
       {
+        "title": "미 국무부, 중동 각국 외교관 조용히 철수 진행",
+        "source": "뉴시스",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Qd0NLalg3TnlJY19uVjRJV0JMdnMtM3JMQ3lHcGx4WVNxZm9QOTVsQkY5Tzg2Vzd0TDk0Sm8yNzJlcUFyZEx0V1hPT2gwQzI0LW85YlBRWkFqNkphdnBZUtIBeEFVX3lxTE5JWU1BVGZmVnNyY0pBSkZLWmR5Tm5nYXk1SGJ6M0VCUC1ZQVcxQ3YxMGxrc211RFp3TzUxZmN1U0duRTVGNDdFamtKZ3RNUEpMcHAyLTZfdUY5ekFGX0xHTFlxT3JMOEd2OGJpTW5xblZRRnRzSk9MWQ?oc=5",
+        "date": "2026-10-23T23:09:21.000Z"
+      },
+      {
         "title": "카타르 주재 베트남 대사관은 다큐멘터리 영화 '호찌민의 외교' 상영회를 개최했습니다.",
         "source": "Vietnam.vn",
         "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeGgzaXBNdFE5OUI2aC1rdTlUYlczQWdKU2trRWg2bEItYzJxdnVCaVY4cXFxWkQzSFJ1ZUoyQVEtQ2hHNnJOUU9EckJ3RWJnaGgxeVRzUGpCR1RIUUhzbEZDTVE1Wk96N1dUaUJZR3NMTE54TWl1RW82NGxSbG9oMWFPV20tOERqaUlsT2FzNmY1T043U01NcHJQbVhNVEljVHZ6OG9yNUxJQUU?oc=5",
@@ -97,6 +103,12 @@
         "source": "매일경제",
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBBNGZBS1BnNm1tMTdRdHhBSk5UNzdoeWk0UHlJSk5DU1Bsbl9UTWU5VGNNUW9KTlppNHJONFYxRVMtUDRRdTEzVEtla250NnN1VXc?oc=5",
         "date": "2026-10-23T02:13:48.000Z"
+      },
+      {
+        "title": "사우디 공항·유전시설 피격에 3명 사망···美, 비필수 직원 철수 명령",
+        "source": "투데이코리아",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9OUUc4NU1qRm41eHIxa2twWnRMRjFGbUt3eFB1cGlYMWc4aGV0d2JlS3hCYmMtS0RtdTZKcmRuWXdIOU5MbW9hM05aSHZQa1BzaWx4Yk9mZlh2ZDhsYzB4VlJCaFBYcHl4RDhyUmt3UXg?oc=5",
+        "date": "2026-10-23T00:00:00.000Z"
       },
       {
         "title": "\"사우디마저 흔들린다\"…美 철수령에 브렌트유 113달러",
@@ -139,24 +151,72 @@
         "source": "Vietnam.vn",
         "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSXlQMTdCNXpaeEIySmllcURBX3JhQW1tcXRXd2k4T2VfcVhyTHhBSG1OVVhKWGxPVjU3SENSZGVWdDhMUjNwRW1ac1IxODQ3Q2NmYUdkRm5VclN5a1E0NGV1Z2E1NGVPT0ZDaGxWZVRqaEhjWV9mdUptd3V0cXE4TlcxTG42ZWRkWDA5M1YyZE85XzBxelpV?oc=5",
         "date": "2026-10-22T10:54:34.000Z"
-      },
-      {
-        "title": "사우디 공항마다 ‘쾅쾅’…미 대사관 철수 명령",
-        "source": "채널A 뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5mRG5NaHRlTEFRSXNqcHBjTGhOenpzQTRicGVtM3Bvb1NsSmpOVE1VbE5UNkVDd0g5VXVpMnBOcnk5U0lOZE9NMDNMbGZmMDB5NWtTcE9hMEJDeVh4ZzBILTBWRdIBY0FVX3lxTE5mRG5NaHRlTEFRSXNqcHBjTGhOenpzQTRicGVtM3Bvb1NsSmpOVE1VbE5UNkVDd0g5VXVpMnBOcnk5U0lOZE9NMDNMbGZmMDB5NWtTcE9hMEJDeVh4ZzBILTBWRQ?oc=5",
-        "date": "2026-10-22T10:32:00.000Z"
-      },
-      {
-        "title": "미국이 중동 기지에서 병력을 철수하고 이란에 대한 재공격을 준비하고 있는 것인가?",
-        "source": "Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZGNiSkliSTNENkxaU0hTSnZCOUNGTFFvVW1pMkpLbXItcWNyMi1Wa3h4aEtmWVJZb2xLQWswcU9Td013bjNESjlXMFNPMGUwbEN4cC1vUFFVQmtwU3c0SHk2YUhqNHg0c0xJNEJ5RGQwM0QyMkJOZGdlQjdzVlVkSGFZZE9BUmdWN3hSRUxRN3FENWFsaEdwWklB?oc=5",
-        "date": "2026-10-22T09:42:42.000Z"
       }
     ]
   },
   "infect": {
     "label": "감염병",
     "items": [
+      {
+        "title": "청도군, 진드기감염병 예방사업 자체 평가…성과·개선점 점검",
+        "source": "국제뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1JRTctTTJtenZ5UW85aEZPekRSMmlEV09rWTN6ZzNGN2tzb1FpYXJYZGNsbnRJWjBHTnQxSWxaSHdFMEFYNWhQNW9DNDJ3d2EzU1A4SmhTZTluYndWWWZSa0pGVVZjT0xQQUhsa2lB?oc=5",
+        "date": "2026-10-23T23:18:28.000Z"
+      },
+      {
+        "title": "독감 의심 환자 지난해 같은 기간의 2배…고령층 접종률은 하락",
+        "source": "스페셜타임스",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE0yS2t2NmZKbUMxdDd4TjNVb1Q2NG5GUDJjWXgzNHNGNHRqVkwwOEkwNW5MRnlFRC0zb2cyZFdMSTR0LW11R19VRmg2Y1RDcFlXQWZfWjgwYjAtZkM4Nnd2cHBqUlhyMXZ0OG51WHZ2NkZzZw?oc=5",
+        "date": "2026-10-23T23:01:25.000Z"
+      },
+      {
+        "title": "독감 의심 환자 전년 2배 백신 접종 권고 : 건강",
+        "source": "재경일보",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5QNU5TS0NvUHloRkZzcmpPVGhNNGxjNmdRakhiTFAzRTFZckVYQmdDWE1ZMnJab0liV0xwYmNnUHZaN1dvME1JOW5qdw?oc=5",
+        "date": "2026-10-23T22:00:00.000Z"
+      },
+      {
+        "title": "“작년보다 2배 많다”…독감 유행 속 백신 접종 서둘러야",
+        "source": "경기일보",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE91TU5lQnV1cFpmR2FsSm1tNnZpUkF6UmE3MFdwRmVfSldjOUl0aV96TUtwN01mbXU0ZHlrZi1wSEhLLVBfcmt6ME04Z29IMTEyNFN1aFo5T045TG8?oc=5",
+        "date": "2026-10-23T21:58:32.000Z"
+      },
+      {
+        "title": "암 백신 임상 결과 새나갔다…모더나 주가 급락",
+        "source": "한경매거진",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBBam9jbE9SMFlKM0xHNVVlT2VLQjJHZml4WTRjdGQzc2tWNjdFdzFBcFpHRVZoU1hyVGN3d2VkbVFDbklCQXFhM0V1UzN6YkVFYlBfNjk4ZndNLXRuXzBMRzd3dllCQ2tKcVBSbg?oc=5",
+        "date": "2026-10-23T21:43:00.000Z"
+      },
+      {
+        "title": "질병관리청-대한예방의학회, 감염병 인포데믹 관리 위한 업무협약 체결",
+        "source": "재활뉴스",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1kN1VtV2J0Q1Q0aVA3MFV0MmJMNWE2U2FnQllqcFNJbXZCYTFycWZQMGhUMHNpOEM5RHJMUkZVWm1sLUtob1NXVnl4Nzlta19qdy1sWm1tUTRDT1pILXptU1VDY0p6SXJMeXBR?oc=5",
+        "date": "2026-10-23T21:39:54.000Z"
+      },
+      {
+        "title": "'방어항체 형성에 2주'…더 추워지기 전에 독감백신 맞으세요",
+        "source": "매일경제 마켓",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5CVlFmWC1rc1VBSk5HNzZ2SzI5cHcyM29hM1VCc1hjUzF1ZHlRektjQWhzeEFUcWdoR1VjckZiTjBPMUpJY2N4T2tzNkU3RHhCU0E?oc=5",
+        "date": "2026-10-23T21:30:01.000Z"
+      },
+      {
+        "title": "[월드 투데이] 기니비사우, 신생아 B형 간염 백신 보류 임상시험 최종 무산…정부 거부로 백신 압수",
+        "source": "위키리크스한국",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1KblJ0RE9qUDNaemhZQ01ZdmxjSTVSaDhPTUplQ0lSZnJXcWF5aFk3dXJvY3dBN0VrRlBLVGtEMXpZVUlocl9mT3I5bXRHaEZVUldZcUlIWWVHWi04UlJaaUN2dEZldmFBdUF4RnVjVmI?oc=5",
+        "date": "2026-10-23T21:03:02.000Z"
+      },
+      {
+        "title": "SCL사이언스, 간암·난소암 백신 도전…내년 IND 신청 목표[인베스트 바이오]",
+        "source": "팜이데일리",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQmhhRG00SlNUc1JxZEZva0s2X0N4YTlmU3NvRTNMdWlUSUlUQnQxbEdpVUZkX1pKaWgwRFgwck1BeFl4V1FtLUNXRnFmUFJNNHFHOVo3NHd0d3c2aHM4MDg3NXJJRE4yNVZsaUV2TmFXR2J3YVVyeEhBOUVHSzMyN0VQUQ?oc=5",
+        "date": "2026-10-23T21:00:06.000Z"
+      },
+      {
+        "title": "세종시, 전 공무원 감염병 대응 교육…해외 감염병 대비 강화",
+        "source": "내외일보",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBCODNpOEtFZGlxb0oyUlRMQjZoQW0xZm1LTmNqRFdjaDBDTUtqdG1vQmFuZ21CZmNfcWxtOVJGbXNORTFhZEd2dGtaRllqR3ZsTHVuZ2dSUFBCMHpzVjlKdGgtdDBqNFlERUlkX2k5bw?oc=5",
+        "date": "2026-10-23T20:27:38.000Z"
+      },
       {
         "title": "대구 서구보건소, '2026 안전골든벨 대구광역시 어린이 퀴즈쇼'서 어린이 눈높이 맞춘 감염병 예방 교육 실시:경찰연합신문",
         "source": "경찰연합신문",
@@ -168,66 +228,6 @@
         "source": "특허뉴스",
         "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE04SXA4WVc3Zm9UdHg4VVZPM3NIalBQQkluSWp0YTd6R2dCS0lmcG1SdEJHZ25wZnFwWWhqUTVwMnpkempUWDB6dg?oc=5",
         "date": "2026-10-23T16:26:00.000Z"
-      },
-      {
-        "title": "[국립중앙의료원] 감염병 환자 이송 모의실행훈련",
-        "source": "병원신문",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ZX0U2WjZqTXo1MGxFaWwyT1YyNHZQSkczc0FRNnNMcWlFay1vTHA0TjhxeVJMTHhtYW04emtTejlBN1hSTGdhenVib1pLLWlCSDNadnRHcFU5bzhtUjNBcGwxRkRFakNQaXc?oc=5",
-        "date": "2026-10-23T15:47:46.000Z"
-      },
-      {
-        "title": "Elicio 췌장암 백신, 2상 시험서 1차 평가변수 달성 실패",
-        "source": "Investing.com 한국어",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UbkxHaDN3RXQ3eE0zOWFDQVEwaUE5UDFYVmpybXlnYzl4Rjc5SFcxZFBrcERSclRwaFc2MXN2TTVvYzJ1MGFOSFk4YU5LVXlyS3BnR0JlQ19kaTJGaTFmMVFHQTJWSWhOb0VQaTBtNjY?oc=5",
-        "date": "2026-10-23T13:05:00.000Z"
-      },
-      {
-        "title": "대구 서구보건소, 「2026 안전골든벨 대구광역시 어린이 퀴즈쇼」서 어린이 눈높이 맞춘 감염병 예방 교육 실시",
-        "source": "시사뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1wUlkzeHl2UkQ0bkxOaUEtY1RQWE0yaEtxNTFVdzZtYV9iM3pFLThSbHR4UG5kOVhNQ3FnM3Y2YnE4bG1uM1NvNnV6T0t5V0EwMGdCN0FFejFMSU1DMlk3cFpGWQ?oc=5",
-        "date": "2026-10-23T12:41:27.000Z"
-      },
-      {
-        "title": "모더나, 암 백신 호재에도 주가 출렁",
-        "source": "머니네버슬립",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1walZSMTUwRWRtNWMzSlhnbUxXdnhxOE1PQkpUdkozSHB1ZFU3Q0w0QlZyZU9jY0Jyd0dVekt2NjBDRDBoQTh0TTZ5a1Ziem5SMEtWOTd4cGxlUVNyLUpPMC1pOEQwaG9VWTdMYWdGS3JUenkyT1hj0gF3QVVfeXFMTXBqVlIxNTBFZG01YzNKWGdtTFd2eHE4TU9CSlR2SjNIcHVkVTdDTDRCVnJlT2NjQnJ3R1V6S3Y2MENEMGhBOHRNNnlrVmJ6blIwS1Y5N3hwbGVRU3ItSk8wLWk4RDBob1VZN0xhZ0ZLclR6eTJPWGM?oc=5",
-        "date": "2026-10-23T12:38:34.000Z"
-      },
-      {
-        "title": "대구 서구보건소, 어린이 퀴즈쇼서 감염병 예방 교육 진행",
-        "source": "웹이코노미",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE00QmdwX0U1V0thRWxkeHdEQnBxaEN4MEZzazdXcW03V0E2emw0dTYyMUFJMUd0cEFpSmpmM1VwalNHWGd3cllCM0sxeGVrLTl6dGUyU2M3WnkzdVpOYVJBakdVckgyQnpqMVVROGVOdkxYUQ?oc=5",
-        "date": "2026-10-23T12:29:00.000Z"
-      },
-      {
-        "title": "모더나, 암 백신 데이터 공개 후 시총 약 240억달러 증발",
-        "source": "메디컬투데이",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE51dW1QNkNuNXFNQXJPWWQ3dHA4WXU1UVpHc3N3d1BvRkRKWUlrZVFhejN4a0xsN1M5VzJ3MHhSN2N0dUVONVpxbFhRVWhKVHY5c3JnYjhaR0hweWNwMGtNbDVXMGZBTFhFY2tYUA?oc=5",
-        "date": "2026-10-23T11:11:55.000Z"
-      },
-      {
-        "title": "[서학개미 안테나] 모더나, 암 백신 임상 데이터 유출에 25% 급락 By EBN",
-        "source": "Investing.com 한국어",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBGaXgyWnM1cVNRQ0ZDMzVZWTU5WTlDTGJmbnNzdXAyTlJudEZ0V1FVMWlDd1ZQUFpjWW9HdV9RTV9ZZ0N6UUpfVmZFVEg2ZEwxVzM2Sm03THRpSWEtRmNzMG9mY0Y3S1Q2YjNrYzE3bWw?oc=5",
-        "date": "2026-10-23T11:04:58.000Z"
-      },
-      {
-        "title": "SK바사, 독감백신 생산에 AI 도입…연구개발·품질관리로 확대",
-        "source": "전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5CdjR2TkNmOFN4QS1rZU1tazFUZWcxdVpreHZXMTlhUk9fQ3Y4WVcxbno1MUxrRHpPcXFKakxDejluc1JNQ2VzOVo1NzVsUQ?oc=5",
-        "date": "2026-10-23T11:04:52.000Z"
-      },
-      {
-        "title": "유니세프·Gavi, 말라리아 백신 가격 40% 인하…접종 접근성 확대",
-        "source": "메디컬투데이",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9naXBfVjNvUHk4TnpWbjRtUmJBZmVfclc4Y1JpRjFjcy1EVlhSSFR0VGtUX1hrQ0NZZ1otdldaeV9mSXVIZWJEYTNqXzhJb3V0XzJNSGhmVTF5ZHpVdDBOTDk2Sk1VWHpKTGRzTA?oc=5",
-        "date": "2026-10-23T10:48:09.000Z"
-      },
-      {
-        "title": "SK바이오사이언스, AI 활용 백신 생산 공정 사례 발표",
-        "source": "로이슈",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAzdGs0bTJkNVFCaU5UUG1aTnFFNHlReUJBWjhySHJySkl1bXdFQ3NqcVR2ellGeFEzejN2QVE3U2FJblFKU2tXUkI5dU5FWnZ0MUduSjVXZWU0SGx2UkFWTTBpdDEwU2ZQbExoU2toc1NjeFhQaDJQQw?oc=5",
-        "date": "2026-10-23T10:09:34.000Z"
       }
     ]
   }
