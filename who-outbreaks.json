@@ -9,6 +9,14 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO and ENHYPEN join efforts to inspire young blood donors globally",
+      "date": "2026-10-23T07:38:44Z",
+      "summary": "World Health Organization (WHO) Director-General Dr Tedros Adhanom Ghebreyesus met with global K-pop group ENHYPEN in Seoul on 22 October to celebrate the success of their collaboration for World Blood Donor Day 2026 and recognize the group's role in inspiring young people around the world to donate blood and save lives.",
+      "link": "https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "UAE Integrative Medicine Council announces commitments to advance evidence-based integrative medicine",
       "date": "2026-10-21T12:00:00Z",
       "summary": "Dr Ahmed Alosi; Dr Thekra Mohamed; Dr Geetha Krishnan G. Pillai.©WHOAt the Al Shifaa Summit for Integrative Medicine in Abu Dhabi, the United Arab Emirates (UAE) set out four national commitments aligned with the WHO Global Traditional Medicine Strategy 2025–2034 and highlighted plans for continued collaboration between the UAE Integrative Medicine Council and the World Health Organization. The United Arab Emirates has announced a set of national commitments to strengthen the evidence-based inte",
@@ -128,14 +136,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Countries move to accelerate action against lead poisoning",
-      "date": "2026-10-15T07:00:36Z",
-      "summary": "The World Health Organization (WHO) is calling on countries to accelerate action to prevent lead exposure, a widespread but preventable health threat estimated to contribute to more than 3.5 million deaths globally each year and affecting hundreds of millions of children.",
-      "link": "https://www.who.int/news/item/15-10-2026-countries-move-to-accelerate-action-against-lead-poisoning",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Pneumonia of undetermined etiology - the Russian Federation",
       "date": "2026-10-10T15:53:19Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON612"
     }
   ],
-  "generatedAt": "2026-10-23T02:27:06.021782+00:00"
+  "generatedAt": "2026-10-23T10:40:48.188197+00:00"
 }
