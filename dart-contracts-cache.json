@@ -11098,5 +11098,35 @@
 "start": "2021-11-22",
 "end": "2027-12-17",
 "contractDate": "2021-11-22"
+},
+"20261023800847": {
+"kind": "공사수주",
+"name": "PROJECT LIGHTNING (UAE 고압직류 송전공사)",
+"amount": "2,876,415,902,953",
+"counterparty": "ABU DHABI OFFSHORE POWER TRANSMISSION COMPANY LIMITED LLC",
+"region": "UAE",
+"start": "2021-12-21",
+"end": "2026-10-25",
+"contractDate": "2021-12-21"
+},
+"20261023800781": {
+"kind": "공사수주",
+"name": "강북구 번동3구역 가로주택정비사업",
+"amount": "74,232,600,000",
+"counterparty": "강북구 번동 3구역 가로주택정비사업조합",
+"region": "서울특별시 강북구 번동 430-27번지 일원",
+"start": "2026-06-10",
+"end": "2029-05-31",
+"contractDate": "2026-10-23"
+},
+"20261023800728": {
+"kind": "공사수주",
+"name": "500kV 신가평변환소 토건공사",
+"amount": "85,419,259,16",
+"counterparty": "한국전력공사",
+"region": "경기 가평군 설악면 설곡리 85",
+"start": "2023-08-08",
+"end": "2026-12-31",
+"contractDate": "2023-08-08"
 }
 }
