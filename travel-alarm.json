@@ -2032,16 +2032,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "남 오세티아, 압하지아"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2169,16 +2169,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "전체",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "노르드 주, 아다모와 주, 북서부 주, 남서부 주, 최북부 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "전체",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2278,16 +2278,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "미트로비차 북부(Zubin Potok, Zve&ccedil;an, Leposaviq)"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2484,6 +2484,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "2.3단계 및 특별여행주의보 발령 지역을 제외한 지역"
+    },
+    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -2494,12 +2500,6 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "딱 주"
-    },
-    {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "2.3단계 및 특별여행주의보 발령 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2576,6 +2576,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "빙괼, 바트만, 시이르트, 시르나크, 하카리, 시리아의 국경 10km 이내 지역"
+    },
+    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -2586,12 +2592,6 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "2,3단계 및 특별여행주의보 지정 지역을 제외한 지역"
-    },
-    {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "빙괼, 바트만, 시이르트, 시르나크, 하카리, 시리아의 국경 10km 이내 지역"
     }
    ],
    "written": "",
@@ -2622,16 +2622,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "콜롬비아 국경지역 40Km 지역"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "콜롬비아 국경지역 40Km 지역"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-10-23T06:36:22.413871+00:00"
+ "generatedAt": "2026-10-24T06:34:10.928819+00:00"
 }
