@@ -1,29 +1,60 @@
 {
-  "generatedAt": "2026-10-24T11:42:07.951Z",
+  "generatedAt": "2026-10-24T16:19:18.001Z",
   "items": [
     {
-      "title": "حريق ضخم يلتهم مبنى عش النسر التاريخي في بافاريا وتوقيف مشتبه به",
-      "source": "لحظات نيوز",
-      "link": "https://nl7za.com/saudi/%D8%AD%D8%B1%D9%8A%D9%82-%D8%B6%D8%AE%D9%85-%D9%8A%D9%84%D8%AA%D9%87%D9%85-%D9%85%D8%A8%D9%86%D9%89-%D8%B9%D8%B4-%D8%A7%D9%84%D9%86%D8%B3%D8%B1-%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A-%D9%81%D9%8A-%D8%A8%D8%A7%D9%81%D8%A7%D8%B1%D9%8A%D8%A7-%D9%88%D8%AA%D9%88%D9%82%D9%8A%D9%81-%D9%85%D8%B4%D8%AA%D8%A8%D9%87-%D8%A8%D9%87",
-      "date": "2026-10-24T06:52:52.000Z",
-      "lang": "ar",
-      "titleKo": "바이에른의 거대한 불이 유서 깊은 독수리 둥지 건물을 집어삼킴, 용의자 체포",
-      "url": "https://nl7za.com/saudi/%D8%AD%D8%B1%D9%8A%D9%82-%D8%B6%D8%AE%D9%85-%D9%8A%D9%84%D8%AA%D9%87%D9%85-%D9%85%D8%A8%D9%86%D9%89-%D8%B9%D8%B4-%D8%A7%D9%84%D9%86%D8%B3%D8%B1-%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A-%D9%81%D9%8A-%D8%A8%D8%A7%D9%81%D8%A7%D8%B1%D9%8A%D8%A7-%D9%88%D8%AA%D9%88%D9%82%D9%8A%D9%81-%D9%85%D8%B4%D8%AA%D8%A8%D9%87-%D8%A8%D9%87",
-      "body": "",
-      "bodyKo": "",
+      "title": "[배터리의 역습] ⑥전기를 저장하는 공장이 불탄다…ESS 화재의 경고",
+      "source": "한국재난안전뉴스",
+      "link": "https://www.kdsn.co.kr/news/article.html?no=49650",
+      "date": "2026-10-24T15:03:12.000Z",
+      "lang": "ko",
+      "titleKo": "[배터리의 역습] ⑥전기를 저장하는 공장이 불탄다…ESS 화재의 경고",
+      "url": "https://www.kdsn.co.kr/news/article.html?no=49650",
+      "body": "한국재난안전뉴스 박종열 기자 | 태양광과 풍력으로 만든 전기를 저장했다가 필요할 때 꺼내 쓰는 에너지저장장치(ESS). 재생에너지 확대와 전력 공급 안정화에 꼭 필요한 설비지만, 배터리가 대량으로 모여 있는 만큼 화재가 발생하면 피해가 커질 수 있다. ESS 화재는 새로운 문제가 아니다. 국내에서는 2017년 이후 배터리 화재가 잇따르면서 산업계와 정부가\n2025년 6월 16일에는 경북 포항의 한 ESS 전기실에서 화재가 발생했다. 이 사고를 계기로 강원특별자치도소방본부는 도내 전지 제조공장과 ESS 시설을 대상으로 긴급 안전점검에 나섰다. ESS가 단순한 전력 설비를 넘어 화재 예방과 대응을 함께 고민해야 할 고위험 시설임을 보여준 사례다.\nESS는 배터리와 전력변환장치, 제어시스템 등을 결합한 설비다. 태양광 발전으로 낮에 생산한 전기를 저장했다가 밤에 사용하거나, 전력 수요가 급증할 때 저장된 전기를 공급한다. 전력망의 안정성을 유지하는 데도 활용된다.\n문제는 이 시설에 대용량 배터리가 밀집해 있다는 점이다. 배터리 셀 하나에서 이상 발열이 발생하면 주변 셀로 열이 전달되고, 연쇄적인 열폭주로 번질 수 있다. 배터리가 여러 모듈과 랙으로 연결된 ESS에서는 화재가 확산될 가능성을 고려해야 한다.\n산업통상자원부가 2019년 발표한 ESS 화재사고 조사 결과는 당시 사고 23건 가운데 14건이 충전을 마치고 대기하던 중 발생했다고 밝혔다. 충전이 끝났다고 해서 안전이 보장되는 것은 아니라는 의미다.\n조사위원회는 전기적 충격에 대한 보호시스템 미흡, 운영환경 관리 부족, 설치 부주의, 통합제어·보호체계 미흡 등을 주요 원인으로 제시했다. 일부 배터리 셀에서 제조상 결함도 발견됐지만, 이를 모사한 실증시험에서 화재가 재현되지는 않았다. 조사 결과는 ESS 화재를 배터리 자체의 문제 하나로만 설명하기 어렵다는 점을 보여줬다.",
+      "bodyKo": "한국재난안전뉴스 박종열 기자 | 태양광과 풍력으로 만든 전기를 저장했다가 필요할 때 꺼내 쓰는 에너지저장장치(ESS). 재생에너지 확대와 전력 공급 안정화에 꼭 필요한 설비지만, 배터리가 대량으로 모여 있는 만큼 화재가 발생하면 피해가 커질 수 있다. ESS 화재는 새로운 문제가 아니다. 국내에서는 2017년 이후 배터리 화재가 잇따르면서 산업계와 정부가\n2025년 6월 16일에는 경북 포항의 한 ESS 전기실에서 화재가 발생했다. 이 사고를 계기로 강원특별자치도소방본부는 도내 전지 제조공장과 ESS 시설을 대상으로 긴급 안전점검에 나섰다. ESS가 단순한 전력 설비를 넘어 화재 예방과 대응을 함께 고민해야 할 고위험 시설임을 보여준 사례다.\nESS는 배터리와 전력변환장치, 제어시스템 등을 결합한 설비다. 태양광 발전으로 낮에 생산한 전기를 저장했다가 밤에 사용하거나, 전력 수요가 급증할 때 저장된 전기를 공급한다. 전력망의 안정성을 유지하는 데도 활용된다.\n문제는 이 시설에 대용량 배터리가 밀집해 있다는 점이다. 배터리 셀 하나에서 이상 발열이 발생하면 주변 셀로 열이 전달되고, 연쇄적인 열폭주로 번질 수 있다. 배터리가 여러 모듈과 랙으로 연결된 ESS에서는 화재가 확산될 가능성을 고려해야 한다.\n산업통상자원부가 2019년 발표한 ESS 화재사고 조사 결과는 당시 사고 23건 가운데 14건이 충전을 마치고 대기하던 중 발생했다고 밝혔다. 충전이 끝났다고 해서 안전이 보장되는 것은 아니라는 의미다.\n조사위원회는 전기적 충격에 대한 보호시스템 미흡, 운영환경 관리 부족, 설치 부주의, 통합제어·보호체계 미흡 등을 주요 원인으로 제시했다. 일부 배터리 셀에서 제조상 결함도 발견됐지만, 이를 모사한 실증시험에서 화재가 재현되지는 않았다. 조사 결과는 ESS 화재를 배터리 자체의 문제 하나로만 설명하기 어렵다는 점을 보여줬다.",
       "tried": true,
-      "count": 1,
+      "count": 18,
       "sources": [
-        "لحظات نيوز"
+        "نيو ترك بوست",
+        "بوابة الأهرام",
+        "https://www.youlyou.com/",
+        "القاهرة 24",
+        "البوابة نيوز",
+        "تركيا عاجل"
       ],
-      "related": [],
-      "tag": "고층·건물"
+      "related": [
+        {
+          "titleKo": "부상 없이 마니사의 배터리 공장에서 화재 통제하기",
+          "source": "نيو ترك بوست",
+          "link": "https://newturkpost.com/news/130433-%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A7%D9%86%D8%AF%D9%84%D8%B9-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%B5%D9%86%D8%B9-%D9%84%D9%84%D8%A8%D8%B7%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D8%A7%D9%86%D9%8A%D8%B3%D8%A7-%D8%AF%D9%88%D9%86-%D9%88%D9%82%D9%88%D8%B9-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA"
+        },
+        {
+          "titleKo": "호수 아부홈스에서 목재 공장 화재로 3명 부상",
+          "source": "بوابة الأهرام",
+          "link": "https://gate.ahram.org.eg/News/5970788.aspx"
+        },
+        {
+          "titleKo": "호수의 모빌리아 목재 공장 내부에서 화재가 발생해 2명이 다쳤습니다.",
+          "source": "https://www.youlyou.com/",
+          "link": "https://www.youlyou.com/78891"
+        },
+        {
+          "titleKo": "호수의 농로에서 목재 공장과 모빌리아의 화재 통제 및 3명의 부상",
+          "source": "القاهرة 24",
+          "link": "https://www.cairo24.com/2517034"
+        },
+        {
+          "titleKo": "호수 목재 공장에서 대형 화재로 2명 부상",
+          "source": "البوابة نيوز",
+          "link": "https://www.albawabhnews.com/5427261"
+        }
+      ],
+      "tag": "전기·배터리"
     },
     {
       "title": "‘전기차‧산업현장’ AI로 화재감지 : 뉴스케이충청",
       "source": "뉴스케이",
       "link": "https://newsk.net/cc/?idx=175234216&bmode=view",
-      "date": "2026-10-24T06:48:43.000Z",
+      "date": "2026-10-24T09:28:40.000Z",
       "lang": "ko",
       "titleKo": "‘전기차‧산업현장’ AI로 화재감지 : 뉴스케이충청",
       "url": "https://newsk.net/cc/?idx=175234216&bmode=view",
@@ -32,8 +63,8 @@
       "tried": true,
       "count": 6,
       "sources": [
-        "뉴스아이이에스",
         "쿠키뉴스",
+        "뉴스아이이에스",
         "아산데일리",
         "충청시사신문",
         "천지일보",
@@ -41,14 +72,14 @@
       ],
       "related": [
         {
-          "titleKo": "충남도의회, AI로 화재 사전 감지…전기차·산업현장 예방모델 모색",
-          "source": "뉴스아이이에스",
-          "link": "http://www.newsiesports.com/news/articleView.html?idxno=47087"
-        },
-        {
           "titleKo": "충남도의회, ‘전기차‧산업현장’ AI 화재감지 모델 논의",
           "source": "쿠키뉴스",
           "link": "https://www.kukinews.com/article/view/kuk202610230213"
+        },
+        {
+          "titleKo": "충남도의회, AI로 화재 사전 감지…전기차·산업현장 예방모델 모색",
+          "source": "뉴스아이이에스",
+          "link": "http://www.newsiesports.com/news/articleView.html?idxno=47087"
         },
         {
           "titleKo": "충남도의회, 전기차·산업현장 화재예방 AI 활용 논의…“충남형 스마트 대응체계 모색”",
@@ -69,49 +100,22 @@
       "tag": "전기·배터리"
     },
     {
-      "title": "[경기 119] 포천 돼지 축사·고양 제조 공장 화재",
-      "source": "OBS경인TV",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1nRWN4SHlHYXRDMWV5LWNBS3F0eVA1ZzBDaWVWWXI5MHVvVFhHOHN3aVBxQzFPMUNUcTRIaUJTLTFkNlhuNkhYalczOXVDdGgtLU8zbHFsdVA1NnZSQmVlbkNtUDdON0xKV29vazJR?oc=5",
-      "date": "2026-10-23T22:38:00.000Z",
-      "lang": "ko",
-      "titleKo": "[경기 119] 포천 돼지 축사·고양 제조 공장 화재",
-      "count": 14,
+      "title": "حريق ضخم يلتهم مبنى عش النسر التاريخي في بافاريا وتوقيف مشتبه به",
+      "source": "لحظات نيوز",
+      "link": "https://nl7za.com/saudi/%D8%AD%D8%B1%D9%8A%D9%82-%D8%B6%D8%AE%D9%85-%D9%8A%D9%84%D8%AA%D9%87%D9%85-%D9%85%D8%A8%D9%86%D9%89-%D8%B9%D8%B4-%D8%A7%D9%84%D9%86%D8%B3%D8%B1-%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A-%D9%81%D9%8A-%D8%A8%D8%A7%D9%81%D8%A7%D8%B1%D9%8A%D8%A7-%D9%88%D8%AA%D9%88%D9%82%D9%8A%D9%81-%D9%85%D8%B4%D8%AA%D8%A8%D9%87-%D8%A8%D9%87",
+      "date": "2026-10-24T06:52:52.000Z",
+      "lang": "ar",
+      "titleKo": "바이에른의 거대한 불이 유서 깊은 독수리 둥지 건물을 집어삼킴, 용의자 체포",
+      "url": "https://nl7za.com/saudi/%D8%AD%D8%B1%D9%8A%D9%82-%D8%B6%D8%AE%D9%85-%D9%8A%D9%84%D8%AA%D9%87%D9%85-%D9%85%D8%A8%D9%86%D9%89-%D8%B9%D8%B4-%D8%A7%D9%84%D9%86%D8%B3%D8%B1-%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A-%D9%81%D9%8A-%D8%A8%D8%A7%D9%81%D8%A7%D8%B1%D9%8A%D8%A7-%D9%88%D8%AA%D9%88%D9%82%D9%8A%D9%81-%D9%85%D8%B4%D8%AA%D8%A8%D9%87-%D8%A8%D9%87",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
       "sources": [
-        "بوابة الأهرام",
-        "آشكاين",
-        "factjo.com",
-        "حرية سقفها السماء",
-        "صحيفة السوسنة الأردنية",
-        "JO24"
+        "لحظات نيوز"
       ],
-      "related": [
-        {
-          "titleKo": "호수 아부홈스에서 목재 공장 화재로 3명 부상",
-          "source": "بوابة الأهرام",
-          "link": "https://gate.ahram.org.eg/News/5970788.aspx"
-        },
-        {
-          "titleKo": "화재로 탕헤르의 한 목재 공장이 파괴된 후 그을린 시신이 수습되었다 (사진)",
-          "source": "آشكاين",
-          "link": "https://www.achkayen.com/705764/.html"
-        },
-        {
-          "titleKo": "알하산 공업도시 공장 화재",
-          "source": "factjo.com",
-          "link": "https://factjo.com/news/151343"
-        },
-        {
-          "titleKo": "동영상: 알하산 산업 도시의 공장에서 화재 | 요르단 투데이 | 사라야 통신사 - 하늘의 자유 천장",
-          "source": "حرية سقفها السماء",
-          "link": "https://www.sarayanews.com/article/1116035/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%B5%D9%86%D8%B9-%D9%81%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AD%D8%B3%D9%86-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9"
-        },
-        {
-          "titleKo": "알하산 공업 도시의 공장에서 화재 | 요르단 투데이 | 사라야 통신사 - 하늘의 자유",
-          "source": "حرية سقفها السماء",
-          "link": "https://www.sarayanews.com/article/1116035/%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%B5%D9%86%D8%B9-%D9%81%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AD%D8%B3%D9%86-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9"
-        }
-      ],
-      "tag": "공장·플랜트"
+      "related": [],
+      "tag": "고층·건물"
     },
     {
       "title": "부천 공장화재 소방관 사망, 경찰 5일만에 압수수색",
@@ -130,24 +134,6 @@
       ],
       "related": [],
       "tag": "공장·플랜트"
-    },
-    {
-      "title": "حريق قرب صهاريج الأحماض يخلي عمال مصنع بطاريات في مانيسا التركية",
-      "source": "تركيا عاجل",
-      "link": "https://turkey-breaking.com/News/2026/10/23/%D8%B9%D8%A7%D8%AC%D9%84-%D8%AD%D8%B1%D9%8A%D9%82-%D9%82%D8%B1%D8%A8-%D8%B5%D9%87%D8%A7%D8%B1%D9%8A%D8%AC-%D8%A7%D9%84%D8%A3%D8%AD%D9%85%D8%A7%D8%B6-%D9%8A%D8%AE%D9%84%D9%8A-%D8%B9%D9%85%D8%A7%D9%84/",
-      "date": "2026-10-23T20:16:59.000Z",
-      "lang": "ar",
-      "titleKo": "산성 탱크 근처의 화재는 터키 마니사의 배터리 공장 근로자를 대피시킵니다.",
-      "url": "https://turkey-breaking.com/News/2026/10/23/%D8%B9%D8%A7%D8%AC%D9%84-%D8%AD%D8%B1%D9%8A%D9%82-%D9%82%D8%B1%D8%A8-%D8%B5%D9%87%D8%A7%D8%B1%D9%8A%D8%AC-%D8%A7%D9%84%D8%A3%D8%AD%D9%85%D8%A7%D8%B6-%D9%8A%D8%AE%D9%84%D9%8A-%D8%B9%D9%85%D8%A7%D9%84/",
-      "body": "حريق مصنع إنجي أكو للبطاريات في مانيسا التركية قرب صهاريج أحماض، وإخلاء العمال والسيطرة على النيران بعد تدخل عشرات فرق الإطفاء.\nاندلع حريق في مصنع «إنجي أكو» للبطاريات داخل المنطقة الصناعية المنظمة في قضاء يونس أمره بولاية مانيسا التركية ، ما أدى إلى إخلاء العمال، فيما تمكنت فرق الإطفاء من السيطرة على النيران وإخمادها بعد نحو ساعتين من العمل.\nنشبت النيران في محطة شحن البطاريات، وتحديدًا في منطقة قريبة من صهاريج الأحماض. ولم تُعرف بعد أسباب اندلاع الحريق، بينما فُرضت إجراءات أمنية واسعة حول المصنع ومحيطه.\nشاركت في عمليات الإطفاء 22 مركبة و52 فردًا تابعين لإدارة الإطفاء في بلدية مانيسا الكبرى، إلى جانب 12 صهريج مياه. كما تدخلت فرق الإطفاء التابعة للمنطقتين الصناعيتين المنظمتين في مانيسا وموراديه، إضافة إلى آليات إطفاء حرائق الغابات.\nأُخلي العاملون في المصنع سريعًا عقب اندلاع الحريق، فيما اتُخذت إجراءات أمنية مشددة حول المنطقة المحيطة.",
-      "bodyKo": "산성 탱크 근처의 터키 마니사 (Manisa) 에 있는 INCE Akko 배터리 공장에 불이 나 수십 명의 소방관이 개입한 후 작업자를 대피시키고 화염을 통제했습니다.\n터키 마니사 (Manisa) 주 유니스 암라 (Younis Amra) 지구의 조직된 공업 지대 내부에 있는 인체 아쿠 (Ince Aku) 배터리 공장에서 화재가 발생하여 근로자가 대피하는 한편, 소방관들은 약 2시간의 작업 끝에 화재를 통제하고 진압할 수 있었습니다.\n배터리 충전소에서 특히 산성 탱크 부근에서 화재가 발생했습니다. 화재의 원인은 아직 밝혀지지 않았지만 공장과 그 주변에는 광범위한 보안 조치가 취해졌습니다.\n소방작업에는 광역마니사 자치구 소방서 차량 22대와 인력 52명이 참여했으며, 물탱크 12대도 함께 참여했다. 마니사 (Manisa) 와 모라데 (Moradé) 조직 공업 지대 (Organized Industrial Zones) 의 소방대도 산불 소화 메커니즘 외에도 개입했다.\n화재가 발생한 후 공장 직원들은 신속하게 대피했으며, 주변 지역은 보안이 철저히 유지되었습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "تركيا عاجل"
-      ],
-      "related": [],
-      "tag": "전기·배터리"
     },
     {
       "title": "مصدر مسؤول في وزارة الطاقة: استهداف مبنى إداري تابع لأرامكو في الظهران ونشوب حريق محدود",
@@ -223,9 +209,9 @@
     },
     {
       "title": "[단독] 중국산 화재 배터리, KC 인증 서류도 가짜…쿠팡, 판매자 고발 조치",
-      "source": "SBS 뉴스",
+      "source": "news.sbs.co.kr",
       "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008812466",
-      "date": "2026-10-23T08:27:11.000Z",
+      "date": "2026-10-23T08:27:00.000Z",
       "lang": "ko",
       "titleKo": "[단독] 중국산 화재 배터리, KC 인증 서류도 가짜…쿠팡, 판매자 고발 조치",
       "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008812466",
@@ -234,25 +220,7 @@
       "tried": true,
       "count": 1,
       "sources": [
-        "SBS 뉴스"
-      ],
-      "related": [],
-      "tag": "전기·배터리"
-    },
-    {
-      "title": "[배터리의 역습] ⑥전기를 저장하는 공장이 불탄다…ESS 화재의 경고",
-      "source": "한국재난안전뉴스",
-      "link": "https://www.kdsn.co.kr/news/article.html?no=49650",
-      "date": "2026-10-23T08:10:17.000Z",
-      "lang": "ko",
-      "titleKo": "[배터리의 역습] ⑥전기를 저장하는 공장이 불탄다…ESS 화재의 경고",
-      "url": "https://www.kdsn.co.kr/news/article.html?no=49650",
-      "body": "한국재난안전뉴스 박종열 기자 | 태양광과 풍력으로 만든 전기를 저장했다가 필요할 때 꺼내 쓰는 에너지저장장치(ESS). 재생에너지 확대와 전력 공급 안정화에 꼭 필요한 설비지만, 배터리가 대량으로 모여 있는 만큼 화재가 발생하면 피해가 커질 수 있다. ESS 화재는 새로운 문제가 아니다. 국내에서는 2017년 이후 배터리 화재가 잇따르면서 산업계와 정부가\n2025년 6월 16일에는 경북 포항의 한 ESS 전기실에서 화재가 발생했다. 이 사고를 계기로 강원특별자치도소방본부는 도내 전지 제조공장과 ESS 시설을 대상으로 긴급 안전점검에 나섰다. ESS가 단순한 전력 설비를 넘어 화재 예방과 대응을 함께 고민해야 할 고위험 시설임을 보여준 사례다.\nESS는 배터리와 전력변환장치, 제어시스템 등을 결합한 설비다. 태양광 발전으로 낮에 생산한 전기를 저장했다가 밤에 사용하거나, 전력 수요가 급증할 때 저장된 전기를 공급한다. 전력망의 안정성을 유지하는 데도 활용된다.\n문제는 이 시설에 대용량 배터리가 밀집해 있다는 점이다. 배터리 셀 하나에서 이상 발열이 발생하면 주변 셀로 열이 전달되고, 연쇄적인 열폭주로 번질 수 있다. 배터리가 여러 모듈과 랙으로 연결된 ESS에서는 화재가 확산될 가능성을 고려해야 한다.\n산업통상자원부가 2019년 발표한 ESS 화재사고 조사 결과는 당시 사고 23건 가운데 14건이 충전을 마치고 대기하던 중 발생했다고 밝혔다. 충전이 끝났다고 해서 안전이 보장되는 것은 아니라는 의미다.\n조사위원회는 전기적 충격에 대한 보호시스템 미흡, 운영환경 관리 부족, 설치 부주의, 통합제어·보호체계 미흡 등을 주요 원인으로 제시했다. 일부 배터리 셀에서 제조상 결함도 발견됐지만, 이를 모사한 실증시험에서 화재가 재현되지는 않았다. 조사 결과는 ESS 화재를 배터리 자체의 문제 하나로만 설명하기 어렵다는 점을 보여줬다.",
-      "bodyKo": "한국재난안전뉴스 박종열 기자 | 태양광과 풍력으로 만든 전기를 저장했다가 필요할 때 꺼내 쓰는 에너지저장장치(ESS). 재생에너지 확대와 전력 공급 안정화에 꼭 필요한 설비지만, 배터리가 대량으로 모여 있는 만큼 화재가 발생하면 피해가 커질 수 있다. ESS 화재는 새로운 문제가 아니다. 국내에서는 2017년 이후 배터리 화재가 잇따르면서 산업계와 정부가\n2025년 6월 16일에는 경북 포항의 한 ESS 전기실에서 화재가 발생했다. 이 사고를 계기로 강원특별자치도소방본부는 도내 전지 제조공장과 ESS 시설을 대상으로 긴급 안전점검에 나섰다. ESS가 단순한 전력 설비를 넘어 화재 예방과 대응을 함께 고민해야 할 고위험 시설임을 보여준 사례다.\nESS는 배터리와 전력변환장치, 제어시스템 등을 결합한 설비다. 태양광 발전으로 낮에 생산한 전기를 저장했다가 밤에 사용하거나, 전력 수요가 급증할 때 저장된 전기를 공급한다. 전력망의 안정성을 유지하는 데도 활용된다.\n문제는 이 시설에 대용량 배터리가 밀집해 있다는 점이다. 배터리 셀 하나에서 이상 발열이 발생하면 주변 셀로 열이 전달되고, 연쇄적인 열폭주로 번질 수 있다. 배터리가 여러 모듈과 랙으로 연결된 ESS에서는 화재가 확산될 가능성을 고려해야 한다.\n산업통상자원부가 2019년 발표한 ESS 화재사고 조사 결과는 당시 사고 23건 가운데 14건이 충전을 마치고 대기하던 중 발생했다고 밝혔다. 충전이 끝났다고 해서 안전이 보장되는 것은 아니라는 의미다.\n조사위원회는 전기적 충격에 대한 보호시스템 미흡, 운영환경 관리 부족, 설치 부주의, 통합제어·보호체계 미흡 등을 주요 원인으로 제시했다. 일부 배터리 셀에서 제조상 결함도 발견됐지만, 이를 모사한 실증시험에서 화재가 재현되지는 않았다. 조사 결과는 ESS 화재를 배터리 자체의 문제 하나로만 설명하기 어렵다는 점을 보여줬다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "한국재난안전뉴스"
+        "news.sbs.co.kr"
       ],
       "related": [],
       "tag": "전기·배터리"
@@ -385,12 +353,10 @@
       "body": "صحافتك : عاجل: اندلاع حريق هائل في سوق تجاري",
       "bodyKo": "귀하의 언론: 긴급: 상업 시장에서 대규모 화재가 발생했습니다.",
       "tried": true,
-      "count": 5,
+      "count": 3,
       "sources": [
         "كل العرب",
         "صحافتك",
-        "برس بي",
-        "العربي الجديد",
         "البيان"
       ],
       "related": [
@@ -398,16 +364,6 @@
           "titleKo": "하이파의 전기 장치에 기술적 오작동이 발생하여 아파트 건물에서 화재가 발생했습니다.",
           "source": "كل العرب",
           "link": "https://news.google.com/rss/articles/CBMi2gRBVV95cUxObFN5bFJEZmdrRkowMkZVYnhRcFlESVFEakJwTWdLNms5R2M0Y2RQd3hhMXNkSnM0MENyVGl1S3NUN1ZSaTVNak1Xb283U2duMl9KeUdwbTB3X04tbGZuRmlxem0wMUdoSFhZMjBXX1VYM3VSNUJWdDE4Z25pNnlMZW52dmhDbmVyQm43UEZLcTh1Z0ZmXzhXcDVvYnJOaEZmUERNR3c3bXptN3NVRjlWV1draktLQU5ZM3MyTTZGRVB6RUdpWkVzcGx6cjE2UnJUUmlFTGxGU0N5ZjRzSXJwWDZna29YWWJUNWlWQjNHR1ZzUmowVFFSbXZBTnZLUEtZZ3VFODVvVlRBMEJCbVpHQUQyakxxV3JPVEdEM3ZJLVlfN0VvZFZseVJyVDVpbXpiSFZkcDYyWFo0U1NCT2NEaUJ5LXItbEg0M21qRFh6Qlo1QmU0bUJYLThUV1JYYnlHdFZWUFk4QTdKa2ViN2FMTEstUHhJeDZNRG10ejBIU0d3RVhkb0FsMlhwcUdvZFA0Wm81T29OaEgwYUxSMGlydlBVMzlrUnN2cm9wTkVudlppU0RSaFg5eVVidTZUdUc1Z01YdkN5RnlsY2xsU2kydjhvRVJmXzZ3SE5oSFI0OVZVV29GdTNDZjhENlE3clFya0dQanJpZG5uM19fRm5HZjBvWVZ6dFFXbHFyMk9CRmJHOUFFZWlBbzc2OTRWZW1LelcyTFNQYnhFMUVhVFJWT1l1bkE5LVA3MWVPTjJuUldDZGVZamh2SVVCV2dIalROSy1INW1BNjN4d9IBSkFVX3lxTFBvRWRKR3F4Y0cwdDRhbDBhU2Q0clV0NjdFYlNmS204UHBmeVhwSlRScWRIbWJNSlBWYWNQaHF0ZU9YRFAzTWtRbC1R?oc=5"
-        },
-        {
-          "titleKo": "대규모 화재는 대부분의 미시시피 노인 거주지 건물을 파괴하고 주민들을 대피시킵니다.",
-          "source": "برس بي",
-          "link": "https://news.google.com/rss/articles/CBMioARBVV95cUxQeWRRQzhTSnFjWE1UdTlSZDR3a2o5VUVwajBpX2d4TUM2U281TkpjTnkyTk41WEtyRjNzWnlkM0M3Q2dSejY0M1JxMXBDZTR1NGFlNllJd3ZMN2tjNTY2eGZnTXY3QnBSLXZZZ2ZLQWpfWDF5XzA2S0JkRzNoaDg0TXk3ejlOZFhZeTJxQjVlX21yVExBYm9Fdnh0TkhfTjhUYzZ6UnR1V3lUeHVNQ3FQVDlyakt2WnoyWlQ4V3gxd3dMYWlUMzZYNkIxQ01IVWo0U1pIdWlFOXJiM0hXellRVEVqeldtNHpDV1VXRWRMXzctbllpVEdOUll3QVBEUlRrTU03UDZGWFYwb1BNcUU4OEw3c01naGVpalUxYldVMVoxdDd3aDVETV94UmtvVm1MQm5xcC0yb1ZIc2d6cXpMWTRUOEJvZ1dySEFBTUVsZVV5endMc2tzelhrVWlSeS1jZG5BUVlQcDQ4SGdSdVNBeDZmaFNUbGkwV19IS0pPZTd0UmszZHNlQTFqRXhrcEk1djF6djNza3BuSVV2LS1NREJRN3ZOYXVGZkxWZml5TGdqS0V6MlVLSEJNdlNsNWlrbHJJMXlhM2l4M3VkSUpadWl1cnV3Mldoc09uVWdiLV9wcWFDYlFPZDJLTUwwa0o0d2kwTFM2cmpNWm1KcVlrNk1HbHJzaUJUZmIzeV9ZeXJraE9QbjNQSHBMTERLMWFw0gFeQVVfeXFMT1JkSVdweWxESTJHeWstYXFkendyTHNJcTVfZUVrZ2w3LURVT1h2WWZTUnk4bGRrX0xZNk1BV2JhNnB3aXVhU3FHVUpzb29pVmFjSW5zSTRGRldMZmJYQQ?oc=5"
-        },
-        {
-          "titleKo": "화재로 미시시피 노인 거주 건물이 파괴되고 주민들이 대피합니다.",
-          "source": "العربي الجديد",
-          "link": "https://news.google.com/rss/articles/CBMi_wNBVV95cUxNeTdHaEFGMm1wRDBZaVRFckY2TEl5VzRDODNJLURObklCUWphTUNiZ0xyUGNMbzVvZ3l6dURWcE9rSV9aUE5ETnFaMU9lUjZKWXFLbzFqMWN1Q2JPTDBLVHlwR05naEUzbHNlTm8zTVloVDA4cXlWSnlzdWRGTjhybTkyVlV1NVEtT19JSzd2a1JmWjU1dWxZdnJEU1p5Q0FSajUwRTR6N2Y2VUxxaUhCU182SDlUUnh4SzR2NW9GWm1POXRidm50dzI3X3BuOEpsa0ctV0dPSE9naXJUWGJyWVBWWHJ3aVdTS3BVeHpCcU8tR2FiR1Y5WUUzWUU5VnNIZExQNWpBdjF6Mi1leFFuMm01NFZOOWZRa1FfS3dFaVpMbVp3VWZoeUZUdWJ1cDlJakZxR2FnUFg1cFFCU1R4d3NVcTJBaDJ0ZjR1dTJfYnR4QktpcHJOa1BOSVF6aTFfRllIN1p4aGhMZlJzYWY5amZDT21qNTlNYVdLV3Q0TC1KbkhXUjBDOEF3VWlPOTlldThYQTJWZHdkVHdPV21fYVJ5aFR3X1d3cDNTX3dORG9XRjdOa1gzd1FXZDlrWmkybjRpNzh1MDBaRkxrNHd4ZHBoTXRwZDFYbTJncmZKbjBuM3o4bFRnUnVFeWRqMlgxcVdFeEFWSXVnSlJrY1hv0gGEBEFVX3lxTFBodFdlUjhJbk5JRzRYb1NUWTAydER0eXF2YTk4cEQtZnRSak1MN1o0Z3BMTEdtVGc2MVljRWxYbFFldGtGcHBFR0ZMaURrSmxDb0xGaklNWVBwRnBYd0pCbGR2UkI1WlBkV2tnNktWTEVHWGJLdlFtWkRjQ3dwMThFeENsNU9ROWMyY1J3TkRaYWFiOHQ2S0h5R3NUMTN1OV90YXdqMXBNNTN6LWJRbEo5R3UyUFQ0STJiZmQtelBXNHgzUHFBUHFQLUZWSG9nbkNjcEhRcS1KRXFKVGJxQ0w2eUVrelQ2Z19mMFVPbmxVR3lBb2lYZnVKQkZKdjJlRlZOajNmeHFYbXFHUEZUOWpnX0lXX1MwblE0UElGdjhOSkc2OWcwZExoVW1YRndPRk5zb2JITjBENE9TR3VoRjQ3cHgxZmw4dDNMdDRxLV93NG81TTYwbGNLeHBrRWd4WWFkQ0dOQXZ5SUxqMjFjeHdJcUZpM0I3R00xRHhRaGhBS0ktbDhtdlpJaEczVnNhQm5abm53Z0V3czVFYWRxT3pmZThfcmVPeE9UaFBqRVYwajgtTDJ2STA4UVB2UkJzSU1NLVNqVFotSndvZWVPVlhPejBkZUJVaFVNTENGSUcyNjFheEVlemp1NlFpeENPZFJzZjB0OFhSS19hQXpjdkVsMFVNTQ?oc=5"
         },
         {
           "titleKo": "대규모 화재는 대부분의 미시시피 노인 거주지 건물을 파괴하고 주민들을 대피시킵니다.",
@@ -436,7 +392,7 @@
         {
           "titleKo": "샤르자 민방위국 국장: «아만» 은 창고 화재에 대한 신속한 대응을 강화했습니다.",
           "source": "البيان",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5SeWdWTG95SGcxejlfT0ZWUkVMVEhVMU1LNk94TFlzVl9uckZLUzUwV2pjTENwR01CTzVMQ3dJa0hlcGRhYTk0emVWV2l2X1dF0gFQQVVfeXFMTlJ5Z1ZMb3lIZzF6OV9PRlZSRUxUSFUxTUs2T3hMWXNWX25yRktTNTBXamNMQ3BHTUJPNUxDd0lrSGVwZGFhOTR6ZVZXaXZfV0U?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MNTJpOEpIR2RSQ3RZblQySDI1cVNMZkdiUjVQcHpPdmhNaVRyTFZ1UzE0MXRYb3RaenFNN0lrdWp3Sy1MNkJEWWFmUdIBUEFVX3lxTE5SeWdWTG95SGcxejlfT0ZWUkVMVEhVMU1LNk94TFlzVl9uckZLUzUwV2pjTENwR01CTzVMQ3dJa0hlcGRhYTk0emVWV2l2X1dF?oc=5"
         }
       ],
       "tag": "숙소·창고"
@@ -866,13 +822,13 @@
       "count": 2,
       "sources": [
         "스트레이트뉴스",
-        "중앙뉴스"
+        "아주경제"
       ],
       "related": [
         {
-          "titleKo": "현대차그룹 의왕연구소 배터리 연구동 화재…1시간 30여 분 만에 진화",
-          "source": "중앙뉴스",
-          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBwd01LcUk0Q1ZRMXB3WW45SThVZlJZNFNOdE5TME1zbmtGbkhCd1g1X3FrSHk5aTR6WTMyckRscWtwYlFWZDI5RGxmdWp4OHMzY1YtV2tJQnpBdEdpT1VLVWx2WjZKUmJpRDZN0gFvQVVfeXFMTXNPUTUzM0hzbTBDZkl6NG1EbEhyR3Fxam5qMTVudmNDeExNMGhqdjBnNGhLU1d1SU9jcUdQQWFCT3RkaGpZQjlqS2d5ZGFlQmJQdDZBX0VSV1J4RXVLLXVYdXRhSVhFWk1nbU9BcVFv?oc=5"
+          "titleKo": "현대차그룹 의왕연구소 화재 인명피해 없이 완진…배터리 발화 가능성",
+          "source": "아주경제",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE93eFpmQ3BEekFIeTU2Y21ObEVzdGdJZlBHczk0ZmZ5Vk9YdG8yNTB2VlgzTWdoMWdOWXVRWnVxcUxVZkVFNzkxU053TU5JMXV1YUFOdUY5dmc2d9IBWEFVX3lxTFBRa1JyODhOQ1B4My1tVE1Pa1JUUG1ZT3NEY2N2eWJZTEpTM3FTY3NzSTc4NE1VdjR3ZXZjT1RYQkcwVTFBWlBZVEdlZE40aXRaclA5OWMxLUw?oc=5"
         }
       ],
       "tag": "전기·배터리"
