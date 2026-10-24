@@ -1,78 +1,53 @@
 {
-  "generatedAt": "2026-10-24T11:16:01.827Z",
+  "generatedAt": "2026-10-24T14:40:06.998Z",
   "items": [
     {
-      "title": "تعطيل الدوام الرسمي في محافظة البصرة الأحد المقبل",
-      "source": "مانكيش نت",
-      "link": "https://mangish.net/%D8%AA%D8%B9%D8%B7%D9%8A%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A-%D9%81%D9%8A-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9-%D8%A7/",
-      "date": "2026-10-24T11:12:48.000Z",
+      "title": "محافظ بغداد يعلن تعطيل الدوام الرسمي يوم غدٍ الأحد",
+      "source": "موقع كلمة الإخباري",
+      "link": "https://kalimaiq.com/news/details/72248",
+      "date": "2026-10-24T14:29:12.000Z",
       "lang": "ar",
-      "titleKo": "다음 주 일요일에 바스라 주에서 공식 근무 시간 중단",
-      "url": "https://mangish.net/%D8%AA%D8%B9%D8%B7%D9%8A%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A-%D9%81%D9%8A-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9-%D8%A7/",
-      "body": "أعلن مجلس محافظة البصرة في بيان صادر عنه اليوم الجمعة عن تعطيل الدوام الرسمي يوم الأحد المقبل. وقد جاء هذا القرار بمناسبة ذكرى استشهاد\nوأكد المجلس أن هذه الخطوة تأتي إحياءً لمناسبة ذات أهمية دينية وثقافية، حيث تُعد ذكرى استشهاد السيدة فاطمة الزهراء واحدة من المناسبات الأليمة التي يحتفي بها المجتمع. كما أوضح المجلس أنه سيتم استثناء بعض الدوائر من قرار التعطيل، إذ ستبقى الدوائر الأمنية والصحية تعمل كالمعتاد خلال هذا اليوم.",
-      "bodyKo": "금요일인 오늘 발표된 성명서에서 바스라 주 의회는 다음 주 일요일에 공식 근무 시간을 중단한다고 발표했습니다. 이 결정은 순교 기념일에 이루어졌습니다.\n위원회는 파티마 알-자흐라아 부인의 순교 기념일이 사회가 축하하는 고통스러운 행사 중 하나이기 때문에 이 단계는 종교적, 문화적으로 중요한 행사를 기념하기 위해 이루어졌다고 단언했다. 시의회는 또한 이날 동안 보안 및 보건 부서가 평소와 같이 운영될 것이기 때문에 일부 부서가 일시 중지 결정에서 면제될 것이라고 명확히 했다.",
+      "titleKo": "바그다드 총독은 내일 일요일에 공식 근무 시간 중단을 발표합니다.",
+      "url": "https://kalimaiq.com/news/details/72248",
+      "body": "أعلن محافظ بغداد، عطوان العطواني، اليوم السبت، تعطيل الدوام الرسمي في ديوان المحافظة والدوائر التابعة لها، باستثناء الدوائر الخدمية، يوم غدٍ الأحد الموافق 25 تش...\nوذكرت المحافظة في بيان تلقاه كلمة الإخباري، أن \"المحافظ وجّه بتعطيل الدوام الرسمي انسجاماً مع قرار مجلس محافظة بغداد، وذلك بمناسبة استشهاد السيدة فاطمة الزهراء عليها السلام\".",
+      "bodyKo": "바그다드 주지사 아트완 알-아트와니 (Atwan al-Atwani) 는 오늘 1월 25일 일요일에 서비스 부서를 제외한 지방 사무소와 그 소속 부서의 공식 근무 시간 중단을 발표했습니다...\n총독부는 칼리마 알 이크바리 (Kalima Al-Ikhbari) 가 받은 성명서에서 \"총독은 파티마 알 자흐라 (Fatima Al-Zahraa) 부인의 순교를 맞아 바그다드 주 의회의 결정에 따라 공식 근무 시간을 방해하도록 지시했다\" 고 밝혔다.",
       "tried": true,
-      "count": 9,
+      "count": 14,
       "sources": [
+        "Azzaman",
         "عراق اوبزيرفر",
-        "Alsumaria",
+        "وكالة انباء براثا",
         "المربد",
-        "وكالة اليوم الإخبارية",
-        "مانكيش نت",
-        "شبكة تواصل الإخبارية"
+        "موقع كلمة الإخباري",
+        "وكالة اليوم الإخبارية"
       ],
       "related": [
         {
-          "titleKo": "파티마 알자흐라 부인의 순교를 기념하기 위해 일요일에 바그다드의 공식 근무 시간이 중단되었습니다 (그에게 평화가 있기를). #",
+          "titleKo": "오늘 바그다드와 디카르의 근무 시간 중단",
+          "source": "Azzaman",
+          "link": "https://www.azzaman.com/%D8%AA%D8%B9%D8%B7%D9%8A%D9%84-%D8%AF%D9%88%D8%A7%D9%85-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%B0%D9%8A-%D9%82%D8%A7%D8%B1/"
+        },
+        {
+          "titleKo": "알자흐라 여사의 사망 기념일에 일요일에 근무 시간의 중단을 발표한 이라크 총독들 (그에게 평화가 있기를) #",
           "source": "عراق اوبزيرفر",
-          "link": "https://observeriraq.net/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AA%D8%B9%D8%B7%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A-%D8%BA%D8%AF%D8%A7%D9%8B-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF-%D8%A5%D8%AD/"
+          "link": "https://observeriraq.net/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D9%8A-%D8%A3%D8%B9%D9%84%D9%86%D8%AA-%D8%AA%D8%B9%D8%B7%D9%8A%D9%84-%D8%A7/"
         },
         {
-          "titleKo": "바그다드 시의회는 내일 일요일에 공식 근무 시간을 중단하기로 결정했습니다.",
-          "source": "Alsumaria",
-          "link": "https://www.alsumaria.tv/news/localnews/579609/%D9%85%D8%AC%D9%84%D8%B3-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D9%82%D8%B1%D8%B1-%D8%AA%D8%B9%D8%B7%D9%8A%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A-%D9%8A%D9%88%D9%85-%D8%BA%D8%AF-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF"
+          "titleKo": "바그다드 주정부는 내일 일요일에 공식 근무 시간을 중단하기로 결정했습니다.",
+          "source": "وكالة انباء براثا",
+          "link": "http://burathanews.com/arabic/1t4Q8Y89"
         },
         {
-          "titleKo": "바스라 공의회, 다음 주 일요일 공식 근무 시간 중단 발표",
+          "titleKo": "알자흐라 부인의 순교 (그에게 평화가 있기를) 와 함께, 바그다드 주지사는 일요일에 공식적인 근무 시간의 중단을 발표합니다",
           "source": "المربد",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1pNHM4bWJxb2E2WkNCZlRYQU1sLWIwYkI0M3EydjNQUXR1dVpTYzJTb2VjMTVSakVMaUJ2WlJWVnZ1ZUpKQUkzbzBqanZnQ2Zv?oc=5"
+          "link": "https://www.al-mirbad.com/detail/218182"
         },
         {
-          "titleKo": "바스라 주 의회는 다음 주 일요일에 공식 근무 시간 중단을 발표합니다.",
+          "titleKo": "바그다드 주 의회는 내일 공식 근무 시간을 중단하기로 결정했습니다.",
           "source": "وكالة اليوم الإخبارية",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE14OU4tT0Zjb3ZuSG5lV040OWVmRzMtVE9xdEdqX3FWX2NzSEk3cF9tT2NnQThQTjZSdW5vMWUyX3BIdmVSSkI4bV9XT1pEbUE?oc=5"
-        },
-        {
-          "titleKo": "바스라 카르 (Basra Qar) 와 디 카르 (Dhi Qar) 가 다음 주 일요일 공식 근무 시간 중단을 발표",
-          "source": "مانكيش نت",
-          "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxQbnZuWlo1UDZSRWRTMUZwdUdTdGhCV0hGbmZzVzNQUVZYU1E5TzJlRnZmMWRVRkZ0d2Y3TlRaRk1KekdOVmsxZ1Z2TXh5SFRUQnhFMFpvN00zMHR6SnAyb3ZvT2pJbEktOFBFYlFPYWktSXpwV0g0MEFNUzBtMVN2cDN1NGpYMnZkc1JZeGFfOUlBbkVVRnNabEd5V2ZVcjZIZXlVeC1WUGE2bXZfeUxXMG1fSDFnRDdMeEJLWG5Nc1I0bVpfM2ZCeDB3Z2hFVjVsc1hfWlNEZ1RBWXc2RERvTGpVWkp1YVNzOENSamdCWEN4SE9EZlNobEFEM3dzUm1KMnJlaHJBRVZjYzhTTjlQVWNuZVExaGlfRzhDODJFdm5xcEx4dWh4UW9fbUZRTWxaZXUxYmRDbzFyQVpVM3hDLQ?oc=5"
+          "link": "https://today-agency.net/Details/65836"
         }
       ],
-      "tag": "휴일·행사",
-      "impact": {
-        "lv": "g",
-        "line": "바스라 지역 휴무 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "바스라",
-        "km": 422
-      }
-    },
-    {
-      "title": "محافظ بغداد يعلن تعطيل الدوام الرسمي غداً الأحد باستثناء الدوائر الخدمية",
-      "source": "وكالة موازين نيوز",
-      "link": "https://www.mawazin.net/Details.aspx?jimare=293946",
-      "date": "2026-10-24T11:12:02.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 총독은 서비스 부서를 제외하고 내일 일요일에 공식 근무 시간 중단을 발표합니다.",
-      "url": "https://www.mawazin.net/Details.aspx?jimare=293946",
-      "body": "سياسية أمنية اقتصاد محلية دنيا و سمارت رياضة تقارير عالم النوافذ فيديو انفوجرافيك آراء",
-      "bodyKo": "정치 보안 경제 로컬 월드 및 스마트 스포츠 보고서 World of Windows 비디오 인포그래픽 의견",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "وكالة موازين نيوز"
-      ],
-      "related": [],
       "tag": "휴일·행사",
       "impact": {
         "lv": "y",
@@ -80,6 +55,273 @@
         "act": "현지 인력 출근 여부와 통관·인허가 일정 확인",
         "place": "바그다드",
         "km": 27
+      }
+    },
+    {
+      "title": "مستشار حكومي: الزيدي يتجه بالعراق نحو اقتصاد إنتاجي لإنهاء الاعتماد على النفط#",
+      "source": "عراق اوبزيرفر",
+      "link": "https://observeriraq.net/%D9%85%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1-%D8%AD%D9%83%D9%88%D9%85%D9%8A-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%8A%D8%AA%D8%AC%D9%87-%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%86%D8%AD%D9%88-%D8%A7/",
+      "date": "2026-10-24T14:22:54.000Z",
+      "lang": "ar",
+      "titleKo": "정부 고문: 알자이디는 석유 의존을 끝내기 위해 이라크에서 생산적인 경제로 이동하고 있습니다.",
+      "url": "https://observeriraq.net/%D9%85%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1-%D8%AD%D9%83%D9%88%D9%85%D9%8A-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%8A%D8%AA%D8%AC%D9%87-%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%86%D8%AD%D9%88-%D8%A7/",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "عراق اوبزيرفر"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Baghdad activist arrested for allegedly insulting Al-Sadr",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/amp/en/society/Baghdad-activist-arrested-for-allegedly-insulting-Al-Sadr",
+      "date": "2026-10-24T13:33:14.000Z",
+      "lang": "en",
+      "titleKo": "샤파크 뉴스.. 바그다드 활동가, 알사드르 모욕 혐의로 체포",
+      "url": "https://shafaq.com/amp/en/society/Baghdad-activist-arrested-for-allegedly-insulting-Al-Sadr",
+      "body": "Shafaq News- Baghdad Security forces in Baghdad arrested a self-described civil society activist on Saturday for allegedly insulting Patriotic Shiite Movement (PSM) leader Muqtada Al-Sadr on TikTok,\nIdentified as Muizz Billah, the suspect was detained at a residential building in the Al-Bataween neighborhood of central Baghdad, according to the source, who said officers seized a 5 mm Falcon Sport pistol, Iraqi flags, fireworks, a file containing his r&eacute;sum&eacute;, and a wall poster featuring victims of the 2019 Tishreen protests, alongside photographs of the detainee.\nHe was subsequently transferred to Al-Saadoun Police Station for legal proceedings.",
+      "bodyKo": "Shafaq News- 바그다드의 바그다드 보안군은 토요일에 TikTok에서 애국 시아파 운동 (PSM) 지도자 Muqtada Al-Sadr를 모욕한 혐의로 자칭 시민 사회 운동가를 체포했습니다.\n소식통에 따르면 무이즈 빌라 (Muizz Billah) 로 확인된 용의자는 바그다드 중심부의 알바타윈 (Al-Bataween) 지역에 있는 주거용 건물에 구금되었으며, 경찰관들은 5mm 팔콘 스포츠 권총, 이라크 국기, 불꽃놀이, 이력서가 들어 있는 파일, 2019년 티슈린 시위 희생자가 담긴 벽 포스터, 구금자의 사진 등을 압수했다고 한다.\n이후 그는 법적 절차를 위해 알사둔 경찰서로 이송되었습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "قبيل تظاهرات بغداد.. رئيس الحكومة العراقية يوجه بإطلاق وظائف جديدة",
+      "source": "CNBC عربية",
+      "link": "https://www.cnbcarabia.com/158662/2026/24/10/%D9%82%D8%A8%D9%8A%D9%84-%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF..-%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D9%8A%D9%88%D8%AC%D9%87-%D8%A8%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9",
+      "date": "2026-10-24T13:24:49.000Z",
+      "lang": "ar",
+      "titleKo": "바그다드 시위를 앞두고 이라크 총리는 새로운 일자리 출범을 지시한다.",
+      "url": "https://www.cnbcarabia.com/158662/2026/24/10/%D9%82%D8%A8%D9%8A%D9%84-%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF..-%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D9%8A%D9%88%D8%AC%D9%87-%D8%A8%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9",
+      "body": "وجّه رئيس الحكومة العراقية، علي فالح الزبيدي، بتثبيت جميع المتعاقدين والأجراء على الملاك الدائم، إلى جانب استحداث 120 ألف درجة وظيفية جديدة بصفة عقد ضمن موازنة عام 2027\nوخلال اجتماع لمناقشة تفاصيل الموازنة الاتحادية المقبلة اليوم السبت، وجّه الزبيدي بأن تشمل التعيينات جميع الشرائح، وأن تُوزّع الدرجات الوظيفية بعدالة وفقاً للنسب السكانية للمحافظات، مع إطلاق منصة إلكترونية خاصة بالتعيين لضمان تكافؤ الفرص بين المتقدمين.\nوأوضح الزبيدي أن الحكومة ستعمل على تأمين التخصيصات المالية اللازمة لتنفيذ القرار، بما يضمن استكمال إجراءات التثبيت واستحداث الدرجات الوظيفية الجديدة وفقاً للضوابط والسياقات المعتمدة.\nفي المقابل، تستعد فئات مجتمعية متعددة للتظاهر غداً في العاصمة العراقية بغداد، للمطالبة بتحسين الأوضاع الاقتصادية والمعيشية، في ظل تراجع الظروف المعيشية وتأثر العديد من الأنشطة والأعمال بانخفاض عائدات الصادرات النفطية جراء التوترات في مضيق هرمز.",
+      "bodyKo": "이라크 총리 알리 팔레 알-주바이디 (Ali Faleh Al-Zubaidi) 는 2027년 예산 범위 내에서 계약으로 12만 개의 새로운 직업 등급을 창출하는 것 외에도 모든 계약직 및 직원을 상근 직원에 설치하도록 지시했다.\n토요일에 예정된 연방 예산의 세부 사항을 논의하기위한 회의에서 Al-Zubaidi는 임명에는 모든 세그먼트가 포함되며, 지원자 간의 동등한 기회를 보장하기 위해 채용을위한 전자 플랫폼을 출시하여 주지사의 인구 비율에 따라 직무 등급이 공정하게 분배되도록 지시했습니다.\nAl-Zubaidi는 정부가 승인된 통제 및 맥락에 따라 안정화 절차의 완료와 새로운 직무 등급의 도입을 보장하기 위해 결정을 이행하는 데 필요한 재정 할당을 확보하기 위해 노력할 것이라고 설명했습니다.\n한편, 여러 커뮤니티 그룹은 이라크 수도 바그다드에서 생활 조건의 감소와 호르무즈 해협의 긴장으로 인한 석유 수출 수입 감소에 대한 많은 활동과 기업의 영향에 비추어 더 나은 경제 및 생활 조건을 요구하기 위해 내일을 보여줄 준비를 하고 있습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "CNBC عربية"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "y",
+        "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
+        "act": "시위 시간대 시내 이동 피하기",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Iraq says no US troops left in the country, not even advisers",
+      "source": "Middle East Monitor",
+      "link": "https://aa.com.tr/en/middle-east/iraq-says-no-us-troops-left-in-the-country-not-even-advisers/4099166",
+      "date": "2026-10-24T12:46:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크는 이라크에 미군이 남아있지 않으며 심지어 고문도 남아있지 않다고 말한다.",
+      "url": "https://aa.com.tr/en/middle-east/iraq-says-no-us-troops-left-in-the-country-not-even-advisers/4099166",
+      "body": "Prime minister says Baghdad aims to bring all weapons under state control by next June, strengthen strategic partnership with Washington | Anadolu\nEDITION Middle East Iraq says no US troops left in the country, not even advisers Prime minister says Baghdad aims to bring all weapons under state control by next June, strengthen strategic partnership with Washington Şahin Demir 24 October 2026 • Update : 24 October 2026 İSTANBUL Iraq’s prime minister said Friday that no US troops are left in the country, including in advisory roles, as Baghdad moves to bring all weapons under state control by next June.\nAli Faleh Al-Zaidi told the Iraqi News Agency (INA) that the absence of foreign forces had removed the justification armed factions previously cited for retaining their weapons.\nHe stressed that the government’s decision to restrict weapons to state institutions was final and irreversible.",
+      "bodyKo": "바그다드 총리는 내년 6월까지 모든 무기를 국가 통제하에 두고 워싱턴과의 전략적 파트너십을 강화하는 것을 목표로 하고 있다고 말했습니다 | Anadolu\nEDITION Middle East Iraq says no US troops left in the country, even not advisers Prime Minister says Baghdad aimans to bring all weapons under state control by next June, strengthen strategic partnership with Washington Şahin Demir 24 October 2026 • Update: 2026년 10월 24일 이스탄불 이라크 총리는 금요일 바그다드가 내년 6월까지 모든 무기를 국가 통제하에 두는 움직임을 보임에 따라 자문 역할을 포함한 미군이 남아있지 않다고 말했다.\n알리 팔레 알자이디 (Ali Faleh Al-Zaidi) 는 이라크 통신사 (INA) 에 외국 군대의 부재로 인해 무기를 보유하기 위해 이전에 언급된 무장 진영의 정당성이 제거되었다고 말했다.\n그는 국가 기관에 무기를 제한하는 정부의 결정은 최종적이며 돌이킬 수 없다고 강조했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Middle East Monitor"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "이라크는 군사 고문을 포함한 모든 미군 병력이 더 이상 주둔하지 않는다고 선언했습니다.",
+      "source": "Vietnam.vn",
+      "link": "https://www.vietnam.vn/ko/iraq-tuyen-bo-khong-con-binh-si-my-ke-ca-co-van-quan-su",
+      "date": "2026-10-24T12:28:13.000Z",
+      "lang": "ko",
+      "titleKo": "이라크는 군사 고문을 포함한 모든 미군 병력이 더 이상 주둔하지 않는다고 선언했습니다.",
+      "url": "https://www.vietnam.vn/ko/iraq-tuyen-bo-khong-con-binh-si-my-ke-ca-co-van-quan-su",
+      "body": "최근 성명에서 알리 팔레 알 자이디 이라크 총리는 자문군을 포함한 미군 병력이 더 이상 이라크에 주둔하지 않으며, 2027년 6월 30일까지 모든 무기를 국가 통제하에 두겠다고 밝혔습니다.\n알리 팔레 알 자이디 총리는 이라크에 더 이상 미군이 주둔하지 않는다고 밝혔습니다. 그는 외국군의 철수로 무장 단체들이 무기를 보유하는 구실이 사라졌다고 설명했습니다.\n알자이디 총리는 무기를 국가 당국의 통제하에 두기로 한 결정은 확정적이며 되돌릴 수 없다고 강조했습니다. 정부는 이 문제에 대해 세 곳의 무장 단체와 합의에 도달했으며, 나머지 네 곳과도 협상을 진행 중입니다. 그는 \" 2027년 6월 30일까지 국가 밖으로 무기가 유출되는 일은 없을 것 \"이라고 선언했습니다. 또한 이라크 총리는 \" 이라크는 여러 파벌이 존재하는 국가이지, 특정 파벌에 의해 지배되는 국가가 아니다 \"라고 재차 강조했습니다.\n알자이디에 따르면, 이라크는 한때 국제적 고립의 위험에 직면했었는데, 일부 서방 국가들이 무장 단체들이 사실상 국가 기구를 장악했다고 믿었기 때문입니다. 이러한 상황은 외국 대사관의 철수와 제재 조치로 이어질 수 있었습니다. 그러나 그는 정부가 그러한 위험을 극복했다고 말했습니다.\n알자이디 총리는 이라크에 미군이 더 이상 주둔하지 않는다고 밝혔음에도 불구하고, 이라크는 여전히 워싱턴을 전략적 파트너로 여기며 양국 협력을 강화하기를 희망한다고 말했습니다. 그는 이라크가 미국의 기술적, 경제적 강점을 고려하여 미국을 파트너로 선택했다고 설명했습니다. 미국 기업들은 이미 이라크에서 사업을 시작했으며, 양국 협력 분야에서 다양한 프로젝트를 시행하고 있습니다.",
+      "bodyKo": "최근 성명에서 알리 팔레 알 자이디 이라크 총리는 자문군을 포함한 미군 병력이 더 이상 이라크에 주둔하지 않으며, 2027년 6월 30일까지 모든 무기를 국가 통제하에 두겠다고 밝혔습니다.\n알리 팔레 알 자이디 총리는 이라크에 더 이상 미군이 주둔하지 않는다고 밝혔습니다. 그는 외국군의 철수로 무장 단체들이 무기를 보유하는 구실이 사라졌다고 설명했습니다.\n알자이디 총리는 무기를 국가 당국의 통제하에 두기로 한 결정은 확정적이며 되돌릴 수 없다고 강조했습니다. 정부는 이 문제에 대해 세 곳의 무장 단체와 합의에 도달했으며, 나머지 네 곳과도 협상을 진행 중입니다. 그는 \" 2027년 6월 30일까지 국가 밖으로 무기가 유출되는 일은 없을 것 \"이라고 선언했습니다. 또한 이라크 총리는 \" 이라크는 여러 파벌이 존재하는 국가이지, 특정 파벌에 의해 지배되는 국가가 아니다 \"라고 재차 강조했습니다.\n알자이디에 따르면, 이라크는 한때 국제적 고립의 위험에 직면했었는데, 일부 서방 국가들이 무장 단체들이 사실상 국가 기구를 장악했다고 믿었기 때문입니다. 이러한 상황은 외국 대사관의 철수와 제재 조치로 이어질 수 있었습니다. 그러나 그는 정부가 그러한 위험을 극복했다고 말했습니다.\n알자이디 총리는 이라크에 미군이 더 이상 주둔하지 않는다고 밝혔음에도 불구하고, 이라크는 여전히 워싱턴을 전략적 파트너로 여기며 양국 협력을 강화하기를 희망한다고 말했습니다. 그는 이라크가 미국의 기술적, 경제적 강점을 고려하여 미국을 파트너로 선택했다고 설명했습니다. 미국 기업들은 이미 이라크에서 사업을 시작했으며, 양국 협력 분야에서 다양한 프로젝트를 시행하고 있습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Vietnam.vn"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "العراق يعلن إنجاز كاسر الأمواج واقتراب النفق المغمور من الاكتمال",
+      "source": "شبكة 964",
+      "link": "https://964media.com/728657/",
+      "date": "2026-10-24T11:59:12.000Z",
+      "lang": "ar",
+      "titleKo": "이라크가 방파제 완공을 발표했고 물에 잠긴 터널이 완공에 가까워지고 있습니다.",
+      "url": "https://964media.com/728657/",
+      "body": "البصرة – 964 أعلنت الشركة العامة لموانئ العراق، اليوم السبت (24 تشرين الأول 2026)، عن انجاز الأعمال بكاس\nانضموا إلى أسرع منصاتنا وقال مدير الشركة عبد الله عاتي عبد الله، في مؤتمر صحفي تابعته شبكة 964 : أنه “تم تحقيق نسب إنجاز متقدمة في المشاريع الرئيسية لميناء الفاو الكبير”، مؤكداً “اكتمال أعمال كاسر الأمواج بنسبة 100%، وبلوغ نسبة إنجاز النفق المغمور 98%، فيما وصلت أعمال البنى التحتية إلى 94%، وفق ما كشف عنه خلال المؤتمر الصحفي”.\nوأضاف أن “العمل مستمر لاستكمال المشاريع الحالية والتهيؤ للانتقال إلى تنفيذ البنى الفوقية”، مشيراً إلى أن “هذه المراحل تمثل تقدماً مهماً في مسار إنجاز المشروع، بدعم من رئيس مجلس الوزراء علي الزيدي ووزير النقل وهب الحسني، وبجهود الملاكات الفنية والهندسية والشركات المنفذة، ومن المتوقع إجراء تجارب للميناء خلال الفترة المقبلة”.\nوفي ما يتعلق بحركة الموانئ العراقية، أوضح المدير العام أن “تداعيات أزمة مضيق هرمز انعكست على حركة الملاحة في المنطقة عامة”، مؤكداً “استمرار العمل لتعزيز مناولة البضائع وتوسيع قدرات التخزين واستعادة النشاط تدريجياً”.",
+      "bodyKo": "바스라 – 964 이라크 항구 종합 회사 (General Company for Ports of Iraq) 는 오늘 토요일 (2026 년 10 월 24 일) 컵에서 작업 완료를 발표했습니다.\n그들은 우리의 가장 빠른 플랫폼에 합류했습니다. 회사의 이사인 압둘라 아티 압둘라 (Abdullah Aati Abdullah) 는 기자 회견에서 964 네트워크에 이어 \"그랜드 포 포트 (Grand Faw Port) 의 주요 프로젝트에서 선진 완공률이 달성되었다\" 며 \"방파제 공사가 100% 완료되었으며, 침수된 터널의 완공률은 98% 에 달하는 반면, 인프라 공사는 기자 회견에서 밝혀진 바와 같이 94% 에 달했다\" 고 강조했다.\n그는 \"이 단계는 알리 알자이디 총리와 와합 알하사니 교통부 장관의 지원, 기술 및 엔지니어링 직원과 구현 회사의 노력으로 프로젝트를 완료하는 과정에서 중요한 진전을 나타내고 있으며, 향후 기간 동안 항구에 대한 테스트가 진행될 것으로 예상된다\" 고 덧붙였다.\n이라크 항구의 이동과 관련하여 사무총장은 \"호르무즈 해협 위기의 영향은 전반적으로 이 지역의 항해 운동에 반영되었다\" 며 \"물품 취급을 강화하고 보관 능력을 확대하며 점진적으로 활동을 회복하기 위한 작업이 지속되고 있다\" 고 강조했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شبكة 964"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바스라",
+        "km": 422
+      }
+    },
+    {
+      "title": "بذكرى استشهاد السيدة الزهراء.. بغداد تعطل الدوام الأحد",
+      "source": "شفقنا العراق",
+      "link": "https://iraq.shafaqna.com/AR/666009/",
+      "date": "2026-10-24T11:40:21.000Z",
+      "lang": "ar",
+      "titleKo": "알자흐라 부인의 순교를 추모하기 위해 바그다드는 일요일에 일을 그만두었다.",
+      "url": "https://iraq.shafaqna.com/AR/666009/",
+      "body": "إحياء لذكرى استشهاد السيدة فاطمة الزهراء عليها السلام، أعلنت محافظة بغداد، اليوم السبت، تعطيل الدوام الرسمي\nشفقنا العراق ــ إحياء لذكرى استشهاد السيدة فاطمة الزهراء عليها السلام، أعلنت محافظة بغداد، اليوم السبت، تعطيل الدوام الرسمي في ديوان المحافظة والدوائر التابعة لها، باستثناء الدوائر الخدمية، يوم غدٍ الأحد.\nوقالت المحافظة في بيان اطلع عليه (شفقنا العراق): إن “محافظ بغداد عطوان العطواني، وجّه بتعطيل الدوام الرسمي في ديوان محافظة بغداد والدوائر التابعة لها، باستثناء الدوائر الخدمية، يوم غدٍ الاحد الموافق 25 تشرين الأول انسجاماً مع قرار مجلس محافظة بغداد”.\nوأضاف أن “ذلك يأتي بمناسبة استشهاد السيدة فاطمة الزهراء عليها السلام”.",
+      "bodyKo": "파티마 알자흐라 부인의 순교를 기념하여 바그다드 주정부는 오늘 토요일에 공식 근무 시간 중단을 발표했습니다.\n샤파크나 이라크 - 파티마 알자흐라 부인의 순교를 기념하여, 평화가 그녀에게 깃들기를, 바그다드 총독부는 오늘 토요일, 일요일에 봉사 부서를 제외한 총독부 사무실과 그 소속 부서의 공식 근무 시간 중단을 발표했습니다.\n총독부는 샤팍나 이라크가 본 성명서에서 \"아트완 알-아트와니 바그다드 총독은 바그다드 주 의회의 결정에 따라 내일인 10월 25일 일요일 봉사 부서를 제외한 바그다드 총독부 디완과 그 소속 부서의 공식 근무 시간을 방해할 것을 지시했다\" 고 밝혔다.\n그는 \"이것은 파티마 알자흐라 부인의 순교의 날, 그녀에게 평화가 있기를\" 이라고 덧붙였다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفقنا العراق"
+      ],
+      "related": [],
+      "tag": "휴일·행사",
+      "impact": {
+        "lv": "g",
+        "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Iraqi PM adviser accuses Iran of severe border violations and smuggling",
+      "source": "IraqiNews",
+      "link": "https://www.iraqinews.com/iraq/iraqi-pm-adviser-accuses-iran-border-breaches-narcotics-crossings-closed-2026/",
+      "date": "2026-10-24T11:30:17.000Z",
+      "lang": "en",
+      "titleKo": "이라크 PM 고문은 이란이 심각한 국경 침해와 밀수 행위를 저질렀다고 비난합니다.",
+      "url": "https://www.iraqinews.com/iraq/iraqi-pm-adviser-accuses-iran-border-breaches-narcotics-crossings-closed-2026/",
+      "body": "Iraqi PM adviser accuses Iran of severe border violations and smuggling\nBaghdad (IraqiNews.com) – A senior adviser to Iraqi Prime Minister Ali Al-Zaidi has openly accused Iran of orchestrating deliberate security breaches, widespread drug smuggling, and illicit financial flows across the border, marking a rare and pointed public rebuke from within Baghdad’s executive circle as Iraq shuttered key commercial crossing points.\nSpeaking to domestic media, prime ministerial adviser Abdelamir Taiban stated that Tehran has actively undermined Iraqi internal stability by allowing unauthorized, affiliated networks to bypass border protocols, inciting borderland disorder.\nTaiban noted that Iraqi nationals have faced abductions after entering Iranian territory, identifying the areas surrounding the Shalamcheh terminal in Basra and the Al-Sheeb terminal in Maysan as high-risk corridors. He urged the federal government to aggressively scale electronic monitoring and comprehensive automation across e",
+      "bodyKo": "이라크 PM 고문은 이란이 심각한 국경 침해와 밀수 행위를 저질렀다고 비난합니다.\n바그다드 (IraqiNews.com) – 알리 알자이디 이라크 총리의 선임 고문은 이란이 고의적인 보안 위반, 광범위한 마약 밀수, 국경을 넘는 불법 금융 흐름을 조율하고 있으며, 이라크가 주요 상업적 교차점을 폐쇄함에 따라 바그다드 행정부 내에서 드물고 뾰족한 대중의 비난을 받고 있다고 공개적으로 비난했다.\n압델라미르 타이반 (Abdelamir Taiban) 총리 고문은 국내 언론과의 인터뷰에서 테헤란이 무단 제휴 네트워크가 국경 프로토콜을 우회하도록 허용하여 국경 장애를 선동함으로써 이라크 내부 안정을 적극적으로 훼손했다고 밝혔다.\n타이반은 이라크 국민들이 이란 영토에 진입한 후 납치에 직면했으며, 바스라의 샬람체 터미널과 마이산의 알셰브 터미널을 고위험 통로로 식별했다. 그는 연방 정부에 전자 모니터링 및 포괄적 인 자동화를 적극적으로 확장 할 것을 촉구했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "IraqiNews"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "\"بحقيبة مدرسية إلى المقهى\".. رحلة غياب صامتة تهدد مستقبل طلبة ديالى (صور)",
+      "source": "هذا اليوم",
+      "link": "https://hathalyoum.net/articles/4252484",
+      "date": "2026-10-24T11:27:08.000Z",
+      "lang": "ar",
+      "titleKo": "\"카페까지 책가방 들고\".. 조용한 부재중 여행은 디얄라 학생들의 미래를 위협한다 (사진)",
+      "url": "https://hathalyoum.net/articles/4252484",
+      "body": "شفق نيوز ديالى في جولة صباحية بشوارعمدينة بعقوبة مركز محافظة ديالى لا يحتاج المارة إلى كثير من التدقيق لمشاهدةطلبة يقضون ساعات الدوام خارج مدارسهم فبعضهم ين...\nفي جولة صباحية بشوارعمدينة بعقوبة، مركز محافظة ديالى، لا يحتاج المارة إلى كثير من التدقيق لمشاهدةطلبة يقضون ساعات الدوام خارج مدارسهم، فبعضهم ينتظر أمام قاعات الألعاب لفتحأبوابها والدخول إليها، فيما يجلس آخرون في المقاهي حول طاولات الورق والدومينو،ويتناوب عدد آخر على لعب البلياردو، مع انطلاق أولى ساعات اليوم الدراسي.\nداخل بعض صالات الألعابوالمقاهي، تجاور الحقائب المدرسية كراسي الجالسين، وتتصاعد أدخنة الأراكيلوالسجائر من طاولات يشغلها فتية يُفترض أن يكونوا في صفوفهم، لكن حركة المدينةتمضي بصورة اعتيادية، بينما يقضي هؤلاء صباحاً دراسياً بعيداً عن المدرسة.\nففي مقهى واحد قرب شارعخريسان وسط بعقوبة، رصد فريق من الشرطة أكثر من 50 طالباً في صباح واحد خلالالأسبوع الماضي، بحسب شهود عيان أكدوا أن فريق الشرطة جمع الطلبة وقدم لهمالنصائح، محذراً إياهم من ترك المدرسة وقضاء أوقات الدوام خارج الصفوف، إلى جانبتحذير صاحب المقهى من استقبال الأحداث.",
+      "bodyKo": "Shafaq News Diyala는 Diyala Governorate의 중심지 인 Baqubah시에서 아침 투어를합니다. 지나가는 사람들은 학생들이 학교 밖에서 근무 시간을 보내는 것을 지켜 볼 필요가 없습니다. 그들 중 일부는...\n디얄라 주 (Diyala Governorate) 의 중심지인 바쿠바 (Baqubah) 시에서 아침 투어를 할 때 지나가는 사람들은 학생들이 학교 밖에서 근무 시간을 보내는 것을 지켜보기 위해 많은 면밀한 조사가 필요하지 않습니다. 그들 중 일부는 문을 열고 들어가기 위해 게임 홀 앞에서 기다리는 반면, 다른 사람들은 카드 테이블과 도미노 주위에 있는 카페에 앉아 있고, 다른 사람들은 교대로 당구를 치며 수업의 첫 시간이 시작됩니다.\n일부 체육관과 카페 내부에는 앉은 의자에 책가방이 붙어있고, 교실에 있어야 할 소년들이 점거한 테이블에서 아라킬과 담배 연기가 올라오지만, 학교를 떠나 아침을 보내는 동안 도시의 움직임은 정상적으로 진행되고 있습니다.\n바쿠바 중심부의 쿠라이산 거리 근처의 한 카페에서 경찰 팀이 지난 한 주 동안 하루 아침에 50명 이상의 학생을 모니터링했는데, 목격자들은 경찰 팀이 학생들을 모으고 조언을 제공하여 학교를 떠나지 말고 교실 밖에서 근무 시간을 보내라고 경고했으며, 카페 주인에게 청소년을 받지 말라고 경고했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "هذا اليوم"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "디얄라주",
+        "km": 91
+      }
+    },
+    {
+      "title": "وزير الدفاع يتفقد جوياً القطعات العسكرية المرابطة على الحدود العراقية السورية في نينوى",
+      "source": "وكالة اليوم الإخبارية",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05dFdIWGVnLXgxR2RSeEV6TzhlaXBuQmNsaVhCcHRvYkIyS29DaS1ZYUFVYjNEU2E5RVBYTlNxSm04U19tT290RWM2SjY3WVk?oc=5",
+      "date": "2026-10-24T11:20:42.000Z",
+      "lang": "ar",
+      "titleKo": "국방부 장관은 니네베의 이라크-시리아 국경에 주둔한 군부대를 공수합니다.",
+      "count": 1,
+      "sources": [
+        "وكالة اليوم الإخبارية"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "모술",
+        "km": 375
+      }
+    },
+    {
+      "title": "US urges citizens to avoid Iraq travel",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1RRGY2MmJyQ1EwdDNzTVllUXpkQ0FoaHNlRnk3eWp0LXctV3V0Rkh4dnppS0pQR2RQeTJpV0JqdmZwVEFYb0JHbkgxZVFHeXRkS1VUOHBDWTFpcy11dl9LRzF2R1dvOVVzRnJjYVpvQlZiRTZ3MDBOVQ?oc=5",
+      "date": "2026-10-24T11:16:39.000Z",
+      "lang": "en",
+      "titleKo": "샤파크 뉴스.. 미국은 시민들에게 이라크 여행을 피할 것을 촉구합니다.",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
       }
     },
     {
@@ -108,6 +350,38 @@
       }
     },
     {
+      "title": "손석구 \"이라크 파병 자원…1200만원 받아\"",
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISX20261024_0003839382",
+      "date": "2026-10-24T10:55:20.000Z",
+      "lang": "ko",
+      "titleKo": "손석구 \"이라크 파병 자원…1200만원 받아\"",
+      "url": "https://www.newsis.com/view/NISX20261024_0003839382",
+      "body": "[서울=뉴시스]이재훈 기자 = 배우 손석구가 과거 이라크 자이툰 부대 파병에 얽힌 사연을 전했다.손석구는 23일 방송된 SBS TV 예능물 '무엇이든 해줄지니 - 비서진'에서 군 복무 시절 부모님의 도장을 임의로 제작해 파병을 지원했다고 밝혔다.오랜 미국 생활로 군 적응에 어려움을 겪었으나, 훈련소를 1위로 수료한 뒤 군인으로서 새로운 도전을 해보고 싶었다..",
+      "bodyKo": "[서울=뉴시스]이재훈 기자 = 배우 손석구가 과거 이라크 자이툰 부대 파병에 얽힌 사연을 전했다.손석구는 23일 방송된 SBS TV 예능물 '무엇이든 해줄지니 - 비서진'에서 군 복무 시절 부모님의 도장을 임의로 제작해 파병을 지원했다고 밝혔다.오랜 미국 생활로 군 적응에 어려움을 겪었으나, 훈련소를 1위로 수료한 뒤 군인으로서 새로운 도전을 해보고 싶었다..",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "programs.sbs.co.kr",
+        "뉴시스"
+      ],
+      "related": [
+        {
+          "titleKo": "“군인으로서 갈 수 있는 데까지 가보고 싶다” 손석구, 직접 이라크 파병 지원했던 이유",
+          "source": "programs.sbs.co.kr",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOHZxa2k4NmdmMEU1X05lOGhoeVd0TkJqalY5cjZXTEFJekJtbGhGT0dfSHd3cEVTQkxPY2tsdGZXM1VkZlNsd1Z6TlduaHZ6Zl93YThDU19GLVVJMXcwTGhHRUVESUNkbkRmZGtVVnQyeDNCUFlzVjdqYklkdy0tdHRKSmtneTNkT3E3R3pB?oc=5"
+        }
+      ],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "Baghdad denounces Jordan church attack",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/amp/en/Iraq/Baghdad-denounces-Jordan-church-attack",
@@ -118,22 +392,16 @@
       "body": "Shafaq News- Baghdad Iraqi Foreign Minister Fuad Hussein condemned an attack on mourners at a church funeral in southern Jordan during a phone call with his Jordanian counterpart Ayman Safadi on Frid\nHussein expressed Iraq's solidarity with Jordan in fighting terrorism, offered condolences to the victims' families, and wished the wounded a speedy recovery.\nThe attack took place in Jordan's Karak Governorate today resulting in 7 deaths and injuring 34 others.",
       "bodyKo": "Shafaq News- 바그다드 이라크 외무장관 푸아드 후세인은 요르단 남부의 교회 장례식에서 조문객에 대한 공격을 규탄했다. 금요일에 요르단의 상대방인 Ayman Safadi와 전화 통화 중이었다.\n후세인은 테러와 싸우는 요르단과 이라크의 연대를 표명하고 희생자 가족에게 애도를 표했으며 부상자들의 조속한 회복을 기원했다.\n이 공격은 오늘 요르단의 카라크 주에서 발생하여 7명이 사망하고 34명이 부상을 입었습니다.",
       "tried": true,
-      "count": 3,
+      "count": 2,
       "sources": [
         "IraqiNews",
-        "شفق نيوز",
-        "PUKmedia یەکێتیی نیشتمانیی کوردستان"
+        "شفق نيوز"
       ],
       "related": [
         {
           "titleKo": "이라크 FM 푸아드 후세인은 요르단의 카라크에서 치명적인 교회 공격을 비난합니다",
           "source": "IraqiNews",
-          "link": "https://www.iraqinews.com/iraq/iraq-condemns-jordan-karak-church-shooting-fuad-hussein-call-2026/"
-        },
-        {
-          "titleKo": "이라크 대통령이 교회 공격으로 요르단에 조의를 표하다",
-          "source": "PUKmedia یەکێتیی نیشتمانیی کوردستان",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5OYjMzZnlwU3hHSXV6eU9DLWh3cEhWOWliV1U0N3ZLTjBGU3loTDVNb3k1Q1E1YkRMcjRPcTUzS0w3MjRxU0wxa3pTajg1aWd5Y3lF?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPY091UXlPWEQ3NmpuZU5CMVA1WURKSFppbW9sb2dKa2hlV2Qtd2ZRUzhoOU1xdGpLX3RKTjFHSTBoYUgyS0U2aGF4dVpneUM2aHZ0STlzVG0tVjhucVEzZHNRV014ZC02Wl9fWFZUYkNtYmNFb0pLa1dEYWswLWgtX19fV0hULXdLQl9lQ1NJUHhyNWFodUJFX2NPUGMyZw?oc=5"
         }
       ],
       "tag": "치안·테러",
@@ -165,13 +433,34 @@
         {
           "titleKo": "바그다드 시정부는 수도의 기념물과 동상을 위한 청소, 세탁 및 유지 보수 캠페인을 실시합니다.",
           "source": "شبكة الإعلام العراقي",
-          "link": "https://news.imn.iq/41762-%D8%A3%D9%85%D8%A7%D9%86%D8%A9-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AA%D9%86%D9%81%D8%B0-%D8%AD%D9%85%D9%84%D8%A7%D8%AA-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%88%D8%BA%D8%B3%D9%84-%D9%88%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%84%D9%86%D8%B5%D8%A8-%D9%88%D8%AA%D9%85%D8%A7%D8%AB%D9%8A%D9%84-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9.html"
+          "link": "https://news.google.com/rss/articles/CBMi8gNBVV95cUxNbk10UjV1ck9RMExSdi1ZdVJna2hsMjBFcmg4eEpvallFNjhlWHZ1clBXM1RiRGxRa1h1MmdFdVFMeERNdUMwbVgtX21NN0FWQkxwVjlGVzFwd1ZkVnhTZ0plLUNIWFBoWVBBSDNDdmJWckYtM1A1QjE4QU1BdFQydEhWeWZEVmhxUWNtWWZNTm9PNTl1V1FwRkVFdGg1RlliWjRJQkFZbk5mVGE0NGxRSkgxbGFXZENGbTVnRDZtVk50MFF6Qm9PZC1oeFdKLTVPVEh3cU9BTlRJWThOWE04a0g1MUFjbWsyd0VqSEZ1SkE3MXQtSEtkd0RmN0RLQWJ0b2xwenpwUnh4UUl5LXpjb3NDU3VRNzJCOFk0cjZyaGk4X3RtYTh1dkNsTEltNFFjU1Ztc2Flb21ZcG5ZUDQyRWY3Vk9WSEJPalczeXpaSzVEN25EVWl3NXdRZDRwaUZsbXluMVJzaUZ3ZEl0TnhtNXlTYk9ZLXA3Rmk4TnpSdlVQd2NYZ1BCSVVzbzVJeXRFeDd4dEgtbjZYQmZ6YjFncXJLSWVIeWVTdjB5VGRPTHpBYmlrYXBLaUNfU0FyRHREQjRXMzZ5OFpPck8yMDlSVWl5SE1ySmMxRTJfaWVhRmg1X3FLMDNWLWpsY29PMnRoaEE?oc=5"
         }
       ],
       "tag": "정치·선거",
       "impact": {
         "lv": "g",
         "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Can Baghdad break the militias’ grip on Iraq?",
+      "source": "نون بوست",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5rM0hsaVR2ajZoNDByLTJFbUxGcnc0VFY3cld0TEg1LXlyeTVPVzF5V09BUmpLdjVXblVEMWhuTVkxOVBQbkY3LTFMQzRscVhXWnJz0gFTQVVfeXFMTmszSGxpVHZqNmg0MHItMkVtTEZydzRUVjdyV3RMSDUteXJ5NU9XMXlXT0FSakt2NVduVUQxaG5NWTE5UFBuRjctMUxDNGxxWFdacnM?oc=5",
+      "date": "2026-10-24T10:19:10.000Z",
+      "lang": "en",
+      "titleKo": "바그다드가 이라크에 대한 민병대의 손아귀를 깰 수 있을까?",
+      "count": 1,
+      "sources": [
+        "نون بوست"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
         "act": "",
         "place": "바그다드",
         "km": 27
@@ -228,6 +517,69 @@
       }
     },
     {
+      "title": "Official: Iraqi border with Saudi Arabia fully secured",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRm9Kc1A3VzFCOW9LS3FBbnpvQ3VYM29YNVpvVV94Z244aDdrWW1lNHhBaUx2a2ZuMklKSWpmR2FLWlhvQlJxa0pnbmxsMDhQVkk1RU1ZUzk1QkNIWE1LVEQ2bTN4dl9CZElpdUYySGJkdGNVUi1FOTFRbFBNWTR0OHBWMUE2eG5qZGRneHo2YmcxZw?oc=5",
+      "date": "2026-10-24T09:31:56.000Z",
+      "lang": "en",
+      "titleKo": "샤파크 뉴스.. 공식: 사우디아라비아와의 이라크 국경 완전히 확보",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Travel Advisory: Iraq October 2026",
+      "source": "U.S. Embassy & Consulate in Iraq (.gov)",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0xLTFoWVliOFA3XzVCdGlPeWg2RVYyUzBqR2Y5cjlIeERPY1FEZk5tc3ZIOUpnMWRKeXZaY1V0S1hYWFlzVndSSTBQRVAxTWJ0UXh4dmtLOTZsdy1vVzdSS1NoSW1tOWJHSy1V?oc=5",
+      "date": "2026-10-24T09:27:42.000Z",
+      "lang": "en",
+      "titleKo": "여행 경보: 2026년 10월 이라크",
+      "count": 1,
+      "sources": [
+        "U.S. Embassy & Consulate in Iraq (.gov)"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "استعدادًا لتظاهرات الأحد.. شلل تجاري وتبليغات بإغلاق المطابع والمحال وسط بغداد",
+      "source": "https://naynawaalghad.tv/",
+      "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPdHl5QlRwekE0b3lKRnFZQ2ltMmhhVVFIQmpMWWU0MGRSb1E0ME5IdEJSbWJ3MEtDeFF3S0RqcEdreEQyZmNSWEphOEhxSnhva2wxN3lIVmxCUjZIbkhwWks0TzV2bk9FWEx3SHQxdEJ5ZkVRM0tDZGVBVlNmR09YRTNVYXJPSmdqWDNsT2VSaFpQSnFPOGJjeTJOa0hObTN1eEY3WmtqLS1oRUExSGloRW1CcFdsUEhreUpTUnYySEoxWWw4aWtpV0lSX0hRal9FQWktWDJmVE5KbzI5Tm1ZQ0NwSWlpaEk2a2lrcDFXc19LUHNRVGtya2c4eHZOOFRCd2NoTmhtYkUxWGZueUlLX0ZFeUNjOXV3T2x4QnBub3pDVW1GNm16dzEybWdMbmNrUWxHNEk0WEcxQVNxeTBkTUV6Rkhxdw?oc=5",
+      "date": "2026-10-24T09:23:54.000Z",
+      "lang": "ar",
+      "titleKo": "일요일 시위 준비, 상업적 마비 및 바그다드 중심부의 인쇄기 및 상점 폐쇄 통보",
+      "count": 1,
+      "sources": [
+        "https://naynawaalghad.tv/"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "y",
+        "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
+        "act": "시위 시간대 시내 이동 피하기",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
       "title": "بغداد.. إجراءات مشددة وإغلاق المطابع التجارية قرب ساحة التحرير عشية ذكرى تشرين",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AC%D8%B1%D8%A7-%D8%A7%D8%AA-%D9%85%D8%B4%D8%AF%D8%AF%D8%A9-%D9%88-%D8%BA%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%A8%D8%B9-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9-%D9%82%D8%B1%D8%A8-%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1-%D8%B9%D8%B4%D9%8A%D8%A9-%D8%B0%D9%83%D8%B1%D9%89-%D8%AA%D8%B4%D8%B1%D9%8A%D9%86",
@@ -281,7 +633,7 @@
       "title": "رحيم الدراجي لرووداو: صولة الفجر شهدت اعتقال 40 مسؤولاً ونحو 17 ألف شهادة مزورة دخلت العراق بين 2003 و2015",
       "source": "rudawarabia.net",
       "link": "https://www.rudawarabia.net/arabic/categories/news/1368544",
-      "date": "2026-10-24T08:38:28.000Z",
+      "date": "2026-10-24T09:00:28.000Z",
       "lang": "ar",
       "titleKo": "라힘 알-다라지 (Rahim al-Daraji) 에서 루다우 (Rudaw) 까지: 새벽의 도착으로 2003년부터 2015년까지 이라크에 입국한 40명의 관리와 약 17,000개의 위조 증명서가 체포되었다.",
       "url": "https://www.rudawarabia.net/arabic/categories/news/1368544",
@@ -303,6 +655,27 @@
       }
     },
     {
+      "title": "عشية ذكرى انتفاضة تشرين.. العراقيون يستعدون لاحتجاجات جديدة ضد الجوع والظلم",
+      "source": "RojNews.News",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8ySnk5QXdWbHhXS3dzeGdLNm1xaE90WTkxV2hBVWxGV0M4TldVQTBGWmxQMEVFU2lKaE52X3VwTmxza0RiRE9YOQ?oc=5",
+      "date": "2026-10-24T08:32:28.000Z",
+      "lang": "ar",
+      "titleKo": "티슈린 봉기 기념일을 앞두고 이라크인들은 굶주림과 불의에 맞서 새로운 시위를 준비하고 있다.",
+      "count": 1,
+      "sources": [
+        "RojNews.News"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "g",
+        "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "ذكرى تشرين.. دعوة في النجف لتجمع سلمي للمطالبة بالإصلاح",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%B0%D9%83%D8%B1%D9%89-%D8%AA%D8%B4%D8%B1%D9%8A%D9%86-%D8%AF%D8%B9%D9%88%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D8%AC%D9%81-%D9%84%D8%AA%D8%AC%D9%85%D8%B9-%D8%B3%D9%84%D9%85%D9%8A-%D9%84%D9%84%D9%85%D8%B7%D8%A7%D9%84%D8%A8%D8%A9-%D8%A8%D8%A7%D9%84-%D8%B5%D9%84%D8%A7%D8%AD",
@@ -313,24 +686,12 @@
       "body": "شفق نيوز- النجف دعا محتجون في محا \nدعا محتجون في محافظة النجف، مساء الجمعة، إلى تنظيم تجمع احتجاجي سلمي، بعد غد الأحد، في ساحة ثورة العشرين، بالتزامن مع ذكرى تظاهرات تشرين، للمطالبة بمعالجة الأزمات الاقتصادية والمعيشية وتنفيذ إصلاحات سياسية وإدارية.\nوأكد المحتجون، في بيان ورد لوكالة شفق نيوز، أن العراق يواجه تحديات خدمية وسياسية واقتصادية واجتماعية متراكمة، مطالبين بتحسين الخدمات وتوفير فرص العمل وضمان حياة كريمة، وإنهاء المحاصصة السياسية وحصر السلاح بيد الدولة وترسيخ سيادة القانون.\nكما طالبوا بمراجعة السياسات المالية والنقدية، وإعادة إحياء المعامل والمصانع، ودعم الاستثمار المنتج، وإنصاف ضحايا الاحتجاجات السابقة وعوائلهم والجرحى، ومحاسبة المسؤولين عن الانتهاكات وفق القانون.\nوشدد البيان على أهمية استذكار مطالب تظاهرات تشرين، والاستجابة للمطالب الشعبية، والتعبير السلمي عنها بما يحقق الإصلاح والعدالة والمساواة.",
       "bodyKo": "Shafaq News - 나자프는 마하에서 시위대를 불렀습니다 & # 1\n금요일 저녁 나자프 주 (Najaf Governorate) 의 시위자들은 일요일, 20대 혁명 광장에서 티슈린 시위 기념일과 함께 경제 및 생활 위기를 해결하고 정치 및 행정 개혁을 시행할 것을 요구하는 평화적인 시위 집회를 요구했다.\n샤팍 뉴스 (Shafaq News) 가 받은 성명서에서 시위대는 이라크가 누적된 서비스, 정치, 경제 및 사회적 문제에 직면해 있으며, 서비스 개선, 일자리 기회 제공, 품위 있는 삶 보장, 정치적 할당량 종료, 무기를 국가의 손에 국한시키고 법치주의를 공고히 할 것을 촉구한다고 강조했다.\n그들은 또한 재정 및 통화 정책, 공장 및 공장의 부활, 생산적 투자 지원, 이전 시위 희생자와 그 가족 및 부상자에 대한 정의, 법률에 따라 위반에 대한 책임에 대한 검토를 요구했다.\n성명서는 티슈린 시위의 요구를 상기하고, 대중의 요구에 부응하고, 개혁, 정의, 평등을 달성하는 방식으로 평화롭게 표현하는 것이 중요하다고 강조했다.",
       "tried": true,
-      "count": 3,
+      "count": 1,
       "sources": [
-        "RojNews.News",
         "شفق نيوز"
       ],
-      "related": [
-        {
-          "titleKo": "티슈린 봉기 기념일을 앞두고 이라크인들은 굶주림과 불의에 맞서 새로운 시위를 준비하고 있다.",
-          "source": "RojNews.News",
-          "link": "https://rojnews.news/ar/?p=293332"
-        },
-        {
-          "titleKo": "나자프는 티슈린 기념일을 맞아 시위 운동을 준비하고 있다.",
-          "source": "RojNews.News",
-          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE85REkxcE9hc1BLbzdZRFM1VGozeTVxLW8xYU5MN0R1YmF3bjh5S2ZEeHBIdFVSd2V4OXA3MzBmTmkwUmthYWRYNQ?oc=5"
-        }
-      ],
-      "tag": "시위·통제",
+      "related": [],
+      "tag": "기타",
       "impact": {
         "lv": "g",
         "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
@@ -453,6 +814,27 @@
       }
     },
     {
+      "title": "أبرزها الكرمة و”السفانة”.. 3 مواجهات حاسمة ضمن دوري نجوم العراق اليوم",
+      "source": "شبكة 964",
+      "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE94b2JEOGstQVJFckFTWGp3N2VmVGt1VjBjdVNJUnJMV1FES3VaTHRCM0hjdE9jWDVHZml3VzhIWllxZw?oc=5",
+      "date": "2026-10-24T07:31:26.000Z",
+      "lang": "ar",
+      "titleKo": "그 중 가장 두드러진 것은 알 카르마와 \"알 사파나\" 입니다.. 오늘날 이라크 리그의 스타들 내에서 3번의 결정적인 대립",
+      "count": 1,
+      "sources": [
+        "شبكة 964"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "Iraq ‘will not be a party to any war,’ PM says",
       "source": "964media",
       "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE4zMW9jenM1MjZHTXZhUnZrcWVZQlplNWVlMzlsbjFkOHlqZFZyczlsUkdHeTVnbXNISEYwZkIzdE11eUZl?oc=5",
@@ -495,6 +877,27 @@
       }
     },
     {
+      "title": "الزيدي يكاشف العراقيين بشأن شحنات الدولار من الفيدرالي.. ماذا قال؟",
+      "source": "عربي21",
+      "link": "https://news.google.com/rss/articles/CBMihgRBVV95cUxOQ1I0YzZMeVFaTXMxWW0zTmRkQ0pNdVUtT2RTZXJaZ09PaDRnNzd5Z2YtT0VnNmdyYWI2MW9sVTVWa0JpbFhYWmFhdkctN0s0ZXZSRWNiODJBNnNEay02RjBpUkhIaGF3R01PeXdiRV91U19abkoxRkRaZTBOMVRONlVYc0ZzcVcwZFFDYmhuU25XaWU3TDRKNWp5czJ2T1JFM2kwRXFyemlkZ1JGNmNoX21rVzhMdzExanZ4T1hfMF9tMXdHZnNfVUlQblBVTEFKWmRDYTJhREh3MnJNZGYtMWxPbERJdzlOcENMdWZ3dXJrX0VmcTBiZTQ2S09faTdxd3RpR3dvcWs2ZjhkeEVKSXVKMngzd05fd0M5SkRnbDlkSGdPSnV2UVVrSUZlNmsyWDI2WTAzWWc5cHlyaW1RNTJNVDQxNG43eGxSTE5yU3I1b2hfUU5lOWVsZVQwbG5MNFc4MlE0ekJIb21YZVBzTmVfVE42V2lwNHgyclNxMDFVRF80ZmRfdTdMVlBnZ2VSVU02bVUya2c2aVhkZXpoQXRhZDA1UGxlTmVIenZvY2s5Yk9lS05rMFF1ZzVLRzQxQXhvQVR3MktBdnNhTGp4UHF0QnN6S2xFQzRKVUR1SUJuOGt5NzJaR3RQcVlHNThXTDEyczF1TnpXLTBUQXFmbU1NMzRhQdIBigRBVV95cUxPcFo2UXVoOUdVMU1sTXNoYkpvdUFqOHZOb0FUNVZwVDdPN1hsQzZNVnFDQ09MZC12aUlFS0EyYWw0SUZnc2UyVXdfMkVqUElUQ2lzdVd6S0J1M3J6eFFnZ0o2QnN4c00xYkQzNG00WTlMdzFYX29ZcUw0RlJoTU5xdHU1cFE1UmIzUGQzcmNLdlZTZ2t4QmtUN3I3eHRpbUZNMHdTREIxSU02VklPeTAzRUVyYU5LUGZORTlZUUJYZnI2Y1RKOUFTdXFaaXZDNXNxWnZiZk9aS2U5WVRzSkVRN1YwNU5LQ0swRmVKYWFnUHc4RzBIT0kyaVJkOWRDa1N2MHBxTkg4Q1pSZEkxdU1qWFVETm1DNWdxdlE4LXpsVG9kN0hYbXRMeXI2MzB1ZDhhSHdMSUNBd3UyWVFCVEJqdVRrckhUQlNILTg1em1CM0s2bHRuQzlGLUNIR2lhMXhkVWl5RmlnU2VNZkdieFRFZE1HcGlRYlliMDRyQThHQ1QxRkZsX1gxWllTUk5UbF9TNmdSUjNoWUFjbm9PSGRDQjRKcHoydUd2QjNLUXdYaEZkaUhSLW43TkxFRnc3X3dfeVJfdTFwalVHcldCVXNYSmNUQ3VrVGE5QTM3dWlLNHFpYUhkQkJLbEFNYnpYNUtOMVlxd2xBbFBlMHkxZUxWSFJwRHN3ZmhnRHc?oc=5",
+      "date": "2026-10-24T06:40:00.000Z",
+      "lang": "ar",
+      "titleKo": "알자이디는 이라크인들에게 연준으로부터의 달러 선적에 대해 밝힙니다.. 그가 뭐라고 말했습니까?",
+      "count": 1,
+      "sources": [
+        "عربي21"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "تيار الخط الوطني في العراق لرووداو: دعونا للالتحاق بتظاهرات 25 تشرين لمحاسبة قتلة المحتجين وحصر السلاح",
       "source": "rudawarabia.net",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5EOWpMcEZPbWR1YmlqNkhMeVM0dFVXWjZJN2l1bEVWcHRWc0sySmNPRWVTdW9haHJ4X2Z1S21vTVhVUFJ1QUxXMllCTWplTDAzTnk1QktNcFE1NUJ2TEZTVGFGU2hVeXkySUE?oc=5",
@@ -516,45 +919,29 @@
       }
     },
     {
-      "title": "손석구 \"이라크 파병 자원…1200만원 받아\"",
-      "source": "뉴시스",
-      "link": "https://www.newsis.com/view/NISX20261024_0003839382",
+      "title": "손석구 “이라크 파병 가려고…몰래 부모님 도장 위조했다”",
+      "source": "중앙일보",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qY1pLdERxNXRmNzRueHpzMy1jMk1nT2ZHcVluVDhqemJUNjY3emFhbC0xYk53dDNCNVFaVmYxZldfcnh1LXdjTVRuQUFUTXNrNXdJZmNn?oc=5",
       "date": "2026-10-24T06:14:43.000Z",
       "lang": "ko",
-      "titleKo": "손석구 \"이라크 파병 자원…1200만원 받아\"",
-      "url": "https://www.newsis.com/view/NISX20261024_0003839382",
-      "body": "[서울=뉴시스]이재훈 기자 = 배우 손석구가 과거 이라크 자이툰 부대 파병에 얽힌 사연을 전했다.손석구는 23일 방송된 SBS TV 예능물 '무엇이든 해줄지니 - 비서진'에서 군 복무 시절 부모님의 도장을 임의로 제작해 파병을 지원했다고 밝혔다.오랜 미국 생활로 군 적응에 어려움을 겪었으나, 훈련소를 1위로 수료한 뒤 군인으로서 새로운 도전을 해보고 싶었다..",
-      "bodyKo": "[서울=뉴시스]이재훈 기자 = 배우 손석구가 과거 이라크 자이툰 부대 파병에 얽힌 사연을 전했다.손석구는 23일 방송된 SBS TV 예능물 '무엇이든 해줄지니 - 비서진'에서 군 복무 시절 부모님의 도장을 임의로 제작해 파병을 지원했다고 밝혔다.오랜 미국 생활로 군 적응에 어려움을 겪었으나, 훈련소를 1위로 수료한 뒤 군인으로서 새로운 도전을 해보고 싶었다..",
-      "tried": true,
-      "count": 8,
+      "titleKo": "손석구 “이라크 파병 가려고…몰래 부모님 도장 위조했다”",
+      "count": 4,
       "sources": [
         "데일리중앙",
         "머니투데이",
         "중앙일보",
-        "마이데일리",
-        "매일경제",
-        "뉴시스"
+        "매일경제"
       ],
       "related": [
         {
           "titleKo": "손석구 \"이라크 파병... 지원하려면 부모님 도장 있어야\"",
           "source": "데일리중앙",
-          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5OWVhRNHI4eGYySm1PTGVSa0RmdVd5dmE2bDNFVW16TDNNYWNkXzZ3YVFld3ZMcDh6N3FuX0EzT1RLUVItOW56S2RZRENDR2F6X3h3b3B4eDRFUl9zc3JPYXM3Qzk5c01RWk1KRw?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9UcGlEWEZQaDBJbDJBVWlOSElKNXUzTzk1WUZpTzRqUG5JdldmZzdpT3RKVlJEd0kyMk50M1hXelBrbnZNSzhsOVNqQjc2NldqaWxsYlRwTkNScEdnUmNlZ2F5bXFfSTdBQTVYUmZ3?oc=5"
         },
         {
           "titleKo": "손석구, 부모님 도장 위조해 이라크 파병…\"1200만원 벌어\"",
           "source": "머니투데이",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1XaFRYUXkzVkZKWG9ublV5Sm1vb3BuOWNUWVNtOGRSSGdDZjduX29IcUotT1h0aVAtR296RGpTWUZJYS1tb1V6QnR3TVg3c1VNbzZiY0llQ1JvM002YnRTbEZvMlE5QWtZWE1YOHcyM3VtejTSAXhBVV95cUxOM0l1LW1aUFFxRFl0YmJyMmdiSzZGZWUxZGh0bTJpUEF3MWx1RlduaVFGdlVQaW44bHVaVFRRNHVJNzUxM00za3h1clJ5SGplOXBWQ0pBYkk4SGVlM3hzb211UEhrRnZJcW9WRzNVeXdJLUJHNjh6VWI?oc=5"
-        },
-        {
-          "titleKo": "손석구 “이라크 파병 가려고…몰래 부모님 도장 위조했다”",
-          "source": "중앙일보",
-          "link": "https://www.joongang.co.kr/article/25472467"
-        },
-        {
-          "titleKo": "손석구 \"영창 갈 뻔 했다\"…이라크 파병 가려고 부모 도장 `위조` 충격 자폭 [비서진]",
-          "source": "마이데일리",
-          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5TN3h4QVdXcnd4VkItWlZWRmVXWjNDRVpXZDRIcE1URklNN0lDOTJDeGVpcmRoaVp5am1Gdm9oQXNvOFIwckI1UWZYLTN3LVhMNEFnWWVURU5pWk5EU3duNlBHbE1oUQ?oc=5"
         },
         {
           "titleKo": "손석구, 영창 갈 뻔…부모 도장 위조하고 이라크 파병 “아버지 한숨 잊히지 않아”",
@@ -640,31 +1027,6 @@
           "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQU1JGd3ZQNDBEbXhFcEJxaU5yME1Rdi1GV1A3SnVsZERnMVloYzI1NmFBVmY4dEppN1F3ejgzekpNSzJQVkJ0eV8zQkx5NzRZNGRnLUtGd3otSGt4azF4UnJGQ3U1ZXp5aWNVTk83OWloNmg5MDZSR3A0WmhPamdfR1pya2dDd0N5c25OZQ?oc=5"
         }
       ],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq says no US troops left in the country, not even advisers",
-      "source": "Anadolu Ajansı",
-      "link": "https://aa.com.tr/en/middle-east/iraq-says-no-us-troops-left-in-the-country-not-even-advisers/4099166",
-      "date": "2026-10-24T04:08:42.000Z",
-      "lang": "en",
-      "titleKo": "이라크는 이라크에 미군이 남아있지 않으며 심지어 고문도 남아있지 않다고 말한다.",
-      "url": "https://aa.com.tr/en/middle-east/iraq-says-no-us-troops-left-in-the-country-not-even-advisers/4099166",
-      "body": "Prime minister says Baghdad aims to bring all weapons under state control by next June, strengthen strategic partnership with Washington | Anadolu\nEDITION Middle East Iraq says no US troops left in the country, not even advisers Prime minister says Baghdad aims to bring all weapons under state control by next June, strengthen strategic partnership with Washington Şahin Demir 24 October 2026 • Update : 24 October 2026 İSTANBUL Iraq’s prime minister said Friday that no US troops are left in the country, including in advisory roles, as Baghdad moves to bring all weapons under state control by next June.\nAli Faleh Al-Zaidi told the Iraqi News Agency (INA) that the absence of foreign forces had removed the justification armed factions previously cited for retaining their weapons.\nHe stressed that the government’s decision to restrict weapons to state institutions was final and irreversible.",
-      "bodyKo": "바그다드 총리는 내년 6월까지 모든 무기를 국가 통제하에 두고 워싱턴과의 전략적 파트너십을 강화하는 것을 목표로 하고 있다고 말했습니다 | Anadolu\nEDITION Middle East Iraq says no US troops left in the country, even not advisers Prime Minister says Baghdad aimans to bring all weapons under state control by next June, strengthen strategic partnership with Washington Şahin Demir 24 October 2026 • Update: 2026년 10월 24일 이스탄불 이라크 총리는 금요일 바그다드가 내년 6월까지 모든 무기를 국가 통제하에 두는 움직임을 보임에 따라 자문 역할을 포함한 미군이 남아있지 않다고 말했다.\n알리 팔레 알자이디 (Ali Faleh Al-Zaidi) 는 이라크 통신사 (INA) 에 외국 군대의 부재로 인해 무기를 보유하기 위해 이전에 언급된 무장 진영의 정당성이 제거되었다고 말했다.\n그는 국가 기관에 무기를 제한하는 정부의 결정은 최종적이며 돌이킬 수 없다고 강조했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Anadolu Ajansı"
-      ],
-      "related": [],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -886,338 +1248,48 @@
         "place": "바그다드",
         "km": 27
       }
-    },
-    {
-      "title": "Zaidi seeks higher US dollar shipments to narrow Iraq's exchange gap",
-      "source": "The New Region",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5yTEwteFllX2hSNDRrUHZzMHhkUjdfa2p0d0ZoUHB4OUhER3JtWTdiSnZjMS1hNDVSX2NMZ3FmOXc3cnYya09CQUFzbw?oc=5",
-      "date": "2026-10-23T21:03:55.000Z",
-      "lang": "en",
-      "titleKo": "자이디는 이라크의 환율 격차를 줄이기 위해 더 높은 미국 달러화 선적을 모색하고 있다.",
-      "count": 1,
-      "sources": [
-        "The New Region"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq will soon be free of armed factions, weapons under state control: Iraqi PM",
-      "source": "Rudaw",
-      "link": "https://www.rudaw.net/english/categories/iraq/1079861",
-      "date": "2026-10-23T21:01:08.000Z",
-      "lang": "en",
-      "titleKo": "이라크는 곧 무장 진영, 국가 통제하의 무기로부터 자유로워질 것입니다: 이라크 PM",
-      "url": "https://www.rudaw.net/english/categories/iraq/1079861",
-      "body": "Iraqi Prime Minister Ali al-Zaidi said Friday that Iraq would soon be free of armed groups, with weapons exclusively in the hands of state security forces, as he defended his government’s fiscal measu",
-      "bodyKo": "알리 알자이디 이라크 총리는 금요일 이라크가 정부의 재정 측정을 방어하면서 주 보안군의 손에 독점적으로 무기를 가지고 곧 무장 단체로부터 자유로워질 것이라고 말했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq Condemns Attacks on Saudi Arabia, Rejects Use of Its Territory to Target the Kingdom - ASHARQ AL-AWSAT English",
-      "source": "ASHARQ AL-AWSAT English",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbkQzeVFhSDV4T3Z3NXZfNVRMVkRaaVBLY0h0MlRpdDBkNV9OVlgwYUVDakg2TUIzQzROdUZrZWJNRlZ0U2RSNUNzZ0hXcTBlUVBvejFNemY3eTFka1M5TjM1WXhmODYyRll0RjdzR0dWdmhsc3lrWEZaVmNWZnlqZldTU05faml3bnk4bkUzNEkzRjRNMTJoVXJtMEl3UkVBRDZvWnV6cnBTV0ZBcnlEdXNKOWQ2dVFpbU5nd2NR?oc=5",
-      "date": "2026-10-23T20:53:31.000Z",
-      "lang": "en",
-      "titleKo": "이라크는 사우디아라비아에 대한 공격을 비난하고 왕국을 목표로 하는 이라크 영토 사용을 거부합니다 - ASHARQ Al-Awsat English",
-      "count": 1,
-      "sources": [
-        "ASHARQ AL-AWSAT English"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq’s Closure of Shalamcheh Crossing Sparks Regional Debate",
-      "source": "Global Arab Network",
-      "link": "https://english.globalarabnetwork.com/2026/10/23/iraqs-closure-of-shalamcheh-crossing-sparks-regional-debate/",
-      "date": "2026-10-23T20:37:57.000Z",
-      "lang": "en",
-      "titleKo": "이라크의 샬람체 교차로 폐쇄 불꽃 지역 토론회",
-      "url": "https://english.globalarabnetwork.com/2026/10/23/iraqs-closure-of-shalamcheh-crossing-sparks-regional-debate/",
-      "body": "The closure of the Shalamcheh border crossing with Iran has ignited internal debate in Iraq over national sovereignty versus economic and security priorities.\nGlobal Arab Network Editorial Team October 23, 2026 Economy , Iraq , Politics The Iraqi government’s decision to shutter the Shalamcheh (Al-Shib) border crossing with Iran has triggered a polarized public and political debate within Iraq, highlighting the complex tensions between maintaining regional trade and asserting national sovereignty. The closure, which has disrupted the movement of goods and people, has left stakeholders divided over the primary motivations and the potential long-term consequences of the move.\nFor many observers, the immediate concern lies in the economic impact. Iran remains a vital trade partner for Iraq, and the Shalamcheh crossing serves as a key artery for food supplies and consumer goods. Critics of the government’s decision warn that a prolonged closure could lead to a spike in commodity prices and",
-      "bodyKo": "이란과 교차하는 샬람체 국경의 폐쇄는 경제 및 안보 우선순위 대비 국가 주권에 대한 이라크의 내부 논쟁에 불을 붙였다.\n글로벌 아랍 네트워크 편집팀 2026년 10월 23일 경제, 이라크, 정치 이라크 정부가 이란과의 샬람체 (Al-Shib) 국경을 폐쇄하기로 한 결정은 이라크 내에서 양극화된 대중과 정치 논쟁을 촉발시켰으며, 지역 무역을 유지하는 것과 국가 주권을 주장하는 것 사이의 복잡한 긴장을 강조했다. 상품과 사람들의 이동을 방해하는 폐쇄로 인해 이해 관계자들은 주요 동기와 포\n많은 관찰자에게 즉각적인 우려는 경제적 영향에 있습니다. 이란은 여전히 이라크의 중요한 무역 파트너이며, 샬람체 교차로는 식량 공급과 소비재의 핵심 동맥 역할을 한다. 정부의 결정에 대한 비판자들은 장기간 폐쇄가 원자재 가격의 급등으로 이어질 수 있다고 경고합니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Global Arab Network"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "ConocoPhillips Joins BP in Iraq as Baghdad Seeks More US Energy Investment",
-      "source": "EnergyNow.com",
-      "link": "https://energynow.com/2026/07/conocophillips-joins-bp-in-iraq-as-baghdad-seeks-more-us-energy-investment/",
-      "date": "2026-10-23T20:33:00.000Z",
-      "lang": "en",
-      "titleKo": "ConocoPhillips, 바그다드가 더 많은 미국 에너지 투자를 모색함에 따라 이라크에서 BP에 합류",
-      "url": "https://energynow.com/2026/07/conocophillips-joins-bp-in-iraq-as-baghdad-seeks-more-us-energy-investment/",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "EnergyNow.com"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Basra's historic Friday market struggles with rising costs",
-      "source": "شفق نيوز",
-      "link": "https://www.shafaq.com/en/society/Basra-s-historic-Friday-market-struggles-with-rising-costs",
-      "date": "2026-10-23T20:16:49.000Z",
-      "lang": "en",
-      "titleKo": "비용 상승으로 어려움을 겪고 있는 바스라의 역사적인 금요일 시장",
-      "url": "https://www.shafaq.com/en/society/Basra-s-historic-Friday-market-struggles-with-rising-costs",
-      "body": "Shafaq News- Basra Rising rents, taxes and import costs are pushing shopkeepers in Basra's eight-decade-old Friday Market out of their stores and onto street stalls, as vendors press authorities fo\nThe market has operated in the old quarter of Iraq's main southern port city since the 1940s. It once specialized in rare collectibles and the antique household items of old Basra , according to Hajj Abdul Hussein al-Muzaffar, one of its longest-serving vendors. Today, its stalls are stocked mostly with everyday consumer goods and imported electronics.\nAl-Muzaffar told Shafaq News that swings in the dollar exchange rate and higher prices at the source have hit traders and low-income buyers directly. For some shop owners, the cost of keeping a store has become too much. Rent and taxes have driven them to give up their premises and sell from stalls, where overheads are lower.",
-      "bodyKo": "Shafaq News- 바스라 임대료, 세금 및 수입 비용이 상승함에 따라 바스라의 8년 된 프라이데이 마켓의 상점주들이 매장에서 나와 길거리 노점상으로 밀려나고 있습니다.\n이 시장은 1940년대부터 이라크의 주요 남부 항구 도시의 구시가지에서 운영되었습니다. 하즈 압둘 후세인 알 무자파르 (Hajj Abdul Hussein al-Muzaffar) 에 따르면, 한때 희귀 수집품과 오래된 바스라 (Basra) 의 골동품 가정 용품에 특화되어 있었다고 합니다. 오늘날 노점에는 주로 일상적인 소비재와 수입 전자제품이 구비되어 있습니다.\nAl-Muzaffar는 Shafaq News와의 인터뷰에서 달러 환율의 변동과 원천 가격 상승이 거래자와 저소득층 구매자에게 직접적인 타격을 주었다고 말했습니다. 일부 매장 소유자의 경우 매장 유지 비용이 너무 많이 듭니다. 임대료와 세금으로 인해 부지를 포기하고 간접비가 낮은 가판대에서 판매하게 되었습니다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "비용 상승으로 어려움을 겪고 있는 바스라의 역사적인 금요일 시장",
-          "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOX3M0VFhyN1pKSk5FTW5IMFBwV2s3dUh6enY5ZmpKZ2FKMEdsdjdUT21yVl9TemVVQTRpVkFyeHE3UTZ1eEtldUhqQXB6NTRIYkZ6UWdoTzZOUHhVRjZQZFhndzVMckhHNGpDLTdxbGpISHZ2aWZaTWxiTzJrMXBKMGtYYjlGNVFoMFhLenZDQlNIblVmTE9B?oc=5"
-        }
-      ],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바스라",
-        "km": 422
-      }
-    },
-    {
-      "title": "PM: We averted Iraq’s international isolation and curbed corruption; next year will bring economic improvement",
-      "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://ina.iq/en/politics/53168-pm-we-averted-iraqs-international-isolation-and-curbed-corruption-next-year-will-bring-economic-improvement.html",
-      "date": "2026-10-23T20:14:18.000Z",
-      "lang": "en",
-      "titleKo": "PM: 우리는 이라크의 국제적 고립을 피하고 부패를 억제했으며, 내년에는 경제 개선을 가져올 것입니다.",
-      "url": "https://ina.iq/en/politics/53168-pm-we-averted-iraqs-international-isolation-and-curbed-corruption-next-year-will-bring-economic-improvement.html",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "وكالة الانباء العراقية (واع)"
-      ],
-      "related": [
-        {
-          "titleKo": "총리: 우리는 국제적 고립으로부터 이라크를 보호해 왔으며, 앞으로 부패에 대한 더 많은 움직임이 있을 것입니다.",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOeDliZlNtU1p4cE5wS1h0czFYTk9UaUVwM05zWGFObHdHQmxDN3VaVFB0eWtIQmtaT1hXYndaeGdhYTIxclZxTHNYTnJTTk5ER3QzRE16NnhNQ2ZTbUpBejJvQmdYbVFYMXViOG5sUXBWanQzVmVKMV90cjM4dVJrR0lBdW9kMTB0U29QMVEzclFXMGJ0MDduaDNKbTVKVG1hcklmX0FsejNqb1g5LWhja1JCN2NmOUNtdldTTkxBVnk0MjZ5MVVHMkE1NkFJb2d0Mm5QVTNMV2w2Zlk?oc=5"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "افتتاح منفذ لتجهيز الغاز السائل للسيارات في قضاء القرنة بمحافظة البصرة",
-      "source": "وكالة المرسى نيوز",
-      "link": "https://almarsa-news.com/news-33207.html",
-      "date": "2026-10-23T20:11:15.000Z",
-      "lang": "ar",
-      "titleKo": "바스라 (Basra) 주 쿠르나 (Qurna) 지구의 자동차용 액체 가스 처리용 취임 콘센트",
-      "url": "https://almarsa-news.com/news-33207.html",
-      "body": "بغداد / المرسى نيوز افتتحت الشركة العامة لتعبئة وخدمات الغاز – فرع البصرة، منفذ «بوابة العلم» الجديد في قضاء القرنة ، ضمن محطة وقود بوابة العلم المشيدة ال\nوقال مدير فرع الشركة في البصرة عامر حسن ، ان المنفذ تم انشاؤه بمتابعة مدير عام الشركة هيثم ابراهيم محسن، واشراف الملاكات الهندسية والفنية في الفرع ، وفق مواصفات فنية رصينة، ومتطلبات السلامة، مبيّناً أن المنفذ خضع للتشغيل التجريبي ولم تظهر أي معوقات.\nواضاف ،يضم المنفذ مجهز غاز عدد 2، وخزان سعة (5) طن، إضافةً إلى منظومة إطفاء تشمل مضخات كهربائية وأخرى تعمل بالديزل، وخزانات إطفاء سعة (50) م٣ .\nوأكدت الشركة استمرار العمل على استكمال منافذ أخرى في أقضية ونواحي المحافظة لتوسيع نطاق الخدمات التي تقدم للمواطنين./ انتهى",
-      "bodyKo": "바그다드/마르사 뉴스 가스 동원 및 서비스 종합 회사인 바스라 브랜치 (Basra Branch) 는 건설된 플래그 게이트의 주유소 내에 쿠르나 (Qurna) 지구에 새로운 \"플래그 게이트\" 항구를 열었습니다.\n아메르 하산 (Amer Hassan) 바스라 지점장은 견고한 기술 사양과 안전 요구 사항에 따라 회사의 총책임자 인 Haitham Ibrahim Mohsen의 후속 조치와 지점의 엔지니어링 및 기술 직원의 감독으로 항구가 설립되어 시험 운영을 거쳤으며 장애물이 보이지 않았다고 말했다.\n또한 콘센트에는 전기 및 디젤 펌프를 포함하는 소화 시스템과 (50) m3 용량의 소화 탱크 외에도 2의 가스 공급 장치와 (5) 톤 용량의 탱크가 포함되어 있다고 덧붙였습니다.\n이 회사는 시민들에게 제공되는 서비스의 범위를 확대하기 위해 총독부의 지구 및 하위 지구의 다른 매장을 완성하기위한 작업의 지속을 확인했습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "وكالة المرسى نيوز"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바스라",
-        "km": 422
-      }
-    },
-    {
-      "title": "دوري النجوم .. الجولان يفوز على الكهرباء بثنائية - شفقنا العراق | الوكالة الشيعية للأخبار من العراق، النجف، كربلاء والعالم",
-      "source": "شفقنا العراق",
-      "link": "https://iraq.shafaqna.com/AR/665962/",
-      "date": "2026-10-23T19:53:21.000Z",
-      "lang": "ar",
-      "titleKo": "스타즈 리그.. 골란, 양국 전기로 승리하다",
-      "url": "https://iraq.shafaqna.com/AR/665962/",
-      "body": "فاز فريق الجولان على ضيفه الكهرباء بنتيجة (2-1)،ضمن منافسات الجولة الحادية عشرة من دوري نجوم العراق لكرة القدم.وبحسب وكالة الأنباء\nشفقنا العراق- فاز فريق الجولان على ضيفه الكهرباء بنتيجة (2-1)،ضمن منافسات الجولة الحادية عشرة من دوري نجوم العراق لكرة القدم.\nوبحسب وكالة الأنباء العراقية” واع ” أن المباراة جرت اليوم الجمعة على ملعب الجولان ،و سجل هدفي الجولان يوسف فوزي في الدقيقة 20، وداود كوليبالي في الدقيقة 50، فيما أحرز حسين نجم هدف الكهرباء الوحيد في الدقيقة 35.\nوبهذه النتيجة، رفع الجولان رصيده إلى 17 نقطة في المركز السابع، فيما تجمد رصيد الكهرباء عند 8 نقاط في المركز الثامن عشر.",
-      "bodyKo": "골란 팀은 이라크 스타즈 풋볼 리그 11라운드 대회에서 전기 게스트 (2-1) 를 이겼다. 통신에 따르면\n샤파크나 이라크 - 골란 팀은 이라크 스타즈 풋볼 리그 11라운드에서 전기 게스트 (2-1) 를 이겼습니다.\n이라크 통신에 따르면, 오늘 금요일 골란 스타디움에서 경기가 열렸으며 20 분에 골란 유세프 파우 지 (Golan Yousef Fawzi), 50 분에 다우드 쿨리 발리 (Dawood Coulibaly) 의 골을 넣었고, 후세인 나 즘 (Hussein Najm) 은 35 분에 유일한 전기 골을 넣었다.\n이 결과로 골란은 7위에서 17포인트로 균형을 잡았고, 18위에서 8포인트로 전기 균형이 얼어붙었다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفقنا العراق",
-        "وكالة الانباء العراقية (واع)"
-      ],
-      "related": [
-        {
-          "titleKo": "스타 리그에서 골란이 전기를 이긴다 »이라크 통신사 (INA)",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE51T2pUQ3Y5dVJFSVFFRkRGaEROZlFFTzRUU3BOT1o4VVhxcGFVTFpJU2wtTVBYejVXNXpXdjNuT2c2R0FoNzJyUE1Melg?oc=5"
-        }
-      ],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "카르발라",
-        "km": 86
-      }
-    },
-    {
-      "title": "Al-Zaidi: Iraq narrowly avoided international isolation",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Iraq/Al-Zaidi-Iraq-narrowly-avoided-international-isolation",
-      "date": "2026-10-23T19:49:21.000Z",
-      "lang": "en",
-      "titleKo": "샤파크 뉴스.. 알자이디: 이라크는 국제적 고립을 간신히 피했다",
-      "url": "https://shafaq.com/en/Iraq/Al-Zaidi-Iraq-narrowly-avoided-international-isolation",
-      "body": "Shafaq News- Baghdad Iraqi Prime Minister Ali Al-Zaidi revealed on Friday that Iraq narrowly avoided international isolation, coming &ldquo;within days&rdquo; of facing sanctions and the withdrawal o\nIn an interview with state-run Al-Iraqiya TV, Al-Zaidi explained that Western governments had viewed Iraq as &ldquo;a state controlled by armed factions,&rdquo; but his administration had managed to avert the threat, saying that three armed groups had agreed to place their weapons under state control, while negotiations with four others remained underway. &ldquo;By June 30 , 2027, no weapons will remain outside state authority.&rdquo;\nCharacterizing the decision as irreversible, he said the departure of foreign troops had removed &ldquo;a longstanding justification&rdquo; for armed factions to retain their weapons. He also asserted that no US military personnel, including advisers, remained in Iraq.",
-      "bodyKo": "Shafaq News- 바그다드 이라크 총리 알리 알자이디 (Ali Al-Zaidi) 는 금요일에 이라크가 국제적 고립을 좁게 피했으며, 제재와 철수에 직면한 지 \"며칠 내\" 에 오고 있다고 밝혔다.\n국영 Al-Iraqiya TV와의 인터뷰에서 Al-Zaidi는 서방 정부가 이라크를 \"무장 세력에 의해 통제되는 국가\" 로 보았지만 그의 행정부는 3 개의 무장 단체가 무기를 국가 통제하에 두는 데 동의했으며 다른 4 개의 협상이 진행 중이라고 말하면서 위협을 피할 수 있었다고 설명했다. \"2027년 6월 30일까지 어떤 무기도 국가 당국 외부에 남지 않을 것입니다.\"\n그는 이번 결정을 돌이킬 수 없는 것으로 규정하면서 외국 군대의 이탈로 인해 무장 진영이 무기를 보유할 수 있는 \"오랜 명분\" 이 제거되었다고 말했다. 그는 또한 고문을 포함한 미군 병사들이 이라크에 남지 않았다고 주장했다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "샤파크 뉴스.. 알자이디: 이라크는 국제적 고립을 간신히 피했다",
-          "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYXZFOGVNWDh6VkhISHEwV1RjQlg3YW14TVkwY19RVlprOUZnNjFQVHNjNVZnZ1hYVWw1M0RFZmNyZmRFQkxXOU9XQ3hSZ2J1VWh3dGhMNEljS09vNVRWZ1pFeDg1YmlhSjNrRGhWOHdkUXlvdHpiN09mamZBay14c1ZSYVRJUFJL?oc=5"
-        }
-      ],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "كيف وضعت دراسة بريطانية ألمانيا خلف العراق في أمن إمدادات الكهرباء؟",
-      "source": "عنب بلدي",
-      "link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxOM2p6c1ZHU1pyRE9BQ0FEMVpNNmF3TnY1SDQ5MDA3VDlvU1VkT1J4bXRyWTduX3Y2Wm9fTGtfR3ZtZjFTdGhqaFE1LVlOR0hORFBSUnNONFRXVXpkdmpsRFFSbnh2YTM3dFk2MHZQS19kSExrX1BHNU9mYVJkdzM1T1I3X1lIazNDTnA4bU16UTczVnVGZ1FkaGwwREtqQzgwamJnSTMzemRWZWZ3NEJjRTVIdlFVQS00VkFaeGtnaVp0OTg0X091dGJheE8xTy1wNWlNRVdrUlBSaFhOU1BEWGVZQnJ1Rk1feWZXMmxwUlp6RFF2U3B1eHUwWEloODI1aFMxbE9Ob2RIODc2S0tOMGlZMUZQdlp5R1Rja1VwcWtkeS0tUEx2cEpkaGxWbEVieGF1ekF6NlNncm9Xdjg3MlM1ZWpQRlNjTXpya29YeFdjbnPSAdsCQVVfeXFMTlNzVDdpUVh5WkN1THBXTllfZlJPWUVnX0x4bWhsOGNoQUxCZkhhSDFIZjc0bk1pYi1FbmdUZ1BieHZBQVRWaTVDOUFpTGY0TW9HSFdQS2ZDZF9na3M4VklfeEc1TXl3Nno0Ri1GX2U1QktRd2NCeDY2X0xhZ2t0ZXp6UWYzVVlGUkp4YWNkZVBaTjBzdlZHZ2F4bjI2OUFncjM2czhkcHFjU1l1YnJMWWpvSEdjWlBuODdOdnlVLTJnbTFSOTB3c1hjQkE5cXJFQVV2aFYxRXBPTXU0UVpLcjRvM01uRV92Q2s3VU1kb1VHUnVWOWMtUVVZeVo0ZTFyaHB5WjBfWVJDdUUzcWw0YnBacFNnUkt4elNlX1FKb2NrMklfUlpBU1pXUHJHWjRuR0ZlV1lMUGo2WDN3aklYMGNDc21mZFhKMWlDQmRlQksxYVF3Z3E0QkpNQW8?oc=5",
-      "date": "2026-10-23T19:48:23.000Z",
-      "lang": "ar",
-      "titleKo": "영국의 한 연구는 어떻게 이라크에 뒤쳐진 독일을 전력 공급의 안보에 두었습니까?",
-      "count": 1,
-      "sources": [
-        "عنب بلدي"
-      ],
-      "related": [],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraqi Prime Minister: We Have Set Plan to Raise Oil Production to 10 Million Barrels Per Day by 2032",
-      "source": "وكالة سبأ",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1JZEFSRVhDcU9kdl9naUxvR1RZZllGbzNxQ2dQdzVIaUEtVF9wMFN1VXZyYk1EQ3dqdWdDbTZaeVZobFZlR0RjRUN3?oc=5",
-      "date": "2026-10-23T19:38:31.000Z",
-      "lang": "en",
-      "titleKo": "이라크 총리: 우리는 2032년까지 석유 생산량을 하루 1천만 배럴로 늘릴 계획을 세웠습니다.",
-      "count": 1,
-      "sources": [
-        "وكالة سبأ"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
     }
   ],
   "alerts": [
     {
       "kind": "holiday",
-      "titleKo": "바그다드 총독은 서비스 부서를 제외하고 내일 일요일에 공식 근무 시간 중단을 발표합니다.",
-      "title": "محافظ بغداد يعلن تعطيل الدوام الرسمي غداً الأحد باستثناء الدوائر الخدمية",
-      "link": "https://www.mawazin.net/Details.aspx?jimare=293946",
-      "source": "وكالة موازين نيوز",
-      "date": "2026-10-24T11:12:02.000Z",
+      "titleKo": "바그다드 총독은 내일 일요일에 공식 근무 시간 중단을 발표합니다.",
+      "title": "محافظ بغداد يعلن تعطيل الدوام الرسمي يوم غدٍ الأحد",
+      "link": "https://kalimaiq.com/news/details/72248",
+      "source": "موقع كلمة الإخباري",
+      "date": "2026-10-24T14:29:12.000Z",
+      "count": 14
+    },
+    {
+      "kind": "holiday",
+      "titleKo": "알자흐라 부인의 순교를 추모하기 위해 바그다드는 일요일에 일을 그만두었다.",
+      "title": "بذكرى استشهاد السيدة الزهراء.. بغداد تعطل الدوام الأحد",
+      "link": "https://iraq.shafaqna.com/AR/666009/",
+      "source": "شفقنا العراق",
+      "date": "2026-10-24T11:40:21.000Z",
       "count": 1
     }
   ],
   "brief": [
     {
       "lv": "y",
-      "titleKo": "바그다드 총독은 서비스 부서를 제외하고 내일 일요일에 공식 근무 시간 중단을 발표합니다.",
+      "titleKo": "바그다드 총독은 내일 일요일에 공식 근무 시간 중단을 발표합니다.",
       "line": "공휴일·관공서 휴무 — 현지 인력 출근·관공서 업무(통관·인허가) 차질 가능",
       "act": "현지 인력 출근 여부와 통관·인허가 일정 확인",
       "km": 27,
-      "link": "https://www.mawazin.net/Details.aspx?jimare=293946",
-      "date": "2026-10-24T11:12:02.000Z",
+      "link": "https://kalimaiq.com/news/details/72248",
+      "date": "2026-10-24T14:29:12.000Z",
       "more": 0
+    },
+    {
+      "lv": "y",
+      "titleKo": "바그다드 시위를 앞두고 이라크 총리는 새로운 일자리 출범을 지시한다.",
+      "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
+      "act": "시위 시간대 시내 이동 피하기",
+      "km": 27,
+      "link": "https://www.cnbcarabia.com/158662/2026/24/10/%D9%82%D8%A8%D9%8A%D9%84-%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF..-%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D9%8A%D9%88%D8%AC%D9%87-%D8%A8%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9",
+      "date": "2026-10-24T13:24:49.000Z",
+      "more": 2
     },
     {
       "lv": "y",
@@ -1227,16 +1299,6 @@
       "km": null,
       "link": "https://today-agency.net/Details/65815",
       "date": "2026-10-24T08:15:20.000Z",
-      "more": 0
-    },
-    {
-      "lv": "y",
-      "titleKo": "동영상 | 몬타제르 알자이디: 처음으로 바그다드와 주지사들의 티슈린 시위 통합 조율이 이루어졌습니다. 발걸음과 요구, 하나의 성명서로 이루어졌습니다!",
-      "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
-      "act": "시위 시간대 시내 이동 피하기",
-      "km": 27,
-      "link": "https://hathalyoum.net/4252277.aspx",
-      "date": "2026-10-23T21:54:01.000Z",
       "more": 0
     }
   ]
