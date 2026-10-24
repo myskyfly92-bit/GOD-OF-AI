@@ -1,20 +1,13 @@
 {
-  "generatedAt": "2026-10-23T23:51:41.798Z",
+  "generatedAt": "2026-10-24T23:14:53.595Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
-      "title": "- 보건복지부 대표홈페이지",
-      "source": "",
+      "title": "FluON | Influenza Overview",
+      "source": "Vercel",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUlkwMlgwVUQwX2lwM1lNX2FwYVVEbzRvMy1oalF3bm91YTItdzAyQkdEdTV5aEpNc1NtN1hFNGdHa1ZfeWpldU42YmFDUW5XdFpvRlcwSFdFejRvNlFIQXJSblZmempIanpuYUdWX25pa1YtZ3dOdWVGT0p6Q3pNSEdSNFY0WkdaZFE?oc=5",
-      "date": "2026-10-22T22:58:40.000Z"
-    },
-    {
-      "title": "- 보건복지부 대표홈페이지",
-      "source": "",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONUR2Vm5BeEJvT1hjSGZkRUNfb2dzc3hUYkRoZXU0UWZlYTJJLXFzd0pHWFBURi1CYmFLYkxmOUhYcmhoM09xWUZyMWRMWEFlVWIxMDhIby01Z3k4RENhczlqOUI0Q19BYW9tbnJ6TU1zbWlpUXl3am5xT0VlNnNsM1NMMlBrNW5FUjAw?oc=5",
-      "date": "2026-10-18T15:07:01.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBVLXY0RFRhYnNXcUp4OFExMlFlRUtRZjFwLWp1VUI1ZDZVWk4xSS1zQzdOazZZZ05VN2U1MmNuT3BaTmVlclhYUkw2MmhUWXVvYXZWS2tOcWE?oc=5",
+      "date": "2026-10-22T07:00:00.000Z"
     },
     {
       "title": "감시체계 개요",
@@ -49,14 +42,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-23T08:45:28.000Z"
-    },
-    {
-      "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
-      "source": "질병관리청 감염병포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
-      "date": "2024-06-10T02:47:27.000Z"
+      "date": "2026-10-24T05:41:17.000Z"
     },
     {
       "title": "채용공고",
@@ -80,11 +66,25 @@
       "date": "2025-12-16T16:42:42.000Z"
     },
     {
-      "title": "문서뷰어",
+      "title": "감염병 위험평가",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5XVU9QTjBtVGhKdU9oYjh6Ym8xX1ZBckJva1pJQ1VjVGFjZmpsYXFrLTJrazRBUUtVMkRhdE9jVmJTMUE0aW9Rc2o5VmQwc2FHZUl2LVRVd1FPS3dzVmJxeS1n?oc=5",
-      "date": "2026-10-19T01:51:44.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9QelRoMHgydi1mLWFhbEszMXJZR04yLWo3NUxZY2t4bXJvM1pGRmlvbW1WVjJ1QjBuM0JSM0VBck9xOUZGQmxsMXc0S3hFSlZlWm4yZlZB?oc=5",
+      "date": "2025-12-16T15:55:47.000Z"
+    },
+    {
+      "title": "만성질환 감시 및 정보 통합 수집·제공",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1peGhRZjh4aXNZLW9nZW9Lb3FGY1hEbV82d3I5WFBfdllCRUhmdXBqRTRGLXFxZXd3UWxUcXVYRFc5R29IOUM3b1ROQmdXZDVnamthWEdB?oc=5",
+      "date": "2026-08-23T17:35:43.000Z"
+    },
+    {
+      "title": "지침",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMizwNBVV95cUxQeXA3LW43U1pZR0xDWGQyaWMzRnlvSFlURWlnZ2dHaXBUcmVHVUw5cTJONzBiUi1zYTE2RExtVVZNa091Z0hfSHpsMlhXWlFBcVRucnhpZHoxWmszYlIxM05jZVV3RGNSaU5HQnRPMnl1VWRNeTd5ZlNVbTRTeEw5NDFGN2JFZmxqNnNBbzZ3WHU5cGRJOGVIRXRFWVRPZVJiRVhBRkhLOVl4b29paVNwNUpjcHJGd2J4NkNobEZTa0hiQ0FRaDhhMjZyUkRuaHgwV0V4TFg0ZlJZbHlhRlZaVVpTSXZBQ3EzcTlCV0RLcFpWc3c3X1V1cjEzdXV4Q1dvVVgtc0Nqc1hmaDJWYzhxSkRjdV9CUWxHMUU4SlNrZDgzZTVRNDFzTk9rSng1NTllWmFKaUlReDNZRTlTdEtnYnRzb2FNZDAtbFdkWk1PYTNJQXVwblN5NTE1TUZiWlp5REkyVms0bDFGNjlIQWhZQmh5d0hHU0g0X0tadnBpYjhXVEpoWnlsYjI2UERVZy1QUG83NnFMeWpHNks5ZjVGUEtrb3pvR1JhR1FsQVV3akVCS1lGVFFKOGdWRzhnSXhLUnRTbEtXS3dpVzYyQjdR?oc=5",
+      "date": "2026-03-10T04:08:41.000Z"
     }
   ]
 }
