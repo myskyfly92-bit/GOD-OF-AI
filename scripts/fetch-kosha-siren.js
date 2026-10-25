@@ -56,13 +56,14 @@ function saveImage(no, src) {
 (async () => {
   let cap = null, lastErr = null;
   for (let i = 1; i <= 3 && !cap; i++) {
-    try { cap = await capture(); } catch (e) { lastErr = e; console.log(`시도 ${i} 실패: ${e.message}`); await new Promise((r) => setTimeout(r, 4000 * i)); }
+    try { cap = await capture(); } catch (e) { lastErr = e; console.log(`::warning::사이렌 시도 ${i} 실패: ${String(e.message).replace(/\n/g, " ").slice(0, 400)}`); await new Promise((r) => setTimeout(r, 4000 * i)); }
   }
   if (!cap) { console.log("중대재해 사이렌을 가져오지 못했습니다 — 기존 파일 유지:", lastErr && lastErr.message); process.exit(0); }
 
   const list = pickList(cap.body);
-  console.log(`API ${cap.url} → ${list.length}건`);
-  if (list.length) console.log("항목 필드:", Object.keys(list[0]).join(", "));
+  console.log(`::notice::사이렌 API ${cap.url} → ${list.length}건`);
+  if (list.length) console.log(`::notice::항목 필드: ${Object.keys(list[0]).join(", ")} · 첫 제목: ${String(list[0].imprtnDsstrSirnNm || "").slice(0, 80)}`);
+  else console.log(`::warning::응답 키: ${Object.keys(cap.body || {}).join(", ")} · payload 키: ${Object.keys((cap.body && cap.body.payload) || {}).join(", ")}`);
   if (!list.length) { console.log("목록이 비어 있음 — 기존 파일 유지"); process.exit(0); }
 
   const prev = readJson(OUT) || { items: [] };
