@@ -257,6 +257,29 @@ async function translateClaude(text, from, kind) {
     return ((j.content || []).map((c) => c.text || "").join("") || "").trim();
   } catch (e) { return ""; } finally { clearTimeout(tm); }
 }
+// 갑작스러운 휴무 기사 → 날짜·사유·범위를 AI로 뽑아 달력에 올린다 (키 없으면 건너뜀)
+async function extractHoliday(n) {
+  if (!CLAUDE_KEY || claudeOff || claudeCalls >= CLAUDE_MAX_CALLS) return null;
+  claudeCalls++;
+  const pub = String(n.date || "").slice(0, 10);
+  const text = [n.title, n.titleKo, (n.related || []).map((r) => r.titleKo).join(" / "), String(n.body || "").slice(0, 900)].filter(Boolean).join("\n");
+  try {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-api-key": CLAUDE_KEY, "anthropic-version": "2023-06-01" },
+      body: JSON.stringify({ model: CLAUDE_MODEL, max_tokens: 300, temperature: 0,
+        system: "이라크 관공서 휴무(공휴일·업무 중단) 발표 기사에서 정보를 뽑는다. JSON 한 줄만 출력한다. 모르면 null.",
+        messages: [{ role: "user", content: `기사 게시일: ${pub} (이라크 시간 기준, '내일'·'일요일' 같은 말은 이 날짜 기준으로 계산)\n\n${text}\n\n다음 형식으로 답해: {"dates":["YYYY-MM-DD"],"reason":"휴무 사유를 한국어 12자 안으로 (예: 파티마 순교일, 이맘 카딤 추모일, 선거일)","scope":"전국" 또는 "일부 주","provinces":["바그다드","키르쿠크"],"baghdad":true/false/null}` }] }),
+    });
+    const j = await res.json().catch(() => ({}));
+    if (!res.ok) return null;
+    const t = ((j.content || []).map((c) => c.text || "").join("") || "").match(/\{[\s\S]*\}/);
+    const o = t ? JSON.parse(t[0]) : null;
+    if (!o || !Array.isArray(o.dates)) return null;
+    o.dates = o.dates.filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d));
+    return o.dates.length ? o : null;
+  } catch (e) { return null; }
+}
 async function translate(text, from, kind) {
   try { const t = await translateClaude(text, from, kind || "title"); if (t) return t; } catch (e) { /* 아래로 */ }
   try { const t = await translateGtx(text, from); if (t) return t; } catch (e) { /* 아래로 */ }
@@ -488,7 +511,7 @@ async function main() {
   }
 
   // 현장 알림 뽑기 (CFG.ALERTS)
-  let alerts;
+  let alerts, out_ann = null;
   if (CFG.ALERTS) {
     const A = CFG.ALERTS, lim = Date.now() - A.HOURS * 3600000;
     alerts = [];
@@ -504,10 +527,35 @@ async function main() {
       if (kind === "holiday") n.tag = "휴일·행사"; else n.tag = "시위·통제";
     }
     alerts = alerts.slice(0, 4);
+    // 휴무 날짜·사유 뽑기 (예전에 뽑아 둔 건 그대로)
+    let prevFile = {}; try { prevFile = JSON.parse(fs.readFileSync(OUT, "utf-8")); } catch (e) { prevFile = {}; }
+    const prevAl = new Map(((prevFile.alerts) || []).map((a) => [a.link, a]));
+    for (const a of alerts) {
+      if (a.kind !== "holiday") continue;
+      const old = prevAl.get(a.link);
+      if (old && old.hol !== undefined) { a.hol = old.hol; continue; }
+      const n = list.find((x) => x.link === a.link) || a;
+      a.hol = await extractHoliday(n);
+    }
+    // 달력용 '발표된 휴무' 목록: 예전 것 + 새로 뽑은 것 (최근 60일·앞으로 30일)
+    const keepFrom = new Date(Date.now() - 60 * 864e5).toISOString().slice(0, 10), keepTo = new Date(Date.now() + 30 * 864e5).toISOString().slice(0, 10);
+    const ann = new Map(((prevFile.announcedHolidays) || []).map((h) => [h.date, h]));
+    for (const a of alerts) {
+      if (!a.hol) continue;
+      for (const d of a.hol.dates) {
+        if (d < keepFrom || d > keepTo) continue;
+        const prov = (a.hol.provinces || []).filter(Boolean);
+        const h = { date: d, reason: a.hol.reason || "휴무 발표", scope: a.hol.scope || "", baghdad: a.hol.baghdad === undefined ? null : a.hol.baghdad, provinces: prov.slice(0, 12), link: a.link };
+        const was = ann.get(d);
+        if (!was || (was.scope !== "전국" && (h.scope === "전국" || prov.length > (was.provinces || []).length))) ann.set(d, h);
+      }
+    }
+    out_ann = [...ann.values()].filter((h) => h.date >= keepFrom).sort((x, y) => x.date.localeCompare(y.date));
     console.log(`현장 알림 ${alerts.length}건`, alerts.map((a) => a.kind + ":" + a.titleKo).join(" / "));
   }
   const out = { generatedAt: new Date().toISOString(), items: list };
   if (alerts) out.alerts = alerts;
+  if (out_ann) out.announcedHolidays = out_ann;
   // 현장 영향 판단 (이라크 주요 이슈만)
   if (CFG.IMPACT) {
     const { assess, brief } = require("./iraq-impact.js");

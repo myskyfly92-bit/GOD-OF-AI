@@ -168,6 +168,17 @@ const IQ_HOLIDAYS_2026 = {
   "2026-12-25": "Christmas Day",
 };
 
+/* 갑작스러운 이라크 휴무 발표 (달력에 청록 점 + "발표" 표시)
+   iraq-issues.json 의 announcedHolidays 를 자동으로 받아 채운다 (뉴스에서 AI가 날짜·사유를 뽑음).
+   자동 수집 전에 먼저 알게 된 건 여기 직접 적어 둔다. */
+const IQ_ANNOUNCED = {
+  "2026-10-25": { reason: "파티마 순교일", scope: "일부 주", provinces: ["키르쿠크", "디와니야"] },
+};
+function iqAnnLabel(h) {
+  if (!h) return "";
+  const where = h.scope === "전국" ? "전국 휴무" : h.baghdad === true ? "바그다드 휴무" : "일부 주 휴무";
+  return `${h.reason} · ${where}`;
+}
 /* 현장 일정 (달력에 금색 점 + 아래 목록에 표시). 새 일정은 여기에 한 줄씩 추가 */
 const SITE_EVENTS = {
   "2026-10-15": "얼음물 배부 종료",
@@ -243,7 +254,7 @@ function storeDailyForecastForCalendar(daily) {
     for (let d = 1; d <= daysInMonth; d++) {
       const key = dateKey(viewYear, viewMonth, d);
       const krName = KR_HOLIDAYS_2026[key];
-      const iqName = IQ_HOLIDAYS_2026[key];
+      const iqName = IQ_HOLIDAYS_2026[key] || iqAnnLabel(IQ_ANNOUNCED[key]);
       const evName = SITE_EVENTS[key];
 
       const cell = document.createElement("div");
@@ -345,6 +356,14 @@ function storeDailyForecastForCalendar(daily) {
       });
     }
   }
+
+  // 발표된 휴무(자동 수집)를 받아 달력에 더한다
+  fetch("iraq-issues.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : null).then((j) => {
+    const list = (j && j.announcedHolidays) || [];
+    let added = 0;
+    list.forEach((h) => { if (h && h.date && !IQ_HOLIDAYS_2026[h.date]) { const was = IQ_ANNOUNCED[h.date]; if (!was || h.scope === "전국" || (h.provinces || []).length > (was.provinces || []).length) { IQ_ANNOUNCED[h.date] = h; added++; } } });
+    if (added) renderCalendar();
+  }).catch(() => {});
 
   function openPanel() {
     renderCalendar();
