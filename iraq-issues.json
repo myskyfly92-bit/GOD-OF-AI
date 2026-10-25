@@ -1,51 +1,101 @@
 {
-  "generatedAt": "2026-10-25T10:50:56.927Z",
+  "generatedAt": "2026-10-25T11:44:50.962Z",
   "items": [
+    {
+      "title": "العراق يرفع إنتاج الطاقة من \"شمس البصرة\" إلى 500 ميجاواط ضمن مشروع ضخم",
+      "source": "سولارابيك",
+      "link": "https://solarabic.com/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AC%D8%AF%D8%AF%D8%A9/2026/10/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B1%D9%81%D8%B9-%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D9%85%D9%86-%D8%B4%D9%85%D8%B3-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9/",
+      "date": "2026-10-25T11:35:00.000Z",
+      "lang": "ar",
+      "titleKo": "이라크, 바스라 태양광 발전소 발전량 500메가와트로 확대",
+      "url": "https://solarabic.com/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AC%D8%AF%D8%AF%D8%A9/2026/10/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B1%D9%81%D8%B9-%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D9%85%D9%86-%D8%B4%D9%85%D8%B3-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9/",
+      "body": "أضاف العراق 500 ميجاواط إلى شبكته الكهربائية من مشروع شمس البصرة، فيما تتواصل الأعمال لاستكمال وحداته المتبقية وتحقيق أهدافه الطموحة.",
+      "bodyKo": "이라크가 바스라 태양광 사업에서 500메가와트를 전력망에 추가했으며, 남은 발전 단위 완공과 야심찬 목표 달성을 위한 공사가 계속되고 있다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "سولارابيك"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바스라",
+        "km": 422
+      }
+    },
+    {
+      "title": "Israel behind blasts at Iran-linked arms sites in Iraq amid Netanyahu’s fresh nuclear warning?",
+      "source": "Hindustan Times",
+      "link": "https://www.hindustantimes.com/videos/world-news/israel-behind-blasts-at-iran-linked-arms-sites-in-iraq-amid-netanyahu-s-fresh-nuclear-warning-101792927022803.html",
+      "date": "2026-10-25T11:25:40.000Z",
+      "lang": "en",
+      "titleKo": "이스라엘, 이란 연계 이라크 무기고 폭발 배후 의혹...네타냐후 핵 경고 재발동",
+      "url": "https://www.hindustantimes.com/videos/world-news/israel-behind-blasts-at-iran-linked-arms-sites-in-iraq-amid-netanyahu-s-fresh-nuclear-warning-101792927022803.html",
+      "body": "Reports from Iraq suggest that Israeli strikes may have targeted two sites storing Chinese-made air defence systems recently transferred from Iran and reportedly destined for Iran-aligned militias. Iraqi intelligence officials are investigating whether the incidents, including an October 17 explosion in eastern Baghdad that injured five people, were accidental or linked to possible covert attacks. Meanwhile, Israeli Prime Minister Benjamin Netanyahu has renewed warnings about Iran’s nuclear programme, claiming Tehran has restarted its nuclear activities and poses a threat to Israel’s survival. With regional tensions rising, could the confrontation between Israel, the United States and Iran spread further into Iraq?",
+      "bodyKo": "**이스라엘, 이란산 방공 시스템 저장소 타격 추정…이라크 긴장 고조**\n\n이라크 보도에 따르면 이스라엘의 공습이 이란에서 최근 이전된 중국산 방공 시스템을 보관 중인 두 곳의 시설을 겨냥했을 가능성이 있다. 해당 시스템은 이란과 연계된 민병대에 전달될 예정이었다. 이라크 정보 당국은 10월 17일 바그다드 동부에서 발생해 5명이 부상한 폭발을 포함한 이번 사건들이 우발적이었는지 아니면 은폐된 공격과 연관이 있는지 조사 중이다. 한편 벤야민 네타냐후 이스라엘 총리는 이란의 핵 프로그램에 대한 경고를 재개했으며, 테헤란이 핵 활동을 재개했으며 이스라엘의 생존을 위협한다고 주장했다. 지역 긴장이 고조되는 가운데 이스라엘, 미국, 이란 간의 대립이 이라크로 더욱 확산될 수 있을까.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Hindustan Times"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
     {
       "title": "متظاهرون في بغداد يحيون الذكرى السابعة لاحتجاجات تشرين",
       "source": "موقع كلمة الإخباري",
       "link": "https://kalimaiq.com/news/details/72280",
-      "date": "2026-10-25T10:34:10.000Z",
+      "date": "2026-10-25T11:25:00.000Z",
       "lang": "ar",
       "titleKo": "바그다드 시위대, 10월 항쟁 7주년 추도",
       "url": "https://kalimaiq.com/news/details/72280",
       "body": "أحيا عشرات المتظاهرين، اليوم الأحد، الذكرى السابعة لاحتجاجات تشرين في ساحة التحرير وسط العاصمة بغداد، في ظل إجراءات أمنية مشددة اتخذتها السلطات في منطقة الباب ا...\nورفع المشاركون الأعلام العراقية ورددوا شعارات تستحضر أحداث الاحتجاجات التي انطلقت عام 2019، والتي تُعد واحدة من أكبر الموجات الاحتجاجية في تاريخ العراق الحديث.\nوكانت قيادة عمليات بغداد قد أعلنت في وقت سابق عن سلسلة إجراءات أمنية وتنظيمية لتأمين التظاهرات، تضمنت منع حركة الدراجات النارية و\"التكاتك\"، مع إبقاء الطرق والمنافذ المؤدية إلى ساحة التحرير مفتوحة أمام المارة وحركة السير.",
       "bodyKo": "**바그다드 타흐리르 광장, 10월 항쟁 7주년 추도식 개최**\n\n수십 명의 시위자들이 오늘 일요일 바그다드 중심부 타흐리르 광장에서 2019년 10월 항쟁 7주년을 추도했다. 당국은 광장 입구 지역에 강화된 보안 조치를 취했다.\n\n참가자들은 이라크 국기를 들고 2019년에 시작된 항쟁의 사건들을 상기하는 구호를 외쳤다. 이 항쟁은 이라크 현대사에서 가장 큰 규모의 항의 물결 중 하나로 평가된다.\n\n바그다드 작전사령부는 앞서 시위를 보안하기 위한 일련의 보안 및 행정 조치를 발표했다. 이 조치에는 오토바이와 '툭툭'의 통행 금지가 포함되었으며, 타흐리르 광장으로 통하는 도로와 출입구는 보행자와 차량 통행을 위해 개방 상태로 유지되었다.",
       "tried": true,
-      "count": 24,
+      "count": 25,
       "sources": [
+        "video-agencyia.iq",
         "Lebanon 24",
+        "Alsumaria",
+        "naynawaalghad.tv",
         "Kurdistan24",
-        "نيوز رووم",
-        "العربية",
-        "قناة الرشيد الفضائية",
-        "https://naynawaalghad.tv/"
+        "وكالة الانباء العراقية (واع)"
       ],
       "related": [
+        {
+          "titleKo": "10월 시위 7주년, 바그다드 타흐리르 광장으로 복귀",
+          "source": "video-agencyia.iq",
+          "link": "https://video-agencyia.iq/Detail/44969"
+        },
         {
           "titleKo": "수천 명의 시위대, 바그다드 타흐리르 광장에 집결…2019년 10월 항쟁 기념 행사 경비 강화 속 개최",
           "source": "Lebanon 24",
           "link": "https://www.lebanon24.com/news/breaking-news/1586834/%D8%A2%D9%84%D8%A7%D9%81-%D8%A7%D9%84%D9%85%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D9%8A%D9%86-%D9%8A%D8%AD%D8%AA%D8%B4%D8%AF%D9%88%D9%86-%D9%81%D9%8A-%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1-%D8%A8%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%84%D9%84%D8%A7%D8%AD%D8%AA%D9%81%D8%A7%D9%84-%D8%A8%D8%B0%D9%83%D8%B1%D9%89-%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA"
         },
         {
+          "titleKo": "바그다드 작전사령부, 타흐리르 광장 시위 관련 성명 발표",
+          "source": "Alsumaria",
+          "link": "https://www.alsumaria.tv/news/security/579678/%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AA%D8%B5%D8%AF%D8%B1-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D9%8B-%D8%A8%D8%B4%D8%A3%D9%86-%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1"
+        },
+        {
+          "titleKo": "해방광장에서 요구사항 재확인.. 바그다드 시위대, 동쪽 입구 경비 강화 속에서 10월 항쟁 추모",
+          "source": "naynawaalghad.tv",
+          "link": "https://naynawaalghad.tv/%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D9%84%D8%A8-%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1-%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7/"
+        },
+        {
           "titleKo": "바그다드 타흐리르 광장, 강화된 보안 속 10월 항쟁 추모",
           "source": "Kurdistan24",
           "link": "https://www.kurdistan24.net/ar/story/948417/%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1-%D8%A8%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%A5%D8%AD%D9%8A%D8%A7%D8%A1-%D8%B0%D9%83%D8%B1%D9%89-%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-%D8%AA%D8%B4%D8%B1%D9%8A%D9%86-%D9%88%D8%B3%D8%B7-%D8%A5%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A3%D9%85%D9%86%D9%8A%D8%A9-%D9%85%D8%B4%D8%AF%D8%AF%D8%A9"
-        },
-        {
-          "titleKo": "이라크: 바그다드에서 10월 항쟁 7주년 추모 시위 시작",
-          "source": "نيوز رووم",
-          "link": "https://newsroom.info/476281"
-        },
-        {
-          "titleKo": "2019년 항의 추모, 바그다드 중심부서 제한적 시위 시작",
-          "source": "العربية",
-          "link": "https://www.alarabiya.net/arab-and-world/iraq/2026/10/25/%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D9%85%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9-%D9%88%D8%B3%D8%B7-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1%D9%89-%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-2019"
-        },
-        {
-          "titleKo": "영상으로 보는 바그다드 중심부 타흐리르 광장 시위",
-          "source": "قناة الرشيد الفضائية",
-          "link": "https://www.alrasheedmedia.com/2026/10/25/709396/"
         }
       ],
       "tag": "시위·통제",
@@ -58,28 +108,102 @@
       }
     },
     {
-      "title": "عمليات بغداد تصدر بياناً بشأن تظاهرات ساحة التحرير",
-      "source": "Alsumaria",
-      "link": "https://www.alsumaria.tv/news/security/579678/%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AA%D8%B5%D8%AF%D8%B1-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D9%8B-%D8%A8%D8%B4%D8%A3%D9%86-%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1",
-      "date": "2026-10-25T10:18:39.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 작전사령부, 타흐리르 광장 시위 관련 성명 발표",
-      "url": "https://www.alsumaria.tv/news/security/579678/%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AA%D8%B5%D8%AF%D8%B1-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D9%8B-%D8%A8%D8%B4%D8%A3%D9%86-%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1",
-      "body": "عمليات بغداد تصدر بياناً بشأن تظاهرات ساحة التحرير السومرية نيوز – أمن أعلنت قيادة عمليات بغداد، اليوم الأحد، استمرار قطعاتها الأمنية بتأمين الحماية اللازمة...",
-      "bodyKo": "**بغداد عمليات، تحرير ساحة تظاهرات بشأن بياناً تصدر**\n\nبغداد عمليات قيادة أعلنت الأحد، اليوم، الحماية تأمين بتأمين الأمنية قطعاتها استمرار عن.\n\n---\n\n죄송하지만, 제공하신 텍스트가 불완전하고 문법적으로 정렬되지 않아 정확한 번역이 어렵습니다. \n\n다음과 같이 완전한 원문을 다시 제공해 주시면 정확하게 번역하겠습니다:\n\n**완전한 아랍어 본문** (마침표까지 포함)\n\n현재 텍스트는 \"...تأمين الحماية اللازمة\" 이후가 끝나 있어서, 문장이 미완성 상태입니다. 전체 내용을 주시면 자연스러운 한국어 뉴스 문체로 번역해 드리겠습니다.",
+      "title": "Report: Iranian Revolutionary Guards Attack a Position in Iraq",
+      "source": "blue News",
+      "link": "https://www.bluewin.ch/en/news/report-iranian-revolutionary-guards-attack-a-position-in-iraq-li.3648042",
+      "date": "2026-10-25T11:18:10.000Z",
+      "lang": "en",
+      "titleKo": "이란 혁명수비대, 이라크 거점 공격",
+      "url": "https://www.bluewin.ch/en/news/report-iranian-revolutionary-guards-attack-a-position-in-iraq-li.3648042",
+      "body": "According to a report, the Iranian Revolutionary Guards attacked Kurdish positions in neighboring Iraq. The attack, carried out with combat drones, targeted a headquarters of the Komala Party in the semi-autonomous Kurdistan Region in northern Iraq, reported the pro-government Iranian news agency Mehr. There were no initial reports of casualties.\nARCHIVE – Launch of missiles and drones during a military exercise by the Revolutionary Guards. Photo: Sepahnews/ZUMA Press Wire/dpa/Archive photo\nIran’s leadership classifies many Kurdish groups in Iraq as “terrorist groups.” According to human rights activists, the Kurdish minority in Iran is also being oppressed. In recent years, the Revolutionary Guards have repeatedly attacked Kurdish targets in Iraq. Since the start of the war waged by the U.S. and Israel, tensions along the border have increased.",
+      "bodyKo": "이란 혁명수비대, 이라크 쿠르드족 거점 공격\n\n보도에 따르면 이란 혁명수비대가 이웃한 이라크의 쿠르드족 거점을 공격했다. 친정부 성향의 이란 통신사 메흐르가 보도한 바에 따르면 이 공격은 전투용 드론으로 감행됐으며, 이라크 북부 반자치 지역인 쿠르디스탄 지역의 코말라당 본부를 목표로 했다. 초기 피해 보도는 없었다.\n\n이란 지도부는 이라크의 많은 쿠르드족 단체를 '테러 단체'로 분류하고 있다. 인권활동가들에 따르면 이란 내 쿠르드족 소수민족도 억압을 받고 있다. 최근 몇 년간 혁명수비대는 이라크의 쿠르드족 목표물을 반복적으로 공격해왔다. 미국과 이스라엘이 벌이는 전쟁이 시작된 이후 국경 지역의 긴장이 고조됐다.",
       "tried": true,
-      "count": 2,
+      "count": 8,
       "sources": [
-        "Alsumaria",
-        "وكالة الانباء العراقية (واع)"
+        "شبكة تواصل الإخبارية",
+        "i24NEWS",
+        "Yahoo",
+        "The Times of India",
+        "blue News",
+        "هذا اليوم"
       ],
       "related": [
         {
-          "titleKo": "바그다드 타흐리르 광장에서 개혁 요구 및 반부패 투쟁 계속 촉구하는 대규모 시위 벌어져",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://ina.iq/ar/video/277256-.html"
+          "titleKo": "이스라엘 의혹.. 이라크 이란 방공 시스템 겨냥한 정체불명 공격",
+          "source": "شبكة تواصل الإخبارية",
+          "link": "https://twaslnews1.twaslnews.com/6560975/"
+        },
+        {
+          "titleKo": "중국산 방공 시스템 이란에서 이라크로 이동.. 이스라엘이 표적으로 삼았나?",
+          "source": "i24NEWS",
+          "link": "https://www.i24news.tv/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/middle-east/artc-8f865be1"
+        },
+        {
+          "titleKo": "이란 혁명수비대, 이라크 쿠르드족 거점 공격",
+          "source": "Yahoo",
+          "link": "https://www.yahoo.com/news/world/articles/report-irans-revolutionary-guards-attack-080330506.html"
+        },
+        {
+          "titleKo": "드론 공격: 이란, 이라크 쿠르드 야당 기지 공격",
+          "source": "The Times of India",
+          "link": "https://timesofindia.indiatimes.com/world/middle-east/drone-attack-iran-targets-kurdish-opposition-bases-in-iraq/amp_articleshow/135186102.cms"
+        },
+        {
+          "titleKo": "아르빌서 이란 반정부 진영 캠프 드론 공격",
+          "source": "هذا اليوم",
+          "link": "https://hathalyoum.net/articles/4252788"
         }
       ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
+      }
+    },
+    {
+      "title": "Yazidis may see stability in Iraq 14 years after genocide at hands of ISIS",
+      "source": "The Jerusalem Post",
+      "link": "https://www.jpost.com/middle-east/article-912782",
+      "date": "2026-10-25T10:41:23.000Z",
+      "lang": "en",
+      "titleKo": "이슬람국가(IS) 집단학살 14년 후 야지디족, 이라크에서 안정 기대",
+      "url": "https://www.jpost.com/middle-east/article-912782",
+      "body": "The Yazidi region was largely abandoned by Iraq. The Yazidis remained, but they were divided.",
+      "bodyKo": "야지디 지역은 이라크에 의해 대체로 방치되었다. 야지디인들은 남아있었지만 분열되어 있었다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The Jerusalem Post"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "تزايد أعداد المتظاهرين وارتفاع سقف المطالب في ساحة التحرير وسط بغداد (صور وفيديو)",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/amp/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%AA%D8%B2%D8%A7%D9%8A%D8%AF-%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D9%85%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D9%8A%D9%86-%D9%88%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%B3%D9%82%D9%81-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D9%84%D8%A8-%D9%81%D9%8A-%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1-%D9%88%D8%B3%D8%B7-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%B5%D9%88%D8%B1-%D9%88%D9%81%D9%8A%D8%AF%D9%8A%D9%88",
+      "date": "2026-10-25T10:36:08.000Z",
+      "lang": "ar",
+      "titleKo": "바그다드 중심부 타흐리르 광장에서 시위대 증가, 요구사항 수위 상향 (사진·영상)",
+      "url": "https://shafaq.com/amp/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%AA%D8%B2%D8%A7%D9%8A%D8%AF-%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D9%85%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D9%8A%D9%86-%D9%88%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%B3%D9%82%D9%81-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D9%84%D8%A8-%D9%81%D9%8A-%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1-%D9%88%D8%B3%D8%B7-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%B5%D9%88%D8%B1-%D9%88%D9%81%D9%8A%D8%AF%D9%8A%D9%88",
+      "body": "تواصل توافد المتظاهرين، اليوم الأحد، إلى ساحة التحرير وسط العاصمة بغداد لإحياء الذكرى السابعة لاحتجاجات تشرين، حيث تجاوزت أعداد المشاركين المئات وسط تصاعد في سقف المطالب وإجراءات أمنية مشددة.\nوتجمع المتظاهرون في ساحة التحرير حاملين الأعلام العراقية، ومرددين شعارات عدة، بينها \"الشعب يريد إسقاط النظام\" و\"إيران بره بره، تشرين تبقى حرة\"، فيما لا تزال أعداد المشاركين في تزايد.\nوقال المتظاهر جاسم حميد، لوكالة شفق نيوز، إن \"اجتماعنا اليوم في الذكرى السابعة لثورة تشرين يأتي لتجديد العهد للشهداء، ومواصلة التظاهرات حتى الحصول على وطن حر خالٍ من التدخلات الخارجية\".\nمن جانبه، قال المتظاهر خالد علي حسن، لوكالة شفق نيوز، إن \"ثورة تشرين تمثل سجلاً خالداً في كفاح الشعب العراقي من أجل تحقيق أهدافه المشروعة\"، مبيناً أنها \"ثورة على الفساد والمحاصصة وغياب الخدمات وفرص العمل\".\nوفرضت قوات مكافحة الشغب طوقاً أمنياً مشدداً حول التظاهرة، حيث حصرت تجمع المشاركين في محيط حديقة الأمة خلف نصب التحرير، بالتزامن مع انتشار مكثف في منطقة الباب الشرقي لتأمين حركة السير.",
+      "bodyKo": "**바그다드 해방광장에 수천 명 운집…10월 혁명 7주년 추모**\n\n시위대가 오늘 일요일 바그다드 중심부 해방광장으로 계속 몰려들어 10월 항쟁 7주년을 추모했으며, 참가자 수가 수백 명을 넘어섰고 요구 수위가 높아지는 가운데 보안 조치가 강화됐다.\n\n시위대는 이라크 국기를 들고 해방광장에 모여 \"국민은 체제 붕괴를 원한다\", \"이란은 나가라, 10월은 자유로 남아야 한다\" 등 여러 구호를 외쳤으며, 참가자 수는 계속 증가하고 있다.\n\n시위자 자심 하미드는 샤팍뉴스에 \"10월 혁명 7주년을 맞아 오늘 모임은 순국선열에 대한 다짐을 새롭게 하고 외부 개입이 없는 자유로운 조국을 얻을 때까지 시위를 계속하기 위한 것\"이라고 말했다.\n\n시위자 칼리드 알리 하산은 샤팍뉴스에 \"10월 혁명은 정당한 목표 달성을 위한 이라크 국민의 투쟁에서 영원한 기록을 나타낸다\"며 \"부패, 정치적 분할, 서비스 부족, 일자리 부족에 대한 혁명\"이라고 설명했다.\n\n진압경찰대는 시위대 주변에 강화된 보안 봉쇄선을 펼쳤으며, 해방 기념탑 뒤 국가공원 일대로 참가자들을 제한했다. 동시에 동쪽 문 지역에 집중 배치해 교통 흐름을 보장했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
       "tag": "시위·통제",
       "impact": {
         "lv": "y",
@@ -112,6 +236,31 @@
         "act": "",
         "place": "",
         "km": null
+      }
+    },
+    {
+      "title": "Crowds grow at Baghdad's Tishreen anniversary protest",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/society/Crowds-grow-at-Baghdad-s-Tishreen-anniversary-protest",
+      "date": "2026-10-25T10:05:56.000Z",
+      "lang": "en",
+      "titleKo": "바그다드 티슈린 기념 시위 인파 증가",
+      "url": "https://shafaq.com/en/society/Crowds-grow-at-Baghdad-s-Tishreen-anniversary-protest",
+      "body": "Shafaq News- Baghdad Iraqis continued to arrive at Baghdad's Tahrir Square on Sunday to mark the seventh anniversary of the 2019 Tishreen protests, with hundreds gathering amid tight security. Demon\nDemonstrators waved Iraqi flags and chanted slogans, including \"The people want the fall of the regime\" and \"Iran out, Tishreen remains free.\"\nProtester Jassim Hamid told Shafaq News that participants gathered to honor those killed in 2019 and renew their commitment to seeking \"a free country without foreign interference.\"\nKhalid Ali Hassan, protester, said the Tishreen movement represented Iraqis' struggle against corruption, political power-sharing, poor public services, and unemployment.\nRiot police established a tight security cordon around the demonstration , restricting protesters to the area near Al-Umma Garden behind the monument in Tahrir Square. Security forces also deployed heavily in the nearby Bab Al-Sharqi district to maintain traffic flow.",
+      "bodyKo": "바그다드 타흐리르 광장에 수천 명 운집…2019년 티슈린 항쟁 7주년 추모\n\n샤팍뉴스-바그다드 주민들이 2019년 티슈린 항쟁 7주년을 기념하기 위해 일요일 바그다드 타흐리르 광장에 계속 도착했으며, 수백 명이 삼엄한 경비 속에 모였다.\n\n시위자들은 이라크 국기를 흔들며 \"국민은 체제 붕괴를 원한다\"와 \"이란은 나가고 티슈린은 자유로 남아야 한다\"는 구호를 외쳤다.\n\n시위자 자심 하미드는 샤팍뉴스에 참가자들이 2019년 사망자들을 추모하고 \"외국의 간섭 없는 자유로운 국가\"를 추구하려는 의지를 새롭게 하기 위해 모였다고 말했다.\n\n시위자 칼리드 알리 하산은 티슈린 운동이 부패, 정치적 권력 분배, 열악한 공공 서비스, 실업에 맞선 이라크인들의 투쟁을 대표한다고 말했다.\n\n경찰은 시위 주변에 삼엄한 경비 라인을 설치해 시위자들을 타흐리르 광장 기념비 뒤 알움마 정원 인근 지역으로 제한했다. 보안군은 교통 흐름을 유지하기 위해 인근 바브 알샤르키 지구에도 대규모로 배치했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "g",
+        "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
       }
     },
     {
@@ -150,7 +299,7 @@
       "body": "The delegation led by Deputy PM Mandalawi arrives as prime Minister Barzani is in Zakho for the opening of three automotive industrial projects, with oil exports, financial disputes, and the 2027 budget on the agenda\nERBIL (Kurdistan 24) - A senior Iraqi federal government delegation arrived in Erbil on Sunday and met Kurdistan Region Prime Minister Masrour Barzani in Zakho, according to an official statement from the KRG Media and Information Office, with the delegation led by Deputy Prime Minister for Energy Affairs Mohsin Mandalawi and including Oil Minister Bassem Mohammed and Electricity Minister Ali Saadi.\nThe Baghdad delegation&rsquo;s accompanying team includes the head of the advisers board, the deputy minister of finance, the deputy minister of oil, and several other senior federal government officials. After being received by Prime Minister Barzani in Zakho, the Baghdad delegation met with the KRG&rsquo;s own negotiating team.",
       "bodyKo": "에너지 담당 부총리 만달라위 대표단 도착…유류 수출·재정 분쟁·2027년 예산 논의\n\n아르빌(쿠르디스탄 24) - 에너지 담당 부총리 모흐신 만달라위가 이끄는 이라크 연방정부 고위급 대표단이 일요일 아르빌에 도착해 쿠르디스탄 지역 총리 마수르 바르자니를 자호에서 만났다. 쿠르디스탄 지역정부 미디어정보국의 공식 성명에 따른 것이다. 대표단에는 바심 무함마드 석유부 장관과 알리 사디 전력부 장관이 포함됐다.\n\n바그다드 대표단의 수행팀에는 고문위원회 의장, 재무부 차관, 석유부 차관, 그 외 여러 연방정부 고위 관계자들이 포함됐다. 바르자니 총리가 자호에서 대표단을 접견한 후 바그다드 대표단은 쿠르디스탄 지역정부의 협상팀과 만났다.",
       "tried": true,
-      "count": 2,
+      "count": 3,
       "sources": [
         "The New Region",
         "Kurdistan24"
@@ -160,6 +309,11 @@
           "titleKo": "이라크 대표단, 자호에서 바르자니 총리와 석유·예산 논의",
           "source": "The New Region",
           "link": "https://thenewregion.com/posts/6908"
+        },
+        {
+          "titleKo": "바르자니 총리 \"자호 계곡 관광 사업, 이라크 최대 규모\"",
+          "source": "Kurdistan24",
+          "link": "https://www.kurdistan24.net/en/story/948400/prime-minister-barzani-delivers-speech-at-major-zakho-tourism-project"
         }
       ],
       "tag": "정치·선거",
@@ -172,19 +326,19 @@
       }
     },
     {
-      "title": "أنظمة دفاع جوي صينية نُقلت من إيران إلى العراق.. هل استهدفتها إسرائيل؟",
-      "source": "i24NEWS",
-      "link": "https://www.i24news.tv/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/middle-east/artc-8f865be1",
-      "date": "2026-10-25T09:45:19.000Z",
+      "title": "القاضي زيدان ووزير الاثار يبحثان الحلول القانونية الخاصة بقطاع السياحة العراقي » وكالة الغد برس",
+      "source": "alghadpress.com",
+      "link": "https://alghadpress.com/122372-.html",
+      "date": "2026-10-25T09:48:25.000Z",
       "lang": "ar",
-      "titleKo": "중국산 방공 시스템 이란에서 이라크로 이동.. 이스라엘이 표적으로 삼았나?",
-      "url": "https://www.i24news.tv/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/middle-east/artc-8f865be1",
-      "body": "مصادر عراقية تشتبه في استهداف مخازن تضم أنظمة دفاع جوي صينية نُقلت من إيران إلى منظمات موالية لطهران، وسط روايات متضاربة بشأن انفجار في بغداد وتحذيرات من احتمال تجدد المواجهة مع إيران\nأفادت مصادر عراقية بأن جهات في بغداد تشتبه في وقوف إسرائيل وراء هجمات استهدفت موقعين لتخزين أنظمة دفاع جوي صينية، يُعتقد أنها نُقلت من إيران إلى مجموعات عراقية موالية لطهران. وذكر تقرير لصحيفة \"الشرق الأوسط\" أن شحنة الأسلحة دُمّرت بعد وقت قصير من وصولها إلى مستودعات داخل العراق، من دون توافر أدلة حاسمة تحدد الجهة المسؤولة عن الهجمات.\nونقلت الصحيفة عن مصدر أمني عراقي قوله إن لدى السلطات ما يدعو إلى الاشتباه في تورط إسرائيل، لكنه أشار إلى أن طريقة تنفيذ الهجمات لم تتضح بعد. في المقابل، شدد مسؤول عراقي رفيع على عدم وجود معلومات قاطعة تحدد هوية المنفذين.\nوأكدت الصحيفة أنها لم تتمكن من التحقق بشكل مستقل من المعلومات الواردة في التقرير، بما في ذلك وصول أنظمة الدفاع الجوي إلى العراق.",
-      "bodyKo": "이라크 소식통, 중국산 방공 시스템 저장소 겨냥 의심…이란 친화 조직으로 반입\n\n이라크 소식통들은 바그다드의 한 세력이 이란에서 이라크 친(親)테헤란 무장 조직으로 반입된 것으로 추정되는 중국산 방공 시스템을 저장한 두 곳을 겨냥한 공격의 배후에 이스라엘이 있다고 의심하고 있다고 밝혔다. 중동통신(알샤르크 알아우사트)은 무기 화물이 이라크 내 창고에 도착한 지 얼마 지나지 않아 파괴됐으며, 공격의 책임자를 특정할 결정적 증거가 없다고 보도했다.\n\n신문은 이라크 보안 소식통의 말을 인용해 당국이 이스라엘의 연루를 의심할 근거가 있지만, 공격 실행 방식은 아직 명확하지 않다고 전했다. 한편 이라크 고위 관계자는 실행자의 신원을 특정할 결정적 정보가 없다고 강조했다.\n\n신문은 방공 시스템이 이라크에 도착했는지 여부를 포함해 보도 내용의 정보를 독자적으로 검증하지 못했다고 확인했다.",
+      "titleKo": "판사 지단과 문화유산부 장관, 이라크 관광 부문의 법적 해결책 논의",
+      "url": "https://alghadpress.com/122372-.html",
+      "body": "",
+      "bodyKo": "",
       "tried": true,
       "count": 1,
       "sources": [
-        "i24NEWS"
+        "alghadpress.com"
       ],
       "related": [],
       "tag": "기타",
@@ -244,110 +398,6 @@
         "act": "시위 시간대 시내 이동 피하기",
         "place": "바그다드",
         "km": 27
-      }
-    },
-    {
-      "title": "미국은 이라크에 대해 최고 수준의 여행 경보를 유지하고 있습니다.",
-      "source": "Vietnam.vn",
-      "link": "https://www.vietnam.vn/ko/my-duy-tri-canh-bao-di-lai-cap-do-cao-nhat-doi-voi-iraq",
-      "date": "2026-10-25T08:13:40.000Z",
-      "lang": "ko",
-      "titleKo": "미국은 이라크에 대해 최고 수준의 여행 경보를 유지하고 있습니다.",
-      "url": "https://www.vietnam.vn/ko/my-duy-tri-canh-bao-di-lai-cap-do-cao-nhat-doi-voi-iraq",
-      "body": "미국 국무부는 불안정한 안보 상황으로 인해 이라크에 대한 최고 수준의 여행 경보를 유지하고 있으며, 어떠한 이유로든 중동 국가인 이라크를 여행하지 말 것을 자국민에게 권고하고 있습니다.\n0 미국 국무부 의 10월 23일 발표와 주이라크 미국 대사관의 10월 24일 성명에 따르면, 이라크는 미국 여행 경보 체계에서 가장 높은 단계인 4단계 경보가 유지되고 있습니다. 경보 단계는 변경되지 않았지만, 이번 발표는 해당 지역의 무장 공격 위험과 예측 불가능한 안보 상황 전개 가능성을 강조합니다.\n미국 국무부는 이라크 정부가 예기치 못한 폭력 사태나 무력 충돌로부터 미국 시민의 안전을 보장할 수 없다고 판단합니다. 또한, 안보 위험으로 인해 워싱턴이 이라크에 긴급 지원을 제공하는 능력에도 제약이 있습니다.\n이번 경고에서 제기된 문제 중 하나는 역내 분쟁 확대 위험입니다. 미 국무부에 따르면 이란 의 지원을 받는 후티 반군은 사우디아라비아의 민간 공항과 주요 기반 시설을 공격하여 민간인 사상자를 발생시키고 교통을 마비시켰습니다. 국무부는 이러한 적대 행위가 현재의 지리적 경계를 넘어 빠르게 확산될 수 있으며, 이는 지역 안보에 심각한 영향을 미칠 수 있다고 경고했습니다.\n이라크에서 미국 시민과 이익에 대한 위협은 이슬람국가(ISIS)와 이란과 연계된 무장 단체를 포함한 여러 곳에서 비롯되는 것으로 평가됩니다. 워싱턴의 경고에 따르면, 이러한 세력들은 이라크에서 미국인과 미국과 관련된 목표물을 겨냥한 공격을 감행하거나 실제로 실행했습니다.\n언급된 공격 방식에는 사제 폭발 장치, 간접 사격, 드론 등이 포함됩니다. 주요 도시를 비롯한 여러 지역에서 사건이 발생했으며, 잠재적 공격 대상에는 호텔, 대학, 에너지 시설, 공항, 외교 공관 등이 있습니다.",
-      "bodyKo": "미국 국무부는 불안정한 안보 상황으로 인해 이라크에 대한 최고 수준의 여행 경보를 유지하고 있으며, 어떠한 이유로든 중동 국가인 이라크를 여행하지 말 것을 자국민에게 권고하고 있습니다.\n0 미국 국무부 의 10월 23일 발표와 주이라크 미국 대사관의 10월 24일 성명에 따르면, 이라크는 미국 여행 경보 체계에서 가장 높은 단계인 4단계 경보가 유지되고 있습니다. 경보 단계는 변경되지 않았지만, 이번 발표는 해당 지역의 무장 공격 위험과 예측 불가능한 안보 상황 전개 가능성을 강조합니다.\n미국 국무부는 이라크 정부가 예기치 못한 폭력 사태나 무력 충돌로부터 미국 시민의 안전을 보장할 수 없다고 판단합니다. 또한, 안보 위험으로 인해 워싱턴이 이라크에 긴급 지원을 제공하는 능력에도 제약이 있습니다.\n이번 경고에서 제기된 문제 중 하나는 역내 분쟁 확대 위험입니다. 미 국무부에 따르면 이란 의 지원을 받는 후티 반군은 사우디아라비아의 민간 공항과 주요 기반 시설을 공격하여 민간인 사상자를 발생시키고 교통을 마비시켰습니다. 국무부는 이러한 적대 행위가 현재의 지리적 경계를 넘어 빠르게 확산될 수 있으며, 이는 지역 안보에 심각한 영향을 미칠 수 있다고 경고했습니다.\n이라크에서 미국 시민과 이익에 대한 위협은 이슬람국가(ISIS)와 이란과 연계된 무장 단체를 포함한 여러 곳에서 비롯되는 것으로 평가됩니다. 워싱턴의 경고에 따르면, 이러한 세력들은 이라크에서 미국인과 미국과 관련된 목표물을 겨냥한 공격을 감행하거나 실제로 실행했습니다.\n언급된 공격 방식에는 사제 폭발 장치, 간접 사격, 드론 등이 포함됩니다. 주요 도시를 비롯한 여러 지역에서 사건이 발생했으며, 잠재적 공격 대상에는 호텔, 대학, 에너지 시설, 공항, 외교 공관 등이 있습니다.",
-      "tried": true,
-      "count": 5,
-      "sources": [
-        "Menafn",
-        "Vietnam.vn",
-        "https://www.thetraveler.org/"
-      ],
-      "related": [
-        {
-          "titleKo": "미국, 보안 위험으로 이라크 긴급 여행 경보 발령",
-          "source": "Menafn",
-          "link": "https://menafn.com/1111861861/US-Issues-Urgent-Travel-Warning-for-Iraq-Over-Security-Risks"
-        },
-        {
-          "titleKo": "미국, 이라크에 대한 4단계 '여행금지' 경보 갱신",
-          "source": "https://www.thetraveler.org/",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVGM2ejhuRHlkYXp0YzdHMVZMb0V3Y1FNV2JQTnFsQXFFODA1cDdvLUZXSUc3OFVfd3VQWjVhLTdnNi15b0FpTHlOckFfUG1DcE9kSDhiYXdNMmtuN2JidXk3VmwxUGJWajktV005elZJMkh6LW9uQ3N3R01Ib3AxMHF1QXpqa2c?oc=5"
-        },
-        {
-          "titleKo": "미국, 이라크에 대한 4단계 '여행금지' 경고 갱신",
-          "source": "https://www.thetraveler.org/",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQWpib3dHRnZSVUpBclIzTFY5MnRZQm1hNW1rbTFyVkFvT0k5UFM0NXYwdnBpOW1maXFIbm1nUWFhTTZua19zQlR0VHFJYlgwZ1o5Q3l3dmhocURvUlViZXdwdUFDNzdOZF94STJmbTAwLU12YUd6WU5GWVpLa2JIQmZINA?oc=5"
-        },
-        {
-          "titleKo": "미국, 이라크에 대한 4단계 '여행금지' 경보 재발령",
-          "source": "https://www.thetraveler.org/",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVTJKT3Z5Tnp4Z09ueVlRUS1ua0F6bTU0eE1DX3JZTnZDWXlLdmRXbTNSRXUxTWM0UXNhUzRJSEpsM2VEUV9iZ2N1bVZVNmlKQXk5Rl94RTlWcmgxb214S0Y5Q3dnZGhYNEdqOE9WX19fRG4tRjVwODNnUXV4NGpmYm1NZHJKUmZ2YWc?oc=5"
-        }
-      ],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Report: Iranian Revolutionary Guards Attack a Position in Iraq",
-      "source": "blue News",
-      "link": "https://www.bluewin.ch/en/news/report-iranian-revolutionary-guards-attack-a-position-in-iraq-li.3648042",
-      "date": "2026-10-25T08:03:30.000Z",
-      "lang": "en",
-      "titleKo": "이란 혁명수비대, 이라크 거점 공격",
-      "url": "https://www.bluewin.ch/en/news/report-iranian-revolutionary-guards-attack-a-position-in-iraq-li.3648042",
-      "body": "According to a report, the Iranian Revolutionary Guards attacked Kurdish positions in neighboring Iraq. The attack, carried out with combat drones, targeted a headquarters of the Komala Party in the semi-autonomous Kurdistan Region in northern Iraq, reported the pro-government Iranian news agency Mehr. There were no initial reports of casualties.\nARCHIVE – Launch of missiles and drones during a military exercise by the Revolutionary Guards. Photo: Sepahnews/ZUMA Press Wire/dpa/Archive photo\nIran’s leadership classifies many Kurdish groups in Iraq as “terrorist groups.” According to human rights activists, the Kurdish minority in Iran is also being oppressed. In recent years, the Revolutionary Guards have repeatedly attacked Kurdish targets in Iraq. Since the start of the war waged by the U.S. and Israel, tensions along the border have increased.",
-      "bodyKo": "이란 혁명수비대, 이라크 쿠르드족 거점 공격\n\n보도에 따르면 이란 혁명수비대가 이웃한 이라크의 쿠르드족 거점을 공격했다. 친정부 성향의 이란 통신사 메흐르가 보도한 바에 따르면 이 공격은 전투용 드론으로 감행됐으며, 이라크 북부 반자치 지역인 쿠르디스탄 지역의 코말라당 본부를 목표로 했다. 초기 피해 보도는 없었다.\n\n이란 지도부는 이라크의 많은 쿠르드족 단체를 '테러 단체'로 분류하고 있다. 인권활동가들에 따르면 이란 내 쿠르드족 소수민족도 억압을 받고 있다. 최근 몇 년간 혁명수비대는 이라크의 쿠르드족 목표물을 반복적으로 공격해왔다. 미국과 이스라엘이 벌이는 전쟁이 시작된 이후 국경 지역의 긴장이 고조됐다.",
-      "tried": true,
-      "count": 6,
-      "sources": [
-        "Yahoo",
-        "blue News",
-        "Arab Times Kuwait News",
-        "هذا اليوم",
-        "Arab News",
-        "The Times of Israel"
-      ],
-      "related": [
-        {
-          "titleKo": "이란 혁명수비대, 이라크 쿠르드족 거점 공격",
-          "source": "Yahoo",
-          "link": "https://www.yahoo.com/news/world/articles/report-irans-revolutionary-guards-attack-080330506.html"
-        },
-        {
-          "titleKo": "이란 정권, 드론으로 이라크 쿠르드족 기지 공격",
-          "source": "Arab Times Kuwait News",
-          "link": "https://www.arabtimesonline.com/news/iranian-regime-attacks-kurdish-base-in-iraq-with-drones/"
-        },
-        {
-          "titleKo": "아르빌서 이란 반정부 진영 캠프 드론 공격",
-          "source": "هذا اليوم",
-          "link": "https://hathalyoum.net/articles/4252788"
-        },
-        {
-          "titleKo": "폭발물 탑재 드론, 이라크 아르빌 인근 이란 쿠르드 야당 진영 공격",
-          "source": "Arab News",
-          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQd05xT2R2VHVYLVFNRk9sOS1GRlJmelRianF6Y0gwMVZBZHpfRmdOZGdYT3VwVXVKb1p2VXgtazNJVXcyN3ZHV1hLYUlmVVNncG1UWFd1YlNHVnZqOEtOckczMy1CYU1hMjBpczczSHNfaWZCRXRQeDJvamgyVkljRzJKSGYySHpZUDVtZFFfX1dHSXVUSVlTZ21xeFYzZ05KR2ZDNUNvMmRFOVB4VWtWVEx1em5ubnJabllJTFBvNEktMGhOQXZJcWY0OElsY1VIN3BUWTFFR3Y0S3BB?oc=5"
-        },
-        {
-          "titleKo": "폭발물 탑재 드론, 이라크 아르빌 인근 이란 쿠르드 야당 진영 공격 -- 보안 소식통",
-          "source": "The Times of Israel",
-          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNdzRWMmtFYkljYW5EQ2psQjBJaEhScmM3Zl9fYnFkTzNkdmNZYTNyYWV3TW1jbDVGWkk3a0FKZzFZR3oxVDlxRFhQM2hPNHpwMk4tbUZxSDhndWIxLVZpTFlQZ25YR0Q0UDRtT0NOSzE0SG1WeEJBRDQyYWdwVTdwUGdUM0p3Y0xsbWhkWHFyeWw2ZkZSSUV4MXFWN3V5OURad19PRDUwNUEtT3ZVOC1TdTluQUNIWHY0c0s5MWt5WHdZTDYxUzhOWGF6bkpjdVRPRTg1RA?oc=5"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "에르빌",
-        "km": 338
       }
     },
     {
@@ -511,17 +561,11 @@
       "body": "",
       "bodyKo": "",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
         "Laodong.vn"
       ],
-      "related": [
-        {
-          "titleKo": "미군 항공기, 한 달간 이라크 영공 171회 침범 혐의",
-          "source": "Laodong.vn",
-          "link": "https://news.laodong.vn/the-gioi/may-bay-quan-su-my-bi-cao-buoc-xam-pham-khong-phan-iraq-171-lan-trong-mot-thang-1788829.ldo"
-        }
-      ],
+      "related": [],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -572,6 +616,37 @@
         "인사이트"
       ],
       "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "미국은 이라크에 대해 최고 수준의 여행 경보를 유지하고 있습니다.",
+      "source": "Vietnam.vn",
+      "link": "https://www.vietnam.vn/ko/my-duy-tri-canh-bao-di-lai-cap-do-cao-nhat-doi-voi-iraq",
+      "date": "2026-10-25T01:16:31.000Z",
+      "lang": "ko",
+      "titleKo": "미국은 이라크에 대해 최고 수준의 여행 경보를 유지하고 있습니다.",
+      "url": "https://www.vietnam.vn/ko/my-duy-tri-canh-bao-di-lai-cap-do-cao-nhat-doi-voi-iraq",
+      "body": "미국 국무부는 불안정한 안보 상황으로 인해 이라크에 대한 최고 수준의 여행 경보를 유지하고 있으며, 어떠한 이유로든 중동 국가인 이라크를 여행하지 말 것을 자국민에게 권고하고 있습니다.\n0 미국 국무부 의 10월 23일 발표와 주이라크 미국 대사관의 10월 24일 성명에 따르면, 이라크는 미국 여행 경보 체계에서 가장 높은 단계인 4단계 경보가 유지되고 있습니다. 경보 단계는 변경되지 않았지만, 이번 발표는 해당 지역의 무장 공격 위험과 예측 불가능한 안보 상황 전개 가능성을 강조합니다.\n미국 국무부는 이라크 정부가 예기치 못한 폭력 사태나 무력 충돌로부터 미국 시민의 안전을 보장할 수 없다고 판단합니다. 또한, 안보 위험으로 인해 워싱턴이 이라크에 긴급 지원을 제공하는 능력에도 제약이 있습니다.\n이번 경고에서 제기된 문제 중 하나는 역내 분쟁 확대 위험입니다. 미 국무부에 따르면 이란 의 지원을 받는 후티 반군은 사우디아라비아의 민간 공항과 주요 기반 시설을 공격하여 민간인 사상자를 발생시키고 교통을 마비시켰습니다. 국무부는 이러한 적대 행위가 현재의 지리적 경계를 넘어 빠르게 확산될 수 있으며, 이는 지역 안보에 심각한 영향을 미칠 수 있다고 경고했습니다.\n이라크에서 미국 시민과 이익에 대한 위협은 이슬람국가(ISIS)와 이란과 연계된 무장 단체를 포함한 여러 곳에서 비롯되는 것으로 평가됩니다. 워싱턴의 경고에 따르면, 이러한 세력들은 이라크에서 미국인과 미국과 관련된 목표물을 겨냥한 공격을 감행하거나 실제로 실행했습니다.\n언급된 공격 방식에는 사제 폭발 장치, 간접 사격, 드론 등이 포함됩니다. 주요 도시를 비롯한 여러 지역에서 사건이 발생했으며, 잠재적 공격 대상에는 호텔, 대학, 에너지 시설, 공항, 외교 공관 등이 있습니다.",
+      "bodyKo": "미국 국무부는 불안정한 안보 상황으로 인해 이라크에 대한 최고 수준의 여행 경보를 유지하고 있으며, 어떠한 이유로든 중동 국가인 이라크를 여행하지 말 것을 자국민에게 권고하고 있습니다.\n0 미국 국무부 의 10월 23일 발표와 주이라크 미국 대사관의 10월 24일 성명에 따르면, 이라크는 미국 여행 경보 체계에서 가장 높은 단계인 4단계 경보가 유지되고 있습니다. 경보 단계는 변경되지 않았지만, 이번 발표는 해당 지역의 무장 공격 위험과 예측 불가능한 안보 상황 전개 가능성을 강조합니다.\n미국 국무부는 이라크 정부가 예기치 못한 폭력 사태나 무력 충돌로부터 미국 시민의 안전을 보장할 수 없다고 판단합니다. 또한, 안보 위험으로 인해 워싱턴이 이라크에 긴급 지원을 제공하는 능력에도 제약이 있습니다.\n이번 경고에서 제기된 문제 중 하나는 역내 분쟁 확대 위험입니다. 미 국무부에 따르면 이란 의 지원을 받는 후티 반군은 사우디아라비아의 민간 공항과 주요 기반 시설을 공격하여 민간인 사상자를 발생시키고 교통을 마비시켰습니다. 국무부는 이러한 적대 행위가 현재의 지리적 경계를 넘어 빠르게 확산될 수 있으며, 이는 지역 안보에 심각한 영향을 미칠 수 있다고 경고했습니다.\n이라크에서 미국 시민과 이익에 대한 위협은 이슬람국가(ISIS)와 이란과 연계된 무장 단체를 포함한 여러 곳에서 비롯되는 것으로 평가됩니다. 워싱턴의 경고에 따르면, 이러한 세력들은 이라크에서 미국인과 미국과 관련된 목표물을 겨냥한 공격을 감행하거나 실제로 실행했습니다.\n언급된 공격 방식에는 사제 폭발 장치, 간접 사격, 드론 등이 포함됩니다. 주요 도시를 비롯한 여러 지역에서 사건이 발생했으며, 잠재적 공격 대상에는 호텔, 대학, 에너지 시설, 공항, 외교 공관 등이 있습니다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Vietnam.vn"
+      ],
+      "related": [
+        {
+          "titleKo": "미국, 이라크에 최고 수준 여행경보 유지",
+          "source": "Vietnam.vn",
+          "link": "https://www.vietnam.vn/en/my-duy-tri-canh-bao-di-lai-cap-do-cao-nhat-doi-voi-iraq"
+        }
+      ],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -676,7 +751,7 @@
         {
           "titleKo": "바스라 교육청, 일요일 공식 업무 중단 확인",
           "source": "المربد",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0tZ2J6Y2x6OHdBd2kycXVUQVA1c0dyUGtGV1FrTnR5MzhpVWtKRXhPdWNaTWVRTkJmRlpFbm9hb25FZGQwLXM0cFV5TU5Za21Y?oc=5"
+          "link": "https://www.al-mirbad.com/detail/218224"
         }
       ],
       "tag": "기타",
@@ -691,10 +766,14 @@
     {
       "title": "كركوك والديوانية تعطلان الدوام الرسمي يوم غد الأحد",
       "source": "المعلومة",
-      "link": "https://news.google.com/rss/articles/CBMiswNBVV95cUxQYjhWSm90eHRRazBBMTZDR2duTTVhTUpEbFd3QmNkODJFODdIdWdUMFQzS21OTDdxSEdmMGdWRm9SWi1oSzlxZmdBV1JTSUNaQzYzTWV0V2NNandISGFaZEZpTHlOa1ZyZXEzc3F0RzA2bjRzS2hlWUpsNU5HRVFrT3NzcXkzS190b2dSOG5mbFdhTE1rU1pPcFVrUEdiODYxWFpGUzZTSi11UWdweXRDSnRhWXJQOU1DN1pHaTI3aFdDYXJqYkhoTEVWWDZObEppQXFrMzREVzdfY1IzbWlCQXRGOW9EVVhBVk8wUlpEZVlhMm94dk5nVVV6VEdPckFBdy03bGVOMlA0ekR1eHlBeF9NcTlYck9uS1ZRVXNJNnVlRFhVRV85REJCTVhRRFdlT0QtVlFKcjRyODgybjV5MmVzcDdweGRIQVN3emVJam9vMmtkSDRZWmM0UFVaa3ljNGpKd1dFZ1JBVXkxY3VQcGxOOVhhWTVheTFTaFRTcUd5TFNreEtNTFNXZFU1T2RWQjAtQWxtb3ZBQWdFSW14RV9LV2lOSVBpUzlYUEhKQ2MtRHM?oc=5",
+      "link": "https://almaalomah.me/news/148106/local/%D9%83%D8%B1%D9%83%D9%88%D9%83-%D9%88%D8%A7%D9%84%D8%AF%D9%8A%D9%88%D8%A7%D9%86%D9%8A%D8%A9-%D8%AA%D8%B9%D8%B7%D9%84%D8%A7%D9%86-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A-%D9%8A%D9%88%D9%85-%D8%BA%D8%AF-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF",
       "date": "2026-10-24T21:03:08.000Z",
       "lang": "ar",
       "titleKo": "키르쿠크·디야날라, 내일 일요일 공무 중단",
+      "url": "https://almaalomah.me/news/148106/local/%D9%83%D8%B1%D9%83%D9%88%D9%83-%D9%88%D8%A7%D9%84%D8%AF%D9%8A%D9%88%D8%A7%D9%86%D9%8A%D8%A9-%D8%AA%D8%B9%D8%B7%D9%84%D8%A7%D9%86-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A-%D9%8A%D9%88%D9%85-%D8%BA%D8%AF-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF",
+      "body": "المعلومة/ بغداد.. أعلنت محافظتا كركوك والديوانية، اليوم السبت، تعطيل الدوام الرسمي ليوم غد الأحد بمناسبة ذكرى شهادة الزهراء (ع). وذكر بيان لمحافظة كركوك تلقته وكالة /المعلومة/، أن \"مجلس محافظة كركوك صوت على تعطيل الدوام الرسمي في دوائر المحافظة بذكرى استشهاد الزهراء (ع)\". وفي بيان ثان قررت محافظة الديوانية تعطيل الدوام الرسمي ليوم غد الأحد لدوائر المحافظة باستثناء الدوائر الصحية.انتهى 25",
+      "bodyKo": "**키르쿠크·디와니야, 내일 공식 업무 중단**\n\n바그다드=알마알루마 통신사\n\n키르쿠크와 디와니야 주는 토요일 오늘 내일 일요일 자흐라 순교 기념일을 맞아 공식 업무를 중단하기로 발표했다. 알마알루마 통신사가 입수한 키르쿠크 주 성명에 따르면 \"키르쿠크 주의회는 자흐라 순교 기념일을 맞아 주 산하 부서의 공식 업무 중단에 투표했다\"고 밝혔다. 디와니야 주는 별도 성명을 통해 보건 부서를 제외한 주 산하 부서의 공식 업무를 내일 일요일 중단하기로 결정했다.",
+      "tried": true,
       "count": 2,
       "sources": [
         "عراق اوبزيرفر",
@@ -704,7 +783,7 @@
         {
           "titleKo": "바그다드 내일 일요일 공식 업무 중단, 파티마 자흐라 여사 순교 추도식",
           "source": "عراق اوبزيرفر",
-          "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQNnpZc1huTmMwVUdjczN2TENOTzJrSWpWRmFnLUdHa2tpUWJocXp0clJfbTZ3WC0wMUxqYnZDOS1Rd0o0XzNDMll1VDVsZWVlandWWW5JVVdoV0xqbVJ2N0p3NkN1Y3hEVDZVMWVUQ3JUSUxlOWl4Y093QUVqNmtGdU1yemNFc1Bqb2E5SklJZXd1bTZKSzdVaW9zbjZuU0xkNXE0aHBlUEJQX1ZEUGNkWmNiRS1MOHF2QUpab2w5MUxnak8zSDBScXAwZm83dU51NzZmUWh4STQ5c1dlRFNGWUFNZXNkWUZYYzZBS1ZQQWZ5QkdXelJiMl85NjRqU3JXMnNWSDFOSkQ5LXhIVUpZVDd2R1pLcjNNWW9oOVRTTVVWX2ZRT0xDR0tyYjYwYjFKdWt6MHBGRnpzNTRPeHpOdWxjNUVxbDA?oc=5"
+          "link": "https://observeriraq.net/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AA%D8%B9%D8%B7%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%85-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A-%D8%BA%D8%AF%D8%A7%D9%8B-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF-%D8%A5%D8%AD/"
         }
       ],
       "tag": "휴일·행사",
@@ -857,69 +936,6 @@
         "place": "",
         "km": null
       }
-    },
-    {
-      "title": "رئيس الوزراء يعلن احتضان بغداد منافسات خليجي 28",
-      "source": "وكالة اليوم الإخبارية",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5QUHhWUUFWMjZ4Szh1OC15dkdJVGZybEZOalM4RGVyTUtnWGltNWduam0yZVg5ZEVZWmFpeTctYUpWTGF3aWhJdm5CTU13anM?oc=5",
-      "date": "2026-10-24T18:45:21.000Z",
-      "lang": "ar",
-      "titleKo": "총리, 바그다드의 걸프 대회 포용 발표 28",
-      "count": 1,
-      "sources": [
-        "وكالة اليوم الإخبارية"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "كركوك تلتحق بالمحافظات التي قررت تعطيل الدوام غداً » وكالة الغد برس",
-      "source": "alghadpress.com",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1oR09HSG5qaXZOOUNySm15YW0ybG1EdkU0clRUbGRpZm1pQlFramw5cHVObFRac25SNFQ0RDBDM1R2MXAyZlVqRFE5QmU?oc=5",
-      "date": "2026-10-24T17:58:28.000Z",
-      "lang": "ar",
-      "titleKo": "키르쿠크는 내일 근무 시간을 방해하기로 결정한 주지사에 합류합니다 »알-가드 언론사",
-      "count": 1,
-      "sources": [
-        "alghadpress.com"
-      ],
-      "related": [],
-      "tag": "휴일·행사",
-      "impact": {
-        "lv": "g",
-        "line": "키르쿠크 지역 휴무 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "키르쿠크",
-        "km": 254
-      }
-    },
-    {
-      "title": "بغداد.. الإطاحة بمتهم متخصص بسرقة ممتلكات المواطنين » وكالة الغد برس",
-      "source": "alghadpress.com",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5YdFRCQ2RZMEV5MlFlWGRlaTQ5N21LVnRtYmhxZ1p5elByZE5Sb2ZDNE1DclRuRnpLNWg1cHRTcWpSLTZYTWdJOWFpWjU?oc=5",
-      "date": "2026-10-24T17:49:56.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드..시민 재산 절도 전문 피고인 타도 » Al-Ghad Press Agency",
-      "count": 1,
-      "sources": [
-        "alghadpress.com"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
     }
   ],
   "alerts": [
@@ -936,12 +952,12 @@
   "brief": [
     {
       "lv": "y",
-      "titleKo": "바그다드 작전사령부, 타흐리르 광장 시위 관련 성명 발표",
+      "titleKo": "바그다드 중심부 타흐리르 광장에서 시위대 증가, 요구사항 수위 상향 (사진·영상)",
       "line": "바그다드권 시위·집회 (타흐리르 광장) — 시내·공항 이동 지연 가능",
       "act": "시위 시간대 시내 이동 피하기",
       "km": 25,
-      "link": "https://www.alsumaria.tv/news/security/579678/%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AA%D8%B5%D8%AF%D8%B1-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D9%8B-%D8%A8%D8%B4%D8%A3%D9%86-%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1",
-      "date": "2026-10-25T10:18:39.000Z",
+      "link": "https://shafaq.com/amp/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%AA%D8%B2%D8%A7%D9%8A%D8%AF-%D8%B9%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D9%85%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D9%8A%D9%86-%D9%88%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%B3%D9%82%D9%81-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D9%84%D8%A8-%D9%81%D9%8A-%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1-%D9%88%D8%B3%D8%B7-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%B5%D9%88%D8%B1-%D9%88%D9%81%D9%8A%D8%AF%D9%8A%D9%88",
+      "date": "2026-10-25T10:36:08.000Z",
       "more": 0
     },
     {
