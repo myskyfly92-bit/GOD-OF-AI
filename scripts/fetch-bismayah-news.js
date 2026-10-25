@@ -1,3 +1,4 @@
+// (번역 기억장치: cache/tr-*.json)
 // 비스마야 신도시 관련 뉴스를 구글 뉴스 검색(한국어·아랍어·영어)으로 모아
 // bismayah-news.json 으로 저장한다. GitHub Actions에서 3시간마다 실행.
 //
