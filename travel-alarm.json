@@ -1558,6 +1558,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "알제주"
+    },
+    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -1568,12 +1574,6 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "카빌리 지역 6개주 산악지역(부메르데스, 부아라, 티지 우주, 베자이아, 보르즈부아레리즈, 지젤) 포함 3단계 지정 지역을 제외한 지역"
-    },
-    {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "알제주"
     }
    ],
    "written": "",
@@ -1938,13 +1938,13 @@
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
-     "remark": "서파루아, 파푸아, 말루쿠, 아체"
+     "remark": "서파푸아, 파푸아, 말루쿠, 아체"
     },
     {
      "level": 1,
      "levelName": "여행유의",
      "region": "일부",
-     "remark": "2단계 지정 지역을 제외한 지역"
+     "remark": "특별여행주의보 및 2단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2341,16 +2341,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "베네수엘라 국경지역 20km/ 에콰도르 국경지역 20km / 바예델카우카 주(깔리 시 제외)/ 아라우카 주, 카우카 주/(*는 일부: 안티오키아 주*, 초코 주*/ 카케타 주*)  / 노르떼 데 산딴데르(Norte de Santander) 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2438,16 +2438,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "아프가니스탄 접경지역"
-    },
-    {
      "level": 1,
      "levelName": "여행유의",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "아프가니스탄 접경지역"
     }
    ],
    "written": "",
@@ -2484,12 +2484,6 @@
    "level": 3,
    "regions": [
     {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "2.3단계 및 특별여행주의보 발령 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -2500,6 +2494,12 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "딱 주"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "2.3단계 및 특별여행주의보 발령 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2622,16 +2622,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "콜롬비아 국경지역 40Km 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-10-24T06:34:10.928819+00:00"
+ "generatedAt": "2026-10-25T07:00:09.751361+00:00"
 }
