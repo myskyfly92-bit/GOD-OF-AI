@@ -30,8 +30,8 @@ jobs:
         with:
           node-version: "20"
 
-      - name: playwright-core 설치 (러너에 깔린 Chrome 사용)
-        run: npm install --no-save --no-package-lock playwright-core@1.47.2
+      - name: playwright-core·sharp 설치 (러너에 깔린 Chrome 사용, 포스터 webp 변환)
+        run: npm install --no-save --no-package-lock playwright-core@1.47.2 sharp@0.33.5
 
       - name: 중대재해 사이렌 수집
         run: node scripts/fetch-kosha-siren.js

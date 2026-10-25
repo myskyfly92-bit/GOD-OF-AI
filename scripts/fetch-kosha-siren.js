@@ -18,6 +18,7 @@ const API_KEY = "selectImprtnDsstrSirnList";
 const OUT = "kosha-siren.json";
 const IMG_DIR = path.join("assets", "siren");
 const KEEP = 30; // 포스터는 최신 30건만 보관
+const ROWS = 24; // 한 번에 받을 건수 (포털 기본 8)
 
 function readJson(p) { try { return JSON.parse(fs.readFileSync(p, "utf8")); } catch (e) { return null; } }
 
@@ -31,7 +32,9 @@ async function capture() {
     const got = new Promise((res, rej) => { done = res; setTimeout(() => rej(new Error("API 응답 대기 시간 초과")), 45000); });
     await page.route((u) => u.href.includes(API_KEY), async (route) => {
       try {
-        const resp = await route.fetch();
+        let post = route.request().postData() || "";
+        try { const j = JSON.parse(post); j.rowsPerPage = ROWS; j.page = 1; post = JSON.stringify(j); } catch (_) {}
+        const resp = await route.fetch(post ? { postData: post } : undefined);
         const text = await resp.text();
         if (resp.status() === 200) done({ url: route.request().url(), body: JSON.parse(text), req: route.request().postData() || "" });
         await route.fulfill({ response: resp, body: text });
@@ -50,17 +53,25 @@ function pickList(body) {
   return Array.isArray(list) ? list : [];
 }
 
-function saveImage(no, src) {
-  if (!src) return "";
+let sharp = null; try { sharp = require("sharp"); } catch (e) { sharp = null; }
+
+// 포스터(1MB 안팎 jpg)를 화면용 webp 두 장으로 줄인다: 본 그림 900px · 미리보기 360px
+async function saveImage(no, src) {
+  if (!src) return null;
   const m = String(src).match(/^data:image\/(\w+);base64,(.*)$/s);
-  const ext = m ? (m[1] === "jpeg" ? "jpg" : m[1]) : "jpg";
-  const b64 = m ? m[2] : String(src);
-  const buf = Buffer.from(b64, "base64");
-  if (buf.length < 200) return "";
+  const buf = Buffer.from(m ? m[2] : String(src), "base64");
+  if (buf.length < 200) return null;
   fs.mkdirSync(IMG_DIR, { recursive: true });
-  const file = path.join(IMG_DIR, `${no}.${ext}`);
-  if (!fs.existsSync(file) || fs.statSync(file).size !== buf.length) fs.writeFileSync(file, buf);
-  return file.split(path.sep).join("/");
+  const big = `${IMG_DIR}/${no}.webp`, thumb = `${IMG_DIR}/${no}_t.webp`;
+  if (sharp) {
+    if (!fs.existsSync(big)) await sharp(buf).resize({ width: 900, withoutEnlargement: true }).webp({ quality: 74 }).toFile(big);
+    if (!fs.existsSync(thumb)) await sharp(buf).resize({ width: 360, withoutEnlargement: true }).webp({ quality: 70 }).toFile(thumb);
+    return { img: big, thumb };
+  }
+  const ext = m ? (m[1] === "jpeg" ? "jpg" : m[1]) : "jpg";
+  const file = `${IMG_DIR}/${no}.${ext}`;
+  if (!fs.existsSync(file)) fs.writeFileSync(file, buf);
+  return { img: file, thumb: file };
 }
 
 (async () => {
@@ -81,16 +92,19 @@ function saveImage(no, src) {
   (prev.items || []).forEach((x) => { seen[x.no] = x; });
   const now = new Date().toISOString();
 
-  const items = list.map((x) => {
+  const items = (await Promise.all(list.map(async (x) => {
     const no = String(x.imprtnDsstrSirnNo || x.sirnNo || x.no || "").trim();
     const title = String(x.imprtnDsstrSirnNm || x.title || "").replace(/\s+/g, " ").trim();
     if (!no || !title) return null;
     const old = seen[no] || {};
-    const img = saveImage(no, x.imgSrc) || old.img || "";
+    const im = (await saveImage(no, x.imgSrc)) || { img: old.img || "", thumb: old.thumb || old.img || "" };
     // 날짜처럼 보이는 필드가 있으면 그대로 남긴다 (등록일 등)
     const dateKey = Object.keys(x).find((k) => /(reg|frst|crt|wrt|pst).*(dt|de|date)$/i.test(k) && x[k]);
-    return { no, title, img, date: dateKey ? String(x[dateKey]).slice(0, 10) : (old.date || ""), firstSeen: old.firstSeen || now };
-  }).filter(Boolean);
+    // 제목 '(261023)중대재해 발생 알림(1)' → 발생 알림 날짜 2026-10-23 · 그날 n번째
+    const t = title.match(/\((\d{2})(\d{2})(\d{2})\)/), q = title.match(/\((\d+)\)\s*$/);
+    const day = t ? `20${t[1]}-${t[2]}-${t[3]}` : "";
+    return { no, title, day, seq: q ? Number(q[1]) : null, img: im.img, thumb: im.thumb, posted: dateKey ? String(x[dateKey]).slice(0, 10).replace(/\./g, "-") : (old.posted || ""), firstSeen: old.firstSeen || now };
+  }))).filter(Boolean);
 
   // 예전 항목 중 이번 목록에 없는 것도 최신 KEEP 건 안에서는 남긴다
   const byNo = {};
@@ -98,13 +112,13 @@ function saveImage(no, src) {
   const merged = Object.values(byNo).sort((a, b) => Number(b.no) - Number(a.no)).slice(0, KEEP);
 
   // 보관 범위 밖 포스터는 지운다
-  const keepImgs = new Set(merged.map((x) => x.img).filter(Boolean));
+  const keepImgs = new Set([].concat(...merged.map((x) => [x.img, x.thumb])).filter(Boolean));
   if (fs.existsSync(IMG_DIR)) fs.readdirSync(IMG_DIR).forEach((f) => {
     const p = `${IMG_DIR}/${f}`.split(path.sep).join("/");
     if (!keepImgs.has(p)) fs.unlinkSync(path.join(IMG_DIR, f));
   });
 
-  const sameList = JSON.stringify(merged.map((x) => [x.no, x.title, x.img])) === JSON.stringify((prev.items || []).map((x) => [x.no, x.title, x.img]));
+  const sameList = JSON.stringify(merged.map((x) => [x.no, x.title, x.img, x.thumb])) === JSON.stringify((prev.items || []).map((x) => [x.no, x.title, x.img, x.thumb]));
   if (sameList && prev.generatedAt) { console.log("변경 없음"); return; }
   const out = { source: PAGE_URL, generatedAt: now, items: merged };
   fs.writeFileSync(OUT, JSON.stringify(out, null, 1));
