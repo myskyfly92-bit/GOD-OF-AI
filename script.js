@@ -8656,11 +8656,22 @@ makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, subN
     } else if (e.target.closest(".iq-more")) tab("etc", "view-iraq-issues")();
   });
   render();
-  fetch("iraq-issues.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : null).then((j) => {
+  let all = [];
+  const load = () => fetch("iraq-issues.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : null).then((j) => {
     const hid = hidden();
-    L = ((j && j.alerts) || []).filter((a) => a.kind === "holiday" && !hid.includes(a.link) && Date.now() - Date.parse(a.date) < 36 * 3600000);
-    if (L.length) render();
+    all = ((j && j.alerts) || []).filter((a) => a.kind === "holiday" && Date.now() - Date.parse(a.date) < 36 * 3600000);
+    L = all.filter((a) => !hid.includes(a.link));
+    render();
+    const sub = document.getElementById("alertResetSub");
+    if (sub) { const n = all.length - L.length + (LS.get("wnHide") === NEW.id && today <= NEW.until ? 1 : 0); sub.textContent = n ? `이 PC에서 닫아 둔 알림 ${n}건 — 누르면 다시 떠요` : "지금은 이 PC에서 닫아 둔 알림이 없어요"; }
   }).catch(() => {});
+  load();
+  // ⚙ 설정 › 닫은 알림 다시 보기: 이 PC(브라우저)에 저장된 '닫음' 기록을 지우고 다시 그린다
+  const rb = document.getElementById("alertReset");
+  if (rb) rb.addEventListener("click", () => {
+    try { localStorage.removeItem(KEY); localStorage.removeItem("wnHide"); } catch (e) {}
+    location.reload();
+  });
 })();
 /* 위쪽 띠(새 기능·이라크 공휴일 안내)·머리·메뉴줄의 높이가 바뀌면 (✕로 닫기, 소분류 줄 열림 등)
    카드가 위아래로 움직이므로 오른쪽 달력·환율 위젯 위치를 다시 맞춘다 */
