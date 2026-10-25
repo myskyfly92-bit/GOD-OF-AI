@@ -217,7 +217,8 @@ async function translateMyMemory(text, from) {
 // ---- AI 번역 (Claude) — ANTHROPIC_API_KEY 시크릿이 있으면 먼저 쓰고, 없거나 실패하면 구글 번역 ----
 const CLAUDE_KEY = process.env.ANTHROPIC_API_KEY || "";
 const CLAUDE_MODEL = process.env.CLAUDE_MODEL || "claude-haiku-4-5-20251001";
-const CLAUDE_MAX_CALLS = 80; // 한 번 실행에 최대 호출 수 (비용 안전장치)
+const RETRANSLATE = process.env.RETRANSLATE === "1"; // 예전 기사까지 AI로 다시 번역 (한 번만 쓰는 옵션)
+const CLAUDE_MAX_CALLS = RETRANSLATE ? 220 : 80; // 한 번 실행에 최대 호출 수 (비용 안전장치)
 let claudeCalls = 0, claudeOff = false;
 const LANG_NAME = { ar: "아랍어", en: "영어", ko: "한국어", fr: "프랑스어", ku: "쿠르드어" };
 const CLAUDE_SYSTEM = [
@@ -370,7 +371,7 @@ async function main() {
     const old = prevByLink.get(n.link) || prevByTitle.get(tkey(n.title)) || {};
     if (n.lang === "ko") n.titleKo = n.title;
     else {
-      n.titleKo = n.titleKo || old.titleKo || prevKo.get(n.link) || "";
+      n.titleKo = RETRANSLATE && CLAUDE_KEY ? "" : (n.titleKo || old.titleKo || prevKo.get(n.link) || "");
       if (!n.titleKo) {
         n.titleKo = await translate(n.title, n.lang);
         if (n.titleKo) translated++;
@@ -379,7 +380,11 @@ async function main() {
     }
     // 본문 미리보기: 예전에 가져온 게 있으면 그대로, 없으면 이번에 가져온다 (한 번에 최대 BODY_PER_RUN건)
     const tidy = (t) => decodeEntities(t || "").replace(/&#\d*;?/g, " ").replace(/[ \t]+/g, " ").trim();
-    if (old.body !== undefined && old.tried) { n.url = old.url; n.body = tidy(old.body); n.bodyKo = tidy(old.bodyKo); n.tried = true; continue; }
+    if (old.body !== undefined && old.tried) {
+      n.url = old.url; n.body = tidy(old.body); n.bodyKo = tidy(old.bodyKo); n.tried = true;
+      if (RETRANSLATE && CLAUDE_KEY && n.body && n.lang !== "ko") { const t = await translateLong(n.body, n.lang); if (t) n.bodyKo = tidy(decodeEntities(t)); }
+      continue;
+    }
     if (bodies >= BODY_PER_RUN) continue;
     bodies++;
     n.url = await resolveGoogle(n.link);

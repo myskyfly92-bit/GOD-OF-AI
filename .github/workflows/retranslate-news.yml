@@ -1,0 +1,45 @@
+name: Re-translate news with AI (한 번만 · 예전 기사 다시 번역)
+
+on:
+  workflow_dispatch:
+    inputs:
+      cfg:
+        description: "bismayah / iraq / health / fire / sa"
+        default: "bismayah"
+  push:
+    branches: [main]
+    paths:
+      - .github/retranslate.txt
+
+permissions:
+  contents: write
+
+jobs:
+  retranslate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: 다시 번역
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RETRANSLATE: "1"
+        run: |
+          CFGS="${{ github.event.inputs.cfg }}"
+          if [ -z "$CFGS" ]; then CFGS=$(grep -v '^#' .github/retranslate.txt | tr -s ' \n' ' '); fi
+          for c in $CFGS; do echo "== $c"; NEWS_CFG=$c node scripts/fetch-bismayah-news.js; done
+      - name: 커밋·푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bismayah-news.json iraq-issues.json health-issues.json fire-news.json sa-news.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "chore: 뉴스 AI 재번역"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then exit 0; fi
+            sleep 5
+          done
+          exit 1
