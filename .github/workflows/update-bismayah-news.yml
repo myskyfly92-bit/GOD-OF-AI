@@ -23,6 +23,8 @@ jobs:
 
       - name: 비스마야 소식 가져오기
         run: node scripts/fetch-bismayah-news.js
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
         run: |

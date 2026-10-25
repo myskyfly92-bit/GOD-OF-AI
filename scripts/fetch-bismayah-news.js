@@ -214,7 +214,47 @@ async function translateMyMemory(text, from) {
   if (j.responseStatus != 200 || !t || /MYMEMORY WARNING|QUERY LENGTH LIMIT/i.test(t)) return "";
   return decodeEntities(t);
 }
-async function translate(text, from) {
+// ---- AI 번역 (Claude) — ANTHROPIC_API_KEY 시크릿이 있으면 먼저 쓰고, 없거나 실패하면 구글 번역 ----
+const CLAUDE_KEY = process.env.ANTHROPIC_API_KEY || "";
+const CLAUDE_MODEL = process.env.CLAUDE_MODEL || "claude-haiku-4-5-20251001";
+const CLAUDE_MAX_CALLS = 80; // 한 번 실행에 최대 호출 수 (비용 안전장치)
+let claudeCalls = 0, claudeOff = false;
+const LANG_NAME = { ar: "아랍어", en: "영어", ko: "한국어", fr: "프랑스어", ku: "쿠르드어" };
+const CLAUDE_SYSTEM = [
+  "너는 이라크 비스마야 신도시 건설현장(한화 시공)의 한국인 안전·보건 담당자에게 외국 뉴스를 전달하는 번역가다.",
+  "규칙:",
+  "- 자연스러운 한국어 뉴스 문체로 옮긴다. 제목은 한국 신문 제목처럼 짧고 명확하게, 본문은 '~했다' 체로.",
+  "- 뜻을 더하거나 빼지 말고, 원문에 없는 해석·설명·따옴표·머리말을 붙이지 않는다. 번역문만 출력한다.",
+  "- 고유명사: بسماية/Bismayah → 비스마야, 한화/Hanwha → 한화, بغداد → 바그다드, البصرة → 바스라, أربيل → 아르빌, النجف → 나자프, كربلاء → 카르발라, الموصل → 모술, كركوك → 키르쿠크, الأنبار → 안바르.",
+  "- 기관명은 한국 언론 관례대로: وزارة الصحة → 보건부, وزارة الداخلية → 내무부, الدفاع المدني → 민방위(소방당국), هيئة النزاهة → 청렴위원회, رئيس الوزراء → 총리.",
+  "- 질병명은 의학 용어로: plague → 페스트, cholera → 콜레라, haemorrhagic fever(Crimean-Congo) → 크림-콩고 출혈열.",
+  "- 사람 이름은 현지 발음대로 한글로 적는다. 숫자·날짜·단위는 그대로 살린다.",
+  "- 입력에 줄바꿈이 있으면 같은 줄 구조를 유지한다.",
+].join("\n");
+async function translateClaude(text, from, kind) {
+  if (!CLAUDE_KEY || claudeOff || claudeCalls >= CLAUDE_MAX_CALLS) return "";
+  claudeCalls++;
+  const ctl = new AbortController(); const tm = setTimeout(() => ctl.abort(), 30000);
+  try {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST", signal: ctl.signal,
+      headers: { "content-type": "application/json", "x-api-key": CLAUDE_KEY, "anthropic-version": "2023-06-01" },
+      body: JSON.stringify({
+        model: CLAUDE_MODEL, max_tokens: kind === "body" ? 1500 : 200, temperature: 0, system: CLAUDE_SYSTEM,
+        messages: [{ role: "user", content: `다음 ${LANG_NAME[from] || from} 뉴스 ${kind === "body" ? "본문 발췌" : "제목"}을 한국어로 번역해 줘.\n\n${text}` }],
+      }),
+    });
+    const j = await res.json().catch(() => ({}));
+    if (!res.ok) {
+      console.log(`::warning::AI 번역 실패 ${res.status}: ${(j.error && j.error.message) || ""}`.slice(0, 300));
+      if (res.status === 401 || res.status === 403 || (res.status === 400 && /credit|balance|billing/i.test(JSON.stringify(j)))) claudeOff = true; // 키·잔액 문제면 이번 실행은 구글로
+      return "";
+    }
+    return ((j.content || []).map((c) => c.text || "").join("") || "").trim();
+  } catch (e) { return ""; } finally { clearTimeout(tm); }
+}
+async function translate(text, from, kind) {
+  try { const t = await translateClaude(text, from, kind || "title"); if (t) return t; } catch (e) { /* 아래로 */ }
   try { const t = await translateGtx(text, from); if (t) return t; } catch (e) { /* 아래로 */ }
   try { return await translateMyMemory(text, from); } catch (e) { return ""; }
 }
@@ -272,6 +312,8 @@ async function articleText(url) {
 
 // 긴 글 번역: 문단별로 잘라서 번역 (주소 길이 제한 때문에)
 async function translateLong(text, from) {
+  // AI 번역이 되면 본문을 한 번에 (문맥을 살려서)
+  if (CLAUDE_KEY && !claudeOff) { const t = await translateClaude(text, from, "body"); if (t) return t; }
   const out = [];
   for (const para of text.split("\n")) {
     if (!para.trim()) continue;
@@ -458,7 +500,7 @@ async function main() {
   }
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n", "utf-8");
   const by = (l) => list.filter((n) => n.lang === l).length;
-  console.log(`저장 완료: 총 ${list.length}건 (한국어 ${by("ko")} · 아랍어 ${by("ar")} · 영어 ${by("en")}) · 새로 번역 ${translated}건 · 본문 있음 ${list.filter((n) => n.body).length}건`);
+  console.log(`저장 완료: 총 ${list.length}건 (한국어 ${by("ko")} · 아랍어 ${by("ar")} · 영어 ${by("en")}) · 새로 번역 ${translated}건 · 본문 있음 ${list.filter((n) => n.body).length}건 · AI 번역 호출 ${claudeCalls}회${CLAUDE_KEY ? "" : " (키 없음 → 구글 번역)"}`);
 }
 
 main().catch((err) => { console.error(err); process.exit(1); });

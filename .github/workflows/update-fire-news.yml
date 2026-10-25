@@ -23,6 +23,8 @@ jobs:
 
       - name: 중대재해 보도 알림 뉴스 가져오기
         run: NEWS_CFG=fire node scripts/fetch-bismayah-news.js
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: 변경사항 커밋 및 푸시 (충돌 시 자동 재시도)
         run: |
