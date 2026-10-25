@@ -1,31 +1,104 @@
 {
-  "generatedAt": "2026-10-25T05:25:47.145Z",
+  "generatedAt": "2026-10-25T12:09:19.345Z",
   "items": [
+    {
+      "title": "[경기 119] 포천 돼지 축사·고양 제조 공장 화재",
+      "source": "OBS경인TV",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1nRWN4SHlHYXRDMWV5LWNBS3F0eVA1ZzBDaWVWWXI5MHVvVFhHOHN3aVBxQzFPMUNUcTRIaUJTLTFkNlhuNkhYalczOXVDdGgtLU8zbHFsdVA1NnZSQmVlbkNtUDdON0xKV29vazJR?oc=5",
+      "date": "2026-10-25T09:12:20.000Z",
+      "lang": "ko",
+      "titleKo": "[경기 119] 포천 돼지 축사·고양 제조 공장 화재",
+      "count": 14,
+      "sources": [
+        "قناة الغد",
+        "جريدة القدس",
+        "factjo.com",
+        "حرية سقفها السماء",
+        "صحيفة السوسنة الأردنية",
+        "JO24"
+      ],
+      "related": [
+        {
+          "titleKo": "세계 최대 귀리 공장에서 화재 발생",
+          "source": "قناة الغد",
+          "link": "https://www.alghad.tv/index.php/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%BA%D8%AF/news/%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%A3%D9%83%D8%A8%D8%B1-%D9%85%D8%B5%D9%86%D8%B9-%D8%B4%D9%88%D9%81%D8%A7%D9%86-%D8%A8%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85"
+        },
+        {
+          "titleKo": "미국 아이오와주 세계 최대 귀리 분쇄 공장에서 대형 화재 발생",
+          "source": "جريدة القدس",
+          "link": "https://alquds.com/ar/posts/264915-fire-breaks-out-quaker-oats-factory-iowa"
+        },
+        {
+          "titleKo": "하산 산업도시 공장 화재",
+          "source": "factjo.com",
+          "link": "https://factjo.com/news/151343"
+        },
+        {
+          "titleKo": "영상: 하산 산업도시 공장 화재 | 요르단 투데이",
+          "source": "حرية سقفها السماء",
+          "link": "https://www.sarayanews.com/article/1116035/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%B5%D9%86%D8%B9-%D9%81%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AD%D8%B3%D9%86-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9"
+        },
+        {
+          "titleKo": "하산 산업도시 공장 화재 진화",
+          "source": "صحيفة السوسنة الأردنية",
+          "link": "https://www.assawsana.com/article/736616"
+        }
+      ],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "المعروف بدعمه للاحتلال..حريق في مصنع تابع لشركة بيبسي الأمريكية عقب انفجار في ولاية آيوا",
+      "source": "İlke Haber Ajansı",
+      "link": "https://ilkha.com/arabi/world/571274/%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D9%81%D8%A8%D8%AF%D8%B9%D9%85%D9%87%D9%84%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84%D8%AD%D8%B1%D9%8A%D9%82%D9%81%D9%8A%D9%85%D8%B5%D9%86%D8%B9%D8%AA%D8%A7%D8%A8%D8%B9%D9%84%D8%B4%D8%B1%D9%83%D8%A9%D8%A8%D9%8A%D8%A8%D8%B3%D9%8A%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9%D8%B9%D9%82%D8%A8%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D9%81%D9%8A%D9%88%D9%84%D8%A7%D9%8A%D8%A9%D8%A2%D9%8A%D9%88%D8%A7",
+      "date": "2026-10-25T07:31:47.000Z",
+      "lang": "ar",
+      "titleKo": "점령군 지지로 알려진 펩시 미국 회사 공장에서 화재...아이오와주 폭발 후",
+      "url": "https://ilkha.com/arabi/world/571274/%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D9%81%D8%A8%D8%AF%D8%B9%D9%85%D9%87%D9%84%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84%D8%AD%D8%B1%D9%8A%D9%82%D9%81%D9%8A%D9%85%D8%B5%D9%86%D8%B9%D8%AA%D8%A7%D8%A8%D8%B9%D9%84%D8%B4%D8%B1%D9%83%D8%A9%D8%A8%D9%8A%D8%A8%D8%B3%D9%8A%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9%D8%B9%D9%82%D8%A8%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D9%81%D9%8A%D9%88%D9%84%D8%A7%D9%8A%D8%A9%D8%A2%D9%8A%D9%88%D8%A7",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "İlke Haber Ajansı"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
     {
       "title": "‘전기차‧산업현장’ AI로 화재감지 : 뉴스케이충청",
       "source": "뉴스케이",
       "link": "https://newsk.net/cc/?idx=175234216&bmode=view",
-      "date": "2026-10-25T03:50:00.000Z",
+      "date": "2026-10-25T06:50:21.000Z",
       "lang": "ko",
       "titleKo": "‘전기차‧산업현장’ AI로 화재감지 : 뉴스케이충청",
       "url": "https://newsk.net/cc/?idx=175234216&bmode=view",
       "body": "충남도의회 화재예방 AI 연구모임서 논의&lsquo;발화 전 오프가스 감지&rsquo; 등 첨단기술 검토충남도의회가 인공지능(AI) 등 첨단기술을 활용해 화재 위험을 조기에 감지하고 신속한 초기 대응을 지원하는 &lsquo;충남형 AI 스마트 화재예방시스템&rsquo; 구축 방안을 지속해서 모색하고 있다. 도의회 &lsquo;충남 화재예방을 위한 AI 시스템 활용 방안 연구모임&rsquo;이 23일 천안동남소방서 대회의실에서 제2차 회의를 열고, AI 기반 화재예방 기술의 활용 방안과 시설별 적용 모델을 논의했다. 이날 발표를 맡은 김창국 ㈔한국AI재난예방기술협회 자문위원은 기존 열화상 카메라의 감지 한계를 설명하고, AI 영상분석 카메라(ME100 등)를 활용한 화재 징후 감지 기술을 소개했다. 김 자문위원은 &ldquo;AI 영상분석 카메라는 발화 전 단계에서 발생하는 유독성 가스인 오프가스와 불꽃을 30초 이내에 감지할 수 있다&rdquo;며 조기 감지 기술의 원리와 장점을 설명했다.이어 참석자들은 최근 위험성이 대두되는 ▲전기차 충전구역 ▲건설&middot;산업현장 ▲기전실(기계&middot;전기실) 등 3대 취약 분야를 중심으로 시설별 특성을 고려한 AI 기반 예방&middot;대응 모델을 검토했다. 특히 센서를 통해 화재 징후를 조기에 포착하고 원격 제어 소화장치 등을 활용해 신속한 초기 대응으로 연계하는 방안에 대해 다양한 의견을 교환했다.정근수 의원(천안10&middot;더불어민주당)은 &ldquo;전기차 화재와 산업현장 재난은 위험을 조기에 발견하고 신속하게 대응하는 것이 피해를 최소화하는 핵심&rdquo;이라며 &ldquo;기존 사후 진압 중심에서 벗어나 AI와 IoT 기반의 선제적 예방과 원격 초동 대응체계를 다각도로 살펴 도민의 생명과 재산을 지키는 실효성 있는 충남형 모델을 완성해 가겠다&rdquo;고 강조했다. 한편, 연구모임은 오는 12월까지 현장 방문과 전문가 세미나, 관계기관 간담회 등을 추진해 현장의 의견을 수렴할 예정이다. 이",
       "bodyKo": "충남도의회 화재예방 AI 연구모임서 논의&lsquo;발화 전 오프가스 감지&rsquo; 등 첨단기술 검토충남도의회가 인공지능(AI) 등 첨단기술을 활용해 화재 위험을 조기에 감지하고 신속한 초기 대응을 지원하는 &lsquo;충남형 AI 스마트 화재예방시스템&rsquo; 구축 방안을 지속해서 모색하고 있다. 도의회 &lsquo;충남 화재예방을 위한 AI 시스템 활용 방안 연구모임&rsquo;이 23일 천안동남소방서 대회의실에서 제2차 회의를 열고, AI 기반 화재예방 기술의 활용 방안과 시설별 적용 모델을 논의했다. 이날 발표를 맡은 김창국 ㈔한국AI재난예방기술협회 자문위원은 기존 열화상 카메라의 감지 한계를 설명하고, AI 영상분석 카메라(ME100 등)를 활용한 화재 징후 감지 기술을 소개했다. 김 자문위원은 &ldquo;AI 영상분석 카메라는 발화 전 단계에서 발생하는 유독성 가스인 오프가스와 불꽃을 30초 이내에 감지할 수 있다&rdquo;며 조기 감지 기술의 원리와 장점을 설명했다.이어 참석자들은 최근 위험성이 대두되는 ▲전기차 충전구역 ▲건설&middot;산업현장 ▲기전실(기계&middot;전기실) 등 3대 취약 분야를 중심으로 시설별 특성을 고려한 AI 기반 예방&middot;대응 모델을 검토했다. 특히 센서를 통해 화재 징후를 조기에 포착하고 원격 제어 소화장치 등을 활용해 신속한 초기 대응으로 연계하는 방안에 대해 다양한 의견을 교환했다.정근수 의원(천안10&middot;더불어민주당)은 &ldquo;전기차 화재와 산업현장 재난은 위험을 조기에 발견하고 신속하게 대응하는 것이 피해를 최소화하는 핵심&rdquo;이라며 &ldquo;기존 사후 진압 중심에서 벗어나 AI와 IoT 기반의 선제적 예방과 원격 초동 대응체계를 다각도로 살펴 도민의 생명과 재산을 지키는 실효성 있는 충남형 모델을 완성해 가겠다&rdquo;고 강조했다. 한편, 연구모임은 오는 12월까지 현장 방문과 전문가 세미나, 관계기관 간담회 등을 추진해 현장의 의견을 수렴할 예정이다. 이",
       "tried": true,
-      "count": 6,
+      "count": 8,
       "sources": [
+        "전국매일신문",
+        "금강일보",
         "아산뉴스",
-        "쿠키뉴스",
         "뉴스케이",
-        "뉴스아이이에스",
-        "아산데일리",
-        "충청시사신문"
+        "쿠키뉴스",
+        "뉴스아이이에스"
       ],
       "related": [
         {
+          "titleKo": "충남도의회 ‘전기차·산업현장’ AI 화재감지 모델 논의",
+          "source": "전국매일신문",
+          "link": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1304781"
+        },
+        {
+          "titleKo": "충남도의회, ‘전기차·산업현장’ AI 화재감지 모델 논의",
+          "source": "금강일보",
+          "link": "https://www.ggilbo.com/news/articleView.html?idxno=1188845"
+        },
+        {
           "titleKo": "\"발화 전 30초 내 감지\" 충남도의회, AI로 전기차·산업현장 화재 잡는다",
           "source": "아산뉴스",
-          "link": "http://www.asannews.co.kr/sub_read.html?uid=65854&section=sc2&section2="
+          "link": "http://m.asannews.co.kr/a.html?uid=65854&section=sc2"
         },
         {
           "titleKo": "충남도의회, ‘전기차‧산업현장’ AI 화재감지 모델 논의",
@@ -36,16 +109,6 @@
           "titleKo": "충남도의회, AI로 화재 사전 감지…전기차·산업현장 예방모델 모색",
           "source": "뉴스아이이에스",
           "link": "http://www.newsiesports.com/news/articleView.html?idxno=47087"
-        },
-        {
-          "titleKo": "충남도의회, 전기차·산업현장 화재예방 AI 활용 논의…“충남형 스마트 대응체계 모색”",
-          "source": "아산데일리",
-          "link": "https://asandaily.kr/View.aspx?No=4276837"
-        },
-        {
-          "titleKo": "충남도의회, ‘AI 스마트 화재예방시스템’ 시범사업 구상… 전기차·산업현장 우선 검토",
-          "source": "충청시사신문",
-          "link": "https://www.csnnews.co.kr/news/articleView.html?idxno=33333"
         }
       ],
       "tag": "전기·배터리"
@@ -61,43 +124,37 @@
       "body": "소방관 1명이 숨지고 7명이 다친 부천시 오정구 공장 화재 당시 현장에 인화물질이 있을 것으로 추정된다는 보고에도 현장 지휘부가 공격적인 진압 방침을 유지한 것으로 확인됐다. 23일 윤건영 더불어민주당 의원실이 확보한\n23일 윤건영 더불어민주당 의원실이 확보한 '부천시 오정구 공장 화재 무전 녹취록'에 따르면, 화재 초기 지휘를 맡은 부천소방서 소속 간부는 신고 접수 6분 만인 지난 16일 오전 8시 44분쯤 \"건물 3∼4층에서 연기 발생. 공격 전술로 현장에 임하겠다\"고 말했다. 상황실은 발화 층이 3층이라고 알렸다.\n오전 8시 47분쯤 현장 대원은 \"3층 작업자는 모두 대피한 것으로 확인됐다\"고 보고했다. 1분 뒤에는 \"3층은 도장공장인데 내부에 인화물질이 있는 것으로 추정된다\"고 알렸다.\n그러나 현장 지휘부는 오전 8시 52분쯤 \"공격 전략으로 화재 진압에 임하겠다\"고 밝혔다. 이어 문이 열리지 않은 4층과 옥상 출입문을 개방하라고 지시했다.\n녹취록에는 대응 1단계 발령 이후 대원들에게 철수를 지시하는 별도의 무전은 확인되지 않았다.\n이후 오전 9시 9분쯤 대원 1명이 고립됐다는 보고가 올라왔다. 현장 지휘부가 공격 진압 방침을 밝힌 지 17분 만이다. 소방당국은 대응 2단계로 격상하고 구조에 나섰다.\n오전 9시 12분쯤에는 고립자 2명 중 1명을 구조했다는 무전이 전달됐다. 오전 9시 35분쯤 나머지 1명인 고(故) 김진석(44) 소방위가 발견됐다.\n김 소방위는 심정지 상태로 병원에 이송됐으나 이튿날 숨졌다. 당초 고립자가 1명이라는 보고가 올라온 경위는 확인되지 않았다.\n앞서 민주노총 산하 전국공무원노동조합 소방본부와 한국노총 소속 한국소방공무원노동조합은 이번 사고와 관련해 현장 진압 과정에서 무리한 지시가 있었는지 등 진상규명을 촉구했다.",
       "bodyKo": "소방관 1명이 숨지고 7명이 다친 부천시 오정구 공장 화재 당시 현장에 인화물질이 있을 것으로 추정된다는 보고에도 현장 지휘부가 공격적인 진압 방침을 유지한 것으로 확인됐다. 23일 윤건영 더불어민주당 의원실이 확보한\n23일 윤건영 더불어민주당 의원실이 확보한 '부천시 오정구 공장 화재 무전 녹취록'에 따르면, 화재 초기 지휘를 맡은 부천소방서 소속 간부는 신고 접수 6분 만인 지난 16일 오전 8시 44분쯤 \"건물 3∼4층에서 연기 발생. 공격 전술로 현장에 임하겠다\"고 말했다. 상황실은 발화 층이 3층이라고 알렸다.\n오전 8시 47분쯤 현장 대원은 \"3층 작업자는 모두 대피한 것으로 확인됐다\"고 보고했다. 1분 뒤에는 \"3층은 도장공장인데 내부에 인화물질이 있는 것으로 추정된다\"고 알렸다.\n그러나 현장 지휘부는 오전 8시 52분쯤 \"공격 전략으로 화재 진압에 임하겠다\"고 밝혔다. 이어 문이 열리지 않은 4층과 옥상 출입문을 개방하라고 지시했다.\n녹취록에는 대응 1단계 발령 이후 대원들에게 철수를 지시하는 별도의 무전은 확인되지 않았다.\n이후 오전 9시 9분쯤 대원 1명이 고립됐다는 보고가 올라왔다. 현장 지휘부가 공격 진압 방침을 밝힌 지 17분 만이다. 소방당국은 대응 2단계로 격상하고 구조에 나섰다.\n오전 9시 12분쯤에는 고립자 2명 중 1명을 구조했다는 무전이 전달됐다. 오전 9시 35분쯤 나머지 1명인 고(故) 김진석(44) 소방위가 발견됐다.\n김 소방위는 심정지 상태로 병원에 이송됐으나 이튿날 숨졌다. 당초 고립자가 1명이라는 보고가 올라온 경위는 확인되지 않았다.\n앞서 민주노총 산하 전국공무원노동조합 소방본부와 한국노총 소속 한국소방공무원노동조합은 이번 사고와 관련해 현장 진압 과정에서 무리한 지시가 있었는지 등 진상규명을 촉구했다.",
       "tried": true,
-      "count": 14,
+      "count": 5,
       "sources": [
-        "جريدة القدس",
-        "قناة الغد",
-        "factjo.com",
-        "حرية سقفها السماء",
-        "صحيفة السوسنة الأردنية",
-        "경기신문"
+        "경기신문",
+        "نيو ترك بوست",
+        "تركيا عاجل",
+        "한국재난안전뉴스",
+        "재경일보"
       ],
       "related": [
         {
-          "titleKo": "미국 아이오와 주에서 세계에서 가장 큰 귀리 밀링 공장에서 큰 화재가 발생했습니다.",
-          "source": "جريدة القدس",
-          "link": "https://alquds.com/ar/posts/264915-fire-breaks-out-quaker-oats-factory-iowa"
+          "titleKo": "마니사 배터리 공장 화재 진압, 인명피해 없어",
+          "source": "نيو ترك بوست",
+          "link": "https://newturkpost.com/news/130433-%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A7%D9%86%D8%AF%D9%84%D8%B9-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%B5%D9%86%D8%B9-%D9%84%D9%84%D8%A8%D8%B7%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D8%A7%D9%86%D9%8A%D8%B3%D8%A7-%D8%AF%D9%88%D9%86-%D9%88%D9%82%D9%88%D8%B9-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA"
         },
         {
-          "titleKo": "세계 최대의 오트밀 공장에서 화재 발생",
-          "source": "قناة الغد",
-          "link": "https://www.alghad.tv/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%BA%D8%AF/news/%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%A3%D9%83%D8%A8%D8%B1-%D9%85%D8%B5%D9%86%D8%B9-%D8%B4%D9%88%D9%81%D8%A7%D9%86-%D8%A8%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85"
+          "titleKo": "터키 마니사 배터리 공장 산성 저장탱크 근처 화재로 근로자 대피",
+          "source": "تركيا عاجل",
+          "link": "https://turkey-breaking.com/News/2026/10/23/%D8%B9%D8%A7%D8%AC%D9%84-%D8%AD%D8%B1%D9%8A%D9%82-%D9%82%D8%B1%D8%A8-%D8%B5%D9%87%D8%A7%D8%B1%D9%8A%D8%AC-%D8%A7%D9%84%D8%A3%D8%AD%D9%85%D8%A7%D8%B6-%D9%8A%D8%AE%D9%84%D9%8A-%D8%B9%D9%85%D8%A7%D9%84/"
         },
         {
-          "titleKo": "알하산 공업도시 공장 화재",
-          "source": "factjo.com",
-          "link": "https://factjo.com/news/151343"
+          "titleKo": "[배터리의 역습] ⑥전기를 저장하는 공장이 불탄다…ESS 화재의 경고",
+          "source": "한국재난안전뉴스",
+          "link": "https://www.kdsn.co.kr/news/article.html?no=49650"
         },
         {
-          "titleKo": "동영상: 알하산 산업 도시의 공장에서 화재 | 요르단 투데이 | 사라야 통신사 - 하늘의 자유 천장",
-          "source": "حرية سقفها السماء",
-          "link": "https://www.sarayanews.com/article/1116035/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%B5%D9%86%D8%B9-%D9%81%D9%8A-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AD%D8%B3%D9%86-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9"
-        },
-        {
-          "titleKo": "Al-Hassan Industrial City의 공장에서 화재 발생",
-          "source": "صحيفة السوسنة الأردنية",
-          "link": "https://www.assawsana.com/article/736616"
+          "titleKo": "\"도장공장에 인화물질\" 보고 1분 뒤.. 공격 진압...소방관 순직 참사에도 여전한 화재 위험… : 사회",
+          "source": "재경일보",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAwZlZmVXRqeF9oVE0xX0wwNzdlSXQ4VjVTNlBFd3BZOHRmNU92VWVJNUlvNzlReFlWTGt1MDlXaXZmLXJvUkkzSVlxcw?oc=5"
         }
       ],
-      "tag": "공장·플랜트"
+      "tag": "전기·배터리"
     },
     {
       "title": "홍콩발 제주행 항공기 화재, 승객 1명 부상…보조배터리 발열 때문",
@@ -115,37 +172,6 @@
         "동행미디어 시대"
       ],
       "related": [],
-      "tag": "전기·배터리"
-    },
-    {
-      "title": "[배터리의 역습] ⑥전기를 저장하는 공장이 불탄다…ESS 화재의 경고",
-      "source": "한국재난안전뉴스",
-      "link": "https://www.kdsn.co.kr/news/article.html?no=49650",
-      "date": "2026-10-25T00:50:04.000Z",
-      "lang": "ko",
-      "titleKo": "[배터리의 역습] ⑥전기를 저장하는 공장이 불탄다…ESS 화재의 경고",
-      "url": "https://www.kdsn.co.kr/news/article.html?no=49650",
-      "body": "한국재난안전뉴스 박종열 기자 | 태양광과 풍력으로 만든 전기를 저장했다가 필요할 때 꺼내 쓰는 에너지저장장치(ESS). 재생에너지 확대와 전력 공급 안정화에 꼭 필요한 설비지만, 배터리가 대량으로 모여 있는 만큼 화재가 발생하면 피해가 커질 수 있다. ESS 화재는 새로운 문제가 아니다. 국내에서는 2017년 이후 배터리 화재가 잇따르면서 산업계와 정부가\n2025년 6월 16일에는 경북 포항의 한 ESS 전기실에서 화재가 발생했다. 이 사고를 계기로 강원특별자치도소방본부는 도내 전지 제조공장과 ESS 시설을 대상으로 긴급 안전점검에 나섰다. ESS가 단순한 전력 설비를 넘어 화재 예방과 대응을 함께 고민해야 할 고위험 시설임을 보여준 사례다.\nESS는 배터리와 전력변환장치, 제어시스템 등을 결합한 설비다. 태양광 발전으로 낮에 생산한 전기를 저장했다가 밤에 사용하거나, 전력 수요가 급증할 때 저장된 전기를 공급한다. 전력망의 안정성을 유지하는 데도 활용된다.\n문제는 이 시설에 대용량 배터리가 밀집해 있다는 점이다. 배터리 셀 하나에서 이상 발열이 발생하면 주변 셀로 열이 전달되고, 연쇄적인 열폭주로 번질 수 있다. 배터리가 여러 모듈과 랙으로 연결된 ESS에서는 화재가 확산될 가능성을 고려해야 한다.\n산업통상자원부가 2019년 발표한 ESS 화재사고 조사 결과는 당시 사고 23건 가운데 14건이 충전을 마치고 대기하던 중 발생했다고 밝혔다. 충전이 끝났다고 해서 안전이 보장되는 것은 아니라는 의미다.\n조사위원회는 전기적 충격에 대한 보호시스템 미흡, 운영환경 관리 부족, 설치 부주의, 통합제어·보호체계 미흡 등을 주요 원인으로 제시했다. 일부 배터리 셀에서 제조상 결함도 발견됐지만, 이를 모사한 실증시험에서 화재가 재현되지는 않았다. 조사 결과는 ESS 화재를 배터리 자체의 문제 하나로만 설명하기 어렵다는 점을 보여줬다.",
-      "bodyKo": "한국재난안전뉴스 박종열 기자 | 태양광과 풍력으로 만든 전기를 저장했다가 필요할 때 꺼내 쓰는 에너지저장장치(ESS). 재생에너지 확대와 전력 공급 안정화에 꼭 필요한 설비지만, 배터리가 대량으로 모여 있는 만큼 화재가 발생하면 피해가 커질 수 있다. ESS 화재는 새로운 문제가 아니다. 국내에서는 2017년 이후 배터리 화재가 잇따르면서 산업계와 정부가\n2025년 6월 16일에는 경북 포항의 한 ESS 전기실에서 화재가 발생했다. 이 사고를 계기로 강원특별자치도소방본부는 도내 전지 제조공장과 ESS 시설을 대상으로 긴급 안전점검에 나섰다. ESS가 단순한 전력 설비를 넘어 화재 예방과 대응을 함께 고민해야 할 고위험 시설임을 보여준 사례다.\nESS는 배터리와 전력변환장치, 제어시스템 등을 결합한 설비다. 태양광 발전으로 낮에 생산한 전기를 저장했다가 밤에 사용하거나, 전력 수요가 급증할 때 저장된 전기를 공급한다. 전력망의 안정성을 유지하는 데도 활용된다.\n문제는 이 시설에 대용량 배터리가 밀집해 있다는 점이다. 배터리 셀 하나에서 이상 발열이 발생하면 주변 셀로 열이 전달되고, 연쇄적인 열폭주로 번질 수 있다. 배터리가 여러 모듈과 랙으로 연결된 ESS에서는 화재가 확산될 가능성을 고려해야 한다.\n산업통상자원부가 2019년 발표한 ESS 화재사고 조사 결과는 당시 사고 23건 가운데 14건이 충전을 마치고 대기하던 중 발생했다고 밝혔다. 충전이 끝났다고 해서 안전이 보장되는 것은 아니라는 의미다.\n조사위원회는 전기적 충격에 대한 보호시스템 미흡, 운영환경 관리 부족, 설치 부주의, 통합제어·보호체계 미흡 등을 주요 원인으로 제시했다. 일부 배터리 셀에서 제조상 결함도 발견됐지만, 이를 모사한 실증시험에서 화재가 재현되지는 않았다. 조사 결과는 ESS 화재를 배터리 자체의 문제 하나로만 설명하기 어렵다는 점을 보여줬다.",
-      "tried": true,
-      "count": 3,
-      "sources": [
-        "نيو ترك بوست",
-        "تركيا عاجل",
-        "한국재난안전뉴스"
-      ],
-      "related": [
-        {
-          "titleKo": "부상 없이 마니사의 배터리 공장에서 화재 통제하기",
-          "source": "نيو ترك بوست",
-          "link": "https://newturkpost.com/news/130433-%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A7%D9%86%D8%AF%D9%84%D8%B9-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%B5%D9%86%D8%B9-%D9%84%D9%84%D8%A8%D8%B7%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D8%A7%D9%86%D9%8A%D8%B3%D8%A7-%D8%AF%D9%88%D9%86-%D9%88%D9%82%D9%88%D8%B9-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA"
-        },
-        {
-          "titleKo": "산성 탱크 근처의 화재는 터키 마니사의 배터리 공장 근로자를 대피시킵니다.",
-          "source": "تركيا عاجل",
-          "link": "https://turkey-breaking.com/News/2026/10/23/%D8%B9%D8%A7%D8%AC%D9%84-%D8%AD%D8%B1%D9%8A%D9%82-%D9%82%D8%B1%D8%A8-%D8%B5%D9%87%D8%A7%D8%B1%D9%8A%D8%AC-%D8%A7%D9%84%D8%A3%D8%AD%D9%85%D8%A7%D8%B6-%D9%8A%D8%AE%D9%84%D9%8A-%D8%B9%D9%85%D8%A7%D9%84/"
-        }
-      ],
       "tag": "전기·배터리"
     },
     {
@@ -177,19 +203,12 @@
       "body": "[서울=뉴시스] 조성우 기자 = 20일 서울 강남구 역삼동의 한 빌딩에서 화재가 발생해 소방대원들이 현장 수습을 하고 있다. 2026.10.20. xconfind@newsis.com",
       "bodyKo": "[서울=뉴시스] 조성우 기자 = 20일 서울 강남구 역삼동의 한 빌딩에서 화재가 발생해 소방대원들이 현장 수습을 하고 있다. 2026.10.20. xconfind@newsis.com",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "뉴시스",
-        "안전정보"
+        "뉴시스"
       ],
-      "related": [
-        {
-          "titleKo": "“대형 유통시설 화재, 골든타임은 초기 소화”… 동래소방서, 롯데백화점 현장 지도",
-          "source": "안전정보",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBabUczdXpsaW1abTg1VHNrN3VJVW5fTmdsYnc1OEM4TENJU0hSVndCQ1hPUVBpNHBncXVicWxwdUlJeWsxOGx5ZFJRVGw2eHROcVcyaWVKRW9SeU1oazRmSXZkdy1QUGI3?oc=5"
-        }
-      ],
-      "tag": "시장·상가"
+      "related": [],
+      "tag": "기타"
     },
     {
       "title": "حريق ضخم يلتهم مبنى عش النسر التاريخي في بافاريا وتوقيف مشتبه به",
@@ -303,24 +322,18 @@
       "title": "[2026 KSFPE EXPO] (주)리 모빌리티, 폐배터리 화재 대응 위한 ‘종합 안전 수거함",
       "source": "소방방재신문",
       "link": "https://www.fpn119.co.kr/258350",
-      "date": "2026-10-23T09:27:00.000Z",
+      "date": "2026-10-23T09:26:00.000Z",
       "lang": "ko",
       "titleKo": "[2026 KSFPE EXPO] (주)리 모빌리티, 폐배터리 화재 대응 위한 ‘종합 안전 수거함",
       "url": "https://www.fpn119.co.kr/258350",
       "body": "[FPN 신희섭 기자] = (주)리 모빌리티(대표 이재환)는 리튬이온 배터리 화재 대응 솔루션을 개발하는 딥테크 스타트업이다, 이번 전시회에선 폐배터리의\n리 모빌리티에 따르면 이 제품은 폐배터리 보관 과정에서 발생할 수 있는 화재 위험을 줄이기 위해 개발됐다. 보관 중이거나 수거된 배터리에서 화재가 발생하면 소화액이 자동 방사되도록 설계된 게 특징이다.\n사용 목적에 따라 ‘안전 수거함’과 ‘통합 수거함’ 등 두 가지 형태로 구성된다. 안전 수거함은 수명이 다한 보조배터리 전용 제품이다. 비교적 작은 크기로 제작돼 공간 활용도가 높고 이동이 편리하다. 화재 안전성과 스마트 관리 기능을 갖췄다.\n통합 수거함은 노트북과 태블릿, 스마트폰 등 다양한 전자기기의 폐배터리를 수거할 수 있도록 제작됐다. 대용량 크기의 폐배터리 수거가 가능하며 스마트 관리 기능을 통해 효율적인 운영을 지원한다.\n리 모빌리티 관계자는 “산업현장이나 아파트 공용공간, 주민센터 관리소 등 폐배터리 수거가 필요한 장소에 자유롭게 설치할 수 있는 제품”이라며 “수거 과정에서 발생할 수 있는 안전사고를 예방하고 체계적인 관리 환경을 조성하는 데 중점을 두고 개발했다”고 말했다.",
       "bodyKo": "[FPN 신희섭 기자] = (주)리 모빌리티(대표 이재환)는 리튬이온 배터리 화재 대응 솔루션을 개발하는 딥테크 스타트업이다, 이번 전시회에선 폐배터리의\n리 모빌리티에 따르면 이 제품은 폐배터리 보관 과정에서 발생할 수 있는 화재 위험을 줄이기 위해 개발됐다. 보관 중이거나 수거된 배터리에서 화재가 발생하면 소화액이 자동 방사되도록 설계된 게 특징이다.\n사용 목적에 따라 ‘안전 수거함’과 ‘통합 수거함’ 등 두 가지 형태로 구성된다. 안전 수거함은 수명이 다한 보조배터리 전용 제품이다. 비교적 작은 크기로 제작돼 공간 활용도가 높고 이동이 편리하다. 화재 안전성과 스마트 관리 기능을 갖췄다.\n통합 수거함은 노트북과 태블릿, 스마트폰 등 다양한 전자기기의 폐배터리를 수거할 수 있도록 제작됐다. 대용량 크기의 폐배터리 수거가 가능하며 스마트 관리 기능을 통해 효율적인 운영을 지원한다.\n리 모빌리티 관계자는 “산업현장이나 아파트 공용공간, 주민센터 관리소 등 폐배터리 수거가 필요한 장소에 자유롭게 설치할 수 있는 제품”이라며 “수거 과정에서 발생할 수 있는 안전사고를 예방하고 체계적인 관리 환경을 조성하는 데 중점을 두고 개발했다”고 말했다.",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
         "소방방재신문"
       ],
-      "related": [
-        {
-          "titleKo": "[2026 KSFPE EXPO] “충전 중 배터리 화재 걱정 없다”… (주)메스코리아, 무전원 리튬이온 배터리 충전 보관함",
-          "source": "소방방재신문",
-          "link": "http://www.fpn119.co.kr/258359"
-        }
-      ],
+      "related": [],
       "tag": "전기·배터리"
     },
     {
@@ -396,31 +409,50 @@
       "tag": "기타"
     },
     {
-      "title": "تسريع الاستجابة لإنذار الحرائق والحوادث بمستودعات الشارقة",
-      "source": "البيان",
-      "link": "https://www.albayan.ae/news/uae/1559858",
+      "title": "불난 지 70일… 평택시 청북읍 토진리 위험물 창고 '재축' 신청, 화재 원인은 아직",
+      "source": "투데이경제",
+      "link": "https://www.tookyung.com/news/articleView.html?idxno=748931",
       "date": "2026-10-23T04:03:00.000Z",
-      "lang": "ar",
-      "titleKo": "샤르자 창고의 화재 및 사고 경보에 대한 대응 가속화",
-      "url": "https://www.albayan.ae/news/uae/1559858",
-      "body": "يوسف الشامسي: توظيف التقنيات الحديثة في المنظومة لتعزيز مستويات الوقاية ورفع الجاهزية كشف اللواء يوسف عبيد حرمول الشام",
-      "bodyKo": "유세프 알 샴시 (Yousef Al Shamsi): 예방 수준을 높이고 준비도를 높이기 위해 시스템에 최신 기술을 적용하는 것 유세프 오베이드 하물 알 샴 (Yousef Obaid Harmoul Al Sham) 소장이 밝혔다.",
+      "lang": "ko",
+      "titleKo": "불난 지 70일… 평택시 청북읍 토진리 위험물 창고 '재축' 신청, 화재 원인은 아직",
+      "url": "https://www.tookyung.com/news/articleView.html?idxno=748931",
+      "body": "[투데이경제 이일수 기자] 지난 8월 대형 화재로 국가소방동원령까지 발령됐던 평택시 청북읍 토진리의 위험물 저장 물류센터가 불에 탄 건물을 다시 짓겠다며 건축 인",
+      "bodyKo": "[투데이경제 이일수 기자] 지난 8월 대형 화재로 국가소방동원령까지 발령됐던 평택시 청북읍 토진리의 위험물 저장 물류센터가 불에 탄 건물을 다시 짓겠다며 건축 인",
       "tried": true,
-      "count": 3,
+      "count": 7,
       "sources": [
         "Zawya",
-        "البيان"
+        "آشكاين",
+        "البيان",
+        "Vietnam.vn",
+        "www.alghad.tv",
+        "투데이경제"
       ],
       "related": [
         {
-          "titleKo": "Sanid, 스마트 모니터링 및 창고 화재에 대한 조기 대응에 대한 Aman의 미래 역량 검토",
+          "titleKo": "\"샌드\", 창고 화재 스마트 감시·조기 대응 시스템 \"아만\" 역량 공개",
           "source": "Zawya",
           "link": "https://news.google.com/rss/articles/CBMipgdBVV95cUxORFZGWTd2QVprWnN1RmUyQ2pPdHJBMXppejZDY2Z2NUhNLW5GZTRUaDlKWG9qNW1sTk81WkNkbzBlNXNzZ2tpQzRDdmUydF80ckpxNURtZk1heGJwMG9nNzRtUEdxT2V6aE9DSXczZHUtMFRqbkp3ZlJCWUdjMGEtcHZiNUNrbFZtQ215VF9iNVhoUUNoZW16TEVoTUt3MVpXQnBVMTViVURLX0xYWFEwcmhWek5zeXJNdHp6S19FM2xrWHBoZDA5WEo4UnAxdS01TThydXpvYjBudWJBbFI3dU9jLURWclhLQ3JKdEZIZGw5emRfSTBfd0UyY1hWWF83d3BxaG40blNDNElzR0E3RkQ1U3VJTHFMVWtBUTBDSWhnMXBzNGg5bnJyVjkzaVV2Q3R6b19DOGNtd01YYzdRZGtBNU5Tel9SeGVjQ1JyTF9Zd1dWTTNfTFhSUEtKb2dpbF9uM2JKNUtMUlJZOGF2RFduNHFkdi1qeHpJZ25PdkpTdkYzNXQwRjUzR2VyM3otQno3TjBER1k0Uzl2SW5RY3AtMXQ3VzNIbHh4TE01ZU5feDRQejU4TVBHV3VVZm5qMERGQXZpY0JteWM2eW5BeUdQd25IWE10Nk83cWJUZUlzbVNOY3Q4czRtQ291SW1PWGdQZGxGVFhfTE9MLVRKV3dSZktVSkc5bXBwNjVhNFcxMEw2ZGRqMTczbXNFZUZDemtUX21Lc3p1WGVmQThXcnlQWVNhUmEzNnB4aDA0V05nQnRVTTZxaFZJT3FUQ213Vi0wdDUxdEl1TDExM09vNzBoX3E2WDRlTmtSQ0RnRi1nZzkxR3hKc2hHV3lXdkV0UlgyTFhwZVRyMVBFWHF0dHFXbWtGblpGR0prMDJPemdUNVBaYWRabXh3TkVKdHZYNFRrMnY0R1c1dGdzajBqOFlBTzhmbVNuRmF5dnVFSFVoTjc1amUyWUtZNG8zN2VOODBuR3pPYWNMbG45WmVuUmNURzNVMjg1Vk0zVm1DcWpzcF9qY3pvNHpyWmcwZ2NyUlBneW93ZjBEM05Jb01lNVZCNlE5a3lBdzgycVJyX2ZvNFlSal85bnFtMGFtLXFJQUxLWjNSaHpzZHNJVVBwd0tCaThIT3l0ekZCSExHcnJTVGlkNFRIeS1hX0NialF4VEdXVllkOEJKRFlFLURWdVFoRUhDT3k0M3VXOEJDdVVXRFV0OVhqQVFneXRZM0NvcTdJdHZR?oc=5"
         },
         {
-          "titleKo": "샤르자 민방위국 국장: «아만» 은 창고 화재에 대한 신속한 대응을 강화했습니다.",
+          "titleKo": "마라케시 창고 화재",
+          "source": "آشكاين",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1HQzFYeDRhbFVLUmZvc3ZoRTAxM09wdkUtMy04alBGNXc3N1dpTGVOalVVQUpDQ3FFVFZtZmVyaW4wRDN2aWM0ZlhFOE9ndw?oc=5"
+        },
+        {
+          "titleKo": "샤르자 창고의 화재 및 사고 경보에 대한 대응 가속화",
+          "source": "البيان",
+          "link": "https://www.albayan.ae/news/uae/1559858"
+        },
+        {
+          "titleKo": "샤르자 민방위청 청장: '아만'이 창고 화재 신속 대응 강화했다",
           "source": "البيان",
           "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9MNTJpOEpIR2RSQ3RZblQySDI1cVNMZkdiUjVQcHpPdmhNaVRyTFZ1UzE0MXRYb3RaenFNN0lrdWp3Sy1MNkJEWWFmUdIBUEFVX3lxTE5SeWdWTG95SGcxejlfT0ZWUkVMVEhVMU1LNk94TFlzVl9uckZLUzUwV2pjTENwR01CTzVMQ3dJa0hlcGRhYTk0emVWV2l2X1dF?oc=5"
+        },
+        {
+          "titleKo": "달랏의 한 가구 창고에서 큰 화재가 발생했고, 두꺼운 연기가 공중으로 쏟아졌습니다.",
+          "source": "Vietnam.vn",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93UmZnZTFDTGFoM1BKeWFpX0hybl9VM09KSDFYbEQyUmlycTlROF9TT1ZTd094Y01Kc0xpakFKUDlaQnNGS1VSTHdsemx3aWYyUm50dEtGZF9tdHM3VTJDeVM0RFA2N0JvOV90QXEzcExQSDJaSlRUUHNJYl9KZw?oc=5"
         }
       ],
       "tag": "숙소·창고"
@@ -436,23 +468,11 @@
       "body": "فيديو | الدفاع المدني إخلاء عوائل وإخماد حريق بمجمع سكني متعدد الطوابق في منطقة كمب سارة بالكرادة...",
       "bodyKo": "비디오 | 민방위대는 카라다 캠프 사라 지역의 다층 주거단지에서 가족들을 대피시키고 화재를 진압했습니다.",
       "tried": true,
-      "count": 3,
+      "count": 1,
       "sources": [
-        "هذا اليوم",
-        "الترا العراق"
+        "هذا اليوم"
       ],
-      "related": [
-        {
-          "titleKo": "민방위: \"캠프 사라\" 지역의 복층 주상복합 건물에서 가족 대피 및 화재 발생",
-          "source": "الترا العراق",
-          "link": "https://news.google.com/rss/articles/CBMi9AVBVV95cUxOZTBTUFVxWEFhd0FVVFVlM2prTXRhdTdrOEVaNlljV1ZQbS01MkItZWtHSFJfeWRUVlBmSUhuZ2NzOWN6dFNxeUhNVmViWl9QMlB6ZE03ZW1Xemxfam9TQlNEand2VHQ3RER0YVdINTFGQ0FHc1NNbXVRS0dWTjkydmRPWG16TTQ5eGJLODlWNUVKQ3BvVEhnUnkyZzZpbVB4Z1NyOVJDMFh5U0ZGQ1FOYkZYTzJaTm5QUW5sSjlMN1I5UmZLc3NWZWRUOFNNVEVlM1N3Q0pXVVNRa2VZQm82bGZRTkR4Mmc4TVl1VVo2RFREMWdOTm84d1EzdHpBQVBrVktfMHUxWGZDVzNNSjNvZ3RhcTg0aHBsZm5xeE05N200VUVyRHZiY2I3YkNwcC1uT1VfNGtsSVBfeFFlVy1lZWU3Rm9OTnRnSy14RmxhVE5ibkNqOGpUandTTERJamMwaUJtNXAyYXU5YkFUN2dRMmJ6V1M0eHZKcWRrRlpFSjhxNmpmd2lpRHlmU1Utb0l4bTJWN25WWVJ5aFBubnB4a3ZGekY5c0lGdkxQZVB0MUp5QmlGb2NOYjZVaVNLdnNSanRWcl9tZGdDM2NOaW5YYUVON3FOaEcxUFlBS2hBSDBrUUp5aWhTanZoanJtaWs4aVhhdFUxa1diaFlScUJaTS1raHhHaFJKdG5LcjluNkpzSnhKam1xZkw4azlFXzVyazA2OEVvMzVBODRsSUtsT2VTMUczd1VjVXpmdGlheHVhZHhpV0pNR0E3SThJRlFZMGZjUWZFUzNuaGVqVW9nS2hUWnJDRm5zZTQ0Q3g2dUtxRl9qT29hX05nWjU5RFBQZnA4VXpETjRyUWxwNmNQLWFOODFmX1F4b0stU2RybExlSm9KY054azZGYUdrZXl5b19oZk01cnE4N3g1Mks0ZnE4em9tV0JKdmNGLUttTTQwSnYyVElfbngyQkZRS2dxLVY3TFNpaFMteG5yNUpEMDdIVWM?oc=5"
-        },
-        {
-          "titleKo": "카라다의 복층 주상복합 건물에서 가족 대피 및 화재 진압",
-          "source": "هذا اليوم",
-          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBOVk8wVXV3RWRJcHlxQVhYRlJ4VGlaRTRYUWxXNUp6SE5xaF9VSHV1QlNINmZkZFlrd1lDSTR1T2pxNk0wczlyM2x30gFKQVVfeXFMUE5WTzBVdXdFZElweXFBWFhGUnhUaVpFNFhRbFc1SnpITnFoX1VIdXVCU0g2ZmRkWWt3WUNJNHVPanE2TTBzOXIzbHc?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "숙소·창고"
     },
     {
@@ -491,37 +511,39 @@
       "title": "إخلاء عوائل من مجمع سكني بسبب حريق في الكرادة",
       "source": "مانكيش نت",
       "link": "https://mangish.net/%D8%A5%D8%AE%D9%84%D8%A7%D8%A1-%D8%B9%D9%88%D8%A7%D8%A6%D9%84-%D9%85%D9%86-%D9%85%D8%AC%D9%85%D8%B9-%D8%B3%D9%83%D9%86%D9%8A-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%A7%D9%84/",
-      "date": "2026-10-22T18:52:38.000Z",
+      "date": "2026-10-22T18:37:45.000Z",
       "lang": "ar",
       "titleKo": "카라다 화재로 인한 주상복합 건물 가족 대피",
       "url": "https://mangish.net/%D8%A5%D8%AE%D9%84%D8%A7%D8%A1-%D8%B9%D9%88%D8%A7%D8%A6%D9%84-%D9%85%D9%86-%D9%85%D8%AC%D9%85%D8%B9-%D8%B3%D9%83%D9%86%D9%8A-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%A7%D9%84/",
       "body": "أعلنت مديرية الدفاع المدني، اليوم الخميس، عن نجاحها في إخلاء العوائل وإخماد حريق نشب في مجمع سكني متعدد الطوابق يقع في منطقة \"كمب سارة\"\nوجاء في بيانٍ للمديرية أن جهود فرق الدفاع المدني أسفرت عن إخلاء السكان من المجمع السكني، حيث تم التعامل مع الحريق بشكل سريع وفعال مما ساعد في السيطرة عليه. الحادث وقع وسط العاصمة، مما دفع فرق الإطفاء إلى التحرك السريع لمواجهة الوضع قبل أن يتفاقم.\nووفقًا للمعلومات المتوافرة، لم يُسجل حدوث أي إصابات بشرية جراء الحريق، إذ اقتصرت الأضرار على الجانب المادي فقط. وقد أُخذت جميع الاحتياطات اللازمة لضمان سلامة المواطنين من خلال إخلاء المبنى وإخماد النيران بشكل كامل.\nتجدر الإشارة إلى أن فرق الدفاع المدني دائماً ما تعمل على تعزيز جاهزيتها لمواجهة مثل هذه الحالات الطارئة، حيث تتلقى تكوينات دورية وتحديثات لمعدات الإطفاء اللازمة للتعامل مع الحرائق في الأماكن السكنية.\nهذا الحادث يسلط الضوء على أهمية الوعي بالسلامة والاحتياطات التي يجب اتخاذها في المجمعات السكنية، لضمان حماية السكان من المخاطر المحتملة التي قد تنجم عن الحرائق أو الكوارث الأخرى.",
       "bodyKo": "민방위 국장은 오늘 (목) \"캠프 사라\" 지역에 위치한 복층 주상복합 건물에서 발생한 가족 대피 및 화재 진압에 성공했다고 발표했습니다.\n국장의 성명서에서 민방위팀의 노력은 화재가 신속하고 효과적으로 처리됨에 따라 주거 단지에서 주민들이 대피하는 결과를 가져왔으며, 이는 화재를 통제하는 데 도움이 되었다고 밝혔다. 이 사건은 수도 중심부에서 발생하여 소방관들이 상황이 악화되기 전에 신속하게 대처하도록 촉구했습니다.\n이용 가능한 정보에 따르면, 화재로 인한 인명 피해는 물리적 측면에만 국한되었기 때문에 기록되지 않았습니다. 건물을 대피시키고 불을 완전히 끄는 등 시민의 안전을 보장하기 위해 필요한 모든 예방 조치를 취했습니다.\n민방위팀은 주거지에서 화재를 처리하는 데 필요한 소방 장비의 주기적인 구성과 업데이트를 받기 때문에 이러한 비상 사태에 직면할 준비를 강화하기 위해 항상 노력하고 있습니다.\n이 사건은 화재 또는 기타 재해로 인해 발생할 수 있는 잠재적 위험으로부터 주민을 보호하기 위해 주거용 시설에서 취해야 할 안전 의식과 예방 조치의 중요성을 강조합니다.",
       "tried": true,
-      "count": 4,
+      "count": 2,
       "sources": [
-        "وكالة انباء الاعلام العراقي",
         "مانكيش نت",
-        "شفقنا العراق",
-        "وكالة اليوم الإخبارية"
+        "البيان"
       ],
       "related": [
         {
-          "titleKo": "민방위: 바그다드 중부의 복층 주택 단지에서 가족 대피 및 화재 진압",
-          "source": "وكالة انباء الاعلام العراقي",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1JZC1hMEhVWkNlN2pubUljWVgwU0tRU1E1SFZxazN1WjVBS0FKY0xYamU2dXExX2prX09HcGlQUUtsWlQ4dFI2QjZiQWhtWGNlVGc?oc=5"
-        },
-        {
-          "titleKo": "민방위는 수도 바그다드 중심가에 있는 주상복합 건물의 화재 통제권을 발표했습니다.",
-          "source": "شفقنا العراق",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9fZ19oVXlxRlBqeWRQRHhMS2tfNVVhU2N0RGVDRFJZWFNCSkNudG1MNlE4ZkJPNkliRkJnMTNJeWlVRjUxZkVGQzlwMlI?oc=5"
-        },
-        {
-          "titleKo": "가족 대피 및 바그다드 중부 카라다 지역의 한 주상복합 건물 내부에서 발생한 화재 진압",
-          "source": "وكالة اليوم الإخبارية",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1URGhGUDhrVlhlMmluVkdiWXpENXVaNnVJajlfWXpQSnFYaDhONFM1ZnZvczVCd3pndjdTRUlOSFhnbkkxWXI5aDEzelo0djQ?oc=5"
+          "titleKo": "미시시피주 노인요양시설 대형 화재로 건물 대부분 파괴, 주민 대피",
+          "source": "البيان",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5yejZyeDJOSHNGLVN0bjM3d3V5NFVjdlpndE1BeXhiUndCYVNaalg4anBydU5SN3RhQ250SkRZaHNicHdSM3pSYmFDOW9BOFJJ0gFQQVVfeXFMTnJ6NnJ4Mk5Ic0YtU3RuMzd3dXk0VWN2Wmd0TUF5eGJSd0JhU1pqWDhqcHJ1TlI3dGFDbnRKRFloc2Jwd1IzelJiYUM5b0E4Ukk?oc=5"
         }
       ],
+      "tag": "숙소·창고"
+    },
+    {
+      "title": "الدفاع المدني يعلن السيطرة على حريق مجمع سكني وسط العاصمة بغداد",
+      "source": "شفقنا العراق",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9fZ19oVXlxRlBqeWRQRHhMS2tfNVVhU2N0RGVDRFJZWFNCSkNudG1MNlE4ZkJPNkliRkJnMTNJeWlVRjUxZkVGQzlwMlI?oc=5",
+      "date": "2026-10-22T18:28:33.000Z",
+      "lang": "ar",
+      "titleKo": "소방당국, 바그다드 중심부 주택단지 화재 진압 완료 발표",
+      "count": 1,
+      "sources": [
+        "شفقنا العراق"
+      ],
+      "related": [],
       "tag": "숙소·창고"
     },
     {
@@ -603,13 +625,12 @@
       "body": "[투데이에너지 장재진 기자] FITI시험연구원(원장 윤주경, FITI)이 산업 현장의 화재 사고를 예방하기 위해 ‘용접 방화포 불티관통 시험 서비스’를 본격적으로 시작한다고 22일 밝혔다.용접 방화포는 건설현장, 조선소, 제조공장 등에서 용접·용단 작업 중 발생하는 불꽃이나 불티가 사\n용접 방화포는 건설현장, 조선소, 제조공장 등에서 용접&middot;용단 작업 중 발생하는 불꽃이나 불티가 사방으로 튀는 것을 막아주는 안전 필수 제품이다.\n최근 고용노동부가 화기 작업 시 성능인증을 받은 용접 방화포 사용을 의무화하는 내용으로 &lsquo;산업안전보건기준에 관한 규칙&rsquo;을 개정함에 따라, 관련 시험 인프라에 대한 수요가 높아진 상태다.\nFITI에 따르면 개정된 규칙에 따라 용접 방화포는 소방청 고시 기준을 충족해야 하며, 주요 시험 항목으로는 ▲중량 측정 ▲재료 검사(석면) ▲불티관통 시험 ▲굴곡내구성 시험 등이 포함된다. FITI시험연구원은 기존의 굴곡내구성 시험에 이어 이번에 불티관통 시험 인프라와 표준 운영 체계까지 새롭게 도입했다. 이를 통해 관련 기업들은 제품 개발 단계에서 필요한 사전 시험평가부터 기준 적합성 검토, 성능 비교시험 등을 원스톱으로 지원받을 수 있게 됐다.\n현재 법적 전담 인증기관은 한국소방산업기술원(KFI) 한 곳뿐이지만, 이번 FITI시험연구원의 서비스 개시로 방화포 제조 및 수입 기업들의 시험 대기 시간이 크게 단축되고 제품 품질 향상에도 기여할 것으로 기대된다.\nFITI시험연구원은 지난 2021년 소방청으로부터 국내 최초 섬유(피복)류 방화복 소방장비인증(KFAC) 기관으로 지정된 바 있으며, 이후 방화장갑, 방화두건, 방화신발 등 소방용 개인보호장비(PPE) 전반으로 인증 품목을 확대해 온 방염&middot;소방 분야 전문 기관이다.",
       "bodyKo": "[투데이에너지 장재진 기자] FITI시험연구원(원장 윤주경, FITI)이 산업 현장의 화재 사고를 예방하기 위해 ‘용접 방화포 불티관통 시험 서비스’를 본격적으로 시작한다고 22일 밝혔다.용접 방화포는 건설현장, 조선소, 제조공장 등에서 용접·용단 작업 중 발생하는 불꽃이나 불티가 사\n용접 방화포는 건설현장, 조선소, 제조공장 등에서 용접&middot;용단 작업 중 발생하는 불꽃이나 불티가 사방으로 튀는 것을 막아주는 안전 필수 제품이다.\n최근 고용노동부가 화기 작업 시 성능인증을 받은 용접 방화포 사용을 의무화하는 내용으로 &lsquo;산업안전보건기준에 관한 규칙&rsquo;을 개정함에 따라, 관련 시험 인프라에 대한 수요가 높아진 상태다.\nFITI에 따르면 개정된 규칙에 따라 용접 방화포는 소방청 고시 기준을 충족해야 하며, 주요 시험 항목으로는 ▲중량 측정 ▲재료 검사(석면) ▲불티관통 시험 ▲굴곡내구성 시험 등이 포함된다. FITI시험연구원은 기존의 굴곡내구성 시험에 이어 이번에 불티관통 시험 인프라와 표준 운영 체계까지 새롭게 도입했다. 이를 통해 관련 기업들은 제품 개발 단계에서 필요한 사전 시험평가부터 기준 적합성 검토, 성능 비교시험 등을 원스톱으로 지원받을 수 있게 됐다.\n현재 법적 전담 인증기관은 한국소방산업기술원(KFI) 한 곳뿐이지만, 이번 FITI시험연구원의 서비스 개시로 방화포 제조 및 수입 기업들의 시험 대기 시간이 크게 단축되고 제품 품질 향상에도 기여할 것으로 기대된다.\nFITI시험연구원은 지난 2021년 소방청으로부터 국내 최초 섬유(피복)류 방화복 소방장비인증(KFAC) 기관으로 지정된 바 있으며, 이후 방화장갑, 방화두건, 방화신발 등 소방용 개인보호장비(PPE) 전반으로 인증 품목을 확대해 온 방염&middot;소방 분야 전문 기관이다.",
       "tried": true,
-      "count": 5,
+      "count": 4,
       "sources": [
         "한국섬유신문",
         "투데이에너지",
         "기계신문",
-        "에너지데일리",
-        "인사이트에너지뉴스"
+        "에너지데일리"
       ],
       "related": [
         {
@@ -626,11 +647,6 @@
           "titleKo": "FITI시험연구원, 용접 방화포 불티관통 시험 서비스 시작",
           "source": "에너지데일리",
           "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE45dGlINVJwWVI1NXYySi1tVUZwckg1SVd6eU4wVXAteHE0NzlISmVfdzdhVUxGQmdKVjlMSTcwcENnVGJSekNqcTRSR1ZrU0pSOENwVzMtWUtTaE1FQndvODk5R3c4endWNTFTRDdsejd1UQ?oc=5"
-        },
-        {
-          "titleKo": "FITI시험硏, 용접 방화포 불티관통 시험 서비스 개시",
-          "source": "인사이트에너지뉴스",
-          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14el9NVFRraTFaRXdOZlVOUXpvVlBfOVktOFpzUWhIMndYR1FCNkxnVlJHeEk4akZzMk5kMi1jUGhvbGtHdlEwWEVRdm0teXRFTGZrc3pELVBQcU41OWVPYXhhUGwtcFl2SjA00gFrQVVfeXFMTXh6X01UVGtpMVpFd05mVU5Rem9WUF85WS04WnNRaEgyd1hHUUI2TGdWUkd4SThqRnMyTmQyLWNQaG9sa0d2UTBYRVF2bS15dEVMZmtzekQtUFBxTjU5ZU9heGFQbC1wWXZKMDQ?oc=5"
         }
       ],
       "tag": "용접·불티"
@@ -682,18 +698,11 @@
       "body": "[부천=뉴시스] 김지현 기자 = 경기 부천시의 한 아파트에서 화재가 발생해 17분 만에 꺼졌다",
       "bodyKo": "[부천=뉴시스] 김지현 기자 = 경기 부천시의 한 아파트에서 화재가 발생해 17분 만에 꺼졌다",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "뉴시스",
-        "경기신문"
+        "뉴시스"
       ],
-      "related": [
-        {
-          "titleKo": "보조배터리 충전 중 ‘펑’ 소리 나더니 불꽃…부천 아파트 화재",
-          "source": "경기신문",
-          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Md1hJcHFUc21jSVpkV05fUksyVFZ1Y001WjBQTjBoa2ZwYmZjQ0hWSlcyUzNSWmlvN2FrbGZDS01YMTJ6WURVaFpzM1FBdjNrLUlleEJhNDI4blNtUmJrZzBn?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "전기·배터리"
     },
     {
@@ -833,20 +842,6 @@
       "tag": "기타"
     },
     {
-      "title": "اندلع حريق هائل في مستودع للأثاث في دا لات، وتصاعد دخان كثيف في الهواء.",
-      "source": "Vietnam.vn",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE93UmZnZTFDTGFoM1BKeWFpX0hybl9VM09KSDFYbEQyUmlycTlROF9TT1ZTd094Y01Kc0xpakFKUDlaQnNGS1VSTHdsemx3aWYyUm50dEtGZF9tdHM3VTJDeVM0RFA2N0JvOV90QXEzcExQSDJaSlRUUHNJYl9KZw?oc=5",
-      "date": "2026-10-20T14:12:49.000Z",
-      "lang": "ar",
-      "titleKo": "달랏의 한 가구 창고에서 큰 화재가 발생했고, 두꺼운 연기가 공중으로 쏟아졌습니다.",
-      "count": 1,
-      "sources": [
-        "Vietnam.vn"
-      ],
-      "related": [],
-      "tag": "숙소·창고"
-    },
-    {
       "title": "السيطرة على حريق في مبنى بأبو ظبي دون وقوع إصابات",
       "source": "www.alghad.tv",
       "link": "https://news.google.com/rss/articles/CBMi3AVBVV95cUxQMVpLTUlHQURfMm9QUEtsOU0xRWJZcHFxOXIwem5iUjVzakR6QXg4dUZlTzlvYmRraTRDcGxhdWhCZlRnZDJxYk1pUXBVRkhVQnk3UHByUjRaWHMxZzNfdVRWUDA5NFpsYUZUZjRyQ2VXSnlBN0ppYXRiNWdsNHhLSlpxMnpLUkdlXzNsMjM4RWxtREdhNFpYcS04VUp4cjdaam9kbnhaUDFDUFhlaGVJa1FvUHFCWkRPQlNRLTlBZ0pHSnJNWXRZb2VGNXExRWFxSlhBVWduLTlQamJvS0lWQnFTOUJvcjZ6ZWVFRzVsM2duaFE2S3FLREtUS0NaaW50eW54ZXFvQXp2MHNKRnphMFZQVjNwVW1rVWVXbUJ6ZlFwY3dUREwyZ3lpbHRsLUEzbHhYLURibGZQcDFxQzN2M25NdExhQTRtWHJxYnJJWTN6TWNfWURJZm9xWnhla0ZmRmZCREQyVXE2RnFMZkZDMFp1TzNNMXd5bmxwdERFcV9uT3N6enVKQUxqd2NsaTVDSFEwVzM5Q3pQendyR0FjWDRhYlpEeVpJaDZMTHcybmJZQ2ZHTmk3N0pTV3FFNTVHZ09RVVoxWlVDUkpaMDNLcVIyTE01LWtPdEhwY1VCRlJ1ZXE3RXJ4LS1UQU4zNFdoRlpTVG5aeUZFUGx3WUFwTXRJVHN5Q2RaWERXa0pvRkFkV2VLSl9kbVVyZE5aeWJYNVBWdVBWalItdUZyenZBcUt0RFlMcEF3d3o2YWxMMjIzYm9aN0ZIdGhEUWw5RV9HOVFfRzUzcHJ0LTZWdndyXzNvTThya2htYWVMWnJnd1I0aWhqVDlkR0N5M1c3LXRiRk84NDVfMmNTWDdzeGY3N1VqWmtDZGwzYUV6VTJLUnBnUFBic3M5Y3NoTlNwU2djZTJvRzdlN3BLcGNsMS1HWVlXdlFha0hYRFFPVjd6eC1YN1VXcmJRZXRPYmM?oc=5",
@@ -859,42 +854,6 @@
       ],
       "related": [],
       "tag": "고층·건물"
-    },
-    {
-      "title": "السيطرة على حريق محدود بمستودع لمواد البناء في دبي",
-      "source": "www.alghad.tv",
-      "link": "https://www.alghad.tv/%25D8%25A7%25D8%25AE%25D8%25A8%25D8%25A7%25D8%25B1-%25D8%25A7%25D9%2584%25D8%25BA%25D8%25AF/news/%25D8%25A7%25D9%2584%25D8%25B3%25D9%258A%25D8%25B7%25D8%25B1%25D8%25A9-%25D8%25B9%25D9%2584%25D9%2589-%25D8%25AD%25D8%25B1%25D9%258A%25D9%2582-%25D9%2585%25D8%25AD%25D8%25AF%25D9%2588%25D8%25AF-%25D8%25A8%25D9%2585%25D8%25B3%25D8%25AA%25D9%2588%25D8%25AF%25D8%25B9-%25D9%2584%25D9%2585%25D9%2588%25D8%25A7%25D8%25AF-%25D8%25A7%25D9%2584%25D8%25A8%25D9%2586%25D8%25A7%25D8%25A1-%25D9%2581%25D9%258A-%25D8%25AF%25D8%25A8%25D9%258A",
-      "date": "2026-10-20T12:57:00.000Z",
-      "lang": "ar",
-      "titleKo": "두바이의 건축 자재 창고에서 제한된 화재 통제",
-      "url": "https://www.alghad.tv/%25D8%25A7%25D8%25AE%25D8%25A8%25D8%25A7%25D8%25B1-%25D8%25A7%25D9%2584%25D8%25BA%25D8%25AF/news/%25D8%25A7%25D9%2584%25D8%25B3%25D9%258A%25D8%25B7%25D8%25B1%25D8%25A9-%25D8%25B9%25D9%2584%25D9%2589-%25D8%25AD%25D8%25B1%25D9%258A%25D9%2582-%25D9%2585%25D8%25AD%25D8%25AF%25D9%2588%25D8%25AF-%25D8%25A8%25D9%2585%25D8%25B3%25D8%25AA%25D9%2588%25D8%25AF%25D8%25B9-%25D9%2584%25D9%2585%25D9%2588%25D8%25A7%25D8%25AF-%25D8%25A7%25D9%2584%25D8%25A8%25D9%2586%25D8%25A7%25D8%25A1-%25D9%2581%25D9%258A-%25D8%25AF%25D8%25A8%25D9%258A",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "www.alghad.tv"
-      ],
-      "related": [],
-      "tag": "단열재·자재"
-    },
-    {
-      "title": "불난 지 70일… 평택시 청북읍 토진리 위험물 창고 '재축' 신청, 화재 원인은 아직",
-      "source": "투데이경제",
-      "link": "https://www.tookyung.com/news/articleView.html?idxno=748931",
-      "date": "2026-10-20T10:10:00.000Z",
-      "lang": "ko",
-      "titleKo": "불난 지 70일… 평택시 청북읍 토진리 위험물 창고 '재축' 신청, 화재 원인은 아직",
-      "url": "https://www.tookyung.com/news/articleView.html?idxno=748931",
-      "body": "[투데이경제 이일수 기자] 지난 8월 대형 화재로 국가소방동원령까지 발령됐던 평택시 청북읍 토진리의 위험물 저장 물류센터가 불에 탄 건물을 다시 짓겠다며 건축 인",
-      "bodyKo": "[투데이경제 이일수 기자] 지난 8월 대형 화재로 국가소방동원령까지 발령됐던 평택시 청북읍 토진리의 위험물 저장 물류센터가 불에 탄 건물을 다시 짓겠다며 건축 인",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "투데이경제"
-      ],
-      "related": [],
-      "tag": "숙소·창고"
     },
     {
       "title": "\"인명구조 없으면 방어적 진압\" 화재현장선 지켜지지 않았다[소방관, 붉은 제복의 눈물]",
@@ -921,11 +880,18 @@
       "body": "현대자동차그룹 의왕연구소에서 발생한 화재가 약 1시간 30분 만에 진화됐다. 인명 피해는 없었지만 올해 7월에 이어 약 3개월 만에 같은 연구소에서 다시 불이 나면서 배터리 연구시설의 안전관리와 화재 원인에 관심이 쏠린다.20일 소방당국에 따르면 이날 오전 11시 40분께 경기 의왕시 삼동 현대차그룹 의왕연구소에서 화재가 발생했다. 불이 난 곳은 연구소 내 현대모비스 배터리 연구동이다.소방당국은 검은 연기가 많이 발생한다는 신고를 받고 출동해 장비 36대와 인력 97명을 투입했다. 낮 12시 27분께 큰 불길을 잡은 데 이어 오후\n화재 당시 연구동에 있던 관계자 2명은 스스로 대피했다. 현재까지 확인된 인명 피해는 없다. 불이 난 건물은 철근콘크리트 구조의 지상 2층 건물로, 연면적은 3080㎡ 규모다.\n소방당국은 연구동 내부 배터리에서 불이 시작된 것으로 추정하고 있다. 일부 보도에 따르면 배터리 100여 개를 쌓아둔 장소에서 실험을 진행하던 중 화재가 발생한 것으로 파악됐다. 다만 정확한 발화 지점과 원인은 아직 확정되지 않았다.\n현대모비스는 화재 발생 이후 소방 안전진단에서 근무가 가능하다는 판단을 받아 이날 오후부터 정상 근무하고 있다고 밝혔다. 화재 원인에 대해서는 관계 당국과 함께 확인하고 있다는 입장이다.\n의왕시는 화재 발생 직후 재난문자를 통해 인근 주민들에게 사고 지점에서 떨어진 곳으로 이동하고 주변 도로를 우회할 것을 당부했다.\n의왕연구소에서는 지난 7월 28일에도 배터리 연구시설에서 화재가 발생했다. 당시에는 차세대 배터리 연구동 1층 폐배터리 보관시설에서 불이 나 약 3시간 만에 진화됐으며, 인명 피해는 발생하지 않았다.",
       "bodyKo": "현대자동차그룹 의왕연구소에서 발생한 화재가 약 1시간 30분 만에 진화됐다. 인명 피해는 없었지만 올해 7월에 이어 약 3개월 만에 같은 연구소에서 다시 불이 나면서 배터리 연구시설의 안전관리와 화재 원인에 관심이 쏠린다.20일 소방당국에 따르면 이날 오전 11시 40분께 경기 의왕시 삼동 현대차그룹 의왕연구소에서 화재가 발생했다. 불이 난 곳은 연구소 내 현대모비스 배터리 연구동이다.소방당국은 검은 연기가 많이 발생한다는 신고를 받고 출동해 장비 36대와 인력 97명을 투입했다. 낮 12시 27분께 큰 불길을 잡은 데 이어 오후\n화재 당시 연구동에 있던 관계자 2명은 스스로 대피했다. 현재까지 확인된 인명 피해는 없다. 불이 난 건물은 철근콘크리트 구조의 지상 2층 건물로, 연면적은 3080㎡ 규모다.\n소방당국은 연구동 내부 배터리에서 불이 시작된 것으로 추정하고 있다. 일부 보도에 따르면 배터리 100여 개를 쌓아둔 장소에서 실험을 진행하던 중 화재가 발생한 것으로 파악됐다. 다만 정확한 발화 지점과 원인은 아직 확정되지 않았다.\n현대모비스는 화재 발생 이후 소방 안전진단에서 근무가 가능하다는 판단을 받아 이날 오후부터 정상 근무하고 있다고 밝혔다. 화재 원인에 대해서는 관계 당국과 함께 확인하고 있다는 입장이다.\n의왕시는 화재 발생 직후 재난문자를 통해 인근 주민들에게 사고 지점에서 떨어진 곳으로 이동하고 주변 도로를 우회할 것을 당부했다.\n의왕연구소에서는 지난 7월 28일에도 배터리 연구시설에서 화재가 발생했다. 당시에는 차세대 배터리 연구동 1층 폐배터리 보관시설에서 불이 나 약 3시간 만에 진화됐으며, 인명 피해는 발생하지 않았다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
-        "스트레이트뉴스"
+        "스트레이트뉴스",
+        "아시아투데이"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "현대차그룹 의왕연구소서 화재…배터리 발화 추정",
+          "source": "아시아투데이",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9qNC10Y3ZPME1iM3YxNkN0Szhsc053VEY3amhRdlpVVmYxUmk5YzdxTlNDcERHS2NzVE9fak56UmR5OWlXV04zc09xYy00cHVRa0gzMUM5Tlh4eFNQNDBtdlBGOXIxSGVNc3lYYVlR?oc=5"
+        }
+      ],
       "tag": "전기·배터리"
     },
     {
