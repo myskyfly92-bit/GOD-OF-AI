@@ -500,6 +500,7 @@ async function main() {
   }
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2) + "\n", "utf-8");
   const by = (l) => list.filter((n) => n.lang === l).length;
+  console.log(`::notice::번역: AI ${claudeCalls}회${CLAUDE_KEY ? (claudeOff ? " (AI 막힘 → 구글로 대체)" : "") : " (키 없음 → 구글)"} · 새 제목 ${translated}건`);
   console.log(`저장 완료: 총 ${list.length}건 (한국어 ${by("ko")} · 아랍어 ${by("ar")} · 영어 ${by("en")}) · 새로 번역 ${translated}건 · 본문 있음 ${list.filter((n) => n.body).length}건 · AI 번역 호출 ${claudeCalls}회${CLAUDE_KEY ? "" : " (키 없음 → 구글 번역)"}`);
 }
 
