@@ -25,10 +25,20 @@ async function capture() {
   const browser = await chromium.launch({ channel: process.env.CHROME_CHANNEL || "chrome", headless: true });
   try {
     const page = await browser.newPage({ locale: "ko-KR", viewport: { width: 1366, height: 900 } });
-    const got = page.waitForResponse((r) => r.url().includes(API_KEY) && r.status() === 200, { timeout: 45000 });
+    // 응답에 포스터 그림(base64)이 들어 있어 커서, 브라우저 검사기 캐시에서 지워지기 전에
+    // 요청을 가로채 직접 받아 둔다 (route.fetch → 본문 확보 → 그대로 페이지에 넘김)
+    let done;
+    const got = new Promise((res, rej) => { done = res; setTimeout(() => rej(new Error("API 응답 대기 시간 초과")), 45000); });
+    await page.route((u) => u.href.includes(API_KEY), async (route) => {
+      try {
+        const resp = await route.fetch();
+        const text = await resp.text();
+        if (resp.status() === 200) done({ url: route.request().url(), body: JSON.parse(text), req: route.request().postData() || "" });
+        await route.fulfill({ response: resp, body: text });
+      } catch (e) { try { await route.continue(); } catch (_) {} }
+    });
     await page.goto(PAGE_URL, { waitUntil: "domcontentloaded", timeout: 60000 });
-    const res = await got;
-    return { url: res.url(), body: await res.json() };
+    return await got;
   } finally {
     await browser.close();
   }
@@ -61,7 +71,7 @@ function saveImage(no, src) {
   if (!cap) { console.log("중대재해 사이렌을 가져오지 못했습니다 — 기존 파일 유지:", lastErr && lastErr.message); process.exit(0); }
 
   const list = pickList(cap.body);
-  console.log(`::notice::사이렌 API ${cap.url} → ${list.length}건`);
+  console.log(`::notice::사이렌 API ${cap.url} → ${list.length}건 · 요청: ${String(cap.req).slice(0, 300)}`);
   if (list.length) console.log(`::notice::항목 필드: ${Object.keys(list[0]).join(", ")} · 첫 제목: ${String(list[0].imprtnDsstrSirnNm || "").slice(0, 80)}`);
   else console.log(`::warning::응답 키: ${Object.keys(cap.body || {}).join(", ")} · payload 키: ${Object.keys((cap.body && cap.body.payload) || {}).join(", ")}`);
   if (!list.length) { console.log("목록이 비어 있음 — 기존 파일 유지"); process.exit(0); }
