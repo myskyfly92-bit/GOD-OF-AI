@@ -49,8 +49,8 @@ html.intro-pending::after {
 <link rel="icon" type="image/png" href="assets/icon/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=20261022j">
-<link rel="stylesheet" href="light.css?v=20261022j">
+<link rel="stylesheet" href="style.css?v=20261025a">
+<link rel="stylesheet" href="light.css?v=20261025a">
 <script>try{if(localStorage.getItem("hseTheme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -1123,6 +1123,10 @@ html.intro-pending::after {
 
 <div id="view-accidents" class="view">
 <main class="grid">
+  <section class="panel sir-panel" aria-label="중대재해 사이렌" style="grid-column: 1 / -1;">
+    <div class="panel-label">SIREN · 중대재해 사이렌 <span class="sir-sub">고용노동부·안전보건공단 발생 알림 · 2시간마다 확인</span></div>
+    <div id="sirenContainer"><p class="skeleton">불러오는 중…</p></div>
+  </section>
   <section class="panel procedure-panel" aria-label="사고사례" style="grid-column: 1 / -1;">
     <div class="panel-label">ACCIDENT CASES · 국내 산업재해 사례 (건설업 별도 표시)</div>
     <div id="accidentContainer">
@@ -1291,7 +1295,7 @@ html.intro-pending::after {
   <span id="lastUpdated">마지막 갱신: –</span>
 </footer>
 
-<script src="script.js?v=20261022g"></script>
+<script src="script.js?v=20261025a"></script>
 
 <!-- 구글 웹사이트 번역 위젯 -->
 <script type="text/javascript">

@@ -1639,6 +1639,70 @@ function renderProcedures(categories) {
 
 loadProcedures();
 
+/* ---------------- 중대재해 사이렌 (kosha-siren.json · 2시간마다 수집) ----------------
+   산업안전포털 '중대재해 사이렌'에 올라오는 발생 알림 포스터를 최신순 카드로 보여 주고,
+   누르면 크게 본다 (← → 로 넘김). 자료: 고용노동부·한국산업안전보건공단 (공공누리) */
+const sirenState = { items: [], i: 0 };
+function sirenDayLabel(it) {
+  const d = it.day || it.posted || "";
+  if (!d) return "";
+  const [y, mo, da] = d.split("-").map(Number);
+  const wd = "일월화수목금토"[new Date(Date.UTC(y, mo - 1, da)).getUTCDay()];
+  return `${mo}월 ${da}일(${wd}) 발표` + (it.seq ? ` · ${it.seq}번째` : "");
+}
+function sirenIsNew(it) {
+  const d = it.day || it.posted; if (!d) return false;
+  return (Date.now() - new Date(d + "T00:00:00+09:00").getTime()) < 3 * 86400000;
+}
+async function loadSiren() {
+  const box = document.getElementById("sirenContainer");
+  if (!box) return;
+  let data = null;
+  try { const r = await fetch("kosha-siren.json", { cache: "no-store" }); if (r.ok) data = await r.json(); } catch (e) { data = null; }
+  const items = (data && data.items) || [];
+  sirenState.items = items;
+  if (!items.length) { box.innerHTML = `<p class="skeleton">중대재해 사이렌 자료를 준비 중이에요.</p>`; return; }
+  const shown = items.slice(0, 12);
+  const upd = data.generatedAt ? new Date(data.generatedAt).toLocaleString("ko-KR", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "";
+  box.innerHTML = `<div class="sir-row">${shown.map((it, i) => `
+      <button type="button" class="sir-card" data-sir="${i}" title="${accEscapeHtml(it.title)} — 눌러서 크게 보기">
+        <span class="sir-img"><img src="${accEscapeHtml(it.thumb || it.img)}" alt="${accEscapeHtml(it.title)}" loading="lazy">${sirenIsNew(it) ? '<span class="sir-new">NEW</span>' : ""}</span>
+        <span class="sir-cap">${accEscapeHtml(sirenDayLabel(it) || it.title)}</span>
+      </button>`).join("")}</div>
+    <p class="source-note">출처: <a href="${accEscapeHtml(data.source || "https://portal.kosha.or.kr")}" target="_blank" rel="noopener">산업안전포털 › 중대재해 사이렌 ↗</a> · 고용노동부·한국산업안전보건공단 (공공누리 출처표시) · 포스터를 누르면 크게 보고 ← → 로 넘길 수 있어요${upd ? ` · 최근 반영 ${accEscapeHtml(upd)}` : ""}</p>`;
+}
+function sirenOpen(i) {
+  const items = sirenState.items; if (!items.length) return;
+  sirenState.i = (i + items.length) % items.length;
+  const it = items[sirenState.i];
+  let m = document.getElementById("sirModal");
+  if (!m) {
+    m = document.createElement("div"); m.id = "sirModal"; m.className = "sir-modal"; m.setAttribute("role", "dialog"); m.setAttribute("aria-modal", "true");
+    m.innerHTML = `<div class="sir-box"><div class="sir-head"><b class="sir-t"></b><span class="sir-n"></span><a class="sir-src" target="_blank" rel="noopener">원문 ↗</a><button type="button" class="sir-x" aria-label="닫기">✕</button></div>
+      <div class="sir-body"><button type="button" class="sir-nav sir-prev" aria-label="이전">‹</button><img alt=""><button type="button" class="sir-nav sir-next" aria-label="다음">›</button></div></div>`;
+    document.body.appendChild(m);
+    m.addEventListener("click", (e) => {
+      if (e.target === m || e.target.closest(".sir-x")) return sirenClose();
+      if (e.target.closest(".sir-prev")) return sirenOpen(sirenState.i - 1);
+      if (e.target.closest(".sir-next")) return sirenOpen(sirenState.i + 1);
+    });
+    document.addEventListener("keydown", (e) => {
+      if (!document.getElementById("sirModal") || document.getElementById("sirModal").hidden) return;
+      if (e.key === "Escape") sirenClose();
+      else if (e.key === "ArrowLeft") sirenOpen(sirenState.i - 1);
+      else if (e.key === "ArrowRight") sirenOpen(sirenState.i + 1);
+    });
+  }
+  m.hidden = false; document.body.classList.add("sir-lock");
+  m.querySelector(".sir-t").textContent = "🚨 중대재해 발생 알림 · " + (sirenDayLabel(it) || it.title);
+  m.querySelector(".sir-n").textContent = `${sirenState.i + 1} / ${items.length}`;
+  m.querySelector(".sir-src").href = "https://portal.kosha.or.kr/archive/imprtnDsstrAlrame/CSADV50000/CSADV50000M01";
+  const img = m.querySelector(".sir-body img"); img.src = it.img; img.alt = it.title;
+}
+function sirenClose() { const m = document.getElementById("sirModal"); if (m) m.hidden = true; document.body.classList.remove("sir-lock"); }
+document.addEventListener("click", (e) => { const c = e.target.closest("[data-sir]"); if (c) sirenOpen(Number(c.dataset.sir)); });
+loadSiren();
+
 /* ---------------- 사고사례: 국내 산업재해 사례 (kosha-cases.json 기반) ----------------
    한국산업안전보건공단 국내재해사례 게시판의 전 업종 사례를 (건설업은 따로 표시)
    GitHub Actions(update-kosha-cases.yml)가 매일 kosha-cases.json으로 저장한다. */
