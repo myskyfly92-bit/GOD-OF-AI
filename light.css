@@ -511,6 +511,8 @@ html[data-theme="light"] :is(.topbar, .mascot-bubble, .vc-win, .vc-pop, .desk-ti
 :where(html[data-theme="light"]) .sir-body { background: rgba(0,0,0,0.3); }
 :where(html[data-theme="light"]) .sir-nav { background: rgba(0,0,0,0.135); color: #292929; }
 :where(html[data-theme="light"]) .sir-nav:hover { background: rgba(0,0,0,0.21); }
+:where(html[data-theme="light"]) .acc-tag.is-fast { color: #292929 !important; }
+:where(html[data-theme="light"]) .acc-tag.is-case { color: #f9fbfa !important; }
 
 /* ---- 손으로 맞춘 부분 ---- */
 /* ===== 라이트 모드 손 보정 (tools/light-fix.css → light.css 맨 끝에 붙음) ===== */

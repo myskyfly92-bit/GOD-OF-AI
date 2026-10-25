@@ -4916,3 +4916,10 @@ body.bg-reveal .set-item.bg-peek-btn { color: var(--cyan); }
 .sir-prev { left: 8px; } .sir-next { right: 8px; }
 body.sir-lock { overflow: hidden; }
 @media (max-width: 640px) { .sir-row { grid-auto-columns: 42%; } .sir-panel .sir-sub { display: block; margin: 4px 0 0; } }
+
+/* 사고사례 탭: 위(사이렌)·아래(사례집) 차이 안내 */
+.acc-desc { margin: 2px 0 12px; font-size: 13px; line-height: 1.6; color: var(--text-muted); }
+.acc-desc b { color: var(--text); font-weight: 600; }
+.acc-tag { display: inline-block; margin-right: 8px; padding: 1px 8px; border-radius: 4px; font-size: 11.5px; font-weight: 700 !important; vertical-align: 1px; }
+.acc-tag.is-fast { background: var(--danger); color: #fff !important; }
+.acc-tag.is-case { background: var(--cyan); color: #06201d !important; }
