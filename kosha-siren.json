@@ -1,62 +1,246 @@
 {
  "source": "https://portal.kosha.or.kr/archive/imprtnDsstrAlrame/CSADV50000/CSADV50000M01",
- "generatedAt": "2026-10-25T06:49:13.566Z",
+ "generatedAt": "2026-10-25T06:51:41.433Z",
  "items": [
   {
    "no": "908",
    "title": "(261023)중대재해 발생 알림(1)",
-   "img": "assets/siren/908.jpg",
-   "date": "2026.10.23",
+   "day": "2026-10-23",
+   "seq": 1,
+   "img": "assets/siren/908.webp",
+   "thumb": "assets/siren/908_t.webp",
+   "posted": "2026-10-23",
    "firstSeen": "2026-10-25T06:49:13.566Z"
   },
   {
    "no": "907",
    "title": "(261022)중대재해 발생 알림(3)",
-   "img": "assets/siren/907.jpg",
-   "date": "2026.10.22",
+   "day": "2026-10-22",
+   "seq": 3,
+   "img": "assets/siren/907.webp",
+   "thumb": "assets/siren/907_t.webp",
+   "posted": "2026-10-22",
    "firstSeen": "2026-10-25T06:49:13.566Z"
   },
   {
    "no": "906",
    "title": "(261022)중대재해 발생 알림(2)",
-   "img": "assets/siren/906.jpg",
-   "date": "2026.10.22",
+   "day": "2026-10-22",
+   "seq": 2,
+   "img": "assets/siren/906.webp",
+   "thumb": "assets/siren/906_t.webp",
+   "posted": "2026-10-22",
    "firstSeen": "2026-10-25T06:49:13.566Z"
   },
   {
    "no": "905",
    "title": "(261022)중대재해 발생 알림(1)",
-   "img": "assets/siren/905.jpg",
-   "date": "2026.10.22",
+   "day": "2026-10-22",
+   "seq": 1,
+   "img": "assets/siren/905.webp",
+   "thumb": "assets/siren/905_t.webp",
+   "posted": "2026-10-22",
    "firstSeen": "2026-10-25T06:49:13.566Z"
   },
   {
    "no": "904",
    "title": "(261021)중대재해 발생 알림(3)",
-   "img": "assets/siren/904.jpg",
-   "date": "2026.10.22",
+   "day": "2026-10-21",
+   "seq": 3,
+   "img": "assets/siren/904.webp",
+   "thumb": "assets/siren/904_t.webp",
+   "posted": "2026-10-22",
    "firstSeen": "2026-10-25T06:49:13.566Z"
   },
   {
    "no": "903",
    "title": "(261021)중대재해 발생 알림(2)",
-   "img": "assets/siren/903.jpg",
-   "date": "2026.10.22",
+   "day": "2026-10-21",
+   "seq": 2,
+   "img": "assets/siren/903.webp",
+   "thumb": "assets/siren/903_t.webp",
+   "posted": "2026-10-22",
    "firstSeen": "2026-10-25T06:49:13.566Z"
   },
   {
    "no": "902",
    "title": "(261021)중대재해 발생 알림(1)",
-   "img": "assets/siren/902.jpg",
-   "date": "2026.10.22",
+   "day": "2026-10-21",
+   "seq": 1,
+   "img": "assets/siren/902.webp",
+   "thumb": "assets/siren/902_t.webp",
+   "posted": "2026-10-22",
    "firstSeen": "2026-10-25T06:49:13.566Z"
   },
   {
    "no": "898",
    "title": "(261019)중대재해 발생 알림(2)",
-   "img": "assets/siren/898.jpg",
-   "date": "2026.10.20",
+   "day": "2026-10-19",
+   "seq": 2,
+   "img": "assets/siren/898.webp",
+   "thumb": "assets/siren/898_t.webp",
+   "posted": "2026-10-20",
    "firstSeen": "2026-10-25T06:49:13.566Z"
+  },
+  {
+   "no": "897",
+   "title": "(261019)중대재해 발생 알림(1)",
+   "day": "2026-10-19",
+   "seq": 1,
+   "img": "assets/siren/897.webp",
+   "thumb": "assets/siren/897_t.webp",
+   "posted": "2026-10-20",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "896",
+   "title": "(261016)중대재해 발생 알림(2)",
+   "day": "2026-10-16",
+   "seq": 2,
+   "img": "assets/siren/896.webp",
+   "thumb": "assets/siren/896_t.webp",
+   "posted": "2026-10-16",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "895",
+   "title": "(261016)중대재해 발생 알림(1)",
+   "day": "2026-10-16",
+   "seq": 1,
+   "img": "assets/siren/895.webp",
+   "thumb": "assets/siren/895_t.webp",
+   "posted": "2026-10-16",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "894",
+   "title": "(261015)중대재해 발생 알림(1)",
+   "day": "2026-10-15",
+   "seq": 1,
+   "img": "assets/siren/894.webp",
+   "thumb": "assets/siren/894_t.webp",
+   "posted": "2026-10-16",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "893",
+   "title": "(261014)중대재해 발생 알림(4)",
+   "day": "2026-10-14",
+   "seq": 4,
+   "img": "assets/siren/893.webp",
+   "thumb": "assets/siren/893_t.webp",
+   "posted": "2026-10-14",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "892",
+   "title": "(261014)중대재해 발생 알림(3)",
+   "day": "2026-10-14",
+   "seq": 3,
+   "img": "assets/siren/892.webp",
+   "thumb": "assets/siren/892_t.webp",
+   "posted": "2026-10-14",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "891",
+   "title": "(261014)중대재해 발생 알림(2)",
+   "day": "2026-10-14",
+   "seq": 2,
+   "img": "assets/siren/891.webp",
+   "thumb": "assets/siren/891_t.webp",
+   "posted": "2026-10-14",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "890",
+   "title": "(261014)중대재해 발생 알림(1)",
+   "day": "2026-10-14",
+   "seq": 1,
+   "img": "assets/siren/890.webp",
+   "thumb": "assets/siren/890_t.webp",
+   "posted": "2026-10-14",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "889",
+   "title": "(261013)중대재해 발생 알림(6)",
+   "day": "2026-10-13",
+   "seq": 6,
+   "img": "assets/siren/889.webp",
+   "thumb": "assets/siren/889_t.webp",
+   "posted": "2026-10-14",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "888",
+   "title": "(261013)중대재해 발생 알림(5)",
+   "day": "2026-10-13",
+   "seq": 5,
+   "img": "assets/siren/888.webp",
+   "thumb": "assets/siren/888_t.webp",
+   "posted": "2026-10-14",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "887",
+   "title": "(261013)중대재해 발생 알림(4)",
+   "day": "2026-10-13",
+   "seq": 4,
+   "img": "assets/siren/887.webp",
+   "thumb": "assets/siren/887_t.webp",
+   "posted": "2026-10-14",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "886",
+   "title": "(261013)중대재해 발생 알림(3)",
+   "day": "2026-10-13",
+   "seq": 3,
+   "img": "assets/siren/886.webp",
+   "thumb": "assets/siren/886_t.webp",
+   "posted": "2026-10-14",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "885",
+   "title": "(261013)중대재해 발생 알림(2)",
+   "day": "2026-10-13",
+   "seq": 2,
+   "img": "assets/siren/885.webp",
+   "thumb": "assets/siren/885_t.webp",
+   "posted": "2026-10-14",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "884",
+   "title": "(261013)중대재해 발생 알림(1)",
+   "day": "2026-10-13",
+   "seq": 1,
+   "img": "assets/siren/884.webp",
+   "thumb": "assets/siren/884_t.webp",
+   "posted": "2026-10-14",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "883",
+   "title": "(261008)중대재해 발생 알림(2)",
+   "day": "2026-10-08",
+   "seq": 2,
+   "img": "assets/siren/883.webp",
+   "thumb": "assets/siren/883_t.webp",
+   "posted": "2026-10-08",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
+  },
+  {
+   "no": "882",
+   "title": "(261008)중대재해 발생 알림(1)",
+   "day": "2026-10-08",
+   "seq": 1,
+   "img": "assets/siren/882.webp",
+   "thumb": "assets/siren/882_t.webp",
+   "posted": "2026-10-08",
+   "firstSeen": "2026-10-25T06:51:41.433Z"
   }
  ]
 }
