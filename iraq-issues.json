@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T10:48:56.640Z",
+  "generatedAt": "2026-10-25T10:50:56.927Z",
   "items": [
     {
       "title": "متظاهرون في بغداد يحيون الذكرى السابعة لاحتجاجات تشرين",
@@ -12,14 +12,14 @@
       "body": "أحيا عشرات المتظاهرين، اليوم الأحد، الذكرى السابعة لاحتجاجات تشرين في ساحة التحرير وسط العاصمة بغداد، في ظل إجراءات أمنية مشددة اتخذتها السلطات في منطقة الباب ا...\nورفع المشاركون الأعلام العراقية ورددوا شعارات تستحضر أحداث الاحتجاجات التي انطلقت عام 2019، والتي تُعد واحدة من أكبر الموجات الاحتجاجية في تاريخ العراق الحديث.\nوكانت قيادة عمليات بغداد قد أعلنت في وقت سابق عن سلسلة إجراءات أمنية وتنظيمية لتأمين التظاهرات، تضمنت منع حركة الدراجات النارية و\"التكاتك\"، مع إبقاء الطرق والمنافذ المؤدية إلى ساحة التحرير مفتوحة أمام المارة وحركة السير.",
       "bodyKo": "**바그다드 타흐리르 광장, 10월 항쟁 7주년 추도식 개최**\n\n수십 명의 시위자들이 오늘 일요일 바그다드 중심부 타흐리르 광장에서 2019년 10월 항쟁 7주년을 추도했다. 당국은 광장 입구 지역에 강화된 보안 조치를 취했다.\n\n참가자들은 이라크 국기를 들고 2019년에 시작된 항쟁의 사건들을 상기하는 구호를 외쳤다. 이 항쟁은 이라크 현대사에서 가장 큰 규모의 항의 물결 중 하나로 평가된다.\n\n바그다드 작전사령부는 앞서 시위를 보안하기 위한 일련의 보안 및 행정 조치를 발표했다. 이 조치에는 오토바이와 '툭툭'의 통행 금지가 포함되었으며, 타흐리르 광장으로 통하는 도로와 출입구는 보행자와 차량 통행을 위해 개방 상태로 유지되었다.",
       "tried": true,
-      "count": 23,
+      "count": 24,
       "sources": [
         "Lebanon 24",
         "Kurdistan24",
         "نيوز رووم",
+        "العربية",
         "قناة الرشيد الفضائية",
-        "naynawaalghad.tv",
-        "موقع كلمة الإخباري"
+        "https://naynawaalghad.tv/"
       ],
       "related": [
         {
@@ -38,14 +38,14 @@
           "link": "https://newsroom.info/476281"
         },
         {
+          "titleKo": "2019년 항의 추모, 바그다드 중심부서 제한적 시위 시작",
+          "source": "العربية",
+          "link": "https://www.alarabiya.net/arab-and-world/iraq/2026/10/25/%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D9%85%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D9%85%D8%AD%D8%AF%D9%88%D8%AF%D8%A9-%D9%88%D8%B3%D8%B7-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%81%D9%8A-%D8%B0%D9%83%D8%B1%D9%89-%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-2019"
+        },
+        {
           "titleKo": "영상으로 보는 바그다드 중심부 타흐리르 광장 시위",
           "source": "قناة الرشيد الفضائية",
           "link": "https://www.alrasheedmedia.com/2026/10/25/709396/"
-        },
-        {
-          "titleKo": "해방광장, 10월 항쟁 7주년 기념 행사 개최…바그다드 작전사령부 질서 유지 조치",
-          "source": "naynawaalghad.tv",
-          "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPaDR6Tlh0U3prcWNmUzl6U2RQRVdFUlBiX0wxdVMxY1JIX1psZVFqMFNzcWJDTDVHcTB4WFhid3BBcUQ5U3lDS09ldWNBYThyNXpRQW52b3ZidXh6S0lsTklJVEY3aURKWUQ1dXdsdnoyREJxQkdHbFRkRnlHbExzRk5YQUtxcVFQbzRQNHFwYm1jUFh2cHA5cGNPZFRLUEhrNWJYZkhRRE9nRl9kQl9DQmxacTF5R1NjQnhOc09LTkVCTHprbm1VeU1UaGtReGVwRWNwYkVFVTlsSkRST3pxV2dGTUVsRkFhZHlzdGFSajNyUHR2SVNqbjZfZGhIOHdabE9kRThQUW02TTJSd3h0UkMyOUc1c1lrWXo3LWtDYkZ0U2NMTkJEc0xRaVhJdl9JTkJOUmlYYzBfcUxRWkhfZ2xUc0lHZw?oc=5"
         }
       ],
       "tag": "시위·통제",
@@ -323,12 +323,12 @@
         {
           "titleKo": "이란 정권, 드론으로 이라크 쿠르드족 기지 공격",
           "source": "Arab Times Kuwait News",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbE1yZFhCbWhOQVp2UVpvTHUtdHM4YXcyLXNSSTEtM2NRdmdTT1ZaYm40U0s3elFjc3NyYlF0OXVkbm10RTlCN3hldkpocDFjenpyYkNzWmtHOFBXQ245RXhnTG5XMHBLa29EZTEyQ004NjNSeU9QM0Z2Q3V3eFhHTDBXTGJrM0pnZHJROGl5a1BkQ0tlZEpRQQ?oc=5"
+          "link": "https://www.arabtimesonline.com/news/iranian-regime-attacks-kurdish-base-in-iraq-with-drones/"
         },
         {
           "titleKo": "아르빌서 이란 반정부 진영 캠프 드론 공격",
           "source": "هذا اليوم",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhZVdXSy03bWhGREtKUktmMUd1cE5UT0Y0aU1HSlV1bVNRemlzVlBGNnBTY1ROSjdZV2x2VVpta0dSdzB5amJVZHZtcnpoY2ds0gFKQVVfeXFMTWtVbTdvRjAwclRwaXNKS3FMZEpzXzV1SXV2T1JSRjJuNmR5dUphdlJyOXJJS3BlN2hmdGlDX3BVVWpxb0VySGd6YWc?oc=5"
+          "link": "https://hathalyoum.net/articles/4252788"
         },
         {
           "titleKo": "폭발물 탑재 드론, 이라크 아르빌 인근 이란 쿠르드 야당 진영 공격",
@@ -519,7 +519,7 @@
         {
           "titleKo": "미군 항공기, 한 달간 이라크 영공 171회 침범 혐의",
           "source": "Laodong.vn",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPelV5R09ER2lQa29uNlZET0FqNnNOS0tGOG40WnJmRnJOMlJIUVJDckx0VERWSHlBWnhhb1gwa1pmdGQ2SklycHE2SHdyX1dsTXU3bG1MWWRKS0JsdC10ZktsV3g1cllaVHE0enBOUVdVWXl5bkc1M2NlampCZmlXUHlTVGRrcTZCejlFRVhkMkd4NGdHd043anp0alEyOGFpTzJhREd6ZFZ1d1FSVEpuenpnTTFZbmt4b2VmT3puMmUzUQ?oc=5"
+          "link": "https://news.laodong.vn/the-gioi/may-bay-quan-su-my-bi-cao-buoc-xam-pham-khong-phan-iraq-171-lan-trong-mot-thang-1788829.ldo"
         }
       ],
       "tag": "기타",
@@ -634,10 +634,14 @@
     {
       "title": "دانة غاز ونفط الهلال: توريد الغاز إلى وزارة الكهرباء العراقية يتوافق مع حقوقنا التعاقدية - ارقام : اخبار ومعلومات سوق الأسهم السعودي",
       "source": "تاسي",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHdkUyWnZzdHVJeVRrZjFXMmllUk9fMUhjM2RzN3F2X2FWYlpTZUN5SGlWbDNlSUduWlNlZ2p4Z01zUFdoT2VhY3ZLY2d2SWRiMGpWejdnUlpiRld4eW5YRGNUTU9sc25tZFE?oc=5",
+      "link": "https://www.argaam.com/ar/article/articledetail/id/1927049",
       "date": "2026-10-24T23:34:21.000Z",
       "lang": "ar",
       "titleKo": "달라 가스 앤 오일 크레센트: 이라크 전력부로의 가스 공급은 우리의 계약상 권리와 부합한다",
+      "url": "https://www.argaam.com/ar/article/articledetail/id/1927049",
+      "body": "أعربت شركتا دانة غاز ونفط الهلال، المشغّلان المشتركان نيابة عن ائتلاف بيرل بتروليوم، عن استغرابهما من البيان الصادر عن حكومة إقليم كردستان العراق بشأن",
+      "bodyKo": "다나 가스와 할랄 석유 회사는 펄 페트롤륨 컨소시엄을 대신해 공동으로 운영하는 두 회사로서, 이라크 쿠르드 지역정부가 발표한 성명에 대해 놀라움을 표했다.",
+      "tried": true,
       "count": 1,
       "sources": [
         "تاسي"
@@ -653,43 +657,63 @@
       }
     },
     {
-      "title": "تعطيل الدوام في كركوك غدا",
-      "source": "وكالة موازين نيوز",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBqWTZLeDVZMGdwR0NOYlRsa0VrYjJQQ21iZmYzZmlmUWZNZ1N6blVvaWNRTEFxSU5VY3hEMnIzQldVbjlnd1dzdnZ3cjZlVmFMbmduMkltZEM3b0ZYZnNj?oc=5",
+      "title": "تربية البصرة تنفي يوم غد الأحد دوام رسمي في مدارسها",
+      "source": "وكالة المرسى نيوز",
+      "link": "https://almarsa-news.com/news-33230.html",
+      "date": "2026-10-24T21:06:17.000Z",
+      "lang": "ar",
+      "titleKo": "바스라 교육청, 내일 일요일 학교 정상 운영 부인",
+      "url": "https://almarsa-news.com/news-33230.html",
+      "body": "البصرة / المرسى نيوز أكدت المديرية العامة لتربية البصرة أن يوم غد الأحد عطلة رسمية، وذلك بحسب قرار من مجلس المحافظة . ونفت المديرية في بيان ، صحة الأخبار ال\nونفت المديرية في بيان ، صحة الأخبار المتداولة التي تشير إلى أن يوم غد دوام رسمي، داعيةً الجميع إلى اعتماد المعلومات الصادرة عن الجهات الرسمية وعدم تداول الأخبار غير الدقيقة.\nوكان مجلس محافظة البصرة أعلن تعطيل الدوام الرسمي يوم الأحد الموافق ٢٠٢٦/١٠/٢٥، بمناسبة ذكرى استشهاد الصديقة الطاهرة السيدة فاطمة الزهراء (عليها السلام)، وفق الرواية الثانية./ انتهى",
+      "bodyKo": "**바스라 교육청, 내일 일요일 공식 휴무 확인**\n\n바스라 / 알마르사 뉴스 = 바스라 교육청 총국은 내일 일요일이 공식 휴무일이라고 확인했다. 이는 도의회 결정에 따른 것이다. 교육청은 성명을 통해 내일이 공식 근무일이라는 유포되는 뉴스의 정확성을 부인했으며, 모든 사람들에게 공식 기관에서 발표한 정보를 신뢰하고 부정확한 뉴스를 유포하지 말 것을 촉구했다.\n\n바스라 도의회는 2026년 10월 25일 일요일의 공식 근무를 중단한다고 발표했다. 이는 순결한 숙녀 파티마 알자흐라(평안이 그녀 위에 있기를) 순교 기념일을 맞아 제2의 전승에 따른 것이다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "وكالة المرسى نيوز",
+        "المربد"
+      ],
+      "related": [
+        {
+          "titleKo": "바스라 교육청, 일요일 공식 업무 중단 확인",
+          "source": "المربد",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0tZ2J6Y2x6OHdBd2kycXVUQVA1c0dyUGtGV1FrTnR5MzhpVWtKRXhPdWNaTWVRTkJmRlpFbm9hb25FZGQwLXM0cFV5TU5Za21Y?oc=5"
+        }
+      ],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바스라",
+        "km": 422
+      }
+    },
+    {
+      "title": "كركوك والديوانية تعطلان الدوام الرسمي يوم غد الأحد",
+      "source": "المعلومة",
+      "link": "https://news.google.com/rss/articles/CBMiswNBVV95cUxQYjhWSm90eHRRazBBMTZDR2duTTVhTUpEbFd3QmNkODJFODdIdWdUMFQzS21OTDdxSEdmMGdWRm9SWi1oSzlxZmdBV1JTSUNaQzYzTWV0V2NNandISGFaZEZpTHlOa1ZyZXEzc3F0RzA2bjRzS2hlWUpsNU5HRVFrT3NzcXkzS190b2dSOG5mbFdhTE1rU1pPcFVrUEdiODYxWFpGUzZTSi11UWdweXRDSnRhWXJQOU1DN1pHaTI3aFdDYXJqYkhoTEVWWDZObEppQXFrMzREVzdfY1IzbWlCQXRGOW9EVVhBVk8wUlpEZVlhMm94dk5nVVV6VEdPckFBdy03bGVOMlA0ekR1eHlBeF9NcTlYck9uS1ZRVXNJNnVlRFhVRV85REJCTVhRRFdlT0QtVlFKcjRyODgybjV5MmVzcDdweGRIQVN3emVJam9vMmtkSDRZWmM0UFVaa3ljNGpKd1dFZ1JBVXkxY3VQcGxOOVhhWTVheTFTaFRTcUd5TFNreEtNTFNXZFU1T2RWQjAtQWxtb3ZBQWdFSW14RV9LV2lOSVBpUzlYUEhKQ2MtRHM?oc=5",
       "date": "2026-10-24T21:03:08.000Z",
       "lang": "ar",
-      "titleKo": "키르쿠크 내일 업무 중단",
-      "count": 4,
+      "titleKo": "키르쿠크·디야날라, 내일 일요일 공무 중단",
+      "count": 2,
       "sources": [
         "عراق اوبزيرفر",
-        "المربد",
-        "المعلومة",
-        "وكالة موازين نيوز"
+        "المعلومة"
       ],
       "related": [
         {
           "titleKo": "바그다드 내일 일요일 공식 업무 중단, 파티마 자흐라 여사 순교 추도식",
           "source": "عراق اوبزيرفر",
           "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQNnpZc1huTmMwVUdjczN2TENOTzJrSWpWRmFnLUdHa2tpUWJocXp0clJfbTZ3WC0wMUxqYnZDOS1Rd0o0XzNDMll1VDVsZWVlandWWW5JVVdoV0xqbVJ2N0p3NkN1Y3hEVDZVMWVUQ3JUSUxlOWl4Y093QUVqNmtGdU1yemNFc1Bqb2E5SklJZXd1bTZKSzdVaW9zbjZuU0xkNXE0aHBlUEJQX1ZEUGNkWmNiRS1MOHF2QUpab2w5MUxnak8zSDBScXAwZm83dU51NzZmUWh4STQ5c1dlRFNGWUFNZXNkWUZYYzZBS1ZQQWZ5QkdXelJiMl85NjRqU3JXMnNWSDFOSkQ5LXhIVUpZVDd2R1pLcjNNWW9oOVRTTVVWX2ZRT0xDR0tyYjYwYjFKdWt6MHBGRnpzNTRPeHpOdWxjNUVxbDA?oc=5"
-        },
-        {
-          "titleKo": "바스라 교육청, 일요일 공식 업무 중단 확인",
-          "source": "المربد",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0tZ2J6Y2x6OHdBd2kycXVUQVA1c0dyUGtGV1FrTnR5MzhpVWtKRXhPdWNaTWVRTkJmRlpFbm9hb25FZGQwLXM0cFV5TU5Za21Y?oc=5"
-        },
-        {
-          "titleKo": "키르쿠크·디야날라, 내일 일요일 공무 중단",
-          "source": "المعلومة",
-          "link": "https://news.google.com/rss/articles/CBMiswNBVV95cUxQYjhWSm90eHRRazBBMTZDR2duTTVhTUpEbFd3QmNkODJFODdIdWdUMFQzS21OTDdxSEdmMGdWRm9SWi1oSzlxZmdBV1JTSUNaQzYzTWV0V2NNandISGFaZEZpTHlOa1ZyZXEzc3F0RzA2bjRzS2hlWUpsNU5HRVFrT3NzcXkzS190b2dSOG5mbFdhTE1rU1pPcFVrUEdiODYxWFpGUzZTSi11UWdweXRDSnRhWXJQOU1DN1pHaTI3aFdDYXJqYkhoTEVWWDZObEppQXFrMzREVzdfY1IzbWlCQXRGOW9EVVhBVk8wUlpEZVlhMm94dk5nVVV6VEdPckFBdy03bGVOMlA0ekR1eHlBeF9NcTlYck9uS1ZRVXNJNnVlRFhVRV85REJCTVhRRFdlT0QtVlFKcjRyODgybjV5MmVzcDdweGRIQVN3emVJam9vMmtkSDRZWmM0UFVaa3ljNGpKd1dFZ1JBVXkxY3VQcGxOOVhhWTVheTFTaFRTcUd5TFNreEtNTFNXZFU1T2RWQjAtQWxtb3ZBQWdFSW14RV9LV2lOSVBpUzlYUEhKQ2MtRHM?oc=5"
         }
       ],
       "tag": "휴일·행사",
       "impact": {
         "lv": "g",
-        "line": "키르쿠크 지역 휴무 — 현장 직접 영향 낮음",
+        "line": "현장 직접 영향 낮음",
         "act": "",
-        "place": "키르쿠크",
-        "km": 254
+        "place": "디와니야",
+        "km": 137
       }
     },
     {
@@ -895,31 +919,6 @@
         "act": "",
         "place": "바그다드",
         "km": 27
-      }
-    },
-    {
-      "title": "Finland expects tangible results from Iraqi government on disarmament process: Ambassador",
-      "source": "Rudaw",
-      "link": "https://www.rudaw.net/english/categories/interview/1079872",
-      "date": "2026-10-24T17:26:06.000Z",
-      "lang": "en",
-      "titleKo": "핀란드는 군축 절차에 대한 이라크 정부의 실질적인 결과를 기대합니다: 대사",
-      "url": "https://www.rudaw.net/english/categories/interview/1079872",
-      "body": "Finland supports the Iraqi government's efforts to bring weapons under state control but expects tangible progress in disarming armed factions ahead of next summer’s deadline, Finnish Ambassador to Ir",
-      "bodyKo": "핀란드는 이라크 정부가 무기를 국가 통제하에 두려는 노력을 지원하지만 내년 여름 마감일을 앞두고 무장 진영을 무장 해제하는 데 실질적인 진전을 기대하고 있습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
       }
     }
   ],
