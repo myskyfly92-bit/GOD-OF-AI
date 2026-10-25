@@ -4923,3 +4923,6 @@ body.sir-lock { overflow: hidden; }
 .acc-tag { display: inline-block; margin-right: 8px; padding: 1px 8px; border-radius: 4px; font-size: 11.5px; font-weight: 700 !important; vertical-align: 1px; }
 .acc-tag.is-fast { background: var(--danger); color: #fff !important; }
 .acc-tag.is-case { background: var(--cyan); color: #06201d !important; }
+
+/* 숨긴 탭·링크 (예: 작업구역 잠시 숨김) */
+.tab-btn[hidden], .tw-link[hidden] { display: none !important; }

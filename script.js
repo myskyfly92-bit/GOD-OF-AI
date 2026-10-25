@@ -1,3 +1,5 @@
+/* 작업구역(안전 › 작업구역) 잠시 숨김 — 다시 보이려면 false 로 */
+window.WZ_OFF = true;
 /* ==========================================================
    Bismayah HSE Situation Room — script.js
    - 실시간 시계 (바그다드 표준시 UTC+3)
@@ -4688,7 +4690,7 @@ document.querySelectorAll(".tab-btn").forEach((btn) => {
   groupBtns.forEach((gb) => gb.addEventListener("click", () => {
     const g = gb.dataset.group;
     const row = subBar.querySelector(`.sub-row[data-group="${g}"]`);
-    const target = (lastView[g] && row.querySelector(`.tab-btn[data-view="${lastView[g]}"]`)) || row.querySelector(".tab-btn");
+    const target = (lastView[g] && row.querySelector(`.tab-btn[data-view="${lastView[g]}"]:not([hidden])`)) || row.querySelector(".tab-btn:not([hidden])");
     if (target) target.click();
   }));
 
@@ -7527,6 +7529,13 @@ async function clinicCall(action, payload) {
       { sel: "#sugList", text: `남긴 건의는 아래 목록에 쌓여요. 담당자가 확인하면 상태가 <b>접수 → 검토중 → 반영 / 보류</b>로 바뀌고, <b>담당자 답변</b>도 여기서 볼 수 있어요.` },
     ]},
   ];
+  // 작업구역 숨김 중이면 안내에서도 뺀다 (window.WZ_OFF)
+  if (window.WZ_OFF) {
+    for (let i = CH.length - 1; i >= 0; i--) {
+      if (CH[i].wz) { CH.splice(i, 1); continue; }
+      CH[i].steps = CH[i].steps.filter((st) => st.go !== "view-workzone");
+    }
+  }
 
   let root, ring, bubble, running = false, stopFlag = false;
   function build() {
@@ -8611,7 +8620,6 @@ makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, subN
   const SHOW_DAYS = 5;
   const NEW = { id: "wn-20261013", date: "10월 13일", start: "2026-10-13", items: [
     { ic: "💬", t: "1:1 상담", d: "오른쪽 아래 <b>💬 1:1 상담</b> — 궁금한 점·현장 위험을 남기면 HSE 담당자가 바로 답해요", go: press(".talk-fab"), btn: "열기" },
-    { ic: "🗺️", t: "작업구역 새 단장", d: "<b>안전 → 작업구역</b> — 이라크 지도에서 구역 고르기 · <b>동시작업·돌풍·폭염 경고</b> · 지난주 작업 그대로 가져오기", go: tab("safety", "view-workzone") },
     { ic: "🌍", t: "세계 의료 수준", d: "<b>보건 → 세계 의료 수준</b> — 193개 나라 의료 인프라 점수·지도, 이라크·한국과 나란히 비교", go: tab("health", "view-health-world") },
     { ic: "⚖️", t: "법령 도우미 + 소방", d: "<b>법령 도우미</b>에 소방 법령·화재안전기준 추가 — \"소화기 몇 m마다?\" \"중대재해란?\"처럼 물어보세요", go: press(".ai-fab"), btn: "물어보기" },
     { ic: "🔥", t: "화재 사례", d: "<b>소방 → 화재 사례</b> — 국내 현장·중동 대형 화재를 용접·전기 등 원인별로 (TBM 사례 공유용)", go: tab("fire", "view-fire-news") },
