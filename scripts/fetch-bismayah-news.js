@@ -365,8 +365,12 @@ async function main() {
 
   let translated = 0, bodies = 0;
   const tkey = (t) => String(t || "").replace(/[\s\-–—|:"'«»]+/g, "").slice(0, 50);
-  const prevByLink = new Map(prev.map((n) => [n.link, n]));
-  const prevByTitle = new Map(prev.map((n) => [tkey(n.title), n]));
+  // 번역 기억장치: 같은 사건 묶음·제외 단어로 화면에서 빠진 기사도 번역은 기억해 둬서 다음 실행에 다시 번역하지 않는다
+  const CACHE_FILE = `cache/tr-${OUT.replace(/\.json$/, "")}.json`;
+  let trCache = []; try { trCache = JSON.parse(fs.readFileSync(CACHE_FILE, "utf-8")); } catch (e) { trCache = []; }
+  if (RETRANSLATE) trCache = [];
+  const prevByLink = new Map(trCache.map((n) => [n.link, n]).concat(prev.map((n) => [n.link, n])));
+  const prevByTitle = new Map(trCache.map((n) => [n.k, n]).concat(prev.map((n) => [tkey(n.title), n])));
   for (const n of list) {
     delete n._desc;
     const old = prevByLink.get(n.link) || prevByTitle.get(tkey(n.title)) || {};
@@ -396,6 +400,12 @@ async function main() {
     console.log(`  본문 ${n.body ? n.body.length + "자" : "못 가져옴"} · ${n.url.slice(0, 80)}`);
     await sleep(500);
   }
+  try {
+    const seenK = new Set();
+    const snap = list.filter((n) => n.lang !== "ko" && n.titleKo).map((n) => ({ k: tkey(n.title), link: n.link, date: n.date, titleKo: n.titleKo, url: n.url, body: n.body, bodyKo: n.bodyKo, tried: n.tried }))
+      .concat(trCache).filter((n) => !seenK.has(n.k) && seenK.add(n.k) && (!n.date || Date.parse(n.date) > Date.now() - (KEEP_DAYS + 3) * 86400000)).slice(0, 400);
+    fs.mkdirSync("cache", { recursive: true }); fs.writeFileSync(CACHE_FILE, JSON.stringify(snap));
+  } catch (e) { console.log("번역 기억장치 저장 실패:", e.message); }
   // 자동 번역이 자주 틀리는 낱말 바로잡기 (예: plague → '전염병'이 아니라 '페스트')
   const FIX = [[/plague/i, /전염병|흑사병/g, "페스트"]];
   list.forEach((n) => FIX.forEach(([src, bad, good]) => {
