@@ -1,6 +1,857 @@
 {
-  "generatedAt": "2026-10-26T06:23:56.141Z",
+  "generatedAt": "2026-10-26T13:22:43.234Z",
   "items": [
+    {
+      "title": "Iraqi PM Ali Zaidi Removes National Intelligence Service Chief",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/948681/iraqi-pm-ali-zaidi-removes-national-intelligence-service-chief",
+      "date": "2026-10-26T12:59:27.000Z",
+      "lang": "en",
+      "titleKo": "이라크 총리 알리 자이디, 국가정보국장 해임",
+      "url": "https://www.kurdistan24.net/en/story/948681/iraqi-pm-ali-zaidi-removes-national-intelligence-service-chief",
+      "body": "Iraqi Prime Minister Ali Zaidi has decided to terminate Hamid al-Shatri's duties as head of the Iraqi National Intelligence Service, according to INA.\nERBIL (Kurdistan24) - Iraqi Prime Minister Ali Zaidi has decided to terminate Hamid al-Shatri's duties as head of the Iraqi National Intelligence Service, according to the Iraqi News Agency (INA).\nThe announcement concerned the leadership of the country's intelligence agency but contained few details about the decision itself. INA did not provide a reason for ending al-Shatri's tenure or identify an official who would succeed him.\nThe initial account also did not specify when the decision was made, when it would take effect, or whether any interim leadership arrangements had been put in place.\nFurther information about the circumstances of the decision and the future leadership of the service was not immediately available.",
+      "bodyKo": "이라크 총리, 국정보국장 해임 결정\n\n이라크 통신사(INA)에 따르면 알리 자이디 이라크 총리가 하미드 알샤트리 국정보국장의 직무 해제를 결정했다.\n\n아르빌(쿠르디스탄24) - 이라크 통신사(INA)에 따르면 알리 자이디 이라크 총리가 하미드 알샤트리 국정보국장의 직무 해제를 결정했다.\n\n이 발표는 국가 정보기관의 지도부 교체에 관한 것이었으나 결정 자체에 대한 세부 사항은 거의 포함되지 않았다. INA는 알샤트리의 임기 종료 이유를 제시하지 않았으며 그의 후임자가 될 관계자도 밝히지 않았다.\n\n초기 보도는 결정이 언제 내려졌는지, 언제 효력을 발생할지, 또는 임시 지도부 체계가 마련되었는지 여부도 명시하지 않았다.\n\n결정의 구체적 상황과 정보기관의 향후 지도부에 관한 추가 정보는 즉시 확인할 수 없었다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
+      }
+    },
+    {
+      "title": "UPDATED: Iraq Formally Dissolves YBS Military Structure In Sinjar",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/948568/yazidi-ybs-fighters-to-be-integrated-into-iraqi-security-forces-in-sinjar-ceremony-today",
+      "date": "2026-10-26T12:59:15.000Z",
+      "lang": "en",
+      "titleKo": "야지디 YBS 전투원, 오늘 신자르 행사에서 이라크 보안군에 통합",
+      "url": "https://www.kurdistan24.net/en/story/948568/yazidi-ybs-fighters-to-be-integrated-into-iraqi-security-forces-in-sinjar-ceremony-today",
+      "body": "The integration is part of PM al-Zaidi's plan to bring weapons under state control, with fighters integrated into federal institutions while remaining in Sinjar under their protection mandate, following negotiations that began in February 2026\nERBIL (Kurdistan 24) - A ceremony is being held Monday in the Sinjar Mountains to begin the process of integrating fighters from the Sinjar Resistance Units, known as YBS, into Iraq's security institutions, with approximately four to five thousand fighters set to become members of Iraqi security forces, an informed source in Sinjar who requested anonymity told Kurdistan 24.\n\"The process will be implemented in several phases and approximately five thousand fighters will become members of Iraq's security institutions,\" the source said. \"According to the integration mechanism, those fighters who become part of Iraq's federal institutions will remain in Sinjar under the name of protecting the area.\"",
+      "bodyKo": "시냐르 저항군 통합 의식 개최…약 4,000~5,000명 이라크 보안군 편입\n\n아르빌(쿠르디스탄 24) - 시냐르 저항군(YBS)의 이라크 보안기관 통합 절차를 시작하기 위한 의식이 월요일 시냐르 산맥에서 개최된다. 약 4,000~5,000명의 전투원이 이라크 보안군 대열에 합류할 예정이라고 시냐르의 한 정보통 관계자가 쿠르디스탄 24에 밝혔다.\n\n\"통합 절차는 여러 단계에 걸쳐 진행될 것이며 약 5,000명의 전투원이 이라크 보안기관의 일원이 될 것\"이라고 익명을 요청한 이 관계자는 말했다. \"통합 메커니즘에 따르면 이라크 연방기관의 일부가 되는 전투원들은 지역 보호 임무 명목으로 시냐르에 남아있게 된다.\"\n\n이번 통합은 2026년 2월부터 시작된 협상에 이어 무장세력을 국가 통제 하에 두려는 알자이디 총리의 계획의 일환이다.",
+      "tried": true,
+      "count": 6,
+      "sources": [
+        "Anadolu Ajansı",
+        "UA.NEWS",
+        "شفق نيوز",
+        "Kurdistan24"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 신자르 PKK 연계 YBS 4천명, 내무부·해시드 알샤아비 합류",
+          "source": "Anadolu Ajansı",
+          "link": "https://www.aa.com.tr/en/middle-east/4-000-pkk-linked-ybs-members-in-iraq-s-sinjar-to-join-interior-ministry-hashd-al-shaabi/4101285"
+        },
+        {
+          "titleKo": "신자르 YBS, 무장해제 후 이라크 보안군 합류 예정",
+          "source": "UA.NEWS",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbFZyU3hlc0w4djY2bHNCQW1TN25CcDRKSlBVaWo5V3ZqNml2UnNmSmNPZ2RyQXBaYjJzamJqTTltcWNhUmFjYTlBdDlfQVIxVU5vZ3hGRzU3enBEWGIxOEdkMmQxZThrTVFxNmIwMnZyRG9sLUkxXzE2d0xrNXR5Y3BGNHotRmZVbFp0SXVLcjZWWGRCcVdIdnlCRlpZcG44UXhmbzJUekdReWs4WTMtWC1KMHNFUQ?oc=5"
+        },
+        {
+          "titleKo": "이라크 신자르 PKK 연계 조직, 무장해제 후 이라크군 입대",
+          "source": "Anadolu Ajansı",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNN1k3dVNrQ19mUkRxaHQzLUJrbHk0Nmhyc0tqVWkySnBkaWdvRjdNbHhBUGxYZ3RmemNPUWF0MHJ3M2RNMUI2cmg3ckJNeTdpMWQ3VUw3SEk0WE82dkdXLW14TXdjNmlPenZENUdyaVRTWExlR252WXdYX1pvRGZoLXNncDgxZDhYV0pRY2MxTXBTM1pYeGJkSEQtVS1WYktfWkVZY2J3?oc=5"
+        },
+        {
+          "titleKo": "이라크, YBS를 국가 보안군에 통합",
+          "source": "شفق نيوز",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQanlCTEtXZ3pHRDNlQUdMSFk4UlVnSW1iS2pOaVhlREZYRi1RVy15cDZlRm9sNkdiZmJaTzVZdjZlTVNJeGVjdC1WeU4zN0F2bUpNRm5BaWhLa0FSaU9RVlJaRWNTWEtJX1JGZ2FfWjB3U24zSEpfeVVFOG1FX1FIOVVidmJXdw?oc=5"
+        },
+        {
+          "titleKo": "야지디 YBS 전투원, 오늘 신자르 행사에서 이라크 보안군에 통합",
+          "source": "Kurdistan24",
+          "link": "https://www.kurdistan24.net/en/story/948568/yazidi-ybs-fighters-to-be-integrated-into-iraqi-security-forces-in-sinjar-ceremony-today"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "신자르",
+        "km": 429
+      }
+    },
+    {
+      "title": "US Seeks to Complete Iran’s Land Blockade | Are Pakistan and Iraq Shifting Toward Trump?",
+      "source": "اقتصاد آنلاین",
+      "link": "https://www.eghtesadonline.com/en/news/5/us-seeks-to-complete-iran%E2%80%99s-land-blockade-%7C-are-pakistan-and-iraq-shifting-toward-trump",
+      "date": "2026-10-26T12:50:41.000Z",
+      "lang": "en",
+      "titleKo": "미국, 이란 육로 봉쇄 완성 추진",
+      "url": "https://www.eghtesadonline.com/en/news/5/us-seeks-to-complete-iran%E2%80%99s-land-blockade-%7C-are-pakistan-and-iraq-shifting-toward-trump",
+      "body": "EghtesadOnline: The United States, with the cooperation of Iran’s neighbors Pakistan and Iraq, is moving to tighten a land blockade around Iran. Both countries have maintained close ties with the Islamic Republic, but are now increasingly restricting border crossings and trade routes with Iran.\nPolitical Desk: From Pakistan to Iraq, restrictions on Iran’s land borders are intensifying. Until recently, Pakistan had cited technical problems to explain border closures. Now, however, its Foreign Ministry has dropped that justification, stating that Islamabad will comply with US sanctions against Iran. Iraq’s prime minister has announced a similar position more cautiously.\nIran is facing restrictions on its land routes at a time when a naval and air blockade had already begun. The closure of the al-Shaib border crossing with Iraq and trade restrictions at Pakistan’s Rimdan–Gabd and Mirjaveh–Taftan crossings are signs that Iran’s access to regional trade networks is becoming increasingly dif",
+      "bodyKo": "**미국, 이란 육로 봉쇄 강화 추진**\n\n에그테사드온라인: 미국이 이란의 이웃 국가인 파키스탄과 이라크의 협력 아래 이란을 둘러싼 육로 봉쇄를 강화하고 있다. 두 국가는 이슬람공화국과 긴밀한 관계를 유지해왔으나 현재 이란과의 국경 통과지점과 무역로를 점점 더 제한하고 있다.\n\n정치부: 파키스탄에서 이라크까지 이란의 육로 국경에 대한 제한이 심화되고 있다. 최근까지 파키스탄은 국경 폐쇄의 이유를 기술적 문제로 설명해왔다. 그러나 이제 파키스탄 외교부는 그 정당성을 내려놓고 이슬라마바드가 미국의 이란 제재를 준수할 것이라고 밝혔다. 이라크 총리도 더 신중한 입장에서 유사한 입장을 발표했다.\n\n이란은 해상 및 공중 봉쇄가 이미 시작된 상황에서 육로 제한에 직면하고 있다. 이라크와의 알샤이브 국경 통과지점 폐쇄와 파키스탄의 림단-가브드 및 미르자베-타프탄 통과지점에서의 무역 제한은 이란의 지역 무역망 접근이 점점 더 어려워지고 있다는 신호다.",
+      "tried": true,
+      "count": 5,
+      "sources": [
+        "UA.NEWS",
+        "The Jerusalem Post",
+        "Rudaw",
+        "The New Region",
+        "اقتصاد آنلاین"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 총리, 이란 국경 봉쇄 위협 관련 조사 지시 — 예루살렘 포스트",
+          "source": "UA.NEWS",
+          "link": "https://ua.news/en/dovkolo-svitu/premier-iraku-nakazav-rozsliduvati-pogrozi-blokadi-cherez-kordon-z-iranom-jerusalem-post"
+        },
+        {
+          "titleKo": "이라크 총리, 폐쇄된 이란 국경 통로 둘러싼 지방의회 위협 사건 수사 지시",
+          "source": "The Jerusalem Post",
+          "link": "https://www.jpost.com/middle-east/iran-news/article-912901"
+        },
+        {
+          "titleKo": "이라크 총리, 이란 국경 통로 논란 속 지방의회 의장 조사 지시",
+          "source": "Rudaw",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9nM3k4c2ZEYlc0c0hja0c4TnExbkZZcnJvUnpBUy14T2lLR1FKU3pLdzBDSWpKSGhSTUE4QjhfTW90S2lfRlFuUDdRTzN1YXMtUEJrZW5lbmZlWFZ2YUE?oc=5"
+        },
+        {
+          "titleKo": "이라크 총리, 미산 의회 의장 '위협' 관련 수사 지시",
+          "source": "The New Region",
+          "link": "https://thenewregion.com/posts/6915"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "طقس العراق.. موجة مطرية متفاوتة خلال الأيام العشرة المقبلة",
+      "source": "Al Daee News",
+      "link": "https://www.aldaaenews.com/AR/Details/64347",
+      "date": "2026-10-26T12:42:31.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 날씨.. 향후 10일간 강수량 편차 있는 강우 예상",
+      "url": "https://www.aldaaenews.com/AR/Details/64347",
+      "body": "أعلنت الهيئة العامة للأنواء الجوية، اليوم الثلاثاء، عن تعرض البلاد لموجة مطرية متفاوتة الشدة خلال الأيام العشرة المقبلة.\nالداعي نيوز / محلي أعلنت الهيئة العامة للأنواء الجوية، اليوم الثلاثاء، عن تعرض البلاد لموجة مطرية متفاوتة الشدة خلال الأيام العشرة المقبلة. وقالت الهيئة في بيان تلقته \"الداعي نيوز\"، إن \"توقعات نماذج الطقس تشير إلى تأثر البلاد بحالات من عدم الاستقرار الجوي خلال الثلث الأخير من شهر تشرين الأول الجاري، نتيجة تتابع المنظومات الجوية الخريفية وتباين الكتل الهوائية المؤثرة في المنطقة\". وأضافت، أن \"الحالة الجوية الأولى تبدأ اعتبارا من يوم الثلاثاء الموافق 20-10، وتستمر لعدة أيام، وتمتاز بفرص تساقط زخات مطر خفيفة الشدة، وأحياناً معتدلة، في أماكن متفرقة من مدن البلاد وعلى فترات متقطعة، مع احتمالية حدوث البرق والرعد، فضلاً عن نشاط الرياح الهابطة من السحب الركامية الرعدية في بعض المناطق، مما قد يؤدي إلى إثارة الغبار محليا\". وبينت أن \"فرص هطول الأمطار تستمر خلال يومي الأربعاء والخميس، مع تباين في فرص الهطول وكمياته مكانياً وزمانياً، تبعا لتطور السحب الركامية ومساراتها\". وأشارت ال",
+      "bodyKo": "기상청, 향후 10일간 강수 예보 발표\n\n기상청은 화요일 현재 향후 10일간 강도가 다양한 강수 현상이 예상된다고 발표했다. 기상청이 본지에 제공한 성명에서 \"기상 모델 예측에 따르면 현재 10월 하순 동안 가을 기압계의 연속적인 영향과 지역 상층 기단의 변화로 인해 대기 불안정 현상이 나타날 것으로 예상된다\"고 밝혔다. 이어 \"첫 번째 기상 현상은 10월 20일 화요일부터 시작되어 며칠간 지속될 것이며, 전국 여러 지역에서 약한 강도의 소나기가 간헐적으로 내릴 것으로 예상되고 때로는 중간 정도의 강도를 보일 것\"이라고 덧붙였다. 또한 \"번개와 천둥이 발생할 가능성이 있으며, 적란운에서 내려오는 하강풍이 일부 지역에서 활발해져 국지적으로 먼지가 날릴 수 있다\"고 설명했다. 기상청은 \"수요일과 목요일에도 강수 확률이 지속될 것이며, 적란운의 발달과 이동 경로에 따라 강수 확률과 강수량이 시간적·공간적으로 변할 것\"이라고 밝혔다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Al Daee News"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Al-Sudani's bloc boycotts Iraq's parliament over attacks on its leader",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Iraq/Al-Sudani-s-bloc-boycotts-Iraq-s-parliament-over-attacks-on-its-leader",
+      "date": "2026-10-26T12:31:38.000Z",
+      "lang": "en",
+      "titleKo": "수다니 진영, 지도자 공격에 항의해 이라크 의회 보이콧",
+      "url": "https://shafaq.com/en/Iraq/Al-Sudani-s-bloc-boycotts-Iraq-s-parliament-over-attacks-on-its-leader",
+      "body": "Shafaq News- Baghdad The Reconstruction and Development bloc of former Iraqi Prime Minister Mohammed Shia al-Sudani said on Monday it would boycott parliament until a lawmaker it accuses of attacki\nThe bloc, which won 46 of parliament's 329 seats in the November 2025 election, more than any other list, did not name the lawmaker.\nIn a statement, the bloc accused some lawmakers of waging a malicious smear campaign against its coalition and leadership. It said it had refrained from responding publicly and had formally asked the speaker to refer the lawmaker to the conduct committee, but no action was taken, which only emboldened him.\nThe bloc urged the speaker and his two deputies to take a firm stand, saying it would return once parliament's bylaws are enforced to stop the attacks.\nAl-Sudani served as prime minister from 2022 until May this year, when Ali al-Zaidi's government took office.",
+      "bodyKo": "샤팍뉴스- 바그다드 무함마드 시아 알수다니 전 이라크 총리의 재건개발블록이 월요일 자신을 공격한다고 주장하는 의원에 대해 의회를 보이콧하겠다고 밝혔다.\n\n11월 2025년 선거에서 의회 329석 중 46석을 획득해 다른 어느 정당보다 많은 의석을 차지한 이 블록은 해당 의원의 이름을 공개하지 않았다.\n\n성명서에서 이 블록은 일부 의원들이 자신의 연립정부와 지도부를 상대로 악의적인 중상모략 캠페인을 벌이고 있다고 비난했다. 공개적으로 대응하기를 자제했으며 의장에게 해당 의원을 윤리위원회에 회부해 줄 것을 공식 요청했지만 아무런 조치도 취해지지 않았고, 이는 그를 더욱 대담하게 만들었을 뿐이라고 밝혔다.\n\n이 블록은 의장과 그의 두 부의장에게 강경한 입장을 취할 것을 촉구했으며, 의회 회칙이 공격을 중단하도록 시행되면 복귀하겠다고 했다.\n\n알수다니는 2022년부터 올해 5월 알리 알자이디 정부가 출범할 때까지 총리로 재직했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "بعد تهديده بفصل ميسان عن العراق.. مذكرة قبض بحق رئيس مجلس المحافظة",
+      "source": "إيلاف",
+      "link": "https://elaph.com/Web/News/2026/10/1609083.html",
+      "date": "2026-10-26T12:30:00.000Z",
+      "lang": "ar",
+      "titleKo": "미산 분리 위협 후.. 지방의회 의장에 체포영장",
+      "url": "https://elaph.com/Web/News/2026/10/1609083.html",
+      "body": "القضاء العراقي يصدر مذكرة قبض بحق رئيس مجلس محافظة ميسان مصطفى دعير المحمداوي بعد تهديده بالانفصال وغلق الطرق بسبب منفذ الشيب الحدودي.\nإيلاف من بغداد: أصدر القضاء العراقي مذكرة قبض رسمية بحق رئيس مجلس محافظة ميسان، مصطفى دعير المحمداوي، إثر تصريحاته التي تضمنت التهديد بإعلان العصيان المدني، وقطع الطرق، وفصل المحافظة عن الدولة العراقية، احتجاجاً على استمرار إغلاق منفذ الشيب الحدودي مع إيران.\nوكشفت وثيقة قضائية صادرة عن محكمة تحقيق الكرخ الثالثة أن المذكرة صدرت استناداً إلى كتاب رسمي أحيل من مكتب رئيس الحكومة الاتحادية، يتضمن طلباً مباشراً بتحريك الشكوى واتخاذ الإجراءات القانونية اللازمة؛ وذلك على خلفية منح المحمداوي مهلة ثلاثة أيام لحكومة بغداد لإعادة فتح المعبر البري.\nوجاء التحرك القضائي بعد ساعات من توجيه رئيس مجلس الوزراء العراقي، علي فالح الزيدي، بفتح تحقيق إداري موسع مع مصطفى دعير عبد الحسن؛ مؤكداً في بيان نشره مكتبه الإعلامي عبر وكالة الأنباء العراقية الرسمية ضرورة الالتزام بالسياقات الدستورية والأطر القانونية في إدارة الملفات الخدمية، مع ترك تقدير المسؤولية الجزائية المترتبة على ",
+      "bodyKo": "이라크 사법부, 미산 주지사 협의회 의장 위협 혐의로 체포영장 발부\n\n이라크 사법부가 미산 주지사 협의회 의장 무스타파 두에이르 알무함마다위에 대한 공식 체포영장을 발부했다. 그는 민간 불복종 선언, 도로 차단, 이란과의 국경 통로인 알시브 국경소 폐쇄에 항의하며 미산 주를 이라크에서 분리하겠다고 위협한 발언을 한 혐의를 받고 있다.\n\n알카르크 제3 수사법원이 발부한 사법 문서에 따르면 체포영장은 연방정부 총리실에서 공식 공문으로 제출한 요청에 근거해 발부됐다. 해당 공문에는 고소를 제기하고 필요한 법적 조치를 취할 것을 직접 요청했으며, 이는 알무함마다위가 바그다드 정부에 국경 통로 재개를 위해 3일의 유예 기간을 부여한 배경에서 나온 것이다.\n\n사법부의 조치는 이라크 총리 알리 팔레흐 알자이디가 무스타파 두에이르 압둘하산에 대한 광범위한 행정 조사를 지시한 지 수 시간 후에 이루어졌다. 총리실 대변인이 이라크 공식 통신사를 통해 발표한 성명에서 그는 공공 서비스 업무 처리 시 헌법적 절차와 법적 틀을 준수할 필요성을 강조했으며, 형사 책임 판단은",
+      "tried": true,
+      "count": 5,
+      "sources": [
+        "إيلاف",
+        "مونت كارلو الدولية",
+        "بوابة الشروق",
+        "The National",
+        "العربي الجديد"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크: 이란과의 알시이브 국경통로 문제.. 미산 지방의회 의장 체포 명령, 반란 위협 혐의",
+          "source": "مونت كارلو الدولية",
+          "link": "https://www.mc-doualiya.com/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/20261026-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%82%D8%B6%D9%8A%D8%A9-%D9%85%D8%B9%D8%A8%D8%B1-%D8%A7%D9%84%D8%B4%D9%8A%D8%A8-%D9%85%D8%B9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%A3%D9%85%D8%B1-%D9%82%D8%B6%D8%A7%D8%A6%D9%8A-%D8%A8%D8%AA%D9%88%D9%82%D9%8A%D9%81-%D8%B1%D8%A6%D9%8A%D8%B3-%D9%85%D8%AC%D9%84%D8%B3-%D9%85%D9%8A%D8%B3%D8%A7%D9%86-%D8%A5%D8%AB%D8%B1-%D8%AA%D9%87%D8%AF%D9%8A%D8%AF%D9%87-%D8%A8%D8%A7%D9%84%D8%B9%D8%B5%D9%8A%D8%A7%D9%86"
+        },
+        {
+          "titleKo": "이라크: 이란 국경 통로 폐쇄 거부하며 반란 위협한 미산주 의회 의장 체포 명령",
+          "source": "بوابة الشروق",
+          "link": "https://www.shorouknews.com/mobile/news/view.aspx?cdate=26102026&id=0698e651-0604-4ec5-b39d-c0b55150939f"
+        },
+        {
+          "titleKo": "이라크 법원, 이란 국경 폐쇄 거부한 미산주 지도자 체포 명령",
+          "source": "The National",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSDNxODlWclJ0NWhYS0MxNHcwWGRRczNqanhuNWI4Z1V0LUZtT2dKRzJpTXlIZG44VXJCeE80cFQzbS11bU9uZlI2VVlKQl9zSkhoeWFXV3lnWlNRdkRDb2ZvVkM4bENOU0RMR1VZbEJLNHhFbnRsbmIxTDB0NzdRVm91bU12X0FHZU1iTXJrc0Q1OWR2dW9tOU9YWWVoR01qRWplcEt5QUpOMEVvY3MtNENJaUpxTXJuc0UzSUdqMklmUnNJd2MzMFZfMi1KV2kyVHdzVQ?oc=5"
+        },
+        {
+          "titleKo": "바그다드, '알시이브' 통로 폐쇄에 항의해 반란 위협 직면",
+          "source": "العربي الجديد",
+          "link": "https://news.google.com/rss/articles/CBMi5gNBVV95cUxNdk5jZ3dpNndGYjRzM0gwX1JPTE94THhrVmhKWlVSMTVjeWtDNWxJQ2FGMzhVdkdxS0VFcDVHTkFQenlNUE9WSHp0S0Z2V0t0RlQtZnhJZ1BUWGRIUnJabVIyNkxpeXRMd2tOazMwWkZQWERFc0xDRGVIcG83XzI0WTJ3NGs2ZFZVZGtHeWpsbzQ0YklXcHVDYWtVdzkyYnMwX3ZpQ2s4NXFvOE9oVVhFNnlFOEZ1TDNzZ2hkczlpSk5EdjZweVN3M1UtWGZtalRvbFJ0S3VhaDA2NDFHNWtqcmpOZ1RUSkJvY1JKclpVSmQwLWp6VVhwczgzbzlEajVBcmRLZWdkNUdaZ2JRWWRxem9pQ2VMZkhjMkxkakg5bTF5Q01LYzB4YmFMdmh1dkQyZGRIdnJrbllFOVc5UUZzeDY1MXk1MFhwdkVrbXhZZEc0NEw5NG5hSE4zbmFyYzBETnZTOUpMcS0zUmNHSlVYMkZZZDNpazVyRi1uYzhLX0dlVm5qMG4zWGFpZ3VVNFJ2bm92TjlVc3lSd0xVZmVRdE81OEwxSTdvUFVCelhqQnlPN3RKaUd6YkxKc2xsZGJTTUlJOTRlNnc4eWZJRFczNkZ0c1VTMkx2Sm5ISVVIdFhZMUdTYXfSAesDQVVfeXFMTXhQV01VQkVOMzAyS3FyVmhxaXhWU1lRVXlhQzRWZ1hjT3U4bno0c3F6bXpuX25uZzNOSjhvaWlhaGVzR0VwVFFLMEpIUzlLQXN2M09EbnFjak0yNHkyM2tCbEtIOVdjWmdlSE1DemJ1T2UyZWFqaFlmellVempvWF9XOWdEcjZmSmNrTmVMQ1k3TlJJSUw1NTYtang1dHI1b1BMeVJINFJEcEZETWJ4Q2Rnak04aktvMklnLXNyeU92QWFYX3J0UlJFd3lFTmJkSlJGbHlMZFBiZGN1OV9SaHhTdEQwSmtZWlBJcnBXbDF3MXVDT0hERTRXdkxhNUlWZDhHVFhTUzhjZm96NUFQZDlmdWNldW9iWFF2TnJLV2NPMzV2end1dUVzR2JSZkc1Y25qY29KLWtOWlpmYUl5YUtpY1M5akR4OUNZcnVtVml1ZkVyREFQd08zNTJ2azBRTmxSd01pV2Q5cjVHVFFmQVVTTWVHTWNjaW1yS3VJdWhzU1JhU3ozSk9oVnpSdkE4eWlFLV9DUWlhT0ZzNzlmNXZsNDU4S2Jjd1hJNkU2bEFCcHZCZWs5aWQzZHpHRnRiWnJhSzVBWW5WZk1jbnpiRDBJdi1reEN4YXhCOFhXalRhMFFzaTM0bEpvbWc?oc=5"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "아마라(마이산)",
+        "km": 280
+      }
+    },
+    {
+      "title": "Iraq's al-Zaidi seeks closer economic ties with Jordan",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Iraq/Iraq-s-al-Zaidi-seeks-closer-economic-ties-with-Jordan",
+      "date": "2026-10-26T12:16:19.000Z",
+      "lang": "en",
+      "titleKo": "이라크 알자이디, 요르단과의 경제 관계 강화 추진",
+      "url": "https://shafaq.com/en/Iraq/Iraq-s-al-Zaidi-seeks-closer-economic-ties-with-Jordan",
+      "body": "Shafaq News- Baghdad Iraqi Prime Minister Ali al-Zaidi called for stronger trade and investment links with Jordan on Monday, telling King Abdullah II in Amman that Iraq now sees itself as \"a meetin\nBaghdad is pursuing balanced relations built on shared interests, al-Zaidi said, according to his office, and will keep working to calm the region's conflicts.\nThe king said Jordan wants closer ties with Iraq across the board, especially in politics, the economy and development, and supports Baghdad's efforts to bring stability to the region.\nThe two sides are expected to sign memorandums on economic and development programs during the visit, government spokesman Haider al-Aboudi said.\nAl-Zaidi also held talks with Jordanian Prime Minister Jafar Hassan.\nEarlier this month, the Iraqi prime minister visited Saudi Arabia and Kuwait and is due in Lebanon and Syria this week.",
+      "bodyKo": "바그다드 총리, 요르단과 무역·투자 협력 강화 촉구\n\n샤팍뉴스- 알리 알자이디 이라크 총리는 월요일 암만에서 압둘라 2세 국왕을 만나 이라크가 이제 자신을 \"중동의 만남의 장\"으로 본다고 말하며 요르단과의 더욱 강화된 무역·투자 연계를 촉구했다.\n\n알자이디는 자신의 사무실에 따르면 바그다드가 공동의 이익에 기반한 균형잡힌 관계를 추구하고 있으며 지역 분쟁을 진정시키기 위한 노력을 계속할 것이라고 말했다.\n\n국왕은 요르단이 정치, 경제, 개발 등 전반에 걸쳐 이라크와의 관계 강화를 원하며 바그다드의 지역 안정화 노력을 지지한다고 말했다.\n\n정부 대변인 하이더 알아부디에 따르면 양측은 방문 기간 경제 및 개발 프로그램에 관한 양해각서에 서명할 것으로 예상된다.\n\n알자이디는 또한 자파르 하산 요르단 총리와 회담을 가졌다.\n\n이달 초 이라크 총리는 사우디아라비아와 쿠웨이트를 방문했으며 이번 주 레바논과 시리아를 방문할 예정이다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Sinjar’s Yazidi armed groups to merge 4,165 fighters into Iraqi forces",
+      "source": "964media",
+      "link": "https://en.964media.com/54225/",
+      "date": "2026-10-26T12:04:13.000Z",
+      "lang": "en",
+      "titleKo": "신자르 야지디 무장단체, 4,165명 전투원을 이라크군에 편입",
+      "url": "https://en.964media.com/54225/",
+      "body": "BAGHDAD — Two Yazidi armed groups in Sinjar said Monday they had agreed with the federal government to merge\nThe fighters, men and women, belong to the Sinjar Resistance Units and their women’s wing, the Sinjar Women’s Units. The Sinjar Resistance Units are a Yazidi-majority force with ties to the Kurdistan Workers’ Party, or PKK.\nIn a joint statement, the two groups said the agreement would place their members under federal security institutions while protecting the fighters’ rights and the Yazidi community’s security and identity.\nThe government said the same day that federal authorities would take over security on Mount Sinjar, west of Mosul in Nineveh governorate, under the supervision of Prime Minister Ali al-Zaidi.\nSabah al-Numan, spokesperson for the commander-in-chief of the armed forces, said the government was going ahead with the groups’ “military disengagement,” dissolving their separate military command and merging their members into official security institutions.",
+      "bodyKo": "바그다드 — 신자르의 야지디 무장단체 2개 조직이 월요일 연방정부와의 합병에 합의했다고 밝혔다.\n\n남녀 전투원들로 구성된 이들은 신자르저항부대와 여성 조직인 신자르여성부대에 속해 있다. 신자르저항부대는 야지디 다수로 이루어진 세력으로 쿠르드노동자당(PKK)과 연계돼 있다.\n\n두 조직은 공동성명에서 이번 합의가 전투원들을 연방 보안기관 산하에 두면서 전투원들의 권리와 야지디 공동체의 안보 및 정체성을 보호할 것이라고 밝혔다.\n\n정부는 같은 날 연방 당국이 모술 서쪽 니네베 주의 신자르산 보안을 알리 알자이디 총리의 감독 아래 인수할 것이라고 발표했다.\n\n사바흐 알누만 군 총사령관 대변인은 정부가 이 조직들의 \"군사 분리\"를 진행하고 있으며 별도의 군사 지휘부를 해산하고 전투원들을 공식 보안기관에 통합할 것이라고 말했다.",
+      "tried": true,
+      "count": 9,
+      "sources": [
+        "964media",
+        "شفق نيوز",
+        "The New Region",
+        "ANHA",
+        "صوت الإمارات",
+        "Rudaw"
+      ],
+      "related": [
+        {
+          "titleKo": "YBŞ: 4,000명 전투원 이라크군에 합류",
+          "source": "شفق نيوز",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10SWJ2Qlo2aE5JZ205MjJkYjZsYVVPdlBEcW44WUdXZ185UEh6QV83dW5tUnVLWlo0bjZ3aFYtNnVSUjVTQjh0Q2dwR2tDcFhWQUZkYWVVbUpUT2hibXIxVVNEV1hWOXBFU3hUckFMMFp3QmRC?oc=5"
+        },
+        {
+          "titleKo": "위원회, YBŞ 전투원의 이라크군 통합 착수",
+          "source": "شفق نيوز",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPblEwcmZ4Ykx6ejJ1ZUJFU1RVVVk2TVZaZ2g4ZjJLTUJHa2k1NG9WTmpzSVQ0MkdVMnppbkM4YkU1X1Y3Zml2RmdQN2NrLVZxMnl1OGgxYUNnSE0xQ1c5TmlXWWpUSWRMRGRkTjRkOHpHLUMxelNxQmFtaGxyaFg4Q3lGalBVaklmVWxycVZieVpja1pSQkU4?oc=5"
+        },
+        {
+          "titleKo": "야지디 군대, 4,165명 전투원 이라크 보안군에 통합된다",
+          "source": "The New Region",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1lUXREd3ZwMzhEWGl2VjNoTWE3YlZyV09hQnV6dlhlRnVxM1dmbW9TQXlTM0JVZTlKZElXTlRVckI4bkxlVmxkMmN6SQ?oc=5"
+        },
+        {
+          "titleKo": "이라크 정부, YBŞ 통합 시작 발표",
+          "source": "ANHA",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQX2o0NlBRTjhCNF9JM21hUXNUa3hiZVdscDBZLXVHTGRxdnpEbFZ0M05PRDdpNEJKWEJYd0wyekhEbmhnOXhVVUFfN2gtelZ3SzItZWFxSnk1bWtCVkxMUTFxOC1MeTFBZ003WGhyczBXdlVZSkh0NTJRWEJOd3BrbDF3?oc=5"
+        },
+        {
+          "titleKo": "신자르 긴장 완화: 이라크 정부, 야지디 민병대 통합 시작",
+          "source": "صوت الإمارات",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVDE2ZHlweGVzS3E5RjFybTIyN2czNDBMRWRMNDVqZ0lTR21TYjRDQXg5dk81MFIxbFRIMmVVTFhyUFAzTW1wUDAwRDY5di11MUl4Vzd1SW5Pb2ZDeHZlekRWZlhBaEtjRGZhZVJsT2lvQmRRbmJLRlRyZU1XSnFWWVJBVWNxeDB3eXBKSlJHS21CT3E1aEVwUFNvRmo3SXZ0VEZnd0dMSmhIRTJTV2sxVWI4WDNyckZKTG4tOE9TODRRd3NKTVZtOGk1Zw?oc=5"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "신자르",
+        "km": 429
+      }
+    },
+    {
+      "title": "Iraqi court orders arrest of Maysan council chief",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Iraq/Iraqi-court-orders-arrest-of-Maysan-council-chief",
+      "date": "2026-10-26T11:58:08.000Z",
+      "lang": "en",
+      "titleKo": "이라크 법원, 미산 의회 의장 체포 명령",
+      "url": "https://shafaq.com/en/Iraq/Iraqi-court-orders-arrest-of-Maysan-council-chief",
+      "body": "Shafaq News- Baghdad A Baghdad court has issued an arrest warrant for Mustafa Duair, head of the provincial council in Iraq's southern Maysan province, after he threatened civil disobedience and ro\nThe Third Karkh Investigative Court acted on a complaint from Prime Minister Ali al-Zaidi's office over Duair's statements, according to a court document dated October 25 and obtained by Shafaq News. The court took a statement from the prime minister's legal representative and reviewed a recording of Duair's remarks before issuing the warrant under Article 224, second paragraph, of Iraq's Penal Code and notifying the public prosecutor.\nAt a news conference at the crossing on Sunday, Duair gave the federal government until Thursday to reopen Al-Sheeb, threatening to declare civil disobedience, block roads and \" separate the province from the body of Iraq\" if it did not.",
+      "bodyKo": "바그다드 법원, 미산주 의회 의장에 체포영장 발부\n\n바그다드 법원이 이라크 남부 미산주 의회 의장 무스타파 두아이르에 대한 체포영장을 발부했다. 두아이르가 시민 불복종을 위협하고 도로 봉쇄를 예고한 혐의에 따른 것이다.\n\n제3카르크 수사법원은 알리 알자이디 총리 사무실의 고소장을 근거로 조치를 취했다. 샤팍 뉴스가 입수한 10월 25일자 법원 문서에 따르면, 법원은 총리의 법률 대리인으로부터 진술을 청취하고 두아이르의 발언 녹음을 검토한 후 이라크 형법 제224조 제2항을 적용해 체포영장을 발부하고 검사에 통보했다.\n\n일요일 국경 통과지점에서 열린 기자회견에서 두아이르는 연방정부에 목요일까지 알시브를 재개할 것을 요구했다. 만약 재개하지 않으면 시민 불복종을 선언하고 도로를 봉쇄하며 \"주를 이라크 영토에서 분리\"하겠다고 위협했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "아마라(마이산)",
+        "km": 280
+      }
+    },
+    {
+      "title": "Amid escalating internal tensions, Iraqi government struggles for control",
+      "source": "The Jerusalem Post",
+      "link": "https://www.jpost.com/middle-east/iran-news/article-912905",
+      "date": "2026-10-26T11:54:00.000Z",
+      "lang": "en",
+      "titleKo": "내부 긴장 고조 속 이라크 정부 통제력 약화",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-912905",
+      "body": "The dispute comes amid tensions between Baghdad and Tehran and renewed protests in the Iraqi capital marking the anniversary of the 2019 Tishreen movement.",
+      "bodyKo": "이 분쟁은 바그다드와 테헤란 간의 긴장이 고조되는 가운데 2019년 티슈린 운동 기념일을 맞아 이라크 수도에서 재개된 시위와 맞물려 발생했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The Jerusalem Post"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraqi PM Al-Zaidi Visits Jordan for Talks With King Abdullah II",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/948663/iraqi-pm-al-zaidi-visits-jordan-for-talks-with-king-abdullah-ii",
+      "date": "2026-10-26T11:50:56.000Z",
+      "lang": "en",
+      "titleKo": "이라크 총리 알자이디, 요르단 방문해 압둘라 2세 국왕과 회담",
+      "url": "https://www.kurdistan24.net/en/story/948663/iraqi-pm-al-zaidi-visits-jordan-for-talks-with-king-abdullah-ii",
+      "body": "Iraqi PM Ali Faleh al-Zaidi visits Jordan for talks with King Abdullah II and planned economic agreements aimed at strengthening bilateral cooperation.\nERBIL (Kurdistan24) - Iraqi Prime Minister Ali Faleh al-Zaidi departed for Jordan on Monday, Oct. 26, for talks with King Abdullah II and the expected signing of memoranda of understanding on economic and development cooperation.\nIraqi government spokesperson Haider Aboudi announced the visit, saying the prime minister would discuss bilateral cooperation and developments across the region with the Jordanian monarch. The talks will also address what Aboudi described as responsibilities shared by states in responding to regional challenges.\nThe planned agreements are intended to support joint programs and development projects benefiting both countries, according to the spokesperson. He did not specify how many memoranda would be signed or the timetable for their implementation.",
+      "bodyKo": "이라크 총리, 요르단 방문…압둘라 국왕과 경제협력 논의\n\n쿠르디스탄24 아르빌 발 - 이라크의 알리 팔레 알자이디 총리가 10월 26일 월요일 요르단으로 출발해 압둘라 2세 국왕과 경제·개발협력 양해각서 서명을 추진한다.\n\n이라크 정부 대변인 하이더 아부디는 이번 방문을 발표하면서 총리가 요르단 국왕과 양국 협력과 지역 전개 상황에 대해 논의할 것이라고 밝혔다. 회담에서는 아부디가 지역 과제 대응에서 국가들이 공유하는 책임에 대해서도 다룰 예정이다.\n\n계획된 협정은 양국에 이익이 되는 공동 프로그램과 개발 사업을 지원하기 위한 것이라고 대변인은 설명했다. 그는 서명될 양해각서의 구체적 개수나 이행 일정을 명시하지 않았다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
+      }
+    },
+    {
+      "title": "Iraq Begins Military Integration of Shingal Protection Units",
+      "source": "PUKmedia یەکێتیی نیشتمانیی کوردستان",
+      "link": "https://www.pukmedia.com/EN/Details/83230",
+      "date": "2026-10-26T11:45:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 싱갈 보호대 군 통합 시작",
+      "url": "https://www.pukmedia.com/EN/Details/83230",
+      "body": "Home News Kurdistan Iraq World Interviews Economy Opinions Reports P.U.K multimedia Gallery Video About Contacts Archive Newsletter Iraq Begins Military Integration of Shingal Protection Units Iraq 02:45 PM - 2026-10-26 PUKMEDIA Photo from the ceremony that marked YBS integration into Iraqi military. Iraq Yazidis Sinjar Iraq&rsquo;s Security Media Cell has announced the start of the military disengagement process for the Shingal Protection Units (YBS), as part of plans to integrate the group into the country&rsquo;s official security forces and transfer responsibility for security on Mount Shingal (Sinjar) to Iraq's federal authorities. In a statement issued on Monday, the Cell said Iraqi security forces had taken control of key positions in Shingal. It said the integration process, covering the YBS&rsquo;s weapons and military positions, formed part of a broader government initiative to bring all arms under state control and strengthen federal authority over security in the district. ",
+      "bodyKo": "**이라크, 싱갈 보호군 군사 통합 시작**\n\n이라크 보안매체실이 싱갈 보호군(YBS)의 군사 통합 절차 시작을 발표했다. 이는 해당 조직을 이라크 공식 보안군에 편입하고 싱갈산의 보안 책임을 이라크 연방 당국에 이양하려는 계획의 일환이다. 보안매체실은 월요일 발표한 성명에서 이라크 보안군이 싱갈의 주요 거점을 장악했다고 밝혔다. YBS의 무기와 군사 거점을 포함하는 통합 절차는 모든 무장 세력을 국가 통제 하에 두고 해당 지역의 보안에 대한 연방 당국의 권한을 강화하려는 정부의 광범위한 계획의 일부를 이룬다고 했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "PUKmedia یەکێتیی نیشتمانیی کوردستان"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "신자르",
+        "km": 429
+      }
+    },
+    {
+      "title": "Iraq suspects Israel behind attack on weapons depots and military systems inside Iraq",
+      "source": "Middle East Monitor",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObkI3Z1BVcEtoTTBXRnZEYkpwS1pRb2djYkVVeGVTTmdmTGhrTW51cFJJcE9NZHRHeVphekxtREtnZWFxNGdUNTJDOVVtX3dKMmdoeUNFUUVvdXUyVVdhbjIteTg5cnpweHZ2bFIyN1Z1RjZjR3kxRzVCa0steTR0UURHZlNmNm1CcVRWX3huQzVBaUNyUlRPalNPV21rVE5acmc2dFdRSXVoN0FoUlNTQUpSd1VUSjdkdHRoelNReDMyMmxBZzV4c9IBzgFBVV95cUxPcnZVajMtWnJNOXJNQmlJcDh4NEs1QkdBek1FUEFJZ0Q1a1FBYXBDNmtIYjBoR3ZvUmFmU1ZNeDBlUzdMTU9hN1pnZDc1R1dwTHV6VmY3Rk1XRl9DZkl4aXhNT1E5emV3bzRPaHdiT0VLdGVsR1h0Tm5YQ0lTdFZPVTFkUEZzakhBQnpUSUpRbWRmVWszb0E4cFNVdEVVSmtMREE1RGZWNktLVnpoVDZ4MnIyaWNDbjZsdnByMk5yb2UwSld5Z3J6VnRHTVNidw?oc=5",
+      "date": "2026-10-26T11:09:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 국내 무기고·군사시설 공격 배후에 이스라엘 의심",
+      "count": 1,
+      "sources": [
+        "Middle East Monitor"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "سوريا تنتعش بتصدير المنتجات الزراعية الى العراق: فرصة مهمة نأمل استمرارها",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMi6gRBVV95cUxOVGZVX0RoZVBKNVo1ejR1T0I1d0V0VTB3a2p3UExoZ0NuWEM3Z0l0cmMxRlJOLVJqd09VbDh4OTlaSmxEZnhzZExzVzVkQlo0cGpDdzdVZ1dFcW5mbzhrNlAzdC01QUNWV3pSOGZLWUEzcUFDS0EtRXFpYzN6NjR5akNTVFMyYjJIdmJTVnhEZ3BDcXg5Tml2YzltNWgtTWp0bjZGaF9mX3NMZFhrVHA1eHhiMjZabE9IbDhPQ093el81VXpfQ1N0cjZzVTlNMVpWRlBMa25mR1NXcHh2WXdjQlpMM0thaFNhZkVJWnNwTEVxNkd0UG53cFRwZUV3azFwYVZnU04tOFhla0RBVWp1TTBKMlY5MnBBejZfbVVZa1FnVkg4WGRIR2FZVlhFZG55OE9zaWxDbVpoODczS0NmcEJsZ19ZREhoeTNLbjhXTWpEcndMWVFnaU40OEFJQzhtQnI5Y0tPZmxRdk1jbFU3SU13R21jQ3B3eGRoWjlUUXBKWWVXNGljcUw5NEczbFVyUmYxbDA5Q3BkN2xuYnJWM3BqYWdqSUUtQVg2NVZfTTFSRTJaa3F1NUtQNElESGlWYnZPRVJ4bEdrYWdnZmsyMzU5Q2dHUHFJZllJSHJzYXJtb1BsY0pnODFHUFZNUU5vczRRVmp1cm51ZFB3RjM3a3FQajZFLUhsV2JtN2tTZzUwOEhRSER1QkhPUnlSbEFJZWxjTUtrOWpDZkdOemU4bE91dDc5eVVfQkJka2lRcFZDQ3dOV3d5SWNQRVEyTGVhUUdLanpCX3BtbEV0WV94LTdaZE8tNjV1M2c?oc=5",
+      "date": "2026-10-26T11:03:45.000Z",
+      "lang": "ar",
+      "titleKo": "시리아, 이라크로의 농산물 수출로 경기 회복: 지속되기를 바라는 중요한 기회",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "سعر صرف الدولار مقابل الدينار العراقي (USD/IQD)",
+      "source": "DailyForex",
+      "link": "https://news.google.com/rss/articles/CBMi1gZBVV95cUxQY204Z2l6UmgxeWFMTW5tdllpNWFmTm5zNWlJbkdyT3drN0Z1RHVWU1VKbTQwNHJlZV9SVUVvbnV4dElwa0N2V2JZcTFhY3locEZvYmJjWHJoTk84R0lZMm1ib1FvRDJyMXlmT1pZY2VkV2l4WVV3cDhQZXVrNzd0eWViTmlVUl9FallKZFQyazZETUFhSEdxLWY3YzBzcWpMX1NRWkdKTGZROEhsS0RDTGNoaUJNeVplQ0RBM01tR1VLQzZ3SjRWOWZGcDNOQ0VUY1pEUHQ5WG1HaEZuUDFnbllZUW5iUUExUlkyVE45Y3gzUmVVUk9vS3VONFNRSlRyWWpxVTFvdnJ3ZElYSlpocHYwWE5WeEdXYTJxNzFMMFJOVHVmRDRubW9PSC1lSzdKdU5majJhUEg2eFNYc3FCTXJXZjlwSEc4V0ZfV2lGU09uN05iQUFZbkxMMWd6LTFfV2k4akRpR0trc25QTXpEbkYzYU9qbkFKUTVpTFFSWGhwcTZjazF3bFdMWHd3UGlIS1NpVEVCTVIzRko0VDhJOGVRdzBrLWVvYkxEZFhjVGgxbnVRRDBlZUlMdkF3ZUh5cldZeUZxeklxdllGbG9rXzljWHBiUlhJX2dfbUZ0S3VwN1F0X2xlMTVKYmY0Z2diY3hmZXhRcHdiMG1hYk1Zek9PNXM3YW1nNy1MeWJKQWFMWUZkM2VkeVZuem5ZeXAtZGxOSmZ5X2VHLUx3ZGFNNEthUkd3QnNrbjZnaGI2WXBXMUdGWEhYSkQzWUhWY3V3bFp5WWJBTC14LWFGMGx6aC1tSUk0SnpyLXJYaUJsc1V2ejBVVVV6TzUyQi1jX2s1U0tQRHpjbnhSNmVmZ3hfb1NZOEJleUlvUjJPUXQ4cllub3BXRGxEZHhRSkJGckI0NUxkVFdtRVdTcFZZU2xQdTFFM2FKanJLUjBRNWdfd2g5N1Z4cWw4c3E4ak00MHhXUWZsb1I4Z3h2Z2VDS1RmNE1tUE55T05TLXVCRi01U1IzM3ZHdG80VVYtM0EtZUkyVDh4UHlIakU4MVg5MGpiYmxLeWZQbDlMazJGOHk3S3hiLVFkUGlSR3lQQ2hJNkkySW9ESjlFOWtoUkpHUWJ4LWVqSUFkdw?oc=5",
+      "date": "2026-10-26T10:54:56.000Z",
+      "lang": "ar",
+      "titleKo": "달러 대 이라크 디나르 환율(USD/IQD)",
+      "count": 2,
+      "sources": [
+        "DailyForex",
+        "عراق اوبزيرفر"
+      ],
+      "related": [
+        {
+          "titleKo": "긴급| 이라크 시장에 낙관론 확산 속 달러 환율 지속 하락: 100달러 = 167,000 이라크 디나르",
+          "source": "عراق اوبزيرفر",
+          "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPaFpyd2puQ0JDWW9lNG1ybGlTeWdyUTRtM3Rsa0VZQlNhdzVrcWZmSW1CRmphVGJfdk1Scl91WXlsWHM5bHp6YlNGSVpxNk5IdUtqSEdaVkdGZmdWZGtFX0xsRXFHUGZUX2d2MXBXaDl3RkNlVTJLQTg3b0U1RlV2YkcwTGZJalhIcU1OTEpXaGM0WElKZXFERG9OTmM2ZVpOQmU0WkQ2aFhCWm9WZUhLcGxjbXVycVp0NnhNMDJabjRvQmNrNjQ1bEFMSmJsWjExdGs3ZTBobVpvY280c3F5U2d4SGlmOWhrUkJmV1pLaFNtY1ZBaG9BbURtOG9wSThlN1h6Mk03ZlVVaDFEV283Ul8wX0RtbHVJanFXdVpHckVhTkg1ZDZMdW94UVJ1Q2s1Y2pEQi1mTl9IeGItUXotQ2R4a1Q3RXZl?oc=5"
+        }
+      ],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraqi Ambassador to Jordan: Prime Minister’s Visit Important for Discussing Security and Economic Issues",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY0ZGOWtNSDA4WGlFLWdzLXZnTnFqVXRUX1FmdFAwY1JjeGh3a2x6aEs2NmVPalRFNVE4eXBsUVRHSkJfZTZJeTZQa2thVEhueDg1UjFCZmxFNkFfTTUtTlVjX2o0ZnFRcm1lYlpLQ0ZuOEc5UTVJWU16ZlJvLVhHMU5qeUhJUE9hNXBJYXVpV0lvZTNLYXJyTnZmZ0JmUnZLdUtfOEc5OU45d1FHdVIwTnpEOGNQNE4tSFlhWmx4ME4wcDNKeUNxUWs1UWlvWmVPaVRyVDJhcw?oc=5",
+      "date": "2026-10-26T10:37:49.000Z",
+      "lang": "en",
+      "titleKo": "이라크 주요르단 대사: 총리 방문 안보·경제 문제 논의에 중요",
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Integration underway for another PKK-linked group, this time in Iraq",
+      "source": "Daily Sabah",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNa0V0MF8tQ3NOTUV1NEZHTzZHMFY3Q1poSzFEV1VIVUZ6bUxjZWxieFZhTUxUVTFMWkNtX0luMkNweklKTnRLdktrNUNNbS1CcU1rTzhUZ0ZZTmdqZ1JWczNVXzBQQW1VWXFjbDR2bFFESndwU1VkcEd5MkpOM1czWVdtWmt2RTU3bXJkOW1TVnZmYl94blFxRVNKSlhiMGdFRHFSQVdNZHdxMzQ3a1pQaVRaOS1lWHRiVDZvcVNn0gG-AUFVX3lxTE1rRXQwXy1Dc05NRXU0RkdPNkcwVjdDWmhLMURXVUhVRnptTGNlbGJ4VmFNTFRVMUxaQ21fSW4yQ3B6SUpOdEt2S2s1Q01tLUJxTWtPOFRnRllOZ2pnUlZzM1VfMFBBbVVZcWNsNHZsUURKd3BTVWRwR3kySk4zVzNZV21aa3ZFNTdtcmQ5bVNWdmZiX3huUXFFU0pKWGIwZ0VEcVJBV01kd3EzNDdrWlBpVFo5LWVYdGJUNm9xU2c?oc=5",
+      "date": "2026-10-26T10:22:50.000Z",
+      "lang": "en",
+      "titleKo": "PKK 연계 또 다른 조직, 이번엔 이라크에서 통합 진행 중",
+      "count": 1,
+      "sources": [
+        "Daily Sabah"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq’s 2027 budget law to be submitted to parliament mid-November",
+      "source": "The New Region",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5XcGNncVlzV21sbnNGQTg1R2RaMGkxdFpJQk5HOHFYR3g1ajUwMHNHbE1OdlBxQTNFODFwRjRwQzhWTkRQSkR5UzdSVQ?oc=5",
+      "date": "2026-10-26T10:13:25.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 2027년 예산안 11월 중순 의회 제출",
+      "count": 2,
+      "sources": [
+        "Kurdistan24",
+        "The New Region"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 2027년 예산안 11월 중순까지 의회 제출",
+          "source": "Kurdistan24",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOGpHMU1RZVlPb2NOM21yaWVpTVpHbUFMdjVzQ2RjRzhFWGIwTjgxaEx1UnV5Z2Vtbk5MTUc5dHJDb3RPcGJjTHNsWkJEcjVIUVBKSHRKSzBaR1FfRUhOU29jaDVjNzhVREw5MXRkeTR5TXRzeEV1bjdwY3lZMEFfTkJXNXJDYzBVdUNQMVUzLTFsdzhKT0RCc2Z4ZEZJaFhrOTJOV1l3?oc=5"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "YBŞ puts weapons under Iraq’s state control",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1oYUVEQjJYdk9JQjlMc2ROYlBJRmt1UENzTk1uUnNNTk5zdDU3UlZjRHBZMXRqdlJKcGxZXzNIMzJDYVpqU1lxT3lBU0hZbjFfM2JMM3lCZlJ6dHZrbmRnVXlrMk1aOUw0UGYzRXdxX0t5aEk5ZndFMQ?oc=5",
+      "date": "2026-10-26T10:11:02.000Z",
+      "lang": "en",
+      "titleKo": "YBŞ, 무기를 이라크 국가 통제 하에 배치",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Federal court rejects bid to dissolve Kurdistan parliament",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMElYX2ZHQXkxX3E3Nk5FU01lbWt4UnVLODlNUlFrTjVia3pOV2RhOXlpZHdNaE90bFA3WEJUdzBpU3dhN0VUdkZCUEkyZ0IxOWZrQWlmeGNWUU9BbTQ3a19Qb1B2TDBRYmUyQTdNM3dNMzR2Y3c4U01uZFFUYTR5OHlLMllnQXdDUVlzeG1B?oc=5",
+      "date": "2026-10-26T10:00:39.000Z",
+      "lang": "en",
+      "titleKo": "연방법원, 쿠르디스탄 의회 해산 청구 기각",
+      "count": 2,
+      "sources": [
+        "The New Region",
+        "شفق نيوز"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 대법원, 쿠르드 의회 해산 소송 기각",
+          "source": "The New Region",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBVQU9oOGRCaEV1QTlJUm9EYWhHLURwNnlDMUF3c3dPRzh0NzhaLVV4N3U3eXJPQXZtQ1JOVmZGTGwwbGxHbTJhMTF6SQ?oc=5"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "From the archives: Soldiers work crowd security in Iraq, 2003",
+      "source": "Stars and Stripes",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUUtIQ1MyRkxRVV8zZXlRYTMwQWFPcmM1a2lwU1B1QU0tQ0xwcm9RMWU5aFZOWktXUTV2dHlmRGhDR1J3ZHZIdHlVR3VCbWZlNktjbHZRNW5yRUlVeVJCUDZlUFlRNmw1MXotUGwtNGh1Nnc1NG9LUW1GbWM4WFk4cTlISFMyZjlDSGtCSEdEMHhybEUtU0lhUHlSbmYzajNycG1tRDFfcS15em5pTmx4aEgzSHVfMFB6bXR5NFZaVmZwT2s?oc=5",
+      "date": "2026-10-26T10:00:34.000Z",
+      "lang": "en",
+      "titleKo": "아카이브에서: 이라크 군인들이 군중 보안 업무 수행, 2003",
+      "count": 1,
+      "sources": [
+        "Stars and Stripes"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "ConocoPhillips Joins BP in Iraq as Baghdad Seeks More US Energy Investment",
+      "source": "EnergyNow.com",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVGtXMmtNWFJ0azJ5cGN1N1pycEJuMmN0aFFkOU9FU2tqamN2VGoxcXVlVUxXeWxCanlTSEE3M0dJenItME5BczctT0pYTng4aGNIUlJPWUJxend3NXJoLVd5XzJ5bGRsT0F2MVlVaTJmLVZnb1RrR0I5bmxXTzN3UHFJTGpNbzlEaUx3cWdTa3VkdFA5OVhVVWMyWjZ6dGdWVUZyX01DbTc?oc=5",
+      "date": "2026-10-26T09:28:15.000Z",
+      "lang": "en",
+      "titleKo": "코노코필립스, 이라크 진출…바그다드 미국 에너지 투자 확대 추진",
+      "count": 1,
+      "sources": [
+        "EnergyNow.com"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Iraqi Government: We reaffirm our full responsibility to protect Yazidi rights",
+      "source": "ANF English",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaUpzUmN1bVlTaHNuM2hINW53bm5HQjd6NEtZck01ckg3WkRVSUcyai1IUk42b2NXM3VDamlXa2NVQnF6Y2RwNDExNlhEWlJwY0hFSkloZWJ3Z1F3dHhvSi1GVVg3TnFoa1FPY2dmTFhTVHdCcVZ6ZGRsNlFfUGF3MjAzZlYyTlV5YjYwMVNwZnpGQnlPNDJjdVNVS085djE5OWx3dU1MQXBYQU1kalM4RGcxU1QxLVct?oc=5",
+      "date": "2026-10-26T09:00:28.000Z",
+      "lang": "en",
+      "titleKo": "이라크 정부: 야지디족 권리 보호에 전적 책임 재확인",
+      "count": 1,
+      "sources": [
+        "ANF English"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "\"منفذ الشيب\" يفجر خلافاً بين بغداد وميسان.. والمهلة \"3 أيام\" لإعادة فتحه",
+      "source": "Daily Beirut",
+      "link": "https://news.google.com/rss/articles/CBMirwRBVV95cUxPNXU4QmxRTzZUMVZlOUdVVWFzcjdXSVRiRTlwMkJXVFRPR1dCcTgxWDlKcnEwN2xVMDM4cUpoVnM3d1E3UjJhdU12NVI0SnJEMlY0b0JwU0FodXZUMEJHdjRRaFBIMS0zaGEwZG4za0xnTWg5ZTBxanVtazNoVXY5NUdCYjItOHFUcjJMNTFGUThfS3lxdWpJWkl1eENpUlBOYWJxQzZNdHZJTVBwTmxWWFJZc2ZBSEZacktlVkloZmI1NjV2MUNFSDktWE1tbjlIUnBoYzNLNkJMeG00NDBZNWVyQ1EzR2N6aFBIUXhRNlBxekRRQmZ3UVlnMEpSRmRwcjBCNFNDN2UyMlZib2hBeDlXcm5ZS3R0dUFhQ1ZzVVdTZEJGVHp6dFlxa1h1R3hOVkdua0lQQmpxSC1wdTUyWmlPSko0LXJadTVTYnZIME1PeU9kZV9WbnVueTMxb2pVY19neFhtd0VHWUFpNEJvVjZJMkFlLUZyNDdjcHZCcGlvZ25ZMnN0cTU1RmVPSnpWcXZ0N0N6d25mMjJuc3Q5eGtjVGZmRWhhVFoxaU5KdTZmeFVrTFg0eDhqSThpS0hCNGlLekFHcXBoTFp5SjNuWlZwSVpOOWFuV0Y0aGZXRG9veWowN3E1akxNbUhJQ2x0cklzaHNJb3FNWmQ2RU95X2pvUG4xNF9PSWtYYmJidWNNTGFobWdxSU83Szh3c3UyeFBBbnZXU2JkRnFGTnhB?oc=5",
+      "date": "2026-10-26T08:40:16.000Z",
+      "lang": "ar",
+      "titleKo": "\"셰이브 국경통로\" 바그다드-미산 간 갈등 폭발.. 재개까지 \"3일\" 유예",
+      "count": 1,
+      "sources": [
+        "Daily Beirut"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "[포토] 이라크 반정부 시위 7주년",
+      "source": "뉴스1",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBsN0Q0aHM4aFdvalFSeEg0eHZEdW1DUFFvN0dCbkxyTlRNMW1VVWVDNUdtbjRUR1M3ZlpWU3dkMGlyT094MnhZcWNCZw?oc=5",
+      "date": "2026-10-26T08:24:03.000Z",
+      "lang": "ko",
+      "titleKo": "[포토] 이라크 반정부 시위 7주년",
+      "count": 1,
+      "sources": [
+        "뉴스1"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "g",
+        "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq prepares to receive advanced air defense systems and long-range radars",
+      "source": "IraqiNews",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMktWcXo5YWdVTER3c2c2T2t4a3FOWEJwb1p5RWtHeVo3eVhiZVJpd21rbm02ZGxrNWNDa25SeDJ1TnJIRzNLUGg4MFhZNERpN0Y2M211VGcxdzY2a0xMYl9iaHdjM2pTU3A2eTROeFpWQUFSeXpDU25YOWUwdHN0UVV3b0JZSHVfWGdNQlh6NkVOS2ZOVklOZV9ZdThSRElnWTNKNnV1V3k?oc=5",
+      "date": "2026-10-26T08:17:10.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 첨단 방공 시스템과 장거리 레이더 수령 준비",
+      "count": 1,
+      "sources": [
+        "IraqiNews"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "آلاف العراقيين يتظاهرون بذكرى احتجاجات تشرين.. ومطالب بمكافحة الفساد والمحاسبة",
+      "source": "مونت كارلو الدولية",
+      "link": "https://news.google.com/rss/articles/CBMizAVBVV95cUxQWjlyRUVfdjAtejF3VzYzTHI0dzZIbDhlR0ZNODZNVHdzenUxbnBIaTg1cVhwM21Yb2dfRzV3bTZkRlE4R0RUdkRjMjlhNlAwTlNqaEdwU0E1TEpXLW9SREVvb1p1Smg4MllwLVJYalZmWkh1ajRleVYtajVSdXdiVkdQb3ZaZUxWVHJuSGNmRnA2bnA4allQSURYVmpmeXhvZnFGUUMwN0kycHBRc2d5a2JnT2ZlOHdZZEQwNm4zTE5vVHZ3XzcxbmNWNjl6cHdEbU9JRDVJXzFwRzBORDJxN0p3TjY0NEtOUXlRS2NZczNfMHBTSFNlWGI4ZjdsMHVVcUFtUktVeGw3MzFzb2UxaFBWdFJ1Mmp4T3VHYVZWdUxuTnRDdFM1NjJEYTQ5QjlMLWtpUUtZOTlxdFRBNGJyczVfOTg2c2c0SUdLanhCQnd1WUl5NGJ0d2ZYRmNlY1M5ZlctbFNJbkl2d1oyLUM1cmRMclpoOHRuRlZ2ekVRVktRNkdnRC1WX3BlVDNpSEg4RV9md0xGOHNQNDVuUWVvSE41anYtY3lmck1ZUjF2eDVpdXQxVVRuMUZCVTdOeERDVzRvUFY2a1JNS3pEb3poOEhWTWVCUGE2Z1pVMldHQWF1YXhWaEVtTkY0dmE2d3FzUWhlTDlRZXJfZWgtNmVjN2dkVThaX3VORXJOdTVxMzZsYW9xVGxYRWE5OWZkSEJQdlgtZThLMW0waDJLMFhidnZIQU1xWHZFLTZ0S09OVkhlN2pYemdlaGlaakRuWXdaTUhncjRQdFFiRkFEalQyLTFsdEN2RlFnX0xWaEl6c3dTLVo0MncwTXZYemk2LXJtX0YyRTZOeFFnS2ZpSnVyR1VkSXhCS1otMGZWeE51dlFjQnBQWV8xNVo4VjlNUkswUURFODZOWXlFYk55ZlBjM01scEljcTZpSy1OVw?oc=5",
+      "date": "2026-10-26T08:16:55.000Z",
+      "lang": "ar",
+      "titleKo": "수천 명의 이라크인들이 10월 항쟁 기념 집회 개최.. 부패 척결과 책임 추궁 촉구",
+      "count": 1,
+      "sources": [
+        "مونت كارلو الدولية"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "g",
+        "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "US dollar edges down to 167,000 range across major Iraqi exchanges",
+      "source": "IraqiNews",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOS29BZWxVZTQ5NHdyRGlvSUJGSUdaNDVqZlhkc2NjOEVBc19fZndGaERWVVdWakp0WjVzZDQ4TVh6cXRac1ZfRjRHMmVhZF9vb0M2Mk1NVGFVcFN5MG9vdkJXX1NtSlhNUDYzNGg5UlN5aDR0RVZrVkloUmNrd2Q0ektWR1Q3WHdmQnpRQmFNMERCdk9xQnd3cEFJbFQ3Zw?oc=5",
+      "date": "2026-10-26T07:41:34.000Z",
+      "lang": "en",
+      "titleKo": "미국 달러화, 이라크 주요 환전소에서 167,000 디나르대로 하락",
+      "count": 1,
+      "sources": [
+        "IraqiNews"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "الدينار العراقي يتحسن قليلاً في بغداد واربيل",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMiowNBVV95cUxOUE9JQ2oyWmhXUzk1bGZvdUVwT09aNVdkV1RYbnRPdTRiOC1reWkwSC1VRVNFVHRSLUowWk84OEhhRTFXNXFOQnZCWFltcHRqS3JJQ0Jvam5Ka2xWbGx6RVFvdlZLUnQ1THo1ZzJVclpWd3RnOUZGWXdRRUsyZWJ2ZmpydENrQnl4amR4azlJMTI2RExVYXd2V2hyOHRmMDRoWUdFTFVkVG1nMEVmd0xZRW9zM3EtM2E2LWFfTm90NURUSUhkZzQ3ZGd6VFdCQkpMaE9SOEJTMkg3Y3EtbkZ2Y1JHLWVWaU00V3ZEc2RUMUw4ZFBSMWVqYTZYbzRtNDFyQkMyUE5Qak51ZXpIaTc1WDVHdXMybGNZVlh6anZGaDY3RXpSbG5zTEJSZWFyWm9nSFlLYjRpVEVqaGpaVng5UlQ1dC1iNV9aWlB0cW1wRElMS1VoQjVvcVdBOEJRR3RVS1plNnl0Q1hxSlBBbUNrYU95Ul9BZEtiaTc2VFM2REpvOVFlbGw3RUpTNXlqNnFuMnF5WmJndDlsOUQyTnFsNGxfWQ?oc=5",
+      "date": "2026-10-26T07:28:43.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 디나르, 바그다드·아르빌에서 소폭 상승",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "ما حقيقة مقطع الفيديو المتداول الذي يزعم أنه يظهر أشخاصاً خلال تظاهرات إحياء ذكرى احتجاجات تشرين في ساحة التحرير بالعاصمة بغداد؟",
+      "source": "التقنية من اجل السلام",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOY3o5Y2E5VVpPQ3Jxck5jaFZETmpFcnM1N3VOdVY4NndNTjJ5Y2dQLTg4bFpiX0kzV0ZtMlB4QWI2VEhFTW9aUGRNRDgxb3Q0T3JxTDczcE9DYU8xVEg4elg0Y2FfMXYzbnUwbDVZZkFqdFZzSzVhQ05UUUIzd0dqbW9fVGRXbTlldlhSWkRaRHp0TElvd1FoRk1RMXh2T2dUY2V0UDJ1VQ?oc=5",
+      "date": "2026-10-26T07:18:13.000Z",
+      "lang": "ar",
+      "titleKo": "바그다드 해방광장 10월 항쟁 추도 집회에서 촬영됐다고 주장하는 유포 영상의 실체는 무엇인가",
+      "count": 1,
+      "sources": [
+        "التقنية من اجل السلام"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "g",
+        "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
+        "act": "",
+        "place": "타흐리르 광장",
+        "km": 25
+      }
+    },
+    {
+      "title": "End to Iran and US interference in Iraq is Tishreen’s top demand, says party head",
+      "source": "964media",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBEckJBOUhoNFhKaTlWV2hZMDdhczBVSDYzUUxDUmZzdTBrdU5GSXZuSXBGWkZMVUJhLXZyRi01V0NvZ2lp?oc=5",
+      "date": "2026-10-26T07:15:49.000Z",
+      "lang": "en",
+      "titleKo": "이란·미국의 이라크 개입 종식이 티슈린의 최우선 요구라고 당수가 밝혀",
+      "count": 1,
+      "sources": [
+        "964media"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Netanyahu denies clash with IDF chief over Iran as mystery Iraq strikes raise tensions",
+      "source": "Ynetnews",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ieTRBMVpnUWJfUWdQa3lSM0xnSjhoRFh2OWpHWWE3ZGtvb245MTE1Ym43dldjLXlWNWV4M09zZ25acklyeUl3aWhfNTZRTlVGX2xfUVVR?oc=5",
+      "date": "2026-10-26T06:29:11.000Z",
+      "lang": "en",
+      "titleKo": "네타냐후, 이란 문제로 IDF 참모총장과의 충돌 부인…이라크 정체불명 공습으로 긴장 고조",
+      "count": 1,
+      "sources": [
+        "Ynetnews"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
     {
       "title": "Baghdad and Washington discuss expanding their military partnership and strengthening joint security coordination",
       "source": "صوت الإمارات",
@@ -27,14 +878,39 @@
       }
     },
     {
+      "title": "Iraq's biggest ever budget for 2027 built for boom times amid economic bust",
+      "source": "The National",
+      "link": "https://www.thenationalnews.com/business/economy/2026/10/26/iraqs-biggest-ever-budget-for-2027-built-for-boom-times-amid-economic-bust/",
+      "date": "2026-10-26T06:17:04.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 경제 침체 속 호황 대비한 사상 최대 규모 2027년 예산 편성",
+      "url": "https://www.thenationalnews.com/business/economy/2026/10/26/iraqs-biggest-ever-budget-for-2027-built-for-boom-times-amid-economic-bust/",
+      "body": "Draft budget of 217.2 trillion dinars proposes more jobs and IMF bailout request, The National finds\nIraq is debating a draft federal budget for 2027 that would be the biggest in its history, but the plan is also the most detached from the country's financial reality.\nThe bill, a copy of which was seen by The National , looks like a welfare-state budget drafted for a stable time, not an austerity plan for a government in the middle of its worst financial crisis in years.\nThe total public expenditure is projected at about 217.2 trillion dinars ($143.6 billion). The draft expects only 174.2 trillion dinars in revenue – about 144 trillion dinars is to come from selling crude oil and 30.2 trillion dinars from non-oil sources – leaving a gap of about 43 trillion dinars.\nThe draft says the deficit \"is covered from the surplus realised from the increase in crude oil export prices or increased crude oil exports or internal and external borrowing and from carry-over funds\". But that is an assum",
+      "bodyKo": "**217조 2000억 디나르 예산안, 일자리 증대와 IMF 구제금융 신청 제안**\n\n이라크는 역사상 최대 규모가 될 2027년 연방 예산안을 놓고 논의 중이지만, 이 계획은 국가의 재정 현실과 가장 동떨어져 있다.\n\n더 내셔널이 입수한 법안 사본을 보면 안정적인 시기를 위해 작성된 복지국가 예산처럼 보이며, 정부가 수년 만에 최악의 재정 위기 한복판에 있는 상황에서의 긴축 계획이 아니다.\n\n총 공공지출은 약 217조 2000억 디나르(1436억 달러)로 예상된다. 예산안은 174조 2000억 디나르의 수입만 기대하고 있으며, 이 중 약 144조 디나르는 원유 판매에서, 30조 2000억 디나르는 비석유 부문에서 나올 예정으로, 약 43조 디나르의 적자가 발생한다.\n\n예산안은 적자가 \"원유 수출 가격 인상으로 인한 잉여금이나 원유 수출 증대, 또는 국내외 차입 및 이월금에서 충당된다\"고 명시했다. 하지만 이는 가정일 뿐이다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The National"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "ISIS Trials in Iraq: Security Implications of Mass Prosecutions",
       "source": "Bloomsbury Intelligence and Security Institute (BISI)",
       "link": "https://bisi.org.uk/reports/isis-trials-in-iraq-security-implications-of-mass-prosecutions",
-      "date": "2026-10-26T06:05:38.000Z",
+      "date": "2026-10-26T06:05:08.000Z",
       "lang": "en",
       "titleKo": "ISIS 재판 확대, 이라크 보안 위협 심화",
       "url": "https://bisi.org.uk/reports/isis-trials-in-iraq-security-implications-of-mass-prosecutions",
-      "body": "The transfer of ISIS detainees from Syria put a strain on the Iraqi justice system, which struggles to gather the necessary resources to prosecute both its nationals and foreigners.\nThe overcrowding resulting from the large number of pre-trial detentions creates risks to health and security. International inaction exacerbates the phenomenon.\nFlawed prosecutions are likely to undermine Iraq’s counter-terrorism efforts, notably because of the lack of evidence and the risk of torture-obtained confessions leading to wrongful judgements and fueling grievances.\nAfter the transfer of nearly 5704 detainees from northeast Syria to Iraq between January and February 2026, individuals affiliated with the Islamic State of Iraq and Syria (ISIS) have been prosecuted since August 2026. Fears of potential breakouts and mismanagement by the Syrian government led to the US transfer to Iraq. This included 3,497 Syrians, 470 Iraqis, 1690 foreign nationals, and 440 children, including 1100 individuals with ",
+      "body": "The transfer of ISIS detainees from Syria put a strain on the Iraqi justice system, which struggles to gather the necessary resources to prosecute both its nationals and foreigners.\nThe overcrowding resulting from the large number of pre-trial detentions creates risks to health and security. International inaction exacerbates the phenomenon.\nFlawed prosecutions are likely to undermine Iraq’s counter-terrorism efforts, notably because of the lack of evidence and the risk of torture-obtained confessions leading to wrongful judgements and fueling grievances.\nAfter the transfer of nearly 5704 detainees from northeast Syria to Iraq between January and February 2026, individuals affiliated with the Islamic State of Iraq and Syria (ISIS) have been prosecuted since August 2026. Fears of potential breakouts and mismanagement by the Syrian government led to the US transfer to Iraq. This included 3,497 Syrians, 470 Iraqis, 1690 foreign nationals, and 440 children, including 1100 individuals with",
       "bodyKo": "시리아에서 ISIS 피수용자들의 이송은 자국민과 외국인을 모두 기소할 필요한 자원을 확보하는 데 어려움을 겪고 있는 이라크 사법 체계에 부담을 안겼다.\n대규모 미결 구금으로 인한 과밀화는 보건과 안보에 위험을 초래했다. 국제사회의 무대응이 이 현상을 악화시키고 있다.\n결함 있는 기소는 증거 부족과 고문으로 얻은 자백이 초래하는 부당한 판결 및 불만 증폭의 위험으로 인해 이라크의 대테러 노력을 훼손할 가능성이 높다.\n2026년 1월과 2월 사이 시리아 북동부에서 이라크로 약 5704명의 피수용자가 이송된 후, 이라크-시리아 이슬람국가(ISIS)에 소속된 개인들은 2026년 8월부터 기소되었다. 잠재적 탈옥과 시리아 정부의 부실 관리에 대한 우려로 인해 미국이 이라크로의 이송을 주도했다. 여기에는 3497명의 시리아인, 470명의 이라크인, 1690명의 외국인, 440명의 아동을 포함한 1100명의 개인이 포함되었다.",
       "tried": true,
       "count": 1,
@@ -49,100 +925,6 @@
         "act": "",
         "place": "",
         "km": null
-      }
-    },
-    {
-      "title": "Iraq's biggest ever budget for 2027 built for boom times amid economic bust",
-      "source": "www.thenationalnews.com",
-      "link": "https://www.thenationalnews.com/business/economy/2026/10/26/iraqs-biggest-ever-budget-for-2027-built-for-boom-times-amid-economic-bust/",
-      "date": "2026-10-26T06:04:30.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 경제 침체 속 호황 대비한 사상 최대 규모 2027년 예산 편성",
-      "url": "https://www.thenationalnews.com/business/economy/2026/10/26/iraqs-biggest-ever-budget-for-2027-built-for-boom-times-amid-economic-bust/",
-      "body": "Draft budget of 217.2 trillion dinars proposes more jobs and IMF bailout request, The National finds\nIraq is debating a draft federal budget for 2027 that would be the biggest in its history, but the plan is also the most detached from the country's financial reality.\nThe bill, a copy of which was seen by The National , looks like a welfare-state budget drafted for a stable time, not an austerity plan for a government in the middle of its worst financial crisis in years.\nThe total public expenditure is projected at about 217.2 trillion dinars ($143.6 billion). The draft expects only 174.2 trillion dinars in revenue – about 144 trillion dinars is to come from selling crude oil and 30.2 trillion dinars from non-oil sources – leaving a gap of about 43 trillion dinars.\nThe draft says the deficit \"is covered from the surplus realised from the increase in crude oil export prices or increased crude oil exports or internal and external borrowing and from carry-over funds\". But that is an assum",
-      "bodyKo": "**217조 2000억 디나르 예산안, 일자리 증대와 IMF 구제금융 신청 제안**\n\n이라크는 역사상 최대 규모가 될 2027년 연방 예산안을 놓고 논의 중이지만, 이 계획은 국가의 재정 현실과 가장 동떨어져 있다.\n\n더 내셔널이 입수한 법안 사본을 보면 안정적인 시기를 위해 작성된 복지국가 예산처럼 보이며, 정부가 수년 만에 최악의 재정 위기 한복판에 있는 상황에서의 긴축 계획이 아니다.\n\n총 공공지출은 약 217조 2000억 디나르(1436억 달러)로 예상된다. 예산안은 174조 2000억 디나르의 수입만 기대하고 있으며, 이 중 약 144조 디나르는 원유 판매에서, 30조 2000억 디나르는 비석유 부문에서 나올 예정으로, 약 43조 디나르의 적자가 발생한다.\n\n예산안은 적자가 \"원유 수출 가격 인상으로 인한 잉여금이나 원유 수출 증대, 또는 국내외 차입 및 이월금에서 충당된다\"고 명시했다. 하지만 이는 가정일 뿐이다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "www.thenationalnews.com"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "احتجاج في العراق على إغلاق منفذ جذابة الحدودي مع ايران",
-      "source": "ABNA",
-      "link": "https://ar.abna24.com/news/1882390/%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%B9%D9%84%D9%89-%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D9%85%D9%86%D9%81%D8%B0-%D8%AC%D8%B0%D8%A7%D8%A8%D8%A9-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%D9%8A-%D9%85%D8%B9-%D8%A7%D9%8A%D8%B1%D8%A7%D9%86",
-      "date": "2026-10-26T05:49:48.000Z",
-      "lang": "ar",
-      "titleKo": "이란과의 국경 자디바 통로 폐쇄에 이라크서 항의",
-      "url": "https://ar.abna24.com/news/1882390/%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%B9%D9%84%D9%89-%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D9%85%D9%86%D9%81%D8%B0-%D8%AC%D8%B0%D8%A7%D8%A8%D8%A9-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%D9%8A-%D9%85%D8%B9-%D8%A7%D9%8A%D8%B1%D8%A7%D9%86",
-      "body": "قطع عشرات العراقيين في محافظة \"ميسان\"، الیوم الأحد، الطريق الرئيس المؤدي إلى الشركات النفطية، احتجاجاً على قرار الحكومة العراقیة بإغلاق منفذ جذابة الحدودي.\nوفقا لما أفادته وكالة أنباء أهل البيت (ع) الدولية ــ أبنا ــ أغلق المحتجون طريق \"بازركان\" الحيوي للشركات النفطية في المحافظة، ورددوا شعارات تطالب بالعدول عن القرار، وسط انتشار أمني مكثف أحاط بموقع التظاهرة.\nوشهدت أسواق المحافظة ارتفاعاً حاداً في أسعار الخضراوات والفواكه عقب القرار؛ ما دفع مواطنين عبر منصات التواصل الاجتماعي إلى المطالبة بإعادة فتح المنفذ واستئناف الحركة التجارية.\nوكانت الحكومة العراقية قررت يوم الثلاثاء الماضي إغلاق منفذ الشيب الحدودي مع إيران حتى إشعار آخر. ........ انتهى/ 278",
-      "bodyKo": "**미산주 석유회사 도로 봉쇄…정부의 국경통로 폐쇄 결정 항의**\n\n미산주의 수십 명 이라크인이 이날 일요일 석유회사로 향하는 주요 도로를 봉쇄했다. 이라크 정부가 자다바 국경통로 폐쇄 결정에 항의하기 위함이었다.\n\n아흘알바이트(ع) 국제통신사(ABNA)의 보도에 따르면 시위대는 주 내 석유회사들의 생명선인 바자르칸 도로를 폐쇄했으며, 결정 철회를 요구하는 구호를 외쳤다. 시위 현장 주변에는 경찰력이 집중 배치됐다.\n\n통로 폐쇄 결정 이후 주의 시장에서는 채소와 과일 가격이 급등했다. 이에 주민들은 소셜미디어를 통해 통로 재개와 무역 활동 재개를 촉구했다.\n\n이라크 정부는 지난 화요일 이란과의 국경인 셰이브 통로를 추가 공지 때까지 폐쇄하기로 결정했었다.",
-      "tried": true,
-      "count": 4,
-      "sources": [
-        "The New Region",
-        "964media",
-        "ABNA",
-        "アラブニュース"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 총리, 미산 의회 의장 '위협' 관련 수사 지시",
-          "source": "The New Region",
-          "link": "https://thenewregion.com/posts/6915"
-        },
-        {
-          "titleKo": "미산 의회 의장, 이라크-이란 국경 알셰이브 재개통 촉구하며 시민불복종 위협",
-          "source": "964media",
-          "link": "https://en.964media.com/54189/"
-        },
-        {
-          "titleKo": "이라크, 사우디아라비아와의 국경 통로 재개통 추진",
-          "source": "アラブニュース",
-          "link": "https://www.arabnews.jp/en/middle-east/iraq-to-rehabilitate-border-crossing-with-saudi-arabia-3001060"
-        }
-      ],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "g",
-        "line": "다른 지역 시위 (아마라(마이산)) — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "아마라(마이산)",
-        "km": 280
-      }
-    },
-    {
-      "title": "Yazidi YBS Fighters To Be Integrated Into Iraqi Security Forces In Sinjar Ceremony Today",
-      "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/en/story/948568/yazidi-ybs-fighters-to-be-integrated-into-iraqi-security-forces-in-sinjar-ceremony-today",
-      "date": "2026-10-26T05:34:14.000Z",
-      "lang": "en",
-      "titleKo": "야지디 YBS 전투원, 오늘 신자르 행사에서 이라크 보안군에 통합",
-      "url": "https://www.kurdistan24.net/en/story/948568/yazidi-ybs-fighters-to-be-integrated-into-iraqi-security-forces-in-sinjar-ceremony-today",
-      "body": "The integration is part of PM al-Zaidi's plan to bring weapons under state control, with fighters integrated into federal institutions while remaining in Sinjar under their protection mandate, following negotiations that began in February 2026\nERBIL (Kurdistan 24) - A ceremony is being held Monday in the Sinjar Mountains to begin the process of integrating fighters from the Sinjar Resistance Units, known as YBS, into Iraq's security institutions, with approximately four to five thousand fighters set to become members of Iraqi security forces, an informed source in Sinjar who requested anonymity told Kurdistan 24.\n\"The process will be implemented in several phases and approximately five thousand fighters will become members of Iraq's security institutions,\" the source said. \"According to the integration mechanism, those fighters who become part of Iraq's federal institutions will remain in Sinjar under the name of protecting the area.\"",
-      "bodyKo": "시냐르 저항군 통합 의식 개최…약 4,000~5,000명 이라크 보안군 편입\n\n아르빌(쿠르디스탄 24) - 시냐르 저항군(YBS)의 이라크 보안기관 통합 절차를 시작하기 위한 의식이 월요일 시냐르 산맥에서 개최된다. 약 4,000~5,000명의 전투원이 이라크 보안군 대열에 합류할 예정이라고 시냐르의 한 정보통 관계자가 쿠르디스탄 24에 밝혔다.\n\n\"통합 절차는 여러 단계에 걸쳐 진행될 것이며 약 5,000명의 전투원이 이라크 보안기관의 일원이 될 것\"이라고 익명을 요청한 이 관계자는 말했다. \"통합 메커니즘에 따르면 이라크 연방기관의 일부가 되는 전투원들은 지역 보호 임무 명목으로 시냐르에 남아있게 된다.\"\n\n이번 통합은 2026년 2월부터 시작된 협상에 이어 무장세력을 국가 통제 하에 두려는 알자이디 총리의 계획의 일환이다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Kurdistan24"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "신자르",
-        "km": 429
       }
     },
     {
@@ -171,27 +953,49 @@
       }
     },
     {
-      "title": "ألمانيا.. العاصفة أوستن تتسبب بانقطاع الكهرباء عن آلاف المنازل » وكالة الانباء العراقية (واع)",
-      "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://ina.iq/ar/international/277306-.html",
-      "date": "2026-10-26T04:13:49.000Z",
+      "title": "العراق اليوم: بغداد والرياض .. شراكات اقتصادية لو نجحت!",
+      "source": "DW.com",
+      "link": "https://news.google.com/rss/articles/CBMirwNBVV95cUxNOXJCNnd5cEpYS0FTQ2t0cXE3VGNWQkxyTkRpZ2tTaXpHa1V5VTJoeGp1MHl5WE82aHdWd1NUVkF1MFVHWGs4UXc3Wjh3YmlEWG9Oa3lDTC1HYWd2MGE1SWhKNUNXTjdYRm5Hb3NmT3MzYnp3LThLcVBkek5PNVBGQnJsaDhMWW5QT01Dc0twMnNZdGtBaHFRdTdueVVsT0ZXV1pSMm9DaTVObmVfcXYzbXVxcVR0WExoeFNpZ0lzV3FoZlBtVGd4OUg1bTRwRWlmVDFwU0tHcy1NcHVpOHhtMDF2cE1Dby16NDFGcnZWa0t3T0hVUFMwUmpkQUp0cWNPMEpkYjZKaHEyZnM5Tm9ySXdYQ2Q5RVZfYVgzRGVYV3RQRkxhUkplVmpaUTdZQzJ3eDEyY2gzV1RORFU0MWVZVFZ2b3h3Sy1fbllrc1BiNFRqUjdSSFkwREVBLXV5RnR5YmlpcExFaHphMUJFQWZuNk1KNTJQM0VPNFFneDZWcUZqOGY1RXpjWm9Pb2xTaXRCeGFFaTYtLWdveFZFaGJDTzVEWnNNMnlUVEtKREVrdw?oc=5",
+      "date": "2026-10-26T04:32:39.000Z",
       "lang": "ar",
-      "titleKo": "독일, 폭풍 오스틴으로 수천 가구 정전",
-      "url": "https://ina.iq/ar/international/277306-.html",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
+      "titleKo": "이라크 오늘: 바그다드와 리야드, 경제 협력이 성공한다면!",
       "count": 2,
       "sources": [
-        "وكالة الانباء العراقية (واع)"
+        "DW.com",
+        "مجلس النواب العراقي"
       ],
       "related": [
         {
-          "titleKo": "폭풍이 북유럽을 강타, 15만 가구 이상 정전",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://ina.iq/ar/international/277336-150.html"
+          "titleKo": "파르하드 아트루시 의회 부의장, 이라크 주재 이탈리아 대사 접견해 의회·경제 협력 강화 논의",
+          "source": "مجلس النواب العراقي",
+          "link": "https://iq.parliament.iq/en/2026/10/25/deputy-speaker-of-parliament-farhad-atroushi-receives-italian-ambassador-to-iraq-to-discuss-strengthening-parliamentary-and-economic-cooperation/"
         }
       ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "عواصف تضرب شمال أوروبا وتقطع الكهرباء عن أكثر من 150 ألف منزل » وكالة الانباء العراقية (واع)",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://ina.iq/ar/international/277336-150.html",
+      "date": "2026-10-26T04:13:49.000Z",
+      "lang": "ar",
+      "titleKo": "폭풍이 북유럽을 강타, 15만 가구 이상 정전",
+      "url": "https://ina.iq/ar/international/277336-150.html",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
       "tag": "전력·생활",
       "impact": {
         "lv": "y",
@@ -202,52 +1006,22 @@
       }
     },
     {
-      "title": "US Seeks to Complete Iran’s Land Blockade | Are Pakistan and Iraq Shifting Toward Trump?",
-      "source": "اقتصاد آنلاین",
-      "link": "https://www.eghtesadonline.com/en/news/5/us-seeks-to-complete-iran%E2%80%99s-land-blockade-%7C-are-pakistan-and-iraq-shifting-toward-trump",
+      "title": "Iraqi explanations for shuttering of Iran crossing fail to quiet US pressure claims",
+      "source": "Amwaj.media",
+      "link": "https://amwaj.media/en/media-monitor/iraqi-explanations-for-shuttering-of-iran-crossing-fail-to-quiet-us-pressure-clai",
       "date": "2026-10-26T03:32:03.000Z",
       "lang": "en",
-      "titleKo": "미국, 이란 육로 봉쇄 완성 추진",
-      "url": "https://www.eghtesadonline.com/en/news/5/us-seeks-to-complete-iran%E2%80%99s-land-blockade-%7C-are-pakistan-and-iraq-shifting-toward-trump",
-      "body": "EghtesadOnline: The United States, with the cooperation of Iran’s neighbors Pakistan and Iraq, is moving to tighten a land blockade around Iran. Both countries have maintained close ties with the Islamic Republic, but are now increasingly restricting border crossings and trade routes with Iran.\nPolitical Desk: From Pakistan to Iraq, restrictions on Iran’s land borders are intensifying. Until recently, Pakistan had cited technical problems to explain border closures. Now, however, its Foreign Ministry has dropped that justification, stating that Islamabad will comply with US sanctions against Iran. Iraq’s prime minister has announced a similar position more cautiously.\nIran is facing restrictions on its land routes at a time when a naval and air blockade had already begun. The closure of the al-Shaib border crossing with Iraq and trade restrictions at Pakistan’s Rimdan–Gabd and Mirjaveh–Taftan crossings are signs that Iran’s access to regional trade networks is becoming increasingly dif",
-      "bodyKo": "**미국, 이란 육로 봉쇄 강화 추진**\n\n에그테사드온라인: 미국이 이란의 이웃 국가인 파키스탄과 이라크의 협력 아래 이란을 둘러싼 육로 봉쇄를 강화하고 있다. 두 국가는 이슬람공화국과 긴밀한 관계를 유지해왔으나 현재 이란과의 국경 통과지점과 무역로를 점점 더 제한하고 있다.\n\n정치부: 파키스탄에서 이라크까지 이란의 육로 국경에 대한 제한이 심화되고 있다. 최근까지 파키스탄은 국경 폐쇄의 이유를 기술적 문제로 설명해왔다. 그러나 이제 파키스탄 외교부는 그 정당성을 내려놓고 이슬라마바드가 미국의 이란 제재를 준수할 것이라고 밝혔다. 이라크 총리도 더 신중한 입장에서 유사한 입장을 발표했다.\n\n이란은 해상 및 공중 봉쇄가 이미 시작된 상황에서 육로 제한에 직면하고 있다. 이라크와의 알샤이브 국경 통과지점 폐쇄와 파키스탄의 림단-가브드 및 미르자베-타프탄 통과지점에서의 무역 제한은 이란의 지역 무역망 접근이 점점 더 어려워지고 있다는 신호다.",
+      "titleKo": "이란 국경 폐쇄 설명에도 미국의 압박 주장 잠재우지 못하는 이라크",
+      "url": "https://amwaj.media/en/media-monitor/iraqi-explanations-for-shuttering-of-iran-crossing-fail-to-quiet-us-pressure-clai",
+      "body": "The story: Iraq has closed the Al-Shaib-Chazabeh border crossing with Iran. Baghdad has offered a string of explanations amid ambiguity over the motives. Authorities cite technical shortfalls and risks of smuggling. However, Iraqi politicians and commentators have blamed US influence. Officials in Maysan Governorate, where the crossing is located, have threatened civil disobedience and asked why Shaib is singled out as the closure disrupts local livelihoods. The coverage: News of the closure emerged on Oct. 20, with one official telling Baghdad-based 964 media that Prime Minister Ali Al-Zaidi ordered...",
+      "bodyKo": "알 샤이브-차자베 국경 통로 폐쇄, 미국 영향력 논란\n\n이라크가 이란과의 알 샤이브-차자베 국경 통로를 폐쇄했다. 바그다드는 동기의 모호함 속에서 일련의 설명을 제시했다. 당국은 기술적 결함과 밀수 위험을 언급했다. 그러나 이라크 정치인과 논평가들은 미국의 영향력을 탓했다. 통로가 위치한 미산 주의 관계자들은 시민 불복종을 위협하며 지역 생계를 방해하는 샤이브가 왜 폐쇄 대상으로 지목되었는지 의문을 제기했다. 보도에 따르면 폐쇄 소식은 10월 20일 나타났으며, 한 관계자는 바그다드에 본부를 둔 964 미디어에 총리 알리 알자이디가 명령했다고 전했다.",
       "tried": true,
-      "count": 6,
+      "count": 1,
       "sources": [
-        "Amwaj.media",
-        "شفق نيوز",
-        "www.taghribnews.com",
-        "The Jerusalem Post",
-        "اقتصاد آنلاین"
+        "Amwaj.media"
       ],
-      "related": [
-        {
-          "titleKo": "이란 국경 폐쇄 설명에도 미국의 압박 주장 잠재우지 못하는 이라크",
-          "source": "Amwaj.media",
-          "link": "https://amwaj.media/en/media-monitor/iraqi-explanations-for-shuttering-of-iran-crossing-fail-to-quiet-us-pressure-clai"
-        },
-        {
-          "titleKo": "이란 국경 폐쇄 조사, 시위 확산 속",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Iraq/Iraq-probes-Iran-border-closure-amid-mounting-protests"
-        },
-        {
-          "titleKo": "이란 국경 폐쇄 조사, 시위 확산 속",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Iraq/Iraq-probes-Iran-border-closure-amid-mounting-protests"
-        },
-        {
-          "titleKo": "이란 관계자 \"이란-이라크 국경 통로 계속 운영 중\"",
-          "source": "www.taghribnews.com",
-          "link": "https://www.taghribnews.com/en/news/743417/iran-iraq-border-crossings-remain-active-iranian-official"
-        },
-        {
-          "titleKo": "이라크, 이란 국경 폐쇄…요르단·시리아 국경 강화",
-          "source": "The Jerusalem Post",
-          "link": "https://www.jpost.com/middle-east/article-912785"
-        }
-      ],
-      "tag": "시위·통제",
+      "related": [],
+      "tag": "기타",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -292,18 +1066,11 @@
       "body": "تظاهر عدد من العراقيين، الأحد، في ساحة التحرير وسط العاصمة بغداد، للمطالبة بـ\nتم النسخ تظاهر عدد من العراقيين، الأحد، في ساحة التحرير وسط العاصمة بغداد، للمطالبة بـ\"محاسبة كبار الفاسدين، وكشف قتلة المتظاهرين وتقديمهم للعدالة\"، فيما أرسل رئيس الوزراء وفدا لاستلام مطالب المتظاهرين.\nوأفادت وكالة الأنباء العراقية الرسمية، الأحد، بأن رئيس مجلس الوزراء علي الزيدي أرسل، الأحد، \"وفدا إلى ساحة التحرير وسط بغداد لاستلام مطالب المتظاهرين\".\nوأكد المتظاهرون، وفق الوكالة، أن \"مطالبهم تتركز حول محاسبة كبار الفاسدين، وكشف قتلة المتظاهرين وتقديمهم للعدالة، إضافة إلى حصر السلاح بيد الدولة\"، فيما شددوا على التمسك ببناء دولة القانون والعدالة.\nكما أعرب المتظاهرون عن شكرهم لسرعة استجابة رئيس الوزراء، بحسب المصدر ذاته.\nوتأتي المظاهرات في الذكرى السنوية لأخرى شهدتها البلاد في 25 أكتوبر/تشرين الأول 2019 بعدة محافظات عراقية، للمطالبة بتحسين الظروف المعيشية وحل أزمة البطالة، وأسفرت عن مقتل بعض المتظاهرين وإصابة آخرين.",
       "bodyKo": "**바그다드 해방광장 시위, 부패 고위층 처벌 촉구**\n\n수백 명의 이라크인들이 일요일 수도 바그다드 중심부 해방광장에서 시위를 벌여 \"부패 고위층에 대한 책임 추궁과 시위대 살해범 적발 및 사법 처리\"를 요구했으며, 총리는 시위대의 요구사항을 수령하기 위해 대표단을 파견했다.\n\n이라크 공식 통신사는 일요일 알리 알자이디 총리가 \"바그다드 중심부 해방광장으로 시위대의 요구사항을 수령하기 위한 대표단을 파견했다\"고 보도했다.\n\n통신사에 따르면 시위대는 \"요구사항이 부패 고위층에 대한 책임 추궁, 시위대 살해범 적발 및 사법 처리, 그리고 무기를 국가의 손에 집중시키는 것에 집중되어 있다\"고 강조했으며, 법치주의와 정의에 기반한 국가 건설을 지키겠다는 입장을 재확인했다.\n\n시위대는 또한 총리의 신속한 대응에 감사를 표했다.\n\n이번 시위는 2019년 10월 25일 이라크 여러 지역에서 벌어진 시위의 연례 기념 행사로, 당시 생활 여건 개선과 실업 위기 해결을 요구했던 시위에서 일부 시위대가 사망하고 다른 이들이 부상을 입었다.",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "صحيفة الرأي",
-        "https://alsaudi.news/"
+        "صحيفة الرأي"
       ],
-      "related": [
-        {
-          "titleKo": "바그다드 시위대, 부패 관계자 처벌과 이전 시위 사망자 규명 촉구",
-          "source": "https://alsaudi.news/",
-          "link": "https://alsaudi.news/international/2510/112880/"
-        }
-      ],
+      "related": [],
       "tag": "시위·통제",
       "impact": {
         "lv": "y",
@@ -314,22 +1081,43 @@
       }
     },
     {
-      "title": "Deputy Speaker of Parliament Farhad Atroushi Receives Italian Ambassador to Iraq to Discuss Strengthening Parliamentary and Economic Cooperation",
-      "source": "مجلس النواب العراقي",
-      "link": "https://iq.parliament.iq/en/2026/10/25/deputy-speaker-of-parliament-farhad-atroushi-receives-italian-ambassador-to-iraq-to-discuss-strengthening-parliamentary-and-economic-cooperation/",
-      "date": "2026-10-25T20:55:54.000Z",
+      "title": "مطالب بمحاسبة الفاسدين وكشف قتلة المتظاهرين تهز ساحة التحرير في بغداد",
+      "source": "https://emirates24.net/",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5XZUt2UVpwUzloeGwzQmRtdmRlY3VnaGR6S25NRnA4cDg5cV9maUFxQVV1eVltTjNHZDNqaExaNEFfRmtwZ0FObHBXM05ZQVU5QllhRGd4V0l3VENud0E?oc=5",
+      "date": "2026-10-25T23:01:13.000Z",
+      "lang": "ar",
+      "titleKo": "부패 관리와 시위대 살해자 적발 촉구 바그다드 타흐리르 광장 뒤흔들다",
+      "count": 1,
+      "sources": [
+        "https://emirates24.net/"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "y",
+        "line": "바그다드권 시위·집회 (타흐리르 광장) — 시내·공항 이동 지연 가능",
+        "act": "시위 시간대 시내 이동 피하기",
+        "place": "타흐리르 광장",
+        "km": 25
+      }
+    },
+    {
+      "title": "Iraq seeks oil tanker fleet, stronger insurance protection amid export risks",
+      "source": "Rudaw",
+      "link": "https://rudaw.net/english/categories/economic/1079884",
+      "date": "2026-10-25T21:13:10.000Z",
       "lang": "en",
-      "titleKo": "파르하드 아트루시 의회 부의장, 이라크 주재 이탈리아 대사 접견해 의회·경제 협력 강화 논의",
-      "url": "https://iq.parliament.iq/en/2026/10/25/deputy-speaker-of-parliament-farhad-atroushi-receives-italian-ambassador-to-iraq-to-discuss-strengthening-parliamentary-and-economic-cooperation/",
-      "body": "",
-      "bodyKo": "",
+      "titleKo": "이라크, 수출 위험 속 유조선 함대 확보·보험 강화 추진",
+      "url": "https://rudaw.net/english/categories/economic/1079884",
+      "body": "Iraq is seeking to purchase large oil tankers to reduce transportation costs and strengthen crude exports, as insurance industry officials on Sunday called for greater protection of the country's ener",
+      "bodyKo": "이라크가 운송비를 절감하고 원유 수출을 강화하기 위해 대형 유조선 구매를 추진 중인 가운데, 보험업계 관계자들이 일요일 국가 에너지 인프라에 대한 보호 강화를 촉구했다.",
       "tried": true,
       "count": 1,
       "sources": [
-        "مجلس النواب العراقي"
+        "Rudaw"
       ],
       "related": [],
-      "tag": "정치·선거",
+      "tag": "경제·유가",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -374,429 +1162,9 @@
       "body": "The two sides discussed ways to resolve issues in the energy sector, mechanisms for exporting and marketing oil, and the management of revenues.\nERBIL, Kurdistan Region of Iraq &ndash; Kurdistan Region Prime Minister Masrour Barzani and Iraqi Deputy Prime Minister Muhsin al-Mandalawi on Sunday discussed resolving energy and revenue disputes between Erbil and Baghdad, during a meeting in Zakho.\nA high-level Iraqi delegation, headed by Mandalawi, arrived in Zakho on Sunday to meet with the prime minister and discuss outstanding issues between Erbil and Baghdad.\nThe meeting &ldquo;also focused on unifying visions regarding the management of oil wealth and regulating production and export operations within constitutional and legal frameworks, ensuring the rights of all Iraqis,&rdquo; the statement added.",
       "bodyKo": "쿠르드 자치정부 총리와 이라크 부총리, 에르빌-바그다드 에너지 분쟁 논의\n\n아르빌 — 쿠르드 자치정부의 마수르 바르자니 총리와 이라크의 무흐신 알만달라위 부총리가 지난 일요일 자호에서의 회담을 통해 에너지 부문의 문제 해결 방안, 석유 수출 및 판매 메커니즘, 수익 관리 방식에 대해 논의했다.\n\n알만달라위를 수장으로 하는 이라크 고위급 대표단이 일요일 자호에 도착해 총리와 만나 에르빌과 바그다드 간의 미해결 현안들을 논의했다.\n\n회담은 \"석유 자원의 관리에 대한 시각 통일과 헌법 및 법적 틀 내에서의 생산 및 수출 작업 규제, 모든 이라크인의 권리 보장에도 초점을 맞췄다\"고 성명에서 덧붙였다.",
       "tried": true,
-      "count": 2,
-      "sources": [
-        "The New Region",
-        "Kurdistan24"
-      ],
-      "related": [
-        {
-          "titleKo": "바르자니 총리, 이라크 대표단과 2027년 예산·쿠르디스탄 석유 수출 재개 논의",
-          "source": "Kurdistan24",
-          "link": "https://www.kurdistan24.net/en/story/948529/pm-barzani-iraqi-delegation-discuss-2027-budget-resumption-of-kurdistan-oil-exports"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraq seeks oil tanker fleet, stronger insurance protection amid export risks",
-      "source": "Rudaw",
-      "link": "https://rudaw.net/english/categories/economic/1079884",
-      "date": "2026-10-25T20:12:42.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 수출 위험 속 유조선 함대 확보·보험 강화 추진",
-      "url": "https://rudaw.net/english/categories/economic/1079884",
-      "body": "Iraq is seeking to purchase large oil tankers to reduce transportation costs and strengthen crude exports, as insurance industry officials on Sunday called for greater protection of the country's ener",
-      "bodyKo": "이라크가 운송비를 절감하고 원유 수출을 강화하기 위해 대형 유조선 구매를 추진 중인 가운데, 보험업계 관계자들이 일요일 국가 에너지 인프라에 대한 보호 강화를 촉구했다.",
-      "tried": true,
       "count": 1,
       "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Baghdad, Erbil agree on energy dispute timelines",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Iraq/Baghdad-Erbil-agree-on-energy-dispute-timelines",
-      "date": "2026-10-25T19:52:46.000Z",
-      "lang": "en",
-      "titleKo": "바그다드-아르빌, 에너지 분쟁 일정 합의",
-      "url": "https://shafaq.com/en/Iraq/Baghdad-Erbil-agree-on-energy-dispute-timelines",
-      "body": "Shafaq News- DuhokIraq's government and the Kurdistan Regional Government (KRG) agreed on Sunday to set timelines for resolving outstanding energy and oil export disputes, according to a statement fro\nThe agreement followed talks in Duhok province between a federal delegation led by Al-Mandalawi and Kurdistan Region Prime Minister Masrour Barzani, attended by Oil Minister Bassem Mohammed Al-Abadi, Electricity Minister Ali Saadi Wahib, and other officials. The discussions covered oil production, exports, marketing arrangements, revenue management, and electricity cooperation, as well as managing oil resources under constitutional and legal frameworks.\nAl-Mandalawi called for continued coordination between Baghdad and Erbil on energy and oil issues, including production and investment plans aimed at meeting domestic needs and increasing public revenues, his office said.",
-      "bodyKo": "두후크 - 이라크 정부와 쿠르디스탄 지역정부(KRG)가 일요일 미해결 에너지 및 석유 수출 분쟁 해결을 위한 일정을 정하기로 합의했다고 성명서에서 밝혔다.\n\n합의는 알만달라위가 이끄는 연방 대표단과 쿠르디스탄 지역 총리 마스루르 바르자니 간 두후크주에서의 회담 이후 이루어졌다. 회담에는 바심 무함마드 알아바디 석유부 장관, 알리 사디 와히브 전력부 장관 등 관계자들이 참석했다. 논의는 석유 생산, 수출, 마케팅 협약, 수익 관리, 전력 협력은 물론 헌법 및 법적 틀 내에서 석유 자원 관리를 다뤘다.\n\n알만달라위는 바그다드와 아르빌 간 에너지 및 석유 문제에 대한 지속적인 조율을 촉구했으며, 여기에는 국내 수요 충족과 공공 수익 증대를 목표로 하는 생산 및 투자 계획이 포함된다고 그의 사무실이 밝혔다.",
-      "tried": true,
-      "count": 3,
-      "sources": [
-        "Rudaw",
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "바그다드-아르빌 예산 분쟁, 석유 협상 재개 속에서도 계속",
-          "source": "Rudaw",
-          "link": "https://rudaw.net/english/categories/iraq/1079883"
-        },
-        {
-          "titleKo": "바그다드-아르빌, 에너지 분쟁 일정 합의",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Iraq/Baghdad-Erbil-agree-on-energy-dispute-timelines"
-        }
-      ],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Crowds grow at Baghdad's Tishreen anniversary protest",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/society/Crowds-grow-at-Baghdad-s-Tishreen-anniversary-protest",
-      "date": "2026-10-25T19:45:21.000Z",
-      "lang": "en",
-      "titleKo": "바그다드 티슈린 기념 시위 인파 증가",
-      "url": "https://shafaq.com/en/society/Crowds-grow-at-Baghdad-s-Tishreen-anniversary-protest",
-      "body": "Shafaq News- Baghdad Iraqis continued to arrive at Baghdad's Tahrir Square on Sunday to mark the seventh anniversary of the 2019 Tishreen protests, with hundreds gathering amid tight security. Demon\nDemonstrators waved Iraqi flags and chanted slogans, including \"The people want the fall of the regime\" and \"Iran out, Tishreen remains free.\"\nProtester Jassim Hamid told Shafaq News that participants gathered to honor those killed in 2019 and renew their commitment to seeking \"a free country without foreign interference.\"\nKhalid Ali Hassan, protester, said the Tishreen movement represented Iraqis' struggle against corruption, political power-sharing, poor public services, and unemployment.\nRiot police established a tight security cordon around the demonstration , restricting protesters to the area near Al-Umma Garden behind the monument in Tahrir Square. Security forces also deployed heavily in the nearby Bab Al-Sharqi district to maintain traffic flow.",
-      "bodyKo": "바그다드 타흐리르 광장에 수천 명 운집…2019년 티슈린 항쟁 7주년 추모\n\n샤팍뉴스-바그다드 주민들이 2019년 티슈린 항쟁 7주년을 기념하기 위해 일요일 바그다드 타흐리르 광장에 계속 도착했으며, 수백 명이 삼엄한 경비 속에 모였다.\n\n시위자들은 이라크 국기를 흔들며 \"국민은 체제 붕괴를 원한다\"와 \"이란은 나가고 티슈린은 자유로 남아야 한다\"는 구호를 외쳤다.\n\n시위자 자심 하미드는 샤팍뉴스에 참가자들이 2019년 사망자들을 추모하고 \"외국의 간섭 없는 자유로운 국가\"를 추구하려는 의지를 새롭게 하기 위해 모였다고 말했다.\n\n시위자 칼리드 알리 하산은 티슈린 운동이 부패, 정치적 권력 분배, 열악한 공공 서비스, 실업에 맞선 이라크인들의 투쟁을 대표한다고 말했다.\n\n경찰은 시위 주변에 삼엄한 경비 라인을 설치해 시위자들을 타흐리르 광장 기념비 뒤 알움마 정원 인근 지역으로 제한했다. 보안군은 교통 흐름을 유지하기 위해 인근 바브 알샤르키 지구에도 대규모로 배치했다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "Al Jazeera",
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크, 티슈린 시위 7주년 맞아 개혁 요구",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/video/newsfeed/2026/10/25/iraqis-mark-seven-years-since-tishreen-protests-with-reform-demands"
-        }
-      ],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "g",
-        "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "بغداد تنفس الصعداء.. الذكرى السابعة لتشرين تمر دون صدام مسلح",
-      "source": "المسلة الحدث كما حدث",
-      "link": "https://almasalah.com/archives/143672",
-      "date": "2026-10-25T19:06:41.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 안도의 한숨… 10월 봉기 7주년 무장 충돌 없이 지나가",
-      "url": "https://almasalah.com/archives/143672",
-      "body": "بغداد/المسلة: اسدلت العاصمة بغداد والمحافظات الستار على تظاهرات الذكرى السابعة لانتفاضة تشرين بانقضاء الفعاليات الاحتجاجية في ساحة التحرير ومحيطها دون تسجيل أي خروقات أمنية أو مواجهات ميدانية تذكر.\nواظهرت المجريات الميدانية نجاح الترتيبات الأمنية والتزام المحتجين بالسلمية التامة مما حال دون حدوث أي صدام كان يخشى وقوعه وسط التحشيدات السابقة والصراعات المحتدمة.\nوكانت المخاوف قد تصاعدت قبل انطلاق التظاهرات من استغلال المطالب الشعبية لتصفية الحسابات السياسية والضغط على الحكومة بشأن القرارات المالية وموقفها من التطورات الإقليمية الا ان الوعي الاحتجاجي والتعامل الميداني الحذر ساهم في الحفاظ على طابع التظاهر المدني.\nواكد الناشطون خلال التواجد الميداني رفضهم التام لأي محاولات لركوب الموجة الاحتجاجية أو تسخير مطالب المتضررين والعاطلين.\nولاقى الانضباط الأمني الميداني والتزام التوجيهات الحكومية الخاصة بتأمين الحماية للمتظاهرين والتعامل الإنساني إشادة واسعة بعد ان طويت صفحة النهار الاحتجاجي بسلام تام وفي أجواء سادها الهدوء والانضباط في مختلف مواقع التظاهر.",
-      "bodyKo": "**바그다드와 각 주, 10월 봉기 7주년 추모 집회 평화롭게 마무리**\n\n바그다드/알무살라: 바그다드 수도와 각 주가 10월 봉기 7주년 추모 집회의 막을 내렸다. 해방광장과 그 주변에서 진행된 항의 집회가 주목할 만한 보안 위반이나 현장 충돌 없이 종료됐다.\n\n현장 상황은 보안 조치의 성공과 시위대의 완전한 평화 준수를 보여줬으며, 이전의 동원과 격화된 갈등 속에서 우려되던 어떤 충돌도 발생하지 않았다.\n\n시위 시작 전 우려는 국민의 요구를 정치적 계산 해결, 정부에 대한 재정 결정과 지역 정세 발전에 대한 입장 관련 압박에 악용할 가능성에 집중됐다. 그러나 항의 의식과 신중한 현장 대응이 시위의 시민적 성격 유지에 기여했다.\n\n현장에 참여한 활동가들은 항의 물결에 편승하거나 피해자와 실업자의 요구를 악용하려는 어떤 시도도 완전히 거부한다고 강조했다.\n\n현장 보안 규율과 시위대 보호와 인도적 대응을 위한 정부 지침 준수는 항의 집회가 완전한 평화 속에서 종료되고 시위 현장 전역에서 침착함과 규율이 지배한 분위기 속에서 하루가 마무리된 후 광범위한 찬사를 받았다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "المسلة الحدث كما حدث"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Hormuz shutdown could slash Iraq's oil revenues 80%",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Economy/Hormuz-shutdown-could-slash-Iraq-s-oil-revenues-80",
-      "date": "2026-10-25T19:01:34.000Z",
-      "lang": "en",
-      "titleKo": "호르무즈 해협 폐쇄 시 이라크 석유 수익 80% 감소 가능",
-      "url": "https://shafaq.com/en/Economy/Hormuz-shutdown-could-slash-Iraq-s-oil-revenues-80",
-      "body": "Shafaq News- Baghdad A renewed closure of the Strait of Hormuz could slash Iraq's oil revenues by up to 80%, threatening government salaries, public services and the dinar, development and investment\nAl-Najjar told Shafaq News that a prolonged conflict involving Iran could keep crude prices above $100 per barrel, potentially reaching $130. Higher prices would drive up fuel, food and travel costs without necessarily benefiting Iraq if exports, trade and investment remained disrupted.\nA settlement, meanwhile, could bring oil prices down to around $74 per barrel and support a recovery in global growth in 2027. However, Al-Najjar warned that lower prices would also reduce Baghdad's revenue, estimating that Iraq needs oil at approximately $86 per barrel to balance its budget.\nDeclining oil revenue could strain government salaries and public services, while investor uncertainty could limit hiring, he said. Rising food and medicine prices would further burden households, particularly if regio",
-      "bodyKo": "바그다드 - 호르무즈 해협의 재폐쇄는 이라크의 석유 수익을 최대 80%까지 감소시켜 정부 급여, 공공 서비스, 디나르화, 개발 및 투자를 위협할 수 있다.\n\n알나자르는 샤팍뉴스에 이란이 관련된 장기 분쟁이 원유 가격을 배럴당 100달러 이상으로 유지할 수 있으며, 잠재적으로 130달러에 도달할 수 있다고 말했다. 높은 가격은 수출, 무역 및 투자가 계속 중단되더라도 이라크에 반드시 이익이 되지 않으면서 연료, 식품 및 여행 비용을 상승시킬 것이다.\n\n한편 합의는 석유 가격을 배럴당 약 74달러로 낮추고 2027년 글로벌 성장 회복을 지원할 수 있다. 그러나 알나자르는 낮은 가격이 바그다드의 수익도 감소시킬 것이라고 경고하면서 이라크가 예산 균형을 맞추기 위해 배럴당 약 86달러의 석유가 필요하다고 추정했다.\n\n석유 수익 감소는 정부 급여와 공공 서비스에 부담을 줄 수 있으며, 투자자 불확실성은 채용을 제한할 수 있다고 그는 말했다. 식품 및 의약품 가격 상승은 특히 지역이",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "호르무즈 해협 폐쇄 시 이라크 석유 수익 80% 감소 가능",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Economy/Hormuz-shutdown-could-slash-Iraq-s-oil-revenues-80"
-        }
-      ],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "توضيح جديد من \"الجمارك\" العراقية بشأن رسوم السيارات الكهربائية والهجينة",
-      "source": "العربية",
-      "link": "https://www.alarabiya.net/aswaq/iraq-economy/2026/10/25/%D8%AA%D9%88%D8%B6%D9%8A%D8%AD-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%85%D9%86-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B1%D9%83-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A8%D8%B4%D8%A7%D9%86-%D8%B1%D8%B3%D9%88%D9%85-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D9%87%D8%AC%D9%8A%D9%86%D8%A9",
-      "date": "2026-10-25T18:44:16.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 세관, 전기·하이브리드 자동차 관세 관련 새로운 입장 발표",
-      "url": "https://www.alarabiya.net/aswaq/iraq-economy/2026/10/25/%D8%AA%D9%88%D8%B6%D9%8A%D8%AD-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%85%D9%86-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B1%D9%83-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A8%D8%B4%D8%A7%D9%86-%D8%B1%D8%B3%D9%88%D9%85-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D9%87%D8%AC%D9%8A%D9%86%D8%A9",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "العربية"
-      ],
-      "related": [],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "مقترح جديد في العراق لتمويل صغار التجار ودعم استقرار سعر الصرف",
-      "source": "العربية",
-      "link": "https://www.alarabiya.net/aswaq/iraq-economy/2026/10/25/%D9%85%D9%82%D8%AA%D8%B1%D8%AD-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%84%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D8%B5%D8%BA%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1-%D9%88%D8%AF%D8%B9%D9%85-%D8%A7%D8%B3%D8%AA%D9%82%D8%B1%D8%A7%D8%B1-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B5%D8%B1%D9%81",
-      "date": "2026-10-25T18:44:09.000Z",
-      "lang": "ar",
-      "titleKo": "이라크, 소상공인 자금 지원 및 환율 안정화 방안 제시",
-      "url": "https://www.alarabiya.net/aswaq/iraq-economy/2026/10/25/%D9%85%D9%82%D8%AA%D8%B1%D8%AD-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%84%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D8%B5%D8%BA%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1-%D9%88%D8%AF%D8%B9%D9%85-%D8%A7%D8%B3%D8%AA%D9%82%D8%B1%D8%A7%D8%B1-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B5%D8%B1%D9%81",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "العربية"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "بغداد.. انسحاب المتظاهرين من ساحة التحرير",
-      "source": "موقع كلمة الإخباري",
-      "link": "https://kalimaiq.com/news/details/72330",
-      "date": "2026-10-25T18:36:36.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드.. 타흐리르 광장에서 시위대 철수",
-      "url": "https://kalimaiq.com/news/details/72330",
-      "body": "بغداد.. انسحاب المتظاهرين من ساحة التحرير\nانسحب جميع المتظاهرين من ساحة التحرير وسط العاصمة بغداد، مساء اليوم الأحد، لتنتهي التظاهرات التي أُقيمت إحياءً للذكرى السابعة لاحتجاجات تشرين، من دون تسجيل خروقات أمنية.\nوفي وقت سابق من اليوم، أكد رئيس مجلس الوزراء علي فالح الزيدي أن مطالب المتظاهرين وصلته، مشيراً إلى أنه سيتم النظر فيها والعمل على تحقيقها.\nوشهدت ساحة التحرير، اليوم الأحد، توافد أكثر من ألف متظاهر لإحياء ذكرى احتجاجات تشرين، بالتزامن مع انتشار إجراءات أمنية مشددة في منطقة الباب الشرقي.\nورفع المشاركون الأعلام العراقية ورددوا شعارات تستحضر الاحتجاجات التي انطلقت عام 2019، والتي عُدّت من أكبر موجات الاحتجاج في تاريخ العراق الحديث.\nوكانت قيادة عمليات بغداد قد أعلنت اتخاذ تدابير لتنظيم التظاهرات وتأمين محيطها، شملت منع حركة الدراجات النارية ومركبات “التوك توك”، مع إبقاء الطرق والمنافذ المؤدية إلى ساحة التحرير مفتوحة أمام المارة وحركة السير.",
-      "bodyKo": "바그다드.. 타흐리르 광장에서 시위대 철수\n\n바그다드 중심부 타흐리르 광장에서 모든 시위대가 오늘 일요일 저녁 철수했으며, 10월 항쟁 7주년을 기념하기 위해 열린 시위가 보안 위반 사항 없이 종료됐다.\n\n이날 앞서 알리 팔레흐 알자이디 총리는 시위대의 요구사항이 자신에게 전달됐다고 확인하면서, 이를 검토하고 실현하기 위해 노력하겠다고 언급했다.\n\n타흐리르 광장은 오늘 일요일 10월 항쟁 추도식을 위해 천 명 이상의 시위대가 몰려들었으며, 동쪽 문 지역에 강화된 보안 조치가 배치됐다.\n\n참가자들은 이라크 국기를 게양하고 2019년에 시작된 항쟁을 상기시키는 구호를 외쳤으며, 이는 이라크 현대사에서 가장 큰 항쟁 물결로 평가됐다.\n\n바그다드 작전사령부는 시위 조직화 및 주변 지역 보안을 위한 조치를 발표했으며, 오토바이와 툭툭 차량의 통행 금지를 포함했고, 타흐리르 광장으로 통하는 도로와 출입구는 보행자와 차량 통행에 개방된 상태로 유지됐다.",
-      "tried": true,
-      "count": 3,
-      "sources": [
-        "شفق نيوز",
-        "موقع كلمة الإخباري",
-        "Kurdistan24"
-      ],
-      "related": [
-        {
-          "titleKo": "바그다드 타흐리르 광장 시위 보안 사건 없이 종료",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/society/Baghdad-s-Tahrir-Square-protests-end-without-security-incidents"
-        },
-        {
-          "titleKo": "10월 항쟁 7주년 맞아.. 바그다드 타흐리르 광장 시위대 요구사항 재확인",
-          "source": "Kurdistan24",
-          "link": "https://www.kurdistan24.net/ar/story/948507/%D9%81%D9%8A-%D8%A7%D9%84%D8%B0%D9%83%D8%B1%D9%89-%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9%D8%A9-%D9%84%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%AA%D8%B4%D8%B1%D9%8A%D9%86-%D9%85%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D9%88%D9%86-%D9%81%D9%8A-%D8%B3%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1-%D8%A8%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D8%AC%D8%AF%D8%AF%D9%88%D9%86-%D9%85%D8%B7%D8%A7%D9%84%D8%A8%D9%87%D9%85"
-        }
-      ],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "y",
-        "line": "바그다드권 시위·집회 (타흐리르 광장) — 시내·공항 이동 지연 가능",
-        "act": "시위 시간대 시내 이동 피하기",
-        "place": "타흐리르 광장",
-        "km": 25
-      }
-    },
-    {
-      "title": "Iraqi provincial council threatens civil disobedience, road closures over Iran border crossing",
-      "source": "Rudaw",
-      "link": "https://www.rudaw.net/english/categories/iraq/1079882",
-      "date": "2026-10-25T18:31:40.000Z",
-      "lang": "en",
-      "titleKo": "이란 국경 통과지점 문제로 이라크 지방의회 시민불복종·도로폐쇄 위협",
-      "url": "https://www.rudaw.net/english/categories/iraq/1079882",
-      "body": "The head of Iraq's Maysan provincial council on Sunday warned the federal government that residents would resort to \"civil disobedience\" and close major roads connecting the province to the rest of Ir",
-      "bodyKo": "미산주 의회 의장은 일요일 연방정부에 주민들이 \"시민 불복종\"에 나설 것이며 주를 이라크 나머지 지역과 연결하는 주요 도로를 폐쇄할 것이라고 경고했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "g",
-        "line": "다른 지역 도로 통제 (아마라(마이산)) — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "아마라(마이산)",
-        "km": 280
-      }
-    },
-    {
-      "title": "Foreign Minister Affirms Iraq’s Commitment to Transitioning to a New Phase of Partnership with the United Nations",
-      "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://ina.iq/en/politics/53215-foreign-minister-affirms-iraqs-commitment-to-transitioning-to-a-new-phase-of-partnership-with-the-united-nations.html",
-      "date": "2026-10-25T18:22:00.000Z",
-      "lang": "en",
-      "titleKo": "외교장관, 유엔과의 새로운 파트너십 단계로의 전환에 대한 이라크의 의지 재확인",
-      "url": "https://ina.iq/en/politics/53215-foreign-minister-affirms-iraqs-commitment-to-transitioning-to-a-new-phase-of-partnership-with-the-united-nations.html",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "وكالة الانباء العراقية (واع)"
-      ],
-      "related": [],
-      "tag": "한국·외교",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Baghdad Suspects Israel Targeted Chinese Air Defense Systems Held by Iraqi Factions - ASHARQ AL-AWSAT English",
-      "source": "ASHARQ AL-AWSAT English",
-      "link": "https://english.aawsat.com/arab-world/5333164-baghdad-suspects-israel-targeted-chinese-air-defense-systems-held-iraqi-factions",
-      "date": "2026-10-25T18:12:40.000Z",
-      "lang": "en",
-      "titleKo": "바그다드, 이라크 무장세력 보유 중국산 방공 시스템 겨냥한 이스라엘 공격 의심",
-      "url": "https://english.aawsat.com/arab-world/5333164-baghdad-suspects-israel-targeted-chinese-air-defense-systems-held-iraqi-factions",
-      "body": "Sources said Baghdad suspects that two sites storing Chinese-made man-portable air defense systems were targeted in airstrikes last week, as officials examine an intelligence assessment suggesting that the US-Israeli war against Iran may have already resumed, even before the official start of hostilities, but on Iraqi soil.\nOn October 17, the Popular Mobilization Forces (PMF) announced that it had contained a fire caused by an explosion at a stockpile of damaged ammunition inside one of its facilities in the East Canal area of Baghdad. It said five people sustained minor injuries and that an investigation was underway to determine the circumstances of the incident.\nMore than a week has passed without the findings of the investigation being announced. However, an Iraqi government official who was not authorized to speak publicly said the relevant authorities were still examining the circumstances of the explosion.",
-      "bodyKo": "바그다드는 지난주 공습으로 중국산 휴대용 방공미사일을 저장한 두 곳의 시설이 표적이 됐다고 의심하고 있는 것으로 알려졌다. 관계자들은 미국-이스라엘의 이란 전쟁이 공식적인 적대행위 개시 이전에 이미 재개됐을 가능성을 시사하는 정보평가를 검토 중이며, 그 무대가 이라크 영토라고 보고 있다.\n\n10월 17일 인민동원군(PMF)은 바그다드 동부운하 지역의 자신들 시설 내 손상된 탄약 비축지에서 폭발로 인한 화재를 진화했다고 발표했다. 5명이 경미한 부상을 입었으며 사건의 경위를 파악하기 위한 조사가 진행 중이라고 밝혔다.\n\n1주일 이상이 지났으나 조사 결과는 아직 발표되지 않았다. 다만 공개 발언이 허가되지 않은 이라크 정부 관계자는 관련 당국이 여전히 폭발의 경위를 검토 중이라고 말했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "ASHARQ AL-AWSAT English"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "r",
-        "line": "현장 가까운 치안 사건 (바그다드)",
-        "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraq, US discuss prospects to strengthen joint cooperation",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/iraq-us-discuss-prospects-to-strengthen-joint-cooperation/",
-      "date": "2026-10-25T18:00:55.000Z",
-      "lang": "en",
-      "titleKo": "이라크-미국, 공동협력 강화 방안 논의",
-      "url": "https://www.iraqinews.com/iraq/iraq-us-discuss-prospects-to-strengthen-joint-cooperation/",
-      "body": "Iraq, US discuss prospects to strengthen joint cooperation\nIraqi Minister of Defense Nayef al-Shammari and Chargé d’Affaires at the US Embassy in Baghdad Steven Fagin during their meeting in Baghdad. Photo: INA\nBaghdad (IraqiNews.com) – Iraqi Minister of Defense Nayef al-Shammari and Chargé d’Affaires at the US Embassy in Baghdad Steven Fagin discussed approaches to strengthen cooperation between Baghdad and Washington on Sunday.\nDuring their meeting in the Iraqi capital, Baghdad, the two sides discussed bilateral ties and strategies to enhance cooperation between the two countries, according to a statement cited by the state-run Iraqi News Agency (INA).\nThe meeting took place after the US-led international coalition formally completed its full withdrawal and ended Operation Inherent Resolve in Iraq on September 30, 2026.",
-      "bodyKo": "이라크-미국, 공동협력 강화 방안 논의\n\n바그다드(이라크뉴스닷컴) – 나예프 알샤마리 이라크 국방부장관과 스티븐 페이긴 바그다드 미국대사관 대리대사가 일요일 양국 간 협력 강화 방안을 논의했다.\n\n바그다드에서 열린 회담에서 양측은 양국 관계와 협력 증진 전략에 대해 논의했다고 국영 이라크통신(INA)이 전했다.\n\n이번 회담은 미국 주도 국제연합군이 2026년 9월 30일 이라크에서의 작전 상속(Operation Inherent Resolve)을 공식 종료하고 완전 철수를 마친 이후 개최됐다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Drone attack targets Iranian Kurdish base in northern Iraq",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/drone-attack-targets-iranian-kurdish-base-in-northern-iraq/",
-      "date": "2026-10-25T17:23:16.000Z",
-      "lang": "en",
-      "titleKo": "드론 공격, 이라크 북부 이란계 쿠르드족 기지 겨냥",
-      "url": "https://www.iraqinews.com/iraq/drone-attack-targets-iranian-kurdish-base-in-northern-iraq/",
-      "body": "Drone attack targets Iranian Kurdish base in northern Iraq\nBaghdad (IraqiNews.com) – A drone attack carried out by Iran’s Islamic Revolutionary Guard Corps (IRGC) targeted on Saturday evening a base belonging to an Iranian Kurdish opposition group in the Kurdistan region of Iraq.\nAccording to reports, the strike hit the headquarters and a guard post of the Komala party. The base is located in the Alana Valley within the Balisan region, northeast of Erbil.\nLocal security and party officials confirmed the strike caused material damage to buildings but resulted in no casualties.\nThis attack is a part of Tehran’s intensified campaign against Iraqi-based Iranian Kurdish opposition groups.\nSince the military conflict broke out in the region on February 28, Iran has launched over 1,000 drones and missiles into Iraqi Kurdistan, claiming that these groups are directly endangering its national security and have Israeli support.",
-      "bodyKo": "드론 공격으로 이란 쿠르드계 기지 타격\n바그다드(이라크뉴스닷컴) – 이란 이슬람혁명수비대(IRGC)가 토요일 저녁 이라크 쿠르디스탄 지역 내 이란 쿠르드계 야당 단체 기지를 드론 공격으로 타격했다.\n보도에 따르면 공격은 코말라당의 본부와 경비초소를 명중했다. 기지는 아르빌 북동쪽 발리산 지역 알라나 계곡 내에 위치하고 있다.\n지역 보안 담당자와 정당 관계자들은 공격으로 건물에 물질적 피해가 발생했으나 인명피해는 없었다고 확인했다.\n이번 공격은 이라크 기반 이란 쿠르드계 야당 단체들에 대한 테헤란의 강화된 캠페인의 일환이다.\n2월 28일 지역 내 군사 분쟁이 발발한 이후 이란은 이라크 쿠르디스탄으로 1,000대 이상의 드론과 미사일을 발사했으며, 이들 단체가 자국의 국가안보를 직접 위협하고 있으며 이스라엘의 지원을 받고 있다고 주장하고 있다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iranian shelling targets 'Komala' party headquarters in the Kurdistan Region of Iraq",
-      "source": "جريدة القدس",
-      "link": "https://alquds.com/en/posts/265166-iranian-shelling-targets-komala-party-headquarters-in-the-kurdistan-region-of",
-      "date": "2026-10-25T16:36:58.000Z",
-      "lang": "en",
-      "titleKo": "이란군, 이라크 쿠르디스탄 지역 '코말라' 당사 포격",
-      "url": "https://alquds.com/en/posts/265166-iranian-shelling-targets-komala-party-headquarters-in-the-kurdistan-region-of",
-      "body": "Iranian forces target the headquarters of the separatist 'Komala' party in Iraqi Kurdistan with drones, accusing it of working for the Israeli occupation.\nIranian forces targeted bases belonging to the separatist Kurdish 'Komala' party in the Kurdistan region of Iraq with drones, according to media sources reported today, Sunday. Sources stated that the Revolutionary Guard targeted the main headquarters of this group in the Balisan area last night, describing it as separatist. This attack comes in the context of Iran resuming its deadly strikes against Kurdish opposition groups based in northern Iraq for years. These military operations have escalated since the outbreak of tensions in the Middle East at the end of last February, as Tehran pursues these organizations across the border. Iranian authorities accuse these armed groups of being involved in carrying out attacks inside Iranian territory during past periods. Tehran also claims that these organizations work to serve the interest",
-      "bodyKo": "**이란군, 이라크 쿠르드 지역 '꼬말라' 분리주의 정당 본부를 드론으로 공격**\n\n이란군이 이라크 쿠르드 지역의 분리주의 쿠르드 정당 '꼬말라'에 속한 기지들을 드론으로 공격했다고 현지 언론이 오늘 일요일 보도했다. 소식통들은 혁명수비대가 지난밤 발리산 지역의 이 단체 주요 본부를 공격했으며, 이를 분리주의 조직으로 규정했다고 밝혔다. 이번 공격은 이란이 수년간 이라크 북부에 기반을 둔 쿠르드 야당 단체들을 상대로 한 치명적 공격을 재개하는 맥락에서 나온 것이다. 이러한 군사 작전은 지난 2월 말 중동 긴장 사태 발발 이후 확대됐으며, 테헤란은 국경을 넘어 이들 조직을 추적하고 있다. 이란 당국은 이들 무장 단체가 과거 시기 이란 영토 내 공격 수행에 연루됐다고 주장하고 있다. 테헤란은 또한 이들 조직이 이스라엘 점령 세력의 이익을 위해 활동한다고 주장하고 있다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "جريدة القدس"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "حكومتا الاتحادية العراقية وإقليم كردستان تبحث الملفات المشتركة المتعلقة بشئون الطاقة",
-      "source": "بوابة روز اليوسف",
-      "link": "https://www.rosaelyoussef.com/1445343",
-      "date": "2026-10-25T16:33:24.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 연방정부와 쿠르디스탄 지역정부, 에너지 관련 공동 현안 논의",
-      "url": "https://www.rosaelyoussef.com/1445343",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "بوابة روز اليوسف"
+        "The New Region"
       ],
       "related": [],
       "tag": "정치·선거",
@@ -804,564 +1172,42 @@
         "lv": "g",
         "line": "현장 직접 영향 낮음",
         "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "منفذ الشيب يشعل الاحتجاجات في ميسان وتحركات مع بغداد لإلغاء قرار الإغلاق",
-      "source": "المعلومة",
-      "link": "https://almaalomah.me/news/148240/local/%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%D9%8A%D8%A8-%D9%8A%D8%B4%D8%B9%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%8A%D8%B3%D8%A7%D9%86-%D9%88%D8%AA%D8%AD%D8%B1%D9%83%D8%A7%D8%AA-%D9%85%D8%B9-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%84%D8%A5%D9%84%D8%BA%D8%A7%D8%A1",
-      "date": "2026-10-25T16:25:25.000Z",
-      "lang": "ar",
-      "titleKo": "시브 국경 폐쇄로 미산 시위 격화, 바그다드와 폐쇄 결정 취소 협의 진행",
-      "url": "https://almaalomah.me/news/148240/local/%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%D9%8A%D8%A8-%D9%8A%D8%B4%D8%B9%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%8A%D8%B3%D8%A7%D9%86-%D9%88%D8%AA%D8%AD%D8%B1%D9%83%D8%A7%D8%AA-%D9%85%D8%B9-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%84%D8%A5%D9%84%D8%BA%D8%A7%D8%A1",
-      "body": "المعلومة/ ميسان.. كشف مصدر حكومي، الأحد، عن اتصالات مكثفة بين العمارة وبغداد لإعادة فتح معبر حدودي مع إيران، في ظل وجود تظاهرات شعبية وقطع طرق. وأوضح المصدر في حديثه لـ/المعلومة/، أن \"حكومة ميسان المحلية أجرت اتصالات مكثفة مع الحكومة الاتحادية في بغداد من أجل الضغط باتجاه إعادة النظر بقرار إغلاق معبر الشيب الحدودي بين العراق وإيران ضمن حدود المحافظة، والذي تسبب بارتفاع الأسعار اللازمة، وأنه يشكل معبراً مهماً لدخول المحاصيل الزراعية والغذائية\". وأشار إلى أن المعبر \"يمثل نافذة لدخول وخروج آلاف العوائل، لا سيما فيما يتعلق بزيارة المراقد المقدسة أو إجراء العمليات الجراحية أو السياحة\"، لافتاً إلى أن \"هناك تظاهرات برزت منذ ساعات الصباح من قبل المتضررين من القرار، وتم إغلاق إحدى الطرق الرئيسية المؤدية للحقول النفطية\". وبيّن المصدر أن \"هذه الاتصالات تأتي في إطار الضغط باتجاه تغيير القرار وإعادة فتح المعبر\"، مؤكداً أن \"المعبر حيوي جداً ليس لميسان فحسب، بل لعموم محافظات الجنوب والفرات الأوسط، وبالتالي الاتصالات مستمرة من أجل بيان إمكانية تغيير القرار اليوم أو في الأيام المقبلة\".انتهى/25ف",
-      "bodyKo": "**미산, 이란 국경 통로 재개 위해 바그다드와 집중 협상**\n\n정보통신사 보도에 따르면 정부 소식통은 일요일 아마라와 바그다드 간 이란과의 국경 통로 재개를 위한 집중 협상이 진행 중이라고 밝혔다. 이는 대규모 시위와 도로 차단이 벌어지는 가운데 이루어지고 있다. 소식통은 \"미산 지방정부가 이라크-이란 간 셰이브 국경 통로 폐쇄 결정을 재검토하도록 압박하기 위해 바그다드 연방정부와 집중 협상을 진행했다\"고 설명했다. 이 통로는 미산 지역 내에 위치하며, 폐쇄로 인해 물가가 상승했고 농산물과 식량 수입의 중요한 통로 역할을 하고 있다. 소식통은 \"이 통로는 수천 가구의 출입 창구이며, 특히 성지 순례, 수술 치료, 관광과 관련해 중요한 역할을 한다\"고 지적했다. 그는 \"아침 시간부터 결정의 피해자들에 의한 시위가 벌어졌으며, 유전 지역으로 향하는 주요 도로 중 하나가 폐쇄됐다\"고 덧붙였다. 소식통은 \"이러한 협상은 결정 변경과 통로 재개를 위한 압박 차원에서 진행되고 있다\"며 \"이 통로는 미산뿐 아니라 남부 전역과 중부 유프라테스 지역 전체에 매우 중요하므로 오늘이나 앞으로의 며칠 내에 결정 변경 가능성을 검토하기 위해 협상이 계속될 것\"이라고 강조했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "المعلومة"
-      ],
-      "related": [],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "y",
-        "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
-        "act": "시위 시간대 시내 이동 피하기",
         "place": "바그다드",
         "km": 27
-      }
-    },
-    {
-      "title": "Iraqi Parliament approves renewable five-year employee leave",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Iraq/Iraqi-Parliament-approves-renewable-five-year-employee-leave",
-      "date": "2026-10-25T16:21:54.000Z",
-      "lang": "en",
-      "titleKo": "이라크 의회, 갱신 가능한 5년 직원 휴직 승인",
-      "url": "https://shafaq.com/en/Iraq/Iraqi-Parliament-approves-renewable-five-year-employee-leave",
-      "body": "Shafaq News- Baghdad Iraq's Parliament approved a bill on Sunday allowing eligible public employees to take up to 10 years of leave, before adjourning its session until Tuesday. Under the legisl\nUnder the legislation, ministers, heads of independent government bodies, governors, or their authorized representatives can grant permanent employees with at least two years of service an initial five-year leave, renewable once.\nParliament's Legal Committee member Ibtisam Al-Hilali told Shafaq News that employees would receive their full basic salary during the first five years and half their basic salary during the next five. The bill also allows employees to request six months of unpaid leave.\nThe leave period would count toward pensionable service, provided employees pay the required pension contributions. However, academic qualifications obtained during leave would not count for the purposes of the law.",
-      "bodyKo": "바그다드 - 이라크 의회가 지난 일요일 공무원들이 최대 10년의 휴직을 취할 수 있도록 허용하는 법안을 승인했으며, 화요일까지 회의를 연기했다.\n\n해당 법안에 따르면 장관, 독립 정부기관 장, 도지사 또는 이들의 권한 대리인은 2년 이상 근무한 정규직 공무원에게 초기 5년의 휴직을 부여할 수 있으며, 이는 1회 연장 가능하다.\n\n의회 법률위원회 위원 입티삼 알힐랄리는 샤팍뉴스에 공무원들이 처음 5년 동안 기본급 전액을 받고 다음 5년 동안 기본급의 절반을 받을 것이라고 말했다. 법안은 또한 공무원들이 6개월의 무급휴직을 신청할 수 있도록 허용한다.\n\n휴직 기간은 공무원들이 필요한 연금 기여금을 납부하는 조건 하에 연금 산정 대상 근무 기간으로 인정된다. 다만 휴직 중 취득한 학위는 본 법의 목적상 인정되지 않는다.",
-      "tried": true,
-      "count": 3,
-      "sources": [
-        "شفق نيوز",
-        "964media"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 의회, 갱신 가능한 5년 직원 휴직 승인",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Iraq/Iraqi-Parliament-approves-renewable-five-year-employee-leave"
-        },
-        {
-          "titleKo": "이라크 의회, 공무원 5년 휴직 기본급 보장법 통과",
-          "source": "964media",
-          "link": "https://en.964media.com/54194/"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq, KBR discuss oil sector development",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/iraq-kbr-discuss-oil-sector-development/",
-      "date": "2026-10-25T16:20:50.000Z",
-      "lang": "en",
-      "titleKo": "이라크, KBR과 석유 부문 개발 논의",
-      "url": "https://www.iraqinews.com/iraq/iraq-kbr-discuss-oil-sector-development/",
-      "body": "Baghdad (IraqiNews.com) – Iraqi Deputy Prime Minister for Energy Affairs Mohsen al-Mandalawi and a delegation from US-based KBR discussed on Thursday developing the country’s oil and gas sectors.\nKBR’s delegation headed by the company’s president for sustainable technology solutions, Jay Ibrahim, discussed prospects for joint cooperation in the oil, gas, and energy sectors, as well as leveraging the firm’s expertise to develop infrastructure and enhance the efficiency of strategic projects, according to a statement cited by the state-run Iraqi News Agency (INA).\nThe meeting addressed the recovery of associated gas, the development of oil fields, the enhancement of production efficiency, and the modernization of oil facilities.\nThe two sides also discussed leveraging KBR’s cutting-edge technology solutions to help Iraq’s oil industry grow and to make it easier to carry out key projects that meet requirements for effectiveness, quality, and financial sustainability.",
-      "bodyKo": "바그다드 (이라크뉴스닷컴) – 모흐센 알만달라위 이라크 에너지 담당 부총리와 미국 기반 KBR 대표단이 목요일 이라크의 석유·가스 부문 개발에 대해 논의했다.\n\nKBR 대표단은 지속가능 기술 솔루션 담당 회장 제이 이브라힘이 이끌었으며, 석유·가스·에너지 부문의 공동 협력 전망과 기업의 전문성을 활용한 인프라 개발 및 전략적 사업의 효율성 강화에 대해 논의했다. 이는 국영 이라크통신사(INA)가 인용한 성명에 따른 것이다.\n\n회의에서는 수반 가스 회수, 유전 개발, 생산 효율성 강화, 석유 시설 현대화에 대해 다뤘다.\n\n양측은 또한 KBR의 첨단 기술 솔루션을 활용해 이라크 석유산업 성장을 돕고 효율성, 품질, 재정적 지속가능성 요건을 충족하는 주요 사업 추진을 용이하게 하는 방안에 대해 논의했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "ميسان تلوّح بالانفصال وبغداد بين الشارع والمعابر",
-      "source": "جريدة الوطن السعودية",
-      "link": "https://www.alwatan.com.sa/article/1187894",
-      "date": "2026-10-25T15:52:00.000Z",
-      "lang": "ar",
-      "titleKo": "미산, 분리 위협하고 바그다드는 거리와 국경 사이에서",
-      "url": "https://www.alwatan.com.sa/article/1187894",
-      "body": "ميسان تلوّح بالانفصال وبغداد بين الشارع والمعابر\nلم تردع حرمة الحرمين الشريفين الميليشيا الحوثية الإرهابية عن توجيه هجماتها باتجاه منطقتَي مكة المكرمة والمدينة المنورة، في تصعيد...\nكشفت عملية رضوم أن معركة اليمن لم تعد تدار على خطوط التماس وحدها، بل على الشواطئ والمنافذ، حيث يتحدد من يملك القدرة على مواصلة...\nأكد محافظ صعدة اللواء الركن تركي أحمد مزهر بن قمشة أن المحافظة ستكون جزءا من مراحل عملية «فجر اليمن»، مشيرا إلى أن السلطة المحلية...\nارتفعت حصيلة الضحايا في قطاع غزة اليوم الأحد إلى 7 شهداء وأكثر من 15 مصاباً، إثر سلسلة غارات جوية وقصف مدفعي إسرائيلي استهدف مناطق...\nأعلن المتحدث الرسمي للقوات المسلحة اليمنية عن تحقيق نجاحات عسكرية واسعة لشل القدرات القتالية لميليشيا الحوثي الإرهابية، مؤكداً...\nأعلنت المملكة العربية السعودية والجمهورية الهيلينية في بيان مشترك صدر اليوم في ختام الزيارة الرسمية لرئيس الوزراء اليوناني...",
-      "bodyKo": "죄송하지만, 제공하신 텍스트는 이라크의 비스마야 신도시 건설현장 안전·보건 담당자에게 필요한 뉴스가 아닙니다.\n\n이 텍스트는 미산 주의 분리 위협, 예멘 전쟁, 가자지구 상황, 사우디-그리스 관계 등 이라크 건설 현장과 무관한 중동 지역 뉴스들입니다.\n\n비스마야 신도시 건설 관련 뉴스(인프라 진행 상황, 안전 사고, 노동자 문제, 자금 지급, 현지 정부 협력 등)를 제공해 주시면 번역해 드리겠습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "جريدة الوطن السعودية"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "احتجاجات تشرين تتجدد في العراق... مطالب 2019 تلاحق حكومة الزيدي",
-      "source": "annahar.com",
-      "link": "https://www.annahar.com/arab-world/arabian-levant/360213/%D9%85%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D9%88-%D8%AA%D8%B4%D8%B1%D9%8A%D9%86-%D9%8A%D8%B9%D9%88%D8%AF%D9%88%D9%86-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D8%B9-%D9%85%D8%B7%D8%A7%D9%84%D8%A8-2019-%D8%AA%D9%84%D8%A7%D8%AD%D9%82-%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A",
-      "date": "2026-10-25T15:39:00.000Z",
-      "lang": "ar",
-      "titleKo": "2019년 10월 항쟁 재점화...지디 정부를 따라다니는 과거의 요구들",
-      "url": "https://www.annahar.com/arab-world/arabian-levant/360213/%D9%85%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D9%88-%D8%AA%D8%B4%D8%B1%D9%8A%D9%86-%D9%8A%D8%B9%D9%88%D8%AF%D9%88%D9%86-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D8%B9-%D9%85%D8%B7%D8%A7%D9%84%D8%A8-2019-%D8%AA%D9%84%D8%A7%D8%AD%D9%82-%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A",
-      "body": "يعود متظاهرو تشرين إلى الشارع العراقي في الذكرى السابعة لانتفاضة 2019، مطالبين بمحاسبة قتلة المحتجين وإنهاء المحاصصة وحصر السلاح بيد الدولة، أمام حكومة الزيدي.\nتعود احتجاجات تشرين إلى واجهة المشهد في العراق ، مع انطلاق تظاهرات في بغداد وعدد من مدن الوسط والجنوب، إحياءً للذكرى السنوية السابعة لانتفاضة تشرين، التي شكّلت واحدة من أبرز محطات الاحتجاج الشعبي في البلاد، ورفعت مطالب بإصلاح النظام السياسي، ومكافحة الفساد، ومحاسبة المسؤولين عن إراقة دماء المتظاهرين، وإنهاء المحاصصة السياسية والطائفية، وحصر السلاح بيد الدولة، فضلاً عن تحسين الأوضاع الاقتصادية والمعيشية والارتقاء بمستوى الخدمات الأساسية.\nوتعيد هذه التظاهرات ملفات ظلت حاضرة في المشهد العراقي منذ عام 2019 إلى صدارة النقاش العام، وسط تساؤلات بشأن قدرة الحكومات المتعاقبة على تحويل الوعود بالإصلاح إلى إجراءات ملموسة، في وقت لا تقتصر فيه مطالب المحتجين على الجوانب الخدمية والاقتصادية، بل تمتد إلى قضايا المحاسبة وسيادة القانون وطبيعة إدارة الدولة وتوزيع السلطة والثروة.",
-      "bodyKo": "**تشرين 운동가들, 2019년 봉기 7주년 맞아 거리로 복귀**\n\n2019년 10월 봉기 7주년을 맞아 10월 운동 시위자들이 이라크 거리로 돌아왔다. 바그다드와 중부·남부 여러 도시에서 시위가 벌어졌으며, 시위대는 피살된 시위자들의 살인자 처벌, 정치·종파 할당제 폐지, 무기의 국가 독점을 요구했다. 지이디 정부를 향한 압박이 이어지고 있다.\n\n10월 운동 시위가 이라크 정치 무대의 전면에 다시 부상했다. 바그다드와 중부·남부 여러 도시에서 벌어진 이번 시위는 국내 주요 항의 운동 중 하나였던 10월 봉기의 7주년을 기념하는 것이다. 시위대는 정치 체제 개혁, 부패 척결, 시위자들의 유혈 사태에 책임 있는 관계자 처벌, 정치·종파 할당제 폐지, 무기의 국가 독점, 경제·생활 여건 개선, 기본 서비스 수준 향상을 요구했다.\n\n이번 시위는 2019년 이후 이라크 정치 무대에 계속 제기되어온 현안들을 다시 공론의 중심으로 끌어올렸다. 역대 정부들이 개혁 공약을 실질적 조치로 전환할 수 있는지에 대한 의문이 제기되는 가운데, 시위대의 요구는 서비스와 경제 문제에만 국한되지 않는다. 시위대는 책임 추궁, 법치주의, 국가 운영 방식, 권력과 부의 분배 등 근본적인 문제들을 제기하고 있다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "annahar.com"
-      ],
-      "related": [],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "g",
-        "line": "시위 소식 — 장소 확인 필요",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "مخاوف من اتساع الصراع الإقليمي عقب ضربات غامضة طالت فصائل بغداد",
-      "source": "صحيفة السوسنة الأردنية",
-      "link": "https://www.assawsana.com/article/736931",
-      "date": "2026-10-25T14:54:30.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 무장조직 타격 후 지역 갈등 확대 우려",
-      "url": "https://www.assawsana.com/article/736931",
-      "body": "السوسنة - أعادت الانفجارات الأخيرة التي طالت مواقع تابعة لفصائل مسلحة في العراق طرح تساؤلات معقدة حول طبيعة هذه الضربات والجهات القائمة عليها، وسط ...\nما هو خط \"سوفا 53\"؟ .. تفاصيل التوغل الإسرائيلي المستمر في القنيطرة\nرغم اهتزاز شباكه بـ 8 أهداف .. هل يكرر لونين تفوقه التاريخي على برشلونة؟\n17 ألف تنكة زيت فارغة تثير الشبهات في إربد .. ما القصة؟\nقطار كهربائي من عمان إلى المطار .. موعد التشغيل المتوقع وعدد الركاب\nزيادة 30 دينارا لرواتب الموظفين والمتقاعدين .. تفاصيل موازنة 2027.\nالذنيبات للهلسة: إخوة الدم والجيرة والمصير .. ومرتكبو الجريمة لا يمثلوننا\nالأمن العام يفتح باب التجنيد للذكور والإناث في الأردن .. تفاصيل\nقضية زيت بني كنانة .. متى يصبح الخبر والتعليق مخالفة قانونية؟\nالراحل المسيحي محمد قسوس .. لماذا اختار له والده هذا الاسم؟\nتقاعدات وترفيعات وإنهاء خدمات في التربية .. التفاصيل والأسماء",
-      "bodyKo": "죄송하지만, 제공하신 텍스트는 이라크 비스마야 신도시 건설현장의 안전·보건 담당자에게 필요한 뉴스가 아닙니다.\n\n이 텍스트는 요르단과 중동 지역의 정치, 경제, 사회 뉴스 제목들로 구성되어 있으며, 건설 현장의 안전 관련 정보와는 무관합니다.\n\n비스마야 신도시 건설 관련 뉴스나 이라크 내 안전·보건 관련 소식이 있으시면 제공해 주시기 바랍니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "صحيفة السوسنة الأردنية"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Israeli strikes target weapons depots and military systems inside Iraq.",
-      "source": "شبكة يافا الإخبارية",
-      "link": "https://yaffaps.com/en/page-138009.html",
-      "date": "2026-10-25T14:53:09.000Z",
-      "lang": "en",
-      "titleKo": "이스라엘군, 이라크 내 무기 저장소·군사 시설 공습",
-      "url": "https://yaffaps.com/en/page-138009.html",
-      "body": "شبكة يافا الإخبارية، هي وسيلة إعلامية فلسطينية مستقلة، تعمل على تغطية أخبار فلسطين المحتلة على مدار الساعة",
-      "bodyKo": "야파 뉴스 네트워크는 독립적인 팔레스타인 언론매체로, 점령된 팔레스타인의 뉴스를 24시간 보도하고 있다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "شبكة يافا الإخبارية"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Prime Minister Receives South African President’s Message Appreciating Bilateral Relations Between South Africa and Iraq » Iraqi News Agency",
-      "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://ina.iq/en/politics/53203-prime-minister-receives-south-african-presidents-message-appreciating-bilateral-relations-between-south-africa-and-iraq.html",
-      "date": "2026-10-25T14:08:38.000Z",
-      "lang": "en",
-      "titleKo": "총리, 남아프리카공화국 대통령의 양국 관계 감사 메시지 수신",
-      "url": "https://ina.iq/en/politics/53203-prime-minister-receives-south-african-presidents-message-appreciating-bilateral-relations-between-south-africa-and-iraq.html",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "وكالة الانباء العراقية (واع)"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq advances Japanese loan port projects as Grand Faw reach 98%",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/iraq-transport-ministry-japanese-loan-dock-shipyards-grand-faw-progress-2026/",
-      "date": "2026-10-25T13:58:15.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 일본 차입금 항만 사업 추진…그랜드 파우 98% 진행률",
-      "url": "https://www.iraqinews.com/iraq/iraq-transport-ministry-japanese-loan-dock-shipyards-grand-faw-progress-2026/",
-      "body": "Iraq advances Japanese loan port projects as Grand Faw reach 98%\nAn aerial view of the Grand Faw Port project showing the Khor Al-Zubair channel and the connecting road.\nBaghdad (IraqiNews.com) – Iraq’s Ministry of Transport is moving to activate two major maritime infrastructure projects—a new floating dock and an integrated shipyards city—financed under the Japanese official development assistance (ODA) loan framework.\nThe initiative is aimed at expanding vessel repair, maintenance, and auxiliary maritime services across Iraqi ports, coinciding with significant construction milestones at the strategic Grand Faw Port in Basra.\nAccording to statements delivered to the official newspaper by Hussein Ahmed, Director of Media and Government Communications at the Ministry of Transport, ministry officials held technical consultations with representatives of the Japan International Cooperation Agency (JICA) loan authority.",
-      "bodyKo": "**이라크, 일본 차관 항만 사업 추진…그랜드 파우 98% 진행**\n\n바그다드 (IraqiNews.com) – 이라크 운수부가 일본 공적개발원조(ODA) 차관으로 재정을 지원받는 두 개의 주요 해양 인프라 사업인 새로운 부유식 부두와 통합 조선소 도시를 활성화하기 위해 움직이고 있다.\n\n이 사업은 이라크 항만 전역에서 선박 수리, 유지보수 및 보조 해양 서비스를 확대하기 위한 것으로, 바스라의 전략적 그랜드 파우 항만에서의 상당한 건설 이정표와 맞물려 있다.\n\n운수부 미디어 및 정부 커뮤니케이션 담당 국장 후세인 아흐메드가 공식 신문에 전달한 성명에 따르면, 운수부 관계자들은 일본국제협력기구(JICA) 차관 당국 대표들과 기술 협의를 개최했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "USD/IQD exchange rates fall in Baghdad, Erbil",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Economy/USD-IQD-exchange-rates-fall-in-Baghdad-Erbil-5",
-      "date": "2026-10-25T13:52:20.000Z",
-      "lang": "en",
-      "titleKo": "바그다드·아르빌에서 달러/이라크디나르 환율 하락",
-      "url": "https://shafaq.com/en/Economy/USD-IQD-exchange-rates-fall-in-Baghdad-Erbil-5",
-      "body": "Shafaq News- Baghdad/ ErbilThe US dollar fell against the Iraqi dinar in Baghdad and Erbil on Sunday, hovering around 1,678 dinars per dollar as currency markets closed.According to a Shafaq News mark\nAccording to a Shafaq News market survey, the dollar fell to 167,750 dinars per 100 dollars at Baghdad's Al-Kifah and Al-Harithiya central exchanges, down from 168,550 dinars earlier in the day.\nAt currency exchange shops in Baghdad, the selling rate dropped to 168,250 dinars per 100 dollars, while the buying rate stood at 167,250 dinars.\nIn Erbil, the dollar also declined, with exchange shops selling at 167,650 dinars per 100 dollars and buying at 167,550 dinars.",
-      "bodyKo": "샤팍뉴스- 바그다드/아르빌\n\n미국 달러화가 일요일 바그다드와 아르빌에서 이라크 디나르화에 대해 약세를 보였으며, 통화시장 마감 시 1달러당 약 1,678디나르 수준에서 거래됐다.\n\n샤팍뉴스 시장조사에 따르면 달러화는 바그다드의 알키파와 알하리시야 중앙환전소에서 100달러당 167,750디나르로 하락했으며, 이는 당일 오전 168,550디나르에서 내려간 것이다.\n\n바그다드의 환전소에서는 판매 환율이 100달러당 168,250디나르로 내려갔고, 매입 환율은 167,250디나르를 기록했다.\n\n아르빌에서도 달러화가 약세를 보였으며, 환전소의 판매 환율은 100달러당 167,650디나르, 매입 환율은 167,550디나르였다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "바그다드·아르빌에서 달러/이라크디나르 환율 하락",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Economy/USD-IQD-exchange-rates-fall-in-Baghdad-Erbil-5"
-        }
-      ],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraq to construct six dams with Turkey and 13 rainwater harvesting barriers",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/iraq-water-resources-announces-dam-construction-framework-turkey-2026/",
-      "date": "2026-10-25T13:45:50.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 터키와 함께 댐 6개·빗물 집수 시설 13개 건설",
-      "url": "https://www.iraqinews.com/iraq/iraq-water-resources-announces-dam-construction-framework-turkey-2026/",
-      "body": "Iraq to construct six dams with Turkey and 13 rainwater harvesting barriers\nThe Mosul Dam hydroelectric power plant. Photo: Iraqi Electricity Ministry\nBaghdad (IraqiNews.com) – Iraq’s Ministry of Water Resources revealed plans on Sunday, October 25, 2026, to construct six new dams under the bilateral framework agreement with Turkey, while advancing technical designs and assessments for 13 additional rainwater and seasonal flood harvesting barriers across several governorates to bolster strategic water reserves, support agriculture, and combat desertification.\nAccording to statements delivered to the official newspaper by Ministry Spokesperson and Director General of the General Authority for Irrigation and Reclamation Projects, Khaled Shamal, technical blueprints have been finalized for three dams under the first package of the Turkish framework agreement, preparing them for on-ground execution by Turkish contractors.",
-      "bodyKo": "이라크, 터키와 함께 댐 6개 건설…빗물 집수 시설 13개 추진\n\n바그다드(이라크뉴스닷컴) – 이라크 수자원부는 25일 터키와의 양자 협력 틀 협정에 따라 새로운 댐 6개를 건설할 계획을 밝혔다. 동시에 여러 주에 걸쳐 빗물과 계절 홍수 집수 시설 13개에 대한 기술 설계와 평가를 진행 중이며, 이를 통해 전략적 수자원 비축을 강화하고 농업을 지원하며 사막화에 대응할 방침이다.\n\n수자원부 대변인이자 관개·간척사업청 사무총장인 할레드 샤말이 관보에 전달한 성명에 따르면, 터키 협력 틀 협정의 첫 번째 패키지에 포함된 댐 3개에 대한 기술 설계가 완료됐으며, 터키 시공사에 의한 현장 시공을 준비 중이다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Najaf protesters mark anniversary of Iraq's 2019 uprising",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/society/Najaf-protesters-mark-anniversary-of-Iraq-s-2019-uprising",
-      "date": "2026-10-25T13:28:26.000Z",
-      "lang": "en",
-      "titleKo": "나자프 시위대, 이라크 2019년 봉기 기념일 맞아",
-      "url": "https://shafaq.com/en/society/Najaf-protesters-mark-anniversary-of-Iraq-s-2019-uprising",
-      "body": "Shafaq News- NajafDozens of residents demonstrated in Najaf on Sunday to commemorate Iraq's October (Tishreen) 2019 protest movement.The demonstrators gathered at the October 20 Overpasses Park,\nAhmed Al-Najafi told Shafaq News that the gathering aimed to commemorate the October uprising, which he said remained an important symbol of resistance against corrupt political parties and a tribute to those who lost their lives for Iraq. &ldquo;The revolution will never die, especially amid the many crises Iraq faces, including the rising dollar exchange rate against the Iraqi dinar, higher food prices, and the demands that originally brought protesters into the streets,&rdquo; he added.\nMeanwhile, around 1,000 demonstrators gathered in Baghdad on Sunday morning to mark the anniversary of the 2019 protests amid heightened security.",
-      "bodyKo": "**나자프에서 2019년 10월 항쟁 추모 집회**\n\n샤팍뉴스- 나자프 지역 주민들이 일요일 나자프에서 이라크의 2019년 10월(티슈린) 항쟁 운동을 추모하기 위해 시위를 벌였다. 시위대는 10월 20일 육교공원에 모였다.\n\n아흐메드 알나자피는 샤팍뉴스에 이번 집회가 10월 항쟁을 추모하기 위한 것이라고 말했으며, 이는 부패한 정치 정당에 대한 저항의 중요한 상징이자 이라크를 위해 목숨을 잃은 사람들에 대한 추도라고 덧붙였다. \"혁명은 절대 죽지 않을 것이다. 특히 이라크가 직면한 많은 위기 속에서 말이다. 미국 달러 환율 상승, 식료품 가격 인상, 그리고 원래 시위대를 거리로 나오게 했던 요구들이 있는 상황에서 더욱 그렇다\"고 그는 덧붙였다.\n\n한편 일요일 오전 바그다드에서는 강화된 보안 속에 2019년 항쟁의 주년을 기념하기 위해 약 1,000명의 시위대가 모였다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "나자프 시위대, 이라크 2019년 봉기 기념일 맞아",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/society/Najaf-protesters-mark-anniversary-of-Iraq-s-2019-uprising"
-        }
-      ],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "g",
-        "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
-        "act": "",
-        "place": "나자프",
-        "km": 135
-      }
-    },
-    {
-      "title": "مهلة حتى الخميس.. ميسان العراقية تهدد بالعصيان المدني بعد إغلاق الشيب",
-      "source": "https://www.youlyou.com/",
-      "link": "https://www.youlyou.com/79809",
-      "date": "2026-10-25T13:22:51.000Z",
-      "lang": "ar",
-      "titleKo": "미산주, 셰이브 폐쇄 후 시민 불복종 위협…목요일까지 유예 기간",
-      "url": "https://www.youlyou.com/79809",
-      "body": "ميسان العراقية تهدد بالعصيان المدني وقطع الطرق إذا لم تفتح بغداد منفذ الشيب الحدودي مع إيران قبل الخميس، وسط احتجاجات على استمرار إغلاقه.\nتصاعدت أزمة إغلاق منفذ الشيب الحدودي بين العراق وإيران، بعدما أمهل رئيس مجلس محافظة ميسان، مصطفى ادعير المحمداوي، الحكومة الاتحادية في بغداد حتى الخميس المقبل لإعادة فتح المنفذ، محذرًا من الانتقال إلى خطوات تصعيدية تشمل العصيان المدني وقطع الطرق الرئيسية في المحافظة حال عدم الاستجابة.\nوجاء التحذير بالتزامن مع احتجاجات شهدتها ميسان، اليوم الأحد، حيث قطع عشرات المواطنين الطريق الرئيسي المؤدي إلى مواقع الشركات النفطية، اعتراضًا على استمرار إغلاق المنفذ.\nتعود الأزمة إلى قرار الحكومة العراقية إغلاق منفذ الشيب الحدودي مع إيران حتى إشعار آخر، اعتبارًا من 21 أكتوبر، بعدما صدرت توجيهات من بغداد بإيقاف العمل فيه.\nوفي التصريحات الأولى بشأن القرار، أُرجع الإغلاق إلى «أمور فنية» من دون الكشف عن تفاصيل إضافية. لكن تقارير عراقية لاحقة ربطت إغلاق عدد من المنافذ مع إيران، بينها الشيب والشلامجة ومندلي، بإجراءات أمنية وتحقيقات تتعلق بمرور مواد ومعدات يُشتبه في استخدامه",
-      "bodyKo": "**미산주, 셰이브 국경통로 개방 촉구…목요일까지 미응시 민간 저항 예고**\n\n이라크 미산주가 바그다드가 목요일까지 이란과의 셰이브 국경통로를 개방하지 않으면 민간 저항과 도로 차단에 나서겠다고 위협했다. 통로 폐쇄 지속에 대한 항의가 이어지는 가운데서의 조치다.\n\n셰이브 국경통로 폐쇄 사태가 심화되고 있다. 미산주 지방의회 의장 무스타파 아드아이르 알무함마다위가 바그다드의 연방정부에 다음 목요일까지 통로를 재개방할 것을 촉구했으며, 응하지 않을 경우 민간 저항과 주 내 주요 도로 차단 등 단계적 조치로 확대하겠다고 경고했다.\n\n이러한 경고는 미산주에서 일어난 항의 시위와 맞물렸다. 일요일 미산주에서는 수십 명의 주민이 석유회사 시설로 향하는 주요 도로를 차단했으며, 이는 통로 폐쇄 지속에 대한 반발이었다.\n\n사태의 배경은 이라크 정부가 10월 21일부터 이란과의 셰이브 국경통로를 추가 공지 때까지 폐쇄하기로 결정한 데 있다. 바그다드로부터 통로 운영 중단 지시가 내려진 이후의 결정이었다.\n\n초기 성명에서는 폐쇄 사유를 '기술적 문제'로 설명했으며 추가 세부사항은 공개하지 않았다. 그러나 이후 이라크 언론 보도에 따르면 셰이브, 샬람자, 만달리를 포함한 이란과의 여러 통로 폐쇄가 보안 조치 및 의심 물품과 장비 반입과 관련된 수사와 연결되어 있는 것으로 알려졌다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "https://www.youlyou.com/"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "아마라(마이산)",
-        "km": 280
-      }
-    },
-    {
-      "title": "مهدداً بالعصيان المدني.. رئيس مجلس ميسان يمهل بغداد حتى الخميس لفتح منفذ الشيب",
-      "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/ar/story/948457/%D9%85%D9%87%D8%AF%D8%AF%D8%A7-%D8%A8%D8%A7%D9%84%D8%B9%D8%B5%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D8%B1%D8%A6%D9%8A%D8%B3-%D9%85%D8%AC%D9%84%D8%B3-%D9%85%D9%8A%D8%B3%D8%A7%D9%86-%D9%8A%D9%85%D9%87%D9%84-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AD%D8%AA%D9%89-%D8%A7%D9%84%D8%AE%D9%85%D9%8A%D8%B3-%D9%84%D9%81%D8%AA%D8%AD-%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%D9%8A%D8%A8",
-      "date": "2026-10-25T12:47:28.000Z",
-      "lang": "ar",
-      "titleKo": "민방위 투쟁으로 위협하며.. 미산 지방의회 의장, 바그다드에 알시브 국경통로 개방 기한을 목요일까지 부여",
-      "url": "https://www.kurdistan24.net/ar/story/948457/%D9%85%D9%87%D8%AF%D8%AF%D8%A7-%D8%A8%D8%A7%D9%84%D8%B9%D8%B5%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D8%B1%D8%A6%D9%8A%D8%B3-%D9%85%D8%AC%D9%84%D8%B3-%D9%85%D9%8A%D8%B3%D8%A7%D9%86-%D9%8A%D9%85%D9%87%D9%84-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AD%D8%AA%D9%89-%D8%A7%D9%84%D8%AE%D9%85%D9%8A%D8%B3-%D9%84%D9%81%D8%AA%D8%AD-%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%D9%8A%D8%A8",
-      "body": "مهدداً بالعصيان المدني.. رئيس مجلس ميسان يمهل بغداد حتى الخميس لفتح منفذ الشيب\nأربيل (كوردستان 24)- أمهل رئيس مجلس محافظة ميسان، مصطفى ادعير المحمداوي، الحكومة العراقية حتى الخميس المقبل لإعادة فتح منفذ الشيب الحدودي مع إيران.\nمحذراً من اللجوء إلى خيارات تصعيدية تشمل العصيان المدني وقطع الطرق الرئيسية في حال عدم الاستجابة.\nوأكد المحمداوي أن انقضاء المهلة دون اتخاذ خطوات جادة لفتح المنفذ سينقل الاحتجاجات إلى مرحلة جديدة للضغط على الحكومة الاتحادية، بالتزامن مع إقدام عشرات المواطنين في المحافظة، اليوم الأحد، على قطع الطريق المؤدي إلى موقع الشركات النفطية احتجاجاً على قرار الإغلاق.\nوكانت السلطات الاتحادية قد اتخذت قراراً في العشرين من تشرين الأول/أكتوبر الجاري بإغلاق منفذ الشيب الحدودي حتى إشعار آخر، وهو ما أثار حفيظة الجانب الإيراني؛ حيث أبدى الشركاء في طهران استياءهم لعدم إبلاغهم بالقرار بشكل مسبق من قبل بغداد.",
-      "bodyKo": "**미산 주지사, 셰이브 국경통로 개방 기한 목요일까지 설정.. 민간 저항 위협**\n\n아르빌(쿠르디스탄24)- 미산 주의회 의장 무스타파 아드아이르 알무함마다위가 이라크 정부에 다음 주 목요일까지 이란과의 셰이브 국경통로를 재개방할 것을 촉구했다.\n\n그는 정부가 요구에 응하지 않을 경우 민간 저항과 주요 도로 차단을 포함한 확대 조치에 나설 수 있다고 경고했다.\n\n알무함마다위는 기한 내에 통로 개방을 위한 실질적 조치가 취해지지 않으면 연방 정부에 압력을 가하기 위해 시위가 새로운 단계로 접어들 것이라고 강조했다. 이는 지난 일요일 주 내 수십 명의 주민들이 폐쇄 결정에 항의하며 석유회사 지역으로 향하는 도로를 차단한 것과 맞물린다.\n\n연방 당국은 지난 10월 20일 셰이브 국경통로를 추가 공지 때까지 폐쇄하기로 결정했으며, 이는 이란 측의 불만을 촉발했다. 테헤란의 파트너들은 바그다드가 사전에 결정을 통보하지 않은 점에 대해 불만을 표시했다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شبكة تواصل الإخبارية",
-        "Kurdistan24"
-      ],
-      "related": [
-        {
-          "titleKo": "목요일까지 바그다드에 이란과의 통로 개방 기한 부여",
-          "source": "شبكة تواصل الإخبارية",
-          "link": "https://twaslnews1.twaslnews.com/6565632/"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "تظاهرات بغداد: مطالب معيشية وشعارات تطالب بالتغيير",
-      "source": "موقع المنشر الاخبارى",
-      "link": "https://elmanshar.com/2026/10/25/%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%85%D8%B7%D8%A7%D9%84%D8%A8-%D9%85%D8%B9%D9%8A%D8%B4%D9%8A%D8%A9-%D9%88%D8%B4%D8%B9%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AA%D8%B7/",
-      "date": "2026-10-25T12:39:45.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 시위: 생활 개선 요구와 변화 촉구 구호",
-      "url": "https://elmanshar.com/2026/10/25/%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%85%D8%B7%D8%A7%D9%84%D8%A8-%D9%85%D8%B9%D9%8A%D8%B4%D9%8A%D8%A9-%D9%88%D8%B4%D8%B9%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AA%D8%B7/",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "موقع المنشر الاخبارى"
-      ],
-      "related": [],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "y",
-        "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
-        "act": "시위 시간대 시내 이동 피하기",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Drone debris recovered in Iraq’s Al-Muthanna",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Security/Drone-debris-recovered-in-Iraq-s-Al-Muthanna",
-      "date": "2026-10-25T12:37:36.000Z",
-      "lang": "en",
-      "titleKo": "이라크 무탄나에서 드론 잔해 회수",
-      "url": "https://shafaq.com/en/Security/Drone-debris-recovered-in-Iraq-s-Al-Muthanna",
-      "body": "Shafaq News- Al-MuthannaSecurity forces discovered drone wreckage in southern Iraq&rsquo;s Al-Muthanna province on Sunday, prompting the dispatch of an explosives disposal team to the site, a security\nThe wreckage was located in the Shabram area of Al-Salman district.\nThe drone&rsquo;s origin and further details remain unknown.",
-      "bodyKo": "무탄나주 보안군, 드론 잔해 발견\n\n샤팍뉴스- 남부 이라크 무탄나주 보안군이 일요일 알살만 지구 샤브람 지역에서 드론 잔해를 발견했으며, 이에 따라 폭발물 처리팀이 현장으로 출동했다고 보안 관계자가 밝혔다.\n\n드론의 출처와 추가 세부사항은 아직 파악되지 않았다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 무탄나에서 드론 잔해 회수",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Security/Drone-debris-recovered-in-Iraq-s-Al-Muthanna"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "사마와(무산나)",
-        "km": 218
-      }
-    },
-    {
-      "title": "Iraqi Army Division Deployed to Kirkuk as Calls Grow for Joint Brigades of Local Residents",
-      "source": "kirkuknow.com",
-      "link": "https://kirkuknow.com/en/news/71859",
-      "date": "2026-10-25T12:07:09.000Z",
-      "lang": "en",
-      "titleKo": "이라크군 사단, 키르쿠크 배치…지역주민 연합여단 구성 요구 커져",
-      "url": "https://kirkuknow.com/en/news/71859",
-      "body": "Acting on the orders of the Commander-in-Chief of the Armed Forces, Iraq&rsquo;s Ministry of Defence has deployed the 17th Division of the Iraqi Army to Hawija District, southwest of Kirkuk. The deployment brings the number of military divisions responsible for securing Kirkuk province to three. Despite this reinforcement, calls continue for the establishment of joint security forces to address security gaps in areas between the Kurdistan Regional Government KRG and the federal government. Mazen...\nMazen Gharib , a Kirkuki member of parliament and member of the Security and Defence Committee, explained that the 17th Division assumed responsibility for security in Hawija and its surrounding sub-districts on Tuesday, October 20, replacing the 3rd Division of the Federal Police.\nGharib confirmed that the deployment coincided with a high-level meeting of military commanders at the Ministry of Defense in Baghdad. The meeting focused on developing comprehensive security plans to address area",
-      "bodyKo": "**국방부, 키르쿠크 남서부 하위자에 17사단 배치**\n\n무장군 총사령관의 지시에 따라 이라크 국방부는 키르쿠크 남서부 하위자 지구에 이라크군 17사단을 배치했다. 이번 배치로 키르쿠크주 보안을 담당하는 군 사단의 수는 3개로 늘어났다. 이러한 증강에도 불구하고 쿠르드 지역정부와 연방정부 사이의 지역에서 보안 공백을 해소하기 위해 합동 보안군을 구성해야 한다는 요구가 계속되고 있다. \n\n키르쿠크 출신 의원이자 안보국방위원회 위원인 마젠 가리브는 17사단이 10월 20일 화요일 하위자와 그 주변 소지구의 보안 책임을 맡았으며, 연방경찰 3사단을 대체했다고 설명했다.\n\n가리브는 이번 배치가 바그다드 국방부에서 열린 군 지휘관들의 고위급 회의와 동시에 이루어졌다고 확인했다. 회의는 지역의 보안 공백을 해소하기 위한 포괄적인 보안 계획 수립에 초점을 맞췄다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "kirkuknow.com"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "키르쿠크",
-        "km": 254
-      }
-    },
-    {
-      "title": "Iran targets Kurdish separatist group in Iraq amid US air patrols",
-      "source": "WION",
-      "link": "https://www.wionews.com/world/iran-irgc-strikes-komala-base-iraq-kurdistan-1792922682500",
-      "date": "2026-10-25T11:40:00.000Z",
-      "lang": "en",
-      "titleKo": "미국 공중 순찰 와중 이란, 이라크 쿠르드 분리주의 단체 공격",
-      "url": "https://www.wionews.com/world/iran-irgc-strikes-komala-base-iraq-kurdistan-1792922682500",
-      "body": "Iran's IRGC targeted a Komala base in Iraq's Kurdistan region, marking its second strike in a week amid pressure on Baghdad to relocate Kurdish dissident groups.\nLive TV LOGIN v logout Live TV Latest Gravitas World India Entertainment Hollywood Bollywood Sports Opinions videos Photos TV Shows Mission Sustainability Wion / World / Iran targets Kurdish separatist group in Iraq amid US air patrols Iran targets Kurdish separatist group in Iraq amid US air patrols Edited By Kushal Deb Published: Oct 25, 2026, 17:10 IST | Updated: Oct 25, 2026, 17:10 IST A man walks past graffiti depicting the name of Kurdistan and a young amputee draped in the Kurdish flag standing before the citadel in Arbil (Erbil), the capital of Iraq's northern autonomous Kurdish region, on October 4, 2026. Photograph: (AFP) Story highlights Iran's IRGC targeted a Komala base in Iraq's Kurdistan region, marking its second strike in a week amid pressure on Baghdad to relocate Kurdish dissident groups.",
-      "bodyKo": "**이란, 이라크 쿠르드족 분리주의 세력 겨냥**\n\n이란 이슬람혁명수비대(IRGC)가 이라크 쿠르드족 자치지역의 코말라 기지를 공격했다. 이는 바그다드에 쿠르드족 반정부 세력의 이전을 압박하는 가운데 일주일 만에 두 번째 공격이다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "WION"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "العراق يرفع إنتاج الطاقة من \"شمس البصرة\" إلى 500 ميجاواط ضمن مشروع ضخم",
-      "source": "سولارابيك",
-      "link": "https://solarabic.com/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AC%D8%AF%D8%AF%D8%A9/2026/10/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B1%D9%81%D8%B9-%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D9%85%D9%86-%D8%B4%D9%85%D8%B3-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9/",
-      "date": "2026-10-25T11:35:00.000Z",
-      "lang": "ar",
-      "titleKo": "이라크, 바스라 태양광 발전소 발전량 500메가와트로 확대",
-      "url": "https://solarabic.com/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AC%D8%AF%D8%AF%D8%A9/2026/10/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B1%D9%81%D8%B9-%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D9%85%D9%86-%D8%B4%D9%85%D8%B3-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9/",
-      "body": "أضاف العراق 500 ميجاواط إلى شبكته الكهربائية من مشروع شمس البصرة، فيما تتواصل الأعمال لاستكمال وحداته المتبقية وتحقيق أهدافه الطموحة.",
-      "bodyKo": "이라크가 바스라 태양광 사업에서 500메가와트를 전력망에 추가했으며, 남은 발전 단위 완공과 야심찬 목표 달성을 위한 공사가 계속되고 있다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "سولارابيك"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바스라",
-        "km": 422
       }
     }
   ],
-  "alerts": [
-    {
-      "kind": "control",
-      "titleKo": "이란 국경 통과지점 문제로 이라크 지방의회 시민불복종·도로폐쇄 위협",
-      "title": "Iraqi provincial council threatens civil disobedience, road closures over Iran border crossing",
-      "link": "https://www.rudaw.net/english/categories/iraq/1079882",
-      "source": "Rudaw",
-      "date": "2026-10-25T18:31:40.000Z",
-      "count": 1
-    }
-  ],
+  "alerts": [],
   "announcedHolidays": [],
   "brief": [
     {
-      "lv": "r",
-      "titleKo": "바그다드, 이라크 무장세력 보유 중국산 방공 시스템 겨냥한 이스라엘 공격 의심",
-      "line": "현장 가까운 치안 사건 (바그다드)",
-      "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
-      "km": 27,
-      "link": "https://english.aawsat.com/arab-world/5333164-baghdad-suspects-israel-targeted-chinese-air-defense-systems-held-iraqi-factions",
-      "date": "2026-10-25T18:12:40.000Z",
-      "more": 0
-    },
-    {
       "lv": "y",
-      "titleKo": "바그다드.. 타흐리르 광장에서 시위대 철수",
-      "line": "바그다드권 시위·집회 (타흐리르 광장) — 시내·공항 이동 지연 가능",
-      "act": "시위 시간대 시내 이동 피하기",
-      "km": 25,
-      "link": "https://kalimaiq.com/news/details/72330",
-      "date": "2026-10-25T18:36:36.000Z",
-      "more": 0
-    },
-    {
-      "lv": "y",
-      "titleKo": "독일, 폭풍 오스틴으로 수천 가구 정전",
+      "titleKo": "폭풍이 북유럽을 강타, 15만 가구 이상 정전",
       "line": "전력·물·연료 공급 차질 — 숙소·현장 발전기와 비상 급수 영향 가능",
       "act": "발전기 연료·비상 급수 재고 점검",
       "km": null,
-      "link": "https://ina.iq/ar/international/277306-.html",
+      "link": "https://ina.iq/ar/international/277336-150.html",
       "date": "2026-10-26T04:13:49.000Z",
+      "more": 0
+    },
+    {
+      "lv": "y",
+      "titleKo": "바그다드에서 \"대형 부패 인물 처벌\" 요구하는 시위",
+      "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
+      "act": "시위 시간대 시내 이동 피하기",
+      "km": 27,
+      "link": "https://alrai.com/article/10983235/%D8%B9%D8%B1%D8%A8%D9%8A-%D9%88%D8%AF%D9%88%D9%84%D9%8A/%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%AA%D8%B7%D8%A7%D9%84%D8%A8-%D8%A8%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D8%A9-%D9%83%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D9%81%D8%A7%D8%B3%D8%AF%D9%8A%D9%86",
+      "date": "2026-10-25T23:30:25.000Z",
+      "more": 0
+    },
+    {
+      "lv": "y",
+      "titleKo": "부패 관리와 시위대 살해자 적발 촉구 바그다드 타흐리르 광장 뒤흔들다",
+      "line": "바그다드권 시위·집회 (타흐리르 광장) — 시내·공항 이동 지연 가능",
+      "act": "시위 시간대 시내 이동 피하기",
+      "km": 25,
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5XZUt2UVpwUzloeGwzQmRtdmRlY3VnaGR6S25NRnA4cDg5cV9maUFxQVV1eVltTjNHZDNqaExaNEFfRmtwZ0FObHBXM05ZQVU5QllhRGd4V0l3VENud0E?oc=5",
+      "date": "2026-10-25T23:01:13.000Z",
       "more": 0
     }
   ]
