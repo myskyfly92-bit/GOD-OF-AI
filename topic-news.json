@@ -1,8 +1,56 @@
 {
-  "generatedAt": "2026-10-26T09:19:13.113Z",
+  "generatedAt": "2026-10-26T16:17:13.527Z",
   "sa": {
     "label": "중대재해·산업재해",
     "items": [
+      {
+        "title": "제주축산농협 사료 배송 중 40대 지게차에 깔려 숨져",
+        "source": "비즈중앙",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9MbmwwdnJQQ3o0UDBUZ3RkeGdqWXdxQnQ3WW40TnlJQ0Uxc0tGd29NRF81WnVRUzA2TWt3NkZlWHZRaGhyWkNyMGYwNkNCYkRCem1PSmV2SDlqS3M1Ti1wUkpScHdBcWRuQlR6TnVVVVo?oc=5",
+        "date": "2026-10-26T15:24:05.000Z"
+      },
+      {
+        "title": "[단독] 5인 미만 사업장에 ‘연차’ 생기면…산업재해 905명 감소 추정",
+        "source": "한겨레",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Wek9zODE0VHQ0YXp6TzJCaW1ZSHU4ODJnSkh0QWdOeVNBNldwMnhNa0NsV3FfSU55cW5Td3ZkUDFXREtKZG55THJHMmMtbjRqTGVmRjNLTEtHNktuMzBETW1WdjdQUGJYcEdNOE5KR3ZsQQ?oc=5",
+        "date": "2026-10-26T15:21:00.000Z"
+      },
+      {
+        "title": "태양광 설치하다 38명 숨져…경북 사망 전국 최다·대구 2위 ‘불명예’",
+        "source": "영남일보",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9QaXIyTVRuLUo1NzZRXzdCTkljVmdRTTRCdXlXcktVZTlVU0dtUmhydTRROTZ5S01aaFhULUdwUzhHM0ZJZmhibVNXVVhLeWJZcFhnYkkwcHkxV0t3S091Y0pYYjNhTlg2dWdJ?oc=5",
+        "date": "2026-10-26T11:29:56.000Z"
+      },
+      {
+        "title": "울산 종교 지도자 모여 산업재해 위령탑 앞 ‘산업위령제’ 봉행",
+        "source": "법보신문",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE05QVV5amRxMUliQm5WTC1RMFNuajVPQ2c0MHZnR05fdmYxOHVjSHZPSWg5Q19ieXZQTWQ5alJ1bjhKTUpsV09ITmJETEhNNk0yUTVEWGdvQU9SR2NqaGlmUjY0ejFyeFZT?oc=5",
+        "date": "2026-10-26T10:02:39.000Z"
+      },
+      {
+        "title": "박해철 의원, 중대재해 작업중지 10건 중 9건‘부분 중지’ 대기업엔 더 관대한 솜방망이 처분 확인",
+        "source": "경기신문",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBjMDRoV2k1T0FBQTM4eVJmaUFDM0RTUDl5U3RHZDJMUEFxTWpPTW9YQW5Vei1yN3RKOTA2blV5ME1CU3BydEgyM3hrUnpfWktiLU5TV2p0d1JrTDIzTTBSZ1hR?oc=5",
+        "date": "2026-10-26T09:39:17.000Z"
+      },
+      {
+        "title": "의성군, 산업재해 예방 위한 자체 위험성평가 담당자 교육 실시",
+        "source": "NSP통신",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE40eXVqamFFa0FuMGM4aXlfVldpYVIyUnlvUXN0emxEeEptYnZyLUxjdWlZaXU0T1hXaG43b3RMZjFDZXM0cXNqVEYyUXdTaWZMOFNPMHFjVE9uODNBQU1Tcw?oc=5",
+        "date": "2026-10-26T09:31:17.000Z"
+      },
+      {
+        "title": "의성군, ‘2026년 자체 위험성평가 담당자 교육’ 실시해 산업재해 예방 앞장",
+        "source": "대경일보",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4tbDZSdUY1YWxXNkl3M21yZGU5dEk3eWxEaXFGYi1Jd0FQMUZzR0d4V05NM1ZBZFR0WnZhSlIwTEtNV05TTjhJXzFmOFZvX1hsUFl0V2lvZ2tBb001SEJHV2xEbVQyRW91?oc=5",
+        "date": "2026-10-26T09:17:46.000Z"
+      },
+      {
+        "title": "대형 건설사들, 중대재해 영업정지에 ‘취소소송’ 후 계속 수주",
+        "source": "대한전문건설신문",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4wM3hxSVdpakJUb3NoZ2ExakZaWndDTnFqczR1X0VQOWxqZHVZUkREaVg3dWNJeDNxX21TQ2FnZElzdGpBelZQS1hzQWtBNnVSNzM4WXF1QndtWU1HcmhwOF83RHJKRWJkMlR1cdIBbEFVX3lxTE4wM3hxSVdpakJUb3NoZ2ExakZaWndDTnFqczR1X0VQOWxqZHVZUkREaVg3dWNJeDNxX21TQ2FnZElzdGpBelZQS1hzQWtBNnVSNzM4WXF1QndtWU1HcmhwOF83RHJKRWJkMlR1cQ?oc=5",
+        "date": "2026-10-26T09:11:43.000Z"
+      },
       {
         "title": "제주 사격장 집단 ‘납 중독’…업주 ‘중대재해 치상’ 기소",
         "source": "제주의소리",
@@ -16,64 +64,16 @@
         "date": "2026-10-26T08:17:48.000Z"
       },
       {
+        "title": "[국감] 중대재해법 징역형 10명 중 9명 집행유예…대전 실형 2명",
+        "source": "대전일보",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBlNVpUREt4RjdPNjJMWGE4dDI3aU5mdWZQbk1OMU0yMGlsZXFTOEpTZF9ZNkdhTXpZSVVyMU5MS2NnTlc3Vjc4cVhPNTV3ZGZsOVFHYTBuRjlvTlJRd19YWDlPbTVsR0dVZG50Y3BJRUFxVkXSAXNBVV95cUxQZTVaVERLeEY3TzYyTFhhOHQyN2lOZnVmUG5NTjFNMjBpbGVxUzhKU2RfWTZHYU16WUlVcjFOTEtjZ05XN1Y3OHFYTzU1d2RmbDlRR2EwbkY5b05SUXdfWFg5T201bEdHVWRudGNwSUVBcVZF?oc=5",
+        "date": "2026-10-26T07:43:07.000Z"
+      },
+      {
         "title": "펄스웨이브·원컨덕터, AI 기반 제조현장 중대재해 예방 협력 - 머니투데이",
         "source": "머니투데이",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA0UWdsRlJ1c0dMMHdsRmwtajE2X1NNVjF6RjNHYTRyeS0wSHNmV2kyWnVfUEVrY3BOSXh1UG1uNzFvTXRxclFISFVadmZReVJwWDJyNVdvM3lkSjVOcWFJcEpYT0VsT2NhLTQ0d3JkREtyUdIBckFVX3lxTFA0UWdsRlJ1c0dMMHdsRmwtajE2X1NNVjF6RjNHYTRyeS0wSHNmV2kyWnVfUEVrY3BOSXh1UG1uNzFvTXRxclFISFVadmZReVJwWDJyNVdvM3lkSjVOcWFJcEpYT0VsT2NhLTQ0d3JkREtyUQ?oc=5",
         "date": "2026-10-26T07:33:00.000Z"
-      },
-      {
-        "title": "태양광 공사 산재 사망 6년간 38명",
-        "source": "환경일보",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE54X0RFeEhFdHlQZjExOXJrOC1FUXlyaEs4Q3JDX2JvTFlxT2tFWjJGcVFYelJlQzRnUTE2YlpTV2k5TXZ6cHBva29VQ0tCM2FkYUxiSTVxY3dkc3BYSU1neHJzLXBlQW04?oc=5",
-        "date": "2026-10-26T07:25:59.000Z"
-      },
-      {
-        "title": "박해철 의원, 중대재해 사업장 작업중지 기간 단축·전면 중지 감소 지적",
-        "source": "신아일보",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE16VHh0VHAwdnlaU0J3Wk1aeVkxVGJsX0xBUWxhVjl5THZjd1gtdFdvenMyNDh6d3h6NmNnUDBLTC1XZFNkYUJXY0Q2c3NlOWRhT2RmLXpxcG9lTFpkYmJ1UXk4UTI1U0NJMFZHdFVmZy0?oc=5",
-        "date": "2026-10-26T07:19:08.000Z"
-      },
-      {
-        "title": "중대재해처벌법상 경영책임자등 인정 범위 및 위험성평가를통한 의무이행 기준을 구체화한 대법원 판결",
-        "source": "법률신문",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5mMU52TWF4Ml96UW4xQkowTW10SGp0dWw0U2hsRldDVEJidWhxczJyOFdrMXhWV3l2d09wOG5JWTRyLW1YczVPVTF3RVBBQXJCRXR6S1dmejBBUnFocjhTVTczQV9ON0R1ZTBwQ3ZB0gFyQVVfeXFMT2ppckc0a1lhRWNkMUREbTZFa0xpaXNWd0h3YjFhNDhHZUdyZmU1NWE1UV9lR191Z2lKaU55RV9IUnBWdHdqejcyZ0RyWEhDdV9Gc0E3UkllMDRRSkZ1akEtU2dRSGdIdUkxS1VBeHl4cXpn?oc=5",
-        "date": "2026-10-26T07:07:19.000Z"
-      },
-      {
-        "title": "국립진안고원산림치유원, 산재근로자 가족 산림치유 프로그램 마무리",
-        "source": "나무신문",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBLdUhVd3hOZHE1WTRHX19nSnFIajNHOGxJVHpLNHlBWFd0bmltcGF4cEtobE5Id2NfcVlsM3plR0RuY3RONVFodjlQVV9FVjE0VHQyR2Z2NmVmSUI2VFYzRHFmZzloeXFyX1E?oc=5",
-        "date": "2026-10-26T07:02:05.000Z"
-      },
-      {
-        "title": "산재 사망 상위 10곳 중 9곳 건설·배달업…영업익 5% 과징금 시행 영향은",
-        "source": "브릿지경제",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wRzVYNThtSjhLa0x1S1A2UVhyWFlJbU5aZWJ4UXJCa3hzVzEyN25FSlFjTzVwcmFTQmlMakhVb1B4OGlTNWFCVGFCM0dEdzN1MnpJWWNFOW1vZw?oc=5",
-        "date": "2026-10-26T06:58:00.000Z"
-      },
-      {
-        "title": "'노동자 추락사' 책임 하청에 떠넘긴 원청대표 1심 징역형 집유",
-        "source": "연합뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9HOGdFQW1oQy1SQlFpc1lSSVM1b1VudHc3b3pmVEV4XzVFN2VCVDhndU5RczZISjQ0SEdLcUJZR1QwRE1PWW9zTUpRU1BNbS1BR2JmckRyMDllNmptXzQycNIBYEFVX3lxTE9HOGdFQW1oQy1SQlFpc1lSSVM1b1VudHc3b3pmVEV4XzVFN2VCVDhndU5RczZISjQ0SEdLcUJZR1QwRE1PWW9zTUpRU1BNbS1BR2JmckRyMDllNmptXzQycA?oc=5",
-        "date": "2026-10-26T06:52:25.000Z"
-      },
-      {
-        "title": "산재예측·디지털 헬스케어 육성 등 AI 활용 법안 발의",
-        "source": "브릿지경제",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKNkxQNkU1NGY0dUk4SjhuekVjQUo4cTBHbVlFTmxLNU9UTi0yRnVwb1BpZnFxVzZzaHdOVmVhNXVQcXVJUDdVWEVocnlZbzd5Z01ERFdqeG5Ddw?oc=5",
-        "date": "2026-10-26T06:52:00.000Z"
-      },
-      {
-        "title": "[국감] 중대재해법 징역형 10명 중 9명 집행유예…대전 실형 2명",
-        "source": "대전일보",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5HVnpRZ2NIYnlwZVdibDVYYnNNUm5WeFRsUWc1YnNPSEFvT1ljdHE4ai1tMXlRSi1MUUJyUGhGRmhkNjlKaVBXeFpkVEk5RlVveTFFSGVCejREbk5NUDljUk95UGM4TkEzMWNPMzNLZ9IBc0FVX3lxTFBlNVpUREt4RjdPNjJMWGE4dDI3aU5mdWZQbk1OMU0yMGlsZXFTOEpTZF9ZNkdhTXpZSVVyMU5MS2NnTlc3Vjc4cVhPNTV3ZGZsOVFHYTBuRjlvTlJRd19YWDlPbTVsR0dVZG50Y3BJRUFxVkU?oc=5",
-        "date": "2026-10-26T06:39:00.000Z"
-      },
-      {
-        "title": "서울 첫 중대재해법 사건… 1심서 징역형 집행유예",
-        "source": "이데일리",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZmVxOHJjWWJPZ0g0UzR3NTRSbmFJNHRvRHp1bkFlTlk5TXNjTnVKZmdsTWRGSFhVTGttUV90Um9hbGRNLU1ZYzVUMVMtOXp5dXhfaVRLUVp0dVBFaUpUZ052UUQwX0F2M25XVkl3ZWVYRkNLN05oUHJrb3ROOUpIUw?oc=5",
-        "date": "2026-10-26T06:34:39.000Z"
       }
     ]
   },
@@ -85,6 +85,12 @@
         "source": "뉴스1",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9jSDlKOFFwWWhuOFdKMDNyZy03QWw2dUt0bjNnbjFxZ0dFR0tzWTUxamtiNzZmNHZ0eVlCZDRiWU5qLTFTOHB6Q1BjV0p2cjNDMXozRXNBSmlYQy1MNWR6Wi1R?oc=5",
         "date": "2026-10-26T05:17:26.000Z"
+      },
+      {
+        "title": "미군, 20여년 만에 이라크 완전 철수…이란 영향력 확대 우려",
+        "source": "디펜스투데이",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9kNHQ4ckVyd0VDN2FRLThHcExuZzNaODZVUGZHNmZFdkZXaF9zd0x6aFhuQmVtX3NaSDd0VW5uekZtVzJKa3hOY1JlRjl1NjlDanBrMmpSLVpXai1TV3ZMN0dzLWFhMGltenpiUzJ3?oc=5",
+        "date": "2026-10-26T05:04:14.000Z"
       },
       {
         "title": "[단독] 美-이란 전쟁에 국민대피 8배 폭증…육로 지원 ‘최다’",
@@ -111,18 +117,6 @@
         "date": "2026-10-25T02:14:53.000Z"
       },
       {
-        "title": "[모닝 뉴스브리핑] 이란 공격 계획 경고에 미 대사관 보안 강화 外",
-        "source": "토큰포스트",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5YVTR1bzJRd1NLUlVLNHppdkJKR18xUm9TaXFzQ3daSU4zV3p6UE9la1g1YkZxUFMyTU45endiNU5IYThWV0J3Q1JrMWFEeERUM1Q2NXBMUFHSAV5BVV95cUxNZnpXZHk2Mk5jUXNpUzFWQzBCaUJnNmtyX2FHck1KaFVtd25ac2d1amRhZHd2Qzhad3FOMTNrRFdHTFJJdF9mY0xXZXhLRmdkM0RVT1NYeXNZcUU2eGF3?oc=5",
-        "date": "2026-10-24T20:01:08.000Z"
-      },
-      {
-        "title": "이란 공격 계획 경고에 중동 주재 미 대사관 보안 강화",
-        "source": "토큰포스트",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBPbFBPNTRUM0RhTzZEV1NyNThvTW5fUkhTY2xEeVZwelNSTElMQjg0WkxZOWYwaEtLSURiVEdpUmF2ZXpPZ3Bqd2RPRzFhQVlIVmpSYTNjU0HSAV5BVV95cUxPN2REQjNxUlVfdkNCZWZhZ1hJWUtNdXZVaTFFUHZxLTQ1RmlIME5oUGQ2c3JPZkpyR2EyTW5WekxXSlJSTkpnY01EV0lVY1N4WTVRTFNLUEFVRlZ0ZHpB?oc=5",
-        "date": "2026-10-24T15:49:05.000Z"
-      },
-      {
         "title": "‘화들짝 놀란 미국’, 중동 대사관 인력 급감축한 이유…이란 ‘美 관리 암살 음모’때문",
         "source": "문화일보",
         "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5pNGRmVkVCdlFTcmhLYmVkcmYzdVB2S2tjb2kwYUtKZ1J0Umd6UE95Yi1KSFd0UVNRVElPbFhKNWluaGR0d1dnRElQR20yVFlh?oc=5",
@@ -141,22 +135,88 @@
         "date": "2026-10-24T07:39:32.000Z"
       },
       {
-        "title": "\"이란, 미국인 공격 계획\" 첩보에… 美, 중동 4개국 대사관 인력 감축",
-        "source": "조선일보",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcmxSc2ktSDlEYVlCSXF1OVgyMzJGeDFfY1FkVnIwcHVqdE42Ymdud2JlLW1DaGo2Y1doRGZkaFhKRUlyS1otU0oyazNzNjFRX0hrNWozUzRweVlDOTk5UHQxdlVsRURCdzUyMm1PekxfbnlzSTQ1U1RaY3ROTEJUdGw2OFo?oc=5",
-        "date": "2026-10-24T07:19:12.000Z"
+        "title": "美, 중동 4개국 대사관 인력 감축…이란 위협 고조",
+        "source": "팩트인뉴스",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1wSUhldVZZMFRaeU5RdXBBODhFeTJveEZPZnZyNm13N3JiY20yVmVMelA4X0tmd0Z2WUpwMVl0YW1IYVprT1AzTnZ2VGN6cUxEYnVkTkFnQ05SYmZRbmFSQTh5V2FEYW9hQU5pZEJ0X27SAXRBVV95cUxPVG15eVhzMHNsSXY0R0ZhcEluYjNHMmQ3ZWlLeDcyN1hDQVdTTThKcU54T3JaQ1dZVmdxVUNXZHhER2tyUmJUZ0VIRlBxS1hJRlZZRkFHc1Rwc1Rtd0EzeW1pLTZzRHVIUUkzUl9sZzExbUxIcg?oc=5",
+        "date": "2026-10-24T07:24:18.000Z"
       },
       {
         "title": "美, 중동 4개국 대사관 인력 감축⋯\"이란, 美관리 암살 음모\"",
         "source": "아이뉴스24",
-        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBXMmFfeFEzUmZldG1sU2Vwc0F4UXBaNzUtbm9JMDNlVklZZndwUVB1M0lSSFlIWVRxV0c3ellodU42RlFpR1g3N3Vudw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFA5cmc1bXJwa3VzSFpKRzY2RWRyTjVuNEhIRDRpMi1oSFJrRHQtbHVaN1pudy1DUVEtUWg5SEhITXRiaHREZkNr?oc=5",
         "date": "2026-10-24T07:13:52.000Z"
+      },
+      {
+        "title": "\"이란, 미국인 공격 계획\" 첩보에… 美, 중동 4개국 대사관 인력 감축",
+        "source": "조선일보",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcmxSc2ktSDlEYVlCSXF1OVgyMzJGeDFfY1FkVnIwcHVqdE42Ymdud2JlLW1DaGo2Y1doRGZkaFhKRUlyS1otU0oyazNzNjFRX0hrNWozUzRweVlDOTk5UHQxdlVsRURCdzUyMm1PekxfbnlzSTQ1U1RaY3ROTEJUdGw2OFo?oc=5",
+        "date": "2026-10-24T07:11:00.000Z"
       }
     ]
   },
   "infect": {
     "label": "감염병",
     "items": [
+      {
+        "title": "유바이오로직스, 104억원 규모 유니세프 경구용 콜레라 백신 공급 계약",
+        "source": "톱스타뉴스",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE56S2NQc2stOXhRcko0UC03anZNQzBxMUUxMjZZWm9aZFpUX0t4VmwwckR6ajhya194eE5YSUJPLUFpX0t3dlZGUWdfT3BScHhpTE5WVmgzM3dtOXJLWmF4bEQ3a3BsVlUyb3pJMDRQWTdTQQ?oc=5",
+        "date": "2026-10-26T15:03:46.000Z"
+      },
+      {
+        "title": "현대바이오 '제프티', 美 감염병 학술대회서 소개",
+        "source": "금강일보",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9qcGczOGF5TEdHbkhpTWVnbXR6ak1qZ053eUpIcF9lbWVhRHhqWkNEMHRvR0Q5ZVBKY0t0LUNXbXdMMXNQdkZFc3M1MnFZX19zVjB3XzNaU083Q2lZYW1JUmMzUnNxZzZkQUE?oc=5",
+        "date": "2026-10-26T12:50:00.000Z"
+      },
+      {
+        "title": "질병관리청, 병원기반 마이크로바이옴 후속사업 공청회 개최",
+        "source": "한국사회복지저널",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5aLUw4aEtGeG5GVjI4YkZiUTlucjBRMEp4RmdMbS1Jc25JM1ZXWWNjV2k4R2lublNGbHNGSDROaWFtNWhIckRZQlJjZUNkY052MWpFSEtuUWRWZTh4ajFtb1pzQkFYdUJsZFRR?oc=5",
+        "date": "2026-10-26T12:33:03.000Z"
+      },
+      {
+        "title": "치명률 48.6% 에볼라, 국경 넘었다…공항 경유 감염 여부 추적",
+        "source": "이데일리",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRkhtR0VjU2tjOUdfdFU3V2l4VS1JQWs3ZS1hcGhIZ3AwTVA0V1ZqWUMzY3lnZ3d3b1laTlNVcjRjYW5pUG5qaDBYaVp3YUg2M0tKUUVPdDI0Q2FXMlBMYmQ2bkJ2THp4eXpFXzlMWGV6TEg1cXBpaFRHS0lZR2tEYw?oc=5",
+        "date": "2026-10-26T12:00:36.000Z"
+      },
+      {
+        "title": "거제시, 감염병 예방 방역 활동 강화",
+        "source": "한국뉴스통신",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ubHh1YWNXZ2xqQkpvMm5DS094MFdrcjRNS1RnTkVqdEdLQ3RjY2UtRzBEOVgzVnlpNU15LTljdUJvZHdsX2F3R0x2ZnRmc3g3clFkejNRS2lDRExXODVHbXZXREM1ZmFv?oc=5",
+        "date": "2026-10-26T11:49:25.000Z"
+      },
+      {
+        "title": "나이지리아 에볼라 확진자 스위스로 이송… 감염 경로 조사",
+        "source": "천지일보",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9FZ3RxWW5ScTMtcU1XRTBaWk1BLXcwOUtyLWhGakJnQnlLRlFjOUlPeVF3Z0FCVkxEb0VzeURkVEdvODAzenBweTI2dmtpQmFrWDlLLXJnMWpROTZOSUV1eFRxd2dFSGZMNHc?oc=5",
+        "date": "2026-10-26T11:49:01.000Z"
+      },
+      {
+        "title": "춘천시, 광견병 예방 위해 1만6천여 미끼백신 살포한다",
+        "source": "국제뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE43Q3FTWnQ3cW1lTF9DVUJ2MnNTeGpubmhPWURsZ1FLdUlyQkIxbXpvNFpudk1CejFfMnJVREdBaGhlNnZQV0d0aElRam1pNFRvQndra3YwLUpxUE9BQUthNGl4TDQ2UWNVT3phMTJ3?oc=5",
+        "date": "2026-10-26T11:35:38.000Z"
+      },
+      {
+        "title": "[단독] 코로나백신 특별법 1년⋯정부 재심 4%도 못 마쳤다",
+        "source": "국민일보",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE83bXZtT2FNdVlkSFhKS1pCM1FhOGhMRGY0WTFTR3lvWnM0RGI0Q1dIa0ZVTVlDY3N2TDhsOTAxcG9YaXU3ajBpZFpsdzRDLV9TQnRrQXJ6VGo?oc=5",
+        "date": "2026-10-26T11:19:06.000Z"
+      },
+      {
+        "title": "나이지리아 첫 에볼라 확진자, 본국인 스위스로 이송",
+        "source": "연합뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1La2tlUkUzUkdzYnA0dVNLLXpTeUdlZGtPdmZWWi1fTGFvYWhKLVNXNkNVSTRMVnZGTlVPSTMyZU95RUg3aGthaEV2Mmc2RUthUlB1R2N1eVJoS2vSAWBBVV95cUxOQXlsRVdVUW5GMU13bE5fN1p3OW5lLVJYUm1CMi1VSVdiZVJPQTg1dXdCM0JVZzhVNXdYY25SdzRDeGl0d3JMSmdneEVpUEdyR2t2cWNfNGExdGlBZEg0Qk0?oc=5",
+        "date": "2026-10-26T11:17:34.000Z"
+      },
+      {
+        "title": "질병관리청, 항생제 적정사용 관리 시범사업 참여기관 공모",
+        "source": "내외뉴스통신",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5lOHMyQ1VrUHZqeU1DRmg5UHNPM1pJZlYyTFVSREVOSl85bXlzVDIyUjQ0NjNWeHhDcE5ZRXZyeExVMTFaSXY1RmRSR0xfMWtDN2NqbFM4ek1MVWZLZWFSTngxamV4dUNYWVR4S9IBcEFVX3lxTE4tR1liVEtsZmtoemRKWTB1QnI2bjl3aDZiNW5uS3o4bC03NTA4N2pydmFpLTF3eG95ZTQtc3d0MXllVktoM2dWQlQ4bXlqdDVKSDBQV3A0dXpFaTN4ZUdKUFh4UmFLY3hWazBCejY3YlE?oc=5",
+        "date": "2026-10-26T10:16:32.000Z"
+      },
       {
         "title": "[기고] 인터넷 사기 `의심`과 `확인`이 최고의 백신",
         "source": "경상투데이",
@@ -167,67 +227,7 @@
         "title": "“백신 넘어 산업보안으로”…안랩, 일본 시장 공략 강화",
         "source": "서울경제TV",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5MY1FsWGVnRTNxNVplNjZyOE5nb1R5N05zcEhPRzlCRmNQc3B1eXNJcmJPa2dJbEE4V0lGWjhsaXlVelBBYXJEN3pOaFJkQkp4Q19vOEs3djdYVjRyYkRhN2lTWUk?oc=5",
-        "date": "2026-10-26T08:45:11.000Z"
-      },
-      {
-        "title": "장원태 원장의 원케어 기능의학 클리닉-독감백신주사 맞고 독감에 걸렸다는 오해",
-        "source": "경남도민신문",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9teHBaSlZMYWMxSDd2QmZWYjJUV2dXR0NKQlBQVC1QdDBUamtlaHdPNURtdXZvVU1VT2lrUENucVh2SEZNbG1vQTNsdE9iNk1YZDRKc3JKWUV6TEhWeENTaVhlckhmNXh2?oc=5",
-        "date": "2026-10-26T08:32:31.000Z"
-      },
-      {
-        "title": "군산의료원, 신종 감염병 대응 모의도상훈련 실시",
-        "source": "NSP통신",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5hX01CaEt2bDNveWdTQnUtR2Nfakl3UW94Z09nVDEyUktwZFpFLTV3cmVkSzczMFRkbTVxejlHMzlXYWtoc09XczdFMU1tLTNUSkt5bVVScWhRcE84YWtzNg?oc=5",
-        "date": "2026-10-26T08:01:33.000Z"
-      },
-      {
-        "title": "평택시, ‘감염병 재난 대응 역량 강화교육’ 실시",
-        "source": "핀포인트뉴스",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE50aERXeU9BWUMtaWJ0dTlVYW5hVTZkNDhkeWt3UzBVZE52SW9pWUVTMDIyakxCWnUxRG92ZXlkb2h0RzJpdWF5dlpVR09LcTVqbFAzNEZHWS01dkI3ZzNJU3IxQlk5eW1VSGxhWGR3NTdfQ1XSAXdBVV95cUxPRGdRMTVsUEd6OEs0NTRrNzlnRTdLVlE3ZkUyVzFFRF9lY3ZTTHRKNXA0M0xEa3dhVWp3TzdRVWV1bnlUd0FSWnZrZ1A3ZW5wSW5jYktWRFZaVHBWSzlhckNhTWtweHRQS0V5eVoyZFVKTGs5ajFLbw?oc=5",
-        "date": "2026-10-26T07:34:23.000Z"
-      },
-      {
-        "title": "\"소 설사병 1·2형 잡는다\"…베링거, 국내 첫 생독백신 허가",
-        "source": "뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBiSEI1SjlEcnJSWjRoazRDdUdTU3ItbWdud09leGxPLUFBWVg3Qmt1R2cxLXVGSk9KVjJ2Ri1ueFlaTzdfeEsxeDgzLXlrZF9qQzFMcU5lX19jWllFa3lYNC01aEo?oc=5",
-        "date": "2026-10-26T07:10:59.000Z"
-      },
-      {
-        "title": "의성교육지원청, 학생과 교직원 건강 지키는 감염병 위기대응 모의훈련 실시",
-        "source": "경북뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5lUDJWYVlkckp5Rkx0WVZ6NWd5YlVrWFJmU205YzJ2a3NsaTBHZEY5bFlQc0lUcFJWaU9ZXzRZLV9PbWZJejVQUFlBM1BmMzEwVTkzdk9tTzFZbnc?oc=5",
-        "date": "2026-10-26T07:05:53.000Z"
-      },
-      {
-        "title": "\"전기차·저탄소철강·SAF·백신 포함해야\" 국내생산세액공제 확대 목소리",
-        "source": "한국세정신문",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5ReHNGNXhUcFU1MVVsLU10d3JaVFM2eXFIdlp0anpnbUFURVVvUThtNXI1YmN3YUVCN2RocUdxaDlBb1NuWkMxdjBVd1VmZkFSX05oSl82eXRqVGtMeW1NV0UzVQ?oc=5",
-        "date": "2026-10-26T07:04:47.000Z"
-      },
-      {
-        "title": "베링거인겔하임, BVD 생독백신 ‘보벨라’ 국내 품목허가",
-        "source": "축산신문",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBVNDIxY185RmdsLWd2TVFadFVsY3BlWDdwdm90UmRJTndwOXZTcFg2VUdIajViOWFFMG9Xd0o2d013RFJMZFVrTGN2eTZvVy1pU1hrZ084VHlJWW14ZlRSX0xGNkc4SnRO?oc=5",
-        "date": "2026-10-26T07:03:22.000Z"
-      },
-      {
-        "title": "`독감 백신 맞았는데 이틀 만에 독감?`…백신 탓 아닌 `면역 공백기`",
-        "source": "매일신문",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1RLTJqQ3BtMTVhN0RacGxCd2xyTHFiS1dNdEdBeUF1Q3NYaG96RjJxYWJaVEFtaDdfZTBPZXJLWXBWaVIzWmNXUkhkUHd4UDlvRWplMHhDelJSZEZzZFNvcmp3?oc=5",
-        "date": "2026-10-26T06:44:43.000Z"
-      },
-      {
-        "title": "베트남이 차세대 일본뇌염 백신 개발에 성공했다.",
-        "source": "Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRXJmY0xPNkNxalZsYi1pNUp5R3lkOFlSLVpfSS1tNUxuMGhzV01vNENwajJyckdTb0VKTjBoQ196R1FOVWw4WEN6VWtNaWJ4ellwenc4Y0hZN19OeUdhT3ZnUVpLLTFFZjhtOFJiQWlrMWp6bUhVcmc3bmFiR0RSRjZtZnZSZ0Ezcm91Sjg2NUVGSUhTOW5UWA?oc=5",
-        "date": "2026-10-26T06:43:25.000Z"
-      },
-      {
-        "title": "예방접종은 질병을 사전에 예방하는 조치입니다.",
-        "source": "Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB1VnlEcVo3TFZkbTY5bUdzVm9iVjVzYzcxYmlCMTZ5UWlnUnkyMkwxYjUtMDNxbXdDWWRrSnJJWHl4bHBieWdKZUlSRVhFNy1XcXVFZDVQeWY2RnhReXZ1d0RZc2lyTGItcmpiWXdUbXotNEVa?oc=5",
-        "date": "2026-10-26T06:23:32.000Z"
+        "date": "2026-10-26T08:45:00.000Z"
       }
     ]
   }
