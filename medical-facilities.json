@@ -5,7 +5,7 @@
   "lon": 44.618
  },
  "radiusKm": 45,
- "updatedAt": "2026-10-19T07:47:48.428466+00:00",
+ "updatedAt": "2026-10-26T07:49:24.323604+00:00",
  "items": [
   {
    "id": "node/9547504717",
@@ -626,6 +626,23 @@
    "lon": 44.480689,
    "km": 15.3,
    "enAuto": true,
+   "spec": []
+  },
+  {
+   "id": "node/14318122698",
+   "name": "عيادة الزعفرانية الطبية",
+   "nameEn": "",
+   "nameAr": "عيادة الزعفرانية الطبية",
+   "kind": "clinic",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "شارع 56, حي الزعفرانية",
+   "lat": 33.263545,
+   "lon": 44.477356,
+   "km": 15.3,
    "spec": []
   },
   {
@@ -1255,7 +1272,7 @@
   {
    "id": "node/9124379419",
    "name": "الدكتور محمد نصار كركوش",
-   "nameEn": "",
+   "nameEn": "Dr. Muhammad Nassar Karkush",
    "nameAr": "الدكتور محمد نصار كركوش",
    "kind": "clinic",
    "own": "",
@@ -1267,6 +1284,7 @@
    "lat": 33.326132,
    "lon": 44.493608,
    "km": 18.8,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -1558,7 +1576,7 @@
    "km": 19.6,
    "enAuto": true,
    "spec": [],
-   "roadKm": 29.2,
+   "roadKm": 29.3,
    "min": 25
   },
   {
@@ -2166,7 +2184,7 @@
   {
    "id": "node/7284216485",
    "name": "فرع مستشفى الجادرية",
-   "nameEn": "",
+   "nameEn": "Jadriya Hospital Branch",
    "nameAr": "فرع مستشفى الجادرية",
    "kind": "clinic",
    "own": "",
@@ -2178,6 +2196,7 @@
    "lat": 33.292237,
    "lon": 44.423509,
    "km": 21.2,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -2429,7 +2448,7 @@
   {
    "id": "node/8187782017",
    "name": "عيادة الدكتور حيدر محسن الشمري",
-   "nameEn": "",
+   "nameEn": "Dr. Haider Mohsen Al-Shammari's clinic",
    "nameAr": "عيادة الدكتور حيدر محسن الشمري",
    "kind": "clinic",
    "own": "",
@@ -2441,6 +2460,7 @@
    "lat": 33.305558,
    "lon": 44.430524,
    "km": 21.5,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -2767,7 +2787,7 @@
   {
    "id": "node/10537462219",
    "name": "مركز صحي النهروان الثاني النموذجي",
-   "nameEn": "",
+   "nameEn": "Al-Nahrawan Second Model Health Center",
    "nameAr": "مركز صحي النهروان الثاني النموذجي",
    "kind": "clinic",
    "own": "",
@@ -2779,6 +2799,7 @@
    "lat": 33.37802,
    "lon": 44.69533,
    "km": 21.8,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -3095,7 +3116,7 @@
   {
    "id": "node/9201781217",
    "name": "مستوصف الصحه",
-   "nameEn": "",
+   "nameEn": "Health dispensary",
    "nameAr": "مستوصف الصحه",
    "kind": "clinic",
    "own": "",
@@ -3107,6 +3128,7 @@
    "lat": 33.229931,
    "lon": 44.384469,
    "km": 22.1,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -4085,7 +4107,7 @@
   {
    "id": "node/7465597685",
    "name": "الدكتورة ندئ محمد (عيون)",
-   "nameEn": "",
+   "nameEn": "Dr. Nada Muhammad (eyes)",
    "nameAr": "الدكتورة ندئ محمد (عيون)",
    "kind": "doctors",
    "own": "",
@@ -4097,6 +4119,7 @@
    "lat": 33.324827,
    "lon": 44.413225,
    "km": 24.0,
+   "enAuto": true,
    "spec": [
     "안과"
    ]
@@ -6250,6 +6273,23 @@
    "addr": "",
    "lat": 33.359542,
    "lon": 44.310508,
+   "km": 34.1,
+   "spec": []
+  },
+  {
+   "id": "node/14256257943",
+   "name": "بيت سيد علاوي",
+   "nameEn": "",
+   "nameAr": "بيت سيد علاوي",
+   "kind": "hospital",
+   "own": "",
+   "emergency": false,
+   "beds": "",
+   "phone": "",
+   "website": "",
+   "addr": "بغداد",
+   "lat": 33.438497,
+   "lon": 44.397842,
    "km": 34.1,
    "spec": []
   },
