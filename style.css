@@ -4926,3 +4926,35 @@ body.sir-lock { overflow: hidden; }
 
 /* 숨긴 탭·링크 (예: 작업구역 잠시 숨김) */
 .tab-btn[hidden], .tw-link[hidden] { display: none !important; }
+
+/* ===================== 달력: 오늘·다가오는 일정 줄 + 칸 말풍선 ===================== */
+.hol-next { margin: -2px 0 10px; padding: 8px 9px; border-radius: 9px; background: rgba(53, 182, 208, 0.08); border: 1px solid rgba(53, 182, 208, 0.28); display: flex; flex-direction: column; gap: 3px; font-family: var(--font-body); }
+.hol-next.is-quiet { background: transparent; border-style: dashed; border-color: var(--border-soft); }
+.hol-next.is-soon { background: rgba(255, 90, 110, 0.10); border-color: rgba(255, 90, 110, 0.55); animation: holPulse 2.4s ease-in-out 4; }
+@keyframes holPulse { 50% { box-shadow: 0 0 0 4px rgba(255, 90, 110, 0.18); } }
+.hol-next-h { font-size: 12.5px; font-weight: 700; color: var(--text-muted); }
+.hol-next.is-soon .hol-next-h { color: #ff8a98; }
+.hol-next-row { display: grid; grid-template-columns: 34px auto minmax(0, 1fr); gap: 0 7px; align-items: baseline; text-align: left; background: none; border: 0; padding: 4px 3px; border-radius: 6px; color: var(--text); font: inherit; cursor: pointer; }
+.hol-next-row:hover { background: rgba(255,255,255,0.06); }
+.hol-dd { font: 800 12px var(--font-mono); color: var(--cyan); }
+.hol-next-row.is-now .hol-dd { color: #ff8a98; }
+.hol-dt { font: 600 12.5px var(--font-mono); color: var(--text-muted); white-space: nowrap; }
+.hol-nm { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.hol-it { font-size: 13.5px; font-weight: 700; line-height: 1.35; overflow-wrap: anywhere; }
+.hol-it.k-ev { color: #f2b94b; } .hol-it.k-mo { color: #f2a93b; }
+.hol-it i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 6px; vertical-align: 2px; background: var(--text-dim); }
+.hol-it.k-kr i { background: #ff5a6e; } .hol-it.k-iq i { background: #35b6d0; } .hol-it.k-ev i { background: #f2b94b; } .hol-it.k-mo i { display: none; }
+.hol-it em { font-style: normal; font-size: 10.5px; padding: 0 5px; border-radius: 999px; background: rgba(53, 182, 208, 0.2); color: #6fd3e6; margin-left: 2px; vertical-align: 1px; }
+.holiday-cell.is-kr { background: rgba(255, 90, 110, 0.13); }
+.holiday-cell.is-iq { background: rgba(53, 182, 208, 0.13); }
+.holiday-cell.is-kr.is-iq { background: linear-gradient(135deg, rgba(255, 90, 110, 0.15) 50%, rgba(53, 182, 208, 0.15) 50%); }
+.holiday-cell.has-tip { cursor: pointer; }
+.holiday-cell.has-tip:hover { box-shadow: inset 0 0 0 1px var(--border); }
+.holiday-cell.hol-flash { animation: holFlash 0.6s ease-in-out 3; }
+@keyframes holFlash { 50% { box-shadow: inset 0 0 0 2px var(--amber); } }
+.hol-tip { position: absolute; z-index: 5; max-width: 240px; background: #111a24; color: #fff; border: 1px solid var(--cyan); border-radius: 9px; padding: 8px 11px; font: 600 13.5px/1.45 var(--font-body); box-shadow: 0 8px 24px rgba(0,0,0,0.45); pointer-events: none; }
+.hol-tip b { display: block; font-size: 12px; color: var(--cyan); margin-bottom: 2px; }
+html[data-theme="light"] .hol-tip { background: #fff; color: #17202a; }
+html[data-theme="light"] .hol-next.is-soon .hol-next-h, html[data-theme="light"] .hol-next-row.is-now .hol-dd { color: #d9363e; }
+html[data-theme="light"] .hol-it.k-ev { color: #b97d09; } html[data-theme="light"] .hol-it.k-mo { color: #c24a00; }
+html[data-theme="light"] .hol-it em { color: #0b7f95; }

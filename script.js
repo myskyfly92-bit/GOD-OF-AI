@@ -176,6 +176,9 @@ const IQ_HOLIDAYS_2026 = {
 const IQ_ANNOUNCED = {
   "2026-10-25": { reason: "파티마 순교일", scope: "일부 주", provinces: ["키르쿠크", "디와니야"] },
 };
+/* 이라크 공휴일 한국어 이름 (달력 위 '다가오는 일정' 줄·말풍선용) */
+const IQ_KO = { "New Year's Day": "신정", "Army Day": "국군의 날", "Eid al-Fitr": "이드 알피트르 (라마단 종료)", "Eid al-Fitr holiday": "이드 알피트르 연휴", "Nowruz": "노루즈 (쿠르드 새해)", "Labour Day": "노동절", "Eid al-Adha": "이드 알아드하 (희생제)", "Eid al-Adha holiday": "이드 알아드하 연휴", "Eid al-Ghadeer": "가디르 축일", "Islamic New Year": "이슬람 새해", "Ashura": "아슈라", "Republic Day": "공화국의 날", "The Prophet's Birthday": "예언자 탄신일", "Iraqi National Day": "이라크 국경일", "Victory Day": "승전 기념일", "Christmas Day": "성탄절" };
+const iqKo = (n) => IQ_KO[n] || n;
 function iqAnnLabel(h) {
   if (!h) return "";
   const where = h.scope === "전국" ? "전국 휴무" : h.baghdad === true ? "바그다드 휴무" : "일부 주 휴무";
@@ -263,10 +266,12 @@ function storeDailyForecastForCalendar(daily) {
       cell.className = "holiday-cell";
       if (key === todayKey) cell.classList.add("is-today");
       if (krName || iqName) cell.classList.add("has-holiday");
+      if (krName) cell.classList.add("is-kr");
+      if (iqName) cell.classList.add("is-iq");
       if (evName) cell.classList.add("has-event");
       const mon = monthlyOn(viewYear, viewMonth, d);
       mon.forEach((e) => { cell.classList.add(e.cls); if (d === e.d1) cell.classList.add("mo-start"); if (d === e.d2) cell.classList.add("mo-end"); });
-      if (mon.length && !(krName || iqName || evName)) cell.title = mon.map((e) => `${e.ic} ${e.name} (매달 ${e.d1}~${e.d2}일)`).join(" · ");
+      if (mon.length && !(krName || iqName || evName)) { cell.dataset.tip = mon.map((e) => `mo|${e.ic} ${e.name} (매달 ${e.d1}~${e.d2}일)`).join("\n"); cell.classList.add("has-tip"); }
 
       const num = document.createElement("span");
       num.textContent = String(d);
@@ -314,7 +319,8 @@ function storeDailyForecastForCalendar(daily) {
         if (iqName) titleParts.push(`🇮🇶 ${iqName}`);
         if (evName) titleParts.push(`📌 ${evName}`);
         mon.forEach((e) => titleParts.push(`${e.ic} ${e.name}`));
-        cell.title = titleParts.join(" · ");
+        cell.dataset.tip = [krName && `kr|한국 · ${krName}`, iqName && `iq|이라크 · ${iqKo(iqName)}`, evName && `ev|${evName}`, ...mon.map((e) => `mo|${e.ic} ${e.name}`)].filter(Boolean).join("\n");
+        cell.classList.add("has-tip");
         monthEntries.push({ d, krName, iqName, evName });
       }
 
@@ -357,7 +363,75 @@ function storeDailyForecastForCalendar(daily) {
         list.appendChild(li);
       });
     }
+    renderNext();
   }
+
+  /* ── 달력 맨 위 '오늘·다가오는 일정' 줄: 아래 목록까지 스크롤하지 않아도 바로 보이게 ── */
+  const nextBox = document.createElement("div");
+  nextBox.className = "hol-next"; nextBox.id = "holidayNext";
+  panel.querySelector(".holiday-weekdays").before(nextBox);
+  const WD = ["일", "월", "화", "수", "목", "금", "토"];
+  const esc = (x) => String(x).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  function dayItems(dt) {
+    const y = dt.getFullYear(), m = dt.getMonth(), d = dt.getDate(), key = dateKey(y, m, d), out = [];
+    const ann = !IQ_HOLIDAYS_2026[key] && IQ_ANNOUNCED[key];
+    if (IQ_HOLIDAYS_2026[key]) out.push({ k: "iq", t: "이라크 · " + iqKo(IQ_HOLIDAYS_2026[key]) });
+    if (ann) out.push({ k: "iq", t: "이라크 · " + iqAnnLabel(ann) + ((ann.provinces || []).length ? ` (${ann.provinces.join("·")})` : ""), ann: true });
+    if (KR_HOLIDAYS_2026[key]) out.push({ k: "kr", t: "한국 · " + KR_HOLIDAYS_2026[key] });
+    if (SITE_EVENTS[key]) out.push({ k: "ev", t: SITE_EVENTS[key] });
+    monthlyOn(y, m, d).forEach((e) => { if (d === e.d1) out.push({ k: "mo", t: `${e.ic} ${e.name} (${e.d1}~${e.d2}일)` }); });
+    return out;
+  }
+  function renderNext() {
+    const t0 = new Date(); t0.setHours(0, 0, 0, 0);
+    const rows = []; let moShown = false;
+    for (let i = 0; i <= 45 && rows.length < 3; i++) {
+      const dt = new Date(t0); dt.setDate(t0.getDate() + i);
+      let it = dayItems(dt);
+      if (moShown) it = it.filter((x) => x.k !== "mo");
+      if (it.some((x) => x.k === "mo")) moShown = true;
+      if (it.length) rows.push({ i, dt, it });
+    }
+    if (!rows.length) { nextBox.className = "hol-next is-quiet"; nextBox.innerHTML = `<div class="hol-next-h">📅 앞으로 45일 동안 휴일·현장 일정이 없어요</div>`; return; }
+    const soon = rows[0].i <= 3 && rows[0].it.some((x) => x.k === "iq" || x.k === "kr");
+    nextBox.className = "hol-next" + (soon ? " is-soon" : "");
+    nextBox.innerHTML = `<div class="hol-next-h">${soon ? "🔔 곧 휴일이에요" : "📅 다가오는 일정"}</div>` + rows.map((r) => {
+      const dd = r.i === 0 ? "오늘" : r.i === 1 ? "내일" : `D-${r.i}`;
+      return `<button type="button" class="hol-next-row${r.i <= 1 ? " is-now" : ""}" data-y="${r.dt.getFullYear()}" data-m="${r.dt.getMonth()}" data-d="${r.dt.getDate()}">`
+        + `<span class="hol-dd">${dd}</span><span class="hol-dt">${r.dt.getMonth() + 1}/${r.dt.getDate()}(${WD[r.dt.getDay()]})</span>`
+        + `<span class="hol-nm">${r.it.map((x) => `<span class="hol-it k-${x.k}"><i></i>${esc(x.t)}${x.ann ? " <em>발표</em>" : ""}</span>`).join("")}</span></button>`;
+    }).join("");
+  }
+  nextBox.addEventListener("click", (e) => {
+    const b = e.target.closest(".hol-next-row"); if (!b) return;
+    e.stopPropagation();
+    viewYear = +b.dataset.y; viewMonth = +b.dataset.m; renderCalendar();
+    if (typeof alignSideWidgets === "function") alignSideWidgets();
+    const c = [...grid.querySelectorAll(".holiday-cell:not(.is-empty)")][+b.dataset.d - 1];
+    if (c) { c.classList.add("hol-flash"); showTip(c); setTimeout(() => c.classList.remove("hol-flash"), 2400); }
+  });
+
+  /* ── 칸에 마우스를 올리거나 누르면 그날 내용이 말풍선으로 ── */
+  const tip = document.createElement("div"); tip.className = "hol-tip"; tip.hidden = true; panel.appendChild(tip);
+  let tipCell = null;
+  function showTip(c) {
+    if (!c || !c.dataset.tip) return;
+    tipCell = c;
+    const d = c.querySelector("span").textContent;
+    tip.innerHTML = `<b>${viewMonth + 1}월 ${d}일</b>` + c.dataset.tip.split("\n").map((x) => { const [k, t] = x.split("|"); return `<div class="hol-it k-${k}"><i></i>${esc(t)}</div>`; }).join("");
+    tip.hidden = false;
+    const pr = panel.getBoundingClientRect(), cr = c.getBoundingClientRect();
+    const w = tip.offsetWidth;
+    let left = cr.left - pr.left + cr.width / 2 - w / 2;
+    left = Math.max(6, Math.min(left, pr.width - w - 6));
+    tip.style.left = left + "px";
+    tip.style.top = (cr.bottom - pr.top + 6) + "px";
+  }
+  function hideTip() { tip.hidden = true; tipCell = null; }
+  grid.addEventListener("pointerover", (e) => { if (e.pointerType !== "mouse") return; const c = e.target.closest(".has-tip"); if (c && c !== tipCell) showTip(c); });
+  grid.addEventListener("pointerleave", (e) => { if (e.pointerType === "mouse") hideTip(); });
+  grid.addEventListener("click", (e) => { const c = e.target.closest(".has-tip"); if (!c) { hideTip(); return; } e.stopPropagation(); if (tipCell === c && !tip.hidden) hideTip(); else showTip(c); });
+  document.addEventListener("click", (e) => { if (!panel.contains(e.target)) hideTip(); });
 
   // 발표된 휴무(자동 수집)를 받아 달력에 더한다
   fetch("iraq-issues.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : null).then((j) => {
@@ -373,14 +447,14 @@ function storeDailyForecastForCalendar(daily) {
   }
 
   prevBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
+    e.stopPropagation(); hideTip();
     viewMonth -= 1;
     if (viewMonth < 0) { viewMonth = 11; viewYear -= 1; }
     renderCalendar();
     if (typeof alignSideWidgets === "function") alignSideWidgets();
   });
   nextBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
+    e.stopPropagation(); hideTip();
     viewMonth += 1;
     if (viewMonth > 11) { viewMonth = 0; viewYear += 1; }
     renderCalendar();
