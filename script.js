@@ -176,6 +176,37 @@ const IQ_HOLIDAYS_2026 = {
 const IQ_ANNOUNCED = {
   "2026-10-25": { reason: "파티마 순교일", scope: "일부 주", provinces: ["키르쿠크", "디와니야"] },
 };
+/* 이라크 공휴일 자세한 설명 (달력 칸에 마우스를 올리면 말풍선에 표시)
+   ar: 아랍어 이름 · what: 어떤 날 · why: 유래 · site: 현장에서 알아 둘 점 · lunar: 이슬람력이라 날짜가 바뀔 수 있음 */
+const IQ_INFO = {
+  "New Year's Day": { ar: "رأس السنة الميلادية", what: "양력 새해 첫날이에요.", why: "이라크는 공문서·회계에 양력을 쓰기 때문에 1월 1일을 공식 휴일로 지켜요.", site: "전날 밤 바그다드 시내에서 폭죽과 축포(공중 사격)가 있을 수 있어요. 밤에 야외에 있으면 떨어지는 탄두에 주의하세요." },
+  "Army Day": { ar: "عيد الجيش العراقي", what: "이라크 국군 창설 기념일이에요.", why: "1921년 1월 6일, 영국 위임통치 아래에서 이라크군 첫 부대(무사 알카딤 연대)가 바그다드에서 창설된 날이에요.", site: "바그다드에서 군 퍼레이드·의장 행사가 열리는 해가 있어요. 행사장 주변 도로 통제와 검문소 강화를 예상하세요." },
+  "Eid al-Fitr": { ar: "عيد الفطر", what: "라마단(금식의 달)이 끝난 것을 축하하는 이슬람 최대 명절이에요. 이슬람력 10월(샤우왈) 1일이에요.", why: "한 달 동안의 금식을 마치고 감사 예배를 드린 뒤 가족·친척을 찾아가 인사하고 아이들에게 용돈(이디야)을 줘요.", site: "정부가 보통 4~5일 연휴를 발표해요. 이라크인 근로자 대부분이 고향에 가니 인력 공백과 귀성 교통 정체를 미리 계획하세요. 축포가 자주 있어요.", lunar: true },
+  "Eid al-Fitr holiday": { same: "Eid al-Fitr" },
+  "Nowruz": { ar: "عيد نوروز", what: "춘분에 맞는 페르시아·쿠르드 전통 새해예요.", why: "쿠르드족의 대표 명절이에요. 폭군을 물리친 대장장이 카와 전설에 따라 언덕에서 불을 피우며 봄을 맞아요. 이라크 전국 공휴일이에요.", site: "쿠르디스탄 지역(에르빌·술라이마니야)은 큰 축제와 나들이로 붐벼요. 쿠르드인 직원이 있으면 휴가를 챙겨 주세요." },
+  "Labour Day": { ar: "عيد العمال", what: "세계 노동절이에요.", why: "1886년 미국 시카고 노동자들의 8시간 노동 요구에서 시작된 국제 기념일이에요. 이라크도 공식 휴일로 지켜요.", site: "노조·정당이 집회를 여는 경우가 있어요. 바그다드 타흐리르 광장 주변은 피하는 게 좋아요." },
+  "Eid al-Adha": { ar: "عيد الأضحى", what: "'희생제'예요. 메카 성지순례(하지)가 끝날 무렵인 이슬람력 12월 10일에 지켜요.", why: "아브라함(이브라힘)이 신의 명령에 아들을 바치려 하자 신이 대신 양을 내려 준 이야기를 기려요. 양·소를 잡아 고기를 가족·이웃·가난한 이들과 나눠요.", site: "이슬람 명절 중 가장 긴 연휴(보통 4~5일)예요. 거리에서 가축 도축이 많아 위생·악취 문제가 생기고, 귀성 교통이 몰려요.", lunar: true },
+  "Eid al-Adha holiday": { same: "Eid al-Adha" },
+  "Eid al-Ghadeer": { ar: "عيد الغدير", what: "시아파 무슬림의 명절이에요. 이슬람력 12월 18일이에요.", why: "632년 예언자 무함마드가 마지막 순례에서 돌아오던 길에 '가디르 쿰'이라는 곳에서 사촌 알리를 후계자로 지목했다고 시아파가 믿는 날이에요. 2024년 공휴일법이 바뀌면서 공식 휴일이 됐어요.", site: "시아파 지역(바그다드 동부·남부)에서 축하 행사가 열려요. 수니파 쪽에서는 반대 목소리도 있었던 날이라, 종교 이야기는 꺼내지 않는 게 좋아요.", lunar: true },
+  "Islamic New Year": { ar: "رأس السنة الهجرية", what: "이슬람력(히즈라력) 새해 첫날, 1월(무하람) 1일이에요.", why: "622년 예언자 무함마드가 메카에서 메디나로 옮겨 간 '히즈라'를 기준으로 해를 세요.", site: "이날부터 시아파의 애도 기간(무하람)이 시작돼요. 열흘 뒤 아슈라까지 검은 깃발이 걸리고, 축하·음악은 삼가는 분위기예요.", lunar: true },
+  "Ashura": { ar: "عاشوراء", what: "시아파에게 가장 슬픈 추모일이에요. 이슬람력 1월(무하람) 10일이에요.", why: "680년 카르발라 전투에서 예언자의 손자 이맘 후세인과 그 일행이 우마이야 왕조 군대에 맞서다 순교한 날을 기려요.", site: "카르발라로 수백만 명이 순례하고, 바그다드에서도 대규모 행렬이 이어져요. 남쪽 도로 혼잡·검문 강화를 예상하세요. 현장에서 음악을 틀거나 웃고 떠드는 행동은 삼가세요. 40일 뒤 '아르바인' 때는 더 큰 도보 순례가 있어요.", lunar: true },
+  "Republic Day": { ar: "ذكرى ثورة 14 تموز", what: "공화국 수립 기념일(7월 14일 혁명)이에요.", why: "1958년 7월 14일 압둘 카림 카심 장군이 이끈 군사 혁명으로 하심 왕조가 무너지고 이라크가 공화국이 된 날이에요.", site: "한여름이라 휴일과 관계없이 폭염 대책을 유지하세요." },
+  "The Prophet's Birthday": { ar: "المولد النبوي الشريف", what: "예언자 무함마드의 탄신일(마울리드)이에요. 이슬람력 3월(라비 알아왈) 12일이에요.", why: "수니파는 12일, 시아파는 17일을 탄신일로 봐서 이라크에서는 두 날 모두 기념하는 분위기가 있어요.", site: "바그다드 아다미야의 아부 하니파 사원 주변에서 행렬과 축하 행사가 열려요. 그 주변 교통이 막혀요.", lunar: true },
+  "Iraqi National Day": { ar: "اليوم الوطني العراقي", what: "이라크의 '국경일'이에요. 독립을 기념하는 날이에요.", why: "1932년 10월 3일 이라크가 영국 위임통치에서 벗어나 국제연맹에 가입하면서 독립국으로 인정받은 날이에요. 2020년 정부가 이날을 공식 국경일로 정했어요.", site: "관공서·학교가 쉬고 국기 게양 행사가 있어요. 정부 기관과의 서류·허가 업무가 멈추니 일정에 반영하세요." },
+  "Victory Day": { ar: "يوم النصر على داعش", what: "IS(다에시) 격퇴 승전 기념일이에요.", why: "2017년 12월 10일 하이다르 알아바디 총리가 3년 넘게 이어진 IS와의 전쟁에서 이라크 영토를 모두 되찾았다고 선언한 날이에요.", site: "전사자 추모 행사와 군·경 행사가 열려요. 안보 관련 기념일이라 검문소가 평소보다 엄격할 수 있어요." },
+  "Christmas Day": { ar: "عيد الميلاد المجيد", what: "성탄절이에요.", why: "이라크에는 칼데아·아시리아 등 오래된 기독교 공동체가 있어요. 2018년부터 기독교인뿐 아니라 모든 국민의 공식 휴일이 됐어요.", site: "바그다드 카라다 지역 교회 주변 경비가 강화돼요." },
+};
+const IQ_ANN_INFO = "정부·주(州) 의회가 종교 추모일, 폭염, 행사 등을 이유로 며칠 전에 갑자기 발표하는 휴무예요. 해당 주만 쉬는 경우가 많으니 바그다드가 포함되는지 꼭 확인하세요.";
+/* 발표 휴무 사유별 설명 (사유 글자에 이 낱말이 들어 있으면 함께 보여 줌) */
+const IQ_ANN_REASON = [
+  ["파티마", "예언자 무함마드의 딸이자 이맘 알리의 아내인 파티마 알자흐라의 기일이에요. 시아파 추모일이라 시아파가 많은 남부·중부 주에서 휴무를 발표하곤 해요."],
+  ["아르바인", "아슈라(이맘 후세인 순교일) 40일 뒤의 추모일이에요. 수백만 명이 카르발라까지 걸어서 순례해서 남부 도로가 거의 마비돼요."],
+  ["카딤", "7대 이맘 무사 알카딤의 순교일이에요. 바그다드 카디미야 성지로 큰 도보 순례가 몰려 바그다드 시내 교통이 크게 막혀요."],
+  ["알리", "이맘 알리의 순교일(라마단 21일 무렵)이에요. 나자프 성지를 중심으로 추모 행사가 열려요."],
+  ["폭염", "기온이 50℃ 가까이 오르면 전력난과 폭염 때문에 관공서 근무를 쉬게 하는 경우예요. 현장도 휴식·작업시간 조정을 검토하세요."],
+  ["선거", "선거나 인구조사 때 투표·조사 진행을 위해 쉬어요. 이동 통제나 통행금지가 함께 나오기도 해요."],
+];
+function iqInfo(n) { const x = IQ_INFO[n]; return x && x.same ? IQ_INFO[x.same] : x; }
 /* 이라크 공휴일 한국어 이름 (달력 위 '다가오는 일정' 줄·말풍선용) */
 const IQ_KO = { "New Year's Day": "신정", "Army Day": "국군의 날", "Eid al-Fitr": "이드 알피트르 (라마단 종료)", "Eid al-Fitr holiday": "이드 알피트르 연휴", "Nowruz": "노루즈 (쿠르드 새해)", "Labour Day": "노동절", "Eid al-Adha": "이드 알아드하 (희생제)", "Eid al-Adha holiday": "이드 알아드하 연휴", "Eid al-Ghadeer": "가디르 축일", "Islamic New Year": "이슬람 새해", "Ashura": "아슈라", "Republic Day": "공화국의 날", "The Prophet's Birthday": "예언자 탄신일", "Iraqi National Day": "이라크 국경일", "Victory Day": "승전 기념일", "Christmas Day": "성탄절" };
 const iqKo = (n) => IQ_KO[n] || n;
@@ -319,7 +350,7 @@ function storeDailyForecastForCalendar(daily) {
         if (iqName) titleParts.push(`🇮🇶 ${iqName}`);
         if (evName) titleParts.push(`📌 ${evName}`);
         mon.forEach((e) => titleParts.push(`${e.ic} ${e.name}`));
-        cell.dataset.tip = [krName && `kr|한국 · ${krName}`, iqName && `iq|이라크 · ${iqKo(iqName)}`, evName && `ev|${evName}`, ...mon.map((e) => `mo|${e.ic} ${e.name}`)].filter(Boolean).join("\n");
+        cell.dataset.tip = [krName && `kr|한국 · ${krName}`, iqName && `iq|이라크 · ${iqKo(iqName)}|${IQ_HOLIDAYS_2026[key] ? IQ_HOLIDAYS_2026[key] : "@ann"}`, evName && `ev|${evName}`, ...mon.map((e) => `mo|${e.ic} ${e.name}`)].filter(Boolean).join("\n");
         cell.classList.add("has-tip");
         monthEntries.push({ d, krName, iqName, evName });
       }
@@ -412,26 +443,52 @@ function storeDailyForecastForCalendar(daily) {
   });
 
   /* ── 칸에 마우스를 올리거나 누르면 그날 내용이 말풍선으로 ── */
-  const tip = document.createElement("div"); tip.className = "hol-tip"; tip.hidden = true; panel.appendChild(tip);
+  const tip = document.createElement("div"); tip.className = "hol-tip"; tip.hidden = true; document.body.appendChild(tip); // 오른쪽 아래 떠 있는 버튼들보다 위에 보이도록 body에 붙임
+  window.addEventListener("scroll", () => { if (!tip.hidden) hideTip(); }, { passive: true });
   let tipCell = null;
   function showTip(c) {
     if (!c || !c.dataset.tip) return;
     tipCell = c;
     const d = c.querySelector("span").textContent;
-    tip.innerHTML = `<b>${viewMonth + 1}월 ${d}일</b>` + c.dataset.tip.split("\n").map((x) => { const [k, t] = x.split("|"); return `<div class="hol-it k-${k}"><i></i>${esc(t)}</div>`; }).join("");
+    let rich = false;
+    tip.innerHTML = `<b>${viewMonth + 1}월 ${d}일</b>` + c.dataset.tip.split("\n").map((x) => {
+      const [k, t, en] = x.split("|");
+      let html = `<div class="hol-it k-${k}"><i></i>${esc(t)}</div>`;
+      const inf = en && en !== "@ann" ? iqInfo(en) : null;
+      if (inf) {
+        rich = true;
+        html += `<div class="hol-info">${inf.ar ? `<div class="hol-ar" dir="rtl" lang="ar">${esc(inf.ar)}</div>` : ""}`
+          + `<p><span>무슨 날</span>${esc(inf.what)}</p><p><span>유래</span>${esc(inf.why)}</p><p class="hol-site"><span>현장 참고</span>${esc(inf.site)}</p>`
+          + (inf.lunar ? `<p class="hol-lunar">🌙 이슬람력(음력) 날짜라 초승달 관측에 따라 하루 앞뒤로 바뀔 수 있어요. 정확한 날은 정부 발표를 따르세요.</p>` : "") + `</div>`;
+      } else if (en === "@ann") {
+        rich = true;
+        const key = `${viewYear}-${String(viewMonth + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`, a = IQ_ANNOUNCED[key] || {};
+        const why = IQ_ANN_REASON.find(([w]) => (a.reason || "").includes(w));
+        html += `<div class="hol-info">`
+          + ((a.provinces || []).length ? `<p><span>쉬는 지역</span>${esc(a.provinces.join(" · "))}${a.baghdad === true ? "" : " <small>(바그다드는 해당 없음)</small>"}</p>` : a.scope === "전국" ? `<p><span>쉬는 지역</span>이라크 전국</p>` : "")
+          + (why ? `<p><span>유래</span>${esc(why[1])}</p>` : "")
+          + `<p class="hol-site"><span>발표 휴무</span>${esc(IQ_ANN_INFO)}</p></div>`;
+      }
+      return html;
+    }).join("");
+    tip.classList.toggle("is-rich", rich);
     tip.hidden = false;
     const pr = panel.getBoundingClientRect(), cr = c.getBoundingClientRect();
-    const w = tip.offsetWidth;
-    let left = cr.left - pr.left + cr.width / 2 - w / 2;
-    left = Math.max(6, Math.min(left, pr.width - w - 6));
+    const w = tip.offsetWidth, h = tip.offsetHeight, vw = document.documentElement.clientWidth;
+    // 화면 좌표(position: fixed). 넓은 설명은 달력 왼쪽(본문 위)으로 넘어가도 되게, 화면 밖으로만 안 나가게
+    let left = cr.left + cr.width / 2 - w / 2;
+    left = Math.min(left, (rich ? vw - 8 : pr.right - 6) - w);
+    left = Math.max(left, rich ? 8 : pr.left + 6);
     tip.style.left = left + "px";
-    tip.style.top = (cr.bottom - pr.top + 6) + "px";
+    // 아래 공간이 모자라면 칸 위쪽에 띄운다
+    const below = cr.bottom + 6 + h <= window.innerHeight - 8 || cr.top - 6 - h < 8;
+    tip.style.top = (below ? cr.bottom + 6 : cr.top - 6 - h) + "px";
   }
   function hideTip() { tip.hidden = true; tipCell = null; }
   grid.addEventListener("pointerover", (e) => { if (e.pointerType !== "mouse") return; const c = e.target.closest(".has-tip"); if (c && c !== tipCell) showTip(c); });
   grid.addEventListener("pointerleave", (e) => { if (e.pointerType === "mouse") hideTip(); });
   grid.addEventListener("click", (e) => { const c = e.target.closest(".has-tip"); if (!c) { hideTip(); return; } e.stopPropagation(); if (tipCell === c && !tip.hidden) hideTip(); else showTip(c); });
-  document.addEventListener("click", (e) => { if (!panel.contains(e.target)) hideTip(); });
+  document.addEventListener("click", (e) => { if (!panel.contains(e.target) && !tip.contains(e.target)) hideTip(); });
 
   // 발표된 휴무(자동 수집)를 받아 달력에 더한다
   fetch("iraq-issues.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : null).then((j) => {
