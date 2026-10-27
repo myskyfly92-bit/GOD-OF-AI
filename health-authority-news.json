@@ -1,48 +1,13 @@
 {
-  "generatedAt": "2026-10-25T23:16:41.223Z",
+  "generatedAt": "2026-10-27T00:26:01.771Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
-    {
-      "title": "- 보건복지부 대표홈페이지",
-      "source": "",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUlkwMlgwVUQwX2lwM1lNX2FwYVVEbzRvMy1oalF3bm91YTItdzAyQkdEdTV5aEpNc1NtN1hFNGdHa1ZfeWpldU42YmFDUW5XdFpvRlcwSFdFejRvNlFIQXJSblZmempIanpuYUdWX25pa1YtZ3dOdWVGT0p6Q3pNSEdSNFY0WkdaZFE?oc=5",
-      "date": "2026-10-22T22:58:40.000Z"
-    },
     {
       "title": "여행건강알림e : HOME - Q-CODE",
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKTWN3aV9fQVZCVG45d1V3LTQyUXMwSlFEM1lGU2h6Z05hYk5FdEM4N0lTSG5QVjY4UEY4ZUU4TGtkTGM3X0lDdmxQWmdPcmVuN1FDMVpQdDZxQmc?oc=5",
       "date": "2026-09-30T14:38:13.000Z"
-    },
-    {
-      "title": "- 질병관리청",
-      "source": "",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-24T05:41:17.000Z"
-    },
-    {
-      "title": "감시체계 연보",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tOW1Tdng1ZEhkR2duX1ViaWdQYktJQXNncGlJckFoU0syYURRZGRmRUdHcERWQmVjUlpEVWpMTEd6SmxMVUx6c3lGNU9oamhtZjdjWTdn?oc=5",
-      "date": "2025-12-16T16:42:53.000Z"
-    },
-    {
-      "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
-      "source": "질병관리청 감염병포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
-      "date": "2024-06-10T03:38:59.000Z"
-    },
-    {
-      "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
-      "source": "질병관리청 감염병포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
-      "date": "2024-06-10T02:47:27.000Z"
     },
     {
       "title": "감시체계 개요",
@@ -52,18 +17,32 @@
       "date": "2025-12-16T15:12:03.000Z"
     },
     {
-      "title": "ICCON 감염예방 소식지",
-      "source": "질병관리청",
+      "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
+      "source": "질병관리청 감염병포털",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ueXN2cXpmUkJyLWV2cHc4VHB3Sm01dGcwc09pTlNXVG5xZjE4bHpvUFgxOVktQjJoLXJHRmJRTHM4TXhrbmJLZ1JTQ25yWklLeDlqek1B?oc=5",
-      "date": "2025-12-16T15:49:07.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
+      "date": "2024-06-10T03:38:59.000Z"
     },
     {
-      "title": "FluON | Influenza Overview",
-      "source": "Vercel",
+      "title": "- 질병관리청",
+      "source": "",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBVLXY0RFRhYnNXcUp4OFExMlFlRUtRZjFwLWp1VUI1ZDZVWk4xSS1zQzdOazZZZ05VN2U1MmNuT3BaTmVlclhYUkw2MmhUWXVvYXZWS2tOcWE?oc=5",
-      "date": "2026-10-22T07:00:00.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
+      "date": "2026-10-26T11:55:02.000Z"
+    },
+    {
+      "title": "감시체계 연보",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tOW1Tdng1ZEhkR2duX1ViaWdQYktJQXNncGlJckFoU0syYURRZGRmRUdHcERWQmVjUlpEVWpMTEd6SmxMVUx6c3lGNU9oamhtZjdjWTdn?oc=5",
+      "date": "2025-12-16T16:42:53.000Z"
+    },
+    {
+      "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
+      "source": "질병관리청 감염병포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
+      "date": "2024-06-10T02:47:27.000Z"
     },
     {
       "title": "검역관리",
@@ -73,18 +52,39 @@
       "date": "2026-07-13T05:36:24.000Z"
     },
     {
-      "title": "채용공고",
+      "title": "감염병 위험평가",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
-      "date": "2025-12-16T15:48:42.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9QelRoMHgydi1mLWFhbEszMXJZR04yLWo3NUxZY2t4bXJvM1pGRmlvbW1WVjJ1QjBuM0JSM0VBck9xOUZGQmxsMXc0S3hFSlZlWm4yZlZB?oc=5",
+      "date": "2025-12-16T15:55:47.000Z"
     },
     {
       "title": "신고현황",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MbExBX0JEd0RiZmxBQ3djZnFIQjdYUGwycC1BdUlvMDFDV0VOLUFmbU5QSU00TmNINE5BdmE5NlRVSThkN0c3TVJDa3dHRFJJWlNKWkZ3?oc=5",
-      "date": "2025-12-16T16:42:42.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mak9keTVpWE5paWNwaGhNMHhMdF9ueXVoNGZNTktJOGZCYWdaOS1IYmdOZUxQcUxaNUFpMnRrRUpQcjBsOGVuRzI5YzE0UHd5SVktam5R?oc=5",
+      "date": "2025-12-16T16:43:37.000Z"
+    },
+    {
+      "title": "수인성·식품매개 감염병",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZQl9OTjlxM2NaZDY4dXZ1LU51dUNFTGZsYWstcjJpNG5GajVQa2N6OWozdk9RdHpSZi1USGVEUTRqX2J6YWRuUU40c3dvdmVndUZJVTln?oc=5",
+      "date": "2025-12-16T14:07:01.000Z"
+    },
+    {
+      "title": "만성질환 감시 및 정보 통합 수집·제공",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1peGhRZjh4aXNZLW9nZW9Lb3FGY1hEbV82d3I5WFBfdllCRUhmdXBqRTRGLXFxZXd3UWxUcXVYRFc5R29IOUM3b1ROQmdXZDVnamthWEdB?oc=5",
+      "date": "2026-08-23T17:35:43.000Z"
+    },
+    {
+      "title": "글로벌보건안보(GHS)조정사무소 운영",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1oeG5ZTkxVNlZrUXdVVnptTmVMWE5MbzkteVM1ck5XbG94dzRaRTJONEVESkYtVjlLSzVka3Nrb0I5THppdmdrVjlKUXBjZU9fdDNoOWdB?oc=5",
+      "date": "2025-12-16T15:51:46.000Z"
     }
   ]
 }
