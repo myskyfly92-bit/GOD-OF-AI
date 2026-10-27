@@ -4971,3 +4971,24 @@ html[data-theme="light"] .hol-ar { color: #0b7f95; }
 html[data-theme="light"] .hol-info .hol-site span { color: #b25e00; }
 html[data-theme="light"] .hol-info .hol-lunar { color: #5b6672; }
 .hol-info p small { color: var(--text-muted); font-size: 11.5px; }
+
+/* 휴일 팝업 */
+.hol-pop { width: min(640px, 100%); }
+.hol-pop.is-ann { border-color: rgba(53, 182, 208, .7); }
+.hol-pop .ntc-pop-k { font-size: 14px; font-weight: 800; color: #ff8a98; }
+.hol-pop.is-ann .ntc-pop-k { color: #6fd3e6; }
+.hol-pop h2 { margin: 8px 0 12px; }
+.hol-pop-list { display: flex; flex-direction: column; gap: 10px; }
+.hol-pop-row { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 12px; padding: 12px; border-radius: 12px; background: rgba(255,255,255,.03); border: 1px solid var(--border-soft); }
+.hol-pop-row.is-new { border-color: rgba(53, 182, 208, .45); background: rgba(53, 182, 208, .06); }
+.hol-pop-d { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 2px; }
+.hol-pop-d b { font: 800 20px var(--font-mono); color: #ff8a98; }
+.hol-pop-d span { font: 600 12.5px var(--font-mono); color: var(--text-muted); white-space: nowrap; }
+.hol-pop-t .hol-it { font-size: 16.5px; }
+.hol-pop-t .hol-info { font-size: 14px; color: #d6dee8; }
+.hol-pop .ntc-pop-f .hol-pop-cal { margin-right: auto; }
+html[data-theme="light"] .hol-pop-t .hol-info { color: #2a3440; }
+html[data-theme="light"] .hol-pop-d b, html[data-theme="light"] .hol-pop .ntc-pop-k { color: #d9363e; }
+html[data-theme="light"] .hol-pop.is-ann .ntc-pop-k { color: #0b7f95; }
+@media (max-width: 520px) { .hol-pop-row { grid-template-columns: 1fr; } .hol-pop-d { flex-direction: row; gap: 8px; } }
+.ntc-pop-bg.hol-pop-bg { z-index: 99990; }

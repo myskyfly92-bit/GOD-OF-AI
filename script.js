@@ -490,13 +490,86 @@ function storeDailyForecastForCalendar(daily) {
   grid.addEventListener("click", (e) => { const c = e.target.closest(".has-tip"); if (!c) { hideTip(); return; } e.stopPropagation(); if (tipCell === c && !tip.hidden) hideTip(); else showTip(c); });
   document.addEventListener("click", (e) => { if (!panel.contains(e.target) && !tip.contains(e.target)) hideTip(); });
 
-  // 발표된 휴무(자동 수집)를 받아 달력에 더한다
-  fetch("iraq-issues.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : null).then((j) => {
+  // 발표된 휴무(자동 수집)를 받아 달력에 더한다 — 상황실을 켜 둔 채로도 새 발표를 잡도록 30분마다 다시 확인
+  const loadAnnounced = () => fetch("iraq-issues.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : null).then((j) => {
     const list = (j && j.announcedHolidays) || [];
     let added = 0;
     list.forEach((h) => { if (h && h.date && !IQ_HOLIDAYS_2026[h.date]) { const was = IQ_ANNOUNCED[h.date]; if (!was || h.scope === "전국" || (h.provinces || []).length > (was.provinces || []).length) { IQ_ANNOUNCED[h.date] = h; added++; } } });
     if (added) renderCalendar();
-  }).catch(() => {});
+  }).catch(() => {}).then(() => holidayPopup());
+  loadAnnounced();
+  setInterval(loadAnnounced, 30 * 60000);
+
+  /* ── 휴일 팝업: 3일 안에 한국·이라크 공휴일이 오거나, 갑작스러운 휴무가 발표되면 화면 가운데에 한 번 띄운다 ──
+     PC(브라우저)마다 같은 휴일은 한 번만. ⚙ 설정 › '닫은 알림 다시 보기'로 다시 볼 수 있음 */
+  const POP_KEY = "hseHolPop";
+  const popSeen = () => { try { return JSON.parse(localStorage.getItem(POP_KEY) || "[]"); } catch (e) { return []; } };
+  const popBase = (k, t) => k === "kr" ? t.replace(/ (연휴|대체공휴일)$/, "") : ((IQ_INFO[t] && IQ_INFO[t].same) || t);
+  function holidayPopup() {
+    if (document.querySelector(".hol-pop-bg")) return;
+    const t0 = new Date(); t0.setHours(0, 0, 0, 0);
+    const seen = popSeen(), rows = [], keys = [];
+    for (let i = 0; i <= 60; i++) {
+      const dt = new Date(t0); dt.setDate(t0.getDate() + i);
+      const y = dt.getFullYear(), m = dt.getMonth(), d = dt.getDate(), key = dateKey(y, m, d);
+      const items = [];
+      const ann = !IQ_HOLIDAYS_2026[key] && IQ_ANNOUNCED[key];
+      if (ann) items.push({ k: "iq", ann, pk: `ann:${key}`, t: iqAnnLabel(ann) });           // 발표 휴무는 날짜가 멀어도 띄움
+      if (i <= 3) {                                                                          // 정기 공휴일은 3일 안일 때
+        if (IQ_HOLIDAYS_2026[key]) items.push({ k: "iq", en: IQ_HOLIDAYS_2026[key], pk: `iq:${y}:${popBase("iq", IQ_HOLIDAYS_2026[key])}`, t: iqKo(IQ_HOLIDAYS_2026[key]) });
+        if (KR_HOLIDAYS_2026[key]) items.push({ k: "kr", pk: `kr:${y}:${popBase("kr", KR_HOLIDAYS_2026[key])}`, t: KR_HOLIDAYS_2026[key] });
+      }
+      if (items.length) rows.push({ i, dt, items });
+      items.forEach((x) => keys.push(x.pk));
+    }
+    const fresh = keys.filter((k) => !seen.includes(k));
+    if (!fresh.length) return;
+    const isAnn = rows.some((r) => r.items.some((x) => x.ann && fresh.includes(x.pk)));
+    const ddOf = (i) => i === 0 ? "오늘" : i === 1 ? "내일" : `D-${i}`;
+    const body = rows.map((r) => r.items.map((x) => {
+      const inf = x.en ? iqInfo(x.en) : null;
+      const prov = x.ann && (x.ann.provinces || []).length ? `<p><span>쉬는 지역</span>${esc(x.ann.provinces.join(" · "))}${x.ann.baghdad === true ? "" : " <small>(바그다드는 해당 없음 — 현장은 평소대로일 수 있어요)</small>"}</p>` : x.ann && x.ann.scope === "전국" ? `<p><span>쉬는 지역</span>이라크 전국</p>` : "";
+      const why = x.ann ? IQ_ANN_REASON.find(([w]) => (x.ann.reason || "").includes(w)) : null;
+      return `<div class="hol-pop-row${fresh.includes(x.pk) ? " is-new" : ""}">
+        <div class="hol-pop-d"><b>${ddOf(r.i)}</b><span>${r.dt.getMonth() + 1}/${r.dt.getDate()}(${WD[r.dt.getDay()]})</span></div>
+        <div class="hol-pop-t"><div class="hol-it k-${x.k}"><i></i>${x.k === "kr" ? "한국" : "이라크"} · ${esc(x.t)}${x.ann ? " <em>발표</em>" : ""}</div>
+          <div class="hol-info">${inf && inf.ar ? `<div class="hol-ar" dir="rtl" lang="ar">${esc(inf.ar)}</div>` : ""}${prov}
+            ${inf ? `<p><span>무슨 날</span>${esc(inf.what)}</p><p class="hol-site"><span>현장 참고</span>${esc(inf.site)}</p>${inf.lunar ? `<p class="hol-lunar">🌙 이슬람력 날짜라 하루 앞뒤로 바뀔 수 있어요.</p>` : ""}` : ""}
+            ${why ? `<p><span>유래</span>${esc(why[1])}</p>` : ""}${x.ann ? `<p class="hol-lunar">${esc(IQ_ANN_INFO)}</p>` : ""}
+            ${x.k === "kr" ? `<p class="hol-lunar">한국 본사·협력사 연락이 어려울 수 있어요. 결재·송금 일정을 미리 챙기세요.</p>` : ""}</div></div></div>`;
+    }).join("")).join("");
+    const bg = document.createElement("div"); bg.className = "ntc-pop-bg hol-pop-bg";
+    bg.innerHTML = `<div class="ntc-pop hol-pop${isAnn ? " is-ann" : ""}" role="dialog" aria-label="휴일 안내">
+      <div class="ntc-pop-h"><span class="ntc-pop-k">${isAnn ? "📢 갑작스러운 휴무 발표" : "🔔 곧 휴일이에요"}</span><button type="button" class="ntc-x" aria-label="닫기">✕</button></div>
+      <h2>${isAnn ? "이라크 정부가 휴무를 발표했어요" : "다가오는 휴일을 확인하세요"}</h2>
+      <div class="hol-pop-list">${body}</div>
+      <div class="ntc-pop-f"><button type="button" class="hol-pop-cal">📅 달력에서 보기</button><button type="button" class="ntc-ok">확인</button></div></div>`;
+    const close = () => {
+      try { localStorage.setItem(POP_KEY, JSON.stringify(popSeen().concat(fresh).slice(-80))); } catch (e) {}
+      bg.classList.add("out"); setTimeout(() => bg.remove(), 250); document.removeEventListener("keydown", onEsc);
+    };
+    const onEsc = (e) => { if (e.key === "Escape") close(); };
+    bg.addEventListener("click", (e) => {
+      if (e.target.closest(".hol-pop-cal")) {
+        close();
+        const r0 = rows.find((r) => r.items.some((x) => fresh.includes(x.pk))) || rows[0];
+        viewYear = r0.dt.getFullYear(); viewMonth = r0.dt.getMonth(); renderCalendar();
+        if (typeof alignSideWidgets === "function") alignSideWidgets();
+        panel.scrollIntoView({ behavior: "smooth", block: "center" });
+        setTimeout(() => { const c = [...grid.querySelectorAll(".holiday-cell:not(.is-empty)")][r0.dt.getDate() - 1]; if (c) { c.classList.add("hol-flash"); showTip(c); setTimeout(() => c.classList.remove("hol-flash"), 2400); } }, 700);
+        return;
+      }
+      if (e.target === bg || e.target.closest(".ntc-x, .ntc-ok")) close();
+    });
+    document.addEventListener("keydown", onEsc);
+    // 인트로·공지 팝업이 끝난 뒤에 띄운다
+    let waited = 0;
+    const tryShow = () => {
+      if ((document.querySelector(".hse-intro") || document.querySelector(".ntc-pop-bg:not(.hol-pop-bg)") || document.querySelector(".hg-bubble")) && waited < 180000) { waited += 800; return setTimeout(tryShow, 800); }
+      if (!document.querySelector(".hol-pop-bg")) document.body.appendChild(bg);
+    };
+    setTimeout(tryShow, 1500);
+  }
 
   function openPanel() {
     renderCalendar();
@@ -8824,7 +8897,7 @@ makeNewsView({ view: "view-bismayah", json: "bismayah-news.json", days: 60, subN
   // ⚙ 설정 › 닫은 알림 다시 보기: 이 PC(브라우저)에 저장된 '닫음' 기록을 지우고 다시 그린다
   const rb = document.getElementById("alertReset");
   if (rb) rb.addEventListener("click", () => {
-    try { localStorage.removeItem(KEY); localStorage.removeItem("wnHide"); } catch (e) {}
+    try { localStorage.removeItem(KEY); localStorage.removeItem("wnHide"); localStorage.removeItem("hseHolPop"); } catch (e) {}
     location.reload();
   });
 })();
