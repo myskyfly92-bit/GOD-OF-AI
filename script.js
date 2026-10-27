@@ -7559,7 +7559,7 @@ async function clinicCall(action, payload) {
 })();
 
 /* ==========================================================
-   헌수호 사용 안내 (처음 방문 시 자동 · 오른쪽 아래 '사용 안내' 버튼으로 다시 보기)
+   헌수호 사용 안내 (오른쪽 아래 '사용 안내' 버튼을 눌렀을 때만 · 자동으로 뜨지 않음)
    - 장(章)별로 실제 탭을 열어 가며 화면 요소를 하나씩 짚어 준다
    - '처음부터 전체' 또는 '골라서 보기' · 이전/다음 · 키보드 ← → Esc
    ========================================================== */
@@ -7880,11 +7880,8 @@ async function clinicCall(action, payload) {
   again.onclick = () => start();
   document.body.appendChild(again);
 
-  // 처음 방문이면 인트로가 끝난 뒤 자동으로 나온다
-  let seen = false;
-  try { seen = localStorage.getItem(KEY) === "1"; } catch (e) { seen = true; }
-  if (new URLSearchParams(location.search).get("guide") === "1") seen = false;
-  if (seen) return;
+  // 자동으로 띄우지 않는다 (오른쪽 아래 '사용 안내' 버튼을 눌렀을 때만). 주소 끝에 ?guide=1 을 붙이면 바로 시작
+  if (new URLSearchParams(location.search).get("guide") !== "1") return;
   const kick = () => setTimeout(() => { if (!document.querySelector(".hse-intro")) start(); else kick(); }, 1200);
   if (document.readyState === "complete") kick(); else addEventListener("load", kick);
 })();
