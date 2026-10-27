@@ -10462,21 +10462,21 @@ const lightInk = (function () {
   let built = false;
   const f1 = (x, d = 1) => (isFinite(x) ? Number(x).toLocaleString("ko-KR", { maximumFractionDigits: d, minimumFractionDigits: d }) : "–");
   const num = (id) => { const v = parseFloat(String(document.getElementById(id).value).replace(",", ".")); return isFinite(v) ? v : NaN; };
-  const lvl = (k, t) => `<span class="kc-lv sc-${k}">${t}</span>`;
+  const lvl = (k, t) => `<span class="kc-lv kc-${k}">${t}</span>`;
   const card = (id, ic, title, sub, body) => `<div class="kc-card" id="${id}"><div class="kc-h"><span class="kc-ic">${ic}</span><div><b>${title}</b><small>${sub}</small></div></div>${body}<div class="kc-out" id="${id}Out"></div></div>`;
   const inp = (id, label, val, unit, attrs = "") => `<label class="kc-in"><span>${label}</span><span class="kc-f"><input id="${id}" type="number" inputmode="decimal" value="${val}" ${attrs}><em>${unit}</em></span></label>`;
 
   function build() {
     built = true;
     grid.innerHTML =
-      card("scSling", "🪝", "줄걸이 장력", "매다는 각도에 따라 한 줄에 걸리는 힘",
+      card("scSling", '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#f2a93b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v3"/><circle cx="12" cy="6.5" r="1.6"/><path d="M12 8.2v4.3"/><path d="M12 12.5c0 0 4.5 0 4.5 4.3a4.5 4.5 0 0 1-9 0V15"/><path d="M6 15.6l1.5-1.5 1.5 1.5"/></svg>', "줄걸이 장력", "매다는 각도에 따라 한 줄에 걸리는 힘",
         `<div class="kc-row">${inp("slW", "짐 무게", 5, "t", 'min="0" step="0.1"')}${inp("slA", "두 줄 사이 각도", 60, "°", 'min="0" max="170" step="5"')}</div>
          <div class="kc-row"><label class="kc-in"><span>줄 수</span><span class="kc-f"><select id="slN"><option value="1">1줄</option><option value="2" selected>2줄</option><option value="3">3줄</option><option value="4">4줄</option></select></span></label>${inp("slWll", "줄 1개 사용하중 (선택)", "", "t", 'min="0" step="0.1" placeholder="예: 3.2"')}</div>
          <input type="range" id="slR" min="0" max="150" step="5" value="60" class="kc-range" aria-label="각도">`) +
       card("scCrane", "🏗️", "크레인 정격하중 사용률", "작업반경의 정격하중 대비 실제 들어 올리는 무게",
         `<div class="kc-row">${inp("crR", "정격하중 (그 반경에서)", 20, "t", 'min="0" step="0.1"')}${inp("crL", "짐 무게", 12, "t", 'min="0" step="0.1"')}</div>
          <div class="kc-row">${inp("crH", "훅·줄걸이 용구 무게", 0.8, "t", 'min="0" step="0.1"')}<div class="kc-hint">정격하중은 <b>붐 길이·작업반경</b>에 맞는 값을 하중표에서 읽어 넣으세요.</div></div>`) +
-      card("scLadder", "🪜", "사다리 설치 각도", "75° (밑에서 4 : 1) 기준 — 벽에서 얼마나 띄울까",
+      card("scLadder", '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#f2a93b" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 2v20M17 2v20M7 6h10M7 10.5h10M7 15h10M7 19.5h10"/></svg>', "사다리 설치 각도", "75° (밑에서 4 : 1) 기준 — 벽에서 얼마나 띄울까",
         `<div class="kc-row">${inp("ldH", "기대는 높이 (바닥 → 걸치는 곳)", 4, "m", 'min="0" step="0.1"')}${inp("ldL", "또는 사다리 길이", "", "m", 'min="0" step="0.1" placeholder="길이로 계산"')}</div>`) +
       card("scWind", "🌬️", "풍속별 작업중지", "순간풍속(돌풍)을 넣으면 멈춰야 할 작업을 보여 줘요",
         `<div class="kc-row">${inp("wdV", "순간풍속", 8, "m/s", 'min="0" step="0.5"')}<div class="kc-btns"><button type="button" class="kc-btn" id="wdNow">📍 비스마야 지금</button><button type="button" class="kc-btn" id="wdMax">24시간 최대 돌풍</button></div></div>`) +
@@ -10531,9 +10531,9 @@ const lightInk = (function () {
     const out = document.getElementById("scLadderOut");
     if (!(H > 0)) { out.innerHTML = `<p class="kc-dim">높이나 사다리 길이를 넣어 주세요.</p>`; return; }
     const s = 80 / Math.max(H, 1), bx = 40, by = 100, tx = bx, ty = by - H * s, lx = bx + base * s;
-    out.innerHTML = `<div class="kc-res"><svg viewBox="0 0 200 112" class="kc-svg" aria-hidden="true"><line x1="${bx}" y1="6" x2="${bx}" y2="${by}" stroke="currentColor" stroke-width="4"/><line x1="10" y1="${by}" x2="190" y2="${by}" stroke="currentColor" stroke-width="2"/>
+    out.innerHTML = `<div class="kc-res"><svg viewBox="0 0 200 122" class="kc-svg" aria-hidden="true"><line x1="${bx}" y1="6" x2="${bx}" y2="${by}" stroke="currentColor" stroke-width="4"/><line x1="10" y1="${by}" x2="190" y2="${by}" stroke="currentColor" stroke-width="2"/>
         <line x1="${lx}" y1="${by}" x2="${tx}" y2="${ty - 0.6 * s * 0.96}" stroke="var(--amber)" stroke-width="4"/><line x1="${bx}" y1="${by + 6}" x2="${lx}" y2="${by + 6}" stroke="var(--cyan)" stroke-width="2"/>
-        <text x="${(bx + lx) / 2}" y="${by + 2 - 4}" font-size="10" text-anchor="middle" fill="var(--cyan)">${f1(base, 2)} m</text><text x="${lx + 6}" y="${by - 6}" font-size="10" fill="currentColor">75°</text></svg>
+        <text x="${(bx + lx) / 2}" y="${by + 18}" font-size="10" text-anchor="middle" fill="var(--cyan)">${f1(base, 2)} m</text><text x="${lx + 6}" y="${by - 6}" font-size="10" fill="currentColor">75°</text></svg>
       <div><div class="kc-big">${f1(base, 2)} <small>m 띄우기</small></div>${lvl("ok", "벽에서 사다리 발까지")}
       <p>필요한 사다리 길이 <b>${f1(L, 1)} m 이상</b> (걸치는 곳 위로 60cm 더)<br>닿는 높이 ${f1(H, 2)} m</p></div></div>
       <p class="kc-dim">어림셈: <b>높이 4m마다 1m</b> 띄우기 · 기울기는 75° 이하 (산업안전보건기준에 관한 규칙 제24조) · 미끄럼 방지 발판·상단 고정 확인</p>`;
