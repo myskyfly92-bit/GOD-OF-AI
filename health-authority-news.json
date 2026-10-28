@@ -1,13 +1,20 @@
 {
-  "generatedAt": "2026-10-27T00:26:01.771Z",
+  "generatedAt": "2026-10-28T00:31:58.563Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
-      "title": "여행건강알림e : HOME - Q-CODE",
-      "source": "",
+      "title": "2026년 감염병 표본감시 주간소식지 42주차",
+      "source": "질병관리청 감염병포털",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKTWN3aV9fQVZCVG45d1V3LTQyUXMwSlFEM1lGU2h6Z05hYk5FdEM4N0lTSG5QVjY4UEY4ZUU4TGtkTGM3X0lDdmxQWmdPcmVuN1FDMVpQdDZxQmc?oc=5",
-      "date": "2026-09-30T14:38:13.000Z"
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNGZYYXJPejhNZzNGRUdoWEhmQWdmZTdxTTdOZVRXaURhUnBjTWpnYWkzUXZ0MU9oYlR1aFliT1BjSUt5ZnhMNEhQWUl4SU0zZ1dCa1hzTHMxRDFLTGRlWEg5dVA0VW40QzMwSzlFTm94c2pJeGx1QUg4VHVaZFIySzdyQTZaSXdVdmNkcGdoVC1KRlhJWnFZazVON3RKMTNSY2d2TzFB?oc=5",
+      "date": "2026-10-22T10:10:37.000Z"
+    },
+    {
+      "title": "건강교육 자료실",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWWNXelJWdGpuUTdLLV9RVWxrbEJrT3BJdllfa2JBczRHRDBTWE1aVFUtRDRiS2VtZ3Z0SVU4eXRPX2ZKbUFOcUtOdDR2OFBaaVpJc0Rqd2pWQ0hOTWE5a28wWmdOX1owZFdIaDc2dU5OVi1SZHktU01KMnBCcGtyb19NSDhrdVUwNjNsbE41cXEyVENKendILVdfenUxMTlFMUdCdW92bHFsWkcySHF4Nl8weDk5aE9Bcy1PQ3NR?oc=5",
+      "date": "2026-10-27T05:34:04.000Z"
     },
     {
       "title": "감시체계 개요",
@@ -28,7 +35,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-26T11:55:02.000Z"
+      "date": "2026-10-27T11:40:10.000Z"
     },
     {
       "title": "감시체계 연보",
@@ -45,11 +52,11 @@
       "date": "2024-06-10T02:47:27.000Z"
     },
     {
-      "title": "검역관리",
+      "title": "채용공고",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9UTUhzTlh1ak5ITndXMzNDOE9wVWNyaFpTVmZMb01xcUVHLWxqcE05ZWdoc0wwdC0wemI3OThIRU1QNlNjWWFnVG1tM3RaYlpKOXNLMFpB?oc=5",
-      "date": "2026-07-13T05:36:24.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
+      "date": "2025-12-16T15:48:42.000Z"
     },
     {
       "title": "감염병 위험평가",
@@ -78,13 +85,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1peGhRZjh4aXNZLW9nZW9Lb3FGY1hEbV82d3I5WFBfdllCRUhmdXBqRTRGLXFxZXd3UWxUcXVYRFc5R29IOUM3b1ROQmdXZDVnamthWEdB?oc=5",
       "date": "2026-08-23T17:35:43.000Z"
-    },
-    {
-      "title": "글로벌보건안보(GHS)조정사무소 운영",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1oeG5ZTkxVNlZrUXdVVnptTmVMWE5MbzkteVM1ck5XbG94dzRaRTJONEVESkYtVjlLSzVka3Nrb0I5THppdmdrVjlKUXBjZU9fdDNoOWdB?oc=5",
-      "date": "2025-12-16T15:51:46.000Z"
     }
   ]
 }
