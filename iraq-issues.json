@@ -1,26 +1,183 @@
 {
-  "generatedAt": "2026-10-28T00:35:42.715Z",
+  "generatedAt": "2026-10-28T06:55:17.421Z",
   "items": [
     {
-      "title": "이라크 의회 \"한화 건설부문에 미수금 지급…나머지 공사 재개 합의안 마련해야\" By The Guru",
-      "source": "Investing.com 한국어",
-      "link": "https://kr.investing.com/news/stock-market-news/article-2144506",
-      "date": "2026-10-27T23:41:00.000Z",
-      "lang": "ko",
-      "titleKo": "이라크 의회 \"한화 건설부문에 미수금 지급…나머지 공사 재개 합의안 마련해야\" By The Guru",
-      "url": "https://kr.investing.com/news/stock-market-news/article-2144506",
+      "title": "Syrian President al-Sharaa says border with Iraq is secure — Asharq Al-Awsat",
+      "source": "UA.NEWS",
+      "link": "https://ua.news/en/dovkolo-svitu/prezident-siriyi-ash-sharaa-zaiaviv-pro-bezpeku-kordonu-z-irakom-asharq-al-awsat",
+      "date": "2026-10-28T06:46:49.000Z",
+      "lang": "en",
+      "titleKo": "시리아 대통령 알샤라, 이라크와의 국경 안전하다고 밝혀 — 아샤르크 알아우사트",
+      "url": "https://ua.news/en/dovkolo-svitu/prezident-siriyi-ash-sharaa-zaiaviv-pro-bezpeku-kordonu-z-irakom-asharq-al-awsat",
+      "body": "Syrian President Ahmad al-Sharaa said the border with Iraq is secure and that the countries coordinate on security, while discussing a planned Iraqi delegation visit and oil pipeline links.\n--> Syrian President Ahmad al-Sharaa said that the border between Syria and Iraq is completely secure and that the two countries are coordinating on security matters. In an interview with the Iraqi television channel Dijlah, he also spoke of reduced threats from the terrorist group Islamic State and claimed that no organization currently poses a danger to either state, Asharq Al-Awsat reports .\nAl-Sharaa welcomed the planned visit of Iraqi Prime Minister Ali al-Zaidi to Syria. According to Iraqi media, the head of government was expected to arrive on Wednesday at the head of a large ministerial delegation. The sides planned to discuss bilateral relations, as well as water resources, oil and trade.",
+      "bodyKo": "시리아 대통령 아흐마드 알샤라는 시리아와 이라크 간 국경이 완전히 안전하며 양국이 보안 문제에서 조율하고 있다고 밝혔다. 이라크 텔레비전 채널 디즐라와의 인터뷰에서 그는 테러 조직 이슬람국가(IS)로부터의 위협이 감소했다고 언급했으며, 현재 어떤 조직도 양국에 위협을 가하지 않는다고 주장했다고 아샤르크 알아우사트가 보도했다.\n\n알샤라는 이라크 총리 알리 알자이디의 시리아 방문 계획을 환영했다. 이라크 언론에 따르면 정부 수반은 대규모 장관급 대표단을 이끌고 수요일에 도착할 예정이었다. 양측은 양국 관계는 물론 수자원, 석유, 무역에 대해 논의할 계획이었다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "UA.NEWS"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "KRG raises concern over Baghdad’s ‘unilateral’ YBS integration scheme",
+      "source": "The New Region",
+      "link": "https://thenewregion.com/posts/6938",
+      "date": "2026-10-28T06:02:50.000Z",
+      "lang": "en",
+      "titleKo": "쿠르드자치정부, 바그다드의 '일방적' YBS 통합 계획에 우려 제기",
+      "url": "https://thenewregion.com/posts/6938",
+      "body": "“Imposing an unwanted security and administrative reality outside the legitimate institutions complicates the situation in the area further and undermines the normalization process. The only correct solution is full implementation of the Sinjar Agreement,” said the Kurdistan Regional Government's interior ministry.\nERBIL, Kurdistan Region of Iraq &ndash; The Kurdistan Region&rsquo;s interior ministry on Tuesday expressed concern over the integration of the all-Yazidi Sinjar Resistance Units (YBS) into Iraq&rsquo;s security apparatus, criticizing the implementation of an \"unwanted security and administrative reality\" and noting that the decisions had been made \"unilaterally\".\nThe YBS, affiliated with the Kurdistan Workers' Party (PKK), on Monday announced that 4,165 of their fighters will integrate into the Iraqi security apparatus, supporting Baghdad&rsquo;s broader efforts to consolidate weapons to the state ahead of an official ceremony to integrate the force.",
+      "bodyKo": "신자르 저항부대 통합 놓고 쿠르드 자치정부와 바그다드 충돌\n\n아르빌 — 쿠르드 자치정부 내무부는 화요일 이라크 보안군에 야지디족 신자르저항부대(YBS)를 통합하는 것에 우려를 표시했다. 내무부는 \"정당한 기관 밖에서 원치 않는 보안·행정 현실을 부과하는 것은 지역 상황을 더욱 복잡하게 만들고 정상화 과정을 훼손한다\"며 \"유일한 올바른 해결책은 신자르 협정의 완전한 이행\"이라고 밝혔다.\n\n쿠르디스탄노동자당(PKK) 산하 YBS는 월요일 4,165명의 전투원이 이라크 보안군에 통합될 것이라고 발표했다. 이는 공식 통합식을 앞두고 바그다드가 국가에 무기를 집중시키려는 광범위한 노력을 지원하는 것이다. 쿠르드 자치정부 내무부는 이러한 결정이 \"일방적으로\" 내려졌다고 지적했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The New Region"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Iraq seeks joint meeting between Arab states, Iran",
+      "source": "Mehr News Agency",
+      "link": "https://en.mehrnews.com/news/248981/Iraq-seeks-joint-meeting-between-Arab-states-Iran",
+      "date": "2026-10-28T04:44:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 아랍국가-이란 공동회의 추진",
+      "url": "https://en.mehrnews.com/news/248981/Iraq-seeks-joint-meeting-between-Arab-states-Iran",
+      "body": "TEHRAN, Oct. 28 (MNA) – Iraq is consulting six Arab countries and Iran on convening a joint meeting to bolster regional security, the Foreign Ministry said, adding that Baghdad welcomes a meeting between Mecca coalition states and Iran.\nIraq's Foreign Ministry said it has held consultations with the six Arab states of the region and Iran to convene a joint meeting aimed at strengthening regional security.\nThe ministry said Baghdad welcomes a meeting between the member states of the Mecca Defense Alliance and Iran, as well as ongoing efforts to achieve peace in the region, according to Al-Mayadeen.\nThe Foreign Ministry also expressed Iraq's support for economic solidarity among regional countries.",
+      "bodyKo": "테헤란, 10월 28일 (MNA) – 이라크가 지역 안보 강화를 위한 공동회의 소집을 놓고 6개 아랍국가와 이란과 협의 중이라고 외교부가 밝혔으며, 바그다드가 메카 연합 회원국과 이란 간 회의를 환영한다고 덧붙였다.\n\n이라크 외교부는 지역 6개 아랍국가와 이란과 지역 안보 강화를 목표로 하는 공동회의 소집을 위한 협의를 진행했다고 밝혔다.\n\n외교부는 바그다드가 메카 방위동맹 회원국과 이란 간 회의, 그리고 지역 평화 달성을 위한 지속적인 노력을 환영한다고 알마야딘에 따라 밝혔다.\n\n외교부는 또한 지역 국가들 간 경제 연대에 대한 이라크의 지지를 표명했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Mehr News Agency"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "بعد امتثاله للإجراءات القانونية.. القضاء العراقي يفرج عن رئيس مجلس محافظة ميسان",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D9%84%D9%82%D8%B6%D8%A7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D8%AE%D9%84%D9%8A-%D8%B3%D8%A8%D9%8A%D9%84-%D8%B1-%D9%8A%D8%B3-%D9%85%D8%AC%D9%84%D8%B3-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D9%85%D9%8A%D8%B3%D8%A7%D9%86",
+      "date": "2026-10-28T04:07:30.000Z",
+      "lang": "ar",
+      "titleKo": "법적 절차 준수 후.. 이라크 사법부, 미산 주의회 의장 석방",
+      "url": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D9%84%D9%82%D8%B6%D8%A7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D8%AE%D9%84%D9%8A-%D8%B3%D8%A8%D9%8A%D9%84-%D8%B1-%D9%8A%D8%B3-%D9%85%D8%AC%D9%84%D8%B3-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D9%85%D9%8A%D8%B3%D8%A7%D9%86",
+      "body": "أعلن المكتب الاعلامي لرئيس مجلس محافظة ميسان، اليوم الثلاثاء، أن القضاء العراقي أخلى سبيل رئيس المجلس مصطفى أدعير المحمداوي بعد امتثاله للإجراءات القانونية المختصة.\nمن جانبه أوضح مصدر مطلع لوكالة شفق نيوز، أن الإفراج عن المحمداوي تمّ بعد مثوله أمام محكمة تحقيق الكرخ على خلفية صدور أمر قبض بحقه وفق أحكام المادة 224 من قانون العقوبات العراقي رقم 111 لسنة 1969 المعدل.\nفي غضون ذلك أعرب رئيس مجلس محافظة ميسان، عن شكره للأمين العام لحركة عصائب أهل الحق قيس الخزعلي، والقضاء العراقي الذي وصفه بـ\"العادل\" على قرار اخلاء سبيله.\nوقال مصطفى المحمداوي في منشور له على مواقع التواصل الاجتماعي، إن \"ما نتحمله من ضريبة في سبيل الدفاع عن حقوق محافظتنا نعده واجبا وطنيا ومسؤولية نعتز بها\"، مشدداً على أن حقوق ميسان وأهلها أمانة في أعناقنا وسنبقى أوفياء لهذه الأمانة ومدافعين عن حقوق أبناء محافظتنا\".\nيشار إلى أن محكمة تحقيق الكرخ الثالثة، أصدرت أمس الاثنين مذكرة قبض بحق رئيس مجلس محافظة ميسان، مصطفى ادعير المحمداوي، على خلفية تهديده بالعصيان المدني وقطع الطرق، وتهديد الحكومة العراقية لإعادة فتح منفذ الشيب الحد",
+      "bodyKo": "미산 주지사 평의회 의장 대변인실, 무스타파 아드아이르 알무함마다위 의장 석방 발표\n\n미산 주지사 평의회 의장 대변인실은 지난 화요일 이라크 사법부가 법적 절차를 준수한 무스타파 아드아이르 알무함마다위 의장을 석방했다고 발표했다.\n\n한편 샤팍뉴스통신에 정통한 소식통은 알무함마다위의 석방이 카르흐 수사법원에 출석한 후 이루어졌으며, 1969년 제정된 이라크 형법 제111호 제224조에 따라 체포영장이 발부된 배경이 있었다고 설명했다.\n\n한편 미산 주지사 평의회 의장은 아사이브 아흘 알하크 운동의 사무총장 카이스 알하즈알리와 자신의 석방 결정을 내린 \"공정한\" 이라크 사법부에 감사를 표했다.\n\n무스타파 알무함마다위 의장은 소셜미디어 게시물에서 \"우리 주의 권리를 수호하기 위해 치르는 대가는 국가적 의무이자 우리가 자랑스러워하는 책임\"이라며 \"미산의 권리와 주민들의 권리는 우리 목에 걸린 신탁이며, 우리는 이 신탁에 충실하고 우리 주 주민들의 권리를 계속 수호할 것\"이라고 말했다.\n\n카르흐 제3수사법원은 지난 월요일 미산 주지사 평의회 의장 무스타파 아드아이르 알무함마다위에 대해 시민 불복종과 도로 차단을 위협하고 이라크 정부를 위협하여 알시이브 국경 통로를 재개하라고 위협한 혐의로 체포영장을 발부했다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "الأيام البحرينية",
+        "شفق نيوز"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 사법부, 미산 의회 의장 석방…셰이브 국경검문소 위기 계속",
+          "source": "الأيام البحرينية",
+          "link": "https://www.alayam.com/online/international/1149880/News.html"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "아마라(마이산)",
+        "km": 280
+      }
+    },
+    {
+      "title": "2026-10-28",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://mofa.gov.iq/sydney/?m=20261028",
+      "date": "2026-10-28T03:35:12.000Z",
+      "lang": "ar",
+      "titleKo": "2026-10-28",
+      "url": "https://mofa.gov.iq/sydney/?m=20261028",
       "body": "",
       "bodyKo": "",
       "tried": true,
       "count": 1,
       "sources": [
-        "Investing.com 한국어"
+        "وزارة الخارجية العراقية"
       ],
       "related": [],
-      "tag": "정치·선거",
+      "tag": "기타",
       "impact": {
-        "lv": "y",
-        "line": "한국·한국 기업 관련 소식 — 한국인 직원 참고",
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "وفد القنصلية العراقية في مدينة (بيرث)",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://mofa.gov.iq/sydney/?p=5464",
+      "date": "2026-10-28T03:35:12.000Z",
+      "lang": "ar",
+      "titleKo": "퍼스 주재 이라크 영사관 대표단",
+      "url": "https://mofa.gov.iq/sydney/?p=5464",
+      "body": "سعياً من القنصلية العراقية العامة في سيدني الهادفة الى تسهيل تقديم الخدمات القنصلية لأبناء الجالية العراقية الكريمة في ولاية غرب استراليا (بيرث) ولتقليل عناء السفر وتكاليفه .\nتتشرف القنصلية اعلامكم بنيتها ارسال وفد قنصلي الى ولاية بيرث لمدة ثلاثة ايام، للمدة من (20 الى 22/11/2026).\nوحسب الخطوات الموضحة في ادناه، ليتسنى للوفد الذي سيزور ولاية بيرث اكمال كافة المعاملات بسهولة وانسيابية.\nسيتم فتح الحجز الالكتروني تحديداً لأبناء الجالية في (بيرث) (جولات قنصلية) (Consulate Tours) اعتباراً من تأريخ 30/10/2026 لغرض الحجز حصراً لفترة الايفاد المحدودة (20 21 و22/11/2026)، وكما موضح في صفحة آلية الحجز .\nساعات العمل : من الساعة 9:00 صباحاً وحتى الساعه 3:00 بعد الظهر .",
+      "bodyKo": "시드니 이라크 총영사관, 퍼스 출장 영사 서비스 제공\n\n시드니 이라크 총영사관은 서호주(퍼스) 거주 이라크 교민들의 영사 서비스 이용 편의를 도모하고 여행 부담과 비용을 줄이기 위해 퍼스 지역으로 영사 출장단을 파견할 계획임을 알려드린다.\n\n영사관은 2026년 11월 20일부터 22일까지 3일간 퍼스 주로 영사 출장단을 파견할 예정이다.\n\n아래의 절차에 따라 퍼스를 방문할 출장단이 모든 업무를 원활하게 처리할 수 있도록 하고 있다.\n\n퍼스 거주 교민을 대상으로 한 전자 예약이 2026년 10월 30일부터 개시된다. 제한된 출장 기간(2026년 11월 20일, 21일, 22일)에 한해 예약(영사 투어)을 받으며, 예약 절차 페이지에 상세히 안내되어 있다.\n\n업무 시간: 오전 9시부터 오후 3시까지",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وزارة الخارجية العراقية"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "'Iran out' chant revives clash over who speaks for Iraqi protesters",
+      "source": "Amwaj.media",
+      "link": "https://amwaj.media/en/media-monitor/tishreens-iran-out-chant-revives-fight-over-who-speaks-for-protesters",
+      "date": "2026-10-28T02:48:20.000Z",
+      "lang": "en",
+      "titleKo": "이란 규탄 구호, 이라크 시위대 대변자 논쟁 재점화",
+      "url": "https://amwaj.media/en/media-monitor/tishreens-iran-out-chant-revives-fight-over-who-speaks-for-protesters",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Amwaj.media"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
         "act": "",
         "place": "",
         "km": null
@@ -30,23 +187,27 @@
       "title": "دوى انفجارات في بغداد ناتج عن التصدى لمسيرة مجهولة",
       "source": "اليوم السابع",
       "link": "https://www.youm7.com/story/2026/10/28/%D8%AF%D9%88%D9%89-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%86%D8%A7%D8%AA%D8%AC-%D8%B9%D9%86-%D8%A7%D9%84%D8%AA%D8%B5%D8%AF%D9%89-%D9%84%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D9%85%D8%AC%D9%87%D9%88%D9%84%D8%A9/7596459",
-      "date": "2026-10-27T23:00:00.000Z",
+      "date": "2026-10-28T02:30:00.000Z",
       "lang": "ar",
       "titleKo": "바그다드에서 정체불명 드론 격격 중 폭발음 발생",
       "url": "https://www.youm7.com/story/2026/10/28/%D8%AF%D9%88%D9%89-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%86%D8%A7%D8%AA%D8%AC-%D8%B9%D9%86-%D8%A7%D9%84%D8%AA%D8%B5%D8%AF%D9%89-%D9%84%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D9%85%D8%AC%D9%87%D9%88%D9%84%D8%A9/7596459",
       "body": "أفادت وسائل إعلام عراقية الثلاثاء، بسماع دوي انفجارات في مناطق وسط وجنوب العاصمة بغداد، وقالت خلية الإعلام الأمني إن الأصوات ناتجة عن التصدي لـ\"مسيرة مجهولة\".\nوقال رئيس الخلية الفريق سعد معن، إن \"دوي الانفجارات التي سمعت قبل قليل في عدد من مناطق العاصمة العراقية، ناتج عن معالجة لطائرة مسيرة في محيط أطراف المنطقة الخضراء وسط العاصمة بغداد\".\nوأضاف أن \"الطائرة مجهولة الهوية وتم معالجتها\"، مشيرا إلى أن \"التحقيقات جارية بشان الموضوع\".\nوقالت مصادر إعلامية نقلا شرطة بغداد إنه جرى إسقاط طائرتين مسيرتين لا تحملان متفجرات قرب المنطقة الخضراء.\nوفي هذا السياق، نقلت وكالة \"السومرية\" عن مصدر أمني تأكيده \"إطلاق صافرات الإنذار داخل السفارة الأمريكية في بغداد\".",
       "bodyKo": "**바그다드 중심부에서 무인기 격추...녹지지역 근처**\n\n이라크 언론은 화요일 바그다드 중심부와 남부 지역에서 폭발음이 들렸다고 보도했으며, 보안 미디어실은 이 소리가 \"정체불명 무인기\"에 대한 대응 결과라고 밝혔다.\n\n보안 미디어실 실장 사드 무안 준장은 \"얼마 전 이라크 수도의 여러 지역에서 들린 폭발음은 바그다드 중심부 녹지지역 주변에서 무인기를 격추한 결과\"라고 말했다.\n\n그는 \"정체불명의 무인기가 격추됐다\"며 \"현재 이 사건에 대한 조사가 진행 중\"이라고 덧붙였다.\n\n언론 소식통들은 바그다드 경찰을 인용해 녹지지역 근처에서 폭발물을 탑재하지 않은 무인기 2대가 격추됐다고 전했다.\n\n이와 관련해 수메리야 통신은 보안 소식통을 인용해 바그다드 미국 대사관 내에서 \"경보 사이렌이 울렸다\"고 확인했다고 보도했다.",
       "tried": true,
-      "count": 9,
+      "count": 5,
       "sources": [
+        "جريدة الدستور",
         "اليوم السابع",
         "صوت الإمارات",
         "وكالة موازين نيوز",
-        "جريدة الغد",
-        "هذا اليوم",
-        "تطبيق نبض"
+        "جريدة الغد"
       ],
       "related": [
+        {
+          "titleKo": "긴급.. 바그다드에서 정체불명 드론 격퇴로 인한 폭발음 발생",
+          "source": "جريدة الدستور",
+          "link": "https://www.dostor.org/5755019"
+        },
         {
           "titleKo": "이라크, 바그다드 그린존 인근에서 정체불명 드론 격추했다고 발표",
           "source": "صوت الإمارات",
@@ -61,16 +222,6 @@
           "titleKo": "정체불명 드론 격격 후 바그다드에서 폭발음",
           "source": "جريدة الغد",
           "link": "https://news.google.com/rss/articles/CBMiswNBVV95cUxNTjllVDloV0QxRkRpYUUwVDAwTDVQbk40YXNpYXE3eGY4cXpUdnlwaDBxc29Nb1hZM3dZZG1HUHE3Zi0wTW11SHlDLXdRVVRkNXVxVlBuV2Q1WmVVRmVibVFpZ09pX3gyT2xVcDJzY2p2Mm1VeExGRG9HWXN4TVlUNXo4Z2plQUQ2d29Yd2twTC02WUhqMTM5Z3hrVldybEtYanF0ZkQ1anVTT1Z3UnkxZGdHNTR5R3lNUnVrMFVQZ1FPazFVXzZKTGNvV2hVRDNPUnhpV1VIbTBEdjdoNU53Q3hDZGY3S05wSExHSUN3UUNIT0FOTWI0UTRuNUtuN05TTW5rRFROd0c0VE1fdmQzbEk3REU1TEd2Tk5sZ21LdG9FdW1NaXpCZ0tWMjNtdkZMVzBuamlSVmVBS002Zk96bm45X0ROcy1NOWZRSTlKeWNzRHVyMXVXNTNlelFzdmNJRTZUV0YyZXVHLWQ5TGQ4Y3Azanp6MDNla091NDZ5WTJKQmJNMDFUNEtFb1ExT0tpTFJHWUFBcVpubktES2tybXB6eTN0R2Nwb2taMHpvVTh2dTA?oc=5"
-        },
-        {
-          "titleKo": "바그다드에서 '정체불명 무인기' 격퇴로 폭발음 발생",
-          "source": "هذا اليوم",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE85ek9aNXlpakVzcnA2TEltU3ZOSGU0cVp0NkFnbjhGdVlzZ3lHdS1ramV3bE9VdkJ0S3hEaU9MQWlDa1pUWERkWEM1YXRnYjMy0gFKQVVfeXFMT1RrWlRyOFNhMWU3X2J3SEF2TFJyZTNidW8tQXE3TDZNRzlGYW1Ldjh0aVo1UWpON0FMRndVWGhSX1pfRndRYnpZRkE?oc=5"
-        },
-        {
-          "titleKo": "러시아투데이 / 바그다드에서 \"정체불명 무인기\" 격퇴로 인한 폭발음",
-          "source": "تطبيق نبض",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0tNU8tejhlWHVodEJnUWdBSGw4MTFKcUxXLUpYUi1KMnJUZmUzLVNVU215cWgzX3BNSEloNTBTRWNfdDAwdmVDVzVmUFhpUlk?oc=5"
         }
       ],
       "tag": "치안·테러",
@@ -80,6 +231,132 @@
         "act": "",
         "place": "바그다드",
         "km": 27
+      }
+    },
+    {
+      "title": "Iraq sentences seven French nationals to prison for belonging to Islamic State",
+      "source": "Yahoo News Canada",
+      "link": "https://sg.news.yahoo.com/iraq-sentences-seven-french-nationals-183224976.html",
+      "date": "2026-10-28T02:07:37.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 이슬람국가 가입 혐의 프랑스 국민 7명에 징역형 선고",
+      "url": "https://sg.news.yahoo.com/iraq-sentences-seven-french-nationals-183224976.html",
+      "body": "The men were deemed \"particularly dangerous because of their role in threatening Iraq's national security, destabilising Iraq and Syria, and their involvement in inciting terrorist operations in other...\nAn Iraqi court sentenced seven French nationals to prison on Tuesday for belonging to the Islamic State group.\nIraq's Supreme Judicial Council sentenced Lakhdar Sebouai, Adel Bou Aoun, Anas Abdul Rahman, Ziad Ahmad, Mehdi Sida and Benjamin Van Han to life imprisonment, which under Iraqi law is equivalent to 20 years.\nThe seventh defendant, Amza Benabed, 24, was given a 15-year prison term. They now have 30 days to lodge an appeal.\nUnder Iraqi law, decisions handed down by criminal courts are also subject to review by the Court of Cassation, whether or not the defendant has filed an appeal.\nThe seven men were deemed \"particularly dangerous because of their role in threatening Iraq's national security, destabilising Iraq and Syria, and their involvement in inciting terrorist operations i",
+      "bodyKo": "이라크 법원, 이슬람국가(IS) 가입 혐의 프랑스인 7명에 징역형\n\n이라크 대법원은 화요일 이슬람국가 조직에 가입한 혐의로 프랑스 국적자 7명에게 징역형을 선고했다.\n\n라크다르 세부아이, 아델 부 아운, 아나스 압둘 라흐만, 지야드 아흐마드, 메디 시다, 벤자민 반 한은 무기징역을 선고받았으며, 이라크 법에 따르면 무기징역은 20년에 해당한다.\n\n일곱 번째 피고인 24세의 암자 베나베드는 15년의 징역형을 받았다. 그들은 이제 항소를 제기할 30일의 시간을 갖게 된다.\n\n이라크 법에 따르면 형사법원이 내린 판결은 피고인이 항소를 제기했는지 여부와 관계없이 파기원의 재심 대상이 된다.\n\n일곱 명의 남성들은 이라크의 국가안보를 위협하고 이라크와 시리아를 불안정하게 하며 다른 지역에서의 테러 작전 선동에 연루된 역할로 인해 \"특히 위험한\" 것으로 판단됐다.",
+      "tried": true,
+      "count": 4,
+      "sources": [
+        "ETV Bharat",
+        "Yahoo News Canada",
+        "Le Monde.fr",
+        "myMotherLode.com"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 법원, 이슬람국가 가입 혐의로 프랑스 국민 7명에 장기 징역형 선고",
+          "source": "ETV Bharat",
+          "link": "https://www.etvbharat.com/en/international/an-iraqi-court-sentences-7-french-citizens-to-lengthy-prison-terms-over-islamic-state-membership-enn26102800635"
+        },
+        {
+          "titleKo": "이라크 법원, IS 가입 혐의 프랑스 국민 투옥",
+          "source": "Le Monde.fr",
+          "link": "https://www.lemonde.fr/en/international/article/2026/10/27/iraqi-court-jails-french-nationals-for-belonging-to-is_6765411_4.html"
+        },
+        {
+          "titleKo": "이라크 법원, 이슬람국가 가입 혐의로 프랑스 국민 7명에 장기 징역형 선고",
+          "source": "myMotherLode.com",
+          "link": "https://www.washingtonpost.com/world/2026/10/27/iraq-french-citizens-islamic-state-sentenced/ceef05b4-d1fe-11f1-9931-2a41b76fc976_story.html"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Vessel on fire off Iraq’s coast as Gulf security concerns grow",
+      "source": "Shipping Telegraph",
+      "link": "https://shippingtelegraph.com/ship-accidents/vessel-on-fire-off-iraqs-coast-as-gulf-security-concerns-grow/",
+      "date": "2026-10-28T01:56:57.000Z",
+      "lang": "en",
+      "titleKo": "이라크 해역 선박 화재, 걸프만 보안 우려 고조",
+      "url": "https://shippingtelegraph.com/ship-accidents/vessel-on-fire-off-iraqs-coast-as-gulf-security-concerns-grow/",
+      "body": "The United Kingdom Maritime Trade Operations (UKMTO) Centre issued a warning on Monday after receiving multiple third-party",
+      "bodyKo": "죄송하지만, 제공하신 뉴스 본문이 완전하지 않습니다. \"after receiving multiple third-party\"에서 끝나 있어 전체 내용을 파악할 수 없습니다.\n\n완전한 뉴스 본문을 제공해 주시면 한국어로 번역해 드리겠습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Shipping Telegraph"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "이라크 의회 \"한화 건설부문에 미수금 지급…나머지 공사 재개 합의안 마련해야\"",
+      "source": "더구루",
+      "link": "https://theguru.co.kr/news/article.html?no=108908",
+      "date": "2026-10-27T23:41:00.000Z",
+      "lang": "ko",
+      "titleKo": "이라크 의회 \"한화 건설부문에 미수금 지급…나머지 공사 재개 합의안 마련해야\"",
+      "url": "https://theguru.co.kr/news/article.html?no=108908",
+      "body": "[더구루=홍성환 기자] 한화 건설부문에 비스마야 신도시 사업의 미수금 일부가 지급된 가운데 이라크 의회가 현지 정부에 공사를 재개하기 위한 새로운 합의안 마련을 촉구했다. 비스마야 신도시 사업의 정상화가 속도를 낼지 주목된다. 이라크 의회 투자개발위원회 소속 수잔 알사드 의원은 27일(이하 현지시간) 현지 매체\n이어 \"1억1000만 달러(약 1500억원) 규모의 미수금 1차분이 한화 건설부문에 지급됐으며, 나머지 2차분 1억1000만 달러는 6개월 후 지급될 예정\"이라고 설명했다. <본보 2026년 10월 19일자 참고 : [단독] 한화, 이라크서 떼인 돈 1500억 먼저 받기로...\"철수하겠다\" 배수의 진 통해>\n또 사업 재개와 관련해서는 \"이라크 내각이 새로운 합의안을 마련하고, 한화 건설부문과 비스마야 신도시 사업을 지속하기 위한 공식 계약을 체결해야 한다\"고 말했다.\n한화 건설부문은 현재까지 3만 가구를 준공했고, 이라크 정부의 승인과 미수금 지급이 완료되면 나머지 7만 가구 공사도 재개할 계획이다.\n한화 건설부문은 비스마야 신도시 사업의 미수금 지급이 장기간 지연됨에 따라 이번 달 15일부로 현지인 직원 전원을 해고할 계획이었다. 사실상 사업 철수 의사를 밝힌 셈이다. 다만 이라크 정부가 미수금을 지급하기로 하면서 직원 해고를 잠정 보류했다. 이에 따라 사업이 정상화될 전망이다. <본보 2026년 10월 16일자 참고 : 한화, 이라크 비스마야 철수할 뻔한 '현지 직원 해고' 피했다>\n이라크 비스마야 신도시 프로젝트는 수도 바그다드에서 남동쪽으로 10㎞ 떨어진 비스마야 지역에 10만 가구 규모의 신도시를 건설하는 사업이다. 사업비는 총 101억2000만 달러(약 14조원)로, 국내 기업의 단일 해외 건설 수주 및 신도시 수출 사례 중 역대 최대 규모다.",
+      "bodyKo": "[더구루=홍성환 기자] 한화 건설부문에 비스마야 신도시 사업의 미수금 일부가 지급된 가운데 이라크 의회가 현지 정부에 공사를 재개하기 위한 새로운 합의안 마련을 촉구했다. 비스마야 신도시 사업의 정상화가 속도를 낼지 주목된다. 이라크 의회 투자개발위원회 소속 수잔 알사드 의원은 27일(이하 현지시간) 현지 매체\n이어 \"1억1000만 달러(약 1500억원) 규모의 미수금 1차분이 한화 건설부문에 지급됐으며, 나머지 2차분 1억1000만 달러는 6개월 후 지급될 예정\"이라고 설명했다. <본보 2026년 10월 19일자 참고 : [단독] 한화, 이라크서 떼인 돈 1500억 먼저 받기로...\"철수하겠다\" 배수의 진 통해>\n또 사업 재개와 관련해서는 \"이라크 내각이 새로운 합의안을 마련하고, 한화 건설부문과 비스마야 신도시 사업을 지속하기 위한 공식 계약을 체결해야 한다\"고 말했다.\n한화 건설부문은 현재까지 3만 가구를 준공했고, 이라크 정부의 승인과 미수금 지급이 완료되면 나머지 7만 가구 공사도 재개할 계획이다.\n한화 건설부문은 비스마야 신도시 사업의 미수금 지급이 장기간 지연됨에 따라 이번 달 15일부로 현지인 직원 전원을 해고할 계획이었다. 사실상 사업 철수 의사를 밝힌 셈이다. 다만 이라크 정부가 미수금을 지급하기로 하면서 직원 해고를 잠정 보류했다. 이에 따라 사업이 정상화될 전망이다. <본보 2026년 10월 16일자 참고 : 한화, 이라크 비스마야 철수할 뻔한 '현지 직원 해고' 피했다>\n이라크 비스마야 신도시 프로젝트는 수도 바그다드에서 남동쪽으로 10㎞ 떨어진 비스마야 지역에 10만 가구 규모의 신도시를 건설하는 사업이다. 사업비는 총 101억2000만 달러(약 14조원)로, 국내 기업의 단일 해외 건설 수주 및 신도시 수출 사례 중 역대 최대 규모다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Investing.com 한국어",
+        "더구루"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 의회 \"한화 건설부문에 미수금 지급…나머지 공사 재개 합의안 마련해야\" By The Guru",
+          "source": "Investing.com 한국어",
+          "link": "https://kr.investing.com/news/stock-market-news/article-2144506"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "y",
+        "line": "한국·한국 기업 관련 소식 — 한국인 직원 참고",
+        "act": "",
+        "place": "비스마야",
+        "km": 0
+      }
+    },
+    {
+      "title": "Ouster of Iraqi intelligence chief shows Zaidi ‘clearing the decks’: Analyst",
+      "source": "Rudaw",
+      "link": "https://www.rudaw.net/english/categories/iraq/1079917",
+      "date": "2026-10-27T23:28:53.000Z",
+      "lang": "en",
+      "titleKo": "이라크 정보기관장 경질, 자이디 '판 정리' 보여줘: 분석가",
+      "url": "https://www.rudaw.net/english/categories/iraq/1079917",
+      "body": "Iraqi Prime Minister Ali al-Zaidi’s decision to remove Iraqi National Intelligence Service (INIS) chief Hamid al-Shatri on Monday is an effort by the premier to consolidate control over the country's",
+      "bodyKo": "이라크 총리 알리 알자이디가 월요일 이라크국가정보국(INIS) 국장 하미드 알샤트리를 해임한 결정은 총리가 국가의 통제권을 강화하려는 노력이다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
       }
     },
     {
@@ -108,54 +385,10 @@
       }
     },
     {
-      "title": "Iraq sentences seven French nationals to prison for belonging to Islamic State",
-      "source": "Yahoo News Singapore",
-      "link": "https://sg.news.yahoo.com/iraq-sentences-seven-french-nationals-183224976.html",
-      "date": "2026-10-27T21:29:47.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 이슬람국가 가입 혐의 프랑스 국민 7명에 징역형 선고",
-      "url": "https://sg.news.yahoo.com/iraq-sentences-seven-french-nationals-183224976.html",
-      "body": "The men were deemed \"particularly dangerous because of their role in threatening Iraq's national security, destabilising Iraq and Syria, and their involvement in inciting terrorist operations in other...\nAn Iraqi court sentenced seven French nationals to prison on Tuesday for belonging to the Islamic State group.\nIraq's Supreme Judicial Council sentenced Lakhdar Sebouai, Adel Bou Aoun, Anas Abdul Rahman, Ziad Ahmad, Mehdi Sida and Benjamin Van Han to life imprisonment, which under Iraqi law is equivalent to 20 years.\nThe seventh defendant, Amza Benabed, 24, was given a 15-year prison term. They now have 30 days to lodge an appeal.\nUnder Iraqi law, decisions handed down by criminal courts are also subject to review by the Court of Cassation, whether or not the defendant has filed an appeal.\nThe seven men were deemed \"particularly dangerous because of their role in threatening Iraq's national security, destabilising Iraq and Syria, and their involvement in inciting terrorist operations i",
-      "bodyKo": "이라크 법원, 이슬람국가(IS) 가입 혐의 프랑스인 7명에 징역형\n\n이라크 대법원은 화요일 이슬람국가 조직에 가입한 혐의로 프랑스 국적자 7명에게 징역형을 선고했다.\n\n라크다르 세부아이, 아델 부 아운, 아나스 압둘 라흐만, 지야드 아흐마드, 메디 시다, 벤자민 반 한은 무기징역을 선고받았으며, 이라크 법에 따르면 무기징역은 20년에 해당한다.\n\n일곱 번째 피고인 24세의 암자 베나베드는 15년의 징역형을 받았다. 그들은 이제 항소를 제기할 30일의 시간을 갖게 된다.\n\n이라크 법에 따르면 형사법원이 내린 판결은 피고인이 항소를 제기했는지 여부와 관계없이 파기원의 재심 대상이 된다.\n\n일곱 명의 남성들은 이라크의 국가안보를 위협하고 이라크와 시리아를 불안정하게 하며 다른 지역에서의 테러 작전 선동에 연루된 역할로 인해 \"특히 위험한\" 것으로 판단됐다.",
-      "tried": true,
-      "count": 4,
-      "sources": [
-        "The Washington Post",
-        "Yahoo News Singapore",
-        "Euronews.com",
-        "Le Monde.fr"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 법원, 이슬람국가 가입 혐의로 프랑스 국민 7명에 장기 징역형 선고",
-          "source": "The Washington Post",
-          "link": "https://www.washingtonpost.com/world/2026/10/27/iraq-french-citizens-islamic-state-sentenced/ceef05b4-d1fe-11f1-9931-2a41b76fc976_story.html"
-        },
-        {
-          "titleKo": "이라크, 이슬람국가 가입 혐의 프랑스 국민 7명에 징역형 선고",
-          "source": "Euronews.com",
-          "link": "https://www.euronews.com/2026/10/27/iraq-sentences-seven-french-nationals-to-prison-for-belonging-to-islamic-state"
-        },
-        {
-          "titleKo": "이라크 법원, IS 가입 혐의 프랑스 국민 투옥",
-          "source": "Le Monde.fr",
-          "link": "https://www.lemonde.fr/en/international/article/2026/10/27/iraqi-court-jails-french-nationals-for-belonging-to-is_6765411_4.html"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "Iraq in ‘ongoing’ talks over ‘6+2’ regional security plan with GCC, Iran: FM",
       "source": "Rudaw",
       "link": "https://rudaw.net/english/categories/iraq/1079919",
-      "date": "2026-10-27T21:24:11.000Z",
+      "date": "2026-10-27T21:22:44.000Z",
       "lang": "en",
       "titleKo": "이라크, GCC·이란과 '6+2' 지역안보계획 협상 진행 중: 외교부장관",
       "url": "https://rudaw.net/english/categories/iraq/1079919",
@@ -212,11 +445,17 @@
       "body": "Shafaq News- Dhi QarIraqi security forces arrested the head of the Encroachments Department at Nasiriyah Municipality on Tuesday while he was allegedly accepting a 10 million Iraqi dinar (about $6,623\nThe source said security personnel, accompanied by a team from Iraq's Commission of Integrity (CoI), the country&rsquo;s anti-corruption watchdog, detained the official during the alleged transaction.",
       "bodyKo": "샤팍뉴스- 디카르\n\n이라크 보안군이 화요일 나시리야 시청 불법점거부 부장을 체포했다. 그는 약 663만 3천 달러(이라크 디나르 1천만)를 받아들이고 있었던 것으로 알려졌다.\n\n소식통은 보안요원들이 이라크 청렴위원회(CoI) 팀과 함께 해당 거래 중 이 관리를 구금했다고 말했다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "뇌물 혐의로 이라크 지방자치단체 관계자 체포",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/society/Iraqi-municipal-official-arrested-over-bribery-allegation"
+        }
+      ],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -230,44 +469,25 @@
       "title": "Iraqi lawmaker challenges al-Sudani to explain national debt",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/en/Iraq/Iraqi-lawmaker-challenges-al-Sudani-to-explain-national-debt",
-      "date": "2026-10-27T20:30:25.000Z",
+      "date": "2026-10-27T20:32:03.000Z",
       "lang": "en",
       "titleKo": "이라크 의원, 알-수다니 총리에 국가채무 설명 촉구",
       "url": "https://shafaq.com/en/Iraq/Iraqi-lawmaker-challenges-al-Sudani-to-explain-national-debt",
       "body": "Shafaq News- Baghdad Iraqi lawmaker Youssef al-Kalabi on Tuesday challenged former Prime Minister Mohammed Shia al-Sudani to appear before parliament and explain Iraq&rsquo;s debt, after al-Kilabi wa\nAl-Kalabi argued that the three-year budget approved under al-Sudani&rsquo;s government was intended to fund a major development drive but was sidelined for a year and a half. He also claimed that Iraq&rsquo;s debt had reached 208 trillion dinars (about $136.8B) and said his referral to the parliamentary conduct committee was a response to his remarks.\nThe lawmaker raised several issues concerning al-Sudani&rsquo;s government, including exemptions, investments, debt, and the alleged use of his office for electoral purposes. He stressed that his comments targeted al-Sudani in his capacity as former prime minister, not the Construction and Development bloc or its lawmakers.",
       "bodyKo": "**전직 총리에 이라크 빚 설명 요구…의원 도전장**\n\n샤팍뉴스-바그다드 이라크 의원 유세프 알칼라비가 화요일 전직 총리 무함마드 시아 알수다니에게 의회에 출석해 이라크의 빚에 대해 설명할 것을 촉구했다.\n\n알칼라비는 알수다니 정부 하에서 승인된 3년 예산이 대규모 개발사업 추진을 위해 마련됐으나 1년 반 동안 미루어졌다고 주장했다. 그는 또한 이라크의 빚이 2,080조 디나르(약 1,368억 달러)에 달했다고 주장했으며, 자신이 의회 윤리위원회에 회부된 것은 자신의 발언에 대한 보복이라고 말했다.\n\n의원은 알수다니 정부와 관련해 면제, 투자, 빚, 그리고 공직을 선거 목적으로 악용했다는 의혹 등 여러 문제를 제기했다. 그는 자신의 발언이 건설개발블록이나 그 의원들을 겨냥한 것이 아니라 전직 총리로서의 알수다니를 겨냥한 것이라고 강조했다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Ouster of Iraqi intelligence chief shows Zaidi ‘clearing the decks’: Analyst",
-      "source": "Rudaw",
-      "link": "https://www.rudaw.net/english/categories/iraq/1079917",
-      "date": "2026-10-27T20:28:53.000Z",
-      "lang": "en",
-      "titleKo": "이라크 정보기관장 경질, 자이디 '판 정리' 보여줘: 분석가",
-      "url": "https://www.rudaw.net/english/categories/iraq/1079917",
-      "body": "Iraqi Prime Minister Ali al-Zaidi’s decision to remove Iraqi National Intelligence Service (INIS) chief Hamid al-Shatri on Monday is an effort by the premier to consolidate control over the country's",
-      "bodyKo": "이라크 총리 알리 알자이디가 월요일 이라크국가정보국(INIS) 국장 하미드 알샤트리를 해임한 결정은 총리가 국가의 통제권을 강화하려는 노력이다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Rudaw"
+      "related": [
+        {
+          "titleKo": "이라크 의원, 알-수다니 총리에 국가채무 설명 촉구",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Iraq/Iraqi-lawmaker-challenges-al-Sudani-to-explain-national-debt"
+        }
       ],
-      "related": [],
-      "tag": "기타",
+      "tag": "정치·선거",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -293,6 +513,31 @@
       ],
       "related": [],
       "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "카타르기업인협회, 세계투자포럼 2026에서 이라크·레바논·홍콩 당국자와 회동 - 뉴스 및 통계",
+      "source": "IndexBox",
+      "link": "https://www.indexbox.io/ko/blog/qatari-businessmen-association-discusses-trade-and-investment-ties-with-iraq-lebanon-and-hong-kong/",
+      "date": "2026-10-27T19:21:25.000Z",
+      "lang": "ko",
+      "titleKo": "카타르기업인협회, 세계투자포럼 2026에서 이라크·레바논·홍콩 당국자와 회동",
+      "url": "https://www.indexbox.io/ko/blog/qatari-businessmen-association-discusses-trade-and-investment-ties-with-iraq-lebanon-and-hong-kong/",
+      "body": "카타르기업인협회(QBA) 지도부는 도하에서 열린 제9차 세계투자포럼 2026에서 이라크, 레바논, 홍콩의 통상 당국자들을 만나 무역·투자 관계 강화와 공동 프로젝트, 역내 허브로서 카타르의 역할을 논의했다.\n카타르 통신(QNA) 보도에 따르면 카타르기업인협회(QBA)는 이라크, 레바논, 홍콩 대표들과 논의를 진행하며 상업·투자 연계 확대와 공동 프로젝트 개발 가능성을 검토했다. 도하에서 열린 제9차 세계투자포럼 2026과 함께 마련된 이 회담은 협회 이사회 의장인 셰이크 파이살 빈 카심 알타니 각하가 주재했다.\n상대측으로는 무스타파 니자르 알아니 이라크 통상부 장관, 아메르 비사트 레바논 경제통상부 장관, 그리고 중화인민공화국 홍콩특별행정구의 무역발전협의회 를 이끄는 프레더릭 마 교수가 참석했다.\n회담에서는 무역·투자 관계 확대, 개발 계획에 대한 카타르 기업의 참여 확대, 카타르와 이들 3개 시장을 잇는 비즈니스 파트너십 구축 방안이 다뤄졌다. 협력 가능 분야로는 산업, 인프라, 에너지, 농업, 식량 안보, 물류, 기술, 식품 제조, 관광, 금융 서비스, 혁신, 중소기업 등이 거론됐다.\n참석자들은 양방향 투자 확대 방안과 기업인·기업 간 연결 심화, 투자 전망과 규제 환경, 기존 인센티브에 관한 정보 공유 방안도 검토했다.\n협회는 카타르의 현대적 인프라와 투자자 친화적 환경, 전략적 지리적 위치를 강조하며, 걸프와 인근 시장으로 진출하려는 아시아 기업에 카타르가 역내 관문이 될 수 있다고 평가했다.\n셰이크 파이살 각하는 포럼에 협회가 참석한 것이 글로벌 경제 관계를 넓히고 아랍·아시아 및 전 세계 시장에서 지속적인 파트너십을 구축하려는 카타르 민간 부문의 의지를 보여주는 것이라고 설명했다. 그는 대화와 초기 양해 단계를 넘어 구체적인 투자 기회를 발굴하고 합작 투자를 출범시키며 투자자 간 직접적 연계를 심화할 필요성을 강조했다.",
+      "bodyKo": "카타르기업인협회(QBA) 지도부는 도하에서 열린 제9차 세계투자포럼 2026에서 이라크, 레바논, 홍콩의 통상 당국자들을 만나 무역·투자 관계 강화와 공동 프로젝트, 역내 허브로서 카타르의 역할을 논의했다.\n카타르 통신(QNA) 보도에 따르면 카타르기업인협회(QBA)는 이라크, 레바논, 홍콩 대표들과 논의를 진행하며 상업·투자 연계 확대와 공동 프로젝트 개발 가능성을 검토했다. 도하에서 열린 제9차 세계투자포럼 2026과 함께 마련된 이 회담은 협회 이사회 의장인 셰이크 파이살 빈 카심 알타니 각하가 주재했다.\n상대측으로는 무스타파 니자르 알아니 이라크 통상부 장관, 아메르 비사트 레바논 경제통상부 장관, 그리고 중화인민공화국 홍콩특별행정구의 무역발전협의회 를 이끄는 프레더릭 마 교수가 참석했다.\n회담에서는 무역·투자 관계 확대, 개발 계획에 대한 카타르 기업의 참여 확대, 카타르와 이들 3개 시장을 잇는 비즈니스 파트너십 구축 방안이 다뤄졌다. 협력 가능 분야로는 산업, 인프라, 에너지, 농업, 식량 안보, 물류, 기술, 식품 제조, 관광, 금융 서비스, 혁신, 중소기업 등이 거론됐다.\n참석자들은 양방향 투자 확대 방안과 기업인·기업 간 연결 심화, 투자 전망과 규제 환경, 기존 인센티브에 관한 정보 공유 방안도 검토했다.\n협회는 카타르의 현대적 인프라와 투자자 친화적 환경, 전략적 지리적 위치를 강조하며, 걸프와 인근 시장으로 진출하려는 아시아 기업에 카타르가 역내 관문이 될 수 있다고 평가했다.\n셰이크 파이살 각하는 포럼에 협회가 참석한 것이 글로벌 경제 관계를 넓히고 아랍·아시아 및 전 세계 시장에서 지속적인 파트너십을 구축하려는 카타르 민간 부문의 의지를 보여주는 것이라고 설명했다. 그는 대화와 초기 양해 단계를 넘어 구체적인 투자 기회를 발굴하고 합작 투자를 출범시키며 투자자 간 직접적 연계를 심화할 필요성을 강조했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "IndexBox"
+      ],
+      "related": [],
+      "tag": "기타",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -446,38 +691,6 @@
       }
     },
     {
-      "title": "Former Iraqi PM’s bloc ends boycott after MP referred to ethics panel",
-      "source": "Rudaw",
-      "link": "https://rudaw.net/english/categories/iraq/1079915",
-      "date": "2026-10-27T18:17:46.000Z",
-      "lang": "en",
-      "titleKo": "전직 이라크 총리 진영, 의원 윤리위원회 회부 후 보이콧 해제",
-      "url": "https://rudaw.net/english/categories/iraq/1079915",
-      "body": "The head of former Iraqi premier Mohammed Shia al-Sudani’s Reconstruction and Development Coalition’s (RDC) bloc said Tuesday that it is resuming parliamentary sessions after lawmaker Yousef al-Kalabi",
-      "bodyKo": "이전 이라크 총리 무함마드 시아 알수다니의 재건개발연합(RDC) 블록 지도자는 화요일 의원 유세프 알칼라비 이후 의회 회의를 재개한다고 밝혔다",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "Rudaw",
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "알수다니 블록 보이콧 후 이라크 의원 행동위원회에 회부",
-          "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZzAtOXlFd195YlZWVmY3bk9RQVNlZWVUVnBmaWI0Zm10eEpQd2xxUzVMNHVJSGRmaTBGX0hSSGRlbFhjOGdVNVBaMmRUdFNWVm9DbzlqTGtYVjJ2Mk9OMTdSQVBQTTB2dFhYVldTU0x2MnFkdmctOWNKOGdMUUVRQ2syRVl2dnFvZjJjUElPajlkeXVJd3dfanJB?oc=5"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "Iraq’s general budget to exceed $300 billion in 2032",
       "source": "IraqiNews",
       "link": "https://www.iraqinews.com/iraq/iraqs-general-budget-to-exceed-300-billion-in-2032/",
@@ -497,7 +710,7 @@
         {
           "titleKo": "이라크, 2032년 예산 3000억 달러로 증액 예상",
           "source": "العربية",
-          "link": "https://news.google.com/rss/articles/CBMitANBVV95cUxNa09JZElOMG1MTjNRY05OcHMzSzFDQVROV1ZmN29ndjYzQ1NUOUhfQlhyOVFueUVlR2VSbXlqZGFlbnczZ05heldsV3RLY3RUWkVyN3pfYXZxcmdFY0RhVndCeXJhUEFQMldDbFl3cEI3NVhvNXVBdXpIS0xveWxORXhpZDZwTDBLR254OFE0RDlEQ1RBS1c5dV9uc1dIV19OZzJ4S01WNFZrSFljVEJsdkd0anhlN3hxM01VRjRlSlprV3lra3hQdlAwZG8zeFdsVjF1bHFSdS1IeFJrZlBCZWVucGVOdE1aMTRpSGhMNmh0d19Qb0RCQVlFZEl1dUZYNkZ1YTlrOVJwTXZYWXJlZmZCZmRIT05GSnZSMVBDSzhpSEJvOVpWQVl1TzZaanR6TGlPcTJyNTl0RmlJWko0aTYtM0kxSnk1MjJzU0FMekNkdG5Sa1h2WlN3a1pJcVZwRENkMkk0dm1KRUVYSFR2TUoweXNRM3NtVXo3bkZtRnNpc2FGYnlidEtaTWl4Uk44bmtDRDgwNVplZHYwTmpzZVRqRENhdE95X01wbHJGZlVzeGNC0gG6A0FVX3lxTFAwOHVmWW9MaUcyNUw4NGNMc2ExUEVGT0c0UGVyelA2d0VseXdfWkhxVjJTdjNiYjJ3OXFieXdBRW1SZy1SUWV1SWk4Zkw3bldVMmNObDBjaXFvUk9pUEhCbUl2eWFQb1V2UjhMTDBFX1NYMFN5dDc5TUIzbXJhbHdxVHZYV2lZc3VmVTNqd290czRCMm9wOG13akphQmhwU3BRZDNIOVhZMXVnQWpIUEtnMmc5QU1EVUpLU19lMHZXZlhLWmJvVkUwQmV3cEpOREhlUXNQYy1IM2E5ZHhJZXAwa2NrSmczZ0RJR01MS3BaaksyaUdVV1hCZmVpYUpkWTdTRDZBTUdCenFpTk1KSjdib0Y0eFdFTkRMbjBoMDRTcnk0ZFdrdm51RGh5a0tOTTNLM3lxaFZtTU5VcnVwekExLXdJNzEwNWY2YTRhTHNyc3lyekhSWWRIb2NHcXBoa1dmX2xteDFMUGgyWnFoM2ZsUW52Vk9IZjkyWW1sMzF6VWN4dWE5VmRlZXZJeFF2YmJTcjlMZUxSS2EtN25zdDlIYUdoaWVORFQxQW9YRExxd2VEVHprRmxSakE?oc=5"
+          "link": "https://news.google.com/rss/articles/CBMiugNBVV95cUxQMDh1ZllvTGlHMjVMODRjTHNhMVBFRk9HNFBlcnpQNndFbHl3X1pIcVYyU3YzYmIydzlxYnl3QUVtUmctUlFldUlpOGZMN25XVTJjTmwwY2lxb1JPaVBIQm1JdnlhUG9VdlI4TEwwRV9TWDBTeXQ3OU1CM21yYWx3cVR2WFdpWXN1ZlUzandvdHM0QjJvcDhtd2pKYUJocFNwUWQzSDlYWTF1Z0FqSFBLZzJnOUFNRFVKS1NfZTB2V2ZYS1pib1ZFMEJld3BKTkRIZVFzUGMtSDNhOWR4SWVwMGtja0pnM2dESUdNTEtwWmpLMmlHVVdYQmZlaWFKZFk3U0Q2QU1HQnpxaU5NSko3Ym9GNHhXRU5ETG4waDA0U3J5NGRXa3ZudURoeWtLTk0zSzN5cWhWbU1OVXJ1cHpBMS13STcxMDVmNmE0YUxzcnN5cnpIUllkSG9jR3FwaGtXZl9sbXgxTFBoMlpxaDNmbFFudlZPSGY5MlltbDMxelVjeHVhOVZkZWV2SXhRdmJiU3I5TGVMUkthLTduc3Q5SGFHaGllTkRUMUFvWERMcXdlRFR6a0ZsUmpB0gG6A0FVX3lxTFAwOHVmWW9MaUcyNUw4NGNMc2ExUEVGT0c0UGVyelA2d0VseXdfWkhxVjJTdjNiYjJ3OXFieXdBRW1SZy1SUWV1SWk4Zkw3bldVMmNObDBjaXFvUk9pUEhCbUl2eWFQb1V2UjhMTDBFX1NYMFN5dDc5TUIzbXJhbHdxVHZYV2lZc3VmVTNqd290czRCMm9wOG13akphQmhwU3BRZDNIOVhZMXVnQWpIUEtnMmc5QU1EVUpLU19lMHZXZlhLWmJvVkUwQmV3cEpOREhlUXNQYy1IM2E5ZHhJZXAwa2NrSmczZ0RJR01MS3BaaksyaUdVV1hCZmVpYUpkWTdTRDZBTUdCenFpTk1KSjdib0Y0eFdFTkRMbjBoMDRTcnk0ZFdrdm51RGh5a0tOTTNLM3lxaFZtTU5VcnVwekExLXdJNzEwNWY2YTRhTHNyc3lyekhSWWRIb2NHcXBoa1dmX2xteDFMUGgyWnFoM2ZsUW52Vk9IZjkyWW1sMzF6VWN4dWE5VmRlZXZJeFF2YmJTcjlMZUxSS2EtN25zdDlIYUdoaWVORFQxQW9YRExxd2VEVHprRmxSakE?oc=5"
         }
       ],
       "tag": "경제·유가",
@@ -535,30 +748,21 @@
       }
     },
     {
-      "title": "انفجارات في بغداد وإسقاط طائرتين مسيّرتين غير مفخختين",
-      "source": "ANF | Articles",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdnpadTFfNXIwTGs0M0I2MDdmWUJkc1pOM2VKT2dIbUI0X21TcVNzaXFDZkJ1aUlrZWxIREI2SzlfdVZoNzhleklGSVBMVkNaelZ4emJuOEF3Rk56cU9PY3hibS1JeldtNkE0bUhoVkhTR1VhMDlkVG1FRWFPOEp1RGFqZXlKeF9NQXJ3OWpkTWFFM0lfaU9mekE1bFoxQV9lNllJUGtoRGtLOWVrM0QyZmFvSlpYelJteGFieXltLW1WX01pTk5yS2hZRm1rRjRBZmpDVS1OdlcxaFJiSjJVeHFWWXM0cXIwV0lxLVNVU3c?oc=5",
+      "title": "Iraq: Drone shot down near US embassy in Baghdad",
+      "source": "The New Arab",
+      "link": "https://www.newarab.com/news/iraq-drone-shot-down-near-us-embassy-baghdad",
       "date": "2026-10-27T17:45:38.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 폭발, 무장하지 않은 드론 2대 격추",
-      "count": 3,
+      "lang": "en",
+      "titleKo": "이라크: 바그다드 미국 대사관 근처에서 드론 격추",
+      "url": "https://www.newarab.com/news/iraq-drone-shot-down-near-us-embassy-baghdad",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
       "sources": [
-        "The New Arab",
-        "ANF | Articles",
-        "شفق نيوز"
+        "The New Arab"
       ],
-      "related": [
-        {
-          "titleKo": "이라크: 바그다드 미국 대사관 근처에서 드론 격추",
-          "source": "The New Arab",
-          "link": "https://www.newarab.com/news/iraq-drone-shot-down-near-us-embassy-baghdad"
-        },
-        {
-          "titleKo": "(업데이트) 바그다드 폭발.. 녹지대 인근에서 무인기 격추",
-          "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMirgNBVV95cUxPWVNFdGFOVnRYdV9DVGlpclVVbnhYNkgxZWlraXZpeXl1UEpPT1NCaTdaelVyRl9tWlhqZmZiSzV1eDF0Vkt3bXB5Wnl6MXRuUVZfRFc5U1pmT2Z1WDhhVlMwb05kdV9jam5DZ2QxaTI1bzhPZDk0eElKVngzQTZ6ejRVTTZZeXFfcjE5NFJmRDdzeUdJR3I2dGtaN1NTZlptU2c4Rl80eFVDaS1tbWpzVkRVNHRBMnp5NmV4OFhLZVNYbUpoRVJOazJETW1neTNYTjNHNEFySk5UZWwzbkNITS1GbEFYVFl4dGFRODZGdUNoTVRqaEl2Z1N6NGdNM2lYZVZDaFk3UldxRDBxLTlIeVRaMlliQ0gxbEdtNUZIeVI4R0ttY1pqak9kU3FlekgxNDdYWUxLcFY5M1pKTTBZMTBIZ1dVNjZaSmx6dHZQQXp3b0Y4d09uakI3MjBiNGZPcmRUb3VMYy1jek9LTExhbnd4ODczX2c1b0lMRktrcnVta2hJX3pkVzNTZlJWWkJzRDIzams2LXFJbzZMdGxlU25mMEpvTFR2ZjdJUVpR?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -591,6 +795,63 @@
         }
       ],
       "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Former Iraqi PM’s bloc ends boycott after MP referred to ethics panel",
+      "source": "Rudaw",
+      "link": "https://rudaw.net/english/categories/iraq/1079915",
+      "date": "2026-10-27T17:17:32.000Z",
+      "lang": "en",
+      "titleKo": "전직 이라크 총리 진영, 의원 윤리위원회 회부 후 보이콧 해제",
+      "url": "https://rudaw.net/english/categories/iraq/1079915",
+      "body": "The head of former Iraqi premier Mohammed Shia al-Sudani’s Reconstruction and Development Coalition’s (RDC) bloc said Tuesday that it is resuming parliamentary sessions after lawmaker Yousef al-Kalabi",
+      "bodyKo": "이전 이라크 총리 무함마드 시아 알수다니의 재건개발연합(RDC) 블록 지도자는 화요일 의원 유세프 알칼라비 이후 의회 회의를 재개한다고 밝혔다",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Rudaw",
+        "شفق نيوز"
+      ],
+      "related": [
+        {
+          "titleKo": "알수다니 블록 보이콧 후 이라크 의원 행동위원회에 회부",
+          "source": "شفق نيوز",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZzAtOXlFd195YlZWVmY3bk9RQVNlZWVUVnBmaWI0Zm10eEpQd2xxUzVMNHVJSGRmaTBGX0hSSGRlbFhjOGdVNVBaMmRUdFNWVm9DbzlqTGtYVjJ2Mk9OMTdSQVBQTTB2dFhYVldTU0x2MnFkdmctOWNKOGdMUUVRQ2syRVl2dnFvZjJjUElPajlkeXVJd3dfanJB?oc=5"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq Sentences 6 French Islamic State Members to Life in Prison",
+      "source": "The Media Line",
+      "link": "https://themedialine.org/headlines/iraq-sentences-6-french-islamic-state-members-to-life-in-prison/",
+      "date": "2026-10-27T17:13:58.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 프랑스 국적 IS 조직원 6명에 무기징역 선고",
+      "url": "https://themedialine.org/headlines/iraq-sentences-6-french-islamic-state-members-to-life-in-prison/",
+      "body": "An Iraqi court in Baghdad sentenced six French [&hellip;]\nThe defendants were among 47 French nationals moved from detention centers in northeastern Syria to Iraqi custody in 2025 in a transfer arranged with US forces.\nIraq’s Supreme Judicial Council said lawyers for the accused and representatives of the French Embassy attended the proceedings. It characterized the seven as dangerous individuals whose activities had threatened Iraqi security and contributed to violence beyond its borders.\nAI noise, algorithmic bias, and misinformation fuel global hate and antisemitism.\nIndependent journalism is a vital line of defense for democracy.\nWithout boots on the ground, you can't tell the full story.\nThe Media Line is on the ground in 12 Middle Eastern countries.\nMake a holiday gift which supports journalism with integrity.",
+      "bodyKo": "바그다드의 이라크 법원이 프랑스인 6명에게 유죄판결을 내렸다.\n\n피고인들은 2025년 미군이 주선한 이송으로 시리아 북동부 구금시설에서 이라크 당국에 인수된 프랑스 국민 47명 중 일부였다.\n\n이라크 대법원은 피고인들의 변호사와 프랑스 대사관 대표들이 재판에 참석했다고 밝혔다. 대법원은 이들 7명을 이라크 보안을 위협하고 국경 너머 폭력에 기여한 위험인물로 규정했다.\n\n인공지능 소음, 알고리즘 편향, 허위정보는 전 지구적 증오와 반유대주의를 부추긴다.\n\n독립 언론은 민주주의를 위한 중요한 방어선이다.\n\n현장에 없으면 전체 이야기를 전할 수 없다.\n\n더 미디어 라인은 중동 12개국에서 현장 활동을 하고 있다.\n\n저널리즘의 진정성을 지지하는 휴일 선물을 기부하자.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The Media Line"
+      ],
+      "related": [],
+      "tag": "치안·테러",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -806,6 +1067,31 @@
       }
     },
     {
+      "title": "فيديو",
+      "source": "هذا اليوم",
+      "link": "https://hathalyoum.net/4254201.aspx",
+      "date": "2026-10-27T15:36:03.000Z",
+      "lang": "ar",
+      "titleKo": "영상",
+      "url": "https://hathalyoum.net/4254201.aspx",
+      "body": "فيديو | مناخ الاستثمار في العراق.. عوائق وحلول | #المؤشر",
+      "bodyKo": "영상 | 이라크의 투자 환경.. 장애물과 해결책 | #지표",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "هذا اليوم"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "Where Was the Baghdad Drone Launched? Iraq Probes Debris",
       "source": "Kurdistan24",
       "link": "https://www.kurdistan24.net/en/story/948928/where-was-the-baghdad-drone-launched-iraq-probes-debris",
@@ -828,31 +1114,6 @@
         "act": "",
         "place": "바그다드",
         "km": 27
-      }
-    },
-    {
-      "title": "بعد امتثاله للإجراءات القانونية.. القضاء العراقي يفرج عن رئيس مجلس محافظة ميسان",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D9%84%D9%82%D8%B6%D8%A7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D8%AE%D9%84%D9%8A-%D8%B3%D8%A8%D9%8A%D9%84-%D8%B1-%D9%8A%D8%B3-%D9%85%D8%AC%D9%84%D8%B3-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D9%85%D9%8A%D8%B3%D8%A7%D9%86",
-      "date": "2026-10-27T15:24:35.000Z",
-      "lang": "ar",
-      "titleKo": "법적 절차 준수 후.. 이라크 사법부, 미산 주의회 의장 석방",
-      "url": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D9%84%D9%82%D8%B6%D8%A7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D8%AE%D9%84%D9%8A-%D8%B3%D8%A8%D9%8A%D9%84-%D8%B1-%D9%8A%D8%B3-%D9%85%D8%AC%D9%84%D8%B3-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D9%85%D9%8A%D8%B3%D8%A7%D9%86",
-      "body": "أعلن المكتب الاعلامي لرئيس مجلس محافظة ميسان، اليوم الثلاثاء، أن القضاء العراقي أخلى سبيل رئيس المجلس مصطفى أدعير المحمداوي بعد امتثاله للإجراءات القانونية المختصة.\nمن جانبه أوضح مصدر مطلع لوكالة شفق نيوز، أن الإفراج عن المحمداوي تمّ بعد مثوله أمام محكمة تحقيق الكرخ على خلفية صدور أمر قبض بحقه وفق أحكام المادة 224 من قانون العقوبات العراقي رقم 111 لسنة 1969 المعدل.\nفي غضون ذلك أعرب رئيس مجلس محافظة ميسان، عن شكره للأمين العام لحركة عصائب أهل الحق قيس الخزعلي، والقضاء العراقي الذي وصفه بـ\"العادل\" على قرار اخلاء سبيله.\nوقال مصطفى المحمداوي في منشور له على مواقع التواصل الاجتماعي، إن \"ما نتحمله من ضريبة في سبيل الدفاع عن حقوق محافظتنا نعده واجبا وطنيا ومسؤولية نعتز بها\"، مشدداً على أن حقوق ميسان وأهلها أمانة في أعناقنا وسنبقى أوفياء لهذه الأمانة ومدافعين عن حقوق أبناء محافظتنا\".\nيشار إلى أن محكمة تحقيق الكرخ الثالثة، أصدرت أمس الاثنين مذكرة قبض بحق رئيس مجلس محافظة ميسان، مصطفى ادعير المحمداوي، على خلفية تهديده بالعصيان المدني وقطع الطرق، وتهديد الحكومة العراقية لإعادة فتح منفذ الشيب الحد",
-      "bodyKo": "미산 주지사 평의회 의장 대변인실, 무스타파 아드아이르 알무함마다위 의장 석방 발표\n\n미산 주지사 평의회 의장 대변인실은 지난 화요일 이라크 사법부가 법적 절차를 준수한 무스타파 아드아이르 알무함마다위 의장을 석방했다고 발표했다.\n\n한편 샤팍뉴스통신에 정통한 소식통은 알무함마다위의 석방이 카르흐 수사법원에 출석한 후 이루어졌으며, 1969년 제정된 이라크 형법 제111호 제224조에 따라 체포영장이 발부된 배경이 있었다고 설명했다.\n\n한편 미산 주지사 평의회 의장은 아사이브 아흘 알하크 운동의 사무총장 카이스 알하즈알리와 자신의 석방 결정을 내린 \"공정한\" 이라크 사법부에 감사를 표했다.\n\n무스타파 알무함마다위 의장은 소셜미디어 게시물에서 \"우리 주의 권리를 수호하기 위해 치르는 대가는 국가적 의무이자 우리가 자랑스러워하는 책임\"이라며 \"미산의 권리와 주민들의 권리는 우리 목에 걸린 신탁이며, 우리는 이 신탁에 충실하고 우리 주 주민들의 권리를 계속 수호할 것\"이라고 말했다.\n\n카르흐 제3수사법원은 지난 월요일 미산 주지사 평의회 의장 무스타파 아드아이르 알무함마다위에 대해 시민 불복종과 도로 차단을 위협하고 이라크 정부를 위협하여 알시이브 국경 통로를 재개하라고 위협한 혐의로 체포영장을 발부했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "아마라(마이산)",
-        "km": 280
       }
     },
     {
@@ -1021,10 +1282,14 @@
     {
       "title": "Iraq PM sacks spy chief as provincial leader faces legal action",
       "source": "The New Arab",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQkdlcDRISXliSl9TVEpfUEN2YlY1UHAxdTVMcnBtbUxHR0JLaHlwTENnWkRHRmRGMUpVT0QxRFVtdjdrZlQzUjNwSW4zc0NJdFdCWTAzVGQzQUhCNmpaZVE0X2hSV2Q4cHZzLVRncnVCT3h5dmlYc1pkTTc0WDlnd09wVW96Q2dIU3prc1VPME9MV00?oc=5",
+      "link": "https://www.newarab.com/news/iraq-pm-sacks-spy-chief-provincial-leader-faces-legal-action",
       "date": "2026-10-27T13:33:57.000Z",
       "lang": "en",
       "titleKo": "이라크 총리, 정보부장 해임…지방 지도자는 법적 조치 직면",
+      "url": "https://www.newarab.com/news/iraq-pm-sacks-spy-chief-provincial-leader-faces-legal-action",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
       "count": 1,
       "sources": [
         "The New Arab"
@@ -1042,10 +1307,14 @@
     {
       "title": "Iraq's Al Zaidi dismisses intelligence chief in shake-up of team",
       "source": "The National",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVFZLOXRMOGFoNHFHZ1V6ZWQ1dGQ1ZGFUNmlJY29OSEt3NDB6cVdmMlBXN1F4NS0yMHRVWnJOVzExRV81bkVtd0RzTDVwTWlVd3VYZTZUWWxPalBlLTRHaG9sX1EtNnpKSnZLSnNpbkpFTk9iSXRNS3hpVEpBcnVTdmRJN3Q3ZlZObUpxQmhYd1NubFo1VGRCWGVhUlpmWVRHNXZ0N0ZHT1ZrU2hKRS1ncTlyTTNjZE1x?oc=5",
+      "link": "https://www.thenationalnews.com/news/mena/2026/10/27/iraqs-al-zaidi-dismisses-intelligence-chief-in-shake-up-of-team/",
       "date": "2026-10-27T13:28:01.000Z",
       "lang": "en",
       "titleKo": "이라크 알자이디, 정보부장 해임하며 인사 개편",
+      "url": "https://www.thenationalnews.com/news/mena/2026/10/27/iraqs-al-zaidi-dismisses-intelligence-chief-in-shake-up-of-team/",
+      "body": "Hamid Al Shatri, once tipped as a potential prime minister, removed alongside chief of staff\nIraqi Prime Minister Ali Al Zaidi has shaken up his team five months after taking power, dismissing several officials including the head of intelligence and chief of staff.\nAn order signed by Mr Al Zaidi’s new chief of staff Rashad Khalaf Hashim removed intelligence chief Hamid Al Shatri without giving a reason. No replacement has yet been named.\nMr Hashim assumed the chief of staff role on Monday, succeeding Ihsan Al Awadi. The order dated October 26 said the changes were to take effect immediately.\nMr Al Shatri had been appointed intelligence chief in December 2024 by former prime minister Mohammed Shia Al Sudani, after previously running the National Security Service.\nAfter the Iraqi general election last November, Mr Al Shatri’s name circulated as a potential candidate for the prime minister's position during protracted coalition talks that ultimately led to Mr Al Zaidi's appointment. As in",
+      "bodyKo": "**알 자이디 총리, 정보부장 등 주요 인사 경질**\n\n알리 알 자이디 이라크 총리가 권력 장악 5개월 만에 정보부장과 참모총장을 포함한 여러 관료를 해임하며 인사 개편을 단행했다.\n\n알 자이디 총리의 새 참모총장 라샤드 칼라프 하심이 서명한 명령서는 정보부장 하미드 알 샤트리를 이유 없이 해임했다. 후임자는 아직 지명되지 않았다.\n\n하심은 월요일 이흐산 알 아와디의 뒤를 이어 참모총장직을 맡았다. 10월 26일자 명령서는 변경 사항이 즉시 발효된다고 명시했다.\n\n알 샤트리는 2024년 12월 전임 총리 무함마드 시아 알 수다니에 의해 정보부장으로 임명됐으며, 이전에는 국가안보국을 이끌었다.\n\n지난 11월 이라크 총선 이후 연립 협상이 진행되는 과정에서 알 샤트리의 이름이 총리직 후보로 거론됐으며, 최종적으로 알 자이디가 총리로 임명됐다.",
+      "tried": true,
       "count": 1,
       "sources": [
         "The National"
@@ -1101,164 +1370,6 @@
         "place": "",
         "km": null
       }
-    },
-    {
-      "title": "Border restriction harm Iraq national interests: Iraqi MP",
-      "source": "Mehr News Agency",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcjhCNHNRenJTRDBtbk9BZ1VTcFJFU1pLNDJ0aEVlT2hwV3BDdFR2ODlMSkJxYWJaN3d0QzM2RURXZ2x4aENEalBzRjZVOThEbmpKQXQ0amFTZHJWc1d2Sk1tV3FqcmNISjQyUDh4SDIxN1JPSkJ0cXgxYW1CcmZ4S2dWSDFFWjVYQWFNTlF2eGVZVWhSSlFJ?oc=5",
-      "date": "2026-10-27T12:11:00.000Z",
-      "lang": "en",
-      "titleKo": "국경 제한 조치, 이라크 국익 훼손: 이라크 의원",
-      "count": 2,
-      "sources": [
-        "Mehr News Agency",
-        "WANA News Agency"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 의원 \"이란과의 국경 제한, 이라크 국익 해친다\"",
-          "source": "WANA News Agency",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQW9kZWswR2U3T3U3Z3otVklhS19TUFpKU3U0bDlQN0xDOGZoYzRFX1NoeVgyalJORk1tdUg5YzdBWG9wQ2JfSGlQWVFBdDNkMmpaQ21QXzFiWTIzMkExQVBCbDRPbnI1NkFONFdRYkdTMFR5YlJzWkZRdk5ISUt2d1pUU2NmSG5pS0xUNGhlY25Edw?oc=5"
-        }
-      ],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "احتجاجات لأصحاب المولدات في بغداد رفضاً لتقليص حصص الوقود وفرض ضرائب \"بأثر رجعي\"",
-      "source": "Kurdistan24",
-      "link": "https://news.google.com/rss/articles/CBMi7wRBVV95cUxOMTNRZnVFNHQ3SEVyb09KQW50Um0xTkQ5dXotajNBTUgwaDBXSjkxcm5KeUY4Z2tkQ25GVzFBZzVkRHdzWnVuUnRuUmZ0elk0dTZlUVpOTVVHbk9lcDZ1TXMtRjFMSF91bFdlVkFlYkVNakplQXA5U3dIX3ZiQUFBX1BGd3JNRWlTZVQwTEMwZE81a2VQMlJ3aHpheXdBY3hVR21reHBGWjEyOVM2OTNnV3dMVnJkbm9GZmcwaDA4NGVQc3JjSkNkT0JXY1VFaC12N1NTZmFHSDFJN2V4bXo3UFJBRW96Ul9EWENoWWNRdmZ4ZFNzRnBXS1FUcFhveVNfM3VpTFBoemdKQVhuWWNKb25iblpJbkwzTFhTb2hqdF9IUWtSMS14Vlo1VVRjd3ZqWXBqUjltOTM3M3pnVWF3RFpWRjRHUC1yaVhzb1p3MGhuQnppaUt6NGtoblBHRHFjRC1vbktFVmdDN0lHXzVJQkVrbmJwOW5xRFFoUG5MbHlNM2x2emhiaFJUNlE0eTFOUnoyMTl6aGxVenlXdzZFZDZUaHo3VTJIdTMxUUFjVnFIZldER0o2YlRCX0picU9GTktPN1NuMHZMb29rV2lfdDVIcWFheFNLbG5zQzFrUjdJUThYMGpjN3BVdVhFdXo2d05ka3Bia0lJT1hWaHVFQ0w2NUNGVTVjVkZWMTl6VGlBQ2kzWW9hbWt2ZjdnN3lRa3pUYlZsOXZ0bWotUUlaeXo0WVlxNjI4M0hDTVctbDgtdmdfalRzdUhISzJhcmsxMGdZQzk5d0IzSEMwNDdMTGREeWdrY01PeENEZEl3WQ?oc=5",
-      "date": "2026-10-27T12:04:50.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 발전기 소유자들, 연료 할당 축소와 '소급 적용' 세금 부과 반발 시위",
-      "count": 1,
-      "sources": [
-        "Kurdistan24"
-      ],
-      "related": [],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "y",
-        "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
-        "act": "시위 시간대 시내 이동 피하기",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "بالفيديو.. عاصفه ترابيه قادمة من سوريا باتجاه العراق",
-      "source": "المعلومة",
-      "link": "https://news.google.com/rss/articles/CBMirgNBVV95cUxPZnJIY3c2Y2UtbGpKR2FUaE80UGx6SC16ektIWm5pRDhhWUVES1dOSDlsSVFjSDV5UUFsSnBKck45LVRCTXM1YU5tWC1LMnFwTGkyRVFJakNiUk9kVFhabkVqeFR6Ry1JQmp2RW5fd3NFLTgyZHp0WnlocGNqdVIzSkwyT1lzTXBRREFHcGhDaV9mXzRNb2w5c3BnSllwQmRLcnlhUDdkbXgyVVhWT2FKUElmYi1RdENId2dWT2ltUVd4T0NEbEZ0RGp1VDBUdkQ0N2JET0hSR2g2QU94TEZLU01fdDE0blluOFdaeUVsVnpJU0hoRmc3MXplc3JwcndzZDA4MnVXbGsydVVhSG13TUVPWjRqa2NIVl95ZVZqbXRfNlFuT2EwczJiRndaTlRBQjZUdXBBdktaMDE3MWRJb3lQMUl6RnVLbEQ5bkFrS0w4eTlpd0tiQjRnenpaYktOZi1hRkZHLVh6S2laQVN2RGNxWHJLaW5sZDlza3FvSEdNYl83YU05UURPMVZydng4YXBZRE5hTmROXzZkczFRRVdGcHJFNmVOS0ZTMTJ3?oc=5",
-      "date": "2026-10-27T11:59:47.000Z",
-      "lang": "ar",
-      "titleKo": "영상으로 보는 시리아에서 이라크로 향하는 모래폭풍",
-      "count": 1,
-      "sources": [
-        "المعلومة"
-      ],
-      "related": [],
-      "tag": "날씨·재난",
-      "impact": {
-        "lv": "y",
-        "line": "기상 악화 소식 — 옥외·고소·양중 작업 영향 가능",
-        "act": "상황실 날씨·모래폭풍 예보 확인 후 작업 조정",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraqi PM reiterates Iraq’s support for the Palestinian people",
-      "source": "IraqiNews",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPa1RCc3Vja3h2MlpTWHZHR0hMaGxpM2xNT2xsaEdrV3hJc1VHS2lGR2FlZDcyNTJBMDVsOFB3THViX3hndzdka3VKNnVLeFNuaU1Mczh0b28yZ1MyZ3M3elNrSThCZDdBbFdKNDVHdWhDMlptOU5GVzBpYTB2bmRYMDVCVGhSdnZBOUJZUTRWckZDV05CWjFn?oc=5",
-      "date": "2026-10-27T11:58:38.000Z",
-      "lang": "en",
-      "titleKo": "이라크 총리, 팔레스타인 국민에 대한 이라크의 지지 재확인",
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraqi court sentences Oil Products Chief Hussein Talib to 8 years, orders 55B IQD restitution",
-      "source": "IraqiNews",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbTBLWGlBXzYta1VIWW5wWWI0aGc4X1pOZGlxaDM1TFdiOXJTY3VVMlVIbkxjMEZGUlZLSk9nbDRYYkRiMjh5QUxfQ0tSMUJTNFNiaEpJejVjM3hJRkU1bUFuVlpBSktnZVpSZ3JTaHl6bFlRdWRtSW9wUXZHN1hONTl2azJQNmxSZUdBeFU5TkROVHBtUlMwZ2RweUJoOGdwd21wdnFIbFdYNm1EQVNRMTZIaHpIRWg2TEE?oc=5",
-      "date": "2026-10-27T11:57:30.000Z",
-      "lang": "en",
-      "titleKo": "이라크 법원, 석유제품청장 후세인 탈립에 8년 징역형·550억 이라크 디나르 배상 명령",
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "تفاصيل جديدة حول دوي الانفجارات في بغداد",
-      "source": "Alsumaria",
-      "link": "https://news.google.com/rss/articles/CBMi8gJBVV95cUxPVjB0T3h5MDJtOTFQZGUya2VVb3FwbzNockRuelZVazdRNEg5RXd0WE9yLUlSeDNtS3lkTXpkclZ3dnl0YVRMRzlPdnRuWDlqd08tanNBbXhCSW90WThhQWcwUE01cEhUNjJESC1SeUhPSGxwWTB1eS1MeUxCUFBDOHZ0UnV3Z0lwQ0xWckNPVEFvY3lHNkgtaXd4VFdsZXZJTG5UeWNGclR3MERFX3hRTnhneVlUX1dZVnRfT3hUcnRERWExV2owZjd1b2ZRMHk1LUZ3ejR6S0c0VlFmU2NIbVFDcGhDNlZJNjd4eGRackJNWFFUWjBKQ2VWX3Y3dXJhU084VElsdXF4cEJVNS1RdW1vTzI2SjVFY3BJSlRjaTRSRWR3d2dWbzF4d1ZuVklydVVHaXE0ZG5vQVJGTjk1SGNzVnZwVVVXRGd4RF8tbHU1Ykxldmp6VEJ4MjZoNVRBNldOc0szTEl2NUU0b0hDd3B3?oc=5",
-      "date": "2026-10-27T11:54:29.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 폭발음 관련 새로운 상황 전개",
-      "count": 1,
-      "sources": [
-        "Alsumaria"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "سرقة بالمليارات.. العراق يعلن عن قضية فساد جديدة بقطاع الكهرباء",
-      "source": "عاجل",
-      "link": "https://www.alarabiya.net/aswaq/iraq-economy/2026/10/27/%D8%B3%D8%B1%D9%82%D8%A9-%D8%A8%D8%A7%D9%84%D9%85%D9%84%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B9%D9%84%D9%86-%D8%B9%D9%86-%D9%82%D8%B6%D9%8A%D8%A9-%D9%81%D8%B3%D8%A7%D8%AF-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%A8%D9%82%D8%B7%D8%A7%D8%B9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1",
-      "date": "2026-10-27T11:53:00.000Z",
-      "lang": "ar",
-      "titleKo": "수십억 달러 규모 도난.. 이라크, 전력 부문 새로운 부패 사건 적발",
-      "url": "https://www.alarabiya.net/aswaq/iraq-economy/2026/10/27/%D8%B3%D8%B1%D9%82%D8%A9-%D8%A8%D8%A7%D9%84%D9%85%D9%84%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B9%D9%84%D9%86-%D8%B9%D9%86-%D9%82%D8%B6%D9%8A%D8%A9-%D9%81%D8%B3%D8%A7%D8%AF-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%A8%D9%82%D8%B7%D8%A7%D8%B9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "عاجل"
-      ],
-      "related": [],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "",
-        "km": null
-      }
     }
   ],
   "alerts": [],
@@ -1266,32 +1377,12 @@
   "brief": [
     {
       "lv": "y",
-      "titleKo": "이라크 의회 \"한화 건설부문에 미수금 지급…나머지 공사 재개 합의안 마련해야\" By The Guru",
+      "titleKo": "이라크 의회 \"한화 건설부문에 미수금 지급…나머지 공사 재개 합의안 마련해야\"",
       "line": "한국·한국 기업 관련 소식 — 한국인 직원 참고",
       "act": "",
-      "km": null,
-      "link": "https://kr.investing.com/news/stock-market-news/article-2144506",
+      "km": 0,
+      "link": "https://theguru.co.kr/news/article.html?no=108908",
       "date": "2026-10-27T23:41:00.000Z",
-      "more": 0
-    },
-    {
-      "lv": "y",
-      "titleKo": "바그다드 발전기 소유자들, 연료 할당 축소와 '소급 적용' 세금 부과 반발 시위",
-      "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
-      "act": "시위 시간대 시내 이동 피하기",
-      "km": 27,
-      "link": "https://news.google.com/rss/articles/CBMi7wRBVV95cUxOMTNRZnVFNHQ3SEVyb09KQW50Um0xTkQ5dXotajNBTUgwaDBXSjkxcm5KeUY4Z2tkQ25GVzFBZzVkRHdzWnVuUnRuUmZ0elk0dTZlUVpOTVVHbk9lcDZ1TXMtRjFMSF91bFdlVkFlYkVNakplQXA5U3dIX3ZiQUFBX1BGd3JNRWlTZVQwTEMwZE81a2VQMlJ3aHpheXdBY3hVR21reHBGWjEyOVM2OTNnV3dMVnJkbm9GZmcwaDA4NGVQc3JjSkNkT0JXY1VFaC12N1NTZmFHSDFJN2V4bXo3UFJBRW96Ul9EWENoWWNRdmZ4ZFNzRnBXS1FUcFhveVNfM3VpTFBoemdKQVhuWWNKb25iblpJbkwzTFhTb2hqdF9IUWtSMS14Vlo1VVRjd3ZqWXBqUjltOTM3M3pnVWF3RFpWRjRHUC1yaVhzb1p3MGhuQnppaUt6NGtoblBHRHFjRC1vbktFVmdDN0lHXzVJQkVrbmJwOW5xRFFoUG5MbHlNM2x2emhiaFJUNlE0eTFOUnoyMTl6aGxVenlXdzZFZDZUaHo3VTJIdTMxUUFjVnFIZldER0o2YlRCX0picU9GTktPN1NuMHZMb29rV2lfdDVIcWFheFNLbG5zQzFrUjdJUThYMGpjN3BVdVhFdXo2d05ka3Bia0lJT1hWaHVFQ0w2NUNGVTVjVkZWMTl6VGlBQ2kzWW9hbWt2ZjdnN3lRa3pUYlZsOXZ0bWotUUlaeXo0WVlxNjI4M0hDTVctbDgtdmdfalRzdUhISzJhcmsxMGdZQzk5d0IzSEMwNDdMTGREeWdrY01PeENEZEl3WQ?oc=5",
-      "date": "2026-10-27T12:04:50.000Z",
-      "more": 0
-    },
-    {
-      "lv": "y",
-      "titleKo": "영상으로 보는 시리아에서 이라크로 향하는 모래폭풍",
-      "line": "기상 악화 소식 — 옥외·고소·양중 작업 영향 가능",
-      "act": "상황실 날씨·모래폭풍 예보 확인 후 작업 조정",
-      "km": null,
-      "link": "https://news.google.com/rss/articles/CBMirgNBVV95cUxPZnJIY3c2Y2UtbGpKR2FUaE80UGx6SC16ektIWm5pRDhhWUVES1dOSDlsSVFjSDV5UUFsSnBKck45LVRCTXM1YU5tWC1LMnFwTGkyRVFJakNiUk9kVFhabkVqeFR6Ry1JQmp2RW5fd3NFLTgyZHp0WnlocGNqdVIzSkwyT1lzTXBRREFHcGhDaV9mXzRNb2w5c3BnSllwQmRLcnlhUDdkbXgyVVhWT2FKUElmYi1RdENId2dWT2ltUVd4T0NEbEZ0RGp1VDBUdkQ0N2JET0hSR2g2QU94TEZLU01fdDE0blluOFdaeUVsVnpJU0hoRmc3MXplc3JwcndzZDA4MnVXbGsydVVhSG13TUVPWjRqa2NIVl95ZVZqbXRfNlFuT2EwczJiRndaTlRBQjZUdXBBdktaMDE3MWRJb3lQMUl6RnVLbEQ5bkFrS0w4eTlpd0tiQjRnenpaYktOZi1hRkZHLVh6S2laQVN2RGNxWHJLaW5sZDlza3FvSEdNYl83YU05UURPMVZydng4YXBZRE5hTmROXzZkczFRRVdGcHJFNmVOS0ZTMTJ3?oc=5",
-      "date": "2026-10-27T11:59:47.000Z",
       "more": 0
     }
   ]
