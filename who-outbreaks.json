@@ -8,6 +8,22 @@
   "errors": {},
   "items": [
     {
+      "kind": "WHO 소식",
+      "title": "Climate change is a growing health emergency, Lancet Countdown warns",
+      "date": "2026-10-28T08:00:36Z",
+      "summary": "Ahead of COP31, the latest Lancet Countdown report finds that the health impacts of climate change are accelerating, with heat-related deaths, drought and other climate-related risks increasing faster than a decade ago, even as clean energy investments and climate action begin to deliver health benefits.",
+      "link": "https://www.who.int/news/item/28-10-2026-climate-change-is-a-growing-health-emergency--lancet-countdown-warns",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO releases target regimen profiles for long-acting injectables for TB",
+      "date": "2026-10-28T06:00:00Z",
+      "summary": "WHO has published Target regimen profiles for long-acting injectables (LAIs) for tuberculosis (TB) prevention and treatment, which still depend on daily oral regimens taken over months, and sustaining adherence over such periods is difficult for many people. LAIs could significantly lighten the burden for people taking TB medicines and the health system that delivers them.",
+      "link": "https://www.who.int/news/item/28-10-2026-who-releases-target-regimen-profiles-for-long-acting-injectables-for-tb",
+      "newsType": "Departmental update"
+    },
+    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria",
       "date": "2026-10-23T15:48:48Z",
@@ -120,22 +136,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Group of Friends of Traditional Medicine highlights growing global cooperation and priorities",
-      "date": "2026-10-16T12:00:00Z",
-      "summary": "Panelists at the 8th meeting of the Group of Friends of Traditional Medicine©WHORepresentatives of WHO Member States, the traditional medicine community and international partners gathered at the Permanent Mission of India in Geneva on 23 September 2026 to mark Ayurveda Day 2026, organized in conjunction with the 8th meeting of the Group of Friends of Traditional Medicine. The event provided a platform to explore the contribution of Ayurveda to health and well-being, and to advance dialogue on t",
-      "link": "https://www.who.int/news/item/16-10-2026-group-of-friends-of-traditional-medicine-highlights-growing-global-cooperation-and-priorities",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Early menopause: Why better research and global guidance matter for women’s health",
-      "date": "2026-10-16T09:33:11Z",
-      "summary": "Physician and scientist Priya Satalkar-Götz experienced her first symptoms of menopause in her mid-twenties, but it took several years for her to receive a diagnosis. In this conversation, she reflects on the physical and personal impact of early menopause, the limits of medical knowledge without strong evidence and how greater investment in research and global guidance could transform care for future generations. You have a unique experience with menopause. Tell us. I experienced my first hot f",
-      "link": "https://www.who.int/news/item/16-10-2026-early-menopause--why-better-research-and-global-guidance-matter-for-women-s-health",
-      "newsType": "Feature story"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Middle East respiratory syndrome coronavirus - Kingdom of Saudi Arabia",
       "date": "2026-10-15T16:22:00Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON613"
     }
   ],
-  "generatedAt": "2026-10-28T02:56:58.536971+00:00"
+  "generatedAt": "2026-10-28T11:48:22.458744+00:00"
 }
