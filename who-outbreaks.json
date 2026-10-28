@@ -9,6 +9,14 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO advises coexistence of digital and non-digital ship-related health documents",
+      "date": "2026-10-28T13:00:00Z",
+      "summary": "WHO calls on States Parties to facilitate the coexistence of digital and non-digital formats of ship-related health documents, including the Ship Declaration of Health (SDH) and Ship Sanitation Certificates (SSC), following the 2024 amendments to the International Health Regulations (2005) (IHR), which entered into force for most States Parties on 19 September 2025.",
+      "link": "https://www.who.int/news/item/28-10-2026-who-advises-coexistence-of-digital-and-non-digital-ship-related-health-documents",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "Climate change is a growing health emergency, Lancet Countdown warns",
       "date": "2026-10-28T08:00:36Z",
       "summary": "Ahead of COP31, the latest Lancet Countdown report finds that the health impacts of climate change are accelerating, with heat-related deaths, drought and other climate-related risks increasing faster than a decade ago, even as clean energy investments and climate action begin to deliver health benefits.",
@@ -30,14 +38,6 @@
       "summary": "The WHO Technical Advisory Group on COVID-19 Vaccine Composition (TAG-CO-VAC) continues to closely monitor the genetic and antigenic evolution of SARS-CoV-2 variants, immune responses to SARS-CoV-2 infection and COVID-19 vaccination, and the performance of COVID-19 vaccines against circulating variants.",
       "link": "https://www.who.int/news/item/27-10-2026-types-of-data-requested-to-inform-december-2026-covid-19-vaccine-antigen-composition-deliberations",
       "newsType": "Statement"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO advises coexistence of digital and non-digital ship-related health documents",
-      "date": "2026-10-27T13:00:00Z",
-      "summary": "WHO calls on States Parties to facilitate the coexistence of digital and non-digital formats of ship-related health documents, including the Ship Declaration of Health (SDH) and Ship Sanitation Certificates (SSC), following the 2024 amendments to the International Health Regulations (2005) (IHR), which entered into force for most States Parties on 19 September 2025.",
-      "link": "https://www.who.int/news/item/27-10-2026-who-advises-coexistence-of-digital-and-non-digital-ship-related-health-documents",
-      "newsType": "Departmental update"
     },
     {
       "kind": "감염병 발생",
@@ -208,5 +208,5 @@
       "donId": "2026-DON613"
     }
   ],
-  "generatedAt": "2026-10-28T17:35:56.592291+00:00"
+  "generatedAt": "2026-10-28T21:59:03.492720+00:00"
 }
