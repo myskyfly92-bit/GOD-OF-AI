@@ -1,90 +1,90 @@
 {
-  "generatedAt": "2026-10-27T00:20:45.211Z",
+  "generatedAt": "2026-10-28T00:24:25.391Z",
   "query": "(질병 OR 전염병 OR 감염병 OR 사고 OR 의료 OR 의학) when:2d",
   "items": [
     {
-      "title": "“필수의료는 자의적 개념…'의사 형사처벌'은 과도”",
+      "title": "美의사단체 “생성형 의료AI 오류, 개발자 책임”",
+      "source": "데일리메디",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94ZEJsNGJlLWNWbnV4UkRfdWhEaFlxZ3VaR1l1TUEtVWlwd0V0bTNTX05ZYmxMMkRVRU5KV1RsZDlkd1NMcFpIZTdSZ1pWWUxrM2VFREhYMU9xVGhVYVl2VHk0VTZVZVVTN1laTkdJZXp2VkhL?oc=5",
+      "date": "2026-10-27T22:54:00.000Z",
+      "summary": "데일리메디"
+    },
+    {
+      "title": "이근배 전남대 총장 “의료인 헌신에 감사… 지역과 함께 성장하겠다”",
       "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFByUUNDdlpvUklQOThhQXl4UW1XNDRDUUJTQlhhMmlaeGNmZHpSZTRGRHZXUW8zTkNMY044dDYzUVRqSWkyMS1ua2hWXzRTZHZrM3VUVkxPRGtnRVU5WEt4MnJVcl94ZVN1R0E?oc=5",
-      "date": "2026-10-26T22:57:43.000Z",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBveFdNTWtMUTduNmJDNm1MLVBuLUxMMWI3N1NraVpESS1NTE9KQWxEOFVuaWJ6MUpnamVxYmh3c2l3QnM3UGlXVUd4RDQxWVZHbFlBcW5mWDBNZEE0VGF6d3FyN1NiUTdjSHc?oc=5",
+      "date": "2026-10-27T22:55:34.000Z",
       "summary": "의학신문"
     },
     {
-      "title": "찬바람에 감염병 주의보…\"백신 접종 지금이 적기\"",
-      "source": "연합뉴스TV",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5iSjdBZUdVX1dZWXlIV1g0LW12N0NXVjB0NDZDcXlBb1c2ZjFPWER1b21weTdab1RzZUl5NUl1d2szdndEWnpfZGxqR3NPbFR6ekZDclZ5eV9MUXpqd0RQTWVRQlhxTWc?oc=5",
-      "date": "2026-10-26T21:55:00.000Z",
-      "summary": "연합뉴스TV"
-    },
-    {
-      "title": "가축전염병 살처분 보상금 상한 90%로 상향…최초 신고 농가는 최대 100% 지급",
-      "source": "팜인사이트",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzRWNtTDg2SXA5Mk9rOG43Xzl0VDU2a01IclRUX0hlRTBmU3o0SUo0Tm5yZW9idkl3M0pEcDhPMHI5U0YyOHR4OVdQcUFxTy1xdTVacWRLUXFzNWdYX0hpV0ZXMUJES0VPSzk4NEx3?oc=5",
-      "date": "2026-10-26T23:15:13.000Z",
-      "summary": "팜인사이트"
-    },
-    {
-      "title": "부산해경, 태풍 '참피' 영향에 연안 안전사고 위험예보 발령",
-      "source": "해사신문",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9SRkplMFNRS2p4WVdSMUZ0M1VNWDg0eE9DMzU5RUw0SmRCYXBiWW5WNVk1VTNNOGc1aUhWTmV2TGFKM1VmcjV1dG5fbURUMVdGM1FvTGdyYVJqVVdPdVhGU2pnNWVlQ255N3pz?oc=5",
-      "date": "2026-10-26T22:25:00.000Z",
-      "summary": "해사신문"
-    },
-    {
-      "title": "[리포트]'대전형 필수·공공 의료체계' 어떻게?",
-      "source": "대전MBC",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB3bHRkSjFtbDV0ZjhMT203dEV4MnNQcXEwSlV1VjdXU0YzMjVZZkVzN3A2NVR4R2tqbXlhUEJqVms1bXhSeFczVGJaemEwbmc?oc=5",
-      "date": "2026-10-26T22:45:00.000Z",
-      "summary": "대전MBC"
-    },
-    {
-      "title": "“가을 산악사고 예방…일몰 2시간 전 하산”",
-      "source": "KBS 뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYdVlaTlNmNEtER3FuOGdIcy15OHdlOGdOM0RBUUVYTXN1S245WWE5LTRXbUhrdVp3VWRsYXRLLVZmWW56ZkVLUkViVWNvNHlCa2s3VFNHMGlYbWM?oc=5",
-      "date": "2026-10-26T21:43:22.000Z",
-      "summary": "KBS 뉴스"
-    },
-    {
-      "title": "[보안 비상] ③ 의료기기부터 전기차까지…세계는 '보안 전쟁'",
-      "source": "연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NSVVTN2FoVmkzczFhS2szUy1tZHNNeXdGMHN1LXFxRU16eXNJd2lwbFp2T2pYeUlOSFF0UFJiNlVJUlVuRTRiODh1am85NmdkX25GOExyYzEydTVFX2U2V9IBYEFVX3lxTE5NSVVTN2FoVmkzczFhS2szUy1tZHNNeXdGMHN1LXFxRU16eXNJd2lwbFp2T2pYeUlOSFF0UFJiNlVJUlVuRTRiODh1am85NmdkX25GOExyYzEydTVFX2U2Vw?oc=5",
-      "date": "2026-10-26T21:14:06.000Z",
-      "summary": "연합뉴스"
-    },
-    {
-      "title": "청도경찰서, 수확철 농기계 교통사고 예방 총력",
-      "source": "데일리대구경북뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9vTVRLYWQwdjFLdXo1QnhlY0I4T0hIdFp3VHhJY1lhN25DNjBlcHJCTDk4QmlzNDZXSEVoMnFTZ2ZKMmM0czNsa1pRcnRERW5fUGhyQkg5cHY3dHJaWmZGd21hV2NrQQ?oc=5",
-      "date": "2026-10-26T23:55:53.000Z",
-      "summary": "데일리대구경북뉴스"
-    },
-    {
-      "title": "케이메디허브-경희대 정밀의료학과, 신약개발 협력 MOU",
+      "title": "식약처, 디지털의료기기 허가·심사 가이드라인 13종 안내",
       "source": "히트뉴스",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0tdU1ZSWRYbzc1NDRTMUdrdHIzQ2lfR1NKRDY3a2psbWhTNjFTLVlaYUVWQW16SXZiaEh3UnJRMTFiZFVtaThvY0RTTnZtQXRnTjN3aWJfNE9GUXRsaVowUGhNMUJNQlB1Zmo4?oc=5",
-      "date": "2026-10-26T23:21:57.000Z",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5DX3BYLXJ4emJUcW92bFZDZjNBcnhmbllSNzh3SEJ4d0tpMkZqVl9FUEdPeF9uYmFfUEVDZXFsUFd0VGdxbVVrZnJxNUlfYk1PYmpXQVJFZEs0SEI1Z2M0MzF0RlZjOVRIWGxz?oc=5",
+      "date": "2026-10-27T23:10:14.000Z",
       "summary": "히트뉴스"
     },
     {
-      "title": "앤트로픽, IPO 서류서 사업 위험 공개…AI 보안 사고부터 데이터센터 반발까지",
-      "source": "AI타임스",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9mdUxCa3k3ZHdxLUV3WmR6RzNsa0JjSHNpNkxHSktSdWdxTGMweTduY285LXFCV3RXMXA2M3V2N2JzdHdjRk55cjVTaG1xUklKXzdEZmoySUh0blg2cXJwOXFhdHc2cm9qVkE?oc=5",
-      "date": "2026-10-26T21:28:25.000Z",
-      "summary": "AI타임스"
+      "title": "이찬진 \"전날 주요 금투사서 해킹 사고 발생\"",
+      "source": "연합인포맥스",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB0cTg1RFFQRG9WbnU1NWlBT0NIelk1aUpnVUtrS3NrRjBhZnFQNHh1cUIwOG5aMl9xY2ltWmlibjVvbFFrRzFXYWU5T1hHS1MxbzNGMEhhTG5uQVRKU2JQZEQwZFI1ZmViYzBwbjk3LWvSAXRBVV95cUxOMjZpOXhMSWI1dVFXS0hkVko1SjhZeGZyempCdXNkWUxMd3JfbjdPbjFvZkJGMk94b2JNZnFNSG9EOTdLVTJEQ2JBTzBEVmw3TXNXQXB1bGdzeWNmWDlnRk9KUXpNU2sya1BxOG9kQ1d1Z3ZrZQ?oc=5",
+      "date": "2026-10-27T23:26:32.000Z",
+      "summary": "연합인포맥스"
     },
     {
-      "title": "질병관리청, 병원기반 인간 마이크로바이옴 연구 후속사업 공청회 개최",
-      "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBOUG03NnhzVzFJMVNleTZYdGhEMDZIRkdyNzRjOVNHMDY4N3RnUkhTd0Z3elVLYk5qdjR3T3FjMnVOWkJfeUQ1SkZvMkFrRGkyUVZ4SQ?oc=5",
-      "date": "2026-10-26T18:02:00.000Z",
-      "summary": "MEDI:GATE NEWS"
+      "title": "“쿵 소리에 몸이 먼저”…퇴근길 소방관, 교통사고 신속구호(영상)",
+      "source": "동아일보",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5kTTMteFRqTWdrRG1Db1RZTEswMGpNdTNNYk9yQzBRZVkwUVlRTXdmbklRcE03UE52NGZvcnE3WDVsbEVkS20zUVBiS3J2NlhNVVdGeFQtdzM0MUEtNDI0eEJ2UXp2MzM1MFZ0azNMdXhaUlE3WVHSAWZBVV95cUxON2lJSHhqTUtJSF9zYWRuWnVYcGE3ejM4TVFHa1RuSnRUYTduWXlldXlmelFzVURIS0Qzd3d1QTVMVERHYkFld1FqdlhUcnRFOEJNODhqakQza1pzekRtV1EwQ3dReGc?oc=5",
+      "date": "2026-10-27T21:37:00.000Z",
+      "summary": "동아일보"
     },
     {
-      "title": "26일 차량 추돌사고 2건 발생…사상자 10명 발생",
-      "source": "기호일보",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE41TWNtTHlPdUQzNnNjRlBfNlhNYmR1U2ZZeWR1SEpmdkhhcnJ1eUtUZVhsTGpDZGd5aTFRT3hKZWFRWFQ3ZlZXZDluQ3hwRDBqMEg0a1haLUc4MFdOZzFsRjB3cEQ1cFZES3RUdUdFNA?oc=5",
-      "date": "2026-10-26T08:41:00.000Z",
-      "summary": "기호일보"
+      "title": "[김희진 교수의 수면의학] 졸린데도 휴대폰을 놓지 못하고 계속 보는 이유는?",
+      "source": "헬스경향",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBYTjBLbUx2S3BucGFKMUJLaHhRSnBLV2hOYVpJdmdUYXdMYTlUTHNibE9oUm5kSjZxZzNaWVhsVlZWM0pXdUwtWDFVdnRuSXlOZkJQRExycnZvQ1p0Z2xPSlBPdTN2NnU3dmhz?oc=5",
+      "date": "2026-10-27T22:00:00.000Z",
+      "summary": "헬스경향"
+    },
+    {
+      "title": "교통사고 사망자 한 해 14명 줄였다… 충남도, ‘교통안전 평가’ 전국 9개 도 1위 달성",
+      "source": "문화일보",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBrZ0Q1R1l4ejRWMkpROFZZcnFxTmJweGRDeF9BeWE3UjlnSTlpdUYwcFdBWk13Z21DNWVEZERoMzVHVHB6MzdvQTljMzNfeHE2?oc=5",
+      "date": "2026-10-27T22:39:21.000Z",
+      "summary": "문화일보"
+    },
+    {
+      "title": "아크릴, 자체 의료 AI 모델 기반 'AI 병원' 구축 사업 확대",
+      "source": "뉴스핌",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9jdkl1NVRoTnl2TkN0X2FiQkhFVFlXMEwzd2kyVFF6bC1hQmxKNkpJdS1sSmIxaHR0TWJ3OVdYQjVLNHdpVm8tTEt0UzI5MHUwdUhpTGtqeHBYWU5D?oc=5",
+      "date": "2026-10-28T00:08:00.000Z",
+      "summary": "뉴스핌"
+    },
+    {
+      "title": "가축전염병 살처분 보상금 상한 80%→90% 상향",
+      "source": "축산신문",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBWT3pUMGxuVkJCM3FYVjIwUFhadE1VbDA0TEk2cHhud0UxRjVObW5DRm9KZGU5eXpkb2Y3MUJFU1phaE5RRGxuVUR6MFVtSUlMdkFMX2otU3BObVlLMUQwZmR5Mzd3QVdx?oc=5",
+      "date": "2026-10-28T00:07:35.000Z",
+      "summary": "축산신문"
+    },
+    {
+      "title": "아크릴, 정부 'AI 기본 의료' 전략 발맞춰 'AI 병원' 구현 본격화",
+      "source": "아시아경제",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1IaVV6dDBrZWZYWEZOZjZ0eldUSlVMR0l4blRSWUg2cmlzcktLNmV3bk1VSG5JV183LXlEQXZueTQwallCcUhPbkpKd3BjbWxJQ09QeTI3bjM2ek9ySm9INw?oc=5",
+      "date": "2026-10-28T00:04:49.000Z",
+      "summary": "아시아경제"
+    },
+    {
+      "title": "[리포트]광역시라 빠졌다? 동 단위 농촌지역 '의료 공백 우려'",
+      "source": "대전MBC",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE50MHdDOHNxLTByYkRQcjl0ZEZ5dWVuaXdQNHlKMEJrUHc0RmhiM3Q4cUVwZHVrOW1FNW1aZ0dYdUU2dlZuRnJ0QU5jWGxaa00?oc=5",
+      "date": "2026-10-27T22:45:00.000Z",
+      "summary": "대전MBC"
+    },
+    {
+      "title": "‘첨단재생의료의 두 얼굴’ 중국은 연구·허가 연계‥일본은 안전·환자 부담",
+      "source": "약업신문",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvWGhQVmwzQ1luYjdlbkY5LUlTX2h0TEZXMG9OcUp3Rnk3WW5lWkdmY0VsWHBjZ3htLUs2anFyZnZFc0hPeVlCb0pCSmRhcEhicjhpamxFWUZidms3a2xHanZZV1BEZw?oc=5",
+      "date": "2026-10-27T21:01:00.000Z",
+      "summary": "약업신문"
     }
   ]
 }
