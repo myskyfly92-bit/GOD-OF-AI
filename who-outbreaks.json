@@ -9,6 +9,14 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "Announcement of candidates for the position of WHO Director-General",
+      "date": "2026-10-29T18:18:23Z",
+      "summary": "Seven candidates have been proposed by Member States of the World Health Organization for the position of WHO Director-General. The candidates will engage with Member States and Associate Members on 18–19 November 2026 at the first candidates’ forum at WHO Headquarters in Geneva.",
+      "link": "https://www.who.int/news/item/29-10-2026-announcement-of-candidates-for-the-position-of-who-director-general",
+      "newsType": "Note for Media"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "Message by the Director of the Department of Immunization, Vaccines and Biologicals at WHO - October 2026",
       "date": "2026-10-29T12:36:34Z",
       "summary": "From 5 to 8 October, the Strategic Advisory Group of Experts on Immunization (SAGE) met to review the evidence on vaccines against human papillomavirus (HPV), diphtheria, yellow fever, mpox and polio, and to consider the role of vaccination in the ongoing Bundibugyo virus disease outbreak.",
@@ -128,14 +136,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Call for Proposals for hosting the 20th International Conference of Drug Regulatory Authorities (ICDRA)",
-      "date": "2026-10-20T13:58:45Z",
-      "summary": "1. Background and purposeThe International Conference of Drug Regulatory Authorities (ICDRA) is a flagship global regulatory forum co-convened by the World Health Organization (WHO). Since its inception in 1980, ICDRA has provided a unique platform for heads of national regulatory authorities for medical products (NRAs), senior regulators, policymakers, international organizations, and key stakeholders to exchange knowledge and experiences, strengthen international regulatory cooperation, and ad",
-      "link": "https://www.who.int/news/item/20-10-2026-call-for-proposals-for-hosting-the-20th-international-conference-of-drug-regulatory-authorities-(icdra)",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Middle East respiratory syndrome coronavirus - Kingdom of Saudi Arabia",
       "date": "2026-10-15T16:22:00Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON613"
     }
   ],
-  "generatedAt": "2026-10-29T17:50:02.680801+00:00"
+  "generatedAt": "2026-10-29T22:11:18.892413+00:00"
 }
