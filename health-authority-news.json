@@ -1,13 +1,34 @@
 {
-  "generatedAt": "2026-10-28T00:31:58.563Z",
+  "generatedAt": "2026-10-29T00:57:23.684Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
+    {
+      "title": "여행건강알림e : HOME",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKTWN3aV9fQVZCVG45d1V3LTQyUXMwSlFEM1lGU2h6Z05hYk5FdEM4N0lTSG5QVjY4UEY4ZUU4TGtkTGM3X0lDdmxQWmdPcmVuN1FDMVpQdDZxQmc?oc=5",
+      "date": "2026-09-30T14:38:13.000Z"
+    },
+    {
+      "title": "채용공고",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
+      "date": "2025-12-16T15:48:42.000Z"
+    },
     {
       "title": "2026년 감염병 표본감시 주간소식지 42주차",
       "source": "질병관리청 감염병포털",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNGZYYXJPejhNZzNGRUdoWEhmQWdmZTdxTTdOZVRXaURhUnBjTWpnYWkzUXZ0MU9oYlR1aFliT1BjSUt5ZnhMNEhQWUl4SU0zZ1dCa1hzTHMxRDFLTGRlWEg5dVA0VW40QzMwSzlFTm94c2pJeGx1QUg4VHVaZFIySzdyQTZaSXdVdmNkcGdoVC1KRlhJWnFZazVON3RKMTNSY2d2TzFB?oc=5",
       "date": "2026-10-22T10:10:37.000Z"
+    },
+    {
+      "title": "지역·필수의료 수가 2.7조 원 우선 투입, ‘27년 1월부터 본격 수가 구조 혁신",
+      "source": "보건복지부 대표홈페이지",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMGZndVRCRVluQ0xlNGRlek9HaGc0VHNMUEt0UElZeVFPeGJuc005OVZhNmNzZW5FOXMtbHd4Y0k1NHFxMFFBSmdBVE95VXk1WWdZZTREdU0yaUFHMHJtWkgwTzk0eHRBMi1adWdNVXpmTDNNODBlcGthTkgwa2ZVdlR5eVhaNnpfRGtKRmZ4V2hncnd5ZnZQdUxDOA?oc=5",
+      "date": "2026-10-28T07:50:00.000Z"
     },
     {
       "title": "건강교육 자료실",
@@ -35,7 +56,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-27T11:40:10.000Z"
+      "date": "2026-10-28T08:48:01.000Z"
     },
     {
       "title": "감시체계 연보",
@@ -52,39 +73,18 @@
       "date": "2024-06-10T02:47:27.000Z"
     },
     {
-      "title": "채용공고",
+      "title": "손상통계",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
-      "date": "2025-12-16T15:48:42.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5tUkYwOVE0TXNPRGdUeWxpOGJIMDNxemRldm9FQ2lKVDROTldNYTNVSXhVQlNuT3FUN25vUm1NbVdiYUtG?oc=5",
+      "date": "2021-11-03T09:42:59.000Z"
     },
     {
-      "title": "감염병 위험평가",
+      "title": "경북권질병대응센터",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9QelRoMHgydi1mLWFhbEszMXJZR04yLWo3NUxZY2t4bXJvM1pGRmlvbW1WVjJ1QjBuM0JSM0VBck9xOUZGQmxsMXc0S3hFSlZlWm4yZlZB?oc=5",
-      "date": "2025-12-16T15:55:47.000Z"
-    },
-    {
-      "title": "신고현황",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9mak9keTVpWE5paWNwaGhNMHhMdF9ueXVoNGZNTktJOGZCYWdaOS1IYmdOZUxQcUxaNUFpMnRrRUpQcjBsOGVuRzI5YzE0UHd5SVktam5R?oc=5",
-      "date": "2025-12-16T16:43:37.000Z"
-    },
-    {
-      "title": "수인성·식품매개 감염병",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZQl9OTjlxM2NaZDY4dXZ1LU51dUNFTGZsYWstcjJpNG5GajVQa2N6OWozdk9RdHpSZi1USGVEUTRqX2J6YWRuUU40c3dvdmVndUZJVTln?oc=5",
-      "date": "2025-12-16T14:07:01.000Z"
-    },
-    {
-      "title": "만성질환 감시 및 정보 통합 수집·제공",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1peGhRZjh4aXNZLW9nZW9Lb3FGY1hEbV82d3I5WFBfdllCRUhmdXBqRTRGLXFxZXd3UWxUcXVYRFc5R29IOUM3b1ROQmdXZDVnamthWEdB?oc=5",
-      "date": "2026-08-23T17:35:43.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBrOTN0b1RGTXJXZ3Bud1U2NEdUSUF1dnNkUHpNY3BMbEctQ2NKN21Na2d0Qkc5VG9xdTA1bDlFQ1pLdk9zeE1PS3o3OURVVXRJS281WHk4alVJbVE?oc=5",
+      "date": "2025-12-16T12:28:30.000Z"
     }
   ]
 }
