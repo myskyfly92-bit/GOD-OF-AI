@@ -9,6 +9,30 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "Message by the Director of the Department of Immunization, Vaccines and Biologicals at WHO - October 2026",
+      "date": "2026-10-29T12:36:34Z",
+      "summary": "From 5 to 8 October, the Strategic Advisory Group of Experts on Immunization (SAGE) met to review the evidence on vaccines against human papillomavirus (HPV), diphtheria, yellow fever, mpox and polio, and to consider the role of vaccination in the ongoing Bundibugyo virus disease outbreak.",
+      "link": "https://www.who.int/news/item/29-10-2026-message-by-the-director-of-the-department-of-immunization--vaccines-and-biologicals-at-who---october-2026",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO country leaders strengthen skills to advance tobacco control",
+      "date": "2026-10-29T08:00:00Z",
+      "summary": "WHO Representatives and Heads of Country Offices from 13 countries gathered at the WHO Academy in Lyon, France, on 29–30 September 2026 for the sixth Executive Leadership Programme for Tobacco Control, strengthening the leadership skills, strategic partnerships and collaboration needed to accelerate progress against tobacco use.",
+      "link": "https://www.who.int/news/item/29-10-2026-who-country-leaders-strengthen-skills-to-advance-tobacco-control",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Statement by WHO Director-General Dr Tedros Adhanom Ghebreyesus concerning the train accident in Spain",
+      "date": "2026-10-28T15:58:55Z",
+      "summary": "We came to Madrid this week as partners in the Global Obesity Summit, to talk about health, and how we can help people everywhere live longer, fuller lives. This morning, that purpose tragically overshadowed by a terrible train accident south of this city that has taken many lives.",
+      "link": "https://www.who.int/news/item/28-10-2026-statement-by-who-director-general-dr-tedros-adhanom-ghebreyesus-concerning-the-train-accident-in-spain",
+      "newsType": "Statement"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO advises coexistence of digital and non-digital ship-related health documents",
       "date": "2026-10-28T13:00:00Z",
       "summary": "WHO calls on States Parties to facilitate the coexistence of digital and non-digital formats of ship-related health documents, including the Ship Declaration of Health (SDH) and Ship Sanitation Certificates (SSC), following the 2024 amendments to the International Health Regulations (2005) (IHR), which entered into force for most States Parties on 19 September 2025.",
@@ -112,30 +136,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "WHO report examines inequalities in noncommunicable diseases and their risk factors",
-      "date": "2026-10-20T08:30:00Z",
-      "summary": "The State of inequality: noncommunicable diseases and their risk factors report published today by the World Health Organization (WHO) provides a global assessment of inequalities in noncommunicable diseases (NCDs) and their risk factors, examining differences between population groups within countries. The report covers four major NCDs – cancer, cardiovascular diseases, chronic respiratory diseases and diabetes – and key risk factors including tobacco and alcohol use, obesity and unhealthy diet",
-      "link": "https://www.who.int/news/item/20-10-2026-who-report-examines-inequalities-in-noncommunicable-diseases-and-their-risk-factors",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "One in four doctors nearing retirement age as WHO warns of global health workforce gap",
-      "date": "2026-10-19T12:09:51Z",
-      "summary": "The World Health Organization (WHO) has published the National health workforce accounts: health workforce levels and trends 2026, the first in an annual series of reports offering the most comprehensive global picture of health workforce levels, trends and challenges based on official country data shared through the National Health Workforce Accounts (NHWA). In the past two decades, health workforce density (medical doctors, nursing and midwifery personnel, dentists and pharmacists) has increas",
-      "link": "https://www.who.int/news/item/18-09-2026-one-in-four-doctors-nearing-retirement-age-as-who-warns-of-global-health-workforce-gap",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Traditional medicine, resilience and well-being at World Health Summit 2026",
-      "date": "2026-10-19T12:00:00Z",
-      "summary": "Rewatch the event Conversation on traditional medicine continued this year at the World Health Summit (WHS) 2026 in Berlin. This marked the third event at the WHS since 2025, in which a dedicated session explored the challenges and opportunities of traditional medicine in advancing global health goals. The panel, moderated by Dr Hiba Boujnah, Head of the WHO Collaborating Centre at the Charité Competence Center for Traditional and Integrative Medicine (CCCTIM), reflected on the question, what ca",
-      "link": "https://www.who.int/news/item/19-10-2026-traditional-medicine--resilience-and-well-being-at-world-health-summit-2026",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Middle East respiratory syndrome coronavirus - Kingdom of Saudi Arabia",
       "date": "2026-10-15T16:22:00Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON613"
     }
   ],
-  "generatedAt": "2026-10-29T11:56:04.927473+00:00"
+  "generatedAt": "2026-10-29T17:50:02.680801+00:00"
 }
