@@ -67,9 +67,9 @@
   },
   "제2급": {
    "diseases": 21,
-   "base": 2034,
-   "prev": 1536,
-   "provisional": 1707,
+   "base": 2033,
+   "prev": 1537,
+   "provisional": 1732,
    "outnatn": 0,
    "trend": [
     2080,
@@ -80,18 +80,18 @@
     1902,
     1918,
     1916,
-    1462,
-    2088,
-    1536,
-    2034
+    1461,
+    2085,
+    1537,
+    2033
    ]
   },
   "제3급": {
    "diseases": 28,
-   "base": 321,
+   "base": 324,
    "prev": 156,
-   "provisional": 405,
-   "outnatn": 10,
+   "provisional": 422,
+   "outnatn": 11,
    "trend": [
     202,
     207,
@@ -101,10 +101,10 @@
     206,
     236,
     214,
-    133,
+    134,
     212,
     156,
-    321
+    324
    ]
   }
  },
@@ -112,46 +112,46 @@
   {
    "name": "카바페넴내성장내세균목(CRE) 감염증",
    "grade": "제2급",
-   "base": 1287,
+   "base": 1284,
    "prev": 881,
-   "provisional": 1050,
-   "dmstc": 1287,
+   "provisional": 1051,
+   "dmstc": 1284,
    "outnatn": 0
   },
   {
    "name": "수두",
    "grade": "제2급",
    "base": 446,
-   "prev": 375,
-   "provisional": 392,
+   "prev": 374,
+   "provisional": 411,
    "dmstc": 446,
    "outnatn": 0
   },
   {
    "name": "성홍열",
    "grade": "제2급",
-   "base": 149,
+   "base": 150,
    "prev": 147,
-   "provisional": 145,
-   "dmstc": 149,
+   "provisional": 147,
+   "dmstc": 150,
    "outnatn": 0
   },
   {
    "name": "쯔쯔가무시증",
    "grade": "제3급",
-   "base": 110,
+   "base": 112,
    "prev": 21,
-   "provisional": 237,
-   "dmstc": 110,
+   "provisional": 245,
+   "dmstc": 112,
    "outnatn": 0
   },
   {
    "name": "C형간염",
    "grade": "제3급",
-   "base": 103,
-   "prev": 65,
-   "provisional": 95,
-   "dmstc": 103,
+   "base": 102,
+   "prev": 64,
+   "provisional": 96,
+   "dmstc": 102,
    "outnatn": 0
   },
   {
@@ -159,7 +159,7 @@
    "grade": "제2급",
    "base": 96,
    "prev": 74,
-   "provisional": 79,
+   "provisional": 82,
    "dmstc": 96,
    "outnatn": 0
   },
@@ -168,7 +168,7 @@
    "grade": "제3급",
    "base": 44,
    "prev": 27,
-   "provisional": 34,
+   "provisional": 40,
    "dmstc": 41,
    "outnatn": 3
   },
@@ -204,7 +204,7 @@
    "grade": "제3급",
    "base": 10,
    "prev": 3,
-   "provisional": 7,
+   "provisional": 8,
    "dmstc": 10,
    "outnatn": 0
   },
@@ -218,6 +218,15 @@
    "outnatn": 0
   },
   {
+   "name": "뎅기열",
+   "grade": "제3급",
+   "base": 6,
+   "prev": 3,
+   "provisional": 3,
+   "dmstc": 0,
+   "outnatn": 6
+  },
+  {
    "name": "E형간염",
    "grade": "제2급",
    "base": 5,
@@ -227,21 +236,12 @@
    "outnatn": 0
   },
   {
-   "name": "뎅기열",
+   "name": "말라리아",
    "grade": "제3급",
-   "base": 5,
-   "prev": 3,
-   "provisional": 3,
-   "dmstc": 0,
-   "outnatn": 5
-  },
-  {
-   "name": "백일해",
-   "grade": "제2급",
-   "base": 3,
-   "prev": 7,
-   "provisional": 8,
-   "dmstc": 3,
+   "base": 4,
+   "prev": 5,
+   "provisional": 2,
+   "dmstc": 4,
    "outnatn": 0
   }
  ],
@@ -250,7 +250,7 @@
   {
    "name": "뎅기열",
    "grade": "제3급",
-   "count": 11
+   "count": 12
   },
   {
    "name": "매독",
@@ -283,7 +283,7 @@
    "count": 1
   }
  ],
- "totalBase": 2355,
- "totalPrev": 1692,
- "generatedAt": "2026-10-28T01:44:00.196789+00:00"
+ "totalBase": 2357,
+ "totalPrev": 1693,
+ "generatedAt": "2026-10-29T01:56:55.283529+00:00"
 }
