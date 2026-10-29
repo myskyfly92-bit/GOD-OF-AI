@@ -257,8 +257,15 @@ async function translateClaude(text, from, kind) {
     return ((j.content || []).map((c) => c.text || "").join("") || "").trim();
   } catch (e) { return ""; } finally { clearTimeout(tm); }
 }
+// "내일 목요일은 공휴일인가?" 같은 질문형 제목은 검색 유입용 기사가 많아 본문 없이는 달력에 올리지 않는다
+function isQuestionOnly(n) {
+  const t = String(n.title || ""), k = String(n.titleKo || "");
+  const q = /(^|[\s«"'(])هل\s|؟|\?\s*$/.test(t) || /\?\s*$|(인가|일까|인가요|할까)\?/.test(k);
+  return q && String(n.body || "").trim().length < 80;
+}
 // 갑작스러운 휴무 기사 → 날짜·사유·범위를 AI로 뽑아 달력에 올린다 (키 없으면 건너뜀)
 async function extractHoliday(n) {
+  if (isQuestionOnly(n)) return null;
   if (!CLAUDE_KEY || claudeOff || claudeCalls >= CLAUDE_MAX_CALLS) return null;
   claudeCalls++;
   const pub = String(n.date || "").slice(0, 10);
@@ -268,7 +275,7 @@ async function extractHoliday(n) {
       method: "POST",
       headers: { "content-type": "application/json", "x-api-key": CLAUDE_KEY, "anthropic-version": "2023-06-01" },
       body: JSON.stringify({ model: CLAUDE_MODEL, max_tokens: 300, temperature: 0,
-        system: "이라크 관공서 휴무(공휴일·업무 중단) 발표 기사에서 정보를 뽑는다. JSON 한 줄만 출력한다. 모르면 null.",
+        system: "이라크 관공서 휴무(공휴일·업무 중단) 발표 기사에서 정보를 뽑는다. JSON 한 줄만 출력한다. 정부·주정부가 휴무를 실제로 결정·발표했다고 기사에 분명히 나온 경우만 뽑고, 질문형 제목('~은 휴일인가?')만 있고 결정 내용이 안 보이거나, 휴무가 아니라는 내용이거나, 정기 주말(금·토)이면 null.",
         messages: [{ role: "user", content: `기사 게시일: ${pub} (이라크 시간 기준, '내일'·'일요일' 같은 말은 이 날짜 기준으로 계산)\n\n${text}\n\n다음 형식으로 답해: {"dates":["YYYY-MM-DD"],"reason":"휴무 사유를 한국어 12자 안으로 (예: 파티마 순교일, 이맘 카딤 추모일, 선거일)","scope":"전국" 또는 "일부 주","provinces":["바그다드","키르쿠크"],"baghdad":true/false/null}` }] }),
     });
     const j = await res.json().catch(() => ({}));
@@ -533,13 +540,17 @@ async function main() {
     for (const a of alerts) {
       if (a.kind !== "holiday") continue;
       const old = prevAl.get(a.link);
-      if (old && old.hol !== undefined) { a.hol = old.hol; continue; }
       const n = list.find((x) => x.link === a.link) || a;
+      if (isQuestionOnly(n)) { a.hol = null; continue; }
+      if (old && old.hol !== undefined) { a.hol = old.hol; continue; }
       a.hol = await extractHoliday(n);
     }
     // 달력용 '발표된 휴무' 목록: 예전 것 + 새로 뽑은 것 (최근 60일·앞으로 30일)
     const keepFrom = new Date(Date.now() - 60 * 864e5).toISOString().slice(0, 10), keepTo = new Date(Date.now() + 30 * 864e5).toISOString().slice(0, 10);
-    const ann = new Map(((prevFile.announcedHolidays) || []).map((h) => [h.date, h]));
+    // 예전에 올렸던 것 중 질문형 기사에서 나온 건 내린다
+    const qLinks = new Set(alerts.filter((a) => a.kind === "holiday" && isQuestionOnly(list.find((x) => x.link === a.link) || a)).map((a) => a.link));
+    ((prevFile.alerts) || []).forEach((a) => { if (a.kind === "holiday" && isQuestionOnly(a)) qLinks.add(a.link); });
+    const ann = new Map(((prevFile.announcedHolidays) || []).filter((h) => !qLinks.has(h.link)).map((h) => [h.date, h]));
     for (const a of alerts) {
       if (!a.hol) continue;
       for (const d of a.hol.dates) {

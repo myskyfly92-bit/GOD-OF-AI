@@ -1005,27 +1005,10 @@
       "source": "جريدة آخر الأخبار",
       "date": "2026-10-28T14:28:17.000Z",
       "count": 1,
-      "hol": {
-        "dates": [
-          "2026-10-29"
-        ],
-        "reason": "목요일 정기 휴무",
-        "scope": "전국",
-        "provinces": null,
-        "baghdad": true
-      }
+      "hol": null
     }
   ],
-  "announcedHolidays": [
-    {
-      "date": "2026-10-29",
-      "reason": "목요일 정기 휴무",
-      "scope": "전국",
-      "baghdad": true,
-      "provinces": [],
-      "link": "https://news.google.com/rss/articles/CBMitAJBVV95cUxNM3lhQTJTOG9yZ3BId0puR3RMYmk4N3RmanVUdkxWcVI5bEdyOHloblFCX0dEN2VQYUpyOTRpQm45b05Ud3RFYmtmai1UZ0R6YmZKdnBJTUdVQ0N0MVBqSFF3a1ZuakRQbDlmYlExZTNXblVSZnVweVVSbEU0S1p4Q0FZVlJpQ3gxV0tYLUdmT1ZUajZldVotSGhHcWtNTlJDR25KUzhmM0duV3pfV3BlVzNoZTlXTkd2aTVyY041NlUydmJrbjJ6RUhPQmltcUFiZ3E2LWpkUGkxN1VMOGhlWDcyUGJCNGxMekZIdGFJMDI5bWJPR0FVOTdSU0lzREhZdFdna1Raa29ma2NOcV9SUzBlYkN1QlNwbUZqVC10N0xtRi1SeDZHMURucWlKZV9mSWpvdA?oc=5"
-    }
-  ],
+  "announcedHolidays": [],
   "brief": [
     {
       "lv": "y",
