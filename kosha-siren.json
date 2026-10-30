@@ -1,7 +1,47 @@
 {
  "source": "https://portal.kosha.or.kr/archive/imprtnDsstrAlrame/CSADV50000/CSADV50000M01",
- "generatedAt": "2026-10-27T14:29:31.460Z",
+ "generatedAt": "2026-10-30T12:51:42.746Z",
  "items": [
+  {
+   "no": "918",
+   "title": "(261030)중대재해 발생 알림(3)",
+   "day": "2026-10-30",
+   "seq": 3,
+   "img": "assets/siren/918.webp",
+   "thumb": "assets/siren/918_t.webp",
+   "posted": "2026-10-30",
+   "firstSeen": "2026-10-30T12:51:42.746Z"
+  },
+  {
+   "no": "917",
+   "title": "(261030)중대재해 발생 알림(2)",
+   "day": "2026-10-30",
+   "seq": 2,
+   "img": "assets/siren/917.webp",
+   "thumb": "assets/siren/917_t.webp",
+   "posted": "2026-10-30",
+   "firstSeen": "2026-10-30T12:51:42.746Z"
+  },
+  {
+   "no": "916",
+   "title": "(261030)중대재해 발생 알림(1)",
+   "day": "2026-10-30",
+   "seq": 1,
+   "img": "assets/siren/916.webp",
+   "thumb": "assets/siren/916_t.webp",
+   "posted": "2026-10-30",
+   "firstSeen": "2026-10-30T12:51:42.746Z"
+  },
+  {
+   "no": "915",
+   "title": "(261028)중대재해 발생 알림(1)",
+   "day": "2026-10-28",
+   "seq": 1,
+   "img": "assets/siren/915.webp",
+   "thumb": "assets/siren/915_t.webp",
+   "posted": "2026-10-30",
+   "firstSeen": "2026-10-30T12:51:42.746Z"
+  },
   {
    "no": "914",
    "title": "(261027)중대재해 발생 알림(4)",
@@ -260,46 +300,6 @@
    "img": "assets/siren/886.webp",
    "thumb": "assets/siren/886_t.webp",
    "posted": "2026-10-14",
-   "firstSeen": "2026-10-25T06:51:41.433Z"
-  },
-  {
-   "no": "885",
-   "title": "(261013)중대재해 발생 알림(2)-외국어 추가",
-   "day": "2026-10-13",
-   "seq": null,
-   "img": "assets/siren/885.webp",
-   "thumb": "assets/siren/885_t.webp",
-   "posted": "2026-10-14",
-   "firstSeen": "2026-10-25T06:51:41.433Z"
-  },
-  {
-   "no": "884",
-   "title": "(261013)중대재해 발생 알림(1)-외국어 추가",
-   "day": "2026-10-13",
-   "seq": null,
-   "img": "assets/siren/884.webp",
-   "thumb": "assets/siren/884_t.webp",
-   "posted": "2026-10-14",
-   "firstSeen": "2026-10-25T06:51:41.433Z"
-  },
-  {
-   "no": "883",
-   "title": "(261008)중대재해 발생 알림(2)",
-   "day": "2026-10-08",
-   "seq": 2,
-   "img": "assets/siren/883.webp",
-   "thumb": "assets/siren/883_t.webp",
-   "posted": "2026-10-08",
-   "firstSeen": "2026-10-25T06:51:41.433Z"
-  },
-  {
-   "no": "882",
-   "title": "(261008)중대재해 발생 알림(1)",
-   "day": "2026-10-08",
-   "seq": 1,
-   "img": "assets/siren/882.webp",
-   "thumb": "assets/siren/882_t.webp",
-   "posted": "2026-10-08",
    "firstSeen": "2026-10-25T06:51:41.433Z"
   }
  ]
