@@ -1,152 +1,37 @@
 {
-  "generatedAt": "2026-10-30T06:33:41.577Z",
+  "generatedAt": "2026-10-30T13:41:14.041Z",
   "items": [
     {
-      "title": "역삼동 화재 현장",
+      "title": "공장 화재 진압",
       "source": "뉴시스",
-      "link": "https://www.newsis.com/view/NISI20261020_0021497314",
-      "date": "2026-10-30T04:25:28.000Z",
+      "link": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
+      "date": "2026-10-30T13:17:47.000Z",
       "lang": "ko",
-      "titleKo": "역삼동 화재 현장",
-      "url": "https://www.newsis.com/view/NISI20261020_0021497314",
-      "body": "[서울=뉴시스] 조성우 기자 = 20일 서울 강남구 역삼동의 한 빌딩에서 화재가 발생해 소방대원들이 현장 수습을 하고 있다. 2026.10.20. xconfind@newsis.com",
-      "bodyKo": "[서울=뉴시스] 조성우 기자 = 20일 서울 강남구 역삼동의 한 빌딩에서 화재가 발생해 소방대원들이 현장 수습을 하고 있다. 2026.10.20. xconfind@newsis.com",
+      "titleKo": "공장 화재 진압",
+      "url": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
+      "body": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
+      "bodyKo": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
       "tried": true,
-      "count": 8,
+      "count": 20,
       "sources": [
-        "의정신문 서울시티",
-        "글로벌뉴스통신GNA",
-        "뉴시스",
-        "송파타임즈",
-        "디스커버리뉴스(DISCOVERYNEWS)",
-        "경북매일"
-      ],
-      "related": [
-        {
-          "titleKo": "서울특별시의회 도시안전건설위원회, \"강남구 개포동 구룡마을 화재 현장 긴급 방문\"",
-          "source": "의정신문 서울시티",
-          "link": "https://www.seoulcity.co.kr/news/articleView.html?idxno=549649"
-        },
-        {
-          "titleKo": "서울시의회 도시안전건설위원회, 구룡마을 화재 현장 긴급 방문",
-          "source": "글로벌뉴스통신GNA",
-          "link": "https://www.globalnewsagency.kr/news/articleView.html?idxno=501928"
-        },
-        {
-          "titleKo": "서울시의회 도시건설위, 구룡마을 화재현장 방문",
-          "source": "송파타임즈",
-          "link": "https://www.songpatimes.com/news/articleView.html?idxno=333181"
-        },
-        {
-          "titleKo": "서울시의회 도시안전건설위, 강남구 구룡마을 화재 현장 긴급 방문",
-          "source": "디스커버리뉴스(DISCOVERYNEWS)",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE53SG1pb01VclJXTnFEOFRxRHh5U3ZqTHNZU0NNYnJNR2lHS1VocHBZcFBSaHlGNlR5dl9UYWZzTE95c3o5OG1MOFlTbm1BMG1XbDRaeWYzbkkwTnRkTlhSZ05qRTMtdEo3OWZjQ2ljZGNoZw?oc=5"
-        },
-        {
-          "titleKo": "포항 광명산단 공장 철거 현장 화재…3시간여 만에 진화",
-          "source": "경북매일",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YZS1rY3k4UVVBX3F3U2FJdXdfb3pjM0hOMHJENl9BVzljVk0tTTZlaE9pLTRmaEgxNUZ1d21RQ2dUbXIwLTNhczNlNGhRU2lHYXBBMUo2d05Ddw?oc=5"
-        }
-      ],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "구미 창고 화재 20분 만에 진화… 인명 피해 없어",
-      "source": "경북도민일보",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WcWgwdjFrM3ItUHhSdmw1ZGtJS2dSSDBZUjRyaWwxMkEwNmc3cVcwZ29VR1VrMEZpemhIc1dDZXMxNXpmemdlbTdrQ0JaNGkxeTFYZlJOc2d6TEhsVmgwSS1lamVPRDcxX1E?oc=5",
-      "date": "2026-10-30T04:11:41.000Z",
-      "lang": "ko",
-      "titleKo": "구미 창고 화재 20분 만에 진화… 인명 피해 없어",
-      "count": 8,
-      "sources": [
-        "نيو ترك بوست",
-        "경북도민일보",
-        "عراق اوبزيرفر",
-        "https://naynawaalghad.tv/",
-        "شبكة 964",
-        "وكالة الانباء العراقية (واع)"
-      ],
-      "related": [
-        {
-          "titleKo": "메르신의 담배 창고에서 화재 발생, 진화 완료",
-          "source": "نيو ترك بوست",
-          "link": "https://newturkpost.com/news/131220-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D8%AA%D8%A8%D8%BA-%D9%85%D8%B1%D8%B3%D9%8A%D9%86-%D8%B5%D8%A7%D8%B9%D9%82%D8%A9"
-        },
-        {
-          "titleKo": "민방위, 나자프 호수 인근 식품 창고 화재 진화…인명피해 없어",
-          "source": "عراق اوبزيرفر",
-          "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNQm1OZEtBY2VaWkJOZTdMeENSeDc0blFqcVdkU2dNUV9ZWUd6TWFuV2ZaNHhMWGZZODhOLUYyOHA2bWEyMWVOWHVlUEcwcEhRc1hGYy1pTGpveF9yZFdSZV85VEh0U2p4VWtiR3UwNk5FZUQ4ZXpnc3J5YmZlOWNrUTVNN3gyTkpMN1JFYkUybGpfTGNxYVpSZHh5WVV4UThDWkpqcE1uN0d3MnRaRVhnaUxpQUhxN2NBVmxhazFWaFBtSTBqc1l1cTlDdHRuNmVfZnc3QlNORWJLaWZuc1hmU1pHVzhwcWVad2U5N1B1UGZKdjhTYW02cnROamE5VlRtUkFaTVhMakNQY3N0ZjlVZXJQMGJOQXJBWVZ2Z0ZISEpIMTNDMlpRZXI2ZEVEai1kUnYwRWxaQXZKVXdDU2dVa2pFaUpoaE0?oc=5"
-        },
-        {
-          "titleKo": "바그다드 크라이아트 지역 전기기구 창고 화재, 소방대 13개 중대 투입해 진화",
-          "source": "https://naynawaalghad.tv/",
-          "link": "https://naynawaalghad.tv/13-%D9%81%D8%B1%D9%82%D8%A9-%D8%A5%D8%B7%D9%81%D8%A7%D8%A1-%D8%AA%D8%B3%D9%8A%D8%B7%D8%B1-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%AE%D8%B2%D9%86-%D9%84%D9%84%D8%A3%D8%AC%D9%87/"
-        },
-        {
-          "titleKo": "크레이아트에 소방대 13개 투입.. 전기용품 창고 화재",
-          "source": "شبكة 964",
-          "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBMNjV3X2M4a19WSHNOVlJtblJSS2d0bmJTcGFOWG5yLXc2ZXZYYWNoUVpyYVJ0NkM5ZlBrdkd6THpLdw?oc=5"
-        },
-        {
-          "titleKo": "소방당국, 크라이아트 지역 위반 창고 화재 진압",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://ina.iq/ar/local/277463-.html"
-        }
-      ],
-      "tag": "전기·배터리"
-    },
-    {
-      "title": "구룡마을 화재 원인 규명 2차 합동감식 착수…1지구부터 시작[현장]",
-      "source": "뉴시스",
-      "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261030_0003848293",
-      "date": "2026-10-30T04:07:54.000Z",
-      "lang": "ko",
-      "titleKo": "구룡마을 화재 원인 규명 2차 합동감식 착수…1지구부터 시작[현장]",
-      "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261030_0003848293",
-      "body": "[서울=뉴시스] 신항섭 기자 = 화재 원인을 규명하기 위한 2차 합동감식이 30일 오전 서울 강남구 개포동 구룡마을에서 시작됐다",
-      "bodyKo": "[서울=뉴시스] 신항섭 기자 = 화재 원인을 규명하기 위한 2차 합동감식이 30일 오전 서울 강남구 개포동 구룡마을에서 시작됐다",
-      "tried": true,
-      "count": 3,
-      "sources": [
-        "뉴시스",
-        "국제뉴스",
-        "스페셜타임스"
-      ],
-      "related": [
-        {
-          "titleKo": "경찰·소방·전기안전공사, 구룡마을 화재 합동감식 착수…원인 규명 나서",
-          "source": "국제뉴스",
-          "link": "https://www.gukjenews.com/news/articleView.html?idxno=3737098"
-        },
-        {
-          "titleKo": "구룡마을 화재 합동감식 착수…주민들 잿더미 현장서 탄식",
-          "source": "스페셜타임스",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9lQWdTWXJJNWhjXzRnV2liY1JRenZKeFd3bDJYNGsydlVnQjBoZTJMMHJUV1BGc2tUaUN5QzZFSVJrWEt4eUxLOVE3Q0hISm96SUhuZ2RfZXBjdUQ5a25HV0IxUEJxOWJ3R2stY2dzbVlDbFE?oc=5"
-        }
-      ],
-      "tag": "전기·배터리"
-    },
-    {
-      "title": "선박 배터리 화재 어떻게 막나",
-      "source": "해양통신",
-      "link": "https://oceanpress.co.kr/news/article.html?no=31641",
-      "date": "2026-10-30T01:09:31.000Z",
-      "lang": "ko",
-      "titleKo": "선박 배터리 화재 어떻게 막나",
-      "url": "https://oceanpress.co.kr/news/article.html?no=31641",
-      "body": "친환경 선박과 전기차 해상운송이 확대되는 가운데, 선박 내 배터리 화재를 예방하고 피해 확산을 막기 위한 각국의 안전관리 제도와 대응기술이 공유됐다. 한국해양교통안전공단(KOMSA, 이사장 안영철)은 29일 부산항국제전시컨벤션센터(BPEX)에서 ‘제5회 중소선박 안전기술 포럼’을 개최하고, 국내외 전문가들과 선박 배터리 안전관리 방안을 논의했다고 30일 밝\n포럼은 ‘선박 내 배터리 안전’을 주제로 진행됐다. 전기추진선박과 선박으로 운송하는 전기차의 화재 위험을 살펴보고, 각국의 안전기준과 연구 결과를 실제 운항 현장에 적용할 방안을 모색했다.\n포럼에는 중국 해사청(MSA), 일본선급(ClassNK), 노르웨이선급(DNV), 덴마크 화재보안기술연구소(DBI) 등 해외 기관이 참여했다. 국내에서는 공단을 비롯해 국립소방연구원, 선박해양플랜트연구소(KRISO) 등 관련 기관의 전문가들이 함께했다.\n중국 해사청은 전기차 선적 전 배터리 점검과 운송 중 충전 금지 등 화재 예방을 위한 안전규정을 소개했다. 아울러 실제 운항선박에 적용된 인공지능(AI) 기반 화재 조기감지 기술과 전기추진선박의 안전관리 사례를 설명했다.\n일본선급은 전기차 해상운송 시 화재 조기감지와 확산 방지, 소화‧대피체계 등을 종합적으로 평가하는 안전지침을 소개했다. 올해 9월 기준 선박 10척에 관련 선급부호를 부여하는 등 실제 적용 사례도 공유했다.\n공단은 국내 전기차 해상운송 안전관리 현황을 소개했다. 지난해 연안여객선 99척에 전기차 화재 대응장비를 보급한 데 이어, 올해는 국제여객선과 연안화물선으로 지원대상을 확대하고 있다고 밝혔다.\n또한 올해 1월부터 여객선에 싣기 전 전기차 배터리 상태를 무료로 점검하고 있으며, 해양수산부·해양경찰청·소방당국 등 관계기관과 합동 화재 대응훈련도 실시하고 있다고 밝혔다.",
-      "bodyKo": "친환경 선박과 전기차 해상운송이 확대되는 가운데, 선박 내 배터리 화재를 예방하고 피해 확산을 막기 위한 각국의 안전관리 제도와 대응기술이 공유됐다. 한국해양교통안전공단(KOMSA, 이사장 안영철)은 29일 부산항국제전시컨벤션센터(BPEX)에서 ‘제5회 중소선박 안전기술 포럼’을 개최하고, 국내외 전문가들과 선박 배터리 안전관리 방안을 논의했다고 30일 밝\n포럼은 ‘선박 내 배터리 안전’을 주제로 진행됐다. 전기추진선박과 선박으로 운송하는 전기차의 화재 위험을 살펴보고, 각국의 안전기준과 연구 결과를 실제 운항 현장에 적용할 방안을 모색했다.\n포럼에는 중국 해사청(MSA), 일본선급(ClassNK), 노르웨이선급(DNV), 덴마크 화재보안기술연구소(DBI) 등 해외 기관이 참여했다. 국내에서는 공단을 비롯해 국립소방연구원, 선박해양플랜트연구소(KRISO) 등 관련 기관의 전문가들이 함께했다.\n중국 해사청은 전기차 선적 전 배터리 점검과 운송 중 충전 금지 등 화재 예방을 위한 안전규정을 소개했다. 아울러 실제 운항선박에 적용된 인공지능(AI) 기반 화재 조기감지 기술과 전기추진선박의 안전관리 사례를 설명했다.\n일본선급은 전기차 해상운송 시 화재 조기감지와 확산 방지, 소화‧대피체계 등을 종합적으로 평가하는 안전지침을 소개했다. 올해 9월 기준 선박 10척에 관련 선급부호를 부여하는 등 실제 적용 사례도 공유했다.\n공단은 국내 전기차 해상운송 안전관리 현황을 소개했다. 지난해 연안여객선 99척에 전기차 화재 대응장비를 보급한 데 이어, 올해는 국제여객선과 연안화물선으로 지원대상을 확대하고 있다고 밝혔다.\n또한 올해 1월부터 여객선에 싣기 전 전기차 배터리 상태를 무료로 점검하고 있으며, 해양수산부·해양경찰청·소방당국 등 관계기관과 합동 화재 대응훈련도 실시하고 있다고 밝혔다.",
-      "tried": true,
-      "count": 16,
-      "sources": [
+        "موقع في الجامعة",
         "해양통신",
         "www.ebn.co.kr",
         "이데일리",
         "1코노미뉴스",
-        "더글로벌기빙뉴스",
-        "매일신문"
+        "더글로벌기빙뉴스"
       ],
       "related": [
+        {
+          "titleKo": "아시우트 대학 심장병원 화재 대피훈련.. 의료진과 보안팀은 어떻게 대피 계획을 실행했나?",
+          "source": "موقع في الجامعة",
+          "link": "https://filgamaa.com/%D8%AD%D8%B1%D9%8A%D9%82-%D8%A7%D9%81%D8%AA%D8%B1%D8%A7%D8%B6%D9%8A-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89-%D8%A7%D9%84%D9%82%D9%84%D8%A8-%D8%A8%D8%AC%D8%A7%D9%85%D8%B9%D8%A9/"
+        },
+        {
+          "titleKo": "선박 배터리 화재 어떻게 막나",
+          "source": "해양통신",
+          "link": "https://oceanpress.co.kr/news/article.html?no=31641"
+        },
         {
           "titleKo": "선박 내 배터리 화재 막는다…해양교통안전공단, 안전 포럼 개최",
           "source": "www.ebn.co.kr",
@@ -161,19 +46,126 @@
           "titleKo": "SK온, 미국서 배터리 탑재 전기차 3만1572대 리콜…화재 위험",
           "source": "1코노미뉴스",
           "link": "https://www.1conomynews.co.kr/news/articleView.html?idxno=51058"
-        },
-        {
-          "titleKo": "1140억 잿더미 만든 쿠팡 물류센터 화재…‘리튬배터리 열폭주’가 발단",
-          "source": "더글로벌기빙뉴스",
-          "link": "https://theggnews.com/ko-kr/articles/28245"
-        },
-        {
-          "titleKo": "낮 시간대 달서구 한 아파트서 화재… 또 배터리 말썽?",
-          "source": "매일신문",
-          "link": "https://www.imaeil.com/page/view/2026102909100197949"
         }
       ],
       "tag": "전기·배터리"
+    },
+    {
+      "title": "구미 창고 화재 20분 만에 진화… 인명 피해 없어",
+      "source": "경북도민일보",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9WcWgwdjFrM3ItUHhSdmw1ZGtJS2dSSDBZUjRyaWwxMkEwNmc3cVcwZ29VR1VrMEZpemhIc1dDZXMxNXpmemdlbTdrQ0JaNGkxeTFYZlJOc2d6TEhsVmgwSS1lamVPRDcxX1E?oc=5",
+      "date": "2026-10-30T13:11:41.000Z",
+      "lang": "ko",
+      "titleKo": "구미 창고 화재 20분 만에 진화… 인명 피해 없어",
+      "count": 4,
+      "sources": [
+        "نيو ترك بوست",
+        "경북도민일보",
+        "عراق اوبزيرفر"
+      ],
+      "related": [
+        {
+          "titleKo": "부르사의 냉동창고에서 화재 발생, 약 4시간 30분 만에 진화",
+          "source": "نيو ترك بوست",
+          "link": "https://newturkpost.com/news/131276-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF-%D8%A8%D8%A8%D9%88%D8%B1%D8%B5%D8%A9-%D9%88%D8%A5%D8%AE%D9%85%D8%A7%D8%AF%D9%87"
+        },
+        {
+          "titleKo": "메르신의 담배 창고에서 화재 발생, 진화 완료",
+          "source": "نيو ترك بوست",
+          "link": "https://newturkpost.com/news/131220-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D8%AA%D8%A8%D8%BA-%D9%85%D8%B1%D8%B3%D9%8A%D9%86-%D8%B5%D8%A7%D8%B9%D9%82%D8%A9"
+        },
+        {
+          "titleKo": "민방위, 나자프 호수 인근 식품 창고 화재 진화…인명피해 없어",
+          "source": "عراق اوبزيرفر",
+          "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNQm1OZEtBY2VaWkJOZTdMeENSeDc0blFqcVdkU2dNUV9ZWUd6TWFuV2ZaNHhMWGZZODhOLUYyOHA2bWEyMWVOWHVlUEcwcEhRc1hGYy1pTGpveF9yZFdSZV85VEh0U2p4VWtiR3UwNk5FZUQ4ZXpnc3J5YmZlOWNrUTVNN3gyTkpMN1JFYkUybGpfTGNxYVpSZHh5WVV4UThDWkpqcE1uN0d3MnRaRVhnaUxpQUhxN2NBVmxhazFWaFBtSTBqc1l1cTlDdHRuNmVfZnc3QlNORWJLaWZuc1hmU1pHVzhwcWVad2U5N1B1UGZKdjhTYW02cnROamE5VlRtUkFaTVhMakNQY3N0ZjlVZXJQMGJOQXJBWVZ2Z0ZISEpIMTNDMlpRZXI2ZEVEai1kUnYwRWxaQXZKVXdDU2dVa2pFaUpoaE0?oc=5"
+        }
+      ],
+      "tag": "숙소·창고"
+    },
+    {
+      "title": "حريق هائل داخل مخزن مهجور بمنطقة المقطم في القاهرة.. وتحرك عاجل للحماية المدنية",
+      "source": "تليجراف مصر",
+      "link": "https://www.egypttelegraph.com/article/291600/%D8%AD%D8%B1%D9%8A%D9%82-%D9%87%D8%A7%D8%A6%D9%84-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%AE%D8%B2%D9%86-%D9%85%D9%87%D8%AC%D9%88%D8%B1-%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D9%82%D8%B7%D9%85",
+      "date": "2026-10-30T11:45:43.000Z",
+      "lang": "ar",
+      "titleKo": "카이로 무깟탐 지역 폐기된 창고에서 대형 화재 발생.. 민방위 긴급 출동",
+      "url": "https://www.egypttelegraph.com/article/291600/%D8%AD%D8%B1%D9%8A%D9%82-%D9%87%D8%A7%D8%A6%D9%84-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%AE%D8%B2%D9%86-%D9%85%D9%87%D8%AC%D9%88%D8%B1-%D8%A8%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D9%82%D8%B7%D9%85",
+      "body": "اندلع حريق هائل، داخل مخزن مهجور بمنطقة المقطم التابعة لمحافظة القاهرة، ما استدعى تدخل قوات الحماية المدنية للسيطرة على النيران..\nبدأت الواقعة بتلقي غرفة عمليات الحماية المدنية بمديرية أمن القاهرة بلاغًا يفيد بنشوب حريق داخل مخزن مهجور بمنطقة المقطم.\nوعلى الفور، انتقلت قوات الحماية المدنية إلى موقع البلاغ، وجرى التعامل مع الحريق لمحاصرة النيران والسيطرة عليها، ومنع امتدادها إلى المناطق والمنشآت المجاورة.\nوتواصل الجهات المختصة اتخاذ الإجراءات اللازمة حيال الواقعة، مع تحرير محضر بها، تمهيدًا لاتخاذ الإجراءات القانونية المقررة.\nوفي واقعة سابقة، تمكنت الإدارة العامة للحماية المدنية بالجيزة من السيطرة على حريق نشب داخل شقة سكنية بشارع فيصل، أعلى عمارة موبيليات العراقي وبجوار كلية التربية الرياضية، دون وقوع إصابات.\nوكانت الأجهزة الأمنية بمديرية أمن الجيزة قد تلقت إخطارًا من غرفة عمليات النجدة يفيد بنشوب حريق داخل شقة سكنية بشارع فيصل.",
+      "bodyKo": "카이로 묵은 창고서 대형 화재 발생…소방당국 진화 작업\n\n카이로 무함마디야 주 묵은 창고 내부에서 대형 화재가 발생해 소방당국이 진화에 나섰다.\n\n사건은 카이로 경찰청 소방당국 상황실이 묵은 창고 내부 화재 신고를 접수하면서 시작됐다.\n\n소방당국은 즉시 신고 현장으로 출동했으며, 화재에 대응해 불을 포위하고 진화하며 인근 지역과 시설로의 확산을 방지했다.\n\n관계 기관은 사건과 관련해 필요한 조치를 계속 취하고 있으며, 법적 절차를 진행하기 위해 조서를 작성했다.\n\n앞서 기자 소방당국 일반관리부는 피살 거리 주택 건물 내부에서 발생한 화재를 진화했다. 해당 건물은 이라키 가구점 위에 위치했으며 체육교육대학 인근에 있었으며, 인명피해는 없었다.\n\n기자 경찰청 보안 기관은 구조 상황실로부터 피살 거리 주택 건물 내부 화재 발생 신고를 받았다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "تليجراف مصر"
+      ],
+      "related": [],
+      "tag": "숙소·창고"
+    },
+    {
+      "title": "역삼동 화재 현장",
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISI20261020_0021497314",
+      "date": "2026-10-30T04:25:28.000Z",
+      "lang": "ko",
+      "titleKo": "역삼동 화재 현장",
+      "url": "https://www.newsis.com/view/NISI20261020_0021497314",
+      "body": "[서울=뉴시스] 조성우 기자 = 20일 서울 강남구 역삼동의 한 빌딩에서 화재가 발생해 소방대원들이 현장 수습을 하고 있다. 2026.10.20. xconfind@newsis.com",
+      "bodyKo": "[서울=뉴시스] 조성우 기자 = 20일 서울 강남구 역삼동의 한 빌딩에서 화재가 발생해 소방대원들이 현장 수습을 하고 있다. 2026.10.20. xconfind@newsis.com",
+      "tried": true,
+      "count": 8,
+      "sources": [
+        "뉴시스",
+        "글로벌뉴스통신GNA",
+        "송파타임즈",
+        "오토투데이",
+        "디스커버리뉴스(DISCOVERYNEWS)",
+        "경북매일"
+      ],
+      "related": [
+        {
+          "titleKo": "구룡마을 화재 원인 규명 2차 합동감식 착수…1지구부터 시작[현장]",
+          "source": "뉴시스",
+          "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261030_0003848293"
+        },
+        {
+          "titleKo": "서울시의회 도시안전건설위원회, 구룡마을 화재 현장 긴급 방문",
+          "source": "글로벌뉴스통신GNA",
+          "link": "https://www.globalnewsagency.kr/news/articleView.html?idxno=501928"
+        },
+        {
+          "titleKo": "서울시의회 도시건설위, 구룡마을 화재현장 방문",
+          "source": "송파타임즈",
+          "link": "https://www.songpatimes.com/news/articleView.html?idxno=333181"
+        },
+        {
+          "titleKo": "김칠성·서울의회, 강남구 개포동 구룡마을 화재 현장 방문",
+          "source": "오토투데이",
+          "link": "https://www.auto-today.co.kr/news/articleView.html?idxno=15916"
+        },
+        {
+          "titleKo": "서울시의회 도시안전건설위, 강남구 구룡마을 화재 현장 긴급 방문",
+          "source": "디스커버리뉴스(DISCOVERYNEWS)",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE53SG1pb01VclJXTnFEOFRxRHh5U3ZqTHNZU0NNYnJNR2lHS1VocHBZcFBSaHlGNlR5dl9UYWZzTE95c3o5OG1MOFlTbm1BMG1XbDRaeWYzbkkwTnRkTlhSZ05qRTMtdEo3OWZjQ2ljZGNoZw?oc=5"
+        }
+      ],
+      "tag": "기타"
+    },
+    {
+      "title": "화재 진화 작업 동원된 소방 헬기",
+      "source": "뉴시스",
+      "link": "https://www.newsis.com/view/NISI20261030_0002278556",
+      "date": "2026-10-30T03:17:33.000Z",
+      "lang": "ko",
+      "titleKo": "화재 진화 작업 동원된 소방 헬기",
+      "url": "https://www.newsis.com/view/NISI20261030_0002278556",
+      "body": "[대전=뉴시스] 김도현 기자 = 30일 오전 대전 서구 갈마동의 한 타이어 판매 업체에서 불이 나 소방 헬기가 진화 작업을 위해 방수하고 있다. 2026.10.30. kdh1917@newsis.com",
+      "bodyKo": "[대전=뉴시스] 김도현 기자 = 30일 오전 대전 서구 갈마동의 한 타이어 판매 업체에서 불이 나 소방 헬기가 진화 작업을 위해 방수하고 있다. 2026.10.30. kdh1917@newsis.com",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "뉴시스"
+      ],
+      "related": [],
+      "tag": "기타"
     },
     {
       "title": "아궁이 불티 창고로 옮겨붙어…장수 단독주택 화재로 70대 집주인 부상",
@@ -222,19 +214,25 @@
       "body": "인천 검단구의 한 상가에서 가스 철거 작업 중 폭발 사고가 나 4명이 다쳤다. 27일 인천소방본부와 서부경찰서에 따르면 이날 오전 8시45분쯤 검단구 마전동의 상가건물 1층에서 가스가 폭발했다.",
       "bodyKo": "인천 검단구의 한 상가에서 가스 철거 작업 중 폭발 사고가 나 4명이 다쳤다. 27일 인천소방본부와 서부경찰서에 따르면 이날 오전 8시45분쯤 검단구 마전동의 상가건물 1층에서 가스가 폭발했다.",
       "tried": true,
-      "count": 2,
+      "count": 3,
       "sources": [
+        "투데이에너지",
         "인천일보",
-        "OBS경인TV"
+        "الجمهور الإخباري"
       ],
       "related": [
         {
-          "titleKo": "\"가스 밸브 열린 채 철거\"…검단 상가 폭발 4명 중·경상",
-          "source": "OBS경인TV",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1wTjVHX2Nib3BiTTBXWFk1TEp4dm9kdFRzaE9nbGRBbWZySjNNbkRCQ29qNFlsNGpFOC1VZnVpV29mSXQzeVBrYzZmaG1OeVoxOVFVeWs1WllzbS14Z0JIVThjUk1CbzZyS0JWZ1RR?oc=5"
+          "titleKo": "인천 검단구 LPG 폭발... 작업자 얼굴 화상 등 4명 부상",
+          "source": "투데이에너지",
+          "link": "http://www.todayenergy.kr/news/articleView.html?idxno=304874"
+        },
+        {
+          "titleKo": "동부 벽돌공장 화재로 4명이 1도 화상 입어",
+          "source": "الجمهور الإخباري",
+          "link": "https://www.algomhor.com/503748"
         }
       ],
-      "tag": "시장·상가"
+      "tag": "공장·플랜트"
     },
     {
       "title": "صور فضائية ترصد آثار حرائق في مستودع وقود ومحطة كهرباء بالمناقل في السودان إثر هجوم بمسيّرات",
@@ -255,53 +253,22 @@
       "tag": "숙소·창고"
     },
     {
-      "title": "공장 화재 진압",
-      "source": "뉴시스",
-      "link": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
+      "title": "إصابة 4 عمال في حريق بمصنع طوب صخرى بالشرقية",
+      "source": "بوابة أخبار اليوم الإلكترونية",
+      "link": "https://akhbarelyom.com/news/newdetails/4898878/1/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-4-%D8%B9%D9%85%D8%A7%D9%84-%D9%81%D9%8A-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%B5%D9%86%D8%B9-%D8%B7%D9%88%D8%A8-%D8%B5%D8%AE%D8%B1%D9%89-%D8%A8%D8%A7%D9%84%D8%B4",
       "date": "2026-10-29T15:12:28.000Z",
-      "lang": "ko",
-      "titleKo": "공장 화재 진압",
-      "count": 15,
+      "lang": "ar",
+      "titleKo": "동부 지역 석조 벽돌 공장 화재로 근로자 4명 부상",
+      "url": "https://akhbarelyom.com/news/newdetails/4898878/1/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-4-%D8%B9%D9%85%D8%A7%D9%84-%D9%81%D9%8A-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%B5%D9%86%D8%B9-%D8%B7%D9%88%D8%A8-%D8%B5%D8%AE%D8%B1%D9%89-%D8%A8%D8%A7%D9%84%D8%B4",
+      "body": "انتقلت على الفور قوات الحماية المدنية بإشراف العميد أحمد عمارة مدير مباحث الجنائية بالشرقية حيث أشرفت على نقل المصابين بسيارات الإسعاف إلى مستشفى بلبيس المركزى لعلاجهم ومحاصرة النيران ومنع امتدادها الى باقى اجزاء المصنع والمنشأت الصناعية المجاورة واخمادها .\nاندلع حريق هائل بمصنع طوب بمنطقة المهندسين العرب بطريق بلبيس السلام اثر انفجار خط غاز ونتج عن ذلك إصابة 4 عمال بحروق من الدرجة الأولى ولم تحدث خسائر فى الأرواح وجارى تقدير قيمة الخسائر الأولية. تلقى اللواء محمد الجمسي مدير أمن الشرقية إخطارا بنشوب حريق بمصنع للطوب الصخرى والبلاستيك الكائن بمنطقة جمعية المهندسين العرب بطريق بلبيس السلام ونتج عن ذلك اصابة 4 بحروق من الدرجة الاولى. انتقلت على الفور قوات الحماية المدنية بإشراف العميد أحمد عمارة مدير مباحث الجنائية بالشرقية حيث أشرفت على نقل المصابين بسيارات الإسعاف إلى مستشفى بلبيس المركزى لعلاجهم ومحاصرة النيران ومنع امتدادها الى باقى اجزاء المصنع والمنشأت الصناعية المجاورة واخمادها .",
+      "bodyKo": "샤르키야주 보안국장 무함마드 알-잠시 소장은 알-무한디신 알-아랍 지역 빌비스-살람 도로에 위치한 석재 벽돌 및 플라스틱 제조 공장에서 화재가 발생했다는 신고를 받았다. 이 화재로 4명의 노동자가 1도 화상을 입었다.\n\n샤르키야주 형사수사국장 아흐마드 아마라 대령의 지휘 아래 민방위 부대가 즉시 출동했다. 민방위 부대는 구급차를 통해 피해자들을 빌비스 중앙병원으로 옮겨 치료받도록 조치했으며, 화재를 진압하고 공장의 다른 지역과 인접한 산업시설로 불이 번지는 것을 방지했다.\n\n화재는 가스관 폭발로 인해 알-무한디신 알-아랍 지역 빌비스-살람 도로의 벽돌 공장에서 발생했다. 화재로 4명의 노동자가 1도 화상을 입었으며 인명 피해는 없었다. 초기 피해액 산정이 진행 중이다.",
+      "tried": true,
+      "count": 1,
       "sources": [
-        "بوابة أخبار اليوم الإلكترونية",
-        "뉴시스",
-        "الجمهور الإخباري",
-        "تاسي",
-        "٢٦ سبتمبر نت",
-        "الرئيس نيوز"
+        "بوابة أخبار اليوم الإلكترونية"
       ],
-      "related": [
-        {
-          "titleKo": "동부 지역 석조 벽돌 공장 화재로 근로자 4명 부상",
-          "source": "بوابة أخبار اليوم الإلكترونية",
-          "link": "https://akhbarelyom.com/news/newdetails/4898878/1/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-4-%D8%B9%D9%85%D8%A7%D9%84-%D9%81%D9%8A-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%B5%D9%86%D8%B9-%D8%B7%D9%88%D8%A8-%D8%B5%D8%AE%D8%B1%D9%89-%D8%A8%D8%A7%D9%84%D8%B4"
-        },
-        {
-          "titleKo": "동부 벽돌공장 화재로 4명이 1도 화상 입어",
-          "source": "الجمهور الإخباري",
-          "link": "https://www.algomhor.com/503748"
-        },
-        {
-          "titleKo": "투쉽, 알라시드 그룹의 공장 화재 배상금 42백만 리알로 합의",
-          "source": "تاسي",
-          "link": "https://www.argaam.com/ar/article/articledetail/id/1923163"
-        },
-        {
-          "titleKo": "알-바탈 공장, 화재 보험금 635만 리알 분할금 수령",
-          "source": "تاسي",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9McXBWaGZXVnBVTUpnMC0zS0pFYi10Yi1yNkpaSGdNSnk3dU0zU1FqRnRuZXZPa2JyS004QkticjRsWU1QZU9aWGYydTRZWUJMVWlJZ0V6S3dBTlRxOVFnRlNreVpXbFVjcVE?oc=5"
-        },
-        {
-          "titleKo": "고령 폐기물재활용 공장 화재…인명피해 없어",
-          "source": "뉴시스",
-          "link": "https://www.newsis.com/view/NISX20261024_0003839407"
-        }
-      ],
-      "tag": "공장·플랜트",
-      "url": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
-      "body": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
-      "bodyKo": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
-      "tried": true
+      "related": [],
+      "tag": "공장·플랜트"
     },
     {
       "title": "장수 주택 창고서 화재로 1명 다쳐…아궁이 불씨 옮겨 붙어",
@@ -394,6 +361,24 @@
       "tag": "기타"
     },
     {
+      "title": "تُشب تتوصل إلى تسوية مطالبة مجموعة الراشد بشأن حريق أحد مصانعها بـ42 مليون ريال - ارقام : اخبار ومعلومات سوق الأسهم السعودي",
+      "source": "تاسي",
+      "link": "https://www.argaam.com/ar/article/articledetail/id/1923163",
+      "date": "2026-10-29T06:20:55.000Z",
+      "lang": "ar",
+      "titleKo": "투쉽, 알라시드 그룹의 공장 화재 배상금 42백만 리알로 합의",
+      "url": "https://www.argaam.com/ar/article/articledetail/id/1923163",
+      "body": "أعلنت شركة تشب العربية للتأمين التعاوني توصلها، اليوم، إلى اتفاق مع مجموعة الراشد لتسوية المطالبة المتعلقة بحادث الحريق في المصنع الواقع في المدينة ال",
+      "bodyKo": "아랍 타샤브 상호보험회사가 라시드 그룹과 도시에 위치한 공장의 화재 사건과 관련된 청구를 해결하기 위한 합의에 도달했다고 오늘 발표했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "تاسي"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
       "title": "السيطرة على حريق محيط مجمع رأس تنورة في السعودية",
       "source": "موقع المنشر الاخبارى",
       "link": "https://elmanshar.com/2026/10/27/%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D9%8A%D8%B7-%D9%85%D8%AC%D9%85%D8%B9-%D8%B1%D8%A3%D8%B3-%D8%AA%D9%86%D9%88%D8%B1%D8%A9-%D9%81%D9%8A/",
@@ -452,6 +437,49 @@
       "tag": "공장·플랜트"
     },
     {
+      "title": "تعز: اشتعال النيران في مصنع الشيباني للطلاء إثر غارات سعودية",
+      "source": "البوابة الإخبارية اليمنية",
+      "link": "https://yemnews.net/index.php/news/t-z-asht-al-alnyran-fy-msn-alshybany-lltla-athr-gharat-s-wdyt",
+      "date": "2026-10-28T21:19:56.000Z",
+      "lang": "ar",
+      "titleKo": "타이즈: 사우디 공습으로 알시바니 페인트 공장 화재",
+      "url": "https://yemnews.net/index.php/news/t-z-asht-al-alnyran-fy-msn-alshybany-lltla-athr-gharat-s-wdyt",
+      "body": "البوابة الإخبارية اليمنية.. موقع يهتم بالشأن اليمني في كافة المجالات.. يحرره صحفيون وإعلاميون متخصصين .. ويغطي اليمن والخليج والمنطقة العربية، ويتناول المال وال",
+      "bodyKo": "이 텍스트는 완전한 문장이 아니라 웹사이트 소개 문구의 일부로 보입니다. 마지막 부분이 끝나지 않았네요. \n\n현재까지의 내용을 번역하면:\n\n예멘 뉴스 포털.. 예멘 사안을 모든 분야에서 다루는 사이트.. 전문 기자와 언론인들이 편집.. 예멘과 걸프, 아랍 지역을 취재하며, 금융과\n\n---\n\n완전한 원문을 제공해 주시면 정확한 번역을 해드리겠습니다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "٢٦ سبتمبر نت",
+        "البوابة الإخبارية اليمنية"
+      ],
+      "related": [
+        {
+          "titleKo": "긴급 | 타이즈: 사우디 연합군 항공기, 알-셰이바니 공장 공습...케미코 도료·화학 회사 화재 계속 확산",
+          "source": "٢٦ سبتمبر نت",
+          "link": "https://26sep.net/index.php/newspaper/26locals/138315-2yq3"
+        }
+      ],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "السيطرة على حريق بعمارة سكنية في شارع برج العرب بالفيوم (فيديو وصور)",
+      "source": "Masrawy",
+      "link": "https://www.masrawy.com/news/news_regions/details/2026/10/28/3070257/%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D8%B9%D9%85%D8%A7%D8%B1%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A8%D8%B1%D8%AC-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8-%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D9%88%D9%85-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%88%D8%B5%D9%88%D8%B1-",
+      "date": "2026-10-28T20:21:14.000Z",
+      "lang": "ar",
+      "titleKo": "파이윰 아랍 타워 거리 주택 건물 화재 진압 (영상·사진)",
+      "url": "https://www.masrawy.com/news/news_regions/details/2026/10/28/3070257/%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D8%B9%D9%85%D8%A7%D8%B1%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A8%D8%B1%D8%AC-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8-%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D9%88%D9%85-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%88%D8%B5%D9%88%D8%B1-",
+      "body": "تمكنت قوات الحماية المدنية بالفيوم من إخماد حريق اندلع داخل عقار سكني بشارع العرب في منطقة الشيخ حسن إثر ماس كهربائي امتدت نيرانه إلى شقة مجاورة دون وقوع إصابات بشرية | مصراوي\nضبط 1.87 طن من الدواجن غير الصالحة للاستهلاك الآدمي بالإسماعيلية (صور)\nارتفاع ضحايا سيول وادي وتير بنويبع إلى 3 حالات.. واستمرار البحث عن مفقود\nتمكنت قوات الحماية المدنية بمديرية أمن الفيوم من السيطرة على حريق اندلع داخل عقار سكني بشارع العرب، التابع لمنطقة الشيخ حسن بمدينة الفيوم، دون وقوع خسائر في الأرواح أو إصابات بشرية.\nوكان اللواء أشرف عبد الموجود، مدير أمن الفيوم، قد تلقى إخطارًا من العميد محمد صالح أبو لطيعة، مأمور قسم شرطة الفيوم ثان، يفيد بنشوب حريق داخل إحدى العمارات السكنية بالمنطقة.\nوعلى الفور، انتقل اللواء محمود حمدي، مساعد مدير الأمن للأمن العام، إلى موقع البلاغ، مدعومًا بثلاث سيارات إطفاء، حيث تمكنت القوات من محاصرة النيران وإخمادها قبل امتدادها إلى الأبراج والمباني المجاورة، في المنطقة التي تشهد كثافة بنائية وتكدسًا سكانيًا.",
+      "bodyKo": "**فيوم: حريق في عمارة سكنية دون خسائر بشرية**\n\nفيوم 민방위대가 셰이خ하산 지역 아랍 거리의 주택 건물 내에서 발생한 화재를 진압했다. 화재는 전기 합선으로 인해 발생했으며 인접한 아파트로 번졌으나 인명 피해는 없었다.\n\n아슈라프 압둘무자위드 중장 피움 경찰청장이 무함마드 살리흐 아부 라티아 대령 피움 제2경찰서장으로부터 주택 건물 내 화재 발생 신고를 받았다.\n\n마흐무드 함디 중장 경찰청 부청장 겸 일반보안 담당관이 즉시 현장으로 출동했으며, 소방차 3대의 지원을 받았다. 민방위대는 화염을 포위하고 진압하여 인접한 고층 건물과 주변 건물로의 확산을 막았다. 해당 지역은 건설 밀도가 높고 주민이 밀집되어 있다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Masrawy"
+      ],
+      "related": [],
+      "tag": "숙소·창고"
+    },
+    {
       "title": "반복되는 공사장 화재, 예방과 안전관리로 막아야",
       "source": "뉴스에이",
       "link": "https://www.newsa.co.kr/news/articleView.html?idxno=403474",
@@ -468,6 +496,24 @@
       ],
       "related": [],
       "tag": "기타"
+    },
+    {
+      "title": "اندلع حريق في مصنع بمدينة دنيبرو عقب هجوم روسي",
+      "source": "UA.NEWS",
+      "link": "https://ua.news/ar/war-vs-rf/u-dnipri-pislia-rosiiskogo-udaru-spalakhnula-pozhezha-na-pidpriiemstvi",
+      "date": "2026-10-28T19:01:55.000Z",
+      "lang": "ar",
+      "titleKo": "러시아 공격으로 드니프로 도시 공장에 화재 발생",
+      "url": "https://ua.news/ar/war-vs-rf/u-dnipri-pislia-rosiiskogo-udaru-spalakhnula-pozhezha-na-pidpriiemstvi",
+      "body": "اندلع حريق في مدينة دنيبرو جراء ضربة روسية استهدفت منشأة صناعية.\n--> اندلع حريق في مدينة دنيبرو جراء هجوم روسي على منشأة صناعية.\nوجاء في البيان: «شن العدو هجوماً على منشأة صناعية في دنيبرو. واندلع حريق».\nأعلن ذلك رئيس الإدارة العسكرية الإقليمية لدنيبروبتروفسك، ألكسندر غانجا، عبر تطبيق تيليغرام.\nوقد استهدف المحتلون منشأة مدنية في مقاطعة ريفني، مما أسفر عن سقوط قتيل .\nخاركيف، زابوريزهيا، فينيتسا وبولتافا — تعرضت متاجر «إبيسنترو» للقصف .\nوأكدت شركة «روشين» وقوع غارة روسية على مجمع صناعي في فينيتسا .\nوكانت روسيا قد شنت في وقت سابق هجوماً بصواريخ كاب على خاركيف، مما أسفر عن مقتل شخص وإصابة آخرين.\nفي 11 أكتوبر، هاجم الجيش الروسي في منطقة بوغودوخوف بمقاطعة خاركيف شاحنة تابعة لمؤسسة زراعية باستخدام طائرة مسيرة. وأسفر الهجوم عن مقتل السائق .",
+      "bodyKo": "드니프로 시에서 러시아의 공습으로 인한 화재 발생\n--> 드니프로 시의 산업시설을 겨냥한 러시아 공격으로 화재 발생\n\n성명에는 \"적군이 드니프로의 산업시설을 공격했다. 화재가 발생했다\"고 기재됐다.\n\n드니프로페트로우스크 지역 군사행정부 수장 알렉산드르 간차가 텔레그램을 통해 이를 밝혔다.\n\n점령군은 리브니 지구의 민간시설을 공격했으며, 이로 인해 1명이 사망했다.\n\n하르키우, 자포리자, 비니차, 폴타바 — '에피센트로' 매장들이 포격을 받았다.\n\n'로신' 회사는 비니차의 산업단지에 대한 러시아 공습이 있었음을 확인했다.\n\n러시아는 앞서 하르키우에 크루즈 미사일을 발사해 1명이 사망하고 여러 명이 부상했다.\n\n10월 11일 러시아군은 하르키우 지구 보고도호우 지역에서 무인항공기를 이용해 농업기관 소속 트럭을 공격했다. 공격으로 운전자가 사망했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "UA.NEWS"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
     },
     {
       "title": "불티 하나가 큰불로! 작업장 화재·폭발 예방수칙",
@@ -512,11 +558,18 @@
       "body": "[미래경제 김태민 기자] 건축물의 화재 안전과 에너지 효율에 대한 요구가 높아지는 가운데 경동원이 고성능 단열재와 방화문을 앞세워 건축자재 시장 공략에 나선다. 기존 제품보다 단열 성능을 약 10% 높인 신제품을 선보이는 한편 화재 확산을 차단하는 방화문과 생체인식 기반 출입문까지 전시해 내화·단열 기술의 적용 범위를 넓힌다.경동원은 28일부터 30일까지 서울 코엑스에서 열리는 ‘한국건축산업대전 2026’에 참가해 내화·단열 건축자재와 스마트 출입문 제품군을 선보인다고 밝혔다.이번 전시의 핵심 제품은 출시 예정인 ‘세이프보드 1면준\n경동원은 28일부터 30일까지 서울 코엑스에서 열리는 &lsquo;한국건축산업대전 2026&rsquo;에 참가해 내화&middot;단열 건축자재와 스마트 출입문 제품군을 선보인다고 밝혔다.\n이번 전시의 핵심 제품은 출시 예정인 &lsquo;세이프보드 1면준불연 플러스&rsquo;다. 기존 세이프보드보다 단열 성능을 약 10% 높였으며 초기 열전도율은 0.018W/m&middot;K다. 열전도율은 수치가 낮을수록 열이 잘 전달되지 않는다는 의미로 단열재의 성능을 나타내는 주요 지표다.\n경동원은 높은 단열 성능을 바탕으로 상대적으로 얇은 두께에서도 효율적인 단열 설계가 가능하다고 설명했다. 건축물의 에너지 효율을 높이는 동시에 실내 공간 활용도를 개선할 수 있다는 것이다.\n방화문 제품군도 함께 선보인다. &lsquo;세이프도어 플러스&rsquo;는 자체 개발한 심재를 적용한 제품으로 화염 확산을 90분간 차단하는 내화 성능을 갖췄다. 경동원은 내화 성능과 단열 성능을 함께 확보해 건축물의 화재 안전성을 높이는 데 초점을 맞췄다.",
       "bodyKo": "[미래경제 김태민 기자] 건축물의 화재 안전과 에너지 효율에 대한 요구가 높아지는 가운데 경동원이 고성능 단열재와 방화문을 앞세워 건축자재 시장 공략에 나선다. 기존 제품보다 단열 성능을 약 10% 높인 신제품을 선보이는 한편 화재 확산을 차단하는 방화문과 생체인식 기반 출입문까지 전시해 내화·단열 기술의 적용 범위를 넓힌다.경동원은 28일부터 30일까지 서울 코엑스에서 열리는 ‘한국건축산업대전 2026’에 참가해 내화·단열 건축자재와 스마트 출입문 제품군을 선보인다고 밝혔다.이번 전시의 핵심 제품은 출시 예정인 ‘세이프보드 1면준\n경동원은 28일부터 30일까지 서울 코엑스에서 열리는 &lsquo;한국건축산업대전 2026&rsquo;에 참가해 내화&middot;단열 건축자재와 스마트 출입문 제품군을 선보인다고 밝혔다.\n이번 전시의 핵심 제품은 출시 예정인 &lsquo;세이프보드 1면준불연 플러스&rsquo;다. 기존 세이프보드보다 단열 성능을 약 10% 높였으며 초기 열전도율은 0.018W/m&middot;K다. 열전도율은 수치가 낮을수록 열이 잘 전달되지 않는다는 의미로 단열재의 성능을 나타내는 주요 지표다.\n경동원은 높은 단열 성능을 바탕으로 상대적으로 얇은 두께에서도 효율적인 단열 설계가 가능하다고 설명했다. 건축물의 에너지 효율을 높이는 동시에 실내 공간 활용도를 개선할 수 있다는 것이다.\n방화문 제품군도 함께 선보인다. &lsquo;세이프도어 플러스&rsquo;는 자체 개발한 심재를 적용한 제품으로 화염 확산을 90분간 차단하는 내화 성능을 갖췄다. 경동원은 내화 성능과 단열 성능을 함께 확보해 건축물의 화재 안전성을 높이는 데 초점을 맞췄다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
-        "미래경제"
+        "미래경제",
+        "اخبار السودان"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "나일강 주 움 사라 시장 화재로 큰 손실",
+          "source": "اخبار السودان",
+          "link": "https://www.sudanakhbar.com/1863505"
+        }
+      ],
       "tag": "시장·상가"
     },
     {
@@ -694,6 +747,102 @@
       "count": 1,
       "sources": [
         "충남일보"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "용접 불티 화재 막는다…FITI, 방화포 시험 서비스 시작!",
+      "source": "산업인뉴스",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE81NW9scGpYWllFdVFZUDhRZlNKazNKWVNPd1FrZ05UcjFCUExFZUVJQnkzc29ZSE1PT3QwY1psMXZNMkdENHVHbC15OWpiWW0yb1lBUGhCbjBSc0NILWpqNVAzNF8zX3ZKbE9yU2h2cw?oc=5",
+      "date": "2026-10-27T06:22:59.000Z",
+      "lang": "ko",
+      "titleKo": "용접 불티 화재 막는다…FITI, 방화포 시험 서비스 시작!",
+      "count": 1,
+      "sources": [
+        "산업인뉴스"
+      ],
+      "related": [],
+      "tag": "용접·불티"
+    },
+    {
+      "title": "بعد وفاة 14 رضيعا في حريق مستشفى باكستاني.. تحقيق يكشف إخفاقات السلامة",
+      "source": "العين الإخبارية",
+      "link": "https://al-ain.com/article/infants-die-pakistani-hospital-investigation",
+      "date": "2026-10-26T18:20:04.000Z",
+      "lang": "ar",
+      "titleKo": "파키스탄 병원 화재로 영아 14명 사망.. 조사에서 안전 부실 드러나",
+      "url": "https://al-ain.com/article/infants-die-pakistani-hospital-investigation",
+      "body": "14 رضيعا لقوا حتفهم داخل مستشفى حكومي في العاصمة الباكستانية إسلام آباد، بعدما تحول حريق في جناح حديثي الولادة إلى مأساة كشفت عن إخفاقات مؤسسية في أنظمة السلامة والاستجابة للطوارئ.\nولم يقتصر الأمر على عطل كهربائي يُرجح أنه أشعل النيران، بل كشف التحقيق عن تحذيرات سابقة ومخاطر لم تُعالج بفاعلية، رغم أن المكان كان يضم أطفالا حديثي الولادة لا يستطيعون إخلاء المكان بأنفسهم.\nوخلص تقرير لجنة التحقيق، الذي نشرته صحيفة «دون» الباكستانية في 15 سبتمبر 2026، إلى وجود «إخفاق مؤسسي ومنهجي»، محملا إدارة معهد باكستان للعلوم الطبية، المعروف اختصارا باسم «بيمز»، وكبار المسؤولين فيه المسؤولية المؤسسية الرئيسية عن عدم تحويل المخاطر المعروفة إلى نظام سلامة فعال.\nاندلع الحريق في حضانة مستشفى الأم والطفل التابع لمعهد باكستان للعلوم الطبية في إسلام آباد. وكان الجناح يضم 15 رضيعا يعانون حالات صحية تستدعي الرعاية الطبية، داخل وحدة لا تتسع إلا لعشرة أسرّة، بحسب تقرير التحقيق. وتوفي 14 رضيعا، بينما نجا طفل واحد.",
+      "bodyKo": "**파키스탄 병원 화재로 신생아 14명 사망**\n\n파키스탄 수도 이슬라마바드의 정부 병원에서 신생아실 화재로 14명의 영아가 목숨을 잃었다. 화재는 신생아 보육 병동을 참사로 변모시켰으며, 안전 체계와 응급 대응 시스템의 제도적 결함을 드러냈다.\n\n사건은 전기 결함으로 추정되는 화재 발생에 그치지 않았다. 조사 결과 이전의 경고와 미처리된 위험 요소들이 적절히 해결되지 않았음이 드러났다. 이 장소에는 스스로 대피할 수 없는 신생아들이 있었음에도 불구하고 이러한 조치가 취해지지 않았다.\n\n파키스탄 신문 '돈'이 2026년 9월 15일 공개한 조사위원회 보고서는 \"제도적이고 체계적인 결함\"이 있었다고 결론지었다. 보고서는 파키스탄의학과학원(PIMS)의 경영진과 고위 관계자들이 알려진 위험 요소를 효과적인 안전 체계로 전환하지 못한 데 대한 주요 제도적 책임이 있다고 지적했다.\n\n화재는 이슬라마바드 파키스탄의학과학원 산하 모자보건병원의 보육실에서 발생했다. 병동에는 의료 관리가 필요한 신생아 15명이 입원해 있었으나, 해당 병실은 10개 침대만 수용 가능한 규모였다고 조사 보고서는 기록했다. 신생아 14명이 사망했고 1명만 생존했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "العين الإخبارية"
+      ],
+      "related": [],
+      "tag": "기타"
+    },
+    {
+      "title": "배터리 화재 등 원인 규명할 화재조사관 93명 배출",
+      "source": "아시아투데이",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBYY2tWbnRZMmgwYlNjbXB4VXRYbjBnWnhEY3NrVzhIZTdpU3haYzRXOUIzT05jM3VZcW9NWGNmTjlaMHREeVc3UWw2UFNjS0JYNzZsSjFXRU43Zk1WbHJ2YzUwNW85ZUhSSC03bm53?oc=5",
+      "date": "2026-10-26T05:45:47.000Z",
+      "lang": "ko",
+      "titleKo": "배터리 화재 등 원인 규명할 화재조사관 93명 배출",
+      "count": 2,
+      "sources": [
+        "아시아투데이",
+        "이데일리"
+      ],
+      "related": [
+        {
+          "titleKo": "화재 현장 흔적으로 원인 찾는다…전문 조사관 93명 배출",
+          "source": "이데일리",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNT0JhUEYzcFJsdnZuZ0dOTDhqRVhxbnlFdTJGank3ZDN2V0dnTklWdDFRMmJkMFlGdzFTeFZmS1pGMFdERTkyY0E0ZVh4dDB2d3VzTTItbGZXUlM2UjhMMDJkTHdwQVJJN09UZ2JMai0ycWFMbTcxbm90Y2lqcTctcQ?oc=5"
+        }
+      ],
+      "tag": "전기·배터리"
+    },
+    {
+      "title": "اندلاع حريق في أكبر مصنع شوفان بالعالم",
+      "source": "قناة الغد",
+      "link": "https://www.alghad.tv/index.php/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%BA%D8%AF/news/%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%A3%D9%83%D8%A8%D8%B1-%D9%85%D8%B5%D9%86%D8%B9-%D8%B4%D9%88%D9%81%D8%A7%D9%86-%D8%A8%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85",
+      "date": "2026-10-25T15:08:50.000Z",
+      "lang": "ar",
+      "titleKo": "세계 최대 귀리 공장에서 화재 발생",
+      "url": "https://www.alghad.tv/index.php/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%BA%D8%AF/news/%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%A3%D9%83%D8%A8%D8%B1-%D9%85%D8%B5%D9%86%D8%B9-%D8%B4%D9%88%D9%81%D8%A7%D9%86-%D8%A8%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "قناة الغد",
+        "egydreampro.com"
+      ],
+      "related": [
+        {
+          "titleKo": "미국 아이오와주 귀리 공장에서 화재 발생",
+          "source": "egydreampro.com",
+          "link": "https://news.egydreampro.com/%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D9%85%D8%B5%D9%86%D8%B9-%D8%B4%D9%88%D9%81%D8%A7%D9%86-%D8%A8%D9%88%D9%84%D8%A7%D9%8A%D8%A9-%D8%A3%D9%8A%D9%88%D8%A7-%D8%A7/"
+        }
+      ],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "المعروف بدعمه للاحتلال..حريق في مصنع تابع لشركة بيبسي الأمريكية عقب انفجار في ولاية آيوا",
+      "source": "İlke Haber Ajansı",
+      "link": "https://ilkha.com/arabi/world/571274/%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D9%81%D8%A8%D8%AF%D8%B9%D9%85%D9%87%D9%84%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84%D8%AD%D8%B1%D9%8A%D9%82%D9%81%D9%8A%D9%85%D8%B5%D9%86%D8%B9%D8%AA%D8%A7%D8%A8%D8%B9%D9%84%D8%B4%D8%B1%D9%83%D8%A9%D8%A8%D9%8A%D8%A8%D8%B3%D9%8A%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9%D8%B9%D9%82%D8%A8%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D9%81%D9%8A%D9%88%D9%84%D8%A7%D9%8A%D8%A9%D8%A2%D9%8A%D9%88%D8%A7",
+      "date": "2026-10-25T07:31:47.000Z",
+      "lang": "ar",
+      "titleKo": "점령군 지지로 알려진 펩시 미국 회사 공장에서 화재...아이오와주 폭발 후",
+      "url": "https://ilkha.com/arabi/world/571274/%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D9%81%D8%A8%D8%AF%D8%B9%D9%85%D9%87%D9%84%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84%D8%AD%D8%B1%D9%8A%D9%82%D9%81%D9%8A%D9%85%D8%B5%D9%86%D8%B9%D8%AA%D8%A7%D8%A8%D8%B9%D9%84%D8%B4%D8%B1%D9%83%D8%A9%D8%A8%D9%8A%D8%A8%D8%B3%D9%8A%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9%D8%B9%D9%82%D8%A8%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D9%81%D9%8A%D9%88%D9%84%D8%A7%D9%8A%D8%A9%D8%A2%D9%8A%D9%88%D8%A7",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "İlke Haber Ajansı"
       ],
       "related": [],
       "tag": "공장·플랜트"
