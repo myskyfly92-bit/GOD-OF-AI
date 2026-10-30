@@ -9,6 +9,30 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "On World Cities Day 2026, WHO calls for safe, healthy housing for all",
+      "date": "2026-10-31T04:00:00Z",
+      "summary": "This World Cities Day, celebrated under the theme “Regenerating the City: Adequate Housing for All”, the World Health Organization (WHO) highlights the critical role of housing in shaping health and well-being and calls for greater action to ensure that everyone can live in healthy, safe and accessible homes.",
+      "link": "https://www.who.int/news/item/31-10-2026-on-world-cities-day-2026--who-calls-for-safe--healthy-housing-for-all",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Barbados eliminates mother-to-child transmission of HIV",
+      "date": "2026-10-30T15:00:00Z",
+      "summary": "Barbados has eliminated mother-to-child transmission of HIV as a public health problem, the World Health Organization (WHO) announced, marking a major public health milestone resulting from years of sustained efforts to ensure babies are born free of HIV.",
+      "link": "https://www.who.int/news/item/30-10-2026-barbados-eliminates-mother-to-child-transmission-of-hiv",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "World Conference on Traditional Medicine 2026 delivers landmark outcomes for global health",
+      "date": "2026-10-30T12:00:00Z",
+      "summary": "Expert Committee Meeting members at the World Conference on Traditional Medicine 2026© WHOThe World Conference on Traditional Medicine 2026 concluded in Beijing on 18 October with several key outcomes aimed at strengthening global cooperation for health and well-being. These included the adoption of the Beijing Initiative on the Conservation and Sustainable Use of Traditional Medicinal Plant Resources, the promotion of the New-Era Shennong Herbal Project, and the publication of the Report on art",
+      "link": "https://www.who.int/news/item/30-10-2026-world-conference-on-traditional-medicine-2026-delivers-landmark-outcomes-for-global-health",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "Announcement of candidates for the position of WHO Director-General",
       "date": "2026-10-29T18:18:23Z",
       "summary": "Seven candidates have been proposed by Member States of the World Health Organization for the position of WHO Director-General. The candidates will engage with Member States and Associate Members on 18–19 November 2026 at the first candidates’ forum at WHO Headquarters in Geneva.",
@@ -112,30 +136,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "New global framework launched to track increasing health risks of extreme heat for pregnant women, newborns and children",
-      "date": "2026-10-21T09:02:28Z",
-      "summary": "As extreme heat intensifies around the world, the World Health Organization (WHO), the World Meteorological Organization (WMO), UNICEF and the United Nations Population Fund (UNFPA) today launched the first-ever set of priority indicators to help countries track the health impacts of heat on pregnant women, newborns and children.",
-      "link": "https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children",
-      "newsType": "News release"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO launches guidance on evidence generation for new TB diagnostics",
-      "date": "2026-10-21T06:00:00Z",
-      "summary": "WHO has published new Guidance on evidence generation (GEG) for new tuberculosis diagnostics. This guidance informs researchers, developers, funders and other stakeholders about how evidence should be generated to optimally inform WHO guideline development on new TB diagnostic tests, sample types and testing strategies.",
-      "link": "https://www.who.int/news/item/21-10-2026-who-launches-guidance-on-evidence-generation-for-new-tb-diagnostics",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "New WHO–ILO framework to track progress towards universal social protection inclusive of people with TB",
-      "date": "2026-10-21T06:00:00Z",
-      "summary": "WHO and ILO have published a new monitoring and evaluation framework to enable countries to track progress towards universal social protection inclusive of people with tuberculosis (TB). The new framework provides a practical approach to measuring progress towards the commitment to ensure that 100% of people with TB have access to a health and social benefits package by 2027, and identifying gaps in coverage and protection.",
-      "link": "https://www.who.int/news/item/21-10-2026-new-who-ilo-framework-to-track-progress-towards-universal-social-protection-inclusive-of-people-with-tb",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Middle East respiratory syndrome coronavirus - Kingdom of Saudi Arabia",
       "date": "2026-10-15T16:22:00Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON613"
     }
   ],
-  "generatedAt": "2026-10-30T11:50:13.627385+00:00"
+  "generatedAt": "2026-10-30T17:25:16.009516+00:00"
 }
