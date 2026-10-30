@@ -1,22 +1,199 @@
 {
-  "generatedAt": "2026-10-30T10:12:06.039Z",
+  "generatedAt": "2026-10-30T16:44:42.932Z",
   "items": [
     {
-      "title": "المركزي العراقي: فجوة سعر الدولار في السوق الموازية تتراجع إلى 9%",
-      "source": "معلومات مباشر",
-      "link": "https://www.mubasher.info/news/4693235/%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%81%D8%AC%D9%88%D8%A9-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B2%D9%8A%D8%A9-%D8%AA%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D8%A5%D9%84%D9%89-9-/",
+      "title": "العراق بين تناقضات الدولة والمجتمع والإقتصاد",
+      "source": "Azzaman",
+      "link": "https://www.azzaman.com/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A8%D9%8A%D9%86-%D8%AA%D9%86%D8%A7%D9%82%D8%B6%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9-%D9%88%D8%A7/",
+      "date": "2026-10-30T15:19:29.000Z",
+      "lang": "ar",
+      "titleKo": "국가·사회·경제의 모순 속 이라크",
+      "url": "https://www.azzaman.com/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A8%D9%8A%D9%86-%D8%AA%D9%86%D8%A7%D9%82%D8%B6%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D8%AC%D8%AA%D9%85%D8%B9-%D9%88%D8%A7/",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Azzaman"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq dismantles drug trafficking network, arrests 31 suspects",
+      "source": "Rudaw",
+      "link": "https://rudaw.net/english/categories/iraq/1079952",
+      "date": "2026-10-30T14:53:14.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 마약 밀매 조직 적발…용의자 31명 체포",
+      "url": "https://rudaw.net/english/categories/iraq/1079952",
+      "body": "Iraqi security forces on Friday dismantled a drug trafficking network and arrested 31 suspects in Iraq's southern Diwaniyah province, as authorities intensify operations to curb the spread of narcotic",
+      "bodyKo": "이라크 보안군이 금요일 남부 디와니야 주에서 마약 밀매 조직을 적발하고 용의자 31명을 체포했다. 당국이 마약 확산을 억제하기 위한 작전을 강화하고 있는 가운데 나온 조치다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "디와니야",
+        "km": 137
+      }
+    },
+    {
+      "title": "Pakistan orders pilgrimage organizers to halt travel via closed Iran-Iraq border crossing",
+      "source": "Arab News PK",
+      "link": "https://www.arabnews.pk/pakistan/pakistan-orders-pilgrimage-organizers-to-halt-travel-via-closed-iran-iraq-border-crossing-3005658",
+      "date": "2026-10-30T12:50:49.000Z",
+      "lang": "en",
+      "titleKo": "파키스탄, 폐쇄된 이란-이라크 국경 통로 경유 순례 여행 중단 명령",
+      "url": "https://www.arabnews.pk/pakistan/pakistan-orders-pilgrimage-organizers-to-halt-travel-via-closed-iran-iraq-border-crossing-3005658",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Arab News PK"
+      ],
+      "related": [],
+      "tag": "휴일·행사",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraqi MP urges pipelines to Jordan, Syria, says export planning failures are deliberate",
+      "source": "964media",
+      "link": "https://en.964media.com/54441/",
+      "date": "2026-10-30T12:41:44.000Z",
+      "lang": "en",
+      "titleKo": "이라크 의원, 요르단·시리아 송유관 건설 촉구…수출 계획 실패는 의도적이라고 주장",
+      "url": "https://en.964media.com/54441/",
+      "body": "BAGHDAD — Iraqi lawmaker Jassim Al-Attiyah said Thursday that parliament plans to host officials from the\nSpeaking in an interview with journalist Samer Jawad on Iraq 24 TV, Al-Attiyah warned that Iraq would remain vulnerable to security and regional disruptions unless it develops additional oil export routes with capacity exceeding current export volumes. “If the government does not consider diversified oil export outlets with capacity exceeding current export volumes, so that we have reserves in case of a disruption or something similar, we will remain in trouble,” he said.\nAl-Attiyah urged authorities to move forward with pipeline projects connecting Iraq to neighboring countries, including Jordan and Syria, despite opposition to such plans. “We are always concerned about populism in the streets calling for no pipelines to Jordan, Syria and other neighboring countries,” he said. “We must deal with matters realistically, overcoming populism and those who threaten to blow up one pipel",
+      "bodyKo": "바그다드 — 이라크 의원 자심 알아티야는 목요일 의회가 관계자들을 초청할 계획이라고 밝혔다.\n\n이라크 24TV의 기자 사메르 자와드와의 인터뷰에서 알아티야는 이라크가 현재 수출량을 초과하는 용량의 추가 석유 수출로를 개발하지 않으면 안보 및 지역 불안정에 취약한 상태로 남을 것이라고 경고했다. \"정부가 현재 수출량을 초과하는 용량의 다양한 석유 수출 경로를 고려하지 않으면, 중단이나 유사한 상황에 대비할 수 있는 비축량을 확보할 수 없다면 우리는 계속 문제에 직면할 것이다\"라고 그는 말했다.\n\n알아티야는 당국에 요르단과 시리아를 포함한 이웃 국가들과 이라크를 연결하는 파이프라인 사업을 추진할 것을 촉구했으며, 이러한 계획에 대한 반대에도 불구하고 진행할 것을 주장했다. \"우리는 요르단, 시리아 및 기타 이웃 국가로의 파이프라인 건설을 반대하는 거리의 대중주의에 항상 우려하고 있다\"라고 그는 말했다. \"우리는 현실적으로 문제를 다루어야 하며, 대중주의를 극복하고 파이프라인을 폭파하겠다고 위협하는 자들을 이겨내야 한다\"",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "964media"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "1.4 Volts From a Replica Cannot Show the Baghdad Battery Was Used",
+      "source": "Ancient Origins",
+      "link": "https://www.ancient-origins.net/news-history-archaeology/baghdad-battery-ancient-electricity-fact-check-00103308",
+      "date": "2026-10-30T12:26:21.000Z",
+      "lang": "en",
+      "titleKo": "바그다드 배터리가 사용됐다는 것을 복제품의 1.4볼트로는 증명할 수 없다",
+      "url": "https://www.ancient-origins.net/news-history-archaeology/baghdad-battery-ancient-electricity-fact-check-00103308",
+      "body": "The Baghdad Battery, a Parthian-era clay jar with a copper cylinder and iron rod, will produce about half a volt when filled with an acid, and a 2026 replica reached over 1.4 volts with lye. No ancient apparatus, plated object or text shows it was used for electricity, so the battery claim is Unverified.\nFact Check verdict: The Baghdad Battery was an ancient electric battery: Unverified The find is a clay jar holding a sealed copper cylinder and an iron rod, from a Parthian settlement layer near Baghdad: Established Replicas filled with an acid or copper sulfate solution produce about half a volt: Established The jar was designed as two linked cells giving more than 1.4 volts: Unverified Its makers used it to electroplate objects with gold or silver: Unverified It was used to relieve pain with a mild electric current: Unverified",
+      "bodyKo": "바그다드 배터리는 파르티아 시대의 점토 항아리로 구리 원통과 철봉을 담고 있으며, 산으로 채웠을 때 약 0.5볼트를 생산하고, 2026년에 만든 복제품은 가성소다로 1.4볼트 이상을 달성했다. 그러나 전기 사용을 보여주는 고대 장치, 도금된 물체 또는 문헌이 없어 배터리 주장은 미확인 상태다.\n\n팩트체크 판정: 바그다드 배터리가 고대 전기 배터리였다 - 미확인\n발견물은 바그다드 근처 파르티아 정착층에서 나온 밀폐된 구리 원통과 철봉을 담은 점토 항아리다 - 확인됨\n산이나 황산구리 용액으로 채운 복제품은 약 0.5볼트를 생산한다 - 확인됨\n항아리가 1.4볼트 이상을 생산하는 두 개의 연결된 셀로 설계되었다 - 미확인\n제작자들이 금이나 은으로 물체를 도금하는 데 사용했다 - 미확인\n약한 전류로 통증을 완화하는 데 사용되었다 - 미확인",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Ancient Origins"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "تراجع جديد.. سعر مثقال الذهب في العراق عيار 21 اليوم الجمعة 30 أكتوبر 2026",
+      "source": "جريدة آخر الأخبار",
+      "link": "https://akher.news/7618/%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D8%AC%D8%AF%D9%8A%D8%AF-%D8%B3%D8%B9%D8%B1-%D9%85%D8%AB%D9%82%D8%A7%D9%84-%D8%A7%D9%84%D8%B0%D9%87%D8%A8-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%B9/",
+      "date": "2026-10-30T11:11:59.000Z",
+      "lang": "ar",
+      "titleKo": "새로운 하락.. 이라크 21캐럿 금 1므깟알 가격 오늘 금요일 2026년 10월 30일",
+      "url": "https://akher.news/7618/%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D8%AC%D8%AF%D9%8A%D8%AF-%D8%B3%D8%B9%D8%B1-%D9%85%D8%AB%D9%82%D8%A7%D9%84-%D8%A7%D9%84%D8%B0%D9%87%D8%A8-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%B9/",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "جريدة آخر الأخبار"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "From Baghdad to the International Stage: Iraq Reclaims Its Leadership Role » Iraqi News Agency",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://ina.iq/en/reports/53367-from-baghdad-to-the-international-stage-iraq-reclaims-its-leadership-role.html",
+      "date": "2026-10-30T10:53:39.000Z",
+      "lang": "en",
+      "titleKo": "바그다드에서 국제무대로: 이라크 지도력 회복 » 이라크통신사",
+      "url": "https://ina.iq/en/reports/53367-from-baghdad-to-the-international-stage-iraq-reclaims-its-leadership-role.html",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "أسعار صرف الدولار في الأسواق العراقية ليوم الجمعة",
+      "source": "موقع كلمة الإخباري",
+      "link": "https://kalimaiq.com/news/details/72603",
       "date": "2026-10-30T09:58:51.000Z",
       "lang": "ar",
-      "titleKo": "이라크 중앙은행: 암시장 달러 환율 격차 9%로 축소",
-      "url": "https://www.mubasher.info/news/4693235/%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%81%D8%AC%D9%88%D8%A9-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B2%D9%8A%D8%A9-%D8%AA%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D8%A5%D9%84%D9%89-9-/",
-      "body": "24% في وقت سابق، وذلك بعد أسابيع من خفض قيمة العملة المحلية بنحو 15% أمام الدولار، في ظل ضغوط …\nمباشر: أعلن محافظ البنك المركزي العراقي، نزار ناصر حسين، تراجع الفجوة بين سعر الصرف الرسمي للدينار العراقي وسعره في السوق الموازية إلى نحو 9%، مقابل 24% في وقت سابق، وذلك بعد أسابيع من خفض قيمة العملة المحلية بنحو 15% أمام الدولار، في ظل ضغوط مالية واقتصادية مرتبطة بالحرب في إيران.\nوجاءت تصريحات حسين، الخميس، خلال اجتماع مع أعضاء لجنة الاستثمار والتنمية في مجلس النواب العراقي، لمناقشة تداعيات تعديل سعر الصرف على النشاط الاقتصادي والاستثماري.\nونفى محافظ البنك المركزي ما تردد بشأن طباعة عملة جديدة، مؤكدًا عدم صحة هذه الأنباء، وفقًا لبيان صادر عن الدائرة الإعلامية لمجلس النواب نقلته وكالة الأنباء العراقية.\nوكان البنك المركزي العراقي قد خفض قيمة الدينار مطلع أكتوبر، برفع سعر بيع الدولار للجمهور إلى 1520 دينارًا، مقابل نحو 1320 دينارًا سابقًا، في خطوة جاءت وسط ضغوط متزايدة على العملة المحلية.",
-      "bodyKo": "**이라크 중앙은행, 환율 격차 9%로 축소**\n\n이라크 중앙은행 총재 나자르 나시르 후세인은 이라크 디나르의 공식 환율과 암시장 환율 간 격차가 종전의 24%에서 약 9%로 축소됐다고 발표했다. 이는 이란과의 전쟁과 관련된 재정·경제적 압박 속에서 수주 전 현지 통화가 달러 대비 약 15% 평가절하된 이후의 결과다.\n\n후세인 총재는 목요일 이라크 의회 의회 투자개발위원회 위원들과의 회의에서 이같이 밝혔다. 이 회의는 환율 조정이 경제 및 투자 활동에 미치는 영향을 논의하기 위해 개최됐다.\n\n중앙은행 총재는 새로운 화폐 인쇄에 관한 보도를 부인하며 이러한 소식이 사실이 아니라고 강조했다. 이는 이라크 의회 홍보실 성명을 통해 이라크 통신사가 전한 내용이다.\n\n이라크 중앙은행은 10월 초 디나르 가치를 인하했으며, 대중을 위한 달러 판매 환율을 종전의 약 1320 디나르에서 1520 디나르로 올렸다. 이 조치는 현지 통화에 대한 압박이 증가하는 가운데 단행됐다.",
+      "titleKo": "금요일 이라크 시장의 달러 환율",
+      "url": "https://kalimaiq.com/news/details/72603",
+      "body": "شهد سعر صرف الدولار الأمريكي مقابل الدينار العراقي صباح اليوم الجمعة انخفاضاً طفيفاً في أسواق العاصمة بغداد مقارنةً بإغلاق تعاملات يوم أمس الخميس، وسط ترقب وحذر...\nوسجّلت بورصتا الكفاح والحارثية الرئيسيتان سعر بيع بلغ 167900 ديناراً لكل 100 دولار، مقابل 168050 ديناراً عند إغلاق يوم أمس الخميس.\nوفي السوق الموازية، سُجّل انخفاض مماثل عن سعر يوم أمس، إذ بلغ سعر شراء الدولار من المواطنين 167900 ديناراً، فيما بلغ سعر بيعه لهم 168000 ديناراً لكل 100 دولار.",
+      "bodyKo": "**달러 환율, 바그다드에서 소폭 하락**\n\n금요일 아침 바그다드 시장에서 미국 달러 대 이라크 디나르 환율이 목요일 마감 대비 소폭 하락했으며, 시장은 긴장 속에 주시하고 있다.\n\n주요 거래소인 알카파흐와 알하리시야 거래소는 100달러당 167900디나르의 매도가를 기록했으며, 이는 목요일 마감 시 168050디나르에서 하락한 것이다.\n\n평행시장에서도 전날 대비 유사한 하락세를 보였으며, 국민으로부터의 달러 매입가는 100달러당 167900디나르, 국민에 대한 매도가는 168000디나르로 기록됐다.",
       "tried": true,
-      "count": 3,
+      "count": 6,
       "sources": [
         "أخبار العالم اليوم",
+        "موقع كلمة الإخباري",
         "معلومات مباشر",
-        "964media"
+        "IraqiNews",
+        "شفق نيوز"
       ],
       "related": [
         {
@@ -25,9 +202,24 @@
           "link": "https://www.almashhad.com/article/174515324408726-economy/774998865347066-%D8%B3%D8%B9%D8%B1-%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9-30102026-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%AA%D8%B1%D9%82%D8%A8-%D8%A8%D8%A7%D9%84%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D8%A1/"
         },
         {
-          "titleKo": "이라크 중앙은행, 달러 수급 격차 24%에서 9%로 축소",
-          "source": "964media",
-          "link": "https://en.964media.com/54420/"
+          "titleKo": "이라크 중앙은행: 암시장 달러 환율 격차 9%로 축소",
+          "source": "معلومات مباشر",
+          "link": "https://www.mubasher.info/news/4693235/%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%81%D8%AC%D9%88%D8%A9-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B2%D9%8A%D8%A9-%D8%AA%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D8%A5%D9%84%D9%89-9-/"
+        },
+        {
+          "titleKo": "미국 달러 환율 이라크 주요 환전소에서 168,000 근처에서 안정세",
+          "source": "IraqiNews",
+          "link": "https://www.iraqinews.com/iraq/us-dollar-exchange-rates-hold-steady-baghdad-erbil-basra-october-29-2026/"
+        },
+        {
+          "titleKo": "2일 하락 후.. 바그다드·아르빌 환전소 달러 환율 다시 올라",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A8%D8%B9%D8%AF-%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D9%84%D9%8A%D9%88%D9%85%D9%8A%D9%86-%D8%A8%D9%88%D8%B1%D8%B5%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88-%D8%B1%D8%A8%D9%8A%D9%84-%D8%AA%D8%B3%D8%AC%D9%84-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9%D8%A7-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A7-%D9%84-%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1"
+        },
+        {
+          "titleKo": "이라크 오늘(목요일 29/10/2026) 암시장 달러 환율",
+          "source": "أخبار العالم اليوم",
+          "link": "https://news.google.com/rss/articles/CBMikARBVV95cUxON2ZRYTZZSWNjblR1YllGNjcwYUthLVV2Z0xBdnNHSlNLZ3laUF9IUUJJTkZfeG9lcmFJZ0dBVnpCVWU1YWREaE1EUk9GWmNKNnBWMkozX2JvM0lVYkFveHBlSUdCOWtSbzJpbTJpMWtMcHNTMjNCRVNOd256V1hhXy1feGwtWTg2RExFTHRYeXVSdXVUYlRaWEtVczNlU0lWN3ZfZEhJWmtfM3QxM2ozQ2xoMkphLVE4ZnRfWWFaN3dMb3dtcUE5QUxZdjBacXhuc1ktVmV1OGZpeURMU1FRUWdpa0RFVmNCYkZ4c3pjUEhCZERVN01xXzYweFFzTV81SF93VlpRVGhoMzY4MzlHaG9YTDJqVHV0QXA5RExka1ducGZ3ajhQVDQ0OXZtcGpmNWNBVkdTcENYcHMtNTJtaEpnczEzVEw0YklOdkVBZ1dteHpvNGhnZVpqaHVBWU1iNXNSZkVpVlM1V2lWbU9LWGRlNGdBVnpKZVl5QjB0NEFaRUp4dXZPN05Xcy1CVEoxQUVueDVUWGoyTUg0QWxIWGZLUEdfLTBweUpBclE2ZmoyV2dlUnhnMVNVTVQxMDNrSGNvV3FFTEdpdHBmQ2J6SWxCR2JLdzZOU1RoSHdSYnU1bHNvdXdfeFQ3ZC1XR3dyU1hMLWJUSmpaa2dsX2NxOGxpSy1IeWM4djI2RURWcWzSAZYEQVVfeXFMT3lIcHRHRzhyT3p6VTJEalk0bnJDd0ZJM3hMUUJrRVV1SGpzbUJIbF9rMlBzdFY0SDdDVjN1aFBwV1hwb2V4QW9sNHRsel9jeE5ZTnB1THpJa2dZMERqRHMzSkwxdDJkb2g0VVM5d2lUMW1nelJGTG1Pdl91eFh4dGduclRKTmtaZUkzMXFyQ3NxX2xDY3ZRdE5qLUxFV1ZiblRHWFFYTjVnQ0xFa0xJRjQtMVRQZ3NIZ0VodHNkbzd1VXdPdTgtYXFMelp3STFWdDlsWVNwNVJwbnR0Mk05YVFFNUdpRUJJbnR6S0ZRZjZQSUF6QTgzVm1fVzFzckdQbzAybWQ3UTBGTmZJb3VCQmdSdzd1cDd6WHByYUo4a3Qzb0hKVHd4Ulp3TU95N21wejRpemRDeGs1T2RZNDZXVTRpVTVoUjIzRjlqVjlQWnRmVWtCOGFrdDdFSXhHeXJKRWtBOXFXZk50SVlzVEVkT05nUnhzRC1qb29HbzVaQzY1eTI1cEhsMmdLZzZyWVo4ck1Za3hCVmg5YUJjdzJvSzFWbExYNExrbE1kM0tJVkQwaHNQVE5hR25icm5zX3hXUWFJeHZteHpJMTVSTUtiUmdXWmdMYXhtMzBCRjNZVENqc0lPTE9mYmkwVkV5UjFvT2NZc29XMXNQbFdaVVZWdkxjZU9MLTZQRzBGZC1VcUNDVmtsVGln?oc=5"
         }
       ],
       "tag": "경제·유가",
@@ -43,7 +235,7 @@
       "title": "Iraqi Prime Minister takes direct control of intelligence service",
       "source": "The National",
       "link": "https://www.thenationalnews.com/news/mena/2026/10/30/iraqi-prime-minister-takes-direct-control-of-intelligence-service/",
-      "date": "2026-10-30T07:52:30.000Z",
+      "date": "2026-10-30T07:53:51.000Z",
       "lang": "en",
       "titleKo": "이라크 총리, 정보기관 직접 통제 나서",
       "url": "https://www.thenationalnews.com/news/mena/2026/10/30/iraqi-prime-minister-takes-direct-control-of-intelligence-service/",
@@ -223,6 +415,31 @@
       }
     },
     {
+      "title": "KRG denies oil smuggling allegations by Iraqi PM’s adviser",
+      "source": "Rudaw",
+      "link": "https://rudaw.net/english/categories/kurdistan/1079945",
+      "date": "2026-10-30T03:31:44.000Z",
+      "lang": "en",
+      "titleKo": "KRG, 이라크 총리 고문의 석유 밀수 혐의 부인",
+      "url": "https://rudaw.net/english/categories/kurdistan/1079945",
+      "body": "The Kurdistan Regional Government (KRG) on Thursday rejected allegations of oil smuggling and inflated production figures, a day after an adviser to Iraqi Prime Minister Ali al-Zaidi claimed that the",
+      "bodyKo": "쿠르드 지역정부(KRG)는 목요일 석유 밀수 및 부풀려진 생산량 수치 혐의를 거부했다. 이는 알리 알자이디 이라크 총리 보좌관이 다음날 주장한 지 하루 뒤의 일이었다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "대우건설, 이라크 항만청과 회동...추가 사업 논의",
       "source": "더구루",
       "link": "https://theguru.co.kr/news/article.html?no=109047",
@@ -248,35 +465,22 @@
       }
     },
     {
-      "title": "Iraqi PM talks economy, energy on Syria visit",
-      "source": "Kuwait Times",
-      "link": "https://kuwaittimes.com/article/52564/world/iraqi-pm-talks-economy-energy-on-syria-visit/",
+      "title": "Zaidi's Damascus visit revives Iraqi rift over Sharaa as pipeline talks advance",
+      "source": "Amwaj.media",
+      "link": "https://amwaj.media/en/media-monitor/zaidis-damascus-visit-revives-iraqi-rift-over-sharaa-as-pipeline-talks-advance",
       "date": "2026-10-30T01:03:29.000Z",
       "lang": "en",
-      "titleKo": "이라크 총리, 시리아 방문 중 경제·에너지 논의",
-      "url": "https://kuwaittimes.com/article/52564/world/iraqi-pm-talks-economy-energy-on-syria-visit/",
-      "body": "DAMASCUS: Iraqi Prime Minister Ali Al-Zaidi and Syrian President Ahmed Al-Sharaa discussed economic and energy cooperation in Damascus on Wednesday, official st...\nCopy Link Email Facebook Twitter Telegram LinkedIn Whatsapp DAMASCUS: Iraqi Prime Minister Ali Al-Zaidi and Syrian President Ahmed Al-Sharaa discussed economic and energy cooperation in Damascus on Wednesday, official statements said, months after a deal on an Iraqi oil export pipeline. It is the first visit by an Iraqi premier since Sharaa’s Islamist authorities took power after toppling longtime Syrian ruler Bashar Al-Assad in December 2024 following more than 13 years of civil war.\nIraq is seeking to strengthen ties with a neighbor with whom it shares a 600-kilometre (370-mile) border, while Syria is working to become a transit hub for global trade, particularly as countries look for alternatives to the Strait of Hormuz. Baghdad had initially dealt cautiously with the new Syrian authorities, though senior Iraqi political,",
-      "bodyKo": "**이라크 총리, 시리아 대통령과 경제·에너지 협력 논의**\n\n다마스쿠스: 이라크 알리 알자이디 총리와 시리아 아흐메드 알샤라 대통령이 수요일 다마스쿠스에서 경제·에너지 협력을 논의했다고 공식 성명이 전했다. 이는 이라크 석유 수출 파이프라인 협정 체결 수개월 후의 일이다. 2024년 12월 13년 이상의 내전 끝에 장기 집권자 바샤르 알아사드를 축출한 샤라의 이슬람주의 정부가 권력을 잡은 이후 이라크 총리의 첫 방문이다.\n\n이라크는 600킬로미터 국경을 공유하는 이웃 국가와의 관계 강화를 추구하고 있으며, 시리아는 특히 국가들이 호르무즈 해협의 대안을 모색함에 따라 글로벌 무역의 중심지가 되기 위해 노력하고 있다. 바그다드는 초기에 새로운 시리아 당국과 신중하게 대응했으나, 이라크의 고위 정치인들은",
+      "titleKo": "자이디의 다마스쿠스 방문, 샤라 둘러싼 이라크 내 갈등 재점화...파이프라인 협상 진전",
+      "url": "https://amwaj.media/en/media-monitor/zaidis-damascus-visit-revives-iraqi-rift-over-sharaa-as-pipeline-talks-advance",
+      "body": "",
+      "bodyKo": "",
       "tried": true,
-      "count": 3,
+      "count": 1,
       "sources": [
-        "Amwaj.media",
-        "Al-Monitor",
-        "Kuwait Times"
+        "Amwaj.media"
       ],
-      "related": [
-        {
-          "titleKo": "자이디의 다마스쿠스 방문, 샤라 둘러싼 이라크 내 갈등 재점화...파이프라인 협상 진전",
-          "source": "Amwaj.media",
-          "link": "https://amwaj.media/en/media-monitor/zaidis-damascus-visit-revives-iraqi-rift-over-sharaa-as-pipeline-talks-advance"
-        },
-        {
-          "titleKo": "이라크 자이디, 첫 시리아 방문에서 샤라 만나다: 주요 내용",
-          "source": "Al-Monitor",
-          "link": "https://www.al-monitor.com/originals/2026/10/iraqs-zaidi-meets-sharaa-first-syria-visit-what-know"
-        }
-      ],
-      "tag": "정치·선거",
+      "related": [],
+      "tag": "기타",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -286,28 +490,53 @@
       }
     },
     {
-      "title": "KRG denies oil smuggling allegations by Iraqi PM’s adviser",
-      "source": "Rudaw",
-      "link": "https://rudaw.net/english/categories/kurdistan/1079945",
-      "date": "2026-10-29T20:31:44.000Z",
-      "lang": "en",
-      "titleKo": "KRG, 이라크 총리 고문의 석유 밀수 혐의 부인",
-      "url": "https://rudaw.net/english/categories/kurdistan/1079945",
-      "body": "The Kurdistan Regional Government (KRG) on Thursday rejected allegations of oil smuggling and inflated production figures, a day after an adviser to Iraqi Prime Minister Ali al-Zaidi claimed that the",
-      "bodyKo": "쿠르드 지역정부(KRG)는 목요일 석유 밀수 및 부풀려진 생산량 수치 혐의를 거부했다. 이는 알리 알자이디 이라크 총리 보좌관이 다음날 주장한 지 하루 뒤의 일이었다.",
+      "title": "IMF, 이집트·이라크·아르헨티나의 출장 계획과 프로그램 업데이트 발표",
+      "source": "Traders Union",
+      "link": "https://tradersunion.com/ko/news/institutions/show/4024531-imf-travel-plans-egypt-iraq-argentina/",
+      "date": "2026-10-30T00:22:30.000Z",
+      "lang": "ko",
+      "titleKo": "IMF, 이집트·이라크·아르헨티나의 출장 계획과 프로그램 업데이트 발표",
+      "url": "https://tradersunion.com/ko/news/institutions/show/4024531-imf-travel-plans-egypt-iraq-argentina/",
+      "body": "",
+      "bodyKo": "",
       "tried": true,
       "count": 1,
       "sources": [
-        "Rudaw"
+        "Traders Union"
       ],
       "related": [],
-      "tag": "치안·테러",
+      "tag": "기타",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
         "act": "",
         "place": "",
         "km": null
+      }
+    },
+    {
+      "title": "ConocoPhillips Joins BP in Iraq as Baghdad Seeks More US Energy Investment",
+      "source": "EnergyNow.com",
+      "link": "https://energynow.com/2026/07/conocophillips-joins-bp-in-iraq-as-baghdad-seeks-more-us-energy-investment/",
+      "date": "2026-10-29T21:43:00.000Z",
+      "lang": "en",
+      "titleKo": "코노코필립스, 이라크 진출…바그다드 미국 에너지 투자 확대 추진",
+      "url": "https://energynow.com/2026/07/conocophillips-joins-bp-in-iraq-as-baghdad-seeks-more-us-energy-investment/",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "EnergyNow.com"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
       }
     },
     {
@@ -346,39 +575,16 @@
       "body": "Iraqi Prime Minister al-Zaidi and Syrian President Ahmed al-Sharaa in during a meeting in New York.\nBaghdad (IraqiNews.com) – Iraqi Prime Minister Ali al-Zaidi is scheduled to arrive in Damascus on Wednesday for an official visit to Syria.\nThe trip marks the first official visit by an Iraqi prime minister to Syria since Syrian President Ahmed al-Sharaa took office following the fall of the Assad regime.\nAl-Zaidi’s trip to Damascus is part of a broader regional tour. He recently met with Jordan’s King Abdullah II and Prime Minister Jafar Hassan in Amman on Monday and is expected to visit Lebanon as well.\nAl-Zaidi and al-Sharaa are expected to discuss mutual security and economic concerns. High-priority items on the agenda include border security, counter-terrorism, energy, and economy.\nThe two leaders will discuss efforts to enhance coordination for securing the shared Iraq-Syria border, measures for intelligence sharing to combat regional terrorism, and initiatives to foster bilateral",
       "bodyKo": "이라크 총리, 시리아 공식 방문 예정\n\n바그다드(이라크뉴스닷컴) – 알리 알자이디 이라크 총리가 수요일 다마스쿠스에 도착해 시리아를 공식 방문할 예정이다.\n\n이번 방문은 아사드 정권 붕괴 이후 아흐메드 알샤라 시리아 대통령이 취임한 이래 이라크 총리의 첫 공식 방문이다.\n\n알자이디의 다마스쿠스 방문은 광범위한 지역 순방의 일환이다. 그는 최근 월요일 암만에서 요르단의 압둘라 2세 국왕과 자파르 하산 총리를 만났으며 레바논 방문도 예정돼 있다.\n\n알자이디와 알샤라는 상호 안보 및 경제 문제를 논의할 것으로 예상된다. 의제의 우선순위 항목에는 국경 안보, 테러 대응, 에너지, 경제가 포함돼 있다.\n\n두 지도자는 이라크-시리아 공동 국경 보안 강화를 위한 조율 노력, 지역 테러 대응을 위한 정보 공유 조치, 양국 간 협력 증진 방안을 논의할 것이다.",
       "tried": true,
-      "count": 6,
+      "count": 2,
       "sources": [
         "وكالة الانباء العراقية (واع)",
-        "IraqiNews",
-        "thecradle.co",
-        "The National",
-        "Oman Observer"
+        "IraqiNews"
       ],
       "related": [
         {
           "titleKo": "석유에서 국경 보안까지: 자이디의 다마스쿠스 방문, 이라크-시리아 협력의 새로운 전망 열어",
           "source": "وكالة الانباء العراقية (واع)",
           "link": "https://ina.iq/en/reports/53359-from-oil-to-border-security-al-zaidis-visit-to-damascus-opens-new-prospects-for-iraqi-syrian-cooperation.html"
-        },
-        {
-          "titleKo": "이라크 총리, 시리아 자이나브 성지 방문",
-          "source": "IraqiNews",
-          "link": "https://www.iraqinews.com/iraq/iraqi-pm-visits-sayyida-zaynab-shrine-in-syria/"
-        },
-        {
-          "titleKo": "이라크 총리, 무역·에너지·안보 협의 위해 다마스쿠스 방문",
-          "source": "thecradle.co",
-          "link": "https://thecradle.co/articles/iraqi-pm-visits-damascus-for-talks-on-trade-energy-security"
-        },
-        {
-          "titleKo": "알자이디 이라크 총리, 알샤라 권력 장악 후 첫 고위급 방문으로 시리아 방문 시작",
-          "source": "The National",
-          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNT3VUZWs2QmhPcC1TN1hJNDRNLWZIUEZoSFhGdDhDRGtta1Y1ck85Yks2Z2JnRDA4V0k2aVllcEZFbDZDOG9fZWltNDhQdUxWSVI4NS10UVZvUmp1MVRQVGF2Qy1vVlFEX292VUN6cnQzWkgxZ1owdE1Ec1hWS3JJaDUwczkxOXRUOGJzUGVGNGRsNW8zb2ZzMzE4RkR5eEEtc21pS3p0WHZhbkstdDNEd19zZmp6YTBJMjFma1RoZnY2M3ItaFcxTWV0eF9XbEVMc28wUVlOQy0tQ3c?oc=5"
-        },
-        {
-          "titleKo": "이라크 총리, 시리아 방문…이웃 국가들 관계 강화 추진",
-          "source": "Oman Observer",
-          "link": "https://www.omanobserver.om/article/1198761/world/asia/iraqi-pm-visits-syria-as-neighbours-seek-to-boost-ties"
         }
       ],
       "tag": "정치·선거",
@@ -491,6 +697,31 @@
       }
     },
     {
+      "title": "سعر الذهب في العراق اليوم الخميس 29 أكتوبر 2026: عيار 24 عند 196,705 دينار",
+      "source": "يلا نيوز نت",
+      "link": "https://yallanews.net/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B0%D9%87%D8%A8-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AE%D9%85%D9%8A%D8%B3-29-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1-2026-%D8%B9%D9%8A%D8%A7%D8%B1-24-%D8%B9%D9%86%D8%AF-196705-%D8%AF%D9%8A%D9%86%D8%A7%D8%B1",
+      "date": "2026-10-29T16:08:23.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 금값 29일 상승…24캐럿 1그램에 19만6705디나르",
+      "url": "https://yallanews.net/%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B0%D9%87%D8%A8-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AE%D9%85%D9%8A%D8%B3-29-%D8%A3%D9%83%D8%AA%D9%88%D8%A8%D8%B1-2026-%D8%B9%D9%8A%D8%A7%D8%B1-24-%D8%B9%D9%86%D8%AF-196705-%D8%AF%D9%8A%D9%86%D8%A7%D8%B1",
+      "body": "سعر الذهب في العراق اليوم الخميس 29 أكتوبر 2026: عيار 24 يسجل 196,705 دينار، مع ارتفاع طفيف في جميع الأعيرة، وأونصة عند 4034 دولاراً.\nشهدت أسعار الذهب في العراق خلال تعاملات اليوم الخميس 29 أكتوبر 2026 ارتفاعاً طفيفاً في جميع الأعيرة مقارنة بمستويات أمس، وفقاً لبيانات موقع gold-price. ويأتي هذا الارتفاع المحدود في ظل تحركات متباينة للمعدن الأصفر عالمياً، مع استمرار السوق المحلية في استيعاب تأثيرات سعر الصرف والعوامل الخارجية. وسجل سعر جرام الذهب عيار 24 في العراق نحو 196,705 دينارات عراقية (130 دولاراً)، بينما بلغ عيار 22 حوالي 180,313 ديناراً (119 دولاراً). أما عيار 21 فقد سجل سعر المثقال الواحد نحو 172,116 ديناراً (114 دولاراً)، فيما بلغ عيار 18 حوالي 147,528 ديناراً (97 دولاراً). وسجلت أونصة الذهب في العراق نحو 6,112,550 ديناراً (4034 دولاراً). معلومة استثمارية: في السوق العراقية، يعد المثقال (5 جرامات تقريباً) وحدة القياس الشائعة لتداول الذهب، خاصة في أسواق الجملة بشارع النهر في بغداد. جدول أسعار الذهب في العراق اليوم العيار / الوحدة السعر بالدينار العراقي عيار 24 (جرام) 196,705 عي",
+      "bodyKo": "**이라크 금값 29일 소폭 상승, 24캐럿 그램당 196,705 디나르**\n\n2026년 10월 29일 목요일 이라크의 금값이 전 일자 대비 모든 순도에서 소폭 상승했다. 골드프라이스 웹사이트 데이터에 따르면 이번 제한적 상승은 국제 금시장의 엇갈린 움직임 속에서 나타났으며, 현지 시장은 환율과 외부 요인의 영향을 계속 흡수하고 있다. 이라크에서 24캐럿 금 1그램의 가격은 약 196,705 이라크 디나르(130달러)를 기록했다. 22캐럿은 약 180,313 디나르(119달러), 21캐럿은 1 미스칼당 약 172,116 디나르(114달러)를 나타냈다. 18캐럿은 약 147,528 디나르(97달러)에 달했다. 이라크의 금 1온스는 약 6,112,550 디나르(4034달러)를 기록했다. 투자 정보: 이라크 시장에서는 미스칼(약 5그램)이 금 거래의 일반적인 측정 단위이며, 특히 바그다드 알나흐르 거리의 도매 시장에서 사용된다. 이라크 금값 오늘 가격표 순도/단위 이라크 디나르 가격 24캐럿(그램) 196,705",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "يلا نيوز نت"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "Chinese Missiles in Iraq? Israel’s Fighter Jets Aren’t the Main Vulnerability",
       "source": "Middle East Forum",
       "link": "https://www.meforum.org/mef-online/chinese-missiles-in-iraq-israels-fighter-jets-arent-the-main-vulnerability",
@@ -516,6 +747,56 @@
       }
     },
     {
+      "title": "دانة غاز ونفط الهلال: توريد الغاز إلى وزارة الكهرباء العراقية يتوافق مع حقوقنا التعاقدية - ارقام : اخبار ومعلومات سوق الأسهم السعودي",
+      "source": "تاسي",
+      "link": "https://www.argaam.com/ar/article/articledetail/id/1927049",
+      "date": "2026-10-29T15:12:44.000Z",
+      "lang": "ar",
+      "titleKo": "달라 가스 앤 오일 크레센트: 이라크 전력부로의 가스 공급은 우리의 계약상 권리와 부합한다",
+      "url": "https://www.argaam.com/ar/article/articledetail/id/1927049",
+      "body": "أعربت شركتا دانة غاز ونفط الهلال، المشغّلان المشتركان نيابة عن ائتلاف بيرل بتروليوم، عن استغرابهما من البيان الصادر عن حكومة إقليم كردستان العراق بشأن",
+      "bodyKo": "다나 가스와 할랄 석유 회사는 펄 페트롤륨 컨소시엄을 대신해 공동으로 운영하는 두 회사로서, 이라크 쿠르드 지역정부가 발표한 성명에 대해 놀라움을 표했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "تاسي"
+      ],
+      "related": [],
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "لجنة الأمن والدفاع النيابية تناقش مقترح قانون تمويل تعزيز منظومات الدفاع الجوي العراقي",
+      "source": "مجلس النواب العراقي",
+      "link": "https://iq.parliament.iq/blog/%D9%84%D8%AC%D9%86%D8%A9-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D9%88%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%86%D9%8A%D8%A7%D8%A8%D9%8A%D8%A9-%D8%AA%D9%86%D8%A7%D9%82%D8%B4-%D9%85%D9%82%D8%AA-8/",
+      "date": "2026-10-29T15:11:18.000Z",
+      "lang": "ar",
+      "titleKo": "의회 안보국방위원회, 이라크 방공 체계 강화 자금 조성 법안 논의",
+      "url": "https://iq.parliament.iq/blog/%D9%84%D8%AC%D9%86%D8%A9-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D9%88%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%86%D9%8A%D8%A7%D8%A8%D9%8A%D8%A9-%D8%AA%D9%86%D8%A7%D9%82%D8%B4-%D9%85%D9%82%D8%AA-8/",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "مجلس النواب العراقي"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "Iraq and Syria discuss oil exports from Baniyas port and expanding economic cooperation",
       "source": "کردپرس",
       "link": "https://www.kurdpress.com/en/news/2801433/Iraq-and-Syria-discuss-oil-exports-from-Baniyas-port-and-expanding-economic-cooperation-b9zqqrnd",
@@ -526,12 +807,11 @@
       "body": "Iraqi Prime Minister Ali Faleh Zaidi, in a meeting with Syrian President Ahmed al-Sharaa in Damascus, discussed the possibility of exporting up to 2 million barrels of Ir\nAccording to Kurdistan Press, the Iraqi Prime Minister's Information Office announced that during the meeting between Ali Faleh Zaidi and Ahmed al-Sharaa in Damascus, a series of issues related to bilateral cooperation in the economic, trade and energy fields were discussed and exchanged.According to the report, one of the main topics of the talks was to examine the possibility of exporting Iraqi oil through the Syrian port of Baniyas with a daily capacity of up to 2 million barrels; an issue that, if realized, could pave the way for expanding cooperation between the two countries in the energy sector.\nIncreasing the volume of trade exchanges between Iraq and Syria was also among the other issues raised in the meeting. The two sides also discussed joint cooperation to develop the agricultural sector and strengthen the",
       "bodyKo": "**이라크 총리, 시리아 대통령과 석유 수출 협력 논의**\n\n알리 팔레 자이디 이라크 총리가 다마스쿠스에서 아흐메드 알샤라 시리아 대통령과의 회담에서 일일 200만 배럴 규모의 이라크 석유 수출 가능성을 논의했다.\n\n쿠르디스탄 프레스에 따르면 알리 팔레 자이디 이라크 총리 정보실은 다마스쿠스에서 열린 알리 팔레 자이디와 아흐메드 알샤라 간의 회담에서 경제, 무역, 에너지 분야의 양국 협력과 관련된 일련의 사안들이 논의되고 교환됐다고 발표했다. 보도에 따르면 회담의 주요 주제 중 하나는 일일 최대 200만 배럴의 수용력을 갖춘 시리아의 바니야스 항구를 통한 이라크 석유 수출 가능성을 검토하는 것이었으며, 이 문제가 실현될 경우 에너지 분야에서 양국 간 협력 확대의 길을 열 수 있을 것으로 예상된다.\n\n이라크와 시리아 간 무역 교역량 증대도 회담에서 제기된 다른 주요 사안들 중 하나였다. 양측은 또한 농업 부문 발전을 위한 공동 협력과 강화에 대해서도 논의했다.",
       "tried": true,
-      "count": 4,
+      "count": 3,
       "sources": [
         "کردپرس",
         "IraqiNews",
-        "Pipeline Technology Journal",
-        "964media"
+        "Pipeline Technology Journal"
       ],
       "related": [
         {
@@ -543,11 +823,6 @@
           "titleKo": "이라크·시리아, 바니야스 파이프라인을 통한 일일 200만 배럴 석유 수출 경로 검토",
           "source": "Pipeline Technology Journal",
           "link": "https://www.pipeline-journal.net/news/iraq-syria-explore-2-million-barrel-day-oil-export-route-baniyas-pipeline"
-        },
-        {
-          "titleKo": "자이디와 샤라, 200만 배럴 규모 이라크 석유 파이프라인 바니야스 연결 논의",
-          "source": "964media",
-          "link": "https://en.964media.com/54360/"
         }
       ],
       "tag": "경제·유가",
@@ -582,6 +857,31 @@
         "act": "",
         "place": "바그다드",
         "km": 27
+      }
+    },
+    {
+      "title": "القائد العام للقوات المسلحة يزور مقر جهاز المخابرات الوطني العراقي",
+      "source": "وكالة المرسى نيوز",
+      "link": "https://almarsa-news.com/news-33329.html",
+      "date": "2026-10-29T14:23:07.000Z",
+      "lang": "ar",
+      "titleKo": "국방군 총사령관, 이라크 국가정보기관 방문",
+      "url": "https://almarsa-news.com/news-33329.html",
+      "body": "بغداد/ المرسى نيوز أجرى رئيس مجلس الوزراء، القائد العام للقوات المسلحة علي فالح الزيدي، اليوم الخميس، زيارة إلى مقر جهاز المخابرات الوطني العراقي، عقد خلال\nوأوضح الزيدي بحسب بيان لمكتبه الاعلامي، خلال الاجتماع،أنّ جهاز المخابرات هو لجميع العراقيين، ويجب أن يتم إبعاده عن المحاصصة الحزبية والفئوية والطائفية، كونه يمثل الدرع الحامي للعراق، مشيداً بالتضحيات والمهام العظيمة التي قدمها الجهاز طوال السنوات الماضية.\nوأكد الزيدي دعمه الكامل للجهاز، بضباطه ومراتبه، وتوفير جميع متطلباته، والعمل على تأهيله والارتقاء به، وفق أحدث الطرق العلمية والتقنية، مشدداً على ضرورة بذل قصارى الجهود في سبيل الدفاع عن الوطن وحماية أمنه واستقراره، في ظل ما تشهده المنطقة من أزمات وحروب تتطلب مضاعفة العمل الأمني بجميع مجالاته./ انتهى",
+      "bodyKo": "**총리, 국가정보기관 방문해 당파성 배제 강조**\n\n바그다드/ 알리 팔레흐 알자이디 총리 겸 군 총사령관은 목요일 이라크 국가정보기관 본부를 방문했다. 방문 중 회의를 개최했다.\n\n알자이디는 자신의 홍보실 성명에 따르면 회의 중 국가정보기관은 모든 이라크인을 위한 기관이며, 정당 할거주의, 집단주의, 종파주의로부터 멀리해야 한다고 밝혔다. 그는 정보기관이 이라크를 보호하는 방패를 대표한다며, 지난 수년간 정보기관이 제공한 희생과 위대한 업무를 칭찬했다.\n\n알자이디는 장교와 병사를 포함한 정보기관에 대한 전폭적 지지를 재확인했으며, 모든 필요 요구사항을 충족하고 최신 과학 및 기술 방식에 따라 기관을 재정비하고 발전시키기 위해 노력할 것이라고 강조했다. 그는 현 지역이 겪고 있는 위기와 전쟁 상황에서 국방과 국가 안보 및 안정 보호를 위해 최선을 다할 필요성을 강조하면서, 모든 보안 분야에서 업무를 배가할 것을 촉구했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة المرسى نيوز"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
       }
     },
     {
@@ -672,6 +972,31 @@
       }
     },
     {
+      "title": "العراق اليوم: بغداد والرياض .. شراكات اقتصادية لو نجحت!",
+      "source": "DW.com",
+      "link": "https://www.dw.com/ar/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%B4%D8%B1%D8%A7%D9%83%D8%A7%D8%AA-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A9-%D9%84%D9%88-%D9%86%D8%AC%D8%AD%D8%AA/audio-79672068",
+      "date": "2026-10-29T12:58:26.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 오늘: 바그다드와 리야드, 경제 협력이 성공한다면!",
+      "url": "https://www.dw.com/ar/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%B4%D8%B1%D8%A7%D9%83%D8%A7%D8%AA-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A9-%D9%84%D9%88-%D9%86%D8%AC%D8%AD%D8%AA/audio-79672068",
+      "body": "https://p.dw.com/p/5OILM إعلان رئيس الوزراء العراقي علي الزيدي في المملكة العربية السعودية في جولة تحمل أبعاداً اقتصادية تتجاوز البروتوكول التقليدي. فبينما تتصدر العلاقات السياسية والأمنية العناوين، يبحث بغداد عن شراكة عملية مع الرياض في مجالات الاستثمار والطاقة والبنية التحتية والصناعة والزراعة. ويبرز في صدارة الملفات إمكانية إعادة تفعيل خط الأنابيب العراقي السعودي، الذي قد يمنح العراق مساراً إضافياً لتصدير نفطه عبر البحر الأحمر، ويقلل اعتماده على ممرات إقليمية مضطربة. كما تسعى بغداد إلى جذب رؤوس أموال سعودية لدعم مشاريع الكهرباء والتنمية، وتوسيع الإيرادات غير النفطية في مواجهة هيمنة النفط على الاقتصاد العراقي .\nلكن السؤال يبقى: هل تتحول هذه الزيارة إلى اتفاقيات تنفيذية حقيقية، أم تبقى وعوداً اقتصادية في ظل التحديات الأمنية والسياسية التي تمر بها المنطقة؟\nيرى الخبير الاقتصادي صادق الركابي أن العلاقات الاقتصادية مع السعودية مهمة جدا للطرفين ، لكن للعراق مصلحة أكبر فيها. فهو بحاجة إلى تنويع مصادر الدخل الاقتصادي وكذلك منافذ تصدير النفط. أما بشأن طريق التنمية العراقي، فيجد في طرحه على طا",
+      "bodyKo": "이라크 총리 알리 알자이디의 사우디아라비아 방문 발표는 전통적 외교 의례를 넘어서는 경제적 차원을 담고 있다. 정치·안보 관계가 헤드라인을 장식하는 가운데 바그다드는 리야드와 투자, 에너지, 인프라, 산업, 농업 분야에서 실질적 협력을 모색하고 있다. 이라크-사우디 송유관 재가동 가능성이 주요 현안으로 부각되는데, 이는 이라크에 홍해를 통한 석유 수출의 추가 경로를 제공하고 불안정한 지역 통로에 대한 의존도를 낮출 수 있다. 바그다드는 또한 사우디 자본 유입을 통해 전력 및 개발 사업을 지원하고 이라크 경제의 석유 지배에 맞서 비석유 수익을 확대하려 하고 있다.\n\n그러나 의문은 남는다. 이번 방문이 실질적인 이행 협약으로 전환될 것인가, 아니면 지역이 겪고 있는 안보·정치적 도전 속에서 경제적 약속으로만 남을 것인가?\n\n경제 전문가 사디크 알루카비는 사우디와의 경제 관계가 양국 모두에 매우 중요하지만 이라크의 이해관계가 더 크다고 본다. 이라크는 경제 수입원 다변화와 석유 수출 경로 확보가 필요하다. 이라크 개발 경로에 관해서는 이를 제시하는 것이",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "DW.com"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
       "title": "General Security Chief receives new Iraqi Ambassador",
       "source": "MTV Lebanon",
       "link": "https://www.mtv.com.lb/en/News/Local/1753166/general-security-chief-receives-new-iraqi-ambassador",
@@ -728,31 +1053,6 @@
       }
     },
     {
-      "title": "إغلاق منفذ \"الشيّب\" الحدودي مع إيران… هل تدخل بغداد المواجهة؟",
-      "source": "درج ميديا",
-      "link": "https://daraj.media/%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%D9%8A%D9%91%D8%A8-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%D9%8A-%D9%85%D8%B9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%87/",
-      "date": "2026-10-29T11:19:52.000Z",
-      "lang": "ar",
-      "titleKo": "이란과의 국경 \"알시야브\" 통로 폐쇄… 바그다드가 대면에 나설까?",
-      "url": "https://daraj.media/%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%D9%8A%D9%91%D8%A8-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%D9%8A-%D9%85%D8%B9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%87/",
-      "body": "تضع أزمة الشيب الإطار التنسيقي أمام خلاف بشأن العلاقة مع الولايات المتحدة والتعامل مع العقوبات على إيران. ويخشى تيار براغماتي عقوبات قد تطاول الاقتصاد العراقي والمؤسسات المالية، بينما ترى فصائل أكثر تشدداً أن الالتزام بالقيود مشاركة في حصار إيران وقد يمهّد لضغوط تستهدف نفوذها وسلاحها.",
-      "bodyKo": "시바 위기가 조율 틀을 미국과의 관계 및 이란 제재 대응을 둘러싼 갈등 앞에 놓았다. 실용주의 진영은 이라크 경제와 금융기관에 미칠 수 있는 제재를 우려하고 있으며, 강경 진영은 제재 준수가 이란 봉쇄에 동참하는 것이며 자신들의 영향력과 무장을 겨냥한 압박의 발판이 될 수 있다고 본다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "درج ميديا"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
       "title": "US senator points to Gulf push to curb Iran’s influence in Iraq",
       "source": "Middle East Online",
       "link": "https://middle-east-online.com/en/us-senator-points-gulf-push-curb-iran%E2%80%99s-influence-iraq",
@@ -803,31 +1103,6 @@
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "US dollar rates hold steady near 168,000 across major Iraqi exchanges",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/us-dollar-exchange-rates-hold-steady-baghdad-erbil-basra-october-29-2026/",
-      "date": "2026-10-29T10:04:16.000Z",
-      "lang": "en",
-      "titleKo": "미국 달러 환율 이라크 주요 환전소에서 168,000 근처에서 안정세",
-      "url": "https://www.iraqinews.com/iraq/us-dollar-exchange-rates-hold-steady-baghdad-erbil-basra-october-29-2026/",
-      "body": "US dollar rates hold steady near 168,000 across major Iraqi exchanges\nPacks of US dollars and Iraqi dinars. Photo: Pukmedia\nBaghdad (IraqiNews.com) – The exchange rate of the U.S. dollar against the Iraqi dinar maintained relative stability across parallel markets in major commercial hubs on Thursday morning, October 29, 2026, with purchase rates hovering near the 168,000 dinar threshold per $100.\nAccording to morning trading data, Baghdad exchange bureaus posted retail selling rates at 168,500 dinars against purchase bids of 168,000 dinars per $100.\nIn Erbil, trading counters quoted selling prices at 168,000 dinars and buying bids at 167,500 dinars. Across the southern port city of Basra, foreign currency desks registered selling prices at 168,000 dinars alongside purchase offers of 167,500 dinars per $100.",
-      "bodyKo": "**미 달러화 환율 이라크 주요 환전소에서 10만 디나르대 유지**\n\n바그다드(이라크뉴스닷컴) – 2026년 10월 29일 목요일 오전 주요 상업 중심지의 암시장에서 미 달러화 대 이라크 디나르 환율이 상대적 안정세를 유지했으며, 매입 환율은 100달러당 16만 8천 디나르 수준 근처에서 움직였다.\n\n오전 거래 자료에 따르면 바그다드 환전소들은 소매 판매 환율을 100달러당 16만 8천 500디나르로, 매입 호가를 16만 8천 디나르로 제시했다.\n\n아르빌에서는 거래소들이 판매 가격을 100달러당 16만 8천 디나르로, 매입 호가를 16만 7천 500디나르로 제시했다. 남부 항구도시 바스라에서는 외환 거래소들이 판매 가격을 100달러당 16만 8천 디나르로, 매입 호가를 16만 7천 500디나르로 기록했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
         "act": "",
         "place": "",
         "km": null
@@ -897,28 +1172,78 @@
       }
     },
     {
-      "title": "بعد تراجع ليومين.. بورصات بغداد وأربيل تسجل ارتفاعاً جديداً لأسعار الدولار",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A8%D8%B9%D8%AF-%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D9%84%D9%8A%D9%88%D9%85%D9%8A%D9%86-%D8%A8%D9%88%D8%B1%D8%B5%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88-%D8%B1%D8%A8%D9%8A%D9%84-%D8%AA%D8%B3%D8%AC%D9%84-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9%D8%A7-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A7-%D9%84-%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
-      "date": "2026-10-29T07:34:46.000Z",
+      "title": "في اليوم الاول من بطولة اسيا للمتقدمين.. منتخب العراق للجودو يحصل على 3 ميداليات",
+      "source": "Al Daee News",
+      "link": "https://www.aldaaenews.com/AR/Details/64575",
+      "date": "2026-10-29T08:31:52.000Z",
       "lang": "ar",
-      "titleKo": "2일 하락 후.. 바그다드·아르빌 환전소 달러 환율 다시 올라",
-      "url": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A8%D8%B9%D8%AF-%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D9%84%D9%8A%D9%88%D9%85%D9%8A%D9%86-%D8%A8%D9%88%D8%B1%D8%B5%D8%A7%D8%AA-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88-%D8%B1%D8%A8%D9%8A%D9%84-%D8%AA%D8%B3%D8%AC%D9%84-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9%D8%A7-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A7-%D9%84-%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
-      "body": "سجلت أسعار صرف الدولار الأميركي، اليوم الخميس، ارتفاعاً في أسواق بغداد واربيل عاصمة اقليم كوردستان مع انطلاق التداولات الصباحية.\nوقال مراسل وكالة شفق نيوز إن أسعار الدولار ارتفعت في بورصتي الكفاح والحارثية ببغداد إلى 168,000 دينار مقابل 100 دولار، مقارنة بيوم أمس الأربعاء التي بلغت 167,800 دينار.\nوأشار مراسلنا إلى أن أسعار البيع في محال الصيرفة بالأسواق المحلية ببغداد ارتفعت لتسجل 168,500 دينار مقابل 100 دولار، فيما بلغ سعر الشراء 167,500 دينار.\nوفي أربيل سجلت أسعار الدولار ارتفاعاً بشكل طفيف حيث، سجل سعر البيع 167,750 ديناراً مقابل 100 دولار، فيما بلغ سعر الشراء 167,650 ديناراً.",
-      "bodyKo": "**달러화 환율 상승, 바그다드·아르빌서 동반 인상**\n\n미국 달러화 환율이 목요일 바그다드와 쿠르디스탄 자치지역의 수도 아르빌 시장에서 아침 거래 개시와 함께 상승했다.\n\n샤팍뉴스 통신 특파원은 바그다드의 알카파 거래소와 알하리시야 거래소에서 달러 환율이 100달러당 168,000 디나르로 올랐다고 전했다. 이는 전날 수요일의 167,800 디나르 대비 상승한 것이다.\n\n특파원은 바그다드 지역 시장의 환전소 판매가가 100달러당 168,500 디나르로 올랐으며, 매입가는 167,500 디나르에 달했다고 지적했다.\n\n아르빌에서는 달러 환율이 소폭 상승해 판매가가 100달러당 167,750 디나르, 매입가가 167,650 디나르를 기록했다.",
+      "titleKo": "아시아 선수권대회 첫날.. 이라크 유도 대표팀 메달 3개 획득",
+      "url": "https://www.aldaaenews.com/AR/Details/64575",
+      "body": "حصد المنتخب العراقي للجودو ثلاثة أوسمة، بواقع فضية وبرونزيتين، في منافسات اليوم الأول من بطولة آسيا للمتقدمين، المقامة حالياً في العاصمة الأردنية عمّان، بمشاركة نخبة من أبطال القارة الآسيوية.\nالداعي نيوز/ رياضة حصد المنتخب العراقي للجودو ثلاثة أوسمة، بواقع فضية وبرونزيتين، في منافسات اليوم الأول من بطولة آسيا للمتقدمين، المقامة حالياً في العاصمة الأردنية عمّان، بمشاركة نخبة من أبطال القارة الآسيوية. وأحرز اللاعب محمد ستار الوسام الفضي في منافسات وزن 73 كغم، بعد بلوغه المباراة النهائية، فيما نال زميله حسين رعد الوسام البرونزي في الوزن ذاته. وفي منافسات السيدات، أضافت اللاعبة مريم حامد الميدالية البرونزية الثالثة للعراق، بعد إحرازها المركز الثالث في وزن 52 كغم. ويأتي هذا الإنجاز ثمرةً للجهود التي يبذلها الاتحاد العراقي للجودو والجهازان الفني والإداري، إلى جانب الدعم المتواصل من اللجنة الأولمبية العراقية، بهدف تطوير اللعبة وتحقيق نتائج مميزة على المستوى القاري.",
+      "bodyKo": "**이라크 유도, 아시아 선수권 첫날 메달 3개 획득**\n\n이라크 유도 대표팀이 요르단 수도 암만에서 열리고 있는 아시아 선수권대회 첫날 경기에서 은메달 1개, 동메달 2개 등 총 3개의 메달을 획득했다. 아시아 대륙의 정상급 선수들이 참가한 이번 대회에서 이라크는 좋은 성적을 거뒀다.\n\n무하마드 스타르 선수는 73kg 체급에서 은메달을 획득했으며, 결승전에 진출했다. 같은 체급에서 동료 후세인 라드 선수가 동메달을 차지했다. 여자부에서는 미리암 하미드 선수가 52kg 체급에서 3위를 기록해 이라크의 세 번째 동메달을 추가했다.\n\n이번 성과는 이라크 유도연맹과 기술·행정 부서가 기울인 노력과 이라크 올림픽위원회의 지속적인 지원이 맺은 결실이다. 이는 유도 종목 발전과 대륙 수준에서의 우수한 성적 달성을 목표로 한 노력의 결과다.",
       "tried": true,
       "count": 1,
       "sources": [
-        "شفق نيوز"
+        "Al Daee News"
       ],
       "related": [],
-      "tag": "경제·유가",
+      "tag": "기타",
       "impact": {
         "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "line": "현장 직접 영향 낮음",
         "act": "",
-        "place": "바그다드",
-        "km": 27
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "تسجيل العشرات من حالات الاختناق جراء العاصفة الترابية في النجف",
+      "source": "Al Daee News",
+      "link": "https://www.aldaaenews.com/AR/Details/64562",
+      "date": "2026-10-29T07:21:41.000Z",
+      "lang": "ar",
+      "titleKo": "나자프에서 먼지폭풍으로 인한 수십 건의 질식 사례 등록",
+      "url": "https://www.aldaaenews.com/AR/Details/64562",
+      "body": "أعلن مستشفى الحكيم العام في النجف، عن استقبال العشرات من حالات الاختناق جراء العاصفة الترابية التي ضربت المحافظة الأربعاء.\nالداعي نيوز/ محلي أعلن مستشفى الحكيم العام في النجف، عن استقبال العشرات من حالات الاختناق جراء العاصفة الترابية التي ضربت المحافظة الأربعاء. وقال إعلام المستشفى في بيان، \"استقبلت طوارئ مستشفى الحكيم العام العشرات من الحالات التي تعاني من الاختناق وصعوبات التنفس جراء العاصفة الترابية التي شهدتها محافظة النجف الأشرف وما رافقها من تصاعد للغبار والأتربة في الأجواء\". وأضاف \"في استجابة سريعة استنفر كادر الطوارئ جهوده لاستقبال المرضى ولا سيما المصابين بالربو والحساسية الصدرية وحساسية القصبات الهوائية حيث جرى تقديم الخدمات الطبية والعلاجية اللازمة وتوفير الأوكسجين والأدوية المطلوبة بإشراف الأطباء والكوادر الصحية المختصة\".",
+      "bodyKo": "**나자프 병원, 먼지폭풍으로 인한 호흡곤란 환자 수십 명 접수**\n\n나자프의 알하킴 종합병원이 수요일 지역을 강타한 먼지폭풍으로 인한 호흡곤란 환자 수십 명을 접수했다고 발표했다. 병원 홍보팀은 성명을 통해 \"알하킴 종합병원 응급실이 나자프 아슈라프 지역에서 발생한 먼지폭풍으로 인한 호흡곤란과 호흡 곤란을 겪는 수십 명의 환자를 접수했으며, 이에 따라 대기 중 먼지와 흙이 증가했다\"고 밝혔다. 이어 \"신속한 대응으로 응급 인력이 환자 접수를 위해 역량을 집중했으며, 특히 천식과 흉부 알레르기, 기관지 알레르기로 고통받는 환자들을 대상으로 의료진과 전문 보건 인력의 감시 아래 필요한 의료 및 치료 서비스를 제공하고 산소와 필요한 약물을 공급했다\"고 덧붙였다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Al Daee News"
+      ],
+      "related": [],
+      "tag": "날씨·재난",
+      "impact": {
+        "lv": "y",
+        "line": "기상 악화 소식 — 옥외·고소·양중 작업 영향 가능",
+        "act": "상황실 날씨·모래폭풍 예보 확인 후 작업 조정",
+        "place": "나자프",
+        "km": 135
+      }
+    },
+    {
+      "title": "غليان في الزوراء العراقي بعد الخسارة أمام النصر",
+      "source": "صحيفة الخليج",
+      "link": "https://www.alkhaleej.ae/2026-10-29/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/%D8%BA%D9%84%D9%8A%D8%A7%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%B2%D9%88%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-%D8%A3%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D9%86%D8%B5%D8%B1",
+      "date": "2026-10-29T07:16:17.000Z",
+      "lang": "ar",
+      "titleKo": "나시르에 패배한 후 이라크 주라 팬들 분노",
+      "url": "https://www.alkhaleej.ae/2026-10-29/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/%D8%BA%D9%84%D9%8A%D8%A7%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D8%B2%D9%88%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-%D8%A3%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D9%86%D8%B5%D8%B1",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "صحيفة الخليج"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
       }
     },
     {
@@ -944,6 +1269,31 @@
         "act": "",
         "place": "",
         "km": null
+      }
+    },
+    {
+      "title": "إغلاق منفذ \"الشيّب\" الحدودي مع إيران… هل تدخل بغداد المواجهة؟",
+      "source": "درج ميديا",
+      "link": "https://daraj.media/%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%D9%8A%D9%91%D8%A8-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%D9%8A-%D9%85%D8%B9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%87/",
+      "date": "2026-10-29T05:27:36.000Z",
+      "lang": "ar",
+      "titleKo": "이란과의 국경 \"알시야브\" 통로 폐쇄… 바그다드가 대면에 나설까?",
+      "url": "https://daraj.media/%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%D9%8A%D9%91%D8%A8-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%D9%8A-%D9%85%D8%B9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%87/",
+      "body": "تضع أزمة الشيب الإطار التنسيقي أمام خلاف بشأن العلاقة مع الولايات المتحدة والتعامل مع العقوبات على إيران. ويخشى تيار براغماتي عقوبات قد تطاول الاقتصاد العراقي والمؤسسات المالية، بينما ترى فصائل أكثر تشدداً أن الالتزام بالقيود مشاركة في حصار إيران وقد يمهّد لضغوط تستهدف نفوذها وسلاحها.",
+      "bodyKo": "시바 위기가 조율 틀을 미국과의 관계 및 이란 제재 대응을 둘러싼 갈등 앞에 놓았다. 실용주의 진영은 이라크 경제와 금융기관에 미칠 수 있는 제재를 우려하고 있으며, 강경 진영은 제재 준수가 이란 봉쇄에 동참하는 것이며 자신들의 영향력과 무장을 겨냥한 압박의 발판이 될 수 있다고 본다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "درج ميديا"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
       }
     },
     {
@@ -1045,244 +1395,6 @@
         "place": "",
         "km": null
       }
-    },
-    {
-      "title": "تسجيل عشرات حالات الاختناق في النجف بسبب العاصفة الترابية",
-      "source": "مانكيش نت",
-      "link": "https://mangish.net/%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%AD%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%86%D8%A7%D9%82-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D8%AC%D9%81-%D8%A8%D8%B3/",
-      "date": "2026-10-28T23:24:36.000Z",
-      "lang": "ar",
-      "titleKo": "나자프에서 먼지폭풍으로 수십 명 질식 증상 발생",
-      "url": "https://mangish.net/%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%AD%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%86%D8%A7%D9%82-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D8%AC%D9%81-%D8%A8%D8%B3/",
-      "body": "شهدت محافظة النجف الأشرف يوم الأربعاء موجة من العواصف الترابية التي أثرت بشكل كبير على جودة الهواء، مما أسفر عن عدد من حالات الاختناق\nوأوضح البيان الصادر عن إدارة المستشفى أنه تم استقباله العشرات من المرضى في قسم الطوارئ، حيث كانوا يعانون من مشكلات تنفسية حادة نتيجة تصاعد الغبار والأتربة في الأجواء. وقد قامت الفرق الطبية في المستشفى بتقديم الرعاية اللازمة لهؤلاء المرضى، وتهيئة كافة الإجراءات اللازمة لتقديم الدعم الطبي الفوري.\nتأتي هذه الحالات في ظل تزايد الأثر السلبي لظاهرة العواصف الترابية، حيث يُعتبر الاختناق وصعوبات التنفس من أبرز الأعراض التي يعاني منها الأفراد في مثل هذه الأجواء. ويعكس الوضع الحالي الحاجة الملحة لمزيد من التدابير الوقائية والتوعية حول كيفية التعامل مع مثل هذه الظواهر المناخية، خصوصاً في مناطق تتعرض إلى هذه العواصف بشكل متكرر.\nيُذكر أن العاصفة الترابية قد أثرت على العديد من المناطق الأخرى في العراق، حيث شهد السكان تفاقم الظروف الجوية المحيطة بهم، مما أدى إلى زيادة الضغوط على المرافق الصحية والمستشفيات في مختلف المحافظات. تبقى إدارة المستشفى في حالة استنفار لمتابعة",
-      "bodyKo": "**나자프주, 먼지폭풍으로 호흡곤란 환자 급증**\n\n나자프주는 수요일 먼지폭풍으로 인해 대기질이 크게 악화되면서 호흡곤란 사례가 다수 발생했다.\n\n병원 관리부 성명에 따르면 응급실에 수십 명의 환자가 내원했으며, 이들은 대기 중 먼지와 흙이 증가하면서 급성 호흡기 문제를 겪고 있었다. 병원의 의료진은 이들 환자에게 필요한 치료를 제공했으며, 즉각적인 의료 지원을 위한 모든 필요한 조치를 준비했다.\n\n이러한 사례들은 먼지폭풍 현상의 부정적 영향이 증가하는 가운데 나타났으며, 호흡곤란과 호흡 곤란은 이러한 기후 조건에서 개인들이 겪는 주요 증상으로 꼽힌다. 현재 상황은 이러한 기후 현상에 대처하는 방법에 대한 예방 조치와 인식 제고의 시급한 필요성을 반영하고 있으며, 특히 이러한 폭풍에 반복적으로 노출되는 지역에서 그러하다.\n\n먼지폭풍은 이라크의 여러 다른 지역에도 영향을 미쳤으며, 주민들은 주변 기후 조건이 악화되는 것을 목격했고, 이는 여러 주의 보건 시설과 병원에 대한 압박을 증가시켰다. 병원 관리부는 상황을 계속 모니터링하기 위해 경계 상태를 유지하고 있다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "مانكيش نت"
-      ],
-      "related": [],
-      "tag": "날씨·재난",
-      "impact": {
-        "lv": "y",
-        "line": "기상 악화 소식 — 옥외·고소·양중 작업 영향 가능",
-        "act": "상황실 날씨·모래폭풍 예보 확인 후 작업 조정",
-        "place": "나자프",
-        "km": 135
-      }
-    },
-    {
-      "title": "العراق اليوم: بغداد والرياض .. شراكات اقتصادية لو نجحت!",
-      "source": "DW.com",
-      "link": "https://www.dw.com/ar/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%B4%D8%B1%D8%A7%D9%83%D8%A7%D8%AA-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A9-%D9%84%D9%88-%D9%86%D8%AC%D8%AD%D8%AA/audio-79672068",
-      "date": "2026-10-28T22:59:23.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 오늘: 바그다드와 리야드, 경제 협력이 성공한다면!",
-      "url": "https://www.dw.com/ar/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%B4%D8%B1%D8%A7%D9%83%D8%A7%D8%AA-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A9-%D9%84%D9%88-%D9%86%D8%AC%D8%AD%D8%AA/audio-79672068",
-      "body": "https://p.dw.com/p/5OILM إعلان رئيس الوزراء العراقي علي الزيدي في المملكة العربية السعودية في جولة تحمل أبعاداً اقتصادية تتجاوز البروتوكول التقليدي. فبينما تتصدر العلاقات السياسية والأمنية العناوين، يبحث بغداد عن شراكة عملية مع الرياض في مجالات الاستثمار والطاقة والبنية التحتية والصناعة والزراعة. ويبرز في صدارة الملفات إمكانية إعادة تفعيل خط الأنابيب العراقي السعودي، الذي قد يمنح العراق مساراً إضافياً لتصدير نفطه عبر البحر الأحمر، ويقلل اعتماده على ممرات إقليمية مضطربة. كما تسعى بغداد إلى جذب رؤوس أموال سعودية لدعم مشاريع الكهرباء والتنمية، وتوسيع الإيرادات غير النفطية في مواجهة هيمنة النفط على الاقتصاد العراقي .\nلكن السؤال يبقى: هل تتحول هذه الزيارة إلى اتفاقيات تنفيذية حقيقية، أم تبقى وعوداً اقتصادية في ظل التحديات الأمنية والسياسية التي تمر بها المنطقة؟\nيرى الخبير الاقتصادي صادق الركابي أن العلاقات الاقتصادية مع السعودية مهمة جدا للطرفين ، لكن للعراق مصلحة أكبر فيها. فهو بحاجة إلى تنويع مصادر الدخل الاقتصادي وكذلك منافذ تصدير النفط. أما بشأن طريق التنمية العراقي، فيجد في طرحه على طا",
-      "bodyKo": "이라크 총리 알리 알자이디의 사우디아라비아 방문 발표는 전통적 외교 의례를 넘어서는 경제적 차원을 담고 있다. 정치·안보 관계가 헤드라인을 장식하는 가운데 바그다드는 리야드와 투자, 에너지, 인프라, 산업, 농업 분야에서 실질적 협력을 모색하고 있다. 이라크-사우디 송유관 재가동 가능성이 주요 현안으로 부각되는데, 이는 이라크에 홍해를 통한 석유 수출의 추가 경로를 제공하고 불안정한 지역 통로에 대한 의존도를 낮출 수 있다. 바그다드는 또한 사우디 자본 유입을 통해 전력 및 개발 사업을 지원하고 이라크 경제의 석유 지배에 맞서 비석유 수익을 확대하려 하고 있다.\n\n그러나 의문은 남는다. 이번 방문이 실질적인 이행 협약으로 전환될 것인가, 아니면 지역이 겪고 있는 안보·정치적 도전 속에서 경제적 약속으로만 남을 것인가?\n\n경제 전문가 사디크 알루카비는 사우디와의 경제 관계가 양국 모두에 매우 중요하지만 이라크의 이해관계가 더 크다고 본다. 이라크는 경제 수입원 다변화와 석유 수출 경로 확보가 필요하다. 이라크 개발 경로에 관해서는 이를 제시하는 것이",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "DW.com"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Oil, Water and Security: Sharaa Outlines Ties With Iraq",
-      "source": "Enab Baladi",
-      "link": "https://english.enabbaladi.net/archives/2026/10/oil-water-and-security-sharaa-outlines-ties-with-iraq/",
-      "date": "2026-10-28T20:46:51.000Z",
-      "lang": "en",
-      "titleKo": "석유, 물, 안보: 샤라 이라크와의 관계 제시",
-      "url": "https://english.enabbaladi.net/archives/2026/10/oil-water-and-security-sharaa-outlines-ties-with-iraq/",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "Enab Baladi"
-      ],
-      "related": [
-        {
-          "titleKo": "석유, 물, 안보: 샤라 이라크와의 관계 제시",
-          "source": "Enab Baladi",
-          "link": "https://english.enabbaladi.net/archives/2026/10/oil-water-and-security-sharaa-outlines-ties-with-iraq/"
-        }
-      ],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "القنصل العام تزور رئيس مؤسسة الإمام الحسين (ع) – القنصلية العامة لجمهورية العراق في مونتريال",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://mofa.gov.iq/montreal/?p=17282",
-      "date": "2026-10-28T19:36:41.000Z",
-      "lang": "ar",
-      "titleKo": "주재 몬트리올 이라크 총영사관 총영사, 이맘 후세인 재단 회장 방문",
-      "url": "https://mofa.gov.iq/montreal/?p=17282",
-      "body": "زارت القنصل العام لجمهورية العراق في مونتريال، السيدة ريزان يوسف محمد صالح، رئيس مؤسسة الإمام الحسين (ع)، الدكتور خليل الطبطبائي، في إطار تعزيز التواصل مع مؤسسات الجالية العراقية في كندا.\nواستعرض الطبطبائي خلال اللقاء أبرز أنشطة المؤسسة وبرامجها الدينية والثقافية والاجتماعية، وجهودها في خدمة الجالية العراقية والعربية والمسلمة، بما في ذلك أنشطة مركزها في مدينة وندسور والمبادرات الخيرية والإنسانية التي تنفذها.\nوأشادت القنصل العام بدور المؤسسة في خدمة أبناء الجالية وتعزيز التكافل الاجتماعي، مؤكدةً أهمية استمرار التنسيق بين القنصلية ومؤسسات الجالية بما يدعم المبادرات المجتمعية ويحافظ على الهوية الثقافية العراقية. من جانبه، أعرب الطبطبائي عن تقديره للزيارة، مؤكداً أهمية مواصلة اللقاءات والتعاون المؤسسي.",
-      "bodyKo": "**몬트리올 총영사, 이맘 후세인 재단 방문**\n\n몬트리올 이라크 총영사 리잔 유수프 무함마드 살리흐가 이맘 후세인 재단 회장 칼릴 알타브타바이 박사를 방문했다. 이는 캐나다 내 이라크 디아스포라 기관과의 소통 강화 차원에서 이루어졌다.\n\n알타브타바이는 이 자리에서 재단의 주요 활동과 종교·문화·사회 프로그램, 이라크·아랍·무슬림 디아스포라 지원 노력을 소개했다. 여기에는 윈저 시 지부의 활동과 재단이 추진 중인 자선·인도주의 사업이 포함됐다.\n\n총영사는 디아스포라 지원과 사회적 상호부조 증진에 있어 재단의 역할을 높이 평가했으며, 총영사관과 디아스포라 기관 간 지속적인 조율의 중요성을 강조했다. 이를 통해 지역사회 이니셔티브를 뒷받침하고 이라크 문화 정체성을 보존할 수 있다고 밝혔다. 알타브타바이는 이번 방문에 감사를 표하며 향후 지속적인 만남과 기관 간 협력의 중요성을 재확인했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "وزارة الخارجية العراقية"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq eyes full membership in major gas exporters forum amid emissions push: Oil official",
-      "source": "Rudaw",
-      "link": "https://rudaw.net/english/categories/iraq/1079934",
-      "date": "2026-10-28T19:19:08.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 배출 감축 추진 속 주요 가스수출국 포럼 정회원 가입 추진: 석유 관계자",
-      "url": "https://rudaw.net/english/categories/iraq/1079934",
-      "body": "Iraq seeks to shift its observatory status in the Gas Exporting Countries Forum (GECF) to full membership in the bloc, the deputy oil minister for gas affairs said Wednesday, underscoring a notable le",
-      "bodyKo": "이라크가 가스수출국포럼(GECF)에서의 옵저버 지위를 정회원으로 전환하려고 추진 중이라고 가스담당 부석유장관이 수요일 밝혔다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Ankara welcomes Iraqi takeover of Sinjar security",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Iraq/Ankara-welcomes-Iraqi-takeover-of-Sinjar-security",
-      "date": "2026-10-28T19:12:45.000Z",
-      "lang": "en",
-      "titleKo": "앙카라, 이라크의 신자르 보안 장악 환영",
-      "url": "https://shafaq.com/en/Iraq/Ankara-welcomes-Iraqi-takeover-of-Sinjar-security",
-      "body": "Shafaq News- Ankara Turkiye's Defense Ministry on Wednesday welcomed the Iraqi government's moves to extend state authority in Sinjar, considering it an important step toward lasting stability in t\nEnding the presence of \"terrorist organizations\" in Sinjar and placing security in the hands of Iraqi forces serves the goal of a terror-free region, the ministry said in a statement, adding that Ankara is following the process closely.\nProgress on security in Sinjar has allowed arrangements to move ahead for handing the Bashiqa-Zilkan base, near Mosul, to Iraqi authorities under an agreed mechanism and timetable, according to the ministry, and Turkiye would continue supporting Iraq in training, military and security cooperation, and counterterrorism.\nThe statement came two days after Baghdad began ending the independent military status of the Sinjar Resistance Units (YBS), a Yazidi armed group linked to the Kurdistan Workers' Party (PKK), integrating its fighters into state security institu",
-      "bodyKo": "앙카라 터키 국방부, 신자르 국가권력 확대 움직임 환영\n\n샤팍뉴스- 터키 국방부는 수요일 이라크 정부의 신자르 지역 국가권력 확대 움직임을 환영하며, 이를 지역의 지속적 안정을 향한 중요한 조치로 평가했다.\n\n국방부는 성명을 통해 신자르에서 \"테러조직\"의 존재를 제거하고 보안을 이라크군의 손에 맡기는 것이 테러 없는 지역이라는 목표에 부합한다고 밝혔으며, 앙카라가 이 과정을 긴밀히 주시하고 있다고 덧붙였다.\n\n국방부에 따르면 신자르의 보안 진전으로 모술 인근 바시카-질칸 기지를 합의된 메커니즘과 일정에 따라 이라크 당국에 인계하기 위한 준비가 진행될 수 있게 됐다. 터키는 훈련, 군사 및 보안 협력, 대테러 분야에서 이라크를 계속 지원할 것이라고 밝혔다.\n\n이 성명은 바그다드가 쿠르드 노동자당(PKK)과 연계된 야지디 무장단체인 신자르저항부대(YBS)의 독립적 군사 지위를 해제하고 그 전투원들을 국가 보안기구에 통합하기 시작한 지 이틀 뒤에 나왔다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "IraqiNews",
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "터키, 신자르 이라크 보안 조치를 안정을 위한 중요 조치로 환영",
-          "source": "IraqiNews",
-          "link": "https://www.iraqinews.com/iraq/turkey-welcomes-iraqi-security-measures-state-authority-sinjar-2026/"
-        }
-      ],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "신자르",
-        "km": 429
-      }
-    },
-    {
-      "title": "Iraq Risks Being Drawn Into Renewed Iran War Despite Pledge to Stay Out",
-      "source": "Algemeiner.com",
-      "link": "https://www.algemeiner.com/2026/10/28/iraq-risks-being-drawn-renewed-iran-war-despite-pledge-stay-out/",
-      "date": "2026-10-28T19:04:00.000Z",
-      "lang": "en",
-      "titleKo": "이란과의 전쟁 재발 위험에 빠진 이라크, 불개입 약속에도 불구하고",
-      "url": "https://www.algemeiner.com/2026/10/28/iraq-risks-being-drawn-renewed-iran-war-despite-pledge-stay-out/",
-      "body": "Members of the Popular Mobilization Forces (Hashed al-Shaabi), a powerful pro-Iranian militia in Iraq, stand guard during the funeral of &hellip;\nIRAN — Iraq’s efforts to remain out of a renewed confrontation involving Iran, the United States, and Israel face growing challenges as Iranian-backed proxies across Iraq declare support for Tehran , raising questions about Baghdad’s ability to prevent its territory from becoming a battleground in a wider regional conflict.\nIraqi Prime Minister Ali al-Zaidi has pledged that his country will not participate in conflict if it erupts, presenting his country as a potential mediator.\n“Iraq will not participate in any war,” Zaidi told state-run media, saying Baghdad wanted to remain a meeting point for regional rivals and was working to ease the confrontation between Iran and the US.",
-      "bodyKo": "이란 지원 민병대, 이라크 중립 유지 어려워\n\n이라크의 친이란 민병대인 인기동원군(하슈드 알샤아비)이 장례식 중 경비를 서고 있다.\n\n이란 — 이라크가 이란, 미국, 이스라엘이 관련된 새로운 대립에서 벗어나려는 노력이 이라크 전역의 이란 지원 대리세력들이 테헤란에 대한 지지를 선언하면서 점점 더 어려워지고 있으며, 이는 바그다드가 자국 영토가 더 넓은 지역 분쟁의 전장이 되는 것을 막을 수 있는 능력에 대한 의문을 제기하고 있다.\n\n알리 알자이디 이라크 총리는 분쟁이 발발할 경우 자국이 참여하지 않을 것이라고 약속했으며, 자국을 지역 경쟁국들의 만남의 장으로 제시했다.\n\n알자이디는 국영 언론에 \"이라크는 어떤 전쟁에도 참여하지 않을 것\"이라고 말했으며, 바그다드가 지역 경쟁국들의 만남의 장으로 남기를 원하고 있으며 이란과 미국 간의 대립을 완화하기 위해 노력하고 있다고 밝혔다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Algemeiner.com"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "President al-Sharaa, Iraqi PM discuss border security and trade corridors",
-      "source": "سانا",
-      "link": "https://sana.sy/en/presidency/2354254/",
-      "date": "2026-10-28T18:24:15.000Z",
-      "lang": "en",
-      "titleKo": "알-샤라 대통령, 이라크 총리와 국경 보안·무역 회랑 논의",
-      "url": "https://sana.sy/en/presidency/2354254/",
-      "body": "Damascus, Oct. 28 (SANA) President Ahmad al-Sharaa and Iraqi Prime Minister Ali Faleh al-Zaidi discussed strengthening economic, trade and investment\nThe talks covered preparations for a joint Syrian-Iraqi economic conference to bring together investors and companies to explore investment opportunities and priority projects in energy, transport, agriculture and trade. The two sides discussed translating their understandings into practical cooperation programs.\nIn the energy sector, the leaders discussed rehabilitating the Kirkuk-Baniyas oil pipeline, viewing the project as a strategic opportunity to deepen cooperation and provide an additional route for exporting Iraqi oil through Syrian ports on the Mediterranean.\nThey also discussed waterways and ways to develop international trade corridors, including northern and central overland routes and the route through the al-Tanf area. The talks also addressed potential connections with Türkiye, Saudi Arabia and Iraq’s Grand Faw Port and its",
-      "bodyKo": "다마스쿠스, 10월 28일(SANA) 아흐마드 알샤라 대통령과 알리 팔레 알자이디 이라크 총리가 경제, 무역, 투자 강화에 대해 논의했다.\n\n양측은 투자자와 기업들을 한자리에 모아 에너지, 운송, 농업, 무역 분야의 투자 기회와 우선 사업을 모색하기 위한 시리아-이라크 공동 경제회의 준비에 대해 논의했다. 양국은 양해사항을 실질적인 협력 프로그램으로 전환하는 방안을 논의했다.\n\n에너지 부문에서 양국 지도자들은 키르쿠크-바니야스 유전관 복구에 대해 논의했으며, 이 사업을 협력을 심화하고 지중해 시리아 항구를 통한 이라크 석유 수출의 추가 경로를 제공할 수 있는 전략적 기회로 평가했다.\n\n양측은 또한 수로와 북부·중부 육로 경로 및 알탄프 지역을 통한 경로를 포함한 국제 무역 회랑 개발 방안에 대해 논의했다. 회담에서는 터키, 사우디아라비아, 이라크의 그랜드 파우 항구와의 잠재적 연결에 대해서도 다뤘다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "سانا"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "키르쿠크",
-        "km": 254
-      }
-    },
-    {
-      "title": "Arab interior ministers honor Iraq for anti-drug cooperation",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Security/Arab-interior-ministers-honor-Iraq-for-anti-drug-cooperation",
-      "date": "2026-10-28T18:24:02.000Z",
-      "lang": "en",
-      "titleKo": "아랍 내무장관들, 마약 퇴치 협력으로 이라크 표창",
-      "url": "https://shafaq.com/en/Security/Arab-interior-ministers-honor-Iraq-for-anti-drug-cooperation",
-      "body": "Shafaq News- Baghdad Iraq has won first place for the second consecutive year in a competition for the best joint field and intelligence cooperation in combating drugs, organized by the General Sec\nThe award recognizes Iraq's work in sharing intelligence, coordinating operations and carrying out joint missions against drug trafficking and smuggling networks, the agency said, crediting the result to its ongoing intelligence and field work and its cooperation with counterpart agencies in Arab countries and beyond.\nThe directorate's recent operations include an intelligence tip that led authorities in the United Arab Emirates to seize 200,000 captagon pills last week, and joint operations with Syria and Kuwait .",
-      "bodyKo": "**이라크, 마약 퇴치 국제 협력 부문 2년 연속 1위**\n\n샤팍뉴스- 바그다드 이라크가 마약 퇴치를 위한 합동 현장 및 정보 협력 부문에서 국제 경쟁에서 2년 연속 1위를 차지했다. 이 대회는 총장실이 주최했다.\n\n이 상은 정보 공유, 작전 조율, 마약 밀매 및 밀수 조직에 대한 합동 작전 수행에서 이라크가 이룬 성과를 인정하는 것이라고 해당 기관이 밝혔다. 기관은 이 결과가 지속적인 정보 및 현장 활동과 아랍 국가 및 그 이상의 국가들과의 대응 기관들과의 협력에 기인한다고 설명했다.\n\n국장실의 최근 작전에는 아랍에미리트 당국이 지난주 카프타곤 정제 20만 개를 압수하도록 이끈 정보 제보와 시리아, 쿠웨이트와의 합동 작전이 포함된다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
     }
   ],
   "alerts": [],
@@ -1290,12 +1402,12 @@
   "brief": [
     {
       "lv": "y",
-      "titleKo": "나자프에서 먼지폭풍으로 수십 명 질식 증상 발생",
+      "titleKo": "나자프에서 먼지폭풍으로 인한 수십 건의 질식 사례 등록",
       "line": "기상 악화 소식 — 옥외·고소·양중 작업 영향 가능",
       "act": "상황실 날씨·모래폭풍 예보 확인 후 작업 조정",
       "km": 135,
-      "link": "https://mangish.net/%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%AD%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%AE%D8%AA%D9%86%D8%A7%D9%82-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D8%AC%D9%81-%D8%A8%D8%B3/",
-      "date": "2026-10-28T23:24:36.000Z",
+      "link": "https://www.aldaaenews.com/AR/Details/64562",
+      "date": "2026-10-29T07:21:41.000Z",
       "more": 0
     }
   ]
