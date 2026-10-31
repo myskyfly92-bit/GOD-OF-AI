@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T00:59:48.454Z",
+  "generatedAt": "2026-10-31T00:47:59.802Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -31,13 +31,6 @@
       "date": "2026-10-27T05:34:04.000Z"
     },
     {
-      "title": "감시체계 개요",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wWHJiVHVhblkyUXVMejFfWnhQeUJGUl92cWR2NTd1elJvU3h5WklNOGs4NFRubHVBdmdtbnctV3MydGJHN21xOTNYQk9YMEx0NkR6S3dR?oc=5",
-      "date": "2025-12-16T15:12:03.000Z"
-    },
-    {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
       "source": "질병관리청 감염병포털",
       "agency": "",
@@ -45,11 +38,18 @@
       "date": "2024-06-10T03:38:59.000Z"
     },
     {
+      "title": "의료방사선게시판 - 2023년 국민 의료방사선 평가 연보",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNmdMMDR3bFU3TUNRdjMweWZWQWRYTGFOdHBHMGlhSFkycmVPX2c5UlVuNU9ZMm5qdVpCUlA5OUlBWTg1R09PUXhNZVRaNC00UVEwTzJxbThUcmZCdHE2Qm5ndE1jTlBKUEhyaWZxT3FEeDhkcmxPdXp1OXBLNm01ZEtEYTY0YzllRzFMcFJNOVdmZHBBczdTSC1BZ08xMEpyWkcxUHhLdkJ6WGxsNEFLRGVma3F1OHFMMlRWbg?oc=5",
+      "date": "2026-05-02T07:32:05.000Z"
+    },
+    {
       "title": "- 질병관리청",
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-10-29T11:47:46.000Z"
+      "date": "2026-10-30T11:53:43.000Z"
     },
     {
       "title": "레지오넬라증",
@@ -73,18 +73,18 @@
       "date": "2021-11-03T09:42:59.000Z"
     },
     {
+      "title": "이달의 건강정보",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNTEg5Mnh5NkFrQVdXUk9rT1ZHVUwwaVQ2dW5XMlNaSmNjMVdLSG94RkZ5R2dTUlhjZDB0d0U3UmZ3dmpHbzAxS0ttVHZTSVNqWmdId0JqNDAzaTc4NGYxUlp2S1hHZDIycEhWeWhSM1FBNmxGX0g2TVVLYWtwNFBJRkZEMDNKQWJrU2xZNndfeXZQSzhOZUN1dXJXaWpQZ3RjUXlSU2Q0MU0xN1gzdEZZbHc5TnU5cE5QRlNwdUd3am5QdjFzekR1eUZPTnptaEJ5U3RjUE9YaFRrNDNXX25LdVl2ZzdYMFpWQVE?oc=5",
+      "date": "2026-10-30T06:59:19.000Z"
+    },
+    {
       "title": "전자검역을 통한 감염병 대응체계 고도화",
       "source": "질병관리청",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2OW5lNTJXaTNUTmM3eVhNa0F3d2NHQTU4ZWhiTnlRZXJ1M0kwTnBxMFlnUnQwd1UwaGlEeFQwX1hCRl9YRlViN0dGU1R4ZjIyMnBHREln?oc=5",
       "date": "2025-12-16T14:41:54.000Z"
-    },
-    {
-      "title": "Untitled",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE55MGFzdnNSNTdWUUJ5ZWl2TmZfaU9pQ0VkWmhCZ2doR3NON3gzNTd1Vk1MczJsMnJPcDFWRG9GZG1NNTliWDE0WlI0dHo0ZXU1NG51ZEFYXy1aQ19mbnBuV2RLSQ?oc=5",
-      "date": "2026-10-23T07:10:11.000Z"
     }
   ]
 }
