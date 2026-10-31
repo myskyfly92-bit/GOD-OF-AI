@@ -67,44 +67,44 @@
   },
   "제2급": {
    "diseases": 21,
-   "base": 2046,
+   "base": 2048,
    "prev": 1539,
-   "provisional": 1818,
+   "provisional": 1823,
    "outnatn": 1,
    "trend": [
     2080,
-    2060,
+    2059,
     1912,
     1837,
     2159,
     1902,
     1918,
-    1915,
+    1916,
     1461,
-    2086,
+    2084,
     1539,
-    2046
+    2048
    ]
   },
   "제3급": {
    "diseases": 28,
-   "base": 331,
+   "base": 333,
    "prev": 157,
-   "provisional": 454,
+   "provisional": 465,
    "outnatn": 11,
    "trend": [
     201,
     207,
     212,
-    171,
+    170,
     211,
-    206,
-    236,
+    205,
+    237,
     215,
-    135,
-    213,
+    136,
+    212,
     157,
-    331
+    333
    ]
   }
  },
@@ -112,10 +112,10 @@
   {
    "name": "카바페넴내성장내세균목(CRE) 감염증",
    "grade": "제2급",
-   "base": 1290,
-   "prev": 882,
-   "provisional": 1103,
-   "dmstc": 1290,
+   "base": 1291,
+   "prev": 881,
+   "provisional": 1105,
+   "dmstc": 1291,
    "outnatn": 0
   },
   {
@@ -123,7 +123,7 @@
    "grade": "제2급",
    "base": 449,
    "prev": 375,
-   "provisional": 436,
+   "provisional": 438,
    "dmstc": 449,
    "outnatn": 0
   },
@@ -131,18 +131,18 @@
    "name": "성홍열",
    "grade": "제2급",
    "base": 150,
-   "prev": 147,
-   "provisional": 151,
+   "prev": 148,
+   "provisional": 152,
    "dmstc": 150,
    "outnatn": 0
   },
   {
    "name": "쯔쯔가무시증",
    "grade": "제3급",
-   "base": 116,
+   "base": 117,
    "prev": 21,
-   "provisional": 266,
-   "dmstc": 116,
+   "provisional": 275,
+   "dmstc": 117,
    "outnatn": 0
   },
   {
@@ -175,10 +175,10 @@
   {
    "name": "A형간염",
    "grade": "제2급",
-   "base": 41,
+   "base": 40,
    "prev": 32,
    "provisional": 27,
-   "dmstc": 41,
+   "dmstc": 40,
    "outnatn": 0
   },
   {
@@ -193,10 +193,10 @@
   {
    "name": "레지오넬라증",
    "grade": "제3급",
-   "base": 19,
+   "base": 20,
    "prev": 5,
-   "provisional": 8,
-   "dmstc": 19,
+   "provisional": 10,
+   "dmstc": 20,
    "outnatn": 0
   },
   {
@@ -211,10 +211,10 @@
   {
    "name": "장출혈성대장균감염증",
    "grade": "제2급",
-   "base": 6,
+   "base": 7,
    "prev": 11,
    "provisional": 4,
-   "dmstc": 5,
+   "dmstc": 6,
    "outnatn": 1
   },
   {
@@ -250,7 +250,7 @@
   {
    "name": "뎅기열",
    "grade": "제3급",
-   "count": 12
+   "count": 13
   },
   {
    "name": "매독",
@@ -288,7 +288,7 @@
    "count": 1
   }
  ],
- "totalBase": 2377,
+ "totalBase": 2381,
  "totalPrev": 1696,
- "generatedAt": "2026-10-30T02:09:11.583040+00:00"
+ "generatedAt": "2026-10-31T01:49:19.628283+00:00"
 }
