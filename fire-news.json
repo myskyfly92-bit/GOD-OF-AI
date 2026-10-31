@@ -1,6 +1,73 @@
 {
-  "generatedAt": "2026-10-31T10:00:18.711Z",
+  "generatedAt": "2026-10-31T17:24:34.416Z",
   "items": [
+    {
+      "title": "공장 화재 진압",
+      "source": "뉴시스",
+      "link": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
+      "date": "2026-10-31T16:44:39.000Z",
+      "lang": "ko",
+      "titleKo": "공장 화재 진압",
+      "url": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
+      "body": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
+      "bodyKo": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
+      "tried": true,
+      "count": 10,
+      "sources": [
+        "United News of Bangladesh",
+        "뉴시스",
+        "تاسي",
+        "한국재난안전뉴스",
+        "경북매일",
+        "الوكالة الوطنية العراقية للأنباء| نينا"
+      ],
+      "related": [
+        {
+          "titleKo": "사우디 공장 화재 피해자 7명 장례식 치러져",
+          "source": "United News of Bangladesh",
+          "link": "https://unb.com.bd/category/Bangladesh/seven-saudi-factory-fire-victims-laid-to-rest/199214"
+        },
+        {
+          "titleKo": "알-하자프, 리야드 공장 생산라인 전력공급 변전소 화재 발생 공시",
+          "source": "تاسي",
+          "link": "https://www.argaam.com/ar/article/articledetail/id/1930439"
+        },
+        {
+          "titleKo": "[배터리의 역습] ⑦배터리가 만들어지는 공장, 화재 위험의 시작",
+          "source": "한국재난안전뉴스",
+          "link": "https://www.kdsn.co.kr/news/article.html?no=49678"
+        },
+        {
+          "titleKo": "포항 광명산단 공장 철거 현장 화재…3시간여 만에 진화",
+          "source": "경북매일",
+          "link": "https://www.kbmaeil.com/article/20261029500345"
+        },
+        {
+          "titleKo": "알-바탈 공장, 화재 보험금 635만 리알 분할금 수령",
+          "source": "تاسي",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9McXBWaGZXVnBVTUpnMC0zS0pFYi10Yi1yNkpaSGdNSnk3dU0zU1FqRnRuZXZPa2JyS004QkticjRsWU1QZU9aWGYydTRZWUJMVWlJZ0V6S3dBTlRxOVFnRlNreVpXbFVjcVE?oc=5"
+        }
+      ],
+      "tag": "전기·배터리"
+    },
+    {
+      "title": "Riyadh factory fire: 5 Naogaon expats return in coffins",
+      "source": "Daily Observer",
+      "link": "https://observerbd.com/news/602983",
+      "date": "2026-10-31T13:20:53.000Z",
+      "lang": "en",
+      "titleKo": "리야드 공장 화재: 나오가온 출신 외국인 5명 관에 담겨 귀국",
+      "url": "https://observerbd.com/news/602983",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Daily Observer"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
     {
       "title": "정선서 주택에 발생한 불이 산으로 번져…삼척서 용접 중 발생한 불티로 컨테이너 전소되기도",
       "source": "강원도민일보",
@@ -38,53 +105,22 @@
       "tag": "숙소·창고"
     },
     {
-      "title": "공장 화재 진압",
-      "source": "뉴시스",
-      "link": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
-      "date": "2026-10-31T03:59:07.000Z",
+      "title": "롱비치 빈집서 세 번째 화재…불안한 주민들 “철거해 달라”",
+      "source": "라디오코리아",
+      "link": "https://radiokorea.com/news/article.php?uid=508335",
+      "date": "2026-10-30T23:31:00.000Z",
       "lang": "ko",
-      "titleKo": "공장 화재 진압",
-      "url": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
-      "body": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
-      "bodyKo": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
+      "titleKo": "롱비치 빈집서 세 번째 화재…불안한 주민들 “철거해 달라”",
+      "url": "https://radiokorea.com/news/article.php?uid=508335",
+      "body": "",
+      "bodyKo": "",
       "tried": true,
-      "count": 11,
+      "count": 1,
       "sources": [
-        "Banglanews24",
-        "뉴시스",
-        "한국재난안전뉴스",
-        "경북매일",
-        "تاسي",
-        "الوكالة الوطنية العراقية للأنباء| نينا"
+        "라디오코리아"
       ],
-      "related": [
-        {
-          "titleKo": "리야드 공장 화재로 사망한 방글라데시인 7명의 유해 귀국",
-          "source": "Banglanews24",
-          "link": "https://en.banglanews24.com/national/news/bd/197371.details"
-        },
-        {
-          "titleKo": "[배터리의 역습] ⑦배터리가 만들어지는 공장, 화재 위험의 시작",
-          "source": "한국재난안전뉴스",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SOTk2aDQ2NHN6djNLcFFkajZxSnVnLTlRRnJsSzQtdDRueE50Rk5qRGd4c0NXNkhGQTgyNEs4cDF1MmtqZ1hRR0NpTUZucTI5Y3lzRTBTellKMENzdnc?oc=5"
-        },
-        {
-          "titleKo": "포항 광명산단 공장 철거 현장 화재…3시간여 만에 진화",
-          "source": "경북매일",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1YZS1rY3k4UVVBX3F3U2FJdXdfb3pjM0hOMHJENl9BVzljVk0tTTZlaE9pLTRmaEgxNUZ1d21RQ2dUbXIwLTNhczNlNGhRU2lHYXBBMUo2d05Ddw?oc=5"
-        },
-        {
-          "titleKo": "알-바탈 공장, 화재 보험금 635만 리알 분할금 수령",
-          "source": "تاسي",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9McXBWaGZXVnBVTUpnMC0zS0pFYi10Yi1yNkpaSGdNSnk3dU0zU1FqRnRuZXZPa2JyS004QkticjRsWU1QZU9aWGYydTRZWUJMVWlJZ0V6S3dBTlRxOVFnRlNreVpXbFVjcVE?oc=5"
-        },
-        {
-          "titleKo": "카르발라 호텔 화재 진압, 아버지가 3층에서 던진 여자아이 구조",
-          "source": "الوكالة الوطنية العراقية للأنباء| نينا",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5aOEhPaFo5dGNPZUtrRmNyNW55dDZtN2RXbmpJVlY4WmxJQ1p3NEFfdGQ2cHlaLVNhN3FkcGtRZ0ZqRW15QjI2UUlFaVNLek5GSzlpdEFRa1BhVzhiYkllQzJXQQ?oc=5"
-        }
-      ],
-      "tag": "전기·배터리"
+      "related": [],
+      "tag": "기타"
     },
     {
       "title": "خلل فني وراء حريق في مبنى قيد الإنشاء بمطار دمشق الدولي",
@@ -111,10 +147,11 @@
       "date": "2026-10-30T17:10:04.000Z",
       "lang": "ko",
       "titleKo": "구미 창고 화재 20분 만에 진화… 인명 피해 없어",
-      "count": 3,
+      "count": 4,
       "sources": [
         "نيو ترك بوست",
-        "경북도민일보"
+        "경북도민일보",
+        "عراق اوبزيرفر"
       ],
       "related": [
         {
@@ -126,6 +163,11 @@
           "titleKo": "메르신의 담배 창고에서 화재 발생, 진화 완료",
           "source": "نيو ترك بوست",
           "link": "https://newturkpost.com/news/131220-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D8%AA%D8%A8%D8%BA-%D9%85%D8%B1%D8%B3%D9%8A%D9%86-%D8%B5%D8%A7%D8%B9%D9%82%D8%A9"
+        },
+        {
+          "titleKo": "민방위, 나자프 호수 인근 식품 창고 화재 진화…인명피해 없어",
+          "source": "عراق اوبزيرفر",
+          "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxNQm1OZEtBY2VaWkJOZTdMeENSeDc0blFqcVdkU2dNUV9ZWUd6TWFuV2ZaNHhMWGZZODhOLUYyOHA2bWEyMWVOWHVlUEcwcEhRc1hGYy1pTGpveF9yZFdSZV85VEh0U2p4VWtiR3UwNk5FZUQ4ZXpnc3J5YmZlOWNrUTVNN3gyTkpMN1JFYkUybGpfTGNxYVpSZHh5WVV4UThDWkpqcE1uN0d3MnRaRVhnaUxpQUhxN2NBVmxhazFWaFBtSTBqc1l1cTlDdHRuNmVfZnc3QlNORWJLaWZuc1hmU1pHVzhwcWVad2U5N1B1UGZKdjhTYW02cnROamE5VlRtUkFaTVhMakNQY3N0ZjlVZXJQMGJOQXJBWVZ2Z0ZISEpIMTNDMlpRZXI2ZEVEai1kUnYwRWxaQXZKVXdDU2dVa2pFaUpoaE0?oc=5"
         }
       ],
       "tag": "숙소·창고"
@@ -149,49 +191,26 @@
       "tag": "공장·플랜트"
     },
     {
-      "title": "الخزف تُعلن حريقًا بمحطة كهرباء مغذية لخط إنتاج بمصنعها بالرياض - ارقام : اخبار ومعلومات سوق الأسهم السعودي",
-      "source": "تاسي",
-      "link": "https://www.argaam.com/ar/article/articledetail/id/1930439",
-      "date": "2026-10-30T13:18:24.000Z",
-      "lang": "ar",
-      "titleKo": "알-하자프, 리야드 공장 생산라인 전력공급 변전소 화재 발생 공시",
-      "url": "https://www.argaam.com/ar/article/articledetail/id/1930439",
-      "body": "أعلنت شركة الخزف السعودي عن وقوع حريق في إحدى محطات الكهرباء المغذية لأحد خطوط إنتاج مصانع البلاط التابعة للشركة في المنطقة الصناعية الثانية بمدينة ال\nوقالت الشركة في بيان لها على تداول، إنه قد تمت السيطرة الكاملة على الحريق من قبل فرق الدفاع المدني، ولم يسفر الحادث عن أي إصابات أو خسائر بشرية.\nوأكدت الشركة أن لديها تغطية تأمينية شاملة على الممتلكات والمرافق المتضررة، وتعمل حالياً بالتنسيق مع الجهات المعنية على تقييم الأضرار والأثر الفني والتشغيلي والمالي الناتج عن الحادث، وستقوم بالإفصاح عن أي أثر مالي جوهري أو تطورات جوهرية ذات صلة فور توفر المعلومات اللازمة.\nوأشارت الشركة إلى أنها تعمل حالياً على تنفيذ الأعمال الفنية وإجراءات السلامة اللازمة، وسيتم الإعلان لاحقاً عن الموعد المتوقع لاستئناف العمليات الإنتاجية للخط المتأثر بشكل تدريجي فور الانتهاء من التقييمات والأعمال المطلوبة.",
-      "bodyKo": "**사우디 도자기사, 발전소 화재로 생산 중단**\n\n사우디 도자기사가 타일 제조 공장의 생산 라인 중 하나에 전력을 공급하는 발전소에서 화재가 발생했다고 발표했다. 해당 공장은 도시의 제2산업단지에 위치하고 있다.\n\n회사는 공시 성명을 통해 민방위 당국 팀에 의해 화재가 완전히 진압됐으며, 이번 사고로 인명 피해나 물적 손실이 발생하지 않았다고 밝혔다.\n\n회사는 피해를 입은 재산과 시설에 대한 포괄적인 보험 커버리지를 보유하고 있으며, 현재 관련 기관과 협력하여 손해액과 사고로 인한 기술적·운영적·재무적 영향을 평가하고 있다고 강조했다. 필요한 정보가 확보되는 대로 중대한 재무 영향이나 관련 중대 진전 사항을 공시할 예정이라고 덧붙였다.\n\n회사는 현재 필요한 기술 작업과 안전 절차를 이행 중이며, 평가와 필요한 작업이 완료되는 대로 영향을 받은 생산 라인의 운영 재개 예정 시기를 추후 공지할 것이라고 밝혔다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "تاسي"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
-    },
-    {
       "title": "선박 배터리 화재 어떻게 막나?",
       "source": "한국해운신문",
       "link": "http://www.maritimepress.co.kr/news/articleView.html?idxno=333718",
       "date": "2026-10-30T13:17:47.000Z",
       "lang": "ko",
       "titleKo": "선박 배터리 화재 어떻게 막나?",
-      "count": 19,
+      "count": 14,
       "sources": [
         "موقع في الجامعة",
         "한국해운신문",
-        "뉴시스",
         "www.ebn.co.kr",
         "이데일리",
-        "서울Pn"
+        "서울Pn",
+        "매일신문"
       ],
       "related": [
         {
           "titleKo": "아시우트 대학 심장병원 화재 대피훈련.. 의료진과 보안팀은 어떻게 대피 계획을 실행했나?",
           "source": "موقع في الجامعة",
           "link": "https://filgamaa.com/%D8%AD%D8%B1%D9%8A%D9%82-%D8%A7%D9%81%D8%AA%D8%B1%D8%A7%D8%B6%D9%8A-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89-%D8%A7%D9%84%D9%82%D9%84%D8%A8-%D8%A8%D8%AC%D8%A7%D9%85%D8%B9%D8%A9/"
-        },
-        {
-          "titleKo": "\"선박 배터리 화재 예방법은\"…중소선박 안전기술 포럼",
-          "source": "뉴시스",
-          "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261030_0003847777"
         },
         {
           "titleKo": "선박 내 배터리 화재 막는다…해양교통안전공단, 안전 포럼 개최",
@@ -207,6 +226,11 @@
           "titleKo": "인천 32물류센터 화재 중앙화재합동조사 결과, 원인은 '리튬이온배터리 열폭주' 추정",
           "source": "서울Pn",
           "link": "https://go.seoul.co.kr/news/prnewsView.php?id=454164"
+        },
+        {
+          "titleKo": "낮 시간대 달서구 한 아파트서 화재… 또 배터리 말썽?",
+          "source": "매일신문",
+          "link": "https://www.imaeil.com/page/view/2026102909100197949"
         }
       ],
       "tag": "전기·배터리",
@@ -316,11 +340,10 @@
       "body": "인천 검단구의 한 상가에서 가스 철거 작업 중 폭발 사고가 나 4명이 다쳤다. 27일 인천소방본부와 서부경찰서에 따르면 이날 오전 8시45분쯤 검단구 마전동의 상가건물 1층에서 가스가 폭발했다.",
       "bodyKo": "인천 검단구의 한 상가에서 가스 철거 작업 중 폭발 사고가 나 4명이 다쳤다. 27일 인천소방본부와 서부경찰서에 따르면 이날 오전 8시45분쯤 검단구 마전동의 상가건물 1층에서 가스가 폭발했다.",
       "tried": true,
-      "count": 4,
+      "count": 3,
       "sources": [
         "투데이에너지",
         "인천일보",
-        "الجمهور الإخباري",
         "애드뉴스인천"
       ],
       "related": [
@@ -330,17 +353,12 @@
           "link": "https://www.todayenergy.kr/news/articleView.html?idxno=304874"
         },
         {
-          "titleKo": "동부 벽돌공장 화재로 4명이 1도 화상 입어",
-          "source": "الجمهور الإخباري",
-          "link": "https://www.algomhor.com/503748"
-        },
-        {
           "titleKo": "검단 마전동 상가서 LPG 가스 폭발… 4명 부상",
           "source": "애드뉴스인천",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9TQTV0d1hyeEVYT0hlMGMtZ3ZkTUEyMjd6Vlc0bnRPQTUwVFhiM1QycHFmUGxlV3FDRUNYUjVPd05Sd3FMcnZJcjVqTzRkaWNDUXNsUkZzLVFYZGM2X1I5di01NmJySEV6UXow?oc=5"
         }
       ],
-      "tag": "공장·플랜트"
+      "tag": "시장·상가"
     },
     {
       "title": "صور فضائية ترصد آثار حرائق في مستودع وقود ومحطة كهرباء بالمناقل في السودان إثر هجوم بمسيّرات",
@@ -434,7 +452,7 @@
         {
           "titleKo": "서울시의회 도시안전건설위, 강남구 구룡마을 화재 현장 긴급 방문",
           "source": "디스커버리뉴스(DISCOVERYNEWS)",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE53SG1pb01VclJXTnFEOFRxRHh5U3ZqTHNZU0NNYnJNR2lHS1VocHBZcFBSaHlGNlR5dl9UYWZzTE95c3o5OG1MOFlTbm1BMG1XbDRaeWYzbkkwTnRkTlhSZ05qRTMtdEo3OWZjQ2ljZGNoZw?oc=5"
+          "link": "https://www.discoverynews.kr/news/articleView.html?idxno=1105272"
         }
       ],
       "tag": "기타"
@@ -837,6 +855,63 @@
       "count": 1,
       "sources": [
         "https://www.youlyou.com/"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "بعد وفاة 14 رضيعا في حريق مستشفى باكستاني.. تحقيق يكشف إخفاقات السلامة",
+      "source": "العين الإخبارية",
+      "link": "https://al-ain.com/article/infants-die-pakistani-hospital-investigation",
+      "date": "2026-10-26T18:20:04.000Z",
+      "lang": "ar",
+      "titleKo": "파키스탄 병원 화재로 영아 14명 사망.. 조사에서 안전 부실 드러나",
+      "url": "https://al-ain.com/article/infants-die-pakistani-hospital-investigation",
+      "body": "14 رضيعا لقوا حتفهم داخل مستشفى حكومي في العاصمة الباكستانية إسلام آباد، بعدما تحول حريق في جناح حديثي الولادة إلى مأساة كشفت عن إخفاقات مؤسسية في أنظمة السلامة والاستجابة للطوارئ.\nولم يقتصر الأمر على عطل كهربائي يُرجح أنه أشعل النيران، بل كشف التحقيق عن تحذيرات سابقة ومخاطر لم تُعالج بفاعلية، رغم أن المكان كان يضم أطفالا حديثي الولادة لا يستطيعون إخلاء المكان بأنفسهم.\nوخلص تقرير لجنة التحقيق، الذي نشرته صحيفة «دون» الباكستانية في 15 سبتمبر 2026، إلى وجود «إخفاق مؤسسي ومنهجي»، محملا إدارة معهد باكستان للعلوم الطبية، المعروف اختصارا باسم «بيمز»، وكبار المسؤولين فيه المسؤولية المؤسسية الرئيسية عن عدم تحويل المخاطر المعروفة إلى نظام سلامة فعال.\nاندلع الحريق في حضانة مستشفى الأم والطفل التابع لمعهد باكستان للعلوم الطبية في إسلام آباد. وكان الجناح يضم 15 رضيعا يعانون حالات صحية تستدعي الرعاية الطبية، داخل وحدة لا تتسع إلا لعشرة أسرّة، بحسب تقرير التحقيق. وتوفي 14 رضيعا، بينما نجا طفل واحد.",
+      "bodyKo": "**파키스탄 병원 화재로 신생아 14명 사망**\n\n파키스탄 수도 이슬라마바드의 정부 병원에서 신생아실 화재로 14명의 영아가 목숨을 잃었다. 화재는 신생아 보육 병동을 참사로 변모시켰으며, 안전 체계와 응급 대응 시스템의 제도적 결함을 드러냈다.\n\n사건은 전기 결함으로 추정되는 화재 발생에 그치지 않았다. 조사 결과 이전의 경고와 미처리된 위험 요소들이 적절히 해결되지 않았음이 드러났다. 이 장소에는 스스로 대피할 수 없는 신생아들이 있었음에도 불구하고 이러한 조치가 취해지지 않았다.\n\n파키스탄 신문 '돈'이 2026년 9월 15일 공개한 조사위원회 보고서는 \"제도적이고 체계적인 결함\"이 있었다고 결론지었다. 보고서는 파키스탄의학과학원(PIMS)의 경영진과 고위 관계자들이 알려진 위험 요소를 효과적인 안전 체계로 전환하지 못한 데 대한 주요 제도적 책임이 있다고 지적했다.\n\n화재는 이슬라마바드 파키스탄의학과학원 산하 모자보건병원의 보육실에서 발생했다. 병동에는 의료 관리가 필요한 신생아 15명이 입원해 있었으나, 해당 병실은 10개 침대만 수용 가능한 규모였다고 조사 보고서는 기록했다. 신생아 14명이 사망했고 1명만 생존했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "العين الإخبارية"
+      ],
+      "related": [],
+      "tag": "기타"
+    },
+    {
+      "title": "배터리 화재 등 원인 규명할 화재조사관 93명 배출",
+      "source": "아시아투데이",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBYY2tWbnRZMmgwYlNjbXB4VXRYbjBnWnhEY3NrVzhIZTdpU3haYzRXOUIzT05jM3VZcW9NWGNmTjlaMHREeVc3UWw2UFNjS0JYNzZsSjFXRU43Zk1WbHJ2YzUwNW85ZUhSSC03bm53?oc=5",
+      "date": "2026-10-26T05:45:47.000Z",
+      "lang": "ko",
+      "titleKo": "배터리 화재 등 원인 규명할 화재조사관 93명 배출",
+      "count": 2,
+      "sources": [
+        "아시아투데이",
+        "이데일리"
+      ],
+      "related": [
+        {
+          "titleKo": "화재 현장 흔적으로 원인 찾는다…전문 조사관 93명 배출",
+          "source": "이데일리",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNT0JhUEYzcFJsdnZuZ0dOTDhqRVhxbnlFdTJGank3ZDN2V0dnTklWdDFRMmJkMFlGdzFTeFZmS1pGMFdERTkyY0E0ZVh4dDB2d3VzTTItbGZXUlM2UjhMMDJkTHdwQVJJN09UZ2JMai0ycWFMbTcxbm90Y2lqcTctcQ?oc=5"
+        }
+      ],
+      "tag": "전기·배터리"
+    },
+    {
+      "title": "اندلاع حريق في أكبر مصنع شوفان بالعالم",
+      "source": "قناة الغد",
+      "link": "https://www.alghad.tv/index.php/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%BA%D8%AF/news/%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%A3%D9%83%D8%A8%D8%B1-%D9%85%D8%B5%D9%86%D8%B9-%D8%B4%D9%88%D9%81%D8%A7%D9%86-%D8%A8%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85",
+      "date": "2026-10-25T15:08:50.000Z",
+      "lang": "ar",
+      "titleKo": "세계 최대 귀리 공장에서 화재 발생",
+      "url": "https://www.alghad.tv/index.php/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%BA%D8%AF/news/%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%A3%D9%83%D8%A8%D8%B1-%D9%85%D8%B5%D9%86%D8%B9-%D8%B4%D9%88%D9%81%D8%A7%D9%86-%D8%A8%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "قناة الغد"
       ],
       "related": [],
       "tag": "공장·플랜트"
