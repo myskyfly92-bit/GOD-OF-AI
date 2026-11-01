@@ -663,12 +663,6 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "서사하라 내 모래방어벽 동쪽"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -679,6 +673,12 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "서사하라 이외 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "서사하라 내 모래방어벽 동쪽"
     }
    ],
    "written": "",
@@ -692,16 +692,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "누악쇼트, 누아디브, 인시리, 트라르자 및 아다르(우아단까지 일부지역)"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "2단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "누악쇼트, 누아디브, 인시리, 트라르자 및 아다르(우아단까지 일부지역)"
     }
    ],
    "written": "",
@@ -960,16 +960,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "벨라루스 브레스트 고멜 지역 내 우크라이나 국경에서 30km"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "4단계, 특별여행주의보 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "벨라루스 브레스트 고멜 지역 내 우크라이나 국경에서 30km"
     }
    ],
    "written": "",
@@ -1415,6 +1415,12 @@
    "level": 4,
    "regions": [
     {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "아라라트주, 게가쿠니크주, 바요츠조르주, 슈니크주, 타부시주"
+    },
+    {
      "level": 1,
      "levelName": "여행유의",
      "region": "일부",
@@ -1425,12 +1431,6 @@
      "levelName": "여행금지",
      "region": "일부",
      "remark": "아제르바이잔 접경 5km 구간"
-    },
-    {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "아라라트주, 게가쿠니크주, 바요츠조르주, 슈니크주, 타부시주"
     }
    ],
    "written": "",
@@ -1935,16 +1935,16 @@
    "level": 2,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "서파푸아, 파푸아, 말루쿠, 아체"
-    },
-    {
      "level": 1,
      "levelName": "여행유의",
      "region": "일부",
      "remark": "특별여행주의보 및 2단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "서파푸아, 파푸아, 말루쿠, 아체"
     }
    ],
    "written": "",
@@ -2089,16 +2089,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "에리트레아&bull;에티오피아&bull;소말리아 국경 10km 이내 접경지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2209,6 +2209,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "2․3 단계 발령 지역 외 전 지역"
+    },
+    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -2219,12 +2225,6 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "시하누크빌 주"
-    },
-    {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "2․3 단계 발령 지역 외 전 지역"
     }
    ],
    "written": "",
@@ -2278,16 +2278,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "미트로비차 북부(Zubin Potok, Zve&ccedil;an, Leposaviq)"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "미트로비차 북부(Zubin Potok, Zve&ccedil;an, Leposaviq)"
     }
    ],
    "written": "",
@@ -2341,16 +2341,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "베네수엘라 국경지역 20km/ 에콰도르 국경지역 20km / 바예델카우카 주(깔리 시 제외)/ 아라우카 주, 카우카 주/(*는 일부: 안티오키아 주*, 초코 주*/ 카케타 주*)  / 노르떼 데 산딴데르(Norte de Santander) 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2381,16 +2381,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "북키부주, 남키부주,이투리주"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "중앙아프리카공화국과의 국경 50km 이내 지역/ 바우엘레주, 오트우엘레주, 마니에마주, 카사이주, 카사이상트랄주, 카사이오리앙탈주,탕가니카주,오트로마미주"
+    },
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "북키부주, 남키부주,이투리주"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-10-31T07:35:06.888263+00:00"
+ "generatedAt": "2026-11-01T08:14:11.004730+00:00"
 }
