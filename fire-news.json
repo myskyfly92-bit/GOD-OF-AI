@@ -1,31 +1,59 @@
 {
-  "generatedAt": "2026-10-31T21:58:25.818Z",
+  "generatedAt": "2026-11-01T06:56:13.662Z",
   "items": [
+    {
+      "title": "취약주택엔 자동소화기· 고층건물엔 고압 방수…서울시 겨울 화재 대응",
+      "source": "이데일리",
+      "link": "https://www.edaily.co.kr/News/Read?newsId=01459606645641456&mediaCodeNo=257",
+      "date": "2026-11-01T02:15:04.000Z",
+      "lang": "ko",
+      "titleKo": "취약주택엔 자동소화기· 고층건물엔 고압 방수…서울시 겨울 화재 대응",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01459606645641456&mediaCodeNo=257",
+      "body": "서울시가 스프링클러가 없는 화재취약계층 주택 2000가구에 자동확산소화기를 보급한다. 다중이용시설 2771곳을 집중 점검하고, 고층건물 화재 진압을 위한 고성능 물탱크차 5대도 추가 배치한다. 오세훈 서울시장이 지난 3월 서울 중구 남산동 소규모 숙박시설에서 자동확...",
+      "bodyKo": "서울시가 스프링클러가 없는 화재취약계층 주택 2000가구에 자동확산소화기를 보급한다. 다중이용시설 2771곳을 집중 점검하고, 고층건물 화재 진압을 위한 고성능 물탱크차 5대도 추가 배치한다. 오세훈 서울시장이 지난 3월 서울 중구 남산동 소규모 숙박시설에서 자동확...",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "이데일리"
+      ],
+      "related": [],
+      "tag": "고층·건물"
+    },
     {
       "title": "공장 화재 진압",
       "source": "뉴시스",
       "link": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
-      "date": "2026-10-31T16:44:39.000Z",
+      "date": "2026-11-01T01:35:51.000Z",
       "lang": "ko",
       "titleKo": "공장 화재 진압",
       "url": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
       "body": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
       "bodyKo": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
       "tried": true,
-      "count": 12,
+      "count": 10,
       "sources": [
-        "United News of Bangladesh",
+        "기독일보",
         "뉴시스",
+        "Dhaka Tribune",
         "Daily Observer",
         "تاسي",
-        "한국재난안전뉴스",
-        "경북매일"
+        "한국재난안전뉴스"
       ],
       "related": [
         {
-          "titleKo": "사우디 공장 화재 피해자 7명 장례식 치러져",
-          "source": "United News of Bangladesh",
-          "link": "https://unb.com.bd/category/Bangladesh/seven-saudi-factory-fire-victims-laid-to-rest/199214"
+          "titleKo": "경북 칠곡 폐기물 공장 불…사찰 화재·작업자 부상 잇따라",
+          "source": "기독일보",
+          "link": "https://www.christiandaily.co.kr/news/166453"
+        },
+        {
+          "titleKo": "경북도내 공장·사찰화재 등 잇따라…1명 부상",
+          "source": "뉴시스",
+          "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261101_0003849550"
+        },
+        {
+          "titleKo": "사우디 공장 화재 사망자 5구, 나오가온에 도착",
+          "source": "Dhaka Tribune",
+          "link": "https://www.dhakatribune.com/bangladesh/nation/423391/five-more-saudi-factory-fire-victims%E2%80%99-bodies-reach"
         },
         {
           "titleKo": "리야드 공장 화재: 나오가온 출신 외국인 5명 관에 담겨 귀국",
@@ -36,19 +64,52 @@
           "titleKo": "알-바탈 공장, 화재 보험금 635만 리알 분할금 수령",
           "source": "تاسي",
           "link": "https://www.argaam.com/ar/article/articledetail/id/1931266"
-        },
-        {
-          "titleKo": "리야드 공장 화재로 피해 입은 생산라인, 2분기 가동 재개 예정",
-          "source": "تاسي",
-          "link": "https://www.argaam.com/ar/article/articledetail/id/1905534"
-        },
-        {
-          "titleKo": "알-하자프, 리야드 공장 생산라인 전력공급 변전소 화재 발생 공시",
-          "source": "تاسي",
-          "link": "https://www.argaam.com/ar/article/articledetail/id/1930439"
         }
       ],
       "tag": "공장·플랜트"
+    },
+    {
+      "title": "Seven Saudi factory fire victims laid to rest",
+      "source": "United News of Bangladesh",
+      "link": "https://unb.com.bd/category/Bangladesh/seven-saudi-factory-fire-victims-laid-to-rest/199214",
+      "date": "2026-10-31T16:44:41.000Z",
+      "lang": "en",
+      "titleKo": "사우디 공장 화재 피해자 7명 장례식 치러져",
+      "url": "https://unb.com.bd/category/Bangladesh/seven-saudi-factory-fire-victims-laid-to-rest/199214",
+      "body": "Seven Bangladeshis who died in a fire at a sofa manufacturing factory in Riyadh, Saudi Arabia, were laid to rest in their respective villages on Saturday. Of\nOf the seven victims, five were from Naogaon and two from Natore.\nThe victims from Naogaon were identified as Md Shahin, son of Majnu Rahman of Par Naogaon in Sadar upazila; M Hasibul Hasan Shuvo, son of Nazmul Huda of Dubai village in Atrai upazila; Minhaj Pramanik, son of Akkas Pramanik of Madhyaboalia village; Masidul Sardar Sajib, son of Majnu Sardar of Madhabpur village; and Sagar Ali, son of Azhar Ali of Sadhanagar village.\nOf the five, three were buried after Asr prayers and the other two after Maghrib prayers.\nThe other two victims are Mohammad Shamim, son of Jaker Ali of Dighirpar village in Naldanga upazila of Natore, and Md Sabbir Hossain, son of Md Tajani of Khajur village in the same upazila.",
+      "bodyKo": "사우디아라비아 리야드의 소파 제조 공장 화재로 숨진 방글라데시인 7명이 토요일 각자의 마을에 매장됐다. 피해자 7명 중 5명은 나오가온 출신이고 2명은 나토레 출신이었다.\n\n나오가온 출신 피해자들은 사다르 우파질라 파르 나오가온의 마즈누 라만의 아들 모하마드 샤힌, 아트라이 우파질라 두바이 마을의 나즈물 후다의 아들 모하마드 하시불 하산 슈보, 마디아보알리아 마을의 악카스 프라마닉의 아들 민하즈 프라마닉, 마다브푸르 마을의 마즈누 사르다르의 아들 마시둘 사르다르 사지브, 사다나가르 마을의 아자르 알리의 아들 사가르 알리로 확인됐다.\n\n이 5명 중 3명은 아스르 기도 후에, 나머지 2명은 마그립 기도 후에 매장됐다.\n\n나머지 2명의 피해자는 나토레 날당가 우파질라 디기르파르 마을의 자커 알리의 아들 모하마드 샤밈과 같은 우파질라 카주르 마을의 모하마드 타자니의 아들 모하마드 사비르 호싱이었다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "United News of Bangladesh",
+        "٢٦ سبتمبر نت"
+      ],
+      "related": [
+        {
+          "titleKo": "긴급 | 타이즈: 사우디 연합군 항공기, 알-셰이바니 공장 공습...케미코 도료·화학 회사 화재 계속 확산",
+          "source": "٢٦ سبتمبر نت",
+          "link": "https://26sep.net/index.php/newspaper/26locals/138315-2yq3"
+        }
+      ],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "سوق خراطيم مكافحة الحرائق حتى 2035: لوائح السلامة الصناعية وتحديث البنية التحتية يدفعان النمو",
+      "source": "IndexBox",
+      "link": "https://www.indexbox.io/ar/blog/firefighting-hoses-market-forecast-to-2035-growth-driven-by-industrial-safety-mandates-and-infrastructure-upgrades/",
+      "date": "2026-10-31T14:16:04.000Z",
+      "lang": "ar",
+      "titleKo": "2035년까지 소방호스 시장: 산업안전 규정과 기반시설 현대화가 성장 견인",
+      "url": "https://www.indexbox.io/ar/blog/firefighting-hoses-market-forecast-to-2035-growth-driven-by-industrial-safety-mandates-and-infrastructure-upgrades/",
+      "body": "يُتوقع أن يتوسع سوق خراطيم مكافحة الحرائق العالمية حتى عام 2035، مدفوعًا بتشديد لوائح السلامة الصناعية وارتفاع الاستثمار في البنية التحتية حول العالم.\nأخبرنا بعنوان إرسال العينة وما إذا كنت تريد تخصيص التقرير لاحتياجاتك.\nشكرًا لك. سيراجع فريقنا طلبك ويرد على بريدك الإلكتروني للعمل.\nوفقًا لأحدث تقرير صادر عن IndexBox حول سوق خراطيم مكافحة الحرائق العالمية، يدخل السوق عام 2026 بأساسيات طلب أوسع، وسلوك شرائي أكثر انضباطًا، وهيكل توريد أكثر تنوعًا على المستوى الإقليمي.\nيُعدّ سوق خراطيم مكافحة الحرائق العالمية مكوّنًا محوريًّا في صناعة معدات السلامة من الحرائق والاستجابة للطوارئ الأوسع، ويتميز بطلب ثابت تدعمه الأطر التنظيمية وتطوير البنية التحتية والحاجة الدائمة إلى السلامة العامة والصناعية. ومع حلول عام 2026، يُظهر السوق مرونة في مواجهة التقلبات الاقتصادية، إذ ينقسم الطلب الأساسي بين دورات استبدال معدات الإطفاء القائمة والتركيبات الجديدة التي تحفّزها التوسعات العمرانية والصناعية العالمية. والسوق ليس كتلة واحدة؛ بل توجد اختلافات كبيرة في مواصفات المنتجات وتقنيات المواد وقنوات الشراء بين قطا",
+      "bodyKo": "세계 소방호스 시장은 2035년까지 확대될 것으로 예상되며, 산업 안전 규제 강화와 전 세계 기반시설 투자 증가가 이를 견인하고 있다.\n샘플 발송 제목과 보고서를 귀사의 필요에 맞게 커스터마이징하기를 원하는지 여부를 알려주기 바란다.\n감사합니다. 당사 팀이 귀사의 요청을 검토하고 업무 진행을 위해 이메일로 회신하겠습니다.\nIndexBox가 발표한 세계 소방호스 시장에 관한 최신 보고서에 따르면, 시장은 2026년에 더욱 광범위한 수요 기초, 더욱 규율 있는 구매 행동, 지역 수준에서 더욱 다양화된 공급 구조를 갖추고 진입하고 있다.\n세계 소방호스 시장은 화재 안전 장비 및 광범위한 긴급 대응 산업의 핵심 구성요소이며, 규제 체계, 기반시설 개발, 공공 및 산업 안전에 대한 지속적인 필요성에 의해 뒷받침되는 안정적인 수요를 특징으로 한다. 2026년에 접어들면서 시장은 경제 변동에 대한 회복력을 보이고 있으며, 기본 수요는 기존 소방 장비의 교체 주기와 전 세계 도시 및 산업 확장에 의해 촉발되는 신규 설치 사이에 분산되어 있다. 시장은 단일한 덩어리가 아니며, 제품 사양, 재료 기술, 구매 채널에서 부문 간에 상당한 차이가 존재한다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "IndexBox"
+      ],
+      "related": [],
+      "tag": "시장·상가"
     },
     {
       "title": "حريق في مبنى سكني بزيتين بورنو بإسطنبول.. إصابة شخصين بالدخان",
@@ -69,6 +130,42 @@
       "tag": "숙소·창고"
     },
     {
+      "title": "Bodies of 7 Bangladeshi workers killed in Riyadh fire arrive in Dhaka",
+      "source": "Dhaka Tribune",
+      "link": "https://www.dhakatribune.com/bangladesh/423367/bodies-of-7-bangladeshi-workers-killed-in-riyadh",
+      "date": "2026-10-31T11:26:16.000Z",
+      "lang": "en",
+      "titleKo": "리야드 화재로 사망한 방글라데시 노동자 7명 시신, 다카에 도착",
+      "url": "https://www.dhakatribune.com/bangladesh/423367/bodies-of-7-bangladeshi-workers-killed-in-riyadh",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Dhaka Tribune"
+      ],
+      "related": [],
+      "tag": "기타"
+    },
+    {
+      "title": "مصدر مسؤول في وزارة الطاقة: استهداف مبنى إداري تابع لأرامكو في الظهران ونشوب حريق محدود",
+      "source": "صحيفة الاقتصاد الإلكترونية",
+      "link": "https://www.aleqtsad.org/%D9%85%D8%B5%D8%AF%D8%B1-%D9%85%D8%B3%D8%A4%D9%88%D9%84-%D9%81%D9%8A-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%A8%D9%86/",
+      "date": "2026-10-31T10:47:17.000Z",
+      "lang": "ar",
+      "titleKo": "에너지부의 공식 출처: 다란의 아람코 행정 건물과 제한된 화재를 목표로 함",
+      "url": "https://www.aleqtsad.org/%D9%85%D8%B5%D8%AF%D8%B1-%D9%85%D8%B3%D8%A4%D9%88%D9%84-%D9%81%D9%8A-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%A8%D9%86/",
+      "body": "الاقتصاد.الرياض أعلن مصدر مسؤول في وزارة الطاقة، وقوع استهداف لأحد المباني الإدارية التابعة لشركة أرامكو السعودية في مدينة الظهران بالمنطقة الشرقية مساء\nوأوضح المصدر، أن الجهات المختصة باشرت التعامل مع الحادثة واتخاذ الإجراءات اللازمة، مؤكدًا عدم وقوع أي إصابات أو وفيات.",
+      "bodyKo": "에너지부의 한 공식 소식통은 저녁에 동부 주 다란 시에 있는 사우디아라비아 아람코의 행정 건물 중 하나를 목표로 삼았다고 발표했습니다.\n소식통은 관할 당국이 사고에 대처하고 필요한 조치를 취하기 시작했으며 부상이나 사망은 없었다고 설명했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "صحيفة الاقتصاد الإلكترونية"
+      ],
+      "related": [],
+      "tag": "고층·건물"
+    },
+    {
       "title": "정선서 주택에 발생한 불이 산으로 번져…삼척서 용접 중 발생한 불티로 컨테이너 전소되기도",
       "source": "강원도민일보",
       "link": "https://www.kado.net/news/articleView.html?idxno=2081709",
@@ -85,6 +182,24 @@
       ],
       "related": [],
       "tag": "용접·불티"
+    },
+    {
+      "title": "حظر صادرات الديزل: هل يطفئ ترامب حريق الأسعار أم يُشعل أزمة عالمية؟ - ارقام : اخبار ومعلومات سوق الأسهم السعودي",
+      "source": "تاسي",
+      "link": "https://www.argaam.com/ar/article/articledetail/id/1938542",
+      "date": "2026-10-31T07:17:58.000Z",
+      "lang": "ar",
+      "titleKo": "디젤 수출 금지: 트럼프가 유가 불을 끌 것인가, 아니면 글로벌 위기를 촉발할 것인가?",
+      "url": "https://www.argaam.com/ar/article/articledetail/id/1938542",
+      "body": "في وقت تُسابق فيه الإدارة الأمريكية الزمن لتهدئة غضب الشارع قبل انتخابات التجديد النصفي في نوفمبر، تجد واشنطن نفسها أمام معضلة اقتصادية معقدة.\nانسَخ رابِط المَقالْ في وقت تُسابق فيه الإدارة الأمريكية الزمن لتهدئة غضب الشارع قبل انتخابات التجديد النصفي في نوفمبر، تجد واشنطن نفسها أمام معضلة اقتصادية معقدة.\nفمع ارتفاع أسعار الديزل إلى مستويات قياسية فوق عتبة الـ 6.50 دولار للجالون، زادت الضغوط على الرئيس \"دونالد ترامب\" لحظر صادرات الوقود المكرر لتوفير الإمدادات محليًا.\nورغم الوعود السياسية بتخفيض التكلفة، تحذر الأوساط الاقتصادية والمحللون من أن هذا القرار قد ينقلب عكسيًا على الأسواق الأمريكية والعالمية، فهل يقع \"ترامب\" في فخ \"الحل السريع \" ؟\nما الذي يدفع البيت الأبيض لدراسة حظر صادرات الديزل الأمريكي؟\nوصل متوسط ​​سعر الديزل على المستوى الوطني إلى 6.5276 دولار للجالون الواحد في 22 سبتمبر، وهو أعلى مستوى على الإطلاق.",
+      "bodyKo": "**미국, 경유 수출 금지 검토...경제적 악순환 우려**\n\n미국 행정부가 11월 중간선거 전 국민의 분노를 진정시키기 위해 시간과의 경쟁을 벌이는 가운데, 워싱턴은 복잡한 경제적 난제에 직면했다.\n\n경유 가격이 갤런당 6.50달러를 넘는 사상 최고 수준으로 올라가면서 도널드 트럼프 대통령에게 정제 연료 수출을 금지해 국내 공급을 확보하도록 압력이 높아지고 있다.\n\n정치적 공약으로 비용 인하를 약속했지만, 경제 전문가들과 분석가들은 이 결정이 미국과 세계 시장에 역효과를 초래할 수 있다고 경고하고 있다. 트럼프가 '빠른 해결책'의 함정에 빠질 것인가.\n\n미국 경유 수출 금지를 검토하도록 백악관을 밀어붙이는 것은 무엇인가?\n\n경유의 전국 평균 가격은 9월 22일 갤런당 6.5276달러에 도달했으며, 이는 사상 최고 수준이다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "تاسي"
+      ],
+      "related": [],
+      "tag": "시장·상가"
     },
     {
       "title": "롱비치 빈집서 세 번째 화재…불안한 주민들 “철거해 달라”",
@@ -121,6 +236,24 @@
       ],
       "related": [],
       "tag": "고층·건물"
+    },
+    {
+      "title": "حريق هائل يلتهم سوق الوحدة في إب.. والنيران تلتهم المحلات وسط ذعر الأهالي .",
+      "source": "البعد الرابع",
+      "link": "https://www.albaud4.net/news/35009",
+      "date": "2026-10-30T19:52:00.000Z",
+      "lang": "ar",
+      "titleKo": "예멘 이브 지역 와흐다 시장 대형 화재... 주민들 공포 속 상점들 불에 휩싸여",
+      "url": "https://www.albaud4.net/news/35009",
+      "body": "اندلع حريق هائل، مساء اليوم الثلاثاء، في سوق الوحدة بمنطقة مفرق ميتم في محافظة إب، وسط اليمن، ما أثار حالة من الذعر والهلع في أوساط التجار والمواطنين. وبحسب مصادر محلية، فإن ألسنة اللهب تصاعدت بشكل كثيف من داخل السوق، وغطت سحب الدخان سماء المنطقة، وسط محاولات من الأهالي والتجار لإخماد الحريق وإنقاذ ما يمكن إنقاذه من بضائعهم قبل أن تلتهمها النيران.",
+      "bodyKo": "**예멘 이브 지역 시장서 대형 화재 발생**\n\n화재가 화요일 저녁 예멘 중부 이브 주 미프라크 미탐 지역의 알와흐다 시장에서 발생해 상인과 주민들 사이에 공포감을 불러일으켰다. 현지 소식통에 따르면 시장 내부에서 화염이 맹렬하게 솟아올랐으며, 연기 구름이 지역 상공을 뒤덮었다. 주민과 상인들은 화재를 진화하고 불길에 휩싸이기 전에 물품을 구출하기 위한 시도를 벌였다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "البعد الرابع"
+      ],
+      "related": [],
+      "tag": "시장·상가"
     },
     {
       "title": "구미 창고 화재 20분 만에 진화… 인명 피해 없어",
@@ -173,26 +306,16 @@
       "date": "2026-10-30T13:17:47.000Z",
       "lang": "ko",
       "titleKo": "선박 배터리 화재 어떻게 막나?",
-      "count": 19,
+      "count": 10,
       "sources": [
-        "موقع في الجامعة",
         "한국해운신문",
-        "www.ebn.co.kr",
         "이데일리",
         "서울Pn",
-        "1코노미뉴스"
+        "파이낸셜뉴스",
+        "연합뉴스",
+        "데일리안"
       ],
       "related": [
-        {
-          "titleKo": "아시우트 대학 심장병원 화재 대피훈련.. 의료진과 보안팀은 어떻게 대피 계획을 실행했나?",
-          "source": "موقع في الجامعة",
-          "link": "https://filgamaa.com/%D8%AD%D8%B1%D9%8A%D9%82-%D8%A7%D9%81%D8%AA%D8%B1%D8%A7%D8%B6%D9%8A-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89-%D8%A7%D9%84%D9%82%D9%84%D8%A8-%D8%A8%D8%AC%D8%A7%D9%85%D8%B9%D8%A9/"
-        },
-        {
-          "titleKo": "선박 내 배터리 화재 막는다…해양교통안전공단, 안전 포럼 개최",
-          "source": "www.ebn.co.kr",
-          "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1729775"
-        },
         {
           "titleKo": "소방청, 쿠팡 물류센터 화재 원인 '배터리 열폭주' 추정",
           "source": "이데일리",
@@ -204,9 +327,19 @@
           "link": "https://go.seoul.co.kr/news/prnewsView.php?id=454164"
         },
         {
-          "titleKo": "SK온, 미국서 배터리 탑재 전기차 3만1572대 리콜…화재 위험",
-          "source": "1코노미뉴스",
-          "link": "https://www.1conomynews.co.kr/news/articleView.html?idxno=51058"
+          "titleKo": "소방청 \"인천 쿠팡 물류센터 화재, 리튬배터리 열폭주 추정\"",
+          "source": "파이낸셜뉴스",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14RWo1NnktcFo4Wkd1WXpmUDVtNFlYbVVpWmRPWDluYUM2b29YRHlkVFRlMzRsQWNHLXBZUVFjM2Etd2dpVFlPclFOYm1nNGVYWGpDc2hVc2NUdw?oc=5"
+        },
+        {
+          "titleKo": "소방청 \"인천 쿠팡물류센터 화재 원인, 리튬배터리 열폭주 추정\"",
+          "source": "연합뉴스",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1oN0N5V21xWjZFdDVyN25vZWlaeXllZjlWTmVKaTRfODJjLTZwZ1l5NF9KbHZqdExqN0NEOUE0QldITVZ4Z1NSOGJhRDVINDF4RjVHUFpFczU1cVXSAWBBVV95cUxQbG1MSDRpSnk2U3RFbnlXekh4M3RTMl95RC1FblJiakt1TWxOakVCQWdSWkNuXzJqN2U2dkpRNS1pRGhCUU85SU9VQ19LWDFYVERyNUJFMGtYc1NoeV9FVlA?oc=5"
+        },
+        {
+          "titleKo": "인천 쿠팡 32 물류센터 화재, 리튬이온배터리 열폭주 원인 추정",
+          "source": "데일리안",
+          "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPalpReXFqU1ZyU0RobGpvbkZzSzJrYmlQNlNYMDdSRGg4U2g4dDYtVG1CYVBNVW1rbERHaFVteUY0aG9ud0l2bU1XMFpLUVl2QVJhNHQ0SHBWVzYzaktLbTRFenM0eFlYUjRVbHQxZ1NNcW80ZnB5TjlLY1k2NmpXdXQ0SEtDQm5ndHVIMjZzTjQ0S0lfWXFPNUlxUmlkVkRxSF9jckNtbW1iUldDOVRvNmhWYTNXN1Q4cG9uT3A2UkRjekpTZHFTcjhSS2NMTTIwMXRhRlRKZHhpOWEzM0NYcE5sbW5vbGljSVJVRUtZSkhBLVlmaXpSTGsyUzFjUkU1bGFn?oc=5"
         }
       ],
       "tag": "전기·배터리",
@@ -234,6 +367,42 @@
       "tag": "공장·플랜트"
     },
     {
+      "title": "حريق في مستودع لمواد التنظيف خلف مديرية صحة إدلب | تأكد - verify-sy.com",
+      "source": "verify-sy.com",
+      "link": "https://www.verify-sy.com/ar/topic/local/newsroom/fire-in-a-cleaning-materials-warehouse",
+      "date": "2026-10-30T07:56:00.000Z",
+      "lang": "ar",
+      "titleKo": "이들립 보건국 뒤 세제 보관소서 화재 발생",
+      "url": "https://www.verify-sy.com/ar/topic/local/newsroom/fire-in-a-cleaning-materials-warehouse",
+      "body": "اندلع حريق في مستودع لمواد التنظيف المنزلية خلف مبنى مديرية الصحة في محافظة إدلب، وفق ما أفاد الدفاع المدني السوري عبر صفحته على فيسبوك &nbsp;في 7 أيلول/ سبتمبر",
+      "bodyKo": "시리아 민방위가 페이스북 페이지를 통해 9월 7일 전한 바에 따르면, 이들립 주 보건부 건물 뒤쪽의 가정용 세제 보관창고에서 화재가 발생했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "verify-sy.com"
+      ],
+      "related": [],
+      "tag": "숙소·창고"
+    },
+    {
+      "title": "بنزرت: إخماد حريق داخل مصنع لتحويل البلاستيك بمنزل عبد الرحمان",
+      "source": "diwanfm.net",
+      "link": "https://diwanfm.net/news/%D8%AC%D9%87%D9%88%D9%8A%D8%A9/%D8%A8%D9%86%D8%B2%D8%B1%D8%AA%3A-%D8%A5%D8%AE%D9%85%D8%A7%D8%AF-%D8%AD%D8%B1%D9%8A%D9%82-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%B5%D9%86%D8%B9-%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%83-%D8%A8%D9%85%D9%86%D8%B2%D9%84-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D8%A7%D9%86",
+      "date": "2026-10-30T07:00:00.000Z",
+      "lang": "ar",
+      "titleKo": "벤자르타: 압둘라흐만 지역 플라스틱 가공공장 화재 진화",
+      "url": "https://diwanfm.net/news/%D8%AC%D9%87%D9%88%D9%8A%D8%A9/%D8%A8%D9%86%D8%B2%D8%B1%D8%AA%3A-%D8%A5%D8%AE%D9%85%D8%A7%D8%AF-%D8%AD%D8%B1%D9%8A%D9%82-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%B5%D9%86%D8%B9-%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84-%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%83-%D8%A8%D9%85%D9%86%D8%B2%D9%84-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D8%A7%D9%86",
+      "body": "نجحت وحدات الحماية المدنية ببنزرت في إخماد حريق نشب، فجر اليوم الأحد، داخل مصنع لتحويل البلاستيك بالمنطقة الصناعية بمدينة منزل عبد الرحمان من ولاية بنزرت\nوتمكنت وحدات الحماية المدنية من محاصرة النيران ومنع امتدادها إلى المنشآت المجاورة، وفق ما أفاد به مصدر أمني لمراسل ديوان أف أم بالجهة.\nوأكدت المعاينة الأولية، وفق المصدر ذاته، خلو الحادث من أي إصابات أو خسائر بشرية، فيما اقتصرت الأضرار على خسائر مادية بالمصنع.\nوقد تم فتح بحث في الغرض للوقوف على أسباب اندلاع الحريق وملابساته.",
+      "bodyKo": "**بنزرت: إطفاء حريق في مصنع بلاستيك**\n\nبنزرت의 민방위 부대가 오늘 일요일 새벽 벤자르트주 만젤 압드 라흐만 시의 산업지구에 위치한 플라스틱 가공 공장에서 발생한 화재를 진화하는 데 성공했다.\n\n민방위 부대는 화염을 포위하고 인접한 시설로의 확산을 막을 수 있었다고 보안 소식통이 현지 디완 에프엠 특파원에게 전했다.\n\n소식통에 따르면 초기 현장 조사 결과 이번 사건에서 인명 피해나 사상자가 없는 것으로 확인됐으며, 피해는 공장의 물질적 손실에만 국한됐다.\n\n화재 발생 원인과 경위를 파악하기 위한 수사가 개시됐다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "diwanfm.net"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
       "title": "화재 진화 작업 동원된 소방 헬기",
       "source": "뉴시스",
       "link": "https://www.newsis.com/view/NISI20261030_0002278556",
@@ -244,23 +413,11 @@
       "body": "[대전=뉴시스] 김도현 기자 = 30일 오전 대전 서구 갈마동의 한 타이어 판매 업체에서 불이 나 소방 헬기가 진화 작업을 위해 방수하고 있다. 2026.10.30. kdh1917@newsis.com",
       "bodyKo": "[대전=뉴시스] 김도현 기자 = 30일 오전 대전 서구 갈마동의 한 타이어 판매 업체에서 불이 나 소방 헬기가 진화 작업을 위해 방수하고 있다. 2026.10.30. kdh1917@newsis.com",
       "tried": true,
-      "count": 3,
+      "count": 1,
       "sources": [
-        "뉴시스",
-        "뉴스핌"
+        "뉴시스"
       ],
-      "related": [
-        {
-          "titleKo": "'대응 1단계' 대전 갈마동 타이어 판매점 화재 현장…헬기 투입 진화",
-          "source": "뉴스핌",
-          "link": "https://www.newspim.com/news/view/20261030000604"
-        },
-        {
-          "titleKo": "[3보] 대전 갈마동 타이어 매장 화재…건물 붕괴·옆 건물로 피해 확산",
-          "source": "뉴스핌",
-          "link": "https://www.newspim.com/news/view/20261030000500"
-        }
-      ],
+      "related": [],
       "tag": "기타"
     },
     {
@@ -318,6 +475,37 @@
       "tag": "공장·플랜트"
     },
     {
+      "title": "서울시의회 도시건설위, 구룡마을 화재현장 방문",
+      "source": "송파타임즈",
+      "link": "https://www.songpatimes.com/news/articleView.html?idxno=333181",
+      "date": "2026-10-29T22:22:00.000Z",
+      "lang": "ko",
+      "titleKo": "서울시의회 도시건설위, 구룡마을 화재현장 방문",
+      "url": "https://www.songpatimes.com/news/articleView.html?idxno=333181",
+      "body": "서울시의회 도시안전건설위원회(위원장 박칠성)는 29일 강남구 개포동 구룡마을 화재 현장을 찾아 화재 피해 및 수습 상황을 점검하고, 피해 주민에 대한 신속한 지원과 재발 방지 대책 마련을 강력히 촉구했다.도시안전건설위는 서울소방재난본부로부터 화재 발생 경위와 진압 과정, 피해 현황에 대한 상세 보고를 받은 뒤 화재 현장을 직접 둘러보며 밤샘 진화 작업과 현장 수습에 힘쓴 소방대원들의 노고를 격려했다.박칠성 위원장(더불어민주당·구로4)은 “구룡마을처럼 가건물이 밀집하고 산림과 인접한 지역은 화재 발생 전 사전 예방이 매우 중요하다”면\n박칠성 위원장(더불어민주당&middot;구로4)은 &ldquo;구룡마을처럼 가건물이 밀집하고 산림과 인접한 지역은 화재 발생 전 사전 예방이 매우 중요하다&rdquo;면서 &ldquo;화재취약지구에 대한 화재안전관리에 보다 철저를 기할 것&rdquo;과 &ldquo;이번 화재로 피해를 입으신 이재민들의 임시 주거와 생필품 지원 등 구호 조치에 단 한 치의 소홀함도 없어야 한다&rdquo;고 강조했다.\n한편 강남구 개포동 570 소재 구룡마을은 총 8개 지구의 가건물 밀집 지역으로, 올해 1월에도 대형 화재가 발생해 소방 대응 2단계가 발령된 바 있다.",
+      "bodyKo": "서울시의회 도시안전건설위원회(위원장 박칠성)는 29일 강남구 개포동 구룡마을 화재 현장을 찾아 화재 피해 및 수습 상황을 점검하고, 피해 주민에 대한 신속한 지원과 재발 방지 대책 마련을 강력히 촉구했다.도시안전건설위는 서울소방재난본부로부터 화재 발생 경위와 진압 과정, 피해 현황에 대한 상세 보고를 받은 뒤 화재 현장을 직접 둘러보며 밤샘 진화 작업과 현장 수습에 힘쓴 소방대원들의 노고를 격려했다.박칠성 위원장(더불어민주당·구로4)은 “구룡마을처럼 가건물이 밀집하고 산림과 인접한 지역은 화재 발생 전 사전 예방이 매우 중요하다”면\n박칠성 위원장(더불어민주당&middot;구로4)은 &ldquo;구룡마을처럼 가건물이 밀집하고 산림과 인접한 지역은 화재 발생 전 사전 예방이 매우 중요하다&rdquo;면서 &ldquo;화재취약지구에 대한 화재안전관리에 보다 철저를 기할 것&rdquo;과 &ldquo;이번 화재로 피해를 입으신 이재민들의 임시 주거와 생필품 지원 등 구호 조치에 단 한 치의 소홀함도 없어야 한다&rdquo;고 강조했다.\n한편 강남구 개포동 570 소재 구룡마을은 총 8개 지구의 가건물 밀집 지역으로, 올해 1월에도 대형 화재가 발생해 소방 대응 2단계가 발령된 바 있다.",
+      "tried": true,
+      "count": 3,
+      "sources": [
+        "문화매일신문",
+        "글로벌뉴스통신GNA",
+        "송파타임즈"
+      ],
+      "related": [
+        {
+          "titleKo": "서울특별시의회 도시안전건설위원회, \"강남구 개포동 구룡마을 화재 현장 긴급 방문\"",
+          "source": "문화매일신문",
+          "link": "https://www.dailyculture.kr/2234307"
+        },
+        {
+          "titleKo": "서울시의회 도시안전건설위원회, 구룡마을 화재 현장 긴급 방문",
+          "source": "글로벌뉴스통신GNA",
+          "link": "https://www.globalnewsagency.kr/news/articleView.html?idxno=501928"
+        }
+      ],
+      "tag": "기타"
+    },
+    {
       "title": "인천 검단 상가서 가스 철거 중 폭발…4명 부상",
       "source": "인천일보",
       "link": "https://www.incheonilbo.com/news/articleView.html?idxno=1335200",
@@ -332,7 +520,7 @@
       "sources": [
         "투데이에너지",
         "인천일보",
-        "애드뉴스인천"
+        "https://www.ppss.kr/"
       ],
       "related": [
         {
@@ -341,9 +529,9 @@
           "link": "https://www.todayenergy.kr/news/articleView.html?idxno=304874"
         },
         {
-          "titleKo": "검단 마전동 상가서 LPG 가스 폭발… 4명 부상",
-          "source": "애드뉴스인천",
-          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9TQTV0d1hyeEVYT0hlMGMtZ3ZkTUEyMjd6Vlc0bnRPQTUwVFhiM1QycHFmUGxlV3FDRUNYUjVPd05Sd3FMcnZJcjVqTzRkaWNDUXNsUkZzLVFYZGM2X1I5di01NmJySEV6UXow?oc=5"
+          "titleKo": "검단 마전동 상가서 LPG 폭발…4명 부상",
+          "source": "https://www.ppss.kr/",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uT0FTSnFEaE5LUFJ3bjNUREFnQnZSTW9VS2FKb3V1NFBnamdFU3ZTbkNTYjZJMUdtbFRSb3VuLS1KSlJYZTZKRnB4U2Vfb2NsUi1iMVFHaXJsUlc5STZHQzk0N1I?oc=5"
         }
       ],
       "tag": "시장·상가"
@@ -403,55 +591,6 @@
       "tag": "숙소·창고"
     },
     {
-      "title": "서울시의회 도시건설위, 구룡마을 화재현장 방문",
-      "source": "송파타임즈",
-      "link": "https://www.songpatimes.com/news/articleView.html?idxno=333181",
-      "date": "2026-10-29T12:22:34.000Z",
-      "lang": "ko",
-      "titleKo": "서울시의회 도시건설위, 구룡마을 화재현장 방문",
-      "url": "https://www.songpatimes.com/news/articleView.html?idxno=333181",
-      "body": "서울시의회 도시안전건설위원회(위원장 박칠성)는 29일 강남구 개포동 구룡마을 화재 현장을 찾아 화재 피해 및 수습 상황을 점검하고, 피해 주민에 대한 신속한 지원과 재발 방지 대책 마련을 강력히 촉구했다.도시안전건설위는 서울소방재난본부로부터 화재 발생 경위와 진압 과정, 피해 현황에 대한 상세 보고를 받은 뒤 화재 현장을 직접 둘러보며 밤샘 진화 작업과 현장 수습에 힘쓴 소방대원들의 노고를 격려했다.박칠성 위원장(더불어민주당·구로4)은 “구룡마을처럼 가건물이 밀집하고 산림과 인접한 지역은 화재 발생 전 사전 예방이 매우 중요하다”면\n박칠성 위원장(더불어민주당&middot;구로4)은 &ldquo;구룡마을처럼 가건물이 밀집하고 산림과 인접한 지역은 화재 발생 전 사전 예방이 매우 중요하다&rdquo;면서 &ldquo;화재취약지구에 대한 화재안전관리에 보다 철저를 기할 것&rdquo;과 &ldquo;이번 화재로 피해를 입으신 이재민들의 임시 주거와 생필품 지원 등 구호 조치에 단 한 치의 소홀함도 없어야 한다&rdquo;고 강조했다.\n한편 강남구 개포동 570 소재 구룡마을은 총 8개 지구의 가건물 밀집 지역으로, 올해 1월에도 대형 화재가 발생해 소방 대응 2단계가 발령된 바 있다.",
-      "bodyKo": "서울시의회 도시안전건설위원회(위원장 박칠성)는 29일 강남구 개포동 구룡마을 화재 현장을 찾아 화재 피해 및 수습 상황을 점검하고, 피해 주민에 대한 신속한 지원과 재발 방지 대책 마련을 강력히 촉구했다.도시안전건설위는 서울소방재난본부로부터 화재 발생 경위와 진압 과정, 피해 현황에 대한 상세 보고를 받은 뒤 화재 현장을 직접 둘러보며 밤샘 진화 작업과 현장 수습에 힘쓴 소방대원들의 노고를 격려했다.박칠성 위원장(더불어민주당·구로4)은 “구룡마을처럼 가건물이 밀집하고 산림과 인접한 지역은 화재 발생 전 사전 예방이 매우 중요하다”면\n박칠성 위원장(더불어민주당&middot;구로4)은 &ldquo;구룡마을처럼 가건물이 밀집하고 산림과 인접한 지역은 화재 발생 전 사전 예방이 매우 중요하다&rdquo;면서 &ldquo;화재취약지구에 대한 화재안전관리에 보다 철저를 기할 것&rdquo;과 &ldquo;이번 화재로 피해를 입으신 이재민들의 임시 주거와 생필품 지원 등 구호 조치에 단 한 치의 소홀함도 없어야 한다&rdquo;고 강조했다.\n한편 강남구 개포동 570 소재 구룡마을은 총 8개 지구의 가건물 밀집 지역으로, 올해 1월에도 대형 화재가 발생해 소방 대응 2단계가 발령된 바 있다.",
-      "tried": true,
-      "count": 6,
-      "sources": [
-        "글로벌뉴스통신GNA",
-        "경찰연합신문",
-        "송파타임즈",
-        "빅데이터뉴스",
-        "투어코리아",
-        "디스커버리뉴스(DISCOVERYNEWS)"
-      ],
-      "related": [
-        {
-          "titleKo": "서울시의회 도시안전건설위원회, 구룡마을 화재 현장 긴급 방문",
-          "source": "글로벌뉴스통신GNA",
-          "link": "https://www.globalnewsagency.kr/news/articleView.html?idxno=501928"
-        },
-        {
-          "titleKo": "서울특별시의회 도시안전건설위원회, ˝강남구 개포동 구룡마을 화재 현장 긴급 방문˝:경찰연합신문",
-          "source": "경찰연합신문",
-          "link": "http://www.koreapolicenews.com/2242165"
-        },
-        {
-          "titleKo": "서울시의회 도시안전건설위, 구룡마을 화재 현장 방문...\"이재민 구호 소홀함 없어야\"",
-          "source": "빅데이터뉴스",
-          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE10WVpSaW5BVWFtSGFYYklTendjVVNkT0dSVTIxLXhQQWQwaHBhMEpxZHhqY2JGVlotdWEyTnJvNUlxSlRJQXBiSWx5MnU1dWJjek5JanNmRUpTSzByTEZhSTBlSGlxbTdEY05HcnBrMWo0WGJDdDlZZTk1Wko?oc=5"
-        },
-        {
-          "titleKo": "서울시의회 도시안건위,‘구룡마을 화재 현장 방문 이재민 구호 조치 당부",
-          "source": "투어코리아",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZWjRyRHZkWGhPRUNJQ0ZSUkpsU3NOUW5GbThHZWhxbkRtOWd2bldVWWdOeERORHFfNFJKczlNWjdZRkVzT3VXU0o5Nkx6UERHalU3eG00dVJBMHE3SEE3ZFBqZDdMQ1NrelppOWtR?oc=5"
-        },
-        {
-          "titleKo": "서울시의회 도시안전건설위, 강남구 구룡마을 화재 현장 긴급 방문",
-          "source": "디스커버리뉴스(DISCOVERYNEWS)",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE53SG1pb01VclJXTnFEOFRxRHh5U3ZqTHNZU0NNYnJNR2lHS1VocHBZcFBSaHlGNlR5dl9UYWZzTE95c3o5OG1MOFlTbm1BMG1XbDRaeWYzbkkwTnRkTlhSZ05qRTMtdEo3OWZjQ2ljZGNoZw?oc=5"
-        }
-      ],
-      "tag": "기타"
-    },
-    {
       "title": "اندلع حريق في مبنى مكون من أربعة طوابق في شارع ترانغ تيان، هانوي.",
       "source": "Vietnam.vn",
       "link": "https://www.vietnam.vn/ar/chay-nha-4-tang-tren-pho-trang-tien-ha-noi",
@@ -462,11 +601,18 @@
       "body": "TPO - اندلع حريق بعد ظهر يوم 29 أكتوبر في المنزل رقم 20 بشارع ترانغ تيان، حي هوان كيم، هانوي. لم يكن أحد داخل المنزل وقت اندلاع الحريق، وتم توجيه السكان المجاورين بالإخلاء الآمن.\n0 في حوالي الساعة 1:55 مساءً يوم 29 أكتوبر، تلقت السلطات بلاغاً عن حريق في المنزل رقم 20 بشارع ترانغ تيان، حي هوان كيم، هانوي .\nبحسب المعلومات الأولية، اندلع الحريق في الطابق الثاني من منزل مكون من أربعة طوابق مع علية، وامتد على مساحة تقارب 15 متراً مربعاً. وكان المنزل مسكوناً من قبل السيد ل.هـ.ن. (مواليد 1986).\nتُجري السلطات حاليًا تحقيقًا في سبب الحريق وتقييمًا لمدى الأضرار.",
       "bodyKo": "화재 발생, 하노이 주택서 피해 없어\n\nTPO - 10월 29일 오후 하노이 후언 킴 구 트랑 티엔 거리 20번지 주택에서 화재가 발생했다. 화재 발생 당시 주택 내부에 사람이 없었으며, 인근 주민들은 안전하게 대피했다.\n\n10월 29일 오후 1시 55분경 당국은 후언 킴 구 트랑 티엔 거리 20번지 주택의 화재 신고를 접수했다.\n\n초기 정보에 따르면 화재는 4층 건물에 다락방이 있는 주택의 2층에서 발생했으며, 약 15제곱미터 규모로 확산됐다. 해당 주택은 1986년생 L.H.N씨가 거주하고 있었다.\n\n당국은 현재 화재 원인에 대한 조사와 피해 규모 평가를 진행 중이다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
-        "Vietnam.vn"
+        "Vietnam.vn",
+        "Masrawy"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "파이윰 아랍 타워 거리 주택 건물 화재 진압 (영상·사진)",
+          "source": "Masrawy",
+          "link": "https://www.masrawy.com/news/news_regions/details/2026/10/28/3070257/%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D8%B9%D9%85%D8%A7%D8%B1%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%B4%D8%A7%D8%B1%D8%B9-%D8%A8%D8%B1%D8%AC-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8-%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D9%88%D9%85-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%88%D8%B5%D9%88%D8%B1-"
+        }
+      ],
       "tag": "고층·건물"
     },
     {
@@ -542,6 +688,20 @@
       "tag": "공장·플랜트"
     },
     {
+      "title": "소방차 길 막는 가판·주차 차량…육거리시장 화재 대응 '숙제'",
+      "source": "충청일보",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0xNDk5S1B3OGFZODQwNlFWbEhxR1pFMlV4QkFac0pEbmctcjJBWXBmck9GaGtKWW84M2RvVUFyLVFiQVpUYnp3d2RFUUJBbEtfcndXc2RacllSYUVDTzI3NGNqWVNuUERZVW41Uy02T1U?oc=5",
+      "date": "2026-10-29T08:45:25.000Z",
+      "lang": "ko",
+      "titleKo": "소방차 길 막는 가판·주차 차량…육거리시장 화재 대응 '숙제'",
+      "count": 1,
+      "sources": [
+        "충청일보"
+      ],
+      "related": [],
+      "tag": "시장·상가"
+    },
+    {
       "title": "이천소방서, 외국인 계절근로자 사업장 화재예방 현장안전지도",
       "source": "경기일보",
       "link": "https://www.kyeonggi.com/article/20261029580398",
@@ -570,16 +730,27 @@
       "body": "",
       "bodyKo": "",
       "tried": true,
-      "count": 2,
+      "count": 4,
       "sources": [
         "Reuters",
-        "موقع المنشر الاخبارى"
+        "موقع المنشر الاخبارى",
+        "القاهرة 24"
       ],
       "related": [
         {
           "titleKo": "팩트체크: 테헤란 인근 석유 저장소 화재 영상, 사우디 라스 타누라 아님",
           "source": "Reuters",
           "link": "https://www.reuters.com/ar/fact-check/ICLUUWKXBFN2PLAN5ZMJAK4WDY-2026-10-29/"
+        },
+        {
+          "titleKo": "블룸버그: 사우디, 라스 타누라 석유수출터미널 근처 화재 공격 후 진화",
+          "source": "Reuters",
+          "link": "https://www.reuters.com/ar/business/6T3D54VRVZLSNNUVXGLESSIB7U-2026-10-27/"
+        },
+        {
+          "titleKo": "블룸버그: 사우디 라스 타누라 석유시설 근처 화재, 공격 후 진화",
+          "source": "القاهرة 24",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBybjM1Vk8wZEdNRjY3M1BpSkFqbjVpa2JxdnViUHVBVWhuSGVfMklJQkVfVmxFNHRIZUUwOTNCX0RNWWZSSUE?oc=5"
         }
       ],
       "tag": "공장·플랜트"
@@ -629,6 +800,24 @@
       ],
       "related": [],
       "tag": "기타"
+    },
+    {
+      "title": "اندلع حريق في مصنع بمدينة دنيبرو عقب هجوم روسي",
+      "source": "UA.NEWS",
+      "link": "https://ua.news/ar/war-vs-rf/u-dnipri-pislia-rosiiskogo-udaru-spalakhnula-pozhezha-na-pidpriiemstvi",
+      "date": "2026-10-28T19:01:55.000Z",
+      "lang": "ar",
+      "titleKo": "러시아 공격으로 드니프로 도시 공장에 화재 발생",
+      "url": "https://ua.news/ar/war-vs-rf/u-dnipri-pislia-rosiiskogo-udaru-spalakhnula-pozhezha-na-pidpriiemstvi",
+      "body": "اندلع حريق في مدينة دنيبرو جراء ضربة روسية استهدفت منشأة صناعية.\n--> اندلع حريق في مدينة دنيبرو جراء هجوم روسي على منشأة صناعية.\nوجاء في البيان: «شن العدو هجوماً على منشأة صناعية في دنيبرو. واندلع حريق».\nأعلن ذلك رئيس الإدارة العسكرية الإقليمية لدنيبروبتروفسك، ألكسندر غانجا، عبر تطبيق تيليغرام.\nوقد استهدف المحتلون منشأة مدنية في مقاطعة ريفني، مما أسفر عن سقوط قتيل .\nخاركيف، زابوريزهيا، فينيتسا وبولتافا — تعرضت متاجر «إبيسنترو» للقصف .\nوأكدت شركة «روشين» وقوع غارة روسية على مجمع صناعي في فينيتسا .\nوكانت روسيا قد شنت في وقت سابق هجوماً بصواريخ كاب على خاركيف، مما أسفر عن مقتل شخص وإصابة آخرين.\nفي 11 أكتوبر، هاجم الجيش الروسي في منطقة بوغودوخوف بمقاطعة خاركيف شاحنة تابعة لمؤسسة زراعية باستخدام طائرة مسيرة. وأسفر الهجوم عن مقتل السائق .",
+      "bodyKo": "드니프로 시에서 러시아의 공습으로 인한 화재 발생\n--> 드니프로 시의 산업시설을 겨냥한 러시아 공격으로 화재 발생\n\n성명에는 \"적군이 드니프로의 산업시설을 공격했다. 화재가 발생했다\"고 기재됐다.\n\n드니프로페트로우스크 지역 군사행정부 수장 알렉산드르 간차가 텔레그램을 통해 이를 밝혔다.\n\n점령군은 리브니 지구의 민간시설을 공격했으며, 이로 인해 1명이 사망했다.\n\n하르키우, 자포리자, 비니차, 폴타바 — '에피센트로' 매장들이 포격을 받았다.\n\n'로신' 회사는 비니차의 산업단지에 대한 러시아 공습이 있었음을 확인했다.\n\n러시아는 앞서 하르키우에 크루즈 미사일을 발사해 1명이 사망하고 여러 명이 부상했다.\n\n10월 11일 러시아군은 하르키우 지구 보고도호우 지역에서 무인항공기를 이용해 농업기관 소속 트럭을 공격했다. 공격으로 운전자가 사망했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "UA.NEWS"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
     },
     {
       "title": "불티 하나가 큰불로! 작업장 화재·폭발 예방수칙",
@@ -801,6 +990,20 @@
       ],
       "related": [],
       "tag": "전기·배터리"
+    },
+    {
+      "title": "금산소방서, 자동차 정비공장 5곳 화재예방 컨설팅",
+      "source": "충남일보",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5lSkJwb1UtUFFmTF9qOGlrRGxwSDVGT1k1WUVQRWxkYjVMU3BRTmdrOWhNZWdiSFdYSkg4UjN0c2w4TnBTaUNaUWpUVk1oeUZTcDRLLTd2SmkyTk1UODdsQXRNYWZIU1A3YU1NLUtqajNOVGc?oc=5",
+      "date": "2026-10-27T07:00:00.000Z",
+      "lang": "ko",
+      "titleKo": "금산소방서, 자동차 정비공장 5곳 화재예방 컨설팅",
+      "count": 1,
+      "sources": [
+        "충남일보"
+      ],
+      "related": [],
+      "tag": "공장·플랜트"
     }
   ]
 }
