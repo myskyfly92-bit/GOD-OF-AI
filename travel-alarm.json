@@ -375,7 +375,7 @@
      "level": 4,
      "levelName": "여행금지",
      "region": "일부",
-     "remark": "우크라이나 접경지역(쿠르스크주 전체 및 로스토프&middot;벨고로드&middot;보로네시&middot;브랸스크 지역 내 우크라이나 국경에서 30km 구간)"
+     "remark": "우크라이나 접경지역(쿠르스크주 전체 및 로스토프·벨고로드·보로네시·브랸스크 지역 내 우크라이나 국경에서 30km 구간)"
     },
     {
      "level": 3,
@@ -2092,7 +2092,7 @@
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
-     "remark": "에리트레아&bull;에티오피아&bull;소말리아 국경 10km 이내 접경지역"
+     "remark": "에리트레아•에티오피아•소말리아 국경 10km 이내 접경지역"
     },
     {
      "level": 2,
@@ -2287,7 +2287,7 @@
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
-     "remark": "미트로비차 북부(Zubin Potok, Zve&ccedil;an, Leposaviq)"
+     "remark": "미트로비차 북부(Zubin Potok, Zveçan, Leposaviq)"
     }
    ],
    "written": "",

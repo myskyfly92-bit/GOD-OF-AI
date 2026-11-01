@@ -187,7 +187,7 @@ def collect_notices(keys):
                     body = clean(field(info[0], "ctntText") or field(info[0], "ctntHtml"))
                 time.sleep(0.1)
             out.append({
-                "kind": "공지사항", "title": field(it, "title"), "body": body,
+                "kind": "공지사항", "title": clean(field(it, "title")), "body": body,
                 "date": str(field(it, "wrtDt"))[:10], "country": name, "iso2": iso2,
                 "file": "" if field(it, "fileUrl") in ("", "NO_ATT_FILE") else field(it, "fileUrl"),
             })
@@ -197,7 +197,7 @@ def collect_notices(keys):
 # ---------- 2) 안전공지 ----------
 def safety_item(it, iso2, name):
     return {
-        "kind": "안전공지", "title": field(it, "title"),
+        "kind": "안전공지", "title": clean(field(it, "title")),
         "body": clean_body(field(it, "txt_origin_cn", "content", "ctntText")),
         "date": str(field(it, "wrt_dt", "wrtDt"))[:10], "country": name, "iso2": iso2, "file": "",
     }

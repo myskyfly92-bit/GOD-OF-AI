@@ -8,6 +8,7 @@ travel-alarm.json 으로 저장합니다. (기타 정보 > 주변국 여행경�
   지역별 내용은 함께 저장합니다.
 """
 
+import html
 import json
 import os
 import sys
@@ -51,7 +52,8 @@ def pick(row, *names):
     for n in names:
         v = norm.get(n.lower().replace("_", ""))
         if v not in (None, ""):
-            return v
+            # 외교부 API 가 글자를 '&bull;' '&middot;' 처럼 HTML 표기로 주는 경우가 있어 글자로 되돌린다
+            return html.unescape(html.unescape(v)) if isinstance(v, str) else v
     return ""
 
 
