@@ -1,85 +1,91 @@
 {
-  "generatedAt": "2026-11-02T11:38:12.757Z",
+  "generatedAt": "2026-11-02T23:12:01.746Z",
   "sa": {
     "label": "중대재해·산업재해",
     "items": [
       {
-        "title": "김천시시설관리공단, 산업재해 제로(Zero) 달성을 위한 ‘아차사고 사례발굴’및‘안전보건 정책제안’공모전 개최",
-        "source": "https://www.newsgb.co.kr/",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5iODAydHRPbmo2Wk9pZnljS2p1RGFldkpYY0ZZR0NkUEo4OWxod3dKWk5GV3lKRDJKN0N1YjJ0Z1VRaU1jUVNmbFIzd0RMVjBHbjFDb0xSY1hYaDZJMUJiTg?oc=5",
-        "date": "2026-11-02T10:50:03.000Z"
+        "title": "중대재해에서 드러나는 국가의 가해자성과 네 가지 얼굴",
+        "source": "매일노동뉴스",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1YRUdLN2lUdTd1VG5wNUVTb1N3a3NwS3V0T1BIYzBnLWxzWjlsZEtkeHZ1ZXFLWFdBQy0yZ0NxT29YZW91TnNFWHdvRHBZUmgzcGNQQl96cFpQMTJtSHdVWHFVcDNvcE5WX0tmOVlwSk4?oc=5",
+        "date": "2026-11-02T21:30:05.000Z"
+      },
+      {
+        "title": "금호타이어 광주공장서 30대 노동자 사망",
+        "source": "매일노동뉴스",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1NN0Nqdm9tN2dMaE5OQkJHbkhYUU5lRmJkV1RvZ19sODNZNEhqSkpIZXJLMG5WWGtwVXNObW1fYUZFUlNiQUxYalpabGlURkE3Q2Q2Q2dnQmZKb25neURON3RJaXJ2OE1VX19zM2dWQkE?oc=5",
+        "date": "2026-11-02T21:30:03.000Z"
+      },
+      {
+        "title": "대구 서구, 2026년 하반기 중대산업재해 예방 캠페인 및 현장점검 실시",
+        "source": "시사뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1KSzlVQnFReEoxNEZRRThmbl8yQUhLdUVacEl6cmtqa19LNmRKSld5Q2tJRjNBVy11SzJBTElMS2ZKY1pMTFdNTExvS3hGY3c0LUpzdVVDSE4tUUEtc1JKQkJEZw?oc=5",
+        "date": "2026-11-02T15:24:04.000Z"
+      },
+      {
+        "title": "객실 문 밖에 걸쇠 채워 외국인 선원 21m 추락사 유발···경호업체 등 5명 검찰 송치",
+        "source": "더경남뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ER2lKTFZOZXhTTTExa19iSTVrYzYtUmNwa3E1eXBMOWRhUlFCSm9HY1liRmpmU2Z6dW5YWUI2SlVhNWNBYTBCN05pMjlKOHFlYVliSA?oc=5",
+        "date": "2026-11-02T14:59:32.000Z"
+      },
+      {
+        "title": "창원상공회의소, 산업재해 예방 공모전 우수작 10건 시상",
+        "source": "더쎈뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1hWGZfcms5RTE3TG5EMDlXUDZOb1lCa3BHazJ0TnhZMjJhQ2FSWWFUU3Foekd0SXY5dldzZl9MbDFCZmVSVXM3RjBKajdLOEttel9UaHhCZVBicE8tb2wtaVBYb0F1MTl3?oc=5",
+        "date": "2026-11-02T14:09:55.000Z"
+      },
+      {
+        "title": "한보총, '안전보건페어 2026' 개최…AI 시대 사람 중심 안전보건 발전방향 모색",
+        "source": "비욘드포스트",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9NV0UtV2EwUnJKc0F2TFpqSURjZ0g4X3FmdjNrQ1VJSjNnNmJ6YzV5QzE3azNiOXFIZjgxaVI3TFNlSHlVNEp1allqcTc5QlRoZV9RS1pnRGpyS0FnUFhuZXZBcVFUb2xSWl9TczM5NXJvUU01NnFCUDBLSWI?oc=5",
+        "date": "2026-11-02T13:31:35.000Z"
+      },
+      {
+        "title": "부산 영도구, 산업재해 예방 위한 홍보 캠페인 실시",
+        "source": "웹이코노미",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5PdU0zUjZLaXFqRXF5eUlfUXN1a2ZOSVgzNUNUTWRLZEQxUTY4MHNpNTk1VW1yMG5XS0lnOGRkS191Zk1SdjMyWE9wUXgwbWVEa2NQQzFtUEI3Sjl5bU1tUXZRU3dOX05EUW9ZSllSLUIyQQ?oc=5",
+        "date": "2026-11-02T12:23:18.000Z"
+      },
+      {
+        "title": "[단독] 헬스케어 기업 30대 여성 연구원, 사옥서 추락사…경찰 수사",
+        "source": "Nate News",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE45ZVpZbjY3TXZpZGNqMTdpaTBQaUJoWElwc0g4YlVUejViX2tnY29vbzRpbkh4X3gyU09iZWNZWl9fRnB2UWJidi1uY3A4RXBjUGpR?oc=5",
+        "date": "2026-11-02T11:57:00.000Z"
+      },
+      {
+        "title": "김천시시설관리공단, 산업재해 예방 위한 안전 공모전 개최",
+        "source": "웹이코노미",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBJRUkxS0VkeUlLb0ZCOTFwYWtEbnB4ZkFpeGpQalVSTkFfUTlXTXVFTm54dXVvQ0ZHVHZjbEZiMHgwUnZEUEo4aUlIRnRVeFZNeVMtUWZMUjdSS3g2MmxQQXVwNGlfb1dodS1IU24xbU9QZw?oc=5",
+        "date": "2026-11-02T11:49:31.000Z"
+      },
+      {
+        "title": "하마터면 대형 참사... 경남 중대재해 절반이 '김해'",
+        "source": "부산경남대표방송 KNN 뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE14MUpLVWlpM25uUFlnUEMtUERXeHhoS0pxY1JucWVNSG9BOWViMlhBRENaMG16VzQ0YkFkVzBBa1NGY284MWMwbHp0VjVLZ0VKUzVZWA?oc=5",
+        "date": "2026-11-02T11:06:00.000Z"
+      },
+      {
+        "title": "전국 유일 ‘변호사 자격’ 중대재해 근로감독관 ‘남보향 대구노동청 법무팀장’…“중대재해 수사 법리 공백 최소화할 것”",
+        "source": "영남일보",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5tZlpyclNKT2FKTmlqVWhSV3ZSWGVDdjRiLWtVX1BpTk5qaFh1UXhYZGFXWERyV1IwN2FFS3JIQWZ2QmN6SUJHSEY4bUhfSGlMS2lIZ0IwTkk0NmJDal9uM2lNTEFHSTlTYmxN?oc=5",
+        "date": "2026-11-02T10:08:41.000Z"
       },
       {
         "title": "[이슈하이킥] 산재 사망자 역대 ‘최저’.. ‘영업이익 5% 과징금’·‘신고포상금’으로 예방 강화한다",
         "source": "BBS불교방송",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE02UWsyOWM1ZEhCME04cHkyUnhNQjloRUdMbHpVR1RGZFppOVd2TlJ6NmhZa2R3ekxPTWZ0eEZDWldTYU43aDlHd01iQWlSMVZobG1nVEJlS05hcDVxTTk1SEVpbUxTcWZ5WEVJ?oc=5",
         "date": "2026-11-02T09:59:00.000Z"
-      },
-      {
-        "title": "부산 영도구, 2026년 지역산업재해 예방 홍보활동 전개",
-        "source": "국제신문",
-        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNklKMWk1ZTJBQ0lCNFRlcWNwYkpkQ0dfTXJXdC1QVE9peXIxNzItRUlrc0theUVpdnlZTmxiVG92YzNLUjVoSUJDS3ZqVDVLbmc4S1dCSTFDMF9wcVNUS2prTy1oVTBkVTdhM2ZSZzRCSFNnczRTMEJhYWdldkt6YktjMjhiMXRBcTNZcU53?oc=5",
-        "date": "2026-11-02T09:36:00.000Z"
-      },
-      {
-        "title": "모텔 추락사 선원 감금한 5명 송치",
-        "source": "부산일보",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5YRWRmY1ZBSDYzYWNaV3V0M3FlU0JqMHl0NmhrZ1djTUJjZHpXUGtIbnJUYzBIUElZdGc5NUluN2IyOXMzUHAwdEtObFhxSk1mNUhQWXJyNm5wMkd4VzFZTGVqdkFpUkdYbnhlRHkyVl9nemlo?oc=5",
-        "date": "2026-11-02T09:26:18.000Z"
-      },
-      {
-        "title": "[참사의 재구성에서 내일의 안전으로] ⑧ 산재 보상에서 사고 예방까지…독일이 쌓아온 140년의 안전체계",
-        "source": "남도일보",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03bFRnbWVhNTJUMlNJOVl6bGlMeTl2QzBHQnFieGJXUTIyWGNuWHRTRktlNTJYWnlpeVdfYWJJOGpFY21lbVV3ZjZDYm9TX09kWFYxemhsbURFSXozSnh4QjBPS1NCMjFXTW01dEhLcWTSAXBBVV95cUxNN2xUZ21lYTUyVDJTSTlZemxpTHk5dkMwR0JxYnhiV1EyMlhjblh0U0ZLZTUyWFp5aXlXX2FiSThqRWNtZW1Vd2Y2Q2JvU19PZFhWMXpobG1ERUl6M0p4eEIwT0tTQjIxV01tNXRIS3Fk?oc=5",
-        "date": "2026-11-02T09:10:00.000Z"
-      },
-      {
-        "title": "[S-이슈] 금호타이어, 정일택 대표 취임 이후 여섯 번째 사망사고 발생… 광주공장 30대 근로자 끝내 사망",
-        "source": "S저널",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBCWXlmWEhZa3ZTcVh4Y1kxUU5XdWdmTnp4V1hjZXByaExUV0U4NHpDVmFnblJWTG1jSm5lRjd5eFlzeU1RZTB2Y21PWmc2UTF0UzMzalEzWlR3bnJDMUV6WHBySXZseFR5ajliaUpB?oc=5",
-        "date": "2026-11-02T08:44:52.000Z"
-      },
-      {
-        "title": "[단독] 노동부, 여성 산재 승인율 낮은 원인 찾는다…“남성 중심 기준 살필 것”",
-        "source": "한겨레",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBLRWp6ZXE4R3dYVUdZVkpMc0oxTlB6amZWSFZpMXRmZlM4TDU2VnFISkxGWWR1dVg0aDgtTk9vWU5RMlNqSGl2UTBUYThIRkp0WTVFN3VCMy1FTzZpLWFWajBfVVQ?oc=5",
-        "date": "2026-11-02T08:39:00.000Z"
-      },
-      {
-        "title": "화재·폭발로 숨진 노동자들...대구경북, 1년새 산재사망 2배↑ \"참사 없도록, 점검\"",
-        "source": "평화뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE84U1JERklZMjJ5cUhpRlN6S2hMLWlib0lQYjBKZk51SlI5R2RNSjhsRnh2azJlVUkxWTVNcXhwc3NZeXQtaVlHSTBuc2lsa0NKdHhqbnlWdklUVEhZN1c3QkJFbno?oc=5",
-        "date": "2026-11-02T07:58:00.000Z"
-      },
-      {
-        "title": "금호타이어, 광주공장서 30대 근로자 작업 중 끼임 사고로 숨져...경찰조사 본격화",
-        "source": "https://www.moneystorm.kr/",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Fcm0zYWtFUVJmSE92YjBTbll1MnNzWVFkd21iNmp6bnVRQktwUHpUNy1pSTlkeVVnVFNXSDVMZUZjWExSY2RLVmxDbWtUeVlLcDdBQmJIbkU1TFRNajRXSExTRDhOLXFwWVE?oc=5",
-        "date": "2026-11-02T07:57:28.000Z"
-      },
-      {
-        "title": "구직·축제 현장에서 알린 일터 안전…부산 영도구 산업재해 예방 캠페인",
-        "source": "브릿지경제",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8zakt2OGtrbkR4c3lwVFZZX0VGR2pFeWZ2eWZwNU5xM3JUQnliWG43Q1pERVNrQlhpLWhBeVA3TURtSHdpcGFxUTl0ZjZSd29JbG5NSzV1RGxYQQ?oc=5",
-        "date": "2026-11-02T07:50:00.000Z"
-      },
-      {
-        "title": "외국인 선원 추락사 부른 불법 감금…경호업체 등 5명 불구속 송치",
-        "source": "뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBYdF9KZ04tTGpOQnZQOWI1eTZEeXFVdVpaMHBGSTB3RWg1dmZmaWRZeGVCX2x1NXZQbHNjbTRiNVIybm5JY1EySy1TTVY3RWE1SzY1Y1hVWG5JRHk5Yk13?oc=5",
-        "date": "2026-11-02T07:36:11.000Z"
-      },
-      {
-        "title": "산업재해 예방 지식 겨룬다…포항 산업안전골든벨 26일 개최",
-        "source": "경북일보",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5UMnotYXF2cGYyUlZ0Z3BGa24xV2RMMUhRb1lUQnc4NTB5bG5XVHRWNHBYZ25qQUhEbEgzaXpRZlBnUHY2TmI3YlJRRDdYV0hTWDdXUzh5X2lZcHpHV0ViYnAtSHJvbUNKOWtuSHNVNA?oc=5",
-        "date": "2026-11-02T07:22:51.000Z"
       }
     ]
   },
   "embassy": {
     "label": "중동 대사관·안전",
     "items": [
+      {
+        "title": "이란, 카타르 협상 결렬… 돌파구 마련 없이 철수.",
+        "source": "Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeExHY3BIUklLbkxlZDRTb2t5aEhjV0FKLUdRRGJnbUEyZElWeE9XbXJnX0Q0NDFrNmU5VjJXeXMwVXB3YzV1OVBjc3A5a2p2cjg1Tjc4dlZlM0t4bnk3dXBLZVNKNkpNaDZrQ3lhX1UwUllQb1p6NWtzYjQ4NG5rWTNzLXI?oc=5",
+        "date": "2026-11-02T15:59:27.000Z"
+      },
       {
         "title": "도심 뒤흔든 굉음·치솟은 불길…현지 교민이 전한 ‘중동 상황’",
         "source": "JTBC",
@@ -123,12 +129,6 @@
         "date": "2026-10-28T10:40:00.000Z"
       },
       {
-        "title": "세르비아 주재 이스라엘대사관 앞 흉기 테러…용의자 사살",
-        "source": "연합뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9yV1M5QWtnWkFSUXdHVlhwZGNlT0xsZUxuR1M1WV85aFZtcVp1YUY5WGhGeHA4RE84elN0OVBpMzRHblNmTnZxQi1GYmVWaFZxU2R3UVBldU04SmPSAWBBVV95cUxORG84ck82alJwbk1TdjI3ci1QcjMtZmFjN2I2NE95U0JVS0VFTm9HQzhSSVpHTU0wWDJ6eDdaZlBfTnBXcXBhblhpTzl4cGFQRlI1dVZEbnlFcGVUb1ozVks?oc=5",
-        "date": "2026-10-28T09:15:30.000Z"
-      },
-      {
         "title": "세르비아는 이스라엘 대사관 공격 이후 테러 경보 단계를 최고 수준으로 격상했다.",
         "source": "Vietnam.vn",
         "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVmxGbUVEaC1WbFpGX2hPbTctU2VXRU1GT256ZXhnd3JBQ2Z4QXA4X0dCTEFUV0hRT1BjQThEZUMxMU10eS0zSk9lQWx1SlhLMi1oV3R2dExkWjlIVFh1eXpsandRWXpzUGZRY3lEWnp3bTBmQnotZVFrOVd5SkN6TnJGQU11RFphMDJnT0NybVVrLTR4YnE2bS1JUzB1QQ?oc=5",
@@ -158,76 +158,76 @@
     "label": "감염병",
     "items": [
       {
-        "title": "\"구제역 백신 접종에 모니터링도\"…정선군, 가축 방역관리 강화",
-        "source": "뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9RLS15R0tKbWloaE1JUHBrZVdkUGVaMjhQT2ROUzV0MXd1NXBPeWZuTWQwS1FwZnI5MGI2bnRicTFEZHZFLU05VTRZRGU2RDJDVnlyTg?oc=5",
-        "date": "2026-11-02T10:27:50.000Z"
+        "title": "혈액제제로 이익 늘리고 백신 기술로 영토 확장 … 녹십자, 해외 사업 다변화",
+        "source": "뉴데일리",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0tT1lmdm9IZlFseHJBaUwyTTJ2VWk4aGRvS29yaVNteFRxbEhzSEZ3LU5oNjQ5RlRETEs0VTR5aDc1REZpSVcycFVRU3ViaVViOXJTak4walJrVm13TUp3T2k5ZTRJOFI5Q3diS3lsai1MVTd6d24yVy0wb9IBgAFBVV95cUxNME5kM0x3Y0I3QmZ0UnBaSWN3Q0RTT3lHTUh3Umt3dXpEblFuME9lY3pqU2NoRWRzQWVXUnd0bEpKWGJ2YlJTSVNSWVpXVGxERzF5ekt1VVBrQXFWeEFaX2JibEh5OHpMd2ttSzZNY2JvTjQ5RERiaUpIcGNpZEMyMQ?oc=5",
+        "date": "2026-11-02T21:20:00.000Z"
       },
       {
-        "title": "모더나 암백신 성과 이끈 협업…“K-바이오도 임상까지 연결해야”",
-        "source": "쿠키메디",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBtcFBnNmVwOG8yaXdfekczNG44S2RmbHJTUTJiZzJ3VTY2djZDMWFMZlVhMTJoWDhQSWVxM2JmcVo3c0NMU01OTTdhY2tqeTRfWlpFWUl3dFNVSHZxd3QydDRGNA?oc=5",
-        "date": "2026-11-02T09:45:56.000Z"
+        "title": "백신은 국가전략기술이라더니…국내생산세액공제 대상에선 빠졌다",
+        "source": "매일경제",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9wVnJFaDJwVGJveE1nY2hIR19VX2IzUVNGTi11V1g4UjFWUmNQT05kUlNuS1VUV0s0SlZFVmhDMkRmTTgzN2c?oc=5",
+        "date": "2026-11-02T20:56:00.000Z"
       },
       {
-        "title": "GC녹십자 3분기 영업익 492억 '68.5%↑'…알리글로·독감백신 기여",
-        "source": "뉴스웍스",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PeF9sd29vYXZyR0t1S0JNREo5a0FXakZDYU1IT05qTFFWRHNNclFONl8tbWJwaWNPZ0pZRUoyem5KUWtldFBTNXJjNUpRSjMzeUVsTmk3UW1seURCWU9TVlkyQ0xhQ2w3M2JlZWhCSdIBc0FVX3lxTFBsY0JSM3l5TDJtdllwS29rZlp2aWtNWVJEb0puX25LYlhpYy1XVng1THcxVFFxNzR3T1Q5VklMU0JzZzhublJ5SWxHNlduZFNyb1dnUHo2RGxSTEdtemtJel84NllscWxYTGFiY2ktTDVBMU0?oc=5",
-        "date": "2026-11-02T09:09:12.000Z"
+        "title": "GC녹십자, 콜롬비아 기업과 독감백신 기술지원 계약",
+        "source": "청년의사",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5nbXM5SHRMekdVeEN2ZF9FYW55Zkwyc3pGYWRZa1JqeVNpM2V6N25kc3RmbnBha3hQX1VZclF1ZEdUOFZFTFhRWlQ0Yy1nWExJMkJYMHZQbmUyejVfNkpIZ0tLX0VWMEtBMVJlUU1jSWE?oc=5",
+        "date": "2026-11-02T20:52:22.000Z"
       },
       {
-        "title": "GC녹십자, 콜롬비아 백스테라와 독감백신 공급 계약 체결",
-        "source": "로이슈",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE92dW9xNkRXTXJPTmN1MnBCMnI5SE5XRmtESklMdUYxNmxWcXRncjhEaVJFRjluc29pRXZiNGxucFV6OFJEWXR6aF93SXdIY2wtZG03OWdHS2xqSk0teVFyTjBtRGphMXRaZFVNM2l1Z3I5dDE3TC14UXJR?oc=5",
-        "date": "2026-11-02T08:43:23.000Z"
+        "title": "충북대·전북대 등 야생동물 감염병 진단·사례 연구 발표",
+        "source": "교통뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE43a0QwLVQ4TTFQVWtMWkc3bzVPY05kRWpYWUFjQzBYM2V0dmhWZFZXWjVWT3g4bm1LQWlOSkdVSmFUblBkVnYzUGFSVEpmUVBTcEN3REd6Z2xQXzVjV2cwZE01SzF0ajVkM3RPRA?oc=5",
+        "date": "2026-11-02T19:00:00.000Z"
       },
       {
-        "title": "GC녹십자, 콜롬비아 백스테라와 독감백신 기술지원·원액 공급 계약",
-        "source": "MEDI:GATE NEWS",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE41bFBEOWlJU1Z1bEF6WmJhcjRWR0ZYR0hPVmx0UV9hTUNEQnVYcXVNNFZKNzRrMFdHMUxvZUlFM241LUdpcXRQbnhPRFQyaUFscldodXpn?oc=5",
-        "date": "2026-11-02T08:29:00.000Z"
+        "title": "독감 환자 늘고 A형 바이러스 유행…백신 맞아도 감염되는 이유",
+        "source": "진일보 | 전남일보",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBpUk5tY2ExY3NDQW1OR3hobGxaOHk3RUFaMlB5aXpUMUNwQXA2Vzl5b2lxNDQ2amVTdnZ3QmFFLVlBLVp3aHJkNVpjZFA1OUZNRXhkSUtJczZDOFpnTWx5ODRsOUpIdlRUdmpQekl6QQ?oc=5",
+        "date": "2026-11-02T16:00:00.000Z"
       },
       {
-        "title": "소아마비 백신 접종하는 파키스탄 어린이",
-        "source": "뉴시스",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB5RHJkWDZGUHk2RTBsT0MwbmFyeTgwUDFWYmFTd3dsdWZXcllJcHBreExSSVBPV2FmUE1tRVI4eTNZY0stSk5FZl95REphaEptTy03R0lkdVdGZXZLWWt4bQ?oc=5",
-        "date": "2026-11-02T08:18:13.000Z"
+        "title": "GC녹십자, 독감백신 ‘지씨플루’ 콜롬비아 백스테라와 공급계약 체결...592억원 규모",
+        "source": "팍스경제TV",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJUTFVb3pDMHhNU2VsMWhKaE9RSHNFYndBc3NsXzBnZllTdjdPMjJjUXc0bHBsblZKLVRMcnhCakpFWHpZSlV5SXZ5cEJLNkl2M21faENFMU56dTNpX19HQ1BxWGxsZjBF?oc=5",
+        "date": "2026-11-02T15:17:30.000Z"
       },
       {
-        "title": "GC녹십자, 콜롬비아 백스테라와 590억원 규모 독감백신 공급 계약",
-        "source": "뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBBakxZcDFUSTRjaHhoUWpka1BzMmVXVENWMTR5Skc0aHBkb053TjZLWTIyd2FJZTBrOGZmeE9tZEI4ZXNIWkNKLXFFMUMteXdDMDdNcmE0RElOankwN0Y5dw?oc=5",
-        "date": "2026-11-02T08:14:49.000Z"
+        "title": "감염병 백신 강자 SK바사, 차세대 ‘항암백신’ 개발 시동 … 11조 난치암 시장 정조준",
+        "source": "헬스코리아뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1WdFp6NEwyVFpQRk9IWWhrZ3o2Sjc0WFV4SEV6TDdrMWVsLTlPSTk5cDFmc2JoamFwTTY2TVBVY2pDMnBSMDN1c1NBdWVrd3dwTHNlR1VHZkVIZERJN29STENRb2hfaDg?oc=5",
+        "date": "2026-11-02T15:01:00.000Z"
       },
       {
-        "title": "GC녹십자, 콜롬비아에 독감백신 592억원 공급계약…10년간 원액·기술지원",
-        "source": "토요경제",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8wb2xiRU5lU2E1RFN3NXdMaFEtVDVfY2kwaGU5bGg2WmxDdFo4dVhxNG5NUmJUbVBBVWU0U1owNkk1UW1hLVBBMU91YmNFWDRNUnBzUTNTMkpTS3lBeEZyYXRNUnhCZnZHcHhkVHBKSdIBb0FVX3lxTE8wb2xiRU5lU2E1RFN3NXdMaFEtVDVfY2kwaGU5bGg2WmxDdFo4dVhxNG5NUmJUbVBBVWU0U1owNkk1UW1hLVBBMU91YmNFWDRNUnBzUTNTMkpTS3lBeEZyYXRNUnhCZnZHcHhkVHBKSQ?oc=5",
-        "date": "2026-11-02T08:02:31.000Z"
+        "title": "국내 두 번째 ‘포유류 AI 감염’… 충남 서산 간월호 야생 삵서 고병원성 확진",
+        "source": "더경남뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFA4R3BsOFY4UnBwMndYazR3RFdodTRiR3d5VkN1NEd0c2RITHR5eWcyazNacFllNzFncnhsSXlpUEV5clA5eEpfWV9CaTlqaUZFY0RQRg?oc=5",
+        "date": "2026-11-02T14:22:08.000Z"
       },
       {
-        "title": "GC녹십자, 콜롬비아 백스테라와 독감백신 현지 생산 기술지원 및 원액 공급 계약 체결",
-        "source": "한국인포맥스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE56Qk9ycVdBdFlVS1U4MG5jNEtRaEhLYlBWWno4QlpFTjBjb29KNXpodzdpZGVEdnRuYXUwX2lQR1NjN29YdjRQTERGbmo4aFNtem4wNmNaNlpzcmFsRkVDSHRDb25MSHFOQ2ktYQ?oc=5",
-        "date": "2026-11-02T07:43:00.000Z"
+        "title": "보건부는 백신 유효기간 표시 방법에 대한 규정을 연구 및 검토할 예정입니다.",
+        "source": "Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTzkyekVNQlhYZ0NCNC16R2tTdEQ5eHA4bTR4My1TbkpDcDNoQ2d2b0tlWm5vQjUyUG9fOGpTZHpIM1pMd2VfTEJVUVhlWDNOMDBlSXJ6M3Bwc3BFWDRrVENsWnctLTdKby0tN2taMkN2Y2x1ZHVfX2RwWHZzWmg1MWxHN3g5dWtPMnk3bGRtQUYxTU9meHVybQ?oc=5",
+        "date": "2026-11-02T13:39:03.000Z"
       },
       {
-        "title": "바바리안 노르딕, 영국 정부와 엠폭스·두창 백신 4년 공급계약",
-        "source": "메디컬투데이",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBkUG5YYzNlM3FKbkVGOE9VZmtZRjRlbzBJdWZQRktnV1ZkX1BGTkFwQXNpMDJKeEVxV2VIQVlmbDUwdm9pMGxxZ2xKS2QtSWVRcjlNWXRBUUV0cHh1TUlCaWNrdFBuNWYtMGhsdA?oc=5",
-        "date": "2026-11-02T07:33:53.000Z"
+        "title": "성남시, 보호아동 해외문화 체험 지원·독감 백신 접종 당부",
+        "source": "컨슈머타임스",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TNjNUakxMLXc3RzV2M2lVUEQyNzF5SkZXMkhIdFlFN0F2Q2ZkcUNRTnJEX0tfdXRBTU5tZ0gxZGtFR3J1am5iclVJRkNvVVo2WGtyVEtSS1pXVVhGV252S0RNVF9FQWRyS0E?oc=5",
+        "date": "2026-11-02T13:22:33.000Z"
       },
       {
-        "title": "조류 넘어 '포유류'까지... 서산 야생 삵서 고병원성 AI 확진",
-        "source": "OhmyNews",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAtdGdVVVphNDRRcVBGWTFHSnpBU2pCZ3lDUXQ3RGN6aXNzdUtKN3kwVjdOU3ZnZ0FVR054UFN4LUdUYkRNS2hsSExXd1JXZDJwNHl3bnRibzdkQWdnZjktdi15cjh4cnlUUC15RzVVR3ZsY09E?oc=5",
-        "date": "2026-11-02T07:24:00.000Z"
+        "title": "동두천시보건소, 경로당 찾아 동절기 감염병 예방교육 실시",
+        "source": "내외뉴스통신",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBwUU5CcE5lYy1jVkZaM3JON3FoWEhXSHY2QTJ2OHl2LUlnSzQySnNEUWF1MnJ3U09fcGdPYlhDSlBBSGdhRkJCakpDOVJFemVIdEhSMmlja3ZNbkpwX09xYnNHMnpUSU9EVWw1StIBcEFVX3lxTE1sMElrTnpyMkM0VjR4Q0NGNTJHSzgzOTNvblJMQjUzZkp6a0MtYnBEeUdES1l4UnlvYkw1NlBlUkNlb3RxQjJlLWFMcGFUOTZHLUNqdnBJOHhnTHNKZ2p5MW9YS3pPWk1OLUt2QTZ3b1E?oc=5",
+        "date": "2026-11-02T12:54:09.000Z"
       },
       {
-        "title": "[공시]녹십자, 콜롬비아와 592억원 독감백신 공급계약",
-        "source": "현대경제신문",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TLUJTMFFldmpfRVhGbUlfX0ROSUpOcnhMeF9xTmdJQUdEU0pINFBGaDAwQUM1UWw3TFZuNXhvTWw3UndMU0UydXlJVzh2dHF1Z1JOb0ZIY3lISkd2eHN1T01XVHVzUl9n0gFrQVVfeXFMUFhwam9DNWNqenpyZ25UeEhiMzN1ZlZKaXlIQlFMbzM2bjVGWmF2S0pBTGlvMUlFUkdvNDNwN1FOa0NBRGJacDNXVjZmSHE3T0hzOE5waUQ4Q1pIYWFhZ1g2Zk9OV1ZYMHU4SlU?oc=5",
-        "date": "2026-11-02T07:22:05.000Z"
+        "title": "예방접종 장소가 포화 상태에 이르자 까마우시 질병통제예방센터는 질병 확산 위험을 경고했습니다.",
+        "source": "Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYWM3SjAwY0dQSnJaZ2JKSEV2dERpck9Qd3NWVnlzWWU4X0l0ZU4yVEpSTHdEX3BnalZsdFRHS2dxOXZycU9fTldMZDlYZ0pSdWpRT2ZqQVRQbWNJdHAyR1VJVGZoWExBOXlxTWQ3OGhXdklMb0txbkRCeWZ0SlhUMVpuRTdZdExoVWFCdw?oc=5",
+        "date": "2026-11-02T12:17:06.000Z"
       }
     ]
   }
