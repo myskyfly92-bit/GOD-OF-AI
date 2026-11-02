@@ -267,11 +267,31 @@ function isQuestionOnly(n) {
 // (예: 2026-09-30~10-03 '주권의 날' 휴무 기사가 11-01 에 akhbarak 에 다시 올라와 '다음 수요일~토요일' = 11-04~07 로 잘못 계산됨)
 const REPOST_SRC = /akhbarak|اخبارك|hathalyoum|هذا اليوم|nabd|نبض|alssaa|السعة/i;
 // 이미 지난 날짜로 정해진 휴무 이름 — 게시일이 이보다 7일 넘게 늦으면 지난 기사로 본다
+// 처음 돌 때 쓸 지난 휴무 기록 (이후에는 iraq-issues.json 의 holLog 를 이어서 쓴다)
+const HOL_LOG_SEED = [{ reason: "주권의 날", dates: ["2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03"], link: "https://altaakhi.net/2026/09/287088/" }];
 const PAST_HOL = [{ re: /يوم السيادة|أيام السيادة|sovereignty day|주권의 날/i, date: "2026-09-30" }];
 function staleHoliday(n) {
   const txt = [n.title, n.titleKo, n.body].join(" "), pub = String(n.date || "").slice(0, 10);
   if (REPOST_SRC.test(String(n.source || "") + " " + String(n.link || "")) && (Number(n.count) || 1) < 2) return true;
   return PAST_HOL.some((h) => h.re.test(txt) && pub && (new Date(pub) - new Date(h.date)) / 864e5 > 7);
+}
+// 휴무 확인 단계: 정부·국영 통신(공식) 이거나, 서로 다른 언론사 2곳 이상이 같은 내용을 보도해야 '확인'
+// 1곳뿐이면 달력에 '미확인'으로만 표시하고 팝업은 띄우지 않는다 (나중에 보도가 늘면 자동으로 '확인'으로 바뀜)
+const OFFICIAL = /ina\.iq|cabinet\.iq|pmo\.iq|gov\.iq|وكالة الأنباء العراقية|وكالة الانباء العراقية|\(واع\)|مجلس الوزراء|الأمانة العامة/i;
+const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return ""; } };
+function holVerify(n) {
+  const all = [n].concat(n.related || []);
+  const hosts = new Set(all.map((x) => hostOf(x.link)).filter((h) => h && !/news\.google/.test(h)));
+  const srcs = new Set(all.map((x) => String(x.source || "").trim()).filter(Boolean));
+  const official = all.some((x) => OFFICIAL.test(String(x.source || "") + " " + String(x.link || "")));
+  const nSrc = Math.max(hosts.size, srcs.size, Number(n.count) || 1);
+  return { verified: official || nSrc >= 2, sources: nSrc, official };
+}
+// 같은 사유의 휴무가 최근 1년 안에 이미 있었고 그 날짜가 기사 게시일보다 7일 넘게 앞이면 → 옛 기사 재게시로 본다
+const sameReason = (a, b) => String(a || "").replace(/\s+/g, "") === String(b || "").replace(/\s+/g, "");
+function repeatOfPast(hol, n, log) {
+  const pub = String(n.date || "").slice(0, 10);
+  return (log || []).some((e) => sameReason(e.reason, hol.reason) && !hol.dates.some((d) => (e.dates || []).includes(d)) && (e.dates || []).every((d) => (new Date(pub) - new Date(d)) / 864e5 > 7));
 }
 // 갑작스러운 휴무 기사 → 날짜·사유·범위를 AI로 뽑아 달력에 올린다 (키 없으면 건너뜀)
 async function extractHoliday(n) {
@@ -285,8 +305,8 @@ async function extractHoliday(n) {
       method: "POST",
       headers: { "content-type": "application/json", "x-api-key": CLAUDE_KEY, "anthropic-version": "2023-06-01" },
       body: JSON.stringify({ model: CLAUDE_MODEL, max_tokens: 300, temperature: 0,
-        system: "이라크 관공서 휴무(공휴일·업무 중단) 발표 기사에서 정보를 뽑는다. JSON 한 줄만 출력한다. 정부·주정부가 휴무를 실제로 결정·발표했다고 기사에 분명히 나온 경우만 뽑고, 질문형 제목('~은 휴일인가?')만 있고 결정 내용이 안 보이거나, 휴무가 아니라는 내용이거나, 정기 주말(금·토)이면 null.",
-        messages: [{ role: "user", content: `기사 게시일: ${pub} (이라크 시간 기준, '내일'·'일요일' 같은 말은 이 날짜 기준으로 계산)\n\n${text}\n\n다음 형식으로 답해: {"dates":["YYYY-MM-DD"],"reason":"휴무 사유를 한국어 12자 안으로 (예: 파티마 순교일, 이맘 카딤 추모일, 선거일)","scope":"전국" 또는 "일부 주","provinces":["바그다드","키르쿠크"],"baghdad":true/false/null}` }] }),
+        system: "이라크 관공서 휴무(공휴일·업무 중단) 발표 기사에서 정보를 뽑는다. JSON 한 줄만 출력한다. 정부·주정부가 휴무를 실제로 결정·발표했다고 기사에 분명히 나온 경우만 뽑고, 질문형 제목('~은 휴일인가?')만 있고 결정 내용이 안 보이거나, 휴무가 아니라는 내용이거나, 정기 주말(금·토)이면 null. 기사에 적힌 구체적인 날짜(예: '30 أيلول', '3 تشرين الأول')는 stated 에 그대로 옮기고, 그 날짜가 게시일보다 이미 지났으면 다시 올린 옛 기사이니 null.",
+        messages: [{ role: "user", content: `기사 게시일: ${pub} (이라크 시간 기준, '내일'·'일요일' 같은 말은 이 날짜 기준으로 계산)\n\n${text}\n\n다음 형식으로 답해: {"stated":["기사에 숫자로 적힌 날짜를 YYYY-MM-DD 로 (없으면 빈 배열)"],"dates":["YYYY-MM-DD"],"reason":"휴무 사유를 한국어 12자 안으로 (예: 파티마 순교일, 이맘 카딤 추모일, 선거일)","scope":"전국" 또는 "일부 주","provinces":["바그다드","키르쿠크"],"baghdad":true/false/null}` }] }),
     });
     const j = await res.json().catch(() => ({}));
     if (!res.ok) return null;
@@ -294,6 +314,12 @@ async function extractHoliday(n) {
     const o = t ? JSON.parse(t[0]) : null;
     if (!o || !Array.isArray(o.dates)) return null;
     o.dates = o.dates.filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d));
+    // 기사에 적힌 날짜가 모두 게시일 7일 전보다 앞이면 옛 기사 재게시
+    const st = (Array.isArray(o.stated) ? o.stated : []).filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d));
+    if (st.length && pub && st.every((d) => (new Date(pub) - new Date(d)) / 864e5 > 7)) return null;
+    // 기사에 날짜가 적혀 있는데 계산한 날짜와 하나도 안 겹치면 믿지 않는다
+    if (st.length && !o.dates.some((d) => st.includes(d))) return null;
+    delete o.stated;
     return o.dates.length ? o : null;
   } catch (e) { return null; }
 }
@@ -528,7 +554,7 @@ async function main() {
   }
 
   // 현장 알림 뽑기 (CFG.ALERTS)
-  let alerts, out_ann = null;
+  let alerts, out_ann = null, out_log = null;
   if (CFG.ALERTS) {
     const A = CFG.ALERTS, lim = Date.now() - A.HOURS * 3600000;
     // 지난 휴무 기사를 다시 올린 것(재게시)은 뉴스 목록에서도 뺀다 — '다음 주 휴무'로 잘못 읽히지 않게
@@ -566,23 +592,33 @@ async function main() {
     const bad = (n) => isQuestionOnly(n) || staleHoliday(n);
     const qLinks = new Set(alerts.filter((a) => a.kind === "holiday" && bad(list.find((x) => x.link === a.link) || a)).map((a) => a.link));
     ((prevFile.alerts) || []).forEach((a) => { if (a.kind === "holiday" && bad(a)) qLinks.add(a.link); });
+    // 지나간 휴무 기록 (1년): 같은 사유 휴무가 다시 올라오면 옛 기사 재게시인지 가려내는 데 쓴다
+    const logFrom = new Date(Date.now() - 365 * 864e5).toISOString().slice(0, 10);
+    const holLog = ((prevFile.holLog) || HOL_LOG_SEED).filter((e) => (e.dates || []).some((d) => d >= logFrom));
     const ann = new Map(((prevFile.announcedHolidays) || []).filter((h) => !qLinks.has(h.link)).map((h) => [h.date, h]));
     for (const a of alerts) {
       if (!a.hol) continue;
+      const n = list.find((x) => x.link === a.link) || a;
+      if (repeatOfPast(a.hol, n, holLog)) { console.log("옛 휴무 기사 재게시로 보고 제외:", a.titleKo); a.hol = null; continue; }
+      const vf = holVerify(n);
+      if (!holLog.some((e) => e.link === a.link)) holLog.push({ reason: a.hol.reason, dates: a.hol.dates, link: a.link });
       for (const d of a.hol.dates) {
         if (d < keepFrom || d > keepTo) continue;
         const prov = (a.hol.provinces || []).filter(Boolean);
-        const h = { date: d, reason: a.hol.reason || "휴무 발표", scope: a.hol.scope || "", baghdad: a.hol.baghdad === undefined ? null : a.hol.baghdad, provinces: prov.slice(0, 12), link: a.link };
+        const h = { date: d, reason: a.hol.reason || "휴무 발표", scope: a.hol.scope || "", baghdad: a.hol.baghdad === undefined ? null : a.hol.baghdad, provinces: prov.slice(0, 12), link: a.link, verified: vf.verified, sources: vf.sources };
         const was = ann.get(d);
-        if (!was || (was.scope !== "전국" && (h.scope === "전국" || prov.length > (was.provinces || []).length))) ann.set(d, h);
+        if (was && was.link === h.link) { ann.set(d, Object.assign({}, was, { verified: was.verified || h.verified, sources: Math.max(was.sources || 1, h.sources) })); continue; }
+        if (!was || (!was.verified && h.verified) || (was.scope !== "전국" && (h.scope === "전국" || prov.length > (was.provinces || []).length))) ann.set(d, h);
       }
     }
     out_ann = [...ann.values()].filter((h) => h.date >= keepFrom).sort((x, y) => x.date.localeCompare(y.date));
+    out_log = holLog.slice(-60);
     console.log(`현장 알림 ${alerts.length}건`, alerts.map((a) => a.kind + ":" + a.titleKo).join(" / "));
   }
   const out = { generatedAt: new Date().toISOString(), items: list };
   if (alerts) out.alerts = alerts;
   if (out_ann) out.announcedHolidays = out_ann;
+  if (out_log) out.holLog = out_log;
   // 현장 영향 판단 (이라크 주요 이슈만)
   if (CFG.IMPACT) {
     const { assess, brief } = require("./iraq-impact.js");

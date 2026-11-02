@@ -213,7 +213,7 @@ const iqKo = (n) => IQ_KO[n] || n;
 function iqAnnLabel(h) {
   if (!h) return "";
   const where = h.scope === "전국" ? "전국 휴무" : h.baghdad === true ? "바그다드 휴무" : "일부 주 휴무";
-  return `${h.reason} · ${where}`;
+  return `${h.reason} · ${where}${h.verified === false ? " (미확인)" : ""}`;
 }
 /* 현장 일정 (달력에 금색 점 + 아래 목록에 표시). 새 일정은 여기에 한 줄씩 추가 */
 const SITE_EVENTS = {
@@ -467,6 +467,7 @@ function storeDailyForecastForCalendar(daily) {
         html += `<div class="hol-info">`
           + ((a.provinces || []).length ? `<p><span>쉬는 지역</span>${esc(a.provinces.join(" · "))}${a.baghdad === true ? "" : " <small>(바그다드는 해당 없음)</small>"}</p>` : a.scope === "전국" ? `<p><span>쉬는 지역</span>이라크 전국</p>` : "")
           + (why ? `<p><span>유래</span>${esc(why[1])}</p>` : "")
+          + (a.verified === false ? `<p class="hol-lunar">⚠ 아직 한 곳에서만 보도됐어요 (정부 발표·다른 언론 확인 전). 실제 휴무인지 공지를 확인하세요.${a.link ? ` <a href="${esc(a.link)}" target="_blank" rel="noopener">기사 보기</a>` : ""}</p>` : "")
           + `<p class="hol-site"><span>발표 휴무</span>${esc(IQ_ANN_INFO)}</p></div>`;
       }
       return html;
@@ -494,7 +495,9 @@ function storeDailyForecastForCalendar(daily) {
   const loadAnnounced = () => fetch("iraq-issues.json", { cache: "no-store" }).then((r) => r.ok ? r.json() : null).then((j) => {
     const list = (j && j.announcedHolidays) || [];
     let added = 0;
-    list.forEach((h) => { if (h && h.date && !IQ_HOLIDAYS_2026[h.date]) { const was = IQ_ANNOUNCED[h.date]; if (!was || h.scope === "전국" || (h.provinces || []).length > (was.provinces || []).length) { IQ_ANNOUNCED[h.date] = h; added++; } } });
+    // 서버 목록에서 빠진 발표(가짜로 판명 등)는 달력에서도 내린다
+    Object.keys(IQ_ANNOUNCED).forEach((k) => { if (IQ_ANNOUNCED[k] && IQ_ANNOUNCED[k].link && !list.some((h) => h.date === k)) { delete IQ_ANNOUNCED[k]; added++; } });
+    list.forEach((h) => { if (h && h.date && !IQ_HOLIDAYS_2026[h.date]) { const was = IQ_ANNOUNCED[h.date]; if (!was || h.scope === "전국" || (h.provinces || []).length > (was.provinces || []).length || (was.verified === false && h.verified !== false) || (was.link === h.link && was.verified !== h.verified)) { IQ_ANNOUNCED[h.date] = h; added++; } } });
     if (added) renderCalendar();
   }).catch(() => {}).then(() => holidayPopup());
   loadAnnounced();
@@ -514,7 +517,7 @@ function storeDailyForecastForCalendar(daily) {
       const y = dt.getFullYear(), m = dt.getMonth(), d = dt.getDate(), key = dateKey(y, m, d);
       const items = [];
       const ann = !IQ_HOLIDAYS_2026[key] && IQ_ANNOUNCED[key];
-      if (ann) items.push({ k: "iq", ann, pk: `ann:${key}`, t: iqAnnLabel(ann) });           // 발표 휴무는 날짜가 멀어도 띄움
+      if (ann && ann.verified !== false) items.push({ k: "iq", ann, pk: `ann:${key}`, t: iqAnnLabel(ann) });   // 미확인 휴무는 팝업 없이 달력에만           // 발표 휴무는 날짜가 멀어도 띄움
       if (i <= 3) {                                                                          // 정기 공휴일은 3일 안일 때
         if (IQ_HOLIDAYS_2026[key]) items.push({ k: "iq", en: IQ_HOLIDAYS_2026[key], pk: `iq:${y}:${popBase("iq", IQ_HOLIDAYS_2026[key])}`, t: iqKo(IQ_HOLIDAYS_2026[key]) });
         if (KR_HOLIDAYS_2026[key]) items.push({ k: "kr", pk: `kr:${y}:${popBase("kr", KR_HOLIDAYS_2026[key])}`, t: KR_HOLIDAYS_2026[key] });
