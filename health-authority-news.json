@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T00:08:15.601Z",
+  "generatedAt": "2026-11-02T00:44:50.840Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -15,6 +15,13 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
       "date": "2025-12-16T15:48:42.000Z"
+    },
+    {
+      "title": "- 보건복지부 대표홈페이지",
+      "source": "",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVEZzRzhwNWIxQi11RnVyNkxtTHJPNTZ0QjJ4UzFncFhUYWIxVThKb3RHQVphcFlNc3hHazlxalVvZnFQQ0JNR0cycHdDbnBoTjJMQmhGOTFiQ2R1a1JweVU1a3ctSTF3dS1naU5rWGZpazUyTnk1NkVXb0YyRWdwVkMteGgzWkpnVXV3?oc=5",
+      "date": "2026-10-29T03:17:49.000Z"
     },
     {
       "title": "건강교육 자료실",
@@ -66,25 +73,18 @@
       "date": "2021-11-03T09:42:59.000Z"
     },
     {
+      "title": "고혈압 환자의 식이요법",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV1NzLWpYblhYdm5oVENxQlZLc3ludkNsaHJQR0J5RUpMSk9FSWdpZTEzVW5CWTEtS3VMalhBUVpEeF8tdnRuMXRqTmJ4Z2laNEV2OE13ZEdlZXFCb1J3WjBBSHdvN2lybkxvV3NYR2tQalZNcTdNbjVwV1h1dXVRQUhPbE9ranJNUUs2YlB4cGZDb0FHMHlKU0NHWWFZT1ItOUlVSHBQNHM2UHVHYXhHNDBnd1BmRVIy?oc=5",
+      "date": "2026-10-29T07:00:00.000Z"
+    },
+    {
       "title": "이달의 건강정보",
       "source": "국가건강정보포털",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNTEg5Mnh5NkFrQVdXUk9rT1ZHVUwwaVQ2dW5XMlNaSmNjMVdLSG94RkZ5R2dTUlhjZDB0d0U3UmZ3dmpHbzAxS0ttVHZTSVNqWmdId0JqNDAzaTc4NGYxUlp2S1hHZDIycEhWeWhSM1FBNmxGX0g2TVVLYWtwNFBJRkZEMDNKQWJrU2xZNndfeXZQSzhOZUN1dXJXaWpQZ3RjUXlSU2Q0MU0xN1gzdEZZbHc5TnU5cE5QRlNwdUd3am5QdjFzekR1eUZPTnptaEJ5U3RjUE9YaFRrNDNXX25LdVl2ZzdYMFpWQVE?oc=5",
       "date": "2026-10-30T06:59:19.000Z"
-    },
-    {
-      "title": "신생아 대사 이상 검사",
-      "source": "국가건강정보포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeU9sMFhCblZWRXFxU1psdXpwWVF4UXpjWEZpeDlmdmFCREZFQ1Rod2tBaTF5TDlVdmhNMVA3OVZlRjBpWTZ1Q2Q1VjFLNXhQaFc5WEl0LXFUdGxwS0lKSkN0eGE5LU0wR2E4eEdKQ3lBMVU0b3h2dTcyZnBZVTdqcUgxcHFmUV9lSElsNExrOEFEZllqN3lzYUU5bW5jSWJnc2U4N0hqc3pJc2FWYk5ZR253ODVjeG5F?oc=5",
-      "date": "2026-10-29T07:00:00.000Z"
-    },
-    {
-      "title": "전자검역을 통한 감염병 대응체계 고도화",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2OW5lNTJXaTNUTmM3eVhNa0F3d2NHQTU4ZWhiTnlRZXJ1M0kwTnBxMFlnUnQwd1UwaGlEeFQwX1hCRl9YRlViN0dGU1R4ZjIyMnBHREln?oc=5",
-      "date": "2025-12-16T14:41:54.000Z"
     }
   ]
 }
