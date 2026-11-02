@@ -263,9 +263,19 @@ function isQuestionOnly(n) {
   const q = /(^|[\s«"'(])هل\s|؟|\?\s*$/.test(t) || /\?\s*$|(인가|일까|인가요|할까)\?/.test(k);
   return q && String(n.body || "").trim().length < 80;
 }
+// 모아 싣기(재게시) 사이트는 지난 기사를 오늘 날짜로 다시 올리는 일이 많다 → 다른 곳 보도 없이 여기만 나온 휴무는 달력에 올리지 않는다
+// (예: 2026-09-30~10-03 '주권의 날' 휴무 기사가 11-01 에 akhbarak 에 다시 올라와 '다음 수요일~토요일' = 11-04~07 로 잘못 계산됨)
+const REPOST_SRC = /akhbarak|اخبارك|hathalyoum|هذا اليوم|nabd|نبض|alssaa|السعة/i;
+// 이미 지난 날짜로 정해진 휴무 이름 — 게시일이 이보다 7일 넘게 늦으면 지난 기사로 본다
+const PAST_HOL = [{ re: /يوم السيادة|أيام السيادة|sovereignty day|주권의 날/i, date: "2026-09-30" }];
+function staleHoliday(n) {
+  const txt = [n.title, n.titleKo, n.body].join(" "), pub = String(n.date || "").slice(0, 10);
+  if (REPOST_SRC.test(String(n.source || "") + " " + String(n.link || "")) && (Number(n.count) || 1) < 2) return true;
+  return PAST_HOL.some((h) => h.re.test(txt) && pub && (new Date(pub) - new Date(h.date)) / 864e5 > 7);
+}
 // 갑작스러운 휴무 기사 → 날짜·사유·범위를 AI로 뽑아 달력에 올린다 (키 없으면 건너뜀)
 async function extractHoliday(n) {
-  if (isQuestionOnly(n)) return null;
+  if (isQuestionOnly(n) || staleHoliday(n)) return null;
   if (!CLAUDE_KEY || claudeOff || claudeCalls >= CLAUDE_MAX_CALLS) return null;
   claudeCalls++;
   const pub = String(n.date || "").slice(0, 10);
@@ -521,6 +531,11 @@ async function main() {
   let alerts, out_ann = null;
   if (CFG.ALERTS) {
     const A = CFG.ALERTS, lim = Date.now() - A.HOURS * 3600000;
+    // 지난 휴무 기사를 다시 올린 것(재게시)은 뉴스 목록에서도 뺀다 — '다음 주 휴무'로 잘못 읽히지 않게
+    for (let i = list.length - 1; i >= 0; i--) {
+      const n = list[i];
+      if (A.holiday.test([n.title, n.titleKo].join(" ")) && staleHoliday(n)) list.splice(i, 1);
+    }
     alerts = [];
     for (const n of list) {
       if (Date.parse(n.date) < lim) continue;
@@ -541,15 +556,16 @@ async function main() {
       if (a.kind !== "holiday") continue;
       const old = prevAl.get(a.link);
       const n = list.find((x) => x.link === a.link) || a;
-      if (isQuestionOnly(n)) { a.hol = null; continue; }
+      if (isQuestionOnly(n) || staleHoliday(n)) { a.hol = null; continue; }
       if (old && old.hol !== undefined) { a.hol = old.hol; continue; }
       a.hol = await extractHoliday(n);
     }
     // 달력용 '발표된 휴무' 목록: 예전 것 + 새로 뽑은 것 (최근 60일·앞으로 30일)
     const keepFrom = new Date(Date.now() - 60 * 864e5).toISOString().slice(0, 10), keepTo = new Date(Date.now() + 30 * 864e5).toISOString().slice(0, 10);
     // 예전에 올렸던 것 중 질문형 기사에서 나온 건 내린다
-    const qLinks = new Set(alerts.filter((a) => a.kind === "holiday" && isQuestionOnly(list.find((x) => x.link === a.link) || a)).map((a) => a.link));
-    ((prevFile.alerts) || []).forEach((a) => { if (a.kind === "holiday" && isQuestionOnly(a)) qLinks.add(a.link); });
+    const bad = (n) => isQuestionOnly(n) || staleHoliday(n);
+    const qLinks = new Set(alerts.filter((a) => a.kind === "holiday" && bad(list.find((x) => x.link === a.link) || a)).map((a) => a.link));
+    ((prevFile.alerts) || []).forEach((a) => { if (a.kind === "holiday" && bad(a)) qLinks.add(a.link); });
     const ann = new Map(((prevFile.announcedHolidays) || []).filter((h) => !qLinks.has(h.link)).map((h) => [h.date, h]));
     for (const a of alerts) {
       if (!a.hol) continue;
