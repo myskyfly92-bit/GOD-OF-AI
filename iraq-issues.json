@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T04:10:33.321Z",
+  "generatedAt": "2026-11-02T04:13:09.937Z",
   "items": [
     {
       "title": "이라크와 사우디아라비아가 공동 석유 수출 파이프라인을 복원하기로 합의했습니다.",
@@ -33,6 +33,31 @@
       }
     },
     {
+      "title": "Iraqi parliament inquiry says PMF brigade blocked Nineveh landowners from building on their own plots",
+      "source": "The Insight International",
+      "link": "https://theinsightinternational.com/nineveh-pmf-brigade-30-blocks-landowners-mosul-parliament-police-november-1/",
+      "date": "2026-11-02T01:53:40.000Z",
+      "lang": "en",
+      "titleKo": "이라크 의회 조사단, PMF 여단이 니네베 지주들의 자신 소유지 건설 방해했다고 지적",
+      "url": "https://theinsightinternational.com/nineveh-pmf-brigade-30-blocks-landowners-mosul-parliament-police-november-1/",
+      "body": "A parliamentary investigation found that checkpoints run by the PMF's Brigade 30 unlawfully kept deed holders off land in Qara Fakhra and Jiliokhan near Mosul. Parliament has asked for police to take over security.\nMOSUL, November 1, 2026. An Iraqi parliamentary investigation has found that a Popular Mobilization Forces unit unlawfully stopped residents near Mosul from building on land they legally own.\nThe inquiry said checkpoints run by Brigade 30, known as the Shabak brigade, kept deed holders off their plots in Qara Fakhra and Jiliokhan. It also said the brigade obstructed a road-paving project in Jiliokhan, which forced authorities to move it.\nParliament approved the committee’s recommendations in late October. Lawmakers asked the commander in chief to hand security in the two areas, and other districts inside Mosul’s municipal boundaries, to the interior ministry’s local police.",
+      "bodyKo": "**의회, 모술 인근 PMF 부대의 불법 토지 점거 적발**\n\n의회 조사에서 PMF 30여단이 운영하는 검문소가 모술 인근 카라 파크라와 질리오칸 지역의 토지 소유자들을 불법으로 진입 차단한 것으로 드러났다. 의회는 경찰이 보안을 인수할 것을 요청했다.\n\n모술, 2026년 11월 1일. 이라크 의회 조사에서 인민동원군 산하 부대가 모술 인근 주민들이 법적으로 소유한 토지에 건설하는 것을 불법으로 저지한 것으로 밝혀졌다.\n\n조사 결과에 따르면 샤박 여단으로 알려진 30여단이 운영하는 검문소가 카라 파크라와 질리오칸의 토지 소유자들을 자신의 필지에 진입하지 못하도록 막았다. 또한 이 여단이 질리오칸의 도로 포장 사업을 방해해 당국이 사업 위치를 옮기도록 강요한 것으로도 나타났다.\n\n의회는 10월 말 위원회의 권고안을 승인했다. 의원들은 총사령관에게 두 지역과 모술 시 경계 내 기타 지구의 보안을 내무부 산하 지방경찰에 넘길 것을 요청했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The Insight International"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "모술",
+        "km": 375
+      }
+    },
+    {
       "title": "أسعار صرف الدولار في الأسواق العراقية ليوم الجمعة",
       "source": "موقع كلمة الإخباري",
       "link": "https://kalimaiq.com/news/details/72603",
@@ -43,38 +68,40 @@
       "body": "شهد سعر صرف الدولار الأمريكي مقابل الدينار العراقي صباح اليوم الجمعة انخفاضاً طفيفاً في أسواق العاصمة بغداد مقارنةً بإغلاق تعاملات يوم أمس الخميس، وسط ترقب وحذر...\nوسجّلت بورصتا الكفاح والحارثية الرئيسيتان سعر بيع بلغ 167900 ديناراً لكل 100 دولار، مقابل 168050 ديناراً عند إغلاق يوم أمس الخميس.\nوفي السوق الموازية، سُجّل انخفاض مماثل عن سعر يوم أمس، إذ بلغ سعر شراء الدولار من المواطنين 167900 ديناراً، فيما بلغ سعر بيعه لهم 168000 ديناراً لكل 100 دولار.",
       "bodyKo": "**달러 환율, 바그다드에서 소폭 하락**\n\n금요일 아침 바그다드 시장에서 미국 달러 대 이라크 디나르 환율이 목요일 마감 대비 소폭 하락했으며, 시장은 긴장 속에 주시하고 있다.\n\n주요 거래소인 알카파흐와 알하리시야 거래소는 100달러당 167900디나르의 매도가를 기록했으며, 이는 목요일 마감 시 168050디나르에서 하락한 것이다.\n\n평행시장에서도 전날 대비 유사한 하락세를 보였으며, 국민으로부터의 달러 매입가는 100달러당 167900디나르, 국민에 대한 매도가는 168000디나르로 기록됐다.",
       "tried": true,
-      "count": 6,
+      "count": 10,
       "sources": [
+        "آخر خبر",
         "موقع كلمة الإخباري",
-        "964media",
+        "alghadpress.com",
         "شفق نيوز",
+        "964media",
         "الحدث"
       ],
       "related": [
         {
+          "titleKo": "은행연합회: 중앙은행 달러 보유액 건전하며 환율 안정으로 나아가고 있다",
+          "source": "آخر خبر",
+          "link": "https://a5r5br.net/iraq/local-news/8414293-%D8%B1%D8%A7%D8%A8%D8%B7%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%81-%D8%A7%D8%AD%D8%AA%D9%8A%D8%A7%D8%B7%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%86%D9%83-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A-%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D8%B1%D8%B5%D9%8A%D9%86%D8%A9-%D9%88%D9%86%D8%AA%D8%AC%D9%87-%D9%86%D8%AD%D9%88-%D8%A7%D8%B3%D8%AA%D9%82%D8%B1%D8%A7%D8%B1-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%B5%D8%B1%D9%81-%D9%88%D9%83%D8%A7%D9%84%D8%A9-%D8%A7%D9%84%D8%A7%D9%86%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D9%88%D8%A7%D8%B9"
+        },
+        {
+          "titleKo": "바그다드·아르빌 달러 환율 상승으로 마감",
+          "source": "alghadpress.com",
+          "link": "https://alghadpress.com/122716-.html"
+        },
+        {
+          "titleKo": "169,000에 근접.. 바그다드와 아르빌에서 달러 가격 상승 마감",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%AA%D9%84%D8%A7%D9%85%D8%B3-%D8%A7%D9%84%D9%80169-%D9%84%D9%81%D8%A7-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88-%D8%B1%D8%A8%D9%8A%D9%84-%D8%B9%D9%86%D8%AF-%D8%A7%D9%84-%D8%BA%D9%84%D8%A7%D9%82"
+        },
+        {
+          "titleKo": "은행연합회: 중앙은행, 이라크 외 달러 송금 요청 모두 충족",
+          "source": "موقع كلمة الإخباري",
+          "link": "https://kalimaiq.com/news/details/72738"
+        },
+        {
           "titleKo": "바그다드 법원, 환율 사기 사건에서 1400만 달러 회수",
           "source": "964media",
           "link": "https://en.964media.com/54522/"
-        },
-        {
-          "titleKo": "바그다드 법원, 통화 사기 수사에서 1400만 달러 이상 회수",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/society/Baghdad-court-recovers-14M-in-currency-fraud-probe"
-        },
-        {
-          "titleKo": "이라크, 사기 혐의 두 회사로부터 214억 디나르 회수",
-          "source": "الحدث",
-          "link": "https://www.alhadath.net/iraq/2026/11/01/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B3%D8%AA%D8%B1%D8%AF-214-%D9%85%D9%84%D9%8A%D8%A7%D8%B1-%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D9%85%D9%86-%D8%B4%D8%B1%D9%83%D8%AA%D9%8A%D9%86-%D9%85%D8%AE%D8%A7%D9%84%D9%81%D8%AA%D9%8A%D9%86-%D9%85%D8%AA%D9%87%D9%85%D8%AA%D9%8A%D9%86-%D8%A8%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%8A%D8%A7%D9%84"
-        },
-        {
-          "titleKo": "바그다드·아르빌 시장에서 달러/이라크디나르 환율 상승",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Economy/USD-IQD-climbs-in-Baghdad-and-Erbil-markets-0"
-        },
-        {
-          "titleKo": "바그다드와 아르빌에서 달러 가격 계속 상승",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/amp/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D8%AA%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D9%84%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88-%D8%B1%D8%A8%D9%8A%D9%84-7"
         }
       ],
       "tag": "경제·유가",
@@ -416,8 +443,8 @@
         "Ahram Online",
         "Masrawy",
         "الموقع الرسمي لرئاسة الجمهورية",
-        "Egypt Today",
-        "سانا"
+        "Turkmenportal.com",
+        "Egypt Today"
       ],
       "related": [
         {
@@ -441,9 +468,9 @@
           "link": "https://www.presidency.eg/en/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B1%D8%A6%D8%A7%D8%B3%D9%8A%D8%A9/news01112026-3/"
         },
         {
-          "titleKo": "GCC, 시리아·이라크·레바논의 안정과 주권 지지 재확인",
-          "source": "سانا",
-          "link": "https://sana.sy/en/politics/2354898/"
+          "titleKo": "세르다르 베르디무하메도프, 아메디의 이라크 대통령 당선 축하",
+          "source": "Turkmenportal.com",
+          "link": "https://turkmenportal.com/en/news/100353-turkmenistanyn-prezidenti-yragyn-prezidentini-wezipa-saylanmagy-bilen-gutlady------------------------"
         }
       ],
       "tag": "정치·선거",
@@ -453,6 +480,31 @@
         "act": "",
         "place": "",
         "km": null
+      }
+    },
+    {
+      "title": "دانة غاز ونفط الهلال تبدآن توريد 100 مليون قدم مكعبة قياسية يوميًا من الغاز إلى وزارة الكهرباء العراقية - ارقام : اخبار ومعلومات سوق الأسهم السعودي",
+      "source": "تاسي",
+      "link": "https://www.argaam.com/ar/article/articledetail/id/1925948",
+      "date": "2026-11-01T17:08:18.000Z",
+      "lang": "ar",
+      "titleKo": "할랄 가스·석유, 이라크 전력부에 일일 1억 표준입방피트 가스 공급 시작",
+      "url": "https://www.argaam.com/ar/article/articledetail/id/1925948",
+      "body": "أعلنت شركة دانة غاز، بالتعاون مع شركة نفط الهلال، عن بدء توريد الغاز الطبيعي من حقل خورمور في إقليم كردستان العراق إلى وزارة الكهرباء العراقية في كركو\nأعلنت شركة دانة غاز ، بالتعاون مع شركة نفط الهلال، عن بدء توريد الغاز الطبيعي من حقل خورمور في إقليم كردستان العراق إلى وزارة الكهرباء العراقية في كركوك. وبموجب الاتفاقية الموقعة مع وزارة الكهرباء العراقية في ديسمبر الماضي، ستقوم شركتا دانة غاز ونفط الهلال، بصفتهما المشغلين المشتركين لمشروع غاز کردستان، بتوريد 100 مليون قدم مكعبة قياسية يوميًا من الغاز الطبيعي من منشأة معالجة الغاز في خورمور إلى محطة كهرباء تازة الغازية في كركوك، وذلك لمدة أولية تبلغ عامًا واحدًا، بما يسهم في تعزيز إنتاج الكهرباء وتحسين الخدمات المرتبطة بها في مختلف أنحاء العراق. ووفق بيان مشترك، تدعم هذه العملية استراتيجية الشركتين الرامية إلى توسيع مبيعات الغاز، وذلك عقب استكمال مشروع التوسعة \"خورمور 250\" الذي دخل حيز التشغيل في شهر أكتوبر 2025، وأسهم في زيادة الطاقة الإنتاجية لمنشأة خورمور بنسبة 50% لتصل إلى 750 مليون قدم مكعبة قياسية يوميًا، حيث أتاحت هذه التوسعة للش",
+      "bodyKo": "다나 가스와 할랄 석유가 쿠르디스탄 지역 후르무르 유전에서 생산한 천연가스를 키르쿠크의 이라크 전력부에 공급하기 시작했다고 발표했다. 지난 12월 이라크 전력부와 체결한 협약에 따라 다나 가스와 할랄 석유는 쿠르디스탄 가스 사업의 공동 운영사로서 후르무르 가스처리시설에서 키르쿠크의 타자 가스화력발전소로 일일 1억 표준입방피트의 천연가스를 공급하게 된다. 초기 공급 기간은 1년이며, 이는 이라크 전역의 전력 생산 증대와 관련 서비스 개선에 기여할 것으로 예상된다. 공동 성명에 따르면 이번 조치는 두 회사의 가스 판매 확대 전략을 뒷받침하는 것으로, 2025년 10월에 가동을 시작한 '후르무르 250' 확장 사업 완료 이후 추진되고 있다. 이 확장 사업으로 후르무르시설의 생산 능력이 50% 증가해 일일 7억 5천만 표준입방피트에 도달했으며, 이러한 확장으로 회사들이",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "تاسي"
+      ],
+      "related": [],
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "키르쿠크",
+        "km": 254
       }
     },
     {
@@ -722,31 +774,6 @@
         "act": "",
         "place": "",
         "km": null
-      }
-    },
-    {
-      "title": "تلامس الـ169 ألفاً.. ارتفاع أسعار الدولار في بغداد وأربيل عند الإغلاق",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%AA%D9%84%D8%A7%D9%85%D8%B3-%D8%A7%D9%84%D9%80169-%D9%84%D9%81%D8%A7-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88-%D8%B1%D8%A8%D9%8A%D9%84-%D8%B9%D9%86%D8%AF-%D8%A7%D9%84-%D8%BA%D9%84%D8%A7%D9%82",
-      "date": "2026-11-01T13:25:08.000Z",
-      "lang": "ar",
-      "titleKo": "169,000에 근접.. 바그다드와 아르빌에서 달러 가격 상승 마감",
-      "url": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%AA%D9%84%D8%A7%D9%85%D8%B3-%D8%A7%D9%84%D9%80169-%D9%84%D9%81%D8%A7-%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88-%D8%B1%D8%A8%D9%8A%D9%84-%D8%B9%D9%86%D8%AF-%D8%A7%D9%84-%D8%BA%D9%84%D8%A7%D9%82",
-      "body": "ارتفعت أسعار صرف الدولار الأميركي، عصر اليوم الأحد، في أسواق العاصمة بغداد، وفي أربيل عاصمة إقليم كوردستان، عند الإغلاق.\nوقال مراسل وكالة شفق نيوز إن أسعار الدولار في بورصتي الكفاح والحارثية ببغداد ارتفعت بشكل طفيف، لتسجل 168300 دينار عراقي مقابل كل 100 دولار، فيما سجلت صباح اليوم 168250 ديناراً مقابل 100 دولار.\nوأشار مراسلنا إلى أن أسعار البيع في محال الصيرفة بالأسواق المحلية في بغداد استقرت، إذ بلغ سعر البيع 168750 ديناراً مقابل 100 دولار، بينما سجل سعر الشراء 167750 ديناراً مقابل 100 دولار.\nوفي أربيل، ارتفعت أسعار الدولار أيضاً، لتسجل 168450 ديناراً لكل 100 دولار للبيع، و168350 ديناراً مقابل 100 دولار للشراء.",
-      "bodyKo": "**달러 환율 상승, 바그다드·아르빌서 마감시 인상**\n\n미국 달러 환율이 일요일 오후 수도 바그다드와 쿠르디스탄 자치지역 수도 아르빌의 시장에서 마감시 상승했다.\n\n샤팍뉴스 통신 특파원은 바그다드의 알카파 거래소와 알하리시야 거래소의 달러 환율이 소폭 상승해 100달러당 168,300 이라크 디나르를 기록했다고 전했다. 같은 날 오전에는 100달러당 168,250 디나르였다.\n\n특파원은 바그다드 지역 시장의 환전소 판매 환율이 안정세를 보였으며, 판매 환율은 100달러당 168,750 디나르, 매입 환율은 100달러당 167,750 디나르를 기록했다고 지적했다.\n\n아르빌에서도 달러 환율이 상승해 판매 환율은 100달러당 168,450 디나르, 매입 환율은 100달러당 168,350 디나르를 기록했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
       }
     },
     {
@@ -1093,11 +1120,21 @@
       "date": "2026-11-01T06:39:13.000Z",
       "lang": "en",
       "titleKo": "이라크 내무부 장관, 키르쿠크 보안 조치 점검",
-      "count": 1,
+      "url": "https://shafaq.com/en/Security/Iraqi-Interior-Minister-reviews-Kirkuk-security-measures",
+      "body": "Shafaq News- Kirkuk Iraqi Interior Minister Yasser Sukhail al-Maliki arrived in Kirkuk on Sunday to discuss security challenges and efforts to strengthen stability across the province. A Shafaq New\nA Shafaq News correspondent reported that Kirkuk Governor and State Minister Mohammed Samaan Agha welcomed al-Maliki at Kirkuk International Airport. The minister later met with several lawmakers to discuss public services, and key issues facing the province.\nDuring his visit, al-Maliki is also scheduled to meet with security commanders to review the situation in Kirkuk and its surrounding districts, assess the performance of security forces, and consider measures to bolster stability.\nHis visit comes hours after Deputy Chief of Staff for Operations Lieutenant General Saad Harbiya and Ground Forces Commander Lieutenant General Qasim Mohammed Saleh al-Mohammadi traveled to the province, where they inspected military deployments, assessed troop readiness, and reviewed security measures across ",
+      "bodyKo": "내무부 장관 야세르 수카일 알말리키, 키르쿠크 보안 강화 논의 방문\n\n샤팍뉴스 특파원 보도에 따르면 야세르 수카일 알말리키 내무부 장관이 일요일 키르쿠크에 도착해 보안 과제와 주 전역의 안정성 강화 노력을 논의했다. 키르쿠크 주지사이자 국무장관인 무함마드 사마안 아가가 키르쿠크 국제공항에서 알말리키 장관을 환영했다. 장관은 이후 여러 의원들과 만나 공공 서비스와 주가 직면한 주요 현안을 논의했다.\n\n방문 기간 알말리키 장관은 보안 사령관들과도 만나 키르쿠크와 인근 지역의 상황을 검토하고, 보안군의 성과를 평가하며, 안정성을 강화하기 위한 조치를 검토할 예정이다.\n\n그의 방문은 참모총장 부직 작전담당 사아드 하르비야 중장과 지상군 사령관 카심 무함마드 살레 알무함마디 중장이 주에 도착해 군 배치를 점검하고, 부대 전력을 평가하며, 전역의 보안 조치를 검토한 지 수 시간 후에 이루어졌다.",
+      "tried": true,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "이라크 내무부 장관, 키르쿠크 보안 조치 점검",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Security/Iraqi-Interior-Minister-reviews-Kirkuk-security-measures"
+        }
+      ],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -1105,11 +1142,7 @@
         "act": "",
         "place": "키르쿠크",
         "km": 254
-      },
-      "url": "https://shafaq.com/en/Security/Iraqi-Interior-Minister-reviews-Kirkuk-security-measures",
-      "body": "Shafaq News- Kirkuk Iraqi Interior Minister Yasser Sukhail al-Maliki arrived in Kirkuk on Sunday to discuss security challenges and efforts to strengthen stability across the province. A Shafaq New\nA Shafaq News correspondent reported that Kirkuk Governor and State Minister Mohammed Samaan Agha welcomed al-Maliki at Kirkuk International Airport. The minister later met with several lawmakers to discuss public services, and key issues facing the province.\nDuring his visit, al-Maliki is also scheduled to meet with security commanders to review the situation in Kirkuk and its surrounding districts, assess the performance of security forces, and consider measures to bolster stability.\nHis visit comes hours after Deputy Chief of Staff for Operations Lieutenant General Saad Harbiya and Ground Forces Commander Lieutenant General Qasim Mohammed Saleh al-Mohammadi traveled to the province, where they inspected military deployments, assessed troop readiness, and reviewed security measures across",
-      "bodyKo": "내무부 장관 야세르 수카일 알말리키, 키르쿠크 보안 강화 논의 방문\n\n샤팍뉴스 특파원 보도에 따르면 야세르 수카일 알말리키 내무부 장관이 일요일 키르쿠크에 도착해 보안 과제와 주 전역의 안정성 강화 노력을 논의했다. 키르쿠크 주지사이자 국무장관인 무함마드 사마안 아가가 키르쿠크 국제공항에서 알말리키 장관을 환영했다. 장관은 이후 여러 의원들과 만나 공공 서비스와 주가 직면한 주요 현안을 논의했다.\n\n방문 기간 알말리키 장관은 보안 사령관들과도 만나 키르쿠크와 인근 지역의 상황을 검토하고, 보안군의 성과를 평가하며, 안정성을 강화하기 위한 조치를 검토할 예정이다.\n\n그의 방문은 참모총장 부직 작전담당 사아드 하르비야 중장과 지상군 사령관 카심 무함마드 살레 알무함마디 중장이 주에 도착해 군 배치를 점검하고, 부대 전력을 평가하며, 전역의 보안 조치를 검토한 지 수 시간 후에 이루어졌다.",
-      "tried": true
+      }
     },
     {
       "title": "الأزمة المالية في العراق.. مخاطر إغلاق هرمز تتصاعد ولا طباعة جديدة للعملة",
@@ -1235,172 +1268,10 @@
         "place": "",
         "km": null
       }
-    },
-    {
-      "title": "اعتقال متهم بجيرمة قتل في بغداد",
-      "source": "شبكة تواصل الإخبارية",
-      "link": "https://twaslnews1.twaslnews.com/6930761/",
-      "date": "2026-10-31T21:15:13.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드에서 살인 혐의자 체포",
-      "url": "https://twaslnews1.twaslnews.com/6930761/",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "شبكة تواصل الإخبارية"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "2026 바그다드 패션 위크",
-      "source": "Vietnam.vn",
-      "link": "https://www.vietnam.vn/ko/tuan-le-thoi-trang-baghdad-2026",
-      "date": "2026-10-31T21:07:08.000Z",
-      "lang": "ko",
-      "titleKo": "2026 바그다드 패션 위크",
-      "url": "https://www.vietnam.vn/ko/tuan-le-thoi-trang-baghdad-2026",
-      "body": "(HTV) - 이라크에서 바그다드 패션 위크 2026이 개막하여 이라크와 레바논 출신의 디자이너 16명이 메소포타미아 지역의 문화적 정체성과 현대적인 스타일을 결합한 컬렉션을 선보였습니다.\n0 이라크에서 바그다드 패션 위크 2026이 개막했습니다. 이번 행사에는 이라크의 유명 디자이너 15명과 레바논의 유명 초청 디자이너 1명이 참여하여 독창적인 컬렉션을 선보입니다.\n이라크 모델들은 다채로운 의상을 선보였습니다. 화려한 이브닝 가운과 정교하게 장식된 웨딩드레스부터 메소포타미아 문화의 융합을 반영하는 소박하면서도 우아하고 현대적인 디자인까지 다양했습니다.\n바그다드 패션 위크 조직위원회 소속 니브라스 알 가님은 \"바그다드 패션쇼는 이라크 디자이너들을 지원하는 데 매우 중요한 역할을 합니다. 이라크 디자이너들의 재능은 정말 뛰어나지만, 이라크의 수공예품과 디자이너들은 아직 마땅히 받아야 할 관심을 받지 못하고 있습니다.\"라고 말했습니다.\n올해로 5회째를 맞는 바그다드 패션 위크는 이라크 디자이너와 모델들이 자신감 있게 재능을 선보이고 창의적인 감각을 세계 에 알릴 수 있는 기회를 제공합니다.",
-      "bodyKo": "(HTV) - 이라크에서 바그다드 패션 위크 2026이 개막하여 이라크와 레바논 출신의 디자이너 16명이 메소포타미아 지역의 문화적 정체성과 현대적인 스타일을 결합한 컬렉션을 선보였습니다.\n0 이라크에서 바그다드 패션 위크 2026이 개막했습니다. 이번 행사에는 이라크의 유명 디자이너 15명과 레바논의 유명 초청 디자이너 1명이 참여하여 독창적인 컬렉션을 선보입니다.\n이라크 모델들은 다채로운 의상을 선보였습니다. 화려한 이브닝 가운과 정교하게 장식된 웨딩드레스부터 메소포타미아 문화의 융합을 반영하는 소박하면서도 우아하고 현대적인 디자인까지 다양했습니다.\n바그다드 패션 위크 조직위원회 소속 니브라스 알 가님은 \"바그다드 패션쇼는 이라크 디자이너들을 지원하는 데 매우 중요한 역할을 합니다. 이라크 디자이너들의 재능은 정말 뛰어나지만, 이라크의 수공예품과 디자이너들은 아직 마땅히 받아야 할 관심을 받지 못하고 있습니다.\"라고 말했습니다.\n올해로 5회째를 맞는 바그다드 패션 위크는 이라크 디자이너와 모델들이 자신감 있게 재능을 선보이고 창의적인 감각을 세계 에 알릴 수 있는 기회를 제공합니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Vietnam.vn"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "47 قتيلاً على الأقل في تفجير انتحاري استهدف نقطة تفتيش جنوب بغداد",
-      "source": "الشرق الأوسط",
-      "link": "http://aawsat.com/home/article/585306/47-%D9%82%D8%AA%D9%8A%D9%84%D8%A7%D9%8B-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A3%D9%82%D9%84-%D9%81%D9%8A-%D8%AA%D9%81%D8%AC%D9%8A%D8%B1-%D8%A7%D9%86%D8%AA%D8%AD%D8%A7%D8%B1%D9%8A-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D9%81-%D9%86%D9%82%D8%B7%D8%A9-%D8%AA%D9%81%D8%AA%D9%8A%D8%B4-%D8%AC%D9%86%D9%88%D8%A8-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF?platform=hootsuite",
-      "date": "2026-10-31T20:28:14.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 남부 검문소 자살폭탄 공격으로 최소 47명 사망",
-      "url": "http://aawsat.com/home/article/585306/47-%D9%82%D8%AA%D9%8A%D9%84%D8%A7%D9%8B-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A3%D9%82%D9%84-%D9%81%D9%8A-%D8%AA%D9%81%D8%AC%D9%8A%D8%B1-%D8%A7%D9%86%D8%AA%D8%AD%D8%A7%D8%B1%D9%8A-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D9%81-%D9%86%D9%82%D8%B7%D8%A9-%D8%AA%D9%81%D8%AA%D9%8A%D8%B4-%D8%AC%D9%86%D9%88%D8%A8-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF?platform=hootsuite",
-      "body": "قتل 47 شخصاً وجرح أكثر من 70 آخرين على الأقل صباح اليوم (الأحد)، في تفجير انتحاري بواسطة شاحنة صهريج عند نقطة تفتيش للشرطة العراقية، في مدينة الحلة، كبرى مدن محافظة بابل جنوب بغداد، حسبما أفاد مسؤول أمني عراقي. وأوضح فلاح الراضي، رئيس اللجنة الأمنية بالمنطقة، أن أكثر من 60 شخصاً نقلوا من موقع الانفجار إلى مستشفيات قريبة، مضيفاً: \"انه أكبر تفجير في الحلة حتى اليوم\"، فيما أكد طبيب في مستشفى الحلة حصيلة الضحايا. وكانت الشرطة العراقية، أعلنت في وقت سابق مقتل 29 شخصاً في التفجير الدامي. وأشار الراضي، إلى أن الانتحاري نفذ الهجوم بواسطة شاحنة مفخخة وسط الحاجز الذي كان مكتظاً بسيارات العابرين الخاضعة",
-      "bodyKo": "**힐라 경찰 검문소 자살폭탄 공격으로 47명 사망**\n\n오늘(일요일) 아침 바그다드 남쪽 바빌 주의 주요 도시인 힐라에서 탱크로리 자살폭탄이 이라크 경찰 검문소를 공격해 47명이 사망하고 최소 70명 이상이 부상했다고 이라크 보안 관계자가 전했다. 지역 보안위원회 위원장 팔라흐 알라디는 폭발 현장에서 60명 이상이 인근 병원으로 옮겨졌다고 설명하며 \"힐라에서 지금까지 가장 큰 폭발\"이라고 덧붙였다. 힐라 병원의 한 의사도 사상자 규모를 확인했다. 이라크 경찰은 앞서 이번 유혈 폭발로 29명이 사망했다고 발표한 바 있다. 알라디는 자살폭탄이 통행 차량으로 가득 찬 검문소 중앙에서 폭탄 장치 트럭으로 공격을 감행했다고 지적했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "الشرق الأوسط"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "r",
-        "line": "현장 가까운 치안 사건 (바그다드)",
-        "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "العراق اليوم|غضب محلي من إغلاق \"منفذ الشيب الحدودي\"، ضغوط أميركية لتضييق الخناق على طهران",
-      "source": "تسنیم",
-      "link": "https://www.tasnimnews.ir/ar/news/2026/10/31/3736993/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%DB%8C%D9%88%D9%85-%D8%BA%D8%B6%D8%A8-%D9%85%D8%AD%D9%84%DB%8C-%D9%85%D9%86-%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%DB%8C%D8%A8-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%DB%8C-%D8%B6%D8%BA%D9%88%D8%B7-%D8%A3%D9%85%DB%8C%D8%B1%DA%A9%DB%8C%D8%A9-%D9%84%D8%AA%D8%B6%DB%8C%DB%8C%D9%82-%D8%A7%D9%84%D8%AE%D9%86%D8%A7%D9%82-%D8%B9%D9%84%D9%89-%D8%B7%D9%87%D8%B1%D8%A7%D9%86",
-      "date": "2026-10-31T18:31:26.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 오늘|국경 통로 셰이브 폐쇄에 지역 분노, 테헤란 압박 강화하는 미국의 압력",
-      "url": "https://www.tasnimnews.ir/ar/news/2026/10/31/3736993/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%DB%8C%D9%88%D9%85-%D8%BA%D8%B6%D8%A8-%D9%85%D8%AD%D9%84%DB%8C-%D9%85%D9%86-%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%DB%8C%D8%A8-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%DB%8C-%D8%B6%D8%BA%D9%88%D8%B7-%D8%A3%D9%85%DB%8C%D8%B1%DA%A9%DB%8C%D8%A9-%D9%84%D8%AA%D8%B6%DB%8C%DB%8C%D9%82-%D8%A7%D9%84%D8%AE%D9%86%D8%A7%D9%82-%D8%B9%D9%84%D9%89-%D8%B7%D9%87%D8%B1%D8%A7%D9%86",
-      "body": "أثار قرار الحكومة العراقية إغلاق منفذ الشيب الحدودي مع إيران تداعيات سياسية واقتصادية وأمنية، بعدما خرج محتجون في محافظة ميسان.",
-      "bodyKo": "이라크 정부의 이란 국경 셰이브 통로 폐쇄 결정이 미산 주에서 시위대가 나타난 후 정치·경제·안보 파장을 일으켰다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "تسنیم"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "아마라(마이산)",
-        "km": 280
-      }
-    },
-    {
-      "title": "US struggles to evacuate American personnel from facilities under fire in Iraq: Officials",
-      "source": "Breaking News, Latest News and Videos",
-      "link": "https://abcnews.com/International/us-struggles-evacuate-american-personnel-facilities-fire-iraq/story?id=130981420",
-      "date": "2026-10-31T18:27:18.000Z",
-      "lang": "en",
-      "titleKo": "미국, 이라크 공격받는 시설에서 미국 인원 철수 어려움 겪어: 관계자",
-      "url": "https://abcnews.com/International/us-struggles-evacuate-american-personnel-facilities-fire-iraq/story?id=130981420",
-      "body": "Some U.S. staff were flown out by the British air force, officials said.\nIn the nearly 10 days since the State Department directed non-emergency government employees to leave Iraq amid the war with Iran, the U.S. has struggled to remove all personnel impacted by the order from potential danger, two U.S. officials tell ABC News.\nOfficials say U.S. diplomatic missions across the Middle East were given little warning in the run up to the strikes, and that even though conditions in countries like Iraq quickly deteriorated to a point where an ordered departure for non-emergency personnel would be expected, days passed before the orders were formally issued.\nMilitary flights to remove personnel from Baghdad, where the U.S. embassy is located, were delayed by several days after the order was issued due to hazardous security conditions, the officials said.",
-      "bodyKo": "일부 미국 직원들은 영국 공군에 의해 수송되었다고 관계자들이 밝혔다.\n국무부가 이란과의 전쟁 와중에 비상근무가 아닌 정부 직원들의 이라크 출국을 지시한 지 거의 10일이 지난 가운데, 미국은 이 지시의 영향을 받은 모든 인원을 잠재적 위험에서 제거하는 데 어려움을 겪고 있다고 두 명의 미국 관계자가 ABC뉴스에 전했다.\n관계자들은 중동 전역의 미국 외교 공관들이 공격 직전에 거의 경고를 받지 못했으며, 이라크 같은 국가들의 상황이 비상근무가 아닌 인원의 출국 지시가 예상될 정도로 빠르게 악화되었음에도 불구하고 공식 지시가 내려지기까지 며칠이 경과했다고 말했다.\n미국 대사관이 위치한 바그다드에서 인원을 제거하기 위한 군용 비행기는 위험한 보안 상황으로 인해 지시 발령 후 며칠간 지연되었다고 관계자들이 밝혔다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Breaking News, Latest News and Videos"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 사건 — 발생 지역 확인 필요",
-        "act": "바그다드 인근이면 보안팀 확인",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq registers over 8,700 firearms in one week as registration deadline nears",
-      "source": "Rudaw",
-      "link": "https://www.rudaw.net/english/categories/iraq/1079966",
-      "date": "2026-10-31T18:26:09.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 등록 기한 임박하자 1주일간 8700정 이상 총기 등록",
-      "url": "https://www.rudaw.net/english/categories/iraq/1079966",
-      "body": "Iraqi authorities registered 8,731 privately owned firearms over the past week, the Security Media Cell (SMC) announced Saturday, as a year-end deadline for registering personal weapons approaches.",
-      "bodyKo": "이라크 당국이 지난 한 주간 민간인 소유 총기 8,731정을 등록했다고 보안언론실(SMC)이 토요일 발표했다. 개인 무기 등록 연말 기한이 다가오고 있는 가운데서의 조치다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
     }
   ],
   "alerts": [],
   "announcedHolidays": [],
-  "brief": [
-    {
-      "lv": "y",
-      "titleKo": "이라크 암시장 환율, 공식환율에 접근할 것: 부총리",
-      "line": "디나르 환율 조정 — 현지 인력 급여 환산·현지 구매 단가 영향 가능",
-      "act": "현지 구매·용역 단가와 급여 환전 기준 확인",
-      "km": 338,
-      "link": "https://thenewregion.com/posts/6985",
-      "date": "2026-11-01T19:03:42.000Z",
-      "more": 0
-    }
-  ],
   "holLog": [
     {
       "reason": "주권의 날",
@@ -1411,6 +1282,18 @@
         "2026-10-03"
       ],
       "link": "https://altaakhi.net/2026/09/287088/"
+    }
+  ],
+  "brief": [
+    {
+      "lv": "y",
+      "titleKo": "이라크 암시장 환율, 공식환율에 접근할 것: 부총리",
+      "line": "디나르 환율 조정 — 현지 인력 급여 환산·현지 구매 단가 영향 가능",
+      "act": "현지 구매·용역 단가와 급여 환전 기준 확인",
+      "km": 338,
+      "link": "https://thenewregion.com/posts/6985",
+      "date": "2026-11-01T19:03:42.000Z",
+      "more": 0
     }
   ]
 }
