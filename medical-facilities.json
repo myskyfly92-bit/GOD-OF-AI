@@ -5,7 +5,7 @@
   "lon": 44.618
  },
  "radiusKm": 45,
- "updatedAt": "2026-10-26T07:49:24.323604+00:00",
+ "updatedAt": "2026-11-02T09:30:42.941720+00:00",
  "items": [
   {
    "id": "node/9547504717",
@@ -631,7 +631,7 @@
   {
    "id": "node/14318122698",
    "name": "عيادة الزعفرانية الطبية",
-   "nameEn": "",
+   "nameEn": "Al Zaafaraniyah Medical Clinic",
    "nameAr": "عيادة الزعفرانية الطبية",
    "kind": "clinic",
    "own": "",
@@ -643,6 +643,7 @@
    "lat": 33.263545,
    "lon": 44.477356,
    "km": 15.3,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -816,7 +817,7 @@
   {
    "id": "node/14265074003",
    "name": "مجمع روعة بغداد الطبي / عيادة R&B",
-   "nameEn": "",
+   "nameEn": "Rawa'at Baghdad Medical Complex / R&B Clinic",
    "nameAr": "مجمع روعة بغداد الطبي / عيادة R&B",
    "kind": "doctors",
    "own": "",
@@ -828,6 +829,7 @@
    "lat": 33.300836,
    "lon": 44.493394,
    "km": 16.7,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -1576,7 +1578,7 @@
    "km": 19.6,
    "enAuto": true,
    "spec": [],
-   "roadKm": 29.3,
+   "roadKm": 29.2,
    "min": 25
   },
   {
@@ -2330,7 +2332,7 @@
   {
    "id": "node/11663199510",
    "name": "الدكتور علي الجميلي",
-   "nameEn": "",
+   "nameEn": "Dr. Ali Al-Jumaili",
    "nameAr": "الدكتور علي الجميلي",
    "kind": "doctors",
    "own": "",
@@ -2342,6 +2344,7 @@
    "lat": 33.247729,
    "lon": 44.397008,
    "km": 21.4,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -2506,7 +2509,7 @@
   {
    "id": "node/11917645669",
    "name": "المركز الطبي الانكليزي",
-   "nameEn": "",
+   "nameEn": "English Medical Center",
    "nameAr": "المركز الطبي الانكليزي",
    "kind": "clinic",
    "own": "",
@@ -2518,6 +2521,7 @@
    "lat": 33.311698,
    "lon": 44.433869,
    "km": 21.6,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -4857,7 +4861,7 @@
    "own": "",
    "emergency": false,
    "beds": "",
-   "phone": "",
+   "phone": "0776 050 7060",
    "website": "",
    "addr": "",
    "lat": 33.305427,
@@ -5136,7 +5140,7 @@
   {
    "id": "way/954717506",
    "name": "مركز الشهيد ابو منتظر المحمداوي",
-   "nameEn": "",
+   "nameEn": "Martyr Abu Muntadir al-Muhammadawi Centre",
    "nameAr": "مركز الشهيد ابو منتظر المحمداوي",
    "kind": "hospital",
    "own": "",
@@ -5148,6 +5152,7 @@
    "lat": 33.373448,
    "lon": 44.411849,
    "km": 27.7,
+   "enAuto": true,
    "spec": []
   },
   {
@@ -6279,7 +6284,7 @@
   {
    "id": "node/14256257943",
    "name": "بيت سيد علاوي",
-   "nameEn": "",
+   "nameEn": "Sayed Allawi's house",
    "nameAr": "بيت سيد علاوي",
    "kind": "hospital",
    "own": "",
@@ -6291,6 +6296,7 @@
    "lat": 33.438497,
    "lon": 44.397842,
    "km": 34.1,
+   "enAuto": true,
    "spec": []
   },
   {
