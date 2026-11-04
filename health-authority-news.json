@@ -1,34 +1,13 @@
 {
-  "generatedAt": "2026-11-03T02:55:30.551Z",
+  "generatedAt": "2026-11-04T01:21:34.574Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
-    {
-      "title": "여행건강알림e : HOME",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBKTWN3aV9fQVZCVG45d1V3LTQyUXMwSlFEM1lGU2h6Z05hYk5FdEM4N0lTSG5QVjY4UEY4ZUU4TGtkTGM3X0lDdmxQWmdPcmVuN1FDMVpQdDZxQmc?oc=5",
-      "date": "2026-09-30T14:38:13.000Z"
-    },
     {
       "title": "채용공고",
       "source": "질병관리청",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
       "date": "2025-12-16T15:48:42.000Z"
-    },
-    {
-      "title": "- 보건복지부 대표홈페이지",
-      "source": "",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQ2Zsckx5azhTeTQ2Y3ZNR0R4YkhxLW9qZUQ3Zkt6UmVLUEZQYlJVclBScjhyX3NiMG5JbUxYdlhOM2hXRVBwS2JBQzVGX0RMZ0lhaGZUZWhYMXhuZmRaZVhJeHBnM3lsQXpDc0JNLVVzT2dfRGJ1anRFNEZBcDUzdW5WZEtHSWdJZUE?oc=5",
-      "date": "2026-10-30T18:56:08.000Z"
-    },
-    {
-      "title": "건강교육 자료실",
-      "source": "국가건강정보포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWWNXelJWdGpuUTdLLV9RVWxrbEJrT3BJdllfa2JBczRHRDBTWE1aVFUtRDRiS2VtZ3Z0SVU4eXRPX2ZKbUFOcUtOdDR2OFBaaVpJc0Rqd2pWQ0hOTWE5a28wWmdOX1owZFdIaDc2dU5OVi1SZHktU01KMnBCcGtyb19NSDhrdVUwNjNsbE41cXEyVENKendILVdfenUxMTlFMUdCdW92bHFsWkcySHF4Nl8weDk5aE9Bcy1PQ3NR?oc=5",
-      "date": "2026-10-27T05:34:04.000Z"
     },
     {
       "title": "G12.28케네디 병 (Kennedy disease)",
@@ -56,7 +35,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-02T23:46:42.000Z"
+      "date": "2026-11-03T23:44:12.000Z"
     },
     {
       "title": "레지오넬라증",
@@ -84,6 +63,27 @@
       "source": "국가건강정보포털",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV1NzLWpYblhYdm5oVENxQlZLc3ludkNsaHJQR0J5RUpMSk9FSWdpZTEzVW5CWTEtS3VMalhBUVpEeF8tdnRuMXRqTmJ4Z2laNEV2OE13ZEdlZXFCb1J3WjBBSHdvN2lybkxvV3NYR2tQalZNcTdNbjVwV1h1dXVRQUhPbE9ranJNUUs2YlB4cGZDb0FHMHlKU0NHWWFZT1ItOUlVSHBQNHM2UHVHYXhHNDBnd1BmRVIy?oc=5",
+      "date": "2026-10-29T07:00:00.000Z"
+    },
+    {
+      "title": "이달의 건강정보",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNTEg5Mnh5NkFrQVdXUk9rT1ZHVUwwaVQ2dW5XMlNaSmNjMVdLSG94RkZ5R2dTUlhjZDB0d0U3UmZ3dmpHbzAxS0ttVHZTSVNqWmdId0JqNDAzaTc4NGYxUlp2S1hHZDIycEhWeWhSM1FBNmxGX0g2TVVLYWtwNFBJRkZEMDNKQWJrU2xZNndfeXZQSzhOZUN1dXJXaWpQZ3RjUXlSU2Q0MU0xN1gzdEZZbHc5TnU5cE5QRlNwdUd3am5QdjFzekR1eUZPTnptaEJ5U3RjUE9YaFRrNDNXX25LdVl2ZzdYMFpWQVE?oc=5",
+      "date": "2026-10-30T06:59:19.000Z"
+    },
+    {
+      "title": "공고/공시",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5uaW9FVzZ2eko4VmFSU1g4ZmRJdFZsNDJnV3JJbkVVT0xHRVJJeTlIRXlyNnpIOVFHUHVpM3N2TS02TzBFVFlTQmJjWDY0LXVWdkl3dS1B?oc=5",
+      "date": "2025-12-16T15:50:10.000Z"
+    },
+    {
+      "title": "신생아 대사 이상 검사",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeU9sMFhCblZWRXFxU1psdXpwWVF4UXpjWEZpeDlmdmFCREZFQ1Rod2tBaTF5TDlVdmhNMVA3OVZlRjBpWTZ1Q2Q1VjFLNXhQaFc5WEl0LXFUdGxwS0lKSkN0eGE5LU0wR2E4eEdKQ3lBMVU0b3h2dTcyZnBZVTdqcUgxcHFmUV9lSElsNExrOEFEZllqN3lzYUU5bW5jSWJnc2U4N0hqc3pJc2FWYk5ZR253ODVjeG5F?oc=5",
       "date": "2026-10-29T07:00:00.000Z"
     }
   ]
