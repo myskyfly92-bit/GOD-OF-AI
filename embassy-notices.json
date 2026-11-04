@@ -5,9 +5,7 @@
     "공지사항": true,
     "안전공지": true
   },
-  "errors": {
-    "안전공지": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Read timed out. (read timeout=30)"
-  },
+  "errors": {},
   "countries": [
     {
       "iso2": "IQ",
@@ -90,7 +88,7 @@
       "count": 10
     }
   ],
-  "generatedAt": "2026-11-03T19:45:10.601283+00:00",
+  "generatedAt": "2026-11-04T11:27:26.545320+00:00",
   "items": [
     {
       "kind": "안전공지",
@@ -1379,6 +1377,5 @@
       "iso2": "SY",
       "file": ""
     }
-  ],
-  "lastTriedAt": "2026-11-04T01:36:50.161351+00:00"
+  ]
 }
