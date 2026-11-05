@@ -1,21 +1,7 @@
 {
-  "generatedAt": "2026-11-04T01:21:34.574Z",
+  "generatedAt": "2026-11-05T01:27:39.104Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
-    {
-      "title": "채용공고",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
-      "date": "2025-12-16T15:48:42.000Z"
-    },
-    {
-      "title": "G12.28케네디 병 (Kennedy disease)",
-      "source": "질병관리청 희귀질환 헬프라인",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSU1KczZJY0wzNTJGc1hmMnZkbXVJVFIwUVF0VWJ4TUYxT29KdTd1WUZZVXhxN01MdkxDUmJtN3lfeWR1bUtlMVFxaG14cUZ6cHYta2RySl9mQS1CU0VwN01fODlkS3pEdTZVcTZjeUxPZXo2eUlKdVhBekFuYTllRkJsZ2NNalR4OEpjYm9wQ3ptbUxZaGpBa1BNX1VKb01yVXRCVkl5V0pGMGdwVW1JOTE3WGhkbk9uaE81Zm5QRFh5TlVH?oc=5",
-      "date": "2026-11-01T12:57:56.000Z"
-    },
     {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
       "source": "질병관리청 감염병포털",
@@ -31,11 +17,18 @@
       "date": "2026-05-02T07:32:05.000Z"
     },
     {
+      "title": "보도자료(전체)",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
+      "date": "2025-12-16T15:46:00.000Z"
+    },
+    {
       "title": "- 질병관리청",
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-03T23:44:12.000Z"
+      "date": "2026-11-04T23:49:35.000Z"
     },
     {
       "title": "레지오넬라증",
@@ -52,11 +45,11 @@
       "date": "2024-06-10T02:47:27.000Z"
     },
     {
-      "title": "알림정보",
-      "source": "질병관리청",
+      "title": "G12.28케네디 병 (Kennedy disease)",
+      "source": "질병관리청 희귀질환 헬프라인",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5tUkYwOVE0TXNPRGdUeWxpOGJIMDNxemRldm9FQ2lKVDROTldNYTNVSXhVQlNuT3FUN25vUm1NbVdiYUtG?oc=5",
-      "date": "2021-11-03T09:42:59.000Z"
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSU1KczZJY0wzNTJGc1hmMnZkbXVJVFIwUVF0VWJ4TUYxT29KdTd1WUZZVXhxN01MdkxDUmJtN3lfeWR1bUtlMVFxaG14cUZ6cHYta2RySl9mQS1CU0VwN01fODlkS3pEdTZVcTZjeUxPZXo2eUlKdVhBekFuYTllRkJsZ2NNalR4OEpjYm9wQ3ptbUxZaGpBa1BNX1VKb01yVXRCVkl5V0pGMGdwVW1JOTE3WGhkbk9uaE81Zm5QRFh5TlVH?oc=5",
+      "date": "2026-11-01T12:57:56.000Z"
     },
     {
       "title": "고혈압 환자의 식이요법",
@@ -64,6 +57,13 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV1NzLWpYblhYdm5oVENxQlZLc3ludkNsaHJQR0J5RUpMSk9FSWdpZTEzVW5CWTEtS3VMalhBUVpEeF8tdnRuMXRqTmJ4Z2laNEV2OE13ZEdlZXFCb1J3WjBBSHdvN2lybkxvV3NYR2tQalZNcTdNbjVwV1h1dXVRQUhPbE9ranJNUUs2YlB4cGZDb0FHMHlKU0NHWWFZT1ItOUlVSHBQNHM2UHVHYXhHNDBnd1BmRVIy?oc=5",
       "date": "2026-10-29T07:00:00.000Z"
+    },
+    {
+      "title": "채용공고",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
+      "date": "2025-12-16T15:48:42.000Z"
     },
     {
       "title": "이달의 건강정보",
