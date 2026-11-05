@@ -2,7 +2,7 @@
   "_readme": "이 파일은 GitHub Actions가 한국산업안전보건공단 국내재해사례 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
   "source": "한국산업안전보건공단 산업안전포털 국내재해사례 (전 업종)",
   "sourceUrl": "https://portal.kosha.or.kr",
-  "boardTotal": 6385,
+  "boardTotal": 6398,
   "scanned": 400,
   "count": 300,
   "businesses": [
@@ -11,8 +11,255 @@
     "제조업",
     "조선업"
   ],
-  "generatedAt": "2026-11-04T06:57:27.186241+00:00",
+  "generatedAt": "2026-11-05T07:22:43.453449+00:00",
   "items": [
+    {
+      "boardno": "20261105093815GF3I4H",
+      "business": "건설업",
+      "title": "오수관로 굴착 작업 중 매몰",
+      "contents": "2025. 11. 00. (수) 10시 2분경 경북 안동시 소재 OO부대 시설공사 현장에서 굴착 저면의 바닥 평탄화 작업 후 이동 중 사면의 토사가 무너져 하반신이 매몰됨",
+      "type": "매몰·붕괴",
+      "accidentDate": "2025-11",
+      "sortKey": "20251100",
+      "place": "경북 안동시",
+      "newsQuery": "안동 오수관로 굴착 매몰",
+      "registeredAt": "2026-11-05 09:38",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "오수관로 굴착 작업 중 매몰.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20261105093815GF3I4H/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261105093729UED0LO",
+      "business": "건설업",
+      "title": "지게차 이동 작업 중 끼임",
+      "contents": "2025. 10. 25.(토) 09:11경 강원도 원주시 소재 영농조합법인에서 재해자가 지게차 운전 중, 지게차가 도로 옆 수로에 빠지며, 지게차와 수로 상부 구조물 사이에 머리가 끼임",
+      "type": "끼임",
+      "accidentDate": "2025-10-25",
+      "sortKey": "20251025",
+      "place": "강원 원주시",
+      "newsQuery": "원주 지게차 사고",
+      "registeredAt": "2026-11-05 09:37",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "지게차 이동 작업 중 끼임.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20261105093729UED0LO/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261105093649NJALNS",
+      "business": "건설업",
+      "title": "지하층 굴착공사 작업 중 깔림",
+      "contents": "2025. 11. 1.(토) 15:46경 강원도 원주시 소재 주택재개발 정비사업 현장에서 재해자가 지하층 굴착공사 작업관리 중 흙막이벽체 상단(높이≒13 m)에서 하강 중인 크램쉘 버킷(W≒1.3 ton)에 깔림",
+      "type": "깔림",
+      "accidentDate": "2025-11-01",
+      "sortKey": "20251101",
+      "place": "강원 원주시",
+      "newsQuery": "원주 지하층 굴착공사 사고",
+      "registeredAt": "2026-11-05 09:36",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "지하층 굴착공사 작업 중 깔림.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20261105093649NJALNS/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261105093549Z23NTL",
+      "business": "건설업",
+      "title": "차량 탑재형 고소작업대 아웃트리거에 끼임",
+      "contents": "2026. 04. 00.(금) 13:54경 제주시 소재 ○○○○○㈜ 소속 근로자가 저압 케이블 교체 작업을 마친 뒤 고소작업차 이동을 위해 아웃트리거 하부에 설치한 받침대를 차량 후면 격납함에 넣는 과정에서 인입(수축) 중인 아웃트리거에 머리가 끼임.",
+      "type": "끼임",
+      "accidentDate": "2026-04",
+      "sortKey": "20260400",
+      "place": "제주시",
+      "newsQuery": "제주 차량 탑재형 사고",
+      "registeredAt": "2026-11-05 09:35",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "차량탑재형 고소작업대 아웃트리거에 끼임.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20261105093549Z23NTL/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261105093456DAPYU8",
+      "business": "건설업",
+      "title": "달비계 로프 해체 작업 중 추락",
+      "contents": "2026. 06. 11. (목) 09:15 경 고양시 소재 골프연습장 철탑 도색 작업현장에서달비계 로프 해체 작업을 위해 트럭 후진 동력을 이용하여 승강 중,철탑 상부 도르래를 연결한 와이어 로프 클립(clip)이 이탈되면서 재해자가 바닥으로 추락함 (높이: 약 40 m)",
+      "type": "떨어짐",
+      "accidentDate": "2026-06-11",
+      "sortKey": "20260611",
+      "place": "고양시",
+      "newsQuery": "고양 달비계 로프 추락",
+      "registeredAt": "2026-11-05 09:34",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "달비계 로프 해체 작업 중 추락.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20261105093456DAPYU8/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "2026110509334832E9G5",
+      "business": "건설업",
+      "title": "시스템 비계 이동 중 추락",
+      "contents": "2026. 6. 1. (월) 11:40 경 인천광역시 서구 소재 업무시설 신축공사 현장에서,시스템 비계에서 구조물 내부로 이동하던 중, 시스템 비계와 구조물 사이로 중심을 잃고 지상 5층 콘크리트 바닥 으로 떨어짐 (높이: 18.3 m)",
+      "type": "떨어짐",
+      "accidentDate": "2026-06-01",
+      "sortKey": "20260601",
+      "place": "인천 서구",
+      "newsQuery": "인천 서구 시스템 비계 추락",
+      "registeredAt": "2026-11-05 09:33",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "시스템 비계 이동중 추락.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/2026110509334832E9G5/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "202611050932487RZIXR",
+      "business": "건설업",
+      "title": "지붕 채광창 철거 중 바닥으로 떨어짐",
+      "contents": "2026.03.00. 15:35경, 충북 음성군 소재 OOO 지붕 채광창 교체공사 현장에서,노후화된 채광창이 파손되면서 지붕 위에서 작업하던 재해자가 콘크리트 바닥으로 떨어짐 (높이: 6.1 m)",
+      "type": "떨어짐",
+      "accidentDate": "2026-03",
+      "sortKey": "20260300",
+      "place": "충북 음성군",
+      "newsQuery": "음성 지붕 채광창 추락",
+      "registeredAt": "2026-11-05 09:32",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "지붕 채광창 철거 중 바닥으로 떨어짐.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/202611050932487RZIXR/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261105093104SPZHI1",
+      "business": "건설업",
+      "title": "데크플레이트 설치 작업 중 추락",
+      "contents": "2025. 8. 1. (금) 11:12 경 평택시 소재 근린생활시설 건설현장에서 지상 2층에서 데크플레이트 인양∙설치 작업 중, 재해자가 밟고 있던 미고정 데크플레이트가 철골 보에서 탈락되면서 재해자가 데크플레이트와 함께 지상 1층으로 추락함 (높이: 7 m)",
+      "type": "떨어짐",
+      "accidentDate": "2025-08-01",
+      "sortKey": "20250801",
+      "place": "평택시",
+      "newsQuery": "평택 데크플레이트 설치 추락",
+      "registeredAt": "2026-11-05 09:31",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "데크플레이트 설치 작업 중 추락.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20261105093104SPZHI1/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "202611050928593ZMQEF",
+      "business": "제조업",
+      "title": "넘어지는 구조물에 작업 중 깔림",
+      "contents": "2025. 8. 00. (화) 14:25분경 경북 성주군 소재 강구조물 제조공장에서 재해자가 철계단 구조물 조립을 위해 크레인 달기구에 구조물을 걸고 작업 중 구조물이 달기구에서 이탈하여 넘어지는 구조물에 깔림",
+      "type": "깔림",
+      "accidentDate": "2025-08",
+      "sortKey": "20250800",
+      "place": "경북 성주군",
+      "newsQuery": "성주 넘어지는 구조물 사고",
+      "registeredAt": "2026-11-05 09:28",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "넘어지는 구조물에 작업 중 깔림.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/202611050928593ZMQEF/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261105092812FIW2S7",
+      "business": "제조업",
+      "title": "화학설비 응축수에 의한 화상",
+      "contents": "2026. 05. OO(목) 16:43 전남 광양시 소재 OO공장에서 ㈜OOOOO 소속 근로자 3명이 활성탄 내부에 청소 등을 위한 사전 준비작업을 위하여 탑 하부 플랜지(Flange)의 체결 볼트를 해체하는 순간, 탑 내부에 고여 있던 고온의 응축수가 쏟아져 화상을 입음",
+      "type": "기타",
+      "accidentDate": "2026-05",
+      "sortKey": "20260500",
+      "place": "전남 광양시",
+      "newsQuery": "광양 화학설비 응축수 사고",
+      "registeredAt": "2026-11-05 09:28",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "화학설비 응축수에 의한 화상.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20261105092812FIW2S7/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261105085805F2G6PP",
+      "business": "제조업",
+      "title": "실린더 교체 작업 중 떨어지는 물체에 맞음",
+      "contents": "2026.03.00. 09:38경, 충남 아산시 인주면 소재 OOO 공장 내 ◇◇◇라인에서,재해자가 이송용 설비(디버터 리프트*)의 실린더 교체를 위해 하부로 들어가 볼트를 해체하던 중,리프트가 낙하하여 머리에 맞음",
+      "type": "맞음",
+      "accidentDate": "2026-03",
+      "sortKey": "20260300",
+      "place": "충남 아산시",
+      "newsQuery": "아산 실린더 교체 사고",
+      "registeredAt": "2026-11-05 08:58",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "실린더 교체 작업 중 떨어지는 물체에 맞음.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20261105085805F2G6PP/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261105085701CV621N",
+      "business": "제조업",
+      "title": "용접설비 차단문 개폐 중 차단문에 끼임",
+      "contents": "2026. 04. 00.(화) 03:19경 부산 ㅇㅇ군에 위치한 (주)ㅇㅇㅇ 사업장 내 용접 작업장에서 자동 용접설비를 사용하여 다음 제품 용접을 위해 용접설비 전면의 차단문을 닫는 과정에서 재해자의 목이 설비의 차단문에 끼임",
+      "type": "끼임",
+      "accidentDate": "2026-04",
+      "sortKey": "20260400",
+      "place": "",
+      "newsQuery": "용접설비 차단문 사고",
+      "registeredAt": "2026-11-05 08:57",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "용접설비 차단문 개폐 중 차단문에 끼임.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20261105085701CV621N/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "2026110508555270DXVS",
+      "business": "제조업",
+      "title": "제품을 옮기던 중 플랫폼 아래로 추락",
+      "contents": "2026년 6월 00일(화) 10:30경 경남 함안군 소재 ㅇㅇ산업기계(주)내에서,작업자가 작업 전용 플랫폼 위에서 용접 작업을 마친 ESS*배터리 케이스를 밀던 중, 전용 플랫폼 하부 바닥으로 추락함(높이: 2.7 m)",
+      "type": "떨어짐",
+      "accidentDate": "2026-06",
+      "sortKey": "20260600",
+      "place": "경남 함안군",
+      "newsQuery": "함안 제품 옮기던 추락",
+      "registeredAt": "2026-11-05 08:55",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "제품을 옮기던 중 플랫폼 아래로 추락.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/2026110508555270DXVS/D0801000010001"
+        }
+      ]
+    },
     {
       "boardno": "202610061640068G0R78",
       "business": "제조업",
@@ -5507,253 +5754,6 @@
         {
           "name": "드럼통을 절단하던 중 폭발(제조업).pdf",
           "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20241029101644NSI9FN/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20241029101352ATPSBM",
-      "business": "제조업",
-      "title": "블록 생산 중 큐빙기에 끼임",
-      "contents": "2024.06.00.(토) 충북 충주시 소재 OO콘크리트 블록 생산 공장에서 큐빙기 점검 중 오작동으로 인한 끼임",
-      "type": "끼임",
-      "accidentDate": "2024-06",
-      "sortKey": "20240600",
-      "place": "충북 충주시",
-      "newsQuery": "충주 블록 생산 사고",
-      "registeredAt": "2024-10-29 10:13",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "블록생산 중 큐빙기에 끼임(제조업).pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20241029101352ATPSBM/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20241029101045PMS4KM",
-      "business": "건설업",
-      "title": "흙막이 단부에서 이동 중 떨어짐",
-      "contents": "2024.06.00.(월) 대구 서구 소재 병원 신축공사 현장에서 작업을 위해 이동 중 중심을 잃고 지하 2층 바닥으로 떨어짐(높이 : 7m)",
-      "type": "떨어짐",
-      "accidentDate": "2024-06",
-      "sortKey": "20240600",
-      "place": "대구 서구",
-      "newsQuery": "대구 서구 흙막 단부 추락",
-      "registeredAt": "2024-10-29 10:10",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "흙막이 단부에서 이동 중 떨어짐(건설업).pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20241029101045PMS4KM/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20241029100716HFB9K8",
-      "business": "건설업",
-      "title": "철탑에 승탑하여 점검 중 감전",
-      "contents": "2024.10.00.(수) 경기도 남양주시 소재 oooo회사 소속 재해자가 송전선로 점검 중 감전",
-      "type": "감전",
-      "accidentDate": "2024-10",
-      "sortKey": "20241000",
-      "place": "경기 남양주시",
-      "newsQuery": "남양주 철탑 승탑하여 감전",
-      "registeredAt": "2024-10-29 10:07",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "철탑에 승탑하여 점검 중 감전(건설업).pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20241029100716HFB9K8/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20240930113019826ZEE",
-      "business": "서비스업",
-      "title": "폐기물 수집차 보수 작업중 적재함에 깔림",
-      "contents": "2023.06.00.(월) 인천광역시 소재 (주)OOO에서 재해자가 폐기물 수집차 보수 작업중 적재함에 깔림",
-      "type": "깔림",
-      "accidentDate": "2023-06",
-      "sortKey": "20230600",
-      "place": "인천광역시",
-      "newsQuery": "인천광역 폐기물 수집차 사고",
-      "registeredAt": "2024-09-30 11:30",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "폐기물 수집차 보수 작업중 적재함에 깔림.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104005/20240930113019826ZEE/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20240930112857FVLDRH",
-      "business": "서비스업",
-      "title": "통신케이블 포설 작업중 감전",
-      "contents": "2013.12.00.(목) 화성시 소재 OO에서 옥상으로 연결되는 통신케이블 점검 작업중 변압기 충전부에 감전",
-      "type": "감전",
-      "accidentDate": "2013-12",
-      "sortKey": "20131200",
-      "place": "화성시",
-      "newsQuery": "화성 통신케이블 포설 감전",
-      "registeredAt": "2024-09-30 11:28",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "통신케이블 포설 작업중 감전.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104005/20240930112857FVLDRH/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20240930112724ZV817B",
-      "business": "제조업",
-      "title": "천장주행크레인 인양물에 밀려 열탕조에 빠짐",
-      "contents": "2023.12.00.(토) 충남 공주시 소재 OOOO(주)산세실에서 재해자가 천장크레인을 조종하며 파이프 다발을 운반 중 열탕조에 빠짐",
-      "type": "기타",
-      "accidentDate": "2023-12",
-      "sortKey": "20231200",
-      "place": "충남 공주시",
-      "newsQuery": "공주 천장주행크레인 인양물 사고",
-      "registeredAt": "2024-09-30 11:27",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "천장 주행크레인 인양물에 밀려 열탕조에 빠짐.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20240930112724ZV817B/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "2024093011253561A9V3",
-      "business": "제조업",
-      "title": "지게차에 끼임",
-      "contents": "2024.05.00.(수) 부산시 소재 OOO작업장에서 지게차에 올려진 팔레트 위에서 작업 후 조종석에 발을 딛고 내려오던 중 오작동에 의한 끼임",
-      "type": "끼임",
-      "accidentDate": "2024-05",
-      "sortKey": "20240500",
-      "place": "부산시",
-      "newsQuery": "부산 지게차 사고",
-      "registeredAt": "2024-09-30 11:25",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "지게차에 끼임.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/2024093011253561A9V3/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20240930112338HCG4O7",
-      "business": "제조업",
-      "title": "선재 코일에 깔림",
-      "contents": "2024.07.00.(월) 경남 김해시 소재 OO작업장에서 선재코일의 검수 작업 중 선재코일이 재해자 방향으로 전도",
-      "type": "깔림",
-      "accidentDate": "2024-07",
-      "sortKey": "20240700",
-      "place": "경남 김해시",
-      "newsQuery": "김해 선재 코일 사고",
-      "registeredAt": "2024-09-30 11:23",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "선재코일에 깔림.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20240930112338HCG4O7/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20240930112139NIH85A",
-      "business": "제조업",
-      "title": "덮개가 개방된 개구부에서 떨어짐",
-      "contents": "2024.07.00(수) 경북 울진군 (주)OO산업 콘크리트 제조업 사업장에서 개구부로 떨어짐(4.3m)",
-      "type": "떨어짐",
-      "accidentDate": "2024-07",
-      "sortKey": "20240700",
-      "place": "경북 울진군",
-      "newsQuery": "울진 덮개 개방된 추락",
-      "registeredAt": "2024-09-30 11:21",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "덮개가 개방된 개구부에서 떨어짐.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20240930112139NIH85A/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "2024093011180450ORMS",
-      "business": "건설업",
-      "title": "핸드드릴 사용 중 감전",
-      "contents": "2024.08.00.(목) 전남 소재 OOOO현장 내 도갱 내에서 흙막이벽 배면 그라우팅 주입을 위한 천공 작업 중 감전",
-      "type": "감전",
-      "accidentDate": "2024-08",
-      "sortKey": "20240800",
-      "place": "전남",
-      "newsQuery": "전남 핸드드릴 사용 감전",
-      "registeredAt": "2024-09-30 11:18",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "핸드드릴 사용 중 감전.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/2024093011180450ORMS/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20240930111542XB5RLC",
-      "business": "건설업",
-      "title": "천공기 케이싱 삽입 중 맞음",
-      "contents": "2024.06.00.(목) 강원도 강릉시 소재 00현장에서 재해자가 흙막이 지보공 작업을 위해 천공기를 조종하던 중 떨어지는 케이싱에 맞음",
-      "type": "맞음",
-      "accidentDate": "2024-06",
-      "sortKey": "20240600",
-      "place": "강원 강릉시",
-      "newsQuery": "강릉 천공기 케이싱 사고",
-      "registeredAt": "2024-09-30 11:15",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "천공기 케이싱 삽입 중 맞음.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20240930111542XB5RLC/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20240930111307BWZA77",
-      "business": "건설업",
-      "title": "차량탑재형 고소작업대 전도",
-      "contents": "2023.06.00(수) 포항시 남구 연일읍 소재 OOO 초등학교 다목적강당 신축공사 현장에서 차량탑재형 고소작업대 전도 (2명 부상)",
-      "type": "기타",
-      "accidentDate": "2023-06",
-      "sortKey": "20230600",
-      "place": "",
-      "newsQuery": "차량탑재형 고소작업대 사고",
-      "registeredAt": "2024-09-30 11:13",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "차량탑재형 고소작업대 전도.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20240930111307BWZA77/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20240930111035BRM51G",
-      "business": "건설업",
-      "title": "승강기 레일 설치 중 레일에 맞음",
-      "contents": "2024.07.00.(목) 서울시 소재 OO현장에서 승강로 작업중 윈치에 연결된 고정대와 와이어로프 파단으로 떨어진 레일에 재해자가 맞음",
-      "type": "맞음",
-      "accidentDate": "2024-07",
-      "sortKey": "20240700",
-      "place": "서울시",
-      "newsQuery": "서울 승강기 레일 사고",
-      "registeredAt": "2024-09-30 11:10",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "승강기 레일 설치 중 레일에 맞음.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20240930111035BRM51G/D0801000010001"
         }
       ]
     }
