@@ -1,90 +1,90 @@
 {
-  "generatedAt": "2026-11-04T01:12:25.033Z",
+  "generatedAt": "2026-11-05T01:25:06.236Z",
   "query": "(질병 OR 전염병 OR 감염병 OR 사고 OR 의료 OR 의학) when:2d",
   "items": [
     {
-      "title": "환자 곁을 지킨 의사에게 의료사고 위험을 떠넘길 것인가",
-      "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAyQnkxbFVtZ29sZTdWa1RtVjhqeUlpRGhDa2lmYXJVN01EQXduZ0g0MW5ncXlRbjAybjBmZG54Q2VTVFFqNWNJcmRMVWhfR0RiT21reU53?oc=5",
-      "date": "2026-11-03T22:38:00.000Z",
-      "summary": "MEDI:GATE NEWS"
+      "title": "사고수습 중 화물차에 치여 발목 절단된 경찰...청장 대행 \"책임지겠다\"",
+      "source": "YTN",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBmdUo4eG9NUFpuR0lqMTlUQ1lSMU5DNC1odUFkMno5MzFwanlobXVmOVVOTGYxRHgtalJkZ3FobUJRaVNuZE5XQXlfY0RhUUE2b1czX3dNV18zb1JLMDdyTHplczJJazNVdUx3N204OA?oc=5",
+      "date": "2026-11-04T23:48:00.000Z",
+      "summary": "YTN"
     },
     {
-      "title": "마취통증의학과 이상욱 교수 \"공학과 의학 사이, 환자를 위한 답을 찾다\" | 아산인 이야기 | 피플",
-      "source": "서울아산병원 뉴스룸",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1YZ1lMT0sxWk1JMUY1QVhVWE9vNlRoTEg0MlMxZmZYVDh2MlFPSDlGMW9HaDdzamJGNGRYX3I1UnNmcUs1eXJ2aGRwdF9xOUtRU29TYXpMLV9XLVhtZDhpZ3Q4dXdVUjA?oc=5",
-      "date": "2026-11-04T00:26:41.000Z",
-      "summary": "서울아산병원 뉴스룸"
+      "title": "직구와의 전쟁! 무허가 의료기기 해외직구는 위험해요!",
+      "source": "대한민국 정책브리핑",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBYNVdHd3pSWEsyeVg2aEh0a0w2ODQ1RlJSR3RRLTcyOWxBaTFPR2xuQWJWTnZTMDlRSnJpdWJKTkZNV1FEaUhXbkRWanA0RzlXU2FMbWVfanpVQm5mNGlSS2FhNE8?oc=5",
+      "date": "2026-11-05T00:05:07.000Z",
+      "summary": "대한민국 정책브리핑"
     },
     {
-      "title": "응급실 문 닫고 병원 폐업…지방 의료공백 어쩌나",
-      "source": "연합뉴스TV",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5tWTRoTUV0TzhFUjk1VlRoRldJYXFxdTVfdzlwT094ZFNIRHotRFRSR3lVeDRBeU5Gd1VWTkdMajM5ZFdtemFpb3JUX2ExUEJwX01oS0VWODBjT2xXVkwyQjhNdE9fSjA?oc=5",
-      "date": "2026-11-03T21:21:00.000Z",
-      "summary": "연합뉴스TV"
-    },
-    {
-      "title": "원주의료기기산업진흥원, 美 TEDCO와 협약 체결",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5IWi1UXzFValJJMkZZRWs2U0tNU0M2eEN3WHhocXh0MWlOY3BxOWtkM2FWbmNTQW5pbVJsdGM3U2hiQ1JPa3NiQ1ZSSjVraHBObUQtR3BjSlFEdmg1VjVaZ2J3d29hemJjMHc?oc=5",
-      "date": "2026-11-04T00:18:03.000Z",
-      "summary": "의학신문"
-    },
-    {
-      "title": "한국여자의사회, 캄보디아 근로자 80여명 의료봉사",
+      "title": "첨단재생의료실시기관 지정 의료기관, 관리 강화 예정",
       "source": "의협신문",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ub3pCUE1sZnJpWDEwekxhMERNS0VCclNRN1RMMHpBUC16OS04b0RFM1NabHBQRjJWRVFpMzFoUUZLWWxYaXR6a1JHQmEwZGZvbjAwblR3ZVBkeXBOanNCdzI1NzFUMWxqc2l5YV9OeFBrZw?oc=5",
-      "date": "2026-11-04T00:26:57.000Z",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE11RkNOTUFsaE0ydkZma25aWlpYRlVFMEhrVGZrTHpFN3RGSDllVHBYRElwajNlcXlJeG4zUTNLV0pybUt2bW4tOS14QTBlSUdWd09lQXZkSmd5QklDT1VUSEtpTEVYNGZER1VkSmpoWkhjdw?oc=5",
+      "date": "2026-11-04T21:00:00.000Z",
       "summary": "의협신문"
     },
     {
-      "title": "호르무즈 해협 긴장 지속…상선 사고 128건·선원 24명 사망",
-      "source": "해사신문",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1OaUVLX1VlRk1WUUp5Y1daUVQ4d0J4cHZsb3RXRnVUOGR2S0dzeDZ3N2cyMkpzVGVjejNnX1hmTnBBb3Y2Tmt3dnkzcmoxTWVMMDQ3YVBPYWxlY1lsTDNuRkdVZzd3UXpuVWNv?oc=5",
-      "date": "2026-11-04T00:05:17.000Z",
-      "summary": "해사신문"
+      "title": "(기자의 눈) 고속선 신호체계 바꾸는 지금…스페인 고속열차 사고가 남긴 과제",
+      "source": "전기신문",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBtWnA1N2NjVlpkcEtqZVF6WjVEZlh2OHhqTW5RV3FOc1JadVV5ZFBfQ3NxcjN6QnoxUDFXQjM0VEdjNUU5RFE3VGNjaTVUd3Y4UWN3MjR4Q3Fiam1fVTVGc1Y4VlJDb0VPUnd4Sg?oc=5",
+      "date": "2026-11-05T00:55:50.000Z",
+      "summary": "전기신문"
     },
     {
-      "title": "경북 숙원 국립의대 신설 확정, 지역사회 환영…의료격차해소 기대",
-      "source": "연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE01bUtpZ0FJUG53TjNMX0xmVTJ6djdweTRvM3ZDY0JlNGZjRXVuX2VWS0J3WkVKQ1N1UEhOV3BjRDQwcDV0T3NZRmNkd1htQ09ZekJrVDFvZDNHNUnSAWBBVV95cUxQeHNhanFwenNNRDE4UjBfT1VndndXd0hnQWRIdDA5MTBEdWNEUXVvNHRMeXBSazNmVmZEZHZpSGI5MGhFWGhQQW9TWWtNVUc3QTB2S19qNmJBdXFzMTVrOU4?oc=5",
-      "date": "2026-11-04T01:01:00.000Z",
-      "summary": "연합뉴스"
+      "title": "용인세브란스병원, 5년 연속 '월드 그랑프리' 수상",
+      "source": "약사공론",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5DMDFwQnJyZ2dLWXlTYXJVTGd3S0ZNd3ZzMHJ5WVNTSHJIaG1uNXlqdVpCb2FRUmZ1RGo0N09Xallva0hXYkUwQk9lQks3cjltS25vSW5pZ1ZWR1NJeC02RVdBLTU3N1JFWU1MZA?oc=5",
+      "date": "2026-11-05T01:04:13.000Z",
+      "summary": "약사공론"
     },
     {
-      "title": "\"응급실 압수수색 제한 신중해야\"···\"의료사고 증거 확보 보장\"",
-      "source": "메디칼업저버",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBZSTMxNjBhWVNhSXhhWkRoQV8yeDFUcTIzZ3ZhUWUxcTVFeTJoalh0bHk5Q3NnUXdfVFdPbHl5d2lHZmk1WWJsQ3Z4T0ppcFpfbFlkYlNsYjJXOTE2aUNUR1pmZFI1TWhDbnFF?oc=5",
-      "date": "2026-11-03T23:12:55.000Z",
-      "summary": "메디칼업저버"
+      "title": "[건강과 법률] 비의료인의 의료행위 병원장의 형사책임은 어디까지인가",
+      "source": "헬스경향",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBDd0VGdzcwbFZOTEI0QjFVc1VOODk2c3NOLWNSM2dIQnZuOTBNaUxkcThaNG5KVERya3pGRkx6M0VTc0xDU2lobUpRQmR0NVA3UmFmakMzb0liM1BFVDJYVlpjaVozZlBLc2k0?oc=5",
+      "date": "2026-11-04T23:25:00.000Z",
+      "summary": "헬스경향"
     },
     {
-      "title": "쿠팡 와우 회원 수 ’역대 최대’...개인정보 사고 여파는 여전 By EBN",
-      "source": "Investing.com 한국어",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UTElhTDVqdE1sTkdsR3IyWXl0ZlV4NDhtQktPSGY0Z0V4VkE3cWU1eEJIZnVVcklmNVBjVnpxT3l4M2ktTFNNWmI3djNVeGZZYjByalJvZFB5bGRGc01wdW5xWkdVMkFpMDJRYlpQOWc?oc=5",
-      "date": "2026-11-04T00:31:00.000Z",
-      "summary": "Investing.com 한국어"
+      "title": "[사건사고] 세브란스 병원서 흉기난동…정신과 의사 1명 부상 外",
+      "source": "연합뉴스TV",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9OZF9CblBnOXdjN3JmdF9wTEw1aEkxM0lzTzlpQkNId21Xc0ZNOWQtOENkc280TE9abzdDN1JOQnU5c0t5RW92WGItUnZMQVZXRTNSRWtUZFpqWVBtVHprVG56TWppQzA?oc=5",
+      "date": "2026-11-05T00:11:00.000Z",
+      "summary": "연합뉴스TV"
     },
     {
-      "title": "식약처, 레이저제모기 등 의료기기 광고 위반 게시글 156건 적발",
-      "source": "히트뉴스",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9SekRoaUxlSHZ5YmpqSmUyUWtMeUxPLWpHUUVJdjZaTno3em9zaWZrOWhhQXVzY1Exd1RDTDlpLTVtYnRvV3VBcWk4NjVqSGFjak4tdnBUcWVENnBhUnByenpkZE55c19tLXF3?oc=5",
-      "date": "2026-11-03T23:38:14.000Z",
-      "summary": "히트뉴스"
+      "title": "부산시, 의료관련감염병 예방 네트워크 본격화…65세 이상 26.3% ↑",
+      "source": "뉴스핌",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB3X3BsNFJvZTdvUTlkcFktVnk2aE42MUR6dG5lUGRhN21SUjhjbFVEVGpqNWp1V0lzNHA3VzFsc1hNM3dlU182ZUFGM1pCVk5ETGVmaEVCSEQ3WDFH?oc=5",
+      "date": "2026-11-05T00:40:00.000Z",
+      "summary": "뉴스핌"
     },
     {
-      "title": "[분석] 의료·돌봄 확대, 시설 지원과 재택자립훈련의 차이",
-      "source": "메디포뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBzNmxwTzZVZHg4SDVYOTlacVl1a0xRRXY2Tm94OUhBMV9RdFdqUHRnQ1pvMzJrWnpYT3dSMXFxZ250Vm90RjNyS2ZfMm5RWHZBUUlINW5DN1JReFdjZTVZcktDQi0?oc=5",
-      "date": "2026-11-03T23:39:36.000Z",
-      "summary": "메디포뉴스"
+      "title": "본동물의료센터 2026 증례발표회 개최..고난도 임상 케이스 6건 공유",
+      "source": "데일리벳",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1qTzEyamRtS1hjaHd5aXltLTd6VVJ2SXMxdzhDNmxwRmwtN3lvYTA4N0diSVFUWnA2ejg5UzJvbjhCa1dCMGlybVNCdFNFaUgwc2RmejdKYnI?oc=5",
+      "date": "2026-11-05T00:06:19.000Z",
+      "summary": "데일리벳"
     },
     {
-      "title": "정부, 가축전염병 방역체계 전면 개선…사전예방·농가 자율방역 강화",
-      "source": "축산신문",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5HbXA4bnZsZEFnWS1jQTh2Yy1ab3dmbXpqdzdRVi1qSXpFU1dFbzBkajczdWw4OThiUjlEN0h2SGRBX1hGRGU0SUhhUHZNdFd4VGhqRzI2WmRpY2VVSWJtRjZ1QldRQ2ox?oc=5",
-      "date": "2026-11-04T00:24:55.000Z",
-      "summary": "축산신문"
+      "title": "[오지은 칼럼] 의료사고, 결과가 아닌 과정을 보아야 하는 이유",
+      "source": "세이프타임즈",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9uZGZYRjh5YTVBbDU2eEdHd2tYbDl1T3hJaHFNX2RsbW90REI3U05Qb1lLdUFOblowLW42TkxfVVFseWsyS05wdmk4aTRLRUh6bnlCaFNJUnFkT3ZTYkJDOEZfZmgtS2VJNFVZYkFnONIBc0FVX3lxTE56Mkh0OUM1MmZLVXlKWGhXbXQyWWJEc0JCdXpZNTlMUnlyazQ2N2RFM2R1VHFVdkVteW5tNFI3aW5wUXpMNjBjYzlwaFo1WnlMc1RYM1cxTEJoTkV5UklpcGNlRVl0OUw2WjF3dG5OM2FfT3M?oc=5",
+      "date": "2026-11-04T22:46:39.000Z",
+      "summary": "세이프타임즈"
+    },
+    {
+      "title": "“노인일자리 안전사고 확 줄었다”… 노인인력개발원, 안전관리 우수사례 공유회 성료",
+      "source": "복지타임즈",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBKRWtQMzhoTTRBcnlBNzNKQ1ZETDVrT2NWbEJuMGxYMHowLTFDbWJHNk5zTWhLU3hkeHk3NVBxWjZsX3BIbkRIcFBBVlpRUFlOSmJSVDZTVkh6bUdDbzFvbEZSd1lTUzFlOW1F?oc=5",
+      "date": "2026-11-05T00:11:55.000Z",
+      "summary": "복지타임즈"
+    },
+    {
+      "title": "[잇슈 SNS] 한밤중 식당으로 돌진한 차량…사고 수습 도와준 ‘바나나 영웅’",
+      "source": "KBS 뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5aVzJrQTAydXMzN28yalU2T1M4ckVSNnFGUk4tTW8zZ0g4clZLSEpYb1lDZkxSbllqa1pFTWRMbFVOdXRheWd5ZEJWNFY5MnlTcDZNM3F1Q2dod0FnVVN5bmJ6ZVVoUQ?oc=5",
+      "date": "2026-11-04T22:29:00.000Z",
+      "summary": "KBS 뉴스"
     }
   ]
 }
