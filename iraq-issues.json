@@ -1,108 +1,89 @@
 {
-  "generatedAt": "2026-11-06T17:35:02.783Z",
+  "generatedAt": "2026-11-06T23:17:08.509Z",
   "items": [
     {
-      "title": "اعتقال 3 أشخاص وضبط 35 صاروخاً داخل شاحنة جنوبي بغداد",
-      "source": "الوقائع الإخبارية",
-      "link": "https://alwakaai.com/article/762442",
-      "date": "2026-11-06T17:02:58.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 남부에서 3명 체포, 트럭에서 로켓탄 35발 적발",
-      "url": "https://alwakaai.com/article/762442",
-      "body": "الوقائع الإخباري ـ ألقت قوات أمنية عراقية القبض على ثلاثة أشخاص، أثناء نقلهم 35 صاروخاً مجهول النوع داخل شاحنة في منطقة اللطيفية جنوبي العاصمة بغداد، على",
-      "bodyKo": "이라크 보안군, 바그다드 남부 라티피야 지역에서 정체불명 로켓탄 35발 운반 중인 3명 체포\n\n이라크 보안군이 바그다드 남부 라티피야 지역에서 트럭으로 정체불명 로켓탄 35발을 운반 중이던 3명을 체포했다.",
+      "title": "Security Alert: U.S. Mission Iraq",
+      "source": "U.S. Embassy & Consulate in Iraq (.gov)",
+      "link": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-november-6-2026/",
+      "date": "2026-11-06T23:10:53.000Z",
+      "lang": "en",
+      "titleKo": "보안 경보: 미국 이라크 대사관",
+      "url": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-november-6-2026/",
+      "body": "",
+      "bodyKo": "",
       "tried": true,
       "count": 1,
       "sources": [
-        "الوقائع الإخبارية"
+        "U.S. Embassy & Consulate in Iraq (.gov)"
       ],
       "related": [],
-      "tag": "치안·테러",
+      "tag": "한국·외교",
       "impact": {
         "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "트럼프-이라크총리 통화 \"주변국 공격에 이라크 영토 사용금지\"",
-      "source": "뉴시스",
-      "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261106_0003857162",
-      "date": "2026-11-06T16:24:16.000Z",
-      "lang": "ko",
-      "titleKo": "트럼프-이라크총리 통화 \"주변국 공격에 이라크 영토 사용금지\"",
-      "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261106_0003857162",
-      "body": "[서울=뉴시스] 차미례 기자 = 이라크의 알리 알 자이디총리가 도널드 트럼프 미국 대통령과 5일(현지시간) 중동상황에 관한 전화 회담을 했다고 이라크 총리 공보실이 발표했다",
-      "bodyKo": "[서울=뉴시스] 차미례 기자 = 이라크의 알리 알 자이디총리가 도널드 트럼프 미국 대통령과 5일(현지시간) 중동상황에 관한 전화 회담을 했다고 이라크 총리 공보실이 발표했다",
-      "tried": true,
-      "count": 8,
-      "sources": [
-        "Bloom Pakistan",
-        "Daily Pakistan",
-        "ASHARQ AL-AWSAT English",
-        "Demócrata",
-        "UA.NEWS",
-        "شبكة تواصل الإخبارية"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크, 이란 공격을 위한 영토 사용 요청 거부",
-          "source": "Bloom Pakistan",
-          "link": "https://bloompakistan.com/iraq-refuses-us-use-territory-attacks-on-iran/"
-        },
-        {
-          "titleKo": "이라크, 미국의 이란 공격 작전에 영토 제공 거부",
-          "source": "Daily Pakistan",
-          "link": "https://en.dailypakistan.com.pk/06-Nov-2026/iraq-refuses-to-let-the-us-use-its-territory-for-attacks-on-iran"
-        },
-        {
-          "titleKo": "이라크, 인접국 공격에 영토 이용 거부",
-          "source": "ASHARQ AL-AWSAT English",
-          "link": "https://english.aawsat.com/arab-world/5338153-iraq-rejects-use-its-territories-attack-neighbors"
-        },
-        {
-          "titleKo": "이라크 총리, 트럼프에 이라크가 인접국 공격 기지가 되지 않을 것 약속",
-          "source": "Demócrata",
-          "link": "https://www.democrata.es/en/international/the-iraqi-prime-minister-promises-trump-that-iraq-will-not-be-a-base-for-attacks-on-neighboring-countries/"
-        },
-        {
-          "titleKo": "이라크 총리, 인접국 공격에 국토 이용 거부 — 아샤르크 알아우사트",
-          "source": "UA.NEWS",
-          "link": "https://ua.news/en/dovkolo-svitu/premier-iraku-vidkinuv-vikoristannia-krayini-dlia-atak-na-susidiv-asharq-al-awsat"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "line": "현장 직접 영향 낮음",
         "act": "",
         "place": "",
         "km": null
       }
     },
     {
-      "title": "إغلاق مطاعم مخالفة للشروط الصحية في كركوك",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/amp/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%BA%D9%84%D8%A7%D9%82-%D9%85%D8%B7%D8%A7%D8%B9%D9%85-%D9%85%D8%AE%D8%A7%D9%84%D9%81%D8%A9-%D9%84%D9%84%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9-%D9%81%D9%8A-%D9%83%D8%B1%D9%83%D9%88%D9%83",
-      "date": "2026-11-06T16:20:50.000Z",
-      "lang": "ar",
-      "titleKo": "키르쿠크 보건 위반 음식점 폐쇄",
-      "url": "https://shafaq.com/amp/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%BA%D9%84%D8%A7%D9%82-%D9%85%D8%B7%D8%A7%D8%B9%D9%85-%D9%85%D8%AE%D8%A7%D9%84%D9%81%D8%A9-%D9%84%D9%84%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9-%D9%81%D9%8A-%D9%83%D8%B1%D9%83%D9%88%D9%83",
-      "body": "أعلنت دائرة صحة محافظة كركوك، يوم الخميس، تنفيذ حملة رقابية أسفرت عن إغلاق عدد من المطاعم المخالفة للشروط والتعليمات الصحية، وذلك لعدم التزامها بالضوابط الصحية المعتمدة.\nوقال مدير عام صحة كركوك، الدكتور أرجان محمد رشيد، لوكالة شفق نيوز، إن \"شعبة الرقابة الصحية نفذت حملة ميدانية، حسب توجيهات المدير العام، لمتابعة مدى التزام المطاعم بالشروط والتعليمات الصحية، وأسفرت عن غلق عدد من المطاعم المخالفة\".\nوأضاف أن \"الحملة تأتي في إطار الإجراءات الرقابية الهادفة إلى الحفاظ على الصحة العامة وسلامة المواطنين، والتأكد من تطبيق المعايير الصحية المعتمدة في المؤسسات الغذائية\".\nوأكد رشيد استمرار الجولات الميدانية لفرق الرقابة الصحية في مختلف مناطق المحافظة، واتخاذ الإجراءات القانونية اللازمة بحق المطاعم والمنشآت الغذائية المخالفة، مشدداً على عدم التهاون مع أي مخالفة من شأنها أن تشكل خطراً على صحة المواطنين.",
-      "bodyKo": "**키르쿠크 보건당국, 위생 기준 위반 식당 폐쇄**\n\n키르쿠크주 보건부는 목요일 위생 기준 및 지침을 위반한 다수의 식당을 폐쇄한 감시 캠페인을 실시했다고 발표했다.\n\n키르쿠크 보건부 국장 아르잔 무함마드 라시드 박사는 샤팍뉴스통신에 \"보건감시과는 국장의 지시에 따라 식당들의 위생 기준 및 지침 준수 여부를 점검하기 위한 현장 캠페인을 실시했으며, 이를 통해 위반 식당 다수를 폐쇄했다\"고 말했다.\n\n라시드는 \"이번 캠페인은 공중보건 보호와 국민 안전을 목표로 하는 감시 조치의 일환이며, 식품 관련 기관에서 승인된 위생 기준의 적용을 확인하기 위한 것\"이라고 덧붙였다.\n\n라시드는 보건감시팀의 주(州) 전역 현장 순회를 계속하고 위반 식당 및 식품 시설에 대해 필요한 법적 조치를 취할 것이라고 강조했으며, 국민 건강에 위험을 초래할 수 있는 어떤 위반도 용납하지 않을 것임을 명시했다.",
+      "title": "비스마야 미수금 받은 한화…'이라크 수주' 상흔 아물어 가나",
+      "source": "KB Think",
+      "link": "https://kbthink.com/news-list/view.html?newsId=20261107073000523",
+      "date": "2026-11-06T22:29:59.000Z",
+      "lang": "ko",
+      "titleKo": "비스마야 미수금 받은 한화…'이라크 수주' 상흔 아물어 가나",
+      "url": "https://kbthink.com/news-list/view.html?newsId=20261107073000523",
+      "body": "이라크 NIC, 한화에 약 1억1천100만 달러 미수금 지급키로 현대건설·GS건설, 카르발라 정유시설 미수금 처리 여부도 주시 정필중 기자 = 이라크 국가투자위원회가 바그다드 인근 비스마야 신도시 미수금 1억1천100만 달러를 한화[000880] 건설부문에 지급하기로\n(서울=연합인포맥스) 정필중 기자 = 이라크 국가투자위원회(NIC)가 바그다드 인근 비스마야 신도시 미수금 1억1천100만 달러를 한화[000880] 건설부문에 지급하기로 했다.\n사업 미수금을 뒤늦게나마 받는 사례가 나타났다는 점은 긍정적이나, 국내 건설사 입장에서 이라크 미수금 문제는 여전히 이어지는 상황이다.\n7일 현지 외신 등에 따르면 이라크 NIC는 한화에 약 1억1천100만 달러의 지급금을 지급하는 절차를 최근 마쳤다. 이라크 내각이 이번 대금 지급을 결정했다.\n지난달 이라크 의회 투자개발위원회는 한화에 지급할 미지급금을 1차로 분할해 지급하겠다고 발표했다.\n비스마야 신도시 사업은 바그다드 인근 비스마야 지역에 약 10만 가구 주택과 사회기반 시설 등을 건설하는 12조 원 규모의 대형 프로젝트로 한화 건설부문이 이를 수주했다.\n주택 사업은 지난 2012년, 인프라 사업은 2015년부터 진행됐다. 공시에 따르면 두 사업의 기한은 오는 2032년까지다.\n당초 2020년까지 공사를 마무리한다는 계획이었으나, 2010년 중반에 발발한 이라크 내전 등으로 발주처와 협의해 사업을 지연한 바 있다.\n종전으로 현장이 정상화됐지만, 신종 코로나바이러스 감염증(코로나19)이 확산하면서 해당 프로젝트도 전면 중지됐다.\n지난 2022년 한화 건설부문은 발주처인 NIC에 공사 계약 해지를 통보했다. 수주 후 약 10년 동안 이라크 총리가 4번 바뀌는 등 정권이 급변해 공사 대금을 받기 쉽지 않은 상황이었다.",
+      "bodyKo": "이라크 NIC, 한화에 약 1억1천100만 달러 미수금 지급키로 현대건설·GS건설, 카르발라 정유시설 미수금 처리 여부도 주시 정필중 기자 = 이라크 국가투자위원회가 바그다드 인근 비스마야 신도시 미수금 1억1천100만 달러를 한화[000880] 건설부문에 지급하기로\n(서울=연합인포맥스) 정필중 기자 = 이라크 국가투자위원회(NIC)가 바그다드 인근 비스마야 신도시 미수금 1억1천100만 달러를 한화[000880] 건설부문에 지급하기로 했다.\n사업 미수금을 뒤늦게나마 받는 사례가 나타났다는 점은 긍정적이나, 국내 건설사 입장에서 이라크 미수금 문제는 여전히 이어지는 상황이다.\n7일 현지 외신 등에 따르면 이라크 NIC는 한화에 약 1억1천100만 달러의 지급금을 지급하는 절차를 최근 마쳤다. 이라크 내각이 이번 대금 지급을 결정했다.\n지난달 이라크 의회 투자개발위원회는 한화에 지급할 미지급금을 1차로 분할해 지급하겠다고 발표했다.\n비스마야 신도시 사업은 바그다드 인근 비스마야 지역에 약 10만 가구 주택과 사회기반 시설 등을 건설하는 12조 원 규모의 대형 프로젝트로 한화 건설부문이 이를 수주했다.\n주택 사업은 지난 2012년, 인프라 사업은 2015년부터 진행됐다. 공시에 따르면 두 사업의 기한은 오는 2032년까지다.\n당초 2020년까지 공사를 마무리한다는 계획이었으나, 2010년 중반에 발발한 이라크 내전 등으로 발주처와 협의해 사업을 지연한 바 있다.\n종전으로 현장이 정상화됐지만, 신종 코로나바이러스 감염증(코로나19)이 확산하면서 해당 프로젝트도 전면 중지됐다.\n지난 2022년 한화 건설부문은 발주처인 NIC에 공사 계약 해지를 통보했다. 수주 후 약 10년 동안 이라크 총리가 4번 바뀌는 등 정권이 급변해 공사 대금을 받기 쉽지 않은 상황이었다.",
       "tried": true,
-      "count": 20,
+      "count": 2,
       "sources": [
-        "مانكيش نت",
-        "المعلومة",
-        "الوكالة الوطنية العراقية للأنباء| نينا",
-        "عراق اوبزيرفر",
-        "قناة الرشيد الفضائية",
-        "964media"
+        "KB Think",
+        "비즈니스포스트"
       ],
       "related": [
+        {
+          "titleKo": "한화 건설부문 이라크 비스마야 신도시 사업 미수금 1차분 받는다, 공사 재개 기대 커져",
+          "source": "비즈니스포스트",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1uenlJdHAtMEV0b3pyb0NZR3l2YlVkZjlZY0l6bFF3VTg3VVg2WGJkWGJjQWhUa1duMXI0UzlsNTBpemJ5bks2TEUwTThWSndkVjBvNTU0U3VJaWQ4aGdsOGVwQjRlQnZjLUxZeVF4M1hCdGs?oc=5"
+        }
+      ],
+      "tag": "한국·외교",
+      "impact": {
+        "lv": "y",
+        "line": "한국·한국 기업 관련 소식 — 한국인 직원 참고",
+        "act": "",
+        "place": "비스마야",
+        "km": 0
+      }
+    },
+    {
+      "title": "الأنواء الجوية تنفي قطع طريق بغداد كركوك بسبب الامطار",
+      "source": "الوكالة الوطنية العراقية للأنباء| نينا",
+      "link": "https://ninanews.com/website/News/Details?Key=1324091",
+      "date": "2026-11-06T21:41:34.000Z",
+      "lang": "ar",
+      "titleKo": "기상청, 바그다드-키르쿠크 도로 폐쇄 부인",
+      "url": "https://ninanews.com/website/News/Details?Key=1324091",
+      "body": "بغداد/نينا/ واصلت أسعار النفط ارتفاعها في الأسواق العالمية، حيث تجاوز خام برنت مستوى 117 دولاراً للبرميل، بزيادة تفوق 2% خلال تعاملات اليوم الجمعة، فيما بلغ خام غرب تكساس الأمريكي نحو 103.9 دولاراً. و يتجه خام برنت نحو تسجيل مكاسب شهرية تقارب 11% خلال أكتوبر/تشرين الاول الحالي، محققاً بذلك ارت\nبغداد /نينا/ كشفت صحيفة \"وول ستريت جورنال\"، اليوم السبت، عن وجود توجه لدى وزارة الحرب الأميركية \"البنتاغون\" لنقل القواعد العسكرية إلى مناطق أبعد عن متناول إيران. وذكرت الصحيفة، في تقرير : أن \"274 مبنى في 24 منشأة عسكرية ظهرت عليها آثار أضرار جراء الاستهدافات الإيرانية خلال الأشهر الستة الأولى م\nبغداد/نينا/أعلن البنك المركزي العراقي، اليوم الإثنين، رفع حصة المسافر من الدولار النقدي إلى (3000) دولار أمريكي، بدلاً من (2000) دولار، اعتباراً من يوم غد الثلاثاء وبحد أقصى (6) مرات سنوياً، وفق الآلية التنظيمية والضوابط المعتمدة. وذكر المكتب الإعلامي للبنك المركزي، في بيان،أنه \"حرصاً على تلبية ا",
+      "bodyKo": "# 유가 계속 상승, 브렌트유 배럴당 117달러 돌파\n\n바그다드/니나/ 국제유가가 계속 상승세를 보이고 있으며, 브렌트유가 배럴당 117달러를 넘어섰다. 금요일 거래에서 2% 이상 상승했으며, 미국 서부텍사스유는 약 103.9달러에 도달했다. 브렌트유는 현재 10월 중 약 11%의 월간 수익을 기록하는 방향으로 나아가고 있으며, 이로써 상승\n\n---\n\n# 미국 국방부, 이란 공격 범위 밖으로 군사기지 이전 추진\n\n바그다드/니나/ 월스트리트저널은 토요일 미국 국방부 펜타곤이 군사기지를 이란의 공격 범위에서 벗어난 지역으로 이전할 방침을 갖고 있다고 보도했다. 신문은 보도에서 \"24개 군사시설의 274개 건물이 지난 6개월간 이란의 공격으로 인한 피해 흔적을 보였다\"고 언급했다.\n\n---\n\n# 이라크 중앙은행, 여행자 달러 한도 3000달러로 인상\n\n바그다드/니나/ 이라크 중앙은행은 월요일 여행자의 현금 달러 한도를 기존 2000달러에서 3000달러로 인상한다고 발표했다. 내일 화요일부터 적용되며, 연간 최대 6회까지 가능하며 승인된 규제 절차와 기준을 따른다. 중앙은행 홍보실은 성명에서 \"국민의 필요를 충족시키기 위한 노력의 일환으로\"라고 언급했다.",
+      "tried": true,
+      "count": 19,
+      "sources": [
+        "الوكالة الوطنية العراقية للأنباء| نينا",
+        "The New Arab",
+        "مانكيش نت",
+        "المعلومة",
+        "عراق اوبزيرفر",
+        "قناة الرشيد الفضائية"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 정부, 민간항공 경보에도 불구하고 전국 영공 폐쇄 부인",
+          "source": "The New Arab",
+          "link": "https://www.newarab.com/news/iraqi-government-denies-nationwide-airspace-closure"
+        },
         {
           "titleKo": "기상청: 바그다드-키르쿠크 도로 폭우에도 통행 가능",
           "source": "مانكيش نت",
@@ -112,11 +93,6 @@
           "titleKo": "기상청, 바그다드-키르쿠크 도로 통행 두절 부인…\"차량 통행 가능\" 확인",
           "source": "المعلومة",
           "link": "https://almaalomah.me/news/149440/local/%D8%A7%D9%84%D8%A3%D9%86%D9%88%D8%A7%D8%A1-%D8%A7%D9%84%D8%AC%D9%88%D9%8A%D8%A9-%D8%AA%D9%86%D9%81%D9%8A-%D9%82%D8%B7%D8%B9-%D8%B7%D8%B1%D9%8A%D9%82-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%83%D8%B1%D9%83%D9%88%D9%83-%D9%88%D8%AA%D8%A4%D9%83%D8%AF-%D8%A3%D9%86%D9%87-%D8%B3%D8%A7%D9%84%D9%83-%D8%A3%D9%85%D8%A7%D9%85"
-        },
-        {
-          "titleKo": "기상청, 바그다드-키르쿠크 도로 폐쇄 부인",
-          "source": "الوكالة الوطنية العراقية للأنباء| نينا",
-          "link": "https://ninanews.com/website/News/Details?Key=1324091"
         },
         {
           "titleKo": "바그다드-키르쿠크 도로 통행 가능.. 기상청 \"빗인한 폐쇄 사실 아니다\" 해명",
@@ -129,6 +105,31 @@
           "link": "https://www.alrasheedmedia.com/2026/11/06/711535/"
         }
       ],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "r",
+        "line": "통행금지·도로 통제 (바그다드) — 출퇴근·공항 이동 지연 가능",
+        "act": "외부 이동 일정 조정 · 현지 인력 출근 경로 확인",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Northern Iraq struggles with Kurdish political divisions and security",
+      "source": "FDD's Long War Journal",
+      "link": "https://www.longwarjournal.org/archives/2026/11/northern-iraq-struggles-with-kurdish-political-divisions-and-security.php",
+      "date": "2026-11-06T21:22:11.000Z",
+      "lang": "en",
+      "titleKo": "북부 이라크, 쿠르드족 정치 분열과 보안 문제로 고심",
+      "url": "https://www.longwarjournal.org/archives/2026/11/northern-iraq-struggles-with-kurdish-political-divisions-and-security.php",
+      "body": "Northern Iraq faces mounting security and political challenges as Iranian drone attacks continue to target Kurdish Iranian opposition groups, Iraqi forces conduct operations against the Islamic State, and political disputes threaten stability in Sinjar. These developments come amid growing tensions between the Kurdistan Democratic Party and the Patriotic Union of Kurdistan, complicating efforts to strengthen security and political stability following the withdrawal of US forces from Iraq.\nOn November 4, Iran launched a drone attack targeting the autonomous Kurdistan Region of northern Iraq. It is the latest in more than 1,000 Iranian attacks on territory administered by the Kurdistan Regional Government (KRG). More broadly, northern Iraq faces persistent political divisions and security threats. In the Sinjar region, home to the Yazidi minority, political disputes make stability difficult. In Kirkuk, Iraq’s Counter-Terrorism Service (ICTS) captured an Islamic State suspect on November ",
+      "bodyKo": "북부 이라크가 이란의 드론 공격이 쿠르드계 이란 야당 세력을 계속 겨냥하고, 이라크군이 이슬람국가(IS)에 대한 작전을 전개하며, 신자르에서의 정치 분쟁이 안정을 위협하면서 보안과 정치적 도전에 직면해 있다. 이러한 전개는 미군의 이라크 철수 이후 쿠르드민주당과 쿠르드애국연합 간 긴장이 고조되면서 보안과 정치적 안정 강화 노력을 복잡하게 만들고 있다.\n\n11월 4일 이란은 북부 이라크의 자치 쿠르드 지역을 겨냥한 드론 공격을 감행했다. 이는 쿠르드 지역정부(KRG)가 관할하는 영토에 대한 1,000회 이상의 이란 공격 중 최근의 사례다. 더 광범위하게 북부 이라크는 지속적인 정치적 분열과 보안 위협에 직면해 있다. 야지디 소수민족이 거주하는 신자르 지역에서는 정치 분쟁으로 인해 안정이 어려운 상황이다. 키르쿠크에서 이라크 대테러국(ICTS)은 11월에 이슬람국가 용의자를 체포했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "FDD's Long War Journal"
+      ],
+      "related": [],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -139,6 +140,337 @@
       }
     },
     {
+      "title": "Iraq denies imposing restrictions on air traffic in its airspace",
+      "source": "Middle East Online",
+      "link": "https://middle-east-online.com/en/iraq-denies-imposing-restrictions-air-traffic-its-airspace",
+      "date": "2026-11-06T19:48:54.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 영공 항공 운항 제한 부인",
+      "url": "https://middle-east-online.com/en/iraq-denies-imposing-restrictions-air-traffic-its-airspace",
+      "body": "BAGHDAD — The Iraqi government on Friday denied reports that temporary restrictions had been imposed on air traffic in the country’s airspace, saying all flight routes remained available.\nGovernment spokesman Haider al-Aboudi said reports of restrictions on Iraqi airspace were unfounded, adding that all air routes remained available and there were no restrictions on air traffic, the state-run Iraqi News Agency (INA) reported.\nIn a separate statement, the Security Media Cell rejected reports circulating in some media outlets and on social media that Iraq had closed its airspace in anticipation of possible security developments.\nThe cell described the reports as inaccurate, explaining that the measures taken involved allocating a “very limited” airspace area for training purposes as part of the annual live-fire exercises conducted by the Air Defence Command using various weapons.",
+      "bodyKo": "바그다드 — 이라크 정부는 금요일 국내 영공에 임시 제한이 부과됐다는 보도를 부인하면서 모든 항공로가 정상 운영 중이라고 밝혔다.\n\n정부 대변인 하이더 알아보우디는 이라크 영공 제한에 관한 보도는 근거가 없다고 말했으며, 모든 항공로가 정상 운영 중이고 항공 교통에 대한 제한이 없다고 덧붙였다고 국영 이라크통신(INA)이 보도했다.\n\n별도의 성명에서 보안미디어셀은 이라크가 예상되는 안보 상황에 대비해 영공을 폐쇄했다는 일부 언론 매체와 소셜미디어에서 유포되는 보도를 거부했다.\n\n보안미디어셀은 해당 보도를 부정확하다고 표현하면서, 취해진 조치는 방공사령부가 다양한 무기를 사용해 실시하는 연례 실탄 훈련의 일환으로 훈련 목적을 위해 \"매우 제한된\" 영공 지역을 할당하는 것이라고 설명했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Middle East Online"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "UAE and Iraq carry out joint operation against drug-smuggling network",
+      "source": "Middle East Online",
+      "link": "https://middle-east-online.com/en/uae-and-iraq-carry-out-joint-operation-against-drug-smuggling-network",
+      "date": "2026-11-06T19:30:44.000Z",
+      "lang": "en",
+      "titleKo": "UAE와 이라크, 마약 밀수 조직 적발 공동작전 전개",
+      "url": "https://middle-east-online.com/en/uae-and-iraq-carry-out-joint-operation-against-drug-smuggling-network",
+      "body": "ABU DHABI — UAE authorities have arrested 20 suspects and foiled an attempt to smuggle 200,000 Captagon pills and more than 30 kilogrammes of other narcotics into the country following an intelligence-sharing operation with Iraq.\nThe UAE’s National Drug Enforcement Authority said on Friday that the suspects, who hold Gulf, Arab, African and Asian nationalities, were part of an international criminal network planning to bring the drugs into the UAE through a border area in Ras Al Khaimah for distribution inside the country.\nThe seized substances included cocaine, crystal methamphetamine, marijuana, hashish and synthetic cannabinoids, commonly known as Spice, in addition to the Captagon pills.\nThe operation began after UAE and Iraqi authorities exchanged intelligence that uncovered the network’s alleged smuggling plans. The UAE agency subsequently coordinated with Ras Al Khaimah, Dubai, Sharjah and Ajman police, as well as Iraq’s General Directorate for Narcotics and Psychotropic Substan",
+      "bodyKo": "아부다비 — 아랍에미리트 당국이 이라크와의 정보 공유 작전을 통해 20명의 용의자를 체포하고 카프타곤 알약 20만 정과 기타 마약 30킬로그램 이상을 국내로 밀반입하려는 시도를 저지했다.\n\n아랍에미리트 국가마약단속청은 금요일 성명에서 걸프, 아랍, 아프리카, 아시아 국적을 가진 용의자들이 라스알카이마 국경 지역을 통해 마약을 아랍에미리트로 반입해 국내에서 유통하려던 국제 범죄 조직의 일원이라고 밝혔다.\n\n압수된 물질에는 코카인, 크리스탈 메스암페타민, 마리화나, 해시시, 스파이스로 알려진 합성 카나비노이드와 함께 카프타곤 알약이 포함됐다.\n\n이 작전은 아랍에미리트와 이라크 당국이 조직의 밀반입 계획을 적발한 정보를 교환한 후 시작됐다. 아랍에미리트 기관은 이후 라스알카이마, 두바이, 샤르자, 아즈만 경찰과 이라크 마약 및 향정신성물질 총국과 조율했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Middle East Online"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq Rejects Use of its Territories to Attack Neighbors - ASHARQ AL-AWSAT English",
+      "source": "ASHARQ AL-AWSAT English",
+      "link": "https://english.aawsat.com/arab-world/5338153-iraq-rejects-use-its-territories-attack-neighbors",
+      "date": "2026-11-06T18:56:47.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 인접국 공격에 영토 이용 거부",
+      "url": "https://english.aawsat.com/arab-world/5338153-iraq-rejects-use-its-territories-attack-neighbors",
+      "body": "Iraqi Prime Minister Ali al-Zaidi and US President Donald Trump discussed regional developments during a phone call on Thursday, with Baghdad stressing that its territory must not be used to launch attacks against neighboring states. According to a statement from the Prime Minister's office, al-Zaidi reiterated Iraq’s firm stance calling for the strict respect of state sovereignty. He further stressed that Iraqi territory must not serve as a launchpad for aggression against neighboring countries.\nThe PM underscored the vital importance of ongoing consultations between Baghdad and Washington on issues of mutual interest. He said that adopting peaceful solutions and engaging in constructive dialogue are necessary measures to maintain regional security.\nBoth leaders affirmed the importance of working together to confront current challenges. The statement noted that these efforts aim to support regional stability by prioritizing diplomacy and dialogue.",
+      "bodyKo": "**알자이디 총리, 트럼프 대통령과 통화…영토 주권 강조**\n\n이라크 알리 알자이디 총리와 도널드 트럼프 미국 대통령이 목요일 통화에서 지역 정세를 논의했다. 바그다드는 자국 영토가 인접국에 대한 공격을 개시하는 데 사용되어서는 안 된다고 강조했다. 총리실 성명에 따르면 알자이디는 국가 주권의 엄격한 존중을 촉구하는 이라크의 확고한 입장을 재차 강조했다. 그는 이라크 영토가 인접국에 대한 침략의 발판이 되어서는 안 된다고 더욱 강조했다.\n\n총리는 상호 이익 문제에 대한 바그다드와 워싱턴 간의 지속적인 협의의 중요성을 강조했다. 그는 평화적 해결책 채택과 건설적 대화 참여가 지역 안보 유지를 위한 필수 조치라고 말했다.\n\n양 지도자는 현재의 도전에 대처하기 위해 함께 일하는 것의 중요성을 재확인했다. 성명은 이러한 노력이 외교와 대화를 우선시함으로써 지역 안정을 지원하는 것을 목표로 한다고 밝혔다.",
+      "tried": true,
+      "count": 5,
+      "sources": [
+        "Pakistan Matters",
+        "ASHARQ AL-AWSAT English",
+        "Demócrata",
+        "UA.NEWS",
+        "شبكة تواصل الإخبارية"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크, 트럼프에 \"우리 영토는 이란 공격에 사용되지 않을 것\"",
+          "source": "Pakistan Matters",
+          "link": "https://pakistanmatters.pk/en/world/iraq-tells-trump-its-territory-will-not-be-used-for-attacks-on-iran-26028"
+        },
+        {
+          "titleKo": "이라크 총리, 트럼프에 이라크가 인접국 공격 기지가 되지 않을 것 약속",
+          "source": "Demócrata",
+          "link": "https://www.democrata.es/en/international/the-iraqi-prime-minister-promises-trump-that-iraq-will-not-be-a-base-for-attacks-on-neighboring-countries/"
+        },
+        {
+          "titleKo": "이라크 총리, 인접국 공격에 국토 이용 거부 — 아샤르크 알아우사트",
+          "source": "UA.NEWS",
+          "link": "https://ua.news/en/dovkolo-svitu/premier-iraku-vidkinuv-vikoristannia-krayini-dlia-atak-na-susidiv-asharq-al-awsat"
+        },
+        {
+          "titleKo": "이라크, 영토를 이용한 이웃국가 공격 거부",
+          "source": "شبكة تواصل الإخبارية",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5RNnBKYkE5enNLTUZhTkY0U1U3dzVNTE13enI0LW8zaG0xX0NHTEljSjN5SWdyQjhqNXpEZlgxS2RQcjJOWTBJamFacnIxUnRvakw4?oc=5"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "الزيدي يوجه بزيادة حصة كركوك من الكهرباء والوقود والإسراع بحسم ملف المحافظ",
+      "source": "PUKmedia یەکێتیی نیشتمانیی کوردستان",
+      "link": "https://www.pukmedia.com/AR/Details/191412",
+      "date": "2026-11-06T18:49:25.000Z",
+      "lang": "ar",
+      "titleKo": "지디 총리, 키르쿠크의 전력·연료 할당량 증대 지시…지방정부 문제 해결 촉구",
+      "url": "https://www.pukmedia.com/AR/Details/191412",
+      "body": "الرئيسية الاخبار کوردستان العراق العالم لقاءات اقتصاد الاراء تقاریر أ.و.ك الوسائط المتعدده إنفوجرافيك معرض الصور فیدیو الإتصال بنا من نحن أرشيف الزيدي يوجه بزيادة حصة كركوك من الكهرباء والوقود والإسراع بحسم ملف المحافظ کوردستان 04:58 PM - 2026-11-03 المكتب الاعلامي لرئيس الوزراء العراقي جانب من الاجتماع وجه رئيس مجلس الوزراء، علي فالح الزيدي، بزيادة حصة محافظة كركوك من الطاقة الكهربائية والوقود المخصص للمولدات الأهلية، والإسراع في حسم ملف اختيار المحافظ وإنهاء الفراغ الإداري وفق الاتفاقات بين مكونات المحافظة. جاء ذلك بحسب بيان صادر من المكتب الاعلامي لرئيس مجلس الوزراء العراقي وتلقى ( PUKMEDIA ) نسخة منه، خلال ترؤسه الزيدي اليوم الثلاثاء اجتماعاً موسعاً لبحث الأوضاع الإدارية والخدمية والأمنية في كركوك، بحضور نائب رئيس الوزراء للشؤون الاقتصادية، ووزراء الداخلية والعدل والدولة للشؤون الخارجية، ورئيس هيأة الحشد الشعبي، ومدير مكتب القائد العام للقوات المسلحة، ورئيس جهاز الأمن الوطني، ورئيس كتلة الحزب الديمقراطي الكردستاني النيابية. وشدد الزيدي خلال الاجتماع على اتخاذ القيادات الأمنية الإجر",
+      "bodyKo": "**알리 팔레흐 알지디 총리, 키르쿠크 전력·연료 공급 확대 지시**\n\n이라크 총리 알리 팔레흐 알지디는 키르쿠크주의 전력 공급량과 민간 발전기용 연료 할당량을 늘리고, 주지사 선임 문제를 신속히 해결해 행정 공백을 메울 것을 지시했다.\n\n이라크 총리실 홍보실이 발표한 성명에 따르면, 알지디는 화요일 키르쿠크의 행정·서비스·보안 상황을 논의하기 위한 확대 회의를 주재했다. 회의에는 경제담당 부총리, 내무부·법무부·외교담당 국무부 장관, 인민동원군 사령관, 총사령부 참모장, 국가안보국장, 쿠르디스탄민주당 의회 교섭단 대표가 참석했다.\n\n알지디는 회의에서 보안 지도부가 신속한 조치를 취할 것을 강조했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "PUKmedia یەکێتیی نیشتمانیی کوردستان"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "키르쿠크",
+        "km": 254
+      }
+    },
+    {
+      "title": "Iraq denies US access to its territory for potential strikes on Iran",
+      "source": "Dunya News",
+      "link": "https://dunyanews.tv/en/World/981591-iraq-denies-us-access-to-its-territory-for-potential-strikes-on-iran",
+      "date": "2026-11-06T18:48:35.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 이란 공습을 위한 미국의 영토 접근 거부",
+      "url": "https://dunyanews.tv/en/World/981591-iraq-denies-us-access-to-its-territory-for-potential-strikes-on-iran",
+      "body": "BAGHDAD (Web Desk) - Iraq has refused to allow the United States to use its territory as a launchpad for military strikes against neighbouring Iran, amid rising regional tensions.\nAccording to a statement issued by the Iraqi Prime Minister's Office, Prime Minister Ali al-Zaidi conveyed Baghdad's position during a telephone conversation with US President Donald Trump, stressing that Iraqi territory should not be used as a military base for attacks against neighbouring countries.\nIraq's foreign minister also warned that the country was not prepared for war, cautioning that military strikes against Iran could have devastating consequences for Iraq.\nMeanwhile, Iran has threatened to expand the range of its retaliatory strikes to Europe if the United States and Israel launch fresh attacks against the country.",
+      "bodyKo": "바그다드 - 이라크가 지역 긴장이 고조되는 가운데 미국이 이란에 대한 군사 공격의 발판으로 자국 영토를 사용하도록 허용하기를 거부했다.\n\n이라크 총리실이 발표한 성명에 따르면 알리 알자이디 총리는 도널드 트럼프 미국 대통령과의 전화 통화에서 바그다드의 입장을 전달했으며, 이라크 영토가 이웃 국가들에 대한 공격을 위한 군사 기지로 사용되어서는 안 된다고 강조했다.\n\n이라크 외무장관도 이란에 대한 군사 공격이 이라크에 치명적인 결과를 초래할 수 있다고 경고하면서 이라크는 전쟁에 대비하지 않았다고 경고했다.\n\n한편 이란은 미국과 이스라엘이 자국에 대해 새로운 공격을 감행할 경우 보복 공격의 범위를 유럽까지 확대하겠다고 위협했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Dunya News"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "صمت الرصاص أم العاصفة المقابلة؟ بغداد تريد توسيع نافذة الدبلوماسية",
+      "source": "المسلة الحدث كما حدث",
+      "link": "https://almasalah.com/archives/144220",
+      "date": "2026-11-06T18:28:33.000Z",
+      "lang": "ar",
+      "titleKo": "총성의 침묵인가, 역풍인가? 바그다드, 외교 창구 확대 추진",
+      "url": "https://almasalah.com/archives/144220",
+      "body": "بغداد/المسلة: تتحرك حكومة الزيدي في مساحة ضيقة لدرء خطر مواجهة مدمّرة قد تحوّل أراضيها إلى ميدان رئيسي للصراع.\nالاتصال الهاتفي بين وزيري الخارجية العراقي والإيراني عكس حجم التوتر السائد ورغبة الطرفين في استكشاف المنافذ الدبلوماسية الأخيرة.\nوطرح العراق لمبادرة تشكيل لجنة وزارية إقليمية لزيارة واشنطن وطهران يمثل محاولة جادة لبناء جسور التواصل المباشر. كما يسلط الضوء على مخاوف بغداد من العودة إلى نفق الصراعات المسلحة وتداعياتها الكارثية على استقرارها الداخلي.\nوتأتي المبادرة العراقية في توقيت حساس يتقاطع مع نتائج الانتخابات النصفية الأمريكية وتصاعد نبرة المواجهة الإقليمية، مما يفرض على بغداد التحرك بسرعة لمنع الانفجار.\nاما الرؤية الإيرانية المعروضة فتضمنت نقاطاً مفصلية ترتبط بإعادة فتح مضيق هرمز ومراجعة الملف النووي وتفعيل تفاهمات سابقة، وهو ما يضع اللجنة الإقليمية المقترحة أمام اختبار حقيقي لمدى قدرتها على تقريب وجهات النظر.",
+      "bodyKo": "**바그다드, 이라크 정부 긴장 완화 외교전 나서**\n\n바그다드/알무살라: 이라크 정부가 자국 영토를 주요 분쟁 무대로 변할 수 있는 파괴적 충돌의 위험을 막기 위해 제한된 범위 내에서 움직이고 있다.\n\n이라크와 이란 외교장관 간의 통화는 현재의 긴장 수준과 양측이 남은 외교적 통로를 모색하려는 의지를 반영했다.\n\n이라크가 워싱턴과 테헤란을 방문할 지역 장관급 위원회 구성 방안을 제시한 것은 직접 소통의 다리를 놓으려는 진지한 시도를 나타낸다. 또한 바그다드가 무장 분쟁의 악순환과 그로 인한 국내 안정 붕괴를 우려하고 있음을 드러낸다.\n\n이라크의 이번 방안은 미국 중간선거 결과와 지역 내 대립 수위 상승이 맞물리는 민감한 시점에 제시됐으며, 이는 바그다드에 폭발을 막기 위해 신속히 움직일 것을 강요하고 있다.\n\n이란이 제시한 입장에는 호르무즈 해협 재개방, 핵 문제 재검토, 과거 합의 이행 등과 연결된 핵심 사항들이 포함돼 있으며, 이는 제안된 지역 위원회가 입장 차이를 좁힐 수 있는 능력을 진정으로 시험받게 될 것임을 의미한다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "المسلة الحدث كما حدث"
+      ],
+      "related": [],
+      "tag": "날씨·재난",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "الأنواء الجوية تحذر من عواصف رعدية وسيول محتملة في بغداد وشمال ووسط العراق",
+      "source": "وكالة اليوم الإخبارية",
+      "link": "https://today-agency.net/Details/66243",
+      "date": "2026-11-06T18:24:04.000Z",
+      "lang": "ar",
+      "titleKo": "기상청, 바그다드·북부·중부 이라크 뇌우·홍수 경고",
+      "url": "https://today-agency.net/Details/66243",
+      "body": "حذّرت الهيئة العامة للأنواء الجوية والرصد الزلزالي، مساء الجمعة، من تأثر مدن شمال ووسط العراق بموجة من العواصف الرعدية والأمطار متفاوتة الشدة، التي قد تصل إلى الغزارة على فترات، مع احتمالية تساقط الحالوب ونشاط الرياح الهابطة. وذكر قسم التنبؤ الجوي، في تحديث صادر مساء اليوم، أن السحب الرعدية تتركز بكثافة في أجواء مدن شمال البلاد وأجزاء من المنطقة الوسطى، مع عدم استبعاد تشكل بؤر للأمطار الغزيرة في مدن أخرى، بما فيها العاصمة بغداد، فيما تكون كميات الهطول أقل في مدن الجنوب. ودعا القسم إلى تجنب السفر والتنقل البري غير الضروري خلال ساعات الليل في مناطق الشمال والوسط، بسبب احتمالية اشتداد الأمطار وتدني مدى الرؤية الأفقية، فضلاً عن نشاط الرياح الهابطة واحتمالية تشكل السيول المحلية في المناطق المنخفضة. وفي السياق، أصدرت الهيئة تحذيراً جوياً خاصاً بالطيران المدني للمجال الجوي العراقي، باللون الأحمر، للتحذير من سحب رعدية وعواصف جوية قد تؤثر في حركة الطيران وسلامته، ويسري التحذير من الساعة 6:40 إلى 10:40 مساءً بالتوقيت المحلي، اليوم الجمعة 6 تشرين الثاني 2026.",
+      "bodyKo": "**이라크 북중부 지역 천둥번개 폭우 경보**\n\n일반기상지진감시청이 금요일 저녁 이라크 북부 및 중부 도시들이 천둥번개를 동반한 폭우의 영향을 받을 것으로 경고했다. 우박 낙하 가능성과 하강풍의 활동이 예상되며 강도가 변할 수 있다. 기상예보과는 금요일 저녁 발표한 업데이트에서 천둥번개 구름이 북부 도시 지역과 중부 지역 일부에 집중되어 있으며, 바그다드를 포함한 다른 도시들에서도 폭우 지역이 형성될 가능성을 배제하지 않는다고 밝혔다. 남부 도시들의 강수량은 상대적으로 적을 것으로 예상된다. 기상예보과는 북부 및 중부 지역에서 야간 시간대 불필요한 이동과 육로 여행을 피할 것을 권고했다. 강우 강도 증가와 수평 시정 악화, 하강풍 활동, 저지대 지역의 국지성 홍수 형성 가능성이 있기 때문이다. 한편 기상청은 이라크 영공에 대해 민간항공 경보를 빨간색으로 발령했다. 천둥번개 구름과 기상 악화로 항공 운항과 안전에 영향을 미칠 수 있다는 경고다. 경보는 현지시간 금요일 11월 6일 오후 6시 40분부터 10시 40분까지 유효하다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة اليوم الإخبارية"
+      ],
+      "related": [],
+      "tag": "날씨·재난",
+      "impact": {
+        "lv": "y",
+        "line": "기상 악화 소식 — 옥외·고소·양중 작업 영향 가능",
+        "act": "상황실 날씨·모래폭풍 예보 확인 후 작업 조정",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Iraq, US envoy discuss regional de-escalation",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Iraq/Iraq-US-envoy-discuss-regional-de-escalation",
+      "date": "2026-11-06T18:19:04.000Z",
+      "lang": "en",
+      "titleKo": "이라크-미국 특사, 지역 긴장 완화 논의",
+      "url": "https://shafaq.com/en/Iraq/Iraq-US-envoy-discuss-regional-de-escalation",
+      "body": "Shafaq News- BaghdadIraqi Prime Minister Ali al-Zaidi and US President Donald Trump's special envoy to Iraq, Tom Barrack, discussed efforts to ease regional tensions and prevent conflicts from spreadi\nAccording to a statement from the prime minister's media office, al-Zaidi welcomed Barrack at his office, where they reviewed Iraq-US relations and prospects for expanding economic and investment cooperation.\nThe talks also addressed regional security challenges and the need to strengthen diplomatic efforts to contain crises and support stability.\nThe meeting came about an hour after al-Zaidi spoke by telephone with Trump about regional developments, security challenges and prospects for the coming period.\nDuring the call, both sides emphasized continued coordination and consultation, prioritizing dialogue and diplomacy to prevent further escalation, according to the prime minister's office.",
+      "bodyKo": "**바그다드, 알자이디 총리-트럼프 특사 바라크 회담**\n\n샤팍뉴스- 바그다드에서 알리 알자이디 이라크 총리와 도널드 트럼프 미국 대통령의 이라크 특사 톰 바라크가 지역 긴장 완화와 분쟁 확산 방지 노력에 대해 논의했다.\n\n총리 미디어실 성명에 따르면 알자이디는 자신의 사무실에서 바라크를 환영했으며, 이 자리에서 이라크-미국 관계와 경제·투자 협력 확대 전망을 검토했다.\n\n회담에서는 지역 안보 문제와 외교적 노력 강화를 통해 위기를 억제하고 안정을 지원할 필요성도 다뤘다.\n\n이번 회담은 알자이디가 트럼프 대통령과 지역 정세, 안보 문제, 향후 전망에 대해 전화 통화를 나눈 지 약 1시간 후에 이루어졌다.\n\n통화 중 양측은 지속적인 조율과 협의를 강조했으며, 대화와 외교를 우선시해 추가 긴장 고조를 방지하기로 했다고 총리실이 밝혔다.",
+      "tried": true,
+      "count": 5,
+      "sources": [
+        "وكالة اليوم الإخبارية",
+        "شفق نيوز",
+        "Rudaw",
+        "Ednews.net"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 외무장관, 이란 외무장관과 통화.. 테헤란·워싱턴 방문 지역 이니셔티브로 긴장 완화 추진",
+          "source": "وكالة اليوم الإخبارية",
+          "link": "https://today-agency.net/Details/66240"
+        },
+        {
+          "titleKo": "트럼프 통화 후 미국 특사, 지역 안정에서 이라크 역할 칭찬; 석유 부문 개발 진행 중",
+          "source": "Rudaw",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1YVEVkVkREb3E5bmJHMGQzVExFcW0ycGhxWUNaeVE3el9WNy15TDc1bEYxX0plSFAtWGUxeUdDTlJHUnFjZWRXUHVrTFdIbDdpSWFMOTBBUTRiUWdmTE5FTzBzRQ?oc=5"
+        },
+        {
+          "titleKo": "미국 특사: 워싱턴, 이라크와 함께하는 것을 자랑스러워한다",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Iraq/US-envoy-Washington-proud-to-stand-with-Iraq"
+        },
+        {
+          "titleKo": "미국 특사 배럭, 이라크 총리와 지역 긴장완화 논의",
+          "source": "Ednews.net",
+          "link": "https://ednews.net/en/us-envoy-barrack-discusses-regional-de-escalation-with-iraqi-prime-minister"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq Braces for Possible US-Iran War with Emergency Military, Civilian Plans",
+      "source": "شبكة تواصل الإخبارية",
+      "link": "https://twaslnews1.twaslnews.com/7222417/",
+      "date": "2026-11-06T18:02:43.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 미국-이란 전쟁 가능성에 긴급 군사·민간 대비책 추진",
+      "url": "https://twaslnews1.twaslnews.com/7222417/",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شبكة تواصل الإخبارية"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "الصواعق الرعدية تهدد حياة العراقيين: لا تقتربوا من الأشجار وأعمدة الكهرباء",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%A7%D9%84%D8%B5%D9%88%D8%A7%D8%B9%D9%82-%D8%A7%D9%84%D8%B1%D8%B9%D8%AF%D9%8A%D8%A9-%D8%AA%D9%87%D8%AF%D8%AF-%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D9%8A%D9%86-%D9%84%D8%A7-%D8%AA%D9%82%D8%AA%D8%B1%D8%A8%D9%88%D8%A7-%D9%85%D9%86-%D8%A7%D9%84-%D8%B4%D8%AC%D8%A7%D8%B1-%D9%88-%D8%B9%D9%85%D8%AF%D8%A9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7",
+      "date": "2026-11-06T17:57:29.000Z",
+      "lang": "ar",
+      "titleKo": "뇌우로 인한 낙뢰 위협, 이라크인들 생명 위험…나무·전주 접근 금지",
+      "url": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%A7%D9%84%D8%B5%D9%88%D8%A7%D8%B9%D9%82-%D8%A7%D9%84%D8%B1%D8%B9%D8%AF%D9%8A%D8%A9-%D8%AA%D9%87%D8%AF%D8%AF-%D8%AD%D9%8A%D8%A7%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D9%8A%D9%86-%D9%84%D8%A7-%D8%AA%D9%82%D8%AA%D8%B1%D8%A8%D9%88%D8%A7-%D9%85%D9%86-%D8%A7%D9%84-%D8%B4%D8%AC%D8%A7%D8%B1-%D9%88-%D8%B9%D9%85%D8%AF%D8%A9-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7",
+      "body": "حذر المتحدث باسم هيئة الأنواء الجوية عامر الجابري، يوم الجمعة، من مخاطر الصواعق الرعدية المصاحبة لحالات عدم الاستقرار الجوي، مؤكدا أنها ظاهرة جوية خطرة قد تتسبب بوقوع وفيات، فيما توقع اشتداد الحالة المطرية في مناطق شمال وشرق العراق خلال يومي السبت والأحد.\nوقال الجابري لوكالة شفق نيوز، إن الصواعق الرعدية تنتج عن التفريغ الكهربائي المفاجئ داخل السحب الرعدية، وتعد من أبرز الظواهر المصاحبة للعواصف الرعدية، ولا سيما خلال ساعات الليل، مبينا أن الهيئة تصدر تحذيرات جوية استباقية بشأن المناطق التي يحتمل تعرضها لهذه الظاهرة.\nوأضاف أن شدة الصواعق وتأثيراتها تختلف بحسب طبيعة الحالة الجوية، مشيرا إلى أن الصواعق المسجلة خلال الفترة الحالية ليست شديدة التأثير حتى الآن، لكنها تبقى ظاهرة خطرة تستدعي الحذر والالتزام بالإرشادات الوقائية.\nودعا الجابري، المواطنين إلى تجنب الأماكن المكشوفة والحقول المفتوحة والمرتفعات الجبلية، والابتعاد عن الأشجار المنفردة وأعمدة الكهرباء والاتصالات عند سماع الرعد، مشددا على ضرورة الاحتماء داخل مبان متينة ومغلقة أو مركبات ذات أسقف معدنية صلبة ونوافذ مغلقة.",
+      "bodyKo": "**뇌우 낙뢰 현상 주의 당부**\n\n기상청 대변인 아메르 알자브리는 금요일 대기 불안정에 동반되는 뇌우 낙뢰의 위험성을 경고했으며, 이것이 사망을 초래할 수 있는 위험한 기상 현상이라고 강조했다. 그는 토요일과 일요일 이라크 북부 및 동부 지역에서 강한 강우 현상이 심화될 것으로 예측했다.\n\n알자브리는 샤팍뉴스 통신에 뇌우 낙뢰는 뇌우 구름 내 갑작스러운 방전으로 발생하며, 특히 야간 시간대에 뇌우를 동반하는 주요 현상 중 하나라고 설명했다. 그는 기상청이 이 현상에 노출될 가능성이 있는 지역에 대해 사전 기상 경보를 발령하고 있다고 덧붙였다.\n\n낙뢰의 강도와 영향은 기상 상황의 특성에 따라 다르며, 현재 기간에 기록된 낙뢰는 아직까지 영향이 심하지는 않지만 여전히 주의와 예방 지침 준수를 요구하는 위험한 현상이라고 했다.\n\n알자브리는 시민들에게 천둥소리가 들릴 때 노출된 장소, 개활지, 산악 고지대를 피하고 고립된 나무, 전기주, 통신주에서 멀리 떨어질 것을 당부했다. 그는 견고하고 폐쇄된 건물 내부나 견고한 금속 지붕과 닫힌 창문이 있는 차량 내부에 대피할 필요성을 강조했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "اعتقال 3 أشخاص وضبط 35 صاروخاً داخل شاحنة جنوبي بغداد",
+      "source": "الوقائع الإخبارية",
+      "link": "https://alwakaai.com/article/762442",
+      "date": "2026-11-06T17:02:58.000Z",
+      "lang": "ar",
+      "titleKo": "바그다드 남부에서 3명 체포, 트럭에서 로켓탄 35발 적발",
+      "url": "https://alwakaai.com/article/762442",
+      "body": "الوقائع الإخباري ـ ألقت قوات أمنية عراقية القبض على ثلاثة أشخاص، أثناء نقلهم 35 صاروخاً مجهول النوع داخل شاحنة في منطقة اللطيفية جنوبي العاصمة بغداد، على",
+      "bodyKo": "이라크 보안군, 바그다드 남부 라티피야 지역에서 정체불명 로켓탄 35발 운반 중인 3명 체포\n\n이라크 보안군이 바그다드 남부 라티피야 지역에서 트럭으로 정체불명 로켓탄 35발을 운반 중이던 3명을 체포했다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "الوقائع الإخبارية",
+        "Lebanon ON"
+      ],
+      "related": [
+        {
+          "titleKo": "소식통: 바그다드 남부에서 로켓탄 35발 적재 트럭 탈승 무장 조직원 3명 체포",
+          "source": "Lebanon ON",
+          "link": "https://www.lebanonon.com/news/446484"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
       "title": "سيول وادي الشاي تقطع طريق كركوك–بغداد الحولي",
       "source": "المعلومة",
       "link": "https://almaalomah.me/news/149438/local/%D8%B3%D9%8A%D9%88%D9%84-%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B4%D8%A7%D9%8A-%D8%AA%D9%82%D8%B7%D8%B9-%D8%B7%D8%B1%D9%8A%D9%82-%D9%83%D8%B1%D9%83%D9%88%D9%83%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D8%AD%D9%88%D9%84%D9%8A",
@@ -146,7 +478,7 @@
       "lang": "ar",
       "titleKo": "차이 계곡 홍수가 키르쿠크-바그다드 순환도로 단절",
       "url": "https://almaalomah.me/news/149438/local/%D8%B3%D9%8A%D9%88%D9%84-%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B4%D8%A7%D9%8A-%D8%AA%D9%82%D8%B7%D8%B9-%D8%B7%D8%B1%D9%8A%D9%82-%D9%83%D8%B1%D9%83%D9%88%D9%83%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D8%AD%D9%88%D9%84%D9%8A",
-      "body": "المعلومة/ صلاح الدين ... أعلنت قائممقامية طوزخورماتو في صلاح الدين، الجمعة، بدء ذروة تدفق السيول في وادي الشاي، والتي من المؤمل أن تستمر إلى صباح يوم غد، فيما أشار القائممقام ذو الفقار محمد حيدر إلى أن الطريق الحولي سيبقى مغلقاً لأسباب تتعلق بالسلامة. وأوضح حيدر في حديثه لـ/المعلومة/، أن \"غزارة الأمطار التي هطلت في السليمانية والمناطق المحيطة بها دفعت إلى بروز سيول جارفة اندفعت باتجاه وادي الشاي، ما أدى إلى قطع الطريق الحولي الذي يمثل جزءاً مهماً من طريق كركوك&ndash;بغداد، والمخصص للسيارات والشاحنات الثقيلة وصهاريج نقل المنتجات النفطية\". وأشار إلى أن \"هذه المياه ستتجه باتجاه بحيرة السد العظيم التي تقع على الحدود الفاصلة بين ديالى وصلاح الدين\". وبيّن حيدر أن \"معدل تدفق السيول في الوقت الحالي، وفق المؤشرات، يبلغ 600 متر مكعب في الثانية، وسيبقى بهذه المعدلات إلى صباح يوم غد، حيث سيبدأ بالانخفاض\". ولفت إلى أن \"الطريق الحولي سيبقى مغلقاً لإجراءات السلامة وخطورة المرور من قبل الشاحنات، بانتظار انخفاض المياه\"، مشيراً إلى أن \"الطريق الوحيد المتبقي على طريق كركوك&ndash;بغداد هو طريق الجسر الذي ",
+      "body": "المعلومة/ صلاح الدين ... أعلنت قائممقامية طوزخورماتو في صلاح الدين، الجمعة، بدء ذروة تدفق السيول في وادي الشاي، والتي من المؤمل أن تستمر إلى صباح يوم غد، فيما أشار القائممقام ذو الفقار محمد حيدر إلى أن الطريق الحولي سيبقى مغلقاً لأسباب تتعلق بالسلامة. وأوضح حيدر في حديثه لـ/المعلومة/، أن \"غزارة الأمطار التي هطلت في السليمانية والمناطق المحيطة بها دفعت إلى بروز سيول جارفة اندفعت باتجاه وادي الشاي، ما أدى إلى قطع الطريق الحولي الذي يمثل جزءاً مهماً من طريق كركوك&ndash;بغداد، والمخصص للسيارات والشاحنات الثقيلة وصهاريج نقل المنتجات النفطية\". وأشار إلى أن \"هذه المياه ستتجه باتجاه بحيرة السد العظيم التي تقع على الحدود الفاصلة بين ديالى وصلاح الدين\". وبيّن حيدر أن \"معدل تدفق السيول في الوقت الحالي، وفق المؤشرات، يبلغ 600 متر مكعب في الثانية، وسيبقى بهذه المعدلات إلى صباح يوم غد، حيث سيبدأ بالانخفاض\". ولفت إلى أن \"الطريق الحولي سيبقى مغلقاً لإجراءات السلامة وخطورة المرور من قبل الشاحنات، بانتظار انخفاض المياه\"، مشيراً إلى أن \"الطريق الوحيد المتبقي على طريق كركوك&ndash;بغداد هو طريق الجسر الذي",
       "bodyKo": "**살라딘주 토즈호르마투 지역 와디 샤이 홍수 주의보**\n\n살라딘주 토즈호르마투 지역청이 금요일 와디 샤이의 홍수 정점이 시작됐다고 발표했으며, 이는 내일 아침까지 계속될 것으로 예상된다. 지역청장 주 알파깟 무함마드 하이다르는 순환도로가 안전상의 이유로 폐쇄될 것이라고 지적했다. 하이다르는 본지와의 인터뷰에서 \"술라이마니야와 주변 지역에 내린 집중호우로 인해 와디 샤이 방향으로 흘러내린 급류가 발생했으며, 이로 인해 키르쿠크-바그다드 도로의 중요한 구간인 순환도로가 단절됐다. 이 도로는 자동차와 대형 트럭, 석유 제품 운송 탱크로리용으로 지정된 구간\"이라고 설명했다. 그는 \"이 물은 디얄라주와 살라딘주의 경계에 위치한 대댐 호수 방향으로 흘러갈 것\"이라고 덧붙였다. 하이다르는 \"현재 홍수 유량은 지표에 따르면 초당 600세제곱미터이며, 내일 아침까지 이 수준을 유지하다가 감소하기 시작할 것\"이라고 밝혔다. 그는 \"순환도로는 안전 조치와 대형 트럭 통행의 위험성으로 인해 물이 빠질 때까지 폐쇄 상태를 유지할 것\"이라며 \"키르쿠크-바그다드 도로에서 남은 유일한 도로는 다리 도로\"라고 언급했다.",
       "tried": true,
       "count": 1,
@@ -164,28 +496,67 @@
       }
     },
     {
+      "title": "السيد الصدر: العقيدة لا تتناقض مع حب العراق البتة.. فحب العراق حب للعقيدة وحب للوطن",
+      "source": "وكالة اليوم الإخبارية",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4tdlgyWGx0WTBEeThHUWpfMkYtWEtxM3ZGU0hURnhfZTJUZm01ekVZSnk4dXZTNU95cU9rY1UtcG1tMEtHMEpJQVBpSGdfdFE?oc=5",
+      "date": "2026-11-06T16:04:25.000Z",
+      "lang": "ar",
+      "titleKo": "사드르 지도자: 신앙은 이라크 사랑과 전혀 모순되지 않는다.. 이라크 사랑은 신앙 사랑이자 조국 사랑이다",
+      "count": 1,
+      "sources": [
+        "وكالة اليوم الإخبارية"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "العراق يشتبه بمسيّرة «فجرت مخزون دبابات» وسط «معركة صامتة» مع الفصائل",
+      "source": "الشرق الأوسط",
+      "link": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5305345-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B4%D8%AA%D8%A8%D9%87-%D8%A8%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A9-%D9%81%D8%AC%D8%B1%D8%AA-%D9%85%D8%AE%D8%B2%D9%88%D9%86-%D8%AF%D8%A8%D8%A7%D8%A8%D8%A7%D8%AA-%D9%88%D8%B3%D8%B7-%D9%85%D8%B9%D8%B1%D9%83%D8%A9-%D8%B5%D8%A7%D9%85%D8%AA%D8%A9-%D9%85%D8%B9",
+      "date": "2026-11-06T16:02:54.000Z",
+      "lang": "ar",
+      "titleKo": "이라크, 드론이 '전차 탄약고 폭발' 야기했다고 의심…무장 세력과 '침묵의 전쟁' 중",
+      "url": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5305345-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B4%D8%AA%D8%A8%D9%87-%D8%A8%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A9-%D9%81%D8%AC%D8%B1%D8%AA-%D9%85%D8%AE%D8%B2%D9%88%D9%86-%D8%AF%D8%A8%D8%A7%D8%A8%D8%A7%D8%AA-%D9%88%D8%B3%D8%B7-%D9%85%D8%B9%D8%B1%D9%83%D8%A9-%D8%B5%D8%A7%D9%85%D8%AA%D8%A9-%D9%85%D8%B9",
+      "body": "قالت مصادر أمنية واستخبارية إن السلطات العراقية تشتبه في أن انفجاراً طال مخزناً استراتيجياً في شمال بغداد، مطلع أغسطس (آب) الجاري، كان نتيجة هجوم بطائرة مسيرة.\nوتعود الحادثة إلى حريق، قالت السلطات الرسمية في وقت سابق إنه «ناجم عن ارتفاع درجات الحرارة».\nويعتقد محققون، حسب المصادر، أن «طائرة مسيّرة، لم يحدد طرازها بعد، كانت تحلق فوق المعسكر قبل انفجار مخزن الذخائر التابع للفرقة المدرعة التاسعة، ما أدى إلى تدمير عدد كبير من قذائف مدرعات ودبابات أبرامز الأميركية».\nوقال ضابطان لـ«الشرق الأوسط» إن المحققين «أفرغوا محتويات كاميرات حرارية في المعسكر، وأظهرت لقطات جسماً طائراً في الموقع قادماً من الجهة الجنوبية للمعسكر، قبل انفجار مخزن الذخائر، وقذائف الدبابات».\nوقال أحد الضابطين: «خسرنا غالبية عتادنا الخاص بالدبابات (...)، الآن الفرقة المدرعة التاسعة لا تملك خزيناً من القذائف (ولا حتى قذيفة واحدة)، باستثناء الأسلحة الموجودة داخل الدبابات حالياً».",
+      "bodyKo": "**바그다드 북부 군 저장소 폭발, 드론 공격 의심**\n\n보안 및 정보 소식통은 이라크 당국이 8월 초 바그다드 북부의 전략적 저장소를 타격한 폭발이 드론 공격의 결과라고 의심하고 있다고 밝혔다.\n\n이 사건은 화재로 거슬러 올라가며, 공식 당국은 앞서 이것이 \"고온으로 인한 것\"이라고 주장했다.\n\n소식통에 따르면 수사관들은 \"기종이 아직 특정되지 않은 드론이 제9기갑여단 소속 탄약고 폭발 직전 진지 상공을 비행했으며, 이로 인해 미국산 에이브럼스 전차의 장갑차 포탄과 포탄 다수가 파괴됐다\"고 판단하고 있다.\n\n두 명의 장교는 \"중동\"에 수사관들이 \"진지 내 열화상 카메라 영상을 확보했으며, 영상에는 탄약고와 전차 포탄 폭발 직전 진지 남쪽에서 접근하는 비행 물체가 포착됐다\"고 말했다.\n\n한 장교는 \"우리는 전차 장비의 대부분을 잃었다 (...), 현재 제9기갑여단은 탄약 비축량이 없다 (심지어 포탄 한 발도 없다). 현재 전차 내부에 있는 무기를 제외하고는\"이라고 말했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "الشرق الأوسط"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "Iraqi security forces seize, destroy explosive-laden drone in Kirkuk",
       "source": "Rudaw",
       "link": "https://www.rudaw.net/english/categories/iraq/1080045",
-      "date": "2026-11-06T15:05:29.000Z",
+      "date": "2026-11-06T15:05:15.000Z",
       "lang": "en",
       "titleKo": "이라크 보안군, 키르쿠크에서 폭발물 탑재 드론 적발·파괴",
       "url": "https://www.rudaw.net/english/categories/iraq/1080045",
       "body": "Iraqi security forces intercepted and safely detonated an unidentified explosive-laden drone in Kirkuk, the Iraqi National Security Service (INSS) announced Friday amid ongoing security concerns in th",
       "bodyKo": "이라크 국가안보국(INSS)은 금요일 지속되는 보안 우려 속에서 키르쿠크에서 정체불명의 폭발물 탑재 드론을 요격해 안전하게 폭발시켰다고 발표했다.",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "Rudaw",
-        "Kurdistan24"
+        "Rudaw"
       ],
-      "related": [
-        {
-          "titleKo": "이라크 국가안보국, 키르쿠크에서 폭발물 탑재 드론 적발",
-          "source": "Kurdistan24",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMGNqaGxTWUQ5QjJVSXJBYzFHYmhQdUVLWnhqLUc4TklCN0YyTFJZaDF3UXhGSEhLRXFxM3p1d0FESUFCdGhrd09xZ1lBUVZsVW9oeW5VaU5WUlpUNG5lWDNHbW1MV0JHOVBGQWEzTFdCb3RYdWFNbkZoRU1lSFN3WTB1VzRyc2tBM21xRlZFQ2R1ZmlKNkhfQkxnOTdXV2ZJNEFCS216cllIaHQ5dUpNdQ?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -193,6 +564,27 @@
         "act": "",
         "place": "키르쿠크",
         "km": 254
+      }
+    },
+    {
+      "title": "بغداد تشتبه باستهداف إسرائيل قدرات جوية صينية لدى الفصائل الإرهابية",
+      "source": "صحيفة الوطن",
+      "link": "https://news.google.com/rss/articles/CBMiwARBVV95cUxQeGZZRElGVF9ZNmF3dWhNb0tqNHFzR2psUXM0ZlhfbG9XMm9kVVJUVTJjRTcycHl1aG1TOF9wQXhUZElUei1pcGZ6dTJqRjU4cnpweGEtdHpHd0ZnU2QxS3VMQk5VUHRPTDU2MmM4MXNxb2JJLVEzQ2hOQkVZYnNPcVFrLUhoZ09yMS1hQVhYRGhqYjFXd0FIVTBOT2xSVWpVUjdlV19ubU13Z0hlanpKYzNVd1RZMENGVU9ncXllVXRqaXdxUXdoVDdsR3d3cy12LWlMdkRpNUxwOEdQMkx1NHMwWXNCRTFjZktlMkZsQ2JSU2Q4bDIzcjNSRC1iRV9qb3hjUXhxSHNDQ1pCeHZIS1VjcThtRmRXbFBEM1hjWnBwVUVVb0dsZ05BUHk3cUxfUmdkaGtZenhUUFY4UnVibzV3ejFpeWZqSGk5cFRyd0s0UHI1cXJFTzFWTlNKeWxiWWY3dUZSTHdZbi1fV3ZKMDhINEYwTmI2TFdEM281bjBCVWFDclFybmhDTk42aUlfTFhZeUFGMGg0a0ZaeVVBTHprczJYTTNnQkhnZHl0aWxuWUxFMU1KT2U0c1FvMkI1MHA0ZGpPS1ZoZFp6bkpsc2Z2THdlQkhMTmRiam1DTXgxdkt2dy1xRjNUaDQ0X2t4NUJObkxNVGlmRXlJamhTWG1PUWROZWxDY21odjVKVDJpSzFWc29IVmNxcmtoVHRUaHdOaWlfWnBrT1ducENlYTRrSU1sdVVmMXBFbnBUVlXSAVRBVV95cUxOQkJXd053X2dGRGtySXFWeUd6WVBOMjVDbkRZMGVsUXlMWU9GdTY1WUJnNVFnM1RhWUtNREJ0bmV3VDlwTkFYUGhhWXhESDdlbGdwMlU?oc=5",
+      "date": "2026-11-06T14:20:34.000Z",
+      "lang": "ar",
+      "titleKo": "바그다드, 이스라엘의 중국산 항공 전력 테러 조직 보유 시설 타격 의심",
+      "count": 1,
+      "sources": [
+        "صحيفة الوطن"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
       }
     },
     {
@@ -319,11 +711,18 @@
       "date": "2026-11-06T10:23:58.000Z",
       "lang": "en",
       "titleKo": "이란, 석유 수출 증가에 따라 이라크에 호르무즈 해협 제한 면제",
-      "count": 1,
+      "count": 2,
       "sources": [
-        "IraqiNews"
+        "IraqiNews",
+        "Al Jazeera"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "이란이 인도·중국·카타르·이라크를 호르무즈 해협 제한에서 왜 제외하나",
+          "source": "Al Jazeera",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQREVEWGlac01nYWJUY3lwTUdnLXI2WW9mbWlmYkZzOVNxc2hoVWdnWXFtVWNXUVZ4cnpuUnFySWo0cDMwYU9HVndHRmt0ZTg5Uy02TDdxa0x4RXlLY1NQMUdSUkxGV2l5emNVX0dKaUlsV0F4dXkzUzRBQVdldGRxYlkweEZ6OUVOYXE0Ymtla3VCLVYtbzhucXNIYlp6OGkzNDdTTEg0eWlDUnp1c09B0gG0AUFVX3lxTFBzbG90aHg5TTdmRVd6bEI2Y2NsVUJUa1c4Ml81eno0LWVSbXM1R3RMVl9CR1RrNzBVeEk5UVpRQy0xU2xkZ0dPQm1VT0NTeFAyVXVySmJIYlRJNzBOb01oaklFeHdQeTdRcTFlS1BPb3oyWm5OS3BsZXZEc3dPLWNPbURLZXJTTEg3Nk1kN2ZCTUZFQnFPbWZYWVFpaERtY2tWTFN2NlhMa0g0dHFuRHVPNzVraw?oc=5"
+        }
+      ],
       "tag": "경제·유가",
       "impact": {
         "lv": "g",
@@ -428,18 +827,11 @@
       "body": "تشهد الجولة الثالثة عشرة من دوري نجوم العراق، اليوم الخميس، إقامة ثلاث مباريات، تتقدمها مواجهة الموصل ودهوك، إلى جانب\nشفقنا العراق-تشهد الجولة الثالثة عشرة من دوري نجوم العراق، اليوم الخميس، إقامة ثلاث مباريات، تتقدمها مواجهة الموصل ودهوك، إلى جانب لقاءي الكهرباء وزاخو وديالى والميناء.\nويفتتح فريقا الكهرباء وزاخو مباريات الجولة، عند الساعة الرابعة عصراً، على ملعب نادي الزوراء الرياضي، فيما يلتقي ديالى ضيفه الميناء عند الساعة الرابعة وخمس وأربعين دقيقة عصراً، على ملعب ديالى.\nوتختتم مواجهات اليوم بلقاء يجمع فريقي الموصل ودهوك، عند الساعة السادسة والنصف مساءً، على ملعب زاخو الرياضي.",
       "bodyKo": "**이라크 스타스 리그 13라운드, 오늘 3경기 개최**\n\n이라크 스타스 리그 13라운드가 오늘 목요일 3경기를 개최한다. 모술과 두후크의 대결이 주목되며, 이 외에 전력공사와 자호, 디얄라와 항만의 경기가 예정돼 있다.\n\n전력공사와 자호는 오후 4시에 주라 스포츠클럽 경기장에서 라운드의 첫 경기를 펼친다. 디얄라는 오후 4시 45분에 디얄라 경기장에서 손님팀 항만을 맞이한다.\n\n오늘 경기는 모술과 두후크의 대결로 마무리되며, 오후 6시 30분에 자호 스포츠 경기장에서 열린다.",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "عراق اوبزيرفر",
         "شفقنا العراق"
       ],
-      "related": [
-        {
-          "titleKo": "이라크 슈퍼리그 13라운드 오늘 개막전 3경기 예정",
-          "source": "عراق اوبزيرفر",
-          "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQVkZzZW95ZkV6a0lKeEVhQUY0MWdNUk5jcnBCNkllYVpPT1FkdDJWVzk0c1RfMjFDY041aFIyaVUwbWh4SkdMMDRpTld1QlpBZHdoamkzZS1EWnYxQlFCYVYyVXZfajFZbF9WakFOM1IwWmtVLVhkXzRieFN1ZUJSYkVXSklsQzNKTGkwUHZnOTk2N0JSdEVMQ0lycEk2c3dhZ1RaamE5N0syUEdRbGlNRGlTR0JmSVBTbENGUnRSYTVmeVFJUk85QWZKMGlMMTVHcHl0VVdaTUt0cVR5eUpMVGRMRDROWkloeHhuMmVzZ2Y5bnhoNVRlQmNxLVFaVlRvSVgySkxVYjkwLXU0Z3ZXT0tGVlJXUmVpZGtiR29Ydm03ZUJHQmFjVEo3V01FaHBWa2FuMXhfR1MyOEF1Nk9uUV9tNmttV0E?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -450,85 +842,28 @@
       }
     },
     {
-      "title": "Iraq, US envoy discuss regional de-escalation",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Iraq/Iraq-US-envoy-discuss-regional-de-escalation",
+      "title": "US envoy Barrack says Iraq is choosing ‘sovereignty over dependency’",
+      "source": "964media",
+      "link": "https://en.964media.com/54805/",
       "date": "2026-11-06T08:33:28.000Z",
       "lang": "en",
-      "titleKo": "이라크-미국 특사, 지역 긴장 완화 논의",
-      "url": "https://shafaq.com/en/Iraq/Iraq-US-envoy-discuss-regional-de-escalation",
-      "body": "Shafaq News- BaghdadIraqi Prime Minister Ali al-Zaidi and US President Donald Trump's special envoy to Iraq, Tom Barrack, discussed efforts to ease regional tensions and prevent conflicts from spreadi\nAccording to a statement from the prime minister's media office, al-Zaidi welcomed Barrack at his office, where they reviewed Iraq-US relations and prospects for expanding economic and investment cooperation.\nThe talks also addressed regional security challenges and the need to strengthen diplomatic efforts to contain crises and support stability.\nThe meeting came about an hour after al-Zaidi spoke by telephone with Trump about regional developments, security challenges and prospects for the coming period.\nDuring the call, both sides emphasized continued coordination and consultation, prioritizing dialogue and diplomacy to prevent further escalation, according to the prime minister's office.",
-      "bodyKo": "**바그다드, 알자이디 총리-트럼프 특사 바라크 회담**\n\n샤팍뉴스- 바그다드에서 알리 알자이디 이라크 총리와 도널드 트럼프 미국 대통령의 이라크 특사 톰 바라크가 지역 긴장 완화와 분쟁 확산 방지 노력에 대해 논의했다.\n\n총리 미디어실 성명에 따르면 알자이디는 자신의 사무실에서 바라크를 환영했으며, 이 자리에서 이라크-미국 관계와 경제·투자 협력 확대 전망을 검토했다.\n\n회담에서는 지역 안보 문제와 외교적 노력 강화를 통해 위기를 억제하고 안정을 지원할 필요성도 다뤘다.\n\n이번 회담은 알자이디가 트럼프 대통령과 지역 정세, 안보 문제, 향후 전망에 대해 전화 통화를 나눈 지 약 1시간 후에 이루어졌다.\n\n통화 중 양측은 지속적인 조율과 협의를 강조했으며, 대화와 외교를 우선시해 추가 긴장 고조를 방지하기로 했다고 총리실이 밝혔다.",
+      "titleKo": "미국 특사 배럭, 이라크가 '종속성보다 주권을 선택'한다고 발언",
+      "url": "https://en.964media.com/54805/",
+      "body": "BAGHDAD — Iraq under Prime Minister Ali al-Zaidi is choosing “sovereignty over dependency,” U.S.\nBarrack, the U.S. special presidential envoy to Iraq and Syria and ambassador to Turkey, also met Supreme Judicial Council President Faiq Zaidan on Thursday, alongside U.S. Chargé d’Affaires Steven Fagin. The visit came on the day Zaidi told President Donald Trump in a phone call that Iraq would not let its territory be used for attacks on neighboring countries.\n“The Middle East is a Rubik’s Cube. Every side touches every other, turn one face and you move the rest. No single country, and no outside power, solves it alone,” Barrack wrote in a statement posted on X after meeting Zaidi.\nThe region comes together only when its nations turn the pieces themselves, he wrote, adding: “Iraq is doing exactly that. Under Prime Minister Al-Zaidi, it is choosing sovereignty over dependency, investment over stagnation, and partnership over proxy.”",
+      "bodyKo": "바그다드 — 알리 알자이디 총리 하의 이라크가 \"종속성보다 주권을\"을 선택하고 있다고 미국의 배럭 특사가 평가했다. 미국의 중동 특별대사 겸 터키 대사인 배럭은 목요일 미국 대리대사 스티븐 파긴과 함께 최고사법위원회 위원장 파이크 자이단을 만났다. 이 방문은 알자이디 총리가 도널드 트럼프 대통령과의 통화에서 이라크가 인접국에 대한 공격에 자국 영토를 사용하도록 허용하지 않을 것이라고 말한 당일에 이루어졌다.\n\n\"중동은 루빅스 큐브다. 모든 면이 서로 닿아 있고, 한 면을 돌리면 나머지도 움직인다. 어떤 단일 국가도, 어떤 외부 세력도 혼자서는 이를 풀 수 없다\"고 배럭은 알자이디와의 만남 후 X에 올린 성명에서 썼다.\n\n지역이 함께 모이는 것은 그 지역의 국가들이 스스로 조각을 움직일 때뿐이라고 그는 덧붙였으며, \"이라크가 정확히 그렇게 하고 있다. 알자이디 총리 하에서 이라크는 종속성보다 주권을, 정체보다 투자를, 대리전보다 동반자 관계를 선택하고 있다\"고 했다.",
       "tried": true,
-      "count": 6,
+      "count": 1,
       "sources": [
-        "964media",
-        "شفق نيوز",
-        "Ednews.net",
-        "IraqiNews"
+        "964media"
       ],
-      "related": [
-        {
-          "titleKo": "미국 특사 배럭, 이라크가 '종속성보다 주권을 선택'한다고 발언",
-          "source": "964media",
-          "link": "https://en.964media.com/54805/"
-        },
-        {
-          "titleKo": "미국 특사: 워싱턴, 이라크와 함께하는 것을 자랑스러워한다",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Iraq/US-envoy-Washington-proud-to-stand-with-Iraq"
-        },
-        {
-          "titleKo": "미국 특사 배럭, 이라크 총리와 지역 긴장완화 논의",
-          "source": "Ednews.net",
-          "link": "https://ednews.net/en/us-envoy-barrack-discusses-regional-de-escalation-with-iraqi-prime-minister"
-        },
-        {
-          "titleKo": "이라크 총리, 미국 대통령과 지역 안보 논의",
-          "source": "IraqiNews",
-          "link": "https://www.iraqinews.com/iraq/iraqi-pm-us-president-discuss-regional-security/"
-        },
-        {
-          "titleKo": "미국 특사 톰 배럭, 바그다드에서 이라크 총리와 면담",
-          "source": "IraqiNews",
-          "link": "https://www.iraqinews.com/iraq/us-special-envoy-tom-barrack-meets-iraqi-pm-in-baghdad/"
-        }
-      ],
-      "tag": "정치·선거",
+      "related": [],
+      "tag": "치안·테러",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
         "act": "",
         "place": "",
         "km": null
-      }
-    },
-    {
-      "title": "한화, 이라크 비스마야 미수금 1.1억달러 받는다…사업 재개 기대",
-      "source": "뉴스1",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MLUdiN2R2d1ZaWmRjTS01Z2d1ZjRTNE8wNDNqRVQ1VFhGS2xsS3IydFJac29ScWltRXpHa3ptMVNNU1FsNnhad3VRdkhyQVFOSENnMTZyb190OUU?oc=5",
-      "date": "2026-11-06T08:27:11.000Z",
-      "lang": "ko",
-      "titleKo": "한화, 이라크 비스마야 미수금 1.1억달러 받는다…사업 재개 기대",
-      "count": 2,
-      "sources": [
-        "비즈니스포스트",
-        "뉴스1"
-      ],
-      "related": [
-        {
-          "titleKo": "한화 건설부문 이라크 비스마야 신도시 사업 미수금 1차분 받는다, 공사 재개 기대 커져",
-          "source": "비즈니스포스트",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1uenlJdHAtMEV0b3pyb0NZR3l2YlVkZjlZY0l6bFF3VTg3VVg2WGJkWGJjQWhUa1duMXI0UzlsNTBpemJ5bks2TEUwTThWSndkVjBvNTU0U3VJaWQ4aGdsOGVwQjRlQnZjLUxZeVF4M1hCdGs?oc=5"
-        }
-      ],
-      "tag": "한국·외교",
-      "impact": {
-        "lv": "y",
-        "line": "한국·한국 기업 관련 소식 — 한국인 직원 참고",
-        "act": "",
-        "place": "비스마야",
-        "km": 0
       }
     },
     {
@@ -542,18 +877,11 @@
       "body": "이라크가 한화 건설부문에 밀린 공사대금 일부를 보내기 위한 절차를 밟았다. 대금 지급 지연으로 차질을 빚은 비스마야 신도시 사업에서 남은 7만 가구 공사를 재개할 수 있을지도 관심이다. 이라크 샤파크뉴스는 5일(현지시간) 국가투자위원회(NIC)가 한화에 미수금 1차분 1억1100만 달…",
       "bodyKo": "이라크가 한화 건설부문에 밀린 공사대금 일부를 보내기 위한 절차를 밟았다. 대금 지급 지연으로 차질을 빚은 비스마야 신도시 사업에서 남은 7만 가구 공사를 재개할 수 있을지도 관심이다. 이라크 샤파크뉴스는 5일(현지시간) 국가투자위원회(NIC)가 한화에 미수금 1차분 1억1100만 달…",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "나우뉴스",
-        "더구루"
+        "나우뉴스"
       ],
-      "related": [
-        {
-          "titleKo": "이라크 \"한화 건설 미수금 지급 이어 7만 세대 건설 위한 준비 나설 것\"",
-          "source": "더구루",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3elFPOHEwMUN6VlN0Vk9WZzd3ZzU3QU9uakpYeS1WUEtSNFZ4SmFKQ0o1OXZUblhBTWRpX3JNWTdxR2p4OGdJVkViNGxwdVVtVGtBbE0xSTAtUDJrVklQSk9Paw?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "한국·외교",
       "impact": {
         "lv": "y",
@@ -664,28 +992,17 @@
       }
     },
     {
-      "title": "US dollar exchange rate rises against Iraqi dinar",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/us-dollar-exchange-rate-rises-against-iraqi-dinar-2/",
+      "title": "سعر الدولار في العراق اليوم الجمعة 6/11/2026 مقابل الدينار العراقي.. تحركات السوق الموازي",
+      "source": "أخبار العالم اليوم",
+      "link": "https://news.google.com/rss/articles/CBMirwVBVV95cUxQSGRkQURpOXVnR2t1Z0FlaUg5eEJyNmQweUtVTmF2bXlubkJiMTBYekpEVHU1LXVUa09XV0pYdTFsN1lRa1B5ZDFmcWxIWDZTcndzTUNtbm00RTFZR0NMYTJHV2xJUlpZa19kRlFLV09BNVotRkdXUEZ3QmFqc3FvMVFJZGJ4YTE0ZXRPc3VYa2pBcHUzWjdjYTJNUlcxYVFTMVB6UVZCMF85NXdkMjRBY3JoVEZiTlljV1Rxc0tZbXdUd0ZZREJtQXRTZjI4MzQ5ZGJmbHdWUXFyazcwSDRFODJoQjkzbUhWVGlsS0JzRTlBeEhjUmx3WFQtZzA4SFVkYU1uaG1ncjFiR3BwX3lwOUY5YjdONzREMXUzLWFob01SVVVRTUI4ZU9sNmVIU2RfLUJYYXo5eW9PZTVIWDBTM2VQSWgzV0xmWE1qSnB4amszZWRFeGMzNE5DVWNEc0h3OVFkNFdqNXBoX2dEVGN5ejZreFVtUzd1M3c4bFY0aWVleWdrMWIwR0Y1RXh4VXNwX3NnSnNzXzBfUlBiQmZ5enBNQWlhdmRWcVJ4SEFybS1rZEZkeW9JM2V1dVNKTHF1M1RWYVJKX1F2WXRFV1dlMGlOUGRBaHpVeFlLb1ZDeHBKRV82WG1pR2lmM05fN2pucHRwX0sxWnBQWTNfaVpUdkljcmUxcHdadVcxOHF2MHd4V2U0Y3FLemw1T0t2dGFoZEdTTlM1VTdnd29BQ00yWnpEeDBENG1zQ0daQXdZWktEZFd1QTZPNUtXT2FSRG1jNkpOOThEdnp2dXV1Z2p4bGN0ZTU0bEk0M1l2ZGZTOWhkTUVKT0UwcUY5WmNpcVJkRVNIS25CSXpsUXF5X1FYNnk3QnZVUHdDOWU3N1hBM1VIWFBlYTdtUzFJV21WdE3SAa8FQVVfeXFMUEhkZEFEaTl1Z0drdWdBZWlIOXhCcjZkMHlLVU5hdm15bm5CYjEwWHpKRFR1NS11VGtPV1dKWHUxbDdZUWtQeWQxZnFsSFg2U3J3c01DbW5tNEUxWUdDTGEyR1dsSVJaWWtfZEZRS1dPQTVaLUZHV1BGd0JhanNxbzFRSWRieGExNGV0T3N1WGtqQXB1M1o3Y2EyTVJXMWFRUzFQelFWQjBfOTV3ZDI0QWNyaFRGYk5ZY1dUcXNLWW13VHdGWURCbUF0U2YyODM0OWRiZmx3VlFxcms3MEg0RTgyaEI5M21IVlRpbEtCc0U5QXhIY1Jsd1hULWcwOEhVZGFNbmhtZ3IxYkdwcF95cDlGOWI3Tjc0RDF1My1haG9NUlVVUU1COGVPbDZlSFNkXy1CWGF6OXlvT2U1SFgwUzNlUEloM1dMZlhNakpweGprM2VkRXhjMzROQ1VjRHNIdzlRZDRXajVwaF9nRFRjeXo2a3hVbVM3dTN3OGxWNGllZXlnazFiMEdGNUV4eFVzcF9zZ0pzc18wX1JQYkJmeXpwTUFpYXZkVnFSeEhBcm0ta2RGZHlvSTNldXVTSkxxdTNUVmFSSl9Rdll0RVdXZTBpTlBkQWh6VXhZS29WQ3hwSkVfNlhtaUdpZjNOXzdqbnB0cF9LMVpwUFkzX2laVHZJY3JlMXB3WnVXMThxdjB3eFdlNGNxS3psNU9LdnRhaGRHU05TNVU3Z3dvQUNNMlp6RHgwRDRtc0NHWkF3WVpLRGRXdUE2TzVLV09hUkRtYzZKTjk4RHZ6dnV1dWdqeGxjdGU1NGxJNDNZdmRmUzloZE1FSk9FMHFGOVpjaXFSZEVTSEtuQkl6bFFxeV9RWDZ5N0J2VVB3QzllNzdYQTNVSFhQZWE3bVMxSVdtVnRN?oc=5",
       "date": "2026-11-06T07:10:51.000Z",
-      "lang": "en",
-      "titleKo": "미국 달러화, 이라크 디나르 대비 환율 상승",
-      "url": "https://www.iraqinews.com/iraq/us-dollar-exchange-rate-rises-against-iraqi-dinar-2/",
-      "body": "US dollar exchange rate rises against Iraqi dinar\nPacks of Iraqi dinars in a currency exchange shop in Baghdad, Iraq. Photo: Ahmad al-Rubaye/AFP\nBaghdad (IraqiNews.com) – The exchange rate for the US dollar against the Iraqi dinar experienced a slight increase on Thursday in both Baghdad, the Iraqi capital, and Erbil, the capital of the Kurdistan region of Iraq.\nThe US dollar exchange rate rose in Baghdad’s al-Kifah and al-Harithiya stock exchanges, reaching 1,683 Iraqi dinars compared to 1,682 Iraqi dinars on Thursday morning.\nThe exchange rate in currency exchange shops in Baghdad ranged between 1,687.5 Iraqi dinars and 1,677.5 Iraqi dinars, Shafaq News reported.\nIn Erbil, the US dollar exchange rate also increased, fluctuating between 1,682.5 and 1,681.5 Iraqi dinars.\nUS dollar exchange rates rose noticeably in the Baghdad and Erbil markets on October 7, following the cabinet’s decision to revalue the official rate of the local currency, causing turbulence and instability in the par",
-      "bodyKo": "미 달러화, 이라크 디나르 대비 환율 상승\n\n바그다드(이라크뉴스닷컴) – 미 달러화의 이라크 디나르 대비 환율이 목요일 이라크 수도 바그다드와 이라크 쿠르드 지역 수도 아르빌에서 소폭 상승했다.\n\n바그다드의 알키파 및 알하리시야 증권거래소에서 미 달러화 환율이 상승해 목요일 오전 이라크 디나르 1,682개에서 1,683개로 올랐다.\n\n바그다드의 환전소에서의 환율은 이라크 디나르 1,687.5개에서 1,677.5개 사이를 오갔다고 샤팍뉴스가 보도했다.\n\n아르빌에서는 미 달러화 환율도 상승해 이라크 디나르 1,682.5개에서 1,681.5개 사이를 변동했다.\n\n미 달러화 환율은 10월 7일 바그다드와 아르빌 시장에서 눈에 띄게 상승했으며, 이는 내각의 현지 통화 공식 환율 재평가 결정에 따른 것으로 통화 시장에 혼란과 불안정을 야기했다.",
-      "tried": true,
-      "count": 2,
+      "lang": "ar",
+      "titleKo": "이라크 달러 환율 오늘 금요일 2026년 11월 6일 이라크 디나르 대비.. 암시장 움직임",
+      "count": 1,
       "sources": [
-        "أخبار العالم اليوم",
-        "IraqiNews"
+        "أخبار العالم اليوم"
       ],
-      "related": [
-        {
-          "titleKo": "이라크 달러 환율 오늘 금요일 2026년 11월 6일 이라크 디나르 대비.. 암시장 움직임",
-          "source": "أخبار العالم اليوم",
-          "link": "https://news.google.com/rss/articles/CBMirwVBVV95cUxQSGRkQURpOXVnR2t1Z0FlaUg5eEJyNmQweUtVTmF2bXlubkJiMTBYekpEVHU1LXVUa09XV0pYdTFsN1lRa1B5ZDFmcWxIWDZTcndzTUNtbm00RTFZR0NMYTJHV2xJUlpZa19kRlFLV09BNVotRkdXUEZ3QmFqc3FvMVFJZGJ4YTE0ZXRPc3VYa2pBcHUzWjdjYTJNUlcxYVFTMVB6UVZCMF85NXdkMjRBY3JoVEZiTlljV1Rxc0tZbXdUd0ZZREJtQXRTZjI4MzQ5ZGJmbHdWUXFyazcwSDRFODJoQjkzbUhWVGlsS0JzRTlBeEhjUmx3WFQtZzA4SFVkYU1uaG1ncjFiR3BwX3lwOUY5YjdONzREMXUzLWFob01SVVVRTUI4ZU9sNmVIU2RfLUJYYXo5eW9PZTVIWDBTM2VQSWgzV0xmWE1qSnB4amszZWRFeGMzNE5DVWNEc0h3OVFkNFdqNXBoX2dEVGN5ejZreFVtUzd1M3c4bFY0aWVleWdrMWIwR0Y1RXh4VXNwX3NnSnNzXzBfUlBiQmZ5enBNQWlhdmRWcVJ4SEFybS1rZEZkeW9JM2V1dVNKTHF1M1RWYVJKX1F2WXRFV1dlMGlOUGRBaHpVeFlLb1ZDeHBKRV82WG1pR2lmM05fN2pucHRwX0sxWnBQWTNfaVpUdkljcmUxcHdadVcxOHF2MHd4V2U0Y3FLemw1T0t2dGFoZEdTTlM1VTdnd29BQ00yWnpEeDBENG1zQ0daQXdZWktEZFd1QTZPNUtXT2FSRG1jNkpOOThEdnp2dXV1Z2p4bGN0ZTU0bEk0M1l2ZGZTOWhkTUVKT0UwcUY5WmNpcVJkRVNIS25CSXpsUXF5X1FYNnk3QnZVUHdDOWU3N1hBM1VIWFBlYTdtUzFJV21WdE3SAa8FQVVfeXFMUEhkZEFEaTl1Z0drdWdBZWlIOXhCcjZkMHlLVU5hdm15bm5CYjEwWHpKRFR1NS11VGtPV1dKWHUxbDdZUWtQeWQxZnFsSFg2U3J3c01DbW5tNEUxWUdDTGEyR1dsSVJaWWtfZEZRS1dPQTVaLUZHV1BGd0JhanNxbzFRSWRieGExNGV0T3N1WGtqQXB1M1o3Y2EyTVJXMWFRUzFQelFWQjBfOTV3ZDI0QWNyaFRGYk5ZY1dUcXNLWW13VHdGWURCbUF0U2YyODM0OWRiZmx3VlFxcms3MEg0RTgyaEI5M21IVlRpbEtCc0U5QXhIY1Jsd1hULWcwOEhVZGFNbmhtZ3IxYkdwcF95cDlGOWI3Tjc0RDF1My1haG9NUlVVUU1COGVPbDZlSFNkXy1CWGF6OXlvT2U1SFgwUzNlUEloM1dMZlhNakpweGprM2VkRXhjMzROQ1VjRHNIdzlRZDRXajVwaF9nRFRjeXo2a3hVbVM3dTN3OGxWNGllZXlnazFiMEdGNUV4eFVzcF9zZ0pzc18wX1JQYkJmeXpwTUFpYXZkVnFSeEhBcm0ta2RGZHlvSTNldXVTSkxxdTNUVmFSSl9Rdll0RVdXZTBpTlBkQWh6VXhZS29WQ3hwSkVfNlhtaUdpZjNOXzdqbnB0cF9LMVpwUFkzX2laVHZJY3JlMXB3WnVXMThxdjB3eFdlNGNxS3psNU9LdnRhaGRHU05TNVU3Z3dvQUNNMlp6RHgwRDRtc0NHWkF3WVpLRGRXdUE2TzVLV09hUkRtYzZKTjk4RHZ6dnV1dWdqeGxjdGU1NGxJNDNZdmRmUzloZE1FSk9FMHFGOVpjaXFSZEVTSEtuQkl6bFFxeV9RWDZ5N0J2VVB3QzllNzdYQTNVSFhQZWE3bVMxSVdtVnRN?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "경제·유가",
       "impact": {
         "lv": "g",
@@ -719,7 +1036,7 @@
     {
       "title": "Can Zaidi keep Iraq from becoming Riyadh's battlefield?",
       "source": "Amwaj.media",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTzVCSVRYTmczeFRjbWVEaGJJQXZ2ZDhnSlNoZS1qQy10SXAyb2g3QUx6d05XOFVGLWpaVDFBQW94M1ZDWHdreVVLeFJDb2VkNDFsdUhwc0RybF9FR0RMUEo4V2cxdE1CcVJnMDRkVGdsRGQ1bWtfUHZQVVRhMDRBYnc1eHZ3QUkyZXdLMw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOLTA1ZmR6VjhKbERqUnJjbE1xVDN1dm80dnVHZmhNdk1fNmp6MklwSGIzNnZrQ3hjcGlPSFBSUnFVQVNjY3M3MVNaMmdXSm9HcExmRVNVWjZnWVYxU1Z6S1Z0ZlJvakpnbE9nNVVqUlA3UWVTWkRtOTBZT1pvV1VqTjk4ZGtvQ2FfN0Qwd1pxSGdhUQ?oc=5",
       "date": "2026-11-06T03:36:43.000Z",
       "lang": "en",
       "titleKo": "자이디, 이라크를 리야드의 전장으로 만드는 것을 막을 수 있을까?",
@@ -757,157 +1074,18 @@
         "place": "",
         "km": null
       }
-    },
-    {
-      "title": "PUK quits Iraqi Kurdistan government, deepening power struggle",
-      "source": "The New Arab",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdkZZVEdsX3JuOGpGSnlyLVhtVGppVGRScUloWGQxLVZ5Wk02QjAzWTFFaFRSUVZlX25ha3ZyZ0JrRjVpV3oxaGJnM1hDVEhFM1RRSVhzRnJPVWFDTzFTdzBsWU0tWWhEX2x6MXFtTmRUXy13NC01ekk1T0ppNWdUWjJobG9zeTV4ekxWWDlmSkdaQ3hS?oc=5",
-      "date": "2026-11-06T01:09:59.000Z",
-      "lang": "en",
-      "titleKo": "쿠르드 애국연합, 이라크 쿠르디스탄 정부 탈퇴…권력 투쟁 심화",
-      "count": 1,
-      "sources": [
-        "The New Arab"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "미국이 이라크 공격을 개시한 20일 새벽(현지시간), 바그다드 외곽 부근에서 화염이 치솟고 있다. ⓒ 로이터 뉴시스",
-      "source": "OhmyNews",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBBcThnb3VvWWdfSTRVOXNtZld3NGduRGRpSG92TmJrOE5GYXFlUjg2ZjdxdEpCeVZBX2pQNmNSMnEtbzRmLXRZVDM1bm04b3Jtd29JTTZWSXlpU0VFUWQ1SUF0X0RLRlZJVjA3MThiYm81ZVRtNzZZdQ?oc=5",
-      "date": "2026-11-05T22:56:23.000Z",
-      "lang": "ko",
-      "titleKo": "미국이 이라크 공격을 개시한 20일 새벽(현지시간), 바그다드 외곽 부근에서 화염이 치솟고 있다. ⓒ 로이터 뉴시스",
-      "count": 1,
-      "sources": [
-        "OhmyNews"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "أسعار الدولار تنخفض في بغداد واربيل",
-      "source": "هذا اليوم",
-      "link": "https://hathalyoum.net/articles/4257598",
-      "date": "2026-11-05T22:13:15.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드와 아르빌에서 달러 가격 하락",
-      "url": "https://hathalyoum.net/articles/4257598",
-      "body": "شفق نيوز بغداد/ اربيل انخفضت أسعار صرف الدولار الأميركي صباح الثلاثاء في أسواق العاصمة العراقية بغداد وفي اربيل عاصمة اقليم كوردستان مقارنة بالأسعار التي سج...\nانخفضت أسعار صرف الدولار الأميركي، صباح الثلاثاء، في أسواق العاصمة العراقية بغداد وفي اربيل عاصمة اقليم كوردستان، مقارنة بالأسعار التي سجلت امس الاثنين.\nوقال مراسل وكالة شفق نيوز، إن أسعار الدولار انخفضت في بورصتي الكفاح والحارثية ببغداد إلى 167900 دينار مقابل كل 100 دولار، مقارنة بيوم امس الاثنين التي بلغت 168350 ديناراً.\nونتيجة لذلك انخفضت أسعار البيع في محال الصيرفة بالأسواق المحلية ببغداد لتسجل 168500 دينار مقابل كل 100 دولار، فيما بلغ سعر الشراء 167500 دينار.\nوفي أربيل انخفضت أسعار الدولار ايضا حيث، سجل سعر البيع 167800 دينار مقابل كل 100 دولار، فيما بلغ سعر الشراء 167700 دينار.",
-      "bodyKo": "**달러 환율 하락, 바그다드·아르빌서 소폭 내려**\n\n셰팍뉴스 바그다드/아르빌 = 미국 달러 환율이 화요일 아침 이라크 수도 바그다드와 쿠르디스탄 자치지역 수도 아르빌의 시장에서 전날 월요일 대비 하락했다.\n\n셰팍뉴스 통신원에 따르면 바그다드의 알카파 거래소와 알하리시야 거래소에서 달러 환율이 100달러당 167,900 디나르로 내려갔다. 이는 전날 월요일의 168,350 디나르에서 하락한 것이다.\n\n이에 따라 바그다드 지역 환전소의 판매 환율도 100달러당 168,500 디나르로 내려갔으며, 매입 환율은 167,500 디나르를 기록했다.\n\n아르빌에서도 달러 환율이 하락해 판매 환율이 100달러당 167,800 디나르, 매입 환율이 167,700 디나르를 기록했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "هذا اليوم"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraq reinforces military deployment along western defensive line",
-      "source": "Rudaw",
-      "link": "https://rudaw.net/english/categories/iraq/1080038",
-      "date": "2026-11-05T21:45:19.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 서부 방어선 따라 군 배치 강화",
-      "url": "https://rudaw.net/english/categories/iraq/1080038",
-      "body": "Iraq’s Ministry of Defense said Thursday that army units have begun reinforcing their deployment along the Rawa-Hatra defensive line to enforce security in areas north of the Euphrates River.",
-      "bodyKo": "이라크 국방부는 목요일 군 부대가 유프라테스강 북쪽 지역의 보안을 강화하기 위해 라와-하트라 방어선을 따라 배치를 강화하기 시작했다고 밝혔다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "الكهرباء يعمق جراح زاخو في دوري نجوم العراق",
-      "source": "المعلومة",
-      "link": "https://almaalomah.me/news/149371/sports/%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%8A%D8%B9%D9%85%D9%82-%D8%AC%D8%B1%D8%A7%D8%AD-%D8%B2%D8%A7%D8%AE%D9%88-%D9%81%D9%8A-%D8%AF%D9%88%D8%B1%D9%8A-%D9%86%D8%AC%D9%88%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "date": "2026-11-05T20:41:10.000Z",
-      "lang": "ar",
-      "titleKo": "전력난이 자하우의 상처를 깊게 하다, 이라크 스타 리그에서",
-      "url": "https://almaalomah.me/news/149371/sports/%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%8A%D8%B9%D9%85%D9%82-%D8%AC%D8%B1%D8%A7%D8%AD-%D8%B2%D8%A7%D8%AE%D9%88-%D9%81%D9%8A-%D8%AF%D9%88%D8%B1%D9%8A-%D9%86%D8%AC%D9%88%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "body": "المعلومة/ بغداد.. تلقى فريق زاخو، الخسارة السادسة في دوري نجوم العراق هذا الموسم بهزيمته أمام الكهرباء 2-1. وتواجه الفريقان على ملعب الزوراء ضمن لقاءات الجولة 13 من المسابقة اليوم الخميس. وسجل ثنائية الكهرباء كل من حسين نجم وصامويل أتا في الدقيقتين 11 و49. في المقابل، حمل هدف زاخو الوحيد، إمضاء اللاعب أمجد عطوان في الدقيقة 98 من علامة الجزاء. وبلغ الكهرباء بفوزه، النقطة 11 في المركز السابع عشر، فيما توقف رصيد زاخو عند النقطة 13 في المركز السادس عشر. انتهى/ 25 ل",
-      "bodyKo": "**바그다드.. 자호 팀, 이라크 스타 리그 올시즌 6번째 패배**\n\n바그다드에서 자호 팀이 전기공사 팀에 2-1로 패배하면서 올시즌 여섯 번째 패배를 기록했다. 두 팀은 목요일 오늘 주라 경기장에서 13라운드 경기를 펼쳤다. 전기공사 팀의 2골은 후세인 나잠과 사무엘 아타가 각각 11분과 49분에 터뜨렸다. 반면 자호 팀의 유일한 골은 선수 암자드 아투완이 98분 페널티킥으로 넣었다. 전기공사 팀은 이 승리로 17위에서 11점을 기록했고, 자호 팀은 16위에서 13점에 머물렀다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "المعلومة"
-      ],
-      "related": [],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq finalizes $111M Bismayah payment paperwork",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/amp/en/Economy/Iraq-finalizes-111M-Bismayah-payment-paperwork",
-      "date": "2026-11-05T19:50:20.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 비스마야 1억1100만 달러 지급 서류 최종 확정",
-      "url": "https://shafaq.com/amp/en/Economy/Iraq-finalizes-111M-Bismayah-payment-paperwork",
-      "body": "Shafaq News- BaghdadIraq's National Investment Commission (NIC) completed procedures to release a $111 million payment to South Korea's Hanwha for completed housing units at the Bismayah residential p\nAl-Yasiri said the commission had signed the official authorization to transfer the funds from its account to Hanwha's account at Rafidain Bank through the Central Bank of Iraq, per cabinet decisions on payments for completed work.\nIn a statement, the NIC said it had completed and submitted the legal documentation for 8,280 finished apartments to Rafidain Bank, fulfilling the contractual requirements for the payment.\nAccording to the commission, the payment would help facilitate the handover of apartments to buyers, with Rafidain Bank processing housing loan agreements in successive batches according to the order of existing contracts.",
-      "bodyKo": "**국가투자위원회, 비스마야 신도시 한화에 1억1100만 달러 송금 절차 완료**\n\n이라크 국가투자위원회는 비스마야 주택단지의 완공 주택에 대해 한국의 한화에 1억1100만 달러를 송금하기 위한 절차를 완료했다.\n\n알야시리 위원장은 위원회가 내각의 완공 업무 대금 지급 결정에 따라 중앙은행을 통해 라피다인은행의 한화 계좌로 자신의 계좌에서 자금을 이체하기 위한 공식 승인에 서명했다고 말했다.\n\n국가투자위원회는 성명을 통해 라피다인은행에 완공된 8280채 아파트에 대한 법적 서류를 완성하고 제출했으며, 이는 계약상 지급 요건을 충족했다고 밝혔다.\n\n위원회에 따르면 이번 송금은 구매자들에게 아파트를 인도하는 것을 촉진할 것이며, 라피다인은행은 기존 계약 순서에 따라 연속적인 배치로 주택담보대출 계약을 처리할 예정이다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크, 비스마야 1억1100만 달러 지급 서류 최종 확정",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/amp/en/Economy/Iraq-finalizes-111M-Bismayah-payment-paperwork"
-        }
-      ],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "비스마야",
-        "km": 0
-      }
     }
   ],
   "alerts": [
+    {
+      "kind": "control",
+      "titleKo": "기상청, 바그다드-키르쿠크 도로 폐쇄 부인",
+      "title": "الأنواء الجوية تنفي قطع طريق بغداد كركوك بسبب الامطار",
+      "link": "https://ninanews.com/website/News/Details?Key=1324091",
+      "source": "الوكالة الوطنية العراقية للأنباء| نينا",
+      "date": "2026-11-06T21:41:34.000Z",
+      "count": 19
+    },
     {
       "kind": "control",
       "titleKo": "차이 계곡 홍수가 키르쿠크-바그다드 순환도로 단절",
@@ -943,13 +1121,13 @@
   "brief": [
     {
       "lv": "r",
-      "titleKo": "차이 계곡 홍수가 키르쿠크-바그다드 순환도로 단절",
+      "titleKo": "기상청, 바그다드-키르쿠크 도로 폐쇄 부인",
       "line": "통행금지·도로 통제 (바그다드) — 출퇴근·공항 이동 지연 가능",
       "act": "외부 이동 일정 조정 · 현지 인력 출근 경로 확인",
       "km": 27,
-      "link": "https://almaalomah.me/news/149438/local/%D8%B3%D9%8A%D9%88%D9%84-%D9%88%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B4%D8%A7%D9%8A-%D8%AA%D9%82%D8%B7%D8%B9-%D8%B7%D8%B1%D9%8A%D9%82-%D9%83%D8%B1%D9%83%D9%88%D9%83%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D8%AD%D9%88%D9%84%D9%8A",
-      "date": "2026-11-06T16:08:49.000Z",
-      "more": 0
+      "link": "https://ninanews.com/website/News/Details?Key=1324091",
+      "date": "2026-11-06T21:41:34.000Z",
+      "more": 1
     },
     {
       "lv": "r",
@@ -963,12 +1141,12 @@
     },
     {
       "lv": "y",
-      "titleKo": "한화, 이라크 비스마야 미수금 1.1억달러 받는다…사업 재개 기대",
+      "titleKo": "비스마야 미수금 받은 한화…'이라크 수주' 상흔 아물어 가나",
       "line": "한국·한국 기업 관련 소식 — 한국인 직원 참고",
       "act": "",
       "km": 0,
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MLUdiN2R2d1ZaWmRjTS01Z2d1ZjRTNE8wNDNqRVQ1VFhGS2xsS3IydFJac29ScWltRXpHa3ptMVNNU1FsNnhad3VRdkhyQVFOSENnMTZyb190OUU?oc=5",
-      "date": "2026-11-06T08:27:11.000Z",
+      "link": "https://kbthink.com/news-list/view.html?newsId=20261107073000523",
+      "date": "2026-11-06T22:29:59.000Z",
       "more": 1
     }
   ]
