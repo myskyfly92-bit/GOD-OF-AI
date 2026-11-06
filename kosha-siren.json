@@ -1,7 +1,17 @@
 {
  "source": "https://portal.kosha.or.kr/archive/imprtnDsstrAlrame/CSADV50000/CSADV50000M01",
- "generatedAt": "2026-11-05T09:28:37.555Z",
+ "generatedAt": "2026-11-06T15:55:21.734Z",
  "items": [
+  {
+   "no": "926",
+   "title": "(261106)중대재해 발생 알림(1)",
+   "day": "2026-11-06",
+   "seq": 1,
+   "img": "assets/siren/926.webp",
+   "thumb": "assets/siren/926_t.webp",
+   "posted": "2026-11-06",
+   "firstSeen": "2026-11-06T15:55:21.734Z"
+  },
   {
    "no": "925",
    "title": "(261105)중대재해 발생 알림(2)",
@@ -290,16 +300,6 @@
    "img": "assets/siren/894.webp",
    "thumb": "assets/siren/894_t.webp",
    "posted": "2026-10-16",
-   "firstSeen": "2026-10-25T06:51:41.433Z"
-  },
-  {
-   "no": "893",
-   "title": "(261014)중대재해 발생 알림(4)-외국어 추가",
-   "day": "2026-10-14",
-   "seq": null,
-   "img": "assets/siren/893.webp",
-   "thumb": "assets/siren/893_t.webp",
-   "posted": "2026-10-14",
    "firstSeen": "2026-10-25T06:51:41.433Z"
   }
  ]
