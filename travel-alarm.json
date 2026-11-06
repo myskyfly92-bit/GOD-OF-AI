@@ -715,16 +715,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "카보델가도 주"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "3단계 및 특별여행주의보 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "카보델가도 주"
     }
    ],
    "written": "",
@@ -1975,16 +1975,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "킹스턴, 세인트앤드류, 세인트캐서린"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "킹스턴, 세인트앤드류, 세인트캐서린"
     }
    ],
    "written": "",
@@ -2662,6 +2662,12 @@
    "level": 4,
    "regions": [
     {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "발루치스탄"
+    },
+    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -2672,12 +2678,6 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "이슬라마바드, 페이살라바드, 라왈핀디, 라호르, 훈자, 길깃, 스카르두"
-    },
-    {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "발루치스탄"
     }
    ],
    "written": "",
@@ -2817,18 +2817,6 @@
    "level": 4,
    "regions": [
     {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "민다나오의 잠보앙가, 술루‧바실란 타위타위 군도"
-    },
-    {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "팔라완섬 2단계 지역(아볼란, 나라, 케손) 이남, 민다나오섬 일부(2단계 및 4단계 지역 제외)"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -2839,6 +2827,18 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "수빅시, 보라카이섬, 보홀섬, 세부막탄섬(라푸라푸시)"
+    },
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "민다나오의 잠보앙가, 술루‧바실란 타위타위 군도"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "팔라완섬 2단계 지역(아볼란, 나라, 케손) 이남, 민다나오섬 일부(2단계 및 4단계 지역 제외)"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-11-05T08:36:18.800227+00:00"
+ "generatedAt": "2026-11-06T08:35:43.339865+00:00"
 }
