@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-05T01:27:39.104Z",
+  "generatedAt": "2026-11-06T01:33:30.166Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
+    {
+      "title": "OpenAPI 신청",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNU3hWMmxRVDc3RUlhSDZEXy11NHF3b2htT0t2QlV1N2YwLS1ieXBCSTdPN1Z0Z3FjS1BVR3NzODhjMHFGbW1yNFE1QUdZdkNHQ3ZNYWQ5NkljdXgzeHNSMUsyNHlIdHRzRHFJVmVWT0ZkX09ma282WDNBazZBZHZsQ0k0dS1RcFBWRURqaHhGRGx0Rm1fRmdqMkZSVHdDVzJqcXlTa3hn?oc=5",
+      "date": "2026-11-05T14:31:45.000Z"
+    },
     {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
       "source": "질병관리청 감염병포털",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
       "date": "2024-06-10T03:38:59.000Z"
-    },
-    {
-      "title": "의료방사선게시판 - 2023년 국민 의료방사선 평가 연보",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNmdMMDR3bFU3TUNRdjMweWZWQWRYTGFOdHBHMGlhSFkycmVPX2c5UlVuNU9ZMm5qdVpCUlA5OUlBWTg1R09PUXhNZVRaNC00UVEwTzJxbThUcmZCdHE2Qm5ndE1jTlBKUEhyaWZxT3FEeDhkcmxPdXp1OXBLNm01ZEtEYTY0YzllRzFMcFJNOVdmZHBBczdTSC1BZ08xMEpyWkcxUHhLdkJ6WGxsNEFLRGVma3F1OHFMMlRWbg?oc=5",
-      "date": "2026-05-02T07:32:05.000Z"
     },
     {
       "title": "보도자료(전체)",
@@ -28,14 +28,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-04T23:49:35.000Z"
-    },
-    {
-      "title": "레지오넬라증",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52SW9Ma2pUR1JIZ1AxZHJEQnhtaFh1N1A0b3VVWTByTHVyVG9qQWJ1VmtMOElGdzM4MnRNdkVBd2dUa1F6OU82Mk44UGppVFlKb0UwUGRn?oc=5",
-      "date": "2025-12-16T16:14:22.000Z"
+      "date": "2026-11-05T08:54:28.000Z"
     },
     {
       "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
@@ -52,13 +45,6 @@
       "date": "2026-11-01T12:57:56.000Z"
     },
     {
-      "title": "고혈압 환자의 식이요법",
-      "source": "국가건강정보포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV1NzLWpYblhYdm5oVENxQlZLc3ludkNsaHJQR0J5RUpMSk9FSWdpZTEzVW5CWTEtS3VMalhBUVpEeF8tdnRuMXRqTmJ4Z2laNEV2OE13ZEdlZXFCb1J3WjBBSHdvN2lybkxvV3NYR2tQalZNcTdNbjVwV1h1dXVRQUhPbE9ranJNUUs2YlB4cGZDb0FHMHlKU0NHWWFZT1ItOUlVSHBQNHM2UHVHYXhHNDBnd1BmRVIy?oc=5",
-      "date": "2026-10-29T07:00:00.000Z"
-    },
-    {
       "title": "채용공고",
       "source": "질병관리청",
       "agency": "",
@@ -73,6 +59,13 @@
       "date": "2026-10-30T06:59:19.000Z"
     },
     {
+      "title": "성홍열",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tcC03OGpvaW1sNlE0MmxfMzZYUy1PaEI1UU5aTWxLUlI2am9pbzVGU2gwT3hobGFfQmNRN3RMVkN3X3V2NUhMWDRCUnl2SXV6OE0yRXd3?oc=5",
+      "date": "2025-12-16T16:07:49.000Z"
+    },
+    {
       "title": "공고/공시",
       "source": "질병관리청",
       "agency": "",
@@ -80,11 +73,18 @@
       "date": "2025-12-16T15:50:10.000Z"
     },
     {
-      "title": "신생아 대사 이상 검사",
+      "title": "건강한 산후 관리",
       "source": "국가건강정보포털",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeU9sMFhCblZWRXFxU1psdXpwWVF4UXpjWEZpeDlmdmFCREZFQ1Rod2tBaTF5TDlVdmhNMVA3OVZlRjBpWTZ1Q2Q1VjFLNXhQaFc5WEl0LXFUdGxwS0lKSkN0eGE5LU0wR2E4eEdKQ3lBMVU0b3h2dTcyZnBZVTdqcUgxcHFmUV9lSElsNExrOEFEZllqN3lzYUU5bW5jSWJnc2U4N0hqc3pJc2FWYk5ZR253ODVjeG5F?oc=5",
-      "date": "2026-10-29T07:00:00.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZTRSR3dUNG9hZmNFc1QwMjhZMGFCbFIzSWpEdWVxLWNHNEh3ek5lbE1PV2hDSm5XNlBTMTlydmFEZ04xVE1nRDBXUWJYMDNwOFo4SHVhMHZXVlZpSzFWdTRwWFBGanFoRGctQnhJX1UzVzFia2VrY015OExVb1BjQUdKY25fdHZyYkZWMk9UUGlvaTdodUp3SUhkczdQNTgwU24yS1Q1dVdid2Z3RkFNSlNWeUxnbV9K?oc=5",
+      "date": "2026-11-05T04:59:43.000Z"
+    },
+    {
+      "title": "폐흡충증",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNE0yUzcxa1EwMERMVXhUdTJob0pfbEhQMTlrNHFYWklqM1pSZU54M1ZaT1lhbjZDYkJYbjROWndCYXIzUGxqY0RjdmJFSURyZ05xekRQQnBuVWtsUjRoUXQyR3J0MHJ2bTJLMElwZVpJU1duVzRFbXBETnNoWG9saXR4TlpWd0NPb0hpaXNycGtSM0ViWHB6WFVKeF90UVMzbFNKNmVEdEVkcVZTUkZNajFqNzVTZGFQ?oc=5",
+      "date": "2023-12-07T09:27:39.000Z"
     }
   ]
 }
