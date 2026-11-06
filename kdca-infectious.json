@@ -67,30 +67,30 @@
   },
   "제2급": {
    "diseases": 21,
-   "base": 1853,
+   "base": 1852,
    "prev": 2060,
-   "provisional": 1739,
+   "provisional": 1759,
    "outnatn": 1,
    "trend": [
     2058,
     1913,
-    1837,
+    1836,
     2160,
-    1902,
-    1915,
+    1904,
+    1912,
     1913,
     1461,
-    2083,
-    1537,
+    2082,
+    1538,
     2060,
-    1853
+    1852
    ]
   },
   "제3급": {
    "diseases": 28,
    "base": 496,
-   "prev": 342,
-   "provisional": 700,
+   "prev": 343,
+   "provisional": 698,
    "outnatn": 10,
    "trend": [
     207,
@@ -100,10 +100,10 @@
     205,
     238,
     215,
-    138,
+    136,
     214,
     163,
-    342,
+    343,
     496
    ]
   }
@@ -112,18 +112,18 @@
   {
    "name": "카바페넴내성장내세균목(CRE) 감염증",
    "grade": "제2급",
-   "base": 1109,
-   "prev": 1296,
+   "base": 1108,
+   "prev": 1295,
    "provisional": 1113,
-   "dmstc": 1109,
+   "dmstc": 1108,
    "outnatn": 0
   },
   {
    "name": "수두",
    "grade": "제2급",
    "base": 447,
-   "prev": 450,
-   "provisional": 396,
+   "prev": 451,
+   "provisional": 415,
    "dmstc": 446,
    "outnatn": 1
   },
@@ -150,7 +150,7 @@
    "grade": "제3급",
    "base": 106,
    "prev": 110,
-   "provisional": 94,
+   "provisional": 92,
    "dmstc": 106,
    "outnatn": 0
   },
@@ -195,7 +195,7 @@
    "grade": "제2급",
    "base": 10,
    "prev": 9,
-   "provisional": 2,
+   "provisional": 3,
    "dmstc": 10,
    "outnatn": 0
   },
@@ -250,7 +250,7 @@
   {
    "name": "뎅기열",
    "grade": "제3급",
-   "count": 17
+   "count": 18
   },
   {
    "name": "매독",
@@ -283,7 +283,7 @@
    "count": 1
   }
  ],
- "totalBase": 2349,
- "totalPrev": 2402,
- "generatedAt": "2026-11-05T02:48:02.521133+00:00"
+ "totalBase": 2348,
+ "totalPrev": 2403,
+ "generatedAt": "2026-11-06T02:50:06.656307+00:00"
 }
