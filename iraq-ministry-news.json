@@ -1,6 +1,14 @@
 {
-  "generatedAt": "2026-11-05T21:29:45.926Z",
+  "generatedAt": "2026-11-06T11:12:34.453Z",
   "health": [
+    {
+      "title": "الصحة اليمنية: 23 يمنيًا بين شهيد وجريح بهجمات سعودية",
+      "source": "شفقنا العراق",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1zaWJoRjJVLXpGbEQzWG9kS1EwQWY0dzFOZ1BSc2NLQzZFN0RrcTZkYTc0ckdLMk9UTGNKc3Zpc0FETlA5bk00Wm9Zbkw?oc=5",
+      "date": "2026-11-06T06:33:58.000Z",
+      "lang": "ar",
+      "titleKo": "예멘 보건 당국: 사우디아라비아 공격으로 순교 및 부상당한 예멘인 23명"
+    },
     {
       "title": "إعلان مناقصات / وزارة الصحة – سفارة جمهورية العراق في جاكارتا",
       "source": "وزارة الخارجية العراقية",
@@ -24,6 +32,14 @@
       "date": "2026-11-05T12:30:20.000Z",
       "lang": "ar",
       "titleKo": "발표 번호 (4) 마케팅 및 의료 용품에 대한 보건부/일반 회사 장비 (KIMADIA) – 카이로 주재 이라크 공화국 대사관"
+    },
+    {
+      "title": "اعلان رقم (3) تجهيز وزارة الصحة / الشركة العامة لتسويق والمستلزمات الطبية (كيماديا) – سفارة جمهورية العراق في القاهرة",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5VQ1NwbHkzRVk4cjR0WVAxQUZfbUItUHdfaVBGbzFpU0dBZ2V5cFliZUM2QWFQRjdreTNKaW93dGMyc09GMlE?oc=5",
+      "date": "2026-11-05T12:30:19.000Z",
+      "lang": "ar",
+      "titleKo": "발표 번호 (3) 마케팅 및 의료 용품에 대한 보건부/일반 회사 장비 (KIMADIA) – 카이로 주재 이라크 공화국 대사관"
     },
     {
       "title": "اعلان رقم (7) تجهيز وزارة الصحة / الشركة العامة لتسويق والمستلزمات الطبية (كيماديا) – سفارة جمهورية العراق في القاهرة",
@@ -80,40 +96,16 @@
       "date": "2026-11-04T16:54:14.000Z",
       "lang": "ar",
       "titleKo": "매우 중요/영사 거래 요건 및 금액 – 글래스고 주 이라크 공화국 영사관"
-    },
-    {
-      "title": "متطلبات ومبالغ المعاملات القنصلية – قنصلية جمهورية العراق في غلاسكو",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxNZXh2czAzMDRMbXNBWjRqWU95MXhxcjFCOWVmUkpiVTYxbUtaWkpEYkEyS1BqU2xNVXV0NEF2ZlpBM2l3WWE3aTBxbkYxYXUwdGJ1Y1ZDVVhla2Q5RUgyOWl4bnlDNDZMNGxBc3hrM2xzcy11N1BCTmsySXRGMTZOOHktbDBWN2p1MWVXN0JGbmlQV3l1UWppMWxNSWZheEMxZEhGUmU3d0FzWkxrMEMyNEVfc09fYWxubTVNU1hLYW9UOXk3a285TDhFdUNheFF3a3FKSE1Ka0h4Qi1VaHp2VVk5MW5pZHFzdDdudXg3WkxUV2poV0RKTkM2b0lQN2o2Y3RPV0l6c0otOHJhb2MyQUlZZWNiTFd3SXlDZWg2RkU2NzlzczVrYWJIOXdOYzB3MzFGMW14Mno?oc=5",
-      "date": "2026-11-04T16:54:14.000Z",
-      "lang": "ar",
-      "titleKo": "영사 거래 요건 및 금액 – 글래스고 주 이라크 공화국 영사관"
-    },
-    {
-      "title": "وزارة الصحة: تجهيز صحة ذي قار بـ(10) حاضنات للأطفال حديثي الولادة » وكالة الانباء العراقية (واع) | اخبار العراق",
-      "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5xVUxib3pFMnVnQVVIQ0dWMGFhT044OUhVNlp0MnhaYVhzZ3ZBNkNuZnBnNW9nQzQ2VEpEQTJXbFBmaWNxZ2FiWWxHd0k4dkE?oc=5",
-      "date": "2026-11-04T14:57:30.000Z",
-      "lang": "ar",
-      "titleKo": "보건부: 디카르의 건강에 신생아 인큐베이터 (10개) 장착 »이라크 통신사 (INA) | 이라크 뉴스"
     }
   ],
   "environment": [
     {
-      "title": "أهم عناوين شفقنا العراق ليوم الثلاثاء 3 نوفمبر 2026 | شفقنا العربي | الوكالة الشيعية الدولية للأخبار والتحليلات",
-      "source": "شفقنا العربي",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5SSmVmYW1RWVlFanRndEp1bWY2SFVXWDMteXk1TkZTTVRpTzlEclpMcXVickttR2VFNWE0UDk3bzRxd3hEaWdTNkJ3?oc=5",
-      "date": "2026-11-03T15:16:44.000Z",
+      "title": "العراق يطالب بتعويضات مناخية ويؤكد تعزيز التعاون البيئي مع تركيا في مقابلة مع الأناضول",
+      "source": "شبكة تواصل الإخبارية",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1kcU5SMFlWMGRwNnhnejZuVlFiYnBiRGoxWXZmNUhlTV9rSGJVU3ZNbHVYWUhOdWM5TjRaaTIyLUFjelN0YnV2UXdtNl91M0FjVi1Z?oc=5",
+      "date": "2026-11-06T07:49:56.000Z",
       "lang": "ar",
-      "titleKo": "2026년 11월 3일 화요일, Shafakna Iraq의 가장 중요한 헤드라인 | Shafakna Al-Arabi | Shia International News and Analysis Agency"
-    },
-    {
-      "title": "تحت وطأة السموم المتراكمة: البصرة تواجه أزمات النفط والحروب بوعود الرصد والمحاسبة - al-aalem.com",
-      "source": "",
-      "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxNaUtXQi05R0JaR2x5cEN0ZU91ZUV6TGpKcWxpV01oUmNPX1cxbTZST3RkdHR3RHh1N2hvQjFNdlQ5SHBDb3loajhhYmVkY1NiT2xqNXFRRjczMUdJeGhIb0NyU3RKTEE1UFlEYmJFdFJxXzZSZlVTcTJMa2xPbXFjdjVCazZnbXdESVBDQ05iS3IyclE4UkJMUW9RRi0zbUZ0WFk5cGItank2ZS1Vb05nOElEZHpxU0lucExfdlNjUUoyUmFLd083OVNJd3NIdmV1ZURaRXZWTWV2WkpmS3dseEVGcWc3MzZSWFlIcnp0cXduYlhId01Hc0xLQ1BVaVdadTJiZjduWW9GQVNLR1BPUWRNNEFqTWdFQ0RZV2FpRHYzYjdBaGY4S3V1c2dSR3Q3QmJUclNBRnNCSVFuZG8yUA?oc=5",
-      "date": "2026-11-03T06:47:22.000Z",
-      "lang": "ar",
-      "titleKo": "축적된 독소의 무게: 바스라는 모니터링과 책임의 약속으로 석유 위기와 전쟁에 직면합니다 - al-aalem.com"
+      "titleKo": "이라크는 기후 보상을 요구하고 아나톨리아와의 인터뷰에서 터키와의 환경 협력 강화를 확인합니다."
     },
     {
       "title": "شركات النفط تحترم البيئة في دولها وتخالفها عندنا.. الوزيرة تعد بمحاسبتها",
@@ -172,28 +164,36 @@
       "titleKo": "\"느린 죽음\" 이라크인 위협.. 환경 비상사태 선포 한 달 후 자금 위기 및 정부 지연"
     },
     {
+      "title": "Iraq signs deal with US oil firm to develop methane projects",
+      "source": "Quantum Commodity Intelligence",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaGlKT0Y2UzJNS3Y1cEQ3NW1GTDRCQkF6dDZtR0J4RExpR2FZeGlvQUgxZlR0aXppSk9BWEM5R3RzUW9keksybGhFa1drUklfMjd2MWMxQXBWa0hESEctaW1UTDJlU2N2djVMNkY2bFhVRElsaXBZSDU1a0dCcjlPT25xVFFJMGNtNnhOdmtZZjN3UXpUUFlQdjB6YUR6czB0eFVyUzNPQzkyd0YzYk5Z?oc=5",
+      "date": "2026-10-30T07:00:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 미국 석유 회사와 메탄 프로젝트 개발 계약 체결"
+    },
+    {
+      "title": "الأنواء الجوية تصدر تحذيراً خاصاً بالطيران المدني في العراق",
+      "source": "شبكة الساعة الإعلامية",
+      "link": "https://news.google.com/rss/articles/CBMi3gNBVV95cUxQaS1nNWJGXzNDVVJORTlETzNWa3E1LWp6MUlsbUtvTkZhbEpzQ2RxaTkwbExFNm1DenZfeXpBeFRWaVZ6SzFiaXpBRGxHYWVhNW1uSGJiRzFuY1JFUzRDc1dPMV9mU1JKWDFNWlZPNXdaNnZQZ0FqeEZTY0h6em5pZWJhNk9zQ2xyb0hZaFQ3NnJjRFVPb19lV0txT1c4TVZqbktLa2J4MjNNLW4xbU8tN3FEblUyWm54U3B1S2FPbmw0aXlnZ1M4bVQ5Yk9Qcm9xMmR5SExVZk52RVZWcHNMOVFSYjYzRE9ZclVMOW1iTmo1YjlQbFJYaDVib2M1azMxMFhVLWdjUHBxeThJTnV0MWl5bWtxZHpZblNyYUVnaHJjVlo2OHRZSFJ5aEpDT2JVWjI2UkdaSTl0NUhMWVdXN2wwVHVwRzY0WGJpSnJsSFc3bWVwQXFJcFRla3ZYeURVTE9ZRHUxZUhIZWRFLUpqbENhcHg0b2d2QUxKbkk4YUJWWFRiUU41RDRjbGRUQWhyQXY2b2JFQ2FIcjdqc09RWXYxUnVKUVV0VmMwSWEyemJkSEtZNWJYU004RlBBQnlOM0dMUG8wbjd4UjdvM0FVUnpUZ0RRZGVxbk5kUnJn?oc=5",
+      "date": "2026-10-29T19:59:13.000Z",
+      "lang": "ar",
+      "titleKo": "이라크의 민간 항공에 대한 기상 경보 발령"
+    },
+    {
+      "title": "العراق يطلق منصة وطنية للتنبؤات المناخية.. إنذار مبكر لمخاطر الجفاف والفيضانات والسيول",
+      "source": "عصابات الجولاني تعدم الأب الروحي لكنيسة مار إلياس في طرطوس",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBCb25EZ1F2VmtVNmNIZ2JFaGd6YVJyRG5fVUZ0dnVxTkRXWFNoa3pJaTdrWEFxQ3Z1RVBGNkZyX2tDNU1fSUJ4cHlwazZ3ZHc?oc=5",
+      "date": "2026-10-29T06:44:00.000Z",
+      "lang": "ar",
+      "titleKo": "이라크는 기후 예측을위한 국가 플랫폼을 시작합니다.. 가뭄, 홍수 및 홍수 위험에 대한 조기 경고"
+    },
+    {
       "title": "عراقنا اليوم | نجاح العلي : الهواء في بغداد قابل للاشتعال | 2026-10-27",
       "source": "YouTube",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBvWmYxUThZSlN1NGFRLWpRYnBUMEFqQkJOLUU1MnZXWHIwSmlFbE16Wmd6SV9rLWc2X3M5aFJCaXRoWG9HSTBaZlR1Y1dfUDM2aEJibTFqY2FYZ3VK?oc=5",
       "date": "2026-10-27T18:57:32.000Z",
       "lang": "ar",
       "titleKo": "이라크 오늘 | 나자 알 알리: 바그다드의 공기는 가연성입니다 | 2026-10-27"
-    },
-    {
-      "title": "الكارثة لم تعد مجرد مخاوف: بيئة العراق تحتضر",
-      "source": "جريدة القدس العربي | Alquds Alarabi Newspaper",
-      "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxOOWtSWjZnQXd2UWdMVWFoUjQ4NER1b3NadjB2WUlOUGt2aWRwWHJuYWM2endfYWRpRkFoRWF3NDU2eDNJaWJXbjZZS1FOQUh5VHNMc1cyVW1SQjlJWFQzYUloVHdDWXpBZ0V2TjlSRGpGQ3FmQ0pCRFJGRUlqWER0cjJ4cXRCQ3JkMUdJLVkzVDFORGdLa2JXTkVPaWsxZ2pVYmN2RzJSN25UenpUYnB5bm91cllUMnU4OWlrZVM2Ymd4S1U2dWkxc0pjR0lEZW5ScEZJMjBabGtlVkFWRlJQRmFBTEpEcnV1UHFCaXFXUHpPY2c3anVqS0VnNVFBUUpsUUxJN0ZmQXg4ZW9kdmloQ2djS3NjM25kOVdwMHBadUJNWmo2dU4zRWRDQjZ6UkJLbFQzU21PYU8wS1E5Y3R1LUFCajFpRWhQ?oc=5",
-      "date": "2026-10-24T07:00:00.000Z",
-      "lang": "ar",
-      "titleKo": "재난은 더 이상 단순한 문제가 아닙니다. 이라크의 환경이 죽어가고 있습니다."
-    },
-    {
-      "title": "كيف صارت شجرة \"كبش فداء\" لبنية تحتية منهارة في العراق!",
-      "source": "Daraj",
-      "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxQTFprUVhLZ01qQ0hndkZCUjFDQlExeHg5YnZPMWJTbEhxWWF3TnVWOXJNZkRTUkRfRUJYY1FGT0N1ekpuT1ZPcmwxSU1UU0tFc0I0am81M05rU1l2a3JNYzJmNXJEckF6LWdHWk5BXzhCZ3ZaZlQxVC1mX3NvX2I1cmlOU0s4YjVwOUgxd01YQy1SemJpZHJPZnBZZERfM3BnaTFVb0Z5MWRjdlpNTDRfd09JUG5GUTVFX1pBYXdpTDJGYloySzNaS2ltZnlpNThzZEpNM1hUUHJqdVZibTlBVDg1RTUzM0RON0VVU2JsNS1vTzBJWk5QcVg0b1JsVFVENXp5T0Y4Q3dkQTZMS3ZEN0VxSmdJTjNIdXZfbV9pbktEOGdLTHhPQ0F2Z1NDbWRSRTVTTTRhY1JNZw?oc=5",
-      "date": "2026-10-23T07:00:00.000Z",
-      "lang": "ar",
-      "titleKo": "어떻게 \"희생양\" 나무가 이라크에서 붕괴된 인프라가 되었는가!"
     }
   ]
 }
