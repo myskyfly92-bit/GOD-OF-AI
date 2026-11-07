@@ -1,7 +1,21 @@
 {
-  "generatedAt": "2026-11-06T01:33:30.166Z",
+  "generatedAt": "2026-11-07T00:56:33.710Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
+    {
+      "title": "2026년 감염병 표본감시 주간소식지 44주차",
+      "source": "질병관리청 감염병포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQy1mVHF0eHFfY0xNQzZqdXRLTk5JZXhNcWhrWHBhZkVLUmg2SHkyT3RZcUt5U0J5WGQzWlJnMDVDaEQ4bnNWTUM0X2RJeVB1aWJEUGMtU0lnTUtEMlNYQm80UXhIVENFbTJSSTF4UGZFWEpoRXdvY2VuUFBOcVAxanJ3dUJmVmdYRjdnUDA4RzQwMXZRbjVJemlma0xIa2htR1dJTjR3?oc=5",
+      "date": "2026-11-05T09:45:12.000Z"
+    },
+    {
+      "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
+      "source": "질병관리청 감염병포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
+      "date": "2024-06-10T03:38:59.000Z"
+    },
     {
       "title": "OpenAPI 신청",
       "source": "국가건강정보포털",
@@ -10,11 +24,32 @@
       "date": "2026-11-05T14:31:45.000Z"
     },
     {
-      "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
-      "source": "질병관리청 감염병포털",
+      "title": "건강교육 자료실",
+      "source": "국가건강정보포털",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
-      "date": "2024-06-10T03:38:59.000Z"
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNalpRMDNkWEFUbVFoaHh0OXktM09Ua2xZYl9pR1FrUEFqcXlLbWdzY1Q3clY5Zl9fS1FOeUpELTVvOHVIbVQwYjBxU3Fpb1RLYkhXVDFsODhjbUtKN2hlc1BheDRBQTc0Z0pvRUp5Y1BkRGdhUFZVNkd4b0d5eU1VcXlHZ1A2cUFSa3RQXzhuLUtQbDRVaFQtV1lOalR0RzVKbmNYeWh1NEZwNFBWM1E2X3lqczNxNGZWM2szS2VB?oc=5",
+      "date": "2026-11-05T13:34:45.000Z"
+    },
+    {
+      "title": "감시체계 개요",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wWHJiVHVhblkyUXVMejFfWnhQeUJGUl92cWR2NTd1elJvU3h5WklNOGs4NFRubHVBdmdtbnctV3MydGJHN21xOTNYQk9YMEx0NkR6S3dR?oc=5",
+      "date": "2025-12-16T15:12:03.000Z"
+    },
+    {
+      "title": "FAQ",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5nc2VoNm9tZ1VNNWM1d0VUdHVGcm40WkY3S0RTcGstZVRxWVZuUkM4RS0zdGpYYmlYUGVKNFN4YnA3Y00zLUpuOWhqS3h6aTZkWnhFUEkzZHlHd1NPcmJucU5oTld4aHJVbWJnMlNPOVA?oc=5",
+      "date": "2026-06-12T08:29:41.000Z"
+    },
+    {
+      "title": "지침",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxOR1llMFVLek5sYjI0V0M4eUstYV9zcldxeXVLM1RucUpMaXRHNEg4cEJpY3JybnM2Zlo2UVBBUW9IU0RSWWg2LUpLbkliZFVKUmlZMnRNQmFNUzduTWVzR2E2MmJQRTV4RThhbG5lb3lZUm5EZkk3RDI0MXFaY0NYcTUtM1FSS0NBTUt1SFQxbS1fTkRKc0xTSmRBSlhVZ0J0NkgtNGdTM25GNmNoTHFkQ2V0ZlJIZzlfVnRHSnFWalVjZnp1NzFJOE80N2pXTlRZVkROZnNiQUZzSHRYcTFHR2NvZFhVa2xyNUhaVE1HbWI2bEYzUjRfYnJCaWdEOHV6b0lkSzVuaTdSWGlCZHg0dWdLcl90SkhUbjJwYnYyRk5hbnRmaExoZjhzZHAtVDJ0VW4xcnlWY0hyMGFHRjhCcHNReG9adWNCUVBPNTFfZ0lrOGdrVU9VY0VMWS1UN1ZmU2c?oc=5",
+      "date": "2026-01-15T10:26:20.000Z"
     },
     {
       "title": "보도자료(전체)",
@@ -28,7 +63,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-05T08:54:28.000Z"
+      "date": "2026-11-06T08:51:19.000Z"
     },
     {
       "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
@@ -45,46 +80,11 @@
       "date": "2026-11-01T12:57:56.000Z"
     },
     {
-      "title": "채용공고",
+      "title": "홍보물",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
-      "date": "2025-12-16T15:48:42.000Z"
-    },
-    {
-      "title": "이달의 건강정보",
-      "source": "국가건강정보포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNTEg5Mnh5NkFrQVdXUk9rT1ZHVUwwaVQ2dW5XMlNaSmNjMVdLSG94RkZ5R2dTUlhjZDB0d0U3UmZ3dmpHbzAxS0ttVHZTSVNqWmdId0JqNDAzaTc4NGYxUlp2S1hHZDIycEhWeWhSM1FBNmxGX0g2TVVLYWtwNFBJRkZEMDNKQWJrU2xZNndfeXZQSzhOZUN1dXJXaWpQZ3RjUXlSU2Q0MU0xN1gzdEZZbHc5TnU5cE5QRlNwdUd3am5QdjFzekR1eUZPTnptaEJ5U3RjUE9YaFRrNDNXX25LdVl2ZzdYMFpWQVE?oc=5",
-      "date": "2026-10-30T06:59:19.000Z"
-    },
-    {
-      "title": "성홍열",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tcC03OGpvaW1sNlE0MmxfMzZYUy1PaEI1UU5aTWxLUlI2am9pbzVGU2gwT3hobGFfQmNRN3RMVkN3X3V2NUhMWDRCUnl2SXV6OE0yRXd3?oc=5",
-      "date": "2025-12-16T16:07:49.000Z"
-    },
-    {
-      "title": "공고/공시",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5uaW9FVzZ2eko4VmFSU1g4ZmRJdFZsNDJnV3JJbkVVT0xHRVJJeTlIRXlyNnpIOVFHUHVpM3N2TS02TzBFVFlTQmJjWDY0LXVWdkl3dS1B?oc=5",
-      "date": "2025-12-16T15:50:10.000Z"
-    },
-    {
-      "title": "건강한 산후 관리",
-      "source": "국가건강정보포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZTRSR3dUNG9hZmNFc1QwMjhZMGFCbFIzSWpEdWVxLWNHNEh3ek5lbE1PV2hDSm5XNlBTMTlydmFEZ04xVE1nRDBXUWJYMDNwOFo4SHVhMHZXVlZpSzFWdTRwWFBGanFoRGctQnhJX1UzVzFia2VrY015OExVb1BjQUdKY25fdHZyYkZWMk9UUGlvaTdodUp3SUhkczdQNTgwU24yS1Q1dVdid2Z3RkFNSlNWeUxnbV9K?oc=5",
-      "date": "2026-11-05T04:59:43.000Z"
-    },
-    {
-      "title": "폐흡충증",
-      "source": "국가건강정보포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNE0yUzcxa1EwMERMVXhUdTJob0pfbEhQMTlrNHFYWklqM1pSZU54M1ZaT1lhbjZDYkJYbjROWndCYXIzUGxqY0RjdmJFSURyZ05xekRQQnBuVWtsUjRoUXQyR3J0MHJ2bTJLMElwZVpJU1duVzRFbXBETnNoWG9saXR4TlpWd0NPb0hpaXNycGtSM0ViWHB6WFVKeF90UVMzbFNKNmVEdEVkcVZTUkZNajFqNzVTZGFQ?oc=5",
-      "date": "2023-12-07T09:27:39.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBpVFRoOHFHTUYxall6MTlWRjdOOHdJdU1hQUwwbnhHb1pqUVhNZjVtYVlXX0pwQk9xRUI4ajF1U0UwYks3cUJVdUttSWJEdUlZUnpRVURR?oc=5",
+      "date": "2026-02-10T05:30:11.000Z"
     }
   ]
 }
