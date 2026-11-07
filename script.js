@@ -9454,6 +9454,12 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
   let lastR = null;
   // 이 기기가 휴대폰·태블릿인지 (NOW 를 컴퓨터/모바일로 나눠 세는 데만 씀)
   const isMobileDev = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent));
+  // 검색 로봇·자동 점검 브라우저는 방문자로 세지 않는다 (열 때마다 새 기기로 보여 숫자가 부풀려짐)
+  const UA = navigator.userAgent || "";
+  const isBot = navigator.webdriver === true || /bot|crawl|spider|slurp|preview|headless|lighthouse|inspectiontool|facebookexternalhit|bingpreview|google-|mediapartners|phantom|python|curl|wget/i.test(UA);
+  // 어떤 종류의 브라우저에서 세어졌는지 (개인 정보 아님, 중복 원인 확인용)
+  const uaKind = /KAKAOTALK/i.test(UA) ? "kakao" : /NAVER\(|Whale/i.test(UA) ? "naver" : /Edg\//.test(UA) ? "edge" : /SamsungBrowser/.test(UA) ? "samsung" : /CriOS|Chrome\//.test(UA) ? "chrome" : /Firefox|FxiOS/.test(UA) ? "firefox" : /Safari/.test(UA) ? "safari" : "etc";
+  const isApp = (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true;
   box.addEventListener("click", () => { if (lastErr && last === null) alert("방문자 카운터 연결 상태\n\n" + lastErr); else vcPopToggle(); });
 
   /* ---- 탭 기록: 기기마다 하루 한 번, 처음 연 탭 이름(view-…)만 모아 두었다가 다음 신호 때 같이 보낸다 ---- */
@@ -9568,9 +9574,9 @@ makeNewsView({ view: "view-health-issues", json: "health-issues.json", days: 30,
     try {
       const url = await getAppsScriptUrl();
       if (!url) { showErr("Apps Script 주소를 못 읽음 (work-zones.json)"); return; }
-      const d = dayNow(), hit = getDay() !== d;
+      const d = dayNow(), hit = !isBot && getDay() !== d;
       const tvSend = tvPend();
-      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&vid=" + sid + "&dv=" + (isMobileDev ? "m" : "p") + (tvSend.length ? "&tv=" + tvSend.join(".") : "") + "&t=" + Date.now(), { signal: ctl.signal });
+      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "action=visit&h=" + (hit ? 1 : 0) + "&vid=" + sid + "&dv=" + (isMobileDev ? "m" : "p") + (hit ? "&ua=" + uaKind + (isApp ? "-app" : "") : "") + (tvSend.length ? "&tv=" + tvSend.join(".") : "") + "&t=" + Date.now(), { signal: ctl.signal });
       const txt = await res.text();
       let r = null;
       try { r = JSON.parse(txt); } catch (e) {
