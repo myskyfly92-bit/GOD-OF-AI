@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T19:45:00.213Z",
+  "generatedAt": "2026-11-07T01:19:49.289Z",
   "items": [
     {
       "title": "공장 화재 진압",
@@ -65,7 +65,7 @@
       "title": "송천동 농수산물도매시장 화재 건물 철거",
       "source": "전북중앙",
       "link": "http://www.jjn.co.kr/news/articleView.html?idxno=1056531",
-      "date": "2026-11-06T13:29:25.000Z",
+      "date": "2026-11-06T13:19:30.000Z",
       "lang": "ko",
       "titleKo": "송천동 농수산물도매시장 화재 건물 철거",
       "url": "http://www.jjn.co.kr/news/articleView.html?idxno=1056531",
@@ -74,19 +74,14 @@
       "tried": true,
       "count": 18,
       "sources": [
-        "بوابة مولانا",
         "Masrawy",
         "تليجراف مصر",
         "شبكة تواصل الإخبارية",
         "عكاظ",
-        "프레시안"
+        "프레시안",
+        "الاستاد الرياضي"
       ],
       "related": [
-        {
-          "titleKo": "수에즈 중고가구시장 화재로 전소",
-          "source": "بوابة مولانا",
-          "link": "https://mwlana.com/details/238312/"
-        },
         {
           "titleKo": "불길이 모든 것을 집어삼키다.. 수에즈 중고가구시장 화재 현장",
           "source": "Masrawy",
@@ -106,6 +101,11 @@
           "titleKo": "아인샘스 건물 화재로 2명 질식",
           "source": "شبكة تواصل الإخبارية",
           "link": "https://www.elbalad.news/7169987"
+        },
+        {
+          "titleKo": "뉴욕 주택 화재로 6명 사망, 9명 부상",
+          "source": "عكاظ",
+          "link": "https://www.okaz.com.sa/variety/na/2274203"
         }
       ],
       "tag": "시장·상가"
@@ -154,22 +154,22 @@
       "tried": true
     },
     {
-      "title": "보은군, 화재 딛고 정상 가동한 이킴 보은공장 방문",
-      "source": "중앙매일",
-      "link": "http://www.jamill.kr/news/articleView.html?idxno=492408",
+      "title": "최재형 보은군수, 화재 복구한 ㈜이킴 보은공장 방문",
+      "source": "충북뉴스",
+      "link": "https://www.cbnews.kr/news/articleView.html?idxno=246367",
       "date": "2026-11-06T07:52:12.000Z",
       "lang": "ko",
-      "titleKo": "보은군, 화재 딛고 정상 가동한 이킴 보은공장 방문",
-      "url": "http://www.jamill.kr/news/articleView.html?idxno=492408",
-      "body": "충북 보은군은 지난 5일 보은농공단지에 있는 ㈜이킴 보은공장을 방문해 화재 피해 복구와 생산 재개 현황을 살폈다.이날 최재형 보은군수는 경제정책실장 등 관계 공무원과 함께 복구를 마친 생산시설을 둘러보고, 공장 정상화에 힘쓴 기업 관계자와 근로자들을 격려했다.㈜이킴 보은공장은 지난해 12월 19일 발생한 화재로 건물과 생산설비 등이 피해를 입어 41억 500만원의 재산 피해가 발생했다.이후 공장을 재건하고 생산설비를 복구해 지난달 건축물 사용승인과 공장 완료신고를 마쳤으며, 시험생산을 거쳐 본격적인 가동에 들어갔다.군은 공장 재건에\n군은 공장 재건에 필요한 인허가 절차를 돕고, 중소기업육성자금을 통해 시설자금 20억원을 융자 지원했다.\n㈜이킴은 보은농공단지와 삼승농공단지에서 김치류를 생산하는 기업으로, 두 사업장에서 근로자 170여 명이 일하고 있다.\n최재형 보은군수는&ldquo;화재 피해를 딛고 공장을 다시 가동하기까지 힘을 모아 주신 기업 관계자와 근로자 여러분께 감사드린다&rdquo;며&ldquo;근로자들이 안심하고 일하고, 지역 일자리와 나눔을 이어 온 기업이 보은에서 안정적으로 성장할 수 있도록 현장의 목소리를 살피고 필요한 지원을 이어가겠다&rdquo;고 말했다.",
-      "bodyKo": "충북 보은군은 지난 5일 보은농공단지에 있는 ㈜이킴 보은공장을 방문해 화재 피해 복구와 생산 재개 현황을 살폈다.이날 최재형 보은군수는 경제정책실장 등 관계 공무원과 함께 복구를 마친 생산시설을 둘러보고, 공장 정상화에 힘쓴 기업 관계자와 근로자들을 격려했다.㈜이킴 보은공장은 지난해 12월 19일 발생한 화재로 건물과 생산설비 등이 피해를 입어 41억 500만원의 재산 피해가 발생했다.이후 공장을 재건하고 생산설비를 복구해 지난달 건축물 사용승인과 공장 완료신고를 마쳤으며, 시험생산을 거쳐 본격적인 가동에 들어갔다.군은 공장 재건에\n군은 공장 재건에 필요한 인허가 절차를 돕고, 중소기업육성자금을 통해 시설자금 20억원을 융자 지원했다.\n㈜이킴은 보은농공단지와 삼승농공단지에서 김치류를 생산하는 기업으로, 두 사업장에서 근로자 170여 명이 일하고 있다.\n최재형 보은군수는&ldquo;화재 피해를 딛고 공장을 다시 가동하기까지 힘을 모아 주신 기업 관계자와 근로자 여러분께 감사드린다&rdquo;며&ldquo;근로자들이 안심하고 일하고, 지역 일자리와 나눔을 이어 온 기업이 보은에서 안정적으로 성장할 수 있도록 현장의 목소리를 살피고 필요한 지원을 이어가겠다&rdquo;고 말했다.",
+      "titleKo": "최재형 보은군수, 화재 복구한 ㈜이킴 보은공장 방문",
+      "url": "https://www.cbnews.kr/news/articleView.html?idxno=246367",
+      "body": "(충북뉴스 오정열 기자) 최재형 보은군수가 지난해 화재 피해를 딛고 정상 가동에 들어간 ㈜이킴 보은공장을 찾아 임직원을 격려했다.보은군은 지난 5일 최재형 군수가 보은농공단지 ㈜이킴 보은공장을 방문해 화재 피해 복구와 생산 재개 현황을 살폈다고 밝혔다. 최 군수는 경제정책실장 등 관계 공무원과 함께 복구를 마친 생산시설을 둘러보고 기업 관계자와 근로자들을 격려했다.㈜이킴 보은공장은 지난해 12월 19일 화재로 건물과 생산설비가 피해를 입어 41억500만원의 재산 피해가 발생했다. 이후 공장을 재건해 지난 10월 건축물 사용승인과 공\n군은 인허가 절차를 돕고 중소기업육성자금으로 시설자금 20억원을 융자 지원했으며, 지역SW서비스 사업화 사업비 7700만원도 지원했다. ㈜이킴은 보은농공단지와 삼승농공단지에서 김치류를 생산하며, 두 사업장에서 근로자 170여 명이 일하고 있다.\n최재형 군수는 \"화재 피해를 딛고 공장을 다시 가동하기까지 힘을 모아 주신 기업 관계자와 근로자 여러분께 감사드린다\"고 말했다. 이어 \"지역 일자리와 나눔을 이어 온 기업이 보은에서 안정적으로 성장할 수 있도록 현장의 목소리를 살피고 필요한 지원을 이어가겠다\"고 밝혔다.",
+      "bodyKo": "(충북뉴스 오정열 기자) 최재형 보은군수가 지난해 화재 피해를 딛고 정상 가동에 들어간 ㈜이킴 보은공장을 찾아 임직원을 격려했다.보은군은 지난 5일 최재형 군수가 보은농공단지 ㈜이킴 보은공장을 방문해 화재 피해 복구와 생산 재개 현황을 살폈다고 밝혔다. 최 군수는 경제정책실장 등 관계 공무원과 함께 복구를 마친 생산시설을 둘러보고 기업 관계자와 근로자들을 격려했다.㈜이킴 보은공장은 지난해 12월 19일 화재로 건물과 생산설비가 피해를 입어 41억500만원의 재산 피해가 발생했다. 이후 공장을 재건해 지난 10월 건축물 사용승인과 공\n군은 인허가 절차를 돕고 중소기업육성자금으로 시설자금 20억원을 융자 지원했으며, 지역SW서비스 사업화 사업비 7700만원도 지원했다. ㈜이킴은 보은농공단지와 삼승농공단지에서 김치류를 생산하며, 두 사업장에서 근로자 170여 명이 일하고 있다.\n최재형 군수는 \"화재 피해를 딛고 공장을 다시 가동하기까지 힘을 모아 주신 기업 관계자와 근로자 여러분께 감사드린다\"고 말했다. 이어 \"지역 일자리와 나눔을 이어 온 기업이 보은에서 안정적으로 성장할 수 있도록 현장의 목소리를 살피고 필요한 지원을 이어가겠다\"고 밝혔다.",
       "tried": true,
       "count": 4,
       "sources": [
         "공뉴스",
-        "중앙매일",
         "엔디엔뉴스",
-        "충북뉴스"
+        "충북뉴스",
+        "도민연합뉴스"
       ],
       "related": [
         {
@@ -183,9 +183,9 @@
           "link": "https://www.ndnnews.co.kr/news/articleViewAmp.html?idxno=1125819"
         },
         {
-          "titleKo": "최재형 보은군수, 화재 복구한 ㈜이킴 보은공장 방문",
-          "source": "충북뉴스",
-          "link": "https://www.cbnews.kr/news/articleView.html?idxno=246367"
+          "titleKo": "보은군, 화재 딛고 정상 가동한 이킴 보은공장 방문",
+          "source": "도민연합뉴스",
+          "link": "http://www.jamill.kr/news/articleView.html?idxno=492408"
         }
       ],
       "tag": "공장·플랜트"
@@ -194,7 +194,7 @@
       "title": "مجدال هعيمك: إنقاذ 6 أشخاص بينهم رضيع وطفل بعد اندلاع حريق في مبنى سكني مكوّن من أربعة طوابق",
       "source": "كل العرب",
       "link": "https://kul-alarab.com/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D9%85%D8%AD%D9%84%D9%8A%D8%A9/%D9%85%D8%AC%D8%AF%D8%A7%D9%84-%D9%87%D8%B9%D9%8A%D9%85%D9%83-%D8%A5%D9%86%D9%82%D8%A7%D8%B0-6-%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5-%D8%A8%D9%8A%D9%86%D9%87%D9%85-%D8%B1%D8%B6%D9%8A%D8%B9-%D9%88%D8%B7%D9%81%D9%84-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D9%85%D8%A8%D9%86%D9%89-%D8%B3%D9%83%D9%86%D9%8A-%D9%85%D9%83%D9%88%D9%86-%D9%85%D9%86-%D8%A3/1131595",
-      "date": "2026-11-06T06:34:39.000Z",
+      "date": "2026-11-06T06:41:51.000Z",
       "lang": "ar",
       "titleKo": "마즈달 하이마크: 4층 주택 화재로 영아와 어린이 포함 6명 구조",
       "url": "https://kul-alarab.com/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D9%85%D8%AD%D9%84%D9%8A%D8%A9/%D9%85%D8%AC%D8%AF%D8%A7%D9%84-%D9%87%D8%B9%D9%8A%D9%85%D9%83-%D8%A5%D9%86%D9%82%D8%A7%D8%B0-6-%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5-%D8%A8%D9%8A%D9%86%D9%87%D9%85-%D8%B1%D8%B6%D9%8A%D8%B9-%D9%88%D8%B7%D9%81%D9%84-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AF%D9%84%D8%A7%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D9%85%D8%A8%D9%86%D9%89-%D8%B3%D9%83%D9%86%D9%8A-%D9%85%D9%83%D9%88%D9%86-%D9%85%D9%86-%D8%A3/1131595",
@@ -295,7 +295,7 @@
         {
           "titleKo": "겨울 앞둔 건설현장···호반건설, 화재·한파·추락 위험 살폈다",
           "source": "스마트비즈",
-          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE84T3B5cU1ZRnpHYWpTajcwdXNGcElzYnhJRlZPRnFwMFlMMnk5RjRKRUdGSnNBem54MUVHWnJpU2NkY2hpcHU4SFdFSVdjaEttNEFGOEZEM3NxazJqbHRmUzUzMUtZemZpVm1hSQ?oc=5"
+          "link": "https://www.smartbizn.com/news/articleView.html?idxno=158592"
         }
       ],
       "tag": "기타"
@@ -958,24 +958,17 @@
       "tag": "시장·상가"
     },
     {
-      "title": "Fire contained at warehouse in Abu Dhabi's Al Dhafra area",
-      "source": "ARN News Centre",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPOWM4TlVkLUcyYUJJVzItZWRIck0wRHA4V0hTUWx5bUZpaktJNVd5cklYdWl0bjRJMldBWGdZQ1U3ZmxsRkRYb1ZWbVRWSnVCSTFwckVwU3phVENnTjQzLWJ4TTZRWTVEbjkzZzlFX2ZTaWNfeHFyaWk1RW95Q01LemlQVFgxOVEwSG55bkR0bTdVRmdFd0tGZ3VlY1RaVXo5TW1sZg?oc=5",
+      "title": "Abu Dhabi warehouse fire brought under control, no injuries reported",
+      "source": "Gulf News",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPV2JNVHFiOHhkRXBncVpCNHBCN0ItaEFzTlpYLTdRU2RyZW1kQ3dLOUZlX0x0S3g5ZE1wSWhaMEc4VjJLeTZ5T0dpWjhUb2lLOHVLVkg3QzROT3lxUHdtdXRYTWM1Ti00S2pEUE56WkxVaUFGQlVmdEhqckFYRnBsZ3dJc2ZFUDdyaklPdFktTlRrUV9MODJabkFhVjdqSXhn0gGzAUFVX3lxTE9CWDluY1BtZVF2Q3RRUVlTMldlUUVBTk1oQ1MtbFhpZmhyUjJWb3VGc1JMTTl2WkJSd1dkNWs5aDM2R2NBSGRhdmN4UUVqTXRPZ0lpTTdnVTlMNjhnUHdjU0lYSUhuSVo0NGhZTXB6ZlptLXBkRHU3S1FCUlowRFBGSWpXeGZlT0xCX04wcU91VVItRHJjYWNONkFqUTJMbVVPRkU5ejB0YjVCV3ZiUzBTLUs0?oc=5",
       "date": "2026-10-11T07:00:00.000Z",
       "lang": "en",
-      "titleKo": "아부다비 알 다프라 지역 창고 화재 진화",
-      "count": 2,
+      "titleKo": "아부다비 창고 화재 진화 완료, 인명피해 없어",
+      "count": 1,
       "sources": [
-        "Gulf News",
-        "ARN News Centre"
+        "Gulf News"
       ],
-      "related": [
-        {
-          "titleKo": "아부다비 창고 화재 진화 완료, 인명피해 없어",
-          "source": "Gulf News",
-          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPV2JNVHFiOHhkRXBncVpCNHBCN0ItaEFzTlpYLTdRU2RyZW1kQ3dLOUZlX0x0S3g5ZE1wSWhaMEc4VjJLeTZ5T0dpWjhUb2lLOHVLVkg3QzROT3lxUHdtdXRYTWM1Ti00S2pEUE56WkxVaUFGQlVmdEhqckFYRnBsZ3dJc2ZFUDdyaklPdFktTlRrUV9MODJabkFhVjdqSXhn0gGzAUFVX3lxTE9CWDluY1BtZVF2Q3RRUVlTMldlUUVBTk1oQ1MtbFhpZmhyUjJWb3VGc1JMTTl2WkJSd1dkNWs5aDM2R2NBSGRhdmN4UUVqTXRPZ0lpTTdnVTlMNjhnUHdjU0lYSUhuSVo0NGhZTXB6ZlptLXBkRHU3S1FCUlowRFBGSWpXeGZlT0xCX04wcU91VVItRHJjYWNONkFqUTJMbVVPRkU5ejB0YjVCV3ZiUzBTLUs0?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "숙소·창고"
     }
   ]
