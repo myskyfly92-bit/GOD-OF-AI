@@ -67,30 +67,30 @@
   },
   "제2급": {
    "diseases": 21,
-   "base": 1852,
-   "prev": 2060,
-   "provisional": 1759,
+   "base": 1851,
+   "prev": 2058,
+   "provisional": 1761,
    "outnatn": 1,
    "trend": [
-    2058,
+    2060,
     1913,
     1836,
-    2160,
+    2161,
     1904,
-    1912,
     1913,
-    1461,
+    1915,
+    1462,
     2082,
     1538,
-    2060,
-    1852
+    2058,
+    1851
    ]
   },
   "제3급": {
    "diseases": 28,
-   "base": 496,
+   "base": 495,
    "prev": 343,
-   "provisional": 698,
+   "provisional": 713,
    "outnatn": 10,
    "trend": [
     207,
@@ -101,10 +101,10 @@
     238,
     215,
     136,
-    214,
+    213,
     163,
     343,
-    496
+    495
    ]
   }
  },
@@ -112,10 +112,10 @@
   {
    "name": "카바페넴내성장내세균목(CRE) 감염증",
    "grade": "제2급",
-   "base": 1108,
-   "prev": 1295,
+   "base": 1107,
+   "prev": 1293,
    "provisional": 1113,
-   "dmstc": 1108,
+   "dmstc": 1107,
    "outnatn": 0
   },
   {
@@ -130,10 +130,10 @@
   {
    "name": "쯔쯔가무시증",
    "grade": "제3급",
-   "base": 291,
+   "base": 290,
    "prev": 119,
-   "provisional": 534,
-   "dmstc": 291,
+   "provisional": 547,
+   "dmstc": 290,
    "outnatn": 0
   },
   {
@@ -141,7 +141,7 @@
    "grade": "제2급",
    "base": 161,
    "prev": 152,
-   "provisional": 124,
+   "provisional": 126,
    "dmstc": 161,
    "outnatn": 0
   },
@@ -149,8 +149,8 @@
    "name": "C형간염",
    "grade": "제3급",
    "base": 106,
-   "prev": 110,
-   "provisional": 92,
+   "prev": 111,
+   "provisional": 93,
    "dmstc": 106,
    "outnatn": 0
   },
@@ -167,7 +167,7 @@
    "name": "매독",
    "grade": "제3급",
    "base": 47,
-   "prev": 44,
+   "prev": 43,
    "provisional": 39,
    "dmstc": 43,
    "outnatn": 4
@@ -240,7 +240,7 @@
    "grade": "제3급",
    "base": 6,
    "prev": 23,
-   "provisional": 0,
+   "provisional": 1,
    "dmstc": 6,
    "outnatn": 0
   }
@@ -250,7 +250,7 @@
   {
    "name": "뎅기열",
    "grade": "제3급",
-   "count": 18
+   "count": 19
   },
   {
    "name": "매독",
@@ -283,7 +283,7 @@
    "count": 1
   }
  ],
- "totalBase": 2348,
- "totalPrev": 2403,
- "generatedAt": "2026-11-06T02:50:06.656307+00:00"
+ "totalBase": 2346,
+ "totalPrev": 2401,
+ "generatedAt": "2026-11-07T02:22:35.779334+00:00"
 }
