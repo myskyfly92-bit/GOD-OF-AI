@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T00:56:33.710Z",
+  "generatedAt": "2026-11-08T00:36:24.930Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -17,11 +17,11 @@
       "date": "2024-06-10T03:38:59.000Z"
     },
     {
-      "title": "OpenAPI 신청",
-      "source": "국가건강정보포털",
+      "title": "보도자료 - 고혈압‧당뇨병 등 만성질환 관리, 만성질환 통합관리센터로 전국 단계적 확대(11.5.목)",
+      "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNU3hWMmxRVDc3RUlhSDZEXy11NHF3b2htT0t2QlV1N2YwLS1ieXBCSTdPN1Z0Z3FjS1BVR3NzODhjMHFGbW1yNFE1QUdZdkNHQ3ZNYWQ5NkljdXgzeHNSMUsyNHlIdHRzRHFJVmVWT0ZkX09ma282WDNBazZBZHZsQ0k0dS1RcFBWRURqaHhGRGx0Rm1fRmdqMkZSVHdDVzJqcXlTa3hn?oc=5",
-      "date": "2026-11-05T14:31:45.000Z"
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE54T3pDRms1MW5xOFQ0TGt3eG0xclRJVUFxNHEtMVNWWG9GTXg4dmhTWVRxTDVnYmdTWlJyRlpQRHJSTlJJWVBNOGVobFQ1NXBDNFYwdTBwNUtqUDktcTlKLW5JeFlHOGkxaWxMSW9sdHZnazA4SUd1QQ?oc=5",
+      "date": "2026-11-05T07:56:32.000Z"
     },
     {
       "title": "건강교육 자료실",
@@ -29,6 +29,13 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNalpRMDNkWEFUbVFoaHh0OXktM09Ua2xZYl9pR1FrUEFqcXlLbWdzY1Q3clY5Zl9fS1FOeUpELTVvOHVIbVQwYjBxU3Fpb1RLYkhXVDFsODhjbUtKN2hlc1BheDRBQTc0Z0pvRUp5Y1BkRGdhUFZVNkd4b0d5eU1VcXlHZ1A2cUFSa3RQXzhuLUtQbDRVaFQtV1lOalR0RzVKbmNYeWh1NEZwNFBWM1E2X3lqczNxNGZWM2szS2VB?oc=5",
       "date": "2026-11-05T13:34:45.000Z"
+    },
+    {
+      "title": "OpenAPI 신청",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNU3hWMmxRVDc3RUlhSDZEXy11NHF3b2htT0t2QlV1N2YwLS1ieXBCSTdPN1Z0Z3FjS1BVR3NzODhjMHFGbW1yNFE1QUdZdkNHQ3ZNYWQ5NkljdXgzeHNSMUsyNHlIdHRzRHFJVmVWT0ZkX09ma282WDNBazZBZHZsQ0k0dS1RcFBWRURqaHhGRGx0Rm1fRmdqMkZSVHdDVzJqcXlTa3hn?oc=5",
+      "date": "2026-11-05T14:31:45.000Z"
     },
     {
       "title": "감시체계 개요",
@@ -63,7 +70,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-06T08:51:19.000Z"
+      "date": "2026-11-07T05:53:29.000Z"
     },
     {
       "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
@@ -73,18 +80,11 @@
       "date": "2024-06-10T02:47:27.000Z"
     },
     {
-      "title": "G12.28케네디 병 (Kennedy disease)",
-      "source": "질병관리청 희귀질환 헬프라인",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSU1KczZJY0wzNTJGc1hmMnZkbXVJVFIwUVF0VWJ4TUYxT29KdTd1WUZZVXhxN01MdkxDUmJtN3lfeWR1bUtlMVFxaG14cUZ6cHYta2RySl9mQS1CU0VwN01fODlkS3pEdTZVcTZjeUxPZXo2eUlKdVhBekFuYTllRkJsZ2NNalR4OEpjYm9wQ3ptbUxZaGpBa1BNX1VKb01yVXRCVkl5V0pGMGdwVW1JOTE3WGhkbk9uaE81Zm5QRFh5TlVH?oc=5",
-      "date": "2026-11-01T12:57:56.000Z"
-    },
-    {
       "title": "홍보물",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBpVFRoOHFHTUYxall6MTlWRjdOOHdJdU1hQUwwbnhHb1pqUVhNZjVtYVlXX0pwQk9xRUI4ajF1U0UwYks3cUJVdUttSWJEdUlZUnpRVURR?oc=5",
-      "date": "2026-02-10T05:30:11.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoZDI5VGFnRWd1b0hoSFhVX0VIV1VKaXhjSzRxb2dfT3J0ZlNOeVdWUlV3YlhPVTUwM3Y5UmxDc3EzelBlaXp4akQzYmNsLVhqVzJrOFNn?oc=5",
+      "date": "2026-02-10T10:33:00.000Z"
     }
   ]
 }
