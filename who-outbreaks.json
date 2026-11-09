@@ -9,6 +9,126 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO training strengthens global capacity for healthier, more equitable cities",
+      "date": "2026-11-10T08:00:00Z",
+      "summary": "More than half of the world’s population now lives in urban areas, a proportion expected to reach 68% by 2050. While cities can create powerful opportunities for better health, climate action and social development, rapid urbanization is also exposing billions of people to inadequate housing and transport, poor sanitation, air pollution, extreme heat and environments that contribute to noncommunicable diseases and injuries. With COP31 in Türkiye and the next World Urban Forum in Mexico City on t",
+      "link": "https://www.who.int/news/item/10-11-2026-who-training-strengthens-global-capacity-for-healthier--more-equitable-cities",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "New WHO policy options call for stronger integration of health and care workforce",
+      "date": "2026-11-09T09:58:47Z",
+      "summary": "The WHO Academy has launched new policy options to help countries better recognize, develop and support care workers as an integral part of the health workforce, responding to the growing demand for care worldwide as populations age and increasing numbers of people require support due to disability, chronic health conditions and other care needs. The new publication, Development, management and support of care workers – towards an integrated health and care workforce: policy options, highlights ",
+      "link": "https://www.who.int/news/item/09-11-2026-new-who-policy-options-call-for-stronger-integration-of-health-and-care-workforce",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO invites feedback on a draft target product profile for wearable devices to measure physical activity and sedentary behaviour in population health monitoring systems",
+      "date": "2026-11-08T02:00:00Z",
+      "summary": "Consultation period: 8 November 2026 to 6 December 2026Physical inactivity and sedentary behaviour are major risk factors for noncommunicable diseases and poor mental health. Advances in wearable technologies provide an opportunity to complement existing surveillance approaches with objective measures of movement behaviours. However, their use in routine population health monitoring remains limited, particularly in low- and middle-income countries.WHO has developed a draft target product profile",
+      "link": "https://www.who.int/news/item/08-11-2026-who-invites-feedback-on-a-draft-target-product-profile-for-wearable-devices-to-measure-physical-activity-and-sedentary-behaviour-in-population-health-monitoring-systems",
+      "newsType": "News release"
+    },
+    {
+      "kind": "감염병 발생",
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria",
+      "date": "2026-11-06T17:27:28Z",
+      "summary": "Since the publication of the previous Disease Outbreak News on 23 October 2026, the Bundibugyo virus disease (BVD) outbreak has expanded geographically in the Democratic Republic of the Congo. While some areas have seen a slight decline in cases, sustained, high-level transmission continues overall in the Democratic Republic of the Congo. As of 3 November 2026, a total of 10 668 confirmed cases, including 5198 deaths (crude case fatality ratio: 48.7%), have been reported across 67 health zones i",
+      "link": "https://www.who.int/2026-DON625",
+      "donId": "2026-DON625"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Civil society discusses its role in strengthening trust in science",
+      "date": "2026-11-06T14:54:00Z",
+      "summary": "The WHO Civil Society Commission and WHO Science Department brought together non-State actors to explore how civil society can help strengthen trust in science, counter health misinformation and support the use of evidence. Participants emphasized community engagement, inclusive research, trusted communication and stronger partnerships as key to bringing science closer to people and informing health decisions.",
+      "link": "https://www.who.int/news/item/06-11-2026-civil-society-discusses-its-role-in-strengthening-trust-in-science",
+      "newsType": "News"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "FoodMed 2026 highlights the role of food, traditional knowledge and science in advancing health",
+      "date": "2026-11-06T13:00:00Z",
+      "summary": "Dr Geetha Krishnan Gopalakrishna Pillai of WHO Global Centre for Traditional Medicine, delivering his keynote at FoodMed 2026 ConferenceThe FoodMed Conference returned for its second edition on 5–6 November 2026, bringing together international experts, regulators, researchers, health-care professionals, industry leaders and investors to explore how traditional knowledge and modern science can advance the growing field of Food as Medicine. Hosted by Hong Kong Baptist University (HKBU), the confe",
+      "link": "https://www.who.int/news/item/06-11-2026-foodmed-2026-highlights-the-role-of-food--traditional-knowledge-and-science-in-advancing-health",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "감염병 발생",
+      "title": "Yellow fever - WHO African Region",
+      "date": "2026-11-06T09:01:14Z",
+      "summary": "Yellow fever transmission continues in the WHO African Region, with recent outbreak activity concentrated in parts of West Africa. Between 1 January and 12 October 2026, 67 confirmed cases, including 18 deaths, were recorded in nine countries in the Region: Burkina Faso, Cameroon, the Central African Republic, Côte d’Ivoire, Ghana, Guinea, Liberia, Nigeria and Togo. The most recent outbreak activity has been concentrated in Burkina Faso, Côte d’Ivoire, Ghana and Liberia, including in areas close",
+      "link": "https://www.who.int/2026-DON624",
+      "donId": "2026-DON624"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO at COP31: Health Day opens two weeks of activities to deliver on climate change and health",
+      "date": "2026-11-06T08:00:36Z",
+      "summary": "On Monday, 9 November, health takes centre stage as the thirty-first session of the Conference of the Parties (COP31) to the UN Framework Convention on Climate Change (UNFCCC) opens with a dedicated Health Day.",
+      "link": "https://www.who.int/news/item/06-11-2026-who-at-cop31--health-day-opens-two-weeks-of-activities-to-deliver-on-climate-change-and-health",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Two new candidate vaccines to join Ebola trial as treatment research advances",
+      "date": "2026-11-04T15:30:00Z",
+      "summary": "Expert groups convened by the World Health Organization (WHO) have recommended adding two new Ebola vaccine candidates to the ongoing Tumaini clinical trial in the Democratic Republic of the Congo (DRC). The recommendation marks the first time vaccines specifically designed to protect against Bundibugyo virus, the virus responsible for the current outbreak, will be evaluated during an outbreak of the disease.",
+      "link": "https://www.who.int/news/item/04-11-2026-two-new-candidate-vaccines-to-join-ebola-trial-as-treatment-research-advances",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "One in four adolescents worldwide reported no active days in the previous week",
+      "date": "2026-11-04T15:00:00Z",
+      "summary": "According to new global estimates released by WHO today, some 240 million young people aged 11–17 years reported not completing at least 60 minutes of moderate-to-vigorous physical activity on any day in the previous week.",
+      "link": "https://www.who.int/news/item/04-11-2026-one-in-four-adolescents-worldwide-reported-no-active-days-in-the-previous-week",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Progress against neglected tropical diseases requires sustained action",
+      "date": "2026-11-04T13:00:57Z",
+      "summary": "The World Health Organization (WHO) today reported major global progress against neglected tropical diseases (NTDs), with 63 countries having eliminated at least one NTD by June 2026, up from 42 at the end of 2020.",
+      "link": "https://www.who.int/news/item/04-11-2026-progress-against-neglected-tropical-diseases-requires-sustained-action",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Community protection for Bundibugyo virus disease: supporting the response through technical publications",
+      "date": "2026-11-04T13:00:00Z",
+      "summary": "The World Health Organization has developed a package of technical resources to support community protection during the response to Bundibugyo virus disease in the Democratic Republic of the Congo and neighbouring countries.",
+      "link": "https://www.who.int/news/item/04-11-2026-community-protection-for-bundibugyo-virus-disease--supporting-the-response-through-technical-publications",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Six climate and health actions could save 1.6 million lives and deliver trillions in benefits each year",
+      "date": "2026-11-04T08:00:00Z",
+      "summary": "Six proven climate and health measures could save 1.6 million lives a year while delivering trillions of dollars in economic and fiscal gains, according to a new World Health Organization (WHO) report released today.",
+      "link": "https://www.who.int/news/item/04-11-2026-six-climate-and-health-actions-could-save-1.6-million-lives-and-deliver-trillions-in-benefits-each-year",
+      "newsType": "News release"
+    },
+    {
+      "kind": "감염병 발생",
+      "title": "Shamonda virus in human - France",
+      "date": "2026-11-02T14:26:51Z",
+      "summary": "On 20 October 2026, the National IHR Focal Point (NFP) of France notified WHO regarding the first documented human infection with Shamonda virus (SHAV). The case was an immunocompromised older man from eastern France with no travel history during the preceding year. He developed severe neurological illness on 23 September 2026 and was diagnosed with severe encephalitis (brain inflammation). The patient died on 8 October 2026. SHAV is recognized primarily as an animal-associated virus, like the c",
+      "link": "https://www.who.int/2026-DON623",
+      "donId": "2026-DON623"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Sustaining sexual and reproductive health through a pandemic",
+      "date": "2026-11-01T23:00:00Z",
+      "summary": "Evidence from nine countries informs future emergency preparednessWhen COVID-19 kept new mothers in Khon Kaen, Thailand, away from hospital, the clinic went to them. Nurses phoned women five weeks after birth instead of calling them in, offered contraceptive implants before discharge, and sent medicines to patients' homes by post.",
+      "link": "https://www.who.int/news/item/01-11-2026-sustaining-sexual-and-reproductive-health-through-a-pandemic",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "On World Cities Day 2026, WHO calls for safe, healthy housing for all",
       "date": "2026-10-31T04:00:00Z",
       "summary": "This World Cities Day, celebrated under the theme “Regenerating the City: Adequate Housing for All”, the World Health Organization (WHO) highlights the critical role of housing in shaping health and well-being and calls for greater action to ensure that everyone can live in healthy, safe and accessible homes.",
@@ -25,75 +145,11 @@
     },
     {
       "kind": "WHO 소식",
-      "title": "World Conference on Traditional Medicine 2026 delivers landmark outcomes for global health",
+      "title": "World Conference on Traditional Medicine 2026 delivers landmark health initiatives",
       "date": "2026-10-30T12:00:00Z",
       "summary": "Expert Committee Meeting members at the World Conference on Traditional Medicine 2026© WHOThe World Conference on Traditional Medicine 2026 concluded in Beijing on 18 October with several key outcomes aimed at strengthening global cooperation for health and well-being. These included the adoption of the Beijing Initiative on the Conservation and Sustainable Use of Traditional Medicinal Plant Resources, the promotion of the New-Era Shennong Herbal Project, and the publication of the Report on art",
       "link": "https://www.who.int/news/item/30-10-2026-world-conference-on-traditional-medicine-2026-delivers-landmark-outcomes-for-global-health",
       "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Announcement of candidates for the position of WHO Director-General",
-      "date": "2026-10-29T18:18:23Z",
-      "summary": "Seven candidates have been proposed by Member States of the World Health Organization for the position of WHO Director-General. The candidates will engage with Member States and Associate Members on 18–19 November 2026 at the first candidates’ forum at WHO Headquarters in Geneva.",
-      "link": "https://www.who.int/news/item/29-10-2026-announcement-of-candidates-for-the-position-of-who-director-general",
-      "newsType": "Note for Media"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Message by the Director of the Department of Immunization, Vaccines and Biologicals at WHO - October 2026",
-      "date": "2026-10-29T12:36:34Z",
-      "summary": "From 5 to 8 October, the Strategic Advisory Group of Experts on Immunization (SAGE) met to review the evidence on vaccines against human papillomavirus (HPV), diphtheria, yellow fever, mpox and polio, and to consider the role of vaccination in the ongoing Bundibugyo virus disease outbreak.",
-      "link": "https://www.who.int/news/item/29-10-2026-message-by-the-director-of-the-department-of-immunization--vaccines-and-biologicals-at-who---october-2026",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO country leaders strengthen skills to advance tobacco control",
-      "date": "2026-10-29T08:00:00Z",
-      "summary": "WHO Representatives and Heads of Country Offices from 13 countries gathered at the WHO Academy in Lyon, France, on 29–30 September 2026 for the sixth Executive Leadership Programme for Tobacco Control, strengthening the leadership skills, strategic partnerships and collaboration needed to accelerate progress against tobacco use.",
-      "link": "https://www.who.int/news/item/29-10-2026-who-country-leaders-strengthen-skills-to-advance-tobacco-control",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Statement by WHO Director-General Dr Tedros Adhanom Ghebreyesus concerning the train accident in Spain",
-      "date": "2026-10-28T15:58:55Z",
-      "summary": "We came to Madrid this week as partners in the Global Obesity Summit, to talk about health, and how we can help people everywhere live longer, fuller lives. This morning, that purpose tragically overshadowed by a terrible train accident south of this city that has taken many lives.",
-      "link": "https://www.who.int/news/item/28-10-2026-statement-by-who-director-general-dr-tedros-adhanom-ghebreyesus-concerning-the-train-accident-in-spain",
-      "newsType": "Statement"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO advises coexistence of digital and non-digital ship-related health documents",
-      "date": "2026-10-28T13:00:00Z",
-      "summary": "WHO calls on States Parties to facilitate the coexistence of digital and non-digital formats of ship-related health documents, including the Ship Declaration of Health (SDH) and Ship Sanitation Certificates (SSC), following the 2024 amendments to the International Health Regulations (2005) (IHR), which entered into force for most States Parties on 19 September 2025.",
-      "link": "https://www.who.int/news/item/28-10-2026-who-advises-coexistence-of-digital-and-non-digital-ship-related-health-documents",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Climate change is a growing health emergency, Lancet Countdown warns",
-      "date": "2026-10-28T08:00:36Z",
-      "summary": "Ahead of COP31, the latest Lancet Countdown report finds that the health impacts of climate change are accelerating, with heat-related deaths, drought and other climate-related risks increasing faster than a decade ago, even as clean energy investments and climate action begin to deliver health benefits.",
-      "link": "https://www.who.int/news/item/28-10-2026-climate-change-is-a-growing-health-emergency--lancet-countdown-warns",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO releases target regimen profiles for long-acting injectables for TB",
-      "date": "2026-10-28T06:00:00Z",
-      "summary": "WHO has published Target regimen profiles for long-acting injectables (LAIs) for tuberculosis (TB) prevention and treatment, which still depend on daily oral regimens taken over months, and sustaining adherence over such periods is difficult for many people. LAIs could significantly lighten the burden for people taking TB medicines and the health system that delivers them.",
-      "link": "https://www.who.int/news/item/28-10-2026-who-releases-target-regimen-profiles-for-long-acting-injectables-for-tb",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Types of data requested to inform December 2026 COVID-19 vaccine antigen composition deliberations",
-      "date": "2026-10-27T13:48:43Z",
-      "summary": "The WHO Technical Advisory Group on COVID-19 Vaccine Composition (TAG-CO-VAC) continues to closely monitor the genetic and antigenic evolution of SARS-CoV-2 variants, immune responses to SARS-CoV-2 infection and COVID-19 vaccination, and the performance of COVID-19 vaccines against circulating variants.",
-      "link": "https://www.who.int/news/item/27-10-2026-types-of-data-requested-to-inform-december-2026-covid-19-vaccine-antigen-composition-deliberations",
-      "newsType": "Statement"
     },
     {
       "kind": "감염병 발생",
@@ -102,38 +158,6 @@
       "summary": "Since the publication of the previous Disease Outbreak News on 8 October 2026, the Bundibugyo virus disease (BVD) outbreak has expanded geographically in the Democratic Republic of the Congo, as well as in the African Region, with Kenya and Nigeria reporting imported cases. Sustained, high-level transmission continues in the Democratic Republic of the Congo. As of 20 October 2026, a total of 9704 confirmed cases, including 4687 deaths (crude case fatality ratio: 48.3%), have been reported across",
       "link": "https://www.who.int/2026-DON622",
       "donId": "2026-DON622"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO launches working papers on traditional medicine",
-      "date": "2026-10-23T12:00:00Z",
-      "summary": "The WHO Global Traditional Medicine Centre is launching a series of working papers designed to document and examine traditional, complementary and integrative medicine (TCIM) worldwide. The inaugural publication, Cupping therapy: descriptive synthesis of training, provides a first-of-its-kind overview of training approaches for cupping therapy primarily based on Traditional Chinese Medicine (TCM). The series covers two streams: comprehensive traditional medicine systems and specific therapeutic ",
-      "link": "https://www.who.int/news/item/23-10-2026-who-launches-working-papers-on-traditional-medicine",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO and ENHYPEN join efforts to inspire young blood donors globally",
-      "date": "2026-10-23T07:38:44Z",
-      "summary": "World Health Organization (WHO) Director-General Dr Tedros Adhanom Ghebreyesus met with global K-pop group ENHYPEN in Seoul on 22 October to celebrate the success of their collaboration for World Blood Donor Day 2026 and recognize the group's role in inspiring young people around the world to donate blood and save lives.",
-      "link": "https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally",
-      "newsType": "News release"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Global Diagnostics Coalition calls for collective action to close the diagnostic gap",
-      "date": "2026-10-22T22:00:00Z",
-      "summary": "The Global Diagnostics Coalition (GDC) convened leaders from government, global health, civil society, industry and partner organizations at the World Health Summit 2026 to advance collective action to close persistent gaps in access to diagnostic services.Diagnostics are fundamental to quality health care, universal health coverage, health security and pandemic preparedness. Yet 47% of the world’s population still lacks access to a timely, reliable diagnosis, limiting opportunities for early de",
-      "link": "https://www.who.int/news/item/22-10-2026-global-diagnostics-coalition-calls-for-collective-action-to-close-the-diagnostic-gap",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "UAE Integrative Medicine Council announces commitments to advance evidence-based integrative medicine",
-      "date": "2026-10-21T12:00:00Z",
-      "summary": "Dr Ahmed Alosi; Dr Thekra Mohamed; Dr Geetha Krishnan G. Pillai.©WHOAt the Al Shifaa Summit for Integrative Medicine in Abu Dhabi, the United Arab Emirates (UAE) set out four national commitments aligned with the WHO Global Traditional Medicine Strategy 2025–2034 and highlighted plans for continued collaboration between the UAE Integrative Medicine Council and the World Health Organization. The United Arab Emirates has announced a set of national commitments to strengthen the evidence-based inte",
-      "link": "https://www.who.int/news/item/21-10-2026-united-arab-emirates-announces-national-commitments-to-advance-evidence-based-integrative-medicine",
-      "newsType": "Departmental update"
     },
     {
       "kind": "감염병 발생",
@@ -182,31 +206,7 @@
       "summary": "Since the last Disease Outbreak News was published on 14 August 2026, the outbreak has spread from 54 to 60 health zones. The number of affected provinces stands at six out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, and Tshopo. Six additional health zones reported cases since the last update - Ganga and Viadana health zones in Bas-Uélé province, Biena, Manguredjipa, and Mutwanga in North Kivu, and Tshopo health zone in Tshopo province. As of 26 August 202",
       "link": "https://www.who.int/2026-DON616",
       "donId": "2026-DON616"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
-      "date": "2026-08-14T15:54:20Z",
-      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is in a phase of intense transmission. It is the largest Ebola outbreak ever reported in the country and expanding faster than any previous Ebola outbreak. The epidemic is increasingly characterized by sustained transmission within interconnected geographic clusters. Initially confined to the Mongbwalu health zone in Ituri Province, the outbreak has now expanded to 54 health zones across six provinces (Ituri, Nor",
-      "link": "https://www.who.int/2026-DON615",
-      "donId": "2026-DON615"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
-      "date": "2026-08-01T10:46:53Z",
-      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo is intensifying, with sustained transmission and continued increases in reported cases and deaths. Initially confined to the Mongbwalu health zone in Ituri Province, over the last two months, the outbreak has expanded to five provinces (Ituri, North Kivu, South Kivu, Haut-Uélé and Tshopo), now affecting 49 health zones. The outbreak is now the largest Ebola outbreak ever reported in the Democratic Republic of the",
-      "link": "https://www.who.int/2026-DON614",
-      "donId": "2026-DON614"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
-      "date": "2026-07-17T16:51:09Z",
-      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo remains active, with sustained transmission driving increases in reported cases and deaths. As of 15 July 2026, a cumulative total of 2124 confirmed cases, including 828 deaths, have been reported from the Democratic Republic of the Congo. On 13 July 2026, German authorities informed WHO of a laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a humanitarian worker from the United States of A",
-      "link": "https://www.who.int/2026-DON613",
-      "donId": "2026-DON613"
     }
   ],
-  "generatedAt": "2026-11-09T03:34:21.634994+00:00"
+  "generatedAt": "2026-11-09T14:38:59.838417+00:00"
 }
