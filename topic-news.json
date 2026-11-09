@@ -1,13 +1,61 @@
 {
-  "generatedAt": "2026-11-08T19:55:38.316Z",
+  "generatedAt": "2026-11-09T01:10:23.070Z",
   "sa": {
     "label": "중대재해·산업재해",
     "items": [
       {
-        "title": "‘외국인 근로자 산업재해 예방’ 음성군, 안전보건 픽토그램 스티커 보급",
-        "source": "메가충청뉴스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5CbVhoOU54VjQ4SjR5NGhhcWZucWw1YUVPcVZwR2RCc0d2akl6a043NWIzSEZNQTZMR1R1QktwbFd1aTU0bDdzME9FcGprNkhyQUxfbnh1QjZOMkJpeWRMTEYwdWhaUXJiWXlqdA?oc=5",
-        "date": "2026-11-08T15:00:02.000Z"
+        "title": "월급 300만원 미만 산재 노동자, 변호사·노무사 도움 무료로 받는다",
+        "source": "안전신문",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2OTdZTWpDdEpPRUMwZDZIQUxqWTZfX29NZDdqTk4zRWxGN1JkOFhEbjRnNjFDbW96SkxwR1pCX2pVQlZkY2RyUDg0UmZ2a0dhRzlhRG9aaHFiUDNEbVp4eTV0VjdBOUhvWHBYbTJQa3Y?oc=5",
+        "date": "2026-11-09T00:37:02.000Z"
+      },
+      {
+        "title": "\"인천항 화물노동자들에 중대재해처벌법 적용하라”",
+        "source": "해양통신",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE11NkVUWlNPcmpVaHNubk9rWkdNUzlwMTRIeVppUzhhZmRObFJHQXhST0ExazFld2lJeklqd084RGRhOGotd29CNnZwRlp5a3JxdDBNaHpoUk53YkhfT292Qw?oc=5",
+        "date": "2026-11-09T00:22:44.000Z"
+      },
+      {
+        "title": "김영훈 노동장관, 주말 긴급 기관장회의… 산재 감독 강화 지시",
+        "source": "안전신문",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBLT21MSXlZZXVudlVnRFNaOEpiZlFTclVXb2hyS1ZxVUVTODNtZktxTnpab2hrX0FGRy11T2ZmVEVjYmVuVDJuN0h2V3pxdjZNS3NlWEU1MFlaZ0FNS2dCR3FQcksyVTBmQTE0S3BCOW4?oc=5",
+        "date": "2026-11-09T00:22:29.000Z"
+      },
+      {
+        "title": "“인천항 잇단 산재, 터미널 운영사 책임 물어야”…중처법 적용 촉구",
+        "source": "해사신문",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBLS1lsanc2N2NEd0t6UjA5WnBOcHBYdk10VV9JclBIaDVFQ2FlWkIxdzFoUG1LRElSWGJuUG1qYU9OY1YwWHpIdGZKNlJ2ak94SjVDTWhCZDllWEktYTMxU0xrdzNzNG5HdXY4?oc=5",
+        "date": "2026-11-08T23:59:06.000Z"
+      },
+      {
+        "title": "음성군, 외국인 근로자 산업재해 예방 다국어 스티커 보급",
+        "source": "국제뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkV1lvWi1zSV9RdHBEcUd0anZnQ1VnSjhJejRsOWJHVV9WWUYyaUdDdkVYU0p1OGZxV3J5ZzR4NDJ4dHd0UWdPOWYyallGRlpZMkdrN3RwT3VNYkhTUlJWZnhVZGx5RnY2aC1LV1h3?oc=5",
+        "date": "2026-11-08T23:47:42.000Z"
+      },
+      {
+        "title": "광주 북구, ‘하반기 중대재해예방 이행 실태’ 종합 점검",
+        "source": "전남인뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5KRUZKWWl4dUl0SEF1Ukx6WlRTM0FnRzF1SllkT0NpZkw0NklVQndua1JnNF8zbUN4eElLTnJQUlRHbm5ZQnVrQ2VJeFBrWWFIQ1lXQUZTcF9vcUFRT2V6V1E2Qk41LXpDQlE?oc=5",
+        "date": "2026-11-08T23:43:35.000Z"
+      },
+      {
+        "title": "저소득 산재노동자에 무료 법률 지원···내년 3월 '산재보상 대리인 제도' 시행",
+        "source": "뉴스프리존",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ob3pTSzk0RWJSZVpUT1RtUnBaWnNwV0xyN09sMWFVbFUwanluWU10cThyQVExcFhQaTdkVUl5U2lJZEdwME54eWRSMFl2a2d5RERjeVNOd1QyZFU3d2JpN19JSG9jZjdobjRSQXZXNGt6b3PSAXdBVV95cUxOMkpoeHBkZW03V3RVYWYzY3A4Y0JkTUVnSV81SmtNaGhfWFRjNnAyUzREMnh6cmFJYzlBbUwzLVJZLTRHeEhLMXB3TXgyTFNIZTNWYnNkekNhUUZkVGo2bEVBNDczYjZJME4zSTlsTFpveGFZeHpjOA?oc=5",
+        "date": "2026-11-08T21:58:49.000Z"
+      },
+      {
+        "title": "[단독] '마곡 맨홀 추락사'…28개월 만에 원청업체·대표 송치",
+        "source": "노컷뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5YakE0U0ZWNWI0dHNsQU1hYy14WVpQeGlqN3FxNF94eEFZRmFYeVROeEFmeUFzZHZ6akRvWnVhZUl4ejNFalc2TVhxaWdINmxQVHc?oc=5",
+        "date": "2026-11-08T20:00:00.000Z"
+      },
+      {
+        "title": "“외국인 근로자 산업재해 예방” … 음성군, 안전보건 픽토그램 스티커 보급",
+        "source": "음성타임즈",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHRHVQMFh3SkRNLU8xa0tPRXg4NEpEVmZid0pWOEh2VmJfZFZwN3RMZE9rdDZTa3lhVDE1THNJVVZsdFpfQWozZk55TWhocG9oQUZORGdhc1B1dmVXMWFJODJfd2VyUE5jUkE?oc=5",
+        "date": "2026-11-08T12:37:32.000Z"
       },
       {
         "title": "추락사 8개월 지나도록 압수수색 안 한 노동부…“증거인멸 시간만 벌어줘”",
@@ -22,64 +70,22 @@
         "date": "2026-11-08T10:29:32.000Z"
       },
       {
-        "title": "전남광주통합특별시 북구, 하반기 중대재해예방 이행 실태 점검 실시",
-        "source": "한국미디어뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9xdDhMeDE3cHFuLVQ1bXY2RnBpMFBxeVg4cnlvTnl2aktOQ2dJSjFKQXFRSGdTT2dVS3Y0LXQxRWlHRm9iMTR3dWRRLWNsNTVhRzdmenh6RC1NclR4SE1ZeUxScm83QQ?oc=5",
-        "date": "2026-11-08T09:10:35.000Z"
-      },
-      {
-        "title": "광주 북구, 전 부서 중대재해 예방 실태 점검…안전관리 강화",
-        "source": "중앙이코노미뉴스",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ZLUhSel84MEFTOHRhTC12bERuUGdKNExHRzdxZkxSMHR2Rkc1YnA5amlUSzhmdFFUdVBqdzI2RFBfRXk2VndFOGF1V2NkcUFBWk9XRW1pQmxWRVc1a3JIMEVHOVhnTWNwalJ0NHJqQWZGZw?oc=5",
-        "date": "2026-11-08T07:14:47.000Z"
-      },
-      {
-        "title": "산업재해 취약계층 노동자, 내년 3월부터 산재보험급여 청구부터 심사 과정의 이의제기까지 무료 법률지원",
-        "source": "한국강사신문",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ZZ21QbEN3d3RrSURmRk5pZUd5QWtjRVBhdEpfUFVfZ1BjcDVKTUIxZlpSalpxZ1o2ZXp6dm5VSElhUG14NlE1c1MzWk4xTlRjUjh6TGotUEdBRUFCcFdMUEhuUDRTZHU0U1NpMVBXTUo?oc=5",
-        "date": "2026-11-08T07:08:02.000Z"
-      },
-      {
-        "title": "김영훈 노동부 장관 “반복 중대재해 기업, 특별감독 강도로 감독하라”",
-        "source": "뉴스투데이",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE14aDc4S284UGwwdEF0cGZFNkFTWGU2QzRySXpMeHNJR00yYzdCaHJnR1FJTGxHOWF5LUdoOEdCVUxTUG56N0htMjhfTTlvTmVsN3BjQVl6OW9FVm9rcnc?oc=5",
-        "date": "2026-11-08T07:08:00.000Z"
-      },
-      {
-        "title": "산재 심의 받으러 부산까지 갔는데…내년엔 울산에 판정위 생긴다",
-        "source": "뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5PS0oxOUxGN1lpYldhaWhCNF9TRXRlaGdYZXEycEZGaHJfU2FfQjVaX2pLQXNtbldYZzdfSmljQXRkWXpMNVFuaGdzREJMTHFRSEE?oc=5",
-        "date": "2026-11-08T06:31:12.000Z"
-      },
-      {
-        "title": "월급 300만 미만 노동자, '산재 변호사' 무료로 선임한다",
-        "source": "한국일보",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5iRDNENnZ2WWpLMFNJTEE2cGlFajEwdjd4eHpqUDg4TThWQmc5RjRQN3JkLVlzNjhUWTBvWU1vazZnRmJNY3FXQ19oNXA5Q0d3bzdvZ0RTQXhFaXRzaWlOWHpKM2ZXNkNMcG50eTFR0gFzQVVfeXFMTnJYd3ZYVHpDQjdYOHBsY1lfUDBWZ3UySGRjTHcxR0VSVVRTVFNva05XUEZfcjdXUDMxdjBaTFozR2FrZURJcWFHNWljSVVCUnEtNERXakZ0cVRLaXQ2TU0xR0d3Vy0zTlJpMm5MUzJQZ0dHUQ?oc=5",
-        "date": "2026-11-08T06:23:00.000Z"
-      },
-      {
-        "title": "근로복지공단 \"저소득 산재노동자·유족 '변호사 선임비' 국가가 지원\"",
-        "source": "메트로신문",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1WLTJ6aWVEVk8td2RCLWd1VGRDRXhTTlNVVXhsamx5OFZ5cVJNQzVmTW1RMjBiNFI1OWQwcFdPTTh6WS02TFJQd0o3LUg0c0RFYXZsbzlvdlpxdUxPY2hyeQ?oc=5",
-        "date": "2026-11-08T04:52:46.000Z"
-      },
-      {
-        "title": "양주 군부대 공사 현장에서 60대 건설노동자 추락사",
-        "source": "KBS 뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qa3Zqb1gybE5OREgyNVh2RzZNN2dNZjZOOGpUenpzeWt0eDR2U1dBOGE0T2xpYXRfOGtYSXgyM2tHTnN4aHhWSTcxc2FkVF80TkRFcmlrOEZPRmM?oc=5",
-        "date": "2026-11-08T04:29:00.000Z"
-      },
-      {
-        "title": "광주 북구, 하반기 '중대재해 예방' 총괄 점검…\"재해 없는 도시 만든다\"",
-        "source": "진일보 | 전남일보",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8xb09iMElvb2ZSTTdjalhfRWNCc0dhUm1hQmh4N2ltWXVNOTJXVmc4enhmN1AyLTh5UUhZT0FsN1M0VGNJZkdJRFRVTjFsN0d4WTN0TXNfT3RLUWZzLVhyS2NvSkI5d2JEUHp3bXJYQQ?oc=5",
-        "date": "2026-11-08T04:08:02.000Z"
+        "title": "전남광주 북구, 중대재해 예방 의무 이행 실태 점검",
+        "source": "남도일보",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5qSXo0WEFYWFJUZDdqOVdoTEhBX0sxSHNqWF9tS0ZrTmthWFloT1RaaWdBWENfVVNZN2cxMWNHbnRTMzM5aXY1b0dFck90X000N29kYkx2a1NIVjZKZTd0aGtubG9BTnRNd29TVWtMUUzSAXBBVV95cUxOakl6NFhBWFhSVGQ3ajlXaExIQV9LMUhzalhfbUtGa05rYVhZaE9UWmlnQVhDX1VTWTdnMTFjR250UzMzOWl2NW9HRXJPdF9NNDdvZGJMdmtTSFY2SmU3dGhrbmxvQU50TXdvU1VrTFFM?oc=5",
+        "date": "2026-11-08T09:23:40.000Z"
       }
     ]
   },
   "embassy": {
     "label": "중동 대사관·안전",
     "items": [
+      {
+        "title": "“만약 트럼프가 핵 쏘면...” 이란, 방사능 대피 교육 [여의도 Pick!]",
+        "source": "MTN 머니투데이방송",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5WRVNCcHBrbE1kTlZaY2dfZ1QtOThQbFd5cE5YZDAzR0VnU3NQUjZHS0REcGZROGNzeEJyeWg0YlRXT0x2dFFKd05PNXJDU2U0UEw4MHp4RDk2R2pxaEJv?oc=5",
+        "date": "2026-11-09T00:01:15.000Z"
+      },
       {
         "title": "이집트가 12년 만에 리비아 주재 대사관을 재개방했다.",
         "source": "Vietnam.vn",
@@ -140,6 +146,48 @@
     "label": "감염병",
     "items": [
       {
+        "title": "독감주사 맞았더니 알츠하이머 위험 55% ↓…일반 백신보다 효과높은 `이것` [매일비타민]",
+        "source": "매일신문",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5SMGRZMzFVbXlZYXpnVDBReFprUGNmNl8xLVZPbGRtSTJfMVo5NmwybldEZm5BWkk2U0Z1VWlGemNjX2dBbHhJQmQxazZjcFNBWUh1QV9pcmZwNzQybHpsS2xR?oc=5",
+        "date": "2026-11-09T00:51:46.000Z"
+      },
+      {
+        "title": "원주시보건소, 인플루엔자 확산에 예방접종 당부…고위험군 주의",
+        "source": "뉴스티앤티",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBsRUh3bVFyRUNtc0FXSkJzbXVDa3lQdHNFd2w1TDVGWWo0RnhhOUM5VnhQa3ExZzBXR3laWk5GM1Y5aG9tUzJnVEQxUUFxMUxXY1FpbWpOMVB0MXhYNExUdDh6Y3NEWHIwV2c?oc=5",
+        "date": "2026-11-09T00:39:01.000Z"
+      },
+      {
+        "title": "나은병원, 검단구 어르신·시설 종사자 감염병 예방교육",
+        "source": "경기일보",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Zd3lsaHU5bk1kTW8zWXhaSm1OZXNHMmJpWXE1NElBZlgyU0NrbUUtazZESlRhZWkwZW40Vnk0c05hd1VOYUVJb20zblVkbUhqNHVVVllOZEFmNEU?oc=5",
+        "date": "2026-11-09T00:37:52.000Z"
+      },
+      {
+        "title": "올겨울 경기 연천·여주 산란계 잇단 AI 확진…방역당국·생산자 ‘초비상’",
+        "source": "팜인사이트",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1KWkhSQVFEaDVyS2JGVjM5TUU2MmNzSWF6YVpnMXdCbk9UNS05YnA0WkZnamVZU2VLQzJtOUx5dm01MnZocFRGTDZJNk1GNXR2VmplZHJhZnZxWmxOX3g2Q0RKWUJrQzFTdnV2RGJR?oc=5",
+        "date": "2026-11-09T00:21:22.000Z"
+      },
+      {
+        "title": "이미 독감 걸렸어도 또 걸린다...어린이 접종률 아직 56%, 인플루엔자 2주 연속 다시 늘어",
+        "source": "사이드뷰 인터넷신문사",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ndHNuOUgxbkJxMmNoVFZTNGNDOGIwTFQ1Q2VqMXVOemVTSUd4bzVzYVNXTk1kTnFkR1ZMTWxEX0VCNWJhVXQ0MlN2eElRejh3MzBnOEItbklsR2lMRVQ2Tl9JTG5tRS1aQlFLUQ?oc=5",
+        "date": "2026-11-09T00:15:24.000Z"
+      },
+      {
+        "title": "모더나(MRNA.O), 해외 백신 수요 회복에 흑자 전환…암 백신 상용화도 기대",
+        "source": "메디컬투데이",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBTTHdQVHZxV01CdUZEalU4VDRPYjJXcGhRLXRTaHlubkF6eXFUZThZSkRrWkZMMG1JRUtQZmtfTldoMzh0WmY0SVlGdXJZQ3luMUd2R3pWeDVWSURodW1lZ3VIeDg3aWY3NkRQNA?oc=5",
+        "date": "2026-11-08T22:34:34.000Z"
+      },
+      {
+        "title": "진화하는 K-독감백신...원액·완제 분업화로 글로벌 시장 정조준",
+        "source": "팜뉴스",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1lQWJqR1ZXT3ZpRGlzRHZSbFFiQzRGeHh0Um85WnZ5LXZOWFRad0VEdEVhekpvT05LSmpjNFE1TWEyWHhfaUs0MjJwMm9NWnljbF85RFVvM2E5VFczUUpKeUl3WE5EcHYzc0Q1cg?oc=5",
+        "date": "2026-11-08T21:00:00.000Z"
+      },
+      {
         "title": "대전보건환경연구원, 감염병 검사 우수기관으로 질병관리청장 표창",
         "source": "매일일보",
         "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE81YkMxNWU1M1BJOC1lVVprVEI4R1U1Vy1QbWRXVC1pQVh1ZS04UEJ2MUwtaUtSc2hRY1F4MVpDUkVobTNPU25EOFk4ak1heXE5aHc1MmNwR2F2dF9Lb1RFcTVpQkQ?oc=5",
@@ -168,48 +216,6 @@
         "source": "MBC 강원영동",
         "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5rb1NWODR6eDNNQURpaTNaSXJtTmNLVVBiYklUS1JtZy1wY2VXT2NMdk1oWUdKcHE5SjBkel9SYnUzSkNucjhOcU5WTQ?oc=5",
         "date": "2026-11-08T11:10:00.000Z"
-      },
-      {
-        "title": "에볼라 전염병의 복잡한 전개 상황 속에서 백신을 찾기 위한 경쟁이 벌어지고 있다.",
-        "source": "Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdlFyVkpiWk9fTEVoVnN1U000bFYxcklQTkRtdUtiVUpITDJuNW9nRVhJaDl1YWdHNktTTUFZcXZucTZ5bUZERUhrVXBmSDJ3MEtjVS02RGtkUW5vLVhQTEdLN011cEc4ako5SGlHRGtPN25mUFNrTjFzanZaU3JnUE9XUTg4cTJuTkVvRUpBNzNZdWstY1E?oc=5",
-        "date": "2026-11-08T09:56:08.000Z"
-      },
-      {
-        "title": "질병관리청, 쿵! 갑자기 쓰러진 사람, 어떻게 도와야 할까?",
-        "source": "코리아타임뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1xZURqTENCSEJLaXR5bXg3TVB1WDJ1Uk1EVnRqbUVPa3BMdFR2bzdIM0dWT0s2NGtEclNfQWlpazNEMVV5STlXUlY4TndMSjRyMTNkek1meE9FV3hNa05mLXdfTEZNY3BQZmc?oc=5",
-        "date": "2026-11-08T09:13:50.000Z"
-      },
-      {
-        "title": "대구보건환경연구원, 감염병 분야 연구사 2명 표창 수상",
-        "source": "코리아타임뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1BbFRCUDNZLTVpOU9Pbl9ES18xWGkzTV81dHNYUGF1MWc5VmJPOXRwQTItRl9GeTYzS0VkU0RFWWdDNXZDeERid05QZnZwbC1oR1BXZEM4MkhldDA1SG9XbEJLanlNcXN2MlE?oc=5",
-        "date": "2026-11-08T09:13:28.000Z"
-      },
-      {
-        "title": "전남보환연, 감염병 감시 4년 연속 우수기관",
-        "source": "누리일보",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5PcVRDYkM0WElzSmcxd1BIRHBRSzQtTlRybGcwY013OVM3OUczNjhTZ2NfRWw1RWFFeS01WklNNzkzMzM1UlFuZVFwLXNWclh4S3BiZGV0Tm53U0RC?oc=5",
-        "date": "2026-11-08T09:10:29.000Z"
-      },
-      {
-        "title": "에볼라 전염병은 백신 연구의 허점을 드러냈습니다.",
-        "source": "Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdTlHVk4xSXlBUVgxQlBDczByeGljS2cxRFJZM2ZYTndzZlZlaDRnX1BTdEt0S0RFOEgydWtPVTdvbHcxd3lINS1QVE5zRWxaUWZYSWNTZ3JKSllZVS1LcFZuV2RCSllUbkVLel9GTDFKOHFfc1VGUklHODlWY1RlZUpweHFuWnpzSzhB?oc=5",
-        "date": "2026-11-08T09:03:52.000Z"
-      },
-      {
-        "title": "여주 대형 산란계 농장서 AI 확진",
-        "source": "경기신문",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ySEdEcHRyQ0l6WkhaQnBIVl9SU2ROanNibjlPa3hPeGlvN01LZlM4ZEpleFkyN24yckE2S1ZoYXBaMzFMMXYyYklpSTZXZjI3cnE3ODNOb1pfVmxKdU9acFNB?oc=5",
-        "date": "2026-11-08T07:35:21.000Z"
-      },
-      {
-        "title": "대구시 보건환경연구원, 감염병 진단 역량 강화...연구원 직원 표창 받아",
-        "source": "국제뉴스",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9zbjJFQUVTaU1ObklsS3UzSHpiMDM4MnJvc1JOcTRwQ25WQXZiQW53amtfYzkxUm1SbkhfUTY3cHJ6clZ6VzU0YUI1R01rZHpCMDhtV1BYaDcxUHBRSVhFaUFqcnpMelBUQ09GbTln?oc=5",
-        "date": "2026-11-08T07:27:00.000Z"
       }
     ]
   }
