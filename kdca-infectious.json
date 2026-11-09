@@ -88,9 +88,9 @@
   },
   "제3급": {
    "diseases": 28,
-   "base": 713,
+   "base": 715,
    "prev": 495,
-   "provisional": 339,
+   "provisional": 352,
    "outnatn": 4,
    "trend": [
     212,
@@ -102,9 +102,9 @@
     136,
     213,
     163,
-    343,
+    344,
     495,
-    713
+    715
    ]
   }
  },
@@ -166,10 +166,10 @@
   {
    "name": "매독",
    "grade": "제3급",
-   "base": 39,
+   "base": 40,
    "prev": 47,
-   "provisional": 7,
-   "dmstc": 38,
+   "provisional": 20,
+   "dmstc": 39,
    "outnatn": 1
   },
   {
@@ -255,7 +255,7 @@
   {
    "name": "매독",
    "grade": "제3급",
-   "count": 6
+   "count": 7
   },
   {
    "name": "지카바이러스감염증",
@@ -273,7 +273,7 @@
    "count": 1
   }
  ],
- "totalBase": 2474,
+ "totalBase": 2476,
  "totalPrev": 2346,
- "generatedAt": "2026-11-08T01:50:49.979966+00:00"
+ "generatedAt": "2026-11-09T01:59:01.562731+00:00"
 }
