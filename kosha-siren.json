@@ -1,7 +1,37 @@
 {
  "source": "https://portal.kosha.or.kr/archive/imprtnDsstrAlrame/CSADV50000/CSADV50000M01",
- "generatedAt": "2026-11-06T15:55:21.734Z",
+ "generatedAt": "2026-11-09T20:42:29.220Z",
  "items": [
+  {
+   "no": "929",
+   "title": "(261109)중대재해 발생 알림(3)",
+   "day": "2026-11-09",
+   "seq": 3,
+   "img": "assets/siren/929.webp",
+   "thumb": "assets/siren/929_t.webp",
+   "posted": "2026-11-09",
+   "firstSeen": "2026-11-09T20:42:29.220Z"
+  },
+  {
+   "no": "928",
+   "title": "(261109)중대재해 발생 알림(2)",
+   "day": "2026-11-09",
+   "seq": 2,
+   "img": "assets/siren/928.webp",
+   "thumb": "assets/siren/928_t.webp",
+   "posted": "2026-11-09",
+   "firstSeen": "2026-11-09T20:42:29.220Z"
+  },
+  {
+   "no": "927",
+   "title": "(261109)중대재해 발생 알림(1)",
+   "day": "2026-11-09",
+   "seq": 1,
+   "img": "assets/siren/927.webp",
+   "thumb": "assets/siren/927_t.webp",
+   "posted": "2026-11-09",
+   "firstSeen": "2026-11-09T20:42:29.220Z"
+  },
   {
    "no": "926",
    "title": "(261106)중대재해 발생 알림(1)",
@@ -270,36 +300,6 @@
    "img": "assets/siren/897.webp",
    "thumb": "assets/siren/897_t.webp",
    "posted": "2026-10-20",
-   "firstSeen": "2026-10-25T06:51:41.433Z"
-  },
-  {
-   "no": "896",
-   "title": "(261016)중대재해 발생 알림(2)-외국어 추가",
-   "day": "2026-10-16",
-   "seq": null,
-   "img": "assets/siren/896.webp",
-   "thumb": "assets/siren/896_t.webp",
-   "posted": "2026-10-16",
-   "firstSeen": "2026-10-25T06:51:41.433Z"
-  },
-  {
-   "no": "895",
-   "title": "(261016)중대재해 발생 알림(1)-외국어 추가",
-   "day": "2026-10-16",
-   "seq": null,
-   "img": "assets/siren/895.webp",
-   "thumb": "assets/siren/895_t.webp",
-   "posted": "2026-10-16",
-   "firstSeen": "2026-10-25T06:51:41.433Z"
-  },
-  {
-   "no": "894",
-   "title": "(261015)중대재해 발생 알림(1)-외국어 추가",
-   "day": "2026-10-15",
-   "seq": null,
-   "img": "assets/siren/894.webp",
-   "thumb": "assets/siren/894_t.webp",
-   "posted": "2026-10-16",
    "firstSeen": "2026-10-25T06:51:41.433Z"
   }
  ]
