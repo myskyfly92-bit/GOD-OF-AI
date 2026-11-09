@@ -1,14 +1,7 @@
 {
-  "generatedAt": "2026-11-08T00:36:24.930Z",
+  "generatedAt": "2026-11-09T00:55:13.447Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
-    {
-      "title": "2026년 감염병 표본감시 주간소식지 44주차",
-      "source": "질병관리청 감염병포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQy1mVHF0eHFfY0xNQzZqdXRLTk5JZXhNcWhrWHBhZkVLUmg2SHkyT3RZcUt5U0J5WGQzWlJnMDVDaEQ4bnNWTUM0X2RJeVB1aWJEUGMtU0lnTUtEMlNYQm80UXhIVENFbTJSSTF4UGZFWEpoRXdvY2VuUFBOcVAxanJ3dUJmVmdYRjdnUDA4RzQwMXZRbjVJemlma0xIa2htR1dJTjR3?oc=5",
-      "date": "2026-11-05T09:45:12.000Z"
-    },
     {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
       "source": "질병관리청 감염병포털",
@@ -85,6 +78,13 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoZDI5VGFnRWd1b0hoSFhVX0VIV1VKaXhjSzRxb2dfT3J0ZlNOeVdWUlV3YlhPVTUwM3Y5UmxDc3EzelBlaXp4akQzYmNsLVhqVzJrOFNn?oc=5",
       "date": "2026-02-10T10:33:00.000Z"
+    },
+    {
+      "title": "채용공고",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
+      "date": "2025-12-16T15:48:42.000Z"
     }
   ]
 }
