@@ -1,6 +1,31 @@
 {
-  "generatedAt": "2026-11-09T12:14:23.122Z",
+  "generatedAt": "2026-11-09T22:46:05.329Z",
   "items": [
+    {
+      "title": "وفاة وإصابة 16 شخصاً بحريق مصنع للحديد والصلب غربي تركيا#",
+      "source": "عراق اوبزيرفر",
+      "link": "https://observeriraq.net/%D9%88%D9%81%D8%A7%D8%A9-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-16-%D8%B4%D8%AE%D8%B5%D8%A7%D9%8B-%D8%A8%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%B5%D9%86%D8%B9-%D9%84%D9%84%D8%AD%D8%AF%D9%8A%D8%AF-%D9%88/",
+      "date": "2026-11-09T12:38:48.000Z",
+      "lang": "ar",
+      "titleKo": "터키 서부 철강공장 화재로 16명 사상",
+      "url": "https://observeriraq.net/%D9%88%D9%81%D8%A7%D8%A9-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-16-%D8%B4%D8%AE%D8%B5%D8%A7%D9%8B-%D8%A8%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%B5%D9%86%D8%B9-%D9%84%D9%84%D8%AD%D8%AF%D9%8A%D8%AF-%D9%88/",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "عراق اوبزيرفر",
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [
+        {
+          "titleKo": "터키 이즈미르 공장 화재로 16명 사상",
+          "source": "وكالة الانباء العراقية (واع)",
+          "link": "https://ina.iq/ar/international/278886-16.html"
+        }
+      ],
+      "tag": "공장·플랜트"
+    },
     {
       "title": "공장 화재 진압",
       "source": "뉴시스",
@@ -12,66 +37,16 @@
       "body": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
       "bodyKo": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
       "tried": true,
-      "count": 10,
+      "count": 12,
       "sources": [
-        "عراق اوبزيرفر",
-        "وكالة الانباء العراقية (واع)",
         "뉴시스",
-        "تاسي",
-        "충청매일",
-        "충북일보"
-      ],
-      "related": [
-        {
-          "titleKo": "터키 서부 철강공장 화재로 16명 사상",
-          "source": "عراق اوبزيرفر",
-          "link": "https://observeriraq.net/%D9%88%D9%81%D8%A7%D8%A9-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-16-%D8%B4%D8%AE%D8%B5%D8%A7%D9%8B-%D8%A8%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%B5%D9%86%D8%B9-%D9%84%D9%84%D8%AD%D8%AF%D9%8A%D8%AF-%D9%88/"
-        },
-        {
-          "titleKo": "터키 이즈미르 공장 화재로 16명 사상",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://ina.iq/ar/international/278886-16.html"
-        },
-        {
-          "titleKo": "리야드 공장 화재로 피해 입은 생산라인, 2분기 가동 재개 예정",
-          "source": "تاسي",
-          "link": "https://www.argaam.com/ar/article/articledetail/id/1905534"
-        },
-        {
-          "titleKo": "화재 피해 보은 이킴공장, 10개월만에 정상 가동",
-          "source": "뉴시스",
-          "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261106_0003857555"
-        },
-        {
-          "titleKo": "보은 이킴공장, 화재 피해 딛고 10개월 만에 정상 가동",
-          "source": "충청매일",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1adHlVZURUY3JiRDFoU3VsZmhmd3Z0aWtSRHZqbVhyaXFLQm03NE5FZHlUQ01qQXpuYkFDb2ZXUzZqcUtoQkJMMkRYUDhGM19XMTkzU2xHdVhTVjBRX3c5NmRlYjZycDM1N1E?oc=5"
-        }
-      ],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "동나이의 누 호앙 노래방에서 화재 발생: 화재 진압을 위해 굴착기 3대가 동원되어 벽을 철거하고 있다.",
-      "source": "Vietnam.vn",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV3BMT0VhS1lRTGgzcm9YbjNnaDVwa2JOWWNFd2RZNWQ4TWZpd2Z1NFM1STIwOU04aHc1R0NEa3hXNkhYeVA2YmxicTlWNkMxeE4xZWN0OUhZZVF3Vi1LN0VYRTdER0FIRFhLTnM5aWdpd2R5ZGp5eGpQSnpmek5CMnhUMERrX1VVdGI0bFd0NHMtejJTZ09uR0RNQ3puZkNER2FnR1V3?oc=5",
-      "date": "2026-11-09T11:52:51.000Z",
-      "lang": "ko",
-      "titleKo": "동나이의 누 호앙 노래방에서 화재 발생: 화재 진압을 위해 굴착기 3대가 동원되어 벽을 철거하고 있다.",
-      "count": 7,
-      "sources": [
-        "مانكيش نت",
         "موقع كلمة الإخباري",
         "شفق نيوز",
+        "قناة الرشيد الفضائية",
         "Vietnam.vn",
-        "Reuters",
-        "Masrawy"
+        "تاسي"
       ],
       "related": [
-        {
-          "titleKo": "바그다드 중심부 쇼르자 시장 화재, 소방대가 진화",
-          "source": "مانكيش نت",
-          "link": "https://mangish.net/%D8%A5%D8%AE%D9%85%D8%A7%D8%AF-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B4%D9%88%D8%B1%D8%AC%D8%A9-%D9%88%D8%B3%D8%B7-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%85%D9%86-%D9%82/"
-        },
         {
           "titleKo": "쇼르자 시장 의류 창고 화재 진압",
           "source": "موقع كلمة الإخباري",
@@ -83,43 +58,71 @@
           "link": "https://shafaq.com/ar/%D8%A3%D9%85%D9%80%D9%86/%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B4%D9%88%D8%B1%D8%AC%D8%A9-%D9%88%D8%B3%D8%B7-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF"
         },
         {
-          "titleKo": "사실 확인: 2020년 아즈만 시장 화재 영상이지 두바이 에너지 시설 화재 아님",
-          "source": "Reuters",
-          "link": "https://www.reuters.com/ar/fact-check/BAJXD2SKZVJJDG77XK3QM4W6NE-2026-11-08/"
+          "titleKo": "소방당국, 바그다드 쇼르자 시장 의류창고 화재 진화",
+          "source": "قناة الرشيد الفضائية",
+          "link": "https://www.alrasheedmedia.com/2026/11/09/712058/"
         },
         {
-          "titleKo": "사진으로 보는 라마단 10일 10번가 14구역 시장 창고에서 대형 화재 발생",
-          "source": "Masrawy",
-          "link": "https://www.masrawy.com/news/news_regions/details/2026/11/7/3074909/%D8%A8%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D8%AD%D8%B1%D9%8A%D9%82-%D9%87%D8%A7%D8%A6%D9%84-%D9%8A%D9%84%D8%AA%D9%87%D9%85-%D8%A8%D8%A7%D9%83%D9%8A%D8%A7%D8%AA-%D8%A8%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%AD%D9%8A-14-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1-%D9%85%D9%86-%D8%B1%D9%85%D8%B6%D8%A7%D9%86"
+          "titleKo": "동나이의 누 호앙 노래방에서 화재 발생: 화재 진압을 위해 굴착기 3대가 동원되어 벽을 철거하고 있다.",
+          "source": "Vietnam.vn",
+          "link": "https://www.vietnam.vn/ko/chay-quan-karaoke-nu-hoang-o-dong-nai-huy-dong-3-xe-cuoc-pha-tuong-de-dap-lua"
+        },
+        {
+          "titleKo": "리야드 공장 화재로 피해 입은 생산라인, 2분기 가동 재개 예정",
+          "source": "تاسي",
+          "link": "https://www.argaam.com/ar/article/articledetail/id/1905534"
         }
       ],
       "tag": "숙소·창고"
     },
     {
-      "title": "송천동 농수산물도매시장 화재 건물 철거",
-      "source": "전북중앙",
-      "link": "http://www.jjn.co.kr/news/articleView.html?idxno=1056531",
-      "date": "2026-11-09T11:52:00.000Z",
-      "lang": "ko",
-      "titleKo": "송천동 농수산물도매시장 화재 건물 철거",
-      "url": "http://www.jjn.co.kr/news/articleView.html?idxno=1056531",
-      "body": "화재 피해로 어려움을 겪는 전주시 송천동 농수산물도매시장 상인들의 신속한 일상 회복을 돕기 위한 화재 건축물 철거와 대체시설 건축이 본격화된다.전주시는 지난 8월 화재가 발생한 송천동 농수산물도매시장 활어동에 대한 철거공사에 착수했다고 5일 밝혔다.이는 화재 건축물 철거를 위해 행정안전부 특별교부세(5억)을 확보한 데 이어 조지훈 시장과 화재피해 상인들이 간담회를 통해 현장 안전확보를 위한 건축물 철거 필요성에 공감하고 협조하기로 한데 따른 것이다.철거 대상은 전주시 농수산물도매시장 내에 위치한 활어동으로, 화재로 소실된 건축물과\n이를 위해 철거 설계 등 관련 사전 절차를 마무리하고 지난달 28일부터 가림막 설치 등 공사에 본격 착수했다. 철거공사는 오는 16일까지 마무리할 예정이다.\n대체 시설 건축 총사업비는 약 19억 원 정도로, 시는 전북특별자치도 특별조정교부금 10억 원을 이미 확보한 상태다.\n시는 올해 안에 실시설계 용역을 마무리하고 내년부터 본격적인 공사에 착수해 추석 명절 전까지는 대체시설 건립을 마무리한다는 구상이다.\n앞서 송천동 농수산물도매시장 상인들은 지난 8월 9일 발생한 화재로 활어동이 전소하며 활어 14개소와 건어 3개소 등 총 17개 점포가 피해를 입었다.",
-      "bodyKo": "화재 피해로 어려움을 겪는 전주시 송천동 농수산물도매시장 상인들의 신속한 일상 회복을 돕기 위한 화재 건축물 철거와 대체시설 건축이 본격화된다.전주시는 지난 8월 화재가 발생한 송천동 농수산물도매시장 활어동에 대한 철거공사에 착수했다고 5일 밝혔다.이는 화재 건축물 철거를 위해 행정안전부 특별교부세(5억)을 확보한 데 이어 조지훈 시장과 화재피해 상인들이 간담회를 통해 현장 안전확보를 위한 건축물 철거 필요성에 공감하고 협조하기로 한데 따른 것이다.철거 대상은 전주시 농수산물도매시장 내에 위치한 활어동으로, 화재로 소실된 건축물과\n이를 위해 철거 설계 등 관련 사전 절차를 마무리하고 지난달 28일부터 가림막 설치 등 공사에 본격 착수했다. 철거공사는 오는 16일까지 마무리할 예정이다.\n대체 시설 건축 총사업비는 약 19억 원 정도로, 시는 전북특별자치도 특별조정교부금 10억 원을 이미 확보한 상태다.\n시는 올해 안에 실시설계 용역을 마무리하고 내년부터 본격적인 공사에 착수해 추석 명절 전까지는 대체시설 건립을 마무리한다는 구상이다.\n앞서 송천동 농수산물도매시장 상인들은 지난 8월 9일 발생한 화재로 활어동이 전소하며 활어 14개소와 건어 3개소 등 총 17개 점포가 피해를 입었다.",
+      "title": "إخماد حريق في سوق الشورجة وسط بغداد من قبل فرق الإطفاء",
+      "source": "مانكيش نت",
+      "link": "https://mangish.net/%D8%A5%D8%AE%D9%85%D8%A7%D8%AF-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B4%D9%88%D8%B1%D8%AC%D8%A9-%D9%88%D8%B3%D8%B7-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%85%D9%86-%D9%82/",
+      "date": "2026-11-09T11:56:45.000Z",
+      "lang": "ar",
+      "titleKo": "바그다드 중심부 쇼르자 시장 화재, 소방대가 진화",
+      "url": "https://mangish.net/%D8%A5%D8%AE%D9%85%D8%A7%D8%AF-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B4%D9%88%D8%B1%D8%AC%D8%A9-%D9%88%D8%B3%D8%B7-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%85%D9%86-%D9%82/",
+      "body": "تمكنت مديرية الدفاع المدني في بغداد من السيطرة على حريق نشب داخل مخزن للملابس في سوق الشورجة. الحادث وقع يوم الاثنين الماضي، ولم يسجل أي\nووفقاً للبيان الصادر عن المديرية، فقد هرعت فرق الدفاع المدني إلى الموقع فور استلامها البلاغ وشرعت مباشرة في عمليات الإطفاء والمكافحة. بذلت فرق الإطفاء جهوداً كبيرة في تطويق النيران ومنع انتشارها إلى المخازن والمحلات التجارية المجاورة.\nالحريق تسبب بأضرار مادية فقط، حيث لم يسجل أي تبعات بشرية، وهو ما يعكس الجهود الفعالة التي بُذلت من قبل فرق الدفاع المدني خلال الحادث.",
+      "bodyKo": "**바그다드 쇼르자 시장 의류창고 화재 진압**\n\n바그다드 소방당국이 쇼르자 시장 내 의류창고에서 발생한 화재를 진압했다. 사건은 지난 월요일 발생했으며 인명피해는 기록되지 않았다.\n\n소방당국 성명에 따르면 신고를 접수한 직후 소방대원들이 현장으로 출동해 즉시 진화 및 대응 작업을 시작했다. 진화팀은 화염을 포위하고 인접한 창고와 상점으로의 확산을 방지하기 위해 큰 노력을 기울였다.\n\n화재로 인한 물질적 피해만 발생했으며 인명 피해는 기록되지 않았다. 이는 사건 당시 소방당국 대원들이 기울인 효과적인 노력을 반영한다.",
       "tried": true,
-      "count": 12,
+      "count": 1,
+      "sources": [
+        "مانكيش نت"
+      ],
+      "related": [],
+      "tag": "시장·상가"
+    },
+    {
+      "title": "North China building fire kills 14",
+      "source": "Dubai Eye 103.8",
+      "link": "https://www.dubaieye1038.com/news/international/north-china-building-fire-kills-14/",
+      "date": "2026-11-09T11:52:00.000Z",
+      "lang": "en",
+      "titleKo": "화북 건물 화재로 14명 사망",
+      "url": "https://www.dubaieye1038.com/news/international/north-china-building-fire-kills-14/",
+      "body": "A fire on Sunday at a high-rise building in Taiyuan, in the northern Chinese province of Shanxi, killed 14 people, the state-run Xinhua news agency said on Monday.\nShare on Messenger popup#open\" data-popup-size-param=\"645x580\" target=\"_blank\"> Share on Messenger popup#open\" data-popup-size-param=\"550x400\" target=\"_blank\"> Share on X Share on Whatsapp A fire on Sunday at a high-rise building in Taiyuan, in the northern Chinese province of Shanxi, killed 14 people, the state-run Xinhua news agency said on Monday.\nThe fire broke out in the building in downtown Taiyuan at 4:59 pm local time on Sunday, state media said.\nFlames were put out roughly two hours later, and authorities said rescue operations concluded by 8:30 pm with 38 people transported to the hospital. Five were confirmed dead by late Sunday night.",
+      "bodyKo": "산시성 타이위안 고층건물 화재로 14명 사망\n\n중국 관영 신화통신은 14일 산시성 북부 타이위안의 고층건물에서 발생한 화재로 14명이 사망했다고 보도했다.\n\n화재는 13일 현지시간 오후 4시 59분 타이위안 시내의 건물에서 발생했다고 관영매체가 전했다.\n\n불은 약 2시간 후 진화됐으며, 당국은 오후 8시 30분까지 구조 작업을 마쳤다고 밝혔다. 38명이 병원으로 옮겨졌으며, 13일 밤 늦게까지 5명의 사망이 확인됐다.",
+      "tried": true,
+      "count": 11,
       "sources": [
         "وكالة سوا الإخبارية",
+        "Vietnam.vn",
         "الشروق أونلاين",
         "صحيفة السوسنة الأردنية",
-        "مرسال قطر",
-        "كويت نيوز -",
-        "صوت الإمارات"
+        "Kuwait Times",
+        "مرسال قطر"
       ],
       "related": [
         {
           "titleKo": "중국 타이위안시 고층건물 화재로 14명 사망",
           "source": "وكالة سوا الإخبارية",
           "link": "https://palsawa.com/international/2026/11/09/%D9%85%D8%B5%D8%B1%D8%B9-14-%D8%B4%D8%AE%D8%B5%D8%A7-%D9%81%D9%8A-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%A8%D9%86%D9%89-%D8%B4%D8%A7%D9%87%D9%82"
+        },
+        {
+          "titleKo": "중국 40층 주택건물 화재로 14명 사망",
+          "source": "Vietnam.vn",
+          "link": "https://www.vietnam.vn/ar/chay-chung-cu-cao-40-tang-o-trung-quoc-14-nguoi-thiet-mang"
         },
         {
           "titleKo": "중국 주택 건물 화재로 14명 사망, 수십 명 부상",
@@ -132,17 +135,30 @@
           "link": "https://www.assawsana.com/article/738489"
         },
         {
-          "titleKo": "중국 건물 화재 사망자 14명으로 늘어",
-          "source": "مرسال قطر",
-          "link": "https://marsalqatar.qa/post/92659/%D8%AD%D8%B5%D9%8A%D9%84%D8%A9-%D8%B6%D8%AD%D8%A7%D9%8A%D8%A7-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%A8%D9%86%D9%89-%D8%A8%D8%A7%D9%84%D8%B5%D9%8A%D9%86-%D8%AA"
-        },
-        {
-          "titleKo": "중국 북부 건물 화재로 최소 14명 사망",
-          "source": "كويت نيوز -",
-          "link": "https://kuwaitnews.com/138400/"
+          "titleKo": "중국 북부 아파트 화재로 14명 사망",
+          "source": "Kuwait Times",
+          "link": "https://kuwaittimes.com/article/53279/world/fire-in-north-china-apartment-building-kills-14/"
         }
       ],
       "tag": "고층·건물"
+    },
+    {
+      "title": "송천동 농수산물도매시장 화재 건물 철거",
+      "source": "전북중앙",
+      "link": "http://www.jjn.co.kr/news/articleView.html?idxno=1056531",
+      "date": "2026-11-09T11:52:00.000Z",
+      "lang": "ko",
+      "titleKo": "송천동 농수산물도매시장 화재 건물 철거",
+      "url": "http://www.jjn.co.kr/news/articleView.html?idxno=1056531",
+      "body": "화재 피해로 어려움을 겪는 전주시 송천동 농수산물도매시장 상인들의 신속한 일상 회복을 돕기 위한 화재 건축물 철거와 대체시설 건축이 본격화된다.전주시는 지난 8월 화재가 발생한 송천동 농수산물도매시장 활어동에 대한 철거공사에 착수했다고 5일 밝혔다.이는 화재 건축물 철거를 위해 행정안전부 특별교부세(5억)을 확보한 데 이어 조지훈 시장과 화재피해 상인들이 간담회를 통해 현장 안전확보를 위한 건축물 철거 필요성에 공감하고 협조하기로 한데 따른 것이다.철거 대상은 전주시 농수산물도매시장 내에 위치한 활어동으로, 화재로 소실된 건축물과\n이를 위해 철거 설계 등 관련 사전 절차를 마무리하고 지난달 28일부터 가림막 설치 등 공사에 본격 착수했다. 철거공사는 오는 16일까지 마무리할 예정이다.\n대체 시설 건축 총사업비는 약 19억 원 정도로, 시는 전북특별자치도 특별조정교부금 10억 원을 이미 확보한 상태다.\n시는 올해 안에 실시설계 용역을 마무리하고 내년부터 본격적인 공사에 착수해 추석 명절 전까지는 대체시설 건립을 마무리한다는 구상이다.\n앞서 송천동 농수산물도매시장 상인들은 지난 8월 9일 발생한 화재로 활어동이 전소하며 활어 14개소와 건어 3개소 등 총 17개 점포가 피해를 입었다.",
+      "bodyKo": "화재 피해로 어려움을 겪는 전주시 송천동 농수산물도매시장 상인들의 신속한 일상 회복을 돕기 위한 화재 건축물 철거와 대체시설 건축이 본격화된다.전주시는 지난 8월 화재가 발생한 송천동 농수산물도매시장 활어동에 대한 철거공사에 착수했다고 5일 밝혔다.이는 화재 건축물 철거를 위해 행정안전부 특별교부세(5억)을 확보한 데 이어 조지훈 시장과 화재피해 상인들이 간담회를 통해 현장 안전확보를 위한 건축물 철거 필요성에 공감하고 협조하기로 한데 따른 것이다.철거 대상은 전주시 농수산물도매시장 내에 위치한 활어동으로, 화재로 소실된 건축물과\n이를 위해 철거 설계 등 관련 사전 절차를 마무리하고 지난달 28일부터 가림막 설치 등 공사에 본격 착수했다. 철거공사는 오는 16일까지 마무리할 예정이다.\n대체 시설 건축 총사업비는 약 19억 원 정도로, 시는 전북특별자치도 특별조정교부금 10억 원을 이미 확보한 상태다.\n시는 올해 안에 실시설계 용역을 마무리하고 내년부터 본격적인 공사에 착수해 추석 명절 전까지는 대체시설 건립을 마무리한다는 구상이다.\n앞서 송천동 농수산물도매시장 상인들은 지난 8월 9일 발생한 화재로 활어동이 전소하며 활어 14개소와 건어 3개소 등 총 17개 점포가 피해를 입었다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "전북중앙"
+      ],
+      "related": [],
+      "tag": "시장·상가"
     },
     {
       "title": "الإطفاء تطوق حريق مخزن الملابس في الشورجة وتمنع تمدده للمحلات المجاورة",
@@ -161,6 +177,24 @@
       ],
       "related": [],
       "tag": "숙소·창고"
+    },
+    {
+      "title": "عاجل",
+      "source": "https://inews.ma/",
+      "link": "https://inews.ma/news/8782600",
+      "date": "2026-11-09T11:41:26.000Z",
+      "lang": "ar",
+      "titleKo": "긴급",
+      "url": "https://inews.ma/news/8782600",
+      "body": "أخبار المغرب من أهم المواقع الالكترونية والجرائد الالكترونية المغربية ذات مصداقية وبكل حياد. جولة في الصحافة ومقالات وتحليلات أخبار سياسية واقتصادية ورياضية وثقافية وحقوقية، تغطيات خاصة، و آخر أحداث عالم الطب والتكنولوجيا. أخبار المغرب العاجلة نظام ذكي يختار لك أفضل الأخبار من أفضل المواقع والجرائد الالكترونية ويرسل تنبيهات فورية للأخبار العاجلة\nأكثر من 300 ألف طفل بلا تطعيم.. الحصار يهدد حياة الصغار في تعز",
+      "bodyKo": "죄송하지만, 제공하신 텍스트는 모로코 뉴스 포털의 일반적인 소개 문구와 모로코 관련 뉴스 제목입니다. \n\n저는 이라크 비스마야 신도시 건설현장의 한국인 안전·보건 담당자를 위해 이라크 관련 뉴스를 번역하는 역할을 합니다. 모로코나 예멘(텍스트의 \"تعز\"/타이즈는 예멘 지역)의 뉴스는 업무 범위를 벗어납니다.\n\n이라크 관련 뉴스가 있으시면 번역해 드리겠습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "https://inews.ma/"
+      ],
+      "related": [],
+      "tag": "기타"
     },
     {
       "title": "قتلى ومصابون في حريق مبنى سكني بالصين",
@@ -200,10 +234,28 @@
         {
           "titleKo": "강신욱 서울시의원 “리튬배터리 화재 대응 체계 대폭 개선하고 소방 안전 사업비 확충 위한 예산 구조 손봐야”",
           "source": "서울신문",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fdFdnRXFNbVZ2cWNmeDBGT1IycFJ4UVVqRWhnRzVkSTFzOHo3a2NBSGdZN0I1emZXX3BTdnVkU2FadXZ2NUl5Mkxrb1k0aTJ2SzU0?oc=5"
+          "link": "https://amp.seoul.co.kr/go/20261109500218"
         }
       ],
       "tag": "전기·배터리"
+    },
+    {
+      "title": "부천 상동 3층 상가서 화재…주민·소방대원 등 3명 부상",
+      "source": "매일안전신문",
+      "link": "https://idsn.co.kr/news/view/1065598564872564",
+      "date": "2026-11-09T08:12:36.000Z",
+      "lang": "ko",
+      "titleKo": "부천 상동 3층 상가서 화재…주민·소방대원 등 3명 부상",
+      "url": "https://idsn.co.kr/news/view/1065598564872564",
+      "body": "[매일안전신문=이상우 기자] 경기 부천시 원미구의 한 상가 건물에서 불이 나 60~70대 주민 2명과 진화 작업에 나선 소방대원 1명 등 3명이 다쳤다.9일 소방당국에 따르면 이날 오후 2시 33분께 부천시 원미구 상동의 지하 2층~지상 3층 규모 상가에서 화재가 발 ...",
+      "bodyKo": "[매일안전신문=이상우 기자] 경기 부천시 원미구의 한 상가 건물에서 불이 나 60~70대 주민 2명과 진화 작업에 나선 소방대원 1명 등 3명이 다쳤다.9일 소방당국에 따르면 이날 오후 2시 33분께 부천시 원미구 상동의 지하 2층~지상 3층 규모 상가에서 화재가 발 ...",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "매일안전신문"
+      ],
+      "related": [],
+      "tag": "시장·상가"
     },
     {
       "title": "선박 배터리 화재 어떻게 막나?",
@@ -212,17 +264,23 @@
       "date": "2026-11-09T03:30:00.000Z",
       "lang": "ko",
       "titleKo": "선박 배터리 화재 어떻게 막나?",
-      "count": 3,
+      "count": 4,
       "sources": [
-        "www.newszoom.kr",
+        "더뉴스코리아",
         "한국해운신문",
+        "MBC 뉴스",
         ":: 위즈경제 ::"
       ],
       "related": [
         {
           "titleKo": "서울시의회 공우석 의원, 전기차·배터리 화재 및 지하주차장 안전관리 사각지대 해소 시급",
-          "source": "www.newszoom.kr",
-          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE40dnFpWnE1M3FfSUJybHp5Q0NiVk00dkphQjZSR3NsYmJscUVJTnlQa0tEQWtIWXZ1OWRGRTFHZUtEUXotU1E?oc=5"
+          "source": "더뉴스코리아",
+          "link": "http://www.newskorea21.com/2372596"
+        },
+        {
+          "titleKo": "\"너무 심해\" 차이나타운 참변‥배터리 화재? 뉴욕도 술렁",
+          "source": "MBC 뉴스",
+          "link": "https://imnews.imbc.com/news/2026/world/article/6863771_36925.html"
         },
         {
           "titleKo": "리튬이온 배터리 화재 증가추세…원인은 ‘과충전’",
@@ -346,7 +404,7 @@
         {
           "titleKo": "최재형 보은군수, 화재 딛고 정상 가동한 ㈜이킴 보은공장 방문",
           "source": "동양일보",
-          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9uOGUxalNHNHlOQzFtZnFTVDdkMV9oZjN3Q0twQTNOVFc2aXg2aUF6WTFWdHYtbXlPaHB6cjh5VjlDdVBqSHNhQVEwTjhOYUJWTTFkYzFKQXZxNTVvNFpxVTZDVXR2NjdjdkhV?oc=5"
+          "link": "https://www.dynews.co.kr/news/articleView.html?idxno=872940"
         }
       ],
       "tag": "공장·플랜트"
@@ -422,20 +480,6 @@
       ],
       "related": [],
       "tag": "시장·상가"
-    },
-    {
-      "title": "\"너무 심해\" 차이나타운 참변‥배터리 화재? 뉴욕도 술렁",
-      "source": "MBC 뉴스",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBzbUhJQldvd2hoMHB1SG1xRW9ZSzY5d2ZOWU9QZjQzOWlsbnF0S2E2eHlseE03SFdJZFBTcHMxV19wQXQ2d1JtNHdnS1I5cUZpSFB5R0doUDVxR19NY1J5YndRWGVUZlJKNmhlcnNyYUs4NkdD0gF0QVVfeXFMTmtrcG5sRWRXSW5kQXVxRTU4enRZVzV6Yy1jbTF4alFTYWl5QlBaR2N0N3R5dGFPd3dVQW9TeFhENURwREgwRmNLSkJUalJwb0xzSHlnX1RLZzg1eXZyUTBzS1FVc2NnRXBWSlk2QU0zdzRGMFg?oc=5",
-      "date": "2026-11-06T08:45:53.000Z",
-      "lang": "ko",
-      "titleKo": "\"너무 심해\" 차이나타운 참변‥배터리 화재? 뉴욕도 술렁",
-      "count": 1,
-      "sources": [
-        "MBC 뉴스"
-      ],
-      "related": [],
-      "tag": "전기·배터리"
     },
     {
       "title": "إصابة شخصين باختناق في حريق داخل مبنى بعين شمس",
@@ -857,19 +901,12 @@
       "body": "고용노동부 울산동부지청은 화재·폭발 사고 예방을 위해 이달부터 다음달까지 ‘겨울철 대비 화재폭발사고 예방 강조기간’을 운영한다고 1일 밝혔다.겨울철에는 난방기기 사용과 화기 취급 작업 등에 따른 각별한 주의가 필요하다. 또 인화성 물질 취급 및 용접·용단 작업 등으로 인한 화재·폭발",
       "bodyKo": "고용노동부 울산동부지청은 화재·폭발 사고 예방을 위해 이달부터 다음달까지 ‘겨울철 대비 화재폭발사고 예방 강조기간’을 운영한다고 1일 밝혔다.겨울철에는 난방기기 사용과 화기 취급 작업 등에 따른 각별한 주의가 필요하다. 또 인화성 물질 취급 및 용접·용단 작업 등으로 인한 화재·폭발",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "الشرق الأوسط",
         "울산최초, 최고의 조간신문"
       ],
-      "related": [
-        {
-          "titleKo": "레바논 불꽃놀이 창고서 화재·폭발",
-          "source": "الشرق الأوسط",
-          "link": "https://aawsat.com/video/5336788-%D8%AD%D8%B1%D9%8A%D9%82-%D9%88%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%A8%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D8%A3%D9%84%D8%B9%D8%A7%D8%A8-%D9%86%D8%A7%D8%B1%D9%8A%D8%A9-%D9%81%D9%8A-%D9%84%D8%A8%D9%86%D8%A7%D9%86"
-        }
-      ],
-      "tag": "숙소·창고"
+      "related": [],
+      "tag": "기타"
     },
     {
       "title": "حريق جورة البلوط يفتح ملف المستودعات داخل الأحياء ...كنعان يتحرّك ويحذّر!",
@@ -942,6 +979,38 @@
       ],
       "related": [],
       "tag": "기타"
+    },
+    {
+      "title": "Fire breaks out at a Saudi Aramco building targeted in an attack, energy ministry says",
+      "source": "AP News",
+      "link": "https://apnews.com/article/yemen-houthis-saudi-arabia-strikes-threats-307d49abfe63ff66c99c318d94ca3e15",
+      "date": "2026-10-13T07:00:00.000Z",
+      "lang": "en",
+      "titleKo": "사우디 아람코 건물 화재, 에너지부 \"공격 대상\"",
+      "url": "https://apnews.com/article/yemen-houthis-saudi-arabia-strikes-threats-307d49abfe63ff66c99c318d94ca3e15",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "AP News"
+      ],
+      "related": [],
+      "tag": "기타"
+    },
+    {
+      "title": "Abu Dhabi warehouse fire brought under control, no injuries reported",
+      "source": "Gulf News",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPV2JNVHFiOHhkRXBncVpCNHBCN0ItaEFzTlpYLTdRU2RyZW1kQ3dLOUZlX0x0S3g5ZE1wSWhaMEc4VjJLeTZ5T0dpWjhUb2lLOHVLVkg3QzROT3lxUHdtdXRYTWM1Ti00S2pEUE56WkxVaUFGQlVmdEhqckFYRnBsZ3dJc2ZFUDdyaklPdFktTlRrUV9MODJabkFhVjdqSXhn0gGzAUFVX3lxTE9CWDluY1BtZVF2Q3RRUVlTMldlUUVBTk1oQ1MtbFhpZmhyUjJWb3VGc1JMTTl2WkJSd1dkNWs5aDM2R2NBSGRhdmN4UUVqTXRPZ0lpTTdnVTlMNjhnUHdjU0lYSUhuSVo0NGhZTXB6ZlptLXBkRHU3S1FCUlowRFBGSWpXeGZlT0xCX04wcU91VVItRHJjYWNONkFqUTJMbVVPRkU5ejB0YjVCV3ZiUzBTLUs0?oc=5",
+      "date": "2026-10-11T07:00:00.000Z",
+      "lang": "en",
+      "titleKo": "아부다비 창고 화재 진화 완료, 인명피해 없어",
+      "count": 1,
+      "sources": [
+        "Gulf News"
+      ],
+      "related": [],
+      "tag": "숙소·창고"
     }
   ]
 }
