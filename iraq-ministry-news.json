@@ -1,6 +1,38 @@
 {
-  "generatedAt": "2026-11-09T23:49:01.620Z",
+  "generatedAt": "2026-11-10T11:26:42.048Z",
   "health": [
+    {
+      "title": "تحرك حكومي لتطوير خدمات رعاية أطفال التوحد في العراق",
+      "source": "شبكة تواصل الإخبارية",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9VZW5KNHhUbHo4RUpQaDdTUFFab01GYjF4eDBubHI3XzFCYkJWcmlibEtLbEdqalFRUVUxV3ByQktNcjM4c0swZThndGhNNVlXb0tj?oc=5",
+      "date": "2026-11-10T10:59:35.000Z",
+      "lang": "ar",
+      "titleKo": "이라크의 자폐 아동을 위한 돌봄 서비스 개발을 위한 정부의 조치"
+    },
+    {
+      "title": "الصحة تضبط مخزناً يضم أكثر من 27 ألف قطعة دوائية مخالفة",
+      "source": "kalimaiq.com",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8wTTFGTHJqNE1Jb1hQblVuME8wRjNzem5WQ2xyMnM1S3NwZ1d0aVRnY3VEVVBhU0liUkxUUWFweHJTcE1FR3RNaTl3M25BOEVE?oc=5",
+      "date": "2026-11-10T10:29:37.000Z",
+      "lang": "ar",
+      "titleKo": "건강은 27,000개 이상의 위반 의약품이 들어 있는 창고를 압수합니다."
+    },
+    {
+      "title": "وزير الصحة: تحركات عربية لإنشاء مرصد للمخدرات وتعزيز حماية الشباب",
+      "source": "صدى البلد",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE55ZEhTdzE3RzcxaDk0NXRhVTBKLUsxUnRtS09EMC1rR3h5VUxJUFk4R3M5U21tOGJxX21CbVVoblplTm9oclBj?oc=5",
+      "date": "2026-11-10T09:16:00.000Z",
+      "lang": "ar",
+      "titleKo": "보건부 장관: 약물 관측소 설립 및 청소년 보호 강화를 위한 아랍 운동"
+    },
+    {
+      "title": "المجلس الوزاري يقرر دعم إجراءات وزارة الصحة لتوفير الأدوية والمستلزمات الطبية » وكالة الانباء العراقية (واع) | اخبار العراق",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFAyb1JFUDctUGpFbDctOFJ5MndwRUdsQ0VaUjZETGUwVFZzdDZVODBDYkE4d19tTjBXZGp1RU81QV94QTN6MGUybTRFVno?oc=5",
+      "date": "2026-11-10T08:37:57.000Z",
+      "lang": "ar",
+      "titleKo": "각료이사회는 보건복지부의 의약품 및 의료용품 제공 절차를 지원하기로 결정했습니다. »이라크 통신사 (INA) | 이라크 뉴스"
+    },
     {
       "title": "الصحة تضبط مخزنا سريا داخل صيدلية ببغداد وتكشف عن 27 ألف قطعة دوائية مخالفة",
       "source": "هذا اليوم",
@@ -26,14 +58,6 @@
       "titleKo": "보고 - 사람들의 느슨한 예방 접종은 디프테리아를 모로코로 되돌려 놓습니다."
     },
     {
-      "title": "أحمد طه: نجاح التغطية الصحية الشاملة لا يُقاس بعدد المستفيدين فقط",
-      "source": "جريدة الدستور",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1lcFVLalN2Uk1sNTQ5RWR6NmJ2Q1Q0d1ZYUFlmLXlORHk4bVJ2MTFHWEFmUDM4aDBiUFU3UzhTZGdGSlIt?oc=5",
-      "date": "2026-11-09T15:01:00.000Z",
-      "lang": "ar",
-      "titleKo": "Ahmed Taha: 보편적 건강 보험의 성공은 수혜자 수로만 측정되지 않습니다."
-    },
-    {
       "title": "Terror Suit Against Drugmakers Draws US Supreme Court Inquiry",
       "source": "Bloomberg.com",
       "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOREZLYmtNTER6Nk5OY2Y1MUZLYThnVUdyQ0w0OVd0bDdaRXAySS15NWZQdC1md1Exc0JVdWpSZjB0Mm9DWmtHbF8yMGFVQ3dhZ0tDajBPLTRoUWFjcXJrczk4V0NyQ0xSMjN1b0htVmE1RDl1QlRrQWZKNHlVUjhOVEp3c0tCQmNtaG1ab0NxZGp0bGVMU0tWTHFaRHVla3EzdjRlb1d3YkVfR0dwZmhMRXRB?oc=5",
@@ -48,14 +72,6 @@
       "date": "2026-11-09T13:04:05.000Z",
       "lang": "ar",
       "titleKo": "비디오/총리는 합동 파일에 대해 논의하기 위해 이라크 쿠르디스탄 지방 정부의 대통령을 받는다."
-    },
-    {
-      "title": "واع/ العراق يقدم التعازي الى مصر بضحايا حادثة تصادم القطارين في الجيزة",
-      "source": "وكالة انباء الاعلام العراقي",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE95OUJEb25kTWE2OG1uRDdFMGRDWE1ndnVGa05ZY1VhTnRpU1RWcmxCOW9MMUxZSHFBOGl2U2JXcDJXT1J3eXByWl9HUVJXZHlQckE?oc=5",
-      "date": "2026-11-09T10:58:15.000Z",
-      "lang": "ar",
-      "titleKo": "Conscious/이라크는 기자에서 두 열차의 충돌로 인한 희생자들에게 이집트에 조의를 표합니다."
     },
     {
       "title": "جامعة الإمام جعفر الصادق تطلق مشروعاً للكشف المبكر عن التوحد بالتعاون مع 3 وزارات",
@@ -80,22 +96,6 @@
       "date": "2026-11-08T20:07:37.000Z",
       "lang": "ar",
       "titleKo": "보건부는 아얏 열차 사고로 다친 부상자 중 12명의 중대한 사례를 발표했습니다."
-    },
-    {
-      "title": "الصحة المصرية: 7 وفيات و112 مصاباً بتصادم قطارين بمحافظة",
-      "source": "نبأ الأردن",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9FTUJBUFh2S3A5aVlzN3lxSjFTLVRSQTNSQnBYWjJJUDVnM2xZcThnRUt1YnZRWmZjbmlYZ3Rtd0ZueF9scEVvVnA3U2JqLVVW?oc=5",
-      "date": "2026-11-08T19:08:24.000Z",
-      "lang": "ar",
-      "titleKo": "이집트 건강: 주지사에서 두 대의 열차가 충돌하여 7명이 사망하고 112명이 부상당함"
-    },
-    {
-      "title": "الصحة المصرية: 4 وفيات و88 مصاباً جراء تصادم قطارين بالجيزة » وكالة الانباء العراقية (واع) | اخبار العراق",
-      "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GR0swbTBJa2RjaWhaTlhvTDE1NUhEVGNCS0RncHFmcE94M01uLV9iTmJKZkJHdGRsWDBsU2NoUGI2bHNDR05TWldlMGlCRDQ1R0pRZDVZX25yUGxi?oc=5",
-      "date": "2026-11-08T15:54:29.000Z",
-      "lang": "ar",
-      "titleKo": "이집트 건강: 기자 열차 2대 충돌로 4명 사망 및 88명 부상 »이라크 통신사 (INA) | 이라크 뉴스"
     }
   ],
   "environment": [
@@ -110,7 +110,7 @@
     {
       "title": "العراق يتجه إلى استخدام الطائرات المسيّرة في إزالة الألغام",
       "source": "العربي الجديد",
-      "link": "https://news.google.com/rss/articles/CBMi6gNBVV95cUxNSWE2QmZRT2Y3a2dHTkJscWFUQWVtd0lPQ2QzVnhGRWc0V1B6VUlEeEJualVkQm82Q1BjdkN2X0Jha3FUUDZFMEswM016MEdFZHJwMEFEdVp1MzVkSXk5NWJFMGNENzJCemdldDNpOG1nRnQ0b29UYnhUUlUwSGhmSGU4bVpXT0xER2h2OFZlUVhhY2lmNjg5cHdqRVh4QWNJS3gxYnJId3c5SU1HdDZiZFZKakVvazUtRWFDdmV5MTNhdTlhaUxPb2ptdk9mMk8wOGhwWHdHaU1EOVA0SGt0TDA3SzVHcjVuR1hIMEVQdmVPZWxueGNNbFBOdy1MU2tXY1FmSV9xR3lIdG9YVl9nYlRic2RzZ0RPZHZadDNBRjJQTVdGWGFkcXI4dVFoTTlXVFR1NlprWHJWSjNLVEJ4ckFQOUhqYVBib2NxTU9PQVhlTnlvaExWMlBkdEdyZndUcWtXcDdlWFVSeVdpR2oydklHUnZIelI4eldtSllXSl8tVWtqZ2FSNkhRT1hjWndFR01yb0o5bU1LdkM5blkzTlhTam1NRXM3b3NZMXlaX0hpbUEzaGNkbkRYUXFsd3Z6b3V2eWZ2d3JNU3dvTERFZGEtcjFzbUJ4TnZrY2licFY4dWo2eU5xWFVn0gHqA0FVX3lxTE1JYTZCZlFPZjdrZ0dOQmxxYVRBZW13SU9DZDNWeEZFZzRXUHpVSUR4Qm5qVWRCbzZDUGN2Q3ZfQmFrcVRQNkUwSzAzTXowR0VkcnAwQUR1WnUzNWRJeTk1YkUwY0Q3MkJ6Z2V0M2k4bWdGdDRvb1RieFRSVTBIaGZIZThtWldPTERHaHY4VmVRWGFjaWY2ODlwd2pFWHhBY0lLeDFickh3dzlJTUd0NmJkVkpqRW9rNS1FYUN2ZXkxM2F1OWFpTE9vam12T2YyTzA4aHBYd0dpTUQ5UDRIa3RMMDdLNUdyNW5HWEgwRVB2ZU9lbG54Y01sUE53LUxTa1djUWZJX3FHeUh0b1hWX2diVGJzZHNnRE9kdlp0M0FGMlBNV0ZYYWRxcjh1UWhNOVdUVHU2WmtYclZKM0tUQnhyQVA5SGphUGJvY3FNT09BWGVOeW9oTFYyUGR0R3Jmd1Rxa1dwN2VYVVJ5V2lHajJ2SUdSdkh6Ujh6V21KWVdKXy1Va2pnYVI2SFFPWGNad0VHTXJvSjltTUt2QzluWTNOWFNqbU1Fczdvc1kxeVpfSGltQTNoY2RuRFhRcWx3dnpvdXZ5ZnZ3ck1Td29MREVkYS1yMXNtQnhOdmtjaWJwVjh1ajZ5TnFYVWc?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi5ANBVV95cUxOTjBIbVZtU3JYTnNPS0kyUW9VZ2h4dE5NZS1VOFBfOEI0cTVPY2RjOG8tQlVXU3kxNmpwRk8tUmJURHpoaGMwM0hMdGhVVk52S0ZOSEJkdzlpaXlDY1pKSkRsUVZKV2NZWm0xdzVtVWsyaWVrSHB2c1YxdWh4OG04cTQtdUJaVmdQVjRhNGV0U3JoME4tOTVzamVWcUNHbXdsZmZZNUNZaEZISEpVZmRkcnhySnlyWVo1UmJ3NVdZLTJlbUhGdmV2UEFlY3p3ZUJtRHhTVXNBSkdzY19BMHdNbHozRW9qb1F2WDhZQjhNNk1DVlRJWXc0cVZpRDJGcEc3TzMwODY3OGFmcDhiWDc1ZVNJckxwamY4WkNRLTZFSXdmM2laMDBDdnBwRkdBRGZUdTZGZ0o0d3ZiVl9aOEk0R1JoMUZrZWRQSlJaZ3BMU3BNd2hxM1RLUFFiNkRqVnphX2p0X3FFb3lZb3VVOHJlNlc4WVRlZnRRd2VUYk03OGJDR0JmaFI3M2pQazYyWmwwM1UyRzFXUS1nNm5lc3AwR3FLWFF5cjFPaGlqN1BHeVB5RHJfWGdXME9teXVzNGpMS1NmaENlTXoyTDByZk5zT3pkTU5udmlxZnJFNUJERnYxRVdV0gHqA0FVX3lxTE1JYTZCZlFPZjdrZ0dOQmxxYVRBZW13SU9DZDNWeEZFZzRXUHpVSUR4Qm5qVWRCbzZDUGN2Q3ZfQmFrcVRQNkUwSzAzTXowR0VkcnAwQUR1WnUzNWRJeTk1YkUwY0Q3MkJ6Z2V0M2k4bWdGdDRvb1RieFRSVTBIaGZIZThtWldPTERHaHY4VmVRWGFjaWY2ODlwd2pFWHhBY0lLeDFickh3dzlJTUd0NmJkVkpqRW9rNS1FYUN2ZXkxM2F1OWFpTE9vam12T2YyTzA4aHBYd0dpTUQ5UDRIa3RMMDdLNUdyNW5HWEgwRVB2ZU9lbG54Y01sUE53LUxTa1djUWZJX3FHeUh0b1hWX2diVGJzZHNnRE9kdlp0M0FGMlBNV0ZYYWRxcjh1UWhNOVdUVHU2WmtYclZKM0tUQnhyQVA5SGphUGJvY3FNT09BWGVOeW9oTFYyUGR0R3Jmd1Rxa1dwN2VYVVJ5V2lHajJ2SUdSdkh6Ujh6V21KWVdKXy1Va2pnYVI2SFFPWGNad0VHTXJvSjltTUt2QzluWTNOWFNqbU1Fczdvc1kxeVpfSGltQTNoY2RuRFhRcWx3dnpvdXZ5ZnZ3ck1Td29MREVkYS1yMXNtQnhOdmtjaWJwVjh1ajZ5TnFYVWc?oc=5",
       "date": "2026-11-09T12:49:40.000Z",
       "lang": "ar",
       "titleKo": "이라크는 지뢰 제거에서 드론 사용으로 이동하고 있습니다."
@@ -119,7 +119,7 @@
       "title": "العراق يتجه لاستخدام الطائرات المسيرة في عمليات إزالة الألغام لأول مرة في البلاد",
       "source": "وكالة تنوع نيوز",
       "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5Gb2RxamFGVy1fNUJ4czJVY0Zfck9pd0l3bkdqVnFEQkk3aXROVkh1MlhIYVdORjcwaDUzMkxhUlI5aTYzcEtn?oc=5",
-      "date": "2026-11-09T10:36:35.000Z",
+      "date": "2026-11-09T10:36:44.000Z",
       "lang": "ar",
       "titleKo": "이라크는 국내 최초로 탈핵 작전을 위해 드론을 사용하는 경향이 있다."
     },
@@ -156,12 +156,20 @@
       "titleKo": "환경은 이라크에서 처음으로 지뢰 제거에 드론을 도입하기 위해 움직이고 있습니다 |..."
     },
     {
-      "title": "إقتراح تشكيل مجلس أعلى للبيئة يتولّى مواجهة التلوّث ودرء مخاطره المقلقة",
-      "source": "Azzaman",
-      "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPSmtENTIxMTVNblhldG1EU2VHcTc4YkoydndOcGI5OWlyT1dOcEpuNEs5X2hwaFo5LW1aSFhuQkRNX1ZpZURaZDFyZTA2VWEyNzNJMVhBV2JaU3dOTEhYenZDOVYxMTg2LUNsWU9vdVJ4S2hmVTVsY2RWang0Smw1eFMwaDVnWld2d1pkcTNkM1k4RzlOZjA2Y250WGE4ZEpncEYyRkZOS2l5bV9XSnhVcnhWU0JaS0FsUG92c3JPVUhfU3FUdnk1ZUtwenFVQ0lVY24tY2h2RkRXUm1JLTdCWUlDZXZ3TUFjTGVDTzdGTV9DNlp4VHFkWWIwQ1phLU95SVRTS0NteVBuU2g1NDRkcVdrTm1SZnVLSTczU1pKZDlGejNMLTBMWFNfYnc1TjBQSjctcm5TRm9wNk1FT3Q5SkExNXZSUQ?oc=5",
-      "date": "2026-11-08T16:23:04.000Z",
+      "title": "العراق يتجه إلى استخدام الطائرات المسيرة لإزالة الألغام",
+      "source": "شفقنا العراق",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5XeEt5ajNxMklkNjB0cGp0ZjlyZW1hRmdfX2NWTlpVMGxaMW9uWTBOVlVVUEhUT2pfeTI1NS1ZQ3c3eVFpeEFPWmZWcUI?oc=5",
+      "date": "2026-11-09T06:50:43.000Z",
       "lang": "ar",
-      "titleKo": "환경오염을 해결하고 그 위험성을 방지하기 위한 환경최고위원회 구성 제안"
+      "titleKo": "이라크가 탈핵을 위해 드론으로 변신하다"
+    },
+    {
+      "title": "العراق يطالب بتعويضات مناخية ويؤكد تعزيز التعاون البيئي مع تركيا في مقابلة مع الأناضول",
+      "source": "شبكة تواصل الإخبارية",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1kcU5SMFlWMGRwNnhnejZuVlFiYnBiRGoxWXZmNUhlTV9rSGJVU3ZNbHVYWUhOdWM5TjRaaTIyLUFjelN0YnV2UXdtNl91M0FjVi1Z?oc=5",
+      "date": "2026-11-06T07:49:56.000Z",
+      "lang": "ar",
+      "titleKo": "이라크는 기후 보상을 요구하고 아나톨리아와의 인터뷰에서 터키와의 환경 협력 강화를 확인합니다."
     },
     {
       "title": "شهر على إعلان الطوارئ البيئية في العراق.. المعالجات تنتظر التمويل!",
@@ -178,14 +186,6 @@
       "date": "2026-11-01T07:33:12.000Z",
       "lang": "ar",
       "titleKo": "\"느린 죽음\" 이라크인 위협.. 환경 비상사태 선포 한 달 후 자금 위기 및 정부 지연"
-    },
-    {
-      "title": "شهر على إعلان الطوارئ البيئية في العراق... لا إجراء يذكر",
-      "source": "العربي الجديد",
-      "link": "https://news.google.com/rss/articles/CBMitgNBVV95cUxPMmtKUmExMHdCR2ZVVkMtUlVTM3RnY0tBOE5La2hVbGV3LW1OVXRicklQNzd5ZFo0NC1MbldvQWptY1ltb0dKZ0UweV9vNEhJQWZKRV9wa20zTnAxWVVrUF92WncyVTRzeGNRU1NoVGZ3MnRPdDJQVVZmQ0pfajZIQ3gwbnJPUXZMMlQtRFRCakloUHV5NjdpZ0E3enV1dG1UME1wT3U0a2NkU1lON0VBb2haWGJxMU5BRVBqTjBuRG9SVTE1LUdIenVvS3UyRVlOLU1qbjhMMTNOeUFtaWktWTVMaGtsdUFzemNvbGtLMjg5MkJXeWJubTgxalVxQjNVXy1RMk1hMUpzdUJCb01pVkM1OXpIZjBIamp0VVNOMHp2RFlzVmk3Qkd5Z3hzdjRDT0pFSU43Z0pVYnJ5MVNJc2R1WmtpZEZSRTNmRUdhTzRCTGIxbXNUSUo1NmZxTWxGanVYQ3hfSW5nVFB3RXhySDV3NFkyY3hLZmtxS1gtZ2NVeXJISTJnRU5MWDNVc2ktRzZ0MTRlM0RxSVd5X0pfTmtsYTZnRGFRWDhlZkZ5RV84WW1WNHfSAbsDQVVfeXFMTm9TLU83YUREWW5aM3FYQXB0UTVCQ0VmaTFLWEF2dXF2X3AxUmRpVzRNdEVWUjR6UzZLR0VTR2ZHaFU2bTN2RVU1Q2gwaGQ5S3c1cXRXX29JbDdKcDhzTlYzbUFZYUd6WG5VN3p4RnF5SHZRUGljNExweDE3Nm9IQWxEWTlmbFd1WUdEaEViX3Y2SFFrYzZpRGxIRTAxdF9ObkdYeEJMMzl2UVM0a3BvbW9GZHR4VExvOHg2UEZfM2xnQ2NrMVY2QVlGUl9zRVkxZlVLSHFPeTducE5SemQwWEpHSjBGcERHV1U1eGF1MlZ5X1duMU41eHpjUnVqSmI2NnlCVjcxY1FUeXFBeXVreEtnSTdkaEtPU2c1OEk1bks3OWxzZ05OeFdaQmg0bEpsQmFzTUlVeV92RGxITUozcHFLMWdEMjdJV1lzUUM5RDhfcDlSaHVtTjZxWEhXeC1xMm5ESURsQUZBTGVqUm1mNG5IZEpMeFpuck8xSDRYSVdnY0FBamx5VGdUY094SndFWVktNGFHRS1RRWxlQWNtWjl3NV9OUnRtSVdjWW1sQjdWZjlUU1dhWW1lZlU?oc=5",
-      "date": "2026-11-01T07:00:00.000Z",
-      "lang": "ar",
-      "titleKo": "이라크에 환경 비상사태 선포 후 한 달… 조치 없음"
     },
     {
       "title": "التلوث يهدد حياة العراقيين",
