@@ -17,6 +17,22 @@
     },
     {
       "kind": "WHO 소식",
+      "title": "From commitments to implementation: ATACH Day at COP31 delivers practical solutions for climate and health",
+      "date": "2026-11-10T17:00:36Z",
+      "summary": "This year's ATACH Day, themed “From commitments to implementation: Country solutions for climate and health,” aimed to provide further space to countries showcasing the positive solutions they are implementing in their respective countries.",
+      "link": "https://www.who.int/news/item/10-11-2026-from-commitments-to-implementation--atach-day-at-cop31-delivers-practical-solutions-for-climate-and-health",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO updates global catalogue for interpreting tuberculosis drug resistance mutations",
+      "date": "2026-11-10T08:00:00Z",
+      "summary": "WHO published the third edition of the Catalogue of mutations in Mycobacterium tuberculosis complex and their association with drug resistance, providing the most comprehensive global reference to date for interpreting genomic mutations associated with drug-resistant tuberculosis.",
+      "link": "https://www.who.int/news/item/10-11-2026-who-updates-global-catalogue-for-interpreting-tuberculosis-drug-resistance-mutations",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO training strengthens global capacity for healthier, more equitable cities",
       "date": "2026-11-10T08:00:00Z",
       "summary": "More than half of the world’s population now lives in urban areas, a proportion expected to reach 68% by 2050. While cities can create powerful opportunities for better health, climate action and social development, rapid urbanization is also exposing billions of people to inadequate housing and transport, poor sanitation, air pollution, extreme heat and environments that contribute to noncommunicable diseases and injuries. With COP31 in Türkiye and the next World Urban Forum in Mexico City on t",
@@ -128,28 +144,12 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Six climate and health actions could save 1.6 million lives and deliver trillions in benefits each year",
-      "date": "2026-11-04T08:00:00Z",
-      "summary": "Six proven climate and health measures could save 1.6 million lives a year while delivering trillions of dollars in economic and fiscal gains, according to a new World Health Organization (WHO) report released today.",
-      "link": "https://www.who.int/news/item/04-11-2026-six-climate-and-health-actions-could-save-1.6-million-lives-and-deliver-trillions-in-benefits-each-year",
-      "newsType": "News release"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Shamonda virus in human - France",
       "date": "2026-11-02T14:26:51Z",
       "summary": "On 20 October 2026, the National IHR Focal Point (NFP) of France notified WHO regarding the first documented human infection with Shamonda virus (SHAV). The case was an immunocompromised older man from eastern France with no travel history during the preceding year. He developed severe neurological illness on 23 September 2026 and was diagnosed with severe encephalitis (brain inflammation). The patient died on 8 October 2026. SHAV is recognized primarily as an animal-associated virus, like the c",
       "link": "https://www.who.int/2026-DON623",
       "donId": "2026-DON623"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Sustaining sexual and reproductive health through a pandemic",
-      "date": "2026-11-01T23:00:00Z",
-      "summary": "Evidence from nine countries informs future emergency preparednessWhen COVID-19 kept new mothers in Khon Kaen, Thailand, away from hospital, the clinic went to them. Nurses phoned women five weeks after birth instead of calling them in, offered contraceptive implants before discharge, and sent medicines to patients' homes by post.",
-      "link": "https://www.who.int/news/item/01-11-2026-sustaining-sexual-and-reproductive-health-through-a-pandemic",
-      "newsType": "Departmental update"
     },
     {
       "kind": "감염병 발생",
@@ -208,5 +208,5 @@
       "donId": "2026-DON616"
     }
   ],
-  "generatedAt": "2026-11-10T13:55:41.902817+00:00"
+  "generatedAt": "2026-11-10T22:38:36.528630+00:00"
 }
