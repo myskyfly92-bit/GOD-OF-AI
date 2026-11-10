@@ -570,7 +570,9 @@ async function main() {
       if (!kind) continue;
       const here = A.HERE.test(n.title + " " + n.titleKo);
       const otherOnly = A.OTHER.test(n.title + " " + n.titleKo) && !/بغداد|baghdad|바그다드|جميع المحافظات|عموم العراق|nationwide|전국/i.test(n.title + " " + n.titleKo);
-      if (!here || otherOnly) continue;
+      // 해외 공관(이라크 대사관·영사관)의 휴무 공지는 그 나라 휴일이라 현장과 상관없다 (예: 텍사스 총영사관 '공식 휴무' = 미국 재향군인의 날)
+      const abroad = /القنصلية|قنصلية|السفارة|سفارة|البعثة|consulate|embassy|영사관|대사관|공관/i.test(n.title + " " + n.titleKo) || /mofa\.gov\.iq\/(?!ar\/|en\/|ku\/|\d{4}\/)[a-z][a-z-]*\//i.test(String(n.link || n.url || ""));
+      if (!here || otherOnly || abroad) continue;
       alerts.push({ kind, titleKo: n.titleKo, title: n.title, link: n.link, source: n.source, date: n.date, count: n.count || 1 });
       if (kind === "holiday") n.tag = "휴일·행사"; else n.tag = "시위·통제";
     }
