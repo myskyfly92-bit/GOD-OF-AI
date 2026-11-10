@@ -56,6 +56,14 @@
       "newsType": "Departmental update"
     },
     {
+      "kind": "WHO 소식",
+      "title": "Civil society dialogues advance community-centred preparedness for health emergencies",
+      "date": "2026-11-06T13:00:00Z",
+      "summary": "In 2026, the WHO Health Emergencies Programme convened two global Civil Society Organization (CSO) Dialogues, focused on Ebola readiness and response and cholera community protection. Bringing together civil society, governments, UN agencies and technical partners, the dialogues identified practical actions to strengthen the role of communities and civil society in preparedness and response.",
+      "link": "https://www.who.int/news/item/06-11-2026-civil-society-dialogues-advance-community-centred-preparedness-for-health-emergencies",
+      "newsType": "Departmental update"
+    },
+    {
       "kind": "감염병 발생",
       "title": "Yellow fever - WHO African Region",
       "date": "2026-11-06T09:01:14Z",
@@ -144,14 +152,6 @@
       "newsType": "News release"
     },
     {
-      "kind": "WHO 소식",
-      "title": "World Conference on Traditional Medicine 2026 delivers landmark health initiatives",
-      "date": "2026-10-30T12:00:00Z",
-      "summary": "Expert Committee Meeting members at the World Conference on Traditional Medicine 2026© WHOThe World Conference on Traditional Medicine 2026 concluded in Beijing on 18 October with several key outcomes aimed at strengthening global cooperation for health and well-being. These included the adoption of the Beijing Initiative on the Conservation and Sustainable Use of Traditional Medicinal Plant Resources, the promotion of the New-Era Shennong Herbal Project, and the publication of the Report on art",
-      "link": "https://www.who.int/news/item/30-10-2026-world-conference-on-traditional-medicine-2026-delivers-landmark-outcomes-for-global-health",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria",
       "date": "2026-10-23T15:48:48Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON616"
     }
   ],
-  "generatedAt": "2026-11-09T14:38:59.838417+00:00"
+  "generatedAt": "2026-11-10T00:57:34.376219+00:00"
 }
