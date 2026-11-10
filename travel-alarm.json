@@ -692,16 +692,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "누악쇼트, 누아디브, 인시리, 트라르자 및 아다르(우아단까지 일부지역)"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "2단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "누악쇼트, 누아디브, 인시리, 트라르자 및 아다르(우아단까지 일부지역)"
     }
    ],
    "written": "",
@@ -1538,17 +1538,17 @@
    "iso2": "AL",
    "name": "알바니아",
    "nameEn": "Albania",
-   "level": 1,
+   "level": 2,
    "regions": [
     {
-     "level": 1,
-     "levelName": "여행유의",
+     "level": 2,
+     "levelName": "여행자제",
      "region": "전체",
      "remark": "전 지역"
     }
    ],
    "written": "",
-   "levelName": "여행유의",
+   "levelName": "여행자제",
    "partial": false
   },
   "DZ": {
@@ -1935,16 +1935,16 @@
    "level": 2,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "서파푸아, 파푸아, 말루쿠, 아체"
-    },
-    {
      "level": 1,
      "levelName": "여행유의",
      "region": "일부",
      "remark": "특별여행주의보 및 2단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "서파푸아, 파푸아, 말루쿠, 아체"
     }
    ],
    "written": "",
@@ -2318,16 +2318,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "라이베리아ㆍ기니와 국경을 접한 서부 지역(뎅겔레 주, 몽타뉴 주, 바핑 주), 초로고(Tchologo), 붕카니(Bounkani) 지역"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "라이베리아ㆍ기니와 국경을 접한 서부 지역(뎅겔레 주, 몽타뉴 주, 바핑 주), 초로고(Tchologo), 붕카니(Bounkani) 지역"
     }
    ],
    "written": "",
@@ -2381,16 +2381,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "북키부주, 남키부주,이투리주"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "중앙아프리카공화국과의 국경 50km 이내 지역/ 바우엘레주, 오트우엘레주, 마니에마주, 카사이주, 카사이상트랄주, 카사이오리앙탈주,탕가니카주,오트로마미주"
+    },
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "북키부주, 남키부주,이투리주"
     }
    ],
    "written": "",
@@ -2484,12 +2484,6 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "송클라 주 남부 말레이시아 접경지역, 파타니 주, 나라티왓 주, 얄라 주, 태국-캄보디아 국경 50km 이내"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -2500,6 +2494,12 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "2.3단계 및 특별여행주의보 발령 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "송클라 주 남부 말레이시아 접경지역, 파타니 주, 나라티왓 주, 얄라 주, 태국-캄보디아 국경 50km 이내"
     }
    ],
    "written": "",
@@ -2547,10 +2547,10 @@
    "level": 3,
    "regions": [
     {
-     "level": 1,
-     "levelName": "여행유의",
+     "level": 2,
+     "levelName": "여행자제",
      "region": "일부",
-     "remark": "튀니스와 수도권 지역/비제르트 주/나불 주/수스 주/모나스티르 주 마흐디아 주/스팍스 주/제르바 주"
+     "remark": "1, 3단계 지정 지역을 제외한 지역"
     },
     {
      "level": 3,
@@ -2559,10 +2559,10 @@
      "remark": "알제리 접경지역(까세린주 샴비산 일대 포함), 리비아 접경지역 및 크사르 길랜 이남 사막지역 전역"
     },
     {
-     "level": 2,
-     "levelName": "여행자제",
+     "level": 1,
+     "levelName": "여행유의",
      "region": "일부",
-     "remark": "1, 3단계 지정 지역을 제외한 지역"
+     "remark": "튀니스와 수도권 지역/비제르트 주/나불 주/수스 주/모나스티르 주 마흐디아 주/스팍스 주/제르바 주"
     }
    ],
    "written": "",
@@ -2662,12 +2662,6 @@
    "level": 4,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "이슬라마바드, 페이살라바드, 라왈핀디, 라호르, 훈자, 길깃, 스카르두"
-    },
-    {
      "level": 4,
      "levelName": "여행금지",
      "region": "일부",
@@ -2678,6 +2672,12 @@
      "levelName": "출국권고",
      "region": "일부",
      "remark": "2단계(여행자제), 4단계(여행금지) 지역을 제외한 전 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "이슬라마바드, 페이살라바드, 라왈핀디, 라호르, 훈자, 길깃, 스카르두"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-11-09T08:43:52.784113+00:00"
+ "generatedAt": "2026-11-10T08:52:28.171305+00:00"
 }
