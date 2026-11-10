@@ -9,10 +9,26 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO launches “Together for Science and Health” movement to strengthen trust worldwide",
+      "date": "2026-11-10T21:00:54Z",
+      "summary": "WHO today launched Together for Science and Health, a new global movement uniting more than 240 organizations behind a shared commitment to strengthen trust in science and harness its power to improve health and development.",
+      "link": "https://www.who.int/news/item/10-11-2026-who-launches-together-for-science-and-health-movement-to-strengthen-trust-worldwide",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO training strengthens global capacity for healthier, more equitable cities",
       "date": "2026-11-10T08:00:00Z",
       "summary": "More than half of the world’s population now lives in urban areas, a proportion expected to reach 68% by 2050. While cities can create powerful opportunities for better health, climate action and social development, rapid urbanization is also exposing billions of people to inadequate housing and transport, poor sanitation, air pollution, extreme heat and environments that contribute to noncommunicable diseases and injuries. With COP31 in Türkiye and the next World Urban Forum in Mexico City on t",
       "link": "https://www.who.int/news/item/10-11-2026-who-training-strengthens-global-capacity-for-healthier--more-equitable-cities",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO releases global mega-map on age-friendly environments",
+      "date": "2026-11-10T07:56:53Z",
+      "summary": "The environments in which people live, including their homes, neighbourhoods, transport services and opportunities to participate in community life, play a critical role in healthy ageing. Evidence on how to create age-friendly environments is spread across public health, social care, housing, transport, urban planning and community development, making it difficult for policy-makers and practitioners to see what has been studied and where gaps remain.",
+      "link": "https://www.who.int/news/item/10-11-2026-who-releases-global-mega-map-on-age-friendly-environments",
       "newsType": "Departmental update"
     },
     {
@@ -136,22 +152,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "On World Cities Day 2026, WHO calls for safe, healthy housing for all",
-      "date": "2026-10-31T04:00:00Z",
-      "summary": "This World Cities Day, celebrated under the theme “Regenerating the City: Adequate Housing for All”, the World Health Organization (WHO) highlights the critical role of housing in shaping health and well-being and calls for greater action to ensure that everyone can live in healthy, safe and accessible homes.",
-      "link": "https://www.who.int/news/item/31-10-2026-on-world-cities-day-2026--who-calls-for-safe--healthy-housing-for-all",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Barbados eliminates mother-to-child transmission of HIV",
-      "date": "2026-10-30T15:00:00Z",
-      "summary": "Barbados has eliminated mother-to-child transmission of HIV as a public health problem, the World Health Organization (WHO) announced, marking a major public health milestone resulting from years of sustained efforts to ensure babies are born free of HIV.",
-      "link": "https://www.who.int/news/item/30-10-2026-barbados-eliminates-mother-to-child-transmission-of-hiv",
-      "newsType": "News release"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria",
       "date": "2026-10-23T15:48:48Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON616"
     }
   ],
-  "generatedAt": "2026-11-10T00:57:34.376219+00:00"
+  "generatedAt": "2026-11-10T13:55:41.902817+00:00"
 }
