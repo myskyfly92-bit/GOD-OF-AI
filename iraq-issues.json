@@ -1,38 +1,51 @@
 {
-  "generatedAt": "2026-11-10T23:31:19.026Z",
+  "generatedAt": "2026-11-11T06:42:48.754Z",
   "items": [
     {
-      "title": "Former Iraqi MP Al-Alwani missing in Lebanon",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Iraq/Former-Iraqi-MP-Al-Alwani-missing-in-Lebanon",
-      "date": "2026-11-10T23:19:26.000Z",
+      "title": "Former Iraqi MP murdered in Beirut",
+      "source": "The New Region",
+      "link": "https://thenewregion.com/posts/7070",
+      "date": "2026-11-11T05:26:15.000Z",
       "lang": "en",
-      "titleKo": "전직 이라크 의원 알알와니, 레바논에서 실종",
-      "url": "https://shafaq.com/en/Iraq/Former-Iraqi-MP-Al-Alwani-missing-in-Lebanon",
-      "body": "Shafaq News- Beirut Former Iraqi lawmaker Ahmed Al-Alwani has been missing in Lebanon for four days, with his phones switched off and even his bodyguards unable to reach him, sources told Shafaq Ne\nLebanese security agencies have launched a search, but his whereabouts and the circumstances of his disappearance remain unknown, according to the sources, who said it was still unclear whether he had been kidnapped for ransom or whether other explanations were involved.\nThe embassy is following the case in contact with senior authorities in Baghdad, the sources added.\nIraqi authorities released Al-Alwani in April 2025 after about a decade in detention. A former member of parliament for the Al-Iraqiya List, he was arrested in December 2013 after leading protests against then-Prime Minister Nouri Al-Maliki. The raid on his home in Ramadi, the capital of al-Anbar province, sparked a gunfight that killed his brother and a member of the security force.",
-      "bodyKo": "**전직 이라크 의원 알알와니, 레바논에서 4일간 실종**\n\n샤팍뉴스-베이루트 전직 이라크 의원 아흐메드 알알와니가 레바논에서 4일간 실종된 상태로, 휴대폰이 꺼져 있고 경호원들도 연락할 수 없는 것으로 알려졌다고 샤팍뉴스 소식통이 전했다.\n\n레바논 보안당국이 수색에 나섰지만 그의 소재와 실종 경위는 여전히 불명확한 상태다. 소식통들은 신원금을 노린 납치인지 다른 사유인지 아직 명확하지 않다고 말했다.\n\n대사관은 바그다드의 고위 당국자들과 연락하며 사건을 추적 중이라고 소식통들이 덧붙였다.\n\n이라크 당국은 2025년 4월 약 10년간의 구금 끝에 알알와니를 석방했다. 알이라키야 명부 소속 전직 의원인 그는 2013년 12월 당시 누리 알말리키 총리에 반대하는 시위를 주도한 후 체포됐다. 안바르주의 주도인 라마디의 그의 집에 대한 급습 과정에서 총격전이 벌어져 그의 형과 보안요원 1명이 사망했다.",
+      "titleKo": "전직 이라크 의원, 베이루트에서 피살",
+      "url": "https://thenewregion.com/posts/7070",
+      "body": "According to his own website, Ahmed al-Alwani \"was known for his firm opposition to foreign interference in Iraqi affairs, particularly Iranian interference. He strongly criticized Iraqi politicians whom he considered loyal to Iran and advocated for Iraqi sovereignty.\"\nERBIL, Kurdistan Region of Iraq - A former Iraqi MP and staunch critic of Iranian influence in Baghdad was found murdered at an apartment in Beirut, Lebanese state media reported Tuesday, with preliminary reports indicating that one of three potential suspects has been arrested.\nAhmed al-Alwani, a Sunni Iraqi who served in parliament between 2005 and 2014, was found in the Lebanese capital's Tariq al-Jadida neighborhood on Monday after being strangled, AFP reported, citing a judicial official.\nThe same source affirmed that a Lebanese national is currently in custody in relation to the killing, while two Syrian citizens suspected of involvement remain at large.",
+      "bodyKo": "그의 개인 웹사이트에 따르면 아흐메드 알-알와니는 \"특히 이란의 간섭에 대한 이라크 문제의 외국 개입에 대해 확고한 반대로 알려져 있었다. 그는 이란에 충성한다고 생각하는 이라크 정치인들을 강하게 비판했으며 이라크의 주권을 옹호했다.\"\n\n아르빌, 이라크 쿠르드 지역 - 바그다드에서 이란의 영향력을 강하게 비판해온 전직 이라크 의원이 베이루트의 한 아파트에서 살해진 채 발견됐다고 레바논 국영 언론이 화요일 보도했으며, 초기 보도에 따르면 3명의 용의자 중 1명이 체포된 것으로 나타났다.\n\n2005년부터 2014년까지 의회에서 활동한 수니파 이라크인 아흐메드 알-알와니는 월요일 레바논 수도의 타리크 알-자디다 지역에서 목이 졸려 숨진 채 발견됐다고 AFP가 사법 관계자를 인용해 보도했다.\n\n같은 소식통은 레바논 국적자가 현재 이 살인 사건과 관련해 구금 중이며, 연루 혐의를 받는 시리아 국적자 2명은 도주 중인 것으로 확인됐다고 밝혔다.",
       "tried": true,
-      "count": 4,
+      "count": 12,
       "sources": [
+        "Al Jazeera",
+        "The New Region",
+        "Naharnet",
         "Anadolu Ajansı",
-        "Rudaw",
-        "شفق نيوز"
+        "شفق نيوز",
+        "Middle East Online"
       ],
       "related": [
+        {
+          "titleKo": "전직 이라크 의원 아흐메드 알-알와니, 베이루트에서 시신으로 발견",
+          "source": "Al Jazeera",
+          "link": "https://www.aljazeera.com/news/2026/11/11/former-iraqi-awmaker-ahmed-al-alwani-found-dead-in-beirut"
+        },
+        {
+          "titleKo": "이라크 전직 의원, 베이루트에서 목졸려 숨진 채 발견",
+          "source": "Naharnet",
+          "link": "https://www.naharnet.com/stories/en/323688-iraqi-ex-lawmaker-found-strangled-to-death-in-beirut"
+        },
         {
           "titleKo": "전직 이라크 의원 베이루트에서 피살, 수사 개시",
           "source": "Anadolu Ajansı",
           "link": "https://www.aa.com.tr/en/middle-east/former-iraqi-lawmaker-killed-in-beirut-probe-launched/4119598"
         },
         {
-          "titleKo": "전직 이라크 수니파 의원 베이루트에서 시신으로 발견",
-          "source": "Rudaw",
-          "link": "https://rudaw.net/english/categories/iraq/1080111"
+          "titleKo": "전직 이라크 의원 알알와니, 레바논에서 실종",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Iraq/Former-Iraqi-MP-Al-Alwani-missing-in-Lebanon"
         },
         {
-          "titleKo": "전직 이라크 의원 아흐메드 알-알와니, 베이루트 아파트에서 시신으로 발견",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Security/Former-Iraqi-MP-Ahmed-Al-Alwani-found-dead-in-Beirut-apartment"
+          "titleKo": "베이루트 전직 이라크 정치인 살해 사건 미스터리",
+          "source": "Middle East Online",
+          "link": "https://middle-east-online.com/en/mystery-surrounds-killing-former-iraqi-politician-beirut"
         }
       ],
       "tag": "기타",
@@ -45,69 +58,88 @@
       }
     },
     {
-      "title": "Mystery surrounds killing of former Iraqi politician in Beirut",
-      "source": "Middle East Online",
-      "link": "https://middle-east-online.com/en/mystery-surrounds-killing-former-iraqi-politician-beirut",
-      "date": "2026-11-10T23:19:13.000Z",
+      "title": "Warrant, smuggling claims widen Iraqi PM-Kata'ib Hezbollah feud",
+      "source": "Amwaj.media",
+      "link": "https://amwaj.media/en/media-monitor/warrant-and-smuggling-claims-widen-iraqi-pms-kataib-hezbollah-feud",
+      "date": "2026-11-11T02:42:29.000Z",
       "lang": "en",
-      "titleKo": "베이루트 전직 이라크 정치인 살해 사건 미스터리",
-      "url": "https://middle-east-online.com/en/mystery-surrounds-killing-former-iraqi-politician-beirut",
-      "body": "BEIRUT — The Iraqi Embassy in Beirut announced on Tuesday evening that the body of former Iraqi Member of Parliament Ahmed al-Alwani had been officially identified. He was found murdered inside his apartment in the Tariq al-Jadideh district of the Lebanese capital, after his family lost contact with him for four days. The circumstances and motives behind the incident remain unknown.\nA source at Iraq’s Ministry of Foreign Affairs said the Iraqi Embassy in Beirut had completed the identification of al-Alwani’s body following the necessary examinations and formal procedures. The source noted that Lebanese authorities had begun the procedures to investigate the incident and determine its circumstances.\nAccording to the source, the first indications emerged when neighbours in the residential building reported an unusual smell coming from an apartment on the twelfth floor. This prompted Lebanese security forces to intervene and open the apartment, where they found the body of the former Memb",
-      "bodyKo": "바이루트 — 이라크 대사관은 화요일 저녁 전직 이라크 의원 아흐메드 알알와니의 시신이 공식 확인됐다고 발표했다. 그는 레바논 수도의 타리크 알자디드 지구 아파트 내에서 살해된 채 발견됐으며, 가족과 4일간 연락이 끊긴 후였다. 사건의 정황과 동기는 여전히 불명확하다.\n\n이라크 외무부 관계자는 이라크 대사관이 필요한 검사와 공식 절차를 거쳐 알알와니의 시신 확인을 완료했다고 밝혔다. 관계자는 레바논 당국이 사건을 조사하고 정황을 파악하기 위한 절차를 시작했다고 덧붙였다.\n\n관계자에 따르면 처음 단서는 주거용 건물의 이웃들이 12층 아파트에서 나는 이상한 냄새를 신고하면서 드러났다. 이에 레바논 보안군이 개입해 아파트 문을 열었고, 그곳에서 전직 의원의 시신을 발견했다.",
+      "titleKo": "영장·밀수 혐의로 이라크 총리-카타이브 헤즈볼라 갈등 심화",
+      "url": "https://amwaj.media/en/media-monitor/warrant-and-smuggling-claims-widen-iraqi-pms-kataib-hezbollah-feud",
+      "body": "",
+      "bodyKo": "",
       "tried": true,
       "count": 1,
       "sources": [
-        "Middle East Online"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraqi MP who opposed Iran found dead in Beirut after reported kidnapping",
-      "source": "The Jerusalem Post",
-      "link": "https://www.jpost.com/middle-east/article-914526",
-      "date": "2026-11-10T22:35:12.000Z",
-      "lang": "en",
-      "titleKo": "이란 반대 입장 이라크 의원, 납치 후 베이루트에서 시신으로 발견",
-      "url": "https://www.jpost.com/middle-east/article-914526",
-      "body": "Al-Alwani, 57, was a Sunni Iraqi politician from Anbar province who had previously spent more than a decade in prison under a death sentence before being released in 2025.",
-      "bodyKo": "알와니는 57세의 순니파 이라크 정치인으로 안바르주 출신이며, 사형 선고를 받고 10년 이상 감옥에 있다가 2025년에 석방됐다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "The Jerusalem Post"
+        "Amwaj.media"
       ],
       "related": [],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
-        "line": "먼 지역 치안 사건 (안바르) — 현장 직접 영향 낮음",
+        "line": "현장 직접 영향 낮음",
         "act": "",
-        "place": "안바르",
-        "km": 198
+        "place": "",
+        "km": null
       }
     },
     {
-      "title": "العثور على جثة النائب العراقي السابق أحمد علواني في لبنان: ما يجب معرفته - Al-Monitor",
-      "source": "Al-Monitor",
-      "link": "https://www.al-monitor.com/ar/originals/2026/11/althwr-ly-jtht-alnayb-alraqy-alsabq-ahmd-lwany-fy-lbnan-ma-yjb-mrfth",
-      "date": "2026-11-10T22:21:23.000Z",
-      "lang": "ar",
-      "titleKo": "전직 이라크 의원 아흐마드 알와니의 시신, 레바논에서 발견 - Al-Monitor",
-      "url": "https://www.al-monitor.com/ar/originals/2026/11/althwr-ly-jtht-alnayb-alraqy-alsabq-ahmd-lwany-fy-lbnan-ma-yjb-mrfth",
-      "body": "كان أحمد العلواني قائداً بارزاً للاحتجاجات المناهضة للحكومة التي قام بها السنة العراقيون في عام 2013، وقد أُطلق سراحه من السجن العام الماضي.\nعُثر على جثة النائب العراقي السابق أحمد العلواني في بيروت مساء الثلاثاء. وتجري التحقيقات حالياً في ملابسات وفاة العلواني، الذي كان شخصية بارزة في احتجاجات عام 2013 ضد الحكومة.\nما حدث: وردت أنباء عن فقدان العلواني حوالي الساعة 8:30 مساءً بالتوقيت المحلي (1:30 مساءً بتوقيت شرق الولايات المتحدة)، وأعلنت السلطات لاحقاً وفاته. وصرح السفير العراقي لدى لبنان، محمد رضا الحسيني، لوكالة الأنباء العراقية الرسمية، بأن بغداد تنتظر تقريراً من السلطات اللبنانية بشأن ملابسات وفاته.\nأفادت الوكالة الوطنية للإعلام اللبنانية الرسمية بأن القاضي أحمد رامي الحاج يتولى القضية.\nأظهرت لقطات على وسائل التواصل الاجتماعي اللبنانية والعراقية، بحسب ما ورد، اكتشاف جثة العلواني في حمام أحد المنازل.",
-      "bodyKo": "아흐메드 알아우아니 전 이라크 의원, 베이루트에서 사망 발견\n\n아흐메드 알아우아니는 2013년 이라크 수니파가 벌인 반정부 시위의 저명한 지도자였으며, 지난해 감옥에서 석방됐다.\n\n전 이라크 의원 아흐메드 알아우아니의 시신이 화요일 저녁 베이루트에서 발견됐다. 2013년 정부 반대 시위에서 저명한 인물이었던 알아우아니의 사망 경위에 대한 수사가 현재 진행 중이다.\n\n발생 경위: 알아우아니가 현지시간 오후 8시 30분경(미국 동부시간 오후 1시 30분경) 실종됐다는 소식이 접수됐으며, 당국은 이후 그의 사망을 발표했다. 레바논 주재 이라크 대사 무함마드 라다 알하시미는 이라크 공식 통신사에 바그다드가 레바논 당국으로부터 사망 경위에 관한 보고서를 기다리고 있다고 밝혔다.\n\n레바논 공식 국가통신사는 판사 아흐메드 라미 알하즈가 사건을 담당하고 있다고 보도했다.\n\n레바논과 이라크 소셜미디어에 공개된 영상에 따르면 알아우아니의 시신이 한 주택의 욕실에서 발견됐다.",
+      "title": "Attack targets Khor Mor gas field in Iraqi Kurdistan",
+      "source": "FDD's Long War Journal",
+      "link": "https://www.longwarjournal.org/archives/2026/11/attack-targets-khor-mor-gas-field-in-iraqi-kurdistan.php",
+      "date": "2026-11-11T01:43:27.000Z",
+      "lang": "en",
+      "titleKo": "이라크 쿠르디스탄 호르모르 가스전 공격 대상",
+      "url": "https://www.longwarjournal.org/archives/2026/11/attack-targets-khor-mor-gas-field-in-iraqi-kurdistan.php",
+      "body": "A new “suspected drone attack” on the Khor Mor gas field in Iraq's Kurdistan Region has heightened tensions as Iraqi Prime Minister Ali al Zaidi confronts Iranian-backed militias over their weapons, economic networks, and influence. The developments come amid growing US pressure on Baghdad to restrict border crossings with Iran, renewed diplomatic contacts between Iraqi and Iranian officials, and efforts to bring armed factions under state control.\nThe Khor Mor gas field in the Kurdistan Region of northern Iraq was hit by a “suspected drone attack” on November 8. Dana Gas, a UAE-based company that operates the field, said that the incident caused a fire. Videos showed smoke and flames at the facility.\n“The blazes have now been extinguished and no injury was recorded among personnel, the company said,” Rudaw Media Network reported on the morning of November 9. The site has been attacked numerous times in the past , and Iran-backed Iraqi militias have been blamed for the operations.",
+      "bodyKo": "**쿠르디스탄 지역 가스전 드론 공격...이란 민병대와 긴장 고조**\n\n이라크 쿠르디스탄 지역의 호르모르 가스전에 대한 새로운 \"의심 드론 공격\"이 발생하면서 긴장이 고조되고 있다. 알리 알자이디 이라크 총리가 이란 지원 민병대의 무기, 경제 네트워크, 영향력을 놓고 대면하고 있는 가운데 벌어진 일이다. 이는 바그다드에 이란과의 국경 통로 제한을 압박하는 미국의 압력 증가, 이라크와 이란 관계자 간 외교 접촉 재개, 무장 세력을 국가 통제 아래 두려는 노력 속에서 나타났다.\n\n북부 이라크 쿠르디스탄 지역의 호르모르 가스전이 11월 8일 \"의심 드론 공격\"을 받았다. 이 가스전을 운영하는 아랍에미리트 기반 기업 다나 가스는 사건으로 인해 화재가 발생했다고 밝혔다. 영상에는 시설에서 연기와 화염이 피어오르는 모습이 담겼다.\n\n루다우 미디어 네트워크는 11월 9일 아침 \"화재는 현재 진화됐으며 인원 중 피해자는 없었다\"고 회사의 발표를 보도했다. 이 시설은 과거 여러 차례 공격을 받았으며, 이란 지원 이라크 민병대가 이런 작전의 배후로 지목돼 왔다.",
+      "tried": true,
+      "count": 4,
+      "sources": [
+        "World Oil",
+        "FDD's Long War Journal",
+        "964media",
+        "TOKENPOST"
+      ],
+      "related": [
+        {
+          "titleKo": "쿠르디스탄 가스시설·아드녹 선박 공격...지역 에너지 위험 고조",
+          "source": "World Oil",
+          "link": "https://www.worldoil.com/news/2026/11/10/attacks-hit-kurdistan-gas-facility-adnoc-l-s-vessel-as-regional-energy-risks-mount/"
+        },
+        {
+          "titleKo": "이라크, 호르모르 공격 발사지점과 관련자 파악했다고 발표",
+          "source": "964media",
+          "link": "https://en.964media.com/55070/"
+        },
+        {
+          "titleKo": "드론 공격으로 이라크 호르모르 가스전 생산 중단",
+          "source": "TOKENPOST",
+          "link": "https://www.tokenpost.com/news/technology/53048"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "김승연 뚝심 '여의도 6배' 이라크 신도시, 1500억원 회수로 사업정상화 발판 마련",
+      "source": "땅집고",
+      "link": "https://realty.chosun.com/site/data/html_dir/2026/11/11/2026111101075.html",
+      "date": "2026-11-11T01:07:43.000Z",
+      "lang": "ko",
+      "titleKo": "김승연 뚝심 '여의도 6배' 이라크 신도시, 1500억원 회수로 사업정상화 발판 마련",
+      "url": "https://realty.chosun.com/site/data/html_dir/2026/11/11/2026111101075.html",
+      "body": "[땅집고] 대한민국 해외 건설 역사상 최대 규모의 프로젝트로 꼽히는 이라크 비스마야 신도시 사업이 분수령을 맞았다. 이라크 정부의 재정난과 공사비 지급 지연으로 ‘사업 철수’라는 초강수를 뒀던 한화 건설부문이 미수금..",
+      "bodyKo": "[땅집고] 대한민국 해외 건설 역사상 최대 규모의 프로젝트로 꼽히는 이라크 비스마야 신도시 사업이 분수령을 맞았다. 이라크 정부의 재정난과 공사비 지급 지연으로 ‘사업 철수’라는 초강수를 뒀던 한화 건설부문이 미수금..",
       "tried": true,
       "count": 1,
       "sources": [
-        "Al-Monitor"
+        "땅집고"
       ],
       "related": [],
       "tag": "기타",
@@ -115,8 +147,33 @@
         "lv": "g",
         "line": "현장 직접 영향 낮음",
         "act": "",
-        "place": "",
-        "km": null
+        "place": "비스마야",
+        "km": 0
+      }
+    },
+    {
+      "title": "العراق اليوم | بغداد يعيد فتح منفذ الشيب ويغلق منفذ مندلي في ديالى",
+      "source": "تسنیم",
+      "link": "https://www.tasnimnews.ir/ar/news/2026/11/11/3745566/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%DB%8C%D9%88%D9%85-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%DB%8C%D8%B9%DB%8C%D8%AF-%D9%81%D8%AA%D8%AD-%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%DB%8C%D8%A8-%D9%88%DB%8C%D8%BA%D9%84%D9%82-%D9%85%D9%86%D9%81%D8%B0-%D9%85%D9%86%D8%AF%D9%84%DB%8C-%D9%81%DB%8C-%D8%AF%DB%8C%D8%A7%D9%84%D9%89/amp",
+      "date": "2026-11-10T23:30:20.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 오늘",
+      "url": "https://www.tasnimnews.ir/ar/news/2026/11/11/3745566/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%DB%8C%D9%88%D9%85-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%DB%8C%D8%B9%DB%8C%D8%AF-%D9%81%D8%AA%D8%AD-%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%DB%8C%D8%A8-%D9%88%DB%8C%D8%BA%D9%84%D9%82-%D9%85%D9%86%D9%81%D8%B0-%D9%85%D9%86%D8%AF%D9%84%DB%8C-%D9%81%DB%8C-%D8%AF%DB%8C%D8%A7%D9%84%D9%89/amp",
+      "body": "أعلن رئيس هيئة المنافذ الحدودية العراقية، عمر الوائلي، إعادة افتتاح منفذ الشيب الحدودي مع إيران في محافظة ميسان، اعتباراً من صباح اليوم الثلاثاء، فيما تقرر إغلاق منفذ مندلي في محافظة ديالى بصورة مؤقتة اعتباراً من الجمعة المقبل.\nتتواصل الضغوط الاميركية على العراق وعلاقته بالجمهورية الاسلامية الايرانية، فبعد طلب مبعوث ترامب الاخير بغلق جميع المنافذ الحدودية العراقية مع ايران، أعلنت هيئة المنافذ الحدودية العراقية عن إعادة افتتاح منفذ الشيب الحدودي مع إيران صباح اليوم الثلاثاء، بعد استكمال المتطلبات الفنية والإجراءات اللازمة لضمان انسيابية حركة المسافرين والبضائع، وذلك بعد إغلاق استمر نحو 3 أسابيع.\nوفي المقابل.. تقرر إغلاق منفذ مندلي الحدودي بصورة مؤقتة اعتباراً من يوم الجمعة القادم في تمام الساعة الثامنة صباحاً، وذلك لغرض استكمال أعمال الصيانة والتهيئة الفنية والخدمية ولمواجهة الظروف الجوية وموسم الأمطار.",
+      "bodyKo": "**이라크, 셰이브 국경통로 재개…만델리는 임시 폐쇄**\n\n이라크 국경통로청 청장 오마르 알와일리는 화요일 아침부터 미산주의 셰이브 이란 국경통로를 재개한다고 발표했다. 한편 디얄라주의 만델리 통로는 다음주 금요일부터 임시 폐쇄하기로 결정했다.\n\n미국의 이라크에 대한 압박이 계속되는 가운데, 트럼프 특사가 이라크의 모든 이란 국경통로 폐쇄를 요청한 이후 이라크 국경통로청은 화요일 아침 셰이브 국경통로를 재개한다고 발표했다. 이는 여행객과 화물의 원활한 이동을 보장하기 위해 기술적 요구사항과 필요한 절차를 완료한 후의 조치로, 약 3주간 지속된 폐쇄 이후의 재개다.\n\n이와 함께 만델리 국경통로는 다음주 금요일 오전 8시부터 임시 폐쇄하기로 결정했다. 유지보수 작업과 기술·서비스 준비를 완료하고 악천후와 우기에 대응하기 위한 조치다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "تسنیم"
+      ],
+      "related": [],
+      "tag": "휴일·행사",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
       }
     },
     {
@@ -127,14 +184,20 @@
       "lang": "en",
       "titleKo": "이라크 위기 대응, 보안과 자연재해로 인한 압력 증가",
       "url": "https://shafaq.com/en/Report/Iraq-s-crisis-response-faces-mounting-pressure-from-security-and-natural-disasters",
-      "body": "Shafaq News&nbsp; From political tensions and security threats to regional instability and natural disasters, recurring crises continue to measure Iraq&rsquo;s ability to protect its people, sustai\nEach new emergency puts the government&rsquo;s crisis management committees, operations rooms, and field response centers into focus, highlighting whether these institutions can anticipate and prepare for crises or remain largely focused on responding after damage has occurred.\nStrategic expert Ahmed Al-Sharifi supports forming crisis management committees, describing them as an established mechanism in democratic countries for addressing military, security, economic, and natural disaster challenges. However, he stressed that their success depends on unified state policies and political consensus over the management of strategic issues.",
+      "body": "Shafaq News From political tensions and security threats to regional instability and natural disasters, recurring crises continue to measure Iraq&rsquo;s ability to protect its people, sustai\nEach new emergency puts the government&rsquo;s crisis management committees, operations rooms, and field response centers into focus, highlighting whether these institutions can anticipate and prepare for crises or remain largely focused on responding after damage has occurred.\nStrategic expert Ahmed Al-Sharifi supports forming crisis management committees, describing them as an established mechanism in democratic countries for addressing military, security, economic, and natural disaster challenges. However, he stressed that their success depends on unified state policies and political consensus over the management of strategic issues.",
       "bodyKo": "정치적 긴장과 보안 위협에서 지역 불안정과 자연재해에 이르기까지, 반복되는 위기들은 이라크 정부가 국민을 보호하고 지속 가능성을 유지할 수 있는 능력을 계속해서 시험하고 있다.\n\n새로운 긴급 상황이 발생할 때마다 정부의 위기관리위원회, 작전실, 현장 대응센터가 주목을 받으며, 이러한 기관들이 위기를 예측하고 준비할 수 있는지, 아니면 피해 발생 후 대응에만 주력하는지가 드러난다.\n\n전략 전문가 아흐메드 알샤리피는 위기관리위원회 구성을 지지하며, 이를 군사, 보안, 경제, 자연재해 문제에 대처하기 위한 민주주의 국가들의 확립된 메커니즘이라고 설명했다. 다만 그는 이들의 성공이 통일된 국가 정책과 전략적 문제 관리에 대한 정치적 합의에 달려 있다고 강조했다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "이라크 위기 대응, 보안과 자연재해로 인한 압력 증가",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Report/Iraq-s-crisis-response-faces-mounting-pressure-from-security-and-natural-disasters"
+        }
+      ],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -195,15 +258,15 @@
       }
     },
     {
-      "title": "Iraq FM Discusses Hormuz Strait Closure, Global Energy Security at Paris Peace Forum",
-      "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/en/story/952202/iraq-fm-discusses-hormuz-strait-closure-global-energy-security-at-paris-peace-forum",
+      "title": "Iraqi FM participates in Paris Peace Forum",
+      "source": "IraqiNews",
+      "link": "https://www.iraqinews.com/iraq/iraqi-fm-participates-in-paris-peace-forum/",
       "date": "2026-11-10T20:26:00.000Z",
       "lang": "en",
-      "titleKo": "이라크 외무장관, 파리 평화포럼에서 호르무즈 해협 폐쇄·글로벌 에너지 안보 논의",
-      "url": "https://www.kurdistan24.net/en/story/952202/iraq-fm-discusses-hormuz-strait-closure-global-energy-security-at-paris-peace-forum",
-      "body": "Hussein outlined the challenges facing Iraq's oil exports amid the war and military operations in the Strait of Hormuz region, highlighting their implications for international trade flows and global supplies of oil, gas, and critical minerals.\nERBIL (Kurdistan24) &ndash; Iraqi Foreign Minister Fuad Hussein on Tuesday discussed the impact of the Strait of Hormuz's closure on global energy markets and Iraq's oil exports during the ninth edition of the Paris Peace Forum.\nAccording to a statement from the Ministry of Foreign Affairs, Hussein attended a workshop titled &ldquo;The Repercussions of the Closure of the Strait of Hormuz and Its Impact on Global Energy Markets,&rdquo; alongside heads of state and government, foreign ministers, and other international officials.\nDuring the discussion, Hussein outlined the challenges facing Iraq's oil exports amid the war and military operations in the Strait of Hormuz region, highlighting their implications for international trade flows and globa",
-      "bodyKo": "**호르무즈 해협 폐쇄, 이라크 석유 수출에 영향**\n\n후아드 후세인 이라크 외무장관은 9차 파리평화포럼에서 호르무즈 해협 폐쇄가 글로벌 에너지 시장과 이라크 석유 수출에 미치는 영향에 대해 논의했다.\n\n외무부 성명에 따르면 후세인 장관은 국가 및 정부 수반, 외무장관, 기타 국제 관계자들과 함께 '호르무즈 해협 폐쇄와 글로벌 에너지 시장에 미치는 영향'이라는 제목의 워크숍에 참석했다.\n\n논의 과정에서 후세인 장관은 호르무즈 해협 지역의 전쟁과 군사 작전 속에서 이라크 석유 수출이 직면한 과제를 설명했으며, 이것이 국제 무역 흐름과 석유, 가스, 전략 광물의 글로벌 공급에 미치는 영향을 강조했다.",
+      "titleKo": "이라크 외무장관, 파리 평화포럼 참석",
+      "url": "https://www.iraqinews.com/iraq/iraqi-fm-participates-in-paris-peace-forum/",
+      "body": "Iraqi FM participates in Paris Peace Forum\nIraqi Foreign Minister Fuad Hussein in the French capital, Paris, to participate in the 9th annual Paris Peace Forum.\nBaghdad (IraqiNews.com) – Iraqi Foreign Minister Fuad Hussein has arrived in the French capital to participate in the 9 th annual Paris Peace Forum, where he will engage in discussions on key regional and international challenges.\nHussein said in a statement on Tuesday that he will exchange perspectives and explore approaches to de-escalate tensions and advance peace and stability.\nThe Iraqi foreign minister will present Iraq’s perspective on regional developments, emphasizing the importance of dialogue, diplomacy, and political solutions in addressing crises.\nHussein is expected to meet with international officials and partners to discuss strategies to strengthen cooperation, enhance coordination, and advance shared interests.",
+      "bodyKo": "이라크 외무장관, 파리 평화포럼 참석\n\n이라크 외무장관 푸아드 후세인이 프랑스 수도 파리를 방문해 제9차 연례 파리 평화포럼에 참석했다.\n\n바그다드(이라크뉴스닷컴) – 이라크 외무장관 푸아드 후세인이 프랑스 수도에 도착해 제9차 연례 파리 평화포럼에 참석했다. 그는 주요 지역 및 국제 현안에 대한 논의에 참여할 예정이다.\n\n후세인은 화요일 성명에서 관점을 교환하고 긴장 완화 및 평화와 안정 증진을 위한 방안을 모색할 것이라고 밝혔다.\n\n이라크 외무장관은 지역 정세에 대한 이라크의 관점을 제시하면서 위기 해결에 있어 대화, 외교, 정치적 해결책의 중요성을 강조할 예정이다.\n\n후세인은 국제 관계자 및 파트너들과 만나 협력 강화, 조율 개선, 공동 이익 증진을 위한 전략을 논의할 것으로 예상된다.",
       "tried": true,
       "count": 2,
       "sources": [
@@ -212,9 +275,9 @@
       ],
       "related": [
         {
-          "titleKo": "이라크 외무장관, 파리 평화포럼 참석",
-          "source": "IraqiNews",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5yc3RrYzlFTXgwTVdCTUZ1ZTgyUHowcjZtNndRM0ZXWjAySjl6TGRlVDAzWHVUdkJEQ0hPU2d3VklWOUVlUVI3ZmlueElkX3RYOTlyVFFOMFBpVGpxRkpNRGVsTXhpdUY0c2R4SEpFdWdyNlRxZ3I3Z2h1T3BlQnM?oc=5"
+          "titleKo": "이라크 외무장관, 파리 평화포럼에서 호르무즈 해협 폐쇄·글로벌 에너지 안보 논의",
+          "source": "Kurdistan24",
+          "link": "https://www.kurdistan24.net/en/story/952202/iraq-fm-discusses-hormuz-strait-closure-global-energy-security-at-paris-peace-forum"
         }
       ],
       "tag": "치안·테러",
@@ -222,8 +285,8 @@
         "lv": "g",
         "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
         "act": "",
-        "place": "에르빌",
-        "km": 338
+        "place": "",
+        "km": null
       }
     },
     {
@@ -277,52 +340,21 @@
       }
     },
     {
-      "title": "Attack targets Khor Mor gas field in Iraqi Kurdistan",
-      "source": "FDD's Long War Journal",
-      "link": "https://www.longwarjournal.org/archives/2026/11/attack-targets-khor-mor-gas-field-in-iraqi-kurdistan.php",
+      "title": "Iraq vows penalties on perpetrators of Khor Mor attack; air defense deployment to ‘50 locations’",
+      "source": "Rudaw",
+      "link": "https://rudaw.net/english/categories/iraq/1080105",
       "date": "2026-11-10T18:11:36.000Z",
       "lang": "en",
-      "titleKo": "이라크 쿠르디스탄 호르모르 가스전 공격 대상",
-      "url": "https://www.longwarjournal.org/archives/2026/11/attack-targets-khor-mor-gas-field-in-iraqi-kurdistan.php",
-      "body": "A new “suspected drone attack” on the Khor Mor gas field in Iraq's Kurdistan Region has heightened tensions as Iraqi Prime Minister Ali al Zaidi confronts Iranian-backed militias over their weapons, economic networks, and influence. The developments come amid growing US pressure on Baghdad to restrict border crossings with Iran, renewed diplomatic contacts between Iraqi and Iranian officials, and efforts to bring armed factions under state control.\nThe Khor Mor gas field in the Kurdistan Region of northern Iraq was hit by a “suspected drone attack” on November 8. Dana Gas, a UAE-based company that operates the field, said that the incident caused a fire. Videos showed smoke and flames at the facility.\n“The blazes have now been extinguished and no injury was recorded among personnel, the company said,” Rudaw Media Network reported on the morning of November 9. The site has been attacked numerous times in the past , and Iran-backed Iraqi militias have been blamed for the operations.",
-      "bodyKo": "**쿠르디스탄 지역 가스전 드론 공격...이란 민병대와 긴장 고조**\n\n이라크 쿠르디스탄 지역의 호르모르 가스전에 대한 새로운 \"의심 드론 공격\"이 발생하면서 긴장이 고조되고 있다. 알리 알자이디 이라크 총리가 이란 지원 민병대의 무기, 경제 네트워크, 영향력을 놓고 대면하고 있는 가운데 벌어진 일이다. 이는 바그다드에 이란과의 국경 통로 제한을 압박하는 미국의 압력 증가, 이라크와 이란 관계자 간 외교 접촉 재개, 무장 세력을 국가 통제 아래 두려는 노력 속에서 나타났다.\n\n북부 이라크 쿠르디스탄 지역의 호르모르 가스전이 11월 8일 \"의심 드론 공격\"을 받았다. 이 가스전을 운영하는 아랍에미리트 기반 기업 다나 가스는 사건으로 인해 화재가 발생했다고 밝혔다. 영상에는 시설에서 연기와 화염이 피어오르는 모습이 담겼다.\n\n루다우 미디어 네트워크는 11월 9일 아침 \"화재는 현재 진화됐으며 인원 중 피해자는 없었다\"고 회사의 발표를 보도했다. 이 시설은 과거 여러 차례 공격을 받았으며, 이란 지원 이라크 민병대가 이런 작전의 배후로 지목돼 왔다.",
+      "titleKo": "이라크, 호르모르 공격 가해자에 처벌 약속…방공망 50개 지점 배치",
+      "url": "https://rudaw.net/english/categories/iraq/1080105",
+      "body": "The Iraqi prime minister’s spokesperson on Tuesday vowed to identify perpetrators of the attack on Khor Mor - the Kurdistan Region’s largest gas field - and refer them to the judiciary, adding that th",
+      "bodyKo": "이라크 총리 대변인은 화요일 쿠르디스탄 지역 최대 가스전인 호르모르에 대한 공격의 가해자를 적발해 사법부에 회부하겠다고 다짐했으며, 이어서",
       "tried": true,
-      "count": 6,
+      "count": 1,
       "sources": [
-        "Rudaw",
-        "FDD's Long War Journal",
-        "964media",
-        "World Oil",
-        "TOKENPOST",
-        "المنشر الإخباري"
+        "Rudaw"
       ],
-      "related": [
-        {
-          "titleKo": "이라크, 호르모르 공격 가해자에 처벌 약속…방공망 50개 지점 배치",
-          "source": "Rudaw",
-          "link": "https://rudaw.net/english/categories/iraq/1080105"
-        },
-        {
-          "titleKo": "이라크, 호르모르 공격 발사지점과 관련자 파악했다고 발표",
-          "source": "964media",
-          "link": "https://en.964media.com/55070/"
-        },
-        {
-          "titleKo": "쿠르디스탄 지역 호르모르 유전, 드론 공격 의심으로 생산 중단",
-          "source": "World Oil",
-          "link": "https://www.worldoil.com/news/2026/11/10/suspected-drone-attack-halts-production-at-khor-mor-in-kurdistan-region-of-iraq/"
-        },
-        {
-          "titleKo": "드론 공격으로 이라크 호르모르 가스전 생산 중단",
-          "source": "TOKENPOST",
-          "link": "https://www.tokenpost.com/news/technology/53048"
-        },
-        {
-          "titleKo": "드론 공격으로 쿠르 무르 가스전 생산 중단.. 이라크 쿠르디스탄 70% 이상 전력난",
-          "source": "المنشر الإخباري",
-          "link": "https://elmanshar.com/2026/11/09/%D9%87%D8%AC%D9%88%D9%85-%D8%A8%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A9-%D9%8A%D9%88%D9%82%D9%81-%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D8%AD%D9%82%D9%84-%D8%AE%D9%88%D8%B1-%D9%85%D9%88%D8%B1-%D9%84%D9%84%D8%BA/"
-        }
-      ],
+      "related": [],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -414,15 +446,15 @@
       }
     },
     {
-      "title": "Iraqi Prime Minister Ali al-Zaidi weighs next moves on Iran border",
-      "source": "The Jerusalem Post",
-      "link": "https://www.jpost.com/middle-east/article-914427",
+      "title": "Between Iran, Iraq and a hard place: Iraq’s prime minister weighs next moves",
+      "source": "Yahoo",
+      "link": "https://www.yahoo.com/news/world/articles/between-iran-iraq-hard-place-102046908.html",
       "date": "2026-11-10T16:06:07.000Z",
       "lang": "en",
-      "titleKo": "이라크 총리 알리 알자이디, 이란 국경 문제 다음 조치 검토",
-      "url": "https://www.jpost.com/middle-east/article-914427",
-      "body": "The question for Iraq’s prime minister this week will be whether he will continue on his path of pressure on the militias, or if he will back down.",
-      "bodyKo": "이라크 총리가 이번 주에 직면한 과제는 민병대에 대한 압박 정책을 계속 추진할지, 아니면 물러날지 하는 것이다.",
+      "titleKo": "이란, 이라크 사이에서 고민하는 이라크 총리의 다음 수순",
+      "url": "https://www.yahoo.com/news/world/articles/between-iran-iraq-hard-place-102046908.html",
+      "body": "The question for Iraq’s prime minister this week will be whether he will continue on his path of pressure on the militias, or if he will back down. Reports on Monday indicated that Iraq was closing th...\nThe question for Iraq's prime minister this week will be whether he will continue on his path of pressure on the militias, or if he will back down.\nIraq is a key battlefield for Iran. It has numerous militias in Iraq that it influences, and it has carried out more than 1,000 attacks in Iraq since February.\nEven as Iraq was closing one crossing, the country decided to reopen the Sheeb border crossing with Iran following weeks of closure, Rudaw media reported.\nThe border crossing battle is just one place where Iraq's Prime Minister Ali al-Zaidi now weighs his next moves. He came to power earlier this year after an election in Iraq in November 2025 left the country uncertain for months. Al-Zaidi has received support from US President Donald Trump .",
+      "bodyKo": "이라크 총리가 이번 주 직면할 과제는 민병대에 대한 압박 정책을 계속 추진할지, 아니면 물러날지 여부다.\n\n이라크는 이란의 주요 전장이다. 이란은 이라크 내 수많은 민병대를 영향력 아래 두고 있으며, 2월 이후 이라크에서 1,000회 이상의 공격을 감행했다.\n\n이라크가 한 국경 통로를 폐쇄하는 와중에도 이 나라는 수주간의 폐쇄 이후 이란과의 시브 국경 통로를 재개하기로 결정했다고 루다우 미디어가 보도했다.\n\n국경 통로를 둘러싼 싸움은 이라크 총리 알리 알자이디가 다음 행보를 저울질하고 있는 여러 현장 중 하나일 뿐이다. 알자이디는 2025년 11월 이라크 총선 이후 수개월간 국가가 불확실성에 빠져 있다가 올해 초 권력을 잡았다. 알자이디는 도널드 트럼프 미국 대통령으로부터 지지를 받고 있다.",
       "tried": true,
       "count": 2,
       "sources": [
@@ -431,9 +463,9 @@
       ],
       "related": [
         {
-          "titleKo": "이란, 이라크 사이에서 고민하는 이라크 총리의 다음 수순",
-          "source": "Yahoo",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeElrYU93Vjkzd0I5S2dROVNYNy1qNUpfZTE3TXIwU2xhZk5lZWd3MTR3UmlWWE9CMUxYVkQzZllQei1IaXp4NzdJdFpqRXV5aUZ0UmprYkZ0SE9ZS193cWRFWXR5eVhhYll3ZU1CZXAtb3BpWlJmVmo5YmFmXzY4blFjWWkxMjl4OFZfdXBB?oc=5"
+          "titleKo": "이라크 총리 알리 알자이디, 이란 국경 문제 다음 조치 검토",
+          "source": "The Jerusalem Post",
+          "link": "https://www.jpost.com/middle-east/article-914427"
         }
       ],
       "tag": "정치·선거",
@@ -443,6 +475,31 @@
         "act": "",
         "place": "",
         "km": null
+      }
+    },
+    {
+      "title": "Quds Force Commander with Experience in Regional Affairs Becomes Iran's Ambassador to Baghdad",
+      "source": "کردپرس",
+      "link": "https://www.kurdpress.com/en/news/2801961/Quds-Force-Commander-with-Experience-in-Regional-Affairs-Becomes-Irans-Ambassador-to-Baghd-qz07blcq",
+      "date": "2026-11-10T15:37:38.000Z",
+      "lang": "en",
+      "titleKo": "지역 문제 경험 많은 쿠드스군 사령관, 이란 바그다드 대사로 임명",
+      "url": "https://www.kurdpress.com/en/news/2801961/Quds-Force-Commander-with-Experience-in-Regional-Affairs-Becomes-Irans-Ambassador-to-Baghd-qz07blcq",
+      "body": "Abdolreza Mesgarian, a commander of the Quds Force of the Revolutionary Guards and responsible for Iran's security affairs in relation to Iraq and the Kurdistan Region, i\nAccording to KurdPress, an informed source has announced that Abdolreza Mesgarian will take charge of the Iranian embassy in Iraq.\nAccording to this source, he will begin his activities as Iran's ambassador to Baghdad at the beginning of the new year. Msgarian is a commander associated with the IRGC Quds Force and previously commanded the Ramadan base, which was established in 1984 during the Iran-Iraq War and was responsible for carrying out Iranian operations inside Iraq and coordinating with Iraqi forces and Kurdish groups opposed to Saddam Hussein's regime.\nHe was also responsible for Iran's security files in Iraq, especially in relation to the Kurdistan Region and Kurdish groups opposed to Iran in Iraq.",
+      "bodyKo": "쿠드스군 사령관 메스가리안, 이라크 대사로 임명\n\n이란 혁명수비대 쿠드스군 사령관이자 이라크 및 쿠르디스탄 지역과 관련한 이란의 안보 담당자인 압돌레자 메스가리안이 이라크 주재 이란 대사관을 맡게 될 것으로 알려졌다.\n\n쿠르드프레스에 따르면 소식통은 압돌레자 메스가리안이 신년 초부터 바그다드 주재 이란 대사로 활동을 시작할 것이라고 발표했다. 메스가리안은 혁명수비대 쿠드스군 소속 사령관으로, 이전에는 1984년 이란-이라크 전쟁 당시 설립된 라마단 기지를 지휘했다. 이 기지는 이라크 내 이란 작전 수행과 이라크군 및 사담 후세인 정권에 반대하는 쿠르드 세력과의 조율을 담당했다.\n\n그는 또한 특히 쿠르디스탄 지역 및 이라크 내 이란에 반대하는 쿠르드 세력과 관련해 이라크의 이란 안보 업무를 담당했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "کردپرس"
+      ],
+      "related": [],
+      "tag": "한국·외교",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
       }
     },
     {
@@ -646,29 +703,20 @@
     {
       "title": "미국은 이라크에 이란과의 분쟁 중재를 요청했다.",
       "source": "Vietnam.vn",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5TTFLX3lYbXplMkNkRV90cXBRbUN1aXRhYWMxNU1TZS1lNEVTYUVkYnMwdE5OUzZnYWVyYl9RVG9GVUV5NjJ4ODJRb0plUENxSGlkZ25mRG9mUXVEd2VSdFhiejN0bjYwRlpxbXU3RmkzMUl6bDR2TTZMUkVtN2c?oc=5",
-      "date": "2026-11-10T11:53:20.000Z",
+      "link": "https://www.vietnam.vn/ko/my-de-nghi-iraq-lam-trung-gian-hoa-giai-voi-iran",
+      "date": "2026-11-10T11:53:21.000Z",
       "lang": "ko",
       "titleKo": "미국은 이라크에 이란과의 분쟁 중재를 요청했다.",
-      "count": 3,
+      "url": "https://www.vietnam.vn/ko/my-de-nghi-iraq-lam-trung-gian-hoa-giai-voi-iran",
+      "body": "도널드 트럼프 미국 대통령은 알리 알 자이디 이라크 총리에게 미국과 이라크 간의 중재를 요청했다.\n0 알 하다트 TV 채널에 따르면, 도널드 트럼프 미국 대통령은 알리 알 자이디 이라크 총리에게 워싱턴과 테헤란 간의 중재를 요청했다.\n이 방송 채널은 소식통을 인용해 알자이디 총리가 트럼프 대통령과의 전화 통화에서 이란 과의 대화를 위한 여러 제안을 했다고 보도했습니다.\n미국 대통령은 이러한 제안에 동의하고 이라크 총리에게 협상 과정에 참여할 것을 요청했습니다. 이 방송 채널에 따르면, 알자이디 총리가 이끄는 대표단은 그 직후 비밀리에 테헤란으로 향했습니다.\n알 하다트 채널은 협상 결과에 대해 보도하지 않았습니다. 이라크 정부도 이 정보에 대해 아직 논평하지 않았습니다.",
+      "bodyKo": "도널드 트럼프 미국 대통령은 알리 알 자이디 이라크 총리에게 미국과 이라크 간의 중재를 요청했다.\n0 알 하다트 TV 채널에 따르면, 도널드 트럼프 미국 대통령은 알리 알 자이디 이라크 총리에게 워싱턴과 테헤란 간의 중재를 요청했다.\n이 방송 채널은 소식통을 인용해 알자이디 총리가 트럼프 대통령과의 전화 통화에서 이란 과의 대화를 위한 여러 제안을 했다고 보도했습니다.\n미국 대통령은 이러한 제안에 동의하고 이라크 총리에게 협상 과정에 참여할 것을 요청했습니다. 이 방송 채널에 따르면, 알자이디 총리가 이끄는 대표단은 그 직후 비밀리에 테헤란으로 향했습니다.\n알 하다트 채널은 협상 결과에 대해 보도하지 않았습니다. 이라크 정부도 이 정보에 대해 아직 논평하지 않았습니다.",
+      "tried": true,
+      "count": 1,
       "sources": [
-        "Vietnam.vn",
-        "thecradle.co",
-        "IraqiNews"
+        "Vietnam.vn"
       ],
-      "related": [
-        {
-          "titleKo": "이라크 총리, 미국의 이라크 경유 이란 침공 계획 속 테헤란 방문 회담: 보도",
-          "source": "thecradle.co",
-          "link": "https://thecradle.co/articles/iraqi-pm-visits-tehran-for-talks-amid-us-plan-to-invade-iran-through-iraq-report"
-        },
-        {
-          "titleKo": "트럼프와 통화 후 이라크 총리 이란 비밀 방문",
-          "source": "IraqiNews",
-          "link": "https://www.iraqinews.com/iraq/iraqi-pm-secretly-visits-iran-following-trump-phone-call/"
-        }
-      ],
-      "tag": "정치·선거",
+      "related": [],
+      "tag": "기타",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -678,33 +726,52 @@
       }
     },
     {
-      "title": "Turkish troops to begin withdrawing from base in N. Iraq",
-      "source": "chinadailyhk",
-      "link": "https://www.chinadailyasia.com/article/642472",
+      "title": "Iraq Accelerates Solar Energy Transition to Bolster Energy Security, Narrow Electricity Gap /Report",
+      "source": "Qatar news agency",
+      "link": "https://qna.org.qa/en/News-Area/Special-News/2026-11/10/iraq-accelerates-solar-energy-transition-to-bolster-energy-security-narrow-electricity-gap-report",
+      "date": "2026-11-10T11:12:33.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 에너지 안보 강화·전력 공급 격차 해소 위해 태양광 에너지 전환 가속화/보고서",
+      "url": "https://qna.org.qa/en/News-Area/Special-News/2026-11/10/iraq-accelerates-solar-energy-transition-to-bolster-energy-security-narrow-electricity-gap-report",
+      "body": "Baghdad, November 10 (QNA) - Iraq is moving toward expanding its investments in the renewable energy sector, particularly solar energy, as part of an effort to bolster energy security, diversify electricity generation sources, and reduce reliance on fossil fuels. This comes amid growing challenges posed by the gap between production capacity and domestic demand, especially during the summer months, when consumption levels surge significantly. The Iraqi government is moving toward adopting parallel paths to develop this sector, which include establishing large-scale, investment-based solar power plants and deploying solar systems across government buildings, service institutions, and homes, alongside providing the necessary financial and legislative facilities to encourage citizens and the private sector to invest in clean energy sources. In an exclusive interview with Qatar News Agency (QNA), official spokesperson for Iraq's Ministry of Electricity Ahmed Turki Jiyad said that the Shams",
+      "bodyKo": "바그다드, 11월 10일(QNA) - 이라크는 에너지 안보를 강화하고 전력 생산원을 다양화하며 화석연료 의존도를 낮추기 위한 노력의 일환으로 재생에너지 부문, 특히 태양광 에너지에 대한 투자 확대를 추진하고 있다. 이는 생산 능력과 국내 수요 간의 격차로 인한 도전이 커지는 가운데 나타나는 움직임으로, 특히 여름철 소비량이 급증하는 시기에 이러한 격차가 심화된다. 이라크 정부는 이 부문을 개발하기 위해 병렬적 경로를 채택하는 방향으로 나아가고 있으며, 여기에는 대규모 투자 기반 태양광 발전소 건설과 정부 건물, 공공기관, 주택에 태양광 시스템 배치가 포함되며, 시민과 민간 부문이 청정에너지에 투자하도록 장려하기 위한 필요한 재정적·입법적 지원을 제공하는 것도 포함된다. 이라크 전력부 공식 대변인 아흐메드 투르키 지야드는 카타르통신(QNA)과의 단독 인터뷰에서 샴스",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Qatar news agency"
+      ],
+      "related": [],
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Turkey to begin Bashiqa base withdrawal this month, Iraq says",
+      "source": "964media",
+      "link": "https://en.964media.com/55028/",
       "date": "2026-11-10T11:12:18.000Z",
       "lang": "en",
-      "titleKo": "터키군, 북부 이라크 기지에서 철수 시작",
-      "url": "https://www.chinadailyasia.com/article/642472",
-      "body": "Iraq announced on Monday that the phased withdrawal of Turkish forces from the Bashiqa-Zelikan military camp in northern Nineveh province will begin this month.\nBAGHDAD – Iraq announced on Monday that the phased withdrawal of Turkish forces from the Bashiqa-Zelikan military camp in northern Nineveh province will begin this month, with the base expected to be fully transferred to Iraqi security forces by the end of the year.\nA joint Iraqi-Turkish security committee has begun its work to oversee the handover of the camp, Sabah al-Numan, spokesman for the commander-in-chief of the Iraqi forces, told the state-owned al-Iraqiya channel.\nAl-Numan noted that the committee's activation stems from understandings reached between Iraqi Prime Minister Ali al-Zaidi and Turkish President Recep Tayyip Erdogan during their meeting in New York in September.",
-      "bodyKo": "이라크, 터키군 단계적 철수 시작…연말까지 완전 이양\n\n이라크가 월요일 니네베 북부 바시카-젤리칸 군사기지에서 터키군의 단계적 철수가 이달부터 시작될 것이라고 발표했다. 기지는 연말까지 이라크 보안군에 완전히 이양될 예정이다.\n\n바그다드 – 이라크가 월요일 니네베 북부 바시카-젤리칸 군사기지에서 터키군의 단계적 철수가 이달부터 시작될 것이라고 발표했다. 기지는 연말까지 이라크 보안군에 완전히 이양될 예정이다.\n\n이라크-터키 합동 보안위원회가 기지 인수를 감시하기 위한 업무를 시작했다고 이라크군 총사령관 대변인 사바 알누만이 국영 알이라키야 채널에 밝혔다.\n\n알누만은 위원회 가동이 이라크 총리 알리 알자이디와 터키 대통령 레제프 타이이프 에르도안이 9월 뉴욕에서 만난 자리에서 도달한 합의에서 비롯됐다고 지적했다.",
+      "titleKo": "터키, 이달 바시카 기지 철수 시작…이라크 발표",
+      "url": "https://en.964media.com/55028/",
+      "body": "BAGHDAD — Turkey will start handing its Bashiqa-Zilkan base in Nineveh to Iraqi forces this month and complete\nSabah al-Numan, spokesperson for the commander-in-chief of the armed forces, told state-run Al-Iraqiya TV that a joint Iraqi-Turkish security committee had already begun its work. The September agreement that set up the handover published no timetable.\n“The camp will be in the hands of the Iraqi security forces at the end of this year and the start of next year,” Numan said.\nHe said the handover followed the agreement Prime Minister Ali al-Zaidi and Turkish President Recep Tayyip Erdogan reached in New York on Sept. 23 . It covered four areas: closer security and strategic coordination, full state authority in Sinjar, the gradual Turkish withdrawal from Bashiqa and wider economic cooperation.",
+      "bodyKo": "바그다드 — 터키가 이번 달부터 니네베주의 바시카-질칸 기지를 이라크군에 인계하기 시작해 올해 말과 내년 초에 완료할 예정이다.\n\n무함마드 사바흐 알누만 총사령관 대변인은 국영 알이라키야 TV에 이라크-터키 합동 안보위원회가 이미 업무를 시작했다고 말했다. 인계를 정한 9월 협정은 구체적인 일정을 공개하지 않았다.\n\n\"기지는 올해 말과 내년 초에 이라크 보안군의 손에 넘어갈 것\"이라고 누만이 말했다.\n\n그는 인계가 알리 알자이디 총리와 레제프 타이이프 에르도안 터키 대통령이 9월 23일 뉴욕에서 체결한 협정을 따른 것이라고 설명했다. 협정은 네 가지 분야를 다뤘다. 보안과 전략적 조율 강화, 신자르에 대한 완전한 국가 권한, 바시카에서의 점진적 터키군 철수, 광범위한 경제협력이다.",
       "tried": true,
-      "count": 4,
+      "count": 3,
       "sources": [
         "The Media Line",
         "964media",
-        "AzerNews",
-        "chinadailyhk"
+        "AzerNews"
       ],
       "related": [
         {
           "titleKo": "터키, 바그다드와의 합의 후 북부 이라크 군사기지에서 철수 시작",
           "source": "The Media Line",
           "link": "https://themedialine.org/headlines/turkey-begins-withdrawal-from-northern-iraq-military-base-after-deal-with-baghdad/"
-        },
-        {
-          "titleKo": "터키, 이달 바시카 기지 철수 시작…이라크 발표",
-          "source": "964media",
-          "link": "https://en.964media.com/55028/"
         },
         {
           "titleKo": "터키, 북부 이라크에서 군 철수 시작",
@@ -749,7 +816,7 @@
     {
       "title": "Iraq Sets Year-End Deadline for Ending Turkish Military Presence at Zilkan Camp",
       "source": "وكالة سبأ",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5NVURNSW95VlQxU1hLeFFrWVRwT1Y5ckRMbndtTVZod3dYZjZrcXNBY0x6eGo2NE5xTUR6UFJITkx6T3RfV0M0cjBB?oc=5",
+      "link": "https://saba.ye/en/news3831295.htm",
       "date": "2026-11-10T10:42:07.000Z",
       "lang": "en",
       "titleKo": "이라크, 질칸 캠프 터키군 철수 연말 기한 설정",
@@ -765,15 +832,23 @@
         "act": "",
         "place": "",
         "km": null
-      }
+      },
+      "url": "https://saba.ye/en/news3831295.htm",
+      "body": "",
+      "bodyKo": "",
+      "tried": true
     },
     {
       "title": "500 مليون دولار من الكهرباء التركية.. العراق أكبر الأسواق وسوريا تتصدر عائدات التصدير",
       "source": "تركيا عاجل",
-      "link": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxQM0VpN2JRbG1tVUFycWV2SEZtb2ZaeEI3T3hDVnRiUUdXWElJeXZqZ1BqMFJJd0UtRUtSZ1pfSUw3cnBvMS1haVFQQ3F0Y3FuZGNfUzZOYl8zaHJiRHdmcDA3SWtIaGI2SFYyWjJoSy1mRndVTE1jcVVhTnR2Y1FPRWtXd0IzMi1WVi1NOE9tdTM2dWZhaHR1RmFUZzl6Q2xuMjc4b0RBMDFGRllzeWMtWDVjRW9tVmU3VjZha3RIUWZLUWppaWZVODE1R3RILTdrd2NBWXQ4ZmptdDFPOTBxVjUtbnNFTXJsVzJqMzRMZWRWSllITkpCeGNRS2hpbGtTM1Z6YW5nTzdsOW1UM2RoRVRsekRFVWV6VHBMQ1RzZVZZNUh6dFd1Nk1QVXpsOEcxOHlyQmhFdVNfNVl6UDlESTQwUzZyLUl1Skd0c05qVHBWZ0NzNklIS2lScXI?oc=5",
+      "link": "https://turkey-breaking.com/News/2026/11/10/500-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1/",
       "date": "2026-11-10T09:57:06.000Z",
       "lang": "ar",
       "titleKo": "터키 전력 수출 5억 달러.. 이라크가 최대 시장, 시리아가 수출 수익 1위",
+      "url": "https://turkey-breaking.com/News/2026/11/10/500-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1/",
+      "body": "حققت تركيا 500 مليون دولار من صادرات الكهرباء بين يناير 2025 وأغسطس 2026، مع تصدر العراق الأسواق وتوسع الربط مع سوريا وبلغاريا.\nحققت تركيا نحو 500 مليون دولار من صادرات الكهرباء عبر خطوط الربط مع الدول المجاورة خلال الفترة بين يناير 2025 وأغسطس 2026، فيما أصبح العراق أكبر سوق للكهرباء التركية، وفق تقرير نشره مركز الأبحاث الدولي «إمبر» ضمن مؤتمر الأمم المتحدة للمناخ «كوب 31»، المنعقد هذا العام في مدينة أنطاليا التركية.\nوسجلت تركيا في عام 2025 وحده رقماً قياسياً في عائدات تصدير الكهرباء بلغ 360 مليون دولار، مقابل تصدير نحو 4 تيراواط/ساعة. ويعكس ذلك تحولاً واضحاً في خريطة تجارتها الكهربائية عبر الحدود، بعدما اتجهت بدرجة أكبر نحو جيرانها في الجنوب.\nأدت القدرات الإضافية التي دخلت الخدمة خلال عامي 2024 و2025 إلى جعل العراق الوجهة الأكبر للصادرات التركية. كما أسهم تجديد البنية التحتية لخطوط الربط في ضمان تدفق منتظم للكهرباء إلى سوريا، التي وفرت أكثر من نصف عائدات الصادرات القياسية المسجلة.",
+      "bodyKo": "**터키, 2025~2026년 전력 수출로 5억 달러 달성…이라크가 최대 시장**\n\n터키가 2025년 1월부터 2026년 8월 사이 인접국과의 송전선을 통한 전력 수출로 약 5억 달러를 달성했으며, 이라크가 터키 전력의 최대 시장이 된 것으로 나타났다. 국제 연구기관 엠버가 터키 안탈리아에서 개최 중인 유엔 기후변화협약 당사국총회 'COP31'에서 발표한 보고서에 따른 것이다.\n\n터키는 2025년 한 해만 전력 수출 수익에서 3억 6천만 달러의 기록을 세웠으며, 약 4테라와트/시간을 수출했다. 이는 남쪽 이웃 국가들로의 방향 전환을 반영하며 국경을 넘는 전력 무역 지도의 뚜렷한 변화를 보여준다.\n\n2024년과 2025년 중 가동을 시작한 추가 발전 용량으로 인해 이라크가 터키 전력 수출의 최대 목적지가 됐다. 송전선 기반시설의 현대화는 시리아로의 안정적인 전력 공급을 보장하는 데 기여했으며, 시리아는 기록적인 수출 수익의 절반 이상을 차지했다.",
+      "tried": true,
       "count": 1,
       "sources": [
         "تركيا عاجل"
@@ -989,24 +1064,46 @@
       }
     },
     {
-      "title": "이라크, '美 폐쇄 요구' 속 이란 국경 알시브 검문소 재개방",
-      "source": "연합뉴스",
-      "link": "https://www.yna.co.kr/view/AKR20261110049400009",
-      "date": "2026-11-10T08:16:13.000Z",
-      "lang": "ko",
-      "titleKo": "이라크, '美 폐쇄 요구' 속 이란 국경 알시브 검문소 재개방",
-      "url": "https://www.yna.co.kr/view/AKR20261110049400009",
-      "body": "(서울=연합뉴스) 류미나 기자 = 이라크가 이란 국경에 있는 육상 검문소 한 곳을 폐쇄 20일 만에 다시 개방했다.\n이라크 국영 INA 통신 등에 따르면 이라크 국경항만 책임자는 \"기술적 요건과 필요한 절차\"를 마친 알시브 검문소를 10일(현지시간) 오전 재개방한다고 밝혔다.\n남동부 마이산주의 알시브는 양국 간 주요 교역로이자 이란 순례객들이 이라크 성지로 향하는 관문이다.\n이라크 정부는 지난달 21일 보안 점검과 밀수 차단용 탐지 장비 설치 등을 이유로 통행량이 많은 알시브 검문소를 폐쇄했다.\n이후 여객과 화물의 이동이 전면 중단되면서 마이산주에서는 항의 시위가 벌어졌고 무력 충돌로 번지기도 했다.\n디얄라주의 만달리 검문소는 기술적 요건을 갖추기 위해 오는 13일부터 일시 폐쇄된다. 만달리는 이란에서 바그다드 북부와 쿠르디스탄으로 향하는 최단 경로다.\n이번 조치는 이란에 대한 경제 압박을 강화하려는 미국이 이라크에 국경 검문소 폐쇄를 요구하는 가운데 나왔다.\n앞서 푸아드 후세인 이라크 외무장관은 8일 알자지라와의 인터뷰에서 미국 재무부가 이란에 대한 경제 압박 정책의 하나로 이라크에서 이란으로 들어가는 국경 검문소를 두 곳만 남기고 모두 폐쇄하라고 요청했다고 밝혔다.\n후세인 장관은 이란 국경에는 공식·비공식 검문소가 많아 이를 모두 닫으면 이라크 경제가 타격을 받을 것이라며 \"미국은 여전히 폐쇄를 요구하고 있고, 현재 협의 중\"이라고 말했다.\n다만 이번 알시브 검문소 재개방과 만달리 검문소의 일시 폐쇄가 미국의 요구와 관련이 있는지는 분명하지 않다고 로이터통신은 보도했다.",
-      "bodyKo": "(서울=연합뉴스) 류미나 기자 = 이라크가 이란 국경에 있는 육상 검문소 한 곳을 폐쇄 20일 만에 다시 개방했다.\n이라크 국영 INA 통신 등에 따르면 이라크 국경항만 책임자는 \"기술적 요건과 필요한 절차\"를 마친 알시브 검문소를 10일(현지시간) 오전 재개방한다고 밝혔다.\n남동부 마이산주의 알시브는 양국 간 주요 교역로이자 이란 순례객들이 이라크 성지로 향하는 관문이다.\n이라크 정부는 지난달 21일 보안 점검과 밀수 차단용 탐지 장비 설치 등을 이유로 통행량이 많은 알시브 검문소를 폐쇄했다.\n이후 여객과 화물의 이동이 전면 중단되면서 마이산주에서는 항의 시위가 벌어졌고 무력 충돌로 번지기도 했다.\n디얄라주의 만달리 검문소는 기술적 요건을 갖추기 위해 오는 13일부터 일시 폐쇄된다. 만달리는 이란에서 바그다드 북부와 쿠르디스탄으로 향하는 최단 경로다.\n이번 조치는 이란에 대한 경제 압박을 강화하려는 미국이 이라크에 국경 검문소 폐쇄를 요구하는 가운데 나왔다.\n앞서 푸아드 후세인 이라크 외무장관은 8일 알자지라와의 인터뷰에서 미국 재무부가 이란에 대한 경제 압박 정책의 하나로 이라크에서 이란으로 들어가는 국경 검문소를 두 곳만 남기고 모두 폐쇄하라고 요청했다고 밝혔다.\n후세인 장관은 이란 국경에는 공식·비공식 검문소가 많아 이를 모두 닫으면 이라크 경제가 타격을 받을 것이라며 \"미국은 여전히 폐쇄를 요구하고 있고, 현재 협의 중\"이라고 말했다.\n다만 이번 알시브 검문소 재개방과 만달리 검문소의 일시 폐쇄가 미국의 요구와 관련이 있는지는 분명하지 않다고 로이터통신은 보도했다.",
+      "title": "Prime Minister Barzani Heads to Baghdad for Talks With Iraqi PM",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/951749/prime-minister-barzani-heads-to-baghdad-for-talks-with-iraqi-pm",
+      "date": "2026-11-10T08:23:32.000Z",
+      "lang": "en",
+      "titleKo": "바르자니 총리, 이라크 총리와의 회담을 위해 바그다드로 향하다",
+      "url": "https://www.kurdistan24.net/en/story/951749/prime-minister-barzani-heads-to-baghdad-for-talks-with-iraqi-pm",
+      "body": "Kurdistan Region Prime Minister Masrour Barzani to meet Iraqi PM Ali al-Zaidi and political leaders to discuss financial entitlements and resolving disputes between Erbil and Baghdad\nERBIL (Kurdistan24) &mdash; Kurdistan Region Prime Minister Masrour Barzani is visiting Baghdad on Monday for a series of meetings with Iraqi Prime Minister Ali Faleh al-Zaidi and leaders of political parties, alliances, and other political figures to discuss the Kurdistan Region's budget entitlements and outstanding issues between Erbil and Baghdad.\nKurdistan Regional Government (KRG) spokesperson Peshawa Hawramani told Kurdistan24 that Barzani would hold talks with al-Zaidi as well as leaders of Iraqi political parties and alliances during his visit.\nHawramani said the discussions would focus on the draft federal budget law and securing the Kurdistan Region's financial entitlements.",
+      "bodyKo": "**바르자니 쿠르디스탄 총리, 바그다드 방문해 자이디 이라크 총리·정치지도자들과 회담**\n\n아르빌(쿠르디스탄24) — 쿠르디스탄 지역 총리 마수르 바르자니가 월요일 바그다드를 방문해 알리 팔레 자이디 이라크 총리 및 정치정당·연합·정치인물 지도자들과 일련의 회담을 갖고 쿠르디스탄 지역의 예산 배정액과 아르빌·바그다드 간 미해결 현안을 논의할 예정이다.\n\n쿠르디스탄 지역정부(KRG) 대변인 페샤와 하우라마니는 쿠르디스탄24에 바르자니가 방문 중 자이디 총리뿐 아니라 이라크 정치정당·연합 지도자들과 회담을 진행할 것이라고 밝혔다.\n\n하우라마니는 논의가 연방 예산법안과 쿠르디스탄 지역의 재정 배정액 확보에 초점을 맞출 것이라고 말했다.",
       "tried": true,
-      "count": 6,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Iraq reopens Shib border crossing with Iran after 3-week closure",
+      "source": "Anadolu Ajansı",
+      "link": "https://www.aa.com.tr/en/middle-east/-iraq-reopens-shib-border-crossing-with-iran-after-3-week-closure/4118234",
+      "date": "2026-11-10T08:16:13.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 3주 폐쇄 후 이란과의 시브 국경 통로 재개",
+      "url": "https://www.aa.com.tr/en/middle-east/-iraq-reopens-shib-border-crossing-with-iran-after-3-week-closure/4118234",
+      "body": "Mandali crossing to close temporarily from Friday for maintenance ahead of rainy season, authorities say | Anadolu\nEDITION Middle East Iraq reopens Shib border crossing with Iran after 3-week closure Mandali crossing to close temporarily from Friday for maintenance ahead of rainy season, authorities say Laith Al-Jnaidi and Mohammad Sio 10 November 2026 • Update : 10 November 2026 Archive ISTANBUL Iraq reopened the Shib border crossing with Iran to passengers and commercial traffic on Tuesday after a three-week closure, while announcing that the Mandali crossing will temporarily close from Friday for maintenance.\nOmar al-Waeli, head of Iraq’s Border Ports Authority, said in a statement carried by the official Iraqi News Agency (INA) that Shib reopened at 8 a.m. local time (0500GMT) on Tuesday after the completion of technical requirements and procedures needed to resume operations.",
+      "bodyKo": "**만달리 국경소 금요일부터 우기 대비 정비로 임시 폐쇄**\n\n이라크가 3주간의 폐쇄 이후 이란과의 시브 국경소를 승객과 상용 운송에 재개방했으며, 만달리 국경소는 금요일부터 정비를 위해 임시 폐쇄될 예정이라고 발표했다.\n\n이라크 국경항만청 청장 오마르 알-와엘리는 공식 이라크통신(INA)을 통해 배포한 성명에서 화요일 현지시간 오전 8시(그리니치표준시 오전 5시)에 시브 국경소가 운영 재개에 필요한 기술적 요건과 절차 완료 후 재개방됐다고 밝혔다.",
+      "tried": true,
+      "count": 3,
       "sources": [
         "التلفزيون العربي",
         "Anadolu Ajansı",
-        "ميدل ايست اونلاين",
-        "قناة العالم",
-        "연합뉴스",
-        "The Jerusalem Post"
+        "ميدل ايست اونلاين"
       ],
       "related": [
         {
@@ -1015,24 +1112,9 @@
           "link": "https://www.alaraby.com/news/%D9%81%D8%AA%D8%AD-%D9%85%D9%86%D9%81%D8%B0-%D9%88%D8%A3%D8%BA%D9%84%D9%82-%D8%A2%D8%AE%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B9%D9%8A%D8%AF-%D9%81%D8%AA%D8%AD-%D9%85%D9%86%D9%81%D8%B0-%D8%A7%D9%84%D8%B4%D9%8A%D8%A8-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%D9%8A-%D9%85%D8%B9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86"
         },
         {
-          "titleKo": "이라크, 3주 폐쇄 후 이란과의 시브 국경 통로 재개",
-          "source": "Anadolu Ajansı",
-          "link": "https://www.aa.com.tr/en/middle-east/-iraq-reopens-shib-border-crossing-with-iran-after-3-week-closure/4118234"
-        },
-        {
           "titleKo": "이라크, 이란과의 알시브 국경 통로 재개…만델리 통로는 폐쇄",
           "source": "ميدل ايست اونلاين",
           "link": "https://news.google.com/rss/articles/CBMirwNBVV95cUxOcjRoSkZ6OC13R2pfMmluTHp2SnFIdGVLX1NVdTY1TEZWUlpaTWYwRlFRVjVrOXAyUl9SSE1JbEZjT0NGbzQ5anBaZzVOZFBab2QtMHRTNFJWd0dQUUpSRjhyUUI4ald6emkxbjA2Q1NqWFI2aEVMSlFWR0h0MGpTR0F0Y25Nb3NfdnV0Rm5qUEFhblFKNk1ybzlyVjdZY25wMklEUlQxVTJtUmp1cU0wNy1jcmYzenVCY3FYQ2Y3bFkxdHV2WkN3VXlkcTVtdlh6NXEyRmpTOVpwdVUwZEgxZjBQd1FxQjhpM3NzSWVwYl92UEpwOTNJNl80Z21fdUN3bUc5elN0MWVWT3JLWWZBWk1SalBYV1VJcVVTcC1UZklKZUg1OVptR0xHTUpsTUUxaGNnSTFTUjVEaGgzTGdXVnF4d0gyclE5Q2pVQVM5VmVqYk5nWU45ajdHdWRkOFgxZ2RWOVVmWmpiQ0lxWVFYb2twTmNXeFlvLUJ3M1pmTTg1TUdQeXVPZ2tMR2xiUVVCQU5seHBoQmdKWThIdUc0Zk54T2NtdUdKX08xU0pvOA?oc=5"
-        },
-        {
-          "titleKo": "이라크, 자바바 국경 통로 재개 시기 발표",
-          "source": "قناة العالم",
-          "link": "http://www.alalam.ir/news/7688078/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B9%D9%84%D9%86-%D9%85%D9%88%D8%B9%D8%AF-%D8%A5%D8%B9%D8%A7%D8%AF%D8%A9-%D9%81%D8%AA%D8%AD-%D9%85%D9%86%D9%81%D8%B0-%D8%AC%D8%B0%D8%A7%D8%A8%D8%A9-%D9%85%D8%B9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86"
-        },
-        {
-          "titleKo": "바그다드, 셰이브 국경 폐쇄 후 재개",
-          "source": "The Jerusalem Post",
-          "link": "https://www.jpost.com/middle-east/article-914393"
         }
       ],
       "tag": "기타",
@@ -1127,112 +1209,6 @@
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraq sets ambitious target to more than double oil production by 2032",
-      "source": "The National",
-      "link": "https://www.thenationalnews.com/news/mena/2026/11/09/iraq-sets-ambitious-target-to-more-than-double-oil-production-by-2032/",
-      "date": "2026-11-10T03:11:18.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 2032년까지 석유 생산량 2배 이상 증대 목표 설정",
-      "url": "https://www.thenationalnews.com/news/mena/2026/11/09/iraq-sets-ambitious-target-to-more-than-double-oil-production-by-2032/",
-      "body": "Prime Minister Ali Al Zaidi says output will hit 7 million barrels per day by 2030 and 10 million by 2032\nIraqi Prime Minister Ali Al Zaidi has set out an ambitious vision for Iraq's oil future, saying the country aims to lift production to ⁠seven million barrels per ⁠day ​by ⁠2030.\nMr Al Zaidi said Iraq intended to increase production to ​10 million bpd by 2032, including about one million bpd from the Kurdistan region. Iraqi oil exports hit about 3.4 million bpd in October.\nSpeaking to Kurdistan Region Prime Minister Masrour Barzani in Baghdad, Mr Al Zaidi said the “increase would positively reflect on development and the economy across the whole country”.\nIraq has been ​pushing ⁠for ‌higher production by Opec countries as the economic fallout from the Iran war , and investment by major oil producers, increase pressure on Baghdad to boost output.",
-      "bodyKo": "**총리 \"2030년 일일 700만 배럴, 2032년 1000만 배럴 생산 목표\"**\n\n알리 알자이디 이라크 총리는 2030년까지 일일 생산량을 700만 배럴로 끌어올리겠다는 야심찬 비전을 제시했다.\n\n알자이디 총리는 2032년까지 생산량을 일일 1000만 배럴로 증대할 계획이라고 밝혔으며, 이 중 약 100만 배럴은 쿠르디스탄 지역에서 생산될 예정이다. 이라크의 석유 수출은 10월 일일 약 340만 배럴에 달했다.\n\n알자이디 총리는 바그다드에서 쿠르디스탄 지역 총리 마스루르 바르자니와 만나 \"증산은 전국의 발전과 경제에 긍정적인 영향을 미칠 것\"이라고 말했다.\n\n이라크는 이란 전쟁으로 인한 경제적 파급과 주요 석유 생산국들의 투자 증가로 바그다드가 생산량을 늘리도록 압박받는 가운데 오펙 회원국들의 증산을 추진해 왔다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "The National"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq's budget stalls over oil Erbil says it cannot deliver",
-      "source": "Amwaj.media",
-      "link": "https://amwaj.media/en/media-monitor/iraqs-budget-stalls-over-oil-erbil-says-it-cannot-deliver",
-      "date": "2026-11-10T02:21:41.000Z",
-      "lang": "en",
-      "titleKo": "이라크 예산안 교착 오일 문제로 아르빌 납입 불가 입장",
-      "url": "https://amwaj.media/en/media-monitor/iraqs-budget-stalls-over-oil-erbil-says-it-cannot-deliver",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Amwaj.media"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "에르빌",
-        "km": 338
-      }
-    },
-    {
-      "title": "Iraq say it has made progress in talks with armed groups",
-      "source": "Voice of America English News",
-      "link": "https://www.voanews.com/amp/iraq-say-it-has-made-progress-in-talks-with-armed-groups/8220837.html",
-      "date": "2026-11-10T00:13:48.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 무장단체와의 협상에서 진전 이루었다고 발표",
-      "url": "https://www.voanews.com/amp/iraq-say-it-has-made-progress-in-talks-with-armed-groups/8220837.html",
-      "body": "Editor's note: this story was translated from the original VOA Kurdish article .\nThe Iraqi government has made significant progress in talks with armed militia groups and that five of them had agreed to place their weapons under state control, a government spokesman told VOA.\n“The government has completed the requirements and the details of negotiations” with five, armed groups, spokesman Haydar al-Aboudi told VOA Kurdish reporter Diyar Jamal in an interview in Baghdad.\nAboudi also said talks continue with two other groups, and that the hope is that those negotiations will be concluded successfully by June 2027.\nAboudi did not name the groups or explain and questions about the negotiations have yet to be announced, and it’s unclear if the militias have agreed to surrender their weapons or join Iraq’s official security forces.",
-      "bodyKo": "**이라크 정부, 무장 민병대 5개 그룹과 무기 통제 협상 진전**\n\n이라크 정부가 무장 민병대 그룹들과의 협상에서 상당한 진전을 이뤘으며, 이 중 5개 그룹이 무기를 국가 통제 하에 두기로 동의했다고 정부 대변인이 VOA에 밝혔다.\n\n\"정부는 5개 무장 그룹과의 협상 요건과 세부사항을 완료했다\"고 대변인 하이다르 알아부디가 바그다드에서 VOA 쿠르드어 기자 디야르 자말과의 인터뷰에서 말했다.\n\n알아부디는 또한 다른 2개 그룹과의 협상이 계속 진행 중이며, 이들 협상이 2027년 6월까지 성공적으로 마무리될 것으로 기대한다고 밝혔다.\n\n알아부디는 해당 그룹들의 이름을 밝히지 않았으며, 협상에 대한 질문과 설명은 아직 공개되지 않았다. 민병대가 무기를 항복할지 아니면 이라크 공식 보안군에 합류할지는 불명확한 상태다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "Voice of America English News"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크, 무장단체와의 협상에서 진전 이루었다고 발표",
-          "source": "Voice of America English News",
-          "link": "https://www.voanews.com/amp/iraq-say-it-has-made-progress-in-talks-with-armed-groups/8220837.html"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Baghdad shops hand out celery and sweets as small dinar notes run short",
-      "source": "The Insight International",
-      "link": "https://theinsightinternational.com/baghdad-shops-hand-out-sweets-as-small-dinar-notes-run-short/",
-      "date": "2026-11-09T22:36:40.000Z",
-      "lang": "en",
-      "titleKo": "바그다드 상점들, 소액 디나르 지폐 부족으로 셀러리·사탕 나눠줘",
-      "url": "https://theinsightinternational.com/baghdad-shops-hand-out-sweets-as-small-dinar-notes-run-short/",
-      "body": "Shopkeepers across the capital say 250 and 500 dinar notes have become so scarce that they give customers small goods instead of change, waive the difference or ask them to come back later.\nBAGHDAD, November 9, 2026. Shopkeepers across Baghdad say 250 and 500 dinar banknotes have become so scarce that they are handing customers celery or sweets instead of change, or simply waiving the difference.\nThe two notes, the smallest in circulation, are worth about 15 and 30 US cents at the street rate. Merchants in both Karkh and Rusafa told the local outlet 964media that many of the notes still in use are torn or worn, and customers refuse them.\nYousif Muayad, who owns a pharmacy in Adhamiya, said the shortage had hurt his business for about a year. When a customer owes 4,500 dinars and he has no change, he takes 4,000 and lets the rest go, he said.",
-      "bodyKo": "**바그다드 소액 지폐 부족으로 점주들 '물물교환' 운영**\n\n바그다드 전역의 상인들은 250디나르와 500디나르 지폐가 너무 부족해 고객에게 거스름돈 대신 셀러리나 사탕을 건네거나 차액을 포기하고 있다고 말했다.\n\n바그다드, 2026년 11월 9일. 바그다드 전역의 상인들은 250디나르와 500디나르 지폐가 너무 부족해 고객에게 셀러리나 사탕 같은 소품을 거스름돈 대신 건네거나 단순히 차액을 포기하고 있다고 말했다.\n\n이 두 지폐는 현재 유통 중인 가장 작은 액면이며, 시장 환율로 각각 약 15센트와 30센트 상당이다. 카르크와 루사파 지역의 상인들은 지역 매체 964미디어에 여전히 유통 중인 많은 지폐가 찢어지거나 낡아 있으며 고객들이 이를 거부한다고 말했다.\n\n아다미야에서 약국을 운영하는 유세프 무아야드는 이 부족 현상이 약 1년간 자신의 사업에 타격을 입혔다고 말했다. 고객이 4,500디나르를 빚지고 있는데 거스름돈이 없으면 4,000디나르만 받고 나머지는 포기한다고 그는 말했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "The Insight International"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
         "act": "",
         "place": "바그다드",
         "km": 27
