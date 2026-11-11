@@ -1,90 +1,90 @@
 {
-  "generatedAt": "2026-11-09T00:42:30.516Z",
+  "generatedAt": "2026-11-11T01:10:46.335Z",
   "query": "(질병 OR 전염병 OR 감염병 OR 사고 OR 의료 OR 의학) when:2d",
   "items": [
     {
-      "title": "예수병원, 감염 예방 공로 질병관리청장 표창",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBtbjZBM2wxajM5MjVnb2VTaUFtY0VEdVUtblppU2V0ZGNlN2IyUUFmU2pzQ3lsa1dZeU0xQTZpVnNhN2VVQXpTZm1IZll6WVJXNzF1eFV3NU5ycFk2alBBQUZUa1Vhc0d2QVE?oc=5",
-      "date": "2026-11-08T21:07:44.000Z",
-      "summary": "의학신문"
+      "title": "속보 경기 성남시 분당에서 출근길 버스 등 대형 추돌사고",
+      "source": "YTN",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA0cDFoMkg1bHNObE5UejNjM2dST05ZSms4QTBrVjBfcjEtTThCUXRuNjgyalluSENPY3dDTF91amI3QlI1R3R6UldKazBNX2dtX0VHUXREeU9IRWI0b2c?oc=5",
+      "date": "2026-11-10T23:23:00.000Z",
+      "summary": "YTN"
     },
     {
-      "title": "제주 첫 상급종합병원 탄생 눈앞…의료서비스 어떻게 달라지나?",
-      "source": "헤드라인제주",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9EUmRqRlNwcC1LaC1kS2NiTlFqQ0FTX1hoazNLUndNQmFHbVIwVjZNeXgtNFo1ZE80V3IwNnhrR0J3THNIUXYzdTZxNW5TYm5za3FRY01zMl8tdGJrcmNfYmMzSVB0eElBenZLLXVJX01hR3M?oc=5",
-      "date": "2026-11-09T00:00:00.000Z",
-      "summary": "헤드라인제주"
+      "title": "출근길 성남 분당에서 버스가 연쇄 추돌사고...부상자도 발생",
+      "source": "경기신문",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1lbE9waTR6SW5ELVYtbmRZZlNEVklmWk4zRnhfa1dERV9CZXh0azJLN3RfRkRCNjB5dTNtTzZMQXdOM29TR1U3MUc4QmJISzJfYmVtSVNscUE0UFQzUVFCYWln?oc=5",
+      "date": "2026-11-10T23:39:07.000Z",
+      "summary": "경기신문"
     },
     {
-      "title": "[판결] 차 사고 렌트비, 부르는 게 값?",
-      "source": "법률신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzeU5HYlFpRFEyc0EtTmZjS2ZxT1ZySlpuZmFBS0JHVzFXdE9fd0l6TEFsMWJJQkNIN19RcW1GaFpmWXdET25zai1ma0I0bVZONzZlaC1wY0xQb1QzbVg1UFhuODdKUUduZlhTZDRR0gFyQVVfeXFMTkVockZJTVJJaDVDWUJ0dDJLcFVvblJrYm9rMVU0MDdTNzJXRWYyLTFreDdpWFV2N29EUGtWV0QxV1UwZWFNUWEzVUlwYmxjTTRfYllqR2JqNEprNXdFeU5FSHN4SjhKUGNvMFZjMEd5b0JB?oc=5",
-      "date": "2026-11-08T21:05:00.000Z",
-      "summary": "법률신문"
-    },
-    {
-      "title": "교통사고 경상환자 '8주 이상 치료할래요' 하루 600건씩 접수",
-      "source": "연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE95bDJBOWZKbzJqOHpxUFFiYXVWSHE2WnBVc0FWUDRPdU9XZURJY0RwLU9aT25oTzhYVFZEUTN4Z2NVRWcySEJtTmc2aE9CUC1DZ0lCV3VOUW1pLUnSAWBBVV95cUxPd0FvVmZYWXdHTUNQbTk2SmtpVnF6MFQ3dkZNV19Dc1dMVnd6c0N4MDdtX3VKR3V2c1l2dUt1RzFMMTJxU3FVMDRXeHVaaUQ4X2RTZDJhS3FHOTFXMVpOR3U?oc=5",
-      "date": "2026-11-08T20:55:01.000Z",
-      "summary": "연합뉴스"
-    },
-    {
-      "title": "요양병원 의료분쟁 승패는 속도와 의무기록",
-      "source": "의료&복지뉴스",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1TbGRaMUpWa2hVdTJqR2Rtd0swM0tfbWlPbVlBM25LSDNNSmI5TXkxSG9oeEY2UnQ3Z015czVsZlNPTElBY00zWU1aQmwzbTRFcEN6U25yU08yRmtxZlVOTFVzNU95Y0tCLWxr?oc=5",
-      "date": "2026-11-08T22:42:27.000Z",
-      "summary": "의료&복지뉴스"
-    },
-    {
-      "title": "[Health&] “거동 어려워진 환자 집 찾아가”...질병 넘어 삶까지 돌보는 주치의",
+      "title": "[속보] 분당 사거리서 버스가 차량 10여대 추돌…“부상자 다수”",
       "source": "중앙일보",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13cGNqUWo4MHcxaTd5MGNIcllnSVVsMFVDcDlGWDhHclB4eWVxaTUwZmY2MGRHUTNJSS1OZkQ3b3ZkRzFKRktfLXowZlNBVk5CRGZhaFFn?oc=5",
-      "date": "2026-11-08T20:30:00.000Z",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE40N3Q5cTI2ck5HNmdxVXIxZ2h4UUMwOTVuQ0N6aDhjbXhsWXBEdDJtZU1sUUNmRlJQM2p1NUNHY0d2cjBCYnV1aVd2SFZSNnNRQ1g1aTRn?oc=5",
+      "date": "2026-11-10T23:29:18.000Z",
       "summary": "중앙일보"
     },
     {
-      "title": "미래에셋그룹 계열사 4곳서 잇단 침해사고",
-      "source": "디일렉",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBXVEV4NURnZXd4anZLUzEyd1RyeVRBaF9mb3doMXlzcUhnSWFBVWdtS1V6R2JKc1E2VnhwU3BzbWRGU2g1RUU3TWxKY0pnYW1JTWx3dUdSTmdiRE0xdTl5MFI3WWoxUQ?oc=5",
-      "date": "2026-11-08T23:13:26.000Z",
-      "summary": "디일렉"
+      "title": "아이엠재활병원, 우크라이나 의료진에 제3차 재활의료 전수",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0zZTBTOXRjMWZPcDNjTGpKMzYtc3d6bzJSM28xTlRMcEJBLVBtQzNLRks5Q19yMnJzMGR4ZFZibmJlYVNzZWdXVHhqSW9ZN2M1X1lORzhFeXhxbWhuYXczYkkxNWlVOGg1bkE?oc=5",
+      "date": "2026-11-10T23:42:21.000Z",
+      "summary": "의학신문"
     },
     {
-      "title": "마취 인력 부족, 필수의료, 보상·인력·협력체계 바꿔야",
-      "source": "메디칼업저버",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9pclRnN0hpM3BzdllWdjAxa3o5MUNlSFkzVFNZQldVX0NYenBXMThYWE93QnoyWkNnZ0sxbWF3alZWS2JIMG9LcGtZaEZWNE8waFppNTNSSkp6VTV0b3ozRUx6Ui1mYnQ5dzFV?oc=5",
-      "date": "2026-11-08T20:56:52.000Z",
-      "summary": "메디칼업저버"
+      "title": "“선박 첨단기술이 오히려 사고 위험 높일 수도”…해양사고 471건 분석",
+      "source": "해사신문",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4wV1YyOXVwZmRRcFR6ai1Eb3c2N3YyVExJdUJRemFZR0hFX25mZXFfSjVPWG5Jakwxd2c0c1RJclhzUWNYWU5DcFN1ZmV0ams4Uld5LVV1U2MzSjJZTXdEQ0lGTU50dXRFMnRv?oc=5",
+      "date": "2026-11-10T23:59:23.000Z",
+      "summary": "해사신문"
     },
     {
-      "title": "[분석] 연명의료 공론화, ‘중단 시점’과 ‘대리결정’은 다른 문제다",
-      "source": "메디포뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fVFppQU9OMXdYXzFDMUFmRHNQMDBUdVFlZEt1WGUyLVRCbDZ4WVpVU3JKcWhjT1Z1TkRkLWxmbmJweTlDRjE3TWhzU3Y2UkFCODBkU3loT2xmeXNnYUd5UHZXX3g?oc=5",
-      "date": "2026-11-08T23:44:01.000Z",
-      "summary": "메디포뉴스"
+      "title": "[속보] 출근길 분당서 버스 연쇄 추돌…차량 17대 사고에 도로 마비",
+      "source": "매일신문",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9MV281N0R6a3lvdWQ5NGdvMGpzRHg2RW1TaFpiNGlpd0MyQ0tuV2QzTlNIWkhKdk9TR0EzSmJEd1Yxd3RGZ0FSYTJ4d2RnN2NBOE1xSmwzT1F4akZ3QWVRa3VB?oc=5",
+      "date": "2026-11-10T23:54:08.000Z",
+      "summary": "매일신문"
     },
     {
-      "title": "[사건사고] SUV가 버스정류장 난간 ’쾅’…인명 피해 없어 外",
+      "title": "UAE 두바이 정부 대표단 서울아산병원 방문…협력 확대 논의 | 의료 | 뉴스",
+      "source": "서울아산병원 뉴스룸",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB3MzBOVTlaQTBhMGRGckpwbktoZFFPZFgtbVhaZzRFSkhxWGRjRExtcG9OekR0T0hZbDRvRmU2V1N6cWd5TUEtbEowNUQybjFKdGQtNm9qRWxZUXJKN1NGTmxHUXdTLXc?oc=5",
+      "date": "2026-11-10T23:33:50.000Z",
+      "summary": "서울아산병원 뉴스룸"
+    },
+    {
+      "title": "미니 의대 하나로 경북 의료 공백 메워지지 않는다",
+      "source": "의협신문",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbjBXRHpjb0VXQ3dzSExNNllKNjRJQ2piUHcwYWVSTW13c0Z3dTBXWWRWLTNoQmJadGRYUWl2MnpqRHUteDVoOHRfcGI2T3FEdmVQUVpfMWwyelU2TWI5Y3ZJLTFmUjAybmZUX2xFcU9Wa2dQUmstUmxIeXVoTlEtdnZGMWtlQk5fZnNz?oc=5",
+      "date": "2026-11-10T21:00:00.000Z",
+      "summary": "의협신문"
+    },
+    {
+      "title": "[속보] 분당 사거리서 시내버스가 차 10여대 추돌…\"부상자 다수\"",
+      "source": "한국경제",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wUUF0aVlIRk82SjZRb1NKbGMyMzZBWXBoNTZtcVZmRE03S0ZjTTUzaXg1azJBWEk3YXRSMy1rT1NGQ0JFNjI5dk5iYWlLYUdZUmRBSC1DaWJtZw?oc=5",
+      "date": "2026-11-11T00:22:00.000Z",
+      "summary": "한국경제"
+    },
+    {
+      "title": "분당사거리 17중 추돌 사고…부상자 34명",
+      "source": "인천일보",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9rdnJlZFZkd3dOSHM4MUdJVm81TUkzTGVWYkZNZ2xNV3JpVlYyWU4wVXBzTzZqc1dFT25ScTVvb0JuSDdNX1BKblpqWmJFREQwcmdwSmhaX21oY0JVSUJJbVdWckUzRXdZRWQ0MlpUckc?oc=5",
+      "date": "2026-11-11T00:07:00.000Z",
+      "summary": "인천일보"
+    },
+    {
+      "title": "[사건사고] 인천 송도 영어유치원 입구에 방화…60대 체포 外",
       "source": "연합뉴스TV",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE45WV80VU52T2JxT3NPaWpyMzdLekJYRGlYT1hxUUFRMFN4NzBJWVpmbGVQVmxkNVA4XzNNYUVqLUVhUk1kWldZQXRzV18wRENKb2x5RFFGeHRDeV9FLXQ5QmR0dUZEV1k?oc=5",
-      "date": "2026-11-09T00:03:00.000Z",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE80YTlmUFFHNFZBc2QwaDYySkJXZ2RQcllTTzZmYWZzNXFKR2dCYjZHb0k1QjhvaXJieTdtRkE0WnBydl9PRk1RLVFoNnhRaHpzd2txY3NBOVoxM1hZM3cwN25nRk9MN0E?oc=5",
+      "date": "2026-11-11T00:06:00.000Z",
       "summary": "연합뉴스TV"
     },
     {
-      "title": "“질병의 역사 넘어 인간을 보다”… 국립소록도병원, 한센병박물관 10주년 학술대회 성료",
-      "source": "복지타임즈",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWQTJYMnNPbFVFS29sb0lGZy1nRlBqVlBCUEMwLUhPYWlKUXhXa193YVZUQ3dzd2xHVnUxZXIzOFdWY3RiYnJON2tBREt2eU5sSHVmUWltazhRSFdPOTBEaUVUeFYzak85VGRQTQ?oc=5",
-      "date": "2026-11-08T23:09:50.000Z",
-      "summary": "복지타임즈"
-    },
-    {
-      "title": "무림하우징, 사고 방지 특별 집체교육 실시",
-      "source": "한국아파트신문",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5OdTJaUjFlOXRPYlV2VndjNV9qX3kxVmRnWEZRNnk1S3ZmNlNmdVhESmhVY1BVcEJPM2xiRW9GWmlEbktBRUstRnNZNHBHZExLZFZwNG5UY1o4UXJqS0tvcTJlUC1jdmxk?oc=5",
-      "date": "2026-11-08T23:41:54.000Z",
-      "summary": "한국아파트신문"
+      "title": "‘출근길 날벼락’ 분당서 시내버스가 차 17대 추돌…“부상자 34명”",
+      "source": "경기일보",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBtYVBST0NFR1g2aWpFWmVzTmdYUkJMSV9kRUc0cF9PU2ZDeDFpcFpncnFGNndqX2FXc0s4cXFCa0VtdjVOSTNmTkxRQUpPVGZKZXR1ak40X0tBS3c?oc=5",
+      "date": "2026-11-11T00:35:05.000Z",
+      "summary": "경기일보"
     }
   ]
 }
