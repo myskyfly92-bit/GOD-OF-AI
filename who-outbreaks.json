@@ -9,6 +9,14 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO and African Medicines Agency advance regulatory cooperation at inaugural Agency Week in Kigali",
+      "date": "2026-11-10T23:00:00Z",
+      "summary": "The World Health Organization (WHO) reaffirmed its commitment to strengthening Africa's regulatory systems during the inaugural African Medicines Agency (AMA) Week and the 11th African Medicines Regulators Conference (AMRC), held from 25 to 30 October 2026 in Kigali, Rwanda. Bringing together African regulators, policy-makers, industry and international partners, the event marked an important milestone in translating continental regulatory ambitions into coordinated action to improve access to s",
+      "link": "https://www.who.int/news/item/10-11-2026-who-and-african-medicines-agency-advance-regulatory-cooperation-at-inaugural-agency-week-in-kigali",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO launches “Together for Science and Health” movement to strengthen trust worldwide",
       "date": "2026-11-10T21:00:54Z",
       "summary": "WHO today launched Together for Science and Health, a new global movement uniting more than 240 organizations behind a shared commitment to strengthen trust in science and harness its power to improve health and development.",
@@ -136,14 +144,6 @@
       "newsType": "News release"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Community protection for Bundibugyo virus disease: supporting the response through technical publications",
-      "date": "2026-11-04T13:00:00Z",
-      "summary": "The World Health Organization has developed a package of technical resources to support community protection during the response to Bundibugyo virus disease in the Democratic Republic of the Congo and neighbouring countries.",
-      "link": "https://www.who.int/news/item/04-11-2026-community-protection-for-bundibugyo-virus-disease--supporting-the-response-through-technical-publications",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Shamonda virus in human - France",
       "date": "2026-11-02T14:26:51Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON616"
     }
   ],
-  "generatedAt": "2026-11-11T03:40:25.452550+00:00"
+  "generatedAt": "2026-11-11T13:09:41.915419+00:00"
 }
