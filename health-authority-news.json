@@ -1,7 +1,14 @@
 {
-  "generatedAt": "2026-11-11T01:14:15.930Z",
+  "generatedAt": "2026-11-12T02:16:15.173Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
+    {
+      "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
+      "source": "질병관리청 감염병포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
+      "date": "2024-06-10T03:38:59.000Z"
+    },
     {
       "title": "채용공고",
       "source": "질병관리청",
@@ -38,13 +45,6 @@
       "date": "2025-12-16T15:12:03.000Z"
     },
     {
-      "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
-      "source": "질병관리청 감염병포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
-      "date": "2024-06-10T03:38:59.000Z"
-    },
-    {
       "title": "지침",
       "source": "질병관리청",
       "agency": "",
@@ -63,7 +63,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-10T08:59:04.000Z"
+      "date": "2026-11-11T09:05:11.000Z"
     },
     {
       "title": "감시체계 연보",
