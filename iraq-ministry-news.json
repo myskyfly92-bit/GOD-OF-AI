@@ -1,6 +1,70 @@
 {
-  "generatedAt": "2026-11-12T11:32:11.693Z",
+  "generatedAt": "2026-11-12T21:52:31.245Z",
   "health": [
+    {
+      "title": "إعلان مناقصات / وزارة الصحة – سفارة جمهورية العراق في جاكارتا",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5NcXBYTGhYeWNCMmlOaVZTV2k2NkkzeTUzOFQ4c3NiUmFfRXM2b0tOV1piOHltQkRXakRyX3ZLWjBtSDBZY0FUN2dnZw?oc=5",
+      "date": "2026-11-12T18:31:18.000Z",
+      "lang": "ar",
+      "titleKo": "입찰 공고 / 보건부 – 주자카르타 이라크 공화국 대사관"
+    },
+    {
+      "title": "المجلس الوزاري للخدمات يوافق على الاستراتيجية الوطنية لمكافحة ظاهرة التسول في العراق",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9YeXFWUkpGdFEyVk5TMDlRZ2FHdFZaQV9pNHBpUlhkNTc4SzRDQjhMLVcyRlVLLWFpb19xUGF6Q241QTBfbkstQzZJMFQ?oc=5",
+      "date": "2026-11-12T16:26:07.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 내 거지 현상 퇴치를 위한 국가 전략에 이라크 서비스부 장관회의가 동의하다"
+    },
+    {
+      "title": "نوفمبر 12, 2026 – سفارة جمهورية العراق في الدوحة",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5DMTNVNnRhNEcxTW80cFgxQlNMZVdfc3VLbGl1cUZ4VUlyd1FJazY5VGVhR010NVIybHZza3ZBYkROY0hLYUJTZ0xhaUs?oc=5",
+      "date": "2026-11-12T15:56:05.000Z",
+      "lang": "ar",
+      "titleKo": "2026년 11월 12일 – 도하 주재 이라크 공화국 대사관"
+    },
+    {
+      "title": "اعلان مناقصة – سفارة جمهورية العراق في نيروبي",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0yU1VkbXBmeVZ6QnI0Z0Z2VjZGa3FGOWRMU0dqdFN4OWs1S09CSkdCLVNScmpIY2VHdzZRRGx3VVZUWTJmTnBnVmc3NA?oc=5",
+      "date": "2026-11-12T14:50:08.000Z",
+      "lang": "ar",
+      "titleKo": "입찰 공고 – 나이로비 주재 이라크 공화국 대사관"
+    },
+    {
+      "title": "الصحة: تأسيس مركز عربي للوبائيات التطبيقية في العراق يعزز دوره في منظومة التعاون الصحي وتبادل الخبرات بين الدول العربية",
+      "source": "عراق اوبزيرفر",
+      "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQNzJIb0V6SkZ2R1d2TEVHb19HYlhyTkJaNHlaYVhpc3RRYlNxZTlGbUw0cEhrcHhEZEo1RGszb3REREZJd1FyTXlNT2ZjVWxWMEpHY0tCTjZkRjdyX3ZQaXRCQ0dORi0xX182QWJRWm1idnBmVjBxeENERmdUS1pHQ09tbHF5NTdUMEtyUXJNclhUeEw0bTE0MG5JQ0RJWk96RHpRa1AzN3FjUkR0blFVQy1DNVlsQl9iRzlzTUdNWW5qQ19FTmpPcWhDR19BZGZHNGVOc2t2OWhCVzF2RWEyR3NGSXBGTExudG80cHJTcmI1azFKRkRQdXk5R0d3QzZnUGxXNjJEVmlfVGRxa1l2ODlZZ1JiRjdGMTluLTJZVHIxNFFoSm5OcmRqb281VlpfNzlaVE1JVS00NThPMVowTTlTNG5QUQ?oc=5",
+      "date": "2026-11-12T13:58:16.000Z",
+      "lang": "ar",
+      "titleKo": "보건: 이라크에 아랍 응용 역학 센터를 설립하여 아랍 국가 간 보건 협력 체계 및 경험 교환에서의 역할을 강화합니다."
+    },
+    {
+      "title": "العراق يطرح استضافة مركز عربي إقليمي للوبائيات التطبيقية",
+      "source": "قناة دجلة الفضائية",
+      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5NWmZDSjFfMGc2dEZFXzBjb0FXa1VmLXZ1YlkwUFBBMjJFR19EUldBem9TWlNrRzg0cVBzdkZBc21LQlk?oc=5",
+      "date": "2026-11-12T13:41:51.000Z",
+      "lang": "ar",
+      "titleKo": "이라크, 아랍 지역 응용 역학 센터 유치 제안"
+    },
+    {
+      "title": "وزارة الصحة تشارك في أعمال الدورة (65) لمجلس وزراء الصحة العرب في القاهرة",
+      "source": "الوكالة الوطنية العراقية للأنباء| نينا",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5BLUs0OG5EcGlWajMxdXV3LXY5cU1lMENBM1dlOEt1YUozTVhYWmlUQ0hDWVgyai15S3NmcWxmYXNaaDB2OFRIRTZkVVZiYXd6NDl0MDV1ai1wbTdSaWZEUy1sVQ?oc=5",
+      "date": "2026-11-12T13:30:51.000Z",
+      "lang": "ar",
+      "titleKo": "보건복지부가 카이로에서 열린 제65차 아랍 보건장관회의에 참석했습니다."
+    },
+    {
+      "title": "نائب وزير الخارجية اليمني: مؤامرة أميركية إسرائيلية بتمويل سعودي تستهدف العراق ومقاومته",
+      "source": "قناة نبأ الفضائية",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBMdGdvaGNKUW5HRGFlU2xLVHlZY0FMN2YwUXVhS09NZG5lZzNiekUwM2V5Zm5OY0kyUVpQaXhMVFZXRVNWa0ZIQjh3SQ?oc=5",
+      "date": "2026-11-12T11:38:42.000Z",
+      "lang": "ar",
+      "titleKo": "예멘 외무부 차관: 사우디아라비아의 자금 지원을 받는 미국-이스라엘 음모가 이라크와 그 저항 세력을 겨냥하고 있습니다."
+    },
     {
       "title": "Trump administration to weigh pharma giants’ appeal in Iraq terror case at Supreme Court’s request",
       "source": "Новости GxP",
@@ -8,6 +72,14 @@
       "date": "2026-11-12T11:23:17.000Z",
       "lang": "en",
       "titleKo": "트럼프 행정부, 대법원 요청에 따라 이라크 테러 사건과 관련한 제약사들의 항소에 대한 검토 예정"
+    },
+    {
+      "title": "العراق يفتتح \"النفق المغمور\" لربط ميناء الفاو الكبير بطريق التنمية",
+      "source": "العربي الجديد",
+      "link": "https://news.google.com/rss/articles/CBMijgRBVV95cUxOQ2ZQeFhHTUVJdkFsWWdhWVcxaWJkOC1tZVB3eEJMM0cyZ2VvT1dOdGJBdUJ6Mm4xcTJpUlI0RDFQMjlseXAwclB0SXQxRHZ1UnZNMFlYUW1wZmY5dW44V2xoTVdTRGVMWjBXdU5IUWtObzA4ZS1ZYTBiM21MSERPdzNBeWFaeDh3czVKN2o1RG5BSEUwTHdmZk04bVFWcjEzQWlERFl1VXN3TE9OWWtURFBZeWlMbWoxNXFBN3lvOHh2Smx4dkVELWJZSjFDeUcycG5OMkxGU3J0cUE2MTc2UGZDNThGSDBCV05WSENacWtqV2JpbExfY0ZhRjBuN3E3WTdraEJ5NHFMY081OTZNVUthc0ZhY0V2enlKVzBUMFFVSkVPUC1mejFVR05Da2pVUGxYMlc5Z2FJM0FDUEFqdDJrTExEN0ZxRDAzWnpkaEJQbWo3VnRKU0plVzZuTFRIUXJKSmZmNU1hMGktVHNydGZhZVlNSmx0Mm56bHZNRmdFUGE3ZHJZTlV0eUFxWVhkNmt5U08tclVpenZaVnpQMm9sX3lxcEt3WDZaaVNTZzNNRG0wd0J4U2QtUENKbUs1allaTUhrdnNkcVpxM010TDZnSlRfQ0tJYzBPXy0tZmRtVlg3eFRCU2hWWFQzeDhUQmtlQzVCT2NYdDNVeG9ZalBlUkJBMFNVUDVzQ2d30gGTBEFVX3lxTE42eml5TlNRclBCc21XWDRjZS0yd3V6YU5KZWNXS0tSUERkTkNQQkpzVnlCcjR4QWpGR21EZ0YzQWxDODdiV2FrN1dPcnlEYW81MTgtY01DZ1FUaFhSaUE5cGxLTjNwNlpyTUxkaHFGaC1LZUFyeHlucHNKMzk0SnpfWk5kWDJXUmFhMGlyMzNHWXVqOWJPemplcThIS1lYRzRRQXN6TjRnZmFyekR3bU1xd0gtOHRmOVcyWkxWUmpJcUljaVJSbnVQTjFxS0dxdnZIUGJVd2JhZno3d1VZQVpUTkNUdmZWWThobjJhRThTTGZHMi1XdHozWGhOQWNQdmZMaGQxeXN2Ulk2cUJMWkVPM0pWX1ZIU3NIMjVNZG9heGpMT05aeWZKejFKai13a1Jra0dMRXRDVG1fME5lSXp6SGdGQ3JaaWFvbE9RQXZMQkhrVmcwdjdCeHM0X05pcGJ0LTJQRHBLRTU5dk5qMDBPOGsxOVhWbnRuS3RNZ3hLSUJCZTN3S0tGMGRCaG9uY242dE5SaGRLMVZ5cUxEaUl3VWtwN01LbDVJVW9jUEtOWWZNVEdCR1UtQklEU1VHZjhQNkU5elNHY2pSVkdtbjZqSURzZEpoWTlUNUhzTHFKb0l5VmVLZ29mNXhUME9kOUZwRWx5eGJOS3VabUxwRFFzd3Buem9rdWZoLWhvOWV2OTdxRQ?oc=5",
+      "date": "2026-11-12T11:09:23.000Z",
+      "lang": "ar",
+      "titleKo": "이라크, 그랜드 파오 항구를 개발 도로와 연결하는 '침수 터널' 개통"
     },
     {
       "title": "إطلاق أعمال تأهيل صالات العمليات بمدينة الإمامين الكاظمين الطبية",
@@ -24,81 +96,33 @@
       "date": "2026-11-12T10:07:03.000Z",
       "lang": "ar",
       "titleKo": "이마메인 알카짐인 의료도시 대형 수술실 개보수 공사 착공"
-    },
-    {
-      "title": "الصحة تطلق أعمال تأهيل صالات العمليات في مدينة الإمامين الكاظمين الطبية#",
-      "source": "عراق اوبزيرفر",
-      "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPMVRLbmttaFJkN2VFM3cxVTJfODUwSDlhb0tIWEktSnB1c09rZk9PUHRiQXo2ZEdWM281RjF2U2JKZlB2N0xKLUNKTWpzdXRDWDMyTG0zWGRRaHVsTzE4Z09xYUFGT0E4RExYZl9VNGlCV1lUT0JIMDdKbGtDZ2RPWjNjQmE4R0NBdEtFaFRfSVRLcFR1X1YzM2ZPb0VLdV9faWFIMnVPM0RRMXNGa1ZQNGpBZERKdzJPNTlqREJ2bFo0SG1qZ1kzZkN0dHZ5NFhxMkthMWdmMTZ3UEtLVlhsendGX3J3ZjdQN0ItN0ZSc2o0UXFMN0ZsOHNSemdvblNBSkdyeHdQWEZFX1hOYmNEYjNHeE9aVXkzck43VHZvcENhSDNEWVdLd19zazlMd1k0UUVQX3dFSlJGaU1zTGhYeUlJYS1Wdw?oc=5",
-      "date": "2026-11-12T09:58:02.000Z",
-      "lang": "ar",
-      "titleKo": "보건부, 이마민 알카짐인 의료도시 수술실 개보수 공사 시작#"
-    },
-    {
-      "title": "وزارة الصحة العراقية تشارك في أعمال الدورة (65) لمجلس وزراء الصحة العرب في القاهرة",
-      "source": "وزارة الصحة العراقية",
-      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9QUXhnNXF4MjhFc0p5RDhpYnFHcjhVT09JNC1RN3lDTVVLZFlWcm9DZFVpVUd1Q3c1WFlhN1E5d29zSXVXTXVCMw?oc=5",
-      "date": "2026-11-12T06:44:00.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 보건부가 카이로에서 열린 제65차 아랍 보건부 장관 회의에 참석했습니다."
-    },
-    {
-      "title": "صندوق استرداد اموال العراق – القنصلية العامة لجمهورية العراق في سدني",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBtVlIxcHI1Tld4c28wdy1FQmdNcHRhaXJxRG5GMzFVdHd6bVdkSVNKUVU4aWJUcDJrTlhheWs4OXhsT3dIbkxuXzlB?oc=5",
-      "date": "2026-11-12T01:22:08.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 자금 회수 기금 – 시드니 주재 이라크 공화국 총영사관"
-    },
-    {
-      "title": "صندوق استرداد أموال العراق – القنصلية العامة لجمهورية العراق في جدة",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5LbVpvLXJIWXktSkhvNHRldjNmTm5RMFZUTm5rNUdVU3ViQy1qc3dKSmJsSUhQVHF1N2syc1p3VVZXWHVkQVZoLUxNcw?oc=5",
-      "date": "2026-11-11T14:52:06.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 자금 회수 기금 – 제다 주재 이라크 공화국 총영사관"
-    },
-    {
-      "title": "القنصل العام لجمهورية العراق في جدة والمندوب الدائم لدى منظمة التعاون الإسلامي يستقبل المندوب الدائم للمملكة العربية السعودية الشقيقة – القنصلية العامة لجمهورية العراق في جدة",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBMQUFGQkdsam1BS19QNTBYelBqSFI5RVdnYVBwcWRtbFZHNG4wV2JvcTdLMGRWZUYweWcxSWVYN2NvWE1KcXZtUFJBbw?oc=5",
-      "date": "2026-11-11T14:52:05.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 공화국 제다 주재 총영사와 이슬람 협력기구 상임대표가 형제국인 사우디아라비아 왕국의 상임대표를 접견 – 이라크 공화국 제다 주재 총영사관"
-    },
-    {
-      "title": "البنك المركزي ينظّم ورشة توعوية عن مرض سرطان الثدي",
-      "source": "البنك المركزي العراقي",
-      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5yeWluYnFYRmY0V1ZVS2J3YUVJdmE0SC1MRGcwTFRSX0RCdS1vYjlySmowUUhWY3ZDWEdlc1p6ek1Vd2c?oc=5",
-      "date": "2026-11-11T11:17:28.000Z",
-      "lang": "ar",
-      "titleKo": "중앙은행, 유방암 인식 제고 워크숍 개최"
-    },
-    {
-      "title": "“الصحة” تدعو 72 طبيباً من خريجي 2022-2023 إلى مراجعة مقر الوزارة خلال 48 ساعة#",
-      "source": "عراق اوبزيرفر",
-      "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxQX1JDaS0ycUZRUTRSZk1CV1pmQTFqbEc4NW1SSnpsNF9BemMyaTNGQVFMUVhDazdqNVM1amhTQ2Vfc3NKSWVpOU5uXy1wUFIyTy1pYnhnMEJqQS0tY3FHclQwWnZRaVhJSTZoT1lXdWtXanl5TThNaXFyU3I4RmVHRkt4MHlwNU56TkVPQm1iWWEyeGlwcC0wWUN3R19yblFPLVBRLTlMVFc0bXduT2ZFMUppM25JTGVyZlJwNktlRGZPNnJTeFlSTHlwbElVc1pCQWhMdmN6ckZMVElLOG9qSnN4X1M4Tk5iWVRfOHRpRVJKZ1Uxdl8xZHZNX2h2OC1LNWZ3ZXZvSlJveHVKRm0yM19Vajg5S1ROajRkWS1GdDFKZEVOVTFlVEJxM3U1VUt3S09pQWZiQTJDMFRFMk1xUg?oc=5",
-      "date": "2026-11-11T10:26:16.000Z",
-      "lang": "ar",
-      "titleKo": "MOH는 2022-2023년 졸업한 72명의 의사를 48시간 이내에 교육부 본부를 방문하도록 초대합니다. #"
-    },
-    {
-      "title": "العثور على جثة النائب العراقي السابق أحمد العلواني في بيروت بعد 4 أيام من اختفائه",
-      "source": "الاستاد الرياضي",
-      "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNenM5SlFoRS0yMDVEZk5JV0RSTEZjU1lnbzYxZ3Y1OXJpRHlLUHNvam04T3ZKaGI4WWFBTjFacjhwSHlHWVAzamctLUJDOWRRSjBLS0Vlb2pISkdhNE8yaUtmaldBdk9wcnBDVF8yTTY1bzAzUXktOWtXbldLR242U0NKcUg0S0hMWEtYNFpJc2ZreWZLcjBTQm9RamE5S1BRWFAyREpkcnQtOTRXS3F0YmoxOVZqWXBZeEJrcEZNWkJDdHhUd2o5MEJ0QlRsbGlTYU5JQjBIcF8zT3NENk5VTmY3RGlFZVFacUxla0dpNFBFUUdxVDVZVmdmNy05ZzJuRy1uZVlvSzVYaEVvMnRHQlhTR2Z5a3ZHZGJNZFBYR283V3FqeFM2eVI0R3VMOW54a1hpSHB4MzJuMnJZUXVWSWRHd2lqYlY4SXlFYVIxQQ?oc=5",
-      "date": "2026-11-11T00:59:34.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 전 의원 아흐메드 알-알와니의 시신이 실종 4일 만에 베이루트에서 발견되었습니다."
-    },
-    {
-      "title": "القاضي الحاج يشرف على تحقيقات مقتل النائب العراقي السابق العلواني ويتابع التحقيق مع خمسة عناصر من حزب الله أُوقفوا في جرود البترون",
-      "source": "Elnashra",
-      "link": "https://news.google.com/rss/articles/CBMisANBVV95cUxPVXpxdVFHRjgwdWJYZFUxUFM4R3dkZlUteG43UFNlVXdlMXdLSzhPSTctNFJ3dHdjSWhVVUJYcXBiY21rcEltSkhleWdlcXBhSVZrUEJucXJQS0VqZVM0QmE4SlU3M0RNak5EdFBrRXJhOU9sY3lsV3V5UlVTVlVwQXQySGg2dTcyaVo3WXREUzQ2d21FbFFRc3hiZE5XZnNTVGpZQ0RkMEZVV29KTS1mVFpZWV9QdGlSY1M4MElscW96WG52QTYzQ0t3aXNuOEV2aW5YT0g0Y1ZKNm05M3cxUWZvWDh0WHZZbWJmYzVIV0tUZlYyaV9LR3dtWXNSSS00dDZRU3hRaTdnekgyWk5hN3NQcWJIZEY3X0s1YnFRbElZVVlSRHFPRkZEcGNGTVpPMG12NUNNNlEzaVRrWXItTDl1TGwyQTlBdFBHazl3enNVb0tYQWtuZ0UtRHM3b0NhTzVheElseU9GWjlMblJXcVNZZ1pCNEsydW1PVk1Bb2JDaVRmNUhCNU9NSWI4TWIwdnFIQkVFZ2Zxem1OLUJtRjN4eFFYUjhlemFzNEVieWw?oc=5",
-      "date": "2026-11-10T19:50:40.000Z",
-      "lang": "ar",
-      "titleKo": "판사 Al-Hajj는 전 이라크 의원 Al-Alwani의 살해에 대한 조사를 감독하고 있으며 Jaroud Al-Batroun에서 체포 된 5 명의 헤즈볼라 회원에 대한 조사를 추적하고 있습니다."
     }
   ],
   "environment": [
+    {
+      "title": "من مصدّر لمستورد.. كيف ضرب الجفاف الأمن الغذائي وفرص العمل في العراق؟ | التلفزيون العربي",
+      "source": "التلفزيون العربي",
+      "link": "https://news.google.com/rss/articles/CBMihwRBVV95cUxQcGFPcVJxTWVQR3VFNTQwX0x6Y0doQ2Ziek1MU1RwVnhvWkZ0SEFJb3VSNVRZbk5uejNPUmRjOGJZbVBmb3JUWUwwdWgtVWxqeDV4cEE3SnpUQVNLRzZocTBkM0NCbHpBVkdKVTFTSXhmdnNVa1lRN0xUUjUxdGFuekxlMHRFaVR5UTdTWGl0dXJHNi1iNk1LRVR0LXFwVWZaUEM4NS03ZkZSY0FLdWZZbnl1N0ZyTWl2NjFDaENVdVl6RnJKUi13andxUjY2bGhmYmFSaWhTVl9XOUV0aGpOMjluRUxXc2NHejVBNHc0T3AwY2JHUU9BcUVjM2VRdFV1NUdDb0VJdVZ6ZXVsVmlFMDFPMTNpbENmckpXOXFTUndFQ1d4Z0dZWlFpNVFwc0pfd2V1aU11SmdzVkFqV0VDeXlqazFDSGMzRHpuYS1FRXdzOFpuS2JfWk5LR2RSZVFfRjdRR1lfSkJnZXZMN1NFTFVTZDVVeVRpbGdxZ2N6bzBWYm5FZUl4MmRXelA1RWpsOEdFRXV2dEV1aW1sWGhxSWJCUjh6a2w3NE02MUYxUXlrRjlOOWUyRTlqd0F3NDdieHBxcmswNndHNUFJcm5NaWVKaDhQUWxPSUtWbkkxZnNFQW5oQ1BvdVN2NVN4UXh0dEFfS3F2bkd5eGctRjFvQkJ2bU9oOTjSAYcEQVVfeXFMUHBhT3FScU1lUEd1RTU0MF9MemNHaENmYnpNTFNUcFZ4b1pGdEhBSW91UjVUWW5ObnozT1JkYzhiWW1QZm9yVFlMMHVoLVVsang1eHBBN0p6VEFTS0c2aHEwZDNDQmx6QVZHSlUxU0l4ZnZzVWtZUTdMVFI1MXRhbnpMZTB0RWlUeVE3U1hpdHVyRzYtYjZNS0VUdC1xcFVmWlBDODUtN2ZGUmNBS3VmWW55dTdGck1pdjYxQ2hDVXVZekZySlItd2p3cVI2NmxoZmJhUmloU1ZfVzlFdGhqTjI5bkVMV3NjR3o1QTR3NE9wMGNiR1FPQXFFYzNlUXRVdTVHQ29FSXVWemV1bFZpRTAxTzEzaWxDZnJKVzlxU1J3RUNXeGdHWVpRaTVRcHNKX3dldWlNdUpnc1ZBaldFQ3l5amsxQ0hjM0R6bmEtRUV3czhabktiX1pOS0dkUmVRX0Y3UUdZX0pCZ2V2TDdTRUxVU2Q1VXlUaWxncWdjem8wVmJuRWVJeDJkV3pQNUVqbDhHRUV1dnRFdWltbFhocUliQlI4emtsNzRNNjFGMVF5a0Y5TjllMkU5andBdzQ3YnhwcXJrMDZ3RzVBSXJuTWllSmg4UFFsT0lLVm5JMWZzRUFuaENQb3VTdjVTeFF4dHRBX0txdm5HeXhnLUYxb0JCdm1PaDk4?oc=5",
+      "date": "2026-11-12T18:51:41.000Z",
+      "lang": "ar",
+      "titleKo": "수출국에서 수입국으로... 가뭄이 이라크의 식량 안보와 일자리에 어떤 영향을 미쳤습니까? | 알-아라비 TV"
+    },
+    {
+      "title": "الأردن والعراق يبحثان آفاق التعاون في حماية البيئة والعمل المناخي والتمويل المستدام",
+      "source": "قناة المملكة",
+      "link": "https://news.google.com/rss/articles/CBMinAVBVV95cUxNQTVJaHp6cjFBSGZScWZTNndxSmFycXZELTVuVUpHTDVydHQ2b1hIUUJXdHkzaFJiVTJ2c0tQVWVpZWhreG1Dc3ZXTXJGT2dLRG9FNEpPUXEzWEp4OXJFOW5mNGpocXhLQTk1dWNlbUpoQ3Y4YnU5RTZQOURuS25Zd2FBWHljT0xHQlpYdkViMXQ5NVRzTVhzQkFOeEgycmxRRzdNRkc5dzc4cjdhNkN3LUpXM2VueWg1dGlGSmhiMWE4NzdUbXNvMktNNHdpZmZsSHlQUWlsVjdOQ19LYjVIZWxvR2F1Zm5BOXZCWDFCbUZHMi1RNUltbEVqdzJVeUpVMFdRTklqXzR0dmxsRmNxYUk3aWtBLTlZZThleUVoNkZESElaNms4YVBZVVhCenc3a2o0Y2Rnc3JGUnNLM3ZJQ3JyV2Z4YU55X19ocGQ4aTJPcF9sbzd5Ql9fandGZWxUSmhPa0ZLdEg0YnYxd3hpdm9od2tYMk5PUzNYYmZyZUZQMmp2eDVDakpHRHdVZFp1WEJjWTdHTEpPU3pqbi14dlcycHVrTXlpeVZFOTlZYklzQkw5R1hxZ2hzbzNCVlpjd3pUb2c2Qk5sc3VDX3Fyd1J5UlMxSkpWTEFCVTNsOTFuY1BTdFlicWItaUE4bXdjT2N4T0NCUmg1ZHQ5NFNWZXlIanFDNlpVcDJXYXJla0VHcFFYMEtORDJJdkloaHRHRHJzbkNEdVUya1pUTHd6ajdnTm9oNVgxSWhVVjV0b3FXZzBuWC1nMkFFLVBFbDhUU2NTdmpCMTZtN1ltNl9PTlZSaUpBNzVQWHdid0lCYlRRN19id1ZoYUpCNlZzSl9GRXE2YWFuRk0zMHZzWjVqM290cWRSSHkxVEF2ag?oc=5",
+      "date": "2026-11-12T16:14:55.000Z",
+      "lang": "ar",
+      "titleKo": "요르단과 이라크, 환경 보호, 기후 행동, 지속 가능한 금융 협력 가능성 모색"
+    },
+    {
+      "title": "الصيد الجائر وغياب المراقبة في العراق",
+      "source": "DW.com",
+      "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxQY1paS1dyamVJMlNvT2xDWHlQLWlXZXpaQUhUVnFURzloUml1UW1yZ09wWVBjR3VBcE5LLTFzdHJoTldybHl2bEhGQW94cmRXTlNzLU9NcjVydFZIM3V6cklmTFY3ZWVGdm5iQ1E5RkN3Y2ZCVU5SVURzR0g4dWduTllmbUdSdDFQUGNEcDNWV0JPUW1uc05yeE40d1Vqam9Oc3lPOGtuLWJVZF9OaGlVSC1MSEo0QkZPckcwZ0xqRDZYaUNSSHVkczltVHRmWXotSG5xeGR1VElkdjBab3lkYnJkUHlEbEpTMmk4aHV4NXVGSDFmM3I2X3dUNDY3YVR0Sl9xUnRsNzlJNGM1ZmdwZkpmUmQ0ZzJEWEpKbkczQzc5VUZObWotUTdVcHFZUkFOZ1M4d1diZFRlZDl5enZWMVgtVGQxb21EV2xVVnJ5WEw3Xy1O?oc=5",
+      "date": "2026-11-12T14:22:48.000Z",
+      "lang": "ar",
+      "titleKo": "이라크의 남획과 감독 부재"
+    },
     {
       "title": "شرطة البيئة تسجل 87 حالة صيد جائر في العراق خلال 2026 وتستعد لإنشاء مراكز إيواء بأربع محافظات - E C O N O M Y",
       "source": "N E W S",
@@ -116,12 +140,36 @@
       "titleKo": "환경 경찰: 위반자에 대한 2026년 및 3년 징역 동안 87건의 밀렵 사례 기록 #"
     },
     {
+      "title": "تسجيل 87 حالة صيد جائر في العراق خلال 2026 والتوجه لإنشاء مراكز إيواء في 4 محافظات",
+      "source": "عصابات الجولاني تعدم الأب الروحي لكنيسة مار إلياس في طرطوس",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1GQk5PaWN0dVpMQ0JXTTZvSkFuc19OM2pSWkNDTVoxdFlBZXltVHBub05uZUpZd1BTV2JiVUhhcllCVU0wWXNoeTlHTzlXUVU?oc=5",
+      "date": "2026-11-11T07:41:00.000Z",
+      "lang": "ar",
+      "titleKo": "2026년 이라크에서 87건의 남획 사례가 기록되었으며 4개 주에 보호소를 설립할 계획입니다."
+    },
+    {
       "title": "شرطة البيئة تسجل 87 حالة صيد جائر في العراق وتستعد لإنشاء مراكز إيواء بأربع محافظات",
       "source": "وكالة بغداد اليوم الاخبارية",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PdU1FLUZ0MThVb21PeU0xb2c4V2pPV3RDTDViaGhaYVY0UnFyWGpuMmRlSlA4aF9DTmpJc0oxU19TeG4xNThjczI5eFhzd1pvS2c?oc=5",
       "date": "2026-11-11T07:35:07.000Z",
       "lang": "ar",
       "titleKo": "환경 경찰은 이라크에서 87건의 남획 사례를 기록하고 있으며 4개 총독부에 피난처를 마련할 준비를 하고 있습니다."
+    },
+    {
+      "title": "ضعف الرقابة وتعدد جهات منح الموافقات يعقدان مواجهة الصيد الجائر في العراق",
+      "source": "جريدة المدى",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9vSW5ydGJYMHJveXhyZ1FSdFdid0hJQ05VNGc5eTVDOVJYdWdoRXpvSW5FSFVxNlFSSDdzUHk1bzhZY2VZd0E?oc=5",
+      "date": "2026-11-10T21:11:19.000Z",
+      "lang": "ar",
+      "titleKo": "감독이 약하고 승인 기관이 많아 이라크에서 남획에 대처하기가 어렵습니다."
+    },
+    {
+      "title": "أهوار العراق .. من أساطير الخلود إلى أصول وإقتصاديات الكربون – جمعة الدراجي",
+      "source": "Azzaman",
+      "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNbkx3QmVBSTYzRF9KbFpIcDdmWGxBMmUzVm1YZnBNdDE5UUs1Y0lIR1dPWnlmcWVzcGJzZkQzdHNmSzJNSEtyeURBS3BlWDRxOXdfZzFsTTdmdW5PTXp4U3c3dEltekI1RXBzZTF6U2FRTW1PNldFMG5HZ3BURDdiRTRCN1BQTEFZZlRSUXlSMHA2MGlrbHZkQmY1Zy1rNmhkbjRmR0RmWWs2VXJEeTJ6MW9Ya1RpOGhrUzg3cG02enU3ZXExUnhyLVJoTGZxTWcyTU5tdXFmdGJBN2dTb2E0ckJIVTNXTXVLZzdPNk9MLW5GbzMxLVZSWUNzV3pkYk5NSkRyWnAwczRINDBUbXNOZ2pkcXhhbTBiVXFqVXJVVElKb1huaWRXbjRqVUstbW1zR0E2NWloaXZtZTJ6Q3c?oc=5",
+      "date": "2026-11-09T18:35:26.000Z",
+      "lang": "ar",
+      "titleKo": "이라크의 습지... 불멸의 전설에서 탄소의 기원과 경제학까지 – 주마 알다라지"
     },
     {
       "title": "العراق يتجه إلى استخدام الطائرات المسيّرة في إزالة الألغام",
@@ -146,38 +194,6 @@
       "date": "2026-11-09T08:00:00.000Z",
       "lang": "ar",
       "titleKo": "환경: 기후 변화에 대응하여 3개 주 20만 7천 명을 지원하는 프로젝트 » 이라크 통신사(INA) | 이라크 뉴스"
-    },
-    {
-      "title": "شهر على إعلان الطوارئ البيئية في العراق.. المعالجات تنتظر التمويل!",
-      "source": "جريدة المدى",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBDZ0tneDVzdUE5QUpZdlVCY2s5TWl5bjZqaXRLa0NKZGVQU25IZVhCcmQwcU1UQTJ4WngxSGZvclk5WlMtRmc?oc=5",
-      "date": "2026-11-02T08:00:00.000Z",
-      "lang": "ar",
-      "titleKo": "이라크에 환경 비상사태가 선포된 지 한 달이 지났지만... 해결책을 위한 자금 지원은 여전히 ​​부족합니다!"
-    },
-    {
-      "title": "واع/ العراق الاخضر: الموت البطيء يهدد العراقيين والمعالجات تحتاج مليارات الدولارات",
-      "source": "وكالة انباء الاعلام العراقي",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1vZXh2Y0lTVFlCaGhLd3Fvd0xwSVpudXdsaXp2ZUtuSEdSXzBmNFdZdXZLZkRtQVBNRmRXTGFsRVpXX2pPaU9XV0tPU2pLQUJYMWc?oc=5",
-      "date": "2026-11-01T08:35:02.000Z",
-      "lang": "ar",
-      "titleKo": "Ua'a/그린 이라크: 이라크인들을 위협하는 서서히 진행되는 죽음과 수십억 달러가 필요한 해결책"
-    },
-    {
-      "title": "بعد أكثر من شهر على إعلان الطوارئ البيئية.. العراق الأخضر يحذر من استمرار \"الموت البطيء\"",
-      "source": "وكالة بغداد اليوم الاخبارية",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1oRHJnX2Vza3BGeWNxMzhqSDhWYlRaVUN1bWQ5MkVDYkVtX21kSVMxbnZhX08zMjljS2Mtb1EtV0Nla09FZ2tHd1lVaERFX2c?oc=5",
-      "date": "2026-11-01T07:00:00.000Z",
-      "lang": "ar",
-      "titleKo": "환경 비상사태 선포 한 달여 만에.. 그린 이라크, '서서히 죽어가는' 상황이 지속되고 있다고 경고"
-    },
-    {
-      "title": "Iraq signs deal with US oil firm to develop methane projects",
-      "source": "Quantum Commodity Intelligence",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaGlKT0Y2UzJNS3Y1cEQ3NW1GTDRCQkF6dDZtR0J4RExpR2FZeGlvQUgxZlR0aXppSk9BWEM5R3RzUW9keksybGhFa1drUklfMjd2MWMxQXBWa0hESEctaW1UTDJlU2N2djVMNkY2bFhVRElsaXBZSDU1a0dCcjlPT25xVFFJMGNtNnhOdmtZZjN3UXpUUFlQdjB6YUR6czB0eFVyUzNPQzkyd0YzYk5Z?oc=5",
-      "date": "2026-10-30T07:00:00.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 메탄 프로젝트 개발을 위해 미국 석유 회사와 계약 체결"
     }
   ]
 }
