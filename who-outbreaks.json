@@ -9,6 +9,14 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "Amid challenges, countries increase domestic investment to protect progress against tuberculosis",
+      "date": "2026-11-12T16:16:57Z",
+      "summary": "Global efforts to end tuberculosis (TB) continue to make progress, with fewer people falling ill and dying from the disease, according to the World Health Organization (WHO) Global Tuberculosis Report 2026 released today.",
+      "link": "https://www.who.int/news/item/12-11-2026-amid-challenges-countries-increase-domestic-investment-to-protect-progress-against-tuberculosis",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "Bangladesh and India ban toxic pesticide to boost suicide prevention and brain health",
       "date": "2026-11-12T08:57:35Z",
       "summary": "Regulatory action on an acutely toxic pesticide will save thousands of lives and protect brain health worldwideGlobally it is estimated 1 in 5 suicides are attributable to the ingestion of acutely toxic pesticides. Many of these deaths are easily preventable and occur in rural communities across Africa, Asia, Eastern Mediterranean, Latin America and the Caribbean, and the Pacific Islands. Long-term exposure to toxic pesticides has also been linked to brain health and neurological risks among agr",
@@ -136,14 +144,6 @@
       "newsType": "News release"
     },
     {
-      "kind": "WHO 소식",
-      "title": "One in four adolescents worldwide reported no active days in the previous week",
-      "date": "2026-11-04T15:00:00Z",
-      "summary": "According to new global estimates released by WHO today, some 240 million young people aged 11–17 years reported not completing at least 60 minutes of moderate-to-vigorous physical activity on any day in the previous week.",
-      "link": "https://www.who.int/news/item/04-11-2026-one-in-four-adolescents-worldwide-reported-no-active-days-in-the-previous-week",
-      "newsType": "News release"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Shamonda virus in human - France",
       "date": "2026-11-02T14:26:51Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON616"
     }
   ],
-  "generatedAt": "2026-11-12T14:12:49.052143+00:00"
+  "generatedAt": "2026-11-12T22:57:29.452924+00:00"
 }
