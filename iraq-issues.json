@@ -1,11 +1,74 @@
 {
-  "generatedAt": "2026-11-13T16:33:58.424Z",
+  "generatedAt": "2026-11-13T22:43:44.615Z",
   "items": [
+    {
+      "title": "Iranian hardliners urge Iraq to push back against US pressure",
+      "source": "Iran International",
+      "link": "https://www.iranintl.com/en/202611137260",
+      "date": "2026-11-13T21:38:44.000Z",
+      "lang": "en",
+      "titleKo": "이란 강경파, 이라크에 미국 압박에 맞서라고 촉구",
+      "url": "https://www.iranintl.com/en/202611137260",
+      "body": "Iranian hardliners are demanding that Iraq take sides in Tehran's confrontation with Washington, criticizing Baghdad for restricting border crossings and flights under US pressure while seeking to keep the war out of its territory.",
+      "bodyKo": "이란의 강경파들은 이라크가 미국의 압박에 굴복하여 국경 통과와 항공편을 제한하면서도 자국 영토에서 전쟁을 배제하려는 움직임을 비판하며, 이라크가 테헤란과 워싱턴 간의 대립에서 이란의 편을 들 것을 요구하고 있습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Iran International"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraqi airstrike kills three ‘terrorists’ in Kirkuk province",
+      "source": "Rudaw",
+      "link": "https://rudaw.net/english/categories/iraq/1080151",
+      "date": "2026-11-13T21:37:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크 공습으로 키르쿠크주에서 '테러리스트' 3명 사망",
+      "url": "https://rudaw.net/english/categories/iraq/1080151",
+      "body": "Iraqi forces killed three “terrorists” in an airstrike in Kirkuk’s Pirde (Altun Kupri) town late Friday and arrested a fourth suspect accused of transporting them, as security operations intensify aga",
+      "bodyKo": "이라크군은 지난 5일 늦은 밤 키르쿠크의 피르데(알툰 쿠프리) 마을에서 공습을 가해 \"테러리스트\" 3명을 사살하고, 이들을 수송한 혐의를 받는 네 번째 용의자를 체포했다. 이는 ISIL(이슬람 국가)의 위협이 다시 고조되는 가운데 보안 작전이 강화되고 있음을 보여준다.",
+      "tried": true,
+      "count": 3,
+      "sources": [
+        "Middle East Online",
+        "Rudaw",
+        "The New Region"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 공습으로 키르쿠크에서 무장 세력으로 의심되는 3명 사망",
+          "source": "Middle East Online",
+          "link": "https://middle-east-online.com/en/iraqi-air-strike-kills-three-suspected-militants-kirkuk"
+        },
+        {
+          "titleKo": "이라크군, 키르쿠크 공습에서 이슬람국가(ISIS) 조직원 용의자 3명 사살",
+          "source": "The New Region",
+          "link": "https://thenewregion.com/posts/7096"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "먼 지역 치안 사건 (키르쿠크) — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "키르쿠크",
+        "km": 254
+      }
+    },
     {
       "title": "Iraqi Prime Minister Puts Iranian Stooges on Notice",
       "source": "Foundation for Defense of Democracies",
       "link": "https://www.fdd.org/analysis/iraqi-prime-minister-puts-iranian-stooges-on-notice/",
-      "date": "2026-11-13T15:38:33.000Z",
+      "date": "2026-11-13T20:15:00.000Z",
       "lang": "en",
       "titleKo": "이라크 총리, 이란의 꼭두각시들에게 경고",
       "url": "https://www.fdd.org/analysis/iraqi-prime-minister-puts-iranian-stooges-on-notice/",
@@ -27,21 +90,158 @@
       }
     },
     {
-      "title": "Iraq Forms New Energy Police Force To Combat Oil Smuggling",
+      "title": "Iraqi Security Media Cell Says 3 Terrorists Killed in Prde",
       "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/en/story/952801/iraq-forms-new-energy-police-force-to-combat-oil-smuggling",
-      "date": "2026-11-13T14:10:41.000Z",
+      "link": "https://www.kurdistan24.net/en/story/952846/iraqi-security-media-cell-says-3-terrorists-killed-in-prde",
+      "date": "2026-11-13T19:31:21.000Z",
       "lang": "en",
-      "titleKo": "이라크, 석유 밀수를 단속하기 위한 새로운 에너지 경찰 부대 편성",
-      "url": "https://www.kurdistan24.net/en/story/952801/iraq-forms-new-energy-police-force-to-combat-oil-smuggling",
-      "body": "Iraq’s Energy Police formed a new force to combat oil smuggling in the south, saying pipeline attacks fell 90% as the prime minister ordered a probe in Babil.\nERBIL (Kurdistan24) - Iraq&rsquo;s Energy Police Directorate has formed a new force dedicated to combating oil theft and smuggling in the south of the country, its director general said on Friday. He said tough security measures have cut attacks on oil pipelines by 90%.\nDirector General Hamid Hussaini told the Iraqi News Agency (INA) that the new &ldquo;Force to Combat Smuggling and Theft&rdquo; reports directly to him and patrols the deserts continuously to monitor the wide pipeline network.\nHe said the force has already foiled three attempts to install illegal locks to steal oil at the Sabba field in Dhi Qar province.\nHussaini said violations and theft attempts are not limited to crude oil pipelines but affect the entire transport network across the provinces.",
-      "bodyKo": "이라크 에너지 경찰은 남부 지역의 석유 밀수를 단속하기 위해 새로운 부대를 편성했으며, 바빌 주에서 총리가 수사를 지시한 이후 송유관 공격이 90% 감소했다고 밝혔다.\n에르빌(쿠르디스탄24) - 이라크 에너지 경찰국이 이라크 남부 지역에서 석유 절도 및 밀수를 단속하기 위한 새로운 부대를 편성했다고 국장이 금요일에 밝혔다. 그는 강력한 보안 조치로 인해 유전 파이프라인에 대한 공격이 90% 감소했다고 말했다.\n하미드 후세이니(Hamid Hussaini) 사무총장은 이라크 뉴스 통신(INA)과의 인터뷰에서 새로운 \"밀수 및 도난 방지 부대\"가 자신에게 직접 보고하며 광범위한 송유관 네트워크를 감시하기 위해 사막을 지속적으로 순찰하고 있다고 밝혔다.\n그는 이미 디카르 주 사바 유전에서 석유를 훔치기 위해 불법으로 잠금장치를 설치하려는 시도가 세 차례 있었지만 모두 저지했다고 밝혔다.\n후세이니 대변인은 침해 및 도난 시도가 원유 파이프라인에만 국한되지 않고 여러 주에 걸친 전체 수송망에 영향을 미친다고 말했다.",
+      "titleKo": "이라크 안보 매체, 프르데에서 테러범 3명 사살됐다고 전해",
+      "url": "https://www.kurdistan24.net/en/story/952846/iraqi-security-media-cell-says-3-terrorists-killed-in-prde",
+      "body": "Iraq’s Security Media Cell said three terrorists were killed and one arrested in Prde, while the town’s police director said the situation has returned to normal.\nERBIL (Kurdistan24) &ndash; Iraq&rsquo;s Security Media Cell announced on Friday that three terrorists were killed and another was arrested in the town of Prde, in a special operation backed by a precise airstrike from army aviation. The cell is part of the Office of the Commander-in-Chief of the Armed Forces.\nIn its statement, the cell said the operation took place at 8 p.m. It added that security forces are continuing detailed search and inspection operations in the area and will release more details later.\nThe announcement followed several hours of reports from Kurdistan24&rsquo;s correspondent, Soran Kamaran, that an Iraqi army force had moved toward Prde and that the Erbil-Kirkuk road had been closed. He said the deployment came after residents reported seeing suspected ISIS militants and alerted security forces.",
+      "bodyKo": "이라크 보안 미디어 셀(Security Media Cell)은 프르데에서 테러리스트 3명이 사살되고 1명이 체포되었다고 밝혔으며, 프르데 경찰서장은 상황이 정상화되었다고 전했다.\n에르빌(쿠르디스탄24) – 이라크 보안 미디어 셀은 금요일, 육군 항공대의 정밀 공습 지원을 받은 특별 작전에서 프르데 마을에서 테러범 3명이 사살되고 1명이 체포되었다고 발표했다. 이 조직은 군 최고사령관실 산하에 있다.\n이 기관은 성명에서 작전이 오후 8시에 이뤄졌다고 밝혔다. 또한 보안군이 해당 지역에서 세부적인 수색 및 검문 작업을 계속하고 있으며 추후 더 자세한 내용을 공개할 것이라고 덧붙였다.\n이 발표는 쿠르디스탄24의 특파원 소란 카마란이 이라크군이 프르데를 향해 이동했으며 에르빌-키르쿠크 도로가 폐쇄되었다고 보도한 지 몇 시간 만에 나왔다. 그는 주민들이 ISIL(이슬람 국가) 대원으로 의심되는 인물들을 목격했다고 신고하고 보안군에 경고한 후 병력이 배치되었다고 전했다.",
       "tried": true,
       "count": 1,
       "sources": [
         "Kurdistan24"
       ],
       "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "먼 지역 치안 사건 (키르쿠크) — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "키르쿠크",
+        "km": 254
+      }
+    },
+    {
+      "title": "Former Iraqi MP found dead in Lebanon",
+      "source": "IraqiNews",
+      "link": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
+      "date": "2026-11-13T19:04:31.000Z",
+      "lang": "en",
+      "titleKo": "전직 이라크 의원 레바논에서 시신으로 발견",
+      "url": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
+      "body": "Former Iraqi lawmaker Ahmed al-Alwani. Photo: Al-Alwani’s media office\nBaghdad (IraqiNews.com) – Lebanese and Iraqi authorities have launched an investigation after the body of former Iraqi lawmaker Ahmed al-Alwani was discovered in an apartment in the Lebanese capital, Beirut.\nWhile initial reports from Lebanese media emerged on Tuesday, judicial sources indicate the body was found on Monday evening in the Tariq al-Jadideh neighborhood.\nAuthorities found the body after al-Alwani’s family reported losing contact with him four days earlier.\nAlthough authorities have not yet issued a complete forensic report, media outlets mentioned that al-Alwani was strangled with a curtain cord after being lured to the residence.\nThree suspects who allegedly leased the property were identified by investigators: two Syrian nationals and one Lebanese citizen.",
+      "bodyKo": "**전직 이라크 의원 알마드 알알와니, 베이루트 아파트에서 시신 발견**\n\n바그다드(이라크뉴스닷컴) – 레바논과 이라크 당국이 전직 이라크 의원 아흐마드 알알와니의 시신이 레바논 수도 베이루트의 한 아파트에서 발견된 후 수사를 개시했다.\n\n레바논 언론에서 화요일 초기 보도가 나왔지만, 사법 소식통은 시신이 월요일 저녁 타리크 알자디데 지역에서 발견됐다고 밝혔다.\n\n알알와니의 가족이 4일 전 그와의 연락이 끊겼다고 신고한 후 당국이 시신을 발견했다.\n\n당국이 아직 완전한 법의학 보고서를 발표하지 않았지만, 언론 매체들은 알알와니가 그 주택으로 유인된 후 커튼 줄로 목이 졸렸다고 전했다.\n\n수사관들은 그 부동산을 임차한 것으로 알려진 3명의 용의자를 특정했다. 시리아 국적자 2명과 레바논 국적자 1명이다.",
+      "tried": true,
+      "count": 7,
+      "sources": [
+        "شفق نيوز",
+        "IraqiNews",
+        "Al Jazeera",
+        "ASHARQ AL-AWSAT English",
+        "Global Arab Network"
+      ],
+      "related": [
+        {
+          "titleKo": "샤파크 뉴스..레바논, 고(故) 이라크 전 의원 시신 인도",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Iraq/Lebanon-hands-over-late-Iraqi-ex-MP-s-body"
+        },
+        {
+          "titleKo": "샤파크 뉴스.. 이라크 위원회, 주르프 알사크르 현장 조사 개시",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Security/Iraqi-authorities-begin-on-site-investigation-into-Jurf-Al-Sakhr"
+        },
+        {
+          "titleKo": "이라크 전 의원 피살 후, 레바논이 시리아에 용의자 인도 요청",
+          "source": "Al Jazeera",
+          "link": "https://www.aljazeera.com/amp/news/2026/11/13/after-iraq-ex-mps-killing-lebanon-asks-syria-to-extradite-suspects"
+        },
+        {
+          "titleKo": "이라크, 전직 의원 살해 관련 레바논 파견단 구성",
+          "source": "ASHARQ AL-AWSAT English",
+          "link": "https://english.aawsat.com/arab-world/5340346-iraq-send-delegation-lebanon-over-ex-mp-killing"
+        },
+        {
+          "titleKo": "샤파크 뉴스..알말리키 저항 세력, 이라크 조정 체계 제도화 계획을 저지하다",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Report/Al-Maliki-resistance-stalls-plan-to-institutionalize-Iraq-s-Coordination-Framework"
+        }
+      ],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "하루 460만 배럴…이라크 10월 생산 9월보다 54만 배럴 늘어",
+      "source": "토큰포스트",
+      "link": "https://www.tokenpost.kr/amp/news/economy/438030",
+      "date": "2026-11-13T18:08:03.000Z",
+      "lang": "ko",
+      "titleKo": "하루 460만 배럴…이라크 10월 생산 9월보다 54만 배럴 늘어",
+      "url": "https://www.tokenpost.kr/amp/news/economy/438030",
+      "body": "이라크의 10월 원유 생산량이 하루 평균 460만 배럴로 늘었다. 9월보다 하루 54만 배럴 증가했다.국제에너지기구(IEA)는 11월 원유시장 보고서에서 9월 생산량을 하루 406만 배럴로 집계했다. 보고서 표에 실린 이라크의 OPEC+ 목표치는...\n사우디아라비아의 10월 생산량은 하루 999만 배럴로 전월보다 106만 배럴 늘었다. 쿠웨이트도 하루 158만 배럴에서 203만 배럴로 증가했다.\n세계 전체 석유 공급량은 10월 하루 1억540만 배럴로 전월보다 230만 배럴 많았다. 이는 세계 공급을 합산한 수치로, 이라크 한 나라의 원유 생산량과 집계 범위가 다르다.\n오만을 제외한 걸프 지역의 10월 석유 수출량은 하루 1840만 배럴이었다. 전쟁 전 수준보다 26% 적은 규모다.\n이 가운데 원유 수출은 하루 1500만 배럴로 전쟁 전 수준의 82%까지 회복했다. 이 수치는 걸프 지역 원유 수출량으로, 호르무즈 해협 통과량을 뜻하지 않는다.\nIEA의 10월 보고서에 실린 호르무즈 해협 통과량은 9월 기준 하루 1090만 배럴이다. 8월보다 하루 370만 배럴 늘어난 수치다. (IEA 10월 원유시장 보고서)\nIEA의 호르무즈 자료에서 2025년 해협을 통과한 원유는 하루 1495만 배럴, 석유제품은 493만 배럴이었다. 합계 1987만 배럴은 세계 해상 석유 교역의 약 4분의 1에 해당한다. (IEA 호르무즈 해협 자료)\n이라크와 쿠웨이트는 석유 수출의 대부분을 호르무즈 해협에 의존한다. IEA는 국내와 일본도 이 해협을 지나는 원유 흐름에 특히 의존한다고 설명했다.\n본지는 앞서 호르무즈 통항 횟수가 전쟁 전보다 약 70% 줄고 사우디 선적이 일부 재개된 흐름 을 전했다. 이번 생산·수출 통계는 해협 통항량과 별도로 살펴야 한다.",
+      "bodyKo": "이라크의 10월 원유 생산량이 하루 평균 460만 배럴로 늘었다. 9월보다 하루 54만 배럴 증가했다.국제에너지기구(IEA)는 11월 원유시장 보고서에서 9월 생산량을 하루 406만 배럴로 집계했다. 보고서 표에 실린 이라크의 OPEC+ 목표치는...\n사우디아라비아의 10월 생산량은 하루 999만 배럴로 전월보다 106만 배럴 늘었다. 쿠웨이트도 하루 158만 배럴에서 203만 배럴로 증가했다.\n세계 전체 석유 공급량은 10월 하루 1억540만 배럴로 전월보다 230만 배럴 많았다. 이는 세계 공급을 합산한 수치로, 이라크 한 나라의 원유 생산량과 집계 범위가 다르다.\n오만을 제외한 걸프 지역의 10월 석유 수출량은 하루 1840만 배럴이었다. 전쟁 전 수준보다 26% 적은 규모다.\n이 가운데 원유 수출은 하루 1500만 배럴로 전쟁 전 수준의 82%까지 회복했다. 이 수치는 걸프 지역 원유 수출량으로, 호르무즈 해협 통과량을 뜻하지 않는다.\nIEA의 10월 보고서에 실린 호르무즈 해협 통과량은 9월 기준 하루 1090만 배럴이다. 8월보다 하루 370만 배럴 늘어난 수치다. (IEA 10월 원유시장 보고서)\nIEA의 호르무즈 자료에서 2025년 해협을 통과한 원유는 하루 1495만 배럴, 석유제품은 493만 배럴이었다. 합계 1987만 배럴은 세계 해상 석유 교역의 약 4분의 1에 해당한다. (IEA 호르무즈 해협 자료)\n이라크와 쿠웨이트는 석유 수출의 대부분을 호르무즈 해협에 의존한다. IEA는 국내와 일본도 이 해협을 지나는 원유 흐름에 특히 의존한다고 설명했다.\n본지는 앞서 호르무즈 통항 횟수가 전쟁 전보다 약 70% 줄고 사우디 선적이 일부 재개된 흐름 을 전했다. 이번 생산·수출 통계는 해협 통항량과 별도로 살펴야 한다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "토큰포스트"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Turkish Ambassador: Advanced Cooperation with the Iraqi Government on Security, Energy, and Water Issues",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://ina.iq/en/politics/53783-turkish-ambassador-advanced-cooperation-with-the-iraqi-government-on-security-energy-and-water-issues.html",
+      "date": "2026-11-13T17:55:55.000Z",
+      "lang": "en",
+      "titleKo": "터키 대사: 안보, 에너지, 수자원 문제에 대한 이라크 정부와의 협력 강화",
+      "url": "https://ina.iq/en/politics/53783-turkish-ambassador-advanced-cooperation-with-the-iraqi-government-on-security-energy-and-water-issues.html",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq Forms New Energy Police Force To Combat Oil Smuggling",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/952801/iraq-forms-new-energy-police-force-to-combat-oil-smuggling",
+      "date": "2026-11-13T17:40:44.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 석유 밀수를 단속하기 위한 새로운 에너지 경찰 부대 편성",
+      "url": "https://www.kurdistan24.net/en/story/952801/iraq-forms-new-energy-police-force-to-combat-oil-smuggling",
+      "body": "Iraq’s Energy Police formed a new force to combat oil smuggling in the south, saying pipeline attacks fell 90% as the prime minister ordered a probe in Babil.\nERBIL (Kurdistan24) - Iraq&rsquo;s Energy Police Directorate has formed a new force dedicated to combating oil theft and smuggling in the south of the country, its director general said on Friday. He said tough security measures have cut attacks on oil pipelines by 90%.\nDirector General Hamid Hussaini told the Iraqi News Agency (INA) that the new &ldquo;Force to Combat Smuggling and Theft&rdquo; reports directly to him and patrols the deserts continuously to monitor the wide pipeline network.\nHe said the force has already foiled three attempts to install illegal locks to steal oil at the Sabba field in Dhi Qar province.\nHussaini said violations and theft attempts are not limited to crude oil pipelines but affect the entire transport network across the provinces.",
+      "bodyKo": "이라크 에너지 경찰은 남부 지역의 석유 밀수를 단속하기 위해 새로운 부대를 편성했으며, 바빌 주에서 총리가 수사를 지시한 이후 송유관 공격이 90% 감소했다고 밝혔다.\n에르빌(쿠르디스탄24) - 이라크 에너지 경찰국이 이라크 남부 지역에서 석유 절도 및 밀수를 단속하기 위한 새로운 부대를 편성했다고 국장이 금요일에 밝혔다. 그는 강력한 보안 조치로 인해 유전 파이프라인에 대한 공격이 90% 감소했다고 말했다.\n하미드 후세이니(Hamid Hussaini) 사무총장은 이라크 뉴스 통신(INA)과의 인터뷰에서 새로운 \"밀수 및 도난 방지 부대\"가 자신에게 직접 보고하며 광범위한 송유관 네트워크를 감시하기 위해 사막을 지속적으로 순찰하고 있다고 밝혔다.\n그는 이미 디카르 주 사바 유전에서 석유를 훔치기 위해 불법으로 잠금장치를 설치하려는 시도가 세 차례 있었지만 모두 저지했다고 밝혔다.\n후세이니 대변인은 침해 및 도난 시도가 원유 파이프라인에만 국한되지 않고 여러 주에 걸친 전체 수송망에 영향을 미친다고 말했다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Anadolu Ajansı",
+        "Kurdistan24"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크, 석유 밀수 대응 및 송유관 보호를 위한 특별 보안 부대 창설",
+          "source": "Anadolu Ajansı",
+          "link": "https://www.aa.com.tr/en/middle-east/iraq-establishes-special-security-force-to-combat-oil-smuggling-protect-pipelines/4124638"
+        }
+      ],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -52,7 +252,57 @@
       }
     },
     {
-      "title": "Iraqi FM says amnesty possible in Iran talks on Kurdish opposition groups",
+      "title": "انقطاع الكهرباء خلال ودية العراق ولبنان",
+      "source": "العين الإخبارية",
+      "link": "https://al-ain.com/article/iraq-lebanon-not-electric",
+      "date": "2026-11-13T16:43:42.000Z",
+      "lang": "ar",
+      "titleKo": "이라크와 레바논의 친선 경기 중 정전",
+      "url": "https://al-ain.com/article/iraq-lebanon-not-electric",
+      "body": "شهدت مواجهة العراق ولبنان الودية انقطاعاً للتيار الكهربائي، وذلك خلال المواجهة التي تجمع المنتخبين، ضمن بطولة الصداقة الودية.\nوتسبب انقطاع الكهرباء في إثارة حالة من المفاجأة داخل الملعب، في واقعة لفتت الأنظار خلال اللقاء الذي يجمع المنتخبين.\nوجاء الانقطاع قبل انطلاق الشوط الثاني التي تُقام على أرضية المدينة الرياضية، وسط ترقب لاستئناف الأجواء بصورة طبيعية.\nوكان الشوط الأول من المواجهة قد انتهى بالتعادل السلبي دون أهداف، في ظل عدم نجاح أي من المنتخبين في هز الشباك.\nوعقب استئناف المباراة، استمر التعادل السلبي بين المنتخبين حتى نهاية المواجهة.\nوتأتي المباراة ضمن استغلال فترة التوقف الدولي لخوض مواجهات ودية، في إطار بطولة الصداقة المقامة بالبصرة.\nيذكر أن بطولة كأس آسيا التي كان من المفترض أن تنطلق في يناير/ كانون الثاني تأجل انطلاقها لنهاية العام المقبل 2027.",
+      "bodyKo": "이라크와 레바논의 친선 경기는 친선 대회에서 두 팀이 맞붙는 동안 정전이 발생했습니다.\n정전으로 인해 경기장 내에서 놀라움이 일었고, 이는 양 팀의 경기가 진행되는 동안 관심을 끈 사건이었습니다.\n정전은 스포츠 시티 경기장에서 열리는 후반전이 시작되기 전에 발생했으며, 분위기가 정상적으로 회복되기를 기다리는 가운데 발생했습니다.\n전반전은 양 팀 모두 골을 넣지 못해 0-0 무승부로 끝났습니다.\n경기가 재개된 후에도 양 팀의 0-0 무승부는 경기 종료까지 이어졌습니다.\n이 경기는 바스라에서 열리는 우정 토너먼트의 일환으로 친선 경기를 치르기 위한 국제 휴식기 활용의 일환으로 열립니다.\n1월에 시작될 예정이었던 아시아컵이 내년 말인 2027년으로 연기된 것으로 알려졌습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "العين الإخبارية"
+      ],
+      "related": [],
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바스라",
+        "km": 422
+      }
+    },
+    {
+      "title": "이라크의 '이 없으면 잇몸' 작전… 호르무즈 해협 막히자 '시리아 육로'로 원유 수출",
+      "source": "뉴스핌",
+      "link": "https://www.newspim.com/news/view/20261114000010",
+      "date": "2026-11-13T16:34:00.000Z",
+      "lang": "ko",
+      "titleKo": "이라크의 '이 없으면 잇몸' 작전… 호르무즈 해협 막히자 '시리아 육로'로 원유 수출",
+      "url": "https://www.newspim.com/news/view/20261114000010",
+      "body": "[런던=뉴스핌] 장일현 특파원 = 석유수출국기구(OPEC) 11개 회원국 중 사우디아라비아에 이어 두 번째로 원유를 많이 생산하는 이라크가 수십 년 동안 거의 사용하지 않았던 사막 육로를 통해 원유를 수출하고 있다고 로이터통신이 13일(현지시각) 보도했다.&n\n뉴스핌을 선호 출처로 추가 가 가 프린트 ※ 본문 글자 크기 조정 가 더 작게 가 작게 가 보통 가 크게 가 더 크게 닫기 ※ 번역할 언어 선택 -- 선택 -- 닫기 AI 핵심 요약 beta 분석 중... 이라크는 13일 사막 육로를 통해 시리아로 원유 수출을 시작했다 호르무즈 해협 봉쇄로 바스라 원유를 탱커트럭에 실어 운송했다 UCC홀딩은 하루 12만~15만 배럴 운송 계약을 체결한 것으로 알려졌다 ! AI가 자동 생성한 요약으로 정확하지 않을 수 있어요.\n지난 2월 말 이란 전쟁 발발 이후 호르무즈 해협이 봉쇄되면서 어떻게든 새로운 수출로를 뚫어야 한다는 절박함이 반영된 것으로 해석됐다.\n보도에 따르면 이라크는 최근 남부 바스라 인근의 원유 저장시설에서 탱커트럭에 원유를 실은 뒤 사막 육로를 통해 시리아의 바니야스(Baniyas)항으로 보내고 있다.\n이들 저장기지 인근에는 수백 대의 탱커트럭들이 원유를 싣기 위해 대기하는 모습이 관측되고 있다고 한다.\n이라크 측에서는 시리아 경로가 중질유 화물을 운송할 수 있는 규모는 작지만 전략적으로 중요한 대체 루트로 자리잡고 있는 평가가 나오고 있다.\n소식통들은 \"육로 수송이 더 비싸지만 시리아 내전이 종식되면서 이 수송로가 다시 주목받고 있다\"고 밝혔다.\n바스라 국영석유회사(BOC)의 바셈 압둘 카림 사장은 \"카타르의 에너지 기업 UCC홀딩이 지난달부터 트럭을 이용해 이라크산 원유를 바니야스 항으로 운송하고 있다\"고 말했다.",
+      "bodyKo": "[런던=뉴스핌] 장일현 특파원 = 석유수출국기구(OPEC) 11개 회원국 중 사우디아라비아에 이어 두 번째로 원유를 많이 생산하는 이라크가 수십 년 동안 거의 사용하지 않았던 사막 육로를 통해 원유를 수출하고 있다고 로이터통신이 13일(현지시각) 보도했다.&n\n뉴스핌을 선호 출처로 추가 가 가 프린트 ※ 본문 글자 크기 조정 가 더 작게 가 작게 가 보통 가 크게 가 더 크게 닫기 ※ 번역할 언어 선택 -- 선택 -- 닫기 AI 핵심 요약 beta 분석 중... 이라크는 13일 사막 육로를 통해 시리아로 원유 수출을 시작했다 호르무즈 해협 봉쇄로 바스라 원유를 탱커트럭에 실어 운송했다 UCC홀딩은 하루 12만~15만 배럴 운송 계약을 체결한 것으로 알려졌다 ! AI가 자동 생성한 요약으로 정확하지 않을 수 있어요.\n지난 2월 말 이란 전쟁 발발 이후 호르무즈 해협이 봉쇄되면서 어떻게든 새로운 수출로를 뚫어야 한다는 절박함이 반영된 것으로 해석됐다.\n보도에 따르면 이라크는 최근 남부 바스라 인근의 원유 저장시설에서 탱커트럭에 원유를 실은 뒤 사막 육로를 통해 시리아의 바니야스(Baniyas)항으로 보내고 있다.\n이들 저장기지 인근에는 수백 대의 탱커트럭들이 원유를 싣기 위해 대기하는 모습이 관측되고 있다고 한다.\n이라크 측에서는 시리아 경로가 중질유 화물을 운송할 수 있는 규모는 작지만 전략적으로 중요한 대체 루트로 자리잡고 있는 평가가 나오고 있다.\n소식통들은 \"육로 수송이 더 비싸지만 시리아 내전이 종식되면서 이 수송로가 다시 주목받고 있다\"고 밝혔다.\n바스라 국영석유회사(BOC)의 바셈 압둘 카림 사장은 \"카타르의 에너지 기업 UCC홀딩이 지난달부터 트럭을 이용해 이라크산 원유를 바니야스 항으로 운송하고 있다\"고 말했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "뉴스핌"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "바스라",
+        "km": 422
+      }
+    },
+    {
+      "title": "Iraqi FM says amnesty possible amid Iran talks on Kurdish opposition groups",
       "source": "The New Region",
       "link": "https://thenewregion.com/posts/7093",
       "date": "2026-11-13T13:23:10.000Z",
@@ -62,11 +312,17 @@
       "body": "\"It depends on these negotiations between both sides,\" said Fuad Hussein, noting that there are \"many other ways\" to resolve the issue outside of violence.\nERBIL, Kurdistan Region of Iraq - Iraqi Foreign Minister Fuad Hussein on Friday said that Baghdad, Erbil, and Tehran are negotiating \"many options\" for a potential agreement with Iranian Kurdish opposition groups based in the Kurdistan Region, mentioning an amnesty for members returning to Iran as a potential option.\nMany armed groups from Kurdish-majority western Iran (Rojhelat) have long sought refuge in the Kurdistan Region, where they have established camps and maintain contingents of guerilla fighters that are opposed to the Islamic Republic.\nDuring the US-Israel war on Iran, Tehran conducted myraid airstrikes targeting such dissident forces, and has sought to pressure Iraqi authorities into expelling or clamping down on what it deems a substantial cross-border security threat.",
       "bodyKo": "푸아드 후세인 장관은 \"양측 간의 협상에 달려 있다\"며 폭력 외에도 문제를 해결할 수 있는 \"다른 방법이 많다\"고 말했다.\n이라크 쿠르드 자치구 에르빌 - 이라크의 푸아드 후세인 외무장관은 17일 바그다드, 에르빌, 테헤란이 쿠르드 자치구에 기반을 둔 이란 쿠르드 반정부 단체들과의 잠재적 합의를 위한 \"다양한 방안\"을 협상하고 있으며, 이란으로 귀환하는 단체 구성원들에 대한 사면이 잠재적 방안 중 하나라고 언급했다.\n쿠르드인이 다수를 차지하는 이란 서부(로제헬라트)의 많은 무장단체는 오랫동안 쿠르드 자치구에 피신해 왔으며, 이곳에 캠프를 세우고 이슬람 공화국에 반대하는 게릴라 전투원 부대를 유지하고 있다.\n이란에 대한 미국-이스라엘 전쟁 동안 테헤란은 이러한 반체제 세력을 겨냥한 수많은 공습을 수행했으며, 이라크 당국이 상당한 국경 간 안보 위협으로 간주하는 세력을 추방하거나 단속하도록 압력을 가하려고 노력했다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "The New Region"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "이라크 외무장관, 쿠르드족 반정부 단체 관련 이란과의 협상에서 사면 가능성 언급",
+          "source": "The New Region",
+          "link": "https://thenewregion.com/posts/7093"
+        }
+      ],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -105,7 +361,7 @@
       "title": "Iraq plans security delegation to help Beirut inquiry into former MP’s death",
       "source": "London Daily News",
       "link": "https://www.londondaily.news/iraq-plans-security-delegation-to-help-beirut-inquiry-into-former-mps-death/",
-      "date": "2026-11-13T11:51:51.000Z",
+      "date": "2026-11-13T11:50:53.000Z",
       "lang": "en",
       "titleKo": "이라크, 전직 국회의원 사망 사건에 대한 베이루트 수사를 지원하기 위해 보안 대표단 파견 계획",
       "url": "https://www.londondaily.news/iraq-plans-security-delegation-to-help-beirut-inquiry-into-former-mps-death/",
@@ -127,6 +383,31 @@
       }
     },
     {
+      "title": "معلومات الجديد: مدعي عام التمييز على تواصل دائم مع السفير العراقي لاتمام كل الإجراءات القانونية قبل نقل الجثة الى العراق",
+      "source": "Lebanon ON",
+      "link": "https://www.lebanonon.com/news/448218",
+      "date": "2026-11-13T11:38:29.000Z",
+      "lang": "ar",
+      "titleKo": "새로운 정보: 대법원 검사장은 시신을 이라크로 이송하기 전 모든 법적 절차를 완료하기 위해 이라크 대사와 지속적으로 소통하고 있습니다.",
+      "url": "https://www.lebanonon.com/news/448218",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Lebanon ON"
+      ],
+      "related": [],
+      "tag": "한국·외교",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "Prime Minister Holds Talks in Antalya with Iraqi President",
       "source": "الإذاعة الجزائرية |",
       "link": "https://news.radioalgerie.dz/en/node/98875",
@@ -137,12 +418,11 @@
       "body": "The Prime Minister, Mr. Sifi Ghrieb, held talks today, Thursday, in Antalya (Turkey), with the President of the fraternal Republic of Iraq, Mr. Nizar Mohammed Saeed Amedi, who conveyed to him his sincere fraternal greetings and high appreciation to his brother, the President of the Republic of Algeria, Mr. Abdelmadjid Tebboune.\nAlgeria 11/12/2026 - 11:51 The Prime Minister, Mr. Sifi Ghrieb, held talks today, Thursday, in Antalya (Turkey), with the President of the fraternal Republic of Iraq, Mr. Nizar Mohammed Saeed Amedi, who conveyed to him his sincere fraternal greetings and high appreciation to his brother, the President of the Republic of Algeria, Mr. Abdelmadjid Tebboune.\nThis meeting took place on the sidelines of Mr. Ghrieb's participation, representing the President of the Republic, in the proceedings of the Leaders' Summit of the 31st session of the Conference of the Parties to the United Nations Framework Convention on Climate Change (COP31), held in Antalya on November 11 a",
       "bodyKo": "시피 그리브 총리는 오늘(목요일) 터키 안탈리아에서 니자르 모하메드 사에드 아메디 이라크 공화국 대통령과 회담을 가졌습니다. 아메디 대통령은 알제리 공화국 대통령인 압델마지드 테분 대통령에게 진심 어린 우호의 인사와 깊은 감사를 전했습니다.\n알제리 2026/11/12 - 11:51 시피 그리브 총리는 오늘(목요일) 터키 안탈리아에서 니자르 모하메드 사이드 아메디 이라크 공화국 대통령과 회담을 가졌습니다. 아메디 대통령은 그리브 총리에게 진심 어린 우호의 인사를 전하고 압델마지드 테분 알제리 공화국 대통령에 대한 깊은 존경을 표했습니다.\n이번 회담은 그리에브 장관이 대한민국 대통령을 대표하여 11월 11일 안탈리아에서 열린 제31차 유엔기후변화협약 당사국총회(COP31) 정상회의에 참석한 자리에서 부대 행사로 진행되었습니다.",
       "tried": true,
-      "count": 4,
+      "count": 3,
       "sources": [
         "Rudaw",
         "الإذاعة الجزائرية |",
-        "رئاسة جمهورية العراق",
-        "Gazeta Express"
+        "رئاسة جمهورية العراق"
       ],
       "related": [
         {
@@ -154,11 +434,6 @@
           "titleKo": "이라크-터키 대통령 회담, 협력과 지역 안정을 위한 새로운 방안 모색",
           "source": "رئاسة جمهورية العراق",
           "link": "https://www.presidency.iq/en/Details.aspx?id=6568"
-        },
-        {
-          "titleKo": "베를린과 헤이그 방문에 이어 호자이 장관, 이라크에서 불가리아 전 총리와 터키 전 외교부 장관과 회담",
-          "source": "Gazeta Express",
-          "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOUVhyV0twWmJqdGNCUXJTbVVTZzl4WnNBUWt0TFB1dlBNUVdVbVZOWEsydHUtWUxZWmRRbWR3U09ic2tQUmFnUE54cmFPR2Y0NndueWxJTlpkMHYtMGpvWVRTVWh2REFUUjRnWjJyZ3ZKamNyRGxWZXFuSnNySEdianpqVW1Yd3RhR28wWkpiaUVsNGx0bTlvN3BXZlIya3ZaTHlrWTNqQXJraHI3eTN4ejZVbWRTbFhwVVVIWEpEVVJaQTd4V2p2MElraEEyNXRER2J0OHVvTUFGZUZXUWFpaVVQWUx5YzhUOHhNRw?oc=5"
         }
       ],
       "tag": "정치·선거",
@@ -281,12 +556,11 @@
       "body": "Iraq prepares a two-stage security operation in Jurf al-Sakhar as intelligence allegations of oil smuggling trigger investigations and political tensions.\nERBIL (Kurdistan24) - Iraq's federal government has prepared a two-stage security operation to surround and enter Jurf al-Sakhar in Babil province following the disclosure of intelligence findings alleging years of oil smuggling in the heavily restricted area, according to information obtained by Kurdistan24.\nKurdistan24's Baghdad correspondent Dilan Barzan reported early Friday, Nov. 13, 2026, that forces from the Counter-Terrorism Service and Rapid Response units had been placed on heightened alert, awaiting orders to proceed amid what sources described as federal government support for a possible operation.\nThe reported preparations do not establish that an operation has begun. A final order or deployment timetable has not been publicly announced, while the allegations at the center of the dispute remain under investigation.",
       "bodyKo": "이라크가 주르프 알사카르에서 2단계 보안 작전을 준비하고 있는 가운데, 석유 밀수 혐의에 대한 정보기관의 주장이 수사 및 정치적 긴장을 촉발하고 있다.\n에르빌(쿠르디스탄24) - 쿠르디스탄24가 입수한 정보에 따르면, 이라크 연방 정부는 엄격한 통제 지역에서 수년간 석유 밀수가 이뤄졌다는 정보기관의 조사 결과를 공개한 후 바빌 주르프 알사카르를 포위하고 진입하기 위한 2단계 보안 작전을 준비했습니다.\n쿠르디스탄24의 바그다드 특파원인 딜란 바르잔(Dilan Barzan)은 2026년 11월 13일 금요일 이른 아침, 대테러부대(Counter-Terrorism Service)와 신속대응부대(Rapid Response units)가 비상 경계 태세에 돌입했으며, 소식통에 따르면 연방 정부가 작전을 지원할 가능성이 있는 가운데 작전 개시 명령을 기다리고 있다고 보도했다.\n보도된 준비 작업만으로는 작전이 시작되었다고 단정할 수 없다. 최종 명령이나 파병 일정은 아직 공개적으로 발표되지 않았으며, 분쟁의 핵심이 되는 의혹은 여전히 조사 중이다.",
       "tried": true,
-      "count": 5,
+      "count": 4,
       "sources": [
         "Kurdistan24",
         "964media",
-        "Rudaw",
-        "Khaama Press"
+        "Rudaw"
       ],
       "related": [
         {
@@ -303,11 +577,6 @@
           "titleKo": "이라크 총리, 주르프 알사크르 석유 밀수 의혹을 조사하기 위한 고위급 위원회 구성",
           "source": "Rudaw",
           "link": "https://rudaw.net/english/categories/iraq/1080143"
-        },
-        {
-          "titleKo": "이라크, 아프가니스탄으로의 석유 밀수 루트 의혹 조사 착수",
-          "source": "Khaama Press",
-          "link": "https://www.khaama.com/iraq-oil-smuggling-investigation-afghanistan/"
         }
       ],
       "tag": "치안·테러",
@@ -345,73 +614,22 @@
       }
     },
     {
-      "title": "After Iraq ex-MP’s killing, Lebanon asks Syria to extradite suspects",
-      "source": "Al Jazeera",
-      "link": "https://www.aljazeera.com/amp/news/2026/11/13/after-iraq-ex-mps-killing-lebanon-asks-syria-to-extradite-suspects",
+      "title": "Lebanon asks Syria to hand over 2 suspects in killing of former Iraqi MP — Al Jazeera",
+      "source": "UA.NEWS",
+      "link": "https://ua.news/en/dovkolo-svitu/livan-prosit-siriiu-vidati-2-pidozriuvanikh-u-vbivstvi-eksdeputata-iraku-al-jazeera",
       "date": "2026-11-13T02:50:28.000Z",
       "lang": "en",
-      "titleKo": "이라크 전 의원 피살 후, 레바논이 시리아에 용의자 인도 요청",
-      "url": "https://www.aljazeera.com/amp/news/2026/11/13/after-iraq-ex-mps-killing-lebanon-asks-syria-to-extradite-suspects",
-      "body": "Longtime Sunni politician and Iran critic was reportedly strangled in Beirut, sparking investigation.\nAl Jazeera See this story on our app VIEW IN APP Advertisement Share After Iraq ex-MP’s killing, Lebanon asks Syria to extradite suspects on social media share-nodes Share facebook x whatsapp-stroke Link copied! copy url By AFP and News Agencies Published On 13 Nov 2026 13 Nov 2026 Lebanese authorities have asked Syria to hand over two Syrians suspected of involvement in the killing of former Iraqi MP Ahmed al-Alwani, who was found dead in an apartment in Beirut earlier this week.\nA Lebanese judicial source told the AFP news agency that preliminary findings indicate al-Alwani was strangled to death, but the perpetrators and motives remain murky.\nHailing from Ramadi in Iraq’s Sunni heartland, al-Alwani was a vocal critic of Iranian influence over Baghdad and had served more than a decade in prison after an initial death sentence on “terrorism” charges in his home country.",
-      "bodyKo": "오랜 기간 동안 수니파 정치인으로 활동하며 이란을 비판해 온 인사가 베이루트에서 목 졸려 살해된 것으로 알려져 수사가 시작되었습니다.\n알자지라 이 기사를 앱에서 확인하세요. 앱에서 보기 광고 공유 이라크 전직 의원 살해 사건 이후, 레바논이 시리아에 용의자 인도 요청 소셜 미디어 공유 노드 공유 페이스북 X WhatsApp-stroke 링크 복사됨! URL 복사 AFP 및 뉴스 통신사 작성 게시일: 2026년 11월 13일 2026년 11월 13일 레바논 당국이 시리아에 이라크 전직 의원인 아흐메드 알알와니 씨의 살해에 연루된 것으로 의심되는 시리아인 2명을 인도해 달라고 요청했습니다. 알알와니 씨는 지난 11월 초 베이루트의 한 아파트에서 숨진 채 발견되었습니다.\n레바논 사법부 관계자는 AFP 통신에 예비 조사 결과 알-알와니가 목 졸려 사망한 것으로 나타났지만, 범인과 범행 동기는 여전히 불분명하다고 전했습니다.\n이라크 수니파 중심지인 라마디 출신의 알알와니는 바그다드에 대한 이란의 영향력을 공개적으로 비판했으며, 자국에서 \"테러리즘\" 혐의로 사형을 선고받은 후 10년 이상 수감 생활을 했다.",
+      "titleKo": "레바논, 시리아에 전 이라크 국회의원 살해 용의자 2명 인도를 요청 — 알자지라",
+      "url": "https://ua.news/en/dovkolo-svitu/livan-prosit-siriiu-vidati-2-pidozriuvanikh-u-vbivstvi-eksdeputata-iraku-al-jazeera",
+      "body": "Lebanon has asked Syria to detain and hand over two Syrian suspects in the killing of former Iraqi MP Ahmed al-Alwani, who was found dead in a Beirut apartment.\n--> Lebanese law enforcement authorities have asked the Syrian authorities to detain and hand over two Syrian citizens suspected of involvement in the killing of former Iraqi parliament member Ahmed al-Alwani. The politician was found dead in an apartment in Beirut. As Al Jazeera reports , citing an AFP judicial source, preliminary investigation results indicate that al-Alwani was strangled.\nAn AFP source in Lebanon's judicial system said that the identities of the two Syrian suspects are still being established. A Lebanese citizen was also detained as part of the investigation and is being questioned. The investigation is being conducted by the Information Branch of Lebanon's Internal Security Forces under the personal supervision of the country's chief prosecutor, Ahmed Rami al-Hajj.",
+      "bodyKo": "레바논은 시리아에 레바논 베이루트의 한 아파트에서 사망한 채 발견된 이라크 전직 의원 아흐메드 알알와니(Ahmed al-Alwani) 살해 사건의 용의자 2명을 체포해 인도해 달라고 요청했다.\n--> 레바논 사법 당국은 이라크 전 의원인 아흐메드 알알와니(Ahmed al-Alwani) 씨의 살해에 연루된 혐의를 받는 시리아인 2명을 체포하여 인도해 달라고 시리아 당국에 요청했습니다. 이 정치인은 베이루트의 한 아파트에서 사망한 채 발견되었다. 알자지라가 AFP 사법 소식통을 인용해 보도한 바에 따르면, 예비 조사 결과 알알와니가 목 졸려 살해된 것으로 나타났다.\n레바논 사법부의 AFP 소식통은 두 명의 시리아인 용의자의 신원이 아직 확인 중이라고 밝혔습니다. 수사의 일환으로 레바논 시민 한 명도 체포되어 조사를 받고 있다. 이 수사는 레바논 국내 보안군의 정보국이 국가 최고 검사인 아흐메드 라미 알-하지의 직접적인 감독 하에 진행하고 있습니다.",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "UA.NEWS",
-        "Al Jazeera"
+        "UA.NEWS"
       ],
-      "related": [
-        {
-          "titleKo": "레바논, 시리아에 전 이라크 국회의원 살해 용의자 2명 인도를 요청 — 알자지라",
-          "source": "UA.NEWS",
-          "link": "https://ua.news/en/dovkolo-svitu/livan-prosit-siriiu-vidati-2-pidozriuvanikh-u-vbivstvi-eksdeputata-iraku-al-jazeera"
-        }
-      ],
+      "related": [],
       "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Former Iraqi MP found dead in Lebanon",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
-      "date": "2026-11-13T02:50:28.000Z",
-      "lang": "en",
-      "titleKo": "전직 이라크 의원 레바논에서 시신으로 발견",
-      "url": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
-      "body": "Former Iraqi lawmaker Ahmed al-Alwani. Photo: Al-Alwani’s media office\nBaghdad (IraqiNews.com) – Lebanese and Iraqi authorities have launched an investigation after the body of former Iraqi lawmaker Ahmed al-Alwani was discovered in an apartment in the Lebanese capital, Beirut.\nWhile initial reports from Lebanese media emerged on Tuesday, judicial sources indicate the body was found on Monday evening in the Tariq al-Jadideh neighborhood.\nAuthorities found the body after al-Alwani’s family reported losing contact with him four days earlier.\nAlthough authorities have not yet issued a complete forensic report, media outlets mentioned that al-Alwani was strangled with a curtain cord after being lured to the residence.\nThree suspects who allegedly leased the property were identified by investigators: two Syrian nationals and one Lebanese citizen.",
-      "bodyKo": "**전직 이라크 의원 알마드 알알와니, 베이루트 아파트에서 시신 발견**\n\n바그다드(이라크뉴스닷컴) – 레바논과 이라크 당국이 전직 이라크 의원 아흐마드 알알와니의 시신이 레바논 수도 베이루트의 한 아파트에서 발견된 후 수사를 개시했다.\n\n레바논 언론에서 화요일 초기 보도가 나왔지만, 사법 소식통은 시신이 월요일 저녁 타리크 알자디데 지역에서 발견됐다고 밝혔다.\n\n알알와니의 가족이 4일 전 그와의 연락이 끊겼다고 신고한 후 당국이 시신을 발견했다.\n\n당국이 아직 완전한 법의학 보고서를 발표하지 않았지만, 언론 매체들은 알알와니가 그 주택으로 유인된 후 커튼 줄로 목이 졸렸다고 전했다.\n\n수사관들은 그 부동산을 임차한 것으로 알려진 3명의 용의자를 특정했다. 시리아 국적자 2명과 레바논 국적자 1명이다.",
-      "tried": true,
-      "count": 4,
-      "sources": [
-        "IraqiNews",
-        "ASHARQ AL-AWSAT English",
-        "Global Arab Network",
-        "964media"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크, 전직 의원 살해 관련 레바논 파견단 구성",
-          "source": "ASHARQ AL-AWSAT English",
-          "link": "https://english.aawsat.com/arab-world/5340346-iraq-send-delegation-lebanon-over-ex-mp-killing"
-        },
-        {
-          "titleKo": "이라크, 베이루트에서의 전직 의원 아흐메드 알-알와니 최후 시간 공개",
-          "source": "Global Arab Network",
-          "link": "https://english.globalarabnetwork.com/2026/11/12/iraq-reveals-final-hours-of-former-mp-ahmed-al-alwani-in-beirut/"
-        },
-        {
-          "titleKo": "이라크, \"시리아 억양의 남성들이 암살된 전직 의원 알와니를 베이루트 호텔에서 끌어냈다\"",
-          "source": "964media",
-          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBmQ29fV1luUE5aWV82cWg1SFNQSk41a2VVeHp0b2Z2SWpuUG9qSkM1b2FNdEtzVmhvbkNtUzJxMHJocGZf?oc=5"
-        }
-      ],
-      "tag": "치안·테러",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -490,37 +708,6 @@
       "impact": {
         "lv": "g",
         "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Al-Maliki resistance stalls plan to institutionalize Iraq’s Coordination Framework",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Report/Al-Maliki-resistance-stalls-plan-to-institutionalize-Iraq-s-Coordination-Framework",
-      "date": "2026-11-12T21:13:45.000Z",
-      "lang": "en",
-      "titleKo": "샤파크 뉴스..알말리키 저항 세력, 이라크 조정 체계 제도화 계획을 저지하다",
-      "url": "https://shafaq.com/en/Report/Al-Maliki-resistance-stalls-plan-to-institutionalize-Iraq-s-Coordination-Framework",
-      "body": "Shafaq News- Baghdad Leaders of Iraq's Coordination Framework were due to meet at Humam Hamoudi's home in Baghdad on November 2, but so many stayed away that the regular session gave way to an info\nMost of the Framework's leaders had initially backed the idea, a source told Shafaq News at the time. The holdout was Nouri al-Maliki, the former prime minister whose State of Law Coalition holds 29 seats, second within the alliance only to the 46 held by Mohammed Shia al-Sudani, Iraq's prime minister until May, and most of the Framework has since come round to his view.\nPoliticians and researchers inside and close to the alliance now doubt it will become a unified body under a single leadership any time soon.\nThe decision reaches well beyond the alliance's internal housekeeping. The Framework brings together Shiite parties, several of them tied to Iran-aligned armed factions. It formed in 2021 in opposition to Muqtada al-Sadr, leader of the Patriotic Shiite Movement, formerly known as the S",
-      "bodyKo": "샤팍 뉴스 - 바그다드 이라크 조정 체제의 지도자들은 11월 2일 바그다드의 후맘 하무디(Humam Hamoudi) 자택에서 회동할 예정이었지만, 너무 많은 사람이 불참하여 정기 회의는 정보 회의로 대체되었다.\n당시 한 소식통이 샤파크 뉴스에 전한 바에 따르면, 협력체 지도자 대부분이 처음에 이 아이디어를 지지했다고 한다. 반대파는 전 총리인 누리 알말리키였다. 그의 법치국가 연합은 29석을 차지하고 있으며, 이는 5월까지 이라크 총리를 지낸 모하메드 시아 알수다니가 보유한 46석에 이어 연합 내에서 두 번째로 많은 의석이다. 이후 조율체 내 대부분이 그의 의견에 동의하게 되었다.\n현재 동맹 내부 및 동맹과 가까운 정치인들과 연구자들은 동맹이 조만간 단일 지도부 아래 통합된 기구가 될 것이라는 점에 의문을 제기하고 있다.\n이 결정은 연합의 내부 관리 업무를 훨씬 뛰어넘는 의미를 갖는다. 조정협의체는 시아파 정당들을 한데 모으는데, 이들 중 상당수는 이란과 연계된 무장 세력과 연관되어 있다. 이 연합은 이전에 사드르 운동(Sadr Movement)으로 알려졌던 애국 시아파 운동(Patriotic Shiite Movement)의 지도자인 무크타다 알사드르(Muqtada al-Sadr)에 반대하여 2021년에 결성되었다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "샤파크 뉴스..알말리키 저항 세력, 이라크 조정 체계 제도화 계획을 저지하다",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Report/Al-Maliki-resistance-stalls-plan-to-institutionalize-Iraq-s-Coordination-Framework"
-        }
-      ],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
         "act": "",
         "place": "",
         "km": null
@@ -612,7 +799,7 @@
       "body": "شهدت منطقة بئر الحمام جنوب العاصمة بغداد، اليوم الخميس، حادثًا مؤسفًا تمثل في انفجار جسم غريب، مما أدى إلى إصابة أحد الأشخاص بجروح خطيرة\nتأتي هذه الحادثة في إطار تزايد المخاوف الأمنية في المناطق المحيطة بالعاصمة، حيث يُعتبر التعامل مع مثل هذه الأجسام الغريبة أحد التحديات التي تواجه الجهات الأمنية. وقد دعا المصدر المواطنين إلى توخي الحذر والإبلاغ عن أي أجسام مشبوهة قد تشكل خطرًا على السلامة العامة.",
       "bodyKo": "바그다드 남부 비르 알함맘 지역에서 목요일 오늘 이물질이 폭발하는 사건이 발생해 한 사람이 중상을 입었다.\n\n이번 사건은 수도 주변 지역의 보안 우려가 증가하는 가운데 발생했으며, 이러한 이물질 처리는 보안 당국이 직면한 과제 중 하나로 평가된다. 소식통은 시민들에게 주의를 기울이고 공공 안전에 위협이 될 수 있는 의심 물체를 신고할 것을 촉구했다.",
       "tried": true,
-      "count": 17,
+      "count": 9,
       "sources": [
         "العراق نيوز",
         "جريدة المدى",
@@ -810,7 +997,7 @@
     {
       "title": "المجلس الوزاري للخدمات يوافق على الاستراتيجية الوطنية لمكافحة ظاهرة التسول في العراق",
       "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9YeXFWUkpGdFEyVk5TMDlRZ2FHdFZaQV9pNHBpUlhkNTc4SzRDQjhMLVcyRlVLLWFpb19xUGF6Q241QTBfbkstQzZJMFQ?oc=5",
+      "link": "https://ina.iq/ar/local/279254-.html",
       "date": "2026-11-12T16:26:07.000Z",
       "lang": "ar",
       "titleKo": "이라크 내 거지 현상 퇴치를 위한 국가 전략에 이라크 서비스부 장관회의가 동의하다",
@@ -826,7 +1013,11 @@
         "act": "",
         "place": "",
         "km": null
-      }
+      },
+      "url": "https://ina.iq/ar/local/279254-.html",
+      "body": "",
+      "bodyKo": "",
+      "tried": true
     },
     {
       "title": "ما حقيقة الخبر المتداول بشأن إعلان مجلس الوزراء العراقي يوم الأحد الموافق 15 تشرين الثاني 2026 عطلة رسمية بمناسبة ذكرى إعلان الاستقلال؟",
@@ -1046,48 +1237,6 @@
         "place": "",
         "km": null
       }
-    },
-    {
-      "title": "إعلان صندوق إسترداد أموال العراق",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4xNTBtekZtTEhhMk53MWkydkk4cG00SktidFFqcHNUVFB6RkZxYzEwUXZwQ1RrNG9hRXpPUndOMlYxQXIzMWNVTF9R?oc=5",
-      "date": "2026-11-12T12:19:04.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 자금회수기금 공고",
-      "count": 1,
-      "sources": [
-        "وزارة الخارجية العراقية"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "US dollar approaches 170,000 dinars across Baghdad and Basra markets",
-      "source": "IraqiNews",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNb1lQOV9CZnZac1I2V1lzMl9BREU3NU16QzIwbF9WNXRJVlZqOXJYeHU2R3ZMcEl1UkFwTVdIMWNFUVRzTU5sWUhCVWxNNDhWWVEtR0MxLUVEeVNTU2dxUkhwVFJCMTZwTkNtU2YzY2dGdTF1enUyWXA2Zkc2TzZKaW1IUmdBOHY4QldXZ2ZrdE5RSFJDUnNSUnlyUE1odmRGUndadXN0WDdibmw0TUE?oc=5",
-      "date": "2026-11-12T12:05:30.000Z",
-      "lang": "en",
-      "titleKo": "미국 달러, 바그다드·바스라 시장에서 17만 디나르 근처 접근",
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
     }
   ],
   "alerts": [
@@ -1117,16 +1266,6 @@
   ],
   "brief": [
     {
-      "lv": "r",
-      "titleKo": "바그다드 남부 폭발물 폭발로 1명 중상",
-      "line": "현장 가까운 치안 사건 (바그다드)",
-      "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
-      "km": 27,
-      "link": "https://mangish.net/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%AC%D8%B3%D9%85-%D8%BA%D8%B1%D9%8A%D8%A8-%D8%AC%D9%86%D9%88%D8%A8-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D9%8F%D8%B3%D9%81%D8%B1-%D8%B9%D9%86-%D8%A5%D8%B5%D8%A7/",
-      "date": "2026-11-12T20:00:17.000Z",
-      "more": 1
-    },
-    {
       "lv": "y",
       "titleKo": "수주 받고도 작업은 '멈춤'…한화건설, 이라크선 대금 수령 \"하세월\"",
       "line": "한국·한국 기업 관련 소식 — 한국인 직원 참고",
@@ -1134,16 +1273,6 @@
       "km": 0,
       "link": "https://www.youthdaily.co.kr/news/article.html?no=229769",
       "date": "2026-11-12T23:00:08.000Z",
-      "more": 1
-    },
-    {
-      "lv": "y",
-      "titleKo": "중앙은행이 일부 평가절하 전 송금이 여전히 지연되고 있음을 인정함에 따라 바그다드에서 달러화가 17만 이라크 디나르에 근접",
-      "line": "디나르 환율 조정 — 현지 인력 급여 환산·현지 구매 단가 영향 가능",
-      "act": "현지 구매·용역 단가와 급여 환전 기준 확인",
-      "km": 27,
-      "link": "https://theinsightinternational.com/dollar-nears-170000-dinars-as-central-bank-says-pre-devaluation-transfers-still-pending/",
-      "date": "2026-11-12T18:43:01.000Z",
       "more": 0
     }
   ]
