@@ -1,23 +1,80 @@
 {
-  "generatedAt": "2026-11-13T01:13:17.672Z",
+  "generatedAt": "2026-11-13T08:09:24.926Z",
   "items": [
     {
-      "title": "튀르키예, 이라크 바시카 기지 반환 합의…연말 완전 철수 추진",
-      "source": "글로벌이코노믹",
-      "link": "https://www.g-enews.com/article/Global-Biz/2026/11/20261113033503712320990b2dc5_1",
-      "date": "2026-11-13T00:17:36.000Z",
-      "lang": "ko",
-      "titleKo": "튀르키예, 이라크 바시카 기지 반환 합의…연말 완전 철수 추진",
-      "url": "https://www.g-enews.com/article/Global-Biz/2026/11/20261113033503712320990b2dc5_1",
-      "body": "튀르키예가 2015년부터 주둔해 온 이라크 북부 바시카-질칸 군사 기지를 이라크 연방 정부에 단계적으로 이양하는 절차에 돌입하기로 했다.미국 국방·안보 전문 매체 브레이킹 디펜스는 11월 11일(현지시각) 이라크 군 대변인 발표를 인용해 이달 시작된 튀르키예군 철수가 연말까지 완료될 것",
-      "bodyKo": "튀르키예가 2015년부터 주둔해 온 이라크 북부 바시카-질칸 군사 기지를 이라크 연방 정부에 단계적으로 이양하는 절차에 돌입하기로 했다.미국 국방·안보 전문 매체 브레이킹 디펜스는 11월 11일(현지시각) 이라크 군 대변인 발표를 인용해 이달 시작된 튀르키예군 철수가 연말까지 완료될 것",
+      "title": "Iraq Launches Probe into Alleged Oil Smuggling Route to Afghanistan",
+      "source": "Khaama Press",
+      "link": "https://www.khaama.com/iraq-oil-smuggling-investigation-afghanistan/",
+      "date": "2026-11-13T07:54:57.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 아프가니스탄으로의 석유 밀수 루트 의혹 조사 착수",
+      "url": "https://www.khaama.com/iraq-oil-smuggling-investigation-afghanistan/",
+      "body": "raq launches investigations into alleged oil smuggling from Kirkuk and Kurdistan through Iran to Afghanistan.\nIraqi authorities have launched investigations into alleged oil smuggling operations involving fields in Kirkuk and the Kurdistan Region, following intelligence reports of a trafficking route through Iran to Afghanistan.\nAccording to a statement from the Iraqi Parliament on November 11, Speaker Haibat al-Halbousi ordered a temporary parliamentary committee to examine intelligence findings on the suspected smuggling network, a separate alleged oil theft operation in Jurf al-Nasr, and a recent attack on the Khor Mor gas field. The move comes as Iraq’s Federal Integrity Commission has also established a special investigative team to examine suspected oil smuggling from fields between Kirkuk and the Kurdistan Region.",
+      "bodyKo": "**이라크, 키르쿠크·쿠르디스탄 유전 밀수유 적발 수사 착수**\n\n이라크 당국이 키르쿠크와 쿠르디스탄 지역의 유전에서 이란을 거쳐 아프가니스탄으로 밀반출되는 것으로 의심되는 유류 밀수 작전에 대한 수사를 시작했다.\n\n이라크 의회의 11월 11일 성명에 따르면 하이바트 알할부시 의장은 이란을 거쳐 아프가니스탄으로 가는 밀수 경로에 대한 정보기관 보고서를 검토하기 위해 임시 의회위원회를 구성하도록 지시했다. 이 위원회는 의심되는 밀수 네트워크에 대한 정보 자료를 검토하고, 주르프 알나스르에서의 별도 유류 도난 혐의, 그리고 최근 호르 모르 가스전에 대한 공격을 조사하게 된다. 이라크 연방청렴위원회도 키르쿠크와 쿠르디스탄 지역 사이의 유전에서 의심되는 유류 밀수를 조사하기 위한 특별 수사팀을 구성했다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
-        "글로벌이코노믹"
+        "Rudaw",
+        "Khaama Press"
       ],
-      "related": [],
-      "tag": "기타",
+      "related": [
+        {
+          "titleKo": "이라크 총리, 주르프 알사크르 석유 밀수 의혹을 조사하기 위한 고위급 위원회 구성",
+          "source": "Rudaw",
+          "link": "https://rudaw.net/english/categories/iraq/1080143"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "키르쿠크",
+        "km": 254
+      }
+    },
+    {
+      "title": "Former Iraqi MP found dead in Lebanon",
+      "source": "IraqiNews",
+      "link": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
+      "date": "2026-11-13T02:50:28.000Z",
+      "lang": "en",
+      "titleKo": "전직 이라크 의원 레바논에서 시신으로 발견",
+      "url": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
+      "body": "Former Iraqi lawmaker Ahmed al-Alwani. Photo: Al-Alwani’s media office\nBaghdad (IraqiNews.com) – Lebanese and Iraqi authorities have launched an investigation after the body of former Iraqi lawmaker Ahmed al-Alwani was discovered in an apartment in the Lebanese capital, Beirut.\nWhile initial reports from Lebanese media emerged on Tuesday, judicial sources indicate the body was found on Monday evening in the Tariq al-Jadideh neighborhood.\nAuthorities found the body after al-Alwani’s family reported losing contact with him four days earlier.\nAlthough authorities have not yet issued a complete forensic report, media outlets mentioned that al-Alwani was strangled with a curtain cord after being lured to the residence.\nThree suspects who allegedly leased the property were identified by investigators: two Syrian nationals and one Lebanese citizen.",
+      "bodyKo": "**전직 이라크 의원 알마드 알알와니, 베이루트 아파트에서 시신 발견**\n\n바그다드(이라크뉴스닷컴) – 레바논과 이라크 당국이 전직 이라크 의원 아흐마드 알알와니의 시신이 레바논 수도 베이루트의 한 아파트에서 발견된 후 수사를 개시했다.\n\n레바논 언론에서 화요일 초기 보도가 나왔지만, 사법 소식통은 시신이 월요일 저녁 타리크 알자디데 지역에서 발견됐다고 밝혔다.\n\n알알와니의 가족이 4일 전 그와의 연락이 끊겼다고 신고한 후 당국이 시신을 발견했다.\n\n당국이 아직 완전한 법의학 보고서를 발표하지 않았지만, 언론 매체들은 알알와니가 그 주택으로 유인된 후 커튼 줄로 목이 졸렸다고 전했다.\n\n수사관들은 그 부동산을 임차한 것으로 알려진 3명의 용의자를 특정했다. 시리아 국적자 2명과 레바논 국적자 1명이다.",
+      "tried": true,
+      "count": 5,
+      "sources": [
+        "UA.NEWS",
+        "Al Jazeera",
+        "IraqiNews",
+        "ASHARQ AL-AWSAT English",
+        "964media"
+      ],
+      "related": [
+        {
+          "titleKo": "레바논, 시리아에 전 이라크 국회의원 살해 용의자 2명 인도를 요청 — 알자지라",
+          "source": "UA.NEWS",
+          "link": "https://ua.news/en/dovkolo-svitu/livan-prosit-siriiu-vidati-2-pidozriuvanikh-u-vbivstvi-eksdeputata-iraku-al-jazeera"
+        },
+        {
+          "titleKo": "이라크 전 의원 피살 후, 레바논이 시리아에 용의자 인도 요청",
+          "source": "Al Jazeera",
+          "link": "https://www.aljazeera.com/amp/news/2026/11/13/after-iraq-ex-mps-killing-lebanon-asks-syria-to-extradite-suspects"
+        },
+        {
+          "titleKo": "이라크, 전직 의원 살해 관련 레바논 파견단 구성",
+          "source": "ASHARQ AL-AWSAT English",
+          "link": "https://english.aawsat.com/arab-world/5340346-iraq-send-delegation-lebanon-over-ex-mp-killing"
+        },
+        {
+          "titleKo": "이라크, \"시리아 억양의 남성들이 암살된 전직 의원 알와니를 베이루트 호텔에서 끌어냈다\"",
+          "source": "964media",
+          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBmQ29fV1luUE5aWV82cWg1SFNQSk41a2VVeHp0b2Z2SWpuUG9qSkM1b2FNdEtzVmhvbkNtUzJxMHJocGZf?oc=5"
+        }
+      ],
+      "tag": "치안·테러",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -49,6 +106,31 @@
         "act": "",
         "place": "비스마야",
         "km": 0
+      }
+    },
+    {
+      "title": "Ahmed al-Alwani: From Iraq's Protest Front Lines to a Violent Death in Beirut - ASHARQ AL-AWSAT English",
+      "source": "ASHARQ AL-AWSAT English",
+      "link": "https://english.aawsat.com/arab-world/5340336-ahmed-al-alwani-iraqs-protest-front-lines-violent-death-beirut",
+      "date": "2026-11-12T21:33:45.000Z",
+      "lang": "en",
+      "titleKo": "아흐메드 알-알와니: 이라크 시위 최전선에서 베이루트 폭력 사망까지",
+      "url": "https://english.aawsat.com/arab-world/5340336-ahmed-al-alwani-iraqs-protest-front-lines-violent-death-beirut",
+      "body": "Iraqi politician Ahmed al-Alwani, found dead in an apartment in Beirut on Tuesday, lived a political career shaped by the turmoil that engulfed Iraq after 2003. From parliament, he rose to the forefront of protests against former Prime Minister Nouri al-Maliki, only to spend more than 11 years behind bars after a deadly raid on his home in Ramadi. His release in April 2025 marked a return to public life that ended with his killing in the Lebanese capital.\nAl-Alwani belonged to the Albu Alwan tribe, one of the largest in Iraq's western Anbar province, which he represented in parliament. He was a member of the Iraqiya coalition led by former Prime Minister Iyad Allawi, held a doctorate in earth sciences from the University of Baghdad and chaired parliament's economic committee.\nHe emerged as a prominent political figure in late 2012, joining protests that erupted in Anbar before spreading to other predominantly Sunni provinces.",
+      "bodyKo": "이라크 정치인 아흐메드 알-알와니, 베이루트 아파트에서 사망\n\n이라크 정치인 아흐메드 알-알와니가 화요일 베이루트의 한 아파트에서 시신으로 발견됐다. 그는 2003년 이후 이라크를 휩싼 혼란 속에서 정치 경력을 쌓았다. 의회에서 전직 총리 누리 알-말리키에 반대하는 시위의 최전선에 올랐다가, 라마디의 자신의 집에 대한 치명적인 급습 이후 11년 이상을 감옥에서 보냈다. 2025년 4월의 석방은 그의 공직 복귀를 의미했지만, 레바논 수도에서의 살해로 그 삶은 끝났다.\n\n알-알와니는 이라크 서부 안바르주의 가장 큰 부족 중 하나인 알부 알완 부족에 속했으며, 의회에서 이 지역을 대표했다. 전직 총리 이야드 알라위가 이끄는 이라키야 연합의 일원이었고, 바그다드 대학교에서 지구과학 박사학위를 취득했으며, 의회의 경제위원회 위원장을 역임했다.\n\n그는 2012년 말 안바르에서 발생한 시위에 참여하면서 저명한 정치인으로 부상했고, 이 시위는 다른 순니파 다수 지역으로 확산됐다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "ASHARQ AL-AWSAT English"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "g",
+        "line": "시위 소식 — 장소 확인 필요",
+        "act": "",
+        "place": "",
+        "km": null
       }
     },
     {
@@ -87,11 +169,17 @@
       "body": "Shafaq News- Baghdad Leaders of Iraq's Coordination Framework were due to meet at Humam Hamoudi's home in Baghdad on November 2, but so many stayed away that the regular session gave way to an info\nMost of the Framework's leaders had initially backed the idea, a source told Shafaq News at the time. The holdout was Nouri al-Maliki, the former prime minister whose State of Law Coalition holds 29 seats, second within the alliance only to the 46 held by Mohammed Shia al-Sudani, Iraq's prime minister until May, and most of the Framework has since come round to his view.\nPoliticians and researchers inside and close to the alliance now doubt it will become a unified body under a single leadership any time soon.\nThe decision reaches well beyond the alliance's internal housekeeping. The Framework brings together Shiite parties, several of them tied to Iran-aligned armed factions. It formed in 2021 in opposition to Muqtada al-Sadr, leader of the Patriotic Shiite Movement, formerly known as the S",
       "bodyKo": "샤팍 뉴스 - 바그다드 이라크 조정 체제의 지도자들은 11월 2일 바그다드의 후맘 하무디(Humam Hamoudi) 자택에서 회동할 예정이었지만, 너무 많은 사람이 불참하여 정기 회의는 정보 회의로 대체되었다.\n당시 한 소식통이 샤파크 뉴스에 전한 바에 따르면, 협력체 지도자 대부분이 처음에 이 아이디어를 지지했다고 한다. 반대파는 전 총리인 누리 알말리키였다. 그의 법치국가 연합은 29석을 차지하고 있으며, 이는 5월까지 이라크 총리를 지낸 모하메드 시아 알수다니가 보유한 46석에 이어 연합 내에서 두 번째로 많은 의석이다. 이후 조율체 내 대부분이 그의 의견에 동의하게 되었다.\n현재 동맹 내부 및 동맹과 가까운 정치인들과 연구자들은 동맹이 조만간 단일 지도부 아래 통합된 기구가 될 것이라는 점에 의문을 제기하고 있다.\n이 결정은 연합의 내부 관리 업무를 훨씬 뛰어넘는 의미를 갖는다. 조정협의체는 시아파 정당들을 한데 모으는데, 이들 중 상당수는 이란과 연계된 무장 세력과 연관되어 있다. 이 연합은 이전에 사드르 운동(Sadr Movement)으로 알려졌던 애국 시아파 운동(Patriotic Shiite Movement)의 지도자인 무크타다 알사드르(Muqtada al-Sadr)에 반대하여 2021년에 결성되었다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "샤파크 뉴스..알말리키 저항 세력, 이라크 조정 체계 제도화 계획을 저지하다",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Report/Al-Maliki-resistance-stalls-plan-to-institutionalize-Iraq-s-Coordination-Framework"
+        }
+      ],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -180,27 +268,37 @@
       "title": "انفجار جسم غريب جنوب بغداد يُسفر عن إصابة خطيرة لشخص واحد",
       "source": "مانكيش نت",
       "link": "https://mangish.net/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%AC%D8%B3%D9%85-%D8%BA%D8%B1%D9%8A%D8%A8-%D8%AC%D9%86%D9%88%D8%A8-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D9%8F%D8%B3%D9%81%D8%B1-%D8%B9%D9%86-%D8%A5%D8%B5%D8%A7/",
-      "date": "2026-11-12T19:42:40.000Z",
+      "date": "2026-11-12T20:00:17.000Z",
       "lang": "ar",
       "titleKo": "바그다드 남부 폭발물 폭발로 1명 중상",
       "url": "https://mangish.net/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%AC%D8%B3%D9%85-%D8%BA%D8%B1%D9%8A%D8%A8-%D8%AC%D9%86%D9%88%D8%A8-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D9%8F%D8%B3%D9%81%D8%B1-%D8%B9%D9%86-%D8%A5%D8%B5%D8%A7/",
       "body": "شهدت منطقة بئر الحمام جنوب العاصمة بغداد، اليوم الخميس، حادثًا مؤسفًا تمثل في انفجار جسم غريب، مما أدى إلى إصابة أحد الأشخاص بجروح خطيرة\nتأتي هذه الحادثة في إطار تزايد المخاوف الأمنية في المناطق المحيطة بالعاصمة، حيث يُعتبر التعامل مع مثل هذه الأجسام الغريبة أحد التحديات التي تواجه الجهات الأمنية. وقد دعا المصدر المواطنين إلى توخي الحذر والإبلاغ عن أي أجسام مشبوهة قد تشكل خطرًا على السلامة العامة.",
       "bodyKo": "바그다드 남부 비르 알함맘 지역에서 목요일 오늘 이물질이 폭발하는 사건이 발생해 한 사람이 중상을 입었다.\n\n이번 사건은 수도 주변 지역의 보안 우려가 증가하는 가운데 발생했으며, 이러한 이물질 처리는 보안 당국이 직면한 과제 중 하나로 평가된다. 소식통은 시민들에게 주의를 기울이고 공공 안전에 위협이 될 수 있는 의심 물체를 신고할 것을 촉구했다.",
       "tried": true,
-      "count": 15,
+      "count": 17,
       "sources": [
+        "العراق نيوز",
         "جريدة المدى",
+        "وكالة الانباء العراقية (واع)",
         "هذا اليوم",
         "شفقنا العراق",
-        "مانكيش نت",
-        "وكالة انباء براثا",
-        "قناة الرشيد الفضائية"
+        "قناة دجلة الفضائية"
       ],
       "related": [
+        {
+          "titleKo": "바그다드 남부에서 불발탄 폭발로 농부가 부상을 입었습니다.",
+          "source": "العراق نيوز",
+          "link": "https://www.iraqnews-in.com/167746/%D9%85%D8%B2%D8%A7%D8%B1%D8%B9-%D9%8A%D8%AA%D8%B9%D8%B1%D8%B6-%D9%84%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D8%AC%D8%B1%D8%A7%D8%A1-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%B0%D8%AE%D9%8A%D8%B1%D8%A9-%D8%BA/"
+        },
         {
           "titleKo": "바그다드 남부에서 농부가 구형 전쟁 폭발물에 맞아 부상",
           "source": "جريدة المدى",
           "link": "https://almadapaper.net/460960/"
+        },
+        {
+          "titleKo": "보안당국 \"바그다드 남부에서 구형 폭발물로 시민 부상\"",
+          "source": "وكالة الانباء العراقية (واع)",
+          "link": "https://ina.iq/ar/security/279227-.html"
         },
         {
           "titleKo": "바그다드 남부 유수피야에서 구형 전쟁 폭발물 폭발로 농민 부상",
@@ -211,16 +309,6 @@
           "titleKo": "유수피야에서 전쟁 유산 폭발로 농민 부상…바그다드 남부",
           "source": "شفقنا العراق",
           "link": "https://iraq.shafaqna.com/AR/671498/"
-        },
-        {
-          "titleKo": "바그다드 남부에서 미확인 물체 폭발.. 1명 중상",
-          "source": "وكالة انباء براثا",
-          "link": "http://burathanews.com/arabic/D1kky3v2"
-        },
-        {
-          "titleKo": "바그다드 작전사령부: 바그다드 남부 유수피야 지역에서 구형 전쟁 폭발물 폭발로 민간인 부상",
-          "source": "قناة الرشيد الفضائية",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5hWGVKbzM4aUp5LVFDTUxBTElmUzkwT3d2RzY2eC1oaXYxSnktNGZGTW4tWUdaOHBtRm5YNnAzRUVub0VlUGM5Q3FsSEswYjNOakNkbU9TcnpnRG9vbWc?oc=5"
         }
       ],
       "tag": "치안·테러",
@@ -283,6 +371,31 @@
       }
     },
     {
+      "title": "튀르키예, 이라크 바시카 기지 반환 합의…연말 완전 철수 추진",
+      "source": "글로벌이코노믹",
+      "link": "https://www.g-enews.com/article/Global-Biz/2026/11/20261113033503712320990b2dc5_1",
+      "date": "2026-11-12T18:37:17.000Z",
+      "lang": "ko",
+      "titleKo": "튀르키예, 이라크 바시카 기지 반환 합의…연말 완전 철수 추진",
+      "url": "https://www.g-enews.com/article/Global-Biz/2026/11/20261113033503712320990b2dc5_1",
+      "body": "튀르키예가 2015년부터 주둔해 온 이라크 북부 바시카-질칸 군사 기지를 이라크 연방 정부에 단계적으로 이양하는 절차에 돌입하기로 했다.미국 국방·안보 전문 매체 브레이킹 디펜스는 11월 11일(현지시각) 이라크 군 대변인 발표를 인용해 이달 시작된 튀르키예군 철수가 연말까지 완료될 것",
+      "bodyKo": "튀르키예가 2015년부터 주둔해 온 이라크 북부 바시카-질칸 군사 기지를 이라크 연방 정부에 단계적으로 이양하는 절차에 돌입하기로 했다.미국 국방·안보 전문 매체 브레이킹 디펜스는 11월 11일(현지시각) 이라크 군 대변인 발표를 인용해 이달 시작된 튀르키예군 철수가 연말까지 완료될 것",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "글로벌이코노믹"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "오레두 파이버 네트웍스, 국제 광섬유 전송망 구축 위한 이라크 승인 확보 - 뉴스 및 통계",
       "source": "IndexBox",
       "link": "https://www.indexbox.io/ko/blog/ooredoo-fibre-networks-secures-iraq-transit-authorization-for-fiber-route-to-trkiye/",
@@ -333,81 +446,25 @@
       }
     },
     {
-      "title": "Former Iraqi MP found dead in Lebanon",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
+      "title": "Iraq Reveals Final Hours of Former MP Ahmed al-Alwani in Beirut",
+      "source": "Global Arab Network",
+      "link": "https://english.globalarabnetwork.com/2026/11/12/iraq-reveals-final-hours-of-former-mp-ahmed-al-alwani-in-beirut/",
       "date": "2026-11-12T18:09:50.000Z",
       "lang": "en",
-      "titleKo": "전직 이라크 의원 레바논에서 시신으로 발견",
-      "url": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
-      "body": "Former Iraqi lawmaker Ahmed al-Alwani. Photo: Al-Alwani’s media office\nBaghdad (IraqiNews.com) – Lebanese and Iraqi authorities have launched an investigation after the body of former Iraqi lawmaker Ahmed al-Alwani was discovered in an apartment in the Lebanese capital, Beirut.\nWhile initial reports from Lebanese media emerged on Tuesday, judicial sources indicate the body was found on Monday evening in the Tariq al-Jadideh neighborhood.\nAuthorities found the body after al-Alwani’s family reported losing contact with him four days earlier.\nAlthough authorities have not yet issued a complete forensic report, media outlets mentioned that al-Alwani was strangled with a curtain cord after being lured to the residence.\nThree suspects who allegedly leased the property were identified by investigators: two Syrian nationals and one Lebanese citizen.",
-      "bodyKo": "**전직 이라크 의원 알마드 알알와니, 베이루트 아파트에서 시신 발견**\n\n바그다드(이라크뉴스닷컴) – 레바논과 이라크 당국이 전직 이라크 의원 아흐마드 알알와니의 시신이 레바논 수도 베이루트의 한 아파트에서 발견된 후 수사를 개시했다.\n\n레바논 언론에서 화요일 초기 보도가 나왔지만, 사법 소식통은 시신이 월요일 저녁 타리크 알자디데 지역에서 발견됐다고 밝혔다.\n\n알알와니의 가족이 4일 전 그와의 연락이 끊겼다고 신고한 후 당국이 시신을 발견했다.\n\n당국이 아직 완전한 법의학 보고서를 발표하지 않았지만, 언론 매체들은 알알와니가 그 주택으로 유인된 후 커튼 줄로 목이 졸렸다고 전했다.\n\n수사관들은 그 부동산을 임차한 것으로 알려진 3명의 용의자를 특정했다. 시리아 국적자 2명과 레바논 국적자 1명이다.",
-      "tried": true,
-      "count": 7,
-      "sources": [
-        "Global Arab Network",
-        "IraqiNews",
-        "ASHARQ AL-AWSAT English",
-        "964media",
-        "UA.NEWS",
-        "مجلس النواب العراقي"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크, 베이루트에서의 전직 의원 아흐메드 알-알와니 최후 시간 공개",
-          "source": "Global Arab Network",
-          "link": "https://english.globalarabnetwork.com/2026/11/12/iraq-reveals-final-hours-of-former-mp-ahmed-al-alwani-in-beirut/"
-        },
-        {
-          "titleKo": "이라크, 전직 의원 살해 관련 레바논 파견단 구성",
-          "source": "ASHARQ AL-AWSAT English",
-          "link": "https://english.aawsat.com/arab-world/5340346-iraq-send-delegation-lebanon-over-ex-mp-killing"
-        },
-        {
-          "titleKo": "이라크, \"시리아 억양의 남성들이 암살된 전직 의원 알와니를 베이루트 호텔에서 끌어냈다\"",
-          "source": "964media",
-          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBmQ29fV1luUE5aWV82cWg1SFNQSk41a2VVeHp0b2Z2SWpuUG9qSkM1b2FNdEtzVmhvbkNtUzJxMHJocGZf?oc=5"
-        },
-        {
-          "titleKo": "이라크, 전직 의원 살해 관련 레바논에 대표단 파견 — 아샤르크 알아우사트",
-          "source": "UA.NEWS",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTkxFV2JJU181aDk1RGRhWUlKVm5MRXVSblZyUkdoTWZ2TEd2Vk4yaDdjZ1c0T3dMZTdkTHN4UjlUZ0lmZkpua2dhR0lNVDBSTHkydGZadENORG5tVzl6OHFYd3h4dlVpekpzV1haS2Z1YW5Kemt0YVlfQS1jTUI4QkhwdjRfN0k5Q0FFMVRWN0RNemtwdy13RUlsbVRxdWd4aXFuOTFrVVp0NjdZX3FhRGJReVlWckd6b0E?oc=5"
-        },
-        {
-          "titleKo": "의회 부의장 파르하드 아트루시, 전직 의원 아흐메드 알-알와니 서거에 조의 표시 및 이라크·레바논 당국에 사건 경위 조사 촉구",
-          "source": "مجلس النواب العراقي",
-          "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxPV3RLXzBQd0hRaUhDeC1IcllBY0ZvdUVXQXlIZndJX2ZTR0NpWnFvRkJWa281X1I3Mkx6Y3RIU3pmdU8tanJiX2dKdk9iUWdDUUhQS3B6RXpkSHRFTjUxajJITDJKQkFKTmMzMTkza2JkdFl6YUdqWk5DLXBxbng2SkpPWVkyWlJGSE95QUhnbG5UVWIwY2g2S2UxVEEtR3d6enU3akxoLWRZM3N5Ny0xM2JHVHQ0aUR1SnVmVVMzVUZXZ1hvLVVGN1NQSl9hc0xDQ2ZzVlJ4Uk4xeUtrNGFzeHFrMHREZ1M1WlljSklkVlVucm5WbUNJano5c3RWZDNzVzZJQ09NQnozRVdHZ21qT2RXdFU0Z0M4UFRTRFBCTkJGbGpaV1N1ckRmSEZVN1hqdGlhOHRManZTOFVMdlZzYm5FN2JXcTNfU0JZdHZlZ3FzcG9TaWNocA?oc=5"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Ahmed al-Alwani: From Iraq's Protest Front Lines to a Violent Death in Beirut - ASHARQ AL-AWSAT English",
-      "source": "ASHARQ AL-AWSAT English",
-      "link": "https://english.aawsat.com/arab-world/5340336-ahmed-al-alwani-iraqs-protest-front-lines-violent-death-beirut",
-      "date": "2026-11-12T17:26:56.000Z",
-      "lang": "en",
-      "titleKo": "아흐메드 알-알와니: 이라크 시위 최전선에서 베이루트 폭력 사망까지",
-      "url": "https://english.aawsat.com/arab-world/5340336-ahmed-al-alwani-iraqs-protest-front-lines-violent-death-beirut",
-      "body": "Iraqi politician Ahmed al-Alwani, found dead in an apartment in Beirut on Tuesday, lived a political career shaped by the turmoil that engulfed Iraq after 2003. From parliament, he rose to the forefront of protests against former Prime Minister Nouri al-Maliki, only to spend more than 11 years behind bars after a deadly raid on his home in Ramadi. His release in April 2025 marked a return to public life that ended with his killing in the Lebanese capital.\nAl-Alwani belonged to the Albu Alwan tribe, one of the largest in Iraq's western Anbar province, which he represented in parliament. He was a member of the Iraqiya coalition led by former Prime Minister Iyad Allawi, held a doctorate in earth sciences from the University of Baghdad and chaired parliament's economic committee.\nHe emerged as a prominent political figure in late 2012, joining protests that erupted in Anbar before spreading to other predominantly Sunni provinces.",
-      "bodyKo": "이라크 정치인 아흐메드 알-알와니, 베이루트 아파트에서 사망\n\n이라크 정치인 아흐메드 알-알와니가 화요일 베이루트의 한 아파트에서 시신으로 발견됐다. 그는 2003년 이후 이라크를 휩싼 혼란 속에서 정치 경력을 쌓았다. 의회에서 전직 총리 누리 알-말리키에 반대하는 시위의 최전선에 올랐다가, 라마디의 자신의 집에 대한 치명적인 급습 이후 11년 이상을 감옥에서 보냈다. 2025년 4월의 석방은 그의 공직 복귀를 의미했지만, 레바논 수도에서의 살해로 그 삶은 끝났다.\n\n알-알와니는 이라크 서부 안바르주의 가장 큰 부족 중 하나인 알부 알완 부족에 속했으며, 의회에서 이 지역을 대표했다. 전직 총리 이야드 알라위가 이끄는 이라키야 연합의 일원이었고, 바그다드 대학교에서 지구과학 박사학위를 취득했으며, 의회의 경제위원회 위원장을 역임했다.\n\n그는 2012년 말 안바르에서 발생한 시위에 참여하면서 저명한 정치인으로 부상했고, 이 시위는 다른 순니파 다수 지역으로 확산됐다.",
+      "titleKo": "이라크, 베이루트에서의 전직 의원 아흐메드 알-알와니 최후 시간 공개",
+      "url": "https://english.globalarabnetwork.com/2026/11/12/iraq-reveals-final-hours-of-former-mp-ahmed-al-alwani-in-beirut/",
+      "body": "Iraqi authorities have disclosed details regarding the final hours of former lawmaker Ahmed al-Alwani, who was found dead in a Beirut apartment.\nGlobal Arab Network Editorial Team November 12, 2026 Iraq , Lebanon , Politics Iraqi security officials have provided an official account detailing the final movements of former Iraqi Member of Parliament, Ahmed al-Alwani, following the discovery of his body in the Lebanese capital, Beirut. The statement, delivered on Thursday by the head of Iraq’s Security Media Cell, Major General Saad Maan, aims to clarify the timeline of events leading up to the former deputy’s death.\nAccording to the information released by the Iraqi security authorities, Al-Alwani had traveled to Beirut and checked into a hotel. However, his stay at the establishment was brief. Reports indicate that he departed the hotel less than an hour after receiving his room key. During his departure, he reportedly informed hotel staff that he had been met by acquaintances and inten",
+      "bodyKo": "이라크 당국, 베이루트 아파트서 숨진 전직 의원 알알와니 최후 시간 공개\n\n이라크 보안 당국이 베이루트 아파트에서 시신으로 발견된 전직 의원 아흐메드 알알와니의 최후 시간과 관련된 세부 사항을 공개했다.\n\n이라크 보안 관계자들은 레바논 수도 베이루트에서 시신이 발견된 후 전직 이라크 의회 의원 아흐메드 알알와니의 최후 움직임을 상세히 설명하는 공식 입장을 제시했다. 목요일 이라크 보안미디어실장 사아드 마안 소장이 발표한 성명은 전직 의원의 사망으로 이어진 사건의 시간 순서를 명확히 하기 위한 것이다.\n\n이라크 보안 당국이 공개한 정보에 따르면 알알와니는 베이루트로 이동해 호텔에 체크인했다. 그러나 그의 숙박은 짧았다. 보도에 따르면 그는 객실 열쇠를 받은 지 1시간도 채 되지 않아 호텔을 떠났다. 떠나면서 그는 호텔 직원에게 지인들을 만났으며 떠날 의도가 있다고 알린 것으로 전해졌다.",
       "tried": true,
       "count": 1,
       "sources": [
-        "ASHARQ AL-AWSAT English"
+        "Global Arab Network"
       ],
       "related": [],
-      "tag": "시위·통제",
+      "tag": "기타",
       "impact": {
         "lv": "g",
-        "line": "시위 소식 — 장소 확인 필요",
+        "line": "현장 직접 영향 낮음",
         "act": "",
         "place": "",
         "km": null
@@ -584,15 +641,15 @@
       }
     },
     {
-      "title": "عمليات بغداد توضح طبيعة الانفجار جنوبي بغداد",
-      "source": "وكالة انباء براثا",
-      "link": "https://burathanews.com/arabic/WBNpg0vM",
+      "title": "بيان من عمليات بغداد بشأن انفجار جنوبي العاصمة",
+      "source": "شبكة 964",
+      "link": "https://964media.com/735861/",
       "date": "2026-11-12T14:20:16.000Z",
       "lang": "ar",
-      "titleKo": "바그다드 작전사령부, 바그다드 남부 폭발 성격 규명",
-      "url": "https://burathanews.com/arabic/WBNpg0vM",
-      "body": "اصدرت قيادة عليلت بغداد، اليوم الخميس، تنويهاً بشأن الانفجار الذي وقع جنوبي بغداد.\nوذكرت القيادة في بيان انه \"تداولت بعض منصات مواقع التواصل الاجتماعي خبر مفاده سماع دوي انفجار فـــي ناحية اليوسفية جنوبي العاصمة، وتود ان توضح قيادة عمليات بغداد الموقف الرسمي بشأن ذلك\".\nواشارت الى انه \"بالساعة الثانية ونصف من مساء اليوم انفجر مخلف حربي قديم في منطقة زراعية مما ادى الى اصابة مواطن اثناء عمله بجروح، في ناحية اليوسفية جنوبي العاصمة، تم نقله الى المستشفى لتقلي العلاج، لذا اقتضى التنويه\".",
-      "bodyKo": "바그다드 연대 사령부는 오늘 목요일 바그다드 남부에서 발생한 폭발에 대한 성명을 발표했습니다.\n사령부는 성명에서 \"일부 소셜 미디어 플랫폼이 수도 남쪽의 유수피야 지역에서 폭발음이 들렸다는 소식을 전했으며, 바그다드 작전 사령부가 이에 대한 공식 입장을 밝히고자 한다\"고 밝혔습니다.\n\"오늘 오후 2시 30분, 수도 남쪽의 유수피야 지역 농경지에서 오래된 불발탄이 폭발하여 한 시민이 일하던 중 부상을 입었습니다. 그는 치료를 받기 위해 병원으로 이송되었습니다. 이에 알려드립니다.\"라고 밝혔습니다.",
+      "titleKo": "바그다드 남부 폭발 관련 바그다드 작전사령부 성명",
+      "url": "https://964media.com/735861/",
+      "body": "بغداد – 964 أوضحت قيادة عمليات بغداد، اليوم الخميس (12 تشرين الثاني 2026)، حقيقة الأنباء المتداولة بشأن\nانضموا إلى أسرع منصاتنا وذكرت القيادة في بيان تلقته شبكة 964 ، أنه “تداولت بعض منصات مواقع التواصل الاجتماعي خبراً مفاده سماع دوي انفجار في ناحية اليوسفية جنوبي العاصمة”.\nوأضافت أن الموقف الرسمي يتمثل بأنه “في الساعة الثانية والنصف من مساء اليوم انفجر مخلف حربي قديم في منطقة زراعية بناحية اليوسفية، مما أدى إلى إصابة مواطن بجروح أثناء عمله، وتم نقله إلى المستشفى لتلقي العلاج”.",
+      "bodyKo": "바그다드 – 964 바그다드 작전 사령부는 오늘(2026년 11월 12일, 목요일) 다음과 같은 소문에 대한 진상을 밝혔습니다.\n저희의 가장 빠른 플랫폼에 가입하세요. 964 네트워크가 받은 성명에서 사령부는 \"일부 소셜 미디어 플랫폼이 수도 남쪽의 유수피야 지역에서 폭발음이 들렸다는 소식을 전했습니다.\"라고 밝혔습니다.\n그녀는 공식 입장은 \"오늘 오후 2시 30분, 유수피야 지역의 농경지에서 오래된 불발탄이 폭발하여 한 시민이 일하는 중에 부상을 입었고, 치료를 받기 위해 병원으로 이송되었다\"라고 덧붙였습니다.",
       "tried": true,
       "count": 3,
       "sources": [
@@ -602,14 +659,14 @@
       ],
       "related": [
         {
-          "titleKo": "바그다드 남부 폭발 관련 바그다드 작전사령부 성명",
-          "source": "شبكة 964",
-          "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE4yVXRiblFrLXpvaDVvYU04aXZyX2lrdllPREI5Y3FpWUVMWTA2Vnl4WjFUbTE3Und1MDFwRzZQbkRaUQ?oc=5"
+          "titleKo": "바그다드 작전사령부, 바그다드 남부 폭발 성격 규명",
+          "source": "وكالة انباء براثا",
+          "link": "https://burathanews.com/arabic/WBNpg0vM"
         },
         {
           "titleKo": "바그다드 작전사령부, 바그다드 남부 폭발 성격 규명",
           "source": "شبكة تواصل الإخبارية",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1wVU91N1djT3h5OHYwbnZKWm1OUGJyc0pibWxJN2V5cGJHVHdMc0M5VnBxMDI1UVRET3FDXzZ1cGpjLUJzdG91dnBVZHdVX2paR2ZB?oc=5"
+          "link": "https://twaslnews1.twaslnews.com/7571192/"
         }
       ],
       "tag": "치안·테러",
@@ -714,28 +771,18 @@
       }
     },
     {
-      "title": "Iraq Launches Probe into Alleged Oil Smuggling Route to Afghanistan",
-      "source": "Khaama Press",
-      "link": "https://www.khaama.com/iraq-oil-smuggling-investigation-afghanistan/",
+      "title": "العراق يحقق في تهريب النفط والهجوم على حقل كورمور",
+      "source": "الحدث",
+      "link": "https://news.google.com/rss/articles/CBMi0gRBVV95cUxQVlU5NVdWSnlFdldBSEdDd2lLR0ZZejRwMG5uNUlmSy1RalFsekQzTGN3dnp3aVI4Tmxoa0xsZkFBN2tHQjRUVDlsVVlMcnBzVXV2NFkzMTRwbVZnMl9jZEpjRy1PdE5wdE1FZmlCNDZZc2VadXItVUFUUEZIYXFVQVlHSXpxVHlkcTlrcXBJY0pJNklXTFo0Q0oxOGRzNU1NRWdiWGdCMU9obEZ6VW9SYTV0d3htXzhXclZQN19uNG5HaXRoRHljZ0hYRFJQd3VKbDYycTlpcFM1YWJkQnQ2YlN0YllwVlh0TXdiLXNveXVTejlzOUVCZTdoZ2NSOXpiNHBOWVA4Wnl2d3cwUUlETUk2aFk2WjVtcTdieTRLd0sxWlRmcXNTT0FXaUlOcjlxU3VabXBsQ2ZqODRBV1pibTlqRjdrWkV2R3pXN2xnOGJDRURJajNnak5PMlVGeVF5QmlfZzk2ckFaX3A5YXdQdHRTSTY4UE9wb21tUXY3TExrMjR6RXhvMGZkM3JmX1FwRlpnb1VvNDFsNWYzWC1idllVT3VkWmxYelc4bmZfWUtXQ0ZFWjhWaUMzNDFuLWJtaXlHNGNyMUdjNGJqaGhzQl9NdzAxYVN1MUt2emRhTVVxS0FzTFdUdVo2aDR5RThJTEl6MzFHSFAtcVBHdkpLVC03STFqMXp4Um9jc3I2UG5iZ01McDRoemJLNXpzWW1PeXhiZGh0eDh4YzBieExtekpUb3NwOWFqUEJRQUIxX0dicHJmSnBBU3JSbnlicHBYNEHSAesEQVVfeXFMTUx1bVJ4eW56N19ZUFJHVzBQUi1WSy0xNTlqdXprakwwT1JtS3BMX05sS1g1SXBVT2RGbHdaWFJmM1I2X3luOG0xZjd4OHMzYXVaZFQ1bmhQQ1l3MlU0a256eWFiN1Npa19KeGlOMmlXZkYtOTQwa25MN3g3RjUyZ1lDTkVJTHVzUGdycGVXM0RxazFTejdDQkdnN0lxekpJdThzM09ZWkZ6RVNZZzVGZTNIemhOYlRNZGNxRXNiMnpDX3dpbUQ3dU8teDFkb0YzMTNUWGE2UTdRaWZkel9mbUd2a3llMlNsdXZzT1RUdWxLNElXY0g4TlI1d2dQUDJmaHBqWDhVeWxtTDR3VG9ycmloR0VlcFNTeS1MdElUY3dFWG84NDQxMHU0UU4wXzR4cmp0cGpGN3RHZjNGbm5EQ0t2ZElLbENZQkFvRVpsVFM3dThIZThsSTlpYkdEZThIN09fRVM1eko3WGpUaTRpR3VLY0JBSkhlQUhNNFRDbDBSUzgwNEh6bWtEVUxHZUo0OEdaSWlzVzgtTGJ4OHZiOURyZ2VhSU1UNEhNNWRrZkR5SGdvdkxlT2NwQjdld1hQZ25QV3ZHZWxkdnN3ODI2T2sxN09UUlV6R09RZ2ZQZGlTUTk1aHNGOTRfNGdqQ29EaWdsOHZ1NHFHT2NNaWtrTjQ1NS1sMEZZR3Fvby1OT3BYQzZFUHlVaERpVzVKelJvbjVtekh2TThnZ2R6LWZWQ1Z0LXN2SUxneDFfcXlYYXEwSXRoTlg4WVQ2TDZpcy1heVRwUXJOWHVxd1ROTm95SW10TU12dU1RUG41dw?oc=5",
       "date": "2026-11-12T11:51:43.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 아프가니스탄으로의 석유 밀수 루트 의혹 조사 착수",
-      "url": "https://www.khaama.com/iraq-oil-smuggling-investigation-afghanistan/",
-      "body": "raq launches investigations into alleged oil smuggling from Kirkuk and Kurdistan through Iran to Afghanistan.\nIraqi authorities have launched investigations into alleged oil smuggling operations involving fields in Kirkuk and the Kurdistan Region, following intelligence reports of a trafficking route through Iran to Afghanistan.\nAccording to a statement from the Iraqi Parliament on November 11, Speaker Haibat al-Halbousi ordered a temporary parliamentary committee to examine intelligence findings on the suspected smuggling network, a separate alleged oil theft operation in Jurf al-Nasr, and a recent attack on the Khor Mor gas field. The move comes as Iraq’s Federal Integrity Commission has also established a special investigative team to examine suspected oil smuggling from fields between Kirkuk and the Kurdistan Region.",
-      "bodyKo": "**이라크, 키르쿠크·쿠르디스탄 유전 밀수유 적발 수사 착수**\n\n이라크 당국이 키르쿠크와 쿠르디스탄 지역의 유전에서 이란을 거쳐 아프가니스탄으로 밀반출되는 것으로 의심되는 유류 밀수 작전에 대한 수사를 시작했다.\n\n이라크 의회의 11월 11일 성명에 따르면 하이바트 알할부시 의장은 이란을 거쳐 아프가니스탄으로 가는 밀수 경로에 대한 정보기관 보고서를 검토하기 위해 임시 의회위원회를 구성하도록 지시했다. 이 위원회는 의심되는 밀수 네트워크에 대한 정보 자료를 검토하고, 주르프 알나스르에서의 별도 유류 도난 혐의, 그리고 최근 호르 모르 가스전에 대한 공격을 조사하게 된다. 이라크 연방청렴위원회도 키르쿠크와 쿠르디스탄 지역 사이의 유전에서 의심되는 유류 밀수를 조사하기 위한 특별 수사팀을 구성했다.",
-      "tried": true,
-      "count": 3,
+      "lang": "ar",
+      "titleKo": "이라크, 석유 밀수 및 쿠르모르 유전 공격 조사",
+      "count": 2,
       "sources": [
         "الحدث",
-        "کردپرس",
-        "Khaama Press"
+        "کردپرس"
       ],
       "related": [
-        {
-          "titleKo": "이라크, 석유 밀수 및 쿠르모르 유전 공격 조사",
-          "source": "الحدث",
-          "link": "https://news.google.com/rss/articles/CBMi0gRBVV95cUxQVlU5NVdWSnlFdldBSEdDd2lLR0ZZejRwMG5uNUlmSy1RalFsekQzTGN3dnp3aVI4Tmxoa0xsZkFBN2tHQjRUVDlsVVlMcnBzVXV2NFkzMTRwbVZnMl9jZEpjRy1PdE5wdE1FZmlCNDZZc2VadXItVUFUUEZIYXFVQVlHSXpxVHlkcTlrcXBJY0pJNklXTFo0Q0oxOGRzNU1NRWdiWGdCMU9obEZ6VW9SYTV0d3htXzhXclZQN19uNG5HaXRoRHljZ0hYRFJQd3VKbDYycTlpcFM1YWJkQnQ2YlN0YllwVlh0TXdiLXNveXVTejlzOUVCZTdoZ2NSOXpiNHBOWVA4Wnl2d3cwUUlETUk2aFk2WjVtcTdieTRLd0sxWlRmcXNTT0FXaUlOcjlxU3VabXBsQ2ZqODRBV1pibTlqRjdrWkV2R3pXN2xnOGJDRURJajNnak5PMlVGeVF5QmlfZzk2ckFaX3A5YXdQdHRTSTY4UE9wb21tUXY3TExrMjR6RXhvMGZkM3JmX1FwRlpnb1VvNDFsNWYzWC1idllVT3VkWmxYelc4bmZfWUtXQ0ZFWjhWaUMzNDFuLWJtaXlHNGNyMUdjNGJqaGhzQl9NdzAxYVN1MUt2emRhTVVxS0FzTFdUdVo2aDR5RThJTEl6MzFHSFAtcVBHdkpLVC03STFqMXp4Um9jc3I2UG5iZ01McDRoemJLNXpzWW1PeXhiZGh0eDh4YzBieExtekpUb3NwOWFqUEJRQUIxX0dicHJmSnBBU3JSbnlicHBYNEHSAesEQVVfeXFMTUx1bVJ4eW56N19ZUFJHVzBQUi1WSy0xNTlqdXprakwwT1JtS3BMX05sS1g1SXBVT2RGbHdaWFJmM1I2X3luOG0xZjd4OHMzYXVaZFQ1bmhQQ1l3MlU0a256eWFiN1Npa19KeGlOMmlXZkYtOTQwa25MN3g3RjUyZ1lDTkVJTHVzUGdycGVXM0RxazFTejdDQkdnN0lxekpJdThzM09ZWkZ6RVNZZzVGZTNIemhOYlRNZGNxRXNiMnpDX3dpbUQ3dU8teDFkb0YzMTNUWGE2UTdRaWZkel9mbUd2a3llMlNsdXZzT1RUdWxLNElXY0g4TlI1d2dQUDJmaHBqWDhVeWxtTDR3VG9ycmloR0VlcFNTeS1MdElUY3dFWG84NDQxMHU0UU4wXzR4cmp0cGpGN3RHZjNGbm5EQ0t2ZElLbENZQkFvRVpsVFM3dThIZThsSTlpYkdEZThIN09fRVM1eko3WGpUaTRpR3VLY0JBSkhlQUhNNFRDbDBSUzgwNEh6bWtEVUxHZUo0OEdaSWlzVzgtTGJ4OHZiOURyZ2VhSU1UNEhNNWRrZkR5SGdvdkxlT2NwQjdld1hQZ25QV3ZHZWxkdnN3ODI2T2sxN09UUlV6R09RZ2ZQZGlTUTk1aHNGOTRfNGdqQ29EaWdsOHZ1NHFHT2NNaWtrTjQ1NS1sMEZZR3Fvby1OT3BYQzZFUHlVaERpVzVKelJvbjVtekh2TThnZ2R6LWZWQ1Z0LXN2SUxneDFfcXlYYXEwSXRoTlg4WVQ2TDZpcy1heVRwUXJOWHVxd1ROTm95SW10TU12dU1RUG41dw?oc=5"
-        },
         {
           "titleKo": "이라크, 키르쿠크와 쿠르드 자치구에서 아프가니스탄으로의 석유 밀수 조사를 위한 특별팀 구성",
           "source": "کردپرس",
@@ -745,7 +792,7 @@
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
-        "line": "현장 직접 영향 낮음",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
         "act": "",
         "place": "키르쿠크",
         "km": 254
@@ -793,6 +840,27 @@
         "lv": "g",
         "line": "치안 사건 — 발생 지역 확인 필요",
         "act": "바그다드 인근이면 보안팀 확인",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq orders oil-smuggling probe in armed group bastion",
+      "source": "Hürriyet Daily News",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZnhNZ3c3RkxHT25iNHdDNHNlVmVac2NmcHhYSVdmcndRU1prZDBOb0JDa0lFMGxaS3VmS096NVdYcDNINlpvaWo1dGE5QUV5bmpaRGtHQnJma2JTc016M2laRXF1WGx0dGdWSlJGYWgwT3VBVDRSWmZFMG1xRm85MFdtcmltMXFtNVNoWlBkYlJLNXk2M2lTb3plaw?oc=5",
+      "date": "2026-11-12T10:23:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 무장 단체 거점의 석유 밀수 수사 명령",
+      "count": 1,
+      "sources": [
+        "Hürriyet Daily News"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
         "place": "",
         "km": null
       }
@@ -1059,98 +1127,6 @@
         "place": "",
         "km": null
       }
-    },
-    {
-      "title": "이라크 천궁Ⅱ 수출 탄력..논란이던 대금지급 해결",
-      "source": "파이낸셜뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OWjJBUWVxTkpXcUZvbGQzR0pYd2tPekhfV3JtQm1EMldxX0hycTFHUFdwUnJEVGFmX1J1VFRhS3pyeFF2U29FUnQ3ajNZNk1jV2xKRzBQTzd4UQ?oc=5",
-      "date": "2026-11-12T06:37:06.000Z",
-      "lang": "ko",
-      "titleKo": "이라크 천궁Ⅱ 수출 탄력..논란이던 대금지급 해결",
-      "count": 1,
-      "sources": [
-        "파이낸셜뉴스"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq's Kataib Hezbollah vows to defend Iran, urges probe into PM’s ‘massive financial empire’",
-      "source": "thecradle.co",
-      "link": "https://thecradle.co/articles/iraqs-kataib-hezbollah-vows-to-defend-iran-urges-probe-into-pms-massive-financial-empire",
-      "date": "2026-11-12T06:06:46.000Z",
-      "lang": "en",
-      "titleKo": "이라크 카타이브 헤즈볼라, 이란 방위 다짐…총리 '거대 재정 제국' 수사 촉구",
-      "url": "https://thecradle.co/articles/iraqs-kataib-hezbollah-vows-to-defend-iran-urges-probe-into-pms-massive-financial-empire",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "thecradle.co"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Family of slain Sunni Iraqi politician blames Hezbollah for Beirut killing",
-      "source": "Rudaw",
-      "link": "https://www.rudaw.net/english/categories/iraq/1080124",
-      "date": "2026-11-12T05:24:57.000Z",
-      "lang": "en",
-      "titleKo": "살해된 수니파 이라크 정치인 가족, 베이루트 살인 사건 헤즈볼라 탓",
-      "url": "https://www.rudaw.net/english/categories/iraq/1080124",
-      "body": "Relatives and tribal members gathered in the capital of Iraq’s western Anbar province on Wednesday for the memorial service of former Iraqi Sunni lawmaker Ahmed al-Alwani, 57, whose body was found lat",
-      "bodyKo": "이라크 서부 안바르주의 주도에서 수요일 전직 이라크 순니파 의원 아흐메드 알알와니(57)의 추도식이 열렸다. 그의 시신이 최근 발견됐다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "안바르",
-        "km": 198
-      }
-    },
-    {
-      "title": "Inside story: Iran’s next envoy to Iraq? Meet Commander Masgarian",
-      "source": "Amwaj.media",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOOGZBd0F1cm1oRFhTa3lMUU9kWG0yZF9CSmRseW9oZHBZN1daVG5OT2JGM1MtbmMxVjZLd3l3cjI3TkUybzRHM3dxak82N2NmUFkxN0V4ckU5aWxDLUR5MGgtWC02N1dybzQtYUMyY2ZReHRocThkNzktN2dMa2htcDA5WHFBWjBWdjNSXzA1S2RMMVVWNnEzOGJSUWRKUQ?oc=5",
-      "date": "2026-11-12T04:57:58.000Z",
-      "lang": "en",
-      "titleKo": "내부 소식: 이란의 차기 이라크 대사? 마스가리안 사령관을 만나다",
-      "count": 1,
-      "sources": [
-        "Amwaj.media"
-      ],
-      "related": [],
-      "tag": "한국·외교",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
     }
   ],
   "alerts": [
@@ -1186,7 +1162,7 @@
       "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
       "km": 27,
       "link": "https://mangish.net/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%AC%D8%B3%D9%85-%D8%BA%D8%B1%D9%8A%D8%A8-%D8%AC%D9%86%D9%88%D8%A8-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D9%8F%D8%B3%D9%81%D8%B1-%D8%B9%D9%86-%D8%A5%D8%B5%D8%A7/",
-      "date": "2026-11-12T19:42:40.000Z",
+      "date": "2026-11-12T20:00:17.000Z",
       "more": 1
     },
     {
