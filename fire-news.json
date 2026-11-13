@@ -1,6 +1,55 @@
 {
-  "generatedAt": "2026-11-13T02:11:14.524Z",
+  "generatedAt": "2026-11-13T11:39:51.507Z",
   "items": [
+    {
+      "title": "공장 화재 진압",
+      "source": "뉴시스",
+      "link": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
+      "date": "2026-11-13T10:14:59.000Z",
+      "lang": "ko",
+      "titleKo": "공장 화재 진압",
+      "url": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
+      "body": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
+      "bodyKo": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
+      "tried": true,
+      "count": 12,
+      "sources": [
+        "الاتحاد للأخبار",
+        "Emirates 24|7",
+        "https://lanatime.com/",
+        "Dubai Eye 103.8",
+        "Gulf Business",
+        "صحيفة الخليج"
+      ],
+      "related": [
+        {
+          "titleKo": "아부다비 경찰팀, 아부다비 무프라크 산업단지 창고 화재 진압",
+          "source": "الاتحاد للأخبار",
+          "link": "https://www.aletihad.ae/amp/news/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA/4705705/%D9%81%D8%B1%D9%82-%D8%B4%D8%B1%D8%B7%D8%A9-%D8%A3%D8%A8%D9%88%D8%B8%D8%A8%D9%8A-%D8%AA%D8%AA%D8%B9%D8%A7%D9%85%D9%84-%D9%85%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D9%81%D8%B1%D9%82-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9"
+        },
+        {
+          "titleKo": "아부다비 경찰, 민방위대가 알 마프라크 지역의 창고 화재에 대응합니다.",
+          "source": "Emirates 24|7",
+          "link": "https://www.emirates247.com/uae/abu-dhabi-police-civil-defence-teams-respond-to-warehouse-fire-in-al-mafraq-area/7749"
+        },
+        {
+          "titleKo": "아부다비.. 경찰과 소방 당국이 창고 화재에 대응하다",
+          "source": "https://lanatime.com/",
+          "link": "https://lanatime.com/news/%D8%A3%D8%A8%D9%88%D8%B8%D8%A8%D9%8A-%D9%81%D8%B1%D9%82-%D8%A7%D9%84%D8%B4%D8%B1%D8%B7%D8%A9-%D9%88%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D8%AA%D8%AA%D8%B9%D8%A7-2026-11-13/"
+        },
+        {
+          "titleKo": "아부다비 알마프라크 지역의 창고에서 화재 발생",
+          "source": "Dubai Eye 103.8",
+          "link": "https://www.dubaieye1038.com/news/local/fire-breaks-out-at-warehouse-in-abu-dhabis-al-mafraq-area/"
+        },
+        {
+          "titleKo": "아부다비 알마프라크 창고에서 화재 발생, 긴급 구조대 출동",
+          "source": "Gulf Business",
+          "link": "https://gulfbusiness.com/en/2026/news/fire-breaks-out-at-al-mafraq-warehouse-in-abu-dhabi-emergency-teams-respond/"
+        }
+      ],
+      "tag": "숙소·창고"
+    },
     {
       "title": "동구, 방어진활어센터 화재 시설물 철거",
       "source": "울산시민신문",
@@ -69,21 +118,34 @@
       "tag": "시장·상가"
     },
     {
-      "title": "هذا الفيديو يعود لحريق في الرياض عام 2018 وليس لاستهداف الحوثيين برجاً في العاصمة السعودية",
-      "source": "في ميزان فرانس برس",
-      "link": "https://factcheckarabic.afp.com/doc.afp.com.D7A349E",
+      "title": "North China building fire kills 14",
+      "source": "Dubai Eye 103.8",
+      "link": "https://www.dubaieye1038.com/news/international/north-china-building-fire-kills-14/",
       "date": "2026-11-12T13:19:33.000Z",
-      "lang": "ar",
-      "titleKo": "이 영상은 2018년 리야드 화재 영상이지 후티군의 사우디 수도 건물 공격 영상이 아니다",
-      "url": "https://factcheckarabic.afp.com/doc.afp.com.D7A349E",
-      "body": "",
-      "bodyKo": "",
+      "lang": "en",
+      "titleKo": "화북 건물 화재로 14명 사망",
+      "url": "https://www.dubaieye1038.com/news/international/north-china-building-fire-kills-14/",
+      "body": "A fire on Sunday at a high-rise building in Taiyuan, in the northern Chinese province of Shanxi, killed 14 people, the state-run Xinhua news agency said on Monday.\nShare on Messenger popup#open\" data-popup-size-param=\"645x580\" target=\"_blank\"> Share on Messenger popup#open\" data-popup-size-param=\"550x400\" target=\"_blank\"> Share on X Share on Whatsapp A fire on Sunday at a high-rise building in Taiyuan, in the northern Chinese province of Shanxi, killed 14 people, the state-run Xinhua news agency said on Monday.\nThe fire broke out in the building in downtown Taiyuan at 4:59 pm local time on Sunday, state media said.\nFlames were put out roughly two hours later, and authorities said rescue operations concluded by 8:30 pm with 38 people transported to the hospital. Five were confirmed dead by late Sunday night.",
+      "bodyKo": "산시성 타이위안 고층건물 화재로 14명 사망\n\n중국 관영 신화통신은 14일 산시성 북부 타이위안의 고층건물에서 발생한 화재로 14명이 사망했다고 보도했다.\n\n화재는 13일 현지시간 오후 4시 59분 타이위안 시내의 건물에서 발생했다고 관영매체가 전했다.\n\n불은 약 2시간 후 진화됐으며, 당국은 오후 8시 30분까지 구조 작업을 마쳤다고 밝혔다. 38명이 병원으로 옮겨졌으며, 13일 밤 늦게까지 5명의 사망이 확인됐다.",
       "tried": true,
-      "count": 1,
+      "count": 3,
       "sources": [
-        "في ميزان فرانس برس"
+        "في ميزان فرانس برس",
+        "Dubai Eye 103.8",
+        "كل العرب"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "이 영상은 2018년 리야드 화재 영상이지 후티군의 사우디 수도 건물 공격 영상이 아니다",
+          "source": "في ميزان فرانس برس",
+          "link": "https://factcheckarabic.afp.com/doc.afp.com.D7A349E"
+        },
+        {
+          "titleKo": "브네이 브라크: 아파트 내부 화재로 건물 지붕이 붕괴... 부상자는 없는 것으로 보고됨",
+          "source": "كل العرب",
+          "link": "https://news.google.com/rss/articles/CBMirAVBVV95cUxNUkw3WHdTSWxOalhOWVZNZEk3QzlydU92YW9oMTlqSWVvRUE1TFNudUFYMllUUXE1TlY0TllhQkE0WDdRMXgxeHRLTzlhUzVnUy1NYUR3QjYxaHRGWkVBYnhCSDVldmQ4S0dxZS1Ud1RCUjM5RXdUejlIVUdSMmdrb0NiSGhuQlJWOE1wTkdfWWNXOFpQajVQdlc0cFEwaXBQNEt2ZU1xU1pzblFKODVYb18xcEtYQjhTVkFxN3UxNXpjdDlfMUxFaTU5X2paakFZaEtMckVKdWE2RVFaTlZIN0Fnc3NUelhyRmlHQkpJTnZITG9TOENQbFdMUFNjOHJNU1ozaFZzSW8xWEIySzhKeDZ1V2xMSVVZa3dhc2NrMFdyZUZlb0QxWmgzbXdtdDFGS0VyTEdFU1NubEVFcFFTNVdZek0yQWoxdFBBQ2xGcEphZmticHJpcjluRktfUUZoSzNzVFZ6cERYQ3V4QVFFZjMwMjFETjZSV0JtMExUMUV4eURZLWpEckJfSmxaVHg1TGhveGtPbWdtaHBGQjN3dllQZ0M1MTNBR1hJc3owdDU3NVNVS1VoZUc2Y3pLVGVvWjVrUktQN21xaGlramJ2U21BZ21nX1JvaEdpMU84czVSRHl0dWVtOFRlWE9QLTkxNXV1SnRRVTVFUi04aUViU2dxX1lsWFdPQTNpYU1BU0QyVVVmT1l6OW8tOU1mWVllc2YyWVhpSDRFdGVOVWhGM1V6Y2g5SXdkZHUxRFF0WExVSTVNeGowWDFVWlBTd2d2SFNEblBab183ZFU4YjVtamE0d2t6OFlaX29PRUxTdm5ONGtpRVMwVFl3dDJ4RkhmOFlRemtxYUNTRG9NVk10bEQxYTREZGtlY29vcDd6QjFLS1ZtLWxGanJiQ23SAUpBVV95cUxPV3p2Z0EwZFFIeFNXZG1YcmxNeXVfWHhjMVVqVWN1UFlUSWpFeml4bU51NzFvTF9lS0RQdWRfTGZOS0xaNWlFRWlaQQ?oc=5"
+        }
+      ],
       "tag": "고층·건물"
     },
     {
@@ -93,12 +155,13 @@
       "date": "2026-11-12T05:12:29.000Z",
       "lang": "ko",
       "titleKo": "선박 배터리 화재 어떻게 막나?",
-      "count": 5,
+      "count": 6,
       "sources": [
         "MBC 뉴스",
         "한국해운신문",
         "티제이비",
         "https://www.2news.co.kr/",
+        ":: 위즈경제 ::",
         "뉴시스"
       ],
       "related": [
@@ -110,17 +173,22 @@
         {
           "titleKo": "\"다 쓴 배터리도 화재 위험\"…전압따라 열폭주 확인",
           "source": "티제이비",
-          "link": "https://www.tjb.co.kr/news05/category/view/id/105937"
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CcHpDcmRzaUNKbjNDMnEyU0xyMzhsNnpmSWwxdDFubTk4Z2c0MGl3WlktTW1PbjgweVo2TDdidGJmUzZZZHBMbzNZTUpBbHlGcnJIWTI5NkhqbEZ6VVE5VXpn?oc=5"
         },
         {
           "titleKo": "배터리 화재 막는 신기술 통했다…궈쉬안가오커, 전력·과학기술 1등상 동시 석권",
           "source": "https://www.2news.co.kr/",
-          "link": "https://www.2news.co.kr/news/articleView.html?idxno=32049"
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9GRGo5cllETVQ3WXR4OEdaUWllVDRqSHQ2MlpoNk5vb2o5VnlueWxFVkVZbUlkRDZjcTdUR2k1dl9JbjEzYzJuci1Bclp3UWJzbmd1dEg5VVNOQXdhZHdERE11MnBtdlFt?oc=5"
+        },
+        {
+          "titleKo": "리튬이온 배터리 화재 증가추세…원인은 ‘과충전’",
+          "source": ":: 위즈경제 ::",
+          "link": "https://wikyung.com/news/article?news=3244"
         },
         {
           "titleKo": "‘충전식 배터리’ 화재 주의보…11월 광명에서만 3건",
           "source": "뉴시스",
-          "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261110_0003862131"
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1EdW1IRVJvMU1nSW9GQmNjdENsZHVKRjItd2dVX0U2QVFuVDQzUnIxOUw2YzZwWTFnNl9BcThwdXphQ0ZrMzJoR3FWTHlUR0QxeU1lbV9vQ2RNN0k1WG5PMTFaMEphRXhqUXNtUUVyVnlyQ1l5YUNEU9IBeEFVX3lxTE1EdW1IRVJvMU1nSW9GQmNjdENsZHVKRjItd2dVX0U2QVFuVDQzUnIxOUw2YzZwWTFnNl9BcThwdXphQ0ZrMzJoR3FWTHlUR0QxeU1lbV9vQ2RNN0k1WG5PMTFaMEphRXhqUXNtUUVyVnlyQ1l5YUNEUw?oc=5"
         }
       ],
       "tag": "전기·배터리",
@@ -130,23 +198,20 @@
       "tried": true
     },
     {
-      "title": "North China building fire kills 14",
-      "source": "Dubai Eye 103.8",
-      "link": "https://www.dubaieye1038.com/news/international/north-china-building-fire-kills-14/",
+      "title": "مقتل 14 شخصاً في حريق مبنى سكني بالصين",
+      "source": "الشرق الأوسط",
+      "link": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A2%D8%B3%D9%8A%D8%A7/5339112-%D9%85%D9%82%D8%AA%D9%84-14-%D8%B4%D8%AE%D8%B5%D8%A7%D9%8B-%D9%81%D9%8A-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%A8%D9%86%D9%89-%D8%B3%D9%83%D9%86%D9%8A-%D8%A8%D8%A7%D9%84%D8%B5%D9%8A%D9%86",
       "date": "2026-11-11T12:50:28.000Z",
-      "lang": "en",
-      "titleKo": "화북 건물 화재로 14명 사망",
-      "url": "https://www.dubaieye1038.com/news/international/north-china-building-fire-kills-14/",
-      "body": "A fire on Sunday at a high-rise building in Taiyuan, in the northern Chinese province of Shanxi, killed 14 people, the state-run Xinhua news agency said on Monday.\nShare on Messenger popup#open\" data-popup-size-param=\"645x580\" target=\"_blank\"> Share on Messenger popup#open\" data-popup-size-param=\"550x400\" target=\"_blank\"> Share on X Share on Whatsapp A fire on Sunday at a high-rise building in Taiyuan, in the northern Chinese province of Shanxi, killed 14 people, the state-run Xinhua news agency said on Monday.\nThe fire broke out in the building in downtown Taiyuan at 4:59 pm local time on Sunday, state media said.\nFlames were put out roughly two hours later, and authorities said rescue operations concluded by 8:30 pm with 38 people transported to the hospital. Five were confirmed dead by late Sunday night.",
-      "bodyKo": "산시성 타이위안 고층건물 화재로 14명 사망\n\n중국 관영 신화통신은 14일 산시성 북부 타이위안의 고층건물에서 발생한 화재로 14명이 사망했다고 보도했다.\n\n화재는 13일 현지시간 오후 4시 59분 타이위안 시내의 건물에서 발생했다고 관영매체가 전했다.\n\n불은 약 2시간 후 진화됐으며, 당국은 오후 8시 30분까지 구조 작업을 마쳤다고 밝혔다. 38명이 병원으로 옮겨졌으며, 13일 밤 늦게까지 5명의 사망이 확인됐다.",
+      "lang": "ar",
+      "titleKo": "중국 주택 화재로 14명 사망",
+      "url": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A2%D8%B3%D9%8A%D8%A7/5339112-%D9%85%D9%82%D8%AA%D9%84-14-%D8%B4%D8%AE%D8%B5%D8%A7%D9%8B-%D9%81%D9%8A-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%A8%D9%86%D9%89-%D8%B3%D9%83%D9%86%D9%8A-%D8%A8%D8%A7%D9%84%D8%B5%D9%8A%D9%86",
+      "body": "أسفر حريقٌ اندلع، الأحد، في مبنى سكني بشمال الصين عن مقتل 14 شخصاً على الأقل، وفق ما ذكرت وكالة أنباء الصين الجديدة «شينخوا» الرسمية، الاثنين.\nوالحرائق المميتة شائعة في الصين بسبب تراخي قوانين البناء وإهمال معايير السلامة في أماكن العمل.\nوأفادت «شينخوا»، مساء الأحد، بأن حريقاً اندلع في مبنى بمدينة تاييوان في مقاطعة شانشي، قرابة الخامسة عصراً (09:00 بتوقيت غرينتش).\nوأضافت أنه جرى نقل 38 شخصاً إلى المستشفيات، لتلقّي العلاج، تُوفي منهم خمسة، ما رفع حصيلة الوفيات إلى 14، بحلول صباح الاثنين. وذكرت أن النيران أُخمدت، الأحد، مع اكتمال عمليات البحث والإنقاذ. وما زال سبب الحريق قيد التحقيق.\nوأطلقت الصين حملة لمواجهة مخاطر الحرائق في المباني الشاهقة، في نوفمبر (تشرين الثاني) الماضي، عقب حريق هائل اجتاح عدداً من الأبراج في هونغ كونغ مُسفراً عن مقتل 168 شخصاً.\nوبعد شهر، أسفر حريق في مبنى سكني بمقاطعة غوانغدونغ في جنوب الصين عن مقتل 12 شخصاً. وفي يوليو (تموز)، أدى حريقٌ اندلع في مصنع للأحذية بشرق الصين إلى مقتل 28 شخصاً، على الأقل.",
+      "bodyKo": "중국 북부 주택 화재로 최소 14명 사망\n\n중국 북부의 한 주택 건물에서 일요일 발생한 화재로 최소 14명이 숨졌다고 중국 관영 통신사 신화통신이 월요일 보도했다.\n\n중국에서는 건축법 규정 완화와 직장 안전 기준 무시로 인해 치명적인 화재가 빈번하게 발생하고 있다.\n\n신화통신은 일요일 저녁 산시성 타이위안시의 한 건물에서 오후 5시경(그리니치 표준시 09:00)에 화재가 발생했다고 전했다.\n\n통신사는 38명이 병원으로 옮겨져 치료를 받았으며, 이 중 5명이 사망해 월요일 아침까지 사망자가 14명으로 늘었다고 덧붙였다. 화재는 일요일 진화됐으며 수색 및 구조 작업이 완료됐다고 했다. 화재 원인은 현재 조사 중이다.\n\n중국은 지난 11월 홍콩의 여러 고층 건물을 휩쓴 대형 화재로 168명이 숨진 이후 고층 건물의 화재 위험에 대응하기 위한 캠페인을 시작했다.\n\n1개월 후 중국 남부 광둥성의 한 주택 건물 화재로 12명이 숨졌다. 7월에는 중국 동부의 신발 공장 화재로 최소 28명이 사망했다.",
       "tried": true,
-      "count": 7,
+      "count": 4,
       "sources": [
         "الشرق الأوسط",
-        "Sharjah24",
         "زاد الاردن",
-        "الشروق أونلاين",
-        "Dubai Eye 103.8",
         "Qatar news agency"
       ],
       "related": [
@@ -156,27 +221,17 @@
           "link": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%81%D8%B1%D9%8A%D9%82%D9%8A%D8%A7/5262389-%D9%88%D9%81%D8%A7%D8%A9-7-%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5-%D8%A5%D8%AB%D8%B1-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%B5%D9%86%D8%B9-%D9%85%D9%84%D8%A7%D8%A8%D8%B3-%D9%81%D9%8A-%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
         },
         {
-          "titleKo": "중국 북부 고층건물 화재로 14명 사망, 25명 부상",
-          "source": "Sharjah24",
-          "link": "https://sharjah24.ae/ar/Articles/2026/11/09/Ma13"
-        },
-        {
           "titleKo": "중국 북부 주택 화재로 14명 사망",
           "source": "زاد الاردن",
           "link": "https://www.assawsana.com/article/738489"
         },
         {
-          "titleKo": "중국 주택 건물 화재로 14명 사망, 수십 명 부상",
-          "source": "الشروق أونلاين",
-          "link": "https://www.echoroukonline.com/14-%D9%82%D8%AA%D9%8A%D9%84%D8%A7-%D9%88%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%AD%D8%B1%D9%8A%D9%82-%D9%8A%D9%84%D8%AA%D9%87%D9%85-%D9%85%D8%A8%D9%86/amp"
-        },
-        {
-          "titleKo": "중국 주택 화재로 14명 사망",
-          "source": "الشرق الأوسط",
-          "link": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A2%D8%B3%D9%8A%D8%A7/5339112-%D9%85%D9%82%D8%AA%D9%84-14-%D8%B4%D8%AE%D8%B5%D8%A7%D9%8B-%D9%81%D9%8A-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%A8%D9%86%D9%89-%D8%B3%D9%83%D9%86%D9%8A-%D8%A8%D8%A7%D9%84%D8%B5%D9%8A%D9%86"
+          "titleKo": "중국 북부 건물 화재로 5명 사망",
+          "source": "Qatar news agency",
+          "link": "https://qna.org.qa/ar-QA/News-Area/News/2026-11/8/%D9%85%D8%B5%D8%B1%D8%B9-5-%D8%A7%D8%B4%D8%AE%D8%A7%D8%B5-%D8%AC%D8%B1%D8%A7%D8%A1-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A7%D9%86%D8%AF%D9%84%D8%B9-%D9%81%D9%8A-%D9%85%D8%A8%D9%86%D9%89-%D8%B4%D9%85%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%B5%D9%8A%D9%86"
         }
       ],
-      "tag": "고층·건물"
+      "tag": "숙소·창고"
     },
     {
       "title": "[뉴스추적플러스] 보령 미산면 주택 화재 현장 지킨 미산 전담의용소방대…화마 속에서도 빛난 시민 안전을 향한 헌신",
@@ -195,43 +250,6 @@
       ],
       "related": [],
       "tag": "기타"
-    },
-    {
-      "title": "공장 화재 진압",
-      "source": "뉴시스",
-      "link": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
-      "date": "2026-11-10T20:08:16.000Z",
-      "lang": "ko",
-      "titleKo": "공장 화재 진압",
-      "url": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
-      "body": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
-      "bodyKo": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
-      "tried": true,
-      "count": 4,
-      "sources": [
-        "뉴시스",
-        "صدى العرب",
-        "서울경제TV",
-        "تاسي"
-      ],
-      "related": [
-        {
-          "titleKo": "한카에서 아랍 알아이카트 폼 공장 화재 진압",
-          "source": "صدى العرب",
-          "link": "https://www.sada-elarab.com/826524"
-        },
-        {
-          "titleKo": "이지에이아이, 퇴근 후 공장 화재 전조 조기 감지…AI로 대형 참사 막았다",
-          "source": "서울경제TV",
-          "link": "https://www.sentv.co.kr/article/view/sentv202611100134"
-        },
-        {
-          "titleKo": "알-바탈 공장, 시설 화재 보상으로 보험사로부터 165만 리알 선금 수령",
-          "source": "تاسي",
-          "link": "https://www.argaam.com/ar/article/articledetail/id/1950641"
-        }
-      ],
-      "tag": "공장·플랜트"
     },
     {
       "title": "이광희 “건설현장 화재예방 비용, 시공자 떠넘기기 없앤다”",
@@ -610,24 +628,6 @@
       ],
       "related": [],
       "tag": "고층·건물"
-    },
-    {
-      "title": "리튬이온 배터리 화재 증가추세…원인은 ‘과충전’",
-      "source": ":: 위즈경제 ::",
-      "link": "https://wikyung.com/news/article?news=3244",
-      "date": "2026-11-06T08:00:00.000Z",
-      "lang": "ko",
-      "titleKo": "리튬이온 배터리 화재 증가추세…원인은 ‘과충전’",
-      "url": "https://wikyung.com/news/article?news=3244",
-      "body": "[위즈경제] 이정원 기자 =소방청이 최근 5 년 동안 리튬이온 배터리 화재 가운데 절반 이상이 과충전 때문인 것으로 나타났다고 22 일 밝혔습니다 .\n이에 소방청은 최근 발생한 리튬이온 배터리 화재 사고와 관련해 생활 속 안전 습관 만들기 위한 ‘ 리튬이온 배터리의 올바른 사용법 ’ 을 안내했습니다 .\n생활 속 리튬이온 배터리를 사용하는 제품군은 스마트폰과 노트북 , 전동킥보드 , 전기자전거 , 전기오토바이 , 전자담배 , 디지털카메라 , 블루투스 헤드셋·헤드폰 , 장난감 등입니다 .\n소방청 국가화재정보시스템 자료에 따르면 , 최근 5 년 동안 리튬이온 배터리에 의한 화재는 612 건으로 전동킥보드와 전기자전거 등 보급량과 사용량이 증가함에 따라 사고 발생건수도 증가 추세인 것으로 나타났습니다 .\n화재 원인은 눌리거나 찍히는 등의 외부 충격 , 온도가 높은 차량 내부 배터리 장시간 보관 , 소파·침대 등에서 충전 , 공식 인증을 받지 않은 제품 사용 , 물·빗물 유입 등으로 다양했습니다 .\n특히 이 가운데 절반 이상인 312 건 (51%) 이 과충전이 원인이었고 , 비충전 60 건 (9.8%), 보관 중 49 건 (8%), 수리 중 45 건 (7.4%), 사용 중 44 건 (7.2%), 충격 후 17 건 (2.8%) 등으로 집계됐습니다 .\n장소별로는 공동주택 299 건 (48.9%), 거리·공터 117 건 (19.1%), 건물·수리점 116 건 (19%), 단독주택 65 건 (10.6%), 주차장 15 건 (2.5%) 순으로 , 공동주택과 단독주택 등 주거지에서의 발생건수가 가장 많은 것으로 확인됐습니다 .\n이에 소방청은 리튬이온 배터리의 화재 예방을 위해 구매 , 사용 , 충전 , 보관 , 폐기 등 단계별 올바른 이용수칙을 당부했습니다 .",
-      "bodyKo": "[위즈경제] 이정원 기자 =소방청이 최근 5 년 동안 리튬이온 배터리 화재 가운데 절반 이상이 과충전 때문인 것으로 나타났다고 22 일 밝혔습니다 .\n이에 소방청은 최근 발생한 리튬이온 배터리 화재 사고와 관련해 생활 속 안전 습관 만들기 위한 ‘ 리튬이온 배터리의 올바른 사용법 ’ 을 안내했습니다 .\n생활 속 리튬이온 배터리를 사용하는 제품군은 스마트폰과 노트북 , 전동킥보드 , 전기자전거 , 전기오토바이 , 전자담배 , 디지털카메라 , 블루투스 헤드셋·헤드폰 , 장난감 등입니다 .\n소방청 국가화재정보시스템 자료에 따르면 , 최근 5 년 동안 리튬이온 배터리에 의한 화재는 612 건으로 전동킥보드와 전기자전거 등 보급량과 사용량이 증가함에 따라 사고 발생건수도 증가 추세인 것으로 나타났습니다 .\n화재 원인은 눌리거나 찍히는 등의 외부 충격 , 온도가 높은 차량 내부 배터리 장시간 보관 , 소파·침대 등에서 충전 , 공식 인증을 받지 않은 제품 사용 , 물·빗물 유입 등으로 다양했습니다 .\n특히 이 가운데 절반 이상인 312 건 (51%) 이 과충전이 원인이었고 , 비충전 60 건 (9.8%), 보관 중 49 건 (8%), 수리 중 45 건 (7.4%), 사용 중 44 건 (7.2%), 충격 후 17 건 (2.8%) 등으로 집계됐습니다 .\n장소별로는 공동주택 299 건 (48.9%), 거리·공터 117 건 (19.1%), 건물·수리점 116 건 (19%), 단독주택 65 건 (10.6%), 주차장 15 건 (2.5%) 순으로 , 공동주택과 단독주택 등 주거지에서의 발생건수가 가장 많은 것으로 확인됐습니다 .\n이에 소방청은 리튬이온 배터리의 화재 예방을 위해 구매 , 사용 , 충전 , 보관 , 폐기 등 단계별 올바른 이용수칙을 당부했습니다 .",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        ":: 위즈경제 ::"
-      ],
-      "related": [],
-      "tag": "전기·배터리"
     },
     {
       "title": "제조 공장에서의 사전 화재 예방.",
