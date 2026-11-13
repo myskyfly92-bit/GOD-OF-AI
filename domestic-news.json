@@ -1,90 +1,90 @@
 {
-  "generatedAt": "2026-11-12T02:12:22.359Z",
+  "generatedAt": "2026-11-13T01:45:20.459Z",
   "query": "(질병 OR 전염병 OR 감염병 OR 사고 OR 의료 OR 의학) when:2d",
   "items": [
     {
-      "title": "인천성모병원, 의료관련감염 예방관리 공로 질병관리청장 표창",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9LU3lIWkN4dUZlMHdqSC1MUnBnV0ZGaENSZ09sRUQ5THloZHFkcC1YRGFQSmRhYU43WUs1VE1yVnFVTk1HNUZYMzdDS3NYb0RtYVNyLXRIWWktTTdNQUkwOGNpX2JtUkFaeGc?oc=5",
-      "date": "2026-11-12T00:03:59.000Z",
-      "summary": "의학신문"
-    },
-    {
-      "title": "'공공의료 AI 고속도로' 첫 개통…AI 활용, 병원 간 진료 협력",
+      "title": "[보도설명자료][11.13.금 뉴스핌] 복지부, 올해 병의원 의료급여 9000억 못 준다 관련",
       "source": "대한민국 정책브리핑",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT0RjUHNwazF0cGtyRE9tQmdxMGdQRzBWTVVaMzU4VGJFd1pHWVJ6Z1ZSaWE0alJ6elh4QnFxQnJxSHZzQ1ZDMFF1RDNTT2hSVUlWdU1Xc3JJZmdOSFh5WUJuWXdKTkREb2wtWGpTMkVSbkgtWlNBM1Z3VHA0MnFsZEF6N0xtajNXSUE?oc=5",
-      "date": "2026-11-11T19:12:22.000Z",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBCT1A1MUpnMFZfSkNkYjZjZHAyT3EwaWd2WXlHd2RtOVA0RDh4dXFNTzJUTlFtYV9qZGhqNU0tNVhIVzRHYm9qcXlHWFJ1a1VNZEpXeHlBcWdRaVdkWE9mSF9welBDcTY1WW1BTmxJVQ?oc=5",
+      "date": "2026-11-13T01:39:04.000Z",
       "summary": "대한민국 정책브리핑"
     },
     {
-      "title": "한미사이언스, 의료기기 해외시장 공략 '속도'",
-      "source": "연합인포맥스",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9mbXNzR290Q0lSTEU3WlM0bmFlRS1fS2F3eUZUYUV0QlZ6enVZYUtpYzA2TkVibHJjWDZJdGdZd0xXSUcwU0pMRHRiVkh0MWpJaXd1UjdWNFBhdllGSTRQWldlekFJbzNsVkNENzlVTnE?oc=5",
-      "date": "2026-11-12T01:49:00.000Z",
-      "summary": "연합인포맥스"
+      "title": "대구·경북, ‘의료관광 원팀’ 꾸려 중국 대륙 진출 본격화",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1tR0ltcDJIdElLNmVkSEhBRFpSZ1gwZHBZYmtDcEtrN3Rxc1FXeFJROUwyNlFOOGtHRGJzajJFTWdMejI5RFJnYVJZSGxrWkRTR0NRWHJVOWNPS1Itb2E1UkVaLVo1SzlqSWc?oc=5",
+      "date": "2026-11-12T22:26:18.000Z",
+      "summary": "의학신문"
     },
     {
-      "title": "'맘 편한 부산'…13∼14일 임신·출산·육아 의료 정보박람회",
+      "title": "UAE 아부다비 보건부 초청 ‘퓨처 헬스 서밋 2026’ 참석 | 의료 | 뉴스",
+      "source": "서울아산병원 뉴스룸",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Db1BnQ0FvTUdrSnMyTkNWU0JzTFBzQXlGa2ZzNFVBZFBUNXRGMUFvcDBnWm9JcWczcFdoV1dqekcyY1NqV1V6Mmk1VW5IX0syZXhFaWNwYlFLX2JiT29PR1R5b2VmMWs?oc=5",
+      "date": "2026-11-12T23:39:37.000Z",
+      "summary": "서울아산병원 뉴스룸"
+    },
+    {
+      "title": "질병청·복지부, 감염병치료제 연구성과 교류회 개최",
       "source": "연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0taWxCYnhyTnl4T0Vib3lETkxVUFVzUFluTm1sRXMxOXlyS0hCNUlhcTBibzRCZFNVeG81M0J5bHRRdkwwV1R0SEJJLUl1T0VXYWJCRnhnaXhRbVXSAWBBVV95cUxOS1l6MS1BdUlrNWg3MTZ0QUtuWGUyTUhZbXJ2WUVjcFRxdzkxNFdBVFpabUl4RnExbEZGRkRKajVheHdndW9maWJTY2RyRzN3a0NqWG53ZjFlT1lIXzdYYnU?oc=5",
-      "date": "2026-11-11T22:57:04.000Z",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xbERPY25oS3Rack1mbFhXWHRjaUVwc2VqMXhOOFZkT2dMNjlDeloxTGZRTEZDNUdsUmx1TWdSaE56a0p4cjVqVElVUExvNV9teGR4YnhKS2hKMW_SAWBBVV95cUxPSnFWMERLdzlLSXo4WHAwYVJVdTVPdVFPeVB6YjJPVVhESmliTGpFOWF6Z05UV3hZYV84SEpzdlZBcjlHNVdIaDhYS3VvTDh1N0ZnNzR0RkVxMXdRNGk0UWM?oc=5",
+      "date": "2026-11-13T01:10:40.000Z",
       "summary": "연합뉴스"
     },
     {
-      "title": "분당서울대병원 의료인공지능센터 연구팀, 세계 최고 권위 의료영상 AI 학술대회 ‘MICCAI 2026’ 국제 경진대회서 준우승",
-      "source": "의사신문",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB3TE1fM3RKTTNuYUJWTU84VTBnaVlpbGNDS0VZNGZOWktQbGE5NHRmSEpPcFFlY29BZ1BzeEFZZmt3clJablB2QWFKZGNHN3pqMTNVTDRFbnJiYkp6VWt0U2RSbnE2Q2NYLV9KNzcxOA?oc=5",
-      "date": "2026-11-12T01:12:00.000Z",
-      "summary": "의사신문"
+      "title": "질병청, 감염병 치료제 연구 가속화 위한 '다부처 성과 교류회' 개최",
+      "source": "헬스미디어뉴스",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFAyYU9oUXA4TDRHekVzTmJUWXY3UXdmMlNpYk9ZWWtWNFlNT2o2Z01COWFXeG4tLVM3SVp6M1VHM3k5SWZFb2F5bkg3ZDZRTDNGazE1THJHTnVSalI2MjRvNUpGMEVjVHp1LTNLd3NuWm9PZw?oc=5",
+      "date": "2026-11-13T01:11:38.000Z",
+      "summary": "헬스미디어뉴스"
     },
     {
-      "title": "'공공의료 AI 고속도로' 강원 지역 시범 개통… 지방 공공병원 진료 혁신 시동",
-      "source": "복지타임즈",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9HM2U3NjZxTVp1YUF5Vjh0MkNCbGxrcnF0U1k1Vnh2SG1NQkdueVV2dXRJQzQtR3I4azdjdEZvR3MtYnRSdjZHS2F6VC1JcmZvTzdUUmhOcVlWX1o4QlJBWG1rRF9SRXVtR2pVXw?oc=5",
-      "date": "2026-11-12T00:45:46.000Z",
-      "summary": "복지타임즈"
+      "title": "연명의료 중단해도 호스피스 입원은 ‘별 따기’…갈길 먼 ‘존엄한 죽음’",
+      "source": "한겨레",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1KRTEzVHhkd0RJQXdRdno1eWhuZ2lxeDh0MHhVNTRVaTA3bjBURnFLcFVfV2pLeWZzQzdFSUE5VEZJbktKTkU2Z1RZOFVwQVl3Q0xYOVdDbEd0NkdQOXpHVDRURzI1UQ?oc=5",
+      "date": "2026-11-12T20:01:00.000Z",
+      "summary": "한겨레"
     },
     {
-      "title": "의사, 군의료시설에서 군무원 ‘직접조제 허용’",
-      "source": "데일리메디",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBQMG5XTlZEUnhlcHpHLTQyZWNmMzd0Vnk5bWc2ejVrNDNxOHRWd3JpTFQwbmMyQ25PY2pXUHVuZWl3TkE1LXJ5VjgyZDdTd05hNFdSUWIzdjYxQWdWdXZtOThhUk5uS2xV?oc=5",
-      "date": "2026-11-12T01:53:00.000Z",
-      "summary": "데일리메디"
+      "title": "서귀포시, 2027년 의료·요양 통합돌봄 지역계획 수립 본격화",
+      "source": "헤드라인제주",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1uUm1GN0lzZzFXZVk1V1otRjlCZjByYWxqcjVQRF9TeEpJcV9WeTNob2txaDQwNTVrb2RBTFREeTlKTlNacW9LOGkzczVQazVuWjhqVklmZUVrdjd2a1YxdjQ2dkNGYmcydExBc2pSNDk0ZzQ?oc=5",
+      "date": "2026-11-13T00:50:23.000Z",
+      "summary": "헤드라인제주"
     },
     {
-      "title": "좋은강안병원, 지역응급의료센터 개소",
-      "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Fd19XTTdRVjc3RFl3Y2g5YmtVYXRaM3RLMmVBcjlBNTAyQ00wZTd5VDNVRFdtQVVmUWJqOUZ6M25EaVQwdnVXYzhYeHlaV2hNSHBFc1JR?oc=5",
-      "date": "2026-11-12T00:43:00.000Z",
-      "summary": "MEDI:GATE NEWS"
+      "title": "삼성서울병원, 글로벌 의료AI 기업 하이디와 협력",
+      "source": "전자신문",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBKSDJRYTBPREloOVdUYTlMMTBvR29EYlhTWFNBMHpSczhNblJTWndrcUloaEt6d2FhMWJUSXBhdWZRc293ZWgxbUFEYVB3QQ?oc=5",
+      "date": "2026-11-13T00:35:20.000Z",
+      "summary": "전자신문"
     },
     {
-      "title": "[속보]강릉서 해상사고 잇따라⋯1명 숨지고 1명 실종",
-      "source": "강원일보",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zMEVMVm9oOVl3OV9VSDVBbDFwMzNvS1BLSURUR29KNTVTMTd0d1o2b1lUOFpLX2ZEc0xQY1hyZDVNZ3lJZWk0Y3BQcXNRaGlaUW9adnl0VWF2Mk0?oc=5",
-      "date": "2026-11-12T00:25:20.000Z",
-      "summary": "강원일보"
+      "title": "암 진행 늦췄지만 FDA 승인 불발…딜레마 빠진 의료기기 임상",
+      "source": "메디칼업저버",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1ZGZqcEZhS2gzWXg4RHc3Q1ZCeXppM0FZVGpud0RhQk1uVUxNUFNneW1DYmJyLVZ3dzZKVDJxNm5nZ1Y0b0ZYY0JZam83RWNBM2ZCNXVRVTFPeDJGeFpyUXIydkFsVVhGTDlJ?oc=5",
+      "date": "2026-11-12T20:58:44.000Z",
+      "summary": "메디칼업저버"
     },
     {
-      "title": "구미시, '2026년 노인의료복지시설 감염병 예방교육' 실시",
-      "source": "매일일보",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBGR3RWNE5lQWM1UjVKaGZ3Z3c2VU9hWWpDS0xObHNhWXNDcDFQZUpCTEw1N2o1bTlhTUYzTUtoazlBcW81MkozT290SUVNRG1venc4TVRwbGRRV0xEdU15Ym40Y08?oc=5",
-      "date": "2026-11-12T01:15:24.000Z",
-      "summary": "매일일보"
+      "title": "DHP 2026, 의료AI·병원 해외 진출 경험 공유",
+      "source": "메디포뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4akJoeDJpdldJNW8xLXRCb1pZdlpJamNkVHpvcmJpcGtXN2FRaUppR0dGS2MyNko0NWJsb0p3NkkxUG01cmhOV0lhTlRDVXpZSEJ6SHZ5Qlh0RllmNm81OVdsUGk?oc=5",
+      "date": "2026-11-13T01:09:47.000Z",
+      "summary": "메디포뉴스"
     },
     {
-      "title": "항암·치매 신약부터 정밀의료까지…연말 바이오 IPO '빅 랠리'",
-      "source": "히트뉴스",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zbUlKdkk1Y3J5X21GVkIyYVBxeU5YWnVFUDd3enNUbkZrbWlrNS1LcVk1blVORnZZbVFyWEhudkNleWE3bUZOMGtYVHgzaDk5LWlELTFzZjZHMGsxbjdvYV9CNm93OHhoUG1v?oc=5",
-      "date": "2026-11-11T21:10:00.000Z",
-      "summary": "히트뉴스"
+      "title": "뉴욕 브루클린서 3층짜리 아파트 붕괴 사고···어린이 2명 포함 8명 사망",
+      "source": "경향신문",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BeHBSOGhVdndxekVJZU90OUUyb2FnN0xJZGdIeU9TaWRNSXpreWFHMTZJelJHczM1Y1puakZYeGRxQ01uVVpVWWoxWlVNSkFqV3RFVXhkR3plZ9IBX0FVX3lxTE9jYjZ4blVMY2Q2aUUxT0hMblkzY1plLVhpdTJhd3c1eE1xekFjV05jdHZ2OHdCSGxlZk1NQ2ZnZ3A1X3BNREN0ZlJEU1pTM0toSDVPSWJMLVQ1SHZpUDlz?oc=5",
+      "date": "2026-11-12T22:22:00.000Z",
+      "summary": "경향신문"
     },
     {
-      "title": "‘공공의료 AI 고속도로’ 첫 개통,강원 지역 공공병원 의료 AI로 본격 연결",
-      "source": "한국의약통신",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5lN3k3YW5KRk0wdDd1ZmZtb2pNdDRCYkxtQ2dzWEVFblpRamxBQ2RXY2lCRHhCM0pjLXRfS0wxN1NfOFAzT0hReDdvaXZVRkUtWXl6eWJQcjZ5RUpCZG0zbENkQUxqZ2RtMTVJ?oc=5",
-      "date": "2026-11-11T21:12:53.000Z",
-      "summary": "한국의약통신"
+      "title": "진료 현장 수요를 의료기기 개발에…분당서울대병원·성남시의사회 협약",
+      "source": "간호사신문",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5zSzVGczBwU3BaZjhWS1RNX0g5WjZPUkxEck5mcUxhRTIySXl6MTQ5WnlZVnpwZndoTVRoNGdjYkxqWjNqR1JIYlBuLTQxd3dmLW5CeV92NGNRZTlicVdiWU1XeFFCa0w2Z256Yl9n?oc=5",
+      "date": "2026-11-13T00:05:36.000Z",
+      "summary": "간호사신문"
     }
   ]
 }
