@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-13T02:50:03Z",
+ "generatedAt": "2026-11-14T02:39:08Z",
  "note": "상장 건설사 정기보고서 '수주산업 관련 공시'의 진행률 (미청구공사·공사미수금은 담지 않음)",
  "companies": {
   "hdec": {
@@ -857,9 +857,9 @@
   },
   "daewoo": {
    "name": "대우건설",
-   "report": "반기보고서 (2026.06)",
-   "rcept_no": "20260814002161",
-   "asOf": "2026-06",
+   "report": "분기보고서 (2026.09)",
+   "rcept_no": "20261113001461",
+   "asOf": "2026-09",
    "parser": 2,
    "rows": [
     {
@@ -867,175 +867,203 @@
      "client": "에스지레일주식회사",
      "contractDate": "2019-03-20",
      "due": "2028-04-30",
-     "rate": 99.65
+     "rate": 99.84
     },
     {
      "name": "GTX-B",
      "client": "지티엑스비(주)",
      "contractDate": "2025-07-31",
      "due": "2031-08-03",
-     "rate": 5.16
+     "rate": 6.16
     },
     {
-     "name": "동부간선도로지하화시공사업단",
+     "name": "동부간선지하도로",
      "client": "동서울지하도로 주식회사",
      "contractDate": "2020-09-23",
      "due": "2029-09-01",
-     "rate": 8.63
+     "rate": 10.31
+    },
+    {
+     "name": "청주첨단산업단지 조성사업(*4)",
+     "client": "(주)청주테크노폴리스",
+     "contractDate": "2013-06-28",
+     "due": "2026-09-30",
+     "rate": 99.09
     },
     {
      "name": "그랑르피에드사업",
      "client": "르피에드둔산피에프브이 주식회사",
      "contractDate": "2022-08-05",
      "due": "2028-04-14",
-     "rate": 33.83
+     "rate": 39.95
     },
     {
      "name": "수표구역오피스빌딩사업",
-     "client": "(주)트윈웍스피에프브이",
+     "client": "주식회사 트윈웍스피에프브이",
      "contractDate": "2022-05-03",
-     "due": "2029-05-10",
-     "rate": 11.46
+     "due": "2029-04-30",
+     "rate": 13.54
     },
     {
      "name": "청라피크원푸르지오사업",
      "client": "(주)청라스마트시티",
      "contractDate": "2025-03-26",
-     "due": "2029-10-29",
-     "rate": 5.65
+     "due": "2029-11-20",
+     "rate": 7.06
     },
     {
      "name": "써밋리미티드남천사업",
      "client": "큐브광안피에프브이 주식회사",
      "contractDate": "2024-07-31",
      "due": "2029-06-30",
-     "rate": 7.93
+     "rate": 9.88
+    },
+    {
+     "name": "청라아크원푸르지오사업",
+     "client": "(주)청라스마트시티",
+     "contractDate": "2026-07-07",
+     "due": "2031-07-15",
+     "rate": 0.02
+    },
+    {
+     "name": "한강푸르지오리버프론트사업",
+     "client": "주식회사 한강시네폴리스개발",
+     "contractDate": "2025-11-12",
+     "due": "2030-10-31",
+     "rate": 0.89
     },
     {
      "name": "서면써밋더뉴사업",
      "client": "부산전포동주상복합사업",
      "contractDate": "2024-02-07",
      "due": "2031-03-31",
-     "rate": 11.72
+     "rate": 13.65
     },
     {
      "name": "장위푸르지오마크원사업",
      "client": "장위10구역주택재개발정비사업조합",
-     "contractDate": "2026-05-28",
-     "due": "2030-06-28",
-     "rate": 3.95
+     "contractDate": "2011-10-01",
+     "due": "2030-06-27",
+     "rate": 5.66
     },
     {
      "name": "써밋더힐사업",
      "client": "흑석11재정비촉진구역재개발정비사업조합",
      "contractDate": "2021-03-31",
-     "due": "2030-04-30",
-     "rate": 3.82
+     "due": "2030-04-22",
+     "rate": 5.06
     },
     {
      "name": "탑석푸르지오파크7사업",
      "client": "의정부변전소부지공동주택사업",
      "contractDate": "2022-08-03",
      "due": "2029-03-31",
-     "rate": 21.3
+     "rate": 23.63
     },
     {
      "name": "탕정푸르지오센터파크사업",
-     "client": "탕정푸르지오센터파크사업",
-     "contractDate": "2021-06-28",
+     "client": "아산탕정테크노일반산업단지C1블럭사업",
+     "contractDate": "2021-06-08",
      "due": "2028-03-31",
-     "rate": 43.37
+     "rate": 52.8
     },
     {
      "name": "산성역헤리스톤사업",
      "client": "산성구역주택재개발정비사업조합",
      "contractDate": "2017-09-08",
      "due": "2027-11-26",
-     "rate": 33.84
+     "rate": 44.81
     },
     {
      "name": "동래푸르지오에듀포레사업",
      "client": "안락1구역재건축정비사업조합",
      "contractDate": "2011-06-24",
      "due": "2030-02-28",
-     "rate": 4.09
+     "rate": 6.88
     },
     {
      "name": "용인푸르지오원클러스터2,3단지사업",
      "client": "주식회사 남동타운피에프브이",
      "contractDate": "2022-03-15",
      "due": "2028-02-29",
-     "rate": 26.02
+     "rate": 39.14
     },
     {
      "name": "풍무역푸르지오더마크",
      "client": "디에스케이피에프브이 주식회사",
      "contractDate": "2024-04-01",
-     "due": "2028-11-30",
-     "rate": 8.38
+     "due": "2028-11-24",
+     "rate": 12.87
     },
     {
      "name": "푸르지오라디우스파크사업",
      "client": "장위6구역주택재개발정비사업조합",
      "contractDate": "2019-06-28",
-     "due": "2027-03-31",
-     "rate": 66.81
+     "due": "2027-03-19",
+     "rate": 77.49
     },
     {
      "name": "양주역푸르지오센터파크사업",
-     "client": "양주역푸르지오센터파크사업",
+     "client": "양주역세권A1BL공동주택사업",
      "contractDate": "2021-10-29",
      "due": "2028-01-31",
-     "rate": 39.99
+     "rate": 49.4
     },
     {
      "name": "업성푸르지오레이크시티1단지사업",
      "client": "디에스디삼호(주)",
      "contractDate": "2026-02-05",
-     "due": "2029-07-01",
-     "rate": 0.19
+     "due": "2029-09-01",
+     "rate": 1.8
     },
     {
      "name": "인하대역푸르지오에듀포레사업",
      "client": "학익3구역주택재개발정비사업조합",
      "contractDate": "2018-05-28",
      "due": "2028-03-17",
-     "rate": 38.74
+     "rate": 48.74
     },
     {
      "name": "왕길역로열파크씨티푸르지오사업(*1)",
      "client": "주식회사 디케이퍼스트",
      "contractDate": "2020-10-06",
      "due": "2024-09-30",
-     "rate": 98.2
+     "rate": 98.22
+    },
+    {
+     "name": "두정역푸르지오그랑피크사업",
+     "client": "주식회사 케이티앤지",
+     "contractDate": "2026-04-03",
+     "due": "2029-11-03",
+     "rate": 1.48
     },
     {
      "name": "카타르 E-RING도로(*2)",
      "client": "ASHGHAL(PUBLIC WORKS AUTHORITY)",
      "contractDate": "2017-02-01",
      "due": "2024-03-12",
-     "rate": 97.86
+     "rate": 97.77
     },
     {
      "name": "CFP(*2)",
-     "client": "Kuwait National Petroleum Company",
+     "client": "KNPC",
      "contractDate": "2014-04-13",
      "due": "2018-10-18",
-     "rate": 99.19
+     "rate": 99.31
     },
     {
      "name": "AL ZOUR REFINERY(*2)",
-     "client": "Kuwait National Petroleum Company",
+     "client": "KNPC",
      "contractDate": "2015-10-28",
      "due": "2019-07-28",
-     "rate": 99.94
+     "rate": 99.98
     },
     {
      "name": "OMAN DUQM REFINERY PJ(*2)",
      "client": "Duqm Refinery & Petrochemical Industries LLC (DRPIC)",
      "contractDate": "2018-06-03",
      "due": "2023-09-01",
-     "rate": 96.98
+     "rate": 96.5
     },
     {
      "name": "LIBYA ZWITINA POWER PLANT PJ(*3)",
@@ -1045,125 +1073,118 @@
      "rate": 35.16
     },
     {
-     "name": "NIGERIA GBARAN INFILL PJ(*2)",
+     "name": "NIGERIA GBARAN INFILL PJ",
      "client": "Shell Petroleum Development Company",
      "contractDate": "2014-05-01",
-     "due": "2026-06-30",
-     "rate": 96.74
+     "due": "2026-12-31",
+     "rate": 99.55
     },
     {
      "name": "싱가포르도시철도CR108",
-     "client": "Land Transport Authority",
+     "client": "LTA",
      "contractDate": "2021-04-27",
      "due": "2029-12-31",
-     "rate": 56.38
+     "rate": 59.94
     },
     {
      "name": "싱가포르 우드랜드병원(*2)",
      "client": "MOH",
      "contractDate": "2018-04-30",
      "due": "2024-11-08",
-     "rate": 95.54
+     "rate": 95.51
     },
     {
      "name": "이라크 신항만1단계",
-     "client": "General Company for Ports of Iraq",
+     "client": "GCPI",
      "contractDate": "2021-08-15",
      "due": "2026-12-30",
-     "rate": 94.91
+     "rate": 96.22
     },
     {
      "name": "이라크 침매터널(*4)",
-     "client": "General Company for Ports of Iraq",
+     "client": "GCPI",
      "contractDate": "2021-08-15",
      "due": "2025-08-14",
-     "rate": 89.94
+     "rate": 91.74
     },
     {
      "name": "모잠비크 LNG AREA 1",
      "client": "CCS JV",
      "contractDate": "2020-12-22",
      "due": "2028-10-17",
-     "rate": 6.96
+     "rate": 8.66
     },
     {
      "name": "투르크메니스탄 MINERAL FERTILIZER",
      "client": "TURKMENHIMIYA",
      "contractDate": "2025-09-14",
      "due": "2028-10-13",
-     "rate": 5.73
+     "rate": 9.22
     },
     {
      "name": "망포역푸르지오르마크사업",
      "client": "망포역세권개발피에프브이(주)",
      "contractDate": "2025-08-31",
      "due": "2030-02-28",
-     "rate": 8.44
+     "rate": 11.31
     },
     {
      "name": "NIGERIA NLNG T7 PJ(*4)",
      "client": "NLNG",
      "contractDate": "2020-05-13",
      "due": "2026-06-13",
-     "rate": 90.15
+     "rate": 90.23
     },
     {
      "name": "NIGERIA WARRI REFINERY FIX(*4)",
      "client": "WARRI REFINING & PETROCHEMICAL",
      "contractDate": "2022-08-01",
      "due": "2025-03-31",
-     "rate": 88.08
+     "rate": 90.25
     },
     {
      "name": "NIGERIA KADUNA REFINERY QUICK FIX (*4)",
      "client": "KADUNA REFINING & PETROCHEMICAL",
      "contractDate": "2023-02-02",
-     "due": "2025-12-31",
-     "rate": 64.35
-    },
-    {
-     "name": "청주첨단산업단지 조성사업",
-     "client": "(주)청주테크노폴리스",
-     "contractDate": "2013-06-28",
-     "due": "2026-09-30",
-     "rate": 98.03
+     "due": "2025-03-08",
+     "rate": 65.93
     },
     {
      "name": "용인푸르지오원클러스터1단지사업",
      "client": "주식회사 남동타운피에프브이",
      "contractDate": "2021-12-23",
-     "due": "2027-01-31",
-     "rate": 62.53
+     "due": "2027-08-07",
+     "rate": 71.22
     },
     {
      "name": "청주푸르지오씨엘리체사업",
      "client": "주식회사 청주글로벌",
      "contractDate": "2025-01-24",
-     "due": "2028-10-01",
-     "rate": 2.17
+     "due": "2029-03-31",
+     "rate": 4.25
     },
     {
-     "name": "NIGERIA NLNG T7 OFFSHORE PJ (*2)",
+     "name": "NIGERIA NLNG T7 OFFSHORE PJ (*4)",
      "client": "NLNG",
      "contractDate": "2020-05-13",
      "due": "2026-06-13",
-     "rate": 96.78
+     "rate": 97.33
     }
    ]
   },
   "dlenc": {
    "name": "DL이앤씨",
-   "report": "반기보고서 (2026.06)",
-   "rcept_no": "20260814003712",
-   "asOf": "2026-06",
+   "report": "분기보고서 (2026.09)",
+   "rcept_no": "20261113001106",
+   "asOf": "2026-09",
    "parser": 2,
    "rows": []
   },
   "doosan": {
    "name": "두산에너빌리티",
-   "report": "반기보고서 (2026.06)",
-   "rcept_no": "20260814003782",
-   "asOf": "2026-06",
+   "report": "분기보고서 (2026.09)",
+   "rcept_no": "20261113000856",
+   "asOf": "2026-09",
    "parser": 2,
    "rows": []
   },
@@ -2364,12 +2385,12 @@
   },
   "나이지리아 Gbaran Infill Project - Package 1": {
    "company": "daewoo",
-   "rate": 96.74,
-   "contract": "NIGERIA GBARAN INFILL PJ(*2)",
-   "due": "2026-06-30",
+   "rate": 99.55,
+   "contract": "NIGERIA GBARAN INFILL PJ",
+   "due": "2026-12-31",
    "contractDate": "2014-05-01",
-   "asOf": "2026-06",
-   "rcept_no": "20260814002161"
+   "asOf": "2026-09",
+   "rcept_no": "20261113001461"
   },
   "파나마 메트로 3호선 (Panama Metro Line3) 공사": {
    "company": "hdec",
@@ -2382,12 +2403,12 @@
   },
   "Mozambique LNG Area1": {
    "company": "daewoo",
-   "rate": 6.96,
+   "rate": 8.66,
    "contract": "모잠비크 LNG AREA 1",
    "due": "2028-10-17",
    "contractDate": "2020-12-22",
-   "asOf": "2026-06",
-   "rcept_no": "20260814002161"
+   "asOf": "2026-09",
+   "rcept_no": "20261113001461"
   },
   "이라크 해수처리시설 공사": {
    "company": "hdec",
@@ -2418,12 +2439,12 @@
   },
   "투르크메니스탄 Mineral Fertilizers Production Complex": {
    "company": "daewoo",
-   "rate": 5.73,
+   "rate": 9.22,
    "contract": "투르크메니스탄 MINERAL FERTILIZER",
    "due": "2028-10-13",
    "contractDate": "2025-09-14",
-   "asOf": "2026-06",
-   "rcept_no": "20260814002161"
+   "asOf": "2026-09",
+   "rcept_no": "20261113001461"
   },
   "필리핀 세부 신항만 건설사업": {
    "company": "hj",
