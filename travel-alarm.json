@@ -1051,16 +1051,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "2단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "부줌부라시"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "2단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -1358,16 +1358,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "3단계를 제외한 전 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "골란고원 일부(레바논 접경 및 UNDOF 분리선 4km 이내 지역 제외)"
+    },
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "3단계를 제외한 전 지역"
     }
    ],
    "written": "",
@@ -1866,12 +1866,6 @@
    "level": 3,
    "regions": [
     {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "다합•샴엘셰이크지역, 카이로 등 나일강 유역 도시지역, 마르트루~지중해 유역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -1882,6 +1876,12 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "서부사막, 시나이반도 남부 일부지역(성캐더린•타바)"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "다합•샴엘셰이크지역, 카이로 등 나일강 유역 도시지역, 마르트루~지중해 유역"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-11-13T08:49:44.311422+00:00"
+ "generatedAt": "2026-11-14T08:09:10.678786+00:00"
 }
