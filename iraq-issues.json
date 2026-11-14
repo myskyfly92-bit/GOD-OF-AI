@@ -1,6 +1,424 @@
 {
-  "generatedAt": "2026-11-14T17:14:14.922Z",
+  "generatedAt": "2026-11-14T21:36:04.917Z",
   "items": [
+    {
+      "title": "Iraqi troops deploy to Jurf Al-Sakhar amid oil smuggling probe",
+      "source": "The Jerusalem Post",
+      "link": "https://www.jpost.com/middle-east/article-914883",
+      "date": "2026-11-14T21:10:56.000Z",
+      "lang": "en",
+      "titleKo": "이라크군, 석유 밀수 수사 와중에 주르프 알사카르에 배치",
+      "url": "https://www.jpost.com/middle-east/article-914883",
+      "body": "This is a potential turning point in Iraq. Iraq has sent troops to the Jurf al-Sakhar area over the weekend.",
+      "bodyKo": "이것은 이라크에서 잠재적인 전환점이 될 수 있습니다. 이라크는 지난 주말 주르프 알사카르 지역에 군대를 파견했습니다.",
+      "tried": true,
+      "count": 6,
+      "sources": [
+        "UA.NEWS",
+        "The Jerusalem Post",
+        "964media",
+        "Kurdistan24",
+        "Middle East Online"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크, 석유 밀수 의혹 속 주르프 알사크르에 병력 배치 — 예루살렘 포스트",
+          "source": "UA.NEWS",
+          "link": "https://ua.news/en/dovkolo-svitu/irak-napraviv-viiska-do-dzhurf-as-sakhra-na-tli-pidozr-u-naftovii-kontrabandi-jerusalem-post"
+        },
+        {
+          "titleKo": "이라크 총리, 주르프 알사카르 석유 밀수 수사 후 공무원 9명 해임",
+          "source": "964media",
+          "link": "https://en.964media.com/55276/"
+        },
+        {
+          "titleKo": "이라크 총리, 석유 밀수 용의자에 대한 법적 조치 명령 및 9명의 공무원 해임",
+          "source": "Kurdistan24",
+          "link": "https://www.kurdistan24.net/en/story/953039/iraq-pm-orders-legal-action-against-oil-smuggling-suspects-dismisses-nine-officials"
+        },
+        {
+          "titleKo": "이라크, 바빌 주 석유 밀수 사건에 대한 합동 수사 착수",
+          "source": "Middle East Online",
+          "link": "https://middle-east-online.com/en/iraq-launches-coordinated-probe-babil-oil-smuggling"
+        },
+        {
+          "titleKo": "이라크 총리의 석유 밀수 조사단, 군대의 호위를 받으며 주르프 알사카르로 이동",
+          "source": "964media",
+          "link": "https://en.964media.com/55193/"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "힐라(바빌)",
+        "km": 81
+      }
+    },
+    {
+      "title": "Iraqi Prime Minister Puts Iranian Stooges on Notice",
+      "source": "Foundation for Defense of Democracies",
+      "link": "https://www.fdd.org/analysis/iraqi-prime-minister-puts-iranian-stooges-on-notice/",
+      "date": "2026-11-14T21:10:30.000Z",
+      "lang": "en",
+      "titleKo": "이라크 총리, 이란의 꼭두각시들에게 경고",
+      "url": "https://www.fdd.org/analysis/iraqi-prime-minister-puts-iranian-stooges-on-notice/",
+      "body": "Iraqi Prime Minister Ali al-Zaidi’s countercorruption efforts are about more than money. Zaidi is targeting Iran-backed militias by cutting off their financial pipelines to pressure them to disarm. Some...\nZaidi canceled contracts for the check-in counters, car park, and taxi stand at Mosul International Airport on November 7 for connections to armed groups, likely referencing the militias. Three days prior, the Iraqi News Agency reported that the Federal Commission of Integrity was investigating Ministry of Transport contracts benefiting the militias. Tom Barrack, U.S. ambassador to Turkey and special envoy for Syria and Iraq, described the decision on airport contracts as “sovereignty in action.” The Trump administration has made countering the influence of Tehran in Iraq a top priority in engagement with Baghdad, particularly disarming the militias.",
+      "bodyKo": "이라크의 알리 알자이디 총리가 펼치는 반부패 노력은 단순히 돈 문제에 그치지 않는다. 자이디 총리는 이란의 지원을 받는 민병대를 겨냥하여 이들의 자금줄을 차단함으로써 무장 해제를 압박하고 있습니다. 일부...\n자이디 장관은 무장 단체, 즉 민병대와 연관이 있다는 이유로 11월 7일 모술 국제공항의 체크인 카운터, 주차장, 택시 승강장 관련 계약을 취소했다. 3일 전, 이라크 뉴스 통신사는 연방 청렴위원회가 민병대에 이익이 되는 교통부 계약을 조사하고 있다고 보도했다. 터키 주재 미국 대사이자 시리아 및 이라크 특별대표인 톰 배럭(Tom Barrack)은 공항 계약에 대한 결정을 \"매우",
+      "tried": true,
+      "count": 6,
+      "sources": [
+        "Anadolu Ajansı",
+        "Türkiye Today",
+        "Arab Times Kuwait News",
+        "Rudaw",
+        "Modern Ghana",
+        "Foundation for Defense of Democracies"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 총리, 연료 밀수 사건과 관련해 사법부 기소 및 해임 명령",
+          "source": "Anadolu Ajansı",
+          "link": "https://aa.com.tr/en/middle-east/iraqi-premier-orders-judicial-referrals-dismissals-in-fuel-smuggling-case/4125434"
+        },
+        {
+          "titleKo": "이라크 총리, 헤즈볼라의 주요 거점에서 석유 밀수 사건과 관련해 9명의 공무원을 해임하다",
+          "source": "Türkiye Today",
+          "link": "https://www.turkiyetoday.com/region/iraqi-pm-dismisses-nine-officials-over-oil-smuggling-in-hezbollah-stronghold-3232409"
+        },
+        {
+          "titleKo": "이라크 총리, 이란이 지원하는 민병대 거점에서 석유 밀수 사건과 관련해 공무원 9명 해임",
+          "source": "Arab Times Kuwait News",
+          "link": "https://www.arabtimesonline.com/news/iraq-pm-dismisses-9-officials-over-oil-smuggling-in-iran-backed-militia-stronghold/"
+        },
+        {
+          "titleKo": "이라크 총리, 주르프 알나스르 석유 밀수 사건으로 바빌 고위 공무원 해임",
+          "source": "Rudaw",
+          "link": "https://www.rudaw.net/english/categories/iraq/1080163"
+        },
+        {
+          "titleKo": "이라크의 알리 알자이디 총리, 석유 밀수 수사 중 9명의 보안 관계자 해임",
+          "source": "Modern Ghana",
+          "link": "https://www.modernghana.com/videonews/aljazeera/1/754192"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "힐라(바빌)",
+        "km": 81
+      }
+    },
+    {
+      "title": "Lebanon denies telling Iraq al-Alwani case involved \"honor\"",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Middle-East/Lebanon-denies-telling-Iraq-al-Alwani-case-involved-honor",
+      "date": "2026-11-14T20:54:05.000Z",
+      "lang": "en",
+      "titleKo": "샤파크 뉴스..레바논, 이라크에 알-알와니 사건이 '명예'와 관련이 있다고 말한 것을 부인",
+      "url": "https://shafaq.com/en/Middle-East/Lebanon-denies-telling-Iraq-al-Alwani-case-involved-honor",
+      "body": "Shafaq News- Beirut Lebanon's General Security on Saturday denied reports that its chief had told Iraqi authorities or politicians that the killing of former Iraqi lawmaker Ahmed al\nAl-Alwani was found murdered in Beirut on November 10. His body was flown to Baghdad on Saturday and buried the same day in his home province of Al-Anbar, where large crowds joined the funeral procession.",
+      "bodyKo": "샤파크 뉴스 - 레바논 베이루트의 국가안전보장국(General Security)은 12일(토) 이라크 전직 의원인 아흐메드 알-라비(Ahmed al-Rabi)의 살해 사건과 관련해 자국 안보국장이 이라크 당국이나 정치인들에게\n알알와니는 11월 10일 베이루트에서 살해된 채 발견되었다. 그의 시신은 토요일에 바그다드로 이송되었고 같은 날 그의 고향인 안바르주에 안장되었으며, 장례 행렬에는 많은 인파가 함께했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq opens new Coptic cathedral in Baghdad welcoming diaspora Christians to return safely",
+      "source": "The Jerusalem Post",
+      "link": "https://www.jpost.com/middle-east/article-914885",
+      "date": "2026-11-14T20:43:40.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 바그다드에 새로운 콥트 정교회 성당 개관하며 디아스포라 기독교인들의 안전한 귀환을 환영",
+      "url": "https://www.jpost.com/middle-east/article-914885",
+      "body": "\"The opening of the Cathedral of the Virgin Mary, St. Paul, and St. Anthony for the Copts in Baghdad holds great symbolic significance, as it is the first of its kind in Iraq,\" Hammadi said.",
+      "bodyKo": "함마디 장관은 \"바그다드 콥트교도들을 위한 성모 마리아, 성 바울로, 성 안토니오 대성당의 개관은 이라크에서 최초의 사례이기 때문에 매우 상징적인 의미를 지닌다\"라고 말했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The Jerusalem Post"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "General Security: Major General Chakir Did Not Inform Iraq That Al-Alwani's Case Was Related to Moral Reasons",
+      "source": "Daily Beirut",
+      "link": "https://dailybeirut.com/en/lebanon-news/general-security-major-general-chakir-did-not-inform-iraq-that-al-alwanis-case-w/",
+      "date": "2026-11-14T20:00:18.000Z",
+      "lang": "en",
+      "titleKo": "국가안보국: 샤키르 소장은 알알와니 사건이 도덕적 사유와 관련이 있다는 사실을 이라크에 알리지 않았다",
+      "url": "https://dailybeirut.com/en/lebanon-news/general-security-major-general-chakir-did-not-inform-iraq-that-al-alwanis-case-w/",
+      "body": "General Security denies Major General Hassan Chakir informed Iraq that MP Al-Alwani's case involved moral reasons, labeling the circulating rumors as completely false.\n\"The Directorate categorically and in detail denies what is being circulated by some social media sites and media platforms regarding the General Security Director, Major General Hassan Chakir, informing Iraqi authorities or politicians that the case of the Iraqi MP (Al-Alwani) relates to 'moral reasons' or 'honor'. The Directorate confirms that these allegations are completely false and have no basis in reality. It also calls on everyone to be precise and to refer to official accredited sources before circulating any incorrect information or rumors.\"",
+      "bodyKo": "일반 보안국은 하산 샤키르 소장이 알알와니 의원의 사건이 도덕적 이유와 관련이 있다고 이라크에 알렸다는 사실을 부인하며, 나도는 소문을 완전히 거짓이라고 규정했습니다.\n\"총국은 일부 소셜 미디어 사이트와 미디어 플랫폼에서 유포되고 있는, 보안총국장인 하산 샤키르 소장이 이라크 당국이나 정치인들에게 이라크 국회의원(알알와니)의 사건이 '도덕적 이유'나 '명예'와 관련이 있다고 알렸다는 주장을 단호히, 그리고 상세히 부인합니다. 본국은 이러한 주장이 완전히 거짓이며 현실적 근거가 없음을 확인합니다. 또한 모든 사람에게 정확성을 기하고 공식 정보를 참조할 것을 촉구합니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Daily Beirut"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "US Accuses Tehran of Using Iraqi Militias to Plunder National Resources",
+      "source": "Global Arab Network",
+      "link": "https://english.globalarabnetwork.com/2026/11/14/us-accuses-tehran-of-using-iraqi-militias-to-plunder-national-resources/",
+      "date": "2026-11-14T19:52:30.000Z",
+      "lang": "en",
+      "titleKo": "미국, 이란이 이라크 민병대를 동원해 국가 자원을 약탈하고 있다고 비난",
+      "url": "https://english.globalarabnetwork.com/2026/11/14/us-accuses-tehran-of-using-iraqi-militias-to-plunder-national-resources/",
+      "body": "The US State Department has accused Iran of directing Iraqi militias, including Kata'ib Hezbollah, to siphon off oil and national resources.\nGlobal Arab Network Editorial Team November 14, 2026 Energy , Iraq , Politics The United States Department of State has issued a formal accusation against the government of Iran, alleging that Tehran is actively utilizing Iraqi militias to misappropriate the resources of the Iraqi people. The statement marks a significant escalation in Washington’s rhetoric regarding foreign influence over Iraq’s domestic economic stability and security landscape.\nThe allegations, which focus on the systematic extraction of wealth, specifically cite the role of armed groups, including the Iran-aligned Kata’ib Hezbollah, in facilitating illicit activities. According to officials, these groups have been leveraged to bypass state oversight and divert vital national assets, directly undermining the financial sovereignty of the Iraqi state.",
+      "bodyKo": "미 국무부는 이란이 카타이브 헤즈볼라를 비롯한 이라크 민병대를 지휘하여 석유와 국가 자원을 빼돌리고 있다고 비난했다.\n글로벌 아랍 네트워크 편집팀 2026년 11월 14일 에너지, 이라크, 정치 미국 국무부가 이란 정부를 공식적으로 비난하며, 테헤란이 이라크 민병대를 적극적으로 동원해 이라크 국민의 자원을 유용하고 있다고 주장했다. 이 성명은 이라크의 국내 경제 안정과 안보 상황에 대한 외국 세력의 영향력과 관련하여 워싱턴의 발언 수위가 크게 높아졌음을 보여준다.\n체계적인 부의 유출에 초점을 맞춘 이 혐의는 특히 이란과 연계된 카타이브 헤즈볼라를 비롯한 무장 단체가 불법 활동을 조장하는 데 관여한 점을 구체적으로 언급하고 있다. 관계자들에 따르면, 이러한 단체들은 국가의 감독을 우회하고 중요한 국가 자산을 유용하는 데 이용되어 이라크 국가의 재정 주권을 직접적으로 훼손해 왔다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Global Arab Network"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "PMF-Led Government Committee Enters Iraq’s Jurf al-Sakhar - ASHARQ AL-AWSAT English",
+      "source": "ASHARQ AL-AWSAT English",
+      "link": "https://english.aawsat.com/arab-world/5341074-pmf-led-government-committee-enters-iraq%E2%80%99s-jurf-al-sakhar",
+      "date": "2026-11-14T19:27:41.000Z",
+      "lang": "en",
+      "titleKo": "PMF 주도의 정부 위원회, 이라크 주르프 알사카르 진입",
+      "url": "https://english.aawsat.com/arab-world/5341074-pmf-led-government-committee-enters-iraq%E2%80%99s-jurf-al-sakhar",
+      "body": "An Iraqi security committee began investigating suspected fuel smuggling in Jurf al-Sakhar, north of the Babil province, on Friday, amid mounting tensions between the government and Kataib Hezbollah over the area and efforts to bring weapons under state control. Troops deployed around the area to secure the committee’s entry, but political mediation reportedly halted their advance amid disagreements over how the investigation would proceed.\nFootage showed a large military deployment before committee members met commanders believed to be from the pro-Iran Kataib Hezbollah. Sabereen News, an outlet close to armed factions, broadcast a Kataib Hezbollah commander addressing Interior Ministry officers.\nSecurity Media Cell chief Saad Maan denied that political groups or armed factions were represented on the committee, saying it had begun fieldwork early Friday.",
+      "bodyKo": "이라크 보안위원회가 바빌 주 북부의 주르프 알사카르에서 의심되는 연료 밀수 사건을 조사하기 시작했다. 이는 해당 지역을 놓고 정부와 카타이브 헤즈볼라 간의 긴장이 고조되고 무기를 국가의 통제하에 두려는 노력과 맞물려 진행된 것이다. 위원회 진입을 지원하기 위해 해당 지역 주변에 병력이 배치되었지만, 수사 진행 방식에 대한 이견으로 인해 정치적 중재가 이루어지면서 병력의 진격이 중단된 것으로 알려졌다.\n영상에는 위원회 위원들이 친이란 카타이브 헤즈볼라 소속으로 추정되는 사령관들을 만나기 전 대규모 군사 배치가 이뤄진 모습이 담겼다. 무장 세력과 가까운 매체인 사베린 뉴스는 카타이브 헤즈볼라 사령관이 내무부 장교들에게 연설하는 모습을 방송했다.\n사드 만(Saad Maan) 보안 미디어 셀(Security Media Cell) 책임자는 정치 단체나 무장 세력이 위원회에 참여했다는 사실을 부인하며, 위원회가 금요일 이른 아침부터 현장 조사를 시작했다고 밝혔다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "ASHARQ AL-AWSAT English"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "힐라(바빌)",
+        "km": 81
+      }
+    },
+    {
+      "title": "Rafha salaries, Kurdistan share delay Iraq's 2027 budget",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Economy/Rafha-salaries-Kurdistan-share-delay-Iraq-s-2027-budget",
+      "date": "2026-11-14T18:50:54.000Z",
+      "lang": "en",
+      "titleKo": "샤파크 뉴스..라파 임금, 쿠르디스탄 몫 지연으로 이라크 2027년 예산 지연",
+      "url": "https://shafaq.com/en/Economy/Rafha-salaries-Kurdistan-share-delay-Iraq-s-2027-budget",
+      "body": "Shafaq News- Baghdad Disputes over compensatory salaries for certain groups, particularly former Rafha* detainees, allocations for some provinces, and the Kurdistan Region's budget share are delaying\nDisagreements between the Kurdistan Region's two main political parties have also complicated the budget's approval, with political agreements crucial to resolving the outstanding issues, according to the source.\nMeanwhile, Iraq's Council of Ministers plans to submit the draft budget to parliament next week after a special committee completes amendments to the disputed provisions, a source in parliament's Finance Committee told Shafaq News.\nThe draft will then undergo review by the Finance Committee before being placed on parliament's agenda for a reading. If parliamentary blocs agree on its provisions, the budget could pass before the end of 2026.",
+      "bodyKo": "샤파크 뉴스 - 바그다드 특정 집단, 특히 전 라프하* 수감자들에 대한 보상 급여, 일부 주에 대한 배정, 쿠르드 지역의 예산 배분액을 둘러싼 분쟁이 지연되고 있다.\n이 소식통에 따르면, 쿠르드 지역의 두 주요 정당 간의 의견 불일치도 예산안 승인을 어렵게 만들었으며, 미해결 문제를 해결하는 데 있어 정치적 합의가 매우 중요하다고 한다.\n한편, 의회 재정위원회의 한 소식통이 샤파크 뉴스에 전한 바에 따르면, 이라크 각료회의는 특별위원회가 논란이 되는 조항에 대한 수정안을 마무리한 후 다음 주에 예산안을 의회에 제출할 계획이라고 합니다.\n이후 예산안은 재정위원회에서 심사를 거친 후 의회 의제에 상정되어 심의를 받게 됩니다. 의회 정당들이 예산안 조항에 합의한다면, 2026년 말 이전에 예산안이 통과될 수 있다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq plans security delegation to help Beirut inquiry into former MP’s death",
+      "source": "London Daily News",
+      "link": "https://www.londondaily.news/iraq-plans-security-delegation-to-help-beirut-inquiry-into-former-mps-death/",
+      "date": "2026-11-14T18:24:26.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 전직 국회의원 사망 사건에 대한 베이루트 수사를 지원하기 위해 보안 대표단 파견 계획",
+      "url": "https://www.londondaily.news/iraq-plans-security-delegation-to-help-beirut-inquiry-into-former-mps-death/",
+      "body": "We're verifying your browser. You'll be redirected shortly.",
+      "bodyKo": "브라우저를 확인하고 있습니다. 잠시 후 리디렉션됩니다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Arab News",
+        "London Daily News"
+      ],
+      "related": [
+        {
+          "titleKo": "베이루트에서 살해된 전 이라크 국회의원의 장례식이 거행되다",
+          "source": "Arab News",
+          "link": "https://www.arabnews.com/middle-east/funeral-held-for-former-iraq-mp-killed-in-beirut-3011908"
+        }
+      ],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Former Iraqi MP found dead in Lebanon",
+      "source": "IraqiNews",
+      "link": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
+      "date": "2026-11-14T18:22:37.000Z",
+      "lang": "en",
+      "titleKo": "전직 이라크 의원 레바논에서 시신으로 발견",
+      "url": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
+      "body": "Former Iraqi lawmaker Ahmed al-Alwani. Photo: Al-Alwani’s media office\nBaghdad (IraqiNews.com) – Lebanese and Iraqi authorities have launched an investigation after the body of former Iraqi lawmaker Ahmed al-Alwani was discovered in an apartment in the Lebanese capital, Beirut.\nWhile initial reports from Lebanese media emerged on Tuesday, judicial sources indicate the body was found on Monday evening in the Tariq al-Jadideh neighborhood.\nAuthorities found the body after al-Alwani’s family reported losing contact with him four days earlier.\nAlthough authorities have not yet issued a complete forensic report, media outlets mentioned that al-Alwani was strangled with a curtain cord after being lured to the residence.\nThree suspects who allegedly leased the property were identified by investigators: two Syrian nationals and one Lebanese citizen.",
+      "bodyKo": "**전직 이라크 의원 알마드 알알와니, 베이루트 아파트에서 시신 발견**\n\n바그다드(이라크뉴스닷컴) – 레바논과 이라크 당국이 전직 이라크 의원 아흐마드 알알와니의 시신이 레바논 수도 베이루트의 한 아파트에서 발견된 후 수사를 개시했다.\n\n레바논 언론에서 화요일 초기 보도가 나왔지만, 사법 소식통은 시신이 월요일 저녁 타리크 알자디데 지역에서 발견됐다고 밝혔다.\n\n알알와니의 가족이 4일 전 그와의 연락이 끊겼다고 신고한 후 당국이 시신을 발견했다.\n\n당국이 아직 완전한 법의학 보고서를 발표하지 않았지만, 언론 매체들은 알알와니가 그 주택으로 유인된 후 커튼 줄로 목이 졸렸다고 전했다.\n\n수사관들은 그 부동산을 임차한 것으로 알려진 3명의 용의자를 특정했다. 시리아 국적자 2명과 레바논 국적자 1명이다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "The New Arab",
+        "IraqiNews"
+      ],
+      "related": [
+        {
+          "titleKo": "유족이 정의를 요구하는 가운데 수천 명이 이라크 전직 의원의 죽음을 애도하다",
+          "source": "The New Arab",
+          "link": "https://www.newarab.com/news/thousands-mourn-slain-ex-iraqi-mp-family-demands-justice"
+        }
+      ],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Prime Minister Holds Talks in Antalya with Iraqi President",
+      "source": "الإذاعة الجزائرية |",
+      "link": "https://news.radioalgerie.dz/en/node/98875",
+      "date": "2026-11-14T17:59:00.000Z",
+      "lang": "en",
+      "titleKo": "총리, 안탈리아에서 이라크 대통령과 회담",
+      "url": "https://news.radioalgerie.dz/en/node/98875",
+      "body": "The Prime Minister, Mr. Sifi Ghrieb, held talks today, Thursday, in Antalya (Turkey), with the President of the fraternal Republic of Iraq, Mr. Nizar Mohammed Saeed Amedi, who conveyed to him his sincere fraternal greetings and high appreciation to his brother, the President of the Republic of Algeria, Mr. Abdelmadjid Tebboune.\nAlgeria 11/12/2026 - 11:51 The Prime Minister, Mr. Sifi Ghrieb, held talks today, Thursday, in Antalya (Turkey), with the President of the fraternal Republic of Iraq, Mr. Nizar Mohammed Saeed Amedi, who conveyed to him his sincere fraternal greetings and high appreciation to his brother, the President of the Republic of Algeria, Mr. Abdelmadjid Tebboune.\nThis meeting took place on the sidelines of Mr. Ghrieb's participation, representing the President of the Republic, in the proceedings of the Leaders' Summit of the 31st session of the Conference of the Parties to the United Nations Framework Convention on Climate Change (COP31), held in Antalya on November 11 a",
+      "bodyKo": "시피 그리브 총리는 오늘(목요일) 터키 안탈리아에서 니자르 모하메드 사에드 아메디 이라크 공화국 대통령과 회담을 가졌습니다. 아메디 대통령은 알제리 공화국 대통령인 압델마지드 테분 대통령에게 진심 어린 우호의 인사와 깊은 감사를 전했습니다.\n알제리 2026/11/12 - 11:51 시피 그리브 총리는 오늘(목요일) 터키 안탈리아에서 니자르 모하메드 사이드 아메디 이라크 공화국 대통령과 회담을 가졌습니다. 아메디 대통령은 그리브 총리에게 진심 어린 우호의 인사를 전하고 압델마지드 테분 알제리 공화국 대통령에 대한 깊은 존경을 표했습니다.\n이번 회담은 그리에브 장관이 대한민국 대통령을 대표하여 11월 11일 안탈리아에서 열린 제31차 유엔기후변화협약 당사국총회(COP31) 정상회의에 참석한 자리에서 부대 행사로 진행되었습니다.",
+      "tried": true,
+      "count": 4,
+      "sources": [
+        "Kurdistan24",
+        "الحرة",
+        "Rudaw",
+        "الإذاعة الجزائرية |"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 총리, 카타이브 헤즈볼라와의 대립 속에서 점점 더 큰 시험에 직면",
+          "source": "Kurdistan24",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVVZOZ2RPM3RmNUk0T1JyeUNrNU44alk0OGoxakkyLU4xWjJKNEt4dE9nMHU0X1JrcWdrVWxDdl9OODJHYkNyaGZXTnY3ZDY1cjROcGhpYkhFZkIzRkN6SjFNUWoyQ0xuUGp4aUZwUF9xM0NxR1Z6anRvTlBoalRpSlYwUnJfbC14TmI2OUdJYkNaYkZyWVFfbEpUYm9ac1o3ZVB5MzRZZGs2UE1NVGJiLVBoOW43ZTk1cXhTTkZaYXdZb3pEOUpCb1BnQ1Jjdw?oc=5"
+        },
+        {
+          "titleKo": "단독: 소식통에 따르면, 정보 유출로 인해 이라크 총리가 카타이브 헤즈볼라의 주요 거점에 대한 급습을 취소했다고 합니다",
+          "source": "الحرة",
+          "link": "https://alhurra.com/en/54564"
+        },
+        {
+          "titleKo": "이라크 총리, 카타이브 헤즈볼라 긴장 완화를 위한 노력 속에서 PMF 지도자들과 아메리 회담",
+          "source": "Rudaw",
+          "link": "https://www.rudaw.net/english/categories/iraq/1080145"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Baghdad bust nets 5kg of meth, three traffickers",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbVBpazJ2eE5MZDNVajFmWGlVcmVaUEUycnRid1JZaXRTdmxVWWt1d2JSOXZZUWlIdTZKTmhJdjRfa2VEdFhfTUZaS2RmQy1QQnJSU1BvRXFnb1JTWWdQNDRRYWZwUjRvSUM5bFk5ak9kRHd2SGxZMUQ4VHcwM3NfbmRDakQ?oc=5",
+      "date": "2026-11-14T17:29:51.000Z",
+      "lang": "en",
+      "titleKo": "샤파크 뉴스.. 바그다드에서 메트암페타민 5kg과 마약 밀매자 3명 검거",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Body of slain former MP Alwani returns to Iraq ahead of Ramadi funeral",
+      "source": "964media",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9zTEZYSTRCRlJydzlTM0c1bHhtYkY5QjFpSS1DSkxJM19CVEx3RXpST0xRSTBueklVRF9lWDdKTUJrSENk?oc=5",
+      "date": "2026-11-14T17:14:41.000Z",
+      "lang": "en",
+      "titleKo": "암살된 전직 의원 알와니의 시신, 라마디 장례식에 앞서 이라크로 송환",
+      "count": 2,
+      "sources": [
+        "UA.NEWS",
+        "964media"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 수천 명의 시민이 전직 의원 알-알와니의 시신을 라마디로 호송 — 아샤르크 알-아우사트",
+          "source": "UA.NEWS",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUmwxMEtxZ29kVmJGalgtcTdRSDVOV01zQ2psZWZ1c05KZ1lsN2NtLWlhOUNDejd4ejYzZ0dYR2FHZG5YR0dEQzAtQ1RGWnB2ODJwVFBIR1o4SkNDd2JZaEFlYjFBem9mT3NKc3REeWRPWGg0TjFSdDRaWHdsbV9ld3oydHJfeldJQWVTOFFDcEloUmFTay1qQUxFLXJSYzlWRVh5NFhpb0I5WWV1NEhnZ0V1YUJJZGhM?oc=5"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "라마디",
+        "km": 125
+      }
+    },
     {
       "title": "Iraq denies 72-hour airspace closure, says viral video was old and edited",
       "source": "964media",
@@ -37,11 +455,17 @@
       "body": "Shafaq News- KirkukKirkuk Provincial Council Chairman Mohammed Ibrahim Al-Hafiz on Saturday reaffirmed the province's commitment to rotating the governor's post among its ethnic components, adding tha\nSpeaking at a press conference, Al-Hafiz described the appointment of new Governor Qahtan Al-Wandawi as a step toward implementing the political agreement that paved the way for the formation of Kirkuk's local government. The province is home to Kurds, Arabs, and Turkmen.\nHe recalled that the arrangement began with the appointment of Rebwar Taha, representing the Kurdish component, followed by Samaan Agha, a Sunni Turkmen, before the post passed to Al-Wandawi, also a Turkmen.\nRegarding the Arab component's turn, Al-Hafiz said the political parties that brokered the current agreement would determine when the position should pass to it, in line with the understandings reached between them.",
       "bodyKo": "샤파크 뉴스 - 키르쿡 키르쿡 주 의회 의장인 모하메드 이브라힘 알하피즈는 토요일에 주지사직을 민족 구성원들 간에 순환시키는 주 정부의 약속을 재확인하며 다음과 같이 덧붙였다.\n알하피즈는 기자회견에서 카탄 알완다위 신임 주지사의 임명을 키르쿠크 지방 정부 구성의 길을 열어준 정치적 합의 이행을 위한 한 걸음으로 평가했다. 이 주에는 쿠르드인, 아랍인, 투르크멘인이 거주하고 있다.\n그는 이 합의가 쿠르드족을 대표하는 레브와르 타하(Rebwar Taha)의 임명으로 시작되었으며, 그 뒤를 이어 수니파 투르크멘인 사만 아가(Samaan Agha)가 임명되었고, 이후 이 자리가 역시 투르크멘인인 알-완다위에게 넘어갔다고 회고했다.\n아랍 측의 차례와 관련하여 알하피즈는 현재 합의를 중재한 정당들이 자신들 사이에 도달한 합의에 따라 언제 직책을 아랍 측에 넘겨야 할지를 결정할 것이라고 말했다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "샤파크 뉴스.. 알완다위 당선 후 키르쿠크, 순환식 통치 지지",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Iraq/Kirkuk-backs-rotational-governance-after-Al-Wandawi-election"
+        }
+      ],
       "tag": "정치·선거",
       "impact": {
         "lv": "g",
@@ -62,10 +486,9 @@
       "body": "Shafaq News- Baghdad/ Erbil The US dollar opened Saturday&rsquo;s trading higher in Iraq, hovering around 169,000 dinars per 100 dollars. According to a Shafaq News market survey, the dollar traded\nIn the Iraqi capital, exchange shops sold the dollar at 169,750 dinars and bought it at 168,750 dinars, while in Erbil, selling prices stood at 169,300 dinars and buying prices at 169,200 dinars.",
       "bodyKo": "샤팍 뉴스 - 바그다드/에르빌 이라크에서 미 달러화는 토요일 장을 상승세로 시작하여 100달러당 약 169,000디나르 수준에서 등락을 거듭했다. 샤팍 뉴스 시장 조사에 따르면, 달러 환율은 다음과 같이 거래되었다.\n이라크 수도에서는 환전소가 달러를 169,750디나르에 매도하고 168,750디나르에 매수했으며, 에르빌에서는 매도 가격이 169,300디나르, 매수 가격이 169,200디나르였다.",
       "tried": true,
-      "count": 4,
+      "count": 3,
       "sources": [
-        "شفق نيوز",
-        "أخبار العالم اليوم"
+        "شفق نيوز"
       ],
       "related": [
         {
@@ -77,11 +500,6 @@
           "titleKo": ". 바그다드, 에르빌 시장에서 달러 가치 상승",
           "source": "شفق نيوز",
           "link": "https://shafaq.com/amp/en/Economy/Dollar-rises-in-Baghdad-Erbil-markets-9"
-        },
-        {
-          "titleKo": "2026년 11월 13일 금요일 오늘 이라크 달러 환율.. 주간 마감 시점 달러당 17만 디나르에 근접",
-          "source": "أخبار العالم اليوم",
-          "link": "https://www.almashhad.com/amp/article/174515324408726-economy/624676581884558-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9-13-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1-2026-%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9-%D9%82%D8%B1%D8%A8-170-%D8%A3%D9%84%D9%81-%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D9%84%D9%83%D9%84-100-%D8%AF%D9%88%D9%84%D8%A7%D8%B1/"
         }
       ],
       "tag": "경제·유가",
@@ -119,38 +537,6 @@
       }
     },
     {
-      "title": "PMF-Led Government Committee Enters Iraq’s Jurf al-Sakhar - ASHARQ AL-AWSAT English",
-      "source": "ASHARQ AL-AWSAT English",
-      "link": "https://english.aawsat.com/arab-world/5341074-pmf-led-government-committee-enters-iraq%E2%80%99s-jurf-al-sakhar",
-      "date": "2026-11-14T12:55:00.000Z",
-      "lang": "en",
-      "titleKo": "PMF 주도의 정부 위원회, 이라크 주르프 알사카르 진입",
-      "url": "https://english.aawsat.com/arab-world/5341074-pmf-led-government-committee-enters-iraq%E2%80%99s-jurf-al-sakhar",
-      "body": "An Iraqi security committee began investigating suspected fuel smuggling in Jurf al-Sakhar, north of the Babil province, on Friday, amid mounting tensions between the government and Kataib Hezbollah over the area and efforts to bring weapons under state control. Troops deployed around the area to secure the committee’s entry, but political mediation reportedly halted their advance amid disagreements over how the investigation would proceed.\nFootage showed a large military deployment before committee members met commanders believed to be from the pro-Iran Kataib Hezbollah. Sabereen News, an outlet close to armed factions, broadcast a Kataib Hezbollah commander addressing Interior Ministry officers.\nSecurity Media Cell chief Saad Maan denied that political groups or armed factions were represented on the committee, saying it had begun fieldwork early Friday.",
-      "bodyKo": "이라크 보안위원회가 바빌 주 북부의 주르프 알사카르에서 의심되는 연료 밀수 사건을 조사하기 시작했다. 이는 해당 지역을 놓고 정부와 카타이브 헤즈볼라 간의 긴장이 고조되고 무기를 국가의 통제하에 두려는 노력과 맞물려 진행된 것이다. 위원회 진입을 지원하기 위해 해당 지역 주변에 병력이 배치되었지만, 수사 진행 방식에 대한 이견으로 인해 정치적 중재가 이루어지면서 병력의 진격이 중단된 것으로 알려졌다.\n영상에는 위원회 위원들이 친이란 카타이브 헤즈볼라 소속으로 추정되는 사령관들을 만나기 전 대규모 군사 배치가 이뤄진 모습이 담겼다. 무장 세력과 가까운 매체인 사베린 뉴스는 카타이브 헤즈볼라 사령관이 내무부 장교들에게 연설하는 모습을 방송했다.\n사드 만(Saad Maan) 보안 미디어 셀(Security Media Cell) 책임자는 정치 단체나 무장 세력이 위원회에 참여했다는 사실을 부인하며, 위원회가 금요일 이른 아침부터 현장 조사를 시작했다고 밝혔다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "ASHARQ AL-AWSAT English",
-        "Kurdistan24"
-      ],
-      "related": [
-        {
-          "titleKo": "쿠르디스탄24, 이라크 위원회의 주르프 알사카르 방문에 대한 세부 사항 공개",
-          "source": "Kurdistan24",
-          "link": "https://www.kurdistan24.net/en/story/952967/kurdistan24-reveals-details-of-iraqi-committees-visit-to-jurf-al-sakhar"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "힐라(바빌)",
-        "km": 81
-      }
-    },
-    {
       "title": "Iraq begins drilling new well under East Baghdad project",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/en/Economy/Iraq-begins-drilling-new-well-under-East-Baghdad-project",
@@ -161,11 +547,17 @@
       "body": "Shafaq News- BaghdadThe Iraqi Drilling Company has begun drilling a new oil well at the East Baghdad South field under a 17-well project for field operator EBS Petroleum, Iraq&rsquo;s Oil Ministry sai\nDrilling began after crews installed the rig, completed the necessary technical checks and confirmed its readiness, company Director General Mohammed Hantoush said.\nThe company described the work as part of efforts to expand its operations and participation in oilfield development projects.\nEBS Petroleum is a subsidiary of China&rsquo;s ZhenHua Oil. On September 22, the Oil Ministry announced the inauguration of a gas-processing unit at the field with a capacity of 30 million standard cubic feet per day. According to Oil Minister Basim Mohammed Khudair, the project will support the national electricity grid, reduce reliance on imported fuel, and cut harmful emissions in Baghdad.",
       "bodyKo": "샤파크 뉴스 - 바그다드 이라크 석유부는 이라크 시추공사가 유전 운영사인 EBS 페트롤리엄을 위해 17개 유정을 시추하는 프로젝트의 일환으로 바그다드 동남부 유전에서 새로운 유정 시추를 시작했다고 밝혔다.\n모하메드 한투시(Mohammed Hantoush) 사장은 시추 작업이 시추 설비를 설치하고 필요한 기술 점검을 완료한 후 설비의 준비 상태를 확인한 후에 시작되었다고 밝혔다.\n이 회사는 이번 작업을 사업 확장 및 유전 개발 프로젝트 참여를 위한 노력의 일환이라고 설명했다.\nEBS Petroleum은 중국의 ZhenHua Oil의 자회사이다. 9월 22일, 석유부는 일일 3천만 표준 입방피트(약 85만 입방미터)의 처리 용량을 갖춘 가스 처리 시설을 유전에서 개소했다고 발표했다. 바심 모하메드 쿠다이르(Basim Mohammed Khudair) 석유부 장관에 따르면, 이 프로젝트는 국가 전력망을 지원하고 수입 연료에 대한 의존도를 낮추며 바그다드의 유해 배출가스를 저감할 것으로 기대된다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "샤파크 뉴스.. 이라크, 동바그다드 프로젝트에 따라 신규 유정 시추 시작",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Economy/Iraq-begins-drilling-new-well-under-East-Baghdad-project"
+        }
+      ],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -173,6 +565,27 @@
         "act": "",
         "place": "바그다드",
         "km": 27
+      }
+    },
+    {
+      "title": "나토 이라크 임무단 사령관, 이라크와의 협력 현황 동맹국에 브리핑 – 북대서양조약기구 | 나토",
+      "source": "The European Times",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWHdreUJaVWxKbWctRzc1bWZZcDJ5Q05qTVN5UVZOSzBYQk1uS0xLem15Qk9hNENjWUhWLUtmQmJjalFMQm9PaDZ1ZV81cDhfUnVXRE95RGhkQkFRWTk3RGZ3VXdsbzg3ZG9XcGQydUNia2VrbElibzVIWWY5bkRUMTYybEV6WXhiWUNLbVJVMFVsVWktd1lWQnVrcVdybGxzM3NCZ1F0RG80TVQ2NzJIOG15N1pUckRlOEdPQTViYTlIS3k4b3hLZG1UYXpyR0NzMXhQVWtEaGdwMG9ScWlId2s5dw?oc=5",
+      "date": "2026-11-14T10:19:04.000Z",
+      "lang": "ko",
+      "titleKo": "나토 이라크 임무단 사령관, 이라크와의 협력 현황 동맹국에 브리핑 – 북대서양조약기구",
+      "count": 1,
+      "sources": [
+        "The European Times"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
       }
     },
     {
@@ -194,69 +607,6 @@
       "impact": {
         "lv": "g",
         "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "US Accuses Tehran of Using Iraqi Militias to Plunder National Resources",
-      "source": "Global Arab Network",
-      "link": "https://english.globalarabnetwork.com/2026/11/14/us-accuses-tehran-of-using-iraqi-militias-to-plunder-national-resources/",
-      "date": "2026-11-14T08:57:26.000Z",
-      "lang": "en",
-      "titleKo": "미국, 이란이 이라크 민병대를 동원해 국가 자원을 약탈하고 있다고 비난",
-      "url": "https://english.globalarabnetwork.com/2026/11/14/us-accuses-tehran-of-using-iraqi-militias-to-plunder-national-resources/",
-      "body": "The US State Department has accused Iran of directing Iraqi militias, including Kata'ib Hezbollah, to siphon off oil and national resources.\nGlobal Arab Network Editorial Team November 14, 2026 Energy , Iraq , Politics The United States Department of State has issued a formal accusation against the government of Iran, alleging that Tehran is actively utilizing Iraqi militias to misappropriate the resources of the Iraqi people. The statement marks a significant escalation in Washington’s rhetoric regarding foreign influence over Iraq’s domestic economic stability and security landscape.\nThe allegations, which focus on the systematic extraction of wealth, specifically cite the role of armed groups, including the Iran-aligned Kata’ib Hezbollah, in facilitating illicit activities. According to officials, these groups have been leveraged to bypass state oversight and divert vital national assets, directly undermining the financial sovereignty of the Iraqi state.",
-      "bodyKo": "미 국무부는 이란이 카타이브 헤즈볼라를 비롯한 이라크 민병대를 지휘하여 석유와 국가 자원을 빼돌리고 있다고 비난했다.\n글로벌 아랍 네트워크 편집팀 2026년 11월 14일 에너지, 이라크, 정치 미국 국무부가 이란 정부를 공식적으로 비난하며, 테헤란이 이라크 민병대를 적극적으로 동원해 이라크 국민의 자원을 유용하고 있다고 주장했다. 이 성명은 이라크의 국내 경제 안정과 안보 상황에 대한 외국 세력의 영향력과 관련하여 워싱턴의 발언 수위가 크게 높아졌음을 보여준다.\n체계적인 부의 유출에 초점을 맞춘 이 혐의는 특히 이란과 연계된 카타이브 헤즈볼라를 비롯한 무장 단체가 불법 활동을 조장하는 데 관여한 점을 구체적으로 언급하고 있다. 관계자들에 따르면, 이러한 단체들은 국가의 감독을 우회하고 중요한 국가 자산을 유용하는 데 이용되어 이라크 국가의 재정 주권을 직접적으로 훼손해 왔다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Global Arab Network"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq Prepares to Encircle Jurf al-Sakhar Amid Oil-Smuggling Investigation",
-      "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/en/story/952721/iraq-prepares-to-encircle-jurf-al-sakhar-amid-oil-smuggling-investigation",
-      "date": "2026-11-14T08:43:31.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 석유 밀수 수사 속 주르프 알사카르 포위 준비",
-      "url": "https://www.kurdistan24.net/en/story/952721/iraq-prepares-to-encircle-jurf-al-sakhar-amid-oil-smuggling-investigation",
-      "body": "Iraq prepares a two-stage security operation in Jurf al-Sakhar as intelligence allegations of oil smuggling trigger investigations and political tensions.\nERBIL (Kurdistan24) - Iraq's federal government has prepared a two-stage security operation to surround and enter Jurf al-Sakhar in Babil province following the disclosure of intelligence findings alleging years of oil smuggling in the heavily restricted area, according to information obtained by Kurdistan24.\nKurdistan24's Baghdad correspondent Dilan Barzan reported early Friday, Nov. 13, 2026, that forces from the Counter-Terrorism Service and Rapid Response units had been placed on heightened alert, awaiting orders to proceed amid what sources described as federal government support for a possible operation.\nThe reported preparations do not establish that an operation has begun. A final order or deployment timetable has not been publicly announced, while the allegations at the center of the dispute remain under investigation.",
-      "bodyKo": "이라크가 주르프 알사카르에서 2단계 보안 작전을 준비하고 있는 가운데, 석유 밀수 혐의에 대한 정보기관의 주장이 수사 및 정치적 긴장을 촉발하고 있다.\n에르빌(쿠르디스탄24) - 쿠르디스탄24가 입수한 정보에 따르면, 이라크 연방 정부는 엄격한 통제 지역에서 수년간 석유 밀수가 이뤄졌다는 정보기관의 조사 결과를 공개한 후 바빌 주르프 알사카르를 포위하고 진입하기 위한 2단계 보안 작전을 준비했습니다.\n쿠르디스탄24의 바그다드 특파원인 딜란 바르잔(Dilan Barzan)은 2026년 11월 13일 금요일 이른 아침, 대테러부대(Counter-Terrorism Service)와 신속대응부대(Rapid Response units)가 비상 경계 태세에 돌입했으며, 소식통에 따르면 연방 정부가 작전을 지원할 가능성이 있는 가운데 작전 개시 명령을 기다리고 있다고 보도했다.\n보도된 준비 작업만으로는 작전이 시작되었다고 단정할 수 없다. 최종 명령이나 파병 일정은 아직 공개적으로 발표되지 않았으며, 분쟁의 핵심이 되는 의혹은 여전히 조사 중이다.",
-      "tried": true,
-      "count": 3,
-      "sources": [
-        "Middle East Online",
-        "Kurdistan24",
-        "Rudaw"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크, 바빌 주 석유 밀수 사건에 대한 합동 수사 착수",
-          "source": "Middle East Online",
-          "link": "https://middle-east-online.com/en/iraq-launches-coordinated-probe-babil-oil-smuggling"
-        },
-        {
-          "titleKo": "이라크 총리, 주르프 알사크르 석유 밀수 의혹을 조사하기 위한 고위급 위원회 구성",
-          "source": "Rudaw",
-          "link": "https://rudaw.net/english/categories/iraq/1080143"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
         "act": "",
         "place": "",
         "km": null
@@ -407,7 +757,7 @@
         {
           "titleKo": "이라크, 10월 원유 생산 하루 460만 배럴…OPEC+ 할당량 초과",
           "source": "IndexBox",
-          "link": "https://www.indexbox.io/ko/blog/iraqs-october-crude-output-hits-46-million-barrels-per-day-highest-since-2019/"
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSWVxakFmYzlaSS1ZTHhtdHRkVkpGSVZCb0V5dHB2bFFpTW5fYnhGcThQVnZnLTV5Q2NzNUVuT2tFckFNWG44Wm54Y2hVaVQ2SkVqNkxyWGJHaktSdlZPUTI1MUhTbmczYmZPQTM2c2hRSlVIQkZvRnFyYUhHSS1zMU03RnBrYTVxX2wxdF9mSzdBN0JrU0hTY0pXNlJtdURmWGV0bm1HbEZ0TG9ad0RB?oc=5"
         }
       ],
       "tag": "경제·유가",
@@ -545,88 +895,6 @@
       }
     },
     {
-      "title": "Iraq Forms New Energy Police Force To Combat Oil Smuggling",
-      "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/en/story/952801/iraq-forms-new-energy-police-force-to-combat-oil-smuggling",
-      "date": "2026-11-13T21:22:12.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 석유 밀수를 단속하기 위한 새로운 에너지 경찰 부대 편성",
-      "url": "https://www.kurdistan24.net/en/story/952801/iraq-forms-new-energy-police-force-to-combat-oil-smuggling",
-      "body": "Iraq’s Energy Police formed a new force to combat oil smuggling in the south, saying pipeline attacks fell 90% as the prime minister ordered a probe in Babil.\nERBIL (Kurdistan24) - Iraq&rsquo;s Energy Police Directorate has formed a new force dedicated to combating oil theft and smuggling in the south of the country, its director general said on Friday. He said tough security measures have cut attacks on oil pipelines by 90%.\nDirector General Hamid Hussaini told the Iraqi News Agency (INA) that the new &ldquo;Force to Combat Smuggling and Theft&rdquo; reports directly to him and patrols the deserts continuously to monitor the wide pipeline network.\nHe said the force has already foiled three attempts to install illegal locks to steal oil at the Sabba field in Dhi Qar province.\nHussaini said violations and theft attempts are not limited to crude oil pipelines but affect the entire transport network across the provinces.",
-      "bodyKo": "이라크 에너지 경찰은 남부 지역의 석유 밀수를 단속하기 위해 새로운 부대를 편성했으며, 바빌 주에서 총리가 수사를 지시한 이후 송유관 공격이 90% 감소했다고 밝혔다.\n에르빌(쿠르디스탄24) - 이라크 에너지 경찰국이 이라크 남부 지역에서 석유 절도 및 밀수를 단속하기 위한 새로운 부대를 편성했다고 국장이 금요일에 밝혔다. 그는 강력한 보안 조치로 인해 유전 파이프라인에 대한 공격이 90% 감소했다고 말했다.\n하미드 후세이니(Hamid Hussaini) 사무총장은 이라크 뉴스 통신(INA)과의 인터뷰에서 새로운 \"밀수 및 도난 방지 부대\"가 자신에게 직접 보고하며 광범위한 송유관 네트워크를 감시하기 위해 사막을 지속적으로 순찰하고 있다고 밝혔다.\n그는 이미 디카르 주 사바 유전에서 석유를 훔치기 위해 불법으로 잠금장치를 설치하려는 시도가 세 차례 있었지만 모두 저지했다고 밝혔다.\n후세이니 대변인은 침해 및 도난 시도가 원유 파이프라인에만 국한되지 않고 여러 주에 걸친 전체 수송망에 영향을 미친다고 말했다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "The Insight International",
-        "Kurdistan24"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 에너지 경찰, 밀수 단속 부대 편성... 주르프 알사크르 수사 개시와 함께 5,000명 증원 요청",
-          "source": "The Insight International",
-          "link": "https://theinsightinternational.com/iraq-energy-police-anti-smuggling-force-jurf-al-sakhr-inquiry/"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "힐라(바빌)",
-        "km": 81
-      }
-    },
-    {
-      "title": "Iraqi Prime Minister Puts Iranian Stooges on Notice",
-      "source": "Foundation for Defense of Democracies",
-      "link": "https://www.fdd.org/analysis/iraqi-prime-minister-puts-iranian-stooges-on-notice/",
-      "date": "2026-11-13T20:18:21.000Z",
-      "lang": "en",
-      "titleKo": "이라크 총리, 이란의 꼭두각시들에게 경고",
-      "url": "https://www.fdd.org/analysis/iraqi-prime-minister-puts-iranian-stooges-on-notice/",
-      "body": "Iraqi Prime Minister Ali al-Zaidi’s countercorruption efforts are about more than money. Zaidi is targeting Iran-backed militias by cutting off their financial pipelines to pressure them to disarm. Some...\nZaidi canceled contracts for the check-in counters, car park, and taxi stand at Mosul International Airport on November 7 for connections to armed groups, likely referencing the militias. Three days prior, the Iraqi News Agency reported that the Federal Commission of Integrity was investigating Ministry of Transport contracts benefiting the militias. Tom Barrack, U.S. ambassador to Turkey and special envoy for Syria and Iraq, described the decision on airport contracts as “sovereignty in action.” The Trump administration has made countering the influence of Tehran in Iraq a top priority in engagement with Baghdad, particularly disarming the militias.",
-      "bodyKo": "이라크의 알리 알자이디 총리가 펼치는 반부패 노력은 단순히 돈 문제에 그치지 않는다. 자이디 총리는 이란의 지원을 받는 민병대를 겨냥하여 이들의 자금줄을 차단함으로써 무장 해제를 압박하고 있습니다. 일부...\n자이디 장관은 무장 단체, 즉 민병대와 연관이 있다는 이유로 11월 7일 모술 국제공항의 체크인 카운터, 주차장, 택시 승강장 관련 계약을 취소했다. 3일 전, 이라크 뉴스 통신사는 연방 청렴위원회가 민병대에 이익이 되는 교통부 계약을 조사하고 있다고 보도했다. 터키 주재 미국 대사이자 시리아 및 이라크 특별대표인 톰 배럭(Tom Barrack)은 공항 계약에 대한 결정을 \"매우",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Foundation for Defense of Democracies"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "모술",
-        "km": 375
-      }
-    },
-    {
-      "title": "Exclusive: Leak Forced Iraq’s PM to Call Off Raid on Kataib Hezbollah Stronghold, Sources Say",
-      "source": "الحرة",
-      "link": "https://alhurra.com/en/54564",
-      "date": "2026-11-13T19:35:57.000Z",
-      "lang": "en",
-      "titleKo": "단독: 소식통에 따르면, 정보 유출로 인해 이라크 총리가 카타이브 헤즈볼라의 주요 거점에 대한 급습을 취소했다고 합니다",
-      "url": "https://alhurra.com/en/54564",
-      "body": "Iraqi Prime Minister Ali al-Zaidi postponed a plan to storm Jurf al-Sakhar, a stronghold of Iran-backed Kataib Hezbollah about 60 kilometers (37 miles) southwest of Baghdad, after a senior military commander leaked details of the operation to leaders of the ruling Coordination Framework and the Popular Mobilization Forces (PMF), Iraqi security sources told MBN. The&hellip;\nThe sources declined to identify the military commander, saying only that he held a senior rank and was not authorized to speak publicly.\nThe standoff tests whether Baghdad can move against a faction Washington designates as a terrorist organization. The government has been trying to cut off Kataib Hezbollah’s economic resources, and an Interior Ministry intelligence report, details of which MBN disclosed on Monday , documented the theft of oil from Oil Ministry pipelines in the town since 2021.",
-      "bodyKo": "이라크 보안 소식통이 MBN에 전한 바에 따르면, 알리 알자이디 이라크 총리는 고위 군 지휘관이 작전 세부 정보를 여당인 조율체제(Coordination Framework)와 인민동원군(PMF)의 지도자들에게 유출한 후 바그다드 남서쪽 약 60km(37마일) 지점에 위치한 이란의 지원을 받는 카타이브 헤즈볼라의 거점인 주르프 알사카르를 공격하려는 계획을 연기했습니다.\n소식통은 이 군 지휘관의 신원을 밝히기를 거부했으며, 다만 그가 고위 계급을 지니고 있으며 공개적으로 발언할 권한이 없다고만 밝혔다.\n이 대치는 바그다드가 워싱턴이 테러 조직으로 지정한 파벌에 대해 조치를 취할 수 있는지 여부를 시험하는 것이다. 정부는 카타이브 헤즈볼라의 경제적 자원을 차단하기 위해 노력해 왔으며, MBN이 월요일에 상세히 공개한 내무부 정보 보고서는 2021년부터 이 마을에서 석유부 소유의 송유관에서 석유가 도난당한 사실을 기록하고 있다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "الحرة"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "Iraqi Security Media Cell Says 3 Terrorists Killed in Prde",
       "source": "Kurdistan24",
       "link": "https://www.kurdistan24.net/en/story/952846/iraqi-security-media-cell-says-3-terrorists-killed-in-prde",
@@ -649,44 +917,6 @@
         "act": "",
         "place": "키르쿠크",
         "km": 254
-      }
-    },
-    {
-      "title": "Former Iraqi MP found dead in Lebanon",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
-      "date": "2026-11-13T19:04:31.000Z",
-      "lang": "en",
-      "titleKo": "전직 이라크 의원 레바논에서 시신으로 발견",
-      "url": "https://www.iraqinews.com/iraq/former-iraqi-mp-found-dead-in-lebanon/",
-      "body": "Former Iraqi lawmaker Ahmed al-Alwani. Photo: Al-Alwani’s media office\nBaghdad (IraqiNews.com) – Lebanese and Iraqi authorities have launched an investigation after the body of former Iraqi lawmaker Ahmed al-Alwani was discovered in an apartment in the Lebanese capital, Beirut.\nWhile initial reports from Lebanese media emerged on Tuesday, judicial sources indicate the body was found on Monday evening in the Tariq al-Jadideh neighborhood.\nAuthorities found the body after al-Alwani’s family reported losing contact with him four days earlier.\nAlthough authorities have not yet issued a complete forensic report, media outlets mentioned that al-Alwani was strangled with a curtain cord after being lured to the residence.\nThree suspects who allegedly leased the property were identified by investigators: two Syrian nationals and one Lebanese citizen.",
-      "bodyKo": "**전직 이라크 의원 알마드 알알와니, 베이루트 아파트에서 시신 발견**\n\n바그다드(이라크뉴스닷컴) – 레바논과 이라크 당국이 전직 이라크 의원 아흐마드 알알와니의 시신이 레바논 수도 베이루트의 한 아파트에서 발견된 후 수사를 개시했다.\n\n레바논 언론에서 화요일 초기 보도가 나왔지만, 사법 소식통은 시신이 월요일 저녁 타리크 알자디데 지역에서 발견됐다고 밝혔다.\n\n알알와니의 가족이 4일 전 그와의 연락이 끊겼다고 신고한 후 당국이 시신을 발견했다.\n\n당국이 아직 완전한 법의학 보고서를 발표하지 않았지만, 언론 매체들은 알알와니가 그 주택으로 유인된 후 커튼 줄로 목이 졸렸다고 전했다.\n\n수사관들은 그 부동산을 임차한 것으로 알려진 3명의 용의자를 특정했다. 시리아 국적자 2명과 레바논 국적자 1명이다.",
-      "tried": true,
-      "count": 3,
-      "sources": [
-        "IraqiNews",
-        "Al Jazeera",
-        "ASHARQ AL-AWSAT English"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 전 의원 피살 후, 레바논이 시리아에 용의자 인도 요청",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/amp/news/2026/11/13/after-iraq-ex-mps-killing-lebanon-asks-syria-to-extradite-suspects"
-        },
-        {
-          "titleKo": "이라크, 전직 의원 살해 관련 레바논 파견단 구성",
-          "source": "ASHARQ AL-AWSAT English",
-          "link": "https://english.aawsat.com/arab-world/5340346-iraq-send-delegation-lebanon-over-ex-mp-killing"
-        }
-      ],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
       }
     },
     {
@@ -715,21 +945,28 @@
       }
     },
     {
-      "title": "Iraq establishes special security force to combat oil smuggling, protect pipelines",
-      "source": "Middle East Monitor",
-      "link": "https://www.aa.com.tr/en/middle-east/iraq-establishes-special-security-force-to-combat-oil-smuggling-protect-pipelines/4124638",
+      "title": "Iraq Forms New Energy Police Force To Combat Oil Smuggling",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/952801/iraq-forms-new-energy-police-force-to-combat-oil-smuggling",
       "date": "2026-11-13T17:39:00.000Z",
       "lang": "en",
-      "titleKo": "이라크, 석유 밀수 대응 및 송유관 보호를 위한 특별 보안 부대 창설",
-      "url": "https://www.aa.com.tr/en/middle-east/iraq-establishes-special-security-force-to-combat-oil-smuggling-protect-pipelines/4124638",
-      "body": "New unit to patrol southern desert areas as authorities investigate suspected fuel smuggling in Babil province | Anadolu\nEDITION Middle East Iraq establishes special security force to combat oil smuggling, protect pipelines New unit to patrol southern desert areas as authorities investigate suspected fuel smuggling in Babil province Yakoota Al Ahmad and Mohammad Sio 13 November 2026 • Update : 13 November 2026 Archive ISTANBUL Iraq has established a specialized security force to combat oil smuggling and theft and protect its pipeline network, alongside additional measures to tighten security at oil fields and monitor facilities, an official said Friday.\nLt. Gen. Hamid al-Husseini, director general of Iraq's Energy Police, told the official Iraqi News Agency (INA) that violations were not limited to crude oil pipelines but extended to the country's wider pipeline network.",
-      "bodyKo": "당국이 바빌 주에서 의심되는 연료 밀수를 조사하는 가운데 남부 사막 지역을 순찰할 새로운 부대 | 아나돌루\n에디션 중동 이라크, 석유 밀수 단속 및 송유관 보호를 위한 특별 보안 부대 창설 당국이 바빌 주에서 의심되는 연료 밀수 사건을 조사하는 가운데, 남부 사막 지역을 순찰할 새로운 부대가 편성됨 야쿠타 알 아흐마드(Yakoota Al Ahmad) 및 모하마드 시오(Mohammad Sio) 2026년 11월 13일 • 업데이트: 2026년 11월 13일 아카이브 이스탄불 이라크가 석유 밀수 및 도난을 단속하고 송유관 네트워크를 보호하기 위해 특별 보안 부대를 창설했다. 또한,\n이라크 에너지 경찰청장인 하미드 알후세이니 중장은 이라크 공식 통신사인 이라크 통신(INA)에 \"위반 행위가 원유 파이프라인에만 국한되지 않고 이라크의 광범위한 파이프라인 네트워크로 확대되었다\"고 밝혔다.",
+      "titleKo": "이라크, 석유 밀수를 단속하기 위한 새로운 에너지 경찰 부대 편성",
+      "url": "https://www.kurdistan24.net/en/story/952801/iraq-forms-new-energy-police-force-to-combat-oil-smuggling",
+      "body": "Iraq’s Energy Police formed a new force to combat oil smuggling in the south, saying pipeline attacks fell 90% as the prime minister ordered a probe in Babil.\nERBIL (Kurdistan24) - Iraq&rsquo;s Energy Police Directorate has formed a new force dedicated to combating oil theft and smuggling in the south of the country, its director general said on Friday. He said tough security measures have cut attacks on oil pipelines by 90%.\nDirector General Hamid Hussaini told the Iraqi News Agency (INA) that the new &ldquo;Force to Combat Smuggling and Theft&rdquo; reports directly to him and patrols the deserts continuously to monitor the wide pipeline network.\nHe said the force has already foiled three attempts to install illegal locks to steal oil at the Sabba field in Dhi Qar province.\nHussaini said violations and theft attempts are not limited to crude oil pipelines but affect the entire transport network across the provinces.",
+      "bodyKo": "이라크 에너지 경찰은 남부 지역의 석유 밀수를 단속하기 위해 새로운 부대를 편성했으며, 바빌 주에서 총리가 수사를 지시한 이후 송유관 공격이 90% 감소했다고 밝혔다.\n에르빌(쿠르디스탄24) - 이라크 에너지 경찰국이 이라크 남부 지역에서 석유 절도 및 밀수를 단속하기 위한 새로운 부대를 편성했다고 국장이 금요일에 밝혔다. 그는 강력한 보안 조치로 인해 유전 파이프라인에 대한 공격이 90% 감소했다고 말했다.\n하미드 후세이니(Hamid Hussaini) 사무총장은 이라크 뉴스 통신(INA)과의 인터뷰에서 새로운 \"밀수 및 도난 방지 부대\"가 자신에게 직접 보고하며 광범위한 송유관 네트워크를 감시하기 위해 사막을 지속적으로 순찰하고 있다고 밝혔다.\n그는 이미 디카르 주 사바 유전에서 석유를 훔치기 위해 불법으로 잠금장치를 설치하려는 시도가 세 차례 있었지만 모두 저지했다고 밝혔다.\n후세이니 대변인은 침해 및 도난 시도가 원유 파이프라인에만 국한되지 않고 여러 주에 걸친 전체 수송망에 영향을 미친다고 말했다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
-        "Middle East Monitor"
+        "Middle East Monitor",
+        "Kurdistan24"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "이라크, 석유 밀수 대응 및 송유관 보호를 위한 특별 보안 부대 창설",
+          "source": "Middle East Monitor",
+          "link": "https://www.aa.com.tr/en/middle-east/iraq-establishes-special-security-force-to-combat-oil-smuggling-protect-pipelines/4124638"
+        }
+      ],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -790,31 +1027,6 @@
       }
     },
     {
-      "title": "Iraqi FM says amnesty possible amid Iran talks on Kurdish opposition groups",
-      "source": "The New Region",
-      "link": "https://thenewregion.com/posts/7093",
-      "date": "2026-11-13T13:23:10.000Z",
-      "lang": "en",
-      "titleKo": "이라크 외무장관, 쿠르드족 반정부 단체 관련 이란과의 협상에서 사면 가능성 언급",
-      "url": "https://thenewregion.com/posts/7093",
-      "body": "\"It depends on these negotiations between both sides,\" said Fuad Hussein, noting that there are \"many other ways\" to resolve the issue outside of violence.\nERBIL, Kurdistan Region of Iraq - Iraqi Foreign Minister Fuad Hussein on Friday said that Baghdad, Erbil, and Tehran are negotiating \"many options\" for a potential agreement with Iranian Kurdish opposition groups based in the Kurdistan Region, mentioning an amnesty for members returning to Iran as a potential option.\nMany armed groups from Kurdish-majority western Iran (Rojhelat) have long sought refuge in the Kurdistan Region, where they have established camps and maintain contingents of guerilla fighters that are opposed to the Islamic Republic.\nDuring the US-Israel war on Iran, Tehran conducted myraid airstrikes targeting such dissident forces, and has sought to pressure Iraqi authorities into expelling or clamping down on what it deems a substantial cross-border security threat.",
-      "bodyKo": "푸아드 후세인 장관은 \"양측 간의 협상에 달려 있다\"며 폭력 외에도 문제를 해결할 수 있는 \"다른 방법이 많다\"고 말했다.\n이라크 쿠르드 자치구 에르빌 - 이라크의 푸아드 후세인 외무장관은 17일 바그다드, 에르빌, 테헤란이 쿠르드 자치구에 기반을 둔 이란 쿠르드 반정부 단체들과의 잠재적 합의를 위한 \"다양한 방안\"을 협상하고 있으며, 이란으로 귀환하는 단체 구성원들에 대한 사면이 잠재적 방안 중 하나라고 언급했다.\n쿠르드인이 다수를 차지하는 이란 서부(로제헬라트)의 많은 무장단체는 오랫동안 쿠르드 자치구에 피신해 왔으며, 이곳에 캠프를 세우고 이슬람 공화국에 반대하는 게릴라 전투원 부대를 유지하고 있다.\n이란에 대한 미국-이스라엘 전쟁 동안 테헤란은 이러한 반체제 세력을 겨냥한 수많은 공습을 수행했으며, 이라크 당국이 상당한 국경 간 안보 위협으로 간주하는 세력을 추방하거나 단속하도록 압력을 가하려고 노력했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "The New Region"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "FM reaffirms Egypt's full support for Iraq’s security, stability, sovereignty, territorial integrity",
       "source": "الهيئة العامة للاستعلامات",
       "link": "https://sis.gov.eg/en/media-center/news/fm-reaffirms-egypts-full-support-for-iraq-s-security-stability-sovereignty-territorial-integrity/",
@@ -828,31 +1040,6 @@
       "count": 1,
       "sources": [
         "الهيئة العامة للاستعلامات"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq plans security delegation to help Beirut inquiry into former MP’s death",
-      "source": "London Daily News",
-      "link": "https://www.londondaily.news/iraq-plans-security-delegation-to-help-beirut-inquiry-into-former-mps-death/",
-      "date": "2026-11-13T11:50:53.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 전직 국회의원 사망 사건에 대한 베이루트 수사를 지원하기 위해 보안 대표단 파견 계획",
-      "url": "https://www.londondaily.news/iraq-plans-security-delegation-to-help-beirut-inquiry-into-former-mps-death/",
-      "body": "We're verifying your browser. You'll be redirected shortly.",
-      "bodyKo": "브라우저를 확인하고 있습니다. 잠시 후 리디렉션됩니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "London Daily News"
       ],
       "related": [],
       "tag": "기타",
@@ -972,38 +1159,6 @@
       }
     },
     {
-      "title": "Prime Minister Holds Talks in Antalya with Iraqi President",
-      "source": "الإذاعة الجزائرية |",
-      "link": "https://news.radioalgerie.dz/en/node/98875",
-      "date": "2026-11-13T10:12:03.000Z",
-      "lang": "en",
-      "titleKo": "총리, 안탈리아에서 이라크 대통령과 회담",
-      "url": "https://news.radioalgerie.dz/en/node/98875",
-      "body": "The Prime Minister, Mr. Sifi Ghrieb, held talks today, Thursday, in Antalya (Turkey), with the President of the fraternal Republic of Iraq, Mr. Nizar Mohammed Saeed Amedi, who conveyed to him his sincere fraternal greetings and high appreciation to his brother, the President of the Republic of Algeria, Mr. Abdelmadjid Tebboune.\nAlgeria 11/12/2026 - 11:51 The Prime Minister, Mr. Sifi Ghrieb, held talks today, Thursday, in Antalya (Turkey), with the President of the fraternal Republic of Iraq, Mr. Nizar Mohammed Saeed Amedi, who conveyed to him his sincere fraternal greetings and high appreciation to his brother, the President of the Republic of Algeria, Mr. Abdelmadjid Tebboune.\nThis meeting took place on the sidelines of Mr. Ghrieb's participation, representing the President of the Republic, in the proceedings of the Leaders' Summit of the 31st session of the Conference of the Parties to the United Nations Framework Convention on Climate Change (COP31), held in Antalya on November 11 a",
-      "bodyKo": "시피 그리브 총리는 오늘(목요일) 터키 안탈리아에서 니자르 모하메드 사에드 아메디 이라크 공화국 대통령과 회담을 가졌습니다. 아메디 대통령은 알제리 공화국 대통령인 압델마지드 테분 대통령에게 진심 어린 우호의 인사와 깊은 감사를 전했습니다.\n알제리 2026/11/12 - 11:51 시피 그리브 총리는 오늘(목요일) 터키 안탈리아에서 니자르 모하메드 사이드 아메디 이라크 공화국 대통령과 회담을 가졌습니다. 아메디 대통령은 그리브 총리에게 진심 어린 우호의 인사를 전하고 압델마지드 테분 알제리 공화국 대통령에 대한 깊은 존경을 표했습니다.\n이번 회담은 그리에브 장관이 대한민국 대통령을 대표하여 11월 11일 안탈리아에서 열린 제31차 유엔기후변화협약 당사국총회(COP31) 정상회의에 참석한 자리에서 부대 행사로 진행되었습니다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "Rudaw",
-        "الإذاعة الجزائرية |"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 총리, 카타이브 헤즈볼라 긴장 완화를 위한 노력 속에서 PMF 지도자들과 아메리 회담",
-          "source": "Rudaw",
-          "link": "https://www.rudaw.net/english/categories/iraq/1080145"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "التربية تؤكد انطلاق امتحانات الدور الثالث الأحد المقبل داخل العراق وخارجه",
       "source": "شبكة 964",
       "link": "https://964media.com/736085/",
@@ -1057,344 +1212,6 @@
         "act": "",
         "place": "힐라(바빌)",
         "km": 81
-      }
-    },
-    {
-      "title": "Troops escort Iraq PM’s oil smuggling probe to Jurf al-Sakhar",
-      "source": "964media",
-      "link": "https://en.964media.com/55193/",
-      "date": "2026-11-13T09:12:25.000Z",
-      "lang": "en",
-      "titleKo": "이라크 총리의 석유 밀수 조사단, 군대의 호위를 받으며 주르프 알사카르로 이동",
-      "url": "https://en.964media.com/55193/",
-      "body": "BABIL — A large military force escorting Prime Minister Ali al-Zaidi’s investigative committee reached\nVideo footage showed the deployment at the entrance to the area. The committee and its escort were waiting for more military reinforcements before starting work inside Jurf al-Sakhar, according to information obtained by 964media.\nA document from the Office of the Commander-in-Chief of the Armed Forces sets out the committee’s membership and mandate. It puts the director general of discipline and security at the Popular Mobilization Commission, the state body that runs the Popular Mobilization Forces, in the chair.\nThe PMF is the state-sanctioned umbrella of mostly Shiite armed groups formed in 2014 to fight the Islamic State group.\nThe document, dated Thursday, is marked “secret and personal, to be opened by the addressee only” and signed by Lt. Gen. Abdul Amir al-Shammari, director of the commander-in-chief’s office. It also orders the Federal Police to provide a convoy to protect t",
-      "bodyKo": "바빌 — 알리 알자이디 총리의 조사위원회를 호위하는 대규모 군대가\n동영상에는 해당 지역 입구에 병력이 배치된 모습이 담겼다. 964미디어가 입수한 정보에 따르면, 위원회와 호위대는 주르프 알사카르 내부에서 작업을 시작하기 전에 더 많은 군사 지원을 기다리고 있었다.\n군 최고사령부 사무실에서 발간한 문서에는 위원회의 구성원과 임무가 명시되어 있습니다. 이 문서는 인민동원군을 운영하는 국가 기관인 인민동원위원회(Popular Mobilization Commission)의 기강 및 보안 담당 사무총장을 위원장으로 임명합니다.\nPMF는 2014년 이슬람 국가(IS) 집단과 싸우기 위해 결성된 주로 시아파 무장 단체로 구성된 국가 승인 우산 조직이다.\n목요일자로 작성된 이 문서는 \"비밀 및 개인 문서로, 수신인만 개봉할 것\"이라는 표시가 되어 있으며, 총사령관실 실장인 압둘 아미르 알-샴마리 중장이 서명했다. 또한 연방 경찰에 [내용 누락]을 보호하기 위한 호송대를 제공하도록 명령하고 있다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "964media"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "힐라(바빌)",
-        "km": 81
-      }
-    },
-    {
-      "title": "Ahmed al-Alwani: From Iraq's Protest Front Lines to a Violent Death in Beirut - ASHARQ AL-AWSAT English",
-      "source": "ASHARQ AL-AWSAT English",
-      "link": "https://english.aawsat.com/arab-world/5340336-ahmed-al-alwani-iraqs-protest-front-lines-violent-death-beirut",
-      "date": "2026-11-13T07:56:16.000Z",
-      "lang": "en",
-      "titleKo": "아흐메드 알-알와니: 이라크 시위 최전선에서 베이루트 폭력 사망까지",
-      "url": "https://english.aawsat.com/arab-world/5340336-ahmed-al-alwani-iraqs-protest-front-lines-violent-death-beirut",
-      "body": "Iraqi politician Ahmed al-Alwani, found dead in an apartment in Beirut on Tuesday, lived a political career shaped by the turmoil that engulfed Iraq after 2003. From parliament, he rose to the forefront of protests against former Prime Minister Nouri al-Maliki, only to spend more than 11 years behind bars after a deadly raid on his home in Ramadi. His release in April 2025 marked a return to public life that ended with his killing in the Lebanese capital.\nAl-Alwani belonged to the Albu Alwan tribe, one of the largest in Iraq's western Anbar province, which he represented in parliament. He was a member of the Iraqiya coalition led by former Prime Minister Iyad Allawi, held a doctorate in earth sciences from the University of Baghdad and chaired parliament's economic committee.\nHe emerged as a prominent political figure in late 2012, joining protests that erupted in Anbar before spreading to other predominantly Sunni provinces.",
-      "bodyKo": "이라크 정치인 아흐메드 알-알와니, 베이루트 아파트에서 사망\n\n이라크 정치인 아흐메드 알-알와니가 화요일 베이루트의 한 아파트에서 시신으로 발견됐다. 그는 2003년 이후 이라크를 휩싼 혼란 속에서 정치 경력을 쌓았다. 의회에서 전직 총리 누리 알-말리키에 반대하는 시위의 최전선에 올랐다가, 라마디의 자신의 집에 대한 치명적인 급습 이후 11년 이상을 감옥에서 보냈다. 2025년 4월의 석방은 그의 공직 복귀를 의미했지만, 레바논 수도에서의 살해로 그 삶은 끝났다.\n\n알-알와니는 이라크 서부 안바르주의 가장 큰 부족 중 하나인 알부 알완 부족에 속했으며, 의회에서 이 지역을 대표했다. 전직 총리 이야드 알라위가 이끄는 이라키야 연합의 일원이었고, 바그다드 대학교에서 지구과학 박사학위를 취득했으며, 의회의 경제위원회 위원장을 역임했다.\n\n그는 2012년 말 안바르에서 발생한 시위에 참여하면서 저명한 정치인으로 부상했고, 이 시위는 다른 순니파 다수 지역으로 확산됐다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "ASHARQ AL-AWSAT English"
-      ],
-      "related": [],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "g",
-        "line": "시위 소식 — 장소 확인 필요",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Lebanon asks Syria to hand over 2 suspects in killing of former Iraqi MP — Al Jazeera",
-      "source": "UA.NEWS",
-      "link": "https://ua.news/en/dovkolo-svitu/livan-prosit-siriiu-vidati-2-pidozriuvanikh-u-vbivstvi-eksdeputata-iraku-al-jazeera",
-      "date": "2026-11-13T02:50:28.000Z",
-      "lang": "en",
-      "titleKo": "레바논, 시리아에 전 이라크 국회의원 살해 용의자 2명 인도를 요청 — 알자지라",
-      "url": "https://ua.news/en/dovkolo-svitu/livan-prosit-siriiu-vidati-2-pidozriuvanikh-u-vbivstvi-eksdeputata-iraku-al-jazeera",
-      "body": "Lebanon has asked Syria to detain and hand over two Syrian suspects in the killing of former Iraqi MP Ahmed al-Alwani, who was found dead in a Beirut apartment.\n--> Lebanese law enforcement authorities have asked the Syrian authorities to detain and hand over two Syrian citizens suspected of involvement in the killing of former Iraqi parliament member Ahmed al-Alwani. The politician was found dead in an apartment in Beirut. As Al Jazeera reports , citing an AFP judicial source, preliminary investigation results indicate that al-Alwani was strangled.\nAn AFP source in Lebanon's judicial system said that the identities of the two Syrian suspects are still being established. A Lebanese citizen was also detained as part of the investigation and is being questioned. The investigation is being conducted by the Information Branch of Lebanon's Internal Security Forces under the personal supervision of the country's chief prosecutor, Ahmed Rami al-Hajj.",
-      "bodyKo": "레바논은 시리아에 레바논 베이루트의 한 아파트에서 사망한 채 발견된 이라크 전직 의원 아흐메드 알알와니(Ahmed al-Alwani) 살해 사건의 용의자 2명을 체포해 인도해 달라고 요청했다.\n--> 레바논 사법 당국은 이라크 전 의원인 아흐메드 알알와니(Ahmed al-Alwani) 씨의 살해에 연루된 혐의를 받는 시리아인 2명을 체포하여 인도해 달라고 시리아 당국에 요청했습니다. 이 정치인은 베이루트의 한 아파트에서 사망한 채 발견되었다. 알자지라가 AFP 사법 소식통을 인용해 보도한 바에 따르면, 예비 조사 결과 알알와니가 목 졸려 살해된 것으로 나타났다.\n레바논 사법부의 AFP 소식통은 두 명의 시리아인 용의자의 신원이 아직 확인 중이라고 밝혔습니다. 수사의 일환으로 레바논 시민 한 명도 체포되어 조사를 받고 있다. 이 수사는 레바논 국내 보안군의 정보국이 국가 최고 검사인 아흐메드 라미 알-하지의 직접적인 감독 하에 진행하고 있습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "UA.NEWS"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "수주 받고도 작업은 '멈춤'…한화건설, 이라크선 대금 수령 \"하세월\"",
-      "source": "청년일보",
-      "link": "https://www.youthdaily.co.kr/news/article.html?no=229769",
-      "date": "2026-11-12T23:00:08.000Z",
-      "lang": "ko",
-      "titleKo": "수주 받고도 작업은 '멈춤'…한화건설, 이라크선 대금 수령 \"하세월\"",
-      "url": "https://www.youthdaily.co.kr/news/article.html?no=229769",
-      "body": "【 청년일보 】 한화 건설부문의 수주잔고 절반 이상이 공사 재개와 착공을 기다리는 대형 사업에 묶여 있는 것으로 나타났다. 이라크 비스마야 신도시는 대금 지급이 장기간 끊기며 공사미수금이 늘고 있고, 국내 복합개발사업도 착공 지연과 계약 해지 등으로 사업 불확실성이 커진 것으로 드러났다. 13일 금융감독원 전자공시 시스템에 따르면 올해 6월 말 한화 건설부\n13일 금융감독원 전자공시 시스템에 따르면 올해 6월 말 한화 건설부문의 수주잔고는 21조9천463억원이다. 이 가운데 본격적인 공사 재개를 기다리거나 아직 첫 삽을 뜨지 못한 대형 사업 3곳의 잔고만 11조6천825억원으로, 전체의 53%에 이른다.\n사업별로는 비스마야 신도시·사회기반시설 9조5천623억원, 수서역 환승센터 복합개발 1조3천537억원, 대전역세권 복합개발 7천665억원이다. 수서역(사전공사 제외)과 대전역세권은 6월 말까지 공사 실적이 전혀 잡히지 않았다.\n비스마야는 대금이 아예 끊겼다. 한화가 공시한 계약 진행 내역을 보면 비스마야의 대금 수령액은 지난해와 올해 상반기 모두 0원이다. 누적 수령액은 6조6천965억원에서 멈췄다.\n받지 못한 돈은 불어났다. 별도 기준 비스마야 공사미수금은 지난해 말 3천601억원에서 올해 6월 말 4천212억원으로 반년 새 611억원(17%) 늘었다.\n같은 기간 원·달러 환율이 달러당 1,434.9원에서 1,541.5원으로 오른 영향이 섞였지만, 달러로 환산해도 2억5천만달러에서 2억7천만달러 수준으로 9% 가량 늘었다.\n주택 부문 공사 진행률은 2024년 말 44.92%에서 올해 6월 말 45.40%로, 1년 반 동안 0.48%포인트 오르는 데 그쳤다.",
-      "bodyKo": "【 청년일보 】 한화 건설부문의 수주잔고 절반 이상이 공사 재개와 착공을 기다리는 대형 사업에 묶여 있는 것으로 나타났다. 이라크 비스마야 신도시는 대금 지급이 장기간 끊기며 공사미수금이 늘고 있고, 국내 복합개발사업도 착공 지연과 계약 해지 등으로 사업 불확실성이 커진 것으로 드러났다. 13일 금융감독원 전자공시 시스템에 따르면 올해 6월 말 한화 건설부\n13일 금융감독원 전자공시 시스템에 따르면 올해 6월 말 한화 건설부문의 수주잔고는 21조9천463억원이다. 이 가운데 본격적인 공사 재개를 기다리거나 아직 첫 삽을 뜨지 못한 대형 사업 3곳의 잔고만 11조6천825억원으로, 전체의 53%에 이른다.\n사업별로는 비스마야 신도시·사회기반시설 9조5천623억원, 수서역 환승센터 복합개발 1조3천537억원, 대전역세권 복합개발 7천665억원이다. 수서역(사전공사 제외)과 대전역세권은 6월 말까지 공사 실적이 전혀 잡히지 않았다.\n비스마야는 대금이 아예 끊겼다. 한화가 공시한 계약 진행 내역을 보면 비스마야의 대금 수령액은 지난해와 올해 상반기 모두 0원이다. 누적 수령액은 6조6천965억원에서 멈췄다.\n받지 못한 돈은 불어났다. 별도 기준 비스마야 공사미수금은 지난해 말 3천601억원에서 올해 6월 말 4천212억원으로 반년 새 611억원(17%) 늘었다.\n같은 기간 원·달러 환율이 달러당 1,434.9원에서 1,541.5원으로 오른 영향이 섞였지만, 달러로 환산해도 2억5천만달러에서 2억7천만달러 수준으로 9% 가량 늘었다.\n주택 부문 공사 진행률은 2024년 말 44.92%에서 올해 6월 말 45.40%로, 1년 반 동안 0.48%포인트 오르는 데 그쳤다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "청년일보"
-      ],
-      "related": [],
-      "tag": "한국·외교",
-      "impact": {
-        "lv": "y",
-        "line": "한국·한국 기업 관련 소식 — 한국인 직원 참고",
-        "act": "",
-        "place": "비스마야",
-        "km": 0
-      }
-    },
-    {
-      "title": "Khor Mor attack darkens Iraqi Kurdistan’s divided, one-field grid",
-      "source": "Amwaj.media",
-      "link": "https://amwaj.media/en/media-monitor/khor-mor-attack-darkens-iraqi-kurdistans-divided-one-field-grid",
-      "date": "2026-11-12T21:22:59.000Z",
-      "lang": "en",
-      "titleKo": "호르모르 공격으로 이라크 쿠르드스탄의 분열된 단일 유전 에너지망에 먹구름이 드리우다",
-      "url": "https://amwaj.media/en/media-monitor/khor-mor-attack-darkens-iraqi-kurdistans-divided-one-field-grid",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Amwaj.media"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq Is Finally Writing Its Own Future",
-      "source": "International Policy Digest",
-      "link": "https://intpolicydigest.org/iraq-is-finally-writing-its-own-future/",
-      "date": "2026-11-12T20:56:45.000Z",
-      "lang": "en",
-      "titleKo": "이라크가 마침내 자신의 미래를 써내려가고 있다",
-      "url": "https://intpolicydigest.org/iraq-is-finally-writing-its-own-future/",
-      "body": "As U.S. troops leave Iraq, a former American official reflects on Baghdad's extraordinary past, its resilient people, and the promise of independence.\nIn 2009, I found myself at the center of an unusual diplomatic incident in Baghdad. It was the first hour of the first day after Iraqi authorities regained control of security in the International Zone, better known as the Green Zone, from American and allied forces. I was returning to the International Zone in an American diplomatic vehicle when Iraqi security personnel stopped us at a checkpoint. They wanted to search our vehicle. We declined. As American diplomats, we expected our vehicle to receive the protections afforded under international law. The Iraqi guards, meanwhile, had just assumed responsibility for security and were understandably determined to exercise their newfound authority. For roughly half an hour, we sat there, each side insisting on its position, until diplomacy prevailed and we were allowed to proceed.",
-      "bodyKo": "미군이 이라크에서 철수함에 따라, 한 전직 미국 관료가 바그다드의 비범한 과거, 굴하지 않는 시민들, 그리고 독립에 대한 희망을 되돌아봅니다.\n2009년, 저는 바그다드에서 발생한 이례적인 외교적 사건의 중심에 서게 되었습니다. 그날은 이라크 당국이 미국 및 연합군으로부터 그린존으로 더 잘 알려진 국제 구역의 치안 통제권을 되찾은 첫날의 첫 시간대였습니다. 저는 미국 외교 차량을 타고 국제 구역으로 돌아가던 중 이라크 보안 요원들이 검문소에서 우리를 세웠습니다. 그들은 우리 차량을 수색하려고 했습니다. 우리는 거절했습니다. 미국 외교관으로서 우리는",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "International Policy Digest"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "그린존",
-        "km": 25
-      }
-    },
-    {
-      "title": "Turkish Ambassador: Advanced Cooperation with the Iraqi Government on Security, Energy, and Water Issues",
-      "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://ina.iq/en/politics/53783-turkish-ambassador-advanced-cooperation-with-the-iraqi-government-on-security-energy-and-water-issues.html",
-      "date": "2026-11-12T20:55:23.000Z",
-      "lang": "en",
-      "titleKo": "터키 대사: 안보, 에너지, 수자원 문제에 대한 이라크 정부와의 협력 강화",
-      "url": "https://ina.iq/en/politics/53783-turkish-ambassador-advanced-cooperation-with-the-iraqi-government-on-security-energy-and-water-issues.html",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "وكالة الانباء العراقية (واع)"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq’s security service says its chief did not accuse Kurds over Khor Mor attack",
-      "source": "The Insight International",
-      "link": "https://theinsightinternational.com/iraqi-security-service-says-badri-did-not-accuse-kurds-over-khor-mor-attack/",
-      "date": "2026-11-12T20:11:13.000Z",
-      "lang": "en",
-      "titleKo": "이라크 보안 당국, 쿠르드족을 코르모르 공격의 배후로 지목한 적 없다고 밝혀",
-      "url": "https://theinsightinternational.com/iraqi-security-service-says-badri-did-not-accuse-kurds-over-khor-mor-attack/",
-      "body": "A spokesperson said Basim al-Badri's mention of a possible Kurdish or foreign role in the drone strike on the gas field was a hypothetical example, not an accusation, after the remarks drew an angry response in the Kurdistan Region.\nBAGHDAD, November 12, 2026. Iraq’s National Security Service said on Thursday that its head, Basim al-Badri, had not accused anyone of carrying out Sunday’s drone attack on the Khor Mor gas field, a day after his remarks in London drew an angry response from the Kurdistan Region.\nArshad Hakim, the service’s spokesperson, told Rudaw that Badri’s reference to a possible role by “a Kurdish party” or a foreign party was only a hypothetical example, given in answer to a journalist’s question. “The statement in no way contained an accusation against any party,” he said.",
-      "bodyKo": "바심 알-바드리(Basim al-Badri)가 가스전 드론 공격에 쿠르드족이나 외국 세력이 개입했을 가능성을 언급한 것은 가설적인 예시일 뿐, 비난이 아니었다고 대변인이 밝혔으며, 이 발언은 쿠르드 지역에서 분노를 불러일켰다.\n바그다드, 2026년 11월 12일. 이라크 국가안보국(NSS)은 지난 12일, 바심 알바드리 국장이 지난 10일 코르모르 가스전에서 발생한 드론 공격의 배후로 특정인을 지목하지 않았다고 밝혔다. 이는 알바드리 국장이 런던에서 한 발언에 대해 쿠르드 자치정부가 강하게 반발한 지 하루 만에 나온 입장이다.\n정보국 대변인인 아르샤드 하킴(Arshad Hakim)은 루다우(Rudaw)에 \"쿠르드 정당\"이나 외국 정당의 개입 가능성을 언급한 바드리의 발언은 기자 질문에 대한 답변으로 제시된 가상의 예시에 불과하다고 밝혔습니다. 그는 \"이 발언은 어떤 정당에 대한 비난을 담고 있지 않다\"라고 말했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "The Insight International"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq's Khor Mor gas field suspends output after drone attack, operator says",
-      "source": "The Edge Malaysia",
-      "link": "https://theedgemalaysia.com/node/825034",
-      "date": "2026-11-12T20:06:58.000Z",
-      "lang": "en",
-      "titleKo": "이라크 코르모르 가스전 운영사, 드론 공격 후 가스 생산 중단 발표",
-      "url": "https://theedgemalaysia.com/node/825034",
-      "body": "(Nov 9): Production was halted on Sunday at Iraq's Khor Mor gas field, one of the largest in the Kurdistan region, following a \"suspected\" drone attack, joint field operator Dana Gas said in a statement.\nBURSA SGX Make The Edge Malaysia your preferred source on Google (Nov 9): Production was halted on Sunday at Iraq's Khor Mor gas field, one of the largest in the Kurdistan region, following a \"suspected\" drone attack, joint field operator Dana Gas said in a statement.\nThe company based in the United Arab Emirates said in Monday's statement that it was assessing the damage after dousing a fire sparked by the attack, with no injuries to staff.\nAbout 2.8 GW of power generation in the Kurdistan region was taken out by the attack, the region's electricity ministry said in a statement.\nProduction at Khor Mor, which supplies regional power generation, has repeatedly been disrupted after attacks that Kurdish officials have blamed on Iranian-backed militias.",
-      "bodyKo": "(11월 9일): 쿠르드 지역 최대 가스전 중 하나인 이라크 호르모르 가스전에서 \"의심스러운\" 드론 공격이 발생한 후 일요일에 생산이 중단되었다고 가스전 공동 운영사인 다나 가스가 성명을 통해 밝혔습니다.\nBURSA SGX Make The Edge Malaysia your preferred source on Google (11월 9일): 쿠르드 지역 최대 가스전 중 하나인 이라크의 코르 모르 가스전에서 \"의심스러운\" 드론 공격이 발생한 후 일요일에 가동이 중단되었다고 가스전 공동 운영사인 다나 가스가 성명을 통해 밝혔다.\n아랍에미리트에 본사를 둔 이 회사는 월요일 성명에서 공격으로 촉발된 화재를 진압한 후 피해를 평가하고 있으며 직원들의 부상은 없었다고 밝혔다.\n쿠르드 지역의 전력부(Ministry of Electricity)는 성명을 통해 이번 공격으로 쿠르드 지역에서 약 2.8GW의 전력 생산이 중단되었다고 밝혔다.\n쿠르드 당국이 이란의 지원을 받는 민병대를 공격의 배후로 지목한 바 있는 호르모르 가스전은 지역 전력 생산에 필요한 가스를 공급하는 곳으로, 여러 차례 공격을 받아 생산이 중단된 바 있습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "The Edge Malaysia"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq expects first batch of air defense equipment to arrive soon: Official",
-      "source": "The New Region",
-      "link": "https://thenewregion.com/posts/7088",
-      "date": "2026-11-12T20:03:49.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 곧 첫 번째 방공 장비 도입 예정: 관계자",
-      "url": "https://thenewregion.com/posts/7088",
-      "body": "\"The contracted systems are highly efficient, and some have proven very effective in the conflict under way in the region,\" said Iraqi Air Defense Command chief Muhannad Ghalib al-Asadi.\nERBIL, Kurdistan Region of Iraq &ndash; Iraq&rsquo;s air defense commander said Thursday that the first batch of air defense system equipment is expected to arrive soon, following a review of several proposals as Baghdad moves to strengthen its air defense capabilities.\nIraq has been subject to hundreds of air and drone strikes amid the US-Israeli war on Iran, enduring attacks from both sides of the conflict. The US has targeted Iran-backed Iraqi militias while Iran has struck US military bases and Iranian Kurdish opposition groups based in the Kurdistan Region, with Saudi Arabia and other regional neighbors similarly having launched retaliatory strikes",
-      "bodyKo": "이라크 방공사령부의 무한나드 갈리브 알-아사디(Muhannad Ghalib al-Asadi) 사령관은 \"계약된 시스템은 매우 효율적이며, 일부는 현재 이 지역에서 진행 중인 분쟁에서 매우 효과적인 것으로 입증되었다\"라고 말했다.\n이라크 쿠르드 자치구 에르빌 – 이라크 방공 사령관은 바그다드가 방공 능력을 강화하기 위해 여러 제안을 검토한 후 첫 번째 방공 시스템 장비가 곧 도착할 것으로 예상된다고 11일 밝혔다.\n이라크는 미국-이스라엘의 이란 전쟁 와중에 수백 건의 공습과 드론 공격을 받아 분쟁 양측의 공격을 모두 견뎌내고 있습니다. 미국은 이란이 지원하는 이라크 민병대를 공격 대상으로 삼았고, 이란은 미국 군사 기지와 쿠르드 지역에 주둔하는 이란 쿠르드족 반정부 단체를 공격했으며, 사우디아라비아와 다른 주변국들도 마찬가지로 보복 공격을 가했습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "The New Region"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "إصابة مزارع بانفجار مخلف حربي قديم جنوبي بغداد",
-      "source": "جريدة المدى",
-      "link": "https://almadapaper.net/460960/",
-      "date": "2026-11-12T20:00:17.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 남부에서 농부가 구형 전쟁 폭발물에 맞아 부상",
-      "url": "https://almadapaper.net/460960/",
-      "body": "بغداد/المدى أعلنت هيئة الإعلام الأمني، اليوم الخميس، إصابة مزارع بحروق إثر انفجار مخلف حربي قديم داخل إحدى المزارع في ناحية اليوسفية جنوبي العاصمة بغداد. وقال رئيس الهيئة سعد معن، في بيان تلقته (المدى)، إن «مخلفاً حربياً قديماً انفجر أثناء ممارسة أحد المزارعين عمله، ما أسفر عن إصابته بحروق»، مشيراً إلى نقله إلى المستشفى لتلقي العلاج. [&hellip;]\nمن جانبها، أوضحت قيادة عمليات بغداد أن الحادث وقع عند الساعة الثانية والنصف من بعد ظهر اليوم، داخل منطقة زراعية في ناحية اليوسفية، مؤكدة أن الانفجار ناجم عن مخلف حربي قديم، وليس حادثاً أمنياً.\nوأضافت القيادة أن التوضيح جاء عقب تداول منصات على مواقع التواصل الاجتماعي أنباء عن سماع دوي انفجار في الناحية، داعية إلى اعتماد المعلومات الصادرة عن الجهات الأمنية الرسمية.",
-      "bodyKo": "**바그다드 남부 유스피야에서 구형 전쟁 잔해 폭발로 농민 화상**\n\n보안언론청이 목요일 발표한 바에 따르면 바그다드 남부 유스피야 지역의 한 농장 내에서 구형 전쟁 잔해가 폭발해 농민이 화상을 입었다. 보안언론청 청장 사드 무안은 성명에서 \"한 농민이 작업 중 구형 전쟁 잔해가 폭발해 화상을 입었으며, 치료를 위해 병원으로 옮겨졌다\"고 밝혔다.\n\n바그다드 작전사령부는 사건이 오후 2시 30분경 유스피야 지역의 농업 지대에서 발생했으며, 폭발이 구형 전쟁 잔해로 인한 것이지 보안 사건이 아니라고 설명했다.\n\n작전사령부는 소셜미디어 플랫폼에서 해당 지역에서 폭발음을 들었다는 소식이 퍼진 직후 이같이 설명했으며, 공식 보안 기관에서 발표한 정보에만 의존할 것을 촉구했다.",
-      "tried": true,
-      "count": 3,
-      "sources": [
-        "العراق نيوز",
-        "جريدة المدى",
-        "وكالة الانباء العراقية (واع)"
-      ],
-      "related": [
-        {
-          "titleKo": "바그다드 남부에서 불발탄 폭발로 농부가 부상을 입었습니다.",
-          "source": "العراق نيوز",
-          "link": "https://www.iraqnews-in.com/167746/%D9%85%D8%B2%D8%A7%D8%B1%D8%B9-%D9%8A%D8%AA%D8%B9%D8%B1%D8%B6-%D9%84%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D8%AC%D8%B1%D8%A7%D8%A1-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%B0%D8%AE%D9%8A%D8%B1%D8%A9-%D8%BA/"
-        },
-        {
-          "titleKo": "보안당국 \"바그다드 남부에서 구형 폭발물로 시민 부상\"",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://ina.iq/ar/security/279227-.html"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "r",
-        "line": "현장 가까운 치안 사건 (바그다드)",
-        "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "العراق يبحث استيراد الغاز الأذري عبر تركيا",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%A8%D8%AD%D8%AB-%D8%A7%D8%B3%D8%AA%D9%8A%D8%B1%D8%A7%D8%AF-%D8%A7%D9%84%D8%BA%D8%A7%D8%B2-%D8%A7%D9%84-%D8%B0%D8%B1%D9%8A-%D8%B9%D8%A8%D8%B1-%D8%AA%D8%B1%D9%83%D9%8A%D8%A7",
-      "date": "2026-11-12T19:56:57.000Z",
-      "lang": "ar",
-      "titleKo": "이라크, 터키를 경유한 아제르바이잔 가스 수입 모색",
-      "url": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%A8%D8%AD%D8%AB-%D8%A7%D8%B3%D8%AA%D9%8A%D8%B1%D8%A7%D8%AF-%D8%A7%D9%84%D8%BA%D8%A7%D8%B2-%D8%A7%D9%84-%D8%B0%D8%B1%D9%8A-%D8%B9%D8%A8%D8%B1-%D8%AA%D8%B1%D9%83%D9%8A%D8%A7",
-      "body": "بحث وكيل وزارة النفط لشؤون الغاز، عزت صابر إسماعيل، يوم الخميس، مع نائب رئيس شركة النفط الوطنية الأذرية زائوور قهرمانوڤ، فرص تعزيز التعاون المشترك في قطاع النفط والغاز، وإمكانية توريد الغاز الطبيعي الأذربيجاني إلى العراق عبر الأراضي التركية.\nوذكرت وزارة النفط في بيان ورد لوكالة شفق نيوز، أن اللقاء بحث مجالات جديدة للشراكة والاستثمار وتبادل الخبرات بين الجانبين، بما يسهم في تطوير صناعة النفط والغاز وتعزيز العلاقات الثنائية بين البلدين.\nوأكد إسماعيل، بحسب البيان، حرص الوزارة على توسيع التعاون مع الشركات العالمية الرصينة والاستفادة من إمكاناتها الفنية والتكنولوجية، بما يدعم خطط تطوير قطاع الغاز وزيادة الإنتاج الوطني والاستثمار الأمثل للغاز المصاحب.\nوأضاف أن الوزارة تعمل على تنويع مصادر تجهيز الغاز وتعزيز أمن الطاقة، بما يضمن تلبية احتياجات محطات توليد الكهرباء، مشيراً إلى أهمية بحث الخيارات الفنية واللوجستية المتاحة أمام توريد الغاز الأذربيجاني إلى العراق عبر تركيا.",
-      "bodyKo": "목요일, 이라크 석유부 가스 담당 차관 이자트 사베르 이스마일은 아제르바이잔 국영 석유회사 부사장 자우르 카흐라마노프와 석유 및 가스 부문에서의 공동 협력 강화 기회와 터키 영토를 통해 아제르바이잔 천연가스를 이라크에 공급할 가능성에 대해 논의했습니다.\n석유부는 샤팍 뉴스 통신사에 보낸 성명에서 양측이 석유 및 가스 산업 발전과 양국 간 양자 관계 강화에 기여할 수 있도록 파트너십, 투자 및 경험 교류의 새로운 분야에 대해 논의했다고 밝혔습니다.\n성명에 따르면 이스마일 장관은 가스 부문 개발 계획을 지원하고 국내 생산을 늘리며 부수 가스를 최적으로 투자하기 위해 신중한 국제 기업과의 협력을 확대하고 이들의 기술적, 공학적 역량을 활용하고자 하는 부처의 의지를 강조했습니다.\n그는 또한 이라크 전력 발전소의 수요를 충족시키기 위해 가스 처리 공급원을 다각화하고 에너지 안보를 강화하기 위해 노력하고 있다고 덧붙이며, 터키를 경유하여 아제르바이잔 가스를 이라크에 공급할 수 있는 기술적, 물류적 대안을 모색하는 것이 중요하다고 지적했습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "انفجار مخلف حربي من مخلفات الحروب يصيب مواطناً جنوبي بغداد",
-      "source": "المعلومة",
-      "link": "https://almaalomah.me/news/150028/security/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%85%D8%AE%D9%84%D9%81-%D8%AD%D8%B1%D8%A8%D9%8A-%D9%85%D9%86-%D9%85%D8%AE%D9%84%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D8%A8-%D9%8A%D8%B5%D9%8A%D8%A8-%D9%85%D9%88%D8%A7%D8%B7%D9%86%D8%A7-%D8%AC%D9%86%D9%88%D8%A8%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF",
-      "date": "2026-11-12T18:49:58.000Z",
-      "lang": "ar",
-      "titleKo": "바그다드 남부에서 전쟁 유산 폭발로 주민 피해",
-      "url": "https://almaalomah.me/news/150028/security/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%85%D8%AE%D9%84%D9%81-%D8%AD%D8%B1%D8%A8%D9%8A-%D9%85%D9%86-%D9%85%D8%AE%D9%84%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D8%A8-%D9%8A%D8%B5%D9%8A%D8%A8-%D9%85%D9%88%D8%A7%D8%B7%D9%86%D8%A7-%D8%AC%D9%86%D9%88%D8%A8%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF",
-      "body": "المعلومة/ بغداد.. أعلنت هيئة الإعلام الأمني، اليوم الخميس، إصابة مواطن جراء انفجار مخلف حربي قديم في إحدى المزارع بناحية اليوسفية جنوبي العاصمة بغداد. وقال رئيس هيئة الإعلام الأمني، الفريق سعد معن، في بيان تلقته وكالة /المعلومة/، إن \"مخلفاً حربياً قديماً انفجر في إحدى المزارع أثناء ممارسة أحد المزارعين عمله، ما أسفر عن إصابته بحروق نقل على إثرها إلى المستشفى لتلقي العلاج\". وأضاف أن \"الانفجار وقع في الساعة الثانية والنصف من بعد ظهر اليوم، في منطقة زراعية بناحية اليوسفية جنوبي العاصمة، نتيجة انفجار مخلف حربي قديم، ما أدى إلى إصابة مواطن أثناء عمله، جرى نقله إلى المستشفى لتلقي العلاج\". وأشار إلى أن \"التوضيح جاء على خلفية تداول بعض منصات التواصل الاجتماعي أنباء عن سماع دوي انفجار في ناحية اليوسفية جنوبي بغداد\". انتهى 25",
-      "bodyKo": "보안언론청, 바그다드 남부 구식 전쟁 유산물 폭발로 주민 부상\n\n바그다드=보안언론청은 26일 바그다드 남부 유수피야 지역의 한 농장에서 구식 전쟁 유산물이 폭발해 주민이 부상했다고 발표했다. 사드 무안 보안언론청 청장은 통신사에 보낸 성명에서 \"한 농민이 일을 하던 중 구식 전쟁 유산물이 폭발해 화상을 입었으며, 이후 병원으로 옮겨져 치료를 받고 있다\"고 말했다. 그는 \"폭발은 오후 2시 30분경 바그다드 남부 유수피야 지역의 농업 지역에서 발생했으며, 구식 전쟁 유산물의 폭발로 인해 일 중이던 주민이 부상해 병원으로 옮겨져 치료를 받고 있다\"고 덧붙였다. 청장은 \"이 설명은 바그다드 남부 유수피야 지역에서 폭발음을 들었다는 소식이 일부 소셜미디어 플랫폼에서 퍼진 것을 배경으로 나온 것\"이라고 지적했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "المعلومة"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "r",
-        "line": "현장 가까운 치안 사건 (바그다드)",
-        "act": "현장 밖 이동 자제 · 보안팀 공지와 출퇴근 경로 확인",
-        "place": "바그다드",
-        "km": 27
       }
     }
   ],
