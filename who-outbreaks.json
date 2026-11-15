@@ -9,7 +9,15 @@
   "items": [
     {
       "kind": "WHO 소식",
-      "title": "Put health in the treaty”: youth delegates at the Global Model WHO 2026 adopt declaration on plastics and health",
+      "title": "WHO issues first guidelines on type 1 diabetes for adults",
+      "date": "2026-11-14T13:30:42Z",
+      "summary": "More than 100 years after the discovery of insulin, many people living with type 1 diabetes still cannot access the insulin and care they need to survive. Marking World Diabetes Day 2026, WHO has issued its first guidelines on the diagnosis and management of type 1 diabetes in adults, with recommendations designed to apply across all settings, including low-resource, emergency and humanitarian settings.",
+      "link": "https://www.who.int/news/item/14-11-2026-who-issues-first-guidelines-on-type-1-diabetes-for-adults",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Put health in the treaty: youth delegates at the Global Model WHO 2026 adopt declaration on plastics and health",
       "date": "2026-11-13T19:53:00Z",
       "summary": "This week at WHO headquarters in Geneva, more than 400 young leaders from over 50 countries and all six WHO regions called on governments to protect human health from the preventable harms of plastics.",
       "link": "https://www.who.int/news/item/13-11-2026-put-health-in-the-treaty---youth-delegates-at-the-global-model-who-2026-adopt-declaration-on-plastics-and-health",
@@ -136,14 +144,6 @@
       "donId": "2026-DON625"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Civil society discusses its role in strengthening trust in science",
-      "date": "2026-11-06T14:54:00Z",
-      "summary": "The WHO Civil Society Commission and WHO Science Department brought together non-State actors to explore how civil society can help strengthen trust in science, counter health misinformation and support the use of evidence. Participants emphasized community engagement, inclusive research, trusted communication and stronger partnerships as key to bringing science closer to people and informing health decisions.",
-      "link": "https://www.who.int/news/item/06-11-2026-civil-society-discusses-its-role-in-strengthening-trust-in-science",
-      "newsType": "News"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Yellow fever - WHO African Region",
       "date": "2026-11-06T09:01:14Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON617"
     }
   ],
-  "generatedAt": "2026-11-15T03:42:26.948570+00:00"
+  "generatedAt": "2026-11-15T13:07:32.057713+00:00"
 }
