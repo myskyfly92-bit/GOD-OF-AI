@@ -1,6 +1,226 @@
 {
-  "generatedAt": "2026-11-15T02:00:08.100Z",
+  "generatedAt": "2026-11-15T09:36:57.875Z",
   "items": [
+    {
+      "title": "Iraqi top court dismisses request to suspend Kurdistan Parliament",
+      "source": "The New Region",
+      "link": "https://thenewregion.com/posts/7111",
+      "date": "2026-11-15T09:19:25.000Z",
+      "lang": "en",
+      "titleKo": "이라크 최고 법원, 쿠르드 의회 해산 요청 기각",
+      "url": "https://thenewregion.com/posts/7111",
+      "body": "The New Region has learned that Iraq’s top court rejected a request seeking to temporarily suspend the Kurdistan Parliament, and no temporary judicial suspension will be imposed.\nERBIL, Kurdistan Region of Iraq &ndash; Iraq&rsquo;s Federal Supreme Court on Sunday dismissed a Patriotic Union of Kurdistan (PUK) and New Generation Movement (NGM) request for an injunction to halt the Kurdistan Parliament following its reactivation, The New Region has learned.\nThe PUK and NGM filed complaints seeking an injunction to halt the Kurdistan Parliament after it was reactivated earlier in November.\nThe parliament was reactivated after 52 lawmakers attended the session and elected its presidency, with quorum met after several lawmakers from the PUK, NGM, and other opposition blocs attended, in defiance of their party lines.",
+      "bodyKo": "The New Region은 이라크 최고 법원이 쿠르드스탄 의회를 일시적으로 중지하려는 요청을 기각했으며, 일시적인 사법 중지가 내려지지 않을 것이라는 소식을 전했습니다.\n이라크 쿠르드 자치구 에르빌 – 이라크 연방 대법원이 지난 10일 쿠르드스탄 애국연합(PUK)과 신세대운동(NGM)이 제기한 쿠르드스탄 의회 재가동 중지 가처분 신청을 기각했다고 The New Region이 전했다.\nPUK와 NGM은 11월 초 쿠르드 의회가 재가동된 후 의회 활동을 중단시키기 위한 가처분 신청을 제기했다.\nPUK, NGM 및 기타 야당 소속 의원들이 당론을 거스르고 회의에 참석하면서 정족수가 충족되었고, 52명의 의원이 회의에 참석하여 의장을 선출하면서 의회가 재개되었다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "The New Region",
+        "Kurdistan24"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 연방대법원, 쿠르드 의회 해산 청구 기각",
+          "source": "Kurdistan24",
+          "link": "https://www.kurdistan24.net/en/story/953132/iraqs-federal-supreme-court-rejects-bid-to-suspend-kurdistan-parliament"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
+      }
+    },
+    {
+      "title": "Iraqi Prime Minister Puts Iranian Stooges on Notice",
+      "source": "Foundation for Defense of Democracies",
+      "link": "https://www.fdd.org/analysis/iraqi-prime-minister-puts-iranian-stooges-on-notice/",
+      "date": "2026-11-15T08:36:49.000Z",
+      "lang": "en",
+      "titleKo": "이라크 총리, 이란의 꼭두각시들에게 경고",
+      "url": "https://www.fdd.org/analysis/iraqi-prime-minister-puts-iranian-stooges-on-notice/",
+      "body": "Iraqi Prime Minister Ali al-Zaidi’s countercorruption efforts are about more than money. Zaidi is targeting Iran-backed militias by cutting off their financial pipelines to pressure them to disarm. Some...\nZaidi canceled contracts for the check-in counters, car park, and taxi stand at Mosul International Airport on November 7 for connections to armed groups, likely referencing the militias. Three days prior, the Iraqi News Agency reported that the Federal Commission of Integrity was investigating Ministry of Transport contracts benefiting the militias. Tom Barrack, U.S. ambassador to Turkey and special envoy for Syria and Iraq, described the decision on airport contracts as “sovereignty in action.” The Trump administration has made countering the influence of Tehran in Iraq a top priority in engagement with Baghdad, particularly disarming the militias.",
+      "bodyKo": "이라크의 알리 알자이디 총리가 펼치는 반부패 노력은 단순히 돈 문제에 그치지 않는다. 자이디 총리는 이란의 지원을 받는 민병대를 겨냥하여 이들의 자금줄을 차단함으로써 무장 해제를 압박하고 있습니다. 일부...\n자이디 장관은 무장 단체, 즉 민병대와 연관이 있다는 이유로 11월 7일 모술 국제공항의 체크인 카운터, 주차장, 택시 승강장 관련 계약을 취소했다. 3일 전, 이라크 뉴스 통신사는 연방 청렴위원회가 민병대에 이익이 되는 교통부 계약을 조사하고 있다고 보도했다. 터키 주재 미국 대사이자 시리아 및 이라크 특별대표인 톰 배럭(Tom Barrack)은 공항 계약에 대한 결정을 \"매우",
+      "tried": true,
+      "count": 14,
+      "sources": [
+        "Ahram Online",
+        "Khaama Press",
+        "Arab Times Kuwait News",
+        "Al Jazeera",
+        "Modern Ghana",
+        "UA.NEWS"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 총리, 친이란 세력 거점지에서 석유 밀수 사건으로 공무원 해임 - 지역",
+          "source": "Ahram Online",
+          "link": "https://english.ahram.org.eg/NewsContent/2/8/582506/World/Region/Iraq-PM-sacks-officials-over-oil-smuggling-in-proI.aspx"
+        },
+        {
+          "titleKo": "이라크 총리, 석유 밀수 혐의로 공무원 9명 해임",
+          "source": "Khaama Press",
+          "link": "https://www.khaama.com/iraq-pm-dismisses-nine-officials-oil-smuggling/"
+        },
+        {
+          "titleKo": "이라크 총리, 이란이 지원하는 민병대 거점에서 석유 밀수 사건과 관련해 공무원 9명 해임",
+          "source": "Arab Times Kuwait News",
+          "link": "https://www.arabtimesonline.com/news/iraq-pm-dismisses-9-officials-over-oil-smuggling-in-iran-backed-militia-stronghold/"
+        },
+        {
+          "titleKo": "이라크 총리, 친이란 거점지에서 석유 밀수 사건으로 9명의 공무원을 해임하다",
+          "source": "Al Jazeera",
+          "link": "https://www.aljazeera.com/news/2026/11/15/iraq-pm-sacks-nine-officials-over-oil-smuggling-in-pro-iran-stronghold"
+        },
+        {
+          "titleKo": "이라크 총리, 석유 밀수 용의자 기소 명령",
+          "source": "Modern Ghana",
+          "link": "https://www.modernghana.com/videonews/aljazeera/1/754252"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "모술",
+        "km": 375
+      }
+    },
+    {
+      "title": "Kurdistan PM calls Khor Mor attack “unforgivable crime”",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Kurdistan/Kurdistan-PM-calls-Khor-Mor-attack-unforgivable-crime",
+      "date": "2026-11-15T08:26:55.000Z",
+      "lang": "en",
+      "titleKo": "샤파크 뉴스..쿠르드스탄 총리, 코르모르 공격을 \"용서할 수 없는 범죄\"라고 규정",
+      "url": "https://shafaq.com/en/Kurdistan/Kurdistan-PM-calls-Khor-Mor-attack-unforgivable-crime",
+      "body": "Shafaq News- Erbil Kurdistan Region Prime Minister Masrour Barzani on Sunday condemned the November 8 attack on the Khor Mor gas field as an &ldquo;unforgivable crime&rdquo; against all Iraqis, urgin\nSpeaking at the launch of the second phase of Erbil&rsquo;s Green Belt Project, Barzani criticized attacks on the Kurdistan Region&rsquo;s energy infrastructure, citing disruptions to essential services and the Runaki program, which aims to provide round-the-clock electricity.\nHe highlighted the project&rsquo;s role in reducing air and water pollution and expanding green spaces, comparing the strike to past efforts to destroy trees in the Kurdistan Region and make life harder for residents.\nUnidentified drones struck the Khor Mor gas field in Al-Sulaymaniyah&rsquo;s Chamchamal district on November 8, sparking a fire that was later extinguished and forcing UAE-based Dana Gas to halt production, the company said the following day.",
+      "bodyKo": "샤파크 뉴스 - 에르빌 쿠르드 자치지역의 마수르 바르자니 총리는 11월 8일 호르모르 가스전이 공격받은 사건을 모든 이라크인을 상대로 한 \"용서할 수 없는 범죄\"라고 비난하며,\n바르자니 대통령은 에르빌 그린벨트 프로젝트 2단계 착공식에서 연설하며, 필수 서비스와 24시간 전력 공급을 목표로 하는 루나키(Runaki) 프로그램의 중단을 언급하며 쿠르드 지역의 에너지 인프라에 대한 공격을 비판했다.\n그는 이 프로젝트가 대기 및 수질 오염을 줄이고 녹지 공간을 확대하는 데 있어 갖는 역할을 강조하며, 이번 파업을 과거 쿠르드 지역에서 나무를 파괴하고 주민들의 삶을 더 힘들게 만들었던 시도들과 비교했습니다.\n미확인 드론이 11월 8일 술라이마니야의 참차말 지구에 있는 코르모르 가스전을 공격하여 화재가 발생했고, 나중에 진화되었지만 아랍에미리트(UAE)에 본사를 둔 다나 가스(Dana Gas)가 생산을 중단하게 되었다고 이 회사는 다음 날 밝혔다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
+      }
+    },
+    {
+      "title": "Iraq PM Faces Growing Test in Confrontation With Kataib Hezbollah, Asharq Al-Awsat Reports",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/953029/iraq-pm-faces-growing-test-in-confrontation-with-kataib-hezbollah-asharq-al-awsat-reports",
+      "date": "2026-11-15T07:40:03.000Z",
+      "lang": "en",
+      "titleKo": "이라크 총리, 카타이브 헤즈볼라와의 대립 속에서 점점 더 큰 시험에 직면",
+      "url": "https://www.kurdistan24.net/en/story/953029/iraq-pm-faces-growing-test-in-confrontation-with-kataib-hezbollah-asharq-al-awsat-reports",
+      "body": "Experts say backing down could carry a heavy political cost for Ali al-Zaidi, while the standoff exposes the government's difficulties in bringing armed factions under state control\nERBIL (Kurdistan24) &mdash; Iraqi Prime Minister Ali al-Zaidi is facing an increasingly difficult confrontation with the powerful Iran-aligned Kataib Hezbollah, as a dispute involving alleged oil smuggling, the group's influence in the strategic Jurf al-Sakhar area, and the government's efforts to bring weapons under state control raises questions about Baghdad's ability to challenge armed factions, according to a report published by Asharq Al-Awsat on Saturday.\nThe report said tensions had intensified over the previous two weeks, with the government and Kataib Hezbollah exchanging public accusations amid broader efforts to establish state control over weapons held by armed groups.",
+      "bodyKo": "전문가들은 알리 알자이디 총리가 물러서는 것이 큰 정치적 부담이 될 수 있으며, 이번 대치 상황은 무장 세력을 국가의 통제하에 두는 데 있어 정부가 겪고 있는 어려움을 드러낸다고 말합니다.\n에르빌(쿠르디스탄24) — 이라크의 알리 알자이디 총리가 강력한 친이란 세력인 카타이브 헤즈볼라와 갈수록 심각한 대립을 겪고 있다. 석유 밀수 의혹, 이 단체가 전략적 요충지인 주르프 알사카르 지역에서 행사하는 영향력, 무기를 국가 통제하에 두려는 정부의 노력 등을 둘러싼 분쟁으로 인해 바그다드가 무장 세력에 맞설 수 있는 능력에 의문이 제기되고 있다고 아샤르크 알아우사트가 지난 11일 보도했다.\n보고서는 지난 2주 동안 무장 단체가 보유한 무기에 대한 국가 통제를 확립하기 위한 광범위한 노력 속에서 정부와 카타이브 헤즈볼라가 공개적으로 비난을 주고받으며 긴장이 고조되었다고 전했다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Al-Monitor",
+        "Kurdistan24"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 총리가 무력 충돌을 유발하지 않고 카타이브 헤즈볼라를 제어할 수 있을까?",
+          "source": "Al-Monitor",
+          "link": "https://www.al-monitor.com/originals/2026/11/can-iraq-pm-rein-kataib-hezbollah-without-triggering-armed-conflict"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraqi PM escalates Jurf Al Sakhar smuggling crackdown, sacks security chiefs and refers suspects to court",
+      "source": "www.thenationalnews.com",
+      "link": "https://www.thenationalnews.com/news/mena/2026/11/15/iraqi-pm-escalates-jurf-al-sakhar-smuggling-crackdown-sacks-security-chiefs-and-refers-suspects-to-court/",
+      "date": "2026-11-15T05:43:16.000Z",
+      "lang": "en",
+      "titleKo": "이라크 총리, 주르프 알 사카르 밀수 단속 강화, 보안 책임자 해임 및 용의자 법원 기소",
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/15/iraqi-pm-escalates-jurf-al-sakhar-smuggling-crackdown-sacks-security-chiefs-and-refers-suspects-to-court/",
+      "body": "Move follows leaked intelligence report alleging years of pipeline tapping in Jurf Al Sakhar, a Kataib Hezbollah militia stronghold\nIraqi Prime Minister Ali Al Zaidi has ordered all suspects in a major oil-smuggling case to be referred to court and dismissed nine senior security and administrative officials, in the most significant escalation yet in his confrontation with Iran-backed militias.\nThe order followed an emergency security meeting late on Saturday to review the findings of a committee set up to investigate the Jurf Al Sakhar case, which began with a leaked intelligence report this week.\nThe committee, which visited the area controlled by the influential Kataib Hezbollah militia, confirmed the findings of a report by the Federal Intelligence and Investigations Agency on oil smuggling operations and the existence of refineries, the government said.",
+      "bodyKo": "이번 조치는 카타이브 헤즈볼라 민병대의 주요 거점인 주르프 알 사카르에서 수년간 송유관 도유가 이뤄졌다는 정보 보고서가 유출된 데 따른 것이다.\n알리 알 자이디 이라크 총리가 대규모 석유 밀수 사건의 모든 용의자를 법정에 회부하도록 지시하고 9명의 고위 안보 및 행정 관리들을 해임하면서 이란이 지원하는 민병대와의 대치 상황이 지금까지 가장 심각한 국면으로 치닫고 있다.\n이 명령은 이번 주 유출된 정보 보고서로 시작된 주르프 알 사카르 사건을 조사하기 위해 구성된 위원회의 조사 결과를 검토하기 위해 토요일 늦게 열린 긴급 안보 회의에 이어 내려졌다.\n정부는 영향력 있는 카타이브 헤즈볼라 민병대가 장악하고 있는 해당 지역을 방문한 위원회가 석유 밀수 작전과 정유소 존재에 관한 연방 정보수사청(Federal Intelligence and Investigations Agency)의 보고서 내용을 확인했다고 밝혔다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "www.thenationalnews.com"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraqi Military Spokesman: Punishing Oil Smugglers In Jurf al-Sakhr Will Be A Deterrent",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/953060/iraqi-military-spokesman-punishing-oil-smugglers-in-jurf-al-sakhr-will-be-a-deterrent",
+      "date": "2026-11-15T04:19:33.000Z",
+      "lang": "en",
+      "titleKo": "이라크 군 대변인: 주르프 알사크르에서 석유 밀수업자를 처벌하는 것은 억지 효과가 있을 것",
+      "url": "https://www.kurdistan24.net/en/story/953060/iraqi-military-spokesman-punishing-oil-smugglers-in-jurf-al-sakhr-will-be-a-deterrent",
+      "body": "The prime minister dismissed nine officials and referred all suspects to the judiciary, after a committee confirmed intelligence reports of oil theft in the area south of Baghdad\nERBIL (Kurdistan 24) - The spokesman for Iraq&rsquo;s commander-in-chief of the armed forces, Sabah al-Numan, said on Saturday that holding accountable and punishing those involved in oil smuggling in Jurf al-Sakhr, also known as Jurf al-Nasr, will be a deterrent to anyone who covets public wealth.\nHe told Iraqi state media that the Higher Judicial Council fully supports the government&rsquo;s measures.\nNuman said the commander-in-chief&rsquo;s office had received reports about the waste of public funds and the theft of oil through smuggling in Jurf al-Sakhr, a sensitive area in Babil province through which the strategic pipeline carrying Basra crude to the Daura refinery in Baghdad and the Musayyib power station passes.",
+      "bodyKo": "이라크 총리는 바그다드 남부 지역에서 석유 절도가 발생했다는 정보기관의 보고를 위원회가 확인한 후 9명의 공무원을 해임하고 모든 용의자를 사법부에 회부했습니다.\n에르빌(쿠르디스탄 24) - 이라크 군 최고사령관의 대변인인 사바 알-누만(Sabah al-Numan)은 지난 11일 토요일, 주르프 알-나스르(Jurf al-Nasr)라고도 불리는 주르프 알-사크르(Jurf al-Sakhr)에서 석유 밀수를 저지른 자들을 처벌하고 책임을 묻는 것이 공공 자산을 탐내는 모든 사람에게 경고가 될 것이라고 밝혔습니다.\n그는 이라크 국영 언론에 최고 사법위원회(Higher Judicial Council)가 정부의 조치를 전폭적으로 지지한다고 밝혔다.\n누만 장관은 최고사령관실이 바실라 원유를 바그다드의 다우라 정유공장과 무사이브 발전소로 이송하는 전략적 송유관이 지나는 바빌 주(Babil province)의 민감한 지역인 주르프 알사크르(Jurf al-Sakhr)에서 공적 자금 낭비와 밀수를 통한 석유 도난에 대한 보고를 받았다고 밝혔다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Funeral held for former Iraq MP killed in Beirut",
+      "source": "アラブニュース",
+      "link": "https://www.arabnews.com/middle-east/funeral-held-for-former-iraq-mp-killed-in-beirut-3011908",
+      "date": "2026-11-15T04:11:36.000Z",
+      "lang": "en",
+      "titleKo": "베이루트에서 살해된 전 이라크 국회의원의 장례식이 거행되다",
+      "url": "https://www.arabnews.com/middle-east/funeral-held-for-former-iraq-mp-killed-in-beirut-3011908",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "アラブニュース"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
     {
       "title": "이라크 방공망 재편에 한국산 ‘천궁-Ⅱ’...3조7000억원 계약 이행 주목",
       "source": "더퍼블릭",
@@ -27,62 +247,6 @@
       }
     },
     {
-      "title": "Iraqi Prime Minister Puts Iranian Stooges on Notice",
-      "source": "Foundation for Defense of Democracies",
-      "link": "https://www.fdd.org/analysis/iraqi-prime-minister-puts-iranian-stooges-on-notice/",
-      "date": "2026-11-14T23:20:00.000Z",
-      "lang": "en",
-      "titleKo": "이라크 총리, 이란의 꼭두각시들에게 경고",
-      "url": "https://www.fdd.org/analysis/iraqi-prime-minister-puts-iranian-stooges-on-notice/",
-      "body": "Iraqi Prime Minister Ali al-Zaidi’s countercorruption efforts are about more than money. Zaidi is targeting Iran-backed militias by cutting off their financial pipelines to pressure them to disarm. Some...\nZaidi canceled contracts for the check-in counters, car park, and taxi stand at Mosul International Airport on November 7 for connections to armed groups, likely referencing the militias. Three days prior, the Iraqi News Agency reported that the Federal Commission of Integrity was investigating Ministry of Transport contracts benefiting the militias. Tom Barrack, U.S. ambassador to Turkey and special envoy for Syria and Iraq, described the decision on airport contracts as “sovereignty in action.” The Trump administration has made countering the influence of Tehran in Iraq a top priority in engagement with Baghdad, particularly disarming the militias.",
-      "bodyKo": "이라크의 알리 알자이디 총리가 펼치는 반부패 노력은 단순히 돈 문제에 그치지 않는다. 자이디 총리는 이란의 지원을 받는 민병대를 겨냥하여 이들의 자금줄을 차단함으로써 무장 해제를 압박하고 있습니다. 일부...\n자이디 장관은 무장 단체, 즉 민병대와 연관이 있다는 이유로 11월 7일 모술 국제공항의 체크인 카운터, 주차장, 택시 승강장 관련 계약을 취소했다. 3일 전, 이라크 뉴스 통신사는 연방 청렴위원회가 민병대에 이익이 되는 교통부 계약을 조사하고 있다고 보도했다. 터키 주재 미국 대사이자 시리아 및 이라크 특별대표인 톰 배럭(Tom Barrack)은 공항 계약에 대한 결정을 \"매우",
-      "tried": true,
-      "count": 11,
-      "sources": [
-        "Modern Ghana",
-        "Arab Times Kuwait News",
-        "UA.NEWS",
-        "Anadolu Ajansı",
-        "Türkiye Today",
-        "Rudaw"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 총리, 석유 밀수 용의자 기소 명령",
-          "source": "Modern Ghana",
-          "link": "https://www.modernghana.com/videonews/aljazeera/1/754252"
-        },
-        {
-          "titleKo": "이라크 총리, 이란이 지원하는 민병대 거점에서 석유 밀수 사건과 관련해 공무원 9명 해임",
-          "source": "Arab Times Kuwait News",
-          "link": "https://www.arabtimesonline.com/news/iraq-pm-dismisses-9-officials-over-oil-smuggling-in-iran-backed-militia-stronghold/"
-        },
-        {
-          "titleKo": "이라크 총리, 연료 밀수 사건과 관련해 공무원 9명 해임",
-          "source": "UA.NEWS",
-          "link": "https://ua.news/en/dovkolo-svitu/premier-iraku-ali-al-zayidi-zvilniv-deviatokh-posadovtsiv-anadolu-agency"
-        },
-        {
-          "titleKo": "이라크 총리, 연료 밀수 사건과 관련해 사법부 기소 및 해임 명령",
-          "source": "Anadolu Ajansı",
-          "link": "https://aa.com.tr/en/middle-east/iraqi-premier-orders-judicial-referrals-dismissals-in-fuel-smuggling-case/4125434"
-        },
-        {
-          "titleKo": "이라크 총리, 헤즈볼라의 주요 거점에서 석유 밀수 사건과 관련해 9명의 공무원을 해임하다",
-          "source": "Türkiye Today",
-          "link": "https://www.turkiyetoday.com/region/iraqi-pm-dismisses-nine-officials-over-oil-smuggling-in-hezbollah-stronghold-3232409"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "모술",
-        "km": 375
-      }
-    },
-    {
       "title": "حادثة التون كوبري تعيد ملف الفراغات الأمنية إلى الواجهة.. دعوات لتنسيق عسكري بين بغداد وأربيل لمواجهة داعش",
       "source": "جريدة المدى",
       "link": "https://almadapaper.net/461153/",
@@ -90,7 +254,7 @@
       "lang": "ar",
       "titleKo": "알툰 코프리 사건으로 보안 공백 문제가 다시 부상... 바그다드와 에르빌 간 군사 협력을 통한 IS 대응 촉구",
       "url": "https://almadapaper.net/461153/",
-      "body": "بغداد/ سوزان طاهرأعادت حادثة التون كوبري في محافظة كركوك المخاوف من استغلال تنظيم داعش للفراغات الأمنية بين القوات الاتحادية وقوات البيشمركة في المناطق المتنازع عليها، وسط دعوات إلى تعزيز التنسيق العسكري والاستخباري بين بغداد وأربيل، ونشر قوات مشتركة لسد الثغرات التي تتيح لعناصر التنظيم التنقل بين المحافظات. ورغم انتهاء العملية بمقتل ثلاثة عناصر من داعش [&hellip;]\n--> نشر في: 15 نوفمبر, 2026: 12:07 ص بغداد/ سوزان طاهر أعادت حادثة التون كوبري في محافظة كركوك المخاوف من استغلال تنظيم داعش للفراغات الأمنية بين القوات الاتحادية وقوات البيشمركة في المناطق المتنازع عليها، وسط دعوات إلى تعزيز التنسيق العسكري والاستخباري بين بغداد وأربيل، ونشر قوات مشتركة لسد الثغرات التي تتيح لعناصر التنظيم التنقل بين المحافظات. ورغم انتهاء العملية بمقتل ثلاثة عناصر من داعش واعتقال الشخص الذي تولى نقلهم، يحذر مختصون أمنيون من استمرار التهديد في المناطق الريفية والوعرة، فيما يؤكد قيادي في الحشد العشائري أن تحركات التنظيم مكشوفة وتحت سيطرة القوات الأمنية. وشهدت ناحية التون كوبري، التابعة لمحافظة كركوك والواقعة ",
+      "body": "بغداد/ سوزان طاهرأعادت حادثة التون كوبري في محافظة كركوك المخاوف من استغلال تنظيم داعش للفراغات الأمنية بين القوات الاتحادية وقوات البيشمركة في المناطق المتنازع عليها، وسط دعوات إلى تعزيز التنسيق العسكري والاستخباري بين بغداد وأربيل، ونشر قوات مشتركة لسد الثغرات التي تتيح لعناصر التنظيم التنقل بين المحافظات. ورغم انتهاء العملية بمقتل ثلاثة عناصر من داعش [&hellip;]\n--> نشر في: 15 نوفمبر, 2026: 12:07 ص بغداد/ سوزان طاهر أعادت حادثة التون كوبري في محافظة كركوك المخاوف من استغلال تنظيم داعش للفراغات الأمنية بين القوات الاتحادية وقوات البيشمركة في المناطق المتنازع عليها، وسط دعوات إلى تعزيز التنسيق العسكري والاستخباري بين بغداد وأربيل، ونشر قوات مشتركة لسد الثغرات التي تتيح لعناصر التنظيم التنقل بين المحافظات. ورغم انتهاء العملية بمقتل ثلاثة عناصر من داعش واعتقال الشخص الذي تولى نقلهم، يحذر مختصون أمنيون من استمرار التهديد في المناطق الريفية والوعرة، فيما يؤكد قيادي في الحشد العشائري أن تحركات التنظيم مكشوفة وتحت سيطرة القوات الأمنية. وشهدت ناحية التون كوبري، التابعة لمحافظة كركوك والواقعة",
       "bodyKo": "바그다드/수잔 타헤르 키르쿠크 주에서 발생한 알툰 코프리 사건으로 인해 다에시가 분쟁 지역에서 연방군과 페슈메르가군 간의 보안 공백을 악용할 것이라는 우려가 다시 제기되었으며, 바그다드와 에르빌 간의 군사 및 정보 협력을 강화하고 다에시 대원들이 주들 간에 이동할 수 있는 틈새를 메우기 위해 합동 병력을 배치해야 한다는 목소리가 나오고 있다. 작전이 ISIS 대원 3명을 사살하면서 종료되었음에도 불구하고 […]\n--> 게시일: 2026년 11월 15일, 오전 12:07 바그다드/수잔 타헤르 키르쿠크 주에서 발생한 알툰 쿠프리 사건은 분쟁 지역에서 연방군과 페슈메르가군 간의 보안 공백을 이슬람 국가(IS)가 악용할 것이라는 우려를 다시 불러일으켰다. 이에 따라 바그다드와 에르빌 간의 군사 및 정보 협력을 강화하고, IS 대원들이 주들 사이를 이동할 수 있는 틈새를 메우기 위해 합동 병력을 배치해야 한다는 목소리가 나오고 있다. 작전이 ISIS 대원 3명을 사살하고 이들을 수송한 인물을 체포하면서 종료되었음에도 불구하고, 보안 전문가들은 시골 지역에서 위협이 지속되고 있다고 경고한다.",
       "tried": true,
       "count": 1,
@@ -118,7 +282,7 @@
       "body": "This is a potential turning point in Iraq. Iraq has sent troops to the Jurf al-Sakhar area over the weekend.",
       "bodyKo": "이것은 이라크에서 잠재적인 전환점이 될 수 있습니다. 이라크는 지난 주말 주르프 알사카르 지역에 군대를 파견했습니다.",
       "tried": true,
-      "count": 3,
+      "count": 2,
       "sources": [
         "UA.NEWS",
         "The Jerusalem Post"
@@ -128,11 +292,6 @@
           "titleKo": "이라크, 석유 밀수 의혹 속 주르프 알사크르에 병력 배치 — 예루살렘 포스트",
           "source": "UA.NEWS",
           "link": "https://ua.news/en/dovkolo-svitu/irak-napraviv-viiska-do-dzhurf-as-sakhra-na-tli-pidozr-u-naftovii-kontrabandi-jerusalem-post"
-        },
-        {
-          "titleKo": "이라크군, 석유 밀수 수사 와중에 주르프 알사카르에 배치",
-          "source": "The Jerusalem Post",
-          "link": "https://www.jpost.com/middle-east/article-914883"
         }
       ],
       "tag": "치안·테러",
@@ -351,63 +510,6 @@
       }
     },
     {
-      "title": "Iraq PM Faces Growing Test in Confrontation With Kataib Hezbollah, Asharq Al-Awsat Reports",
-      "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/en/story/953029/iraq-pm-faces-growing-test-in-confrontation-with-kataib-hezbollah-asharq-al-awsat-reports",
-      "date": "2026-11-14T17:59:00.000Z",
-      "lang": "en",
-      "titleKo": "이라크 총리, 카타이브 헤즈볼라와의 대립 속에서 점점 더 큰 시험에 직면",
-      "url": "https://www.kurdistan24.net/en/story/953029/iraq-pm-faces-growing-test-in-confrontation-with-kataib-hezbollah-asharq-al-awsat-reports",
-      "body": "Experts say backing down could carry a heavy political cost for Ali al-Zaidi, while the standoff exposes the government's difficulties in bringing armed factions under state control\nERBIL (Kurdistan24) &mdash; Iraqi Prime Minister Ali al-Zaidi is facing an increasingly difficult confrontation with the powerful Iran-aligned Kataib Hezbollah, as a dispute involving alleged oil smuggling, the group's influence in the strategic Jurf al-Sakhar area, and the government's efforts to bring weapons under state control raises questions about Baghdad's ability to challenge armed factions, according to a report published by Asharq Al-Awsat on Saturday.\nThe report said tensions had intensified over the previous two weeks, with the government and Kataib Hezbollah exchanging public accusations amid broader efforts to establish state control over weapons held by armed groups.",
-      "bodyKo": "전문가들은 알리 알자이디 총리가 물러서는 것이 큰 정치적 부담이 될 수 있으며, 이번 대치 상황은 무장 세력을 국가의 통제하에 두는 데 있어 정부가 겪고 있는 어려움을 드러낸다고 말합니다.\n에르빌(쿠르디스탄24) — 이라크의 알리 알자이디 총리가 강력한 친이란 세력인 카타이브 헤즈볼라와 갈수록 심각한 대립을 겪고 있다. 석유 밀수 의혹, 이 단체가 전략적 요충지인 주르프 알사카르 지역에서 행사하는 영향력, 무기를 국가 통제하에 두려는 정부의 노력 등을 둘러싼 분쟁으로 인해 바그다드가 무장 세력에 맞설 수 있는 능력에 의문이 제기되고 있다고 아샤르크 알아우사트가 지난 11일 보도했다.\n보고서는 지난 2주 동안 무장 단체가 보유한 무기에 대한 국가 통제를 확립하기 위한 광범위한 노력 속에서 정부와 카타이브 헤즈볼라가 공개적으로 비난을 주고받으며 긴장이 고조되었다고 전했다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "Kurdistan24",
-        "الحرة"
-      ],
-      "related": [
-        {
-          "titleKo": "단독: 소식통에 따르면, 정보 유출로 인해 이라크 총리가 카타이브 헤즈볼라의 주요 거점에 대한 급습을 취소했다고 합니다",
-          "source": "الحرة",
-          "link": "https://alhurra.com/en/54564"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Prime Minister Holds Talks in Antalya with Iraqi President",
-      "source": "الإذاعة الجزائرية |",
-      "link": "https://news.radioalgerie.dz/en/node/98875",
-      "date": "2026-11-14T17:59:00.000Z",
-      "lang": "en",
-      "titleKo": "총리, 안탈리아에서 이라크 대통령과 회담",
-      "url": "https://news.radioalgerie.dz/en/node/98875",
-      "body": "The Prime Minister, Mr. Sifi Ghrieb, held talks today, Thursday, in Antalya (Turkey), with the President of the fraternal Republic of Iraq, Mr. Nizar Mohammed Saeed Amedi, who conveyed to him his sincere fraternal greetings and high appreciation to his brother, the President of the Republic of Algeria, Mr. Abdelmadjid Tebboune.\nAlgeria 11/12/2026 - 11:51 The Prime Minister, Mr. Sifi Ghrieb, held talks today, Thursday, in Antalya (Turkey), with the President of the fraternal Republic of Iraq, Mr. Nizar Mohammed Saeed Amedi, who conveyed to him his sincere fraternal greetings and high appreciation to his brother, the President of the Republic of Algeria, Mr. Abdelmadjid Tebboune.\nThis meeting took place on the sidelines of Mr. Ghrieb's participation, representing the President of the Republic, in the proceedings of the Leaders' Summit of the 31st session of the Conference of the Parties to the United Nations Framework Convention on Climate Change (COP31), held in Antalya on November 11 a",
-      "bodyKo": "시피 그리브 총리는 오늘(목요일) 터키 안탈리아에서 니자르 모하메드 사에드 아메디 이라크 공화국 대통령과 회담을 가졌습니다. 아메디 대통령은 알제리 공화국 대통령인 압델마지드 테분 대통령에게 진심 어린 우호의 인사와 깊은 감사를 전했습니다.\n알제리 2026/11/12 - 11:51 시피 그리브 총리는 오늘(목요일) 터키 안탈리아에서 니자르 모하메드 사이드 아메디 이라크 공화국 대통령과 회담을 가졌습니다. 아메디 대통령은 그리브 총리에게 진심 어린 우호의 인사를 전하고 압델마지드 테분 알제리 공화국 대통령에 대한 깊은 존경을 표했습니다.\n이번 회담은 그리에브 장관이 대한민국 대통령을 대표하여 11월 11일 안탈리아에서 열린 제31차 유엔기후변화협약 당사국총회(COP31) 정상회의에 참석한 자리에서 부대 행사로 진행되었습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "الإذاعة الجزائرية |"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "Baghdad bust nets 5kg of meth, three traffickers",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/en/Security/Baghdad-bust-nets-5kg-of-meth-three-traffickers",
@@ -418,11 +520,17 @@
       "body": "Shafaq News- Baghdad Iraqi security forces arrested three international drug traffickers and seized five kilograms of crystal methamphetamine in two separate operations in Baghdad, the General Dire\nAccording to a statement, Al-Rusafa narcotics units tracked the suspects through intelligence-led surveillance before locating and arresting them.\nEarlier today, Iraqi military intelligence also detained four drug suspects in two operations, three in Al-Anbar and one in Maysan.\nIn its 2026 World Drug Report, the UN Office on Drugs and Crime (UNODC) said partial data from individual seizures suggested that methamphetamine seizures in 2025 had likely increased across almost all countries in the Near and Middle East, including Iraq.",
       "bodyKo": "샤파크 뉴스 - 바그다드 이라크 보안군은 바그다드에서 두 차례에 걸친 별도의 작전을 통해 국제 마약 밀매자 3명을 체포하고 크리스털 메탐페타민 5kg을 압수했다고\n성명에 따르면, 알루사파 마약 단속반은 정보에 기반한 감시를 통해 용의자들을 추적한 후 이들을 찾아 체포했다.\n오늘 이른 아침, 이라크 군사 정보부는 두 차례의 작전을 통해 마약 용의자 4명을 체포했으며, 이 중 3명은 안바르에서, 1명은 마이산에서 체포되었다.\n유엔 마약범죄사무소(UNODC)는 2026년 세계 마약 보고서에서 이라크를 포함한 근동 및 중동 지역 거의 모든 국가에서 2025년 메탐페타민 압수량이 증가했을 가능성이 있음을 시사하는 개별 압수 건에 대한 부분적 데이터를 발표했다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "샤파크 뉴스.. 바그다드에서 메트암페타민 5kg과 마약 밀매자 3명 검거",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Security/Baghdad-bust-nets-5kg-of-meth-three-traffickers"
+        }
+      ],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -430,6 +538,31 @@
         "act": "",
         "place": "바그다드",
         "km": 27
+      }
+    },
+    {
+      "title": "Dana Gas says Khor Mor remains shut as Iraqi parliament launches probe",
+      "source": "Rudaw",
+      "link": "https://rudaw.net/english/categories/economic/1080159",
+      "date": "2026-11-14T14:19:24.000Z",
+      "lang": "en",
+      "titleKo": "다나 가스, 이라크 의회가 조사에 착수함에 따라 코르 모르 가스전이 여전히 폐쇄 상태라고 밝혀",
+      "url": "https://rudaw.net/english/categories/economic/1080159",
+      "body": "Dana Gas said on Saturday that the Khor Mor gas facility remains unable to produce gas due to significant damage sustained in Sunday's attack, as Iraq’s parliament formed an investigative committee to",
+      "bodyKo": "다나 가스는 지난 16일, 지난 10일 발생한 공격으로 인해 심각한 피해를 입은 코르 모르 가스 시설이 여전히 가스를 생산할 수 없는 상태라고 밝혔다. 한편, 이라크 의회는",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
       }
     },
     {
@@ -612,6 +745,37 @@
       }
     },
     {
+      "title": "سفارة جمهورية العراق في بيروت",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://mofa.gov.iq/beirut/?p=7780",
+      "date": "2026-11-14T09:41:15.000Z",
+      "lang": "ar",
+      "titleKo": "베이루트 주재 이라크 공화국 대사관",
+      "url": "https://mofa.gov.iq/beirut/?p=7780",
+      "body": "التقى السفير محمد رضا الحسيني، يوم الجمعة الموافق 13 تشرين الثاني ٢٠٢٦، وزيرة التربية والتعليم العالي في الجمهورية اللبنانية السيدة ريما كرامي، في مقر الوزارة ببيروت. وجرى خلال اللقاء بحث سبل تعزيز العلاقات الثنائية بين جمهورية العراق والجمهورية اللبنانية، وتبادل الجانبان وجهات النظر بشأن آفاق التعاون التربوي والعلمي والأكاديمي بين البلدين، وسبل تعزيز التواصل والتنسيق بين المؤسسات المعنية بما يخدم المصالح المشتركة للبلدين الشقيقين.",
+      "bodyKo": "2026년 11월 13일 금요일, 모하메드 레자 알-후세이니 대사는 베이루트의 교육부 청사에서 레바논 공화국의 교육 및 고등교육부 장관인 리마 카라미(Rima Karami) 여사를 만났다. 회담에서는 이라크 공화국과 레바논 공화국 간의 양자 관계를 강화할 수 있는 방안을 논의했으며, 양측은 두 나라 간의 교육, 과학 및 학술 협력 전망과 두 형제 국가의 공동 이익을 증진하기 위한 관련 기관 간의 소통과 협력을 강화할 수 있는 방안에 대해 의견을 교환했다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "وزارة الخارجية العراقية"
+      ],
+      "related": [
+        {
+          "titleKo": "글래스고 주재 이라크 공화국 영사관",
+          "source": "وزارة الخارجية العراقية",
+          "link": "https://mofa.gov.iq/glasgcon/2026/11/13/659/"
+        }
+      ],
+      "tag": "한국·외교",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "ما حقيقة إعلان عيد الاستقلال العراقي عطلة رسمية؟ إجازة في هذا البلد",
       "source": "أخبار العالم اليوم",
       "link": "https://www.almashhad.com/article/459217420284850-entertainment/697660530675139-%D9%85%D8%A7-%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%B9%D8%B7%D9%84%D8%A9-%D8%B1%D8%B3%D9%85%D9%8A%D8%A9-%D8%A5%D8%AC%D8%A7%D8%B2%D8%A9-%D9%81%D9%8A-%D9%87%D8%B0%D8%A7-%D8%A7%D9%84%D8%A8%D9%84%D8%AF/",
@@ -761,32 +925,25 @@
       }
     },
     {
-      "title": "하루 460만 배럴…이라크 10월 생산 9월보다 54만 배럴 늘어",
-      "source": "토큰포스트",
-      "link": "https://www.tokenpost.kr/amp/news/economy/438030",
+      "title": "이라크, 10월 원유 생산 하루 460만 배럴…OPEC+ 할당량 초과 - 뉴스 및 통계",
+      "source": "IndexBox",
+      "link": "https://www.indexbox.io/ko/blog/iraqs-october-crude-output-hits-46-million-barrels-per-day-highest-since-2019/",
       "date": "2026-11-14T04:43:01.000Z",
       "lang": "ko",
-      "titleKo": "하루 460만 배럴…이라크 10월 생산 9월보다 54만 배럴 늘어",
-      "url": "https://www.tokenpost.kr/amp/news/economy/438030",
-      "body": "이라크의 10월 원유 생산량이 하루 평균 460만 배럴로 늘었다. 9월보다 하루 54만 배럴 증가했다.국제에너지기구(IEA)는 11월 원유시장 보고서에서 9월 생산량을 하루 406만 배럴로 집계했다. 보고서 표에 실린 이라크의 OPEC+ 목표치는...\n사우디아라비아의 10월 생산량은 하루 999만 배럴로 전월보다 106만 배럴 늘었다. 쿠웨이트도 하루 158만 배럴에서 203만 배럴로 증가했다.\n세계 전체 석유 공급량은 10월 하루 1억540만 배럴로 전월보다 230만 배럴 많았다. 이는 세계 공급을 합산한 수치로, 이라크 한 나라의 원유 생산량과 집계 범위가 다르다.\n오만을 제외한 걸프 지역의 10월 석유 수출량은 하루 1840만 배럴이었다. 전쟁 전 수준보다 26% 적은 규모다.\n이 가운데 원유 수출은 하루 1500만 배럴로 전쟁 전 수준의 82%까지 회복했다. 이 수치는 걸프 지역 원유 수출량으로, 호르무즈 해협 통과량을 뜻하지 않는다.\nIEA의 10월 보고서에 실린 호르무즈 해협 통과량은 9월 기준 하루 1090만 배럴이다. 8월보다 하루 370만 배럴 늘어난 수치다. (IEA 10월 원유시장 보고서)\nIEA의 호르무즈 자료에서 2025년 해협을 통과한 원유는 하루 1495만 배럴, 석유제품은 493만 배럴이었다. 합계 1987만 배럴은 세계 해상 석유 교역의 약 4분의 1에 해당한다. (IEA 호르무즈 해협 자료)\n이라크와 쿠웨이트는 석유 수출의 대부분을 호르무즈 해협에 의존한다. IEA는 국내와 일본도 이 해협을 지나는 원유 흐름에 특히 의존한다고 설명했다.\n본지는 앞서 호르무즈 통항 횟수가 전쟁 전보다 약 70% 줄고 사우디 선적이 일부 재개된 흐름 을 전했다. 이번 생산·수출 통계는 해협 통항량과 별도로 살펴야 한다.",
-      "bodyKo": "이라크의 10월 원유 생산량이 하루 평균 460만 배럴로 늘었다. 9월보다 하루 54만 배럴 증가했다.국제에너지기구(IEA)는 11월 원유시장 보고서에서 9월 생산량을 하루 406만 배럴로 집계했다. 보고서 표에 실린 이라크의 OPEC+ 목표치는...\n사우디아라비아의 10월 생산량은 하루 999만 배럴로 전월보다 106만 배럴 늘었다. 쿠웨이트도 하루 158만 배럴에서 203만 배럴로 증가했다.\n세계 전체 석유 공급량은 10월 하루 1억540만 배럴로 전월보다 230만 배럴 많았다. 이는 세계 공급을 합산한 수치로, 이라크 한 나라의 원유 생산량과 집계 범위가 다르다.\n오만을 제외한 걸프 지역의 10월 석유 수출량은 하루 1840만 배럴이었다. 전쟁 전 수준보다 26% 적은 규모다.\n이 가운데 원유 수출은 하루 1500만 배럴로 전쟁 전 수준의 82%까지 회복했다. 이 수치는 걸프 지역 원유 수출량으로, 호르무즈 해협 통과량을 뜻하지 않는다.\nIEA의 10월 보고서에 실린 호르무즈 해협 통과량은 9월 기준 하루 1090만 배럴이다. 8월보다 하루 370만 배럴 늘어난 수치다. (IEA 10월 원유시장 보고서)\nIEA의 호르무즈 자료에서 2025년 해협을 통과한 원유는 하루 1495만 배럴, 석유제품은 493만 배럴이었다. 합계 1987만 배럴은 세계 해상 석유 교역의 약 4분의 1에 해당한다. (IEA 호르무즈 해협 자료)\n이라크와 쿠웨이트는 석유 수출의 대부분을 호르무즈 해협에 의존한다. IEA는 국내와 일본도 이 해협을 지나는 원유 흐름에 특히 의존한다고 설명했다.\n본지는 앞서 호르무즈 통항 횟수가 전쟁 전보다 약 70% 줄고 사우디 선적이 일부 재개된 흐름 을 전했다. 이번 생산·수출 통계는 해협 통항량과 별도로 살펴야 한다.",
+      "titleKo": "이라크, 10월 원유 생산 하루 460만 배럴…OPEC+ 할당량 초과",
+      "url": "https://www.indexbox.io/ko/blog/iraqs-october-crude-output-hits-46-million-barrels-per-day-highest-since-2019/",
+      "body": "이라크는 10월 하루 460만 배럴을 생산해 2019년 이후 최고치를 기록했으며 OPEC+ 할당량을 약 17만 배럴 초과했다. 사우디아라비아와 쿠웨이트도 호르무즈 해협 물동량 증가에 힘입어 생산을 늘렸다.\n이라크는 10월 하루 460만 배럴의 원유를 생산했다. 이는 2019년 이후 최고 수준으로, 오일프라이스닷컴이 인용한 국제에너지기구(IEA) 월간 보고서 데이터에 따른 것이다. OPEC 내 두 번째 산유국인 이라크의 생산량은 9월보다 하루 54만 배럴 증가했다.\n이라크는 10월 OPEC+ 할당량을 하루 약 17만 배럴 초과했다. 이는 IEA 11월 석유시장 보고서의 수치를 근거로 한 것이다. 쿠웨이트와 사우디아라비아도 10월 원유 생산량을 9월 수준보다 늘렸는데, 이는 더 많은 물량의 원유가 호르무즈 해협을 통해 소형 유조선으로 운송된 뒤 오만만에서 초대형 유조선으로 환적된 데 따른 것이다.\n쿠웨이트는 생산량을 9월 하루 158만 배럴에서 10월 하루 203만 배럴로 끌어올렸으나, OPEC+ 상한보다는 여전히 하루 약 65만 배럴 낮은 수준이었다. OPEC 최대 산유국이자 실질적 지도국인 사우디아라비아는 IEA 추정치에 따르면 생산량을 9월 하루 893만 배럴에서 하루 999만 배럴로 약 100만 배럴 늘렸으며, OPEC+ 할당량보다는 하루 48만 배럴 낮았다.\n사우디아라비아는 별도로 OPEC에 10월 하루 1,056만 3,000배럴을 생산했다고 통보했다. 이는 전쟁 이전 수준에 가까우며 할당량인 하루 약 1,050만 배럴을 소폭 웃도는 수치다. 사우디아라비아는 OPEC 월간 보고서에서 생산 증가분 가운데 일부가 재고로 들어갔기 때문에 시장 공급은 생산량만큼 늘지 않았다고 밝혔다.",
+      "bodyKo": "이라크는 10월 하루 460만 배럴을 생산해 2019년 이후 최고치를 기록했으며 OPEC+ 할당량을 약 17만 배럴 초과했다. 사우디아라비아와 쿠웨이트도 호르무즈 해협 물동량 증가에 힘입어 생산을 늘렸다.\n이라크는 10월 하루 460만 배럴의 원유를 생산했다. 이는 2019년 이후 최고 수준으로, 오일프라이스닷컴이 인용한 국제에너지기구(IEA) 월간 보고서 데이터에 따른 것이다. OPEC 내 두 번째 산유국인 이라크의 생산량은 9월보다 하루 54만 배럴 증가했다.\n이라크는 10월 OPEC+ 할당량을 하루 약 17만 배럴 초과했다. 이는 IEA 11월 석유시장 보고서의 수치를 근거로 한 것이다. 쿠웨이트와 사우디아라비아도 10월 원유 생산량을 9월 수준보다 늘렸는데, 이는 더 많은 물량의 원유가 호르무즈 해협을 통해 소형 유조선으로 운송된 뒤 오만만에서 초대형 유조선으로 환적된 데 따른 것이다.\n쿠웨이트는 생산량을 9월 하루 158만 배럴에서 10월 하루 203만 배럴로 끌어올렸으나, OPEC+ 상한보다는 여전히 하루 약 65만 배럴 낮은 수준이었다. OPEC 최대 산유국이자 실질적 지도국인 사우디아라비아는 IEA 추정치에 따르면 생산량을 9월 하루 893만 배럴에서 하루 999만 배럴로 약 100만 배럴 늘렸으며, OPEC+ 할당량보다는 하루 48만 배럴 낮았다.\n사우디아라비아는 별도로 OPEC에 10월 하루 1,056만 3,000배럴을 생산했다고 통보했다. 이는 전쟁 이전 수준에 가까우며 할당량인 하루 약 1,050만 배럴을 소폭 웃도는 수치다. 사우디아라비아는 OPEC 월간 보고서에서 생산 증가분 가운데 일부가 재고로 들어갔기 때문에 시장 공급은 생산량만큼 늘지 않았다고 밝혔다.",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "IndexBox",
-        "토큰포스트"
+        "IndexBox"
       ],
-      "related": [
-        {
-          "titleKo": "이라크, 10월 원유 생산 하루 460만 배럴…OPEC+ 할당량 초과",
-          "source": "IndexBox",
-          "link": "https://www.indexbox.io/ko/blog/iraqs-october-crude-output-hits-46-million-barrels-per-day-highest-since-2019/"
-        }
-      ],
+      "related": [],
       "tag": "경제·유가",
       "impact": {
         "lv": "g",
-        "line": "현장 직접 영향 낮음",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
         "act": "",
         "place": "",
         "km": null
@@ -940,238 +1097,6 @@
         "act": "",
         "place": "키르쿠크",
         "km": 254
-      }
-    },
-    {
-      "title": "قنصلية جمهورية العراق في غلاسكو",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://mofa.gov.iq/glasgcon/2026/11/13/659/",
-      "date": "2026-11-13T18:34:47.000Z",
-      "lang": "ar",
-      "titleKo": "글래스고 주재 이라크 공화국 영사관",
-      "url": "https://mofa.gov.iq/glasgcon/2026/11/13/659/",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "وزارة الخارجية العراقية"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq Forms New Energy Police Force To Combat Oil Smuggling",
-      "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/en/story/952801/iraq-forms-new-energy-police-force-to-combat-oil-smuggling",
-      "date": "2026-11-13T17:39:00.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 석유 밀수를 단속하기 위한 새로운 에너지 경찰 부대 편성",
-      "url": "https://www.kurdistan24.net/en/story/952801/iraq-forms-new-energy-police-force-to-combat-oil-smuggling",
-      "body": "Iraq’s Energy Police formed a new force to combat oil smuggling in the south, saying pipeline attacks fell 90% as the prime minister ordered a probe in Babil.\nERBIL (Kurdistan24) - Iraq&rsquo;s Energy Police Directorate has formed a new force dedicated to combating oil theft and smuggling in the south of the country, its director general said on Friday. He said tough security measures have cut attacks on oil pipelines by 90%.\nDirector General Hamid Hussaini told the Iraqi News Agency (INA) that the new &ldquo;Force to Combat Smuggling and Theft&rdquo; reports directly to him and patrols the deserts continuously to monitor the wide pipeline network.\nHe said the force has already foiled three attempts to install illegal locks to steal oil at the Sabba field in Dhi Qar province.\nHussaini said violations and theft attempts are not limited to crude oil pipelines but affect the entire transport network across the provinces.",
-      "bodyKo": "이라크 에너지 경찰은 남부 지역의 석유 밀수를 단속하기 위해 새로운 부대를 편성했으며, 바빌 주에서 총리가 수사를 지시한 이후 송유관 공격이 90% 감소했다고 밝혔다.\n에르빌(쿠르디스탄24) - 이라크 에너지 경찰국이 이라크 남부 지역에서 석유 절도 및 밀수를 단속하기 위한 새로운 부대를 편성했다고 국장이 금요일에 밝혔다. 그는 강력한 보안 조치로 인해 유전 파이프라인에 대한 공격이 90% 감소했다고 말했다.\n하미드 후세이니(Hamid Hussaini) 사무총장은 이라크 뉴스 통신(INA)과의 인터뷰에서 새로운 \"밀수 및 도난 방지 부대\"가 자신에게 직접 보고하며 광범위한 송유관 네트워크를 감시하기 위해 사막을 지속적으로 순찰하고 있다고 밝혔다.\n그는 이미 디카르 주 사바 유전에서 석유를 훔치기 위해 불법으로 잠금장치를 설치하려는 시도가 세 차례 있었지만 모두 저지했다고 밝혔다.\n후세이니 대변인은 침해 및 도난 시도가 원유 파이프라인에만 국한되지 않고 여러 주에 걸친 전체 수송망에 영향을 미친다고 말했다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "Middle East Monitor",
-        "Kurdistan24"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크, 석유 밀수 대응 및 송유관 보호를 위한 특별 보안 부대 창설",
-          "source": "Middle East Monitor",
-          "link": "https://www.aa.com.tr/en/middle-east/iraq-establishes-special-security-force-to-combat-oil-smuggling-protect-pipelines/4124638"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "힐라(바빌)",
-        "km": 81
-      }
-    },
-    {
-      "title": "انقطاع الكهرباء خلال ودية العراق ولبنان",
-      "source": "العين الإخبارية",
-      "link": "https://al-ain.com/article/iraq-lebanon-not-electric",
-      "date": "2026-11-13T16:43:42.000Z",
-      "lang": "ar",
-      "titleKo": "이라크와 레바논의 친선 경기 중 정전",
-      "url": "https://al-ain.com/article/iraq-lebanon-not-electric",
-      "body": "شهدت مواجهة العراق ولبنان الودية انقطاعاً للتيار الكهربائي، وذلك خلال المواجهة التي تجمع المنتخبين، ضمن بطولة الصداقة الودية.\nوتسبب انقطاع الكهرباء في إثارة حالة من المفاجأة داخل الملعب، في واقعة لفتت الأنظار خلال اللقاء الذي يجمع المنتخبين.\nوجاء الانقطاع قبل انطلاق الشوط الثاني التي تُقام على أرضية المدينة الرياضية، وسط ترقب لاستئناف الأجواء بصورة طبيعية.\nوكان الشوط الأول من المواجهة قد انتهى بالتعادل السلبي دون أهداف، في ظل عدم نجاح أي من المنتخبين في هز الشباك.\nوعقب استئناف المباراة، استمر التعادل السلبي بين المنتخبين حتى نهاية المواجهة.\nوتأتي المباراة ضمن استغلال فترة التوقف الدولي لخوض مواجهات ودية، في إطار بطولة الصداقة المقامة بالبصرة.\nيذكر أن بطولة كأس آسيا التي كان من المفترض أن تنطلق في يناير/ كانون الثاني تأجل انطلاقها لنهاية العام المقبل 2027.",
-      "bodyKo": "이라크와 레바논의 친선 경기는 친선 대회에서 두 팀이 맞붙는 동안 정전이 발생했습니다.\n정전으로 인해 경기장 내에서 놀라움이 일었고, 이는 양 팀의 경기가 진행되는 동안 관심을 끈 사건이었습니다.\n정전은 스포츠 시티 경기장에서 열리는 후반전이 시작되기 전에 발생했으며, 분위기가 정상적으로 회복되기를 기다리는 가운데 발생했습니다.\n전반전은 양 팀 모두 골을 넣지 못해 0-0 무승부로 끝났습니다.\n경기가 재개된 후에도 양 팀의 0-0 무승부는 경기 종료까지 이어졌습니다.\n이 경기는 바스라에서 열리는 우정 토너먼트의 일환으로 친선 경기를 치르기 위한 국제 휴식기 활용의 일환으로 열립니다.\n1월에 시작될 예정이었던 아시아컵이 내년 말인 2027년으로 연기된 것으로 알려졌습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "العين الإخبارية"
-      ],
-      "related": [],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바스라",
-        "km": 422
-      }
-    },
-    {
-      "title": "이라크의 '이 없으면 잇몸' 작전… 호르무즈 해협 막히자 '시리아 육로'로 원유 수출",
-      "source": "뉴스핌",
-      "link": "https://www.newspim.com/news/view/20261114000010",
-      "date": "2026-11-13T16:34:00.000Z",
-      "lang": "ko",
-      "titleKo": "이라크의 '이 없으면 잇몸' 작전… 호르무즈 해협 막히자 '시리아 육로'로 원유 수출",
-      "url": "https://www.newspim.com/news/view/20261114000010",
-      "body": "[런던=뉴스핌] 장일현 특파원 = 석유수출국기구(OPEC) 11개 회원국 중 사우디아라비아에 이어 두 번째로 원유를 많이 생산하는 이라크가 수십 년 동안 거의 사용하지 않았던 사막 육로를 통해 원유를 수출하고 있다고 로이터통신이 13일(현지시각) 보도했다.&n\n뉴스핌을 선호 출처로 추가 가 가 프린트 ※ 본문 글자 크기 조정 가 더 작게 가 작게 가 보통 가 크게 가 더 크게 닫기 ※ 번역할 언어 선택 -- 선택 -- 닫기 AI 핵심 요약 beta 분석 중... 이라크는 13일 사막 육로를 통해 시리아로 원유 수출을 시작했다 호르무즈 해협 봉쇄로 바스라 원유를 탱커트럭에 실어 운송했다 UCC홀딩은 하루 12만~15만 배럴 운송 계약을 체결한 것으로 알려졌다 ! AI가 자동 생성한 요약으로 정확하지 않을 수 있어요.\n지난 2월 말 이란 전쟁 발발 이후 호르무즈 해협이 봉쇄되면서 어떻게든 새로운 수출로를 뚫어야 한다는 절박함이 반영된 것으로 해석됐다.\n보도에 따르면 이라크는 최근 남부 바스라 인근의 원유 저장시설에서 탱커트럭에 원유를 실은 뒤 사막 육로를 통해 시리아의 바니야스(Baniyas)항으로 보내고 있다.\n이들 저장기지 인근에는 수백 대의 탱커트럭들이 원유를 싣기 위해 대기하는 모습이 관측되고 있다고 한다.\n이라크 측에서는 시리아 경로가 중질유 화물을 운송할 수 있는 규모는 작지만 전략적으로 중요한 대체 루트로 자리잡고 있는 평가가 나오고 있다.\n소식통들은 \"육로 수송이 더 비싸지만 시리아 내전이 종식되면서 이 수송로가 다시 주목받고 있다\"고 밝혔다.\n바스라 국영석유회사(BOC)의 바셈 압둘 카림 사장은 \"카타르의 에너지 기업 UCC홀딩이 지난달부터 트럭을 이용해 이라크산 원유를 바니야스 항으로 운송하고 있다\"고 말했다.",
-      "bodyKo": "[런던=뉴스핌] 장일현 특파원 = 석유수출국기구(OPEC) 11개 회원국 중 사우디아라비아에 이어 두 번째로 원유를 많이 생산하는 이라크가 수십 년 동안 거의 사용하지 않았던 사막 육로를 통해 원유를 수출하고 있다고 로이터통신이 13일(현지시각) 보도했다.&n\n뉴스핌을 선호 출처로 추가 가 가 프린트 ※ 본문 글자 크기 조정 가 더 작게 가 작게 가 보통 가 크게 가 더 크게 닫기 ※ 번역할 언어 선택 -- 선택 -- 닫기 AI 핵심 요약 beta 분석 중... 이라크는 13일 사막 육로를 통해 시리아로 원유 수출을 시작했다 호르무즈 해협 봉쇄로 바스라 원유를 탱커트럭에 실어 운송했다 UCC홀딩은 하루 12만~15만 배럴 운송 계약을 체결한 것으로 알려졌다 ! AI가 자동 생성한 요약으로 정확하지 않을 수 있어요.\n지난 2월 말 이란 전쟁 발발 이후 호르무즈 해협이 봉쇄되면서 어떻게든 새로운 수출로를 뚫어야 한다는 절박함이 반영된 것으로 해석됐다.\n보도에 따르면 이라크는 최근 남부 바스라 인근의 원유 저장시설에서 탱커트럭에 원유를 실은 뒤 사막 육로를 통해 시리아의 바니야스(Baniyas)항으로 보내고 있다.\n이들 저장기지 인근에는 수백 대의 탱커트럭들이 원유를 싣기 위해 대기하는 모습이 관측되고 있다고 한다.\n이라크 측에서는 시리아 경로가 중질유 화물을 운송할 수 있는 규모는 작지만 전략적으로 중요한 대체 루트로 자리잡고 있는 평가가 나오고 있다.\n소식통들은 \"육로 수송이 더 비싸지만 시리아 내전이 종식되면서 이 수송로가 다시 주목받고 있다\"고 밝혔다.\n바스라 국영석유회사(BOC)의 바셈 압둘 카림 사장은 \"카타르의 에너지 기업 UCC홀딩이 지난달부터 트럭을 이용해 이라크산 원유를 바니야스 항으로 운송하고 있다\"고 말했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "뉴스핌"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "바스라",
-        "km": 422
-      }
-    },
-    {
-      "title": "FM reaffirms Egypt's full support for Iraq’s security, stability, sovereignty, territorial integrity",
-      "source": "الهيئة العامة للاستعلامات",
-      "link": "https://sis.gov.eg/en/media-center/news/fm-reaffirms-egypts-full-support-for-iraq-s-security-stability-sovereignty-territorial-integrity/",
-      "date": "2026-11-13T13:16:10.000Z",
-      "lang": "en",
-      "titleKo": "이집트 외무부 장관, 이라크의 안보, 안정, 주권, 영토 보전을 위한 이집트의 전폭적인 지지를 재확인",
-      "url": "https://sis.gov.eg/en/media-center/news/fm-reaffirms-egypts-full-support-for-iraq-s-security-stability-sovereignty-territorial-integrity/",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "الهيئة العامة للاستعلامات"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq plans security delegation to help Beirut inquiry into former MP’s death",
-      "source": "London Daily News",
-      "link": "https://www.londondaily.news/iraq-plans-security-delegation-to-help-beirut-inquiry-into-former-mps-death/",
-      "date": "2026-11-13T11:50:53.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 전직 국회의원 사망 사건에 대한 베이루트 수사를 지원하기 위해 보안 대표단 파견 계획",
-      "url": "https://www.londondaily.news/iraq-plans-security-delegation-to-help-beirut-inquiry-into-former-mps-death/",
-      "body": "We're verifying your browser. You'll be redirected shortly.",
-      "bodyKo": "브라우저를 확인하고 있습니다. 잠시 후 리디렉션됩니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "London Daily News"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "معلومات الجديد: مدعي عام التمييز على تواصل دائم مع السفير العراقي لاتمام كل الإجراءات القانونية قبل نقل الجثة الى العراق",
-      "source": "Lebanon ON",
-      "link": "https://www.lebanonon.com/news/448218",
-      "date": "2026-11-13T11:38:29.000Z",
-      "lang": "ar",
-      "titleKo": "새로운 정보: 대법원 검사장은 시신을 이라크로 이송하기 전 모든 법적 절차를 완료하기 위해 이라크 대사와 지속적으로 소통하고 있습니다.",
-      "url": "https://www.lebanonon.com/news/448218",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Lebanon ON"
-      ],
-      "related": [],
-      "tag": "한국·외교",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Jurf al-Sakhr standoff exposes limits of Iraq’s state authority",
-      "source": "Middle East Online",
-      "link": "https://middle-east-online.com/en/jurf-al-sakhr-standoff-exposes-limits-iraq%E2%80%99s-state-authority",
-      "date": "2026-11-13T10:55:17.000Z",
-      "lang": "en",
-      "titleKo": "주르프 알사크르 대치 상황이 이라크 정부 권한의 한계를 드러내다",
-      "url": "https://middle-east-online.com/en/jurf-al-sakhr-standoff-exposes-limits-iraq%E2%80%99s-state-authority",
-      "body": "Zaidi halted the operation on Thursday, which had been aimed at encircling Jurf al-Sakhr, north of Babil province.\nBAGHDAD – Iraqi Prime Minister Ali al-Zaidi’s decision to suspend a security operation in Jurf al-Sakhr has exposed the difficulties facing his government in asserting state authority over powerful armed factions, even when seeking to investigate alleged oil smuggling.\nThe operation was intended to secure access to sites in the area for an official investigation into suspected oil theft. Threats from Kataib Hezbollah and political mediation to avert a confrontation have underscored how far the government’s ability to act in the heavily militarised area remains constrained by power arrangements that extend beyond formal state institutions.\nSecurity forces were ordered to remain on alert in case the mediation efforts failed, according to Iraqi media reports. The move suggested that the government had not abandoned the option of deploying forces, but was holding back while se",
-      "bodyKo": "자이디는 바빌 주 북부에 위치한 주르프 알사크르를 포위하기 위한 작전을 목요일에 중단했다.\n바그다드 – 이라크의 알리 알자이디(Ali al-Zaidi) 총리가 주르프 알사크르(Jurf al-Sakhr)에서 보안 작전을 중단하기로 결정하면서, 석유 밀수 의혹을 조사하려는 경우에도 강력한 무장 세력에 대한 국가 권위를 확립하는 데 있어 그의 정부가 직면한 어려움이 드러났다.\n이 작전은 석유 절도 의혹에 대한 공식 조사를 위해 해당 지역의 현장에 접근할 수 있도록 하기 위한 것이었습니다. 카타이브 헤즈볼라의 위협과 충돌을 피하기 위한 정치적 중재는 군사화가 심한 지역에서 정부의 행동 능력이 공식적인 국가 기관을 넘어선 권력 구조에 의해 얼마나 제한받고 있는지를 여실히 보여주었습니다.\n이라크 언론 보도에 따르면, 보안군은 중재 노력이 실패할 경우에 대비해 경계 태세를 유지하라는 명령을 받았다. 이 조치는 정부가 병력 배치 옵션을 포기하지 않았지만,",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Middle East Online"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "'No war, no peace' situation between US and Iran 'cannot continue', Iraqi FM says",
-      "source": "France 24",
-      "link": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261113-no-war-and-no-peace-between-the-us-and-iran-cannot-continue-iraqi-fm-says",
-      "date": "2026-11-13T10:28:30.000Z",
-      "lang": "en",
-      "titleKo": "이라크 외무장관, \"미국과 이란 간 '전쟁도 평화도 없는' 상황은 지속될 수 없다\"고 밝혀",
-      "url": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261113-no-war-and-no-peace-between-the-us-and-iran-cannot-continue-iraqi-fm-says",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "France 24"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
       }
     }
   ],
