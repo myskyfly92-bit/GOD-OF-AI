@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T01:26:43.854Z",
+  "generatedAt": "2026-11-15T01:03:41.832Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -17,6 +17,13 @@
       "date": "2024-06-10T03:38:59.000Z"
     },
     {
+      "title": "수인성·식품매개 감염병",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZQl9OTjlxM2NaZDY4dXZ1LU51dUNFTGZsYWstcjJpNG5GajVQa2N6OWozdk9RdHpSZi1USGVEUTRqX2J6YWRuUU40c3dvdmVndUZJVTln?oc=5",
+      "date": "2025-12-16T14:07:01.000Z"
+    },
+    {
       "title": "ICCON 감염예방 소식지",
       "source": "질병관리청",
       "agency": "",
@@ -28,7 +35,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-13T09:06:56.000Z"
+      "date": "2026-11-14T04:38:15.000Z"
     },
     {
       "title": "레지오넬라증",
@@ -43,13 +50,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
       "date": "2024-06-10T02:47:27.000Z"
-    },
-    {
-      "title": "홍보물",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBpVFRoOHFHTUYxall6MTlWRjdOOHdJdU1hQUwwbnhHb1pqUVhNZjVtYVlXX0pwQk9xRUI4ajF1U0UwYks3cUJVdUttSWJEdUlZUnpRVURR?oc=5",
-      "date": "2026-02-10T05:30:11.000Z"
     },
     {
       "title": "채용공고",
@@ -73,18 +73,18 @@
       "date": "2025-12-16T16:42:42.000Z"
     },
     {
-      "title": "지침",
+      "title": "고혈압·당뇨병 등 심뇌혈관질환 예방관리",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMikgNBVV95cUxPYWxvcWl4Nl9aN3RvV3pwanVRWHFGMFY2LVItbDJIWkt2c2JyVUJKX1BjZ3lqZzFLYk1JeVRrNFVMcElUWmhMdVF2emZCMFNDeS11OEprMHA2ZXVXTG5SN1RLMUt5RnF6OV82VEh1WTJpYm9mZVNfX0VQbndWYTNJdjRrc1hqS19Gd1c5bURrcGpVUjNmY09EeWgwOGplNzU0TGlPLUFMdjR0azJrNGVGREctdGZhWW14Qk4wa3NFSUk1d1BRd3NrOGxreW1OaDVHa0pZSUZ6dGxTMnp1U0VJUE5lWjZRV1lKUDQ2Sk5vS3dvSzBFNWJKLUxIeml2cHFCai1CN0NyMWJSVHhhZlAwNVVfWTdsNWJkc0FRRmNWX3pfcFM1V3ExcXI5OHVOb09ZdUVUMzJvTXNENnFHaWozU0E0dGxDc3NpOG54c3YtcnozUlc1OEY4T1lyYzRQUnBneE1MdzdSRkJRWnRhVU56eEhjQldxd3liNHBBS0NjVnBFZ2JtNW1XVUduRVJDbmJtZkE?oc=5",
-      "date": "2026-02-26T22:56:49.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtNVFzTGN5T2tQaldhekVqVE5Db0JHWDg5OVJVS014ZXBGVnBHb1NaXzBoTVZMcDJEdm9JZ2R5Z04tRk9oOUNpYU9PVG05dF82Ymk5bEFB?oc=5",
+      "date": "2025-12-16T16:02:44.000Z"
     },
     {
-      "title": "건강통계",
+      "title": "전자검역을 통한 감염병 대응체계 고도화",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE94N2JqajdLTVNWTjN3dEdTRFpybGNzcTNSeXk1alpGb1pkYkptRW9VczVHVFAtc1g0ZTFwVTZsNXMyQUMxQ2F6d1dSM3kyaE9XbTVsZmZB?oc=5",
-      "date": "2025-12-16T15:48:04.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2OW5lNTJXaTNUTmM3eVhNa0F3d2NHQTU4ZWhiTnlRZXJ1M0kwTnBxMFlnUnQwd1UwaGlEeFQwX1hCRl9YRlViN0dGU1R4ZjIyMnBHREln?oc=5",
+      "date": "2025-12-16T14:41:54.000Z"
     }
   ]
 }
