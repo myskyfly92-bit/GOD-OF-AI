@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T01:03:41.832Z",
+  "generatedAt": "2026-11-16T01:01:57.218Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -10,11 +10,25 @@
       "date": "2026-11-12T09:42:03.000Z"
     },
     {
+      "title": "‘공공의료 AI 고속도로’ 첫 개통,강원 지역 공공병원 의료 AI로 본격 연결",
+      "source": "보건복지부 대표홈페이지",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQW93U2NzbWlSUmN5bE82eEdwcEI4ckZtQ2Npa3FyMzNqTi1EMzRfb1NDMW9lV0Y1VFl3bEdkdHdUbUZJeE5FemdZVF9Sb2lFQ2tkQmlOX2ZxUDExY3IxYVFMeUhiSnk2RzNyTE1CNjR4eEhCRUl3N296Z19YR1Jud3oxSnZxM3RMZVhkdnBmY3RrcVRkam9Uaklacw?oc=5",
+      "date": "2026-11-11T05:05:00.000Z"
+    },
+    {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
       "source": "질병관리청 감염병포털",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
       "date": "2024-06-10T03:38:59.000Z"
+    },
+    {
+      "title": "의료방사선게시판 - 2023년 국민 의료방사선 평가 연보",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNmdMMDR3bFU3TUNRdjMweWZWQWRYTGFOdHBHMGlhSFkycmVPX2c5UlVuNU9ZMm5qdVpCUlA5OUlBWTg1R09PUXhNZVRaNC00UVEwTzJxbThUcmZCdHE2Qm5ndE1jTlBKUEhyaWZxT3FEeDhkcmxPdXp1OXBLNm01ZEtEYTY0YzllRzFMcFJNOVdmZHBBczdTSC1BZ08xMEpyWkcxUHhLdkJ6WGxsNEFLRGVma3F1OHFMMlRWbg?oc=5",
+      "date": "2026-05-02T07:32:05.000Z"
     },
     {
       "title": "수인성·식품매개 감염병",
@@ -71,20 +85,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MbExBX0JEd0RiZmxBQ3djZnFIQjdYUGwycC1BdUlvMDFDV0VOLUFmbU5QSU00TmNINE5BdmE5NlRVSThkN0c3TVJDa3dHRFJJWlNKWkZ3?oc=5",
       "date": "2025-12-16T16:42:42.000Z"
-    },
-    {
-      "title": "고혈압·당뇨병 등 심뇌혈관질환 예방관리",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtNVFzTGN5T2tQaldhekVqVE5Db0JHWDg5OVJVS014ZXBGVnBHb1NaXzBoTVZMcDJEdm9JZ2R5Z04tRk9oOUNpYU9PVG05dF82Ymk5bEFB?oc=5",
-      "date": "2025-12-16T16:02:44.000Z"
-    },
-    {
-      "title": "전자검역을 통한 감염병 대응체계 고도화",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2OW5lNTJXaTNUTmM3eVhNa0F3d2NHQTU4ZWhiTnlRZXJ1M0kwTnBxMFlnUnQwd1UwaGlEeFQwX1hCRl9YRlViN0dGU1R4ZjIyMnBHREln?oc=5",
-      "date": "2025-12-16T14:41:54.000Z"
     }
   ]
 }
