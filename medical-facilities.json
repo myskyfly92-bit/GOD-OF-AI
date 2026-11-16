@@ -5,7 +5,7 @@
   "lon": 44.618
  },
  "radiusKm": 45,
- "updatedAt": "2026-11-09T09:47:36.505196+00:00",
+ "updatedAt": "2026-11-16T09:41:59.329192+00:00",
  "items": [
   {
    "id": "node/9547504717",
@@ -1578,7 +1578,7 @@
    "km": 19.6,
    "enAuto": true,
    "spec": [],
-   "roadKm": 29.3,
+   "roadKm": 29.2,
    "min": 25
   },
   {
@@ -6260,24 +6260,6 @@
    "lat": 33.359542,
    "lon": 44.310508,
    "km": 34.1,
-   "spec": []
-  },
-  {
-   "id": "node/14256257943",
-   "name": "بيت سيد علاوي",
-   "nameEn": "Sayed Allawi's house",
-   "nameAr": "بيت سيد علاوي",
-   "kind": "hospital",
-   "own": "",
-   "emergency": false,
-   "beds": "",
-   "phone": "",
-   "website": "",
-   "addr": "بغداد",
-   "lat": 33.438497,
-   "lon": 44.397842,
-   "km": 34.1,
-   "enAuto": true,
    "spec": []
   },
   {
