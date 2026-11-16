@@ -1,13 +1,37 @@
 {
-  "generatedAt": "2026-11-15T20:27:19.997Z",
+  "generatedAt": "2026-11-16T11:48:42.705Z",
   "health": [
     {
-      "title": "وزير الصحة يبحث مع منظمة عراقنا الإنسانية المساهمة في إنشاء مركز للغسيل الكلوي (الديلزة) في منطقة المعالف ومراكز صحية في بغداد وتجهيزها وتشغيلها",
-      "source": "الوكالة الوطنية العراقية للأنباء| نينا",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE10V0NzQmFOLTdOd0lhSjRjMzZ0Y2Z0bkZPaDF1Qjc4MWthZjRVVGhYUFRLRktnWVBSMzd3TnZGdHQyM194a0tON1FDWHkwbUtRUFFCWG55dWU2bV91bDMxZDZ4QQ?oc=5",
-      "date": "2026-11-15T18:37:15.000Z",
+      "title": "نقابة الصيادلة: حملة كبرى لمتابعة التسعيرة الموحدة للأدوية",
+      "source": "وكالة انباء براثا",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBWM1lHOVdKYXpINk1vYWVDa2FUakhLX2tqTDBjdGk0WG1zelVUUWwzMFNQcWtaS0djQjhEcWQzSG9CZG9oSjRSM3dfbWJzMEU?oc=5",
+      "date": "2026-11-16T08:22:24.000Z",
       "lang": "ar",
-      "titleKo": "보건부 장관이 이라크 휴머니타리안 단체와 함께 알-마알리프 지역에 투석 센터를 설립하고 바그다드에 보건 센터를 설립하여 이를 갖추고 운영하는 데 기여하는 방안을 논의했습니다."
+      "titleKo": "약사협회: 의약품 단일 가격 모니터링을 위한 대규모 캠페인"
+    },
+    {
+      "title": "نقابة الصيادلة تسيّر فرق تفتيش لمتابعة تطبيق التسعيرة الدوائية",
+      "source": "شفقنا العراق",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFAzenU4ZVZENjZsUlVfb1VsZ243cHh4M2FVM2FRVzlJeWlGQ01GMlZZa1RxcUFoS2QtQ3dVV3hocWtnX3NYaXZ0LVpidm8?oc=5",
+      "date": "2026-11-16T06:18:31.000Z",
+      "lang": "ar",
+      "titleKo": "약사협회가 약가 적용 현황을 모니터링하기 위해 점검단을 운영하고 있습니다."
+    },
+    {
+      "title": "وزير الصحة يستقبل منظمة عراقنا الإنسانية لبحث المساهمة في إنشاء مركز للغسيل الكلوي (الديلزة) في منطقة المعالف ومراكز صحية في بغداد وتجهيزها وتشغيلها",
+      "source": "وزارة الصحة العراقية",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5MRW5lLUdhZ1A2NnFmMFpxbTNlYzBPVG9LQTYxaGtXNC1oUkVISGdCdi1NWWVHSWhLRTdUaEFDQ0pXQlhLNnRPRA?oc=5",
+      "date": "2026-11-16T05:47:00.000Z",
+      "lang": "ar",
+      "titleKo": "보건부 장관이 이라크 후마니타리아(이라크 인도주의) 단체를 접견하여 마알리프 지역에 투석 센터를 설립하고 바그다드에 보건 센터를 설립하여 이를 갖추고 운영하는 데 기여하는 방안을 논의했습니다."
+    },
+    {
+      "title": "اقامت القنصلية العامة لجمهورية العراق في سدني احتفالاً يوم بغداد السنوي",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFAwOXQ1NXdBaVQ0RlJKVVk2RDhkclRpTHRURzFTTVdzSC1aOWI3RkdpTkhOdkZVbkkyUzMzcDQ1b0NQejhxQ3ZkZ1Zn?oc=5",
+      "date": "2026-11-16T04:06:21.000Z",
+      "lang": "ar",
+      "titleKo": "시드니 주재 이라크 공화국 총영사관이 연례 바그다드 데이 행사를 개최했습니다."
     },
     {
       "title": "وجيه من الزيدي.. وزير الصحة يعلن تأهيل الطابق 9 في مستشفى بغداد التعليمي",
@@ -21,7 +45,7 @@
       "title": "بدعم و توجيه من الرئيس الزيدي.. إنجاز تأهيل الطابق التاسع في مستشفى بغداد التعليمي والاستعداد لإطلاق خطة لتطوير مستشفيات المحافظات",
       "source": "عراق اوبزيرفر",
       "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxNdlh6Tk8tWTJpNm5XLWZnaGdJR2lWU2tVcmh6NUIyZm9DU21la0FzZTZzYTdSMmt5MDliTV9JdzRMNjdwcHo0U3F5ZE5COE1vSFdOTnRyZUx0bll4MEE1Q19GMDc3bTQ3TFZyZFBaN2gybU12YUFwNEctMDZRWS1ZeFhHcGlOMUJ1Uml5RnhZYlZHSWRKTW1OSWs3RDhyZ19RdXdBSkFFNEJqdG40NklxSU1XZjh4bU5OTndSeGFiOVdEOEFnajUtbHRCdUpfQVZ5X0lKTXN4RmFJaDVHbDZBeG8yLWRwdV92eXBxS0xOTlRSUEl0VV9yQktfUzVWNDdab0Q0Z2VZRVVZcUwzaFlpdUEwTG5ZcFpLV3BoQVFsVkowZlE2UUJiZWI1akw3anVOOXo2MFBNMzliS1JqRFhEbA?oc=5",
-      "date": "2026-11-15T15:29:54.000Z",
+      "date": "2026-11-15T15:39:26.000Z",
       "lang": "ar",
       "titleKo": "자이디 병원장의 지원과 지도로 바그다드 교육병원의 9층 리모델링이 완료되고 지방 병원 개발 계획을 발표할 준비가 되었습니다."
     },
@@ -53,7 +77,7 @@
       "title": "الضمان الصحي يفتح خدماته مجانًا أمام جميع مرضى السكري من النوع الأول",
       "source": "شفقنا العراق",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9zN0tfUmpjbm1kbHhRUHd4NXk1SDBlY2xpNldMZjB3bDUxNmxMNkNZSjVUQXItZ1k4MWtXbkxEV2JtWUdfTko4d1dCblo?oc=5",
-      "date": "2026-11-15T10:40:29.000Z",
+      "date": "2026-11-15T10:25:32.000Z",
       "lang": "ar",
       "titleKo": "건강보험공단, 모든 제1형 당뇨병 환자에게 무료 서비스 제공"
     },
@@ -72,33 +96,25 @@
       "date": "2026-11-14T20:00:09.000Z",
       "lang": "ar",
       "titleKo": "공공안전부, 도덕적 이유로 샤키르가 이라크에 통보했다는 사실을 부인 · 데일리 베이루트"
-    },
-    {
-      "title": "رئيس الوزراء السيد علي فالح الزيدي يوجه بشمول مرضى السكري من النوع الأول دون 22 عاماً بإعانة الحماية الاجتماعية.",
-      "source": "Facebook",
-      "link": "https://news.google.com/rss/articles/CBMi-gRBVV95cUxPZnk2cUhKSmp1a3hjSDFZeWxTQ0Q1SVF6ejctUU80bmF6cGF6cVlYOWhOb3dZVVNRN0pGLVdZVXdlclFJckRoVUxuejVyQTVubjJFQVprTjdLemYzcU82ZmtFV1B1Y2Nfbk1OUmI0eWhIVlpDOWR2U1dIVE1TbEhHUUsyYUxsbW5uQnoxbFVmS0VlTjBpQlptYWFKUW9tMGdqWU9uenhLbnVEVld1TTRZSlhNWWdwcXNMSmdMR21pS2JyUlFVVktrSFBCek1UenZ2cDhnWGRHZWM3b2ktVkRtdFdyeHhVSDN2NGtYRldhQTVWQlRSZ2Y1cnFPOHo3Q0huTTBVMlNKbk13Nl9MM25UUm1XZnNZY1VJRkQxemU0U2FNSEZXV0NSQnMyeF95TWg0QnpEeTJLaGIteXROMEhVd2poMFA3aENZZmtVNXp3U2xmM1FpdGRrU0pFSEZQT0g3YkVHbXZndXg2cERjemhWMDVjQU9XRzJDM01pS1ZsTGtMaHpJalIxQTFYQ2syZVNUdWxLbzdsSmxCa3FJY2pQMEtEZ0JGOERSM3MySzBYYU9OS3M4MEpPUk12NzNIVlE4T19QY3kyUkh6OHJDcHJ6OXVhWGtVX1dzZFlMN2FFVmRpNUdSdnExRFlOVEQtZDc3b2x5NUx0R28ycDhhUFE3MldqV19kVkc2dE9VUVBUZUNPc01QMmZuZ3JqOWw4TGNjWDZLTkhfdmxFZFE4MkRsQ2VHX196Nk5DV3FTZUp6dEtQbUhLb3pYSmdKSFNsYlpPYVd6OURXcXV0SmFPX2JfVGtHME9IUXI5ZUpnRnBmVUJmd2NqYzRULVJ3?oc=5",
-      "date": "2026-11-14T17:19:20.000Z",
-      "lang": "ar",
-      "titleKo": "알리 팔리흐 알자이디 총리는 22세 미만의 제1형 당뇨병 환자에게 사회보장 수당을 지급하도록 지시했습니다."
-    },
-    {
-      "title": "رئيس مجلس الوزراء السيد علي فالح الزيدي يوجه بشمول مرضى السكري من النوع الأول لغاية عمر 22 سنة براتب الحماية الاجتماعية",
-      "source": "مكتب رئيس مجلس الوزراء",
-      "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5JSkEtQkRJRHB1eHY0UzVZRDRpXzM0Z0p0WXpTOGV1Vkw0YWxrcnMwRXJsSXJ2MG1DMm41RXRFaVZuUQ?oc=5",
-      "date": "2026-11-14T16:18:55.000Z",
-      "lang": "ar",
-      "titleKo": "알리 팔리흐 알자이디 총리는 22세 이하의 제1형 당뇨병 환자에게 사회보장급여를 지급하도록 지시했습니다."
-    },
-    {
-      "title": "المكتب الاعلامي لرئيس الوزراء العراقي. . بالفيديو / رئيس مجلس الوزراء السيد علي فالح الزيدي يستقبل عدداً من الأطفال المصابين بالسكري ضمن جمعية أصدقاء السكري.",
-      "source": "Facebook",
-      "link": "https://news.google.com/rss/articles/CBMimwVBVV95cUxQeE1XdVBEODh6alNzZW12MW95UkxWZllpYzR2UGU3OHQwb1IzV2NSYW1vclJ1SHdtT1NIcGRvNnZDUVNUaWdwMUg0cmotSU1lSDZfN1FSOHk0U3JUamlmRzFKNkNXOGhoTUpsZHk5dDBGLWdVeE5jMDZ0MTVCdjlZS2xzRFM4MnlRWFg2SEFLenFWbERrY2xfR3VLTXFPMnJDcTlXaUZwQVkwZ3k3MTdmYm9CNHA1UWp4czczaHJBTzNQNGdhVDYxVUJtMXJWcUxKaDQ5a1paMUl6dkQ1cWZZM2UzejBBb3ZPYnVOdG5ndVNqMENES0ZlUGtHaDZ2UFNlcjBqT2Q5Zmt3VVB4WUR0allFQUZsZy05RUNHZ1k1S08zSTJ6WXNyaTFLT2hSVlN4alJ0QXFVOENWc1NKLUpEZXcwUmttUEgxdGowdGdIVmFaa19TUFFhT3pFZzVwZ3daLVRzNXNKeGhmSGFiUmhEdDRKNTRyanE4MUp5YXUyUWREWUlvQzZSNEVXcnJScFF5Z3JKN3hIQS1CU1ZXV2FEM2R4dXlkTjR6MDdELWNNeVVBWjhSamp0RG5NLXNhdWVkMEhjMW1xS1Z6VW95cllTSXBITGNSRVQ3MXllMlNabE5IdGRmYmR1UUQ2c2pTdnk3QlRMX2N2MFh4cnZuWUFKdDVuZDJHSkFzZkNUTzA5X0s0dERqRk90dFF2YVU0UUhJRWphTGlaQjNXWU5mcU9NTlh4dGhwQXBnNmJMbUZ1a3ZHRjh2a3ctSGtqWEdiSEVHc3FGNVpIb3Z1VXJxSUc5X2djUkc2UkY4bVZ5OEFKZF9rdm1ueHVlU1k3QUZ3S25UUUxQOV8ySERVU3JyejhLb0dsUm0ybHdaeXdr?oc=5",
-      "date": "2026-11-14T15:29:05.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 총리실 홍보실. . 동영상 / 알리 팔리흐 알자이디 총리가 당뇨병 환자 친구 협회 소속 당뇨병 아동 여러 명을 접견하다."
     }
   ],
   "environment": [
+    {
+      "title": "العراق.. مطالب بتوسيع عقوبات التلوث لتشمل الشركات النفطية العالمية بعد غرامة بمليار دينار على نفط الشمال",
+      "source": "میدل ایست نیوز",
+      "link": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxPZlZUU0RRb01MOXc3UzdqeGVud3RtbUZWUGFNZjd4LW9xejlrRkQ0MFVaT1RRNUwzVVgtNmZvVXB1YjJhUHdkSHcwWXQ4UDNCc0VyY09uRXVUblR1OHNUa3AzQjJjQVJuODFIRlFwUUw3aGo3eXFLdmZ6dVBwTC15cDVzYS0yZ24zM0FKZ2RaR3g3Z284S28yemJFaDYySkR6OUx1cTBkdkN1TFhERHctRFpSSFhiTHJVRVdQQ0ZQNUtSYTctZ2FOOUdBSmg0cjZ5QkY2aVFoZ3RyNDFTLXpXenY5ZnZzVjc0MDFuLUVRTzRpSGxCNHZTS0tyUEdZSmgxbThvcjVtT3NXenNFblQwNUdacE13dWdqTUNMVHJoMDFPb1l1TDV6NFhqaWRrR3hucW43RDhZbllkUHFqUzhWZy1kZGxNcnVzSklTRFBSUHR3UQ?oc=5",
+      "date": "2026-11-16T09:06:01.000Z",
+      "lang": "ar",
+      "titleKo": "이라크.. 북부 석유에 대해 10억 이라크 디나르의 벌금이 부과된 후 국제 석유 회사에 대한 오염 벌금 확대 요구"
+    },
+    {
+      "title": "سروة عبد الواحد: أربيل والسليمانية تقاسمتا الأموال بـ\"الكواني\".. والبارتي يهرّب النفط",
+      "source": "الترا العراق",
+      "link": "https://news.google.com/rss/articles/CBMiiAZBVV95cUxOOThJR01icGd1b1VQTDN3MGR2WmlIQkU3bUMxWXNKOEMtclpuWnFMYnVZTWpKVk9OMUZKcG9TdXhTaUM4MlpHVUg2Mi1Sc0Z2UE5QVXhjd0o3dzNMNmdZaF9hc0pMbHpGSTJxbWkxakMxS0JNNkdLX3NfUGpXeVExMFF3Q2duUHd5em5UczJvcEJEM2VrUmI1SFN3aHdOOWZmdE1lSHFodURVS0FQdFFiYWdwQUt5MW91YXBTd2tlT01RREVST1d2TVkxU3plVmlibkx5Vk9KUUE4ZGtSN1h6d0xsUldDSy1TcFFNZVhNaHhJMWFmMEVPNWlCZE9DRlVYSWQ5OTNESjZzV0lBSm5LdXRvTlhYaUVKcmdzQllGREtKSmxMWXpiR1A4bUNpd2pTa1BFVzQyMW9EUVE0S2hPdS1GV29aN3pFLVhQbVlsR2pENU85RnhwbXN3c2hRdUQxaUVPYnk1dEhEWWttSUFJZW05WUZRV05ROGtmX1lGdm1SRVBMUlczWjhyQmV2TTRXYjQ5OW1MN2ttcWtVNERETmRGYmd1WDFaZjNSdEZaVndWckJtY3RqZ3dRajFkMnAxTFN5RzlHOWpqLVFHS18tQUMyNlhtWThQN0lWLU45ekhtc1JWQW1fdXRhTVhkbXdwVjc1VEw0QTVlWXBwYmszQlE1S1Z4SUd4U0dPVXVILVdLVkFwTVlWTmVnbVQ5V0dfLXhLSmU1WmtkVkViejF0bHFRUXhhTk5LOTRsQmFFeWh1dWFxaW1pVUxkUU5BQ0xkWlJUNXYyWnhtc2liWTRESWNCRHUyTWx6VUpRVjRTbndGOEdsSXJlNkpSMmlnZTVIN1BHZ0lIdlRsMHRvTzZZWnpUY1Q2RE0yNXVLaUY1N1Y2ZG1ZY2JnNDFCZUY3d2NqZFJVeGxoNjA0RGZ0M3RobWg4aDBMN2tUS2Nrcl9qV3d1QWZCYUthUlJ6S09zTmU3Z3NEMEVPSVBQUW9qWWVhV2w2MTZFRFF5X2RiSUZMS3c5Q1dZdXlDMA?oc=5",
+      "date": "2026-11-16T07:02:34.000Z",
+      "lang": "ar",
+      "titleKo": "사르와 압둘 와히드: 에르빌과 술라이마니야가 '쿠와니'로 자금을 분배했고, 바르티는 석유를 밀수했습니다."
+    },
     {
       "title": "من مصدّر لمستورد.. كيف ضرب الجفاف الأمن الغذائي وفرص العمل في العراق؟ | التلفزيون العربي",
       "source": "التلفزيون العربي",
@@ -106,14 +122,6 @@
       "date": "2026-11-12T18:51:41.000Z",
       "lang": "ar",
       "titleKo": "수출국에서 수입국으로... 가뭄이 이라크의 식량 안보와 일자리에 어떤 영향을 미쳤습니까? | 알-아라비 TV"
-    },
-    {
-      "title": "وزير البيئة يبحث مع المعهد الدولي لإدارة المياه تعزيز التعاون الإقليمي لمواجهة العواصف الغبارية",
-      "source": "قناة المملكة",
-      "link": "https://news.google.com/rss/articles/CBMi6AVBVV95cUxNM3JGWmVLWnVXcDg4MnV5a0pVaTFJRFJxSE1laDZJdXhoUnhLOWp4eDlRNGVSSlBiU1UzcnRsYzBsRGVqbXg5cWNDRnczY3JhazZ3cnNrV1J0UEdvMGhHS0hNNnVSWDRjZHlLa3J4QlBSNTVGUndWSHdOVkpGNmxGVWZjZW1oREpQMW1fUFZpUVNtd0Z6RHo4YmxkcW5LZHYwdmtweGVjQU9MRXJoVVlpYURTM1otem1hZjllZHRGWG5TMHY4djdJOExQODNwWVNBa1hNTUxqSmNXYnBGRzNmRG5XWm9GMjRSSG1CemtOdXo1WFlieC1NdGlHSk9SbkJyTnIxbm0zOUtCQUJtQ2RnM1FRY0dSTl9CZ2J1LW5OVGNvWmJrZHZmeVhBakpXV25GSVItZV9vOVRUSVNrU2lOSXhMaFJudi1OaHA2R2huYjlVUmFhenVNM0VWTHlhNzRyeWhaOThoYmg0RURPNDVDc3o2Mzc2MW1iNXc3QjMzV25DeDhFQnNPWDAtUlB4Z0RoRUc1b2xPMU1JMjZTUEk0UmJDX1gtWXItQ2ROZFhFVXNIeDJmT3N6VktBVnJPaHNWWlBQVklxR2h1MEtRNGNIblJhamJfN2stMUhQR3N3Y1hyNUtzN0xUVkFHdnFaaFVldUVCd3NhNll0NmpoSFVVWFVaTFJ4bzNtU3o0elVacWdqdG5qdk93dUV1LWdyMk1SUXJNYmZaMVBQZG1RV09ENVlVenE5T1lIR1VEQWtMSjJld2xqWnZYNEtmdDlCSEtweG1sMFBEdTBHZnJLSDJNVkFfR3lMYzNMaGlKbGpSNXBxb0ZmOU9pMDVGMWl5SGVMbmpNN1d3cnRDamh0UWtybC1UWTlseUdKUnBuNFV0R3EtMmM5WmUwdkpQbVhXVkZza1NNUGRMSDhKUWZmcDBNVThXTHVkb3BTV20wSjYyYmFsZXRJX2JzMFRaZ0F6bHZROXRaQnQ0VjQ?oc=5",
-      "date": "2026-11-12T16:35:56.000Z",
-      "lang": "ar",
-      "titleKo": "환경부 장관, 국제수자원관리연구소와 함께 모래폭풍에 대응하기 위한 지역 협력 강화 논의"
     },
     {
       "title": "الأردن والعراق يبحثان آفاق التعاون في حماية البيئة والعمل المناخي والتمويل المستدام",
@@ -140,14 +148,6 @@
       "titleKo": "이라크의 남획과 감독 부재"
     },
     {
-      "title": "مندوبا عن الملك.. وزير البيئة يترأس الوفد الأردني المشارك في افتتاح مؤتمر كوب 31",
-      "source": "قناة المملكة",
-      "link": "https://news.google.com/rss/articles/CBMi0wRBVV95cUxQbDl6cHRqUzdDNmFPRkZNQUxDTTV1N3FiMGVjMGxZVjlhT094UDVReVpNMGhURVNtTm9oOHhkTXV0UGVOVlZqUWFGV3lfSkZQOS1ULTh2dFZodHRqSldaSC1RZ3E2NlBSRjY0THBNU1Nya2FEMk4xdnlDLXJ5WUxKM2FMRkR6ZjFZal83SFlUd3lQR0w2SGJMNVhSbnFpNWlOYVlLRXN1Q1hrTTZwaFZESzZOZ21wRS1lbVFfWmJvby1pZ2JnblJKX3lYeVF2NGEwWFRrTkwxRWNFSFBkQ1J5TnFaeGx5ZXFmY3R6ZXVCQUk0MDg2d3I1aldTdVRqT0xVam00VW5MN2Jobzg4clNlRTlCdExxSnFaM0Nhb1BybkVlNUpxOWY3S2RSTUJMNkI4TGprWlc4X3Nla0JPOGFvMldxa2ppdTg4RjA0ZVh3SHBhYy1aUkoyOXUzaDFlel9xQ3hLSmlfdWRlRW9CVFZ0ZjhOem51MTlaNDFCS3ZWeDh1Rk1xWVcyUUM2bVRYY3hua2llZ0lDUjZKb0hqcTkzVHJxU2s1dWw3ejc5WmY4ai1oTWtfOFhiMTcxV19xanJ1ZExMNFdoTF9RS1I4dVhhUFp0R2VGVTBYeUIza2FJR0FXUE84SHRWRldwejdqZU5ZM0NBclFqaVc2THphcHRaSzRmazhOVlY1REV0Y0NOd0pFb25reWRjalY3WWlFcjhsM0VJUEkzMkpqcmt5NGZST20zX3ZTMnFRcFliLU9sdG9MS2c2WDVFdVNqMVM3MVg4S1Zz?oc=5",
-      "date": "2026-11-12T08:22:20.000Z",
-      "lang": "ar",
-      "titleKo": "국왕을 대신하여 환경부 장관이 COP31 개회식에 참석하는 요르단 대표단을 이끕니다."
-    },
-    {
       "title": "عقوبات تصل للسجن 3 سنوات.. شرطة البيئة: 87 حالة صيد جائر خلال 2026 » وكالة الانباء العراقية (واع) | اخبار العراق",
       "source": "وكالة الانباء العراقية (واع)",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0tc052MUFmcWdQUmMwRF9HQjMyMjlsemhmdHY3NloxWlBuY2RZa25XS05LRktRYWEwMkNjMmV6M0JRbjV5VHBwM19vVjhPczBGV3JVQU8yVm4?oc=5",
@@ -164,17 +164,9 @@
       "titleKo": "세계 평화와 발전을 위한 과학의 날: 오염이 지속된다면 수질 검사는 무슨 소용이 있습니까?"
     },
     {
-      "title": "أهوار العراق .. من أساطير الخلود إلى أصول وإقتصاديات الكربون – جمعة الدراجي",
-      "source": "Azzaman",
-      "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNbkx3QmVBSTYzRF9KbFpIcDdmWGxBMmUzVm1YZnBNdDE5UUs1Y0lIR1dPWnlmcWVzcGJzZkQzdHNmSzJNSEtyeURBS3BlWDRxOXdfZzFsTTdmdW5PTXp4U3c3dEltekI1RXBzZTF6U2FRTW1PNldFMG5HZ3BURDdiRTRCN1BQTEFZZlRSUXlSMHA2MGlrbHZkQmY1Zy1rNmhkbjRmR0RmWWs2VXJEeTJ6MW9Ya1RpOGhrUzg3cG02enU3ZXExUnhyLVJoTGZxTWcyTU5tdXFmdGJBN2dTb2E0ckJIVTNXTXVLZzdPNk9MLW5GbzMxLVZSWUNzV3pkYk5NSkRyWnAwczRINDBUbXNOZ2pkcXhhbTBiVXFqVXJVVElKb1huaWRXbjRqVUstbW1zR0E2NWloaXZtZTJ6Q3c?oc=5",
-      "date": "2026-11-09T18:35:26.000Z",
-      "lang": "ar",
-      "titleKo": "이라크의 습지대... 불멸의 전설에서 탄소의 기원과 경제학까지 – 주마 알다라지"
-    },
-    {
       "title": "العراق يتجه إلى استخدام الطائرات المسيّرة في إزالة الألغام",
       "source": "العربي الجديد",
-      "link": "https://news.google.com/rss/articles/CBMi5ANBVV95cUxOTjBIbVZtU3JYTnNPS0kyUW9VZ2h4dE5NZS1VOFBfOEI0cTVPY2RjOG8tQlVXU3kxNmpwRk8tUmJURHpoaGMwM0hMdGhVVk52S0ZOSEJkdzlpaXlDY1pKSkRsUVZKV2NZWm0xdzVtVWsyaWVrSHB2c1YxdWh4OG04cTQtdUJaVmdQVjRhNGV0U3JoME4tOTVzamVWcUNHbXdsZmZZNUNZaEZISEpVZmRkcnhySnlyWVo1UmJ3NVdZLTJlbUhGdmV2UEFlY3p3ZUJtRHhTVXNBSkdzY19BMHdNbHozRW9qb1F2WDhZQjhNNk1DVlRJWXc0cVZpRDJGcEc3TzMwODY3OGFmcDhiWDc1ZVNJckxwamY4WkNRLTZFSXdmM2laMDBDdnBwRkdBRGZUdTZGZ0o0d3ZiVl9aOEk0R1JoMUZrZWRQSlJaZ3BMU3BNd2hxM1RLUFFiNkRqVnphX2p0X3FFb3lZb3VVOHJlNlc4WVRlZnRRd2VUYk03OGJDR0JmaFI3M2pQazYyWmwwM1UyRzFXUS1nNm5lc3AwR3FLWFF5cjFPaGlqN1BHeVB5RHJfWGdXME9teXVzNGpMS1NmaENlTXoyTDByZk5zT3pkTU5udmlxZnJFNUJERnYxRVdV0gHqA0FVX3lxTE1JYTZCZlFPZjdrZ0dOQmxxYVRBZW13SU9DZDNWeEZFZzRXUHpVSUR4Qm5qVWRCbzZDUGN2Q3ZfQmFrcVRQNkUwSzAzTXowR0VkcnAwQUR1WnUzNWRJeTk1YkUwY0Q3MkJ6Z2V0M2k4bWdGdDRvb1RieFRSVTBIaGZIZThtWldPTERHaHY4VmVRWGFjaWY2ODlwd2pFWHhBY0lLeDFickh3dzlJTUd0NmJkVkpqRW9rNS1FYUN2ZXkxM2F1OWFpTE9vam12T2YyTzA4aHBYd0dpTUQ5UDRIa3RMMDdLNUdyNW5HWEgwRVB2ZU9lbG54Y01sUE53LUxTa1djUWZJX3FHeUh0b1hWX2diVGJzZHNnRE9kdlp0M0FGMlBNV0ZYYWRxcjh1UWhNOVdUVHU2WmtYclZKM0tUQnhyQVA5SGphUGJvY3FNT09BWGVOeW9oTFYyUGR0R3Jmd1Rxa1dwN2VYVVJ5V2lHajJ2SUdSdkh6Ujh6V21KWVdKXy1Va2pnYVI2SFFPWGNad0VHTXJvSjltTUt2QzluWTNOWFNqbU1Fczdvc1kxeVpfSGltQTNoY2RuRFhRcWx3dnpvdXZ5ZnZ3ck1Td29MREVkYS1yMXNtQnhOdmtjaWJwVjh1ajZ5TnFYVWc?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi3wNBVV95cUxNWWVraXM0RjA1Ml9EWnR0cVBtQUxJRTRnaDBpRHhVemlJbDNHV2d1MjFkVmRZc0lKOWlnY1FsWjRQMGdvM2VFaGxqOTBVbXZoRE5EV0FLdWt2eVA1ejd1MlZ4QzhaRFBNR3l1NEk4VGFvSG1pd1hMOGp6eW02cjBhVWs1QjgxVlBSNFNaVzJGbTg0WnRjQ3RyTURmckRuZFJpTnAtOXNrSkFWWGRSaUVrdFNqQlYwYlJBUkppYTRVbXktY3p4TEtMc1VzMkd6a0c1b3VkeS10OWhiZUNRc21hTFZGazhlSzVoOHlZUDMycVVXTTFWZllRbi1wdU9wWjlUTFduYldsR0N1enNzUHVyZ0c0OW9FZG5MN0ZNMVRScFVabEl3VzBVSmZPR2NEZzd1aDBONGdBMENRWGFNaUdDYkdlRHZial9zc194QUh3UDRhOVlDUWJfTWRxXzdTUzdSaUsxdzZwN1huMFc1MENJUy1BRy04Y3UwbEVWX2ZwdlQ4OXFPeTZqLVR5NEtDT2NkRmZscmtmQXNzV201TGNaWWlfM2U3UFlWcVJMVWg4RS1yNTJndlp5TWZsclp2SVF5bFEzOXFyQmVmLUU2dDdrOEFQRHRCWVpaQTFidmIwTQ?oc=5",
       "date": "2026-11-09T12:49:40.000Z",
       "lang": "ar",
       "titleKo": "이라크, 지뢰 제거에 드론 사용 추진"
@@ -194,6 +186,14 @@
       "date": "2026-11-09T08:00:00.000Z",
       "lang": "ar",
       "titleKo": "환경: 기후 변화에 대응하여 3개 주 20만 7천 명을 지원하는 프로젝트 » 이라크 통신사(INA) | 이라크 뉴스"
+    },
+    {
+      "title": "العراق يتجه إلى استخدام الطائرات المسيرة لإزالة الألغام",
+      "source": "شفقنا العراق",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5XeEt5ajNxMklkNjB0cGp0ZjlyZW1hRmdfX2NWTlpVMGxaMW9uWTBOVlVVUEhUT2pfeTI1NS1ZQ3c3eVFpeEFPWmZWcUI?oc=5",
+      "date": "2026-11-09T06:46:48.000Z",
+      "lang": "ar",
+      "titleKo": "이라크, 지뢰 제거에 드론 사용 추진"
     }
   ]
 }
