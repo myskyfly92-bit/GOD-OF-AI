@@ -1,5 +1,5 @@
 /* 작업구역(안전 › 작업구역) 잠시 숨김 — 다시 보이려면 false 로 */
-window.WZ_OFF = true;
+window.WZ_OFF = false;
 /* ==========================================================
    Bismayah HSE Situation Room — script.js
    - 실시간 시계 (바그다드 표준시 UTC+3)
