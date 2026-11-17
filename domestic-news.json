@@ -1,90 +1,90 @@
 {
-  "generatedAt": "2026-11-16T00:54:34.310Z",
+  "generatedAt": "2026-11-17T03:39:34.466Z",
   "query": "(질병 OR 전염병 OR 감염병 OR 사고 OR 의료 OR 의학) when:2d",
   "items": [
     {
-      "title": "고려대 안산병원, 몽골 ANKE 영상의학진단센터와 업무협약",
-      "source": "MEDI:GATE NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBORldram9GRmdyXzlQWmc2M0M0TjFrNjQxNDBYMWlha3ZVNUVZY2F4LWhnTmM4U0k4MXg1RWJiSWxoU3FNTU1SdHZfRzJlY1NwM0ZfTXFnUQ?oc=5",
-      "date": "2026-11-16T00:16:00.000Z",
-      "summary": "MEDI:GATE NEWS"
+      "title": "\"제 때 최적 치료 받도록…체감할 수 있는 변화 만든다\"",
+      "source": "의협신문",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaTlZOS1HTjVrY1NjYVN5OVFxMmJyd2pIZzhzSzJUNXJlZ0JWQTFFb2l2QTRRSUxkLWk3d1FaMlpiLU0xYzNqN2F2REU5d2V6WHdSYXREcGx3dExjdk90YmFGeGdWS09ITV9QYUxGdEZrU0UtSGFnRHJoVE5TdkVTUEtaMlN0V3pxTWxF?oc=5",
+      "date": "2026-11-17T02:41:00.000Z",
+      "summary": "의협신문"
     },
     {
-      "title": "의료급여 미지급 예상액 9000억…약국도 약제비 지연 우려",
-      "source": "데일리팜",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBUdkJmQi1zOEVsdGdhQVFSdmFTYXRTSC1jZXFhZklwWHFQcGdzTzYxa3ZvUy1NLTAwOUJrTk5kbW9rb1I0Mm5VbmpTX1BSN0NvamdFSzd3?oc=5",
-      "date": "2026-11-15T21:00:56.000Z",
-      "summary": "데일리팜"
-    },
-    {
-      "title": "원주시, 겨울철 가축전염병 차단방역 총력 대응",
-      "source": "G1방송",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9zNWduQUdpN2pnbGsxUFZOb3hBbzhUa2xqTHhlTTk0WXkyaXd6U3NFMXFrZjRLbWVoMWtDQ2gyYVV4ZlUzZWVKZTFmWWtFNWhUYkx3NHlqd2syMHBzbTJ5TmdNcUZMRDNJTWdjamtvVkhwcnNzSUlkcU1B?oc=5",
-      "date": "2026-11-16T00:42:14.000Z",
-      "summary": "G1방송"
-    },
-    {
-      "title": "美 백악관, AI 사고 자진신고 기업에 규제 책임 완화 권고",
-      "source": "전자신문",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE83Tnp6aXdNYUQ1c3JzOHlrVXc2dXA5R29lZno3cUJiRW9VMG1rRWtaaFZLclN4aVgxS3hZWTNyNzJkQ0kxRjVUb2x6Zklsdw?oc=5",
-      "date": "2026-11-15T23:20:07.000Z",
-      "summary": "전자신문"
-    },
-    {
-      "title": "[AMD] 의료 IT 인프라 효율·보안 강화",
-      "source": "병원신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE56RmJGamtFeGRnLURaTW10dFlCNE81SklxbTFoUndQbl8yRG94ZzF5c0ZCX001bjJNWlkzamtONFE5MVQ3NEUtUEhkcGxfVzJnS1k5M3hvQmJrNTNLaHRDeld5S0lwTTlhZmc?oc=5",
-      "date": "2026-11-15T21:00:00.000Z",
-      "summary": "병원신문"
-    },
-    {
-      "title": "경기도, “가을철 수리산도립공원 산행 안전사고 조심하세요”",
-      "source": "경기도뉴스포털",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOR1l1QU93YVAwczNUcTRRQUpQSk9qLXl3NzlMam1BOGd2V01TcUNQMkZKeUxVTDJiX1BJVzlQM2ZyYnhwU1FObTh4eWR6MUJXQlFTZGFJdlR4aGtObUdoY19jdC1lc0w3cGNHcDlSTDhpY2ZUTGlMZkRFSnY3OTE5TC01c2s?oc=5",
-      "date": "2026-11-15T22:00:00.000Z",
-      "summary": "경기도뉴스포털"
-    },
-    {
-      "title": "[실적]셀바스AI, 3분기 영업익 80% 증가…의료기기 사업 성장",
-      "source": "히트뉴스",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9RTFFMbXRhVDRoT1RuQmxIX1FpWFBOd1ZrNXBYaFg5RkRMNUxNVFhTdldvVjRIaVpTaWVxQUFSel9jRVpNSXd2UnFCNjQ4cUJ4ck16d2djV2FjVWpyVVFnUkxwUHpiOExYWlFJ?oc=5",
-      "date": "2026-11-15T23:21:06.000Z",
-      "summary": "히트뉴스"
-    },
-    {
-      "title": "[이슈] 간호사 연명의료 태도, ‘도덕적 민감성’이 좌우",
+      "title": "예방접종 피해보상, 대리인도 신청 가능…감염병예방법 하위법령 개정",
       "source": "간호사신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1zazNwc2JiN2RYR2Q4eE5xRGxrbTBsUG1YWkhBSVVCY0R5dEVoMWpfWnNIZXg3Umh1WXhDanRJQklsV3VSSUZ1eEVDNHZPMFVEc1FDNE5GX3VfNW9TQ3pFN2ZUaEhjTWtTc2hKNU9B?oc=5",
-      "date": "2026-11-15T23:58:59.000Z",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9vNGVjZk85THpjQ2FXUE55cU1sWWJaMWd3Y2xzQWhpckNKZTFxMFdqaUZWQm9zSEVObElhY1pIWHVpaTJPYzBIUkVxYW1LNXByWG9mREd2YklxeGw3S2R6R3p0eDkxcjdlWnJCQWJ3?oc=5",
+      "date": "2026-11-17T02:17:25.000Z",
       "summary": "간호사신문"
     },
     {
-      "title": "자매결연 22년...수원시의 캄보디아 '수원마을' 의료봉사",
-      "source": "글로벌이코노믹",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWndVQnl2R215dWFWdjZGeF9zZ2ROM1ZSV0ZndVdrY0VzbUdVMTRQNmZIdWxhVlkwcExjd0doS2d0WHJ5TDdwMGlpbUNWWjJ3S015WXNzVWhCTm1rWHRUMmlkNjBUME9TR0x1aWpueGV0SmlqcWdNa1REN0pnYThxdkQwbUl2cXVRdWZV?oc=5",
-      "date": "2026-11-16T00:10:36.000Z",
-      "summary": "글로벌이코노믹"
+      "title": "\"비급여 관리체계 강화하고 필수의료체계 구축 서둘러야 한다\"",
+      "source": "약사공론",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9hODZDMXBJVFFlNUhITzAwWWM1RG94aHF3ZUlOZHBHbkM2RHV1Q29ua2d2MUpsb212ZDh3enVUYXBKV2xGcmRGX3B3dXVuVmZqamdaaC11Tl8zV2hIbWZkckYwcjB5eU9sQlNocg?oc=5",
+      "date": "2026-11-17T00:11:00.000Z",
+      "summary": "약사공론"
     },
     {
-      "title": "금융위, 금융보안원 침해사고에 유감 표명… 재발방지 대책 요청",
-      "source": "Chosunbiz",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOYjR6LWtBZUVzMjhUc2NIWjJyZWlrVDdkRDg2dGNwczloRFQwVjdtWUJSQVZpUS1TN3BjXzYxOGhyMjhlaHZaYU5QR2tCZDFhZWwwaWJkQjlIWHpiTGFqcTlOY0dCVFRoWHhROUc1YTFQR3NhZDJXeEJYWmVZMjVLQtIBlAFBVV95cUxQY1JBdjcxemZiX0pzTUpQQ2JFNDVfRUtHLXZlci1lYzZXa1JzWnRUZVRXTFhZdEtKODNaTXVvWDBhZDVUTHlMOXRJdVVBWURNalpiV0ZHVWc5Wjh5cmJLcVc5a2N5WnI5bmVuVTFmcWlGMktvZWdSOTVxUTYwVVhhdHUyVDdGYjEyMnh0MnNNNldtZEtS?oc=5",
-      "date": "2026-11-16T00:49:00.000Z",
-      "summary": "Chosunbiz"
+      "title": "양종철 전북병원회장 “지역 필수․응급 의료 보상 절실”",
+      "source": "후생신보",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBQY09hNVY1RVZLY0VuZFhCQTNvZ2RFVGFCTHA0YjZnNUlXdlRZQWN2UGt0NFA3RXlrOGlPMjU4T2pfUm1Z?oc=5",
+      "date": "2026-11-17T03:00:00.000Z",
+      "summary": "후생신보"
     },
     {
-      "title": "질병관리청, 2025 국가 항균제 내성균 조사 연보 발간",
-      "source": "서남투데이",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE91ZWJGOXRGaDlEQ3EtNWlHbzZjWlQ4cVNYbDJ1MUhvNGpCakZCR3BXX25XQ0taY1d0b2pWSTFwS0lUTW1GN1FBb2lEZzJrUjNGQmx6dkVucmRYdw?oc=5",
-      "date": "2026-11-16T00:43:37.000Z",
-      "summary": "서남투데이"
+      "title": "금감원, 전금·온투업 외부접점 전수점검…사고 시 엄정 책임",
+      "source": "연합인포맥스",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKR1R2SnJhSjFoRGQyYlczZk9YbFNNSHlIRGFLZDBQTndjU0FxbmNZbW93SFhEdFk2V3BFLTRnUWw1amszZUdYUDFuODUtUGZVODdvQmxxZGJVZXJEY3BRbXpvbHBJYWc2bWJKeGZFUWk?oc=5",
+      "date": "2026-11-17T01:00:15.000Z",
+      "summary": "연합인포맥스"
     },
     {
-      "title": "혁신의료기기 정책 포럼 열리다",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBUSnlEQlNPZU52a0doQXhDTHdGQXc2dWlVZnJIajhmdVdyUGRoVFEzSVJRUTJxVVI5Ykc1M2FubzJ5ME51MUhpTXlSeEdOS1JYelFnZEttRFU1YjZVM0NWRGNtRzdmZlczZHc?oc=5",
-      "date": "2026-11-16T00:10:26.000Z",
-      "summary": "의학신문"
+      "title": "호주 2위 유통업체 콜스, 사이버 보안 사고 조사 착수",
+      "source": "보안뉴스",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB4Qzk1ODVzS01YM0VSUEc5a3IyOEk5eDE5T2QzMXpSUWc5ZU4ya0NROVlIbUN0T1N2SlJzOGhJbkI3WFJJT3YyWnlrRVd6aThBUmpDZldDaW1wOGZ1WmtZS2ZnYkJfalBvUGxN?oc=5",
+      "date": "2026-11-17T01:21:00.000Z",
+      "summary": "보안뉴스"
+    },
+    {
+      "title": "예방접종 피해 국가보상, 대리인 신청 가능…감염병예방법 개정 시행",
+      "source": "한국의약통신",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qMzNoczZRdzdLeURzN05NUkctVW1fckVkQ3REaDJpRzlScF9KZ3huSHE5aUFCYmNCckZfOVN2Vmk5MDhyNHQwZ0lIekVHc0RJbVhDY0J2YjgxVUJMcWxwY1RsV19uTFl1eklr?oc=5",
+      "date": "2026-11-17T01:02:55.000Z",
+      "summary": "한국의약통신"
+    },
+    {
+      "title": "‘1급 감염병’ 디프테리아 재확산…나이지리아 아동 수천 명 위험",
+      "source": "동아일보",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9UbVN6REp4MWJySzBjR0Rod0lFdUlsTHZ4Wl8xVXp3dElFNGdSSW0xMkM0TnpRMV95aGxVSzQwbE9VMkpsUU1MQXZXbXNUVXlEUzdHcnVJX1RrVmtISG1IX3A3QzB2WTFjQk5sYzYyM1IzNDRnNUHSAWZBVV95cUxOaHdNR0MtRUU3Ny1vdkduY2dMSEQtNzJ5cFoxc3pRVDAxck11dHhZTVcxMUJKbjNIMGs4UGdBVWFwMWlFX21uV01Pd3NWOHQySW9zQ3diZmo5NkRiMEphQkhWNWw3ZEE?oc=5",
+      "date": "2026-11-17T02:36:57.000Z",
+      "summary": "동아일보"
+    },
+    {
+      "title": "“병원 간 벽 허물고 협력 강화…전북형 지역완결 의료체계 구축할 것”",
+      "source": "병원신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE40Y1JFSzdxUkoxQWZEak9JcVZxNzB1Q05RZ3ZxSTBOTkhqNnp2OGlOekxCYkdScTVXVGJ4cHlvTmFncnQzQ3h1YVRaTlNwdUJONlg3QzJxU1VJY1dhWkZNaHlpb0xsOTBGN0E?oc=5",
+      "date": "2026-11-16T23:54:53.000Z",
+      "summary": "병원신문"
+    },
+    {
+      "title": "금감원, 전자금융업자·온라인투자연계금융업자 대상 침해사고 대응 간담회",
+      "source": "Daily NTN",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHbkJJc0lDeDhsT2pwSWZ0aFV2NUdqYk9GcGNZZktlSG52LUlmQ0ZJTTh2cmV6ZC04aVVBSnN6c1Qtc29CYU80SllGY2ZBNDVOS0FMRnljbUh2VEN5dThKQUVyV1dfRGk1SXc?oc=5",
+      "date": "2026-11-17T01:00:00.000Z",
+      "summary": "Daily NTN"
+    },
+    {
+      "title": "금감원 “침해사고 책임 물을 것”…전금·온투업자 보안점검 당부",
+      "source": "KBS 뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tcG9PZXh5eENPLWtld3hRTVpQZU8yMURzOUFJLUhVUzQ3NmM1cnhXZ290M2R4ekdUNXQxcllPTmRDVTlkOEJlV1FyYzRmbG5lcW1rVHRJVDIxVDRBUjhfZmRKWmQyQQ?oc=5",
+      "date": "2026-11-17T01:02:00.000Z",
+      "summary": "KBS 뉴스"
+    },
+    {
+      "title": "의료기기업계 '2026 올해의 홍보인상', 인바디 양수연 과장 수상",
+      "source": "MEDI:GATE NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0wSEhkTFhQTXhDdk1aSnFhRXFkX0lCX1NEN2ZSc3F6OFFKTFFlUjVLMHZ2UHNMd3JiZ2VuNURHeWpIT3lKVzZ4dlFfRV9lcE5EZTVHZ0xGUQ?oc=5",
+      "date": "2026-11-17T01:08:00.000Z",
+      "summary": "MEDI:GATE NEWS"
     }
   ]
 }
