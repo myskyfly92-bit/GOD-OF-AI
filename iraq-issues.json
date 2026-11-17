@@ -1,11 +1,529 @@
 {
-  "generatedAt": "2026-11-17T13:38:21.478Z",
+  "generatedAt": "2026-11-17T22:31:12.013Z",
   "items": [
     {
-      "title": "Iraqi leader's planned crackdown on pro-Iran militias is riskiest move yet",
-      "source": "Reuters",
+      "title": "مصدر أمني للعربية: لا صحة للأنباء المتداولة بشأن إغلاق المنطقة الخضراء وسط بغداد",
+      "source": "VDL NEWS",
+      "link": "https://www.vdlnews.com/news/643439",
+      "date": "2026-11-17T21:50:48.000Z",
+      "lang": "ar",
+      "titleKo": "알-아라비야 보안 소식통: 바그다드 중심부의 그린존 폐쇄에 관한 소문은 사실이 아닙니다.",
+      "url": "https://www.vdlnews.com/news/643439",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "VDL NEWS"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "그린존",
+        "km": 25
+      }
+    },
+    {
+      "title": "요르단과 이라크는 안보상의 이유로 텔레그램 앱을 차단합니다.",
+      "source": "Vietnam.vn",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTUxCb0QzRkxMTFFkNzJsR2JlZ2NUeHZKeGpmakJ6S2ZlUGY5WW9HajZCRW0xbU5uekl2S3NTaWNYdC1sYmVXR214c3htVFhmUGc0VUQxbURENFJYOGtzZFNFd3BKN2dnLUFUeHBza0w4VFk0WUw4RzBKOFRPOXlZRkZOV2w2QTA?oc=5",
+      "date": "2026-11-17T20:35:08.000Z",
+      "lang": "ko",
+      "titleKo": "요르단과 이라크는 안보상의 이유로 텔레그램 앱을 차단합니다.",
+      "count": 4,
+      "sources": [
+        "Arab News",
+        "Malay Mail",
+        "Vietnam.vn",
+        "데일리안"
+      ],
+      "related": [
+        {
+          "titleKo": "메신저 차단: 이라크와 요르단이 텔레그램을 금지한 이유",
+          "source": "Arab News",
+          "link": "https://www.arabnews.com/middle-east/shooting-the-messenger-why-iraq-and-jordan-banned-telegram-3012452"
+        },
+        {
+          "titleKo": "두 나라, 하루, 하나의 금지 조치: 요르단과 이라크에서 텔레그램 차단",
+          "source": "Malay Mail",
+          "link": "https://www.malaymail.com/news/world/2026/11/17/two-countries-one-day-one-ban-telegram-blocked-in-jordan-and-iraq/243626"
+        },
+        {
+          "titleKo": "요르단 이어 이라크도 테러범 소통 창구 된 텔레그램 전면 차단",
+          "source": "데일리안",
+          "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNaGhleHBid052ZF9JSkh6T1FpRDVFR3IzeVNaWmUwNG9pdGc4ZE10SkxpNXFfU3M2QW5hSVdOX3NUVWJ1MVdfa1B3TnYwV09VQ2NQWXdJc3EyMHZMVkxkTEdGRmgzZDhYM3hJaVRLeXNTdW1tMklVb3Q0Ty1CUHcwX2xVQks5bXpJMUF1bGFCMGhsVUNZVzZ1aGF1YzJRTXctVWdLdWZfeVd0blZFNjBORjlUQk1ual9LX0VoQUQ0VXlndVA1ZHRWWDEzSmZmTmFlYWhuNnJhdUdqZnByWXI4Wm1BTWZwT3QyYkFzdnVfUjYwNnJ4cFphbV83dDFyaWRBZnNiTUt5OVVJcWxuRm1fdmljc05sTW8?oc=5"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq’s Kataib Hezbollah refuses to withdraw from Jurf al-Sakhar",
+      "source": "IraqiNews",
+      "link": "https://www.iraqinews.com/iraq/iraqs-kataib-hezbollah-refuses-to-withdraw-from-jurf-al-sakhar/",
+      "date": "2026-11-17T20:19:49.000Z",
+      "lang": "en",
+      "titleKo": "이라크 카타이브 헤즈볼라, 주르프 알사카르 철수 거부",
+      "url": "https://www.iraqinews.com/iraq/iraqs-kataib-hezbollah-refuses-to-withdraw-from-jurf-al-sakhar/",
+      "body": "Iraq’s Kataib Hezbollah refuses to withdraw from Jurf al-Sakhar\nFighters carrying flags of Iraq and paramilitary groups, including Kataib Hezbollah, during a funeral in Baghdad for five militants killed a day earlier in a US strike in northern Iraq, on December 4, 2023. Photo: Ahmad al-Rubaye/AFP via Getty Images\nBaghdad (IraqiNews.com) – The Iran-backed militant group Kataib Hezbollah has publicly refused an Iraqi government order to withdraw from its stronghold in Jurf al-Sakhar, also known as Jurf al-Nasr, in Iraq’s central province of Babil.\nAccording to reports, Iraqi and Iranian officials reached a mediation deal on Tuesday to defuse the crisis.\nKataib Hezbollah accused the government of fabricating allegations to weaken the group and blamed US special envoy Tom Barrack for the escalation.",
+      "bodyKo": "이라크 카타이브 헤즈볼라, 주르프 알사카르 철수 거부\n2023년 12월 4일, 이라크 북부에서 미국군의 공습으로 전날 사망한 무장대원 5명의 장례식이 바그다드에서 열린 가운데, 이라크 국기와 카타이브 헤즈볼라를 비롯한 준군사 단체의 깃발을 든 무장대원들의 모습. 사진: Ahmad al-Rubaye/AFP via Getty Images\n바그다드(IraqiNews.com) – 이란의 지원을 받는 무장단체 카타이브 헤즈볼라가 이라크 중부 바빌 주에 위치한 거점인 주르프 알사카르(주르프 알나스르라고도 함)에서 철수하라는 이라크 정부의 명령을 공개적으로 거부했다.\n보도에 따르면 이라크와 이란 당국자들은 위기 해소를 위한 중재 합의에 화요일에 도달했다.\n카타이브 헤즈볼라는 정부가 자신들의 세력을 약화시키기 위해 허위 주장을 꾸며냈다고 비난하며, 미국 특사 톰 배럿을 이번 사태의 원인으로 지목했다.",
+      "tried": true,
+      "count": 9,
+      "sources": [
+        "IraqiNews",
+        "شفق نيوز",
+        "Kurdistan24",
+        "Ahram Online"
+      ],
+      "related": [
+        {
+          "titleKo": "샤파크 뉴스.. 이라크 주르프 알사크르 전역에 카타이브 헤즈볼라 전투원 배치",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Security/Kataib-Hezbollah-fighters-deployed-across-Iraq-s-Jurf-Al-Sakhr"
+        },
+        {
+          "titleKo": "이라크 총리와 이란혁명수비대 사령관이 주르프 알사카르에서 카타이브 헤즈볼라(KH) 철수를 위한 합의에 도달한 것으로 알려짐",
+          "source": "Kurdistan24",
+          "link": "https://www.kurdistan24.net/en/story/953763/iraqi-pm-irgc-commander-reportedly-reach-deal-on-kh-withdrawal-from-jurf-al-sakhar"
+        },
+        {
+          "titleKo": "이라크 카타이브 헤즈볼라, 바그다드 인근 거점 철수 거부: AFP에 밝힌 사령관 - 지역",
+          "source": "Ahram Online",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9oSGtXd0JiMDBZM3UtaVNiX3hPMXotaWFLbUZoOW5oTkJ0dUwzNGNObUdLX01uYlJmSHNXaHNNQWRDYkJ2R1IyeUlHalVXTGhEQzdua1c5UlM?oc=5"
+        },
+        {
+          "titleKo": "샤파크 뉴스.. 이라크 정부, 주르프 알사크르 단속 약속",
+          "source": "شفق نيوز",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1NeTZzVTJfT0NfMjN1aEctUF9qU2pJQ0g1MG9rTGlFZWVJbHlCQi1Ha2Y0dU9CS0JGQWI2ZExlU2pRQlpBTVM2N3VMVlFCS1JteDNmYXBwbG5rMlE1OGZNT2daRnBVSXpROC1VZlFBeXNENzRRb0xESFZtd1E?oc=5"
+        },
+        {
+          "titleKo": "이라크, 주르프 알사카르에서의 석유 밀수 단속 약속",
+          "source": "Kurdistan24",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLS1UZnRXcGd0ckt6ZXo4Nnp1QUFyc0Nmai1wdXpvQUoycVc1SHdnbXBLcGNpbUpQNFhQNTl2MS1zaXQ3T0pvSkJOYURQRU9idUlsb0xIaU5fQUV3VVQyOUJGajNoaXhfV0NNNUVqaC1uRjItNTVwNDROdGlRd1ZISXlQT2hKWndCTmpBa25UbTZlRlJWbENiclNDV2xwdUVTaE9BLQ?oc=5"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Source Says Baghdad, Iran Reach Deal on Jurf al-Sakhar",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/953795/source-says-baghdad-iran-reach-deal-on-jurf-al-sakhar",
+      "date": "2026-11-17T19:46:48.000Z",
+      "lang": "en",
+      "titleKo": "소식통에 따르면 바그다드와 이란이 주르프 알사카르에 대한 합의에 도달했다고 한다.",
+      "url": "https://www.kurdistan24.net/en/story/953795/source-says-baghdad-iran-reach-deal-on-jurf-al-sakhar",
+      "body": "A source says Iraqi PM Ali al-Zaidi and Esmail Qaani agreed Kataib Hezbollah will leave Jurf al-Sakhar, with a joint force to enter. Al-Hurra reports.\nERBIL (Kurdistan24) - Iraqi Prime Minister Ali al-Zaidi and Esmail Qaani, commander of the Quds Force of Iran&rsquo;s Islamic Revolutionary Guard Corps, have reached an agreement under which Kataib Hezbollah would soon withdraw from the Jurf al-Sakhar sub-district in Babil province, a source within the Coordination Framework told Al-Hurra on Tuesday.\nAccording to the source, the deal is meant to prevent a military operation that the Iraqi government had been preparing in the area.\nThe source, who did not disclose their identity, said Qaani arrived in Baghdad on Monday night and stayed there. They added that he met Zaidi until 4 a.m. on Tuesday.",
+      "bodyKo": "한 소식통에 따르면, 이라크의 알리 알자이디 총리와 에스마일 카아니가 카타이브 헤즈볼라가 주르프 알사카르에서 철수하고 연합군이 진입하는 데 합의했다고 합니다. 알후라 보도.\n에르빌(쿠르디스탄24) - 이라크의 알리 알자이디 총리와 이란 이슬람혁명수비대 쿠드스군의 사령관인 에스마일 카아니가 바빌 주르프 알사카르 하위지구에서 카타이브 헤즈볼라가 곧 철수할 것이라는 내용의 합의에 도달했다고 조정기구 내부 소식통이 12일 알후라에 밝혔다.\n소식통에 따르면, 이 합의는 이라크 정부가 해당 지역에서 준비해 온 군사 작전을 막기 위한 것이다.\n신원을 밝히지 않은 소식통은 카아니가 월요일 밤 바그다드에 도착해 머물렀다고 전했다. 그들은 그가 화요일 오전 4시까지 자이디와 만났다고 덧붙였다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Qaani in Iraq as Iran moves to defuse Jurf al-Sakhr standoff",
+      "source": "Middle East Online",
+      "link": "https://middle-east-online.com/en/qaani-iraq-iran-moves-defuse-jurf-al-sakhr-standoff",
+      "date": "2026-11-17T18:32:59.000Z",
+      "lang": "en",
+      "titleKo": "이란이 주르프 알사크르 대치 상황을 완화하기 위해 나서는 가운데 카아니가 이라크를 방문하다",
+      "url": "https://middle-east-online.com/en/qaani-iraq-iran-moves-defuse-jurf-al-sakhr-standoff",
+      "body": "The visit also comes amid differing accounts of Tehran's role. Two days earlier, Iraqi government spokesperson Haider al-Aboudi denied Iranian mediation.\nBAGHDAD – Iran has sent its Quds Force commander Esmail Qaani to Iraq to defuse a growing confrontation between Prime Minister Ali al-Zaidi and Kataib Hezbollah over control of a strategic district south-west of Baghdad, as a government deadline for the Iran-backed faction to withdraw approaches on Friday.\nQaani arrived in Iraq on Monday on what a political source described as an urgent mission from Supreme Leader Mojtaba Khamenei to contain the dispute and prevent it from escalating into armed confrontation. His visit marks a direct Iranian intervention in a crisis that Baghdad had previously described as an internal Iraqi matter.\nThe Quds Force commander, who heads the overseas operations arm of Iran's Revolutionary Guard Corps, met leaders of armed factions and senior figures from the ruling Coordination Framework in Baghdad, befor",
+      "bodyKo": "이번 방문은 테헤란의 역할에 대한 상반된 견해가 제기되는 가운데 이루어졌다. 이틀 전, 이라크 정부 대변인 하이데르 알아부디는 이란의 중재를 부인했다.\n바그다드 – 이란이 쿠드스군 사령관 이스마일 카아니를 이라크에 파견하여 알리 알자이디 총리와 카타이브 헤즈볼라 간의 바그다드 남서부 전략적 지역 통제권을 둘러싼 갈등을 완화시키려 하고 있다. 이란의 지원을 받는 카타이브 헤즈볼라가 철수해야 하는 정부의 시한이 금요일에 다가오고 있기 때문이다.\n카아니는 지난 월요일 이라크에 도착했으며, 한 정치 소식통은 이를 최고 지도자 모지타바 하메네이로부터 받은 분쟁을 수습하고 무력 충돌로 비화하는 것을 막기 위한 긴급 임무라고 설명했다. 그의 방문은 바그다드가 이전에 이라크 내부 문제라고 규정한 위기에 대한 이란의 직접적인 개입을 의미한다.\n이란 혁명수비대 해외 작전 부서를 이끄는 쿠드스군 사령관은 바그다드에서 무장 세력 지도자들과 집권 여당인 '조정체계'의 고위 인사들을 만나고",
+      "tried": true,
+      "count": 3,
+      "sources": [
+        "Elnashra",
+        "Lebanon ON",
+        "Middle East Online"
+      ],
+      "related": [
+        {
+          "titleKo": "AFP: 카아니와 자이디가 월요일 바그다드에서 카타이브 히즈불라의 본거지인 자르프 알사크르의 긴장을 논의했습니다.",
+          "source": "Elnashra",
+          "link": "https://www.elnashra.com/news/show/1809664/%D9%82%D8%A7%D8%A2%D9%86%D9%8A-%D9%88%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D8%A8%D8%AD%D8%AB%D8%A7-%D8%A7%D9%84%D8%A7%D8%AB%D9%86%D9%8A%D9%86-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%A7%D9%84%D8%AA%D9%88%D8%AA%D8%B1%D8%A7%D8%AA-%D8%AC%D8%B1%D9%81-%D8%A7%D9%84%D8%B5%D8%AE"
+        },
+        {
+          "titleKo": "카아니와 자이디가 바그다드에서 상황을 진정시키기 위해 노력하고 있는 가운데, '히즈불라' 여단은 자르프 알사크르를 고수하고 있습니다.",
+          "source": "Lebanon ON",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5mNEtiaHlBWVM1Z19ISzJ5SHlkZU9mTzg0ekZzLVAwS3FyXzVfcjRTT3Fjb01Ud25BcS1pZVF1MTV3QnZ2RW9VWndCb21IUQ?oc=5"
+        }
+      ],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "전직 인질, 이라크 민병대 거점에 억류됐다고 밝혀 - 총리가 겨냥한 지역",
+      "source": "Mezha.net",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYllLMUY2Ym5lRVFnUDdqTFlUQVhTbHBiY3ZudnZVVFYwTzYtQkNPVlE0alBVdElTaGNMT05wV0lLQmw4UGxENGVMWlFrbzhxa0ZDSDlDTzhseFRLMnRza0lGcnBHQVRYN3FlelBmYU45cEpTMjRiNGlQanFQQ3k0TXFOc1Q1dWpFaEd2SFRuSTFacnRL?oc=5",
+      "date": "2026-11-17T18:20:38.000Z",
+      "lang": "ko",
+      "titleKo": "전직 인질, 이라크 민병대 거점에 억류됐다고 밝혀",
+      "count": 4,
+      "sources": [
+        "Mezha.net",
+        "Fox News",
+        "Iran International"
+      ],
+      "related": [
+        {
+          "titleKo": "전직 인질, 이라크 총리가 겨냥한 민병대 거점에서 억류당했다고 증언",
+          "source": "Mezha.net",
+          "link": "https://mezha.net/eng/news/mezha-88798ca359b356d53311d9bb_former_hostage_says/"
+        },
+        {
+          "titleKo": "이라크 총리가 겨냥한 이란 지원 민병대 거점에서 겪은 포로 생활을 전하는 전 인질",
+          "source": "Fox News",
+          "link": "https://www.foxnews.com/world/ex-hostage-recounts-captivity-iran-backed-militia-stronghold-now-targeted-iraqi-prime-minister"
+        },
+        {
+          "titleKo": "이라크의 민병대 거점 공격, 이란의 영향력 억제에는 큰 효과 없을 듯",
+          "source": "Iran International",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAxcjhYVlpSUG1qY3dNWXV2bFhQYTN4elBZQ0FmdEpjMk1zaUJKbDdJUHEzbldKbm5WRHhmY1Y0QnEzbE52OGpIUUtNbmNzSFZ3ZXc?oc=5"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraqi PM heads to Lebanon amid push to explore oil routes beyond Hormuz",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/economy/2026/11/17/iraq-pm-heads-to-lebanon-amid-push-to-explore-oil-routes-beyond-hormuz",
+      "date": "2026-11-17T18:05:06.000Z",
+      "lang": "en",
+      "titleKo": "호르무즈를 우회하는 석유 수송 경로 모색 움직임 속 이라크 총리, 레바논 방문",
+      "url": "https://www.aljazeera.com/economy/2026/11/17/iraq-pm-heads-to-lebanon-amid-push-to-explore-oil-routes-beyond-hormuz",
+      "body": "Ali al-Zaidi’s talks expected to include proposed project linking Tripoli in Lebanon to Kirkuk-Baniyas pipeline.\nx whatsapp-stroke copylink google Add Al Jazeera on Google info By Justin Salhani Published On 17 Nov 2026 17 Nov 2026 Beirut, Lebanon – Iraq’s Prime Minister Ali al-Zaidi is set to visit Lebanon on his latest regional visit aimed at boosting economic cooperation amid the fallout from the US-Israel war on Iran.\nAl-Zaidi will hold a series of high-level meetings in Beirut, including with Lebanese President Joseph Aoun, Prime Minister Nawaf Salam and Parliament Speaker Nabih Berri.\nHigh on the agenda of Wednesday’s talks will be strengthening bilateral trade, customs exemption deals and coordination on security and countering drug trafficking.\nDiversifying oil export routes via a pipeline linking the Iraqi city of Kirkuk, through Syria’s Mediterranean port of Baniyas, to Tripoli in northern Lebanon, is also expected to be discussed. The proposed project is aimed at potentially",
+      "bodyKo": "알리 알자이디 장관의 회담에는 레바논의 트리폴리와 키르쿠크-바니아스 송유관을 연결하는 프로젝트 제안이 포함될 것으로 예상된다.\nx whatsapp-stroke copylink google Google에서 알자지라 추가 정보 저스틴 살하니 작성 2026년 11월 17일 게시 2026년 11월 17일 레바논 베이루트 – 이라크의 알리 알자이디 총리가 미국-이스라엘 전쟁으로 인한 이란에 대한 여파 속에서 경제 협력을 강화하기 위한 최근의 지역 방문에서 레바논을 방문할 예정이다.\n자이디 대사는 베이루트에서 조셉 아운 레바논 대통령, 나와프 살람 총리, 나비흐 베리 국회의장 등과 일련의 고위급 회담을 가질 예정이다.\n수요일 회담의 주요 의제는 양국 간 무역 강화, 관세 면제 협정, 안보 및 마약 밀매 대응 협력이다.\n이라크의 키르쿠크시에서 시리아의 지중해 항구인 바니아스를 거쳐 레바논 북부의 트리폴리로 연결되는 송유관을 통해 석유 수출 경로를 다각화하는 방안도 논의될 것으로 예상된다. 제안된 프로젝트는 잠재적으로 다음을 목표로 한다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Al Jazeera"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "키르쿠크",
+        "km": 254
+      }
+    },
+    {
+      "title": "Iraq’s oil smuggling inquiry widens to Kirkuk, Basra and Nineveh",
+      "source": "964media",
+      "link": "https://en.964media.com/55503/",
+      "date": "2026-11-17T17:55:04.000Z",
+      "lang": "en",
+      "titleKo": "이라크의 석유 밀수 수사가 키르쿠크, 바스라, 니네베로 확대",
+      "url": "https://en.964media.com/55503/",
+      "body": "BAGHDAD — Iraq’s parliamentary inquiry into oil smuggling has identified several sites linked to smuggli\nOne of the committee’s seven subcommittees found the sites during a field visit to Jurf al-Sakhar, Patriotic Union of Kurdistan lawmaker Harem Kamal Agha told the state-run Iraqi News Agency. He did not say when the visit took place or describe the sites.\nThe trips to the three governorates will examine smuggling sites and methods there, Kamal Agha said. The committee will then write a full report for Parliament Speaker Haibat al-Halbousi, to be referred to the Council of Ministers for action.\nSince it was formed, the committee has met the Oil Ministry and other bodies to gather details on the amounts smuggled, the methods used and the pipelines involved, and it has received a comprehensive report on the case, he said. It met the security agencies concerned on Monday.",
+      "bodyKo": "바그다드 — 이라크 의회의 석유 밀수 조사에서 밀수와 연관된 여러 장소가 확인되었다.\n쿠르드스탄 애국연합 소속 하렘 카말 아가(Harem Kamal Agha) 의원은 국영 이라크 뉴스통신에 위원회의 7개 소위원회 중 하나가 주르프 알사카르(Jurf al-Sakhar) 현장 방문 중 해당 장소를 발견했다고 밝혔다. 그는 방문 시기를 밝히지 않았으며 현장에 대한 설명도 하지 않았다.\n카말 아가는 세 곳의 주를 방문하여 그곳의 밀수 장소와 수법을 조사할 것이라고 말했다. 그런 다음 위원회는 하이바트 알할부시(Haibat al-Halbousi) 국회의장을 위한 전체 보고서를 작성하여 조치를 취하도록 각료회의에 회부할 예정이다.\n그는 위원회가 구성된 이래로 석유부 및 기타 기관과 만나 밀수된 양, 사용된 방법 및 관련된 송유관에 대한 세부 정보를 수집했으며, 이 사안에 대한 종합 보고서를 받았다고 말했다. 위원회는 월요일에 관련 보안 기관과 회의를 가졌다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "964media"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "키르쿠크",
+        "km": 254
+      }
+    },
+    {
+      "title": "PM adviser: Iraq commits $6.6M to Syria border crossing",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/society/PM-adviser-Iraq-commits-6-6M-to-Syria-border-crossing",
+      "date": "2026-11-17T17:46:48.000Z",
+      "lang": "en",
+      "titleKo": "샤파크 뉴스..총리 자문: 이라크, 시리아 국경 통과 지점에 660만 달러 투입",
+      "url": "https://shafaq.com/en/society/PM-adviser-Iraq-commits-6-6M-to-Syria-border-crossing",
+      "body": "Shafaq News- NinevehIraq has allocated more than 10 billion Iraqi dinars (around $6.6 million) to upgrade the Rabia border crossing with Syria and surrounding areas, prime ministerial adviser Hadi Al-\nAl-Salami, who advises the prime minister on border crossings and customs, said Iraq was also seeking to open a new direct crossing with Turkiye capable of handling around 1,000 trucks daily. He added that coordination with the Kurdistan Regional Government to facilitate trade was continuing.\nHe expected traffic through Rabia , in Nineveh province, to reach 1,000 trucks a day, alongside more than 20 buses carrying pilgrims and other travelers. Work at the crossing continued around the clock on the prime minister&rsquo;s instructions, he said, citing engagement with Syria and Turkiye.\nCentral Committee 613, which examines customs, border crossings and transport issues, had met in Nineveh for the first time after previously holding its meetings in Baghdad, Al-Salami said, producing signed j",
+      "bodyKo": "샤파크 뉴스 - 이라크 니네베. 이라크는 시리아와의 라비아 국경 통과 지점과 주변 지역을 개선하기 위해 100억 이라크 디나르(약 660만 달러) 이상을 배정했다고 하디 알-\n국경 통과 및 세관 문제에 대해 총리를 자문하는 알살라미는 이라크가 매일 약 1,000대의 트럭을 처리할 수 있는 튀르키예와의 새로운 직통 통과 지점 개설도 추진하고 있다고 밝혔다. 그는 무역을 촉진하기 위한 쿠르드 자치정부와의 협의가 계속되고 있다고 덧붙였다.\n그는 니네웨주 라비아를 통과하는 차량이 하루 1,000대의 트럭과 순례자 및 기타 여행객을 태운 20대 이상의 버스에 이를 것으로 예상했다. 그는 시리아와 튀르키예와의 협력을 언급하며 총리의 지시에 따라 국경 검문소에서 24시간 내내 작업이 계속되고 있다고 말했다.\n알-살라미 위원장은 세관, 국경 통과 및 운송 문제를 검토하는 중앙위원회 613이 이전에 바그다드에서 회의를 개최한 후 처음으로 니네베에서 회의를 열었다고 밝혔다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq vows to 'cleanse' militia stronghold Jurf Al Sakhar of oil smuggling",
+      "source": "The National",
+      "link": "https://www.thenationalnews.com/news/mena/2026/11/17/iraqs-ruling-alliance-split-over-jurf-al-sakhar-standoff-as-militia-withdrawal-deadline-looms/",
+      "date": "2026-11-17T17:27:23.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 민병대 거점인 주르프 알 사카르에서 석유 밀수 '척결'을 약속하다",
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/17/iraqs-ruling-alliance-split-over-jurf-al-sakhar-standoff-as-militia-withdrawal-deadline-looms/",
+      "body": "Ruling alliance split over standoff as deadline looms for Kataib Hezbolalh to withdraw from area\nThe Iraqi government said on Tuesday it has a comprehensive plan to tackle large-scale oil theft in a militia stronghold where its troops are preparing for an intervention.\n\"There is oil smuggling and theft of this vital resource,\" government spokesman Haider Al Aboudi told a news conference in Najaf. He said the government planned to \"cleanse\" the area \"of any party or entity\" tampering with the country's oil.\nHe added that the government is investigating smuggling in Jurf Al Sakhar and other parts of the country.\n\"Iraqi security forces are ready to take action in any areas where suspected oil smuggling activities are identified,\" he added.\nControversy has been mounting in Iraq after the leak of an intelligence report documented organised oil theft dating back to 2021 in Jurf Al Sakhar.",
+      "bodyKo": "카타이브 헤즈볼라의 지역 철수 시한이 다가옴에 따라 여당 연합이 대치 국면으로 분열\n이라크 정부는 11일, 자국 군대가 개입 준비를 하고 있는 민병대 거점에서 대규모 석유 절도를 단속하기 위한 포괄적인 계획을 갖고 있다고 밝혔다.\n정부 대변인 하이데르 알 아부디(Haider Al Aboudi)는 나자프에서 열린 기자회견에서 \"이 중요한 자원인 석유가 밀수되고 도난당하고 있다\"고 말했다. 그는 정부가 이라크의 석유를 불법 취급하는 \"모든 정당이나 단체\"를 해당 지역에서 \"척결\"할 계획이라고 말했다.\n그는 정부가 주르프 알 사카르와 이라크의 다른 지역에서 벌어지는 밀수를 조사하고 있다고 덧붙였다.\n그는 \"이라크 보안군은 석유 밀수 활동이 의심되는 모든 지역에서 즉각 조치를 취할 준비가 되어 있다\"라고 덧붙였다.\n2021년 주르프 알 사카르에서 발생한 조직적인 석유 절도 사건을 기록한 정보 보고서가 유출된 후 이라크에서 논란이 커지고 있습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The National"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "나자프",
+        "km": 135
+      }
+    },
+    {
+      "title": "Iraqi PM Vows to Pursue Those Carrying Weapons Outside State Framework",
+      "source": "Kurdistan24",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeld2cGVhQzBGN0E0eFN3VFoyOWQ1c1ZuS2RzRXlZcWJTcU01aXNiWEJGZ04yVDhGR1MzaTN1OTh1WXF2TlpESW4xaDFWM3VuZnhzUV9kY0FaNTRTcmQtQm9NNTFlSkQzNi12bzZKTmFaVHZVcHZhNVk0Ml8tWjU4V19JbGNTcndGYUdfTTEyYXJjQWdFY05uZTd4V1RZWFZOMVN4UFEtOGZjeUR0RDNQeElNNnY?oc=5",
+      "date": "2026-11-17T16:45:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크 총리, 정부의 통제를 벗어난 무장 세력 추적 약속",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeld2cGVhQzBGN0E0eFN3VFoyOWQ1c1ZuS2RzRXlZcWJTcU01aXNiWEJGZ04yVDhGR1MzaTN1OTh1WXF2TlpESW4xaDFWM3VuZnhzUV9kY0FaNTRTcmQtQm9NNTFlSkQzNi12bzZKTmFaVHZVcHZhNVk0Ml8tWjU4V19JbGNTcndGYUdfTTEyYXJjQWdFY05uZTd4V1RZWFZOMVN4UFEtOGZjeUR0RDNQeElNNnY?oc=5",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Commander-in-Chief: No place in Iraq for weapons outside state control » Iraqi News Agency",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN21IOVNTTDNDNTdpRENDdDlxYy1iZlhVZ2NNZEx5Tnd2dEktWERXbEg4YmFBMHlVZ2FsR2FTc0hSa2ZmN0tVS09qM2xTSjZEcUZWazYwbVlyV090LWcxbzl5QmFOZmRveHlSbWpfVHJaRDhtNzgwOFRSQ2xSSUlOQkFWLTJiWnduWnZDTl9Bblkza1FRMy1uUjNWc0ZpalZ5Q3FpZjRpNllSOTA?oc=5",
+      "date": "2026-11-17T16:32:42.000Z",
+      "lang": "en",
+      "titleKo": "최고사령관: 이라크에는 국가 통제 밖의 무기가 있을 곳이 없다 » 이라크 뉴스 통신사",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN21IOVNTTDNDNTdpRENDdDlxYy1iZlhVZ2NNZEx5Tnd2dEktWERXbEg4YmFBMHlVZ2FsR2FTc0hSa2ZmN0tVS09qM2xTSjZEcUZWazYwbVlyV090LWcxbzl5QmFOZmRveHlSbWpfVHJaRDhtNzgwOFRSQ2xSSUlOQkFWLTJiWnduWnZDTl9Bblkza1FRMy1uUjNWc0ZpalZ5Q3FpZjRpNllSOTA?oc=5",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Is Iraq Heading Towards Civil War?",
+      "source": "The Media Line",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9rUWtIYmVHVFM0amthSGNTa19KTWozMmxIT0tfQ0h2eEk5Sy0zd3I1TUV1THpoNFB5Q216bGhyNS02bTFqSndLTHlKSkZpTWRKWG5NdzRsalhkNjFWN3lWc1FXaVlkZDAxOTgxUi04XzhHZw?oc=5",
+      "date": "2026-11-17T16:02:13.000Z",
+      "lang": "en",
+      "titleKo": "이라크는 내전으로 치닫고 있는가?",
+      "count": 1,
+      "sources": [
+        "The Media Line"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iran-backed group warns Iraqi forces against entering its stronghold near Baghdad",
+      "source": "Breaking News, Latest News and Videos",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdHgyRWZpZ0RjeG9pSk8tY0VndkRxalEtQlEzOVl6X19QR0pSTG9RVnRjMUJrS1hua1BiYnEwcVU5UDdWaHVicnBvbHh0aVdESjdlLXAwdTNvazlTcEtxVEhMdFdDNll6b3d0RVYxNTZxeUVUQVNiUHhnd2ZNbkh4SHlRNWpCUEpHZC1UXzRhd21VV3cwekZlU1B4TEpud1BwbS1ma2ZGblBURHI1TXZN0gG0AUFVX3lxTE1KOWN2bGJIQ1VYVHdaY3RITzc5aWJaVDh2TFVHX05aNVFfQW01cjNBRFBNd0FxNGRDY0N5VndwWTB1ampJSDFMNVl1MGh1R3JDSGF4bnJfMjZZc2NBTTR2YzRydUswbzRVQURmTW9hVTcxOUxIOWhIcEZxN2hsdXJ3WlBhRGZDTnBRUGpId2NYWkhSVWNzLWF3bFhaSXRkNmxDVEFTWnZ6b2RmcktkcVRNRU1CNw?oc=5",
+      "date": "2026-11-17T15:36:06.000Z",
+      "lang": "en",
+      "titleKo": "이란이 지원하는 무장단체, 이라크군에 바그다드 인근 거점 진입하지 말라고 경고",
+      "count": 1,
+      "sources": [
+        "Breaking News, Latest News and Videos"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "PM: The government succeeded in bringing Iraq out of international isolation » Iraqi News Agency",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVUZKVU0xWi13NFhjZDJiMWYyNXgxb29XdGhOY292WEM4OGpSQWNVR0lvZ1VHa3BYR2Q5NVV2WWs4b0RQbzFNdDljbXU5djJTTThaR2NMWmVqdVFTLUtHMm9YcTNDeEN3ZTFCU3Q5VGw0RkdqOWs5aTAxLTRPNkY3MlZMUmNTS0gtU1NlLTkxSEJJYkVQNkk3R2JwOUllWmYwckR5V2ZQQlRWbUdIRHZnb1lCUQ?oc=5",
+      "date": "2026-11-17T15:30:59.000Z",
+      "lang": "en",
+      "titleKo": "총리: 정부는 이라크를 국제적 고립에서 벗어나게 하는 데 성공했다 » 이라크 뉴스 통신사",
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "‘There shall be no strife’: Kataib Hezbollah rules out prospect of clashes with Iraqi forces",
+      "source": "The New Region",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5MQzFNcXJnc3k4b3Bpb21NRl80R0R1bmIwRlRrNVhnQ1hWalhPbGREVlJzS0NVWWhWSTVsc0VvaUF2T01DV2RaN1lRaw?oc=5",
+      "date": "2026-11-17T14:16:06.000Z",
+      "lang": "en",
+      "titleKo": "'분쟁은 없을 것이다': 카타이브 헤즈볼라, 이라크군과의 충돌 가능성 배제",
+      "count": 1,
+      "sources": [
+        "The New Region"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq orders Telegram block over national security and regulatory concerns",
+      "source": "Middle East Monitor",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdzFEWTFjNWdaekR6WHEwZEpvbDB4NFhWNzdYT0I4ZUp6eVhLVUVLMk85MF8wdmkwZnVlUzFqS3lOOC1qNEZpS2ZhOEtfQ2JxZnU1X3Eta0Z0NDJTcGdObldCVjRoTnBuX1NCck1zTGxBYmRKeEFwaXB4V2JyUTdZMnFUM0pkMU1rNHZhcVBGNTJQOTdzd0Jwem53WWF5YnBSRDZ3THpKRFFpOXRLcjFGQVhmU1NqUzVU?oc=5",
+      "date": "2026-11-17T13:59:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 국가 안보 및 규제 우려로 텔레그램 차단 명령",
+      "count": 1,
+      "sources": [
+        "Middle East Monitor"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Kurdistan Region demands $19.74B in Iraq’s 2027 budget",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUno0Sk5faWlJc2hXRUprc0R1WG1BS2pSMXhGelhxazJlWUg1TjdrWVBFSGFKX3VaVTNQX09sd2tMcG1BQUFqSzI5LUhmbGhfLUNRUEw4N2ZRemM0SENUZE9UZFg0QmY0aE9lYXFRN1hEOS1iQVdzWlQycWFrUVNrWF9RTVBKT205eXRhOE5CZzVtYXM?oc=5",
+      "date": "2026-11-17T13:53:19.000Z",
+      "lang": "en",
+      "titleKo": "샤파크 뉴스..쿠르드스탄 지역, 이라크 2027년 예산에서 197억 4천만 달러를 요구하다",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq’s Jurf al-Sakhr standoff draws direct Iranian intervention",
+      "source": "The Arab Weekly",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRklrRzZqT1lLOG53V244Z25ZWDBrSHlRSklfSHFIemEtQVNoTmIyRzF3Z21veHNpaEF2eTdhMGlZQW9SaXMzdUQtcTI3S1Y5V0M2WEhvdmMwV1RHSHNkMXQ5d0dYWEdxOVJpek9OX0NBNmtCZmxraXRwZmhPbWZLcTRUVnlIRjdNbGJVOGhQZG9fM3dmTk13?oc=5",
+      "date": "2026-11-17T13:23:13.000Z",
+      "lang": "en",
+      "titleKo": "이라크 주르프 알사크르의 대치 상황, 이란의 직접 개입으로 이어져",
+      "count": 1,
+      "sources": [
+        "The Arab Weekly"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraqi leader's planned crackdown on pro-Iran militias is riskiest move yet - Al-Monitor",
+      "source": "Al-Monitor",
       "link": "https://www.reuters.com/world/middle-east/iraqi-leaders-planned-crackdown-pro-iran-militias-is-riskiest-move-yet-2026-11-17/",
-      "date": "2026-11-17T13:20:01.000Z",
+      "date": "2026-11-17T13:13:42.000Z",
       "lang": "en",
       "titleKo": "이라크 지도자가 계획한 친이란 민병대에 대한 단속은 지금까지 중 가장 위험한 조치",
       "url": "https://www.reuters.com/world/middle-east/iraqi-leaders-planned-crackdown-pro-iran-militias-is-riskiest-move-yet-2026-11-17/",
@@ -14,7 +532,7 @@
       "tried": true,
       "count": 1,
       "sources": [
-        "Reuters"
+        "Al-Monitor"
       ],
       "related": [],
       "tag": "치안·테러",
@@ -27,106 +545,21 @@
       }
     },
     {
-      "title": "Qaani in Iraq as Iran moves to defuse Jurf al-Sakhr standoff",
-      "source": "Middle East Online",
-      "link": "https://middle-east-online.com/en/qaani-iraq-iran-moves-defuse-jurf-al-sakhr-standoff",
-      "date": "2026-11-17T13:13:39.000Z",
-      "lang": "en",
-      "titleKo": "이란이 주르프 알사크르 대치 상황을 완화하기 위해 나서는 가운데 카아니가 이라크를 방문하다",
-      "url": "https://middle-east-online.com/en/qaani-iraq-iran-moves-defuse-jurf-al-sakhr-standoff",
-      "body": "The visit also comes amid differing accounts of Tehran's role. Two days earlier, Iraqi government spokesperson Haider al-Aboudi denied Iranian mediation.\nBAGHDAD – Iran has sent its Quds Force commander Esmail Qaani to Iraq to defuse a growing confrontation between Prime Minister Ali al-Zaidi and Kataib Hezbollah over control of a strategic district south-west of Baghdad, as a government deadline for the Iran-backed faction to withdraw approaches on Friday.\nQaani arrived in Iraq on Monday on what a political source described as an urgent mission from Supreme Leader Mojtaba Khamenei to contain the dispute and prevent it from escalating into armed confrontation. His visit marks a direct Iranian intervention in a crisis that Baghdad had previously described as an internal Iraqi matter.\nThe Quds Force commander, who heads the overseas operations arm of Iran's Revolutionary Guard Corps, met leaders of armed factions and senior figures from the ruling Coordination Framework in Baghdad, befor",
-      "bodyKo": "이번 방문은 테헤란의 역할에 대한 상반된 견해가 제기되는 가운데 이루어졌다. 이틀 전, 이라크 정부 대변인 하이데르 알아부디는 이란의 중재를 부인했다.\n바그다드 – 이란이 쿠드스군 사령관 이스마일 카아니를 이라크에 파견하여 알리 알자이디 총리와 카타이브 헤즈볼라 간의 바그다드 남서부 전략적 지역 통제권을 둘러싼 갈등을 완화시키려 하고 있다. 이란의 지원을 받는 카타이브 헤즈볼라가 철수해야 하는 정부의 시한이 금요일에 다가오고 있기 때문이다.\n카아니는 지난 월요일 이라크에 도착했으며, 한 정치 소식통은 이를 최고 지도자 모지타바 하메네이로부터 받은 분쟁을 수습하고 무력 충돌로 비화하는 것을 막기 위한 긴급 임무라고 설명했다. 그의 방문은 바그다드가 이전에 이라크 내부 문제라고 규정한 위기에 대한 이란의 직접적인 개입을 의미한다.\n이란 혁명수비대 해외 작전 부서를 이끄는 쿠드스군 사령관은 바그다드에서 무장 세력 지도자들과 집권 여당인 '조정체계'의 고위 인사들을 만나고",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Middle East Online"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "IS 테러 우려에…요르단·이라크 텔레그램 차단 조치",
-      "source": "연합뉴스TV",
-      "link": "https://www.yonhapnewstv.co.kr/news/AKR20261116232751cfh",
-      "date": "2026-11-17T13:02:05.000Z",
+      "title": "이라크 대 이란 경기 예측: 두 팀 모두 승리에 대한 열망이 강하다.",
+      "source": "Vietnam.vn",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBheThLYWREUDFHdmhyUnpOVS1SbGUtdnIzc2xkUXZ1TGRGR2xDejJuTUVyU3lzMzdLa0lISHlnVEtKcFpCbDV4bTJKR0FDYmVmTGxrTnAxMDNLenFtVFozNWpETmItWTl2b1FCOTZMZDhfUE5Eck5xYlRMUQ?oc=5",
+      "date": "2026-11-17T12:29:56.000Z",
       "lang": "ko",
-      "titleKo": "IS 테러 우려에…요르단·이라크 텔레그램 차단 조치",
-      "url": "https://www.yonhapnewstv.co.kr/news/AKR20261116232751cfh",
-      "body": "극단주의 테러 조직 이슬람국가, IS의 테러 우려에 요르단과 이라크 당국이 국가 안보에 대한 우려를 이유로 메신저 앱인 텔레그램의 접속을 차단했습니다. 요르단 공안국은 현지시간 16일 텔레그램 접속 차단 조치를 발표하면서 “안보와 국익을 위협하는 극단주의 및 급진주의",
-      "bodyKo": "극단주의 테러 조직 이슬람국가, IS의 테러 우려에 요르단과 이라크 당국이 국가 안보에 대한 우려를 이유로 메신저 앱인 텔레그램의 접속을 차단했습니다. 요르단 공안국은 현지시간 16일 텔레그램 접속 차단 조치를 발표하면서 “안보와 국익을 위협하는 극단주의 및 급진주의",
-      "tried": true,
-      "count": 13,
-      "sources": [
-        "Malay Mail",
-        "MediaNama",
-        "Vietnam.vn",
-        "데일리안",
-        "Kuwait Times",
-        "연합뉴스TV"
-      ],
-      "related": [
-        {
-          "titleKo": "두 나라, 하루, 하나의 금지 조치: 요르단과 이라크에서 텔레그램 차단",
-          "source": "Malay Mail",
-          "link": "https://www.malaymail.com/news/world/2026/11/17/two-countries-one-day-one-ban-telegram-blocked-in-jordan-and-iraq/243626"
-        },
-        {
-          "titleKo": "이라크와 요르단, 국가 안보 및 사이버 범죄 우려로 텔레그램 차단",
-          "source": "MediaNama",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYk1Ra01QM244Ni1rWEthbExGcFphNzVhZUt2SVg1N0U2V29RVk56RE9qZTZOMW5CU1ZVV1pXZzNndUswTE9HeHR1bTVidXlKNzVnYndBcmZUZDJqZl9LdnlqZThQSmxuelRHNE5WNndOU0xya1BVS21KVVZsdU9JRktuVXJNRE9EdUlqZnBR?oc=5"
-        },
-        {
-          "titleKo": "요르단과 이라크는 안보상의 이유로 텔레그램 앱을 차단합니다.",
-          "source": "Vietnam.vn",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTUxCb0QzRkxMTFFkNzJsR2JlZ2NUeHZKeGpmakJ6S2ZlUGY5WW9HajZCRW0xbU5uekl2S3NTaWNYdC1sYmVXR214c3htVFhmUGc0VUQxbURENFJYOGtzZFNFd3BKN2dnLUFUeHBza0w4VFk0WUw4RzBKOFRPOXlZRkZOV2w2QTA?oc=5"
-        },
-        {
-          "titleKo": "요르단 이어 이라크도 테러범 소통 창구 된 텔레그램 전면 차단",
-          "source": "데일리안",
-          "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNaGhleHBid052ZF9JSkh6T1FpRDVFR3IzeVNaWmUwNG9pdGc4ZE10SkxpNXFfU3M2QW5hSVdOX3NUVWJ1MVdfa1B3TnYwV09VQ2NQWXdJc3EyMHZMVkxkTEdGRmgzZDhYM3hJaVRLeXNTdW1tMklVb3Q0Ty1CUHcwX2xVQks5bXpJMUF1bGFCMGhsVUNZVzZ1aGF1YzJRTXctVWdLdWZfeVd0blZFNjBORjlUQk1ual9LX0VoQUQ0VXlndVA1ZHRWWDEzSmZmTmFlYWhuNnJhdUdqZnByWXI4Wm1BTWZwT3QyYkFzdnVfUjYwNnJ4cFphbV83dDFyaWRBZnNiTUt5OVVJcWxuRm1fdmljc05sTW8?oc=5"
-        },
-        {
-          "titleKo": "테러범 소통 창구 된 텔레그램…요르단 이어 이라크도 전면 차단",
-          "source": "데일리안",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAtVW8yeXlmTGZqd3JYNUVDbThOZmlqcVZtcGgwNVlPWE1QNVpmU2NjYnhEaU9iV1JjS2tEOU9PR09YRTVRTGFnTkVjUlFiSnpKZmtN?oc=5"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Kataib Hezbollah: clash with Iraqi forces a distant dream",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Iraq/Kataib-Hezbollah-clash-with-Iraqi-forces-a-distant-dream",
-      "date": "2026-11-17T12:42:44.000Z",
-      "lang": "en",
-      "titleKo": "샤파크 뉴스..카타이브 헤즈볼라: 이라크군과의 충돌은 먼 꿈에 불과",
-      "url": "https://shafaq.com/en/Iraq/Kataib-Hezbollah-clash-with-Iraqi-forces-a-distant-dream",
-      "body": "Shafaq News- Babil Kataib Hezbollah senior official Abu Talib Al-Saeedi on Tuesday ruled out an armed confrontation with Iraqi security forces over Jurf Al-Sakhr, an area south of Baghdad under the I\nSpeaking at a press conference, Al-Saeedi described the prospect of fighting government forces as a &ldquo;distant dream&rdquo; and accused a committee appointed by Prime Minister Ali Al-Zaidi of falsifying findings about oil-refining facilities in Jurf Al-Sakhr, also known as Jurf Al-Nasr.\nHe maintained that the facilities were abandoned, rudimentary refineries used during crises to process purchased crude oil into kerosene for electricity generators and heavy machinery. According to Al-Saeedi, the sites lie approximately five kilometers from three oil pipelines, while investigators had unrestricted access throughout the area.",
-      "bodyKo": "샤파크 뉴스 - 바빌 카타이브 헤즈볼라의 고위 관계자인 아부 탈리브 알사에디(Abu Talib Al-Saeedi)는 11일 이라크 정부군이 통제하는 바그다드 남부 지역인 주르프 알사크르(Jurf Al-Sakhr)를 놓고 이라크 치안 당국과 무력 충돌할 가능성을 일축했다.\n알사에디는 기자회견에서 정부군과의 전투 가능성을 \"먼 꿈\"이라고 표현하고 알리 알자이디 총리가 임명한 위원회가 주르프 알나스르라고도 불리는 주르프 알사크르의 정유 시설에 대한 조사 결과를 조작했다고 비난했습니다.\n그는 이 시설들이 버려진 상태이며, 위기 상황에서 구매한 원유를 발전기와 중장비용 등유로 가공하는 데 사용되는 원시적인 정제소라고 주장했다. 알사에디에 따르면, 해당 현장은 세 개의 석유 파이프라인에서 약 5km 떨어진 곳에 위치해 있으며, 조사관들은 해당 지역 전역에 제한 없이 출입할 수 있었다.",
-      "tried": true,
+      "titleKo": "이라크 대 이란 경기 예측: 두 팀 모두 승리에 대한 열망이 강하다.",
       "count": 1,
       "sources": [
-        "شفق نيوز"
+        "Vietnam.vn"
       ],
       "related": [],
       "tag": "기타",
       "impact": {
         "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "line": "현장 직접 영향 낮음",
         "act": "",
         "place": "",
         "km": null
@@ -143,11 +576,17 @@
       "body": "Shafaq News The financial and oil dispute between Iraq&rsquo;s federal government and the Kurdistan Region of Iraq (KRI) dates to 2005, with January 2014 marking a turning point when Baghdad suspende\nDespite repeated visits by technical delegations between Baghdad and Erbil, efforts to reach a settlement continue to be hindered by disagreements over the obligations of both sides.\nThe latest round of talks has produced some movement. On November 9, Prime Ministers Ali al-Zaidi and Masrour Barzani agreed on a unified budget allocation covering all parts of the Kurdistan Region, but the percentage, calculation mechanism, and other disputed provisions have yet to be fully settled.\nThe origin of the crisis lies in differing interpretations of provisions in Iraq&rsquo;s 2005 Constitution concerning the management of oil and gas. Tensions deepened in 2007 after the Kurdistan Region enacted its own oil and gas law and signed contracts with foreign companies, moves opposed by Baghdad.",
       "bodyKo": "샤파크 뉴스 이라크 연방 정부와 이라크 쿠르드 자치구(KRI) 간의 재정 및 석유 분쟁은 2005년으로 거슬러 올라간다. 2014년 1월, 바그다드가\n바그다드와 에르빌 간 기술 대표단의 반복적인 방문에도 불구하고, 양측의 의무에 대한 이견으로 인해 합의에 도달하기 위한 노력이 계속 가로막히고 있다.\n최근의 협상에서는 다소 진전이 있었습니다. 11월 9일, 알리 알자이디 총리와 마수르 바르자니 총리는 쿠르드 지역 전역을 아우르는 단일 예산 배분에 합의했지만, 배분 비율, 산정 방식 및 기타 쟁점 조항은 아직 완전히 해결되지 않았다.\n이 위기의 기원은 석유 및 가스 관리에 관한 이라크 2005년 헌법 조항에 대한 상이한 해석에 있습니다. 쿠르드 자치지역이 자체 석유 및 가스법을 제정하고 외국 기업과 계약을 체결한 후 바그다드의 반발이 있었던 2007년에 긴장이 심화되었습니다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "샤파크 뉴스..바그다드-에르빌 예산 분쟁: 합의를 가로막는 것은 무엇인가?",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Report/Baghdad-Erbil-budget-dispute-What-obstructs-a-deal"
+        }
+      ],
       "tag": "경제·유가",
       "impact": {
         "lv": "g",
@@ -283,50 +722,6 @@
       }
     },
     {
-      "title": "Iran’s proxy in Iraq rakes in hundreds of millions through oil smuggling",
-      "source": "Awani International",
-      "link": "https://international.astroawani.com/global-news/irans-proxy-iraq-rakes-hundreds-millions-through-oil-smuggling",
-      "date": "2026-11-17T10:06:18.000Z",
-      "lang": "en",
-      "titleKo": "이라크 내 이란의 대리 세력이 석유 밀수를 통해 수억 달러를 벌어들이다",
-      "url": "https://international.astroawani.com/global-news/irans-proxy-iraq-rakes-hundreds-millions-through-oil-smuggling",
-      "body": "Iraq targets a major oil smuggling network linked to Kataib Hezbollah risking a direct clash with the Iran-backed militia.\n${ stripe.text } A drone view shows tanker trucks lined up outside the Tuba crude depot, where Iraqi crude is loaded onto tanker trucks for transport to Syria's Baniyas Port, Basra, Iraq, November 12, 2026. - REUTERS/Filepic AI Brief Iraq's Prime Minister Ali al-Zaidi has launched a crackdown on Kataib Hezbollah over alleged large-scale oil smuggling since 2021. Nine senior security and oil officials have been dismissed, with additional forces deployed to Jurf al-Sakhar, a Kataib Hezbollah stronghold. The US has imposed sanctions on Iraqi officials and militia leaders, citing exploitation of Iraq's oil sector to finance Iran-aligned groups. Advertisement BAGHDAD: Iran's most powerful Shi'ite armed groups ally in Iraq has been raking in hundreds of millions of dollars from oil stolen from the state, Iraqi officials say, prompting the prime minister to ready his secu",
-      "bodyKo": "이라크가 이란의 지원을 받는 민병대와 직접 충돌할 위험을 무릅쓰고 카타이브 헤즈볼라와 연계된 대규모 석유 밀수 조직을 겨냥하고 있다.\n${ stripe.text } 드론 영상에 이라크 원유를 시리아 바니아스 항으로 수송하기 위해 탱크로리에 적재하는 투바 원유 저장소 밖에 탱크로리들이 줄지어 있는 모습이 보인다. 이라크 바스라, 2026년 11월 12일. - 로이터/파일 사진 AI 브리핑 이라크의 알리 알자이디 총리가 2021년부터 이뤄진 대규모 석유 밀수 혐의와 관련해 카타이브 헤즈볼라에 대한 단속을 시작했다. 고위 안보 및 석유 관계자 9명이 해임되었으며, 카타이브 헤즈볼라의 주요 거점인 주르프 알사카르에 추가 병력이 배치되었습니다.",
-      "tried": true,
-      "count": 4,
-      "sources": [
-        "Awani International",
-        "ASHARQ AL-AWSAT English",
-        "Inspenet",
-        "The National"
-      ],
-      "related": [
-        {
-          "titleKo": "이란의 이라크 대리 세력이 석유 밀수로 수억 달러를 챙기고 있다",
-          "source": "ASHARQ AL-AWSAT English",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcWZaY3dROG4wNDhlNVNjTi1hQXBvb2VvQVBsX0lRSGUyS0FnS3psaDNYeVo2SHpjVVotYy0yU3dCWVlvMXI0YUZIZndwenpXZkxwMmNzNDVfbXBCaUN0M2RCYmozWlBMeDM4cTg1YWFmMGhrTV83OVFGclRkMVYtS0ZHM3JqdUk1SFF2cGhXNzhJZnJfQ0VZU1hBcXc4Q21ISjk3Ti1IX0ZkWlVHY0JXTXpRcHpEeFBl?oc=5"
-        },
-        {
-          "titleKo": "이라크의 석유 밀수가 정치적 위기를 촉발하다",
-          "source": "Inspenet",
-          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0wZ0JXRnpHemFRR2dFUFZSWXZMOXhxa2JUR2pEWThaQTFpNUlta3I1V1p0MFZKN1o3djVEMGVieHRYcU9Va2hxYjdWekFWZXNqa0xEYmxldElpVVh3NTdtYzcxeXNudUhlV2FQcVd5NlZrTThYd2c?oc=5"
-        },
-        {
-          "titleKo": "이라크, 석유 밀수 수사 중 카타이브 헤즈볼라의 주요 거점 외곽에 병력 배치",
-          "source": "The National",
-          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSG9kdWFyYmlhVE5VNjUySHFMTDFHekx5VnRxcWVZRVNWVVNGM25sc1ZlZEsxTGJMZzlJbVVMX2JPbjQ1VG9CZDhvajhCblRZc0haVkQyQVk5aFhEWF9Rb28zT3ZzaTRTeUQwNEFDR1RuRGFQVUFoVy1QeThJM2FkVElCOXIxcjkwQV8yMlRjWVZVbDZfLXhLb3dWaklXUDZINHRGVkE2aXYzXzhlcjVucS1LSF9SUHBvcEtkTWJQSzVoUnNJNnRGUQ?oc=5"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "바스라",
-        "km": 422
-      }
-    },
-    {
       "title": "Iraqi PM Zaidi to Visit Lebanon for Security and Economic Talks",
       "source": "Kurdistan24",
       "link": "https://www.kurdistan24.net/en/story/953658/iraqi-pm-zaidi-to-visit-lebanon-for-security-and-economic-talks",
@@ -448,27 +843,6 @@
       }
     },
     {
-      "title": "Jurf Al-Sakhr dispute sparks Iraqi PM walkout from CF meeting",
-      "source": "شفق نيوز",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcVpJSFVHZGxIWDJEV1NHMFdpS200XzFTYmZEQXNJZDBJUWptYl9mSVlHRlkwU1hPVC02am93UkF6YkwyYVkyYnZocTBBZkNVT05fNm01X1oyNE4wSnNhYjFIX1ltWUx1MFdteGhPaEJudWplQ09GUFIxeFVheW1Nal9sX2VCWTN0M0VTVGMxaTlXMm5EbXc0?oc=5",
-      "date": "2026-11-17T07:43:33.000Z",
-      "lang": "en",
-      "titleKo": "샤파크 뉴스..주르프 알사크르 분쟁으로 이라크 총리가 연합군 회의에서 퇴장",
-      "count": 1,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "Sirens activated at Iraq’s Khor Mor gas field after drone overflight, sources say",
       "source": "Internazionale",
       "link": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/16/sirens-activated-at-iraq-s-khor-mor-gas-field-after-drone-overflight-sources-say",
@@ -479,12 +853,11 @@
       "body": "BAGHDAD, Nov 16 (Reuters) - Sirens sounded after a drone flew over the Khor Mor gas field, one of the largest in Iraq’s Kurdistan region, two security sources told Reuter… Leggi\nProduction at Khor Mor was halted last week following what the joint operator, UAE-based Dana Gas, said was a suspected drone attack, taking out 2.8 gigawatts of power generation in the Kurdistan region. Dana Gas said it extinguished a fire sparked by the attack.\nProduction at the field, which supplies regional power generation, has repeatedly been disrupted after attacks that Kurdish officials have blamed on Iranian-backed militias.\nIn July, Dana Gas shut down the field’s main production facilities, citing what it said were credible security threats and regional tension before restarting production later that month.",
       "bodyKo": "바그다드, 11월 16일 (로이터) - 이라크 쿠르드 지역에서 가장 큰 가스전 중 하나인 코르 모르 가스전을 드론이 비행한 후 사이렌이 울렸다고 두 명의 보안 소식통이 로이터에 전했습니다… 읽기\n지난주 호르모르 가스전의 생산이 중단되었다. UAE에 본사를 둔 공동 운영사인 다나 가스(Dana Gas)는 이번 생산 중단이 드론 공격으로 의심된다고 밝혔으며, 이로 인해 쿠르디스탄 지역의 발전량 2.8기가와트가 감소했다. 다나 가스는 이번 공격으로 발생한 화재를 진압했다고 밝혔다.\n지역 발전소를 공급하는 이 유전의 생산은 쿠르드 당국이 이란의 지원을 받는 민병대의 소행이라고 비난한 공격으로 인해 여러 차례 중단된 바 있다.\n다나 가스는 7월에 신빙성 있는 보안 위협과 지역 긴장을 이유로 유전의 주요 생산 시설을 가동 중단했다가 같은 달 말에 생산을 재개했다.",
       "tried": true,
-      "count": 4,
+      "count": 3,
       "sources": [
         "IraqiNews",
         "Internazionale",
-        "أخبار العالم اليوم",
-        "موقع مسبار"
+        "أخبار العالم اليوم"
       ],
       "related": [
         {
@@ -496,11 +869,6 @@
           "titleKo": "이라크 코르 모르 유전 위로 드론이 비행하고 사이렌이 울림",
           "source": "أخبار العالم اليوم",
           "link": "https://www.almashhad.com/article/773112298002792-News/362939918389582-%D8%B1%D8%B5%D8%AF-%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D9%81%D9%88%D9%82-%D8%AD%D9%82%D9%84-%D8%AE%D9%88%D8%B1-%D9%85%D9%88%D8%B1-%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%88%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%B5%D9%81%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D9%86%D8%B0%D8%A7%D8%B1/"
-        },
-        {
-          "titleKo": "미스바, 드론 공격 후 이라크 코르모르 가스전에서 발생한 것으로 추정되는 피해를 포착",
-          "source": "موقع مسبار",
-          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOTNqeXc3Rm1yeU5BbGxpNkozZHpOMDRwX3FOcVUzbThmcUVLRWM2VTk0aTlGVUwzSEh2MDBsaHJhekhXTTlxamVhdy1zdUYzQzRRS2wyWk9NYjFzYlRKNFhlNF9qam5nUEtFQ1FJX2l5WGtOQXZFa05EaFRWWWxzVTg2SUdrR1BXOTFEUWxvVVRDeDhHelU3alZTLThXYzlRb2UwN0pBc3FiUTA3Rmh0Nzh5dktWZkdZbGE3QlFfc1l3OXc?oc=5"
         }
       ],
       "tag": "치안·테러",
@@ -540,18 +908,11 @@
       "date": "2026-11-17T05:54:39.000Z",
       "lang": "ko",
       "titleKo": "친이란 민병대, 이라크 송유관 뚫어 '석유 도둑질'…수천억원 챙겨",
-      "count": 2,
+      "count": 1,
       "sources": [
-        "이데일리",
-        "کردپرس"
+        "이데일리"
       ],
-      "related": [
-        {
-          "titleKo": "이라크의 새로운 송유관: 바그다드-에르빌 석유 협정의 기회",
-          "source": "کردپرس",
-          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdGwweFFmS2I0bEdueTVTbWFYdmdtYmx5dGtyOHRmYjc1OWFfbEE3SURtN0Y5ZUotbGUxb1pHMWxGRlZKREMwTWpjclJiYlhVOEJpVHNXTVlrdE5wZmFYUmhxRVRvYlR3dGlQWkFkNXBETmpyUmxVMmpXSHlVRS1tVnRFWmNRRzQzbE9VSmlfT3Blc3ZWczdsQ2g4UWZKZDBFUHRybFlRQ1E1UlM1M1g3UGYwQ1BLOXVL?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -640,27 +1001,6 @@
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq’s move on militia stronghold may do little to curb Iran’s influence",
-      "source": "Iran International",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAxcjhYVlpSUG1qY3dNWXV2bFhQYTN4elBZQ0FmdEpjMk1zaUJKbDdJUHEzbldKbm5WRHhmY1Y0QnEzbE52OGpIUUtNbmNzSFZ3ZXc?oc=5",
-      "date": "2026-11-17T04:52:48.000Z",
-      "lang": "en",
-      "titleKo": "이라크의 민병대 거점 공격, 이란의 영향력 억제에는 큰 효과 없을 듯",
-      "count": 1,
-      "sources": [
-        "Iran International"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
         "act": "",
         "place": "",
         "km": null
@@ -880,6 +1220,27 @@
       }
     },
     {
+      "title": "Iran’s Proxy in Iraq Rakes in Hundreds of Millions Through Oil Smuggling - ASHARQ AL-AWSAT English",
+      "source": "ASHARQ AL-AWSAT English",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcWZaY3dROG4wNDhlNVNjTi1hQXBvb2VvQVBsX0lRSGUyS0FnS3psaDNYeVo2SHpjVVotYy0yU3dCWVlvMXI0YUZIZndwenpXZkxwMmNzNDVfbXBCaUN0M2RCYmozWlBMeDM4cTg1YWFmMGhrTV83OVFGclRkMVYtS0ZHM3JqdUk1SFF2cGhXNzhJZnJfQ0VZU1hBcXc4Q21ISjk3Ti1IX0ZkWlVHY0JXTXpRcHpEeFBl?oc=5",
+      "date": "2026-11-16T22:00:47.000Z",
+      "lang": "en",
+      "titleKo": "이란의 이라크 대리 세력이 석유 밀수로 수억 달러를 챙기고 있다",
+      "count": 1,
+      "sources": [
+        "ASHARQ AL-AWSAT English"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "Iraq, Sudan Officials Discuss Cooperation in Trade, Agriculture, Security",
       "source": "Qatar news agency",
       "link": "https://qna.org.qa/en/News-Area/News/2026-11/17/iraq-sudan-officials-discuss-cooperation-in-trade-agriculture-security",
@@ -927,293 +1288,6 @@
         "act": "",
         "place": "힐라(바빌)",
         "km": 81
-      }
-    },
-    {
-      "title": "وزير الكهرباء يدعو للالتزام بتنفيذ الخطة الكاملة - شفقنا العراق | الوكالة الشيعية للأخبار من العراق، النجف، كربلاء والعالم",
-      "source": "شفقنا العراق",
-      "link": "https://iraq.shafaqna.com/AR/672899/",
-      "date": "2026-11-16T20:20:31.000Z",
-      "lang": "ar",
-      "titleKo": "전력부 장관, 전체 계획 이행 준수를 촉구 - 샤파크나 이라크",
-      "url": "https://iraq.shafaqna.com/AR/672899/",
-      "body": "وجه وزير الكهرباء علي سعدي وهيب، اليوم على ضرورة الالتزام الكامل بتنفيذ الخطط المقررة، وتسخير جميع الإمكانات الفنية والبشرية\nوذكر مصدر لوكالة الأنباء العراقية ( واع )، أن “وزير الكهرباء ، المهندس علي سعدي وهيب، وجّه باعتماد مستوى تنفيذ الخطة المقبلة لصيف 2027 ونسب الإنجاز المتحققة ومدى الالتزام بالتوقيتات الزمنية المحددة، معياراً أساسياً ومباشراً لتقييم أداء المديرين العامين لشركات الإنتاج والنقل والتوزيع، وتحديد مدى كفاءتهم في إدارة تشكيلاتهم، مع إعفائهم من مناصبهم في حال وجود أي تلكؤ أو تهاون في تنفيذ فقرات الخطة”.\nوأضاف، أن “الوزير شدد في توجيهات رسمية إلى الشركات العامة، على ضرورة الالتزام الكامل بتنفيذ الخطط المقررة، وتسخير جميع الإمكانات الفنية والبشرية والمادية لتحقيق المستهدفات ضمن الجداول الزمنية المحددة، بما يعزز جاهزية المنظومة الكهربائية لموسم الصيف المقبل.”\nوأكد الوزير، بحسب المصدر، أهمية اعتماد المتابعة الميدانية المباشرة والمستمرة لمراحل التنفيذ، واتخاذ الإجراءات الاستباقية لمعالجة أي تأخير أو انحراف عن المسارات المحددة، بما يضمن تحقيق أهداف خطة صيف 2027 ورفع كفاءة الأدا",
-      "bodyKo": "오늘 알리 사디 와힙 전기부 장관은 계획된 계획을 완전히 이행하고 모든 기술적, 인적 역량을 활용해야 할 필요성을 강조했습니다.\n이라크 통신사(INA)의 한 소식통은 \"전력부 장관인 알리 사디 와힙(Ali Saadi Waheeb) 엔지니어가 2027년 여름을 위한 향후 계획의 이행 수준, 달성된 성취도, 정해진 일정 준수 여부를 발전, 송전, 배전 회사의 사장들의 성과를 평가하고, 그들의 조직 관리 능력을 판단하는 기본적이고 직접적인 기준으로 삼도록 지시했으며, 계획 항목의 이행에 있어 어떠한 지연이나 태만이 있는 경우 그들을 직위에서 해임하도록 지시했다\"고 전했습니다.\n그는 \"장관이 공기업들에 공식 지침을 통해 계획된 계획의 완전한 이행을 준수하고, 정해진 일정 내에 목표를 달성하기 위해 모든 기술적, 인적, 물적 역량을 동원하여 내년 여름철을 대비한 전력 시스템의 준비 태세를 강화할 것을 강조했다\"고 덧붙였다.\n소식통에 따르면 장관은 2027년 여름 계획의 목표를 달성하고 성과 효율성을 높이기 위해 시행 단계에 대한 직접적이고 지속적인 현장 모니터링을 채택하고 지연이나 정해진 경로에서 벗어나는 경우를 해결하기 위해 선제적 조치를 취하는 것의 중요성을 강조했습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "شفقنا العراق"
-      ],
-      "related": [],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "카르발라",
-        "km": 86
-      }
-    },
-    {
-      "title": "السفيرات المعتمدات لدى المملكة العربية السعودية يجتمعن لتكريم سفيرتي العراق وسويسرا بمناسبة قرب انتهاء مهامهما الدبلوماسية، باستضافة سفيرة مملكة النرويج كيرستي ترومسدال",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://mofa.gov.iq/riyadh/?p=8863",
-      "date": "2026-11-16T20:04:45.000Z",
-      "lang": "ar",
-      "titleKo": "노르웨이 왕국 대사 키르스티 트롬스달의 주최로 사우디아라비아에 주재하는 여성 대사들이 이라크와 스위스 대사의 외교 임무 종료를 앞두고 그들을 축하하기 위해 모였습니다.",
-      "url": "https://mofa.gov.iq/riyadh/?p=8863",
-      "body": "في لفتة تعكس روح الزمالة والصداقة بين أعضاء الأسرة الدبلوماسية المعتمدة لدى المملكة العربية السعودية، اجتمعت مجموعة السفيرات المعتمدات لدى المملكة في مأدبة غداء وداعية استضافتها سفيرة مملكة النرويج، سعادة السفيرة كيرستي ترومسدال (Kjersti Tromsdal)، تكريماً لسفيرة جمهورية العراق صفية طالب السهيل (Safia Taleb Al Souhail)، وسفيرة الاتحاد السويسري ياسمين شاتيلا زفالن (Yasmine Chatila Zwahlen)، بمناسبة قرب انتهاء مهامهما الدبلوماسية في المملكة.\nوأعربت السفيرة صفية طالب السهيل عن بالغ شكرها وتقديرها لسفيرة مملكة النرويج على هذه المبادرة الكريمة وحسن الاستضافة، كما أعربت عن تقديرها لزميلاتها السفيرات على حضورهن ومشاركتهن في هذه المناسبة التي حملت معاني الود والتقدير، وعكست متانة علاقات الزمالة والصداقة التي جمعتهن خلال فترة عملهن في المملكة.\nوأكدت السفيرة السهيل اعتزازها بالعلاقات الإنسانية والمهنية التي جمعتها بزميلاتها السفيرات، وما شهدته من تعاون وتواصل ومواقف طيبة، معربةً عن تطلعها إلى استمرار هذه الصداقات والروابط، في مختلف المحطات التي قد تجمعهن مستقبلاً.",
-      "bodyKo": "사우디아라비아 왕국에 주재하는 외교단 구성원들 간의 동료애와 우정의 정신을 반영하는 제스처로, 왕국에 주재하는 여성 대사들이 노르웨이 왕국의 대사인 케르스티 트롬스달(Kjersti Tromsdal) 대사께서 주최하신 작별 오찬에 모였습니다. 이는 이라크 공화국의 대사인 사피아 탈렙 알 수헤일(Safia Taleb Al Souhail) 대사와 스위스 연방의 대사인 야스민 샤틸라 츠발렌(Yasmine Chatila Zwahlen) 대사가 왕국에서의 외교 임무를 곧 마치게 됨을 기념하기 위한 것이었습니다.\n사피아 탈렙 알수헤일 대사는 노르웨이 왕국 대사에게 이 고귀한 제안과 따뜻한 환대에 대해 깊은 감사와 존경을 표했으며, 친선과 존경의 의미를 담고 왕국에서의 근무 기간 동안 형성된 동료애와 우정의 끈끈함을 반영한 이 자리에 참석하고 참여해 주신 동료 대사들에게도 감사의 뜻을 전했습니다.\n수헤일 대사는 동료 여성 대사들과 맺은 인간적, 직업적 관계와 그들이 보여준 협력, 소통, 친절한 태도에 대해 자부심을 표명하며, 앞으로 다양한 기회에서 이러한 우정과 유대감이 계속 이어지기를 기대한다고 밝혔습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "وزارة الخارجية العراقية"
-      ],
-      "related": [],
-      "tag": "한국·외교",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Electricity Committee Hosts Director General of Baghdad Electricity Distribution to Discuss Smart Transformation, Service, and Collection Contracts",
-      "source": "مجلس النواب العراقي",
-      "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPSUNYZnFMNkZBbXI3elpRelNkOGFXU0g1MDYyZ0tRMmtrZWxBbFdsdW1PNUlpM3h3bkNPTHBtQ3o3RVdXS3pYazIyY0h0azZNYnQ5UzVwMzdpcEVsZ3VwaWxhSFNyWmhQZ19qb1B3Zi16OEdHMXBuT01ZU2ptMy1RY3FNbFl5RmJKQ3JndXRFeTE5bFlWcFY4ZzFuQjIxMGFidXpXUzFqbUFnUUZ6Q2dPbnRGWnBhOWtJWDlVRHRxbjdvd3pSMU8yeHZvRk9oOVJMYWtqV0FiUERIYnYyRlptbkFQY3VfcUZhcDFjV3V1VzhFX2NCZEdCQTFVd1VUYU9TeER6ODFNMmdqM1BBRzA3b3pGcw?oc=5",
-      "date": "2026-11-16T20:03:59.000Z",
-      "lang": "en",
-      "titleKo": "전력 위원회, 바그다드 전력 배전국 국장을 초청하여 스마트 전환, 서비스 및 수금 계약 논의",
-      "count": 1,
-      "sources": [
-        "مجلس النواب العراقي"
-      ],
-      "related": [],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraqi army could enter Kurdistan Region: Spox",
-      "source": "Rudaw",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE45WkZBOHZ5LTdDb0RTU2tVcm1hVFJLYnFpeXNjQUw4OEJGQkR5dmkyTHdQdFlLMGhhYVQ1QmQzN0FLVGJIdERvZk5vWmlrX0ExeU1XU1B3VHg0TDh3T2c?oc=5",
-      "date": "2026-11-16T19:28:10.000Z",
-      "lang": "en",
-      "titleKo": "이라크군, 쿠르드 자치구 진입 가능성: 대변인",
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "نفط العراق يصطدم بنفوذ الفصائل وخلافات كردستان",
-      "source": "جريدة الوطن السعودية",
-      "link": "https://www.alwatan.com.sa/article/1189409",
-      "date": "2026-11-16T18:44:00.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 석유, 파벌의 영향력과 쿠르드 분쟁에 직면",
-      "url": "https://www.alwatan.com.sa/article/1189409",
-      "body": "نفط العراق يصطدم بنفوذ الفصائل وخلافات كردستان\nفي الجوف، تدور المعارك قرب عاصمة محافظة، وفي الجنوب تعيد القوات انتشارها لحماية عاصمة البلاد المؤقتة. وبين الحزم وعدن برزت الأحد...\nمن مرتفعات صبر الموادم إلى الطرق التي تصل تعز بلحج، تركزت أبرز تطورات المواجهات خلال الساعات الـ12 الماضية في جنوب غرب اليمن. فبينما...\nعلى جبهتين متباعدتين، يواصل الجيش السوداني عملياته في غرب كردفان ويدفع بتعزيزات إلى النيل الأزرق. وفي وقت تتجه قواته وحلفاؤها من...\nاشتعلت النار في غرفة محركات ناقلة كانت تغادر مضيق هرمز صباح الإثنين، بعدما أصابها مقذوف مجهول، في حادث أعاد أمن السفن التجارية إلى...\nأجرى وزير الخارجية الأمير فيصل بن فرحان، اتصالين هاتفيين اليوم، بوزير الخارجية والتعاون الدولي والمصريين بالخارج في جمهورية مصر...\nكريم حكيموف.. عرّاب العلاقات السعودية السوفيتية الذي أعدمه ستالين\n* بقلم: بسام الجيالباحث متخصص في تاريخ المملكة العربية السعودية والدراسات الاستشراقيةهلسنكي – فنلندا [email protected] عندما بدأت...",
-      "bodyKo": "이라크 석유, 파벌의 영향력과 쿠르드 분쟁에 직면\n자우프에서는 주도 근처에서 전투가 벌어지고 있으며, 남부에서는 군대가 임시 수도를 보호하기 위해 재배치되고 있습니다. 그리고 하즈맘과 아덴 사이에서 일요일에...\n사브르 알-마우아딤 고원부터 타이즈를 라흐즈와 연결하는 도로에 이르기까지, 지난 12시간 동안 가장 두드러진 전투 상황은 예멘 남서부에 집중되었습니다. 한편...\n서로 떨어진 두 전선에서 수단군은 서부 코르도판에서 작전을 계속하고 청나일로 증원군을 파견하고 있습니다. 그의 군대와 동맹군이 ...에서 진격하는 시기에...\n월요일 아침 호르무즈 해협을 빠져나가던 유조선의 기관실에 정체불명의 발사체가 명중한 후 화재가 발생했습니다. 이 사건으로 상선의 안전이 다시...\n피살 빈 파르한 외무장관은 오늘 이집트 아랍 공화국의 외교·국제협력·해외 이집트인 담당 장관과 두 차례 전화 통화를 했습니다...\n카림 하키모프... 스탈린이 처형한 사우디-소련 관계의 대부\n* 글: 바삼 알자얄, 사우디아라비아 역사 및 동양학 전문 연구원, 핀란드 헬싱키 [email protected] 제가 ...를 시작했을 때...",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "جريدة الوطن السعودية"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq orders army into Kataib Hezbollah stronghold",
-      "source": "Oz Arab Media",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzcXNiWWozZmZpZmpIcS1rWnMzeTgzbDh6aU9KN3ZmNnBXZHNWZFB3Smt5bnlVVGdlVFFLX0Zua0llb3hReVI1bjZ3bDV2MEVva282cEtxRXRCS0V1djlucUxnVktMLXJPR1ZLSFd6YV9DaXlpWG8wRGxCNA?oc=5",
-      "date": "2026-11-16T18:00:49.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 카타이브 헤즈볼라의 주요 거점에 군대 투입 명령",
-      "count": 3,
-      "sources": [
-        "Oz Arab Media",
-        "Al Jazeera",
-        "ASHARQ AL-AWSAT English"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크, 이란이 지원하는 카타이브 헤즈볼라의 거점에 군대 배치",
-          "source": "Al Jazeera",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRDJJY1Z0bG96bWdsRXI1NzQzbnhCbTgwbkoxRUtsYTZ0MXZUaEhiM0xHREZXNWFuSkZwMC1zV085TENEWm9FdTRqRzE5NThiWXd6VDItUXFVYmZYaWRFcGRqRV82NnFIXzhMNUMyLWRtNkFyb2pYVnZrOEFmSkxocEVXcDFlVWNNeGc3NU5rRWRrdldQOTBVX1ZDTE1HaklETzZBd0dfemzSAa4BQVVfeXFMUC1iYTB2LTFzRl95czQyMkdFOWRWMmlXY3NGcGlrQzk2Vkd6Y1Y5OV92a1RGekw4ckZyRlN6VVhaazlPVDB2U3pGUkVodGVkYmlWSlF6azJfal9FVWQ4dHF3NE56V3pPeDlvNWRTc2ZNRm1rbzZpNkRxVzJ0Y1J6SDhHRHVYRGcyUFcwNGxzU3pfQ05iZlNWcjZfZTBEVW44MFRyNGR0NExybXhxdkJR?oc=5"
-        },
-        {
-          "titleKo": "이라크, 카타이브 헤즈볼라와의 대립이 격화됨에 따라 군에 주르프 알사카르 진입 명령",
-          "source": "ASHARQ AL-AWSAT English",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQS1ZiVUNFdWVadWxVMk92Z2hBSThUd0lTZzNNZkxtWjdlZmszZVA0LWNrQkR2a2t4T3N6SFJjOVBGOHl6WF9KaWY3bU9aejBCSmltMnRWRWlCQm1mN1VjY1dNYTduaURWbFpEaEkybUpqQjhPREgzVkk4enBKSUotdHFKblBRUzBFeVFfLU04cWxPRTl0blNPWTU2X2FIQk1BcU5uVkZUemxhZnRWeW15TkVCdlI5MUcweXRsZmxibXl2UQ?oc=5"
-        }
-      ],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Zaidi invites German firms to invest in Iraq",
-      "source": "IraqiNews",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVDlvb1hYd0FSQWpoR2ZMZFd3dDJCbUNRaDRCT1laVHRDazBtRVAxQW5TdnpJTlZpMml6TDJSaFpCTzhNekdnamtTQWJlazl3VmM2b29yZDBHRlhfQVBkTTNQSTRoSFl3Q20yTzdFVWtIMDF3aXFZa2JXM2tUVGhuLTRmSWRaRkEzcDN0ZVBzS2poSmVZOTVOWFk4djJBLVJZcFhYSEtoN0NsU05Y?oc=5",
-      "date": "2026-11-16T17:01:22.000Z",
-      "lang": "en",
-      "titleKo": "자이디 장관, 독일 기업에 이라크 투자 권유",
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Baghdad considers merging oil and electricity ministries, source says",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Iraq/Baghdad-considers-merging-oil-and-electricity-ministries-source-says",
-      "date": "2026-11-16T16:51:09.000Z",
-      "lang": "en",
-      "titleKo": "샤파크 뉴스.. 소식통에 따르면 바그다드가 석유부와 전력부의 통합을 고려하고 있다고 한다.",
-      "url": "https://shafaq.com/en/Iraq/Baghdad-considers-merging-oil-and-electricity-ministries-source-says",
-      "body": "Shafaq News- Baghdad The Iraqi government is considering merging the Oil and Electricity Ministries into a single Ministry of Energy, an informed source told Shafaq News on Monday. The government is\nThe government is coordinating with the political parties that nominated the two ministers to agree on arrangements to maintain electricity supplies and oil exports under the proposed merger, the source said.\nDiscussions remain preliminary, and any agreement will depend on domestic and regional developments, particularly the oil-smuggling crisis in Jurf Al-Nasr (Jurf al-Sakhr) and the regional conflict involving the US, Israel and Iran.\nLast week, a source close to Prime Minister Ali Al-Zaidi told Shafaq News that the premier had begun reviewing his cabinet&rsquo;s performance, although no reshuffle was planned at the time.",
-      "bodyKo": "샤파크 뉴스 - 바그다드 한 소식통이 월요일 샤파크 뉴스에 밝힌 바에 따르면, 이라크 정부는 석유부와 전력부를 하나의 에너지부로 통합하는 방안을 검토하고 있다. 정부는\n이 소식통은 정부가 두 장관을 지명한 정당들과 협의하여 제안된 합병에 따라 전력 공급과 석유 수출을 유지하기 위한 조치에 합의하고 있다고 전했다.\n논의는 여전히 예비 단계에 있으며, 모든 합의는 국내 및 지역 정세, 특히 주르프 알나스르(주르프 알사크르)의 석유 밀수 위기와 미국, 이스라엘, 이란이 연루된 지역 분쟁에 달려 있습니다.\n지난주, 알리 알자이디 총리와 가까운 한 소식통은 샤파크 뉴스에 총리가 내각의 성과를 검토하기 시작했지만 당시에는 개각이 계획되지 않았다고 전했다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "샤파크 뉴스.. 소식통에 따르면 바그다드가 석유부와 전력부의 통합을 고려하고 있다고 한다.",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Iraq/Baghdad-considers-merging-oil-and-electricity-ministries-source-says"
-        }
-      ],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Beyond and Through Pipelines: Integrating Kurdistan into Iraq’s Energy Future",
-      "source": "New Lines Institute",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRGVGMF91MS12SUM2TkZjQk8xMVNyODQxak5LUm9ueFNDZlJDV3lkNHc0d0dkYkRvelhkTUhLYzREVy01QURJTXdtYUtuenR3RWRDMXlVdlBlUHFkem0yMGotTGVzdTZzb2Z4RUZlUlRTS3lhNHgzQ1ZQbURDdzU5di1jZmppUWxxZi03LUVKZWliX0hObmg0NktYY2JlSkxKa1JxSy1CRlU0VE04U05zdWNwMjMyNWduOS1Ub2R3?oc=5",
-      "date": "2026-11-16T15:57:57.000Z",
-      "lang": "en",
-      "titleKo": "송유관 너머와 그 안: 이라크의 에너지 미래에 쿠르드스탄 통합",
-      "count": 1,
-      "sources": [
-        "New Lines Institute"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "PM: Granting investors numerous privileges to facilitate their work in Iraq » Iraqi News Agency",
-      "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOT21tSTZNMVdNV2JMQkJHMHdqVkcyZ3dja2R4VEVBVzRBUDRrNW9EVDFOX3ozclE4RG5BbXpzN1Jvd3Nvd0NCWVRzOVRxSG1lWkNuRnlpRkdEbnN1b3BjWkNWeGhiRGd4YmRIVVZ0UDlhNmtRWVM5TzdSSFZTd1I0QXh3enlUdEZ0SnZWMHZYRG81a3VxS1dQTlRxLTUwN25rSXNMdGw2a1NhRVRIQnh5UjhR?oc=5",
-      "date": "2026-11-16T15:41:24.000Z",
-      "lang": "en",
-      "titleKo": "총리: 이라크 내 투자자들의 활동을 용이하게 하기 위해 다수의 특권을 부여 » 이라크 뉴스 통신",
-      "count": 1,
-      "sources": [
-        "وكالة الانباء العراقية (واع)"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Reform begins with protecting oil wealth, Iraq’s energy deputy PM says",
-      "source": "964media",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1zSE55a3kwVlRDTGY2SFN4MUNmRm1sR3FSbGpRb24zV3RZQWd5c3FZTjAxOF8tczRzQVV5Z2lWOU5BalRy?oc=5",
-      "date": "2026-11-16T15:36:01.000Z",
-      "lang": "en",
-      "titleKo": "이라크 에너지 담당 부총리, 개혁은 석유 자원 보호에서 시작된다고 밝혀",
-      "count": 1,
-      "sources": [
-        "964media"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq PM confronts Iran-backed militias over Jurf al-Sakhar control",
-      "source": "The Jerusalem Post",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52a3E5NzJaVGpaNEZnQlNwY3ktQzNib0tkSXM4TzlSb1d0dmRxOEx6V284amFHU0lHSHpNMDRJNG81Vkx2TkdOMjFaVEtuM1hKdEM1TEp0RDNyTWpH?oc=5",
-      "date": "2026-11-16T15:14:11.000Z",
-      "lang": "en",
-      "titleKo": "이라크 총리, 주르프 알사카르 통제권을 놓고 이란 지원 민병대와 대치",
-      "count": 1,
-      "sources": [
-        "The Jerusalem Post"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
       }
     }
   ],
