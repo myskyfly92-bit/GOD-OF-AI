@@ -67,44 +67,44 @@
   },
   "제2급": {
    "diseases": 21,
-   "base": 1848,
-   "prev": 1831,
-   "provisional": 1213,
+   "base": 1868,
+   "prev": 1839,
+   "provisional": 1590,
    "outnatn": 0,
    "trend": [
-    1835,
+    1836,
     2159,
-    1903,
-    1912,
+    1901,
+    1913,
     1913,
     1463,
-    2080,
+    2079,
     1539,
-    2064,
-    1862,
-    1831,
-    1848
+    2060,
+    1863,
+    1839,
+    1868
    ]
   },
   "제3급": {
    "diseases": 28,
-   "base": 801,
-   "prev": 789,
-   "provisional": 369,
-   "outnatn": 12,
+   "base": 820,
+   "prev": 788,
+   "provisional": 499,
+   "outnatn": 14,
    "trend": [
     170,
-    212,
+    213,
     207,
     238,
-    216,
+    217,
     137,
     214,
-    165,
-    345,
-    519,
-    789,
-    801
+    164,
+    353,
+    537,
+    788,
+    820
    ]
   }
  },
@@ -112,82 +112,82 @@
   {
    "name": "카바페넴내성장내세균목(CRE) 감염증",
    "grade": "제2급",
-   "base": 1064,
-   "prev": 1120,
-   "provisional": 719,
-   "dmstc": 1064,
+   "base": 1074,
+   "prev": 1125,
+   "provisional": 912,
+   "dmstc": 1074,
    "outnatn": 0
   },
   {
    "name": "쯔쯔가무시증",
    "grade": "제3급",
-   "base": 636,
+   "base": 647,
    "prev": 605,
-   "provisional": 277,
-   "dmstc": 635,
+   "provisional": 379,
+   "dmstc": 646,
    "outnatn": 1
   },
   {
    "name": "수두",
    "grade": "제2급",
-   "base": 511,
+   "base": 516,
    "prev": 453,
-   "provisional": 329,
-   "dmstc": 511,
+   "provisional": 451,
+   "dmstc": 516,
    "outnatn": 0
   },
   {
    "name": "성홍열",
    "grade": "제2급",
-   "base": 156,
-   "prev": 137,
-   "provisional": 87,
-   "dmstc": 156,
+   "base": 159,
+   "prev": 138,
+   "provisional": 121,
+   "dmstc": 159,
    "outnatn": 0
   },
   {
    "name": "C형간염",
    "grade": "제3급",
-   "base": 88,
-   "prev": 102,
-   "provisional": 50,
-   "dmstc": 87,
+   "base": 93,
+   "prev": 103,
+   "provisional": 66,
+   "dmstc": 92,
    "outnatn": 1
   },
   {
    "name": "유행성이하선염",
    "grade": "제2급",
-   "base": 80,
-   "prev": 71,
-   "provisional": 48,
-   "dmstc": 80,
+   "base": 82,
+   "prev": 73,
+   "provisional": 66,
+   "dmstc": 82,
    "outnatn": 0
   },
   {
    "name": "매독",
    "grade": "제3급",
-   "base": 31,
-   "prev": 42,
-   "provisional": 18,
-   "dmstc": 29,
-   "outnatn": 2
+   "base": 33,
+   "prev": 41,
+   "provisional": 27,
+   "dmstc": 30,
+   "outnatn": 3
   },
   {
    "name": "A형간염",
    "grade": "제2급",
    "base": 22,
    "prev": 33,
-   "provisional": 24,
+   "provisional": 26,
    "dmstc": 22,
    "outnatn": 0
   },
   {
    "name": "레지오넬라증",
    "grade": "제3급",
-   "base": 16,
+   "base": 15,
    "prev": 11,
-   "provisional": 9,
-   "dmstc": 16,
+   "provisional": 10,
+   "dmstc": 15,
    "outnatn": 0
   },
   {
@@ -195,7 +195,7 @@
    "grade": "제3급",
    "base": 10,
    "prev": 12,
-   "provisional": 6,
+   "provisional": 7,
    "dmstc": 10,
    "outnatn": 0
   },
@@ -213,17 +213,17 @@
    "grade": "제2급",
    "base": 7,
    "prev": 5,
-   "provisional": 0,
+   "provisional": 3,
    "dmstc": 7,
    "outnatn": 0
   },
   {
    "name": "B형간염",
    "grade": "제3급",
-   "base": 5,
+   "base": 6,
    "prev": 6,
    "provisional": 2,
-   "dmstc": 5,
+   "dmstc": 6,
    "outnatn": 0
   },
   {
@@ -231,16 +231,16 @@
    "grade": "제2급",
    "base": 4,
    "prev": 3,
-   "provisional": 5,
+   "provisional": 9,
    "dmstc": 4,
    "outnatn": 0
   },
   {
-   "name": "말라리아",
+   "name": "중증열성혈소판감소증후군(SFTS)",
    "grade": "제3급",
    "base": 2,
-   "prev": 0,
-   "provisional": 1,
+   "prev": 1,
+   "provisional": 0,
    "dmstc": 2,
    "outnatn": 0
   }
@@ -255,7 +255,12 @@
   {
    "name": "매독",
    "grade": "제3급",
-   "count": 3
+   "count": 4
+  },
+  {
+   "name": "수두",
+   "grade": "제2급",
+   "count": 1
   },
   {
    "name": "C형간염",
@@ -268,12 +273,17 @@
    "count": 1
   },
   {
+   "name": "유비저",
+   "grade": "제3급",
+   "count": 1
+  },
+  {
    "name": "지카바이러스감염증",
    "grade": "제3급",
    "count": 1
   }
  ],
- "totalBase": 2649,
- "totalPrev": 2620,
- "generatedAt": "2026-11-16T02:23:51.803634+00:00"
+ "totalBase": 2688,
+ "totalPrev": 2627,
+ "generatedAt": "2026-11-17T04:47:14.997451+00:00"
 }
