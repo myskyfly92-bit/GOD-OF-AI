@@ -8,6 +8,14 @@
   "errors": {},
   "items": [
     {
+      "kind": "감염병 발생",
+      "title": "Chikungunya virus disease - Switzerland",
+      "date": "2026-11-17T15:36:13Z",
+      "summary": "On 4 November 2026, health authorities in the canton of Ticino, Switzerland, in coordination with federal authorities, reported four locally acquired cases of chikungunya virus disease. These are the first reported locally acquired chikungunya cases in Switzerland. The earliest reported symptom onset was 10 August 2026, although this infection was identified retrospectively and the source of infection could not be identified. All cases were identified in October 2026. None of the affected indivi",
+      "link": "https://www.who.int/2026-DON627",
+      "donId": "2026-DON627"
+    },
+    {
       "kind": "WHO 소식",
       "title": "Governments make over 230 new pledges to prevent violence against children",
       "date": "2026-11-17T11:04:17Z",
@@ -17,11 +25,27 @@
     },
     {
       "kind": "WHO 소식",
+      "title": "Leaders commit to accelerate action on obesity prevention and control",
+      "date": "2026-11-17T10:00:00Z",
+      "summary": "Global health leaders, ministers and partners launched a new call for action today at the Global Obesity Summit in Spain, committing to accelerate progress in obesity prevention, early intervention and care.",
+      "link": "https://www.who.int/news/item/17-11-2026-leaders-commit-to-accelerate-action-on-obesity-prevention-and-control",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "Evidence mounts that exposure to hormone-disrupting chemicals starts before birth: UNEP–WHO report",
       "date": "2026-11-17T09:38:32Z",
       "summary": "The State of the Science on Endocrine Disrupting Chemicals 2026 report, is the first major global update since the 2012 UNEP-WHO assessment; it finds that more than a decade of research has strengthened and broadened the evidence linking these chemicals with harm to people and wildlife.",
       "link": "https://www.who.int/news/item/17-11-2026-evidence-mounts-that-exposure-to-hormone-disrupting-chemicals-starts-before-birth--unep-who-report",
       "newsType": "Joint News Release"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Advocating for stronger, integrated cervical cancer prevention and care for women and girls living with HIV",
+      "date": "2026-11-17T07:00:00Z",
+      "summary": "On World Cervical Cancer Elimination Day, WHO is calling for stronger integration of HIV and cervical cancer services to ensure that women and girls living with HIV receive timely prevention, screening, diagnosis and treatment of cervical cancer. A coordinated person-centred approach can reduce deaths, improve health outcomes and contribute to an improved quality of life. Women living with HIV have a disproportionate burden of cervical cancer, with a six-fold higher risk of developing cervical c",
+      "link": "https://www.who.int/news/item/17-11-2026-advocating-for-stronger--integrated-cervical-cancer-prevention-and-care-for-women-and-girls-living-with-hiv",
+      "newsType": "Departmental update"
     },
     {
       "kind": "WHO 소식",
@@ -97,6 +121,14 @@
     },
     {
       "kind": "WHO 소식",
+      "title": "New WHO collaborating centre in China to advance progress on sexually transmitted infections",
+      "date": "2026-11-13T07:00:00Z",
+      "summary": "The World Health Organization (WHO) has inaugurated a new WHO collaborating centre for sexually transmitted infection prevention and innovation: the Institute for Global Health of Southern Medical University (SMU) in Guangzhou, China. The designation marks an important step in strengthening global cooperation to prevent and control sexually transmitted infections (STIs), with a focus on advancing innovation, expanding access to testing, strengthening surveillance and building public health capac",
+      "link": "https://www.who.int/news/item/13-11-2026-new-who-collaborating-centre-in-china-to-advance-progress-on-sexually-transmitted-infections",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "Amid challenges, countries increase domestic investment to protect progress against tuberculosis",
       "date": "2026-11-12T16:16:57Z",
       "summary": "Global efforts to end tuberculosis (TB) continue to make progress, with fewer people falling ill and dying from the disease, according to the World Health Organization (WHO) Global Tuberculosis Report 2026 released today.",
@@ -110,30 +142,6 @@
       "summary": "Developed by the WHO Health and Migration Programme in collaboration with WHO’s Service Delivery and Primary Health Care Unit, the report examines how primary health care-oriented responses can improve access, continuity and quality of care for people on the move, while strengthening health systems for diverse populations.",
       "link": "https://www.who.int/news/item/12-11-2026-who-calls-for-migrant-inclusive-primary-health-care-to-strengthen-health-systems-for-all",
       "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Bangladesh and India ban toxic pesticide to boost suicide prevention and brain health",
-      "date": "2026-11-12T08:57:35Z",
-      "summary": "Regulatory action on an acutely toxic pesticide will save thousands of lives and protect brain health worldwideGlobally it is estimated 1 in 5 suicides are attributable to the ingestion of acutely toxic pesticides. Many of these deaths are easily preventable and occur in rural communities across Africa, Asia, Eastern Mediterranean, Latin America and the Caribbean, and the Pacific Islands. Long-term exposure to toxic pesticides has also been linked to brain health and neurological risks among agr",
-      "link": "https://www.who.int/news/item/12-11-2026-bangladesh-and-india-ban-toxic-pesticide-to-boost-suicide-prevention-and-brain-health",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO and African Medicines Agency advance regulatory cooperation at inaugural Agency Week in Kigali",
-      "date": "2026-11-10T23:00:00Z",
-      "summary": "The World Health Organization (WHO) reaffirmed its commitment to strengthening Africa's regulatory systems during the inaugural African Medicines Agency (AMA) Week and the 11th African Medicines Regulators Conference (AMRC), held from 25 to 30 October 2026 in Kigali, Rwanda. Bringing together African regulators, policy-makers, industry and international partners, the event marked an important milestone in translating continental regulatory ambitions into coordinated action to improve access to s",
-      "link": "https://www.who.int/news/item/10-11-2026-who-and-african-medicines-agency-advance-regulatory-cooperation-at-inaugural-agency-week-in-kigali",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO launches “Together for Science and Health” movement to strengthen trust worldwide",
-      "date": "2026-11-10T21:00:54Z",
-      "summary": "WHO today launched Together for Science and Health, a new global movement uniting more than 240 organizations behind a shared commitment to strengthen trust in science and harness its power to improve health and development.",
-      "link": "https://www.who.int/news/item/10-11-2026-who-launches-together-for-science-and-health-movement-to-strengthen-trust-worldwide",
-      "newsType": "News release"
     },
     {
       "kind": "감염병 발생",
@@ -198,15 +206,7 @@
       "summary": "Since the last Disease Outbreak News was published on 11 September 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded further, with two additional health zones affected. These include Bulu health zone in a new province, Sud Ubangi, located on the north-west part of the country and Dungu health zone in Haut-Uélé province, bordering South Sudan. This brings the total number of affected health zones to 63 across seven provinces out of 26 provinces of the countr",
       "link": "https://www.who.int/2026-DON621",
       "donId": "2026-DON621"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
-      "date": "2026-09-10T08:52:02Z",
-      "summary": "Since the last Disease Outbreak News was published on 28 August 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded to one additional health zone, Kayna, in North Kivu. This increase brings the total number of affected health zones to 61 across six out of 26 provinces of the country: Bas-Uélé, Haut-Uélé, Ituri, North Kivu, South Kivu, and Tshopo. As of 7 September 2026, the Democratic Republic of the Congo has reported 6757 confirmed cases, including 3267 dea",
-      "link": "https://www.who.int/2026-DON617",
-      "donId": "2026-DON617"
     }
   ],
-  "generatedAt": "2026-11-18T00:10:38.654419+00:00"
+  "generatedAt": "2026-11-18T14:45:45.444826+00:00"
 }
