@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T03:54:00.839Z",
+  "generatedAt": "2026-11-18T02:54:00.629Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -8,13 +8,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
       "date": "2024-06-10T03:38:59.000Z"
-    },
-    {
-      "title": "‘공공의료 AI 고속도로’ 첫 개통,강원 지역 공공병원 의료 AI로 본격 연결",
-      "source": "보건복지부 대표홈페이지",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQW93U2NzbWlSUmN5bE82eEdwcEI4ckZtQ2Npa3FyMzNqTi1EMzRfb1NDMW9lV0Y1VFl3bEdkdHdUbUZJeE5FemdZVF9Sb2lFQ2tkQmlOX2ZxUDExY3IxYVFMeUhiSnk2RzNyTE1CNjR4eEhCRUl3N296Z19YR1Jud3oxSnZxM3RMZVhkdnBmY3RrcVRkam9Uaklacw?oc=5",
-      "date": "2026-11-11T05:05:00.000Z"
     },
     {
       "title": "보도설명자료",
@@ -38,6 +31,13 @@
       "date": "2025-12-16T14:07:01.000Z"
     },
     {
+      "title": "보도자료(전체)",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
+      "date": "2025-12-16T15:46:00.000Z"
+    },
+    {
       "title": "ICCON 감염예방 소식지",
       "source": "질병관리청",
       "agency": "",
@@ -49,7 +49,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-16T08:50:27.000Z"
+      "date": "2026-11-18T00:44:36.000Z"
     },
     {
       "title": "레지오넬라증",
