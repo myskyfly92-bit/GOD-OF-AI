@@ -1,6 +1,73 @@
 {
-  "generatedAt": "2026-11-18T12:21:24.637Z",
+  "generatedAt": "2026-11-18T20:57:34.989Z",
   "items": [
+    {
+      "title": "공장 화재 진압",
+      "source": "뉴시스",
+      "link": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
+      "date": "2026-11-18T18:15:44.000Z",
+      "lang": "ko",
+      "titleKo": "공장 화재 진압",
+      "url": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
+      "body": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
+      "bodyKo": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
+      "tried": true,
+      "count": 23,
+      "sources": [
+        "Sharjah24",
+        "الاتحاد للأخبار",
+        "شبابيك",
+        "الإمارات اليوم",
+        "Gulf News",
+        "Khaleej Times"
+      ],
+      "related": [
+        {
+          "titleKo": "아즈만: '타와빌' 공장 화재 진압, 부상자 없음",
+          "source": "Sharjah24",
+          "link": "https://sharjah24.ae/ar/Articles/2026/11/18/AL021"
+        },
+        {
+          "titleKo": "아즈만 '타와빌' 공장 화재 진압, 부상자 없음",
+          "source": "الاتحاد للأخبار",
+          "link": "https://www.aletihad.ae/news/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA/4706892/%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D9%85%D8%B5%D9%86%D8%B9--%D8%AA%D9%88%D8%A7%D8%A8%D9%84--%D8%A8%D8%B9%D8%AC%D9%85%D8%A7%D9%86-%D8%AF%D9%88%D9%86-%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA"
+        },
+        {
+          "titleKo": "아즈만 향신료 공장 화재 원인",
+          "source": "شبابيك",
+          "link": "https://shbabbek.com/show/288283"
+        },
+        {
+          "titleKo": "아즈만 향신료 공장 화재 진압",
+          "source": "الإمارات اليوم",
+          "link": "https://www.emaratalyoum.com/local-section/accidents/2026-11-18-1.2104179?ot=ot.AMPPageLayout"
+        },
+        {
+          "titleKo": "아즈만 창고 화재 진압, 부상자 발생 보고 없음",
+          "source": "Gulf News",
+          "link": "https://gulfnews.com/uae/emergencies/ajman-warehouse-fire-brought-under-control-no-injuries-reported-1.500752441"
+        }
+      ],
+      "tag": "숙소·창고"
+    },
+    {
+      "title": "تقصي الحقيقة: فيديو لحريق قديم بالرياض وليس هجوما حوثيا على برج في العاصمة السعودية",
+      "source": "Howl.Link",
+      "link": "https://t.co/Y7NsrQz6ir",
+      "date": "2026-11-18T12:58:04.000Z",
+      "lang": "ar",
+      "titleKo": "팩트 체크: 사우디아라비아 수도의 타워에 대한 후티족의 공격이 아닌 리야드에서 발생한 과거 화재 동영상",
+      "url": "https://t.co/Y7NsrQz6ir",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Howl.Link"
+      ],
+      "related": [],
+      "tag": "고층·건물"
+    },
     {
       "title": "호치민시에서 건설 중인 식당 화재, 수십 미터 높이로 연기 발생",
       "source": "Laodong.vn",
@@ -12,74 +79,12 @@
       "body": "",
       "bodyKo": "",
       "tried": true,
-      "count": 3,
+      "count": 1,
       "sources": [
-        "Laodong.vn",
-        "الوكالة الوطنية العراقية للأنباء| نينا",
-        "عصابات الجولاني تعدم الأب الروحي لكنيسة مار إلياس في طرطوس"
+        "Laodong.vn"
       ],
-      "related": [
-        {
-          "titleKo": "바그다드 중심가 목공소에서 화재 발생",
-          "source": "الوكالة الوطنية العراقية للأنباء| نينا",
-          "link": "https://ninanews.com/website/News/Details?Key=1325802"
-        },
-        {
-          "titleKo": "10개 소방대가 바그다드 와지리야 지역의 목공소 화재 진압에 나섰습니다.",
-          "source": "عصابات الجولاني تعدم الأب الروحي لكنيسة مار إلياس في طرطوس",
-          "link": "https://video-agencyia.iq/Detail/46533"
-        }
-      ],
+      "related": [],
       "tag": "기타"
-    },
-    {
-      "title": "공장 화재 진압",
-      "source": "뉴시스",
-      "link": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
-      "date": "2026-11-18T11:33:44.000Z",
-      "lang": "ko",
-      "titleKo": "공장 화재 진압",
-      "url": "https://mobile.newsis.com/photo/NISI20261028_0021508666",
-      "body": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
-      "bodyKo": "2026년 부산시 긴급구조종합훈련이 열린 28일 부산 사하구 성창기업에서 소방이 화재를 진압하고 있다.",
-      "tried": true,
-      "count": 12,
-      "sources": [
-        "Khaleej Times",
-        "صحيفة الخليج",
-        "جريدة الجريدة الكويتية",
-        "جريدة الأنباء الكويتية",
-        "뉴시스",
-        "وكالة الانباء العراقية (واع)"
-      ],
-      "related": [
-        {
-          "titleKo": "아즈만 창고에서 화재 발생, 부상자 없음",
-          "source": "Khaleej Times",
-          "link": "https://www.khaleejtimes.com/uae/emergencies/fire-breaks-ajman-warehouse-no-injuries"
-        },
-        {
-          "titleKo": "아즈만.. '신산업단지' 창고에서 발생한 소규모 화재 진압",
-          "source": "صحيفة الخليج",
-          "link": "https://www.alkhaleej.ae/2026-11-18/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D8%A7%D8%B1/%D8%B9%D8%AC%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%AF%D9%88%D8%AF-%D9%81%D9%8A-%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D8%A8-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9"
-        },
-        {
-          "titleKo": "'소방서': 살리비야 창고 화재 진압, 부상자 없음",
-          "source": "جريدة الجريدة الكويتية",
-          "link": "https://www.aljarida.com/article/150850"
-        },
-        {
-          "titleKo": "소방대가 살리비야 지역 가구 및 카펫 창고 화재를 진압했습니다.",
-          "source": "جريدة الأنباء الكويتية",
-          "link": "https://www.alanba.com.kw/1385510"
-        },
-        {
-          "titleKo": "민방위대가 와지리야의 목공소 화재 진압에 나섰습니다. » 이라크 통신(INA)",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://ina.iq/ar/local/279600-.html"
-        }
-      ],
-      "tag": "숙소·창고"
     },
     {
       "title": "분당소방서, 공사장 화재위험 사전 차단에 총력",
@@ -125,6 +130,37 @@
       "tag": "숙소·창고"
     },
     {
+      "title": "[현장+] 보조배터리 화재 '초동대응' 사이렌 연기감지기",
+      "source": "서울파이낸스",
+      "link": "https://www.seoulfn.com/news/articleView.html?idxno=643128",
+      "date": "2026-11-18T07:01:00.000Z",
+      "lang": "ko",
+      "titleKo": "[현장+] 보조배터리 화재 '초동대응' 사이렌 연기감지기",
+      "url": "https://www.seoulfn.com/news/articleView.html?idxno=643128",
+      "body": "[서울파이낸스 송금종 기자] 깨어나 취침 전까지 손에서 뗄래야 뗄 수없는 스마트폰과 보조배터리. 하지만 무심코 침대나 소파, 이불 위에 놓인 보조배터리가 관리 소",
+      "bodyKo": "[서울파이낸스 송금종 기자] 깨어나 취침 전까지 손에서 뗄래야 뗄 수없는 스마트폰과 보조배터리. 하지만 무심코 침대나 소파, 이불 위에 놓인 보조배터리가 관리 소",
+      "tried": true,
+      "count": 3,
+      "sources": [
+        "한국경제TV",
+        "이투데이",
+        "서울파이낸스"
+      ],
+      "related": [
+        {
+          "titleKo": "＂화재 대응, 열보다 ＇연기 감지기＇ 효과적＂ [뉴스+현장]",
+          "source": "한국경제TV",
+          "link": "https://m.wowtv.co.kr/NewsCenter/AMP/Read?articleId=A202611180117"
+        },
+        {
+          "titleKo": "[현장에서] 침대 위 보조배터리 화재, 연기 난 지 12초 만에 불붙어",
+          "source": "이투데이",
+          "link": "https://bravo.etoday.co.kr/view/atc_view/20504"
+        }
+      ],
+      "tag": "전기·배터리"
+    },
+    {
       "title": "남동소방서, 겨울철 대형 공사현장 화재예방 현장예찰",
       "source": "소방방재신문",
       "link": "http://www.fpn119.co.kr/259655",
@@ -135,23 +171,12 @@
       "body": "[FPN 정재우 기자] = 남동소방서(서장 조승희)는 18일 관내 대형 공사현장인 간석동 상인천초교 주변 주택재개발 공사장에서 현장예찰을 실시했다. 이번\n이번 예찰은 건조한 날씨가 이어지는 겨울철 화재 시 대형 인명피해 우려가 높은 공사현장의 위험요인을 사전 제거하고 관계인들의 자율적인 안전관리 의식을 고취하기 위해 겨울철 화재안전대책의 일환으로 마련됐다.\n대상은 연면적 3만㎡ 이상 상주 감리대상 공사현장이자 간석동 311-1 외 588필지에 조성 중인 상인천초교주변구역 주택재개발정비사업 현장이다.\n이날 조승희 서장을 비롯한 소방서 관계자들은 현장 브리핑을 청취한 뒤 공사현장을 직접 둘러보며 ▲공사장 진입로 및 출동차량 부서 등 현장대응 능력 강화를 위한 정보 수집 ▲현장지도를 통한 화재 초기 대처 요령 교육 ▲화기 취급 장소와 용접 작업 현장 등 안전조치 확인 ▲공사장 위험요인을 토대로 한 관계자 개선방안 논의 등을 중점적으로 실시했다.\n또한 공사현장 특성상 용접ㆍ용단 등 화기 작업이 많아 작은 불티가 가연성 자재로 옮겨붙을 경우 대형 화재로 이어질 수 있음을 강조하며 현장 근로자에 대한 철저한 안전교육과 초기 대응체계 마련을 주문했다.\n조승희 서장은 “공사현장은 용접 작업 등으로 인한 화재가 빈번히 발생하는 만큼 사소한 부주의가 대형 화재로 이어질 수 있다”며 “관계자 주도의 철저한 안전관리와 지속적인 안전교육으로 화재와 안전사고 예방에 만전을 기해주길 바란다”고 당부했다.",
       "bodyKo": "[FPN 정재우 기자] = 남동소방서(서장 조승희)는 18일 관내 대형 공사현장인 간석동 상인천초교 주변 주택재개발 공사장에서 현장예찰을 실시했다. 이번\n이번 예찰은 건조한 날씨가 이어지는 겨울철 화재 시 대형 인명피해 우려가 높은 공사현장의 위험요인을 사전 제거하고 관계인들의 자율적인 안전관리 의식을 고취하기 위해 겨울철 화재안전대책의 일환으로 마련됐다.\n대상은 연면적 3만㎡ 이상 상주 감리대상 공사현장이자 간석동 311-1 외 588필지에 조성 중인 상인천초교주변구역 주택재개발정비사업 현장이다.\n이날 조승희 서장을 비롯한 소방서 관계자들은 현장 브리핑을 청취한 뒤 공사현장을 직접 둘러보며 ▲공사장 진입로 및 출동차량 부서 등 현장대응 능력 강화를 위한 정보 수집 ▲현장지도를 통한 화재 초기 대처 요령 교육 ▲화기 취급 장소와 용접 작업 현장 등 안전조치 확인 ▲공사장 위험요인을 토대로 한 관계자 개선방안 논의 등을 중점적으로 실시했다.\n또한 공사현장 특성상 용접ㆍ용단 등 화기 작업이 많아 작은 불티가 가연성 자재로 옮겨붙을 경우 대형 화재로 이어질 수 있음을 강조하며 현장 근로자에 대한 철저한 안전교육과 초기 대응체계 마련을 주문했다.\n조승희 서장은 “공사현장은 용접 작업 등으로 인한 화재가 빈번히 발생하는 만큼 사소한 부주의가 대형 화재로 이어질 수 있다”며 “관계자 주도의 철저한 안전관리와 지속적인 안전교육으로 화재와 안전사고 예방에 만전을 기해주길 바란다”고 당부했다.",
       "tried": true,
-      "count": 3,
+      "count": 1,
       "sources": [
         "소방방재신문"
       ],
-      "related": [
-        {
-          "titleKo": "남동소방서, 겨울철 공사현장 용접ㆍ용단 화재 주의 당부",
-          "source": "소방방재신문",
-          "link": "http://www.fpn119.co.kr/259513"
-        },
-        {
-          "titleKo": "남동소방서, 공사현장 용접ㆍ용단 작업 화재 예방 당부",
-          "source": "소방방재신문",
-          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5jY0NNdkk5V0M2Vm9GNXhjS0Y5c3pVWndCNnpSQnluSkViU0RwTDdzUHg4U2k1OUtLcXVlTFhKbDhFSHhNMmc?oc=5"
-        }
-      ],
-      "tag": "용접·불티"
+      "related": [],
+      "tag": "기타"
     },
     {
       "title": "Fire engulfs factory in Yemen's Hodeidah following reported Saudi strikes",
@@ -170,31 +195,6 @@
       ],
       "related": [],
       "tag": "공장·플랜트"
-    },
-    {
-      "title": "[현장+] 보조배터리 화재 '초동대응' 사이렌 연기감지기",
-      "source": "서울파이낸스",
-      "link": "https://www.seoulfn.com/news/articleView.html?idxno=643128",
-      "date": "2026-11-18T04:46:00.000Z",
-      "lang": "ko",
-      "titleKo": "[현장+] 보조배터리 화재 '초동대응' 사이렌 연기감지기",
-      "url": "https://www.seoulfn.com/news/articleView.html?idxno=643128",
-      "body": "[서울파이낸스 송금종 기자] 깨어나 취침 전까지 손에서 뗄래야 뗄 수없는 스마트폰과 보조배터리. 하지만 무심코 침대나 소파, 이불 위에 놓인 보조배터리가 관리 소",
-      "bodyKo": "[서울파이낸스 송금종 기자] 깨어나 취침 전까지 손에서 뗄래야 뗄 수없는 스마트폰과 보조배터리. 하지만 무심코 침대나 소파, 이불 위에 놓인 보조배터리가 관리 소",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "이투데이",
-        "서울파이낸스"
-      ],
-      "related": [
-        {
-          "titleKo": "[현장에서] 침대 위 보조배터리 화재, 연기 난 지 12초 만에 불붙어",
-          "source": "이투데이",
-          "link": "https://bravo.etoday.co.kr/view/atc_view/20504"
-        }
-      ],
-      "tag": "전기·배터리"
     },
     {
       "title": "선박 배터리 화재 어떻게 막나?",
@@ -234,36 +234,6 @@
       "tried": true
     },
     {
-      "title": "천안시, 공장·창고 4000여동 대대적 '화재안전 조사'",
-      "source": "뉴시스",
-      "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261117_0003870934",
-      "date": "2026-11-18T03:01:25.000Z",
-      "lang": "ko",
-      "titleKo": "천안시, 공장·창고 4000여동 대대적 '화재안전 조사'",
-      "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261117_0003870934",
-      "body": "[천안=뉴시스]최영민 기자 = 충남 천안시가 지역 내 공장·창고 4000여동을 대상으로 내년 연말까지 대재적인 화재안전 실태조사를 실시한다고 17일 밝혔다",
-      "bodyKo": "[천안=뉴시스]최영민 기자 = 충남 천안시가 지역 내 공장·창고 4000여동을 대상으로 내년 연말까지 대재적인 화재안전 실태조사를 실시한다고 17일 밝혔다",
-      "tried": true,
-      "count": 3,
-      "sources": [
-        "천안아산신문",
-        "뉴시스"
-      ],
-      "related": [
-        {
-          "titleKo": "천안 공장·창고 4000여 동 화재안전 조사…고위험 370여 동 연내 우선",
-          "source": "천안아산신문",
-          "link": "http://www.canews.kr/news/articleView.html?idxno=9754"
-        },
-        {
-          "titleKo": "평택시, 공장·창고 화재안전 조사…\"고위험 사업장 266동\"",
-          "source": "뉴시스",
-          "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261117_0003872209"
-        }
-      ],
-      "tag": "숙소·창고"
-    },
-    {
       "title": "[안전한 복구]SH공사, 구룡마을 화재현장 주변 정화…2차 사고 예방 앞장",
       "source": "전국뉴스",
       "link": "https://www.jeonguknews.co.kr/news/articleView.html?idxno=88169",
@@ -298,6 +268,30 @@
       ],
       "related": [],
       "tag": "기타"
+    },
+    {
+      "title": "천안시, 공장·창고 4000여동 대대적 '화재안전 조사'",
+      "source": "뉴시스",
+      "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261117_0003870934",
+      "date": "2026-11-17T23:51:42.000Z",
+      "lang": "ko",
+      "titleKo": "천안시, 공장·창고 4000여동 대대적 '화재안전 조사'",
+      "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261117_0003870934",
+      "body": "[천안=뉴시스]최영민 기자 = 충남 천안시가 지역 내 공장·창고 4000여동을 대상으로 내년 연말까지 대재적인 화재안전 실태조사를 실시한다고 17일 밝혔다",
+      "bodyKo": "[천안=뉴시스]최영민 기자 = 충남 천안시가 지역 내 공장·창고 4000여동을 대상으로 내년 연말까지 대재적인 화재안전 실태조사를 실시한다고 17일 밝혔다",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "뉴시스"
+      ],
+      "related": [
+        {
+          "titleKo": "평택시, 공장·창고 화재안전 조사…\"고위험 사업장 266동\"",
+          "source": "뉴시스",
+          "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261117_0003872209"
+        }
+      ],
+      "tag": "숙소·창고"
     },
     {
       "title": "군산해경, 군산항 남방파제 인근 해상 준설작업선 화재 합동 진화 완료",
@@ -336,31 +330,6 @@
       "tag": "기타"
     },
     {
-      "title": "ما حقيقة فيديو حريق برج الفيصلية في العاصمة السعودية الرياض؟",
-      "source": "Masrawy",
-      "link": "https://www.masrawy.com/news/news_publicaffairs/details/2026/11/14/3078594/%D9%85%D8%A7-%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D8%B1%D8%AC-%D8%A7%D9%84%D9%81%D9%8A%D8%B5%D9%84%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-?utm_source=article-share&utm_medium=social",
-      "date": "2026-11-17T11:36:47.000Z",
-      "lang": "ar",
-      "titleKo": "사우디아라비아 수도 리야드의 알파이살리야 타워 화재 동영상은 사실일까요?",
-      "url": "https://www.masrawy.com/news/news_publicaffairs/details/2026/11/14/3078594/%D9%85%D8%A7-%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D8%B1%D8%AC-%D8%A7%D9%84%D9%81%D9%8A%D8%B5%D9%84%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-?utm_source=article-share&utm_medium=social",
-      "body": "تداولت حسابات على مواقع التواصل الاجتماعي مقطع فيديو ي ظهر تصاعد أعمدة كثيفة من الدخان الأسود في سماء العاصمة السعودية الرياض بالقرب من برج الفيصلية | مصراوي\nوكشف فريق التحقق في مصراوي، أن الادعاء غير صحيح؛ إذ أن الفيديو حقيقي، لكنه يعود إلى حادث قديم عام 2018، وأُعيد تداوله خارج سياقه الأصلي.\nوتم نشر مقطع الفيديو بواسطة حساب على منصة إكس يحمل اسم (@Farisgoold)، ونقلت عنه حسابات أخرى، مُدّعيًا أنه يوثّق حريقًا اندلع في البرج نتيجة استهدافه الخميس 12 نوفمبر 2026.\nاستهداف برج الفيصلية بالرياض 💔 يا الهي ‼️🥲🥲 https://t.co/7iHJnSEWa1\nباستخدام أداة جوجل لنس للبحث العكسي، تبيّن أن المقطع يعود إلى حادث وقع عام 2018، ولا يوثّق استهدافًا حديثًا للعاصمة السعودية، كما زعم ناشروه.\nفقد نشرت قناة الإخبارية السعودية المقطع ذاته عبر حسابها الرسمي على منصة إكس بتاريخ 30 يناير 2018، مُوضحة أن حريقًا محدودًا اندلع في مبنى قيد الإنشاء يقع بالقرب من برج الفيصلية في شارع العليا بالرياض.",
-      "bodyKo": "소셜 미디어 계정에서 사우디아라비아 수도 리야드의 알파이살리야 타워 근처 하늘에 짙은 검은 연기가 치솟는 동영상이 공유되었습니다. | 마스라위\nMasrawy의 검증팀은 해당 주장이 사실이 아니라고 밝혔습니다. 동영상은 진짜이지만 2018년의 오래된 사건에 관한 것이며 원래 맥락에서 벗어나 다시 유포되었습니다.\n동영상은 (@Farisgoold)이라는 X 계정에 게시되었으며, 다른 계정들이 이를 인용하여 2026년 11월 12일 목요일에 타워가 공격을 받아 화재가 발생한 장면을 기록한 것이라고 주장했습니다.\n리야드의 알파이살리야 타워를 겨냥한 공격 💔 세상에‼️🥲🥲 https://t.co/7iHJnSEWa1\n구글 렌즈 역검색 도구를 사용한 결과, 해당 영상은 2018년에 발생한 사건을 보여주는 것으로, 게시자들이 주장한 것처럼 최근 사우디아라비아 수도를 겨냥한 공격을 기록한 것이 아님이 밝혀졌습니다.\n사우디아라비아 뉴스 채널은 2018년 1월 30일 공식 X 계정을 통해 같은 영상을 게시하고 리야드 올라야 거리에 있는 파이살리야 타워 인근의 공사 중인 건물에서 소규모 화재가 발생했다고 설명했습니다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "في ميزان فرانس برس",
-        "Masrawy"
-      ],
-      "related": [
-        {
-          "titleKo": "이 영상은 2020년 제다에서 발생한 화재에 관한 것으로, 후티 반군이 사우디아라비아의 타워를 공격한 것과는 관련이 없습니다.",
-          "source": "في ميزان فرانس برس",
-          "link": "https://factcheckarabic.afp.com/doc.afp.com.D7PF6NQ"
-        }
-      ],
-      "tag": "고층·건물"
-    },
-    {
       "title": "서울주택도시개발공사, 구룡마을 화재 피해지역 주변 환경정화 봉사 실시",
       "source": "시사코리아",
       "link": "https://www.sisakorea.kr/100544",
@@ -380,68 +349,7 @@
         {
           "titleKo": "건설업계, 자이 미래전략 발표회 진행·구룡마을 화재 피해지역 주변 환경정화 봉사활동 실시",
           "source": "여성소비자신문",
-          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9RQW1kVjdUTDk2VVp1M29TWGxMamhLdUpHVWdnQzliMlFRdEhPMk1jV3NULTBIal9IclFnektHYzltWWJrcTZ0cmJYWVVHSFg3MGZiNWhoRjlZUzMtOTRha1RjSmJfQQ?oc=5"
-        }
-      ],
-      "tag": "기타"
-    },
-    {
-      "title": "Old Video From Ajman Market Fire Falsely Shared As Iranian Attack On Dubai",
-      "source": "Newschecker",
-      "link": "https://newschecker.in/fact-check/old-video-from-ajman-market-fire-falsely-shared-as-iranian-attack-on-dubai",
-      "date": "2026-11-17T07:43:40.000Z",
-      "lang": "en",
-      "titleKo": "아즈만 시장 화재 사건의 오래된 동영상이 두바이에 대한 이란의 공격으로 잘못 공유됨",
-      "url": "https://newschecker.in/fact-check/old-video-from-ajman-market-fire-falsely-shared-as-iranian-attack-on-dubai",
-      "body": "An old and unrelated video has been shared to falsely show an Iranian attack on Dubai.",
-      "bodyKo": "이란의 두바이 공격을 허위로 보여주기 위해 오래된 무관한 동영상이 공유되었습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Newschecker"
-      ],
-      "related": [],
-      "tag": "시장·상가"
-    },
-    {
-      "title": "11 killed in southern Thailand building fire",
-      "source": "The Peninsula Qatar",
-      "link": "https://thepeninsulaqatar.com/article/16/11/2026/11-killed-in-southern-thailand-building-fire",
-      "date": "2026-11-17T07:33:19.000Z",
-      "lang": "en",
-      "titleKo": "태국 남부 건물 화재로 11명 사망",
-      "url": "https://thepeninsulaqatar.com/article/16/11/2026/11-killed-in-southern-thailand-building-fire",
-      "body": "Bangkok: A fire tore through a commercial building in southern Thailand s Phuket province early Monday, resulting in 11 deaths and dozens of injuries,...\nThe blaze broke out at about 3 a.m. local time in Patong town. It started in a building that housed a motorcycle rental shop, with living quarters on the upper floors.\nThe flames spread to neighboring shophouses before firefighters brought the fire under control at about 515 a.m.\nPatong Mayor Lalita Maneesri told local media that a short circuit at a power pole in front of the building was suspected to have caused the fire.\nLalita said sparks from the pole fell onto motorcycles parked nearby, and the fire spread quickly. She added that most of the injured suffered from smoke inhalation.\nInitial checks found eight shophouse units, 100 motorcycles, and one car damaged, said deputy government spokesperson Ploythalay Laksameesaengchan.",
-      "bodyKo": "방콕: 월요일 이른 아침 태국 남부 푸껫(Phuket) 주에 위치한 한 상업용 건물에서 화재가 발생해 11명이 사망하고 수십 명이 부상을 입었습니다...\n화재는 현지 시각으로 새벽 3시경 파통시에서 발생했습니다. 화재는 오토바이 대여점이 입점해 있고 위층에 주거 공간이 있는 건물에서 시작되었습니다.\n불길이 인접한 상가 주택으로 번졌으며, 소방대원들이 오전 5시 15분경에 화재를 진압했습니다.\n파통의 랄리타 마네스리 시장은 현지 언론에 건물 앞 전신주에서 발생한 단락이 화재의 원인으로 추정된다고 밝혔습니다.\n랄리타는 전신주에서 떨어진 불꽃이 근처에 주차된 오토바이 위로 떨어졌고, 불이 빠르게 번졌다고 말했습니다. 그녀는 부상자 대부분이 연기를 흡입하여 피해를 입었다고 덧붙였습니다.\n정부 대변인 대행인 플로이탈라이 락사미사엥찬(Ploythalay Laksameesaengchan)은 초기 점검 결과 상가 주택 8채, 오토바이 100대, 자동차 1대가 파손된 것으로 확인되었다고 밝혔습니다.",
-      "tried": true,
-      "count": 5,
-      "sources": [
-        "شفقنا العراق",
-        "شفق نيوز",
-        "وكالة الانباء العراقية (واع)",
-        "The Peninsula Qatar",
-        "مرسال قطر"
-      ],
-      "related": [
-        {
-          "titleKo": "민방위: 투즈쿠르마투 주유소 화재로 1명 사망, 1명 부상",
-          "source": "شفقنا العراق",
-          "link": "https://iraq.shafaqna.com/AR/672979/"
-        },
-        {
-          "titleKo": "살라헤딘 동부 주유소에서 발생한 '대형' 화재로 2명 사망 및 부상",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D9%85%D8%B5%D8%B1%D8%B9-%D9%88-%D8%B5%D8%A7%D8%A8%D8%A9-%D8%B4%D8%AE%D8%B5%D9%8A%D9%86-%D8%A8%D8%AD%D8%B1%D9%8A%D9%82-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%AD%D8%B7%D8%A9-%D9%88%D9%82%D9%88%D8%AF-%D9%81%D9%8A-%D8%B5%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D8%AF%D9%8A%D9%86"
-        },
-        {
-          "titleKo": "민방위대가 투즈쿠르마투 지구 주유소에서 발생한 대형 화재를 진압했습니다. » 이라크 통신사(INA)",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://ina.iq/ar/local/279683-.html"
-        },
-        {
-          "titleKo": "태국 상업 건물 화재로 11명 사망, 16명 부상",
-          "source": "مرسال قطر",
-          "link": "https://marsalqatar.qa/post/92947/%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%A8%D9%86%D9%89-%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D9%81%D9%8A-%D8%AA%D8%A7%D9%8A%D9%84%D8%A7%D9%86%D8%AF-%D9%8A%D8%AE"
+          "link": "http://www.wsobi.com/news/articleView.html?idxno=321980"
         }
       ],
       "tag": "기타"
@@ -457,49 +365,60 @@
       "body": "[푸켓(태국)=AP/뉴시스]16일 새벽 화재가 발생한 태국 남부 푸켓의 한 오코바이 대여점의 불탄 모습. 이 화재로 최소 11명이 사망했다. 2026.11.16.",
       "bodyKo": "[푸켓(태국)=AP/뉴시스]16일 새벽 화재가 발생한 태국 남부 푸켓의 한 오코바이 대여점의 불탄 모습. 이 화재로 최소 11명이 사망했다. 2026.11.16.",
       "tried": true,
-      "count": 2,
+      "count": 8,
       "sources": [
+        "شفقنا العراق",
+        "The Peninsula Qatar",
         "뉴시스",
-        "ARABNEWS24.CA"
-      ],
-      "related": [
-        {
-          "titleKo": "관광지 푸껫섬 한복판에서 태국 건물 대형 화재로 사망자 발생 — 아랍 뉴스 24",
-          "source": "ARABNEWS24.CA",
-          "link": "https://arabnews24.ca/news/af24db8b-704f-4343-8cda-ddd7c7672922"
-        }
-      ],
-      "tag": "기타"
-    },
-    {
-      "title": "안성 아파트 신축 현장 화재…11명 대피",
-      "source": "뉴시스",
-      "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261117_0003871177",
-      "date": "2026-11-17T04:03:44.000Z",
-      "lang": "ko",
-      "titleKo": "안성 아파트 신축 현장 화재…11명 대피",
-      "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261117_0003871177",
-      "body": "[안성=뉴시스] 양효원 기자 = 17일 오전 9시59분께 경기 안성시 옥산동 한 아파트 신축 현장에서 불이 났다",
-      "bodyKo": "[안성=뉴시스] 양효원 기자 = 17일 오전 9시59분께 경기 안성시 옥산동 한 아파트 신축 현장에서 불이 났다",
-      "tried": true,
-      "count": 3,
-      "sources": [
-        "뉴스1",
-        "뉴시스",
+        "شفق نيوز",
+        "وكالة الانباء العراقية (واع)",
         "경인일보"
       ],
       "related": [
         {
-          "titleKo": "안성 아파트 신축 현장서 불…40여분 만에 진화(종합)",
-          "source": "뉴스1",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52bjAtWGVWNXc1R0VGTjBBUkVRS2ZVVVAwcTkwMndNQjhSem9PWXRrcFk3SjZRTXMtZGJSY1BHRG55ZldtTzFCRElkV3hmMDQwbEhLbXNn?oc=5"
+          "titleKo": "민방위: 투즈쿠르마투 주유소 화재로 1명 사망, 1명 부상",
+          "source": "شفقنا العراق",
+          "link": "https://iraq.shafaqna.com/AR/672979/"
         },
         {
-          "titleKo": "안성 옥산동 아파트 공사현장 18층서 화재… 30여분 만에 큰 불길 잡아",
-          "source": "경인일보",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1VUWF2UG5FcU1LUjNxQWczTVhNRTQ0WmVKUHVpRFJnZXFWS1dPZzNJSHBkT1ItWkh6bGhZNm9RYmROZ19QNXdIZ01Wa1NXY3pzc0E?oc=5"
+          "titleKo": "태국 남부 건물 화재로 11명 사망",
+          "source": "The Peninsula Qatar",
+          "link": "https://thepeninsulaqatar.com/article/16/11/2026/11-killed-in-southern-thailand-building-fire"
+        },
+        {
+          "titleKo": "살라헤딘 동부 주유소에서 발생한 '대형' 화재로 2명 사망 및 부상",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D9%85%D8%B5%D8%B1%D8%B9-%D9%88-%D8%B5%D8%A7%D8%A8%D8%A9-%D8%B4%D8%AE%D8%B5%D9%8A%D9%86-%D8%A8%D8%AD%D8%B1%D9%8A%D9%82-%D8%AF%D8%A7%D8%AE%D9%84-%D9%85%D8%AD%D8%B7%D8%A9-%D9%88%D9%82%D9%88%D8%AF-%D9%81%D9%8A-%D8%B5%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D8%AF%D9%8A%D9%86"
+        },
+        {
+          "titleKo": "민방위대가 투즈쿠르마투 지구 주유소에서 발생한 대형 화재를 진압했습니다. » 이라크 통신사(INA)",
+          "source": "وكالة الانباء العراقية (واع)",
+          "link": "https://ina.iq/ar/local/279683-.html"
+        },
+        {
+          "titleKo": "안성 아파트 신축 현장 화재…11명 대피",
+          "source": "뉴시스",
+          "link": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20261117_0003871177"
         }
       ],
+      "tag": "고층·건물"
+    },
+    {
+      "title": "안성 아파트 신축 현장서 불…40여분 만에 진화(종합)",
+      "source": "뉴스1",
+      "link": "https://www.news1.kr/local/gyeonggi/6356625",
+      "date": "2026-11-17T04:03:44.000Z",
+      "lang": "ko",
+      "titleKo": "안성 아파트 신축 현장서 불…40여분 만에 진화(종합)",
+      "url": "https://www.news1.kr/local/gyeonggi/6356625",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "뉴스1"
+      ],
+      "related": [],
       "tag": "고층·건물"
     },
     {
@@ -519,20 +438,6 @@
       ],
       "related": [],
       "tag": "고층·건물"
-    },
-    {
-      "title": "가평소방서, 유관기관과 손잡고 소규모 공장 화재 예방 총력",
-      "source": "시사일보",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBubGxaTWJ0NGt2OEtUdXZvdGRrcXJoaHI5V25VWFpnWTl2amVreHVyM3VYdGFDZDU1ak4yeTUtUkdaUUVuU2dQZG9pLWY?oc=5",
-      "date": "2026-11-17T03:17:00.000Z",
-      "lang": "ko",
-      "titleKo": "가평소방서, 유관기관과 손잡고 소규모 공장 화재 예방 총력",
-      "count": 1,
-      "sources": [
-        "시사일보"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
     },
     {
       "title": "완공검사 소방시설 차단→건물화재…시공사 2심 벌금형",
@@ -589,21 +494,42 @@
       "tag": "기타"
     },
     {
-      "title": "هذا الفيديو يعود لحريقٍ في دبي ليلة رأس السنة عام 2015 وليس لاستهداف برجٍ في الرياض",
-      "source": "في ميزان فرانس برس",
-      "link": "https://factcheckarabic.afp.com/doc.afp.com.D7LA8T4",
-      "date": "2026-11-16T13:01:31.000Z",
-      "lang": "ar",
-      "titleKo": "이 영상은 리야드의 타워를 겨냥한 것이 아니라 2015년 새해 전야에 두바이에서 발생한 화재의 것입니다.",
-      "url": "https://factcheckarabic.afp.com/doc.afp.com.D7LA8T4",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
+      "title": "대구 달서구 장동 공장서 불…소방차 31대 출동, 52분 만에 진화",
+      "source": "경북매일",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJUXJRdmctbllWMEtQalpZbnA4SUhBWFk2MGZ3Z0xZTkoycGNOVDIwa0Z4OVg5dTJzbzN3ZmJBaGxqY3hjSnNtMWhBTXdlbEp5TFBoeEg0Y3d3QQ?oc=5",
+      "date": "2026-11-17T01:49:00.000Z",
+      "lang": "ko",
+      "titleKo": "대구 달서구 장동 공장서 불…소방차 31대 출동, 52분 만에 진화",
       "count": 1,
       "sources": [
-        "في ميزان فرانس برس"
+        "경북매일"
       ],
       "related": [],
+      "tag": "공장·플랜트"
+    },
+    {
+      "title": "ما حقيقة فيديو حريق برج الفيصلية في العاصمة السعودية الرياض؟",
+      "source": "Masrawy",
+      "link": "https://www.masrawy.com/news/news_publicaffairs/details/2026/11/14/3078594/%D9%85%D8%A7-%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D8%B1%D8%AC-%D8%A7%D9%84%D9%81%D9%8A%D8%B5%D9%84%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-?utm_source=article-share&utm_medium=social",
+      "date": "2026-11-16T13:01:31.000Z",
+      "lang": "ar",
+      "titleKo": "사우디아라비아 수도 리야드의 알파이살리야 타워 화재 동영상은 사실일까요?",
+      "url": "https://www.masrawy.com/news/news_publicaffairs/details/2026/11/14/3078594/%D9%85%D8%A7-%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D8%B1%D8%AC-%D8%A7%D9%84%D9%81%D9%8A%D8%B5%D9%84%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%A7%D8%B5%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-?utm_source=article-share&utm_medium=social",
+      "body": "تداولت حسابات على مواقع التواصل الاجتماعي مقطع فيديو ي ظهر تصاعد أعمدة كثيفة من الدخان الأسود في سماء العاصمة السعودية الرياض بالقرب من برج الفيصلية | مصراوي\nوكشف فريق التحقق في مصراوي، أن الادعاء غير صحيح؛ إذ أن الفيديو حقيقي، لكنه يعود إلى حادث قديم عام 2018، وأُعيد تداوله خارج سياقه الأصلي.\nوتم نشر مقطع الفيديو بواسطة حساب على منصة إكس يحمل اسم (@Farisgoold)، ونقلت عنه حسابات أخرى، مُدّعيًا أنه يوثّق حريقًا اندلع في البرج نتيجة استهدافه الخميس 12 نوفمبر 2026.\nاستهداف برج الفيصلية بالرياض 💔 يا الهي ‼️🥲🥲 https://t.co/7iHJnSEWa1\nباستخدام أداة جوجل لنس للبحث العكسي، تبيّن أن المقطع يعود إلى حادث وقع عام 2018، ولا يوثّق استهدافًا حديثًا للعاصمة السعودية، كما زعم ناشروه.\nفقد نشرت قناة الإخبارية السعودية المقطع ذاته عبر حسابها الرسمي على منصة إكس بتاريخ 30 يناير 2018، مُوضحة أن حريقًا محدودًا اندلع في مبنى قيد الإنشاء يقع بالقرب من برج الفيصلية في شارع العليا بالرياض.",
+      "bodyKo": "소셜 미디어 계정에서 사우디아라비아 수도 리야드의 알파이살리야 타워 근처 하늘에 짙은 검은 연기가 치솟는 동영상이 공유되었습니다. | 마스라위\nMasrawy의 검증팀은 해당 주장이 사실이 아니라고 밝혔습니다. 동영상은 진짜이지만 2018년의 오래된 사건에 관한 것이며 원래 맥락에서 벗어나 다시 유포되었습니다.\n동영상은 (@Farisgoold)이라는 X 계정에 게시되었으며, 다른 계정들이 이를 인용하여 2026년 11월 12일 목요일에 타워가 공격을 받아 화재가 발생한 장면을 기록한 것이라고 주장했습니다.\n리야드의 알파이살리야 타워를 겨냥한 공격 💔 세상에‼️🥲🥲 https://t.co/7iHJnSEWa1\n구글 렌즈 역검색 도구를 사용한 결과, 해당 영상은 2018년에 발생한 사건을 보여주는 것으로, 게시자들이 주장한 것처럼 최근 사우디아라비아 수도를 겨냥한 공격을 기록한 것이 아님이 밝혀졌습니다.\n사우디아라비아 뉴스 채널은 2018년 1월 30일 공식 X 계정을 통해 같은 영상을 게시하고 리야드 올라야 거리에 있는 파이살리야 타워 인근의 공사 중인 건물에서 소규모 화재가 발생했다고 설명했습니다.",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "في ميزان فرانس برس",
+        "Masrawy"
+      ],
+      "related": [
+        {
+          "titleKo": "이 영상은 리야드의 타워를 겨냥한 것이 아니라 2015년 새해 전야에 두바이에서 발생한 화재의 것입니다.",
+          "source": "في ميزان فرانس برس",
+          "link": "https://factcheckarabic.afp.com/doc.afp.com.D7LA8T4"
+        }
+      ],
       "tag": "고층·건물"
     },
     {
@@ -708,6 +634,20 @@
         }
       ],
       "tag": "전기·배터리"
+    },
+    {
+      "title": "남동소방서, 공사현장 용접ㆍ용단 작업 화재 예방 당부",
+      "source": "소방방재신문",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5jY0NNdkk5V0M2Vm9GNXhjS0Y5c3pVWndCNnpSQnluSkViU0RwTDdzUHg4U2k1OUtLcXVlTFhKbDhFSHhNMmc?oc=5",
+      "date": "2026-11-16T06:30:00.000Z",
+      "lang": "ko",
+      "titleKo": "남동소방서, 공사현장 용접ㆍ용단 작업 화재 예방 당부",
+      "count": 1,
+      "sources": [
+        "소방방재신문"
+      ],
+      "related": [],
+      "tag": "용접·불티"
     },
     {
       "title": "“화재 현장서 사라진 소방관 위치, 지휘부 모니터에는 실시간으로 뜬다”",
@@ -874,91 +814,19 @@
       "body": "Blazes hit a warehouse in Al Mafraq and a construction site in Al Bahyah on Friday\nAbu Dhabi: Abu Dhabi Police and Civil Defence teams brought two separate fires under control on Friday afternoon, one at a warehouse in Al Mafraq Industrial Area and another at a construction site in Al Bahyah.\nNo injuries were reported in either incident, authorities confirmed.\nThe fires broke out on Friday, 13 November 2026, with teams from Abu Dhabi Police and the Abu Dhabi Civil Defence Authority responding to both incidents.\nEmergency crews successfully contained the blazes, with cooling and smoke extraction operations continuing at both locations.\nPolice initially announced that emergency teams were responding to the warehouse fire in Al Mafraq before issuing a subsequent statement confirming that the blaze had been brought under control without injuries.",
       "bodyKo": "지난 17일, 알마프라크의 한 창고와 알바히야의 한 건설 현장에 화재가 발생했습니다.\n아부다비: 아부다비 경찰과 소방 당국이 금요일 오후 알 마프라크 산업 단지의 창고와 알 바히야의 건설 현장에서 각각 발생한 두 건의 화재를 진압했습니다.\n당국은 두 사건 모두 부상자가 없었다고 확인했습니다.\n화재는 2026년 11월 13일 금요일에 발생했으며, 아부다비 경찰과 아부다비 소방청 소속 팀이 두 건의 화재에 모두 출동했습니다.\n긴급 구조대는 화재를 성공적으로 진압했으며, 두 곳 모두에서 냉각 및 연기 배출 작업이 계속되고 있습니다.\n경찰은 처음에 알 마프라크의 창고 화재에 긴급 구조대가 대응하고 있다고 발표한 후, 화재가 부상자 없이 진압되었다고 확인하는 후속 성명을 발표했습니다.",
       "tried": true,
-      "count": 5,
+      "count": 2,
       "sources": [
         "Gulf News",
-        "صحيفة الخليج",
-        "الاتحاد للأخبار",
-        "البيان",
-        "الإمارات اليوم"
+        "صحيفة الخليج"
       ],
       "related": [
         {
           "titleKo": "아부다비.. 알마프라크 산업단지 내 창고 화재 진압",
           "source": "صحيفة الخليج",
           "link": "https://www.alkhaleej.ae/2026-11-13/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D8%A7%D8%B1/%D8%A3%D8%A8%D9%88%D8%B8%D8%A8%D9%8A-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%85%D9%84-%D9%85%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D9%81%D9%8A-%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D8%A8%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%81%D8%B1%D9%82"
-        },
-        {
-          "titleKo": "아부다비 경찰팀, 아부다비 무프라크 산업단지 창고 화재 진압",
-          "source": "الاتحاد للأخبار",
-          "link": "https://www.aletihad.ae/amp/news/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA/4705705/%D9%81%D8%B1%D9%82-%D8%B4%D8%B1%D8%B7%D8%A9-%D8%A3%D8%A8%D9%88%D8%B8%D8%A8%D9%8A-%D8%AA%D8%AA%D8%B9%D8%A7%D9%85%D9%84-%D9%85%D8%B9-%D8%AD%D8%B1%D9%8A%D9%82-%D8%A8%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D9%81%D8%B1%D9%82-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9"
-        },
-        {
-          "titleKo": "아부다비 경찰과 소방당국이 무프라크 산업단지 내 창고 화재에 대응하고 있습니다.",
-          "source": "البيان",
-          "link": "https://www.albayan.ae/news/uae/abu-dhabi/1564790"
-        },
-        {
-          "titleKo": "아부다비.. 알마프라크 산업단지 내 창고 화재 진압",
-          "source": "الإمارات اليوم",
-          "link": "https://twaslnews1.twaslnews.com/7615716/"
         }
       ],
       "tag": "숙소·창고"
-    },
-    {
-      "title": "리튬이온 배터리 화재 증가추세…원인은 ‘과충전’",
-      "source": ":: 위즈경제 ::",
-      "link": "https://wikyung.com/news/article?news=3244",
-      "date": "2026-11-13T08:00:00.000Z",
-      "lang": "ko",
-      "titleKo": "리튬이온 배터리 화재 증가추세…원인은 ‘과충전’",
-      "url": "https://wikyung.com/news/article?news=3244",
-      "body": "[위즈경제] 이정원 기자 =소방청이 최근 5 년 동안 리튬이온 배터리 화재 가운데 절반 이상이 과충전 때문인 것으로 나타났다고 22 일 밝혔습니다 .\n이에 소방청은 최근 발생한 리튬이온 배터리 화재 사고와 관련해 생활 속 안전 습관 만들기 위한 ‘ 리튬이온 배터리의 올바른 사용법 ’ 을 안내했습니다 .\n생활 속 리튬이온 배터리를 사용하는 제품군은 스마트폰과 노트북 , 전동킥보드 , 전기자전거 , 전기오토바이 , 전자담배 , 디지털카메라 , 블루투스 헤드셋·헤드폰 , 장난감 등입니다 .\n소방청 국가화재정보시스템 자료에 따르면 , 최근 5 년 동안 리튬이온 배터리에 의한 화재는 612 건으로 전동킥보드와 전기자전거 등 보급량과 사용량이 증가함에 따라 사고 발생건수도 증가 추세인 것으로 나타났습니다 .\n화재 원인은 눌리거나 찍히는 등의 외부 충격 , 온도가 높은 차량 내부 배터리 장시간 보관 , 소파·침대 등에서 충전 , 공식 인증을 받지 않은 제품 사용 , 물·빗물 유입 등으로 다양했습니다 .\n특히 이 가운데 절반 이상인 312 건 (51%) 이 과충전이 원인이었고 , 비충전 60 건 (9.8%), 보관 중 49 건 (8%), 수리 중 45 건 (7.4%), 사용 중 44 건 (7.2%), 충격 후 17 건 (2.8%) 등으로 집계됐습니다 .\n장소별로는 공동주택 299 건 (48.9%), 거리·공터 117 건 (19.1%), 건물·수리점 116 건 (19%), 단독주택 65 건 (10.6%), 주차장 15 건 (2.5%) 순으로 , 공동주택과 단독주택 등 주거지에서의 발생건수가 가장 많은 것으로 확인됐습니다 .\n이에 소방청은 리튬이온 배터리의 화재 예방을 위해 구매 , 사용 , 충전 , 보관 , 폐기 등 단계별 올바른 이용수칙을 당부했습니다 .",
-      "bodyKo": "[위즈경제] 이정원 기자 =소방청이 최근 5 년 동안 리튬이온 배터리 화재 가운데 절반 이상이 과충전 때문인 것으로 나타났다고 22 일 밝혔습니다 .\n이에 소방청은 최근 발생한 리튬이온 배터리 화재 사고와 관련해 생활 속 안전 습관 만들기 위한 ‘ 리튬이온 배터리의 올바른 사용법 ’ 을 안내했습니다 .\n생활 속 리튬이온 배터리를 사용하는 제품군은 스마트폰과 노트북 , 전동킥보드 , 전기자전거 , 전기오토바이 , 전자담배 , 디지털카메라 , 블루투스 헤드셋·헤드폰 , 장난감 등입니다 .\n소방청 국가화재정보시스템 자료에 따르면 , 최근 5 년 동안 리튬이온 배터리에 의한 화재는 612 건으로 전동킥보드와 전기자전거 등 보급량과 사용량이 증가함에 따라 사고 발생건수도 증가 추세인 것으로 나타났습니다 .\n화재 원인은 눌리거나 찍히는 등의 외부 충격 , 온도가 높은 차량 내부 배터리 장시간 보관 , 소파·침대 등에서 충전 , 공식 인증을 받지 않은 제품 사용 , 물·빗물 유입 등으로 다양했습니다 .\n특히 이 가운데 절반 이상인 312 건 (51%) 이 과충전이 원인이었고 , 비충전 60 건 (9.8%), 보관 중 49 건 (8%), 수리 중 45 건 (7.4%), 사용 중 44 건 (7.2%), 충격 후 17 건 (2.8%) 등으로 집계됐습니다 .\n장소별로는 공동주택 299 건 (48.9%), 거리·공터 117 건 (19.1%), 건물·수리점 116 건 (19%), 단독주택 65 건 (10.6%), 주차장 15 건 (2.5%) 순으로 , 공동주택과 단독주택 등 주거지에서의 발생건수가 가장 많은 것으로 확인됐습니다 .\n이에 소방청은 리튬이온 배터리의 화재 예방을 위해 구매 , 사용 , 충전 , 보관 , 폐기 등 단계별 올바른 이용수칙을 당부했습니다 .",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        ":: 위즈경제 ::"
-      ],
-      "related": [],
-      "tag": "전기·배터리"
-    },
-    {
-      "title": "경산 골판지공장 화재 11시간여 만에 완진…8억여원 피해",
-      "source": "연합뉴스",
-      "link": "https://www.yna.co.kr/amp/view/AKR20261113025500053",
-      "date": "2026-11-12T23:10:46.000Z",
-      "lang": "ko",
-      "titleKo": "경산 골판지공장 화재 11시간여 만에 완진…8억여원 피해",
-      "url": "https://www.yna.co.kr/amp/view/AKR20261113025500053",
-      "body": "(경산=연합뉴스) 박세진 기자 = 경북 경산시 골판지 제조 공장 화재가 11시간여 만에 완전 진화됐다.\n13일 경북소방본부 등에 따르면 전날 오후 8시 1분께 경산시 진량읍 선화리 한 골판지와 골판지 상자 제조 공장에서 불이 났다.\n소방 당국은 관할 소방서 인력·장비가 모두 동원되는 대응 1단계를 발령하고 진화에 나서 오후 10시 44분께 초기 진화를 마쳤다.\n이후 굴삭기 등 장비를 동원해 공장 철거 작업을 진행하는 등 잔불 정리 작업을 이어간 끝에 화재 발생 11시간 34분 만인 13일 오전 7시 35분께 진화 작업을 완료했다.\n이 불로 창고 2개동(각각 625㎡, 1천546㎡)이 전소됐고 인접한 공장의 벽면 일부가 탄 것으로 파악됐다.\n또 창고에 보관 중이던 골판지 등 물품도 소실되면서 소방서 추산 8억4천800여만원의 재산 피해가 났다.\n경찰과 소방 당국은 분전반에서 전기적 요인으로 인해 불이 시작된 것으로 보고 정확한 화재 원인 등을 조사하고 있다.",
-      "bodyKo": "(경산=연합뉴스) 박세진 기자 = 경북 경산시 골판지 제조 공장 화재가 11시간여 만에 완전 진화됐다.\n13일 경북소방본부 등에 따르면 전날 오후 8시 1분께 경산시 진량읍 선화리 한 골판지와 골판지 상자 제조 공장에서 불이 났다.\n소방 당국은 관할 소방서 인력·장비가 모두 동원되는 대응 1단계를 발령하고 진화에 나서 오후 10시 44분께 초기 진화를 마쳤다.\n이후 굴삭기 등 장비를 동원해 공장 철거 작업을 진행하는 등 잔불 정리 작업을 이어간 끝에 화재 발생 11시간 34분 만인 13일 오전 7시 35분께 진화 작업을 완료했다.\n이 불로 창고 2개동(각각 625㎡, 1천546㎡)이 전소됐고 인접한 공장의 벽면 일부가 탄 것으로 파악됐다.\n또 창고에 보관 중이던 골판지 등 물품도 소실되면서 소방서 추산 8억4천800여만원의 재산 피해가 났다.\n경찰과 소방 당국은 분전반에서 전기적 요인으로 인해 불이 시작된 것으로 보고 정확한 화재 원인 등을 조사하고 있다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "연합뉴스"
-      ],
-      "related": [],
-      "tag": "공장·플랜트"
-    },
-    {
-      "title": "[현장]“늑장 대응에 퇴거 위기”···대형화재 난 서천특화시장 상인들 이번엔 영업 중단 ‘불안감’",
-      "source": "경향신문",
-      "link": "https://www.khan.co.kr/article/202611130600061",
-      "date": "2026-11-12T21:00:00.000Z",
-      "lang": "ko",
-      "titleKo": "[현장]“늑장 대응에 퇴거 위기”···대형화재 난 서천특화시장 상인들 이번엔 영업 중단 ‘불안감’",
-      "url": "https://www.khan.co.kr/article/202611130600061",
-      "body": "충남 서천특화시장 임시시장 건물 외벽에 ‘강제폐점 결사반대’라고 적힌 현수막이 걸려 있다. 강정의 기자\n충남 서천군 서천특화시장 임시시장. 지난 6일 일반동 건물 외벽과 인근 재건축 공사장 곳곳에 ‘서천특화시장 강제폐점 결사반대’ ‘죽어도 못 나간다’ ‘공사 지연 책임이 상인들에게 있느냐’고 적힌 현수막이 걸려 있었다. 새 시장이 들어설 부지에는 굴착기가 땅을 다지고 있었지만, 건물 골조는 보이지 않았다.\n화재로 점포를 잃고 임시시장으로 옮겨온 서천특화시장 상인 일부가 또 영업 중단 위기에 놓였다. 새 시장 준공 목표는 오는 2028년이지만, 임시시장 일반동 무상 사용 기간은 올해로 끝난다. 퇴거 위기에 놓인 일반동 상인들은 새 시장이 문을 열 때까지 지금 장소에서 장사할 수 있게 해달라고 요구하고 있다.\n서천특화시장은 2024년 1월22일 대형화재로 전체 292개 점포 중 수산물동과 식당동·일반동 등 227개 점포가 불에 탔다. 화재 이후 상인들은 인근에 마련한 조립식 2층 건물인 일반동과 단층 대형 천막으로 된 천막동 등 임시시장에서 영업을 이어오고 있다. 천막동에서는 주로 농산물과 수산물을 판매하고 일반동에는 의류 판매·수선점, 반찬가게, 정육점 등이 있다.\n문제는 임대료다. 서천군에 따르면 그간 일반동 건물을 무상 제공해 온 업체가 내년부터 연간 임대료로 약 5억원을 요구하고 있다. 상인들은 부지 사용료로 서천군에 매달 약 22만원를 내고 있을 뿐, 군은 현재 건물 임대 관련 예산은 확보하지 못한 상태다.\n서천군 관계자는 “애초 무상 사용 협약 기간이 지난해 11월까지였지만 업체가 재건축 공사 지연을 고려해 올해까지로 연장해 준 것”이라며 “업체 측도 회사 사정상 더는 무상 제공은 어렵다는 입장”이라고 말했다.",
-      "bodyKo": "충남 서천특화시장 임시시장 건물 외벽에 ‘강제폐점 결사반대’라고 적힌 현수막이 걸려 있다. 강정의 기자\n충남 서천군 서천특화시장 임시시장. 지난 6일 일반동 건물 외벽과 인근 재건축 공사장 곳곳에 ‘서천특화시장 강제폐점 결사반대’ ‘죽어도 못 나간다’ ‘공사 지연 책임이 상인들에게 있느냐’고 적힌 현수막이 걸려 있었다. 새 시장이 들어설 부지에는 굴착기가 땅을 다지고 있었지만, 건물 골조는 보이지 않았다.\n화재로 점포를 잃고 임시시장으로 옮겨온 서천특화시장 상인 일부가 또 영업 중단 위기에 놓였다. 새 시장 준공 목표는 오는 2028년이지만, 임시시장 일반동 무상 사용 기간은 올해로 끝난다. 퇴거 위기에 놓인 일반동 상인들은 새 시장이 문을 열 때까지 지금 장소에서 장사할 수 있게 해달라고 요구하고 있다.\n서천특화시장은 2024년 1월22일 대형화재로 전체 292개 점포 중 수산물동과 식당동·일반동 등 227개 점포가 불에 탔다. 화재 이후 상인들은 인근에 마련한 조립식 2층 건물인 일반동과 단층 대형 천막으로 된 천막동 등 임시시장에서 영업을 이어오고 있다. 천막동에서는 주로 농산물과 수산물을 판매하고 일반동에는 의류 판매·수선점, 반찬가게, 정육점 등이 있다.\n문제는 임대료다. 서천군에 따르면 그간 일반동 건물을 무상 제공해 온 업체가 내년부터 연간 임대료로 약 5억원을 요구하고 있다. 상인들은 부지 사용료로 서천군에 매달 약 22만원를 내고 있을 뿐, 군은 현재 건물 임대 관련 예산은 확보하지 못한 상태다.\n서천군 관계자는 “애초 무상 사용 협약 기간이 지난해 11월까지였지만 업체가 재건축 공사 지연을 고려해 올해까지로 연장해 준 것”이라며 “업체 측도 회사 사정상 더는 무상 제공은 어렵다는 입장”이라고 말했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "경향신문"
-      ],
-      "related": [],
-      "tag": "시장·상가"
     }
   ]
 }
