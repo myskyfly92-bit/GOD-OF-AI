@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T02:54:00.629Z",
+  "generatedAt": "2026-11-19T02:34:11.790Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -10,11 +10,18 @@
       "date": "2024-06-10T03:38:59.000Z"
     },
     {
-      "title": "보도설명자료",
+      "title": "채용공고",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5yU1NnVmlKWDMwMUt3VG0wbUdkblZ4VENEWERVcUFteU5GMGZRZWxKWW1kUFVfMkFaelNLRkpGX3VIX0lSZjQtNjhKSWhFSTl1clNnLUxJUTJPRGlwV2tIT2gxc1NtdFFhbHc0SXc4aVE4b3NHQnZpdg?oc=5",
-      "date": "2026-11-11T10:27:48.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
+      "date": "2025-12-16T15:48:42.000Z"
+    },
+    {
+      "title": "온열질환자 발생 예측 정보",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UUFZlQ2NDRFVzaVZaRW1OR2pZSUhxdHNyZmQ0Z01BU0pESGtTRDI2WGplVXU1VEpTRWtRbVY5a2JZX01VLUJXZnNHVE91d2RCaDlXWWhxc0JnV2lTSHRDS1ptd25uUQ?oc=5",
+      "date": "2026-05-11T02:05:29.000Z"
     },
     {
       "title": "의료방사선게시판 - 2023년 국민 의료방사선 평가 연보",
@@ -49,7 +56,7 @@
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-18T00:44:36.000Z"
+      "date": "2026-11-18T23:58:16.000Z"
     },
     {
       "title": "레지오넬라증",
@@ -64,13 +71,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
       "date": "2024-06-10T02:47:27.000Z"
-    },
-    {
-      "title": "채용공고",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
-      "date": "2025-12-16T15:48:42.000Z"
     },
     {
       "title": "생명윤리법관련민원안내",
