@@ -8,6 +8,22 @@
   "errors": {},
   "items": [
     {
+      "kind": "WHO 소식",
+      "title": "WHO publishes second edition of the Global Code of Practice on the International Recruitment of Health Personnel",
+      "date": "2026-11-18T16:50:57Z",
+      "summary": "WHO has published the second edition of the Global Code of Practice on the International Recruitment of Health Personnel, bringing together in a single document the Code adopted by the World Health Assembly in 2010 and the amendments adopted in May 2026. The new edition provides Member States and partners with an updated framework for managing the growing international mobility of health workers in ways that support stronger and more sustainable health systems. It reflects the increasing importa",
+      "link": "https://www.who.int/news/item/18-11-2026-who-publishes-second-edition-of-the-global-code-of-practice-on-the-international-recruitment-of-health-personnel",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "New WHO collaborating centre established to support work on foodborne disease burden",
+      "date": "2026-11-18T12:11:30Z",
+      "summary": "WHO welcomes the Service Health Information, within the Epidemiology and Public Health Directorate at Sciensano, the Belgian scientific institute for human, animal and environmental health, based in Brussels, as the new WHO Collaborating Centre on Foodborne Disease Burden. The Centre will provide scientific and technical support to WHO’s work to measure and monitor the health and economic burden of foodborne diseases.",
+      "link": "https://www.who.int/news/item/18-11-2026-new-who-collaborating-centre-established-to-support-work-on-foodborne-disease-burden",
+      "newsType": "Departmental update"
+    },
+    {
       "kind": "감염병 발생",
       "title": "Chikungunya virus disease - Switzerland",
       "date": "2026-11-17T15:36:13Z",
@@ -128,22 +144,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Amid challenges, countries increase domestic investment to protect progress against tuberculosis",
-      "date": "2026-11-12T16:16:57Z",
-      "summary": "Global efforts to end tuberculosis (TB) continue to make progress, with fewer people falling ill and dying from the disease, according to the World Health Organization (WHO) Global Tuberculosis Report 2026 released today.",
-      "link": "https://www.who.int/news/item/12-11-2026-amid-challenges-countries-increase-domestic-investment-to-protect-progress-against-tuberculosis",
-      "newsType": "News release"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO calls for migrant-inclusive primary health care to strengthen health systems for all",
-      "date": "2026-11-12T14:32:50Z",
-      "summary": "Developed by the WHO Health and Migration Programme in collaboration with WHO’s Service Delivery and Primary Health Care Unit, the report examines how primary health care-oriented responses can improve access, continuity and quality of care for people on the move, while strengthening health systems for diverse populations.",
-      "link": "https://www.who.int/news/item/12-11-2026-who-calls-for-migrant-inclusive-primary-health-care-to-strengthen-health-systems-for-all",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria",
       "date": "2026-11-06T17:27:28Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON621"
     }
   ],
-  "generatedAt": "2026-11-18T23:41:13.142225+00:00"
+  "generatedAt": "2026-11-19T04:56:37.050944+00:00"
 }
