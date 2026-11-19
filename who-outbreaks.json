@@ -9,6 +9,22 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO advances work on quality standards for herbal medicines at expert meeting in Hong Kong, China",
+      "date": "2026-11-19T13:00:00Z",
+      "summary": "Expert Meeting members on the development of international herbal pharmacopeia© WHOThe WHO Global Traditional Medicine Centre convened experts from all six WHO regions on 16–18 November 2026 in Hong Kong SAR (China) to advance the development of internationally harmonized quality standards for herbal medicines. The three-day meeting was the latest in a series of online and in-person meetings held by WHO since November 2024 to develop the first volume of international quality standards of traditi",
+      "link": "https://www.who.int/news/item/19-11-2026-who-advances-work-on-quality-standards-for-herbal-medicines-at-expert-meeting-in-hong-kong--china",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Call for expressions of interest: Working Group on Community Health Worker Functions and Competencies in Health Emergencies",
+      "date": "2026-11-19T13:00:00Z",
+      "summary": "To strengthen community-level preparedness and response, WHO is convening a working group to review and refine an existing draft framework describing CHW functions and competencies in emergencies. The review will consider different CHW profiles, a progressive, function-based approach and the conditions needed for safe implementation.",
+      "link": "https://www.who.int/news/item/19-11-2026-call-for-expressions-of-interestworking-group-on-community-health-worker-functions-and-competencies-in-health-emergencies",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO publishes second edition of the Global Code of Practice on the International Recruitment of Health Personnel",
       "date": "2026-11-18T16:50:57Z",
       "summary": "WHO has published the second edition of the Global Code of Practice on the International Recruitment of Health Personnel, bringing together in a single document the Code adopted by the World Health Assembly in 2010 and the amendments adopted in May 2026. The new edition provides Member States and partners with an updated framework for managing the growing international mobility of health workers in ways that support stronger and more sustainable health systems. It reflects the increasing importa",
@@ -128,22 +144,6 @@
       "newsType": "Statement"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Conflict and disease outbreaks deepen DR Congo’s hunger crisis as record numbers are projected to face acute food insecurity",
-      "date": "2026-11-13T09:30:00Z",
-      "summary": "FAO, WFP, UNICEF and WHO call for urgent action as acute hunger is projected to hit more than 30 million, including 4.2 million people facing Emergency levels of hunger in early 2027.",
-      "link": "https://www.who.int/news/item/13-11-2026-conflict-and-disease-outbreaks-deepen-dr-congo-s-hunger-crisis-as-record-numbers-are-projected-to-face-acute-food-insecurity",
-      "newsType": "Joint News Release"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "New WHO collaborating centre in China to advance progress on sexually transmitted infections",
-      "date": "2026-11-13T07:00:00Z",
-      "summary": "The World Health Organization (WHO) has inaugurated a new WHO collaborating centre for sexually transmitted infection prevention and innovation: the Institute for Global Health of Southern Medical University (SMU) in Guangzhou, China. The designation marks an important step in strengthening global cooperation to prevent and control sexually transmitted infections (STIs), with a focus on advancing innovation, expanding access to testing, strengthening surveillance and building public health capac",
-      "link": "https://www.who.int/news/item/13-11-2026-new-who-collaborating-centre-in-china-to-advance-progress-on-sexually-transmitted-infections",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria",
       "date": "2026-11-06T17:27:28Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON621"
     }
   ],
-  "generatedAt": "2026-11-19T14:52:23.823818+00:00"
+  "generatedAt": "2026-11-19T23:59:42.332439+00:00"
 }
