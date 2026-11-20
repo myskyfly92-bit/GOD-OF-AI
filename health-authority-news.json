@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-19T02:34:11.790Z",
+  "generatedAt": "2026-11-20T02:19:18.015Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
-    {
-      "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
-      "source": "질병관리청 감염병포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
-      "date": "2024-06-10T03:38:59.000Z"
-    },
     {
       "title": "채용공고",
       "source": "질병관리청",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
       "date": "2025-12-16T15:48:42.000Z"
+    },
+    {
+      "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
+      "source": "질병관리청 감염병포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9sQ1Y5MHcxX3FQYWVIZ0xzdEU0bTNablRqWTV6QzZsVWZWeFNmSGEtRG9HYkJXR2xYbFVqR3RaTEIySGR0dGlGd3RIbUVya1dnZUhfQ1NpdFpGQU0?oc=5",
+      "date": "2024-06-10T03:38:59.000Z"
     },
     {
       "title": "온열질환자 발생 예측 정보",
@@ -24,20 +24,6 @@
       "date": "2026-05-11T02:05:29.000Z"
     },
     {
-      "title": "의료방사선게시판 - 2023년 국민 의료방사선 평가 연보",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNmdMMDR3bFU3TUNRdjMweWZWQWRYTGFOdHBHMGlhSFkycmVPX2c5UlVuNU9ZMm5qdVpCUlA5OUlBWTg1R09PUXhNZVRaNC00UVEwTzJxbThUcmZCdHE2Qm5ndE1jTlBKUEhyaWZxT3FEeDhkcmxPdXp1OXBLNm01ZEtEYTY0YzllRzFMcFJNOVdmZHBBczdTSC1BZ08xMEpyWkcxUHhLdkJ6WGxsNEFLRGVma3F1OHFMMlRWbg?oc=5",
-      "date": "2026-05-02T07:32:05.000Z"
-    },
-    {
-      "title": "수인성·식품매개 감염병",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZQl9OTjlxM2NaZDY4dXZ1LU51dUNFTGZsYWstcjJpNG5GajVQa2N6OWozdk9RdHpSZi1USGVEUTRqX2J6YWRuUU40c3dvdmVndUZJVTln?oc=5",
-      "date": "2025-12-16T14:07:01.000Z"
-    },
-    {
       "title": "보도자료(전체)",
       "source": "질병관리청",
       "agency": "",
@@ -45,25 +31,11 @@
       "date": "2025-12-16T15:46:00.000Z"
     },
     {
-      "title": "ICCON 감염예방 소식지",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ueXN2cXpmUkJyLWV2cHc4VHB3Sm01dGcwc09pTlNXVG5xZjE4bHpvUFgxOVktQjJoLXJHRmJRTHM4TXhrbmJLZ1JTQ25yWklLeDlqek1B?oc=5",
-      "date": "2025-12-16T15:49:07.000Z"
-    },
-    {
       "title": "- 질병관리청",
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-18T23:58:16.000Z"
-    },
-    {
-      "title": "레지오넬라증",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52SW9Ma2pUR1JIZ1AxZHJEQnhtaFh1N1A0b3VVWTByTHVyVG9qQWJ1VmtMOElGdzM4MnRNdkVBd2dUa1F6OU82Mk44UGppVFlKb0UwUGRn?oc=5",
-      "date": "2025-12-16T16:14:22.000Z"
+      "date": "2026-11-19T09:08:20.000Z"
     },
     {
       "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
@@ -73,18 +45,46 @@
       "date": "2024-06-10T02:47:27.000Z"
     },
     {
-      "title": "생명윤리법관련민원안내",
+      "title": "전자검역을 통한 감염병 대응체계 고도화",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1IMldCN1BaVVZ1VFl6UG5uQWZ1RkpzMGx5WVc2YjhTaEI0QnphSzhvMmdxel80cm9oRV9mLXJKVUY0ZHF2cDdjejBGNGtxYzhkX1NtQmhn?oc=5",
-      "date": "2026-08-27T08:50:18.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2OW5lNTJXaTNUTmM3eVhNa0F3d2NHQTU4ZWhiTnlRZXJ1M0kwTnBxMFlnUnQwd1UwaGlEeFQwX1hCRl9YRlViN0dGU1R4ZjIyMnBHREln?oc=5",
+      "date": "2025-12-16T14:41:54.000Z"
     },
     {
-      "title": "신고현황",
+      "title": "보도자료(전체) - 「감염병예방법 시행령 및 시행규칙」 일부개정령안 공포·시행(11.17.화)",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MbExBX0JEd0RiZmxBQ3djZnFIQjdYUGwycC1BdUlvMDFDV0VOLUFmbU5QSU00TmNINE5BdmE5NlRVSThkN0c3TVJDa3dHRFJJWlNKWkZ3?oc=5",
-      "date": "2025-12-16T16:42:42.000Z"
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPQnVoc1J3OVhjSEFiTlo4bU1mdHAxSzYtQlZvbEpmaXoxRDl5ZXd5V3NmWXoyV2JwaDVEcWdqZXhmSUQybU53OVgxR1hGYWpnMHcwemNRckdKaG95TG90QlJXcWRRcGNMcnhMdEdxVDlxWFZvWEFIYjc5czhLU3NUQ1BGSWZGeDV1WllwVThZZTE2cjU2RjFPaUd0NnZuTkYyTV9DSGwyQ3RieG4tVEFuNk5vUldjNzJlVGtpR29MMFByaVlLTDhUd09MMHN1THdQOXVKTTFhVVd0VTBCUlhyNy1HRjR6TFE?oc=5",
+      "date": "2026-11-18T06:27:19.000Z"
+    },
+    {
+      "title": "해외감염병예방수칙",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96VlVuNWRiQVVyUGZjc1dxNHN2VHNQSElOY21CM1FET3NocW5qQk1TUjIyWFMycGE5dVRlZml0ckIzYlVPdV90b0M3eHhscWFBcExuTmpn?oc=5",
+      "date": "2025-12-16T12:48:41.000Z"
+    },
+    {
+      "title": "문서뷰어",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVVVCeGYzODl4WFlvbFJNS0hVZHlnNE1PeEE2VnlUWXpMSnFHN0hjdEZNa0lxYm8zUU05Xy1BcGVRRXFXZHl5WWtUTjM4VmNSR2x5d1JmZU5xZmN3SjR0TDk1cWFqZmI3WGh5Ny1LQmZyMzZ5dUQ4YVJrcHpITlY0eGI2YUdacHdGaVlqaGcyMWd5ekJHU0pWQg?oc=5",
+      "date": "2026-11-14T23:09:54.000Z"
+    },
+    {
+      "title": "채용공고",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1jbE5Bd05CNmlzYVZ3RmxqZEFEeFlVNFl1ckMyQWxaTEZ6Ukg3cGNfSmhlVmlqQlM3Z2U1dC1xTkhqbWhxTERvMlZsMW1TLWVWLU04NVVOd01iaFViR092T2Y4N0J1ZGtCdEFPdDFPV1E0Qjg?oc=5",
+      "date": "2026-11-15T23:47:35.000Z"
+    },
+    {
+      "title": "전 세계 감염병 발생 동향",
+      "source": "질병관리청 감염병포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcV94TThCOGpaVV9XaGUxZTVjX3pHS183SEhLZFR2LTkxcUptTWFBYnpKRExzNnIwdnpiWmNjeGhsX2paLVNYellIY0sxaDFzMmZDMGk1LTV1ZXRDRVBZT2dkZ2owYUlxd1FnRnFrSnQ3c0c1ekZQSGUzbVVESmUzOUc1MkNNNlVoQWd6RVF4d1psVmhmVFBhaWJwZ1ZLanE5ZVk0eGlBM3lZV1g4MV82TF9kczA2T05idVJjVGZR?oc=5",
+      "date": "2026-11-13T12:36:19.000Z"
     }
   ]
 }
