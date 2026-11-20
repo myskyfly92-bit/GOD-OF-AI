@@ -1,90 +1,90 @@
 {
-  "generatedAt": "2026-11-19T02:27:50.715Z",
+  "generatedAt": "2026-11-20T02:12:34.725Z",
   "query": "(질병 OR 전염병 OR 감염병 OR 사고 OR 의료 OR 의학) when:2d",
   "items": [
     {
-      "title": "[특별기고] 심평의학을 넘어 ‘공산의학’으로 가는 대한민국",
-      "source": "의학신문",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12Wk8zeTJPYk95M2N4OXd0TXRNME1MX0RYWEpXVFFSa2FqeWducjgzMjRnTXBGYmVYLU5kUFc3MVZna2djTmVyaXZpX0VBbDE1YmlTc051eVdyQjRMRmRfMVZLeHhOcW9QaHc?oc=5",
-      "date": "2026-11-19T00:11:07.000Z",
-      "summary": "의학신문"
+      "title": "용인세브란스병원, 실시간 위치추적으로 감염병 접촉자 추적 효율 확인",
+      "source": "약사공론",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1MWkNnWC16Q2I3c0ZKLTJ5eko3Rm9XSWNoMFZfYkgtZjRUM0R0N01wNXhSRUtxY25GcFYtR1NCTkd0VFlKVGhnc2VHN3BUY3Vna0hhNE9RQW9zSGNvS2FWdDhmNWVYSWxmWE13ZQ?oc=5",
+      "date": "2026-11-20T01:32:10.000Z",
+      "summary": "약사공론"
     },
     {
-      "title": "[단독] 리트냥이 전과자였다…‘고의 교통사고’ 공갈 누범에 실형도",
-      "source": "중앙일보",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9GbVZnTjRNcnNJREtndkVIeGNCYjNRcDFBY25fQmF4V29CVnF3UVFoeGlwOF9NWnJnb0VkN0d3c2laZEpVakFvUTlSRGRxb19mbWVTN1BR?oc=5",
-      "date": "2026-11-19T00:48:55.000Z",
-      "summary": "중앙일보"
+      "title": "감염병 대응체계 및 현장 표준지침 교육으로 대원 감염관리 역량 강화",
+      "source": "데일리대구경북뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjdFdQbkozcTlqa2ZDTHc0Rlp5cklsdVhkVHNvbjJsVXhUTzN5NUdkQTBwSHBRQTJFWjFESjV1NF9BMmIxRmNJeHRUSmRNVGQ1MElCT19KQ0p2ZEhjbkxoV3VkOTd4QQ?oc=5",
+      "date": "2026-11-19T23:46:26.000Z",
+      "summary": "데일리대구경북뉴스"
     },
     {
-      "title": "음주운전 사고 내자 막걸리 두 병 '벌컥'…'술타기' 30대 집유",
-      "source": "연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5yOWMzZ0JUTHh2TUpGRjZqT3JGbWV6QjlvZFlCZ05ZVjNHLUJVZjNsRGJqdkRLYS1OcGh1anFvZ0lPQjlZSjdmM1E5UjBMZjVHV3N4WlJVcDV0TWPSAWBBVV95cUxQNnpkTm5MX1hvaHREaW5TUndCTlZHeVQ0cnlLZUI3OWxLNktvUkZZT2Y2NmUxWnBZMF9hTGRGaU8yR0x0NW1rMTkxVHZudWsyOS1zMTJTUmRtVVlPZVRIM3M?oc=5",
-      "date": "2026-11-19T01:44:51.000Z",
-      "summary": "연합뉴스"
-    },
-    {
-      "title": "디지털헬스케어법 가명 의료정보 보호 평가 ‘상반’",
-      "source": "데일리메디",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5jclhmc3MwNUE4MTk1Y1lVTkdHSFZadDBjN3RHcm51T1gzSGRnT21sWC1fcnBubjdnWTNqZ2NaR3pHOGY3Q0k2TURCaHdvLVR3cjhUNjQ3a3cwa1BOdDRxQ1oydDQyR0Fi?oc=5",
-      "date": "2026-11-19T01:32:00.000Z",
-      "summary": "데일리메디"
-    },
-    {
-      "title": "이번 개인정보 유출 사고는 「모두의 창업」 공식 플랫폼을 통해 발생한 것이 아닙니다.",
-      "source": "대한민국 정책브리핑",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMWl4VWNwbGhfWENrSTRpeDV6Y2NzM3ZpMUZ4TVhTVlhBZGZubGItSzF2NmxFS0pwZjNRVXQ4NTdtUkVOZXVpWXYwS3kzdnE2clcyS3Jrc2NpUDQ1WnpQZU9uOVppeU5wOGROdC0yTGhiNWp4a2F4b2E2dlU2eloxX2VFM1piUElWUUxVUQ?oc=5",
-      "date": "2026-11-19T01:45:23.000Z",
-      "summary": "대한민국 정책브리핑"
-    },
-    {
-      "title": "실시간 위치추적 활용 원내 감염병 접촉자 추적, '효율성' 확인",
-      "source": "메디칼업저버",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1Bb2hrZ2I5VkV5Tmw1LVIxbDJWbklMNDhFeUxuNFJMTW5jXzdPWE5Rd1pCakZfcnl2Vk1jaGdyQUFPd1NVcHd5X2FqX2QzQUw0Vm1DdWN6TUxFNUNGd0JSSkVKWGZGeWxVZXR3?oc=5",
-      "date": "2026-11-19T01:48:45.000Z",
-      "summary": "메디칼업저버"
-    },
-    {
-      "title": "“노동자 대표를 정부가 고르나”…의료연대본부, 복지부 위원회 구성 비판",
-      "source": "참세상",
-      "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5TblItbUlCUGt6UWJSMUk2eHVPOGhEa0JEN2xrSEIwVVY2bjFHblZtWU51WXNqXzlkaWlVUnNtdmRsZw?oc=5",
-      "date": "2026-11-19T00:37:38.000Z",
-      "summary": "참세상"
-    },
-    {
-      "title": "음주사고 나자 막걸리 두 병 ‘벌컥’한 30대 집유",
-      "source": "부산일보",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ZX1BHS0MyQlZWTXVDSlhaRU5Bdy1sT1hFMzVwVFdscTQwZldzRGVHczJ2WjdfS0lkdjF0YVB0Q192REZRc3h3TjVob1FHYjVIWm45em1BZ2dldDljRkRCQ0hGd0VvOXdTY24tcVJwWlREZ20tWXFlcQ?oc=5",
-      "date": "2026-11-19T01:52:08.000Z",
-      "summary": "부산일보"
-    },
-    {
-      "title": "\"수능 아들 도시락 주려다 교통사고\"…엄마의 다급한 사연에 경찰이 나섰다",
-      "source": "KBC광주방송",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Nc1N1NTNrdmdkYTR4Y3lyT0JGWEZXelRQLWJmdC1VMlFfdUJuc0dHVjR0NkRhcXhyemZUaW9PVXk3MlVHR3U3V1RMMExsUnAyM1VBaUFNUlFJOExydVpHbw?oc=5",
-      "date": "2026-11-19T02:20:01.000Z",
-      "summary": "KBC광주방송"
-    },
-    {
-      "title": "[단독]리트 만점자, 고의 교통사고로 합의금 뜯어 실형 받았었다",
+      "title": "질병청·美 CDC, 감염병 공동 대응 논의…보건안보 협력 확대",
       "source": "동아일보",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB3X2VKa01id3hreU96Wm92ajEzM1lvVVFNeXpVZDJDU25JLWppRHQ5YTNFT0dMSmVIcE5GLXBfYkI0SDN5SXF3T0I1bFZZYlN3MEJYQllvNHJCcjFIMG9jNFVFa0FweHYtQjRITmdBa0ZtUThMQUHSAWZBVV95cUxNRmNaSU4tRDl5bUQ1aElwUEZMQlZfSDZlX0FfQkNDbDZiMktIZ0dhU3pBMTkycGFNMzQwZFBJWW9HVnM4bWhsNGRvNVlzN0tRRDA3S3RaNGZyMHZTZmg3VlNYTXNHVUE?oc=5",
-      "date": "2026-11-19T01:09:41.000Z",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBWWktjbzZjTkRrdkNZRXpRcm0yN01NYmdpSnlKbVlBcnRrRk1nYnIzUC1ZSWpURkt0TjFyNjJQMDdSRTdMeFJDLWtXRExtVDZnZi0xdzJwVU05aXo3SUJ3dU4tQngyMHhvQjBBN1dXNEdkTnPSAWZBVV95cUxOU091dGRiZDVYS2Vwd0tabXJzRzJGYlFWQXZsWTdJRDI2LWlHczVFTHVjcGZCeHpYQUQ5aW5BeHdRTUpQRUZZNXdBVkVyMlF3d1RGUWRmendBWkUxUjhLVTZ6MHVkc3c?oc=5",
+      "date": "2026-11-20T01:00:52.000Z",
       "summary": "동아일보"
     },
     {
-      "title": "“몸·마음 모두 살리는 응급의료”…인천성모병원, 권역 거점으로 자리매김",
-      "source": "헬스경향",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KV3pIc3ZvWVlOcFc2eXZVTjdjZkNncDdZVDlDZHJQN2pZbzFJbFV0czJJQ1ptWEV2aTNZMDNMbVpRbnZzMFNOdV81NmRiOGRlaG45RVU5R1o1TEE5U2FhLVM0R01HRVFzR0ZJ?oc=5",
-      "date": "2026-11-18T22:58:36.000Z",
-      "summary": "헬스경향"
+      "title": "병원협회, 의료배상공제조합 설립…예산 120억원 추가 편성",
+      "source": "데일리팜",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9EaDZ5YnJYYlpRczlMbUhzbkZacE9ZU0pZcThMVVBoWjNaMmpDWUlfdXFPZmFLak55aEJUSmQ0dFIxa1Fnck1PVHJZd18weVdhZjEyamR3?oc=5",
+      "date": "2026-11-20T01:00:24.000Z",
+      "summary": "데일리팜"
     },
     {
-      "title": "공단, ‘2026년 보건의료 빅데이터 활용 성과공유 심포지엄’ 성료",
-      "source": "사이언스엠디뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92ek5RLUxrV05xc2NYdFdQQ1hlV094cG1va3hWSUpoVDNyUi1uaXBTaXBONWtma2JtRmhmT0R1MWx0SjRjTnAyTlhGeUs3SHhhUUExUG1kQVU5U1U?oc=5",
-      "date": "2026-11-19T02:04:38.000Z",
-      "summary": "사이언스엠디뉴스"
+      "title": "병협, 120억원 추경 편성…수탁사업비 1499억여원",
+      "source": "의협신문",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ZMXIyeVdQZjNRUUZCbFpISmpMcFlpdWdiZ2lXakhNaDZLMUJTcVNqUFJZSU5BZHc5NzUtTEl2Y2tjdnFlNllEYXlnekxmWHMyZlpYOWU5WWhwVlQ1NHdzT3dQYWgtek9jbUtETlBTNFVGZw?oc=5",
+      "date": "2026-11-20T01:08:39.000Z",
+      "summary": "의협신문"
+    },
+    {
+      "title": "지하철 2호선 복구 완료...\"사고 열차 안 승객 없었다\" [현장영상+]",
+      "source": "YTN",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5CSUcycWxoanhuYksya3h5c05lVkFrNzNRMEI4RHpfUmNfcTE1SU9vSzBrS1ZDVk1fVkFxS1h3eXAxOVY5NC1IMFk4ZXY5ZFRpaWUyNmlNaDdoWlJJWTJkbXRQcjJOa2RJTFZ3NHhkMA?oc=5",
+      "date": "2026-11-20T00:54:00.000Z",
+      "summary": "YTN"
+    },
+    {
+      "title": "질병청, 미국 CDC와 감염병 조기 탐지 위한 AI 활용 협력 논의",
+      "source": "한국의약통신",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1lVTJWMUp6ZFQyV1JlME5PWVFnY2FMTVU0aF92cE5Fa2NRTW1acjJVWVdjTkVMVXpKWTR5VW5WMmhNNng4eXYzMUlfOGoxWWZ6Q1YzRFRzR3A1dVFYUkwxS2FmY1dlNUcyNmpR?oc=5",
+      "date": "2026-11-20T00:17:24.000Z",
+      "summary": "한국의약통신"
+    },
+    {
+      "title": "인천성모병원, 몽골 수흐바타르 구 보건센터와 의료협력 MOU",
+      "source": "의학신문",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE04cXROcHFLMzU1WGxsdkVzU280SFVKWUFNb0pxblNpTTJHYlRmbHk1ZTRrMjhpcUNkQU9ZZjc2WG8wZ3dEN2NPMF9Cek14c3hrSm95QTZTeVFBMmo0bDlDMU5LN1hjeTgyWmc?oc=5",
+      "date": "2026-11-20T01:41:56.000Z",
+      "summary": "의학신문"
+    },
+    {
+      "title": "의료기술 재평가 대상 선정 기준 구체화…안전성·유효성 검토 강화",
+      "source": "후생신보",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE90a0Y4d0FRem80ZUJXYkF4ZGVnV2pfZV8yTzFDX3JtZi1xcHdlNlA1UzloZEtKWGJkMjVDZmc1T0VQSGZJ?oc=5",
+      "date": "2026-11-20T00:12:00.000Z",
+      "summary": "후생신보"
+    },
+    {
+      "title": "감염병 위협에 국경 없다.. 한미, ‘보건안보’ 공동대응 강화",
+      "source": "한국재난안전뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1tX2NxR3hzMkZhbGVFLVUwUjI4cEdFaWtKSW1sXy0zMHlwcGo4Y0t4VV9scS05NXVrTGIxRUQ2akRnY09YT05DUzFZeXplRVB0X3p4TWNKYmZhd29TQnc?oc=5",
+      "date": "2026-11-20T00:55:21.000Z",
+      "summary": "한국재난안전뉴스"
+    },
+    {
+      "title": "한-미 감염병 위협 공동 대응 위한 협력방안 논의",
+      "source": "연합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ZdjBvVjh4MU5ZUVFrdno1cllQc3dPVS00YU1GNTg4WURwNkhpVU04NGRyc1I0bEZwNVA0QTBJaVZDWFB2QzhlTlhkN01LYU1VVnZHbVJBbGdLQ2vSAWBBVV95cUxPWjh4TjNIUXgzUUV5eUM2YjV0S0tvVW1EeFJCWEtyZDNSYTlvaTJTUlBjRTFtYjNFa0hFV1ZRTFVjWW5zSnpxT3JPY3ZzY2xhUFhRU1VMRGxOQmRzVGttX0c?oc=5",
+      "date": "2026-11-20T01:02:56.000Z",
+      "summary": "연합뉴스"
+    },
+    {
+      "title": "美, AI 주도 일차의료 성과 보상 체계 검토",
+      "source": "데일리메디",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBIdVAzbEM3dVNZSFk3bEtMN3BOcmdxWkJMOHV4WUZ0cmVadk9ETU92SERRTXhWa2UyNE5saHZlNjAtNzNtaHFubGNoU1ZfUDRva0lYc3VOU2FqY09xZnNKcFdvN0pvaDNyQmJURGFNN3d6UQ?oc=5",
+      "date": "2026-11-19T21:58:00.000Z",
+      "summary": "데일리메디"
     }
   ]
 }
