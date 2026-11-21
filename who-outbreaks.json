@@ -9,6 +9,14 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "Better medicines for every child: GAP-f partners accelerate action on World Children’s Day",
+      "date": "2026-11-20T19:00:00Z",
+      "summary": "On World Children’s Day, the Global Accelerator for Paediatric Formulations Network (GAP-f) recognizes the progress being made towards ensuring that children benefit from medicines that are safe, effective and appropriate for their needs. Across the global health community, partners are working together to strengthen clinical research, advance the development of paediatric formulations and accelerate access to medicines. Yet, important gaps remain. Turning scientific advances and promising innov",
+      "link": "https://www.who.int/news/item/20-11-2026-better-medicines-for-every-child--gap-f-partners-accelerate-action-on-world-children-s-day",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO advances work on quality standards for herbal medicines at expert meeting in Hong Kong, China",
       "date": "2026-11-19T13:00:00Z",
       "summary": "Expert Meeting members on the development of international herbal pharmacopeia© WHOThe WHO Global Traditional Medicine Centre convened experts from all six WHO regions on 16–18 November 2026 in Hong Kong SAR (China) to advance the development of internationally harmonized quality standards for herbal medicines. The three-day meeting was the latest in a series of online and in-person meetings held by WHO since November 2024 to develop the first volume of international quality standards of traditi",
@@ -136,14 +144,6 @@
       "donId": "2026-DON626"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Statement of the Forty-sixth Meeting of the Polio IHR Emergency Committee",
-      "date": "2026-11-13T13:21:44Z",
-      "summary": "The 46th meeting of the Emergency Committee under the International Health Regulations (IHR or Regulations) on the international spread of poliovirus was convened by the WHO Director-General on 30 September 2026 via video conference with affected countries, supported by the WHO Secretariat.",
-      "link": "https://www.who.int/news/item/13-11-2026-statement-of-the-forty-sixth-meeting-of-the-polio-ihr-emergency-committee",
-      "newsType": "Statement"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria",
       "date": "2026-11-06T17:27:28Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON621"
     }
   ],
-  "generatedAt": "2026-11-20T19:23:33.109127+00:00"
+  "generatedAt": "2026-11-21T04:42:13.857880+00:00"
 }
