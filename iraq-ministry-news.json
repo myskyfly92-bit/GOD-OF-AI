@@ -1,6 +1,62 @@
 {
-  "generatedAt": "2026-11-21T11:28:54.471Z",
+  "generatedAt": "2026-11-21T20:56:59.537Z",
   "health": [
+    {
+      "title": "سيرة ذاتية الوزير – سفارة جمهورية العراق في بودابست",
+      "source": "وزارة الخارجية العراقية",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBmXzZfMHFCUmFyc3IxYWFmVjFzMl9uMEFRV0d2YkxVZUxzbDdzYkZpcURLNkcyeWVGd0hQMHdQRVU0M012M0lwdFdacW9FOTVxR29MUA?oc=5",
+      "date": "2026-11-21T16:53:59.000Z",
+      "lang": "ar",
+      "titleKo": "장관 약력 – 헝가리 부다페스트 주재 이라크 공화국 대사관"
+    },
+    {
+      "title": "Iraqi Health Ministry: 46 Casualties, Including Two Deaths, in al-Hartha Power Station Fire in Basra",
+      "source": "شبكة يافا الإخبارية",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5sa1A0dTZUREZVMHFvLUVrdjQweFVyUHlKRlk1RW9QbjI4ck9NUnZ0cUpLcEI1NXBWLXNNMy03QXNpNEcwTkVsWTh0bC1SMUpu?oc=5",
+      "date": "2026-11-21T16:20:04.000Z",
+      "lang": "en",
+      "titleKo": "이라크 보건부: 바스라 알하르타 발전소 화재로 2명을 포함한 46명의 사상자 발생"
+    },
+    {
+      "title": "الصحة: منصة \"ضماني\" جزء من النظام الإلكتروني الشامل للضمان الصحي",
+      "source": "موقع كلمة الإخباري",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9YWUVPTXNTQVNwNDhjd012a01zTXZzcGY5b2Ixb0ptckVld0RNQXB2aHJBcGVRbUNhWDFTc0VZUGxocG0wcmNqczBRTEthQnZa?oc=5",
+      "date": "2026-11-21T12:49:36.000Z",
+      "lang": "ar",
+      "titleKo": "보건부: '다마니' 플랫폼은 포괄적인 전자 건강보험 시스템의 일부입니다."
+    },
+    {
+      "title": "رئيس الوزراء العراقي يوجه بفتح تحقيق عاجل في انفجار محطة كهرباء الهارثة بالبصرة",
+      "source": "صوت الإمارات",
+      "link": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxQRnkxaGtvYUpTRjZkNjBsbDN0SHluWnRpNGRlVG1nc1NpV0NxcnU3bkl0V0Q4U3hiNmFSbmZQTmNVOVRNWjFmUFlobldBWWRObjF1OFBKOVRRYmU3Vk45VmhhTXhFRDIzeVZNdnhkclFGbzhEVkJ2OXJvSjBuN1RRMDlzMjNuVmUxOFBjbVBhNFcyWEh6VHRpZ1EwWWx0NGtScklNUmtNLUJPbGpaeW9QNmVhdDFxOW40VGJ2ckZaZVM3OWdmSWRydmZXaHFGMVJhbFNYc1MwbTQ1bmlQd0Z1X3FMczJlNk5wamZORXQ5OEZQV1kxY0t5ZjlUeWlPZHVlTWhacWN2RmZxaUtnVDZuM1MzTXRMZHcwLU9MdGtEOURnenNkWDVwTmU0RVBrUFMyM3g5Q0ZzU1VVVGhNdlZid3FZY1N6R0RjeUh0TDVwd0RLRm1aOS1BNkp1RV9WclN5N1BvLTJfbWpBR3c?oc=5",
+      "date": "2026-11-21T11:44:25.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 총리, 바스라 알하르사 발전소 폭발 사건 긴급 수사 지시"
+    },
+    {
+      "title": "امتد للمنازل .. قتلى وجرحى في حريق بمحطة كهرباء جنوب العراق",
+      "source": "زاد الاردن",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE14SUFQS25leEpvcjV6V1c0Q1poN0JmdEhxSHBTcWRldlNnQTVDeVB0VWJQYzNnb2lraXhBZ1d0TnB6SGtrb3puZ3pVV2k2cHNyR203VzZ4M2w3OW9sSDV4UFI0RzB0NEpnMHc?oc=5",
+      "date": "2026-11-21T11:32:39.000Z",
+      "lang": "ar",
+      "titleKo": "화재가 주택으로 번짐... 이라크 남부 발전소 화재로 사망 및 부상자 발생"
+    },
+    {
+      "title": "وفاة شخصين وإصابة 28 آخرين في حريق محطة كهرباء بالبصرة في العراق",
+      "source": "جريدة الشرق",
+      "link": "https://news.google.com/rss/articles/CBMi-wNBVV95cUxNVHpsWTNxZFMzcFlxVlZ0STFIV2tDZk5fUUJyamJvZl9JTzZJSHZhdURNTzBfRmZ0eW4zMG5DQ3F5WlQ4MHFTNm43STBmWDZNeUJPWGlMTGViZmhaN1N3VmxsR0NuNlFoZHp5N3h0UzdVLW5yYTdpd2xiMlFmOGJTdmNnU2VTYm1WX0lvYWJXeFA4NGF2bXM2ZFVGSVJZd0l0SGxNV1hSa3hFVkdsVUNXazduNFhCMDhxbUxUYzNDZXQwbEhQWXZMWnBxTlJwRURtNWxjcXZZbGJ4WkZfOU5razd0dlhiMUkyUDJNbVQtTkFYekdRa0xxdzlSQ1BXRG96RHEtbWFHaTc3SXFxUExfYmk1N2xUSDA5MlhEc0Jtc1hmZENjYTVfNG1IT0R1VWQyeHI0cmJwWWRRd0tHSl9nY1llMVJZd0xQa3FUdTNvdklHdzhaOFZyQmlFZ3dfcy1IZHVlRjE1NzRuMHhudmZQWUI2clBmc0pJRWJPa3k5d3JHV1BaZE4zRjhMTGxGQmk3bk9SNXB2SzBpVVowRDBRdEdfUHo0UVNjU2pjNm5zR2VMZ01LZFo1bGQ4enpyajQ4MGxCVXdiNjNRb3hzZnJ4Z1NzbWtKLTN2bkpwQ1NwRjNhTDgyTE1JdU9wUWZId0V4ZW9mVXRLcHJUWFU?oc=5",
+      "date": "2026-11-21T10:31:05.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 바스라의 발전소 화재로 2명 사망, 28명 부상"
+    },
+    {
+      "title": "وفاتان و44 إصابة بحريق في محطة كهرباء الهارثة في العراق».",
+      "source": "ديرتنا نيوز",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Nc3VzMktDaDRvaG9WU18zcnNXVng1Um9WaHlEb1J5bEhPTmVoRUtoRHZFWDVMQzZRZ2dIT2lKT1BPc3BCa19XQUZ6UGdjcGd6ZUkw?oc=5",
+      "date": "2026-11-21T10:30:46.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 알하르사 발전소 화재로 2명 사망, 44명 부상.\""
+    },
     {
       "title": "النيران امتدت إلى المنازل.. قتلى وجرحى في حريق بمحطة كهرباء جنوب العراق",
       "source": "دنيا الوطن",
@@ -16,14 +72,6 @@
       "date": "2026-11-21T10:02:28.000Z",
       "lang": "ar",
       "titleKo": "이라크 발전소 화재로 4명 사망 - 에너지"
-    },
-    {
-      "title": "وفاتان و44 إصابة بحريق في محطة كهرباء الهارثة في العراق».",
-      "source": "ديرتنا نيوز",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Nc3VzMktDaDRvaG9WU18zcnNXVng1Um9WaHlEb1J5bEhPTmVoRUtoRHZFWDVMQzZRZ2dIT2lKT1BPc3BCa19XQUZ6UGdjcGd6ZUkw?oc=5",
-      "date": "2026-11-21T09:56:09.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 알하르사 발전소 화재로 2명 사망, 44명 부상.\""
     },
     {
       "title": "العراق.. ارتفاع حصيلة حريق محطة الهارثة في البصرة إلى 4 وفيات و35 مصاباً",
@@ -48,54 +96,6 @@
       "date": "2026-11-21T09:25:13.000Z",
       "lang": "ar",
       "titleKo": "이라크 장관, 하르사 발전소 화재 긴급 조사 지시"
-    },
-    {
-      "title": "وفاتان وإصابة 44 شخصا بحريق في محطة كهرباء في العراق",
-      "source": "البوابة",
-      "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxOY09JejNtOTN3TUYxMTBzOFA0N1h2S01mVnB6dnQxSFQycFdFWDVIcFYyRDZaWmhDSVUxM2FyUzlLS0g4YmYzalpTTDVZNzdNNFQxZ3JfTFMwdVVoUWRjSHJweHJ5dnRWWjJfamd1WUVZSk5TNG5jRDBoT3dfdUttSVE4UTllZ3QwRnhpWTE4bXIyaGpyaVAtT0xjMVpRRnl1NklDMV8wMHcyNE5QTlQ5ZVEzMGRyWmllQW5xZkZLX0dTZlVpZXRZM0dRSnFyNUZFR2ZuQ0xXRndWQVN1d0JsaW1ja1FaSjVKV2VLcGt0cXRSdVZZVDQ0dmVUajdIdGRjaTJuLUNzV0RmRmhMc2VaakxXZFlrY09LQ3VYdkhzTTlnemROX1ZuU2VaRWpTZkN1c2tDSFN1QmZsMHNTMFlTVHVZQjl0ejVyVy15OGp6NFFxYkhCRVZxUA?oc=5",
-      "date": "2026-11-21T09:23:36.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 발전소 화재로 2명 사망, 44명 부상"
-    },
-    {
-      "title": "الصحة العراقية: 46 إصابة بينها حالتا وفاة في حريق محطة كهرباء الهارثة بالبصرة",
-      "source": "وكالة عمون الاخبارية",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9qVmFXN1Q4c0tDc056N1ZxelpaTUYtN1lBQmxIRGxmWWFqNWJvbzhHYWlUc2xWcVdUUmVVR2E1VnFRV3V5dTMyV29xcFQ5ajBpTXEw?oc=5",
-      "date": "2026-11-21T09:16:13.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 보건부: 바스라 알하르사 발전소 화재로 46명 부상, 2명 사망"
-    },
-    {
-      "title": "رئيس وزراء العراق يوجه بإجراء تحقيق عاجل فى حادثة انفجار محطة كهرباء البصرة",
-      "source": "اليوم السابع",
-      "link": "https://news.google.com/rss/articles/CBMi3wNBVV95cUxNWnNJMEE3SUpsMS12aXJvNDRiQUVQUWJiajlqYlpmUjJJM1N0TXhCMFZQd3JkWE5oaGJNTm8xbTNranRHNVVEM0s2dHZmbVprWk5NbXlKMGFMdTlqRzZ0WUdZYk5Ga3l0emtmdkE4MzM4ZUNMSGhfN29NUXJYdmYySFREWGdscDVuWVZDa1p6aWp3VHZCb0plamw0YUZSQnVHODJpZTdIU0luR3EwZkdpcjRyemNDLUtOYjNzdmJXdjVJTGsxSEtkRnlRRVNFcUxyZzFQMlNFMmNlS0NjUDdJSzFMR2lGdk0tLVBsQjFLR0I0MVdyOHFhSUFkVncwd1ZDbmxEdGdiOURsbE82VmlQaE56VE1rNWxUZnZKSzFYX3lMa3VjS1JiUC1iN1VjY1VSaERTVV9KcFdieTlPRkh4OTRuMHdvNllqQkgzUlNEYWhsQjFTcm56bUFGak1zdF9FOHZKY3NRUHVfbUpNb2cwU0d0N2ZhM3JXZU5UMUxRa2RFZkoxTjhDTHpsNTNUQUlsNVEtbHJLbmN6VnpyTThlWEVyMi0zNkJSN0xGcjdPRFlRY0VfTWJSZEs0YjI3VUdJZ3dwd1BkM2JVMnRsWkZQOHNnQldkWW9rUnNFVGppNNIB2gNBVV95cUxQRDk0enJ4NF9ydTg2MUJqOHFWWnV5Z0JSenhhUEM1OGROeXgzb19tVGxtTGlNeU84R2ZadlE3MXM2TjZWeUlhZTlydWFYdUFGZTJDa0NkWjNlT3pUTDBWRzU5UWFPTHdNTUVMU2ExcTBvTTh0RWQ1U2Z0LWJveEQwYWlHOW5IR0VkYjA0TE5BODVQZWhSeURRazhNRDhmSmVwOW52cEltRDFibmM2WmtjQ3lwWUdEazNuYmtERGFXbmxRZjB3ZWRXT20ydVhpb1ZCVC1vZG15YmxwekZtcE9jc21FVkNvWm1lVmd4RkwxVnl0UFpaV3REc0tmNFo1RHFxbkNSeTZXVkpTVGdpUlBvSG1Kbk5XbjVNTEdNYWUzbjVyZ3lYR2hPbGl1RFRaN2ZBVVNDZjRMeXdJc09URUNreFE5b25RX2h5ZjVwSC1VOG5NQ0xZOG1fZzlWZGtycDQ5djBZTkhKSl9sbXZiRXNiNEpPSTVKbVd2TjJGTnZiR1VKdDNfTHNKWDE3bWg4U2pTUmJQNFlVUGNxRjlaVGFRd01GUlhlSk5qaUhmc0FXaUpJbFZweXpKa3NkOHJMaURTZWljdl9FRUxXeVNFRjF6WXF5WlFoX3oxZFE?oc=5",
-      "date": "2026-11-21T09:16:00.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 총리, 바스라 발전소 폭발 사고에 대한 긴급 조사 지시"
-    },
-    {
-      "title": "رئيس الحكومة العراقية يوجه بفتح تحقيق عاجل إثر حريق محطة كهرباء الهارثة بالبصرة",
-      "source": "نيوز رووم",
-      "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5hRU9JMzRURENlRHhlXzc4SElHblZrZy1VTFNrYjFQeHdQNjhtYXIwYlBIdUdnREZScV9PSlB3QXVkdw?oc=5",
-      "date": "2026-11-21T09:14:12.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 총리가 바스라의 알-하르사 발전소 화재에 대한 긴급 수사를 지시했습니다."
-    },
-    {
-      "title": "بتوجيه من الرئيس الزيدي.. تحقيق عاجل في حريق محطة الهارثة وتعويض أسر الضحايا والمصابين#",
-      "source": "عراق اوبزيرفر",
-      "link": "https://news.google.com/rss/articles/CBMivwJBVV95cUxNdUtZeUZlcHJNSm80aTBPTEJUWEdVZjZldUJHN3ZUUE5RWTJUUmVUaV81VXhUcTJWd1RoMXktaEJpbjM0aEZWQTZUS0FEMkNkYld0cHMyNkw1M3NUc3p2TnNKWkx0cTNMY3QzREJzcmtXc0NhUmZ4eEd3MjREY29Lc2FkaW5HbVNlX1JTN2tWY0tkQ0VWVlB2WmNFUVA1N1dIT3J4U05qcHoybF9td3YyZTE3WlM5c0ROOVhVN2pKeC00Z3JGNHY1Y25hZFhfRjFYUFB3bnRNeUR0b0hsWXVkR01RazlVa01kdUFkX0tubk56bmtKZGc5dllsU09iTURPcjJ4ZldnX0ZtU2JMRmVxbUw3cmRUZzhmeUt5THFULTRuWUJPWHdNVkZpRjFRSklFb3hDQk5ESGViMFRtczRN?oc=5",
-      "date": "2026-11-21T08:48:48.000Z",
-      "lang": "ar",
-      "titleKo": "자이디 대통령의 지시에 따라 하르사 발전소 화재에 대한 긴급 조사 및 희생자 및 부상자 가족에 대한 보상이 이루어졌습니다.#"
-    },
-    {
-      "title": "الصحة: 46 إصابة وحالتا وفاة بحادث حريق محطة كهرباء الهارثة",
-      "source": "موقع كلمة الإخباري",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wMFNUS0NuS1k3bDVoVEdzWkhCMHg0dFlSbXRmMDZLaWE0T3JFMVAtUGtiT0Z2c3JEN09kUHhMR3dPek1BOFp4ZlFOSy1fRjZZ?oc=5",
-      "date": "2026-11-21T08:34:12.000Z",
-      "lang": "ar",
-      "titleKo": "보건부: 알하르사 발전소 화재 사고로 부상자 46명, 사망자 2명 발생"
     }
   ],
   "environment": [
@@ -116,12 +116,12 @@
       "titleKo": "환경부, 아지즈 유전 비기술적 조사 작업 지속 모니터링"
     },
     {
-      "title": "التلوث البيئي خطرٌ يهدد مستقبل الأجيال » وكالة الانباء العراقية (واع) | اخبار العراق",
-      "source": "وكالة الانباء العراقية (واع)",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1Qb0R1MVo2andDbF9WNWRIcGZ0UDRIRkVzV1VVbnh4aTZsYjU3ZUJKZHRnUDRPcEE3Njc2RGpLSHMzSW1maVZhT3VyZTJSVmlK?oc=5",
-      "date": "2026-11-16T09:10:00.000Z",
+      "title": "وزيرة البيئة: حماية الموارد وصحة الإنسان تتطلب إعلان 2027 عامًا للبيئة العراقية",
+      "source": "شفقنا العراق",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBaYVdtMXpQNktjbjVpQk5LUTVfb1lqMUY4RUFlTHp4TnpvMExnSi0xZlZwX3FvSUdmVHJPSTU4em8wbWl0WjRaNmhCNGQ?oc=5",
+      "date": "2026-11-16T10:27:03.000Z",
       "lang": "ar",
-      "titleKo": "환경 오염은 미래 세대를 위협하는 위험 요소입니다. » 이라크 통신(INA) | 이라크 뉴스"
+      "titleKo": "환경부 장관: 자원과 인간의 건강을 보호하기 위해서는 2027년을 이라크 환경의 해로 선포해야 합니다."
     },
     {
       "title": "سروة عبد الواحد: أربيل والسليمانية تقاسمتا الأموال بـ\"الكواني\".. والبارتي يهرّب النفط",
