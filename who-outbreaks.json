@@ -8,6 +8,14 @@
   "errors": {},
   "items": [
     {
+      "kind": "감염병 발생",
+      "title": "Ebola disease caused by Bundibugyo virus- Democratic Republic of the Congo, Kenya and Nigeria",
+      "date": "2026-11-20T22:38:46Z",
+      "summary": "Since the publication of the previous Disease Outbreak News on 6 November 2026, additional confirmed cases and deaths have been reported in the Democratic Republic of the Congo. While some areas have seen a slight decline in cases, sustained, high-level transmission continues overall in the country. As of 17 November 2026, a total of 11 613 confirmed cases, including 5678 deaths (crude case fatality ratio: 48.9%), have been reported across 68 health zones in eight provinces, with active transmis",
+      "link": "https://www.who.int/2026-DON630",
+      "donId": "2026-DON630"
+    },
+    {
       "kind": "WHO 소식",
       "title": "Better medicines for every child: GAP-f partners accelerate action on World Children’s Day",
       "date": "2026-11-20T19:00:00Z",
@@ -198,15 +206,7 @@
       "summary": "On 5 October 2026, WHO was informed about a laboratory-confirmed imported case of Bundibugyo virus disease (BVD) in Kenya with travel history from the Democratic Republic of the Congo. The patient travelled from the Democratic Republic of the Congo to Kenya through Uganda. The patient was hospitalized and treated in Kenya but subsequently died on 5 October. Public health response measures have been initiated in Kenya and Uganda, including contact tracing. Since the last Disease Outbreak News was",
       "link": "https://www.who.int/2026-DON619",
       "donId": "2026-DON619"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
-      "date": "2026-09-25T15:30:18Z",
-      "summary": "Since the last Disease Outbreak News was published on 11 September 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded further, with two additional health zones affected. These include Bulu health zone in a new province, Sud Ubangi, located on the north-west part of the country and Dungu health zone in Haut-Uélé province, bordering South Sudan. This brings the total number of affected health zones to 63 across seven provinces out of 26 provinces of the countr",
-      "link": "https://www.who.int/2026-DON621",
-      "donId": "2026-DON621"
     }
   ],
-  "generatedAt": "2026-11-21T04:42:13.857880+00:00"
+  "generatedAt": "2026-11-21T13:52:02.556509+00:00"
 }
