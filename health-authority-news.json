@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T02:15:04.278Z",
+  "generatedAt": "2026-11-22T01:19:07.764Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -24,6 +24,27 @@
       "date": "2024-06-10T03:38:59.000Z"
     },
     {
+      "title": "1339콜센터",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBRQU0xeUFtWTNKNnozU3h6YWV2WVBncU1oenZuMmR0R2dNMzRVUzR4QlBwaDVydWFReXgydVh0aTQ3Z0wxVjV6T3RWVVBpOEh5Ny1PVVdB?oc=5",
+      "date": "2026-08-23T23:28:53.000Z"
+    },
+    {
+      "title": "predict - 건강위해 통합정보시스템",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UUFZlQ2NDRFVzaVZaRW1OR2pZSUhxdHNyZmQ0Z01BU0pESGtTRDI2WGplVXU1VEpTRWtRbVY5a2JZX01VLUJXZnNHVE91d2RCaDlXWWhxc0JnV2lTSHRDS1ptd25uUQ?oc=5",
+      "date": "2026-05-11T02:05:29.000Z"
+    },
+    {
+      "title": "지침",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxOR1llMFVLek5sYjI0V0M4eUstYV9zcldxeXVLM1RucUpMaXRHNEg4cEJpY3JybnM2Zlo2UVBBUW9IU0RSWWg2LUpLbkliZFVKUmlZMnRNQmFNUzduTWVzR2E2MmJQRTV4RThhbG5lb3lZUm5EZkk3RDI0MXFaY0NYcTUtM1FSS0NBTUt1SFQxbS1fTkRKc0xTSmRBSlhVZ0J0NkgtNGdTM25GNmNoTHFkQ2V0ZlJIZzlfVnRHSnFWalVjZnp1NzFJOE80N2pXTlRZVkROZnNiQUZzSHRYcTFHR2NvZFhVa2xyNUhaVE1HbWI2bEYzUjRfYnJCaWdEOHV6b0lkSzVuaTdSWGlCZHg0dWdLcl90SkhUbjJwYnYyRk5hbnRmaExoZjhzZHAtVDJ0VW4xcnlWY0hyMGFHRjhCcHNReG9adWNCUVBPNTFfZ0lrOGdrVU9VY0VMWS1UN1ZmU2c?oc=5",
+      "date": "2026-01-15T10:26:20.000Z"
+    },
+    {
       "title": "보도자료(전체)",
       "source": "질병관리청",
       "agency": "",
@@ -31,60 +52,39 @@
       "date": "2025-12-16T15:46:00.000Z"
     },
     {
+      "title": "ICCON 감염예방 소식지",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ueXN2cXpmUkJyLWV2cHc4VHB3Sm01dGcwc09pTlNXVG5xZjE4bHpvUFgxOVktQjJoLXJHRmJRTHM4TXhrbmJLZ1JTQ25yWklLeDlqek1B?oc=5",
+      "date": "2025-12-16T15:49:07.000Z"
+    },
+    {
       "title": "- 질병관리청",
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-20T09:18:36.000Z"
+      "date": "2026-11-21T06:01:00.000Z"
     },
     {
-      "title": "손상예방",
+      "title": "레지오넬라증",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5tUkYwOVE0TXNPRGdUeWxpOGJIMDNxemRldm9FQ2lKVDROTldNYTNVSXhVQlNuT3FUN25vUm1NbVdiYUtG?oc=5",
-      "date": "2021-11-03T09:42:59.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52SW9Ma2pUR1JIZ1AxZHJEQnhtaFh1N1A0b3VVWTByTHVyVG9qQWJ1VmtMOElGdzM4MnRNdkVBd2dUa1F6OU82Mk44UGppVFlKb0UwUGRn?oc=5",
+      "date": "2025-12-16T16:14:22.000Z"
     },
     {
-      "title": "성홍열",
+      "title": "보도자료",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tcC03OGpvaW1sNlE0MmxfMzZYUy1PaEI1UU5aTWxLUlI2am9pbzVGU2gwT3hobGFfQmNRN3RMVkN3X3V2NUhMWDRCUnl2SXV6OE0yRXd3?oc=5",
-      "date": "2025-12-16T16:07:49.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1laFI5ZFFSVWgzWWszTDJBdmtoajBBZnVTNENvYmZzWFMySThoYjFWbVBTU1MyTU9DbVhRSnNlQ2w3U1l1Y0xQREVFZm8tZkZUc1pnWldR?oc=5",
+      "date": "2025-12-16T15:49:51.000Z"
     },
     {
-      "title": "신고현황",
-      "source": "질병관리청",
+      "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
+      "source": "질병관리청 감염병포털",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5MbExBX0JEd0RiZmxBQ3djZnFIQjdYUGwycC1BdUlvMDFDV0VOLUFmbU5QSU00TmNINE5BdmE5NlRVSThkN0c3TVJDa3dHRFJJWlNKWkZ3?oc=5",
-      "date": "2025-12-16T16:42:42.000Z"
-    },
-    {
-      "title": "수인성·식품매개 감염병",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ZQl9OTjlxM2NaZDY4dXZ1LU51dUNFTGZsYWstcjJpNG5GajVQa2N6OWozdk9RdHpSZi1USGVEUTRqX2J6YWRuUU40c3dvdmVndUZJVTln?oc=5",
-      "date": "2025-12-16T14:07:01.000Z"
-    },
-    {
-      "title": "보도자료(전체)",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNX0l5U2RMNDRQbDYzM1E5SW5YdG44R2FFN0JRNll2YVY3elNrUl91VWhNMG5Bakh4OUdSdGZPWG04VnExN2JCUThiWkoyYlNKM0tpazFzLXA5WHNOaE54Mkl0enF3NHNuZmdtV1dOVWR1a1AtUXZmeTluYVZXRFJhc3lJRFp1M2xzdDlhTnczV1dvTXhUVm9TUTdwYnJ6MWxCUkh1Y0N6VVJPemdKTHZ6Tmp6bF9BcVJEZW9XV0FOWUcySU5nVGRiWE43TWdtRy1xQ2ExdUY3VE55RjJIOWlualZaM1lON0E?oc=5",
-      "date": "2026-11-20T06:23:50.000Z"
-    },
-    {
-      "title": "보도자료(전체) - 「감염병예방법 시행령 및 시행규칙」 일부개정령안 공포·시행(11.17.화)",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPQnVoc1J3OVhjSEFiTlo4bU1mdHAxSzYtQlZvbEpmaXoxRDl5ZXd5V3NmWXoyV2JwaDVEcWdqZXhmSUQybU53OVgxR1hGYWpnMHcwemNRckdKaG95TG90QlJXcWRRcGNMcnhMdEdxVDlxWFZvWEFIYjc5czhLU3NUQ1BGSWZGeDV1WllwVThZZTE2cjU2RjFPaUd0NnZuTkYyTV9DSGwyQ3RieG4tVEFuNk5vUldjNzJlVGtpR29MMFByaVlLTDhUd09MMHN1THdQOXVKTTFhVVd0VTBCUlhyNy1HRjR6TFE?oc=5",
-      "date": "2026-11-18T06:27:19.000Z"
-    },
-    {
-      "title": "해외감염병예방수칙",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96VlVuNWRiQVVyUGZjc1dxNHN2VHNQSElOY21CM1FET3NocW5qQk1TUjIyWFMycGE5dVRlZml0ckIzYlVPdV90b0M3eHhscWFBcExuTmpn?oc=5",
-      "date": "2025-12-16T12:48:41.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
+      "date": "2024-06-10T02:47:27.000Z"
     }
   ]
 }
