@@ -1,6 +1,332 @@
 {
-  "generatedAt": "2026-11-22T15:29:07.466Z",
+  "generatedAt": "2026-11-22T21:54:58.896Z",
   "items": [
+    {
+      "title": "Iraq’s government and Kataib Hezbollah agree on a middle ground",
+      "source": "Tehran Times",
+      "link": "https://www.tehrantimes.com/news/532383/Iraq-s-government-and-Kataib-Hezbollah-agree-on-middle-ground",
+      "date": "2026-11-22T20:24:01.000Z",
+      "lang": "en",
+      "titleKo": "이라크 정부와 카타이브 헤즈볼라, 절충안에 합의",
+      "url": "https://www.tehrantimes.com/news/532383/Iraq-s-government-and-Kataib-Hezbollah-agree-on-middle-ground",
+      "body": "TEHRAN – The Iraqi government has backed down from threats to deploy the army and forcibly remove Kataib Hezbollah members from a town near Baghdad.\nThe agreement reached between the two sides is essentially a phased redeployment arrangement by Kataib Hezbollah in the town of Jurf al-Nasr, rather than a complete withdrawal or disarmament.\nAccording to the arrangement, the deployed government forces include an Iraqi army unit, federal police, energy police, and two Popular Mobilization Brigades: the 72nd and 79th Brigades. The entrance of the forces was described as very smooth.\nA new joint command headquarters has been established and is under the control of the federal police.\nIraqi Army Chief of Staff Abdul Amir Rashid Yarallah personally visited the area to oversee the redeployment of military units and the transfer of security responsibilities.",
+      "bodyKo": "테헤란 – 이라크 정부가 바그다드 인근 마을에서 카타이브 헤즈볼라 대원들을 강제로 축출하기 위해 군대를 배치하겠다는 위협을 철회했다.\n양측이 도달한 합의는 근본적으로 카타이브 헤즈볼라가 주르프 알나스르 마을에서 완전한 철수나 해체를 하는 것이 아니라 단계적으로 재배치하는 내용의 합의이다.\n합의에 따라, 배치된 정부군에는 이라크 육군 부대, 연방 경찰, 에너지 경찰, 그리고 2개의 인민동원군 여단(제72여단 및 제79여단)이 포함된다. 군대의 진입은 매우 순조로웠다고 전해진다.\n새로운 합동사령부 본부가 설립되었으며 연방경찰의 통제하에 있습니다.\n압둘 아미르 라시드 야랄라 이라크 육군 참모총장은 군부대 재배치 및 치안 책임 이양을 감독하기 위해 해당 지역을 직접 방문했다.",
+      "tried": true,
+      "count": 3,
+      "sources": [
+        "Around Prague",
+        "The Jerusalem Post",
+        "Tehran Times"
+      ],
+      "related": [
+        {
+          "titleKo": "주르프 알사카르: 이라크가 카타이브 헤즈볼라를 설득해 정부군이 주요 도시로 진입하도록 한 방법",
+          "source": "Around Prague",
+          "link": "https://aroundprague.cz/en/news/world/jurf-al-sakhar-how-iraq-got-kataib-hezbollah-to-let-government-forces-into-a"
+        },
+        {
+          "titleKo": "이라크군, 카타이브 헤즈볼라의 주요 거점 검문소 장악",
+          "source": "The Jerusalem Post",
+          "link": "https://www.jpost.com/middle-east/article-915654"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Al-Mandlawi: The Development Road will redraw the economic and transport map in Iraq and the region",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://ina.iq/en/politics/54039-al-mandlawi-the-development-road-will-redraw-the-economic-and-transport-map-in-iraq-and-the-region.html",
+      "date": "2026-11-22T19:22:51.000Z",
+      "lang": "en",
+      "titleKo": "알만들라위: 개발 도로가 이라크와 중동 지역의 경제 및 교통 지도를 다시 그릴 것입니다",
+      "url": "https://ina.iq/en/politics/54039-al-mandlawi-the-development-road-will-redraw-the-economic-and-transport-map-in-iraq-and-the-region.html",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq played 'pivotal role' in elimination of Daesh leader, says premier",
+      "source": "Yeni Safak English",
+      "link": "https://en.yenisafak.com/world/iraq-played-pivotal-role-in-elimination-of-daesh-leader-says-premier-3588915",
+      "date": "2026-11-22T19:00:54.000Z",
+      "lang": "en",
+      "titleKo": "이라크 총리, \"이라크가 이슬람국가(IS) 수괴 제거에 '중추적 역할'을 했다\"고 밝혀",
+      "url": "https://en.yenisafak.com/world/iraq-played-pivotal-role-in-elimination-of-daesh-leader-says-premier-3588915",
+      "body": "Mustafa al-Kadhimi says intel gathered by Iraq led to Abu Ibrahim al-Hashimi al-Qurayshi, who was killed in US op in Syria",
+      "bodyKo": "무스타파 알카디미 총리는 이라크가 수집한 정보가 시리아에서 미국 특수 작전으로 사망한 아부 이브라힘 알하시미 알쿠라이시로 이어졌다고 말했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Yeni Safak English"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "ISIS leader killed in security operation in northeastern Iraq",
+      "source": "The Peninsula Qatar",
+      "link": "https://thepeninsulaqatar.com/article/22/11/2026/isis-leader-killed-in-security-operation-in-northeastern-iraq-1",
+      "date": "2026-11-22T18:11:35.000Z",
+      "lang": "en",
+      "titleKo": "이라크 북동부 보안 작전에서 ISIS 지도자 사망",
+      "url": "https://thepeninsulaqatar.com/article/22/11/2026/isis-leader-killed-in-security-operation-in-northeastern-iraq-1",
+      "body": "Baghdad: Iraqi security personnel carried out an intel operation of exquisite precision, helping track down and take out an ISIS leader while leaving...\nThe service asserted that the operation was an outgrowth of intel and security efforts to go after ISIS leaders and their elements.",
+      "bodyKo": "바그다드: 이라크 보안 요원들이 정교한 정찰 작전을 펼쳐 ISIS 지도자를 추적하고 제거하는 데 도움을 주었으며...\n이 기관은 이번 작전이 ISIS 지도부와 그 조직원들을 추적하기 위한 정보 및 보안 활동의 결과라고 밝혔다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The Peninsula Qatar"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq and Oman Agree to Expand Economic Partnerships and Strengthen Regional Security Coordination",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://ina.iq/en/local/54035-iraq-and-oman-agree-to-expand-economic-partnerships-and-strengthen-regional-security-coordination.html",
+      "date": "2026-11-22T18:08:11.000Z",
+      "lang": "en",
+      "titleKo": "이라크와 오만이 경제 협력 확대 및 지역 안보 협력 강화에 합의하다",
+      "url": "https://ina.iq/en/local/54035-iraq-and-oman-agree-to-expand-economic-partnerships-and-strengthen-regional-security-coordination.html",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Abdelatty, Iraqi counterpart probe bilateral ties, regional developments",
+      "source": "Egyptian Gazette",
+      "link": "https://egyptian-gazette.com/egypt/abdelatty-iraqi-counterpart-probe-bilateral-ties-regional-developments/",
+      "date": "2026-11-22T17:23:53.000Z",
+      "lang": "en",
+      "titleKo": "압델라티 장관, 이라크 외교부 장관과 양국 관계 및 지역 정세 논의",
+      "url": "https://egyptian-gazette.com/egypt/abdelatty-iraqi-counterpart-probe-bilateral-ties-regional-developments/",
+      "body": "Minister of Foreign Affairs, International Co-operation and Egyptian Expatriates Badr Abdelatty met on Sunday with Iraqi Deputy Prime Minister and Foreign",
+      "bodyKo": "바드르 압델라티 이집트 외교·국제협력·해외 이집트인 담당 장관은 10일 이라크 부총리 겸 외교부 장관인",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Egyptian Gazette",
+        "Egypt Today"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크의 알자이디 외무장관, 양국 관계 및 지역 현안 논의를 위해 월요일 이집트 방문 예정: 보도",
+          "source": "Egypt Today",
+          "link": "https://www.egypttoday.com/Article/1/150717/Iraq%E2%80%99s-Al-Zaidi-to-visit-Egypt-Monday-for-talks-on"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Egypt, Iraq discuss economic ties ahead of Iraqi PM’s Cairo visit - Foreign Affairs",
+      "source": "Ahram Online",
+      "link": "https://english.ahram.org.eg/NewsContentP/1/583119/Egypt/Egypt,-Iraq-discuss-economic-ties-ahead-of-Iraqi-P.aspx",
+      "date": "2026-11-22T17:02:09.000Z",
+      "lang": "en",
+      "titleKo": "이집트, 이라크 총리의 카이로 방문을 앞두고 경제 관계 논의 - 외교",
+      "url": "https://english.ahram.org.eg/NewsContentP/1/583119/Egypt/Egypt,-Iraq-discuss-economic-ties-ahead-of-Iraqi-P.aspx",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Ahram Online"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Where do Iraq's oil smuggling problems originate, and how are they working to stop them?",
+      "source": "The Jerusalem Post",
+      "link": "https://www.jpost.com/middle-east/iran-news/article-915675",
+      "date": "2026-11-22T16:34:03.000Z",
+      "lang": "en",
+      "titleKo": "이라크의 석유 밀수 문제는 어디에서 비롯되었으며, 이를 해결하기 위해 어떤 노력을 기울이고 있습니까?",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-915675",
+      "body": "The latest revelations include an investigation into oil smuggling in Iraq's Najaf province, which has expanded to include local political figures and members of the Energy Police.",
+      "bodyKo": "최근 폭로에는 이라크 나자프 주에서 벌어진 석유 밀수 사건에 대한 수사가 포함되어 있으며, 이 수사는 현지 정치인과 에너지 경찰 소속 인원까지 확대되었습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The Jerusalem Post"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "나자프",
+        "km": 135
+      }
+    },
+    {
+      "title": "Iraq power station explosion kills at least four",
+      "source": "CNN",
+      "link": "https://www.cnn.com/2026/11/21/world/video/iraq-power-station-explosion-kills-at-least-four-vrtc",
+      "date": "2026-11-22T16:33:58.000Z",
+      "lang": "en",
+      "titleKo": "이라크 발전소 폭발로 최소 4명 사망",
+      "url": "https://www.cnn.com/2026/11/21/world/video/iraq-power-station-explosion-kills-at-least-four-vrtc",
+      "body": "A massive fireball erupted at the Hartha power station in southern Iraq killing at least four people and injuring 35, with the toll expected to rise, according to security officials. The fire spread to neighboring homes and halted operations at the station.\nLink Copied! • Source: CNN \" data-fave-thumbnails=\"{\"big\": { \"uri\": \"https://media.cnn.com/api/v1/images/stellar/prod/basra-explosion.jpg?c=9x16\" }, \"small\": { \"uri\": \"https://media.cnn.com/api/v1/images/stellar/prod/basra-explosion.jpg?c=9x16\" } }\" data-vr-video=\"false\" data-show-html=\" \" data-byline-html=\" By Jesus Diaz , CNN \" data-timestamp-html=\" Updated 1:26 PM EST, Sat November 21, 2026 \" data-check-event-based-preview=\"\" data-is-vertical-video-embed=\"false\" data-network-id=\"\" data-publish-date=\"2026-11-21T18:16:49.341Z\" data-video-section=\"world\" data-canonical-url=\"https://www.cnn.com/2026/11/21/world/video/iraq-power-station-explosion-kills-at-least-four-vrtc\" data-branding-key=\"\" data-video-slug=\"iraq-power-station-explos",
+      "bodyKo": "이라크 남부의 하르타 발전소에서 거대한 불덩이가 폭발하여 최소 4명이 사망하고 35명이 부상을 입었으며, 보안 당국에 따르면 사상자 수가 더 늘어날 것으로 예상된다. 화재는 인근 주택으로 번졌고 발전소의 가동이 중단되었습니다.\n링크가 복사되었습니다! • 출처: CNN \" data-fave-thumbnails=\"{\"big\": { \"uri\": \"https://media.cnn.com/api/v1/images/stellar/prod/basra-explosion.jpg?c=9x16\" }, \"small\": { \"uri\": \"https://media.cnn.com/api/v1/images/stellar/prod/basra-explosion.jpg?c=9x16\" } }\" data-vr-video=\"false\" data-show-html=\" \" data-byline-html=\" 작성자: Jesus Diaz, CNN \" data-timestamp-html=\" 2026년 11월 21일 토요일 오후 1시 26분(미 동부 표준시) 업데이트 \" data-check-event-based-preview=\"\" data-is-vertical-video-embed=\"false\" data-netwo",
+      "tried": true,
+      "count": 8,
+      "sources": [
+        "هذا اليوم",
+        "الشرق الأوسط",
+        "CNN",
+        "Qatar news agency",
+        "elmaser.com",
+        "المعلومة"
+      ],
+      "related": [
+        {
+          "titleKo": "동영상 | 바스라 폭발 사건이 가스관의 위험성을 부각시키다",
+          "source": "هذا اليوم",
+          "link": "https://hathalyoum.net/articles/4268021"
+        },
+        {
+          "titleKo": "동영상 | 부상자 사망으로 바스라 알하르사 폭발 사망자 3명, 부상자 46명으로 증가",
+          "source": "هذا اليوم",
+          "link": "https://hathalyoum.net/articles/4268019"
+        },
+        {
+          "titleKo": "바스라에서 가스관 폭발로 수십 명 사망 및 부상",
+          "source": "الشرق الأوسط",
+          "link": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5344023-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%82%D8%AA%D9%84%D9%89-%D9%88%D8%A7%D9%84%D8%AC%D8%B1%D8%AD%D9%89-%D8%A8%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%A3%D9%86%D8%A8%D9%88%D8%A8-%D8%BA%D8%A7%D8%B2%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9"
+        },
+        {
+          "titleKo": "이라크 바스라의 발전소 화재로 2명 사망, 28명 부상",
+          "source": "Qatar news agency",
+          "link": "https://qna.org.qa/ar-QA/News-Area/News/2026-11/21/%D9%88%D9%81%D8%A7%D8%A9-%D8%B4%D8%AE%D8%B5%D9%8A%D9%86-%D9%88%D8%A7%D8%B5%D8%A7%D8%A8%D8%A9-28-%D8%A7%D8%AE%D8%B1%D9%8A%D9%86-%D9%81%D9%8A-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%B7%D8%A9-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82"
+        },
+        {
+          "titleKo": "이라크: 바스라 발전소 화재로 39명 사망 및 부상",
+          "source": "elmaser.com",
+          "link": "https://elmaser.com/article/202680"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "먼 지역 치안 사건 (바스라) — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "바스라",
+        "km": 422
+      }
+    },
+    {
+      "title": "Iraq pushes to raise oil output to 10 million barrels per day",
+      "source": "IraqiNews",
+      "link": "https://www.iraqinews.com/iraq/iraq-pushes-to-raise-oil-output-to-10-million-barrels-per-day/",
+      "date": "2026-11-22T16:22:29.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 석유 생산량을 일일 1천만 배럴로 증산 추진",
+      "url": "https://www.iraqinews.com/iraq/iraq-pushes-to-raise-oil-output-to-10-million-barrels-per-day/",
+      "body": "Iraq pushes to raise oil output to 10 million barrels per day\nA BP refinery in Texas, the United States. Photo: Craig Hartley/Bloomberg\nBaghdad (IraqiNews.com) – Iraqi Prime Minister Ali al-Zaidi ordered on Sunday accelerated oilfield operations and extended working hours to advance Iraq’s push to reach 10 million barrels per day by 2032.\nAl-Zaidi’s remarks took place during his meeting with Meg O’Neill, CEO of British Petroleum (BP), where he emphasized the importance of expanding the recovery of associated gas and ending gas flaring, according to the Prime Minister’s Office (PMO).\nThe development would bolster Iraq’s energy supplies and meet domestic consumption needs, according to al-Zaidi.\nThe meeting addressed the development of oil fields and the extension of exploration areas, particularly the Kirkuk field, the Eridu field in Dhi Qar, and the Rumaila field in Basra.",
+      "bodyKo": "이라크, 석유 생산량을 일일 1천만 배럴로 증산 추진\n미국 텍사스주에 위치한 BP 정유 공장. 사진: 크레이그 하틀리/블룸버그\n바그다드(IraqiNews.com) – 이라크의 알리 알자이디 총리는 2032년까지 일일 석유 생산량을 1천만 배럴에 도달시키기 위한 이라크의 노력을 가속화하기 위해 유전 작업 속도를 높이고 근무 시간을 연장하라고 10일(일) 명령했다.\n알자이디 장관은 영국 석유회사(BP)의 CEO인 메그 오닐(Meg O’Neill)과의 회담에서 이와 같이 발언하며, 부수적으로 발생하는 가스의 회수를 확대하고 가스 플레어링을 중단하는 것이 중요하다는 점을 강조했다고 총리실(PMO)이 밝혔다.\n자이디 장관에 따르면, 이 개발은 이라크의 에너지 공급을 강화하고 국내 소비 수요를 충족시킬 것이라고 한다.\n이번 회의에서는 유전 개발과 탐사 지역 확대, 특히 키르쿠크 유전, 디카르의 에리두 유전, 바스라의 루마일라 유전에 대한 논의가 이루어졌다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "IraqiNews"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "KDP and PUK resume dialogue in Erbil amid disputes over parliament and Sulaymaniyah status",
+      "source": "IraqiNews",
+      "link": "https://www.iraqinews.com/iraq/kdp-puk-resume-dialogue-erbil-parliament-sulaymaniyah-status-november-2026/",
+      "date": "2026-11-22T16:21:36.000Z",
+      "lang": "en",
+      "titleKo": "KDP와 PUK, 의회 및 술라이마니야 지위 논쟁 속에서 에르빌에서 대화 재개",
+      "url": "https://www.iraqinews.com/iraq/kdp-puk-resume-dialogue-erbil-parliament-sulaymaniyah-status-november-2026/",
+      "body": "KDP and PUK resume dialogue in Erbil amid disputes over parliament and Sulaymaniyah status\nBaghdad (IraqiNews.com) – Efforts to reset relations between the Kurdistan Democratic Party (KDP) and the Patriotic Union of Kurdistan (PUK) have brought fundamental questions over the political trajectory of the Kurdistan Region back to the forefront following a high-level meeting between the two rival parties in Erbil on Saturday, November 21, 2026.\nWhile the talks reopened cautious optimism about breaking the region’s prolonged political deadlock, subsequent statements from Sulaymaniyah revealed persistent disputes over the legitimacy of the Kurdistan Parliament’s recent session, power-sharing mechanisms, and mounting calls for the administrative separation of Sulaymaniyah from Erbil.\nThe core institutional dispute centers on the legality of the Kurdistan Parliament’s latest session, which the KDP defends as constitutionally sound while the PUK refuses to recognize.",
+      "bodyKo": "KDP와 PUK, 의회 및 술라이마니야 지위 논쟁 속에서 에르빌에서 대화 재개\n바그다드(IraqiNews.com) – 쿠르드 민주당(KDP)과 쿠르드 애국연합(PUK) 간 관계를 재정립하기 위한 노력으로 인해, 2026년 11월 21일 토요일 에르빌에서 열린 두 정당 간 고위급 회담 이후 쿠르드 지역의 정치적 궤적에 대한 근본적인 의문이 다시 부상했다.\n이번 회담으로 이 지역의 장기적인 정치적 교착 상태를 타개할 수 있다는 신중한 낙관론이 다시 고개를 들었지만, 이후 술라이마니야에서 나온 성명들을 통해 쿠르드 의회의 최근 회기, 권력 분할 메커니즘, 술라이마니야의 에르빌로부터의 행정적 분리 요구 증가 등에 대한 지속적인 논쟁이 드러났다.\n핵심적인 제도적 분쟁은 쿠르드 의회의 최근 회의의 적법성을 중심으로 전개되고 있다. KDP는 이 회의가 헌법적으로 타당하다고 주장하는 반면, PUK는 이를 인정하지 않고 있다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "IraqiNews"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
+      }
+    },
     {
       "title": "Security service says it killed senior Isis commander in Diyala gunfight",
       "source": "964media",
@@ -27,28 +353,21 @@
       }
     },
     {
-      "title": "이라크군, 주르프 알사카르로 진격",
-      "source": "Vietnam.vn",
-      "link": "https://www.vietnam.vn/ko/luc-luong-iraq-tien-vao-jurf-al-sakhar",
-      "date": "2026-11-22T14:10:09.000Z",
-      "lang": "ko",
-      "titleKo": "이라크군, 주르프 알사카르로 진격",
-      "url": "https://www.vietnam.vn/ko/luc-luong-iraq-tien-vao-jurf-al-sakhar",
-      "body": "11월 20일, 이라크 정부와 카타이브 헤즈볼라 무장단체가 이란의 중재로 합의한 후, 이라크 보안군은 12년 넘게 헤즈볼라 카타이브 무장단체의 거점이었던 주르프 알 사카르 지역에 진입했다.\nDiễn biến được đánh giá là bước đi nhằm mở rộng quyền kiểm soát của chính quyền Baghdad, đồng thời giúp ngăn chặn nguy cơ đối đầu quân sự giữa quân đội Iraq và nhóm vũ trang Kataib Hezbollah.\nTheo truyền thông Iraq và khu vực, lực lượng chính quy của Iraq bắt đầu triển khai vào Jurf al-Sakhar, địa bàn cách thủ đô Baghdad khoảng 100 km về phía Nam, sau nhiều ngày căng thẳng liên quan đến cáo buộc buôn lậu dầu mỏ tại khu vực này.\nViệc triển khai lực lượng Iraq được truyền thông địa phương mô tả là diễn ra suôn sẻ, góp phần giảm nguy cơ đối đầu trực tiếp. Đáng chú ý, một sở chỉ huy chung đã được thành lập tại Jurf al-Sakhar từ 6h00 sáng cùng ngày, với sự tham gia của quân đội, cảnh sát và Lực lượng Huy động Nhân dân (PMF) – tổ chức quy tụ nhiều nhóm dân quân Iraq.",
-      "bodyKo": "11월 20일, 이라크 정부와 카타이브 헤즈볼라 무장단체가 이란의 중재로 합의한 후, 이라크 보안군은 12년 넘게 헤즈볼라 카타이브 무장단체의 거점이었던 주르프 알 사카르 지역에 진입했다.\nDiễn biến được đánh giá là bước đi nhằm mở rộng quyền kiểm soát của chính quyền Baghdad, đồng thời giúp ngăn chặn nguy cơ đối đầu quân sự giữa quân đội Iraq và nhóm vũ trang Kataib Hezbollah.\nTheo truyền thông Iraq và khu vực, lực lượng chính quy của Iraq bắt đầu triển khai vào Jurf al-Sakhar, địa bàn cách thủ đô Baghdad khoảng 100 km về phía Nam, sau nhiều ngày căng thẳng liên quan đến cáo buộc buôn lậu dầu mỏ tại khu vực này.\nViệc triển khai lực lượng Iraq được truyền thông địa phương mô tả là diễn ra suôn sẻ, góp phần giảm nguy cơ đối đầu trực tiếp. Đáng chú ý, một sở chỉ huy chung đã được thành lập tại Jurf al-Sakhar từ 6h00 sáng cùng ngày, với sự tham gia của quân đội, cảnh sát và Lực lượng Huy động Nhân dân (PMF) – tổ chức quy tụ nhiều nhóm dân quân Iraq.",
+      "title": "What next for Iraq’s push against militias following Jurf al-Sakhar deal?",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/11/22/what-next-for-iraqs-push-against-militias-following-jurf-al-sakhar-deal",
+      "date": "2026-11-22T14:00:52.000Z",
+      "lang": "en",
+      "titleKo": "주르프 알사카르 합의에 따른 이라크의 민병대 단속 이후의 향방은?",
+      "url": "https://www.aljazeera.com/news/2026/11/22/what-next-for-iraqs-push-against-militias-following-jurf-al-sakhar-deal",
+      "body": "Baghdad’s deal with Kataib Hezbollah may not end the Iran-backed militia’s influence over the town.\nx whatsapp-stroke copylink google Add Al Jazeera on Google info By Rached El-Moctar and Al Jazeera Staff Published On 22 Nov 2026 22 Nov 2026 The entry of Iraqi government forces into Jurf al-Sakhar, a town 60km (37 miles) southwest of Baghdad long held by the Iran-backed armed group Kataib Hezbollah, has raised questions about the future of Iraqi militias in the country.\nA deal reached between Iraqi authorities and Kataib Hezbollah about control of Jurf al-Sakhar, where oil smuggling was allegedly taking place, staved off a potential confrontation between the two sides.\nIt is the latest episode in Prime Minister Ali al-Zaidi’s push to assert federal government control over the country and crack down on corruption, which is allegedly funding pro-Iran militias.",
+      "bodyKo": "바그다드가 카타이브 헤즈볼라와 체결한 합의는 이란의 지원을 받는 민병대가 이 마을에 미치는 영향력을 종식시키지 못할 수 있다.\nx whatsapp-stroke copylink google Google에서 알자지라 추가 정보 라셰드 엘목타르 및 알자지라 기자 작성 2026년 11월 22일 게시 2026년 11월 22일 이란의 지원을 받는 무장단체 카타이브 헤즈볼라가 오랫동안 점령해 온 바그다드 남서쪽 60km(37마일) 지점에 위치한 도시 주르프 알사카르에 이라크 정부군이 진입하면서 이라크 내 민병대의 미래에 대한 의문이 제기되고 있습니다.\n이라크 당국과 카타이브 헤즈볼라가 석유 밀수가 이뤄지고 있다고 알려진 주르프 알사카르의 통제권을 놓고 체결한 합의로 양측 간의 잠재적 대립이 피할 수 있었다.\n이는 이란 지지 민병대를 자금 지원하고 있다고 주장되는 부패를 단속하고 연방 정부의 국가 통제권을 확립하기 위한 알리 알자이디 총리의 노력 중 가장 최근의 사례입니다.",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "Al Jazeera",
-        "Vietnam.vn"
+        "Al Jazeera"
       ],
-      "related": [
-        {
-          "titleKo": "주르프 알사카르 합의에 따른 이라크의 민병대 단속 이후의 향방은?",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/news/2026/11/22/what-next-for-iraqs-push-against-militias-following-jurf-al-sakhar-deal"
-        }
-      ],
+      "related": [],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -75,9 +394,9 @@
       ],
       "related": [
         {
-          "titleKo": "샤파크 뉴스.. 바그다드와 에르빌에서 달러화 가치 상승",
+          "titleKo": "샤파크 뉴스.. 바그다드, 에르빌에서 달러 가치 하락",
           "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Economy/Dollar-rises-in-Baghdad-and-Erbil-0-8"
+          "link": "https://shafaq.com/en/Economy/Dollar-dips-in-Baghdad-Erbil-8"
         },
         {
           "titleKo": "샤파크 뉴스.. 바그다드와 에르빌에서 달러화 가치 상승",
@@ -130,11 +449,17 @@
       "body": "Shafaq News- Diyala The Iraqi National Security Service (INSS) announced on Sunday the killing of a senior ISIS figure known as \"Khattab Jazira\" during a security operation in Diyala province, northe\nIn a statement, the INSS reported that intelligence surveillance had tracked down the suspect, prompting an operation that led to an armed clash in which several other suspected militants were wounded and fled.\nAccording to the agency, he held several positions within ISIS, including commander of the so-called Waqf Detachment, an operational unit, and general military commander of the Omar Al-Farouq sector, an area designated by the group. It also accused him of involvement in attacks on Iraqi security forces and checkpoints operated by the Popular Mobilization Forces (PMF), an umbrella organization of predominantly Shiite armed groups incorporated into Iraq's security apparatus, as well as the killing of civilians who cooperated with security agencies.",
       "bodyKo": "샤팍 뉴스-디얄라 이라크 국가안보국(INSS)은 10일, 북부 디얄라주에서 실시한 보안 작전 중 '카타브 자지라'로 알려진 ISIS 고위 인사가 사망했다고 발표했습니다.\nINSS는 성명에서 정보 감시를 통해 용의자를 추적했으며, 이로 인해 무장 충돌이 발생하여 다른 용의자 무장 세력 여러 명이 부상을 입고 도주했다고 밝혔다.\n이 기관에 따르면, 그는 ISIS 내에서 여러 직책을 맡았으며, 여기에는 작전 부대인 이른바 와크프 부대의 지휘관과 이 단체가 지정한 지역인 오마르 알-파루크 섹터의 군사 총사령관이 포함된다. 또한, 이라크 보안 기관에 편입된 주로 시아파 무장 단체로 구성된 연합 조직인 '인민동원군(PMF)'이 운영하는 이라크 보안군과 검문소에 대한 공격에 연루된 혐의도 받고 있다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "샤파크 뉴스..이라크 보안군, 디얄라에서 이슬람국가(ISIS) 고위 인물 사살",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Security/Security-forces-kill-senior-ISIS-figure-in-Diyala"
+        }
+      ],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -142,6 +467,56 @@
         "act": "",
         "place": "디얄라주",
         "km": 91
+      }
+    },
+    {
+      "title": "Iraq pledges return of Jurf al-Sakhr displaced families after 12 years",
+      "source": "Rudaw",
+      "link": "https://www.rudaw.net/english/categories/iraq/1080262",
+      "date": "2026-11-22T12:58:40.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 12년 만에 주르프 알사크르 이재민 가족들의 귀환 약속",
+      "url": "https://www.rudaw.net/english/categories/iraq/1080262",
+      "body": "The Iraqi government has pledged to facilitate the return of thousands of families displaced from Babil province’s Jurf al-Sakhr subdistrict for nearly 12 years, while officials say security forces mu",
+      "bodyKo": "이라크 정부는 바빌 주 주르프 알사크르 하위지구에서 거의 12년 동안 이재민 생활을 한 수천 가구의 귀환을 지원하겠다고 약속했으며, 당국자들은 치안 당국이",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "힐라(바빌)",
+        "km": 81
+      }
+    },
+    {
+      "title": "US dollar dips slightly across Baghdad, Erbil, and Basra markets",
+      "source": "IraqiNews",
+      "link": "https://www.iraqinews.com/iraq/us-dollar-exchange-rate-dips-baghdad-erbil-basra-november-22-2026/",
+      "date": "2026-11-22T12:11:32.000Z",
+      "lang": "en",
+      "titleKo": "US dollar dips slightly across Baghdad, Erbil, and Basra markets",
+      "url": "https://www.iraqinews.com/iraq/us-dollar-exchange-rate-dips-baghdad-erbil-basra-november-22-2026/",
+      "body": "US dollar dips slightly across Baghdad, Erbil, and Basra markets\nPacks of US dollars and Iraqi dinars. Photo: Pukmedia\nBaghdad (IraqiNews.com) – The exchange rate of the U.S. dollar against the Iraqi dinar edged slightly lower across major domestic parallel markets on Sunday morning, November 22, 2026, with purchasing bids settling below the 170,000-dinar threshold in both Baghdad and Erbil while retail selling rates hovered narrowly above that mark across primary trading hubs.\nIn Baghdad, currency exchange counters posted retail selling rates at 170,050 IQD against buying offers of 169,500 IQD per $100.\nIn Erbil, currency desks quoted retail selling rates at 170,300 IQD alongside matching purchasing bids of 169,500 IQD per $100.\nIn Basra, foreign exchange offices recorded slightly firmer quotes, with retail selling rates at 170,500 IQD and buying offers holding at 170,000 IQD per $100.",
+      "bodyKo": "바그다드, 에르빌, 바스라 시장에서 미 달러화가 소폭 하락\n미국 달러와 이라크 디나르 뭉치. 사진: Pukmedia\n바그다드(IraqiNews.com) – 2026년 11월 22일 일요일 아침, 주요 국내 사설 환전소에서 미국 달러 대비 이라크 디나르 환율이 소폭 하락했으며, 바그다드와 에르빌 모두에서 매수 호가가 170,000디나르 선을 밑돌았고 주요 거래 중심지에서는 소매 판매 환율이 이 수준을 약간 상회했다.\n바그다드의 환전소는 100달러당 169,500이라키안디나르의 매수 호가에 대해 170,050이라키안디나르의 소매 매도가를 게시했습니다.\n에르빌의 환전소에서는 100달러당 170,300 이라크 디나르의 소매 판매 환율과 이에 상응하는 169,500 이라크 디나르의 매수 호가를 제시했습니다.\n바스라의 외환 거래소에서는 다소 강세를 보이는 환율이 기록되었으며, 소매 판매 환율은 100달러당 170,500 이라크 디나르, 매수 환율은 170,000 이라크 디나르를 유지했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "IraqiNews"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
       }
     },
     {
@@ -195,31 +570,6 @@
       }
     },
     {
-      "title": "Iraq pledges return of Jurf al-Sakhr displaced families after 12 years",
-      "source": "Rudaw",
-      "link": "https://www.rudaw.net/english/categories/iraq/1080262",
-      "date": "2026-11-22T11:58:35.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 12년 만에 주르프 알사크르 이재민 가족들의 귀환 약속",
-      "url": "https://www.rudaw.net/english/categories/iraq/1080262",
-      "body": "The Iraqi government has pledged to facilitate the return of thousands of families displaced from Babil province’s Jurf al-Sakhr subdistrict for nearly 12 years, while officials say security forces mu",
-      "bodyKo": "이라크 정부는 바빌 주 주르프 알사크르 하위지구에서 거의 12년 동안 이재민 생활을 한 수천 가구의 귀환을 지원하겠다고 약속했으며, 당국자들은 치안 당국이",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "힐라(바빌)",
-        "km": 81
-      }
-    },
-    {
       "title": "Kurdistan, Baghdad, Dana Gas to Meet on Khor Mor Restart",
       "source": "Kurdistan24",
       "link": "https://www.kurdistan24.net/en/story/954792/kurdistan-baghdad-dana-gas-to-meet-on-khor-mor-restart",
@@ -270,24 +620,22 @@
       }
     },
     {
-      "title": "حريق محطة كهرباء في العراق يودي بحياة 4 أشخاص",
-      "source": "أول منصة عربية متخصصة في أخبار الطاقة",
-      "link": "https://attaqa.net/2026/11/21/%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%B7%D8%A9-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%88%D8%AF%D9%8A-%D8%A8%D8%AD%D9%8A%D8%A7%D8%A9-4/",
+      "title": "이라크의 한 발전소에서 발생한 화재로 수십 명이 사망하거나 부상당했습니다.",
+      "source": "Vietnam.vn",
+      "link": "https://www.vietnam.vn/ko/chay-nha-may-dien-tai-iraq-khien-hang-chuc-nguoi-thuong-vong",
       "date": "2026-11-22T09:53:12.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 발전소 화재로 4명 사망",
-      "url": "https://attaqa.net/2026/11/21/%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%B7%D8%A9-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%88%D8%AF%D9%8A-%D8%A8%D8%AD%D9%8A%D8%A7%D8%A9-4/",
-      "body": "أودى حريق محطة كهرباء في العراق بحياة 4 أشخاص، وأصاب العشرات، إثر انفجار وقع في أنبوب الغاز المغذي لمحطة الهارثة الحرارية بمحافظة البصرة.\nوتسبب الحادث، وفق متابعات منصة الطاقة المتخصصة (مقرّها واشنطن)، في حالة استنفار داخل المؤسسات الصحية بالمحافظة، مع نقل المصابين إلى المستشفيات لتلقي العلاج، في ظل تفاوت حالاتهم بين الحروق والاختناق.\nوتزامن حادث حريق محطة كهرباء في العراق مع تحركات حكومية للتحقيق في أسبابه وتحديد المسؤوليات، إلى جانب توجيهات بسرعة التعامل مع الأضرار التي لحقت بالمحطة، ومراجعة إجراءات السلامة داخل المنشآت المرتبطة بإنتاج الكهرباء.\nوفي أعقاب الحادث، تحركت وزارتا الكهرباء والصحة ومحافظة البصرة لمتابعة تداعياته، وسط تأكيدات حكومية بتوفير الرعاية الطبية للمصابين وتعويض أسر الضحايا والمتضررين.\nبدأت تفاصيل الحادث، وفق بيان خلية الإعلام الأمني، في تمام الساعة 06:00 صباح اليوم السبت 21 نوفمبر/تشرين الثاني (2026)، عندما اندلع حريق داخل محطة كهرباء الهارثة الحرارية في قضاء الهارثة شمالي محافظة البصرة.",
-      "bodyKo": "이라크의 한 발전소에서 화재가 발생하여 4명이 사망하고 수십 명이 부상당했습니다. 이는 바스라 주에 위치한 알-하르사 화력발전소에 가스를 공급하는 파이프라인에서 폭발이 일어난 데 따른 것입니다.\n워싱턴에 본사를 둔 전문 에너지 플랫폼의 후속 조치에 따르면 이 사고로 인해 주 내 의료 기관이 비상 사태에 돌입했으며, 부상자들은 화상과 질식 등 다양한 상태로 치료를 받기 위해 병원으로 이송되었습니다.\n이라크 발전소 화재 사고는 정부의 원인 조사 및 책임 소재 규명 움직임과 맞물려 발전소 피해 신속 대응 지시, 발전 관련 시설 내 안전 조치 점검 등이 이뤄졌습니다.\n사고 이후 전기부와 보건부, 바스라 주 당국이 사고 여파를 파악하기 위해 나섰으며, 정부는 부상자에게 의료 서비스를 제공하고 피해자 유족과 피해자에게 보상을 제공하겠다고 약속했습니다.\n안보 정보실의 성명에 따르면, 사고의 세부 사항은 11월 21일 토요일(2026년) 오전 6시에 바스라 주 북부 하르사 지구의 하르사 화력발전소 내부에서 화재가 발생하면서 시작되었습니다.",
+      "lang": "ko",
+      "titleKo": "이라크의 한 발전소에서 발생한 화재로 수십 명이 사망하거나 부상당했습니다.",
+      "url": "https://www.vietnam.vn/ko/chay-nha-may-dien-tai-iraq-khien-hang-chuc-nguoi-thuong-vong",
+      "body": "VTV.vn - 이라크 남부의 한 발전소에서 발생한 화재로 최소 4명이 사망하고 35명이 부상당했습니다.\n0 11월 21일 오전 6시경(현지 시간), 하르타 발전소에 가스를 공급하는 가스관 사고로 화재가 발생했습니다. 화재는 진압되었지만, 발전소 가동은 일시적으로 중단되었습니다.\n현재 발전소 화재 원인이나 피해 규모에 대한 공식적인 정보는 없습니다. 초기 보고에 따르면 희생자 대부분은 인근 주택에 거주하던 주민들로, 화재가 확산되면서 화상이나 연기 흡입으로 피해를 입은 것으로 나타났습니다. 사망자 수는 더 늘어날 것으로 예상됩니다.",
+      "bodyKo": "VTV.vn - 이라크 남부의 한 발전소에서 발생한 화재로 최소 4명이 사망하고 35명이 부상당했습니다.\n0 11월 21일 오전 6시경(현지 시간), 하르타 발전소에 가스를 공급하는 가스관 사고로 화재가 발생했습니다. 화재는 진압되었지만, 발전소 가동은 일시적으로 중단되었습니다.\n현재 발전소 화재 원인이나 피해 규모에 대한 공식적인 정보는 없습니다. 초기 보고에 따르면 희생자 대부분은 인근 주택에 거주하던 주민들로, 화재가 확산되면서 화상이나 연기 흡입으로 피해를 입은 것으로 나타났습니다. 사망자 수는 더 늘어날 것으로 예상됩니다.",
       "tried": true,
-      "count": 15,
+      "count": 4,
       "sources": [
         "شبكة يافا الإخبارية",
-        "CNN",
-        "Qatar news agency",
-        "elmaser.com",
-        "المعلومة",
-        "NewsCord"
+        "أول منصة عربية متخصصة في أخبار الطاقة",
+        "Vietnam.vn",
+        "AzerNews"
       ],
       "related": [
         {
@@ -296,33 +644,23 @@
           "link": "https://yaffaps.com/ar/page-144326.html"
         },
         {
-          "titleKo": "이라크 발전소 폭발로 최소 4명 사망",
-          "source": "CNN",
-          "link": "https://www.cnn.com/2026/11/21/world/video/iraq-power-station-explosion-kills-at-least-four-vrtc"
+          "titleKo": "이라크 발전소 화재로 4명 사망",
+          "source": "أول منصة عربية متخصصة في أخبار الطاقة",
+          "link": "https://attaqa.net/2026/11/21/%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%B7%D8%A9-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%88%D8%AF%D9%8A-%D8%A8%D8%AD%D9%8A%D8%A7%D8%A9-4/"
         },
         {
-          "titleKo": "이라크 바스라의 발전소 화재로 2명 사망, 28명 부상",
-          "source": "Qatar news agency",
-          "link": "https://qna.org.qa/ar-QA/News-Area/News/2026-11/21/%D9%88%D9%81%D8%A7%D8%A9-%D8%B4%D8%AE%D8%B5%D9%8A%D9%86-%D9%88%D8%A7%D8%B5%D8%A7%D8%A8%D8%A9-28-%D8%A7%D8%AE%D8%B1%D9%8A%D9%86-%D9%81%D9%8A-%D8%AD%D8%B1%D9%8A%D9%82-%D9%85%D8%AD%D8%B7%D8%A9-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82"
-        },
-        {
-          "titleKo": "이라크: 바스라 발전소 화재로 39명 사망 및 부상",
-          "source": "elmaser.com",
-          "link": "https://elmaser.com/article/202680"
-        },
-        {
-          "titleKo": "한 의원이 석유부와 전력부를 바스라의 하르사 발전소 폭발 사고의 책임이 있다고 비난했습니다.",
-          "source": "المعلومة",
-          "link": "https://almaalomah.me/news/150815/politics/%D9%86%D8%A7%D8%A6%D8%A8-%D9%8A%D8%AD%D9%85%D9%84-%D9%88%D8%B2%D8%B1%D8%A7%D8%AA%D9%8A-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D9%88%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%85%D8%B3%D8%A4%D9%88%D9%84%D9%8A%D8%A9-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%85%D8%AD%D8%B7%D8%A9-%D8%A7%D9%84%D9%87%D8%A7%D8%B1%D8%AB%D8%A9"
+          "titleKo": "치명적인 화재로 이라크 알하르타 발전소 가동 중단",
+          "source": "AzerNews",
+          "link": "https://www.azernews.az/region/267855.html"
         }
       ],
-      "tag": "치안·테러",
+      "tag": "기타",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
         "act": "",
-        "place": "바스라",
-        "km": 422
+        "place": "",
+        "km": null
       }
     },
     {
@@ -376,28 +714,28 @@
       }
     },
     {
-      "title": "Iraq’s Al-Zaidi to visit Egypt Monday for talks on bilateral ties, regional issues: Reports",
-      "source": "Egypt Today",
-      "link": "https://www.egypttoday.com/Article/1/150717/Iraq%E2%80%99s-Al-Zaidi-to-visit-Egypt-Monday-for-talks-on",
-      "date": "2026-11-22T08:57:00.000Z",
-      "lang": "en",
-      "titleKo": "이라크의 알자이디 외무장관, 양국 관계 및 지역 현안 논의를 위해 월요일 이집트 방문 예정: 보도",
-      "url": "https://www.egypttoday.com/Article/1/150717/Iraq%E2%80%99s-Al-Zaidi-to-visit-Egypt-Monday-for-talks-on",
-      "body": "Iraqi Prime Minister Ali Al-Zaidi will visit Cairo on Monday at the invitation of President Abdel Fattah El-Sisi, leading a delegation for talks on strengthening bilateral relations and expanding cooperation, Iraqi media reported.\nCAIRO &ndash; 22 November 2026: Iraqi Prime Minister Ali Al-Zaidi will visit Cairo on Monday at the invitation of President Abdel Fattah El-Sisi, leading a delegation for talks on strengthening bilateral relations and expanding cooperation, Iraqi media reported.\nThe visit is expected to include meetings with senior Egyptian officials to discuss political, economic and security cooperation, as well as regional and international developments, and coordinate on shared Arab issues.\nThe visit comes amid growing Egyptian-Iraqi cooperation and coordination on regional developments, particularly amid the US-Iran war and its repercussions across the region.",
-      "bodyKo": "이라크 언론에 따르면, 알리 알자이디 이라크 총리가 압델 파타 엘시시 대통령의 초청으로 월요일 카이로를 방문하여 양국 관계 강화 및 협력 확대를 위한 회담을 이끌 예정이라고 한다.\n카이로 – 2026년 11월 22일: 이라크 언론에 따르면, 알리 알자이디 이라크 총리가 압델 파타 엘시시 대통령의 초청으로 월요일에 카이로를 방문하여 양국 관계 강화 및 협력 확대를 위한 회담을 이끌 대표단을 이끌 예정이라고 한다.\n이번 방문에는 정치, 경제, 안보 협력은 물론 지역 및 국제 정세에 대해 논의하고 공통의 아랍 문제에 대해 조율하기 위한 이집트 고위 관계자들과의 회담이 포함될 것으로 예상된다.\n이번 방문은 특히 미국-이란 전쟁과 그 여파가 지역 전역에 미치는 가운데, 지역 정세에 대한 이집트-이라크 간 협력과 공조가 강화되는 시기에 이루어졌습니다.",
+      "title": "وفد من بغداد في البصرة لمتابعة تحقيقات حادثة الهارثة",
+      "source": "الترا العراق",
+      "link": "https://ultrairaq.ultrasawt.com/%D9%88%D9%81%D8%AF-%D9%85%D9%86-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%AA%D8%AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D8%AD%D8%A7%D8%AF%D8%AB%D8%A9-%D8%A7%D9%84%D9%87%D8%A7%D8%B1%D8%AB%D8%A9/%D9%81%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1",
+      "date": "2026-11-22T08:28:43.000Z",
+      "lang": "ar",
+      "titleKo": "알하르사 사건 수사를 지켜보기 위해 바그다드에서 온 대표단이 바스라에 도착했습니다.",
+      "url": "https://ultrairaq.ultrasawt.com/%D9%88%D9%81%D8%AF-%D9%85%D9%86-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%AA%D8%AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D8%AD%D8%A7%D8%AF%D8%AB%D8%A9-%D8%A7%D9%84%D9%87%D8%A7%D8%B1%D8%AB%D8%A9/%D9%81%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1",
+      "body": "أضفنا إلى غوغل ع ع وصل وفد فني برئاسة مدير عام الدفاع المدني إلى البصرة، لمتابعة التحقيقات في حادثة حريق وانفجار محطة كهرباء الهارثة، والذي خلف قتلى وجرحى بالعشرات.\nوذكر بيان لمديرية الدفاع المدني، أنّ \"مدير عام الدفاع المدني، اللواء الحقوقي محسن كاظم علك، وصل إلى محافظة البصرة، للاطلاع المباشر على حيثيات حادث انفجار أنبوب الغاز المغذي لمحطة الهارثة الكهربائية شمالي المحافظة، والإشراف الميداني على استكمال الإجراءات القانونية والفنية الهادفة إلى إجراء التحليل الجنائي الفني للحادث وتحديد مسبباته بدقة\".\nوبحسب البيان، تتضمن إجراءات الكشف الفني والعلمي متابعة تتبع مسار التسرب، وفحص الإجهادات الميكانيكية والتآكل المعدني للأنبوب، وتقييم مستويات الضغط التشغيلي ونقطة الوميض ومصادر الاشتعال المحتملة، وذلك بالاستناد إلى الأدلة المادية في مسرح الحادث لضمان الوصول إلى نتائج علمية دقيقة.\n​كما تضمنت الجولة تقييم كفاءة الاستجابة الميدانية وخطط الاحتواء والعزل الحراري التي نفذتها فرق الدفاع المدني في التعامل مع حرائق الغاز عالية الخطورة والسيطرة عليها، مؤكدًا على \"مواصلة الجهود لتعزيز منظومات الإنذار ا",
+      "bodyKo": "구글에 추가했습니다. 민방위청장이 이끄는 기술 대표단이 하르사 발전소 화재 및 폭발 사고 수사를 위해 바스라에 도착했습니다. 이 사고로 수십 명의 사상자가 발생했습니다.\n민방위국 성명은 \"민방위국 국장인 모센 카짐 알락 법무 소장이 주 북부의 하르사 발전소를 공급하는 가스관 폭발 사고의 상황을 직접 파악하고, 사고에 대한 기술적 법의학 분석을 실시하고 그 원인을 정확히 파악하기 위한 법적·기술적 조치의 완료를 현장에서 감독하기 위해 바스라 주에 도착했다\"고 밝혔다.\n성명에 따르면 기술 및 과학적 조사 절차에는 정확한 과학적 결과 도출을 보장하기 위해 현장의 물리적 증거를 바탕으로 누출 경로 추적, 파이프의 기계적 응력 및 금속 부식 검사, 작동 압력 수준, 인화점 및 잠재적 점화원 평가가 포함됩니다.\n​또한 이번 방문에서는 고위험 가스 화재에 대응하고 통제하기 위해 소방서 팀이 시행한 현장 대응 및 진압 계획의 효율성을 평가하는 내용도 포함되었으며, \"화재 경보 시스템을 강화하기 위한 지속적인 노력\"을 강조했습니다.",
       "tried": true,
       "count": 1,
       "sources": [
-        "Egypt Today"
+        "الترا العراق"
       ],
       "related": [],
-      "tag": "치안·테러",
+      "tag": "기타",
       "impact": {
         "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "line": "현장 직접 영향 낮음",
         "act": "",
-        "place": "",
-        "km": null
+        "place": "바그다드",
+        "km": 27
       }
     },
     {
@@ -411,24 +749,11 @@
       "body": "Iraqi Prime Minister Ali al-Zaidi on Saturday ordered an urgent investigation after a gas pipeline supplying the al-Hartha thermal power station exploded in southern Iraq’s Basra province. Two people",
       "bodyKo": "이라크의 알리 알자이디 총리는 이라크 남부 바스라주에 있는 알하르타 화력발전소에 가스를 공급하는 가스 파이프라인이 폭발한 사건과 관련해 지난 11일 긴급 수사를 명령했습니다.",
       "tried": true,
-      "count": 3,
+      "count": 1,
       "sources": [
-        "الترا العراق",
-        "N E W S",
         "Rudaw"
       ],
-      "related": [
-        {
-          "titleKo": "알하르사 사건 수사를 지켜보기 위해 바그다드에서 온 대표단이 바스라에 도착했습니다.",
-          "source": "الترا العراق",
-          "link": "https://ultrairaq.ultrasawt.com/%D9%88%D9%81%D8%AF-%D9%85%D9%86-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%AA%D8%AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D8%AD%D8%A7%D8%AF%D8%AB%D8%A9-%D8%A7%D9%84%D9%87%D8%A7%D8%B1%D8%AB%D8%A9/%D9%81%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1"
-        },
-        {
-          "titleKo": "이코노미 뉴스 통신사 - 의회 대표단이 가스 파이프라인 폭발 사건을 조사하기 위해 바스라의 하르사 역에 도착",
-          "source": "N E W S",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA3TFJBdVdtNHVyQ0VpYllqSFA0NnQxeGVBZm9wMkNXallCcnFfRDJhOWt0QUFOZ3c3OW9pVnlKZTFNVDlQaGx6QlFoaUFoYjM3MFlVNEdqOTFTSWdDeVE?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "치안·테러",
       "impact": {
         "lv": "g",
@@ -441,10 +766,14 @@
     {
       "title": "سعر الدولار مقابل الدينار العراقي في العراق اليوم الأحد 22/11/2026.. هبوط السوق غير الرسمي",
       "source": "أخبار العالم اليوم",
-      "link": "https://news.google.com/rss/articles/CBMipAVBVV95cUxQUlVGcGg5cklkTGJyMk44OTdVNkFoNHVoQ0l4akFKVlJndnFsTUw0QmdGaEgwNURaRmdXS01Tb0pUY3NwRlM3VHFTOEVhQUdCMlJFemdWZUVNWDhsYjVpeElyQ1VPRkRpMnZBdWtkS2pfaFFzY29RUXVrVE9VUVJ2b0o2dmxERXFFRVd2OVJKNEdvOEd4YTlUbGFYV09KRnd6dVAyUEpRZGw5NFVsZWVYNm1vdlhyLXEzdERFLUVMOHo0WlNJcnpvbnljMDV2MDJMVzJobWJXaFRMRWhBaUFzZExmSlhNMmJvbzdCcHlVTnlOWC1tWVlULVlUcnFQUl90UFBZMTIwdV9pRlEzVXZzUzBsNWJSdENzT0JBdW84aC1iZVhfdUVHY1ExN1BGNUZyRnZBd2djaWY2NmJiaE5TOHFGZGNQdHVYc2g3emhSMDEzaXQ3bHBtV2lGLXcyT2xVbzM0RXIzWVkwR2J2UDNyd3RwVENZdkVXc2pNaGc0dXF4TDFuT1NTdUdfWjJNQWNHbUZLcVBmY0JHald6eHVnMklqODBPTFA0LTV2TERRcE5wSkN0TzlDejdTUWhmeUlNZkozZUVFckNIR0lucldjblBHeFFieXV1ODJVeDNSSUhoczFXaUUxMTNwT1F0amQwNWJWOUZXc096eENadjR0eHpnV1JDMWZlWU9Dc18yQm9PeWs2M2wxanhKaGZjV2d5RWZ1U3E2Yzk0Sjd1UUQyZXM1Zlh2aE9aMW12YWcyZEF5STdWLThGY2NrR2tzbktTcXJRUnlaT2RCU29HRVFSaFBaZlhVOHVlamVYWTNtdGFLYldxVnR3MHZEZmo5TDRpVU9abVU0WWYwZDlFeHdiNTE4aHlEMlFaaXVzOFZ2TnY5RjVC0gGqBUFVX3lxTE9CdlFSbmFDUTRMaFkxNW0wUWp4NjB3a09IeDNkYjd2bTNLUTA4b2NpYjAxenR0cEloNmNxRHNGaUNlZTBmelhlakhMel9rSDFTSzNMUUpNcXBpc01zUmN5YjkyQlRlSGNWUkFXMUFTY1ZxSTM3UkNsQjdhZnc0Y3RyX1FiVTVrbjA3Wmw0Sk5uMzdxUzk2eUVyN1h2czRVOURxbGczMDZGTUlFbjItY25adXFIY0N5OVhuR0hJSDJFN0puV1daZGh3SlBFeS1ob1RqMFFsRUZNOWRVY3Vwem5NYU1XRHFoX3hWVGM0elJPLXh5QVUya214NnpMMzUzUUdyU1p6bm5JQ2lZTXpJbGxsTS1IamdObGFQYzZac3ZoUjd1TUtpV0w2NmRqNVBXcDVpMm9rQ2pjY0FwakpQSjdSd2RFOVdyT2xGSkhYTFpoZFZSSm5TOFBDWm94Mm9ld1FKRlFrd01FdU41OHZIeUNnV2hRS1BHaGpNeklXaFZraHZNdU1tZVI0QURoTVk1aWFza1AxSUY5Z1E5TF95blBBeUJQWWpKMFFQX3FWTFZJTm00a04xbmU4dmtyb3VLdW9xN3dQWTlFQUxZSERjdGlueXEzX1E4b0ZDdGo0WktmX3d4TzdFa2hRUjdwaXcxMHVqa3ZHR0x5ZnFZLUYzSUR4NXRiMThMbzRwV3hibXc5bFlEclFjMXR1bGRIeUg3eGV0ZzNuVi1VbXFJU2JmRjU0NnRpc3V1d3FpZ1ItS293cWlIQUZMY25pZzdUWk9aSndqdHJONzl2Sjhmc0ZqVS1KRnctdHZpcUx6QW1xbHdSM19qU3hJaTcyVlowa3FmbU5tVXVVS1ZfbzNQeGhrbHBCd0t1ajNOenJHaGZHUHRiVEdGSHdRd2VOWmc?oc=5",
+      "link": "https://www.almashhad.com/article/174515324408726-economy/931952149975687-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF-22112026-%D9%87%D8%A8%D9%88%D8%B7-%D8%A7%D9%84%D8%B3%D9%88%D9%82-%D8%BA%D9%8A%D8%B1-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A/",
       "date": "2026-11-22T08:19:53.000Z",
       "lang": "ar",
       "titleKo": "오늘 2026년 11월 22일 일요일 이라크에서 이라크 디나르 대비 달러 환율.. 비공식 시장 하락",
+      "url": "https://www.almashhad.com/article/174515324408726-economy/931952149975687-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF-22112026-%D9%87%D8%A8%D9%88%D8%B7-%D8%A7%D9%84%D8%B3%D9%88%D9%82-%D8%BA%D9%8A%D8%B1-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A/",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
       "count": 1,
       "sources": [
         "أخبار العالم اليوم"
@@ -460,28 +789,21 @@
       }
     },
     {
-      "title": "US dollar steadies near 170,000 dinars across Baghdad, Erbil, and Basra",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/us-dollar-exchange-rate-steadies-170000-baghdad-erbil-basra-november-21-2026/",
+      "title": "Dollar stabilizes in Baghdad, rises in Erbil",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Economy/Dollar-stabilizes-in-Baghdad-rises-in-Erbil-7-0",
       "date": "2026-11-22T08:06:08.000Z",
       "lang": "en",
-      "titleKo": "미국 달러화, 바그다드, 에르빌, 바스라 전역에서 170,000디나르 부근에서 안정세",
-      "url": "https://www.iraqinews.com/iraq/us-dollar-exchange-rate-steadies-170000-baghdad-erbil-basra-november-21-2026/",
-      "body": "US dollar steadies near 170,000 dinars across Baghdad, Erbil, and Basra\nPacks of US dollars and Iraqi dinars. Photo: Pukmedia\nBaghdad (IraqqiNews.com) – The exchange rate of the U.S. dollar against the Iraqi dinar edged slightly lower across major domestic parallel markets on Saturday morning, November 21, 2026, hovering right at the 170,000-dinar threshold for retail sales while buying bids settled below that mark across key commercial hubs.\nIn Baghdad, currency exchange counters posted retail selling rates at 170,000 IQD against buying offers of 169,500 IQD per $100.\nIn Erbil, currency desks quoted retail selling rates slightly higher at 170,050 IQD alongside purchasing bids holding at 170,000 IQD per $100.\nIn Basra, foreign exchange offices matched Baghdad’s selling quote at 170,000 IQD, with buying offers dipping to 169,250 IQD per $100.",
-      "bodyKo": "미국 달러화, 바그다드, 에르빌, 바스라 전역에서 170,000디나르 부근에서 안정세\n미 달러화와 이라크 디나르 뭉치. 사진: Pukmedia\n바그다드(IraqqiNews.com) – 2026년 11월 21일 토요일 아침, 주요 국내 병행 시장에서 미국 달러 대비 이라크 디나르 환율이 소폭 하락하며 소매 판매 기준 170,000디나르 선에 머물렀고, 주요 상업 중심지에서는 매수 호가가 이 선을 밑돌았다.\n바그다드의 환전소는 미화 100달러당 169,500이라키 딘(IQD)의 매수 호가에 대해 170,000이라키 딘(IQD)의 소매 매도가를 게시했습니다.\n에르빌의 환전소에서는 소매 판매 환율이 100달러당 170,050 이라크 디나르로 약간 높게 책정되었으며, 매수 호가는 100달러당 170,000 이라크 디나르로 유지되었습니다.\n바스라의 외환 거래소에서는 바그다드의 매도 호가와 동일한 170,000 이라크 디나르에 거래되었으며, 매수 호가는 100달러당 169,250 이라크 디나르로 하락했습니다.",
+      "titleKo": "바그다드에서 달러화 안정, 에르빌에서 상승",
+      "url": "https://shafaq.com/en/Economy/Dollar-stabilizes-in-Baghdad-rises-in-Erbil-7-0",
+      "body": "Shafaq News- Baghdad/ Erbil The US dollar opened Sunday&rsquo;s trading mixed in Iraq, hovering around 170,000 dinars per 100 dollars. According to a Shafaq News market survey, the dollar traded\nIn the Iraqi capital, exchange shops sold the dollar at 170,500 dinars and bought it at 169,500 dinars, while in Erbil, selling prices stood at 170,200 dinars and buying prices at 170,100 dinars.",
+      "bodyKo": "샤팍 뉴스 - 바그다드/에르빌 미국 달러는 일요일 이라크에서 혼조세를 보이며 100달러당 약 17만 디나르 수준에서 거래를 시작했다. 샤팍 뉴스 시장 조사에 따르면, 달러 환율은 다음과 같이 거래되었다.\n이라크 수도에서는 환전소가 달러를 170,500디나르에 매도하고 169,500디나르에 매수했으며, 에르빌에서는 매도 가격이 170,200디나르, 매수 가격이 170,100디나르였다.",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "شفق نيوز",
-        "IraqiNews"
+        "شفق نيوز"
       ],
-      "related": [
-        {
-          "titleKo": "바그다드에서 달러화 안정, 에르빌에서 상승",
-          "source": "شفق نيوز",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOV3NBcXFLcTVtT0xUejRja1pLSFVhTm5UYkhzUlllcmtrRHFyc200Y1V0bzZ3YjhTUjNxbXc3TDRBc2s4Q19uemxDQnEtTUhRQmFodTBLdDlNWmJWUjZLYmxIY3ZrYmpaUXhDMXQ4aC1ZdUdmdGpoTWpnVm1Vb1dUc0pVRQ?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "경제·유가",
       "impact": {
         "lv": "g",
@@ -489,27 +811,6 @@
         "act": "",
         "place": "바그다드",
         "km": 27
-      }
-    },
-    {
-      "title": "Where do Iraq's oil smuggling problems originate, and how are they working to stop them?",
-      "source": "The Jerusalem Post",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBBX0JZcXVsVXdTZnFGNmhxMnVUNi1ZcTUyLXdIaGYtUVQzSjBkOGk1TmJpbmVIQ1ktTkNrcXliZEoyN3h0aGRhLTFBU0dIYUEtUWQ2ZnNCV1YyaEhUdzI0cWFGRkNPaXg0YUE?oc=5",
-      "date": "2026-11-22T07:59:21.000Z",
-      "lang": "en",
-      "titleKo": "이라크의 석유 밀수 문제는 어디에서 비롯되었으며, 이를 해결하기 위해 어떤 노력을 기울이고 있습니까?",
-      "count": 1,
-      "sources": [
-        "The Jerusalem Post"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
       }
     },
     {
@@ -597,31 +898,6 @@
       }
     },
     {
-      "title": "이라크의 한 발전소에서 발생한 화재로 수십 명이 사망하거나 부상당했습니다.",
-      "source": "Vietnam.vn",
-      "link": "https://www.vietnam.vn/ko/chay-nha-may-dien-tai-iraq-khien-hang-chuc-nguoi-thuong-vong",
-      "date": "2026-11-22T05:26:47.000Z",
-      "lang": "ko",
-      "titleKo": "이라크의 한 발전소에서 발생한 화재로 수십 명이 사망하거나 부상당했습니다.",
-      "url": "https://www.vietnam.vn/ko/chay-nha-may-dien-tai-iraq-khien-hang-chuc-nguoi-thuong-vong",
-      "body": "VTV.vn - 이라크 남부의 한 발전소에서 발생한 화재로 최소 4명이 사망하고 35명이 부상당했습니다.\n0 11월 21일 오전 6시경(현지 시간), 하르타 발전소에 가스를 공급하는 가스관 사고로 화재가 발생했습니다. 화재는 진압되었지만, 발전소 가동은 일시적으로 중단되었습니다.\n현재 발전소 화재 원인이나 피해 규모에 대한 공식적인 정보는 없습니다. 초기 보고에 따르면 희생자 대부분은 인근 주택에 거주하던 주민들로, 화재가 확산되면서 화상이나 연기 흡입으로 피해를 입은 것으로 나타났습니다. 사망자 수는 더 늘어날 것으로 예상됩니다.",
-      "bodyKo": "VTV.vn - 이라크 남부의 한 발전소에서 발생한 화재로 최소 4명이 사망하고 35명이 부상당했습니다.\n0 11월 21일 오전 6시경(현지 시간), 하르타 발전소에 가스를 공급하는 가스관 사고로 화재가 발생했습니다. 화재는 진압되었지만, 발전소 가동은 일시적으로 중단되었습니다.\n현재 발전소 화재 원인이나 피해 규모에 대한 공식적인 정보는 없습니다. 초기 보고에 따르면 희생자 대부분은 인근 주택에 거주하던 주민들로, 화재가 확산되면서 화상이나 연기 흡입으로 피해를 입은 것으로 나타났습니다. 사망자 수는 더 늘어날 것으로 예상됩니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Vietnam.vn"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "이라크박물관 12월 1일 재개관…한국인은 갈 수 없다",
       "source": "www.famtimes.co.kr",
       "link": "https://www.famtimes.co.kr/news/articleView.html?idxno=705371",
@@ -647,56 +923,6 @@
       }
     },
     {
-      "title": "عشرات القتلى والجرحى بانفجار أنبوب غازي في البصرة",
-      "source": "الشرق الأوسط",
-      "link": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5344023-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%82%D8%AA%D9%84%D9%89-%D9%88%D8%A7%D9%84%D8%AC%D8%B1%D8%AD%D9%89-%D8%A8%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%A3%D9%86%D8%A8%D9%88%D8%A8-%D8%BA%D8%A7%D8%B2%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9",
-      "date": "2026-11-21T21:40:57.000Z",
-      "lang": "ar",
-      "titleKo": "바스라에서 가스관 폭발로 수십 명 사망 및 부상",
-      "url": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5344023-%D8%B9%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%82%D8%AA%D9%84%D9%89-%D9%88%D8%A7%D9%84%D8%AC%D8%B1%D8%AD%D9%89-%D8%A8%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%A3%D9%86%D8%A8%D9%88%D8%A8-%D8%BA%D8%A7%D8%B2%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9",
-      "body": "استيقظ سكان محافظة البصرة الجنوبية الغنية بالنفط، فجر السبت، على صوت انفجار شديد في أنبوب ناقل للغاز إلى محطة الهارثة الكهربائية.\nاستيقظ سكان محافظة البصرة، الغنية بالنفط والواقعة جنوب العراق، فجر السبت، على صوت انفجار شديد في أنبوب لنقل الغاز إلى محطة الهارثة الكهربائية التي تقع شمال المحافظة.\nوأسفر الحادث عن مصرع وإصابة العشرات، إلى جانب تدمير عدد من المنازل المتجاوزة على خط الأنبوب، كما توقف العمل في المحطة التي تنتج 400 ميغاواط من الكهرباء رغم أن سعتها الإنتاجية تبلغ نحو 800 ميغاواط.\nوهرعت فرق الدفاع المدني والأدلة الجنائية والشرطة والأسعاف إلى موقع الانفجار لإخماد الحريق والتحقيق ومعرفة أسباب الانفجار.\nوأظهرت صورة متداولة أضراراً شديدة في أنبوب الغاز إلى جانب تضرر الكثير من المنازل والممتلكات القريبة. وحسب وزارة الداخلية، فإن حجم الخسائر يعود إلى تكدس مساكن المدنيين في حرم الأنبوب.\nوقالت الوزارة في بيان صحافي إن غالبية الضحايا والمصابين من سكان المنازل غير النظامية (المتجاوزة) التي بُنيت على مسافة قريبة جداً من مسار أنبوب نقل الغاز ومنظومة المحطة الحرارية.",
-      "bodyKo": "석유가 풍부한 남부 바스라 주 주민들은 토요일 새벽, 하르사 발전소로 가스를 공급하는 파이프라인에서 발생한 강력한 폭발음으로 잠에서 깨어났습니다.\n이라크 남부의 석유가 풍부한 바스라 주 주민들은 토요일 새벽, 주 북부에 위치한 하르타 발전소로 가스를 공급하는 파이프라인에서 발생한 강력한 폭발음으로 잠에서 깨어났습니다.\n이 사고로 수십 명이 사망하고 부상을 입었으며 파이프라인을 침범한 여러 가옥이 파괴되었고, 발전 용량이 약 800MW임에도 불구하고 400MW의 전력을 생산하는 발전소의 가동이 중단되었습니다.\n민방위, 과학수사, 경찰, 구급대원들이 폭발 현장으로 달려가 화재를 진압하고 폭발 원인을 조사했습니다.\n유포된 사진에는 가스 파이프라인이 심하게 손상된 모습과 함께 인근의 많은 주택과 재산이 피해를 입은 모습이 담겨 있었다. 내무부에 따르면 피해 규모는 파이프라인 주변에 민간인 주택이 밀집되어 있기 때문이라고 한다.\n부처는 보도자료를 통해 사망자와 부상자 대부분이 가스관과 화력발전소 시스템에서 매우 가까운 거리에 지어진 불법(무단) 주택 거주자라고 밝혔습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "الشرق الأوسط"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "먼 지역 치안 사건 (바스라) — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "바스라",
-        "km": 422
-      }
-    },
-    {
-      "title": "Masrour Barzani: No One Can Divide Kurdistan",
-      "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/en/story/954621/masrour-barzani-no-one-can-divide-kurdistan",
-      "date": "2026-11-21T20:53:48.000Z",
-      "lang": "en",
-      "titleKo": "마수르 바르자니: 누구도 쿠르디스탄을 분열시킬 수 없다",
-      "url": "https://www.kurdistan24.net/en/story/954621/masrour-barzani-no-one-can-divide-kurdistan",
-      "body": "Kurdistan Region Prime Minister defends parliament’s reactivation, calls on political parties to respect election results, and says the door remains open for renewed negotiations\nERBIL (Kurdistan24) &mdash; Kurdistan Region Prime Minister Masrour Barzani has said that no one has the right or power to divide the Kurdistan Region, reaffirming his government&rsquo;s commitment to protecting the Region&rsquo;s achievements and democratic institutions amid political disagreements between the Kurdistan Democratic Party (KDP) and the Patriotic Union of Kurdistan (PUK).\nIn an interview with Shams TV on Saturday, Barzani said the Region&rsquo;s development was the result of decades of struggle and sacrifice by its people, the Peshmerga, and the families of those killed in the struggle for Kurdish rights. He said protecting those achievements was now among the most important responsibilities facing the Region.",
-      "bodyKo": "쿠르드 자치정부 총리, 의회 재가동을 옹호하고 정당들에게 선거 결과를 존중할 것을 촉구하며, 재협상을 위한 문은 열려 있다고 밝힘\n에르빌(쿠르디스탄24) — 쿠르디스탄 지역 총리 마수르 바르자니는 쿠르드스탄 민주당(KDP)과 쿠르디스탄 애국연합(PUK) 간의 정치적 이견이 있는 가운데, 쿠르디스탄 지역을 분열시킬 권리나 권한이 있는 사람은 아무도 없으며, 쿠르디스탄 지역의 성과와 민주적 제도를 보호하겠다는 정부의 의지를 재확인한다고 밝혔다.\n바르자니 대통령은 지난 11일 샴스TV와의 인터뷰에서 쿠르드 자치지역의 발전은 쿠르드인, 페슈메르가, 그리고 쿠르드인의 권리를 위한 투쟁에서 목숨을 잃은 이들의 가족이 수십 년 동안 투쟁하고 희생한 결과라고 말했다. 그는 이러한 성과를 보호하는 것이 현재 이 지역이 직면한 가장 중요한 책임 중 하나라고 말했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Kurdistan24"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "에르빌",
-        "km": 338
-      }
-    },
-    {
       "title": "Analysis • Iraq's Trump-backed leader challenges Iran, but Tehran's proxies persevere",
       "source": "Haaretz",
       "link": "https://www.haaretz.com/middle-east-news/2026-11-21/ty-article/.premium/iraqs-trump-backed-leader-challenges-iran-but-tehrans-proxies-persevere/000001a1-ff51-da78-a9f9-ff513dc30000",
@@ -713,38 +939,6 @@
       ],
       "related": [],
       "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq’s government and Kataib Hezbollah agree on a middle ground",
-      "source": "Tehran Times",
-      "link": "https://www.tehrantimes.com/news/532383/Iraq-s-government-and-Kataib-Hezbollah-agree-on-middle-ground",
-      "date": "2026-11-21T20:31:30.000Z",
-      "lang": "en",
-      "titleKo": "이라크 정부와 카타이브 헤즈볼라, 절충안에 합의",
-      "url": "https://www.tehrantimes.com/news/532383/Iraq-s-government-and-Kataib-Hezbollah-agree-on-middle-ground",
-      "body": "TEHRAN – The Iraqi government has backed down from threats to deploy the army and forcibly remove Kataib Hezbollah members from a town near Baghdad.\nThe agreement reached between the two sides is essentially a phased redeployment arrangement by Kataib Hezbollah in the town of Jurf al-Nasr, rather than a complete withdrawal or disarmament.\nAccording to the arrangement, the deployed government forces include an Iraqi army unit, federal police, energy police, and two Popular Mobilization Brigades: the 72nd and 79th Brigades. The entrance of the forces was described as very smooth.\nA new joint command headquarters has been established and is under the control of the federal police.\nIraqi Army Chief of Staff Abdul Amir Rashid Yarallah personally visited the area to oversee the redeployment of military units and the transfer of security responsibilities.",
-      "bodyKo": "테헤란 – 이라크 정부가 바그다드 인근 마을에서 카타이브 헤즈볼라 대원들을 강제로 축출하기 위해 군대를 배치하겠다는 위협을 철회했다.\n양측이 도달한 합의는 근본적으로 카타이브 헤즈볼라가 주르프 알나스르 마을에서 완전한 철수나 해체를 하는 것이 아니라 단계적으로 재배치하는 내용의 합의이다.\n합의에 따라, 배치된 정부군에는 이라크 육군 부대, 연방 경찰, 에너지 경찰, 그리고 2개의 인민동원군 여단(제72여단 및 제79여단)이 포함된다. 군대의 진입은 매우 순조로웠다고 전해진다.\n새로운 합동사령부 본부가 설립되었으며 연방경찰의 통제하에 있습니다.\n압둘 아미르 라시드 야랄라 이라크 육군 참모총장은 군부대 재배치 및 치안 책임 이양을 감독하기 위해 해당 지역을 직접 방문했다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "The Jerusalem Post",
-        "Tehran Times"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크군, 카타이브 헤즈볼라의 주요 거점 검문소 장악",
-          "source": "The Jerusalem Post",
-          "link": "https://www.jpost.com/middle-east/article-915654"
-        }
-      ],
-      "tag": "정치·선거",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -833,6 +1027,31 @@
         "act": "",
         "place": "바그다드",
         "km": 27
+      }
+    },
+    {
+      "title": "Masrour Barzani: No One Can Divide Kurdistan",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/954621/masrour-barzani-no-one-can-divide-kurdistan",
+      "date": "2026-11-21T18:48:37.000Z",
+      "lang": "en",
+      "titleKo": "마수르 바르자니: 누구도 쿠르디스탄을 분열시킬 수 없다",
+      "url": "https://www.kurdistan24.net/en/story/954621/masrour-barzani-no-one-can-divide-kurdistan",
+      "body": "Kurdistan Region Prime Minister defends parliament’s reactivation, calls on political parties to respect election results, and says the door remains open for renewed negotiations\nERBIL (Kurdistan24) &mdash; Kurdistan Region Prime Minister Masrour Barzani has said that no one has the right or power to divide the Kurdistan Region, reaffirming his government&rsquo;s commitment to protecting the Region&rsquo;s achievements and democratic institutions amid political disagreements between the Kurdistan Democratic Party (KDP) and the Patriotic Union of Kurdistan (PUK).\nIn an interview with Shams TV on Saturday, Barzani said the Region&rsquo;s development was the result of decades of struggle and sacrifice by its people, the Peshmerga, and the families of those killed in the struggle for Kurdish rights. He said protecting those achievements was now among the most important responsibilities facing the Region.",
+      "bodyKo": "쿠르드 자치정부 총리, 의회 재가동을 옹호하고 정당들에게 선거 결과를 존중할 것을 촉구하며, 재협상을 위한 문은 열려 있다고 밝힘\n에르빌(쿠르디스탄24) — 쿠르디스탄 지역 총리 마수르 바르자니는 쿠르드스탄 민주당(KDP)과 쿠르디스탄 애국연합(PUK) 간의 정치적 이견이 있는 가운데, 쿠르디스탄 지역을 분열시킬 권리나 권한이 있는 사람은 아무도 없으며, 쿠르디스탄 지역의 성과와 민주적 제도를 보호하겠다는 정부의 의지를 재확인한다고 밝혔다.\n바르자니 대통령은 지난 11일 샴스TV와의 인터뷰에서 쿠르드 자치지역의 발전은 쿠르드인, 페슈메르가, 그리고 쿠르드인의 권리를 위한 투쟁에서 목숨을 잃은 이들의 가족이 수십 년 동안 투쟁하고 희생한 결과라고 말했다. 그는 이러한 성과를 보호하는 것이 현재 이 지역이 직면한 가장 중요한 책임 중 하나라고 말했다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "에르빌",
+        "km": 338
       }
     },
     {
@@ -1007,31 +1226,6 @@
       }
     },
     {
-      "title": "Deadly fire shuts down Iraq's Al-Hartha power plant",
-      "source": "AzerNews",
-      "link": "https://www.azernews.az/region/267855.html",
-      "date": "2026-11-21T13:31:00.000Z",
-      "lang": "en",
-      "titleKo": "치명적인 화재로 이라크 알하르타 발전소 가동 중단",
-      "url": "https://www.azernews.az/region/267855.html",
-      "body": "A major fire at the Al-Hartha power plant in southern Iraq has killed four people and injured 35 others.\nAccording to the media centre of Iraq's security forces, most of the casualties were residents of homes near the power station. They suffered mainly burn injuries or smoke inhalation.\nFirefighters brought the blaze under control. However, the fire reportedly spread to nearby residential buildings, while the power plant was forced to suspend operations completely.\nIraq's Ministry of Electricity suspects that the incident was caused by a malfunction in the gas pipeline supplying fuel to the power station.\nHere we are to serve you with news right now. It does not cost much, but worth your attention.\nBy subscribing to our online newspaper, you can have full digital access to all news, analysis, and much more.",
-      "bodyKo": "이라크 남부의 알하르타 발전소에서 발생한 대형 화재로 4명이 사망하고 35명이 부상을 입었습니다.\n이라크 보안군의 미디어 센터에 따르면, 사상자 대부분은 발전소 인근 주택의 주민들이었습니다. 이들은 주로 화상이나 연기 흡입으로 인한 부상을 입었습니다.\n소방관들이 화재를 진압했습니다. 그러나 화재가 인근 주거 건물로 번졌으며, 발전소는 가동을 완전히 중단해야 했다고 합니다.\n이라크 전력부는 이번 사고가 발전소에 연료를 공급하는 가스 파이프라인의 오작동으로 인해 발생한 것으로 의심하고 있습니다.\n지금 바로 소식을 전해드리겠습니다. 비용은 많이 들지 않지만, 관심을 가질 만한 가치가 있습니다.\n온라인 신문을 구독하시면 모든 뉴스, 분석 기사 등을 디지털로 모두 이용하실 수 있습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "AzerNews"
-      ],
-      "related": [],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "Iraq doesn’t rule out arresting politicians in Jurf al-Sakhar oil probe",
       "source": "964media",
       "link": "https://en.964media.com/56231/",
@@ -1132,31 +1326,6 @@
       }
     },
     {
-      "title": "Iraq - U.S. withdrawal and the rise of the Islamic State in Iraq and the Levant (ISIL)",
-      "source": "Britannica",
-      "link": "https://www.britannica.com/place/Iraq/U-S-withdrawal-and-the-rise-of-the-Islamic-State-in-Iraq-and-the-Levant-ISIL",
-      "date": "2026-11-21T11:31:15.000Z",
-      "lang": "en",
-      "titleKo": "이라크",
-      "count": 1,
-      "sources": [
-        "Britannica"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      },
-      "url": "https://www.britannica.com/place/Iraq/U-S-withdrawal-and-the-rise-of-the-Islamic-State-in-Iraq-and-the-Levant-ISIL",
-      "body": "",
-      "bodyKo": "",
-      "tried": true
-    },
-    {
       "title": "نائبة تحذر من مخاطر أنابيب الغاز تحت مدرستين في البصرة",
       "source": "وكالة بغداد اليوم الاخبارية",
       "link": "https://baghdadtoday.news/307447-.html",
@@ -1204,31 +1373,6 @@
         "act": "",
         "place": "",
         "km": null
-      }
-    },
-    {
-      "title": "Japanese cyclist killed in highway collision in southern Iraq’s Muthanna Governorate",
-      "source": "IraqiNews",
-      "link": "https://www.iraqinews.com/iraq/japanese-cyclist-killed-highway-collision-rumaitha-samawah-muthanna-november-2026/",
-      "date": "2026-11-21T10:16:57.000Z",
-      "lang": "en",
-      "titleKo": "이라크 남부 무사나 주 고속도로에서 충돌 사고로 일본인 자전거 여행자 사망",
-      "url": "https://www.iraqinews.com/iraq/japanese-cyclist-killed-highway-collision-rumaitha-samawah-muthanna-november-2026/",
-      "body": "Japanese cyclist killed in highway collision in southern Iraq’s Muthanna Governorate\nSamawah (IraqiNews.com) – A Japanese bicycle traveler died on Friday, November 20, 2026, following a traffic collision along the Rumaitha–Samawah highway in southern Iraq’s Muthanna Governorate.\nAccording to a security source, the tourist was riding a bicycle along the highway when he collided with a Dodge Charger sedan.\nThe impact proved fatal for the cyclist and also injured a passenger riding inside the vehicle, identified as a security officer.\nTraffic police and forensic investigators conducted an on-site inspection of the crash scene following the incident. Based on their preliminary field assessment, authorities determined that the Japanese cyclist was at fault for the collision.",
-      "bodyKo": "이라크 남부 무사나 주 고속도로에서 충돌 사고로 일본인 자전거 여행자 사망\n사마와(IraqiNews.com) – 2026년 11월 20일 금요일, 이라크 남부 무사나 주 루마이타-사마와 고속도로에서 교통사고가 발생해 일본인 자전거 여행자가 사망했다.\n한 보안 관계자에 따르면, 이 관광객은 고속도로를 따라 자전거를 타고 가다가 닷지 차저 세단과 충돌했습니다.\n이 충돌로 인해 자전거 운전자는 사망했고, 차량에 타고 있던 승객(보안 요원으로 확인됨)도 부상을 입었습니다.\n교통경찰과 과학수사관은 사고 발생 후 현장에서 사고 현장을 조사했습니다. 당국은 현장 예비 조사를 바탕으로 일본인 자전거 운전자가 충돌 사고의 과실이 있다고 판단했습니다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "사마와(무산나)",
-        "km": 218
       }
     }
   ],
