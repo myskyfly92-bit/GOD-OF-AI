@@ -1,85 +1,91 @@
 {
-  "generatedAt": "2026-11-22T01:32:01.253Z",
+  "generatedAt": "2026-11-22T11:55:27.056Z",
   "sa": {
     "label": "중대재해·산업재해",
     "items": [
+      {
+        "title": "상하수도본부, 산업재해 예방 안전보건 특별교육",
+        "source": "지금제주",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1MVVMVUR0SFNoUFV3alYxRjdzRWVnWF9COF9RZTRHSGF2YVhOcEpCajdqX1NKS1hnZXBLMkxqX2RnMDdXbDdJZ2Ryd3FDTE9lOERtSzhYb21xTFpyVk9UZmVieVlWUHllZFpBUTJ3?oc=5",
+        "date": "2026-11-22T11:35:27.000Z"
+      },
+      {
+        "title": "노동조합, 중대재해 예방 주체로 나서야…노동자 참여·안전문화 정착 강조",
+        "source": "강원신문",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE12ZDdOZG5EQ29OQXpDMUdWZjlpdEhYRGpTZ18tclFYdU84VnJIUV9uRnhueVg4MVpHd2pidlNHZ1VFRkhtdm5nNm1TNlpITFpqSmJvN2E4OEc0cm5QSjhlcFlOZFlyeVVt?oc=5",
+        "date": "2026-11-22T11:33:35.000Z"
+      },
+      {
+        "title": "대전 중구, 겨울철 산업재해 예방 위한 안전보건교육 진행",
+        "source": "웹이코노미",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB5UVRiMnhGbVFWUlVxLUFfREkxSF9lZG5KWWxZYTlpVlJvMkx4MjRZTlFFc3VlOXlXOEoybXRsZzZNYWFGbFd4Sm95ODFHOGRwZ20xUEFYSUVZQUlrZk51YktyRUlxeEQ2N3d5RGlsNXBEUQ?oc=5",
+        "date": "2026-11-22T10:26:05.000Z"
+      },
+      {
+        "title": "오산시, 도급·용역 담당 공무원 대상 중대재해 예방 교육…지자체 사례로 법적 의무 익혀 > 뉴스",
+        "source": "더코리아",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBJa3VrN1FiX2VEeFNtQU05b1FsSmhhZ2Qtczd6NVA5MThnSWNkMzk5SlUxcVVqdkNrNTRLcFZlRVlnYUNYSkhueV95Yw?oc=5",
+        "date": "2026-11-22T09:38:15.000Z"
+      },
+      {
+        "title": "아기 살았지만 엄마는…아파트서 5개월 딸 안고 추락사",
+        "source": "SBS 뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBOeXlEUGtOOTFQVnR1Q0YtWFY4a3lZbGZlMHRPUUFzeGZLbUQ0Vm1MWll6THYtY0hpMlZpWElvSkhQXzZMc1o4VUdZRGo2Mk1wWEowZzhaa1FtbUZyX19tRHBVMi12YldKSGc?oc=5",
+        "date": "2026-11-22T07:47:48.000Z"
+      },
+      {
+        "title": "전남광주 제조업 120개사, 산재 예방 공동 대응",
+        "source": "남도일보",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9RR2Fnc19mTjk3X3NuRWZqc1ZZd0hRRTNCX1FiNnZMUEFCUEFwODZWYmxSWlM4RWJGckhzOWxFZk1SaDNNTnFuMUJFeldabVlmUVV6OGpyekotTzJyYzQ0RnllYUs2U0JPNVczdNIBcEFVX3lxTE9xT25SRGQ1V0ZmUnlnN29OdG9KcEdoeGpLMVgxM2hHZ0RCdHRleUtlaXQtMURETE5LN0NsamFRUnU4S05PTXN4X20tV2FWMGdidUZtbS10TDlkQjJQX3FaNG9feGFIWkFFa29KTWlwM2k?oc=5",
+        "date": "2026-11-22T07:33:10.000Z"
+      },
+      {
+        "title": "5개월 딸 안고 추락사 엄마, 아기는 살았다…창원 아파트 무슨일",
+        "source": "중앙일보",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBpX1hVVkwzT3MwTGpUQ2hDUFVCTW15OWkzOWlpblkyTWF5RWN0dHEwWlpDSUNFNWNZZ19sSFlHLU5uRkdBa2tneThfd1lzZUwxOHZaaHRn?oc=5",
+        "date": "2026-11-22T07:27:43.000Z"
+      },
+      {
+        "title": "춘천시노사민정협의회, 노사민정아카데미 및 산업안전보건교육 개최",
+        "source": "강원도민일보",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1yb1pxQnpqVFJhNnB4MldIM3NQVGlMaU9NQWRVYkY1MVlaM0FfdXlaY1NnclBFaEhnT1hoRWhzMXBtWkF3RnhOc1NRRW55MVVxcjJLT2o3cVBoZ3BzeGNKajVXTFQyYWpl?oc=5",
+        "date": "2026-11-22T06:21:54.000Z"
+      },
+      {
+        "title": "[로펌 브리핑] 화우, 내달 3일 ‘중대재해ㆍ불법하도급ㆍ부실시공 제재 대응’ 세미나",
+        "source": "대한경제",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4tZEJxdURGUWp4VHRBajdvelVoSU1YS2pSS0hpaHpQai04SkM3YndyaTVMbkR2b0hPS05nNm1yWk55NmljMHdUb1J6dkJzX1JjZElzU3owX09EbUUzLUQ5RFctZUxIV1g1Vmo3RUVyYm1NOG8t?oc=5",
+        "date": "2026-11-22T05:21:58.000Z"
+      },
+      {
+        "title": "건양대, 산하·수탁기관 통합 안전관리 체계 구축… 중대재해 예방 총력",
+        "source": "전국매일신문",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55amVZSkZWUFJLWXpQWWx6SmhrUTlSanNmaDl2RlRaWEJGakxod0UxMTdSTng0SWlJc2toOE1WOWYzeGpLMlVqNk5SU0VTTjJzQXlzQV9vd0lsRTdGWHhGVnozMGxiV050U1FBczB3?oc=5",
+        "date": "2026-11-22T05:12:47.000Z"
+      },
+      {
+        "title": "대전 중구, 현장 근로자 150명 겨울철 산업재해 예방교육",
+        "source": "타임뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE83T3ZCSnl3aUhHZGN1RTVLNWZodkI0emVaYi11X1h1ZnFXTnNvLWduS253NGNJNGRZNElJNGlMQ01PUXFiSk1PZnU3RWptYm43d3hXTg?oc=5",
+        "date": "2026-11-22T04:35:18.000Z"
+      },
       {
         "title": "산림조합중앙회 부울경본부, 중대재해예방 대책회의",
         "source": "경남도민일보",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9waVZqbUdPN1ZDal9OdVhqdExydFdTRDdDNGhPR1I2bUJDUUFhN1BTcnluZjQwZDB3T1J4WDczcElNU2xJV0JnZXRqV0RLVXFyVHNEYjRlNmoyYTVLdFgwTDVqZjZIRUJzNVE?oc=5",
         "date": "2026-11-22T00:47:16.000Z"
-      },
-      {
-        "title": "대전 중구, ‘겨울철 산업재해 예방 안전보건교육’ 실시",
-        "source": "메가충청뉴스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4yYmZPaDdvOWxOYVhsNkdSSGV0VXh4cEFFX0dsRDF1VU1WVXlpU0tJQ2s1dmE5MC1fOU4yYmxqN2VIcjQyZjM0c1ZJeTZsMFlWOWFiVlhTS056OXZCVXJHT3RKQ1JqeFNJWGtzdg?oc=5",
-        "date": "2026-11-22T00:34:53.000Z"
-      },
-      {
-        "title": "경주·김제서 작업 중 잇단 추락사고…근로자 2명 사망",
-        "source": "비즈중앙",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA0WTd4RV9wZ1RoUXo2Z1M3d1hZMTlQS3VEbzJPTm5YYUJmZUIwMkVaNi1OekR0UXE5ZTViWTFfT0Y0T0dWYXIzQ0Qyd0VKc0c0Q2d0dXI2bFJKWE1ZOWtjbXpieUVGRjFJNlJ6Y3Fjalk?oc=5",
-        "date": "2026-11-22T00:04:03.000Z"
-      },
-      {
-        "title": "경주 아파트서 조명 교체하던 50대 추락사…중처법 위반 조사",
-        "source": "경북신문",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1aVzBIRl9nbjdlV01pRWJIZ0FxaUNtZUZxT1JCQ1haZ09FTU5VbVo0UGtzVXQ3TzVnZHdPd3AtcFByUjhpUnZPYkJUVnFDbU5YX1Q3ZVFpcEY?oc=5",
-        "date": "2026-11-21T21:39:06.000Z"
-      },
-      {
-        "title": "새만금 수목원 추락사 발생 국립 공사장 안전 실태 도마에 올",
-        "source": "블로그차트",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWTlGYWJWeEdZZXFtN2owM0NBOTBPeEhlc2dYWFNRWURpR3lhWTUxR0R1MXNNM05PdmZkMUZRZUphZU1kS0RQWU5rc2RISnNJM3RweV9pTUZ3OGVYeUdkS2NSN0s1RDVKVld3NEtGVjE2amdVak1pd3k2V3BZaDd6Wm1yTnBmZHhaeklra01iaUZrdjNGdkVnU09EeVd3QUFRZVdjWG11RnNfUThaWUpZUU45eFVHTmNS?oc=5",
-        "date": "2026-11-21T15:40:23.000Z"
-      },
-      {
-        "title": "산림조합중앙회, 산림사업장 중대재해 예방 안전관리 강화",
-        "source": "한국영농신문",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95XzkyMEIwZlVoZUUyOVMyRThLRXhHcmRpelBaaEctc2lTLXhvaVlVcnVvNjFfY2RkTzR1dUdUTnNpeFpZZnVPdjNtMlNtUXRadWF3WVBBNjhiYXFlZTlubTc4VHJwbnlFVVBaZnVR?oc=5",
-        "date": "2026-11-21T13:17:34.000Z"
-      },
-      {
-        "title": "강경숙 “반도체 현장실습생 안전교육 강화·졸업생 산재 지원해야”",
-        "source": "데일리스포츠한국",
-        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE14VXFKOUFJMlBXNGVOeG41Zk43YjhsMU1QbHREZXU4cU9OM0NFT1hGR1BxYy15dnl3ZFRqRkl5dnpLTUFjYWNYVXpQRHZQVWc1MHIzVHFXcGp3QkE2VGhfRzZQeXdpNDBmNm5yNXVhTHJKaC0xUkNWSEVTc9IBf0FVX3lxTE5GWVo3czlKWFAwTDY5cEhIWnBKTm9pZUR5NkN4MlhucXF4REZsMW5NM1VSbGFJT0otRldMWUdWRnhoZTNGb1RsUUY2Mjh6dFczY0ZVbkgtT3NnblFaOExNNW9XN0hnWU1WSVhkd09YdVlCd2NUZi1SSFpQcG56THM?oc=5",
-        "date": "2026-11-21T12:04:06.000Z"
-      },
-      {
-        "title": "서부산림청, 벌목작업 중대재해 예방 특별 안전교육",
-        "source": "한국영농신문",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1iYUx0enJJUVBwMXJVR0NfVlBVMHQtTUkxYjRFRVdxZ2JQTUlrR3AwUjJCbm1sanRiRXFpVVUzVkZVeHdnenFtZHRhendmcHpJX2ktYlRQOVk1VE1Dc0xMSDhteVBZZmxDU3lHcnF3?oc=5",
-        "date": "2026-11-21T11:35:50.000Z"
-      },
-      {
-        "title": "새만금 농생명용지 국립수목원 공사 현장서 60대 근로자 앵커 작업 중 추락사",
-        "source": "이세종경제",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iWFpLY251TlllTjdpNU1HcTV6bFhqR3ZwakRJTmNBVWRoeEJBdmFZWUpGUmdLVEltYm9TNVpIdlV0MmtqYlpQdGxhdzBqZy02ZndLZ1l1VGRDbDhudEp0aU1VSnhtaWZSTUFCRQ?oc=5",
-        "date": "2026-11-21T09:59:50.000Z"
-      },
-      {
-        "title": "韓 조선업계 산재 사고 줄고 질병 늘었다…지난해 질병재해 1900명 육박",
-        "source": "전자신문",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EWTNhV05oekJ4M3BUaDV1SkhjcV91VG9lcERyb3lFU05kVTAxWWh0TWRLS1E4dnFza0pCZkxzQzBkZk42WFVqeXhhYWt3Zw?oc=5",
-        "date": "2026-11-21T09:00:00.000Z"
-      },
-      {
-        "title": "경주 아파트서 조명 교체하던 50대 추락사…중대재해법 조사",
-        "source": "동아일보",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9iazV3ZEk0YTd4SWJoYXl2U3pWb1BfYk9uMmYwREZUSnA2Vk44eDVEVGxKQzRuN1p2UHRFa1R1THVOUXI5SGRsS3QxV2FiYmtmZTQyaXJIQ3hJcmNpUHJWNUVKRUc0Yzd3cG10TXpEY1JWaFFQd1HSAWZBVV95cUxQNDJIeHVCNzNSUnpJOF8wVlVrelVjSU9pUE5fMmdDR19NckplUGsyb1ZJM2dLRTJXVWlLNXFFN1BYc0xMeVhhRXRyVmJ3NE5rQ2liVUJGRF9obUg3RGNtMVVWQVFjV0E?oc=5",
-        "date": "2026-11-21T08:12:38.000Z"
-      },
-      {
-        "title": "김제 새만금수목원 공사 현장서 60대 근로자 추락사",
-        "source": "전북일보 인터넷신문",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5CNUtUdDR1NXk4NjVMR0lHYTBWODdneG1jYjFiY3ZwZ2xZd3d6VnVNSzdjb3lmcEZLMl9LYlc2ZlpZNVQtWmtnS19oa1podHBCZTFYODVjTzHSAVhBVV95cUxOQjVLVHQ0dTV5ODY1TEdJR2EwVjg3Z3htY2IxYmN2cGdsWXd3elZ1TUs3Y295ZnBGSzJfS2JXNmZaWTVULVprZ0tfaGtaaHRwQmUxWDg1Y08x?oc=5",
-        "date": "2026-11-21T05:41:28.000Z"
       }
     ]
   },
   "embassy": {
     "label": "중동 대사관·안전",
     "items": [
+      {
+        "title": "[글로벌 방산] 레바논 독립기념일: 유엔평화유지군 철수 앞두고 레바논군이 넘겨받는 장비 292점",
+        "source": "디펜스투데이",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9MSF93UFpoWjBkekE5U0M5QUhFRDFkWkNOYnlGVWU2dHdiaHRKbk9jVl9xTmFRVlh6amR0V2VaX3RGSXd4bkhRWUdCbk9GSDd6empoRHVpX3lRRGxkZ0pONU0ycFA4UTlNTFJhNDJB?oc=5",
+        "date": "2026-11-22T09:48:10.000Z"
+      },
       {
         "title": "주한 UAE 대사관, 건국 55주년 국경일 기념행사 개최…한·UAE 우호협력 강화",
         "source": "외교저널",
@@ -145,12 +151,6 @@
         "source": "KBS 뉴스",
         "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBJOGQtaWdxMW9nV0FMdDg2d2RSeG5ZU1RyRzBSeFNLWUFCMk1BRmpsWnVIaFY2bkw5N1FFR2FBQWdYSWJjbHZFRmUtRDdDODVaamtJWGVlOFhXckU?oc=5",
         "date": "2026-11-19T02:53:00.000Z"
-      },
-      {
-        "title": "미 항모 조지워싱턴 페르시아만 일대서 철수‥중동에 2척 남아",
-        "source": "MBC 뉴스",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1NcVBnTFV5WVBoVGIyVjNhaExYWENXTk5ZQ3RBME9iV3F0ZTBYVjVWRmt4WlktVWdYZ3NyOUxzSXJnam1xcHF6d3Y4bjYtOGxENDE2TmsyUkhlN0t4REtYbDl0U29jeldUNHA3Nl81U3BNdmNX0gF0QVVfeXFMTU1xUGdMVXlZUGhUYjJWM2FoTFhYQ1dOTllDdEEwT2JXcXRlMFhWNVZGa3haWS1VZ1hnc3I5THNJcmdqbXFwcXp3djhuNi04bEQ0MTZOazJSSGU3S3hES1hsOXRTb2N6V1Q0cDc2XzVTcE12Y1c?oc=5",
-        "date": "2026-11-19T01:58:41.000Z"
       }
     ]
   },
@@ -158,76 +158,76 @@
     "label": "감염병",
     "items": [
       {
-        "title": "미국 홍역 환자 5800명 돌파…‘백신 회의론자’ 케네디 장관도 접종 권고",
-        "source": "강원도민일보",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE05c1NGSGNjUHFjSFhnWi1OSWZEREppVm9EZHgtZkxOeUVFaUZibmpSSjhrUTdJU182bXAtX2VvaEpHV3lOVzJ6Rld6MnF0TDczSkdCRWRmaTByUzZ6TngwUEhya0VCRi1C?oc=5",
-        "date": "2026-11-22T01:20:36.000Z"
+        "title": "대구의료원장 후보 검증대···5년 전 '백신 사기' 논란 다시 쟁점",
+        "source": "대구MBC",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5fdlVHUzdXM3UzOFVEMG5SN2FvMzVac21OVFV2c3RBaFhzcjRVQkY4dW5tYktkLXZaVjNQVkNsQTBMempyRnJ6dTl4dUU?oc=5",
+        "date": "2026-11-22T11:30:00.000Z"
       },
       {
-        "title": "美 또 홍역 사망 발생…‘백신 회의론자’ 케네디, 뒤늦게 MMR 접종 권고",
-        "source": "세계일보",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1nSGJFT0FmdkNWdzZSTjlQRTktMEp5N21ZRHZqTUROcFV1UTQyeGI3SUMxRHZlY0VPdXBUUF9mME9WVmlBc1FJaV8yaXRWX3NiQUJNekRkT254U2k3bmFFOXFjd3BYZ0EtOEhN0gFUQVVfeXFMTlduRzhHVVZLZkN6amxYMTFMSXFkRG1rNl9fVGFnVkF5YTJjTjJkQVBCMlF6dkxQd2J2cUlsYzNHYWV2LTdZZDBhNzdfbExtakh4LV9D?oc=5",
-        "date": "2026-11-22T00:46:05.000Z"
+        "title": "'안티백서' 장관도 \"백신 맞아라\"…美 뒤흔든 '질병' 뭐길래",
+        "source": "한국경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBuMWFubGZSTzBoMndlTmVFX0M1ektPd1B6THBBU2FvT1pvUHpQSEgzbnZxQXRQNXR1aHlkWTJIUHVpNnRjbl9ySlNjWjhGaEFNMUlJTmlJVkpWUQ?oc=5",
+        "date": "2026-11-22T09:04:13.000Z"
       },
       {
-        "title": "＂백신 안 믿는다더니＂…사망자 속출하자 뒤늦게 태세 전환 [글로벌 pick]",
-        "source": "한국경제TV",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB3QURPREQzRmNNRzB4el9QN2RGS2poSEVBLUVvMnAtTk5LSU9xVWJrcmdjZWhXWWoxY1NjRTNYeElMMkZGRG14LUIwd0t5TWxIeGl1QnZDWHVQZkgzXzU1QWFXczJyN0FwSTR4MF80bXoxV0pGOWVR?oc=5",
-        "date": "2026-11-22T00:06:00.000Z"
+        "title": "美홍역 확산에 ’백신 불신’ 케네디도 접종 권고",
+        "source": "연합뉴스TV",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5reGJrTzJhbk5OOGNGUXQ4bjIybEF1SGpEV0pJVzBtME95XzdWZ0ZFRHRVVVVZcTJ2QzJYOXFCQXMtVmJFS3NLMjNyN3JHYzUwOFFVRmxYVlgtTHE1aVF0R1R5cklyT2s?oc=5",
+        "date": "2026-11-22T07:22:00.000Z"
       },
       {
-        "title": "미국 홍역 확산세…‘백신 불신’ 케네디 뒤늦게 “백신 권고”",
-        "source": "KBS 뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JbjByZTRpTXQ3VzB2ZmlHc3NkbEdIeHlNcEd4Nk4zQmtLV2hIS09Id3N0QkdpRnp3X3BDMndRanFxdzM4bWlGRlV5YVZkYTRud0lDV21KSVI4QlU?oc=5",
-        "date": "2026-11-21T23:59:00.000Z"
+        "title": "동두천시보건소, 의료급여 신규 수급자 85명 대상 겨울철 감염병 예방교육",
+        "source": "내외뉴스통신",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1UbFd3WDQ5ZllLd3BZaVVWS1J0LWZoZDBpNGNJZWFMcF92Q2Vma0FZN2FUczJtS2Eza04tTWJuSHVXWmYyX0hOMFhieFNwNXAwb2tNVV9rNmlhbm9WZnFpS251MWR3NDhLZm1QUNIBcEFVX3lxTE5mTWs5LXJveGo2N01OaWFmR1pMUk5jTlpoUXV4LUFRUFNfRTVCdExoZDJmZDNQWGJnUVZra2plRGExZ2MwNDJlT1pWTTdhckw4TVRuMlM3aWJsLXB6WThhbU45YXlCOWFvQXYtaVgwZ0M?oc=5",
+        "date": "2026-11-22T07:17:24.000Z"
       },
       {
-        "title": "미국 또 홍역 사망…'백신 불신' 케네디 뒤늦게 \"백신 권고\"",
-        "source": "연합뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE41YVIxZTlHSFJ6OWU0eTVtOEJ2OGM3NU1mYzJBdGREWjZLLXgtdEh1SnNJZnRzdFBGMGVvckNOd1VwSkpqakoxbHhXOXBqQjdUUzR4X3h1VDVMbVHSAWBBVV95cUxOeGt4Qkx5WXctTDU1UEJBUUJrNmpKM1RmZktMNGh6RkVRMUdjZWl4WEpqUVViVUpXWU1xMHZLaDBuUUdoMjRWaGhRUFQxYWtlWWt0R0R6bkptcVJfV004Yno?oc=5",
-        "date": "2026-11-21T23:50:55.000Z"
+        "title": "강연숙 부평구의원 “대상포진 백신 예산 왜 1억에서 1,700만원으로”…접종 물량 관리 점검",
+        "source": "자치의정브리핑",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBPNndXWEVEcUZxeVRiMmdCRjN0aFhndDh6d0lkQnhBYWw2SXJUX0NSYW9DMUo0NlVmenJ0OXAtSkRtYVVIWENaYXRuODNUMUY2V3FOaXFKeHliUzdJZ3VN?oc=5",
+        "date": "2026-11-22T06:16:09.000Z"
       },
       {
-        "title": "'홍역' 전세계 재유행…우리나라 안전지대 일까?",
-        "source": "뉴시스",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE54WUk5eTNOSmNBOTI1d1dsVnFRQW9pR3FoS2ZfSEI1Z29PQVBjMV8yZnprX2FPeDBYZE84N1E0dHp1Wkp0ZHg3YTBselAwekVxY3B3VW9tM2lpc0k3aDRFeNIBeEFVX3lxTE16OFZIT2JHRk8waVM2ekZocjBXNDRzbnNpZ3JmYTJHeElTNE9kbTRLdEJILVVyN0NTa0tNbDRvRnFvLUs3Rl9hbFJfY0pBc1MzREJkb0x4ekNaTDN0U09BTmZYZS15em04bmtlVEZ2cGtjMjd0OWNFVg?oc=5",
-        "date": "2026-11-21T23:01:00.000Z"
+        "title": "전북 하수서 독감·코로나 바이러스 증가...호흡기 감염병 주의보",
+        "source": "전라일보",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9mdGMzT3YyZmVCR2ZOTXlpYXlkRkptbmI1dlVKTV9sbWZNUDRBa0phcE00S1kxcmJ1YndrYkk0Y2dSV0FXN1ZNSW5fcjE5LXp3Yno0dHk0NFBMTTJYOFJUZVhUVUNQNndwYmdxa2dR0gFwQVVfeXFMUDhUQVhON3k3SlVDLWNFUHhPUERYWWtVck1tbjJKYnRmdDBSX2RXYm5zMUh5amZIMEdTR3UyOXBIUGl5Y1BWRW9ob0tLVmhRdm04SG1welJEQnVqV3h5UldWN0RDWmJFNHZaWGZHVkdwYg?oc=5",
+        "date": "2026-11-22T05:48:34.000Z"
       },
       {
-        "title": "GC녹십자, RNA·LNP 기술 활용 넓힌다…CAR-T 및 암 백신 연구 확대",
-        "source": "글로벌이코노믹",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTmEyUVhHam9qYlRtYWJmck1zZmU3Q0R3RGhmZEdyTkpiWXhDbUhLXy1vc0pDSDZ5UkxhUm82WjB6OVhLR0VCaEdSSGZSS3AxemxMdVl1c1pUenotM09jeUVYN2F2azNjSmFia3VMY0NScFRwazZWVUxIS3hXMVplNkpiWHVKREhx?oc=5",
-        "date": "2026-11-21T23:00:00.000Z"
+        "title": "[속보]`홍역 유행 조작, 백신 위험` 주장 美 케네디 장관, 이젠 \"접종하라\" 권고",
+        "source": "국제신문",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOakljdm0xell4WDJCYXh6ZEpKOG00eFQ2OGRPVWQyOGVOT3RGcHU5MEZPSmJ0T0FfdU9vbHVtU21kYlNmcDNKWnJ2V0ppU0RnNlNEWnAtdVM1UF9RbXRZTzBTZ2JoMzJfNE93dFI3T2k2dnNMRnJfRUdGZzF2NXZVZGtiT3NTZmt4c1U3ag?oc=5",
+        "date": "2026-11-22T05:45:00.000Z"
       },
       {
-        "title": "국립중앙의료원, 23~24일 신종감염병 의료대응 국제 심포지엄",
-        "source": "메디포뉴스",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1RR3l6amZOR2FOdW1LOXRCZ0xidk96eUNIUGxnN3g2STFqd3pycmJVMTZMSHdRa3N3ZkIxV19NMVIzdl96cUxTM0swQ0E3Wno0SGQ5M0kwY2NWYkdfelhPYkxkOUU?oc=5",
-        "date": "2026-11-21T22:08:04.000Z"
+        "title": "美 '홍역퇴치국' 지위 상실…'백신 반대' 보건장관 뒤늦게 접종 권고",
+        "source": "뉴스1",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA5MkZYNEdENkRNdVhmMWlxdW9sdFJRVEkwZ1pkTUxfYVpPMTF4S1dDbzM4UzNfeEdkVkJjTjI0Q2ZOdENaTkRWejAxTlRudE40Z2dYX3o5Tno?oc=5",
+        "date": "2026-11-22T05:23:21.000Z"
       },
       {
-        "title": "A형간염 백신 수급 ‘빨간불’…한국MSD 철수에 보령도 공급 차질",
-        "source": "동아일보",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB3blFibFBNVmVZRjhIWDg2YXFsR3pBTWRIMUJCUlJna2RudDZHaFc4VFFQS2xSUm9WM0hNQU9KOE85cW50OEF6YUozaE04d04tYkk1eFJvYUxkc2hycUVjMWxnOVZlQdIBZkFVX3lxTFB3blFibFBNVmVZRjhIWDg2YXFsR3pBTWRIMUJCUlJna2RudDZHaFc4VFFQS2xSUm9WM0hNQU9KOE85cW50OEF6YUozaE04d04tYkk1eFJvYUxkc2hycUVjMWxnOVZlQQ?oc=5",
-        "date": "2026-11-21T22:07:59.000Z"
+        "title": "러시아, 대장암 백신 접종 시작",
+        "source": "Vietnam.vn",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaElrU3ZDdXJaUUdGdFNIemxmQlg5RG9xZzRCNWJBLXphaHVad250ZzRvV3NqMWYxd1JidUl3NC01WW9QU0FxZGQwb0s0Ymk3dlVGQ2VKekVrVGVBYklFMGt6ZE1TNXNuQ0NINlV5UXlNTXdjb0l4MmViSzRvRERqR3BB?oc=5",
+        "date": "2026-11-22T04:52:48.000Z"
       },
       {
         "title": "119구급차, 호흡기감염병 전 항목 이상 무",
-        "source": "메가충청뉴스",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBnejQ3eFdiMy1nQVVsLVhWR2VLUmxWdkh0SEpFejZTb2V0dGRLSHNqVzc5TU44SkdTcEtBSDM3QXBnbHhvV2FjU0pUOU5FcFpPR1FFb3ZfenhhQmNsS09NamJXWUFBTGdvNHh5aw?oc=5",
-        "date": "2026-11-21T21:05:44.000Z"
+        "source": "아시아뉴스통신",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBpWE1TXzBDMENRU2pza0RWdnFLUFM5X2JDcTFteG81ZDdPNGFKc202QXMxcDQ0alpiVUxRSXU2SDYwYkFrTFRWNi0tNmRzSkZHcEJwRm5BMVh1NFZvbXdESzE0QWlrRGVSSUtMNjcyaXBLVFZQ?oc=5",
+        "date": "2026-11-22T04:52:37.000Z"
       },
       {
-        "title": "A형간염 백신 수급 '빨간불'…한국MSD 철수에 보령도 공급 차질",
-        "source": "뉴스1",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9IcmZwN2RKUUpkbnY2ZVF2cWdaNUxOM1pxN2x6amVTendzMnN4MzNVQVZ5aXRrVEZwS19vUm52QmdnUGdOVzk2bkNBRFdhcWs0eHBWQjk0a2ctNFhFcmRrWg?oc=5",
-        "date": "2026-11-21T21:00:00.000Z"
+        "title": "美 홍역 사망자 속출… '反백신' 복지부 장관 \"백신 맞자\" 돌아서",
+        "source": "한국일보",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0yNXlvd2RKb2cyX0F3emowa0p6ZzRHNi1CUXdFTE9vb09sNmxGWGlWNmNTWlZEdzZuQm9KM2toYUNmNEloOUVVbG9GMmkwVGhzVkg2d0k4WFc1R2NTa01xV1NVaC1lenpEZ3ZVV3l0QU9FTEnSAXNBVV95cUxNMjV5b3dkSm9nMl9Bd3pqMGtKemc0RzYtQlF3RUxPb29PbDZsRlhpVjZjU1pWRHc2bkJvSjNraGFDZjRJaDlFVWxvRjJpMFRoc1ZINndJOFhXNUdjU2tNcVdTVWgtZXp6RGd2VVd5dEFPRUxJ?oc=5",
+        "date": "2026-11-22T04:50:00.000Z"
       },
       {
-        "title": "임실군 “9농가 ‘ToBRFV’ 감염 확진”... 토마토 이동경로 차단시설 설치 추진",
-        "source": "뉴스티앤티",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1aN3NuU1hOZTliNllLdmpFbWtaR1ZBcUtjNDk4XzdKa3pzdFBZRUtmZkpieHd5eG56c2pqMFRpdENER0NCdjFYc1FhUG50Y01MSjJhLUhUdklYZ090dXFRbEpPbDNfUk9wSWc?oc=5",
-        "date": "2026-11-21T15:18:31.000Z"
+        "title": "\"최소 12명\" 추가 사망자 나오자 돌연 입장 바꿔…'백신 불신' 케네디, '백신 권고'",
+        "source": "아시아경제",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBCd21GZFVXV2hWd0lIQVc5MXBqbWE3cVJDVko1MHBUbmVnVkFocUJfUGpKcVRzZWk4YlAtbndNNWRQRUF0cFIzZWhndlI4UnRsZ1hsWm5DRFNIVzc3OVFiag?oc=5",
+        "date": "2026-11-22T03:53:39.000Z"
       }
     ]
   }
