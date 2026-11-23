@@ -395,16 +395,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "4단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 4,
      "levelName": "여행금지",
      "region": "일부",
      "remark": "남부 이스라엘 접경 지역(블루라인으로부터 5km 포함), 남부주, 나바티예주, 다히예의 일부 지역(베이루트 공항 및 M51 도로 제외),바알벡헤르멜주,베카주(서베카구,라샤야구)"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "4단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -594,6 +594,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -604,12 +610,6 @@
      "levelName": "여행자제",
      "region": "일부",
      "remark": "사바주 동부 해안"
-    },
-    {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -640,16 +640,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "치아파스주, 시날로아주"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
      "remark": "3단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "치아파스주, 시날로아주"
     }
    ],
    "written": "",
@@ -1142,6 +1142,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "파마구스타 내 바로샤 지역"
+    },
+    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -1152,12 +1158,6 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "남부 지역"
-    },
-    {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "파마구스타 내 바로샤 지역"
     }
    ],
    "written": "",
@@ -1495,12 +1495,6 @@
    "level": 4,
    "regions": [
     {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "아르메니아 접경 5km 구간"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
@@ -1511,6 +1505,12 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "3, 4단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "아르메니아 접경 5km 구간"
     }
    ],
    "written": "",
@@ -1644,16 +1644,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "출국권고를 제외한 전 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "과야스 주, 아수아이 주, 로스리오스 주, 산타엘레나 주, 엘오로 주, 마니비 주, 에스메랄다 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "출국권고를 제외한 전 지역"
     }
    ],
    "written": "",
@@ -1667,16 +1667,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "아디스아바바 시, 디레다와 시, 하라르 주, SNNPR 주, SWEPR 주, 시다마 주, 오로미아 주 일부(3단계 지역 제외), 아파르 주(3단계 지역 제외)"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "암하라 주, 티그라이 주, 소말리 주, 베니샹굴-구무즈 주, 감벨라 주, 오로미아 주 일부(East Welega, West Welega, Kelam Welega, Guji, Borena 지역), 수단 및 에리트리아 국경 10km 접경지역, 아파르주에서 티그라이주 10km 접경지역, △케냐 및 남수단 국경 10km 접경 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "아디스아바바 시, 디레다와 시, 하라르 주, SNNPR 주, SWEPR 주, 시다마 주, 오로미아 주 일부(3단계 지역 제외), 아파르 주(3단계 지역 제외)"
     }
    ],
    "written": "",
@@ -1843,16 +1843,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "4단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 4,
      "levelName": "여행금지",
      "region": "일부",
      "remark": "이스라엘 북부 레바논 접경지역(국경으로부터 4km), 가자지구"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "4단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -1912,16 +1912,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 1,
-     "levelName": "여행유의",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "카슈미르, 카르길 시"
+    },
+    {
+     "level": 1,
+     "levelName": "여행유의",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-11-22T08:54:55.498254+00:00"
+ "generatedAt": "2026-11-23T09:52:24.123995+00:00"
 }
