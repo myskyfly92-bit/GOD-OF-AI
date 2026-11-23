@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T01:19:07.764Z",
+  "generatedAt": "2026-11-23T01:43:38.563Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -31,13 +31,6 @@
       "date": "2026-08-23T23:28:53.000Z"
     },
     {
-      "title": "predict - 건강위해 통합정보시스템",
-      "source": "국가건강정보포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UUFZlQ2NDRFVzaVZaRW1OR2pZSUhxdHNyZmQ0Z01BU0pESGtTRDI2WGplVXU1VEpTRWtRbVY5a2JZX01VLUJXZnNHVE91d2RCaDlXWWhxc0JnV2lTSHRDS1ptd25uUQ?oc=5",
-      "date": "2026-05-11T02:05:29.000Z"
-    },
-    {
       "title": "지침",
       "source": "질병관리청",
       "agency": "",
@@ -50,13 +43,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
       "date": "2025-12-16T15:46:00.000Z"
-    },
-    {
-      "title": "ICCON 감염예방 소식지",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ueXN2cXpmUkJyLWV2cHc4VHB3Sm01dGcwc09pTlNXVG5xZjE4bHpvUFgxOVktQjJoLXJHRmJRTHM4TXhrbmJLZ1JTQ25yWklLeDlqek1B?oc=5",
-      "date": "2025-12-16T15:49:07.000Z"
     },
     {
       "title": "- 질병관리청",
@@ -85,6 +71,20 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
       "date": "2024-06-10T02:47:27.000Z"
+    },
+    {
+      "title": "손상통계",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5tUkYwOVE0TXNPRGdUeWxpOGJIMDNxemRldm9FQ2lKVDROTldNYTNVSXhVQlNuT3FUN25vUm1NbVdiYUtG?oc=5",
+      "date": "2021-11-03T09:42:59.000Z"
+    },
+    {
+      "title": "성홍열",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tcC03OGpvaW1sNlE0MmxfMzZYUy1PaEI1UU5aTWxLUlI2am9pbzVGU2gwT3hobGFfQmNRN3RMVkN3X3V2NUhMWDRCUnl2SXV6OE0yRXd3?oc=5",
+      "date": "2025-12-16T16:07:49.000Z"
     }
   ]
 }
