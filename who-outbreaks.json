@@ -8,6 +8,54 @@
   "errors": {},
   "items": [
     {
+      "kind": "WHO 소식",
+      "title": "Call for consultant expressions of interest: ICHI Traditional Medicine code set development",
+      "date": "2026-11-24T13:00:00Z",
+      "summary": "WHO is seeking a consultant for 11 months to develop the Traditional Medicine (TM) code set of the International Classification of Health Interventions (ICHI), within the Classifications and Terminologies team, Department of Data, Digital Health, Analytics and AI. The consultant will produce the Alpha and Beta drafts of the ICHI TM code set, covering interventions from Ayurveda, Siddha, Unani and Traditional Chinese Medicine. They will also coordinate the external expert and stakeholder country ",
+      "link": "https://www.who.int/news/item/24-11-2026-call-for-consultant-expressions-of-interest--ichi-traditional-medicine-code-set-development",
+      "newsType": "Employment"
+    },
+    {
+      "kind": "감염병 발생",
+      "title": "Influenza A(H5N1) - United States of America",
+      "date": "2026-11-24T10:52:39Z",
+      "summary": "Between 16 October and 4 November 2026, the United States of America, through its International Health Regulations (IHR) National Focal Point, notified WHO of three laboratory-confirmed human infections with influenza A(H5) virus in Washington State. These included one fatal case, the first reported death following exposure to infected dairy cattle or a related contaminated environment. All three cases were adults who worked on dairy cattle farms in Yakima County, Washington State, where the hig",
+      "link": "https://www.who.int/2026-DON629",
+      "donId": "2026-DON629"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Countries face critical gaps in health inequality monitoring systems",
+      "date": "2026-11-24T08:00:00Z",
+      "summary": "Health inequalities exist in every country. Yet millions of people at risk of being left behind may remain invisible in national health statistics. A new World Health Organization (WHO) report reveals that despite strong commitments, countries still face significant gaps in their ability to identify, measure and monitor health inequalities. The Health inequality monitoring atlas: a global mapping of country capacities, resources, policies and practices provides the first comprehensive global pic",
+      "link": "https://www.who.int/news/item/24-11-2026-countries-face-critical-gaps-in-health-inequality-monitoring-systems",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO and China’s National Institutes for Drug Control sign agreement to strengthen access to quality-assured in vitro diagnostics",
+      "date": "2026-11-23T23:00:00Z",
+      "summary": "On 2 September 2026, the World Health Organization (WHO) and the National Institutes for Drug Control (NIDC) of the People’s Republic of China formally exchanged a signed Memorandum of Understanding (MoU) on collaboration towards strengthening access to safe, quality-assured in vitro diagnostic medical devices.The signing marks an important step in WHO’s work to support countries in improving access to reliable diagnostics, particularly in low- and middle-income countries. Under the MoU, WHO and",
+      "link": "https://www.who.int/news/item/23-11-2026-who-and-china-s-national-institutes-for-drug-control-sign-agreement-to-strengthen-access-to-quality-assured-in-vitro-diagnostics",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "감염병 발생",
+      "title": "Circulating vaccine-derived poliovirus type 1 – Syrian Arab Republic",
+      "date": "2026-11-23T15:53:09Z",
+      "summary": "In October 2026, a cluster of four cases of acute flaccid paralysis (AFP) was identified in Al-Mayadin District, Deir Ez Zor Governorate, Syrian Arab Republic. As of 13 November 2026, three confirmed cases of circulating vaccine-derived poliovirus type 1 (cVDPV1) have been reported. Vaccine-derived poliovirus type 1 (VDPV1) was also detected in three contacts who did not present with AFP and are therefore not included in the reported paralytic poliomyelitis case count. Between 9 and 20 November ",
+      "link": "https://www.who.int/2026-DON628",
+      "donId": "2026-DON628"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Traditional medicine at the 2026 Global Wellness Summit in Thailand",
+      "date": "2026-11-23T12:00:00Z",
+      "summary": "The WHO Global Traditional Medicine Centre (GTMC) participated in the 20th Global Wellness Summit in Phuket, Thailand, from 10 to 13 November 2026. Under the theme \"The Science, Art and Soul of Wellness\", leaders from health, research, tourism and the wellness sector discussed prevention, healthy longevity and well-being.Thailand’s Department of Thai Traditional and Alternative Medicine (DTAM) was a host sponsor. In his closing address, Minister of Public Health Pattana Promphat highlighted univ",
+      "link": "https://www.who.int/news/item/23-11-2026-traditional-medicine-at-the-2026-global-wellness-summit-in-thailand",
+      "newsType": "Departmental update"
+    },
+    {
       "kind": "감염병 발생",
       "title": "Ebola disease caused by Bundibugyo virus- Democratic Republic of the Congo, Kenya and Nigeria",
       "date": "2026-11-20T22:38:46Z",
@@ -21,6 +69,14 @@
       "date": "2026-11-20T19:00:00Z",
       "summary": "On World Children’s Day, the Global Accelerator for Paediatric Formulations Network (GAP-f) recognizes the progress being made towards ensuring that children benefit from medicines that are safe, effective and appropriate for their needs. Across the global health community, partners are working together to strengthen clinical research, advance the development of paediatric formulations and accelerate access to medicines. Yet, important gaps remain. Turning scientific advances and promising innov",
       "link": "https://www.who.int/news/item/20-11-2026-better-medicines-for-every-child--gap-f-partners-accelerate-action-on-world-children-s-day",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Every child deserves a healthy start and a healthy future",
+      "date": "2026-11-20T05:00:00Z",
+      "summary": "Every child has the right to the highest attainable standard of health. Yet too many children are still being left behind. HIV, tuberculosis, viral hepatitis and syphilis continue to affect children worldwide, particularly where access to essential health services is limited.",
+      "link": "https://www.who.int/news/item/20-11-2026-every-child-deserves-a-healthy-start-and-a-healthy-future",
       "newsType": "Departmental update"
     },
     {
@@ -104,46 +160,6 @@
       "newsType": "Departmental update"
     },
     {
-      "kind": "WHO 소식",
-      "title": "More countries have antimicrobial resistance plans but patients still lack testing and treatment",
-      "date": "2026-11-16T15:29:27Z",
-      "summary": "As more countries are taking steps to tackle antimicrobial resistance (AMR), major gaps that remain in testing and treatment mean that many patients are still at risk, according to new data from the World Health Organization (WHO).When medicines lose their effectiveness against resistant bacteria and other microbes, common infections become harder to treat and routine medical procedures, including surgery, childbirth and cancer care, become riskier. In 2023, approximately 1 in 6 laboratory-confi",
-      "link": "https://www.who.int/news/item/16-11-2026-more-countries-have-antimicrobial-resistance-plans-but-patients-still-lack-testing-and-treatment",
-      "newsType": "News release"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Eritrea eliminates trachoma: a major public health milestone",
-      "date": "2026-11-16T09:46:57Z",
-      "summary": "The WHO has validated Eritrea's elimination of trachoma as a public health problem, making it the 11th country in WHO’s African Region and the 34th globally to reach this major milestone.",
-      "link": "https://www.who.int/news/item/16-11-2026-eritrea-eliminates-trachoma-a-major-public-health-milestone",
-      "newsType": "News release"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "WHO issues first guidelines on type 1 diabetes for adults",
-      "date": "2026-11-14T13:30:42Z",
-      "summary": "More than 100 years after the discovery of insulin, many people living with type 1 diabetes still cannot access the insulin and care they need to survive. Marking World Diabetes Day 2026, WHO has issued its first guidelines on the diagnosis and management of type 1 diabetes in adults, with recommendations designed to apply across all settings, including low-resource, emergency and humanitarian settings.",
-      "link": "https://www.who.int/news/item/14-11-2026-who-issues-first-guidelines-on-type-1-diabetes-for-adults",
-      "newsType": "News release"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Put health in the treaty: youth delegates at the Global Model WHO 2026 adopt declaration on plastics and health",
-      "date": "2026-11-13T19:53:00Z",
-      "summary": "This week at WHO headquarters in Geneva, more than 400 young leaders from over 50 countries and all six WHO regions called on governments to protect human health from the preventable harms of plastics.",
-      "link": "https://www.who.int/news/item/13-11-2026-put-health-in-the-treaty---youth-delegates-at-the-global-model-who-2026-adopt-declaration-on-plastics-and-health",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Member States reiterate commitment to finalize Pandemic Agreement PABS Annex by May 2027",
-      "date": "2026-11-13T17:02:19Z",
-      "summary": "Member States advanced negotiations on the Pathogen Access and Benefit-Sharing (PABS) Annex to the WHO Pandemic Agreement, reaffirming their commitment to finalizing the Annex for its consideration by the World Health Assembly in May 2027. The PABS Annex would establish a system that ensures the rapid, transparent sharing of pathogens with pandemic potential and their genetic sequence data, while ensuring rapid and equitable access to the resulting products, including vaccines, diagnostics and t",
-      "link": "https://www.who.int/news/item/13-11-2026-member-states-reiterate-commitment-to-finalize-pandemic-agreement-pabs-annex-by-may-2027",
-      "newsType": "News release"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Middle East respiratory syndrome (MERS) – Qatar",
       "date": "2026-11-13T13:48:47Z",
@@ -190,23 +206,7 @@
       "summary": "Between 1 January and 5 October 2026, the Kingdom of Saudi Arabia reported eight laboratory-confirmed cases of Middle East Respiratory Syndrome Coronavirus (MERS-CoV) infection, including one death. Cases were detected across six locations: Al Jouf (1), Arar (1), Hafr Al-Batin (1), Riyadh (2), Tabuk (1) and Taif (2). No epidemiological links were identified between any of the cases. All eight cases were symptomatic, most commonly presenting with fever (6/8), dyspnea (5/8), and cough (4/8). None ",
       "link": "https://www.who.int/middle-east-respiratory-syndrome-coronavirus---kingdom-of-saudi-arabia",
       "donId": "2026-DON618"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Pneumonia of undetermined etiology - the Russian Federation",
-      "date": "2026-10-10T15:53:19Z",
-      "summary": "On 2 October 2026, WHO became aware through media reports of the death of an employee of the Irkutsk Antiplague Research Institute (APRI) of Siberia and the Far East, the Russian Federation. According to these reports, the individual died on 2 October following hospitalization for severe pneumonia on 29 September, and pneumonic plague was suspected as the cause of death, following occupational exposure in laboratory settings. Following requests for verification from WHO, the National Focal Point",
-      "link": "https://www.who.int/2026-DON620",
-      "donId": "2026-DON620"
-    },
-    {
-      "kind": "감염병 발생",
-      "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
-      "date": "2026-10-08T16:06:26Z",
-      "summary": "On 5 October 2026, WHO was informed about a laboratory-confirmed imported case of Bundibugyo virus disease (BVD) in Kenya with travel history from the Democratic Republic of the Congo. The patient travelled from the Democratic Republic of the Congo to Kenya through Uganda. The patient was hospitalized and treated in Kenya but subsequently died on 5 October. Public health response measures have been initiated in Kenya and Uganda, including contact tracing. Since the last Disease Outbreak News was",
-      "link": "https://www.who.int/2026-DON619",
-      "donId": "2026-DON619"
     }
   ],
-  "generatedAt": "2026-11-24T03:35:34.795220+00:00"
+  "generatedAt": "2026-11-24T16:40:56.017342+00:00"
 }
