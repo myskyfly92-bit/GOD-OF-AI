@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-24T05:19:26.251Z",
+  "generatedAt": "2026-11-25T04:11:15.426Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
-      "title": "- 보건복지부 대표홈페이지",
-      "source": "",
+      "title": "건강교육 자료실",
+      "source": "국가건강정보포털",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdEVmNGhiR2tKTHZTcHliYmFveUxWX3YwR1U2bENUa2lUX2dQYnlXczFLWENvMDJUM21MVk1mMEZpY01yMlFvb2hOTmFXRTZ0djlZVmsyRjRjdnJNNWFNS1FOdGJHcDlrVjZjdWo3OGI4T1pTMFFiQ3RZNWxEZnpCeGY1UDBOR09wQkNj?oc=5",
-      "date": "2026-11-23T16:35:48.000Z"
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZms1NDRBY0xyT0ZQSjhkdmo5U3lSMm5GbHVTQmR5T0tEM25laW5PS0xMMl8yVV9mam4ydUp1TTA4MC1oSHV6d1Z6UnRrSmcwUkl4QXk4TDVNTUdmOG41X2prUkhGQld2UTlFcU4yTU40akFvaExfczBsNFFVU0VXMldYZlJhbl9SRHNfemhQYWtQWXFhTENYbVUxQ3F0TlhvMFhvZlN2anlvNkVUeTdxcmMzN3AwSGViQVJBN013?oc=5",
+      "date": "2026-11-24T12:37:26.000Z"
     },
     {
-      "title": "채용공고",
-      "source": "질병관리청",
+      "title": "공지사항",
+      "source": "국가건강정보포털",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
-      "date": "2025-12-16T15:48:42.000Z"
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPR3JQak1STTdnN1hkYjNPbThrNXNRWk9temZOdzBRTmt1anBLazJZVWJyb2d6WVRGUEtQZGtDZVgxZW5BSHVFQVJIakNQRkppZ3NfSkpuSy03RGlsQXpjMkJzbG5rNnhvMWp5Nll2a21FM2NjcDBweVBVVm9UN0dQZ2dDbHRrU2lQNzJsd084dlZWQng1SWc?oc=5",
+      "date": "2026-11-24T15:10:55.000Z"
     },
     {
       "title": "1339콜센터",
@@ -31,18 +31,18 @@
       "date": "2024-06-10T03:38:59.000Z"
     },
     {
-      "title": "보도자료(전체)",
-      "source": "질병관리청",
+      "title": "온열질환자 발생 예측 정보",
+      "source": "국가건강정보포털",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
-      "date": "2025-12-16T15:46:00.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UUFZlQ2NDRFVzaVZaRW1OR2pZSUhxdHNyZmQ0Z01BU0pESGtTRDI2WGplVXU1VEpTRWtRbVY5a2JZX01VLUJXZnNHVE91d2RCaDlXWWhxc0JnV2lTSHRDS1ptd25uUQ?oc=5",
+      "date": "2026-05-11T02:05:29.000Z"
     },
     {
       "title": "- 질병관리청",
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-24T03:20:28.000Z"
+      "date": "2026-11-25T00:32:24.000Z"
     },
     {
       "title": "레지오넬라증",
@@ -73,18 +73,18 @@
       "date": "2021-11-03T09:42:59.000Z"
     },
     {
+      "title": "채용공고",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
+      "date": "2025-12-16T15:48:42.000Z"
+    },
+    {
       "title": "성홍열",
       "source": "질병관리청",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tcC03OGpvaW1sNlE0MmxfMzZYUy1PaEI1UU5aTWxLUlI2am9pbzVGU2gwT3hobGFfQmNRN3RMVkN3X3V2NUhMWDRCUnl2SXV6OE0yRXd3?oc=5",
       "date": "2025-12-16T16:07:49.000Z"
-    },
-    {
-      "title": "생명윤리법관련민원안내",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1IMldCN1BaVVZ1VFl6UG5uQWZ1RkpzMGx5WVc2YjhTaEI0QnphSzhvMmdxel80cm9oRV9mLXJKVUY0ZHF2cDdjejBGNGtxYzhkX1NtQmhn?oc=5",
-      "date": "2026-08-27T08:50:18.000Z"
     }
   ]
 }
