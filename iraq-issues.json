@@ -1,6 +1,828 @@
 {
-  "generatedAt": "2026-11-25T04:22:20.218Z",
+  "generatedAt": "2026-11-25T14:40:49.953Z",
   "items": [
+    {
+      "title": "ارتفاع أسعار الدولار في بغداد وأربيل عند الإغلاق",
+      "source": "هذا اليوم",
+      "link": "https://hathalyoum.net/articles/4269944",
+      "date": "2026-11-25T13:50:42.000Z",
+      "lang": "ar",
+      "titleKo": "장 마감 시 바그다드와 에르빌의 달러 환율 상승",
+      "url": "https://hathalyoum.net/articles/4269944",
+      "body": "شفقنيوز بغداد/ أربيل ارتفعتأسعار صرف الدولار الأميركي أمام الدينار العراقي يوم الاربعاء في أسواق العاصمةبغداد وفي أربيل عاصمة إقليم كوردستان مع إغلاق البورص...\nوقالمراسل وكالة شفق نيوز إن أسعار الدولار في بورصتي الكفاح والحارثية الرئيسيتين ببغدادارتفعت لتسجل 169950 ديناراً مقابل كل 100 دولار، فيما سجلت صباح هذا اليوم 169150ديناراً مقابل 100 دولار.\nوأشارمراسلنا إلى أن أسعار البيع في محال الصيرفة بالأسواق المحلية في بغداد ارتفعت،حيث بلغ سعر البيع 170500 دينار مقابل 100 دولار، بينما سعر الشراء 169500 دينارمقابل 100 دولار.\nوفيأربيل، ارتفعت أسعار الدولار أيضاً، لتسجل سعر البيع 170250 ديناراً لكل 100دولار، وسعر الشراء 170150 ديناراً مقابل 100 دولار.",
+      "bodyKo": "샤팍 뉴스 바그다드/에르빌 수요일, 바그다드 수도 시장과 쿠르드스탄 지역의 수도인 에르빌에서 증권거래소가 폐장하면서 이라크 디나르 대비 미국 달러 환율이 상승했습니다.\n샤팍 뉴스 통신사 기자는 바그다드의 주요 외환 거래소인 카파와 하리시야에서 달러 환율이 100달러당 169,950 이라크 디나르로 상승했으며, 오늘 아침에는 100달러당 169,150 이라크 디나르를 기록했다고 전했습니다.\n우리 특파원은 바그다드 현지 시장의 환전소 매도 가격이 상승했으며, 매도 가격은 미화 100달러당 170,500 이라크 디나르, 매수 가격은 미화 100달러당 169,500 이라크 디나르에 달했다고 전했습니다.\n에르빌에서도 달러 가격이 상승하여 매도가는 100달러당 170,250디나르, 매수가 100달러당 170,150디나르를 기록했습니다.",
+      "tried": true,
+      "count": 4,
+      "sources": [
+        "موقع كلمة الإخباري",
+        "هذا اليوم",
+        "أخبار العالم اليوم",
+        "شفق نيوز"
+      ],
+      "related": [
+        {
+          "titleKo": "수요일 증권거래소 휴장으로 이라크 달러 환율 상승",
+          "source": "موقع كلمة الإخباري",
+          "link": "https://kalimaiq.com/news/details/74337"
+        },
+        {
+          "titleKo": "오늘 2026년 11월 25일 수요일 이라크 달러 환율, 이라크 디나르 대비.. 1,700디나르 미만으로 하락",
+          "source": "أخبار العالم اليوم",
+          "link": "https://news.google.com/rss/articles/CBMiswVBVV95cUxPSWFkQm5henZEcU50aWtMU1l1Qk1xNWhDS1Z5dHRJMnFiOVdTMUZzX2Q3MzdUbUM4ZHZCWVZnYW5WRXA0LXBBTjVMZXZ3b1psdjk0TXNLdXJ2d1duMU1wVTdFQUxGcHFIeG1wa2swdnpITEIwMjlLSFpDSjVyb3d6eVJmYi1pdGV1OFF2NzRoTjh1cnh4cmZ4MkNvd0J4TGNtRUhRWFJqTUR6enRJZ0kzVGkxNEo2ekRNLUZMMEpncVNqdzNkNXdNa3JtQ1YxdDl1ajdnZ1N0bk0ydFZNYkNSYzc2cmVlUlk4emRsNjBvb3l6MEtEdFBqako3dURYUjNoVGRsdEtuZzZrWW02dVRaQVJzMTUyd2g3cEhrRlI1THB3UWRzQlFRME9wMHkxQWwxRnU4cHJkbjJHZzVoWTZRQ25wdjNhRXVDS1IzM2puUTk5RDYyOGM2MHhEMi1neHJyalc4NXplNG1vM0lpNmlyMFpTak1xeWkwR2VwaTBvYlZLTkJmbkQwRFZabTA0YTFkb29Ed3RYeWdrNGwxWC1OMy1UTlg5RW92T193N0p2eHAxSnlIcWxaZ09EOEczeF9zZVBBS0F2a0xxbDVOeVRwaVFsTTFFNFdxdnhVWU1tX2hCbUFKMkctU05MclBSNTEwY2xQcTBsS3Q0cFNyMkNmaUx4dGk2azVfTjhPb3RQelhNb29VdUhFQmFtaGplci0zT29DTFUxYThSN2N2YUNtYU5VV3VpWTZKMHlqUDlGanNvT1VOaFJTY1U4YUp6RUR6NUxONDRDRmduVjVTSjQ0a1pVZkVtaXNITTRaVkdrdlBFZl8yLVhkSW9BOHI0R21yelJRNmF3VXpoQWdHMHJZTTIta1VGdDNNQ0kxVHZ4ZTd2V3VTS1V0ZWRuU2VGWm93Y1pV0gG4BUFVX3lxTE9lcGwxTkk0SXVVRmlqcTc3Z2hhNkZUVEx1SVFIVHk0Q0VJSGp6dV9KN2VZY3hPdW9MczlBZGVmLWY3VS1WZU5VWEF3VHZhZGhWcWRuMHRLTXBZQl9Lc05kajVTX1hVR05SLWRudUNubEFVdDVrcjY3V2JXM0JmYnJJUS1aWFMzNVJ0bmg3Tm9zM0dUUWxLQTZ5QlA2V0VLSnFDdmZYa3V4MUhTQWc1aE1KaTQ2V1FjTlhydzByay1jeWtuemVRSHJDSlRqUnYyWmc1ckt0V1RoSHBLazE5V3FpWTZmcmVkMjlPX01wTUo3MDVYUnpteFNJbzlFVGcxYi1WRlZoNnd4dENQaXdDMjctVEFRSWY1alRobEFvZDVoNmdJSEEyTU9GQ1k4U3BJeFlRTUppVHI1azF2NTIzYThNYjNBZkhMZW5GdURERWJYSVIxQjMzQXVUTlRxSm0tM1U2TWZmelN5bzZYTXFrMGd1ODFxUENydWtWT01lUUNxS1RNNlpRalEyazhyOEd3RjhudXlhTi1KSmh2Z2JPeW94Q1ROQURaS2JodFR6OV9YRGFOakFyaXRwZVBQNjh4RHUyTE9iOUE1M2dVcWJYSy1hanlJTElvU0hDbGtsQ2l2MWJFeWYwYXZPa0t6YjZjWGc5RTNlVllDVVVrajNxRERsSExKajZNWERsT3Q3Z1FMMWYyVnVtaWFUUV9CTHRZc05GbzMtdGJSN0NLc1NMb1g5cTlXZDZIWGJKbmRiczNsaW82bDFPTTdKLXFXZUhJNVliallTSDRHM1hnRWZlN3JpVGRRWG1zZmZWNG9jSlR2YmkzaVlUYkpkZ29IR21XaFFMdmQyM3d2M1FjeUhCM2liX1REbFdGb2YtRXI1S3ltWnZpY0hudUFjaHN1TGdNYUJWVzFIUXQwbA?oc=5"
+        },
+        {
+          "titleKo": "샤파크 뉴스.. 바그다드, 에르빌 시장에서 달러 하락",
+          "source": "شفق نيوز",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBFUEZ5RjJTc1ppeGtZWkNEM3RxZmVGYjh6NUd0TGdKcmp5UG1HSFhyem9rcmJCR05zc1NTTDBQN3NSbzBBaE84UzBCS2ZwQU5IVlFUekVtZjMtVTlLRjlkOGhBdzdrYkJhdEkzWjNMakRFOEFGVGFNNHpaMTJDdw?oc=5"
+        }
+      ],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "US dollar edges higher across Baghdad, Erbil, and Basra",
+      "source": "IraqiNews",
+      "link": "https://www.iraqinews.com/iraq/us-dollar-exchange-rate-edges-higher-baghdad-erbil-basra-november-25-2026/",
+      "date": "2026-11-25T13:49:53.000Z",
+      "lang": "en",
+      "titleKo": "바그다드, 에르빌, 바스라 전역에서 미 달러화 가치 상승",
+      "url": "https://www.iraqinews.com/iraq/us-dollar-exchange-rate-edges-higher-baghdad-erbil-basra-november-25-2026/",
+      "body": "US dollar edges higher across Baghdad, Erbil, and Basra\nBaghdad (IraqiNews.com) – The exchange rate of the U.S. dollar against the Iraqi dinar edged slightly higher across major domestic parallel markets on Wednesday morning, November 25, 2026, with purchasing bids hovering near the 169,000-dinar threshold in key commercial centers after briefly testing the 168,000-dinar range earlier in the week.\nAccording to morning market figures, physical banknote rates opened across Baghdad, Erbil, and Basra with notable regional spreads.\nIn Baghdad, currency exchange counters posted retail selling rates at 169,250 IQD against buying offers of 168,750 IQD per $100.\nIn Erbil, currency desks recorded the sharpest uptick, quoting retail selling rates at 169,950 IQD—just 50 dinars shy of the 170,000-dinar mark—alongside purchasing bids of 169,700 IQD per $100.",
+      "bodyKo": "바그다드, 에르빌, 바스라 전역에서 미 달러화 가치 상승\n바그다드(IraqiNews.com) – 2026년 11월 25일 수요일 아침, 주요 국내 병행 시장에서 미국 달러 대비 이라크 디나르 환율이 소폭 상승했으며, 주요 상업 중심지에서 매수 호가가 이번 주 초 168,000디나르대를 잠시 테스트한 후 169,000디나르 선에 근접했다.\n오전 시장 수치에 따르면, 바그다드, 에르빌, 바스라 전역에서 현물 지폐 환율이 개장했으며 지역별로 눈에 띄는 차이가 나타났습니다.\n바그다드의 환전소는 미화 100달러당 169,250 이라크 디나르의 소매 판매 환율과 168,750 이라크 디나르의 매수 환율을 게시했습니다.\n에르빌의 환전소에서는 소매 판매 환율이 169,950 이라크 디나르(170,000 이라크 디나르에 불과 50 이라크 디나르 모자람)로 책정되었으며, 매수 호가 환율은 100달러당 169,700 이라크 디나르로 기록되어 가장 큰 상승폭을 보였습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "IraqiNews"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "العراق يتحرك لتأمين احتياجات محطات الكهرباء قبل صيف 2027",
+      "source": "شفقنا العراق",
+      "link": "https://iraq.shafaqna.com/AR/675684/",
+      "date": "2026-11-25T13:27:36.000Z",
+      "lang": "ar",
+      "titleKo": "이라크, 2027년 여름 이전에 발전소 수요 확보에 나서다",
+      "url": "https://iraq.shafaqna.com/AR/675684/",
+      "body": "عقد وزير الكهرباء علي سعدي وهيب اجتماعاً مع ممثلي الوزارات والجهات المعنية لبحث متطلبات تأمين الوقود اللازم لمحطات الكهرباء،\nشفقنا العراق-عقد وزير الكهرباء علي سعدي وهيب اجتماعاً مع ممثلي الوزارات والجهات المعنية لبحث متطلبات تأمين الوقود اللازم لمحطات الكهرباء، ومناقشة المشاريع الكفيلة باستيعاب كميات الغاز الإضافية خلال العام المقبل، استعداداً لصيف 2027.\nوذكرت الوزارة في بيان ان “وزير الكهرباء، علي سعدي وهيب، ترأس اجتماع الفريق التنسيقي المشترك، بحضور وكيل وزارة النفط لشؤون الغاز، والمديرين العامين لشركة غاز الجنوب والشركة العامة لموانئ العراق، ومعاون مدير عام شركة الخطوط والأنابيب النفطية، ومدير ميناء خور الزبير، وممثل عن مكتب رئيس مجلس الوزراء، وممثلين عن وزارتي المالية والتخطيط، فضلاً عن الملاك المتقدم في وزارة الكهرباء”.\nوتابعت انه “جرى خلال الاجتماع بحث استكمال الإجراءات الفنية والإدارية الخاصة بنصب منصة الغاز «إكسيليريت»، لتأمين احتياجات الوحدات التوليدية من الغاز قبل حلول صيف عام 2027، إلى جانب مناقشة المشاريع اللازمة لاستيعاب كميات الغاز الإضافية خلال العام المقبل”.",
+      "bodyKo": "전력부 장관 알리 사디 와힙이 각 부처 및 관계 기관 대표들과 회의를 열고 발전소에 필요한 연료를 확보하기 위한 요건을 논의했습니다.\n샤파크나 이라크 - 알리 사디 와힙(Ali Saadi Wahib) 전력부 장관은 전력 발전소에 필요한 연료를 확보하기 위한 요건을 논의하고 2027년 여름을 대비하여 내년에 추가 가스량을 수용할 수 있는 프로젝트를 논의하기 위해 각 부처 및 관련 기관 대표들과 회의를 가졌습니다.\n\"전력부 장관 알리 사디 와힙이 가스 담당 석유부 차관, 남부 가스 회사 및 이라크 항만 공사 사장, 석유 송유관 회사 부사장, 쿠르 알주베르 항만장, 총리실 대표, 재정부 및 기획부 대표, 그리고 전력부 고위 공무원들이 참석한 가운데 합동조정단 회의를 주재했다\"고 전력부가 성명에서 밝혔습니다.\n이어 \"이번 회의에서는 2027년 여름 이전에 발전소의 가스 수요를 충족하기 위해 '엑셀러레이트' 가스 플랫폼 설치와 관련된 기술적, 행정적 절차를 완료하는 방안을 논의했으며, 내년에 추가 가스량을 수용하는 데 필요한 프로젝트에 대해서도 논의했다\"고 덧붙였다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفقنا العراق"
+      ],
+      "related": [],
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq's top court affirms federal powers over Kurdistan borders, oil",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/en/Iraq/Iraq-s-top-court-affirms-federal-powers-over-Kurdistan-borders-oil",
+      "date": "2026-11-25T13:25:22.000Z",
+      "lang": "en",
+      "titleKo": "샤파크 뉴스.. 이라크 최고 법원, 쿠르드 국경 및 석유에 대한 연방 권한을 확인",
+      "url": "https://shafaq.com/en/Iraq/Iraq-s-top-court-affirms-federal-powers-over-Kurdistan-borders-oil",
+      "body": "Shafaq News- Baghdad Iraq's Federal Supreme Court on Wednesday affirmed federal authority over border security, crossings and oversight of oil operations in the Kurdistan Region (KRI), a day after\nIn an interpretive ruling issued at Al-Zaidi's request, the country's highest court said the division of powers between Baghdad and the KRI authorities must not undermine Iraq's unity and sovereignty or break up the powers the constitution reserves exclusively for the federal government. The ruling, passed by a majority with two judges dissenting, is final and binding on all authorities.\nProtecting and securing Iraq's international borders is an exclusive federal power, the court said, and the federal government may deploy and manage the armed forces along all of Iraq's borders, including those in territory administered by the Kurdistan Region, which borders Turkiye, Iran and Syria.",
+      "bodyKo": "샤파크 뉴스 - 바그다드 이라크 연방 대법원은 수요일, 쿠르드 지역(KRI)의 국경 보안, 국경 통과 지점 및 석유 사업 감독에 대한 연방 권한을 확인했다. 이는 하루 전인\n알자이디의 요청에 따라 내려진 해석 판결에서 이라크 최고재판소는 바그다드와 쿠르드 자치정부(KRI) 당국 간의 권한 분배가 이라크의 통일과 주권을 훼손하거나 헌법이 연방 정부에만 독점적으로 부여한 권한을 침해해서는 안 된다고 밝혔다. 두 명의 판사가 반대 의견을 낸 가운데 다수결로 통과된 이 판결은 최종적이며 모든 당국에 구속력을 갖는다.\n법원은 이라크의 국제 국경을 보호하고 경비를 서는 것은 연방 정부의 고유 권한이며, 연방 정부는 튀르키예, 이란, 시리아와 국경을 맞대고 있는 쿠르드 자치구 관할 지역을 포함한 이라크 전 국경에 군대를 배치하고 관리할 수 있다고 밝혔다.",
+      "tried": true,
+      "count": 3,
+      "sources": [
+        "Reuters",
+        "شفق نيوز",
+        "The New York Times"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 최고 법원, 바그다드가 쿠르드 지역 국경 경비를 위해 군대를 배치할 수 있다고 밝혀",
+          "source": "Reuters",
+          "link": "https://www.reuters.com/world/middle-east/iraqs-top-court-says-baghdad-can-deploy-troops-secure-borders-kurdistan-region-2026-11-25/"
+        },
+        {
+          "titleKo": "이라크 총리, 쿠르드 지역으로부터 더 많은 권한을 빼앗으려 함",
+          "source": "The New York Times",
+          "link": "https://www.nytimes.com/2026/11/24/world/middleeast/iraq-prime-minister-kurdistan-control.html"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq targets oil smugglers, orders Kurdish oilfield takeover",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/11/24/iraq-targets-oil-smugglers-orders-kurdish-oilfield-takeover",
+      "date": "2026-11-25T13:22:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 석유 밀수업자 단속 및 쿠르드 석유 유전 인수 명령",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/iraq-targets-oil-smugglers-orders-kurdish-oilfield-takeover",
+      "body": "Iraq’s Prime Minister Ali al-Zaidi has ordered federal forces to take control of oilfields in Kurdish-controlled areas.",
+      "bodyKo": "이라크의 알리 알자이디 총리는 연방군에게 쿠르드족이 통제하는 지역의 유전을 장악하라고 명령했다.",
+      "tried": true,
+      "count": 4,
+      "sources": [
+        "عرب 48",
+        "Arab News",
+        "الحرة",
+        "Al Jazeera"
+      ],
+      "related": [
+        {
+          "titleKo": "정보 보고서: 이라크 정부, 이란으로의 석유 밀수 경로 차단 시도",
+          "source": "عرب 48",
+          "link": "https://www.arab48.com/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88%D8%AF%D9%88%D9%84%D9%8A%D8%A9/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1--%D8%A7%D9%84%D9%88%D8%B7%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/2026/11/25/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D8%A7%D8%B3%D8%AA%D8%AE%D8%A8%D8%A7%D8%B1%D8%A7%D8%AA%D9%8A-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AA%D8%B3%D8%B9%D9%89-%D9%84%D9%82%D8%B7%D8%B9-%D8%B7%D8%B1%D9%82-%D8%AA%D9%87%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A5%D9%84%D9%89-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86"
+        },
+        {
+          "titleKo": "이라크, 이란으로 향하는 석유 밀수 경로 단속",
+          "source": "Arab News",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQkRKWWF1N2lGUkgxTkVtUGtZd3YwME5QemZtTWQ2NUU3TnNWODFpSF9XUmpHcFliUXpOSTB6TVFHNFFOWDFJcmQ3TWFCNDV4NTh6SDZGdFUzeS1ieEk2b25XYjE5cUtWdnFQa0dxcjBxNUttTndTdUcwbjNRTlhzY21fZUtJeURWdjdubEFCTUQ1MFBxV2liWU9ONjk?oc=5"
+        },
+        {
+          "titleKo": "단독 보도: 이라크, 쿠르드스탄 석유 밀수 관련 군사 조치 검토",
+          "source": "الحرة",
+          "link": "https://alhurra.com/en/57325"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "What Are the Expected Gains from Scrapping Egypt–Iraq Entry Visas? - ASHARQ AL-AWSAT English",
+      "source": "ASHARQ AL-AWSAT English",
+      "link": "https://english.aawsat.com/arab-world/5345391-what-are-expected-gains-scrapping-egypt%E2%80%93iraq-entry-visas",
+      "date": "2026-11-25T13:07:30.000Z",
+      "lang": "en",
+      "titleKo": "이집트-이라크 입국 비자 폐지로 기대되는 이점은 무엇인가? - 아샤르크 알 아우사트(ASHARQ AL-AWSAT) 영어판",
+      "url": "https://english.aawsat.com/arab-world/5345391-what-are-expected-gains-scrapping-egypt%E2%80%93iraq-entry-visas",
+      "body": "Egypt and Iraq announced an agreement to scrap entry visas between the two countries as Iraqi Prime Minister Ali al-Zaidi made his first visit to the country where he met with President Abdel Fattah al-Sisi and senior officials. Following the announcement, Iraq’s ambassador to Cairo Dr. Qahtan Taha Khalaf revealed to Asharq Al-Awsat that \"the agreement stipulates granting visas upon arrival and lifting the security clearance requirement for Iraqis traveling to Egypt.\"\nSpeaking during a press conference with the Egyptian president on Monday, al-Zaidi said the two countries agreed to cancel entry visas to facilitate movement and communication between their citizens.\nNeither side has yet specified when the agreement will take effect.\nKhalaf told Asharq Al-Awsat that authorities in both countries are currently taking the necessary measures to implement the agreement on a visa-on-arrival basis.",
+      "bodyKo": "이집트와 이라크가 양국 간 입국 비자 폐지 합의를 발표했습니다. 이라크의 알리 알자이디 총리가 이집트를 처음 방문하여 압델 파타 엘시시 대통령 및 고위 관계자들을 만났습니다. 이 발표에 이어, 카이로 주재 이라크 대사인 카탄 타하 칼라프 박사는 아샤르크 알아우사트(Asharq Al-Awsat)에 \"이 협정은 이집트를 방문하는 이라크인에게 도착 시 비자를 발급하고 보안 심사 요건을 폐지하도록 규정하고 있다\"고 밝혔다.\n월요일 이집트 대통령과 함께한 기자회견에서 알자이디 장관은 양국이 국민 간 이동과 교류를 촉진하기 위해 입국 비자를 폐지하기로 합의했다고 밝혔다.\n아직 어느 쪽도 합의가 언제 발효될지 명시하지 않았다.\n칼라프 장관은 아샤르크 알 아우사트(Asharq Al-Awsat)에 두 나라의 당국이 현재 도착 비자 제도를 시행하기 위한 필요한 조치를 취하고 있다고 밝혔습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "ASHARQ AL-AWSAT English"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq’s top court backs Zaidi’s move against the Kurdistan Region despite Kurdish rejection",
+      "source": "Rudaw",
+      "link": "https://rudaw.net/english/categories/iraq/1080314",
+      "date": "2026-11-25T13:01:18.000Z",
+      "lang": "en",
+      "titleKo": "이라크 최고재판소, 쿠르드족의 반대에도 불구하고 쿠르드 자치구에 대한 자이디 총리의 조치를 지지",
+      "url": "https://rudaw.net/english/categories/iraq/1080314",
+      "body": "Iraq's Federal Supreme Court (SFC) on Wednesday affirmed Baghdad's authority over international borders, border crossings and the management of oil and gas resources, in a ruling that could strengthen",
+      "bodyKo": "이라크 연방대법원(SFC)은 수요일, 바그다드의 국제 국경, 국경 통과 지점 및 석유·가스 자원 관리에 대한 권한을 확인하는 판결을 내렸다. 이 판결은",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "The Arab Weekly",
+        "Rudaw"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 최고재판소, 자이디 총리의 쿠르드 자치구 국경에 병력 배치 결정 지지",
+          "source": "The Arab Weekly",
+          "link": "https://thearabweekly.com/iraqs-top-court-backs-zaidis-move-deploy-troops-kurdistan-borders"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "FILE PHOTO: Iraqi Prime Minister Ali al-Zaidi delivers a speech marking Sovereignty Day and the withdrawal of U.S.-led coalition forces from Iraq, in Baghdad",
+      "source": "The Lufkin Daily News",
+      "link": "https://lufkindailynews.com/news_reuters/top_news/file-photo-iraqi-prime-minister-ali-al-zaidi-delivers-a-speech-marking-sovereignty-day-and/image_980a2504-d213-53b5-8d94-63bc9f4cc792.html",
+      "date": "2026-11-25T12:55:16.000Z",
+      "lang": "en",
+      "titleKo": "파일 사진: 이라크 바그다드에서 알리 알자이디 이라크 총리가 주권의 날과 미국 주도 연합군의 이라크 철수를 기념하는 연설을 하고 있다.",
+      "url": "https://lufkindailynews.com/news_reuters/top_news/file-photo-iraqi-prime-minister-ali-al-zaidi-delivers-a-speech-marking-sovereignty-day-and/image_980a2504-d213-53b5-8d94-63bc9f4cc792.html",
+      "body": "FILE PHOTO: Iraqi Prime Minister Ali al-Zaidi delivers a speech marking Sovereignty Day and the withdrawal of U.S.-led coalition forces from Iraq, in Baghdad, Iraq, September 30, 2026.",
+      "bodyKo": "파일 사진: 2026년 9월 30일 이라크 바그다드에서 알리 알자이디 이라크 총리가 주권의 날과 미국 주도 연합군의 이라크 철수를 기념하는 연설을 하고 있다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "The Lufkin Daily News"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "지난 사건 관련 보도 — 현장 직접 영향 없음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "العراق يستعد لصيف 2027.. وزير الكهرباء يتابع نصب منصة “إكسيليريت” لتأمين الغاز",
+      "source": "شبكة 964",
+      "link": "https://964media.com/740411/",
+      "date": "2026-11-25T12:37:49.000Z",
+      "lang": "ar",
+      "titleKo": "이라크, 2027년 여름 준비... 전력부 장관, 가스 공급을 위한 '엑셀러레이트' 플랫폼 설치 점검",
+      "url": "https://964media.com/740411/",
+      "body": "بغداد – 964 ترأس وزير الكهرباء، علي سعدي وهيب، اليوم الأربعاء (25 تشرين الثاني 2026) اجتماع الفريق التنس\nانضموا إلى أسرع منصاتنا وذكر بيان للوزارة تلقت شبكة 964 نسخة منه، أنه “ترأس وزير الكهرباء علي سعدي وهيب، اجتماع الفريق التنسيقي المشترك، بحضور وكيل وزارة النفط لشؤون الغاز، والمديرين العامين لشركة غاز الجنوب والشركة العامة لموانئ العراق، ومعاون مدير عام شركة الخطوط والأنابيب النفطية، ومدير ميناء خور الزبير، وممثل عن مكتب رئيس مجلس الوزراء، وممثلين عن وزارتي المالية والتخطيط، فضلاً عن الملاك المتقدم في وزارة الكهرباء”.\nوأوضح البيان، أنه “جرى خلال الاجتماع بحث استكمال الإجراءات الفنية والإدارية الخاصة بنصب منصة الغاز (إكسيليريت)، لتأمين احتياجات الوحدات التوليدية من الغاز قبل حلول صيف عام 2027، إلى جانب مناقشة المشاريع اللازمة لاستيعاب كميات الغاز الإضافية خلال العام المقبل”.\nوأشار البيان، إلى أن “الاجتماع يأتي في إطار تعزيز التنسيق والتكامل بين الجهات المعنية، وتسريع تنفيذ المشاريع المرتبطة بتأمين الوقود اللازم للمحطات التوليدية، بما يسهم في تعزيز القدرات الإنتاجية واستقرار تجهيز الط",
+      "bodyKo": "바그다드 – 964 전기부 장관 알리 사디 와힙이 오늘 수요일(2026년 11월 25일) 조정팀 회의를 주재했습니다.\n저희의 가장 빠른 플랫폼에 가입하세요. 964 네트워크가 입수한 성명서에 따르면, \"전력부 장관 알리 사디 와힙이 가스 담당 석유부 차관, 남부 가스 회사 및 이라크 항만 공사 사장, 석유 송유관 회사 부사장, 쿠르 주베르 항만 관리자, 총리실 대표, 재정부 및 기획부 대표, 그리고 전력부 고위 관계자들이 참석한 가운데 합동 협의체 회의를 주재했습니다.\"라고 전했습니다.\n성명은 \"회의에서 2027년 여름 이전에 발전소의 가스 수요를 충족하기 위해 가스 플랫폼(엑셀러레이트) 설치와 관련된 기술적, 행정적 절차를 완료하는 문제를 논의했으며, 내년에 추가 가스량을 수용하는 데 필요한 프로젝트에 대해서도 논의했다\"고 설명했다.\n성명서는 \"이번 회의는 관련 기관 간의 협력과 통합을 강화하고 발전소에 필요한 연료를 확보하는 것과 관련된 프로젝트의 이행을 가속화하여 생산 능력 강화와 전력 공급의 안정성에 기여하기 위한 노력의 일환으로 개최된다\"고 밝혔습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شبكة 964"
+      ],
+      "related": [],
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq’s Christmas celebrations contrast with continued decline of Christian presence -",
+      "source": "SyriacPress",
+      "link": "https://syriacpress.com/blog/2026/11/25/iraqs-christmas-celebrations-contrast-with-continued-decline-of-christian-presence/",
+      "date": "2026-11-25T12:26:22.000Z",
+      "lang": "en",
+      "titleKo": "이라크의 성탄절 축하 행사는 기독교인 인구의 지속적인 감소와 대조를 이룹니다.",
+      "url": "https://syriacpress.com/blog/2026/11/25/iraqs-christmas-celebrations-contrast-with-continued-decline-of-christian-presence/",
+      "body": "BAGHDAD — In Iraq, where Christianity has roots dating back to the 1st century AD, Christmas carries a significance that\n25 Nov 2026 BAGHDAD — In Iraq, where Christianity has roots dating back to the 1st century AD, Christmas carries a significance that extends far beyond religious celebration. Although 25 December has been an official national holiday for all Iraqis since 2020, many Iraqi Christians, both in the country and across the diaspora, argue that symbolic recognition has not translated into meaningful improvements in their circumstances. Their communities have experienced one of the largest waves of displacement and emigration in their modern history over the past two decades.\nOn 16 December 2020, the Iraqi Parliament voted to recognize Christmas as a public holiday for all citizens, following a request from then-President Barham Salih. Previously, the holiday had been officially observed only by Christians. The decision was widely welcomed, but it also raised a fundamental q",
+      "bodyKo": "바그다드 — 기독교가 서기 1세기까지 거슬러 올라가는 뿌리를 가진 이라크에서 크리스마스는\n2026년 11월 25일 바그다드 — 기독교가 서기 1세기까지 거슬러 올라가는 뿌리를 가진 이라크에서 크리스마스는 종교적 축하 행사를 훨씬 뛰어넘는 의미를 지닙니다. 2020년부터 12월 25일은 모든 이라크인에게 공식적인 국경일이지만, 이라크 국내와 해외 디아스포라에 있는 많은 이라크 기독교인들은 이러한 상징적 인정이 자신들의 처지에 의미 있는 개선으로 이어지지 않았다고 주장합니다. 이들의 공동체는 가장 심각한 종교적 박해 중 하나를 경험해 왔습니다.\n2020년 12월 16일, 이라크 의회는 당시 바르함 살리흐 대통령의 요청에 따라 성탄절을 모든 시민을 위한 공휴일로 인정하는 데 찬성표를 던졌습니다. 이전에는 이 명절을 공식적으로 기리는 것은 기독교인들뿐이었습니다. 이 결정은 널리 환영받았지만, 동시에 근본적인 의문을 제기하기도 했습니다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "SyriacPress"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq foils oil-smuggling attempts, detects pipeline tampering in 2 provinces",
+      "source": "Anadolu Ajansı",
+      "link": "https://www.aa.com.tr/en/middle-east/iraq-foils-oil-smuggling-attempts-detects-pipeline-tampering-in-2-provinces/4137217",
+      "date": "2026-11-25T12:04:59.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 석유 밀수 시도 저지 및 2개 주에서 송유관 조작 적발",
+      "url": "https://www.aa.com.tr/en/middle-east/iraq-foils-oil-smuggling-attempts-detects-pipeline-tampering-in-2-provinces/4137217",
+      "body": "Former head of Iraq’s ports authority arrested in Cairo on corruption charges amid broader government crackdown | Anadolu\nEDITION Iraq foils oil-smuggling attempts, detects pipeline tampering in 2 provinces Middle East Iraq foils oil-smuggling attempts, detects pipeline tampering in 2 provinces Former head of Iraq’s ports authority arrested in Cairo on corruption charges amid broader government crackdown Ikrame Imane Kouachi 25 November 2026 • Update : 25 November 2026 Archive İSTANBUL Iraq’s National Security Service said Wednesday it had foiled attempts to smuggle oil and petroleum products and detected a breach in an oil pipeline in two governorates.\nIn a statement, the agency said its forces “thwarted attempts to smuggle oil and its derivatives and detected a breach in an oil pipeline in two governorates.”",
+      "bodyKo": "정부의 대대적인 단속 속에서 부패 혐의로 카이로에서 체포된 이라크 항만청 전 청장 | 아나돌루\n에디션 이라크, 석유 밀수 시도 저지 및 2개 주에서 송유관 조작 적발 중동 이라크, 석유 밀수 시도 저지 및 2개 주에서 송유관 조작 적발 정부의 대대적인 단속 속에서 이라크 항만청 전 청장이 부패 혐의로 카이로에서 체포됨 이크라메 이만 쿠아치 2026년 11월 25일 • 업데이트: 2026년 11월 25일 아카이브 이스탄불 이라크 국가안보국은 11월 20일 수요일 석유 및 석유 제품 밀수 시도를 저지했다고 밝혔다.\n청은 성명에서 자국 군대가 \"석유 및 석유 파생 제품의 밀수를 저지하고 두 개 주에서 석유 파이프라인 파손을 적발했다\"고 밝혔다.",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Anadolu Ajansı"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "[경제풍향계] 이라크 야생 밀이 가뭄·해충 저항성 강한 '듀럼 밀'로 재탄생",
+      "source": "https://www.climatepol.com/",
+      "link": "https://www.climatepol.com/news/articleView.html?idxno=36903",
+      "date": "2026-11-25T11:52:00.000Z",
+      "lang": "ko",
+      "titleKo": "[경제풍향계] 이라크 야생 밀이 가뭄·해충 저항성 강한 '듀럼 밀'로 재탄생",
+      "url": "https://www.climatepol.com/news/articleView.html?idxno=36903",
+      "body": "지중해의 따가운 햇살이 내리쬐는 터키 안탈리아에서 각국 정부 대표단이 유엔 기후변화 회의(COP31) 협상 테이블에 마주 앉은 2026년 11월, 기후 재원 분배",
+      "bodyKo": "지중해의 따가운 햇살이 내리쬐는 터키 안탈리아에서 각국 정부 대표단이 유엔 기후변화 회의(COP31) 협상 테이블에 마주 앉은 2026년 11월, 기후 재원 분배",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "https://www.climatepol.com/",
+        "저스트 이코노믹스"
+      ],
+      "related": [
+        {
+          "titleKo": "[돋보기] 이라크 야생 밀이 가뭄·해충 저항성 강한 '듀럼 밀'로 재탄생",
+          "source": "저스트 이코노믹스",
+          "link": "https://www.justeconomix.com/ko-kr/articles/154496"
+        }
+      ],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "이라크, 이란으로 유입되는 석유 흐름 통제 강화",
+      "source": "Laodong.vn",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOcXk1WEh1dURxSG8wbUdoZ21scE9OU1ZfODlOLWt2VElYS0RROTV6bDZ0em9KSTV2S0hnNVNpeVVHZ3laY3IxVmtSbXFsTDl6T2h1azZyOUJrZlVTYk9WYkhCR1N5dlZOOERSVFlYc1FOM3R3SlowenBJYnVvSWFITk1iajVPdWVrc1hRODdKbFRoNHR4M1dpY283RQ?oc=5",
+      "date": "2026-11-25T11:36:00.000Z",
+      "lang": "ko",
+      "titleKo": "이라크, 이란으로 유입되는 석유 흐름 통제 강화",
+      "count": 2,
+      "sources": [
+        "Laodong.vn",
+        "Upstream Online"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 총리, 쿠르드 지역 석유 산업에 대한 통제 강화 명령",
+          "source": "Upstream Online",
+          "link": "https://www.upstreamonline.com/production/iraq-pm-orders-ministry-to-tighten-control-over-kurdish-region-oil-industry/2-1-2078796"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "بوابات التهريب في كردستان.. مواجهة مرتقبة بين قرارات بغداد وممانعة أربيل",
+      "source": "المعلومة",
+      "link": "https://news.google.com/rss/articles/CBMi9wNBVV95cUxPcWZnQVlleU54N1FkVllFSDlFY3hUaHE0NEsxYWZ5ZlFtbnI2Q2ZuM3VORjdhSHFsNFhnM1UzRVJMWk1FakRHdmNQMFNKRUJhVTc2T2xRd1FQblI2a0d5cHkzc0d6M21nekx5TW1sZkhWa2tBXzZpWGtQb3pVY3U4VzUyUUZMOHo0eGtic3VZRG03Q2lVVnR4ZVVpdGd0QUVQQmxCZ1FERHVNMXdkWlFIa1R0LUE5VVA1aVNKUHppakNTWjJySVBkem04QTV4X2lxU3RWd0NVYlVPMnhlS2tHV0FNZ3RfS2ttMTZibk8xa3gzMGRPMjVvcnA1aXNId3dPN29kNWtzaG5DaHZDNFgyY2pPNG56M3dOVHBGbVdBTm1BLTJkMW53RTFhS3RUUXRpQ3FkcmpHeElVek9OMmtTMmJMc0dGX0ZqZTRVNVlUWkNmSkN4dHh3MjVpRU05NW1xYWkyWHg4dEc1YVFvLTFuSjF3b3NIY0RxaWNJZElkdnRSWGRzNFNpU3lzcWh2MGlJT3VTYjB6MmpZQXkza2JNY2dTeXJzYVAxSnVIMXota0RlbUd3SHpmZzhSOHFtWHRTdFItZU1EaWR1NEctbjVlbVdlOTgtUWozV1NvdzEzX3hUZUxSc1dLQkpRVVRkelVMWURmM1NvSQ?oc=5",
+      "date": "2026-11-25T11:11:52.000Z",
+      "lang": "ar",
+      "titleKo": "쿠르드스탄의 밀수 통로... 바그다드 결정과 에르빌의 저항 사이의 예상되는 대립",
+      "count": 1,
+      "sources": [
+        "المعلومة"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Kurdish parties hit back at Iraq's plans to take control of oil sector",
+      "source": "Quantum Commodity Intelligence",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWFNMVUVQY0tIZktsdmJsZUhYcUhpZnJRNXRrb0NWZ3pDRUYwYWdtU1dlWmhXNjJMZmlMQTJjZEc4YkNsZGFTOU5fUy1yZlIta1BaMmd1YnZDRG9GcHBlaHFXbVlKX25SZ2JNNERuSWp6bVdxS1FheG1wM0N3bkx3czZ3TXZnT1ZnejBqSm5iNU44SVJQZ2JndFYwSldsOGVmMWgtSG9XMzB5MTdPZzRoTFZtbw?oc=5",
+      "date": "2026-11-25T11:07:05.000Z",
+      "lang": "en",
+      "titleKo": "쿠르드 정당들, 이라크의 석유 부문 통제 계획에 반발",
+      "count": 1,
+      "sources": [
+        "Quantum Commodity Intelligence"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "National Security Advisor: Diversity and pluralism are a sign of social peace in Iraq » Iraqi News Agency",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZk4xRF81RjdsVHpGVFdaaFlZTDVTaFZvY0F4RklSZHRSN2Vaa0FKNVhRQ25JQ3o2TjByVWlXOXFscU5PN2tLSFZwWWpoWXRNaUVKTVJBRXc0YUt3UDl1cWhPUklDOTEzWG04T2FRRkppMTFvdXhMcnZpZmh2VFRodjB2NEkwU3gyR0xfcXZuT0RJRmpDWjA3X2c0akRzY1ByRnd2ZkJtcnF4dVEydUtLaU53V0plM01CNUtF?oc=5",
+      "date": "2026-11-25T11:05:43.000Z",
+      "lang": "en",
+      "titleKo": "국가안보보좌관: 다양성과 다원주의는 이라크 사회 평화의 징표 » 이라크 뉴스 통신사",
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Baghdad to manage oilfields under Kurdish security control",
+      "source": "IraqiNews",
+      "link": "https://www.iraqinews.com/iraq/baghdad-to-manage-oilfields-under-kurdish-security-control/",
+      "date": "2026-11-25T10:59:09.000Z",
+      "lang": "en",
+      "titleKo": "바그다드, 쿠르드족의 보안 통제 하에 유전 관리",
+      "url": "https://www.iraqinews.com/iraq/baghdad-to-manage-oilfields-under-kurdish-security-control/",
+      "body": "Baghdad to manage oilfields under Kurdish security control\nBaghdad (IraqiNews.com) – Iraqi Prime Minister Ali al-Zaidi ordered on Tuesday the federal Ministry of Oil to manage oilfields under Kurdish security control, triggering an immediate rejection from the Kurdistan Regional Government (KRG) and escalating a broader campaign to centralize state power.\nAl-Zaidi’s directives follow an investigation into massive crude oil smuggling at the state-run North Oil Company.\nThe federal Oil Ministry in Baghdad must take over Kurdish-secured fields in four northern provinces—Kirkuk, Nineveh, Diyala, and Salah al-Din.\nErbil is prohibited from approving crude or refined product exports without federal ministry sign-off.\nIraq’s Border Ports Authority is instructed to take over all official border crossings in the Kurdistan region of Iraq, while security forces close informal crossings and unpaved roads connecting Iraqi Kurdistan to neighboring provinces.",
+      "bodyKo": "바그다드, 쿠르드족의 보안 통제 하에 유전 관리\n바그다드(IraqiNews.com) – 알리 알자이디 이라크 총리는 12일(화) 연방 석유부에 쿠르드 보안군의 통제 하에 있는 유전을 관리하도록 명령했다. 이에 쿠르드 지역 정부(KRG)는 즉각 반발했으며, 국가 권력의 중앙 집중화를 위한 더 광범위한 캠페인이 가속화되었다.\n자이디 장관의 지시는 국영 북부 석유 회사(North Oil Company)에서 발생한 대규모 원유 밀수 사건에 대한 조사에 따른 것이다.\n바그다드의 연방 석유부는 키르쿠크, 니네베, 디얄라, 살라흐 알딘 등 북부 4개 주에 있는 쿠르드족이 확보한 유전을 인수해야 한다.\n에르빌은 연방 정부 부처의 승인 없이 원유 또는 정제 제품의 수출을 승인할 수 없다.\n이라크 국경항만청은 이라크 쿠르드 지역의 모든 공식 국경 통과 지점을 인수하도록 지시받았으며, 보안군은 이라크 쿠르드 지역을 이웃 주와 연결하는 비공식 통과 지점과 비포장 도로를 폐쇄하고 있다.",
+      "tried": true,
+      "count": 4,
+      "sources": [
+        "cwibc.co.id",
+        "The Japan Times",
+        "IraqiNews",
+        "Yahoo"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 총리, 쿠르드족 유전 및 국경 통제권 장악",
+          "source": "cwibc.co.id",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE95X0Vsa2NjRExDa241anBSOHAtc0txSXhmTWNwNkVWXy02N0N3dlJzelZ0eXFuVkswS05WZUM3TkZNalpRVmFzX09KLWIxSHhaMXRmZXBKMkRjN2JfLTJFQlp3?oc=5"
+        },
+        {
+          "titleKo": "이라크 총리, 쿠르드족이 통제하는 유전 확보에 나서며 양측 관계 더욱 악화",
+          "source": "The Japan Times",
+          "link": "https://www.japantimes.co.jp/news/2026/11/25/world/iraqi-pm-kurds-oilfields/"
+        },
+        {
+          "titleKo": "이라크 총리, 쿠르드족 보안 통제 지역 내 유전 관리 업무를 해당 부처에 지시",
+          "source": "Yahoo",
+          "link": "https://www.reuters.com/world/middle-east/iraqi-pm-orders-takeover-kurdistan-regions-border-crossings-after-oil-smuggling-2026-11-24/"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Iraqi parliament speaker urges Baghdad, Erbil to refrain from escalatory rhetoric",
+      "source": "The New Region",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9PUV9iNkdsX00zV1JHUENaakVpMS16LTBzLW1aVW9NbnFRemhtb3VjOHQxY0dERXFGc2Q2eUF1WDd0NlFRanh1ekNFUQ?oc=5",
+      "date": "2026-11-25T10:47:07.000Z",
+      "lang": "en",
+      "titleKo": "이라크 국회의장, 바그다드와 에르빌에 긴장 고조를 부추기는 발언 자제 촉구",
+      "count": 1,
+      "sources": [
+        "The New Region"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "KRG cabinet calls for full implementation of Iraqi constitution amid tensions with Baghdad",
+      "source": "The New Region",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE83bFAtczdwdjB5bUVQcXByRkJFTXExUzM4TndJSW9ZXzdNUnNscW5TX19pY1pfRFIxRUxfSDlWaWhxTm9SZ20wS2dBUQ?oc=5",
+      "date": "2026-11-25T10:47:07.000Z",
+      "lang": "en",
+      "titleKo": "KRG 내각, 바그다드와의 긴장 속에서 이라크 헌법의 완전한 이행 촉구",
+      "count": 1,
+      "sources": [
+        "The New Region"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Deputy Prime Minister inaugurates the Iraq International Exhibition and Conference for Transport, Airports, and Logistics",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPMzY1UDk1QjB4VWUxNmIxWFdkczN2SlhTeWVVU3p2SmRQVURNTG9DZ1Bqbm9WcFl3eGhEckxma1FONW4wVUV6eWROelJsLWZqYTBtLWhkLTZUUEFrVnNZMkRaY21vbkViLVhOWWZLRGhZS1ZfMWlTVk1mS0Z4MXBTdVZLVDNaM0xFdU1mQTBpNXp2NUY4ZndMNjY5MHZCZjI2NHYyNGUxM0M3VmxINDBzWTVxY1A4UFNJR3VRcGIyVFRZeTVNRFJJVjVMbWk5bWwtcGpxSnl1dFhCQlZ3Tl9YcjRzd0lTSHgwM0E?oc=5",
+      "date": "2026-11-25T10:40:40.000Z",
+      "lang": "en",
+      "titleKo": "부총리, 이라크 국제 교통, 공항 및 물류 전시회 및 컨퍼런스 개막식 개최",
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "وقفة احتجاجية لأهالي حي سكني بالموصل بسبب تردي الخدمات (صور)",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMi_gNBVV95cUxNQjhGUHdCckVsWUVzU3FuR0JUUzNvTExVX1M3T1NGOWFqekpDMzRWR0FBcHk0Qm1yQ0g5UjdScGxpY0VXd3FfXzNnSWltM0w3VF96cDl0cExDZjBmbURHUDJGcllkMW15UThSY25nVTQycU84ZEZVRDc1bTdoMGFvOUdOYzlIRTlDRE5lUWdwOTBkOGltVHNLZjhOc3BnQTJKRGpPNzUtVGkyendrZFlCZHNCRnJIUkRUQXgzcFlKbzhPMm50Y254MW5RX19fbk04UDdha192NzB2bGhYRk5oNGU0LXNqWVgzTGtlamRYRkNvQ1lZdTZDdXVKbGt3RWltOWFPUUNiVmJqLUl3NDRYc3U3YkJqb2FHd2tieE5iUHpmR3A2eTVTaWk1UV9TS1Q0M2tyUGp4QmFkQXRfLTdoSUU1c0xfd1VXZXBtTk5UYk5yNlZJV2gzcTJ4LUp0T0ZqaVp4THI2LXM4enNLSGxDWDc3Yjl0UVRqR2RjOWh4RU1MSDBBMVpzbklLRTk5RVk4a2l4Tnp1dmtFSk56TkVHd0ZkenZNTEdZQldIdEJINThWU0JiQTY3cFlNdmxtSTE5QkhaTjVKd0NkNEY4QVR6WHIyTWVUZi01ck9ZSXlTNmh4QUU5OVl3YkJDV3pCd0E3em5jTm5Gc1R4NW9aTnc?oc=5",
+      "date": "2026-11-25T10:27:49.000Z",
+      "lang": "ar",
+      "titleKo": "서비스 악화로 인한 모술 주거 지역 주민들의 항의 시위(사진)",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "g",
+        "line": "다른 지역 시위 (모술) — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "모술",
+        "km": 375
+      }
+    },
+    {
+      "title": "Iraq rebuffs claims of US influence over security decisions",
+      "source": "Middle East Online",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWVR3bHdfRUxhMGpYYlZCYW1QZFZ5TTkxRnM1QkxVR2JrMGRDRVdRa2NwM1czX01tYi1yUHgzQ25yUnhFdlVIZUdjNWNuekM1SEVFcVRKdHpOdTRGcXA3RE5yY0pPWEgxeGZ4XzF1S2tSNGZMUmpYVDJ5LU5KQ1R3ZTFKR050MUFJUWhDc0pFVG53WmRO?oc=5",
+      "date": "2026-11-25T10:18:11.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 안보 결정에 대한 미국의 영향력 주장에 반발",
+      "count": 1,
+      "sources": [
+        "Middle East Online"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "15 million reliant on state income strain Iraq’s dinar and 2027 budget",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSnRQOVR0NTVvQTQ2Yi0zWVU5ODFSaG11U0J1MlMwdVNSa0Q2LTNfYzZzRlVwWS0xQ0k3Z0VNU0I3a0tsZFVCX3ZNWF8tbWVtTFZzUS0teEhPd1lKd2tKdldlV1E3dnRUSEpkb0N6cWlwQ09OWG4tN0wwLTUtU1NmZEQ3Vjh5QU53YVluVjhlVmhqQy02anlsc2UzdXpabVRMeTNOTTRB?oc=5",
+      "date": "2026-11-25T09:09:35.000Z",
+      "lang": "en",
+      "titleKo": "샤파크 뉴스..1,500만 명이 국가 수입에 의존하는 상황이 이라크 디나르와 2027년 예산에 부담을 주고 있다",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq declares curfew in southern Basra",
+      "source": "Yeni Safak English",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNT1NsU01fWW80SER0ZGpQT29sYmQxdnN3UFVwWklybUthcVNxdUVETkdyeVVOYzRoSjBKTi1zU1dvaDlCTVVPN3Jzc3R3NDN2QWJRV3d6MVM2Ti1LQ3IydHFmdW1vT0QtZ000YW5uM29qLUxwZ3FqcUctX3gzbGpRVHo4QQ?oc=5",
+      "date": "2026-11-25T08:49:57.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 남부 바스라에 통행금지령 선포",
+      "count": 1,
+      "sources": [
+        "Yeni Safak English"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "g",
+        "line": "다른 지역 도로 통제 (바스라) — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "바스라",
+        "km": 422
+      }
+    },
+    {
+      "title": "مصرع 4 أشخاص وإصابة 30 في حريق بمحطة كهرباء بالبصرة العراقية",
+      "source": "وكالة الأنباء العمانية (العمانية)",
+      "link": "https://omannews.gov.om/topics/ar/88/show/477071",
+      "date": "2026-11-25T08:33:51.000Z",
+      "lang": "ar",
+      "titleKo": "이라크 바스라의 발전소 화재로 4명 사망, 30명 부상",
+      "url": "https://omannews.gov.om/topics/ar/88/show/477071",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Yeni Safak English",
+        "وكالة الأنباء العمانية (العمانية)"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크 바스라에서 보안군과의 충돌로 시위대 1명 사망, 25명 부상",
+          "source": "Yeni Safak English",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPb0Z2ZTBWZWd0V3FsOENrSTBPWDJBOGNRdml6TFhCeG5tY2JVZkRHWnFPc2ZNb09zU0VVOXNFZ1V2VjJfVjlNSjB3eFVTazE0UGo3ck0yaF9qMTVNTWpTRzlSMnN5Um1XT0xpeGxKeThTelZJblZrYUQtbWs5X2RiRkV5VEtOVXBUQkVtV09Temx5X3Q0TlZucnlFaXo3UjcxQ3JaXzlZUER1cXJCdl9RVzRqdzZOQQ?oc=5"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바스라",
+        "km": 422
+      }
+    },
+    {
+      "title": "New Iraqi parliament convenes for 1st time since polls",
+      "source": "Yeni Safak English",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcUxNeTZtSWtHSlBPMkl4Y3h5MzBSYkxpUjV0SkVRWVRTb2J6Rzk0Tnd3OWU4dmRuN0pKdEQ2UTZ3cHItcWx5eXA3ZFN5b3ZzbS1CN2ROQjc1SHMtbTRXNjJYN21EXzU0Zm9Va0hkOWxaUUw3Tjd3UzBDWGNlRkZZSEFCZDF1VldUb0lfMzlRYkk0TjVvRG8yOA?oc=5",
+      "date": "2026-11-25T08:27:51.000Z",
+      "lang": "en",
+      "titleKo": "총선 이후 처음으로 소집된 이라크 새 의회",
+      "count": 1,
+      "sources": [
+        "Yeni Safak English"
+      ],
+      "related": [],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraqi Kurdistan fears for its autonomy as Baghdad moves to consolidate power",
+      "source": "The Jerusalem Post",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBYM1VsTkd0S2ozVXhXR2ZCVVUzMlB5NzFqSm5ncDZ5RmZTQ1BqdDJVcnIxODhyVVRJcUJxdnFUc2ZyZUJtZVNqYTZES0MzNGpKS3REck9XSnpBSWdu?oc=5",
+      "date": "2026-11-25T07:43:31.000Z",
+      "lang": "en",
+      "titleKo": "바그다드가 권력을 강화함에 따라 이라크 쿠르드 자치구는 자치권 상실을 우려",
+      "count": 1,
+      "sources": [
+        "The Jerusalem Post"
+      ],
+      "related": [],
+      "tag": "전력·생활",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "مع افتتاح الأسواق.. انخفاض أسعار الدولار في بغداد وأربيل",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMi2ANBVV95cUxPb0VEeHRISHp4V0RKMElyeWxDREZibmJ3TkNBVkJpb3BiVFFuSEpBd254WGRDQ3dCaE9jejFfa1oyV2JhMVE0VzQwVUZJbkFIV1JHTzNOVi1JcWRxNEtMQXd4ZjRySjFaWkNuNFVzTnFVVDJ1U2hyRFZMamh3WFQtdVprdTJmZE41Sjk2N3F6OGhxNV9RNndiU3Q2MEUwd2JVWG56UDFyWlJBSVE4WVdkN0d1Yl9MTWhDVTFVYU96QVRIU0pvSWhBSG5MOVlVWGN6NWJVNmljbGlBUThaSFk0QlllYUxaTFF2QnBSTlZyMzVucDNZbTlPaXFxdmR2cXQyYkUyOXFHemMtTDBYb3IzX1kwTktBWUoxOTRDT20wODFLLUpnalhtcXE2cU1wWV9UQS1vVzZGVVNhQmhoU2FHRFdyYjEzb21mT0VpSms4SXk3MjMwc1lvc0FHOGhJcklnV0U5Sm5PaFRkVlk0UUdsMUs3Nl9IZEtyNEkyT0RSVUM0eXJ1Q0FiSkc1YUQzV0xYX2I0b242RENpT3hId1U1UEQyYXZTNTQ0THlpOGpRdzJWX2VmNElPeDh6OHpsUm9qSTVHRVNxOUVTdmhwUjJRMHIxd3h6Ykpi?oc=5",
+      "date": "2026-11-25T07:34:30.000Z",
+      "lang": "ar",
+      "titleKo": "시장이 개장하면서 바그다드와 에르빌에서 달러화 가격이 하락했습니다.",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Iraq says its decisions are independent after reports of US backing for troop deployment",
+      "source": "Anadolu Ajansı",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNUMxYllpOW5yVUw4ZmtBZ1l1dkJfcjZIbmdKdVZtMEU2YjRoQ2lyeWVGeVl1THpCWl9HckF0V1I2RnRyT24wTFdndGlNdlJjS2p3Smd3d3hOWXZzMy1iNUs0UmJZV3o1VTlkQlpjLWYxYjFNNmxEQVh6TEdNSHV6UW5jR2h1WUJwT0dUY2dVWEM0YzlFNU5DS0JwR0NDeHdVOVVVYW5Qc0QwM08zS3dvakJodWN4ZURiMWt6VW1nR1R2UEVBYzNmdERvNU1Udw?oc=5",
+      "date": "2026-11-25T07:10:38.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 미군의 병력 배치 지원 보도에 대해 자국의 결정은 독립적이라고 밝혀",
+      "count": 1,
+      "sources": [
+        "Anadolu Ajansı"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "[아시아라운드업 20261125] 이라크 정부, 쿠르드 유전·국경통제권 회수",
+      "source": "kor.theasian.asia",
+      "link": "http://kor.theasian.asia/archives/423025",
+      "date": "2026-11-25T05:33:32.000Z",
+      "lang": "ko",
+      "titleKo": "[아시아라운드업 20261125] 이라크 정부, 쿠르드 유전·국경통제권 회수",
+      "url": "http://kor.theasian.asia/archives/423025",
+      "body": "1. 시진핑 3기 정치국위원 연쇄 낙마- 내년 중국공산당 제21차 당대회를 앞두고 최고위급 인사들이 잇따라 낙마하면서 차기 지도부 인선의 불확실성이 커지고 있음. 군부 최고위 인사들에 이어 차기 정치국 상무위원 유력 후보로 꼽혀온 천지닝 상하이시 당서기가 당국의 조사로 사실상\n1. 시진핑 3기 정치국위원 연쇄 낙마 – 내년 중국공산당 제21차 당대회를 앞두고 최고위급 인사들이 잇따라 낙마하면서 차기 지도부 인선의 불확실성이 커지고 있음. 군부 최고위 인사들에 이어 차기 정치국 상무위원 유력 후보로 꼽혀온 천지닝 상하이시 당서기가 당국의 조사로 사실상 낙마하면서 고위 간부 검증 체계에 대한 의문과 함께 향후 권력 재편 방향에 관심이 쏠림. 중국 관영 신화통신은 24일 천지닝이 엄중한 기율 및 법률 위반 혐의로 사정 당국의 조사를 받고 있다고 보도. – 허웨이둥과 장유샤 전 중앙군사위원회 부주석, 마싱루이 전 신장위구르자치구 당서기에 이어 최근 1년여 사이 네 번째 현직 정치국 위원의 낙마. 2022년 제20차 당대회에서 구성된 중앙정치국 위원 가운데 6명 중 1명이 사정의 칼날을 맞은 셈. 싱가포르 연합조보는 전문가 한 임기에 이처럼 많은 정치국 위원이 조사받는 것은 매우 이례적이라며 고위 간부 평가 체계에 허점이 있을 가능성을 지적. 정치적 충성도, 업무 능력, 청렴성 등에 대한 검증을 거쳐 발탁된 최고위급 인사들이 잇따라 낙마한 것은 고위 간부 선발과 관리 과정의 적절성에 의문이 제기되는 것. – 스위스 취리히대의 중국 전문가 장 크리스토프 미텔슈테트는 로이터통신에 천지닝이 내년 정치국 상무위원으로 승진할 가능성이 있는 인물이었다는 점에 주목하며 “이번 조사는 누구도 안전하지 않다는 신호를 보낸다”고 말했음. 특히 상하이 당서기가 중국의 경제 중심지의 수장이자 최고지도부로 진입하는 주요 등용문으로 여겨져 왔다는 점에서 천지닝의 낙마는 내년 당대회 인사 구도와 맞물려 주목받고 있음. 시진핑 국가주석을 비롯해 장쩌민 전 국가주석, 주룽지 전 총리, 리창 현 총리",
+      "bodyKo": "1. 시진핑 3기 정치국위원 연쇄 낙마- 내년 중국공산당 제21차 당대회를 앞두고 최고위급 인사들이 잇따라 낙마하면서 차기 지도부 인선의 불확실성이 커지고 있음. 군부 최고위 인사들에 이어 차기 정치국 상무위원 유력 후보로 꼽혀온 천지닝 상하이시 당서기가 당국의 조사로 사실상\n1. 시진핑 3기 정치국위원 연쇄 낙마 – 내년 중국공산당 제21차 당대회를 앞두고 최고위급 인사들이 잇따라 낙마하면서 차기 지도부 인선의 불확실성이 커지고 있음. 군부 최고위 인사들에 이어 차기 정치국 상무위원 유력 후보로 꼽혀온 천지닝 상하이시 당서기가 당국의 조사로 사실상 낙마하면서 고위 간부 검증 체계에 대한 의문과 함께 향후 권력 재편 방향에 관심이 쏠림. 중국 관영 신화통신은 24일 천지닝이 엄중한 기율 및 법률 위반 혐의로 사정 당국의 조사를 받고 있다고 보도. – 허웨이둥과 장유샤 전 중앙군사위원회 부주석, 마싱루이 전 신장위구르자치구 당서기에 이어 최근 1년여 사이 네 번째 현직 정치국 위원의 낙마. 2022년 제20차 당대회에서 구성된 중앙정치국 위원 가운데 6명 중 1명이 사정의 칼날을 맞은 셈. 싱가포르 연합조보는 전문가 한 임기에 이처럼 많은 정치국 위원이 조사받는 것은 매우 이례적이라며 고위 간부 평가 체계에 허점이 있을 가능성을 지적. 정치적 충성도, 업무 능력, 청렴성 등에 대한 검증을 거쳐 발탁된 최고위급 인사들이 잇따라 낙마한 것은 고위 간부 선발과 관리 과정의 적절성에 의문이 제기되는 것. – 스위스 취리히대의 중국 전문가 장 크리스토프 미텔슈테트는 로이터통신에 천지닝이 내년 정치국 상무위원으로 승진할 가능성이 있는 인물이었다는 점에 주목하며 “이번 조사는 누구도 안전하지 않다는 신호를 보낸다”고 말했음. 특히 상하이 당서기가 중국의 경제 중심지의 수장이자 최고지도부로 진입하는 주요 등용문으로 여겨져 왔다는 점에서 천지닝의 낙마는 내년 당대회 인사 구도와 맞물려 주목받고 있음. 시진핑 국가주석을 비롯해 장쩌민 전 국가주석, 주룽지 전 총리, 리창 현 총리",
+      "tried": true,
+      "count": 3,
+      "sources": [
+        "energynews.pro",
+        "ABNA English",
+        "kor.theasian.asia"
+      ],
+      "related": [
+        {
+          "titleKo": "이라크, 쿠르드족이 경비를 맡고 있는 유전의 연방 정부 인수 명령",
+          "source": "energynews.pro",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNY2lGZUZEeEtBMVlCRGNnajFYQTJxRUp5N3hJckRZakdFcnRTTTRzaVFyMnlMTTFsVzdkTGEzd3pkRmV0azlNVzVDZ3lyZXN0SVNzdGRlMkdLVG1DTUR5S2NfeDdxU0ZVdjg3dmRJeUliYzNHakRsdWFFWlVpeXgwa2pUWHpiVE11blZDV3drdFY2M0xUZHc?oc=5"
+        },
+        {
+          "titleKo": "이라크, 쿠르드 자치구 유전 및 국경 통과 지점 연방 정부의 관리 하에 두도록 명령",
+          "source": "ABNA English",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQT0Jfc2FrNlBLZGtucUc4dnpSVy14cE4xdmFtSlpsekxzajlwU0otVXNOUFNJa00yeFJXdTZtTVE1c3RXNjV0dWI3TlJaWjRaZ0drcWtOOGo3Q1B1Tktrd1M2YjBVS3ZybUhFb0V5Rmp0X2tZMTBqUmNHY28xTDFYVXdhY2hST2Z2QWpQT1FvU0JLZGtNNnBWLVVZbVp0QQ?oc=5"
+        }
+      ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "As tensions simmer in Iraq, what’s next for Christians and Iran-backed militias?",
+      "source": "Mission Network News",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPN1loRjNBa2ZuaUhBTDZVWXdfLUlMeEVib3RCWWcxeXJoS3RyS3pRb1lZa3BqcXNadjR4VDlXMDlMYlBkaEtaWGF5OVA1bDlMR3U5U0F5V1dreGFFemVCS2gxVnBDS0JHNl92c2Q1bElQTENyUG9PY1FON2xZRHJLYm82Z0ZKc0NqT0VoNTIzQl9Tc1dSZWRmTndrSVpDUnBoTHZHbEpaOUZ5QVVZT3c?oc=5",
+      "date": "2026-11-25T05:09:34.000Z",
+      "lang": "en",
+      "titleKo": "이라크에서 긴장이 고조되는 가운데, 기독교인들과 이란이 지원하는 민병대에게는 어떤 일이 기다리고 있을까요?",
+      "count": 1,
+      "sources": [
+        "Mission Network News"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
     {
       "title": "Voter cards in drawers as trust crisis dogs electability of Iraq’s Shiite elites",
       "source": "Amwaj.media",
@@ -27,105 +849,17 @@
       }
     },
     {
-      "title": "이라크, 쿠르드 유전·국경통제권 회수…갈등 재점화 조짐",
-      "source": "KBS 뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5adHE4eHhQOTI2alFzZ1I0cE5WbE1NczJ3SUt6NmFvcVZ1RFAtYnYtUE54cGtPMWxtTzNYMmVkcTdHbnNwX0dyaE5rQUZpVjVYeDRDLURKOGp0cmc?oc=5",
-      "date": "2026-11-25T03:32:05.000Z",
-      "lang": "ko",
-      "titleKo": "이라크, 쿠르드 유전·국경통제권 회수…갈등 재점화 조짐",
-      "count": 16,
-      "sources": [
-        "Upstream Online",
-        "The New York Times",
-        "Al Jazeera",
-        "The National",
-        "Chosunbiz",
-        "Modern Diplomacy"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 총리, 쿠르드 지역 석유 산업에 대한 통제 강화 명령",
-          "source": "Upstream Online",
-          "link": "https://www.upstreamonline.com/production/iraq-pm-orders-ministry-to-tighten-control-over-kurdish-region-oil-industry/2-1-2078796"
-        },
-        {
-          "titleKo": "이라크 총리, 쿠르드 지역으로부터 더 많은 권한을 빼앗으려 함",
-          "source": "The New York Times",
-          "link": "https://www.nytimes.com/2026/11/24/world/middleeast/iraq-prime-minister-kurdistan-control.html"
-        },
-        {
-          "titleKo": "이라크, 석유 밀수업자 단속 및 쿠르드 석유 유전 인수 명령",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/video/newsfeed/2026/11/24/iraq-targets-oil-smugglers-orders-kurdish-oilfield-takeover"
-        },
-        {
-          "titleKo": "이라크, 쿠르드족 통제 지역 내 유전 인수 명령",
-          "source": "Al Jazeera",
-          "link": "https://www.aljazeera.com/news/2026/11/24/iraq-orders-takeover-of-oilfields-in-areas-under-kurdish-control"
-        },
-        {
-          "titleKo": "이라크 총리, 분쟁 지역의 쿠르드 자치정부 석유 수출, 국경 통과 지점 및 유전 연방 정부의 관리 지시",
-          "source": "The National",
-          "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQalB3OW15TUZwTlMxb1VDSDhCSG0yNHpuQ0pCdkhmVFJtcGlkV0ktaG94Wmp6T1g2QVp6MFdvaWZlWnZJXy0yMUJHc3RNTlJoZlV5dGVOdGVPVHV0THhVUERSMGZiNTlEUVlfZXFjT1JJaUVmNGF5UG9PLUdMMXlGNzdsc191QnVKc1dXQ3dBdDdKdUNZZFliVWd5dkNKckU5dnVSNFlVQ0NJY0EzUS1NdXN4T1dCTXBvUFNWSm1BeTRLUHNxUzc5ZnlLVkNlY1h4ZzM3dUxPQlRyQnEwdDBmdkwyeUZZUDIzYUQ4QUlXVTlkQQ?oc=5"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "[아시아라운드업 20261125] 이라크 정부, 쿠르드 유전·국경통제권 회수",
-      "source": "kor.theasian.asia",
-      "link": "http://kor.theasian.asia/archives/423025",
-      "date": "2026-11-25T03:19:33.000Z",
-      "lang": "ko",
-      "titleKo": "[아시아라운드업 20261125] 이라크 정부, 쿠르드 유전·국경통제권 회수",
-      "url": "http://kor.theasian.asia/archives/423025",
-      "body": "1. 시진핑 3기 정치국위원 연쇄 낙마- 내년 중국공산당 제21차 당대회를 앞두고 최고위급 인사들이 잇따라 낙마하면서 차기 지도부 인선의 불확실성이 커지고 있음. 군부 최고위 인사들에 이어 차기 정치국 상무위원 유력 후보로 꼽혀온 천지닝 상하이시 당서기가 당국의 조사로 사실상\n1. 시진핑 3기 정치국위원 연쇄 낙마 – 내년 중국공산당 제21차 당대회를 앞두고 최고위급 인사들이 잇따라 낙마하면서 차기 지도부 인선의 불확실성이 커지고 있음. 군부 최고위 인사들에 이어 차기 정치국 상무위원 유력 후보로 꼽혀온 천지닝 상하이시 당서기가 당국의 조사로 사실상 낙마하면서 고위 간부 검증 체계에 대한 의문과 함께 향후 권력 재편 방향에 관심이 쏠림. 중국 관영 신화통신은 24일 천지닝이 엄중한 기율 및 법률 위반 혐의로 사정 당국의 조사를 받고 있다고 보도. – 허웨이둥과 장유샤 전 중앙군사위원회 부주석, 마싱루이 전 신장위구르자치구 당서기에 이어 최근 1년여 사이 네 번째 현직 정치국 위원의 낙마. 2022년 제20차 당대회에서 구성된 중앙정치국 위원 가운데 6명 중 1명이 사정의 칼날을 맞은 셈. 싱가포르 연합조보는 전문가 한 임기에 이처럼 많은 정치국 위원이 조사받는 것은 매우 이례적이라며 고위 간부 평가 체계에 허점이 있을 가능성을 지적. 정치적 충성도, 업무 능력, 청렴성 등에 대한 검증을 거쳐 발탁된 최고위급 인사들이 잇따라 낙마한 것은 고위 간부 선발과 관리 과정의 적절성에 의문이 제기되는 것. – 스위스 취리히대의 중국 전문가 장 크리스토프 미텔슈테트는 로이터통신에 천지닝이 내년 정치국 상무위원으로 승진할 가능성이 있는 인물이었다는 점에 주목하며 “이번 조사는 누구도 안전하지 않다는 신호를 보낸다”고 말했음. 특히 상하이 당서기가 중국의 경제 중심지의 수장이자 최고지도부로 진입하는 주요 등용문으로 여겨져 왔다는 점에서 천지닝의 낙마는 내년 당대회 인사 구도와 맞물려 주목받고 있음. 시진핑 국가주석을 비롯해 장쩌민 전 국가주석, 주룽지 전 총리, 리창 현 총리",
-      "bodyKo": "1. 시진핑 3기 정치국위원 연쇄 낙마- 내년 중국공산당 제21차 당대회를 앞두고 최고위급 인사들이 잇따라 낙마하면서 차기 지도부 인선의 불확실성이 커지고 있음. 군부 최고위 인사들에 이어 차기 정치국 상무위원 유력 후보로 꼽혀온 천지닝 상하이시 당서기가 당국의 조사로 사실상\n1. 시진핑 3기 정치국위원 연쇄 낙마 – 내년 중국공산당 제21차 당대회를 앞두고 최고위급 인사들이 잇따라 낙마하면서 차기 지도부 인선의 불확실성이 커지고 있음. 군부 최고위 인사들에 이어 차기 정치국 상무위원 유력 후보로 꼽혀온 천지닝 상하이시 당서기가 당국의 조사로 사실상 낙마하면서 고위 간부 검증 체계에 대한 의문과 함께 향후 권력 재편 방향에 관심이 쏠림. 중국 관영 신화통신은 24일 천지닝이 엄중한 기율 및 법률 위반 혐의로 사정 당국의 조사를 받고 있다고 보도. – 허웨이둥과 장유샤 전 중앙군사위원회 부주석, 마싱루이 전 신장위구르자치구 당서기에 이어 최근 1년여 사이 네 번째 현직 정치국 위원의 낙마. 2022년 제20차 당대회에서 구성된 중앙정치국 위원 가운데 6명 중 1명이 사정의 칼날을 맞은 셈. 싱가포르 연합조보는 전문가 한 임기에 이처럼 많은 정치국 위원이 조사받는 것은 매우 이례적이라며 고위 간부 평가 체계에 허점이 있을 가능성을 지적. 정치적 충성도, 업무 능력, 청렴성 등에 대한 검증을 거쳐 발탁된 최고위급 인사들이 잇따라 낙마한 것은 고위 간부 선발과 관리 과정의 적절성에 의문이 제기되는 것. – 스위스 취리히대의 중국 전문가 장 크리스토프 미텔슈테트는 로이터통신에 천지닝이 내년 정치국 상무위원으로 승진할 가능성이 있는 인물이었다는 점에 주목하며 “이번 조사는 누구도 안전하지 않다는 신호를 보낸다”고 말했음. 특히 상하이 당서기가 중국의 경제 중심지의 수장이자 최고지도부로 진입하는 주요 등용문으로 여겨져 왔다는 점에서 천지닝의 낙마는 내년 당대회 인사 구도와 맞물려 주목받고 있음. 시진핑 국가주석을 비롯해 장쩌민 전 국가주석, 주룽지 전 총리, 리창 현 총리",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "kor.theasian.asia"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "“이라크, OPEC+ 생산능력 평가 거부”…산유량 걸린 29일 회의 충돌 가능성｜Global Money Club",
-      "source": "중앙일보",
-      "link": "https://www.joongang.co.kr/gmc/article/25481695",
+      "title": "이라크, OPEC+ 산유 능력 평가 거부…29일 생산 목표 협의",
+      "source": "토큰포스트",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UWEJTeGh6d3d6MjNDV0w0SUVaY2d6eHZPMVRoWDZVVUVGQXhFMEg0bFQxRUxVazljeVVoRS1UcWxUMm9hRkd6ZjRuclU1QXlmNE00NG10aTjSAV5BVV95cUxQUDE3X3p6Tm5SUzhUZWQwM01Uc0t3S0RqcVYxSE9PWkxTMVEySWNyNUl3ZWVfZ2xiSklKcmlHZG1zbXViUkxkMUw1Vk9rZmpnNmFVZ3BmY3FoeF9tVU9R?oc=5",
       "date": "2026-11-25T02:49:19.000Z",
       "lang": "ko",
-      "titleKo": "“이라크, OPEC+ 생산능력 평가 거부”…산유량 걸린 29일 회의 충돌 가능성｜Global Money Club",
-      "url": "https://www.joongang.co.kr/gmc/article/25481695",
-      "body": "원유 생산 목표를 정하는 오는 29일 주요 회의를 앞두고 산유국 협의체 OPEC+에 긴장감이 감돌고 있습니다. 이라크가 자국의 최대 원유 생...",
-      "bodyKo": "원유 생산 목표를 정하는 오는 29일 주요 회의를 앞두고 산유국 협의체 OPEC+에 긴장감이 감돌고 있습니다. 이라크가 자국의 최대 원유 생...",
-      "tried": true,
-      "count": 2,
+      "titleKo": "이라크, OPEC+ 산유 능력 평가 거부…29일 생산 목표 협의",
+      "count": 1,
       "sources": [
-        "토큰포스트",
-        "중앙일보"
+        "토큰포스트"
       ],
-      "related": [
-        {
-          "titleKo": "이라크, OPEC+ 산유 능력 평가 거부…29일 생산 목표 협의",
-          "source": "토큰포스트",
-          "link": "https://www.tokenpost.kr/news/breaking/443916"
-        }
-      ],
+      "related": [],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -136,41 +870,24 @@
       }
     },
     {
-      "title": "مصرع 4 أشخاص وإصابة 30 في حريق بمحطة كهرباء بالبصرة العراقية",
-      "source": "وكالة الأنباء العمانية (العمانية)",
-      "link": "https://omannews.gov.om/topics/ar/88/show/477071",
-      "date": "2026-11-25T02:02:51.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 바스라의 발전소 화재로 4명 사망, 30명 부상",
-      "url": "https://omannews.gov.om/topics/ar/88/show/477071",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 3,
+      "title": "Baghdad’s Amb. in Cairo: Iraqi PM's visit to Egypt is historic",
+      "source": "Egypt Today",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcUVqUnZmY1FTZUhCT2V1T3JGaW9TeXFUTG5WMzdIdnA0RjdKdVQyT0lQTzR1WlRxejQ2MlhJQ21Bek1NbUZVRFN2UFloUFpXNjU2QklZUEtKVklvYXg3dUxqMVBmVGV1Vk9xNmpOWFZRVF9DU2NHeV9LNmMtbGViM0FQVG9odHl6azZpWDItNXJTWlVZTWUwcWVXVHVzQnctQXc?oc=5",
+      "date": "2026-11-25T02:34:00.000Z",
+      "lang": "en",
+      "titleKo": "카이로 주재 바그다드 대사: 이라크 총리의 이집트 방문은 역사적인 일",
+      "count": 1,
       "sources": [
-        "المركزية",
-        "وكالة الأنباء العمانية (العمانية)",
-        "الشرق الأوسط"
+        "Egypt Today"
       ],
-      "related": [
-        {
-          "titleKo": "바스라.. 알하르사 발전소 화재로 4명 사망, 30명 부상",
-          "source": "المركزية",
-          "link": "https://almarkazia.com/ar/%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%A8%D9%85%D8%AD%D8%B7%D8%A9-%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D8%A7%D9%84%D9%87%D8%A7%D8%B1%D8%AB%D8%A9-%D9%88%D8%A3%D9%86%D8%A8%D8%A7%D8%A1-%D8%B9%D9%86-1"
-        },
-        {
-          "titleKo": "이라크 바스라의 발전소 화재로 4명 사망, 30명 부상",
-          "source": "الشرق الأوسط",
-          "link": "https://news.google.com/rss/articles/CBMi7gRBVV95cUxQT1NKdWtYcEhtUnQxQ1ZTM0IwcHU1WjlwcGtYdGNxSUh3NktfM2FyN2VKcHRDRHRKbmF2R0V2SktqUGVSd1VRaTlCQXVPbzNiWUg0cUIxdklLX1RRRl9TdnNDS25hTy1MZWJyOU40N0hRTnFBbjRiRV9xLU5rTGF3ODRncDZWYmRfM0dyMGRycG1EVEpUN0picVR0dXJEbXVKcjF2c1hLdlRsR2Ryb1lqckhyNTVWSW1CV1F3M1Jrc2tMdHpkemlpWjJjbGt4elFiTUxGNElzU1NMU21UYm80RENsdDY3QWN5RVl3b0pnZHlJTlp4MDBWWEtMS05KcTZxc0FnakNGbmZvZDJLUUJoQkV0SXlsbElERkJIZlJSakIxRE83elRLUy1HZmxXSG5wMlZPdlhsSENrZmctVnNFOWtlQkYwcWYyNVFJWGt4UXRlWWRaTGRoWklBUU92N196blpQdzhYVkNQS3pLcFZLNF8tb3gzRnhzSko5bURzQ3lGcUdTU3Y1MTloSGZjdkRHQnQwZFBXV1NOdjRXTDZRTktObFpHMVVfN3Y3Yk9OVTBZU2hiTXB2LW10amg2VHhnX0ZBcDR6SHJRVjFEcjlVRXFDQ09ZRFRsekgycUtoMGRjWGFlOXlWSEpjbnduMWFwcU10cVdOUWVyalRfOFllTkxPdGlaQTlHT0NHU1BrYTFoeVd5aEhtM2NlRlRWbDVyVnlwOFBHMU95eUE5SFh5MF9CajIzUEY4RDhaY2ZmdWhYdnk2elgtMXY1TjRReWphWUdhQXVsUi1WX0RITkNMM1E2UHY3cEYzcDNHT1N3?oc=5"
-        }
-      ],
-      "tag": "기타",
+      "related": [],
+      "tag": "치안·테러",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
         "act": "",
-        "place": "바스라",
-        "km": 422
+        "place": "바그다드",
+        "km": 27
       }
     },
     {
@@ -224,31 +941,6 @@
       }
     },
     {
-      "title": "[돋보기] 이라크 야생 밀이 가뭄·해충 저항성 강한 '듀럼 밀'로 재탄생",
-      "source": "저스트 이코노믹스",
-      "link": "https://www.justeconomix.com/ko-kr/articles/154496",
-      "date": "2026-11-24T23:44:00.000Z",
-      "lang": "ko",
-      "titleKo": "[돋보기] 이라크 야생 밀이 가뭄·해충 저항성 강한 '듀럼 밀'로 재탄생",
-      "url": "https://www.justeconomix.com/ko-kr/articles/154496",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "저스트 이코노믹스"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "Iraqi government rejects foreign influence over domestic decisions",
       "source": "شفق نيوز",
       "link": "https://shafaq.com/en/Iraq/Iraqi-government-rejects-foreign-influence-over-domestic-decisions",
@@ -259,11 +951,17 @@
       "body": "Shafaq News- Baghdad The Iraqi government said on Wednesday that it makes decisions independently within the country's borders and does not act on foreign encouragement or directives. Prime Minister\nPrime Minister Ali Al-Zaidi's media office said Iraq is a sovereign federal democracy whose institutions derive their legitimacy from the constitution and the will of its people, adding that Iraq's national interests, the rights of its people, and security needs guide government actions.\nThe statement followed Al-Zaidi's expanded crackdown on oil smuggling in Jurf al-Sakhar and Kirkuk, which led to the dismissal of security officials and new federal measures concerning border crossings in the Kurdistan Region of Iraq (KRI), oil exports, and oilfields in Kirkuk, Nineveh, Saladin, and Diyala under KRI security control. Erbil rejected the decisions as violations of previous agreements with Baghdad.",
       "bodyKo": "샤팍 뉴스 - 바그다드 이라크 정부는 수요일, 자국 국경 내에서 독립적으로 결정을 내리고 외국의 권유나 지시에 따라 행동하지 않는다고 밝혔다. 총리\n알리 알자이디 총리의 언론실은 이라크가 주권 연방 민주주의 국가이며, 이라크의 기관들은 헌법과 국민의 의지에서 정당성을 얻는다고 밝혔다. 또한 이라크의 국가적 이익, 국민의 권리, 안보적 필요가 정부의 행동을 이끌고 있다고 덧붙였다.\n이 성명은 자이디 총리가 주르프 알사카르와 키르쿠크에서 석유 밀수를 단속하는 조치를 확대하면서 나온 것으로, 이로 인해 보안 당국자들이 해임되고 이라크 쿠르드 자치지역(KRI)의 국경 통과 지점, 석유 수출, 그리고 KRI의 보안 통제 하에 있는 키르쿠크, 니네웨, 살라딘, 디얄라의 유전을 대상으로 한 새로운 연방 조치가 시행되었다. 에르빌은 이러한 결정이 바그다드와의 이전 합의를 위반하는 것이라고 반발했다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "شفق نيوز"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "샤파크 뉴스.. 이라크 정부, 국내 정책 결정에 대한 외국 영향력 거부",
+          "source": "شفق نيوز",
+          "link": "https://shafaq.com/en/Iraq/Iraqi-government-rejects-foreign-influence-over-domestic-decisions"
+        }
+      ],
       "tag": "정치·선거",
       "impact": {
         "lv": "g",
@@ -274,22 +972,18 @@
       }
     },
     {
-      "title": "Exclusive: Iraq Weighs Army Action on Kurdistan Oil Smuggling",
-      "source": "الحرة",
-      "link": "https://alhurra.com/en/57325",
-      "date": "2026-11-24T22:57:05.000Z",
-      "lang": "en",
-      "titleKo": "단독 보도: 이라크, 쿠르드스탄 석유 밀수 관련 군사 조치 검토",
-      "url": "https://alhurra.com/en/57325",
-      "body": "Iraqi Prime Minister Ali al-Zaidi is considering sending army units to sites in the Kurdistan Region of Iraq that the government says are being used to smuggle oil, Iraqi sources familiar with the matter told MBN. According to political sources close to al-Zaidi, \"the prime minister sought in recent days to move army units toward&hellip;\nAl-Zaidi sent Popular Mobilization Forces Commission chief Faleh al-Fayyad to the region carrying a message urging local authorities to take control of the smuggling issue and cooperate with the federal government, the sources said. It was not immediately clear what response, if any, Kurdish authorities had given.\nThe move is part of Baghdad’s efforts, announced on Tuesday, to transfer control of the Kurdish region’s oil exports, border crossings and oil fields to federal authorities.",
-      "bodyKo": "이 문제에 정통한 이라크 소식통이 MBN에 전한 바에 따르면, 알리 알자이디 이라크 총리가 이라크 정부가 석유 밀수를 위해 사용되고 있다고 밝힌 이라크 쿠르드 지역의 현장에 육군 부대를 파견하는 방안을 검토하고 있다고 한다. 알자이디 총리와 가까운 정치 소식통에 따르면, \"총리는 최근 군대를...로 이동시키고자 했다\"고 한다.\n소식통에 따르면 자이디 총리는 현지 당국에 밀수 문제를 통제하고 연방 정부와 협력할 것을 촉구하는 메시지를 전달하기 위해 하시드 동원군 위원회 위원장인 팔레흐 알파야드를 해당 지역으로 파견했다고 한다. 쿠르드 당국이 어떤 반응을 보였는지, 아니면 반응을 보이지 않았는지는 즉시 명확히 밝혀지지 않았다.\n이 조치는 화요일에 발표된 바그다드의 쿠르드 지역의 석유 수출, 국경 통과 지점 및 유전을 연방 당국에 이양하려는 노력의 일환이다.",
-      "tried": true,
+      "title": "신태용은 이라크 U-23과의 경기에서 인도네시아 U-23이 긴장하는 것을 원하지 않는다.",
+      "source": "VOI.ID",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZW9sTjI1Z1dqNk1zZXlmU1JTTU1lNV9mendLMUZYWUE0akRPZ0tpdkQ2bzVUa1MxSmZnYXptNDZJVjRySEYwMGdkbm90TmN2Q1oyNnhPQWJqWTFPeVlBUHJlam5EdmZYNWhhODRiaWtQZFlIaTkxLVNVVGVJMFJoeGxtWUJCX0MwZmlXT2xWdFNoWTR1SEg1VUQyMW0zUlVINUJzYWM3RDFzSDdSNUZabEFPZlA2MWk1M0E?oc=5",
+      "date": "2026-11-24T23:10:00.000Z",
+      "lang": "ko",
+      "titleKo": "신태용은 이라크 U-23과의 경기에서 인도네시아 U-23이 긴장하는 것을 원하지 않는다.",
       "count": 1,
       "sources": [
-        "الحرة"
+        "VOI.ID"
       ],
       "related": [],
-      "tag": "치안·테러",
+      "tag": "기타",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -309,11 +1003,17 @@
       "body": "Iraq's federal government said it was moving to seize control of border posts and energy facilities controlled by the KRG\nIraqi Prime Minister Ali al-Zaidi has said Baghdad will take over all of Kurdistan's border crossings and several oil fields that the autonomous region controls, in a move that was widely condemned by the region’s leaders as a step to clip their autonomy.\nBaghdad’s decision comes at a time of internal division in the Kurdistan Regional Government (KRG) and as the Middle East braces for a potential new US-Israeli attack on Iran.\nUnder American pressure, Zaidi recently attempted to crack down on Kataib Hezbollah, a powerful Shia militia in Iraq aligned with Iran, which officials in Baghdad say has earned hundreds of millions of dollars from smuggling oil.\nZaidi's spokesperson Sabah al-Numan said on Tuesday that, based on those findings, Baghad would take control of \"all border crossings in the Kurdistan Region\".",
       "bodyKo": "이라크 연방 정부는 KRG가 통제하는 국경 검문소와 에너지 시설을 장악하기 위한 조치를 취하고 있다고 밝혔다.\n알리 알자이디 이라크 총리는 쿠르드 자치 지역이 통제하는 모든 국경 통과 지점과 여러 유전을 바그다드가 인수할 것이라고 밝혔습니다. 이 조치는 쿠르드 자치 지역 지도자들로부터 자치권을 축소하려는 조치로 널리 비난받았습니다.\n바그다드의 이번 결정은 쿠르드 자치정부(KRG) 내부에 분열이 발생한 시점에, 그리고 중동이 미국과 이스라엘의 이란에 대한 새로운 공격 가능성에 대비하고 있는 시점에 내려졌다.\n미국의 압박에 따라 자이디는 최근 이란과 연계된 이라크의 강력한 시아파 민병대인 카타이브 헤즈볼라를 단속하려고 시도했다. 바그다드 당국은 이 단체가 석유 밀수로 수억 달러를 벌었다고 밝혔다.\n자이디 대변인 사바 알-누만(Sabah al-Numan)은 화요일, 이러한 조사 결과에 근거하여 바그다드가 \"쿠르드 지역의 모든 국경 통과 지점\"을 통제할 것이라고 밝혔다.",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "Middle East Eye"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "쿠르드 자치권을 제한하려는 바그다드의 움직임으로 이득을 보는 쪽은 미국일까, 이란일까?",
+          "source": "Middle East Eye",
+          "link": "https://www.middleeasteye.net/news/does-us-or-iran-win-baghdads-move-clip-kurdish-autonomy"
+        }
+      ],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -324,55 +1024,28 @@
       }
     },
     {
-      "title": "이라크: 정부, 쿠르디스탄 지역 유전 관리 맡는다 | 세계 뉴스 24시간, 2026년 11월 24일",
-      "source": "Vietnam.vn",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQS1NidGhfeDk0ajVENk91VTIwWUJleWMxMTZ6bGYwVVNxZ2pnSGh0MFFWTHkzR0ZRa1RRWnpuckdOM2lUSG9ZQTRyUUowdnJuVUlxT0JlNHJGQmY3TFdxN3ZZamVyYTEwb0I1SEFPWEVnN3lJcTVzaDkxeGR3UFdqaG9IRGdkTDE2YTV3d212dFZFdng2TzNiaWxhSFE5ZnQxUG4ybU5STTFzTTlfLWVSX20zMGRfRnVIclhFQU5xUV9lQQ?oc=5",
-      "date": "2026-11-24T22:25:00.000Z",
-      "lang": "ko",
-      "titleKo": "이라크: 정부, 쿠르디스탄 지역 유전 관리 맡는다",
-      "count": 7,
+      "title": "Iraq seizes two drone launch platforms in southeast",
+      "source": "Rudaw",
+      "link": "https://www.rudaw.net/english/categories/iraq/1080302",
+      "date": "2026-11-24T21:43:53.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 남동부 지역에서 드론 발사대 2기 압수",
+      "url": "https://www.rudaw.net/english/categories/iraq/1080302",
+      "body": "Iraqi security forces seized two platforms used to launch drones in its southeastern Maysan province on Tuesday, along with scattered parts of a drone engine, following what authorities described as “",
+      "bodyKo": "이라크 보안군은 11일 남동부 마이산주에서 드론 발사에 사용된 플랫폼 2기와 드론 엔진의 파편을 압수했다. 당국은 이를 \"",
+      "tried": true,
+      "count": 1,
       "sources": [
-        "The Japan Times",
-        "IraqiNews",
-        "Reuters",
-        "هذا اليوم",
-        "Vietnam.vn",
-        "Khaama Press"
+        "Rudaw"
       ],
-      "related": [
-        {
-          "titleKo": "이라크 총리, 쿠르드족이 통제하는 유전 확보에 나서며 양측 관계 더욱 악화",
-          "source": "The Japan Times",
-          "link": "https://www.japantimes.co.jp/news/2026/11/25/world/iraqi-pm-kurds-oilfields/"
-        },
-        {
-          "titleKo": "바그다드, 쿠르드족의 보안 통제 하에 유전 관리",
-          "source": "IraqiNews",
-          "link": "https://www.iraqinews.com/iraq/baghdad-to-manage-oilfields-under-kurdish-security-control/"
-        },
-        {
-          "titleKo": "이라크 총리, 쿠르드족 보안 통제 지역 내 유전 관리 업무를 해당 부처에 지시",
-          "source": "Reuters",
-          "link": "https://www.reuters.com/world/middle-east/iraqi-pm-orders-takeover-kurdistan-regions-border-crossings-after-oil-smuggling-2026-11-24/"
-        },
-        {
-          "titleKo": "자이디가 석유부에 이라크 쿠르드 지역 유전 관리 지시, 쿠르드족은 거부",
-          "source": "هذا اليوم",
-          "link": "https://hathalyoum.net/articles/4269388"
-        },
-        {
-          "titleKo": "이라크가 내전으로 치닫고 있는가? 바그다드, 쿠르드족 유전과 국경 통과 지점 장악에 나서다",
-          "source": "Khaama Press",
-          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1yaGo1UkNuQVdDSkU2ckhjRml5SXZDNXNtSFFQTjZzTnFGdGU1aDZmTHdLOGRSMEZ5TFo1Y1FCVUo4SV9qSDV0SV9aWUZDSEJJMWdSTy1qd1NYMFN2NlE1OWFOczl2LV9hM3R0b1VwOGtnSTZidDFSRWhtWjY?oc=5"
-        }
-      ],
-      "tag": "정치·선거",
+      "related": [],
+      "tag": "치안·테러",
       "impact": {
         "lv": "g",
-        "line": "현장 직접 영향 낮음",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
         "act": "",
-        "place": "",
-        "km": null
+        "place": "아마라(마이산)",
+        "km": 280
       }
     },
     {
@@ -411,11 +1084,17 @@
       "body": "",
       "bodyKo": "",
       "tried": true,
-      "count": 1,
+      "count": 2,
       "sources": [
         "U.S. Embassy & Consulate in Iraq (.gov)"
       ],
-      "related": [],
+      "related": [
+        {
+          "titleKo": "보안 경보: 주이라크 미국 대사관",
+          "source": "U.S. Embassy & Consulate in Iraq (.gov)",
+          "link": "https://iq.usembassy.gov/security-alert-u-s-mission-iraq-november-24-2026/"
+        }
+      ],
       "tag": "한국·외교",
       "impact": {
         "lv": "g",
@@ -493,69 +1172,24 @@
       }
     },
     {
-      "title": "Baghdad to take over border crossings in Iraqi Kurdistan",
-      "source": "IraqiNews",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcFVMcUZLaXNUdHppRUtVdWFsenhweEZCdDVpOVQtbm5seVBscVpBSGNTMzZ4Vmd3VW53UUk0Rm5KLWliWW9IWHM4SWJHaEtjbGFsTUUxR0FGT1NZaklNbXB0c3UyQUN2YXA2UDdiLVBuVWk4TnFjcm1sQ1c3X0tVRlZvZzBjRkY4WEpGNzdCYmRlQQ?oc=5",
+      "title": "Farhad Atroushi emphasized that the Kurdistan Region of Iraq exists under the Constitution, and that government decisions regarding oil and border crossings in the region must be resolved through negotiation and dialogue",
+      "source": "مجلس النواب العراقي",
+      "link": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxNbDJ4VEtEdlIzV0hqQXU3WTBlVnF1a0RRT3F3VGhrX2RHWjVTLTNUS1loS3h0Q3FQV1BVa3FuYk9BNzlSTEtOeDJUTnJtUTRZRV9mT1hYSTVZZG9TTDFpYlNCTDdZNWZmd0RtcEI4THNXUU0xMGw4cWhqUnZQUExJM2JqTklzdnpnaEVwclBfZ2hjSHdHZXBldGhUMzN0OFpKODZ6LVFSaS1YSi1PeWMzQ1l4OXVYc2xKdmgzN18tdm13eHBtWVp1MzAwN0V5YlFpYW9iZzV2MnB4S2VRQXBiU0IzejM0UkhJeDZMN3gtVVQ1SWZkSFdQbVY5bVlaN29FZ0lQU05EZHpaODV5cTJCM215eDF0eEo1QndGN3dmaG9OVXRCdl9hc200VEFKZ0M5Ylp5dWdLVzJmRHNHOVdwOHFJRVVvaWtkazFaWjhSNHNkVEMwMW45Xzdkcw?oc=5",
       "date": "2026-11-24T20:49:14.000Z",
       "lang": "en",
-      "titleKo": "바그다드, 이라크 쿠르드 지역의 국경 통과 지점 관리권 인수 예정",
-      "count": 3,
+      "titleKo": "파르하드 아트로우시(Farhad Atroushi)는 이라크 쿠르드 자치지역이 헌법에 따라 존재하며, 해당 지역의 석유 및 국경 통행로와 관련된 정부 결정은 협상과 대화를 통해 해결되어야 한다고 강조했다.",
+      "count": 1,
       "sources": [
-        "مجلس النواب العراقي",
-        "IraqiNews",
-        "وكالة الانباء العراقية (واع)"
+        "مجلس النواب العراقي"
       ],
-      "related": [
-        {
-          "titleKo": "파르하드 아트로우시(Farhad Atroushi)는 이라크 쿠르드 자치지역이 헌법에 따라 존재하며, 해당 지역의 석유 및 국경 통행로와 관련된 정부 결정은 협상과 대화를 통해 해결되어야 한다고 강조했다.",
-          "source": "مجلس النواب العراقي",
-          "link": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxNbDJ4VEtEdlIzV0hqQXU3WTBlVnF1a0RRT3F3VGhrX2RHWjVTLTNUS1loS3h0Q3FQV1BVa3FuYk9BNzlSTEtOeDJUTnJtUTRZRV9mT1hYSTVZZG9TTDFpYlNCTDdZNWZmd0RtcEI4THNXUU0xMGw4cWhqUnZQUExJM2JqTklzdnpnaEVwclBfZ2hjSHdHZXBldGhUMzN0OFpKODZ6LVFSaS1YSi1PeWMzQ1l4OXVYc2xKdmgzN18tdm13eHBtWVp1MzAwN0V5YlFpYW9iZzV2MnB4S2VRQXBiU0IzejM0UkhJeDZMN3gtVVQ1SWZkSFdQbVY5bVlaN29FZ0lQU05EZHpaODV5cTJCM215eDF0eEo1QndGN3dmaG9OVXRCdl9hc200VEFKZ0M5Ylp5dWdLVzJmRHNHOVdwOHFJRVVvaWtkazFaWjhSNHNkVEMwMW45Xzdkcw?oc=5"
-        },
-        {
-          "titleKo": "INA, 국경 통과, 석유, 안보와 관련된 이라크 헌법 및 현행 법률 조항 재발행",
-          "source": "وكالة الانباء العراقية (واع)",
-          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNVVlFQlFucWltX1RDRGdyd0hCMjFyUE9QTDFWMkdpblhGZFk3dll1Y2NLU1JXWG41MDhQN19lM0xVaWFucEhLdTFobko4UVBqSUxyeERNbk9SX3FZdkRGbnlsMU8teEUzVXBPMmtXZE81ellzVW9vWFVZLS1nTmhWdUdqVlJ5Qi01X3Ewek5QaU5ZQ1BPZkhjTDhTMkZuamFudENKYXNzOWROVVpTOTdEeUJIbVFYRF9kZWgxdzlEY1ZEMm5VRFhnUldpWnNyZEhINWlmYy1ELUl4alBKbDZQdDQ0Mi1SX3c?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "정치·선거",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
         "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraq seizes two drone launch platforms in southeast",
-      "source": "Rudaw",
-      "link": "https://www.rudaw.net/english/categories/iraq/1080302",
-      "date": "2026-11-24T20:43:48.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 남동부 지역에서 드론 발사대 2기 압수",
-      "url": "https://www.rudaw.net/english/categories/iraq/1080302",
-      "body": "Iraqi security forces seized two platforms used to launch drones in its southeastern Maysan province on Tuesday, along with scattered parts of a drone engine, following what authorities described as “",
-      "bodyKo": "이라크 보안군은 11일 남동부 마이산주에서 드론 발사에 사용된 플랫폼 2기와 드론 엔진의 파편을 압수했다. 당국은 이를 \"",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "Rudaw",
-        "A News"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 보안군, 남부 주에서 드론 발사대 2기 압수",
-          "source": "A News",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOU0tPVTRiSlZuZmwzdW9aNFNjZzFjZ3pKOThkZVFXMWVlMlIzV3M1Z3lCcTdKVWtsV012M3JhVzI0UWFhNlk0czAwc0pyTFk0Yl8xbkVHeFo5dzRWWUh6cWdaazlZYXRRaVp2alNOdTQ2bGUwN2R5ZjA1ajJsSFVTRU5HZGhYZ1NoeHpERGt5cXRUZ1VCaG1UdHhxU1otbkRVMUIweklwempkUFNCbVFzTFU2TnQxZ9IBuwFBVV95cUxPTlRSbGVnS3A4WXR1dEdrSUNMMnBhYlpaNFh3QkhUS1c1ZWNSWGtweC1RSWs1QXJDaGZKVUpqT3JqQlR3VEE2S3YzTGRsYzV6d2czeWtuMEZfQXRaVU8wTXRkM2xpSzN1MlE3cUNzVEN4YWtna3RGZXgxZS00Z05PdG9RY2F0MkVwdnVlSjNwRVl5SmZfanNVYVVfNnhiOUMxcldJU0FzdFlSSXpwaHFibTJlWHZfeHVVVXFj?oc=5"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "아마라(마이산)",
-        "km": 280
+        "place": "",
+        "km": null
       }
     },
     {
@@ -653,398 +1287,6 @@
         "place": "바그다드",
         "km": 27
       }
-    },
-    {
-      "title": "Kurdistan Region Parliament Rejects Unconstitutional Measures, Calls for Dialogue with Baghdad",
-      "source": "Kurdistan24",
-      "link": "https://www.kurdistan24.net/en/story/955391/kurdistan-region-parliament-rejects-unconstitutional-measures-calls-for-dialogue-with-baghdad",
-      "date": "2026-11-24T18:53:50.000Z",
-      "lang": "en",
-      "titleKo": "쿠르드 자치정부 의회, 위헌적 조치 거부하고 바그다드와의 대화 촉구",
-      "url": "https://www.kurdistan24.net/en/story/955391/kurdistan-region-parliament-rejects-unconstitutional-measures-calls-for-dialogue-with-baghdad",
-      "body": "In a statement released on Tuesday, the parliament described the remarks as a violation of the Kurdistan Region's constitutional rights and status, emphasizing that the Region was one of the founders of Iraq's federal system.\nERBIL (Kurdistan24) &ndash; The Kurdistan Region Parliament has expressed concern over a statement issued by the spokesperson for the Commander-in-Chief of the Iraqi Armed Forces, stressing that disputes between Erbil and Baghdad must be resolved through direct dialogue and in accordance with the Iraqi Constitution, rather than unilateral measures.\nThe parliament noted that the Iraqi Constitution establishes a federal system of government, recognizes the Kurdistan Region as a federal entity, and grants it legislative, executive, and judicial powers.\nIt added that since the adoption of the 2005 Constitution, the Kurdistan Region has consistently based its relations with the federal government on its constitutional rights and responsibilities.",
-      "bodyKo": "의회는 화요일에 발표한 성명에서 해당 발언을 쿠르드스탄 지역의 헌법적 권리와 지위에 대한 위반으로 규정하고, 쿠르드스탄 지역이 이라크 연방 체제의 창립자 중 하나임을 강조했다.\n에르빌(쿠르디스탄24) – 쿠르디스탄 지역 의회는 이라크 군 총사령관 대변인이 발표한 성명에 우려를 표명하며, 에르빌과 바그다드 간의 분쟁은 일방적인 조치가 아닌 직접적인 대화를 통해 이라크 헌법에 따라 해결되어야 한다고 강조했다.\n의회는 이라크 헌법이 연방 정부 체제를 확립하고 쿠르드스탄 지역을 연방체로 인정하며 입법, 행정, 사법권을 부여한다고 지적했다.\n또한 2005년 헌법이 채택된 이래 쿠르드스탄 지역은 헌법상의 권리와 책임을 바탕으로 연방 정부와의 관계를 지속적으로 유지해 왔다고 덧붙였다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Kurdistan24"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "تظاهرات العقود تربك شوارع بغداد ومحتجّون يغلقون ديوان البصرة",
-      "source": "Azzaman",
-      "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxOdHJtR0hlVWJYeWdOcDVkRkk4RFh4bTlseGpUQjFQd1Jicm83cDBuWmY4SXlRRkpJaFFQYlAwM0FlckFZWU5PaTJ3eENzbnpSUUx4WUlQeW4wZDZQa040THZqVWc3bml5aHhrWkJlbXZmTGFFZlQwOUY0b0NKYUVSTkROemZlS3BMNTdOWHpUVGlGcFlvczVIcUVGdU1CRWlvbDZQREUyaVdkSHpfOUV4bE5yUzlsZzZGNXFaYkpxN3Z0bnZ4UkdlMjNiY2hRWFB0cFl1WXpxTGZVWmdRRVdNZTRoS3NoOEx5aHl2MC16UDdTeVdOT0llNVMyeGFZZTYwQ3FjenNxSGVBTDFnMVFPWjI5MFBla0FGVDV6WWQ4QnZuS0RHcjZNTXdxRF9FQlFMWlRCN0VwRXZWaFl0anZDcGJmQkc?oc=5",
-      "date": "2026-11-24T18:33:44.000Z",
-      "lang": "ar",
-      "titleKo": "계약제 노동자 시위가 바그다드 거리를 혼란에 빠뜨리고 시위대가 바스라 주청사를 봉쇄했습니다.",
-      "count": 1,
-      "sources": [
-        "Azzaman"
-      ],
-      "related": [],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "y",
-        "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
-        "act": "시위 시간대 시내 이동 피하기",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraqi Kurds close ranks as Baghdad moves to seize oil, border control - Al-Monitor",
-      "source": "Al-Monitor",
-      "link": "https://www.al-monitor.com/originals/2026/11/iraqi-kurds-close-ranks-baghdad-moves-seize-oil-border-control",
-      "date": "2026-11-24T18:29:31.000Z",
-      "lang": "en",
-      "titleKo": "이라크 쿠르드족, 바그다드의 석유 및 국경 통제권 장악 움직임에 대응해 단합",
-      "url": "https://www.al-monitor.com/originals/2026/11/iraqi-kurds-close-ranks-baghdad-moves-seize-oil-border-control",
-      "body": "The KDP and the PUK set aside their bitter rivalries to oppose Prime Minister Ali al-Zaidi’s push to bring the Kurdistan Region’s oil fields and border crossings under Baghdad’s control.\nThe two leading parties running the Kurdistan Regional Government of Iraq set aside their political standoff on Tuesday to condemn moves by Iraqi Prime Minister Ali al-Zaidi to bring all of the Kurdish region’s oil fields and border crossings under Baghdad’s control. The Kurdistan Democratic Party (KDP) and the Patriotic Union of Kurdistan (PUK) called the steps a violation of their constitutionally enshrined rights, saying that a “red line” had been breached. Noting that the Kurdistan Region “is the product of the blood and the long struggle of the people of Kurdistan,” the parties said they support “dialogue” rather than “unilateral decisions” that failed to “serve Iraq’s security and stability.”",
-      "bodyKo": "KDP와 PUK는 쿠르드 자치지역의 유전과 국경 통과 지점을 바그다드의 통제하에 두려는 알리 알자이디 총리의 움직임에 반대하기 위해 치열한 경쟁을 잠시 접어두었다.\n이라크 쿠르드 자치정부를 이끄는 두 주요 정당은 이라크의 알리 알자이디 총리가 쿠르드 지역의 모든 유전과 국경 통과 지점을 바그다드의 통제하에 두려는 움직임을 비난하기 위해 화요일 정치적 대립을 잠시 접었다. 쿠르드민주당(KDP)과 쿠르드민족연합(PUK)은 이러한 조치를 헌법에 명시된 자신들의 권리를 침해하는 것이며 '레드라인'이 넘어진 것이라고 비판했다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Al-Monitor"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraq is said to challenge oil capacity review ahead of OPEC+ quota talks",
-      "source": "TradingView",
-      "link": "https://www.tradingview.com/news/seekingalpha:ad880c330094b:0-iraq-is-said-to-challenge-oil-capacity-review-ahead-of-opec-quota-talks/",
-      "date": "2026-11-24T18:23:13.000Z",
-      "lang": "en",
-      "titleKo": "이라크, OPEC+ 할당량 협상에 앞서 석유 생산량 검토에 이의 제기할 것으로 알려져",
-      "url": "https://www.tradingview.com/news/seekingalpha:ad880c330094b:0-iraq-is-said-to-challenge-oil-capacity-review-ahead-of-opec-quota-talks/",
-      "body": "Iraq has challenged an OPEC+-commissioned assessment placing its maximum oil production capacity below 5 million barrels a day, Bloomberg News reported Tuesday, citing people familiar with the confidential process. The dispute could complicate Sunday’s online meeting, when the alliance is expected…\nCL1! UKOIL Iraq has challenged an OPEC+-commissioned assessment placing its maximum oil production capacity below 5 million barrels a day, Bloomberg News reported Tuesday, citing people familiar with the confidential process. The dispute could complicate Sunday’s online meeting, when the alliance is expected to use the findings to help determine production targets.\nOil Minister Basim Mohammed Khudair has written to OPEC asserting that Iraq can produce 5.2 million barrels daily, one of the people said. A higher recognized capacity would strengthen Baghdad’s case for a larger production allowance.",
-      "bodyKo": "블룸버그 뉴스는 화요일, 비공개 절차에 정통한 관계자들의 말을 인용해 이라크가 OPEC+가 의뢰한 평가에서 자국의 최대 석유 생산량을 일일 500만 배럴 미만으로 산정한 것에 이의를 제기했다고 보도했다. 이러한 분쟁으로 인해 OPEC+가 …할 것으로 예상되는 일요일 온라인 회의가 복잡해질 수 있다.\nCL1! 블룸버그 뉴스는 화요일, 기밀 절차에 정통한 사람들의 말을 인용하여 이라크가 OPEC+가 의뢰한 평가에서 자국의 최대 석유 생산량을 일일 5백만 배럴 미만으로 산정한 것에 대해 이의를 제기했다고 보도했다. 이러한 이견으로 인해 일요일에 열리는 온라인 회의가 복잡해질 수 있다. 이번 회의에서 OPEC+는 생산 목표를 결정하는 데 이 평가 결과를 활용할 것으로 예상된다.\n한 소식통에 따르면, 바심 모하메드 쿠다이르(Basim Mohammed Khudair) 석유부 장관은 이라크가 하루 520만 배럴을 생산할 수 있다고 OPEC에 서한을 보냈다고 한다. 인정되는 생산량이 더 많아지면 바그다드가 더 많은 생산 할당량을 요구하는 근거가 더욱 탄탄해질 것이다.",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "TradingView"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "حكومة العراق تقر تعديل تبويب المشاريع المدرجة على المنافذ الحدودية",
-      "source": "Mubasher",
-      "link": "https://www.mubasher.info/news/21589267/%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%AA-%D8%B5%D8%AF%D8%B1-9-%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D8%B1%D8%B2%D9%87%D8%A7-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D9%82%D9%85%D8%AD-%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B0-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%D9%8A%D8%A9",
-      "date": "2026-11-24T18:08:53.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 정부, 전기, 밀, 국경 통행로 등에 관한 9가지 주요 결정을 발표",
-      "url": "https://www.mubasher.info/news/21589267/%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%AA-%D8%B5%D8%AF%D8%B1-9-%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D8%B1%D8%B2%D9%87%D8%A7-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D9%82%D9%85%D8%AD-%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B0-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%D9%8A%D8%A9",
-      "body": "ترأس رئيس مجلس الوزراء العراقي علي فالح الزيدي الجلسة التاسعة والعشرين لمجلس الوزراء، حيث وافق المجلس على عدة قرارات منها الإبقاء على أجور المولدات الكهربائية الخاصة بـ 2500 دينار لكل كيلو واط سنوياً، وتعديل تبويب مشاريع المنافذ الحدودية لتدرج تحت تنمية الأقاليم. كما أقر المجلس استمرار بيع الحنطة المحلية للمطاحن الأهلية بسعر 475 ألف دينار للطن لمدة 3 أشهر، وتسليم كمية القمح المصادرة لوزارة الزراعة لإعادة تعفيرها وبيعها للفلاحين بسعر مدعوم.\nمباشر: ترأس رئيس مجلس الوزراء العراقي علي فالح الزيدي، مساء اليوم الثلاثاء، الجلسة الاعتيادية التاسعة والعشرين لمجلس الوزراء، التي جرت فيها مناقشة الأوضاع العامة في البلاد، وبحث الفقرات المدرجة على جدول الأعمال، واتخاذ القرارات اللازمة بشأنها.\nووافق المجلس على التوصيات الخاصة بتعليمات تسجيل وفرض الأجور على المولدات الخاصة، إذ تقرر الإبقاء على مقدار الأجر المقرر في تعليمات التجهيز بالطاقة الكهربائية والبالغ 2500 دينار لكل 1 كي في، سنوياً تستوفى من قبل الشركة العامة لتوزيع الكهرباء، على أن تؤول إيراداً إلى الخزينة العامة، وفقا لبيان صحفي.",
-      "bodyKo": "이라크 총리 알리 팔리흐 자이디가 내각의 제29차 회의를 주재했으며, 내각은 민간 발전기 요금을 킬로와트당 연간 2,500 이라크 디나르로 유지하고 국경 통과 지점 프로젝트 분류를 지역 개발에 포함되도록 수정하는 등 여러 결정을 승인했다. 또한 내각은 3개월 동안 민간 제분소에 국내산 밀을 톤당 47만5천 이라크 디나르의 가격으로 계속 판매하고, 압류된 밀의 양을 농업부에 인계하여 재소독한 후 보조금 가격으로 농민들에게 판매하는 것을 승인했다.\n라이브: 이라크 총리 알리 팔리흐 알자이디는 오늘 화요일 저녁 제29차 정기 내각 회의를 주재했습니다. 이 회의에서는 국내 일반 상황을 논의하고 안건에 포함된 항목을 검토하며 이에 대한 필요한 결정을 내렸습니다.\n위원회는 개인 발전기에 대한 등록 및 요금 부과 지침에 관한 권고안을 승인했으며, 전기 공급 지침에 규정된 요금인 1kV당 연간 2,500디나르를 전기 배전 공사가 징수하고, 이를 국고 수입으로 귀속시키기로 결정했다고 보도자료를 통해 밝혔습니다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "Mubasher"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크 정부, 전기, 밀, 국경 통행로 등에 관한 9가지 주요 결정을 발표",
-          "source": "Mubasher",
-          "link": "https://www.mubasher.info/news/21589267/%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%AA-%D8%B5%D8%AF%D8%B1-9-%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A3%D8%A8%D8%B1%D8%B2%D9%87%D8%A7-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D9%82%D9%85%D8%AD-%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%A7%D9%81%D8%B0-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF%D9%8A%D8%A9"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraqi political blocs name nominees to replace Communications and Transport Ministers",
-      "source": "IraqiNews",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdVF6UGxjSGdkLUdOUm5UbVl5ejVSM21aU1lTX2pkaUNpQVAxdkJLcWZ1TzJVY1ljaE5QMXBVeWNXdENkSVlmRmpnczFDSjRXTFFCaVJpd1B4MmRzZW5IdkdpWHZqOV9ZYVllOHBoVmdKVldZTWd2ZE5zWUtJcG45aHNJZmtJNkZ3VThxWnFsT0JEaFNJaEh0c2ZIMjRaX29iUGRiSzF0SnVid1ZsTXN6bDdJbE12RWluWG1LNklXLTc1Zw?oc=5",
-      "date": "2026-11-24T18:08:46.000Z",
-      "lang": "en",
-      "titleKo": "이라크 정치 세력, 통신부 장관과 교통부 장관 후임자 지명",
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Strengthening Cairo-Baghdad relations - Egypt - Al-Ahram Weekly",
-      "source": "Ahram Online",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOelNBNXluTE9PM2xjb0pKMHdTaHFxQUZkcFY5RnZJOXVFRjdiT2VQd1FaSkVvMkxNbXpXWHJ6Rk9SUXhMZ3gwUE9rT3drUUl6dTRhcVVfakRLQXBadFNMN3RHTE91Tzg4ZTBkSTBqYWpmZkpjVlNSc21DUmZGZ3QxM3VpR2E1eFUxTGdNYjJqM1ZFUWp0MHZrMTd4NFQ4aGdEOEZBWVE1azlTU196Q3FXNnhOZXJlQmFGeFE?oc=5",
-      "date": "2026-11-24T18:04:16.000Z",
-      "lang": "en",
-      "titleKo": "카이로-바그다드 관계 강화",
-      "count": 1,
-      "sources": [
-        "Ahram Online"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "الكهرباء تفتح باب التقديم للشركات لتطوير شبكات التوزيع في العراق",
-      "source": "هذا اليوم",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1DSWJYTUg3VmNfVGRJZWU1T2ozRHRUc2JEN3ZnZ1RyOHMwbFJvRGhkVlhVTXRBQ0lDOGRCX0VCY05IaXRQSmE1di1ldzhQSzd30gFKQVVfeXFMUG14aTJjemtjdDFmWUJubDNDeXpicU4wcml0bVdYYUJ0R2FMaXBMa19sUVlmd2hEb2YtSkxIb0VNY1dfaWhSQkdmV0E?oc=5",
-      "date": "2026-11-24T17:54:03.000Z",
-      "lang": "ar",
-      "titleKo": "전력부가 이라크 배전망 개발을 위한 기업 신청 접수를 시작합니다.",
-      "count": 1,
-      "sources": [
-        "هذا اليوم"
-      ],
-      "related": [],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "اعلان عطلة رسمية – القنصلية العامة لجمهورية العراق في تكساس",
-      "source": "وزارة الخارجية العراقية",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMlRaUGJWRDR4R0UxTENrOGQyVzBVOTRNclJTZXVoR0p2S2M3SXVTTXpPZXVkM0hNV2VXdU1zalROYldLd2pGdnhIWkNBMWxpVGV0cVRFcER0QWY5NDBNY2ZKbHZJVURVdXc4SEtTdXNyN3gxall0M2J4SUF5UjlHMnh5dHFhVmVwOEFtYjNTNGZsYmhhRElxdnJYal9fOUM4Z0lXQzRybXVRLTNZX1dUYUFBUW9wRF9OVko4WFdINXhzZw?oc=5",
-      "date": "2026-11-24T17:33:45.000Z",
-      "lang": "ar",
-      "titleKo": "공휴일 공지",
-      "count": 1,
-      "sources": [
-        "وزارة الخارجية العراقية"
-      ],
-      "related": [],
-      "tag": "휴일·행사",
-      "impact": {
-        "lv": "y",
-        "line": "공휴일·관공서 휴무 — 현지 인력 출근·관공서 업무(통관·인허가) 차질 가능",
-        "act": "현지 인력 출근 여부와 통관·인허가 일정 확인",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Beyond the redeployments in Iraq - World - Al-Ahram Weekly",
-      "source": "Ahram Online",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVHNiQzdiOXlZSnVOUHRfRURVSGJCU0Y2N09KMUZ4eVdCY3dqVkhnRF9xZXExOXNsV1c4bU5kTnJhZmdXNEE2N3dWX1pTVXJNV3FTRV94d1E3V1puWFlYX3d0djdFS0xDTXlYd3VHbUpqZXItR0FzS3BBX1BDSzZudi1sSDlfbDZ4UWRxdjNQbG9sOWZoaHBMVjJHczdvYURYaUNjQlVIdS1kMFNIZEU0ZDdUb2M?oc=5",
-      "date": "2026-11-24T17:12:35.000Z",
-      "lang": "en",
-      "titleKo": "이라크 내 재배치 그 이상",
-      "count": 1,
-      "sources": [
-        "Ahram Online"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "لجنة النفط والغاز والثروات الطبيعية النيابية تقود متابعة تداعيات حادث انفجار أنبوب الغاز في محطة الهارثة وتبحث تحديد المسؤوليات ومعالجة مكامن الخلل",
-      "source": "مجلس النواب العراقي",
-      "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNQzAxMnZjUEFyOVl4dEpuRXpFVF9ISnpsaXNfTnRGSlRxdUFWVEJDWjBTaWtqM2NLZmNSa0FQXzdvZUJQbHJ0bjJtQ0FWLUFxU2p5T3V6ZmphUUFyRUY0QnM2WXl0TG50R3MySDh1S3hGV2RwMGZNNHJLZnBPdkxFa283VjdMc09MOXNJWHM5eURGTXFhZ3lqOEJGb1ZqcE5pTDROVjlHMjVfRWV1ZVNXWG1zejZYVHljNmVONXhEN3NTNTNEY2xLeFZMWFc4bTNWd21Pc2ZkVlZvc1VMWmtmV0lUdTVhc1VOdEZ2RTZXR0VRcmNJQnNpejd4TDBBNG9RVERsUTdrU2ozZFgwekxmc1pKdUJqaFdRMENGVzN6Tk9PdlpycEhWRUdXbGxwTHRhLW1YSG9nT0JHQ3pHOG55YXlDeXJGV2FWLUxNRXRkVQ?oc=5",
-      "date": "2026-11-24T17:08:11.000Z",
-      "lang": "ar",
-      "titleKo": "의회 석유, 가스 및 천연자원 위원회가 알하르사 정유소 가스관 폭발 사고의 여파를 조사하고 책임 소재를 규명하며 문제점을 해결하기 위한 조치를 주도하고 있습니다.",
-      "count": 1,
-      "sources": [
-        "مجلس النواب العراقي"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "الزيدي يفتح جبهات المواجهة مع الفصائل المسلحة والأكراد في العراق",
-      "source": "جريدة القدس",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZWp3RmZ5eEVjZUo4MHVnMzNEdnVLeG94c0Ezc3lHOWZCbmY2NkVfYmpranNnc240X0lWeU1UOTV0aExQX1k5LVVZQUFrandVMzFCSzFJbzZZSTZtTTZYcGhqM3I4clJvVzFINjFDNk5OVEl3dlNXSF9pNlg3aWZqbE5rNVk?oc=5",
-      "date": "2026-11-24T15:34:32.000Z",
-      "lang": "ar",
-      "titleKo": "자이디, 이라크의 무장 단체 및 쿠르드족과 대립 전선 개설",
-      "count": 1,
-      "sources": [
-        "جريدة القدس"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "وزير داخلية إقليم كردستان: لن نخضع لأي قرارات من بغداد تصدر دون اتفاق",
-      "source": "Lebanon ON",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5mMkZYV2ktQU5wXzJIVzJ2cnJNSlNpMjFhS2ZsSUNyZjZNMGQ2YVVScUgyYkUwTTYzcVJ5RWxnTHlNSUswUEpvR1VzdVpDZw?oc=5",
-      "date": "2026-11-24T15:23:40.000Z",
-      "lang": "ar",
-      "titleKo": "쿠르드 자치구 내무부 장관: 합의 없이 내려진 바그다드의 어떠한 결정에도 따르지 않을 것입니다.",
-      "count": 1,
-      "sources": [
-        "Lebanon ON"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Dollar falls in Baghdad, Erbil markets",
-      "source": "شفق نيوز",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5rMUJkNzVHNzkzTjFLSlpXTWxpblpzWnZNUzdHbWN0b1hGVnl4TFlfZUxjVGd3VlE1MndCVlcyakRMemh2YkU3WlVQLVlzaFFMQXhjZW9rTlc1OFFTVXpSelNEdExzOTlzSFIwQWlzYTdZZnlpVVEyOUVvWmRhZw?oc=5",
-      "date": "2026-11-24T15:21:42.000Z",
-      "lang": "en",
-      "titleKo": "바그다드·아르빌 시장 달러 하락",
-      "count": 3,
-      "sources": [
-        "نجوم مصرية",
-        "المقال نيوز",
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "오늘 2026년 11월 24일 현지 시장의 이라크 디나르 대비 달러 환율",
-          "source": "نجوم مصرية",
-          "link": "https://news.google.com/rss/articles/CBMizgJBVV95cUxNMDBCM0NpUkhhckduRE5jQk1wSEtHRTFxR3J5dTZhTTZEM3NnSHllOGFPNW9vY2dvUHNvSVZUMlNONE0wdnREWTd6c1V0cU5fbUt1RG84LTN6eXBNSENFTTIyLVctV2VMVGc4M1NQUHZJQmlycmc4aW4tVDhzUjB2VlEzRy1PMzJSdDZXRTRESzR6MjdWVVlSTjY5X0RUS0FvcVViX0VpZnVrT2hSS1BXbjFXOTlqU1hzRS1jTGpqVUJlSkZQcDV3aDVvX0w4UTJzS1pHdjFvX1hfMkdfM05YRTBLbEd0NlpBekJJaXhSRkJOYWh5V3pjZ1FFOHN3M2t4VVA5Q0d5Z0QtTWpNVDBxOF9lUXhZdVpGQnBoUkRUZ3FCWmhESW03dmJZT2RPMmQ4MWRQWVppUkJoekluSVZPUjRpT0gxSk1URHpnUVVB?oc=5"
-        },
-        {
-          "titleKo": "오늘의 달러 대비 이라크 디나르 환율",
-          "source": "المقال نيوز",
-          "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNYnNhLVdXR0o1M2ZoRTBOQjltUXZWSDZtQm9DQkdtQ3VTbFZLSVhGVjdTUDAzVnpySWtUX3VpZDFmNDNydTg3ZjFVTUtQeDlLcHlXQXp4bjBXZC1PbENta3JyVzZkMGFrNjU1Y1J4MWluX1lBUE12c2gxck43bUZ6RGRPeEdhN0RUc25DSUlpek5pQVkzZE1tMUprRHZCWUFoQ2E0ZlFub09WbUNUenVuSDgwdkpWalNUZnJleG1JLTh0enMza3BHTWx3c1NLblhPSFVXclQxOHJmbS1zOXhvdTdsSWVYQUtMeFRhVUwySnY1eHpBc0tfclpRQWNCTjFQWEp6d1UxVzVtY2RFWEJieFBBM1N2N181TV9NU0JnNFpBWDdGeG5nQXpLYllMUTlyWXM1Y1NOQWNOdzUzOHJhd3ZB?oc=5"
-        }
-      ],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraqi PM meets Egyptian businessmen in Cairo",
-      "source": "IraqiNews",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSGsyWFlsc3hsRDVjT0U4WDI3WnMtblVSRFA3SDF6UGsxakc2WnZPLXlFVkx2SGx3YWFlbTJSa0pzejdjM2tDN1dIRTY0MV9QYkNXMEQzREVqSlJCcHY4R21aNFNlVGVHejE4Y204OW5GQXVHNFAtb2Uxd2xmUHVIeFVn?oc=5",
-      "date": "2026-11-24T14:58:43.000Z",
-      "lang": "en",
-      "titleKo": "이라크 총리, 카이로에서 이집트 기업인들과 회동",
-      "count": 1,
-      "sources": [
-        "IraqiNews"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq Announces Visa-Free Travel Deal With Egypt",
-      "source": "Egyptian Streets",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQd3dRZFItUUkwa2V5WWVBc1NXdFdiVTNNRE16SGVFaE01Zl93MmhISkppM3FjTHZSdEpTa3VnNmt2SjZ5S0R6M1ZOY1V3SU1KZzZMYk5IbmFQNEMxWW12RGhLUnYyV2FlSmJvMVgzcVc2eWREbnV3Y0w2UzNUU09KVVlZSG1oSzdhMWhONGlzbkg?oc=5",
-      "date": "2026-11-24T14:55:50.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 이집트와의 무비자 여행 협정 발표",
-      "count": 1,
-      "sources": [
-        "Egyptian Streets"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "دانة غاز ونفط الهلال: توريد الغاز إلى وزارة الكهرباء العراقية يتوافق مع حقوقنا التعاقدية - ارقام : اخبار ومعلومات سوق الأسهم السعودي",
-      "source": "تاسي",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBHdkUyWnZzdHVJeVRrZjFXMmllUk9fMUhjM2RzN3F2X2FWYlpTZUN5SGlWbDNlSUduWlNlZ2p4Z01zUFdoT2VhY3ZLY2d2SWRiMGpWejdnUlpiRld4eW5YRGNUTU9sc25tZFE?oc=5",
-      "date": "2026-11-24T14:54:31.000Z",
-      "lang": "ar",
-      "titleKo": "다나 가스 & 힐랄 오일: 이라크 전력부에 가스 공급은 당사의 계약상 권리에 부합합니다",
-      "count": 1,
-      "sources": [
-        "تاسي"
-      ],
-      "related": [],
-      "tag": "전력·생활",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
     }
   ],
   "alerts": [],
@@ -1061,26 +1303,5 @@
       "link": "https://altaakhi.net/2026/09/287088/"
     }
   ],
-  "brief": [
-    {
-      "lv": "y",
-      "titleKo": "계약제 노동자 시위가 바그다드 거리를 혼란에 빠뜨리고 시위대가 바스라 주청사를 봉쇄했습니다.",
-      "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
-      "act": "시위 시간대 시내 이동 피하기",
-      "km": 27,
-      "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxOdHJtR0hlVWJYeWdOcDVkRkk4RFh4bTlseGpUQjFQd1Jicm83cDBuWmY4SXlRRkpJaFFQYlAwM0FlckFZWU5PaTJ3eENzbnpSUUx4WUlQeW4wZDZQa040THZqVWc3bml5aHhrWkJlbXZmTGFFZlQwOUY0b0NKYUVSTkROemZlS3BMNTdOWHpUVGlGcFlvczVIcUVGdU1CRWlvbDZQREUyaVdkSHpfOUV4bE5yUzlsZzZGNXFaYkpxN3Z0bnZ4UkdlMjNiY2hRWFB0cFl1WXpxTGZVWmdRRVdNZTRoS3NoOEx5aHl2MC16UDdTeVdOT0llNVMyeGFZZTYwQ3FjenNxSGVBTDFnMVFPWjI5MFBla0FGVDV6WWQ4QnZuS0RHcjZNTXdxRF9FQlFMWlRCN0VwRXZWaFl0anZDcGJmQkc?oc=5",
-      "date": "2026-11-24T18:33:44.000Z",
-      "more": 0
-    },
-    {
-      "lv": "y",
-      "titleKo": "공휴일 공지",
-      "line": "공휴일·관공서 휴무 — 현지 인력 출근·관공서 업무(통관·인허가) 차질 가능",
-      "act": "현지 인력 출근 여부와 통관·인허가 일정 확인",
-      "km": null,
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMlRaUGJWRDR4R0UxTENrOGQyVzBVOTRNclJTZXVoR0p2S2M3SXVTTXpPZXVkM0hNV2VXdU1zalROYldLd2pGdnhIWkNBMWxpVGV0cVRFcER0QWY5NDBNY2ZKbHZJVURVdXc4SEtTdXNyN3gxall0M2J4SUF5UjlHMnh5dHFhVmVwOEFtYjNTNGZsYmhhRElxdnJYal9fOUM4Z0lXQzRybXVRLTNZX1dUYUFBUW9wRF9OVko4WFdINXhzZw?oc=5",
-      "date": "2026-11-24T17:33:45.000Z",
-      "more": 0
-    }
-  ]
+  "brief": []
 }
