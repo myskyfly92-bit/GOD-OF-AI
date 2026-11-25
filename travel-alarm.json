@@ -1415,6 +1415,12 @@
    "level": 4,
    "regions": [
     {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "아제르바이잔 접경 5km 구간"
+    },
+    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -1425,12 +1431,6 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "2, 4단계 지정 지역을 제외한 지역"
-    },
-    {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "아제르바이잔 접경 5km 구간"
     }
    ],
    "written": "",
@@ -1558,12 +1558,6 @@
    "level": 3,
    "regions": [
     {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "국경지역(튀니지(테베사, 엘웨드 동부, 오아글라 동부), 리비아(일리지 동부), 니제르ㆍ말리ㆍ모리타니(타만라셋 남부, 아드라르 남서부, 틴두프 남서부))"
-    },
-    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -1574,6 +1568,12 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "알제주"
+    },
+    {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "국경지역(튀니지(테베사, 엘웨드 동부, 오아글라 동부), 리비아(일리지 동부), 니제르ㆍ말리ㆍ모리타니(타만라셋 남부, 아드라르 남서부, 틴두프 남서부))"
     }
    ],
    "written": "",
@@ -2341,16 +2341,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "베네수엘라 국경지역 20km/ 에콰도르 국경지역 20km / 바예델카우카 주(깔리 시 제외)/ 아라우카 주, 카우카 주/(*는 일부: 안티오키아 주*, 초코 주*/ 카케타 주*)  / 노르떼 데 산딴데르(Norte de Santander) 주"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2714,16 +2714,16 @@
    "level": 4,
    "regions": [
     {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "이스라엘 북부 레바논 접경지역(국경으로부터 4km), 가자지구"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "4단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "이스라엘 북부 레바논 접경지역(국경으로부터 4km), 가자지구"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-11-24T11:40:47.783569+00:00"
+ "generatedAt": "2026-11-25T10:33:36.986303+00:00"
 }
