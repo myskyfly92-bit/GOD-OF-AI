@@ -9,6 +9,30 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO calls for stronger parliamentary leadership for global health at the 153rd Inter-Parliamentary Union Assembly",
+      "date": "2026-11-24T15:24:03Z",
+      "summary": "WHO participated in the 153rd Inter-Parliamentary Union (IPU) Assembly in Arusha, Tanzania, calling for stronger parliamentary leadership to advance global health priorities. WHO engaged parliamentarians on universal health coverage (UHC), sustainable health financing, health taxes, the WHO Pandemic Agreement, sexual and reproductive health and rights (SRHR), HIV and AIDS, immunization and vaccination, youth engagement, and AI and digital technologies in health. The discussions highlighted the r",
+      "link": "https://www.who.int/news/item/24-11-2026-who-calls-for-stronger-parliamentary-leadership-for-global-health-at-the-153rd-inter-parliamentary-union-assembly",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "Advancing the timely and ethical inclusion of pregnant and lactating women in clinical trials",
+      "date": "2026-11-24T15:04:24Z",
+      "summary": "A new knowledge portal provides resources to support inclusive clinical research and improve health outcomes for women and their babies Historically, pregnant and breastfeeding women have often been excluded from clinical research, resulting in significant evidence gaps that affect clinical practice, policy development and access to appropriate health interventions.",
+      "link": "https://www.who.int/news/item/24-11-2026-advancing-the-timely-and-ethical-inclusion-of-pregnant-and-lactating-women-in-clinical-trials",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
+      "title": "WHO Director-General announces support for vaccines, medical equipment during official visit to Cuba",
+      "date": "2026-11-24T14:52:41Z",
+      "summary": "Today, World Health Organization (WHO) Director-General Dr Tedros Adhanom Ghebreyesus announced US$2 million to help strengthen Cuba’s national immunization activities and provided essential medical equipment to health facilities.",
+      "link": "https://www.who.int/news/item/24-11-2026-who-director-general--announces-support-for-vaccines--medical-equipment-during-official-visit-to-cuba",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "Call for consultant expressions of interest: ICHI Traditional Medicine code set development",
       "date": "2026-11-24T13:00:00Z",
       "summary": "WHO is seeking a consultant for 11 months to develop the Traditional Medicine (TM) code set of the International Classification of Health Interventions (ICHI), within the Classifications and Terminologies team, Department of Data, Digital Health, Analytics and AI. The consultant will produce the Alpha and Beta drafts of the ICHI TM code set, covering interventions from Ayurveda, Siddha, Unani and Traditional Chinese Medicine. They will also coordinate the external expert and stakeholder country ",
@@ -136,30 +160,6 @@
       "newsType": "News release"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Evidence mounts that exposure to hormone-disrupting chemicals starts before birth: UNEP–WHO report",
-      "date": "2026-11-17T09:38:32Z",
-      "summary": "The State of the Science on Endocrine Disrupting Chemicals 2026 report, is the first major global update since the 2012 UNEP-WHO assessment; it finds that more than a decade of research has strengthened and broadened the evidence linking these chemicals with harm to people and wildlife.",
-      "link": "https://www.who.int/news/item/17-11-2026-evidence-mounts-that-exposure-to-hormone-disrupting-chemicals-starts-before-birth--unep-who-report",
-      "newsType": "Joint News Release"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Advocating for stronger, integrated cervical cancer prevention and care for women and girls living with HIV",
-      "date": "2026-11-17T07:00:00Z",
-      "summary": "On World Cervical Cancer Elimination Day, WHO is calling for stronger integration of HIV and cervical cancer services to ensure that women and girls living with HIV receive timely prevention, screening, diagnosis and treatment of cervical cancer. A coordinated person-centred approach can reduce deaths, improve health outcomes and contribute to an improved quality of life. Women living with HIV have a disproportionate burden of cervical cancer, with a six-fold higher risk of developing cervical c",
-      "link": "https://www.who.int/news/item/17-11-2026-advocating-for-stronger--integrated-cervical-cancer-prevention-and-care-for-women-and-girls-living-with-hiv",
-      "newsType": "Departmental update"
-    },
-    {
-      "kind": "WHO 소식",
-      "title": "Countries expand cervical cancer screening and treatment, bringing elimination closer",
-      "date": "2026-11-17T07:00:00Z",
-      "summary": "Three in five women aged 30–49 have never been screened for cervical cancer, according to new WHO estimates. Access to human papillomavirus (HPV) testing is particularly unequal. Only 2% of women in low- and middle-income countries were screened using HPV testing in the preceding five years, compared with 32% in high-income countries.",
-      "link": "https://www.who.int/news/item/17-11-2026-countries-expand-cervical-cancer-screening-and-treatment--bringing-elimination-closer",
-      "newsType": "Departmental update"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Middle East respiratory syndrome (MERS) – Qatar",
       "date": "2026-11-13T13:48:47Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON618"
     }
   ],
-  "generatedAt": "2026-11-24T16:40:56.017342+00:00"
+  "generatedAt": "2026-11-25T01:43:46.679031+00:00"
 }
