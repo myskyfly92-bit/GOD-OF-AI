@@ -9,6 +9,14 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO recommends new oral treatment option for gonorrhoea and reports new data on antimicrobial resistance",
+      "date": "2026-11-25T06:00:00Z",
+      "summary": "WHO has conditionally recommended a new oral antibiotic, zoliflodacin, as an additional single-dose treatment option for gonorrhoea, marking an important step in expanding treatment. WHO also released today its 2026 Enhanced Gonococcal Antimicrobial Surveillance Programme (EGASP) report, presenting new data from10 countries across five WHO regions to inform public health action.",
+      "link": "https://www.who.int/news/item/25-11-2026-who-recommends-new-oral-treatment-option-for-gonorrhoea-and-reports-new-data-on-antimicrobial-resistance",
+      "newsType": "Departmental update"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO calls for stronger parliamentary leadership for global health at the 153rd Inter-Parliamentary Union Assembly",
       "date": "2026-11-24T15:24:03Z",
       "summary": "WHO participated in the 153rd Inter-Parliamentary Union (IPU) Assembly in Arusha, Tanzania, calling for stronger parliamentary leadership to advance global health priorities. WHO engaged parliamentarians on universal health coverage (UHC), sustainable health financing, health taxes, the WHO Pandemic Agreement, sexual and reproductive health and rights (SRHR), HIV and AIDS, immunization and vaccination, youth engagement, and AI and digital technologies in health. The discussions highlighted the r",
@@ -152,14 +160,6 @@
       "newsType": "News release"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Leaders commit to accelerate action on obesity prevention and control",
-      "date": "2026-11-17T10:00:00Z",
-      "summary": "Global health leaders, ministers and partners launched a new call for action today at the Global Obesity Summit in Spain, committing to accelerate progress in obesity prevention, early intervention and care.",
-      "link": "https://www.who.int/news/item/17-11-2026-leaders-commit-to-accelerate-action-on-obesity-prevention-and-control",
-      "newsType": "News release"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Middle East respiratory syndrome (MERS) – Qatar",
       "date": "2026-11-13T13:48:47Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON618"
     }
   ],
-  "generatedAt": "2026-11-25T01:43:46.679031+00:00"
+  "generatedAt": "2026-11-25T16:24:46.528157+00:00"
 }
