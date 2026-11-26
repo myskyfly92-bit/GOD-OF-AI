@@ -1,7 +1,35 @@
 {
-  "generatedAt": "2026-11-25T04:11:15.426Z",
+  "generatedAt": "2026-11-26T03:34:20.740Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
+    {
+      "title": "12월부터 희귀·중증난치질환자 건강보험 본인부담률 10%→7% 인하",
+      "source": "보건복지부 대표홈페이지",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQb1NqUmk4VnFuVEx2YzVpa05FOGdKdjBlU25IMXBUR1R3UDFIUTg1VjlGTHJKS2xlTURzaGR0aW1uZHBvX0c2ZzB4MkVzQ3BPTmU2eWpQOG05bTNvb3NTS01ZV2VzNktNMEIxMkhIYnhRSUNUS3I3MWNKQ1I1Q0ZNWmllT2RFY2lxU1RSR0hCTVJyQVRwZFBGbXQ2OA?oc=5",
+      "date": "2026-11-24T04:18:00.000Z"
+    },
+    {
+      "title": "- 보건복지부 대표홈페이지",
+      "source": "",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdGQxbUZNbHctZU1zMFl1UkZ5OXdhYV9vLTZYbzh3eDVtVC1ia2MzanNpV245Y043VlYyZXJpSGxid2lTbVVvOW14dnJucEhJRFJxTlBLbmo1SzQyRFh0YXFQdUI4cXFxVlBtM1RIQ2NqZVVULXJ6dlZXRWNRUVBlVXNyNnc5bmZEZ0tN?oc=5",
+      "date": "2026-11-24T20:32:05.000Z"
+    },
+    {
+      "title": "건강교육 자료실",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTFJpSGhlekhsQ3pEVkZRVHRrTTV5cW1Yb3RrU3QySnhZN1dFMkxzNlRyMnJQTTd3U1ZvYklmZnJ0ZURIUkFRcXN4NDlyZl9sazl5N2RBSFBGRmxPN1MwT0QzOEdhajlHYlV0UV9IenN2TDBnVko4MFM2MWNhUk9PVHhaLXFfZENiRHZLdUtTX3kzREx1dmdNLXh0ZmIwRjhfSk5WSEJzdmZlaHYwUFJNd2VwaEZ2ZTBkS2NmMEl3?oc=5",
+      "date": "2026-11-25T09:05:43.000Z"
+    },
+    {
+      "title": "건강교육 자료실",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdjcxSVRIQ1BjR0lFaHlfNHhNQUc4QmNzajQ4bmQtNTRtb0VSakYySER5ZUE1T1A4STIzZXBWd2pCcG9JV2lWUHY2Unlpa2JWWkV2Zl9La1JacFhfZXozOGVLbG1tWmNsOFBSZnBGTUtkVy1ZR1NKRktSU01XWWZjeXBJYXBOUXoxZUt4QnZJMGIzZFZ3WlNZSlFPU1k2WTJOc0RPWS1NR2VJLUt1cU5vMXdFaWgzTURHX01uc2tB?oc=5",
+      "date": "2026-11-24T21:23:45.000Z"
+    },
     {
       "title": "건강교육 자료실",
       "source": "국가건강정보포털",
@@ -10,18 +38,11 @@
       "date": "2026-11-24T12:37:26.000Z"
     },
     {
-      "title": "공지사항",
+      "title": "건강교육 자료실",
       "source": "국가건강정보포털",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPR3JQak1STTdnN1hkYjNPbThrNXNRWk9temZOdzBRTmt1anBLazJZVWJyb2d6WVRGUEtQZGtDZVgxZW5BSHVFQVJIakNQRkppZ3NfSkpuSy03RGlsQXpjMkJzbG5rNnhvMWp5Nll2a21FM2NjcDBweVBVVm9UN0dQZ2dDbHRrU2lQNzJsd084dlZWQng1SWc?oc=5",
-      "date": "2026-11-24T15:10:55.000Z"
-    },
-    {
-      "title": "1339콜센터",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBRQU0xeUFtWTNKNnozU3h6YWV2WVBncU1oenZuMmR0R2dNMzRVUzR4QlBwaDVydWFReXgydVh0aTQ3Z0wxVjV6T3RWVVBpOEh5Ny1PVVdB?oc=5",
-      "date": "2026-08-23T23:28:53.000Z"
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOREo3SmwxekxZNXhXOHdhaUZoSkVTVWRkSXJSWGhoQTZVZl9ibjVFZUVVQlcxa05CSWpwNW9wdEpZQzRxdUZVNFYxT3NVWVpsLWk2dXl5Q3VwT0VsUXNLRGtPczlsSTZWbUhvblF5elJRLWFmVzVob2hyWE95TEVXZjFjMmRCWlE5YTJYQkJULVFKazFWSWYtaGt1WmNUNEJoUFFEdHBJU25vUzQwUVlHWEt3NDFyZmU0emkxRGZB?oc=5",
+      "date": "2026-11-23T22:03:25.000Z"
     },
     {
       "title": "주요통계(기간별) : HOME > 감염병통계 > 전수감시감염병 > 주요통계(기간별)",
@@ -31,18 +52,25 @@
       "date": "2024-06-10T03:38:59.000Z"
     },
     {
-      "title": "온열질환자 발생 예측 정보",
-      "source": "국가건강정보포털",
+      "title": "채용공고",
+      "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5UUFZlQ2NDRFVzaVZaRW1OR2pZSUhxdHNyZmQ0Z01BU0pESGtTRDI2WGplVXU1VEpTRWtRbVY5a2JZX01VLUJXZnNHVE91d2RCaDlXWWhxc0JnV2lTSHRDS1ptd25uUQ?oc=5",
-      "date": "2026-05-11T02:05:29.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
+      "date": "2025-12-16T15:48:42.000Z"
+    },
+    {
+      "title": "보도자료(전체)",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CUGhYaFZ3Sk5zU0ZmY054cjJYTTNjRHo1SG1uTTFxOElzRjBmOF9aX3BUUWdWVFVOTjhPbWk0V0ZDTkg3RjE3M2dYWWx4ZlhvaE5zSExn?oc=5",
+      "date": "2025-12-16T15:46:00.000Z"
     },
     {
       "title": "- 질병관리청",
       "source": "",
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-25T00:32:24.000Z"
+      "date": "2026-11-25T09:38:38.000Z"
     },
     {
       "title": "레지오넬라증",
@@ -57,34 +85,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1laFI5ZFFSVWgzWWszTDJBdmtoajBBZnVTNENvYmZzWFMySThoYjFWbVBTU1MyTU9DbVhRSnNlQ2w3U1l1Y0xQREVFZm8tZkZUc1pnWldR?oc=5",
       "date": "2025-12-16T15:49:51.000Z"
-    },
-    {
-      "title": "감염병별 : HOME > 감염병통계 > 전수감시감염병 > 감염병별",
-      "source": "질병관리청 감염병포털",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JNUZlS2tac19jbDlnTlhBX2dhZXFnalhnN0xtWW1pUGFXWW9SSGtiekRnY0xNOW56NEswakd6Q3FtcEpfUW1rc2w4T0I1cUU1TFltbXJ6SW8xVWJ0?oc=5",
-      "date": "2024-06-10T02:47:27.000Z"
-    },
-    {
-      "title": "손상통계",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5tUkYwOVE0TXNPRGdUeWxpOGJIMDNxemRldm9FQ2lKVDROTldNYTNVSXhVQlNuT3FUN25vUm1NbVdiYUtG?oc=5",
-      "date": "2021-11-03T09:42:59.000Z"
-    },
-    {
-      "title": "채용공고",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
-      "date": "2025-12-16T15:48:42.000Z"
-    },
-    {
-      "title": "성홍열",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tcC03OGpvaW1sNlE0MmxfMzZYUy1PaEI1UU5aTWxLUlI2am9pbzVGU2gwT3hobGFfQmNRN3RMVkN3X3V2NUhMWDRCUnl2SXV6OE0yRXd3?oc=5",
-      "date": "2025-12-16T16:07:49.000Z"
     }
   ]
 }
