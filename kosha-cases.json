@@ -2,7 +2,7 @@
   "_readme": "이 파일은 GitHub Actions가 한국산업안전보건공단 국내재해사례 API로 자동 생성/갱신합니다. 직접 수정하지 마세요.",
   "source": "한국산업안전보건공단 산업안전포털 국내재해사례 (전 업종)",
   "sourceUrl": "https://portal.kosha.or.kr",
-  "boardTotal": 6398,
+  "boardTotal": 6407,
   "scanned": 400,
   "count": 300,
   "businesses": [
@@ -11,8 +11,179 @@
     "제조업",
     "조선업"
   ],
-  "generatedAt": "2026-11-25T09:06:23.564337+00:00",
+  "generatedAt": "2026-11-26T08:52:39.087000+00:00",
   "items": [
+    {
+      "boardno": "202611261059413MTJ2R",
+      "business": "조선업",
+      "title": "[베트남어] 조선업 중대재해 사례집 / [Tiếng Việt] Tuyển tập các vụ tai nạn lao động nghiêm trọng trong ngành đóng tàu",
+      "contents": "조선업 사업장의 중대재해 예방과 외국인 근로자의 안전보건교육을 지원하기 위해 「조선업 중대재해 사례집」 베트남어 번역자료를 제공합니다.사업장 안전관리자께서는 본 자료를 안전보건교육, 작업 전 안전점검회의(TBM) 등 현장 안전활동에 적극 활용하시기 바랍니다.외국인 근로자께서는 사례집에 수록된 사고사례를 통해 작업 중 발생할 수 있는 위험요인을 확인하고, 유사한 사고가 발생하지 않도록 예방대책을 숙지하여 안전수칙을 실천하시기 바랍니다.자료는 첨부파일의 '다운로드' 또는 '미리보기' 버튼을 클릭하여 확인하실 수 있습니다.Nhằm hỗ trợ phòng ngừa tai nạn lao động nghiêm trọng tại các doanh nghiệp đóng tàu và công tác đào tạo an toàn, vệ sinh lao động cho người lao động nước ngoài, chúng tôi cung cấp bản dịch tiếng Việt của tài liệu tổng hợp các vụ tai nạn lao động nghiêm trọng trong ngành đóng tàu.Đề nghị cán bộ quản lý an toàn tại doanh nghiệp tích cực sử dụng tài liệu này trong công tác đào tạo an toàn, vệ sinh lao động, các cuộc họp an toàn trước khi làm việc (TBM) và các hoạt động an toàn khác tại nơi làm việc.Người lao động nước ngoài hãy tìm hiểu các vụ tai nạn được trình bày trong tài liệu, nhận biết các yếu tố nguy hiểm có thể phát sinh trong quá trình làm việc, nắm vững các biện pháp phòng ngừa và tuân thủ các quy định an toàn để tránh xảy ra những tai nạn tương tự.Nhấp vào 'Tải xuống (다운로드)' hoặc 'Xem trước (미리보기)' để xem tài liệu.",
+      "type": "기타",
+      "accidentDate": "",
+      "sortKey": "0",
+      "place": "",
+      "newsQuery": "[베트남어] 조선업 사고",
+      "registeredAt": "2026-11-26 10:59",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "(Vietnamese) Shipbuilding Industry Serious Accident Casebook.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104004/202611261059413MTJ2R/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261126105834OMBQDS",
+      "business": "조선업",
+      "title": "[네팔어] 조선업 중대재해 사례집 / [नेपाली] जहाज निर्माण उद्योगका गम्भीर कार्यस्थल दुर्घटनाका घटनाहरूको सङ्ग्रह",
+      "contents": "조선업 사업장의 중대재해 예방과 외국인 근로자의 안전보건교육을 지원하기 위해 「조선업 중대재해 사례집」 네팔어 번역자료를 제공합니다.사업장 안전관리자께서는 본 자료를 안전보건교육, 작업 전 안전점검회의(TBM) 등 현장 안전활동에 적극 활용하시기 바랍니다.외국인 근로자께서는 사례집에 수록된 사고사례를 통해 작업 중 발생할 수 있는 위험요인을 확인하고, 유사한 사고가 발생하지 않도록 예방대책을 숙지하여 안전수칙을 실천하시기 바랍니다.자료는 첨부파일의 '다운로드' 또는 '미리보기' 버튼을 클릭하여 확인하실 수 있습니다.जहाज निर्माण उद्योगमा हुने गम्भीर कार्यस्थल दुर्घटनाहरू रोक्न र विदेशी श्रमिकहरूको व्यावसायिक सुरक्षा तथा स्वास्थ्य शिक्षामा सहयोग पुर्‍याउन, जहाज निर्माण उद्योगका गम्भीर दुर्घटनाका घटनाहरूको सङ्ग्रहको नेपाली अनुवाद उपलब्ध गराइएको छ।कार्यस्थलका सुरक्षा व्यवस्थापकहरूले यस सामग्रीलाई सुरक्षा तथा स्वास्थ्य तालिम, काम सुरु गर्नुअघि गरिने सुरक्षा बैठक (TBM) र अन्य कार्यस्थल सुरक्षा गतिविधिहरूमा सक्रिय रूपमा प्रयोग गर्नुहोस्।विदेशी श्रमिकहरूले यस पुस्तिकामा समावेश दुर्घटनाका घटनाहरू अध्ययन गरी काम गर्दा उत्पन्न हुन सक्ने जोखिमका कारकहरू पहिचान गर्नुहोस्, रोकथामका उपायहरू बुझ्नुहोस् र यस्तै दुर्घटना दोहोरिन नदिन सुरक्षा नियमहरूको पालना गर्नुहोस्।कागजात हेर्न ' डाउनलोड (다운로드) ' वा ' पूर्वावलोकन (미리보기) ' मा क्लिक गर्नुहोस्।",
+      "type": "기타",
+      "accidentDate": "",
+      "sortKey": "0",
+      "place": "",
+      "newsQuery": "[네팔어] 조선업 사고",
+      "registeredAt": "2026-11-26 10:58",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "(Nepali) Shipbuilding Industry Serious Accident Casebook.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104004/20261126105834OMBQDS/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "202611261057259GYBCL",
+      "business": "조선업",
+      "title": "[중국어] 조선업 중대재해 사례집 / [中文] 造船业重大工伤事故案例集",
+      "contents": "조선업 사업장의 중대재해 예방과 외국인 근로자의 안전보건교육을 지원하기 위해 「조선업 중대재해 사례집」 중국어 번역자료를 제공합니다.사업장 안전관리자께서는 본 자료를 안전보건교육, 작업 전 안전점검회의(TBM) 등 현장 안전활동에 적극 활용하시기 바랍니다.외국인 근로자께서는 사례집에 수록된 사고사례를 통해 작업 중 발생할 수 있는 위험요인을 확인하고, 유사한 사고가 발생하지 않도록 예방대책을 숙지하여 안전수칙을 실천하시기 바랍니다.자료는 첨부파일의 '다운로드' 또는 '미리보기' 버튼을 클릭하여 확인하실 수 있습니다.为预防造船企业发生重大工伤事故，并支持外国劳动者的职业安全卫生教育，现提供《造船业重大工伤事故案例集》中文版。请各企业安全管理人员积极将本资料用于安全卫生教育、作业前安全会议（TBM）及其他现场安全活动。外国劳动者请通过阅读本案例集，了解作业过程中可能存在的危险因素，掌握事故预防措施，并严格遵守安全操作规定，防止类似事故再次发生。请点击 “下载”（다운로드) 或 “预览”（미리보기） 查看资料。",
+      "type": "기타",
+      "accidentDate": "",
+      "sortKey": "0",
+      "place": "",
+      "newsQuery": "[중국어] 조선업 사고",
+      "registeredAt": "2026-11-26 10:57",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "(Chinese) Shipbuilding Industry Serious Accident Casebook.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104004/202611261057259GYBCL/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261126105612K0KX62",
+      "business": "조선업",
+      "title": "[인도네시아어] 조선업 중대재해 사례집 / [Indonesia] Kumpulan Kasus Kecelakaan Kerja Serius di Industri Pembuatan Kapal",
+      "contents": "조선업 사업장의 중대재해 예방과 외국인 근로자의 안전보건교육을 지원하기 위해 「조선업 중대재해 사례집」 인도네시아어 번역자료를 제공합니다.사업장 안전관리자께서는 본 자료를 안전보건교육, 작업 전 안전점검회의(TBM) 등 현장 안전활동에 적극 활용하시기 바랍니다.외국인 근로자께서는 사례집에 수록된 사고사례를 통해 작업 중 발생할 수 있는 위험요인을 확인하고, 유사한 사고가 발생하지 않도록 예방대책을 숙지하여 안전수칙을 실천하시기 바랍니다.자료는 첨부파일의 '다운로드' 또는 '미리보기' 버튼을 클릭하여 확인하실 수 있습니다.Untuk mendukung pencegahan kecelakaan kerja serius di industri pembuatan kapal serta pendidikan keselamatan dan kesehatan kerja bagi pekerja asing, kami menyediakan terjemahan bahasa Indonesia dari kumpulan kasus kecelakaan kerja serius di industri pembuatan kapal.Petugas yang bertanggung jawab atas keselamatan kerja di perusahaan diharapkan secara aktif menggunakan materi ini untuk pelatihan keselamatan dan kesehatan kerja, pertemuan keselamatan sebelum bekerja (TBM), serta kegiatan keselamatan lainnya di tempat kerja.Pekerja asing diharapkan mempelajari kasus-kasus kecelakaan dalam buku ini, mengenali potensi bahaya yang dapat muncul selama bekerja, memahami langkah-langkah pencegahan, dan mematuhi aturan keselamatan agar kecelakaan serupa tidak terjadi.Klik 'Unduh (다운로드)' atau 'Pratinjau (미리보기)' untuk melihat dokumen.",
+      "type": "기타",
+      "accidentDate": "",
+      "sortKey": "0",
+      "place": "",
+      "newsQuery": "[인도네시아어] 조선업 사고",
+      "registeredAt": "2026-11-26 10:56",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "(Indonesian) Shipbuilding Industry Serious Accident Casebook.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104004/20261126105612K0KX62/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261126105515QQRS6Y",
+      "business": "조선업",
+      "title": "[우즈베크어] 조선업 중대재해 사례집 / [O‘zbek] Kemasozlik sohasidagi og‘ir ishlab chiqarish baxtsiz hodisalari to‘plami",
+      "contents": "조선업 사업장의 중대재해 예방과 외국인 근로자의 안전보건교육을 지원하기 위해 「조선업 중대재해 사례집」 우즈베크어 번역자료를 제공합니다.사업장 안전관리자께서는 본 자료를 안전보건교육, 작업 전 안전점검회의(TBM) 등 현장 안전활동에 적극 활용하시기 바랍니다.외국인 근로자께서는 사례집에 수록된 사고사례를 통해 작업 중 발생할 수 있는 위험요인을 확인하고, 유사한 사고가 발생하지 않도록 예방대책을 숙지하여 안전수칙을 실천하시기 바랍니다.자료는 첨부파일의 '다운로드' 또는 '미리보기' 버튼을 클릭하여 확인하실 수 있습니다.Kemasozlik korxonalarida og‘ir ishlab chiqarish baxtsiz hodisalarining oldini olish va xorijiy ishchilar uchun mehnat xavfsizligi hamda salomatlik bo‘yicha o‘qitishni qo‘llab-quvvatlash maqsadida kemasozlik sohasidagi og‘ir baxtsiz hodisalar to‘plamining o‘zbek tilidagi tarjimasi taqdim etiladi.Korxonalardagi mehnat xavfsizligi bo‘yicha mas’ul mutaxassislardan ushbu materialdan xavfsizlik va salomatlik bo‘yicha o‘qitish, ish boshlashdan oldingi xavfsizlik yig‘ilishlari (TBM) va boshqa xavfsizlik tadbirlarida faol foydalanish so‘raladi.Xorijiy ishchilar ushbu to‘plamdagi baxtsiz hodisa misollarini o‘rganib, ish jarayonida yuzaga kelishi mumkin bo‘lgan xavf omillarini aniqlashlari, oldini olish choralarini tushunishlari va shunga o‘xshash hodisalarning oldini olish uchun xavfsizlik qoidalariga rioya qilishlari lozim.Hujjatni ko‘rish uchun 'Yuklab olish (다운로드)' yoki 'Oldindan ko‘rish (미리보기)' tugmasini bosing.",
+      "type": "기타",
+      "accidentDate": "",
+      "sortKey": "0",
+      "place": "",
+      "newsQuery": "[우즈베크어] 조선업 사고",
+      "registeredAt": "2026-11-26 10:55",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "(Uzbek) Shipbuilding Industry Serious Accident Casebook.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104004/20261126105515QQRS6Y/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261126105408QS3CD0",
+      "business": "조선업",
+      "title": "[러시아어] 조선업 중대재해 사례집 / [Русский] Сборник случаев тяжёлых несчастных случаев на производстве в судостроении",
+      "contents": "조선업 사업장의 중대재해 예방과 외국인 근로자의 안전보건교육을 지원하기 위해 「조선업 중대재해 사례집」 러시아어 번역자료를 제공합니다.사업장 안전관리자께서는 본 자료를 안전보건교육, 작업 전 안전점검회의(TBM) 등 현장 안전활동에 적극 활용하시기 바랍니다.외국인 근로자께서는 사례집에 수록된 사고사례를 통해 작업 중 발생할 수 있는 위험요인을 확인하고, 유사한 사고가 발생하지 않도록 예방대책을 숙지하여 안전수칙을 실천하시기 바랍니다.자료는 첨부파일의 '다운로드' 또는 '미리보기' 버튼을 클릭하여 확인하실 수 있습니다.Для содействия предотвращению тяжёлых несчастных случаев на судостроительных предприятиях и проведения обучения по охране труда для иностранных работников предоставляется русскоязычная версия сборника случаев тяжёлых несчастных случаев в судостроении.Специалистам, ответственным за охрану труда на предприятиях, рекомендуется активно использовать данный материал при проведении обучения по охране труда, совещаний по безопасности перед началом работы (TBM) и других мероприятий по обеспечению безопасности на рабочих местах.Иностранным работникам рекомендуется ознакомиться с описанными случаями, определить опасные факторы, которые могут возникнуть во время работы, изучить меры профилактики и соблюдать правила безопасности, чтобы избежать подобных происшествий.Для просмотра документа нажмите 'Скачать (다운로드)' или 'Предварительный просмотр (미리보기)'.",
+      "type": "기타",
+      "accidentDate": "",
+      "sortKey": "0",
+      "place": "",
+      "newsQuery": "[러시아어] 조선업 사고",
+      "registeredAt": "2026-11-26 10:54",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "(Russian) Shipbuilding Industry Serious Accident Casebook.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104004/20261126105408QS3CD0/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261126105250KTQ3OP",
+      "business": "조선업",
+      "title": "[싱할라어] 조선업 중대재해 사례집 / [සිංහල] නැව් තැනීමේ කර්මාන්තයේ බරපතළ රැකියා ස්ථාන අනතුරු පිළිබඳ සිද්ධි එකතුව",
+      "contents": "조선업 사업장의 중대재해 예방과 외국인 근로자의 안전보건교육을 지원하기 위해 「조선업 중대재해 사례집」 싱할라어 번역자료를 제공합니다.사업장 안전관리자께서는 본 자료를 안전보건교육, 작업 전 안전점검회의(TBM) 등 현장 안전활동에 적극 활용하시기 바랍니다.외국인 근로자께서는 사례집에 수록된 사고사례를 통해 작업 중 발생할 수 있는 위험요인을 확인하고, 유사한 사고가 발생하지 않도록 예방대책을 숙지하여 안전수칙을 실천하시기 바랍니다.자료는 첨부파일의 '다운로드' 또는 '미리보기' 버튼을 클릭하여 확인하실 수 있습니다.නැව් තැනීමේ කර්මාන්තයේ බරපතළ රැකියා ස්ථාන අනතුරු වැළැක්වීමට සහ විදේශීය සේවකයන්ගේ වෘත්තීය ආරක්ෂාව හා සෞඛ්‍ය පුහුණුවට සහාය වීම සඳහා, නැව් තැනීමේ කර්මාන්තයේ බරපතළ අනතුරු පිළිබඳ සිද්ධි එකතුව සිංහල භාෂාවෙන් ලබා දෙන්නෙමු.සේවා ස්ථානවල ආරක්ෂක කළමනාකරුවන් මෙම ලේඛනය ආරක්ෂාව හා සෞඛ්‍ය පිළිබඳ පුහුණුව, වැඩ ආරම්භ කිරීමට පෙර පවත්වන ආරක්ෂක සාකච්ඡා (TBM) සහ අනෙකුත් ආරක්ෂක ක්‍රියාකාරකම් සඳහා ක්‍රියාශීලීව භාවිත කරන්න.විදේශීය සේවකයන් මෙම ලේඛනයේ සඳහන් අනතුරු සිද්ධි අධ්‍යයනය කර, වැඩ කරන අතරතුර ඇතිවිය හැකි අනතුරුදායක සාධක හඳුනාගෙන, ඒවා වැළැක්වීමේ ක්‍රියාමාර්ග තේරුම් ගෙන, සමාන අනතුරු නැවත ඇති නොවීමට ආරක්ෂක නීති පිළිපදින්න.ලේඛනය බැලීමට 'බාගත කරන්න (다운로드)' හෝ 'පෙරදසුන (미리보기)' ක්ලික් කරන්න.",
+      "type": "기타",
+      "accidentDate": "",
+      "sortKey": "0",
+      "place": "",
+      "newsQuery": "[싱할라어] 조선업 사고",
+      "registeredAt": "2026-11-26 10:52",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "(Sinhala) Shipbuilding Industry Serious Accident Casebook.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104004/20261126105250KTQ3OP/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "202611261051280ZGSPD",
+      "business": "조선업",
+      "title": "[태국어] 조선업 중대재해 사례집 / [ภาษาไทย] รวมกรณีอุบัติเหตุร้ายแรงจากการทำงานในอุตสาหกรรมต่อเรือ",
+      "contents": "조선업 사업장의 중대재해 예방과 외국인 근로자의 안전보건교육을 지원하기 위해 「조선업 중대재해 사례집」 태국어 번역자료를 제공합니다.사업장 안전관리자께서는 본 자료를 안전보건교육, 작업 전 안전점검회의(TBM) 등 현장 안전활동에 적극 활용하시기 바랍니다.외국인 근로자께서는 사례집에 수록된 사고사례를 통해 작업 중 발생할 수 있는 위험요인을 확인하고, 유사한 사고가 발생하지 않도록 예방대책을 숙지하여 안전수칙을 실천하시기 바랍니다.자료는 첨부파일의 '다운로드' 또는 '미리보기' 버튼을 클릭하여 확인하실 수 있습니다.เพื่อสนับสนุนการป้องกันอุบัติเหตุร้ายแรงจากการทำงานในอุตสาหกรรมต่อเรือ และการฝึกอบรมด้านความปลอดภัยและอาชีวอนามัยสำหรับแรงงานต่างชาติ จึงจัดทำเอกสารรวบรวมกรณีอุบัติเหตุร้ายแรงในอุตสาหกรรมต่อเรือฉบับภาษาไทยขอให้ผู้จัดการด้านความปลอดภัยของสถานประกอบการนำเอกสารนี้ไปใช้ในการฝึกอบรมด้านความปลอดภัยและอาชีวอนามัย การประชุมด้านความปลอดภัยก่อนเริ่มงาน (TBM) และกิจกรรมด้านความปลอดภัยอื่น ๆ ในสถานที่ทำงานสำหรับแรงงานต่างชาติ โปรดศึกษากรณีอุบัติเหตุในเอกสารนี้ เพื่อให้ทราบถึงปัจจัยอันตรายที่อาจเกิดขึ้นระหว่างการทำงาน เรียนรู้มาตรการป้องกัน และปฏิบัติตามกฎความปลอดภัยเพื่อป้องกันไม่ให้เกิดอุบัติเหตุในลักษณะเดียวกันคลิก 'ดาวน์โหลด (다운로드)' หรือ 'ดูตัวอย่าง (미리보기)' เพื่อดูเอกสาร",
+      "type": "기타",
+      "accidentDate": "",
+      "sortKey": "0",
+      "place": "",
+      "newsQuery": "[태국어] 조선업 사고",
+      "registeredAt": "2026-11-26 10:51",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "(Thai) Shipbuilding Industry Serious Accident Casebook.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104004/202611261051280ZGSPD/D0801000010001"
+        }
+      ]
+    },
+    {
+      "boardno": "20261126104058QKA9O5",
+      "business": "조선업",
+      "title": "[영어] 조선업 중대재해 사례집 / [English] Collection of Serious Workplace Accident Cases in Shipbuilding",
+      "contents": "조선업 사업장의 중대재해 예방과 외국인 근로자의 안전보건교육을 지원하기 위해 「조선업 중대재해 사례집」 영어 번역자료를 제공합니다.사업장 안전관리자께서는 본 자료를 안전보건교육, 작업 전 안전점검회의(TBM) 등 현장 안전활동에 적극 활용하시기 바랍니다.외국인 근로자께서는 사례집에 수록된 사고사례를 통해 작업 중 발생할 수 있는 위험요인을 확인하고, 유사한 사고가 발생하지 않도록 예방대책을 숙지하여 안전수칙을 실천하시기 바랍니다.자료는 첨부파일의 '다운로드' 또는 '미리보기' 버튼을 클릭하여 확인하실 수 있습니다.To help prevent serious workplace accidents in the shipbuilding industry and support occupational safety and health training for foreign workers, we provide the English version of the *Collection of Serious Workplace Accident Cases in Shipbuilding*.Safety managers are encouraged to actively use this material for safety and health training, pre-work toolbox meetings (TBM), and other workplace safety activities.Foreign workers are encouraged to review the accident cases, identify hazards that may arise during work, understand the preventive measures, and follow safety rules to avoid similar accidents.Click Download (다운로드) or Preview (미리보기) to view the document.",
+      "type": "기타",
+      "accidentDate": "",
+      "sortKey": "0",
+      "place": "",
+      "newsQuery": "[영어] 조선업 사고",
+      "registeredAt": "2026-11-26 10:40",
+      "attachments": 1,
+      "files": [
+        {
+          "name": "(English) Shipbuilding Industry Serious Accident Casebook.pdf",
+          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104004/20261126104058QKA9O5/D0801000010001"
+        }
+      ]
+    },
     {
       "boardno": "20261105093815GF3I4H",
       "business": "건설업",
@@ -5583,177 +5754,6 @@
         {
           "name": "(건설외)지게차와 부딪힘.pdf",
           "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20241231142129LE9WC4/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "202412181338147KRPBV",
-      "business": "제조업",
-      "title": "지게차 덧발 지그와 철골기둥 사이에 끼임",
-      "contents": "2024.08.00 (수) 21:45경 경북 영천시 소재 (주)00공장동 원료 입고장에서 톤백을 지게차로 사용하여 운반하던 중 전진하던 지게차에 부착된 덧발 지그와 철골 기둥 사이에 끼임",
-      "type": "끼임",
-      "accidentDate": "2024-08",
-      "sortKey": "20240800",
-      "place": "경북 영천시",
-      "newsQuery": "영천 지게차 덧발 사고",
-      "registeredAt": "2024-12-18 13:38",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "(제조업) 지게차 덧발 지그와 철골기둥 사이에 끼임.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/202412181338147KRPBV/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20241218133538G65FPP",
-      "business": "제조업",
-      "title": "인화성 가스캔 압축설비 가동중 화재, 폭발 발생",
-      "contents": "2024.08.00.(수) 00:00경 인천 소재 000에서 재해자가 캔 압축기 설비를 이용하여 부탄가스 캔 등 압축중 부탄(C4H10)이 체류한 상태에서 제어반 전기 스파크 점화원에 의한화재 폭발 발생",
-      "type": "화재·폭발",
-      "accidentDate": "2024-08",
-      "sortKey": "20240800",
-      "place": "인천",
-      "newsQuery": "인천 인화성 가스캔 화재",
-      "registeredAt": "2024-12-18 13:35",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "(제조업) 인화성 가스 캔 압축설비 가동 중 화재 폭발 발생.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20241218133538G65FPP/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20241218133355WCDADC",
-      "business": "제조업",
-      "title": "인쇄기 청소작업중 끼임",
-      "contents": "2024.07.00 16:52분경 충남소재 (주) ooo공장동 인쇄기실 내부 컬러인쇄 공정에서, 에어건을 이용해 내부 청소 작업중 회전중인 기기에 끼임",
-      "type": "끼임",
-      "accidentDate": "2024-07",
-      "sortKey": "20240700",
-      "place": "충남",
-      "newsQuery": "충남 인쇄기 청소작업중 사고",
-      "registeredAt": "2024-12-18 13:33",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "(제조업) 인쇄기 청소작업 중 끼임.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20241218133355WCDADC/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "202412181331546HPH4A",
-      "business": "건설업",
-      "title": "철골 기둥 줄걸이 해체중 전도",
-      "contents": "2024.07.00.(토) 09:30경 충북소제 oo증축공사 현장에서 재해자가 시저형 고소작업대를 상승시켜 철골 기둥 최상부의 줄걸이를 해체 하던 중 철골 기둥 전도로 인한 추락",
-      "type": "떨어짐",
-      "accidentDate": "2024-07",
-      "sortKey": "20240700",
-      "place": "",
-      "newsQuery": "철골 기둥 추락",
-      "registeredAt": "2024-12-18 13:31",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "(건설업) 철골 기둥 줄걸이 해체 중 전도.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/202412181331546HPH4A/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20241218132934XYFU7L",
-      "business": "건설업",
-      "title": "불어난 하천수에 빠짐",
-      "contents": "2023.09.00(수) 경북 포항시 소재 oo천 재해복구사업 현장에서 거푸집 자재를 정리하던 중 집중 호우로 불어난 하천수에 휩쓸려 구조되었으나 치료중 사망함",
-      "type": "기타",
-      "accidentDate": "2023-09",
-      "sortKey": "20230900",
-      "place": "경북 포항시",
-      "newsQuery": "포항 불어난 하천수 사고",
-      "registeredAt": "2024-12-18 13:29",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "(건설업) 불어난 하천수에 빠짐.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20241218132934XYFU7L/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20241218105353PWV3HA",
-      "business": "건설업",
-      "title": "발코니 미장작업 중 추락",
-      "contents": "2024.10.00(목) 인천시 소재 오피스텔 건설현장에서 지상 7층 세대 발코니 미장 작업을 하던 재해자가 중심을 잃고 추락함",
-      "type": "떨어짐",
-      "accidentDate": "2024-10",
-      "sortKey": "20241000",
-      "place": "인천시",
-      "newsQuery": "인천 발코니 미장작업 추락",
-      "registeredAt": "2024-12-18 10:53",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "발코니 미장작업 중 추락(건설업).pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/20241218105353PWV3HA/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "202411270954309M77TP",
-      "business": "제조업",
-      "title": "줄걸이 작업 중 코일에 깔림",
-      "contents": "2024.11.00(금) 15:00경 전남 소재 현장에서 천장크레인을 이용하여 코일 이동 작업 중 넘어지는 코일에 깔림 (코일무게 : 4.5t)",
-      "type": "깔림",
-      "accidentDate": "2024-11",
-      "sortKey": "20241100",
-      "place": "전남",
-      "newsQuery": "전남 줄걸 코일 사고",
-      "registeredAt": "2024-11-27 09:54",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "줄걸이 작업 중 코일에 깔림.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/202411270954309M77TP/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "202411270952206GGTOZ",
-      "business": "건설업",
-      "title": "철골 조립 작업 중 떨어짐",
-      "contents": "2024.10.00(월) 15:00경 전북 소재 증축공사 현장에서 철골 조립 작업 중, 철골보 위에서 바닥으로 떨어짐 (높이 6.35m)",
-      "type": "떨어짐",
-      "accidentDate": "2024-10",
-      "sortKey": "20241000",
-      "place": "전북",
-      "newsQuery": "전북 철골 조립 추락",
-      "registeredAt": "2024-11-27 09:52",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "철골 조립 작업 중 떨어짐.pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104003/202411270952206GGTOZ/D0801000010001"
-        }
-      ]
-    },
-    {
-      "boardno": "20241029101644NSI9FN",
-      "business": "제조업",
-      "title": "드럼통을 절단하던 중 폭발",
-      "contents": "2024.09.00.(토) 경남 사천시 소재 OO공장 내에서 드럼통의 금속판을 산소 절단기(LPG)로 절단 하던 중 잔류 인화성 증기의 폭발로 금속판에 맞음",
-      "type": "화재·폭발",
-      "accidentDate": "2024-09",
-      "sortKey": "20240900",
-      "place": "경남 사천시",
-      "newsQuery": "사천 드럼통 절단하던 화재",
-      "registeredAt": "2024-10-29 10:16",
-      "attachments": 1,
-      "files": [
-        {
-          "name": "드럼통을 절단하던 중 폭발(제조업).pdf",
-          "url": "https://portal.kosha.or.kr/openapi/v1/file/down/stdboard/B2025022104002/20241029101644NSI9FN/D0801000010001"
         }
       ]
     }
