@@ -1,7 +1,87 @@
 {
  "source": "https://portal.kosha.or.kr/archive/imprtnDsstrAlrame/CSADV50000/CSADV50000M01",
- "generatedAt": "2026-11-19T10:18:12.512Z",
+ "generatedAt": "2026-11-26T10:51:26.364Z",
  "items": [
+  {
+   "no": "954",
+   "title": "(261126)중대재해 발생 알림(2)",
+   "day": "2026-11-26",
+   "seq": 2,
+   "img": "assets/siren/954.webp",
+   "thumb": "assets/siren/954_t.webp",
+   "posted": "2026-11-26",
+   "firstSeen": "2026-11-26T10:51:26.364Z"
+  },
+  {
+   "no": "953",
+   "title": "(261126)중대재해 발생 알림(1)",
+   "day": "2026-11-26",
+   "seq": 1,
+   "img": "assets/siren/953.webp",
+   "thumb": "assets/siren/953_t.webp",
+   "posted": "2026-11-26",
+   "firstSeen": "2026-11-26T10:51:26.364Z"
+  },
+  {
+   "no": "952",
+   "title": "(261124)중대재해 발생 알림(4)",
+   "day": "2026-11-24",
+   "seq": 4,
+   "img": "assets/siren/952.webp",
+   "thumb": "assets/siren/952_t.webp",
+   "posted": "2026-11-26",
+   "firstSeen": "2026-11-26T10:51:26.364Z"
+  },
+  {
+   "no": "951",
+   "title": "(261124)중대재해 발생 알림(3)",
+   "day": "2026-11-24",
+   "seq": 3,
+   "img": "assets/siren/951.webp",
+   "thumb": "assets/siren/951_t.webp",
+   "posted": "2026-11-26",
+   "firstSeen": "2026-11-26T10:51:26.364Z"
+  },
+  {
+   "no": "950",
+   "title": "(261124)중대재해 발생 알림(2)",
+   "day": "2026-11-24",
+   "seq": 2,
+   "img": "assets/siren/950.webp",
+   "thumb": "assets/siren/950_t.webp",
+   "posted": "2026-11-26",
+   "firstSeen": "2026-11-26T10:51:26.364Z"
+  },
+  {
+   "no": "949",
+   "title": "(261124)중대재해 발생 알림(1)",
+   "day": "2026-11-24",
+   "seq": 1,
+   "img": "assets/siren/949.webp",
+   "thumb": "assets/siren/949_t.webp",
+   "posted": "2026-11-26",
+   "firstSeen": "2026-11-26T10:51:26.364Z"
+  },
+  {
+   "no": "948",
+   "title": "(261120)중대재해 발생 알림(2)",
+   "day": "2026-11-20",
+   "seq": 2,
+   "img": "assets/siren/948.webp",
+   "thumb": "assets/siren/948_t.webp",
+   "posted": "2026-11-26",
+   "firstSeen": "2026-11-26T10:51:26.364Z"
+  },
+  {
+   "no": "947",
+   "title": "(261120)중대재해 발생 알림(1)",
+   "day": "2026-11-20",
+   "seq": 1,
+   "img": "assets/siren/947.webp",
+   "thumb": "assets/siren/947_t.webp",
+   "posted": "2026-11-26",
+   "firstSeen": "2026-11-26T10:51:26.364Z"
+  },
   {
    "no": "946",
    "title": "사다리작업 떨어짐사고 경보",
@@ -221,86 +301,6 @@
    "thumb": "assets/siren/925_t.webp",
    "posted": "2026-11-05",
    "firstSeen": "2026-11-05T09:28:37.555Z"
-  },
-  {
-   "no": "924",
-   "title": "(261105)중대재해 발생 알림(1)",
-   "day": "2026-11-05",
-   "seq": 1,
-   "img": "assets/siren/924.webp",
-   "thumb": "assets/siren/924_t.webp",
-   "posted": "2026-11-05",
-   "firstSeen": "2026-11-05T09:28:37.555Z"
-  },
-  {
-   "no": "923",
-   "title": "(261104)중대재해 발생 알림(3)",
-   "day": "2026-11-04",
-   "seq": 3,
-   "img": "assets/siren/923.webp",
-   "thumb": "assets/siren/923_t.webp",
-   "posted": "2026-11-05",
-   "firstSeen": "2026-11-05T09:28:37.555Z"
-  },
-  {
-   "no": "922",
-   "title": "(261104)중대재해 발생 알림(2)",
-   "day": "2026-11-04",
-   "seq": 2,
-   "img": "assets/siren/922.webp",
-   "thumb": "assets/siren/922_t.webp",
-   "posted": "2026-11-05",
-   "firstSeen": "2026-11-05T09:28:37.555Z"
-  },
-  {
-   "no": "921",
-   "title": "(261104)중대재해 발생 알림(1)",
-   "day": "2026-11-04",
-   "seq": 1,
-   "img": "assets/siren/921.webp",
-   "thumb": "assets/siren/921_t.webp",
-   "posted": "2026-11-05",
-   "firstSeen": "2026-11-05T09:28:37.555Z"
-  },
-  {
-   "no": "920",
-   "title": "(261102)중대재해 발생 알림(2)-외국어 추가",
-   "day": "2026-11-02",
-   "seq": null,
-   "img": "assets/siren/920.webp",
-   "thumb": "assets/siren/920_t.webp",
-   "posted": "2026-11-04",
-   "firstSeen": "2026-11-04T12:06:02.743Z"
-  },
-  {
-   "no": "919",
-   "title": "(261102)중대재해 발생 알림(1)-외국어 추가",
-   "day": "2026-11-02",
-   "seq": null,
-   "img": "assets/siren/919.webp",
-   "thumb": "assets/siren/919_t.webp",
-   "posted": "2026-11-04",
-   "firstSeen": "2026-11-04T12:06:02.743Z"
-  },
-  {
-   "no": "918",
-   "title": "(261030)중대재해 발생 알림(3)-외국어 추가",
-   "day": "2026-10-30",
-   "seq": null,
-   "img": "assets/siren/918.webp",
-   "thumb": "assets/siren/918_t.webp",
-   "posted": "2026-10-30",
-   "firstSeen": "2026-10-30T12:51:42.746Z"
-  },
-  {
-   "no": "917",
-   "title": "(261030)중대재해 발생 알림(2)-외국어 추가",
-   "day": "2026-10-30",
-   "seq": null,
-   "img": "assets/siren/917.webp",
-   "thumb": "assets/siren/917_t.webp",
-   "posted": "2026-10-30",
-   "firstSeen": "2026-10-30T12:51:42.746Z"
   }
  ]
 }
