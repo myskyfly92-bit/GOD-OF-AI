@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T03:34:20.740Z",
+  "generatedAt": "2026-11-27T03:38:30.170Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -15,6 +15,13 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdGQxbUZNbHctZU1zMFl1UkZ5OXdhYV9vLTZYbzh3eDVtVC1ia2MzanNpV245Y043VlYyZXJpSGxid2lTbVVvOW14dnJucEhJRFJxTlBLbmo1SzQyRFh0YXFQdUI4cXFxVlBtM1RIQ2NqZVVULXJ6dlZXRWNRUVBlVXNyNnc5bmZEZ0tN?oc=5",
       "date": "2026-11-24T20:32:05.000Z"
+    },
+    {
+      "title": "건강교육 자료실",
+      "source": "국가건강정보포털",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcE1OcFlDaVVzSjNxWWVSb2dFa1o2SUhlZEN2TjlKTTZvUjExcXBWUXJFeUFSRHVNbGRBTzIxSlhiOEV4R0V1ZHg2X3EweENmSlpLc1oyWVFibzJ1UkdkS0dEZHBoSTdFVU01cFFFT2FZMWFnc1V3a2pkaDA4ckU5MFZxeVJMQjRsZ19QZmh1UHhvc0JnODFZcWxQTnR3UlBfUlR0TW4yc1JUM1VDS3FBajVWOWZ2MFozRkJ6VXdn?oc=5",
+      "date": "2026-11-25T06:38:44.000Z"
     },
     {
       "title": "건강교육 자료실",
@@ -52,11 +59,18 @@
       "date": "2024-06-10T03:38:59.000Z"
     },
     {
-      "title": "채용공고",
+      "title": "FAQ",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZDVYOG9wdVNIb0Vkc3dXa01DaWpieUlvWFU5WkJXQTB0LU91Y2JuU0xrWE95Z0d5TFNBdkhUaDBmOEtGRHZuRXdqVTQ0cWt1dGd2bkJn?oc=5",
-      "date": "2025-12-16T15:48:42.000Z"
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5nc2VoNm9tZ1VNNWM1d0VUdHVGcm40WkY3S0RTcGstZVRxWVZuUkM4RS0zdGpYYmlYUGVKNFN4YnA3Y00zLUpuOWhqS3h6aTZkWnhFUEkzZHlHd1NPcmJucU5oTld4aHJVbWJnMlNPOVA?oc=5",
+      "date": "2026-06-12T08:29:41.000Z"
+    },
+    {
+      "title": "지침",
+      "source": "질병관리청",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxOR1llMFVLek5sYjI0V0M4eUstYV9zcldxeXVLM1RucUpMaXRHNEg4cEJpY3JybnM2Zlo2UVBBUW9IU0RSWWg2LUpLbkliZFVKUmlZMnRNQmFNUzduTWVzR2E2MmJQRTV4RThhbG5lb3lZUm5EZkk3RDI0MXFaY0NYcTUtM1FSS0NBTUt1SFQxbS1fTkRKc0xTSmRBSlhVZ0J0NkgtNGdTM25GNmNoTHFkQ2V0ZlJIZzlfVnRHSnFWalVjZnp1NzFJOE80N2pXTlRZVkROZnNiQUZzSHRYcTFHR2NvZFhVa2xyNUhaVE1HbWI2bEYzUjRfYnJCaWdEOHV6b0lkSzVuaTdSWGlCZHg0dWdLcl90SkhUbjJwYnYyRk5hbnRmaExoZjhzZHAtVDJ0VW4xcnlWY0hyMGFHRjhCcHNReG9adWNCUVBPNTFfZ0lrOGdrVU9VY0VMWS1UN1ZmU2c?oc=5",
+      "date": "2026-01-15T10:26:20.000Z"
     },
     {
       "title": "보도자료(전체)",
@@ -66,25 +80,11 @@
       "date": "2025-12-16T15:46:00.000Z"
     },
     {
-      "title": "- 질병관리청",
-      "source": "",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
-      "date": "2026-11-25T09:38:38.000Z"
-    },
-    {
-      "title": "레지오넬라증",
+      "title": "ICCON 감염예방 소식지",
       "source": "질병관리청",
       "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE52SW9Ma2pUR1JIZ1AxZHJEQnhtaFh1N1A0b3VVWTByTHVyVG9qQWJ1VmtMOElGdzM4MnRNdkVBd2dUa1F6OU82Mk44UGppVFlKb0UwUGRn?oc=5",
-      "date": "2025-12-16T16:14:22.000Z"
-    },
-    {
-      "title": "보도자료",
-      "source": "질병관리청",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1laFI5ZFFSVWgzWWszTDJBdmtoajBBZnVTNENvYmZzWFMySThoYjFWbVBTU1MyTU9DbVhRSnNlQ2w3U1l1Y0xQREVFZm8tZkZUc1pnWldR?oc=5",
-      "date": "2025-12-16T15:49:51.000Z"
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ueXN2cXpmUkJyLWV2cHc4VHB3Sm01dGcwc09pTlNXVG5xZjE4bHpvUFgxOVktQjJoLXJHRmJRTHM4TXhrbmJLZ1JTQ25yWklLeDlqek1B?oc=5",
+      "date": "2025-12-16T15:49:07.000Z"
     }
   ]
 }
