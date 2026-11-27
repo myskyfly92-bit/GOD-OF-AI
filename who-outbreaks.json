@@ -9,6 +9,14 @@
   "items": [
     {
       "kind": "WHO 소식",
+      "title": "WHO Director-General visits Haiti, announces US$ 1 million in support for critical hospital equipment",
+      "date": "2026-11-26T14:29:16Z",
+      "summary": "World Health Organization (WHO) Director-General, Dr Tedros Adhanom Ghebreyesus, today announced US$ 1 million in support for critical medical equipment in Haiti.",
+      "link": "https://www.who.int/news/item/26-11-2026-who-director-general-visits-haiti--announces-usd1-million-in-support-for-critical-hospital-equipment",
+      "newsType": "News release"
+    },
+    {
+      "kind": "WHO 소식",
       "title": "WHO recommends new oral treatment option for gonorrhoea and reports new data on antimicrobial resistance",
       "date": "2026-11-25T06:00:00Z",
       "summary": "WHO has conditionally recommended a new oral antibiotic, zoliflodacin, as an additional single-dose treatment option for gonorrhoea, marking an important step in expanding treatment. WHO also released today its 2026 Enhanced Gonococcal Antimicrobial Surveillance Programme (EGASP) report, presenting new data from10 countries across five WHO regions to inform public health action.",
@@ -152,14 +160,6 @@
       "donId": "2026-DON627"
     },
     {
-      "kind": "WHO 소식",
-      "title": "Governments make over 230 new pledges to prevent violence against children",
-      "date": "2026-11-17T11:04:17Z",
-      "summary": "Governments are stepping up action to protect children from violence, with over 230 new pledges to be announced at the Second Global Ministerial Conference on Ending Violence Against Children in Manila, Philippines taking place on 18-19 November, the World Health Organization (WHO) said today. New pledges include Tanzania’s planned US$ 190 million investment in child protection; Nepal’s pledge to halve school violence by 2030, benefiting 4.2 million children; Chile’s commitment to protect more t",
-      "link": "https://www.who.int/news/item/17-11-2026-governments-make-over-230-new-pledges-to-prevent-violence-against-children",
-      "newsType": "News release"
-    },
-    {
       "kind": "감염병 발생",
       "title": "Middle East respiratory syndrome (MERS) – Qatar",
       "date": "2026-11-13T13:48:47Z",
@@ -208,5 +208,5 @@
       "donId": "2026-DON618"
     }
   ],
-  "generatedAt": "2026-11-26T15:58:43.316179+00:00"
+  "generatedAt": "2026-11-27T01:15:20.571260+00:00"
 }
