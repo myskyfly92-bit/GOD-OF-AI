@@ -886,16 +886,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "북부 부르키나파소 접경지역(Pendjari 국립공원 및 W 국립공원)"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -1415,6 +1415,12 @@
    "level": 4,
    "regions": [
     {
+     "level": 4,
+     "levelName": "여행금지",
+     "region": "일부",
+     "remark": "아제르바이잔 접경 5km 구간"
+    },
+    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -1425,12 +1431,6 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "2, 4단계 지정 지역을 제외한 지역"
-    },
-    {
-     "level": 4,
-     "levelName": "여행금지",
-     "region": "일부",
-     "remark": "아제르바이잔 접경 5km 구간"
     }
    ],
    "written": "",
@@ -1935,16 +1935,16 @@
    "level": 2,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "서파푸아, 파푸아, 말루쿠, 아체"
-    },
-    {
      "level": 1,
      "levelName": "여행유의",
      "region": "일부",
      "remark": "2단계 지정 지역을 제외한 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "서파푸아, 파푸아, 말루쿠, 아체"
     }
    ],
    "written": "",
@@ -2576,6 +2576,12 @@
    "level": 3,
    "regions": [
     {
+     "level": 3,
+     "levelName": "출국권고",
+     "region": "일부",
+     "remark": "빙괼, 바트만, 시이르트, 시르나크, 하카리, 시리아의 국경 10km 이내 지역"
+    },
+    {
      "level": 2,
      "levelName": "여행자제",
      "region": "일부",
@@ -2586,12 +2592,6 @@
      "levelName": "여행유의",
      "region": "일부",
      "remark": "2,3단계 및 특별여행주의보 지정 지역을 제외한 지역"
-    },
-    {
-     "level": 3,
-     "levelName": "출국권고",
-     "region": "일부",
-     "remark": "빙괼, 바트만, 시이르트, 시르나크, 하카리, 시리아의 국경 10km 이내 지역"
     }
    ],
    "written": "",
@@ -2622,16 +2622,16 @@
    "level": 3,
    "regions": [
     {
-     "level": 2,
-     "levelName": "여행자제",
-     "region": "일부",
-     "remark": "3단계 지정 지역을 제외한 지역"
-    },
-    {
      "level": 3,
      "levelName": "출국권고",
      "region": "일부",
      "remark": "콜롬비아 국경지역 40Km 지역"
+    },
+    {
+     "level": 2,
+     "levelName": "여행자제",
+     "region": "일부",
+     "remark": "3단계 지정 지역을 제외한 지역"
     }
    ],
    "written": "",
@@ -2863,5 +2863,5 @@
    "partial": false
   }
  },
- "generatedAt": "2026-11-26T10:05:29.250235+00:00"
+ "generatedAt": "2026-11-27T10:11:04.149532+00:00"
 }
