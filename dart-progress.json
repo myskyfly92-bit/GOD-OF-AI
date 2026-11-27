@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T04:23:15Z",
+ "generatedAt": "2026-11-27T04:20:38Z",
  "note": "상장 건설사 정기보고서 '수주산업 관련 공시'의 진행률 (미청구공사·공사미수금은 담지 않음)",
  "companies": {
   "hdec": {
@@ -2523,15 +2523,6 @@
    "contractDate": "2022-12-19",
    "asOf": "2026-09",
    "rcept_no": "20261116001232"
-  },
-  "사우디 리야드-쿠드미 500kV HVDC 송전공사 (Construction of new +/- 500kV HVDC OHTL for COA-SOA Interconnection Link - Portion I)": {
-   "company": "hdec",
-   "rate": 49.0,
-   "contract": "사우디 쿠드미-리야드 HVDC송전공사",
-   "due": "2027-01-11",
-   "contractDate": "2024-11-11",
-   "asOf": "2026-09",
-   "rcept_no": "20261116001025"
   }
  }
 }
