@@ -1,25 +1,187 @@
 {
-  "generatedAt": "2026-11-28T02:48:04.758Z",
+  "generatedAt": "2026-11-28T11:59:12.526Z",
   "items": [
+    {
+      "title": "트럼프 \"강력한 이라크\" 지지‥친이란 무장세력 우회 압박",
+      "source": "MBC 뉴스",
+      "link": "https://imnews.imbc.com/news/2026/world/article/6869360_36925.html",
+      "date": "2026-11-28T11:53:47.000Z",
+      "lang": "ko",
+      "titleKo": "트럼프 \"강력한 이라크\" 지지‥친이란 무장세력 우회 압박",
+      "url": "https://imnews.imbc.com/news/2026/world/article/6869360_36925.html",
+      "body": "도널드 트럼프 미국 대통령이 이라크에서 쿠르드 자치 지역 및 친이란 무장세력과 대립각을 세워온 중앙정부에 공개적으로 지지를 표명했습니다. 트럼프 대통령은 현지시간 27일 소셜미디어...",
+      "bodyKo": "도널드 트럼프 미국 대통령이 이라크에서 쿠르드 자치 지역 및 친이란 무장세력과 대립각을 세워온 중앙정부에 공개적으로 지지를 표명했습니다. 트럼프 대통령은 현지시간 27일 소셜미디어...",
+      "tried": true,
+      "count": 3,
+      "sources": [
+        "MBC 뉴스",
+        "아시아경제",
+        "연합뉴스"
+      ],
+      "related": [
+        {
+          "titleKo": "트럼프 \"강력한 이라크\" 공개 지지…쿠르드·친이란 세력 견제",
+          "source": "아시아경제",
+          "link": "https://www.asiae.co.kr/article/2026112820403840562"
+        },
+        {
+          "titleKo": "트럼프 \"강력한 이라크\" 지지…친이란 무장세력 우회 압박",
+          "source": "연합뉴스",
+          "link": "https://www.yna.co.kr/view/AKR20261128050600009"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "مستشار خامنئي للحكومة العراقية: لا تكونوا أداة لتنفيذ سياسات ترامب",
+      "source": "شبكة الساعة",
+      "link": "https://alssaa.com/post/show/70888-%D9%85%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1-%D8%AE%D8%A7%D9%85%D9%86%D8%A6%D9%8A-%D9%84%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D9%84%D8%A7-%D8%AA%D9%83%D9%88%D9%86%D9%88%D8%A7-%D8%A3%D8%AF%D8%A7%D8%A9-%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0-%D8%B3%D9%8A%D8%A7%D8%B3%D8%A7%D8%AA-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8",
+      "date": "2026-11-28T11:35:34.000Z",
+      "lang": "ar",
+      "titleKo": "مستشار خامنئي للحكومة العراقية: لا تكونوا أداة لتنفيذ سياسات ترامب",
+      "url": "https://alssaa.com/post/show/70888-%D9%85%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1-%D8%AE%D8%A7%D9%85%D9%86%D8%A6%D9%8A-%D9%84%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D9%84%D8%A7-%D8%AA%D9%83%D9%88%D9%86%D9%88%D8%A7-%D8%A3%D8%AF%D8%A7%D8%A9-%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0-%D8%B3%D9%8A%D8%A7%D8%B3%D8%A7%D8%AA-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شبكة الساعة"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "이란 최고지도자 고문 “이라크, 트럼프 도구 되지 말라”",
+      "source": "토큰포스트",
+      "link": "https://www.tokenpost.kr/news/breaking/445847",
+      "date": "2026-11-28T11:26:16.000Z",
+      "lang": "ko",
+      "titleKo": "이란 최고지도자 고문 “이라크, 트럼프 도구 되지 말라”",
+      "url": "https://www.tokenpost.kr/news/breaking/445847",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "토큰포스트"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "العراق يفكك شبكة لتهريب النفط في بابل ويحبط محاولة تهريب بديالى",
+      "source": "جريدة البلاد",
+      "link": "https://www.albiladpress.com/news/2026/6620/finance/1033608.html",
+      "date": "2026-11-28T11:26:15.000Z",
+      "lang": "ar",
+      "titleKo": "العراق يفكك شبكة لتهريب النفط في بابل ويحبط محاولة تهريب بديالى",
+      "url": "https://www.albiladpress.com/news/2026/6620/finance/1033608.html",
+      "body": "أفاد مراسل \"العربية\" بأن جهاز الأمن الوطني في محافظة بابل فكك شبكة لتهريب منتجات النفط في منطقة \"الحصوة\". وأوضح المراسل، أن الاستخبارات العسكرية العراقية تحبط محاولة لتهريب مشتقات نفطية في ديالى. وفي محافظة البصرة، بدأ الجيش العراقي حملة لإزالة التجاوزات قرب الحقول النفطية، بحسب مراسل القناة، التي حصلت على صور خاصة...\nاقتصاد السبت 28 نوفمبر 2026 الصفحات المصورة | السبت 28 نوفمبر 2026 - العدد 6619 الرئيسية آخر الأخبار فيديو بلادنا اقتصاد الاقتصاد البحريني الاقتصاد الخليجي الاقتصاد الدولي دولي مسافات تكنولوجيا وذكاء اصطناعي مشاهير رياضة الدراسات والبحوث ما هو أبعاد الشركاء الاستراتيجيين شبكة المتعاونين موضوعات وندوات. تحقيقات وقضايا مشاريع ومبادرات البلاد آراء مدونات سيارات جديد الألعاب كاريكاتير ملاحق خاص للبلاد الأرشيف الصفحات المصورة في الحدث 1 وزير\"البلديات\" يعلن انطلاق الموسم الرابع عشر لسوق المزارعين البحرينيين في 5 ديسمبر بمشاركة 39 مزارعاً 2 بريطانيا تلغي ترخيص قناة \"اللؤلؤة\" 3 ناصر بن حمد: المنافسات الدولية فرصة لصقل مواهب اللاعبين الشباب 4 ناصر بن حمد: أهمية تطوير القدرات في ال",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "جريدة البلاد"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "디얄라주",
+        "km": 91
+      }
+    },
+    {
+      "title": "محافظ واسط يعلن تعطيل الدوام في المدارس يومي الأحد والاثنين لمواجهة السحايا » وكالة الانباء العراقية (واع)",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://ina.iq/ar/local/280880-.html",
+      "date": "2026-11-28T11:20:39.000Z",
+      "lang": "ar",
+      "titleKo": "محافظ واسط يعلن تعطيل الدوام في المدارس يومي الأحد والاثنين لمواجهة السحايا » وكالة الانباء العراقية (واع)",
+      "url": "https://ina.iq/ar/local/280880-.html",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "휴일·행사",
+      "impact": {
+        "lv": "g",
+        "line": "쿠트(와싯) 지역 휴무 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "쿠트(와싯)",
+        "km": 136
+      }
+    },
+    {
+      "title": "Ten Arrested in Iraq’s Babil Province Over Alleged Oil Smuggling",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/956193/ten-arrested-in-iraqs-babil-province-over-alleged-oil-smuggling",
+      "date": "2026-11-28T11:15:42.000Z",
+      "lang": "en",
+      "titleKo": "Ten Arrested in Iraq’s Babil Province Over Alleged Oil Smuggling",
+      "url": "https://www.kurdistan24.net/en/story/956193/ten-arrested-in-iraqs-babil-province-over-alleged-oil-smuggling",
+      "body": "Ten people have been arrested in Babil province over alleged involvement in an organized oil-smuggling network after security forces discovered a perforated pipeline in Iskandariya.\nERBIL (Kurdistan24) - Iraqi security forces arrested 10 people suspected of involvement in an organized oil-smuggling network after discovering a perforated oil pipeline in the Iskandariya area of northern Babil province, a security source said on Saturday.\nThe source said on Saturday, that a joint force comprising Babil Police and National Security Service teams uncovered the pipeline and detained the 10 suspects. Legal proceedings have been initiated against those arrested, the source added.\nThe arrests come after Iraqi PM Ali Faleh al-Zaidi expanded campaigns against oil smuggling. The campaign began in Jurf al-Sakhar before extending to areas of Kirkuk, following the emergence of investigation findings concerning alleged smuggling activities at the North Oil Company.",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "힐라(바빌)",
+        "km": 81
+      }
+    },
     {
       "title": "Trump backs Iraqi PM’s oil smuggling crackdown",
       "source": "Al Jazeera",
       "link": "https://www.aljazeera.com/news/2026/11/27/trump-backs-iraqi-pms-oil-smuggling-crackdown",
-      "date": "2026-11-28T02:24:09.000Z",
+      "date": "2026-11-28T11:01:59.000Z",
       "lang": "en",
       "titleKo": "트럼프 대통령, 이라크 총리의 석유 밀수 단속 조치 지지",
       "url": "https://www.aljazeera.com/news/2026/11/27/trump-backs-iraqi-pms-oil-smuggling-crackdown",
       "body": "Baghdad closes border crossings as Kurdish authorities warn of constitutional violations and call for meeting.\nx whatsapp-stroke copylink google Add Al Jazeera on Google info By Al Jazeera Staff , AFP and Reuters Published On 27 Nov 2026 27 Nov 2026 US President Donald Trump has backed Iraqi Prime Minister Ali al-Zaidi’s drive to stop oil smuggling and assert state authority, moves that have put Baghdad in direct confrontation with Kurdish authorities and Iran-aligned militias.\nTrump said in a Truth Social post on Friday that Washington supports al-Zaidi’s efforts to “stop the smuggling of Iraqi oil, end corruption, and bring all weapons under the exclusive control of the state”.\nHe said the United States wants a “united, prosperous, and strong Iraq that makes its own political decisions”. The endorsement comes as al-Zaidi, who has steered Iraq closer to Washington, risks antagonising both the Kurds and Iran, Agence France-Presse reported.",
       "bodyKo": "쿠르드 당국이 헌법 위반을 경고하고 회의 소집을 촉구하자 바그다드가 국경 통행로를 폐쇄했다.\nx whatsapp-stroke copylink google Google에 알자지라 추가 정보 Al Jazeera Staff, AFP 및 로이터 작성 2026년 11월 27일 2026년 11월 27일 도널드 트럼프 미국 대통령은 석유 밀수를 중단하고 국가 권위를 확립하려는 알리 알자이디 이라크 총리의 움직임을 지지했습니다. 이러한 움직임으로 인해 바그다드는 쿠르드족 당국 및 이란과 연계된 민병대와 직접 대립하게 되었습니다.\n트럼프 전 대통령은 금요일 Truth Social 게시물에서 워싱턴이 알자이디의 \"이라크 석유 밀수 중단, 부패 종식, 모든 무기를 국가의 독점적 통제하에 두려는\" 노력을 지지한다고 밝혔다.\n그는 미국이 \"자신의 정치적 결정을 내리는 단합되고 번영하며 강한 이라크\"를 원한다고 말했다. 아프리카 통신사(Agence France-Presse)는 이라크를 워싱턴에 더 가까이 이끈 알자이디 총리가 쿠르드족과 이란 모두의 반발을 불러일으킬 위험을 감수하고 있다고 보도했다.",
       "tried": true,
-      "count": 11,
+      "count": 5,
       "sources": [
+        "Al Jazeera",
         "The Avenue Mail",
         "Citizen Digital",
         "ANI News",
-        "Washington Examiner",
-        "BBC",
-        "Al Jazeera"
+        "Washington Examiner"
       ],
       "related": [
         {
@@ -41,11 +203,6 @@
           "titleKo": "트럼프 대통령, 이라크 총리의 석유 및 무기 자원 통제권 지지",
           "source": "Washington Examiner",
           "link": "https://www.washingtonexaminer.com/news/white-house/4816513/trump-iraq-prime-minister-oil-state-control/"
-        },
-        {
-          "titleKo": "이라크: 트럼프 대통령, 쿠르드 자치구와의 갈등 속에서 자이디 총리의 결정을 지지",
-          "source": "BBC",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9BVEY5X3VzNVUzaWhxenpfUkpWNFN5OEJPNk5EMmV2a1phbjJ2eFRpN05JZjZ5ZGVpZ2hJOGZDVTV6QWFfYW0wNTVYSXNzSWszTE5ldG1wOE02bXpMQUHSAWNBVV95cUxQejBfWE5CdTlGZ0pqTVFnS2pTd1NFVTc2cDhRX184bFJFVFFDMDloUGg2UHBON2NFR2NBbXViRVh1ZTNRWHBCS0thbVZHY1F0bXF5bWVhQVdRTDRZV0pKZmxpeEk?oc=5"
         }
       ],
       "tag": "치안·테러",
@@ -58,52 +215,556 @@
       }
     },
     {
+      "title": "Why is Trump backing Iraq’s anti-smuggling campaign?",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/11/28/why-is-trump-backing-iraqs-anti-smuggling-campaign",
+      "date": "2026-11-28T10:35:49.000Z",
+      "lang": "en",
+      "titleKo": "Why is Trump backing Iraq’s anti-smuggling campaign?",
+      "url": "https://www.aljazeera.com/news/2026/11/28/why-is-trump-backing-iraqs-anti-smuggling-campaign",
+      "body": "Baghdad’s push to seize control of smuggling routes, border crossings and oilfields has Washington’s support.\nx whatsapp-stroke copylink google Add Al Jazeera on Google info By Heba Habib Published On 28 Nov 2026 28 Nov 2026 | Updated: 7 minutes ago Updated: 7 minutes ago United States President Donald Trump has thrown his weight behind Iraqi Prime Minister Ali al-Zaidi’s campaign against oil smuggling. Baghdad has moved to take control of border crossings and oilfields in the semi-autonomous Kurdish region and has confronted Kataib Hezbollah, Iran’s most powerful armed ally in Iraq.\nThe endorsement came days before talks between Baghdad and Erbil are due to take place on December 1 under the sponsorship of the head of Iraq’s Supreme Judicial Council.\nIt has prompted Mohammad Mokhber, an adviser ⁠to Iran’s Supreme Leader ⁠Ayatollah Mojtaba Khamenei, to warn Iraq not to become a “tool ⁠of Trump” ⁠in an X post on Saturday.",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Al Jazeera"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Kurdish Think Tank Warns Iraq's Federal System Is Under Threat",
+      "source": "Kurdistan24",
+      "link": "https://www.kurdistan24.net/en/story/956182/kurdish-think-tank-warns-iraqs-federal-system-is-under-threat",
+      "date": "2026-11-28T10:26:00.000Z",
+      "lang": "en",
+      "titleKo": "Kurdish Think Tank Warns Iraq's Federal System Is Under Threat",
+      "url": "https://www.kurdistan24.net/en/story/956182/kurdish-think-tank-warns-iraqs-federal-system-is-under-threat",
+      "body": "Kurdistan Decision Institute challenges Baghdad's oil and border directives, saying a Supreme Court ruling overlooks Iraq's federal constitutional protections.\nERBIL (Kurdistan24) - The Kurdistan Decision Institute has challenged the constitutional basis of Iraq's latest federal directives affecting the Kurdistan Region, arguing that Iraqi Prime Minister Ali Faleh al-Zaidi exceeded his authority in issuing economic and administrative orders and that a subsequent Federal Supreme Court interpretation overlooked essential safeguards of Iraq's federal system.\nIn a legal memorandum made public on Saturday, Nov. 28, the institute said the dispute was not over whether Baghdad could combat oil smuggling or exercise its explicitly assigned federal powers.\nInstead, it contended that those powers had been invoked selectively, without equivalent regard for the constitutional responsibilities and authority of the Kurdistan Regional Government (KRG).",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "Kurdistan24"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Syrian Kurds protest against Baghdad leader's moves to assert central control",
+      "source": "France 24",
+      "link": "https://www.france24.com/en/syrian-kurds-protest-against-baghdad-leader-s-moves-to-assert-central-control",
+      "date": "2026-11-28T09:55:27.000Z",
+      "lang": "en",
+      "titleKo": "Syrian Kurds protest against Baghdad leader's moves to assert central control",
+      "url": "https://www.france24.com/en/syrian-kurds-protest-against-baghdad-leader-s-moves-to-assert-central-control",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "France 24"
+      ],
+      "related": [],
+      "tag": "시위·통제",
+      "impact": {
+        "lv": "y",
+        "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
+        "act": "시위 시간대 시내 이동 피하기",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "أزمة بغداد - أربيل تثير مخاوف من تصاعد الخطاب التحريضي",
+      "source": "العربي الجديد",
+      "link": "https://www.alaraby.co.uk/politics/%D8%A3%D8%B2%D9%85%D8%A9-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%A3%D8%B1%D8%A8%D9%8A%D9%84-%D8%AA%D8%AB%D9%8A%D8%B1-%D9%85%D8%AE%D8%A7%D9%88%D9%81-%D9%85%D9%86-%D8%AA%D8%B5%D8%A7%D8%B9%D8%AF-%D8%A7%D9%84%D8%AE%D8%B7%D8%A7%D8%A8-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B6%D9%8A",
+      "date": "2026-11-28T08:58:43.000Z",
+      "lang": "ar",
+      "titleKo": "أزمة بغداد - أربيل تثير مخاوف من تصاعد الخطاب التحريضي",
+      "url": "https://www.alaraby.co.uk/politics/%D8%A3%D8%B2%D9%85%D8%A9-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%A3%D8%B1%D8%A8%D9%8A%D9%84-%D8%AA%D8%AB%D9%8A%D8%B1-%D9%85%D8%AE%D8%A7%D9%88%D9%81-%D9%85%D9%86-%D8%AA%D8%B5%D8%A7%D8%B9%D8%AF-%D8%A7%D9%84%D8%AE%D8%B7%D8%A7%D8%A8-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B6%D9%8A",
+      "body": "",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "العربي الجديد"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "KDP and PUK leaders meet in Sulaymaniyah on a joint response to Baghdad",
+      "source": "964media",
+      "link": "https://en.964media.com/56526/",
+      "date": "2026-11-28T08:48:03.000Z",
+      "lang": "en",
+      "titleKo": "KDP and PUK leaders meet in Sulaymaniyah on a joint response to Baghdad",
+      "url": "https://en.964media.com/56526/",
+      "body": "SULAYMANIYAH — The leaders of the Kurdistan Democratic Party and the Patriotic Union of Kurdistan met in Sulay\nThe talks at the PUK’s political bureau headquarters brought together Kurdistan Region President Nechirvan Barzani and Kurdistan Region Prime Minister Masrour Barzani, both KDP vice presidents, with PUK President Bafel Talabani and Kurdistan Region Deputy Prime Minister Qubad Talabani. Members of both parties’ political bureaus also attended.\nThe two sides were to discuss relations between the parties, a common position on Baghdad’s recent decisions and the Region’s share of Iraq’s 2027 budget. The meeting came three weeks after the PUK said it was quitting the Kurdistan Regional Government and would name its own Region president and cabinet if the KDP did.\n“Joint efforts are accumulating for a united position from Kurdistan Region to tackle the recent developments in Baghdad,” KDP political bureau member Hemin Hawrami wrote on X. He added that any solution must be based on di",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "964media"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "US urged Venezuela and Iraq to consider leaving OPEC",
+      "source": "Nation Thailand",
+      "link": "https://www.nationthailand.com/news/world/40074041",
+      "date": "2026-11-28T08:28:00.000Z",
+      "lang": "en",
+      "titleKo": "US urged Venezuela and Iraq to consider leaving OPEC",
+      "url": "https://www.nationthailand.com/news/world/40074041",
+      "body": "Saudi Arabia intervened over Venezuela, while Iraq is negotiating a higher oil quota. Both countries remain members of the group they helped found.\nSATURDAY, NOVEMBER 28, 2026 | The Nation Editorial Team สลับเป็นเสียงผู้ชาย Play Loading... Saudi Arabia intervened over Venezuela, while Iraq is negotiating a higher oil quota. Both countries remain members of the group they helped found. The Trump administration urged Venezuela and Iraq to consider leaving OPEC to enable them to increase oil production and attract investment from US energy companies. US officials feared that OPEC's production limits would stand in the way of potential investments in both countries by American firms like Exxon Mobil and Chevron. Following US encouragement, Iraq's prime minister considered leaving but was persuaded to remain in OPEC and instead negotiate a higher production quota. The US stopped pressing Venezuela to leave after an intervention by Saudi Arabia's Crown Prince, though Washington did block Ven",
+      "bodyKo": "",
+      "tried": true,
+      "count": 2,
+      "sources": [
+        "Nation Thailand",
+        "The Times of India"
+      ],
+      "related": [
+        {
+          "titleKo": "US pushed Venezuela, Iraq to quit OPEC to boost oil output: Report",
+          "source": "The Times of India",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOSHdNQ2o5Q0o5b3NNTHAybTFBbVo2YUVMWnpxM1hEM3dESi01SGZ2MlZxMkdJUDJyYlh6cVBXVUluRUxhWmp6QzdXOFh3V1RmOGgwUFRtLWQxWHByR1FoMDQ0Y0JFc0w5c1VGdFlKcGtUMkJEV05mNTE0T01BcEFzS1llcVF2Vmx3YTZ4WU9icDdlY25YTWM0Nnp3Q2tkWlRlNm9fVXVIcDNscWtnMTdMRTEyaW5sSnhNa0J2cmFNbFZfSEZoeWZuYXpfejZJRTZZ0gHWAUFVX3lxTE9ZMjlXemhacWV2dzVMSHRoSkM0WC03UnduclB4MzdPbTcwdkc3TDhib1ZEX2JzZjQ0aWg0Z25fd0FWWUkzeS00WGxvX2NqNXpxd0didWRSeE9neGswMVkxaUE2S3h4b29pR1JWRHZXdnZXX2lpU0JVSHAtV2ctWlZwcUt2R21XcWVZTlJKVGZmeGVoMWxoZ1dId1dKREtUajBqU3dLZFZnWjVuVlpKdlAwRW03OGd1QktrVFpFM2sxblhORGE4QUx6RjRIdGNqWlBIelJ3Wnc?oc=5"
+        }
+      ],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "USD/IQD exchange rates dip in Baghdad and Erbil",
+      "source": "شفق نيوز",
+      "link": "https://shafaq.com/amp/en/Economy/USD-IQD-exchange-rates-dip-in-Baghdad-and-Erbil-1",
+      "date": "2026-11-28T08:24:46.000Z",
+      "lang": "en",
+      "titleKo": "USD/IQD exchange rates dip in Baghdad and Erbil",
+      "url": "https://shafaq.com/amp/en/Economy/USD-IQD-exchange-rates-dip-in-Baghdad-and-Erbil-1",
+      "body": "Shafaq News- Baghdad/ ErbilThe US dollar fell against the Iraqi dinar on Saturday, trading around 166,000 dinars per $100 in Baghdad and Erbil.According to a Shafaq News market survey, the rate at Bag\nExchange shops in Baghdad sold dollars at 166,500 dinars per $100 and bought them at 165,500.\nIn Erbil, selling and buying prices stood at 166,200 and 166,100 dinars per $100, respectively.",
+      "bodyKo": "",
+      "tried": true,
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "أزمة هرمز تضرب صادرات العراق من الغاز السائل وتخفضها 86%",
+      "source": "شبكة الساعة",
+      "link": "https://news.google.com/rss/articles/CBMiugNBVV95cUxOMGpTLVBwRXIzOXAzMjN6cXhuM2wwb3JyZmZzWVp4T0pubW1XTV9LdDQ2X0Q1T3VFbFZ3OTFGYVZ0WU9NaXZVMzI4aExIaFJrcUs4ck9WUUFlMGMzUVNvRFF5WmRkZUl4djRpaWlsc2tXcF96MVM0cGhnUGdkVndxMml4OU5sSUZ1dmpCc1hnS2kxcWU4NnQ3RkZLRTJiNk13eUdqTmJjWEY5NHVkbnQ2YVFEUTRFd09NdmhxYTVBQ2tMZVFObEtPYnpnM2RYNm9HbVZ5VWZ5clhacjdJU09UdHlaRGpaODNBTE44Y0JzMG5GeDVwMlpDQjhZZmtzdXZ2S1h5TzhIdFhiVVBzUEEzdEdUUmtfMDBnQjdmV0lxWmVWbDR1TWJnMDRuNDZwLWFyN0toNHZuTnAtTFdFZTB3dU80Z0o4dDcwWXI3ZW11T2FJLWlBS3pacFNOYjJNb3VYV3I4QTFfREFqdmVVNjh6NlMzYVBGZ1ExazhhWWp5SFJ4dVluaDFMb1h4UjZWRE1CamxRVTFITmNmTG03N1BsSDdqSTJrSGJTMzVOVEFFOHlNVEd6NURPbEhn?oc=5",
+      "date": "2026-11-28T08:22:18.000Z",
+      "lang": "ar",
+      "titleKo": "أزمة هرمز تضرب صادرات العراق من الغاز السائل وتخفضها 86%",
+      "count": 1,
+      "sources": [
+        "شبكة الساعة"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "انخفاض جديد يضرب أسعار الدولار في العراق",
+      "source": "عصابات الجولاني تعدم الأب الروحي لكنيسة مار إلياس في طرطوس",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBzeERCTWNXOGVJMG9sNExlV1NlQllfV3lwODJnbTYtZGFaRXBrUHZrOVBlMXdKVEU3ZjFORlJFM0x4Qy1rOWpRMlpJYW5TdUk?oc=5",
+      "date": "2026-11-28T08:16:00.000Z",
+      "lang": "ar",
+      "titleKo": "انخفاض جديد يضرب أسعار الدولار في العراق",
+      "count": 1,
+      "sources": [
+        "عصابات الجولاني تعدم الأب الروحي لكنيسة مار إلياس في طرطوس"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "تراجع سعر الدولار بالعراق: الورقة بـ166,500 دينار",
+      "source": "جريدة المدى",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1NYVpSVzdMNUFIcXBHcmxiRDczVEFyVE9PZWxPN3p1bjhmOHVyVks5VFhZYjBoVm40eFl3QUJCX2wzRURBSWc?oc=5",
+      "date": "2026-11-28T08:13:14.000Z",
+      "lang": "ar",
+      "titleKo": "تراجع سعر الدولار بالعراق: الورقة بـ166,500 دينار",
+      "count": 1,
+      "sources": [
+        "جريدة المدى"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "الدولار يواصل تراجعه في بغداد وأربيل",
+      "source": "شبكة الساعة",
+      "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxPQUtYdGNrdE8wLUpkYWxrYkZlei1oYWFsZXhXWUdjYm0tVVVhUjBLeWVxbW5NODRxaUQxaTZUaEtjQ2ljak9ON18wc1FSNTBKcTZkWUY4a2hjWlF3emNGNzR3UmdsSVJvV1ZhSWNTXzFwbE9sZkE3V0pUa3NKLUFwbmx4RlJxcmpfUENKSjR5RC1hSmFXNE5iLXA3Vm0yYWl1MGJ1MGs5d09PRHdyYVZ2S3VyWTE3OVJ1MnFTWl9KUmh1Mzk2QjdfdUgyckVYRVl6czhRWGVUTjNSWGhwbHBtWk5rWFBfdTIzTTZUanJ5dWkyT3VLOThlLVp6d3B5XzQ4bnNjeEV3cGtEdlZhaFI2dmthYzRsbzBGQWhGcnpkQll5QWxDOExWV0NBaVNwd3lkNGlKcGxRcGVkVUVlN2tPM0RDQmpzTElSRXc?oc=5",
+      "date": "2026-11-28T08:01:05.000Z",
+      "lang": "ar",
+      "titleKo": "الدولار يواصل تراجعه في بغداد وأربيل",
+      "count": 1,
+      "sources": [
+        "شبكة الساعة"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "مرصد العراق الأخضر ينتقد خلو موازنة 2027 من تخصيصات معالجة التلوث",
+      "source": "https://naynawaalghad.tv/",
+      "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxNaTV0cHkyRGVBVGJ1eVZTWDdIakN2aUpzem9HbTZBOHlzWm9VeVoydjhURExKMWdLYS10cDlyVU0xV09KSF96a09rM0pkc3FoY1Y2N3hDVFYyS0ZpNVVla3o1WXRDVTlLMV9IeTBqSWROZ2dCZERDOXg1ZlFVMTEzQVFYYUt0dURBeFNEUk0tNGphMzQ3U2VkWlVzTS1ETUg1OE5wLVU5eEdPTjY5RVNCRi1rWE93S2Vac1BHdVRLcy1GMFJvUFNfQzNUelFJMWZwN19YdGlzeE5neFNiUnA4TlFkMzNYbGh4Wi1KR1k0d1V0WEJKV0JucGE4c1ZJTXZYd0dZUENiZWljNW5zWHdGUnI4ZkxOSm1aRTVybFkzSVRONXZDQ0Jyazk4N3hQLU5raFhqbUJiRTBKaXB1Q2dWQVQ1NS1Fdw?oc=5",
+      "date": "2026-11-28T07:39:58.000Z",
+      "lang": "ar",
+      "titleKo": "مرصد العراق الأخضر ينتقد خلو موازنة 2027 من تخصيصات معالجة التلوث",
+      "count": 1,
+      "sources": [
+        "https://naynawaalghad.tv/"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "أسعار صرف الدولار في الأسواق العراقية ليوم السبت",
+      "source": "موقع كلمة الإخباري",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xclBkQkYtTUxQSGxZT0pwM3JNcmlJT0E1MmE3eWwtU0FrNVUtMGdMU3FnbWhuRlNvT0RyTlgxN1JOcFVQZEh2b0lXUjF1LXZn?oc=5",
+      "date": "2026-11-28T07:36:41.000Z",
+      "lang": "ar",
+      "titleKo": "أسعار صرف الدولار في الأسواق العراقية ليوم السبت",
+      "count": 1,
+      "sources": [
+        "موقع كلمة الإخباري"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq: Truck Suspected of Transporting Smuggled Oil Seized in Kirkuk",
+      "source": "Yemen Online",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Ha2ZLZXgyaEp3N1d2SkJNVDhwb3ZxSnU5S0tFaTlBWWIzQXpMU0o3b053NjRRV0k0SlRLb2FJek55SzBoZ1pGYkV6d1g2TXRfSGJIUw?oc=5",
+      "date": "2026-11-28T07:04:42.000Z",
+      "lang": "en",
+      "titleKo": "Iraq: Truck Suspected of Transporting Smuggled Oil Seized in Kirkuk",
+      "count": 1,
+      "sources": [
+        "Yemen Online"
+      ],
+      "related": [],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "키르쿠크",
+        "km": 254
+      }
+    },
+    {
+      "title": "ثلاث مواجهات مرتقبة اليوم في دوري نجوم العراق.. القوة الجوية يواجه النفط والطلبة يصطدم بالميناء - video-agencyia.iq",
+      "source": "video-agencyia.iq",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE52azVObGZJNTRnejB5d0Y0M21QZFFBZk5JWk5sRTFQVlRYZGFmb2lYSXFRQ1dWcUp2NmVrVmxmcnpOQi1UVkdjbHBuYVZaMkk?oc=5",
+      "date": "2026-11-28T07:00:00.000Z",
+      "lang": "ar",
+      "titleKo": "ثلاث مواجهات مرتقبة اليوم في دوري نجوم العراق.. القوة الجوية يواجه النفط والطلبة يصطدم بالميناء - video-agencyia.iq",
+      "count": 1,
+      "sources": [
+        "video-agencyia.iq"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "ثلاث مواجهات مرتقبة في الجولة 15 من دوري نجوم العراق اليوم",
+      "source": "وكالة الانباء العراقية (واع)",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBxdFI3d3FWc1phTkU5Z0ozN21kcXhUMDhEcWVXYTYxQTNHanRhRk8waUw1RFRXMFRrbmtPOUpSVVRwaUZYb0VxMmh6TGYzUTA?oc=5",
+      "date": "2026-11-28T06:57:22.000Z",
+      "lang": "ar",
+      "titleKo": "ثلاث مواجهات مرتقبة في الجولة 15 من دوري نجوم العراق اليوم",
+      "count": 1,
+      "sources": [
+        "وكالة الانباء العراقية (واع)"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "US Reaffirms Support for Unified Iraq and Stable Kurdistan Region",
+      "source": "PUKmedia",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ZRkFERENGN0ptM0JEY3BuMXN1OXZuN3ZPaVB6U1NCUUJ1dTYwSzd6OGp4cVBiSENkZDlEU29NU0dmazFIeWxvRy1XRC1LUG5FNnRj?oc=5",
+      "date": "2026-11-28T06:53:00.000Z",
+      "lang": "en",
+      "titleKo": "US Reaffirms Support for Unified Iraq and Stable Kurdistan Region",
+      "count": 1,
+      "sources": [
+        "PUKmedia"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "US backs dialogue to resolve Baghdad–Erbil dispute",
+      "source": "شفق نيوز",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWm9OUlUzX3hPelNmZTBFemR6Q3JLUVU2am03ZXd2NHRyN3lLZkNwNDRYTkVtZVZWLU9tNmk5V1BQQ20zcHdCamdIRmliYkJhT0FicVVtR0dIY2tBVFRRUjhIT0lTTENZdVREYV9CenRqNE5iMmRLTjh1MEctRm1RS01IdkNqSVh2?oc=5",
+      "date": "2026-11-28T05:32:29.000Z",
+      "lang": "en",
+      "titleKo": "US backs dialogue to resolve Baghdad–Erbil dispute",
+      "count": 1,
+      "sources": [
+        "شفق نيوز"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
       "title": "“미국, 베네수엘라·이라크에 OPEC 탈퇴 압박”",
       "source": "KBS 뉴스",
       "link": "https://news.kbs.co.kr/news/view.do?ncd=8725096",
-      "date": "2026-11-28T01:06:00.000Z",
+      "date": "2026-11-28T05:19:06.000Z",
       "lang": "ko",
       "titleKo": "“미국, 베네수엘라·이라크에 OPEC 탈퇴 압박”",
       "url": "https://news.kbs.co.kr/news/view.do?ncd=8725096",
       "body": "미국 정부가 베네수엘라와 이라크에 석유수출국기구(OPEC) 탈퇴를 검토하도록 하고 베네수엘라의 OPEC 연회...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
       "bodyKo": "미국 정부가 베네수엘라와 이라크에 석유수출국기구(OPEC) 탈퇴를 검토하도록 하고 베네수엘라의 OPEC 연회...\n요약 내용은 네이버 및 OpenAI 社의 AI 서비스를 통해 제공하고 있습니다. 기사의 내용을 올바르게 이해하기 위해서는 본문을 함께 읽어야 합니다.\nKBS 뉴스 사이트 동영상을 퍼가면 KBS 뉴스의 서비스 이용정책에 동의하는 것으로 간주합니다.",
       "tried": true,
-      "count": 10,
+      "count": 9,
       "sources": [
+        "머니투데이",
+        "뉴스1",
         "조선일보",
         "진일보 | 전남일보",
         "아주경제",
-        "서울경제TV",
-        "KBS 뉴스",
-        "연합뉴스"
+        "서울경제TV"
       ],
       "related": [
         {
+          "titleKo": "트럼프 행정부, 베네수엘라·이라크에 OPEC 탈퇴 압박",
+          "source": "머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CZV9qeUxZUFhSTzRIV1drS21lbjJvOFNINThBR296dUNMY2xWX0ZvTVBtTjdBMGF2U2hlQ0FqQVhFcGUwZ0pxRWNXazNCUDJwWkNhUnVMTXNtcTE0LWg0U1ZlNks0V2dX0gFuQVVfeXFMUEx0QUotZGF0QU1lVi1SaF9icmRhdzMzTEc1alBtaWNrXzBoSlBDM1FYZU9JVzdRekloODhaV0FuYmJkay1LRHUxclVpVEdEUmtLSGUtbjdNMHZ0dktrZTczY2lfQTc2enNXV0dTeUE?oc=5"
+        },
+        {
+          "titleKo": "\"美, 베네수엘라·이라크에 OPEC 탈퇴 압박…회비 납부도 막아\"",
+          "source": "뉴스1",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5CbUxJcXVrQklsemo5Ums4aXgwZVdyQjRVMGFSZDFTV0dtbnEzU3pzdF9fc0FHYk9hSUJWTEg2UFpGWEw4SDNHbUlfRmlzWjQ3MFZnOWdFWXY?oc=5"
+        },
+        {
           "titleKo": "로이터 \"美, 베네수엘라·이라크에 OPEC 탈퇴 압박\"",
           "source": "조선일보",
-          "link": "https://www.chosun.com/international/us/2026/11/28/JNHUMFSZSNG6VELROA5BXEQUUM/"
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYUlocVBUVWNMcGRzaHpIaTN3VVJJSVhMNlNnNzcxazFwN21UUldpQS1VaVAtT1ZEYTJoWkxSYjBCcnpSc1ZCRDF1Yk5nM2VnZ1g2WXBSeFByaW5lZ29CSWk1QkdVeHV2Z2dlRHQtc0laOWotWU5CTU5iMVVSVGRPOTJPeW0?oc=5"
         },
         {
           "titleKo": "미국, 베네수엘라·이라크에 OPEC 탈퇴 압박…산유국 결속 흔드나",
           "source": "진일보 | 전남일보",
-          "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000087506"
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56alpBd2lLSmpvSnJGZjBHYVRGTGNvd2t2Rm9BVnBDYlg0U2ItTjNSZmpwREoyaGpPV0hPcXE5TXlleEtfY1Q5eHNCc2hSZjgzbzFWMzNjY3JJYlYwUTI4S0xyWldxRUtrRzdCWjVOUQ?oc=5"
         },
         {
           "titleKo": "美, 베네수엘라·이라크에 OPEC 탈퇴 압박…산유국 결속 흔들기",
           "source": "아주경제",
-          "link": "https://www.ajunews.com/view/20261128092337672"
-        },
-        {
-          "titleKo": "美, 베네수엘라·이라크에 OPEC 탈퇴 요구…산유국 결속 흔들리나",
-          "source": "서울경제TV",
-          "link": "https://www.sentv.co.kr/article/view/sentv202611280007"
-        },
-        {
-          "titleKo": "\"미국, 베네수엘라·이라크에 OPEC 탈퇴 압박\"",
-          "source": "연합뉴스",
-          "link": "https://www.yna.co.kr/amp/view/AKR20261128020300009"
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4yUHNSQWtSQTY1UFp1QkxaOVFyMHB3amJfbGt0U09ja0N4OXVFZFZ0LWVlVWFDYllsVHJwbU92dWJzdENxZ2ZBRVNUUExpRVlRbUZmV2lBbDNHZ9IBWEFVX3lxTFAtS0FYZEpZbzMwQTJ4UXdNM05SX3czd19XUUppOG9QajFrUE0zbEVOckFWVFpLeDNuZDZ3cE85akt0Si1yRU1aWGRNRl95VW9yLTZrX1JOdFU?oc=5"
         }
       ],
+      "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Trump Backs Iraqi PM’s Oil Smuggling Crackdown",
+      "source": "TVC News",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE90bEVnQzZQcE1WUFhUS05qN2dyWjBaczNRQnRnSURyVm1VcUs5dEhKZEhMOVAwcjh4TUZjTG9tczRvVkxuMFFOd2RBZlF4ZmNOYXVmakItQ0x4QmZPWWd2YmRST2tjeVU3cERCUEw5MXFJbE0xekljeA?oc=5",
+      "date": "2026-11-28T04:13:05.000Z",
+      "lang": "en",
+      "titleKo": "Trump Backs Iraqi PM’s Oil Smuggling Crackdown",
+      "count": 2,
+      "sources": [
+        "Nepalnews.com",
+        "TVC News"
+      ],
+      "related": [
+        {
+          "titleKo": "Trump backs Iraqi PM al-Zaidi’s efforts to “assert state authority throughout Iraq” to curb oil smuggling, end corruption",
+          "source": "Nepalnews.com",
+          "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNQUJHbWF5TkkweHJDbWl4LTdkdDlKdjl5OXZNcTBFb2p1RWhpbkhDZDVYeE5YeFp0Q2pTNUpER1R4YWZjLU1FZmMwTlY2UTVlQi02TTVDUEJoRmxZd0l5eUpCOW9jWWtaQzVNa19BeHloZ3VpV3ZTb05TZHFneDBISUtJSHoyMHJhUUVOMHBVbTByZXdYNW04cHVFZU04bTVKT3htaFJMWVhKdjNvR1VZLTFfcUFscHk1ZzBZNzVwLUhuZUh2bU1MdGc2Q0NwVHdsY2JNS1BiMmM5eVA2NThuR1VpUE90aWQ5UUtuTmNXRDdFX0dnYnhR?oc=5"
+        }
+      ],
+      "tag": "치안·테러",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "جدول مباريات اليوم - 28 نوفمبر 2026",
+      "source": "FilGoal",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNdDAxUDFnZ3hEeTFicWZFZlJBZ2hYWlFxNEtwMDc2YWJzRFlrSXk4d0h5MUNfVzNSbXA5X0F6LUh1OF9UNldvWlZMX3czYmo5ODJsU0ZjeWlZakF1aVYzb3ZjQTFFWWowV2lhckFaQV9HWUwyYWphYS0xNVU0Vy1ac1l2eExIcHNTdURnNG5uU2FCUW14QjdrYjRiSk5mUnBwYTZaT1EzRFRoRzB4b00zUlhDRkZvNzZhYVVYRnhqRUFzX0toOWNnQnVQX2hmQktXY1VBdjNRRFJyTnMyY2pubUxBbDRkVF9uTklQamY4NHRYbGp1TVpUczIzRHU2LXFZb19mbA?oc=5",
+      "date": "2026-11-28T03:18:44.000Z",
+      "lang": "ar",
+      "titleKo": "جدول مباريات اليوم - 28 نوفمبر 2026",
+      "count": 1,
+      "sources": [
+        "FilGoal"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Trump supported strengthening Baghdad's control over oil and weapons amid escalating conflict with Kurdistan",
+      "source": "Українські Національні Новини (УНН)",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTTd2M2MxZlVtUGZva1ZOXzYxaFRTRGRpSWVUS1FQVFVqamoyeHlpOUphQWRuczIxNTJZQTZBUWJtcXRpb2FPSlRfUHdWbW92NXBhTmtGMmZvUXQ0NmRqeVJfVU5mMUR4bXpaSl81VVVESllfdEhHU0VyUzhXcFUwWk1rWVlRSmowQjA1WjJwQS1xV3NYUHZ3Rm5WdWpmVko3MjRFVHNfNjBYWjgxVGM2VnpiV3F4SVlhTU50Q2c2SHZVbVV0X01IbUpn0gHIAUFVX3lxTE1oaWVfQW1iMXhyd01KLU9uTi1PLTNxdXZibDhqZUdJMkdudDdvWG4zYWZVcU1vZHlRdFdZbEttZHF4Yll3NmxaZUtOc21aYkZncElqTkp5dXB5SVhveDJNWHZDYjBIZXpqejVaODV5ZldwUUMtbkZCVEJrUzlIUTYzYV95T1RwTU9Sc2trNHVKeXp1bzNHc1VkMzgxb2VtM3RhNFhZRjBobm1ycWFpYkRUREYyTWhCVHFxaW1VT3R2NzJsZU0tQmNn?oc=5",
+      "date": "2026-11-28T02:56:35.000Z",
+      "lang": "en",
+      "titleKo": "Trump supported strengthening Baghdad's control over oil and weapons amid escalating conflict with Kurdistan",
+      "count": 1,
+      "sources": [
+        "Українські Національні Новини (УНН)"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
+      "title": "Fire erupts in Hashd al-Shaabi weapon storage in Iraq",
+      "source": "Yeni Safak English",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOT2RVYjU5TDhTWEZ0WURpem1qUUdhRDRyWlVBUHcwTnc5bG45WUs3dkpqdE5vYjVhWUVtZWdkZ2FLTURmUDFlZzNNWVVENVRLU1QtMjR4NDgyenFjMHk5VGZkVldBbGxaVkpvZzZlZVdZa3R6UVNDRnB0TnNlLWExUjdzRmVRYUFQQVdQYVN1LXM3Mjlwa0k4?oc=5",
+      "date": "2026-11-28T01:25:30.000Z",
+      "lang": "en",
+      "titleKo": "Fire erupts in Hashd al-Shaabi weapon storage in Iraq",
+      "count": 1,
+      "sources": [
+        "Yeni Safak English"
+      ],
+      "related": [],
       "tag": "기타",
       "impact": {
         "lv": "g",
@@ -189,6 +850,27 @@
       }
     },
     {
+      "title": "한-이라크 경제협력 강화…외교부 차관보, 23년 만에 바그다드 방문",
+      "source": "뉴스아이이에스",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE81aUViZGVrRkVTMEhnd0R2TVVWeHVtZHg0UHVoZU9icjBmV0FKb19mQmR4VUpQajhrR2w3TWlqVElOb2FUeDJrS09nekZyVTJaMWpJbE9Ud2tLTGlfTWVWcV9uRTFyWS0tUG51RHBEbjFIUdIBckFVX3lxTE81aUViZGVrRkVTMEhnd0R2TVVWeHVtZHg0UHVoZU9icjBmV0FKb19mQmR4VUpQajhrR2w3TWlqVElOb2FUeDJrS09nekZyVTJaMWpJbE9Ud2tLTGlfTWVWcV9uRTFyWS0tUG51RHBEbjFIUQ?oc=5",
+      "date": "2026-11-27T23:03:03.000Z",
+      "lang": "ko",
+      "titleKo": "한-이라크 경제협력 강화…외교부 차관보, 23년 만에 바그다드 방문",
+      "count": 1,
+      "sources": [
+        "뉴스아이이에스"
+      ],
+      "related": [],
+      "tag": "경제·유가",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "바그다드",
+        "km": 27
+      }
+    },
+    {
       "title": "Trump's Interventionist Remarks About Iraq; The US President Praised al-Zaidi",
       "source": "ABNA English",
       "link": "https://en.abna24.com/news/1895484/Trump-s-Interventionist-Remarks-About-Iraq-The-US-President",
@@ -199,18 +881,11 @@
       "body": "The US president, hanging his remarks on the Iraqi Prime Minister\nAhlulBayt News Agency (ABNA): Trump, the US president, in a message on the Truth Social platform in an attempt to interfere in the internal affairs of independent countries claimed: We support the efforts of the Iraqi Prime Minister, Ali al-Zaidi, to exercise the government's authority throughout this country, stop the smuggling of Iraqi oil, end corruption, place all weapons under the exclusive control of the government, and build a united, prosperous, and powerful Iraq that makes its own political decisions!\nKhalid al-Yaqoubi, the spokesman of the Iraqi presidency and the political adviser to the president of this country, had previously stressed in an interview with Al Jazeera network that the monopoly of weapons in the hands of the government requires mutual commitments and obligations from the great powers, especially America, to respect Iraq's sovereignty and territorial integrity and not to interfere in its intern",
       "bodyKo": "미국 대통령이 이라크 총리를 겨냥해 한 발언\n아흘룰베이트 뉴스통신(ABNA): 트럼프 미국 대통령은 트루스 소셜(Truth Social) 플랫폼에 올린 메시지에서 독립 국가의 내정에 개입하려는 시도로 다음과 같이 주장했다. \"우리는 이라크 총리 알리 알자이디가 이라크 전역에서 정부의 권한을 행사하고, 이라크 석유의 밀수를 중단하고, 부패를 종식시키고, 모든 무기를 정부의 독점적 통제하에 두고,\n이라크 대통령실 대변인이자 대통령 정치 고문인 할리드 알야쿠비(Khalid al-Yaqoubi)는 앞서 알자지라 방송과의 인터뷰에서 무기가 정부의 손에 독점되는 것은 특히 미국을 비롯한 강대국들이 이라크의 주권과 영토 보전을 존중하고 이라크의 내정에 간섭하지 않겠다는 상호 약속과 의무가 전제되어야 한다고 강조한 바 있다.",
       "tried": true,
-      "count": 2,
+      "count": 1,
       "sources": [
-        "ABNA English",
-        "مانكيش نت"
+        "ABNA English"
       ],
-      "related": [
-        {
-          "titleKo": "테일러, 트럼프 대통령에게 이라크 남부와 쿠르디스탄에 대한 미국의 입장을 보고",
-          "source": "مانكيش نت",
-          "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxNTkx6MEZpZ3ZBNkN2di1jdnpUOEs1NkxMa201Y2pINm5RREw4TkQyRGpJdV9mWjh5S2hHTW1RVUNzRFhHX1J4ek92Ri1rdHRGdjgzNk9pZFdMdXRNc3VPOEV4V05XOG9TWExKV1JiNGpicnlCTFp5VWN3ZnZJajUtRkpCdTlNSzZqX3AwZWhDMlhXcFlZdnd3LVd1ejJ6SWdMUU41V1d5T0pRN0hMNlRUeXJLODIyU3ZfYjdrcGE4bDJWdjFwS08ydnBWV2ZjaG50XzdvNk91YmZrUXdBeWlzdE00UU10S284QVhwYmU4eDRPVFI1SGJUTHNqX0tqNGJtMkRjd2NnMFEyNmt5a1l0YVhQb2VmTWFpSVRiR3FxVVhpOThmRXNsZU1sY2FDR25ORHFUMzRPd3pvR1Z5Qlh1Qg?oc=5"
-        }
-      ],
+      "related": [],
       "tag": "정치·선거",
       "impact": {
         "lv": "g",
@@ -317,40 +992,6 @@
       }
     },
     {
-      "title": "Iraq to impose unified 5 percent tariff on all imports next week",
-      "source": "Rudaw",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5uYWdESHVwWjM2VlBvQ1pKYWZ0WEJROWtTM0g4bjRuUHJMRE1UOC1uTDJwbVhWZ0pOWndIeENLemJlLV9MdEJxQnIxS0l2NEZOQjJKaFpGUkQ0WGlvcE9tNjN5SQ?oc=5",
-      "date": "2026-11-27T21:04:13.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 다음 주부터 모든 수입품에 5%의 단일 관세 부과 예정",
-      "count": 3,
-      "sources": [
-        "The Insight International",
-        "Rudaw",
-        "PUKmedia"
-      ],
-      "related": [
-        {
-          "titleKo": "이라크의 자이디 총리, 모든 수입품에 대해 5%의 관세 부과 및 여행자의 달러 허용 한도 2배로 상향 명령",
-          "source": "The Insight International",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVmtVem9Fd0c4M2xtMm1EVEcyLWNpbVp2X2N5VXlLcGR1Q19uREZILUJ3NkdlVG1ZSTZ3bHFjM0ZxUGlydnE1SXBVM2c3QTNoWWxPemlJRWdrOXUyZHp5aDJQTk0tZDBVXzd1YVA1alVURnhaREtTUUZBYTFoaFVfT1otS2IxUGRhWG9YaDdmVmRsYkFmT01XbzNvckJTVGRPbFVaTDlTeWlLSVplaF9WLWNmMzROcVBueFE?oc=5"
-        },
-        {
-          "titleKo": "이라크, 관세율을 5%로 단일화하고 여행자의 달러 허용 한도 확대",
-          "source": "PUKmedia",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE55dXdIeGstOTduTjF6SHZDQnMyUVpXeXQ0Zk1KNk9JOS1qOXptYUsta0ZuOEFlNE1RTHBOaGFPYmhYR1ROaE9FclRDbWI0d2pyaTRF?oc=5"
-        }
-      ],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
       "title": "أسعار الدولار في العراق مساء الجمعة",
       "source": "موقع كلمة الإخباري",
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MZ25kR29FN1FrWG5kN2JvRWR4TkU0R2FwNUphZ0k4WFNEa01kekk5b2dnMkFkOE9Dakw5ajkwd1RhZnd1TjEwZGh1VGNJamNR?oc=5",
@@ -372,6 +1013,27 @@
       }
     },
     {
+      "title": "Iraq to impose unified 5 percent tariff on all imports next week",
+      "source": "Rudaw",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9rT0k0NkF6YUs4RlE2NTU0OXpXZFQ3T2M5MDVQNG1KNGZhMzhRbGk1VzBhQVdzVmpiQkZHdHJVZ0JmOGxSbl9ld191Rll4eVlBNFQ0cTAyc1VLdnl6SVE?oc=5",
+      "date": "2026-11-27T20:38:12.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 다음 주부터 모든 수입품에 5%의 단일 관세 부과 예정",
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
+      "tag": "기타",
+      "impact": {
+        "lv": "g",
+        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
       "title": "الحكومة العراقية: لا سلاح خارج سلطة الدولة ولا تهريب للنفط أو الأموال في أي مكان من أرض العراق",
       "source": "https://www.akhbaralyawm.com/",
       "link": "https://news.google.com/rss/articles/CBMiywVBVV95cUxOdDBBcVNjc1RoNU1XQUhqdW9yS3FpUjViaU5WOWNvQzBuUE94TjlHenRSeDM1cHdGVXYwaVZod2Q4TGVhWFBTV3BrNWFIQ2YzR0dQOFJJbllaNGdjOVZQXzc2MGFjbmlmb3Nvd19kMjI0MDgtN2RXdXpZXzNZeVVWZ1dxdG1oWFk5SHdVVnNIQ1lId3VmR2RNM2J1ZFRualgwajFHbXFFa2VmV0xJTE55U2pTazY0LVM5bjIzb3B2NUg5UnNNb0o5eUgzMkg5NzVDbjVpcG1oM3ZURExRZW9sMWpJYUllMzF4cXJES0luekVhbVFiNkE4TE1DSUwwOWNOMDNRc3I1QzVQTWt3bFpsZ3N1WEVmTWVjblhOTmxPeC1QS3ZqeWpTekdlYXJmMTF0b3FMaHF5aWRYR1ZyQVJydzg1TzMwU2pDNkVHMHFiN1VPMHhfaTBnSW9vSUdJbkhQbjJRbmNjMHE5S1B3bDZTQURSamF5emV2dEh2eW1odEN6XzQtN1BCRmRyZ1ZKSTU4enJtbzVaNTJ3Tm91Zk1fRUFBeGRIUXpvMHBxakRHeG1fcmthM1Iyc3htQUsyRDFtM0YtV21sZWMtR1BoWE9JUU00d25mSnN5RVN1Z3JPNkVIWmdQbXU1V2NMdXZ1SlNYbldmWTFKQWF2c0hweVBaSk1LaHRyZXQ1SW9uVTBNWEdiczZwZlFUMl94aXhoYU9jbnVTODRfeG1oRUNjRGZ6WUtHZ0ZlTDFVQzVtR01FTWhtZlh2dklta2ZUNXhFYWJ1Y0Nsd1Vfam82ekFUcnJYNms4R3JabF9lVkNZUHFCUTFWTHVncXlhdlBVaHZqYlhIOWR3dUdyWXFZV0p6aG9TZ2hoM001YnRJUHVyRzVmWUYyanNmRkt5cVFUV2NVM3o0Zk5PcWRyVmpOOC1YMGFYTWhnMkloQXJTd1VN?oc=5",
@@ -384,6 +1046,27 @@
       ],
       "related": [],
       "tag": "정치·선거",
+      "impact": {
+        "lv": "g",
+        "line": "현장 직접 영향 낮음",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraqi government denies crisis with KRG amid tensions over alleged oil smuggling",
+      "source": "Rudaw",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5FZGZnV1hhamE5OFh3SG9keW56VERLNGJKNm9IMlB1Ym12T0dkV1o4Vk1GVWFaN3lSV0VGQUgyY1RlLW1hR3pUcmpxR19LVXNjZlUwWkZ2N205OFN1Z3V1ZjNjWGNBekdSZFE?oc=5",
+      "date": "2026-11-27T20:06:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크 정부, 석유 밀수 의혹을 둘러싼 긴장 속에서 쿠르드 자치정부(KRG)와의 갈등 부인",
+      "count": 1,
+      "sources": [
+        "Rudaw"
+      ],
+      "related": [],
+      "tag": "치안·테러",
       "impact": {
         "lv": "g",
         "line": "현장 직접 영향 낮음",
@@ -480,6 +1163,27 @@
       ],
       "related": [],
       "tag": "휴일·행사",
+      "impact": {
+        "lv": "g",
+        "line": "환율·유가 변동 — 현지 구매·환전 참고",
+        "act": "",
+        "place": "",
+        "km": null
+      }
+    },
+    {
+      "title": "Iraq Unifies Customs Tariffs at 5% and Expands Travellers' Dollar Allowance",
+      "source": "PUKmedia",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE55dXdIeGstOTduTjF6SHZDQnMyUVpXeXQ0Zk1KNk9JOS1qOXptYUsta0ZuOEFlNE1RTHBOaGFPYmhYR1ROaE9FclRDbWI0d2pyaTRF?oc=5",
+      "date": "2026-11-27T17:56:00.000Z",
+      "lang": "en",
+      "titleKo": "이라크, 관세율을 5%로 단일화하고 여행자의 달러 허용 한도 확대",
+      "count": 1,
+      "sources": [
+        "PUKmedia"
+      ],
+      "related": [],
+      "tag": "경제·유가",
       "impact": {
         "lv": "g",
         "line": "환율·유가 변동 — 현지 구매·환전 참고",
@@ -629,517 +1333,6 @@
         "place": "에르빌",
         "km": 338
       }
-    },
-    {
-      "title": "Iraq seizes two tugboats in fuel smuggling crackdown",
-      "source": "Quantum Commodity Intelligence",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSkwtVU1EeGRMeUhrY1A3LUxDajhZUnhvTjhpRW5SNlpNM3k0VWxMdDRfZ0xVUzkzTjh5VjVxSHRiMXQxVFJaWGlrSl9iMWJ6WnZyVjdldVlBVThTWFlCT0syaXNvTmw4eXBKcGpybmRNQ0dtVXROMHBHWEdCQlY2NmNyTHN2cE1uanNKWHZyMzhFRXhGZ3hWR181UQ?oc=5",
-      "date": "2026-11-27T16:53:57.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 연료 밀수 단속 중 예인선 2척 나포",
-      "count": 1,
-      "sources": [
-        "Quantum Commodity Intelligence"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Families of terrorism victims protest benefit cuts in Mosul",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/society/Families-of-terrorism-victims-protest-benefit-cuts-in-Mosul",
-      "date": "2026-11-27T16:49:05.000Z",
-      "lang": "en",
-      "titleKo": "샤파크 뉴스..모술에서 테러 피해자 가족들이 복지 혜택 삭감을 항의하다",
-      "url": "https://shafaq.com/en/society/Families-of-terrorism-victims-protest-benefit-cuts-in-Mosul",
-      "body": "Shafaq News- Mosul Dozens of families of terrorism victims staged a protest in Mosul, Nineveh province, on Friday, condemning decisions by Iraq&rsquo;s Accountability and Justice Commission and Marty\nThe protest took place at the al-Jusq intersection in western Mosul, in front of a memorial mural honoring Lieutenant Colonel Shamil Akla, who was killed by terrorist groups before 2014.\nFamilies affected by the decisions took part in the demonstration, saying they were surprised to learn that some victims of terrorism in Nineveh had been included in the Accountability and Justice Commission's measures, resulting in the suspension of their financial entitlements, a Shafaq News correspondent reported.\nThe protesters said the decision effectively deprived their relatives of recognition and benefits granted to martyrs, despite their deaths defending Nineveh and Iraq against terrorism.",
-      "bodyKo": "샤파크 뉴스 - 모술 나인아와 주 모술에서 테러 피해자 가족 수십 명이 금요일 시위를 벌이며 이라크 책임 및 정의 위원회(Accountability and Justice Commission)와 순교자 위원회(Marty)의 결정을 비난했습니다.\n시위는 2014년 이전에 테러 단체에 의해 살해된 샤밀 아클라 중령을 기리는 기념 벽화 앞에서 모술 서부의 알주스끄 교차로에서 열렸다.\n샤파크 뉴스 통신사 기자는 시위에 참여한 피해 가족들이 니네웨의 테러 피해자 일부가 책임 및 사법 위원회의 조치 대상에 포함되어 재정적 권리가 정지되었다는 사실을 알고 놀랐다고 말했다고 전했다.\n시위대는 친척들이 테러리즘으로부터 니네베와 이라크를 지키다 사망했음에도 불구하고, 이 결정으로 인해 순교자에게 부여되는 인정과 혜택을 사실상 박탈당했다고 말했다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "샤파크 뉴스..모술에서 테러 피해자 가족들이 복지 혜택 삭감을 항의하다",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/society/Families-of-terrorism-victims-protest-benefit-cuts-in-Mosul"
-        }
-      ],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "치안 관련 발언·정책 — 현장 직접 영향 낮음",
-        "act": "",
-        "place": "모술",
-        "km": 375
-      }
-    },
-    {
-      "title": "بالأرقام والاحصائيات: ملفات الفساد والهدر المالي في العراق تكشف عن خسائر تصل لـ 776 مليار دولار",
-      "source": "باسنیوز",
-      "link": "https://www.basnews.com/ar/babat/924003",
-      "date": "2026-11-27T16:24:00.000Z",
-      "lang": "ar",
-      "titleKo": "숫자와 통계로: 이라크의 부패 및 재정 낭비 사건은 최대 7,760억 달러의 손실을 드러냅니다.",
-      "url": "https://www.basnews.com/ar/babat/924003",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "باسنیوز"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Hundreds protest Iraqi government decisions in Syria’s Qamishli",
-      "source": "شفق نيوز",
-      "link": "https://shafaq.com/en/Syria/Hundreds-protest-Iraqi-government-decisions-in-Syria-s-Qamishli",
-      "date": "2026-11-27T16:10:46.000Z",
-      "lang": "en",
-      "titleKo": "샤파크 뉴스.. 수백 명이 시리아 카미슐리에서 이라크 정부의 결정에 항의",
-      "url": "https://shafaq.com/en/Syria/Hundreds-protest-Iraqi-government-decisions-in-Syria-s-Qamishli",
-      "body": "Shafaq News- Qamishli Hundreds of Kurds gathered in Qamishli, northeastern Syria, on Friday to support the Kurdistan Region of Iraq (KRI) and protest recent decisions by the Iraqi government, a Sha\nThe demonstrators also expressed solidarity between Kurds in Iraq and Syria. Similar rallies have taken place across several Syrian cities over the past two days in support of the KRI.\nThe protests came after Iraqi Prime Minister Ali Al-Zaidi issued a series of decisions on November 24 following investigations into alleged oil smuggling at the North Oil Company. The measures directed federal authorities to take control of all border crossings in the KRI and gave the federal Oil Ministry exclusive authority to approve oil and petroleum-product exports.",
-      "bodyKo": "샤팍 뉴스 - 카미슐리 수백 명의 쿠르드인들이 11월 1일 금요일 시리아 북동부 카미슐리에 모여 이라크 쿠르드 자치구(KRI)를 지지하고 이라크 정부의 최근 결정에 항의했다.\n시위대는 또한 이라크와 시리아의 쿠르드인들 간의 연대를 표명했다. 지난 이틀 동안 여러 시리아 도시에서 KRI를 지지하는 비슷한 집회가 열렸습니다.\n이번 시위는 이라크 알리 알자이디 총리가 노스 오일 컴퍼니(North Oil Company)의 석유 밀수 의혹에 대한 조사에 따라 11월 24일 일련의 결정을 내린 후 발생했다. 이 조치들은 연방 당국에 KRI의 모든 국경 통제소를 관리하도록 지시했으며, 연방 석유부에 석유 및 석유 제품 수출을 승인할 독점적 권한을 부여했다.",
-      "tried": true,
-      "count": 2,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [
-        {
-          "titleKo": "샤파크 뉴스.. 수백 명이 시리아 카미슐리에서 이라크 정부의 결정에 항의",
-          "source": "شفق نيوز",
-          "link": "https://shafaq.com/en/Syria/Hundreds-protest-Iraqi-government-decisions-in-Syria-s-Qamishli"
-        }
-      ],
-      "tag": "시위·통제",
-      "impact": {
-        "lv": "g",
-        "line": "시위 소식 — 장소 확인 필요",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraqi government denies crisis with KRG amid tensions over alleged oil smuggling",
-      "source": "Rudaw",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5FZGZnV1hhamE5OFh3SG9keW56VERLNGJKNm9IMlB1Ym12T0dkV1o4Vk1GVWFaN3lSV0VGQUgyY1RlLW1hR3pUcmpxR19LVXNjZlUwWkZ2N205OFN1Z3V1ZjNjWGNBekdSZFE?oc=5",
-      "date": "2026-11-27T16:06:00.000Z",
-      "lang": "en",
-      "titleKo": "이라크 정부, 석유 밀수 의혹을 둘러싼 긴장 속에서 쿠르드 자치정부(KRG)와의 갈등 부인",
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq's Cabinet To Vote On 2027 Budget Tuesday",
-      "source": "Kurdistan24",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHcGp5dEhJRWZ4WjY1ajNlWVp6bWVlaE5IQjlodGprc1E2RTBiYjJSWEpGQ1p3cUU1eWFSR09Xd09WOEp3NmhNQWdmaUdkQUl6WGpLcTNB?oc=5",
-      "date": "2026-11-27T15:53:25.000Z",
-      "lang": "en",
-      "titleKo": "이라크 내각, 2027년 예산안에 대해 화요일 투표 예정",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNThDNzF2cVdkeXRXcG50NG05T3N1YXFlZjNQMXZaYzE1TWdOVkxsek1iUnYxVDdUY3ZYdXJheHdtRVBUTk9CbGxydVRqUDBES0lMN1ZxdVppMGNPWkg0RjRYRGFQTmVNRk84WnlheEQ0QWt1ZVIwQ0FfQTFhTlB4WUR0bWNrMFpzRDlFOW4wZG9xUQ?oc=5",
-      "body": "",
-      "bodyKo": "",
-      "tried": true,
-      "count": 1,
-      "sources": [
-        "Kurdistan24"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "بعد 12 عاماً من التوقف.. كيف يستعيد العراق خط النفط العراقي؟",
-      "source": "تركيا عاجل",
-      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOUFFsSDV5b3Y4Z1ZLMS04WmNMOWFRZTVNejB5YWhVOGxYMzJYZ1N0WmN3WjFlazBqMzBFZlVNZWVORC01NjhaYnMwaEY2TjFFNkowUlIwV1R0aHo0d0NSLWx1M2czQmRmMDZNNWVQVlJvdjVkV3ZwMVFIRTgtWjVsLUMzRVVjTTd1SnE3MTFxRzNNUWNzRDJodno2a2hzdFhtNndCdnpzdGl6VWJvUjNXbDk0SXh6dnV1blRSV0Y2NWZQSzR4Y28wWWh5c0hIQ1J1SVd5NHcxRlRsZmxYQ004d1FweGo1c09mUlh2cE10SkhiNk1XN1RDa01vblRpOVQ1Rjl4cWZRLU9xMTA1QUpPWA?oc=5",
-      "date": "2026-11-27T15:53:00.000Z",
-      "lang": "ar",
-      "titleKo": "12년의 중단 후.. 이라크는 어떻게 이라크 석유 파이프라인을 복구할 수 있을까요?",
-      "count": 1,
-      "sources": [
-        "تركيا عاجل"
-      ],
-      "related": [],
-      "tag": "휴일·행사",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraqi President calls for dialogue, constitutional commitment",
-      "source": "شفق نيوز",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVHBlck5WWGFEVERpWjhqVkNkLWgzTURvZlRJV0hKeXdZdWdnTlU2dnZUZi1feW9CQWxHTFg2cXp3ek1VcjNSeHdSRDA5dktqWm5ad0c2eDVjRXVoMDdoS2wyYU9ESzc2c0J4NlVuNGFMNHh6YWg1T1hrLWVvLTlhUnpsc1MtX3hHVFU5WDNseUE?oc=5",
-      "date": "2026-11-27T15:33:13.000Z",
-      "lang": "en",
-      "titleKo": "샤파크 뉴스.. 이라크 대통령, 대화와 헌법 준수를 촉구하다",
-      "count": 1,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq inaugurates new president",
-      "source": "Yeni Safak English",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9GWXM4V18wZklQeVNaRVNoZ0Q5M3lPemc4VmZJNFI3ZVRzWEpPMFkyNS1udnpoaWtPX1lYLVRUT2NrU1NkWGo1UzNJQXdsdGZpME9oSHBncWtsQTc4d1JRZ0JvVTRtaDhIUjE5c1hINWxMVElJbUg5Zg?oc=5",
-      "date": "2026-11-27T15:25:56.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 새 대통령 취임식 거행",
-      "count": 1,
-      "sources": [
-        "Yeni Safak English"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq warns of legal action over media content linked to anti-smuggling measures",
-      "source": "Rudaw",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ZZzBoOTRzSmE3U0NldzFEMXh3aUJzNWluempyOHVUdkFlYzAxTmNxTURfM1JEOVVpaDNUMlVxY0dKMnF6ZWotekFvdUIwS0xCQ1dwMWYxN2NpSGJZNFpJTlhYSQ?oc=5",
-      "date": "2026-11-27T15:10:19.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 밀수 단속 조치와 관련된 미디어 콘텐츠에 대해 법적 조치 경고",
-      "count": 1,
-      "sources": [
-        "Rudaw"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq’s Sovereignty Test at Jurf al-Nasr: Iranian Mediation - Militia Power - Oil Security and the Struggle for State Authority Through 2031",
-      "source": "https://debuglies.com",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPb0dLNTJJSmNUQmhBbVBsZEZjNUpfbjBZOUd4WG5QYkx3bUdEOEUxaGNPa1NtODRTX18xVjg5R0FDcEE4UEhwWFh2LXlncjh6X3BmMEduc29wMHNFbG4xSFdjbFVhT2pXMmZscDVJOWFlQV83UENFZC1pckZaVkV6LXVDeW85NUNURFVvZVo1alRUNXNqb1lQUnpmQW82czFQcmZ0LVpoUmhaWVdYelUwOWd1NGpPR2FpUFM1Nm5Tc1dPWFRvUmgzUWJqZWl5SmRyaGY4dDhsbG5YSnlhU0c3VFZELTN5b1pzUXg0cnVHRmhFVUVEalhfSVM4VQ?oc=5",
-      "date": "2026-11-27T14:55:47.000Z",
-      "lang": "en",
-      "titleKo": "주르프 알나스르에서 이뤄지는 이라크의 주권 시험: 이란의 중재",
-      "count": 1,
-      "sources": [
-        "https://debuglies.com"
-      ],
-      "related": [],
-      "tag": "치안·테러",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq's 2027 draft budget projects 42T-dinar deficit",
-      "source": "شفق نيوز",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeTdfeXI2dmRjczBlMjJCOEVrUlZoNmRvZU5mRG8tdnZiRXNJeDEtdWZRLUpoYm5mdkEwaWE4U1VPWVNaa1VRUU9uSmZjWVdZZDkwVGRVaEFXZV8tU3dJRU5qWDhVRVZiMHV4blF6QVQ2eUtnWV84eU9JQjNsZkNpb25uT3NFZ28?oc=5",
-      "date": "2026-11-27T14:55:32.000Z",
-      "lang": "en",
-      "titleKo": "샤파크 뉴스.. 이라크 2027년 예산안, 42조 디나르 적자 예상",
-      "count": 1,
-      "sources": [
-        "شفق نيوز"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq carries out reconnaissance, inspection operation on Iran border",
-      "source": "Yeni Safak English",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWDhyOFN0ZlhLQlBfNWhXUGtqT1BnZExCTVhOdC1oQzJCd0htQjFqRUVHd09GUmRnMzB6V2dodldKNHEyR2lYaHFOLThLbkVjSDZxeTRyenBaYTNxZWRCTkF6N2ZaREpXeWRxd0RhVWk0OTYtRHViUU5ucEYyYS05d0JENG96Nl9Ec256R1Bncmc5a3Z5U3k3NFFuOXBfVkZncXZQM3FPTUo5dw?oc=5",
-      "date": "2026-11-27T14:50:58.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 이란 국경에서 정찰 및 수색 작전 실시",
-      "count": 1,
-      "sources": [
-        "Yeni Safak English"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "وزير النفط العراقي: لا تهاون مع تهريب النفط.. ومفاوضات مع شيفرون وإكسون موبيل لزيادة الإنتاج",
-      "source": "المصري اليوم",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1lYTRlN1o1V1c5cGExME1hdWhYb1JLMm1WMXU0ZkNaX1ZZbGxLdUxFZm1VWklXRmhmYmRKWlE3QUxlV1dEX2t1Qm80X0dNZ0ZqYWloSUR2cEF5Q0JMQTFz?oc=5",
-      "date": "2026-11-27T14:50:00.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 석유부 장관: 석유 밀수에 대한 관용은 없다.. 생산량 증대를 위한 쉐브론 및 엑손모빌과의 협상",
-      "count": 1,
-      "sources": [
-        "المصري اليوم"
-      ],
-      "related": [],
-      "tag": "경제·유가",
-      "impact": {
-        "lv": "g",
-        "line": "환율·유가 변동 — 현지 구매·환전 참고",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Focus - With new law, Iraq sees rise in child marriage, custody battles",
-      "source": "France 24",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTGMzN1g0QjhmQ0pEc1JfZXRDbmktZ3BEdlh1a3hpSmVIdDM0YjVteVZjblhaZU84YkdzU21jN3cxelBlQzUxbnZmTGdremZJaUVVZWhRSklSNDduVHZYOHZwT1ZtQWFVS3JkNTZTbkZmSXc0ZUhzMDI2LWtRdzlZd21hWDhlM1N3ZWhpQ0dYc1lGcWxBV2phR1Z3Ui13RkdMNjd4Z2tFV2VxR0FDcDgtWEVGdw?oc=5",
-      "date": "2026-11-27T14:48:28.000Z",
-      "lang": "en",
-      "titleKo": "초점 - 새로운 법률로 인해 이라크에서 아동 결혼 및 양육권 분쟁이 증가하고 있습니다.",
-      "count": 1,
-      "sources": [
-        "France 24"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq reopens Kirkuk-Turkey pipeline with 300,000 bpd capacity",
-      "source": "The New Region",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1XMDFHaWdDUC1rZnN4OHVvM0k3WjhSWTE3WkZ3YWJkLVVnTG9Eb3o1X0NJRzcteW9xWDEzQU9HUFY0X01EWTJMSTZsWQ?oc=5",
-      "date": "2026-11-27T14:12:37.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 일일 30만 배럴 처리 용량의 키르쿠크-튀르키예 송유관 재가동",
-      "count": 1,
-      "sources": [
-        "The New Region"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "키르쿠크",
-        "km": 254
-      }
-    },
-    {
-      "title": "خلية الإعلام الأمني في العراق: نحذر من خطابات التحريض المسيئة للدولة",
-      "source": "https://www.akhbaralyawm.com/",
-      "link": "https://news.google.com/rss/articles/CBMiqgRBVV95cUxQWl8ybmwyaW00U0lyX2JnZVVnOVNHbHpqY0JLMkVEMThTVzI1M2RSeUpha2FVR1pEZXcybmhVSTBJSURQNHJsVkhMcm8xQ3FQd0dWVkJnYUQ1X3NDU0RHM200NkhiUWo0LWtJWGpreDRlNmtFZUVGZmFPOEs5ZW81ekVkQi1QWEFEYnpQM0xkcGQ0Q0o1Q205RFprSVExNy1EUjdSM0ZoYzdwci10d3piTE16dzl2bVJ4cXVpU01feVdrUVd1QjhZQkNqSHpEMi1TLU9OS2M1WnhLb3JDUUg3UUN4bkw2QzhMNVA3blF1eGNFbHZDckdiU2lvQ2c0bzdCeGVuNms1b2JZVkZfREs1UXYtQTJPX05rZzNlb3JyZU14T1JBMzB5NzFjS3U4bGpneDNVNjVoeUxOT3ZQUGdRUGpaTU50ZThGRDZLUjVpVkxfME12ZzJWODg2UUhsQ0RqaDJYSUpjZU1qNmlHalNSU1BzN3hDT1A5VXZBaHJxRTdnUDVseE1UdGM4MGhWQVFkX1RwZTQ5R1pKRTFFR2pOWXZHYi1KWDdoTmZuSWVJSXZUR2VNRHFicXpaTzduMHRvZUtJeE1TS1RhZmhJdnJyOURXY3FtcWxjdmNaOTVEdzdGUlNfNmliZFZUTm1nYmIzbEI5VlhCV2thcE5Vd0hnNTY4VVFmaWtmOWtxa0NfS3NaeWtLWkJoTU9GNERaUm00ZFFUQ2VOeUZudw?oc=5",
-      "date": "2026-11-27T14:03:44.000Z",
-      "lang": "ar",
-      "titleKo": "이라크 안보 정보국: 국가를 비방하는 선동적 발언에 대한 경고",
-      "count": 1,
-      "sources": [
-        "https://www.akhbaralyawm.com/"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq finishes 2027 budget draft as MP expects it in parliament ‘soon’",
-      "source": "964media",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9HM09xUl9yLXZ1NlltODBnSWphRWlyNkNKNjI1Tzd1QS1KTkxDYnZwY3FwazEzbzlwd1JwRUtlQ1Q2cXhn?oc=5",
-      "date": "2026-11-27T13:43:36.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 2027년 예산안 편성 완료. 의원은 '곧' 의회에 상정될 것으로 예상",
-      "count": 1,
-      "sources": [
-        "964media"
-      ],
-      "related": [],
-      "tag": "정치·선거",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq’s Federalism Under Threat: Baghdad’s Strategy toward Kurdistan",
-      "source": "The Geopolitics",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQajVkWXZObG01dnRDaDJMMXZGRHhXbEg5cnBrZ0dMRkpRMWstTGRfdjZBRXBlY19uTmZuUGhTNG5zaU1NbEN6cDJPZDhyczNlYVREbFVWM3praVFLRVRNdE5NbGFyWF9YVW0tS05scGFMSTAtOXNZUlVDdEt4OVFoS09sdW5fQXRCTFd3b0UtVWxOekpNSWIw?oc=5",
-      "date": "2026-11-27T13:37:25.000Z",
-      "lang": "en",
-      "titleKo": "위협받는 이라크의 연방제: 쿠르드 자치구를 향한 바그다드의 전략",
-      "count": 1,
-      "sources": [
-        "The Geopolitics"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraq Sentences Six People to 10 Years in Uranium Trafficking Case",
-      "source": "Organized Crime and Corruption Reporting Project | OCCRP",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdjZEaXZJajVBR3Y4SmI5bnlsM0k3aFlCZmNodU8yZmwtNGhyaTVhY2cxUk5Jd3ZnemZZQWw0aXRkbk1oZWRIeWxqdVc1NzZuR1JMUndya05JODIzamR5blhDRjlMN09UMy1WWDRSMGpzT2hHTG52N0czTGcxV0tZUzl0WmtUOEJBQTV4ZEMwRDBPRjBrVEFnTldpTQ?oc=5",
-      "date": "2026-11-27T13:19:33.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 우라늄 밀매 사건으로 6명에게 징역 10년 선고",
-      "count": 1,
-      "sources": [
-        "Organized Crime and Corruption Reporting Project | OCCRP"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "Iraq closes border crossing with Iran in Kurdistan Region on Baghdad’s orders",
-      "source": "Middle East Monitor",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZ2wydTJJNGN4MkpBSk5WVTkzbF9NWW9tOWVxOUdrMm5Pa3BvaXBoMmdubTMyUm9nNTZOZHdsTFVfaUc3enQ5YXctSTlseEE0aERnYjFPNEdleDYxY05FVEZjNkdMMFZxY1BCT1NjaGVPLUNQV3ptRmZoTVpSQmFPa2NHdVJOZnNaa3FfcU5Qb0pRUTRnbFJQWUJTUkJETGtPVndLbDQ5cjZuN2lPMDlYYTRGZmhQd2trUG5mTdIBwgFBVV95cUxNa0hRV3pUSFNPOVdVWWMwOElEQVAzMGxsa0tyTERoUzRiSE5kUlQtZmpVblctdl9nWUJOR3g2cEZjdU1kVVR0bFBxWDFRQ2liT1FhWXM0RzFWeEJKRlZ5UmJIQW9IYjJnaXZnRGZVZlMxQTl2SjBVcVZUWG5kYmo2UjcxOXcydElCZVpDdkY4QlpUck83TnJ5R1NWTXNfMjFVQ0ljdkNVMVhEc1NGbWY0aW53UDN0Y2Z3aHJjeGROWkRGdw?oc=5",
-      "date": "2026-11-27T13:08:00.000Z",
-      "lang": "en",
-      "titleKo": "이라크, 바그다드 명령에 따라 쿠르드 자치지역의 이란 국경 통과 지점 폐쇄",
-      "count": 1,
-      "sources": [
-        "Middle East Monitor"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "바그다드",
-        "km": 27
-      }
-    },
-    {
-      "title": "Iraq War Critic De Villepin Enters French Race",
-      "source": "Kurdistan24",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJT3ZiSG9hRWVCYkJpWjZXVDYyOHB0V1BuT2FIVnlZTThFYXl2MUdHeTJMS1VFeFpjQnVBaGtjZFdzVXY4NmI0T1NkUFNnYVJ2SVAxVWdn?oc=5",
-      "date": "2026-11-27T12:47:51.000Z",
-      "lang": "en",
-      "titleKo": "이라크 전쟁 비판론자 드 빌팽, 프랑스 대선 출마",
-      "count": 1,
-      "sources": [
-        "Kurdistan24"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
-    },
-    {
-      "title": "What happened in Iraq's Jurf al-Sakhr, and why does it matter?",
-      "source": "The New Arab",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTk5nWEhac0t1UGk0VTFUZXVmM0MxcWI3NXVMbmRucmVyUFZ6U2hpeFBCckl3Z3BwU1dqaS1wNnZoZ2NGQVpiQ1JEamM4eWtiNDlzZzdraVRVeG1EZ19JWFpHeEh2eFV6UjF0VDk3QmNZNmhZOVJlM1hQbGxYcUI1dVo5c1Q5YWJHbXViVnF4R00wWHPSAZMBQVVfeXFMTU5OZ1hIWnNLdVBpNFUxVGV1ZjNDMXFiNzV1TG5kbnJlclBWelNoaXhQQnJJd2dwcFNXamktcDZ2aGdjRkFaYkNSRGpjOHlrYjQ5c2c3a2lUVXhtRGdfSVhaR3hIdnhVelIxdFQ5N0JjWTZoWTlSZTNYUGxsWHFCNXVaOXNUOWFiR211YlZxeEdNMFhz?oc=5",
-      "date": "2026-11-27T12:46:04.000Z",
-      "lang": "en",
-      "titleKo": "이라크 주르프 알사크르에서 무슨 일이 있었으며, 왜 중요한가요?",
-      "count": 1,
-      "sources": [
-        "The New Arab"
-      ],
-      "related": [],
-      "tag": "기타",
-      "impact": {
-        "lv": "g",
-        "line": "현장 직접 영향 낮음",
-        "act": "",
-        "place": "",
-        "km": null
-      }
     }
   ],
   "alerts": [],
@@ -1156,5 +1349,16 @@
       "link": "https://altaakhi.net/2026/09/287088/"
     }
   ],
-  "brief": []
+  "brief": [
+    {
+      "lv": "y",
+      "titleKo": "Syrian Kurds protest against Baghdad leader's moves to assert central control",
+      "line": "바그다드권 시위·집회 (바그다드) — 시내·공항 이동 지연 가능",
+      "act": "시위 시간대 시내 이동 피하기",
+      "km": 27,
+      "link": "https://www.france24.com/en/syrian-kurds-protest-against-baghdad-leader-s-moves-to-assert-central-control",
+      "date": "2026-11-28T09:55:27.000Z",
+      "more": 0
+    }
+  ]
 }
