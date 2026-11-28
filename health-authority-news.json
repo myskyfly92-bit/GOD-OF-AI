@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T03:38:30.170Z",
+  "generatedAt": "2026-11-28T03:19:01.221Z",
   "query": "(site:kdca.go.kr OR site:mohw.go.kr) when:7d",
   "items": [
     {
@@ -8,13 +8,6 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQb1NqUmk4VnFuVEx2YzVpa05FOGdKdjBlU25IMXBUR1R3UDFIUTg1VjlGTHJKS2xlTURzaGR0aW1uZHBvX0c2ZzB4MkVzQ3BPTmU2eWpQOG05bTNvb3NTS01ZV2VzNktNMEIxMkhIYnhRSUNUS3I3MWNKQ1I1Q0ZNWmllT2RFY2lxU1RSR0hCTVJyQVRwZFBGbXQ2OA?oc=5",
       "date": "2026-11-24T04:18:00.000Z"
-    },
-    {
-      "title": "- 보건복지부 대표홈페이지",
-      "source": "",
-      "agency": "",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdGQxbUZNbHctZU1zMFl1UkZ5OXdhYV9vLTZYbzh3eDVtVC1ia2MzanNpV245Y043VlYyZXJpSGxid2lTbVVvOW14dnJucEhJRFJxTlBLbmo1SzQyRFh0YXFQdUI4cXFxVlBtM1RIQ2NqZVVULXJ6dlZXRWNRUVBlVXNyNnc5bmZEZ0tN?oc=5",
-      "date": "2026-11-24T20:32:05.000Z"
     },
     {
       "title": "건강교육 자료실",
@@ -85,6 +78,13 @@
       "agency": "",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ueXN2cXpmUkJyLWV2cHc4VHB3Sm01dGcwc09pTlNXVG5xZjE4bHpvUFgxOVktQjJoLXJHRmJRTHM4TXhrbmJLZ1JTQ25yWklLeDlqek1B?oc=5",
       "date": "2025-12-16T15:49:07.000Z"
+    },
+    {
+      "title": "- 질병관리청",
+      "source": "",
+      "agency": "",
+      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE4xbGR1bkJiNFlzTkNkX21OdEo1Mmoya2pjdUprWllsenNiSUdXMlY1NThxSnZMSUdkQjAw?oc=5",
+      "date": "2026-11-27T09:24:17.000Z"
     }
   ]
 }
